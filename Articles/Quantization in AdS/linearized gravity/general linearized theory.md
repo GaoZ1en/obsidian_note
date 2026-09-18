@@ -1,4 +1,4 @@
-in general we want to find a linearized/effective theory for a general field theory
+In general we want to find a linearized/effective theory for a general field theory
 
 $$\begin{align}
 S & =\int \mathbf{L}[\phi]
@@ -16,7 +16,7 @@ $$\begin{align}
 \phi & =\phi ^{(0)}+\varepsilon\delta \phi+\varepsilon ^{2}\delta ^{2}\phi+\dots
 \end{align}$$
 
-where $\displaystyle{\varepsilon}$ is a parameter that controls the order of the perturbation. the action can be rigorously expanded in $\varepsilon$ using the Taylor series as:
+where $\displaystyle{\varepsilon}$ is a parameter that controls the order of the perturbation. The action can be rigorously expanded in $\varepsilon$ using the Taylor series as:
 
 $$\begin{align}
 S[\phi] & =S[\phi ^{(0)}]+\sum ^{\infty}_{n=1} \frac{\varepsilon ^{n}}{n!} \frac{\mathrm{d}^{n}S}{\mathrm{d}\varepsilon ^{n}}\bigg|_{\varepsilon=0}

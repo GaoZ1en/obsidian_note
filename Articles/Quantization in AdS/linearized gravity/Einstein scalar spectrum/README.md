@@ -6,8 +6,8 @@ This workspace studies the minimal Einstein–real-scalar system in global AdS3.
 
 Read these in order:
 
-1. [gravitation scalar interaction.md](gravitation%20scalar%20interaction.md): the action and covariant phase space expansion, free modes, perturbative equations, and scalar-sourced gravitational response. This sets up the interaction used in the spectrum calculation.
-2. [gravity scalar one and two particle spectrum.md](gravity%20scalar%20one%20and%20two%20particle%20spectrum.md): the physical-mass convention, interaction Hamiltonian, one- and two-particle energies, and organization of the two-particle spectrum into primaries and descendants. The Results and Mass Convention section collects the spectrum; the algebraic reconstruction explains how its coefficients are obtained.
+1. [gravitation scalar interaction.md](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/perturbation.md): the action and covariant phase space expansion, free modes, perturbative equations, and scalar-sourced gravitational response. This sets up the interaction used in the spectrum calculation.
+2. [gravity scalar one and two particle spectrum.md](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/two%20particle%20spectrum.md): the physical-mass convention, interaction Hamiltonian, one- and two-particle energies, and organization of the two-particle spectrum into primaries and descendants. The Results and Mass Convention section collects the spectrum; the algebraic reconstruction explains how its coefficients are obtained.
 
 These two notes are the working account to read and discuss. Supporting material supplies individual ingredients under its stated assumptions, rather than an alternative presentation that must be read in full.
 

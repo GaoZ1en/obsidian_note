@@ -2,7 +2,7 @@
 
 ## Conventions and Domain
 
-Use the conventions of [gravitation scalar interaction](gravitation%20scalar%20interaction.md): unit AdS radius, $f=1+r^2$, $\kappa^2=16\pi G$, and $\mathcal E^{(1)}[q]=T/2$. The field $q=k_\phi$ is the matter contribution to the order-$\kappa^2$ metric coefficient.
+Use the conventions of [perturbation](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/perturbation.md): unit AdS radius, $f=1+r^2$, $\kappa^2=16\pi G$, and $\mathcal E^{(1)}[q]=T/2$. The field $q=k_\phi$ is the matter contribution to the order-$\kappa^2$ metric coefficient.
 
 Work with generic $\Delta>1$, $m^2=\Delta(\Delta-2)$, excluding $\Delta=(1+\sqrt5)/2$ for now. Require a smooth center, the fixed boundary cylinder, Brown–Henneaux falloffs, and the differentiated logarithm-free expansions in [de Donder gauge accessibility](de%20Donder%20gauge%20accessibility.md). The exceptional-$\Delta$ limit remains deferred. Initially use finite sums of normalizable free scalar modes.
 
@@ -105,6 +105,6 @@ For a selected cutoff, evaluate the finite source basis and the responses in the
 - **Assumptions:** the stated nonresonant mass and no-log domain, compatible gravitational constraint data, and a real linear response prescription. The convention $q^{\mathrm h}=0$ fixes additional homogeneous data relative to that prescription.
 - **Computed:** the explicit auxiliary Euclidean kernel and a specified retarded continuation in the separate construction note; its new symbolic checks are reproducible in [the kernel checks](scripts/einstein_kernel_checks.wl).
 - **Constructed on finite scalar-source spaces:** the static-seed/descendant response, the conserved same-sign frequency prescription, and the finite Gram kernel. The separate prescription note proves the constraint and no-log statements in its stated analytic domain and records the new symbolic and numerical checks.
-- **Not computed:** a complete matrix of responses for a chosen numerical cutoff or the full interacting Hamiltonian obtained by this kernel/CPS pullback. Leading scalar-primary spectral coefficients were subsequently computed by circular reduction and representation reconstruction in [the spectrum note](gravity%20scalar%20one%20and%20two%20particle%20spectrum.md); their current physical scope is reviewed in [the audit](closed%20form%20spectrum%20audit.md). No convergence on infinite scalar-mode sums or universal extension to arbitrary eternal conserved tensors is claimed.
+- **Not computed:** a complete matrix of responses for a chosen numerical cutoff or the full interacting Hamiltonian obtained by this kernel/CPS pullback. Leading scalar-primary spectral coefficients were subsequently computed by circular reduction and representation reconstruction in [the spectrum note](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/two%20particle%20spectrum.md); their current physical scope is reviewed in [the audit](closed%20form%20spectrum%20audit.md). No convergence on infinite scalar-mode sums or universal extension to arbitrary eternal conserved tensors is claimed.
 
 The earlier component and mode-pair calculations remain available as checks in the scripts; the working exposition is the kernel formulation above.

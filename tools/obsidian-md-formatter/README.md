@@ -25,8 +25,18 @@ such as `AdS`, `pAQFT`, and `xAct` are preserved.
 Soft-wrapped prose lines are joined by default, so each paragraph occupies one
 Markdown source line and blank lines remain paragraph boundaries. Headings,
 lists and their continuation lines, blockquotes, tables, code, display math,
-standalone inline math, reference definitions, HTML blocks, and explicit hard
-line breaks are not joined.
+isolated inline math, reference definitions, HTML blocks, and explicit hard
+line breaks are not joined. An inline-math-only line directly continuing prose
+is joined into that paragraph (for example, `For` followed by `$x=y$,` on the
+next source line). Inline math separated from prose by a blank line stays
+separate. Prose between multiple inline formulas is treated as ordinary prose.
+
+Bold (`**...**`, `__...__`), italic (`*...*`, `_..._`), combined emphasis,
+highlight (`==...==`), and strikethrough (`~~...~~`) at a source-line start
+also allow prose joining, including when the emphasis spans a source newline.
+The markers are preserved. Labelled fields such as `**Assumptions:** ...`
+join with their wrapped body; each new labelled field starts a separate line,
+so consecutive `**Status**: ...` and `**Author**: ...` fields stay separate.
 
 ## Commands
 

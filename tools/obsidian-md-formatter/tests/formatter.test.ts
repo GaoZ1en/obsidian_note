@@ -170,6 +170,107 @@ describe("formatMarkdown", () => {
     expect(formatMarkdown(expected).text).toBe(expected);
   });
 
+  it("joins an inline-math-only continuation in the de Donder paragraph", () => {
+    const first = String.raw`Here $T_{(0)}=g^{(0)\mu\nu}T_{(0)\mu\nu}$. For`;
+    const second = String.raw`$\phi^{(0)}=r^{-\Delta}\beta(t,\varphi)+\cdots$,`;
+    const input = `${first}\n${second}\n`;
+    const expected = `${first} ${second}\n`;
+
+    expect(formatMarkdown(input).text).toBe(expected);
+    expect(formatMarkdown(expected).text).toBe(expected);
+    expect(formatMarkdown(input, { joinProseLines: false }).text).toBe(input);
+  });
+
+  it("does not mistake prose between inline formulas for standalone math", () => {
+    const first = String.raw`The leading action of $\Box_0-4$ on $r^{-s}$ is`;
+    const second = String.raw`$[s(s-2)-4]r^{-s}$. At $\Delta_*$,`;
+    const expected = `${first} ${second}\n`;
+
+    expect(formatMarkdown(`${first}\n${second}\n`).text).toBe(expected);
+    expect(formatMarkdown(`${second}\nwe continue.\n`).text).toBe(`${second} we continue.\n`);
+    expect(formatMarkdown(expected).text).toBe(expected);
+  });
+
+  it.each([true, false])("joins parenthesized inline math with normalization %s", (normalizeMathDelimiters) => {
+    const input = "For\n\\(x=y\\),\nwe continue.\n";
+    const math = normalizeMathDelimiters ? "$x=y$" : "\\(x=y\\)";
+    const expected = `For ${math}, we continue.\n`;
+
+    expect(formatMarkdown(input, { normalizeMathDelimiters }).text).toBe(expected);
+    expect(formatMarkdown(expected, { normalizeMathDelimiters }).text).toBe(expected);
+  });
+
+  it.each([
+    "$x=y$",
+    String.raw`\(x=y\)`,
+    String.raw`$x=\$5$`,
+    String.raw`\(x=\alpha\)`,
+    "$x=y$,\n$z=w$"
+  ])("preserves isolated inline math: %s", (math) => {
+    const input = `Prose.\n\n${math}\nFollowing prose.\n`;
+    expect(formatMarkdown(input, { normalizeMathDelimiters: false }).text).toBe(input);
+  });
+
+  it.each([
+    "Prose.\n\n$x=y$,\n",
+    "Prose.\\\n$x=y$,\n",
+    "- Item\n$x=y$,\n",
+    "> Prose\n$x=y$,\n",
+    "# Heading\n\n$x=y$,\n",
+    "Prose\n    $x=y$,\n",
+    "Prose\n$x=y$,\\\n",
+    "Prose\n\\(\nx=y\n\\)\n"
+  ])("keeps structural boundaries around math continuations: %s", (input) => {
+    expect(formatMarkdown(input).text).toBe(input);
+  });
+
+  it.each(["**", "__", "*", "_", "***", "___", "==", "~~"])(
+    "joins prose with %s formatting at line starts without changing the markers",
+    (marker) => {
+      const paragraphs = [
+        `${marker}Assumptions:${marker} the stated sourced linear equation, standard scalar \nquantization with $\\Delta>1$, a smooth center.`,
+        `${marker}Assumptions${marker}: the stated equation\ncontinues here.`,
+        `${marker}This entire line is emphasized${marker}\nand continues here.`,
+        `The sentence continues with\n${marker}emphasized words${marker} and more prose.`,
+        `${marker}The emphasis itself wraps\nonto another source line${marker}.`
+      ];
+      const input = `${paragraphs.join("\n\n")}\n`;
+      const expected = `${paragraphs.map((paragraph) => paragraph.replace(/ *\n/g, " ")).join("\n\n")}\n`;
+
+      expect(formatMarkdown(input).text).toBe(expected);
+      expect(formatMarkdown(expected).text).toBe(expected);
+      expect(formatMarkdown(input, { joinProseLines: false }).text).toBe(input.replace(/ +\n/g, "\n"));
+    }
+  );
+
+  it.each(["**", "__", "*", "_", "***", "___", "==", "~~"])(
+    "keeps consecutive %s field labels separate while joining their continuations",
+    (marker) => {
+      const first = `${marker}Status${marker}: draft`;
+      const second = `${marker}Assumptions:${marker} standard scalar`;
+      const third = `${marker}Not verified:${marker} global existence`;
+      const input = `${first}\n${second}\nquantization.\n${third}\nand regularity.\n`;
+      const expected = `${first}\n${second} quantization.\n${third} and regularity.\n`;
+
+      expect(formatMarkdown(input).text).toBe(expected);
+      expect(formatMarkdown(expected).text).toBe(expected);
+    }
+  );
+
+  it("preserves Markdown boundaries and unformatted operators around emphasized prose", () => {
+    const input = [
+      "**First paragraph**", "", "*Second paragraph*", "",
+      "==Hard break==\\", "Next line.", "",
+      "- **List item**", "Continuation.", "",
+      "> *Quote*", "> Continuation.", "",
+      "**Title**", "---", "",
+      "***", "", "___", "",
+      "```md", "==Code==", "Continues.", "```", "",
+      "The expression is", "= x+y", "+z", "/factor", "", ""
+    ].join("\n");
+    expect(formatMarkdown(input).text).toBe(input.trimEnd() + "\n");
+  });
+
   it("preserves lists and all contiguous list continuation lines", () => {
     const input = [
       "- first item",

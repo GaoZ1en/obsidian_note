@@ -9,7 +9,7 @@ $$\begin{align}
 \mathcal E^{(1)}_{\mu\nu}[q]&=\frac12T_{(0)\mu\nu}[\phi^{(0)}].
 \end{align}$$
 
-We use unit-radius global AdS3, with $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$, a smooth center, a fixed boundary cylinder, and the standard source-free scalar boundary condition. The field and action conventions are those of [gravitation scalar interaction](gravitation%20scalar%20interaction.md). All derivatives and traces below use the background metric.
+We use unit-radius global AdS3, with $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$, a smooth center, a fixed boundary cylinder, and the standard source-free scalar boundary condition. The field and action conventions are those of [perturbation](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/perturbation.md). All derivatives and traces below use the background metric.
 
 **Result.** For $\Delta>1$ and $\Delta\ne(1+\sqrt5)/2$, the construction gives a smooth, log-free de Donder representative on each finite global-time interval, under the differentiable asymptotic expansion and reflecting-wave assumptions specified below. It preserves the Brown–Henneaux boundary conditions and charges.
 

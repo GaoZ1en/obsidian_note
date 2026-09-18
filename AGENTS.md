@@ -6,6 +6,7 @@ This repository is a personal Obsidian vault for theoretical-physics research no
 
 - Read every `AGENTS.md` applicable to the target path and the relevant files before editing.
 - Preserve existing content, notation, language, headings, file boundaries, and public behavior. Make small local changes unless the user explicitly requests a redesign.
+- Write so a later reader can follow the reasoning and verify the claims without the original conversation.
 - Do not delete, overwrite, move, rename, or merge notes without explicit authorization.
 - Do not add tags, Dataview fields, bibliography automation, or new wiki-links unless explicitly requested.
 - Distinguish what was edited, inspected, tested, assumed, and left unverified. Do not call work complete without the relevant edit and check.

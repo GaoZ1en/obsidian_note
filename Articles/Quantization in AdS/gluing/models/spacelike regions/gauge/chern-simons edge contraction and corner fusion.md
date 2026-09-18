@@ -84,7 +84,7 @@ $$
 
 因此成立的是 **完整 edge-to-corner 数据替换的 obstruction**。不成立的是“任何带传播模的理论都禁止任何边收缩”这一绝对 no-go。受限零模、低能近似、指定缺陷有效理论以及单纯撤去 artificial cut 都是不同问题。
 
-对真正有局域传播模的 YM，gauge quotient 不消除 gauge-invariant curvature、radiative electric/magnetic data 及它们的边界响应。线性化到 Maxwell 的局部传播 sector 已有无限维 trace 障碍；Gauss matching 不能替代完整 transmission。原 [gauge-covariant formalism](<Articles/Quantization in AdS/gluing/gauge-covariant sewing and reduction.md>) 也明确区分这两项。Pure $1+1$ YM 没有局域传播模，不能被纳入这里的传播模论证；它保留的 holonomy/flux 数据须另行处理。
+对真正有局域传播模的 YM，gauge quotient 不消除 gauge-invariant curvature、radiative electric/magnetic data 及它们的边界响应。线性化到 Maxwell 的局部传播 sector 已有无限维 trace 障碍；Gauss matching 不能替代完整 transmission。原 [gauge-covariant formalism](<Articles/Quantization in AdS/gluing/archived/gauge-covariant sewing and reduction.md>) 也明确区分这两项。Pure $1+1$ YM 没有局域传播模，不能被纳入这里的传播模论证；它保留的 holonomy/flux 数据须另行处理。
 
 ## 3. CS 的 classical model 与约定
 
@@ -427,10 +427,10 @@ $$
 
 | 当前材料 | 本文采用的输入及审查结果 |
 |---|---|
-| [classical gluing formalism](<Articles/Quantization in AdS/gluing/classical_gluing_formalism.md>)、[observable algebra formalism](<Articles/Quantization in AdS/gluing/observable algebra gluing formalism.md>) | joint trace、完整 response、独立 global target、corner 不自动增加变量。本文的标量反例直接检验该区别；不借用其全部 reconstruction theorem |
+| [classical gluing formalism](<Articles/Quantization in AdS/gluing/archived/classical_gluing_formalism.md>)、[observable algebra formalism](<Articles/Quantization in AdS/gluing/archived/observable algebra gluing formalism.md>) | joint trace、完整 response、独立 global target、corner 不自动增加变量。本文的标量反例直接检验该区别；不借用其全部 reconstruction theorem |
 | [rectangle scalar self-gluing](<Articles/Quantization in AdS/gluing/models/spacelike regions/non-gauge/rectangle scalar self-gluing.md>) §§4–5 | 点值障碍与 joint domain 相容；本文独立计算 capacity cutoff 和 DtN 反例。静态 Friedrichs sewing 不是 $\varepsilon\to0$ 几何定理 |
-| [self-sewing topology and orientation](<Articles/Quantization in AdS/gluing/self-sewing topology and orientation.md>) | 保留 links、orientation、metric/domain 与 bundle descent 的分层。Diameter collapse 反例说明仅有 $\pi_1$ 等价不够 |
-| [gauge-covariant sewing](<Articles/Quantization in AdS/gluing/gauge-covariant sewing and reduction.md>)、[spatial gauge gluing](<Articles/Quantization in AdS/gluing/spatial gauge gluing formalism.md>) | proper gauge、active frames、transport 与完整 transmission 的区别。它们的 second-order YM theorem 不覆盖 CS |
+| [self-sewing topology and orientation](<Articles/Quantization in AdS/gluing/archived/self-sewing topology and orientation.md>) | 保留 links、orientation、metric/domain 与 bundle descent 的分层。Diameter collapse 反例说明仅有 $\pi_1$ 等价不够 |
+| [gauge-covariant sewing](<Articles/Quantization in AdS/gluing/archived/gauge-covariant sewing and reduction.md>)、[spatial gauge gluing](<Articles/Quantization in AdS/gluing/archived/spatial gauge gluing formalism.md>) | proper gauge、active frames、transport 与完整 transmission 的区别。它们的 second-order YM theorem 不覆盖 CS |
 | [U(1) disk/open-chord](<Articles/Quantization in AdS/gluing/models/spacelike regions/gauge/U(1) Chern-Simons disk and open-chord sewing.md>) | physical current space 与完整 action 的负 CPS 符号直接重算；endpoint-zero cut group 不能删去 outer currents |
 | [SU(2) open-chord](<Articles/Quantization in AdS/gluing/models/spacelike regions/gauge/SU(2) Chern-Simons open-chord sewing.md>) | Classical/current 与 universal quotient；另有完整 vacuum-module preimage 和 vacuum-net Connes theorem，仍与 charged intertwiner map 分开 |
 | [U(1) annulus draft](<Articles/Quantization in AdS/gluing/models/spacelike regions/gauge/U(1) Chern-Simons annulus sewing.md>) | cycle holonomy 与 framed radial transport 是不同数据；本文只用这一反例，不继承全部量子域结论 |

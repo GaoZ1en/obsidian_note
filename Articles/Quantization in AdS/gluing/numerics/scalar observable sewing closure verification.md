@@ -2,7 +2,7 @@
 
 Date: 2026-09-07.
 
-Scope: [scalar closure note](<../scalar observable sewing closure.md>), its exact class distinctions, the scalar portions of README/TODO, and short pointers in the original scalar notes. Existing gauge and other working-tree edits were preserved. No commit or push was requested.
+Scope: [scalar closure note](<Articles/Quantization in AdS/gluing/archived/scalar observable sewing closure.md>), its exact class distinctions, the scalar portions of README/TODO, and short pointers in the original scalar notes. Existing gauge and other working-tree edits were preserved. No commit or push was requested.
 
 ## 1. Executed mathematical diagnostics
 

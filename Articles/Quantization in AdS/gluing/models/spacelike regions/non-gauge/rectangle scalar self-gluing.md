@@ -10,9 +10,9 @@ I=[t_i,t_f],\qquad R=[0,L_x]\times[0,L_y],\qquad ds^2=-dt^2+dx^2+dy^2.
 
 **结论。** 四条完整边两两配对、不细分、不把一条边与自身识别时，闭曲面的拓扑恰为 $S^2,\mathbb{RP}^2,T^2,K$。但要求边识别是等距的、欧氏度量在所有角点光滑下降时，只有 $T^2,K$。普通 scalar 的 action/CPS 在 $K$ 上存在；非定向性本身不是禁阻。这里得到的是固定平直几何的 no-go，不能升级成一般 Cauchy 面拓扑 no-go。
 
-原版 [classical formalism](<Articles/Quantization in AdS/gluing/classical_gluing_formalism.md>) 和 [observable formalism](<Articles/Quantization in AdS/gluing/observable algebra gluing formalism.md>) 限于无空间 junctions 的 pairwise smooth cuts；当前修订已采用 joint trace/domain 与完整 response pullback 定义，并明确其 corner reconstruction 输入。本模型提供具体实现：**边的 transmission、顶点的 link/metric 条件、函数空间的角点域必须一起指定。**
+原版 [classical formalism](<Articles/Quantization in AdS/gluing/archived/classical_gluing_formalism.md>) 和 [observable formalism](<Articles/Quantization in AdS/gluing/archived/observable algebra gluing formalism.md>) 限于无空间 junctions 的 pairwise smooth cuts；当前修订已采用 joint trace/domain 与完整 response pullback 定义，并明确其 corner reconstruction 输入。本模型提供具体实现：**边的 transmission、顶点的 link/metric 条件、函数空间的角点域必须一起指定。**
 
-[Scalar closure §§1–4](<Articles/Quantization in AdS/gluing/scalar observable sewing closure.md>) 在本模型的 $m>0$ smooth torus/Klein sector 中另给完整 independent history-family 商：区域场为时间光滑的能量解，history covectors 为联合 $H^{1/2}$ trace 空间的对偶。该处证明实际 $R,B$、regular transposes 和逐函数满射；这不是本笔记原先待证的逐面空间光滑 density 类，也不扩大下文锥点量子范围。
+[Scalar closure §§1–4](<Articles/Quantization in AdS/gluing/archived/scalar observable sewing closure.md>) 在本模型的 $m>0$ smooth torus/Klein sector 中另给完整 independent history-family 商：区域场为时间光滑的能量解，history covectors 为联合 $H^{1/2}$ trace 空间的对偶。该处证明实际 $R,B$、regular transposes 和逐函数满射；这不是本笔记原先待证的逐面空间光滑 density 类，也不扩大下文锥点量子范围。
 
 ## 1. 十二种整边配对
 
@@ -499,7 +499,7 @@ $$\begin{align}
 [\widehat L_z,\widehat L_{z'}]=-i\hbar\Omega(z,z')\,1,\qquad \widehat L_z^*=\widehat L_z \quad(z\ \text{real}).
 \end{align}$$
 
-同一个 $U\oplus U$ 保持 CCR defining relations，其逆也保持 relations，因此由两个 universal homomorphisms 给该 core 的精确量子代数同构，亦可用同一实辛空间构造 Weyl algebra。这不是把原 isolated fixed-history algebra 的 bracket 原样取商。更强的 massive 光滑 torus/Klein Wick 比较见 [free quantum note](<Articles/Quantization in AdS/gluing/free scalar renormalized quantum observable algebra gluing.md>)；cone/Friedrichs 情形在这里仅建立指定的 CCR 层，不从能量定理推断 Wick products 或 interacting renormalization。
+同一个 $U\oplus U$ 保持 CCR defining relations，其逆也保持 relations，因此由两个 universal homomorphisms 给该 core 的精确量子代数同构，亦可用同一实辛空间构造 Weyl algebra。这不是把原 isolated fixed-history algebra 的 bracket 原样取商。更强的 massive 光滑 torus/Klein Wick 比较见 [free quantum note](<Articles/Quantization in AdS/gluing/archived/free scalar renormalized quantum observable algebra gluing.md>)；cone/Friedrichs 情形在这里仅建立指定的 CCR 层，不从能量定理推断 Wick products 或 interacting renormalization。
 
 对于先粘哪一对边，先在同一个区域 $H^1(R)$ 中定义两个闭 trace 条件 $C_1u=0,C_2u=0$。最终域恒为
 

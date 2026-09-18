@@ -1,6 +1,6 @@
 # 1+1 Yang–Mills Classical Observable Algebra Gluing
 
-本文是 [observable algebra gluing formalism](<Articles/Quantization in AdS/gluing/observable algebra gluing formalism.md>) 的完整 classical gauge 实现。区域对象由 continuum action、proper gauge quotient、active cut action 和实际 history transport 定义；global theory 独立从 uncut action 构造。
+本文是 [observable algebra gluing formalism](<Articles/Quantization in AdS/gluing/archived/observable algebra gluing formalism.md>) 的完整 classical gauge 实现。区域对象由 continuum action、proper gauge quotient、active cut action 和实际 history transport 定义；global theory 独立从 uncut action 构造。
 
 ## 0. 精确模型与主定理
 

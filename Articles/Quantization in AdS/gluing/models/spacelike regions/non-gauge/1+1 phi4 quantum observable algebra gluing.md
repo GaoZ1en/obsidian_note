@@ -824,7 +824,7 @@ $$
 \chi(t)h(x)\phi(x)^4.
 $$
 
-The label is interpreted with the chosen off-shell local prescription. The interior time-ordering construction of [the existing interacting note](<../../../phin renormalized quantum observable algebra gluing.md>) applies to these compact vertex supports. It uses the full reflected propagator, including mixed-region entries after release. Its all-order bulk statement is separate from its unfinished history-family extension.
+The label is interpreted with the chosen off-shell local prescription. The interior time-ordering construction of [the existing interacting note](<Articles/Quantization in AdS/gluing/archived/phin renormalized quantum observable algebra gluing.md>) applies to these compact vertex supports. It uses the full reflected propagator, including mixed-region entries after release. Its all-order bulk statement is separate from its unfinished history-family extension.
 
 Define the relative source expression and its polynomial insertions by
 

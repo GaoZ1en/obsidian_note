@@ -1,6 +1,6 @@
 # Scalar local structure: verification and claim ledger
 
-Date: 2026-09-07. This record accompanies the [free implementation](<../scalar local structure implementation.md>), [finite-insertion obstruction](<../scalar insertion time-slice obstruction.md>), [switched-phi4 calculations](<../scalar interacting local structure.md>), and the separately [completed relative-S construction](<../scalar completed relative-S local structure.md>). It records an author verification, not an independent-agent review.
+Date: 2026-09-07. This record accompanies the [free implementation](<Articles/Quantization in AdS/gluing/archived/scalar local structure implementation.md>), [finite-insertion obstruction](<Articles/Quantization in AdS/gluing/archived/scalar insertion time-slice obstruction.md>), [switched-phi4 calculations](<Articles/Quantization in AdS/gluing/archived/scalar interacting local structure.md>), and the separately [completed relative-S construction](<Articles/Quantization in AdS/gluing/archived/scalar completed relative-S local structure.md>). It records an author verification, not an independent-agent review.
 
 ## 1. Executed symbolic checks
 
@@ -49,7 +49,7 @@ These computations do not remove divergences, enforce interface matching, establ
 | Original finite-insertion time-slice | **False**, with four exact smooth KG solutions: early disjoint supports, late nonzero quartic polarization, and a rapidly decreasing bound for every fixed finite early expression |
 | Weakly interacting classical evolution | Corresponding local solution domains and background-dependent Green tensor; time-smooth response reconstruction for full regular observables is distinguished from finite insertion expressions |
 | Formal interacting locality/refinement | Off-shell causal factorization and a common graph/contact prescription before on-shell restriction |
-| Higher completed relative-S target | Separate [completed construction](<../scalar completed relative-S local structure.md>): multi-insertion coefficients, explicit Laurent/nonnegative saturation and controlled representative limits; compact Cauchy compensation, compatible local cutoffs, and an actual coefficient-recursive formal inverse |
+| Higher completed relative-S target | Separate [completed construction](<Articles/Quantization in AdS/gluing/archived/scalar completed relative-S local structure.md>): multi-insertion coefficients, explicit Laurent/nonnegative saturation and controlled representative limits; compact Cauchy compensation, compatible local cutoffs, and an actual coefficient-recursive formal inverse |
 
 The no-go is an infinite-dimensional proof. The approximate geometric-optics fields are replaced by exact KG solutions with identical compact initial data; the H3/H2 energy bound makes the late-time error O(1/frequency). Early support separation is exact. Thus the nonzero limit is not a finite-regulator observation and does not assert that every alternative completion fails.
 

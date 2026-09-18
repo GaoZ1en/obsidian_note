@@ -100,13 +100,13 @@ export function formatMarkdown(source: string, options: Partial<FormatterOptions
       atSentenceStart = true;
       previousLineWasMergeableProse = false;
     } else {
-      const mergeableProse =
+      const mergeableProse: boolean =
         resolved.joinProseLines &&
         !inListBlock &&
         !isLatexEnvironmentLine &&
         !isParenthesizedMathLine &&
-        isMergeableProseLine(line, formatted, isSetextTitle);
-      if (mergeableProse && previousLineWasMergeableProse) {
+        isMergeableProseLine(line, formatted, isSetextTitle, previousLineWasMergeableProse);
+      if (mergeableProse && previousLineWasMergeableProse && !isFormattedFieldStart(formatted)) {
         joinWithPreviousLine(output, formatted);
       } else {
         appendLine(output, formatted, resolved.maxConsecutiveBlankLines);
@@ -202,7 +202,12 @@ function isTitleHeading(line: string): boolean {
   return /^\s*(?:>\s*)*#{1,6}[ \t]+\S/.test(line);
 }
 
-function isMergeableProseLine(rawLine: string, formattedLine: string, isSetextTitle: boolean): boolean {
+function isMergeableProseLine(
+  rawLine: string,
+  formattedLine: string,
+  isSetextTitle: boolean,
+  continuesProse: boolean
+): boolean {
   if (isSetextTitle || rawLine.trim().length === 0 || hasExplicitHardBreak(rawLine)) {
     return false;
   }
@@ -216,15 +221,14 @@ function isMergeableProseLine(rawLine: string, formattedLine: string, isSetextTi
     content.length === 0 ||
     startsIndependentMarkdownBlock(content) ||
     isLikelyTableRow(content) ||
-    isStandaloneInlineMath(content) ||
+    (!continuesProse && isStandaloneInlineMath(content)) ||
     isStandaloneEmbed(content) ||
     isStandaloneTechnicalExpression(content) ||
-    isStrongFieldLabel(content) ||
     /^(?:\[\^[^\]]+\]|\[[^\]]+\]):\s*/.test(content) ||
     /^\^[\p{L}\p{N}][\p{L}\p{N}_-]*$/u.test(content) ||
     /^[^\s:][^:]*::\s*/.test(content) ||
     /^:[^\s]*:+$/.test(content) ||
-    /^(?:[=+*/]|-(?!\s))/.test(content) ||
+    (/^(?:[=+*/]|-(?!\s))/.test(content) && !startsInlineProseFormatting(content)) ||
     /^\\[A-Za-z]+(?:\{|\s|_)/.test(content)
   ) {
     return false;
@@ -260,7 +264,21 @@ function isLikelyTableRow(line: string): boolean {
 }
 
 function isStandaloneInlineMath(line: string): boolean {
-  return /^(?:\${1,2}.+\${1,2}|\\\(.+\\\))[.,;:]?$/.test(line);
+  // Stop at the first unescaped closing delimiter, not at a later formula.
+  const opening = line.startsWith("$") && !line.startsWith("$$") ? "$" : line.startsWith("\\(") ? "\\(" : null;
+  if (opening === null) {
+    return false;
+  }
+  const closing = opening === "$" ? "$" : "\\)";
+  for (let index = opening.length; index < line.length; index += 1) {
+    if (line.startsWith(closing, index)) {
+      return index > opening.length && /^[.,;:]?$/.test(line.slice(index + closing.length));
+    }
+    if (line[index] === "\\") {
+      index += 1;
+    }
+  }
+  return false;
 }
 
 function isStandaloneEmbed(line: string): boolean {
@@ -271,8 +289,15 @@ function isStandaloneTechnicalExpression(line: string): boolean {
   return /^(?:[A-Za-z]|\p{Script=Greek})$/u.test(line);
 }
 
-function isStrongFieldLabel(line: string): boolean {
-  return /^(?:(?:\*\*[^*]+\*\*|__[^_]+__)\s*[:：].*|\*\*[\s\S]+\*\*|__[\s\S]+__)\s*$/.test(line);
+function startsInlineProseFormatting(line: string): boolean {
+  return /^(?:\*{1,3}|_{1,3}|==|~~)(?=\S)/.test(line);
+}
+
+function isFormattedFieldStart(line: string): boolean {
+  // A new labelled field starts a line, but its wrapped body can still join.
+  // Accept both **Label:** and **Label**: (and the other inline markers).
+  const label = line.match(/^(\*{1,3}|_{1,3}|==|~~)(?=\S)(.+?)\1/);
+  return label !== null && (/[:：]$/.test(label[2]) || /^\s*[:：]/.test(line.slice(label[0].length)));
 }
 
 function countMatches(text: string, pattern: RegExp): number {

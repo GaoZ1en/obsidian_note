@@ -1,4 +1,4 @@
-we have known that the highest weight modes can be written as
+We have known that the highest weight modes can be written as
 
 $$\begin{align}
 \phi _{n\bar{n}}(x) & =\sqrt{ \frac{1}{n!\bar{n}!(\Delta)_{n}(\Delta)_{\bar{n}}} }\mathcal{L}_{\xi _{-1}}^{n}\mathcal{L}_{\bar{\xi}_{-1}}^{\bar{n}}\phi _{00}(x) \\
@@ -33,17 +33,17 @@ $$\begin{align}
  & \propto e^{-i\omega _{n+1,\bar{n}}t}e^{i(n+1-\bar{n})\phi}r^{n+1-\bar{n}}(1+r^{2})^{-(\Delta+n+1-\bar{n})/2}P_{\bar{n}}^{(\Delta-1,n+1-\bar{n})}\left(\frac{r^{2}-1}{r^{2}+1}\right)
 \end{align}$$
 
-where $x=\frac{r^{2}-1}{r^{2}+1}$. in the last step we have used the identity
+where $x=\frac{r^{2}-1}{r^{2}+1}$. In the last step we have used the identity
 
 $$\begin{align}
 (\alpha+\beta+k+1)P_{k}^{(\alpha,\beta)}(x)-(1-x) \frac{\mathrm{d}}{\mathrm{d}x}P_{k}^{(\alpha,\beta)}(x)=(\alpha+\beta+k+1)P_{k}^{(\alpha,\beta+1)}(x)
 \end{align}$$
 
-and set $\displaystyle{\alpha=\Delta-1,\beta=n-\bar{n},k=\bar{n}}$. and the action of $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}}$ is the same by symmetry $\displaystyle{n\leftrightarrow \bar{n}}$. thus by induction, we have proved our assumption.
+and set $\displaystyle{\alpha=\Delta-1,\beta=n-\bar{n},k=\bar{n}}$. And the action of $\displaystyle{\mathcal{L}_{\bar{\xi}_{-1}}}$ is the same by symmetry $\displaystyle{n\leftrightarrow \bar{n}}$. Thus by induction, we have proved our assumption.
 
 ---
 
-we will prove the identity used above. we start from the recurrence relation of hypergeometric function
+We will prove the identity used above. We start from the recurrence relation of hypergeometric function
 
 $$\begin{align}
 \gamma F-\alpha zF(\alpha+1,\gamma+1)-\gamma F(\beta-1) & =0 \tag{1}

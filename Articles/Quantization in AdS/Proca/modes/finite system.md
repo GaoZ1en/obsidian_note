@@ -24,7 +24,7 @@ A^{t}\big|_{r=r_{0}}&=0, & A^{\phi}\big|_{r=r_{0}}&=0.
 
 Unlike Maxwell theory, this is not a gauge choice: the mass term removes the gauge symmetry, and the divergence constraint follows from the equation of motion.
 
-# boundary condition for $A^r$
+# Boundary Condition for $A^r$
 
 The Proca equation is
 
@@ -63,7 +63,7 @@ $$\begin{align}
 \partial_{r}\!\left(r(1+r^{2})A_{r}\right)\big|_{r=r_{0}}=0.
 \end{align}$$
 
-# decoupled bulk equations
+# Decoupled Bulk Equations
 
 After using $\nabla_{\mu}A^{\mu}=0$ to eliminate $A^{t}$, define
 
@@ -114,7 +114,7 @@ $$\begin{align}
 R_{\ell}(\omega;r) &=r^{\ell}(1+r^{2})^{-(\ell+\Delta)/2} {}_2F_1\left( \frac{\ell+\Delta-\omega}{2}, \frac{\ell+\Delta+\omega}{2}; 1+\ell; \frac{r^{2}}{1+r^{2}} \right).
 \end{align}$$
 
-# finite-radius spectrum
+# Finite-Radius Spectrum
 
 For fixed $m$, write
 

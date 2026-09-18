@@ -10,7 +10,7 @@ S_{i}[\phi _{i}] & =\dfrac{1}{2}\int _{I}\mathrm{d}t\int _{0}^{\ell _{i}}\mathrm
  & +\left.\int _{0}^{\ell _{i}}\mathrm{d}y_{i}\dot{\phi}_{i}\delta \phi _{i}\right|^{t_{f}}_{t_{i}}+\left.\int _{I}\mathrm{d}t \Pi _{i}'\delta q _{i}\right|_{y_{i}=\ell _{i}}
 \end{align}$$
 
-at $\displaystyle{y_{i}=0}$ we impose some suitable boundary condition to ensure the variational problem is well-defined. at $\displaystyle{y_{i}=\ell _{i}}$ we denote $\displaystyle{\delta q_{i}=\delta \phi _{i}|_{y_{i}=\ell _{i}}}$ and $\displaystyle{\Pi_{i}=\phi _{i}'|_{y_{i}=\ell _{i}}}$. phase space gluing mechanism is recoded in [[Articles/Quantization in AdS/gluing/classical_gluing_formalism|classical_gluing_formalism]], and we will not repeat it here.
+at $\displaystyle{y_{i}=0}$ we impose some suitable boundary condition to ensure the variational problem is well-defined. at $\displaystyle{y_{i}=\ell _{i}}$ we denote $\displaystyle{\delta q_{i}=\delta \phi _{i}|_{y_{i}=\ell _{i}}}$ and $\displaystyle{\Pi_{i}=\phi _{i}'|_{y_{i}=\ell _{i}}}$. phase space gluing mechanism is recoded in [[Articles/Quantization in AdS/gluing/archived/classical_gluing_formalism|classical_gluing_formalism]], and we will not repeat it here.
 
 ### Regional Observable Algebra
 
@@ -35,7 +35,7 @@ $$\begin{align}
 
 we can easily verify that $\displaystyle{(\mathcal{H}_{i}[q_{i}],\left\{\cdot,\cdot\right\}_{i,q_{i}})}$ forms a Poisson algebra.
 
-To do dynamics/algebra gluing, we have to release $\displaystyle{q_{i}}$ as recorded in [[Articles/Quantization in AdS/gluing/classical_gluing_formalism|classical_gluing_formalism]]. We define the regional extended phase space as
+To do dynamics/algebra gluing, we have to release $\displaystyle{q_{i}}$ as recorded in [[Articles/Quantization in AdS/gluing/archived/classical_gluing_formalism|classical_gluing_formalism]]. We define the regional extended phase space as
 
 $$\begin{align}
 \mathcal{P}_{i}=\bigsqcup_{q_{i}\in \mathcal{B}_{i}}\mathcal{P}_{i}[q_{i}]
@@ -57,7 +57,7 @@ and $\displaystyle{(\mathcal{H}_{i},\left\{\cdot,\cdot\right\}_{i})}$ forms a Po
 
 ### Algebra Gluing
 
-Now we have two regional phase space $\displaystyle{(\widehat{\mathcal{P}}_{1},\Omega _{1}),(\widehat{\mathcal{P}}_{2},\Omega _{2})}$ and two regional observable algebra $\displaystyle{(\mathcal{H}_{1},\left\{\cdot,\cdot\right\}_{1}),(\mathcal{H}_{2},\left\{\cdot,\cdot\right\}_{2})}$. The gluing mechanism of regional phase spaces are recorded in [[Articles/Quantization in AdS/gluing/classical_gluing_formalism|classical_gluing_formalism]], and we will focus in the gluing mechanism of regional observable algebras. We first collect the fixed-history phase spaces into
+Now we have two regional phase space $\displaystyle{(\widehat{\mathcal{P}}_{1},\Omega _{1}),(\widehat{\mathcal{P}}_{2},\Omega _{2})}$ and two regional observable algebra $\displaystyle{(\mathcal{H}_{1},\left\{\cdot,\cdot\right\}_{1}),(\mathcal{H}_{2},\left\{\cdot,\cdot\right\}_{2})}$. The gluing mechanism of regional phase spaces are recorded in [[Articles/Quantization in AdS/gluing/archived/classical_gluing_formalism|classical_gluing_formalism]], and we will focus in the gluing mechanism of regional observable algebras. We first collect the fixed-history phase spaces into
 
 $$\begin{align}
 \mathcal{P}_{\mathrm{ind}}[q] & =\mathcal{P}_{1}[q_{1}]\times \mathcal{P}_{2}[q_{2}]

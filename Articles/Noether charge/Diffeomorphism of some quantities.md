@@ -1,6 +1,6 @@
-### Variation and diffeomorphism
+### Variation and Diffeomorphism
 
-in this section we will prove that the diffeomorphism of Riemann curvature and related quantities, together with the components of the volume form $\displaystyle{\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}}$ with respect to $\displaystyle{\xi}$ equal their Lie derivatives with respect to $\displaystyle{\xi}$, i.e., we will prove the following equations
+In this section we will prove that the diffeomorphism of Riemann curvature and related quantities, together with the components of the volume form $\displaystyle{\varepsilon_{\mu_{0}\mu_{1}\dots \mu_{d-1}}}$ with respect to $\displaystyle{\xi}$ equal their Lie derivatives with respect to $\displaystyle{\xi}$, i.e., we will prove the following equations
 
 $$
 \tag{1.1}
@@ -151,7 +151,7 @@ X_{\xi}\cdot \delta R & =g^{\mu \nu}X_{\xi}\cdot \delta R_{\mu \nu} -R_{\mu \nu}
 \end{align}
 $$
 
-the component of the volume form. notice that
+the component of the volume form. Notice that
 
 $$
 \tag{1.15}
@@ -173,7 +173,7 @@ X_{\xi}\cdot \delta \varepsilon_{\mu_{0}\dots \mu_{d-1}} & =\mathcal{L}_{\xi}\va
 \end{align}
 $$
 
-the bulk Lagrangian. for simplicity we only consider the Einstein-Hilbert action with a cosmological constant
+the bulk Lagrangian. For simplicity we only consider the Einstein-Hilbert action with a cosmological constant
 
 $$
 \tag{1.17}
@@ -195,11 +195,11 @@ $$
 
 proof is validate for any dimension.
 
-## Cartan's magic formula
+## Cartan's Magic Formula
 
-we will give a direct proof for Cartan's magic formula below.
+We will give a direct proof for Cartan's magic formula below.
 
-suppose $\displaystyle{\omega_{\mu_{1}\dots \mu_{k}}}$ are the components of a $\displaystyle{k}$-form field $\displaystyle{\omega}$ defined on $\displaystyle{M}$. on the one hand, by definition its Lie derivative with respect to $\displaystyle{\xi_{\rho}}$ is given by
+Suppose $\displaystyle{\omega_{\mu_{1}\dots \mu_{k}}}$ are the components of a $\displaystyle{k}$-form field $\displaystyle{\omega}$ defined on $\displaystyle{M}$. On the one hand, by definition its Lie derivative with respect to $\displaystyle{\xi_{\rho}}$ is given by
 
 $$
 \tag{2.1}
@@ -240,9 +240,9 @@ $$
 \end{align}
 $$
 
-## bulk Lagrangian
+## Bulk Lagrangian
 
-we have
+We have
 
 $$
 \tag{3.1}
@@ -255,7 +255,7 @@ $$
 \end{align}
 $$
 
-then we will argue that if $\displaystyle{\xi}$ is parallel with $\displaystyle{\Gamma}$, the $\displaystyle{\int_{\Gamma}\xi \cdot L}$ will vanish. we choose local coordinate $\displaystyle{(t,z,\phi)}$. at first sight, $\displaystyle{\xi}$ is parallel with $\displaystyle{\Gamma}$ means that $\displaystyle{\xi}$ satisfies that $\displaystyle{\xi^{\mu}n_{\mu}=0}$. then we have
+then we will argue that if $\displaystyle{\xi}$ is parallel with $\displaystyle{\Gamma}$, the $\displaystyle{\int_{\Gamma}\xi \cdot L}$ will vanish. We choose local coordinate $\displaystyle{(t,z,\phi)}$. At first sight, $\displaystyle{\xi}$ is parallel with $\displaystyle{\Gamma}$ means that $\displaystyle{\xi}$ satisfies that $\displaystyle{\xi^{\mu}n_{\mu}=0}$. Then we have
 
 $$
 \tag{3.2}

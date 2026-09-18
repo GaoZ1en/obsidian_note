@@ -1,25 +1,24 @@
-# CPS canonical quantum perturbation test of Brown--Henneaux one-loop central charge
+# CPS Canonical Quantum Perturbation Test of Brown--Henneaux One-Loop Central Charge
 
 > [!archive]
 > Detailed verification record. Its exact/local-formal free-$H_0$ result and Wick-reference conclusion are integrated into the active main note; this file preserves the full regulator and claim-boundary analysis.
 
-## 1. Binary verdict
+## 1. Binary Verdict
 
 **Reduced-Hamiltonian kill test: YES.** On the selected smooth global-AdS$_3$ Brown--Henneaux vacuum orbit, the vacuum-subtracted metric Brown--York/CPS time-translation charge is exactly quadratic in a local $U(1)$-equivariant Darboux coordinate system:
 
-$$
-\boxed{
-H_0^D=\sum_{N\geq2}N b_N^\dagger b_N
+$$\begin{align}
+\boxed{ H_0^D=\sum_{N\geq2}N b_N^\dagger b_N
 }
-$$
+\end{align}$$
 
 for one chirality. The barred chirality gives an identical commuting sum. The additive constant is zero by the same global-AdS vacuum subtraction used in the classical charge. This is an exact local/formal statement on the selected vacuum orbit and an exact statement at every finite mode truncation. It is not a claim of a global convergent Darboux chart on every AdS$_3$ gravity sector.
 
 The already derived radial-homotopy map satisfies, explicitly,
 
-$$
+$$\begin{align}
 \boxed{H_{0,1}^D=0,\qquad H_{0,2}^D=0,}
-$$
+\end{align}$$
 
 so there are no reduced cubic or quartic interaction vertices. Branch A therefore applies: there are no genuine interaction-loop corrections to the propagator inside this reduced sector. The relevant quantum effects are Wick contractions and finite renormalizations of the nonlinear Virasoro charge insertions.
 
@@ -27,79 +26,61 @@ so there are no reduced cubic or quartic interaction vertices. Branch A therefor
 
 The present local pAQFT notes do not close this gap: they correctly identify current counterterms, Ward normalization, and genuine anomalies, but they explicitly defer the BV--BRST and boundary-Ward classification needed for gravity. Therefore no numerical one-loop central correction is internally derived here.
 
-## 2. Exact conventions and source notes used
+## 2. Exact Conventions and Source Notes Used
 
 The calculation uses the following project conventions.
 
 1. The AdS radius is $\ell=1$, the signature is $(-,+,+)$, and
 
-   $$
-   \kappa^2=16\pi G.
-   $$
+$$\begin{align}
+\kappa^2=16\pi G.
+\end{align}$$
 
 2. The renormalized variational problem is
 
-   $$
-   S_{\rm ren}[g]
-   =\frac1{\kappa^2}\int_M\!\mathrm d^3x\sqrt{-g}\,(R+2)
-   +\frac2{\kappa^2}\int_\Gamma\!\mathrm d^2x\sqrt{-\gamma}\,(K-1),
-   $$
+$$\begin{align}
+S_{\rm ren}[g] =\frac1{\kappa^2}\int_M\!\mathrm d^3x\sqrt{-g}\,(R+2) +\frac2{\kappa^2}\int_\Gamma\!\mathrm d^2x\sqrt{-\gamma}\,(K-1),
+\end{align}$$
 
    together with the integrated Harlow--Wu corner contribution. The reduced symplectic form is the pullback of this full bulk-plus-boundary-plus-corner form, not of a bare bulk potential.
 
 3. The vacuum-subtracted metric charge is
 
-   $$
-   H_\xi
-   =-\frac2{\kappa^2}\int_{\partial\Sigma}\!\mathrm dx\sqrt h\,
-   \tau^\alpha\xi^\beta
-   \left(-K_{\alpha\beta}+K\gamma_{\alpha\beta}-\gamma_{\alpha\beta}\right),
-   \qquad H_\xi[g^{(0)}]=0.
-   $$
+$$\begin{align}
+H_\xi =-\frac2{\kappa^2}\int_{\partial\Sigma}\!\mathrm dx\sqrt h\, \tau^\alpha\xi^\beta \left(-K_{\alpha\beta}+K\gamma_{\alpha\beta}-\gamma_{\alpha\beta}\right), \qquad H_\xi[g^{(0)}]=0.
+\end{align}$$
 
 4. The selected nonlinear metric family is
 
-   $$
-   g[a]=e^{\kappa\mathcal L_{\zeta[a]}}g^{(0)},
-   $$
+$$\begin{align}
+g[a]=e^{\kappa\mathcal L_{\zeta[a]}}g^{(0)},
+\end{align}$$
 
    with every multimode cross term retained. It is the fixed-generator chart already used in the project, not a substituted coadjoint-orbit action.
 
 5. In one chirality,
 
-   $$
-   \zeta=\sum_{|n|\geq2}z_n\xi_n,
-   \qquad
-   z_{-N}=q_Na_N,
-   \qquad
-   z_N=q_N^*a_N^\dagger,
-   $$
+$$\begin{align}
+\zeta=\sum_{|n|\geq2}z_n\xi_n, \qquad z_{-N}=q_Na_N, \qquad z_N=q_N^*a_N^\dagger,
+\end{align}$$
 
-   $$
-   q_N=-\frac{(-i)^{N-1}}{\sqrt{D_N}},
-   \qquad
-   D_N=2\pi N(N^2-1).
-   $$
+$$\begin{align}
+q_N=-\frac{(-i)^{N-1}}{\sqrt{D_N}}, \qquad D_N=2\pi N(N^2-1).
+\end{align}$$
 
    The modes $-1,0,1$ are the $PSL(2,\mathbb R)$ vacuum stabilizer and are not oscillators.
 
 6. The leading reduced form and quantum convention are
 
-   $$
-   \Omega_0=i\sum_{N\geq2}\delta a_N^\dagger\wedge\delta a_N,
-   \qquad
-   \{a_N^\dagger,a_M\}=i\delta_{NM},
-   \qquad
-   [a_N,a_M^\dagger]=\delta_{NM}.
-   $$
+$$\begin{align}
+\Omega_0=i\sum_{N\geq2}\delta a_N^\dagger\wedge\delta a_N, \qquad \{a_N^\dagger,a_M\}=i\delta_{NM}, \qquad [a_N,a_M^\dagger]=\delta_{NM}.
+\end{align}$$
 
 7. The vacuum and adjoint are
 
-   $$
-   a_N|0\rangle=0,
-   \qquad
-   H_p^\dagger=H_{-p}.
-   $$
+$$\begin{align}
+a_N|0\rangle=0, \qquad H_p^\dagger=H_{-p}.
+\end{align}$$
 
 The principal local sources inspected and reconciled were:
 
@@ -112,13 +93,13 @@ The principal local sources inspected and reconciled were:
 
 The numerical central shift assumed in the old quantization section, its Chern--Simons/WZW route, determinant route, vacuum-energy route, and the scripts conditional on a chosen quantum central charge were quarantined. None is used as input below.
 
-## 3. Why the previous classical-symbol-map calculation was insufficient
+## 3. Why the Previous Classical-Symbol-Map Calculation Was Insufficient
 
 The previous next-order calculation correctly completed the classical chain
 
-$$
+$$\begin{align}
 h^{[2]}\longrightarrow\Omega_2\longrightarrow Y_2\longrightarrow H_{p,1}^D.
-$$
+\end{align}$$
 
 It also correctly showed that applying different symbol maps to the same commuting cubic polynomial can produce different linear quantum terms. What it did not decide was whether the reduced dynamics itself has interaction vertices. Consequently it did not cleanly separate
 
@@ -130,160 +111,137 @@ It also correctly showed that applying different symbol maps to the same commuti
 
 The decisive first question is therefore the structure of $H_0$, not a comparison of normal and Weyl symbols. Once $H_0$ is shown to be exactly quadratic, classes involving reduced bulk interaction insertions are absent. The remaining problem is entirely a composite-charge/Ward-normalization problem.
 
-## 4. Reduced $H_0$ kill test
+## 4. Reduced $H_0$ Kill Test
 
-### 4.1 Exact metric/CPS definition of $H_0$ on the exponential chart
+### 4.1 Exact metric/CPS Definition of $H_0$ on the Exponential Chart
 
 The full renormalized CPS pairing at the global-AdS vacuum is
 
-$$
-B(\xi_m,\xi_n)
-:=\kappa^2\Omega_{g^{(0)}}(X_{\xi_m},X_{\xi_n})
-=iD_m\delta_{m+n,0}.
-$$
+$$\begin{align}
+B(\xi_m,\xi_n) :=\kappa^2\Omega_{g^{(0)}}(X_{\xi_m},X_{\xi_n}) =iD_m\delta_{m+n,0}.
+\end{align}$$
 
 For the fixed-generator exponential chart, define
 
-$$
-\Theta
-=\frac{1-e^{-\kappa\operatorname{ad}_\zeta}}
-{\kappa\operatorname{ad}_\zeta}\,\delta\zeta.
-$$
+$$\begin{align}
+\Theta =\frac{1-e^{-\kappa\operatorname{ad}_\zeta}} {\kappa\operatorname{ad}_\zeta}\,\delta\zeta.
+\end{align}$$
 
 The exact pullback of the same metric CPS form is
 
-$$
+$$\begin{align}
 \Omega_\zeta(u,v)=B(P_>\Theta(u),P_>\Theta(v)),
-$$
+\end{align}$$
 
 where $P_>$ removes only the final $-1,0,1$ component. No boundary orbit action has been introduced.
 
 The global generator $\xi_0$ stabilizes $g^{(0)}$. Hence its left action on the metric family can be moved to the right as a stabilizer action:
 
-$$
-e^{s\xi_0}e^{\kappa\zeta}g^{(0)}
-=e^{s\xi_0}e^{\kappa\zeta}e^{-s\xi_0}g^{(0)}
-=e^{\kappa\operatorname{Ad}_{e^{s\xi_0}}\zeta}g^{(0)}.
-$$
+$$\begin{align}
+e^{s\xi_0}e^{\kappa\zeta}g^{(0)} =e^{s\xi_0}e^{\kappa\zeta}e^{-s\xi_0}g^{(0)} =e^{\kappa\operatorname{Ad}_{e^{s\xi_0}}\zeta}g^{(0)}.
+\end{align}$$
 
 Using $[\xi_0,\xi_k]=ik\xi_k$, the induced reduced vector field is therefore exactly linear:
 
-$$
+$$\begin{align}
 \boxed{X_0z_k=ikz_k.}
-$$
+\end{align}$$
 
 In particular,
 
-$$
-X_0a_N=-iNa_N,
-\qquad
-X_0a_N^\dagger=iNa_N^\dagger.
-$$
+$$\begin{align}
+X_0a_N=-iNa_N, \qquad X_0a_N^\dagger=iNa_N^\dagger.
+\end{align}$$
 
 The same vacuum-subtracted Brown--York/CPS charge is determined on the chart by
 
-$$
-\delta H_0=-\iota_{X_0}\Omega,
-\qquad
-H_0[0]=0.
-$$
+$$\begin{align}
+\delta H_0=-\iota_{X_0}\Omega, \qquad H_0[0]=0.
+\end{align}$$
 
 Equivalently, along the radial path $s\zeta$,
 
-$$
-\boxed{
-H_0[g[a]]
-=-\int_0^1\!\mathrm ds\,
-\Omega_{s\zeta}\bigl(X_0(s\zeta),\zeta\bigr).
+$$\begin{align}
+\boxed{ H_0[g[a]] =-\int_0^1\!\mathrm ds\, \Omega_{s\zeta}\bigl(X_0(s\zeta),\zeta\bigr).
 }
-$$
+\end{align}$$
 
 This is an exact computation of $H_0$ from the same metric charge and CPS form: it is the radial integral of the exact Hamiltonian one-form with the same vacuum normalization.
 
-### 4.2 Explicit expansion through quartic order
+### 4.2 Explicit Expansion Through Quartic Order
 
 Write
 
-$$
+$$\begin{align}
 \Omega=\Omega_0+\kappa\Omega_1+\kappa^2\Omega_2+O(\kappa^3),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 H_0=H_{0,0}+\kappa H_{0,1}+\kappa^2H_{0,2}+O(\kappa^3).
-$$
+\end{align}$$
 
 Let
 
-$$
+$$\begin{align}
 \mathcal E=\sum_{|k|\geq2}z_k\frac{\partial}{\partial z_k}
-$$
+\end{align}$$
 
 be the radial vector field. Since $\Omega_j$ has coefficient degree $j$, radial integration gives
 
-$$
-\boxed{
-H_{0,j}=-\frac1{j+2}\iota_{\mathcal E}\iota_{X_0}\Omega_j,
-\qquad j=0,1,2.
+$$\begin{align}
+\boxed{ H_{0,j}=-\frac1{j+2}\iota_{\mathcal E}\iota_{X_0}\Omega_j, \qquad j=0,1,2.
 }
-$$
+\end{align}$$
 
 The quadratic term is
 
-$$
-\boxed{
-H_{0,0}=\sum_{N\geq2}N a_N^\dagger a_N
-=\sum_{N\geq2}ND_Nz_{-N}z_N.
+$$\begin{align}
+\boxed{ H_{0,0}=\sum_{N\geq2}N a_N^\dagger a_N =\sum_{N\geq2}ND_Nz_{-N}z_N.
 }
-$$
+\end{align}$$
 
 The cubic term obtained from this formula is exactly the $p=0$ specialization of the existing metric charge:
 
-$$
-H_{0,1}
-=-\frac{i}{6}
-\sum_{\substack{|k|,|l|,|m|\geq2\\k+l+m=0}}
-z_kz_lz_mD_k\,m(l-m).
-$$
+$$\begin{align}
+H_{0,1} =-\frac{i}{6}
+\sum_{\substack{|k|,|l|,|m|\geq2\\
+k+l+m=0}} z_kz_lz_mD_k\,m(l-m).
+\end{align}$$
 
 The quartic term is explicitly fixed by
 
-$$
+$$\begin{align}
 H_{0,2}=-\frac14\iota_{\mathcal E}\iota_{X_0}\Omega_2,
-$$
+\end{align}$$
 
 with the already derived metric/CPS coefficient
 
-$$
-\begin{aligned}
-\Omega_2(u,v)
-={}&\frac16B([\zeta,[\zeta,u]],v)
-+\frac16B(u,[\zeta,[\zeta,v]])\\
+$$\begin{aligned}
+\Omega_2(u,v) ={}&\frac16B([\zeta,[\zeta,u]],v) +\frac16B(u,[\zeta,[\zeta,v]])\\
 &+\frac14B([\zeta,u],[\zeta,v]).
-\end{aligned}
-$$
+\end{aligned}$$
 
 Thus no new action, boundary theory, or external charge formula is needed to fix the quartic $H_0$ coefficient.
 
-### 4.3 The same radial Darboux map is $U(1)$-equivariant
+### 4.3 The Same Radial Darboux Map Is $U(1)$-Equivariant
 
 The existing direct-coordinate map is
 
-$$
+$$\begin{align}
 a=b+\kappa Y_1(b)+\kappa^2Y_2(b)+O(\kappa^3).
-$$
+\end{align}$$
 
 The exact form $\Omega$ is $U(1)$ invariant, and the radial vector field $\mathcal E$ commutes with $X_0$. Therefore every radial primitive used in the Moser construction is $U(1)$ invariant. Since $\Omega_0$ is invariant and nondegenerate after quotienting proper gauge, each $Y_j$ can be and, in the existing radial prescription, is chosen equivariantly:
 
-$$
+$$\begin{align}
 [X_0,Y_j]=0.
-$$
+\end{align}$$
 
 Substitution gives
 
-$$
-H_{0,1}^D
-=H_{0,1}+\mathrm dH_{0,0}[Y_1]=0,
-$$
+$$\begin{align}
+H_{0,1}^D =H_{0,1}+\mathrm dH_{0,0}[Y_1]=0,
+\end{align}$$
 
 and
 
@@ -300,80 +258,65 @@ $$
 
 Both cancellations were checked as exact polynomial identities at $N_{\max}=4,5,6,7,8$, over every retained mode combination, not only at sampled numerical amplitudes.
 
-### 4.4 Analytic exactness statement
+### 4.4 Analytic Exactness Statement
 
 At finite cutoff the reduced space is finite dimensional, $U(1)$ is compact, and the vacuum is a fixed point. The equivariant Darboux theorem states that a symplectic action of a compact group near a fixed point admits a group-equivariant Darboux chart identifying the action with its linear isotropy representation. For a Hamiltonian action, the moment map in that chart is its quadratic linear-model moment map plus a constant:
 
-$$
+$$\begin{align}
 H_0^D(v)=-\frac12\Omega_0(X_0v,v)+H_0(0).
-$$
+\end{align}$$
 
 Here this is exactly $\sum N b_N^\dagger b_N$, and $H_0(0)=0$. The radial Moser construction above is an explicit realization through $Y_2$ and can be continued equivariantly order by order. Therefore sampled zeroes are not being promoted to an exact proof; the theorem and the exact $U(1)$ action supply the analytic reason.
 
 For infinitely many modes, the conclusion is a local formal-power-series statement on finite-support configurations. Convergence of the all-order Darboux map in a specified infinite-dimensional topology is not established.
 
-## 5. Free CPS quantum algebra and propagator in Brown--Henneaux mode space
+## 5. Free CPS Quantum Algebra and Propagator in Brown--Henneaux Mode Space
 
 For each chirality $A=L,R$, let
 
-$$
-u_{A,N,\mu\nu}(x)
-=\left(\mathcal L_{\zeta_{A,N-2}}g^{(0)}\right)_{\mu\nu},
-\qquad N\geq2,
-$$
+$$\begin{align}
+u_{A,N,\mu\nu}(x) =\left(\mathcal L_{\zeta_{A,N-2}}g^{(0)}\right)_{\mu\nu}, \qquad N\geq2,
+\end{align}$$
 
 with the normalization already fixed by the full renormalized CPS form. In Darboux variables,
 
-$$
-\widehat h^{[0]}_{\mu\nu}(x)
-=\sum_{A=L,R}\sum_{N\geq2}
-\left(
-b_{A,N}u_{A,N,\mu\nu}(x)
-+b_{A,N}^\dagger u^*_{A,N,\mu\nu}(x)
-\right),
-$$
+$$\begin{align}
+\widehat h^{[0]}_{\mu\nu}(x) =\sum_{A=L,R}\sum_{N\geq2} \left( b_{A,N}u_{A,N,\mu\nu}(x) +b_{A,N}^\dagger u^*_{A,N,\mu\nu}(x) \right),
+\end{align}$$
 
-$$
-[b_{A,N},b_{B,M}^\dagger]
-=\delta_{AB}\delta_{NM},
-\qquad
-b_{A,N}|0\rangle=0.
-$$
+$$\begin{align}
+[b_{A,N},b_{B,M}^\dagger] =\delta_{AB}\delta_{NM}, \qquad b_{A,N}|0\rangle=0.
+\end{align}$$
 
 The reduced positive-frequency kernel is
 
-$$
-W^+_{\mu\nu\mid\rho\sigma}(x,y)
-=\sum_{A=L,R}\sum_{N\geq2}
-u_{A,N,\mu\nu}(x)u^*_{A,N,\rho\sigma}(y),
-$$
+$$\begin{align}
+W^+_{\mu\nu\mid\rho\sigma}(x,y) =\sum_{A=L,R}\sum_{N\geq2} u_{A,N,\mu\nu}(x)u^*_{A,N,\rho\sigma}(y),
+\end{align}$$
 
 and the reduced Feynman kernel is
 
-$$
-G_F(x,y)
-=\theta(t_x-t_y)W^+(x,y)
-+\theta(t_y-t_x)W^+(y,x)^{\rm op},
-$$
+$$\begin{align}
+G_F(x,y) =\theta(t_x-t_y)W^+(x,y) +\theta(t_y-t_x)W^+(y,x)^{\rm op},
+\end{align}$$
 
 where the second term exchanges the tensor slots and spacetime arguments. The commutator kernel is the antisymmetric part of $W^+$ and is the inverse of the reduced CPS form.
 
 The reduced Hamiltonian is
 
-$$
-H_{\rm time}^D
-=\sum_{A=L,R}\sum_{N\geq2}N b_{A,N}^\dagger b_{A,N}.
-$$
+$$\begin{align}
+H_{\rm time}^D =\sum_{A=L,R}\sum_{N\geq2}N b_{A,N}^\dagger b_{A,N}.
+\end{align}$$
 
 Consequently the practical reduced action is free. The nonlinear relation between $b$ and the metric does not create a reduced interaction vertex; it only makes the Virasoro charges nonlinear composite observables.
 
-## 6. Complete $\kappa$/loop-order ledger for the one-loop charge algebra
+## 6. Complete $\kappa$/Loop-Order Ledger for the One-Loop Charge Algebra
 
 For one chirality write
 
-$$
+$$\begin{align}
 H_p=\kappa^{-1}A_p+B_p+\kappa C_p+\kappa^2D_p+\cdots,
-$$
+\end{align}$$
 
 where $A_p,B_p,C_p,D_p$ have oscillator degrees $1,2,3,4$ before composite renormalization.
 
@@ -390,40 +333,31 @@ Thus $D_p$ cannot contribute to the $O(\kappa^0)$ identity term merely by underg
 
 Because $H_0^D$ is exactly quadratic, the reduced interaction action contains no $S_3$ or $S_4$. Therefore the Branch B classes
 
-$$
-(AB+BA)S_3,
-\qquad
-AA S_4,
-\qquad
-AA S_3S_3
-$$
+$$\begin{align}
+(AB+BA)S_3, \qquad AA S_4, \qquad AA S_3S_3
+\end{align}$$
 
 are absent in this reduced sector. This statement does not concern off-orbit bulk, ghost, topology-changing, or other monodromy sectors.
 
-## 7. Branch A calculation: free dynamics and nonlinear charge insertions
+## 7. Branch A Calculation: Free Dynamics and Nonlinear Charge Insertions
 
 Rephase the Darboux oscillators as in the preceding audit,
 
-$$
-\beta_N=i(-i)^{N-1}b_N,
-\qquad
-[\beta_N,\beta_M^\dagger]=\delta_{NM}.
-$$
+$$\begin{align}
+\beta_N=i(-i)^{N-1}b_N, \qquad [\beta_N,\beta_M^\dagger]=\delta_{NM}.
+\end{align}$$
 
 Then, for $p\geq2$,
 
-$$
+$$\begin{align}
 A_p=\sqrt{D_p}\,\beta_p.
-$$
+\end{align}$$
 
 For $p=2,3$, the quadratic charge is
 
-$$
-B_p=Q_p
-=\sum_{r=2}^{\infty}u_r^{(p)}\beta_r^\dagger\beta_{r+p},
-\qquad
-u_r^{(p)}=(r+2p)\sqrt{\frac{D_r}{D_{r+p}}},
-$$
+$$\begin{align}
+B_p=Q_p =\sum_{r=2}^{\infty}u_r^{(p)}\beta_r^\dagger\beta_{r+p}, \qquad u_r^{(p)}=(r+2p)\sqrt{\frac{D_r}{D_{r+p}}},
+\end{align}$$
 
 with $Q_{-p}=Q_p^\dagger$. There are no pair-creation or pair-annihilation terms for $p=2,3$ because two physical positive mode numbers cannot sum to $2$ or $3$.
 
@@ -436,192 +370,164 @@ The practical canonical/Wick prescription is defined as follows.
 
 Accordingly, write the renormalized cubic insertion as
 
-$$
+$$\begin{align}
 C_p^{\rm ren}=:C_p^{(3)}:_{W^+}+r_p^{\rm ren}\beta_p.
-$$
+\end{align}$$
 
 This is not a choice between an abstract normal and Weyl symbol. The first term is the reference Wick composite defined by the selected free state. The second term records the finite composite-current freedom that Wick subtraction alone does not fix.
 
 For a hard cutoff,
 
-$$
-Q_p^{(N_{\max})}
-=\sum_{r=2}^{N_{\max}-p}u_r^{(p)}\beta_r^\dagger\beta_{r+p},
-$$
+$$\begin{align}
+Q_p^{(N_{\max})} =\sum_{r=2}^{N_{\max}-p}u_r^{(p)}\beta_r^\dagger\beta_{r+p},
+\end{align}$$
 
 and exactly
 
-$$
-[Q_p^{(N_{\max})},Q_{-p}^{(N_{\max})}]
-=\sum_{r=2}^{N_{\max}-p}(u_r^{(p)})^2(n_r-n_{r+p}).
-$$
+$$\begin{align}
+[Q_p^{(N_{\max})},Q_{-p}^{(N_{\max})}] =\sum_{r=2}^{N_{\max}-p}(u_r^{(p)})^2(n_r-n_{r+p}).
+\end{align}$$
 
 It contains no identity operator.
 
 For a smooth energy damping, define
 
-$$
-Q_{p,\epsilon}
-=\sum_{r=2}^{\infty}
-e^{-\epsilon(r+p/2)}u_r^{(p)}\beta_r^\dagger\beta_{r+p},
-\qquad \epsilon>0.
-$$
+$$\begin{align}
+Q_{p,\epsilon} =\sum_{r=2}^{\infty} e^{-\epsilon(r+p/2)}u_r^{(p)}\beta_r^\dagger\beta_{r+p}, \qquad \epsilon>0.
+\end{align}$$
 
 Then the exact regulated expression is
 
-$$
-\boxed{
-[Q_{p,\epsilon},Q_{-p,\epsilon}]
-=\sum_{r=2}^{\infty}
-e^{-2\epsilon(r+p/2)}(u_r^{(p)})^2(n_r-n_{r+p}),
-}
-$$
+$$\begin{align}
+\boxed{ [Q_{p,\epsilon},Q_{-p,\epsilon}] =\sum_{r=2}^{\infty} e^{-2\epsilon(r+p/2)}(u_r^{(p)})^2(n_r-n_{r+p}), }
+\end{align}$$
 
 again with no identity term. On the finite-particle domain this has a pointwise $\epsilon\to0^+$ limit for every fixed occupation vector, although a separate operator-topology convergence statement is not proved.
 
 Finally, Wick's theorem gives
 
-$$
-\langle0|[A_p,:C_{-p}^{(3)}:_{W^+}]
-+[:C_p^{(3)}:_{W^+},A_{-p}]|0\rangle=0.
-$$
+$$\begin{align}
+\langle0|[A_p,:C_{-p}^{(3)}:_{W^+}] +[:C_p^{(3)}:_{W^+},A_{-p}]|0\rangle=0.
+\end{align}$$
 
 One field can contract across a Wick cubic insertion only once; the remaining Wick quadratic has zero vacuum expectation. Therefore the reference bare result is
 
-$$
-K_{p,{\rm Wick}}^{(1),{\rm bare}}=0,
-\qquad p=2,3,
-$$
+$$\begin{align}
+K_{p,{\rm Wick}}^{(1),{\rm bare}}=0, \qquad p=2,3,
+\end{align}$$
 
 for both regulators. The finite linear term changes this to
 
-$$
-\boxed{
-K_p^{(1)}
-:=\langle0|[H_p,H_{-p}]|0\rangle_{\text{one-loop}}
-=2\sqrt{D_p}\,\operatorname{Re}r_p^{\rm ren}.
+$$\begin{align}
+\boxed{ K_p^{(1)} :=\langle0|[H_p,H_{-p}]|0\rangle_{\text{one-loop}} =2\sqrt{D_p}\,\operatorname{Re}r_p^{\rm ren}.
 }
-$$
+\end{align}$$
 
-## 8. Explicit $p=2$ result
+## 8. Explicit $p=2$ Result
 
 Since
 
-$$
+$$\begin{align}
 D_2=12\pi,
-$$
+\end{align}$$
 
 the hard-cutoff and energy-damped Wick reference prescriptions both give
 
-$$
+$$\begin{align}
 K_{2,{\rm Wick}}^{(1),{\rm bare}}=0.
-$$
+\end{align}$$
 
 After the most general finite linear composite renormalization retained above,
 
-$$
+$$\begin{align}
 K_2^{(1)}=2\sqrt{12\pi}\,\operatorname{Re}r_2^{\rm ren},
-$$
+\end{align}$$
 
 and hence
 
-$$
-\boxed{
-\Delta c_2
-=\frac{12K_2^{(1)}}{2(2^2-1)}
-=4\sqrt{12\pi}\,\operatorname{Re}r_2^{\rm ren}.
+$$\begin{align}
+\boxed{ \Delta c_2 =\frac{12K_2^{(1)}}{2(2^2-1)} =4\sqrt{12\pi}\,\operatorname{Re}r_2^{\rm ren}.
 }
-$$
+\end{align}$$
 
 Thus the reference Wick representative has $\Delta c_2^{\rm bare}=0$, but the renormalized value is not fixed until $r_2^{\rm ren}$ is fixed by an additional quantum normalization principle.
 
-## 9. Explicit $p=3$ result
+## 9. Explicit $p=3$ Result
 
 Since
 
-$$
+$$\begin{align}
 D_3=48\pi,
-$$
+\end{align}$$
 
 the two reference regulators give
 
-$$
+$$\begin{align}
 K_{3,{\rm Wick}}^{(1),{\rm bare}}=0.
-$$
+\end{align}$$
 
 In general,
 
-$$
+$$\begin{align}
 K_3^{(1)}=2\sqrt{48\pi}\,\operatorname{Re}r_3^{\rm ren},
-$$
+\end{align}$$
 
 so
 
-$$
-\boxed{
-\Delta c_3
-=\frac{12K_3^{(1)}}{3(3^2-1)}
-=\sqrt{48\pi}\,\operatorname{Re}r_3^{\rm ren}.
+$$\begin{align}
+\boxed{ \Delta c_3 =\frac{12K_3^{(1)}}{3(3^2-1)} =\sqrt{48\pi}\,\operatorname{Re}r_3^{\rm ren}.
 }
-$$
+\end{align}$$
 
 The necessary $p=2$/$p=3$ agreement condition is
 
-$$
-\boxed{
-\Delta c_2=\Delta c_3
-\quad\Longleftrightarrow\quad
-\operatorname{Re}r_3^{\rm ren}=2\operatorname{Re}r_2^{\rm ren}.
+$$\begin{align}
+\boxed{ \Delta c_2=\Delta c_3 \quad\Longleftrightarrow\quad \operatorname{Re}r_3^{\rm ren}=2\operatorname{Re}r_2^{\rm ren}.
 }
-$$
+\end{align}$$
 
 Both reference bare values agree, but this agreement selects only the reference $r_p=0$ representative. It does not prove that the same theory forbids a finite common cocycle renormalization.
 
-## 10. Mixed commutator and high-mode Jacobi/closure check
+## 10. Mixed Commutator and High-Mode Jacobi/closure Check
 
 The quadratic part of the mixed commutator is
 
-$$
-\begin{aligned}
-[Q_2^{(N_{\max})},Q_{-3}^{(N_{\max})}]
-=\sum_{j=2}^{N_{\max}-1}\Big[&
-\mathbf1_{j\leq N_{\max}-3}u_{j+1}^{(2)}u_j^{(3)}\\
+$$\begin{aligned}
+[Q_2^{(N_{\max})},Q_{-3}^{(N_{\max})}] =\sum_{j=2}^{N_{\max}-1}\Big[& \mathbf1_{j\leq N_{\max}-3}u_{j+1}^{(2)}u_j^{(3)}\\
 &-\mathbf1_{j\geq4}u_{j-2}^{(2)}u_{j-2}^{(3)}
 \Big]\beta_{j+1}^\dagger\beta_j.
-\end{aligned}
-$$
+\end{aligned}$$
 
 It is a pure bilinear and has no identity component. The finite linear counterterms $r_2\beta_2$ and $r_3\beta_3$ also cannot create a mixed identity term because the oscillator grades differ.
 
 The full $O(\kappa^0)$ mixed Ward relation would require
 
-$$
+$$\begin{align}
 [H_2,H_{-3}]_{O(\kappa^0)}=5H_{-1,O(\kappa^0)}
-$$
+\end{align}$$
 
 after combining $BB$, $AC$, and $CA$ and renormalizing all composite insertions consistently. The classical polynomial relation follows from the checked metric moment-map identity. A regulator-preserving quantum operator relation is not established by the current notes: a hard upper cutoff breaks Witt symmetry, and the gravity pAQFT/BV Ward normalization needed to remove every non-Virasoro operator residue has not been constructed. This required closure check is therefore an obstruction, not a passed test that can be used to select a number.
 
 For the high-mode triple $(H_2,H_3,H_{-5})$, a central one-loop coefficient must satisfy
 
-$$
-\boxed{
-8K_2^{(1)}-7K_3^{(1)}+K_5^{(1)}=0.
+$$\begin{align}
+\boxed{ 8K_2^{(1)}-7K_3^{(1)}+K_5^{(1)}=0.
 }
-$$
+\end{align}$$
 
 The general Virasoro-compatible family
 
-$$
+$$\begin{align}
 K_p^{(1)}=\frac{\Delta c}{12}p(p^2-1)
-$$
+\end{align}$$
 
 satisfies this identity for every real $\Delta c$. Hence Jacobi constrains the mode dependence but not the coefficient.
 
 As a regulator diagnostic, the previously recorded raw Weyl/hard-cutoff contractions at $N_{\max}=8$ give a nonzero projected residual. The exact finite oscillator algebra still obeys associative Jacobi; the projected failure is compensated by cutoff-edge/non-Virasoro operator terms. That result is not used as a competing value. It only confirms that a hard cutoff plus an arbitrary composite representative is not a symmetry-preserving renormalization.
 
-## 11. Regulator comparison and renormalization analysis
+## 11. Regulator Comparison and Renormalization Analysis
 
-### 11.1 What the two regulators establish
+### 11.1 What the Two Regulators Establish
 
 For $p=2,3$:
 
@@ -632,36 +538,30 @@ For $p=2,3$:
 
 This regulator agreement is useful but insufficient. Composite Wick products are defined only after a finite normalization condition is supplied. A zero reference value is not itself such a physical condition.
 
-### 11.2 Finite freedom allowed by the reduced data
+### 11.2 Finite Freedom Allowed by the Reduced Data
 
 Among finite order-$\kappa$ renormalizations, the only term that can alter the diagonal identity coefficient through its commutator with the linear charge has the form
 
-$$
-\delta C_p^{\rm fin}=r_p^{\rm fin}\beta_p,
-\qquad
-\delta C_{-p}^{\rm fin}=(\delta C_p^{\rm fin})^\dagger.
-$$
+$$\begin{align}
+\delta C_p^{\rm fin}=r_p^{\rm fin}\beta_p, \qquad \delta C_{-p}^{\rm fin}=(\delta C_p^{\rm fin})^\dagger.
+\end{align}$$
 
 Demanding one Virasoro central shift for every mode reduces the real parts to
 
-$$
-\boxed{
-r_p^{\rm fin}
-=\frac{\Delta c}{48\pi}\sqrt{D_p}.
+$$\begin{align}
+\boxed{ r_p^{\rm fin} =\frac{\Delta c}{48\pi}\sqrt{D_p}.
 }
-$$
+\end{align}$$
 
 Equivalently, in signed variables,
 
-$$
-\delta H_{p,1}^{\rm fin}=-i\gamma_p^{\rm fin}z_{-p},
-\qquad
-\gamma_p^{\rm fin}=\frac{\Delta c}{24}p(p^2-1).
-$$
+$$\begin{align}
+\delta H_{p,1}^{\rm fin}=-i\gamma_p^{\rm fin}z_{-p}, \qquad \gamma_p^{\rm fin}=\frac{\Delta c}{24}p(p^2-1).
+\end{align}$$
 
 This is one real parameter. Vacuum subtraction, Hermiticity, the $p=2$/$p=3$ comparison, the mixed commutator's absence of a central term, and Jacobi do not determine it.
 
-### 11.3 What must decide whether this is a counterterm or an anomaly
+### 11.3 What Must Decide Whether This Is a Counterterm or an Anomaly
 
 The reduced oscillator calculation alone cannot decide whether the displayed freedom is
 
@@ -672,16 +572,15 @@ The local pAQFT backend states the correct general distinction: two admissible c
 
 Therefore the missing quantum principle is precise:
 
-$$
-\boxed{
-\text{a metric-derived, boundary-compatible BV--BRST/Ward renormalization}
+$$\begin{align}
+\boxed{ \text{a metric-derived, boundary-compatible BV--BRST/Ward renormalization}
 \text{ including its measure, regulator, and finite current normalization.}
 }
-$$
+\end{align}$$
 
 It must either fix the composite-current normalization or compute the nontrivial anomaly coefficient. Choosing a finite part to reproduce an external answer is not permitted and has not been done.
 
-## 12. Symbolic verification record
+## 12. Symbolic Verification Record
 
 Two new minimal scripts accompany this note.
 
@@ -734,32 +633,30 @@ Not verified:
 - a boundary Ward/cohomology calculation deciding whether the central cocycle is finite composite freedom or a genuine anomaly;
 - removal of every non-Virasoro operator residue by a uniquely specified symmetry-preserving regulator.
 
-## 13. Final binary conclusion and precise remaining obstruction
+## 13. Final Binary Conclusion and Precise Remaining Obstruction
 
 The structural question has a definite answer:
 
-$$
-\boxed{
-\text{The reduced global-AdS$_3$ Brown--Henneaux }H_0
+$$\begin{align}
+\boxed{ \text{The reduced global-AdS$_3$ Brown--Henneaux }H_0
 \text{ is exactly quadratic in suitable CPS-Darboux coordinates.}
 }
-$$
+\end{align}$$
 
 The cubic and quartic reduced interactions vanish, both analytically and in exact finite-mode checks. Branch A is therefore the correct reduced quantum calculation. The free CPS/Wick reference prescription gives
 
-$$
+$$\begin{align}
 \Delta c_2^{\rm bare}=\Delta c_3^{\rm bare}=0,
-$$
+\end{align}$$
 
 but this is a reference composite normalization, not a uniquely renormalized prediction.
 
 The final result is criterion **B**:
 
-$$
-\boxed{
-\text{CPS plus canonical Wick perturbation, as presently specified, leaves one finite}
+$$\begin{align}
+\boxed{ \text{CPS plus canonical Wick perturbation, as presently specified, leaves one finite}
 \text{ central-cocycle/composite-charge parameter undetermined.}
 }
-$$
+\end{align}$$
 
 To reach criterion A without importing an answer, the project must add a boundary-compatible gravitational BV--BRST/Ward renormalization derived from the same metric Einstein--Hilbert plus Gibbons--Hawking, counterterm, and corner variational problem. That construction must fix the finite current normalization or calculate the nontrivial anomaly coefficient, and it must establish regulator-independent mixed/Jacobi closure on a stated operator domain.

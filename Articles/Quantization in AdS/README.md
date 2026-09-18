@@ -7,7 +7,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | Directory | Description |
 |---|---|
 | `BRST/` | Graded BRST-CPS canonical quantization, with Maxwell, U(1) Chern-Simons, and linearized-gravity benchmarks |
-| `Chern-Simons/` | U(1) Chern-Simons theory: formalism, asymptotic behavior, boundary Lagrangians, and charges |
+| `Chern-Simons/` | U(1) and SU(2) Chern-Simons theory: boundary conditions, charges, BTZ and defect sectors; gravity–U(1) mixed central extensions and the geometric AdS-vacuum obstruction |
 | `Proca/` | Proca field quantization in AdS3, including modes, correlation functions, symplectic reduction, and heat-kernel methods |
 | `Proca-Chern-Simons/` | Proca-Chern-Simons theory: formalism, Dirac fermions, Green functions |
 | `ads4 linearized gravity/` | AdS4 linearized gravity, positive-energy modules, symplectic norms, characters, and thermal partition functions |

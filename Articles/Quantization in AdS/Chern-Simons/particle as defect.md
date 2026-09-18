@@ -1,4 +1,4 @@
-we couple a charged point defect to a $U(1)$ Chern-Simons gauge field $A$ by
+We couple a charged point defect to a $U(1)$ Chern-Simons gauge field $A$ by
 
 $$\begin{align}
 S[A;\gamma] & =\frac{k}{4\pi}\int _{M}A\wedge \mathrm{d}A+q\int _{\gamma}A.
@@ -6,7 +6,7 @@ S[A;\gamma] & =\frac{k}{4\pi}\int _{M}A\wedge \mathrm{d}A+q\int _{\gamma}A.
 
 Here $\gamma$ is a prescribed oriented worldline. The coupling defines a Wilson-line defect carrying $U(1)$ charge $q$.
 
-## Poincare dual current
+## Poincare Dual Current
 
 Let $\delta_{\gamma}$ be the Poincare dual two-form distribution of the worldline, normalized by
 
@@ -32,7 +32,7 @@ $$\begin{align}
 \frac{k}{2\pi}\mathrm{d}A+q\delta_{\gamma} & =0.
 \end{align}$$
 
-## classical solution and symplectic form
+## Classical Solution and Symplectic Form
 
 Away from the defect, $\mathrm{d}A=0$, so the connection is locally pure gauge. The defect is detected by the holonomy around a small loop $C=\partial D$ linking $\gamma$ once. Integrating the equation of motion over the disk $D$ gives
 
@@ -69,7 +69,7 @@ q\int _{\gamma}\mathrm{d}\lambda & =q\left(\lambda(\tau_{f})-\lambda(\tau_{i})\r
 
 Therefore a closed Wilson line is gauge invariant under small gauge transformations. For an open Wilson line, the endpoints must be attached to states of charge $q$ and $-q$.
 
-### boundary conditions and residual gauge modes
+### Boundary Conditions and Residual Gauge Modes
 
 For compact $U(1)$, the gauge transformation is specified by a single-valued group element $e^{i\lambda}$. Around the angular circle linking the defect, this allows
 
@@ -197,7 +197,7 @@ q & \in \mathbb{Z}.
 
 The same logic applied to the Chern-Simons path integral gives the level quantization $k\in \mathbb{Z}$. These charge identifications will be used in the quantization section below.
 
-### symplectic form
+### Symplectic Form
 
 On $M=\mathbb{R}_{t}\times \Sigma$, write $A=A_{t}\mathrm{d}t+A_{i}\mathrm{d}x^{i}$. Up to boundary terms, the action takes the canonical form
 
@@ -289,7 +289,7 @@ $$\begin{align}
 
 in this complex-mode convention. Equivalently, the quantum commutator has the standard level-$k$ form $[J_{\ell},J_{m}]=k\ell\delta_{\ell+m,0}$ after the usual replacement $[\ ,\ ]=i\{\ ,\ \}$.
 
-## quantization
+## Quantization
 
 The defect selects a flat-connection sector with fixed holonomy around the puncture,
 
