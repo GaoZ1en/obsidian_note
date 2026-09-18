@@ -62,15 +62,8 @@ $$\phi_1=-\frac16G_B^R(g\phi_0^3),\qquad
 
 沿背景的线性化算子为 $L_\phi=L+\lambda gP''(\phi)$。其 Green expansion
 
-$$G_\phi^
-ho=G^
-ho-G^
-ho V_\phi G^
-ho+
-G^
-ho V_\phi G^
-ho V_\phi G^
-ho-\cdots,\qquad \rho=R,A, \tag{2.5}$$
+$$G_\phi^\rho=G^\rho-G^\rho V_\phi G^\rho+
+G^\rho V_\phi G^\rho V_\phi G^\rho-\cdots,\qquad \rho=R,A, \tag{2.5}$$
 
 同样逐阶重建，故相应 Peierls bracket 一致。对平滑 local insertions 的 retarded-tree construction，其每阶系数是有限 field-degree 的分布核；admissibility 使用与 causal perturbation theory 相同的定向收缩条件，不是把整个任意 nonlinear functional 类自动量子化。
 
