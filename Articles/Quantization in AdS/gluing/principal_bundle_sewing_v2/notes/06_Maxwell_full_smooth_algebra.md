@@ -2,6 +2,8 @@
 
 **本篇的“完整”有精确定义：全部下面指定的平滑线性 Hamiltonian probes 及其有限 polynomial CCR / Weyl algebra，不是全部 distributional、thin-Wilson 或 interacting observables。该类分离本模型的全部 smooth physical Cauchy data，包含辐射模和相对平坦连接，因而不是 curvature-only 子代数。**
 
+区域场对象保留 $a=a_T+d\chi$ 中的全部 Dirichlet $\chi$ 及相应 gauge histories；下文 transverse/Coulomb coordinates 是派生验收坐标，$\mathcal L/\mathcal N$ 是 label 零关系，二者都不替代完整预辛场空间。[修订证明 R4.3](../../audit_repair_2026-09-18/repair_proofs.md) 给出保持这些 fibers 的 source constructor 和实际 collar 装配。
+
 空间为 \(\Sigma=[0,L]\times T^2\)，横向面积 \(\mathcal V\)，平直 metric，有限条静止平行 cuts \(x=x_i\)，也允许在常数时间插入 Cauchy cuts。先做实线性 Maxwell / compact theory 的 infinitesimal cover；§6.9 再实施完整 compact U(1) large gauge。固定相对平凡的 boundary bundle sector，无 magnetic defects。
 
 ## 6.1 独立未切分边界问题
@@ -135,7 +137,7 @@ Gauss 给每个 x 截面的 \(\int_{T^2}E_x=P\)。在均匀 harmonic family，\(
 
 在 \(a_i\mapsto a_i+d\epsilon_i\)、\(\lambda_i\mapsto\lambda_i+\epsilon_{i+1}-\epsilon_i\) 下，bulk potential 的变化为 \(\sum\int E_x\delta(\epsilon_i-\epsilon_{i+1})\)，与 seam term 精确抵消（Gauss、外部 \(\epsilon=0\) 已用）。因此 \(\delta\Theta_{\rm cut}\) 正确地下降。
 
-由于 cuts 是一个 interval chain、线性 transition 无 winding obstruction，可用区域 gauge extensions 置全部 \(\lambda_i=0\)；之后 fields 及 jets 全局拼成一份 a,E。再用 (6.5) 的外部 Dirichlet gauge 取 Coulomb slice。这给出**显式解装配与逆**。不同 extensions 的差是全局 proper gauge，故不依赖选择。限制全局初值则给反向 map。由 (6.12) 在 \(\lambda=0\) gauge 中直接得到 (6.2)，从而是 symplectic comparison。
+由于 cuts 是一个 interval chain、线性 transition 无 winding obstruction，可用固定 smooth collar 实现运输到 \(\lambda_i=0\) 的共同 frame；之后 fields 及 jets 全局拼成一份 a,E，所有输入 fields、transitions 与改变实现的 proper maps 仍保留。不同 extensions 可给不同 raw global representative，由实际全局 proper 联系；不把它们直接当相同场。\(\lambda=0\) 的 global restriction 给该装配 map 的 section，不声称是任意 frame presentation 上的双侧逆。用 (6.5) 计算 transverse coordinates 时仍保存 \(\chi\)。由 (6.12) 与运输后的完整 potential 得未约化预辛比较，(6.2) 则是其 transverse 表达；连续性及 tangent section 的精确 collar 域见 R4.3。
 
 ## 6.6 每个 target probe 的独立区域 lift、kernel 和量子商
 

@@ -1,8 +1,10 @@
 # 05｜精确模型 I：compact YM2 与有限图
 
+**未约化对象与本篇坐标计算。** 区域与 sewing 保留全部满足 Gauss 的 $(A_x,E)$、规范 histories、实际 based action 及预辛退化方向；其 source constructor 见[修订证明 R4.4](../../audit_repair_2026-09-18/repair_proofs.md)。下文 $T^*G$、reduced coordinates、invariant/PBW/Haar 表达用于派生 observable/representation 的验收，不替代完整区域场对象。
+
 ## 5.1 独立未切分目标
 
-取 compact connected \(G\)、正定 invariant pairing、平凡时空 cylinder/strip bundle、trivial large-gauge character。空间区间长 \(\ell\)，两条 timelike endpoints 取固定 \(A_t=0\)，endpoint frames 保留。只除 based gauge maps，包含其全部分支。
+取 compact connected \(G\)、正定 invariant pairing、平凡时空 cylinder/strip bundle、trivial large-gauge character。空间区间长 \(\ell\)，两条 timelike endpoints 取固定 \(A_t=0\)，endpoint frames 保留。proper 政策包含 based gauge maps 的全部分支；下文 invariant target 对该完整作用不变，场空间中仍保留这些作用方向。
 
 \(1+1\) pure YM 的 canonical action 是
 \[
@@ -84,7 +86,7 @@ vertical enveloping algebra 的 augmentation \(\widehat r\mapsto0\) 是 algebra 
  \mathscr D_{G,\hbar},\quad \ker Q=\{D:D_0=0\}.}
 \tag{5.8}
 \]
-实际 section 为 \(D_U\mapsto1\otimes D_U\)。这里没有对 continuum gauge group 作 Haar；它早已通过 Gauss/based quotient 约成有限维 endpoint group。
+实际 section 为 \(D_U\mapsto1\otimes D_U\)。这里没有对 continuum gauge group 作 Haar；Haar 只用于所指定的有限维 endpoint-group 表示。Gauss/based invariants 给出这些派生坐标，完整场空间及 gauge histories 仍由 R4.4 保留。
 
 ## 5.4 Hilbert map 不是维数计数
 

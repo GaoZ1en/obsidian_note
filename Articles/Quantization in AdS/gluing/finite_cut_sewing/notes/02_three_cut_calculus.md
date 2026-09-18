@@ -78,7 +78,7 @@ $$G^R_{\bar R}(t,t')=\theta(t-t')\frac{\sin(\sqrt{K_B}(t-t'))}{\sqrt{K_B}}. \tag
 
 $$\partial_t^2\phi(t_0,x)=q''(x)-m^2q(x)+f(t_0,x), \tag{3.1}$$
 
-继而对时间微分逐阶递推。若与静态 D wall 相交，要求 $\partial_t^n\phi(t_0,e)=0$；N/Robin 则对 $B\phi=0$ 微分，加入源时右侧为 $\partial_t^nb$。这些条件相互约束 $q,p,f$，不是可以分别忽略的“端点项”。
+继而对时间微分逐阶递推。这些 on-shell 高阶 jets 是派生结构，不作为独立输入保存；共同 smooth source/PDE 与最低阶 Cauchy 或 conormal matching 必须保留。该删减不适用于 off-shell observable 系数核，亦不替代 null integration seeds 或一般 corner-extension 证明。若与静态 D wall 相交，要求 $\partial_t^n\phi(t_0,e)=0$；N/Robin 则对 $B\phi=0$ 微分，加入源时右侧为 $\partial_t^nb$。这些条件相互约束 $q,p,f$，不是可以分别忽略的“端点项”。
 
 ### 3.2 Null 段
 

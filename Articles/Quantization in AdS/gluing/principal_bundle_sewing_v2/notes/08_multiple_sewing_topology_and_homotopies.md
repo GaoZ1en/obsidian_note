@@ -30,7 +30,7 @@
 
 ## 8.3 几个会强迫增加数据的具体失败
 
-**bundle topology。** 两个 hemispheres 的局部 gauge-invariant curvature 数据，不替代 equatorial transition winding。第 01 篇 monopole example 给 integer n。声明 target 含哪些 n 后，必须在 source 中提供 admissible transition classes；不能假定所有 \(h\) 都 extendible，也不能默认所有 \(h\) 都可 gauge 成 1。
+**bundle topology。** 第 01 篇的两个局部平凡 bundle 名称不能决定 monopole n；但若保留 $S^2$ 上的完整曲率与取向，则 $n=(2\pi)^{-1}\int_{S^2}F$ 已可重建。同曲率的差连接在普通 unanchored $S^2$ 上为 exact；这不恢复唯一 raw representative，更不授权丢掉本稿的 gauge directions。真正同剩余局部数据的见证是：同一 interval 的 $a=0$ self-sew，identification $h=1,-1$ 给不同 circle Wilson。仅当其余数据尚未固定该 identification 时，它才证明信息不可删。完整 $h$ 已给时，cocycle、sector 归属和 winding 是需计算的检查，不是额外自由参数。proper 箭头另须执行第 04 篇的 global branch 检查。
 
 **reference frames 与 flux。** Maxwell 的 \(\int E_n\delta\lambda\) 和 \(\int\lambda f_n\) 分别由 symplectic descent 与 gauge invariance 强迫出现。它们不是为了美观加的新的 phase-space factor。删掉它们即可用 independent regional gauge variation 得到反例。
 
@@ -66,7 +66,7 @@
  \alpha(g,h)\alpha(gh,k)=\alpha(h,k)\alpha(g,hk).
 \tag{8.3}
 \]
-重新选择 phase \(U(g)\mapsto\beta(g)U(g)\) 改变 \(\alpha\) 为相应 coboundary。其不能被这种重相位消去的部分才是实际 projective obstruction。若 \(\alpha\) 是 scalar，\(\operatorname{Ad}_{U(g)}\) 在 observable algebra 上可能严格作用，但 states/amplitudes 仍记得 phase。**所以“observable conjugation 没发现问题”不证明 quantum theory 全层次没有 anomaly。**
+重新选择 phase \(U(g)\mapsto\beta(g)U(g)\) 改变 \(\alpha\) 为相应 coboundary。其不能被这种重相位消去的部分才是实际 projective obstruction。若 \(\alpha\) 是 scalar，\(\operatorname{Ad}_{U(g)}\) 在 observable algebra 上可能严格作用，但向量 lift、群实现和带插入振幅仍可记得 phase；代数态/密度矩阵不随整体向量相位改变。**所以“observable conjugation 没发现问题”不证明 quantum theory 全层次没有 anomaly。**
 
 ordinary regrouping 若实际得到 phase，需要说明：是 choice artifact、framing/metaplectic correction，还是 uncancelled anomaly。后者可能阻止把 seam symmetry 当 proper gauge；不能用“homotopy coherence”一词把不一致掩盖成成功。
 
@@ -81,12 +81,12 @@ ordinary regrouping 若实际得到 phase，需要说明：是 choice artifact�
 
 这是一个实用充分条件，不是要求每个模型都先提交无限塔。若目标仅是 degree-zero observable algebra 的同构，可以直接在 \(H^0\) 上构造 inverse，并不必须先证明整个复形的 chain-homotopy equivalence。例如零微分复形 \(C^0=D^0=\mathbb R,C^1=\mathbb R,D^1=0\) 的投影在 H⁰ 上同构，但 H¹ 不同。
 
-本文 YM2、linear Maxwell 和 U(1) disk 的物理 reduction 已足够，不为这些证明再增加 BRST。non-Abelian interacting/renormalized theory 确实需要 s 与 Ward data 时，再把它加入，并在 source/boundary/corner domains 上实际检查 (8.4)。
+本文 YM2、linear Maxwell 和 U(1) disk 使用完整未约化 fields、实际规范作用及其 invariant observable presentation，已足以作所声明比较；第 05–07 篇的 reduced 坐标只作派生验收，不为这些证明再增加 BRST。non-Abelian interacting/renormalized theory 确实需要 s 与 Ward data 时，再把它加入，并在 source/boundary/corner domains 上实际检查 (8.4)。
 
 ## 8.7 最小记录表，不是一个普遍最高结构
 
 每个模型至少记录：seam maps 及 allowed components；triple compatibility；outer-frame identifications；哪些 regroupings 与哪些 physical moves 被比较；quantum realization 的 cup/F/R/phase conventions；若使用 gauge fixing/BRST，记录比较 maps 及实际所需的 corrections。
 
-只对已出现的 obstruction 增加下一项。例如只有 Abelian interval chain 且无 large sectors，不需要一般 modular category；但含 SU(2) charged punctures 的模型绝不能删掉 F 和 cups。对 topology-changing/self-gluing，不能只保留 tree-shaped cuts 的证明。
+只对已出现的 obstruction 增加下一项。例如只有 Abelian interval chain 且无 large sectors，不需要一般 modular category；但含 SU(2) charged punctures 的相应目标必须能恢复实际 F/cups。若它们已由完整 quantum realization 确定，则可删独立缓存；只翻转 F 而固定杯帽，不是第二份满足完整条件的合法实例。对 topology-changing/self-gluing，不能只保留 tree-shaped cuts 的证明。
 
 **“最小性”的可证形式**是删除数据后出现一对输入，它们在剩余数据下完全一样，却有不同的目标 Wilson/flux、bracket、operator 或 phase。第 10 篇列出这样的 witnesses。本文给必要性实例，不宣称已对全部 principal-bundle gauge theories 求得唯一最小 package。

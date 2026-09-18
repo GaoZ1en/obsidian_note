@@ -18,11 +18,11 @@
  \qquad \Omega_\Sigma=\delta\Theta_\Sigma
 \tag{2.2}
 \]
-在同一解和同一固定源 fiber 内不依赖 Cauchy slice；joint corners 的取向和 \(C\) 必须配套。[R1]
+在同一固定源 fiber、满足边界及 corner 条件的解空间上，$\Omega_\Sigma$ 不依赖 Cauchy slice；$\Theta_\Sigma$ 一般不守恒，而有 $\Theta_{\Sigma_2}-\Theta_{\Sigma_1}=\delta S_{[\Sigma_1,\Sigma_2]}|_{\rm on\ shell}$（按本式的相对变分约定）。再取 $\delta$ 才得到 $\Omega$ 守恒。joint corners 的取向和 $C$ 必须配套；不能为要求 $\Theta$ 守恒而排除合法 Maxwell 模式。[R1]
 
 本文用 \(\Omega=\delta p\wedge\delta q\)，\(\iota_{X_F}\Omega=-\delta F\)，\(\{F,G\}=\delta F(X_G)\)，故 \(\{q,p\}=1\)。后面所有有限维归一化以此为准。
 
-(2.1) 是变分良定性，不是 PDE well-posedness。还需存在解、在声明 gauge 意义下唯一、对允许数据连续依赖，以及约束传播。Robin 系数选错可产生不稳定模；任意把两种边界条件拼在尖角处不自动产生一个光滑 IBVP。
+(2.1) 是变分良定性，不是 PDE well-posedness。要构造单值响应，还需分别证明存在、适当 gauge 意义下唯一、允许数据上的连续依赖与约束传播；完整未约化源关系可多值。这些是模型证明义务，不是独立物理输入，更不能强求每个 raw gauge representative 唯一。Robin 系数选错可产生不稳定模；任意把两种边界条件拼在尖角处不自动产生一个光滑 IBVP。
 
 ## 2.2 YM 的闭合与响应
 
@@ -92,7 +92,7 @@
 
 ## 2.6 真正 closed intermediate 的操作
 
-先把 \(R_1,R_2\) 拼成 \(R_{12}\)：删除且只删除内 seam 上被标记的 temporary terms；求 (2.5) 的 joint solution；除本次新内部 proper symmetry；在所有 surviving timelike faces 保留它们的 \(B\)。输出保存 \(S_{12},P_{12},B_{\rm out},\mathscr O,\mathsf q\) 和 source-rule，不保留内部 seam 作为物理边界。
+先把 \(R_1,R_2\) 拼成 \(R_{12}\)：删除且只删除内 seam 上被标记的 temporary terms；形成 (2.5) 的完整 joint solution relation，保留所有解和本次内部 proper 的实际作用及退化方向；在所有 surviving timelike faces 保留它们的 \(B\)。输出保存 \(S_{12},P_{12},B_{\rm out},\mathscr O,\mathsf q\) 和 source-rule，并保留完整输出 fields、规范作用及预辛结构；内部 seam 不再是物理边界，但不能连同输出 bundle/holonomy/branch 信息一起遗忘。这里不执行 gauge reduction。
 
 下一次与 \(R_3\) 拼接，**从 \(R_{12}\) 的 action/domain 重新生成**选中外面的 (2.5)。要求的比较是对任意共同 admissible external tuple，先 (12) 再 3 与先 1 再 (23) 给相同解、response、observable transport。只证明零源 Green kernel 相同不足以推出这个比较。
 
