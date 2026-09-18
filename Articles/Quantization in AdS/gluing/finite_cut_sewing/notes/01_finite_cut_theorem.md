@@ -33,8 +33,10 @@ $$q=0,\qquad \Pi=0,\qquad \Pi-\sigma q=0,
 
 一个 standalone object 只记录
 
-$$\mathfrak T_B(R)=(R,S_R,B,\hbox{field/source labels and admissible jets};\mathfrak A_B(R),\mathcal R_B).
+$$\mathfrak T_B(R)=(R,S_R,B,\hbox{field/source labels and admissible data}).
 \tag{1.3}$$
+
+由这个独立记录生成相应的 $\mathfrak A_B(R)$ 与完整源关系 $\mathcal R_B$；它们不再是额外独立输入。非特征 on-shell 高阶 jets 由 PDE 递推；只保留未由其余数据决定的 incoming/null seeds、原 regularity 与 off-shell 系数准入。重建方法及条件见[修订证明 R0–R2](../../audit_repair_2026-09-18/repair_proofs.md)；若相应存在性/域估计未完成，生成符号不提供证明。
 
 其 timelike boundary sources 为零。Spacelike/null caps 的 **允许数据空间** 没有固定为零；零过去/未来数据只是 retarded/advanced response 的选取。
 
@@ -225,7 +227,9 @@ $$A(u,v)=\sum_{n\ge0}\frac{(-m^2/4)^n u^{n+1}v^n}{n!(n+1)!},\qquad
 
 设 $C$ 已由任何有限 typed 程序重建为 closed object。现在对它真实存在的下一条 timelike face 加源，或取下一条 spacelike/null cap 的完整输出数据。直接从 $C$ 的 action/domain 求解，与在此前 pieces 中加入相同的 **任意** bulk source、新边界 source 和 incoming data 后装配，所得解相同。
 
-**证明。** 在 pieces 中独立求解并实施 typed matching。引理 4.1 保证装配场满足 $C$ 的同一个 smooth sourced equation 和真实 exterior conditions。相同 causal prescription 下由引理 2.1 / 局部能量唯一性得到相等。反向把 $C$ 的解限制到 pieces，取其实际 source coordinates，局部 source completeness 给唯一区域表示。分别选择任意 $(f,0,0)$、$(0,b,0)$、$(0,0,d_{\rm in})$ 并取 traces，即比较了全部 response data，而不只是 homogeneous $G$。\(\square\)
+**证明。** 固定一个完整相容元组 $d=(f,b,d_{\rm in})\in\mathcal D_{\rm adm}$。区域源关系由各片 action/domain 独立定义，不预设其匹配解存在。将任一 matched 区域解装配，引理 4.1 给同一 smooth sourced equation、真实 exterior $B$ 与完整 incoming data。反向限制独立未切分问题的任一解，连同实际 sources/traces，给每片自己的合法源元组；两过程互逆。因此先得到完整解关系的比较，允许空 fiber 或多值，不把存在性/唯一性写入定义。
+
+在第 2 节已经独立构造的相容数据域上，未切分问题的 Green/lift 构造给存在解，restriction 提供匹配方程的实际见证；任一其他装配解由相同 causal prescription 下的唯一性与之相同。取解的全部实际 traces 即比较完整 response，不需将 d 拆成纯 bulk、boundary、incoming 块。只有各块分别合法的子域才用独立 quartet。沿保持联合域的可微族 $d(s)$ 取导数还须该模型已证明的 smooth dependence；不存在的坐标方向不定义响应偏导。超出第 2 节存在性构造的域，只保留关系比较，不宣称新 solver。\(\square\)
 
 旧 finite-successive-sewing 负责固定最终 matching 后的消元 coherence；本引理另外证明 **从一个真正 closed intermediate 再开始操作** 不丢信息。它是下面 interchange 的关键。
 
@@ -257,7 +261,13 @@ $$\Theta_P:\mathfrak A_P^{\rm cl/q}\overset\sim\longrightarrow\mathfrak A_{B_{\r
 
 量子层必须按最终重建的 dynamics 选择同一 final Wick prescription。独立 parent strip 的 positive-frequency construction 及 causal-convex restriction 提供自由核；真实 boundary labels 使用区间条件 Q，caps 上不作未经验证的 sharp quantum pullback。符合该条件的有限 multiplet 同样适用。
 
-最后，smooth product-collar charts 上的测试函数和 compact coefficient distributions 经 assembly 双射；用有限 smooth partition of unity 证明满射，不对任意分布作 sharp restriction。Kernel equality 使每个有限 Wick contraction 相同。沿真实 homogeneous solution directions 的谱 cutoff 极限给 vanishing ideal 的两侧 $\star$-ideal 性，取商得到 (5.3)。\(\square\)
+最后，在预先给定的 finite smooth product-collar cover $\{U_\alpha\}$ 上，区域 source coefficients 是合法、紧支撑的局部 coefficients 的有限和，并先除去 overlap 的同一分布重复表示；不是直接把 raw presentations 宣称双射。令 assembly 为 $t=\sum_\alpha t_\alpha$，用 subordinate smooth partition $\chi_\alpha$ 得 preimages $t_\alpha=\chi_\alpha t$。若 $\sum t_\alpha=0$，则
+$$u_{\alpha\beta}=\chi_\beta t_\alpha-\chi_\alpha t_\beta,\qquad
+u_{\alpha\beta}=-u_{\beta\alpha},\qquad
+\sum_\beta u_{\alpha\beta}=t_\alpha.$$
+因此 assembly kernel 恰为这些 overlap relations；smooth multiplication 保留原波前准入，不使用 sharp restriction。对每个多点 degree 使用相应 product cover，不能把此步骤误作有限 tensor decomposition。合法边界-supported coefficients 仍使用原区间条件 Q；没有 Q 的新 trace 不纳入已证比较。
+
+Kernel equality 使每个已准入的有限 Wick contraction 相同。沿真实 homogeneous solution directions 的谱 cutoff 极限与其收敛仍采用原 imported Q，以证明 vanishing ideal 的两侧 $\star$-ideal 性。再除实际 equation/boundary vanishing relations 得 (5.3)。这一步没有独立重证全部 microlocal 输入。\(\square\)
 
 ### 5.1 Interchange 不是 associativity 的改名
 
