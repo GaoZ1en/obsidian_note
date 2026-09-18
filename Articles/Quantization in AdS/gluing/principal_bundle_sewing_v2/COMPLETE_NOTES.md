@@ -47,7 +47,7 @@
 
 \[
 \mathfrak T_B(R)=\big(R,P,G,S_R,B,\mathcal G_{\rm prop},Q_\partial,u;
-\mathscr O,\mathcal A_B,\mathfrak R,\mathsf q\big).
+\mathscr O,\mathsf q\big).
 \]
 
 这些符号的物理含义如下。
@@ -58,7 +58,9 @@
 - \(\mathscr O\) 指定测试函数、Wilson/network 标签、flux、sector-changing insertions 和完成方式；\(\mathcal A_B\) 是在该 prescription 下的经典或量子代数。
 - \(\mathfrak R\) 是由 action/domain 重新产生选中边界的**完整源关系**的规则；它不是仍在传播的一套隐藏端口变量。\(\mathsf q\) 是量子化、重整化、global sector、framing 等额外数据。
 
-暂时不用的 boundary source 不属于当前动力学自由度；保存它的构造规则不违反 closed-intermediate 要求。
+$\mathcal A_B$ 与 $\mathfrak R$ 由上述 action/domain/source/observable rules 生成，不再是独立输入或预先给好的成功证书。相应 source 存在、约束传播、kernel、image 与量子乘法仍按模型证明。完整 fields、proper 的实际作用和预辛退化方向在区域构造及 sewing 全程保留；不能用 gauge slice 或 coarse quotient 替代。第 05–07 篇的 quotient/PBW/Haar 只用于派生 observable/representation 的验收，完整未约化 source constructors 和比较见[修订证明 R3–R4](../audit_repair_2026-09-18/repair_proofs.md)。
+
+暂时不用的 boundary source 不属于当前动力学自由度；保存其生成规则不违反 closed-intermediate 要求。由 PDE 决定的 non-characteristic jets、响应缓存、stabilizer 列表、Gram 矩阵等在条件满足时重算，具体依赖见[输入表](../audit_repair_2026-09-18/input_dependencies.md)。
 
 ## 0.4 不存在从一份裸闭合代数出发的无条件 reopening
 
@@ -224,11 +226,11 @@ U(1) 的 \(S^2\) 例子：
  \qquad \Omega_\Sigma=\delta\Theta_\Sigma
 \tag{2.2}
 \]
-在同一解和同一固定源 fiber 内不依赖 Cauchy slice；joint corners 的取向和 \(C\) 必须配套。[R1]
+在同一固定源 fiber、满足边界及 corner 条件的解空间上，$\Omega_\Sigma$ 不依赖 Cauchy slice；$\Theta_\Sigma$ 一般不守恒，而有 $\Theta_{\Sigma_2}-\Theta_{\Sigma_1}=\delta S_{[\Sigma_1,\Sigma_2]}|_{\rm on\ shell}$（按本式的相对变分约定）。再取 $\delta$ 才得到 $\Omega$ 守恒。joint corners 的取向和 $C$ 必须配套；不能为要求 $\Theta$ 守恒而排除合法 Maxwell 模式。[R1]
 
 本文用 \(\Omega=\delta p\wedge\delta q\)，\(\iota_{X_F}\Omega=-\delta F\)，\(\{F,G\}=\delta F(X_G)\)，故 \(\{q,p\}=1\)。后面所有有限维归一化以此为准。
 
-(2.1) 是变分良定性，不是 PDE well-posedness。还需存在解、在声明 gauge 意义下唯一、对允许数据连续依赖，以及约束传播。Robin 系数选错可产生不稳定模；任意把两种边界条件拼在尖角处不自动产生一个光滑 IBVP。
+(2.1) 是变分良定性，不是 PDE well-posedness。要构造单值响应，还需分别证明存在、适当 gauge 意义下唯一、允许数据上的连续依赖与约束传播；完整未约化源关系可多值。这些是模型证明义务，不是独立物理输入，更不能强求每个 raw gauge representative 唯一。Robin 系数选错可产生不稳定模；任意把两种边界条件拼在尖角处不自动产生一个光滑 IBVP。
 
 ## 2.2 YM 的闭合与响应
 
@@ -298,7 +300,7 @@ U(1) 的 \(S^2\) 例子：
 
 ## 2.6 真正 closed intermediate 的操作
 
-先把 \(R_1,R_2\) 拼成 \(R_{12}\)：删除且只删除内 seam 上被标记的 temporary terms；求 (2.5) 的 joint solution；除本次新内部 proper symmetry；在所有 surviving timelike faces 保留它们的 \(B\)。输出保存 \(S_{12},P_{12},B_{\rm out},\mathscr O,\mathsf q\) 和 source-rule，不保留内部 seam 作为物理边界。
+先把 \(R_1,R_2\) 拼成 \(R_{12}\)：删除且只删除内 seam 上被标记的 temporary terms；形成 (2.5) 的完整 joint solution relation，保留所有解和本次内部 proper 的实际作用及退化方向；在所有 surviving timelike faces 保留它们的 \(B\)。输出保存 \(S_{12},P_{12},B_{\rm out},\mathscr O,\mathsf q\) 和 source-rule，并保留完整输出 fields、规范作用及预辛结构；内部 seam 不再是物理边界，但不能连同输出 bundle/holonomy/branch 信息一起遗忘。这里不执行 gauge reduction。
 
 下一次与 \(R_3\) 拼接，**从 \(R_{12}\) 的 action/domain 重新生成**选中外面的 (2.5)。要求的比较是对任意共同 admissible external tuple，先 (12) 再 3 与先 1 再 (23) 给相同解、response、observable transport。只证明零源 Green kernel 相同不足以推出这个比较。
 
@@ -319,7 +321,7 @@ Gauge fixing 用于给退化 Hessian 建立计算逆，不应改变 gauge-invari
 
 ## 3.1 首先固定物理对象，不从 curvature polynomial 开始定义全部
 
-固定 \(\mathfrak T_B\)。令 \(\mathcal S_B\) 为满足全部方程、边界/角点和 sector 条件的解；等价关系来自声明的 \(\mathcal G_{\rm prop}\)。在 regular 部分，可用 \(\mathcal P_B=\mathcal S_B/\mathcal G_{\rm prop}\)；有 stabilizers 时先保留 fields、automorphisms 和 invariant presentation。
+固定 \(\mathfrak T_B\)。令 \(\mathcal S_B\) 为满足全部方程、边界/角点和 sector 条件的完整解空间，并保留 \(\mathcal G_{\rm prop}\) 的实际作用、stabilizers 与 \(\Omega_B\) 的全部退化方向。区域构造和 sewing 不形成 \(\mathcal S_B/\mathcal G_{\rm prop}\)。下文 invariant functions 与 label 零关系用于观测量，而不删去场空间的 gauge directions；regular reduced expressions 仅作另列的派生验收。
 
 在 \(\mathcal S_B\) 上，一个 regular Hamiltonian observable 是满足以下条件的复泛函 \(F\)：它对 proper gauge 不变，其 variation 在所选测试域有意义，并存在合法线性化解 \(X_F\) 使
 \[
@@ -362,7 +364,7 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
 \]
 在正则 Hamiltonian 群作用例子，可用 invariants 后再限制约束。不能对全部 \(\mathcal A\) 直接 quotient 任意约束理想，因为它未必是 Poisson ideal。
 
-更不能假设所有 transmission conditions 都是 first class。某些 matching 是 second class，或根本不是旧 smooth phase space 中可微的 sharp boundary functionals。本稿的一般操作先在 variational matching locus 上 pull back 完整 \(\Omega\)，再除其已识别的 gauge null directions；需要 Dirac bracket 的具体有限模型必须显式计算。只在 YM2、线性 current 等已验证情形用 (3.3)。
+更不能假设所有 transmission conditions 都是 first class。某些 matching 是 second class，或根本不是旧 smooth phase space 中可微的 sharp boundary functionals。本稿的一般操作在 variational matching locus 上 pull back 完整 \(\Omega\)，并保留其已识别的 gauge null directions 与 active cut action；需要 Dirac bracket 的具体有限模型必须显式计算。(3.3) 仅是 YM2、线性 current 等已验证情形的派生 observable presentation，不是区域场空间的构造步骤。
 
 量子时 \([q,p]=i\hbar\) 且把 \(q=0\) 作全代数的两侧理想商，会把单位元一起消掉。可用保持 constraint-state domain 的 operators 及其作用 kernel：
 \[
@@ -413,6 +415,8 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
 
 一个 algebra isomorphism 不决定 vacuum、temperature 或 entanglement。一个 Haar/conformal-block amplitude identity 不自动给 operator-algebra isomorphism。Hilbert spaces 同维不自动 intertwine Wilson/flux operators。只在给出具体 maps、domains 和关系之后才可连接这些层次。
 
+整体向量相位不改变代数态或密度矩阵；相位敏感的对象是指定的向量 lift、群实现或带插入振幅。固定 cups 后只翻转 F 不构成第二份合法 realization；正 Gram 也不自动给 onto。相应完整比较及新攻击见[修订证明 R5](../audit_repair_2026-09-18/repair_proofs.md)。
+
 以上区分不是降低目标，而是防止以较弱命题冒充较强命题。observable completeness 的操作性定义，是对本模型保留的物理解/sector 具有足够 separation witnesses，并覆盖事先要求的生成元，而不是测试通过的数量。
 
 
@@ -430,24 +434,28 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
  \text{每片属于自身源关系；满足 (1.4)、(1.6)、(2.6)、joint jets}\}.
 \tag{4.1}
 \]
-其箭头为相容的 \(g_i\)，满足 \(h'_{ji}=g_jh_{ji}g_i^{-1}\)；外边界只允许声明的 proper 作用。保留这些箭头是避免丢失 stabilizers 和 gluing identifications 的最低限度，不要求先学习高阶范畴。
+保留完整 fields、variations 与 gauge arrows，不在 (4.1) 上先 quotient。局部 $g_i$ 满足 $h'_{ji}=g_jh_{ji}g_i^{-1}$、connection/source covariance 后，先装配实际 bundle map。写到固定 output bundle 上时，用与真外 frames 相容的 presentation identification $\kappa:P_h\to P$，令
+$$g_{\rm as}=\kappa'\operatorname{Desc}(g_i)\kappa^{-1}.$$
+cut arrow 标为 proper 当且仅当 $g_{\rm as}\in\mathcal G_{\rm prop}$，不能只检查局部可缩或外端取值。presentation 改变须同时运输该标记；对固定带标签 target，nonproper 改变是物理作用，不能当无害 choice 遗忘。U(1) based identity component 的精确判据是总 winding 为零；原全部 based-components 模型不改政策。构造、必要充分性及显式同伦见[修订证明 R3](../audit_repair_2026-09-18/repair_proofs.md)。
 
-当一个 source 或 cut history 被 integrated out 时，必须保存其完整作用结果/关系，而不是只留一个所选解。多值关系允许存在；不通过任意 pseudoinverse 固定本应物理的模式。
+消去 source/cut history 时保存完整作用关系而不是选定解；不通过 pseudoinverse 删除零模，也不删除 proper 的作用信息。
 
-## 4.2 几何—经典装配定理 G
+## 4.2 几何—经典装配定理 G（修订）
 
-**假设。** 分片是有限 collar-compatible 的普通流形装配；实际 principal bundles 与 transition cocycle 给定；所有匹配场及 variations 在声明域内可光滑装配；剩余边界项与 corner 项一致；每个发生的闭合/source 问题均在声明 gauge 意义下良定义。
+**前提。** 有限普通 collar-compatible 几何与实际 principal bundles/cocycle 给定，呈现预先固定的 output sector。fields/variations 各自在声明域光滑到 face；connection、source、typed transmission 和共同 corner atlas 满足所列匹配。非特征 on-shell 高阶 jets 可由共同 PDE 与最低阶 matching 递推时，不另作输入；null 保留未由其余数据决定的 seeds。真实保留项与所移除 closing 由 action 标签固定，arrows 使用 §4.1 的实际 global proper 标记。
 
-**结论。** (4.1) modulo compatible proper transformations 与未切分 \(\mathcal S_{B_{\rm out}}\) 的 gauge groupoid 等价。在 regular reduced strata，装配 map \(J\) 满足
+**关系结论。** matched 区域源关系与独立未切分源关系在实际 bundle presentations、arrows 和 stabilizers 层通过 restriction/assembly 比较。固定同一 presentation 后，场的限制与装配互逆；改变 presentation 则使用明确的 bundle map，不宣称所有 frame choices 的 raw fields 与固定 target 一一对应。两边可以为空或多值；本关系定理不假设或证明一般 IBVP 的非空、唯一、连续性。具体模型另由自身 source constructor 完成这些义务，不把未证明的“well posed”写入输入后宣称完成。
+
+**预辛结论。** 对已作实际 action/corner transport 计算的模型，在完整未约化 matched space 上有
 \[
  J^*\Omega_{\rm out}=\Omega_{\rm sew}.
 \tag{4.2}
 \]
-因此全部在两侧共同准入的 Hamiltonian functionals 按 pullback 作 Poisson comparison。
+YM/Maxwell 的证明是将 (2.7) 代入 canonical potential 并用 Gauss 积分分部；U(1) CS 是 (7.3a) 的实际差式。具体未约化 constructors、保留的 gauge fibers 与 seam signs 见[修订证明 R4](../audit_repair_2026-09-18/repair_proofs.md)。一般 action 未完成相应运输计算时，本式仍是待证事项而非新增成功假设。$J$、$dJ$ 的 onto 及 Hamiltonian tangent lifts 必须另证；仅有 pullback 式不保证它们，也不假定商光滑。对 Maxwell 的 real chain，R4.3 在实际 smooth collar representatives 和固定 cutoffs 上构造连续线性 $J$，$\lambda=0$ restriction 给显式线性 section；不从抽象无限 jets 的可延拓性推出 smooth section。对已经提升的合法 $X_F$，(3.1) 直接给相同括号。
 
-**证明。** 用 \(h_{ji}\) 识别 collars 上的 fields；cocycle 保证三重交叠一致，jet 条件保证得到声明的 smooth field。local EOM 与 variational balance 消去 seam-supported source。反向限制一个全局解给每片自己的 q 与 response，而非错误地给旧 homogeneous B 的解。bundle automorphism 的相同 restriction/assembly 给 arrows 的双向对应，因此不只得到 orbit 个数相同。相加 \(\delta S_i\)，内部边界响应及相应 corner primitives 相消，仅剩输出的 cap potential；再取 \(\delta\) 得 (4.2)。最后用 (3.1) 推导括号一致。证毕。
+**关系部分的证明。** 实际 $h$ 识别 collars 上的 fields；cocycle 给三重一致性，typed matching/PDE jet recursion 给所需光滑性。local EOM 与 variational balance 消去 seam sources。反向限制独立 global 解，给每片自身的 actual sources，而非旧 homogeneous B 的解。在固定 bundle presentation 内两过程互逆；换 presentation 时保留 §4.1 的 $\kappa$ 比较。普通 bundle-map descent 先构造箭头；§4.1 的成员检查保证其属于原 proper 群。反向限制任意 global proper map，代回装配公式恢复原 map，stabilizers 同理。全程不作 coarse quotient。证毕。
 
-该定理不包含其假设中所有新 PDE 的存在证明。它也不是从 \(\mathcal A_{B_1}\otimes\mathcal A_{B_2}\) 出发的裸代数定理；它给的是 action/source-enriched classical composition。
+该定理不是裸 $\mathcal A_{B_1}\otimes\mathcal A_{B_2}$ 的定理。它将几何关系比较、模型 source 存在性、预辛计算与 algebra presentation 分开；任何未完成层保留为开放问题。
 
 ## 4.3 observable presentation 的额外验收
 
@@ -457,19 +465,19 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
 - 一份平滑测试密度由区域测试密度加显式 jet-matching 条件装配；
 - 一个多点 distribution 必须在**预先选择**的 joint test/distribution space 中给出，不借一句 partition of unity 冒充有限 tensor decomposition。
 
-对每个 \(g\in\mathsf g\)，实际写出 lift \(\widetilde g\in\mathcal E_\Gamma\)。定义 map \(\Theta(\widetilde g)=g\)。surjectivity 从所有 target generators 有 lifts 推出；injectivity 要另外由 normal form、完整 linear null space、Gram radical 或 faithful realization 证明。仅有“满足 Ward identity”不够。
+先由每个 actual cut word 的几何/场评价定义到独立 target 的 map，验证 source relations 全部评价为零。对每个 \(g\in\mathsf g\) 再写 actual lift \(\widetilde g\)，并检查 \(\Theta(\widetilde g)=g\)，由此证明满射。injectivity 另由完整零关系与 normal-form 独立性等证明。只给生成元名字或“满足 Ward identity”不够；更不能把 image 改名为 target。
 
 经典若直接使用 matching locus 上 Hamiltonian functions，则 restriction 的 kernel 是消失理想。这是有效描述，但除非算出其生成关系，不把它说成已计算的 presentation kernel。第 05/06/07 篇是这里真正算出 kernel 的模型。
 
 ## 4.4 一个量子比较准则 Q
 
-给定明确的 cut generator algebra 和独立 target。若：区域 lifts 满足 target 的全部定义关系；任意 cut word 能归约到已写出的 normal form；这些 normal forms 的 target images 线性独立；adjoint 和公共域保持；则 \(\Theta\) 诱导 onto faithful \(*\)-isomorphism。若含 dynamics，还需检验 generating evolution/response 的 intertwining。
+给定明确的 cut generator algebra 和独立 target。若：actual cut-word evaluation 保持全部 source relations，从而定义到 target 的同态；每个 target generator 有实际 lift；任意 cut word 能归约到已写出的 normal form；这些 normal forms 的 target images 线性独立；adjoint 和公共域保持；则 \(\Theta\) 诱导 onto faithful \(*\)-isomorphism。若含 dynamics，还需检验 generating evolution/response 的 intertwining。
 
 证明是三步有限代数论证：relations 使 map 良定义；target generators 的 lifts 给满射；normal-form 独立性给零 kernel。该准则不是“量子化与约化总可交换”的定理。CS integrability 或 anomaly 都可能改变 relations；一般 interacting theory 可能根本还没有合法 cut words。
 
 ## 4.5 finite regrouping 与重新 opening
 
-固定同一装配后的 geometry、bundle、所有真实 boundary/defect couplings、observable 和量子处方。若上述源问题对每个发生的 intermediate 闭合于再次 opening，则任意两种合法 binary paths 的 classical assembly 由同一个 final field 的 restriction 互相比较。对任意相容 external sourced tuple 使用唯一性，而不是把 tuple 拆成独立 blocks。
+固定同一装配后的 geometry、bundle、所有真实 boundary/defect couplings、observable 和量子处方。每个 intermediate 从自身 action/domain 重新定义源关系。在上述几何关系定理适用时，两种合法 binary paths 都通过 restriction/assembly 比较到同一最终关系；不需要单值性。要比较因果响应映射，还需具体模型已经证明其 source 存在与相应唯一性，并只对完整相容 tuple 使用该结果。一般源构造未完成时，不把“再次 opening 成功”当输入掩盖缺口。
 
 对于 \(\Theta_{(12)3}\) 和 \(\Theta_{1(23)}\)，比较 map 可写
 \[
@@ -502,9 +510,11 @@ Null：必须给足够的 characteristic surfaces、radiation、corner flux seed
 
 # 05｜精确模型 I：compact YM2 与有限图
 
+**未约化对象与本篇坐标计算。** 区域与 sewing 保留全部满足 Gauss 的 $(A_x,E)$、规范 histories、实际 based action 及预辛退化方向；其 source constructor 见[修订证明 R4.4](../audit_repair_2026-09-18/repair_proofs.md)。下文 $T^*G$、reduced coordinates、invariant/PBW/Haar 表达用于派生 observable/representation 的验收，不替代完整区域场对象。
+
 ## 5.1 独立未切分目标
 
-取 compact connected \(G\)、正定 invariant pairing、平凡时空 cylinder/strip bundle、trivial large-gauge character。空间区间长 \(\ell\)，两条 timelike endpoints 取固定 \(A_t=0\)，endpoint frames 保留。只除 based gauge maps，包含其全部分支。
+取 compact connected \(G\)、正定 invariant pairing、平凡时空 cylinder/strip bundle、trivial large-gauge character。空间区间长 \(\ell\)，两条 timelike endpoints 取固定 \(A_t=0\)，endpoint frames 保留。proper 政策包含 based gauge maps 的全部分支；下文 invariant target 对该完整作用不变，场空间中仍保留这些作用方向。
 
 \(1+1\) pure YM 的 canonical action 是
 \[
@@ -586,7 +596,7 @@ vertical enveloping algebra 的 augmentation \(\widehat r\mapsto0\) 是 algebra 
  \mathscr D_{G,\hbar},\quad \ker Q=\{D:D_0=0\}.}
 \tag{5.8}
 \]
-实际 section 为 \(D_U\mapsto1\otimes D_U\)。这里没有对 continuum gauge group 作 Haar；它早已通过 Gauss/based quotient 约成有限维 endpoint group。
+实际 section 为 \(D_U\mapsto1\otimes D_U\)。这里没有对 continuum gauge group 作 Haar；Haar 只用于所指定的有限维 endpoint-group 表示。Gauss/based invariants 给出这些派生坐标，完整场空间及 gauge histories 仍由 R4.4 保留。
 
 ## 5.4 Hilbert map 不是维数计数
 
@@ -658,6 +668,8 @@ Hamiltonian 若含 plaquette \(\operatorname{Re}\operatorname{tr}(\prod_{e\subse
 # 06｜精确模型 II：relative Maxwell 的完整平滑线性代数
 
 **本篇的“完整”有精确定义：全部下面指定的平滑线性 Hamiltonian probes 及其有限 polynomial CCR / Weyl algebra，不是全部 distributional、thin-Wilson 或 interacting observables。该类分离本模型的全部 smooth physical Cauchy data，包含辐射模和相对平坦连接，因而不是 curvature-only 子代数。**
+
+区域场对象保留 $a=a_T+d\chi$ 中的全部 Dirichlet $\chi$ 及相应 gauge histories；下文 transverse/Coulomb coordinates 是派生验收坐标，$\mathcal L/\mathcal N$ 是 label 零关系，二者都不替代完整预辛场空间。[修订证明 R4.3](../audit_repair_2026-09-18/repair_proofs.md) 给出保持这些 fibers 的 source constructor 和实际 collar 装配。
 
 空间为 \(\Sigma=[0,L]\times T^2\)，横向面积 \(\mathcal V\)，平直 metric，有限条静止平行 cuts \(x=x_i\)，也允许在常数时间插入 Cauchy cuts。先做实线性 Maxwell / compact theory 的 infinitesimal cover；§6.9 再实施完整 compact U(1) large gauge。固定相对平凡的 boundary bundle sector，无 magnetic defects。
 
@@ -792,7 +804,7 @@ Gauss 给每个 x 截面的 \(\int_{T^2}E_x=P\)。在均匀 harmonic family，\(
 
 在 \(a_i\mapsto a_i+d\epsilon_i\)、\(\lambda_i\mapsto\lambda_i+\epsilon_{i+1}-\epsilon_i\) 下，bulk potential 的变化为 \(\sum\int E_x\delta(\epsilon_i-\epsilon_{i+1})\)，与 seam term 精确抵消（Gauss、外部 \(\epsilon=0\) 已用）。因此 \(\delta\Theta_{\rm cut}\) 正确地下降。
 
-由于 cuts 是一个 interval chain、线性 transition 无 winding obstruction，可用区域 gauge extensions 置全部 \(\lambda_i=0\)；之后 fields 及 jets 全局拼成一份 a,E。再用 (6.5) 的外部 Dirichlet gauge 取 Coulomb slice。这给出**显式解装配与逆**。不同 extensions 的差是全局 proper gauge，故不依赖选择。限制全局初值则给反向 map。由 (6.12) 在 \(\lambda=0\) gauge 中直接得到 (6.2)，从而是 symplectic comparison。
+由于 cuts 是一个 interval chain、线性 transition 无 winding obstruction，可用固定 smooth collar 实现运输到 \(\lambda_i=0\) 的共同 frame；之后 fields 及 jets 全局拼成一份 a,E，所有输入 fields、transitions 与改变实现的 proper maps 仍保留。不同 extensions 可给不同 raw global representative，由实际全局 proper 联系；不把它们直接当相同场。\(\lambda=0\) 的 global restriction 给该装配 map 的 section，不声称是任意 frame presentation 上的双侧逆。用 (6.5) 计算 transverse coordinates 时仍保存 \(\chi\)。由 (6.12) 与运输后的完整 potential 得未约化预辛比较，(6.2) 则是其 transverse 表达；连续性及 tangent section 的精确 collar 域见 R4.3。
 
 ## 6.6 每个 target probe 的独立区域 lift、kernel 和量子商
 
@@ -923,6 +935,8 @@ Dirichlet 指定 \(c_0=b\)，Neumann 指定 \(c_1=b\)；其余 jets 用 recurren
 
 **必须区分三个 quantum targets：带物理 timelike wall 的 current algebra、闭曲面的有限 Wilson algebra、有 punctures 的 charged-channel operator algebra。它们可由同一 CS action 引导，却不是不经选择就相同的代数。** 本篇给第一者的一个完整线性 sewing，第二者的独立精确 presentation，第三者的指定 unitary realization 与实际非对角 operators。后两者的 topological quantization 是额外输入，不冒充从任意 Lorentzian wall PDE 推导而来。[R9,R10,U2,U3]
 
+区域 disk 对象保留全部 flat bulk fields 及内部 proper directions；boundary currents、下文 reduced action 和 channel operators 是派生描述。[修订证明 R4.5](../audit_repair_2026-09-18/repair_proofs.md) 用全部 smooth bulk extensions 实现 current 解，不在区域构造或 sewing 时把这些 extensions quotient 掉。
+
 本篇 quantum CS 的公式取 ℏ=1；k 是所采用 realization 的 integer level。
 
 ## 7.1 一个真正独立的 source-free disk 理论
@@ -983,7 +997,7 @@ reduced action、symplectic form 与 Hamiltonian 为
  \int_{t_0}^t\partial_s b(u,s+v(t-u))du.
 \tag{7.5}
 \]
-所有 derivatives 的估计直接由平移与积分给出；没有高频增长难题。平均值保持零。给定 j，用 boundary primitive 再作 smooth disk extension，可构造 flat bulk connection；bulk proper gauge 消除 extension choice。marked corners 的 boundary values/derivatives 必须与同一 periodic smooth function 相容。
+所有 derivatives 的估计直接由平移与积分给出；没有高频增长难题。平均值保持零。给定 j，用 boundary primitive 再作 smooth disk extension，可构造 flat bulk connection；不同 extensions 由实际 bulk proper maps 联系，全部保留在完整场对象中。current observables 不依赖这种 choice。marked corners 的 boundary values/derivatives 必须与同一 periodic smooth function 相容。
 
 这是一份每个 disk 都能独立运行的 timelike source rule。人工 chord 两侧先各自有完整 closed boundary circles 与自己的 (7.1)；opening 时撤去两侧 chord 的 closure，允许该面的完整 trace/transition relation，而非要求旧 chiral homogeneous solutions 已经透明匹配。输出仍以其整个真实 outer circle 的 (7.1)、(7.5) 闭合，故可再次 opening。
 
@@ -1171,7 +1185,7 @@ closed circle 上 \(\int f g'\) 反对称；单独开弧 I 上却有
 
 ## 8.3 几个会强迫增加数据的具体失败
 
-**bundle topology。** 两个 hemispheres 的局部 gauge-invariant curvature 数据，不替代 equatorial transition winding。第 01 篇 monopole example 给 integer n。声明 target 含哪些 n 后，必须在 source 中提供 admissible transition classes；不能假定所有 \(h\) 都 extendible，也不能默认所有 \(h\) 都可 gauge 成 1。
+**bundle topology。** 第 01 篇的两个局部平凡 bundle 名称不能决定 monopole n；但若保留 $S^2$ 上的完整曲率与取向，则 $n=(2\pi)^{-1}\int_{S^2}F$ 已可重建。同曲率的差连接在普通 unanchored $S^2$ 上为 exact；这不恢复唯一 raw representative，更不授权丢掉本稿的 gauge directions。真正同剩余局部数据的见证是：同一 interval 的 $a=0$ self-sew，identification $h=1,-1$ 给不同 circle Wilson。仅当其余数据尚未固定该 identification 时，它才证明信息不可删。完整 $h$ 已给时，cocycle、sector 归属和 winding 是需计算的检查，不是额外自由参数。proper 箭头另须执行第 04 篇的 global branch 检查。
 
 **reference frames 与 flux。** Maxwell 的 \(\int E_n\delta\lambda\) 和 \(\int\lambda f_n\) 分别由 symplectic descent 与 gauge invariance 强迫出现。它们不是为了美观加的新的 phase-space factor。删掉它们即可用 independent regional gauge variation 得到反例。
 
@@ -1207,7 +1221,7 @@ closed circle 上 \(\int f g'\) 反对称；单独开弧 I 上却有
  \alpha(g,h)\alpha(gh,k)=\alpha(h,k)\alpha(g,hk).
 \tag{8.3}
 \]
-重新选择 phase \(U(g)\mapsto\beta(g)U(g)\) 改变 \(\alpha\) 为相应 coboundary。其不能被这种重相位消去的部分才是实际 projective obstruction。若 \(\alpha\) 是 scalar，\(\operatorname{Ad}_{U(g)}\) 在 observable algebra 上可能严格作用，但 states/amplitudes 仍记得 phase。**所以“observable conjugation 没发现问题”不证明 quantum theory 全层次没有 anomaly。**
+重新选择 phase \(U(g)\mapsto\beta(g)U(g)\) 改变 \(\alpha\) 为相应 coboundary。其不能被这种重相位消去的部分才是实际 projective obstruction。若 \(\alpha\) 是 scalar，\(\operatorname{Ad}_{U(g)}\) 在 observable algebra 上可能严格作用，但向量 lift、群实现和带插入振幅仍可记得 phase；代数态/密度矩阵不随整体向量相位改变。**所以“observable conjugation 没发现问题”不证明 quantum theory 全层次没有 anomaly。**
 
 ordinary regrouping 若实际得到 phase，需要说明：是 choice artifact、framing/metaplectic correction，还是 uncancelled anomaly。后者可能阻止把 seam symmetry 当 proper gauge；不能用“homotopy coherence”一词把不一致掩盖成成功。
 
@@ -1222,13 +1236,13 @@ ordinary regrouping 若实际得到 phase，需要说明：是 choice artifact�
 
 这是一个实用充分条件，不是要求每个模型都先提交无限塔。若目标仅是 degree-zero observable algebra 的同构，可以直接在 \(H^0\) 上构造 inverse，并不必须先证明整个复形的 chain-homotopy equivalence。例如零微分复形 \(C^0=D^0=\mathbb R,C^1=\mathbb R,D^1=0\) 的投影在 H⁰ 上同构，但 H¹ 不同。
 
-本文 YM2、linear Maxwell 和 U(1) disk 的物理 reduction 已足够，不为这些证明再增加 BRST。non-Abelian interacting/renormalized theory 确实需要 s 与 Ward data 时，再把它加入，并在 source/boundary/corner domains 上实际检查 (8.4)。
+本文 YM2、linear Maxwell 和 U(1) disk 使用完整未约化 fields、实际规范作用及其 invariant observable presentation，已足以作所声明比较；第 05–07 篇的 reduced 坐标只作派生验收，不为这些证明再增加 BRST。non-Abelian interacting/renormalized theory 确实需要 s 与 Ward data 时，再把它加入，并在 source/boundary/corner domains 上实际检查 (8.4)。
 
 ## 8.7 最小记录表，不是一个普遍最高结构
 
 每个模型至少记录：seam maps 及 allowed components；triple compatibility；outer-frame identifications；哪些 regroupings 与哪些 physical moves 被比较；quantum realization 的 cup/F/R/phase conventions；若使用 gauge fixing/BRST，记录比较 maps 及实际所需的 corrections。
 
-只对已出现的 obstruction 增加下一项。例如只有 Abelian interval chain 且无 large sectors，不需要一般 modular category；但含 SU(2) charged punctures 的模型绝不能删掉 F 和 cups。对 topology-changing/self-gluing，不能只保留 tree-shaped cuts 的证明。
+只对已出现的 obstruction 增加下一项。例如只有 Abelian interval chain 且无 large sectors，不需要一般 modular category；但含 SU(2) charged punctures 的相应目标必须能恢复实际 F/cups。若它们已由完整 quantum realization 确定，则可删独立缓存；只翻转 F 而固定杯帽，不是第二份满足完整条件的合法实例。对 topology-changing/self-gluing，不能只保留 tree-shaped cuts 的证明。
 
 **“最小性”的可证形式**是删除数据后出现一对输入，它们在剩余数据下完全一样，却有不同的目标 Wilson/flux、bracket、operator 或 phase。第 10 篇列出这样的 witnesses。本文给必要性实例，不宣称已对全部 principal-bundle gauge theories 求得唯一最小 package。
 

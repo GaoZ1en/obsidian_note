@@ -2,7 +2,7 @@
 
 ## 3.1 首先固定物理对象，不从 curvature polynomial 开始定义全部
 
-固定 \(\mathfrak T_B\)。令 \(\mathcal S_B\) 为满足全部方程、边界/角点和 sector 条件的解；等价关系来自声明的 \(\mathcal G_{\rm prop}\)。在 regular 部分，可用 \(\mathcal P_B=\mathcal S_B/\mathcal G_{\rm prop}\)；有 stabilizers 时先保留 fields、automorphisms 和 invariant presentation。
+固定 \(\mathfrak T_B\)。令 \(\mathcal S_B\) 为满足全部方程、边界/角点和 sector 条件的完整解空间，并保留 \(\mathcal G_{\rm prop}\) 的实际作用、stabilizers 与 \(\Omega_B\) 的全部退化方向。区域构造和 sewing 不形成 \(\mathcal S_B/\mathcal G_{\rm prop}\)。下文 invariant functions 与 label 零关系用于观测量，而不删去场空间的 gauge directions；regular reduced expressions 仅作另列的派生验收。
 
 在 \(\mathcal S_B\) 上，一个 regular Hamiltonian observable 是满足以下条件的复泛函 \(F\)：它对 proper gauge 不变，其 variation 在所选测试域有意义，并存在合法线性化解 \(X_F\) 使
 \[
@@ -45,7 +45,7 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
 \]
 在正则 Hamiltonian 群作用例子，可用 invariants 后再限制约束。不能对全部 \(\mathcal A\) 直接 quotient 任意约束理想，因为它未必是 Poisson ideal。
 
-更不能假设所有 transmission conditions 都是 first class。某些 matching 是 second class，或根本不是旧 smooth phase space 中可微的 sharp boundary functionals。本稿的一般操作先在 variational matching locus 上 pull back 完整 \(\Omega\)，再除其已识别的 gauge null directions；需要 Dirac bracket 的具体有限模型必须显式计算。只在 YM2、线性 current 等已验证情形用 (3.3)。
+更不能假设所有 transmission conditions 都是 first class。某些 matching 是 second class，或根本不是旧 smooth phase space 中可微的 sharp boundary functionals。本稿的一般操作在 variational matching locus 上 pull back 完整 \(\Omega\)，并保留其已识别的 gauge null directions 与 active cut action；需要 Dirac bracket 的具体有限模型必须显式计算。(3.3) 仅是 YM2、线性 current 等已验证情形的派生 observable presentation，不是区域场空间的构造步骤。
 
 量子时 \([q,p]=i\hbar\) 且把 \(q=0\) 作全代数的两侧理想商，会把单位元一起消掉。可用保持 constraint-state domain 的 operators 及其作用 kernel：
 \[
@@ -95,5 +95,7 @@ Wilson holonomy 是光滑经典 connection 上有意义的几何泛函。但它�
 ## 3.7 algebra、state、representation、amplitude 分开
 
 一个 algebra isomorphism 不决定 vacuum、temperature 或 entanglement。一个 Haar/conformal-block amplitude identity 不自动给 operator-algebra isomorphism。Hilbert spaces 同维不自动 intertwine Wilson/flux operators。只在给出具体 maps、domains 和关系之后才可连接这些层次。
+
+整体向量相位不改变代数态或密度矩阵；相位敏感的对象是指定的向量 lift、群实现或带插入振幅。固定 cups 后只翻转 F 不构成第二份合法 realization；正 Gram 也不自动给 onto。相应完整比较及新攻击见[修订证明 R5](../../audit_repair_2026-09-18/repair_proofs.md)。
 
 以上区分不是降低目标，而是防止以较弱命题冒充较强命题。observable completeness 的操作性定义，是对本模型保留的物理解/sector 具有足够 separation witnesses，并覆盖事先要求的生成元，而不是测试通过的数量。
