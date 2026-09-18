@@ -8,6 +8,10 @@
 
 [完整合稿](COMPLETE_NOTES.md) 包含全部 12 篇正文及引文；[模型与缺口矩阵](notes/10_adversarial_review_and_model_matrix.md) 最快说明哪些结果已构造、哪些是条件、哪些仍是目标。[claims.json](claims.json) 逐条固定 31 项主张的范围和排除项。
 
+[2026-09-18 逐条反例审查](counterexample_audit_2026-09-18.md) 覆盖全部 31 项 claim 与正文，给出辛势反例、proper 分支装配的必要条件及各模型的攻击记录。
+
+[2026-09-18 输入删减审查](input_necessity_audit_2026-09-18.md) 审查 38 组输入，以具体删除失败及可替代例子区分必留的 gauge/transition/observable 信息、可重算结构和条件性的量子扩张。
+
 | 文件 | 内容 |
 |---|---|
 | [00](notes/00_problem_and_contract.md) | 研究问题，独立 target，理论/代数/最小性三层，结果等级 |

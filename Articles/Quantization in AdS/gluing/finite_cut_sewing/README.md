@@ -18,6 +18,10 @@
 
 [反例审查与修复记录](notes/05_adversarial_audit.md) 与 [最少背景](notes/06_minimal_background.md) 分别用于核查 claim 和补必要定义。
 
+[2026-09-18 逐条反例审查](counterexample_audit_2026-09-18.md) 记录全部 25 项 claim、正文及来源快照的攻击结果，区分现存证明问题、已有反例与尚未验证的输入。
+
+[2026-09-18 输入删减审查](input_necessity_audit_2026-09-18.md) 将 32 组输入逐项列出，用删除失败或成功替代的例子，区分必要信息、可重算字段、证明范围和额外量子/态输入。
+
 [单文件阅读版](COMPLETE_NOTE.md) 汇集以上六篇，适合搜索与归档。
 
 ## 可重复检查
