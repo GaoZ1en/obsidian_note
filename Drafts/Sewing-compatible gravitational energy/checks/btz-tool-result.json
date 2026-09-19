@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "profile": "components",
+  "result": "<|\"source\" -> \"btz_canonical_energy_check.wl\", \"passed\" -> 8, \"failed\" -> 0, \"allPassed\" -> True, \"primitiveResidual\" -> \"0\", \"target\" -> \"(Pi^2*(1 + rp^2))/rp\"|>",
+  "resultSha256": "761abb9a154107c687624ec5ced28d6a2d848529d83b8be8f1e9b46cff5de4d5",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 184622,
+  "transportStderr": []
+}

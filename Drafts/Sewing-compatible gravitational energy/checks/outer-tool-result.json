@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "profile": "components",
+  "result": "<|\"source\" -> \"btz_outer_charge_check.wl\", \"passed\" -> 14, \"failed\" -> 0, \"allPassed\" -> True|>",
+  "resultSha256": "0ad6da491d3f1c1250ccc31e1dae3a3cfe506e217147593adc226effdc083452",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 109714,
+  "transportStderr": []
+}

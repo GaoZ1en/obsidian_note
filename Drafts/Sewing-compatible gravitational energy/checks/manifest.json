@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-19",
+  "files": [
+    {
+      "path": "Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/bifurcation_noether_area_check.wl",
+      "sha256": "8a957592848cd4ef94f70ec953413df87a36e4e2eaa42f2943e91b89bb52ca70",
+      "bytes": 4256
+    },
+    {
+      "path": "Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/btz_canonical_energy_check.wl",
+      "sha256": "9845b21a9070261981e8ee05d566dd4ad798e5e5cfb0400b7259dd92fd967301",
+      "bytes": 10386
+    },
+    {
+      "path": "Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/btz_outer_charge_check.wl",
+      "sha256": "8618c9d94fc106f22254c6c1593025e7035778d9e046044118c35d6538e7f566",
+      "bytes": 14879
+    },
+    {
+      "path": "Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/local_rindler_radiative_graviton_check.wl",
+      "sha256": "f9f89eca6549933ee5d9c871a5394bd12f304c9ef6e3d117d170a5a4ad7bcd86",
+      "bytes": 4974
+    },
+    {
+      "path": "Articles/Quantization in AdS/gravitational energy/modular wedge corner benchmark/modular_wedge_corner_benchmark.wl",
+      "sha256": "d9965692036396d695c417a4a1bc7f53a14870569592e0c76f8106ac43d5c615",
+      "bytes": 23465
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/algebra-results.json",
+      "sha256": "47be4c8f074e666e890918d98f5dd8b39af8317510ba29981033788c188e0f47",
+      "bytes": 4031
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/algebra_and_counterexamples.wl",
+      "sha256": "040928b0a7a197a1773db050aa6a21b9d54abb1d3c07dddc8455ad05b40eda6c",
+      "bytes": 7943
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/area-results.json",
+      "sha256": "e7223b531cf06419081cf61ecb432ebb9f9be5113cc242d9e7517b34707bc8d4",
+      "bytes": 412
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/audit-results.json",
+      "sha256": "42026db0172c4d8c38366811e4210959b7a604a32912b09190ad5f3e0f5f9680",
+      "bytes": 2008
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/btz-results.json",
+      "sha256": "0efd0f9527ba99d13cebda7e79e8bd0c20710ac4850c38f97df6bb8841b0d17f",
+      "bytes": 151
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/independent_audit.wl",
+      "sha256": "c6a508bdce8076763137c76bfe96a031bdce318e334bcea6a12bbad8bf33c901",
+      "bytes": 4996
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/modular-results.json",
+      "sha256": "108c8ad87e870c74abb03477434eefe899ff71b3f990b303fe6dd89391d1e375",
+      "bytes": 905
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/outer-results.json",
+      "sha256": "a3d2a28890c95801da6af145f0eb8196bb15ff795e007730cfd8afaeca05762f",
+      "bytes": 1852
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/requests.json",
+      "sha256": "512e883ca6ef84b80a40110cfb23f220c598a071b5b3f1895d928232603fd9ce",
+      "bytes": 6060
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/rindler-results.json",
+      "sha256": "ef748d6b47abb297d7ded40af404ede5c111909a41ff7c335358ba332f9bfb77",
+      "bytes": 191
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/tt_einstein_xact.wl",
+      "sha256": "c50463b75af771590f7869e8cbb4cbeb1a1cf8936bba40cd1ece69811251d787",
+      "bytes": 2672
+    },
+    {
+      "path": "Drafts/Sewing-compatible gravitational energy/checks/xact-results.json",
+      "sha256": "d67d5b8cd4b41ebe1fc759b90a17c36ed79dd863e9238e0228ef3a2efed1f5ee",
+      "bytes": 2827
+    }
+  ]
+}

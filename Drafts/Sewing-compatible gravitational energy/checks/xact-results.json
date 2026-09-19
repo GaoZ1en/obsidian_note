@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "allZero": true,
+  "profile": "components",
+  "pipeline": "full",
+  "pipelineSteps": [
+    "ToCanonical",
+    "ContractMetric",
+    "ToCanonical",
+    "FullSimplification[]"
+  ],
+  "assumptions": "",
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "setupMessages": [],
+  "checks": [
+    {
+      "label": "X01_all_linear_Ricci_components",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "X02_EH_density_and_explicit_divergence",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "X03_spatial_scalar_constraint_coefficient",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "X04_GHY_wall_momentum",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    },
+    {
+      "label": "X05_radiative_tidal_curvature",
+      "status": "zero",
+      "canonicalResidual": "0",
+      "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "canonicalResidualTruncated": false,
+      "finalResidual": "0",
+      "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "finalResidualTruncated": false,
+      "unknownHeads": [],
+      "messages": []
+    }
+  ],
+  "elapsedMs": 3902,
+  "transportStderr": []
+}

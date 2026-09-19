@@ -1,0 +1,7 @@
+{
+	"source":"bifurcation_noether_area_check.wl",
+	"passed":8,
+	"failed":0,
+	"allPassed":true,
+	"details":"<|\"BackgroundNoetherDensity\" -> (Sqrt[q]*surfaceGravity)\/kappaP^2, \"DifferenceCoefficients\" -> {0, 0, ((h00 - 2*h01 + h11)*(h00 + 2*h01 + h11)*Sqrt[q]*surfaceGravity)\/8}, \"SecondDifferenceMinusNullProduct\" -> 0, \"ExtremalGaugeSecondDifference\" -> 0, \"AreaCoefficientResiduals\" -> {0, 0, 0}|>"
+}

@@ -1,0 +1,94 @@
+{
+	"suite":"independent_audit",
+	"version":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"passed":17,
+	"total":17,
+	"allPassed":true,
+	"checks":[
+		{
+			"id":"D01_nonclosed_charge_one_form",
+			"passed":true,
+			"value":"1"
+		},
+		{
+			"id":"D02_half_energy_is_not_open_flow_generator",
+			"passed":true,
+			"value":"{p\/2, -1\/2*q}"
+		},
+		{
+			"id":"D03_radical_without_flow_stability_is_insufficient",
+			"passed":true,
+			"value":"-(q*s)"
+		},
+		{
+			"id":"D04_energy_kernel_is_not_symplectic_kernel",
+			"passed":true,
+			"value":"0"
+		},
+		{
+			"id":"D05_scalar_endpoint_does_not_change_two_form",
+			"passed":true,
+			"value":"-1"
+		},
+		{
+			"id":"D06_relative_potential_ambiguity_cancels",
+			"passed":true,
+			"value":"0"
+		},
+		{
+			"id":"D07_fixed_area_and_variable_area_are_different_domains",
+			"passed":true,
+			"value":"(boost*dArea)\/(8*grav*Pi)"
+		},
+		{
+			"id":"D08_common_trace_is_needed_for_flux_cancellation",
+			"passed":true,
+			"value":"-(dp2*dq1) + dp1*dq2 + dp2*dr1 - dp1*dr2"
+		},
+		{
+			"id":"D09_second_order_pullback_transform",
+			"passed":true,
+			"value":"0"
+		},
+		{
+			"id":"D10_Hessian_independent_of_second_order_curve_at_critical_point",
+			"passed":true,
+			"value":"a^2 + c^2"
+		},
+		{
+			"id":"D11_noncritical_charge_retains_curve_acceleration",
+			"passed":true,
+			"value":"a^2 + 2*b + c^2"
+		},
+		{
+			"id":"D12_Rindler_limit_at_fixed_null_segment",
+			"passed":true,
+			"value":"(G2[V]*Derivative[1][G1][V] - G1[V]*Derivative[1][G2][V])\/(2*kp2)"
+		},
+		{
+			"id":"D13_explicit_nonzero_null_flux",
+			"passed":true,
+			"value":"1\/(2*kp2)"
+		},
+		{
+			"id":"D14_limit_order_mismatch",
+			"passed":true,
+			"value":"(1 + rho)^(-1)"
+		},
+		{
+			"id":"D15_stationary_nontrivial_mass_tangent",
+			"passed":true,
+			"value":"(2*grav)\/r"
+		},
+		{
+			"id":"D16_field_dependent_generator_missing_term",
+			"passed":true,
+			"value":"hh"
+		},
+		{
+			"id":"D17_arbitrary_section_does_not_commute_with_time_flow",
+			"passed":true,
+			"value":"{0, 0, -p}"
+		}
+	]
+}

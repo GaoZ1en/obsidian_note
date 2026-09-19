@@ -1,0 +1,8 @@
+{
+	"source":"btz_canonical_energy_check.wl",
+	"passed":8,
+	"failed":0,
+	"allPassed":true,
+	"primitiveResidual":"0",
+	"target":"(Pi^2*(1 + rp^2))\/rp"
+}

@@ -1,0 +1,112 @@
+{
+  "notes": "Run each entry in a fresh kernel. Legacy report exports may include additional detail on rerun; assertions and source inputs are unchanged.",
+  "requests": [
+    {
+      "tool": "mcp__mathematica__evaluate_mathematica",
+      "arguments": {
+        "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/algebra_and_counterexamples.wl\"]"
+      }
+    },
+    {
+      "tool": "mcp__mathematica__evaluate_mathematica",
+      "arguments": {
+        "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/independent_audit.wl\"]"
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_verify_residuals",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "pipeline": "full",
+        "timeoutMs": 60000,
+        "maxOutputChars": 7000,
+        "setup": "Get[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/tt_einstein_xact.wl\"];",
+        "checks": [
+          {
+            "label": "X01_all_linear_Ricci_components",
+            "residual": "xactChecksCE[[1,\"residual\"]]"
+          },
+          {
+            "label": "X02_EH_density_and_explicit_divergence",
+            "residual": "xactChecksCE[[2,\"residual\"]]"
+          },
+          {
+            "label": "X03_spatial_scalar_constraint_coefficient",
+            "residual": "xactChecksCE[[3,\"residual\"]]"
+          },
+          {
+            "label": "X04_GHY_wall_momentum",
+            "residual": "xactChecksCE[[4,\"residual\"]]"
+          },
+          {
+            "label": "X05_radiative_tidal_curvature",
+            "residual": "xactChecksCE[[5,\"residual\"]]"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_run",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "timeoutMs": 240000,
+        "maxOutputChars": 5500,
+        "code": "Get[\"/Users/koishi/Documents/Note/Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/btz_canonical_energy_check.wl\"]; reportCE=<|\"source\"->\"btz_canonical_energy_check.wl\",\"passed\"->testReport[\"TestsSucceededCount\"],\"failed\"->testReport[\"TestsFailedCount\"],\"allPassed\"->(testReport[\"TestsSucceededCount\"]==8 && testReport[\"TestsFailedCount\"]==0),\"details\"->ToString[results,InputForm]|>; Export[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/btz-results.json\",reportCE,\"RawJSON\"]; KeyDrop[reportCE,{\"details\"}]"
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_run",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "timeoutMs": 240000,
+        "maxOutputChars": 5500,
+        "code": "Get[\"/Users/koishi/Documents/Note/Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/btz_outer_charge_check.wl\"]; reportCE=<|\"source\"->\"btz_outer_charge_check.wl\",\"passed\"->testReport[\"TestsSucceededCount\"],\"failed\"->testReport[\"TestsFailedCount\"],\"allPassed\"->(testReport[\"TestsSucceededCount\"]==14 && testReport[\"TestsFailedCount\"]==0),\"details\"->ToString[results,InputForm]|>; Export[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/outer-results.json\",reportCE,\"RawJSON\"]; KeyDrop[reportCE,{\"details\"}]"
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_run",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "timeoutMs": 240000,
+        "maxOutputChars": 5500,
+        "code": "Get[\"/Users/koishi/Documents/Note/Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/bifurcation_noether_area_check.wl\"]; reportCE=<|\"source\"->\"bifurcation_noether_area_check.wl\",\"passed\"->testReport[\"TestsSucceededCount\"],\"failed\"->testReport[\"TestsFailedCount\"],\"allPassed\"->(testReport[\"TestsSucceededCount\"]==8 && testReport[\"TestsFailedCount\"]==0),\"details\"->ToString[results,InputForm]|>; Export[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/area-results.json\",reportCE,\"RawJSON\"]; KeyDrop[reportCE,{\"details\"}]"
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_run",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "timeoutMs": 240000,
+        "maxOutputChars": 4500,
+        "code": "Get[\"/Users/koishi/Documents/Note/Articles/Quantization in AdS/gravitational energy/modular wedge corner benchmark/modular_wedge_corner_benchmark.wl\"]; reportCE=<|\"source\"->\"modular_wedge_corner_benchmark.wl\",\"checks\"->checks,\"allPassed\"->And@@Values[checks],\"cocycleProjectConvention\"->ToString[-Integrate[expectedInnerIntegrandX,{x,-1,1}],InputForm],\"rawSecondOrderCut\"->ToString[Integrate[expectedProjectInnerIntegrandX,{x,-1,1}],InputForm]|>; Export[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/modular-results.json\",reportCE,\"RawJSON\"]; reportCE"
+      }
+    },
+    {
+      "tool": "mcp__xact__xact_run",
+      "arguments": {
+        "profile": "components",
+        "extraPackages": [
+          "xAct`xTras`"
+        ],
+        "timeoutMs": 60000,
+        "maxOutputChars": 1800,
+        "code": "Get[\"/Users/koishi/Documents/Note/Articles/Quantization in AdS/gravitational energy/horizon and inner boundary extension/scripts/local_rindler_radiative_graviton_check.wl\"]; reportCE=<|\"source\"->\"local_rindler_radiative_graviton_check.wl\",\"passed\"->Count[testConditions,True],\"total\"->Length[testConditions],\"allPassed\"->And@@testConditions,\"futureNullFlux\"->ToString[futureNullFlux,InputForm]|>; Export[\"/Users/koishi/Documents/Note/Drafts/Sewing-compatible gravitational energy/checks/rindler-results.json\",reportCE,\"RawJSON\"]; reportCE"
+      }
+    }
+  ]
+}

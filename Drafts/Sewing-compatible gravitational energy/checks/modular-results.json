@@ -1,0 +1,23 @@
+{
+	"source":"modular_wedge_corner_benchmark.wl",
+	"checks":{
+		"modular Killing equation":true,
+		"modular field vanishes on RT":true,
+		"RT curve is geodesic":true,
+		"surface gravity is 2 Pi":true,
+		"normalized mode equals Lie derivative":true,
+		"real vector equals declared primary quadrature":true,
+		"real mode keeps interval anchors fixed":true,
+		"Iyer-Wald divergence equals symplectic current":true,
+		"project and 2501 bulk-current conventions have opposite sign":true,
+		"inner integrand rational form":true,
+		"primitive differentiates to integrand":true,
+		"global large completion has finite outer charge":true,
+		"background, linear, and sourced second-order Einstein equations":true,
+		"raw project inner tensor rational form":true,
+		"raw project inner tensor vanishes at both anchors":true
+	},
+	"allPassed":true,
+	"cocycleProjectConvention":"32\/105",
+	"rawSecondOrderCut":"-16\/105"
+}

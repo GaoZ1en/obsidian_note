@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "profile": "components",
+  "result": "<|\"source\" -> \"modular_wedge_corner_benchmark.wl\", \"checks\" -> <|\"modular Killing equation\" -> True, \"modular field vanishes on RT\" -> True, \"RT curve is geodesic\" -> True, \"surface gravity is 2 Pi\" -> True, \"normalized mode equals Lie derivative\" -> True, \"real vector equals declared primary quadrature\" -> True, \"real mode keeps interval anchors fixed\" -> True, \"Iyer-Wald divergence equals symplectic current\" -> True, \"project and 2501 bulk-current conventions have opposite sign\" -> True, \"inner integrand rational form\" -> True, \"primitive differentiates to integrand\" -> True, \"global large completion has finite outer charge\" -> True, \"background, linear, and sourced second-order Einstein equations\" -> True, \"raw project inner tensor rational form\" -> True, \"raw project inner tensor vanishes at both anchors\" -> True|>, \"allPassed\" -> True, \"cocycleProjectConvention\" -> \"32/105\", \"rawSecondOrderCut\" -> \"-16/105\"|>",
+  "resultSha256": "2618ea0213f32c1fdf6e19bfb4fd411231d12bfd9ee080a3723ebae19fc268f0",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 12291,
+  "transportStderr": []
+}

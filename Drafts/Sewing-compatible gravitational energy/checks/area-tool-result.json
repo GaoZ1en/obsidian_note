@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "profile": "components",
+  "result": "<|\"source\" -> \"bifurcation_noether_area_check.wl\", \"passed\" -> 8, \"failed\" -> 0, \"allPassed\" -> True|>",
+  "resultSha256": "795e680f2ad8aa3823df6fa3c162c585073487457caced77074adc1d545ab8d4",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`",
+    "xAct`xCoba`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 3429,
+  "transportStderr": []
+}
