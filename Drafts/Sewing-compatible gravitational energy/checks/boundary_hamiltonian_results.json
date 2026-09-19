@@ -1,0 +1,241 @@
+{
+  "sympy_version": "1.14.0",
+  "passed": 30,
+  "total": 30,
+  "checks": [
+    {
+      "label": "ADM_full_source_decomposition",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "ADM_charge_energy_minus_shift_momentum",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "Noether_GHY_corner_equals_BY",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "normal_extension_cancels",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "Rosen_full_Ricci_tensor",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "Rosen_exact_BY_readout",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "Rosen_offshell_Ward_balance",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "exact_Rosen_vacuum",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "unimodular_shape_exact_vacuum_reduction",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "two_polarization_second_order_vacuum",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "two_polarization_area_focusing",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "two_polarization_source_Hessian",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "BY_Hessian_minus_canonical_is_source_boundary",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "exponential_radiation_CE_zero",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "exponential_radiation_BY_nonzero",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "second_order_homogeneous_wall_shift",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "static_sphere_redshift_dEdM",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "static_sphere_boundary_one_form_is_dM",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "static_sphere_rationalized_energy",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "AdS_boundary_time_charge_limit",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "AdS_local_proper_energy_limit",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "flat_proper_energy_limit",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "static_shell_H_plus_work_cancels",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "sphere_BY_tensor_readout",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "sphere_reference_action_energy_response",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "improvement_energy_relation_offshell",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "improvement_flux_relation",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "improvement_balance_invariant",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "boundary_potential_zero_relative_one_form",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "field_dependent_clock_adjustment",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    }
+  ],
+  "values": {
+    "exact_Rosen_H_plus": "2*c*k*sin(2*k*v)"
+  }
+}

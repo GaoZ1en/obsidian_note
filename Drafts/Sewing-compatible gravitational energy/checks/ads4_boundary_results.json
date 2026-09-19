@@ -1,0 +1,308 @@
+{
+  "sympy": "1.14.0",
+  "passed": 27,
+  "total": 27,
+  "checks": [
+    {
+      "label": "V20_RW_seed_reconstruction",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_full_linear_Einstein",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_trace",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "S20_nonzero_linear_Weyl",
+      "passed": true,
+      "value": "sqrt(2)/8",
+      "component": "(0, 1, 0, 1)"
+    },
+    {
+      "label": "S20_TT_divergence",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_ADM_vs_direct_connection_K",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_linear_boundary_Ward",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_integrated_first_order_charge",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "S20_background_source_pair",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "S20_parity_time_cross",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "S20_single_mode_symplectic_flux",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "S20_finite_radius_work_kernel",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_direct_Pi_derivative_R1",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S20_direct_Pi_derivative_R2",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_full_linear_Einstein",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_trace",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "V20_nonzero_linear_Weyl",
+      "passed": true,
+      "value": "-16*I/27",
+      "component": "(0, 1, 0, 3)"
+    },
+    {
+      "label": "V20_ADM_vs_direct_connection_K",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_linear_boundary_Ward",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_integrated_first_order_charge",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "V20_background_source_pair",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "V20_parity_time_cross",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "V20_single_mode_symplectic_flux",
+      "passed": true,
+      "residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "V20_finite_radius_work_kernel",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_direct_Pi_derivative_R1",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "V20_direct_Pi_derivative_R2",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "S_V_response_cross_parity",
+      "passed": true,
+      "residuals": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "expressions": {
+    "S20": {
+      "h": "Matrix([\n[r**2*(3*mu**2/2 - 1/2)/(r**2 + 1)**(3/2), I*r*(3*mu**2/2 - 1/2)/(r**2 + 1)**(5/2),                    3*I*mu*r**2/(2*(r**2 + 1)**(3/2)),                                      0],\n[ I*r*(3*mu**2/2 - 1/2)/(r**2 + 1)**(5/2),     (1/2 - 3*mu**2/2)/(r**2 + 1)**(7/2),                        -3*mu*r/(2*(r**2 + 1)**(5/2)),                                      0],\n[       3*I*mu*r**2/(2*(r**2 + 1)**(3/2)),           -3*mu*r/(2*(r**2 + 1)**(5/2)), r**2*(3*mu**2/2 - 1)/((1 - mu**2)*(r**2 + 1)**(3/2)),                                      0],\n[                                       0,                                       0,                                                    0, r**2*(1 - mu**2)/(2*(r**2 + 1)**(3/2))]])",
+      "dK": "Matrix([\n[-r*(3*mu**2 - 1)*(r**2 + 5)/(4*(r**2 + 1)**2),                                      -3*I*mu*r*(r**2 + 3)/(4*(r**2 + 1)**2),                                                          0],\n[       -3*I*mu*r*(r**2 + 3)/(4*(r**2 + 1)**2), r*(3*mu**2*r**2 + 3*mu**2 - 2*r**2 - 1)/(4*(mu - 1)*(mu + 1)*(r**2 + 1)**2),                                                          0],\n[                                            0,                                                                           0, r*(mu - 1)*(mu + 1)*(3*mu**2 + r**2 - 1)/(4*(r**2 + 1)**2)]])",
+      "dPi": "Matrix([\n[                -c*r*(3*mu**2 - 1)*(r**2 - 2)/(4*(r**2 + 1)**(5/2)),                      -3*I*c*mu*r*(mu - 1)*(mu + 1)*(r - 1)*(r + 1)/(4*(r**2 + 1)**(5/2)),                                                                                         0],\n[-3*I*c*mu*r*(mu - 1)*(mu + 1)*(r - 1)*(r + 1)/(4*(r**2 + 1)**(5/2)), c*(mu - 1)*(mu + 1)*(3*mu**2*r**4 + 6*mu**2 - 2*r**4 - r**2 - 2)/(4*r*(r**2 + 1)**(5/2)),                                                                                         0],\n[                                                                  0,                                                                                        0, c*(-3*mu**2*r**2 + 6*mu**2 + r**4 + 2*r**2 - 2)/(4*r*(mu - 1)*(mu + 1)*(r**2 + 1)**(5/2))]])",
+      "B_cos2": "-pi*c*r*(9*r**4 + r**2 + 4)/(5*(r**2 + 1)**4)",
+      "B_sin2": "6*pi*c*r**3*(r - 1)*(r + 1)/(5*(r**2 + 1)**4)",
+      "B_sincos": "0",
+      "divergence": "Matrix([\n[0],\n[0],\n[0],\n[0]])",
+      "linear_Weyl_component": "-3*(3*mu**2 - 1)/(4*(r**2 + 1)**(3/2))",
+      "deltaH_density": "c*r*(3*mu**2 - 1)*(3*r**2 + 2)/(2*(r**2 + 1)**(3/2))"
+    },
+    "V20": {
+      "h": "Matrix([\n[                                  0,                                      0, 0,    4*mu*r**3*(1 - mu**2)/(r**2 + 1)**2],\n[                                  0,                                      0, 0, -4*I*mu*r**4*(1 - mu**2)/(r**2 + 1)**3],\n[                                  0,                                      0, 0,                                      0],\n[4*mu*r**3*(1 - mu**2)/(r**2 + 1)**2, -4*I*mu*r**4*(1 - mu**2)/(r**2 + 1)**3, 0,                                      0]])",
+      "dK": "Matrix([\n[                                             0,                                             0, -6*mu*r**2*(mu - 1)*(mu + 1)/(r**2 + 1)**(3/2)],\n[                                             0,                                             0,  -2*I*r**4*(mu - 1)*(mu + 1)/(r**2 + 1)**(5/2)],\n[-6*mu*r**2*(mu - 1)*(mu + 1)/(r**2 + 1)**(3/2), -2*I*r**4*(mu - 1)*(mu + 1)/(r**2 + 1)**(5/2),                                              0]])",
+      "dPi": "Matrix([\n[                         0,                                          0,                 10*c*mu*r**2/(r**2 + 1)**2],\n[                         0,                                          0, 2*I*c*r**2*(mu - 1)*(mu + 1)/(r**2 + 1)**2],\n[10*c*mu*r**2/(r**2 + 1)**2, 2*I*c*r**2*(mu - 1)*(mu + 1)/(r**2 + 1)**2,                                          0]])",
+      "B_cos2": "128*pi*c*r**5/(3*(r**2 + 1)**4)",
+      "B_sin2": "0",
+      "B_sincos": "0",
+      "divergence": "Matrix([\n[                                          0],\n[                                          0],\n[                                          0],\n[8*I*mu*r**3*(mu - 1)*(mu + 1)/(r**2 + 1)**2]])",
+      "linear_Weyl_component": "8*I*mu*r**2*(mu - 1)*(mu + 1)/(r**2 + 1)**2",
+      "deltaH_density": "0"
+    }
+  },
+  "seconds": 12.611011028289795
+}
