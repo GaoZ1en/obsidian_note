@@ -21,7 +21,7 @@ The claim that the *existing* all-index proof uses an external high-spin input i
 Use
 
 $$
- L_{\rm AdS}=1,\qquad \kappa^2=16\pi G,\qquad
+ L_{\mathrm{AdS}}=1,\qquad \kappa^2=16\pi G,\qquad
  f=1+r^2,\qquad \mu=m^2=\Delta(\Delta-2),\qquad\Delta>1.
 $$
 
@@ -285,8 +285,8 @@ $$
 Apply this identity on the response leg of the crossed interaction. Conservation, the stated center and boundary conditions and the reciprocal resonant pairing remove the gradient and Green boundary terms. The result is a local contact contraction,
 
 $$
- (\mathcal C_{\rm cross}-2)\mathcal X
- =\kappa^2\langle\mathcal K\rangle_{\rm res},\qquad
+ (\mathcal C_{\mathrm{cross}}-2)\mathcal X
+ =\kappa^2\langle\mathcal K\rangle_{\mathrm{res}},\qquad
  \mathcal K=T[a,c]\!:\!T[b,d]
              -\operatorname{tr}T[a,c]\operatorname{tr}T[b,d].
  \tag{4.2}
