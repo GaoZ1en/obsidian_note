@@ -33,3 +33,16 @@ Verified: 116 项已执行检查通过，包含 5 组 xAct 张量/作用量残�
 Assumptions: 主文 §2、§6、§7 列出的解域、边界处方、时间流、frame 与拼接条件。
 
 Not verified: 无限制的“永远没有漏洞”、全局 HW section、任意线性解的二阶延拓、任意 null/无限模极限或量子引力 sewing。最终审计在已声明范围内未留下已知未解决矛盾；它不是第三方审稿的替代品。
+
+## 后续：由完整边界荷和源功识别二次量
+
+新增 [boundary-hamiltonian.md](boundary-hamiltonian.md) 从同一有限作用量导出
+$\mathscr H_R^\partial[\xi]=(H_R^\partial[\xi],\mathcal F_{R,\xi})$，满足
+$\Omega_R(\delta g,\mathcal L_\xi g)=\delta H_R^\partial[\xi]+\mathcal F_{R,\xi}[\delta g]$。
+Einstein–GHY/Dirichlet 的荷分量是 Brown–York；原 $\mathcal E_R$ 保留为
+$\mathcal E_R=(H_R^\partial)''+\mathcal F_{R,\xi}'$，不是完整质量的替代品。
+
+[新 benchmarks](boundary-hamiltonian-benchmarks.md) 给出精确四维 Rosen 真空波、
+两极化二阶读出、Schwarzschild–AdS 的质量/时钟标尺，以及 AdS4 两个低模的完整有限壁源响应。
+[新验证](boundary-hamiltonian-verification.md) 记录 57/57 项独立 SymPy 检查；
+这不是上面旧 116 项 Mathematica/xAct 的重跑。AdS4 的二阶 $k$、全模式和动态 clock 仍未完成。
