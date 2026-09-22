@@ -10,9 +10,15 @@ Always screen `hep-th`, `gr-qc`, and `math-ph`. Deduplicate by arXiv id and pres
 
 Assign the technical tier first, then attach every applicable reason code. Author signals, version updates, and missed-paper corrections are cross-cutting placement modifiers; they improve recall and auditability but do not replace technical relevance.
 
+### Daily Selection Calibration — 2026-09-22
+
+The daily target is **3–5 high-priority papers for deep reconstruction and derivation checks, plus around 10 medium-priority papers for brief sketches**. These are workload targets, not quotas: do not pad a thin issue; rank a crowded issue by relevance and defer overflow rather than routinely expanding the deep queue. An exceptional excess needs a concrete reason in the overview.
+
+Keep screening the complete inventory. Reserve daily high priority for papers with a concrete use in the current CPS, regional sewing, boundary-charge, or AdS quantization work, and state that use before admitting a paper to the deep queue. Topic overlap, an interesting model, or an opportunity to audit questionable claims is insufficient by itself. Useful but less immediate material belongs in the medium sketch selection or deferred candidates. Previously untracked replacements must meet the same relevance threshold; do not turn the daily run into a backlog-clearing exercise.
+
 ### Tier 1: Highest Priority
 
-Usually high-priority if technically substantive:
+Strong relevance signals, subject to the daily immediate-use threshold above:
 
 - `T1-charge`: Noether, conserved, surface, or Wald charges; integrability, charge algebra, central extensions, flux/balance laws, and explicit gravitational or gauge-theory charge constructions.
 - `T1-symmetry`: asymptotic, boundary, large-gauge, horizon, soft, or BMS-like symmetries; memory effects; and symmetry reduction or phase-space extension.
@@ -49,7 +55,7 @@ Usually secondary unless directly coupled to Tier 1 or Tier 2:
 ### Coverage By Placement
 
 - High priority: produce a completed deep note whenever source access is sufficient, regardless of page count. A short paper is not permission for a shallow note.
-- Medium priority: provide at least a compact technical breakdown in the overview, and create a lighter detailed note when its method, formula, or reference value is reusable.
+- Medium priority: write a brief sketch in the overview, normally one short paragraph or 3–5 short bullets covering the question, main source claim, method or construction, likely use, and why it is not high priority. Inspect only the official source material needed for that sketch. Include a central formula only when it materially helps, with its assumptions and evidence status. Do not routinely perform full decomposition, derivation reproduction, CAS verification, or create a separate detailed note; deeper treatment requires an explicit request or promotion into the high-priority selection before queue freezing. Unprocessed overflow remains metadata-only and is clearly labelled deferred.
 - Preliminary source map: use only when source access prevents a completed treatment. Label it explicitly as unfinished and record that status in the overview.
 
 ### High-Priority Acceptance Criteria
@@ -74,7 +80,7 @@ Use monograph mode for papers around 30 pages or longer and for shorter papers t
 
 ## Formula And Computation Checks
 
-For formula-heavy papers, reconstruct the source chain first, then reproduce as much of the checkable calculation as the available sources and tools allow. Split a large chain into smaller targets and record the exact verification boundary.
+For formula-heavy high-priority papers, reconstruct the source chain first, then reproduce as much of the checkable calculation as the available sources and tools allow. Split a large chain into smaller targets and record the exact verification boundary. Medium sketches are Source-derived unless a specific check was actually performed; they do not carry a general derivation-verification requirement.
 
 Use:
 

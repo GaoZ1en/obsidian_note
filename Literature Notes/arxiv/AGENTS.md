@@ -51,9 +51,9 @@ Attach profile reason codes to recommended, watched, skipped-nearby, and version
 
 ### Selection And Note Depth
 
-- Do not force a fixed number of detailed notes or impose a maximum.
+- Follow the profile's daily workload targets: normally 3–5 high-priority deep notes and around 10 medium-priority sketches. Do not pad the selection; defer overflow and explain any exceptional excess in the overview.
 - Every selected high-priority paper must receive a completed same-day deep note when full source access is sufficient. Page count changes ordinary versus monograph mode, not the required depth. A `preliminary source map` is explicitly unfinished and must be reported as such in the overview.
-- Every medium-priority paper needs at least a compact technical overview treatment: source claim, mechanism, central formula or construction when identifiable, likely use, and why it is not high priority. Create a lighter detailed note when its method, formula, or reference value is reusable.
+- Every selected medium-priority paper receives a brief sketch in the overview, following the profile's sketch scope. Targeted official source reading is allowed; full decomposition, routine derivation/CAS checks, and separate detailed notes are not the default. Record unprocessed overflow as metadata-only deferred candidates.
 - Before the first high-priority note, inspect `Literature Notes/Charges of supergravity (2604.09928v1).md` as the deep calibration. For medium detailed notes, use `Literature Notes/Covariant phase space approach to noncommutativity in tensile and tensionless open strings (2604.13163v1).md` as the light calibration.
 - Use paper-specific technical headings and the paper's own symbols, equations, section logic, and conventions. Do not substitute a generic checklist or expanded abstract for a reconstruction. Apply all acceptance criteria and monograph-mode requirements from `profile.md`.
 
@@ -81,8 +81,8 @@ Do not add a `pdf` field unless a matching attachment already exists.
 ### Strictly Sequential No-Subagent Execution
 
 - Do not create, spawn, delegate to, or use subagents for inventory screening, paper decomposition, section clustering, verification, drafting, or validation.
-- After inventory screening and final selection, establish a deterministic queue: high-priority papers in reading order, then medium-priority papers requiring detailed notes, then any remaining selected technical treatments.
-- Process exactly one paper at a time in the main agent. Complete source retrieval and full-structure inspection, notation mapping, technical reconstruction, feasible verification, note or overview writing, evidence labels, links/audit entries, and file validation before starting another paper.
+- After inventory screening and final selection, establish a deterministic queue: high-priority papers in reading order, followed by the selected medium-priority sketches.
+- Process exactly one paper at a time in the main agent. For high-priority papers, complete source retrieval and full-structure inspection, notation mapping, technical reconstruction, feasible verification, writing, evidence labels, audit entries, and file validation before starting another paper. For medium papers, finish only the targeted source reading, brief sketch, evidence labels, audit entry and validation required by the sketch scope before advancing.
 - Do not interleave reading, decomposition, verification, drafting, or section work across papers. For monograph mode, process section clusters sequentially within the same paper and finish the master note before advancing.
 - Advance after completion or after a concrete irreparable `Blocked`/`Failed` boundary has been documented and all usable work saved. Continue until every queued paper has been processed.
 
