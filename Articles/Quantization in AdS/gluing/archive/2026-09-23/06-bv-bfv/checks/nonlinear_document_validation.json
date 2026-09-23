@@ -1,0 +1,14 @@
+{
+  "markdown_files": 16,
+  "math_nodes": 598,
+  "local_links": 102,
+  "claims": 28,
+  "audit_cases": 35,
+  "new_sage_checks": 32,
+  "new_mathematica_checks": 24,
+  "new_labelled_checks_total": 56,
+  "goal_requirements": 6,
+  "goal_status": "active",
+  "issues": [],
+  "scope": "Document and saved-evidence consistency only; not a mathematical theorem or full-goal completion audit."
+}

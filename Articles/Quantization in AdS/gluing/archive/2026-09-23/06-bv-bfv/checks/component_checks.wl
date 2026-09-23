@@ -1,0 +1,86 @@
+ClearAll["Global`*"];
+checks = <||>;
+add[label_, statement_] := AssociateTo[checks, label -> TrueQ[FullSimplify[statement]]];
+coords = {t,x,y};
+avec = {at[t,x,y], ax[t,x,y], ay[t,x,y]};
+vvec = {vt[t,x,y], vx[t,x,y], vy[t,x,y]};
+cs = avec.Curl[avec,coords];
+canon = -avec[[2]] D[avec[[3]],t] + avec[[3]] D[avec[[2]],t] +
+  2 avec[[1]] (D[avec[[3]],x]-D[avec[[2]],y]) -
+  D[avec[[1]] avec[[3]],x]+D[avec[[1]] avec[[2]],y];
+add["CS canonical decomposition", cs == canon];
+variation = Coefficient[Expand[(avec+eps vvec).Curl[avec+eps vvec,coords]],eps];
+add["CS first variation with boundary term", variation - 2 vvec.Curl[avec,coords] + Div[Cross[avec,vvec],coords] == 0];
+add["Abelian gauge Bianchi", Div[Curl[avec,coords],coords] == 0];
+add["Abelian ghost nilpotency", Curl[Grad[cc[t,x,y],coords],coords] == {0,0,0}];
+natural = kap/2 (q va-a vq);
+add["Seam polarized response", natural-kap/2 (a vq+q va) == -kap a vq];
+add["Physical chiral boundary", natural+kap/2 (a vq+q va-2 vel a va) == kap(q-vel a)va];
+add["Release gives oriented matching", -kap a1 vq+kap a2 vq == -kap(a1-a2)vq];
+add["Unremoved temporary wall leaves quadratic defect", Expand[((q a1-vel a1^2)+(q a2-vel a2^2)) /. a2 -> -a1] == -2 vel a1^2];
+f=s(1-s); g=s^2(1-s);
+add["Unrestricted arc cocycle fails antisymmetry", Integrate[s D[1,s]+D[s,s],{s,0,1}] == 1];
+add["Based single-region cut central term nonzero", Integrate[f D[g,s],{s,0,1}] == 1/60];
+add["Based arc antisymmetry", Integrate[f D[g,s]+g D[f,s],{s,0,1}] == 0];
+add["Diagonal cut central cancellation", Integrate[f D[g,s],{s,0,1}]-Integrate[f D[g,s],{s,0,1}] == 0];
+add["Open-face integration by parts retains endpoint", Integrate[(1+s)(2s)-s^2 D[1+s,s],{s,0,1}]/2 == Integrate[(1+s)(2s),{s,0,1}] - ((1+s)s^2 /. s->1)/2];
+add["Charged disk exact field has nonzero observable", Integrate[Cos[s]D[Sin[s],s],{s,0,2Pi}] == Pi];
+add["Endpoint-zero primitive has zero integrated cut charge", Integrate[D[s(1-s),s],{s,0,1}] == 0];
+add["Ghost deletion does not impose flatness", Curl[{0,0,x},coords] == {1,0,0}];
+add["Flat pieces do not imply smooth glued jet", Curl[{0,x,0},coords] == {0,0,0} && Curl[{0,2x,0},coords] == {0,0,0} && D[2x,x]-D[x,x] == 1];
+add["Value matching misses first boundary jet", (s^2 /. s->0) == (s /. s->0) && (D[s,s]-D[s^2,s] /. s->0) == 1];
+add["History without incoming data has nonunique response", D[s(1-s),t] == 0 && D[s(1-s),s] == 1-2s];
+add["Joint history endpoint obstruction", (1-vel D[0,s]) == 1];
+add["Winding-one cut path closes", Exp[2Pi I 0] == 1 && Exp[2Pi I 1] == 1];
+add["Winding-one cut path is not zero relative winding", Integrate[2Pi,{s,0,1}]/(2Pi) == 1];
+(* Smooth local phase representative; no global logarithm is inferred. *)
+omega = {{0,0,-1,0},{0,0,0,-1},{1,0,0,0},{0,1,0,0}};
+(* Coordinates (u1,u2,p1,p2), seam constraint p1-p2=0. *)
+jac = {{1,0,0},{0,1,0},{0,0,1},{0,0,1}};
+globalMap = {{1,1,0},{0,0,1}};
+globalOmega = {{0,-1},{1,0}};
+sewnOmega = Transpose[jac].omega.jac;
+add["U1 YM presymplectic pullback on full constraint", sewnOmega == Transpose[globalMap].globalOmega.globalMap];
+add["U1 YM cut gauge direction retained", sewnOmega.{1,-1,0} == {0,0,0} && MatrixRank[sewnOmega] == 2];
+add["U1 YM Hamiltonian composition", e2 ell1 p^2/2+e2 ell2 p^2/2 == e2(ell1+ell2)p^2/2];
+add["Same boundary kinematics different dynamics", D[e2 ell p^2/2,p]-D[e2b ell p^2/2,p] == (e2-e2b)ell p];
+add["Three-interval holonomy associativity", Expand[(u1+u2)+u3-u1-(u2+u3)] == 0];
+add["Constraint ideal is not Poisson ideal", D[q,q]D[p,p]-D[q,p]D[p,q] == 1];
+rot = {{Cos[theta],-Sin[theta],0},{Sin[theta],Cos[theta],0},{0,0,1}};
+add["SU2 circle stabilizer rank jump", MatrixRank[IdentityMatrix[3]-(rot/.theta->0)] == 0 && MatrixRank[IdentityMatrix[3]-(rot/.theta->Pi)] == 2];
+add["Triple transition cocycle is extra", 1+2-2 != 0];
+add["Smooth symplectic inclusion need not be onto", MatrixRank[{{1},{0}}] == 1 && Transpose[{{1},{0}}].globalOmega.{{1},{0}} == {{0}}];
+ym = ee[t,x](D[axx[t,x],t]-D[att[t,x],x])-e2 ee[t,x]^2/2;
+ymvar = D[ym /. {ee[t,x]->ee[t,x]+eps rr[t,x], axx->Function[{tt,xx},axx[tt,xx]+eps vxx[tt,xx]], att->Function[{tt,xx},att[tt,xx]+eps vtt[tt,xx]]},eps] /. eps->0;
+ymtarget = rr[t,x](D[axx[t,x],t]-D[att[t,x],x]-e2 ee[t,x])-
+ D[ee[t,x],t]vxx[t,x]+D[ee[t,x],x]vtt[t,x]+D[ee[t,x]vxx[t,x],t]-D[ee[t,x]vtt[t,x],x];
+add["YM full first variation including temporal and spatial endpoints", ymvar == ymtarget];
+(* Product-corner de Rham homotopy. Cut x=0, exterior y=0. E extends
+   exterior scalar forms constantly in y; no cochain property of E is assumed. *)
+df0[ff_] := {D[ff,x],D[ff,y]};
+df1[vv_] := D[vv[[2]],x]-D[vv[[1]],y];
+hr1[vv_] := chi[x] Integrate[(vv[[1]] /. x->u)-(vv[[1]] /. {x->u,y->0}),{u,0,x}];
+hr2[ff_] := {0,chi[x] Integrate[ff /. x->u,{u,0,x}]};
+pr0[ff_] := Expand[ff-hr1[df0[ff]]];
+pr1[vv_] := Expand[vv-df0[hr1[vv]]-hr2[df1[vv]]];
+pr2[ff_] := Expand[ff-df1[hr2[ff]]];
+testf = x^3+x^2 y+3 x y^2+2 y^3;
+testv = {x^3+x^2 y+2 y^2, 3 x^2 y+x y^2+5 y^3};
+testh = 2 x^2+3 x y+7 y^2;
+add["Relative homotopy commutes with d on zero forms", df0[pr0[testf]] == pr1[df0[testf]]];
+add["Relative homotopy commutes with d on one forms", df1[pr1[testv]] == pr2[df1[testv]]];
+add["Relative homotopy preserves exterior scalar trace", (pr0[testf] /. y->0) == (testf /. y->0)];
+add["Relative homotopy preserves exterior one-form trace", (pr1[testv][[1]] /. y->0) == (testv[[1]] /. y->0)];
+add["Near-seam relative smoothing of zero forms", (pr0[testf] /. chi->Function[{z},1]) == (testf/.x->0)+(testf/.y->0)-(testf/.{x->0,y->0})];
+add["Near-seam relative smoothing of one forms", (pr1[testv] /. chi->Function[{z},1]) == {testv[[1]]/.y->0,testv[[2]]/.x->0}];
+add["Near-seam relative smoothing of top forms", (pr2[testh] /. chi->Function[{z},1]) == 0];
+add["Broken functions become smooth without changing exterior", ((pr0[x^3+x^2 y+y^3]-pr0[x^3+2 x^2 y+y^3]) /. chi->Function[{z},1]) == 0];
+dd = {{0,0},{1,0}}; hh = {{0,1},{0,0}};
+ff = IdentityMatrix[2]-dd.hh-hh.dd; parity = DiagonalMatrix[{1,-1}];
+tensorD = KroneckerProduct[dd,IdentityMatrix[2]]+KroneckerProduct[parity,dd];
+tensorH = KroneckerProduct[hh,IdentityMatrix[2]]+KroneckerProduct[ff.parity,hh];
+pair = {0,1,-1,0};
+add["Pairing homotopy graded tensor sign", pair.(IdentityMatrix[4]-KroneckerProduct[ff,ff]) == pair.tensorH.tensorD];
+report = <|"allPassed"->And@@Values[checks],"count"->Length[checks],"checks"->checks|>;
+Print[ExportString[report,"RawJSON"]];
+If[!TrueQ[report["allPassed"]], Exit[1]];

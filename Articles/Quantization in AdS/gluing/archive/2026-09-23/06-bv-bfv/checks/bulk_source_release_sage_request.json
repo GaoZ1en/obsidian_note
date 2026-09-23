@@ -1,0 +1,75 @@
+{
+  "setup": "\nfrom sage.all import *\nenames=['x','p','p1','p2','F','F1','F2','C','C1','zeta','zeta1','t','alpha']\nP=PolynomialRing(QQ,names=enames); v=dict(zip(enames,P.gens()))\nonames=['c','b','beta','beta1','beta2','B','B1','B2','X','X1','N','N1','theta','bartheta','gh','gh_t','gh_x','gh_y','eta_x','eta_y','eta_xt','eta_yt','eta_xx','eta_xy','eta_yx','eta_yy','bb','bb_t']\nA=ExteriorAlgebra(P,names=onames); aa=A.gens(); o=dict(zip(onames,aa)); oi={n:i for i,n in enumerate(onames)}\ndef mon(ids):\n    z=A.one()\n    for i in ids:z*=aa[i]\n    return z\ndef de(F,x):return sum((c.derivative(x)*mon(list(ix)) for ix,c in A(F).monomial_coefficients().items()),A.zero())\ndef do(F,j):\n    z=A.zero()\n    for ix,c in A(F).monomial_coefficients().items():\n        ids=list(ix)\n        if j in ids:\n            n=ids.index(j);z+=(-1)**n*c*mon(ids[:n]+ids[n+1:])\n    return z\ndef deriv(F,em,om):\n    return sum((A(c)*de(F,v[n]) for n,c in em.items()),A.zero())+sum((A(c)*do(F,oi[n]) for n,c in om.items()),A.zero())\ndef qpre(F):return o['c']*de(F,v['x'])\ndef qpost(F):return qpre(F)-v['p']*do(F,oi['b'])\ntoy=[A(v['x']**i*v['p']**j)*mon(ids) for i in range(4) for j in range(4) for ids in [[],[oi['c']],[oi['b']],[oi['c'],oi['b']]]]\ntoy_nil=all(qpost(qpost(F))==0 for F in toy)\ntoy_changes=(qpre(v['p'])==0 and qpost(o['b'])==-v['p'] and v['p']!=0)\ndef hh(F):return v['x']*do(F,oi['c'])-o['b']*de(F,v['p'])\ndef degree(F):\n    return v['x']*de(F,v['x'])+v['p']*de(F,v['p'])+o['c']*do(F,oi['c'])+o['b']*do(F,oi['b'])\ntoy_h=all(qpost(hh(F))+hh(qpost(F))==degree(F) for F in toy)\nem={'C':o['B1']-o['X']-o['N'],'C1':o['B2']-o['X1']-o['N1'],'zeta':o['beta1']+o['N'],'zeta1':o['beta2']+o['N1']}\nom={'B':v['F'],'B1':v['F1'],'B2':v['F2'],'X':v['F1']-v['p1'],'X1':v['F2']-v['p2'],'N':v['p1'],'N1':v['p2'],'beta':-v['p'],'beta1':-v['p1'],'beta2':-v['p2']}\ndef Q(F):return deriv(F,em,om)\ngens=[v[n] for n in em]+[o[n] for n in om]\next_nil=all(Q(Q(F))==0 for F in gens+[A(v['C'])*o['beta'],A(v['zeta'])*o['X'],o['B']*o['beta']])\nxs=o['X']-o['B1'];bs=o['beta'];cs=v['zeta']+v['C']\nsc_x=(Q(xs)==-v['p1'])\nsc_b=(Q(bs)==-v['p'])\nsc_c=(Q(cs)==-xs+o['beta1'])\nmissing_N=(Q(o['beta1'])==-v['p1'] and Q(o['beta1']+o['N'])==0 and v['p1']!=0)\nbulk_only=(Q(o['B'])==v['F'] and Q(o['B'])!=-v['p'])\n# Before integration by parts the q-cotangent coefficient contains B.\ncanonical_source_b=(Q(o['beta']+o['B'])==v['F']-v['p'])\n# Ordinary Grassmann coefficients are placed to the left of spacetime forms.\n# d has ordinary spacetime form signs; odd coefficients anticommute.\nsym=(o['bb']*o['gh_t']+o['eta_x']*o['gh_y']-o['eta_y']*o['gh_x']+o['gh']*(o['bb_t']-o['eta_yx']+o['eta_xy']))/2\ncan=o['bb']*o['gh_t']+o['eta_x']*o['gh_y']-o['eta_y']*o['gh_x']\ncapdt=o['bb_t']*o['gh']+o['bb']*o['gh_t']\nspdiv=o['gh_x']*o['eta_y']+o['gh']*o['eta_yx']-o['gh_y']*o['eta_x']-o['gh']*o['eta_xy']\nghost_transgression=(sym==can-capdt/2-spdiv/2)\nprojected_action=(o['X']*o['theta']+(o['B']+o['beta'])*o['gh_t']==(o['X']-o['B1'])*o['theta']+o['beta']*o['gh_t']+o['B1']*o['theta']+o['B']*o['gh_t'])\ncap_witness=(o['bartheta']*o['theta']!=0 and -o['bartheta']*o['theta']+o['bartheta']*o['theta']==0)\ngh_charge=-v['p']*o['c']\nbfv_master=(qpost(gh_charge)==0)\nunit_anchor=(qpost(A.one())==0 and A.one()!=A.zero())\n\nghost_darboux=(do(can,oi['bb'])==o['gh_t'] and -do(can,oi['eta_y'])==o['gh_x'] and do(can,oi['eta_x'])==o['gh_y'])\ndef dtB(F):return o['bb_t']*do(F,oi['bb'])\ndef dxeta(F):return o['eta_yx']*do(F,oi['eta_y'])\ndef dyeta(F):return o['eta_xy']*do(F,oi['eta_x'])\nghost_EL=-dtB(do(can,oi['gh_t']))-dxeta(do(can,oi['gh_x']))-dyeta(do(can,oi['gh_y']))\nghost_antifield=(ghost_EL==o['bb_t']-o['eta_yx']+o['eta_xy'])\n",
+  "checks": [
+    {
+      "label": "derived_constraint_differential_squared",
+      "condition": "toy_nil"
+    },
+    {
+      "label": "source_release_changes_response_cohomology",
+      "condition": "toy_changes"
+    },
+    {
+      "label": "finite_Koszul_gauge_degree_homotopy",
+      "condition": "toy_h"
+    },
+    {
+      "label": "extended_regional_differential_squared",
+      "condition": "ext_nil"
+    },
+    {
+      "label": "source_x_antifield_chain_map",
+      "condition": "sc_x"
+    },
+    {
+      "label": "source_b_antifield_chain_map",
+      "condition": "sc_b"
+    },
+    {
+      "label": "source_c_antifield_chain_map",
+      "condition": "sc_c"
+    },
+    {
+      "label": "antifield_mismatch_N_required_for_nilpotency",
+      "condition": "missing_N"
+    },
+    {
+      "label": "smooth_bulk_B_is_not_release_antifield",
+      "condition": "bulk_only"
+    },
+    {
+      "label": "unreduced_source_cotangent_contains_curvature",
+      "condition": "canonical_source_b"
+    },
+    {
+      "label": "full_ghost_cap_and_side_transgression",
+      "condition": "ghost_transgression"
+    },
+    {
+      "label": "actual_ghost_source_terms_and_cap_derivative",
+      "condition": "projected_action"
+    },
+    {
+      "label": "omitted_ghost_cap_has_nonzero_witness",
+      "condition": "cap_witness"
+    },
+    {
+      "label": "cut_BFV_charge_master_identity",
+      "condition": "bfv_master"
+    },
+    {
+      "label": "nonzero_unit_anchor",
+      "condition": "unit_anchor"
+    },
+    {
+      "label": "canonical_component_ghost_variation",
+      "condition": "ghost_darboux"
+    },
+    {
+      "label": "canonical_c_antifield_variation",
+      "condition": "ghost_antifield"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 5000
+}

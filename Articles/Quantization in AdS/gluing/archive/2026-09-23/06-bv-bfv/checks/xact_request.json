@@ -1,0 +1,16 @@
+{
+  "profile": "core",
+  "extraPackages": [
+    "xAct`xTras`"
+  ],
+  "pipeline": "full",
+  "setup": "DefManifold[M,3,{a,b,c,d,e,f}]; DefMetric[1,met[-a,-b],CD,{\";\",\"D\"}]; DefTensor[aa[-a],M]; DefTensor[vv[-a],M];",
+  "checks": [
+    {
+      "label": "CS local first variation including divergence",
+      "residual": "epsilonmet[a,b,c] (vv[-a] CD[-b][aa[-c]] + aa[-a] CD[-b][vv[-c]] - 2 vv[-a] CD[-b][aa[-c]]) - CD[-b][epsilonmet[a,b,c] aa[-a] vv[-c]]"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 2200
+}

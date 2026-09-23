@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-06",
+  "mathematica": {
+    "groups": 30,
+    "allPassed": true,
+    "checks": {
+      "phi3Normalization": true,
+      "phi3Recursion": true,
+      "phi4Normalization": true,
+      "phi4Recursion": true,
+      "phi5Normalization": true,
+      "phi5Recursion": true,
+      "phi6Normalization": true,
+      "phi6Recursion": true,
+      "phi7Normalization": true,
+      "phi7Recursion": true,
+      "phi8Normalization": true,
+      "phi8Recursion": true,
+      "phi9Normalization": true,
+      "phi9Recursion": true,
+      "phi10Normalization": true,
+      "phi10Recursion": true,
+      "BR": true,
+      "Jacobi": true,
+      "OrderedMoller": true,
+      "LiftedEnergy4": true,
+      "LiftedEnergy6": true,
+      "LiftedEnergy8": true,
+      "MoyalEnergy": true,
+      "FeynmanJump": true,
+      "WickQuartic": true,
+      "WeightedWickEnergy": true,
+      "LeftEnergyInsertion": true,
+      "RightEnergyInsertion": true,
+      "QuarticSingleContraction": true,
+      "MollerActionSign": true
+    },
+    "scope": "Finite identities only; no PDE, microlocal closure, or quantum existence theorem is machine-verified."
+  },
+  "importedChecks": {
+    "groups": 48,
+    "all_passed": true,
+    "scope": "Finite symbolic identities only. No PDE, existence, regularity, or infinite-dimensional completeness verification.",
+    "environment": "SageMath version 10.9, Release Date: 2026-05-04",
+    "execution": "Original SymPy mathematical code; original-directory result write omitted.",
+    "warnings": [
+      "bitcount function is deprecated"
+    ]
+  },
+  "documentValidation": {
+    "markdownDocuments": 8,
+    "pandocAllPassedWithoutWarnings": true,
+    "localAngleLinksExist": true,
+    "noTrailingWhitespace": true,
+    "vaultPolicyAuditPassed": true,
+    "classicalFormalismFirst315LinesUnchanged": true,
+    "protectedFirst313LinesSha256": "2589372c253de168b1bb9c9e38e989d11cc914de8688c51002fd628b35e80502"
+  }
+}

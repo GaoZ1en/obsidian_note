@@ -1,0 +1,14 @@
+{
+  "markdown_files": 19,
+  "math_nodes": 647,
+  "local_links": 127,
+  "claims": 35,
+  "audit_cases": 40,
+  "new_sage_checks": 13,
+  "new_mathematica_checks": 24,
+  "new_labelled_checks_total": 37,
+  "goal_requirements": 6,
+  "goal_status": "active",
+  "issues": [],
+  "scope": "Formatting and saved evidence consistency; not an infinite-dimensional proof or full-goal completion."
+}

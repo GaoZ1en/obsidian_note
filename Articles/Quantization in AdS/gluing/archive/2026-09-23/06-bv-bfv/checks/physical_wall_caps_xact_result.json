@@ -1,0 +1,40 @@
+{
+  "content": [],
+  "structuredContent": {
+    "ok": true,
+    "allZero": true,
+    "profile": "core",
+    "pipeline": "full",
+    "pipelineSteps": [
+      "ToCanonical",
+      "ContractMetric",
+      "ToCanonical",
+      "FullSimplification[]"
+    ],
+    "assumptions": "",
+    "loadedPackages": [
+      "xAct`xTensor`",
+      "xAct`xPert`",
+      "xAct`xTras`"
+    ],
+    "loadErrors": [],
+    "loadMessages": [],
+    "setupMessages": [],
+    "checks": [
+      {
+        "label": "physical_chiral_wall_Euler_Lagrange",
+        "status": "zero",
+        "canonicalResidual": "(kWC*sWC[a]*tWC[b]*CDWC[-a][CDWC[-b][phiWC[]]])/2 - (kWC*sWC[a]*tWC[b]*CDWC[-b][CDWC[-a][phiWC[]]])/2",
+        "canonicalResidualSha256": "48a6a772252120c5132a608ba241fb7c545dd17ce17cafd7f05f1d856752d079",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      }
+    ],
+    "elapsedMs": 3328,
+    "transportStderr": []
+  }
+}

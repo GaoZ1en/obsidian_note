@@ -1,0 +1,17 @@
+{
+	"checks":{
+		"reflectionJetOrders0to4":true,
+		"positiveDensityReflection":true,
+		"reflectionMetric":true,
+		"reflectionLaplacian":true,
+		"kleinDeckSquare":true,
+		"kleinCoverScalarNormalization":true,
+		"reflectionWickContractions0to3":true,
+		"zeroModeCausalFinite":true,
+		"zeroModeWickNeedsPositiveGap":true,
+		"massGapPositive":true,
+		"localDensityDerivativeReflection":true
+	},
+	"allPassed":true,
+	"count":11
+}

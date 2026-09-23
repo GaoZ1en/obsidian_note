@@ -1,0 +1,226 @@
+{
+  "date": "2026-09-07",
+  "baseCommit": "0f1e3618402f07fabed86dbcf5d8eb35d83b85de",
+  "scope": "Finite exact witnesses for the response/endpoint, release/form and Klein descent proof supplements. Analytic proofs are in the notes; these results do not establish PDE, distribution descent or renormalization existence.",
+  "sourceSha256": {
+    "corner_audit_supplement_checks.wl": "f7dba85037fbf75da99e06e23dbc16bb9a9509a8e279e2c572a76e5ef7450065",
+    "corner_audit_supplement_checks.sage": "ded3b69ee5015d865854f6d76ad468e652967d7e4cc73b5ad06b31fc6d92d74d"
+  },
+  "mathematica": {
+    "scope": "finite exact algebraic witnesses only",
+    "count": 13,
+    "allPassed": true,
+    "checks": {
+      "massless endpoint witness raw": true,
+      "massless endpoint correction": true,
+      "raw response is nonzero for unequal endpoints": true,
+      "manufactured field solves KG": true,
+      "nonzero outward response sign": true,
+      "outward response witness is nonzero": true,
+      "lift difference has zero trace": true,
+      "zero-trace temporal Green identity": true,
+      "endpoint-separated lift independence": true,
+      "massive temporal Green integrand": true,
+      "semibasic vertical contraction": true,
+      "mixed initial-history exterior derivative": true,
+      "unitarity highest-order coefficient and lower-order remainder": true
+    },
+    "output": "{\n\t\"scope\":\"finite exact algebraic witnesses only\",\n\t\"count\":13,\n\t\"allPassed\":true,\n\t\"checks\":{\n\t\t\"massless endpoint witness raw\":true,\n\t\t\"massless endpoint correction\":true,\n\t\t\"raw response is nonzero for unequal endpoints\":true,\n\t\t\"manufactured field solves KG\":true,\n\t\t\"nonzero outward response sign\":true,\n\t\t\"outward response witness is nonzero\":true,\n\t\t\"lift difference has zero trace\":true,\n\t\t\"zero-trace temporal Green identity\":true,\n\t\t\"endpoint-separated lift independence\":true,\n\t\t\"massive temporal Green integrand\":true,\n\t\t\"semibasic vertical contraction\":true,\n\t\t\"mixed initial-history exterior derivative\":true,\n\t\t\"unitarity highest-order coefficient and lower-order remainder\":true\n\t}\n}\nNull"
+  },
+  "sage": {
+    "mode": "verify",
+    "ok": true,
+    "allPassed": true,
+    "setupError": null,
+    "checks": [
+      {
+        "label": "simultaneous invariance is insufficient",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "quotient contact has both lifted diagonals",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "averaging lone diagonal has wrong contact normalization",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "two-slot density normalization",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=2 independent-slot Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=2 vertex permutations preserve Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=2 lifted total diagonal components",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=2 affine normalization survives averaging",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=3 independent-slot Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=3 vertex permutations preserve Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=3 lifted total diagonal components",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=3 affine normalization survives averaging",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=4 independent-slot Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=4 vertex permutations preserve Reynolds projection",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=4 lifted total diagonal components",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "k=4 affine normalization survives averaging",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "fixed affine star relation survives real averaging",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      }
+    ],
+    "stdout": "",
+    "stdoutTruncated": false,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "stderrTruncated": false,
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "warnings": [],
+    "warningsTruncated": false,
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 4423,
+    "transportStderr": [],
+    "codeSha256": "9ecf5898a214ec26af2498e97f07eb2492a68e96b2f2da95824fa640141e79a1",
+    "standaloneRun": {
+      "mode": "run",
+      "ok": true,
+      "result": "None",
+      "resultType": "builtins.NoneType",
+      "truncated": false,
+      "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+      "error": null,
+      "stdout": "{\n  \"scope\": \"finite exact deck-group witnesses only\",\n  \"count\": 17,\n  \"allPassed\": true,\n  \"checks\": {\n    \"simultaneous invariance is insufficient\": true,\n    \"quotient contact has both lifted diagonals\": true,\n    \"averaging lone diagonal has wrong contact normalization\": true,\n    \"two-slot density normalization\": true,\n    \"k=2 independent-slot Reynolds projection\": true,\n    \"k=2 vertex permutations preserve Reynolds projection\": true,\n    \"k=2 lifted total diagonal components\": true,\n    \"k=2 affine normalization survives averaging\": true,\n    \"k=3 independent-slot Reynolds projection\": true,\n    \"k=3 vertex permutations preserve Reynolds projection\": true,\n    \"k=3 lifted total diagonal components\": true,\n    \"k=3 affine normalization survives averaging\": true,\n    \"k=4 independent-slot Reynolds projection\": true,\n    \"k=4 vertex permutations preserve Reynolds projection\": true,\n    \"k=4 lifted total diagonal components\": true,\n    \"k=4 affine normalization survives averaging\": true,\n    \"fixed affine star relation survives real averaging\": true\n  }\n}\n",
+      "stdoutTruncated": false,
+      "stdoutSha256": "546d302e887bda67da3a5c92bb47f5a1889e5dfd8a99ccefdd9f9b2974e9e79b",
+      "stderr": "",
+      "stderrTruncated": false,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "warnings": [],
+      "warningsTruncated": false,
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "elapsedMs": 4731,
+      "transportStderr": [],
+      "codeSha256": "ded3b69ee5015d865854f6d76ad468e652967d7e4cc73b5ad06b31fc6d92d74d"
+    }
+  },
+  "totalChecks": 30,
+  "allPassed": true
+}

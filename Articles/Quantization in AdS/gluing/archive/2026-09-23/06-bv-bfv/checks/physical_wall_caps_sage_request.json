@@ -1,0 +1,63 @@
+{
+  "setup": "\nfrom sage.all import *\nfrom collections import Counter,defaultdict\nK=QuadraticField(-1,'ii'); ii=K.gen()\nR=PolynomialRing(K,names=['e0','e1','e2','q0','q1','r0','r1','kap','hb','t','s'])\ne0,e1,e2,q0,q1,r0,r1,kap,hb,t,s=R.gens()\nE=ExteriorAlgebra(R,names=['c0','c1','c2']); c0,c1,c2=E.gens()\ndef mono(ix):\n    o=E.one()\n    for j in ix:o*=E.gen(j)\n    return o\ndef der(P,x):\n    return sum((a.derivative(x)*mono(list(ix)) for ix,a in E(P).monomial_coefficients().items()),E.zero())\ndef Q(P):\n    return c0*der(P,e0)+c1*der(P,e1)+c2*der(P,e2)+c1*der(P,q0)+2*c2*der(P,q1)\ndef integrate01(p,x): return p.integral(x).subs({x:1})-p.integral(x).subs({x:0})\nf=s*(1-s); ef=(e0+e1*t+e2*t*t)*f; rf=(r0+r1*t)*s; qf=(q0+q1*t)*f\nlag=kap/2*(ef.derivative(s)*rf.derivative(t)+rf.derivative(s)*ef.derivative(t))-kap*qf*rf.derivative(s)\nS=integrate01(integrate01(lag,s),t)\nB=kap/12*((r0+r1)*(c0+c1+c2)-r0*c0)\ndef Ward(P):return -ii*hb*Q(P)+B*E(P)\ntests=[E(v)*g for v in [R.one(),e0,e1,q0,q1,r0,e0*q1,e2*r1,e0**2*q1] for g in [E.one(),c0,c1*c2]]\nq_nil=all(Q(Q(v))==0 for v in tests)\nward_nil=all(Ward(Ward(v))==0 for v in tests)\nphase_closed=(Q(E(S))+B==0)\nmissing_caps_nonzero=(Q(E(S))!=0)\nendpoint_ghost_retained=(B!=0 and Q(B)==0)\ngram_good=matrix(QQ,[[integrate01(u*v,s) for v in [R.one(),s]] for u in [f,s*f]])\ngram_bad=matrix(QQ,[[integrate01(u*v,s) for v in [R.one(),s]] for u in [s-QQ(1)/2,s*s-QQ(1)/3]])\nsource_probe_rank=(gram_good.det()==QQ(1)/720 and gram_good.rank()==2 and gram_bad.rank()==1 and gram_bad*vector(QQ,[1,0])==0)\n# Current insertion products derived from the actual complex Gaussian moments.\nP=PolynomialRing(QQ,names=['x1','x2','y1','y2','z1','z2','b1','b2','h','k'])\nx1,x2,y1,y2,z1,z2,b1,b2,h,k=P.gens()\nxx=[x1,x2]; yy=[y1,y2]; zz=[z1,z2]; bb=[b1,b2]; cov=[h*k,2*h*k]\ndef gm(a,b,x,y,d):\n    return sum((binomial(a,l)*binomial(b,l)*factorial(l)*d**l*y**(a-l)*x**(b-l) for l in range(min(a,b)+1)),P.zero())\ndef expectation(poly):\n    ans=P.zero()\n    for ex,coef in poly.dict().items():\n        base=P(coef)\n        for j in [0,1,2,3,8,9]:base*=P.gen(j)**ex[j]\n        for n in range(2):base*=gm(ex[4+n],ex[6+n],xx[n],yy[n],cov[n])\n        ans+=base\n    return ans\ndef cap_product(F,G):\n    return expectation(F.subs({y1:z1,y2:z2})*G.subs({x1:b1,x2:b2}))\ndef wick(F,G):\n    ans=P.zero()\n    for a in range(5):\n        for b in range(5):\n            df=F.derivative(y1,a).derivative(y2,b)\n            dg=G.derivative(x1,a).derivative(x2,b)\n            ans+=cov[0]**a*cov[1]**b/factorial(a)/factorial(b)*df*dg\n    return ans\npairs=[(y1,x1),(y1*y1,x1*x1),(x2*y1*y1+y2,x1*x1*y2+x2),(x1*y2+x2*y1,x1*x2+y1*y2)]\ncap_wick=all(cap_product(a,b)==wick(a,b) for a,b in pairs)\ndouble_contraction=(cap_product(y1*y1,x1*x1)==x1*x1*y1*y1+4*h*k*x1*y1+2*(h*k)**2)\ncross_mode_normalization=(cap_product(y2,x2)-cap_product(x2,y2)==2*h*k)\n# Unnormalized current-Fock monomials, no occupation cutoff.\ndef stress_vac(m):\n    coeff=defaultdict(QQ)\n    for r in range(1,m):coeff[tuple(sorted([r,m-r]))]+=QQ(1)/2\n    return sum(a*a*prod(n**power*factorial(power) for n,power in Counter(key).items()) for key,a in coeff.items())\nstress_norms=all(stress_vac(m)==QQ(m**3-m)/12 for m in range(2,18))\nsharp_norms=all(sum(stress_vac(2*j+1)/QQ((2*j+1)**2) for j in range(1,L+1))==sum(QQ(2*j+1)-QQ(1)/(2*j+1) for j in range(1,L+1))/12 for L in range(1,7))\nwindow_norms=all(sum(4*stress_vac(2*j+1)/QQ((2*j+1)**4) for j in range(1,L+1))==sum(QQ(1)/(2*j+1)-QQ(1)/(2*j+1)**3 for j in range(1,L+1))/3 for L in range(1,7))\nsharp_positive=(stress_vac(3)>0 and stress_vac(5)>0)\n\n# Normalized common-cut BRST quartet, keeping it in the field complex.\nRg=PolynomialRing(K,names=['xg','Bg']); Fg=Rg.fraction_field(); xg,Bg=[Fg(x) for x in Rg.gens()]\nEg=ExteriorAlgebra(Fg,names=['cg','bg']); cg,bg=Eg.gens()\ndef gmon(ids):\n    p=Eg.one()\n    for j in ids:p*=Eg.gen(j)\n    return p\ndef gd(p,x):\n    return sum((a.derivative(x)*gmon(list(ids)) for ids,a in Eg(p).monomial_coefficients().items()),Eg.zero())\ndef go(p,j):\n    ans=Eg.zero()\n    for ids,a in Eg(p).monomial_coefficients().items():\n        ls=list(ids)\n        if j in ls:\n            pos=ls.index(j);ans+=(-1)**pos*a*gmon(ls[:pos]+ls[pos+1:])\n    return ans\ndef Qg(p):return cg*gd(p,xg)+Bg*go(p,1)\nPsi_g=bg*xg\nSgf=Bg*xg-bg*cg\nquartet_exact=(Qg(Psi_g)==Sgf and Qg(Sgf)==0)\n# hbar=1 here; factor i implements the declared paired odd normalization.\nodd_norm=(ii*go(go(Eg.one()-ii*bg*cg,1),0)==1)\nquartet_not_classical_quotient=(Qg(xg)==cg and Qg(bg)==Bg)\n",
+  "checks": [
+    {
+      "label": "proper_cut_BRST_differential_nilpotent",
+      "condition": "q_nil"
+    },
+    {
+      "label": "cap_corrected_history_Ward_operator_nilpotent",
+      "condition": "ward_nil"
+    },
+    {
+      "label": "physical_history_phase_satisfies_cap_Ward_identity",
+      "condition": "phase_closed"
+    },
+    {
+      "label": "dropping_cap_term_gives_nonzero_Ward_residual",
+      "condition": "missing_caps_nonzero"
+    },
+    {
+      "label": "nonzero_cap_ghosts_are_retained",
+      "condition": "endpoint_ghost_retained"
+    },
+    {
+      "label": "actual_endpoint_zero_source_probes_detect_full_response",
+      "condition": "source_probe_rank"
+    },
+    {
+      "label": "Gaussian_cap_insertions_match_QD_Wick_products",
+      "condition": "cap_wick"
+    },
+    {
+      "label": "Gaussian_cap_double_contraction_is_nonzero",
+      "condition": "double_contraction"
+    },
+    {
+      "label": "second_mode_current_normalization",
+      "condition": "cross_mode_normalization"
+    },
+    {
+      "label": "stress_vacuum_norms_without_occupation_cutoff",
+      "condition": "stress_norms"
+    },
+    {
+      "label": "sharp_arc_energy_vacuum_divergence_coefficients",
+      "condition": "sharp_norms and sharp_positive"
+    },
+    {
+      "label": "sharp_time_window_vacuum_tail_coefficients",
+      "condition": "window_norms"
+    },
+    {
+      "label": "proper_cut_quartet_gauge_fixing_is_Q_exact",
+      "condition": "quartet_exact and quartet_not_classical_quotient"
+    },
+    {
+      "label": "proper_cut_quartet_has_nonzero_normalized_Berezin_integral",
+      "condition": "odd_norm"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 10000
+}

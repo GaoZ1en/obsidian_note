@@ -1,0 +1,22 @@
+{
+	"scope":"Finite compatible-history identities and explicit mismatch diagnostics only",
+	"checks":{
+		"jointHistoryAnnihilator":true,
+		"fullCovectorRelease":true,
+		"compatibleHistoryChainRule":true,
+		"covectorRepresentativeIndependence":true,
+		"cornerLogarithmicLowerBound":true,
+		"cornerConstantJumpDiverges":true,
+		"selfSewingCountsRegionalActionOnce":true,
+		"torusHamiltonianDomainMismatch":true
+	},
+	"groupCount":8,
+	"allPassed":true,
+	"cornerLowerBound":"-1\/2*Log[eps]",
+	"cornerLimit":"Infinity",
+	"notVerified":[
+		"Joint Sobolev trace theorem and its norm equivalence",
+		"Regional PDE existence or corner regularity",
+		"Smooth regular-dual extension and exact full-family surjectivity"
+	]
+}

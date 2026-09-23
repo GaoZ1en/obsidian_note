@@ -1,0 +1,116 @@
+{
+  "setup": "\nfrom itertools import product, permutations\npdim, udim, vdim = 2, 3, 2\nstagedims = [pdim+udim,udim+vdim,vdim]\nbasis = [(q,r,j) for q in range(2) for r in range(3) for j in range(stagedims[r])]\nix = {b:i for i,b in enumerate(basis)}\nN=len(basis)\ndh=matrix(QQ,N,N); dv=matrix(QQ,N,N); h=matrix(QQ,N,N)\nfor q in range(2):\n    for j in range(udim):\n        dh[ix[q,1,j],ix[q,0,pdim+j]]=1\n        h[ix[q,0,pdim+j],ix[q,1,j]]=1\n    for j in range(vdim):\n        dh[ix[q,2,j],ix[q,1,udim+j]]=1\n        h[ix[q,1,udim+j],ix[q,2,j]]=1\nap=matrix(QQ,[[1,2],[0,1]])\ndu=matrix(QQ,[[1,0,2],[0,1,1],[1,1,0]])\ndc=matrix(QQ,[[2,1],[1,0]])\na=matrix(QQ,[[1,-1,2],[0,3,1]])\nb=matrix(QQ,[[1,2],[3,0],[-1,2]])\nv0=block_matrix([[ap,a],[zero_matrix(QQ,udim,pdim),du]])\nv1=block_matrix([[du,b],[zero_matrix(QQ,vdim,udim),dc]])\nfor r,V in enumerate([v0,v1,dc]):\n    for i in range(V.nrows()):\n        for j in range(V.ncols()):\n            dv[ix[1,r,i],ix[0,r,j]]=(-1)^r*V[i,j]\ninc=matrix(QQ,N,2*pdim); proj=matrix(QQ,2*pdim,N)\nfor q in range(2):\n    for j in range(pdim):\n        inc[ix[q,0,j],q*pdim+j]=1\n        proj[q*pdim+j,ix[q,0,j]]=1\ndp=matrix(QQ,2*pdim,2*pdim)\ndp[pdim:2*pdim,0:pdim]=ap\nId=identity_matrix(QQ,N); D=dh+dv\ninv=Id-dv*h+(dv*h)^2\nhp=h*inv; pp=proj*inv\nf0=matrix(QQ,[[1,-1,0],[1,0,-1],[0,1,-1]])\nf1=matrix(QQ,[[1,-1,1]])\ndegs=[-1,0,0,0,1]\ndmap={0:(1,1),3:(4,1)}\nhmap={1:(0,1),4:(3,1)}\ndef tensor_test(m):\n    bs=list(product(range(5),repeat=m)); ids={b:i for i,b in enumerate(bs)}\n    n=len(bs); dd=matrix(QQ,n,n,sparse=True); hh=matrix(QQ,n,n,sparse=True)\n    ff=matrix(QQ,n,n,sparse=True); sym=matrix(QQ,n,n,sparse=True)\n    for col,tup in enumerate(bs):\n        if all(j==2 for j in tup): ff[col,col]=1\n        for r,j in enumerate(tup):\n            sign=(-1)^sum(degs[k] for k in tup[:r])\n            if j in dmap:\n                out=list(tup);out[r]=dmap[j][0];dd[ids[tuple(out)],col]+=sign\n            if j in hmap and all(k==2 for k in tup[:r]):\n                out=list(tup);out[r]=hmap[j][0];hh[ids[tuple(out)],col]+=sign\n        for perm in permutations(range(m)):\n            inversions=sum(degs[tup[perm[i]]]*degs[tup[perm[j]]] for i in range(m) for j in range(i+1,m) if perm[i]>perm[j])\n            out=tuple(tup[k] for k in perm)\n            sym[ids[out],col]+=QQ((-1)^inversions)/factorial(m)\n    hs=sym*hh*sym\n    return (dd*hh+hh*dd==identity_matrix(QQ,n)-ff,\n            dd*hs+hs*dd==sym-ff*sym,\n            dd*sym==sym*dd, sym^2==sym,\n            sym.rank()-2*(dd*sym).rank()==1)\ntensor_results={m:tensor_test(m) for m in [1,2,3]}\n",
+  "checks": [
+    {
+      "label": "corner_incidence_squared_zero",
+      "condition": "f1*f0 == zero_matrix(QQ,1,3)"
+    },
+    {
+      "label": "corner_sequence_exact",
+      "condition": "f0.rank()==2 and f1.rank()==1 and f0.right_kernel().dimension()==1"
+    },
+    {
+      "label": "omitting_corner_adds_spurious_H1",
+      "condition": "3-f0.rank()==1"
+    },
+    {
+      "label": "horizontal_contraction",
+      "condition": "dh*h+h*dh==Id-inc*proj"
+    },
+    {
+      "label": "total_differential_squared_zero",
+      "condition": "D^2==zero_matrix(QQ,N,N)"
+    },
+    {
+      "label": "finite_perturbation_terminates",
+      "condition": "(dv*h)^3==zero_matrix(QQ,N,N)"
+    },
+    {
+      "label": "splitting_really_not_chain",
+      "condition": "dv*h+h*dv != zero_matrix(QQ,N,N)"
+    },
+    {
+      "label": "corrected_projection_chain_map",
+      "condition": "pp*D==dp*pp"
+    },
+    {
+      "label": "inclusion_chain_map",
+      "condition": "D*inc==inc*dp"
+    },
+    {
+      "label": "corrected_homotopy_identity",
+      "condition": "D*hp+hp*D==Id-inc*pp"
+    },
+    {
+      "label": "corrected_projection_retraction",
+      "condition": "pp*inc==identity_matrix(QQ,2*pdim)"
+    },
+    {
+      "label": "corrected_side_conditions",
+      "condition": "hp^2==zero_matrix(QQ,N,N) and hp*inc==zero_matrix(QQ,N,2*pdim) and pp*hp==zero_matrix(QQ,2*pdim,N)"
+    },
+    {
+      "label": "tensor_identity_degree_1",
+      "condition": "tensor_results[1][0]"
+    },
+    {
+      "label": "symmetric_identity_degree_1",
+      "condition": "tensor_results[1][1]"
+    },
+    {
+      "label": "differential_equivariance_degree_1",
+      "condition": "tensor_results[1][2]"
+    },
+    {
+      "label": "symmetrizer_idempotent_degree_1",
+      "condition": "tensor_results[1][3]"
+    },
+    {
+      "label": "one_residual_class_degree_1",
+      "condition": "tensor_results[1][4]"
+    },
+    {
+      "label": "tensor_identity_degree_2",
+      "condition": "tensor_results[2][0]"
+    },
+    {
+      "label": "symmetric_identity_degree_2",
+      "condition": "tensor_results[2][1]"
+    },
+    {
+      "label": "differential_equivariance_degree_2",
+      "condition": "tensor_results[2][2]"
+    },
+    {
+      "label": "symmetrizer_idempotent_degree_2",
+      "condition": "tensor_results[2][3]"
+    },
+    {
+      "label": "one_residual_class_degree_2",
+      "condition": "tensor_results[2][4]"
+    },
+    {
+      "label": "tensor_identity_degree_3",
+      "condition": "tensor_results[3][0]"
+    },
+    {
+      "label": "symmetric_identity_degree_3",
+      "condition": "tensor_results[3][1]"
+    },
+    {
+      "label": "differential_equivariance_degree_3",
+      "condition": "tensor_results[3][2]"
+    },
+    {
+      "label": "symmetrizer_idempotent_degree_3",
+      "condition": "tensor_results[3][3]"
+    },
+    {
+      "label": "one_residual_class_degree_3",
+      "condition": "tensor_results[3][4]"
+    }
+  ],
+  "timeoutMs": 120000,
+  "maxOutputChars": 12000
+}
+

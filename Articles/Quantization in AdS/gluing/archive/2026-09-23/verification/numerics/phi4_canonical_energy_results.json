@@ -1,0 +1,27 @@
+{
+	"allChecksPassed":true,
+	"checkCount":20,
+	"checks":{
+		"field generator exact":true,
+		"momentum generator with Wick counterterm":true,
+		"left quantum energy exchange":true,
+		"right quantum energy exchange":true,
+		"total energy conservation":true,
+		"no higher Moyal term in the energy balance":true,
+		"quartic quantum correction is retained elsewhere":true,
+		"prescribed-history work sign":true,
+		"two outward powers cancel after matching":true,
+		"coordinate work identity with all tadpole terms":true,
+		"interaction-picture energy changes only by switching work":true,
+		"canonical energy and field share the same conjugation":true,
+		"reflected free energy has only a logarithmic wall singularity":true,
+		"wall logarithm has a finite integral":true,
+		"partition energy work cancels at the artificial cut":true,
+		"quartic cubic contraction multiplicities":true,
+		"quartic linear commutator multiplicity":true,
+		"second order field degrees and hbar powers":true,
+		"central CCR gives the symmetrized polynomial chain rule":true,
+		"energy quartic equal time contact with Wick subtraction":true
+	},
+	"scope":"Exact canonical polynomial, driven energy, and local free-wall checks. Finite cells check ordering and signs only; continuum renormalization is a separate stated construction."
+}

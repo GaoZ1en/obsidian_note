@@ -1,0 +1,150 @@
+{
+  "content": [],
+  "structuredContent": {
+    "mode": "verify",
+    "ok": true,
+    "allPassed": true,
+    "setupError": null,
+    "checks": [
+      {
+        "label": "proper_cut_BRST_differential_nilpotent",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "cap_corrected_history_Ward_operator_nilpotent",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "physical_history_phase_satisfies_cap_Ward_identity",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "dropping_cap_term_gives_nonzero_Ward_residual",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "nonzero_cap_ghosts_are_retained",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "actual_endpoint_zero_source_probes_detect_full_response",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "Gaussian_cap_insertions_match_QD_Wick_products",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "Gaussian_cap_double_contraction_is_nonzero",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "second_mode_current_normalization",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "stress_vacuum_norms_without_occupation_cutoff",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "sharp_arc_energy_vacuum_divergence_coefficients",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "sharp_time_window_vacuum_tail_coefficients",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "proper_cut_quartet_gauge_fixing_is_Q_exact",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "proper_cut_quartet_has_nonzero_normalized_Berezin_integral",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      }
+    ],
+    "stdout": "",
+    "stdoutTruncated": false,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "stderrTruncated": false,
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "warnings": [],
+    "warningsTruncated": false,
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 5113,
+    "transportStderr": [],
+    "codeSha256": "7d56e9fd18e631271ce1c436e71b7bcec6502ee96f9dd6e4dce634f746a7b873"
+  },
+  "isError": false
+}

@@ -1,0 +1,268 @@
+{
+  "content": [],
+  "structuredContent": {
+    "mode": "verify",
+    "ok": true,
+    "allPassed": true,
+    "setupError": null,
+    "checks": [
+      {
+        "label": "corner_incidence_squared_zero",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "corner_sequence_exact",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "omitting_corner_adds_spurious_H1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "horizontal_contraction",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "total_differential_squared_zero",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "finite_perturbation_terminates",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "splitting_really_not_chain",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "corrected_projection_chain_map",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "inclusion_chain_map",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "corrected_homotopy_identity",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "corrected_projection_retraction",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "corrected_side_conditions",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "tensor_identity_degree_1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetric_identity_degree_1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "differential_equivariance_degree_1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetrizer_idempotent_degree_1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "one_residual_class_degree_1",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "tensor_identity_degree_2",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetric_identity_degree_2",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "differential_equivariance_degree_2",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetrizer_idempotent_degree_2",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "one_residual_class_degree_2",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "tensor_identity_degree_3",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetric_identity_degree_3",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "differential_equivariance_degree_3",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "symmetrizer_idempotent_degree_3",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "one_residual_class_degree_3",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      }
+    ],
+    "stdout": "",
+    "stdoutTruncated": false,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "stderrTruncated": false,
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "warnings": [],
+    "warningsTruncated": false,
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 3853,
+    "transportStderr": [],
+    "codeSha256": "fcf2b6db2bf31594f79e9f348d38398cf7df0bef9a3c05994b9d42a0d811eff4"
+  },
+  "isError": false
+}
+

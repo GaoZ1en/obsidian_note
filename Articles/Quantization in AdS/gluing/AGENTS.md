@@ -1,5 +1,14 @@
 # AGENTS.md — Regional Observable Gluing
 
+## Archive Status (2026-09-23)
+
+- This subtree is retired research material. Start with `README.md`, `HISTORY.md`, and `TOPICS.md`.
+- Treat archived TODOs, programmes, and active flags as historical snapshots, not current instructions to resume work.
+- Preserve historical bodies and claim ledgers; do not silently reconcile earlier conventions or mark unfinished work complete.
+- The research principles below are retained as the former project convention. Archival maintenance does not authorize new derivations.
+
+## Historical Research Principles
+
 - Start from independently defined regional and global observable algebras.
 - Derive regional dynamics and interface data from the regional actions or CPS; do not define gluing by a state, mode expansion, or regulator.
 - Specify the interface type and its admissible data before constructing the regional objects.

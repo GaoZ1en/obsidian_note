@@ -1,0 +1,59 @@
+{
+  "setup": "from sage.all import *\nf = matrix(QQ, [[0,1,-1,0]])\ndloc = matrix(QQ, [[-1,1,0,0],[0,0,-1,1]])\ndcone = dloc.stack(f)\nker = f.right_kernel().basis_matrix().transpose()\ncircle = matrix(QQ, [[1,-1],[1,-1]])\ntree = matrix(QQ, [[-1,1,0],[0,-1,1]])\ncycle = tree.stack(matrix(QQ, [[1,0,-1]]))\nR = PolynomialRing(QQ, names=('x','y'))\nx,y = R.gens()\nk1 = matrix(R, [[y,y]])\nk2 = matrix(R, [[-y],[y]])\nsyzygy = vector(R,[1,-1])",
+  "checks": [
+    {
+      "label": "Interval cone H0 retains one constant stabilizer",
+      "condition": "4-dcone.rank() == 1"
+    },
+    {
+      "label": "Interval cone has no spurious H1",
+      "condition": "3-dcone.rank() == 0"
+    },
+    {
+      "label": "Strict fiber product lies in matched kernel",
+      "condition": "f*ker == zero_matrix(QQ,1,3)"
+    },
+    {
+      "label": "Strict interval product has same H0",
+      "condition": "3-(dloc*ker).rank() == 1"
+    },
+    {
+      "label": "Strict interval product has same H1",
+      "condition": "2-(dloc*ker).rank() == 0"
+    },
+    {
+      "label": "Circle descent retains H0 stabilizer",
+      "condition": "2-circle.rank() == 1"
+    },
+    {
+      "label": "Circle descent recovers H1 holonomy",
+      "condition": "2-circle.rank() == 1"
+    },
+    {
+      "label": "Tree two-step constraints independent",
+      "condition": "tree.rank() == 2"
+    },
+    {
+      "label": "Three-cell tree ordering preserves kernel",
+      "condition": "tree.right_kernel() == matrix(QQ,[tree[1],tree[0]]).right_kernel()"
+    },
+    {
+      "label": "Cycle requires additional cocycle information",
+      "condition": "3-cycle.rank() == 1"
+    },
+    {
+      "label": "Redundant clean constraint Koszul differential squares zero",
+      "condition": "k1*k2 == zero_matrix(R,1,1)"
+    },
+    {
+      "label": "Clean intersection retains closed negative class",
+      "condition": "k1*syzygy == vector(R,[0])"
+    },
+    {
+      "label": "Negative class survives modulo matching ideal",
+      "condition": "syzygy != vector(R,[0,0]) and all(v.subs(y=0)==0 for v in k2.column(0))"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 3500
+}

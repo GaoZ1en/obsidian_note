@@ -1,0 +1,116 @@
+{
+  "objective": "完全实现可再开放 BV–BFV 系统、一般经典粘合、observable reconstruction、反复组合一致性、量子比较及传播非阿贝尔模型验收",
+  "status": "active",
+  "requirements": [
+    {
+      "id": "G1",
+      "requirement": "完整可再开放系统与实际 morphisms",
+      "status": "partial",
+      "evidence": [
+        "systems.md",
+        "corner_descent.md",
+        "corner_descent.md §5.1 CD2",
+        "nonabelian_relative_descent.md",
+        "finite_cut_coherence.md",
+        "nonabelian_disk_observables.md"
+      ],
+      "remaining": [
+        "一般 theory/realization 的 nonlinear dg objects 与 actual morphisms",
+        "独立 source regeneration 与任意 intermediate reopening/closure"
+      ]
+    },
+    {
+      "id": "G2",
+      "requirement": "含 corner、非线性 gauge 与拓扑的 classical gluing",
+      "status": "partial",
+      "evidence": [
+        "corner_descent.md",
+        "relative_homotopy.md",
+        "nonabelian_relative_descent.md",
+        "finite_cut_coherence.md",
+        "nonabelian_disk_observables.md"
+      ],
+      "remaining": [
+        "annulus/self-sewing、nontrivial bundle 与一般实际 source/transition 域",
+        "nonformal off-shell BV extension 与 global function/cohomology comparison",
+        "传播规范模型的 action/CPS 与 BV–BFV 比较"
+      ]
+    },
+    {
+      "id": "G3",
+      "requirement": "独立可观测代数重构及动力学比较",
+      "status": "partial",
+      "evidence": [
+        "continuous_observables.md",
+        "nonabelian_relative_descent.md",
+        "nonabelian_disk_observables.md",
+        "quantum_observable_domain.md",
+        "physical_wall_and_caps.md"
+      ],
+      "remaining": [
+        "finite non-Abelian Hamiltonian functions 的 global off-shell BV representatives 与 cochain kernel",
+        "一般 source/target 的 observable presentation 与 quantum BV bridge",
+        "超出已声明 quantum kernel 域的必要扩展及物理验收"
+      ]
+    },
+    {
+      "id": "G4",
+      "requirement": "反复粘合、self-sewing、junction/refinement 与高阶相容",
+      "status": "partial",
+      "evidence": [
+        "u1_cs_open_chord.md §8",
+        "corner_descent.md",
+        "nonabelian_relative_descent.md",
+        "finite_cut_coherence.md",
+        "quantum_collar_and_corners.md",
+        "physical_wall_and_caps.md"
+      ],
+      "remaining": [
+        "任意 intermediate physical closure 的 reopening 与兼容域",
+        "compact self-sewing、bundle topology 与 singular stabilizers",
+        "非 conical 几何和量子 composition coherence"
+      ]
+    },
+    {
+      "id": "G5",
+      "requirement": "量子 BV–BFV 与 quantum observable sewing 比较和障碍",
+      "status": "partial",
+      "evidence": [
+        "quantum_observable_domain.md",
+        "quantum_collar_and_corners.md",
+        "physical_wall_and_caps.md",
+        "quantum_cut_quartet.md",
+        "source_cap_bv_decomposition.md",
+        "bulk_boundary_source_release.md"
+      ],
+      "remaining": [
+        "从独立 regional 完整 quantum BV cochain states 构造 interface 与 residual pushforward，包括 bulk/ghost/corner determinants、各自 polarization 与 distributional pairing 域，并比较 WH/QD 产品",
+        "artificial boundary/corner renormalization 与 mQME",
+        "actual gauge anomaly 和 auxiliary-choice dependence",
+        "non-Abelian quantum observable/product comparison",
+        "将 QB/WH 的 normalized cylindrical 与 physical-sector 构造提升到包含 local BV insertions 的完整量子 complex；处理 mixed-antifield trace 发散并证明 full mQME 和辅助选择相容",
+        "在 BS 已构造的 action-derived release correspondence 与实际 SC Q-map 上，证明 relative BV pairing/fiber 和完整 quantum pushforward，保留 joint source domain、canonical source momentum 的 curvature contribution、原 ghost side/cap terms及 determinant transport；不再要求被 BS1 反驳的 unreleased bulk → SC 直接等价"
+      ]
+    },
+    {
+      "id": "G6",
+      "requirement": "局域传播的非线性规范模型实际验收",
+      "status": "open",
+      "evidence": [
+        "../principal_bundle_sewing_v2/nonabelian_propagating_sewing_2026-09-18.md"
+      ],
+      "remaining": [
+        "超出既有首阶结果的 BV–BFV construction",
+        "同一模型上的 G1–G5 验收"
+      ]
+    }
+  ],
+  "last_progress": "2026-09-21 BS1–BS3 用实际 on-shell half-disk pair 排除 unreleased bulk 到 SC 的直接 response-preserving Q-map；由 source variation 和 seam antifield mismatch 构造 release resolution，给 SC 全部 coordinates 的 continuous off-shell Q-map，并从原 CS ghost action 导出 source terms 和完整 cap/side corrections。13项 Mathematica、17项 Sage、3项 xAct 最终检查通过。相对 BV pairing/fiber、完整 quantum state/pushforward 和 G1–G6 其他缺口保持未完成。",
+  "next_actions": [
+    "构造 BS release correspondence 中 Phi 的 retained sector 与相对 odd pairing/fiber，实际分离 curvature/ghost sectors并运输 ghost cap corrections；用完整 boundary operator 验收与 interface pairing 组合后的 BV pushforward，而非把 cochain map 当作 canonical factorization",
+    "构造原 disk/chord 独立区域完整 quantum BV cochain states，计算 bulk/ghost/corner determinant transport、各自 cap polarization 和实际 distributional pairing；在 full mQME/pushforward 层比较 WH 的 physical-sector 结果",
+    "构造包含 local BV insertions 的量子 functional/renormalization 域，处理 QB 的 mixed Hessian trace 障碍并比较 QD products/energy",
+    "继续 annulus/self-sewing、nontrivial bundle、实际 source regeneration 与 intermediate reopening；保留 finite gauge arrows 和 singular stabilizers",
+    "在四维 SU(2) 中推进超出首阶的 propagating BV–BFV comparison，并在同一模型逐项验收 G1–G5"
+  ]
+}

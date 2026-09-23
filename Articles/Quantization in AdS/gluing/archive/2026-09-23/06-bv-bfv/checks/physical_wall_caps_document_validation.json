@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-19",
+  "scope": "BV-BFV physical wall/caps documentation and saved execution-evidence consistency; not a new mathematical proof",
+  "markdown_files": 23,
+  "math_nodes": 710,
+  "local_links": 174,
+  "json_files": 34,
+  "claims": 44,
+  "audit_cases": 50,
+  "audit_rounds": 21,
+  "saved_checks": {
+    "Mathematica": 28,
+    "Sage": 14,
+    "xAct": 1
+  },
+  "mathematica_source_sha256": "e7ae6801085af1c250acfeb16827b5244ea829a2efe6cb23734ebeadccb73bbf",
+  "requirements_preserved": [
+    [
+      "G1",
+      "partial"
+    ],
+    [
+      "G2",
+      "partial"
+    ],
+    [
+      "G3",
+      "partial"
+    ],
+    [
+      "G4",
+      "partial"
+    ],
+    [
+      "G5",
+      "partial"
+    ],
+    [
+      "G6",
+      "open"
+    ]
+  ],
+  "starter_execution_history_preserved": true,
+  "issues": [],
+  "passed": true,
+  "audit_round_headers": 18,
+  "audit_grouped_rounds": [
+    7,
+    8,
+    9
+  ],
+  "validation_corrections": [
+    "The first heading-only counter missed the explicitly grouped rounds 7–9. Checked coverage is now exactly rounds 1–21; all other initial checks passed."
+  ]
+}

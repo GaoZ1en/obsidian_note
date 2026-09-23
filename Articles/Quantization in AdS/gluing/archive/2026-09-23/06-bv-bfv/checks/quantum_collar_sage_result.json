@@ -1,0 +1,159 @@
+{
+  "content": [],
+  "structuredContent": {
+    "mode": "verify",
+    "ok": true,
+    "allPassed": true,
+    "setupError": null,
+    "checks": [
+      {
+        "label": "left_Berezin_derivative_anchor",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "ghost_exponential_residual_derivative",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "closed_face_BFV_nilpotency_on_40_inputs",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "open_face_BFV_square_equals_corner_on_40_inputs",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "open_face_curvature_nonzero",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "closed_face_mQME_after_Fourier_pushforward",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "open_face_mQME_exact_corner_defect",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "open_face_mQME_defect_nonzero",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "zero_mode_retained_in_mQME",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "intermediate_ghost_pairing_produces_odd_delta",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "residual_BV_pushforward_recovers_state",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "omitting_residual_pushforward_fails",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "local_mixed_BV_Hessian_has_growing_trace",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "matched_opposite_open_faces_have_nilpotent_diagonal",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "unmatched_corner_ghosts_do_not_cancel_curvature",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      }
+    ],
+    "stdout": "",
+    "stdoutTruncated": false,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "stderrTruncated": false,
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "warnings": [],
+    "warningsTruncated": false,
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 19404,
+    "transportStderr": [],
+    "codeSha256": "e62981bbd8b836c99f4d7e9563f6c6d5f2542def5e7afebb8369ac4081252c52"
+  },
+  "isError": false
+}

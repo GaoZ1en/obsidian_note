@@ -1,0 +1,198 @@
+{
+	"checks":{
+		"regional response":{
+			"same-region":0,
+			"cross-region":0,
+			"history":0
+		},
+		"Wick square":0,
+		"Wick stress":0,
+		"Wick mixed":0,
+		"square commutator":0,
+		"chiral subtraction":0,
+		"double-contraction Laurent":0,
+		"spectral central coefficient":0,
+		"local square subtraction":0,
+		"chiral derivative":0,
+		"cross-log residual < 1e-40":true,
+		"regulated mode\/log comparison < 1e-30":true,
+		"central delta-prime cancellation":0,
+		"stress product from full spacetime derivatives":true,
+		"Casimir point split at separation 1e-12":true,
+		"energy image cancellation":0,
+		"exact Casimir local limit":0,
+		"operator jump":0,
+		"smeared operator jump":0,
+		"interface right inverse":[
+			[
+				0,
+				0
+			],
+			[
+				0,
+				0
+			]
+		],
+		"projection identities":[
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			]
+		],
+		"transmitted source flux":0,
+		"two null contraction slots":[
+			[
+				[
+					0,
+					0,
+					0,
+					0
+				],
+				[
+					0,
+					0,
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			]
+		],
+		"finite polynomial ideal diagnostic":0,
+		"bulk-source continuity":[
+			0,
+			0
+		],
+		"bulk-source flux":[
+			0,
+			0
+		],
+		"history-source unit contact":0,
+		"Kubo retarded sign":0,
+		"two-interface elimination orders":[
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			],
+			[
+				[
+					0,
+					0
+				],
+				[
+					0,
+					0
+				]
+			]
+		],
+		"smeared-square contraction diagnostic":0,
+		"second derivative normalization diagnostic":0,
+		"point-split change of subtraction":0
+	},
+	"diagnostics":{
+		"square cross W real and imaginary":[
+			0.1153660158264403,
+			-0.2500000000000000
+		],
+		"square central commutator per i hbar2":-0.230732031653,
+		"stress double contraction L4 per hbar2":53.7128021343,
+		"Casimir value":-0.130899693899575
+	},
+	"allChecksPassed":true
+}

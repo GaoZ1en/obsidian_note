@@ -1,0 +1,123 @@
+{
+  "setup": "\nfrom sage.all import *\nP=PolynomialRing(QQ,names=['x0','y0','z0','B0','x1','y1','z1','B1','tau','l0','l1','u','v'])\nx0,y0,z0,B0,x1,y1,z1,B1,tau,l0,l1,u,v=P.gens()\nxs=[x0,x1]; ys=[y0,y1]; zs=[z0,z1]; Bs=[B0,B1]\nA=ExteriorAlgebra(P,names=['xp0','c0','bc0','Bp0','xp1','c1','bc1','Bp1'])\naa=A.gens(); xp=[aa[0],aa[4]]; cc=[aa[1],aa[5]]; bc=[aa[2],aa[6]]; bp=[aa[3],aa[7]]\ndef mon(ids):\n    r=A.one()\n    for j in ids:r*=aa[j]\n    return r\ndef de(F,x):\n    return sum((a.derivative(x)*mon(list(ix)) for ix,a in A(F).monomial_coefficients().items()),A.zero())\ndef do(F,j):\n    out=A.zero()\n    for ix,a in A(F).monomial_coefficients().items():\n        ids=list(ix)\n        if j in ids:\n            n=ids.index(j); out+=(-1)**n*a*mon(ids[:n]+ids[n+1:])\n    return out\ndef parity(F):\n    pp={len(list(ix))%2 for ix,a in A(F).monomial_coefficients().items() if a!=0}\n    assert len(pp)<=1\n    return next(iter(pp),0)\ndef delta(F,w=(1,1)):\n    return sum((w[j]*(de(do(F,4*j),xs[j])+de(do(F,4*j+1),ys[j])+de(do(F,4*j+2),zs[j])+de(do(F,4*j+3),Bs[j])) for j in range(2)),A.zero())\ndef R(F,w=(1,1)):\n    return -sum((w[j]*(de(de(F,Bs[j]),xs[j])+do(do(F,4*j+2),4*j+1)) for j in range(2)),A.zero())\nS=sum((xp[j]*cc[j]+zs[j]*Bs[j]+xs[j]*Bs[j]-bc[j]*cc[j] for j in range(2)),A.zero())\ndef bracket(F,G):\n    sign=(-1)**parity(F)\n    return sign*(delta(F*G)-delta(F)*G-sign*F*delta(G))\ndef Q(F):\n    return sum((cc[j]*de(F,xs[j])+(-xp[j]+bc[j])*de(F,ys[j])-cc[j]*de(F,zs[j])+Bs[j]*do(F,4*j)+Bs[j]*do(F,4*j+2)+(zs[j]+xs[j])*do(F,4*j+3) for j in range(2)),A.zero())\ndef exR(F,a,w=(1,1)):\n    out=A(F); term=A(F)\n    for n in range(1,12):\n        term=a*R(term,w)/n\n        out+=term\n        if term==0:return out\n    raise ValueError('exponential did not terminate')\ndef D(F,w=(1,1)):return Q(F)+tau*delta(F,w)\ndef ev(F):\n    zero={g:P.zero() for g in list(P.gens())[:8]}\n    return A(sum((a for ix,a in A(F).monomial_coefficients().items() if len(list(ix))==0),P.zero()).subs(zero))\ndef push(F,w=(1,1)):return ev(exR(F,tau,w))\ndef hh(F):\n    return sum((xs[j]*do(F,4*j+1)+bc[j]*de(F,Bs[j])-ys[j]*do(F,4*j)+bp[j]*de(F,zs[j]) for j in range(2)),A.zero())\ndef h(F):\n    out=A.zero()\n    for ix,a in A(F).monomial_coefficients().items():\n        ids=list(ix)\n        for ex,coef in a.dict().items():\n            deg=sum(ex[:8])+len(ids)\n            if deg:\n                term=P(coef)*prod(P.gen(j)**ex[j] for j in range(P.ngens()))*mon(ids)\n                out+=hh(term)/deg\n    return out\ndef hq(F,w=(1,1)):return exR(h(exR(F,tau,w)),-tau,w)\ndef prodW(F,G,w=(1,1)):return exR(exR(F,tau,w)*exR(G,tau,w),-tau,w)\ngens=[A(a) for a in P.gens()[:8]]+list(aa)\ntests=[A.one(),A(u),A(u*v)]+gens\ntests += [A(x0*B0),bc[0]*cc[0],xp[0]*cc[0],A(x0)*xp[0],A(y0)*bc[0],A(z0)*bp[0],A(x0*x1*B0*B1),bc[0]*cc[0]*bc[1]*cc[1],A(x0**2*B0**2),A(x0)*cc[1]*bc[0],A(u*x0**2)*xp[1],S]\nw=(l0,l1); w2=(2,3); w3=(3,5)\nq_from_action=all(Q(F)==bracket(S,F) for F in tests)\nmaster=(bracket(S,S)==0 and delta(S)==0)\nq_squared=all(Q(Q(F))==0 for F in tests)\nlap_square=all(delta(delta(F,w),w)==0 for F in tests)\ncompat=all(Q(delta(F,w))+delta(Q(F),w)==0 for F in tests)\nQR=all(Q(R(F,w))-R(Q(F),w)==delta(F,w) for F in tests)\nconjugation=all(D(F,w)==exR(Q(exR(F,tau,w)),-tau,w) for F in tests)\nd_squared=all(D(D(F,w),w)==0 for F in tests)\nstokes=all(push(D(F,w),w)==0 for F in tests)\ncontract0=all(Q(h(F))+h(Q(F))==F-ev(F) for F in tests)\ncontractq=all(D(hq(F,w),w)+hq(D(F,w),w)==F-push(F,w) for F in tests)\ndef transport(F,a,b):return exR(exR(F,tau,a),-tau,b)\nrg=all(D(transport(F,w,w2),w2)==transport(D(F,w),w,w2) for F in tests)\nrg_three=all(transport(transport(F,w,w2),w2,w3)==transport(F,w,w3) for F in tests)\nrg_push=all(push(transport(F,w,w2),w2)==push(F,w) for F in tests)\nren_inter=all(D(exR(F,-tau,w),w)==exR(Q(F),-tau,w) for F in tests)\nren_tad=(exR(A(x0*B0),-tau,w)==A(x0*B0+tau*l0) and exR(bc[0]*cc[0],-tau,w)==bc[0]*cc[0]+tau*l0)\ngf_tad_cancel=(R(A(x0*B0)-bc[0]*cc[0],w)==0)\ntrace_still_present=(delta(A(x0)*xp[0],w)==l0 and D(A(x0)*xp[0],w)==Q(A(x0)*xp[0])+tau*l0)\nordinary_not_rg=(transport(A(x0*B0),w,w2)!=transport(A(x0),w,w2)*transport(A(B0),w,w2))\nwp_pairs=[(A(x0),A(B0)),(bc[0],cc[0]),(A(x0)*xp[0],bc[1]),(A(u*x0),A(v*B0))]\nwick_deriv=all(D(prodW(F,G,w),w)==prodW(D(F,w),G,w)+(-1)**parity(F)*prodW(F,D(G,w),w) for F,G in wp_pairs)\nwick_transport=all(transport(prodW(F,G,w),w,w2)==prodW(transport(F,w,w2),transport(G,w,w2),w2) for F,G in wp_pairs)\nwick_push=all(push(prodW(F,G,w),w)==push(F,w)*push(G,w) for F,G in wp_pairs)\nwick_assoc=(prodW(prodW(A(x0),A(B0),w),bc[0]*cc[0],w)==prodW(A(x0),prodW(A(B0),bc[0]*cc[0],w),w))\nmoments=all(push(A(x0**a*B0**b))==(A((-tau)**a*factorial(a)) if a==b else A.zero()) for a in range(5) for b in range(5))\nghost_moment=(push(bc[0]*cc[0])==-tau and push(bc[1]*cc[1])==-tau)\n# Independent Fourier-pair and Berezin rules on the gauge-fixing Lagrangian.\ndef actual_gaussian(F):\n    out=P.zero()\n    for ids,pol in A(F).monomial_coefficients().items():\n        ids=list(ids)\n        if any(i in ids for i in [0,3,4,7]):continue\n        for ex,coef in pol.dict().items():\n            if any(ex[i] for i in [1,2,5,6]):continue\n            if ex[0]!=ex[3] or ex[4]!=ex[7]:continue\n            base=P(coef)*prod(P.gen(j)**ex[j] for j in range(8,P.ngens()))\n            base*=(-tau)**ex[0]*factorial(ex[0])*(-tau)**ex[4]*factorial(ex[4])\n            for j in range(2):\n                part=[i for i in ids if 4*j<=i<4*j+4]\n                if part==[4*j+1,4*j+2]:base*=tau\n                elif part:base=P.zero()\n            out+=base\n    return A(out)\nintegral_matches=all(actual_gaussian(F)==push(F) for F in tests)\n# Two blocks really integrate in either order.\ndef exRblock(F,a,j):\n    ww=[0,0];ww[j]=1;return exR(F,a,ww)\nfubini=all(ev(exRblock(exRblock(F,tau,0),tau,1))==ev(exRblock(exRblock(F,tau,1),tau,0))==push(F) for F in tests)\nphysical=(push(A(u*v))==A(u*v) and D(A(u*v))==0 and prodW(A(u),A(v))==A(u*v))\ndim_mismatch=(sum([1,1,1])-sum([1,1])==1)\n",
+  "checks": [
+    {
+      "label": "vacuum_evaluation_and_physical_scalar_are_nonzero",
+      "condition": "ev(A.one())==A.one() and ev(A(u*v))==A(u*v)"
+    },
+    {
+      "label": "quantum_gauge_fixed_Q_from_full_BV_action",
+      "condition": "q_from_action"
+    },
+    {
+      "label": "full_quartet_classical_and_quantum_master_equations",
+      "condition": "master"
+    },
+    {
+      "label": "full_quartet_Q_nilpotent",
+      "condition": "q_squared"
+    },
+    {
+      "label": "regulated_BV_Laplacian_nilpotent",
+      "condition": "lap_square"
+    },
+    {
+      "label": "Q_and_regulated_Laplacian_anticommute",
+      "condition": "compat"
+    },
+    {
+      "label": "actual_Gaussian_contraction_Q_commutator",
+      "condition": "QR"
+    },
+    {
+      "label": "quantum_differential_exact_Gaussian_conjugation",
+      "condition": "conjugation"
+    },
+    {
+      "label": "quantum_differential_nilpotent",
+      "condition": "d_squared"
+    },
+    {
+      "label": "normalized_full_antifield_BV_Stokes",
+      "condition": "stokes"
+    },
+    {
+      "label": "explicit_classical_quartet_contraction",
+      "condition": "contract0"
+    },
+    {
+      "label": "explicit_quantum_quartet_contraction",
+      "condition": "contractq"
+    },
+    {
+      "label": "cutoff_transport_intertwines_quantum_differential",
+      "condition": "rg"
+    },
+    {
+      "label": "three_cutoff_transports_compose_exactly",
+      "condition": "rg_three"
+    },
+    {
+      "label": "normalized_pushforward_transport_independence",
+      "condition": "rg_push"
+    },
+    {
+      "label": "renormalized_local_family_differential",
+      "condition": "ren_inter"
+    },
+    {
+      "label": "local_boson_and_ghost_counterterms_nonzero",
+      "condition": "ren_tad"
+    },
+    {
+      "label": "gauge_fixed_action_tadpoles_cancel",
+      "condition": "gf_tad_cancel"
+    },
+    {
+      "label": "isolated_mixed_trace_is_not_set_to_zero",
+      "condition": "trace_still_present"
+    },
+    {
+      "label": "ordinary_product_fails_cutoff_transport",
+      "condition": "ordinary_not_rg"
+    },
+    {
+      "label": "Wick_product_quantum_differential_derivation",
+      "condition": "wick_deriv"
+    },
+    {
+      "label": "Wick_product_cutoff_transport",
+      "condition": "wick_transport"
+    },
+    {
+      "label": "normalized_pushforward_Wick_product",
+      "condition": "wick_push"
+    },
+    {
+      "label": "Wick_product_associativity",
+      "condition": "wick_assoc"
+    },
+    {
+      "label": "bosonic_Fourier_moments_through_degree_eight",
+      "condition": "moments"
+    },
+    {
+      "label": "nonzero_Berezin_ghost_moments",
+      "condition": "ghost_moment"
+    },
+    {
+      "label": "independent_Fourier_Berezin_integral_matches_full_map",
+      "condition": "integral_matches"
+    },
+    {
+      "label": "two_proper_blocks_pushforward_in_either_order",
+      "condition": "fubini"
+    },
+    {
+      "label": "physical_insertions_survive_quartet_pushforward",
+      "condition": "physical"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 14000
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-21",
+  "scope": "BS documentation and saved execution consistency; no extra mathematical proof",
+  "markdown_files": 29,
+  "math_nodes": 785,
+  "local_links": 236,
+  "claims": 54,
+  "audit_cases": 63,
+  "audit_rounds": 30,
+  "saved_checks": {
+    "Mathematica": 13,
+    "Sage": 17,
+    "xAct": 3
+  },
+  "mathematica_source_sha256": "a3acf1e3d0c25cc27a8c50b1ddb796e2b4480771fc462fe0f339dfbbc2489669",
+  "requirements": [
+    [
+      "G1",
+      "partial"
+    ],
+    [
+      "G2",
+      "partial"
+    ],
+    [
+      "G3",
+      "partial"
+    ],
+    [
+      "G4",
+      "partial"
+    ],
+    [
+      "G5",
+      "partial"
+    ],
+    [
+      "G6",
+      "open"
+    ]
+  ],
+  "issues": [],
+  "external_preexisting_missing_references": [
+    {
+      "source": "README.md",
+      "link": "../audit_repair_2026-09-18/repair_proofs.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/audit_repair_2026-09-18/repair_proofs.md"
+    }
+  ],
+  "vault_relative_link_resolutions": [
+    {
+      "source": "README.md",
+      "link": "Articles/Quantization%20in%20AdS/gluing/bv_bfv/verification.md"
+    },
+    {
+      "source": "formalism.md",
+      "link": "Articles/Quantization%20in%20AdS/gluing/bv_bfv/verification.md"
+    }
+  ],
+  "scoped_checks_passed": true,
+  "all_local_references_resolve": false
+}

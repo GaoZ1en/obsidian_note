@@ -1,0 +1,24 @@
+{
+  "profile": "core",
+  "extraPackages": [
+    "xAct`xTras`"
+  ],
+  "pipeline": "full",
+  "timeoutMs": 60000,
+  "maxOutputChars": 4000,
+  "setup": "DefManifold[BSM,2,{a,b,c,d,e,f}]; DefMetric[-1,gBS[-a,-b],CDBS]; DefTensor[aBS[-a],BSM]; DefTensor[hBS[],BSM]; DefTensor[phiBS[],BSM]; DefTensor[eBS[a,b],BSM,Antisymmetric[{a,b}]]; epRule={HoldPattern[CDBS[i_][eBS[j_,k_]]]:>0};",
+  "checks": [
+    {
+      "label": "weighted_curvature_Stokes_identity",
+      "residual": "(hBS[] eBS[a,b] CDBS[-a][aBS[-b]]-CDBS[-a][hBS[] eBS[a,b] aBS[-b]]+eBS[a,b] CDBS[-a][hBS[]] aBS[-b])//.epRule"
+    },
+    {
+      "label": "torsion_free_scalar_derivatives_commute",
+      "residual": "SortCovDs[CDBS[-a][CDBS[-b][phiBS[]]]-CDBS[-b][CDBS[-a][phiBS[]]],CDBS]"
+    },
+    {
+      "label": "antisymmetric_contraction_of_symmetric_scalar_Hessian",
+      "residual": "eBS[a,b] (CDBS[-a][CDBS[-b][phiBS[]]]+CDBS[-b][CDBS[-a][phiBS[]]])/2"
+    }
+  ]
+}

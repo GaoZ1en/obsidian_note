@@ -1,0 +1,83 @@
+{
+  "setup": "\nfrom sage.all import *\neven_names=[f'{f}{j}' for f in ['x','p','u','cp'] for j in range(3)]+['alpha','sig','rho','xx','xi','xi_dot','z','z_dot','etap','x_ini','x_fin','pbar','p_dot','t']\nP=PolynomialRing(QQ,names=even_names); v=dict(zip(even_names,P.gens()))\nodd_names=[f'{f}{j}' for f in ['xp','up','pp','c'] for j in range(3)]+['eta','eta_dot','xistar','zstar','pstar','b_res','ci','cf','cm','b1','b2','d']\nA=ExteriorAlgebra(P,names=odd_names); aa=A.gens(); o=dict(zip(odd_names,aa)); oi={n:i for i,n in enumerate(odd_names)}\ndef mon(ids):\n    ans=A.one()\n    for j in ids: ans*=aa[j]\n    return ans\ndef de(F,x):\n    return sum((coef.derivative(x)*mon(list(ix)) for ix,coef in A(F).monomial_coefficients().items()),A.zero())\ndef do(F,j):\n    ans=A.zero()\n    for ix,coef in A(F).monomial_coefficients().items():\n        ids=list(ix)\n        if j in ids:\n            n=ids.index(j);ans+=(-1)**n*coef*mon(ids[:n]+ids[n+1:])\n    return ans\ndef deriv(F,em,om):\n    return sum((A(val)*de(F,v[n]) for n,val in em.items()),A.zero())+sum((A(val)*do(F,oi[n]) for n,val in om.items()),A.zero())\ndef evsubst(F,mapping):\n    return sum((coef.subs(mapping)*mon(list(ix)) for ix,coef in A(F).monomial_coefficients().items()),A.zero())\ndef oddsubst(F,mapping):\n    ans=A.zero()\n    for ix,coef in A(F).monomial_coefficients().items():\n        term=A(coef)\n        for j in list(ix):term*=mapping.get(odd_names[j],aa[j])\n        ans+=term\n    return ans\ndef divexact(F,scalar):\n    return sum((P(coef/scalar)*mon(list(ix)) for ix,coef in A(F).monomial_coefficients().items()),A.zero())\ndef expnil(F):\n    ans=A.one();term=A.one()\n    for n in range(1,20):\n        term=term*F/n;ans+=term\n        if term==0:return ans\n    raise ValueError('non-nilpotent exponential')\ndef pg(f,j):return v[f'{f}{j}'] if j<3 else P.zero()\ndef og(f,j):return o[f'{f}{j}'] if j<3 else A.zero()\nem={};om={}\nfor j in range(3):\n    em[f'x{j}']=og('c',j);em[f'u{j}']=og('c',j+1)\n    em[f'cp{j}']=-og('xp',j)+og('up',j+1)\n    om[f'xp{j}']=-pg('p',j+1);om[f'up{j}']=-pg('p',j)\n    om[f'pp{j}']=pg('x',j+1)-pg('u',j)\ndef Q(F):return deriv(F,em,om)\nS=v['p0']*(v['x1']-v['u0'])+o['xp0']*o['c0']+o['up0']*o['c1']\nsource_gens=[A(v[n]) for n in even_names[:12]]+[o[n] for n in odd_names[:12]]\nq2=all(Q(Q(f))==0 for f in source_gens+[S,v['x0']*o['up0'],v['cp0']*o['pp0']])\nward=(Q(S)==-v['p1']*o['c0']-v['p0']*o['c1'])\ndef Qcap(F):return deriv(F,{'x0':o['c0']},{'up0':-v['p0']})\nH=-v['p0']*o['c0']\nFcap=-(v['p0']*v['x0']+o['up0']*o['c0'])/2\ncap_nil=(Qcap(H)==0 and all(Qcap(Qcap(f))==0 for f in [v['x0'],v['p0'],o['c0'],o['up0'],Fcap]))\ncap_full=(Qcap(Fcap)==0)\ncap_physical=(Qcap(-v['p0']*v['x0']/2)==-v['p0']*o['c0']/2 and Qcap(-v['p0']*v['x0']/2)!=0)\nrem={'xi':o['eta'],'xi_dot':o['eta_dot'],'sig':o['cf']-o['ci'],'x_ini':o['ci'],'x_fin':o['cf'],'etap':-o['xistar']}\nrom={'zstar':-v['p_dot'],'pstar':v['z_dot']+v['x_fin']-v['x_ini']-v['sig'],'b_res':-v['pbar']}\ndef QR(F):return deriv(F,rem,rom)\nrel_gens=[v[n] for n in rem]+[o[n] for n in rom]+[v['z'],o['eta'],o['xistar']]\nrel_q2=all(QR(QR(f))==0 for f in rel_gens)\ntt=v['t'];clin=(1-tt)*o['ci']+tt*o['cf']\nxlin=(1-tt)*v['x_ini']+tt*v['x_fin']\nxold=xlin+v['xi']+v['z'];uold=v['sig']+v['xi_dot']\nrel_chain=(QR(xold)==clin+o['eta'] and QR(uold)==o['cf']-o['ci']+o['eta_dot'] and QR(o['zstar']-o['xistar'])==-v['p_dot'])\ndef hh(F):return v['xi']*do(F,oi['eta'])-v['etap']*do(F,oi['xistar'])\ndoublet=[v['xi'],v['etap'],o['eta'],o['xistar']]\ndoublet_h=all(QR(hh(f))+hh(QR(f))==f for f in doublet)\ndoublet_h=doublet_h and all(QR(hh(f*g))+hh(QR(f*g))==2*f*g for f in doublet for g in doublet)\ncap_arguments_retained=(QR(v['x_fin']-v['x_ini'])==o['cf']-o['ci'] and QR(v['sig'])==o['cf']-o['ci'])\nhorizontal_needed=(clin!=0 and QR(v['z'])==0)\nb_zero_not_invariant=(QR(o['b_res'])==-v['pbar'] and QR(o['b_res'])!=0)\nalpha=v['alpha'];sig=v['sig'];xx=v['xx'];b=o['b_res'];dc=o['cf']-o['ci']\nphase=expnil(alpha*b*dc)\ndef DD(F):return de(do(F,oi['b_res']),sig)+alpha*dc*de(F,xx)\nstates=[phase*(xx-sig)**n for n in range(7)]\nmqme=all(DD(Z)==0 for Z in states)\nquant_nil=all(DD(DD(f))==0 for f in states+[A(xx)*b,A(sig)*b*o['ci'],A(xx**2*sig)*b])\nphase_needed=(DD(A(xx-sig))!=0)\nG=expnil(alpha*o['b2']*(o['cf']-o['cm']))*expnil(alpha*o['b1']*(o['cm']-o['ci']))\nmiddle=divexact(-do(G,oi['cm']),alpha)\nmiddle_new=oddsubst(middle,{'b1':b+o['d']/2,'b2':b-o['d']/2})\nghost_glue=(middle_new==o['d']*phase)\nres_push=(do(middle_new,oi['d'])==phase)\nnormalization=(evsubst(oddsubst(do(middle_new,oi['d']),{'ci':A.zero(),'cf':A.zero(),'b_res':A.zero()}),{})==A.one())\nbare_middle_zero=(do(A.one(),oi['cm'])==0)\nL=matrix(QQ,[[1,1],[QQ(1)/2,-QQ(1)/2]])\nM=matrix(QQ,[[QQ(1)/2,QQ(1)/2],[1,-1]])\nres_canonical=(L*M.transpose()==identity_matrix(QQ,2))\n",
+  "checks": [
+    {
+      "label": "source_BV_Q_squared",
+      "condition": "q2"
+    },
+    {
+      "label": "source_BV_boundary_master_term",
+      "condition": "ward"
+    },
+    {
+      "label": "cap_BFV_nilpotency",
+      "condition": "cap_nil"
+    },
+    {
+      "label": "full_boson_ghost_cap_generator_Q_closed",
+      "condition": "cap_full"
+    },
+    {
+      "label": "bosonic_cap_generator_alone_has_defect",
+      "condition": "cap_physical"
+    },
+    {
+      "label": "relative_Q_squared_includes_cap_base",
+      "condition": "rel_q2"
+    },
+    {
+      "label": "relative_coordinate_chain_map",
+      "condition": "rel_chain"
+    },
+    {
+      "label": "relative_doublet_contraction",
+      "condition": "doublet_h"
+    },
+    {
+      "label": "arbitrary_cap_arguments_and_source_mean_retained",
+      "condition": "cap_arguments_retained"
+    },
+    {
+      "label": "horizontal_connection_cannot_be_discarded",
+      "condition": "horizontal_needed"
+    },
+    {
+      "label": "zero_ghost_momentum_slice_not_Q_invariant",
+      "condition": "b_zero_not_invariant"
+    },
+    {
+      "label": "source_kernel_mQME_polynomial_tests_0_to_6",
+      "condition": "mqme"
+    },
+    {
+      "label": "kernel_quantum_operator_squared",
+      "condition": "quant_nil"
+    },
+    {
+      "label": "ghost_phase_is_required",
+      "condition": "phase_needed"
+    },
+    {
+      "label": "middle_ghost_integral_has_residual_delta",
+      "condition": "ghost_glue"
+    },
+    {
+      "label": "residual_BV_pushforward_recovers_state",
+      "condition": "res_push"
+    },
+    {
+      "label": "nonvacuous_pushforward_of_unit",
+      "condition": "normalization"
+    },
+    {
+      "label": "bare_ghost_integral_would_vanish",
+      "condition": "bare_middle_zero"
+    },
+    {
+      "label": "residual_coordinate_change_is_canonical",
+      "condition": "res_canonical"
+    }
+  ],
+  "timeoutMs": 60000,
+  "maxOutputChars": 6000
+}

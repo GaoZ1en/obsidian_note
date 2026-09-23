@@ -1,0 +1,11 @@
+{
+  "markdown_files": 13,
+  "math_nodes": 554,
+  "local_links": 67,
+  "claims": 22,
+  "new_sage_checks": 27,
+  "new_mathematica_checks": 34,
+  "audit_cases": 28,
+  "goal_requirements": 6,
+  "issues": []
+}

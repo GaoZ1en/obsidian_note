@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-06",
+  "mathematica": {
+    "Scope": "Exact finite algebraic diagnostics; not general PBW, microlocal, or analytic proofs",
+    "Checks": {
+      "LeftLieBracket": true,
+      "RightLieBracket": true,
+      "LeftRightCommute": true,
+      "TangentToDeterminant": true,
+      "HolonomyFluxCommutator": true,
+      "FluxCommutatorSign": true,
+      "FundamentalCasimir": true,
+      "LeftRightCasimir": true,
+      "CutAnnihilatesProductHolonomy": true,
+      "AdaptedCutCoordinate": true,
+      "FirstFluxIntertwining": true,
+      "LastRightFluxIntertwining": true,
+      "FirstCasimirIntertwining": true,
+      "SecondCasimirIntertwining": true,
+      "LengthWeightedHamiltonian": true,
+      "CutMomentCommutesFirstCasimir": true,
+      "CutMomentCommutesSecondCasimir": true,
+      "CommonHistoryCancels": true,
+      "InvariantVerticalMomentSign": true,
+      "AdaptedCotangentPotential": true,
+      "VerticalMomentCutInvariant": true,
+      "WilsonThreeCellAssociativity": true,
+      "ElectricInsertionClassicalSymbol": true,
+      "NormalizedHaar": true,
+      "HaarZeroMean": true,
+      "HaarNonmultiplicativityWitness": true,
+      "CommonTimeDerivative": true,
+      "MovingDeltaConormal": true,
+      "CommonTimeCovectorSum": true,
+      "FiniteTimeNonrealWitness": true
+    },
+    "Residuals": {
+      "LeftLieBracket": "{{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}}",
+      "RightLieBracket": "{{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}}",
+      "LeftRightCommute": "{{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}}",
+      "TangentToDeterminant": "{{0, 0}, {0, 0}, {0, 0}}",
+      "HolonomyFluxCommutator": "{0, 0, 0}",
+      "FluxCommutatorSign": "{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}",
+      "FundamentalCasimir": "{{0, 0}, {0, 0}}",
+      "LeftRightCasimir": "0",
+      "CutAnnihilatesProductHolonomy": "{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}",
+      "AdaptedCutCoordinate": "{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}",
+      "FirstFluxIntertwining": "{0, 0, 0}",
+      "LastRightFluxIntertwining": "{0, 0, 0}",
+      "FirstCasimirIntertwining": "0",
+      "SecondCasimirIntertwining": "0",
+      "LengthWeightedHamiltonian": "0",
+      "CutMomentCommutesFirstCasimir": "{0, 0, 0}",
+      "CutMomentCommutesSecondCasimir": "{0, 0, 0}",
+      "CommonHistoryCancels": "0",
+      "InvariantVerticalMomentSign": "{{0, 0}, {0, 0}}",
+      "AdaptedCotangentPotential": "0",
+      "VerticalMomentCutInvariant": "{{0, 0}, {0, 0}}",
+      "WilsonThreeCellAssociativity": "{{0, 0}, {0, 0}}",
+      "ElectricInsertionClassicalSymbol": "{{0, 0}, {0, 0}}",
+      "NormalizedHaar": "0",
+      "HaarZeroMean": "0",
+      "HaarNonmultiplicativityWitness": "0",
+      "CommonTimeDerivative": "0",
+      "MovingDeltaConormal": "{0, 0}",
+      "CommonTimeCovectorSum": "0",
+      "FiniteTimeNonrealWitness": "0"
+    },
+    "CheckCount": 30,
+    "AllChecksPassed": true
+  },
+  "sage": {
+    "mode": "verify",
+    "ok": true,
+    "allPassed": true,
+    "setupError": null,
+    "checks": [
+      {
+        "label": "SU2_SchurSinglets_n_m_0_to_6",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "SU2_Casimir_n_0_to_8",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "SU2_CutMomentAnnihilatesContraction_n_0_to_8",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "SU2_UniqueSingletKernel_n_0_to_8",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "PeterWeyl_ContractionNormalization_n_0_to_8",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "LengthWeightedEnergies_n_0_to_8",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "ClassicalVerticalAugmentationProduct",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "ClassicalVerticalKernelWitness",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      },
+      {
+        "label": "ClassicalSectionWitness",
+        "status": "passed",
+        "value": "True",
+        "valueType": "builtins.bool",
+        "truncated": false,
+        "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+        "error": null
+      }
+    ],
+    "stdout": "",
+    "stdoutTruncated": false,
+    "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr": "",
+    "stderrTruncated": false,
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "warnings": [],
+    "warningsTruncated": false,
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 5425,
+    "transportStderr": [],
+    "codeSha256": "c321bf83b18c8ed1fb35623f9b3721d051dac210261bb7a035536c6ab53780d7"
+  },
+  "setupCorrections": [
+    "WeylCharacterRing scalar W(n) means n copies of the trivial representation; corrected to highest-weight tuple W((n,)).",
+    "ClearAll requires a literal pattern; corrected before the clean final run."
+  ],
+  "notProvedByFiniteChecks": [
+    "General compact-group PBW and exactness",
+    "Wavefront or Epstein-Glaser extension theorems",
+    "Self-adjointness and all-time dynamics"
+  ],
+  "validation": {
+    "markdown_json_parse": "7 affected Markdown files passed",
+    "mathml": "3 mathematical notes passed without warnings",
+    "local_links": "3 mathematical notes have no missing explicit local file links",
+    "new_file_whitespace": "all 4 new files passed",
+    "saved_scripts": "Mathematica CLI and Sage tool both reproduced all checks from the saved files",
+    "source_pages_visually_confirmed": {
+      "Etingof lnlg.pdf": [
+        60,
+        160,
+        167
+      ]
+    },
+    "proof_boundary": "Finite tests do not establish general-group exactness, microlocal extension, or all-time operator-domain results."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "setup": "\nfrom functools import lru_cache\nfrom itertools import product\nR = PolynomialRing(QQ, 's')\ns = R.gen()\nz = R.zero()\nbase = [(kind,powr,c) for kind,powr in [(0,0),(0,1),(0,2),(0,3),(1,0),(1,1),(1,2)] for c in range(3)]\nN = len(base)\ndeg = [int(a[0])-1 for a in base]\nix = {b:i for i,b in enumerate(base)}\ndef ze(): return vector(R,N)\ndef zp(): return vector(R,2*N)\ndef unit(i):\n    a=ze(); a[i]=1; return a\nunits=[unit(i) for i in range(N)]\ndef sig(n): return QQ(-1) if int(n)%2 else QQ(1)\ndef levi(a,b,c):\n    if len({a,b,c})<3: return 0\n    return 1 if (a,b,c) in [(0,1,2),(1,2,0),(2,0,1)] else -1\ndef dd(a):\n    out=ze()\n    for i,coef in enumerate(a):\n        kind,k,c=base[i]\n        if coef and kind==0 and k:\n            out[ix[(1,k-1,c)]] += k*coef\n    return out\ndef hh(a):\n    out=ze()\n    for i,coef in enumerate(a):\n        kind,k,c=base[i]\n        if coef and kind==1:\n            out[ix[(0,k+1,c)]] += coef/QQ(k+1)\n    return out\ndef pp(a):\n    return a-dd(hh(a))-hh(dd(a))\ndef bracket(a,b):\n    out=ze()\n    for i,ai in enumerate(a):\n        if not ai: continue\n        ki,ni,ci=base[i]\n        for j,bj in enumerate(b):\n            if not bj: continue\n            kj,nj,cj=base[j]\n            kk,nn=ki+kj,ni+nj\n            if kk>1 or nn>3-kk: continue\n            for c in range(3):\n                ec=levi(ci,cj,c)\n                if ec: out[ix[(kk,nn,c)]] += ai*bj*ec\n    return out\ndef q2(a,b,ea):\n    return sig(ea)*bracket(a,b)\ndef ab(w): return (vector(R,w[:N]),vector(R,w[N:]))\ndef path(a,b): return vector(R,list(a)+list(b))\ndef dq(w):\n    a,b=ab(w)\n    return path(dd(a),vector(R,[t.derivative(s) for t in a])-dd(b))\ndef qb(w,u,ew):\n    a,b=ab(w); c,e=ab(u)\n    # Unshifted degree of w is ew+1; ds is written on the left.\n    return sig(ew)*path(bracket(a,c),bracket(b,c)+sig(ew+1)*bracket(a,e))\ndef hkernel(w):\n    a,b=ab(w)\n    intb=[t.integral(s) for t in b]\n    return path(vector(R,[t-t(1) for t in intb]),ze())\ndef lift(a): return path(pp(a)+s*(a-pp(a)),hh(a))\ndef endpoint(w,t):\n    a,b=ab(w); return vector(R,[u(t) for u in a])\ndef apply2(fun,a,b):\n    out=zp()\n    for i,ai in enumerate(a):\n        if ai:\n            for j,bj in enumerate(b):\n                if bj: out += ai*bj*fun(i,j)\n    return out\ndef apply3(fun,a,b,c):\n    out=zp()\n    for i,ai in enumerate(a):\n        if ai:\n            for j,bj in enumerate(b):\n                if bj:\n                    for k,ck in enumerate(c):\n                        if ck: out += ai*bj*ck*fun(i,j,k)\n    return out\n@lru_cache(None)\ndef residual2(i,j):\n    return qb(lift(units[i]),lift(units[j]),deg[i])-lift(q2(units[i],units[j],deg[i]))\n@lru_cache(None)\ndef f2(i,j): return -hkernel(residual2(i,j))\ndef partitions3(i,j,k):\n    return [(i,j,k,QQ(1)),(i,k,j,sig(deg[j]*deg[k])),(j,k,i,sig(deg[i]*(deg[j]+deg[k])))]\n@lru_cache(None)\ndef residual3(i,j,k):\n    out=zp()\n    for a,b,c,sg in partitions3(i,j,k):\n        out += sg*(qb(f2(a,b),lift(units[c]),deg[a]+deg[b])\n                  -apply2(f2,q2(units[a],units[b],deg[a]),units[c]))\n    return out\n@lru_cache(None)\ndef f3(i,j,k): return -hkernel(residual3(i,j,k))\ndef defect2(i,j):\n    return (dq(f2(i,j))-apply2(f2,dd(units[i]),units[j])\n            -sig(deg[i])*apply2(f2,units[i],dd(units[j]))+residual2(i,j))\ndef defect3(i,j,k):\n    return (dq(f3(i,j,k))-apply3(f3,dd(units[i]),units[j],units[k])\n           -sig(deg[i])*apply3(f3,units[i],dd(units[j]),units[k])\n           -sig(deg[i]+deg[j])*apply3(f3,units[i],units[j],dd(units[k]))+residual3(i,j,k))\ndef closed3(i,j,k):\n    return (dq(residual3(i,j,k))+apply3(residual3,dd(units[i]),units[j],units[k])\n           +sig(deg[i])*apply3(residual3,units[i],dd(units[j]),units[k])\n           +sig(deg[i]+deg[j])*apply3(residual3,units[i],units[j],dd(units[k])))\npair_ids=list(product(range(N),repeat=2))\ntriple_ids=list(product(range(N),repeat=3))\n# A non-strict homotopy inverse, with an actual compatible inclusion.\ndG=matrix(QQ,3); dG[2,1]=1\ndP=matrix(QQ,5); dP[2,1]=1; dP[4,3]=1\ninc=matrix(QQ,5,3); inc[0,0]=inc[1,1]=inc[2,2]=1\nHG=matrix(QQ,3); HG[1,2]=1\nHP=matrix(QQ,5); HP[1,2]=1; HP[3,4]=1; HP[1,4]=1\np=matrix(QQ,3,5); p[0,0]=1; p[1,3]=-1; p[2,4]=-1\nIG=identity_matrix(QQ,3); IP=identity_matrix(QQ,5)\nDF=block_matrix([[dG,zero_matrix(QQ,3,5)],[inc,-dP]])\nKF=block_matrix([[HG,p],[zero_matrix(QQ,5,3),-HP]])\nKFN=KF*DF*KF\n# Polynomial interval kernel model: g, v0, v1, b0, b1, b2.\nsizes=[3,5,5,5,5,5]\noff=[0]\nfor n in sizes: off.append(off[-1]+n)\nnt=off[-1]\ndef blocks_to_matrix(rows):\n    return block_matrix(QQ,rows)\nZ35=zero_matrix(QQ,3,5); Z53=zero_matrix(QQ,5,3); Z55=zero_matrix(QQ,5,5)\ndk=blocks_to_matrix([\n [dG,Z35,Z35,Z35,Z35,Z35],\n [Z53,dP,Z55,Z55,Z55,Z55],\n [Z53,Z55,dP,Z55,Z55,Z55],\n [-inc,IP,Z55,-dP,Z55,Z55],\n [Z53,-2*IP,2*IP,Z55,-dP,Z55],\n [Z53,Z55,-3*IP,Z55,Z55,-dP]\n])\npiw=blocks_to_matrix([\n [IG,Z35,Z35,Z35,Z35,Z35],\n [Z53,Z55,Z55,-IP,-IP/2,-IP/3]\n])\njw=blocks_to_matrix([\n [IG,Z35],[Z53,Z55],[Z53,Z55],[Z53,-IP],[Z53,Z55],[Z53,Z55]\n])\nkw=zero_matrix(QQ,nt)\nkw[off[1]:off[2],off[4]:off[5]]=-IP/2\nkw[off[1]:off[2],off[5]:off[6]]=-IP/3\nkw[off[2]:off[3],off[5]:off[6]]=-IP/3\nhk=kw+jw*KFN*piw\n# Noncommuting chain smoothers; no projection hypothesis.\nhA=zero_matrix(QQ,5); hA[1,2]=QQ(1)/2; hA[3,4]=1\nhB=zero_matrix(QQ,5); hB[1,4]=1; hB[3,2]=1\nFA=IP-dP*hA-hA*dP; FB=IP-dP*hB-hB*dP\nhAB=hB+hA*FB\nhBA=hA+hB*FA\nF=inc*p\n# Relative exterior trace is the common harmonic coordinate.\nrG=matrix(QQ,1,3,[1,0,0]); rP=matrix(QQ,1,5,[1,0,0,0,0])\n",
+  "checks": [
+    {
+      "label": "dga_d_squared",
+      "condition": "all(dd(dd(a))==ze() for a in units)"
+    },
+    {
+      "label": "linear_path_chain",
+      "condition": "all(dq(lift(a))==lift(dd(a)) for a in units)"
+    },
+    {
+      "label": "linear_path_endpoint",
+      "condition": "all(endpoint(lift(a),1)==a for a in units)"
+    },
+    {
+      "label": "path_bracket_defect_nonzero",
+      "condition": "any(residual2(i,j)!=zp() for i,j in pair_ids)"
+    },
+    {
+      "label": "arity_two_correction_nonzero",
+      "condition": "any(f2(i,j)!=zp() for i,j in pair_ids)"
+    },
+    {
+      "label": "arity_two_identity_all_441",
+      "condition": "all(defect2(i,j)==zp() for i,j in pair_ids)"
+    },
+    {
+      "label": "arity_two_endpoint_zero",
+      "condition": "all(endpoint(f2(i,j),1)==ze() for i,j in pair_ids)"
+    },
+    {
+      "label": "arity_two_symmetry",
+      "condition": "all(f2(i,j)==sig(deg[i]*deg[j])*f2(j,i) for i,j in pair_ids)"
+    },
+    {
+      "label": "arity_three_residual_closed_all_9261",
+      "condition": "all(closed3(i,j,k)==zp() for i,j,k in triple_ids)"
+    },
+    {
+      "label": "arity_three_identity_all_9261",
+      "condition": "all(defect3(i,j,k)==zp() for i,j,k in triple_ids)"
+    },
+    {
+      "label": "arity_three_endpoint_zero",
+      "condition": "all(endpoint(f3(i,j,k),1)==ze() for i,j,k in triple_ids)"
+    },
+    {
+      "label": "linear_homotopy_P",
+      "condition": "dP*HP+HP*dP==IP-inc*p"
+    },
+    {
+      "label": "linear_homotopy_G",
+      "condition": "dG*HG+HG*dG==IG-p*inc"
+    },
+    {
+      "label": "compatibility_Hi_iH",
+      "condition": "HP*inc==inc*HG"
+    },
+    {
+      "label": "not_strict_retraction",
+      "condition": "p*inc!=IG"
+    },
+    {
+      "label": "relative_boundary",
+      "condition": "rG*p==rP and rP*inc==rG and rP*HP==0 and rG*HG==0"
+    },
+    {
+      "label": "mapping_fiber_d_squared",
+      "condition": "DF*DF==0"
+    },
+    {
+      "label": "mapping_fiber_contraction",
+      "condition": "DF*KF+KF*DF==identity_matrix(QQ,8)"
+    },
+    {
+      "label": "mapping_fiber_normalized",
+      "condition": "DF*KFN+KFN*DF==identity_matrix(QQ,8) and KFN*KFN==0"
+    },
+    {
+      "label": "interval_kernel_d_squared",
+      "condition": "dk*dk==0"
+    },
+    {
+      "label": "Whitney_projection_chain",
+      "condition": "piw*dk==DF*piw"
+    },
+    {
+      "label": "Whitney_inclusion_chain",
+      "condition": "dk*jw==jw*DF"
+    },
+    {
+      "label": "Whitney_retraction",
+      "condition": "piw*jw==identity_matrix(QQ,8)"
+    },
+    {
+      "label": "Whitney_homotopy",
+      "condition": "dk*kw+kw*dk==identity_matrix(QQ,nt)-jw*piw"
+    },
+    {
+      "label": "interval_kernel_contraction",
+      "condition": "dk*hk+hk*dk==identity_matrix(QQ,nt)"
+    },
+    {
+      "label": "interval_kernel_side_condition",
+      "condition": "hk*hk==0"
+    },
+    {
+      "label": "linear_path_homotopy_identity",
+      "condition": "dP*HP+HP*dP==IP-F"
+    },
+    {
+      "label": "multicut_telescoping",
+      "condition": "dP*hAB+hAB*dP==IP-FA*FB"
+    },
+    {
+      "label": "smoothing_order_differs",
+      "condition": "FA*FB!=FB*FA"
+    },
+    {
+      "label": "smoothing_choice_homotopy",
+      "condition": "dP*(hBA-hAB)+(hBA-hAB)*dP==FA*FB-FB*FA"
+    },
+    {
+      "label": "arity_three_residual_nonzero",
+      "condition": "any(residual3(i,j,k)!=zp() for i,j,k in triple_ids)"
+    },
+    {
+      "label": "arity_three_correction_nonzero",
+      "condition": "any(f3(i,j,k)!=zp() for i,j,k in triple_ids)"
+    }
+  ],
+  "timeoutMs": 240000,
+  "maxOutputChars": 3000
+}

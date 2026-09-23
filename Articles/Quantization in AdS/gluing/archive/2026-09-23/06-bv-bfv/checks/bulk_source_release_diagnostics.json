@@ -1,0 +1,153 @@
+{
+  "initial": {
+    "status": "fulfilled",
+    "value": {
+      "content": [],
+      "structuredContent": {
+        "ok": true,
+        "allZero": false,
+        "profile": "core",
+        "pipeline": "full",
+        "pipelineSteps": [
+          "ToCanonical",
+          "ContractMetric",
+          "ToCanonical",
+          "FullSimplification[]"
+        ],
+        "assumptions": "",
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "setupMessages": [],
+        "checks": [
+          {
+            "label": "weighted_curvature_Stokes_identity",
+            "status": "zero",
+            "canonicalResidual": "0",
+            "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "canonicalResidualTruncated": false,
+            "finalResidual": "0",
+            "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "finalResidualTruncated": false,
+            "unknownHeads": [],
+            "messages": []
+          },
+          {
+            "label": "exact_connection_is_flat",
+            "status": "nonzero_normal_form",
+            "canonicalResidual": "-(eBS[-a, -b]*CDBS[b][CDBS[a][phiBS[]]])",
+            "canonicalResidualSha256": "15cf9e86687e3f3eaa03b4096333246a76e9c9f1d59c554b7d29e499b8cb97f3",
+            "canonicalResidualTruncated": false,
+            "finalResidual": "-(eBS[-f$20904, -f$20905]*CDBS[f$20905][CDBS[f$20904][phiBS[]]])",
+            "finalResidualSha256": "871e1305bf9abe73e700526431f60050a98362ef7369c09bae60ef6eccb79025",
+            "finalResidualTruncated": false,
+            "unknownHeads": [],
+            "messages": []
+          }
+        ],
+        "elapsedMs": 3571,
+        "transportStderr": []
+      }
+    }
+  },
+  "second": {
+    "status": "fulfilled",
+    "value": {
+      "content": [],
+      "structuredContent": {
+        "ok": true,
+        "allZero": false,
+        "profile": "core",
+        "pipeline": "full",
+        "pipelineSteps": [
+          "ToCanonical",
+          "ContractMetric",
+          "ToCanonical",
+          "FullSimplification[]"
+        ],
+        "assumptions": "",
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "setupMessages": [],
+        "checks": [
+          {
+            "label": "weighted_curvature_Stokes_identity",
+            "status": "zero",
+            "canonicalResidual": "0",
+            "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "canonicalResidualTruncated": false,
+            "finalResidual": "0",
+            "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+            "finalResidualTruncated": false,
+            "unknownHeads": [],
+            "messages": []
+          },
+          {
+            "label": "exact_connection_is_flat",
+            "status": "nonzero_normal_form",
+            "canonicalResidual": "-(eBS[-a, -b]*CDBS[b][CDBS[a][phiBS[]]])",
+            "canonicalResidualSha256": "15cf9e86687e3f3eaa03b4096333246a76e9c9f1d59c554b7d29e499b8cb97f3",
+            "canonicalResidualTruncated": false,
+            "finalResidual": "-(eBS[-f$21653, -f$21654]*CDBS[f$21654][CDBS[f$21653][phiBS[]]])",
+            "finalResidualSha256": "012205659ee080f1cc319ac758def97e17753446d1e0fc456aa15a11edf31dc0",
+            "finalResidualTruncated": false,
+            "unknownHeads": [],
+            "messages": []
+          }
+        ],
+        "elapsedMs": 3470,
+        "transportStderr": []
+      }
+    }
+  },
+  "help": {
+    "content": [],
+    "structuredContent": {
+      "ok": true,
+      "profile": "core",
+      "result": "{\"SortCovDs[expr, covd] exchange repeatedly two instances of the covariant derivative covd, introducing Riemann tensors if needed, until the indices of the derivatives are sorted in canonical order. \", \"\\!\\(\\*TagBox[\\(SymmetrizeCovDs[ \\*StyleBox[\\\"expr\\\", \\\"TI\\\"]] symmetrizes all symmetrizable covariant derivatives in  \\*StyleBox[\\\"expr. \\\", \\\"TI\\\"]   SymmetrizeCovDs[ \\*StyleBox[\\\"expr\\\", \\\"TI\\\"],  \\*StyleBox[\\\"cd\\\", \\\"TI\\\"]] only symmetrizes the covariant derivative  \\*StyleBox[\\\"cd.\\\", \\\"TI\\\"]\\), DisplayForm]\\)\", \"CommuteCovDs[expr, covd, {a, b}] converts subexpressions covd[b]@covd[a]@expr1 of expr into covd[a]@covd[b]@expr1 plus Riemann terms linear in expr1.\"}",
+      "resultSha256": "68372fbe295757585308dcd9a26b6e1bb130e0f1e27de49b426e4ef7f173466d",
+      "truncated": false,
+      "messages": [],
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "elapsedMs": 2904,
+      "transportStderr": []
+    }
+  },
+  "diagnostic": {
+    "content": [],
+    "structuredContent": {
+      "ok": true,
+      "profile": "core",
+      "result": "{eBS[-a, -b]*CDBS[b][CDBS[a][phiBS[]]], eBS[-a, -b]*CDBS[b][CDBS[a][phiBS[]]], StrongGenSet[{1, 2}, GenSet[-Cycles[{1, 2}]]], 0}",
+      "resultSha256": "9d05ae1017a204d135da886efd98ed4b14b9e085b4b541367c4d43be88344678",
+      "truncated": false,
+      "messages": [],
+      "loadedPackages": [
+        "xAct`xTensor`",
+        "xAct`xPert`",
+        "xAct`xTras`"
+      ],
+      "loadErrors": [],
+      "loadMessages": [],
+      "elapsedMs": 3200,
+      "transportStderr": []
+    }
+  },
+  "final_resolution": "Scalar flatness established by separate commuting-derivative and antisymmetric-Hessian residuals. No initial nonzero_normal_form was relabelled as a passed residual."
+}

@@ -1,0 +1,11 @@
+{
+	"groups":4,
+	"allPassed":true,
+	"checks":{
+		"NormalizedSineBasis":true,
+		"DistinctSineOrthogonality":true,
+		"HomogeneousWaveEquation":true,
+		"DirichletEndpoints":true
+	},
+	"scope":"Mode normalization, PDE and traces only; the normal-topology convergence proof is analytic."
+}

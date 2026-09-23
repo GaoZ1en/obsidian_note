@@ -1,0 +1,28 @@
+{
+  "profile": "core",
+  "extraPackages": [
+    "xAct`xTras`"
+  ],
+  "pipeline": "full",
+  "timeoutMs": 60000,
+  "maxOutputChars": 4000,
+  "setup": "DefManifold[SC,2,{a,b,c,d,e,f}]; DefMetric[-1,gSC[-a,-b],CDSC]; DefTensor[xSC[],SC]; DefTensor[pSC[],SC]; DefTensor[uSC[],SC]; DefTensor[nSC[a],SC]; LSC=pSC[] (nSC[a] CDSC[-a][xSC[]]-uSC[]); parSC={HoldPattern[CDSC[i_][nSC[j_]]]:>0}; ExSC=(VarD[xSC[],CDSC][LSC]//Expand)//.parSC; EpSC=(VarD[pSC[],CDSC][LSC]//Expand)//.parSC; EuSC=(VarD[uSC[],CDSC][LSC]//Expand)//.parSC;",
+  "checks": [
+    {
+      "label": "source_x_variation",
+      "residual": "ExSC+nSC[a] CDSC[-a][pSC[]]"
+    },
+    {
+      "label": "source_p_variation",
+      "residual": "EpSC-nSC[a] CDSC[-a][xSC[]]+uSC[]"
+    },
+    {
+      "label": "source_u_variation",
+      "residual": "EuSC+pSC[]"
+    },
+    {
+      "label": "off_shell_Noether_identity",
+      "residual": "ExSC-nSC[a] CDSC[-a][EuSC]"
+    }
+  ]
+}

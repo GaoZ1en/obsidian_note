@@ -1,0 +1,67 @@
+{
+  "setup": "\nfrom sage.all import *\nK=QuadraticField(-1,'ii'); ii=K.gen()\nR=PolynomialRing(K,names=['q1','q2','s1','s2','kap','hb']); F=R.fraction_field()\nq1,q2,s1,s2,kap,hb=[F(x) for x in R.gens()]\nqs=[q1,q2]; sig=vector(F,[s1,s2])\nE=ExteriorAlgebra(F,names=['b1','b2','ci1','ci2','co1','co2','cm1','cm2','d1','d2'])\neg=E.gens()\nb=list(eg[0:2]); ci=list(eg[2:4]); co=list(eg[4:6]); cm=list(eg[6:8]); ds=list(eg[8:10])\ndef basis(ix):\n    a=E.one()\n    for j in ix: a*=eg[j]\n    return a\ndef diff_even(p,x):\n    return sum((a.derivative(x)*basis(list(ix)) for ix,a in E(p).monomial_coefficients().items()),E.zero())\ndef diff_odd(p,j):\n    ans=E.zero()\n    for ix,a in E(p).monomial_coefficients().items():\n        ids=list(ix)\n        if j in ids:\n            k=ids.index(j)\n            ans+=(-1)**k*a*basis(ids[:k]+ids[k+1:])\n    return ans\ndef nil_exp(p):\n    ans=E.one(); term=E.one()\n    for n in range(1,11):\n        term=term*p/n\n        ans+=term\n        if term==0: break\n    return ans\ndef mv(A,v):\n    return [sum((A[i,j]*v[j] for j in range(2)),E.zero()) for i in range(2)]\ndef om(P,A,B,c):\n    ac=mv(A,c); bc=mv(B,c)\n    return sum((ii*hb*ac[i]*diff_even(P,qs[i])+kap*qs[i]*bc[i]*E(P) for i in range(2)),E.zero())\ndef curvature(A,B,c):\n    ac=mv(A,c); bc=mv(B,c)\n    return ii*hb*kap*sum((ac[i]*bc[i] for i in range(2)),E.zero())\none=identity_matrix(F,2)\nBopen=matrix(F,[[0,1],[0,0]])\nBclosed=matrix(F,[[2,1],[1,3]])\nBzero=matrix(F,[[2,0],[0,0]])\nAzero=matrix(F,[[1,0],[0,0]])\npolys=[q1**i*q2**j for i in range(4) for j in range(4-i)]\ntestP=[E(f)*g for f in polys for g in [E.one(),b[0],ci[1],b[0]*co[1]]]\nclosed_square=all(om(om(p,one,Bclosed,co),one,Bclosed,co)==0 for p in testP)\nopen_square=all(om(om(p,one,Bopen,co),one,Bopen,co)==curvature(one,Bopen,co)*p for p in testP)\nopen_nonzero=(curvature(one,Bopen,co)!=0)\nEgh=nil_exp(ii/hb*sum((b[j]*(co[j]-ci[j]) for j in range(2)),E.zero()))\nghost_derivative=all(diff_odd(Egh,j)==ii/hb*(co[j]-ci[j])*Egh for j in range(2))\ndef ward(f,A,B):\n    ash=A*sig; bsh=B*sig\n    L=kap*sum((qs[i]-ash[i]/2)*bsh[i] for i in range(2))\n    sub={qs[i]:qs[i]-ash[i] for i in range(2)}\n    amp=Egh*E(f.subs(sub))\n    def covd(P,x):\n        return diff_even(P,x)+(ii/hb)*L.derivative(x)*P\n    lap=hb**2*sum((covd(diff_odd(amp,j),sig[j]) for j in range(2)),E.zero())\n    ac=mv(A,co);bc=mv(B,co)\n    out=sum((ii*hb*ac[i]*covd(amp,qs[i])+kap*qs[i]*bc[i]*amp for i in range(2)),E.zero())\n    incoming=om(E(f),A,B,ci)\n    insh=sum((a.subs(sub)*basis(list(ix)) for ix,a in incoming.monomial_coefficients().items()),E.zero())\n    lhs=lap+out-Egh*insh\n    W=A.transpose()*B-B.transpose()*A\n    rhs=kap/2*sum((sig[i]*W[i,j]*(co[j]+ci[j]) for i in range(2) for j in range(2)),E.zero())*amp\n    return lhs,rhs\nclosed_ward=all(ward(f,one,Bclosed)[0]==0 for f in polys)\nopen_ward=all(ward(f,one,Bopen)[0]==ward(f,one,Bopen)[1] for f in polys)\nopen_ward_nonzero=ward(F.one(),one,Bopen)[1]!=0\nzero_mode_ward=all(ward(f,Azero,Bzero)[0]==0 for f in polys)\nconstant_ghost_not_removed=diff_odd(Egh,1)!=0\nbL=[b[j]+ds[j]/2 for j in range(2)]\nbR=[b[j]-ds[j]/2 for j in range(2)]\nleft=nil_exp(ii/hb*sum((bL[j]*(cm[j]-ci[j]) for j in range(2)),E.zero()))\nright=nil_exp(ii/hb*sum((bR[j]*(co[j]-cm[j]) for j in range(2)),E.zero()))\nmid=hb**2*diff_odd(diff_odd(left*right,6),7)\ntarget=ds[0]*ds[1]*Egh\nglue_ghost=(mid==target)\npush=diff_odd(diff_odd(mid,8),9)\nglue_residual=(push==Egh)\nraw_residual_not_state=(mid!=Egh)\n# Nonzero elementary Berezin integral, signs independently anchored.\nberezin_anchor=(diff_odd(diff_odd(eg[0]*eg[1],0),1)==1 and diff_odd(eg[0]*eg[1],1)==-eg[0])\n\n# Mixed local Hessian: actual odd/even derivatives of sum sigma_j b_j.\ndef local_laplacian_count(n):\n    Rn=PolynomialRing(QQ,names=['z'+str(j) for j in range(n)])\n    En=ExteriorAlgebra(Rn,names=['eta'+str(j) for j in range(n)])\n    zn=list(Rn.gens()); en=list(En.gens())\n    fn=sum((zn[j]*en[j] for j in range(n)),En.zero())\n    val=Rn.zero()\n    for ids,coef in fn.monomial_coefficients().items():\n        inds=list(ids)\n        assert len(inds)==1\n        val+=coef.derivative(zn[inds[0]])\n    return val\nlocal_trace_diverges=all(local_laplacian_count((2*n+1)**2)==(2*n+1)**2 for n in [0,1,2])\n\n# An actual opposite-face diagonal operator: common ghosts are essential.\ndef opposite_diag(P):\n    return ii*hb*co[0]*(diff_even(P,q1)+diff_even(P,q2))+kap*(q1-q2)*co[1]*E(P)\ndef unmatched(P):\n    return ii*hb*(ci[0]*diff_even(P,q1)+co[0]*diff_even(P,q2))+kap*(q1*ci[1]-q2*co[1])*E(P)\nopposite_diag_nilpotent=all(opposite_diag(opposite_diag(p))==0 for p in testP)\nunmatched_not_nilpotent=unmatched(unmatched(E.one()))==ii*hb*kap*(ci[0]*ci[1]-co[0]*co[1]) and unmatched(unmatched(E.one()))!=0\n",
+  "checks": [
+    {
+      "label": "left_Berezin_derivative_anchor",
+      "condition": "berezin_anchor"
+    },
+    {
+      "label": "ghost_exponential_residual_derivative",
+      "condition": "ghost_derivative"
+    },
+    {
+      "label": "closed_face_BFV_nilpotency_on_40_inputs",
+      "condition": "closed_square"
+    },
+    {
+      "label": "open_face_BFV_square_equals_corner_on_40_inputs",
+      "condition": "open_square"
+    },
+    {
+      "label": "open_face_curvature_nonzero",
+      "condition": "open_nonzero"
+    },
+    {
+      "label": "closed_face_mQME_after_Fourier_pushforward",
+      "condition": "closed_ward"
+    },
+    {
+      "label": "open_face_mQME_exact_corner_defect",
+      "condition": "open_ward"
+    },
+    {
+      "label": "open_face_mQME_defect_nonzero",
+      "condition": "open_ward_nonzero"
+    },
+    {
+      "label": "zero_mode_retained_in_mQME",
+      "condition": "zero_mode_ward and constant_ghost_not_removed"
+    },
+    {
+      "label": "intermediate_ghost_pairing_produces_odd_delta",
+      "condition": "glue_ghost"
+    },
+    {
+      "label": "residual_BV_pushforward_recovers_state",
+      "condition": "glue_residual"
+    },
+    {
+      "label": "omitting_residual_pushforward_fails",
+      "condition": "raw_residual_not_state"
+    },
+    {
+      "label": "local_mixed_BV_Hessian_has_growing_trace",
+      "condition": "local_trace_diverges"
+    },
+    {
+      "label": "matched_opposite_open_faces_have_nilpotent_diagonal",
+      "condition": "opposite_diag_nilpotent"
+    },
+    {
+      "label": "unmatched_corner_ghosts_do_not_cancel_curvature",
+      "condition": "unmatched_not_nilpotent"
+    }
+  ],
+  "maxOutputChars": 12000,
+  "timeoutMs": 60000
+}

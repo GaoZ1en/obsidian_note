@@ -1,0 +1,76 @@
+{
+  "content": [],
+  "structuredContent": {
+    "ok": true,
+    "allZero": true,
+    "profile": "core",
+    "pipeline": "full",
+    "pipelineSteps": [
+      "ToCanonical",
+      "ContractMetric",
+      "ToCanonical",
+      "FullSimplification[]"
+    ],
+    "assumptions": "",
+    "loadedPackages": [
+      "xAct`xTensor`",
+      "xAct`xPert`",
+      "xAct`xTras`"
+    ],
+    "loadErrors": [],
+    "loadMessages": [],
+    "setupMessages": [],
+    "checks": [
+      {
+        "label": "source_x_variation",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      },
+      {
+        "label": "source_p_variation",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      },
+      {
+        "label": "source_u_variation",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      },
+      {
+        "label": "off_shell_Noether_identity",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      }
+    ],
+    "elapsedMs": 3554,
+    "transportStderr": []
+  }
+}

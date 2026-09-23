@@ -1,0 +1,16 @@
+{
+  "profile": "core",
+  "extraPackages": [
+    "xAct`xTras`"
+  ],
+  "pipeline": "full",
+  "timeoutMs": 60000,
+  "maxOutputChars": 5000,
+  "setup": "DefManifold[WC, 2, {a,b,c,d,e,f}]; DefMetric[-1,gWC[-a,-b],CDWC]; DefTensor[phiWC[],WC]; DefTensor[tWC[a],WC]; DefTensor[sWC[a],WC]; DefConstantSymbol[kWC]; DefConstantSymbol[vWC]; LWC=kWC/2 (sWC[a] CDWC[-a][phiWC[]] tWC[b] CDWC[-b][phiWC[]]-vWC sWC[a] CDWC[-a][phiWC[]] sWC[b] CDWC[-b][phiWC[]]); parallelWC={HoldPattern[CDWC[i_][tWC[j_]]]:>0,HoldPattern[CDWC[i_][sWC[j_]]]:>0}; EWC=VarD[phiWC[],CDWC][LWC]//Expand; EWC=EWC//.parallelWC;",
+  "checks": [
+    {
+      "label": "physical_chiral_wall_Euler_Lagrange",
+      "residual": "EWC+kWC sWC[a] tWC[b] CDWC[-a][CDWC[-b][phiWC[]]]-kWC vWC sWC[a] sWC[b] CDWC[-a][CDWC[-b][phiWC[]]]"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "markdown_files": 21,
+  "math_nodes": 679,
+  "local_links": 147,
+  "claims": 40,
+  "audit_cases": 45,
+  "new_mathematica_checks": 20,
+  "new_sage_checks": 15,
+  "new_labelled_checks_total": 35,
+  "goal_requirements": 6,
+  "goal_status": "active",
+  "issues": [],
+  "scope": "Document structure and saved evidence consistency; not a continuum BV theorem or full-goal completion."
+}

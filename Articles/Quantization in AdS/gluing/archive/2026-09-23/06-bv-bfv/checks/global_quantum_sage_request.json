@@ -1,0 +1,59 @@
+{
+  "setup": "\nfrom itertools import product\nfrom functools import lru_cache\nfrom collections import defaultdict\nR=PolynomialRing(QQ,names=('x1','x2','y1','y2','h','k'))\nx1,x2,y1,y2,h,k=R.gens()\ndef star(f,g):\n    out=R.zero()\n    for a in range(min(f.degree(x1),g.degree(y1))+1):\n        for b in range(min(f.degree(x2),g.degree(y2))+1):\n            out += (h*k)**(a+b)*2**b/factorial(a)/factorial(b)*f.derivative(x1,a).derivative(x2,b)*g.derivative(y1,a).derivative(y2,b)\n    return out\ndef adj(f):return f(x1=y1,x2=y2,y1=x1,y2=x2)\nff=x1*x1*y2+x2+x1*y1\ngg=y1**3+y2*x2\nhh=x1*y1+x2*x2*y2\ndef clean(v):return {key:val for key,val in v.items() if val}\ndef add(a,b,scale=1):\n    o=defaultdict(QQ,a)\n    for key,val in b.items():o[key]+=scale*val\n    return clean(o)\ndef scale(a,c):return clean({key:c*val for key,val in a.items()})\ndef trim(t):\n    t=list(t)\n    while t and t[-1]==0:t.pop()\n    return tuple(t)\ndef energy(t):return sum((j+1)*n for j,n in enumerate(t))\ndef alpha(n,v):\n    out=defaultdict(QQ)\n    if n==0:return {}\n    for occ,coef in v.items():\n        ii=abs(n)-1;aa=list(occ)+[0]*max(0,ii+1-len(occ))\n        if n>0:\n            if not aa[ii]:continue\n            c=n*aa[ii];aa[ii]-=1\n        else:c=1;aa[ii]+=1\n        out[trim(aa)]+=coef*c\n    return clean(out)\n@lru_cache(None)\ndef stress_on(m,occ):\n    E=energy(occ);out={}\n    # Exact support bound on this vector, not a mode cutoff.\n    for r in range(-E-abs(m)-2,E+abs(m)+3):\n        a,b=m-r,r\n        if not a or not b:continue\n        if a>0 and b<0:a,b=b,a\n        term=alpha(a,alpha(b,{occ:QQ(1)}))\n        out=add(out,term,QQ(1)/2)\n    return out\ndef stress(m,v):\n    out={}\n    for occ,c in v.items():out=add(out,stress_on(m,occ),c)\n    return out\ndef norm2(v):\n    return sum(c*c*prod(QQ(n+1)**r*factorial(r) for n,r in enumerate(occ)) for occ,c in v.items())\nstates=[]\nfor e in range(7):\n    for part in Partitions(e):\n        occ=[0]*e\n        for j in part:occ[j-1]+=1\n        states.append(trim(occ))\nmodes=list(range(-4,5))\ndef vir_ok(m,n,occ):\n    v={occ:QQ(1)}\n    lhs=add(stress(m,stress(n,v)),stress(n,stress(m,v)),-1)\n    rhs=stress(m+n,v)\n    rhs=scale(rhs,m-n)\n    if m+n==0:rhs=add(rhs,v,QQ(m**3-m)/12)\n    return lhs==rhs\ndef current_ok(m,n,occ):\n    v={occ:QQ(1)}\n    return add(stress(m,alpha(n,v)),alpha(n,stress(m,v)),-1)==scale(alpha(m+n,v),-n)\nfree=FreeGroup(names=('ha','u','hb','v','hc'))\nha,u,hb,v,hc=free.gens()\npu=ha**(-1)*u*hb;pv=hb**(-1)*v*hc\n",
+  "checks": [
+    {
+      "label": "wick_current_one",
+      "condition": "star(x1,y1)-star(y1,x1)==h*k"
+    },
+    {
+      "label": "wick_current_two",
+      "condition": "star(x2,y2)-star(y2,x2)==2*h*k"
+    },
+    {
+      "label": "wick_associativity_nontrivial",
+      "condition": "star(star(ff,gg),hh)==star(ff,star(gg,hh))"
+    },
+    {
+      "label": "wick_involution",
+      "condition": "adj(star(ff,gg))==star(adj(gg),adj(ff))"
+    },
+    {
+      "label": "wick_has_double_contraction",
+      "condition": "star(x1*x1,y1*y1)==x1*x1*y1*y1+4*h*k*x1*y1+2*h*h*k*k"
+    },
+    {
+      "label": "virasoro_all_low_energy_vectors",
+      "condition": "all(vir_ok(m,n,occ) for m,n,occ in product(modes,modes,states))"
+    },
+    {
+      "label": "stress_current_all_low_energy_vectors",
+      "condition": "all(current_ok(m,n,occ) for m,n,occ in product(modes,[z for z in modes if z],states))"
+    },
+    {
+      "label": "energy_action",
+      "condition": "all(stress(0,{occ:QQ(1)})==scale({occ:QQ(1)},energy(occ)) for occ in states)"
+    },
+    {
+      "label": "vacuum_cocycle_norm",
+      "condition": "all(norm2(stress(-m,{():QQ(1)}))==QQ(m**3-m)/12 for m in range(2,15))"
+    },
+    {
+      "label": "vacuum_stress_first_mode",
+      "condition": "stress(-1,{():QQ(1)})=={}"
+    },
+    {
+      "label": "smoothing_arrow_composition",
+      "condition": "pu*pv==ha**(-1)*(u*v)*hc"
+    },
+    {
+      "label": "smoothing_arrow_naturality",
+      "condition": "u*hb==ha*pu"
+    },
+    {
+      "label": "smoothing_arrow_identity",
+      "condition": "ha**(-1)*free.one()*ha==free.one()"
+    }
+  ],
+  "timeoutMs": 180000,
+  "maxOutputChars": 3000
+}

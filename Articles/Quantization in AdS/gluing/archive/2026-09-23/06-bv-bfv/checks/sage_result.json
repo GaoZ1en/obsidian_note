@@ -1,0 +1,137 @@
+{
+  "mode": "verify",
+  "ok": true,
+  "allPassed": true,
+  "setupError": null,
+  "checks": [
+    {
+      "label": "Interval cone H0 retains one constant stabilizer",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Interval cone has no spurious H1",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Strict fiber product lies in matched kernel",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Strict interval product has same H0",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Strict interval product has same H1",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Circle descent retains H0 stabilizer",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Circle descent recovers H1 holonomy",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Tree two-step constraints independent",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Three-cell tree ordering preserves kernel",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Cycle requires additional cocycle information",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Redundant clean constraint Koszul differential squares zero",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Clean intersection retains closed negative class",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    },
+    {
+      "label": "Negative class survives modulo matching ideal",
+      "status": "passed",
+      "value": "True",
+      "valueType": "builtins.bool",
+      "truncated": false,
+      "valueSha256": "3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18",
+      "error": null
+    }
+  ],
+  "stdout": "",
+  "stdoutTruncated": false,
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3785,
+  "transportStderr": [],
+  "codeSha256": "2fffb4a505b7a33669b765986713432dbb3a26e74c58d1ca09cf763c11f6dd0f"
+}

@@ -1,0 +1,63 @@
+{
+  "tool": "mcp__xact__xact_verify_residuals",
+  "setup": "DefManifold[M,2,{a,b,c,d}]; DefMetric[-1,g[-a,-b],CD,{\";\",\"D\"}]; DefTensor[phi[],M]; DefTensor[ss[],M]; DefConstantSymbol[mm];",
+  "checks": [
+    {
+      "label": "ScalarQuasiInvarianceOffShell",
+      "residual": "-CD[a][phi[]]CD[-a][ss[]]-mm^2 phi[] ss[]-CD[a][-phi[] CD[-a][ss[]]]-phi[](CD[a][CD[-a][ss[]]]-mm^2 ss[])"
+    },
+    {
+      "label": "CompleteNoetherDivergence",
+      "residual": "CD[a][phi[] CD[-a][ss[]]-ss[] CD[-a][phi[]]]-phi[](CD[a][CD[-a][ss[]]]-mm^2 ss[])+ss[](CD[a][CD[-a][phi[]]]-mm^2 phi[])"
+    }
+  ],
+  "result": {
+    "ok": true,
+    "allZero": true,
+    "profile": "core",
+    "pipeline": "full",
+    "pipelineSteps": [
+      "ToCanonical",
+      "ContractMetric",
+      "ToCanonical",
+      "FullSimplification[]"
+    ],
+    "assumptions": "",
+    "loadedPackages": [
+      "xAct`xTensor`",
+      "xAct`xPert`",
+      "xAct`xTras`"
+    ],
+    "loadErrors": [],
+    "loadMessages": [],
+    "setupMessages": [],
+    "checks": [
+      {
+        "label": "ScalarQuasiInvarianceOffShell",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      },
+      {
+        "label": "CompleteNoetherDivergence",
+        "status": "zero",
+        "canonicalResidual": "0",
+        "canonicalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "canonicalResidualTruncated": false,
+        "finalResidual": "0",
+        "finalResidualSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "finalResidualTruncated": false,
+        "unknownHeads": [],
+        "messages": []
+      }
+    ],
+    "elapsedMs": 4937,
+    "transportStderr": []
+  }
+}

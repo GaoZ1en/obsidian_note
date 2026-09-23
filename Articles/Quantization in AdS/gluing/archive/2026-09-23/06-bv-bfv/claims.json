@@ -1,0 +1,460 @@
+{
+  "date": "2026-09-19",
+  "scope": "Active full BV-BFV/regional sewing programme, including finite SU(2) classical descent and a specified continuum quantum observable product/domain; normalized Abelian quantum collar integration and explicit open-face defects; physical disk/chord history/cap comparison and sharp regional-energy domain obstructions; canonical proper-cut BV quartet, renormalized local families and determinant-orientation control; cap-relative minimal source BV decomposition, retained residual kernel and joint-source obstruction; action-derived source-release resolution and actual off-shell map from regional data to the source model, retaining bulk curvature and ghost cap corrections",
+  "claims": [
+    {
+      "id": "B01",
+      "status": "SOURCE_CHECKED",
+      "statement": "Classical BV-BFV typing and complete convention change between minus-beta and plus-alpha formulas.",
+      "location": "formalism.md §§2-3",
+      "evidence": "CM 2208.11211 §2.1/§4; rendered pp. 8,15",
+      "limits": "No change of only one sign; no ordinary-CPS nondegeneracy claim."
+    },
+    {
+      "id": "B02",
+      "status": "CONSTRUCTED_WITH_SOURCE_SIGN_CONVENTIONS",
+      "statement": "Abelian CS minimal fields, Q, bulk action/pairing, boundary charge and retained corner term.",
+      "location": "u1_cs_open_chord.md §§2-3",
+      "evidence": "Component construction; CM/CMR formula pages; Mathematica d-squared and component Stokes checks",
+      "limits": "Graded transgression formulas use the cited convention; no complete machine graded-Cartan verification."
+    },
+    {
+      "id": "C1",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "Full smooth classical disk fields and smoothly descending proper arrows reconstruct by restriction/assembly, with CPS sum.",
+      "location": "u1_cs_open_chord.md §6",
+      "evidence": "Analytic smooth assembly proof; action variation and orientation checks",
+      "limits": "Common frame; full collar jets; source-free trivial bundle; same exterior realization; no field quotient."
+    },
+    {
+      "id": "C2",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "Finite smooth-current polynomial sewing has explicit onto map and cut-moment kernel.",
+      "location": "u1_cs_open_chord.md §7",
+      "evidence": "Label exact sequence, interpolation section, finite polynomial independence",
+      "limits": "Declared admissible current source only; not full smooth functionals or a full regional tensor algebra quotient."
+    },
+    {
+      "id": "C3",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "Three-cell sewing is associative for two disjoint chords with distinct endpoints.",
+      "location": "u1_cs_open_chord.md §8",
+      "evidence": "Source interpolation/moment relations and pointwise field assembly",
+      "limits": "All surviving histories/charges retained; no junction/self-gluing/quantum coherence extrapolation."
+    },
+    {
+      "id": "L1",
+      "status": "PROVED",
+      "statement": "A degreewise-surjective cochain matching has quasi-isomorphic strict kernel and cone homotopy-product models.",
+      "location": "formalism.md §4",
+      "evidence": "Explicit quotient contraction h(y,b)=(b,0); 5 finite Sage controls",
+      "limits": "Algebraic lemma alone supplies no arbitrary Frechet splitting theorem."
+    },
+    {
+      "id": "H1",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "Continuous relative linear chain homotopy smoothing preserves all surviving exterior traces.",
+      "location": "relative_homotopy.md §§1-3,5",
+      "evidence": "Explicit product-collar K, trace extension E, H=(1-Er)H0 and p=1-dH-Hd; corner checks",
+      "limits": "P_ext smooth exterior joint traces, neat product collars, Abelian d; no raw inverse or fixed artificial history claim."
+    },
+    {
+      "id": "H2",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "The linear comparison preserves the shifted integral pairing up to an explicit relative cochain homotopy.",
+      "location": "relative_homotopy.md §4",
+      "evidence": "Graded tensor homotopy identity and Stokes boundary cancellation using rH=0; sign diagnostic",
+      "limits": "Degreewise shifted pairing convention stated; not strict symplecticity of p or arbitrary observable equivalence."
+    },
+    {
+      "id": "Y1",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "Abelian YM2 has the displayed source response, canonical BFV differential, holonomy/flux composition and coupling-dependent dynamics.",
+      "location": "ym2_control.md §§1-3",
+      "evidence": "Direct first variation/BRST calculation; local canonical matrices and Hamiltonian checks",
+      "limits": "Full fields retained; compact phase only in local charts; no general non-Abelian theorem."
+    },
+    {
+      "id": "N1",
+      "status": "DISPROVED",
+      "statement": "Unqualified regional sewing equals setting all nonzero-ghost fields to zero in BV-BFV gluing.",
+      "location": "counterexample_audit.md A01-A04",
+      "evidence": "Nonflat ghost-free field; charged exact disk field; stabilizer/source counterexamples",
+      "limits": "The repaired comparison distinguishes equations/arrows, off-shell restriction and observable H0."
+    },
+    {
+      "id": "N2",
+      "status": "DISPROVED",
+      "statement": "Clean intersection permits discarding derived excess.",
+      "location": "counterexample_audit.md A11",
+      "evidence": "Repeated y=0 Koszul constraint with non-exact eta1-eta2 class; Sage",
+      "limits": "Clean is not transverse or Tor-independent."
+    },
+    {
+      "id": "N3",
+      "status": "DISPROVED",
+      "statement": "Bare boundary BFV determines physical opening/closure and dynamics.",
+      "location": "counterexample_audit.md A17,A21; ym2_control.md §4",
+      "evidence": "Different CS velocities/YM couplings; surviving artificial wall defect",
+      "limits": "Full bulk action and boundary realization distinguish these cases."
+    },
+    {
+      "id": "N4",
+      "status": "DISPROVED",
+      "statement": "Relative smoothing can preserve arbitrary piecewise exterior traces while outputting smooth global fields.",
+      "location": "relative_homotopy.md §1; counterexample_audit.md A22",
+      "evidence": "An exterior second-jet jump remains under any trace-preserving map",
+      "limits": "P_ext condition is required; it is not removed by a homotopy label."
+    },
+    {
+      "id": "D1",
+      "status": "PROVED_FOR_DECLARED_LINEAR_DIAGRAM",
+      "statement": "Identification of P_ext with the homotopy limit of a fully specified corner/physical-boundary dg diagram.",
+      "location": "corner_descent.md §§1-5",
+      "evidence": "Physical wall/cap complex; explicit three-term matching diagram; continuous sections and finite homotopy correction",
+      "limits": "Declared relative continuous linear diagram only. CD2 realizes its strict field model; nonlinear/topological extension remains open.",
+      "history": [
+        {
+          "status": "NOT_PROVED",
+          "evidence": "The constructed linear comparison is an intermediate result",
+          "limits": "Requires a specified category, actual corner maps and appropriate replacements."
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "status": "DISPROVED_FOR_CONTINUOUS_POLYNOMIALS",
+      "statement": "The complete continuum BV observable H0 is the declared current polynomial algebra.",
+      "location": "continuous_observables.md §§3-6",
+      "evidence": "Explicit disk contraction computes continuous polynomial cohomology; boundary point evaluation and positive local energy lie outside finite current polynomials",
+      "limits": "Original C2 remains true. Repaired comparison is O1-O3 with an independently defined Hamiltonian class.",
+      "history": [
+        {
+          "status": "NOT_PROVED",
+          "evidence": "No full function complex/product/domain comparison supplied",
+          "limits": "No extrapolation from linear chain equivalence or finite Koszul diagnostics."
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "status": "OPEN",
+      "statement": "Quantum BV pushforward or general state/representation sewing.",
+      "location": "README.md; TODO.md",
+      "evidence": "User activated full programme G5; no quantum BV pushforward/observable comparison proof yet",
+      "limits": "Requires actual quantum products, boundary/corner regularization, anomaly and master-equation control.",
+      "history": [
+        {
+          "status": "NOT_ATTEMPTED",
+          "evidence": "Explicitly outside the classical starter",
+          "limits": "Requires polarization, residual fields, state/measure data and quantum master-equation control."
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "status": "NOT_PROVED",
+      "statement": "Global non-Abelian, compact self-sewing and higher homotopy coherence extensions.",
+      "location": "finite_cut_coherence.md §§5-6; nonabelian_relative_descent.md §§5-8; counterexample_audit.md",
+      "evidence": "FC/NR supply formal finite-cut comparisons; ND supplies finite SU(2) disk classical fields/arrows. General bundle/self-sewing and nonformal off-shell BV remain unproved.",
+      "limits": "Singular stabilizers and finite gauge components must remain present."
+    },
+    {
+      "id": "CD1",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "The chiral disk/cap/corner diagram has an explicit relative continuous cochain homotopy-limit model equivalent to P_L and smooth G_L.",
+      "location": "corner_descent.md",
+      "evidence": "Continuous collar sections and finite split-resolution correction; 12 Sage controls",
+      "limits": "One neat chord, trivial U(1), fixed v, unfixed caps. CD2 realizes the BV structure on P_L; no assertion that every auxiliary resolution is symplectic."
+    },
+    {
+      "id": "O1",
+      "status": "PROVED_ON_DECLARED_FUNCTION_CLASS",
+      "statement": "Explicit continuous linear chain homotopy equivalences induce quasi-isomorphisms of finite-degree continuous polynomial commutative dg algebras.",
+      "location": "continuous_observables.md §§1-2",
+      "evidence": "Tensor telescoping, graded symmetrization and dual homotopy; 15 Sage controls",
+      "limits": "No inference for arbitrary smooth, local, microcausal, Poisson or quantum functional classes."
+    },
+    {
+      "id": "O2",
+      "status": "PROVED_ON_DECLARED_DOMAIN",
+      "statement": "The proper chiral disk BV complex has continuous polynomial cohomology O_poly(J) concentrated in degree zero, with J the mean-zero smooth initial current.",
+      "location": "continuous_observables.md §3",
+      "evidence": "Explicit k, wall transport, extension, h1/h2/h3 and residual section; component checks",
+      "limits": "Computational contraction does not fix caps or replace full fields/arrows. No compact/non-Abelian extension."
+    },
+    {
+      "id": "O3",
+      "status": "PROVED_ON_DECLARED_FUNCTION_CLASS",
+      "statement": "Intrinsic Hamiltonian continuous polynomial cohomology reconstructs as a Poisson algebra under the declared chord sewing and intertwines chiral energy evolution.",
+      "location": "continuous_observables.md §§5-6",
+      "evidence": "Smooth polynomial gradient criterion, Hessian bracket identity, independent source CPS and actual tangent lifts",
+      "limits": "Cohomological kernel is Q-boundaries; no finite cut-word presentation for the enlarged class, no quantum product."
+    },
+    {
+      "id": "CD2",
+      "status": "PROVED_WITH_DECLARED_GRADED_CONVENTIONS",
+      "statement": "The actual strict matching field model P_L carries the sum of regional physical BV actions and weakly nondegenerate integral pairing, relative to surviving caps.",
+      "location": "corner_descent.md §5.1",
+      "evidence": "Sum of B02 bulk-boundary identities; joint seam/corner cancellation; compact interior test variations prove weak nondegeneracy.",
+      "limits": "Uses B02 source-checked graded conventions, not a new full graded-Cartan machine proof. Auxiliary total complex is not assigned a nondegenerate local pairing."
+    },
+    {
+      "id": "FC1",
+      "status": "PROVED_ON_DECLARED_GEOMETRY",
+      "statement": "Finite common-conical cut matching complexes admit continuous true-exterior-relative smoothing homotopy equivalences, retaining full fields and global de Rham classes.",
+      "location": "finite_cut_coherence.md §§1-4",
+      "evidence": "Actual radial vertex and normal edge operators, exterior correction and finite telescoping.",
+      "limits": "Common conical charts and smooth joint exterior; no arbitrary fixed internal traces or compact bundle completion."
+    },
+    {
+      "id": "FC2",
+      "status": "PROVED_IN_DECLARED_FORMAL_DIAGRAM",
+      "statement": "Finite legal refinements over the same exterior have actual comparison homotopies and coherent higher fillers.",
+      "location": "finite_cut_coherence.md §5",
+      "evidence": "Place comparisons over one refined endpoint map, then apply NR3 kernel contraction and parameter-face extension.",
+      "limits": "Fully opened matching models; not arbitrary intermediate physical closure or quantum associators."
+    },
+    {
+      "id": "NR1",
+      "status": "PROVED_ON_DECLARED_CONTINUOUS_DATA",
+      "statement": "A relative DGLA path object has a continuous chain section and explicitly contractible endpoint kernel without assuming pi=1.",
+      "location": "nonabelian_relative_descent.md §§2-3",
+      "evidence": "Mapping-fiber k_f, normalized k_f D_f k_f, Whitney maps and h_K; non-strict matrix checks.",
+      "limits": "Uses actual two-sided homotopies, H_P i=i H_G and true-exterior preservation."
+    },
+    {
+      "id": "NR2",
+      "status": "PROVED_IN_FORMAL_CATEGORY",
+      "statement": "All Taylor coefficients of a true-exterior-relative non-Abelian CS L-infinity inverse are constructed recursively.",
+      "location": "nonabelian_relative_descent.md §4",
+      "evidence": "Closed arity-n defect killed by -h_K R_n; nonzero arity-two/three finite DGLA controls.",
+      "limits": "Continuous finite-polynomial coefficients in formal lambda series; no convergence at finite coupling."
+    },
+    {
+      "id": "NR3",
+      "status": "PROVED_IN_DECLARED_LIFTING_PROBLEM",
+      "statement": "Both inverse homotopies and higher parameter-simplex fillers exist by explicit boundary-relative extension/correction.",
+      "location": "nonabelian_relative_descent.md §5",
+      "evidence": "Each residual lies in the acyclic endpoint kernel and vanishes on prescribed parameter faces.",
+      "limits": "Same endpoint lifting problem, transported to finite refinements by FC2; no compact or quantum inference."
+    },
+    {
+      "id": "NR4",
+      "status": "PROVED_WITH_DECLARED_FORMAL_AND_GRADED_CONVENTIONS",
+      "statement": "The formal maps compare continuous polynomial commutative dg algebras and preserve CS integral BV pairing/action up to explicit relative homotopy.",
+      "location": "nonabelian_relative_descent.md §§6-7",
+      "evidence": "Integrate the actual Q-homotopy pullback; relative graded Cartan identity; polynomial lambda-degree control.",
+      "limits": "No automatic nonlinear Hamiltonian/Poisson presentation or quantum product; full graded variational automation not claimed."
+    },
+    {
+      "id": "ND1",
+      "status": "PROVED_ON_DECLARED_FINITE_GROUP_DOMAIN",
+      "statement": "The source-free SU(2) disk current domain is trivial holonomy; individual fillings exist but no global continuous filling section exists.",
+      "location": "nonabelian_disk_observables.md §§2-3",
+      "evidence": "Exact matrix ODE and zero-mean/nontrivial-holonomy witness; loop-space homotopy obstruction.",
+      "limits": "Trivial disk bundle; not arbitrary bundle/annulus sectors."
+    },
+    {
+      "id": "ND2",
+      "status": "PROVED_FOR_CLASSICAL_FULL_FIELD_GROUPOIDS",
+      "statement": "Finite SU(2) flat disk/chord fields and actual arrows admit a true-exterior-relative smoothing functor, natural equivalences and action/CPS comparison.",
+      "location": "nonabelian_disk_observables.md §§1,4-5",
+      "evidence": "Thin scalar smoothing, quaternion projection, explicit field-dependent proper arrows and boundary-fixed flat homotopy.",
+      "limits": "Ordinary flat fields and arrows; not a nonformal off-shell BV ghost/antifield inverse."
+    },
+    {
+      "id": "ND3",
+      "status": "PROVED_ON_DECLARED_HAMILTONIAN_CLASS",
+      "statement": "Independently defined full-source/global smooth Hamiltonian functions reconstruct as the same regular trivial-holonomy current class, preserving Poisson structure and chiral dynamics.",
+      "location": "nonabelian_disk_observables.md §6",
+      "evidence": "Connected actual proper fibers, local sections, covariant primitive and Lie-algebra boundary tangent lifts.",
+      "limits": "Unfixed caps; no claim of global off-shell BV representatives or ambient finite-polynomial presentation."
+    },
+    {
+      "id": "QD1",
+      "status": "DISPROVED_UNQUALIFIED_QUANTIZATION_EXTENSION",
+      "statement": "All classical P_H observables, even those with complete smooth flows, can be realized by normal ordering on the same standard Fock vacuum domain.",
+      "location": "quantum_observable_domain.md §2",
+      "evidence": "Orthogonal pair-creation vacuum norms diverge; the uniform squeeze flow preserves all smooth currents.",
+      "limits": "Counterexample to the specified representation/ordering/domain, not every possible quantization."
+    },
+    {
+      "id": "QD2",
+      "status": "PROVED_ON_DECLARED_KERNEL_DOMAIN",
+      "statement": "Two-sided weighted Hilbert-Schmidt Wick kernels define a continuum polynomial star algebra with invariant D_infinity, local composites, energy, convergent contractions and faithful operators.",
+      "location": "quantum_observable_domain.md §§3-4",
+      "evidence": "Fock-sector energy estimates, finite-block kernel reconstruction, exact contraction support and coherent-vector faithfulness.",
+      "limits": "Not all P_H; no universal self-adjointness or convergence of arbitrary hbar series."
+    },
+    {
+      "id": "QD3",
+      "status": "PROVED_WITH_DECLARED_QUANTUM_PRESCRIPTION",
+      "statement": "On the actual Abelian matched classical observable classes and independent disk target, the continuum Wick algebras sew with zero additional kernel and intertwine energy.",
+      "location": "quantum_observable_domain.md §6",
+      "evidence": "Independent source current/CPS/transport data, identical intrinsic kernel criterion and O3 lifts; product and symbol faithfulness.",
+      "limits": "This route quantizes classical observable classes; the independent regional quantum BV pushforward comparison remains open."
+    },
+    {
+      "id": "QD4",
+      "status": "PROVED_FOR_DECLARED_CHIRAL_FOCK_PRODUCT",
+      "statement": "The local quadratic stress product has the displayed c=1 central term and positive chiral energy with zero vacuum energy.",
+      "location": "quantum_observable_domain.md §5",
+      "evidence": "Wick action on currents, vacuum finite sum, energy grading and exact finite-input Fock checks.",
+      "limits": "Not an assertion about bulk/corner BV gauge anomaly or non-Abelian level shifts."
+    },
+    {
+      "id": "QB1",
+      "status": "CONSTRUCTED_WITH_EXPLICIT_OPEN_FACE_DEFECT",
+      "statement": "The polarized Abelian bulk BFV operator has the displayed square; a proper-wall rectangular ghost has a nonzero temporal-cap curvature.",
+      "location": "quantum_collar_and_corners.md §§1-2",
+      "evidence": "Component action and exact Grassmann square; polynomial Stokes witness.",
+      "limits": "Open-face operator is the bulk piece with retained corner allocation, not a completed standalone BFV complex."
+    },
+    {
+      "id": "QB2",
+      "status": "CONSTRUCTED_IN_NORMALIZED_CYLINDRICAL_FORMAL_DOMAIN",
+      "statement": "An axial Abelian closed-torus collar state with retained residuals satisfies the modified quantum master equation by direct kernel calculation.",
+      "location": "quantum_collar_and_corners.md §§3-4",
+      "evidence": "Explicit interval contraction, Fourier kernel, full residual ghost exponential and Ward identity.",
+      "limits": "Continuous U_sigma is explicit; BV integration uses fixed normalized cylindrical/formal rules, not a measure on all fields or all local insertions."
+    },
+    {
+      "id": "QB3",
+      "status": "PROVED_FOR_NORMALIZED_PRODUCT_COLLARS",
+      "statement": "Interface pairing followed by the actual residual BV pushforward reproduces the independently constructed collar state and finite repeated composition.",
+      "location": "quantum_collar_and_corners.md §5",
+      "evidence": "Canonical residual coordinate change, nonzero intermediate odd delta and normalized Berezin integration.",
+      "limits": "Same Abelian product geometry, polarization and normalization; not arbitrary region/observable sewing."
+    },
+    {
+      "id": "QB4",
+      "status": "PROVED_OPEN_FACE_DEFECT_AND_DIAGONAL_PAIRING",
+      "statement": "The open-face Weyl cocycle cannot generally be removed by scalar rephasing; the bulk-only residual pushforward has a calculable fixed-Lagrangian-choice defect. Matching common ghosts on oppositely oriented faces gives a nilpotent diagonal operator and a Schwartz pairing satisfying its Ward identity.",
+      "location": "quantum_collar_and_corners.md §6",
+      "evidence": "Bilinear cocycle, invariant group commutator and explicit residual phase; opposite orientations cancel under actual matching. Actual dual-face operator and integration-by-parts pairing; unmatched ghosts give a nonzero control.",
+      "limits": "Actual disk/chord corner states and polarization transport remain unconstructed. Pairing arbitrary regional distributional states is not proved by the Schwartz test domain."
+    },
+    {
+      "id": "QB5",
+      "status": "DISPROVED_UNQUALIFIED_CONTINUUM_BV_DOMAIN",
+      "statement": "A selected state satisfying mQME does not imply an unrenormalized BV Laplacian exists on all continuous local functionals.",
+      "location": "quantum_collar_and_corners.md §7",
+      "evidence": "The actual mixed Hessian of integral sigma b has trace N on every N-mode real orthonormal subspace.",
+      "limits": "No claim that every renormalized quantum domain fails; the required domain and QD bridge remain open."
+    },
+    {
+      "id": "WH1",
+      "status": "CONSTRUCTED_PHYSICAL_HISTORY_CAP_WARD_IDENTITY",
+      "statement": "The original disk/chord action gives a physical boundary history phase with retained temporal caps and spatial endpoints; the common proper-cut Ward operator includes the computed cap compensation.",
+      "location": "physical_wall_and_caps.md §§1–3",
+      "evidence": "Explicit component variation, finite proper transformation, nonzero cap witness and exact Grassmann Ward checks.",
+      "limits": "This physical prequantum history identity is not the full regional quantum BV state or a complete mQME with antifields, Laplacian and determinant lines."
+    },
+    {
+      "id": "WH2",
+      "status": "CONSTRUCTED_NORMALIZED_CYLINDRICAL_PHYSICAL_PHASE_SEWING",
+      "statement": "On the actual endpoint-compatible source domain, normalized source Fourier and proper-quartet integration sew the regional physical phases and cap potentials to those of the independently defined disk.",
+      "location": "physical_wall_and_caps.md §4",
+      "evidence": "Actual source probes detect the full smooth response; finite canonical Fourier/Berezin integration and the retained cap terms give the displayed physical phase.",
+      "limits": "Classical fields and gauge arrows remain unreduced. Full bulk/ghost determinants, general BV insertions and an unrestricted continuum BV measure are not constructed."
+    },
+    {
+      "id": "WH3",
+      "status": "CONSTRUCTED_CONTINUUM_CAP_OPERATOR_WITH_DECLARED_PRESCRIPTION",
+      "statement": "The physical wall action with the declared QD polarization and normal ordering produces a continuum coherent cap operator, time composition and the same current contractions, Wick products and energy on the stated domain.",
+      "location": "physical_wall_and_caps.md §§5–6",
+      "evidence": "Polarized stationary action, actual Gaussian pairing, second quantization on the continuum one-particle space and QD weighted kernel estimates.",
+      "limits": "The physical-history-to-cap comparison does not establish the independent full regional quantum BV cochain pushforward, determinant transport or local BV renormalization."
+    },
+    {
+      "id": "WH4",
+      "status": "DISPROVED_UNQUALIFIED_SHARP_REGIONAL_FOCK_GENERATOR",
+      "statement": "Sharp half-arc energy need not define a vacuum-domain operator in the declared exterior Fock representation; a sharp finite time window need not repair it.",
+      "location": "physical_wall_and_caps.md §7",
+      "evidence": "Exact stress creation coefficients give quadratic vacuum-norm divergence for the arc and logarithmic divergence for the stated time window; finite exact Fock monomials verify the coefficients.",
+      "limits": "This does not exclude different regional boundary problems or representations. Smooth time smearing gives a valid observable but does not replace the actual temporal caps."
+    },
+    {
+      "id": "QT1",
+      "status": "CONSTRUCTED_ON_ACTUAL_SMOOTH_PROPER_DOMAIN",
+      "statement": "The endpoint-zero proper history space and its smooth antifield partner admit explicit continuous biorthogonal presentations preserving unrestricted temporal cap jets.",
+      "location": "quantum_cut_quartet.md §2",
+      "evidence": "Integrated Legendre bases, integration-by-parts estimates and direct reconstruction checks.",
+      "limits": "The regulator represents the given domain; it is not an arbitrary elliptic boundary realization or a proof for every corner geometry."
+    },
+    {
+      "id": "QT2",
+      "status": "CONSTRUCTED_FULL_CANONICAL_AUXILIARY_BV_COMPLEX",
+      "statement": "The canonical minimal/nonminimal proper quartet has an explicit full-antifield quantum differential, QME, Gaussian Stokes map and cochain contraction.",
+      "location": "quantum_cut_quartet.md §§1,3–4",
+      "evidence": "Actual BV action, constant-coefficient Gaussian conjugation, independent Fourier/Berezin moments and explicit homotopy.",
+      "limits": "This is the canonical completion of the WH proper fiber; an actual cochain decomposition of the original regional bulk/source/corner theory is still required."
+    },
+    {
+      "id": "QT3",
+      "status": "CONSTRUCTED_RENORMALIZED_QUARTET_LOCAL_FAMILIES",
+      "statement": "Continuous finite-degree auxiliary polynomials, including local insertions, define normal families with compatible quantum differential, Wick multiplication, cutoff transports and normalized pushforward.",
+      "location": "quantum_cut_quartet.md §§5–6",
+      "evidence": "Terminating Gaussian operators, exact transport identities and continuous polynomial contraction prove the declared formal-family result.",
+      "limits": "No untransported ultraviolet limit or infinite Berezin measure is asserted; arbitrary noncontractible residuals and mixed physical distribution kernels remain outside this construction."
+    },
+    {
+      "id": "QT4",
+      "status": "CONSTRUCTED_ORIENTED_AUXILIARY_PUSHFORWARD_WITH_SIGN_OBSTRUCTION",
+      "statement": "The declared auxiliary pushforward preserves WH/QD physical coefficients and products, and finite independent blocks compose; fixed scalar measures retain a sign under gauge-fixing orientation reversal.",
+      "location": "quantum_cut_quartet.md §§6–7",
+      "evidence": "Nonzero Gaussian/Berezin moments, commuting block contractions and the exact det K over absolute det K calculation.",
+      "limits": "Cutoff coherence is not arbitrary gauge-fixing independence; actual regional factorization, determinant-line holonomy and general reopening remain unproved."
+    },
+    {
+      "id": "SC1",
+      "status": "PROVED_FOR_DECLARED_RELATIVE_SOURCE_MODEL",
+      "statement": "The minimal BV completion of the WH physical source core admits an explicit continuous cotangent and cochain decomposition over arbitrary polarized cap arguments, with an actual relative minimal doublet and retained source residuals.",
+      "location": "source_cap_bv_decomposition.md §§2-4",
+      "evidence": "Explicit forward/inverse maps, vertical pairing plus horizontal connection, full source differential and continuous polynomial contraction; Mathematica/Sage/xAct checks.",
+      "limits": "Not an unrestricted-cap full cotangent product or an identification of the original bulk/corner BV pushforward; original fields/arrows and joint constraints remain."
+    },
+    {
+      "id": "SC2",
+      "status": "PROVED_IN_DECLARED_NORMALIZED_CYLINDRICAL_MODEL",
+      "statement": "The canonical source core has a normalized residual translation kernel satisfying mQME, closed under temporal cap pairing followed by actual residual BV integration.",
+      "location": "source_cap_bv_decomposition.md §§5-6",
+      "evidence": "Fourier and Berezin integration, distributional derivative identity, residual canonical map, nonzero unit normalization and exact graded finite tests.",
+      "limits": "Source mean and ghost momentum retained; no infinite flat measure, full mixed-insertion domain, original joint-source factorization or full regional state theorem."
+    },
+    {
+      "id": "SC3",
+      "status": "PROVED_FOR_SOURCE_MODEL_PREQUANTUM_FRAME",
+      "statement": "The symmetric cap generator of the canonical source model requires both bosonic and ghost terms and is closed under the full cap BFV differential.",
+      "location": "source_cap_bv_decomposition.md §7",
+      "evidence": "Q(px)=pc and Q(bc)=-pc; explicit failure of the bosonic-only generator.",
+      "limits": "Momentum-dependent frame requires polarization and dual-pairing transport; original full CS ghost/antifield identification remains unproved."
+    },
+    {
+      "id": "BS1",
+      "status": "PROVED_COUNTEREXAMPLE_AND_COTANGENT_OBSTRUCTION",
+      "statement": "An actual regional half-disk solution has zero unreleased BV vector but nonzero seam response, forbidding a response-preserving Q-map from that unreleased field domain to SC; smooth bulk densities alone also cannot represent the pure source-response covector.",
+      "location": "bulk_boundary_source_release.md §§1-2",
+      "evidence": "Explicit flat fields with real-wall and endpoint checks; allowed probe yields -8 kappa/15; Q-fixed-point argument and compact-interior test proof; weighted Stokes cancellation.",
+      "limits": "Does not forbid boundary-state pairing, derived release, quantum pushforward or a comparison restricted to response-matched data."
+    },
+    {
+      "id": "BS2",
+      "status": "PROVED_FOR_DECLARED_OFF_SHELL_RELEASE_MODEL",
+      "statement": "The action-derived source-release extension retains response and seam-antifield jumps and has a continuous off-shell Q-map to every coordinate of the SC source model.",
+      "location": "bulk_boundary_source_release.md §§3-4",
+      "evidence": "Q beta=-p and Q zeta=dot beta+N; actual collar adjoints, Stokes identities and relative trace primitive give all eight coordinate equations, with curvature and dot p retained.",
+      "limits": "Common q and proper ghost, original U(1) smooth corner domain and explicit boundary covectors; no assertion that the forgetful map is a quasi-isomorphism, that Phi is symplectic, or that its full fiber is contractible."
+    },
+    {
+      "id": "BS3",
+      "status": "PROVED_COMPONENT_ACTION_IDENTITY",
+      "statement": "The original regional CS ghost action in the stated canonical component frame gives the SC source ghost terms with explicit temporal cap correction; its canonical source momentum still contains the projected bulk curvature sector.",
+      "location": "bulk_boundary_source_release.md §5",
+      "evidence": "Exact Grassmann transgression identity, physical and ghost component variational normalization, projected source terms and nonzero cap witness.",
+      "limits": "All symmetric-to-canonical boundary terms retained; not a full quantum state or a canonical factorization of the complete regional BV fields."
+    }
+  ],
+  "updated": "2026-09-21"
+}
