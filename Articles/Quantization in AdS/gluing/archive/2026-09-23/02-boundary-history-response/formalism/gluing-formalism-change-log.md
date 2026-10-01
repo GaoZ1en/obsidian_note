@@ -2,7 +2,7 @@
 
 This archive preserves manuscript provenance, backup records, verification notes, and referee-response history. It is not part of the mathematical manuscript or its current claim authority.
 
-## Archive-location note
+## Archive-Location Note
 
 Historical entries that say a backup was created “in the same directory” describe its location at creation time. Those snapshots were subsequently relocated under `Attachments/gluing-formalism-mementos-20260823-232342/`; the historical filenames and hashes below remain unchanged. The 2026-08-24 pre-cleanup snapshots were created directly in that memento directory:
 
@@ -11,7 +11,7 @@ Historical entries that say a backup was created “in the same directory” des
 
 ## 2026-08-24
 
-### Independent Opus 5 final audit cleanup
+### Independent Opus 5 Final Audit Cleanup
 
 - Used `gluing formalism review 20260824.md` as a referee-style checklist while treating the current local `gluing formalism.md` as the sole manuscript baseline.
 - Restricted the hard KG slice-covariance corollary to the ultrastatic constant-time energy-data realization actually covered by Part II. General smooth tilted-slice covariance remains an abstract conditional theorem requiring evaluation bijections, finite-energy traces, weak Stokes, and physical-boundary corner regularity.
@@ -22,7 +22,7 @@ Historical entries that say a backup was created “in the same directory” des
 - Moved construction narration and the long change log out of the proof manuscript. No defect example, arbitrary tilted-slice PDE theorem, gauge/BV theorem, general FIO theorem, sharp-interface quantum theorem, history-measure theorem, or new large-coupling theorem was added.
 - This pass is final claim/notation/manuscript hardening only; it does not expand the formalism scope.
 
-### Final validation
+### Final Validation
 
 - Pandoc native and LaTeX parses of the manuscript, plus native parse of this archive, exited $0$ without diagnostics.
 - The manuscript has $1248$ double-dollar delimiters and balanced environments: `align` $613/613$, `aligned` $2/2$, `array` $9/9$, `cases` $4/4$, `pmatrix` $21/21$, and `smallmatrix` $1/1$.
@@ -31,7 +31,6 @@ Historical entries that say a backup was created “in the same directory” des
 - Existing Wolfram regressions were run serially. `regulator_audit_checks.wl` exited $0$ with the documented ordering, positivity, residual-inertia, conditioning, CCR-residual, and ultraviolet outputs; `associativity_checks.wl` exited $0$ with `AllChecksPassed -> True`.
 - Final manuscript size is $345820$ bytes with SHA-256 `eee035ca597aa88ad20a2354fdeb62a6875b47fe16ebab7665c937da46515ebd`; final local governance file size is $12298$ bytes with SHA-256 `7c570844aa17e7313a95db5696a267602eb9a216cc3e4490104821ba9f4bd97e`.
 - These checks verify artifact integrity, syntax, finite identities, and the stated notation/scope cleanup. They do not prove the conditional tilted-slice PDE hypotheses or any continuum theorem beyond the manuscript's displayed arguments.
-
 
 ### 2026-08-23
 

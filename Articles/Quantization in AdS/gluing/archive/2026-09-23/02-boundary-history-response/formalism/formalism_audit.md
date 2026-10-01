@@ -125,8 +125,7 @@ So $\operatorname{cond}M_N=O(N^4)$ while $\operatorname{cond}M_{\mathrm{port},N}
 
 ### 4.2 Consequence: the Declared Quantum Comparison Measures the Regulator
 
-Using the declared transport $T_N^{\mathrm{ref}}=M_N^{-1/2}$ and
-$\boldsymbol\beta_N=\tfrac12(\widetilde W_N^{1/2}O_N^{\mathrm T}W_N^{-1/2}-\widetilde W_N^{-1/2}O_N^{\mathrm T}W_N^{1/2})$:
+Using the declared transport $T_N^{\mathrm{ref}}=M_N^{-1/2}$ and $\boldsymbol\beta_N=\tfrac12(\widetilde W_N^{1/2}O_N^{\mathrm T}W_N^{-1/2}-\widetilde W_N^{-1/2}O_N^{\mathrm T}W_N^{1/2})$:
 
 | $N$ | $\operatorname{Tr}(\boldsymbol\beta_N\boldsymbol\beta_N^\dagger)$ | $/N$ | lowest glued mode | share |
 |---:|---:|---:|---:|---:|

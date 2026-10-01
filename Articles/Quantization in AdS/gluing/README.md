@@ -2,6 +2,12 @@
 
 2026-09-23：按项目选择，将本目录现存研究材料整体归档。本目录不再维护 active formalism 或待办队列；归档不表示每个旧计算都被否定，也不表示旧目标已经完成。新的研究选择不在这里编写。
 
+## 归档后补充的独立笔记
+
+- 2026-09-26：[Regional Field Theories and Sewing](REGIONAL_THEORY_AND_SEWING.md)：一般 formalism，按英文定义、构造、定理与证明组织区域变分理论、闭合／opening、传输、光滑装配、CPS、响应、观测代数、量子重建及有限次组合；适用条件列在相应陈述中。
+- 2026-09-26：[Regional BV–BFV Theories and Sewing](REGIONAL_BV_BFV_FORMALISM.md)：一般 BV–BFV formalism，按区域定义与经典拼接、同伦匹配与 residual transfer、CPS／响应／观测、量子态／多重插入／corners、量子 sewing 与重建、有限组合与选择比较展开；态构造明确区域 Gaussian lift、联合 polarized BV fibre、界面 kernel 与 residual pushforward，保留新增界面零模，并列出全阶 symplectic chart 和共享 corner 的混合相容条件；区分态代表严格相等与态类相等，解析存在性仍作为输入，不含具体模型例子。
+- [配套例子与计算记录](REGIONAL_THEORY_AND_SEWING_EXAMPLES.md)：从正文移出的标量、Maxwell／Yang–Mills、YM2、Chern–Simons 与 Einstein／AdS3 材料，以及原展开稿的符号检查和来源记录。下面的历史归档及其 claim 状态保留原样。
+
 ## 从哪里读
 
 - [思路演变](HISTORY.md)：从界面耦合、边界历史／响应、可观测代数，到完整规范场和 BV–BFV 比较；说明每次转向改变了什么对象、留下什么问题。
