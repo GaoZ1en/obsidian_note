@@ -71,10 +71,12 @@ def skill_name(skill_md: Path, errors: list[str]) -> str | None:
 
 def local_skill_names(root_text: str, errors: list[str]) -> set[str]:
     names: set[str] = set()
-    for skill_md in sorted(LOCAL_SKILLS.glob("*/SKILL.md")):
+    for skill_md in sorted(LOCAL_SKILLS.rglob("SKILL.md")):
         name = skill_name(skill_md, errors)
         if name is None:
             continue
+        if name in names:
+            errors.append(f"duplicate local skill name: {name}")
         names.add(name)
         if skill_md.parent.name != name:
             errors.append(

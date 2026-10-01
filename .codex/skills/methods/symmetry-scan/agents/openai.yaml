@@ -1,0 +1,6 @@
+interface:
+  display_name: "对称性探索"
+  short_description: "从模型结构与物理线索形成对称性猜想，提供值得尝试的方向和理由"
+  default_prompt: "使用 $symmetry-scan 分析这个模型中哪些结构值得怀疑存在对称性，提出有具体依据的方向，并按问题需要推进猜测。"
+policy:
+  allow_implicit_invocation: true

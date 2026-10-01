@@ -19,6 +19,7 @@ Project-local skills under `.codex/skills/` are authoritative for their workflow
 - `research-project-maintainer` at `.codex/skills/research-project-maintainer/SKILL.md`: advance an active research project.
 - `pandoc-texfiles` at `.codex/skills/pandoc-texfiles/SKILL.md`: maintain Markdown-to-TeX generation.
 - `notes-git-commit` at `.codex/skills/notes-git-commit/SKILL.md`: review, stage, or commit approved vault changes.
+- `symmetry-scan` at `.codex/skills/methods/symmetry-scan/SKILL.md`: develop symmetry conjectures from a model's structure, with principles and possible directions for exploration. Reusable analysis-method skills live under `.codex/skills/methods/`.
 
 Use `note-math-verify` when available for formula-heavy notes. Use narrower applicable skills before broader maintenance or commit workflows; `pandoc-texfiles` owns its generation commands, and `notes-git-commit` runs last.
 
