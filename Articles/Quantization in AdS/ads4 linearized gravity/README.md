@@ -12,7 +12,8 @@ Working notes for adapting the AdS3 linearized-gravity setup to global AdS4 and 
 | `linearize.md` | Global AdS4 background conventions, perturbative Einstein equation, de Donder and TT reductions, quadratic Einstein-Hilbert density, symplectic current, and radial cutoff geometry. |
 | `Killing algebra.md` | Explicit $\mathfrak{so}(2,3)$ Killing generators, Cartan basis, quadratic Casimir, primary modes, mass-$\Delta$ relations, descendant construction, and gauge branches for scalar, vector, Maxwell, TT tensor, and graviton modes. |
 | `symplectic norm.md` | Covariant symplectic forms, normalizability conditions, primary normalization constants, descendant $SO(3)$ decompositions, and physical gauge quotients for Maxwell and gravity. |
-| `gauge representatives.md` | Direct Maxwell and graviton gauge representatives for the massless short modules, with quotient data used only to label the physical $SO(3)$ multiplets. |
+| `gauge representatives.md` | Complete normalized scalar/vector-type graviton and electric/magnetic Maxwell modes, explicit components in a simple gauge, Gegenbauer radial functions, fixed-source boundary conditions, exceptional sectors, and completeness. |
+| `verification/` | Reproducible xAct/Mathematica/Sage checks of the reconstructed modes, radial integrals, ADM normalization identities, and character counting. |
 | `partition function.md` | AdS4 refined traces $\mathrm{Tr}\,e^{-\beta H+i\alpha J_3}$, one-particle characters, bosonic Fock-space partition functions, and the general integer-spin $s$ AdS4 formula. |
 | `so(2,d-1) algebra.md` | General AdS$_d$ compact decomposition, positive-energy highest-weight modules, $SO(d-1)$ symmetric-traceless characters, long-module characters, and massless short-module quotients. |
 | `heat kernel.md` | General AdS$_d$ thermal heat-kernel derivation of the spin-$s$ long and massless one-loop partition functions, matched to the $SO(2,d-1)$ module characters. |
@@ -24,7 +25,7 @@ The AdS4-specific notes build from local field data to Hilbert-space data:
 1. `linearize.md` fixes the background, perturbative Einstein equation, TT reduction, and symplectic current.
 1. `Killing algebra.md` constructs explicit highest-weight primaries and descendants for scalar, vector, Maxwell, TT tensor, and graviton branches.
 1. `symplectic norm.md` determines the normalizable physical modules and explains how gauge quotients remove longitudinal submodules.
-1. `gauge representatives.md` chooses direct representatives for the Maxwell and graviton short modules.
+1. `gauge representatives.md` gives every physical Maxwell and graviton mode under the stated smooth-centre, fixed-source boundary conditions; gravity uses Regge–Wheeler gauge with an additional odd TT representative.
 1. `partition function.md` converts those physical one-particle modules into refined AdS4 Fock-space partition functions.
 
 The general notes then abstract the same structure:
@@ -48,6 +49,8 @@ The normalizable positive-energy modes organize into highest-weight modules.  Ma
 
 For the gauge theories, the quotient removes a level-shifted gauge submodule.  It does not remove part of the physical primary multiplet: the Maxwell primary remains the full $V_1$, and the graviton primary remains the full $V_2$.
 
+The explicit fixed-source modes now have two branches: scalar/electric modes with $\omega=j+1+2p$ and vector/magnetic modes with $\omega=j+2+2p$, where $p\geq0$, $j\geq2$ for gravity and $j\geq1$ for Maxwell. `gauge representatives.md` supplies the normalized metric/potential components. Even and odd master boundary conditions belong to different polarizations; they cannot both be assigned to the same transverse Maxwell potential.
+
 ## Verification status
 
 - The AdS4 background curvature data, raw Einstein-Hilbert quadratic density, and symplectic-current formulas in `linearize.md` were checked in the previous xPert/xCPS verification pass.
@@ -55,3 +58,4 @@ For the gauge theories, the quotient removes a level-shifted gauge submodule.  I
 - The general massive and massless spin-$s$ character formulas were checked by finite-order expansions for representative integer spins.
 - The heat-kernel derivation in `heat kernel.md` has been checked downstream from the standard Harish-Chandra image formula: the denominator relation, proper-time integral, mass shift, AdS4 specializations, and general AdS$_d$ long/short formulas match the module-character result.
 - The explicit symplectic-normalization formulas in `symplectic norm.md` are used as mode-normalization inputs; they should be rechecked separately before being used as final numerical normalization data.
+- The complete modes in `gauge representatives.md` have an independent 2026-09-19 check: all Einstein/Maxwell components vanish symbolically for general harmonic labels using the master ODE; the ADM normalization identities include the radial surface term. The generic Gegenbauer reduction is symbolic, with an additional exact 24-mode scan of radial equations, integrals, derivatives, and endpoints. The character comparison was checked through energy 14. These checks do not revalidate unrelated primary formulas elsewhere in the folder.
