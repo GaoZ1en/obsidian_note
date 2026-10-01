@@ -1,3 +1,5 @@
+Complexity should only appear when it is intrinsic to the problem
+
 ## TODO
 
 1. consider how to do canonical quantization in CPS without explicit mode expansion.
@@ -7,6 +9,10 @@
 		3. a more natural formalism for gluing
 		4. fock space factorization fails generally
 		5. generic spacetime has no preferred positive-frequency decomposition
+2. perturbiner
+	1. a "novel" perturbation method that construct the CPS-normalized multiparticle solution map
+
+然后量子化是下一层，而不是混在 definition 里。
 
 #### 常用prompts
 
@@ -113,8 +119,7 @@ Bousso
     - **不要怕导师说没价值**：吴老师是行家，他知道 Edge Modes 和 Higher-form Symmetry 是现在的热点。你只要是从“物理机制”出发（比如：为了理解熵的微观起源），而不是为了数学而数学，他一定会支持。
     - **关于“忘掉”**：理论物理就是不断遗忘再重新推导的过程。记笔记（就像你现在做的）是最好的对抗遗忘的方式。
 
-**一句话行动指南**：
-去读 **Donnelly & Freidel**，尝试用你的 **CPS 框架** 复现他们的 **Maxwell Edge Modes** 结果。这是你
+**一句话行动指南**： 去读 **Donnelly & Freidel**，尝试用你的 **CPS 框架** 复现他们的 **Maxwell Edge Modes** 结果。这是你
 
 通往量子引力熵的必经之路。
 

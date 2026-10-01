@@ -205,3 +205,17 @@ S_{2}'^{-1}(S_{1}^{-1}M)\xrightarrow{\sim}(S_{1}S_{2})^{-1}M
 by sending $\displaystyle{(m/s_{1})/(s_{2}/1)}$ to $\displaystyle{m/(s_{1}s_{2})}$.
 
 ## Change of Rings
+
+(1.5.1) let $\displaystyle{A,A'}$ be two rings, $\displaystyle{\varphi:A'\to A}$ be a homomorphism, $\displaystyle{S}$ (resp. $\displaystyle{S'}$) be a multiplicative subset of $\displaystyle{A}$ (resp. $\displaystyle{A'}$) such that $\displaystyle{\varphi(S')\subset S}$; by (1.2.4), the composite homomorphism $\displaystyle{A'\xrightarrow{\varphi}A\to S^{-1}A}$ factorizes as $\displaystyle{A'\to S'^{-1}A\xrightarrow{\varphi ^{S'}}S^{-1}A}$; we have $\displaystyle{\varphi ^{S'}(a'/s')=\varphi(a')/\varphi(s')}$. Let $\displaystyle{A=\varphi(A')}$ and $\displaystyle{S=\varphi(S')}$, $\displaystyle{\varphi ^{S'}}$ is then surjective. Let $\displaystyle{A'=A}$ and $\displaystyle{\varphi}$ be the identity map, $\displaystyle{\varphi ^{S'}}$ becomes the homomorphism $\displaystyle{\rho ^{S,S'}_{A}}$ defined in (1.4.1).
+
+(1.5.2) under the assumptions in (1.5.1), let $\displaystyle{M}$ be an $\displaystyle{A}$-module. There exist an  $\displaystyle{S'^{-1}A'}$-module canonical homomorphism, functorial in $\displaystyle{M}$
+
+$$\begin{align}
+\sigma:S'^{-1}(M_{[\varphi]})\to(S^{-1}M)_{[\varphi ^{S'}]}
+\end{align}$$
+
+, which send $\displaystyle{m/s'\in S'^{-1}(M_{[\varphi]})}$ to $\displaystyle{m/\varphi(s')\in(S^{-1}M)_{[\varphi ^{S'}]}}$; in fact, we can immediately verify that this definition does not depend on the choice of representative of $m/s'$. When $\displaystyle{S=\varphi(S')}$, $\displaystyle{\sigma}$ is bijective. When $\displaystyle{A'=A}$ and $\displaystyle{\varphi}$ is identity map, $\displaystyle{\sigma}$ becomes the homomorphism $\displaystyle{\rho ^{S,S'}_{M}}$ defined in (1.4.1)
+
+When take in particular $\displaystyle{M=A}$, the homomorphism $\displaystyle{\varphi}$ defined on $\displaystyle{A}$ is a $\displaystyle{A'}$-algebra structure; $\displaystyle{S'^{-1}(A_{[\varphi]})}$ is then equipped with a ring structure, under which it can be identified with $\displaystyle{(\varphi(S'))^{-1}A}$, and the homomorphism $\displaystyle{\sigma:S'^{-1}(A_{[\varphi]})\to S^{-1}A}$ is an $\displaystyle{S'^{-1}A'}$-algebra homomorphism.
+
+(1.5.3)
