@@ -246,7 +246,7 @@ $$
 
 ## 8. 验证范围
 
-Verified: 新的 Einstein/TT/GHY 路线、Gaussian 有限区域通量与 sewing、负能量与非可积例子、紧支撑脉冲逻辑、剪切薄壳反例、紧空间二阶约束障碍，以及此次复跑的 AdS$_3$ 标尺。细节、计数和原始结果见 [verification](verification.md)。
+Verified: 新的 Einstein/TT/GHY 路线、Gaussian 有限区域通量与 sewing、负能量与非可积例子、紧支撑脉冲逻辑、剪切薄壳反例、紧空间二阶约束障碍，以及此次复跑的 AdS$_3$ 标尺。细节、计数和原始结果见 [verification](Drafts/Sewing-compatible%20gravitational%20energy/verification.md)。
 
 Assumptions: 每个例子中明列的作用量、时间归一化、周期化、边界源空间与正则性；旧 AdS 模式使用旧脚本的耦合和 real-phase 选择。
 

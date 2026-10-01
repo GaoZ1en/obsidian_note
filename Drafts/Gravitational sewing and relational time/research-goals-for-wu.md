@@ -45,6 +45,6 @@ Wu 的原始图像是：把有限引力区域 A 与外部区域 B 拼起来，�
 
 ## 对应已有材料
 
-- [项目入口与前两阶段](README.md)
+- [项目入口与前两阶段](Drafts/Gravitational%20sewing%20and%20relational%20time/README.md)
 - [一般引力界面的拼接](general-gravitational-sewing.md)
 - [辐射引力中的正则性、关系时钟与区域代数](radiative-regularity-clocks-and-algebras.md)

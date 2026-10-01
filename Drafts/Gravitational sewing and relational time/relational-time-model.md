@@ -852,7 +852,7 @@ $$
 3. Leonardo Chataignier, Philipp A. Höhn, Maximilian P. E. Lock and Fabio M. Mele, *Relational Dynamics with Periodic Clocks*, [arXiv:2409.06479](https://arxiv.org/abs/2409.06479)。周期钟的关系演化与一周期描述的边界。
 4. Viktoria Kabel, Časlav Brukner and Wolfgang Wieland, *Quantum Reference Frames at the Boundary of Spacetime*, [arXiv:2302.11629](https://arxiv.org/abs/2302.11629)。有限边界引力的二阶微扰分析，把边界模作为参考系并得到相应量子约束。
 
-Verified: Mathematica 共 85 项精确检查通过：经典局部规范抵消与约化、$d=2,3,4,5,6$ 的投影/核维数/时钟/传播、一般两能级混态及协变 POVM、种子过滤、关系算符、部分转置、外边界演化、谱失配及两层拼接。通用有限 $d$ 结论依赖正文逐项证明，不把有限维样本检查当成所有 $d$ 的证明。详见 [验证记录](verification.md)。
+Verified: Mathematica 共 85 项精确检查通过：经典局部规范抵消与约化、$d=2,3,4,5,6$ 的投影/核维数/时钟/传播、一般两能级混态及协变 POVM、种子过滤、关系算符、部分转置、外边界演化、谱失配及两层拼接。通用有限 $d$ 结论依赖正文逐项证明，不把有限维样本检查当成所有 $d$ 的证明。详见 [验证记录](Drafts/Gravitational%20sewing%20and%20relational%20time/verification.md)。
 
 Assumptions: $\hbar=1$；有限非简并匹配整数谱；选定的界面相位规范对称性；$C=h_A-h_B$；物理态支撑于 $\ker C$；指定协变时钟 POVM；外边界 Hamiltonian 按 setup 选择；顺序测量使用第 9 节指定的 instrument。
 

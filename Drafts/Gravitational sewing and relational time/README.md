@@ -7,7 +7,7 @@
 **两能级系统已经足够：** 约束 $C=h_A-h_B=0$ 选出 $c_0|00\rangle+c_1|11\rangle$，读取 $B$ 的协变相位时钟后，$A$ 严格按 $e^{-ith_A}$ 演化。时间以 $T=2\pi/\omega$ 为周期，保留的外边界 Hamiltonian 为 $H_{B,o}=h_B$。
 
 - [完整模型与分析](relational-time-model.md)：setup、作用量母模型、约束与物理内积、相干投影、时钟 POVM、必要充分条件、全部两能级矩阵、关系可观测量、两时刻传播、纠缠、外边界演化和嵌套检查。
-- [验证记录](verification.md)：实际执行结果、复跑方式、适用范围与来源核对级别。
+- [验证记录](Drafts/Gravitational%20sewing%20and%20relational%20time/verification.md)：实际执行结果、复跑方式、适用范围与来源核对级别。
 - [计算与原始输出](verification/)：两份 Wolfram Language 输入、结构化结果及实际标准输出。
 
 最关键的区分是：相干零荷投影不同于统计群平均；有限读数分辨率不自动意味着条件演化非幺正；对界面规范变换不变不同于对外边界 Hamiltonian 静止。

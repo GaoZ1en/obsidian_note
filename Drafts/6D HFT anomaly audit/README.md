@@ -17,7 +17,7 @@ $$
 这里 $\mathbf2$ 是内部 $SU(2)$ 表示，六维旋量指标已经包含在 Dirac index 中。整体手性符号改变不影响不消去的结论。
 
 - [完整推导与结论边界](anomaly-audit.md)：自由度、Pfaffian 权重、局域反例、spin/geometry 计数、Green–Schwarz/global 条件、$SG(1)$。
-- [验证记录与来源定位](verification.md)：Mathematica、Sage 的实际结果及 PDF 页码。
+- [验证记录与来源定位](Drafts/6D%20HFT%20anomaly%20audit/verification.md)：Mathematica、Sage 的实际结果及 PDF 页码。
 - [计算文件](verification/)：可复跑输入与工具原始输出。
 
 Verified: 11 项旋量矩阵检查、17 项特征类/系数/权重检查、8 项 Sage 检查通过；关键论文公式已对照渲染页面。

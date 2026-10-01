@@ -332,7 +332,7 @@ frame/joint 变化也在 (27) 的完整输入中。若 $\mathcal F=0$，就得�
 
 有限作用量的 corner 保留方式可对照 [Harlow–Wu, §§2.2–2.4](https://arxiv.org/html/1906.08616v3)。二次能量与质量/面积二阶变分的关系可对照 [Hollands–Wald](https://arxiv.org/abs/1201.0463)。本文的论证使用上面固定的本地约定，而不是从文献名称推定号数。
 
-Verified: (12)、(16)、(20) 及明确的反例有独立精确代数检查；四维 TT Einstein/二次作用量/空间约束和 GHY 壁响应经 xAct 检查。实际复跑结果与适用范围见 [verification](verification.md)。§8 给出纸面的一般条件证明；有限矩阵检查不替代该证明。
+Verified: (12)、(16)、(20) 及明确的反例有独立精确代数检查；四维 TT Einstein/二次作用量/空间约束和 GHY 壁响应经 xAct 检查。实际复跑结果与适用范围见 [verification](Drafts/Sewing-compatible%20gravitational%20energy/verification.md)。§8 给出纸面的一般条件证明；有限矩阵检查不替代该证明。
 
 Assumptions: 同一 finite-action 处方；光滑、有限的容许解/frame 历史；背景 Killing 且保域的时间流；延拓残差是真正零荷方向；sewing 使用完整 trace、响应、frame 与 corner 匹配。Hamiltonian/Hessian 结论有 §7 的额外前提。
 

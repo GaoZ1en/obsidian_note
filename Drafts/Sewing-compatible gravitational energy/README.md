@@ -17,7 +17,7 @@ $$
 | [formalism.md](formalism.md) | 定义、finite-action 推导、四项性质、主定理与证明，§8 是精确命题 |
 | [benchmarks.md](benchmarks.md) | 四维 TT 波包的有限区域计算；BTZ、modular wedge、面积标尺；二阶约束反例 |
 | [counterexample-audit.md](counterexample-audit.md) | 42 个概念/claim 的攻击、判定、修订与停止标准 |
-| [verification.md](verification.md) | 实际检查、计数、原始结果、复跑方式与证据边界 |
+| [verification.md](Drafts/Sewing-compatible%20gravitational%20energy/verification.md) | 实际检查、计数、原始结果、复跑方式与证据边界 |
 | [checks/](checks/) | 新的 Mathematica/xAct 输入、旧标尺复跑结果及请求/文件指纹 |
 
 原设想中必须改写的三点：
