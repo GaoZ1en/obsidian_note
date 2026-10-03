@@ -51,3 +51,9 @@ tools/wechat-decrypt/
 
 # Ignore commandcode configurations
 /.commandcode/**
+
+# Keep gravitational sewing and relational-time research local
+/Drafts/Gravitational sewing and relational time/
+
+# Keep OFPT calculation scripts and generated results local
+/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/scripts/
