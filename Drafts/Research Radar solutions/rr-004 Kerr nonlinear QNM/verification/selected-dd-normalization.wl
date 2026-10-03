@@ -1,0 +1,1 @@
+data=Get["/Users/koishi/Documents/Note/Drafts/Research Radar solutions/rr-004 Kerr nonlinear QNM/verification/kerr-dd-response-data-l18.wl"]; first=First[data["summary"]]; expected=first["E"]/(2 data["w"]^6 data["amp"]^2); <|"E4"->N[first["E"],30],"R4_bilinear"->N[expected,30],"saved_ratio_residual"->N[expected-first["ratio_bilinear_spheroidal"],30]|>

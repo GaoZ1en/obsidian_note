@@ -1,0 +1,1012 @@
+                                                Quadratic Mode Couplings in Rotating Black Holes and Their Detectability
+                                                                                                                                        2, ‡
+                                                                       Neev Khera     ,1, 2, ∗ Sizheng Ma     ,3, † and Huan Yang
+                                                            1
+                                                                Department of Physics, University of Guelph, Guelph, Ontario, Canada N1G 2W1
+                                                                    2
+                                                                      Department of Astronomy, Tsinghua University, Beijing 100084, China
+                                                                 3
+                                                                   Perimeter Institute for Theoretical Physics, Waterloo, ON N2L2Y5, Canada
+                                                                                            (Dated: September 2024)
+                                                         Quadratic quasinormal modes encode fundamental properties of black hole spacetimes. They
+                                                      are also one of the key ingredients of nonlinearities of General Relativity in the ringdown stage of
+                                                      binary black hole coalescence. In this work, we classify all possible quadratic coupling channels of
+                                                      quasinormal modes for a generic Kerr black hole, and use a frequency-domain pseudospectral code
+                                                      with hyperboloidal slicing to calculate these couplings. After accounting for all the channels in sys-
+                                                      tems with reflection symmetry, our results become consistent with those extracted from numerical
+                                                      simulations and time-domain fits. This agreement provides a compelling example demonstrating
+                                                      the success of black hole second-order perturbation theory. We also explore potential applications
+
+
+
+
+arXiv:2410.14529v3 [gr-qc] 19 Jun 2025
+                                                      of our calculations in future ringdown data analysis by carrying out a detectability survey for vari-
+                                                      ous quadratic modes. We find that a few of them are observationally relevant for third-generation
+                                                      ground-based detectors like Cosmic Explorer, as well as the space-borne detector LISA (Laser In-
+                                                      terferometer Space Antenna).
+
+
+                                                            INTRODUCTION                                    mode ℓ = m = 2, n = 0 for BH spins χ ∈ [0, 0.95].
+                                                                                                            Furthermore, we extend our discussions in Paper I by
+                                            Black hole (BH) ringdown after binary BH coalescence            providing a comprehensive classification of all possible
+                                         encodes key information about the spacetime of the final           mode-coupling channels that contribute to the same fre-
+                                         BH [1–3], as well as the binary’s inspiral properties, such        quency of quadratic modes. This classification allows us
+                                         as the mass ratio, spins, etc [4–9]. Theoretically, it is          to resolve the disagreement between our previous QQNM
+                                         important to characterize various linear and non-linear            calculations in Paper I and numerical simulations.
+                                         signals in the ringdown stage and their connection to the             Leveraging the recent ringdown surrogate model1 [8],
+                                         inspiral parameters, as predicted by General Relativity            we discuss potential applications of our calculations in
+                                         (GR). In particular, understanding nonlinear signals not           future ringdown data analysis. As an example, we carry
+                                         only enables direct tests of nonlinearities in GR, but also        out a parameter survey to forecast the SNRs of sev-
+                                         allows more theoretically meaningful ringdown fits at ear-         eral quadratic modes measured by Cosmic Explorer (CE)
+                                         lier times. This is particularly important for data anal-          and Laser Interferometer Space Antenna (LISA) [41, 42],
+                                         ysis, as fitting the ringdown from earlier times generally         complementing the recent study by Yi et al. [43]. Our
+                                         leads to a higher signal-to-noise ratio (SNR).                     findings indicate that multiple QQNMs are relevant for
+                                                                                                            future ringdown analysis.
+                                            Among various BH nonlinearities [7, 10–26], quadratic
+                                                                                                               Throughout this work we adopt the geometric unit by
+                                         quasinormal modes (QQNMs) stand out due to their con-
+                                                                                                            setting G = c = 1. Complex conjugates are represented
+                                         ceptual simplicity and their potential observability us-
+                                                                                                            by overlines. We use (l, m, n, p) to stand for a QNM,
+                                         ing current ringdown fitting techniques [27–34]. QQNMs
+                                                                                                            where p = sgn(Re(ω)); and ω to denote frequency values.
+                                         have been identified by fitting numerical time-domain
+                                                                                                            Due to the reflection symmetry of Kerr, QNMs come in
+                                         simulation data at infinity [7, 10–14] and on the BH hori-
+                                                                                                            pairs with frequency values related via
+                                         zon [17]. However, a complete and accurate characteri-
+                                         zation of the modes relies on frequency domain methods,                                  p
+                                                                                                                                 ωℓmn      −p
+                                                                                                                                      = −ω̄ℓ−mn ,                (1)
+                                         which is the focus of this work.
+                                            Along with an earlier work [18] (hereafter Paper I),            where modes with (m, p) and (−m, −p) (and the same
+                                         we develop two independent frequency-domain methods                l, n) are mirrors of each other.
+                                         to handle QQNMs for generic Kerr BHs. In Paper
+                                         I, we analytically reconstructed the metric and solved
+                                         the frequency-domain second-order Campanelli–Lousto-                  QQNMS WITH HYPERBOLOIDAL SLICING
+                                         Teukolsky equation [35] along a complex contour. Al-
+                                         ternatively, in this paper, we adopt the reduced second-             QNMs are known to diverge at spatial infinity and at
+                                         order Teukolsky equation [36, 37] and use the pseudo-              the bifurcate horizon. While this divergence poses no
+                                         spectral method to numerically assemble its source term.
+                                         Subsequently, we solve the equation spectrally in hyper-
+                                         boloidal slicing [38–40]. Both methods generate consis-
+                                                                                                            1 See also [9].
+                                         tent results for the coupling coefficient of the prograde
+                                                                                                                                               2
+
+physical issue because they do not lie in the region where                CLASSIFICATION OF MODE COUPLINGS
+the QNMs are a good approximation, it can cause numer-
+ical challenges. In Paper I, we deal with the divergence                 Quadratic coupling channels can be viewed in two per-
+by using the complex plane approach. Here, we adopt an                spectives. The first traces the relationship from linear
+alternative method—hyperboloidal time slicing—which                   parent modes to quadratic daughter modes. Consider
+avoids the problematic regions. This enables direct nu-               two linear QNMs (ℓ1 , m1 , n1 , p1 ) and (ℓ2 , m2 , n2 , p2 ),
+merical treatments of the reduced second-order Teukol-                with strain amplitudes A1 and A2 . The correspond-
+sky equation [36, 37]                                                                              (1)
+                                                                      ing linearized metric hab has four frequency compo-
+                       h      i
+                          (2)
+                     T Ψ4 = S4 .
+                                 (2)
+                                                       (2)            nents ωℓ1 m1 n1 , −ω̄ℓ1 m1 n1 , ωℓp22m2 n2 , and −ω̄ℓp22m2 n2 , with
+                                                                                p1            p1
+
+                                                                      the amplitudes A1 , Ā1 , A2 and Ā2 , generated by the
+Using the hyperboloidal slicing, it has been shown that               frequency pairs of the linear modes (ℓ1 , m1 , n1 , p1 ) and
+QNMs are eigenvectors of the non-normal time evolution                (ℓ2 , m2 , n2 , p2 ). Consequently, the source term in Eq. (5)
+operator [44]. The separability of the Teukolsky equation             yields four quadratic frequencies:
+can be used to find the eigenvectors in a more efficient
+way, as shown in [45].                                                        ωℓp11m1 n1 + ωℓp22m2 n2 ,          ωℓp11m1 n1 − ω̄ℓp22m2 n2 ,
+                                  (2)
+  To obtain the source term S4 , we take a different                        −ω̄ℓp11m1 n1 + ωℓp22m2 n2 ,        −ω̄ℓp11m1 n1 − ω̄ℓp22m2 n2 ,
+approach from the analytic treatment used in Paper I—
+                                                                      with source terms proportional to the products A1 A2 ,
+here, the source is computed numerically from the Ein-
+                                                                      A1 Ā2 , Ā1 A2 and Ā1 Ā2 , respectively. This gives rise to
+stein Tensor. Specifically, we consider the second-order
+                                                                      four distinct channels through which two linear QNMs
+perturbation of the metric
+                                                                     can generate QQNMs at different frequencies.
+                  ◦      (1)       (2)
+           gab = gab + ϵhab + ϵ2 hab + O ϵ3 ,         (3)               The first perspective, which maps two parent modes
+                                                                      to four daughter modes, is often practically inconvenient.
+where ϵ is a book-keeping parameter that counts the or-
+                                                                      Instead, it is more intuitive to adopt the opposite view-
+ders. The Einstein Tensor, as a functional of the metric,
+                                                                      point: given a certain QQNM frequency, what are its par-
+can then be expanded as
+                                                                      ent modes? To formalize this, we will use the following
+                (1)    (1)     (1)    (2)          (2)   (1)   (1)
+ Gab [gab ] =ϵGab [hab ] + ϵ2 Gab [hab ] + ϵ2 Gab [hab , hab ]        notation to denote a QQNM frequency component:
+                                                                                                             
+              + O ϵ3 ,                                      (4)                             ℓ1 , m1 , n1 , p1
+                                                                                                                 .               (6)
+         (1)           (2)                                                                  ℓ2 , m2 , n2 , p2
+where Gab and 2Gab are the first and second functional
+derivatives of the Einstein Tensor with respect to the                Its time and azimuthal dependence is expressed as:
+metric. To first order, we take the GW strain to be a sum                                   p1            p2
+                            (1)
+of QNMs. We solve for hab by numerically computing                                ∼ e−i(ωℓ1 ,m1 ,n1 +ωℓ2 ,m2 ,n2 )t ei(m1 +m2 )ϕ .            (7)
+the Hertz potential for QNMs in the Outgoing Radiation                This notation represents the set of all QQNMs with
+Gauge (ORG), using the separation technique described                 that frequency, including various channels, and is not re-
+                                                   (1)
+in [45]. Note that for a QNM with frequency ω, hab will               stricted to fixed daughter spherical/spheroidal harmonic.
+have both frequencies ω and −ω̄, which comes from the                 With this notation, several key observations can be made.
+                                           (1)
+complex conjugations necessary to make hab real.                      First, QQNMs with this frequency only appear in the
+   Next, by imposing Einstein’s equations at second or-               (m1 + m2 ) GW harmonics due to the azimuthal angu-
+der, we get the equation                                              lar selection rule. Second, different pairs of modes (up
+                 (1)    (2)     (2)    (1)   (1)                      to exchange symmetry 1 ↔ 2) generally produce distinct
+               Gab [hab ] = −Gab [hab , hab ] ,                 (5)
+                                                                      frequencies. An exception occurs for Schwarzschild BHs,
+        (2)
+thus hab satisfies the linearized Einstein equations with             where spherical symmetry makes QNM frequencies in-
+     (2) (1)    (1)
+−Gab [hab , hab ]/8π acting as the effective stress-energy            dependent of m. Nonetheless, different (m1 , m2 ) pairs
+                                        (2) (1)   (1)                 indicate distinct coupling channels. The total QQNM
+tensor at this order. After computing Gab [hab , hab ] from
+                         (1)                                          amplitude in a GW harmonic is the sum of all possible
+the linearized metric hab , we convert it to the source               pairs (m1 , m2 ) with m1 + m2 fixed.
+  (2)        (2) (2)
+S4 for Ψ4 [hab ] in Eq. (2). Note that while Eq. (5)                     The QQNM frequency in Eq. (6) is generated by four
+only provides the source for the part of Ψ4 that depends              linear QNMs:
+                (2)                                       (2)
+linearly on hab , in ORG quadratic contribution to Ψ4
+        (1)                                                                    (ℓ1 , m1 , n1 , p1 ),           (ℓ1 , −m1 , n1 , −p1 ),
+from hab vanishes.
+   Finally, we numerically solve the Teukolsky equations                       (ℓ2 , m2 , n2 , p2 ),           (ℓ2 , −m2 , n2 , −p2 ),
+                                                 (2)
+with no-incoming boundary conditions to obtain Ψ4 and                 with respective strain amplitudes A1 , A−1 , A2 , and
+  (2)
+Ψ0 for the quadratic modes. More details can be found                 A−2 . It is worth noting that while the frequency val-
+in the Supplementary Material.                                        ues of (ℓ1 , m1 , n1 , p1 ) and (ℓ1 , −m1 , n1 , −p1 ) are related
+                                                                                                                               3
+
+                                                                                           (1)   (1)        (1)
+via Eq. (1), their amplitudes A±1 are independent, ex-               three Weyl scalars Ψ4 , Ψ3 , and Ψ2 , which are then
+cept in nonprecessing systems, where reflection symmetry             multiplied by the terms contributed by the second par-
+imposes                                                              ent mode (indicated in parentheses). For a given linear
+                                                                                                             (1)  (1)        (1)
+                                                                     QNM (l, m, n, p), the expressions for Ψ4 , Ψ3 , and Ψ2
+                         A−1 = (−1)ℓ1 Ā1 .                    (8)
+                                                                     were analytically derived in Paper I [18], see Eqs. (38),
+The four linear QNMs, coupled through the following                  (42), and (46) therein. An intriguing feature emerges: all
+four channels give rise to the same QQNM frequency:                  three Weyl scalars contain only a single frequency com-
+                                                                               p                                       p
+                                                                     ponent, ωlmn  , with no contribution from the −ω̄lmn   fre-
+  (ℓ1 , m1 , n1 , p1 ) ⊗ (ℓ2 , m2 , n2 , p2 ),       + +,     (9a)   quency component in the linearized metric that is asso-
+  (ℓ1 , m1 , n1 , p1 ) ⊗ (ℓ2 , −m2 , n2 , −p2 ),     + −,     (9b)   ciated with the mode (ℓ, m, n, p). As a result, the source
+  (ℓ1 , −m1 , n1 , −p1 ) ⊗ (ℓ2 , m2 , n2 , p2 ),     − +,     (9c)   in Eq. (12) contains no terms resulting from the product
+                                                                     of two conjugated frequency components.
+  (ℓ1 , −m1 , n1 , −p1 ) ⊗ (ℓ2 , −m2 , n2 , −p2 ),   − −.     (9d)
+Below we will refer to them as ++, +−, −+, and
+−−, respectively.          For example, the (+−) chan-                         RESULTS AND COMPARISONS
+nel corresponds to the interaction where the linear                                          
+mode (ℓ2 , −m2 , n2 , −p2 ) generates a frequency compo-                                220+
+                                                                        The QQNM                in the l = m = 4 harmonic
+nent −ω̄ℓ−p   2
+           2 −m2 n2
+                    in the linearized metric, which is numer-                           220+
+ically equal to ωℓp22m2 n2 due to Eq. (1). This component            has been extensively discussed in the literature [10–
+then interacts with the frequency ωℓp11m1 n1 generated by            14, 18–21]. In particular, in Paper I, we found that the
+the first linear mode (ℓ1 , m1 , n1 , p1 ). Denoting the strain      computed amplitude ratio, R++ for the (4, 4) mode in
+amplitude of the QQNM as AQ (using either the spheri-                Eq. (10), was smaller than those extracted from numer-
+cal or spheroidal basis), we have                                    ical relativity [13, 14]. We speculated that the differ-
+                                                                     ence was due to parity freedom in the parent modes (see
+        AQ =R++ A1 A2 + R+− A1 Ā−2 + R−+ Ā−1 A2                    Sec. VI. B in [18]). This was later confirmed in [19–21]
+               + R−− Ā−1 Ā−2 .                              (10)   for Schwarzschild BHs. In this work, after classifying all
+                                                                     mode-coupling channels, we revisit the discrepancy for
+where the coefficients R’s are fully determined by the di-           Kerr BHs.
+mensionless spin of a Kerr BH, and the angular mode                     As shown by the black solid lines in Fig. 1, we first
+under consideration. Here we use spin-weighted spheri-               compute the magnitude and phase of R++ as functions
+cal/spheroidal harmonics as the mode basis to facilitate             of the dimensionless spin χ. Good agreement is observed
+direct comparison with previous results, such as those               with the results obtained in Paper I, as represented by
+from numerical relativity and from Paper I. Alternatively,           cyan dots. The magenta curves correspond to the results
+modes can also be classified by parity, see the Supplemen-           for R+− . Unlike R++ , the magnitude of R+− exhibits a
+tary Material for more details.                                      weaker and non-monotonic dependence on spin, and its
+   For nonprecessing binaries, Eq. (10) reduces to                   value is smaller than that of R++ by a factor of ∼ 7.
+              AQ                                                        For nonprecessing binaries, the total excitability of the
+ Rtotal ≡          =R++ + (−1)ℓ2 R+−                                 QQNM is characterized by Rtotal [Eq. (11)]. The gray
+             A1 A2
+                                                                     curves in Fig. 1 show its dependence on spin. For a
+                    + (−1)ℓ1 R−+ + (−1)ℓ1 +ℓ2 R−− , (11)
+                                                                     Schwarzschild BH, Rtotal = 0.1534e−0.06787i , in agree-
+where we have used Eq. (8). Notice that the right-hand               ment with the values reported in [19–21]. For Kerr
+side (RHS) is an intrinsic property of a Kerr BH, indepen-           BHs, the results (for Rtotal ) extracted from numerical-
+dent of the linear mode amplitudes. We define the RHS                relativity scattering experiments [13] are shown as green,
+as the total amplitude ratio Rtotal , which characterizes            blue, and orange dots in Fig. 1. Our findings are consis-
+the excitability of the QQNM.                                        tent with theirs.
+   The (−−) channel deserves more attention. We find                    We note that the values of R’s depend on the choice of
+that R−− always vanishes identically, regardless of the              angular basis — Paper I adopts spin-weighted spheroidal
+types of parent modes and the spin of the Kerr BH. This              harmonics whereas numerical relativity simulations use
+result follows directly from the second-order Teukolsky              spin-weighted spherical harmonics. In the Supplemen-
+                                          (2)                        tary Material, we compare R across these two bases, find-
+equation in Eq. (2), where the source S4 takes the fol-
+lowing form in ORG [18]:                                             ing that they differ by only ∼ 1% even when χ = 0.95.
+                                                                     For a fair comparison with Paper I, we use spin-weighted
+    (2)                (1)                (1)          (1)
+   S4     = (. . .)(1) Ψ4 + (. . .)(1) Ψ3 + (. . .)(1) Ψ2 .   (12)   spheroidal harmonics for the black and magenta curves
+                                                                     in Fig. 1.         
+                        (2)
+The structure of S4 explicitly illustrates how two par-                            220+
+                                                                        Besides            , we also study six more QQNMs,
+ent modes couple. The first parent mode contributes the                            220+
+                                                                                                                                            4
+
+                                                                    (3, 3, 0, +) mode2 and the the recent QQNMs discovered
+            0.16                                                    in numerical waveforms [47]. We use polynomials to fit
+                                                                    their R for different channels as functions of χ:
+            0.14                                                                                   7
+                                                                                                   X                     7
+                                                                                                                         X
+                                                                       R = Aeiϕ ,      with A =            Ai χi , ϕ =         ϕi χ i .   (13)
+                                                                                                   i=0                   i=0
+            0.12
+                      Total (nonprecessing)                         The values of the coefficients are provided in tables in
+                      This paper (+ + )                             the Supplementary Material.
+
+
+Magnitude
+            0.10      Ma & Yang
+                      Zhu et al. (outgoing)
+                      Zhu et al. (ingoing)
+                      Zhu et al. (prograde)                           IMPLICATIONS FOR FUTURE RINGDOWN
+            0.08                                                                DATA ANALYSIS
+                      This paper (+ − )
+  0.0166                                                               We now analyze the significance of the QQNMs on fu-
+                                                                    ture ringdown data analysis by including all channels.
+  0.0164                                                            For a binary system, the remnant surrogate model from
+                                                                    [48] predicts the remnant’s spin, which can be used in
+                                                                    Eq. (13) to compute quadratic amplitude ratios. When
+               0.0        0.2         0.4         0.6   0.8   1.0   combined with the postmerger ringdown model [8], these
+                                              χ
+                                                                    ratios enable precise quadratic amplitude predictions.
+              0.3                                                   This information has the potential to improve future
+                       Total (nonprecessing)
+                       This paper (+ + )                            Bayesian analyses by narrowing prior ranges and reduc-
+              0.2      Ma & Yang                                    ing the parameter space. Note that our calculations in-
+                       This paper (+ − )                            clude precessing systems.
+                       Zhu et al. (outgoing)
+                       Zhu et al. (ingoing)                            Designing a systematic Bayesian framework that in-
+              0.1      Zhu et al. (prograde)                        corporates our results is beyond the scope of this paper.
+Phase         0.0
+                                                                    Instead, as a figure of merit, we illustrate a practical ap-
+                                                                    plication of our calculations by estimating the SNR of
+                                                                    various QQNMs that have not been previously discussed
+              0.1                                                   in the literature. Below, we follow the method outlined
+                                                                    in [43, 49, 50] to compute these SNRs. For simplicity,
+                                                                    we average the SNRs over all angles, which yields the or-
+              0.2                                                   thogonal condition between two antenna patterns F+,×
+                0.0        0.2        0.4         0.6   0.8   1.0
+                                              χ                     for CE:
+                                                                                      2          1
+                                                                                     F+,× =        ,       ⟨F+ F× ⟩ = 0.
+FIG. 1. A comparison between the complex contour method                                          5
+(cyan dots, from Paper I), time-domain numerical simulations
+                                                                    For LISA, there is an additional factor of 3/2. As pointed
+(green, blue, and orange dots, from Zhu et al. [13]), and our
+current hyperboloidal slicing method (gray, black, and ma-          out in Paper I, a QQNM is present in different ℓ harmon-
+genta curves). The gray curve represents the total amplitude        ics. Its total SNR is given by
+ratio Rtotal for nonprecessing binaries [Eq. (11)]; the black                                 sX
+curve corresponds to R++ in Eq. (9a); and the magenta curve                               ρ=       ρ2ℓ,m .                (14)
+shows R+− in Eq. (9b). The mode amplitudes extracted by                                                ℓ
+Zhu et al. [13] used spin-weighted spherical harmonics, while
+Paper I adopted spin-weighted spheroidal harmonics. Here we         In practice, we find that the first ℓ harmonic typically
+use spin-weighted spheroidal harmonics to make a fair com-
+                                                                    dominates the total SNR.
+parison with Paper I. Results between these two angular bases
+differ by ≤ 1% (see Supplementary Material).                           In this paper, we adopt a conservative estimate by
+                                                                    choosing the starting time to be 10Mtot after the peak,
+                                                                    where Mtot is the total mass of the binary system. Se-
+                                                                    lecting an earlier starting time can moderately increase
+                                                            the SNRs, since QQNMs decay faster than linear funda-
+             330+       440+       440+        220+                 mental modes.
+including           ,          ,           ,          ,
+           220+
+                      2-20−      3-20−       200+
+  220+           330+
+         , and         . These modes are heuristically
+  200−          2-20−
+                                                                    2 Other linear modes, such as (210+) [29, 46], are also relevant.
+picked, motivated by the observational relevance of the
+                                                                                                                          5
+
+
+       0.8                                                       TABLE I. Optimal SNRs of various QQNMs, assuming CE
+                                                                 with Mtot = 60M⊙ and DL = 410 Mpc, and LISA with
+                                                                 Mtot = 8 × 106 M⊙ and a redshift of 1. The SNRs are ob-
+       0.6                                                       tained from optimal binary configurations that maximize SNR
+                                                                 for the specified Mtot and DL .
+
+χeff   0.4                                                                    QQNM
+                                                                                              Optimal       SNR
+                                                                                         configuration CE LISA
+                                                                            2, 2, 0, +          q∼1
+                                                                                                          9   970
+                                                                            2, 2,  0,  +     large χeff
+       0.2                                                                
+                                                                            3, 3, 0, +
+                                                                                         
+                                                                                              q ∼ 2.75
+                                                                                                         4.7 653
+                                                                          2, 2, 0, +  large χeff
+       0.0     2              4              6
+                                                                          4, 4, 0, +
+                                                                          2,   −2,  0,  −
+                                                                                              q ∼ 4.25
+                                                                                             large χeff
+                                                                                                          3   140
+
+                                  q
+                                                                                         
+                                                                          3, 3, 0, +          q ∼ 2.75
+                                                                                                          5    60
+                                                                         2, −2, 0, − large χeff
+                                                                                                q∼8
+         0.1        1.3           2.4       3.6         4.7               4, 4, 0, +
+                                                                          3, −2, 0, −        large χeff
+                                                                                                        0.084 2.1
+                               SNR
+                                                         
+                                              3, 3, 0, +
+FIG. 2. The SNR dependence of the QQNM,                      ,                        DISCUSSION
+                                              2, 2, 0, +
+on progenitor binaries’ mass ratio q and effective spin χeff ,
+assuming CE. The binary systems have a total mass of 60M⊙           Together with Paper I, we have presented two indepen-
+and a luminosity distance of 410 Mpc.                            dent frequency-domain methods for analyzing QQNMs
+                                                                 — the complex contour technique and the hyperboloidal
+                                                                 slicing approach. Both methods
+                                                                                                   produce consistent re-
+                                                                                     220+
+ Figure  2 shows the SNR dependence of the QQNM                sults for R++ of            . We have also classified the
+                                                                                     220+
+  330+
+            on the mass ratio q and the effective inspi-         four possible coupling channels for a QQNM. Notably,
+  220+
+                                                                 the coupling between two mirrored modes (labeled by
+ral spin χeff . This analysis is performed for CE us-
+                                                                 −−) vanishes exactly. After accounting for all coupling
+ing Mtot = 60M⊙ and a luminosity distance of 410
+                                                                 channels in systems with reflection symmetry, our results
+Mpc. For simplicity, we set both component spins equal,
+                                                                 for Kerr BHs match those from numerical simulations
+χ1 = χ2 = χeff . We can see that the optimal binary
+                                                                 and time-domain fits, which therefore resolves the ten-
+configuration occurs at q ∼ 2.75 and maximally positive
+                                                                 sion between Paper I and Zhu et al. [13].
+χeff , yielding SNR ∼ 4.7.
+                                                                    The agreement between our theoretical predictions and
+   Here, we focus on a representative binary by fixing           numerical relativity results provides a compelling quan-
+Mtot and DL . The total mass affects the SNR in two              titative demonstration—one of only a few such exam-
+ways: (1) it scales the overall strain linearly; and (2) it      ples (e.g. [51, 52])—of the success of BH second-order
+sets the central frequency of a QQNM. Varying Mtot ∈             perturbation theory. Our theoretical analysis reveals
+[20, 200]M⊙ , we find that SNR increases monotonically           that the quadratic ratios reported in [13, 14] are limited
+from 0.2 to 59. The corresponding plot is included in the        to nonprecessing binaries. By contrast, the excitation
+Supplementary Material.                                          of QQNMs in precessing binaries is expected to encode
+                                                               richer information about parent modes and progenitors’
+             330+
+   Besides           , Table I summarizes the SNRs of var-       parity. This opens an avenue for future studies to in-
+             220+
+ious QQNMs. Most are significant enough for LISA de-             vestigate how QQNMs amplitudes can infer precession
+tection, while for CE, the SNRs fall just below the typical      parameters.
+threshold (∼ 8) at the given Mtot and DL , though they              We have also illustrated potential applications of our
+could be higher for more massive or closer binaries. Nev-        calculations in future ringdown data analysis. As a fig-
+ertheless, our results suggest the importance of subdom-         ure of merit, we performed an SNR survey. Our results
+inant QQNMs and the difficulty of future ringdown data           indicate that multiple QQNMs are likely to play a non-
+analysis: While the QQNMs may lack sufficient SNR for            negligible role in BH spectroscopy with future detectors.
+precise parameter estimation, omitting them — as noted           Therefore, a robust ringdown data analysis framework
+in [47] — can introduce systematic errors in linear mode         will be required to account for a substantial number of
+fitting, destabilizing extracted amplitudes. Thus, a ro-         linear modes and QQNMs, in order to avoid systematic
+bust ringdown analysis pipeline will be essential for fu-        biases and prevent false alarms of deviations from GR.
+ture detectors.                                                     Although this work, together with Paper I, has offered
+                                                                                                                             6
+
+a comprehensive discussion on QQNMs, a complete ac-                  rogate Model for Non-Precessing Binary Black Holes,
+count of all second-order effects has yet to be provided.            (2024), arXiv:2408.05300 [gr-qc].
+Intriguing avenues for future study include the memory          [10] K. Mitman et al., Nonlinearities in Black Hole
+effect of a QNM, quadratic tails, and the possibility of             Ringdowns, Phys. Rev. Lett. 130, 081402 (2023),
+                                                                     arXiv:2208.07380 [gr-qc].
+resolving the nonlinear tails from numerical simulations,       [11] M. H.-Y. Cheung et al., Nonlinear Effects in Black
+using techniques such as Cauchy-characteristic matching              Hole Ringdown, Phys. Rev. Lett. 130, 081401 (2023),
+[53].                                                                arXiv:2208.07374 [gr-qc].
+                                                                [12] S. Ma, K. Mitman, L. Sun, N. Deppe, F. Hébert,
+                                                                     L. E. Kidder, J. Moxon, W. Throwe, N. L. Vu, and
+                                                                     Y. Chen, Quasinormal-mode filters: A new approach
+               ACKNOWLEDGMENTS                                       to analyze the gravitational-wave ringdown of binary
+                                                                     black-hole mergers, Phys. Rev. D 106, 084036 (2022),
+                                                                     arXiv:2207.10870 [gr-qc].
+  We thank Hengrui Zhu for sharing the data in Fig. 1.
+                                                                [13] H. Zhu et al., Nonlinear effects in black hole ringdown
+We thank Andrew Spiers for pointing out the difference               from scattering experiments: Spin and initial data de-
+between the Campanelli–Lousto–Teukolsky equation and                 pendence of quadratic mode coupling, Phys. Rev. D 109,
+the reduced second-order Teukolsky equation. Research                104050 (2024), arXiv:2401.00805 [gr-qc].
+at Perimeter Institute is supported in part by the Govern-      [14] J. Redondo-Yuste, G. Carullo, J. L. Ripley, E. Berti,
+ment of Canada through the Department of Innovation,                 and V. Cardoso, Spin dependence of black hole ring-
+Science and Economic Development and by the Province                 down nonlinearities, Phys. Rev. D 109, L101503 (2024),
+                                                                     arXiv:2308.14796 [gr-qc].
+of Ontario through the Ministry of Colleges and Uni-
+                                                                [15] H. Zhu et al., Imprints of Changing Mass and Spin on
+versities. N.K. is supported by the Natural Science and              Black Hole Ringdown, (2024), arXiv:2404.12424 [gr-qc].
+Engineering Council of Canada.                                  [16] T. May, S. Ma, J. L. Ripley, and W. E. East, Nonlinear
+                                                                     effect of absorption on the ringdown of a spinning black
+                                                                     hole, Phys. Rev. D 110, 084034 (2024), arXiv:2405.18303
+                                                                     [gr-qc].
+                                                                [17] N. Khera,        A. Ribes Metidieri,        B. Bonga,
+  ∗
+     nkhera@tsinghua.edu.cn                                          X. Jiménez Forteza, B. Krishnan, E. Poisson, D. Pook-
+  †
+     sma2@perimeterinstitute.ca                                      Kolb, E. Schnetter, and H. Yang, Nonlinear Ringdown
+   ‡
+     hyangdoa@tsinghua.edu.cn                                        at the Black Hole Horizon, Phys. Rev. Lett. 131, 231401
+ [1] E. Berti, V. Cardoso, and A. O. Starinets, Quasinormal          (2023), arXiv:2306.11142 [gr-qc].
+     modes of black holes and black branes, Class. Quant.       [18] S. Ma and H. Yang, Excitation of quadratic quasinormal
+     Grav. 26, 163001 (2009), arXiv:0905.2975 [gr-qc].               modes for Kerr black holes, Phys. Rev. D 109, 104070
+ [2] R. A. Konoplya and A. Zhidenko, Quasinormal modes               (2024), arXiv:2401.15516 [gr-qc].
+     of black holes: From astrophysics to string theory, Rev.   [19] B. Bucciotti, L. Juliano, A. Kuntz, and E. Trincherini,
+     Mod. Phys. 83, 793 (2011), arXiv:1102.4014 [gr-qc].             Quadratic Quasi-Normal Modes of a Schwarzschild Black
+ [3] E. Berti, K. Yagi, H. Yang, and N. Yunes, Extreme Grav-         Hole, (2024), arXiv:2405.06012 [gr-qc].
+     ity Tests with Gravitational Waves from Compact Bi-        [20] B. Bucciotti, L. Juliano, A. Kuntz, and E. Trincherini,
+     nary Coalescences: (II) Ringdown, Gen. Rel. Grav. 50,           Amplitudes and polarizations of quadratic quasi-normal
+     49 (2018), arXiv:1801.03587 [gr-qc].                            modes for a Schwarzschild black hole, JHEP 09, 119,
+ [4] L. London, D. Shoemaker, and J. Healy, Modeling ring-           arXiv:2406.14611 [hep-th].
+     down: Beyond the fundamental quasinormal modes,            [21] P. Bourg, R. Panosso Macedo, A. Spiers, B. Leather,
+     Phys. Rev. D 90, 124032 (2014), [Erratum: Phys.Rev.D            B. Bonga, and A. Pound, Quadratic quasi-normal
+     94, 069902 (2016)], arXiv:1404.3197 [gr-qc].                    mode dependence on linear mode parity,             (2024),
+ [5] L. T. London, Modeling ringdown. II. Aligned-spin bi-           arXiv:2405.10270 [gr-qc].
+     nary black holes, implications for data analysis and       [22] J. Redondo-Yuste, D. Pereñiguez, and V. Cardoso, Ring-
+     fundamental theory, Phys. Rev. D 102, 084052 (2020),            down of a dynamical spacetime, Phys. Rev. D 109,
+     arXiv:1801.08208 [gr-qc].                                       044048 (2024), arXiv:2312.04633 [gr-qc].
+ [6] S. A. Hughes, A. Apte, G. Khanna, and H. Lim, Learning     [23] L. Sberna, P. Bosch, W. E. East, S. R. Green, and
+     about black hole binaries from their ringdown spectra,          L. Lehner, Nonlinear effects in the black hole ringdown:
+     Phys. Rev. Lett. 123, 161101 (2019), arXiv:1901.05900           Absorption-induced mode excitation, Phys. Rev. D 105,
+     [gr-qc].                                                        064046 (2022), arXiv:2112.11168 [gr-qc].
+ [7] M. H.-Y. Cheung, E. Berti, V. Baibhav, and R. Cotesta,     [24] J. Ben Achour and H. Roussille, Quadratic perturbations
+     Extracting linear and nonlinear quasinormal modes from          of the Schwarzschild black hole: the algebraically special
+     black hole merger simulations, Phys. Rev. D 109, 044069         sector, JCAP 07, 085, arXiv:2406.08159 [gr-qc].
+     (2024), [Erratum: Phys.Rev.D 110, 049902 (2024)],          [25] D. Perrone, T. Barreira, A. Kehagias, and A. Ri-
+     arXiv:2310.04489 [gr-qc].                                       otto, Non-linear black hole ringdowns: An analyt-
+ [8] C. Pacilio, S. Bhagwat, F. Nobili, and D. Gerosa,               ical approach, Nucl. Phys. B 999, 116432 (2024),
+     postmerger: A flexible mapping of ringdown ampli-               arXiv:2308.15886 [gr-qc].
+     tudes for non-precessing binary black holes, (2024),       [26] A. Kehagias, D. Perrone, A. Riotto, and F. Riva, Ex-
+     arXiv:2408.05276 [gr-qc].                                       plaining nonlinearities in black hole ringdowns from
+ [9] L. Magaña Zertuche et al., High-Precision Ringdown Sur-         symmetries, Phys. Rev. D 108, L021501 (2023),
+                                                                                                                                7
+
+     arXiv:2301.09345 [gr-qc].                                          arXiv:2004.06434 [gr-qc].
+[27] G. Carullo, W. Del Pozzo, and J. Veitch, Observa-             [45] J. L. Ripley, Computing the quasinormal modes and
+     tional Black Hole Spectroscopy: A time-domain multi-               eigenfunctions for the Teukolsky equation using horizon
+     mode analysis of GW150914, Phys. Rev. D 99, 123029                 penetrating, hyperboloidally compactified coordinates,
+     (2019), [Erratum: Phys.Rev.D 100, 089903 (2019)],                  Class. Quant. Grav. 39, 145009 (2022), arXiv:2202.03837
+     arXiv:1902.07527 [gr-qc].                                          [gr-qc].
+[28] M. Isi and W. M. Farr, Analyzing black-hole ringdowns,        [46] H. Zhu et al., Black Hole Spectroscopy for Precessing Bi-
+     (2021), arXiv:2107.05609 [gr-qc].                                  nary Black Hole Coalescences, (2023), arXiv:2312.08588
+[29] H. Siegel, M. Isi, and W. M. Farr, Ringdown of                     [gr-qc].
+     GW190521: Hints of multiple quasinormal modes with            [47] M. Giesler et al., Overtones and Nonlinearities in Binary
+     a precessional interpretation, Phys. Rev. D 108, 064008            Black Hole Ringdowns, (2024), arXiv:2411.11269 [gr-qc].
+     (2023), arXiv:2307.11975 [gr-qc].                             [48] V. Varma, D. Gerosa, L. C. Stein, F. Hébert, and
+[30] H. Siegel, M. Isi, and W. M. Farr, Analyzing                       H. Zhang, High-accuracy mass, spin, and recoil predic-
+     black-hole ringdowns II: data conditioning, (2024),                tions of generic black-hole merger remnants, Phys. Rev.
+     arXiv:2410.02704 [gr-qc].                                          Lett. 122, 011101 (2019), arXiv:1809.09125 [gr-qc].
+[31] C. D. Capano, M. Cabero, J. Westerweck, J. Abedi,             [49] E. E. Flanagan and S. A. Hughes, Measuring gravita-
+     S. Kastha, A. H. Nitz, Y.-F. Wang, A. B. Nielsen, and              tional waves from binary black hole coalescences: 1.
+     B. Krishnan, Multimode Quasinormal Spectrum from                   Signal-to-noise for inspiral, merger, and ringdown, Phys.
+     a Perturbed Black Hole, Phys. Rev. Lett. 131, 221402               Rev. D 57, 4535 (1998), arXiv:gr-qc/9701039.
+     (2023), arXiv:2105.05238 [gr-qc].                             [50] E. Berti, V. Cardoso, and C. M. Will, On gravitational-
+[32] Y.-F. Wang, C. D. Capano, J. Abedi, S. Kastha, B. Kr-              wave spectroscopy of massive black holes with the space
+     ishnan, A. B. Nielsen, A. H. Nitz, and J. Westerweck,              interferometer LISA, Phys. Rev. D 73, 064030 (2006),
+     A gating-and-inpainting perspective on GW150914 ring-              arXiv:gr-qc/0512160.
+     down overtone: understanding the data analysis system-        [51] C. O. Nicasio, R. J. Gleiser, R. H. Price, and J. Pullin,
+     atics, (2023), arXiv:2310.19645 [gr-qc].                           The Collision of boosted black holes: Second order
+[33] S. Ma, L. Sun, and Y. Chen, Using rational filters to              close limit calculations, Phys. Rev. D 59, 044024 (1999),
+     uncover the first ringdown overtone in GW150914, Phys.             arXiv:gr-qc/9802063.
+     Rev. D 107, 084010 (2023), arXiv:2301.06639 [gr-qc].          [52] R. J. Gleiser, C. O. Nicasio, R. H. Price, and J. Pullin,
+[34] S. Ma, L. Sun, and Y. Chen, Black Hole Spectroscopy                Colliding black holes: How far can the close approxi-
+     by Mode Cleaning, Phys. Rev. Lett. 130, 141401 (2023),             mation go?, Phys. Rev. Lett. 77, 4483 (1996), arXiv:gr-
+     arXiv:2301.06705 [gr-qc].                                          qc/9609022.
+[35] M. Campanelli and C. O. Lousto, Second order gauge            [53] S. Ma et al., Fully relativistic three-dimensional Cauchy-
+     invariant gravitational perturbations of a Kerr black hole,        characteristic matching for physical degrees of freedom,
+     Phys. Rev. D 59, 124022 (1999), arXiv:gr-qc/9811019.               Phys. Rev. D 109, 124027 (2024), arXiv:2308.10361 [gr-
+[36] S. R. Green, S. Hollands, and P. Zimmerman, Teukol-                qc].
+     sky formalism for nonlinear Kerr perturbations, Class.        [54] R. P. Geroch, A. Held, and R. Penrose, A space-time
+     Quant. Grav. 37, 075001 (2020), arXiv:1908.09095 [gr-              calculus based on pairs of null directions, J. Math. Phys.
+     qc].                                                               14, 874 (1973).
+[37] A. R. C. Spiers, Second-order gravitational self-force in     [55] D. K. Zhang, Multifloats.jl, https://github.com/
+     Kerr spacetime, Ph.D. thesis, University of Southampton            dzhang314/MultiFloats.jl.
+     (2022).                                                       [56] S. Olver and A. Townsend, A fast and well-conditioned
+[38] A. Zenginoglu, A Geometric framework for black                     spectral method, SIAM Review 55, 462 (2013),
+     hole perturbations, Phys. Rev. D 83, 127502 (2011),                https://doi.org/10.1137/120865458.
+     arXiv:1102.2451 [gr-qc].                                      [57] L. C. Stein, qnm: A Python package for calculating Kerr
+[39] A. Zenginoglu, Hyperboloidal foliations and scri-fixing,           quasinormal modes, separation constants, and spherical-
+     Class. Quant. Grav. 25, 145002 (2008), arXiv:0712.4333             spheroidal mixing coefficients, J. Open Source Softw. 4,
+     [gr-qc].                                                           1683 (2019), arXiv:1908.10377 [gr-qc].
+[40] R. Panosso Macedo and A. Zenginoglu, Hyper-                   [58] K. M. Huffenberger and B. D. Wandelt, Fast and exact
+     boloidal Approach to Quasinormal Modes, (2024),                    spin-s spherical harmonic transforms, The Astrophysical
+     arXiv:2409.11478 [gr-qc].                                          Journal Supplement Series 189, 255 (2010).
+[41] J. Baker et al., The Laser Interferometer Space Antenna:      [59] M. Boyle, L. E. Kidder, S. Ossokine, and H. P. Pfeiffer,
+     Unveiling the Millihertz Gravitational Wave Sky, (2019),           Gravitational-wave modes from precessing black-hole bi-
+     arXiv:1907.06482 [astro-ph.IM].                                    naries, (2014), arXiv:1409.4431 [gr-qc].
+[42] M. Evans et al., A Horizon Study for Cosmic Ex-               [60] D. J. Vickers and G. B. Cook, Understanding solutions of
+     plorer: Science, Observatories, and Community, (2021),             the angular Teukolsky equation in the prolate asymptotic
+     arXiv:2109.09882 [astro-ph.IM].                                    limit, Phys. Rev. D 106, 104037 (2022), arXiv:2208.06259
+[43] S. Yi, A. Kuntz, E. Barausse, E. Berti, M. H.-Y. Che-              [gr-qc].
+     ung, K. Kritos, and A. Maselli, Nonlinear quasinor-
+     mal mode detectability with next-generation gravita-
+     tional wave detectors, Phys. Rev. D 109, 124029 (2024),
+     arXiv:2403.09767 [gr-qc].
+[44] J. L. Jaramillo, R. Panosso Macedo, and L. Al Sheikh,
+     Pseudospectrum       and    Black    Hole    Quasinormal
+     Mode Instability, Phys. Rev. X 11, 031003 (2021),
+                                                                                                                            1
+
+           SUPPLEMENTARY MATERIAL                                 sky equation and α and β are given by
+                                                                                                   
+                                                                    α = a2 R2 8M 2 ω 2 + 6iM ω − 1
+           Description of the numerical code                                                                        
+                                                                     − R(4M ω + i) −a(aω + m) + 4M 2 ω + iM (s + 1)
+                                                                                                             
+                                                                       1 2 2        2
+                                                                                                   1
+  As discussed before, we solve the nonlinear Teukolsky              + ω a − 16M + amω + s − + 2iM ω ,
+equations on a hyperboloidal slicing. We use identical                 2                            2
+coordinates as in [45]. Namely, for the Kerr metric                                                               (21)
+                                                                   β = 2a2 R3 (−1 + 2iM ω) + R(−s − 1) + iω
+                                                                                                         
+             2M r       4M ar sin2 θ            Σ                    + R2 ia(aω + m) − 8iM 2 ω + M (s + 3) .             (22)
+ ds2 = − 1 −      dt2 −               dt dϕ + dr2
+              Σ               Σ                 ∆
+                                                                For instance, for the Teukolsky equation of Ψ4 we have
+                       2M a2 r sin2 θ                             s = −2 and ψs = ζ 4 Ψ4 , where ζ = r = ia cos θ. Whereas
+           2   2   2
+     + Σ dθ + r + a +                   sin2 θ dϕ2 ,
+                            Σ                                     for Ψ0 we have s = 2 and ψs = Ψ0 .
+                                                   (15)              To solve the second-order Teukolsky equation, we need
+                                                                  the reconstructed metric at linear order to compute the
+where Σ = r2 + a2 cos2 θ and ∆ = r2 − 2M r + a2 , we              source term. We obtain the metric by first solving for
+change the coordinates (t, r, ϕ) to (T, R, Φ) where               the ORG Hertz potential and then performing metric re-
+                                                                  construction. We use the ORG because the metric recon-
+                                                                structed from the ingoing radiation gauge Hertz potential
+                r2 + a2            2M                             is not well-behaved at null infinity. To solve the Hertz po-
+      dT = dt +         dr − 2 1 +      dr,               (16a)
+                   ∆                r                             tential Φ we note that ζ −4 Φ satisfies the s = 2 Teukolsky
+                adr                                               equation, where ζ = r − ia cos θ. Consequently, we need
+      dΦ = dϕ +     ,                                    (16b)
+                 ∆                                                to solve the s = 2 radial Teukolsky equation to get a so-
+           1                                                      lution for the Hertz potential that corresponds to QNMs
+       R= ,                                               (16c)
+           r                                                      for the reconstructed metric.
+                                                                     The metric, reconstructed from the Hertz potential, in
+and where the coordinate θ remains unchanged. Note                GHP notation [54], is given by
+that the coordinates T and Φ are chosen such that they                         1h
+are well-defined at the horizon. Furthermore, T = const               hab = − na nb (ð′ − τ ′ )(ð′ − τ ′ )
+                                                                               2
+slices are hyperboloidal, namely they penetrate the hori-
+                                                                                  + m̄a m̄b (þ′ − ρ′ )(þ′ − ρ′ )
+zon and null infinity, and become light-like in the r → ∞                                    
+limit. The coordinate R is chosen to compactify the                               − n(a m̄b) (ð′ − τ ′ + τ̄ )(þ′ − ρ′ )
+space-time radially onto a finite domain.                                                                      i
+  The principal null tetrad must also be chosen to be                             + (þ′ − ρ′ + ρ̄′ )(ð′ − τ ′ ) Φ + c.c. (23)
+regular at both the horizon and null-infinity. While the
+Kinnersley tetrad is regular at null-infinity, it is not a        Evidently from (23) the gravitational strain h =
+good choice at the horizon. Therefore, we choose the              hab m̄a m̄b (and therefore Ψ4 ) only has contributions from
+tetrad (ℓa , na , ma , m̄a ) given by                             Φ̄, instead of Φ directly. Consequently, to get a QNM
+                                                                                p                                         p
+                                                                  frequency ωℓmn    in h, we must have the frequency −ω̄ℓmn
+                                                                  and azimuthal quantum number −m in the Hertz poten-
+                              ∆ a
+                         ℓa =    ℓ ,                       (17)   tial. Note however that the outgoing and ingoing bound-
+                             2r2 K                                ary conditions do not get mixed under complex conju-
+                             2r2 a                                gation or derivatives, therefore if the strain h satisfies
+                        na =     n ,                       (18)
+                              ∆ K                                 purely outgoing boundary conditions, so does the Hertz
+                        ma = maK ,                         (19)   potential Φ. Therefore, we find the QNM solutions for
+                                                                  the mode (ℓ, m, n, p) by finding outgoing solutions to the
+where (ℓaK , naK , maK , m̄aK ) is the Kinnersley null tetrad.    Hertz potential Φ with azimuthal quantum number −m
+                                                                                      p
+                                                                  and frequency −ω̄ℓmn    .
+  Under these coordinates and conventions the spin-s                 Our numerical implementation uses the pseudo-
+radial Teukolsky equation for the spin-s field ψs , with          spectral method, where all quantities are expanded in
+ψs = R1+2s ψs◦ becomes                                            Chebyshev polynomials radially and spin-weighted spher-
+                                                                  ical harmonics in the angular directions. Multiplications
+αψs◦ +β∂R ψs◦ −(1−2M R2 +a2 R2 )R2 ∂R2 ◦
+                                       ψs = −(Λ/2+1)ψs◦ ,         are performed using fast transforms from the spectral
+                                                     (20)         basis to a grid. All results in this paper have radial ex-
+where Λ is the separation constant of the angular Teukol-         pansion truncated at degree nmax = 64, the spherical
+                                                                                                                                     2
+
+harmonic expansion truncating at ℓmax = 31 and with                 into a grid of 2d collocation points by performing the fast
+128 bit floating point numbers from the MultiFloats li-             discrete cosine transform on the radial direction, and an
+brary [55].                                                         adaptation of the fast spin-weighted spherical harmon-
+   We solve the equation for the Hertz potential following          ics transform described in [58] for the angular direction,
+the procedure in [45], which we summarize below. We                 where the grid in the ϕ direction is not computed be-
+first separate the Hertz potential into radial and angular          cause our fields have a fixed azimuthal quantum number
+parts                                                               m. Then after point-wise multiplication on the grid, we
+                                                                    transform back to the spectral domain using the inverse
+                 Φ = R R(R) S(θ, Φ)e−iωT ,                  (24)    fast discrete cosine transform and the inverse fast spin-
+which can be done because of the separation of the                  weighted spherical harmonics transform. We keep track
+Teukolsky equation. Note we have also separated the                 of the fall-off in R of all the terms and perform spectral
+leading order fall off at null infinity ∼ R so that R is            expansion of the O(1) parts.
+O(1) at null infinity. Then, the radial and angular func-              Finally, using the metric, we compute the Einstein
+                                                                               (2)
+tions R and S can be expanded into Chebyshev polyno-                tensor Gab [hab , hab ] quadratic in hab . Here again, we
+mials Tn (x) and the spin-weighted spherical harmonics              perform multiplications by transforming to a 2d grid
+2 Yℓm (θ, ϕ) respectively.                                          of points. As discussed in the main text, Tab =
+                                                                        (2)
+                          ∞                                         −Gab [hab , hab ]/8π acts as the effective stress-energy ten-
+                          X
+                R(R) =          cn Tn (1 − 2Rr+ ),          (25)    sor for the next order. The Teukolsky equation derived
+                          n=0                                       from this equation is the reduced Teukolsky equation [37],
+                          X                                         because it only gives the second order Ψ4 computed lin-
+              S(θ, Φ) =         sℓ 2 Yℓm (θ, Φ) .           (26)                   (2)
+                                                                    early from hab and does not include contributions from
+                            ℓ
+                                                                                                  (1)
+                                                                    the quadratic terms in hab . However, it can be checked
+The outgoing boundary conditions at the horizon and                 that in ORG this contribution vanishes, and therefore the
+null infinity imply that R is analytic [45] at the boundary         reduced Teukoslky equation gives the full Ψ4 . From this
+and thus cn falls exponentially with n, whereas for the             effective stress-energy tensor we can compute the source
+ingoing boundary conditions, the cn falls faster than any           term S for the s = −2 reduced Teukolsky equation using
+polynomial because the solution is smooth, yet it falls
+                                                                                                                                
+slower than an exponential. Thus, just as in Leaver’s                  S = 21 (ð′ − τ̄ − 4τ ′ ) (þ′ − 2ρ̄′ )Tnm̄ − (ð′ − τ̄ )Tnn
+method the QNM solutions are the minimal solution of                                                                              
+                                                                         + 21 (þ′ − 4ρ′ − ρ̄′ ) (ð′ − 2τ̄ )Tnm̄ − (þ′ − ρ̄′ )Tm̄m̄ ,
+the radial equation. Then, if we impose the conditions
+                                                                                                                                   (27)
+cnmax+1 = cnmax+2 = 0 for a large enough nmax and solve
+for the truncated coefficients c0 . . . cnmax , the solution will   and then solving the sourced Teukolsky equation
+be dominated by outgoing solutions just as for Leaver’s
+method (if a non-zero solution exists for that frequency).                                    T [Ψ4 ] = S.                        (28)
+Additionally, we can also truncate the angular expansion
+at some ℓmax for numerical purposes.                                The resulting source term has frequencies ω1 +ω2 , ω1 − ω̄2
+   The truncated Radial and Angular Teukolsky equa-                 and −ω̄1 + ω2 . As discussed in the main text, the con-
+tions now turn into matrix eigenvalue problems, with the            tribution to the −ω̄1 − ω̄2 vanishes. This gives rise to
+separation constant Λ related to their respective eigenval-         three frequencies ωquad in the second order Ψ4 , and we
+ues. We change the basis after differentiating to Gegen-            solve each separately. This could be done by simply get-
+bauer polynomials to improve the conditioning of the lin-           ting the Teukolsky operator in matrix form on the spec-
+ear problem [56]. For generic frequencies, the two equa-            tral coefficients and inverting it. However, we can utilize
+tions will not give the same value of Λ, however for QNMs           the separation of the Teukolsky equation to invert it di-
+they do. Therefore, following [45], we find QNMs by min-            rectly. We first re-expand the source term in a basis of
+imizing the difference between the separation constants             Spheroidal harmonics −2 Sℓmquad (θ, ϕ; aωquad ) using the
+obtained from the radial and angular equations, using               procedure described in [18]. Then, the coefficients of the
+the frequencies from the qnm package as a good initial              spheroidal harmonics satisfy the radial Teukolsky equa-
+guess [57]. This gives us the Hertz potential as a series           tion (20) with a source. This reduces the dimensions
+in Chebyshev and spin-weighted spherical harmonics. We              of the problem, leading to faster computations. After
+do this for both pairs of linear modes with frequencies ω1          separating the leading order fall-off in R, the radial op-
+and ω2 we want to compute the quadratic contribution                erator in (20) can be expressed as a lower dimensional
+to and take their linear combination.                               matrix. Then, the spheroidal harmonic component of S
+   From the Hertz potential, we use (23) to obtain the lin-         gives us the source term for the matrix equation. Fi-
+earized metric. Here derivatives become linear operators            nally, by solving the matrix equation we get a solution
+that can be applied to the spectral coefficients. To per-           to the quadratic Ψ4 from the horizon to null infinity. We
+form multiplication, we first transform the spectral data           can similarly solve for the reduced Ψ0 as well. However
+                                                                                                                                                                             3
+
+                                          (1)                                                                                                       
+for Ψ0 the quadratic terms from the hab can contribute.                                                                                   2 2 0 +
+                                                      (1)
+This can be added to the reduced Ψ0 by using the hab                                                                                      2 2 0 +        ++
+from the metric reconstruction. In this paper, we only
+
+
+
+
+                                                                      I + amplitude ratio absolute value
+                                                                                                                                                                spherical
+                                                  (2)
+report the reduced Ψ0 which depends linearly on hab .                                                      0.135                                                fit
+                                                                                                                                                                spheroidal
+                                                                                                           0.130
+
+ Coupling strength for selected quadratic channels                                                         0.125
+
+                                                                                                           0.120
+   We compute
+               the
+                  amplitude
+                              ratio
+                                      R for five QQNMs,
+                                                     
+             220+       330+       440+         220+                                                       0.115
+including          ,           ,           ,           , and
+        220+          220+       2-20−        200+
+  330+                                                                                                     0.110
+          . We then fit their magnitudes and phases using
+  2-20−
+polynomials as functions of χ:                                                                             0.105
+
+                                                                                                                   0.0        0.2         0.4        0.6      0.8
+                            7
+                            X                  7
+                                               X
+           iϕ                        i                    i
+                                                                                                                                                 χ
+   R = Ae ,      with A =         Ai χ , ϕ =          ϕi χ .   (29)
+                            i=0                 i=0                                                                      spherical
+                                                                                                            0.00         spheroidal
+
+
+
+
+                                                                      I + amplitude ratio phase
+The values of Ai ’s and ϕi ’s are listed in Table II and                                                                 fit
+
+III, respectively. Here Spin-weighted spherical harmon-
+ics are used as the angular basis.         We estimate the                                                 −0.02
+relative interpolation errors, by computing the leave-one-
+out root mean squared error, to be of order ∼ 1% for the                                                   −0.04
+phase and amplitude. This is much larger than the errors
+in computation of the quadratic ratio, which is of order
+10−5 (this is estimated by comparison of our results with                                                  −0.06
+a lower resolution run using nmax = 60, ℓmax = 27 and
+using floating point precision). Thus the error is domi-                                                   −0.08
+nated by the interpolation error.
+                                                                                                                   0.0         0.2         0.4       0.6      0.8
+   The value of R depends on the choice of angular basis,
+                                                                                                                                                 χ
+whether using spin-weighted spherical or    spheroidal
+                                                       har-
+                                             220+
+monics. In Fig. 3, we compare R++ for               between
+                                             220+                     FIG. 3.        (top) and phase (bottom) of R++ for the
+                                                                              Magnitude
+                                                                                220+
+the two bases. We find the results differ by ≤ 1% even for            QQNM             at null infinity, using spin-weighted spherical
+                                                                                220+
+dimensionless spins as large as 0.95. Nonetheless, there
+                                                                      (blue dots) and spheroidal (green dots) harmonics
+are modes where   the difference
+                                 is significant.
+                  220+
+   The QQNM                needs more attention. Our code
+                  200−
+encounters issues for this as χ → 0, and the value of R++
+diverges. We suspect that this is because in this limit
+                                                                                Parity of linear and quadratic quasinormal modes
+the frequency approaches a purely decaying quantity, and
+thus it coincides with the branch cut along the imaginary
+axis. In the finite dimensional truncation the branch cut
+is replaced by several poles. Because at a pole the Teukol-             In this section we will discuss the relationship between
+sky operator is non-invertible, near a pole the operator              the positive and negative frequency modes used in QNM
+becomes ill-conditioned and numerically challenging to                analysis to even-parity (polar) and odd-parity (axial)
+invert. This feature indicates that such quadratic effects            modes. First, we note that the parity transformation
+require special treatment, which we leave for future work.            P− : (θ, ϕ) → (π − θ, ϕ + π) is a symmetry of the back-
+   Furthermore, the numerical code can also compute the               ground Kerr spacetime. Furthermore, the QNM bound-
+amplitude of the nonlinear modes at the horizon by solv-              ary conditions are also preserved by the parity operator,
+ing the second order equation for Ψ0 . We illustrate this             therefore QNMs are sent to QNMs.
+in Fig. 4 by plotting
+                     the amplitude of the second order
+              220+                                                      Consider a linear mode L = (ℓ, m, n, p) with ampli-
+Ψ0 for the            QNM, divided by the amplitudes of
+              220+                                                    tude Apℓmn . The parity transformation P− sends the
+the linear modes at null infinity for normalization.                  waveform h(θ, ϕ) to h̄(π − θ, ϕ + π) [59], the waveform
+                                                                                                                                                        4
+
+                        Child Harmonic
+          QQNM                         Channel            A0            A1             A2           A3         A4       A5           A6         A7
+                             (ℓ, m)
+              
+        2 2 0 +                                (+, +)    0.137   -0.00485   0.0167    -0.2604 0.8975 -1.617                     1.434       -0.5063
+                             (4, 4)
+        2 2 0 +                                (+, −)   0.01651 0.0004883 -9.269e-05 -0.02175 0.08652 -0.1513                   0.1265     -0.04002
+                                             (+, +) 0.3608 0.02946       0.072    -0.8283   2.78    -4.998   4.432   -1.568
+        3 3 0 +
+                             (5, 5)            (+, −) 0.05032 0.003027 0.01122      -0.1226 0.4119 -0.7303 0.6395 -0.2213
+        2 2 0 +
+                                               (−, +) 0.009195 0.001647 -0.0009933 0.005611 -0.02125 0.04302 -0.04239 0.01705
+                                             (+, +)   0.02926    0.01946          -0.01687      -0.1284     0.5675 -0.9904    0.8196      -0.2654
+         4 4 0 +
+                             (2, 2)            (+, −)   0.4171     0.01547           0.05337      -0.5621      1.897   -3.389    2.988       -1.045
+         2 −2 0 −
+                                               (−, +)   0.01904     0.0209          -0.06647      0.1115     -0.02876 -0.1313    0.159     -0.05317
+                                             (+, +) 0.05129 0.002671 -0.03311      0.2839 -0.9785     1.75     -1.55   0.5454
+          2 2 0 +
+                             (2, 2)            (+, −) 0.002266 0.007195 -0.04674      0.377   -1.297    2.319   -2.053   0.7225
+          2 0 0 +
+                                               (−, +) 0.002277 -0.002354 0.0004335 -0.002256 0.007851 -0.01427 0.01362 -0.005197
+                                             (+, +)    1.169      -9.691            38.74       -95.14       151.0   -150.0    83.97         -20.08
+         3 3 0 +
+                             (2, 1)            (+, −)   0.1202     -0.04895          -0.3357       2.418      -8.312   14.85    -12.95         4.503
+         2 −2 0 −
+                                               (−, +)    1.06       -8.979            34.85       -76.17       102.4   -84.76     39.9          -8.12
+
+TABLE II. Polynomial fit coefficients for the magnitude of R. Spin-weighted spherical harmonics are used as the angular basis.
+When both modes are identical, R+− and R−+ are equivalent, therefore only on of them is presented.
+
+                                 Child Harmonic
+                 QQNM                           Channel           ϕ0           ϕ1           ϕ2        ϕ3        ϕ4     ϕ5       ϕ6        ϕ7
+                                      (ℓ, m)
+                     
+               2 2 0 +                               (+, +) -0.08375 0.09052             0.1573     -0.947     3.078 -5.277 4.554 -1.574
+                                      (4, 4)
+               2 2 0 +                               (+, −) 0.05858 -0.1377             -0.1421     1.362     -6.616 13.41 -12.76 4.635
+                                                   (+, +)    -0.1163 0.09648 0.1244 -0.7194 2.51 -4.475 3.956 -1.391
+               3 3 0 +
+                                      (5, 5)         (+, −)     0.1351 -0.04493 -0.1367 0.7989 -2.826 4.871 -4.206 1.394
+               2 2 0 +
+                                                     (−, +)     -3.006 -0.1175 -0.05493 0.1584 -1.219 2.469 -2.381 0.8356
+                                                   (+, +)    -2.938 -0.1743             3.982     -16.57    40.29 -57.42 44.05 -14.09
+             4 4 0 +
+                                      (2, 2)         (+, −)    -2.924 -0.08402           0.2896     -1.953    6.776 -12.12 10.75 -3.79
+             2 −2 0 −
+                                                     (−, +)     3.07   -0.181             3.172     -13.67    29.83 -34.78 21.05 -5.121
+                                                   (+, +)    1.391         0.04208 -0.005894 0.08979 -0.3053 0.5355 -0.4593 0.1514
+                 2 2 0 +
+                                      (2, 2)         (+, −)    0.5606         0.2811 -0.5344 4.077 -13.84 24.83 -22.05 7.8
+                 2 0 0 +
+                                                     (−, +)    0.5613        -0.2699   2.862    -21.11 71.12 -124.0 106.2 -35.7
+                                                   (+, +)    -2.696         2.556      1.259      -19.84 96.27 -177.5 133.6 -33.46
+             3 3 0 +
+                                      (2, 1)         (+, −)     2.993        -0.4982     0.3458     -6.872 22.84 -45.46 42.8 -14.58
+             2 −2 0 −
+                                                     (−, +)    0.6533         4.995      -42.53      330.4 -1002.0 1434.0 -990.4 267.1
+
+TABLE III. Polynomial fit coefficients for the phase of R. Spin-weighted spherical harmonics are used as the angular basis.
+When both modes are identical, the +− and −+ channels are equivalent, therefore only on of them is presented.
+
+
+transforms as                                                                       (ℓ, −m, n, −p) mode with amplitude (−1)ℓ+m Āpℓmn . We
+             p                                                                      will refer to L̄ as the conjugate mode of L. Further-
+ Apℓmn e−iωℓmn u −2 Sℓm (θ, ϕ; aωℓmn
+                                 p
+                                     )                                 (30)
+                p
+                                                                                    more, by taking a linear combination of the linear modes
+  → Āpℓmn e+iω̄ℓmn u −2 S̄ℓm (π − θ, ϕ + π; aωℓmn
+                                               p
+                                                   )                                L and its conjugate mode L̄, we can construct solutions
+                            −p
+                                                   −p                               that are eigenvectors of the parity operator. In partic-
+  = (−1)ℓ+m Āpℓmn e−iωℓ,−m,n u −2 Sℓ(−m) (θ, ϕ; aωℓ(−m)n ),
+                                                                                    ular, the even parity sector is when the eigenvalue is
+                                                        (31)                        (−1)ℓ+m , and the odd parity sector is when the eigen-
+where we have used Eq. (1) from the Letter to rewrite the                           value is (−1)ℓ+m+1 . The sign comes because the even
+frequency, and the following properties of spin weighted                            and odd parity sectors are traditionally separated using
+spheroidal harmonics [60]:                                                          the sign arising from the reversal of orientation rather
+                                       s+m
+                                                                                    than the parity operator P− , giving rise to these signs.
+           s S̄ℓm (θ, ϕ; aω) = (−1)            −s Sℓ(−m) (θ, ϕ; −aω̄),
+                                                                                       Consequently, if we have the combination of L =
+                                                                       (32)
+                                                                                    (ℓ, m, n, p) and L̄ = (ℓ, −m, n, −p) modes with ampli-
+                               ℓ
+s Sℓm (π − θ, ϕ + π; aω) = (−1) −s Sℓm (θ, ϕ; aω) .                    (33)         tudes Apℓmn = Ā−p ℓ(−m)n , then combination of modes is
+Therefore, the parity transformation takes the L =                                  even. If, on the other hand, Apℓmn = −Ā−p
+                                                                                                                            ℓ(−m)n , the
+(ℓ, m, n, p) mode with amplitude Apℓmn to the mode L̄ =                             combination of modes is odd.
+                                                                                                                                                                            5
+
+                                                                             
+                                                                   2 2 0 +                            monics, so that the quadratic strain h from this mode is
+                                                                   2 2 0 +                            given by
+
+
+
+
+ horizon amplitude ratio absolute value
+                                                                                  ++
+                                          0.040                                                              X           Q,ℓ′
+                                                                                         spherical                                                           −iωQ u
+                                                                                         fit            hQ =     A1 A2 R++    −2 Sℓ′ (m1 +m2 ) (θ, ϕ; aωQ )e        .
+                                          0.035                                          spheroidal               ℓ′
+                                                                                                                                                            (34)
+                                          0.030                                                                Q,ℓ′
+                                                                                                      Where   R++       is the amplitude ratio for the quadratic
+                                          0.025
+                                                                                                      mode Q with child harmonics (ℓ′ , m1 + m2 ) with
+                                                                                                      the (+, +) channel, A1 is the amplitude of the
+                                          0.020                                                       mode (ℓ1 , m1 , n1 , p1 ) and A2 is the amplitude of the
+                                                                                                      mode (ℓ2 , m2 , n2 , p2 ). Under a parity transformation,
+                                          0.015                                                       the linear modes transform to (ℓ1 , −m1 , n1 , −p1 ) and
+                                                                                                      (ℓ2 , −m2 , n2 , −p2 ) with amplitudes (−1)ℓ1 +m1 Ā1 and
+                                          0.010
+                                                                                                      (−1)ℓ2 +m2 Ā2 respectively. Furthermore, under the par-
+                                          0.005                                                       ity transformation, the quadratic
+                                                                                                                                          mode (34) transforms
+                                                                                                                                                       
+                                                  0.0    0.2        0.4       0.6      0.8                                             ℓ1 −m1 n1 −p1
+                                                                                                      to the quadratic mode Q̄ =                           . We
+                                                                          χ                                                            ℓ2 −m2 n2 −p2 ++
+                                                                                                      will refer to Q̄ as the conjugate mode of Q.
+                                                                                         spherical
+                                                                                                             X
+
+
+
+
+ horizon amplitude ratio phase
+                                                                                         spheroidal                      ′
+                                           2                                             fit          hQ̄ =      (−1)ℓ +m1 +m2
+                                                                                                             ℓ′
+                                           1                                                                           Q,ℓ ′
+                                                                                                                   × R̄++  Ā1 Ā2 e−iωQ̄ u −2 Sℓ′ ,−(m1 +m2 ) (θ, ϕ; aωQ̄ ) .
+                                           0                                                                                                                           (35)
+
+                                                                                                      Dividing the amplitude of this quadratic mode by the
+                                          −1
+                                                                                                      amplitudes of the linear modes gives us the coupling co-
+                                                                                                                 Q̄,ℓ′
+                                                                                                      efficient R++    for the Q̄ mode, namely that
+                                          −2
+                                                                                                                               ′          ′             ′
+                                                                                                                          Q̄,ℓ                   Q,ℓ
+                                          −3
+                                                                                                                         R++   = (−1)ℓ +ℓ1 +ℓ2 R̄++  .                  (36)
+
+                                               0.0      0.2        0.4        0.6      0.8            Similarly, the above analysis applies to any channel
+                                                                          χ                           (c1 , c2 ), giving us
+                                                                                                                               ′          ′             ′
+                                                                                                                         RcQ̄,ℓ
+                                                                                                                            1 c2
+                                                                                                                                 = (−1)ℓ +ℓ1 +ℓ2 R̄cQ,ℓ
+                                                                                                                                                     1 c2
+                                                                                                                                                          .             (37)
+FIG. 4. Magnitude (top) and phase (bottom)
+                                            of the ampli-
+                                         220+
+tude ratio at the horizon for the QQNM
+                                         220+
+                                               , using spin-                                          Furthermore, note that while we used the spheroidal ba-
+weighted spherical (blue dots) and spheroidal (green dots)                                            sis for this analysis, Eq. (36) is valid even for the am-
+harmonics                                                                                             plitude ratio computed using the spin-weighted spherical
+                                                                                                      harmonic basis. Thus, the amplitude ratio of a quadratic
+                                                                                                      mode can be expressed in terms of the amplitude ratio
+   Consequently, an even or odd combination of pairs                                                  of its conjugate mode.
+of linear modes L1 , L̄1 , and L2 , L̄2 gives rise to
+4 quadratic modes that arise from their cross-terms:
+(L1 ; L2 ), (L1 , L̄2 ), (L̄1 ; L2 ) and (L̄1 ; L̄2 ). Here each                                                           Additional SNR plots
+quadratic mode is contributed to by 3 channels. How-                                                                                                         
+ever, as we will see, not all 12 of the amplitude ratios                                                                                           3, 3, 0, +
+                                                                                                        Figure 5 shows the SNR dependence of
+are independent. The parity symmetry of the Kerr back-                                                                                             2, 2, 0, +
+ground will reduce it to 6 independent quadratic ratios.                                              on progenitor binaries’ total mass Mtot , with q =
+   Parity symmetry for quadratic amplitude ratios.— Let                                               2.75, χeff = 0.9. For CE, we choose DL = 410 Mpc,
+us now use the parity      symmetry to relate                                                        while for LISA we set z = 1.                           
+                                               amplitude ra-                                                                                      3, 3, 0, +
+                               ℓ1 m1 n1 p1                                                              Figure 6 shows the SNR dependence of
+tios. Consider Q =                                   , a quadratic                                                                                 2, 2, 0, +
+                               ℓ2 m2 n2 p2 ++
+mode with frequency ωQ produced using the chan-                                                       on q and χeff , using LISA with Mtot = 8 × 106 M⊙ and a
+nel (+, +). While the quadratic modes do not have                                                     redshift of 1. The optimal binary configuration remains
+spheroidal harmonic angular dependence anymore, the                                                   q ∼ 2.75 and maximally positive χeff , as in CE.
+strain at infinity can be decomposed into spheroidal har-
+                                                                                                                             6
+
+
+
+      1250                                                              0.8
+      1000                                                              0.6
+       750                                                       χeff
+SNR                                                                     0.4
+       500
+                                                                        0.2
+       250
+                                                                        0.0     2             4              6
+           0
+                     106               107              108                                       q
+                                Mtot
+                                                                         16.2       175.6     335.0       494.3       653.7
+      60                                                                                       SNR
+
+      50
+                                                                                                                          
+                                                                                                               3, 3, 0, +
+                                                                 FIG. 6. The SNR dependence of the QQNM,                      ,
+                                                                                                               2, 2, 0, +
+      40                                                         on progenitor binaries’ mass ratio q and effective spin χeff ,
+                                                                 assuming LISA. The binary systems have a total mass of 8 ×
+
+SNR
+                                                                 106 M⊙ and a redshift of 1.
+      30
+      20
+      10
+       0
+               50           100           150          200
+                              Mtot
+                                              
+                                    3, 3, 0, +
+FIG. 5. The SNR dependence of                    on progenitor
+                                    2, 2, 0, +
+binaries’ total mass Mtot , using LISA (top) and CE (bottom),
+with q = 2.75, χeff = 0.9. For CE, we choose DL = 410 Mpc,
+while for LISA we set z = 1.
+

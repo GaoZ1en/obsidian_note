@@ -1,0 +1,1878 @@
+                                                      The excitation of quadratic quasinormal modes for Kerr black holes
+                                                                                                1, ∗                     2, 1, 3, †
+                                                                                 Sizheng Ma            and Huan Yang
+                                                               1
+                                                                   Perimeter Institute for Theoretical Physics, Waterloo, ON N2L2Y5, Canada
+                                                                    2
+                                                                      Department of Astronomy, Tsinghua University, Beijing 100084, China
+                                                                          3
+                                                                            University of Guelph, Guelph, Ontario N1G 2W1, Canada
+                                                                                             (Dated: April 30, 2024)
+                                                         The excitation of quadratic quasinormal modes is an important nonlinear phenomenon for a
+                                                      Kerr black hole ringing at a specific linear mode. The amplitude of this second-order effect is
+                                                      proportional to the square of the linear mode amplitude, with the ratio being linked to the nature of
+                                                      the Kerr black hole. Focusing on the linear (l = m = 2, n = 0) mode, we compute the dependency
+                                                      of the ratio on the dimensionless spin of the black hole, ranging up to 0.99, with the method
+                                                      applicable for more general mode couplings. Our calculation makes use of the frequency-domain,
+                                                      second-order Teukolsky equation, which involves two essential steps (a) analytically reconstructing
+                                                      the metric through the Chrzanowski-Cohen-Kegeles approach and (b) numerically solving the second-
+
+
+
+
+arXiv:2401.15516v2 [gr-qc] 27 Apr 2024
+                                                      order Teukolsky equation using the shooting method along a complex contour. We find that the
+                                                      spin dependence of the ratio shows a strong correlation with the angular overlap between parent
+                                                      and child modes, providing qualitative insights into the origin of the dependence. Depending on
+                                                      the nature of the angular overlap, the ratio decreases with spin in scenarios such as the channel
+                                                      (l = m = 2, n = 0) × (l = m = 2, n = 0) → (l = m = 4) or increases in situations like
+                                                      (l = m = 2, n = 0) × (l = m = 2, n = 0) → (l = 5, m = 4). For both cases, the ratios do not vanish in
+                                                      the extremal limit. Our studies may offer insights into the search for quadratic quasinormal modes
+                                                      from numerical relativity and gravitational wave detections. As a byproduct, we find that the Weyl
+                                                      scalars can be concisely expressed with the Hertz potential.
+
+
+                                                          I.   INTRODUCTION                                BHs [24, 25]. More recently the nonlinear excitation of
+                                                                                                           modes in dynamical BHs with varying mass and spin was
+                                            The final stage of a binary black hole (BH) coalescence        analyzed in Refs. [26, 27]. In addition, quadratic QNMs
+                                         process is described by a deformed Kerr BH ringing down           have been identified from numerical-relativity simulations
+                                         and relaxing to its final state. Depending on the start-          both in waveforms at future null infinity [28–30] and in
+                                         ing time of the analysis, the ringdown process may be             multipole moments of dynamical horizons [31]. Then a re-
+                                         well-described by the BH perturbation theory, and the             lated interesting question is: how do the quadratic QNMs
+                                         resultant GW waveform is consistent with a superposition          reflect the nature of Kerr BHs? To answer this question,
+                                         of quasinormal modes (QNMs) [1–3]. Leveraging the fact            it is preferable to analyze quadratic QNMs for different
+                                         that the QNM frequencies are uniquely determined by the           BH spins, and possibly compare them with predictions
+                                         mass and spin of the remnant Kerr BH, as motivated by             from modified theories of gravity. This work targets the
+                                         the no-hair theorem [4], the idea of BH spectroscopy [5–7]        first part of this task, i.e., the predictions within General
+                                         has been developed and implemented: by comparing theo-            Relativity.
+                                         retical predictions of QNM frequencies with observational
+                                         data from the LIGO-Virgo-KAGRA network [8–20], one                   The dynamics of quadratic QNMs are captured by
+                                         can test General Relativity and constrain the parameters          second-order perturbation theory [21, 22, 32–37]. These
+                                         of modified gravity theories.                                     modes originate from the interaction between two linear
+                                            Moving deeper within the merger phase, it is natural           parent QNMs. Consequently, the complex frequencies of
+                                         to expect nonlinear effects of General Relativity should          the quadratic QNMs emerge as a linear combination of
+                                         play more important roles both in the dynamics of the             the frequencies of the individual parent modes and their
+                                         spacetime and in the observed data. In previous literature,       respective complex conjugates. Meanwhile, the quadratic
+                                         various kinds of nonlinear effects have been discussed to         amplitudes are proportional to the product of the linear
+                                         different extents. Gleiser et al. [21] initiated the analysis     amplitudes, with the ratio being called the “excitation
+                                         with second-order Regge-Wheeler-Zerilli formalism. The            factor”. The factor is an intrinsic parameter of the Kerr
+                                         second-order Teukolsky formalism was later developed by           spacetime which characterizes the level of difficulty to
+                                         Campanelli and Lousto [22]. Zlochower et al. [23] investi-        excite the corresponding quadratic modes. In the context
+                                         gated mode coupling in the scattering processes by BHs.           of Schwarzschild BHs, Nakano and Ioka [32, 33] used the
+                                         Yang et al. studied parametric coupling between modes             Regge-Wheeler-Zerilli formalism to compute the factor
+                                         to motivate a transient instability of near-extremal Kerr         for the channel (l = 2, m = 2, n = 0)2 → (l = 4, m = 4),
+                                                                                                           where (l, m) are angular indices and n stands for the
+                                                                                                           overtone index. The Wentzel–Kramers–Brillouin [38] and
+                                                                                                           uniform [39] approximations were also applied to pro-
+                                         ∗ sma2@perimeterinstitute.ca
+                                                                                                           vide some analytical insights for the excitation factor of
+                                         † hyangdoa@tsinghua.edu.cn
+                                                                                                           Schwarzschild BHs. As for Kerr BHs, the Kerr/CFT
+                                                                                                                             2
+
+correspondence [40] was used to estimate the excitation         with Γ = r + ia cos θ.
+factors in the near-extremal limit. In addition, two recent       The perturbation theory of Kerr is based on the
+studies [41, 42] analyzed the problem with a purely nu-         Newman-Penrose (NP) formalism, where spin coefficients
+merical perspective: fitting the amplitudes of child and        and Weyl scalars serve as fundamental quantities. Using
+parent modes obtained from scattering experiments.              the Kinnersley tetrad, these quantities are given by:
+   In this work, we provide a systematic description of the
+quadratic QNMs by computing their excitation factors                                                                 1
+                                                                κ(0) = σ (0) = λ(0) = ν (0) = ϵ(0) = 0,   ρ(0) = − ,
+with a semi-analytical approach. We achieve this goal                                                               Γ̄
+by solving the frequency-domain, second-order Teukolsky          (0)   cot θ     (0)    ia sin θ      (0)      ia sin θ
+                                                                β = 3/2 , π = 1/2 2 , τ = − 1/2 ,
+equation. Our methodology comprises two key steps: (a)                 2 Γ              2 Γ̄                    2 Σ
+analytically reconstructing the metric through the method                 ∆                      r − 1
+given by Chrzanowski-Cohen-Kegeles (CCK) [43–45] and            µ(0) = −      , γ (0) = µ(0) +         , α(0) = π (0) − β̄ (0) ,
+                                                                         2ΣΓ̄                      2Σ
+(b) numerically solving the second-order Teukolsky equa-                                                                 (3)
+tion using the shooting method along a complex contour.
+We implement this method for specific mode couplings                   (0)     (0)      (0)     (0)
+                                                                and Ψ4 = Ψ3 = Ψ1 = Ψ0 = 0, Ψ2 = −Γ̄−3 . The
+                                                                                                           (0)
+and compare the results with previous literature.
+                                                                overline operation ¯
+                                                                                  (...) denotes the complex conjugation.
+   This paper is organized as follows. In Sec. II, we briefly
+review the linear perturbation of Kerr BHs. Section III
+focuses on the CCK method. We then use this method                              A.    Derivative operators
+to construct an analytical source for the second-order
+Teukolsky equation in Sec. IV. Our numerical approach to
+solving the Teukolsky equation in the complex r-domain            There are three primary derivative operators in the NP
+is introduced in Sec. V. It is then applied to address          formalism
+the problem of quadratic QNMs in Sec. VI. Finally, we                                   r2 + a2       a
+summarize the results in Sec. VII.                                  D (0) = lµ ∇µ = ∂r +        ∂t + ∂ϕ ,
+                                                                                           ∆          ∆
+   Throughout this paper we fix the mass of Kerr BHs
+                                                                                                r 2 + a2
+                                                                                                                
+at M = 1, therefore the symbol a is used to denote their               (0)   µ        ∆                      a
+                                                                    ∆ = n ∇µ = −           ∂r −          ∂t − ∂ϕ ,
+dimensionless spins. Our metric signature is (+, −, −, −).                           2Σ             ∆        ∆
+Complex conjugates are represented by overlines.                                     1
+                                                                    δ (0) = mµ ∇µ = √ (∂θ + i csc θ∂ϕ + ia sin θ∂t ) .
+                                                                                     2Γ
+     II.    BLACK-HOLE PERTURBATIONS VIA                        Note that the derivative operator ∆(0) is not to be con-
+           NEWMAN-PENROSE FORMALISM                             fused with the scalar function ∆. To facilitate our upcom-
+                                                                ing derivation, it is advantageous to follow Chandrasekhar
+  In this section, we provide a brief overview of the linear    [48] (see Chapter 8) and define operators
+perturbation of Kerr BHs, with more detailed references
+given in [46–48]. In particular, we review the derivative                           (r2 + a2 )      a          r−1
+                                                                        Dn = ∂r +              ∂t + ∂ϕ + 2n          ,
+operators and the Teukolsky equation used in later cal-                                 ∆           ∆           ∆
+culations. Using Boyer-Lindquist coordinates, the Kerr                                2
+                                                                                    (r + a )2
+                                                                                                    a          r−1
+metric is expressed as follows                                          Dn† = ∂r −             ∂t − ∂ϕ + 2n          ,     (4)
+                                                                                        ∆           ∆           ∆
+           ∆                      sin2 θ  2               2           L†n = ∂θ + i csc θ∂ϕ + ia sin θ∂t + n cot θ,
+ds2 =        (dt − a sin2 θdϕ)2 −         (r + a2 )dϕ − adt
+           Σ                        Σ                                   Ln = ∂θ − i csc θ∂ϕ − ia sin θ∂t + n cot θ.
+   Σ 2
+ −   dr − Σdθ2 ,                                          (1)   Here n is typically an integer. We can see that D and
+   ∆
+where                                                           D† do not have θ−dependence, whereas L and L† do not
+                                                                have r−dependence. These operators are related to δ (0) ,
+            Σ = r2 + a2 cos2 θ,   ∆ = r2 − 2r + a2 .            ∆(0) , and D (0) via
+The spacetime √ is accompanied with an event horizon                                1                           1
+at r√
+    + = 1 +    1 − a2 , and a Cauchy horizon at r− =             δ (0) + 2nβ (0) = √ L†n , δ̄ (0) + 2nβ̄ (0) = √ Ln ,
+                                                                                    2Γ                          2Γ̄
+1 − 1 − a2 . A Kerr BH has two principal null directions,
+                                                                                                                    ∆
+described by the Kinnersley tetrad                               ∆(0) − 2n(γ − µ)(0) = ∆(0) − 2n(γ̄ − µ̄)(0) = − Dn† ,
+                                                                                                                   2Σ
+                  1 2
+                     r + a2 , ∆, 0, a ,
+                                     
+             l=                                                  D (0) = D0 .                                         (5)
+                 ∆
+                   1
+                       r2 + a2 , −∆, 0, a ,                     While acting on eimϕ−iωt , they reduce to
+                                         
+             n=                                       (2)
+                  2Σ
+                     1                                                       iK      r−1                     iK      r−1
+             m = √ (ia sin θ, 0, 1, i csc θ),                   Dn = ∂r −       + 2n     ,      Dn† = ∂r +      + 2n     ,
+                     2Γ                                                       ∆       ∆                       ∆       ∆
+                                                                                                                                                   3
+
+L†n = ∂θ − P + n cot θ,                                              For completeness, we also provide the expressions of
+                                                                    GHP operators [50]:
+with
+                                                                                    þ = D (0) − pϵ(0) − qϵ̄(0) ,
+  K = (r2 + a2 )ω − am,             P = −aω sin θ + m csc θ. (6)
+                                                                                    þ′ = ∆(0) − pγ (0) − qγ̄ (0) ,
+Note that here we adopt Teukolsky’s convention for K                                                                                              (9)
+[49], which differs from Chandrasekhar’s by a minus sign.                           ðGHP = δ (0) − pβ (0) − q ᾱ(0) ,
+  In our following calculations, we frequently encounter                            ð′GHP = δ̄ (0) − pα(0) − q β̄ (0) ,
+two combinations of operators
+                                                                    in terms of Chandrasekhar’s:
+             δ (0) − pβ (0) − q ᾱ(0) + mπ̄ (0) + nτ (0) ,
+             ∆(0) − pγ (0) − qγ̄ (0) + mµ̄(0) + nµ(0) ,                       þ = D0 ,
+                                                                                                              
+                                                                                       ∆     †           q   p
+with p, q, m, n being integers. They can be converted to                      þ′ = −       D(p+q)/2   − −         ,
+                                                                                       2Σ                Γ Γ̄
+                                                                                                                         (10)
+                                                                                                                
+           1                 m−q     n                                                   1                 iqa sin θ
+        √      L†(q−p)/2 −         +      ia sin θ , (7a)                     ðGHP = √         L†(q−p)/2 +             ,
+           2Γ                  Γ     Γ̄                                                  2Γ                   Γ
+                                                                                                                  
+             ∆     †        (m − q) (n − p)                                              1                 ipa sin θ
+         −      D(p+q)/2  +         +             ,  (7b)                     ð′GHP = √        L(p−q)/2 −              .
+            2Σ                  Γ          Γ̄                                            2Γ̄                  Γ̄
+                                                                    Here the prime operation corresponds to the exchange of
+respectively. In fact, the subscript (p − q)/2 and (p + q)/2        spinor basis [50].
+are called spin and boost weight in the Geroch-Held-                  Finally, for Schwarzschild BHs, L†s and Ls become the
+Penrose (GHP) formalism [50]. Normally, these operators             ð operators for spin-weighted spherical harmonics
+are applied sequentially. The factors ∆, Γ, Σ, sin θ can be
+pulled out via the following commutation relations [48]
+                                                                             − L†−s = ð = − (∂θ − m csc θ − s cot θ) ,
+                                                                                                                                                 (11)
+                  †
+∆Dn+1 = Dn ∆, ∆Dn+1    = Dn† ∆,                                              − Ls = ð̄ = − (∂θ + m csc θ + s cot θ) .
+ † n               †
+ Dm , Γ = nΓn−1 ,      , Γ̄n = nΓ̄n−1 ,
+                           
+                    Dm
+sin θLn+1 = Ln sin θ, sin θL†n+1 = L†n sin θ,
+ † n                           † n                                               B.     Teukolsky equation
+ Lm , Γ = −inaΓn−1 sin θ,        Lm , Γ̄ = inaΓ̄n−1 sin θ.
+                                                       (8)
+Notably, the commutation does not change the structure                To the linear order, the perturbations of Ψ0,4 are de-
+                                                                    scribed by the Teukolsky equation [49, 51]
+                                              
+    †      ... ...                    †     ... ...
+  L... −      +      ia sin θ ,    D... +      +        .                                           h
+                                                                                                             (1)
+                                                                                                                   i
+            Γ   Γ̄                           Γ   Γ̄                                             T       sψ             = 0,                      (12)
+
+Therefore, they can be used as (the only) two building
+                                                                              (1)         (1)                          (1)          (1)
+blocks for θ and r derivatives in the procedure of metric           where 2 ψ   = Ψ0 and −2 ψ       = Γ̄4 Ψ4 , meanwhile
+reconstruction. This is a major advantage of Dn , Ln and            we assume there are no matter sources. The Teukolsky
+their daggers over δ (0) , ∆(0) , and D (0) .                       operator T reads
+
+
+
+          (r2 + a2 )2
+                                   2
+                                         4ar ∂ 2
+                                                      2            2                                              
+                                    ∂                  a        1       ∂      −s ∂       s+1 ∂        1 ∂           ∂
+   T =                − a2 sin2 θ      +           +       −               − ∆          ∆          −           sin θ
+              ∆                    ∂t2    ∆ ∂t∂ϕ        ∆    sin2 θ ∂ϕ2            ∂r         ∂r     sin θ ∂θ        ∂θ
+                                            2    2
+                                                                      
+                a(r − 1) i cos θ ∂            r −a                       ∂
+         − 2s            +              − 2s           − r − ia cos θ      + (s2 cot2 θ − s).                            (13)
+                   ∆        sin2 θ ∂ϕ            ∆                      ∂t
+
+
+                        (1)                                                                     (1)
+Decomposing s ψ               into time and angular harmonics       the radial function sRlmω (r) satisfies [48]
+
+                                                                       (∆D1 D2† + 6iωr) +2Rlmω = +2λlmω +2Rlmω ,
+                                                                                                    (1)                      (1)     (1)
+                                                                                                                                                (15a)
+                              (1)                                         †                             (1)                   (1)         (1)
+             sψ
+                  (1)
+                        = sRlmω (r) sSlmω (θ)ei(mϕ−ωt) ,     (14)      (∆D−1 D0 − 6iωr) −2Rlmω = −2λlmω −2Rlmω .                                (15b)
+                                                                                                                              4
+
+              (1)                                                                                            (1)
+with ±2λlmω being the angular eigenvalues. By imposing            Hertz potential, given a particular Ψ4 . A workaround
+the boundary conditions of a QNM, i.e., ingoing at the            involves bypassing the use of the Hertz potential and per-
+horizon r+ and outgoing at infinity, an analytic repre-                                                      (1)
+                                                                  forming reconstruction directly from Ψ4 [34, 35]. This
+                (1)
+sentation for sRlmω (r) can be constructed via Leaver’s           alternative method requires solving a set of differential
+method [52]                                                       equations.
+                                                                     In our specific scenario, namely the second-order effect
+        (1)
+   s
+       Rlmω =eiωr (r − r+ )−s−iσ+ (r − r− )−1−s+2iω+iσ+           of a QNM, the limitations associated with CCK are effec-
+                 ∞              n                               tively eliminated. First, without the presence of matter
+                X         r − r+
+             ×       an              ,                 (16)       sources, the complexity introduced by the stress tensor
+                n=0
+                          r − r−                                  [53] becomes irrelevant and the Hertz potential provides
+                          √                                       a comprehensive description for the perturbed metric
+with σ+ = (ωr+ − am/2)/ 1 − a2 . The coefficients an              (modulo gauge freedom and “zero modes”). Second, as
+are determined by three-term recurrence relations                 demonstrated below in Sec. III A, the Hertz potential can
+                                                                                                   (1)
+                                                                  be uniquely determined by Ψ4 and the boundary condi-
+ α0 a1 + β0 a0 = 0,         αn an+1 + βn an + γn an−1 = 0. (17)   tion of a QNM. Additionally, a notable advantage of CCK
+                                                                  is its exclusive dependence on the differentiation of the
+where αn , βn , and γn are given in Appendix A. For our
+                                                                  Hertz potential, in contrast to the need for solving a set
+later convenience, we define
+                                                                  of partial derivative differential equations [34, 35]. This
+         XL (r) = eiωr (r − r+ )−iσ+ (r − r− )2iω+iσ+             feature not only provides us with more analytical insights
+                                                                  but also practical convenience in the numerical imple-
+          = eiω(r∗ −4r+ u/a)+imu ,                        (18)    mentation. In fact, we will show in Sec. III B that the
+                                                                                               (1)       (1)
+                                                                  perturbed Weyl scalars, Ψ3 and Ψ2 , can be succinctly
+with
+                                                                  expressed in terms of the Hertz potential.
+                     dr∗   r2 + a2     du  a                         The CCK procedure is accompanied by two gauge
+                         =         ,      = ,             (19)    choices [43]: the ingoing and outgoing radiation gauges.
+                     dr       ∆        dr  ∆
+                                                                  In particular, the outgoing radiation gauge (ORG) is
+namely                                                            asymptotically flat [22], and its solution is directly related
+                                                              to physical observables, such as energy radiation and the
+            r+          r − r+       r−         r − r−            excitation factor of second-order QNMs at future null
+r∗ = r + √         ln            −√        ln            ,
+           1 − a2          r+       1 − a2        r−              infinity. Therefore, it is reasonable to adopt ORG to
+        a         r − r+                                          compute the gauge invariant excitation factor at infinity,
+u= √           ln         .                                                                                        (2)
+    2 1 − a2 r − r−                                               even though the second-order perturbation Ψ4 generally
+                                                                  depends on the choice of gauge and tetrad [22].
+The radial derivative of XL is given by                              Given the considerations above, we will adopt CCK
+                     iXL (r)                                     and ORG for our subsequent calculations. Below, we
+       XL′ (r) =              am + ω(a2 + r2 − 4r+ ) .
+                                                    
+                                                          (20)    first determine the Hertz potential for a linear QNM in
+                       ∆
+                                                                  Sec. III A. Subsequently, in Sec. III B, we present the rep-
+                                                                  resentation of the metric and Newman-Penrose variables
+                    III.   RECONSTRUCTION                         in connection with the determined Hertz potential.
+
+                                          (1)
+   After specifying the Weyl scalar Ψ4 for a QNM to the
+linear order, a crucial step toward second-order pertur-                   A.   Determining the Hertz potential
+bations involves identifying a set of NP variables and a
+                                  (1)
+metric that is consistent with Ψ4 . This process is gen-            In ORG, the Hertz potential ΨORG is related to Ψ4
+                                                                                                                            (1)
+erally referred to as metric reconstruction. The method           via [55–57]
+was pioneered by Chrzanowski [43] and Cohen and Kege-
+les [44, 45] for source-free scenarios. In the presence of                               1 ∆4 † † † †
+                                                                                 (1)
+arbitrary matter sources, the method was extended re-                           Ψ4 =          D D D D Ψ̄ORG ,              (21)
+cently by Green et al. [53]. The CCK method centers                                     32 Γ̄4 2 2 2 2
+around constructing a Hertz potential Ψ as a solution
+                                                                  where the bar stands for the complex conjugate. Since
+to the Teukolsky equation. Subsequently, from Ψ, a per-
+                                                                  it is a linear differential equation of order four, Ψ̄ORG
+turbed metric and its corresponding spin coefficients can
+                                                                  consists of a homogeneous part and a particular solution.
+be derived, satisfying the linearized Einstein equations
+                                                                  First, the homogeneous part solves D2† 4 Ψ̄hom = 0, which
+on top of a Kerr background. Wald’s elegant argument
+                                                                  is equivalent to
+[54] attests to the viability of this methodology. How-
+ever, a limitation of this approach lies in the challenge of
+directly inverting the differential equation to obtain the                             D0† 4 ∆2 Ψ̄hom = 0.                 (22)
+                                                                                                                                                       5
+
+                                                   †
+Here we have used the commutation relation ∆Dn+1        =                       At infinity, its asymptotic behavior reads
+ †
+Dn ∆ in Eq. (8). Following [58], a general solution reads                                                                            ∞
+                                                                                                                                     X
+                                                                                                                                                !
+                                                                                                                       −1       −2
+            Z                     3                                                    +2Rlmω = XL (r)(r − r− )             ∆              an
+                            XX
+ ∆2 Ψ̄hom = dωe−iω(t+r∗ )           eim(ϕ+u) Bimω (θ)ri ,                                                           
+                                                                                                                                     n=0
+
+                                  m i=0                                                                   aHertz     1
+                                                                                                     × 1+        +O      ,                           (30)
+                                                                        (23)                                r        r2
+where Bimω (θ)’s are arbitrary functions of θ and u is                          with
+defined in Eq. (19). We can see that there are only ingoing                                     i       (1)
+                                                                                 aHertz =             λ     − 4 + 2iam − r− − 4ir+ ωlmn .
+modes depending on t + r∗ . Since the Hertz potential is                                      2ωlmn +2 lmω
+                               (1)                                                                                                    (31)
+related to the Weyl scalar Ψ0 through only time- and
+angular-derivatives [55, 57]
+       (1)   1h † † † †                         i
+                                                                                 B.    Determining the metric and Newman-Penrose
+     Ψ0 =       L−1 L0 L1 L2 Ψ̄ORG + 12∂t ΨORG .       (24)
+             8                                                                                        variables
+The homogenous part Ψ̄hom corresponds to a GW emerg-
+ing from past null infinity, which should vanish in our                            After obtaining the Hertz potential ΨORG , we then
+pure-QNM context.                                                               follow CCK to compute the metric and NP variables. In
+  On the other hand, an efficient approach to determine                         particular, we will cast them into forms that are conve-
+the particular solution is to solve the s = 2 source-free                       nient for numerical calculations.
+Teukolsky equation, which the Hertz potential ΨORG
+should satisfy in ORG [43], with the same QNM bound-
+                        (1)                                                                                  1.   Metric
+ary conditions1 for Ψ4 . Leveraging the Teukolsky-
+Starobinsky relation [59, 60], we ensure that the solution
+consistently complies with Eq. (21). As a result, the Hertz                        In ORG, the nonvanishing metric components are
+                            (1)                                                 hm̄m̄ , hlm̄ , hll and their complex conjugates. They are
+potential associated with Ψ4 can be written as [5]                              related to the Hertz potential through [43]
+           X (a)
+  ΨORG =       Blmω +2Rlmω (r) +2 Slmω (θ)eimϕ e−iωlmn t                         hll = ρ̄−4 (δ − 3ᾱ − β + 5π̄)(δ − 4ᾱ + π̄)Ψ̄ORG + c. c.,
+              lmn
+                                                                                                                                                    (32a)
+                (b)
+            + Blmω +2R̄lmω (r)+2 S̄lmω (π − θ)e−imϕ eiω̄lmn t ,                               −4
+                                                                                 hm̄m̄ = ρ̄        (∆ + 5µ̄ − 3γ̄ + γ)(∆ + µ̄ − 4γ̄)Ψ̄ORG ,
+                                                                        (25)
+                                                                                                                                          (32b)
+            (a)          (b)                                                              1 −4
+where Blmω ’s and Blmω ’s are constants, while n stands                          hlm̄ =     ρ̄ (δ − 3ᾱ + β + 5π̄ + τ )(∆ + µ̄ − 4γ̄)
+for the radial overtone index. In the following discussions,                              2
+                                             (1)
+we restrict ourselves to a single mode in Ψ4 , namely                              1
+                                                                                  + ρ̄−4 (∆ + 5µ̄ − µ − 3γ̄ − γ)(δ − 4ᾱ + π̄)Ψ̄ORG .
+                                                                                   2
+      (1)
+   Ψ4 ∼ eimϕ e−iωlmn (t−r∗ ) −2 Slmω (θ),                 r → ∞,        (26)                                                        (32c)
+which implies                                                                   Here c. c. stands for the complex conjugate. With the
+                                                                                help of Eq. (5), they become
+  Ψ̄ORG = +2Rlmω (r)+2 Slmω (π − θ)eimϕ e−iωlmn t
+                                                                                        Γ2
+                                                                                                            
+                                                                                               †   2ia sin θ
+            = (−1)m+l +2Rlmω (r)−2 Slmω (θ)eimϕ e−iωlmn t ,                      hll =       L1 +              L†2 Ψ̄ORG + c. c.,        (33a)
+                                                                                        2             Γ
+                                                       (27)
+                                                                                              Γ2         2
+where we have used the property of spin-weighted                                 hm̄m̄ = ∆2 2 (D2† − )D2† Ψ̄ORG ,                        (33b)
+                                                                                             4Γ̄        Γ
+spheroidal harmonics [61]                                                                   ∆Γ2 a2 sin 2θ †
+                                                                                                                    
+                                                                                                                           2r
+                                                                                                                                    
+                                   m+l                                           hlm̄ = − √                  D2 + D2† −           L†2 Ψ̄ORG .
+              s Slmω (π − θ) = (−1)    −s Slmω (θ).                     (28)               2 2Γ̄       Σ                   Σ
+                                                                                                                                         (33c)
+  As discussed in Sec. II B, Leaver’s representation for
++2Rlmω is given by
+                                                                                For a Schwarzschild BH, the expressions are reduced to
+                                               ∞                      n                            r2
+                                 −1       −2
+                                               X              r − r+                           hll =    ððΨ̄ORG + c. c.,
+  +2Rlmω = XL (r)(r − r− )            ∆              an                     ,                         2
+                                                              r − r−
+                                                                                                        ∆2
+                                                                                                                    
+                                               n=0                                                                 2
+                                                                        (29)                   hm̄m̄ =       D2† −     D2† Ψ̄ORG ,                   (34)
+                                                                                                        4          r
+                                                                                                                    
+                                                                                                       r∆          2
+                                                                                               hlm̄ = √      D2† −     ðΨ̄ORG ,
+1 Kerr BHs have the same QNM frequencies for s = ±2 perturba-                                         2 2          r
+  tions.                                                                        where we have used Eq. (11).
+                                                                                                                                         6
+
+       2.   Directional derivatives and spin coefficients                                                4.   Ψ3
+
+  In ORG, the first-order directional derivatives are given             To obtain Ψ3 , we start from the Ricci identity [48]
+by [22]
+                                                                      Ψ3 = (δ̄ + β̄ − τ̄ )γ − (∆ − γ̄ + µ̄)α + (ρ + ϵ)ν − (τ + β)λ.
+                         1
+               D (1) = − hll ∆(0) ,                         (35a)                                                             (40)
+                         2
+               ∆(1) = 0,                                    (35b)     Linearizing it leads to
+                                  1                                          (1)
+               δ (1) = −hlm ∆(0) + hmm δ̄ (0) .             (35c)          Ψ3 = (δ̄ + β̄ − τ̄ )(1) γ (0) − (∆ − γ̄ + µ̄)(0) α(1)
+                                  2
+                                                                                   − (τ + β)(0) λ(1) ,                                 (41)
+From Eq. (32) we can see that δ (1) is contributed ex-
+clusively by ΨORG and not by its complex conjugate.                   since µ(1) = γ (1) = ν (1) = ∆(1) = ν (0) = λ(0) = 0. We
+Similarly, the spin coefficients β (1) , ᾱ(1) , τ (1) , and π̄ (1)                        (1)
+                                                                      can then express Ψ3 in terms of the Hertz potential by
+are given by [22]                                                     using the results given in Secs. III B 1 and III B 2. This
+                  1                                                   yields a tedious expression, e.g., see the ingoing-radiation-
+       β (1) = − (∆ + 2γ + µ + 2µ̄)(0) hlm
+                  4                                                   gauge counterpart in Eq. (98) of Ref. [56]. However, by
+                  1                                                   virtue of Chandrasekhar’s operators Dn† and L†n , and the
+                + (δ̄ + 2β̄ − π − τ̄ )(0) hmm ,                       commutator in Eq. (C13a), we find the expression can be
+                  4
+                  1                                                   simplified straightforwardly into
+       ᾱ = − (δ̄ − 2α + π + τ̄ )(0) hmm
+          (1)
+                                                                          √
+                  4                                                                                                      3
+                                                                        16 2Γ̄3 (1)
+                                                                                                            
+                  1                                                                            †   3ia sin θ      †   1
+                − (∆ + 4γ̄ − 2γ + µ − 2µ̄)(0) hlm ,                               Ψ3 = − L2 −                   D2 −        Ψ̄ORG
+                  4                                                       ∆3                          Γ̄              Γ̄
+                                                                                               2
+                1                          1
+                                                                                     
+                                                                           6ia sin θ         2
+       τ (1) = (∆ − 2γ + µ)(0) hlm − π (0) hmm ,                        +             D2
+                                                                                        †
+                                                                                          −       Ψ̄ORG .                      (42)
+                2                          2                                  Γ̄2           Γ̄
+                  1                          1
+       π̄ (1) = − (∆ − 2γ + µ)(0) hlm − τ̄ (0) hmm .                  For Schwarzschild BHs, it reduces to
+                  2                          2
+                                                                                  √                      3
+They do not depend on Ψ̄ORG either. Here we emphasize                          16 2r3 (1)
+                                                                                               
+                                                                                                   †   1
+that the expressions above have been simplified in ORG.                                 Ψ 3 =    D2  −      ðΨ̄ORG .                   (43)
+                                                                                  ∆3                   r
+See e.g., [34] for the full expressions.
+  Meanwhile, three spin coefficients vanish identically in
+ORG [22]                                                                                                 5.   Ψ4
+                        (1)        (1)        (1)
+                    ν         =γ         =µ         = 0.     (37)
+                                                                        Finally, to compute Ψ4 , we adopt the Ricci identity
+The expressions of other spin coefficients are not informa-           [48]
+tive, therefore we include them in Appendix B.
+                                                                       Ψ4 = (δ̄ + 3α + β̄ + π − τ̄ )ν − (∆ + µ + µ̄ + 3γ − γ̄)λ.
+                                                                                                                             (44)
+                               3.        Ψ2
+                                                                      By using ν (0) = λ(0) = ν (1) = 0 and µ(0) − γ (0) = µ̄(0) −
+   Ψ2 is intricately linked to the Hertz potential, e.g., see         γ̄ (0) , the expression becomes
+the ingoing-radiation-gauge counterpart in Eq. (97) of                                   (1)
+Ref. [56]. Nevertheless, we find that its expression can be                           Ψ4 = −(∆ + 2µ + 2γ)(0) λ(1) .                    (45)
+significantly simplified to
+                                                                      We then insert the expression of λ(1) in Eq. (B1) to re-
+                                      2
+        16Γ̄4 (1)                                                     produce the known result in the literature [55–57]
+                         
+                             †     2
+             Ψ     = Γ̄2
+                           D    −         L†1 L†2 Ψ̄ORG
+         ∆2 2               2
+                                   Γ̄
+                                                                                         (1)        1 ∆4 † † † †
+                     
+                               2
+                                  
+                                               1
+                                                                                     Ψ4 =               D D D D Ψ̄ORG .               (46)
+                         †
+        − 4ia sin θΓ̄ D2 −               †
+                                      D2 −          L†2 Ψ̄ORG                                      32 Γ̄4 2 2 2 2
+                               Γ̄              Γ̄
+                                                                    This serves as a consistency check for our previous steps
+                         †     2
+             2    2
+        − 6a sin θ D2 −             D2† Ψ̄ORG .               (38)    to determine the Hertz potential, metric, and spin coeffi-
+                               Γ̄                                     cients. After applying Leaver’s representation for Ψ̄ORG
+In particular, for Schwarzschild BHs, we have                         in Eq. (29), we obtain the asymptotic expression of the
+                                                                                           (1)
+                                  2                                  (l, m) harmonic of Ψ4 at infinity
+            16r2 (1)
+                        
+                            †   2
+                  Ψ   =   D   −      ððΨ̄ORG .               (39)                                                           ∞
+             ∆2 2           2
+                                r                                              h
+                                                                                      (1)
+                                                                                            i(∞)        4
+                                                                                                       ωlmn                 X
+                                                                                   rΨ4             =        e−iωlmn (t−r∗ )     an .   (47)
+Details of the derivation can be found in Appendix C.                                       l,m          2                  n=0
+                                                                                                                                            7
+
+      IV.    THE SECOND-ORDER TEUKOLSKY
+                    EQUATION
+                                                                                Since all the reconstructed quantities depend linearly
+                                                  (2)                         on ΨORG and its complex conjugate Ψ̄ORG , they lead to
+  It is known that the second order perturbation Ψ4
+                                                                              three types of quadratic effects:
+still follows the Teukolsky equation [22]
+                       h
+                          (2)
+                              i
+                                  (2)
+                                                                                  Ψ2ORG ∼ e2iω̄lmn t ,   ΨORG Ψ̄ORG ∼ ei(ω̄lmn −ωlmn )t , (51)
+                     T Ψ4 = S4 ,                                  (48)
+                                                                              and
+                       (2)
+where the source term S4 is given by
+                                                                               Ψ̄2ORG ∼ e−2iωlmn t .             (52)
+       h                                       i
+ (2)      (0)                   (0)                (1)
+S4 = − d4 (D + 4ϵ − ρ)(1) − d3 (δ + 4β − τ )(1) Ψ4         Our subsequent calculations focus exclusively on the ex-
+                                                                                     −2iωlmn t
+                                                       (1) citation of the mode ∼ e            in Eq. (52). Therefore,
+       h                                           i
+          (0)                    (0)
+     + d4 (δ̄ + 2α + 4π)(1) − d3 (∆ + 2γ + 4µ)(1) Ψ3 terms that depend on ΨORG do not contribute to the
+         h
+            (0)     (0)
+                           i
+                               (1)                         final second-order Teukolsky equation. Accordingly, in
+     − 3 d4 λ(1) − d3 ν (1) Ψ2                             the expressions below, we will simply drop terms of ΨORG .
+           (0)
+               h
+                       (1) (1)         (1) (1)
+                                               i           Whenever this is done we will indicate that such terms
+     − 3Ψ2 (d4 − 3µ) λ − (d3 − 3π) ν             ,         have been dropped by using the symbol ≈ instead of =.
+                                                                  (49)        For instance, in Sec. III B 2, we notice that δ (1) is fully
+                                                                                                                         (1)     (2)
+                                                                              contributed by ΨORG , the term δ (1) Ψ4 in S4 is irrele-
+and the two operators d3,4 read                                                                             −2iωlmn t                 (1)
+                                                                              vant to the excitation of ∼ e           , namely δ (1) Ψ4 ≈ 0.
+                    d3 = δ̄ + 3α + β̄ + 4π − τ̄ ,                (50a)        Similarly, we have β (1) ≈ τ (1) ≈ 0. With this observation,
+                                                                                            (2)
+                    d4 = ∆ + 4µ + µ̄ + 3γ − γ̄.                  (50b)        the source S4 further reduces to
+                                                                                          h
+                                                                                (2)   (0)                      (1)                         (1)
+From Sec. III B 2, we notice that ν (1) = µ(1) = γ (1) =                      S4 ≈d4 −(D + 4ϵ − ρ)(1) Ψ4 + (δ̄ + 2α + 4π)(1) Ψ3
+                                (1)
+∆(1) = 0 in ORG, which yields d4 = 0. As a result, the
+                                                                                                    i
+                                                                                                (1)
+                                                                                      −3λ(1) Ψ2 .                                         (53)
+source reduces to
+         h                                        i                                                              (2)
+  (2)       (0)                  (0)                  (1)
+S4 = − d4 (D + 4ϵ − ρ)(1) − d3 (δ + 4β − τ )(1) Ψ4                            At this stage, we can express S4 in terms of the Hertz po-
+               h                                i                             tential by inserting the reconstructed variables in Sec. III,
+           (0)                 (1)          (1)
+       + d4 (δ̄ + 2α + 4π)(1) Ψ3 − 3λ(1) Ψ2 .                                 and obtain
+
+
+
+                                                        i2                                                                 
+      (2) 16                                     h
+                                                   †
+                                                              h
+                                                                     † †
+                                                                              i    h
+                                                                                                 †
+                                                                                                       i
+                                                                                                                          2
+2Γ̄ ΣS4 × 6 ≈ e−2iωlmn t+2imϕ
+  4
+                                               A1 L2 S(θ) + A2 S(θ) L1 L2 S(θ) + A3 3ia sin θ S L2 S(θ) + A4 [a sin θS(θ)] ,
+                ∆
+                                                                                                                                         (54)
+
+with
+                                                                        2
+       45R Γ 3(15Γ − Γ̄)RD2† R 3(Γ̄ − 15Γ)
+                2                                                D2† R            (3Γ̄ − 42Γ)RD2† 2 R 6RΓD2† 3 R 3(7Γ − Γ̄)D2† RD2† 2 R
+A1 = −       +                +                                               +                      +          +
+        2Γ̄7        Γ̄6                 2Γ̄5                                              2Γ̄5           Γ̄4              Γ̄4
+                                2
+            3(2Γ̄ − 13Γ) D2† 2 R           (Γ̄ − 12Γ)D2† RD2† 3 R (7Γ + 4r)RD2† 4 R (11Γ − Γ̄)D2† 2 RD2† 3 R (4Γ + r)D2† RD2† 4 R
+       +                              +                          −                 +                        +
+                      8Γ̄3                          2Γ̄3                8Γ̄3                 4Γ̄2                   4Γ̄2
+                                     2
+                        †3
+         rRD2† 5 R 3Γ D2 R                     ΓD2† 2 RD2† 4 R ΓD2† RD2† 5 R
+       +          −                        −                  −              ,                                                           (55)
+           4Γ̄2        8Γ̄                           2Γ̄            8Γ̄
+
+                                     2              2
+                                  †
+       3RD2† R 3rRD2† 2 R 3 D2 R            3r D2† 2 R      3(2r + Γ̄)D2† RD2† 2 R 3RΓD2† 3 R (r + Γ)D2† RD2† 3 R
+A2 = −          +            +           +                −                        −          +
+         Γ̄5           Γ̄5       Γ̄4              2Γ̄3              2Γ̄4               2Γ̄4           Γ̄3
+                                                                                                   2
+                                                                                                 †3
+       (3Γ − Γ̄)RD2† 4 R (2r + 3Γ)D2† 2 RD2† 3 R (Γ̄ − 6Γ)D2† RD2† 4 R (Γ̄ − 2Γ)RD2† 5 R Γ D2 R           7ΓD2† 2 RD2† 4 R
+     +                     −                      +                    +                    +          +
+             4Γ̄3                 4Γ̄2                     8Γ̄2                   8Γ̄2          4Γ̄             16Γ̄
+                                                                                                                                         8
+
+           ΓD2† RD2† 5 R RΓD2† 6 R
+       +                +          ,                                                                                                   (56)
+                4Γ̄        16Γ̄
+
+                                                            2
+     5(2Γ̄ − 3Γ)RD2† R (15Γ − 11Γ̄)                  D2† R            5(2Γ − Γ̄)RD2† 2 R (23Γ̄ − 34Γ)D2† RD2† 2 R (Γ̄ − 6Γ)RD2† 3 R
+A3 =                  +                                           +                     +                        +
+             Γ̄7                Γ̄6                                          Γ̄6                   2Γ̄5                  2Γ̄5
+                       2
+    3(3Γ − 2Γ̄) D2† 2 R  (15Γ − 8Γ̄)D2† RD2† 3 R (2r + Γ)RD2† 4 R (16Γ̄ − 29Γ)D2† 2 RD2† 3 R (4Γ̄ − 21Γ)D2† RD2† 4 R
++                                +               +                    +                        +
+           2Γ̄4                   3Γ̄4                     6Γ̄4                   12Γ̄3               24Γ̄3
+                                      2
+                                   †3
+  (3Γ̄ + 2r)RD2† 5 R (3Γ − 4Γ̄) D2 R          (8Γ − Γ̄)D2† 2 RD2† 4 R rD2† RD2† 5 R RD2† 6 R
+−                   +                     +                          +              +        ,               (57)
+         24Γ̄3              12Γ̄2                     24Γ̄2                6Γ̄2         24Γ̄
+
+                         2                                                                2
+                                                                             †2
+       (45Γ − 60Γ̄) D2† R              (42Γ̄ − 30Γ)D2† RD2† 2 R 9(2Γ − 3Γ̄) D2 R                         9(2Γ − 3Γ̄)D2† RD2† 3 R
+A4 =                                 +                         +                                     +
+                  2Γ̄7                           Γ̄6                    2Γ̄5                                     2Γ̄5
+                                                                  2
+                                                                †3
+  3(5Γ̄ − 3Γ)D2† 2 RD2† 3 R (5Γ̄ − 3Γ)D2† RD2† 4 R 3(Γ − 2Γ̄) D2 R      (Γ − 2Γ̄)D2† 2 RD2† 4 R (Γ − 2Γ̄)D2† RD2† 5 R
++                          +                      +                   +                        +                      .
+            2Γ̄4                     2Γ̄4                  8Γ̄3                  2Γ̄3                   8Γ̄3
+                                                                                                               (58)
+
+Here R refers to the radial function of the Hertz potential +2Rlmω in Eq. (29), and S(θ) stands for −2 Slmω (θ) in
+Eq. (27).
+
+
+                         (2)
+It is evident that S4 cannot be decomposed into a struc-                       angular projection for Schwarzschild and Kerr BHs, re-
+ture of (angular) × (radial). Nevertheless, in Eq. (54), we                    spectively. For conciseness, we will use the notation ωL
+can still classify the terms based on four primary angular                     to stand for the complex frequency of the linear mode
+dependencies:                                                                  ωlmn .
+       h         i2                h                  i
+         L†2 S(θ) ,                  S(θ) L†1 L†2 S(θ) ,
+       h                     i                                                       A.   Separation of the Teukolsky operator
+         a sin θ S(θ)L†2 S(θ) ,
+                                                      2
+                                       [a sin θS(θ)] .
+                                                                                 We follow Teukolsky [49] and rescale both sides of the
+The angular dependence of their coefficients A1..4 is solely                   equation by a factor of 2Γ̄4 Σ. This converts the variable
+                                                                                               (2)
+determined by the scalar function Γ = r + ia cos θ and its                     to ψ (2) = Γ̄4 Ψ4 . Then we can write
+complex conjugate Γ̄. In particular, we have                                                                     X (2)    (2)
+                                                                                        ψ (2) = e−2iωL t e2imL ϕ  Rl (r) Sl (θ).     (61)
+                                         Γj                                                                          l
+                               A1..4 ∼       ,                         (59)
+                                         Γ̄k                                   Notice that the time dependence has been set to e−2iωL t ,
+with j = 0, 1 and k = 1..7.                                                    to match that of the source term Ψ̄2ORG ∼ e−2iωL t . The az-
+          (2)
+   Since S4 is non-separable, a linear QNM can induce                          imuthal quantum number has also been chosen to be twice
+quadratic effects in various spin-weighted spheroidal har-                     the linear one mL . In other words, Eq. (61) represents a
+monics. To investigate a specific excitation channel, such                     particular solution to the second-order perturbation equa-
+as                                                                             tion. The homogenous part traces the evolution of linear
+                                                                               QNMs, which is not pertinent to our studies. Plugging
+           (lL , mL , nL ) × (lL , mL , nL ) → (lQ , mQ ),             (60)    Eq. (61) into Eq. (48) yields
+                                                                                               X h (2)         † (2) (2)             (2)
+angular projection of the second-order Teukolsky equa-                         e−2iωL t+2imL ϕ      Sl (θ)(∆D−1 D0 − 12iωL r)Rl (r)
+tion is necessary. In the rest of this section, we will                                          l
+accomplish this goal via two steps. First in Sec. IV A, we
+                                                                                                                                   i
+                                                                                   (2)    (2) † (2)            (2)
+                                                                                + Rl (r)(L−1 L2 + 12aωL cos θ)Sl (θ)
+follow Teukolsky [49] to decompose the Teukolsky oper-
+ator on the left-hand side into angular and radial parts.                                  (2)
+                                                                                = −2Γ̄4 ΣS4 .                                          (62)
+Next in Sec. IV B, we use the property of spin-weighted
+spheroidal harmonics to perform the projection. Finally,                       We note that the operators D(2) ’s and L(2) ’s (including
+in Secs. IV C and IV D, we explore the features of the                         their daggers) correspond to the second-order mode with
+                                                                                                                                             9
+
+                                                         (2)
+the frequency 2ωL . The angular basis Sl                       can be chosen   where we have defined the right-hand-side source to be
+to satisfy                                                                     Q(r), which depends only on r. In Appendix E, we provide
+                                                                               an explicit expression of Q(r) for Schwarzschild BHs with
+         (2)   † (2)                         (2)          (2)   (2)
+     (L−1 L2           + 12aωL cos θ)Sl            = −λl Sl .           (63)   lL = 2 and lQ = 4. By virtue of Leaver’s representation
+                                                                               in Eq. (29), Q(r) has an asymptotic expansion as follows
+         (2)
+where λl is the corresponding eigenvalue. Then Eq. (62)                                                              !2 
+                                                                                                               ∞              
+reduces to                                                                                      62
+                                                                                                               X               1
+                                                                                      Q(r) =4r ωL XL2 (r)       an    1+O
+               X (2)                                                                                                           r
+ e−2iωL t+2imϕ   Sl (θ)                                                                       
+                                                                                                            n=0
+                                                                                                                        2
+              l
+                                                                                             × SlL L†1 L†2 SlL − L†2 SlL    SlQ . (71)
+      † (2) (2)          (2) (2)             (2)
+ × (∆D−1 D0 − 12iωL r − λl )Rl (r) = −2Γ̄4 ΣS4 .
+                                                                        (64)   where the angular inner product ⟨f | SlQ is defined to be
+                                                                                                  Rπ
+                                                                                                   0R
+                                                                                                     f × SlQ sin θdθ
+                       B.       Angular projection                                                    π 2            .              (72)
+                                                                                                      0
+                                                                                                        SlQ sin θdθ
+  For a certain ω and m, the spin-weighted spheroidal
+                                                                               We can see Q(r) ∼ O(r2 ), an order lower than the left-
+harmonics associated with different l’s are orthogonal. To
+                                                                               hand-side of Eq. (70), which is O(r3 ). With this at hand,
+see this, we consider two different spin-weighted spheroidal
+                                                                               we can solve Eq. (70) order by order in the large−r limit,
+harmonics S1 and S2 , satisfying
+                                                                               which yields
+               (L−1 L†2 + 12aωL cos θ)S1 = λ1 S1 ,                     (65a)                             
+                                                                                                               aQ
+                                                                                                                         
+                                                                                                                          1
+                                                                                     (2)              2
+                                                                                    RlQ ∝ (r − r+ )XL ∆ 1 +       +O           .     (73)
+               (L−1 L†2 + 12aωL cos θ)S2 = λ2 S2 .                     (65b)                                    r        r2
+
+with λ1 ̸= λ2 . The equations above yield                                      with
+                                                                                                                      (2)
+    S2 L−1 L†2 S1 − S1 L−1 L†2 S2 = (λ1 − λ2 )S1 S2 .                   (66)                                         λ lQ
+                                                                                        aQ = 2 + 4iamL + r+ + i              − 8ir+ ωL .   (74)
+                                                                                                                     2ωQ
+Integrating both sides with the measure sin θ leads to
+               Z π                                                             The undetermined coefficient in Eq. (73) corresponds to
+    (λ1 − λ2 )     S1 S2 sin θdθ                                               the amplitude of the quadratic QNM, which is the target
+                                                                               of this work.
+       Z π 0                             
+     =       S2 L−1 L†2 S1 − S1 L−1 L†2 S2 sin θdθ.  (67)
+          0
+                                                                                            C.       Schwarzschild black holes
+The value of the right-hand-side vanishes due to a property
+of the angular operator L (see LEMMA 4 in Chapter 8                               For Schwarzschild BHs, the angular dependence of the
+of [48])                                                                                 (2)
+                                                                               source S4 in Eq. (54) can be simplified significantly. In
+     Z π                      Z π                                              particular, by the virtue of
+         g(Ln f ) sin θdθ = −     f (L†1−n g) sin θdθ. (68)
+                                                                                L†2 S(θ) = −ð−2 YlL mL = − (lL + 2)(lL − 1)−1 YlL mL ,
+                                                                                                            p
+     0                                  0
+
+Therefore, we have                                                             L†1 L†2 S(θ) = ðð−2 YlL mL
+                                                                                   p
+                 Z π                                                           = (lL + 2)(lL + 1)lL (lL − 1)0 YlL mL ,
+                                 S1 S2 sin θdθ = 0,                     (69)
+                            0                                                  we obtain
+since λ1 ̸= λ2 .                                                                      (2) 16
+                                                                               2Γ̄4 ΣS4 × 6 = (lL + 2)(lL − 1) −1Yl2L mL A1 (r)
+   Consequently, to consider the excitation channel in                                    ∆
+Eq. (60), we can project both sides of Eq. (64) to the
+                                                                                  p
+                                                                               + (lL + 2)(lL + 1)lL (lL − 1) −2 YlL mL × 0 YlL mL A2 (r)
+angular basis of the child mode SlQ (θ) via:                                                                                       (76)
+          † (2)    (2)                      (2)    (2)
+    (∆D−1 D0 − 12iωL r − λlQ )RlQ (r)                                          Since Γ = Γ̄ = r, A1 and A2 are now independent of θ.
+                       R π 4 (2)                                                 We can see there are only two types of angular depen-
+          −imQ ϕ+2iωL t 0 2Γ̄ ΣS4 × SlQ (θ) sin θdθ                            dences: −1Yl2L mL , contributed by [Eq. (53)]
+     = −e                    Rπ 2
+                              0
+                                SlQ (θ) sin θdθ
+                                                                                                                       (1)
+     ≡ Q(r),                                                            (70)                         (δ̄ + 2α + 4π)(1) Ψ3 ,
+                                                                                                                                                                 10
+
+
+                        (L 2 S) 2        −a sin θS L 2 S
+            0.08        S L1 L2 S        (a sin θ S) 2                                      0.00
+
+            0.06                                                                            0.05
+
+
+Amplitude                                                                          Phase
+            0.04                                                                            0.10
+
+                                                                                            0.15
+            0.02                                                                                                                               (L 2 S) 2
+                                                                                                                                               S L1 L2 S
+                                                                                            0.20                                               −a sin θS L 2 S
+            0.00                                                                                                                               (a sin θ S) 2
+               0.0          0.2       0.4          0.6           0.8         1.0                  0.0          0.2          0.4       0.6       0.8          1.0
+                                             a                                                                                    a
+                                                                  (a) (2, 2, 0) × (2, 2, 0) → (5, 4)
+
+
+            1.4                                                                                          (L 2 S) 2
+                                                                                                         S L1 L2 S
+            1.2
+                                                                                           0.03          −a sin θS L 2 S
+            1.0                                                                                          (a sin θ S) 2
+
+
+
+Amplitude
+            0.8
+                                                                                   Phase
+                       (L 2 S) 2        −a sin θS L 2 S                                    0.02
+                       S L1 L2 S        (a sin θ S) 2
+            0.6
+            0.4                                                                            0.01
+            0.2
+            0.0                                                                            0.00
+              0.0           0.2      0.4          0.6            0.8         1.0              0.0            0.2           0.4        0.6      0.8           1.0
+                                             a                                                                                    a
+                                                                  (b) (2, 2, 0) × (2, 2, 0) → (4, 4)
+
+Figure 1. The spin dependence of angular inner products between the spin-weighted spheroidal harmonic for the quadratic
+                                                2
+mode SlQ mQ and four angular bases L†2 SlL mL      (blue), SlL mL L†1 L†2 SlL mL (orange), −a sin θ SlL mL L†2 SlL mL (green), and
+                2
+(a sin θSlL mL ) (red). Here we consider lL = mL = 2, and (lQ = 5, mQ = 4) (top row) and lQ = mQ = 4 (bottom row). The
+right (left) column corresponds to the amplitude (phase) of the inner products. The spin ranges from 0 to 0.99.
+
+
+ and −2 YlL mL × 0 YlL mL , by                                                       and
+                                                                                                    Z
+                                                                                                                     2
+                                            (1)            (1)                                          −1 YlL mL        × −2 ȲlQ mQ dΩ
+                     −(D + 4ϵ − ρ)(1) Ψ4 − 3λ(1) Ψ2 .
+                                                                                                        Z
+ With this at hand, the angular projection in Eq. (70) can                                          =   (−1)mQ−1 YlL mL 2 × 2 YlQ ,−mQ dΩ
+ be done analytically:                                                                                        r
+                                                                                                           mQ   (2lL + 1)2 (2lQ + 1)
+            Z                                                                                       = (−1)
+                                                                                                                        4π
+                −2 YlL mL    × 0 YlL mL × −2 ȲlQ mQ dΩ                                                                           
+                                                                                                        lL lL     lQ      lL lL lQ
+                                                                                                    ×                                  ,                    (78)
+                                                                                                        mL mL −mQ          1 1 −2
+                Z
+            =       (−1)mQ−2 YlL mL    × 0 YlL mL × 2 YlQ ,−mQ dΩ
+                           r                                                         where we have used the 3 − j symbol. The corresponding
+                      (2lL + 1)2 (2lQ + 1)
+                      mQ                                                             selection rule reads
+            = (−1)
+                              4π
+                                                                                                    2mL = mQ ,                     lQ ≤ 2lL .           (79)
+                lL lL   lQ      lL lL lQ
+            ×                                ,                            (77)
+               mL mL −mQ         2 0 −2                                              For lL = mL = 2 and lQ = mQ = 4, Eq. (77)= 2√542π ,
+                                                                                                                                 11
+
+Eq. (78)= 3√57π .                                                    By contrast, the second scenario lQ ≤ 2lL satisfies the
+   As discussed in Appendix B of [36], in addition to             selection rule. When a = 0, the first two integrals in
+   Y2     and −2 YlL mL × 0 YlL mL , the other two spin-          Eq. (81) reduce to the 3 − j symbols2 . Figure 1b displays
+ −1 lL mL
+weighted spherical harmonic multiplications: −3 YlL mL ×          the results for (lL = mL = 2, nL = 0)2 → (lQ = mQ = 4).
+                                                                                                                    2
+1 YlL mL and −4 YlL mL × 2 YlL mL , also have nontrivial an-      We can see the dominant components L†2 SlL mL and
+gular overlaps with the child mode −2 YlQ mQ , this can be
+                                                                  (SlL mL L†1 L†2 SlL mL ) decrease with spin.
+seen from
+          Z
+            s1 YlL mL × s2 YlL mL × −2 ȲlQ mQ dΩ                       V. DEALING WITH DIVERGENCE AT
+                                                                      BOUNDARIES: THE COMPLEX PLANE
+               lL lL lQ
+          ∼                ,                            (80)                      APPROACH
+               s1 s2 −2
+which requires s1 + s2 = −2. However, since the spin                 For both linear and nonlinear QNM analysis, neces-
+weights of all the NP variables range from −2 to +2, there        sary regularization procedures are often required to deal
+are no available scalars to be coupled with spin 1 (e.g.          with the “blowing-up” wavefunctions at spatial infinity
+  (1)               (1)
+Ψ1 ) and 2 (e.g. Ψ0 ) fields at the second order. There-          and BH horizon3 . For example, Detweiler [63] introduced
+fore, these two angular components do not contribute to           counter-terms to eliminate singular terms for QNM excita-
+the equation. In fact, Ψ1 and Ψ0 never formally enter             tion computations, while Leaver [64] proposed integrating
+into any order of perturbation equations [22].                    along contours in the complex−r domain for similar prob-
+                                                                  lems. Later, the complex-contour technique was used
+                                                                  to introduce a mode “inner-product” or “bi-linear form”,
+                  D.    Kerr black holes                          which formed the basis for the investigation of linear
+                                                                  and nonlinear waves in Kerr/Kerr-Newman spacetimes
+  For Kerr BHs, the angular projection is complicated by          [24, 65, 66], as well as exploring the spectral stability of
+the coefficients A1..4 in Eq. (54), which gain θ-dependence       near-extremal spacetimes [67]. Recently, a new bi-linear
+via Γ and Γ̄. To construct an intuition into its spin             form was motivated by the “conserved current” associated
+dependence, here we simply consider the projection for            with the Teukolsky operator [68], and it was employed to
+the four angular bases                                            derive QNM orthogonality.
+                                                                   In this work, we adopt this complex-plane technique to
+                2
+                                                                  solve the second-order equation in Eq. (70). Below, we
+                             D
+     L†2 SlL mL     SlQ mQ , SlL mL L†1 L†2 SlL mL SlQ mQ ,
+                                                                  first provide some basic information about the method
+ D                                                                in Sec. V A. Next in Sec. V B, we review the idea of
+   a sin θ SlL mL L†2 SlL mL SlQ mQ ,                             the “bi-linear form” defined based on the complex-plane
+ D
+                   2                                              technique. In particular, we explain how it facilitates the
+   (a sin θSlL mL ) SlQ mQ ,                             (81)
+                                                                  studies of eigenvalue perturbation (Sec. V B 1) and QNM
+                                                                  orthogonality (Sec. V B 2). We will show that the two
+where the angular inner product ⟨. . .| . . .⟩ is defined in
+                                                                  bi-linear forms used in Refs. [24, 65, 66] and [68] yield the
+Eq. (72). As we will show below in Sec. VI B, the nature
+                                                                  same QNM orthogonality conclusion. At last, in Sec. V C,
+of the four integrals can offer a qualitative understanding
+                                                                  we explain how to implement the complex-contour for
+of how the excitability of a quadratic QNM depends on
+                                                                  computing second-order QNMs as the main purpose of
+spins.
+                                                                  this work.
+   Generally speaking, the coupling (lL , mL , nL ) ×
+(lL , mL , nL ) → (lQ , mQ ) can be classified into two sce-
+narios: when lQ > 2lL and when lQ ≤ 2lL . The former                             A.   Branch cut and contour
+violates the selection rule in Eq. (79) for Schwarzschild
+BHs, resulting in the absence of any quadratic excitation.
+However, with an increase in the spins of BHs, the selec-            The frequency-domain Teukolsky equation is usually
+tion rule is broken, leading to an amplification of the effect.   solved on the real−r axis. However, it is also instruc-
+For instance, Figure 1a shows the spin dependency of the          tive to extend both the equation and its solutions in the
+integrals for (lL = mL = 2, nL = 0)2 → (lQ = 5, mQ = 4).          complex−r domain, in which case the analytical proper-
+In this calculation, we adopt the Black Hole Perturbation         ties of the solution, e.g., singularities and branch cuts be-
+Toolkit [62] for the evaluation of spin-weighted spheroidal       come important. For example, the scalar function XL (r)
+harmonics and employ Gauss–Legendre quadrature for
+integration. The results reveal that the amplitudes of
+the angular integrals vanish when a = 0 and demon-                2 They differ by a factor of 2π since the integration in Eq. (72)
+strate a nearly monotonic increase with spin. The term of           does not include the azimuthal part.
+(a sin θ SlL mL L†2 SlL mL ) offers the strongest angular con-    3 Another approach is to solve the wave on a hyperboloidal slicing,
+
+tribution.                                                          as implemented in [35].
+                                                                                                                               12
+
+     Im r                                                           im, respectively.]. A bi-linear form ⟨|⟩ can be defined on
+                                  b                a
+                                                                    the contour C such that ⟨χ|T η⟩ = ⟨T χ|η⟩ [24, 65, 66]:
+                                                                             Z                         Z
+                                                                                         s         s
+                             C                                       ⟨χ|η⟩ = (r − r+ ) (r − r− ) dr sin θdθ χ(r, θ)η(r, θ)
+                                                                               C
+                                                                           = ⟨η|χ⟩ ,                                          (83)
+
+                                                                    where s is the spin of the field. If χ, η satisfy the QNM
+                            L                            R          boundary conditions then the contribution from both
+                                                                    ends of C may be exponentially suppressed similar to the
+                                                                    QNMs.
+
+
+                                                             Re r                   1.    Eigenvalue perturbation
+                      r−                   r+
+
+                                                                       The bi-linear form can be used to study the eigenvalue
+                            matching                                perturbation problem. Let us consider a QNM wavefunc-
+                             point         B
+                                                                    tion satisfying T (ω0 )ψ0 = 0 with a certain eigenfrequency
+                                                                    ω0 . If the wave equation is modified, e.g. due to the pres-
+Figure 2. The contour (labeled by C, in blue) and branch            ence of additional fields [65] and/or modification of the
+cut (in red) used in this work. The contour goes around the         underlying gravity theory [69–71], the wave operator can
+r+ singularity and the corresponding branch cut. There is
+                                                                    often be written as T + ϵ∆T with ϵ being a book-keeping
+a second branch cut connecting r− which is not shown in
+this figure. Three blue arrows indicate the stable integration
+                                                                    index, and the corresponding new eigenmode satisfies
+direction while solving for QNM wavefunctions: Two solutions
+are shot separately from “a” and “b”, and they are matched            [T (ω0 + ϵω1 ) + ϵ∆T (ω0 + ϵω1 )] (ψ0 + ϵψ1 ) = 0 ,     (84)
+at the bottom left corner labeled by “matching point”. In our
+numerical implementation, we fix the real part of the left and      where both the eigenfrequency and mode wavefunction
+right vertical paths to (r− + r+ )/2 = 1 and 3, respectively.       are expanded up to the O(ϵ) order. Up to the same order
+The imaginary part of the bottom path is fixed to −5.               in ϵ the above equation may be rewritten as
+
+                                                                             T (ω0 )ψ1 + ω1 ∂ω T ψ0 + ∆T (ω0 )ψ0 = 0 .        (85)
+in Leaver’s solution [Eqs. (16) and (18)] has two singular-
+ities at r± and the branch cuts ending at them. In Fig. 2,            With the bi-linear form introduced in Eq. (83) we can
+the zigzag red line illustrates a convenient choice for the         realize that
+branch cut. The corresponding logarithmic expressions
+are given by                                                                   ⟨ψ0 |T (ω0 )ψ1 ⟩ = ⟨T (ω0 )ψ0 |ψ1 ⟩ = 0        (86)
+
+                           iπ                            3iπ        so that Eq. (85) can be used to solve for ω1 without
+    lim ln r = ln |r| +       ,    lim ln r = ln |r| −       .      knowing the expression of ψ1 :
+  r→right                   2     r→left                  2
+                                                            (82)
+                                                                                                  ⟨ψ0 |∆T ψ0 ⟩
+                                                                                         ω1 = −                  ,            (87)
+They capture the behavior of the logarithm as r ap-                                               ⟨ψ0 |∂ω T ψ0 ⟩
+proaches the right and left sides of the cut, respectively.
+  Alongside the branch cut, we introduce a contour C in             which is similar to the perturbation theory for non-
+Fig. 2. On both ends of this contour, the QNM boundary              degenerate stationary states in quantum mechanics. See
+condition ∼ eiωlmn r∗ exhibits exponential decay due to             also [72] for a relevant discussion on BH boson clouds.
+the positive real part of ωlmn . In addition, as the path
+remains a finite distance from the horizon, it avoids the
+blowing-up feature at r+ . Consequently, the wavefunction                      2.   Quasinormal mode orthogonality
+of a QNM exhibits regular behavior throughout C and
+can be safely treated with numerical methods.                          The “self-jointness” of the bi-linear form ⟨χ|T η⟩ =
+                                                                    ⟨T χ|η⟩ provides an alternative rationale for the orthogo-
+                                                                    nality of QNMs, supplementing the methods provided
+                   B.      Bi-linear form                           in [68]. Let us now consider two QNMs satisfying
+                                                                    T (ωa )ψa = 0, T (ωb )ψb = 0 respectively, assuming az-
+   Consider two generic wave functions χ(r, θ), η(r, θ) and         imuthal number ma and mb . As a result, we expect that
+the frequency-domain Teukolsky opeartor T (ω, m, r, θ)
+[see Eq. (13), with ∂/∂t and ∂/∂ϕ replaced by −iω and                        ⟨ψb |T (ωa )ψa ⟩ = 0,     ⟨ψa |T (ωb )ψb ⟩ = 0   (88)
+                                                                                                                               13
+
+According to the properties of the bi-linear form, the                This equation can be interpreted as an orthogonal relation
+above equations imply that                                            between the two mode wavefunctions ψa , ψb with the
+                                                                      weight function T (ωa ) − T (ωb ) given by (choosing ma =
+                    ⟨ψa |(T (ωa ) − T (ωb ))ψb ⟩ = 0 .         (89)   mb = m)
+
+
+
+                                              2
+                                              (r + a2 )2                                          r2 − a2
+                                                                                                       
+                                                                       4mar
+  T (ωa ) − T (ωb ) = (ωa − ωb ) −(ωa + ωb )             − a2 sin2 θ +      + 2is −r − ia cos θ +            , (90)
+                                                 ∆                      ∆                            ∆
+
+
+
+which is the same as Eq. (46) in [68] by setting s = −2 and                  d (2)         aQ  d
+                                                                               RlQ = iE 1 +        (r − r+ )∆XQ ,           (94b)
+re-normalizing the constant factor that contains ωa − ωb 4 .                dy               r dr
+                                                                      where XQ = XL2 and XL is defined in Eq. (18). The
+              C.     Second-order mode excitation                     factor (1 + aQ /r) shows that the conditions above are
+                                                                      accurate up to O(r−1 ).
+                                                                        The unknown constant number E corresponds to the
+  We now adopt the complex-contour technique to solve
+                                                                      amplitude of the quadratic QNM with frequency 2ωL . To
+the second-order Teukolsky equation in Eq. (70). Using
+                                                                      see this, we adopt the relation
+the contour C in Fig. 2, it is convenient to decompose
+r into its real and imaginary parts, r = x + iy. This                               (2)              (2)     (2)
+                                                                               Γ̄4 Ψ4 = e−2iωL t RlQ (r) SlQ (θ)e2imL ϕ .
+decomposition allows us to transform Eq. (70) into forms
+that are more amenable for numerical implementation                   After plugging Eq. (94a) into the above expression, the
+on each segment of the contour. More specifically, along                                                                (2)
+the vertical paths (labeled by “L” and “R”), the equation             asymptotic behavior of the second perturbation Ψ4 is
+reads                                                                 given by
+       (2)                                         (2)
+                                                                                h       i(∞)
+  d2 RlQ             Q(r)      (r − 1) dRlQ                                      rΨ4
+                                                                                    (2)
+                                                                                                   = Ee−2iωL (t−r∗ ) .   (95)
+              =−          + 2i                                                             lQ ,mQ =2mL
+    dy 2              ∆           ∆     dy
+        (2)                                              !                                                                     (1)
+       RlQ          2
+                   KQ + 4iKQ (r − 1)              (2)
+                                                                      Meanwhile, the amplitude of the linear perturbation Ψ4
+   +                                 − 16iωL r − λlQ         , (91)   is provided in Eq. (47). Their ratio, namely the excitation
+       ∆                  ∆
+                                                                      factor of the quadratic QNM with frequency 2ωL , reads
+whereas on the horizontal path (labeled by “B”), we have                                   h
+                                                                                                (2)
+                                                                                                    i(∞)
+                                                                                            rΨ4
+       (2)                                   (2)                            Kinnersley               lQ ,mQ       4E
+  d2 RlQ                   (r − 1) dRlQ                                   MΨ
+              =
+                   Q(r)
+                        +2                                                   4
+                                                                                       = h        i(∞) 2 = ω 8 (P an )2 . (96)
+                                                                                               (1)             L
+    dx2             ∆         ∆     dx                                                      rΨ4
+       (2)                                               !                                          lL ,mL
+     RlQ            2
+                   KQ + 4iKQ (r − 1)              (2)
+   −                                 − 16iωL r − λlQ         . (92)   We note that the value of the excitation factor for Ψ4
+      ∆                   ∆
+                                                                      relies on the choice of tetrad. The result in Eq. (96) is
+The solution and its derivatives need to be continuous at             associated with the Kinnersley tetrad in Eq. (2). It differs
+corners, which yields continuity conditions:                          from the one used by the numerical-relativity code SpEC
+                                                                      [73, 74]:
+             (2)                   (2)
+           RlQ                  = RlQ               ,         (93a)
+                   horizontal            vertical                                 1                          1
+                                                                         lSpEC = √ (∂t + ∂r ),      nSpEC = √ (∂t − ∂r ).    (97)
+            d (2)                d (2)                                             2                          2
+             R              = −i RlQ            .             (93b)
+           dx lQ horizontal     dy     vertical
+                                                                      The conversion is given by [42]
+   To impose boundary conditions at “a” and “b” in Fig. 2,
+                                          (2)                                              SpEC     1 Kinnersley
+we can use the asymptotic expansion of RlQ in Eq. (73).                                   MΨ    =    M           .           (98)
+                                                                                            4
+                                                                                                    2 Ψ4
+It leads to
+                      aQ                                            Furthermore, the excitation factor for the strain can be
+           (2)
+         RlQ = E 1 +        (r − r+ )∆XQ ,          (94a)             obtained straightforwardly via the relation ΨSpEC  = −ḧ,
+                        r                                                                                          4
+                                                                      which yields
+                                                                                               2
+                                                                                             ωL                E
+4 There are typos in their Eq. (55).                                            MhSpEC =         M SpEC =              .     (99)
+                                                                                              4 Ψ4          6(
+                                                                                                               P
+                                                                                                          2ωL    an )2
+                                                                                                                                                    14
+
+   Therefore, to compute the excitation factor MhSpEC , it                  where αn , βn , and γn are given in Eq. (A1). We consider
+suffices to integrate Eqs. (91) and (92) along with the                     a special source:
+continuity conditions in Eqs. (93) and the boundary con-
+ditions in Eqs. (94). It is important to note that there                                       f0 = α0 + β0 , f1 = β1 + γ1 , f2 = γ2 , fn>2 = 0.
+exists a stable integration direction on the vertical paths.
+This is because Eq. (91) admits two independent solutions.                  The corresponding solution has an analytic expression
+One corresponds to the QNM solution, asymptoting to                                                      
+                                                                                                               r − r+
+                                                                                                                      
+                                                                                   (2)
+e2iωL r∗ ∼ e−2ℜωL y as y → ∞. The second one is non-                              RlQ (r) = XQ ∆(r − r+ ) 1 +           .     (103)
+                                                                                                               r − r−
+physical, diverging at infinity e−2iωL r∗ ∼ e2ℜωL y . At the
+initial point of the integration, due to finite numerical                                                      √
+                                                                            This implies that E = 2 and aQ = − 1 − a2 in Eq. (94).
+accuracy, the non-physical solution emerges alongside the
+physical one. To ensure stability, an integration direc-
+tion must be chosen such that the non-physical solution                                                                                        Zeroth
+decays throughout the integration, preventing it from                                          100                                             Linear
+exponentially blowing up and eventually overshadowing                                                                                          Exact
+
+
+
+
+                                                                          Relative Error (%)
+the physical QNM solution. Consequently, the stable
+direction on both vertical paths has to be top-down. In
+practice, the shooting method is employed to achieve this
+                                                                                               10-1
+goal: using the explicit Runge-Kutta method of order 5,
+two solutions are shot separately from “a” and “b”, with
+the same shooting parameter E. At the matching point in                                        10-2
+Fig. 2, the Nelder–Mead method is adopted to match the
+two shoots through the continuity conditions in Eq. (93).
+                                                                                               10-3
+    VI.   NUMERICAL CALCULATIONS AND                                                              50       100       150    200        250    300
+                 RESULTS                                                                                               Im rb = Im ra
+   Having discussed two basic ingredients: metric recon-                    Figure 3. The relative error of the computed E in Eq. (94)
+struction and the complex-plane technique, we are now                       compared to the expected value of 2 for the toy model consid-
+in the position to compute the value of the excitation                      ered in Sec. VI A. The boundary condition is accurate to the
+factor for quadratic QNMs. To start with, we explore a                      zeroth (in blue) and first order (in orange). The green curve
+toy model in Sec. VI A to establish a qualitative under-                    corresponds to the exact boundary condition.
+standing of the numerical aspects for the complex-plane
+method. In Sec. VI B, we proceed to investigate quadratic                      Then we use the method given in Sec. V C to compute
+QNMs.                                                                       the value of E numerically. Our numerical settings are
+                                                                            listed below
+                                                                                                      r+ + r−
+                    A.   A toy model                                           Re rb =                        = 1,    Re ra = 3,   Im rmatching = −5,
+                                                                                                         2
+                                                                                                                                                (104)
+  We consider a source Q(r) that has a form of
+                                                                            where the subscripts “a”, “b”, and “matching” refer to
+                                                   n                      three points in Fig. 2. We have checked that varying
+                                           r − r+
+                                                                            their values introduces a relative error of less than 10−3 %
+                            X
+     Q(r) = XQ (r − r+ )∆         fn                     .        (100)
+                            n=0
+                                           r − r−                           in the results. The choice of the heights of the vertical
+                                                                            paths, namely Im ra and Im rb , requires more attention.
+Following [32], we use Leaver’s representation to construct                 For simplicity, we set both heights to the same number.
+the solution [52]                                                           On the one hand, positioning the boundary at small dis-
+                                                     n                    tances can result in non-negligible systematic errors as
+     (2)
+                              X              r − r+                         the boundary conditions in Eqs. (94) are accurate only to
+    RlQ (r) = XQ (r − r+ )∆         dn                       .    (101)     linear order. On the other hand, since the solution decays
+                              n=0
+                                             r − r−
+                                                                            exponentially at a large distance, placing the boundary
+By virtue of the Teukolsky equation, the coefficients dn                    too far may cause the integrator to lose precision, es-
+are determined by three-term recurrence relations                           pecially when the wavefunction spans many orders of
+                                                                            magnitude. To see this, we calculate the value of E for
+                                                                            the (l = m = 2, n = 0) mode of a Schwarzschild BH at a
+             α0 d1 + β0 d0 = f0 ,                                (102a)
+                                                                            variety of heights. The orange curve in Fig. 3 displays its
+             αn dn+1 + βn dn + γn dn−1 = fn .                    (102b)     deviation from the theoretical value 2. We can see the
+                                                                                                                                 15
+
+  optimum window is around [100, 160], beyond which the               in Sec. VI A, as outlined in Sec. V C. The only difference
+  error gradually worsens as the boundary distance further            is the source Q(r) in Eq. (70).
+  increases. Nevertheless, the relative error remains below              We first notice that Q(r) can be decomposed into the
+  3 × 10−2 % throughout the entire range.                             following form
+                                                                                                      2
+                                                                               Q(r) = r12 +2RlmωL × W1 (r)
+                     0.25                                                                                    
+                                                                                   10               d
+                                                                               + r ∆ +2RlmωL              Rlmω × W2 (r)
+                                                                                                    dr +2
+
+
+
+
+Relative Error (%)
+                     0.20                                                                             2
+                                                                                          d
+                                                                               + r 8 ∆2        R lmωL     × W3 (r),        (105)
+                                                                                          dr +2
+                     0.15
+                                                                      where the first-order Teukolsky equation has been used to
+                     0.10                                             repeatedly substitute d2 +2RlmωL /dr2 and higher-order
+                                                                      radial derivatives with d +2RlmωL /dr and +2RlmωL . We
+                                                                      then evaluate their values via Leaver’s solution in Eq. (29).
+                     0.05                                             Meanwhile, the three functions W1,2,3 (r) are complicated
+                                                                      rational functions of r. Note that we have separated the
+                                                                      leading terms r12 , r10 and, r8 that are singlar at infinity.
+                        0.0       0.2     0.4       0.6   0.8   1.0   Consequently, W1,2,3 (r) behave regularly across the entire
+                                                a                     contour C. In practice, we find that evaluating the analyt-
+                                                                      ical expressions of W1,2,3 (r) is time-consuming, adversely
+  Figure 4. The spin dependence of the relative error for the         affecting the numerical efficiency of the integrator. To
+  computed E compared to the expected value of 2, using the           address this issue, we adopt linear spline interpolation to
+  toy model considered in Sec. VI A. We set Im ra = Im rb = 100,      obtain the values of the regular functions along C.
+  and the boundary condition is accurate to the first order.
+                                                                         In this paper, we restrict ourselves to the quadratic ef-
+                                                                      fect of the (l = m = 2, n = 0) QNM. Below we still use ωL
+     Since the analytic expression of the solution is available       to represent its complex frequency. We compute its value
+  in Eq. (103), we can refine the boundary conditions to              using a Python package qnm [75]. The corresponding
+  incorporate their exact expressions. The result is shown                                    (2)
+                                                                      separation constant λlQ in Eq. (70), which is associated
+  as the green curve in Fig. 3. When the height of the
+  vertical paths is larger than 100, the error of E gradually         with the quadratic mode 2ωL , can be evaluated with the
+  approaches the linear-order result at greater distances,            Black Hole Perturbation Toolkit [62]. Following Sec. VI A,
+  suggesting that the precision of the integrator becomes             our numerical settings for the contour C are the same as
+  the primary source of inaccuracy.                                   Eq. (104). Meanwhile, we set the height of vertical paths
+     To make a more comprehensive comparison, we also                 Im ra = Im rb to 100, which was shown to be suitable for
+  demote the boundary conditions in Eqs. (94) to zeroth               the linear boundary conditions. We have checked that
+  order by setting aQ to 0. The blue curve in Fig. 3 shows            varying the height from 90 to 150 yields ∼ 0.1% changes
+  the corresponding result. This time, the relative errors            in results for Kerr BHs with various spins.
+  increase to ∼ 1%. We find the curve can be well-fitted                 Figure 5a displays the spin dependence of MhSpEC , de-
+  with a 1/r form, suggesting the necessity of the linear-            fined in Eq. (99), for the excitation channel (lL = mL =
+  order correction in our studies.                                    2, nL = 0)2 → (lQ = mQ = 4). In the Schwarzschild
+     Finally, we switch our attention to the effect of BH’s           case, the amplitude and phase of MhSpEC are 0.137 and
+  spin. We fix Im ra and Im rb at 100, and vary the spin a            −0.083, respectively. With the increase of the spin, the
+  from 0 to 0.99. As shown in Fig. 4, the error increases             amplitude decreases monotonically. It approaches a value
+  with a, particularly when a > 0.8. This trend can be                of 0.0964 when a = 0.99. Meanwhile, the phase reaches its
+  attributed to the rising real part of the complex frequency         maximum value at a ∼ 0.92. Compared with Fig. 1b, we
+  with increasing values of a, leading to a faster decay of           find the spin dependence of MhSpEC , both its amplitude
+  the wavefunction along the vertical paths and resulting             and phase, displays
+                                                                                        a strong     correlation with the angu-
+                                                                                                 2
+  in larger numerical errors within the integrator. Nev-
+                                                                                                              D
+                                                                                           †
+                                                                      lar projections    L2 S22     S44 ⟩ and S22 L†1 L†2 S22 S44 ⟩.
+  ertheless, the relative error is still less than 0.25% at
+  a = 0.99.                                                           More specifically, we observe that the four components
+                                                                      with distinct angular dependences in Eq. (54) combine
+                                                                      linearly in the equation. This holds true for their con-
+                            B.   Quadratic quasinormal modes          tributions to MhSpEC as well. The two dominant ones,
+                                                                              2
+                                                                        L†2 S22 and S22 L†1 L†2 S22 , offer the major contributions
+     We are now ready to solve the quadratic Teukolsky
+  equation in Eq. (70). The treatment for the left-hand-              to MhSpEC . The comparison between the two figures sug-
+  side (namely the integrator) is the same as the toy model           gests that a substantial portion of the spin dependence of
+                                                                                                                                            16
+
+                            (2, 2, 0) × (2, 2, 0)→(4, 4)                                               (2, 2, 0) × (2, 2, 0)→(4, 4)
+                                                                                     0.00
+            0.13
+                                                                                     0.02
+
+Amplitude
+            0.12
+                                                                             Phase   0.04
+            0.11
+                                                                                     0.06
+            0.10
+                                                                                     0.08
+               0.0    0.2          0.4       0.6           0.8         1.0              0.0      0.2          0.4       0.6           0.8   1.0
+                                         a                                                                          a
+                                                            (a) (2, 2, 0) × (2, 2, 0) → (4, 4)
+
+
+                            (2, 2, 0) × (2, 2, 0)→(5, 4)                                               (2, 2, 0) × (2, 2, 0)→(5, 4)
+                                                                                     0.00
+            0.006
+            0.005                                                                    0.05
+
+
+Amplitude
+            0.004
+                                                                                     0.10
+            0.003                                                            Phase
+            0.002                                                                    0.15
+            0.001
+                                                                                     0.20
+            0.000
+                0.0   0.2          0.4        0.6          0.8         1.0               0.0     0.2          0.4       0.6           0.8   1.0
+                                         a                                                                          a
+                                                            (b) (2, 2, 0) × (2, 2, 0) → (5, 4)
+
+Figure 5. The spin dependence of the excitation factor MhSpEC defined in Eq. (99), for the channel (2, 2, 0) × (2, 2, 0) → (4, 4)
+(top) and (2, 2, 0) × (2, 2, 0) → (5, 4) (bottom). The right (left) column corresponds to its amplitude (phase). The spin ranges
+from 0 to 0.99.
+
+
+ MhSpEC originates from these two angular projections, as                      and time evolution of second-order perturbation equa-
+ opposed to the radial integration. In other words, qual-                      tions. Focusing on the channel (lL = mL = 2, nL =
+ itatively, the angular integrals offer a means to capture                     0)2 → (lQ = mQ = 4), their results for the phase of
+ the main feature of MhSpEC without the need to solve the                      MhSpEC show good agreements with ours (see their Fig. 1).
+ Teukolsky equation.                                                           However, the amplitude has a larger discrepancy, es-
+    This statement can also be applied to the excitation                       pecially at the low spin. In particular, our amplitude
+ channel (lL = mL = 2, nL = 0)2 → (lQ = 5, mQ = 4). In                         for Schwarzschild BHs is 0.137, which is 11.6% smaller
+ Fig. 5b, we show the corresponding MhSpEC as a function                       than the value of 0.153 obtained from their numerical-
+ of spin. As expected, it vanishes for Schwarzschild BHs                       relativity simulations, and 27% smaller than the value
+ because of the selection rule in Eq. (79). Subsequently,                      of 0.174 obtained from their time evolution of second-
+ its amplitude gradually rises to 0.00643 when the spin                        order perturbation equations. Additionally, the studies
+ approaches 0.99. The overall trend is consistent with that                    in Ref. [41] yielded a smaller value (≲ 0.066) than ours.
+ of the angular projections in Fig. 1a.                                        The variations across these calculations imply that the
+                                                                               value of MhSpEC may rely on the choice of initial data
+    In a recent study [42], Zhu et al. extracted the value of                  in the time-domain simulations. To see this, Nakano
+ MhSpEC for Kerr BHs by performing two types of numer-                         and Ioka (hereafter NI) [32] investigated the quadratic
+ ical experiments: 3 + 1 numerical-relativity simulations
+                                                                                                                                   17
+
+effect of Schwarzschild BHs by focusing on the even-parity                those of the linear child modes, e.g. −2 S44,ω440 , even
+perturbations. Specifically, they solved the second-order                 though they have the same l and m. This is because spin-
+Zerilli equation sourced by the first-order Zerilli function,             weighted spheroidal harmonics depend on modes’ complex
+namely (linear even) × (linear even) → (quadratic even).                  frequencies. To compare our results for Kerr BHs with
+To convert their result to MhSpEC , we use the following                  other studies, one has to collect the mode content 2ωL in
+relations                                                                 all l’s and transform the coefficients to the new angular
+                                s                                         basis, such as spin-weighted spherical harmonics used in
+     (2)                           (lQ − 2)! (2)                          numerical relativity.
+    χNI = −2iωL Z (2) = −2iωL               h       ,
+                                   (lQ + 2)! SpEC
+                             s                         (106)
+     (1)           (1)          (lL − 2)! (1)                                              VII.   CONCLUSION
+    χNI = −iωL Z = −iωL                   h     .
+                                (lL + 2)! SpEC
+                                                                             In this paper, we have developed a method to compute
+        (1),(2)
+Here χNI       are NI’s dynamical variables that appear                   the excitation factor of quadratic QNMs at null infinity
+in the first- and second-order Zerilli equations. They                    for Kerr BHs. The main procedure includes two essential
+are related to the Zerilli functions Z (1),(2) through a time             steps (a) analytically reconstructing the metric through
+derivative [see the text below Eq. (5.1) of [32]]. In addition,           the CCK approach and (b) numerically solving the second-
+                                                   (1),(2)                order, frequency-domain Teukolsky equation using the
+Z (1),(2) can be further converted to strains hSpEC using
+the l−dependent coefficients in Eq. (106). As a result,                   shooting method along a complex contour.
+                                                                             We have implemented this method on two mode-
+the corresponding excitation factor for MhSpEC is given by
+                                                                          coupling channels (lL = mL = 2, nL = 0)2 → (lQ =
+                    h
+                         (2)
+                                i(∞)                                      mQ = 4) and (lL = mL = 2, nL = 0)2 → (lQ = 5, mQ =
+                        hSpEC                                             4). The results reveal a correlation between the spin
+                                   lQ ,mQ
+      MhSpEC = h              i(∞) 2                                    dependence of the excitation factor and the dominant
+                        (1)
+                     hSpEC                                                angular projection, providing insights into the origin of
+                                   lL ,mL                                 the spin dependence. Furthermore, this feature facilitates
+                                              h
+                                                   (2)
+                                                         i(∞)             the construction of a qualitative understanding of the
+                               s                  χNI                     spin dependence without requiring the direct solution
+          −iωL (lL − 2)!           (lQ + 2)!         lQ ,mQ
+      =                                                    2             of the Teukolsky equation. Depending on whether the
+           2 (lL + 2)!             (lQ − 2)! h (1) i(∞)
+                                             
+                                               χNI                        angular selection rule in Eq. (79) is violated or not, the
+                                                         lL ,mL           excitability of the quadratic QNM increases or decreases
+                               s
+          −iωL (lL − 2)!           (lQ + 2)! NI                           with the BH’s spin. For both cases, the factors do not
+      =                                     M .                   (107)   vanish in the extremal limit.
+           2 (lL + 2)!             (lQ − 2)! χ
+                                                                             Our result for the channel (lL = mL = 2, nL = 0)2 →
+                                                                          (lQ = mQ = 4) in the Schwarzschild BH case does not
+As for the case of (lL = mL = 2, nL = 0)2 → (lQ = mQ =
+                                                                          fully agree with the values reported by [41, 42], implying
+4), MχNI = 0.221 − 0.489i (see TABLE II of [32]), which
+                                                                          the dependence of the excitation factor on initial data
+leads to MhSpEC = −0.080 − 0.0154i, with an amplitude of                  (or equivalently, the parity content of the linear mode).
+0.081, which is smaller than our results and the numbers                  For instance, we have shown that the excitation factor
+reported by Zhu et al. [42]. A plausible source of the dis-               of a pure-even linear mode is different from that of a
+crepancy lies in the composition of our linear wavefunction               linear Teukolsky mode by comparing with results in [32].
+      (1)
+for Ψ4 , including both even- and odd-party contribu-                     A study of couplings between even and odd modes in
+tions. The general mode coupling involves three excitation                the future will help understand the variation caused by
+channels: (linear even)×(linear even) → (quadratic even),                 the “parity freedom” in the initial data, and construct an
+(linear odd) × (linear odd) → (quadratic even), and                       explicit connection between nonlinear phenomena within
+(linear odd) × (linear even) → (quadratic odd). The last                  the Regge-Wheeler-Zerilli and Teukolsky formalism.
+two contributions were omitted by NI [32], who essentially                   In the future, a valuable avenue is to generalize our
+examined the quadratic effect of a pure-even mode. To our                 calculations to the coupling between arbitrary modes
+knowledge, the calculations that involve the odd parity                   and subsequently compare them with numerical-relativity
+are still missing in the literature. If the excitability for the          simulations. The associated results will provide the the-
+odd sector differs from that of the even parity—despite the               oretical foundation for assessing the detectability of the
+isospectrality of Schwarzschild BHs, the ultimate value                   quadratic effect through various ringdown analysis meth-
+of MhSpEC will hinge on the composite of the linear wave                  ods [13, 17, 19, 20, 76, 77]. It is also interesting to com-
+or, as per Zhu et al. [42], the initial data of numerical                 pute the excitation factor of quadratic modes near BH
+simulations.                                                              horizons, which has been observed by characterizing dy-
+   Finally, to close this section, we want to emphasize                   namical horizons in numerical relativity simulations [31].
+that the spin-weighted spheroidal harmonics used for the                  The complex contour technique will not be suitable for
+quadratic mode 2ωL , e.g. −2 S44,2ω220 , are different from               this calculation, and an alternative promising direction
+                                                                                                                                  18
+
+is to solve the second-order, frequency-domain Teukolsky       Appendix B: Expressing spin coefficients in terms of
+equation on a hyperboloidal slicing. In the extremal limit,                  the Hertz potential
+the mode coupling together with the collective excitation
+[78, 79] of zero-damping modes [78, 80–83] may give rise         Below we list the spin coefficients in terms of the Hertz
+to a new (nonlinear) instability in addition to the Aretakis   potential
+instability [84–87]. It is however also worth noting that
+the definition of such excitation factor at horizon may not                ∆3      † †       †
+                                                                                                    
+                                                               λ(1) = −         −ΣD2 D2 + 2rD 2 − 2   D2† Ψ̄ORG .               (B1)
+be gauge invariant.                                                       16Γ̄4
+
+   Finally, as a byproduct, we have found that the Weyl
+scalars Ψ2 and Ψ3 can be concisely expressed through the            8Γ̄4 (1)                       
+                                                                −       σ̄ = ∆Σ −ΣD2 D2† − 2 + 2Γ̄D2 D2† Ψ̄ORG
+Hertz potential. These relations might be useful to study            ∆                     
+BH ringing in modified theories of gravity [69–71].             + 2ia cos θ ∆ΣD2† − 4a2 r sin2 θ D2† Ψ̄ORG
+                                                                                     
+                                                                + 4ira sin θ 2r − ΣD2† L†2 Ψ̄ORG .                              (B2)
+
+                  ACKNOWLEDGMENTS                                  √
+                                                                  8 2Γ̄4 (1)
+                                                                                                    
+                                                                                    2 †       †   2
+                                                                −          π = Γ̄ D2 D2 −              L†2 Ψ̄ORG
+                                                                   Γ∆2                            Γ̄
+   We thank Marc Casals for discussions during the initial        ia sin θ
+stage of this work, Saul Teukolsky for pointing out the         +          (2Γ − 2ΣD2† + Γ̄2 D2† )D2† Ψ̄ORG .                 (B3)
+                                                                     Γ
+stable integration direction in Fig. 2, and Neev Khera,
+Hengrui Zhu and Aaron Zimmerman for useful discus-               √
+                                                                8 2Γ̄2 (1)
+                                                                                                                 
+                                                                                  †    1       1       †    1     1
+sions. H. Y. is supported by the Natural Sciences and                  τ̄ = D2 + −                   D2 − −            L†2 Ψ̄ORG
+Engineering Research Council of Canada and in part by            Γ∆2                   Γ Γ̄                 Γ Γ̄
+Perimeter Institute for Theoretical Physics. Research at          ia sin θ h                                    †
+                                                                                                                  i
+                                                                −            2(Σ − Γ 2
+                                                                                       + Γ̄ 2
+                                                                                              ) − Σ(2 Γ̄ −  Γ)D2    D2† Ψ̄ORG .
+Perimeter Institute is supported in part by the Govern-             Σ2
+ment of Canada through the Department of Innovation,                                                                          (B4)
+Science and Economic Development and by the Province
+                                                               During the calculation, we find that it is convenient to
+of Ontario through the Ministry of Colleges and Universi-
+                                                               introduce the following two variables:
+ties. This work makes use of the Black Hole Perturbation
+Toolkit.                                                                         β (0)                              β (0)
+                                                                 (1)
+                                                                αw   ≡ α(1) −          hm̄m̄ ,     (1)
+                                                                                                 β̄w   ≡ β̄ (1) +         hm̄m̄ . (B5)
+                                                                                   2                                  2
+                                                               Their expressions are given by
+          Appendix A: Leaver’s representation                        √
+                                                                   8 2Γ̄3 (1)
+                                                                −         αw = [−1 − rD0† + ΣD1† D2† ]L†2 Ψ̄ORG
+                                                                     ∆2
+   The coefficients of the three-term recurrence relation       + ia cos θD2† L†2 Ψ̄ORG + 3ia sin θD2† Ψ̄ORG
+in Eq. (17) are given as follows [52]
+                                                                 + 2a2 sin θ cos θD1† D2† Ψ̄ORG − 2ira sin θD2† D2† Ψ̄ORG .
+                                                                                                                         (B6)
+              αn = n2 + (c0 + 1)n + c0 ,                              √ 3
+                                                                   16 2Γ̄ Γ (1)
+              βn = −2n2 + (2 + c1 )n + c3 ,            (A1)      −            β̄w = [−6Γ − 2rΓD0† + (Γ2 + 7Σ)D2†
+                                                                       ∆2
+                         2
+              γn = n + (c2 − 3)n + c4 − c2 + 2,                    4ΓΣ(r − 1) †
+                                                                 −              D2 − 4Γ̄]L†2 Ψ̄ORG
+                                                                         ∆
+with                                                             + ia sin θ(−6Γ − 2Γ2 D0† + 4rΓD1† + 4Γ̄)D2† Ψ̄ORG . (B7)
+
+                                                               The expression of ϵ(1) , ρ(1) , and κ(1) are quite lengthy.
+          c0 =1 − s − 2iσ+ ,                                   They can be constructed from four building blocks:
+          c1 = − 4 + 4iσ+ + 4ir+ ω,
+                                                                                                ∆ h
+          c2 =s + 3 − 4iω − 2iσ+ ,                             (δ + 2β + 2τ − π)(0) hlm̄ = − 3 Γ̄(ΣD2† − 2r)L†1 L†2
+                                                                                               4Γ̄
+          c3 =4ω 2 (2 + 2b) − λ − 4amω − s − 1                                                                   i
+                                                                +4ia sin θ(2r − ΣD2 )L2 + 2a2 sin2 θ(Γ̄ − 2Γ)D2† Ψ̄ORG .
+                                                                                  †    †
+              + 2(1 + b)iω + (8ω + 2i)σ+ ,
+          c4 =s + 1 − (2s + 1)iω − (8ω + 2i)σ+ ,                                                                                (B8)
+
+          √                                                                                         ∆
+and b =       1 − a2 .                                         (−∆ + 2γ̄ + µ − µ̄)(0) hll = −           [(Γ − Γ̄ − ΣD1† )L†1
+                                                                                                   4Γ̄2
+                                                                                                                                                     19
+
+ + 2ia sin θ(1 − Γ̄D1† )]L†2 Ψ̄ORG + c.c. .
+                                                                                                                           !
+                                                             (B9)                ∆2                  D†               1
+                                                                       (1)
+                                                                      αw   =     √          D1† D2† − 0 −                      ðΨ̄ORG .            (B22)
+                                                                                8 2r                         r        r2
+                     ∆
+(D − ρ)(0) hlm̄ = − √     [(Σ2 D1 D2† − 2rΣD1 + 2Γ̄ΣD2†
+                                                                                                                                    !
+                                                                                 ∆2      2     D†   4   1
+                   2 2Γ̄3                                               (1)
+                                                                      β̄w   =    √      − D2† + 2 +   −                                 ðΨ̄ORG .
+                                                                                8 2r     ∆      r   ∆r r2
+ − 2Σ + Γ − Γ̄ )L†2 − 4ia3 cos2 θ sin θD2†
+                2      2
+                                                                                                                                                   (B23)
+ + a2 Σ sin 2θD1 D2† ]Ψ̄ORG .                               (B10)
+                                                                                       (1)              (1)
+ √                                                                    Notice that αw and β̄w have a certain spin weight.
+2 2Γ̄δ (0) hll = [2a2 sin2 θ + 2ia sin θΓ(L1 − L†1 )
+ + Γ2 L0 L†1 ]L†2 Ψ̄ORG + (2a2 sin2 θ + Γ̄2 L̄0 L̄†1 )L̄†2 ΨORG .                                                    (1)
+                                                              (B11)    Appendix C: Expressing Ψ2 in terms of the Hertz
+                                                                                          potential
+Combining with Eq. (B8)–(B11), (3) and (33), one can
+use the following relations to obtain their expressions                 We start with the Ricci identity [48].
+
+                 1                                                      3Ψ2 = (δ̄ − 2α + β̄ − π − τ̄ )β − (δ − ᾱ + π̄ + τ )α
+           ϵ(1) = (−∆ + 2γ̄ + µ − µ̄)(0) hll
+                 4                                                          + (D + ϵ + ϵ̄ + ρ − ρ̄)γ − (∆ − γ̄ − γ + µ̄ − µ)ϵ
+                   1
+                 + (−δ − 2β + π̄ − 2τ )(0) hlm̄                                 + (δ̄ − α + β̄ − τ̄ − π)τ − (∆ − γ̄ − γ + µ̄ − µ)ρ
+                   4
+                   1                                                            + 2(νκ − λσ).                                   (C1)
+                 + (δ̄ + 2β̄ − 5π − 2τ̄ )(0) hlm .          (B12)
+                   4
+                   1                                                  To the linear order, the identity simplifies to
+           ρ = − (δ + 2β − π̄ + 2τ )(0) hlm̄
+            (1)
+                   2                                                      (1)
+                   1                          1                       3Ψ2 = (δ̄ − 3α + β̄ − π − τ̄ )(1) β (0) − (δ + 2τ )(0) α(1)
+                 + (δ̄ − 3π + 2β̄)(0) hlm + µ(0) hll .      (B13)
+                   2                          2                        + (δ̄ + β̄ − τ̄ − π)(1) τ (0)
+                                 1
+           κ =(D − ρ̄) hlm − (δ − π̄ + τ )(0) hll .
+            (1)        (0)
+                                                            (B14)      + (D + ϵ + ϵ̄ + ρ − ρ̄)(1) γ (0) − (∆ − 2γ)(0) (ϵ + ρ)(1)
+                                 2
+                                                                       + (δ̄ − 2α + β̄ − π − τ̄ )(0) β (1) − (δ − ᾱ + π̄ + τ )(1) α(0)
+Note that the expressions above have been simplified in
+ORG. See e.g., [34] for the full expressions.                          + (δ̄ − α + β̄ − τ̄ − π)(0) τ (1) ,                                         (C2)
+ For Schwarzschild BHs, the results can be simplified to
+                                                                      where we have used the facts that λ(0) = σ (0) = ν (0) =
+                             2                                       ν (1) = γ (1) = µ(1) = ∆(1) = 0 and α(0) = π (0) − β̄ (0) .
+              ∆3
+                    
+                           1
+λ(1) =               D2† −      D2† Ψ̄ORG .                 (B15)
+             16r2          r
+                                                                                       1.     The first line of Eq. (C2)
+             ∆2
+                         
+                        2
+σ̄   (1)
+           =        †
+                D2 D2 −     D2† Ψ̄ORG .                     (B16)
+             8          r                                               Many terms in the first line of Eq. (C2) can be elegantly
+                                                                  canceled. To see this, we use the following identities [35]
+         r∆       2          2
+κ̄(1) = √    D1 +      D2† −     ðΨ̄ORG
+        2 2       r          r                                           (1)    (1)                           π̄ (0)        1
+                                                                       β̄w   − αw   + µ̄(0) hlm̄ +                   hm̄m̄ = (δ + 4β)(0) hm̄m̄ ,
+      r              r                                                                                           2          2
+ + √ ð̄ððΨ̄ORG + √ ð̄ð̄ð̄ΨORG .                             (B17)                                                                          (C3)
+    4 2            4 2
+                                                                       ∆(0) β (0) + µ̄(0) β (0) = 0,                                               (C4)
+         1              ∆        1
+ϵ = − ð̄ð̄ΨORG + (D1† + )ððΨ̄ORG .
+ (1)
+                                                    (B18)                                    π̄   (0)
+                                                                                                        +τ   (0)
+         8              8        ∆                                     π (1) + τ̄ (1) = −                          hm̄m̄ .                         (C5)
+                                                                                                        2
+                                            
+         ∆           1              ∆        3
+ρ(1) = −      D̄2† −     ð̄ð̄ΨORG +    D2† −     ððΨ̄ORG .            We first adopt Eq. (C5) and the complex conjugate of
+          8          r              8        r                        Eq. (35c), which leads to
+                                                    (B19)
+                                                                       (δ̄ − 3α + β̄ − π − τ̄ )(1) β (0) − (δ + 2τ )(0) α(1)
+                                       2
+           ∆2
+                      
+                                   1                                                          1
+τ̄ (1) = − √               D2† −            ðΨ̄ORG .        (B20)       = (−hlm̄ ∆(0) + hm̄m̄ δ (0) − α(1) + β̄ (1) )β (0)
+          8 2r                     r                                                          2
+                                                                           π̄ (0) + τ (0)
+                            2                                          +                 hm̄m̄ β (0) − (δ (0) + 2β (0) )α(1) − 2τ (0) α(1) .
+             ∆2
+                    
+     (1)              †   1                                                       2
+π          = √       D2 −      ðΨ̄ORG .                     (B21)                                                                       (C6)
+            8 2r          r
+                                                                                                                                                    20
+
+Then we use Eq. (B5) to replace some α(1) and β̄ (1) with                                                       2
+                                                                                       D3† D1† − D2† D2† = −      ,                             (C13b)
+ (1)     (1)
+αw and β̄w . This yields                                                                                        ∆
+                                                                                                                           (1)
+  L.H.S = (−hlm̄ ∆(0) − µ̄hlm̄ )β (0)                                            we arrive at our final result for Ψ2            in Eq. (38).
+       τ (0)
+   +         hm̄m̄ β (0) − (δ (0) + 2β (0) )αw
+                                             (1)
+                                                 − 2τ (0) α(1) , (C7)
+         2                                                                                 Appendix D: Derivation of Eq. (C11)
+where we have used Eq. (C3). Here L.H.S refers to the
+first line of Eq. (C2). Finally, the first line of Eq. (C7)                        Replacing α(0) with π (0) − β̄ (0) yields two terms
+vanishes due to Eq. (C4), and we end up with
+                                                                                   (δ̄ − 2α + β̄ − π − τ̄ )(0) β (1) + (δ − ᾱ + π̄ + τ )(1) β̄ (0) ,
+                                                                (0)
+                                                  τ                                                                                              (D1)
+  L.H.S = −(δ + 2β)(0) αw    (1)
+                                 − 2τ (0) αw
+                                           (1)
+                                               −      hm̄m̄ β (0)
+                                                    2
+                                                                                 and
+       τ (0)
+                                                   
+                            1             2ia sin θ
+  =−         hm̄m̄ β (0) − √       L†1 −               (1)
+                                                      αw   . (C8)                                   −(δ − ᾱ + π̄ + τ )(1) π (0) .               (D2)
+         2                   2Γ              Γ̄
+
+
+              2.     The second line of Eq. (C2)                                                           1.     Eq. (D1)
+
+                                                                                                                  (1)
+  By using                                                                         Replacing β (1) with βw , the first part of Eq. (D1)
+                                                                                 becomes
+                 δ (0) τ (0) = τ (0) (τ + 2β − π̄)(0) ,                  (C9a)
+                 ∆ (0) (0)
+                      τ        = −τ     (0)
+                                              (µ + µ̄)(0)
+                                                            ,            (C9b)   (δ̄ + 2β̄ − 3π − τ̄ )(0) β (1)
+
+and Eq. (C5), the second line of Eq. (C2) can be reduced                                                                β̄ (0)
+                                                                                  = (δ̄ + 2β̄ − 3π − τ̄ )(0) βw
+                                                                                                              (1)
+                                                                                                                  −            (2β̄ − 3π − τ̄ )(0) hmm
+to                                                                                                                         2
+                                      τ (0)                                           hmm (0) (0) β̄ (0) (0)
+    (δ̄ + β̄ − τ̄ − π) τ  (1) (0)
+                                    =       hm̄m̄ β (0)                           −      δ̄ β̄ −        δ̄ hmm .                                 (D3)
+                                        2                                              2             2
+        h                                               i
+     + hlm̄ (µ(0) + µ̄(0) ) + hm̄m̄ τ (0) + β̄w
+                                              (1)
+                                                  τ (0) .                (C10)   Meanwhile, the second part of Eq. (D1) can be converted
+                                                                                 to
+Note that the first term of Eqs. (C8) and (C10) are iden-
+                                                                                 (δ + β − ᾱ + π̄ + τ )(1) β̄ (0)
+tical, resulting in additional cancellation.                                                                                         (1)
+                                                                                                       1         (0)
+                                                                                               (0)
+                                                                                  = −hlm ∆ + hmm δ̄ + β − ᾱ + π̄ + τ                        β̄ (0)
+                                                                                                       2
+            3.     The last two lines of Eq. (C2)
+                                                                                                                                  π (0) + τ̄ (0)
+                                                                                                                                                      
+                                                                                           (0)     1         (0)     (1)    (1)
+                                                                                  = hlm µ + hmm δ̄ + β − ᾱ −                                     hmm β̄ (0)
+  In Appendix D, we show that                                                                      2                                    2
+                                                                                                                                  π (0) + τ̄ (0)
+                                                                                                                                                     
+  (δ̄ − 2α + β̄ − π − τ̄ )(0) β (1) − (δ − ᾱ + π̄ + τ )(1) α(0)                  = hlm µ(0) + βw    (1)
+                                                                                                         − 2β̄ (0) hmm − ᾱw
+                                                                                                                           (1)
+                                                                                                                                −                 hmm β̄ (0)
+                                                                                                                                        2
+   = (δ̄ + 2β̄ − π − τ̄ )(0) βw
+                              (1)     (1) (0)
+                                  − ᾱw  π                                          1
+                               (0)                                              + hmm δ̄ (0) β̄ (0) + β̄ (0) 2 hmm ,                            (D4)
+                       5π + τ̄                                                      2
+   − π (0) δ̄ + 2β̄ −                hmm .                               (C11)
+                           2                                                     where we have used Eq. (35c) for the first equality,
+After inserting the result above, along with the expression                      Eq. (C4) for the second equality, and Eq. (B5) for the
+for hmm in Eq. (33b) and spin coefficients in Appendix                           last one.
+B, into the last two lines of Eq. (C2), we find it vanishes                         Combining Eqs. (D3) and (D4) yields
+identically, namely
+                                                                                                                               β̄ (0) π (0)
+                               (0) (1)                                (1) (0)      Eq. (D1) = (δ̄ + 2β̄ − 3π − τ̄ )(0) βw
+                                                                                                                        (1)
+                                                                                                                            +               hmm
+  (δ̄ − 2α + β̄ − π − τ̄ )          β       − (δ − ᾱ + π̄ + τ )        α                                                           2
+                                                                                                                            π (0)
+                                                                                              
+                                (0) (1)
+   + (δ̄ − α + β̄ − τ̄ − π)             τ      = 0.                      (C12)              + βw  (1)     (1)
+                                                                                                      − ᾱw   + µ(0) hlm +         hmm
+                                                                                                                              2
+                                                                                                                        
+                                                                                                              1
+                          4.    Final result                                                −2β̄ (0) hmm − δ̄ (0) hmm β̄ (0) .                (D5)
+                                                                                                              2
+  Finally, by collecting the outcomes in Eqs. (C8), (C10),                       The last parenthesis vanishes because of Eq. (C3). Then
+and (C12) along with the relations
+                                                                                                  β̄ (0) π (0)
+                            2
+                              
+                                   2(r − 1)2
+                                                                                  Eq. (D1) =                  hmm + (δ̄ + 2β̄ − 3π − τ̄ )(0) βw
+                                                                                                                                               (1)
+                                                                                                                                                   .
+                                                                                                       2
+      †     †
+               
+      Dm , Dn = (n − m)        1−              ,   (C13a)
+                           ∆           ∆                                                                                                        (D6)
+                                                                                                                                   21
+
+                          2.    Eq. (D2)                                                     3.   Final result
+
+  With the help of                                                        Finally, we combine Eq. (D6) and Eq. (D8) to obtain
+                                                                        Eq. (C11) in the main text. Notice that the first term of
+  δ (0) π̄ (0) = 2π̄(β − π̄),   ∆(0) π̄ (0) = −2π̄ (0) µ̄(0) ,   (D7)   Eq. (D6) and Eq. (D8) cancel each other.
+
+it is straightforward to obtain
+                                                                            Appendix E: The source of the second-order
+                β̄ π  (0) (0)                                           Teukolsky equation for Schwarzschild BHs with lL = 2
+   Eq. (D2) = −         hmm                                                                  and lQ = 4
+                   2
+                         3π (0) + τ̄ (0)
+                                           
+   − 2hlm µ(0) − ᾱw
+                   (1)
+                       −                 hmm π (0) .             (D8)     The source Q(r) in Eq. (70) reads
+                               2
+
+
+  √
+48 7π
+       Q(r) = r2 −13r10 ω 6 − 34ir9 ω 5 + r8 (35 + 269iω) ω 4 + r7 (131iω + 99) iω 3 + r6 865ω 2 − 949iω + 44 ω 2
+                                                                                                            
+  5
++ r5 1249ω 2 + 530iω − 35 iω + r4 −53ω 2 − 196iω + 557 iω + r3 2144ω 2 − 1540iω + 120 + r2 −1380ω 2 + 930iω − 564
+                                                                                                                        
+                                               2
++r(816 + 408iω) − 168iω − 336] × +2R22ω
++ r2 ∆ 32ir8 ω 5 − 78r7 ω 4 − r6 (424iω + 130) iω 3 + r5 (154 + 582iω) ω 2 + r4 −968ω 2 + 1227iω + 42 iω − r3 (2320iω + 300) iω
+                                                                                                     
+                                                                                           
+                                                                                 d
++r2 −936ω 2 + 1291iω + 48 − r(192 + 2352iω) + 1152iω + 192 × +2R22ω
+                                                                   
+                                                                                      R 22ω
+                                                                                 dr +2
++ ∆2 [19r8 ω 4 + 50ir7 ω 3 − r6 (86 + 143iω) ω 2 − r5 (339iω + 91) iω + r4 −339ω 2 + 538iω + 42 − r3 (306 + 945iω)
+                                                                                                
+                                                  2
+   2                                     d
++ r (810 + 447iω) − 912r + 360] ×            R22ω .                                                               (E1)
+                                        dr +2
+
+
+
+Here ω stands for the linear mode ωL . The structure of                 [10] R. Abbott et al. (LIGO Scientific, Virgo), Astrophys. J.
+Q(r) follows Eq. (105) and its asymptotic expansion is                       900, L13 (2020), arXiv:2009.01190 [astro-ph.HE].
+given in Eq. (71).                                                      [11] R. Abbott et al. (LIGO Scientific, VIRGO, KAGRA),
+                                                                             (2021), arXiv:2112.06861 [gr-qc].
+                                                                        [12] E. Berti, K. Yagi, H. Yang, and N. Yunes, Gen. Rel.
+                                                                             Grav. 50, 49 (2018), arXiv:1801.03587 [gr-qc].
+                                                                        [13] G. Carullo, W. Del Pozzo,              and J. Veitch,
+                       REFERENCES
+                                                                             Phys. Rev. D99, 123029 (2019), [Erratum: Phys.
+                                                                             Rev.D100,no.8,089903(2019)], arXiv:1902.07527 [gr-qc].
+ [1] A. Buonanno, G. B. Cook, and F. Pretorius, Phys. Rev.              [14] M. Isi, M. Giesler, W. M. Farr, M. A. Scheel, and
+     D75, 124018 (2007), arXiv:gr-qc/0610122 [gr-qc].                        S. A. Teukolsky, Phys. Rev. Lett. 123, 111102 (2019),
+ [2] E. Berti, V. Cardoso, J. A. Gonzalez, U. Sperhake,                      arXiv:1905.00869 [gr-qc].
+     M. Hannam, S. Husa, and B. Bruegmann, Phys. Rev. D                 [15] H. Siegel, M. Isi, and W. M. Farr, Phys. Rev. D 108,
+     76, 064034 (2007), arXiv:gr-qc/0703053.                                 064008 (2023), arXiv:2307.11975 [gr-qc].
+ [3] M. Giesler, M. Isi, M. Scheel, and S. Teukolsky, Phys.             [16] C. D. Capano, M. Cabero, J. Westerweck, J. Abedi,
+     Rev. X9, 041060 (2019), arXiv:1903.08284 [gr-qc].                       S. Kastha, A. H. Nitz, Y.-F. Wang, A. B. Nielsen,
+ [4] B. Carter, Phys. Rev. Lett. 26, 331 (1971).                             and B. Krishnan, Phys. Rev. Lett. 131, 221402 (2023),
+ [5] E. Berti, V. Cardoso, and C. M. Will, Phys. Rev. D73,                   arXiv:2105.05238 [gr-qc].
+     064030 (2006), arXiv:gr-qc/0512160 [gr-qc].                        [17] E. Finch and C. J. Moore, Phys. Rev. D 106, 043005
+ [6] E. Berti, A. Sesana, E. Barausse, V. Cardoso, and                       (2022), arXiv:2205.07809 [gr-qc].
+     K. Belczynski, Phys. Rev. Lett. 117, 101102 (2016),                [18] R. Cotesta, G. Carullo, E. Berti, and V. Cardoso, Phys.
+     arXiv:1605.09286 [gr-qc].                                               Rev. Lett. 129, 111102 (2022), arXiv:2201.00822 [gr-qc].
+ [7] H. Yang, K. Yagi, J. Blackman, L. Lehner, V. Paschalidis,          [19] S. Ma, L. Sun, and Y. Chen, Phys. Rev. D 107, 084010
+     F. Pretorius, and N. Yunes, Phys. Rev. Lett. 118, 161101                (2023), arXiv:2301.06639 [gr-qc].
+     (2017), arXiv:1701.05808 [gr-qc].                                  [20] Y.-F. Wang, C. D. Capano, J. Abedi, S. Kastha, B. Kr-
+ [8] B. P. Abbott et al. (LIGO Scientific, Virgo), Phys.                     ishnan, A. B. Nielsen, A. H. Nitz, and J. Westerweck,
+     Rev. Lett. 116, 221101 (2016), [Erratum: Phys. Rev.                     (2023), arXiv:2310.19645 [gr-qc].
+     Lett.121,no.12,129902(2018)], arXiv:1602.03841 [gr-qc].            [21] R. J. Gleiser, C. O. Nicasio, R. H. Price,          and
+ [9] R. Abbott et al. (LIGO Scientific, Virgo), Phys. Rev. D                 J. Pullin, Class. Quant. Grav. 13, L117 (1996), arXiv:gr-
+     103, 122002 (2021), arXiv:2010.14529 [gr-qc].
+                                                                                                                               22
+
+     qc/9510049.                                                         A. Mathematical and Physical Sciences 402, 285 (1985).
+[22] M. Campanelli and C. O. Lousto, Phys. Rev. D 59, 124022        [53] S. R. Green, S. Hollands, and P. Zimmerman, Class.
+     (1999), arXiv:gr-qc/9811019.                                        Quant. Grav. 37, 075001 (2020), arXiv:1908.09095 [gr-
+[23] Y. Zlochower, R. Gomez, S. Husa, L. Lehner, and                     qc].
+     J. Winicour, Phys. Rev. D 68, 084014 (2003), arXiv:gr-         [54] R. M. Wald, Phys. Rev. Lett. 41, 203 (1978).
+     qc/0306098.                                                    [55] B. F. Whiting and L. R. Price, Class. Quant. Grav. 22,
+[24] H. Yang, A. Zimmerman, and L. Lehner, Phys. Rev. Lett.              S589 (2005).
+     114, 081101 (2015), arXiv:1402.4859 [gr-qc].                   [56] T. S. Keidl, J. L. Friedman, and A. G. Wiseman, Phys.
+[25] H. Yang, F. Zhang, S. R. Green, and L. Lehner, Phys.                Rev. D 75, 124009 (2007), arXiv:gr-qc/0611072.
+     Rev. D 91, 084007 (2015), arXiv:1502.08051 [gr-qc].            [57] T. S. Keidl, A. G. Shah, J. L. Friedman, D.-H. Kim, and
+[26] L. Sberna, P. Bosch, W. E. East, S. R. Green,                       L. R. Price, Phys. Rev. D 82, 124012 (2010), [Erratum:
+     and L. Lehner, Phys. Rev. D 105, 064046 (2022),                     Phys.Rev.D 90, 109902 (2014)], arXiv:1004.2276 [gr-qc].
+     arXiv:2112.11168 [gr-qc].                                      [58] A. Ori, Phys. Rev. D 67, 124010 (2003), arXiv:gr-
+[27] J. Redondo-Yuste, D. Pereñiguez, and V. Cardoso,                    qc/0207045.
+     (2023), arXiv:2312.04633 [gr-qc].                              [59] A. A. Starobinsky, Sov. Phys. JETP 37, 28 (1973).
+[28] S. Ma, K. Mitman, L. Sun, N. Deppe, F. Hébert, L. E.           [60] S. Teukolsky and W. Press, Astrophys. J. 193, 443 (1974).
+     Kidder, J. Moxon, W. Throwe, N. L. Vu, and Y. Chen,            [61] D. A. Nichols, A. Zimmerman, Y. Chen, G. Lovelace,
+     Phys. Rev. D 106, 084036 (2022), arXiv:2207.10870 [gr-              K. D. Matthews, R. Owen, F. Zhang, and K. S. Thorne,
+     qc].                                                                Phys. Rev. D 86, 104028 (2012), arXiv:1208.3038 [gr-qc].
+[29] K. Mitman et al., Phys. Rev. Lett. 130, 081402 (2023),         [62] “Black Hole Perturbation Toolkit,” (bhptoolkit.org).
+     arXiv:2208.07380 [gr-qc].                                      [63] S. L. Detweiler and E. Szedenits, Astrophys. J. 231, 211
+[30] M. H.-Y. Cheung et al., Phys. Rev. Lett. 130, 081401                (1979).
+     (2023), arXiv:2208.07374 [gr-qc].                              [64] E. W. Leaver, Phys. Rev. D 34, 384 (1986).
+[31] N. Khera,         A. Ribes Metidieri,          B. Bonga,       [65] Z. Mark, H. Yang, A. Zimmerman, and Y. Chen, Phys.
+     X. Jiménez Forteza, B. Krishnan, E. Poisson, D. Pook-               Rev. D 91, 044025 (2015), arXiv:1409.5800 [gr-qc].
+     Kolb, E. Schnetter, and H. Yang, Phys. Rev. Lett. 131,         [66] A. Zimmerman, H. Yang, Z. Mark, Y. Chen, and
+     231401 (2023).                                                      L. Lehner, Astrophys. Space Sci. Proc. 40, 217 (2015),
+[32] H. Nakano and K. Ioka, Phys. Rev. D 76, 084007 (2007),              arXiv:1406.4206 [gr-qc].
+     arXiv:0708.0450 [gr-qc].                                       [67] H. Yang and J. Zhang, Phys. Rev. D 107, 064045 (2023),
+[33] K. Ioka and H. Nakano, Phys. Rev. D 76, 061503 (2007),              arXiv:2210.01724 [gr-qc].
+     arXiv:0704.3467 [astro-ph].                                    [68] S. R. Green, S. Hollands, L. Sberna, V. Toomani,
+[34] N. Loutrel, J. L. Ripley, E. Giorgi, and F. Pretorius, Phys.        and P. Zimmerman, Phys. Rev. D 107, 064030 (2023),
+     Rev. D 103, 104017 (2021), arXiv:2008.11770 [gr-qc].                arXiv:2210.15935 [gr-qc].
+[35] J. L. Ripley, N. Loutrel, E. Giorgi, and F. Pretorius, Phys.   [69] D. Li, P. Wagle, Y. Chen, and N. Yunes, Phys. Rev. X
+     Rev. D 103, 104018 (2021), arXiv:2010.00162 [gr-qc].                13, 021029 (2023), arXiv:2206.10652 [gr-qc].
+[36] M. Lagos and L. Hui, Phys. Rev. D 107, 044040 (2023),          [70] A. Hussain and A. Zimmerman, Phys. Rev. D 106, 104018
+     arXiv:2208.07379 [gr-qc].                                           (2022), arXiv:2206.10653 [gr-qc].
+[37] A. Spiers, A. Pound, and J. Moxon, Phys. Rev. D 108,           [71] P. Wagle, D. Li, Y. Chen, and N. Yunes, (2023),
+     064002 (2023), arXiv:2305.19332 [gr-qc].                            arXiv:2311.07706 [gr-qc].
+[38] D. Perrone, T. Barreira, A. Kehagias, and A. Riotto, Nucl.     [72] E. Cannizzaro, L. Sberna, S. R. Green, and S. Hollands,
+     Phys. B 999, 116432 (2024), arXiv:2308.15886 [gr-qc].               (2023), arXiv:2309.10021 [gr-qc].
+[39] B. Bucciotti, A. Kuntz, F. Serra, and E. Trincherini,          [73] “The Spectral Einstein Code,” http://www.black-holes.
+     JHEP 12, 048 (2023), arXiv:2309.08501 [hep-th].                     org/SpEC.html.
+[40] A. Kehagias, D. Perrone, A. Riotto, and F. Riva, Phys.         [74] D. A. B. Iozzo, M. Boyle, N. Deppe, J. Moxon, M. A.
+     Rev. D 108, L021501 (2023), arXiv:2301.09345 [gr-qc].               Scheel, L. E. Kidder, H. P. Pfeiffer, and S. A. Teukolsky,
+[41] J. Redondo-Yuste, G. Carullo, J. L. Ripley, E. Berti, and           Phys. Rev. D 103, 024039 (2021), arXiv:2010.15200 [gr-
+     V. Cardoso, (2023), arXiv:2308.14796 [gr-qc].                       qc].
+[42] H. Zhu et al., (2024), arXiv:2401.00805 [gr-qc].               [75] L. C. Stein, J. Open Source Softw. 4, 1683 (2019),
+[43] P. L. Chrzanowski, Phys. Rev. D 11, 2042 (1975).                    arXiv:1908.10377 [gr-qc].
+[44] J. Cohen and L. Kegeles, Physics Letters A 54, 5 (1975).       [76] M. Isi and W. M. Farr, (2021), arXiv:2107.05609 [gr-qc].
+[45] L. S. Kegeles and J. M. Cohen, Phys. Rev. D 19, 1641           [77] S. Ma, L. Sun, and Y. Chen, Phys. Rev. Lett. 130, 141401
+     (1979).                                                             (2023), arXiv:2301.06705 [gr-qc].
+[46] K. D. Kokkotas and B. G. Schmidt, Living Rev. Rel. 2, 2        [78] H. Yang, A. Zimmerman, A. Zenginoğlu, F. Zhang,
+     (1999), arXiv:gr-qc/9909058.                                        E. Berti, and Y. Chen, Phys. Rev. D 88, 044047 (2013),
+[47] E. Berti, V. Cardoso, and A. O. Starinets, Class. Quant.            arXiv:1307.8086 [gr-qc].
+     Grav. 26, 163001 (2009), arXiv:0905.2975 [gr-qc].              [79] M. Casals, S. E. Gralla, and P. Zimmerman, Phys. Rev.
+[48] S. Chandrasekhar, The mathematical theory of black holes            D 94, 064003 (2016), arXiv:1606.08505 [gr-qc].
+     (1985).                                                        [80] S. Hod, Phys. Lett. B 666, 483 (2008), arXiv:0810.5419
+[49] S. A. Teukolsky, Astrophysical Journal 185, 635 (1973).             [gr-qc].
+[50] R. Penrose and W. Rindler, Spinors and space-time: Vol-        [81] S. Hod, Phys. Rev. D 78, 084035 (2008), arXiv:0811.3806
+     ume 1, Two-spinor calculus and relativistic fields, Vol. 1          [gr-qc].
+     (Cambridge University Press, 1984).                            [82] H. Yang, D. A. Nichols, F. Zhang, A. Zimmerman,
+[51] S. A. Teukolsky, Phys. Rev. Lett. 29, 1114 (1972).                  Z. Zhang, and Y. Chen, Phys. Rev. D 86, 104006 (2012),
+[52] E. W. Leaver, Proceedings of the Royal Society of London.           arXiv:1207.4253 [gr-qc].
+                                                                                                                    23
+
+[83] H. Yang, F. Zhang, A. Zimmerman, D. A. Nichols,          [86] S. Aretakis, Annales Henri Poincare 12, 1491 (2011),
+     E. Berti, and Y. Chen, Phys. Rev. D 87, 041502 (2013),        arXiv:1110.2009 [gr-qc].
+     arXiv:1212.3271 [gr-qc].                                 [87] S. Aretakis, Adv. Theor. Math. Phys. 19, 507 (2015),
+[84] S. Aretakis, (2010), arXiv:1006.0283 [math.AP].               arXiv:1206.6598 [gr-qc].
+[85] S. Aretakis, Commun. Math. Phys. 307, 17 (2011),
+     arXiv:1110.2007 [gr-qc].
+

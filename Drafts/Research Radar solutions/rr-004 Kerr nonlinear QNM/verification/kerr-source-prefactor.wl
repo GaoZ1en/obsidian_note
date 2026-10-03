@@ -1,0 +1,1 @@
+ClearAll["Global`*"];rp=1+b;rm=1-b;de=(r-rp)(r-rm);sig=(2rp w-q)/(2b);rh=I w+(-3+2I w+I sig)/(r-rm)+(-2-I sig)/(r-rp);gd=(I((r^2+1-b^2)w-q)+4(r-1))/de;red=FullSimplify[rh+gd-(2I w+(-1+4I w)/(r-rm))];prefRatio=Factor[de^6/((r-rm)^7(r-rp)^6)];<|"conjugated_D2dagger_residual"->red,"quadratic_prefactor_ratio"->prefRatio|>

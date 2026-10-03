@@ -1,0 +1,53 @@
+ClearAll["Global`*"];
+
+wp=70;ss=1-z^2;si=Sqrt[ss];sig=r^2+a^2 z^2;de=r^2-2r+a^2;gg=r+I a z;gb=r-I a z;
+g={{-(1-2r/sig),0,0,-2a r ss/sig},{0,sig/de,0,0},{0,0,sig/ss,0},{-2a r ss/sig,0,0,(r^2+a^2+2a^2 r ss/sig)ss}};
+gi=Simplify[Inverse[g]];
+lv={(r^2+a^2)/de,1,0,a/de};nv={(r^2+a^2),-de,0,a}/(2sig);mv={I a si,0,-si,I/si}/(Sqrt[2]gg);mbv={-I a si,0,-si,-I/si}/(Sqrt[2]gb);
+nc=Simplify[g.nv];mc=Simplify[g.mv];
+kk=(r^2+a^2)w-a mm;gd=(I kk+4(r-1))/de;
+vr=(kk^2-4I(r-1)kk)/de+8I w r-a^2 w^2+2a mm w-(av-4);
+r2=-3D[de,r]/de r1-vr/de r0;
+s2=(2z s1-(a^2 w^2 z^2+4a w z-2+av-(mm-2z)^2/ss)s0)/ss;
+dr[f_]:=D[f,r]+D[f,r0]r1+D[f,r1]r2;
+dz[f_]:=D[f,z]+D[f,s0]s1+D[f,s1]s2;
+ld[n_,f_]:=-si dz[f]+(a w si-mm/si+n z/si)f;
+h1=r1+gd r0;h2=dr[h1]+gd h1;
+ha=gg^2/2 r0(ld[1,ld[2,s0]]+2I a si/gg ld[2,s0]);
+hb=-de gg^2/(2Sqrt[2]gb)(2a^2 si z/sig h1 s0+(h1-2r r0/sig)ld[2,s0]);
+hc=de^2 gg^2/(4gb^2)(h2-2h1/gg)s0;
+hm=Table[ha nc[[j]]nc[[k]]-hb(nc[[j]]mc[[k]]+mc[[j]]nc[[k]])+hc mc[[j]]mc[[k]],{j,4},{k,4}];
+rules={a->3/10,r->3,z->1/3,w->3/7-I/11,mm->2,av->17/5+I/8,r0->7/5-I/9,r1->-2/7+I/6,s0->9/7+I/8,s1->-3/5+I/4};
+num[f_]:=N[f/.rules,wp];
+dd0[f_,j_]:=Switch[j,1,0f,2,D[f,r],3,D[f,z],4,0f];
+dd1[f_,j_]:=Switch[j,1,-I w f,2,dr[f],3,dz[f],4,I mm f];
+gn=num[g];hin=num[hm];inv=num[gi];ginv1=-inv.hin.inv;
+dg=Table[num[dd0[g,j]],{j,4}];dh=Table[num[dd1[hm,j]],{j,4}];
+d2g=Table[num[dd0[dd0[g,j],k]],{j,4},{k,4}];d2h=Table[num[dd1[dd1[hm,j],k]],{j,4},{k,4}];
+invd=Table[-inv.dg[[j]].inv,{j,4}];
+inv1d=Table[-invd[[j]].hin.inv-inv.dh[[j]].inv-inv.hin.invd[[j]],{j,4}];
+cc0=Table[dg[[j,b,k]]+dg[[k,b,j]]-dg[[b,j,k]],{b,4},{j,4},{k,4}];
+cc1=Table[dh[[j,b,k]]+dh[[k,b,j]]-dh[[b,j,k]],{b,4},{j,4},{k,4}];
+dcc0=Table[d2g[[j,l,b,k]]+d2g[[k,l,b,j]]-d2g[[b,l,j,k]],{l,4},{b,4},{j,4},{k,4}];
+dcc1=Table[d2h[[j,l,b,k]]+d2h[[k,l,b,j]]-d2h[[b,l,j,k]],{l,4},{b,4},{j,4},{k,4}];
+gam0=Table[Sum[inv[[i,b]]cc0[[b,j,k]],{b,4}]/2,{i,4},{j,4},{k,4}];
+gam1=Table[Sum[inv[[i,b]]cc1[[b,j,k]]+ginv1[[i,b]]cc0[[b,j,k]],{b,4}]/2,{i,4},{j,4},{k,4}];
+gam2=Table[Sum[ginv1[[i,b]]cc1[[b,j,k]],{b,4}]/2,{i,4},{j,4},{k,4}];
+dg0=Table[Sum[invd[[l,i,b]]cc0[[b,j,k]]+inv[[i,b]]dcc0[[l,b,j,k]],{b,4}]/2,{l,4},{i,4},{j,4},{k,4}];
+dg1=Table[Sum[invd[[l,i,b]]cc1[[b,j,k]]+inv[[i,b]]dcc1[[l,b,j,k]]+inv1d[[l,i,b]]cc0[[b,j,k]]+ginv1[[i,b]]dcc0[[l,b,j,k]],{b,4}]/2,{l,4},{i,4},{j,4},{k,4}];
+dg2=Table[Sum[inv1d[[l,i,b]]cc1[[b,j,k]]+ginv1[[i,b]]dcc1[[l,b,j,k]],{b,4}]/2,{l,4},{i,4},{j,4},{k,4}];
+gams={gam0,gam1,gam2};dgs={dg0,dg1,dg2};
+ric=Table[Table[Sum[dgs[[o+1,l,l,j,k]]-dgs[[o+1,k,l,j,l]],{l,4}]+Sum[Sum[gams[[p+1,l,l,t]]gams[[o-p+1,t,j,k]]-gams[[p+1,l,k,t]]gams[[o-p+1,t,j,l]],{p,0,o}],{l,4},{t,4}],{j,4},{k,4}],{o,0,2}];
+sc0=Tr[inv.ric[[1]]];sc1=Tr[inv.ric[[2]]+ginv1.ric[[1]]];sc2=Tr[inv.ric[[3]]+ginv1.ric[[2]]];
+ein0=ric[[1]]-gn sc0/2;ein1=ric[[2]]-(gn sc1+hin sc0)/2;ein2=ric[[3]]-(gn sc2+hin sc1)/2;
+
+riem=Table[Table[dgs[[o+1,c,i,d,j]]-dgs[[o+1,d,i,c,j]]+Sum[Sum[gams[[p+1,i,c,k]]gams[[o-p+1,k,d,j]]-gams[[p+1,i,d,k]]gams[[o-p+1,k,c,j]],{p,0,o}],{k,4}],{i,4},{j,4},{c,4},{d,4}],{o,0,2}];
+nnum=num[nv];mbnum=num[mbv];mb1=-inv.hin.mbnum/2;
+contract[o_,q_,t_]:=Sum[(gn.nnum)[[i]]q[[j]]nnum[[c]]t[[d]]riem[[o+1,i,j,c,d]],{i,4},{j,4},{c,4},{d,4}];
+q2fixed=contract[2,mbnum,mbnum];
+q2complete=q2fixed+contract[1,mb1,mbnum]+contract[1,mbnum,mb1]+contract[0,mb1,mb1];
+
+h4op=Nest[Function[ff,dr[ff]+gd ff],r0,4];
+pred=num[de^4/(32gb^4)h4op s0];
+<|"actual_Rnmbnmb"->N[contract[1,mbnum,mbnum],25],"published_psi4"->N[pred,25],"ratio"->N[contract[1,mbnum,mbnum]/pred,25]|>
+

@@ -1,0 +1,1 @@
+Clear[f,v,w,x,c,al,t];sch[z_]:=D[z,{x,3}]/D[z,x]-3/2(D[z,{x,2}]/D[z,x])^2;bf=c al^2 f'[x]^2/24-c sch[f[x]]/12;omf=c al^2(v'[x] w[x]-w'[x] v[x])/24-c/24((v'[x]/f'[x])D[w'[x]/f'[x],x]-(w'[x]/f'[x])D[v'[x]/f'[x],x]);dbw=D[bf/.f->Function[z,f[z]+t w[z]],t]/.t->0;diff=Together[omf+v[x]dbw/f'[x]];ibp=Sum[(-1)^j D[Coefficient[Expand[diff],D[v[x],{x,j}]],{x,j}],{j,0,2}];FullSimplify[ibp]
