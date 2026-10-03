@@ -81,8 +81,7 @@ $$\begin{align}
 \chi(r)=\frac2W\left[ u_{\mathrm b}(r)\int_0^r ds\,s\,u_{\mathrm c}(s)S_0{}^\mu{}_\mu(s) +u_{\mathrm c}(r)\int_r^\infty ds\,s\,u_{\mathrm b}(s)S_0{}^\mu{}_\mu(s) \right].
 \end{align}$$
 
-These integrals converge where used for every $\Delta>1$; the assembled solution is regular at the center. At the excluded $\Delta_*$ its boundary expansion is logarithmic. Away from that value it has the forced powers $r^{-2\Delta-2n}$ and the fast homogeneous powers $r^{-\delta_g-2n}$, without logarithms. For example its leading forced coefficient is
-$-\Delta(2\Delta-3)/[4\pi(\Delta^2-\Delta-1)]$.
+These integrals converge where used for every $\Delta>1$; the assembled solution is regular at the center. At the excluded $\Delta_*$ its boundary expansion is logarithmic. Away from that value it has the forced powers $r^{-2\Delta-2n}$ and the fast homogeneous powers $r^{-\delta_g-2n}$, without logarithms. For example its leading forced coefficient is $-\Delta(2\Delta-3)/[4\pi(\Delta^2-\Delta-1)]$.
 
 The complete metric seed is obtained by one further radial integral:
 

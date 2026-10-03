@@ -42,8 +42,7 @@ $$\begin{align}
 F_3(\ell)&=-\frac{e^{-2\ell}}{4\pi\sinh\ell},& F_4(\ell)&=-\frac{e^{-\sqrt5\,\ell}}{4\pi\sinh\ell}.
 \end{align}$$
 
-They solve $(\Box_E-m^2)F_{m^2}=\delta_E$ for $m^2=3,4$. The sign follows from the short-distance flux
-$\lim_{\ell\to0}4\pi\sinh^2\ell\,\partial_\ell F_{m^2}=1$.
+They solve $(\Box_E-m^2)F_{m^2}=\delta_E$ for $m^2=3,4$. The sign follows from the short-distance flux $\lim_{\ell\to0}4\pi\sinh^2\ell\,\partial_\ell F_{m^2}=1$.
 
 The resolvent identity gives $\mathscr D_4\mathscr D_3=\mathscr D_4-\mathscr D_3$. Put
 
@@ -58,8 +57,7 @@ G^E_{\mu\nu;\rho'\sigma'}(x,x') &=2H_{\mu\nu;\rho'\sigma'}(x,x')\\
 &\quad+\left[\nabla_\mu\nabla_\nu F_{43}(\ell) +g^E_{\mu\nu}F_3(\ell)\right]g^E_{\rho'\sigma'}.
 \end{align}$$
 
-Here all four indices are covariant; raise the primed pair before contracting with $S_{\rho'\sigma'}$. As a normalization check,
-$g_E^{\mu\nu}G^E_{\mu\nu;\rho'\sigma'}=4F_4g^E_{\rho'\sigma'}$.
+Here all four indices are covariant; raise the primed pair before contracting with $S_{\rho'\sigma'}$. As a normalization check, $g_E^{\mu\nu}G^E_{\mu\nu;\rho'\sigma'}=4F_4g^E_{\rho'\sigma'}$.
 
 ## Explicit Spin-2 Kernel
 
@@ -122,8 +120,7 @@ $$\begin{align}
 K_{\alpha,2;\hat\mu\hat\nu,ij} &=\frac{\alpha+1}{2\pi(\alpha-1)}a^\alpha J_{\hat\mu k}J_{\hat\nu l} \left(\frac{\delta_{ki}\delta_{lj}+\delta_{kj}\delta_{li}}2 -\frac{\delta_{kl}\delta_{ij}}2\right).
 \end{align}$$
 
-The coordinate-covariant output has an additional factor $z^{-2}$. Direct xCoba checks give zero trace and divergence and the eigenvalue
-$\Box_EK_{\alpha,2}=[\alpha(\alpha-2)-2]K_{\alpha,2}$.
+The coordinate-covariant output has an additional factor $z^{-2}$. Direct xCoba checks give zero trace and divergence and the eigenvalue $\Box_EK_{\alpha,2}=[\alpha(\alpha-2)-2]K_{\alpha,2}$.
 
 The product of the two normalization constants cancels the $\nu^2$ factor, giving $(\nu^2+4)/(4\pi^3)$. The spectral integral is elementary as a distribution:
 
