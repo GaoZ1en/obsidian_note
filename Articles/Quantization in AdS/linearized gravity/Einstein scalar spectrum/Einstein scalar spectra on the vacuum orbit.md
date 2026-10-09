@@ -1,4 +1,3 @@
-
 ## 1. The Action, Boundary Conditions, and Perturbative Counting
 
 Use signature $(-,+,+)$ and exactly the action of [perturbation](perturbation.md):

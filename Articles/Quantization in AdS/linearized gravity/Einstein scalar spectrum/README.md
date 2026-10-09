@@ -2,6 +2,8 @@
 
 ## Current OFPT result
 
+For a direct evaluation of the connected operator in `Untitled.md`, see [Direct K4 two-particle energy shifts.md](Direct%20K4%20two-particle%20energy%20shifts.md). It reduces the original maximal-slice circular matrix elements to finite rational sums for arbitrary physical $\Delta>1$, proves the cancellation of the remaining nonpolynomial moment, and uses free representation coefficients to recover every primary shift. Its separate angular checks retain the boundary-graviton anticommutator; no equivalence to the covariant response calculation supplies the matrix elements.
+
 The retained-boundary-graviton calculation is complete for the order-$G$ scalar branches in the explicit canonical Weyl and local renormalization prescription of [Unreduced OFPT calculation.md](Unreduced%20OFPT%20calculation.md), §§75–77. At fixed physical mass and standard fast falloff $\Delta>1$, every one-particle shift is zero; equation (76.7) gives every identical two-scalar primary coefficient. Section 76 excludes mixing with the rest of the full degenerate Fock block, and section 77 records the final independent comparisons and adversarial audit.
 
 The derivation uses the subsequently authorized action-derived symmetry reduction. It does not claim a Casimir-free all-index summation or a prescription-independent quantization of the classical action. The note's opening gives the reading order. Its [scripts README](scripts/unreduced_ofpt_2026_09_29/README.md) identifies the preserved exact, symbolic and numerical checks.
