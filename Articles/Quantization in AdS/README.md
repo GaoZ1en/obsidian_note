@@ -19,7 +19,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `linearized gravity/` | AdS3 linearized gravity: modes, asymptotic Killing vectors, CPS formalism, charges, and massive-gravity extensions |
 | `perturbation/` | Perturbative CPS, pAQFT, and old-fashioned perturbation theory, including flat-space scalar checks and global-AdS spectral tests |
 | `preliminary analysis/` | Foundational calculations: constrained systems, path integrals, Dirac formalism |
-| `scalar/` | Free scalar quantization in global AdS: fast/slow falloffs, boundary-complete Noether charges, boundary-condition classification, BF stability, and unitarity |
+| `scalar/` | Free scalar quantization in global AdS: fast/slow falloffs, boundary-complete Noether charges, boundary-condition classification, BF stability, and unitarity; [slow-representative Galerkin comparison and convergence proof](<scalar/Slow representatives and Galerkin convergence.md>) |
 | `thermodynamics of scalar in ads/` | Scalar field thermodynamics: heat kernel method in various spacetimes |
 
 ## Reading Order

@@ -1,0 +1,760 @@
+{
+  "main": [
+    {
+      "representative": "polynomial",
+      "N": 4,
+      "frequencies": [
+        0.600253825081483,
+        2.603471312649652,
+        4.621229295705535,
+        6.687421313463277
+      ],
+      "maxError": 0.08742131346327696,
+      "gramSchur": 0.02981246441025641
+    },
+    {
+      "representative": "polynomial",
+      "N": 8,
+      "frequencies": [
+        0.6000278797888996,
+        2.6003968031773645,
+        4.602193982122552,
+        6.607090111921682
+      ],
+      "maxError": 0.007090111921682129,
+      "gramSchur": 0.013507739731381956
+    },
+    {
+      "representative": "polynomial",
+      "N": 16,
+      "frequencies": [
+        0.6000030999691294,
+        2.6000445968805552,
+        4.600240992182329,
+        6.600747013899644
+      ],
+      "maxError": 0.0007470138996441742,
+      "gramSchur": 0.005983964039288629
+    },
+    {
+      "representative": "polynomial",
+      "N": 24,
+      "frequencies": [
+        0.6000008553413638,
+        2.600012330455968,
+        4.600066351097281,
+        6.600204173416177
+      ],
+      "maxError": 0.00020417341617745777,
+      "gramSchur": 0.0036988267362531887
+    },
+    {
+      "representative": "polynomial",
+      "N": 32,
+      "frequencies": [
+        0.60000034252753,
+        2.6000049414149577,
+        4.600026550859563,
+        6.600081493895746
+      ],
+      "maxError": 8.149389574567571e-05,
+      "gramSchur": 0.002626022492997219
+    },
+    {
+      "representative": "polynomial",
+      "N": 64,
+      "frequencies": [
+        0.600000037603018,
+        2.600000542858032,
+        4.600002912678597,
+        6.600008918131093
+      ],
+      "maxError": 8.918131092891396e-06,
+      "gramSchur": 0.0011475300748887665
+    },
+    {
+      "representative": "polynomial",
+      "N": 128,
+      "frequencies": [
+        0.6000000041111883,
+        2.6000000593620043,
+        4.600000318389601,
+        6.600000974255798
+      ],
+      "maxError": 9.742557982319118e-07,
+      "gramSchur": 0.0005004500906087248
+    },
+    {
+      "representative": "rational",
+      "N": 4,
+      "frequencies": [
+        0.6003039754740493,
+        2.6015562334743434,
+        4.61722749431609,
+        6.681368192104732
+      ],
+      "maxError": 0.08136819210473185,
+      "gramSchur": 0.0306498379500343
+    },
+    {
+      "representative": "rational",
+      "N": 8,
+      "frequencies": [
+        0.6000287920794167,
+        2.6001843732945003,
+        4.601751774004498,
+        6.606401602709927
+      ],
+      "maxError": 0.006401602709927017,
+      "gramSchur": 0.013600062328266008
+    },
+    {
+      "representative": "rational",
+      "N": 16,
+      "frequencies": [
+        0.6000031238180906,
+        2.6000208407624474,
+        4.600191568697686,
+        6.600669926768232
+      ],
+      "maxError": 0.00066992676823221,
+      "gramSchur": 0.005994278326647708
+    },
+    {
+      "representative": "rational",
+      "N": 24,
+      "frequencies": [
+        0.6000008582485281,
+        2.600005767904044,
+        4.600052699606569,
+        6.600182877911832
+      ],
+      "maxError": 0.0001828779118320529,
+      "gramSchur": 0.003701675500948501
+    },
+    {
+      "representative": "rational",
+      "N": 32,
+      "frequencies": [
+        0.6000003431819199,
+        2.6000023122742077,
+        4.600021081927643,
+        6.600072962458467
+      ],
+      "maxError": 7.296245846694592e-05,
+      "gramSchur": 0.002627163712253927
+    },
+    {
+      "representative": "rational",
+      "N": 64,
+      "frequencies": [
+        0.6000000376210081,
+        2.6000002541076936,
+        4.600002312068811,
+        6.600007981179107
+      ],
+      "maxError": 7.981179106361216e-06,
+      "gramSchur": 0.0011476554033298951
+    },
+    {
+      "representative": "rational",
+      "N": 128,
+      "frequencies": [
+        0.600000004111681,
+        2.6000000277892,
+        4.6000002527179165,
+        6.600000871807909
+      ],
+      "maxError": 8.718079088925053e-07,
+      "gramSchur": 0.0005004637941593094
+    },
+    {
+      "representative": "exponential",
+      "N": 4,
+      "frequencies": [
+        0.6019618257023152,
+        2.6052610105352056,
+        4.624052774430038,
+        6.691360349584989
+      ],
+      "maxError": 0.09136034958498877,
+      "gramSchur": 0.029303553883381576
+    },
+    {
+      "representative": "exponential",
+      "N": 8,
+      "frequencies": [
+        0.6004203636883806,
+        2.6008403617984217,
+        4.602912664957025,
+        6.608135499817074
+      ],
+      "maxError": 0.008135499817074092,
+      "gramSchur": 0.013376577662977916
+    },
+    {
+      "representative": "exponential",
+      "N": 16,
+      "frequencies": [
+        0.600048857111724,
+        2.6000962313565936,
+        4.600324665277873,
+        6.600868983966494
+      ],
+      "maxError": 0.0008689839664938262,
+      "gramSchur": 0.005968703174781081
+    },
+    {
+      "representative": "exponential",
+      "N": 24,
+      "frequencies": [
+        0.6000135934785797,
+        2.6000267014653913,
+        4.600089638873125,
+        6.600238125895066
+      ],
+      "maxError": 0.0002381258950660083,
+      "gramSchur": 0.0036945796820187504
+    },
+    {
+      "representative": "exponential",
+      "N": 32,
+      "frequencies": [
+        0.6000054596231935,
+        2.6000107140252404,
+        4.600035905110157,
+        6.600095132466782
+      ],
+      "maxError": 9.513246678235694e-05,
+      "gramSchur": 0.0026243165706647566
+    },
+    {
+      "representative": "exponential",
+      "N": 64,
+      "frequencies": [
+        0.6000006010732252,
+        2.6000011784664196,
+        4.600003942640161,
+        6.600010419853521
+      ],
+      "maxError": 1.0419853520644827e-05,
+      "gramSchur": 0.0011473422454693057
+    },
+    {
+      "representative": "exponential",
+      "N": 128,
+      "frequencies": [
+        0.6000000657632467,
+        2.6000001289059034,
+        4.600000431080473,
+        6.60000113856353
+      ],
+      "maxError": 1.1385635305475353e-06,
+      "gramSchur": 0.0005004295397595098
+    },
+    {
+      "representative": "fractional",
+      "N": 4,
+      "frequencies": [
+        0.6043549672215442,
+        2.607734730464539,
+        4.6279295525473545,
+        6.696740702591646
+      ],
+      "maxError": 0.09674070259164669,
+      "gramSchur": 0.028605571221152298
+    },
+    {
+      "representative": "fractional",
+      "N": 8,
+      "frequencies": [
+        0.6009686162074925,
+        2.6012379699450188,
+        4.603454757805089,
+        6.608876861546881
+      ],
+      "maxError": 0.008876861546881812,
+      "gramSchur": 0.01328974463593854
+    },
+    {
+      "representative": "fractional",
+      "N": 16,
+      "frequencies": [
+        0.6002147874316218,
+        2.6002057567521213,
+        4.6004664273197,
+        6.601059145169904
+      ],
+      "maxError": 0.0010591451699040702,
+      "gramSchur": 0.005947097579480793
+    },
+    {
+      "representative": "fractional",
+      "N": 24,
+      "frequencies": [
+        0.6000886871932861,
+        2.600073444402203,
+        4.600147930468841,
+        6.600315057981971
+      ],
+      "maxError": 0.0003150579819715219,
+      "gramSchur": 0.0036860262629608465
+    },
+    {
+      "representative": "fractional",
+      "N": 32,
+      "frequencies": [
+        0.6000472855178648,
+        2.600035687528339,
+        4.600066166062154,
+        6.600134542809786
+      ],
+      "maxError": 0.0001345428097859709,
+      "gramSchur": 0.0026200129514511376
+    },
+    {
+      "representative": "fractional",
+      "N": 64,
+      "frequencies": [
+        0.6000103560994303,
+        2.60000646677298,
+        4.600009885250417,
+        6.60001787225094
+      ],
+      "maxError": 1.7872250939767664e-05,
+      "gramSchur": 0.0011465712114281945
+    },
+    {
+      "representative": "fractional",
+      "N": 128,
+      "frequencies": [
+        0.6000022613055515,
+        2.600001219951976,
+        4.600001562284315,
+        6.600002494061036
+      ],
+      "maxError": 2.4940610355336957e-06,
+      "gramSchur": 0.0005002990497227269
+    }
+  ],
+  "precisionChecks": [
+    {
+      "representative": "polynomial",
+      "maxLowFrequencyDifference": 0.0
+    },
+    {
+      "representative": "rational",
+      "maxLowFrequencyDifference": 7.280440425e-51
+    },
+    {
+      "representative": "exponential",
+      "maxLowFrequencyDifference": 0.0
+    },
+    {
+      "representative": "fractional",
+      "maxLowFrequencyDifference": 2e-64
+    }
+  ],
+  "invarianceChecks": [
+    {
+      "representative": "polynomial",
+      "maxAllFrequencyDifference": 0.0,
+      "maxLowRelativeResidual": 0.0
+    },
+    {
+      "representative": "rational",
+      "maxAllFrequencyDifference": 0.0,
+      "maxLowRelativeResidual": 0.0
+    },
+    {
+      "representative": "exponential",
+      "maxAllFrequencyDifference": 1e-65,
+      "maxLowRelativeResidual": 0.0
+    },
+    {
+      "representative": "fractional",
+      "maxAllFrequencyDifference": 0.0,
+      "maxLowRelativeResidual": 0.0
+    }
+  ],
+  "quadratureChecks": [
+    {
+      "representative": "polynomial",
+      "ell": 0,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "polynomial",
+      "ell": 3,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "rational",
+      "ell": 0,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "rational",
+      "ell": 3,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "exponential",
+      "ell": 0,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "exponential",
+      "ell": 3,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "fractional",
+      "ell": 0,
+      "maxDiagonalDifference": 0.0
+    },
+    {
+      "representative": "fractional",
+      "ell": 3,
+      "maxDiagonalDifference": 0.0
+    }
+  ],
+  "sectors": [
+    {
+      "representative": "polynomial",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.0003293610943302154
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 64,
+      "maxError": 5.588471799661783e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.0003144627536885215
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 64,
+      "maxError": 5.3347991317178745e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.0003523053524993603
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 64,
+      "maxError": 5.9798098352781606e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.0003425753466100083
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.3,
+      "ell": 1,
+      "N": 64,
+      "maxError": 5.959888669744229e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.0004959283576361261
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 64,
+      "maxError": 8.70673030629003e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.0004805281857916745
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 64,
+      "maxError": 8.435121542327162e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.0005194361435676351
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 64,
+      "maxError": 9.12198970663482e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.0005097957106370835
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.3,
+      "ell": 3,
+      "N": 64,
+      "maxError": 9.104746400701475e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.00011293214471092774
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.2641813775850818e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.0001035797254084597
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.1590350542659184e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.000127673962861095
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.4303315617192095e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 32,
+      "maxError": 0.00016965720467837815
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.6,
+      "ell": 1,
+      "N": 64,
+      "maxError": 2.2299389064744097e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.00018014046673796023
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 64,
+      "maxError": 2.1040326317560187e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.00016962769802867977
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 64,
+      "maxError": 1.980541177837567e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.0001964558567043986
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 64,
+      "maxError": 2.2961295512729165e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 32,
+      "maxError": 0.00024252763787022702
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.6,
+      "ell": 3,
+      "N": 64,
+      "maxError": 3.191534094935625e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 32,
+      "maxError": 1.7838077777613588e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.5105362069313996e-06
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 32,
+      "maxError": 1.5973318514758203e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.3518963497762251e-06
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 32,
+      "maxError": 2.0817446828184164e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 64,
+      "maxError": 1.7647613424248814e-06
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 32,
+      "maxError": 4.012974338048255e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.8,
+      "ell": 1,
+      "N": 64,
+      "maxError": 4.4661825993211074e-06
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 32,
+      "maxError": 2.9547440810010662e-05
+    },
+    {
+      "representative": "polynomial",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 64,
+      "maxError": 2.6251035033583646e-06
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 32,
+      "maxError": 2.7336450348418775e-05
+    },
+    {
+      "representative": "rational",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 64,
+      "maxError": 2.427475231748232e-06
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 32,
+      "maxError": 3.301340731018833e-05
+    },
+    {
+      "representative": "exponential",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 64,
+      "maxError": 2.9357724757097447e-06
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 32,
+      "maxError": 5.4645824410615556e-05
+    },
+    {
+      "representative": "fractional",
+      "Delta": 0.8,
+      "ell": 3,
+      "N": 64,
+      "maxError": 6.025561443628455e-06
+    }
+  ]
+}
