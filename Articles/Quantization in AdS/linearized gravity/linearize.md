@@ -4,9 +4,9 @@ date: 2026-06-15
 summary: "Organizes the perturbative expansion of the Einstein-Hilbert action around AdS3, the linearized equation of motion, the gauge-fixed quadratic action, the symplectic form, and the large-radius boundary action."
 ---
 
-# Linearized Einstein gravity around AdS3
+# Linearized Einstein Gravity Around AdS3
 
-## Background conventions
+## Background Conventions
 
 $$\begin{align}
 R^{(0)}_{\mu \nu \rho \sigma} & =g^{(0)}_{\mu \sigma}g^{(0)}_{\nu \rho}-g^{(0)}_{\mu \rho}g^{(0)}_{\nu \sigma} \\
@@ -20,9 +20,9 @@ $$\begin{align}
 g_{\mu \nu} & =g^{(0)}_{\mu \nu}+h_{\mu \nu}
 \end{align}$$
 
-## Bulk perturbative expansion
+## Bulk Perturbative Expansion
 
-### Inverse metric and volume element
+### Inverse Metric and Volume Element
 
 The inverse metric is obtained iteratively from $g^{\mu\nu}g_{\nu\rho}=\delta^\mu_\rho$:
 
@@ -49,7 +49,7 @@ g & =g^{(0)}\left( 1+h+ \frac{1}{2}h^{2}-\frac{1}{2}h_{\mu \nu}h^{\mu \nu}+\math
 \sqrt{ -g } & =\sqrt{ -g^{(0)} }\left( 1+\frac{h}{2}-\frac{1}{4}h_{\mu \nu}h^{\mu \nu}+\frac{1}{8}h^{2}+\mathcal{O}(h^{3}) \right)
 \end{align}$$
 
-### Connection and Ricci tensor
+### Connection and Ricci Tensor
 
 The full connection is
 
@@ -90,7 +90,7 @@ $$\begin{align}
  & -\frac{1}{2}h^{\rho \sigma}\nabla ^{(0)}_{\nu}\nabla ^{(0)}_{\sigma}h_{\mu \rho}+\frac{1}{2}h^{\rho \sigma}\nabla ^{(0)}_{\mu}\nabla ^{(0)}_{\nu}h_{\rho \sigma}+\mathcal{O}(h^{3})
 \end{align}$$
 
-### Scalar curvature
+### Scalar Curvature
 
 Contracting the algebraic curvature terms gives
 
@@ -114,7 +114,7 @@ $$\begin{align}
  & -\frac{1}{2}\nabla ^{(0)}_{\nu}h_{\mu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}
 \end{align}$$
 
-## Linearized Einstein equation
+## Linearized Einstein Equation
 
 The linearized equation follows from expanding the Einstein tensor with cosmological term:
 
@@ -155,7 +155,7 @@ $$\begin{align}
 \implies -h_{\mu \nu}+g^{(0)}_{\mu \nu}h-\frac{1}{2}\nabla ^{(0)2}h_{\mu \nu}+\nabla ^{(0)}_{(\mu}(\nabla ^{(0)}_{\rho}h_{\nu)}^{~\rho}-\frac{1}{2}\nabla ^{(0)}_{\nu)}h) & =0
 \end{align}$$
 
-## TT gauge and gauge-fixed action
+## TT Gauge and Gauge-Fixed Action
 
 Impose the TT gauge condition
 
@@ -176,7 +176,7 @@ $$\begin{align}
 S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left( -4+2h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right)
 \end{align}$$
 
-## Symplectic potential and symplectic form
+## Symplectic Potential and Symplectic Form
 
 Varying the gauge-fixed action gives the equation of motion and the boundary term on the initial and final Cauchy surfaces:
 
@@ -202,7 +202,7 @@ $$\begin{align}
 n_{\mu} & =\left(0,\frac{1}{\sqrt{ 1+r^{2} }},0\right)
 \end{align}$$
 
-## Cutoff boundary action
+## Cutoff Boundary Action
 
 Consider the GHY term plus the standard AdS$_3$ counterterm on the large-radius cutoff surface $\Gamma$:
 
@@ -294,7 +294,7 @@ S_{\text{bdy}} & =\frac{1}{8\pi G}\int _{\Gamma} \mathrm{d}^{2}x\sqrt{ -\gamma }
 
 This boundary action does not change the presymplectic current in the interior of the Cauchy slice. Its variation does, however, produce a corner one-form on $\partial\Sigma$, so it contributes to the renormalized symplectic potential and to the Noether charge.
 
-### Corner contribution to the Noether charge
+### Corner Contribution to the Noether Charge
 
 Write the boundary Lagrangian two-form as
 

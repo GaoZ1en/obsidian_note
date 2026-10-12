@@ -1,4 +1,4 @@
-the metric has the following asymptotic behavior
+The metric has the following asymptotic behavior
 
 $$
 \tag{1.1}

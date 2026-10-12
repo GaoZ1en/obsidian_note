@@ -1,4 +1,4 @@
-we have solved out the solutions of eom
+We have solved out the solutions of eom
 
 $$\begin{align}
 h_{L,n}^{\mu \nu} & =\sqrt{ \frac{6}{n!(n+3)!} }\mathcal{L}_{\xi _{-1}}^{n}h_{L,0}^{\mu \nu} \\
@@ -37,7 +37,7 @@ X_{-(\bar{n}+1)} & =\int \mathrm{d}^{3}x\sqrt{ -g^{(0)} }\sqrt{ -\bar{n} }\left(
 X_{0} & =0
 \end{align}$$
 
-the corresponding Noether charges are denoted as $\displaystyle{H_{n},H_{\bar{n}}, n,\bar{n}\in \mathbb{Z}}$. the Poisson brackets between the Noether charges are given by
+the corresponding Noether charges are denoted as $\displaystyle{H_{n},H_{\bar{n}}, n,\bar{n}\in \mathbb{Z}}$. The Poisson brackets between the Noether charges are given by
 
 $$\begin{align}
 \left\{H_{n},H_{m}\right\} & =X_{n}\cdot X_{m}\cdot \omega

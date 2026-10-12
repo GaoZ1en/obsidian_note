@@ -1,4 +1,4 @@
-consider the Lagrangian
+Consider the Lagrangian
 
 $$
 \tag{1.1}

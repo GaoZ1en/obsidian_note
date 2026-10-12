@@ -1,4 +1,4 @@
-in the metric
+In the metric
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-(1+r^{2})\mathrm{d}t^{2}+\frac{\mathrm{d}r^{2}}{1+r^{2}}+r^{2}\mathrm{d}\phi ^{2}
@@ -15,7 +15,7 @@ $$\begin{align}
 \bar{\xi}_{-1} & =\frac{1}{2}e^{-i(t+\phi)}\left( r(1+r^{2})^{-1/2} \frac{\partial}{\partial t}+i(1+r^{2})^{1/2} \frac{\partial}{\partial r}+r^{-1}(1+r^{2})^{1/2} \frac{\partial}{\partial \phi} \right)
 \end{align}$$
 
-and infinitely many asymptotic Killing vectors. known that
+and infinitely many asymptotic Killing vectors. Known that
 
 $$\begin{align}
 \zeta _{L}^{t} & =\frac{i\sqrt{ 3G }e^{-2it+2i\phi}r^{4}}{3(1+r^{2})^{2}} \\
@@ -47,7 +47,7 @@ $$\begin{align}
 [\bar{\xi} _{n},\bar{\xi} _{m}] & =-i(n-m)\bar{\xi}_{n+m}+\mathcal{O}(r^{-4})
 \end{align}$$
 
-we denote the corresponding Noether charges as $\displaystyle{H_{n}}$ for $\displaystyle{\xi _{n}}$ and $\displaystyle{\bar{H}_{n}}$ for $\displaystyle{\bar{\xi}_{n}}$, respectively. the Poisson bracket between the Noether charges is given by
+we denote the corresponding Noether charges as $\displaystyle{H_{n}}$ for $\displaystyle{\xi _{n}}$ and $\displaystyle{\bar{H}_{n}}$ for $\displaystyle{\bar{\xi}_{n}}$, respectively. The Poisson bracket between the Noether charges is given by
 
 $$\begin{align}
 \left\{H_{\xi},H_{\zeta}\right\} & \approx X_{\zeta}\cdot \delta H_{\xi}

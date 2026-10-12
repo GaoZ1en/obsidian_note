@@ -1,4 +1,4 @@
-the gauge fixed action is given by
+The gauge fixed action is given by
 
 $$\begin{align}
 S & =\frac{1}{16\pi G}\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\left(2h_{\mu \nu}h^{\mu \nu}+h^{\mu \nu}\nabla ^{(0)2}h_{\mu \nu}-\frac{1}{2}\nabla ^{(0)}_{\mu}h_{\nu \rho}\nabla ^{(0)\rho}h^{\mu \nu}+\frac{3}{4}\nabla ^{(0)}_{\rho}h_{\mu \nu}\nabla ^{(0)\rho}h^{\mu \nu}\right)
@@ -40,7 +40,7 @@ however it does not give the expected linear $\displaystyle{h}$ term appeared in
 
 ---
 
-we now take analysis of the action which does not fix the gauge
+We now take analysis of the action which does not fix the gauge
 
 $$\begin{align}
 S & =\int _{M}\mathrm{d}^{3}x\sqrt{ -g^{(0)} }\mathcal{L} \\
@@ -75,13 +75,13 @@ $$\begin{align}
 Q_{\xi}^{\mu \nu}[g] & =-\frac{1}{16\pi G}\frac{\sqrt{-g}}{\sqrt{-g^{(0)}}}\left( \nabla _{g}^{\mu}\xi ^{\nu}-\nabla _{g}^{\nu}\xi ^{\mu} \right).
 \end{align}$$
 
-the factor $\displaystyle{\sqrt{-g}/\sqrt{-g^{(0)}}}$ is important because all currents above are written with the background measure. Since the constant term in the action has been dropped, the relevant potential is
+The factor $\displaystyle{\sqrt{-g}/\sqrt{-g^{(0)}}}$ is important because all currents above are written with the background measure. Since the constant term in the action has been dropped, the relevant potential is
 
 $$\begin{align}
 Q_{\xi}^{\mu \nu} & =Q_{\xi}^{(1)\mu \nu}+Q_{\xi}^{(2)\mu \nu}.
 \end{align}$$
 
-define
+Define
 
 $$\begin{align}
 A_{\xi}^{(0)\mu \nu} & =\nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu} \\
@@ -91,14 +91,14 @@ A_{\xi}^{(2)\mu \nu} & =h^{\mu}{}_{\rho}h^{\rho \sigma}\nabla ^{(0)}_{\sigma}\xi
 D^{(2)} & =\frac{1}{8}h^{2}-\frac{1}{4}h_{\rho \sigma}h^{\rho \sigma}.
 \end{align}$$
 
-then
+Then
 
 $$\begin{align}
 Q_{\xi}^{(1)\mu \nu} & =-\frac{1}{16\pi G}\left( A_{\xi}^{(1)\mu \nu}+\frac{1}{2}hA_{\xi}^{(0)\mu \nu} \right) \\
 Q_{\xi}^{(2)\mu \nu} & =-\frac{1}{16\pi G}\left( A_{\xi}^{(2)\mu \nu}+\frac{1}{2}hA_{\xi}^{(1)\mu \nu}+D^{(2)}A_{\xi}^{(0)\mu \nu} \right).
 \end{align}$$
 
-then the variation of the Noether charge gives
+Then the variation of the Noether charge gives
 
 $$\begin{align}
 \delta H_{\xi} & =\int _{\partial \Sigma}\mathrm{d}x\sqrt{ h^{(0)} }\tau _{\mu}n_{\nu}k^{\nu \mu}_{\xi}
@@ -111,7 +111,7 @@ k_{\xi}^{\mu \nu} & =\delta Q_{\xi}^{\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}(\delta 
  & =\delta Q_{\xi}^{(1)\mu \nu}+\delta Q_{\xi}^{(2)\mu \nu}-2\xi ^{[\mu}\theta ^{\nu]}(\delta h;h).
 \end{align}$$
 
-the two variations of the potential are
+The two variations of the potential are
 
 $$\begin{align}
 \delta Q_{\xi}^{(1)\mu \nu} & =-\frac{1}{16\pi G}\left( \delta A_{\xi}^{(1)\mu \nu}+\frac{1}{2}\delta hA_{\xi}^{(0)\mu \nu} \right) \\
@@ -128,7 +128,7 @@ $$\begin{align}
 \delta D^{(2)} & =\frac{1}{4}h\delta h-\frac{1}{2}h_{\rho \sigma}\delta h^{\rho \sigma}.
 \end{align}$$
 
-for the Virasoro computation it is more convenient to write the leading part of the surface charge variation for a covariant perturbation $\displaystyle{\delta h_{\mu \nu}}$:
+For the Virasoro computation it is more convenient to write the leading part of the surface charge variation for a covariant perturbation $\displaystyle{\delta h_{\mu \nu}}$:
 
 $$\begin{align}
 k_{\xi}^{(0)\mu \nu}[\delta h] & =\frac{1}{16\pi G}\left[-\xi ^{\rho}\left( \nabla ^{(0)\mu}\delta h^{\nu}{}_{\rho}-\nabla ^{(0)\nu}\delta h^{\mu}{}_{\rho} \right)-\frac{1}{2}\delta h\left( \nabla ^{(0)\mu}\xi ^{\nu}-\nabla ^{(0)\nu}\xi ^{\mu} \right) \right. \\
@@ -136,6 +136,6 @@ k_{\xi}^{(0)\mu \nu}[\delta h] & =\frac{1}{16\pi G}\left[-\xi ^{\rho}\left( \nab
 & \left. \qquad-\delta h^{\nu \rho}\nabla ^{(0)}_{\rho}\xi ^{\mu}+\delta h^{\mu \rho}\nabla ^{(0)}_{\rho}\xi ^{\nu}\right].
 \end{align}$$
 
-and $\displaystyle{k_{\xi}^{(1)}}$ does not contribute to the algebra.
+And $\displaystyle{k_{\xi}^{(1)}}$ does not contribute to the algebra.
 
-see [[Articles/Quantization in AdS/linearized gravity/reconsider the Noether charge|reconsider the Noether charge]] for more detailed discussion.
+See [[Articles/Quantization in AdS/linearized gravity/reconsider the Noether charge|reconsider the Noether charge]] for more detailed discussion.
