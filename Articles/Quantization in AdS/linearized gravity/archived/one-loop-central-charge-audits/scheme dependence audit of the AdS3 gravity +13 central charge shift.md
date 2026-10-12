@@ -1,7 +1,7 @@
 # Scheme-dependence audit of the AdS$_3$ gravity $+13$ central-charge shift
 
 > [!archive]
-> Long-form source and counterterm audit. Its active synthesis is [[Articles/Quantization in AdS/linearized gravity/one-loop central charge normalization and scheme dependence|one-loop central charge normalization and scheme dependence]].
+> Long-form source and counterterm audit. The former active synthesis, `one-loop central charge normalization and scheme dependence.md`, has been removed; this audit remains as a historical reference.
 
 ## 1. Binary verdict
 

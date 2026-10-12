@@ -1,6 +1,6 @@
 # Linearized Gravity in AdS3
 
-This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brown--Henneaux vacuum-orbit/CPS project, an external one-loop normalization note, the article draft, and a separate massive-gravity track. Long one-loop audits and conditional verification programs are kept under `archived/` so they remain available without controlling the active exposition.
+This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brown--Henneaux vacuum-orbit/CPS project, the article draft, and a separate massive-gravity track. Long one-loop audits and conditional verification programs are kept under `archived/` so they remain available without controlling the active exposition.
 
 ## Active Core Notes
 
@@ -34,18 +34,11 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 | File | Description |
 |---|---|
 | `all order perturbation result.md` | Main note: vacuum-mode continuation, exact symplectic form and Noether charges from finite diffeomorphism covariance, and algebraic vacuum quantization at fixed central charge. |
-| `Moser coordinate map through fourth order.md` | Time-ordered radial Moser map through fourth order, with noncommutative and radial consistency checks. |
 | `scripts/vacuum_orbit_review/README.md` | Reproduction commands and scope of the classical, Hill, gauge, Moser, and finite-level quantum checks. |
 | `scripts/finite_diffeomorphism_green_kernel.wl` | Exact Green kernel for the exceptional orbit at finite circle diffeomorphism. |
 | `scripts/hill_monodromy_low_mode_reconstruction.wl` | Implicit reconstruction of $H_{-1,0,1}$ from exceptional-orbit Hill monodromy. |
 | `scripts/higher_charge_coordinate_domain_scan.wl` | Numerical transversality and coordinate-domain diagnostics for the higher-charge chart. |
 | `scripts/nonlinear_charge_symplectic_benchmark.wl` | Nonlinear comparison of the direct orbit form, inverse charge Poisson matrix, and Neumann expansion. |
-
-## External One-Loop Normalization and Scheme Dependence
-
-| File | Description |
-|---|---|
-| `one-loop central charge normalization and scheme dependence.md` | GYM descendant determinant, CJ orbit/zeta $+13$ representative, finite Einstein-coupling redefinition, and the scheme-invariant meaning of $c_{\mathrm{phys}}$. |
 
 ## Article Draft
 
@@ -77,4 +70,4 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 | `archived/one-loop-central-charge-audits/` | Five long CPS, measure, canonical-Wick, and scheme-dependence audit reports. |
 | `archived/verification-scripts/` | Conditional Virasoro/normal-symbol/determinant programs and the Python/Sage checks used by the one-loop audits. |
 
-The archive preserves derivations, failed branches, regulator diagnostics, and finite-cutoff evidence. The vacuum-sector project is organized around `all order perturbation result.md`. Moser calculations, reconstruction scripts, and the archived extended treatment supply supporting material; the external one-loop normalization note remains a separate reference.
+The archive preserves derivations, failed branches, regulator diagnostics, and finite-cutoff evidence. The vacuum-sector project is organized around `all order perturbation result.md`. Moser calculations, reconstruction scripts, and the archived extended treatment supply supporting material; the one-loop normalization audits remain separate references in the archive.
