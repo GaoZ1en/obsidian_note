@@ -1,0 +1,201 @@
+L=4: enumerate basis
+L=4: SDE, 1 seeds, 4 workers, 1 basis loops
+L=4: SDE complete, rank=0, All=0, stage=0.000s
+L=4: TrE, 1 loops, 1 batches
+L=4: TrE 1/1, rank=0, elapsed=0.0s, operations=0, max_terms=0
+L=4: loops=1 SDE=0 TrE=0 All=0 (0.000s)
+L=4: checkpoint 0.004s
+L=6: enumerate basis
+L=6: SDE, 0 seeds, 4 workers, 1 basis loops
+L=6: SDE complete, rank=0, All=0, stage=0.000s
+L=6: TrE, 1 loops, 1 batches
+L=6: TrE 1/1, rank=0, elapsed=0.0s, operations=0, max_terms=0
+L=6: loops=2 SDE=0 TrE=0 All=0 (0.000s)
+L=6: checkpoint 0.005s
+L=8: enumerate basis
+L=8: SDE, 4 seeds, 4 workers, 7 basis loops
+L=8: SDE complete, rank=2, All=2, stage=0.000s
+L=8: TrE, 7 loops, 1 batches
+L=8: TrE 1/1, rank=0, elapsed=0.0s, operations=0, max_terms=0
+L=8: loops=9 SDE=2 TrE=0 All=2 (0.000s)
+L=8: checkpoint 0.004s
+L=10: enumerate basis
+L=10: SDE, 18 seeds, 4 workers, 15 basis loops
+L=10: SDE complete, rank=7, All=7, stage=0.000s
+L=10: TrE, 15 loops, 1 batches
+L=10: TrE 1/1, rank=0, elapsed=0.0s, operations=0, max_terms=0
+L=10: loops=24 SDE=7 TrE=0 All=7 (0.000s)
+L=10: checkpoint 0.004s
+L=12: enumerate basis
+L=12: SDE, 136 seeds, 4 workers, 95 basis loops
+L=12: SDE complete, rank=48, All=48, stage=0.001s
+L=12: TrE, 95 loops, 1 batches
+L=12: TrE 1/1, rank=6, elapsed=0.0s, operations=4, max_terms=4
+L=12: loops=119 SDE=48 TrE=6 All=51 (0.002s)
+L=12: checkpoint 0.004s
+L=14: enumerate basis
+L=14: SDE, 756 seeds, 4 workers, 465 basis loops
+L=14: SDE complete, rank=279, All=282, stage=0.004s
+L=14: TrE, 465 loops, 1 batches
+L=14: TrE 1/1, rank=72, elapsed=0.0s, operations=76, max_terms=6
+L=14: loops=584 SDE=279 TrE=72 All=316 (0.009s)
+L=14: checkpoint 0.005s
+L=16: enumerate basis
+L=16: SDE, 5800 seeds, 4 workers, 3217 basis loops
+L=16: SDE complete, rank=2021, All=2057, stage=0.016s
+L=16: TrE, 3217 loops, 2 batches
+L=16: TrE 2/2, rank=762, elapsed=0.0s, operations=1337, max_terms=10
+L=16: loops=3801 SDE=2021 TrE=762 All=2383 (0.042s)
+L=16: checkpoint 0.005s
+L=18: enumerate basis
+L=18: SDE, 40369 seeds, 4 workers, 21762 basis loops
+L=18: SDE complete, rank=14665, All=15014, stage=0.068s
+L=18: TrE, 21762 loops, 11 batches
+L=18: TrE 11/11, rank=7088, elapsed=0.2s, operations=23176, max_terms=19
+L=18: loops=25563 SDE=14665 TrE=7088 All=17709 (0.210s)
+L=18: checkpoint 0.008s
+L=20: enumerate basis
+L=20: SDE, 316978 seeds, 4 workers, 159974 basis loops
+L=20: SDE complete, rank=112565, All=115460, stage=0.565s
+L=20: TrE, 159974 loops, 79 batches
+L=20: TrE 79/79, rank=64079, elapsed=1.7s, operations=291268, max_terms=28
+L=20: loops=185537 SDE=112565 TrE=64079 All=137775 (1.712s)
+L=20: checkpoint 0.042s
+L=22: enumerate basis
+L=22: SDE, 2446676 seeds, 4 workers, 1188877 basis loops
+L=22: SDE processed=2121217, rank=865525, elapsed=10.1s, operations=12915564, max_terms=610
+L=22: SDE complete, rank=874040, All=897946, stage=5.623s
+L=22: TrE, 1188877 loops, 581 batches
+L=22: TrE 447/581, rank=444492, elapsed=15.7s, operations=1813834, max_terms=32
+L=22: TrE 547/581, rank=545039, elapsed=21.1s, operations=2613132, max_terms=35
+L=22: TrE 577/581, rank=560171, elapsed=26.2s, operations=3183440, max_terms=39
+L=22: TrE 581/581, rank=561495, elapsed=27.3s, operations=3291378, max_terms=39
+L=22: loops=1374414 SDE=874040 TrE=561495 All=1077512 (28.086s)
+L=22: checkpoint 0.466s
+L=24: enumerate basis
+L=24: SDE, 19685474 seeds, 4 workers, 9053008 basis loops
+L=24: SDE processed=2115584, rank=2811825, elapsed=48.2s, operations=18487977, max_terms=610
+L=24: SDE processed=3457018, rank=3685976, elapsed=53.2s, operations=26197762, max_terms=610
+L=24: SDE processed=5099327, rank=4619810, elapsed=58.2s, operations=35181361, max_terms=610
+L=24: SDE processed=6031071, rank=5060704, elapsed=63.4s, operations=42504551, max_terms=2040
+L=24: SDE processed=6282949, rank=5163473, elapsed=68.6s, operations=47336273, max_terms=2778
+L=24: SDE processed=6416054, rank=5195762, elapsed=73.8s, operations=51335451, max_terms=3308
+L=24: SDE processed=6489778, rank=5206370, elapsed=79.1s, operations=54850033, max_terms=3747
+L=24: SDE processed=6549165, rank=5224635, elapsed=84.4s, operations=58039203, max_terms=3911
+L=24: SDE processed=7038566, rank=5406087, elapsed=89.6s, operations=63445597, max_terms=3911
+L=24: SDE processed=7134814, rank=5434188, elapsed=94.6s, operations=66637186, max_terms=3911
+L=24: SDE processed=7376453, rank=5510092, elapsed=99.9s, operations=70897416, max_terms=4488
+L=24: SDE processed=7405124, rank=5510126, elapsed=105.2s, operations=73616390, max_terms=4488
+L=24: SDE processed=7444033, rank=5512343, elapsed=110.7s, operations=76447974, max_terms=4488
+L=24: SDE processed=7566897, rank=5544418, elapsed=116.0s, operations=80065283, max_terms=4488
+L=24: SDE processed=7884309, rank=5656539, elapsed=121.0s, operations=84500331, max_terms=4488
+L=24: SDE processed=8132097, rank=5724502, elapsed=126.3s, operations=88977909, max_terms=4488
+L=24: SDE processed=8447455, rank=5823293, elapsed=131.4s, operations=93428149, max_terms=4488
+L=24: SDE processed=8736191, rank=5880849, elapsed=136.4s, operations=97296878, max_terms=4488
+L=24: SDE processed=9555306, rank=6109885, elapsed=141.4s, operations=103323345, max_terms=4488
+L=24: SDE processed=9618791, rank=6125580, elapsed=146.7s, operations=106284388, max_terms=4729
+L=24: SDE processed=9928002, rank=6211326, elapsed=151.8s, operations=110633525, max_terms=4729
+L=24: SDE processed=10034490, rank=6238714, elapsed=156.8s, operations=114005836, max_terms=5466
+L=24: SDE processed=10337561, rank=6325365, elapsed=162.2s, operations=118688044, max_terms=5466
+L=24: SDE processed=10429712, rank=6348733, elapsed=167.4s, operations=121438387, max_terms=7620
+L=24: SDE processed=10460430, rank=6353579, elapsed=173.2s, operations=124081362, max_terms=7620
+L=24: SDE processed=10618106, rank=6398257, elapsed=178.2s, operations=127523040, max_terms=7620
+L=24: SDE processed=10734833, rank=6426086, elapsed=183.3s, operations=130932761, max_terms=7620
+L=24: SDE processed=10814699, rank=6441806, elapsed=188.3s, operations=133843307, max_terms=7620
+L=24: SDE processed=10835178, rank=6441975, elapsed=193.6s, operations=136133891, max_terms=7620
+L=24: SDE processed=10865895, rank=6445881, elapsed=198.9s, operations=138692478, max_terms=7620
+L=24: SDE processed=10884325, rank=6449346, elapsed=204.5s, operations=140923043, max_terms=7620
+L=24: SDE processed=10923231, rank=6457278, elapsed=209.5s, operations=143453774, max_terms=7620
+L=24: SDE processed=11277492, rank=6539630, elapsed=214.6s, operations=148181179, max_terms=7620
+L=24: SDE processed=11392167, rank=6564152, elapsed=219.9s, operations=151359828, max_terms=7620
+L=24: SDE processed=11416742, rank=6564398, elapsed=225.9s, operations=153708519, max_terms=7620
+L=24: SDE processed=11433125, rank=6564489, elapsed=231.9s, operations=155865172, max_terms=7620
+L=24: SDE processed=11498652, rank=6577751, elapsed=237.0s, operations=158352951, max_terms=7620
+L=24: SDE processed=11543703, rank=6586776, elapsed=242.0s, operations=160651494, max_terms=7620
+L=24: SDE processed=11551895, rank=6587714, elapsed=249.4s, operations=162693027, max_terms=7620
+L=24: SDE processed=11570323, rank=6591244, elapsed=255.1s, operations=164626222, max_terms=7620
+L=24: SDE processed=11676804, rank=6606383, elapsed=260.7s, operations=167561425, max_terms=7620
+L=24: SDE processed=11711618, rank=6606383, elapsed=265.9s, operations=170152165, max_terms=7620
+L=24: SDE processed=11738240, rank=6606383, elapsed=271.8s, operations=172720600, max_terms=7620
+L=24: SDE processed=11799675, rank=6606401, elapsed=277.4s, operations=175930081, max_terms=7620
+L=24: SDE processed=11816058, rank=6606408, elapsed=282.6s, operations=177786204, max_terms=7620
+L=24: SDE processed=11828344, rank=6606411, elapsed=287.8s, operations=179855844, max_terms=7620
+L=24: SDE processed=11865205, rank=6606436, elapsed=294.3s, operations=182650929, max_terms=7620
+L=24: SDE processed=11895921, rank=6608287, elapsed=299.4s, operations=185003681, max_terms=7620
+L=24: SDE processed=11955308, rank=6611231, elapsed=304.9s, operations=187840959, max_terms=7620
+L=24: SDE processed=11965547, rank=6611700, elapsed=310.0s, operations=189830416, max_terms=7620
+L=24: SDE processed=12000359, rank=6612461, elapsed=316.8s, operations=192616873, max_terms=7620
+L=24: SDE processed=12020837, rank=6612480, elapsed=322.4s, operations=194946467, max_terms=7620
+L=24: SDE processed=12125268, rank=6627413, elapsed=327.5s, operations=198080716, max_terms=7620
+L=24: SDE processed=12184650, rank=6635965, elapsed=332.6s, operations=201072306, max_terms=7620
+L=24: SDE processed=12284992, rank=6652283, elapsed=337.6s, operations=204271719, max_terms=7620
+L=24: SDE processed=12631057, rank=6694361, elapsed=342.6s, operations=208942837, max_terms=7620
+L=24: SDE processed=12995561, rank=6694886, elapsed=347.9s, operations=213481691, max_terms=7620
+L=24: SDE processed=13296585, rank=6695428, elapsed=353.1s, operations=218048802, max_terms=7620
+L=24: SDE processed=13472693, rank=6695639, elapsed=358.1s, operations=221784446, max_terms=7620
+L=24: SDE processed=13788057, rank=6696024, elapsed=363.2s, operations=226374597, max_terms=7620
+L=24: SDE processed=13867922, rank=6696119, elapsed=368.2s, operations=228868282, max_terms=7620
+L=24: SDE processed=13898638, rank=6696171, elapsed=373.2s, operations=230775508, max_terms=7620
+L=24: SDE processed=13958027, rank=6696292, elapsed=379.4s, operations=233387486, max_terms=7620
+L=24: SDE processed=13972362, rank=6696302, elapsed=384.9s, operations=235305700, max_terms=7620
+L=24: SDE processed=13998983, rank=6696309, elapsed=390.0s, operations=237390385, max_terms=7620
+L=24: SDE processed=14021509, rank=6696310, elapsed=395.9s, operations=239749141, max_terms=7620
+L=24: SDE processed=14029701, rank=6696310, elapsed=402.0s, operations=241602856, max_terms=7620
+L=24: SDE processed=14068607, rank=6696330, elapsed=407.9s, operations=244032603, max_terms=7620
+L=24: SDE processed=14234475, rank=6696653, elapsed=412.9s, operations=247033176, max_terms=7620
+L=24: SDE processed=14326627, rank=6696806, elapsed=418.0s, operations=249518706, max_terms=7620
+L=24: SDE processed=14351201, rank=6696806, elapsed=423.3s, operations=251880402, max_terms=7620
+L=24: SDE processed=14408538, rank=6696884, elapsed=428.3s, operations=254169130, max_terms=7620
+L=24: SDE processed=14781227, rank=6697280, elapsed=433.6s, operations=258575121, max_terms=7620
+L=24: SDE processed=14803754, rank=6697280, elapsed=440.1s, operations=261388304, max_terms=7620
+L=24: SDE processed=14850854, rank=6697280, elapsed=446.0s, operations=264326422, max_terms=7620
+L=24: SDE processed=14871333, rank=6697280, elapsed=451.3s, operations=266580977, max_terms=7620
+L=24: SDE processed=14912289, rank=6697280, elapsed=457.1s, operations=269040935, max_terms=7828
+L=24: SDE processed=14920481, rank=6697280, elapsed=464.5s, operations=271303235, max_terms=9237
+L=24: SDE processed=14953246, rank=6697280, elapsed=470.9s, operations=273798810, max_terms=9237
+L=24: SDE processed=14969628, rank=6697280, elapsed=476.6s, operations=275785994, max_terms=9237
+L=24: SDE processed=14992153, rank=6697280, elapsed=481.6s, operations=277686827, max_terms=9237
+L=24: SDE processed=15051539, rank=6697280, elapsed=487.7s, operations=280449403, max_terms=9237
+L=24: SDE processed=15057683, rank=6697280, elapsed=494.3s, operations=282233401, max_terms=9249
+L=24: SDE processed=15074064, rank=6697280, elapsed=499.5s, operations=283955379, max_terms=9249
+L=24: SDE processed=15100686, rank=6697280, elapsed=505.4s, operations=286071440, max_terms=9249
+L=24: SDE processed=15104782, rank=6697280, elapsed=510.5s, operations=287452955, max_terms=9249
+L=24: SDE processed=15117069, rank=6697280, elapsed=515.9s, operations=289329454, max_terms=9249
+L=24: SDE processed=15149831, rank=6697280, elapsed=520.9s, operations=291400543, max_terms=9249
+L=24: SDE processed=15303411, rank=6697469, elapsed=526.8s, operations=294776151, max_terms=9249
+L=24: SDE processed=15319793, rank=6697472, elapsed=533.5s, operations=297133825, max_terms=9249
+L=24: SDE processed=15330033, rank=6697472, elapsed=538.6s, operations=298896686, max_terms=9249
+L=24: SDE processed=15364844, rank=6697537, elapsed=545.0s, operations=301005486, max_terms=9249
+L=24: SDE processed=15446755, rank=6697660, elapsed=552.4s, operations=303980262, max_terms=9249
+L=24: SDE processed=15454947, rank=6697660, elapsed=558.0s, operations=305709130, max_terms=9249
+L=24: SDE processed=15489758, rank=6697709, elapsed=563.5s, operations=307683422, max_terms=9249
+L=24: SDE processed=15629003, rank=6697837, elapsed=568.7s, operations=310475550, max_terms=9249
+L=24: SDE processed=15717054, rank=6697914, elapsed=573.7s, operations=313214700, max_terms=9249
+L=24: SDE processed=15780534, rank=6697987, elapsed=578.8s, operations=315596803, max_terms=9249
+L=24: SDE processed=16181898, rank=6737701, elapsed=584.0s, operations=319821782, max_terms=9249
+L=24: SDE processed=16613985, rank=6799665, elapsed=589.6s, operations=324744460, max_terms=9249
+L=24: SDE processed=16851534, rank=6825657, elapsed=594.8s, operations=328366467, max_terms=9249
+L=24: SDE processed=16962113, rank=6834384, elapsed=599.8s, operations=331055321, max_terms=9249
+L=24: SDE processed=16998973, rank=6834419, elapsed=605.4s, operations=333509958, max_terms=9249
+L=24: SDE processed=17080880, rank=6834859, elapsed=610.4s, operations=336284811, max_terms=9249
+L=24: SDE processed=17541636, rank=6854850, elapsed=615.5s, operations=341478616, max_terms=9249
+L=24: SDE processed=17797609, rank=6854915, elapsed=620.6s, operations=345395226, max_terms=9249
+L=24: SDE processed=18112979, rank=6854972, elapsed=625.7s, operations=349253546, max_terms=9249
+L=24: SDE processed=18162125, rank=6854972, elapsed=630.8s, operations=351845886, max_terms=9249
+L=24: SDE processed=18258367, rank=6854975, elapsed=635.8s, operations=354687114, max_terms=9249
+L=24: SDE processed=18456997, rank=6855025, elapsed=640.8s, operations=358221615, max_terms=9249
+L=24: SDE processed=19052911, rank=6890673, elapsed=645.8s, operations=362141942, max_terms=9249
+L=24: SDE complete, rank=6903264, All=7095622, stage=604.981s
+L=24: TrE, 9053008 loops, 4421 batches
+L=24: TrE 408/4421, rank=832599, elapsed=653.2s, operations=3743263, max_terms=39
+L=24: TrE 742/4421, rank=1058304, elapsed=658.2s, operations=4119179, max_terms=39
+L=24: TrE 763/4421, rank=1076555, elapsed=663.3s, operations=4153671, max_terms=39
+L=24: TrE 858/4421, rank=1140086, elapsed=668.3s, operations=4279510, max_terms=39
+L=24: TrE 900/4421, rank=1182512, elapsed=673.5s, operations=4526040, max_terms=39
+L=24: TrE 922/4421, rank=1201064, elapsed=678.9s, operations=4597358, max_terms=39
+L=24: TrE 927/4421, rank=1208280, elapsed=685.1s, operations=4612778, max_terms=39
+L=24: TrE 931/4421, rank=1210387, elapsed=691.3s, operations=4624963, max_terms=39
+L=24: TrE 940/4421, rank=1216273, elapsed=696.7s, operations=4656586, max_terms=39
+L=24: TrE 952/4421, rank=1230228, elapsed=704.2s, operations=4699014, max_terms=39
+L=24: TrE 957/4421, rank=1235102, elapsed=710.7s, operations=4711361, max_terms=39
+L=24: TrE 975/4421, rank=1243918, elapsed=715.9s, operations=4743115, max_terms=39

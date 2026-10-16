@@ -1,0 +1,181 @@
+L=4: enumerate basis
+L=4: SDE, 1 seeds, 4 workers
+L=4: TrE, 1 loops, 1 batches
+L=4: TrE 1/1, rank=0, elapsed=0.0s
+L=4: loops=1 SDE=0 TrE=0 All=0 (0.001s)
+L=4: checkpoint 0.009s
+L=6: enumerate basis
+L=6: SDE, 0 seeds, 4 workers
+L=6: TrE, 1 loops, 1 batches
+L=6: TrE 1/1, rank=0, elapsed=0.0s
+L=6: loops=2 SDE=0 TrE=0 All=0 (0.000s)
+L=6: checkpoint 0.005s
+L=8: enumerate basis
+L=8: SDE, 4 seeds, 4 workers
+L=8: TrE, 7 loops, 1 batches
+L=8: TrE 1/1, rank=0, elapsed=0.0s
+L=8: loops=9 SDE=2 TrE=0 All=2 (0.001s)
+L=8: checkpoint 0.005s
+L=10: enumerate basis
+L=10: SDE, 18 seeds, 4 workers
+L=10: TrE, 15 loops, 1 batches
+L=10: TrE 1/1, rank=0, elapsed=0.0s
+L=10: loops=24 SDE=7 TrE=0 All=7 (0.001s)
+L=10: checkpoint 0.004s
+L=12: enumerate basis
+L=12: SDE, 136 seeds, 4 workers
+L=12: TrE, 95 loops, 1 batches
+L=12: TrE 1/1, rank=6, elapsed=0.0s
+L=12: loops=119 SDE=48 TrE=6 All=51 (0.006s)
+L=12: checkpoint 0.004s
+L=14: enumerate basis
+L=14: SDE, 756 seeds, 4 workers
+L=14: TrE, 465 loops, 2 batches
+L=14: TrE 2/2, rank=72, elapsed=0.0s
+L=14: loops=584 SDE=279 TrE=72 All=316 (0.017s)
+L=14: checkpoint 0.005s
+L=16: enumerate basis
+L=16: SDE, 5800 seeds, 4 workers
+L=16: TrE, 3217 loops, 13 batches
+L=16: TrE 13/13, rank=762, elapsed=0.0s
+L=16: loops=3801 SDE=2021 TrE=762 All=2383 (0.043s)
+L=16: checkpoint 0.005s
+L=18: enumerate basis
+L=18: SDE, 40369 seeds, 4 workers
+L=18: TrE, 21762 loops, 86 batches
+L=18: TrE 86/86, rank=7088, elapsed=0.2s
+L=18: loops=25563 SDE=14665 TrE=7088 All=17709 (0.212s)
+L=18: checkpoint 0.009s
+L=20: enumerate basis
+L=20: SDE, 316978 seeds, 4 workers
+L=20: TrE, 159974 loops, 625 batches
+L=20: TrE 625/625, rank=64079, elapsed=2.0s
+L=20: loops=185537 SDE=112565 TrE=64079 All=137775 (2.023s)
+L=20: checkpoint 0.049s
+L=22: enumerate basis
+L=22: SDE, 2446676 seeds, 4 workers
+L=22: SDE processed=1609611, rank=847592, elapsed=10.5s
+L=22: TrE, 1188877 loops, 4645 batches
+L=22: TrE 2648/4645, rank=313232, elapsed=18.3s
+L=22: TrE 3043/4645, rank=373215, elapsed=23.3s
+L=22: TrE 3461/4645, rank=432149, elapsed=28.3s
+L=22: TrE 3790/4645, rank=472383, elapsed=33.3s
+L=22: TrE 4188/4645, rank=521194, elapsed=38.3s
+L=22: TrE 4345/4645, rank=540695, elapsed=43.3s
+L=22: TrE 4532/4645, rank=554274, elapsed=48.6s
+L=22: TrE 4645/4645, rank=561495, elapsed=52.8s
+L=22: loops=1374414 SDE=874040 TrE=561495 All=1077512 (52.828s)
+L=22: checkpoint 0.699s
+L=24: enumerate basis
+L=24: SDE, 19685474 seeds, 4 workers
+L=24: SDE processed=1908224, rank=2638257, elapsed=52.4s
+L=24: SDE processed=3016704, rank=3446550, elapsed=57.4s
+L=24: SDE processed=4290708, rank=4196325, elapsed=62.4s
+L=24: SDE processed=5391649, rank=4777691, elapsed=67.4s
+L=24: SDE processed=6007776, rank=5054055, elapsed=72.4s
+L=24: SDE processed=6230729, rank=5144339, elapsed=77.4s
+L=24: SDE processed=6347963, rank=5182402, elapsed=82.4s
+L=24: SDE processed=6433461, rank=5195769, elapsed=87.4s
+L=24: SDE processed=6492082, rank=5206722, elapsed=92.4s
+L=24: SDE processed=6539437, rank=5224202, elapsed=97.6s
+L=24: SDE processed=6560939, rank=5226079, elapsed=102.6s
+L=24: SDE processed=6702731, rank=5272372, elapsed=107.6s
+L=24: SDE processed=6995049, rank=5390789, elapsed=112.6s
+L=24: SDE processed=7066725, rank=5409986, elapsed=117.6s
+L=24: SDE processed=7162203, rank=5445251, elapsed=122.7s
+L=24: SDE processed=7337544, rank=5503526, elapsed=127.7s
+L=24: SDE processed=7402052, rank=5510126, elapsed=132.8s
+L=24: SDE processed=7459392, rank=5515069, elapsed=137.8s
+L=24: SDE processed=7565361, rank=5543978, elapsed=142.8s
+L=24: SDE processed=7686184, rank=5583961, elapsed=147.8s
+L=24: SDE processed=7986189, rank=5690029, elapsed=152.8s
+L=24: SDE processed=8104451, rank=5719935, elapsed=157.9s
+L=24: SDE processed=8177146, rank=5737262, elapsed=162.9s
+L=24: SDE processed=8382948, rank=5808084, elapsed=167.9s
+L=24: SDE processed=8448223, rank=5823319, elapsed=172.9s
+L=24: SDE processed=8501722, rank=5827758, elapsed=177.9s
+L=24: SDE processed=8703171, rank=5876157, elapsed=182.9s
+L=24: SDE processed=9305730, rank=6027241, elapsed=187.9s
+L=24: SDE processed=9503597, rank=6093476, elapsed=192.9s
+L=24: SDE processed=9608039, rank=6122635, elapsed=197.9s
+L=24: SDE processed=9651811, rank=6135627, elapsed=202.9s
+L=24: SDE processed=9836877, rank=6186718, elapsed=207.9s
+L=24: SDE processed=9927490, rank=6211325, elapsed=213.0s
+L=24: SDE processed=9964352, rank=6219249, elapsed=218.0s
+L=24: SDE processed=10067509, rank=6248003, elapsed=223.0s
+L=24: SDE processed=10302747, rank=6316999, elapsed=228.0s
+L=24: SDE processed=10397459, rank=6341828, elapsed=233.0s
+L=24: SDE processed=10425616, rank=6348388, elapsed=238.1s
+L=24: SDE processed=10451214, rank=6352267, elapsed=243.3s
+L=24: SDE processed=10460430, rank=6353579, elapsed=248.3s
+L=24: SDE processed=10489096, rank=6360618, elapsed=253.3s
+L=24: SDE processed=10615546, rank=6397544, elapsed=258.3s
+L=24: SDE processed=10671096, rank=6410195, elapsed=263.3s
+L=24: SDE processed=10744049, rank=6428412, elapsed=268.4s
+L=24: SDE processed=10801900, rank=6441483, elapsed=273.5s
+L=24: SDE processed=10820587, rank=6441811, elapsed=278.5s
+L=24: SDE processed=10834666, rank=6441975, elapsed=283.6s
+L=24: SDE processed=10849767, rank=6443323, elapsed=288.6s
+L=24: SDE processed=10871014, rank=6446612, elapsed=293.9s
+L=24: SDE processed=10882277, rank=6449123, elapsed=299.0s
+L=24: SDE processed=10893285, rank=6451116, elapsed=304.0s
+L=24: SDE processed=10919391, rank=6456559, elapsed=309.0s
+L=24: SDE processed=10943194, rank=6461038, elapsed=314.0s
+L=24: SDE processed=11050704, rank=6486627, elapsed=319.1s
+L=24: SDE processed=11192256, rank=6517292, elapsed=324.1s
+L=24: SDE processed=11317936, rank=6549402, elapsed=329.1s
+L=24: SDE processed=11390631, rank=6564147, elapsed=334.1s
+L=24: SDE processed=11410855, rank=6564379, elapsed=339.2s
+L=24: SDE processed=11429541, rank=6564489, elapsed=344.2s
+L=24: SDE processed=11450785, rank=6566769, elapsed=349.3s
+L=24: SDE processed=11526551, rank=6584067, elapsed=354.3s
+L=24: SDE processed=11548823, rank=6587336, elapsed=359.5s
+L=24: SDE processed=11563157, rank=6589973, elapsed=364.6s
+L=24: SDE processed=11624840, rank=6602404, elapsed=370.2s
+L=24: SDE processed=11630728, rank=6603195, elapsed=375.2s
+L=24: SDE processed=11644550, rank=6605157, elapsed=380.3s
+L=24: SDE processed=11648390, rank=6605157, elapsed=385.6s
+L=24: SDE processed=11662724, rank=6605722, elapsed=390.8s
+L=24: SDE processed=11668100, rank=6606324, elapsed=396.0s
+L=24: SDE processed=11674500, rank=6606356, elapsed=401.0s
+L=24: SDE processed=11679108, rank=6606383, elapsed=406.1s
+L=24: SDE processed=11692419, rank=6606383, elapsed=411.5s
+L=24: SDE processed=11701379, rank=6606383, elapsed=416.5s
+L=24: SDE processed=11722880, rank=6606383, elapsed=422.0s
+L=24: SDE processed=11727488, rank=6606383, elapsed=427.1s
+L=24: SDE processed=11731584, rank=6606383, elapsed=432.3s
+L=24: SDE processed=11740799, rank=6606383, elapsed=437.3s
+L=24: SDE processed=11748223, rank=6606383, elapsed=442.4s
+L=24: SDE processed=11761791, rank=6606383, elapsed=447.4s
+L=24: SDE processed=11790204, rank=6606396, elapsed=452.5s
+L=24: SDE processed=11816826, rank=6606409, elapsed=457.8s
+L=24: SDE processed=11826809, rank=6606411, elapsed=462.8s
+L=24: SDE processed=11854966, rank=6606430, elapsed=467.9s
+L=24: SDE processed=11867509, rank=6606436, elapsed=472.9s
+L=24: SDE processed=11895409, rank=6608287, elapsed=478.0s
+L=24: SDE processed=11917677, rank=6608973, elapsed=483.0s
+L=24: SDE processed=11948396, rank=6611165, elapsed=488.0s
+L=24: SDE processed=11958892, rank=6611231, elapsed=493.1s
+L=24: SDE processed=11975273, rank=6612425, elapsed=498.1s
+L=24: SDE processed=11997543, rank=6612461, elapsed=503.1s
+L=24: SDE processed=12003175, rank=6612461, elapsed=508.3s
+L=24: SDE processed=12016485, rank=6612480, elapsed=513.4s
+L=24: SDE processed=12033635, rank=6612779, elapsed=518.4s
+L=24: SDE processed=12059229, rank=6614860, elapsed=523.4s
+L=24: SDE processed=12123221, rank=6627144, elapsed=528.5s
+L=24: SDE processed=12132436, rank=6627671, elapsed=533.7s
+L=24: SDE processed=12144976, rank=6628182, elapsed=538.7s
+L=24: SDE processed=12192072, rank=6636875, elapsed=543.8s
+L=24: SDE processed=12270403, rank=6652266, elapsed=548.8s
+L=24: SDE processed=12281153, rank=6652274, elapsed=553.8s
+L=24: SDE processed=12315962, rank=6656960, elapsed=558.8s
+L=24: SDE processed=12353844, rank=6662881, elapsed=563.8s
+L=24: SDE processed=12457513, rank=6680769, elapsed=568.8s
+L=24: SDE processed=12683786, rank=6694427, elapsed=573.8s
+L=24: SDE processed=12834806, rank=6694614, elapsed=578.8s
+L=24: SDE processed=12937964, rank=6694802, elapsed=583.8s
+L=24: SDE processed=12980969, rank=6694884, elapsed=588.9s
+L=24: SDE processed=13001193, rank=6694892, elapsed=593.9s
+L=24: SDE processed=13059041, rank=6695060, elapsed=599.0s
+L=24: SDE processed=13184214, rank=6695305, elapsed=604.0s
+L=24: SDE processed=13284042, rank=6695415, elapsed=609.0s
