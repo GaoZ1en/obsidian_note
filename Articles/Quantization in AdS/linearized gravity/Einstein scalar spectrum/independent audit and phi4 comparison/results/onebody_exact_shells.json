@@ -1,0 +1,230 @@
+{
+	"scope":"20 exact isotropic excited traces from beta-binomial shell moments, using B.15 and thermal Ward transfer; no import of evaluated traces.",
+	"count":60,
+	"allPassed":true,
+	"checks":{
+		"shell_partial_fractions_d3\/2_0_0":true,
+		"simple_pole_d3\/2_0_0":true,
+		"zero_finite_part_d3\/2_0_0":true,
+		"shell_partial_fractions_d3\/2_1_0":true,
+		"simple_pole_d3\/2_1_0":true,
+		"zero_finite_part_d3\/2_1_0":true,
+		"shell_partial_fractions_d3\/2_1_1":true,
+		"simple_pole_d3\/2_1_1":true,
+		"zero_finite_part_d3\/2_1_1":true,
+		"shell_partial_fractions_d3\/2_2_1":true,
+		"simple_pole_d3\/2_2_1":true,
+		"zero_finite_part_d3\/2_2_1":true,
+		"shell_partial_fractions_d3\/2_2_2":true,
+		"simple_pole_d3\/2_2_2":true,
+		"zero_finite_part_d3\/2_2_2":true,
+		"shell_partial_fractions_d2_0_0":true,
+		"simple_pole_d2_0_0":true,
+		"zero_finite_part_d2_0_0":true,
+		"shell_partial_fractions_d2_1_0":true,
+		"simple_pole_d2_1_0":true,
+		"zero_finite_part_d2_1_0":true,
+		"shell_partial_fractions_d2_1_1":true,
+		"simple_pole_d2_1_1":true,
+		"zero_finite_part_d2_1_1":true,
+		"shell_partial_fractions_d2_2_1":true,
+		"simple_pole_d2_2_1":true,
+		"zero_finite_part_d2_2_1":true,
+		"shell_partial_fractions_d2_2_2":true,
+		"simple_pole_d2_2_2":true,
+		"zero_finite_part_d2_2_2":true,
+		"shell_partial_fractions_d5\/2_0_0":true,
+		"simple_pole_d5\/2_0_0":true,
+		"zero_finite_part_d5\/2_0_0":true,
+		"shell_partial_fractions_d5\/2_1_0":true,
+		"simple_pole_d5\/2_1_0":true,
+		"zero_finite_part_d5\/2_1_0":true,
+		"shell_partial_fractions_d5\/2_1_1":true,
+		"simple_pole_d5\/2_1_1":true,
+		"zero_finite_part_d5\/2_1_1":true,
+		"shell_partial_fractions_d5\/2_2_1":true,
+		"simple_pole_d5\/2_2_1":true,
+		"zero_finite_part_d5\/2_2_1":true,
+		"shell_partial_fractions_d5\/2_2_2":true,
+		"simple_pole_d5\/2_2_2":true,
+		"zero_finite_part_d5\/2_2_2":true,
+		"shell_partial_fractions_d3_0_0":true,
+		"simple_pole_d3_0_0":true,
+		"zero_finite_part_d3_0_0":true,
+		"shell_partial_fractions_d3_1_0":true,
+		"simple_pole_d3_1_0":true,
+		"zero_finite_part_d3_1_0":true,
+		"shell_partial_fractions_d3_1_1":true,
+		"simple_pole_d3_1_1":true,
+		"zero_finite_part_d3_1_1":true,
+		"shell_partial_fractions_d3_2_1":true,
+		"simple_pole_d3_2_1":true,
+		"zero_finite_part_d3_2_1":true,
+		"shell_partial_fractions_d3_2_2":true,
+		"simple_pole_d3_2_2":true,
+		"zero_finite_part_d3_2_2":true
+	},
+	"traces":[
+		{
+			"Delta":"3\/2",
+			"p":0,
+			"q":0,
+			"C":"0",
+			"trace":"(9*(-1 + z)*z^(3\/2))\/4",
+			"series":"(9*tau*(-1 + 2*tau))\/4"
+		},
+		{
+			"Delta":"3\/2",
+			"p":1,
+			"q":0,
+			"C":"-1\/8",
+			"trace":"(z^(3\/2)*(-9 + z*(49 + z*(-75 + 34*z))))\/(8*(-1 + z))",
+			"series":"1\/(8*tau) - (673*tau)\/192 + (89*tau^2)\/8"
+		},
+		{
+			"Delta":"3\/2",
+			"p":1,
+			"q":1,
+			"C":"-5\/48",
+			"trace":"(z^(3\/2)*(144 + z*(-960 + z*(2423 + 3*z*(-864 + 325*z)))))\/(96*(-1 + z))",
+			"series":"5\/(48*tau) - (6089*tau)\/1152 + (289*tau^2)\/12"
+		},
+		{
+			"Delta":"3\/2",
+			"p":2,
+			"q":1,
+			"C":"-41\/384",
+			"trace":"(z^(3\/2)*(216 + z*(-147 + z*(-4367 + 3*z*(4591 + z*(-5061 + 1889*z))))))\/(384*(-1 + z))",
+			"series":"(984 + tau^2*(-61601 + 355200*tau))\/(9216*tau)"
+		},
+		{
+			"Delta":"3\/2",
+			"p":2,
+			"q":2,
+			"C":"-91\/960",
+			"trace":"(z^(3\/2)*(3825 + z*(-10200 + z*(39835 + 3*z*(-76960 + z*(182329 + 5*z*(-35848 + 12495*z)))))))\/(7680*(-1 + z))",
+			"series":"91\/(960*tau) - (192151*tau)\/23040 + (178*tau^2)\/3"
+		},
+		{
+			"Delta":"2",
+			"p":0,
+			"q":0,
+			"C":"16\/15",
+			"trace":"(8*z^2*(11 + 3*z*(-5 + 2*z)))\/(15*(-1 + z))",
+			"series":"(4*(-12 + tau^2*(-13 + 60*tau)))\/(45*tau)"
+		},
+		{
+			"Delta":"2",
+			"p":1,
+			"q":0,
+			"C":"16\/21",
+			"trace":"(8*z^2*(-14 + 3*z*(46 + z*(-63 + 25*z))))\/(105*(-1 + z))",
+			"series":"(4*(-60 + tau^2*(-101 + 840*tau)))\/(315*tau)"
+		},
+		{
+			"Delta":"2",
+			"p":1,
+			"q":1,
+			"C":"64\/105",
+			"trace":"(8*z^2*(32 + 3*z*(-57 + z*(149 + 5*z*(-31 + 11*z)))))\/(105*(-1 + z))",
+			"series":"(64*(-3 + 5*tau^2*(-2 + 21*tau)))\/(315*tau)"
+		},
+		{
+			"Delta":"2",
+			"p":2,
+			"q":1,
+			"C":"592\/1155",
+			"trace":"(4*z^2*(297 + z*(-66 + z*(-4213 + 5*z*(2679 + z*(-2882 + 1029*z))))))\/(1155*(-1 + z))",
+			"series":"-592\/(1155*tau) - (148*tau)\/63 + 32*tau^2"
+		},
+		{
+			"Delta":"2",
+			"p":2,
+			"q":2,
+			"C":"2224\/5005",
+			"trace":"(8*z^2*(572 + z*(-1001 + z*(3887 + 5*z*(-4459 + z*(10732 + 7*z*(-1495 + 508*z)))))))\/(5005*(-1 + z))",
+			"series":"-2224\/(5005*tau) - (820*tau)\/273 + 48*tau^2"
+		},
+		{
+			"Delta":"5\/2",
+			"p":0,
+			"q":0,
+			"C":"25\/12",
+			"trace":"(25*z^(5\/2)*(5 + 2*(-3 + z)*z))\/(12*(-1 + z))",
+			"series":"(25*(-24 + tau^2*(25 + 24*tau)))\/(288*tau)"
+		},
+		{
+			"Delta":"5\/2",
+			"p":1,
+			"q":0,
+			"C":"5\/3",
+			"trace":"(5*z^(5\/2)*(-10 + z*(153 + z*(-196 + 69*z))))\/(48*(-1 + z))",
+			"series":"-5\/(3*tau) + (5*tau*(113 + 66*tau))\/144"
+		},
+		{
+			"Delta":"5\/2",
+			"p":1,
+			"q":1,
+			"C":"671\/480",
+			"trace":"(z^(5\/2)*(1625 + z*(-7700 + z*(21083 + 3*z*(-7180 + 2401*z)))))\/(480*(-1 + z))",
+			"series":"-671\/(480*tau) + (56639*tau)\/11520 + (37*tau^2)\/6"
+		},
+		{
+			"Delta":"5\/2",
+			"p":2,
+			"q":1,
+			"C":"469\/384",
+			"trace":"(z^(5\/2)*(2875 + z*(-90 + z*(-34139 + 3*z*(37076 + z*(-39213 + 13370*z))))))\/(1920*(-1 + z))",
+			"series":"-469\/(384*tau) + (295721*tau)\/46080 + (181*tau^2)\/24"
+		},
+		{
+			"Delta":"5\/2",
+			"p":2,
+			"q":2,
+			"C":"29117\/26880",
+			"trace":"(z^(5\/2)*(72275 + z*(-99960 + z*(390236 + 3*z*(-738136 + z*(1816317 + 20*z*(-88060 + 29079*z)))))))\/(53760*(-1 + z))",
+			"series":"(-698808 + 5*tau^2*(963145 + 1623552*tau))\/(645120*tau)"
+		},
+		{
+			"Delta":"3",
+			"p":0,
+			"q":0,
+			"C":"108\/35",
+			"trace":"(18*z^3*(31 + 5*z*(-7 + 2*z)))\/(35*(-1 + z))",
+			"series":"(-9*(12 + tau^2*(-33 + 35*tau)))\/(35*tau)"
+		},
+		{
+			"Delta":"3",
+			"p":1,
+			"q":0,
+			"C":"272\/105",
+			"trace":"(2*z^3*(-54 + 5*z*(235 + z*(-288 + 91*z))))\/(105*(-1 + z))",
+			"series":"-272\/(105*tau) + (4054*tau)\/315 - 19*tau^2"
+		},
+		{
+			"Delta":"3",
+			"p":1,
+			"q":1,
+			"C":"7748\/3465",
+			"trace":"(2*z^3*(7524 + 5*z*(-6600 + z*(18995 + 21*z*(-913 + 288*z)))))\/(3465*(-1 + z))",
+			"series":"-7748\/(3465*tau) + (15431*tau)\/945 - (83*tau^2)\/3"
+		},
+		{
+			"Delta":"3",
+			"p":2,
+			"q":1,
+			"C":"89728\/45045",
+			"trace":"(z^3*(88803 + 5*z*(1365 + z*(-188773 + 21*z*(30239 + 6*z*(-5265 + 1714*z))))))\/(45045*(-1 + z))",
+			"series":"(-269184 + (2755136 - 5720715*tau)*tau^2)\/(135135*tau)"
+		},
+		{
+			"Delta":"3",
+			"p":2,
+			"q":2,
+			"C":"6212\/3465",
+			"trace":"(2*z^3*(40248 + 5*z*(-9516 + z*(37472 + 21*z*(-10024 + 3*z*(8435 + z*(-8147 + 2610*z)))))))\/(45045*(-1 + z))",
+			"series":"-6212\/(3465*tau) + (3223117*tau)\/135135 - (167*tau^2)\/3"
+		}
+	],
+	"messages":[]
+}

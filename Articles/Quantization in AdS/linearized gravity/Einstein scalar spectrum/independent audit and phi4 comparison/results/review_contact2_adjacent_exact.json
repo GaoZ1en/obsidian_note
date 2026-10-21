@@ -1,0 +1,1009 @@
+{
+  "symbolic_bands": {
+    "rows": [
+      {
+        "q": 0,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 1,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 2,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 3,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 4,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "even_m2_k4": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true,
+          "odd_m3_j2": true,
+          "even_m4_k4": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 5,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "even_m2_k4": true,
+          "even_m2_k5": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true,
+          "odd_m3_j2": true,
+          "odd_m3_j3": true,
+          "even_m4_k4": true,
+          "even_m4_k5": true,
+          "odd_m5_j0": true,
+          "odd_m5_j1": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 6,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "even_m2_k4": true,
+          "even_m2_k5": true,
+          "even_m2_k6": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true,
+          "odd_m3_j2": true,
+          "odd_m3_j3": true,
+          "odd_m3_j4": true,
+          "even_m4_k4": true,
+          "even_m4_k5": true,
+          "even_m4_k6": true,
+          "odd_m5_j0": true,
+          "odd_m5_j1": true,
+          "odd_m5_j2": true,
+          "even_m6_k6": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 7,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "even_m2_k4": true,
+          "even_m2_k5": true,
+          "even_m2_k6": true,
+          "even_m2_k7": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true,
+          "odd_m3_j2": true,
+          "odd_m3_j3": true,
+          "odd_m3_j4": true,
+          "odd_m3_j5": true,
+          "even_m4_k4": true,
+          "even_m4_k5": true,
+          "even_m4_k6": true,
+          "even_m4_k7": true,
+          "odd_m5_j0": true,
+          "odd_m5_j1": true,
+          "odd_m5_j2": true,
+          "odd_m5_j3": true,
+          "even_m6_k6": true,
+          "even_m6_k7": true,
+          "odd_m7_j0": true,
+          "odd_m7_j1": true
+        },
+        "all_passed": true
+      },
+      {
+        "q": 8,
+        "checks": {
+          "X3_intertwines": true,
+          "X1_intertwines": true,
+          "X2_intertwines": true,
+          "Casimir_sum": true,
+          "T0_expected_status": true,
+          "linear_relation": true,
+          "even_m2_k2": true,
+          "even_m2_k3": true,
+          "even_m2_k4": true,
+          "even_m2_k5": true,
+          "even_m2_k6": true,
+          "even_m2_k7": true,
+          "even_m2_k8": true,
+          "odd_m3_j0": true,
+          "odd_m3_j1": true,
+          "odd_m3_j2": true,
+          "odd_m3_j3": true,
+          "odd_m3_j4": true,
+          "odd_m3_j5": true,
+          "odd_m3_j6": true,
+          "even_m4_k4": true,
+          "even_m4_k5": true,
+          "even_m4_k6": true,
+          "even_m4_k7": true,
+          "even_m4_k8": true,
+          "odd_m5_j0": true,
+          "odd_m5_j1": true,
+          "odd_m5_j2": true,
+          "odd_m5_j3": true,
+          "odd_m5_j4": true,
+          "even_m6_k6": true,
+          "even_m6_k7": true,
+          "even_m6_k8": true,
+          "odd_m7_j0": true,
+          "odd_m7_j1": true,
+          "odd_m7_j2": true,
+          "even_m8_k8": true
+        },
+        "all_passed": true
+      }
+    ],
+    "generic_identities": {
+      "rho_discrete_difference": true,
+      "alpha_identity": true
+    }
+  },
+  "exact_ranks": [
+    {
+      "Delta": "4/3",
+      "q": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 3,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "rank": 4,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "rank": 5,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 6,
+      "rank": 6,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 7,
+      "rank": 7,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 8,
+      "rank": 8,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 9,
+      "rank": 9,
+      "passed": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 10,
+      "rank": 10,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 3,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 4,
+      "rank": 4,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 5,
+      "rank": 5,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 6,
+      "rank": 6,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 7,
+      "rank": 7,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 8,
+      "rank": 8,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 9,
+      "rank": 9,
+      "passed": true
+    },
+    {
+      "Delta": "3/2",
+      "q": 10,
+      "rank": 10,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 3,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "rank": 4,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "rank": 5,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 6,
+      "rank": 6,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 7,
+      "rank": 7,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 8,
+      "rank": 8,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 9,
+      "rank": 9,
+      "passed": true
+    },
+    {
+      "Delta": "2",
+      "q": 10,
+      "rank": 10,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 3,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "rank": 4,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "rank": 5,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 6,
+      "rank": 6,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 7,
+      "rank": 7,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 8,
+      "rank": 8,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 9,
+      "rank": 9,
+      "passed": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 10,
+      "rank": 10,
+      "passed": true
+    }
+  ],
+  "full_S3_twirls": [
+    {
+      "q": 0,
+      "D_physical": 0,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 1,
+      "D_physical": 1,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 2,
+      "D_physical": 2,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true,
+        "twirl_m2": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 3,
+      "D_physical": 3,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true,
+        "twirl_m2": true,
+        "twirl_m3": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 4,
+      "D_physical": 5,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true,
+        "twirl_m2": true,
+        "twirl_m3": true,
+        "twirl_m4": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 5,
+      "D_physical": 7,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true,
+        "twirl_m2": true,
+        "twirl_m3": true,
+        "twirl_m4": true,
+        "twirl_m5": true
+      },
+      "all_passed": true
+    },
+    {
+      "q": 6,
+      "D_physical": 9,
+      "checks": {
+        "physical_dimension": true,
+        "twirl_m0": true,
+        "twirl_m1": true,
+        "twirl_m2": true,
+        "twirl_m3": true,
+        "twirl_m4": true,
+        "twirl_m5": true,
+        "twirl_m6": true
+      },
+      "all_passed": true
+    }
+  ],
+  "direct_Bargmann_norms": [
+    {
+      "Delta": "4/3",
+      "q": 0,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 1,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 1,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 2,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 2,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 2,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 3,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 3,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 3,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 3,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 4,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "4/3",
+      "q": 5,
+      "k": 5,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 0,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 1,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 1,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 2,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 2,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 2,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 3,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 3,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 3,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 3,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 4,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "2",
+      "q": 5,
+      "k": 5,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 0,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 1,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 1,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 2,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 2,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 2,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 3,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 3,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 3,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 3,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 4,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 0,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 1,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 2,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 3,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 4,
+      "norm_ratio": true,
+      "gamma_square": true
+    },
+    {
+      "Delta": "7/3",
+      "q": 5,
+      "k": 5,
+      "norm_ratio": true,
+      "gamma_square": true
+    }
+  ],
+  "all_passed": true
+}

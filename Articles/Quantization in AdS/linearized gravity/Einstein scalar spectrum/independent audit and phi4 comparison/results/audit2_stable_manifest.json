@@ -1,0 +1,141 @@
+{
+  "authoritative_pdf": "/Users/koishi/Desktop/todo/ADS3_Einstein_Scalar_Master_Note.pdf",
+  "authoritative_pdf_sha256": "97d9ea4ee42dc0443104c71bfdd12aaea28b39528d9b56d899de9e283464b9bc",
+  "packaged_pdf_sha256": "18a8e40aef4b8c479937e6ed66839ec7a6924a70a93420949106be09721e1e6d",
+  "pdf_bytes_identical": false,
+  "full_layout_text_identical": true,
+  "authoritative_layout_text_sha256": "ce3f39dd1b344a662518a0315d5fa3e00b91461a9df434ef549b4701a37381f4",
+  "packaged_layout_text_sha256": "ce3f39dd1b344a662518a0315d5fa3e00b91461a9df434ef549b4701a37381f4",
+  "visually_checked_pdf_pages": [
+    72,
+    74,
+    78,
+    175,
+    179
+  ],
+  "page_numbering": "These PDF page numbers equal printed page numbers.",
+  "runs": [
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_exact_checks.py",
+      "script_sha256": "f79639eafecba3f03017ba2a07cfa07ea0eab97185df7a2b4428f128751d554b",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_exact_checks.json",
+      "result_sha256": "a2005db3b7988b49bc5df4abbb9bc485f5e972e0e4f0742b78b1159f31bd3b2b",
+      "checks": 60,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_bivariate_checks.py",
+      "script_sha256": "2a2e48a8c0ecc706b05581d5bd840e958c506add42f5f46349e17e74f4b2635a",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_bivariate_checks.json",
+      "result_sha256": "3557ea706c355bcb85ca6c0a3e0bf97543701d04e38403089e5e7b41e96cb587",
+      "checks": 21,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_exact_remaining.py",
+      "script_sha256": "214750d4251725e45c829e3891e7467faaf95e70bc7911bff7444d39c4aa5c90",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_exact_remaining.json",
+      "result_sha256": "4fc541869c872015c4b3f4d2aface88467123b66f6039d06ced765a732480c44",
+      "checks": 19,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_limits_and_quintic.py",
+      "script_sha256": "1e05f0c40d3478a95e685f774cd0035a19c8b7c4e966de3194ad56cb70e2341f",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_limits_and_quintic.json",
+      "result_sha256": "b978d85e4b8830f384d1dff89828dab55173de815281375801b467ad111062cf",
+      "checks": 13,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_supplementary.py",
+      "script_sha256": "cf07970a8d13b845a3ae2088decd0512a1d6dc03d0193845b75a29eb5ebfb8cf",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_supplementary.json",
+      "result_sha256": "11e8af69ffeb17160183d02c08908cd80e7efa5b646c874b3de29d4781a6abc1",
+      "checks": 86,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_cycle.py",
+      "script_sha256": "f06ef784cab33461e68b456fa08c88fa2061ba5d2f0dd35dde833523a75c70fd",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_cycle.json",
+      "result_sha256": "fbaf344993d3b826edadc6895de63bd3e0820c5b6f9f2f9026d920a298445415",
+      "checks": 1,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_phi4_22.py",
+      "script_sha256": "74689bada47618ba3498096afa5bca0138f1fb4f37583f5e25ec2c554142d3ae",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_phi4_22.json",
+      "result_sha256": "2bf02f1edd65f5f69bf04c771258fe5a4ce03c4005ae4084723dd8bd365aa56d",
+      "checks": 6,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    },
+    {
+      "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/audit2_stable_phi4_galois7.py",
+      "script_sha256": "ae31c3552bf2219cb4897cdd467162cf4354cefd2be5770c7337d704b127c64e",
+      "result": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/audit2_stable_phi4_galois7.json",
+      "result_sha256": "5e07ec9ec471a1cc59b765d8e9e5b33da306d1653e6fa029d9d6e5494fab83d9",
+      "checks": 5,
+      "all_passed": true,
+      "execution": "functions.mcp__sage__sage_run in a fresh Sage 10.9 kernel, exec of the complete recorded script"
+    }
+  ],
+  "total_labelled_checks": 211,
+  "sources": {
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/exact_chapter.md": "c0f778193717f534ae191dfeba66af089be2d4fc877086ac816097882d4c1cd9",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/exact_appendices.md": "6ec354a9f30625831dd7db609e5f22aaea630dec643ec8150e315574170bc5cb",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/finite_appendices.md": "be63c8ba3e87a89b87edc90fcc4bb6f3e2e6157a9215f0f702bab799aef81750",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/semiclassical/chapter9.md": "294b29f29dd6b5db11bdb520e672043f5f82c8a7be915e36f72d9ba834da3ab5",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/semiclassical/chapter10.md": "f8588947f3e3b2f2f21c9deb24ffc90a438c8f5279fac3de6ebbacfedbcbf631",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/semiclassical/appendix_st.md": "0f3cd262ab23e3909af3f049c88b0cde672596bebc76552d268363fc6950374e",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/document_source/semiclassical/appendix_un.md": "dd7f7c0ae54ad99505660b7a5049a7f856d5282db1a8604efd4f4bd1c20d1287",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/provenance/claim_register.json": "8f92a102df6a5835f8a7282eff50419760e4dbfa923c5a2bd733c0787e8e0537"
+  },
+  "independence": "No manuscript engine or retained verifier was imported. The phi4 (2,2) calculation used only the requested pair sequence, without parent candidate matrices or results. The separately requested degree-seven Galois calculation used the parent-supplied polynomial, with physical identification explicitly left to the parent.",
+  "earlier_development_errors": "Sage coercion/matrix iteration/JSON serialization and reducible-polynomial API issues were corrected in these new scripts. Listed final executions completed with all assertions passing.",
+  "source_modifications": "none",
+  "report": {
+    "path": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md",
+    "sha256": "5aec57418225a3ddeb6f1264b345e049fa384b8579e6b2ea1680a4d16b466b82",
+    "claim_coverage": [
+      "ST-01",
+      "ST-02",
+      "ST-03",
+      "ST-04",
+      "ST-05",
+      "ST-06",
+      "ST-07",
+      "ST-08",
+      "ST-09",
+      "ST-10",
+      "ST-11",
+      "UN-01",
+      "UN-02",
+      "UN-03",
+      "UN-04",
+      "UN-05",
+      "UN-06",
+      "UN-07",
+      "EX-01",
+      "EX-02",
+      "EX-03",
+      "EX-04",
+      "EX-05",
+      "EX-06",
+      "EX-07",
+      "EX-08",
+      "EX-09"
+    ],
+    "all_27_ids_present": true,
+    "all_reference_targets_exist": true,
+    "control_characters_clean": true
+  }
+}

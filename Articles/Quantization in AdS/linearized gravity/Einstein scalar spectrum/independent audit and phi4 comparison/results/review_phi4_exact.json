@@ -1,0 +1,4327 @@
+{
+  "scope": "Fresh independent first-order two-particle physics review; conditional UN03/04 substitution only",
+  "normalization": "S_int=-lambda/4! integral sqrt(-g) phi^4; KG-normalized modes; [a,a†]=1; AdS-invariant free-vacuum Wick ordering",
+  "matrix_units": "pi/lambda times the physical first-order energy shift",
+  "script_sha256": "4c6e81fd0473ed56b09412edd5610e14382ee61eae1e0be36a0710baff03f95a",
+  "python_version": "3.14.8",
+  "sympy_version": "1.14.0",
+  "all_passed": true,
+  "check_count": 574,
+  "symbolic_coincidences": {
+    "0,0": "1",
+    "1,1": "(w - 1)*(w + 1)",
+    "2,0": "0",
+    "0,2": "0",
+    "2,2": "(w - 1)**2*(w + 1)**2",
+    "3,1": "0"
+  },
+  "n1_energy_coefficient": "1/(8*pi*(2*D + 1))",
+  "blocks": [
+    {
+      "Delta": "3/2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "1/16"
+        ]
+      ],
+      "characteristic_polynomial": "(16*X - 1)/16",
+      "nonzero_eigenvalues": [
+        "1/16"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "3/64",
+          "1/64"
+        ],
+        [
+          "1/64",
+          "3/64"
+        ]
+      ],
+      "characteristic_polynomial": "(16*X - 1)*(32*X - 1)/512",
+      "nonzero_eigenvalues": [
+        "1/16",
+        "1/32"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "5/128",
+          "sqrt(15)/128"
+        ],
+        [
+          "sqrt(15)/128",
+          "3/128"
+        ]
+      ],
+      "characteristic_polynomial": "X*(16*X - 1)/16",
+      "nonzero_eigenvalues": [
+        "1/16"
+      ],
+      "zero_multiplicity": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 5,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "15/512",
+          "sqrt(30)/512",
+          "-1/512",
+          "sqrt(30)/512",
+          "5*sqrt(2)/512"
+        ],
+        [
+          "sqrt(30)/512",
+          "5/256",
+          "sqrt(30)/512",
+          "5/256",
+          "sqrt(15)/768"
+        ],
+        [
+          "-1/512",
+          "sqrt(30)/512",
+          "15/512",
+          "sqrt(30)/512",
+          "5*sqrt(2)/512"
+        ],
+        [
+          "sqrt(30)/512",
+          "5/256",
+          "sqrt(30)/512",
+          "5/256",
+          "sqrt(15)/768"
+        ],
+        [
+          "5*sqrt(2)/512",
+          "sqrt(15)/768",
+          "5*sqrt(2)/512",
+          "sqrt(15)/768",
+          "13/768"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(16*X - 1)*(32*X - 1)*(48*X - 1)/24576",
+      "nonzero_eigenvalues": [
+        "1/16",
+        "1/32",
+        "1/48"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 4,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "7/256",
+          "0",
+          "sqrt(7)/128",
+          "sqrt(7)/256"
+        ],
+        [
+          "0",
+          "7/256",
+          "sqrt(7)/256",
+          "sqrt(7)/128"
+        ],
+        [
+          "sqrt(7)/128",
+          "sqrt(7)/256",
+          "5/256",
+          "1/64"
+        ],
+        [
+          "sqrt(7)/256",
+          "sqrt(7)/128",
+          "1/64",
+          "5/256"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(16*X - 1)*(32*X - 1)/512",
+      "nonzero_eigenvalues": [
+        "1/16",
+        "1/32"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 8,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "175/8192",
+          "25*sqrt(7)/8192",
+          "-sqrt(7)/8192",
+          "-23/8192",
+          "25*sqrt(7)/8192",
+          "105/8192",
+          "63/8192",
+          "-sqrt(7)/8192"
+        ],
+        [
+          "25*sqrt(7)/8192",
+          "105/8192",
+          "63/8192",
+          "-sqrt(7)/8192",
+          "105/8192",
+          "15*sqrt(7)/8192",
+          "25*sqrt(7)/8192",
+          "63/8192"
+        ],
+        [
+          "-sqrt(7)/8192",
+          "63/8192",
+          "105/8192",
+          "25*sqrt(7)/8192",
+          "63/8192",
+          "25*sqrt(7)/8192",
+          "15*sqrt(7)/8192",
+          "105/8192"
+        ],
+        [
+          "-23/8192",
+          "-sqrt(7)/8192",
+          "25*sqrt(7)/8192",
+          "175/8192",
+          "-sqrt(7)/8192",
+          "63/8192",
+          "105/8192",
+          "25*sqrt(7)/8192"
+        ],
+        [
+          "25*sqrt(7)/8192",
+          "105/8192",
+          "63/8192",
+          "-sqrt(7)/8192",
+          "105/8192",
+          "15*sqrt(7)/8192",
+          "25*sqrt(7)/8192",
+          "63/8192"
+        ],
+        [
+          "105/8192",
+          "15*sqrt(7)/8192",
+          "25*sqrt(7)/8192",
+          "63/8192",
+          "15*sqrt(7)/8192",
+          "445/24576",
+          "139/24576",
+          "25*sqrt(7)/8192"
+        ],
+        [
+          "63/8192",
+          "25*sqrt(7)/8192",
+          "15*sqrt(7)/8192",
+          "105/8192",
+          "25*sqrt(7)/8192",
+          "139/24576",
+          "445/24576",
+          "15*sqrt(7)/8192"
+        ],
+        [
+          "-sqrt(7)/8192",
+          "63/8192",
+          "105/8192",
+          "25*sqrt(7)/8192",
+          "63/8192",
+          "25*sqrt(7)/8192",
+          "15*sqrt(7)/8192",
+          "105/8192"
+        ]
+      ],
+      "characteristic_polynomial": "X**4*(16*X - 1)*(32*X - 1)*(48*X - 1)*(64*X - 1)/1572864",
+      "nonzero_eigenvalues": [
+        "1/16",
+        "1/32",
+        "1/48",
+        "1/64"
+      ],
+      "zero_multiplicity": 4
+    },
+    {
+      "Delta": "2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "1/24"
+        ]
+      ],
+      "characteristic_polynomial": "(24*X - 1)/24",
+      "nonzero_eigenvalues": [
+        "1/24"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "1/30",
+          "1/120"
+        ],
+        [
+          "1/120",
+          "1/30"
+        ]
+      ],
+      "characteristic_polynomial": "(24*X - 1)*(40*X - 1)/960",
+      "nonzero_eigenvalues": [
+        "1/24",
+        "1/40"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "1/40",
+          "sqrt(6)/120"
+        ],
+        [
+          "sqrt(6)/120",
+          "1/60"
+        ]
+      ],
+      "characteristic_polynomial": "X*(24*X - 1)/24",
+      "nonzero_eigenvalues": [
+        "1/24"
+      ],
+      "zero_multiplicity": 1
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 5,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "3/140",
+          "sqrt(3)/280",
+          "-1/280",
+          "sqrt(3)/280",
+          "sqrt(2)/140"
+        ],
+        [
+          "sqrt(3)/280",
+          "1/70",
+          "sqrt(3)/280",
+          "1/70",
+          "sqrt(6)/840"
+        ],
+        [
+          "-1/280",
+          "sqrt(3)/280",
+          "3/140",
+          "sqrt(3)/280",
+          "sqrt(2)/140"
+        ],
+        [
+          "sqrt(3)/280",
+          "1/70",
+          "sqrt(3)/280",
+          "1/70",
+          "sqrt(6)/840"
+        ],
+        [
+          "sqrt(2)/140",
+          "sqrt(6)/840",
+          "sqrt(2)/140",
+          "sqrt(6)/840",
+          "11/840"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(24*X - 1)*(40*X - 1)*(56*X - 1)/53760",
+      "nonzero_eigenvalues": [
+        "1/24",
+        "1/40",
+        "1/56"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 4,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "2/105",
+          "-1/420",
+          "sqrt(6)/168",
+          "sqrt(6)/420"
+        ],
+        [
+          "-1/420",
+          "2/105",
+          "sqrt(6)/420",
+          "sqrt(6)/168"
+        ],
+        [
+          "sqrt(6)/168",
+          "sqrt(6)/420",
+          "1/70",
+          "3/280"
+        ],
+        [
+          "sqrt(6)/420",
+          "sqrt(6)/168",
+          "3/280",
+          "1/70"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(24*X - 1)*(40*X - 1)/960",
+      "nonzero_eigenvalues": [
+        "1/24",
+        "1/40"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 8,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "1/63",
+          "sqrt(6)/504",
+          "-sqrt(6)/1260",
+          "-1/360",
+          "sqrt(6)/504",
+          "1/105",
+          "1/210",
+          "-sqrt(6)/1260"
+        ],
+        [
+          "sqrt(6)/504",
+          "1/105",
+          "1/210",
+          "-sqrt(6)/1260",
+          "1/105",
+          "sqrt(6)/840",
+          "sqrt(6)/420",
+          "1/210"
+        ],
+        [
+          "-sqrt(6)/1260",
+          "1/210",
+          "1/105",
+          "sqrt(6)/504",
+          "1/210",
+          "sqrt(6)/420",
+          "sqrt(6)/840",
+          "1/105"
+        ],
+        [
+          "-1/360",
+          "-sqrt(6)/1260",
+          "sqrt(6)/504",
+          "1/63",
+          "-sqrt(6)/1260",
+          "1/210",
+          "1/105",
+          "sqrt(6)/504"
+        ],
+        [
+          "sqrt(6)/504",
+          "1/105",
+          "1/210",
+          "-sqrt(6)/1260",
+          "1/105",
+          "sqrt(6)/840",
+          "sqrt(6)/420",
+          "1/210"
+        ],
+        [
+          "1/105",
+          "sqrt(6)/840",
+          "sqrt(6)/420",
+          "1/210",
+          "sqrt(6)/840",
+          "1/70",
+          "1/280",
+          "sqrt(6)/420"
+        ],
+        [
+          "1/210",
+          "sqrt(6)/420",
+          "sqrt(6)/840",
+          "1/105",
+          "sqrt(6)/420",
+          "1/280",
+          "1/70",
+          "sqrt(6)/840"
+        ],
+        [
+          "-sqrt(6)/1260",
+          "1/210",
+          "1/105",
+          "sqrt(6)/504",
+          "1/210",
+          "sqrt(6)/420",
+          "sqrt(6)/840",
+          "1/105"
+        ]
+      ],
+      "characteristic_polynomial": "X**4*(24*X - 1)*(40*X - 1)*(56*X - 1)*(72*X - 1)/3870720",
+      "nonzero_eigenvalues": [
+        "1/24",
+        "1/40",
+        "1/56",
+        "1/72"
+      ],
+      "zero_multiplicity": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "3/88"
+        ]
+      ],
+      "characteristic_polynomial": "(88*X - 3)/88",
+      "nonzero_eigenvalues": [
+        "3/88"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 1,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "21/748",
+          "9/1496"
+        ],
+        [
+          "9/1496",
+          "21/748"
+        ]
+      ],
+      "characteristic_polynomial": "(88*X - 3)*(136*X - 3)/11968",
+      "nonzero_eigenvalues": [
+        "3/88",
+        "3/136"
+      ],
+      "zero_multiplicity": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 0,
+      "dimension": 2,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "15/748",
+          "3*sqrt(70)/1496"
+        ],
+        [
+          "3*sqrt(70)/1496",
+          "21/1496"
+        ]
+      ],
+      "characteristic_polynomial": "X*(88*X - 3)/88",
+      "nonzero_eigenvalues": [
+        "3/88"
+      ],
+      "zero_multiplicity": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 2,
+      "dimension": 5,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "315/17204",
+          "27*sqrt(35)/34408",
+          "-129/34408",
+          "27*sqrt(35)/34408",
+          "105*sqrt(2)/17204"
+        ],
+        [
+          "27*sqrt(35)/34408",
+          "105/8602",
+          "27*sqrt(35)/34408",
+          "105/8602",
+          "9*sqrt(70)/34408"
+        ],
+        [
+          "-129/34408",
+          "27*sqrt(35)/34408",
+          "315/17204",
+          "27*sqrt(35)/34408",
+          "105*sqrt(2)/17204"
+        ],
+        [
+          "27*sqrt(35)/34408",
+          "105/8602",
+          "27*sqrt(35)/34408",
+          "105/8602",
+          "9*sqrt(70)/34408"
+        ],
+        [
+          "105*sqrt(2)/17204",
+          "9*sqrt(70)/34408",
+          "105*sqrt(2)/17204",
+          "9*sqrt(70)/34408",
+          "393/34408"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(88*X - 3)*(136*X - 3)*(184*X - 3)/2202112",
+      "nonzero_eigenvalues": [
+        "3/88",
+        "3/136",
+        "3/184"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 1,
+      "dimension": 4,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "273/17204",
+          "-195/68816",
+          "3*sqrt(273)/4048",
+          "9*sqrt(273)/34408"
+        ],
+        [
+          "-195/68816",
+          "273/17204",
+          "9*sqrt(273)/34408",
+          "3*sqrt(273)/4048"
+        ],
+        [
+          "3*sqrt(273)/4048",
+          "9*sqrt(273)/34408",
+          "105/8602",
+          "609/68816"
+        ],
+        [
+          "9*sqrt(273)/34408",
+          "3*sqrt(273)/4048",
+          "609/68816",
+          "105/8602"
+        ]
+      ],
+      "characteristic_polynomial": "X**2*(88*X - 3)*(136*X - 3)/11968",
+      "nonzero_eigenvalues": [
+        "3/88",
+        "3/136"
+      ],
+      "zero_multiplicity": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 3,
+      "dimension": 8,
+      "basis_unordered_pairs": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pi_times_energy_coefficient_matrix": [
+        [
+          "6825/498916",
+          "225*sqrt(273)/997832",
+          "-3*sqrt(273)/21692",
+          "-4941/1995664",
+          "225*sqrt(273)/997832",
+          "4095/498916",
+          "7371/1995664",
+          "-3*sqrt(273)/21692"
+        ],
+        [
+          "225*sqrt(273)/997832",
+          "4095/498916",
+          "7371/1995664",
+          "-3*sqrt(273)/21692",
+          "4095/498916",
+          "135*sqrt(273)/997832",
+          "75*sqrt(273)/249458",
+          "7371/1995664"
+        ],
+        [
+          "-3*sqrt(273)/21692",
+          "7371/1995664",
+          "4095/498916",
+          "225*sqrt(273)/997832",
+          "7371/1995664",
+          "75*sqrt(273)/249458",
+          "135*sqrt(273)/997832",
+          "4095/498916"
+        ],
+        [
+          "-4941/1995664",
+          "-3*sqrt(273)/21692",
+          "225*sqrt(273)/997832",
+          "6825/498916",
+          "-3*sqrt(273)/21692",
+          "7371/1995664",
+          "4095/498916",
+          "225*sqrt(273)/997832"
+        ],
+        [
+          "225*sqrt(273)/997832",
+          "4095/498916",
+          "7371/1995664",
+          "-3*sqrt(273)/21692",
+          "4095/498916",
+          "135*sqrt(273)/997832",
+          "75*sqrt(273)/249458",
+          "7371/1995664"
+        ],
+        [
+          "4095/498916",
+          "135*sqrt(273)/997832",
+          "75*sqrt(273)/249458",
+          "7371/1995664",
+          "135*sqrt(273)/997832",
+          "6285/498916",
+          "5571/1995664",
+          "75*sqrt(273)/249458"
+        ],
+        [
+          "7371/1995664",
+          "75*sqrt(273)/249458",
+          "135*sqrt(273)/997832",
+          "4095/498916",
+          "75*sqrt(273)/249458",
+          "5571/1995664",
+          "6285/498916",
+          "135*sqrt(273)/997832"
+        ],
+        [
+          "-3*sqrt(273)/21692",
+          "7371/1995664",
+          "4095/498916",
+          "225*sqrt(273)/997832",
+          "7371/1995664",
+          "75*sqrt(273)/249458",
+          "135*sqrt(273)/997832",
+          "4095/498916"
+        ]
+      ],
+      "characteristic_polynomial": "X**4*(88*X - 3)*(136*X - 3)*(184*X - 3)*(232*X - 3)/510889984",
+      "nonzero_eigenvalues": [
+        "3/88",
+        "3/136",
+        "3/184",
+        "3/232"
+      ],
+      "zero_multiplicity": 4
+    }
+  ],
+  "resonance_count": 495,
+  "UN_substitution": {
+    "d": "Delta",
+    "a": "1/[8*pi*(2*d-1)]",
+    "s": "-a/(4*d + 2)",
+    "r4": "a*(2*d + 5)/(2*d + 1)",
+    "r6": "2*a*(2*d + 7)/(2*d + 1)",
+    "epsilon": "27*a*(d + 3)*(d + 4)/((2*d + 1)*(17*d + 43))"
+  },
+  "checks": [
+    {
+      "label": "symbolic_coincidence_0_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_coincidence_1_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_coincidence_2_0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_coincidence_0_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_coincidence_2_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_coincidence_3_1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "symbolic_n1_absolute_energy_coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=0_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=0_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=0_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=0_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=1_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=1_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=1_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=1_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=2_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=2_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=2_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=2_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=3_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=3_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=3_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=3/2_p=3_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=0_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=0_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=0_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=0_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=1_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=1_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=1_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=1_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=2_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=2_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=2_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=2_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=3_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=3_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=3_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=2_p=3_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=0_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=0_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=0_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=0_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=1_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=1_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=1_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=1_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=2_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=2_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=2_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=2_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=3_q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=3_q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=3_q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "KG_norm_D=7/3_p=3_q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=0_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=1_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=2_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=2_Q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=3_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=3/2_P=3_Q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=0_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=1_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=2_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=2_Q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=3_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=2_P=3_Q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=0_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=1_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=2_Q=0",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=2_Q=2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=3_Q=1",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "direct_pair_block_D=7/3_P=3_Q=3",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 2)_children=((0, 0), (0, 0), (0, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 3)_children=((0, 0), (0, 0), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 4)_children=((0, 0), (0, 0), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 2)_children=((0, 0), (0, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 3)_children=((0, 0), (0, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 4)_children=((0, 0), (0, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 2)_children=((0, 0), (0, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 3)_children=((0, 0), (0, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 0), (0, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 4)_children=((0, 0), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 5)_children=((0, 0), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 3)_children=((0, 0), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 4)_children=((0, 0), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 5)_children=((0, 0), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 3)_children=((0, 0), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 0), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 0), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 6)_children=((0, 0), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 4)_children=((0, 0), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 5)_children=((0, 0), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 6)_children=((0, 0), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 0), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 0), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 0), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 2)_children=((0, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 3)_children=((0, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 2)_children=((0, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 3)_children=((0, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 3)_children=((0, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 2)_children=((0, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 3)_children=((0, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((0, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((0, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((0, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((0, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 5)_children=((0, 1), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 6)_children=((0, 1), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 4)_children=((0, 1), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 5)_children=((0, 1), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 6)_children=((0, 1), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 1), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 1), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 1), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 7)_children=((0, 1), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 5)_children=((0, 1), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 6)_children=((0, 1), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 7)_children=((0, 1), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 1), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 1), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 7)_children=((0, 1), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 3)_children=((0, 1), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 1), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 1), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 3)_children=((0, 1), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 1), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 1), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 7)_children=((0, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 7)_children=((0, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 3)_children=((0, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((0, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((0, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((0, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((0, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 7)_children=((0, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(2, 8)_children=((0, 2), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 6)_children=((0, 2), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 7)_children=((0, 2), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(3, 8)_children=((0, 2), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 2), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 7)_children=((0, 2), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 8)_children=((0, 2), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 4)_children=((0, 2), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 5)_children=((0, 2), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 2), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((0, 2), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 2), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 2), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 6)_children=((0, 2), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 7)_children=((0, 2), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((0, 2), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 2), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 7)_children=((0, 2), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(4, 8)_children=((0, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((0, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 7)_children=((0, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 8)_children=((0, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((0, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((0, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((0, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((0, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 7)_children=((0, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 8)_children=((0, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 2)_children=((1, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 3)_children=((1, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((1, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 2)_children=((1, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 3)_children=((1, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((1, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 4)_children=((1, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((1, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 3)_children=((1, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((1, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((1, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((1, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((1, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((1, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((1, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 2)_children=((1, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 3)_children=((1, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 4)_children=((1, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 4)_children=((1, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 5)_children=((1, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 6)_children=((1, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 5)_children=((1, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 6)_children=((1, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 4)_children=((1, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((1, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((1, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 7)_children=((1, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 5)_children=((1, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((1, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 7)_children=((1, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 3)_children=((1, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 4)_children=((1, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 5)_children=((1, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 5)_children=((1, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 6)_children=((1, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 7)_children=((1, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(5, 8)_children=((1, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 6)_children=((1, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 7)_children=((1, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(6, 8)_children=((1, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 4)_children=((1, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 5)_children=((1, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 6)_children=((1, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 6)_children=((1, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 7)_children=((1, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(7, 8)_children=((1, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 2)_children=((2, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 3)_children=((2, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 4)_children=((2, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 4)_children=((2, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 5)_children=((2, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 6)_children=((2, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 5)_children=((2, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 6)_children=((2, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 7)_children=((2, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=2_A=(8, 8)_children=((2, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 3)_children=((0, 0), (0, 0), (0, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 4)_children=((0, 0), (0, 0), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 5)_children=((0, 0), (0, 0), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 3)_children=((0, 0), (0, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 4)_children=((0, 0), (0, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 5)_children=((0, 0), (0, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 3)_children=((0, 0), (0, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 4)_children=((0, 0), (0, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 0), (0, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 5)_children=((0, 0), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 6)_children=((0, 0), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 4)_children=((0, 0), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 5)_children=((0, 0), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 6)_children=((0, 0), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 4)_children=((0, 0), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 0), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 0), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 7)_children=((0, 0), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 5)_children=((0, 0), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 6)_children=((0, 0), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 7)_children=((0, 0), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 0), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 0), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 0), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 3)_children=((0, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 4)_children=((0, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 3)_children=((0, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 4)_children=((0, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 4)_children=((0, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 3)_children=((0, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 4)_children=((0, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((0, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((0, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((0, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((0, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 6)_children=((0, 1), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 7)_children=((0, 1), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 5)_children=((0, 1), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 6)_children=((0, 1), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 7)_children=((0, 1), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 1), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 1), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 1), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 8)_children=((0, 1), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 6)_children=((0, 1), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 7)_children=((0, 1), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 8)_children=((0, 1), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 1), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 1), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 8)_children=((0, 1), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 4)_children=((0, 1), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 1), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 1), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 4)_children=((0, 1), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 1), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 1), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 8)_children=((0, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 8)_children=((0, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 4)_children=((0, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((0, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((0, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((0, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((0, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 8)_children=((0, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(3, 9)_children=((0, 2), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 7)_children=((0, 2), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 8)_children=((0, 2), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(4, 9)_children=((0, 2), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 2), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 8)_children=((0, 2), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 9)_children=((0, 2), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 5)_children=((0, 2), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 6)_children=((0, 2), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 2), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((0, 2), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 2), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 2), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 7)_children=((0, 2), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 8)_children=((0, 2), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((0, 2), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 2), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 8)_children=((0, 2), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(5, 9)_children=((0, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((0, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 8)_children=((0, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 9)_children=((0, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((0, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((0, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((0, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((0, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 8)_children=((0, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 9)_children=((0, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 3)_children=((1, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 4)_children=((1, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((1, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 3)_children=((1, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 4)_children=((1, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((1, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 5)_children=((1, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((1, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 4)_children=((1, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((1, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((1, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((1, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((1, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((1, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((1, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 3)_children=((1, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 4)_children=((1, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 5)_children=((1, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 5)_children=((1, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 6)_children=((1, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 7)_children=((1, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 6)_children=((1, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 7)_children=((1, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 5)_children=((1, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((1, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((1, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 8)_children=((1, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 6)_children=((1, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((1, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 8)_children=((1, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 4)_children=((1, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 5)_children=((1, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 6)_children=((1, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 6)_children=((1, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 7)_children=((1, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 8)_children=((1, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(6, 9)_children=((1, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 7)_children=((1, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 8)_children=((1, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(7, 9)_children=((1, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 5)_children=((1, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 6)_children=((1, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 7)_children=((1, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 7)_children=((1, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 8)_children=((1, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(8, 9)_children=((1, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 3)_children=((2, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 4)_children=((2, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 5)_children=((2, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 5)_children=((2, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 6)_children=((2, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 7)_children=((2, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 6)_children=((2, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 7)_children=((2, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 8)_children=((2, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=3_A=(9, 9)_children=((2, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 4)_children=((0, 0), (0, 0), (0, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 5)_children=((0, 0), (0, 0), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 6)_children=((0, 0), (0, 0), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 4)_children=((0, 0), (0, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 5)_children=((0, 0), (0, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 6)_children=((0, 0), (0, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 4)_children=((0, 0), (0, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 5)_children=((0, 0), (0, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 0), (0, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 6)_children=((0, 0), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 7)_children=((0, 0), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 5)_children=((0, 0), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 6)_children=((0, 0), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 7)_children=((0, 0), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 5)_children=((0, 0), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 0), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 0), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 8)_children=((0, 0), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 6)_children=((0, 0), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 7)_children=((0, 0), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 8)_children=((0, 0), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 0), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 0), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 0), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 4)_children=((0, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 5)_children=((0, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 4)_children=((0, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 5)_children=((0, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 5)_children=((0, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 4)_children=((0, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 5)_children=((0, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((0, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((0, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((0, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((0, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 7)_children=((0, 1), (0, 1), (0, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 8)_children=((0, 1), (0, 1), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 6)_children=((0, 1), (0, 1), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 7)_children=((0, 1), (0, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 8)_children=((0, 1), (0, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 1), (0, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 1), (0, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 1), (0, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 9)_children=((0, 1), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 7)_children=((0, 1), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 8)_children=((0, 1), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 9)_children=((0, 1), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 1), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 1), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 9)_children=((0, 1), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 5)_children=((0, 1), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 1), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 1), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 5)_children=((0, 1), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 1), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 1), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 9)_children=((0, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 9)_children=((0, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 5)_children=((0, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((0, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((0, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((0, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((0, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 9)_children=((0, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(4, 10)_children=((0, 2), (0, 2), (0, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 8)_children=((0, 2), (0, 2), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 9)_children=((0, 2), (0, 2), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(5, 10)_children=((0, 2), (0, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 2), (0, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 9)_children=((0, 2), (0, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 10)_children=((0, 2), (0, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 6)_children=((0, 2), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 7)_children=((0, 2), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 2), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((0, 2), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 2), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 2), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 8)_children=((0, 2), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 9)_children=((0, 2), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((0, 2), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 2), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 9)_children=((0, 2), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(6, 10)_children=((0, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((0, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 9)_children=((0, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 10)_children=((0, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((0, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((0, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((0, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((0, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 9)_children=((0, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 10)_children=((0, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 4)_children=((1, 0), (1, 0), (1, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 5)_children=((1, 0), (1, 0), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((1, 0), (1, 0), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 4)_children=((1, 0), (1, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 5)_children=((1, 0), (1, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((1, 0), (1, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 6)_children=((1, 0), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((1, 0), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 5)_children=((1, 0), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((1, 0), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((1, 0), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((1, 0), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((1, 0), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((1, 0), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((1, 0), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 4)_children=((1, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 5)_children=((1, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 6)_children=((1, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 6)_children=((1, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 7)_children=((1, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 8)_children=((1, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 7)_children=((1, 1), (1, 1), (1, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 8)_children=((1, 1), (1, 1), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 6)_children=((1, 1), (1, 1), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((1, 1), (1, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((1, 1), (1, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 9)_children=((1, 1), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 7)_children=((1, 1), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((1, 1), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 9)_children=((1, 1), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 5)_children=((1, 1), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 6)_children=((1, 1), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 7)_children=((1, 1), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 7)_children=((1, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 8)_children=((1, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 9)_children=((1, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(7, 10)_children=((1, 2), (1, 2), (1, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 8)_children=((1, 2), (1, 2), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 9)_children=((1, 2), (1, 2), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(8, 10)_children=((1, 2), (1, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 6)_children=((1, 2), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 7)_children=((1, 2), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 8)_children=((1, 2), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 8)_children=((1, 2), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 9)_children=((1, 2), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(9, 10)_children=((1, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 4)_children=((2, 0), (2, 0), (2, 0))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 5)_children=((2, 0), (2, 0), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 6)_children=((2, 0), (2, 0), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 6)_children=((2, 0), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 7)_children=((2, 0), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 8)_children=((2, 0), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 7)_children=((2, 1), (2, 1), (2, 1))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 8)_children=((2, 1), (2, 1), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 9)_children=((2, 1), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "resonant_1_to_3_D=4_A=(10, 10)_children=((2, 2), (2, 2), (2, 2))",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "nonresonant_ground_overlap_negative_control",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UN03_defect_general_k_ge_2",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UN03_r4",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UN03_r6",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UN04_Dstar",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UN04_epsilon",
+      "passed": true,
+      "residual": "0"
+    }
+  ]
+}

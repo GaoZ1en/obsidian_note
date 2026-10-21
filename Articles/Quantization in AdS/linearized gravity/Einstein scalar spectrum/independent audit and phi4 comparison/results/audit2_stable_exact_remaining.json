@@ -1,0 +1,88 @@
+{
+  "method": "fresh physical reproducing kernel, labelled differential Casimirs and exact all-index band tests",
+  "sage_version": "10.9",
+  "all_passed": true,
+  "elapsed_seconds": 0.25491881370544434,
+  "checks": [
+    {
+      "label": "EX01_reproducing_N3_basis0",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N3_basis1",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N3_basis2",
+      "passed": true
+    },
+    {
+      "label": "EX01_degree2_flag_N3",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis0",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis1",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis2",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis3",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis4",
+      "passed": true
+    },
+    {
+      "label": "EX01_reproducing_N4_basis5",
+      "passed": true
+    },
+    {
+      "label": "EX01_degree2_flag_N4",
+      "passed": true
+    },
+    {
+      "label": "EX01_Euclidean_failure_exact",
+      "passed": true
+    },
+    {
+      "label": "EX08_generic_odd_values",
+      "passed": true
+    },
+    {
+      "label": "EX08_generic_degree4_obstruction",
+      "passed": true,
+      "witness": "(9/128) * (d + 3/2)^-2 * (d - 1/2)^-1 * (d + 1/2)^-1 * (d + 5/2)^-1 * d * (d + 5/3) * (d + 3) * (d + 4) * (d + 2)^2"
+    },
+    {
+      "label": "EX08_exceptional_odd_values",
+      "passed": true
+    },
+    {
+      "label": "EX08_exceptional_w5",
+      "passed": true
+    },
+    {
+      "label": "EX08_exceptional_degree5_obstruction",
+      "passed": true,
+      "witness": "(9/32) * (d + 5/2)^-2 * (d - 1/2)^-1 * (d + 3/2)^-1 * d * (d + 1) * (d + 8/3) * (d + 4)^2"
+    },
+    {
+      "label": "EX08_all_physical_masses_no_roots",
+      "passed": true
+    },
+    {
+      "label": "EX06_all_index_positive_coefficients",
+      "passed": true,
+      "band1": "8*d^4 + 80*d^3*n + 156*d^2*n^2 + 116*d*n^3 + 29*n^4 + 128*d^3 + 532*d^2*n + 606*d*n^2 + 202*n^3 + 438*d^2 + 938*d*n + 469*n^2 + 448*d + 448*n + 130",
+      "band2": "120*d^4 + 432*d^3*n + 608*d^2*n^2 + 392*d*n^3 + 98*n^4 + 584*d^3 + 1632*d^2*n + 1572*d*n^2 + 524*n^3 + 950*d^2 + 1852*d*n + 926*n^2 + 628*d + 628*n + 142"
+    }
+  ]
+}

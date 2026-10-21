@@ -1,5 +1,9 @@
 # Einstein–Scalar Spectrum in Global AdS3
 
+## Independent audit and fixed-background φ⁴ comparison
+
+The separate [independent audit and φ⁴ comparison](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/README.md>) preserves the supplied research package, a complete pinned-environment rerun, fresh gravitational source and one-body audits, and an independently derived real-scalar φ⁴ comparison. It distinguishes first-order coefficient theorems from unresolved physical interfaces. New structural results include the exact three-particle balanced contact rank and fixed-particle-number kernel asymptotics. The existing research text has not been revised; see the separate audit for scope and qualifications.
+
 ## Current OFPT result
 
 For a direct evaluation of the connected operator in `Untitled.md`, see [Direct K4 two-particle energy shifts.md](Direct%20K4%20two-particle%20energy%20shifts.md). It reduces the original maximal-slice circular matrix elements to finite rational sums for arbitrary physical $\Delta>1$, proves the cancellation of the remaining nonpolynomial moment, and uses free representation coefficients to recover every primary shift. Its separate angular checks retain the boundary-graviton anticommutator; no equivalence to the covariant response calculation supplies the matrix elements.

@@ -1,0 +1,453 @@
+{
+  "counterexample_N3": {
+    "DL_zero": true,
+    "DR_zero": true,
+    "swap_odd": true,
+    "bidegree_3_3": true,
+    "expected_nonzero_status": true,
+    "SN_adjacent_1": true,
+    "SN_adjacent_2": true
+  },
+  "counterexample_N4": {
+    "DL_zero": true,
+    "DR_zero": true,
+    "swap_odd": true,
+    "bidegree_3_3": true,
+    "expected_nonzero_status": true,
+    "SN_adjacent_1": true,
+    "SN_adjacent_2": true,
+    "SN_adjacent_3": true,
+    "double_pair_value_minus4": true,
+    "bilinear_value_2": true
+  },
+  "N3_exact_ranks": [
+    {
+      "Delta": "3/2",
+      "P": 0,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "rank": 2,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "rank": 3,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "rank": 4,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "rank": 5,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "rank": 6,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "rank": 7,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "rank": 8,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "rank": 9,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "rank": 10,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 0,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "rank": 2,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "rank": 3,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "rank": 4,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "rank": 5,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "rank": 6,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "rank": 7,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "rank": 8,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "rank": 9,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "rank": 10,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 0,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "rank": 1,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "rank": 2,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "rank": 3,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "rank": 4,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "rank": 5,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "rank": 6,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "rank": 7,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "rank": 8,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "rank": 9,
+      "rank_expected": true,
+      "Casimir_sum": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "rank": 10,
+      "rank_expected": true,
+      "Casimir_sum": true
+    }
+  ],
+  "N3_band_and_weighted_trace": {
+    "checks": {
+      "tridiagonal": true,
+      "lower_coefficient_formula": true,
+      "weighted_trace_lower": true,
+      "weighted_trace_upper": true
+    },
+    "lower_coefficients": [
+      "-7",
+      "-12",
+      "-15",
+      "-16",
+      "-15",
+      "-12"
+    ],
+    "Rc": "92054/45045",
+    "traceW": "109922/45045",
+    "T_Rc": "92054/15015"
+  },
+  "characters": {
+    "checks": {
+      "N3_dimension_formula_P0_to_14": true,
+      "N3_R_formula_P0_to_14": true,
+      "N4_R_formula_P0_to_14": true
+    },
+    "bounds": [
+      {
+        "N": 3,
+        "P": 0,
+        "D": 1,
+        "R": 1,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 3,
+        "P": 1,
+        "D": 1,
+        "R": 2,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 3,
+        "P": 2,
+        "D": 2,
+        "R": 3,
+        "rank_lower": 1,
+        "rank_upper": 2
+      },
+      {
+        "N": 3,
+        "P": 3,
+        "D": 3,
+        "R": 4,
+        "rank_lower": 2,
+        "rank_upper": 3
+      },
+      {
+        "N": 3,
+        "P": 4,
+        "D": 5,
+        "R": 5,
+        "rank_lower": 2,
+        "rank_upper": 5
+      },
+      {
+        "N": 3,
+        "P": 5,
+        "D": 6,
+        "R": 6,
+        "rank_lower": 2,
+        "rank_upper": 6
+      },
+      {
+        "N": 3,
+        "P": 6,
+        "D": 9,
+        "R": 7,
+        "rank_lower": 3,
+        "rank_upper": 7
+      },
+      {
+        "N": 4,
+        "P": 0,
+        "D": 1,
+        "R": 1,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 4,
+        "P": 1,
+        "D": 1,
+        "R": 3,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 4,
+        "P": 2,
+        "D": 3,
+        "R": 8,
+        "rank_lower": 2,
+        "rank_upper": 3
+      },
+      {
+        "N": 4,
+        "P": 3,
+        "D": 6,
+        "R": 16,
+        "rank_lower": 3,
+        "rank_upper": 6
+      },
+      {
+        "N": 4,
+        "P": 4,
+        "D": 13,
+        "R": 29,
+        "rank_lower": 5,
+        "rank_upper": 13
+      },
+      {
+        "N": 4,
+        "P": 5,
+        "D": 22,
+        "R": 47,
+        "rank_lower": 8,
+        "rank_upper": 22
+      },
+      {
+        "N": 4,
+        "P": 6,
+        "D": 39,
+        "R": 72,
+        "rank_lower": 12,
+        "rank_upper": 39
+      },
+      {
+        "N": 5,
+        "P": 0,
+        "D": 1,
+        "R": 1,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 5,
+        "P": 1,
+        "D": 1,
+        "R": 3,
+        "rank_lower": 1,
+        "rank_upper": 1
+      },
+      {
+        "N": 5,
+        "P": 2,
+        "D": 3,
+        "R": 11,
+        "rank_lower": 2,
+        "rank_upper": 3
+      },
+      {
+        "N": 5,
+        "P": 3,
+        "D": 7,
+        "R": 30,
+        "rank_lower": 3,
+        "rank_upper": 7
+      },
+      {
+        "N": 5,
+        "P": 4,
+        "D": 19,
+        "R": 72,
+        "rank_lower": 8,
+        "rank_upper": 19
+      },
+      {
+        "N": 5,
+        "P": 5,
+        "D": 39,
+        "R": 150,
+        "rank_lower": 15,
+        "rank_upper": 39
+      },
+      {
+        "N": 5,
+        "P": 6,
+        "D": 84,
+        "R": 289,
+        "rank_lower": 29,
+        "rank_upper": 84
+      }
+    ]
+  },
+  "all_passed": true
+}

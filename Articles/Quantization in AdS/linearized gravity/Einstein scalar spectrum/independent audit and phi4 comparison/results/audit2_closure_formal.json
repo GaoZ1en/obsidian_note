@@ -1,0 +1,26 @@
+{
+  "scalar_source_ratio_at_Delta_3_over_2": "3/16",
+  "checks": {
+    "C2_offshell_local_source_decomposition": true,
+    "C14_arbitrary_coefficient_q_ge2": true,
+    "C14_endpoint_q0": true,
+    "C14_endpoint_q1": true,
+    "L_C_identity": true,
+    "crossed_zero_source_region": true,
+    "crossed_diagonal_all_n": true,
+    "crossed_adjacent_all_n": true,
+    "spin0_annihilation_from_source_norm": true,
+    "spin2_annihilation_from_source_norm": true,
+    "removable_scalar_source_ratio": true,
+    "off_shell_field_Ctheta": true,
+    "off_shell_angular_average_Q_operator": true,
+    "tangential_indicial_polynomial": true,
+    "forced_log_leading_source": true,
+    "forced_log_metric_falloff": true,
+    "exceptional_trace_indicial_root": true,
+    "exceptional_trace_nonzero_source": true,
+    "exceptional_trace_source_is_nonzero": true
+  },
+  "all_checks_pass": true,
+  "scope": "New source/Casimir/recurrence and gauge-obstruction checks only; PHY09-12 audited analytically, no closure18 or onebody rerun."
+}

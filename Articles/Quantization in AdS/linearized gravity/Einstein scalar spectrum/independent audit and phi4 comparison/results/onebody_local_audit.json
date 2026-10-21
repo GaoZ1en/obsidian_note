@@ -1,0 +1,66 @@
+{
+	"scope":"Finite-time covariance and both tadpole sources; fixed-momentum kinetic insertion; all-mode IBP; explicit failures if common leg weights \/ fixed subtraction \/ radial-first order are omitted.",
+	"count":13,
+	"allPassed":true,
+	"checks":{
+		"finite_time_covariance_ODE":{
+			"zero":true,
+			"residual":"0"
+		},
+		"pressure_trace":{
+			"zero":true,
+			"residual":"0"
+		},
+		"stress_radial_conservation":{
+			"zero":true,
+			"residual":"0"
+		},
+		"fixed_momentum_Legendre":{
+			"zero":true,
+			"residual":"0"
+		},
+		"kinetic_counterterm_sign":{
+			"zero":true,
+			"residual":"0"
+		},
+		"tadpole_lapse":{
+			"zero":true,
+			"residual":"0"
+		},
+		"tadpole_conformal":{
+			"zero":true,
+			"residual":"0"
+		},
+		"all_mode_kinetic_IBP_identity":{
+			"zero":true,
+			"residual":"0"
+		},
+		"unmatched_external_leg_gap_remainder":{
+			"zero":true,
+			"residual":"0"
+		},
+		"finite_clock_term_gap_remainder":{
+			"zero":true,
+			"residual":"0"
+		},
+		"Hartree_ground_only_subtraction":{
+			"zero":true,
+			"residual":"0"
+		},
+		"radial_cutoff_first":{
+			"zero":true,
+			"residual":"0"
+		},
+		"nonuniform_joint_radial_endpoint":{
+			"zero":true,
+			"residual":"0"
+		}
+	},
+	"counterexamples":{
+		"Delta2_external_01_unmatched_legs_after_ground_gap":"16G\/105",
+		"Delta2_external_01_add_finite_Z=Gc\/y_after_ground_gap":"8Gc\/105; violates restored global Ward condition and is excluded by declared prescription",
+		"Hartree_ground_only":"-G*mu*(Delta-1)*(2n+|j|)\/3",
+		"joint_radial_time_boundary":"-4G*Delta*A*B on y=tau^(-1\/(2Delta-1)); radial-first prescribed order gives zero"
+	},
+	"messages":[]
+}

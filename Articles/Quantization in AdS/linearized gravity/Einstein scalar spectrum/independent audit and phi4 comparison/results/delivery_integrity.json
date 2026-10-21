@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "scope": "File integrity and links only, not a theorem checker",
+  "archive_members_unchanged": 432,
+  "input_pdf_unchanged": true,
+  "original_archive_unchanged": true,
+  "authored_notes": 11,
+  "checked_local_links": 133,
+  "link_issues": [],
+  "control_characters": [],
+  "package_suites_passed": [
+    "hierarchy",
+    "finite",
+    "physics",
+    "cluster",
+    "semiclassical"
+  ],
+  "fingerprints": {
+    "README.md": {
+      "sha256": "e324d0719b8edae496034b7d4b032914dd10d2f8d3cc0ca3f8f23e6ae210a154",
+      "bytes": 9543
+    },
+    "claim coverage.md": {
+      "sha256": "c889f9e4c2cd94b9716340701fcd376d50001dc0d4dc68ead58c7167cd4d0505",
+      "bytes": 16048
+    },
+    "figures/balanced_kernel_comparison.png": {
+      "sha256": "c72893057275a8de8590c713fe9847c316397ebf834f25df1d048a4be9b60d8b",
+      "bytes": 90017
+    },
+    "gravitational interface audit.md": {
+      "sha256": "00d8a9d4a67ede32f5d5c47ece98e9fd839d85d181490fa561b281848f8ac53b",
+      "bytes": 23108
+    },
+    "manuscript audit.md": {
+      "sha256": "129fdea1bc9d15bd8ac31b021f0724696ae79173fc116b03153e7b5ad5744627",
+      "bytes": 16208
+    },
+    "one-body subtraction audit.md": {
+      "sha256": "263d07e98d9c88f3e73b8ab02e81f7eeb85e7d022b36eedb6b3e562984e33e06",
+      "bytes": 11314
+    },
+    "phi4 spectrum.md": {
+      "sha256": "4347dbb90429a9bd3ca9ce8033cf20ca778a5cfd0767b3d0d024983fb58473c1",
+      "bytes": 31266
+    },
+    "reviews/fresh contact structure review.md": {
+      "sha256": "4c360a0c8b2f54d05bb861480342a73e3f1ceaac4bfd583341a09cda83ca6784",
+      "bytes": 19493
+    },
+    "reviews/fresh gravity normalization review.md": {
+      "sha256": "4b5757d8e4310de08f797322148a4420284482d6d25adaebd59f0076241f31de",
+      "bytes": 14929
+    },
+    "reviews/fresh phi4 physics review.md": {
+      "sha256": "2691f69921ae99e75658b868357f20bf918f00e5ab35c6d730fdfdb08ef8b32a",
+      "bytes": 18613
+    },
+    "scripts/build_audit_inventory.py": {
+      "sha256": "1f988d9f34f6aa127d0e0e53ce75fa9bcf9be7228f3d71573b3cdf6b3a245914",
+      "bytes": 7312
+    },
+    "scripts/contact_structure.py": {
+      "sha256": "833a0a7f7893ce206c27e13c82b54e26f0281bff84f2b9fc71716607696898bb",
+      "bytes": 15592
+    },
+    "scripts/gravity_certificate_review.py": {
+      "sha256": "89373b6f669e5e41359b3258b084f6356ef5102f5514d961b8a80e4640ecc937",
+      "bytes": 7528
+    },
+    "scripts/gravity_phi4_verification.py": {
+      "sha256": "e206e6835404da5a029e3596a1ce82b9b71be4d2faa0f82420db09480dd42822",
+      "bytes": 6510
+    },
+    "scripts/gravity_source_audit.py": {
+      "sha256": "4016e3c9b3c654b66144f23fa7f901fdc09e4bd338a77ec45ab8d26a5d5356e6",
+      "bytes": 9930
+    },
+    "scripts/onebody_allindex_audit.wl": {
+      "sha256": "a8386b5adf2329f13a44e9b53499200e176a932dc471f617d18510da86746a93",
+      "bytes": 5483
+    },
+    "scripts/onebody_crosscheck.wl": {
+      "sha256": "c12138eb5b2ce3214ff000d83ec278f5c0d63964e684ce4b43956d7773479a15",
+      "bytes": 1751
+    },
+    "scripts/onebody_exact_shells.wl": {
+      "sha256": "98494b5e600d88e7d00fde419ebac57db96733b6d35ef10919a41c3b67dc6f97",
+      "bytes": 3183
+    },
+    "scripts/onebody_local_audit.wl": {
+      "sha256": "e2f578b6eb42237f3755d95dff678f34200e9b818f46315a89cad854f5ae8844",
+      "bytes": 3535
+    },
+    "scripts/onebody_trace_audit.py": {
+      "sha256": "72f7821410bce0bfb4257bacf03ebfa23705d5d6e9f2056a5a3f94f53209071a",
+      "bytes": 8582
+    },
+    "scripts/pair_support_audit.py": {
+      "sha256": "5ab8a631cd6cb18b26cd17d50054b6a24f606bea10f06cf19f9da15e15d279d2",
+      "bytes": 5577
+    },
+    "scripts/phi4_checks.py": {
+      "sha256": "7a57555928584f1fea12816c243385ef42484d7ad2072779e8b1b44ec393db9c",
+      "bytes": 18901
+    },
+    "scripts/plot_kernel_comparison.py": {
+      "sha256": "b232ee079d6567f4a41e5601f7294dd023919890fcacb7d038fb142ec729eb12",
+      "bytes": 2224
+    },
+    "scripts/review_contact_fresh_exact.py": {
+      "sha256": "7c0fd4952621539b9782e3f87cbc495461c0694ba25147e01b41a05b9a2b6727",
+      "bytes": 6451
+    },
+    "scripts/review_gravity_checks.py": {
+      "sha256": "b384a9780c08cedcf627fea35bb50044c16804045a87381ef5614b284abeb0e2",
+      "bytes": 6934
+    },
+    "scripts/review_gravity_export_integrals.py": {
+      "sha256": "f480f26c5687239ee641a7ed98add0fc88bcd87f28633d2d64297b9e4d16ef3c",
+      "bytes": 2501
+    },
+    "scripts/review_gravity_integrals.wl": {
+      "sha256": "0c988917a4491a51fd5abe81061c7405df215c727e206a0418700817ebadf073",
+      "bytes": 1716
+    },
+    "scripts/review_phi4_exact.py": {
+      "sha256": "4c6e81fd0473ed56b09412edd5610e14382ee61eae1e0be36a0710baff03f95a",
+      "bytes": 7994
+    },
+    "scripts/stable_contact_comparison.py": {
+      "sha256": "2d891f724d9b7ef947fcdfb8b7174a6e85c8113b4831127ea3dd3e8daade2518",
+      "bytes": 1803
+    },
+    "scripts/verify_delivery.py": {
+      "sha256": "93ef5a962175cf5c11835339d86ae33f83ec8336439b97547592d4d8fadcdd2d",
+      "bytes": 3263
+    },
+    "structural comparison.md": {
+      "sha256": "ecc72afba9b9ea0c4978ad4c87c9abdf9bffcab854442f8794df9079bdd6b071",
+      "bytes": 32203
+    },
+    "universality and limits.md": {
+      "sha256": "d0d8b45f18125553b9df3720b7c62d0e935e239e9f66b3db56afd8a690a11253",
+      "bytes": 11859
+    }
+  },
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]"
+}

@@ -1,0 +1,611 @@
+[
+  {
+    "id": "EX-01",
+    "title": "Complete logarithmic-symbol classification of the oriented residual kernel",
+    "precise_statement": "For N>=2, Delta>1, and the oriented residual A_N=W_N-b_N(Q)I, its kernel is exactly the simultaneous pair-channel intersection k>=l+4. Let J_N=2N(N-1), let V_N be the Vandermonde in centered left variables, and let theta_a=sum_i Z_i^a Xi_i for a=1,...,N-1 be the logarithmic-symbol frame. Dividing a kernel tensor by V_N^4 and applying the physical tensor-to-Hom identification gives precisely a pure differential-order-Q symbol polynomial in the theta_a, with symmetric polynomial coefficients in e_2,...,e_N. Consequently sum_{P,Q} kappa_N(P,Q)x^P y^Q=x^{J_N}/[product_{r=2}^N(1-x^r) product_{a=1}^{N-1}(1-yx^a)]. The kernel is zero unless P>=Q+J_N and is one-dimensional at equality. Every state is reconstructed from V_N^4, this symbol frame and the actual degree-Q reproducing kernel, not a Euclidean replacement. The chiral V_N^4 intertwining parameter shift Delta_alg=Delta+4(N-1) is algebraic and is not a change of physical mass or an isometry.",
+    "assumptions": [
+      "N>=2, Delta>1, finite P,Q>=0; external labels may be reflected to orient the bound, but internal pair labels keep the original right/left convention.",
+      "Strict positivity and exact support of every oriented residual pair summand.",
+      "Use the real structure of the physical Bargmann metric to identify the right tensor factor with its algebraic dual."
+    ],
+    "limitations": [
+      "The result classifies one oriented baseline eigenspace, not the entire finite spectrum.",
+      "It is not a quantum-Hall phase identification, a mass-changing unitary map, or a consequence of quartic degree alone.",
+      "The count formula uses exact zero conditions; a small positive eigenvalue is not part of this kernel."
+    ],
+    "main_home": [
+      "Chapter 6, §§6.1–6.2 (Theorem EX-01)"
+    ],
+    "proof_home": [
+      "Appendix K, §§K.1–K.5"
+    ],
+    "dependency_ids": [
+      "PHY-06",
+      "FIN-01"
+    ]
+  },
+  {
+    "id": "EX-02",
+    "title": "Exact positive ranks and unaveraged fixed-right-degree asymptotics",
+    "precise_statement": "The physical positive rank is exactly d_N(P,Q)-kappa_N(P,Q). For N>=4 fixed, Q fixed and P tending to infinity, it is rho_{N,Q}P^{N-3}+O(P^{N-4}), where L_{N,Q}=binom(Q+N-2,N-2), tau_{N,Q}=[y^Q](1-y)^{-(N-2)}(1+y)^{-1}, and rho_{N,Q}=((7 binom(N,2)+NQ)L_{N,Q}+binom(N,2)tau_{N,Q})/[2 N! (N-3)!]. This is an unaveraged coefficient asymptotic. For N=3, d_3=((P+1)(Q+1)+3 epsilon_P epsilon_Q+2 c_P c_Q)/6 with epsilon_j=1 for even j and zero otherwise and c_j=(1,-1,0)_{j mod 3}; kappa_3=sum_{j=0}^Q d_ch(P-12-Q-j), where d_ch(r)=floor(r/6)+1-1_{r mod 6=1} for r>=0 and zero otherwise. The auxiliary size is r_Q=floor((Q+4)^2/4)-2 when P>=Q+2, and the physical positive rank equals r_Q for every P>=2Q+8. Exact coefficient recurrences permit large-index counts without expanding a degree-P state.",
+    "assumptions": [
+      "Delta>1; finite N>=3 and nonnegative right degree Q.",
+      "The asymptotic statement fixes N>=4 and Q before taking P to infinity.",
+      "The N=3 eventual threshold is sufficient, not asserted to be the earliest stable threshold at each Q."
+    ],
+    "limitations": [
+      "Rank counts do not determine positive eigenvalues, projectors or a microscopic scale.",
+      "Neither N nor Q is uniform in the displayed fixed-right-degree asymptotic.",
+      "An auxiliary zero direction and a physical baseline state remain distinct."
+    ],
+    "main_home": [
+      "Chapter 6, §6.3 (Theorem EX-02)"
+    ],
+    "proof_home": [
+      "Appendix K, §K.6"
+    ],
+    "dependency_ids": [
+      "FIN-01",
+      "EX-01",
+      "FIN-03"
+    ]
+  },
+  {
+    "id": "EX-03",
+    "title": "Affine pair-support eigenstate lemma",
+    "precise_statement": "If every pair component of a primary Psi lies only in channels on which gamma_{kl}=a+beta(C_k-C_0)+eta(C_l-C_0), then Psi is an exact eigenstate of the pair sum with g=binom(N,2)a+beta P(N Delta+P-1)+eta Q(N Delta+Q-1). The conclusion follows from the identity sum_{i<j}C_{ij}=C_tot+(N-2)sum_i C_i in each chirality. Different overlapping pair interactions need not commute. The finite global-primary projector preserves a pair-channel cutoff because the global representation commutes with its pair Casimir.",
+    "assumptions": [
+      "Identical positive-discrete-series scalar factors and a finite primary block.",
+      "A covariant self-adjoint two-body kernel with the stated affine values on every pair channel actually supporting Psi.",
+      "No Einstein formula is needed for the abstract lemma; the physical Einstein model is one application."
+    ],
+    "limitations": [
+      "The lemma is sufficient, not a classification of all exact eigenstates or all accidental degeneracies.",
+      "A minimum theorem needs the additional sign conditions on every unused pair channel (EX-05)."
+    ],
+    "main_home": [
+      "Chapter 6, §6.4 (Lemma EX-03)"
+    ],
+    "proof_home": [
+      "Chapter 6, §6.4; Appendix L, §§L.5–L.6 for applications"
+    ],
+    "dependency_ids": [
+      "FIN-01",
+      "PHY-03"
+    ]
+  },
+  {
+    "id": "EX-04",
+    "title": "Universal finite-support line, critical doublet, and chiral projected states",
+    "precise_statement": "Put a=gamma_00,b=gamma_20,c=gamma_11,e=gamma_31. The projected averaged seed Phi_1=Pi_{P,1}Av(z_1w_1z_2...z_P) is nonzero for every P>=1,N>=P+1 and has g=binom(N,2)a+N(c-a)/2+(b-a)(P-1)(N Delta+P)/[2(2Delta+1)]. For P>=3,N>=P-1, Phi_2=Pi_{P,1}Av(z_1^2w_1z_2...z_{P-1}) is nonzero; it has the same g when R=(2Delta+3)(a-b)-(2Delta+1)(c-e)=0. The two are independent for P>=3,N>=P+1. For Einstein values, R=-24Delta(2Delta^2+Delta-4)/[(2Delta-1)(2Delta+5)], whose only physical root is Delta_*=(sqrt(33)-1)/4. The complete N=4,P=3,Q=1 matrix at that mass is -(129+527sqrt(33))I_2/64. The chiral projected seed Pi_L(P)Av(z_1...z_P), 2<=P<=N, is also nonzero and has g=binom(N,2)a+(b-a)P(N Delta+P-1)/[2(2Delta+1)]. Coefficient functionals and their physical Gram duals give the actual states and the selected two-dimensional orthogonal projector.",
+    "assumptions": [
+      "Delta>1 and a covariant pair kernel; the universal formulas use only its displayed low-channel coefficients.",
+      "Each seed must exist and lie in the exact stated nonzero range; independence is asserted only on the stated overlap.",
+      "The critical-mass value and the explicit 2-by-2 scalar block use the Einstein kernel."
+    ],
+    "limitations": [
+      "The universal line remains an eigenvalue above Delta_* but is not then guaranteed to be the lower edge.",
+      "Do not extend the nonzero/independence ranges or identify this selected doublet with every degenerate state outside the complete minimum theorem.",
+      "No exchange of the fixed-degree Delta contraction with large N or large excitation is established here."
+    ],
+    "main_home": [
+      "Chapter 6, §6.4 (Theorem EX-04)"
+    ],
+    "proof_home": [
+      "Appendix L, §L.5; §L.4 for the complete finite endpoints within the minimum classification"
+    ],
+    "dependency_ids": [
+      "EX-03",
+      "FIN-01",
+      "FIN-02",
+      "PHY-05"
+    ]
+  },
+  {
+    "id": "EX-05",
+    "title": "Complete finite-N affine minimum multiplicities from root-power inverse systems",
+    "precise_statement": "The Fischer isometry z^p -> x^p/(Delta)_p carries the physical primary condition to B=sum_i(x_i partial_i^2+Delta partial_i) and the pair cutoff k<=r to (partial_i-partial_j)^{r+1}F=0. Orthogonality to multiplication by S=sum_i x_i identifies the primary slice with the homogeneous quotient by S. The cubic root-power quotient has Hilbert series (1+t)^N-t and the complete subset-module realization; the quartic quotient has series (1+(N-1)t^2)(1+t)^{N-1} and the exact marked-subset module sequence described in Appendix L. Pairing with the right Bose representation gives complete finite-N affine-minimum multiplicity series: 1+t^2(1-t^{N-1})/(1-t) in the chiral sector for every Delta>1; t(1-t^{N-1})/(1-t) in Q=1 for 1<Delta<Delta_*; and (t+t^3)(1-t^{N-1})/(1-t) in Q=1 at Delta_*. At the critical mass the two ladders run through P=1,...,N-1 and P=3,...,N+1, with multiplicity two exactly on 3<=P<=N-1. N=2 has only the critical degrees P=1,3. Exact positive pair defects identify these intersections with the complete lowest eigenspaces.",
+    "assumptions": [
+      "N>=2, Delta>1, finite primary degrees; for N=1 only the chiral degree-zero primary remains and Q=1 intersections vanish.",
+      "For the Q=1 minimum statement, use the stated subcritical or critical mass range. Chiral positivity holds throughout Delta>1.",
+      "The full root-power ideals and physical Fischer pairing are used, not a proposed low-dimensional subset without a completeness proof."
+    ],
+    "limitations": [
+      "The displayed complete minimum formulas are chiral and Q=1 statements, not a classification of arbitrary-Q low spectra.",
+      "The quartic root-power result is not generalized to every higher power; for the next cutoff the family (product_i x_i)^2 already disproves the proposed small-family extrapolation at N>=3.",
+      "A cutoff subspace need not be invariant under a generic sum of overlapping pair operators."
+    ],
+    "main_home": [
+      "Chapter 6, §6.5 (Theorem EX-05)"
+    ],
+    "proof_home": [
+      "Appendix L, §§L.1–L.6"
+    ],
+    "dependency_ids": [
+      "EX-03",
+      "EX-04",
+      "FIN-01",
+      "PHY-05"
+    ]
+  },
+  {
+    "id": "EX-06",
+    "title": "Exact top coefficient, global fixed-N gap, and equality classification",
+    "precise_statement": "For every fixed N>=2 and Delta>1, the upper coefficient of the full excitation tower is g_top=binom(N,2)gamma_00, carried only by the (0,0) primary and its global descendants. Put c=gamma_00-gamma_20=2Delta(2Delta^2+7Delta+2)/[(2Delta-1)(2Delta+3)]>0. The exact next coefficient is separated by delta g_N=c(N Delta+1)/(2Delta+1), attained only by primaries (2,0),(0,2) and descendants. At full levels (M_L,M_R), the upper multiplicity is one and the gap multiplicity is 1_{M_L>=2}+1_{M_R>=2}. The proof uses strict pair bands g_{n,0}>g_{n,2}>u_n>g_{n+1,0}, u_n=4mu-8(Delta+n)(Delta+n-1), and the stronger comparison gamma_00-gamma_{kl}>=c(1_{k>0}+1_{l>0}), whose equality channels are precisely 00,20,02. Each labelled chiral collision operator K_N=sum_{i<j}(I-P_{ij,0}) has first positive eigenvalue (N Delta+1)/(2Delta+1); triangle summation and its explicit degree-two saturating polynomial give the sharp many-body comparison.",
+    "assumptions": [
+      "N>=2 fixed, Delta>1; the result concerns the entire finite-degree coefficient tower at that fixed particle number.",
+      "Use the physical labelled positive-discrete-series Hilbert metric before restricting to diagonal Bose invariants.",
+      "The all-index Einstein pair ordering and the three-site physical Gram are inputs established in the same proof appendix."
+    ],
+    "limitations": [
+      "No uniform high-energy perturbation theorem or growing-N estimate at fixed nonzero G follows.",
+      "A full level with both M_L<2 and M_R<2 contains no gap branch.",
+      "This theorem does not assert that the full nonchiral operator is a Markov generator."
+    ],
+    "main_home": [
+      "Chapter 6, §6.6 (Theorem EX-06)"
+    ],
+    "proof_home": [
+      "Appendix G, §§G.1–G.4"
+    ],
+    "dependency_ids": [
+      "PHY-05",
+      "FIN-01",
+      "FIN-05"
+    ]
+  },
+  {
+    "id": "EX-07",
+    "title": "Physical Dirichlet dictionary, chiral Markov representation, and a scoped nonchiral obstruction",
+    "precise_statement": "The unitary map U_Delta z^p=p!L_p^{(Delta-1)}(x)/(Delta)_p realizes the Bargmann norm in the Gamma(Delta) measure. Tensor primaries become homogeneous S^P Y_P(x/S) with Dirichlet(Delta,...,Delta) angular measure; descendants have radial Laguerre parameter N Delta+2P-1. The pair Casimir is Delta(Delta-1) minus the Jacobi differential operator, and pair degree zero is conditional Beta averaging. A positive ground-descendant similarity makes the shifted chiral pair operator a reversible Markov generator with Beta-binomial local and Dirichlet-multinomial global stationary laws: the degree-two projector kernel obeys a_0+a_2 q_2(a)q_2(b)>=2Delta(Delta+1)/(2Delta-1)>0. In contrast, the full nonchiral kernel fails to preserve the natural product-Dirichlet positive cone for every Delta>1, already for two particles. For X=2u-1,Y=2v-1,F=X^2Y^2 and L=w-gamma_00 I, LF(0,0)=-12(10Delta^3+29Delta^2+8Delta-14)/[(2Delta-1)(2Delta+1)(2Delta+3)(2Delta+5)]<0. The exact evolved value is [1-2exp(-ct)+exp(-b_22 t)]/(2Delta+1)^2, negative for all sufficiently small positive t on an open positive-measure set. At Delta=2 the derivative is -88/35. A separate negative off-diagonal occupation cycle (312/35)(-528/35)(416/35) rules out a nonnegative off-diagonal generator obtained by invertible diagonal similarity in that particular basis.",
+    "assumptions": [
+      "Delta>1; the explicit nonchiral counterexample uses N=2 and the separately even physical pair channels 00,20,02,22.",
+      "The Markov statement specifies its positive similarity and cone; unitarity alone does not transport pointwise positivity.",
+      "For pair degree T<2 the degree-two projector is absent.",
+      "A labelled odd-channel extension is chosen for the chiral Markov realization; the physical Bose restriction is fixed."
+    ],
+    "limitations": [
+      "The natural nonchiral cone obstruction does not exclude an unrelated nonlocal unitary realization with a different positive cone.",
+      "It is not a theorem of general nonintegrability or a statement that physical AdS time evolution is a classical stochastic process.",
+      "The chiral generator theorem does not extend automatically to both chiralities."
+    ],
+    "main_home": [
+      "Chapter 6, §6.7 (Theorem EX-07 and its physical dictionary)"
+    ],
+    "proof_home": [
+      "Chapter 6, §6.7; Appendix G, §G.5"
+    ],
+    "dependency_ids": [
+      "PHY-05",
+      "FIN-01",
+      "EX-06"
+    ]
+  },
+  {
+    "id": "EX-08",
+    "title": "Specified labelled Kohno-residue obstruction and limited related algebraic failures",
+    "precise_statement": "Prescribe all even pair eigenvalues to be the chiral Einstein values on identical labelled positive-discrete-series factors. Allow arbitrary odd pair eigenvalues, a common scalar shift, a common pair-Casimir addition and a nonzero common rescaling. For every Delta>1, no resulting residues Omega_{ij} satisfy [Omega_12,Omega_13+Omega_23]=0 on the full labelled tensor product. The generic Casimir shift is obstructed by exact primary degrees 2,3,4. At beta_*=Delta(2Delta^2+7Delta+2)/[(2Delta-1)(2Delta+1)(2Delta+3)], the old 02 test vanishes; degree-four 04 and 24 equations uniquely determine the odd values with coefficient determinant -3Delta/(2Delta+3). Degree five then has unavoidable commutator -6Delta^2(Delta+1)(Delta+4)^2(3Delta+8)/[(2Delta-1)^2(2Delta+3)(2Delta+5)]<0 (equal to -64 at Delta=2). Related finite facts have narrower scope: at N=4,Delta=2,P=6,Q=0 the two chiral low-channel sums have rank-two commutator and scalar common commutant; at N=3,Delta=2, [W_3,D_2]p_2=-64p_3/7. The chiral plateau with only two nonzero low-channel deviations also excludes one global fixed polynomial or nonsingular rational function of the pair Casimir.",
+    "assumptions": [
+      "The prescribed even coefficients are exactly the Einstein chiral pair values at a fixed Delta>1.",
+      "The relation is the labelled three-site infinitesimal braid/Kohno relation; all pair-odd channels remain available.",
+      "The common shift, Casimir coefficient and odd values may depend on the chosen mass; the rescaling is nonzero.",
+      "The finite commutant and D_2 statements are confined to the explicitly stated blocks and operators."
+    ],
+    "limitations": [
+      "This excludes the prescribed two-site residue ansatz, not arbitrary Bethe ansatze, unrelated spectral-parameter constructions, nonlocal changes of variables, or every notion of integrability.",
+      "The finite common-commutant examples do not prove a global classification of conserved charges.",
+      "The analytic bulk-charge obstruction has a separate proof home and hypotheses in the SC appendix; it is not subsumed by EX-08."
+    ],
+    "main_home": [
+      "Chapter 6, §6.8 (Theorem EX-08 and adjacent scoped obstructions)"
+    ],
+    "proof_home": [
+      "Appendix O, §§O.2–O.4; Chapter 6, §6.8 for the finite commutant, D_2 and plateau arguments"
+    ],
+    "dependency_ids": [
+      "PHY-05",
+      "FIN-01"
+    ]
+  },
+  {
+    "id": "EX-09",
+    "title": "A physical finite quintic has Galois group S5",
+    "precise_statement": "At Delta=2,N=3,P=6,Q=3, with x=g+240, the physical finite characteristic polynomial contains f_5(x)=3713039955625x^5-942938552055500x^4+74501974772024800x^3-2003576214981165440x^2+19936439419181140992x-54992948200676982784. Its square-free reductions at primes 23 and 17 have factor degrees 5 and (2,3), respectively. Thus f_5 is irreducible, its Galois action is transitive of prime degree and hence primitive, and it contains a transposition (the cube of the 2,3-cycle element). Conjugates of that transposition define a connected invariant graph and generate S5, so Gal(f_5/Q)=S5. This nonsolvable factor rules out a general expression by radicals for all physical finite eigenvalues; an exact polynomial plus isolating interval remains a complete answer.",
+    "assumptions": [
+      "The explicitly specified rational-mass physical finite block and energy shift.",
+      "The displayed polynomial is an exact factor of that block, and the reductions have nonzero leading coefficient and are square-free at the indicated primes.",
+      "Use the ordinary characteristic-zero Galois action on the five roots."
+    ],
+    "limitations": [
+      "No claim is made that every finite block has a full symmetric Galois group.",
+      "The supplementary S6 block is retained provenance, not needed for the S5 radical obstruction.",
+      "Failure of radical formulas is not failure of a complete exact algebraic algorithm and is not a theorem of dynamical nonintegrability."
+    ],
+    "main_home": [
+      "Chapter 6, §6.8 (Proposition EX-09)"
+    ],
+    "proof_home": [
+      "Appendix O, §O.1; Chapter 6, §6.8 for the exact polynomial and prime cycle types"
+    ],
+    "dependency_ids": [
+      "FIN-01",
+      "FIN-02"
+    ]
+  },
+  {
+    "id": "ST-01",
+    "title": "Exact stable affine pencil and averaged occupation normalization",
+    "precise_statement": "For N>=max(1,P+Q), W_N=gamma00 choose(N,2)+N A+B on the fixed centered primary algebra. A is a triangular derivation and B has order<=2. The averaged occupation map is prod h_alpha^(n_alpha/2)/sqrt(N!) times the canonical occupation creation monomial, with Gamma_s=g_s/(N)_downarrow r_s.",
+    "assumptions": [
+      "Unique zero excitation",
+      "Conserved nonnegative excitation bidegrees",
+      "Number-preserving two-body pair operator",
+      "Global covariance for the primary restriction"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §ST-A.1"
+    ],
+    "dependency_ids": [
+      "PHY-03"
+    ]
+  },
+  {
+    "id": "ST-02",
+    "title": "Analytic Hermitian N^-1/2 theorem",
+    "precise_statement": "For every fixed primary block and Delta>1 there is a regular analytic orthonormal frame in t=N^-1/2. Its matrix is Hermitian for real t near zero; eigenvalues and orthonormal eigenvectors have convergent Taylor series in t. g_j=gamma00 choose(N,2)+N sum_m lambda_jm N^(-m/2). Simple leading branches are even; degenerate clusters can exchange under parity.",
+    "assumptions": [
+      "Fixed P,Q and Delta>1",
+      "Stable N sufficiently large"
+    ],
+    "limitations": [
+      "No uniform radius across all degrees/masses; no assertion that every odd coupling splits eigenvalues."
+    ],
+    "main_home": [
+      "semiclassical/chapter9.md §9.2"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §§ST-A.2–3"
+    ],
+    "dependency_ids": [
+      "ST-01"
+    ]
+  },
+  {
+    "id": "ST-03",
+    "title": "Actual leading Jordan resonance and exact (4,1) branches",
+    "precise_statement": "The complete stable (4,1) leading matrix is the displayed triangular 3x3 with delta=d^2F/(2D4), F=2d^3-37d^2-11d+100 and v>0. F has two roots >1 in the displayed rational intervals. At either root A-s0I is nonzero rank-one square-zero, Jordan type (2,1). The exact invariant 2x2 plane has k>0 and yields a nonzero +/-sqrt(kv N) split and the stated detuning law.",
+    "assumptions": [
+      "N>=5",
+      "Delta>1",
+      "At resonance or the stated local detuning for the half-power formula"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.2.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §§ST-A.4–5"
+    ],
+    "dependency_ids": [
+      "ST-01",
+      "PHY-05"
+    ]
+  },
+  {
+    "id": "ST-04",
+    "title": "All-bidegree generic linearization",
+    "precise_statement": "Outside a countable algebraic set of Delta>1, triangular polynomial eigenvariables u_pq put A=sum sigma_pq u_pq partial_u_pq in every degree. Each cutoff has finitely many exceptions. The nonidentity of every genuine-splitting divisor follows from residue rho_pq=(3/2)(2 f_p f_q-1) at d=1/2 and v2(rho_pq)=-[2(p+q)-s2(p)-s2(q)].",
+    "assumptions": [
+      "Einstein rational channel family",
+      "Each generator degree at least two",
+      "Generic fixed physical mass"
+    ],
+    "limitations": [
+      "No local finiteness of the full exceptional set, no classification of all resonances, no simultaneous diagonalization of B."
+    ],
+    "main_home": [
+      "semiclassical/chapter9.md §9.3"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §ST-B"
+    ],
+    "dependency_ids": [
+      "ST-01"
+    ]
+  },
+  {
+    "id": "ST-05",
+    "title": "Einstein chiral low algebra and oblique retraction",
+    "precise_statement": "For Q=0, N>=P>=2, K=A-(sigma2/2)E has semisimple zero kernel C[c2,c3], with all other eigenvalues positive. q=lim exp(-tau K) exists degreewise and is multiplicative. The exact minimum is gamma00 choose(N,2)+(P sigma2/2)N+(beta2/2)P(P-1).",
+    "assumptions": [
+      "Delta>1 fixed",
+      "Stable chiral block"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.4"
+    ],
+    "proof_home": [
+      "semiclassical/chapter9.md §9.4 and semiclassical/appendix_st.md §ST-C"
+    ],
+    "dependency_ids": [
+      "ST-01",
+      "UN-03"
+    ]
+  },
+  {
+    "id": "ST-06",
+    "title": "Einstein Gegenbauer first low operator",
+    "precise_statement": "B_low=(beta2/2)E(E-1)+(epsilon/2)(y^2+4x^3)partial_y^2 with the exact positive rational epsilon in §9.5. Monic polynomials F_b satisfy J F_b''=b(b-1)F_b; x^a F_b, 2a+3b=P, have gap epsilon choose(b,2). The Gegenbauer parameter is -1/2.",
+    "assumptions": [
+      "Delta>1",
+      "Fixed chiral degree",
+      "Einstein exact channels"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.5"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §§ST-C.2 and ST-C.5"
+    ],
+    "dependency_ids": [
+      "ST-05",
+      "ST-10"
+    ]
+  },
+  {
+    "id": "ST-07",
+    "title": "Convergent integer expansions only for the isolated chiral low cluster",
+    "precise_statement": "For each fixed P and Delta>1, the # {2a+3b=P} isolated lowest leading branches have convergent integer 1/N expansions, g=g_min+epsilon choose(b,2)+eta(a,b)/N+O(N^-2).",
+    "assumptions": [
+      "Fixed P>=2, Delta>1",
+      "Einstein chiral low cluster"
+    ],
+    "limitations": [
+      "Remainder not uniform when P grows with N."
+    ],
+    "main_home": [
+      "semiclassical/chapter9.md §9.5"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §ST-C.5"
+    ],
+    "dependency_ids": [
+      "ST-05",
+      "ST-06"
+    ]
+  },
+  {
+    "id": "ST-08",
+    "title": "Exact third-order C2 and all first energy corrections",
+    "precise_statement": "In graph gauge qOmega=I, C2=-qBRB with R=K^-1(1-q). C2=J[r0 partial_y^2+r1 partial_x^3+r2 x partial_x partial_y^2+r3 y partial_y^3], with the full rational r_i table in Appendix ST-C.4. Its Gegenbauer diagonal is eta(a,b) in §9.6, including the listed Delta=2,P=12 values.",
+    "assumptions": [
+      "Fixed Einstein chiral degree and Delta>1"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.6"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §§ST-C.3–5"
+    ],
+    "dependency_ids": [
+      "ST-05",
+      "ST-06",
+      "ST-10"
+    ]
+  },
+  {
+    "id": "ST-09",
+    "title": "Protected (3,1) discriminant-square doublet",
+    "precise_statement": "In the stable two-dimensional (3,1) block, the exact shifted pencil has discriminant delta31^2(N+6beta)^2. At Delta*=(sqrt33-1)/4 it is scalar with the displayed energy coefficient and multiplicity two. This is not the nonzero Jordan collision of ST-03.",
+    "assumptions": [
+      "N>=4",
+      "Complete (3,1) stable block"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.2.2"
+    ],
+    "proof_home": [
+      "semiclassical/chapter9.md §9.2.2; semiclassical/appendix_st.md §ST-A.5"
+    ],
+    "dependency_ids": [
+      "ST-01"
+    ]
+  },
+  {
+    "id": "ST-10",
+    "title": "Exact chiral character and persistent cusp quotient",
+    "precise_statement": "For any real chiral pair sequence, L(c_p)=(1-p)t^p is a nonzero exact left character at degree P>=2, with L A=sdP L and L B=sP(P-1)L. On C[x,y], kernel L=(y^2+4x^3). The quotient is preserved at every effective order after subtracting the exact scalar.",
+    "assumptions": [
+      "Stable creation algebra",
+      "Same covariant pair representation",
+      "No positivity needed for the character"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter9.md §9.4.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §ST-C.1; semiclassical/chapter10.md §10.4"
+    ],
+    "dependency_ids": [
+      "ST-01"
+    ]
+  },
+  {
+    "id": "ST-11",
+    "title": "Fixed-degree oscillator contraction",
+    "precise_statement": "With x_i=sqrt(Delta)z_i and degree fixed, Delta^p p!/(Delta)_p->p!, (w_chiral+4Delta^2)/Delta->relative-degree-zero projector, epsilon/Delta->27/34, and the first low gap divided by Delta tends to 27b(b-1)/68.",
+    "assumptions": [
+      "Excitation degree fixed before Delta->infinity",
+      "Chiral pair operator and first low layer"
+    ],
+    "limitations": [
+      "No interchange with growing-degree limits or equality of finite-mass physical models."
+    ],
+    "main_home": [
+      "semiclassical/chapter9.md §9.7"
+    ],
+    "proof_home": [
+      "semiclassical/chapter9.md §9.7; exact pair formula"
+    ],
+    "dependency_ids": [
+      "ST-06"
+    ]
+  },
+  {
+    "id": "UN-01",
+    "title": "Common-support kernel and principal-symbol class",
+    "precise_statement": "For w_kl=u-c min(Ck,Cl)+epsilon_|k-l|(min), c>0, epsilon0,epsilon2>0 and higher even epsilon=0, the oriented residual has exactly the Einstein positive bad support and hence identical full kernel, Hilbert series and rank. If sup_(n<=L) epsilon0,2(n)=o(L^2), the Grassmannian symbols agree with coefficient 8 replaced by c.",
+    "assumptions": [
+      "Same unitary global scalar representation",
+      "Real symmetric allowed pair coefficients",
+      "Growth only for symbol statement"
+    ],
+    "limitations": [
+      "Identical kernel does not fix positive eigenvalues or symbol."
+    ],
+    "main_home": [
+      "semiclassical/chapter10.md §10.2"
+    ],
+    "proof_home": [
+      "semiclassical/chapter10.md §10.2"
+    ],
+    "dependency_ids": [
+      "EX-01",
+      "SC-01"
+    ]
+  },
+  {
+    "id": "UN-02",
+    "title": "Compactness does not imply finite Schatten summability",
+    "precise_statement": "The diagonal chiral tail v_k=1/log(k+2), k even, is c0 and selfadjoint. Its connected resolvent at 2 has entries v_k/[2(2-v_k)]>=v_k/4 and belongs to no finite Schatten S_s.",
+    "assumptions": [
+      "Abstract pair operator",
+      "Every finite s>0"
+    ],
+    "limitations": [
+      "Does not refute extra Einstein-specific Schatten estimates."
+    ],
+    "main_home": [
+      "semiclassical/chapter10.md §10.3"
+    ],
+    "proof_home": [
+      "semiclassical/chapter10.md §10.3"
+    ],
+    "dependency_ids": [
+      "CL-03"
+    ]
+  },
+  {
+    "id": "UN-03",
+    "title": "First positive affine defect theorem",
+    "precise_statement": "If all even affine defects r_k>=0 and the first positive one is k*=2m+2, then g*=gamma0 choose(N,2)+sP(Nd+P-1) is the exact stable chiral minimum, and K=A-sd E has semisimple kernel C[c2,...,c_(2m+1)] with all other leading gaps positive. q=lim exp(-tau K) is an algebra retraction.",
+    "assumptions": [
+      "N>=P>=2",
+      "d>1",
+      "Nonnegative affine defects",
+      "First positive defect exists"
+    ],
+    "limitations": [
+      "Nonnegative defects are not necessary for the leading-kernel conclusion: UN-06."
+    ],
+    "main_home": [
+      "semiclassical/chapter10.md §10.4"
+    ],
+    "proof_home": [
+      "semiclassical/chapter10.md §10.4 and semiclassical/appendix_st.md §ST-C.1"
+    ],
+    "dependency_ids": [
+      "ST-01",
+      "ST-10"
+    ]
+  },
+  {
+    "id": "UN-04",
+    "title": "General two-generator coefficient from channels four and six",
+    "precise_statement": "For r4=v>0,r6=w>=0 and nonnegative later defects, B_low=sE(E-1)+epsilon/2 J partial_y^2, epsilon=27vw(d+3)(d+4)(2d+9)/[2(2d+5)(15(2d+7)(d+5)v+(2d+3)(d+2)w)]. Higher defects do not enter. If w>0 the first low spectrum is simple and integer branches follow. If w=0 the first gap is identically zero.",
+    "assumptions": [
+      "Two-generator low retraction exists",
+      "Nonnegative-defect theorem provides its sufficient hypotheses"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter10.md §10.5"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_un.md §UN-A"
+    ],
+    "dependency_ids": [
+      "UN-03",
+      "ST-10"
+    ]
+  },
+  {
+    "id": "UN-05",
+    "title": "Same support and symbol with four low generators",
+    "precise_statement": "At d=2, w_kl=16-8min(Ck,Cl)+1_(spin0)+(9/14)1_(spin2) has the Einstein kernel/rank and principal symbol, but s=-1/28,r4=0,r6=13/14 and leading low algebra C[c2,c3,c4,c5]. The complete stable P4Q0 matrix is [choose(N,2)-2N/7-3/7] I_2.",
+    "assumptions": [
+      "Abstract selfadjoint pair deformation",
+      "N>=4 for the explicit block"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter10.md §10.6"
+    ],
+    "proof_home": [
+      "semiclassical/chapter10.md §10.6"
+    ],
+    "dependency_ids": [
+      "UN-01",
+      "UN-03"
+    ]
+  },
+  {
+    "id": "UN-06",
+    "title": "Signed defects preserve the same leading kernel",
+    "precise_statement": "At d=2, r4=1,r6=-1/100, all other even defects zero, every high leading gap is positive because alpha_(p,6)/alpha_(p,4)=28(p-5)(p-4)/[11(p+8)(p+9)]<28/11. Thus K has the same semisimple C[c2,c3] kernel in every degree despite a negative defect; its generic epsilon is negative.",
+    "assumptions": [
+      "Abstract affine-subtracted chiral pair sequence",
+      "p>=6 for the ratio, p=4,5 separately positive"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter10.md §10.7"
+    ],
+    "proof_home": [
+      "semiclassical/chapter10.md §10.7"
+    ],
+    "dependency_ids": [
+      "ST-01",
+      "ST-10"
+    ]
+  },
+  {
+    "id": "UN-07",
+    "title": "Minimal residue class for generic leading linearization",
+    "precise_statement": "For pair coefficients rational over Q(d), if gamma00 has a nonzero simple residue R at d=1/2 and every other channel is regular there, the slope residue is R(2f_pf_q-1). The common R cancels from homological relations, giving the same all-degree nonidentity proof and countable algebraic exceptional set.",
+    "assumptions": [
+      "The stated pole structure",
+      "Same endpoint representation weights",
+      "Rationality over Q(d) for algebraic exceptional roots"
+    ],
+    "limitations": [],
+    "main_home": [
+      "semiclassical/chapter10.md §10.8"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_st.md §ST-B and semiclassical/chapter10.md §10.8"
+    ],
+    "dependency_ids": [
+      "ST-04"
+    ]
+  }
+]

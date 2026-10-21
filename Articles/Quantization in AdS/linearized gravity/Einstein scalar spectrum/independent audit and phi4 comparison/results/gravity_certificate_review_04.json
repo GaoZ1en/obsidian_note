@@ -1,0 +1,640 @@
+{
+  "status": "passed",
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "working_digits": 85,
+  "source_checks": [
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "3*I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "3*I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "-3*I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "-3*I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "0"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "0"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "0"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "0"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "-I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "-I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "-3*I/4"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "-3*I/4"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 3,
+          "center_reduced": "sqrt(2)*I/24"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -1,
+          "center_reduced": "sqrt(2)*I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 1,
+          "center_reduced": "-sqrt(2)*I"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -3,
+          "center_reduced": "-7*sqrt(2)*I/12"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 1,
+          "center_reduced": "sqrt(2)*I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -3,
+          "center_reduced": "sqrt(2)*I/24"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 3,
+          "center_reduced": "-7*sqrt(2)*I/12"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -1,
+          "center_reduced": "-sqrt(2)*I"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "3*I/4"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "3*I/4"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "-3*I/4"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "3*I/4"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "3*I/4"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "-3*I/4"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 0,
+          "center_reduced": "0"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -4,
+          "center_reduced": "0"
+        }
+      ],
+      "density_moment_numeric_error": "0.0"
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 4,
+          "center_reduced": "0"
+        },
+        {
+          "sign": -1,
+          "angular_weight": 0,
+          "center_reduced": "0"
+        }
+      ],
+      "density_moment_numeric_error": "0.0"
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "-I/2"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "-I/2"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          2,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 2,
+          "center_reduced": "0"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -2,
+          "center_reduced": "0"
+        }
+      ],
+      "density_moment_numeric_error": null
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          -1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 0,
+          "center_reduced": "-sqrt(3)*I/8"
+        },
+        {
+          "sign": -1,
+          "angular_weight": -4,
+          "center_reduced": "-7*sqrt(3)*I/16"
+        }
+      ],
+      "density_moment_numeric_error": "0.0"
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "metric_divergence_zero": true,
+      "metric_scalar_residual_zero": true,
+      "cartesian_helicities": [
+        {
+          "sign": 1,
+          "angular_weight": 4,
+          "center_reduced": "-3*sqrt(15)*I/8"
+        },
+        {
+          "sign": -1,
+          "angular_weight": 0,
+          "center_reduced": "-13*sqrt(15)*I/80"
+        }
+      ],
+      "density_moment_numeric_error": "0.0"
+    }
+  ],
+  "original_response_quadratures": [
+    {
+      "label": "Eq4.25_00",
+      "constraint_quad": "-25.142857142857142857142857142857142857142857142857142857142857143",
+      "exact": "-176/7",
+      "absolute_error": "2.5737788e-85"
+    },
+    {
+      "label": "Eq4.25_01",
+      "constraint_quad": "13.942857142857142857142857142857142857142857142857142857142857143",
+      "exact": "488/35",
+      "absolute_error": "0.0"
+    },
+    {
+      "label": "Eq4.25_11",
+      "constraint_quad": "-23.222857142857142857142857142857142857142857142857142857142857143",
+      "exact": "-4064/175",
+      "absolute_error": "2.5737788e-85"
+    },
+    {
+      "label": "noncircular_1to3",
+      "constraint_quad": "0.0017209674341052404527885134935688264129086014363674649397863971988",
+      "exact": "2*sqrt(10)/3675",
+      "absolute_error": "1.9479283e-87"
+    }
+  ],
+  "fullblock_known_cubic_only": {
+    "initial": "(b00_dagger)^2/sqrt(2)|0>",
+    "final": "a2plus_dagger a2minus_dagger|0>",
+    "E0": 4,
+    "J": 0,
+    "Delta": 2,
+    "intermediate_energy": 8,
+    "chirality_paths": 2,
+    "density_mixed": "3*sqrt(3)/10",
+    "density_pair": "sqrt(3)/70",
+    "D_mixed_coefficient": "3/(20*sqrt(pi))",
+    "D_pair_coefficient": "1/(140*sqrt(pi))",
+    "first_vertex": "3*sqrt(2)/(5*sqrt(pi))",
+    "second_vertex": "-1/(35*sqrt(pi))",
+    "energy_denominator": "-4",
+    "coefficient_per_kappa2": "3*sqrt(2)/(350*pi)",
+    "coefficient_per_G": "24*sqrt(2)/175",
+    "status": "PARTIAL ONLY: full g^2 phi^2 contact, including uncontracted embedding-momentum contribution, not independently derived; no closure verdict from this number"
+  },
+  "mutation_check": {
+    "omit_boundary_noncircluar_residual": "2*sqrt(10)/3675",
+    "omit_boundary_changes_BB_diagonal": "48/25",
+    "description": "Omitting the virtual-boundary term is detected; zero total was not imposed."
+  },
+  "elapsed_seconds": 8.715872049331665
+}

@@ -1,0 +1,134 @@
+{
+  "formula": "[t^N s^J](1-s)*prod_p(1-t*s^p)^-1*prod_p<q(1-t^2*s^(p+q))^-1",
+  "independent_method": "Unbounded two-variable coefficient DP; no eigenvector or projector input.",
+  "checks": [
+    {
+      "N": 4,
+      "P": 2,
+      "Q": 2,
+      "character_dimensions": [
+        3,
+        0
+      ],
+      "matrix_dimensions": [
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "N": 5,
+      "P": 2,
+      "Q": 2,
+      "character_dimensions": [
+        3,
+        0
+      ],
+      "matrix_dimensions": [
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "N": 6,
+      "P": 2,
+      "Q": 2,
+      "character_dimensions": [
+        3,
+        0
+      ],
+      "matrix_dimensions": [
+        3,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "N": 4,
+      "P": 3,
+      "Q": 3,
+      "character_dimensions": [
+        5,
+        1
+      ],
+      "matrix_dimensions": [
+        5,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "N": 6,
+      "P": 3,
+      "Q": 3,
+      "character_dimensions": [
+        7,
+        1
+      ],
+      "matrix_dimensions": [
+        7,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "N": 8,
+      "P": 3,
+      "Q": 3,
+      "character_dimensions": [
+        7,
+        1
+      ],
+      "matrix_dimensions": [
+        7,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "N": 4,
+      "P": 4,
+      "Q": 4,
+      "character_dimensions": [
+        10,
+        3
+      ],
+      "matrix_dimensions": [
+        10,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "N": 5,
+      "P": 4,
+      "Q": 4,
+      "character_dimensions": [
+        14,
+        5
+      ],
+      "matrix_dimensions": [
+        14,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "N": 6,
+      "P": 4,
+      "Q": 4,
+      "character_dimensions": [
+        17,
+        7
+      ],
+      "matrix_dimensions": [
+        17,
+        7
+      ],
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "failed": 0
+}

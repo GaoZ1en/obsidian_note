@@ -1,0 +1,73 @@
+{
+  "sage_version": "10.9",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "pair_physical_Gram_T0_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T1_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T2_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T3_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T4_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T5_1",
+      "passed": true
+    },
+    {
+      "label": "pair_physical_Gram_T6_1",
+      "passed": true
+    },
+    {
+      "label": "ST11_fixedN6_P6_not_first_low_limit",
+      "passed": true
+    },
+    {
+      "label": "ST11_contact_minimum_exact",
+      "passed": true
+    },
+    {
+      "label": "ST06_F1_monic_nonuniqueness",
+      "passed": true
+    },
+    {
+      "label": "EX09_Bose_projection_rank",
+      "passed": true
+    },
+    {
+      "label": "EX09_invariant_restriction",
+      "passed": true
+    },
+    {
+      "label": "EX09_physical_quintic_identification",
+      "passed": true
+    }
+  ],
+  "contact_limit": {
+    "N": 6,
+    "P": 6,
+    "gap_matrix": "[   9/8    9/4      3      0]\n[     0  13/16 -11/16  -5/16]\n[   3/8  -9/32  63/32 225/32]\n[     0   1/32   1/32 127/32]",
+    "gap_characteristic_polynomial": "x^4 - 63/8*x^3 + 1197/64*x^2 - 837/64*x",
+    "det_at_27_over_34": "-45691533/21381376",
+    "gaps_numerical": [
+      "0",
+      "1.263928453773698?",
+      "2.544376667183348?",
+      "4.066694879042955?"
+    ],
+    "scope": "Only contradicts an unqualified fixed-N reading; manuscript says at first low layer."
+  },
+  "physical_quintic_matrix": "[  -177856/715    29816/2145     1816/2145   -24064/2145     6488/2145]\n[ -429228/5005  -587108/5005       908/715      -1352/55     -1116/715]\n[  443292/5005  -607084/5005      -3244/13   299716/5005    94036/5005]\n[  712728/5005    -27584/385  -169712/5005  -573648/5005      568/1001]\n[    -20124/77   173332/1001    37756/1001  -162504/1001 -1080276/5005]"
+}

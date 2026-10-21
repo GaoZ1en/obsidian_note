@@ -1,0 +1,221 @@
+[
+  {
+    "id": "CL-01",
+    "title": "Fixed-Q positive atomic law, positive rank and descendant mixtures",
+    "precise_statement": "Let $N\\geq4$, $Q\\geq0$, and $\\Delta>1$ be fixed. Denote by $\\mu^+_{N,P,Q}$ the probability measure on the strictly positive eigenvalues of $A_N(P,Q)$, with physical multiplicity. Set\n\n$$\nw_{N,Q}(\\ell)=\\binom{Q-\\ell+N-3}{N-3},\\qquad\n Z_{N,Q}=\\sum_{(k,\\ell)\\in\\mathcal B_Q}w_{N,Q}(\\ell).\n$$\n\nThen\n\n$$\nW_2\\!\\left(\\mu^+_{N,P,Q},\\frac1{Z_{N,Q}}\n\\sum_{(k,\\ell)\\in\\mathcal B_Q}w_{N,Q}(\\ell)\\delta_{a_{k\\ell}}\\right)\n=O(P^{-1/2}).\n\\tag{CL.2}\n$$\n\nCoincident pair values have their weights added. The number of positive eigenvalues at distance more than $\\varepsilon>0$ from the pair-atom set is $O(P^{N-4}\\varepsilon^{-2})$. Constants may depend on $N,Q,\\Delta$, and on $\\varepsilon$ where indicated. The probability measure on the entire primary spectrum of $W_N$, including its exact kernel multiplicity, converges to $\\delta_{b_N(Q)}$.\n\nThe proof uses a rectangular frame, so it does not identify the frame's auxiliary nullity with the physical kernel. If $F$ is the orthonormal distinguished-pair frame, $p_B$ the diagonal Bose projection, $D=\\operatorname{diag}(a_{k\\ell})$, and\n\n$$\n\\binom N2 F^*p_BF=I+K,\n$$\n\nthen the positive spectra of $A_N$ and $B=D^{1/2}(I+K)D^{1/2}$ agree with multiplicities.\n\nHere the polynomial frame and its physical Gram matrix $\\Gamma$ from Chapter 5 have been normalized: $F=F_{\\mathrm{pol}}\\Gamma^{-1/2}$. Thus $\\Gamma$ is absorbed into the frame and the recoupling matrices; the auxiliary space still counts complete spectator levels. The quantitative statement is\n\n$$\n\\|K\\|_{\\mathrm{HS}}^2+\\|B-D\\|_{\\mathrm{HS}}^2=O(P^{N-4}).\n\\tag{CL.3}\n$$\n\nOverlapping pairs require the endpoint Racah estimate proved in Appendix CL.A; disjoint pairs require only descendant counting. Appendix CL.B proves the measure statement, including the removal of auxiliary zeros.\n\nThe same argument gives the positive-rank asymptotic\n$$\n\\operatorname{rank}A_N(P,Q)=\n\\frac{Z_{N,Q}}{(N-2)!(N-3)!}P^{N-3}+O(P^{N-4}).\n$$\nThis is exactly the coefficient $\\rho_{N,Q}$ of Theorem EX-02. Indeed $\\sum_{Q\\geq0}Z_{N,Q}y^Q=(2-y^2)/[(1-y)^N(1+y)]$, which converts that theorem's identity and transposition terms into the displayed expression.\n\nFor instance, at $N=4,Q=2,\\Delta=2$, the exact atom data are:\n\n| Pair channel | Residual atom | Limiting weight |\n|---|---:|---:|\n| $(0,0)$ | $24/5$ | $3/13$ |\n| $(2,0)$ | $8/35$ | $3/13$ |\n| $(1,1)$ | $312/35$ | $2/13$ |\n| $(3,1)$ | $8/21$ | $2/13$ |\n| $(0,2)$ | $2808/35$ | $1/13$ |\n| $(2,2)$ | $64/5$ | $1/13$ |\n| $(4,2)$ | $40/77$ | $1/13$ |\n\nThe retained earlier matrix calculation (ADS3_Analytic_spectrum_research.md, Appendix A, §5.3) had $W_2=14.45596$ at $P=32$ and $W_2=3.00002$ at $P=512$; these finite values were not rerun here. Their slow convergence is compatible with the theorem's asymptotic rate and is a reason to keep the cluster analysis for exceptional eigenvalues.\n\nFor a complete free level, use $M_L,M_R$ for the level degrees to keep them separate from primary degrees. At fixed $M_R$, $M_L\\to\\infty$, the empirical measure of the entire correction spectrum converges to\n\n$$\n\\sum_{q=0}^{M_R}\n\\frac{\\binom{q+N-2}{N-2}}{\\binom{M_R+N-1}{N-1}}\n\\delta_{b_N(q)}.\n\\tag{CL.4}\n$$\n\nThe measure restricted to nonsaturated descendants instead converges, with the same $W_2$ rate, to the normalized sum of atoms $b_N(q)+a_{k\\ell}$, $0\\leq q\\leq M_R$, $(k,\\ell)\\in\\mathcal B_q$, with weights $\\binom{q-\\ell+N-3}{N-3}$. This is a descendant mixture, not another primary limit.",
+    "assumptions": [
+      "N≥4, Q≥0 and Δ>1 fixed; P→∞ after extracting the finite-block O(G) coefficient. W2=O(P^-1/2), outlier number O(P^(N-4)/epsilon^2), physical positive rank leading P^(N-3). Fixed right free level M_R gives descendant mixtures."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.A",
+      "cluster/cluster_appendices.md §CL.B"
+    ],
+    "limitations": [
+      "No uniformity in N,Q,Δ",
+      "No fixed-Q law in the balanced regime",
+      "No statement that all finite-P roots are close to atoms",
+      "No s=0 logdet conclusion before positive gap"
+    ],
+    "dependency_ids": [
+      "PHY-06",
+      "FIN-03",
+      "FIN-01"
+    ]
+  },
+  {
+    "id": "CL-02",
+    "title": "Overlap compactness and partition-join multiplication",
+    "precise_statement": "If $S\\cap T\\ne\\varnothing$,\n\n$$\n\\mathcal C_S^{\\leq Q}\\mathcal C_T^{\\leq Q}\n\\subseteq\\mathcal C_{S\\cup T}^{\\leq Q}.\n$$\n\nFor arbitrary partitions,\n\n$$\n\\mathcal C_\\pi\\mathcal C_\\tau\\subseteq\\mathcal C_{\\pi\\vee\\tau}.\n\\tag{CL.6}\n$$\n\nFor fixed left internal cutoffs on $S,T$, the product of their cutoff projections has norm $O(J^{-|S\\cap T|\\Delta})$ on union degree $J$. The assertion for arbitrary $c_0$ operators follows by taking the finite cutoff before the large-$J$ limit. In particular, the one-block component is compact on the fixed-$Q$ global-primary direct sum.\n\nThe exponent is controlled by the common **effective cluster**, whose lowest weight is $|S\\cap T|\\Delta/2+p_{S\\cap T}$. Merely stating that two coupling trees become orthogonal does not supply the uniform finite-rectangle estimate needed for operator compactness. Appendix CL.C supplies it and explains why arbitrary matrices on internal multiplicity spaces cause no additional difficulty.\n\nLet\n\n$$\nH_\\pi=\\sum_{S\\in\\pi}A_{|S|}^{(S)},\\qquad\n\\mu(\\pi,1_N)=(-1)^{|\\pi|-1}(|\\pi|-1)!.\n$$\n\nThe superscript specifies the labelled cluster; singleton residuals vanish.",
+    "assumptions": [
+      "Fixed N,Q,Δ>1. Finite cutoffs first, union degree J→∞, then remove cutoff. Finite endpoint rectangle O(J^(-|S∩T|Δ)); arbitrary internal left/right multiplicity matrices admitted."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.A",
+      "cluster/cluster_appendices.md §CL.C"
+    ],
+    "limitations": [
+      "Proper-cluster c0 is not globally compact",
+      "Compactness does not imply Schatten membership"
+    ],
+    "dependency_ids": [
+      "PHY-06"
+    ]
+  },
+  {
+    "id": "CL-03",
+    "title": "Connected Möbius functional calculus and physical partition quotient",
+    "precise_statement": "For every continuous $f$ on an interval containing the spectra of all $H_\\pi$,\n\n$$\n\\mathfrak M_N(f):=\n\\sum_{\\pi\\in\\Pi_N}\\mu(\\pi,1_N)f(H_\\pi)\n\\tag{CL.7}\n$$\n\nbelongs to the compact one-block component. If $f(x)=x^r$ and $0\\leq r\\leq N-2$, the expression is identically zero on every finite block. For $z\\notin\\mathbb R$, the connected resolvent\n\n$$\n\\sum_\\pi\\mu(\\pi,1_N)(z-H_\\pi)^{-1}\n$$\n\nis compact. The same conclusion holds for real $z$ outside the union of the actual spectra. Its expansion at infinity first permits a nonzero term at order $z^{-N}$, built from all ordered spanning-tree words. On the labelled degree-zero vector the coefficient is\n\n$$\n(N-1)!N^{N-2}a_{00}^{N-1}.\n\\tag{CL.8}\n$$\n\nThe proof expands **ordered** pair words, associates a graph component partition to each word, and uses finite partition-lattice Möbius inversion. No overlapping interaction factors are commuted. Polynomial approximation then gives the continuous calculus. On the physical space, internal Bose projections are inserted before using cluster spectra; the argument does not assert that functional calculus commutes with an arbitrary compression. See Appendix CL.D.\n\nCompactness in Theorems CL-02–03 is an operator-norm tail assertion. It is not a trace-class or Schatten-class assertion. A pair tail proportional to $1/\\log(k+2)$ already gives a compact connected two-body resolvent belonging to no finite Schatten class. The separate four-body trace-norm theorem below uses the actual endpoint exponent $\\Delta>1$.",
+    "assumptions": [
+      "Every continuous f on a common bounded spectral interval; compact connected combination. Exact polynomial cancellation for r≤N-2; resolvent coefficient z^-N is ordered spanning trees. Normalizer-scaled Bose compression is a quotient star homomorphism."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.D",
+      "cluster/cluster_appendices.md §CL.D.1"
+    ],
+    "limitations": [
+      "No generic trace-class connected resolvent",
+      "No compression/functional-calculus interchange"
+    ],
+    "dependency_ids": [
+      "CL-02",
+      "FIN-03"
+    ]
+  },
+  {
+    "id": "CL-04",
+    "title": "Recursive essential spectrum and complete Bose-parity Hausdorff limit",
+    "precise_statement": "For fixed $N,Q,\\Delta$,\n\n$$\n\\sigma_{\\mathrm{ess}}\\!\\left(\\bigoplus_{P\\geq0}A_N(P,Q)\\right)\n=\\mathfrak C_{N,Q}.\n\\tag{CL.11}\n$$\n\nAlong $P+Q$ even, the finite spectral sets converge in Hausdorff distance to $\\mathfrak C_{N,Q}$. If $N\\geq3$ is odd, this convergence holds along all sufficiently large $P$. For $N=2$, the odd total-degree physical block is empty and the even-subsequence limit is $\\{0\\}$.\n\nFor even $N=2m\\geq4$, the precise odd-subsequence limit needs the actual internal source space. Let $\\mathfrak h_{m,Q}$ be the orthogonal direct sum of all $\\mathcal P_m(p,q)$, $p\\geq0$, $0\\leq q\\leq Q$, and choose a complete eigenstate list $(\\lambda_i,p_i,q_i)$ with multiplicity. Define\n\n$$\n\\begin{aligned}\n\\mathfrak U_{2m,Q}\n &=\\bigcup_{a<m}\\ \\bigcup_{q_1+q_2\\leq Q}\n (\\Sigma_{a,q_1}+\\Sigma_{2m-a,q_2}),\\\\\n\\mathfrak E_{m,Q}^{+}\n &=\\overline{\\{\\lambda_i+\\lambda_j:i\\leq j,\\ q_i+q_j\\leq Q\\}},\\\\\n\\mathfrak E_{m,Q}^{-}\n &=\\overline{\\{\\lambda_i+\\lambda_j:i<j,\\ q_i+q_j\\leq Q\\}}.\n\\end{aligned}\n\\tag{CL.12}\n$$\n\nThen along $(-1)^{P+Q}=\\eta$, the Hausdorff limit is\n\n$$\n\\mathfrak U_{2m,Q}\\cup\\mathfrak E_{m,Q}^{\\eta}.\n\\tag{CL.13}\n$$\n\nThe exterior square in the minus case acts on internal **states**, including their degrees and multiplicities, not on the set of distinct numerical eigenvalues. Two different states of the same energy are admissible in the exterior square; a single state paired with itself is not. This exchange rule comes from the Bose projection of two equal clusters and does not change the statistics of the original scalar field.\n\nThere are two parts to the proof. Connected functional calculus excludes every compact window outside the proper-cluster sum set on the whole high-$P$ block. Binary Clebsch–Gordan maps construct the converse inclusion; their finite families become isometries after Bose projection and a polar correction. For equal clusters the exact swap is a degree-twisted exchange involution. Conjugating that involution gives precisely the symmetric or exterior source in (CL.12). Compactness and a finite net upgrade the pointwise construction to Hausdorff convergence. Appendix CL.E gives the full argument.\n\nFor five particles this becomes the particularly usable formula\n\n$$\n\\mathfrak C_{5,Q}=\n\\bigcup_{q\\leq Q}\\Sigma_{4,q}\n\\ \\cup\\!\n\\bigcup_{q_1+q_2\\leq Q}(\\Sigma_{3,q_1}+\\Sigma_{2,q_2}).\n\\tag{CL.14}\n$$\n\nA countable comparison operator consists of every $A_4(p,q)$ and every $A_3(p,q_1)+\\alpha I$, $\\alpha\\in\\Sigma_{2,q_2}$, with the indicated budgets. Truncating its internal degree at $R$ approximates the limiting spectral set as $R\\to\\infty$. This is a target-$P$-independent spectral-set construction. It gives neither a proved effective uniform $R(\\varepsilon)$ nor an operator-norm approximation by one copy of that countable operator. Collapsing the repeated two-body zero is valid for this set construction, not for a multiplicity calculation.",
+    "assumptions": [
+      "Fixed N,Q,Δ>1. All P essential spectrum equals binary set. Even total degree gives full Hausdorff set; odd N≥3 gives all large P; even N uses actual symmetric/exterior source. N=2 odd blocks are empty."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.E"
+    ],
+    "limitations": [
+      "No operator norm equivalence to one copy of a countable comparison operator",
+      "No effective uniform R(epsilon) proved",
+      "Collapsing zero duplicates is allowed only for spectral sets"
+    ],
+    "dependency_ids": [
+      "CL-02",
+      "CL-03",
+      "PHY-06"
+    ]
+  },
+  {
+    "id": "CL-05",
+    "title": "Finite Cantor–Bendixson depth",
+    "precise_statement": "For the finite-support Einstein pair residual and fixed $N\\geq2,Q$,\n\n$$\n\\Sigma_{N,Q}^{(N-2)}\\subseteq\n\\widehat\\Sigma_2(Q):=\\{0\\}\\cup\\{a_{k\\ell}:(k,\\ell)\\in\\mathcal B_Q\\},\n\\qquad\n\\Sigma_{N,Q}^{(N-1)}=\\varnothing.\n\\tag{CL.15}\n$$\n\nThus every $\\Sigma_{N,Q}$ is compact and countable and has no nonempty perfect subset and no interval. The bound need not be attained. In particular, an eigenvalue repeated in infinitely many finite blocks is not by that repetition alone a derived-set point.\n\nFor a general self-adjoint $c_0$ pair residual, the weaker conclusions are\n\n$$\n\\widehat\\Sigma_N(Q)^{(N-1)}\\subseteq\\{0\\},\n\\qquad \\widehat\\Sigma_N(Q)^{(N)}=\\varnothing,\n$$\n\nwhere $\\widehat\\Sigma_N(Q)=\\bigcup_{q\\leq Q}\\Sigma_{N,q}$. The proof is the elementary derived-set rule for finite unions and Minkowski sums, applied to Theorem CL-04; Appendix CL.F keeps the zero-rank and singleton cases explicit.",
+    "assumptions": [
+      "Einstein: Σ_N,Q^(N-2) lies in finite union of pair atoms and zero; next derivative empty. General self-adjoint c0 pair tail: the weaker (N-1) derivative is contained in {0}, next empty."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.F"
+    ],
+    "limitations": [
+      "Bound need not be sharp",
+      "Infinite repetition of zero is not by itself an accumulation point"
+    ],
+    "dependency_ids": [
+      "CL-04",
+      "PHY-06"
+    ]
+  },
+  {
+    "id": "CL-06",
+    "title": "Exact eventual projector ranks at regular binary thresholds",
+    "precise_statement": "For every regular $\\lambda$, there is $\\varepsilon_0>0$ such that, for each fixed $0<\\varepsilon<\\varepsilon_0$, there is $P_0(\\varepsilon)$ for which\n\n$$\n\\operatorname{rank}\\mathbf1_{(\\lambda-\\varepsilon,\\lambda+\\varepsilon)}(A_N(P,Q))\n=\\sum_{a<N/2}M_{a,N-a}^{Q}(\\lambda)\n+\\mathbf1_{2\\mid N}\\,M_{N/2,N/2}^{Q,(-1)^{P+Q}}(\\lambda)\n\\tag{CL.19}\n$$\n\nwhenever $P\\geq P_0(\\varepsilon)$. All eigenvalues counted there converge to $\\lambda$. There is one source for each cluster-size orbit; no factor $\\binom Na$ multiplies (CL.19). An unused right degree gives the unique binary relative coupling and contributes no extra multiplicity.\n\nThe proof first excludes unbounded internal degrees by regularity, then derives an operator-norm approximation to the entire target spectral projector. The Bose-projected source maps have a joint Gram matrix $I+o(1)$; their polar isometry gives an actual finite-rank projection. Two orthogonal projections at distance less than one have the same rank. This yields an exact eventual integer, not a rank inferred from a trial subspace or from numerical near-degeneracy. The quantifiers in (CL.19) concern a fixed window; no rate for shrinking windows or individual eigenvalue series follows. Appendix CL.G gives the proof and the source-space exchange trace that produces (CL.18).\n\nFor example, when $N=3$, $\\mathfrak F_{3,Q}=\\{0\\}$, so a positive pair atom has eventual multiplicity equal to the number of bad channel labels with that value. For $N=5,Q=0$,\n\n$$\n\\mathfrak F_{5,0}=\\Sigma_{3,0}\\cup(\\Sigma_{2,0}+\\Sigma_{2,0}).\n$$\n\nAt a regular value, the count is\n\n$$\n\\sum_p\\operatorname{mult}_{A_4(p,0)}(\\lambda)\n+\\sum_{\\alpha\\in\\{a_{00},a_{20}\\}}\\sum_p\n\\operatorname{mult}_{A_3(p,0)}(\\lambda-\\alpha).\n$$\n\nThe zero two-body term is absent here because it would put the value in $\\mathfrak F_{5,0}$.",
+    "assumptions": [
+      "N≥3, λ in binary cluster set outside the ≥3-cluster set. For each sufficiently small fixed epsilon, exact target spectral rank formula for every P≥P0(epsilon); equal-cut term depends on (-1)^(P+Q)."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.G"
+    ],
+    "limitations": [
+      "No shrinking-window rate",
+      "No claim for values on finer thresholds",
+      "No exact multiplicity from set isolation alone"
+    ],
+    "dependency_ids": [
+      "CL-03",
+      "CL-04",
+      "CL-02"
+    ]
+  },
+  {
+    "id": "CL-07",
+    "title": "Singleton inheritance, eventual simple chiral maximum, and atomic compactness obstruction",
+    "precise_statement": "For $N\\geq3$, along all sufficiently large $P$, the largest eigenvalue of $A_N(P,0)$ is simple and\n\n$$\n\\lambda_{\\max}(A_N(P,0))\n=\\binom{N-1}{2}a_0+O(P^{-\\Delta}).\n\\tag{CL.20}\n$$\n\nThe source is the unique degree-zero ground state of the $(N-1)$-particle cluster, coupled to a singleton. The finite-block inequality $A_m\\leq\\binom m2a_0I$ has equality only at its unique degree-zero state. To use that inequality on the **closed** set $\\Sigma_{m,0}$, one must also exclude a high-degree sequence tending to the endpoint. The recursive upper theorem gives this exclusion. It then places $\\binom{N-1}{2}a_0$ outside the finer threshold, so Theorem CL-06 gives simplicity. Appendix CL.H proves this closure step and the rate.\n\nMore generally, every fixed finite orthonormal family of internal $(N-1)$-particle eigenstates of degrees $(p_i,q_i)$, $q_i\\leq Q$, has normalized Bose-coupled images $U_P$ satisfying\n\n$$\n\\|A_N(P,Q)U_P-U_P\\operatorname{diag}(\\lambda_i)\\|\n=O(P^{-\\Delta}).\n\\tag{CL.21}\n$$\n\nThe constants depend on the selected finite family. Two successive singleton insertions imply that if a positive $m$-body eigenvalue $\\lambda$ is fixed, then for $N\\geq m+2$ and $Q$ at least its right degree, the number of $N$-body eigenvalues in every fixed neighborhood of $\\lambda$ tends to infinity. This supplies no multiplicity growth rate.\n\nFor $N\\geq5,Q=0$, the inherited value $3a_0$ lies above both pair atoms and has unbounded local multiplicity. Consequently the positive residual cannot be represented as\n\n$$\nA_N^+(P,0)=D_P+K_P+E_P,\n\\qquad \\sigma(D_P)\\subseteq\\{a_0,a_2\\},\\quad\\|E_P\\|\\to0,\n\\tag{CL.22}\n$$\n\nwith self-adjoint $K_P$ uniformly compact, meaning that the number of singular values of $K_P$ above each fixed positive threshold stays bounded as $P\\to\\infty$. This obstruction concerns a uniformly compact correction to the pair-atom description. It leaves the recursive cluster comparison of Theorem CL-04 intact.",
+    "assumptions": [
+      "N≥3 top chiral eigenvalue eventually simple on both parities, equals binom(N-1,2)a0+O(P^-Δ). Fixed finite singleton family residual O(P^-Δ). Two insertions give unbounded multiplicity in fixed neighborhoods; N≥5 Q=0 prevents uniformly compact correction to pair atoms."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.H"
+    ],
+    "limitations": [
+      "No nonzero leading coefficient or all-small-P simplicity",
+      "No multiplicity growth rate",
+      "No universal determinant or integrability no-go theorem"
+    ],
+    "dependency_ids": [
+      "CL-04",
+      "CL-06",
+      "PHY-05"
+    ]
+  },
+  {
+    "id": "CL-08",
+    "title": "Four-body refined positive spectrum and exact auxiliary nullity",
+    "precise_statement": "At fixed $Q,\\Delta>1$, along $(-1)^{P+Q}=\\epsilon$, the strictly positive spectrum of $A_4(P,Q)$ converges in Hausdorff distance to\n\n$$\n\\mathfrak S_Q^\\epsilon=\n\\overline{\\begin{aligned}\n&\\{a_\\alpha:\\alpha\\in\\mathcal B_Q\\}\n\\ \\cup\\!\\bigcup_{\\substack{t\\geq0\\\\u\\leq Q}}\n\\sigma_+(A_{3;t,u}^{\\mathrm{aux}})\\\\\n&\\quad\\cup\\{a_\\alpha+a_\\beta:\n\\ell_\\alpha+\\ell_\\beta\\leq Q,\n\\ \\alpha\\ne\\beta\\ \\text{or}\\ \\epsilon=+1\\}\n\\end{aligned}}.\n\\tag{CL.24}\n$$\n\nThis compact set is separated from zero. At any isolated value outside the pair-atom set, the eventual multiplicity is the sum of the corresponding three-body positive multiplicities and allowed unordered pair-pair channels. Accidental numerical coincidences add. The full residual spectrum additionally has its physical zero eigenspace; the auxiliary zeros in (CL.23) are a different count.\n\nThe last distinction is necessary. For example, the auxiliary three-body block at $(t,u)=(0,1)$ has a zero column although the physical primary block is empty. The no-positive-collapse assertion in (CL.24) therefore needs an exact auxiliary nullity computation, not only positive-matrix norm convergence.\n\nDefine\n\n$$\n\\mathcal A(y)=\\frac{2-y^2}{(1-y)(1-y^2)},\\qquad\nz_3(y)=\\frac{3y^4-5y^3-2y+6}{(1-y)^4(1+y+y^2)}.\n$$\n\nFor every $P>15+3Q$, the exact auxiliary nullity is\n\n$$\nz_{4,P,Q}=[y^Q]\\left\\{\n\\frac{z_3(y)}{1-y}\n+\\frac{\\mathcal A(y)^2-\\epsilon\\mathcal A(y^2)}{2(1-y)}\n\\right\\}.\n\\tag{CL.25}\n$$\n\nFor $Q=0$ it is $7$ on the even-total-degree subsequence and $9$ on the odd one; for $Q=2$ these values are $64$ and $68$. Appendix CL.J derives the generating functions, the finite transient bound, and the comparison of zero spectral projections.",
+    "assumptions": [
+      "N=4, fixed Q,Δ>1, fixed total-degree parity. Positive Hausdorff limit is atoms, positive triple sources, allowed unordered pair-pair sums; uniform positive gap. Exact auxiliary nullity for P>15+3Q."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.I",
+      "cluster/cluster_appendices.md §CL.J"
+    ],
+    "limitations": [
+      "Physical kernel count is not auxiliary nullity",
+      "No root multiplicity assertion at the bulk atom locations"
+    ],
+    "dependency_ids": [
+      "FIN-03",
+      "EX-01",
+      "FIN-01"
+    ]
+  },
+  {
+    "id": "CL-09",
+    "title": "Complex locally uniform branch-free Fredholm limit",
+    "precise_statement": "Let $n_\\alpha(P,Q)$ be the multiplicity of $a_\\alpha$ in the distinguished-pair diagonal matrix and set\n\n$$\n\\Omega_Q=\\mathbb C\\setminus\\{-a_\\alpha:\\alpha\\in\\mathcal B_Q\\},\n\\qquad\n\\mathcal F_{P,Q}(s)=\n\\frac{\\det(sI+B_{P,Q})}{\\prod_\\alpha(s+a_\\alpha)^{n_\\alpha(P,Q)}}.\n\\tag{CL.26}\n$$\n\nAlong either parity subsequence, $\\mathcal F_{P,Q}$ converges locally uniformly as a holomorphic function on $\\Omega_Q$ to\n\n$$\n\\mathcal F_Q^\\epsilon(s)=\n\\mathcal F_{22,Q}^\\epsilon(s)\n\\prod_{u=0}^Q\\prod_{t=0}^{\\infty}\n\\frac{\\det(sI+A_{3;t,u}^{\\mathrm{aux}})}\n{\\prod_{\\alpha:\\,k_\\alpha\\leq t,\\ \\ell_\\alpha\\leq u}(s+a_\\alpha)},\n\\tag{CL.27}\n$$\n\nwhere\n\n$$\n\\mathcal F_{22,Q}^\\epsilon(s)=\n\\prod_{\\substack{\\{\\alpha,\\beta\\},\\ \\alpha\\ne\\beta\\\\\n\\ell_\\alpha+\\ell_\\beta\\leq Q}}\n\\frac{s(s+a_\\alpha+a_\\beta)}{(s+a_\\alpha)(s+a_\\beta)}\n\\prod_{\\substack{\\alpha\\\\2\\ell_\\alpha\\leq Q}}\n\\frac{s+(1+\\epsilon)a_\\alpha}{s+a_\\alpha}.\n\\tag{CL.28}\n$$\n\nThe infinite product converges normally. On every compact $K\\subset\\Omega_Q$, a triple-degree cutoff $T$ has determinant error controlled by a constant times the trace-norm tail $O_K(T^{1-\\Delta})$, followed by a finite-$T$ error tending to zero as $P\\to\\infty$. The order of these limits matters.\n\nThe proof uses the branch-free normalization $(s+D)^{-1}$, whose norm is uniformly bounded on $K$. A real-$s$ argument involving square roots would not establish this complex theorem. Local uniform convergence and Rouché's theorem give the multiplicities of isolated zeros away from the excluded atom locations. At $s=0$, (CL.25) specifies the power to remove before taking a pseudodeterminant. Logarithms require an explicitly chosen zero-free domain and branch; the theorem itself is a statement about determinants. Appendix CL.K supplies the trace-norm comparison.",
+    "assumptions": [
+      "Holomorphic locally uniform convergence on C minus negative pair atoms, along each parity. Uniform compact-s error after triple cutoff O_K(T^(1-Δ)); P→∞ first at fixed T, then T→∞. Isolated zeros counted by Rouché."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.K"
+    ],
+    "limitations": [
+      "No unspecified complex logarithm branch",
+      "No excluded-atom root count",
+      "Not a consequence of generic cluster compactness alone"
+    ],
+    "dependency_ids": [
+      "CL-08"
+    ]
+  },
+  {
+    "id": "CL-10",
+    "title": "Finite Gamma representation for integer Δ and full nonchiral specialization",
+    "precise_statement": "Suppose $\\Delta\\in\\mathbb Z$, $\\Delta\\geq2$, with $Q$ fixed. For each right degree $u\\leq Q$ and parity $\\eta=(-1)^t$, the sufficiently large-$t$ determinant factor in (CL.27) is a rational function\n\n$$\nf_{u,\\eta}(t;s)=\n\\frac{\\prod_j(t-\\alpha_j(s))}{\\prod_j(t-\\beta_j(s))},\n\\qquad\n\\#\\{\\alpha_j\\}=\\#\\{\\beta_j\\},\\quad\n\\sum_j\\alpha_j=\\sum_j\\beta_j.\n\\tag{CL.29}\n$$\n\nAfter cancelling common factors, choose the first $m\\geq Q+2$ of that parity. Then\n\n$$\n\\prod_{n=0}^{\\infty}f_{u,\\eta}(m+2n;s)\n=\\prod_j\\frac{\\Gamma((m-\\beta_j(s))/2)}\n{\\Gamma((m-\\alpha_j(s))/2)}.\n\\tag{CL.30}\n$$\n\nTogether with the finitely many omitted triple blocks and (CL.28), this is a finite Gamma representation of the limit determinant. The expression is interpreted by symmetric root multisets and analytic continuation on $\\Omega_Q$ across root collisions and removable specializations. No ordering of roots or global square-root branch is part of the theorem. A conservative total root-count bound is $O(Q^4)$ for fixed integer $\\Delta$. No finite Gamma formula is asserted for noninteger $\\Delta$.\n\nFor $\\Delta=2,Q=0$, $a_0=24/5$, $a_2=8/35$. If $C=(t+2)(t+3)$, $L=(5s+24)(35s+8)$, then for $t\\geq2$\n\n$$\n\\begin{aligned}\nf_{0,\\eta}(t;s)&=\\frac{N_\\eta(C;s)}{LC^2(C-2)(C-6)},\\\\\nN_\\eta(C;s)&=LC^2(C-2)(C-6)\\\\\n&\\quad+\\eta\\{16800sC(C^2-32C+396)\n+34560C(C^2-64C+908)\\}\\\\\n&\\quad-19353600(C-18).\n\\end{aligned}\n\\tag{CL.31}\n$$\n\nA quartic in $C$ therefore gives eight roots in $t$. The denominator roots, counted with multiplicity, are\n\n$$0,-1,-2,-2,-3,-3,-4,-5.$$\n\nThe even and odd tails start at $2$ and $3$, respectively. The finite $t=0,1$ prefix is $(s+72/5)s/(s+24/5)^2$. Appendix CL.L derives this rational determinant and the Gamma product without taking arbitrary square roots of matrix entries.\n\nThe nonchiral integer-dimension calculation is covered by the same theorem. In the retained $\\Delta=2,u=1,s=20$ specialization, the rational factor is degree ten in $C$, its denominator is\n\n$$\n49512859\\,C^4(C-12)(C-6)^2(C-2)^3,\n$$\n\nand the $t=0,1,2$ prefix factors are $25/31$, $8875/7843$, and $1413125/1388211$. The even tail starts at $4$, the odd tail at $3$. The associated value was recomputed in this assembly at 80 decimal working precision:\n\n$$\n\\log\\mathcal F_1^+(20)\n=-0.0358546286698960811729531052143874137590\\ldots.\n$$\n\nBoth nonchiral rational identities were also reconstructed independently for symbolic $t$. The displayed decimal is a numerical evaluation of the proved rational/Gamma mechanism, with polynomial-root residual checks; it is not an interval certificate. Appendix CL.L gives the full exact numerator coefficients and the recorded numerical scope.",
+    "assumptions": [
+      "Integer Δ≥2, fixed Q. Rational parity tails have equal degrees and root sums; finite Gamma ratios by analytic continuation. Conservative O(Q^4) root count. Explicit Δ=2,u=0 and u=1 coefficients retained."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.L"
+    ],
+    "limitations": [
+      "No finite Gamma theorem for noninteger Δ",
+      "Numerical decimal is not interval-certified"
+    ],
+    "dependency_ids": [
+      "CL-09"
+    ]
+  },
+  {
+    "id": "CL-11",
+    "title": "Certified smallest positive four-body limit at Δ=2,Q=0",
+    "precise_statement": "For either total-degree parity,\n\n$$\n\\lim_{P\\to\\infty}\\lambda_{\\min}^+(A_4(P,0))\n=\\lambda_*:=\\frac{33220-4\\sqrt{66856729}}{15015}\n=0.03420674817\\ldots.\n\\tag{CL.32}\n$$\n\nThe value is the smaller positive eigenvalue of the three-body $t=9$ block. Its characteristic polynomial, made monic, is\n\n$$\nx^2-\\frac{3654200}{825825}x+\\frac{124032}{825825}.\n$$\n\nAn exact rational check of the explicit two-by-two matrices for $2\\leq t\\leq128$ puts every other positive triple eigenvalue above $7/200$. A uniform analytic Gershgorin estimate gives, for every $t\\geq129$,\n\n$$\n\\|R_3(t,0)\\|\\leq\\frac{18595}{2397824}<\\frac1{100},\n\\qquad\n\\lambda_{\\min}(A_{3;t,0}^{\\mathrm{aux}})\\geq\\frac{116}{875}>\n\\frac7{200}.\n\\tag{CL.33}\n$$\n\nAll pair atoms and positive pair-pair sums are larger. The exact finite certificate and the uniform tail proof are given in Appendix CL.M. Thus (CL.32) is not an extrapolation from a numerical degree cutoff. The physical correction has the additional baseline $b_4(0)=-96$.",
+    "assumptions": [
+      "Both parity subsequences. Minimum tends to (33220-4 sqrt(66856729))/15015. All other finite t≤128 positives exceed 7/200; every t≥129 has lower bound 116/875."
+    ],
+    "proof_home": [
+      "cluster/cluster_appendices.md §CL.M"
+    ],
+    "limitations": [
+      "No claimed finite-P equality to the limiting minimum"
+    ],
+    "dependency_ids": [
+      "CL-08"
+    ]
+  }
+]

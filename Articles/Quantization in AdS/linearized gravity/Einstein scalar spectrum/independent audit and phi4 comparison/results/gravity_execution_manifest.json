@@ -1,0 +1,47 @@
+{
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "artifact_hashes_after_successful_runs": [
+    {
+      "path": "scripts/gravity_source_audit.py",
+      "bytes": 9930,
+      "sha256": "4016e3c9b3c654b66144f23fa7f901fdc09e4bd338a77ec45ab8d26a5d5356e6"
+    },
+    {
+      "path": "scripts/gravity_phi4_verification.py",
+      "bytes": 6510,
+      "sha256": "e206e6835404da5a029e3596a1ce82b9b71be4d2faa0f82420db09480dd42822"
+    },
+    {
+      "path": "scripts/gravity_certificate_review.py",
+      "bytes": 7528,
+      "sha256": "89373b6f669e5e41359b3258b084f6356ef5102f5514d961b8a80e4640ecc937"
+    },
+    {
+      "path": "results/gravity_source_audit_02.json",
+      "bytes": 42902,
+      "sha256": "ea82ca270cc425ff91ec069fc9c07f2c0036d0c0e005c0e8fd63170d1eb7c092"
+    },
+    {
+      "path": "results/gravity_phi4_verification_01.json",
+      "bytes": 3396,
+      "sha256": "be484eafe261d1f756f2f08afa66e3a7fa1c435e1d652904d44f3c078a984880"
+    },
+    {
+      "path": "results/gravity_certificate_review_04.json",
+      "bytes": 12980,
+      "sha256": "6b6e4a13c8489462aedffd56fe61d8159fe3368dec89aa48b2a567439554e86d"
+    },
+    {
+      "path": "gravitational interface audit.md",
+      "bytes": 23108,
+      "sha256": "00d8a9d4a67ede32f5d5c47ece98e9fd839d85d181490fa561b281848f8ac53b"
+    }
+  ],
+  "source_status": "no imported evaluator or closed pair coefficient in the new angular/source solver; phi4 extension explicitly takes Einstein coefficients only after independently deriving the contact",
+  "commands": [
+    "PYTHONDONTWRITEBYTECODE=1 SYMPY_GROUND_TYPES=python \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python\" -B \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_source_audit.py\" --output \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/gravity_source_audit_02.json\"",
+    "PYTHONDONTWRITEBYTECODE=1 SYMPY_GROUND_TYPES=python \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python\" -B \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_phi4_verification.py\" --output \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/gravity_phi4_verification_01.json\"",
+    "PYTHONDONTWRITEBYTECODE=1 SYMPY_GROUND_TYPES=python \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python\" -B \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py\" --input \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/gravity_source_audit_02.json\" --output \"/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/gravity_certificate_review_04.json\""
+  ],
+  "rerun_note": "Scripts refuse to overwrite existing output; choose a fresh output filename on rerun. Failed checker attempts are retained separately and are not included as passed certificates."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-20T19:59:25.547188+00:00",
+  "ended_utc": "2026-10-20T19:59:27.545953+00:00",
+  "elapsed_seconds": 1.9985682090045884,
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "sympy": "1.14.0",
+  "optimization": 0,
+  "einstein_specialization": true,
+  "large_mass_epsilon_over_Delta": "27/34",
+  "gegenbauer_polynomials_checked": 31,
+  "eta_diagonal_symbolic_checks": 60,
+  "charge_jacobian": "-2048*x1**3*x2*x3*z2**2*z3**2",
+  "jordan_physical_roots": 2,
+  "jordan_rational_isolation": [
+    [
+      "1563/1000",
+      "391/250"
+    ],
+    [
+      "18651/1000",
+      "4663/250"
+    ]
+  ],
+  "diagonal_pair_positive_polynomial": true
+}

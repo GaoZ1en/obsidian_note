@@ -1,0 +1,352 @@
+{
+  "sage_version": "10.9",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "EX05_root_ideal_N2_power3",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N2_power4",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N3_power3",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N3_power4",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N4_power3",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N4_power4",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N5_power3",
+      "passed": true
+    },
+    {
+      "label": "EX05_root_ideal_N5_power4",
+      "passed": true
+    },
+    {
+      "label": "EX08_channel0_invariant_primary",
+      "passed": true
+    },
+    {
+      "label": "EX08_channel2_invariant_primary",
+      "passed": true
+    },
+    {
+      "label": "EX08_rank_two_commutator",
+      "passed": true
+    },
+    {
+      "label": "EX08_scalar_common_commutant",
+      "passed": true
+    },
+    {
+      "label": "EX08_D2_counterexample",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b0",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b1",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b2",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b3",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b4",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b5",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b6",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b7",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b8",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b9",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b10",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b11",
+      "passed": true
+    },
+    {
+      "label": "ST06_Gegenbauer_equation_b12",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P2_a1_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P3_a0_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P4_a2_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P5_a1_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P6_a3_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P6_a0_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P7_a2_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P8_a4_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P8_a1_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P9_a3_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P9_a0_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P10_a5_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P10_a2_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P11_a4_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P11_a1_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P12_a6_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P12_a3_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P12_a0_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P13_a5_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P13_a2_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P14_a7_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P14_a4_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P14_a1_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P15_a6_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P15_a3_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P15_a0_b5",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P16_a8_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P16_a5_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P16_a2_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P17_a7_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P17_a4_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P17_a1_b5",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P18_a9_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P18_a6_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P18_a3_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P18_a0_b6",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P19_a8_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P19_a5_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P19_a2_b5",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P20_a10_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P20_a7_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P20_a4_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P20_a1_b6",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P21_a9_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P21_a6_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P21_a3_b5",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P21_a0_b7",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P22_a11_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P22_a8_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P22_a5_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P22_a2_b6",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P23_a10_b1",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P23_a7_b3",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P23_a4_b5",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P23_a1_b7",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P24_a12_b0",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P24_a9_b2",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P24_a6_b4",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P24_a3_b6",
+      "passed": true
+    },
+    {
+      "label": "ST08_eta_P24_a0_b8",
+      "passed": true
+    }
+  ],
+  "channel0_N4_P6": "[27061/13440      -9/128  7729/53760]\n[  361/10080     309/160  7381/40320]\n[  3009/1120     117/160    2601/896]",
+  "channel2_N4_P6": "[12579/7040     15/128 -2017/7680]\n[-7721/5280    341/160 -5533/5760]\n[-6641/5280   -227/160    725/384]"
+}

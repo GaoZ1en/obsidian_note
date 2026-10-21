@@ -1,0 +1,2451 @@
+{
+  "status": "passed",
+  "scope": "Independent exact consequences of declared Einstein spectral multiplier, NOT a new gravitational integration. No package engine imported.",
+  "basis": "u=z1-z2,v=z1+z2-2z3; exact Casimir eigenpolynomials, literal simultaneous S3 average",
+  "block_count": 156,
+  "rows": [
+    {
+      "Delta": "3/2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "Einstein_residual_rank": 0,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "Einstein_residual_rank": 10,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 13,
+      "Q": 1,
+      "dimension": 5,
+      "Einstein_residual_rank": 4,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 16,
+      "Q": 2,
+      "dimension": 9,
+      "Einstein_residual_rank": 7,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 17,
+      "Q": 3,
+      "dimension": 12,
+      "Einstein_residual_rank": 10,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 18,
+      "Q": 4,
+      "dimension": 16,
+      "Einstein_residual_rank": 14,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 20,
+      "Q": 4,
+      "dimension": 18,
+      "Einstein_residual_rank": 14,
+      "kernel": 4,
+      "Hilbert_series_count": 4
+    },
+    {
+      "Delta": "2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "Einstein_residual_rank": 0,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "Einstein_residual_rank": 10,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "2",
+      "P": 13,
+      "Q": 1,
+      "dimension": 5,
+      "Einstein_residual_rank": 4,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "2",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "2",
+      "P": 16,
+      "Q": 2,
+      "dimension": 9,
+      "Einstein_residual_rank": 7,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "2",
+      "P": 17,
+      "Q": 3,
+      "dimension": 12,
+      "Einstein_residual_rank": 10,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "2",
+      "P": 18,
+      "Q": 4,
+      "dimension": 16,
+      "Einstein_residual_rank": 14,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "2",
+      "P": 20,
+      "Q": 4,
+      "dimension": 18,
+      "Einstein_residual_rank": 14,
+      "kernel": 4,
+      "Hilbert_series_count": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "Einstein_residual_rank": 0,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "Einstein_residual_rank": 1,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "Einstein_residual_rank": 3,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "Einstein_residual_rank": 8,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "Einstein_residual_rank": 4,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "Einstein_residual_rank": 6,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "Einstein_residual_rank": 7,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "Einstein_residual_rank": 10,
+      "kernel": 0,
+      "Hilbert_series_count": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 13,
+      "Q": 1,
+      "dimension": 5,
+      "Einstein_residual_rank": 4,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 16,
+      "Q": 2,
+      "dimension": 9,
+      "Einstein_residual_rank": 7,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 17,
+      "Q": 3,
+      "dimension": 12,
+      "Einstein_residual_rank": 10,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 18,
+      "Q": 4,
+      "dimension": 16,
+      "Einstein_residual_rank": 14,
+      "kernel": 2,
+      "Hilbert_series_count": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 20,
+      "Q": 4,
+      "dimension": 18,
+      "Einstein_residual_rank": 14,
+      "kernel": 4,
+      "Hilbert_series_count": 4
+    }
+  ],
+  "spectral_examples": [
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^2 + 32881/256*g + 6963561/2048",
+      "matrix": [
+        [
+          "-5847/64",
+          "473/64"
+        ],
+        [
+          "-429/256",
+          "-9493/256"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "1308736/675",
+          "-36608/135"
+        ],
+        [
+          "-36608/135",
+          "17408/75"
+        ]
+      ]
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^5 + 7551279/10240*g^4 + 34849795628979/167772160*g^3 + 953797432129744995/34359738368*g^2 + 153787767000577386427467/87960930222080*g + 14472626848210439282639763/351843720888320",
+      "matrix": [
+        [
+          "-101828433/524288",
+          "13448511/2621440",
+          "126999/327680",
+          "-8755371/2621440",
+          "153819/262144"
+        ],
+        [
+          "184285287/1048576",
+          "-869231241/5242880",
+          "1756431/655360",
+          "-82418499/5242880",
+          "-4216077/524288"
+        ],
+        [
+          "217632555/8388608",
+          "108739071/8388608",
+          "-75196713/1048576",
+          "-19491435/8388608",
+          "-12527865/4194304"
+        ],
+        [
+          "-16177497/32768",
+          "-5031369/163840",
+          "-1068081/20480",
+          "-31138371/163840",
+          "57267/16384"
+        ],
+        [
+          "-20884857/65536",
+          "-42801129/327680",
+          "-1501521/40960",
+          "7927389/327680",
+          "-3789549/32768"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "2773024768/225",
+          "-148176896/375",
+          "-1185415168/3375",
+          "-42336256/225",
+          "-84672512/675"
+        ],
+        [
+          "-148176896/375",
+          "5669322752/16875",
+          "-69730304/1875",
+          "-42336256/1125",
+          "4980736/225"
+        ],
+        [
+          "-1185415168/3375",
+          "-69730304/1875",
+          "17569939456/118125",
+          "338690048/7875",
+          "2097152/675"
+        ],
+        [
+          "-42336256/225",
+          "-42336256/1125",
+          "338690048/7875",
+          "18119917568/275625",
+          "0"
+        ],
+        [
+          "-84672512/675",
+          "4980736/225",
+          "2097152/675",
+          "0",
+          "224395264/23625"
+        ]
+      ]
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^3 + 2540070189/33554432*g^2 + 4184056221950205/2199023255552*g + 34899149639989935/2199023255552",
+      "matrix": [
+        [
+          "-92700315/4194304",
+          "37145/16777216",
+          "0"
+        ],
+        [
+          "294412239/8388608",
+          "-892498005/33554432",
+          "0"
+        ],
+        [
+          "23888712375/67108864",
+          "207805875/268435456",
+          "-27"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "29909619901032562688/12924275",
+          "337253716983808/53235",
+          "-11716670783488/1183"
+        ],
+        [
+          "337253716983808/53235",
+          "271102841144213504/157355055",
+          "-993443115433984/3864861"
+        ],
+        [
+          "-11716670783488/1183",
+          "-993443115433984/3864861",
+          "442495430941474816/2737609875"
+        ]
+      ]
+    },
+    {
+      "Delta": "3/2",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^8 + 222103960925/268435456*g^7 + 21457086787038576908623/72057594037927936*g^6 + 1176602381629651808049686676099599/19342813113834066795298816*g^5 + 10001985464404429699959960678736591221641571/1298074214633706907132624082305024*g^4 + 421147974419559343803657375944231955380229998819885/680564733841876926926749214863536422912*g^3 + 1369690702207975556350054075900259582345810750420139993749/44601490397061246283071436545296723011960832*g^2 + 10038828424783022078087858778369191866836218768072887981336034933/11692013098647223345629478661730264157247460343808*g + 120593015927059398896533518693309637185681787414286077273287511695/11692013098647223345629478661730264157247460343808",
+      "matrix": [
+        [
+          "-474157618183/4294967296",
+          "2491575165/2147483648",
+          "35927955/1073741824",
+          "950475/2147483648",
+          "4372185/268435456",
+          "30015/134217728",
+          "0",
+          "10005/67108864"
+        ],
+        [
+          "12477265515/17179869184",
+          "-428464455049/8589934592",
+          "-467063415/4294967296",
+          "27183585/8589934592",
+          "13116555/1073741824",
+          "-390195/536870912",
+          "0",
+          "30015/268435456"
+        ],
+        [
+          "8108567775/1073741824",
+          "-21049514325/536870912",
+          "-28460052319/268435456",
+          "16512045/536870912",
+          "-34525185/67108864",
+          "222525/33554432",
+          "0",
+          "-67965/16777216"
+        ],
+        [
+          "196980863625/17179869184",
+          "1124979598925/8589934592",
+          "15162560595/4294967296",
+          "-985339025157/8589934592",
+          "1637458665/1073741824",
+          "9347775/536870912",
+          "0",
+          "2363365/268435456"
+        ],
+        [
+          "5633652699675/68719476736",
+          "3374938796775/34359738368",
+          "-197113287735/17179869184",
+          "10180721265/34359738368",
+          "-439616739141/4294967296",
+          "-121521075/2147483648",
+          "0",
+          "7090095/1073741824"
+        ],
+        [
+          "225346107987/1073741824",
+          "-584989391441/536870912",
+          "7402507749/268435456",
+          "338638729/536870912",
+          "-708062797/67108864",
+          "-3842937839/33554432",
+          "0",
+          "-508185/16777216"
+        ],
+        [
+          "10042598290725/68719476736",
+          "57354394682585/34359738368",
+          "665005668327/17179869184",
+          "11446598735/34359738368",
+          "52654354181/4294967296",
+          "149472675/2147483648",
+          "-115",
+          "-11800815/1073741824"
+        ],
+        [
+          "287218311114735/274877906944",
+          "172063184047755/137438953472",
+          "-8645073688251/68719476736",
+          "327372723821/137438953472",
+          "157963062543/17179869184",
+          "-1943144775/8589934592",
+          "0",
+          "-491809157837/4294967296"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "103886576568351420697280512/2897197875",
+          "-26131995426328319885312/2606175",
+          "-6549220287252583677952/2606175",
+          "4117954498469493211136/2606175",
+          "-1498020660641691336704/2606175",
+          "-452381586388529709056/2606175",
+          "5098529975997300736/34749",
+          "-149271308271892824064/2606175"
+        ],
+        [
+          "-26131995426328319885312/2606175",
+          "437212101019639059077660672/95607529875",
+          "26196881149010334711808/28667925",
+          "-1498020660641691336704/2606175",
+          "73951982203841806336/353925",
+          "1809526345554118836224/28667925",
+          "-149271308271892824064/2606175",
+          "562492802874761805824/28667925"
+        ],
+        [
+          "-6549220287252583677952/2606175",
+          "26196881149010334711808/28667925",
+          "159869473485339602393759744/653867589375",
+          "-62085714454329952305152/434188755",
+          "248342857817319809220608/4776076305",
+          "120654331520665847332864/7960127175",
+          "-150839110733216016760832/10854718875",
+          "603356442932864067043328/119401907625"
+        ],
+        [
+          "4117954498469493211136/2606175",
+          "-1498020660641691336704/2606175",
+          "-62085714454329952305152/434188755",
+          "118156697215871246976155648/1248292670625",
+          "-23727204437731598925824/723647925",
+          "-21352209988847723872256/2170943775",
+          "18340080543057978589184/2170943775",
+          "-34710051410372781408256/10854718875"
+        ],
+        [
+          "-1498020660641691336704/2606175",
+          "73951982203841806336/353925",
+          "248342857817319809220608/4776076305",
+          "-23727204437731598925824/723647925",
+          "2217942576694636016794861568/178505851899375",
+          "85408839955390895489024/23880381525",
+          "-34710051410372781408256/10854718875",
+          "581628951575873512800256/517408266375"
+        ],
+        [
+          "-452381586388529709056/2606175",
+          "1809526345554118836224/28667925",
+          "120654331520665847332864/7960127175",
+          "-21352209988847723872256/2170943775",
+          "85408839955390895489024/23880381525",
+          "3962918808237177567182848/3478575575475",
+          "-1544713843039803539456/1649917269",
+          "6178855372159214157824/18149089959"
+        ],
+        [
+          "5098529975997300736/34749",
+          "-149271308271892824064/2606175",
+          "-150839110733216016760832/10854718875",
+          "18340080543057978589184/2170943775",
+          "-34710051410372781408256/10854718875",
+          "-1544713843039803539456/1649917269",
+          "64517077798931484639232/68746552875",
+          "-12000658117879845093376/41247931725"
+        ],
+        [
+          "-149271308271892824064/2606175",
+          "562492802874761805824/28667925",
+          "603356442932864067043328/119401907625",
+          "-34710051410372781408256/10854718875",
+          "581628951575873512800256/517408266375",
+          "6178855372159214157824/18149089959",
+          "-12000658117879845093376/41247931725",
+          "3576846059063905066418176/29492271183375"
+        ]
+      ]
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^2 + 6896/35*g + 1484288/175",
+      "matrix": [
+        [
+          "-3344/25",
+          "46/5"
+        ],
+        [
+          "-256/125",
+          "-11072/175"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "50176/75",
+          "-448/5"
+        ],
+        [
+          "-448/5",
+          "236/3"
+        ]
+      ]
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^5 + 1348024/1365*g^4 + 6532381150144/17342325*g^3 + 461372423775126016/6676795125*g^2 + 283881205154272313344/46737565875*g + 4442870559209121775616/21810864075",
+      "matrix": [
+        [
+          "-8983592/35035",
+          "465200/81081",
+          "4040/9009",
+          "-465485/126126",
+          "5900/9009"
+        ],
+        [
+          "29376/143",
+          "-9629824/45045",
+          "496/143",
+          "-129702/7007",
+          "-8913/1001"
+        ],
+        [
+          "130560/4459",
+          "776800/51597",
+          "-6819808/63063",
+          "-35500/13377",
+          "-72146/21021"
+        ],
+        [
+          "-19425024/35035",
+          "-99712/3003",
+          "-27408/455",
+          "-1749240/7007",
+          "4220/1001"
+        ],
+        [
+          "-9033216/22295",
+          "-2716288/17199",
+          "-4969024/105105",
+          "422000/13377",
+          "-1524776/9555"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "2277310464/1225",
+          "-360448/7",
+          "-1622016/35",
+          "-1216512/49",
+          "-608256/35"
+        ],
+        [
+          "-360448/7",
+          "3807232/81",
+          "-45056/9",
+          "-112640/21",
+          "2816"
+        ],
+        [
+          "-1622016/35",
+          "-45056/9",
+          "564736/25",
+          "42240/7",
+          "2304/5"
+        ],
+        [
+          "-1216512/49",
+          "-112640/21",
+          "42240/7",
+          "70400/7",
+          "0"
+        ],
+        [
+          "-608256/35",
+          "2816",
+          "2304/5",
+          "0",
+          "1344"
+        ]
+      ]
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^3 + 1071796/7735*g^2 + 20358432/3185*g + 5314558464/54145",
+      "matrix": [
+        [
+          "-7512/175",
+          "1/595",
+          "0"
+        ],
+        [
+          "323136/11375",
+          "-263204/5525",
+          "0"
+        ],
+        [
+          "1116288/3185",
+          "101536/119119",
+          "-48"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "248229503334088704/780325",
+          "2167117185024/1715",
+          "-398834270208/343"
+        ],
+        [
+          "2167117185024/1715",
+          "160463060992/539",
+          "-2078801920/49"
+        ],
+        [
+          "-398834270208/343",
+          "-2078801920/49",
+          "993394688/49"
+        ]
+      ]
+    },
+    {
+      "Delta": "2",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^8 + 436123532/373065*g^7 + 1272744250627075888/2138272411275*g^6 + 594986688176603258846144/3453309944209125*g^5 + 8468236584886348636774432828288/273277682434989106875*g^4 + 115202123834515356280552490996383232/32520044209763703718125*g^3 + 27760456133890204057516517171675287552/110568150313196592641625*g^2 + 757129096282255441760872687432118566912/75186342212973682996305*g + 625183221833819354355684443742606983168/3580302010141603952205",
+      "matrix": [
+        [
+          "-65933/425",
+          "1053/1190",
+          "13/476",
+          "1/3230",
+          "14/969",
+          "1/5168",
+          "0",
+          "5/36176"
+        ],
+        [
+          "1008/2125",
+          "-33602/425",
+          "-52/595",
+          "56/24225",
+          "56/4845",
+          "-1/1615",
+          "0",
+          "1/9044"
+        ],
+        [
+          "11172/2125",
+          "-13338/425",
+          "-89337/595",
+          "574/24225",
+          "-2296/4845",
+          "23/3876",
+          "0",
+          "-5/1292"
+        ],
+        [
+          "17784/2125",
+          "346788/2975",
+          "13858/4165",
+          "-9029198/56525",
+          "7528/4845",
+          "2351/135660",
+          "0",
+          "43/4522"
+        ],
+        [
+          "663936/10625",
+          "1387152/14875",
+          "-221728/20825",
+          "30112/121125",
+          "-3535808/24225",
+          "-9404/169575",
+          "0",
+          "86/11305"
+        ],
+        [
+          "76608/425",
+          "-640224/595",
+          "23920/833",
+          "37616/62985",
+          "-150464/12597",
+          "-14065382/88179",
+          "0",
+          "-1220/29393"
+        ],
+        [
+          "55176/425",
+          "1075932/595",
+          "15730/357",
+          "20812/62985",
+          "582736/37791",
+          "7381/75582",
+          "-160",
+          "5/1326"
+        ],
+        [
+          "2059904/2125",
+          "4303728/2975",
+          "-50336/357",
+          "2330944/944775",
+          "2330944/188955",
+          "-59048/188955",
+          "0",
+          "-8141486/51051"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "187983375225585664/125",
+          "-8206895919661056/25",
+          "-3461546072080384/35",
+          "4966410807672832/75",
+          "-353458997690368/15",
+          "-194569534701568/25",
+          "828433290493952/125",
+          "-64725249425408/25"
+        ],
+        [
+          "-8206895919661056/25",
+          "6387411470778368/35",
+          "1730773036040192/49",
+          "-353458997690368/15",
+          "59097175031808/7",
+          "97284767350784/35",
+          "-64725249425408/25",
+          "29933868417024/35"
+        ],
+        [
+          "-3461546072080384/35",
+          "1730773036040192/49",
+          "12267532551454720/1029",
+          "-147481660751872/21",
+          "368704151879680/147",
+          "116005053399040/147",
+          "-5220532748288/7",
+          "13051331870720/49"
+        ],
+        [
+          "4966410807672832/75",
+          "-353458997690368/15",
+          "-147481660751872/21",
+          "991316301316096/195",
+          "-45376279150592/27",
+          "-24737065467904/45",
+          "11900481961984/25",
+          "-8086538420224/45"
+        ],
+        [
+          "-353458997690368/15",
+          "59097175031808/7",
+          "368704151879680/147",
+          "-45376279150592/27",
+          "1578379682775040/2457",
+          "12368532733952/63",
+          "-8086538420224/45",
+          "3852419203072/63"
+        ],
+        [
+          "-194569534701568/25",
+          "97284767350784/35",
+          "116005053399040/147",
+          "-24737065467904/45",
+          "12368532733952/63",
+          "7221089927168/105",
+          "-854094512128/15",
+          "427047256064/21"
+        ],
+        [
+          "828433290493952/125",
+          "-64725249425408/25",
+          "-5220532748288/7",
+          "11900481961984/25",
+          "-8086538420224/45",
+          "-854094512128/15",
+          "16107184324608/275",
+          "-265827647488/15"
+        ],
+        [
+          "-64725249425408/25",
+          "29933868417024/35",
+          "13051331870720/49",
+          "-8086538420224/45",
+          "3852419203072/63",
+          "427047256064/21",
+          "-265827647488/15",
+          "1692805038080/231"
+        ]
+      ]
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "Einstein_residual_rank": 2,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^2 + 93402302/374187*g + 6120932181112/438921351",
+      "matrix": [
+        [
+          "-1052587802/6361179",
+          "118153/11339"
+        ],
+        [
+          "-76585824/36046681",
+          "-48659212/578289"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "6530347008/17347225",
+          "-10077696/204085"
+        ],
+        [
+          "-10077696/204085",
+          "2636064/60025"
+        ]
+      ]
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "Einstein_residual_rank": 5,
+      "kernel": 0,
+      "Hilbert_series_count": 0,
+      "charpoly": "g^5 + 629029954046/536958345*g^4 + 68112013282689947324/127859984153055*g^3 + 3568793304860527000954020232/30445891566541303545*g^2 + 12890338699215472957762219519260256/1035677893419035522690265*g + 254805869276699578852087431139198720/501040388259053279888427",
+      "matrix": [
+        [
+          "-12645639087302/41990142579",
+          "8702528176/1415617455",
+          "31768749/65085860",
+          "-4412637472/1122731085",
+          "6844895/9762879"
+        ],
+        [
+          "694577080944/3090183653",
+          "-6000654498326/24065496735",
+          "313734059/79032830",
+          "-18428374008/908877545",
+          "-525666066/55322981"
+        ],
+        [
+          "3850937756640/121244264503",
+          "1033679994048/62947789499",
+          "-126340280692/930262899",
+          "-20501496576/7132015559",
+          "-8089614000/2170613431"
+        ],
+        [
+          "-8354437941408/13996714193",
+          "-16469447488/471872485",
+          "-1068856464/16271465",
+          "-19345691516/66043005",
+          "899288/191429"
+        ],
+        [
+          "-1925643373056/4180836707",
+          "-65833267968/374243695",
+          "-99897772/1843565",
+          "2629794816/72332815",
+          "-43163990762/224546217"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "42341509642899456/64236774175",
+          "-403418716766208/23821821625",
+          "-12606834898944/821442125",
+          "-31032208982016/3778633775",
+          "-969756530688/164288425"
+        ],
+        [
+          "-403418716766208/23821821625",
+          "996615847931904/61839255625",
+          "-509367066624/304626875",
+          "-2586017415168/1401283625",
+          "78364164096/85295525"
+        ],
+        [
+          "-12606834898944/821442125",
+          "-509367066624/304626875",
+          "1097523450144/136556875",
+          "1293008707584/628161625",
+          "68024448/420175"
+        ],
+        [
+          "-31032208982016/3778633775",
+          "-2586017415168/1401283625",
+          "1293008707584/628161625",
+          "146109983956992/40830505625",
+          "0"
+        ],
+        [
+          "-969756530688/164288425",
+          "78364164096/85295525",
+          "68024448/420175",
+          "0",
+          "88397770176/191179625"
+        ]
+      ]
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "Einstein_residual_rank": 2,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^3 + 2425100731032/12738697499*g^2 + 15112909511666964956/1251920974109223*g + 2872771118962167876880/11267288766983007",
+      "matrix": [
+        [
+          "-1492872710/24864081",
+          "96348/68121377",
+          "0"
+        ],
+        [
+          "327283740/12808769",
+          "-225815648002/3474190227",
+          "0"
+        ],
+        [
+          "2993062590000/8543448923",
+          "670840380000/772428293803",
+          "-196/3"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "26188914531035242842292224/256193811499535",
+          "82219691000136204288/182229692645",
+          "-428113302341124096/1256756501"
+        ],
+        [
+          "82219691000136204288/182229692645",
+          "329762919661017517522944/3064900693930075",
+          "-1999546280206663680/136369330097"
+        ],
+        [
+          "-428113302341124096/1256756501",
+          "-1999546280206663680/136369330097",
+          "127863442205559189504/20572959281875"
+        ]
+      ]
+    },
+    {
+      "Delta": "7/3",
+      "P": 14,
+      "Q": 2,
+      "dimension": 8,
+      "Einstein_residual_rank": 7,
+      "kernel": 1,
+      "Hilbert_series_count": 1,
+      "charpoly": "g^8 + 2042609084362684/1434840563751*g^7 + 2857331163102884604555170205392/3235205982462594635298573*g^6 + 1447113858396512794079773175793157250369997272/4642004775727237105781992727525827323*g^5 + 36765712404612964072837760152666229758392036870318810656/537270045118924192132441725164744713361781009*g^4 + 59731195057475207871769902656829688106738758750461130158177205134496/6248979660040225740941336891456824161068653219661475057*g^3 + 54727290214081562093282302808444367502586412468051642410095490925370999616/66022193964782927084284104627038990523527857445922011280669*g^2 + 28428113720294964921626623340987067486915210544006057290011887188166409617899520/697542692256956392349484816172150255981905890566495958700621273*g + 47871137801344756203147526525372438852961927768066658417324076129719326080000/55125736328623302258856575130171775452325219875648372700979",
+      "matrix": [
+        [
+          "-16666226246/88547577",
+          "90651998/119799663",
+          "39308837/1634913048",
+          "739815/2970684397",
+          "11377812169/851363198952",
+          "243423/1397969128",
+          "0",
+          "4138191/31803797662"
+        ],
+        [
+          "2088053856/5519465633",
+          "-207383687980/2036594271",
+          "-353779533/4632253636",
+          "95880024/50501634749",
+          "11377812169/1033798170156",
+          "-386613/698984564",
+          "0",
+          "243423/2271699833"
+        ],
+        [
+          "32480837760/7467512327",
+          "-25382559440/918464083",
+          "-1008320010569/5510784498",
+          "1370729232/68325741131",
+          "-2195917748617/4895338393974",
+          "21908070/4019161243",
+          "0",
+          "-33105528/8920577393"
+        ],
+        [
+          "902193037200/126947709559",
+          "1692072247320/15613889411",
+          "337162864857/106541833628",
+          "-672842750332246/3484612797681",
+          "257461102764377/166441505395116",
+          "67407525/4019161243",
+          "0",
+          "271931796/28134128701"
+        ],
+        [
+          "116924217621120/2158111062503",
+          "23689011462480/265436119987",
+          "-9103397351139/905605585838",
+          "4339213259184/19746139186859",
+          "-36075446883793771/202107542265498",
+          "-3640006350/68325741131",
+          "0",
+          "31991976/4019161243"
+        ],
+        [
+          "2598315947136/15613889411",
+          "-22335353664624/21124673909",
+          "1037692962306/36036208433",
+          "882661095360/1571492046013",
+          "-235671534059610/18765463843567",
+          "-53479452923864/277322125767",
+          "0",
+          "-30213798624/647084960123"
+        ],
+        [
+          "2413975964400/19687077953",
+          "49801802090040/26635458407",
+          "51417218853/1108218499",
+          "632442456360/1981446492799",
+          "405270882820089/23660802237541",
+          "12879292140/116555676047",
+          "-580/3",
+          "10019884320/815889732329"
+        ],
+        [
+          "312851284986240/334680325201",
+          "697225229260560/452802792919",
+          "-2776529818062/18839714483",
+          "81964542344256/33684590377583",
+          "810541765640178/57461948291171",
+          "-40910692680/116555676047",
+          "0",
+          "-471907954082996/2447669196987"
+        ]
+      ],
+      "metric_selfadjoint": true,
+      "gram": [
+        [
+          "222170422899530947554086148340973568/843245785618128410375",
+          "-72664374689476563392535296212992/1527675657015132625",
+          "-4529152465437476983355052392448/285928598906575625",
+          "739217560024216945907513904070656/67416990950885200625",
+          "-15295719752931016692690277367808/3965705350052070625",
+          "-3339772916634440535015161856/2486335642665875",
+          "76115713714195208335999893504/66420680739788375",
+          "-8774619360376400771668770816/19535494335231875"
+        ],
+        [
+          "-72664374689476563392535296212992/1527675657015132625",
+          "4467594460981002972336174076526592/142972468841828000375",
+          "94357343029947437153230258176/16819329347445625",
+          "-15295719752931016692690277367808/3965705350052070625",
+          "320598718573226483820854771712/233276785297180625",
+          "69578602429884177812815872/146255037803875",
+          "-8774619360376400771668770816/19535494335231875",
+          "167139770344612054903554048/1149146725601875"
+        ],
+        [
+          "-4529152465437476983355052392448/285928598906575625",
+          "94357343029947437153230258176/16819329347445625",
+          "2036735749669904402817347185803264/936584354712509628125",
+          "-940931676791060395948001722368/742244316854665625",
+          "19602743266480424915583369216/43661430403215625",
+          "44458334671894567172702208/301113313125625",
+          "-518590671936013143159865344/3656375945096875",
+          "10803972332000273815830528/215080937946875"
+        ],
+        [
+          "739217560024216945907513904070656/67416990950885200625",
+          "-15295719752931016692690277367808/3965705350052070625",
+          "-940931676791060395948001722368/742244316854665625",
+          "43890391420070819553900799841009664/45327150041236460271875",
+          "-22372326114537052846698975461376/72062241718976884375",
+          "-36297958003036312251138048/339699916180625",
+          "783412237197109941357131071488/8448676615328324375",
+          "-87106943311053995364543627264/2484904886861271875"
+        ],
+        [
+          "-15295719752931016692690277367808/3965705350052070625",
+          "320598718573226483820854771712/233276785297180625",
+          "19602743266480424915583369216/43661430403215625",
+          "-22372326114537052846698975461376/72062241718976884375",
+          "18849169682676715002263878238208/156841349623655571875",
+          "756207458396589838565376/19982348010625",
+          "-87106943311053995364543627264/2484904886861271875",
+          "1712848320158901882319798272/146170875697721875"
+        ],
+        [
+          "-3339772916634440535015161856/2486335642665875",
+          "69578602429884177812815872/146255037803875",
+          "44458334671894567172702208/301113313125625",
+          "-36297958003036312251138048/339699916180625",
+          "756207458396589838565376/19982348010625",
+          "5013248287908932744743747584/357390082160486375",
+          "-561635798292748469413085184/48295957048714375",
+          "11700745797765593112772608/2840938649924375"
+        ],
+        [
+          "76115713714195208335999893504/66420680739788375",
+          "-8774619360376400771668770816/19535494335231875",
+          "-518590671936013143159865344/3656375945096875",
+          "783412237197109941357131071488/8448676615328324375",
+          "-87106943311053995364543627264/2484904886861271875",
+          "-561635798292748469413085184/48295957048714375",
+          "547685886575757047374037385216/45156719840547940625",
+          "-275002032399029639156072448/75893646790836875"
+        ],
+        [
+          "-8774619360376400771668770816/19535494335231875",
+          "167139770344612054903554048/1149146725601875",
+          "10803972332000273815830528/215080937946875",
+          "-87106943311053995364543627264/2484904886861271875",
+          "1712848320158901882319798272/146170875697721875",
+          "11700745797765593112772608/2840938649924375",
+          "-275002032399029639156072448/75893646790836875",
+          "233578824606309132560498688/156251625745840625"
+        ]
+      ]
+    }
+  ],
+  "support_checks": [
+    {
+      "Delta": "1001/1000",
+      "labels_k_l_max": 14,
+      "support_passed": true
+    },
+    {
+      "Delta": "3/2",
+      "labels_k_l_max": 14,
+      "support_passed": true
+    },
+    {
+      "Delta": "2",
+      "labels_k_l_max": 14,
+      "support_passed": true
+    },
+    {
+      "Delta": "7/3",
+      "labels_k_l_max": 14,
+      "support_passed": true
+    },
+    {
+      "Delta": "4",
+      "labels_k_l_max": 14,
+      "support_passed": true
+    }
+  ],
+  "seconds": 11.784258291998412,
+  "python": "3.14.3 (main, Mar  8 2026, 09:55:32) [Clang 17.0.0 (clang-1700.6.3.2)]"
+}

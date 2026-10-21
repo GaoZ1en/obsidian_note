@@ -1,0 +1,80 @@
+{
+  "complete_even_E4_J0_block": [
+    {
+      "a_2_-1": 1,
+      "a_2_1": 1
+    },
+    {
+      "b_0_0": 2
+    }
+  ],
+  "cubic_cubic_Weyl_commutator": "9*a**2*ad**2 + 3/2",
+  "p2phi2_density": "-(y**4 + 4*y**3 + 26*y**2 + 20*y + 15)/(15*pi*y**5*(y + 1)**4)",
+  "p2phi2_coefficient_kappa2_ad_cd_b2": "(3067/180 - 74*log2/3)/pi",
+  "eta_p_phi2_density": "4*(y - 1)**2*(y + 2)*(2*y**3 + 4*y**2 + 6*y + 3)/(15*pi*y**5*(y + 1)**4)",
+  "eta_p_phi2_coefficient_kappa2_ad_cd_b2": "(56*log2/3 - 116/9)/pi",
+  "eta2phi2_coefficient_kappa2_ad_cd_b2": "0",
+  "mixed_cubic_density": "(y - 1)*(4*y**5 + 7*y**4 - 4*y**3 - 17*y**2 - 20*y - 6)/(12*pi*y**6*(y + 1)**3)",
+  "mixed_cubic_coefficient_kappa2_ad_cd_b2": "(6*log2 - 83/20)/pi",
+  "normalized_matrix_element_divided_by_G": "0",
+  "total_integrand_primitive": "-(y - 1)*(78*y**5 + 203*y**4 + 170*y**3 + 47*y**2 - 84*y - 18)/(180*pi*y**5*(y + 1)**3)",
+  "independent_radial_OFPT_partial_sums": [
+    {
+      "nmax": 0,
+      "pi_times_partial": "3/350",
+      "absolute_error": "0.000311654788243285075"
+    },
+    {
+      "nmax": 1,
+      "pi_times_partial": "13/1470",
+      "absolute_error": "0.0000395459447058701088"
+    },
+    {
+      "nmax": 2,
+      "pi_times_partial": "41/4620",
+      "absolute_error": "8.62448521298204452e-6"
+    },
+    {
+      "nmax": 4,
+      "pi_times_partial": "1387/156156",
+      "absolute_error": "9.39862143743590664e-7"
+    },
+    {
+      "nmax": 8,
+      "pi_times_partial": "55488743/6246600360",
+      "absolute_error": "5.26226134671941717e-8"
+    },
+    {
+      "nmax": 16,
+      "pi_times_partial": "292680459520961/32948077318556400",
+      "absolute_error": "1.75551029941852646e-9"
+    },
+    {
+      "nmax": 24,
+      "pi_times_partial": "12888192955689999578777/1450869335404500791379600",
+      "absolute_error": "2.03119522717896610e-10"
+    }
+  ],
+  "checks": {
+    "minimal_block_has_exactly_two_states": true,
+    "mixed_counterexample_free_energy_resonant": true,
+    "mixed_counterexample_rotationally_invariant": true,
+    "mixed_obstruction_is_nonzero": true,
+    "mixed_obstruction_really_nonzero": true,
+    "mixed_obstruction_has_weight_minus_two": true,
+    "cubic_cubic_Weyl_degree_four_and_zero": true,
+    "ground_scalar_annihilation_density": true,
+    "ground_scalar_conformal_response": true,
+    "ground_scalar_momentum_response": true,
+    "ground_pair_has_zero_boundary_conformal_charge": true,
+    "opposite_chirality_momentum_pair": true,
+    "gravitational_pair_conformal_response": true,
+    "complete_minimal_mixed_coefficient": true,
+    "sum_is_exact_endpoint_derivative": true,
+    "total_primitive_vanishes_at_center": true,
+    "total_primitive_vanishes_at_infinity": true,
+    "radial_OFPT_n24_agrees_to_1e_minus_8": true
+  },
+  "all_checks_pass": true,
+  "scope": "Fresh classical connected mixed four-leg audit; no completed quantum one-body Ward identity is tested or inferred."
+}

@@ -1,0 +1,1073 @@
+{
+  "schema": "ADS3-portable-reproduction-v1",
+  "status": "passed",
+  "started_utc": "2026-10-20T19:58:47.920838+00:00",
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "python_executable": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "python-flint": "0.9.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "optimization": 0,
+  "environment_overrides": {
+    "PYTHONOPTIMIZE": null,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "output_directory": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02",
+  "groups": [
+    {
+      "name": "hierarchy",
+      "status": "passed",
+      "started_utc": "2026-10-20T19:58:47.929645+00:00",
+      "commands": [
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/run_verification.py",
+            "--output-dir",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/hierarchy"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package",
+          "started_utc": "2026-10-20T19:58:47.929695+00:00",
+          "ended_utc": "2026-10-20T19:59:13.673688+00:00",
+          "elapsed_seconds": 25.743143,
+          "returncode": 0,
+          "stdout": "command_01.stdout.log",
+          "stderr": "command_01.stderr.log"
+        }
+      ],
+      "returncode": 0,
+      "ended_utc": "2026-10-20T19:59:13.678276+00:00",
+      "elapsed_seconds": 25.747759,
+      "validated_semantics": {
+        "status": "passed",
+        "required_tasks": 11,
+        "scope": "Task coverage, payload statuses, assertion fields, exact dimensions, Bose residuals, and strict rational intervals. Not a theorem prover.",
+        "optimized_invocation_rejected": true,
+        "negative_payload_mutations_rejected": 9
+      },
+      "artifacts": [
+        {
+          "path": "hierarchy/bose_clusters.json",
+          "sha256": "5a74408b12a18bdd0fa50f808950668250098f110c1d63959d1b144c1df82943",
+          "bytes": 2977,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/bose_clusters.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/bose_clusters.stdout.log",
+          "sha256": "952b4ac8630bb5c0a61eb6325cc67b90d4f9ecf9380119df3dd3838d23f5dbc4",
+          "bytes": 2323,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/boundary_layer.json",
+          "sha256": "12572cc76db3ca0eba47c5dab4f568d999f60b33fc8ce95fe34d9450f1f19ace",
+          "bytes": 1544,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/boundary_layer.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/boundary_layer.stdout.log",
+          "sha256": "12572cc76db3ca0eba47c5dab4f568d999f60b33fc8ce95fe34d9450f1f19ace",
+          "bytes": 1544,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/checker_mutation_results.json",
+          "sha256": "5344fd000dc30a3b94614ad4028209cac06d9e5d33c38c92c133956d193627d2",
+          "bytes": 1395,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/code_hashes_after.json",
+          "sha256": "8caa5bd41d15230619bafdc8aef501be6904c47def738147f3c0628f34d82913",
+          "bytes": 3966,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/code_hashes_before.json",
+          "sha256": "8caa5bd41d15230619bafdc8aef501be6904c47def738147f3c0628f34d82913",
+          "bytes": 3966,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/coherent_bounds.json",
+          "sha256": "0882c0b2d84ba84dee2a5e38fd01ddcded65c449efca93db9ceb3bdf1ff22b02",
+          "bytes": 25147,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/coherent_bounds.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/coherent_bounds.stdout.log",
+          "sha256": "5779be5af928478e4bf99a18f252785d4e6db9577bd52238be1f957c9d756142",
+          "bytes": 319,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/command_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/command_01.stdout.log",
+          "sha256": "e173cfbf67d9a8bf038d86b8d0661101000f9c378705eeeef192f7e1729a41cb",
+          "bytes": 1818,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/finite_comparator_smoke.json",
+          "sha256": "dbdceed18f3577b8e76b43aa6fdb281f8dc4828cd55bcf9d7850ef15e0426065",
+          "bytes": 18160,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/finite_comparator_smoke.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/finite_comparator_smoke.stdout.log",
+          "sha256": "a76564e8851dd7f139c349650568bac344b3635faa24a72c9445b4dbdb86d7d4",
+          "bytes": 151,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/fixed_q_exchange.json",
+          "sha256": "c5592ffb527fb6b45eaec7b05cadb833abb4e05cb5923bf21b5321165639941c",
+          "bytes": 32022,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/fixed_q_exchange.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/fixed_q_exchange.stdout.log",
+          "sha256": "9e567a9d1abb8d43593f253b3129752d61e00d261bb0e9327c799b3299b27ae8",
+          "bytes": 1326,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/independent_flags.json",
+          "sha256": "8d5e691efc7ef5d041754430e53764777f3476747ae2ff440f0ce0e143c2221c",
+          "bytes": 9485,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/independent_flags.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/independent_flags.stdout.log",
+          "sha256": "8d5e691efc7ef5d041754430e53764777f3476747ae2ff440f0ce0e143c2221c",
+          "bytes": 9485,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/oriented_comparator.json",
+          "sha256": "fc6749e1a75fe99032915be5f0208ddb1bb4134463575dcdf82afbd43145b7cc",
+          "bytes": 2351,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/oriented_comparator.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/oriented_comparator.stdout.log",
+          "sha256": "8f42fccf64f03c00cbbdf8bae0231e3bac2485cd48d34dddee3f82872ae114ad",
+          "bytes": 133,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/partition_hierarchy.json",
+          "sha256": "4537706561c74cd4038943cf41ab209a3de8894eba3fe86976d2310911cce0fe",
+          "bytes": 19418,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/partition_hierarchy.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/partition_hierarchy.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/reproduction_summary.json",
+          "sha256": "b422436947d0171a98d8f40efdcf6dcaa9911eaef486620b340292ad23d0162f",
+          "bytes": 14841,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/semantic_check.json",
+          "sha256": "2ebfc99685ccb96caf428f7ba286f1fce38f7fd0f93a1782a443c9103a47c22b",
+          "bytes": 286,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P16Q8.json",
+          "sha256": "a33b5b6c1fc032de27823ac97608f54c3fe5c677474646c63d7ed4a9cc892386",
+          "bytes": 7967,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P16Q8.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P16Q8.stdout.log",
+          "sha256": "99978e91c4ef1f30d4b82cfa7accb17b5adedc6699755f2526a897213c4c0149",
+          "bytes": 774,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P32Q16.json",
+          "sha256": "8a542d92b074aa576e0a60647ccc26906e864aacb390a2e2b0a801ccb0615791",
+          "bytes": 14550,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P32Q16.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/soft_inertia_P32Q16.stdout.log",
+          "sha256": "f6343f167bd0d2c082ebf895b91ec653ad21bf068ed31788ed9841d94dbc5025",
+          "bytes": 783,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/universal_chiral.json",
+          "sha256": "afc512d917d535322da86a82b8af82d9ec875674c026603ed5fde6736ea2913f",
+          "bytes": 1647,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/universal_chiral.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "hierarchy/universal_chiral.stdout.log",
+          "sha256": "1848068a1bac840370b297b2b7ffbdd6779c250f18a12bd6541fbc5d391d5b05",
+          "bytes": 277,
+          "generated_in_this_run": true
+        }
+      ]
+    },
+    {
+      "name": "finite",
+      "status": "passed",
+      "started_utc": "2026-10-20T19:59:13.680420+00:00",
+      "commands": [
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package/checks/finite_regressions.py",
+            "--output-dir",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/finite"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/ADS3_Master_Research_Package",
+          "started_utc": "2026-10-20T19:59:13.680438+00:00",
+          "ended_utc": "2026-10-20T19:59:15.362622+00:00",
+          "elapsed_seconds": 1.682179,
+          "returncode": 0,
+          "stdout": "command_01.stdout.log",
+          "stderr": "command_01.stderr.log"
+        }
+      ],
+      "returncode": 0,
+      "ended_utc": "2026-10-20T19:59:15.363348+00:00",
+      "elapsed_seconds": 1.682903,
+      "validated_semantics": {
+        "regression_tasks": 7,
+        "mixed_primary_dimensions": [
+          2,
+          3
+        ],
+        "complete_shell_dimension": 20,
+        "large_index_positive_rank": 23
+      },
+      "artifacts": [
+        {
+          "path": "finite/command_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/command_01.stdout.log",
+          "sha256": "35f994ab3ce4c4b45f36f9b92416d1fc9e431d9a5fe0f9082fa2a49073c2289b",
+          "bytes": 2519,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/compact_N3_P12_Q0.json",
+          "sha256": "dfaa55d8d869b03c92c99a2ca2dc730a140feedcb9c9065f97533104474904d4",
+          "bytes": 12771,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/compiled_N3_P2_Q2.json",
+          "sha256": "6fa59782303edaf631c225607f37c0a743185b712a2cf403fc8f9cee9443a723",
+          "bytes": 813,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/compiled_N4_P2_Q2.json",
+          "sha256": "2ef928e707b5d526559b8265040123014bcfd0f30a0e9fa6f63ecff77016f707",
+          "bytes": 1052,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/finite_regressions.json",
+          "sha256": "35f994ab3ce4c4b45f36f9b92416d1fc9e431d9a5fe0f9082fa2a49073c2289b",
+          "bytes": 2519,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/primary_N3_P2_Q2.json",
+          "sha256": "d7897b72cc5638a2c6aa69c35bd5c1e028ebf2cba115d8ee576396aeb7299bc3",
+          "bytes": 4242,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/primary_N4_P2_Q2.json",
+          "sha256": "f0514c08fdd54aea44e55702e4e00dad55cfdcf12b6af15187b9ff88a9b9d6ac",
+          "bytes": 5948,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/saturated_N3_P12_Q0.json",
+          "sha256": "ecc37baf1f3aba7ccffe09a0b1606bd0144626a2feb0f13d09a9587162481c64",
+          "bytes": 8320,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "finite/shell_Delta2_E10_J0.json",
+          "sha256": "f6592c72cea0cfa87aa78decab09c6c63ad48e24d3d38ee700388535089c1fb9",
+          "bytes": 90130,
+          "generated_in_this_run": true
+        }
+      ]
+    },
+    {
+      "name": "physics",
+      "status": "passed",
+      "started_utc": "2026-10-20T19:59:15.364136+00:00",
+      "commands": [
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/physics/work/checks/check_physics.py"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/physics/work/checks",
+          "started_utc": "2026-10-20T19:59:15.366309+00:00",
+          "ended_utc": "2026-10-20T19:59:17.756271+00:00",
+          "elapsed_seconds": 2.38995,
+          "returncode": 0,
+          "stdout": "command_01.stdout.log",
+          "stderr": "command_01.stderr.log"
+        },
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/physics/work/checks/check_ancillary.py"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/physics/work/checks",
+          "started_utc": "2026-10-20T19:59:17.756320+00:00",
+          "ended_utc": "2026-10-20T19:59:18.490493+00:00",
+          "elapsed_seconds": 0.734182,
+          "returncode": 0,
+          "stdout": "command_02.stdout.log",
+          "stderr": "command_02.stderr.log"
+        }
+      ],
+      "returncode": 0,
+      "workspace_source_copies": [
+        {
+          "source": "checks/independent/physics/check_ancillary.py",
+          "workspace": "physics/work/checks/check_ancillary.py",
+          "sha256": "8fb103164a213e650f1e5552f44d19a6cb0d0ef58fc2c8fb038ed08e28a57235",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/physics/check_physics.py",
+          "workspace": "physics/work/checks/check_physics.py",
+          "sha256": "30b63472dfffff6895d35005720b7f5ef67d7e0a61a83c4875af52a726a40e81",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/physics/direct_k4.py",
+          "workspace": "physics/work/checks/direct_k4.py",
+          "sha256": "706c915aa6493573f2b49609b8bec12263d6bdde345bc29c8d33078a8578b02d",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/physics/inherited_physics_audit.py",
+          "workspace": "physics/work/checks/inherited_physics_audit.py",
+          "sha256": "bf6322600e4114a0b7c4da90653c3c296e1d0732649c28725bf79d08971642a6",
+          "edits": []
+        }
+      ],
+      "ended_utc": "2026-10-20T19:59:18.492087+00:00",
+      "elapsed_seconds": 3.127905,
+      "validated_semantics": {
+        "physics_checks": 111,
+        "ancillary_checks": 10,
+        "canonical_channels": 64,
+        "independent_quadratures": 12
+      },
+      "artifacts": [
+        {
+          "path": "physics/command_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/command_01.stdout.log",
+          "sha256": "6c7faa04c6f2ec4d369bbe2b656e1f24b0cea8fa27864950400bcc399c8211ba",
+          "bytes": 66,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/command_02.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/command_02.stdout.log",
+          "sha256": "2d700c958106400c208b85e1c771c2e09d3d7c12cde372a1afd4129bfd37b89d",
+          "bytes": 67,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/work/checks/ancillary_run.json",
+          "sha256": "82d3ca14adc9be03a8248eb911ae24c493dff1709968c210fb5679ba8f726e78",
+          "bytes": 1475,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/work/checks/physics_run.json",
+          "sha256": "dd2bce81d0d5b3f84a07d8889b088f8049ead9dd131bfb1b7f9913ff1cc173ba",
+          "bytes": 11943,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "physics/workspace_source_copies.json",
+          "sha256": "600a3fe8cc51cf7aa41218895a8ddff271777feb406e344efbc3a4ad2063064a",
+          "bytes": 919,
+          "generated_in_this_run": true
+        }
+      ]
+    },
+    {
+      "name": "cluster",
+      "status": "passed",
+      "started_utc": "2026-10-20T19:59:18.492838+00:00",
+      "commands": [
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/cluster/work/checks/run_cluster_checks.py"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/cluster/work/checks",
+          "started_utc": "2026-10-20T19:59:18.495800+00:00",
+          "ended_utc": "2026-10-20T19:59:24.601766+00:00",
+          "elapsed_seconds": 6.105918,
+          "returncode": 0,
+          "stdout": "command_01.stdout.log",
+          "stderr": "command_01.stderr.log"
+        }
+      ],
+      "returncode": 0,
+      "workspace_source_copies": [
+        {
+          "source": "checks/independent/cluster/cg_endpoint_checks.py",
+          "workspace": "cluster/work/checks/cg_endpoint_checks.py",
+          "sha256": "cc32b65eba5c7a3b61039724908a94e6fb1925a1fad3fc5da1a6e72af751f4de",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/convention_certificates.py",
+          "workspace": "cluster/work/checks/convention_certificates.py",
+          "sha256": "ff5d3271199405ccd98eee6c8397fa5508b468d9ed34b407fe19aa35da3e7af3",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/fourbody_nullity_checks.py",
+          "workspace": "cluster/work/checks/fourbody_nullity_checks.py",
+          "sha256": "3317c7f0493c1bd6a5e9a719fdbc6674267b8eadcae641aa0dbeb2d989032e81",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/fredholm_formula_check.py",
+          "workspace": "cluster/work/checks/fredholm_formula_check.py",
+          "sha256": "b162fc7b6f06274ac21ec5b3056cc861a54d0a3d18d4b03fe1e13881f56412fa",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/independent_cluster_certificate.py",
+          "workspace": "cluster/work/checks/independent_cluster_certificate.py",
+          "sha256": "59c6fa43cbba2cbf81ccc6da792390af7a14f364420fc14e9cbfdc95a33fdf90",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/nonchiral_gamma_value.py",
+          "workspace": "cluster/work/checks/nonchiral_gamma_value.py",
+          "sha256": "799f3e7228e7dbd42e6cd867984025f904ba9a9de03ad6da92baf4513965531a",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/nonchiral_rational_identity.py",
+          "workspace": "cluster/work/checks/nonchiral_rational_identity.py",
+          "sha256": "ab5bc5640ce08befb712ec1a2b35668bf5ec3721f95b321ad79e1fc229f07bb8",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/cluster/run_cluster_checks.py",
+          "workspace": "cluster/work/checks/run_cluster_checks.py",
+          "sha256": "b2304fe19881f7db97f958b4b9c5b6170125377901c39aa96c2f5797c539bcd5",
+          "edits": []
+        }
+      ],
+      "ended_utc": "2026-10-20T19:59:24.603663+00:00",
+      "elapsed_seconds": 6.110747,
+      "validated_semantics": {
+        "required_tasks": [
+          "independent_cluster_certificate",
+          "cg_endpoint_checks",
+          "fourbody_nullity_checks",
+          "fredholm_formula_check",
+          "convention_certificates",
+          "nonchiral_rational_identity",
+          "nonchiral_gamma_value"
+        ],
+        "exact_CG_cases": 171,
+        "finite_minimum_cases": 127,
+        "Gamma_evaluation_digits": 80
+      },
+      "artifacts": [
+        {
+          "path": "cluster/command_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/command_01.stdout.log",
+          "sha256": "f3a019717a76139ba52924a48a953cd5fbb118865b95cac78510428cdf97ee6e",
+          "bytes": 272,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/cg_endpoint_results.json",
+          "sha256": "dc0aa9874dec975641d37326e5962480ec02940d6de7d80065d1a27139f85d92",
+          "bytes": 2147,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/convention_results.json",
+          "sha256": "cd1934793332966f2a191bc53d6bf76a6e2ee98768faabf4cd13838664520f6e",
+          "bytes": 24399,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/fredholm_formula_results.json",
+          "sha256": "98f3f67a057a242ed3d0140f9df326dab7cfff13a7b31137860d8a11e29cb8f3",
+          "bytes": 21008,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/independent_cluster_certificate.json",
+          "sha256": "1699913c5d15be7ce68a92f79cbe6a0c52f2277b93066d15effa5d93adc8a0e9",
+          "bytes": 34282,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/independent_results.json",
+          "sha256": "15c5a116b1dc114a53c695bd431edd5f2743fc70bb7bdcdcb9d3b84b48a60d27",
+          "bytes": 1106,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/nonchiral_gamma_results.json",
+          "sha256": "50774145528668c45e763cc794424d52940d8fb990f4825bc5bbf751df0c1859",
+          "bytes": 1218,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/checks/nonchiral_rational_results.json",
+          "sha256": "850a0f3576a6b67d3ad368bb9acb0933024c407bf9bf4c81192fa7511e2b5050",
+          "bytes": 1251,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/cg_endpoint_checks.log",
+          "sha256": "07ab7836288dc86aac642ff9d5c10a721c3e6beda55704c91b9d55e6f935ac35",
+          "bytes": 2148,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/cluster_run_manifest.json",
+          "sha256": "dec49b554aee9cde7e72fe5255de3603af812274c0951e4f5ea5747bac739c0e",
+          "bytes": 4412,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/convention_certificates.log",
+          "sha256": "4be1df2d0658a24b8e65ba72acf0be8d9da19db038a41951fb3c3abcf57c791d",
+          "bytes": 91,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/fourbody_nullity_checks.log",
+          "sha256": "df3307980e2b27ebe03972bccbfcab24a2c8e877f87235790a32e223c0b4d95f",
+          "bytes": 1107,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/fredholm_formula_check.log",
+          "sha256": "065c61ecc41c3ee3b5bd40184ea843e97be94077f49c55fba8de21be83ede942",
+          "bytes": 240,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/independent_cluster_certificate.log",
+          "sha256": "a18cc67535f2f27865cc93353686192b2a2a3096d25f83ebe8cbb04c26f82612",
+          "bytes": 307,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/nonchiral_gamma_value.log",
+          "sha256": "71b52248870f869d62d465786e24446b0c0ea2c6ec772b5108c604e545bbda6d",
+          "bytes": 113,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/work/runs/nonchiral_rational_identity.log",
+          "sha256": "7e360ce81c3449616eac23db7a655f0a358743c1ad4b4016af3ba8b21b47790d",
+          "bytes": 97,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "cluster/workspace_source_copies.json",
+          "sha256": "825c3ed9cc0185cc01ca75d4631de3ad439ab3317f0e6bf70f365f6734f4cf54",
+          "bytes": 1961,
+          "generated_in_this_run": true
+        }
+      ]
+    },
+    {
+      "name": "semiclassical",
+      "status": "passed",
+      "started_utc": "2026-10-20T19:59:24.605060+00:00",
+      "commands": [
+        {
+          "command": [
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv_portable/bin/python",
+            "-B",
+            "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/semiclassical/work/checks/run_local_checks.py"
+          ],
+          "cwd": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/package_reproduction_02/semiclassical/work/checks",
+          "started_utc": "2026-10-20T19:59:24.608502+00:00",
+          "ended_utc": "2026-10-20T20:00:08.457531+00:00",
+          "elapsed_seconds": 43.848648,
+          "returncode": 0,
+          "stdout": "command_01.stdout.log",
+          "stderr": "command_01.stderr.log"
+        }
+      ],
+      "returncode": 0,
+      "workspace_source_copies": [
+        {
+          "source": "checks/independent/semiclassical/independent_symbolic_checks.py",
+          "workspace": "semiclassical/work/checks/independent_symbolic_checks.py",
+          "sha256": "5253624ade891b993379f88f194f71e4af7d4987ab984d2b2426e2ddeb20f497",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/run_local_checks.py",
+          "workspace": "semiclassical/work/checks/run_local_checks.py",
+          "sha256": "f465c5eff468838242c77b061a5be74a5c14966aac4e551d26eea989ddcf39e6",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/soft/independent_soft_certificate.py",
+          "workspace": "semiclassical/work/checks/soft/independent_soft_certificate.py",
+          "sha256": "bb8a71069530a2975bb152a490f7cac2e9106cd6d9ca754c3d4d87366f535c0c",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/stable/independent_jordan.py",
+          "workspace": "semiclassical/work/checks/stable/independent_jordan.py",
+          "sha256": "8cda3f05e775018f722ae980661cd3d15ddcd00aedd0d6c1c05f249976fb71f2",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/stable/independent_stable.py",
+          "workspace": "semiclassical/work/checks/stable/independent_stable.py",
+          "sha256": "03cd3ffcb53cf650fe9309faa13b9072ab23c6ee201f2ee7fe0d1a71bfa2fc93",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/stable/symbolic_jets_fast.py",
+          "workspace": "semiclassical/work/checks/stable/symbolic_jets_fast.py",
+          "sha256": "748069e5b3bc9c0a2707ddac96c21331908d661d842c695dfac9a1170ab75bd9",
+          "edits": []
+        },
+        {
+          "source": "checks/independent/semiclassical/universality/independent_casimir_audit.py",
+          "workspace": "semiclassical/work/checks/universality/independent_casimir_audit.py",
+          "sha256": "87d6c04f07fd70a9fb0c60e95422b897cb6a81717e3a1fc967eae34af95eb8b4",
+          "edits": []
+        }
+      ],
+      "ended_utc": "2026-10-20T20:00:08.473095+00:00",
+      "elapsed_seconds": 43.867628,
+      "validated_semantics": {
+        "stable_symbolic": {
+          "symbolic_degrees": [
+            6,
+            8,
+            9
+          ],
+          "physical_dimensions": [
+            4,
+            7,
+            8
+          ],
+          "low_dimensions": [
+            2,
+            2,
+            2
+          ],
+          "all_C2_entries": "identically equal over Q(d)"
+        },
+        "stable_rational": {
+          "expected_blocks": [
+            [
+              "5/4",
+              6,
+              4,
+              2
+            ],
+            [
+              "5/4",
+              8,
+              7,
+              2
+            ],
+            [
+              "5/4",
+              9,
+              8,
+              2
+            ],
+            [
+              "7/3",
+              10,
+              12,
+              2
+            ],
+            [
+              "5",
+              12,
+              21,
+              3
+            ],
+            [
+              "7/3",
+              14,
+              34,
+              3
+            ]
+          ],
+          "B_low": true,
+          "C2": true,
+          "eta": true
+        },
+        "stable_jordan": {
+          "physical_dimensions": {
+            "4,1": 3,
+            "3,1": 2
+          },
+          "all_mass_leading_matrix": true,
+          "full_B_reconstructed": true,
+          "invariant_plane": true,
+          "protected_doublet": true
+        },
+        "master_symbolic": {
+          "generic_descendant_jets": true,
+          "gegenbauer_polynomials": 31,
+          "symbolic_eta_diagonals": 60,
+          "exact_Jordan_root_isolations": 2,
+          "charge_Jacobian": true,
+          "all_mass_pair_bound_certificate": true
+        },
+        "universality_symbolic": {
+          "generic_field": "Q(d,v,w)",
+          "six_jets": true,
+          "mass_checks": [
+            "3/2",
+            "2",
+            "7/3",
+            "3"
+          ],
+          "same_support_boundary": true,
+          "signed_counterexample": true
+        },
+        "soft_exact": {
+          "spectra": [
+            {
+              "P": 16,
+              "Q": 8,
+              "physical_dimension": 26,
+              "physical_kernel": 0,
+              "positive_rank": 26,
+              "auxiliary_dimension": 34,
+              "auxiliary_kernel": 8,
+              "strict_bracket": [
+                "1/5",
+                "1/3"
+              ]
+            },
+            {
+              "P": 32,
+              "Q": 16,
+              "physical_dimension": 94,
+              "physical_kernel": 4,
+              "positive_rank": 90,
+              "auxiliary_dimension": 98,
+              "auxiliary_kernel": 8,
+              "strict_bracket": [
+                "1/6000",
+                "1/5000"
+              ]
+            }
+          ],
+          "metric_transport": true,
+          "moving_region_group_checks": 384,
+          "lattice_cases": 40400,
+          "plucker_moments": 189,
+          "inertia_uses_no_floats": true
+        }
+      },
+      "artifacts": [
+        {
+          "path": "semiclassical/command_01.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/command_01.stdout.log",
+          "sha256": "23119f2636fd2087e9d67c7ea5a3bacc0f117eb1523082cafefaf22bed7a1bd6",
+          "bytes": 518,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/execution_manifest.json",
+          "sha256": "abd965a738fca69b9b666b2ed68e3d5e593607c212d353982031dfaeff944abd",
+          "bytes": 14682,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/independent_symbolic_checks.json",
+          "sha256": "8b01ee518a825c539706b7105484a93bb2c9753b5b2d1b8f08ea26e47c542e58",
+          "bytes": 2449,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/master_symbolic.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/master_symbolic.stdout.txt",
+          "sha256": "9e4b9d8b44180b90721e12f32c79b2614762f82bb79e428a982f5e8ad5431413",
+          "bytes": 720,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/soft_exact.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/soft_exact.stdout.txt",
+          "sha256": "8a9c395bcd6ab1d62c1d2cf328a59d246a5d88b449dd227306e443c1e8007ec6",
+          "bytes": 2190,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_jordan.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_jordan.stdout.txt",
+          "sha256": "29977c74309fd08f3fbee51e8e354f1f14fcbc5a392667133ca46dada81e9383",
+          "bytes": 1384,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_rational.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_rational.stdout.txt",
+          "sha256": "6dc7f91b6de88172a73ba2df65c40373bd1e181ae1d6e1086d5fdbfaa8b46fcb",
+          "bytes": 718,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_symbolic.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/stable_symbolic.stdout.txt",
+          "sha256": "be46b12896eb9f2af908d7cc66e9208b1c7f42350c626574f044adbacb5590e4",
+          "bytes": 597,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/universality_symbolic.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/logs/universality_symbolic.stdout.txt",
+          "sha256": "f626b6878823cdfde10b6d0755c7ad3b2053ce718d50e336bec0c4a2581d9b68",
+          "bytes": 171,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/soft/independent_soft_certificate.json",
+          "sha256": "8a9c395bcd6ab1d62c1d2cf328a59d246a5d88b449dd227306e443c1e8007ec6",
+          "bytes": 2190,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/stable/independent_jordan_results.json",
+          "sha256": "e43c67ce31d6ca905235fc8cc86c5fd117bbc309a5204a74fe866443c2bb2a1b",
+          "bytes": 1334,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/stable/independent_stable_results.json",
+          "sha256": "ce6a1a2be27e4204e8126967e22ca964cc205ff6e88775f7e688c951c3b75da0",
+          "bytes": 954,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/stable/symbolic_jet_results.json",
+          "sha256": "5d93bd0f4cb4f4257598162c8b442c51beadba7f3775764966d8859d5eb754d4",
+          "bytes": 408,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/universality/generic_symbolic_certificate.json",
+          "sha256": "6f1f8dd6328384614cc43481995e8aa9d99c034e8d20d4285d10faea8594d3af",
+          "bytes": 673,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/work/checks/universality/independent_casimir_audit.json",
+          "sha256": "08d9e96ce65232d279565a630bc13dd9a64b9bd0c33f8f33e5bfbda489ede103",
+          "bytes": 2073,
+          "generated_in_this_run": true
+        },
+        {
+          "path": "semiclassical/workspace_source_copies.json",
+          "sha256": "8bc6e7ae9055611b4689d4c722926243089e948a34cd6d719d995e11da9cbaa7",
+          "bytes": 1858,
+          "generated_in_this_run": true
+        }
+      ]
+    }
+  ],
+  "record_type": "fresh_portable_execution",
+  "scope": "E=E0+G*g+o(G), on the dressed scalar branch with no independent free boundary graviton. Finite/symbolic checks supplement the manuscript proofs and do not establish all-order energy control.",
+  "protected_sources_unchanged": true,
+  "validation": {
+    "status": "passed",
+    "required_groups": [
+      "hierarchy",
+      "finite",
+      "physics",
+      "cluster",
+      "semiclassical"
+    ],
+    "group_count": 5,
+    "negative_payload_cases_rejected": 60,
+    "optimized_invocation_rejected": true
+  },
+  "verification_units": {
+    "mandatory_hierarchy_jobs": 11,
+    "finite_regression_tasks": 7,
+    "independent_physics_programs": 2,
+    "physics_checks": 111,
+    "ancillary_checks": 10,
+    "independent_cluster_programs": 7,
+    "independent_semiclassical_programs": 6,
+    "note": "These are different units of coverage and are not summed into an artificial single test count."
+  },
+  "ended_utc": "2026-10-20T20:00:08.760748+00:00",
+  "elapsed_seconds": 80.829707
+}

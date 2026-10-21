@@ -1,0 +1,5 @@
+Generic symbolic Casimir interpolation passed.
+Exact Casimir audit passed: 3/2
+Exact Casimir audit passed: 2
+Exact Casimir audit passed: 7/3
+Exact Casimir audit passed: 3

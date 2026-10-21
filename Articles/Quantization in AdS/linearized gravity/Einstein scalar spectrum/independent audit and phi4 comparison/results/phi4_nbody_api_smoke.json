@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "Sage": "10.9",
+    "SymPy": "1.14.0",
+    "Python": "3.14.3",
+    "engine_sha256": "d470bd710098f9b39bbd844e31c6f2618044552087ce8374c9ecae5776f52456",
+    "reused_script": "phi4_checks.py",
+    "reused_script_sha256": "7a57555928584f1fea12816c243385ef42484d7ad2072779e8b1b44ec393db9c",
+    "production_reuse": [
+      "radial_integral",
+      "weight"
+    ],
+    "original_Einstein_engine_imports": []
+  },
+  "valid_boundary_cases": [
+    {
+      "N": 0,
+      "P": 0,
+      "Q": 0,
+      "Delta": "3/2",
+      "checks": {
+        "Bose_dimension_character": true,
+        "primary_dimension_character": true,
+        "Gram_Hermiticity": true,
+        "primary_Gram_Hermiticity": true,
+        "primary_invariance": true,
+        "positive_occupation_Gram": true
+      },
+      "primary_dimension": 1,
+      "shell_charpoly": "z",
+      "descendant_checks": true
+    },
+    {
+      "N": 1,
+      "P": 0,
+      "Q": 0,
+      "Delta": "3/2",
+      "checks": {
+        "Bose_dimension_character": true,
+        "primary_dimension_character": true,
+        "Gram_Hermiticity": true,
+        "primary_Gram_Hermiticity": true,
+        "primary_invariance": true,
+        "positive_occupation_Gram": true
+      },
+      "primary_dimension": 1,
+      "shell_charpoly": "z",
+      "descendant_checks": true
+    },
+    {
+      "N": 1,
+      "P": 2,
+      "Q": 1,
+      "Delta": "3/2",
+      "checks": {
+        "Bose_dimension_character": true,
+        "primary_dimension_character": true,
+        "Gram_Hermiticity": true,
+        "primary_Gram_Hermiticity": true,
+        "primary_invariance": true,
+        "positive_occupation_Gram": true,
+        "Ward_lower_0": true,
+        "Ward_lower_1": true
+      },
+      "primary_dimension": 0,
+      "shell_charpoly": "z",
+      "descendant_checks": true
+    }
+  ],
+  "invalid_cases_rejected": [
+    [
+      -1,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      -1,
+      0,
+      2
+    ],
+    [
+      2,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      2
+    ]
+  ],
+  "existing_output_preserved": true,
+  "example_files": [
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_N4_P2_Q2_D2_certified.json",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_N5_P2_Q2_D2.json",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_N6_P2_Q2_D2.json",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_N8_P3_Q3_D2.json",
+    "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_parity.json"
+  ],
+  "all_checks_passed": true
+}

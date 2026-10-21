@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "label": "CL.L8 all-t nonchiral determinant eta=1",
+      "passed": true
+    },
+    {
+      "label": "CL.L8 all-t nonchiral determinant eta=-1",
+      "passed": true
+    },
+    {
+      "label": "CL.L8 finite nonchiral prefix t=0",
+      "passed": true
+    },
+    {
+      "label": "CL.L8 finite nonchiral prefix t=1",
+      "passed": true
+    },
+    {
+      "label": "CL.L8 finite nonchiral prefix t=2",
+      "passed": true
+    },
+    {
+      "label": "CL.L9 displayed log agrees to 55 decimals at bits=250",
+      "passed": true
+    },
+    {
+      "label": "CL.L9 displayed log agrees to 55 decimals at bits=350",
+      "passed": true
+    }
+  ],
+  "numerical_outputs": [
+    {
+      "precision_bits": 250,
+      "value": "0.96478053471893902481178291950436652115471023600086993515905893718490500953",
+      "log": "-0.035854628669896081172953105214387413759022408154060557639507981427079540676",
+      "max_normalized_root_residual": "4.4753578858036900093627836044071382939971237385321206791020932698058794161e-76"
+    },
+    {
+      "precision_bits": 350,
+      "value": "0.964780534718939024811782919504366521154710236000869935159058937184905009515124657693058240898416322684187",
+      "log": "-0.0358546286698960811729531052143874137590224081540605576395079814270795406920896876929796163183077942353421",
+      "max_normalized_root_residual": "6.30500809422812430000376591067578346152123004765059323139205164557455955199259611487515813458921306953092e-106"
+    }
+  ],
+  "scope": "Exact rational all-t identities plus independent two-precision numerical Gamma evaluation. Root residuals and agreement are not interval enclosures."
+}

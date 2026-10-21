@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py", line 139, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py", line 130, in main
+    sc,lookup=source_checks(data);ec=element_checks(data,lookup);partial=mixed_cubic_only()
+              ~~~~~~~~~~~~~^^^^^^
+  File "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py", line 66, in source_checks
+    zer(div[1]-vals['j_theta'],'Metric-derived divergence theta')
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py", line 33, in zer
+    require(value==0,f'{label}: {value}')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/gravity_certificate_review.py", line 26, in require
+    if ok is not True:raise RuntimeError(label)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Metric-derived divergence theta: 0*sqrt(2)

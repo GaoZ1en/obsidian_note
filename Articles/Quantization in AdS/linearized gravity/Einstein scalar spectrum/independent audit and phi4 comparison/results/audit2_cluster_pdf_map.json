@@ -1,0 +1,264 @@
+{
+  "pdf_sha256": "97d9ea4ee42dc0443104c71bfdd12aaea28b39528d9b56d899de9e283464b9bc",
+  "title_date": "19 October 2026",
+  "page_count": 190,
+  "pages": [
+    {
+      "pdf_page": 46,
+      "printed_page": 46,
+      "headings": []
+    },
+    {
+      "pdf_page": 47,
+      "printed_page": 47,
+      "headings": [
+        "Theorem CL-01. Positive atomic law"
+      ]
+    },
+    {
+      "pdf_page": 48,
+      "printed_page": 48,
+      "headings": [
+        "Theorem CL-02. Overlap and partition multiplication"
+      ]
+    },
+    {
+      "pdf_page": 49,
+      "printed_page": 49,
+      "headings": [
+        "Theorem CL-03. Connected functional calculus",
+        "CL.D."
+      ]
+    },
+    {
+      "pdf_page": 50,
+      "printed_page": 50,
+      "headings": [
+        "Theorem CL-04. Essential spectrum and Hausdorff limit"
+      ]
+    },
+    {
+      "pdf_page": 51,
+      "printed_page": 51,
+      "headings": [
+        "Theorem CL-05. Recursive depth bound"
+      ]
+    },
+    {
+      "pdf_page": 52,
+      "printed_page": 52,
+      "headings": [
+        "Theorem CL-06. Exact eventual projector rank"
+      ]
+    },
+    {
+      "pdf_page": 53,
+      "printed_page": 53,
+      "headings": [
+        "Theorem CL-07. Eventual simplicity of the largest chiral residual"
+      ]
+    },
+    {
+      "pdf_page": 54,
+      "printed_page": 54,
+      "headings": [
+        "Theorem CL-08. Refined positive spectral limit",
+        "Theorem CL-09. Complex locally uniform Fredholm limit"
+      ]
+    },
+    {
+      "pdf_page": 55,
+      "printed_page": 55,
+      "headings": [
+        "Theorem CL-10. Integer-dimension Gamma reduction"
+      ]
+    },
+    {
+      "pdf_page": 56,
+      "printed_page": 56,
+      "headings": [
+        "Theorem CL-11. Certified smallest positive four-body limit at \u2206 = 2, Q = 0"
+      ]
+    },
+    {
+      "pdf_page": 57,
+      "printed_page": 57,
+      "headings": []
+    },
+    {
+      "pdf_page": 138,
+      "printed_page": 138,
+      "headings": [
+        "CL.A. Normalized Clebsch\u2013Gordan maps and the endpoint Racah estimate",
+        "CL.A.1. Polynomial normalization",
+        "CL.A.2. Exact finite recoupling identity"
+      ]
+    },
+    {
+      "pdf_page": 139,
+      "printed_page": 139,
+      "headings": [
+        "Lemma CL.A.3. Finite endpoint rectangle"
+      ]
+    },
+    {
+      "pdf_page": 140,
+      "printed_page": 140,
+      "headings": [
+        "CL.B. Gram estimates, atomic measures and descendants"
+      ]
+    },
+    {
+      "pdf_page": 141,
+      "printed_page": 141,
+      "headings": []
+    },
+    {
+      "pdf_page": 142,
+      "printed_page": 142,
+      "headings": [
+        "CL.C. Overlapping clusters, degree cutoffs and the partition join"
+      ]
+    },
+    {
+      "pdf_page": 143,
+      "printed_page": 143,
+      "headings": [
+        "CL.D. M\u00f6bius functional calculus and the whole-block upper bound"
+      ]
+    },
+    {
+      "pdf_page": 144,
+      "printed_page": 144,
+      "headings": [
+        "CL.D.1. The physical partition filtration"
+      ]
+    },
+    {
+      "pdf_page": 145,
+      "printed_page": 145,
+      "headings": [
+        "CL.E. Binary embeddings, equal-cluster exchange and the recursive set",
+        "CL.E.1. Labelled source maps and Bose normalization"
+      ]
+    },
+    {
+      "pdf_page": 146,
+      "printed_page": 146,
+      "headings": [
+        "CL.E.2. The exact exchange involution for equal sizes",
+        "CL.E.3. Reduction to binary sums"
+      ]
+    },
+    {
+      "pdf_page": 147,
+      "printed_page": 147,
+      "headings": [
+        "CL.E.2 gives exactly E\u03b7m,Q from the equal cut. To sharpen the upper inclusion, note that every",
+        "CL.F. Derived sets and the finite accumulation-depth bound"
+      ]
+    },
+    {
+      "pdf_page": 148,
+      "printed_page": 148,
+      "headings": [
+        "CL.G. Regular source finiteness and exact eventual projector ranks",
+        "CL.G.1. Why the local source is finite"
+      ]
+    },
+    {
+      "pdf_page": 149,
+      "printed_page": 149,
+      "headings": [
+        "CL.G.2. From the connected identity to the target projection"
+      ]
+    },
+    {
+      "pdf_page": 150,
+      "printed_page": 150,
+      "headings": [
+        "CL.G.3. Counting the allowed source",
+        "CL.H. Singleton inheritance, the chiral maximum and the compactness ob-"
+      ]
+    },
+    {
+      "pdf_page": 151,
+      "printed_page": 151,
+      "headings": []
+    },
+    {
+      "pdf_page": 152,
+      "printed_page": 152,
+      "headings": [
+        "CL.I. Exact four-body recoupling and the finite-section comparison",
+        "CL.I.1. Pair-pair and triple coupling bases"
+      ]
+    },
+    {
+      "pdf_page": 153,
+      "printed_page": 153,
+      "headings": [
+        "CL.I.2. Uniform finite-section separation"
+      ]
+    },
+    {
+      "pdf_page": 154,
+      "printed_page": 154,
+      "headings": [
+        "CL.J. Exact auxiliary nullity and exclusion of positive collapse at zero"
+      ]
+    },
+    {
+      "pdf_page": 155,
+      "printed_page": 155,
+      "headings": []
+    },
+    {
+      "pdf_page": 156,
+      "printed_page": 156,
+      "headings": []
+    },
+    {
+      "pdf_page": 157,
+      "printed_page": 157,
+      "headings": [
+        "CL.K. Branch-free complex Fredholm convergence and isolated zero multi-"
+      ]
+    },
+    {
+      "pdf_page": 158,
+      "printed_page": 158,
+      "headings": [
+        "CL.L. Integer-dimension rational tails and finite Gamma products",
+        "CL.L.1. Removing square roots from the determinant"
+      ]
+    },
+    {
+      "pdf_page": 159,
+      "printed_page": 159,
+      "headings": [
+        "CL.L.2. Deriving the Gamma product",
+        "CL.L.3. The two-dimensional chiral block at \u2206 = 2"
+      ]
+    },
+    {
+      "pdf_page": 160,
+      "printed_page": 160,
+      "headings": [
+        "CL.L.4. The completed nonchiral \u2206 = 2, u = 1, s = 20 specialization"
+      ]
+    },
+    {
+      "pdf_page": 161,
+      "printed_page": 161,
+      "headings": [
+        "CL.M. Exact minimum certificate at \u2206 = 2, Q = 0"
+      ]
+    },
+    {
+      "pdf_page": 162,
+      "printed_page": 162,
+      "headings": []
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "N": 3,
+    "P": 6,
+    "Q": 3,
+    "Delta": "7/3",
+    "restricted_Riesz_is_nondiagonal": true,
+    "edges": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "good_dimension": 10,
+        "transported_dimension": 10,
+        "joint_dimension": 10,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "good_dimension": 10,
+        "transported_dimension": 10,
+        "joint_dimension": 10,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "good_dimension": 10,
+        "transported_dimension": 10,
+        "joint_dimension": 10,
+        "exact_equality": true
+      }
+    ]
+  },
+  {
+    "N": 4,
+    "P": 4,
+    "Q": 2,
+    "Delta": "3/2",
+    "restricted_Riesz_is_nondiagonal": true,
+    "edges": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          0,
+          3
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          1,
+          3
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      },
+      {
+        "edge": [
+          2,
+          3
+        ],
+        "good_dimension": 11,
+        "transported_dimension": 11,
+        "joint_dimension": 11,
+        "exact_equality": true
+      }
+    ]
+  }
+]

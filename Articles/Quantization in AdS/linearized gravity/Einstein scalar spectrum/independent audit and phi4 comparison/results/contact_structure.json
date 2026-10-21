@@ -1,0 +1,5142 @@
+{
+  "provenance": {
+    "Sage_version": "10.9",
+    "script": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/scripts/contact_structure.py",
+    "script_sha256": "833a0a7f7893ce206c27e13c82b54e26f0281bff84f2b9fc71716607696898bb",
+    "archived_engine_imports": false
+  },
+  "conventions": {
+    "N": 3,
+    "field": "QQ exact",
+    "Delta_values": [
+      "3/2",
+      "2",
+      "7/3"
+    ],
+    "primary_coordinates": "u=z1-z2, v=z1+z2-2z3",
+    "pair_eigenvalue": "(Delta+k)*(Delta+k-1)",
+    "physical_pair_coefficient": "1/[8*pi*(2*Delta+2*k-1)]",
+    "positivity": "All c_k>0; ranks/kernel independent of magnitudes."
+  },
+  "certificate_44": {
+    "basis_dimension": 5,
+    "rank": 4,
+    "kernel_coordinates": [
+      0,
+      0,
+      0,
+      1,
+      -1
+    ],
+    "row_scales": [
+      7776,
+      648,
+      5400,
+      294,
+      214326
+    ],
+    "scaled_diagonal_map": [
+      [
+        "6",
+        "6",
+        "6",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "3",
+        "6",
+        "-1",
+        "-1"
+      ],
+      [
+        "96",
+        "51",
+        "231",
+        "16",
+        "16"
+      ],
+      [
+        "0",
+        "9",
+        "25",
+        "4",
+        "4"
+      ],
+      [
+        "11616",
+        "12435",
+        "13506",
+        "-395",
+        "-395"
+      ]
+    ],
+    "first_minor": "30240",
+    "all_Delta_minor": "(1/241864704) * (d + 1/2)^-1 * (d + 3/2)^-1 * d * (d + 2)",
+    "all_Delta_minor_formula": "Delta*(Delta+2)/(6^10*(2*Delta+1)*(2*Delta+3))"
+  },
+  "certificate_66": {
+    "P": 6,
+    "Q": 6,
+    "dimension": 9,
+    "rank_all_Delta_gt_1": 6,
+    "odd_kernel": 2,
+    "even_kernel": 1,
+    "principal_minor_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "principal_minor_factored": "(569025/536870912) * (d + 5/2)^-6 * (d + 3/2)^-4 * (d + 7/2)^-4 * (d + 1/2)^-2 * (d + 9/2)^-2 * d * (d + 1) * (d + 7/3) * (d + 8/3) * (d + 4) * (d + 5) * (d + 2)^2 * (d + 3)^2 * (d + 10/3)^2 * (d^6 + 15*d^5 + 25699/281*d^4 + 81365/281*d^3 + 140600/281*d^2 + 125000/281*d + 44280/281)",
+    "positive_polynomial": "281*d^6 + 4215*d^5 + 25699*d^4 + 81365*d^3 + 140600*d^2 + 125000*d + 44280",
+    "determinant_identically_zero": true,
+    "minor_equals_positive_product": true
+  },
+  "direct_certificate_44": {
+    "checks": {
+      "all_15_equal_channel_projections_zero": true,
+      "left_primary": true,
+      "right_primary": true,
+      "factorization": true,
+      "positive_Gram": true,
+      "self_adjoint_unit": true,
+      "self_adjoint_physical": true,
+      "rank_unit": true,
+      "rank_physical": true
+    },
+    "psi_norm_squared": "44/243",
+    "unit_weight_W_matrix": [
+      [
+        "145133/297675",
+        "44228/297675",
+        "73067/1190700",
+        "-441643/7144200",
+        "-441643/7144200"
+      ],
+      [
+        "70592/99225",
+        "115847/99225",
+        "59252/99225",
+        "-15104/297675",
+        "-15104/297675"
+      ],
+      [
+        "201632/297675",
+        "306962/297675",
+        "787667/297675",
+        "99016/893025",
+        "99016/893025"
+      ],
+      [
+        "-19216/99225",
+        "-8308/14175",
+        "-11521/99225",
+        "267367/297675",
+        "267367/297675"
+      ],
+      [
+        "-19216/99225",
+        "-8308/14175",
+        "-11521/99225",
+        "267367/297675",
+        "267367/297675"
+      ]
+    ],
+    "unit_weight_charpoly": "(x - 3) * x * (x^3 - 1366/441*x^2 + 6151/2401*x - 198/343)",
+    "physical_scaled_operator_definition": "Wscaled = 8*pi*W_phi4; H=H0+lambda*W_phi4+O(lambda^2)",
+    "physical_scaled_W_matrix": [
+      [
+        "23/315",
+        "113/3780",
+        "43/1512",
+        "-23/11340",
+        "-23/11340"
+      ],
+      [
+        "64/315",
+        "46/165",
+        "718/3465",
+        "37/3465",
+        "37/3465"
+      ],
+      [
+        "32/315",
+        "1648/10395",
+        "808/2079",
+        "41/4455",
+        "41/4455"
+      ],
+      [
+        "16/105",
+        "37/3465",
+        "-94/3465",
+        "1637/10395",
+        "1637/10395"
+      ],
+      [
+        "16/105",
+        "37/3465",
+        "-94/3465",
+        "1637/10395",
+        "1637/10395"
+      ]
+    ],
+    "physical_scaled_charpoly": "x * (x^4 - 1219/1155*x^3 + 8474/24255*x^2 - 20786/509355*x + 4/3087)",
+    "Gram_matrix": [
+      [
+        "30976/18225",
+        "15488/18225",
+        "3872/6075",
+        "7744/54675",
+        "7744/54675"
+      ],
+      [
+        "15488/18225",
+        "6232/6075",
+        "16858/18225",
+        "1636/18225",
+        "1636/18225"
+      ],
+      [
+        "3872/6075",
+        "16858/18225",
+        "35906/18225",
+        "5354/54675",
+        "5354/54675"
+      ],
+      [
+        "7744/54675",
+        "1636/18225",
+        "5354/54675",
+        "1876/18225",
+        "226/18225"
+      ],
+      [
+        "7744/54675",
+        "1636/18225",
+        "5354/54675",
+        "226/18225",
+        "1876/18225"
+      ]
+    ]
+  },
+  "spectator_counterexample": {
+    "N": 4,
+    "P": 3,
+    "Q": 3,
+    "polynomial": "p20*p13-p02*p31",
+    "global_LR_odd": true,
+    "primary": true,
+    "S4_invariant": true,
+    "left_collision_point": [
+      1,
+      1,
+      0,
+      -2
+    ],
+    "right_collision_point": [
+      0,
+      0,
+      1,
+      -1
+    ],
+    "value": "-4",
+    "conclusion": "P12,0^L P12,0^R psi is nonzero for every Delta>1",
+    "pair_multiplicity_dimension_checks": [
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        3,
+        6,
+        7
+      ],
+      [
+        3,
+        7,
+        8
+      ],
+      [
+        3,
+        8,
+        9
+      ],
+      [
+        3,
+        9,
+        10
+      ],
+      [
+        3,
+        10,
+        11
+      ],
+      [
+        3,
+        11,
+        12
+      ],
+      [
+        3,
+        12,
+        13
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        4,
+        2,
+        6
+      ],
+      [
+        4,
+        3,
+        10
+      ],
+      [
+        4,
+        4,
+        15
+      ],
+      [
+        4,
+        5,
+        21
+      ],
+      [
+        4,
+        6,
+        28
+      ],
+      [
+        4,
+        7,
+        36
+      ],
+      [
+        4,
+        8,
+        45
+      ],
+      [
+        4,
+        9,
+        55
+      ],
+      [
+        4,
+        10,
+        66
+      ],
+      [
+        4,
+        11,
+        78
+      ],
+      [
+        4,
+        12,
+        91
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        5,
+        1,
+        4
+      ],
+      [
+        5,
+        2,
+        10
+      ],
+      [
+        5,
+        3,
+        20
+      ],
+      [
+        5,
+        4,
+        35
+      ],
+      [
+        5,
+        5,
+        56
+      ],
+      [
+        5,
+        6,
+        84
+      ],
+      [
+        5,
+        7,
+        120
+      ],
+      [
+        5,
+        8,
+        165
+      ],
+      [
+        5,
+        9,
+        220
+      ],
+      [
+        5,
+        10,
+        286
+      ],
+      [
+        5,
+        11,
+        364
+      ],
+      [
+        5,
+        12,
+        455
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        6,
+        1,
+        5
+      ],
+      [
+        6,
+        2,
+        15
+      ],
+      [
+        6,
+        3,
+        35
+      ],
+      [
+        6,
+        4,
+        70
+      ],
+      [
+        6,
+        5,
+        126
+      ],
+      [
+        6,
+        6,
+        210
+      ],
+      [
+        6,
+        7,
+        330
+      ],
+      [
+        6,
+        8,
+        495
+      ],
+      [
+        6,
+        9,
+        715
+      ],
+      [
+        6,
+        10,
+        1001
+      ],
+      [
+        6,
+        11,
+        1365
+      ],
+      [
+        6,
+        12,
+        1820
+      ],
+      [
+        7,
+        0,
+        1
+      ],
+      [
+        7,
+        1,
+        6
+      ],
+      [
+        7,
+        2,
+        21
+      ],
+      [
+        7,
+        3,
+        56
+      ],
+      [
+        7,
+        4,
+        126
+      ],
+      [
+        7,
+        5,
+        252
+      ],
+      [
+        7,
+        6,
+        462
+      ],
+      [
+        7,
+        7,
+        792
+      ],
+      [
+        7,
+        8,
+        1287
+      ],
+      [
+        7,
+        9,
+        2002
+      ],
+      [
+        7,
+        10,
+        3003
+      ],
+      [
+        7,
+        11,
+        4368
+      ],
+      [
+        7,
+        12,
+        6188
+      ]
+    ]
+  },
+  "balanced_tridiagonal_certificate": {
+    "P": 6,
+    "Delta": "symbolic d",
+    "Casimir_sum_verified": true,
+    "irreducible_tridiagonal_lower_coefficient": "-k*(P-k+d)",
+    "lower_coefficients_verified": true,
+    "band_identity_checks": [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "scope": "Finite symbolic regression of identities; all-P proof is analytic in structural comparison.md section 5.2."
+  },
+  "grid": [
+    {
+      "Delta": "3/2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "rank": 0,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 0
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "241/192",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1477/768",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "100303/49152",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "rank": 4,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "18925/8192",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 5,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 6,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "18228761/6291456",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 5,
+      "dimension": 8,
+      "rank": 6,
+      "kernel": 2,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "76973131/25165824",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "rank": 4,
+      "kernel": 2,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 5,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 6,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 7,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "3583349225/1073741824",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 5,
+      "dimension": 10,
+      "rank": 6,
+      "kernel": 4,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 6,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 7,
+      "dimension": 13,
+      "rank": 8,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 8,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "25018386893/6442450944",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 5,
+      "dimension": 11,
+      "rank": 6,
+      "kernel": 5,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 6,
+      "dimension": 13,
+      "rank": 7,
+      "kernel": 6,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 7,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 8,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 9,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "1677851560519/412316860416",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 3,
+      "dimension": 8,
+      "rank": 4,
+      "kernel": 4,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 5,
+      "dimension": 12,
+      "rank": 6,
+      "kernel": 6,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 6,
+      "dimension": 14,
+      "rank": 7,
+      "kernel": 7,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 7,
+      "dimension": 16,
+      "rank": 8,
+      "kernel": 8,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 8,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 9,
+      "dimension": 20,
+      "rank": 10,
+      "kernel": 10,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 10,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "2393689432477/549755813888",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "rank": 1,
+      "kernel": 2,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 2,
+      "dimension": 7,
+      "rank": 3,
+      "kernel": 4,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 3,
+      "dimension": 9,
+      "rank": 4,
+      "kernel": 5,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 4,
+      "dimension": 11,
+      "rank": 5,
+      "kernel": 6,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 5,
+      "dimension": 13,
+      "rank": 6,
+      "kernel": 7,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 6,
+      "dimension": 16,
+      "rank": 7,
+      "kernel": 9,
+      "rank_upper_bound": 7,
+      "full_coordinate_rank_check": 7
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 7,
+      "dimension": 17,
+      "rank": 8,
+      "kernel": 9,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 8,
+      "dimension": 20,
+      "rank": 9,
+      "kernel": 11,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 9,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 10,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 11,
+      "dimension": 26,
+      "rank": 11,
+      "kernel": 15,
+      "rank_upper_bound": 12
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "171497085392617/35184372088832",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "rank": 0,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 0
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "94/75",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "2337/1225",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "2689/1323",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "rank": 4,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "737503/320166",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 5,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 6,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "155977837/54108054",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 6
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 5,
+      "dimension": 8,
+      "rank": 6,
+      "kernel": 2,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "8417593/2760615",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "rank": 4,
+      "kernel": 2,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 5,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 6,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 7,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "204317434/61370595",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 8
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 5,
+      "dimension": 10,
+      "rank": 6,
+      "kernel": 4,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 6,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 7,
+      "dimension": 13,
+      "rank": 8,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 8,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "445846656617/115204880934",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 5,
+      "dimension": 11,
+      "rank": 6,
+      "kernel": 5,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 6,
+      "dimension": 13,
+      "rank": 7,
+      "kernel": 6,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 7,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 8,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 9,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "2546407307701/627226573974",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 3,
+      "dimension": 8,
+      "rank": 4,
+      "kernel": 4,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 5,
+      "dimension": 12,
+      "rank": 6,
+      "kernel": 6,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 6,
+      "dimension": 14,
+      "rank": 7,
+      "kernel": 7,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 7,
+      "dimension": 16,
+      "rank": 8,
+      "kernel": 8,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 8,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 9,
+      "dimension": 20,
+      "rank": 10,
+      "kernel": 10,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 10,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "25297089274397/5821102765478",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "rank": 1,
+      "kernel": 2,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 2,
+      "dimension": 7,
+      "rank": 3,
+      "kernel": 4,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 3,
+      "dimension": 9,
+      "rank": 4,
+      "kernel": 5,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 4,
+      "dimension": 11,
+      "rank": 5,
+      "kernel": 6,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 5,
+      "dimension": 13,
+      "rank": 6,
+      "kernel": 7,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 6,
+      "dimension": 16,
+      "rank": 7,
+      "kernel": 9,
+      "rank_upper_bound": 7,
+      "full_coordinate_rank_check": 7
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 7,
+      "dimension": 17,
+      "rank": 8,
+      "kernel": 9,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 8,
+      "dimension": 20,
+      "rank": 9,
+      "kernel": 11,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 9,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 10,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 11,
+      "dimension": 26,
+      "rank": 11,
+      "kernel": 15,
+      "rank_upper_bound": 12
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "504138551654278544/103688393010076875",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 0,
+      "dimension": 0,
+      "rank": 0,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 0
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "362/289",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "581343/305762",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "260894109/128572921",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 2,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 3,
+      "dimension": 4,
+      "rank": 4,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "591629111/257145842",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1,
+      "full_coordinate_rank_check": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 1,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "full_coordinate_rank_check": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3,
+      "full_coordinate_rank_check": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4,
+      "full_coordinate_rank_check": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 4,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 5,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 6,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "60914781292195/21180845859698",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 2,
+      "dimension": 4,
+      "rank": 3,
+      "kernel": 1,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 3,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 4,
+      "dimension": 7,
+      "rank": 5,
+      "kernel": 2,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 5,
+      "dimension": 8,
+      "rank": 6,
+      "kernel": 2,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "284937236311956479/93576977008145764",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 3,
+      "dimension": 6,
+      "rank": 4,
+      "kernel": 2,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 5,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 6,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 7,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "437092347212860894365/131428864207940725538",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true,
+      "full_coordinate_rank_check": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 1,
+      "dimension": 3,
+      "rank": 2,
+      "kernel": 1,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 2,
+      "dimension": 5,
+      "rank": 3,
+      "kernel": 2,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 4,
+      "dimension": 8,
+      "rank": 5,
+      "kernel": 3,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 5,
+      "dimension": 10,
+      "rank": 6,
+      "kernel": 4,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 6,
+      "dimension": 12,
+      "rank": 7,
+      "kernel": 5,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 7,
+      "dimension": 13,
+      "rank": 8,
+      "kernel": 5,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 8,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "883803106476398770308799/228751938153920832798889",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 3,
+      "dimension": 7,
+      "rank": 4,
+      "kernel": 3,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5,
+      "full_coordinate_rank_check": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 5,
+      "dimension": 11,
+      "rank": 6,
+      "kernel": 5,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 6,
+      "dimension": 13,
+      "rank": 7,
+      "kernel": 6,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 7,
+      "dimension": 15,
+      "rank": 8,
+      "kernel": 7,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 8,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 9,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "131016913406819364293/32307314194466610098",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 0,
+      "dimension": 2,
+      "rank": 1,
+      "kernel": 1,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 2,
+      "dimension": 6,
+      "rank": 3,
+      "kernel": 3,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 3,
+      "dimension": 8,
+      "rank": 4,
+      "kernel": 4,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 4,
+      "dimension": 10,
+      "rank": 5,
+      "kernel": 5,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 5,
+      "dimension": 12,
+      "rank": 6,
+      "kernel": 6,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 6,
+      "dimension": 14,
+      "rank": 7,
+      "kernel": 7,
+      "rank_upper_bound": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 7,
+      "dimension": 16,
+      "rank": 8,
+      "kernel": 8,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 8,
+      "dimension": 18,
+      "rank": 9,
+      "kernel": 9,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 9,
+      "dimension": 20,
+      "rank": 10,
+      "kernel": 10,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 10,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "1414254124784125755937763/325722341708612363008036",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 0,
+      "dimension": 3,
+      "rank": 1,
+      "kernel": 2,
+      "rank_upper_bound": 1
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 1,
+      "dimension": 4,
+      "rank": 2,
+      "kernel": 2,
+      "rank_upper_bound": 2
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 2,
+      "dimension": 7,
+      "rank": 3,
+      "kernel": 4,
+      "rank_upper_bound": 3
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 3,
+      "dimension": 9,
+      "rank": 4,
+      "kernel": 5,
+      "rank_upper_bound": 4
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 4,
+      "dimension": 11,
+      "rank": 5,
+      "kernel": 6,
+      "rank_upper_bound": 5
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 5,
+      "dimension": 13,
+      "rank": 6,
+      "kernel": 7,
+      "rank_upper_bound": 6
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 6,
+      "dimension": 16,
+      "rank": 7,
+      "kernel": 9,
+      "rank_upper_bound": 7,
+      "full_coordinate_rank_check": 7
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 7,
+      "dimension": 17,
+      "rank": 8,
+      "kernel": 9,
+      "rank_upper_bound": 8
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 8,
+      "dimension": 20,
+      "rank": 9,
+      "kernel": 11,
+      "rank_upper_bound": 9
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 9,
+      "dimension": 22,
+      "rank": 10,
+      "kernel": 12,
+      "rank_upper_bound": 10
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 10,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 11
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 11,
+      "dimension": 26,
+      "rank": 11,
+      "kernel": 15,
+      "rank_upper_bound": 12
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "790854171139464261205041/162861170854306181504018",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    }
+  ],
+  "balanced": [
+    {
+      "Delta": "3/2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "241/192",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1477/768",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "100303/49152",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "18925/8192",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "18228761/6291456",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "76973131/25165824",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "3583349225/1073741824",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "25018386893/6442450944",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "1677851560519/412316860416",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "2393689432477/549755813888",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "171497085392617/35184372088832",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 13,
+      "Q": 13,
+      "dimension": 33,
+      "rank": 13,
+      "kernel": 20,
+      "rank_upper_bound": 14,
+      "multiplicities": [
+        2,
+        2,
+        5
+      ],
+      "odd_kernel": 12,
+      "even_dimension": 21,
+      "even_kernel": 8,
+      "compressed_projection_trace": "178617318873029/35184372088832",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 14,
+      "Q": 14,
+      "dimension": 38,
+      "rank": 14,
+      "kernel": 24,
+      "rank_upper_bound": 15,
+      "multiplicities": [
+        3,
+        2,
+        5
+      ],
+      "odd_kernel": 14,
+      "even_dimension": 24,
+      "even_kernel": 10,
+      "compressed_projection_trace": "72497059523636873/13510798882111488",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 15,
+      "Q": 15,
+      "dimension": 43,
+      "rank": 15,
+      "kernel": 28,
+      "rank_upper_bound": 16,
+      "multiplicities": [
+        3,
+        3,
+        5
+      ],
+      "odd_kernel": 16,
+      "even_dimension": 27,
+      "even_kernel": 12,
+      "compressed_projection_trace": "105703037075997981/18014398509481984",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 16,
+      "Q": 16,
+      "dimension": 49,
+      "rank": 16,
+      "kernel": 33,
+      "rank_upper_bound": 17,
+      "multiplicities": [
+        3,
+        2,
+        6
+      ],
+      "odd_kernel": 19,
+      "even_dimension": 30,
+      "even_kernel": 14,
+      "compressed_projection_trace": "84144562943686963027/13835058055282163712",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 17,
+      "Q": 17,
+      "dimension": 54,
+      "rank": 17,
+      "kernel": 37,
+      "rank_upper_bound": 18,
+      "multiplicities": [
+        3,
+        3,
+        6
+      ],
+      "odd_kernel": 21,
+      "even_dimension": 33,
+      "even_kernel": 16,
+      "compressed_projection_trace": "58795988677185959325/9223372036854775808",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 18,
+      "Q": 18,
+      "dimension": 61,
+      "rank": 18,
+      "kernel": 43,
+      "rank_upper_bound": 19,
+      "multiplicities": [
+        4,
+        3,
+        6
+      ],
+      "odd_kernel": 24,
+      "even_dimension": 37,
+      "even_kernel": 19,
+      "compressed_projection_trace": "4051029371875242418793/590295810358705651712",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 19,
+      "Q": 19,
+      "dimension": 67,
+      "rank": 19,
+      "kernel": 48,
+      "rank_upper_bound": 20,
+      "multiplicities": [
+        3,
+        3,
+        7
+      ],
+      "odd_kernel": 27,
+      "even_dimension": 40,
+      "even_kernel": 21,
+      "compressed_projection_trace": "16731706096681626026837/2361183241434822606848",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 20,
+      "Q": 20,
+      "dimension": 74,
+      "rank": 20,
+      "kernel": 54,
+      "rank_upper_bound": 21,
+      "multiplicities": [
+        4,
+        3,
+        7
+      ],
+      "odd_kernel": 30,
+      "even_dimension": 44,
+      "even_kernel": 24,
+      "compressed_projection_trace": "3346424886274721606979761/453347182355485940514816",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 21,
+      "Q": 21,
+      "dimension": 81,
+      "rank": 21,
+      "kernel": 60,
+      "rank_upper_bound": 22,
+      "multiplicities": [
+        4,
+        4,
+        7
+      ],
+      "odd_kernel": 33,
+      "even_dimension": 48,
+      "even_kernel": 27,
+      "compressed_projection_trace": "445342636206406887987953/56668397794435742564352",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 22,
+      "Q": 22,
+      "dimension": 89,
+      "rank": 22,
+      "kernel": 67,
+      "rank_upper_bound": 23,
+      "multiplicities": [
+        4,
+        3,
+        8
+      ],
+      "odd_kernel": 37,
+      "even_dimension": 52,
+      "even_kernel": 30,
+      "compressed_projection_trace": "156473963828537584762750757/19342813113834066795298816",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 23,
+      "Q": 23,
+      "dimension": 96,
+      "rank": 23,
+      "kernel": 73,
+      "rank_upper_bound": 24,
+      "multiplicities": [
+        4,
+        4,
+        8
+      ],
+      "odd_kernel": 40,
+      "even_dimension": 56,
+      "even_kernel": 33,
+      "compressed_projection_trace": "1946787821871566594149396501/232113757366008801543585792",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "3/2",
+      "P": 24,
+      "Q": 24,
+      "dimension": 105,
+      "rank": 24,
+      "kernel": 81,
+      "rank_upper_bound": 25,
+      "multiplicities": [
+        5,
+        4,
+        8
+      ],
+      "odd_kernel": 44,
+      "even_dimension": 61,
+      "even_kernel": 37,
+      "compressed_projection_trace": "263101869602819218471791214063/29710560942849126597578981376",
+      "stabilizer_rank_lower_bound": 9,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "94/75",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "2337/1225",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "2689/1323",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "737503/320166",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "155977837/54108054",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "8417593/2760615",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "204317434/61370595",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "445846656617/115204880934",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "2546407307701/627226573974",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "25297089274397/5821102765478",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "504138551654278544/103688393010076875",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 13,
+      "Q": 13,
+      "dimension": 33,
+      "rank": 13,
+      "kernel": 20,
+      "rank_upper_bound": 14,
+      "multiplicities": [
+        2,
+        2,
+        5
+      ],
+      "odd_kernel": 12,
+      "even_dimension": 21,
+      "even_kernel": 8,
+      "compressed_projection_trace": "108224220560740327/21357304091077500",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 14,
+      "Q": 14,
+      "dimension": 38,
+      "rank": 14,
+      "kernel": 24,
+      "rank_upper_bound": 15,
+      "multiplicities": [
+        3,
+        2,
+        5
+      ],
+      "odd_kernel": 14,
+      "even_dimension": 24,
+      "even_kernel": 10,
+      "compressed_projection_trace": "1021211309101436519/190611759696122700",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 15,
+      "Q": 15,
+      "dimension": 43,
+      "rank": 15,
+      "kernel": 28,
+      "rank_upper_bound": 16,
+      "multiplicities": [
+        3,
+        3,
+        5
+      ],
+      "odd_kernel": 16,
+      "even_dimension": 27,
+      "even_kernel": 12,
+      "compressed_projection_trace": "268192589565141212612/45794475266993478675",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 16,
+      "Q": 16,
+      "dimension": 49,
+      "rank": 16,
+      "kernel": 33,
+      "rank_upper_bound": 17,
+      "multiplicities": [
+        3,
+        2,
+        6
+      ],
+      "odd_kernel": 19,
+      "even_dimension": 30,
+      "even_kernel": 14,
+      "compressed_projection_trace": "398241165080696930323/65575520796523206150",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 17,
+      "Q": 17,
+      "dimension": 54,
+      "rank": 17,
+      "kernel": 37,
+      "rank_upper_bound": 18,
+      "multiplicities": [
+        3,
+        3,
+        6
+      ],
+      "odd_kernel": 21,
+      "even_dimension": 33,
+      "even_kernel": 16,
+      "compressed_projection_trace": "36530186980239427212971/5737858069695780538125",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 18,
+      "Q": 18,
+      "dimension": 61,
+      "rank": 18,
+      "kernel": 43,
+      "rank_upper_bound": 19,
+      "multiplicities": [
+        4,
+        3,
+        6
+      ],
+      "odd_kernel": 24,
+      "even_dimension": 37,
+      "even_kernel": 19,
+      "compressed_projection_trace": "53825002385421047499508654/7855127697413523556693125",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 19,
+      "Q": 19,
+      "dimension": 67,
+      "rank": 19,
+      "kernel": 48,
+      "rank_upper_bound": 20,
+      "multiplicities": [
+        3,
+        3,
+        7
+      ],
+      "odd_kernel": 27,
+      "even_dimension": 40,
+      "even_kernel": 21,
+      "compressed_projection_trace": "72812415030602028175939/10287835558367803786350",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 20,
+      "Q": 20,
+      "dimension": 74,
+      "rank": 20,
+      "kernel": 54,
+      "rank_upper_bound": 21,
+      "multiplicities": [
+        4,
+        3,
+        7
+      ],
+      "odd_kernel": 30,
+      "even_dimension": 44,
+      "even_kernel": 24,
+      "compressed_projection_trace": "73132035392864884057294821163/9918023877468935527543969725",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 21,
+      "Q": 21,
+      "dimension": 81,
+      "rank": 21,
+      "kernel": 60,
+      "rank_upper_bound": 22,
+      "multiplicities": [
+        4,
+        4,
+        7
+      ],
+      "odd_kernel": 33,
+      "even_dimension": 48,
+      "even_kernel": 27,
+      "compressed_projection_trace": "6326861605462812300697631987077/806084665909453265513353847100",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 22,
+      "Q": 22,
+      "dimension": 89,
+      "rank": 22,
+      "kernel": 67,
+      "rank_upper_bound": 23,
+      "multiplicities": [
+        4,
+        3,
+        8
+      ],
+      "odd_kernel": 37,
+      "even_dimension": 52,
+      "even_kernel": 30,
+      "compressed_projection_trace": "128519098799892768147635213657/15903449063350471152300127500",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 23,
+      "Q": 23,
+      "dimension": 96,
+      "rank": 23,
+      "kernel": 73,
+      "rank_upper_bound": 24,
+      "multiplicities": [
+        4,
+        4,
+        8
+      ],
+      "odd_kernel": 40,
+      "even_dimension": 56,
+      "even_kernel": 33,
+      "compressed_projection_trace": "8389763166718396169827588754674183/1001225490956823937099782976953750",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "2",
+      "P": 24,
+      "Q": 24,
+      "dimension": 105,
+      "rank": 24,
+      "kernel": 81,
+      "rank_upper_bound": 25,
+      "multiplicities": [
+        5,
+        4,
+        8
+      ],
+      "odd_kernel": 44,
+      "even_dimension": 61,
+      "even_kernel": 37,
+      "compressed_projection_trace": "189999290860866333992226170879119/21478154154901356023914040005950",
+      "stabilizer_rank_lower_bound": 9,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 0,
+      "Q": 0,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 1,
+      "multiplicities": [
+        1,
+        0,
+        0
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 1,
+      "Q": 1,
+      "dimension": 1,
+      "rank": 1,
+      "kernel": 0,
+      "rank_upper_bound": 2,
+      "multiplicities": [
+        0,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 1,
+      "even_kernel": 0,
+      "compressed_projection_trace": "1",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 2,
+      "Q": 2,
+      "dimension": 2,
+      "rank": 2,
+      "kernel": 0,
+      "rank_upper_bound": 3,
+      "multiplicities": [
+        1,
+        0,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 2,
+      "even_kernel": 0,
+      "compressed_projection_trace": "362/289",
+      "stabilizer_rank_lower_bound": 1,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 3,
+      "Q": 3,
+      "dimension": 3,
+      "rank": 3,
+      "kernel": 0,
+      "rank_upper_bound": 4,
+      "multiplicities": [
+        1,
+        1,
+        1
+      ],
+      "odd_kernel": 0,
+      "even_dimension": 3,
+      "even_kernel": 0,
+      "compressed_projection_trace": "581343/305762",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 4,
+      "Q": 4,
+      "dimension": 5,
+      "rank": 4,
+      "kernel": 1,
+      "rank_upper_bound": 5,
+      "multiplicities": [
+        1,
+        0,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 4,
+      "even_kernel": 0,
+      "compressed_projection_trace": "260894109/128572921",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 5,
+      "Q": 5,
+      "dimension": 6,
+      "rank": 5,
+      "kernel": 1,
+      "rank_upper_bound": 6,
+      "multiplicities": [
+        1,
+        1,
+        2
+      ],
+      "odd_kernel": 1,
+      "even_dimension": 5,
+      "even_kernel": 0,
+      "compressed_projection_trace": "591629111/257145842",
+      "stabilizer_rank_lower_bound": 2,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 6,
+      "Q": 6,
+      "dimension": 9,
+      "rank": 6,
+      "kernel": 3,
+      "rank_upper_bound": 7,
+      "multiplicities": [
+        2,
+        1,
+        2
+      ],
+      "odd_kernel": 2,
+      "even_dimension": 7,
+      "even_kernel": 1,
+      "compressed_projection_trace": "60914781292195/21180845859698",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 7,
+      "Q": 7,
+      "dimension": 11,
+      "rank": 7,
+      "kernel": 4,
+      "rank_upper_bound": 8,
+      "multiplicities": [
+        1,
+        1,
+        3
+      ],
+      "odd_kernel": 3,
+      "even_dimension": 8,
+      "even_kernel": 1,
+      "compressed_projection_trace": "284937236311956479/93576977008145764",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 8,
+      "Q": 8,
+      "dimension": 14,
+      "rank": 8,
+      "kernel": 6,
+      "rank_upper_bound": 9,
+      "multiplicities": [
+        2,
+        1,
+        3
+      ],
+      "odd_kernel": 4,
+      "even_dimension": 10,
+      "even_kernel": 2,
+      "compressed_projection_trace": "437092347212860894365/131428864207940725538",
+      "stabilizer_rank_lower_bound": 3,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 9,
+      "Q": 9,
+      "dimension": 17,
+      "rank": 9,
+      "kernel": 8,
+      "rank_upper_bound": 10,
+      "multiplicities": [
+        2,
+        2,
+        3
+      ],
+      "odd_kernel": 5,
+      "even_dimension": 12,
+      "even_kernel": 3,
+      "compressed_projection_trace": "883803106476398770308799/228751938153920832798889",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 10,
+      "Q": 10,
+      "dimension": 21,
+      "rank": 10,
+      "kernel": 11,
+      "rank_upper_bound": 11,
+      "multiplicities": [
+        2,
+        1,
+        4
+      ],
+      "odd_kernel": 7,
+      "even_dimension": 14,
+      "even_kernel": 4,
+      "compressed_projection_trace": "131016913406819364293/32307314194466610098",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 11,
+      "Q": 11,
+      "dimension": 24,
+      "rank": 11,
+      "kernel": 13,
+      "rank_upper_bound": 12,
+      "multiplicities": [
+        2,
+        2,
+        4
+      ],
+      "odd_kernel": 8,
+      "even_dimension": 16,
+      "even_kernel": 5,
+      "compressed_projection_trace": "1414254124784125755937763/325722341708612363008036",
+      "stabilizer_rank_lower_bound": 4,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 12,
+      "Q": 12,
+      "dimension": 29,
+      "rank": 12,
+      "kernel": 17,
+      "rank_upper_bound": 13,
+      "multiplicities": [
+        3,
+        2,
+        4
+      ],
+      "odd_kernel": 10,
+      "even_dimension": 19,
+      "even_kernel": 7,
+      "compressed_projection_trace": "790854171139464261205041/162861170854306181504018",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 13,
+      "Q": 13,
+      "dimension": 33,
+      "rank": 13,
+      "kernel": 20,
+      "rank_upper_bound": 14,
+      "multiplicities": [
+        2,
+        2,
+        5
+      ],
+      "odd_kernel": 12,
+      "even_dimension": 21,
+      "even_kernel": 8,
+      "compressed_projection_trace": "443757230301944974735378603197/87649744985026659150571241477",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 14,
+      "Q": 14,
+      "dimension": 38,
+      "rank": 14,
+      "kernel": 24,
+      "rank_upper_bound": 15,
+      "multiplicities": [
+        3,
+        2,
+        5
+      ],
+      "odd_kernel": 14,
+      "even_dimension": 24,
+      "even_kernel": 10,
+      "compressed_projection_trace": "393986784968048041059018524236177475/73593004782797993715957529196367602",
+      "stabilizer_rank_lower_bound": 5,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 15,
+      "Q": 15,
+      "dimension": 43,
+      "rank": 15,
+      "kernel": 28,
+      "rank_upper_bound": 16,
+      "multiplicities": [
+        3,
+        3,
+        5
+      ],
+      "odd_kernel": 16,
+      "even_dimension": 27,
+      "even_kernel": 12,
+      "compressed_projection_trace": "1627880293970986616470607186229953/278234422619274078321200488455076",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 16,
+      "Q": 16,
+      "dimension": 49,
+      "rank": 16,
+      "kernel": 33,
+      "rank_upper_bound": 17,
+      "multiplicities": [
+        3,
+        2,
+        6
+      ],
+      "odd_kernel": 19,
+      "even_dimension": 30,
+      "even_kernel": 14,
+      "compressed_projection_trace": "7981634418300546826169372325459695/1315231392557560182092013986436622",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 17,
+      "Q": 17,
+      "dimension": 54,
+      "rank": 17,
+      "kernel": 37,
+      "rank_upper_bound": 18,
+      "multiplicities": [
+        3,
+        3,
+        6
+      ],
+      "odd_kernel": 21,
+      "even_dimension": 33,
+      "even_kernel": 16,
+      "compressed_projection_trace": "3062017619741402004082913299496115975/481255675668654232405095053850277042",
+      "stabilizer_rank_lower_bound": 6,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 18,
+      "Q": 18,
+      "dimension": 61,
+      "rank": 18,
+      "kernel": 43,
+      "rank_upper_bound": 19,
+      "multiplicities": [
+        4,
+        3,
+        6
+      ],
+      "odd_kernel": 24,
+      "even_dimension": 37,
+      "even_kernel": 19,
+      "compressed_projection_trace": "14494801071506081849232883566273641735297554/2117005457440194310338536936830587610733161",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 19,
+      "Q": 19,
+      "dimension": 67,
+      "rank": 19,
+      "kernel": 48,
+      "rank_upper_bound": 20,
+      "multiplicities": [
+        3,
+        3,
+        7
+      ],
+      "odd_kernel": 27,
+      "even_dimension": 40,
+      "even_kernel": 21,
+      "compressed_projection_trace": "4327504421114051320312354593592271669597926015/611814577200216155687837174744039819501883529",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 20,
+      "Q": 20,
+      "dimension": 74,
+      "rank": 20,
+      "kernel": 54,
+      "rank_upper_bound": 21,
+      "multiplicities": [
+        4,
+        3,
+        7
+      ],
+      "odd_kernel": 30,
+      "even_dimension": 44,
+      "even_kernel": 24,
+      "compressed_projection_trace": "2370930166916740270826488811446325837607456043127/321711892273918655706365986446115349796932751025",
+      "stabilizer_rank_lower_bound": 7,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 21,
+      "Q": 21,
+      "dimension": 81,
+      "rank": 21,
+      "kernel": 60,
+      "rank_upper_bound": 22,
+      "multiplicities": [
+        4,
+        4,
+        7
+      ],
+      "odd_kernel": 33,
+      "even_dimension": 48,
+      "even_kernel": 27,
+      "compressed_projection_trace": "256241066342698088501976750972420342514206538447479/32668034220785313908739329546756127324645934558225",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 22,
+      "Q": 22,
+      "dimension": 89,
+      "rank": 22,
+      "kernel": 67,
+      "rank_upper_bound": 23,
+      "multiplicities": [
+        4,
+        3,
+        8
+      ],
+      "odd_kernel": 37,
+      "even_dimension": 52,
+      "even_kernel": 30,
+      "compressed_projection_trace": "260652602608446464110950294367030594697236951841131791/32270859699469450355427814540161355460856818195964475",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 23,
+      "Q": 23,
+      "dimension": 96,
+      "rank": 23,
+      "kernel": 73,
+      "rank_upper_bound": 24,
+      "multiplicities": [
+        4,
+        4,
+        8
+      ],
+      "odd_kernel": 40,
+      "even_dimension": 56,
+      "even_kernel": 33,
+      "compressed_projection_trace": "1027098656300422650370561297965183855816387471199828343/122629266857983911350625695252613150751255909144665005",
+      "stabilizer_rank_lower_bound": 8,
+      "balanced_rank_theorem_verified_on_block": true
+    },
+    {
+      "Delta": "7/3",
+      "P": 24,
+      "Q": 24,
+      "dimension": 105,
+      "rank": 24,
+      "kernel": 81,
+      "rank_upper_bound": 25,
+      "multiplicities": [
+        5,
+        4,
+        8
+      ],
+      "odd_kernel": 44,
+      "even_dimension": 61,
+      "even_kernel": 37,
+      "compressed_projection_trace": "2456163832288312504481229473799626023771842196836500578301/277805342195316409785228679622782097941697187644970181225",
+      "stabilizer_rank_lower_bound": 9,
+      "balanced_rank_theorem_verified_on_block": true
+    }
+  ],
+  "rank_dependencies_on_sampled_Delta": [],
+  "finite_mixed_rank_conjecture_mismatches": [],
+  "mixed_conjecture_not_theorem": "For P>Q: rank=min(d3(P,Q),Q+1-1_{P-Q=1}).",
+  "balanced_rank_theorem": "For N=3, all Delta>1, P=Q>=1: rank=P; rank(0,0)=1. Proof: irreducible-tridiagonal Casimir and polynomial band argument, structural comparison.md section 5.2."
+}

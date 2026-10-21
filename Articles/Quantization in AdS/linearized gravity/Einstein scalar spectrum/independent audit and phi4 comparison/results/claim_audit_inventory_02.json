@@ -1,0 +1,1041 @@
+{
+  "scope": "All 74 registered claims audited; theorem statements, proof repairs, conditional applications and finite checks are explicitly distinguished. Not 74 independent reconstructions of every calculation.",
+  "source_sha256": "8f92a102df6a5835f8a7282eff50419760e4dbfa923c5a2bd733c0787e8e0537",
+  "counts": {
+    "PHY": 14,
+    "FIN": 5,
+    "EX": 9,
+    "CL": 11,
+    "SC": 17,
+    "ST": 11,
+    "UN": 7
+  },
+  "claims": [
+    {
+      "id": "PHY-01",
+      "title": "Complete-block OFPT and normal-form identity",
+      "author_status_not_our_verdict": "proved on the stated canonical regulated/formal domain",
+      "dependency_ids_as_registered": [
+        "PHY-13"
+      ],
+      "first_review_status": "条件论证＋有限代数复现",
+      "first_review_scope": "完整简并投影与同一 canonical chart 是必要输入；未独立构造所有重力接触顶角。",
+      "this_review_status": "完整块OFPT／正常形恒等式成立",
+      "scope_note": "同一canonical chart、完整简并投影与合法complement inverse；原接触项不能省。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-02",
+      "title": "Scalar branch closure and all-label number conservation",
+      "author_status_not_our_verdict": "proved at order G for fixed finite free-energy labels",
+      "dependency_ids_as_registered": [
+        "PHY-01"
+      ],
+      "first_review_status": "新增敏感例通过；全块独立验证未完成",
+      "first_review_scope": "非圆对称1→3的约束/边界项非零且精确相消；双边界引力子混合仍依赖文中Ward论证。",
+      "this_review_status": "完整quartic Ward证明核完；最低完整混合块双重独立计算为零",
+      "scope_note": "全扇区结论来自Ward证明；一个混合例本身不证明全扇区。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-03",
+      "title": "Unique two-body lift",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-02",
+        "PHY-08"
+      ],
+      "first_review_status": "给定封闭性后成立",
+      "first_review_scope": "正常序四次、保粒子数、同一自由标量表示推出唯一二体lift；不能逆向证明封闭。",
+      "this_review_status": "给定封闭性与正常序减除，唯一二体lift成立",
+      "scope_note": "不逆向用pair lift证明封闭。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-04",
+      "title": "Paired canonical response and conditional covariant bridge",
+      "author_status_not_our_verdict": "canonical graph proved; covariant identification proved under explicit existence and endpoint hypotheses",
+      "dependency_ids_as_registered": [
+        "PHY-13",
+        "PHY-01"
+      ],
+      "first_review_status": "条件性桥梁，不能删去域条件",
+      "first_review_scope": "保留共同Hessian域、lapse/shift重建与时间端点条件；非无条件连续逆算符定理。",
+      "this_review_status": "条件性协变桥梁成立",
+      "scope_note": "共同Hessian域、lapse/shift重建与B(T)/T→0不能删；未建无条件连续逆算符。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-05",
+      "title": "Prescribed Einstein all-label pair kernel",
+      "author_status_not_our_verdict": "closed form proved on the declared matching source domain; independently checked against canonical finite evaluations",
+      "dependency_ids_as_registered": [
+        "PHY-04",
+        "PHY-07",
+        "PHY-13"
+      ],
+      "first_review_status": "闭式及新独立有限证据相符；全指标物理接口仍有条件",
+      "first_review_scope": "新的angular矩阵通过；未另完成从canonical有限和到三分支闭式的全指标求和证明。",
+      "this_review_status": "声明的匹配响应域内，全指标推导成立",
+      "scope_note": "all-J canonical calibration、动力学Casimir递推与唯一性、显式annihilation；不要求额外Casimir-free重算。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-06",
+      "title": "Positive oriented residual and exact pair support",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05"
+      ],
+      "first_review_status": "解析支撑审查＋独立精确扫描通过",
+      "first_review_scope": "5个质量、k,l≤14；正性用于共同核，重叠pair投影不要求可交换。",
+      "this_review_status": "全指标支撑与正性证书支持",
+      "scope_note": "正性不等于相交pair投影可交换。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-07",
+      "title": "Constructive direct canonical finite K4 evaluation",
+      "author_status_not_our_verdict": "proved finite canonical algorithm independent of the optional covariant response bridge",
+      "dependency_ids_as_registered": [
+        "PHY-13",
+        "PHY-01"
+      ],
+      "first_review_status": "直接有限构造有新增独立验证",
+      "first_review_scope": "20个signed sources自行求解并查ODE/边界；未导入目标gamma或原engine。",
+      "this_review_status": "直接有限约束构造及新增source级计算支持",
+      "scope_note": "有限canonical构造独立于借用闭式pair值；未逐一枚举所有有限输入。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-08",
+      "title": "One-body quantum subtraction with fixed physical gap",
+      "author_status_not_our_verdict": "analytic proof retained in the stipulated prescription; original infinite-sum certificates are not reported as newly rerun",
+      "dependency_ids_as_registered": [
+        "PHY-01",
+        "PHY-13"
+      ],
+      "first_review_status": "既定处方内有实质新增支持",
+      "first_review_scope": "泛型端点/局域匹配精确恒等式与激发态热迹；不证明调节器无关性。",
+      "this_review_status": "指定gap-fixed减除处方内成立；沿用先前独立检查",
+      "scope_note": "本轮没有重跑并重复计数旧onebody检查；非调节器无关性定理。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md",
+      "additional_evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/one-body subtraction audit.md"
+    },
+    {
+      "id": "PHY-09",
+      "title": "Formal stationary tree transfer and observable transport",
+      "author_status_not_our_verdict": "proved formal ancillary theorem under exact hypotheses",
+      "dependency_ids_as_registered": [],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "形式stationary-tree及observable-transfer证明成立",
+      "scope_note": "reciprocal inverse、过滤递归、保留kernel equations和完成的端点；不包括loop等价。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-10",
+      "title": "Projected resolvent, eigenkernel and state norm",
+      "author_status_not_our_verdict": "proved exact ancillary operator identity",
+      "dependency_ids_as_registered": [],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "projected resolvent／eigenkernel／物理范数证明成立",
+      "scope_note": "逆算符所在域与真共振必须区分；norm为1−∂E K。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-11",
+      "title": "All-order leading Weyl-symbol normal form",
+      "author_status_not_our_verdict": "proved formal ancillary leading-symbol theorem",
+      "dependency_ids_as_registered": [],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "全阶leading Weyl symbol形式归纳成立",
+      "scope_note": "非全部量子symbol或固定occupation谱等价，非收敛定理。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-12",
+      "title": "Conditional next-order Ward repair and remainder strength",
+      "author_status_not_our_verdict": "proved conditional ancillary result; physical extra hypotheses remain unestablished",
+      "dependency_ids_as_registered": [
+        "PHY-02"
+      ],
+      "first_review_status": "保持原条件性结论",
+      "first_review_scope": "不可据本轮一阶计算把o(G)提升到O(G²)。",
+      "this_review_status": "所列附加条件下成立；实际AdS的更强输入尚未完成",
+      "scope_note": "完整量子commutant、next-order charge、regulator removal未证明；不能提升为无条件O(G²)。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-13",
+      "title": "Action, free normalization and canonical constraint quartic",
+      "author_status_not_our_verdict": "proved canonical construction",
+      "dependency_ids_as_registered": [],
+      "first_review_status": "约定核对与selected source-level检查",
+      "first_review_scope": "已读CPS锚点；未声称独立重做全部作用量/角点变分。",
+      "this_review_status": "作用量／自由约定及给定约束展开审查支持",
+      "scope_note": "沿用CPS锚点；多项接触已直接重构，不声称独立重做所有非线性角点变分。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "PHY-14",
+      "title": "Conditional gauge accessibility and an off-shell boundary obstruction",
+      "author_status_not_our_verdict": "conditional constructive gauge theorem; exact local algebraic obstructions proved",
+      "dependency_ids_as_registered": [
+        "PHY-13"
+      ],
+      "first_review_status": "仅按明确边界类别理解",
+      "first_review_scope": "有限时间gauge可达不推出时间端点消失；例外质量不是物理谱发散。",
+      "this_review_status": "条件性有限时间可达与off-shell log障碍成立",
+      "scope_note": "依赖所列平滑反射域；不推出无限时间endpoint界。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/full block closure audit.md"
+    },
+    {
+      "id": "FIN-01",
+      "title": "Complete finite primary-space construction",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-02",
+        "PHY-03",
+        "PHY-05"
+      ],
+      "first_review_status": "条件于pair input的有限表示论成立；新增独立实现",
+      "first_review_scope": "Casimir谱＋同时S3平均；物理内积与descendant组织分开。",
+      "this_review_status": "所给pair input下，有限构造证明成立",
+      "scope_note": "物理Gram与实际Bose投影；有限矩阵精确解不等于统一根式。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/finite construction proof audit.md"
+    },
+    {
+      "id": "FIN-02",
+      "title": "Exact algebraic roots, multiplicities, specialization, and physical projectors",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "PHY-05"
+      ],
+      "first_review_status": "有限线性代数原则成立；复现和小块交叉通过",
+      "first_review_scope": "特殊质量先代入再取rank/minimal polynomial；不要求根式表达。",
+      "this_review_status": "所给pair input下，有限构造证明成立",
+      "scope_note": "物理Gram与实际Bose投影；有限矩阵精确解不等于统一根式。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/finite construction proof audit.md"
+    },
+    {
+      "id": "FIN-03",
+      "title": "Positive-image Gram compression with exact physical state correspondence",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "PHY-06"
+      ],
+      "first_review_status": "正像Gram压缩原则审查通过",
+      "first_review_scope": "A=TT†与T†T仅非零谱及重数相同；不能混淆辅助nullity。",
+      "this_review_status": "所给pair input下，有限构造证明成立",
+      "scope_note": "物理Gram与实际Bose投影；有限矩阵精确解不等于统一根式。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/finite construction proof audit.md"
+    },
+    {
+      "id": "FIN-04",
+      "title": "Completed all-particle Racah and diagonal-Bose compiler",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "FIN-03",
+        "PHY-06"
+      ],
+      "first_review_status": "原编译器复现通过；未独立重写全N编译器",
+      "first_review_scope": "新增N3实现没有导入其Racah表。",
+      "this_review_status": "CG/Racah实际intertwiner与coset证明成立",
+      "scope_note": "未另重写全套N编译器；不把dense-arithmetic计数说成全输入bit复杂度。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/finite construction proof audit.md"
+    },
+    {
+      "id": "FIN-05",
+      "title": "Complete descendants and exact finite energy-shell assembly",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-02",
+        "FIN-01",
+        "FIN-02"
+      ],
+      "first_review_status": "数学装配条件性成立",
+      "first_review_scope": "完整scalar shell仍以PHY02封闭性与所选dressed branch为物理前提。",
+      "this_review_status": "完整descendant及shell装配证明成立",
+      "scope_note": "跨N直和用PHY02正常形保粒子数；不反推封闭。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/finite construction proof audit.md"
+    },
+    {
+      "id": "EX-01",
+      "title": "Complete logarithmic-symbol classification of the oriented residual kernel",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-06",
+        "FIN-01"
+      ],
+      "first_review_status": "解析证明关键步骤审查＋156个独立有限块通过",
+      "first_review_scope": "K.1–K.4的物理双线性tensor–Hom、全部理想幂及逐素因子去极点均不可省略。",
+      "this_review_status": "全N全指标logarithmic-symbol证明独立核完",
+      "scope_note": "物理tensor–Hom、全部理想幂、height-one局部正则与UFD去极点均审查；不只依赖扫描。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-02",
+      "title": "Exact positive ranks and unaveraged fixed-right-degree asymptotics",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "EX-01",
+        "FIN-03"
+      ],
+      "first_review_status": "计数推导审查＋独立N3扫描通过",
+      "first_review_scope": "无限渐近的误差阶仍依赖根单位极点分析，不由扫描单独证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-03",
+      "title": "Affine pair-support eigenstate lemma",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "PHY-03"
+      ],
+      "first_review_status": "仿射Casimir lemma成立",
+      "first_review_scope": "给定所有实际支撑通道上的仿射性，不是仅比较两个期望值。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-04",
+      "title": "Universal finite-support line, critical doublet, and chiral projected states",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "EX-03",
+        "FIN-01",
+        "FIN-02",
+        "PHY-05"
+      ],
+      "first_review_status": "有限例及原回归通过",
+      "first_review_scope": "特殊质量的完整简并本征空间按specialize-first处理；未独立重建全部族。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-05",
+      "title": "Complete finite-N affine minimum multiplicities from root-power inverse systems",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "EX-03",
+        "EX-04",
+        "FIN-01",
+        "PHY-05"
+      ],
+      "first_review_status": "原验证复现；附录L的关键代数论证审读",
+      "first_review_scope": "不能将Q≥2的intersection theorem自动升级成eigenspace theorem。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-06",
+      "title": "Exact top coefficient, global fixed-N gap, and equality classification",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05",
+        "FIN-01",
+        "FIN-05"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-07",
+      "title": "Physical Dirichlet dictionary, chiral Markov representation, and a scoped nonchiral obstruction",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05",
+        "FIN-01",
+        "EX-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-08",
+      "title": "Specified labelled Kohno-residue obstruction and limited related algebraic failures",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05",
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定自伴Einstein pair input；各命题的核、gap与代数范围分别保留。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "EX-09",
+      "title": "A physical finite quintic has Galois group S5",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01",
+        "FIN-02"
+      ],
+      "first_review_status": "原有限数据保留；本轮未重算Galois群",
+      "first_review_scope": "原完整portable suite也未宣称重跑全部历史Galois证书。",
+      "this_review_status": "物理五次因子重新构造；S5另有fresh模素数证书",
+      "scope_note": "排除统一根式，不排除所有可积概念。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "CL-01",
+      "title": "Fixed-Q positive atomic law, positive rank and descendant mixtures",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "PHY-06",
+        "FIN-03",
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-02",
+      "title": "Overlap compactness and partition-join multiplication",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "PHY-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-03",
+      "title": "Connected Möbius functional calculus and physical partition quotient",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-02",
+        "FIN-03"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-04",
+      "title": "Recursive essential spectrum and complete Bose-parity Hausdorff limit",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-02",
+        "CL-03",
+        "PHY-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-05",
+      "title": "Finite Cantor–Bendixson depth",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-04",
+        "PHY-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-06",
+      "title": "Exact eventual projector ranks at regular binary thresholds",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-03",
+        "CL-04",
+        "CL-02"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Q,Δ；ordered baseline与Bose parity不可省略。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-07",
+      "title": "Singleton inheritance, eventual simple chiral maximum, and atomic compactness obstruction",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-04",
+        "CL-06",
+        "PHY-05"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "主定理支持；附属短证明需明确比较算符自伴",
+      "scope_note": "若允许nonnormal比较算符，报告另给Riesz-projector修复，未找到定理反例。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-08",
+      "title": "Four-body refined positive spectrum and exact auxiliary nullity",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "FIN-03",
+        "EX-01",
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "有限截面／exact-nullity证明支持",
+      "scope_note": "依赖EX01的K3、K4，已由独立审查闭合。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-09",
+      "title": "Complex locally uniform branch-free Fredholm limit",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-08"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "复Fredholm局部一致收敛证明支持",
+      "scope_note": "正常Fredholm收敛只用trace-norm；显式零次幂／pseudodeterminant解释另依赖EX01。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-10",
+      "title": "Finite Gamma representation for integer Δ and full nonchiral specialization",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-09"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "Gamma归约的符号恒等式支持",
+      "scope_note": "250/350bit数值一致是数值支持，不冒称区间认证。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "CL-11",
+      "title": "Certified smallest positive four-body limit at Δ=2,Q=0",
+      "author_status_not_our_verdict": "proved, subject to explicitly inherited finite-theory hypotheses",
+      "dependency_ids_as_registered": [
+        "CL-08"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "最小正四体极限证明与有限／尾部证书支持",
+      "scope_note": "exact-nullity输入来自已审EX01；未把有限截断单独当无限极限。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/cluster full proof audit.md"
+    },
+    {
+      "id": "SC-01",
+      "title": "Grassmannian spectral law, support and edges",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05",
+        "PHY-06",
+        "FIN-01"
+      ],
+      "first_review_status": "主张和必要假设审读；原检查复现",
+      "first_review_scope": "本轮未独立重建coherent trace/metric transfer的全证明。",
+      "this_review_status": "完整谱律论证支持；pair-word解释需改成compressed trace",
+      "scope_note": "单pair word一般不保Bose range；|Tr(ΠT)|≤d||T||修复所需估计。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-02",
+      "title": "Exact kernel fraction and positive-only empirical law",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-01",
+        "EX-01"
+      ],
+      "first_review_status": "计数与零概念区别审查",
+      "first_review_scope": "exact kernel、P²尺度zero atom、strictly positive soft modes不可混同。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-03",
+      "title": "Strict excess atom: all three-particle ratios and every N at small ratio",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-01",
+        "SC-02"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-04",
+      "title": "Exponential positive window with explicit density loss",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-01",
+        "SC-02",
+        "SC-12",
+        "SC-13",
+        "SC-14"
+      ],
+      "first_review_status": "原验证复现；本轮不宣布独立全证明",
+      "first_review_scope": "真正证明须有all-vector Rayleigh界，不能只看若干coherent expectations。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-05",
+      "title": "Subexponential subquadratic threshold counting",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-02",
+        "SC-04"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-06",
+      "title": "All ordered positive logarithmic spectra at two masses",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-12",
+        "SC-13"
+      ],
+      "first_review_status": "保留两侧多项式权界假设",
+      "first_review_scope": "同support本身不决定软谱的对数速率。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-07",
+      "title": "Three-particle moving boundary layer",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-04",
+        "SC-17",
+        "SC-19"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-08",
+      "title": "Precisely delimited balanced compression and analytic-charge obstructions",
+      "author_status_not_our_verdict": "proved_obstruction",
+      "dependency_ids_as_registered": [
+        "SC-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-09",
+      "title": "Balanced auxiliary Gram Hilbert–Schmidt obstruction",
+      "author_status_not_our_verdict": "proved_obstruction",
+      "dependency_ids_as_registered": [
+        "SC-01",
+        "FIN-03",
+        "PHY-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-11",
+      "title": "Exact harmonic coherent normalization and true Bose group",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "harmonic／Bose归一化成立；norm措辞须修",
+      "scope_note": "4^P是平方范数倍数；范数倍数为2^P。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-12",
+      "title": "Common collision flags and restricted Riesz transport",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-13",
+      "title": "Uniform Einstein nonzero residual bounds",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-05",
+        "PHY-06",
+        "FIN-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-14",
+      "title": "Concentration operator dimension and all-vector Rayleigh bound",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-11"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "all-vector Rayleigh估计成立；吸收多项式句子符号须修",
+      "scope_note": "prefactor≤exp(+Pδ²/32)，合并原指数后才是exp(−Pδ²/32)。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-15",
+      "title": "Closed moments and regularized logarithmic determinant",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "固定正regularizer的矩／logdet结论成立",
+      "scope_note": "不由弱收敛推出逆矩或去正则化logdet。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-16",
+      "title": "Strict finite positive-eigenvalue inertia certificates",
+      "author_status_not_our_verdict": "exact_finite_certificate",
+      "dependency_ids_as_registered": [
+        "FIN-03"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "两有限块全部六个strict inertia三元组独立精确重现",
+      "scope_note": "不是浮点特征值比较。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-17",
+      "title": "Three-particle atom series and controlled endpoint",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-01",
+        "SC-02"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "SC-19",
+      "title": "Uniform moving-region trace and finite zero-count inequalities",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "SC-11",
+        "EX-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定N,Δ与明确极限顺序；精确核输入EX01已由另一审查核完。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/semiclassical full proof audit.md"
+    },
+    {
+      "id": "ST-01",
+      "title": "Exact stable affine pencil and averaged occupation normalization",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "PHY-03"
+      ],
+      "first_review_status": "二体占据计数解析审查通过",
+      "first_review_scope": "不依赖引力或正性；creation-product不是固定N波函数逐点乘积。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-02",
+      "title": "Analytic Hermitian N^-1/2 theorem",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01"
+      ],
+      "first_review_status": "正交化后Rellich论证审查通过",
+      "first_review_scope": "物理Gram奇异缩放先处理；简单leading eigenvalue才自动有整数1/N展开。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-03",
+      "title": "Actual leading Jordan resonance and exact (4,1) branches",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01",
+        "PHY-05"
+      ],
+      "first_review_status": "原显式简并例与回归通过",
+      "first_review_scope": "不能仅凭leading coordinate Jordan块断言分数幂，需其reduced eigenvalues。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-04",
+      "title": "All-bidegree generic linearization",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-05",
+      "title": "Einstein chiral low algebra and oblique retraction",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01",
+        "UN-03"
+      ],
+      "first_review_status": "假设/推导审读；原验证复现",
+      "first_review_scope": "可用phi4的正仿射缺陷检验普适性，不是引力独有。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-06",
+      "title": "Einstein Gegenbauer first low operator",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-05",
+        "ST-10"
+      ],
+      "first_review_status": "原验证复现；phi4系数独立代入",
+      "first_review_scope": "仅低通道缺陷控制first low operator；完整全层展开未另重做。",
+      "this_review_status": "加权齐次限定下成立；原literal唯一性措辞不足",
+      "scope_note": "b=1时y+f(x)同样monic且被J∂y²湮灭；须限定weight3b或按有限展开定义。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-07",
+      "title": "Convergent integer expansions only for the isolated chiral low cluster",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-05",
+        "ST-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-08",
+      "title": "Exact third-order C2 and all first energy corrections",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-05",
+        "ST-06",
+        "ST-10"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-09",
+      "title": "Protected (3,1) discriminant-square doublet",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "固定激发块；先处理奇异物理Gram，再用解析Hermitian摄动。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-10",
+      "title": "Exact chiral character and persistent cusp quotient",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "字符恒等式成立；effective-low表述保留额外条件",
+      "scope_note": "有效低pencil需指定孤立semisimple cluster与graph gauge。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "ST-11",
+      "title": "Fixed-degree oscillator contraction",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-06"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "first-large-N-layer收缩成立；量词需明确",
+      "scope_note": "不能按固定有限N的全能量gap理解；N=P=6已有精确反例。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-01",
+      "title": "Common-support kernel and principal-symbol class",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "EX-01",
+        "SC-01"
+      ],
+      "first_review_status": "正支撑论证成立；明确非局域实现定理",
+      "first_review_scope": "same support与same principal growth是两项不同条件。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-02",
+      "title": "Compactness does not imply finite Schatten summability",
+      "author_status_not_our_verdict": "proved_counterexample",
+      "dependency_ids_as_registered": [
+        "CL-03"
+      ],
+      "first_review_status": "反例解析成立",
+      "first_review_scope": "c0 compact tails不推出任何有限Schatten类。",
+      "this_review_status": "在内部relative-channel multiplicity空间上成立",
+      "scope_note": "不是带无限global descendants的完整pair Hilbert空间上的紧性。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-03",
+      "title": "First positive affine defect theorem",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-01",
+        "ST-10"
+      ],
+      "first_review_status": "假设/关键推导审查；物理对照可应用",
+      "first_review_scope": "所有even affine defects≥0与first positive channel不可省略。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-04",
+      "title": "General two-generator coefficient from channels four and six",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "UN-03",
+        "ST-10"
+      ],
+      "first_review_status": "有限determining jets复现＋phi4符号代入",
+      "first_review_scope": "operator order/ideal argument先于六个jets，不能只以拟合六点当证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-05",
+      "title": "Same support and symbol with four low generators",
+      "author_status_not_our_verdict": "proved_counterexample",
+      "dependency_ids_as_registered": [
+        "UN-01",
+        "UN-03"
+      ],
+      "first_review_status": "有新增局域形式形变实例",
+      "first_review_scope": "Einstein+attractive phi4仅是微扰局域实现；不能声称稳定非微扰模型。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-06",
+      "title": "Signed defects preserve the same leading kernel",
+      "author_status_not_our_verdict": "proved_counterexample",
+      "dependency_ids_as_registered": [
+        "ST-01",
+        "ST-10"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    },
+    {
+      "id": "UN-07",
+      "title": "Minimal residue class for generic leading linearization",
+      "author_status_not_our_verdict": "proved",
+      "dependency_ids_as_registered": [
+        "ST-04"
+      ],
+      "first_review_status": "原套件相关检查已复现；本轮未完成独立全证明",
+      "first_review_scope": "不得把执行成功升级为本命题全部量词已获独立证明。",
+      "this_review_status": "新独立全证明审查支持",
+      "scope_note": "逐项保留support、compactness及two-sided weight等明确假设。",
+      "evidence_report": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/exact stable full proof audit.md"
+    }
+  ]
+}

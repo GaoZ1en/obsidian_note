@@ -1,0 +1,5 @@
+<|"RawParts_p2_etaP_exchange" -> {(3067 - 4440*Log[2])/(180*Pi), (4*(-29 + 42*Log[2]))/(9*Pi), 
+   (-83 + 120*Log[2])/(20*Pi)}, "TotalRaw" -> 0, "ExactAllRadialSum" -> (-83 + 120*Log[2])/(20*Pi), 
+ "SpectralMinusLocalResidual" -> 0, "n0Contribution" -> 3/(350*Pi), 
+ "RadialTailAfterN0" -> (-2911 + 4200*Log[2])/(700*Pi), "ConstraintResiduals" -> {0, 0, 0}, 
+ "TotalDerivativeResidual" -> 0, "PrimitiveEndpoints" -> {0, 0}, "Messages" -> {}|>

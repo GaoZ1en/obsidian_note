@@ -1,0 +1,401 @@
+[
+  {
+    "id": "SC-01",
+    "title": "Grassmannian spectral law, support and edges",
+    "precise_statement": "d_N^{-1}Tr f(W_N/P^2)->E f(-8 sum_e min(X_e,r^2Y_e)); residual law is a=8 sum_e(r^2Y_e-X_e)_+. Here X,Y are squared Pluecker coordinates of independent Haar oriented planes. d_N~P^(N-2)Q^(N-2)/(N!((N-2)!)^2). The residual law has full support [0,8r^2], is absolutely continuous away zero, has only zero atom p_N(r)>0 for r<1, and has no atoms for r=1. Extreme residual eigenvalues divided by P^2 tend to 0 and 8r^2.",
+    "assumptions": [
+      "N>=3 fixed",
+      "Delta>1 fixed",
+      "P,Q->infinity",
+      "Q/P->r in (0,1]"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-A"
+    ],
+    "proof_method": "Exact O(P+Q) pair remainder; harmonic tensor resolution; fixed-word traces; polynomial approximation; analytic chambers.",
+    "dependency_ids": [
+      "PHY-05",
+      "PHY-06",
+      "FIN-01"
+    ],
+    "limitations": [
+      "No individual microscopic eigenvalue expansion or uniformity in growing N or Delta."
+    ]
+  },
+  {
+    "id": "SC-02",
+    "title": "Exact kernel fraction and positive-only empirical law",
+    "precise_statement": "kappa_N/d_N->k_N(r)=E_Dir(1,...,1)(1-r sum_(a=1)^(N-1) aT_a)_+^(N-2), with the explicit divided-difference spline in §8.2. The positive-only empirical law tends to (nu_Nr-k_N delta_0)/(1-k_N). Its atom at zero is (p_N-k_N)/(1-k_N).",
+    "assumptions": [
+      "N>=3 fixed",
+      "Delta>1 fixed",
+      "P,Q->infinity",
+      "Q/P->r in (0,1]"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.2"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-B.1"
+    ],
+    "proof_method": "Weighted partition asymptotic with error; simplex Riemann sums; repeated truncated-power integration.",
+    "dependency_ids": [
+      "SC-01",
+      "EX-01"
+    ],
+    "limitations": [
+      "Positive finite eigenvalues can contribute to the limiting zero atom."
+    ]
+  },
+  {
+    "id": "SC-03",
+    "title": "Strict excess atom: all three-particle ratios and every N at small ratio",
+    "precise_statement": "p_3(r)>k_3(r) for every 0<r<1. For every fixed N>=4, p_N-k_N >= c_N r^2 log(1/r)-O_N(r^2), c_N=8(N-2)(N-3)/(pi^2 N(N-1)); liminf z_N^+/(r log(1/r))>=16(N-3)/(pi^2 N^2(N-1)). For N=4, p_4-k_4>=r^2/90 when 0<r<=exp(-23).",
+    "assumptions": [
+      "N fixed",
+      "r is then sent to zero in the N>=4 statement",
+      "Delta>1 fixed"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.2.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §§SC-B.2–3"
+    ],
+    "proof_method": "Three-particle positive series and second-derivative sign argument; star-radius logarithmic intersection term for N>=4.",
+    "dependency_ids": [
+      "SC-01",
+      "SC-02"
+    ],
+    "limitations": [
+      "No all-r strict-excess theorem for N>=4 is claimed."
+    ]
+  },
+  {
+    "id": "SC-04",
+    "title": "Exponential positive window with explicit density loss",
+    "precise_statement": "For fixed 0<r<1 and delta>0, liminf #{0<lambda(A_N)<=exp(-delta^2 P/32)}/d_N >= max(0,p_(N,delta)(r)-k_N(r)). Since p_N-p_(N,delta)<=K_N delta, K_N=choose(N,2)(N-2), c_eta=eta^2/(32K_N^2) gives density at least p_N-k_N-eta below exp(-c_eta P).",
+    "assumptions": [
+      "N>=3 and Delta>1 fixed",
+      "Q/P->r in (0,1)",
+      "delta or eta fixed before P->infinity"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.3"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-C"
+    ],
+    "proof_method": "Exact flags; polynomial metric transport; Hoeffding tails; concentration cutoff; min–max.",
+    "dependency_ids": [
+      "SC-01",
+      "SC-02",
+      "SC-12",
+      "SC-13",
+      "SC-14"
+    ],
+    "limitations": [
+      "No common action, matching exponential lower bound, rate-law existence, or exclusion of superexponential/zero-density families."
+    ]
+  },
+  {
+    "id": "SC-05",
+    "title": "Subexponential subquadratic threshold counting",
+    "precise_statement": "If t_(P,Q)>0, log t=o(P), and t/P^2->0, then #{0<lambda(A_N)<=t}/(d_N-kappa_N)->(p_N-k_N)/(1-k_N). The fraction between any two such windows tends to zero.",
+    "assumptions": [
+      "SC-04 fixed-r regime",
+      "Both conditions on the moving threshold"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.3.1"
+    ],
+    "proof_home": [
+      "semiclassical/chapter8.md §8.3.1 and semiclassical/appendix_sc.md §SC-C"
+    ],
+    "proof_method": "Exponential lower count with arbitrarily small density loss; fixed-window weak-law upper count.",
+    "dependency_ids": [
+      "SC-02",
+      "SC-04"
+    ],
+    "limitations": [
+      "Does not cover windows with log t of order -P or smaller."
+    ]
+  },
+  {
+    "id": "SC-06",
+    "title": "All ordered positive logarithmic spectra at two masses",
+    "precise_statement": "For fixed Delta_1,Delta_2>1, sup_j |P^(-1)log lambda_j^+(Delta_1)-P^(-1)log lambda_j^+(Delta_2)|=O(log P/P), with every positive index included. Any existing empirical rate limit is independent of these fixed masses.",
+    "assumptions": [
+      "N>=3 fixed",
+      "Delta>1 fixed",
+      "P,Q->infinity",
+      "Q/P->r in (0,1]",
+      "Delta_1,Delta_2 independent of P,Q"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.4"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-C.2"
+    ],
+    "proof_method": "Two-sided polynomial comparison with the same auxiliary support operator.",
+    "dependency_ids": [
+      "SC-12",
+      "SC-13"
+    ],
+    "limitations": [
+      "No mass growing with excitation; no proof of rate distribution existence or tightness at +infinity."
+    ]
+  },
+  {
+    "id": "SC-07",
+    "title": "Three-particle moving boundary layer",
+    "precise_statement": "For r=Q/P in [1/2,1), mu=p_3-(1-r)^2/(2r), if mu>=1280/min(P,Q), at least mu d_3/2 positive eigenvalues obey lambda<=96D a_max/(mu m_Pm_Q) exp(-P mu^2/2304). If Pmu^2/log P->infinity, replace by exp(-Pmu^2/4608). For 1-r~cP^-beta, 0<beta<=1/4, the count and exponent constants are c^2 beta^2/(8pi^2) and c^4 beta^4/(2048pi^4).",
+    "assumptions": [
+      "N=3",
+      "Delta>1 fixed",
+      "Moving r obeys the displayed finite or asymptotic hypotheses"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.5"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-D"
+    ],
+    "proof_method": "Uniform cubic-rotation trace bound; finite triangle count; concentration cutoff with shrinking margin.",
+    "dependency_ids": [
+      "SC-04",
+      "SC-17",
+      "SC-19"
+    ],
+    "limitations": [
+      "No optimal boundary-layer claim; beta>1/4 and exact-balance microscopic scales remain open."
+    ]
+  },
+  {
+    "id": "SC-08",
+    "title": "Precisely delimited balanced compression and analytic-charge obstructions",
+    "precise_statement": "(i) At r=1 no uniformly bounded finite-atom Hermitian approximation to A_N/P^2 can differ by rank o(d_N) or normalized trace norm o(1), with bounded spectra. (ii) On S^2 x rS^2, r>0, every globally real-analytic F commuting with -8 sum_i min(x_i^2,z_i^2) on every strict comparison chamber is constant.",
+    "assumptions": [
+      "Physical Hermitian metric for (i)",
+      "Uniform bound on number of atoms and spectra for (i)",
+      "Global real analyticity and all strict chambers for (ii)"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.7"
+    ],
+    "proof_home": [
+      "semiclassical/chapter8.md §8.7 and semiclassical/appendix_sc.md §SC-E"
+    ],
+    "proof_method": "Rank/trace-norm empirical bounds; analytic continuation plus Poisson-Jacobian spanning.",
+    "dependency_ids": [
+      "SC-01"
+    ],
+    "limitations": [
+      "Neither statement is a general nonintegrability theorem."
+    ]
+  },
+  {
+    "id": "SC-09",
+    "title": "Balanced auxiliary Gram Hilbert–Schmidt obstruction",
+    "precise_statement": "For N>=4 fixed and P=Q=L, d_aux/d_phys->choose(N,2)/2 and liminf ||T_norm-I||_HS^2/d_aux >=1-2/choose(N,2)>0. The balanced physical residual has no exact baseline kernel.",
+    "assumptions": [
+      "N>=4 fixed",
+      "Delta>1 fixed",
+      "P=Q=L->infinity",
+      "The original identity Gram comparator"
+    ],
+    "main_home": [
+      "semiclassical/appendix_sc.md §SC-F"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-F"
+    ],
+    "proof_method": "Molien leading term, half-triangle/parity count, exact auxiliary -1 eigenvalues.",
+    "dependency_ids": [
+      "SC-01",
+      "FIN-03",
+      "PHY-06"
+    ],
+    "limitations": [
+      "Changing comparator or removing dependencies is not ruled out."
+    ]
+  },
+  {
+    "id": "SC-11",
+    "title": "Exact harmonic coherent normalization and true Bose group",
+    "precise_statement": "At d0=1/2, z^alpha maps to y^(2alpha)/prod(1/2)_alpha; primaries are coordinate-even harmonics of degree 2P, C_ij=J_ij^2/4-1/4, and normalized symbol C/P^2 is B_ij^2. The group has size 2^(2N)N! and exactly four leading central sign pairs.",
+    "assumptions": [
+      "N>=3",
+      "Fixed-word/coherent trace limit only before polynomial approximation"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §§SC-A.2–3"
+    ],
+    "proof_method": "Schur resolution and distinct tensor-slot expansion; dominated convergence for noncentral group elements.",
+    "dependency_ids": [
+      "FIN-01"
+    ],
+    "limitations": []
+  },
+  {
+    "id": "SC-12",
+    "title": "Common collision flags and restricted Riesz transport",
+    "precise_statement": "F_e(K)=V_P intersect delta_e^K C[z] equals the sum of pair channels k>=K for every d>0. Z_e(d)=sum_l F_L(l+3) tensor F_R(l+1)^perp_d. The one Bose-equivariant map I tensor M_Q(d)^(-1) sends every Z_e(1/2) to Z_e(d); its squared norm and distance distortions lie between m_P and m_Q^-1.",
+    "assumptions": [
+      "Positive discrete representation d>0 for flags",
+      "d>1 for the displayed physical polynomial bounds"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §§8.3–8.4"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §§SC-C.1–2"
+    ],
+    "proof_method": "Triangular differential Casimir and orthogonal-complement transport.",
+    "dependency_ids": [
+      "FIN-01"
+    ],
+    "limitations": []
+  },
+  {
+    "id": "SC-13",
+    "title": "Uniform Einstein nonzero residual bounds",
+    "precise_statement": "Every nonzero allowed oriented pair residual satisfies (2Delta+3)^(-3)<=a_kl<=20(Delta+Q)^2. Together with m_L=e^(-2N(Delta-1/2))2^(-N(Delta-1/2))(L+1)^(-N(Delta-1/2)), this yields the two-sided whole-spectrum comparison in §8.4.",
+    "assumptions": [
+      "Delta>1",
+      "l<=Q",
+      "Allowed even pair parity",
+      "Nonzero bad channels only"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.4"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-C.2"
+    ],
+    "proof_method": "Positive-coefficient polynomial certificate and elementary denominator bounds.",
+    "dependency_ids": [
+      "PHY-05",
+      "PHY-06",
+      "FIN-01"
+    ],
+    "limitations": []
+  },
+  {
+    "id": "SC-14",
+    "title": "Concentration operator dimension and all-vector Rayleigh bound",
+    "precise_statement": "For fixed strict chamber margin delta, C_Omega satisfies 0<=C<=I, Tr C/d->vol Omega, rank 1_[tau,1](C)>=(Tr C-tau d)/(1-tau), and every unit v in its range has <v,B0v><=4 choose(N,2)D/tau exp(-Pdelta^2/16).",
+    "assumptions": [
+      "delta,tau>0 fixed before P->infinity",
+      "Q/P approaches fixed r"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.3"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-C.3"
+    ],
+    "proof_method": "Bounded independent tensor-slot Hoeffding inequality; spectral cutoff and positive trace comparison.",
+    "dependency_ids": [
+      "SC-11"
+    ],
+    "limitations": []
+  },
+  {
+    "id": "SC-15",
+    "title": "Closed moments and regularized logarithmic determinant",
+    "precise_statement": "|B12|~Beta(1,N-2); E h_Nr=-8r^2 2F1(2,2-N;N+1;r). At r=1, means of W/P^2 and A/P^2 are -4N/(2N-3) and 12(N-2)/(2N-3). For fixed s>0, d^-1 log det(sI+A/P^2)->E log(s+a_Nr).",
+    "assumptions": [
+      "N>=3 fixed",
+      "Delta>1 fixed",
+      "P,Q->infinity",
+      "Q/P->r in (0,1]",
+      "s>0 fixed for the logarithmic observable"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.1.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-A.5"
+    ],
+    "proof_method": "Star-radius product moments and beta integral; continuous functional calculus.",
+    "dependency_ids": [
+      "SC-01"
+    ],
+    "limitations": [
+      "No inverse moments, s=0 determinant or pseudodeterminant conclusion."
+    ]
+  },
+  {
+    "id": "SC-16",
+    "title": "Strict finite positive-eigenvalue inertia certificates",
+    "precise_statement": "N=3,Delta=2: at (P,Q)=(16,8), (d,kappa,aux,aux_zero)=(26,0,34,8) and 1/5<lambda_min^+<1/3. At (32,16), values are (94,4,98,8) and 1/6000<lambda_min^+<1/5000. The exact inertia triples are printed in §8.6 and validated in the local manifest.",
+    "assumptions": [
+      "The two stated finite blocks",
+      "Rational arithmetic"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.6"
+    ],
+    "proof_home": [
+      "semiclassical/chapter8.md §8.6; checks/soft/independent_soft_certificate.py"
+    ],
+    "proof_method": "Direct polynomial transposition; rational one- and two-pivot congruence inertia.",
+    "dependency_ids": [
+      "FIN-03"
+    ],
+    "limitations": [
+      "Finite examples do not prove asymptotic exponential rates."
+    ]
+  },
+  {
+    "id": "SC-17",
+    "title": "Three-particle atom series and controlled endpoint",
+    "precise_statement": "p3=1-3r/2+3q2, with q2's positive odd-harmonic series and stated geometric tail. p3(1-epsilon)=3/(2pi^2)epsilon^2 log^2(1/epsilon)+O(epsilon^2 log(1/epsilon)). At r=1/2, k3=1/4, p3~0.355012640323455 and positive fraction~0.140016853764606.",
+    "assumptions": [
+      "0<r<1",
+      "Endpoint epsilon->0+"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.2.1"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-B.2"
+    ],
+    "proof_method": "Dirichlet comparison integration; positive series; two derivative identities.",
+    "dependency_ids": [
+      "SC-01",
+      "SC-02"
+    ],
+    "limitations": []
+  },
+  {
+    "id": "SC-19",
+    "title": "Uniform moving-region trace and finite zero-count inequalities",
+    "precise_statement": "For N=3 and every measurable Omega, |Tr C_Omega/d3-vol Omega|<=160/min(P,Q). If P<=2Q, kappa3=#{a,b>=0:2a+3b<=P-Q-12} and kappa3/d3<=(P-Q)^2/(2PQ).",
+    "assumptions": [
+      "N=3",
+      "P,Q positive integers",
+      "P<=2Q for the lattice inequality"
+    ],
+    "main_home": [
+      "semiclassical/chapter8.md §8.5"
+    ],
+    "proof_home": [
+      "semiclassical/appendix_sc.md §SC-D"
+    ],
+    "proof_method": "384 group elements, four centers, cubic rotation integral <=1/P; exact dimension and unit-cell triangle count.",
+    "dependency_ids": [
+      "SC-11",
+      "EX-01"
+    ],
+    "limitations": []
+  }
+]

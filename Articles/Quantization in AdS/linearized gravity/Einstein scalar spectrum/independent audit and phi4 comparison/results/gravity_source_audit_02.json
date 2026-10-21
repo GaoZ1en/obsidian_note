@@ -1,0 +1,1831 @@
+{
+  "status": "passed",
+  "method": "new y-coordinate ADM source solve; no inherited evaluator or closed pair kernel imported",
+  "environment": {
+    "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "sympy": "1.14.0"
+  },
+  "external_Delta": "2",
+  "normalization": "angular factor 1/sqrt(2pi) omitted in radial sources and restored in 32,-8 coefficients",
+  "constraint_matrix": [
+    [
+      "-176/7",
+      "488/35"
+    ],
+    [
+      "488/35",
+      "-4064/175"
+    ]
+  ],
+  "boundary_matrix": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-48/25"
+    ]
+  ],
+  "total_eigenvalues": {
+    "-56/5": 1,
+    "-1368/35": 1
+  },
+  "noncircular_constraint": "2*sqrt(10)/3675",
+  "noncircular_boundary": "-2*sqrt(10)/3675",
+  "source_count": 20,
+  "sources": [
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": -6,
+      "R_a": "y**(-2)",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "4*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 9)/y**8",
+      "Q": "-8*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_y": "-6*I*(2*y + (y - 1)**2 - 3)/y**8",
+      "j_theta": "0",
+      "u": "-(14*y + 7*(y - 1)**2 - 17)/(35*y**6)",
+      "A": "-2*I*(y - 1)*(-70*y + 2*(y - 1)**5 + 14*(y - 1)**4 + 42*(y - 1)**3 + 35*(y - 1)**2 - 35)/(35*y**7*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "3/35",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 6,
+      "R_a": "y**(-2)",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "4*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 9)/y**8",
+      "Q": "-8*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_y": "6*I*(2*y + (y - 1)**2 - 3)/y**8",
+      "j_theta": "0",
+      "u": "-(14*y + 7*(y - 1)**2 - 17)/(35*y**6)",
+      "A": "2*I*(y - 1)*(-70*y + 2*(y - 1)**5 + 14*(y - 1)**4 + 42*(y - 1)**3 + 35*(y - 1)**2 - 35)/(35*y**7*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "3/35",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 0,
+      "R_a": "y**(-2)",
+      "R_b": "y**(-2)",
+      "rho": "2/y**4",
+      "Q": "4/y**6",
+      "j_y": "0",
+      "j_theta": "0",
+      "u": "1/(6*y**2)",
+      "A": "0",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "1/6",
+      "boundary_y2_u": "1/6",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 0,
+      "R_a": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "8*(-2*y + (y - 1)**4 + 4*(y - 1)**3 + 3*(y - 1)**2 + 3)/y**8",
+      "Q": "16*(4*y + 2*(y - 1)**2 - 5)**2/y**10",
+      "j_y": "0",
+      "j_theta": "0",
+      "u": "(98*y + 35*(y - 1)**4 + 140*(y - 1)**3 + 189*(y - 1)**2 - 54)/(105*y**6)",
+      "A": "0",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "44/105",
+      "boundary_y2_u": "1/3",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 2,
+      "R_a": "y**(-2)",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "4*(2*y + (y - 1)**2 - 3)/y**6",
+      "Q": "8*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_y": "2*I/y**6",
+      "j_theta": "0",
+      "u": "-1/(5*y**4)",
+      "A": "2*I*(y - 1)*(20*y + 2*(y - 1)**3 + 10*(y - 1)**2 - 5)/(15*y**5*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "-1/5",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": -2,
+      "R_a": "y**(-2)",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "4*(2*y + (y - 1)**2 - 3)/y**6",
+      "Q": "8*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_y": "-2*I/y**6",
+      "j_theta": "0",
+      "u": "-1/(5*y**4)",
+      "A": "-2*I*(y - 1)*(20*y + 2*(y - 1)**3 + 10*(y - 1)**2 - 5)/(15*y**5*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "-1/5",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 6,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "2*(-12*y + 2*(y - 1)**4 + 8*(y - 1)**3 + 2*(y - 1)**2 + 13)/y**8",
+      "Q": "-18*(y - 1)*(y + 1)/y**8",
+      "j_y": "3*I*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_theta": "0",
+      "u": "-(28*y + 14*(y - 1)**2 - 29)/(70*y**6)",
+      "A": "I*(y - 1)*(14*y + 2*(y - 1)**5 + 14*(y - 1)**4 + 42*(y - 1)**3 + 56*(y - 1)**2 - 35)/(7*y**7*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "1/70",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 1,
+      "omega_sum": 1,
+      "R_a": "y**(-2)",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "2*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**5",
+      "Q": "6*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**7",
+      "j_y": "sqrt(2)*I/(2*y**5*sqrt(y - 1)*sqrt(y + 1))",
+      "j_theta": "-sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/(2*y**6)",
+      "u": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/(12*y**3)",
+      "A": "sqrt(2)*I*sqrt(y - 1)*(100*y + 16*(y - 1)**3 + 65*(y - 1)**2 - 40)/(60*y**4*(y + 1)**(3/2))",
+      "B": "-sqrt(2)*sqrt(y - 1)*(140*y + 15*(y - 1)**4 + 74*(y - 1)**3 + 145*(y - 1)**2 - 80)/(60*y**5*(y + 1)**(3/2))",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "-sqrt(2)/4",
+      "center_u_over_r_to_m": "sqrt(2)/12",
+      "boundary_y2_u": "sqrt(2)/12",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "k": -1,
+      "omega_sum": -1,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "2*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**7",
+      "Q": "12*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**9",
+      "j_y": "-sqrt(2)*I/(y**5*sqrt(y - 1)*sqrt(y + 1))",
+      "j_theta": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "u": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(10*y + 5*(y - 1)**2 - 11)/(60*y**5)",
+      "A": "-sqrt(2)*I*sqrt(y - 1)*(2660*y + 152*(y - 1)**5 + 959*(y - 1)**4 + 2562*(y - 1)**3 + 3605*(y - 1)**2 - 1820)/(420*y**6*(y + 1)**(3/2))",
+      "B": "-sqrt(2)*sqrt(y - 1)*(1540*y + 105*(y - 1)**6 + 688*(y - 1)**5 + 1876*(y - 1)**4 + 2688*(y - 1)**3 + 2275*(y - 1)**2 - 700)/(420*y**7*(y + 1)**(3/2))",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "-sqrt(2)/4",
+      "center_u_over_r_to_m": "-sqrt(2)/60",
+      "boundary_y2_u": "sqrt(2)/12",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "k": -1,
+      "omega_sum": 1,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "y**(-2)",
+      "rho": "2*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**5",
+      "Q": "6*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**7",
+      "j_y": "sqrt(2)*I/(2*y**5*sqrt(y - 1)*sqrt(y + 1))",
+      "j_theta": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/(2*y**6)",
+      "u": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/(12*y**3)",
+      "A": "sqrt(2)*I*sqrt(y - 1)*(100*y + 16*(y - 1)**3 + 65*(y - 1)**2 - 40)/(60*y**4*(y + 1)**(3/2))",
+      "B": "sqrt(2)*sqrt(y - 1)*(140*y + 15*(y - 1)**4 + 74*(y - 1)**3 + 145*(y - 1)**2 - 80)/(60*y**5*(y + 1)**(3/2))",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "sqrt(2)/4",
+      "center_u_over_r_to_m": "sqrt(2)/12",
+      "boundary_y2_u": "sqrt(2)/12",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ],
+      "k": 1,
+      "omega_sum": -1,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "(4*y + 2*(y - 1)**2 - 5)/y**4",
+      "rho": "2*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**7",
+      "Q": "12*sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**9",
+      "j_y": "-sqrt(2)*I/(y**5*sqrt(y - 1)*sqrt(y + 1))",
+      "j_theta": "-sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "u": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)*(10*y + 5*(y - 1)**2 - 11)/(60*y**5)",
+      "A": "-sqrt(2)*I*sqrt(y - 1)*(2660*y + 152*(y - 1)**5 + 959*(y - 1)**4 + 2562*(y - 1)**3 + 3605*(y - 1)**2 - 1820)/(420*y**6*(y + 1)**(3/2))",
+      "B": "sqrt(2)*sqrt(y - 1)*(1540*y + 105*(y - 1)**6 + 688*(y - 1)**5 + 1876*(y - 1)**4 + 2688*(y - 1)**3 + 2275*(y - 1)**2 - 700)/(420*y**7*(y + 1)**(3/2))",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "sqrt(2)/4",
+      "center_u_over_r_to_m": "-sqrt(2)/60",
+      "boundary_y2_u": "sqrt(2)/12",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": -6,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "2*(-12*y + 2*(y - 1)**4 + 8*(y - 1)**3 + 2*(y - 1)**2 + 13)/y**8",
+      "Q": "-18*(y - 1)*(y + 1)/y**8",
+      "j_y": "-3*I*(4*y + 2*(y - 1)**2 - 5)/y**8",
+      "j_theta": "0",
+      "u": "-(28*y + 14*(y - 1)**2 - 29)/(70*y**6)",
+      "A": "-I*(y - 1)*(14*y + 2*(y - 1)**5 + 14*(y - 1)**4 + 42*(y - 1)**3 + 56*(y - 1)**2 - 35)/(7*y**7*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "1/70",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 0,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "2*(4*y + 2*(y - 1)**2 - 3)/y**6",
+      "Q": "18*(y - 1)*(y + 1)/y**8",
+      "j_y": "0",
+      "j_theta": "-3*(y - 1)*(y + 1)/y**7",
+      "u": "(10*y + 5*(y - 1)**2 - 6)/(20*y**4)",
+      "A": "0",
+      "B": "-(y - 1)*(y + 1)*(2*y + (y - 1)**2 + 1)/(4*y**6)",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "-1/4",
+      "center_u_over_r_to_m": "1/5",
+      "boundary_y2_u": "1/4",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 0,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "2*(4*y + 2*(y - 1)**2 - 3)/y**6",
+      "Q": "18*(y - 1)*(y + 1)/y**8",
+      "j_y": "0",
+      "j_theta": "3*(y - 1)*(y + 1)/y**7",
+      "u": "(10*y + 5*(y - 1)**2 - 6)/(20*y**4)",
+      "A": "0",
+      "B": "(y - 1)*(y + 1)*(2*y + (y - 1)**2 + 1)/(4*y**6)",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "1/4",
+      "center_u_over_r_to_m": "1/5",
+      "boundary_y2_u": "1/4",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "k": -2,
+      "omega_sum": 0,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "4*(y - 1)*(y + 1)/y**6",
+      "Q": "18*(y - 1)*(y + 1)/y**8",
+      "j_y": "0",
+      "j_theta": "0",
+      "u": "(y - 1)*(y + 1)/(10*y**4)",
+      "A": "0",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "3/5",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "1/10",
+      "boundary_y2_u": "1/10",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "k": 2,
+      "omega_sum": 0,
+      "R_a": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "R_b": "sqrt(2)*sqrt(y - 1)*sqrt(y + 1)/y**3",
+      "rho": "4*(y - 1)*(y + 1)/y**6",
+      "Q": "18*(y - 1)*(y + 1)/y**8",
+      "j_y": "0",
+      "j_theta": "0",
+      "u": "(y - 1)*(y + 1)/(10*y**4)",
+      "A": "0",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "3/5",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "1/10",
+      "boundary_y2_u": "1/10",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": -4,
+      "R_a": "y**(-2)",
+      "R_b": "y**(-2)",
+      "rho": "2*(2*y + (y - 1)**2 - 3)/y**6",
+      "Q": "-4/y**6",
+      "j_y": "-2*I/y**6",
+      "j_theta": "0",
+      "u": "-1/(10*y**4)",
+      "A": "-2*I*(y - 1)*(20*y + 2*(y - 1)**3 + 10*(y - 1)**2 - 5)/(15*y**5*(y + 1))",
+      "B": "0",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "-1/10",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          2,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "k": 0,
+      "omega_sum": 4,
+      "R_a": "sqrt(3)*(y - 1)*(y + 1)/y**4",
+      "R_b": "sqrt(15)*(y - 1)*(y + 1)*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**8",
+      "rho": "6*sqrt(5)*(y - 1)*(y + 1)*(-12*y + (y - 1)**6 + 6*(y - 1)**5 + 8*(y - 1)**4 - 8*(y - 1)**3 - 22*(y - 1)**2 + 16)/y**12",
+      "Q": "96*sqrt(5)*(y - 1)**2*(y + 1)**2*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**14",
+      "j_y": "6*sqrt(5)*I*(y - 1)*(y + 1)*((y - 1)**4 + 4*(y - 1)**3 + 4*(y - 1)**2 - 2)/y**12",
+      "j_theta": "-18*sqrt(5)*(y - 1)**2*(y + 1)**2*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**13",
+      "u": "-sqrt(5)*(-1012*y + 693*(y - 1)**6 + 4158*(y - 1)**5 + 8910*(y - 1)**4 + 7920*(y - 1)**3 + 1870*(y - 1)**2 + 920)/(2310*y**10)",
+      "A": "2*sqrt(5)*I*(y - 1)**2*(-8470*y + 16*(y - 1)**8 + 176*(y - 1)**7 + 880*(y - 1)**6 + 2255*(y - 1)**5 + 2200*(y - 1)**4 - 2464*(y - 1)**3 - 8624*(y - 1)**2 + 5390)/(385*y**11*(y + 1))",
+      "B": "3*sqrt(5)*(y - 1)**2*(y + 1)**2*(6*y + 3*(y - 1)**2 - 10)/(2*y**12)",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "0",
+      "density_moment": "0",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "46*sqrt(5)/1155",
+      "boundary_y2_u": "0",
+      "center_A": "0",
+      "center_B": "0",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          2,
+          -1
+        ]
+      ],
+      "k": -2,
+      "omega_sum": -6,
+      "R_a": "y**(-2)",
+      "R_b": "sqrt(3)*(y - 1)*(y + 1)/y**4",
+      "rho": "2*sqrt(3)*(y - 2)*(y - 1)*(y + 1)*(y + 2)/y**8",
+      "Q": "-8*sqrt(3)*(y - 1)*(y + 1)/y**8",
+      "j_y": "-sqrt(3)*I*(6*y + 3*(y - 1)**2 - 7)/y**8",
+      "j_theta": "sqrt(3)*(y - 1)*(y + 1)/y**7",
+      "u": "sqrt(3)*(y - 1)*(y + 1)*(2*y + (y - 1)**2 - 41)/(420*y**6)",
+      "A": "-sqrt(3)*I*(-315*y + 11*(y - 1)**7 + 99*(y - 1)**6 + 407*(y - 1)**5 + 861*(y - 1)**4 + 777*(y - 1)**3 - 35*(y - 1)**2 + 350)/(140*y**7*(y + 1)**2)",
+      "B": "sqrt(3)*(350*y + 22*(y - 1)**5 + 154*(y - 1)**4 + 462*(y - 1)**3 + 665*(y - 1)**2 - 385)/(140*y**6*(y + 1)**2)",
+      "homogeneous_Cplus": "-sqrt(3)*I/2",
+      "homogeneous_Cminus": "0",
+      "density_moment": "sqrt(3)/70",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "-13*sqrt(3)/140",
+      "boundary_y2_u": "sqrt(3)/420",
+      "center_A": "-sqrt(3)*I/16",
+      "center_B": "-sqrt(3)/16",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    },
+    {
+      "legs": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "k": 2,
+      "omega_sum": 6,
+      "R_a": "y**(-2)",
+      "R_b": "sqrt(15)*(y - 1)*(y + 1)*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**8",
+      "rho": "2*sqrt(15)*(y - 1)*(y + 1)*(-16*y + (y - 1)**4 + 4*(y - 1)**3 - 4*(y - 1)**2 + 22)/y**10",
+      "Q": "16*sqrt(15)*(y - 1)*(y + 1)*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**12",
+      "j_y": "sqrt(15)*I*(-16*y + 3*(y - 1)**4 + 12*(y - 1)**3 + 4*(y - 1)**2 + 18)/y**10",
+      "j_theta": "-sqrt(15)*(y - 1)*(y + 1)*(-8*y + (y - 1)**4 + 4*(y - 1)**3 + 10)/y**11",
+      "u": "sqrt(15)*(y - 1)*(y + 1)*(-496*y + (y - 1)**4 + 4*(y - 1)**3 - 244*(y - 1)**2 + 772)/(2520*y**8)",
+      "A": "sqrt(15)*I*(1421*y + 5*(y - 1)**9 + 55*(y - 1)**8 + 280*(y - 1)**7 + 590*(y - 1)**6 - 410*(y - 1)**5 - 3906*(y - 1)**4 - 5516*(y - 1)**3 - 1316*(y - 1)**2 - 1512)/(280*y**9*(y + 1)**2)",
+      "B": "sqrt(15)*(-1330*y + 10*(y - 1)**9 + 110*(y - 1)**8 + 550*(y - 1)**7 + 1580*(y - 1)**6 + 2740*(y - 1)**5 + 2618*(y - 1)**4 + 448*(y - 1)**3 - 1785*(y - 1)**2 + 1421)/(280*y**10*(y + 1)**2)",
+      "homogeneous_Cplus": "0",
+      "homogeneous_Cminus": "-13*sqrt(15)*I/20",
+      "density_moment": "sqrt(15)/420",
+      "boundary_F_B": "0",
+      "center_u_over_r_to_m": "23*sqrt(15)/210",
+      "boundary_y2_u": "sqrt(15)/2520",
+      "center_A": "-13*sqrt(15)*I/160",
+      "center_B": "13*sqrt(15)/160",
+      "scalar_residual_zero": true,
+      "momentum_y_residual_zero": true,
+      "momentum_theta_residual_zero": true
+    }
+  ],
+  "elements": [
+    {
+      "label": "Eq4.25_00",
+      "outgoing": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "incoming": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "occupation_factorial": "1",
+      "bose_divisor": "1",
+      "pieces": [
+        {
+          "first_slots": [
+            0,
+            1
+          ],
+          "second_slots": [
+            2,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "33/1225",
+          "minus_uQ_integral": "-6/175",
+          "minus_4uu_integral": "-8/3675",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            2
+          ],
+          "second_slots": [
+            1,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "0",
+          "minus_uQ_integral": "-8/45",
+          "minus_4uu_integral": "-23/210",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            3
+          ],
+          "second_slots": [
+            1,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "1/25",
+          "minus_uQ_integral": "-2/25",
+          "minus_4uu_integral": "-2/75",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            1,
+            2
+          ],
+          "second_slots": [
+            0,
+            3
+          ],
+          "first_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "1/25",
+          "minus_uQ_integral": "-2/25",
+          "minus_4uu_integral": "-2/75",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            1,
+            3
+          ],
+          "second_slots": [
+            0,
+            2
+          ],
+          "first_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "0",
+          "minus_uQ_integral": "-149/630",
+          "minus_4uu_integral": "-23/210",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            2,
+            3
+          ],
+          "second_slots": [
+            0,
+            1
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              -1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "33/1225",
+          "minus_uQ_integral": "-6/175",
+          "minus_4uu_integral": "-8/3675",
+          "boundary_moment_product_over_m2minus1": "0"
+        }
+      ],
+      "scaled_momentum": "5248/1225",
+      "scaled_minus_uQ": "-144/7",
+      "scaled_minus_4uu": "-10848/1225",
+      "constraint_contact": "-176/7",
+      "virtual_boundary": "0",
+      "total": "-176/7"
+    },
+    {
+      "label": "Eq4.25_01",
+      "outgoing": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "incoming": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "occupation_factorial": "1",
+      "bose_divisor": "1",
+      "pieces": [
+        {
+          "first_slots": [
+            0,
+            1
+          ],
+          "second_slots": [
+            2,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "9/1225",
+          "minus_uQ_integral": "-3/700",
+          "minus_4uu_integral": "-17/14700",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            2
+          ],
+          "second_slots": [
+            1,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 1,
+          "momentum_integral": "157/1200",
+          "minus_uQ_integral": "-1/60",
+          "minus_4uu_integral": "-1/120",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            3
+          ],
+          "second_slots": [
+            1,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "k": -1,
+          "momentum_integral": "157/1200",
+          "minus_uQ_integral": "-1/60",
+          "minus_4uu_integral": "-1/120",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            1,
+            2
+          ],
+          "second_slots": [
+            0,
+            3
+          ],
+          "first_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 1,
+          "momentum_integral": "157/1200",
+          "minus_uQ_integral": "-7/600",
+          "minus_4uu_integral": "-1/120",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            1,
+            3
+          ],
+          "second_slots": [
+            0,
+            2
+          ],
+          "first_legs": [
+            [
+              1,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "k": -1,
+          "momentum_integral": "157/1200",
+          "minus_uQ_integral": "-7/600",
+          "minus_4uu_integral": "-1/120",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            2,
+            3
+          ],
+          "second_slots": [
+            0,
+            1
+          ],
+          "first_legs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              1,
+              0,
+              -1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "9/1225",
+          "minus_uQ_integral": "-1/175",
+          "minus_4uu_integral": "-17/14700",
+          "boundary_moment_product_over_m2minus1": "0"
+        }
+      ],
+      "scaled_momentum": "63272/3675",
+      "scaled_minus_uQ": "-32/15",
+      "scaled_minus_4uu": "-4192/3675",
+      "constraint_contact": "488/35",
+      "virtual_boundary": "0",
+      "total": "488/35"
+    },
+    {
+      "label": "Eq4.25_11",
+      "outgoing": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "incoming": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "occupation_factorial": "1",
+      "bose_divisor": "1",
+      "pieces": [
+        {
+          "first_slots": [
+            0,
+            1
+          ],
+          "second_slots": [
+            2,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "9/490",
+          "minus_uQ_integral": "-9/350",
+          "minus_4uu_integral": "-8/3675",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            2
+          ],
+          "second_slots": [
+            1,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "-1/20",
+          "minus_uQ_integral": "-33/200",
+          "minus_4uu_integral": "-61/600",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            3
+          ],
+          "second_slots": [
+            1,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "k": -2,
+          "momentum_integral": "0",
+          "minus_uQ_integral": "-3/100",
+          "minus_4uu_integral": "-1/150",
+          "boundary_moment_product_over_m2minus1": "3/25"
+        },
+        {
+          "first_slots": [
+            1,
+            2
+          ],
+          "second_slots": [
+            0,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "k": 2,
+          "momentum_integral": "0",
+          "minus_uQ_integral": "-3/100",
+          "minus_4uu_integral": "-1/150",
+          "boundary_moment_product_over_m2minus1": "3/25"
+        },
+        {
+          "first_slots": [
+            1,
+            3
+          ],
+          "second_slots": [
+            0,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "-1/20",
+          "minus_uQ_integral": "-33/200",
+          "minus_4uu_integral": "-61/600",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            2,
+            3
+          ],
+          "second_slots": [
+            0,
+            1
+          ],
+          "first_legs": [
+            [
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              -1,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              1,
+              -1
+            ],
+            [
+              0,
+              -1,
+              -1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "9/490",
+          "minus_uQ_integral": "-9/350",
+          "minus_4uu_integral": "-8/3675",
+          "boundary_moment_product_over_m2minus1": "0"
+        }
+      ],
+      "scaled_momentum": "-496/245",
+      "scaled_minus_uQ": "-2472/175",
+      "scaled_minus_4uu": "-8664/1225",
+      "constraint_contact": "-4064/175",
+      "virtual_boundary": "-48/25",
+      "total": "-176/7"
+    },
+    {
+      "label": "noncircular_1to3",
+      "outgoing": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "incoming": [
+        [
+          2,
+          2
+        ]
+      ],
+      "occupation_factorial": "2",
+      "bose_divisor": "sqrt(2)",
+      "pieces": [
+        {
+          "first_slots": [
+            0,
+            1
+          ],
+          "second_slots": [
+            2,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              2,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "-sqrt(5)/99",
+          "minus_uQ_integral": "sqrt(5)/175",
+          "minus_4uu_integral": "43*sqrt(5)/46200",
+          "boundary_moment_product_over_m2minus1": "0"
+        },
+        {
+          "first_slots": [
+            0,
+            2
+          ],
+          "second_slots": [
+            1,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              2,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "k": -2,
+          "momentum_integral": "-139*sqrt(5)/39200",
+          "minus_uQ_integral": "2*sqrt(5)/735",
+          "minus_4uu_integral": "23*sqrt(5)/176400",
+          "boundary_moment_product_over_m2minus1": "sqrt(5)/29400"
+        },
+        {
+          "first_slots": [
+            0,
+            3
+          ],
+          "second_slots": [
+            1,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              2,
+              -1
+            ]
+          ],
+          "k": 2,
+          "momentum_integral": "-139*sqrt(5)/39200",
+          "minus_uQ_integral": "13*sqrt(5)/3150",
+          "minus_4uu_integral": "23*sqrt(5)/176400",
+          "boundary_moment_product_over_m2minus1": "sqrt(5)/29400"
+        },
+        {
+          "first_slots": [
+            1,
+            2
+          ],
+          "second_slots": [
+            0,
+            3
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              2,
+              -1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "k": -2,
+          "momentum_integral": "-139*sqrt(5)/39200",
+          "minus_uQ_integral": "2*sqrt(5)/735",
+          "minus_4uu_integral": "23*sqrt(5)/176400",
+          "boundary_moment_product_over_m2minus1": "sqrt(5)/29400"
+        },
+        {
+          "first_slots": [
+            1,
+            3
+          ],
+          "second_slots": [
+            0,
+            2
+          ],
+          "first_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              2,
+              -1
+            ]
+          ],
+          "k": 2,
+          "momentum_integral": "-139*sqrt(5)/39200",
+          "minus_uQ_integral": "13*sqrt(5)/3150",
+          "minus_4uu_integral": "23*sqrt(5)/176400",
+          "boundary_moment_product_over_m2minus1": "sqrt(5)/29400"
+        },
+        {
+          "first_slots": [
+            2,
+            3
+          ],
+          "second_slots": [
+            0,
+            1
+          ],
+          "first_legs": [
+            [
+              0,
+              2,
+              -1
+            ],
+            [
+              2,
+              2,
+              1
+            ]
+          ],
+          "second_legs": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "k": 0,
+          "momentum_integral": "-sqrt(5)/99",
+          "minus_uQ_integral": "5*sqrt(5)/396",
+          "minus_4uu_integral": "43*sqrt(5)/46200",
+          "boundary_moment_product_over_m2minus1": "0"
+        }
+      ],
+      "scaled_momentum": "-66722*sqrt(10)/121275",
+      "scaled_minus_uQ": "62164*sqrt(10)/121275",
+      "scaled_minus_4uu": "4624*sqrt(10)/121275",
+      "constraint_contact": "2*sqrt(10)/3675",
+      "virtual_boundary": "-2*sqrt(10)/3675",
+      "total": "0"
+    }
+  ],
+  "elapsed_seconds": 23.093565225601196
+}

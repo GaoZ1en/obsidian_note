@@ -1,0 +1,3452 @@
+{
+  "kernel": "fresh Sage",
+  "all_passed": true,
+  "number_checks": 685,
+  "cg_squared_checks": 280,
+  "physical_transposition_sign_checks": 140,
+  "finite_minimum_zero_degrees": [
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "checks": [
+    {
+      "label": "CL.J5 exact bivariate rational identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.J6 coefficientwise x=1 identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.J7-J10 all-Q transient degree certificate",
+      "passed": true,
+      "detail": {
+        "x_degree": "15",
+        "denominator": "-147456*y^12 + 147456*y^11 + 294912*y^10 - 147456*y^9 - 147456*y^8 - 294912*y^7 + 294912*y^5 + 147456*y^4 + 147456*y^3 - 294912*y^2 - 147456*y + 147456"
+      }
+    },
+    {
+      "label": "CL.25 exact low-budget auxiliary nullities",
+      "passed": true,
+      "detail": {
+        "even_Q0_to4": "7 + 27*v + 64*v^2 + 125*v^3 + 216*v^4 + O(v^5)",
+        "odd_Q0_to4": "9 + 29*v + 68*v^2 + 129*v^3 + 223*v^4 + O(v^5)"
+      }
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=0 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=0 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=1 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=1 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=1 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=1 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=1 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=1 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=1 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=1 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=2 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=2 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=3 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=3 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=4 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=4 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=5 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=5 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=0 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=0 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=1 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=1 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=2 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=2 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=3 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=3 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=4 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=4 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=5 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=5 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (1, 1, 1) t=6 u=6 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "physical U23 sign t=6 u=6 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=0 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=1 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=1 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=1 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=1 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=2 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=3 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=4 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=5 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=0 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=1 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=2 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=3 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=4 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=5 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CG overlap square (3/4, 5/4, 7/4) t=6 u=6 v=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.31 arbitrary t,s rational determinant eta=1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.31 arbitrary t,s rational determinant eta=-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M zero block positive root t=2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M zero block positive root t=3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M zero block positive root t=4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M zero block positive root t=5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M zero block positive root t=7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M unique small positive candidate t=9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=27",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=29",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=30",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=32",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=33",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=34",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=35",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=37",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=38",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=39",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=40",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=41",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=42",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=43",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=44",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=45",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=46",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=47",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=48",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=49",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=50",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=51",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=52",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=53",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=54",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=55",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=56",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=57",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=58",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=59",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=60",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=61",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=62",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=63",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=65",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=66",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=67",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=68",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=69",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=70",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=71",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=73",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=75",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=76",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=77",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=78",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=79",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=80",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=80",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=81",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=82",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=83",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=84",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=85",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=86",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=87",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=88",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=89",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=90",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=90",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=91",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=92",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=93",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=94",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=95",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=96",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=97",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=98",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=99",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=101",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=102",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=103",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=103",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=104",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=105",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=106",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=107",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=108",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=109",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=109",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=110",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=110",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=111",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=111",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=112",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=112",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=113",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=113",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=114",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=114",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=115",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=116",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=116",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=117",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=117",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=118",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=118",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=119",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=119",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=120",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=120",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=121",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=121",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=122",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=122",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=123",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=123",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=124",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=124",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=125",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=125",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=126",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=126",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=127",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=127",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M finite positivity t=128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M all other finite positive roots t=128",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M2 t=9 coefficients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.M4 exact analytic-tail constant",
+      "passed": true,
+      "detail": "18595/2397824"
+    },
+    {
+      "label": "CL.M5 uniform positive tail lower bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "ordered baseline restoration symbolic identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "CL.K5 tail telescoping for arbitrary parameters",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limitations": [
+    "Finite CG/sign diagnostics do not prove the all-index Racah identity.",
+    "K3,K4 are explicitly inherited EX-01 input; this checks their CL nullity consequences, not the logarithmic-symbol theorem.",
+    "No numerical spectral scan is used to infer compactness, essential spectra, exact eventual ranks, or convergence quantifiers."
+  ]
+}

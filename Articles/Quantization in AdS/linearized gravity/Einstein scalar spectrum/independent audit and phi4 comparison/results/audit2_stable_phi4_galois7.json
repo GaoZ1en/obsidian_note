@@ -1,0 +1,95 @@
+{
+  "source_file": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/results/phi4_nbody_N8_P3_Q3_D2.json",
+  "source_line": 292,
+  "polynomial": "z^7 - 15464/105*z^6 + 34112812/3675*z^5 - 13915105992/42875*z^4 + 6121266601088/900375*z^3 - 2688764472364192/31513125*z^2 + 6239553019946496/10504375*z - 92942375977436928/52521875",
+  "primitive_integer_polynomial": "157565625*z^7 - 23205665000*z^6 + 1462586814500*z^5 - 51138014520600*z^4 + 1071221655190400*z^3 - 13443822361820960*z^2 + 93593295299197440*z - 278827127932310784",
+  "discriminant": "29328097842065537570020035233015194260689018840449504014920364064981305676797113794560000000000000000000000000000",
+  "irreducibility_certificate": {
+    "prime": 11,
+    "degrees": [
+      7
+    ],
+    "factors": "(8) * (z^7 + 4*z^6 + 8*z^5 + 6*z^4 + 4*z^3 + 7*z^2 + 4*z + 8)",
+    "square_free": true,
+    "discriminant_mod_prime": 5
+  },
+  "transposition_certificate": {
+    "prime": 19,
+    "degrees": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "factors": "(12) * (z + 1) * (z + 4) * (z + 8) * (z + 10) * (z + 11) * (z^2 + 8*z + 2)",
+    "square_free": true,
+    "discriminant_mod_prime": 10,
+    "transposition_power": 1
+  },
+  "tested_good_primes": [
+    {
+      "prime": 11,
+      "degrees": [
+        7
+      ],
+      "factors": "(8) * (z^7 + 4*z^6 + 8*z^5 + 6*z^4 + 4*z^3 + 7*z^2 + 4*z + 8)",
+      "square_free": true,
+      "discriminant_mod_prime": 5
+    },
+    {
+      "prime": 17,
+      "degrees": [
+        1,
+        3,
+        3
+      ],
+      "factors": "(3) * (z + 12) * (z^3 + z^2 + 4*z + 15) * (z^3 + 6*z^2 + 8*z + 16)",
+      "square_free": true,
+      "discriminant_mod_prime": 1
+    },
+    {
+      "prime": 19,
+      "degrees": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "factors": "(12) * (z + 1) * (z + 4) * (z + 8) * (z + 10) * (z + 11) * (z^2 + 8*z + 2)",
+      "square_free": true,
+      "discriminant_mod_prime": 10,
+      "transposition_power": 1
+    }
+  ],
+  "Galois_group": "S7",
+  "proof": "Irreducibility (already mod p) gives transitivity in prime degree seven, hence primitivity. The second square-free Frobenius cycle type has a power equal to one transposition. Conjugate transpositions form a nonempty invariant graph; primitivity forces it connected, so their subgroup is S7.",
+  "scope": "Arithmetic certificate for the supplied factor; physical N8,P=Q3,d2 even-block identification is checked independently by the parent, not reconstructed here. S7 is nonsolvable, excluding one universal radical formula for all such physical eigenvalues, not excluding integrability.",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "phi4_degree7_primitive_integral_polynomial",
+      "passed": true
+    },
+    {
+      "label": "phi4_degree7_Q_irreducible",
+      "passed": true
+    },
+    {
+      "label": "phi4_degree7_modular_7_cycle",
+      "passed": true
+    },
+    {
+      "label": "phi4_degree7_modular_transposition",
+      "passed": true
+    },
+    {
+      "label": "phi4_degree7_squarefree_discriminant",
+      "passed": true
+    }
+  ],
+  "sage_version": "10.9"
+}
