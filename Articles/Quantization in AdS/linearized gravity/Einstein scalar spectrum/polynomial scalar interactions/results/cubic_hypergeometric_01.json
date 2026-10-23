@@ -1,0 +1,944 @@
+{
+  "passed": true,
+  "exact_checks": [
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3/2_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D7/3_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D3_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D5/2_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D2_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((0, 0), (0, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 0), (0, 1))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((1, 1), (2, 0))_l2_n5",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n0",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n1",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n2",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n3",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n4",
+      "passed": true
+    },
+    {
+      "label": "Jacobi_moment_D4_((2, 1), (1, 0))_l0_n5",
+      "passed": true
+    },
+    {
+      "label": "independent_exact_D3_infinite_series",
+      "passed": true
+    },
+    {
+      "label": "independent_exact_D3half_infinite_series",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3/2_E3_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E3_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E3_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "full_ground_binding_D3half",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3/2_E4_J1",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E4_J1_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E4_J1_side1",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3/2_E5_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E5_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3/2_E5_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3_E6_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E6_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E6_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3_E8_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E8_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E8_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D3_E9_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E9_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D3_E9_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "closed_Gram_D5/2_E7_J0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D5/2_E7_J0_side0",
+      "passed": true
+    },
+    {
+      "label": "closed_Ward_D5/2_E7_J0_side1",
+      "passed": true
+    },
+    {
+      "label": "D3_infinite_1to3_without_imposed_selection",
+      "passed": true
+    },
+    {
+      "label": "even_engine_agreement",
+      "passed": true
+    }
+  ],
+  "exact_count": 170,
+  "numerical_checks": [
+    {
+      "type": "hypergeometric_vs_polygamma",
+      "Delta": "3/2",
+      "E": 5,
+      "max_error": "0.e-153",
+      "tolerance": "1e-30"
+    },
+    {
+      "type": "hypergeometric_vs_polygamma",
+      "Delta": "3",
+      "E": 8,
+      "max_error": "0.e-153",
+      "tolerance": "1e-30"
+    },
+    {
+      "type": "hypergeometric_vs_radial_partial_sum",
+      "Delta": "7/3",
+      "E": "20/3",
+      "radial_cutoff": 40,
+      "max_error": "1.14186694068108459611174800237e-13",
+      "tolerance": "1e-10",
+      "scope": "Finite numerical comparison, not a certified truncation bound."
+    }
+  ],
+  "closed_complete_blocks": [
+    {
+      "Delta": "3/2",
+      "E": 3,
+      "J": 0,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "-58/15 + pi"
+        ]
+      ],
+      "charpoly": "(15*lambda - 15*pi + 58)/15"
+    },
+    {
+      "Delta": "3/2",
+      "E": 4,
+      "J": 1,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "-58/15 + pi"
+        ]
+      ],
+      "charpoly": "(15*lambda - 15*pi + 58)/15"
+    },
+    {
+      "Delta": "3/2",
+      "E": 5,
+      "J": 0,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "-1843/630 + 25*pi/32",
+          "-593/630 + 7*pi/32"
+        ],
+        [
+          "-593/630 + 7*pi/32",
+          "-1843/630 + 25*pi/32"
+        ]
+      ],
+      "charpoly": "(15*lambda - 15*pi + 58)*(1008*lambda - 567*pi + 2000)/15120"
+    },
+    {
+      "Delta": "3",
+      "E": 6,
+      "J": 0,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "89653/215040 - 1575*zeta(3)/4096"
+        ]
+      ],
+      "charpoly": "(430080*lambda - 179306 + 165375*zeta(3))/430080"
+    },
+    {
+      "Delta": "3",
+      "E": 8,
+      "J": 0,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "3707411/5160960 - 20475*zeta(3)/32768",
+          "-1555739/5160960 + 7875*zeta(3)/32768"
+        ],
+        [
+          "-1555739/5160960 + 7875*zeta(3)/32768",
+          "3707411/5160960 - 20475*zeta(3)/32768"
+        ]
+      ],
+      "charpoly": "(430080*lambda - 179306 + 165375*zeta(3))*(1032192*lambda - 1052630 + 893025*zeta(3))/443925135360"
+    },
+    {
+      "Delta": "3",
+      "E": 9,
+      "J": 0,
+      "basis": [
+        [
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "89653/71680 - 4725*zeta(3)/4096"
+        ]
+      ],
+      "charpoly": "lambda*(143360*lambda - 179306 + 165375*zeta(3))/143360"
+    },
+    {
+      "Delta": "5/2",
+      "E": 7,
+      "J": 0,
+      "basis": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "matrix": [
+        [
+          "11653/8910 - 2009*pi/4608",
+          "-2911/8910 + 49*pi/512"
+        ],
+        [
+          "-2911/8910 + 49*pi/512",
+          "11653/8910 - 2009*pi/4608"
+        ]
+      ],
+      "charpoly": "(23760*lambda - 23312 + 8085*pi)*(103680*lambda - 169472 + 55125*pi)/2463436800"
+    }
+  ],
+  "scale": "lambda3^2/(8*pi)",
+  "normalization": "B basis, invariant gap fixed, vacuum zero, no finite quartic",
+  "diagnostic_warnings": [
+    "bitcount function is deprecated"
+  ],
+  "seconds": 124.95184791699285,
+  "source_sha256": {
+    "cubic_hypergeometric.py": "a79d10b93db7b42cfb492295a54fc92cfcd6b66b577f974e40c2120cea1fb484",
+    "verify_cubic_hypergeometric.py": "696ba2e0c4d589edb490c61dd616231218a77cbf3052d96ccbc0557d71e66127"
+  }
+}

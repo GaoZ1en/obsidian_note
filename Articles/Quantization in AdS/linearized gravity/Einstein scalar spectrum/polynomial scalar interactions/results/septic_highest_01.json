@@ -1,0 +1,25 @@
+{
+  "degree": 7,
+  "Delta": "6/5",
+  "bodies": 6,
+  "coefficient": "-168524890325/4090552187904",
+  "exact_finite_sum": true,
+  "physical_scale": "lambda_n^2/[4*(2*pi)^(n-2)]",
+  "radial_contributions": [
+    {
+      "radial": 0,
+      "coefficient": "-3575/129024"
+    },
+    {
+      "radial": 1,
+      "coefficient": "-1623875/123282432"
+    },
+    {
+      "radial": 2,
+      "coefficient": "-7818366875/24543313127424"
+    }
+  ],
+  "ground_nonmixing_family": true,
+  "scope": "Highest connected coefficient only; no optional finite phi^(2n-2) deformation. For other masses, check full degenerate ground blocks before calling this a spectral finite difference.",
+  "source_sha256": "a40267cfd75c0770293dbe8e3f0498427cdb9f6c576f62c57cef63bb7b3353ea"
+}

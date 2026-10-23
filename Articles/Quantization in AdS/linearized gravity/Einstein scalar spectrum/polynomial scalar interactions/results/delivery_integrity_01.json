@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "base_git_revision": "670abb1bb4b644a162278415ef94dde09cdeb016",
+  "final_foundations_checks": 550,
+  "resonant_zero_cases": 6,
+  "source_hashes_match": true,
+  "source_sha256": {
+    "contact_blocks.py": "c1977f4c10d70c357c6053c1eac5d8e98ec4175d7b7a463ed8e3ab2b1998462b",
+    "verify_foundations.py": "14da3b88324c0346d634b6aecf50a7af52656a8d38d97056c159204e728ee425"
+  },
+  "verified_local_links": 35,
+  "links": [
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/theorem_and_examples.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md"
+    },
+    {
+      "from": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md#L732-L740"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md#L54-L82"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md#L451-L478"
+    },
+    {
+      "from": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/reusable_formula_check.json"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_foundations.py"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/foundations_exact_02.json"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_foundations.py"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/foundations_exact_01.json"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_resonant_zero_modes.py"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/resonant_zero_modes_01.json"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/theorem_and_examples.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/sage_results.txt"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/wolfram_results.txt"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/verification_report.txt"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/exact_check_output.txt"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/source_evidence.md"
+    },
+    {
+      "from": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py"
+    }
+  ],
+  "document_sha256": {
+    "README.md": "628b8701e3a3b83e9ebdf1da0f78cb702e097d81284ceb36f3eb53b3033ecb97",
+    "Polynomial scalar spectrum.md": "0e8646dc9239a0bf8cbca421c5f8f425624bb2a49dc29ff3b36d6a4a8f63fc5c",
+    "Validation and reproduction.md": "35721ce771aa898193f44714c550b96c4ed44db8c46f0a88d06e4754f92dfc5d"
+  },
+  "scope": "Integrity of this stage; not whole research objective completion."
+}

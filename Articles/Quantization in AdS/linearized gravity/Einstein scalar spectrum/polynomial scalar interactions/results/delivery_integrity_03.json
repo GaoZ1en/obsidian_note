@@ -1,0 +1,1887 @@
+{
+  "passed": true,
+  "document_count": 29,
+  "python_syntax_count": 23,
+  "local_links_checked": 226,
+  "executed_source_hash_checks": 23,
+  "source_hashes_match_executed_certificates": true,
+  "sha256": {
+    "README.md": "ee0de3f4f0387af2c6141d902adec09e880dcf67ce301f87626f8083c6a169ba",
+    "Polynomial scalar spectrum.md": "3ea159ab4931f67cf2bd92d8d524ab76a9d2a021d4abbbe5e2162faf3cae50fc",
+    "Cubic second-order spectrum.md": "b4a8c0c70b34abdf079a5e69076eec56f62ef0f871817f56ca992ed7b364bc1c",
+    "Clusters and large particle number.md": "7a477f3e991c40c93ea4cae3588fdce72cee2542684e0f93ad0e24ceb51433aa",
+    "Odd interactions beyond cubic.md": "c9dc5619ff34b1989d3a7589ff03ed94e3f2bb18f78a3511618a047dc2c0197d",
+    "Validation and reproduction.md": "43d08369bd843f311f40ba222de062368ff754f3fbed3a6bb03e15f896b302d7",
+    "independent/phi4-audit/phi4-source-evidence-map.md": "6c2261614eb4a4570167841a4e71c9cb39a44c58ba2e1e297e4a5ee758e4bc66",
+    "independent/minimal-sector/README.md": "b6816ab43bef1cbdd9c30daa1f715a9748cbfc659093e903bde235eb4a53ea77",
+    "independent/resonances/theorem_and_examples.md": "e51d1449b5abf3b236b49317c5c3496611143aca622fcfc444d35e8ded1fb7c2",
+    "independent/chiral/source_evidence.md": "ffb760ab2d51a68f4963fa8237ce918fd6d7104be98ce5a7ffce9d591aff6391",
+    "independent/chiral/README.md": "34b10aa3732ceac910c2afab15b69e3abe92c47d70b256c97051e10b2df26354",
+    "independent/chiral/independent_derivation.md": "6ed5ccb341019a618ce660fadde27267c1566b6cd32eb9681011f64f5f9156f9",
+    "independent/cubic-ground/report.md": "4f0a1aadbbdb947f4029601763f0940e15260912ee60c9f42ffbab8852a94bba",
+    "independent/cubic-renormalization/README.md": "7f6f0e3d9749c0b5663768c082ab0afdab831411838180a575550e1f6135d3c1",
+    "independent/cubic-pair/derivation.md": "9d1f7bceb630186eb9fe21957dca2d2432d13d98d9f6bc7e127e7bdfb9b524da",
+    "independent/cubic-pair/README.md": "c814718fa7faef18b1d20db6431ffcd544b11e392d4e2eae81a75cd5773186af",
+    "independent/cubic-effective/README.md": "fab4099ab9a3844a8abe47de7d026ec632ffc4ea62ea6c60ec284d63cb1f2cd0",
+    "independent/cubic-hypergeometric/README.md": "9177efe0f35d24d02d021ce656d6b72d9dfa104d6d7928661d17428a7df753cc",
+    "independent/large-N-resonant/README.md": "3fd9a96a4359a540ce0af3ba429bbb6f09b22c9baf1302e0ba0180c7cc1362c1",
+    "independent/quintic-second-order/general-odd-audit.md": "763050a282cd25a7571554b0032fb5983447705a1bc221aa1c999ac107224d6f",
+    "independent/quintic-second-order/README.md": "14bba307cf351df24f3971389b74839b917f339627708074e73d4b3c3bbad2b1",
+    "independent/quintic-second-order/check-results.md": "712f79980c7a3a3a81ed4aff4bc3c3df01af8f60a8fccf893b4bec4734b488fd",
+    "independent/quintic-second-order/report.md": "a51b7769f77ccf93eb164e9bd46e431fd68546ed5709348e188c14fc8db5655a",
+    "independent/primary-polynomial-rank-review/review.md": "835c0c6316fd9145828db597f8b6a98812588aecb91c754456a6d05d053e1fb8",
+    "independent/primary-polynomial-rank-review/README.md": "382879040ab8ba5cb0642175808fd7c0601ce7b596e1d01a7ec6d3b01b7d5071",
+    "independent/nonchiral-clusters/README.md": "143c5fbea8d3e39a9a2b0ac2a685cbfa25d8ab40ad5cc291ffd110a3ae654776",
+    "independent/large-N-fixed-shell/large-N-fixed-shell.md": "7f3775d2cea122f8b806f4c927d4fb2adbb494f5e9d47c4e1e90cf70000c40f5",
+    "independent/large-N-fixed-shell/README.md": "bfd6e57738fb524318e851f76df2a8458e122ae525731f8e31a2952991f89ce9",
+    "independent/first-resonant-threshold/theorem.md": "2399e743f1fd47b144bd58976a6a767ccb68e418a178381aca0e200cfe3fe454",
+    "code/contact_blocks.py": "c1977f4c10d70c357c6053c1eac5d8e98ec4175d7b7a463ed8e3ab2b1998462b",
+    "code/verify_foundations.py": "14da3b88324c0346d634b6aecf50a7af52656a8d38d97056c159204e728ee425",
+    "code/verify_resonant_zero_modes.py": "77693779d9a6da38d17dac19f4f0835ed4ad51f18bde45e7ab32f7c87292400c",
+    "code/cubic_effective.py": "6d39fbfa190e706e82b257a5b02c699151e81bae5bb8f6cd256689bc520f3920",
+    "code/verify_cubic_effective.py": "58f259e5b186218a5b3f868362e27418b08137c9ab6150a53d5ef5fb6f66d1a1",
+    "code/cubic_hypergeometric.py": "a79d10b93db7b42cfb492295a54fc92cfcd6b66b577f974e40c2120cea1fb484",
+    "code/verify_cubic_hypergeometric.py": "696ba2e0c4d589edb490c61dd616231218a77cbf3052d96ccbc0557d71e66127",
+    "code/odd_highest_binding.py": "a40267cfd75c0770293dbe8e3f0498427cdb9f6c576f62c57cef63bb7b3353ea",
+    "code/verify_extended_structures.py": "594f0fd2ca6a8618761fc0041c595b44d0d1d5175fcbcbb8d6633a34e2c16b2a",
+    "code/verify_even_positivity.py": "55c21f55b9f254afd1064e3c38d426424c941295d87797374defc19a5e02e6f6",
+    "code/even_threshold_spectrum.py": "2e4a599a6a5280e69033ef2258caa71fbf15db88f6d9c320a80dac7b717f1f38",
+    "independent/large-N-fixed-shell/fixed_shell.py": "5d5fcdb23d03894f3510c6981af47963d4c807024e2185101ac9b86079bb40e4",
+    "independent/large-N-fixed-shell/gap_density_checks.py": "998825c322de0ce4ec48a8d08934b4680fc085c554ce8c35c6ea3fa038382dff",
+    "independent/large-N-resonant/derive_moments.py": "48eca350dc0c12d25a127709f33aab4a50ba444ad090835f4a1d40bf9a5adacf",
+    "independent/large-N-resonant/verify_large_N.py": "6c4d87b6096355d08a4c372f27caead9fdc069828897e8c4230e19a2eb3d76df",
+    "independent/nonchiral-clusters/channel_gram.py": "36a205d3e91fb92416560c1110813da583cd436e5c18e40d688e272f5b4bbeaf",
+    "independent/nonchiral-clusters/verify_channels.py": "ae9eae56a59c10b016ee539b51bdd134b38364a4831d7f4f762fe768e5682bf9",
+    "independent/nonchiral-clusters/verify_operator_lemma.py": "c89a71abc994433f6906f1e5f31d07b7eb0020230a81f822b3f9ec8f37d234cb",
+    "independent/nonchiral-clusters/verify_nonchiral_zero.py": "cc22aa8affc2b7c79bbf07e88ca2d154f8baa1d7bee932768981390174e43f8e",
+    "independent/quintic-second-order/verify.sage.py": "1627d51238a3a13bc892c93b4d8625844e5525208cb88222206315cb5a2cb006",
+    "independent/quintic-second-order/general-odd-check.sage.py": "bf42b89f2ed25a4171537888f4694c15419a854db3049fa00c6469869ac57fce",
+    "independent/primary-polynomial-rank-review/verify_rank.sage.py": "dedc728f6b9c7d0dbe720574d60ad94e9c8ceeb8c2fadaa2ff52ccf84bd2e7b5",
+    "independent/first-resonant-threshold/check_first_threshold.py": "8c67048d317b49eb71334c375725e5c590259238d2d9652caa4aea1e09eadbae"
+  },
+  "certificate_files": [
+    {
+      "file": "results/foundations_exact_02.json",
+      "passing_flags_read": 551,
+      "sha256": "2bce619eb18a00315c4c7c4032e09df2a2d1670fe65ad72400de8999b6a60050"
+    },
+    {
+      "file": "results/resonant_zero_modes_01.json",
+      "passing_flags_read": 1,
+      "sha256": "20a9476e753f8e513ecf46a59697ce1f3fc878d0bc1c704d18591cb38c813b9e"
+    },
+    {
+      "file": "results/cubic_effective_exact_01.json",
+      "passing_flags_read": 104,
+      "sha256": "6f7b37b9dda894615f1db8bdabecc522a3f8e1d58c6b893bdbfab49d1013b210"
+    },
+    {
+      "file": "results/cubic_hypergeometric_01.json",
+      "passing_flags_read": 171,
+      "sha256": "290be32ffbb34522ee4c4b081099c42e9e71b293c3cde3172704365e0df56dc4"
+    },
+    {
+      "file": "results/extended_structures_exact_01.json",
+      "passing_flags_read": 156,
+      "sha256": "826860e06fe59c6467de8cc81d0d7a711ad6d69024282f6efb372b5272b4ecbc"
+    },
+    {
+      "file": "results/even_positivity_exact_01.json",
+      "passing_flags_read": 271,
+      "sha256": "ac11eefb868ae06190189fcfb2336baaa6af4c59306f5826a1c2b46a8326692c"
+    },
+    {
+      "file": "results/quintic_highest_01.json",
+      "passing_flags_read": 0,
+      "sha256": "c26341afcafd76f1d3ee1158035e6dedfe728add49f93aaab26142c5a35b44a5"
+    },
+    {
+      "file": "results/septic_highest_01.json",
+      "passing_flags_read": 0,
+      "sha256": "a4afdb69dca0ee0ebad7fcd4ead5ab75aaf832924ea9a4d09412a0389e8ae2ff"
+    },
+    {
+      "file": "results/threshold_phi6_D2_01.json",
+      "passing_flags_read": 2,
+      "sha256": "122540841ad8c63d21e03b03aa584cef4ea0fe64a9d95089f50be71fb96d33fa"
+    },
+    {
+      "file": "results/threshold_phi8_D3half_01.json",
+      "passing_flags_read": 2,
+      "sha256": "0aeab1a9c6a7bab14d4c4e87ad06cd94ff280dc26a8a455c4d025499e669d4b1"
+    },
+    {
+      "file": "results/threshold_phi10_D4third_01.json",
+      "passing_flags_read": 2,
+      "sha256": "fb477edad86efc0cfd728345c549d1b21f99433c9aaf96eeac83c4012a5cf262"
+    },
+    {
+      "file": "independent/nonchiral-clusters/exact-checks.json",
+      "passing_flags_read": 2755,
+      "sha256": "a15bc4c7276d6a1058e9aec6b3aef051e3725c34261e31f23b1e07b0e144c7a8"
+    },
+    {
+      "file": "independent/nonchiral-clusters/operator-checks.json",
+      "passing_flags_read": 139,
+      "sha256": "ec9c41e7738665ae477a5a175bebac5ad9cca3579dcc9086fa5d33bc83d78892"
+    },
+    {
+      "file": "independent/nonchiral-clusters/nonchiral-zero-checks.json",
+      "passing_flags_read": 13,
+      "sha256": "9c7c00103754c6ebc6597e51fadc6e3643d6e5ad045988243547ad13bc308d4a"
+    },
+    {
+      "file": "independent/large-N-fixed-shell/checks.json",
+      "passing_flags_read": 0,
+      "sha256": "8698a9578e3689635a47bad9fa48a96b72fe5cd5fe8574ba4d99643abe872af6"
+    },
+    {
+      "file": "independent/large-N-fixed-shell/gap-density-checks.json",
+      "passing_flags_read": 0,
+      "sha256": "3f43c89c8318679f0490f11acf6dfbc67bb886f8d5214f1c00f1a067fdad8f5f"
+    },
+    {
+      "file": "independent/large-N-resonant/verification.json",
+      "passing_flags_read": 10,
+      "sha256": "bb153d0d11f6905b3b5a5e17c5c5a79e67b6d77eb8d06e4fc313be5beb9290e8"
+    },
+    {
+      "file": "independent/large-N-resonant/symbolic_moments.json",
+      "passing_flags_read": 0,
+      "sha256": "26e69b42fff7d33621f09856a8a11516612dba5c024a46e2e9ea62ffa855a4df"
+    },
+    {
+      "file": "independent/large-N-resonant/moments_extended.json",
+      "passing_flags_read": 0,
+      "sha256": "e9f082e6b762ec3f7703d7038c852056005e1af91d7f4318b1fd2395dd67fb8a"
+    },
+    {
+      "file": "independent/quintic-second-order/sage-results.json",
+      "passing_flags_read": 1,
+      "sha256": "e49c514e2984d803291955f1bfd4c49d2c916caa7eefb17ac0513391fc805c22"
+    },
+    {
+      "file": "independent/quintic-second-order/general-odd-sage-results.json",
+      "passing_flags_read": 1,
+      "sha256": "b3b5161ff4af738c1aef4c4084362d53cb6725bf31bf99fe9d73b8339970073d"
+    },
+    {
+      "file": "independent/primary-polynomial-rank-review/exact_checks.json",
+      "passing_flags_read": 0,
+      "sha256": "0a9ca4df4ad1214b073c796a539008bffbdbc7fcdfad6d7b0989ff625b646f25"
+    },
+    {
+      "file": "independent/first-resonant-threshold/exact_checks.json",
+      "passing_flags_read": 0,
+      "sha256": "331b12ad12b84ca5ad7f1df70a90b73627f8cc82c4888139d7ffae56283789ce"
+    }
+  ],
+  "hash_checks": [
+    {
+      "certificate": "results/foundations_exact_02.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/foundations_exact_02.json",
+      "source": "code/verify_foundations.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/cubic_effective_exact_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/cubic_effective_exact_01.json",
+      "source": "code/cubic_effective.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/cubic_effective_exact_01.json",
+      "source": "code/verify_cubic_effective.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/cubic_hypergeometric_01.json",
+      "source": "code/cubic_hypergeometric.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/cubic_hypergeometric_01.json",
+      "source": "code/verify_cubic_hypergeometric.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "code/odd_highest_binding.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "code/verify_extended_structures.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "independent/nonchiral-clusters/channel_gram.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "independent/large-N-fixed-shell/fixed_shell.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/extended_structures_exact_01.json",
+      "source": "independent/large-N-resonant/verify_large_N.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/even_positivity_exact_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/even_positivity_exact_01.json",
+      "source": "code/verify_even_positivity.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/quintic_highest_01.json",
+      "source": "code/odd_highest_binding.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/septic_highest_01.json",
+      "source": "code/odd_highest_binding.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi6_D2_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi6_D2_01.json",
+      "source": "code/even_threshold_spectrum.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi8_D3half_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi8_D3half_01.json",
+      "source": "code/even_threshold_spectrum.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi10_D4third_01.json",
+      "source": "code/contact_blocks.py",
+      "matches": true
+    },
+    {
+      "certificate": "results/threshold_phi10_D4third_01.json",
+      "source": "code/even_threshold_spectrum.py",
+      "matches": true
+    }
+  ],
+  "links": [
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Odd interactions beyond cubic.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/even_threshold_spectrum.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/theorem_and_examples.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Odd interactions beyond cubic.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L54-L82",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md",
+      "anchor": "L411-L422",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Odd interactions beyond cubic.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Polynomial scalar spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L253-L282",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/cubic_effective.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/cubic_hypergeometric.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-ground/report.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_D2_E6_J0.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_hypergeometric_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_effective_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_hypergeometric_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-hypergeometric/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Cubic second-order spectrum.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/channel_gram.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/review.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/fixed_shell.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "anchor": "L497",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/even_threshold_spectrum.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/theorem.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/even_positivity_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Validation and reproduction.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Clusters and large particle number.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/extended_structures_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/odd_highest_binding.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/extended_structures_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/report.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-audit.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Odd interactions beyond cubic.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/check-results.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Odd interactions beyond cubic.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/reusable_formula_check.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_foundations.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/foundations_exact_02.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_foundations.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/foundations_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_resonant_zero_modes.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/resonant_zero_modes_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/theorem_and_examples.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/sage_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/wolfram_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/verification_report.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/exact_check_output.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/source_evidence.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/cubic_effective.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_effective_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_cubic_effective.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/cubic_hypergeometric.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/cubic_hypergeometric_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_cubic_hypergeometric.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-ground/report.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-hypergeometric/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/verify_extended_structures.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/extended_structures_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/exact-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/operator-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/nonchiral-zero-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/review.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/exact_checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/gap-density-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/symbolic_checks.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/README.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/verification.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/symbolic_moments.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/moments_extended.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/report.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/wolfram-results.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/sage-results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-audit.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/check-results.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/theorem.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/check_first_threshold.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/exact_checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/even_positivity_exact_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/threshold_phi6_D2_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/threshold_phi8_D3half_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "Validation and reproduction.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/threshold_phi10_D4third_01.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/minimal-sector/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L54-L82",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/minimal-sector/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/verify_minimal_sector.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/minimal-sector/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/verification_report.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/independent_resonance_checks.wls",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/wolfram_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/independent_resonance_checks.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/resonances/theorem_and_examples.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/sage_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/source_evidence.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/check_chiral_contact.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/source_evidence.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/exact_check_output.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/source_evidence.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/check_chiral_contact.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/exact_check_output.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/independent_derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "L455-L550",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/independent_derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L54-L83",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/independent_derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/source_evidence.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/independent_derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/check_chiral_contact.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/chiral/independent_derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/exact_check_output.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-ground/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L61-L77",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-ground/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L134-L145",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-ground/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-ground/verify.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-ground/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-ground/verification-results.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L54-L159",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L255-L274",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md",
+      "anchor": "L35-L164",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/independent_checks.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/wolfram_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/independent_checks.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-renormalization/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-renormalization/sage_results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/cubic_pair_exact.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/exact-checks.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/derivation.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/supplemental-checks.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/derivation.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/cubic_pair_exact.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/exact-checks.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-pair/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-pair/supplemental-checks.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L61-L76",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L253-L270",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_delta2_check.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_delta2_results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_sw_algebra_check.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_sw_algebra_results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_resolvent_check.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-effective/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-effective/independent_resolvent_results.txt",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-hypergeometric/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-hypergeometric/paired-arithmetic.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-hypergeometric/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-hypergeometric/verify.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/cubic-hypergeometric/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/cubic-hypergeometric/verify.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "L28-L123",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L229-L290",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/verify_large_N.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/verification.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/moments_extended.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/derive_moments.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/symbolic_moments.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-resonant/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-resonant/verify_integrals.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/report.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/verify.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/verify.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/check-results.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-audit.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/wolfram-results.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/sage-results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-audit.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-wolfram-results.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-sage-results.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/verify.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/check-results.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/quintic-second-order/general-odd-check.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "L28-L84",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/quintic-second-order/report.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L253-L282",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/primary-polynomial-rank-review/review.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/verify_rank.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/primary-polynomial-rank-review/review.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/exact_checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/primary-polynomial-rank-review/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/review.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/primary-polynomial-rank-review/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/verify_rank.sage.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/primary-polynomial-rank-review/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/exact_checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/channel_gram.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/verify_channels.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/exact-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/verification.log",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/verify_operator_lemma.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/operator-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/verify_nonchiral_zero.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/nonchiral-zero-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/nonchiral-clusters/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/primary-polynomial-rank-review/review.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "L28-L123",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "L54-L82",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/fixed_shell.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/symbolic_checks.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/gap_density_checks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/gap-density-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/large-N-fixed-shell.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/fixed_shell.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/symbolic_checks.wl",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/gap_density_checks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/large-N-fixed-shell/README.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/large-N-fixed-shell/gap-density-checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/first-resonant-threshold/theorem.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/check_first_threshold.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/first-resonant-threshold/theorem.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/first-resonant-threshold/exact_checks.json",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/first-resonant-threshold/theorem.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/first-resonant-threshold/theorem.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    },
+    {
+      "source": "independent/first-resonant-threshold/theorem.md",
+      "target": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "anchor": "",
+      "exists": true,
+      "line_bounds_ok": true
+    }
+  ],
+  "errors": [],
+  "resolved_diagnostics": [
+    "Updated stale chiral report line anchor to actual first-stage sections8.3-8.5,lines455-550.",
+    "Excluded displayed mathematics from Markdown-link recognition.",
+    "Excluded TeX row-spacing double-backslash brackets from display delimiter count."
+  ],
+  "scope": "Delivery integrity only: Python syntax, local links/line bounds, paired delimiter counts, persisted success flags and source hashes. Not a replacement for analytic proofs, a LaTeX render, or rerunning all historical checks."
+}

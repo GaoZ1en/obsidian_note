@@ -1,0 +1,278 @@
+{
+  "threshold_examples": [
+    {
+      "k": 3,
+      "Delta": "2",
+      "E_star": "8",
+      "J": 0,
+      "dimension": 9,
+      "sectors": [
+        {
+          "N": 1,
+          "P": 3,
+          "Q": 3,
+          "dimension": 1
+        },
+        {
+          "N": 2,
+          "P": 2,
+          "Q": 2,
+          "dimension": 5
+        },
+        {
+          "N": 3,
+          "P": 1,
+          "Q": 1,
+          "dimension": 2
+        },
+        {
+          "N": 4,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "2/15",
+      "C_squared_scaled": "1/2352",
+      "additional_positive_scaled": [
+        "1/30",
+        "1/21"
+      ],
+      "rank": 4,
+      "inertia_positive_negative_zero": [
+        3,
+        1,
+        5
+      ],
+      "characteristic_polynomial": "(z - 1/21) * (z - 1/30) * z^5 * (z^2 - 2/15*z - 1/2352)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    },
+    {
+      "k": 3,
+      "Delta": "3",
+      "E_star": "12",
+      "J": 0,
+      "dimension": 9,
+      "sectors": [
+        {
+          "N": 2,
+          "P": 3,
+          "Q": 3,
+          "dimension": 8
+        },
+        {
+          "N": 4,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "1/12",
+      "C_squared_scaled": "1/5808",
+      "additional_positive_scaled": [],
+      "rank": 2,
+      "inertia_positive_negative_zero": [
+        1,
+        1,
+        7
+      ],
+      "characteristic_polynomial": "z^7 * (z^2 - 1/12*z - 1/5808)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    },
+    {
+      "k": 4,
+      "Delta": "3/2",
+      "E_star": "9",
+      "J": 0,
+      "dimension": 9,
+      "sectors": [
+        {
+          "N": 2,
+          "P": 3,
+          "Q": 3,
+          "dimension": 8
+        },
+        {
+          "N": 6,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "1/8",
+      "C_squared_scaled": "1/92160",
+      "additional_positive_scaled": [],
+      "rank": 2,
+      "inertia_positive_negative_zero": [
+        1,
+        1,
+        7
+      ],
+      "characteristic_polynomial": "z^7 * (z^2 - 1/8*z - 1/92160)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    },
+    {
+      "k": 5,
+      "Delta": "4/3",
+      "E_star": "32/3",
+      "J": 0,
+      "dimension": 23,
+      "sectors": [
+        {
+          "N": 2,
+          "P": 4,
+          "Q": 4,
+          "dimension": 13
+        },
+        {
+          "N": 5,
+          "P": 2,
+          "Q": 2,
+          "dimension": 9
+        },
+        {
+          "N": 8,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "7/85",
+      "C_squared_scaled": "1/7535360",
+      "additional_positive_scaled": [
+        "1/680",
+        "1/230",
+        "1/116"
+      ],
+      "rank": 5,
+      "inertia_positive_negative_zero": [
+        4,
+        1,
+        18
+      ],
+      "characteristic_polynomial": "(z - 1/116) * (z - 1/230) * (z - 1/680) * z^18 * (z^2 - 7/85*z - 1/7535360)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    },
+    {
+      "k": 4,
+      "Delta": "2",
+      "E_star": "10",
+      "J": 0,
+      "dimension": 20,
+      "sectors": [
+        {
+          "N": 1,
+          "P": 4,
+          "Q": 4,
+          "dimension": 1
+        },
+        {
+          "N": 2,
+          "P": 3,
+          "Q": 3,
+          "dimension": 8
+        },
+        {
+          "N": 3,
+          "P": 2,
+          "Q": 2,
+          "dimension": 8
+        },
+        {
+          "N": 4,
+          "P": 1,
+          "Q": 1,
+          "dimension": 2
+        },
+        {
+          "N": 5,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "5/168",
+      "C_squared_scaled": "1/19440",
+      "additional_positive_scaled": [
+        "1/168",
+        "1/72"
+      ],
+      "rank": 4,
+      "inertia_positive_negative_zero": [
+        3,
+        1,
+        16
+      ],
+      "characteristic_polynomial": "(z - 1/72) * (z - 1/168) * z^16 * (z^2 - 5/168*z - 1/19440)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    },
+    {
+      "k": 5,
+      "Delta": "5/3",
+      "E_star": "40/3",
+      "J": 0,
+      "dimension": 19,
+      "sectors": [
+        {
+          "N": 2,
+          "P": 5,
+          "Q": 5,
+          "dimension": 18
+        },
+        {
+          "N": 8,
+          "P": 0,
+          "Q": 0,
+          "dimension": 1
+        }
+      ],
+      "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+      "D_scaled": "7/110",
+      "C_squared_scaled": "1/12266240",
+      "additional_positive_scaled": [],
+      "rank": 2,
+      "inertia_positive_negative_zero": [
+        1,
+        1,
+        17
+      ],
+      "characteristic_polynomial": "z^17 * (z^2 - 7/110*z - 1/12266240)",
+      "gram_self_adjoint": true,
+      "predicted_charpoly_exact": true,
+      "comparison_first_stage_exact": true
+    }
+  ],
+  "prethreshold_scans": [
+    {
+      "k": 3,
+      "Delta": "2",
+      "strictly_below": "8",
+      "full_blocks_checked": 21,
+      "maximum_dimension": 5,
+      "all_positive_semidefinite": true
+    },
+    {
+      "k": 4,
+      "Delta": "3/2",
+      "strictly_below": "9",
+      "full_blocks_checked": 78,
+      "maximum_dimension": 8,
+      "all_positive_semidefinite": true
+    }
+  ]
+}

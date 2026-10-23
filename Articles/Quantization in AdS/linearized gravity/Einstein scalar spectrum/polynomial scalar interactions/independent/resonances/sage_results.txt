@@ -1,0 +1,16 @@
+KERNEL: exact Sage QQ polynomial integrals and QQbar algebraic checks
+ONE_TO_MANY Delta= 2 n= 3 tested= 21 all_zero=True
+ONE_TO_MANY Delta= 4/3 n= 5 tested= 126 all_zero=True
+ONE_TO_MANY Delta= 8/3 n= 5 tested= 126 all_zero=True
+PHI5_D2_SCAN tested= 1069 zeros= 66 nonzeros= 1003
+PHI5_D2_FIRST_ZERO_TUPLES [(((0, 1), (1, 1)), ((0, 0), (0, 0), (0, 1))), (((0, 2), (1, 2)), ((0, 0), (0, 0), (0, 3))), (((0, 2), (1, 2)), ((0, 0), (0, 1), (0, 2))), (((0, 2), (1, 2)), ((0, 1), (0, 1), (0, 1))), (((0, 2), (2, 1)), ((0, 0), (0, 2), (1, 0)))]
+POSITIVE_FAMILY Delta= 2 r= 2 s= 3 K= 1 bare= 1/20 C_times_(2pi)^((n-2)/2)= 1/20
+POSITIVE_FAMILY Delta= 3 r= 2 s= 4 K= 3 bare= 1/1320 C_times_(2pi)^((n-2)/2)= 1/264
+POSITIVE_FAMILY Delta= 4/3 r= 2 s= 5 K= 2 bare= 27/1309 C_times_(2pi)^((n-2)/2)= 3/187
+POSITIVE_FAMILY Delta= 3/2 r= 2 s= 6 K= 3 bare= 1/280 C_times_(2pi)^((n-2)/2)= 1/256
+ALLOWED_INDIVIDUAL_ZERO ((0, 1), (1, 1)) ((0, 0), (0, 0), (0, 1))
+PHI6_PRIMARY_LOWERING axis= 0 residual= {((0, 0), (1, 2)): 0, ((0, 1), (1, 1)): 0, ((0, 2), (1, 0)): 0} all_exact_zero=True
+PHI6_PRIMARY_LOWERING axis= 1 residual= {((0, 0), (2, 1)): 0, ((0, 1), (2, 0)): 0, ((1, 0), (1, 1)): 0} all_exact_zero=True
+PHI6_PRIMARY_NORM_SQUARED 1
+FINITE_ARITHMETIC_CLASSIFICATION_CHECK: all passed
+ALL_CHECKS_PASSED=True

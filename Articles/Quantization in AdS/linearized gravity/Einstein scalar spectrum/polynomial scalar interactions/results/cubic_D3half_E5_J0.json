@@ -1,0 +1,57 @@
+{
+  "Delta": "3/2",
+  "energy": "5",
+  "angular": 0,
+  "scale": "lambda3^2/(8*pi)",
+  "prescription": "vacuum zero, invariant physical gap Delta fixed, no added quartic",
+  "basis": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  ],
+  "Gram": [
+    "4/9",
+    "4/9"
+  ],
+  "exact_matrix": [
+    [
+      "-1843/630 + 25*pi/32",
+      "-593/630 + 7*pi/32"
+    ],
+    [
+      "-593/630 + 7*pi/32",
+      "-1843/630 + 25*pi/32"
+    ]
+  ],
+  "numerical_matrix": [
+    [
+      "-0.471027564779799429276456682210",
+      "-0.254046448297073998927566601177"
+    ],
+    [
+      "-0.254046448297073998927566601177",
+      "-0.471027564779799429276456682210"
+    ]
+  ],
+  "exact_Gram_self_adjoint": true,
+  "radial_cutoff": null,
+  "entry_representation": "finite polygamma expression; rational at even Delta",
+  "numeric_scope": "SymPy numerical evaluation, not a certified interval error bound"
+}

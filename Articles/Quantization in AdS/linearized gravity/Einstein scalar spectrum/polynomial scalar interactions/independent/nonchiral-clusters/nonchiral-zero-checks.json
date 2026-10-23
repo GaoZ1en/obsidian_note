@@ -1,0 +1,74 @@
+{
+  "formal_checks": [
+    {
+      "k": 3,
+      "test": "primary-0",
+      "passed": true
+    },
+    {
+      "k": 3,
+      "test": "primary-1",
+      "passed": true
+    },
+    {
+      "k": 3,
+      "test": "formal-Delta contact kernel",
+      "passed": true
+    },
+    {
+      "k": 4,
+      "test": "primary-0",
+      "passed": true
+    },
+    {
+      "k": 4,
+      "test": "primary-1",
+      "passed": true
+    },
+    {
+      "k": 4,
+      "test": "formal-Delta contact kernel",
+      "passed": true
+    },
+    {
+      "k": 5,
+      "test": "primary-0",
+      "passed": true
+    },
+    {
+      "k": 5,
+      "test": "primary-1",
+      "passed": true
+    },
+    {
+      "k": 5,
+      "test": "formal-Delta contact kernel",
+      "passed": true
+    },
+    {
+      "k": 6,
+      "test": "primary-0",
+      "passed": true
+    },
+    {
+      "k": 6,
+      "test": "primary-1",
+      "passed": true
+    },
+    {
+      "k": 6,
+      "test": "formal-Delta contact kernel",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "phi6_Delta2_E12_J0": {
+    "Z_norm_squared": "29/36",
+    "sixground_norm_squared": "720",
+    "column_coefficient_in_c6_units": "1/2520",
+    "unnormalized_matrix_element_in_c6_units": "2/7",
+    "normalized_matrix_element_squared_in_c6_squared_units": "1/7105",
+    "c6": "1/(8*pi^2)",
+    "normalized_matrix_element": "lambda_6/(56*pi^2*sqrt(145))"
+  }
+}

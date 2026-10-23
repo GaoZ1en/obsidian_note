@@ -1,0 +1,82 @@
+{
+  "B4_contributions_pi3": [
+    "-81/17920",
+    "-9297/11648000"
+  ],
+  "B4_pi3": "-61947/11648000",
+  "allPassed": true,
+  "checks": {
+    "complete_four_ground_block": true,
+    "excited_contribution": true,
+    "full_fourbody_coefficient": true,
+    "ground_contribution": true,
+    "lower_blocks_isolated": true,
+    "lower_connected_terms_cancel": true,
+    "overlap_normalization": true,
+    "radial_support": true
+  },
+  "complete_blocks_NPQ": {
+    "1": [
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "2": [
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "3": [
+      [
+        3,
+        0,
+        0
+      ]
+    ],
+    "4": [
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        4,
+        0,
+        0
+      ]
+    ]
+  },
+  "ground_only_E_N": [
+    "-9/1254400",
+    "-129/1254400",
+    "-1389/1254400",
+    "-8829/1254400",
+    "-4737/179200"
+  ],
+  "one_excited_E_N": [
+    "-81/32614400",
+    "-873/32614400",
+    "-31113/163072000",
+    "-162297/163072000",
+    "-609723/163072000"
+  ],
+  "radial": [
+    "3/7",
+    "-9/70",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ]
+}

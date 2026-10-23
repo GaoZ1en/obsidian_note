@@ -1,0 +1,32 @@
+{
+  "all_blocks_psd": false,
+  "Delta": "2",
+  "k": 3,
+  "threshold_energy": "8",
+  "angular": 0,
+  "dimension": 9,
+  "lower_particle_number": 2,
+  "ground_particle_number": 4,
+  "lower_active_primary_grade": [
+    "2",
+    "2"
+  ],
+  "alpha": "2/15",
+  "beta_squared": "1/2352",
+  "additional_positive_coefficients": [
+    "1/30",
+    "1/21"
+  ],
+  "rank": 4,
+  "zero_multiplicity": 5,
+  "negative_multiplicity": 1,
+  "charpoly": "(z - 1/21) * (z - 1/30) * z^5 * (z^2 - 2/15*z - 1/2352)",
+  "full_matrix_verified": true,
+  "Gram_verified": true,
+  "two_mixed_roots": "(alpha +/- sqrt(alpha^2+4*beta_squared))/2",
+  "scale": "lambda_(2k)*(2*pi)^(1-k)/2",
+  "source_sha256": {
+    "contact_blocks.py": "c1977f4c10d70c357c6053c1eac5d8e98ec4175d7b7a463ed8e3ab2b1998462b",
+    "even_threshold_spectrum.py": "2e4a599a6a5280e69033ef2258caa71fbf15db88f6d9c320a80dac7b717f1f38"
+  }
+}

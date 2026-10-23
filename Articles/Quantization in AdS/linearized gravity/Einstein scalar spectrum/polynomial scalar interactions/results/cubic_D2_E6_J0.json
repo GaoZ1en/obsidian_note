@@ -1,0 +1,147 @@
+{
+  "Delta": "2",
+  "energy": "6",
+  "angular": 0,
+  "scale": "lambda3^2/(8*pi)",
+  "interpretation": "connected quartic tree coefficient only; no loop or vacuum terms",
+  "sum_exactly_terminated": true,
+  "radial_cutoff": null,
+  "basis": [
+    [
+      [
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "Gram": [
+    "1/9",
+    "1/4",
+    "1/4",
+    "6"
+  ],
+  "matrix": [
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-17/120",
+      "-1/15",
+      "0"
+    ],
+    [
+      "0",
+      "-1/15",
+      "-17/120",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-5/8"
+    ]
+  ],
+  "charpoly": "z * (z + 3/40) * (z + 5/24) * (z + 5/8)",
+  "exact_spectrum_of_reported_matrix": [
+    {
+      "minimal_polynomial": "z",
+      "field_generator": null,
+      "eigenvalue": "0",
+      "number_of_real_embeddings": 1,
+      "multiplicity_per_embedding": 1,
+      "eigenvectors_as_rows": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "minimal_polynomial": "z + 3/40",
+      "field_generator": null,
+      "eigenvalue": "-3/40",
+      "number_of_real_embeddings": 1,
+      "multiplicity_per_embedding": 1,
+      "eigenvectors_as_rows": [
+        [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ]
+      ]
+    },
+    {
+      "minimal_polynomial": "z + 5/24",
+      "field_generator": null,
+      "eigenvalue": "-5/24",
+      "number_of_real_embeddings": 1,
+      "multiplicity_per_embedding": 1,
+      "eigenvectors_as_rows": [
+        [
+          "0",
+          "1",
+          "1",
+          "0"
+        ]
+      ]
+    },
+    {
+      "minimal_polynomial": "z + 5/8",
+      "field_generator": null,
+      "eigenvalue": "-5/8",
+      "number_of_real_embeddings": 1,
+      "multiplicity_per_embedding": 1,
+      "eigenvectors_as_rows": [
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "Gram_self_adjoint": true
+}

@@ -1,0 +1,99 @@
+{
+  "conventions": "H=lambda*c6*A, c6=1/(8*pi^2); lambda=g/N^2; standardized X=(H-C_N)/(g*sqrt(N)/(6720*pi^2))",
+  "checks": [
+    {
+      "label": "independent occupation action equals complete E=8 block",
+      "passed": true
+    },
+    {
+      "label": "complete E=8 Gram self-adjointness",
+      "passed": true
+    },
+    {
+      "label": "source radial integral is 1/35",
+      "passed": true
+    },
+    {
+      "label": "one-to-five radial integral is zero",
+      "passed": true
+    },
+    {
+      "label": "exact variance formula at N=4",
+      "passed": true
+    },
+    {
+      "label": "exact variance formula at N=10",
+      "passed": true
+    },
+    {
+      "label": "exact variance formula at N=30",
+      "passed": true
+    },
+    {
+      "label": "exact variance formula at N=100",
+      "passed": true
+    },
+    {
+      "label": "exact variance formula at N=1000",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "moments": [
+    {
+      "N": 4,
+      "reachable_states_after_one": 5,
+      "reachable_states_after_two": 6,
+      "m2_standardized_exact": "75/256",
+      "m2_standardized": 0.29296875,
+      "m3_standardized": -1.025390625,
+      "m4_standardized_exact": "240825/65536",
+      "m4_standardized": 3.6746978759765625
+    },
+    {
+      "N": 10,
+      "reachable_states_after_one": 5,
+      "reachable_states_after_two": 60,
+      "m2_standardized_exact": "2331/2500",
+      "m2_standardized": 0.9324,
+      "m3_standardized": -4.982181102705923,
+      "m4_standardized_exact": "44257485699/1512500000",
+      "m4_standardized": 29.261147569586775
+    },
+    {
+      "N": 30,
+      "reachable_states_after_one": 5,
+      "reachable_states_after_two": 60,
+      "m2_standardized_exact": "15631/15000",
+      "m2_standardized": 1.0420666666666667,
+      "m3_standardized": -4.723032981308798,
+      "m4_standardized_exact": "682092225269/27337500000",
+      "m4_standardized": 24.950790133296753
+    },
+    {
+      "N": 100,
+      "reachable_states_after_one": 5,
+      "reachable_states_after_two": 60,
+      "m2_standardized_exact": "102108699/100000000",
+      "m2_standardized": 1.02108699,
+      "m3_standardized": -2.93107490676,
+      "m4_standardized_exact": "6316109826631655967/550000000000000000",
+      "m4_standardized": 11.483836048421193
+    },
+    {
+      "N": 1000,
+      "reachable_states_after_one": 5,
+      "reachable_states_after_two": 60,
+      "m2_standardized_exact": "1002460087449/1000000000000",
+      "m2_standardized": 1.002460087449,
+      "m3_standardized": -0.9656162782104409,
+      "m4_standardized_exact": "11876568533194043748986225811/3025000000000000000000000000",
+      "m4_standardized": 3.9261383580806757
+    }
+  ],
+  "gaussian_targets": {
+    "m2": 1,
+    "m3": 0,
+    "m4": 3
+  }
+}

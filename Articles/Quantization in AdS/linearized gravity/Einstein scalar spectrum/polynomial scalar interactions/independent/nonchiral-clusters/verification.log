@@ -1,0 +1,33 @@
+Racah polynomial checks passed
+Independent bulk/Fock checks passed
+Rank scan passed k=3 Delta=6/5
+Rank scan passed k=3 Delta=3/2
+Rank scan passed k=3 Delta=2
+Rank scan passed k=3 Delta=5/2
+Rank scan passed k=3 Delta=3
+Rank scan passed k=3 Delta=7/2
+Rank scan passed k=3 Delta=5
+Rank scan passed k=4 Delta=6/5
+Rank scan passed k=4 Delta=3/2
+Rank scan passed k=4 Delta=2
+Rank scan passed k=4 Delta=5/2
+Rank scan passed k=4 Delta=3
+Rank scan passed k=4 Delta=7/2
+Rank scan passed k=4 Delta=5
+Rank scan passed k=5 Delta=6/5
+Rank scan passed k=5 Delta=3/2
+Rank scan passed k=5 Delta=2
+Rank scan passed k=5 Delta=5/2
+Rank scan passed k=5 Delta=3
+Rank scan passed k=5 Delta=7/2
+Rank scan passed k=5 Delta=5
+Rank scan passed k=6 Delta=6/5
+Rank scan passed k=6 Delta=3/2
+Rank scan passed k=6 Delta=2
+Rank scan passed k=6 Delta=5/2
+Rank scan passed k=6 Delta=3
+Rank scan passed k=6 Delta=7/2
+Rank scan passed k=6 Delta=5
+Formal-Delta finite Sturm checks passed
+Formal redundancy vectors passed
+SAVED /Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/nonchiral-clusters/exact-checks.json checks 2754 seconds 21.375889778137207

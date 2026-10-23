@@ -1,0 +1,7 @@
+<|"FullFourPointCrossingUV" -> {3/50, 14/25}, "CrossingValues" -> 
+  {0.09908687027515124143266248971405080658141533334900954230648659735924271644096`60., 
+   0.09908687027515124143266248971405080658141533334900954230648659735937566435813`60.}, 
+ "CrossingResidual" -> 0``60.70295389318902, "BlockQResidualsP0Through8" -> {0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+ "NormalizedSpinningMatrix20" -> {{-17/60, -1/5*Sqrt[2/3]}, {-1/5*Sqrt[2/3], -13/60}}, 
+ "NormalizedScalarMatrix11" -> {{-17/60, -2/15}, {-2/15, -17/60}}, "SpinningPrimaryResidual" -> {0, 0}, 
+ "ScalarPrimaryResidual" -> {0, 0}, "Messages" -> {}|>

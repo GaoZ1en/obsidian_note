@@ -1,0 +1,44 @@
+Sage version: SageMath version 10.9, Release Date: 2026-05-04
+Matrices use exact QQ or QQ(Delta); no floating-point arithmetic.
+PASS: direct KG Jacobi norms, Delta=2,3,4, n=0..3, |ell|=0..3
+PASS: absolute chiral contact factor from beta integral, k=2..4, Delta=2,3,4, M=0..8
+PASS: restriction nullities = admissible counts, k=2..4, N=k..8, L=0..12
+PASS: fermionic Hilbert series = admissible counts, k=2..4, N=0..8, L=0..24
+PASS: minimal kernel degree and uniqueness, k=2..4, N=k..8
+
+Phi6 exact ranks, columns L=0,...,12:
+N= 3 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+N= 4 [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+N= 5 [1, 1, 2, 3, 5, 7, 10, 13, 17, 21, 26, 31, 37]
+N= 6 [1, 1, 2, 3, 5, 7, 11, 14, 20, 26, 35, 44, 57]
+N= 7 [1, 1, 2, 3, 5, 7, 11, 15, 21, 28, 38, 49, 65]
+N= 8 [1, 1, 2, 3, 5, 7, 11, 15, 22, 29, 40, 52, 70]
+Phi6 exact nullities, columns L=0,...,12:
+N= 3 [0, 0, 1, 2, 3, 4, 6, 7, 9, 11, 13, 15, 18]
+N= 4 [0, 0, 0, 0, 1, 1, 3, 4, 7, 9, 13, 16, 22]
+N= 5 [0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 6, 10]
+N= 6 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+N= 7 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+N= 8 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+PASS: N=k contact is a rank-one projector, k=2..4, L=0..8
+PASS: SL(2) raising intertwiner, (N,k)=(4,2),(4,3),(5,3), L=0..7
+PASS: degree-two primary family, symbolic Delta, 3<=N<=7 and 2<=k<=N
+PASS: degree-three primary family, symbolic Delta, 3<=N<=7 and 2<=k<=N
+PASS: complete N=k+1 spectrum, k=2..4, Delta=3/2,2,3, L=0..8
+PASS: balanced-group Phi6 zero mode, N=3
+PASS: balanced-group Phi6 zero mode, N=4
+PASS: balanced-group Phi6 zero mode, N=5
+PASS: balanced-group Phi6 zero mode, N=6
+PASS: quartic multilinear-descendant flag invariant in N=4,L=4,Delta=2
+PASS: sextic multilinear-descendant flag NOT invariant in N=4,L=4,Delta=2
+Counterexample ranks: flag= 4 , sextic enlarged= 5
+
+Selected dimensionless Phi6 characteristic polynomials, Delta=2:
+(4, 4) (x - 4) * (x - 10/7) * (x - 47/42) * (x - 11/14) * x
+(4, 5) (x - 4) * (x - 10/7) * (x - 47/42) * (x - 13/14) * (x - 11/14) * x
+(4, 6) (x - 4) * (x - 10/7) * (x - 47/42) * (x - 23/22) * (x - 13/14) * (x - 11/14) * x^3
+(5, 4) (x - 10) * (x - 37/7) * (x - 53/14) * (x^2 - 85/14*x + 376/49)
+(5, 5) (x - 10) * (x - 37/7) * (x - 53/14) * (x^2 - 85/14*x + 376/49) * (x^2 - 61/14*x + 23/14)
+(6, 4) (x - 20) * (x - 88/7) * (x - 10) * (x^2 - 17*x + 3340/49)
+
+All assertions passed.

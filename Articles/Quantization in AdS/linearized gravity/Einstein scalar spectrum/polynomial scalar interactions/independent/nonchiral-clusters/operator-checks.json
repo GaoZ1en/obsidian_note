@@ -1,0 +1,1110 @@
+{
+  "count": 138,
+  "all_passed": true,
+  "checks": [
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 4,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "3/2",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "2",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 1,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 1,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 2,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 1,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 1,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 3,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 2,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 4,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 0,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 1,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 2,
+      "passed": true
+    },
+    {
+      "N": 5,
+      "Delta": "11/7",
+      "P": 5,
+      "Q": 3,
+      "r": 3,
+      "passed": true
+    }
+  ]
+}

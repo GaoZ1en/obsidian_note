@@ -1,0 +1,24 @@
+<|"Normalization" -> {{{2, 0, 0}, 1}, {{2, 1, 0}, 1}, {{2, 1, 1}, 1}, {{4/3, 2, 1}, 1}, {{3/2, 2, 2}, 1}}, 
+ "TopResonances" -> {{{2, {{1, 1}}, {{0, 0}, {0, 0}}}, True, 0}, 
+   {{4/3, {{2, 2}}, {{0, 0}, {0, 0}, {0, 0}, {0, 0}}}, True, 0}, 
+   {{2, {{4, 3}}, {{1, 0}, {0, 0}, {0, 0}, {0, 0}}}, True, 0}, {{6, {{4, 3}}, {{1, 0}, {0, 0}}}, True, 0}, 
+   {{8/3, {{5, 4}}, {{1, 0}, {0, 0}, {0, 0}, {0, 0}}}, True, 0}}, 
+ "NonzeroExamples" -> {{"phi5_D2", True, 1/(40*Sqrt[2]*Pi^(3/2))}, 
+   {"phi5_D2_radial", True, 1/(40*Sqrt[2]*Pi^(3/2))}, {"phi6_D3", True, 1/(1056*Pi^2)}, 
+   {"phi7_D4over3", True, 3/(748*Sqrt[2]*Pi^(5/2))}, {"phi8_D3over2", True, 1/(2048*Pi^3)}}, 
+ "IndividualResonantZero" -> 0, "Phi5_E6J0_EigenvaluesPerLambda5" -> 
+  {-1/40*1/(Sqrt[6]*Pi^(3/2)), 1/(40*Sqrt[6]*Pi^(3/2)), 0, 0}, 
+ "Phi6_E8J0_N2Basis" -> {{{0, 0}, {2, 2}}, {{0, 1}, {2, 1}}, {{0, 2}, {2, 0}}, {{1, 0}, {1, 2}}, 
+   {{1, 1}, {1, 1}}}, "Phi6_RawSpatialCoefficients" -> {1/(280*Pi^2), Sqrt[3]/(280*Pi^2), 1/(280*Pi^2), 
+   Sqrt[3]/(280*Pi^2), 3/(280*Pi^2)}, "Phi6_FockAmplitudesPerLambda6" -> 
+  {1/(560*Sqrt[6]*Pi^2), 1/(560*Sqrt[2]*Pi^2), 1/(560*Sqrt[6]*Pi^2), 1/(560*Sqrt[2]*Pi^2), 
+   Sqrt[3]/(1120*Pi^2)}, "Phi6_NormalizedScalarPrimary" -> {Sqrt[2]/5, Sqrt[6]/5, Sqrt[2]/5, Sqrt[6]/5, 3/5}, 
+ "Phi6_PrimaryCouplingPerLambda6" -> 1/(224*Sqrt[3]*Pi^2), "Phi6_PrimaryBlockInUnitsLambda6Over8PiSquared" -> 
+  {{0, 1/(28*Sqrt[3])}, {1/(28*Sqrt[3]), 2/15}}, "Phi6_PrimaryBlockCharacteristicPolynomial" -> 
+  (-5 - 1568*z + 11760*z^2)/11760, "KillingLoweringResiduals" -> {{{2, 1, 0, 0}, 0}, {{2, 1, 1, 0}, 0}, 
+   {{2, 2, 1, 0}, 0}, {{2, 2, 2, 0}, 0}, {{2, 0, 1, 1}, 0}, {{2, 1, 1, 1}, 0}, {{2, 1, 2, 1}, 0}, 
+   {{4/3, 2, 1, 0}, 0}}, "Checks" -> <|"KG_normalizations" -> True, "one_to_many_zero" -> True, 
+   "explicit_nonzero_values" -> True, "examples_resonant" -> True, "allowed_individual_zero" -> True, 
+   "phi5_block_spectrum" -> True, "phi6_primary_coupling" -> True, "phi6_four_ground_diagonal" -> True, 
+   "phi6_block_determinant" -> True, "Killing_lowering_phases" -> True|>, "AllChecksPassed" -> True, 
+ "Messages" -> {}|>

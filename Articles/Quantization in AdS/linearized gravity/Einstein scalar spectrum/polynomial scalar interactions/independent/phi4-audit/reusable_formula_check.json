@@ -1,0 +1,109 @@
+{
+  "scope": "Fresh exact symbolic d,N check; no existing research engine imports; not a rerun of 978/8579 checks.",
+  "assumptions": [
+    "d=Delta>1 real",
+    "integer N>=2 for the physical (1,1) block",
+    "L=1",
+    "Sint=-lambda phi^4/4!",
+    "AdS-invariant free-vacuum Wick subtraction",
+    "fixed boundary clock; regular center and fast falloff",
+    "K is unit-lambda coefficient, output matrices are K/c0"
+  ],
+  "Sage": "10.9",
+  "Python": "3.14.3",
+  "independent_exact_checks": {
+    "ground_overlap_equals_2c0": true,
+    "nontrivial_transition_overlap": true,
+    "KG_00": true,
+    "KG_11": true,
+    "KG_10": true,
+    "Gram_adjoint_0_0": true,
+    "Gram_adjoint_0_1": true,
+    "Gram_adjoint_1_0": true,
+    "Gram_adjoint_1_1": true,
+    "general_N_primary_eigenvector_0": true,
+    "general_N_primary_eigenvector_1": true,
+    "general_N_descendant_eigenvector_0": true,
+    "general_N_descendant_eigenvector_1": true,
+    "general_N_trace": true,
+    "general_N_determinant": true,
+    "pair_11_coincidence": true,
+    "pair_11_coefficient": true,
+    "D2_22_to_0000_resonance": true,
+    "nonresonant_nonzero_control": true
+  },
+  "all_passed": true,
+  "integrated_overlaps_in_c0_units": {
+    "ground": "2",
+    "ground_radial11": "8*d/(8*d + 4)",
+    "ground_spin1": "1",
+    "spin1_spinMinus1": "4*d/(4*d + 2)",
+    "transition": "4/(8*d + 4)"
+  },
+  "basis": "A=(a00dag)^(N-1)*a11dag|0>; B=(a00dag)^(N-2)*a10dag*a01dag|0>",
+  "K_over_c0": [
+    [
+      "(4*d*N^2 - 4*d*N + 2*N^2 - 6*N + 4)/(8*d + 4)",
+      "4/(8*d + 4)"
+    ],
+    [
+      "(4*N - 4)/(8*d + 4)",
+      "(2*d*N^2 - 2*d*N + N^2 - N - 2)/(4*d + 2)"
+    ]
+  ],
+  "Gram_up_to_common_positive_factor": [
+    [
+      "N-1",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "primary_vector": [
+    "1",
+    "-1"
+  ],
+  "primary_eigenvalue": "(d*N^2 - d*N + 1/2*N^2 - 3/2*N)/(2*d + 1)",
+  "descendant_vector": [
+    "1",
+    "N-1"
+  ],
+  "descendant_eigenvalue": "1/2*N^2 - 1/2*N",
+  "pair11_coincidence_stripped": "y - 1",
+  "minimal_1to3_integral": "0",
+  "nonresonant_control": "1/3",
+  "HEAD": "670abb1bb4b644a162278415ef94dde09cdeb016",
+  "source_status_porcelain": "?? \"Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/.venv/\"\n?? \"Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/sources/\"",
+  "root_AGENTS_status": " M AGENTS.md",
+  "source_tracked_diff_stat": "",
+  "source_sha256": {
+    "README.md": "34514bfa2301eec70a3dca921a9fa4e7787f0bac0c5c0df973ed7c95788b74b4",
+    "phi4 spectrum.md": "4347dbb90429a9bd3ca9ce8033cf20ca778a5cfd0767b3d0d024983fb58473c1",
+    "phi4 arbitrary N spectrum.md": "eb8f3167ab4a90479069764e1e16ec224281b6354a4604681b25af28f7f0216d",
+    "phi4 further structures.md": "81a96035e11bda649a052516619aa4db9a9891c44a36a8380bcb27d229498a82",
+    "phi4 stable spectra and resonances.md": "2f7e2bb676a06777139f9c27128f38ad5632e9e16f4c9098c95fb9095220bf5b",
+    "structural comparison.md": "ecc72afba9b9ea0c4978ad4c87c9abdf9bffcab854442f8794df9079bdd6b071",
+    "universality and limits.md": "d0d8b45f18125553b9df3720b7c62d0e935e239e9f66b3db56afd8a690a11253",
+    "scripts/phi4_checks.py": "7a57555928584f1fea12816c243385ef42484d7ad2072779e8b1b44ec393db9c",
+    "scripts/phi4_nbody_spectrum.py": "d470bd710098f9b39bbd844e31c6f2618044552087ce8374c9ecae5776f52456",
+    "scripts/phi4_nbody_certify.py": "f90b330e9f722b1b40bc83b6fdb22247370406c0064b32157619b38b0e52fb8d",
+    "scripts/phi4_stable_pencils.py": "d622ee87bad3a51a5c77dd35e1c15feca0cc2a805877f230640e6a646a6f5e00",
+    "scripts/phi4_stable_certification.py": "ce8cb4adc097cdbf6afae50a4d51b7d698b0afcc58065d94104b5e711745576d",
+    "scripts/contact_structure.py": "833a0a7f7893ce206c27e13c82b54e26f0281bff84f2b9fc71716607696898bb",
+    "scripts/contact2_rectangular.py": "3995b01b7339399111562f202d8c5e44e1a9951253898a4d3be3c234b09012db",
+    "results/phi4_checks.json": "e0704d0d4537fd63d0739564b554ae6ef936665c5cdd2cf95117bf13c0a31676",
+    "results/phi4_nbody_certification.json": "c9d6a964bac10e6dc8463e4a7355975b205ecc60d80360cf4b658d7eaa165c08",
+    "results/phi4_stable_certification_02.json": "bbf137ece51f4c7db373c3b77272c45728ed3d266945049ced0cf699d2f8591d",
+    "results/contact_structure.json": "4b2184a702118b246ce4c5ceb4cdf40a8da567ff93303151e60cedadd9e2f143",
+    "results/contact2_rectangular.json": "ad6a2900af503510857bb35e445e01d85cac40856e5a8c558c58d11a6990ff99"
+  },
+  "retained_certificate_hash_matches": {
+    "nbody_engine_matches_certificate": true,
+    "radial_source_matches_certificate": true,
+    "certifier_matches_certificate": true,
+    "old_978_json_matches_certificate": true
+  },
+  "self_sha256": "dc2d7d918e5b925dc0feaca9a1df8db362cfd71e988a62e3566caaf6bc744f22"
+}

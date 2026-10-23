@@ -1,0 +1,902 @@
+{
+  "passed": true,
+  "count": 155,
+  "checks": [
+    {
+      "label": "radial_family_d3/2_k2_N2",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k2_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k2_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k3_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k3_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k3_N6",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k4_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k4_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d3/2_k4_N7",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k2_N2",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k2_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k2_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k3_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k3_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k3_N6",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k4_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k4_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d2_k4_N7",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k2_N2",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k2_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k2_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k3_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k3_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k3_N6",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k4_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k4_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_d7/3_k4_N7",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k2_N2",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k2_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k2_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k3_N3",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k3_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k3_N6",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k4_N4",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k4_N5",
+      "passed": true
+    },
+    {
+      "label": "radial_family_dDelta_k4_N7",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d3/2_k3_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d3/2_k3_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d2_k3_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d2_k3_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d2_k3_3_1",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d2_k3_3_1",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d7/3_k3_3_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d7/3_k3_3_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d3/2_k4_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d3/2_k4_2_2",
+      "passed": true
+    },
+    {
+      "label": "cluster_bulk_spectrum_d2_k4_3_1",
+      "passed": true
+    },
+    {
+      "label": "cluster_rank_d2_k4_3_1",
+      "passed": true
+    },
+    {
+      "label": "nonchiral_Z3_fixed_N_kernel",
+      "passed": true
+    },
+    {
+      "label": "nonchiral_Z3_norm",
+      "passed": true
+    },
+    {
+      "label": "nonchiral_Z3_nonzero_complete_resonance",
+      "passed": true
+    },
+    {
+      "label": "complete_resonant_variance_N4",
+      "passed": true
+    },
+    {
+      "label": "complete_resonant_variance_N5",
+      "passed": true
+    },
+    {
+      "label": "independent_occupation_variance_N6",
+      "passed": true
+    },
+    {
+      "label": "independent_occupation_variance_N20",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k3_d2_j1",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k4_d3/2_j2",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k4_d2_j1",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k4_d2_j2",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k5_d4/3_j3",
+      "passed": true
+    },
+    {
+      "label": "general_linear_source_k5_d2_j3",
+      "passed": true
+    },
+    {
+      "label": "fixed_shell_exact_d2_k3_2_2",
+      "passed": true
+    },
+    {
+      "label": "fixed_shell_exact_d5/3_k2_3_2",
+      "passed": true
+    },
+    {
+      "label": "irrational_collision",
+      "passed": true
+    },
+    {
+      "label": "irrational_half_order_splitting",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n3",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n3_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n3",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n3_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n3_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n3",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n5",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n5_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n5_r1",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n5",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n5",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n5_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n5_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n5_N3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n5_N4",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n5",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n7",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n7_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n7_r1",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n7_r2",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n7",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n7",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N4",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N5",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n7_N6",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n7",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n9",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n9_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n9_r1",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n9_r2",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n9_r3",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n9",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n9",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N4",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N5",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N6",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N7",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n9_N8",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n9",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n11",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n11_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n11_r1",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n11_r2",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n11_r3",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n11_r4",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n11",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n11",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N4",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N5",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N6",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N7",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N8",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N9",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n11_N10",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n11",
+      "passed": true
+    },
+    {
+      "label": "odd_negative_n13",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r0",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r1",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r2",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r3",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r4",
+      "passed": true
+    },
+    {
+      "label": "odd_source_integral_n13_r5",
+      "passed": true
+    },
+    {
+      "label": "odd_source_termination_n13",
+      "passed": true
+    },
+    {
+      "label": "odd_literal_Fock_difference_n13",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N1",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N2",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N3",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N4",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N5",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N6",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N7",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N8",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N9",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N10",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N11",
+      "passed": true
+    },
+    {
+      "label": "odd_full_ground_degeneracy_n13_N12",
+      "passed": true
+    },
+    {
+      "label": "odd_top_degeneracy_parity_n13",
+      "passed": true
+    },
+    {
+      "label": "quintic_exact_value",
+      "passed": true
+    },
+    {
+      "label": "septic_exact_value",
+      "passed": true
+    },
+    {
+      "label": "quintic_active_pole_not_silently_removed",
+      "passed": true
+    }
+  ],
+  "clusters": [
+    {
+      "Delta": "3/2",
+      "k": 3,
+      "P": 2,
+      "Q": 2,
+      "primary_dimension": 3,
+      "small_matrix": [
+        [
+          "776/2541",
+          "6272/35937",
+          "12845056/35038575"
+        ],
+        [
+          "150/1183",
+          "352/507",
+          "83968/217503"
+        ],
+        [
+          "540/1001",
+          "1230/1573",
+          "84424/102245"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 9136/5005*z + 369088/715715"
+    },
+    {
+      "Delta": "2",
+      "k": 3,
+      "P": 2,
+      "Q": 2,
+      "primary_dimension": 3,
+      "small_matrix": [
+        [
+          "52/245",
+          "36/343",
+          "125/686"
+        ],
+        [
+          "9/80",
+          "31/56",
+          "325/1344"
+        ],
+        [
+          "9/14",
+          "39/49",
+          "271/392"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 51/35*z + 319/980"
+    },
+    {
+      "Delta": "2",
+      "k": 3,
+      "P": 3,
+      "Q": 1,
+      "primary_dimension": 2,
+      "small_matrix": [
+        [
+          "3/14",
+          "5/49"
+        ],
+        [
+          "2/15",
+          "5/21"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 19/42*z + 11/294"
+    },
+    {
+      "Delta": "7/3",
+      "k": 3,
+      "P": 3,
+      "Q": 2,
+      "primary_dimension": 3,
+      "small_matrix": [
+        [
+          "11339/69984",
+          "-2635/54432",
+          "-5635211/48988800"
+        ],
+        [
+          "-910/19683",
+          "170/2187",
+          "-4403/196830"
+        ],
+        [
+          "-54145/192456",
+          "-1225/21384",
+          "1238603/3849120"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 270181/481140*z + 11662/216513"
+    },
+    {
+      "Delta": "3/2",
+      "k": 4,
+      "P": 2,
+      "Q": 2,
+      "primary_dimension": 3,
+      "small_matrix": [
+        [
+          "809/3920",
+          "289/2744",
+          "1147619/2963520"
+        ],
+        [
+          "45/512",
+          "1569/1792",
+          "10469/14336"
+        ],
+        [
+          "297/448",
+          "2349/1568",
+          "25505/12544"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 3489/1120*z + 128019/125440"
+    },
+    {
+      "Delta": "2",
+      "k": 4,
+      "P": 3,
+      "Q": 1,
+      "primary_dimension": 2,
+      "small_matrix": [
+        [
+          "31/210",
+          "1/16"
+        ],
+        [
+          "36/385",
+          "107/330"
+        ]
+      ],
+      "nonzero_charpoly": "z^2 - 109/231*z + 104/2475"
+    }
+  ],
+  "odd_family": [
+    {
+      "degree": 3,
+      "Delta": "2",
+      "coefficient": "-5/24",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-5/24"
+        }
+      ]
+    },
+    {
+      "degree": 5,
+      "Delta": "4/3",
+      "coefficient": "-61947/364000",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-81/560"
+        },
+        {
+          "index": 1,
+          "value": "-9297/364000"
+        }
+      ]
+    },
+    {
+      "degree": 7,
+      "Delta": "6/5",
+      "coefficient": "-168524890325/4090552187904",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-3575/129024"
+        },
+        {
+          "index": 1,
+          "value": "-1623875/123282432"
+        },
+        {
+          "index": 2,
+          "value": "-7818366875/24543313127424"
+        }
+      ]
+    },
+    {
+      "degree": 9,
+      "Delta": "8/7",
+      "coefficient": "-103209556297371391/16526756612995200000",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-119119/34877952"
+        },
+        {
+          "index": 1,
+          "value": "-28874342442113/11002030227302400"
+        },
+        {
+          "index": 2,
+          "value": "-6507074911183/32067320957568000"
+        },
+        {
+          "index": 3,
+          "value": "-2444685294171211/1056864897251539200000"
+        }
+      ]
+    },
+    {
+      "degree": 11,
+      "Delta": "10/9",
+      "coefficient": "-5863775269582066414660040789937/8846438959578217444721475289088000",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-113373/372416000"
+        },
+        {
+          "index": 1,
+          "value": "-248545067517/796702100480000"
+        },
+        {
+          "index": 2,
+          "value": "-107007635180763610911/2390050328337228677120000"
+        },
+        {
+          "index": 3,
+          "value": "-16877151654845319/10157534121760030720000"
+        },
+        {
+          "index": 4,
+          "value": "-414128018895664102942293/30800601143198288411425095680000"
+        }
+      ]
+    },
+    {
+      "degree": 13,
+      "Delta": "12/11",
+      "coefficient": "-658097921593488411516356038422165596131453/12619514959861601755238494307855356869552000000",
+      "radial_terms": [
+        {
+          "index": 0,
+          "value": "-898909/43563267072"
+        },
+        {
+          "index": 1,
+          "value": "-133975278034973793938179/5226787939265201535801329664"
+        },
+        {
+          "index": 2,
+          "value": "-911962232687011/166200383122597324800"
+        },
+        {
+          "index": 3,
+          "value": "-25081796792316281809/65154122034397189597440000"
+        },
+        {
+          "index": 4,
+          "value": "-739792980118232959351138717/73373851923340658642970636528000000"
+        },
+        {
+          "index": 5,
+          "value": "-13456495558660163403485835310457/214996227864555386636425129425214083840000"
+        }
+      ]
+    }
+  ],
+  "scope": "Finite exact cross-checks. All-index rank, Gaussian limit, and all-odd negativity rely on the explicit analytic proofs; no whole-QFT large-N limit is certified.",
+  "elapsed_seconds": 0.8443031311035156,
+  "source_sha256": {
+    "code/contact_blocks.py": "c1977f4c10d70c357c6053c1eac5d8e98ec4175d7b7a463ed8e3ab2b1998462b",
+    "code/odd_highest_binding.py": "a40267cfd75c0770293dbe8e3f0498427cdb9f6c576f62c57cef63bb7b3353ea",
+    "code/verify_extended_structures.py": "594f0fd2ca6a8618761fc0041c595b44d0d1d5175fcbcbb8d6633a34e2c16b2a",
+    "independent/nonchiral-clusters/channel_gram.py": "36a205d3e91fb92416560c1110813da583cd436e5c18e40d688e272f5b4bbeaf",
+    "independent/large-N-fixed-shell/fixed_shell.py": "5d5fcdb23d03894f3510c6981af47963d4c807024e2185101ac9b86079bb40e4",
+    "independent/large-N-resonant/verify_large_N.py": "6c4d87b6096355d08a4c372f27caead9fdc069828897e8c4230e19a2eb3d76df"
+  }
+}

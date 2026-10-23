@@ -1,0 +1,108 @@
+{
+  "projector_probability_exact_checks": 120,
+  "uniform_gap_finite_mode_checks": 390,
+  "rational_density_normalizations": [
+    {
+      "k": 3,
+      "Delta": "2",
+      "A": "2/7",
+      "small_positive_sequence": [
+        {
+          "p": 3,
+          "defect": "3/7"
+        },
+        {
+          "p": 8,
+          "defect": "6/143"
+        },
+        {
+          "p": 20,
+          "defect": "3/1265"
+        }
+      ],
+      "exact_zero_occupations": {
+        "11": 2,
+        "20": 1
+      }
+    },
+    {
+      "k": 3,
+      "Delta": "3/2",
+      "A": "2/11",
+      "small_positive_sequence": [
+        {
+          "p": 3,
+          "defect": "70/143"
+        },
+        {
+          "p": 8,
+          "defect": "30/437"
+        },
+        {
+          "p": 20,
+          "defect": "14/2021"
+        }
+      ],
+      "exact_zero_occupations": {
+        "11": 3,
+        "20": 1
+      }
+    },
+    {
+      "k": 4,
+      "Delta": "7/3",
+      "A": "33/31",
+      "small_positive_sequence": [
+        {
+          "p": 3,
+          "defect": "2145/527"
+        },
+        {
+          "p": 8,
+          "defect": "17932200/134991577"
+        },
+        {
+          "p": 20,
+          "defect": "377520/269313133"
+        }
+      ],
+      "exact_zero_occupations": {
+        "11": 7,
+        "20": 11
+      }
+    },
+    {
+      "k": 5,
+      "Delta": "5/4",
+      "A": "44/29",
+      "small_positive_sequence": [
+        {
+          "p": 3,
+          "defect": "156/29"
+        },
+        {
+          "p": 8,
+          "defect": "145860/562807"
+        },
+        {
+          "p": 20,
+          "defect": "180180/27029923"
+        }
+      ],
+      "exact_zero_occupations": {
+        "11": 5,
+        "20": 11
+      }
+    }
+  ],
+  "irrational_zero_example": {
+    "k": 3,
+    "mode": [
+      2,
+      2
+    ],
+    "minimal_polynomial": "x^3 - 4*x^2 - 3*x - 2",
+    "irreducible_and_root_in_4_5": true
+  },
+  "claim_level": "The all-grade proofs are analytic; finite checks do not prove density."
+}
