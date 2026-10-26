@@ -1,0 +1,38 @@
+Independent timelike stress–scalar checks: actual successful CAS output
+
+Provenance
+==========
+Tool: mcp__mathematica__evaluate_mathematica
+Executed code:
+Get["/Users/koishi/Documents/Note/Articles/extrapolate dictionary/half_bps_stress_timelike_kernel_checks.wl"]
+
+Canonical archived tool response:
+/Users/koishi/.dsh/research-results/session-3d2d47c50183/0c08e11a0f1e-research-result.json
+Readable archived response:
+/Users/koishi/.dsh/research-results/session-3d2d47c50183/497ae5d0014f-research-result-readable.txt
+
+This file transcribes the already captured successful return value; no rerun was performed to create it. The script also printed the same association, so the archived response contains both the printed and returned copies.
+
+Precision and message status
+============================
+Exact symbolic checks: stressSeriesResidual = 0; massDerivativeResidual = 0; doubleIntegralSeriesResidual = 0; stressWeightIntegral = 1/9.
+Numeric quadratures: machine precision, AccuracyGoal -> 12, PrecisionGoal -> 12, Method -> {"GlobalAdaptive", "SymbolicProcessing" -> 0}.
+For |x| < 10^-6 the numerically evaluated f2(x) uses 1 - x^2/12 + x^4/384, avoiding the removable quotient at zero.
+Messages captured by Block[{$Messages = {}, $MessageList = {}}]: {}.
+No $Failed, $Aborted, or unevaluated NIntegrate appears in the successful returned association.
+Maximum reported absolute discrepancy: 4.333339242990064*^-15.
+These are ordinary numerical checks, not interval-certified error bounds.
+An earlier, separate high-precision combined batch exceeded the tool's 30-second execution timeout and supplied no result. It is not counted as a successful check. The successful script below replaced that batch with separate exact work and explicitly configured machine-precision quadratures.
+
+Returned association (verbatim)
+==============================
+<|stressSeriesResidual -> 0, massDerivativeResidual -> 0, stressWeightIntegral -> 1/9, doubleIntegralSeriesResidual -> 0, quadratures -> {{{3., 1., 1., 1.}, 0.015391452291888513, 0.01539145229188855, 3.642919299551295*^-17}, {{3., 1., 2., 1.}, 0.01453059224128149, 0.014530592241277156, 4.333339242990064*^-15}, {{0., 1., 1., 1.}, 0.023632808785802397, 0.023632808785802442, 4.5102810375396984*^-17}, {{1., 1., 0., 1.}, 0.02294366515555101, 0.022943665155550994, 1.734723475976807*^-17}, {{0., 0., 0., 1.}, 0.02777777777777777, 0.027777777777777773, 3.469446951953614*^-18}, {{1., 1., 1., 2.}, 0.7181097327463823, 0.7181097327463857, 3.3306690738754696*^-15}}, messages -> {}|>
+
+Quadrature row schema
+=====================
+{{a,b,tau,z}, Volterra value of -B/(alpha Q), compact-double-integral value of -B/(alpha Q), absolute difference}.
+The six samples respectively test generic physical timelike data, exact positive collinear threshold, zero stress mass, zero transfer mass, all masses zero, and an unphysical interior-absorption point as an analytic-family test.
+
+Scope
+=====
+The exact compact-integral identity and analytic estimates, not these finite samples, establish threshold regularity and global bounds of the specified zero-boundary radial solution. These checks do not establish the genuine finite-time-shift threshold limit of a physical vacuum-contour family. The canonical combined extension and that separate limiting-absorption question must not be conflated.

@@ -1,0 +1,33 @@
+Mathematica code executed:
+```wl
+Get["/Users/koishi/Documents/Note/Articles/extrapolate dictionary/sunset_checks.wl"]
+```
+
+Output:
+<|"SymbolicResiduals" -> <|"radial differential identity" -> 0, 
+   "cutoff finite contact relation" -> 0, "bubble spectral coefficients through degree12" -> 
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, "triple spectral coefficients through degree12" -> 
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, "shell fish value" -> 0, "shell fish derivative" -> 0, 
+   "shell sunset value" -> 0, "shell sunset derivative" -> 0, "twice subtracted resolvent" -> 0, 
+   "contact sum" -> 0, "uniform remainder sum" -> 0, "separated leading coefficient" -> 0, 
+   "large order spectral weight" -> 0, "Wick connected coefficients" -> {0, 0, 0}|>, 
+ "AllSymbolicZero" -> True, "Constants_A_B" -> {0.00046672754543497015133395086393575578`20., 
+   5.22648582227039736280800477526209`20.*^-6}, "KLRows_r_exact_partial100_relativeMissingTail" -> 
+  {{1/5, 234.58021310200112715333316236328112054146`16., 
+    234.58021310198808937556210551520386472089`16., 5.557918802549517785793926`6.*^-14}, 
+   {7/10, 0.08199719197902692837330605480989467933`16., 
+    0.08199719197902692837330605480989467933`16., 1.285338063428052874244`2.2654515442779912*^-56}, 
+   {2, 6.86491212650056448163316884458728`16.*^-6, 6.86491212650056448163316884458728`16.*^-6, 
+    0``57.91896217493733}}, "BesselInequality20Samples" -> True, 
+ "SliceRows_z_partial160_subtractedCorrection_missingTailBound_globalLowerBound" -> 
+  {{1, -8.6391339176193409884604297775`18.*^-9, 1.614935526858230936949586`6.*^-14, 
+    -8.94250178429786091331718816664`18.*^-9}, {1/10, -8.9392631795593313050879253444`18.*^-10, 
+    1.61493552685823093694959`6.*^-15, -8.9425017842978609133171881667`18.*^-10}, 
+   {1/100, -8.942453388954145437614793417`18.*^-11, 1.6149355268582309369496`6.*^-16, 
+    -8.942501784297860913317188167`18.*^-11}, 
+   {1/1000, -8.9424853124805603664506826071882085273576623074`18.*^-12, 
+    1.614935526858230936949`6.*^-17, -8.9425017842978609133171881666410320282622358375`18.*^-12}}, 
+ "TailConvention" -> 
+  "Full correction lies between partial minus missingTailBound and partial; lambda=ell=k=1.", 
+ "Messages" -> {}|>
+<|SymbolicResiduals -> <|radial differential identity -> 0, cutoff finite contact relation -> 0, bubble spectral coefficients through degree12 -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, triple spectral coefficients through degree12 -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, shell fish value -> 0, shell fish derivative -> 0, shell sunset value -> 0, shell sunset derivative -> 0, twice subtracted resolvent -> 0, contact sum -> 0, uniform remainder sum -> 0, separated leading coefficient -> 0, large order spectral weight -> 0, Wick connected coefficients -> {0, 0, 0}|>, AllSymbolicZero -> True, Constants_A_B -> {0.00046672754543497015133395086393575578`20., 5.22648582227039736280800477526209`20.*^-6}, KLRows_r_exact_partial100_relativeMissingTail -> {{1/5, 234.58021310200112715333316236328112054146`16., 234.58021310198808937556210551520386472089`16., 5.557918802549517785793926`6.*^-14}, {7/10, 0.08199719197902692837330605480989467933`16., 0.08199719197902692837330605480989467933`16., 1.285338063428052874244`2.2654515442779912*^-56}, {2, 6.86491212650056448163316884458728`16.*^-6, 6.86491212650056448163316884458728`16.*^-6, 0``57.91896217493733}}, BesselInequality20Samples -> True, SliceRows_z_partial160_subtractedCorrection_missingTailBound_globalLowerBound -> {{1, -8.6391339176193409884604297775`18.*^-9, 1.614935526858230936949586`6.*^-14, -8.94250178429786091331718816664`18.*^-9}, {1/10, -8.9392631795593313050879253444`18.*^-10, 1.61493552685823093694959`6.*^-15, -8.9425017842978609133171881667`18.*^-10}, {1/100, -8.942453388954145437614793417`18.*^-11, 1.6149355268582309369496`6.*^-16, -8.942501784297860913317188167`18.*^-11}, {1/1000, -8.9424853124805603664506826071882085273576623074`18.*^-12, 1.614935526858230936949`6.*^-17, -8.9425017842978609133171881666410320282622358375`18.*^-12}}, TailConvention -> Full correction lies between partial minus missingTailBound and partial; lambda=ell=k=1., Messages -> {}|>

@@ -1,0 +1,35 @@
+<|"Conventions" -> "Unit two-point; scalar channel; spacelike transfer; g=4sqrt(2)d/N, c=-g/2", 
+ "ExactResiduals" -> <|"BFRescaling" -> 0, "TimelikeKernelODE" -> 0, "TimelikeJump" -> 0, 
+   "SpacelikeKernelODE" -> 0, "SpacelikeJump" -> 0, "ZeroMomentumKernel" -> 0, 
+   "AngularParticularEquation" -> 0, "SmallRadiusCoefficients" -> 0, "UnitCoupling" -> 0, 
+   "TriangleAngularSupport" -> 0, "TrianglePhaseSpace" -> 0, "TriangleFourierFactor" -> 0, 
+   "BubbleFourierFactor" -> 0, "AngularRationalIntegral" -> 0, "HorizonCancellation" -> 0, 
+   "UnitEuclideanTreePrefactor" -> 0, "DoubleCutNormalization" -> 0, "BesselResolventMass" -> 0, 
+   "ConeVolumeUnitMeasure" -> 0, "VelocityDiscriminant" -> 0, "VelocityIntegralBound" -> 0, 
+   "CompactHSBound" -> 0|>, "SpacelikeSamples" -> 
+  {<|"Parameters_a_b_kappa_z" -> {7/10, 11/10, 6/5, 4/5}, "TripleBesselResidual" -> 
+     0``40.43718291786503, "TripleBesselTailBound" -> 
+     3.24989842752563144900176683473912174202619026729210342`30.*^-43, 
+    "AngularFormFactor_g1" -> -0.5917265085369102676688965294304198535150593910718192564002`40., 
+    "VolterraAngularResidual" -> 0``39.7402970595007, "GreenAngularResidual" -> 
+     0``39.750757719769716, "GreenTailBound" -> 
+     8.08584944003128371084374610252089061236576660588626129`29.69897000433602*^-43, 
+    "AmplitudeBoundPassed" -> True, "BoundaryRateBoundPassed" -> True|>, 
+   <|"Parameters_a_b_kappa_z" -> {2, 3, 4, 7/10}, "TripleBesselResidual" -> 
+     2.80684664865566062`1.8698350747643353*^-40, "TripleBesselTailBound" -> 
+     2.9249085847730683041015901512652095678235712405628931`30.*^-44, 
+    "AngularFormFactor_g1" -> -0.0178254692791286038766959400779246565845649192998428637828`40., 
+    "VolterraAngularResidual" -> 0``40.2007452723348, "GreenAngularResidual" -> 
+     -3.878945425095071758`1.8595599776867382*^-40, "GreenTailBound" -> 
+     2.43194314848538218921378427748838027632332326747449885`29.69897000433602*^-43, 
+    "AmplitudeBoundPassed" -> True, "BoundaryRateBoundPassed" -> True|>, 
+   <|"Parameters_a_b_kappa_z" -> {1, 1, 4/5, 6/5}, "TripleBesselResidual" -> 
+     4.888339452256363987`0.925510333489787*^-40, "TripleBesselTailBound" -> 
+     7.31227146193267076025397537816302391955892810140723269`30.*^-43, 
+    "AngularFormFactor_g1" -> -0.7995584585345471338470149219777920483574643007863986935976`40., 
+    "VolterraAngularResidual" -> 0``39.539463118905054, "GreenAngularResidual" -> 
+     -2.545020338226435519`0.02571978053749599*^-40, "GreenTailBound" -> 
+     1.81931612400703883493984287306720038778229748632440879`29.69897000433602*^-42, 
+    "AmplitudeBoundPassed" -> True, "BoundaryRateBoundPassed" -> True|>}, 
+ "DiscontinuityResiduals" -> {0``44.10537863005717 + 0``44.66585081450365*I, 
+   0``44.626242561108285 + 0``45.04229058676729*I}, "Messages" -> {}|>

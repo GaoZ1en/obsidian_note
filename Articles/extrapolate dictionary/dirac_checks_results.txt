@@ -1,0 +1,49 @@
+<|"Conventions" -> "AdS4; D=slashD-m; Omega=z/ell; canonical complex Dirac; 0<M<1/2", 
+ "ExactResiduals" -> <|"FactorizationPlus" -> 0, "FactorizationMinus" -> 0, 
+   "LegendreCoefficient" -> 0, "FourierCoefficient" -> 0, "SpectralCoefficient" -> 0, 
+   "BesselDerivative" -> 0, "MasslessKernel" -> 0|>, "MatrixInverseResiduals" -> 
+  {<|"Branch" -> 1, "Side" -> 1, "LeftMaxAbs" -> 0``57.54410622430572, 
+    "RightMaxAbs" -> 0``57.74895117673983|>, <|"Branch" -> 1, "Side" -> 2, 
+    "LeftMaxAbs" -> 0``57.95523342689805, "RightMaxAbs" -> 0``59.367839205470105|>, 
+   <|"Branch" -> -1, "Side" -> 1, "LeftMaxAbs" -> 0``57.238074154875655, 
+    "RightMaxAbs" -> 0``57.730147251726464|>, <|"Branch" -> -1, "Side" -> 2, 
+    "LeftMaxAbs" -> 0``57.9218775217677, "RightMaxAbs" -> 0``59.28084538043751|>}, 
+ "JumpResiduals" -> {<|"Branch" -> 1, "JumpMaxAbs" -> 0``57.580116826516765|>, 
+   <|"Branch" -> -1, "JumpMaxAbs" -> 0``57.58821869488105|>}, 
+ "PositiveNumeratorChecks" -> 
+  <|"AlphaSquares" -> {{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, 
+     {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}}, 
+   "AlphaAnticommutator" -> {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, 
+   "ProjectedEigenPolynomial" -> {0, 0}|>, "GlobalBesselBoundSamples" -> 
+  {<|"Beta" -> 1/4, "x" -> 1/100, "BoundPassed" -> True|>, <|"Beta" -> 1/4, "x" -> 1/2, 
+    "BoundPassed" -> True|>, <|"Beta" -> 1/4, "x" -> 1, "BoundPassed" -> True|>, 
+   <|"Beta" -> 1/4, "x" -> 3, "BoundPassed" -> True|>, <|"Beta" -> 1/4, "x" -> 10, 
+    "BoundPassed" -> True|>, <|"Beta" -> 1/4, "x" -> 100, "BoundPassed" -> True|>, 
+   <|"Beta" -> 3/4, "x" -> 1/100, "BoundPassed" -> True|>, <|"Beta" -> 3/4, "x" -> 1/2, 
+    "BoundPassed" -> True|>, <|"Beta" -> 3/4, "x" -> 1, "BoundPassed" -> True|>, 
+   <|"Beta" -> 3/4, "x" -> 3, "BoundPassed" -> True|>, <|"Beta" -> 3/4, "x" -> 10, 
+    "BoundPassed" -> True|>, <|"Beta" -> 3/4, "x" -> 100, "BoundPassed" -> True|>, 
+   <|"Beta" -> 9/10, "x" -> 1/100, "BoundPassed" -> True|>, <|"Beta" -> 9/10, "x" -> 1/2, 
+    "BoundPassed" -> True|>, <|"Beta" -> 9/10, "x" -> 1, "BoundPassed" -> True|>, 
+   <|"Beta" -> 9/10, "x" -> 3, "BoundPassed" -> True|>, <|"Beta" -> 9/10, "x" -> 10, 
+    "BoundPassed" -> True|>, <|"Beta" -> 9/10, "x" -> 100, "BoundPassed" -> True|>}, 
+ "EuclideanBoundSamples" -> {<|"Beta" -> 1/4, "MaximumSampledRatio" -> 
+     1.9999999993030335796642183106777773920506903189715340715721`40.|>, 
+   <|"Beta" -> 3/4, "MaximumSampledRatio" -> 
+     0.6661886778644958439994618344425510283929991084701868714462`40.|>, 
+   <|"Beta" -> 9/10, "MaximumSampledRatio" -> 
+     0.5247059105951096705387060763119794604826543830503662128611`40.|>}, 
+ "BoundaryLimitSamples" -> {<|"Branch" -> 1, "z" -> 1/100, "w" -> 1/100, 
+    "RelativeError" -> 0.0758154297521279321817858468090713952728850088909816943538`30.|>, 
+   <|"Branch" -> 1, "z" -> 1/10000, "w" -> 1/100, "RelativeError" -> 
+     0.0758870424866528556990747735705360649530904987119899582887`30.|>, 
+   <|"Branch" -> 1, "z" -> 1/1000000, "w" -> 1/1000000, "RelativeError" -> 
+     0.0003024077027478203938450864756688917215274820036118128014`30.|>, 
+   <|"Branch" -> -1, "z" -> 1/100, "w" -> 1/100, "RelativeError" -> 
+     0.0030398675678763470635657418232820233826968047305013196504`30.|>, 
+   <|"Branch" -> -1, "z" -> 1/10000, "w" -> 1/100, "RelativeError" -> 
+     0.0032201043316839307305263647400412748010317851933110548202`30.|>, 
+   <|"Branch" -> -1, "z" -> 1/1000000, "w" -> 1/1000000, "RelativeError" -> 
+     8.5389346527195688145626421134439125988536563214528`30.*^-9|>}, 
+ "FiniteWallIdentity" -> {<|"Mass" -> 1/5, "WallWronskianResidual" -> 0``58.580871258855616|>, 
+   <|"Mass" -> 2/5, "WallWronskianResidual" -> 0``58.033234516671186|>}, "Messages" -> {}|>

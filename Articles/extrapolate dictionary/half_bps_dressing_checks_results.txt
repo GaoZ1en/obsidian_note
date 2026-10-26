@@ -1,0 +1,117 @@
+<|"SourceAndWard" -> <|"Conventions" -> "AdS5 Euclidean; covariant stresses; unhalved scalar cross \
+stress; u^-3 pairing; mixed components twice", "Assumptions" -> "u>0, ell>0; Fourier test has \
+periodic x; radial integrals absolutely convergent; BF counterexample deliberately violates IR flux \
+decay", "Checks" -> <|"Generic cross-stress Ward identity" -> True, 
+     "Sourced identity div B = -F" -> True, "Generic covariant divergence components" -> True, 
+     "Adjoint example exact value" -> True, "Adjoint example equality" -> True, 
+     "Adjoint tangential conservation" -> True, "Adjoint radial conservation" -> True, 
+     "Radial string tangential Ward identity" -> True, "Radial string radial Ward identity" -> 
+      True, "BF mode sourcefree equation" -> True, "BF stress conserved" -> True, 
+     "BF tangent stress zero" -> True, "BF mixed stress zero" -> True, 
+     "BF radial stress nonzero 8u^2" -> True|>, "AllChecksPassed" -> True, 
+   "AdjointExample" -> <|"LHS" -> -21/16, "RHS" -> -21/16, "QuiAmplitude" -> 
+      -((AdS5DressingSourceChecks`u^3*(1 + AdS5DressingSourceChecks`u))/
+        E^AdS5DressingSourceChecks`u), "QuuAmplitude" -> 
+      -((AdS5DressingSourceChecks`u^2*(2 + 2*AdS5DressingSourceChecks`u + 
+          AdS5DressingSourceChecks`u^2))/E^AdS5DressingSourceChecks`u)|>, 
+   "Residuals" -> <|"CrossStressWard" -> {0, 0, 0, 0, 0}, "SourceWard" -> {0, 0, 0, 0, 0}, 
+     "CovariantComponents" -> {0, 0, 0, 0, 0}, "Adjoint" -> 0, "TangentialConservation" -> 0, 
+     "RadialConservation" -> 0, "StringTangential" -> 0, "StringRadial" -> 0|>, 
+   "RadialStringExample" -> 
+    <|"Rui" -> -((AdS5DressingSourceChecks`ell^2*AdS5DressingSourceChecks`u^3*
+         Sin[AdS5DressingSourceChecks`x])/E^AdS5DressingSourceChecks`u), 
+     "Ruu" -> -((AdS5DressingSourceChecks`ell^2*AdS5DressingSourceChecks`u^2*
+         (2 + AdS5DressingSourceChecks`u)*Cos[AdS5DressingSourceChecks`x])/
+        E^AdS5DressingSourceChecks`u)|>, "SourcefreeCounterexample" -> 
+    <|"Psi1" -> AdS5DressingSourceChecks`u^2, "Psi2" -> AdS5DressingSourceChecks`u^2, 
+     "B" -> {{8*AdS5DressingSourceChecks`u^2, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, 
+       {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}, "PAdjointOfTangentB" -> {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 
+      0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}, "EquationResidual" -> 0, 
+     "DivergenceResidual" -> {0, 0, 0, 0, 0}, "IRRadialFluxBuuOverUSquared" -> 8|>, 
+   "Messages" -> {}|>, "EndpointAndShell" -> 
+  <|"GeneralOrbit" -> <|"Residuals" -> <|"FirstOrbitRadialGauge" -> {0, {0, 0, 0, 0}}, 
+       "SecondOrbitTensor" -> {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, 
+       "CosModeRadialKinetic" -> 0, "CosModeSpatialKinetic" -> 0, "RadialActionSplit" -> 0|>, 
+     "IntegratedTraceH2" -> 8*AdS5DressingEndpointChecks`iSigma + AdS5DressingEndpointChecks`iGrad*
+        AdS5DressingEndpointChecks`u^2 + (AdS5DressingEndpointChecks`iLap*
+         AdS5DressingEndpointChecks`u^4)/4, "MetricTadpole" -> 
+      (3*AdS5DressingEndpointChecks`ell^3*AdS5DressingEndpointChecks`iLap)/
+        (8*AdS5DressingEndpointChecks`kap^2) + (12*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iSigma)/(AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^4) + (3*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iGrad)/(2*AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^2), "TangentEndpoint" -> 
+      (-3*AdS5DressingEndpointChecks`ell^3*AdS5DressingEndpointChecks`iLap)/
+        (8*AdS5DressingEndpointChecks`kap^2) + (12*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iSigma)/(AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^4) - (3*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iGrad)/(2*AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^2), "ShellEndpoint" -> 
+      (3*AdS5DressingEndpointChecks`ell^3*AdS5DressingEndpointChecks`iLap)/
+        (8*AdS5DressingEndpointChecks`kap^2) - (12*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iSigma)/(AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^4) + (3*AdS5DressingEndpointChecks`ell^3*
+         AdS5DressingEndpointChecks`iGrad)/(2*AdS5DressingEndpointChecks`kap^2*
+         AdS5DressingEndpointChecks`L^2), "ShellLimit" -> 
+      (3*AdS5DressingEndpointChecks`ell^3*AdS5DressingEndpointChecks`iLap)/
+       (8*AdS5DressingEndpointChecks`kap^2), "CompensatorInTailAmplitude" -> 
+      (3*AdS5DressingEndpointChecks`ell^3*AdS5DressingEndpointChecks`iA)/2, "Messages" -> {}|>, 
+   "OrientedShell" -> <|"Residuals" -> <|"OrientedGraphGeometry" -> 0, "UpperEndpoint" -> 0, 
+       "LowerShellEndpoint" -> 0|>, "GraphMeanCurvature" -> 
+      -((AdS5DressingEndpointChecks`o$39462*
+         (4 + 4*Derivative[1][AdS5DressingEndpointChecks`UU$39462][
+             AdS5DressingEndpointChecks`x$39462]^2 + AdS5DressingEndpointChecks`UU$39462[
+            AdS5DressingEndpointChecks`x$39462]*Derivative[2][AdS5DressingEndpointChecks`UU$39462][
+            AdS5DressingEndpointChecks`x$39462]))/(AdS5DressingEndpointChecks`ell$39462*
+         (1 + Derivative[1][AdS5DressingEndpointChecks`UU$39462][
+             AdS5DressingEndpointChecks`x$39462]^2)^(3/2))), "FlowGraphFirstOrder" -> 
+      AdS5DressingEndpointChecks`L$39462*Cos[AdS5DressingEndpointChecks`p$39462*
+         AdS5DressingEndpointChecks`x$39462], "FlowGraphSecondOrder" -> 
+      (2*AdS5DressingEndpointChecks`L$39462*Cos[AdS5DressingEndpointChecks`p$39462*
+            AdS5DressingEndpointChecks`x$39462]^2 + AdS5DressingEndpointChecks`L$39462^3*
+         AdS5DressingEndpointChecks`p$39462^2*Sin[AdS5DressingEndpointChecks`p$39462*
+            AdS5DressingEndpointChecks`x$39462]^2)/4, "OrbitAverage" -> 
+      (12*AdS5DressingEndpointChecks`ell$39462^3*AdS5DressingEndpointChecks`o$39462)/
+       (AdS5DressingEndpointChecks`kap$39462^2*AdS5DressingEndpointChecks`L$39462^4), 
+     "TadpoleAverage" -> (3*AdS5DressingEndpointChecks`ell$39462^3*
+        AdS5DressingEndpointChecks`o$39462*(32 + 4*AdS5DressingEndpointChecks`L$39462^2*
+          AdS5DressingEndpointChecks`p$39462^2 + AdS5DressingEndpointChecks`L$39462^4*
+          AdS5DressingEndpointChecks`p$39462^4))/(16*AdS5DressingEndpointChecks`kap$39462^2*
+        AdS5DressingEndpointChecks`L$39462^4), "UpperTangentAverage" -> 
+      (-3*AdS5DressingEndpointChecks`ell$39462^3*(-32 + 4*AdS5DressingEndpointChecks`L$39462^2*
+          AdS5DressingEndpointChecks`p$39462^2 + AdS5DressingEndpointChecks`L$39462^4*
+          AdS5DressingEndpointChecks`p$39462^4))/(16*AdS5DressingEndpointChecks`kap$39462^2*
+        AdS5DressingEndpointChecks`L$39462^4), "ShellAverage" -> 
+      (3*AdS5DressingEndpointChecks`ell$39462^3*(-32 + 4*AdS5DressingEndpointChecks`L$39462^2*
+          AdS5DressingEndpointChecks`p$39462^2 + AdS5DressingEndpointChecks`L$39462^4*
+          AdS5DressingEndpointChecks`p$39462^4))/(16*AdS5DressingEndpointChecks`kap$39462^2*
+        AdS5DressingEndpointChecks`L$39462^4), "ShellLimit" -> 
+      (3*AdS5DressingEndpointChecks`ell$39462^3*AdS5DressingEndpointChecks`p$39462^4)/
+       (16*AdS5DressingEndpointChecks`kap$39462^2), "Messages" -> {}|>, "AllResidualsZero" -> True, 
+   "Messages" -> {}|>, "ResponseAndScalarExamples" -> 
+  <|"Units" -> 
+    "Longitudinal probe: ell=kappa=p=1, per normalized Fourier pair; scalar moments k=1", 
+   "ExactResiduals" -> <|"RadialRInverse" -> 0, "RadialJInverse" -> 0, 
+     "TransverseTangentEinstein" -> 0, "LongitudinalTangentEinstein" -> 0, 
+     "MixedEinsteinConstraint" -> 0, "RadialEinsteinConstraint" -> 0, 
+     "FullConservedSourceMixed" -> 0, "FullConservedSourceRadial" -> 0, "ResponsePairing" -> 0, 
+     "TailU" -> 0, "TailV" -> 0, "TailCompatibility" -> 0, "KineticEndpoint" -> 0, 
+     "NaiveIRSurface" -> 0, "CompensatedAction" -> 0, "BoundaryEqualMagnitudeTail" -> 0|>, 
+   "AllExactResidualsZero" -> True, "ProbeResponse" -> 
+    <|"U" -> (-30 - (-30 - u$46282*(30 + u$46282*(15 + u$46282*(5 + u$46282))))/E^u$46282)/3, 
+     "V" -> (2*(30 + (15*(-14 + u$46282^2))/2 + 
+         (-30 - u$46282*(30 + u$46282*(15 + u$46282*(5 + u$46282))))/E^u$46282 + 
+         (105 + u$46282*(105 + u$46282*(45 + u$46282*(10 + u$46282))))/E^u$46282))/3, 
+     "CompletedQui" -> (I*u$46282^3*(1 + u$46282))/E^u$46282, 
+     "CompletedQuu" -> -((u$46282^2*(2 + 2*u$46282 + u$46282^2))/E^u$46282), "Pairing" -> 15, 
+     "RegularQuadraticAction" -> 15/2, "NaiveRadialAction" -> -30, "IRCompensator" -> 75/2|>, 
+   "BesselMoments" -> {2/3, 16/15, 8/5}, "FiniteScalarTailChecks" -> 
+    {<|"Radii" -> {1/2, 1/2}, "DirectStressMoment" -> 
+       -0.0614440193654226079423932824043385011313878320293839245287`40., 
+      "PredictedSliceMoment" -> -0.0614440193654226079423932824043385010116944488350580151755`40., 
+      "Residual" -> -1.196933831943259093532`3.988560529682183*^-37, "Within1e-18" -> True|>, 
+     <|"Radii" -> {1/5, 7/20}, "DirectStressMoment" -> 
+       -0.0103379321081455453096278677043937825364723749148154918518`40., 
+      "PredictedSliceMoment" -> -0.0103379321081455453096278677043937823953102025100594216847`40., 
+      "Residual" -> -1.411621724047560701671`4.834254661900354*^-37, "Within1e-18" -> True|>}, 
+   "AllNumericsPassed" -> True, "Messages" -> {}|>, "AllChecksPassed" -> True, "Messages" -> {}|>

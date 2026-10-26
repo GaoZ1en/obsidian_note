@@ -1,0 +1,40 @@
+<|"Conventions" -> <|"Signature" -> "(-+++)", "Channel" -> "p,q future timelike; a,b,k>0; s(p-q)=-k^2", 
+   "Order" -> "That(x), O(0), O(y); epsx>eps0>epsy; t->t-i eps", 
+   "Cut" -> "delta_+(s(r)) delta_+(s(p-r)) delta_+(s(q-r))", 
+   "Contacts" -> "Ordered Wightman continuation; no Euclidean source-contact additions", 
+   "Amputation" -> "Divide by rhoTT(p) rhoO(q); not square-root amputation", 
+   "Scope" -> "Open spacelike-transfer channel; no global amputation theorem at a=0"|>, 
+ "ExactResiduals" -> <|"PositionTensor16" -> {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, 
+   "CutConservation4" -> {0, 0, 0, 0}, "CutTrace" -> 0, "TTVertex" -> 0, "SpherePolarizationPolynomial" -> 0, 
+   "rhoTT" -> 0, "CutAngularMoment9" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "ShellInterior" -> 0, 
+   "PositiveRemainingEnergy" -> 0, "Unamputated" -> 0, "Amputated" -> 0, "SoftLimits4" -> {0, 0, 0, 0}|>, 
+ "AllExactResidualsZero" -> True, "FreeScalarCT" -> 1/(3*Pi^4), "TwoShellMomentPerPolarizationNorm" -> 
+  (a^4*Pi)/240, "UnitStressSpectralDensityInsideVplus" -> (a^4*Pi^3)/160, 
+ "UnitScalarSpectralDensityInsideVplus" -> 2*Pi^3, "ScalarTripleCut" -> 
+  Pi/(2*Sqrt[((a - b)^2 + k^2)*((a + b)^2 + k^2)]), "SpatialCutMoment" -> 
+  {{(a^2*(1 - (a^2 - b^2 + k^2)^2/(((a - b)^2 + k^2)*((a + b)^2 + k^2)))*Pi)/
+     (16*Sqrt[((a - b)^2 + k^2)*((a + b)^2 + k^2)]), 0, 0}, 
+   {0, (a^2*(1 - (a^2 - b^2 + k^2)^2/(((a - b)^2 + k^2)*((a + b)^2 + k^2)))*Pi)/
+     (16*Sqrt[((a - b)^2 + k^2)*((a + b)^2 + k^2)]), 0}, 
+   {0, 0, (a^2*(a^2 - b^2 + k^2)^2*Pi)/(8*((a - b)^2 + k^2)*((a + b)^2 + k^2)*
+      Sqrt[((a - b)^2 + k^2)*((a + b)^2 + k^2)])}}, "UnamputatedPerAhatEqq" -> 
+  (-12*a^4*((a^2 - b^2)^2 + 2*(a^2 - 2*b^2)*k^2 + k^4)*Pi^6)/(((a - b)^2 + k^2)*((a + b)^2 + k^2))^(5/2), 
+ "AmputatedPerAhatEqq" -> (-960*((a^2 - b^2)^2 + 2*(a^2 - 2*b^2)*k^2 + k^4))/
+   (((a - b)^2 + k^2)*((a + b)^2 + k^2))^(5/2), "PhysicalCoefficientPerEqq_nnMeansN" -> 
+  (128*Sqrt[10]*((a^2 - b^2)^2 + 2*(a^2 - 2*b^2)*k^2 + k^4))/((((a - b)^2 + k^2)*((a + b)^2 + k^2))^(5/2)*
+    nn), "NumericalQuadratures" -> {<|"Parameters_a_b_k" -> {2, 3, 1}, 
+    "Quadrature" -> -0.03556412370216319526697968485155780682024071289231129328880465753412265586893`60., 
+    "ClosedForm" -> -0.0355641237021631952669796848515578068202407128923112932888046575341226597529`60., 
+    "Residual" -> 0``61.14795789215984, "PassAbs1eMinus45" -> True|>, 
+   <|"Parameters_a_b_k" -> {1, 1, 2}, "Quadrature" -> 
+     0.07367025280109535868776333274335333939029347189015812869912008021738986257976`60., 
+    "ClosedForm" -> 0.07367025280109535868776333274335333939029347189015812869912008021738986264069`60., 
+    "Residual" -> 0``60.831677844187496, "PassAbs1eMinus45" -> True|>, 
+   <|"Parameters_a_b_k" -> {3, 1, 1/5}, "Quadrature" -> 
+     1.85680091410899247318897699108529725611486268019417571995334097940547279604015`60., 
+    "ClosedForm" -> 1.85680091410899247318897699108529725611486268019417571995334097940547279757531`60., 
+    "Residual" -> 0``59.43020466308356, "PassAbs1eMinus45" -> True|>}, "AllNumericalQuadraturesPass" -> True, 
+ "SoftLimits" -> <|"kToZero_aGreaterb_perAhatEqq" -> -960/(a^2 - b^2)^3, 
+   "kToZero_bGreatera_perAhatEqq" -> 960/(a^2 - b^2)^3, "aEqualsb_kMperAhatEnn" -> 60/a^3, 
+   "bToZero_perAhatEqq" -> -960/(a^2 + k^2)^3, "EqualMassNumerator_SignChange" -> -(k^2*(2*a^2 - k^2))|>, 
+ "Messages" -> {}|>

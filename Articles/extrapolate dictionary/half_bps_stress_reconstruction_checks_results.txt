@@ -1,0 +1,81 @@
+<|"Title" -> "Round21 independent gravitational T O reconstruction checks", 
+ "WolframVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Checks" -> <|"Normalization alpha" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Sourcefree relative-metric ODE" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Metric normalizable coefficient" -> <|"Passed" -> True, "Value" -> True|>, 
+   "J2 parameter derivative" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Triple-Bessel closed-form derivative" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Triangle-shell angular root" -> <|"Passed" -> True, "Value" -> True|>, 
+   "General FG scalar box variation" -> <|"Passed" -> True, "Value" -> True|>, 
+   "BF rescaling" -> <|"Passed" -> True, "Value" -> True|>, "Volterra diagonal zero" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Volterra derivative jump +1" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Volterra homogeneous equation off diagonal" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Lowest source term z4" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Volterra series through source z6" -> <|"Passed" -> True, "Value" -> True|>, 
+   "First TO term z6/36" -> <|"Passed" -> True, "Value" -> True|>, "Zero finite boundary coefficient" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Zero boundary logarithmic coefficient" -> 
+    <|"Passed" -> True, "Value" -> True|>, "No TO z2 or z4" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Canonical scalar stress TT density" -> <|"Passed" -> True, "Value" -> True|>, 
+   "Unit stress density" -> <|"Passed" -> True, "Value" -> True|>, "Independent Ward triangle amputation" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Ward coefficient equals regularity" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Counterexample M0 vanishes" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Counterexample finite-radius TO coefficient nonzero" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Stress spectral trace polynomial" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Uniform null-edge stress trace bound" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Stress sqrt-density bound constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Contracted T O density bound constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Compact cone Lebesgue spectral volume" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Hilbert-Schmidt vertex constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Normalized f2 positive integral measure" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Volterra majorant coefficient ratio" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Volterra majorant recurrence" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Angular quotient derivative bound identity" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Angular denominator derivative" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Angular denominator lower bound" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Delta-normalized external density product" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Delta-normalized K0 formula" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Unit-polarization sum 2/3" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Triangle angular numerator bound" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Velocity expression for D squared" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Longitudinal positive majorant integral" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Outer velocity null-edge integral" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Unweighted D inverse squared integral bound constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Matched K0 compact Hilbert-Schmidt constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "I0 difference positive-series majorant ratio" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Matched KB compact Hilbert-Schmidt constant" -> 
+    <|"Passed" -> True, "Value" -> True|>, "All triple-Bessel numerical residuals below 1e-27" -> 
+    <|"Passed" -> True, "Value" -> True|>, "All triple-Bessel tails below 5e-39" -> 
+    <|"Passed" -> True, "Value" -> True|>, "Matched Volterra equals regular Green numerically" -> 
+    <|"Passed" -> True, "Value" -> True|>|>, "TripleBesselNumerics" -> 
+  {<|"Parameters" -> {1, 2, 3}, "Integral" -> 
+     -0.0006625386599999376878249403462907485169427011234007232911`40., 
+    "Exact" -> -0.000662538659999937687824940346290748514204627662107118733`38., 
+    "Residual" -> -2.738073461293604558`2.6119124970985323*^-39, 
+    "TailBound" -> 1.25214777253085910637772128295954181870541067316`20.*^-126|>, 
+   <|"Parameters" -> {2, 1, 2}, "Integral" -> 
+     0.0385168217233234306560036287962077295367920074213120040031`40., 
+    "Exact" -> 0.0385168217233234306560036287962077295368168518997121466908`38., 
+    "Residual" -> 0``39.410028182784856, "TailBound" -> 6.2094610483338994431416503807665`20.*^-83|>, 
+   <|"Parameters" -> {1, 1, 1}, "Integral" -> 
+     -0.143108350559986540570187114798801679067922142506818583674`40., 
+    "Exact" -> -0.1431083505599865405701871147988016790681995750151376463534`38., 
+    "Residual" -> 0``38.84001365006546, "TailBound" -> 4.78074151585451309215266056602887809613`20.*^-39|>, 
+   <|"Parameters" -> {1, 1, Sqrt[2]}, "Integral" -> 
+     -4.2517526968308309423944566555400499620423803353374623519090945`40.*^-35, "Exact" -> 0, 
+    "Residual" -> -4.2517526968308309423944566555400499620423803353374623519090945`40.*^-35, 
+    "TailBound" -> 2.893765535469345527130259828721385700793`20.*^-57|>}, 
+ "MatchedGreenNumerics" -> <|"Parameters" -> {1, 2, 3, 7/10}, "AlphaQ" -> 1, 
+   "Volterra" -> -0.0155423104237951388949361125601837938801149649379256977184`30., 
+   "Regular" -> -0.015542310423795138894936112560183793891684303046208535022`30., 
+   "Residual" -> 1.15693381082828373036`3.6976322110858737*^-38|>, 
+ "Series" -> <|"Metric" -> z^4 - (a^2*z^6)/12 + (a^4*z^8)/384, "NormalizedVolterra" -> 
+    z^6/36 + ((-1/12*a^2 - b^2/4 + k^2/36)*z^8)/64, "PhysicalTOCorrection" -> 
+    -(al*qq*(z^6/36 + ((-1/12*a^2 - b^2/4 + k^2/36)*z^8)/64))|>, 
+ "NormBound" -> "||B_TO(z,f) Psi_n|| <= |alpha| C_n ||fhat||_infinity (B^8/96) (z^6/36) I0(sqrt(S) z) \
+||Psi_n||; B=R+M, C_n=sqrt((n+1)(n+2))+2n+sqrt(n(n-1)); dnu=d^4p/(2Pi)^4.", 
+ "MatchedCompactHSBound" -> "Including null and diagonal edges in the specified spacelike mixed block: \
+||K0||HS <= |alpha| Pi B^2/(8 Sqrt[15]); ||Kz-K0||HS <= |alpha| I0(2 B z) [Pi B^4 z^2/(8 Sqrt[15])+B^8 \
+z^6/3456]. Multiply by ||fhat||_infinity for Fourier smearing. Measures are dnu(p)dnu(q). No additional \
+edge-supported distributions are included.", "Scope" -> "Analytic inequalities use the stated \
+positive-integral and phase-space arguments; finite CAS checks do not establish a full interacting operator \
+algebra or unrestricted Schwartz temperedness.", "Messages" -> {}, "AllPassed" -> True|>

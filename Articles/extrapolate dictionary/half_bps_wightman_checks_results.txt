@@ -1,0 +1,50 @@
+<|"ExactResiduals" -> <|"DividedDifferenceODE" -> 0, "ResonantLimit" -> 0, "ZeroMassLimit" -> 0, 
+   "SquaredMassDerivative" -> 0, "NearBoundaryQuotient" -> 0, "AngularSeriesCoefficient" -> 0, 
+   "RetardedVolterraSubtraction" -> 0, "AbsorptiveCancellation" -> 0, "DiscriminantIdentity" -> 0, 
+   "TriangleAngularExclusion" -> 0, "HomogeneousCancellation" -> 0, "VertexNormalization" -> 0, 
+   "OrderedWightmanNormalization" -> 0, "VelocityLogIntegral" -> 0, "ExactGramCapIntegral" -> 0|>, 
+ "DividedDifferenceSamples" -> {<|"Parameters_t_m_n_z" -> {3, 1, 1, 7/10}, 
+    "AngularA" -> 
+     0.08623342097848419642425982945792616798286088405100229048124243316202626017956`50., 
+    "VolterraResidual" -> -3.18950422458914513826559887181`3.2670175706568476*^-48, 
+    "GlobalBoundPassed" -> True|>, <|"Parameters_t_m_n_z" -> {1, 3, 1, 4/5}, 
+    "AngularA" -> 
+     0.10253543037944565785950416976046442661658836115959069730354850723482332911512`50., 
+    "VolterraResidual" -> 0``50.68809604568076, "GlobalBoundPassed" -> True|>, 
+   <|"Parameters_t_m_n_z" -> {2, 1, 1, 3/5}, "AngularA" -> 
+     0.07844180864512407906380638560869877605255915832644919852519580493842550259624`50., 
+    "VolterraResidual" -> -9.43956769698809874132879147541`3.779374511037743*^-48, 
+    "GlobalBoundPassed" -> True|>, <|"Parameters_t_m_n_z" -> {1, 2, 1, 9/10}, 
+    "AngularA" -> 
+     0.14920715173450780885094929482723310629509107879335661583539260533509774493912`50., 
+    "VolterraResidual" -> 0``50.52518036427983, "GlobalBoundPassed" -> True|>, 
+   <|"Parameters_t_m_n_z" -> {1, 1, 1, 7/10}, "AngularA" -> 
+     0.11169372872192772049123544864831337374144396972623817003684546930969855682768`50., 
+    "VolterraResidual" -> 0``50.650941214908144, "GlobalBoundPassed" -> True|>, 
+   <|"Parameters_t_m_n_z" -> {0, 0, 0, 4/5}, "AngularA" -> 
+     0.16000000000000000000000000000000000000000000000000000000000281573992869804176`50., 
+    "VolterraResidual" -> 0``50.494850021680094, "GlobalBoundPassed" -> True|>, 
+   <|"Parameters_t_m_n_z" -> {0, 1, 1, 3/5}, "AngularA" -> 
+     0.08606925032276641180409207710708554821804105815175172912457359153254167670084`50., 
+    "VolterraResidual" -> 0``50.76412198412979, "GlobalBoundPassed" -> True|>}, 
+ "FullTimelikeSamples" -> {<|"FutureParameters_a_b_d_z1_z2_z3" -> {3, 1, 1, 3/10, 7/10, 1/2}, 
+    "AmputatedW_g1" -> 
+     0.16714663391765308715226402840757286465875564769306371830640800382151722887636`49.52287874528\
+033, "RetardedVolterraResidual" -> 0``49.89600420481205, "BoundaryRateBoundPassed" -> True|>, 
+   <|"FutureParameters_a_b_d_z1_z2_z3" -> {5/2, 3/4, 5/4, 1/5, 2/5, 3/5}, 
+    "AmputatedW_g1" -> 
+     0.08301837096824507382320211400447622786259538103319753035189957171046001505541`49.52287874528\
+0345, "RetardedVolterraResidual" -> 8.958444748763793816542127634`0.6388618115904124*^-50, 
+    "BoundaryRateBoundPassed" -> True|>}, "RegulatedResolventSamples" -> 
+  {<|"epsilon" -> 1/10, "OuterImaginary" -> 
+     -0.0021865805697371723176075042639944559130005584215903384479`40., 
+    "MiddleImaginary" -> 0.0012287510883349041130462562661150689176746924425451584509`40., 
+    "OuterResolventBoundPassed" -> True, "MiddleResolventBoundPassed" -> True|>, 
+   <|"epsilon" -> 1/100, "OuterImaginary" -> 
+     -0.0002187162102033852469859532903521665980347950074008177825`40., 
+    "MiddleImaginary" -> 0.0001229752676777113903836134615057385379068962656262360868`40., 
+    "OuterResolventBoundPassed" -> True, "MiddleResolventBoundPassed" -> True|>, 
+   <|"epsilon" -> 1/1000, "OuterImaginary" -> 
+     -0.0000218716791912438404497159107124649504588017191724450102`40., 
+    "MiddleImaginary" -> 0.0000122976270173074350209531346126480833683569293603631783`40., 
+    "OuterResolventBoundPassed" -> True, "MiddleResolventBoundPassed" -> True|>}, "Messages" -> {}|>

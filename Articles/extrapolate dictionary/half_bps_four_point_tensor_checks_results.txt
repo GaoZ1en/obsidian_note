@@ -1,0 +1,5 @@
+<|"Dimension" -> 5, "Signature" -> "Euclidean", 
+ "MassSquared" -> "arbitrary constant mm; BF value -4/ell^2", 
+ "ContractionOnlyResidual" -> CD[-a][CD[-b][q[]]]*CD[a][p[]] + CD[-a][CD[-b][p[]]]*CD[a][q[]] - 
+   CD[a][q[]]*CD[-b][CD[-a][p[]]] - CD[a][p[]]*CD[-b][CD[-a][q[]]], 
+ "ScalarHessiansSortedResidual" -> 0, "Zero" -> True, "Messages" -> {}|>

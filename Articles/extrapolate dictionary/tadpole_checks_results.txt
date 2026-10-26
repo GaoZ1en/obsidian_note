@@ -1,0 +1,16 @@
+<|"FiniteParts" -> <|"geodesic-leading" -> -1/12*1/(l^2*Pi^2), "Hadamard-U" -> -1/48*1/(l^2*Pi^2), 
+   "conformal-direct" -> -1/16*1/(l^2*Pi^2)|>, "SymbolicResiduals" -> 
+  <|"geodesic finite part" -> 0, "Hadamard finite part" -> 0, "conformal finite part" -> 0, 
+   "momentum logarithmic coefficient" -> 0, "position logarithmic coefficient" -> 0, 
+   "small-argument mass insertion" -> 0, "inner radial primitive" -> 0, "outer radial primitive" -> 0, 
+   "physical local subtraction expansion" -> 0, "schemes at fixed physical mass" -> 0|>, "AllSymbolicZero" -> True, 
+ "Rows_t_orderDerivative_finiteDifferenceError" -> {{1/100, -1.89334451935389751857725693675939657638`16., 
+    5.5516851633607310769336596491334981`6.*^-24}, {1/10, -1.39575838226204622913136428359649746926`16., 
+    1.8779757362451486810530765454222337`6.*^-24}, {1, -0.2034775571589864677402709104306312266`16., 
+    3.81920405767935744221435495812457`6.*^-26}, {5, -0.00215920004714820668065366713076591219`16., 
+    1.730077112097352787754418646367`6.*^-28}}, "Rows_z_renormalizedMassDerivative_boundaryTarget_error" -> 
+  {{1/10, 1.33791318253043441249360608276660058813`16., -0.07749119820238953979000964449809742255`16., 
+    1.4154043807328239523`8.}, {1/1000, -0.03644812455753975865955332946251795449`16., 
+    -0.07749119820238953979000964449809742255`16., 0.0410430736448497811`8.}, 
+   {1/1000000, -0.07740953886415162911674829884647662616`16., -0.07749119820238953979000964449809742255`16., 
+    0.00008165933823791067326134565162079639`8.}}, "Messages" -> {}|>

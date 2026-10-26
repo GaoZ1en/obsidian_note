@@ -1,0 +1,33 @@
+Maxwell AdS3 verification: output of maxwell_ads3_checks.wl.
+Canonical action, A=a log(z/ell)+b, stable no-log domain unless explicitly testing finite-f Robin domains.
+
+<|ExactResiduals -> <|
+ transverse Green equation -> 0,
+ Wronskian jump -> 0,
+ bound-state eigenvalue -> 0,
+ bound-state norm -> 0,
+ renormalized derivative norm -> 0,
+ bound logarithmic data -> 0,
+ mixed pole scale -> 0,
+ mixed endpoint ratio -> 0,
+ magnetic scalar derivative -> 0,
+ electric regular derivative -> 0,
+ Lorentz scalar derivative -> 0,
+ imaginary-time boundary normalization -> 0,
+ Gaussian source functional -> 0,
+ source pole residue -> 0|>,
+ AllExactZero -> True,
+ LogRemainderRatioRange -> {
+  3.73286051840594758311725161723876322959304893555281224655316362205753437`50.*^-6,
+  0.41711315929785617138264039206614898064511963941348815917224587068830736635041`50.},
+ BesselBounds18 -> {True,True,True,True,True,True,True,True,True,
+                   True,True,True,True,True,True,True,True,True},
+ Messages -> {}|>
+
+The logarithmic remainder sample is
+ |I0(r*y) K0(y) + log(y/2) + EulerGamma| / y,
+ with r={1,1/1000,1/10^7} and y={1/10^6,1/100,1/2,1,5,50,500}.
+This tests beta=1 at finitely many unequal-radius ratios; the manuscript proves the full 0<beta<2 theorem analytically.
+Bessel tests use x={1/1000,1/10,1,3,10,30} and check
+ |J0(x)|<=1, |J0(x)-1|<=x^2/4, |J1(x)|<=x/2.
+No numerical sample is used in place of the bound-state or uniform-limit proof.

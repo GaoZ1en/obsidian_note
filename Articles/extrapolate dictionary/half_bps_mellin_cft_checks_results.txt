@@ -1,0 +1,40 @@
+<|"Checks" -> <|"SixPolarizationStructures" -> True, "WickGraphMultiplicities" -> True, 
+   "AllWickPairings" -> True, "ProjectedWardPolynomial" -> True, "ReducedToOrdinaryShift" -> True, 
+   "CrossingST" -> True, "CrossingSU" -> True, "StressPoleResidue" -> True, 
+   "BarnesStressBlockSeries0to8" -> True, "Rank4Traceless" -> True, "Rank4Norm" -> True, 
+   "Rank4NonzeroComponent" -> True, "DbarNormalization" -> True, "FlatBoxLogA0" -> True, 
+   "FlatBoxLogA1" -> True, "Dbar2422DifferentialOperator" -> True, "DbarLeadingAtV1" -> True, 
+   "DbarLogAtV1" -> True, "BarnesOneFifth" -> True, "PositionAndBarnesOPEAgree" -> True, 
+   "NoDelta2ScalarAtV1" -> True, "U2LogUCoefficientTimesN2" -> True, 
+   "ConditionalSingletGammaTimesN2" -> True, "ClusterWorstDegrees" -> True, 
+   "AllNestedBulkClusterMarginsPositive" -> True, "ExactResponseNormBridgeAlgebra" -> True, 
+   "UnhalvedStressExactNorm" -> True, "UnhalvedStressUniformNormBound" -> True|>, 
+ "AllPassed" -> True, "Projection" -> {1, 1, 1, 1/6, 1/6, 1/6}, 
+ "WickMultiplicities" -> {4, 4, 4, 16, 16, 16}, "OrdinaryMellinTimesN2" -> 
+  1/3 + (-((4/3 + (s - t)^2)/(6 - s - t)) - (4/3 + (-8 + 2*s + t)^2)/(-2 + t) - 
+     (4/3 + (-8 + s + 2*t)^2)/(-2 + s))/2, "ResidueTimesN2" -> (-2*(28 - 18*t + 3*t^2))/3, 
+ "BarnesMoments0to4" -> {1, 1/2, 1/6, 0, -1/30}, "StressSeriesInVminus1" -> 
+  {0, 0, 2/45, -1/15, 8/105, -5/63, 5/63, -7/90, 112/1485}, "Rank4Norm" -> 5/12, 
+ "GFFScalarCoefficientsSinglet20prime10584" -> {1/10, 0, 5/6, 16/15}, "D2422Prefactor" -> Pi^2/6, 
+ "FlatBoxLogA0" -> Log[v]/(1 - v), "FlatBoxLogA1" -> (2*(-1 + v) - (1 + v)*Log[v])/(-1 + v)^3, 
+ "FlatBoxA1SeriesAtV1" -> SeriesData[w, 0, {-1/6, 1/6, -3/20, 2/15, -5/42}, 0, 5, 1], 
+ "DbarLeadingAtV1" -> 1/3, "DbarLogAtV1" -> 1/5, "BarnesOneFifth" -> 1/5, 
+ "U2LogUCoefficientTimesN2" -> -4/5, "ConditionalSingletGammaTimesN2" -> -16, 
+ "GammaCondition" -> "Unique light leading-Delta4 singlet scalar doubletrace [O2 O2]_1 at strong \
+coupling, a0=1/10; protected 105/84 gamma=0, marginal singlet descendant separated coupling=0; no \
+finite-N mixing resolution.", "ClusterWorstExponentsFor2Through4Points" -> 
+  <|"D1122/P12" -> {-2, -4, -8}, "P13 D2132/P12" -> {-2, -4, -8}, 
+   "P13P24 D2233/P12" -> {-2, -4, -8}, "P14P23 D2233/P12" -> {-2, -4, -8}, 
+   "P12P34 D2233/P12" -> {0, -4, -8}, "D2222" -> {0, -4, -8}|>, 
+ "JointBulkClusterMinimumMarginsFor1Through4Points" -> <|"D1122/P12" -> {2, 2, 4, 4}, 
+   "P13 D2132/P12" -> {2, 2, 4, 4}, "P13P24 D2233/P12" -> {4, 2, 4, 4}, 
+   "P14P23 D2233/P12" -> {4, 2, 4, 4}, "P12P34 D2233/P12" -> {4, 4, 4, 4}, 
+   "D2222" -> {4, 4, 4, 4}|>, "UnhalvedStressSquaredNormOverF34Squared" -> 64 + 192*zeta^2, 
+ "ExchangeContactMajorantConstant" -> 64/3, "BridgeScope" -> "Given independently audited h2=-W q \
+q/3 and fixed UV frame/regular inverse: |h2|=4F12/3; unhalved B34 has \
+|B34|^2=64F34^2(1+3*zeta^2)<=256F34^2, so |h2:B34|<=(64/3)F12F34. Positive contact Schwartz bound \
+implies Fubini; no arbitrary diagonal counterterm is inserted.", 
+ "NotVerifiedHere" -> {"Arbitrary inverse-Mellin contour equivalence", 
+   "Finite-N Delta4 operator mixing", 
+   "Einstein response tensor equation and full position identity (separate checks)"}, 
+ "Messages" -> {}|>

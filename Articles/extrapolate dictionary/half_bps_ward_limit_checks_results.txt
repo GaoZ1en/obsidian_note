@@ -1,0 +1,18 @@
+Actual output of a fresh Mathematica MCP kernel, 2026-10-26.
+Input: the Block/Module expression retained in half_bps_ward_limit_checks.wl.
+
+<|WronskianResidual -> 0,
+  IntegralH -> (3*Pi)/4,
+  SampleMaxSqrtTH -> 0.76942658175156801538138262809036673987559404198067714435402955704580491781915`59.248773574888716,
+  DiagonalDerivativeSeries -> SeriesData[t, 0, {(-EulerGamma + Log[2] - Log[t])/2}, 2, 3, 1],
+  Messages -> {}|>
+
+Interpretation:
+- The Wronskian identity exactly cancels the separate bare-covariance and log(max(a,b)) first-derivative jumps.
+- IntegralH fixes the TT uniform radial majorant coefficient 3 Pi/4.
+- SampleMaxSqrtTH is only a finite sample, not an upper-bound proof. Analytic small/large argument asymptotics establish a finite global supremum.
+- The diagonal radial Euler derivative divided by 2 Pi^2 starts at t^2[-EulerGamma+Log[2]-Log[t]]/2 and vanishes at the boundary.
+- No Wolfram messages were returned.
+
+Original automatically persisted machine output:
+/Users/koishi/.dsh/research-results/session-8d0770d51112/157d64fba051-research-result.json

@@ -1,0 +1,30 @@
+Mathematica code executed:
+```wl
+Get["/Users/koishi/Documents/Note/Articles/extrapolate dictionary/wightman_checks.wl"]
+```
+
+Output:
+<|"SymbolicResiduals" -> <|"half-order Wightman normalization" -> 0, 
+   "free position image normalization" -> 0, "subtracted Stieltjes normalization" -> 0, 
+   "mass cutoff dispersion" -> 0, "unequal free contact expansion" -> 0, 
+   "positive reflected plane-wave example" -> 0, "zero spatial momentum position match" -> 0, 
+   "boundary coefficient at zero spatial separation" -> 0, "tower sharp coefficient" -> 0, 
+   "tower position spectral match" -> 0, "ratio contact coefficients through r24" -> 0, 
+   "ratio contact equal cutoff limit" -> 0, "ratio contact soft corner" -> 0, 
+   "tower reflected leading coefficient" -> 0|>, "AllSymbolicZero" -> True, 
+ "SphericalBesselBound20Samples" -> True, 
+ "TowerRows_q_z_zprime_ratioToLeading_relativeTailBound" -> 
+  {{{1, 1/10, 1/5}, 0.99772960020970545661879181151244307827`18., 
+    1.489759897290548651365082962051`6.*^-66}, {{2, 1/100, 3/100}, 
+    0.99981819632053927453003822434707424166`18., 7.16916862483913206`6.*^-118}, 
+   {{3, 1/1000, 1/100}, 0.99995868254335635271862563845116279715`18., 
+    4.055476208278180123698383485`6.*^-165}}, 
+ "RatioContactRows_r_closed_sum100_missingTail_tailBound" -> 
+  {{1/10, 1.375209509294758668905259890588`20.*^-8, 1.375209509294758668905259890588`20.*^-8, 
+    9.25001491757162729`6.*^-214, 9.5037515467034059019`6.*^-212}, 
+   {1/2, 0.00001002484099647999907670062415078204`20., 
+    0.00001002484099647999907670062415078204`20., 1.179979738367358757038875232`6.*^-69, 
+    9.2409361050205860541868649652`6.*^-68}, {9/10, 0.00018403350881663021836874380161849035`20., 
+    0.0001840335088164626434430223658510795`20., 1.6757492572158983377352`6.*^-16, 
+    3.56329697102949698125976`6.*^-15}}, "Messages" -> {}|>
+<|SymbolicResiduals -> <|half-order Wightman normalization -> 0, free position image normalization -> 0, subtracted Stieltjes normalization -> 0, mass cutoff dispersion -> 0, unequal free contact expansion -> 0, positive reflected plane-wave example -> 0, zero spatial momentum position match -> 0, boundary coefficient at zero spatial separation -> 0, tower sharp coefficient -> 0, tower position spectral match -> 0, ratio contact coefficients through r24 -> 0, ratio contact equal cutoff limit -> 0, ratio contact soft corner -> 0, tower reflected leading coefficient -> 0|>, AllSymbolicZero -> True, SphericalBesselBound20Samples -> True, TowerRows_q_z_zprime_ratioToLeading_relativeTailBound -> {{{1, 1/10, 1/5}, 0.99772960020970545661879181151244307827`18., 1.489759897290548651365082962051`6.*^-66}, {{2, 1/100, 3/100}, 0.99981819632053927453003822434707424166`18., 7.16916862483913206`6.*^-118}, {{3, 1/1000, 1/100}, 0.99995868254335635271862563845116279715`18., 4.055476208278180123698383485`6.*^-165}}, RatioContactRows_r_closed_sum100_missingTail_tailBound -> {{1/10, 1.375209509294758668905259890588`20.*^-8, 1.375209509294758668905259890588`20.*^-8, 9.25001491757162729`6.*^-214, 9.5037515467034059019`6.*^-212}, {1/2, 0.00001002484099647999907670062415078204`20., 0.00001002484099647999907670062415078204`20., 1.179979738367358757038875232`6.*^-69, 9.2409361050205860541868649652`6.*^-68}, {9/10, 0.00018403350881663021836874380161849035`20., 0.0001840335088164626434430223658510795`20., 1.6757492572158983377352`6.*^-16, 3.56329697102949698125976`6.*^-15}}, Messages -> {}|>

@@ -1,0 +1,12 @@
+<|"AllResidualsExactlyZero" -> True, 
+ "Geometry" -> <|"BackgroundRicciResidual" -> {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, 
+     {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}, "BackgroundScalarResidual" -> 0, 
+   "LinearizedEinsteinResiduals21" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+     0}|>, "ActionAndADM" -> <|"IndependentSymmetricActionVariationResiduals10" -> 
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, "ADMScalarBoundaryDecompositionResidual" -> 0|>, 
+ "IntrinsicEHAndTraceChecks" -> <|"IntrinsicEHQuadraticModuloExplicitDivergenceResidual" -> 0, 
+   "ConformalRadialKineticResidual" -> 0, "ConformalSpatialKineticResidual" -> 0|>, 
+ "BoundaryBianchiAndTail" -> <|"ResidualBianchiComponents" -> {0, 0, 0, 0, 0}, 
+   "PolynomialTailSurfaceForm" -> 0|>, "Messages" -> {}, "Scope" -> "10 arbitrary components; no TT \
+restriction. Fourier geometry, local action variation, radial ADM endpoint and intrinsic EH checks. \
+Log/finite counterterms and boundary-domain/constraint reduction excluded."|>

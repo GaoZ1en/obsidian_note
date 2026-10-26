@@ -1,0 +1,10 @@
+<|"EinsteinAnsatzSolution" -> {{c -> 1/2, d -> -1/3, e -> 0, h -> 0}}, 
+ "Einstein25Residuals" -> {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0}}, "TwoCovariantTensorIdentityResiduals" -> 
+  {{{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}, 
+   {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}}, 
+ "ContractionResidual" -> 0, "DMellinPrefactors" -> {Pi^2/2, Pi^2/4, Pi^2/4}, 
+ "PerChannelMellinResidual" -> 0, "ExchangePolynomialSumInUnits1OverN2" -> -5, 
+ "ResidueInUnits1OverN2" -> -56/3 + 12*t - 2*t^2, "BarnesMomentResiduals" -> {0, 0, 0, 0, 0}, 
+ "LightconeUtimesOneMinusVPowers0Through2InUnits1OverN2" -> {0, 0, 2/45}, 
+ "PositionSpacePrefactor" -> 1/(2*nn^2*Pi^2), "Messages" -> {}|>

@@ -1,0 +1,41 @@
+<|"Conventions" -> "AdS5 canonical BF scalar; Omega=z/ell; logfree vacuum; IIB TrYIYJ=delta; SU(N) \
+canonical components", "BFIdentities" -> <|"RadialI" -> 0, "RadialK" -> 0, 
+   "WeightedWronskian" -> 0, "InvariantODE" -> 0, "FiveDimensionalSingularity" -> 0, 
+   "ExternalPositionKernel" -> 0, "ExternalBoundary" -> 0, "ExternalFourierNormalization" -> 0|>, 
+ "BoundaryVariation" -> <|"CutoffAction" -> 0, "CutoffVariation" -> 0, 
+   "InsertionSourceSign" -> 0|>, "CapPlusIR" -> 0, "IIBPotentialCoefficients" -> {0, 0, 0, 0}, 
+ "IIBKineticAndCubic" -> <|"CubicKineticTrace" -> 0, "GaugeCurrentNonzeroExample" -> 3/2, 
+   "CanonicalMass" -> 0, "CanonicalCubic" -> 0|>, "WickTwoPointResidual" -> 0, 
+ "WickThreePointResidual" -> 0, "SymmetricTripleTraceResiduals" -> {0, 0, 0, 0, 0, 0}, 
+ "NormalizationChecks" -> <|"CFTUnitTwoPoint" -> 0, "CFTUnitThreePoint" -> 0, 
+   "NewtonFluxNormalization" -> 0|>, "D222IntegralResidual" -> 0, 
+ "BulkUnitThreePointCoefficient" -> (-2*Sqrt[2])/nn, "BulkThreePointLeadingMatchResidual" -> 0, 
+ "CoulombCalibration" -> <|"D3QuadrupoleCoefficient" -> 0, "CartesianMetricLinearization" -> 0, 
+   "WorldvolumeFactor" -> 0, "RadialFactor" -> 0, "AngularTraceFactor" -> 0, 
+   "ProbeKineticNormalization" -> 0, "CoulombScalarCoefficient" -> 0, 
+   "CanonicalOperatorCoefficient" -> 0|>, "LogRemainderSamples" -> 
+  {<|"RadiusRatio" -> 0, "MaxRemainderOverY" -> 
+     0.3050929225822958845249073478368348991028789496358117371813`40.|>, 
+   <|"RadiusRatio" -> 1/10, "MaxRemainderOverY" -> 
+     0.3061461417113472631873033450369304530009153211033707703272`40.|>, 
+   <|"RadiusRatio" -> 1, "MaxRemainderOverY" -> 
+     0.4171131592978561713826403920661489806451196390940285457498`40.|>}, 
+ "J0Bounds" -> {<|"x" -> 1/1000, "BoundPassed" -> True|>, <|"x" -> 1/100, "BoundPassed" -> True|>, 
+   <|"x" -> 1/10, "BoundPassed" -> True|>, <|"x" -> 1/2, "BoundPassed" -> True|>, 
+   <|"x" -> 1, "BoundPassed" -> True|>, <|"x" -> 3, "BoundPassed" -> True|>, 
+   <|"x" -> 10, "BoundPassed" -> True|>, <|"x" -> 100, "BoundPassed" -> True|>}, 
+ "TripleKBoundaryIntegral" -> 0.4579827970886095075273017574661920553871911252111262406543`40., 
+ "TripleKFiniteRadiusSamples" -> 
+  {<|"Radius" -> 1/10, "FiniteIntegral" -> 
+     0.4012512467155304524485610556888660749111106470740278146161`40., 
+    "RelativeBoundaryError" -> 
+     0.123872666689056355728859005491885137749019530733816416106`38.8493782617659|>, 
+   <|"Radius" -> 1/100, "FiniteIntegral" -> 
+     0.456055635291528025933157669724515876305365148553672437473`40., 
+    "RelativeBoundaryError" -> 
+     0.0042079349035213184102112020671099971349208998551372047934`37.32487035572011|>, 
+   <|"Radius" -> 1/1000, "FiniteIntegral" -> 
+     0.4579419168901026904145202899801392177256648632802302396519`40., 
+    "RelativeBoundaryError" -> 
+     0.0000892614280857097381271486590548837916267174618970838613`35.64967260261111|>}, 
+ "Messages" -> {}|>

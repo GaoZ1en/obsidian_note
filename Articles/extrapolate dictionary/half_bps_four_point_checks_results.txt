@@ -1,0 +1,57 @@
+<|"ExactResiduals" -> <|"PotentialExpansion" -> 0, "NoncommutingKineticExpansion" -> {0, 0, 0}, 
+   "YNormalization" -> {0, 0, 0}, "YTracelessSquare" -> {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+     {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}, 
+   "AllScalarCubicZeros" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   "AllVectorCurrentZeros" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
+   "TransverseScalarForce" -> {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+     {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}, "ExactPotential" -> 0, 
+   "CanonicalKineticTrace" -> 0, "CanonicalQuartic" -> 0, "GeneralQuarticProjection" -> 0, 
+   "UActionQuarticCoefficient" -> 0, "ContactPositionNormalization" -> 0, 
+   "ContactMomentumNormalization" -> 0, "ContactMellinNormalization" -> 0, 
+   "BoxDifferentiation" -> 0, "HigherHarmonicCounterexample" -> {0, 0}, "DilationWardFlux" -> 0, 
+   "StressCentralCharge" -> 0, "UnitStressTensorCoefficientSquare" -> 0, 
+   "StressBlockAngularFactor" -> 0, "FreeFourDimensionalScalarBlockCheck" -> 0, 
+   "ExternalBesselExpansion" -> 0, "UnequalRadiusProfileCoefficient" -> 0|>, 
+ "AllExactResidualsZero" -> True, "BoundaryK0MomentTo20" -> 
+  0.0754499475661612499311927228306294654025094278812609698324`40., 
+ "BoundaryMomentTailBound" -> 
+  2.25447922697515479387970345213247518464689465018958555208735213`40.*^-34, 
+ "PredictedQuadraticProfileCoefficient" -> 
+  0.0268528459219844726317612989240955562630458901313515604439`40., 
+ "UnequalRadiusContactSamples" -> {<|"Radii_k1" -> {1/5, 1/10, 1/15, 1/20}, 
+    "RadialIntegralTo20" -> 0.0751953185221311527546270995735960685602176378850647084925`40., 
+    "TailBound" -> 2.286742371465799444543339514254466570837709725857067699106326`40.*^-34, 
+    "BoundaryDifference" -> 
+     -0.0002546290440300971765656232570333968422917899961962613399`37.227952450694296, 
+    "DifferenceDividedByMaxRadiusSquared" -> 
+     -0.0063657261007524294141405814258349210572947499049065334975`37.227952450694296, 
+    "RemainderAfterQuadraticBias" -> 
+     -0.0013287428809094760818360752139972190928136256014503237577`37.94239989161098|>, 
+   <|"Radii_k1" -> {1/20, 1/40, 1/60, 1/80}, "RadialIntegralTo20" -> 
+     0.0754963569118269808915423431691794344029878760159695260542`40., 
+    "TailBound" -> 2.25648582053559008839984913502961640369034197888031550691815883`40.*^-34, 
+    "BoundaryDifference" -> 
+     0.0000464093456657309603496203385499690004784481347085562217`36.48778296032626, 
+    "DifferenceDividedByMaxRadiusSquared" -> 
+     0.018563738266292384139848135419987600191379253883422488696`36.48778296032626, 
+    "RemainderAfterQuadraticBias" -> 
+     -0.0000207227691392302212297829087602698901791665906198226793`36.13743219793259|>, 
+   <|"Radii_k1" -> {1/100, 1/200, 1/300, 1/400}, "RadialIntegralTo20" -> 
+     0.0754525345806861434153664948882706402094781179416120951519`40., 
+    "TailBound" -> 2.25455946556492894720109469254702758205181138763013046413737705`40.*^-34, 
+    "BoundaryDifference" -> 
+     2.5870145248934841737720576411748069686900603511253195`35.23410248368073*^-6, 
+    "DifferenceDividedByMaxRadiusSquared" -> 
+     0.0258701452489348417377205764117480696869006035112531951546`35.23410248368073, 
+    "RemainderAfterQuadraticBias" -> 
+     -9.82700673049630894040722512347486576145286620098365`33.81371714196424*^-8|>, 
+   <|"Radii_k1" -> {1/1000, 1/2000, 1/3000, 1/4000}, "RadialIntegralTo20" -> 
+     0.0754499743898887196832166461660521289538992956705372120916`40., 
+    "TailBound" -> 2.25448002935067890009001306158063432456998287365478290089730453`40.*^-34, 
+    "BoundaryDifference" -> 
+     2.68237274697520239233354226635513898677892762422591`33.249830112829365*^-8, 
+    "DifferenceDividedByMaxRadiusSquared" -> 
+     0.0268237274697520239233354226635513898677892762422591368103`33.249830112829365, 
+    "RemainderAfterQuadraticBias" -> 
+     -2.91184522324487084258762605441663952566138890925`30.285479194239826*^-11|>}, 
+ "Messages" -> {}|>

@@ -1,0 +1,20 @@
+<|"SymbolicResiduals" -> <|"Laplace-transformed internal line ODE" -> 0, "boundary exchange integral" -> 0, 
+   "sixpoint expansion" -> 0, "slab endpoint" -> {0, 0}, "slab normal derivative" -> 0, 
+   "cubic source coefficient" -> 0, "sixpoint channel count" -> 0, "tree functional coefficient" -> 0, 
+   "nonlinear source-map coefficient" -> 0, "uniform radial majorant" -> 0, 
+   "nonlinear jump through cubic radius" -> 0|>, "AllSymbolicZero" -> True, 
+ "NumericalChannels" -> {<|"configuration" -> {{1, 1, 1}, {1, 1, 1}, Sqrt[3]}, 
+    "boundary" -> 0.00744303312308674184645982384705910092`14., "expectedQuadratic" -> 
+     -0.11935188612002552880079554200235366239`14., "rows_z_kernel_quadraticRatio_quadratureDifference" -> 
+     {{1/10, 0.00663408981614359314806011527197645533`14., -0.08089433069431486983997085750826455906`14., 
+       0``50.40164024620493}, {1/100, 0.00743156703965001985961443184414979935`14., 
+       -0.11466083436721986845392002909301568217`14., 0``50.3909457342041}, 
+      {1/1000, 0.00744291425024787285104239782891621391`14., -0.11887283886899541742601814288701172343`14., 
+       0``50.39528638864289}}|>, <|"configuration" -> {{1, 1, Sqrt[2]}, {2, 1, Sqrt[5]}, 0}, 
+    "boundary" -> 0.00646656724389242808850282595987185629`14., "expectedQuadratic" -> 
+     -0.13007421042913584990921873897399857255`14., "rows_z_kernel_quadraticRatio_quadratureDifference" -> 
+     {{1/10, 0.00563220023631219499071345076015092957`14., -0.08343670075802330977893751997209267222`14., 
+       0``50.48853840008596}, {1/100, 0.00645414620840272733430072462074993844`14., 
+       -0.12421035489700754202101339121917845079`14., 0``50.45497809186858}, 
+      {1/1000, 0.00646643777057088173917561414339520368`14., -0.12947332154634932721181647665260844473`14., 
+       0``50.45666279192571}}|>}, "Messages" -> {}|>

@@ -1,0 +1,30 @@
+<|"Checks" -> <|"ZeroBoundarySeriesResidual" -> 0, "BoundaryQuadrupoleZero" -> 0, 
+   "FirstNonzeroCorrection" -> -1/36, "NextCorrection" -> (a$8553^2/12 + b$8553^2/4 - k$8553^2/36)/
+     64, "Rows" -> {<|"Parameters" -> {1, 1, 1, 1}, "BoundaryM0" -> 
+       -1.14486680447989232456149691839041343255`22., "FreeTerm" -> 
+       -1.44947679572297178488012501675437159847`22., "VolterraFull" -> 
+       -1.47280905433503906796174625752812048206`22., "RegularFull" -> 
+       -1.47280905433503906796174625752812048206`22., "Difference" -> 
+       -7.89915503101499901035932489805823563`8.*^-41, "OmittedTailUpperBound" -> 
+       1.82575501506914447062`8.*^-38, "NumericalAgreement" -> True|>, 
+     <|"Parameters" -> {1, 1, 1, 10}, "BoundaryM0" -> 
+       -1.14486680447989232456149691839041343255`22., "FreeTerm" -> 
+       -3223.62049875305697674348350154053976546904`22., "VolterraFull" -> 
+       -30.6234463587116201854482572560384066306`22., "RegularFull" -> 
+       -30.6234463587116201854482572560384066306`22., "Difference" -> 
+       -2.508670404086857761235390274193003962`8.*^-41, "OmittedTailUpperBound" -> 
+       6.190412534305627096`8.*^-39, "NumericalAgreement" -> True|>, 
+     <|"Parameters" -> {1, 1, Sqrt[2], 1}, "BoundaryM0" -> 0, "FreeTerm" -> 0, 
+      "VolterraFull" -> -0.02372900842637633543189035461012800409`22., 
+      "RegularFull" -> -0.02372900842637633543189035461012800409`22., 
+      "Difference" -> -1.554690878780861040221891674965128781`8.*^-41, 
+      "OmittedTailUpperBound" -> 3.7692055331039383317`8.*^-39, "NumericalAgreement" -> True|>, 
+     <|"Parameters" -> {1, 2, 3, 7/10}, "BoundaryM0" -> 
+       -0.00530030927999950150259952277032598811`22., "FreeTerm" -> 
+       -0.01296605717245681870043787488633466514`22., "VolterraFull" -> 
+       -0.01554231042379513889493611256018379388`22., "RegularFull" -> 
+       -0.01554231042379513889493611256018379388`22., "Difference" -> 
+       4.3868127622984061648154559292752636`8.*^-43, "OmittedTailUpperBound" -> 
+       1.489116014719676036`8.*^-40, "NumericalAgreement" -> True|>}|>, "AllPassed" -> True, 
+ "Messages" -> {}, "Scope" -> 
+  "alpha*(e:q q)=1. Analytic tail bound only; NIntegrate error is not interval certified."|>
