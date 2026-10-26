@@ -1,0 +1,114 @@
+{
+  "exact_checks": [
+    {
+      "name": "First six-dimensional squared-mass recurrence",
+      "residual": "0"
+    },
+    {
+      "name": "Second six-dimensional squared-mass recurrence",
+      "residual": "0"
+    },
+    {
+      "name": "Radial massless Fourier coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Radial raised Fourier coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Zero-radius retarded double-pole coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Spacelike second mass derivative",
+      "residual": "0"
+    },
+    {
+      "name": "Gaussian step integral at u=0",
+      "residual": "0"
+    },
+    {
+      "name": "Gaussian raised pairing at u=0",
+      "residual": "0"
+    },
+    {
+      "name": "Full kernel homogeneous degree",
+      "residual": "0"
+    },
+    {
+      "name": "Adiabatic origin scaling exponent",
+      "residual": "0"
+    }
+  ],
+  "exact_zero_count": 10,
+  "gaussian_causal_pairings": [
+    {
+      "u": 0.0,
+      "raised_gaussian_pairing": -0.01783738521234052,
+      "step_integral_error": 3.314151461380512e-13,
+      "exact_raised_at_zero": -0.017837385212340517,
+      "zero_difference": -3.469446951953614e-18
+    },
+    {
+      "u": 0.001,
+      "raised_gaussian_pairing": -0.017837353962574708,
+      "step_integral_error": 3.316664007688141e-13,
+      "scalar_gaussian_pairing": -6.465728002537857,
+      "scalar_error": 3.4619933064739406e-11,
+      "scalar_minus_log_u": 0.4420272764442794
+    },
+    {
+      "u": 0.01,
+      "raised_gaussian_pairing": -0.017834261747748437,
+      "step_integral_error": 3.340638017491528e-14,
+      "scalar_gaussian_pairing": -4.1636022948864895,
+      "scalar_error": 3.6384834390190834e-11,
+      "scalar_minus_log_u": 0.44156789110160144
+    },
+    {
+      "u": 0.1,
+      "raised_gaussian_pairing": -0.017533072229963143,
+      "step_integral_error": 3.2912354942153725e-13,
+      "scalar_gaussian_pairing": -1.8843591181398718,
+      "scalar_error": 3.0578899888114075e-11,
+      "scalar_minus_log_u": 0.4182259748541737
+    },
+    {
+      "u": 0.5,
+      "raised_gaussian_pairing": -0.01219244161943091,
+      "step_integral_error": 2.8991250934002975e-16,
+      "scalar_gaussian_pairing": -0.4950634727251004,
+      "scalar_error": 7.041844998508989e-12
+    },
+    {
+      "u": 1.0,
+      "raised_gaussian_pairing": -0.004606365194206005,
+      "step_integral_error": 1.5276540754453988e-16,
+      "scalar_gaussian_pairing": -0.12007082314209104,
+      "scalar_error": 9.318838601241976e-13
+    },
+    {
+      "u": 2.0,
+      "raised_gaussian_pairing": -0.0001516082807519017,
+      "step_integral_error": 1.0259914050769873e-17,
+      "scalar_gaussian_pairing": -0.002932192440095698,
+      "scalar_error": 1.5046683026838708e-16
+    },
+    {
+      "u": 4.0,
+      "raised_gaussian_pairing": -5.238821948772092e-10,
+      "step_integral_error": 5.1147092800612474e-23,
+      "scalar_gaussian_pairing": -8.877422032300034e-09,
+      "scalar_error": 8.545708346875208e-22
+    },
+    {
+      "u": 8.0,
+      "raised_gaussian_pairing": -3.8737891635174415e-31,
+      "step_integral_error": 4.051606414898684e-44,
+      "scalar_gaussian_pairing": -6.293449999228813e-30,
+      "scalar_error": 6.57882989754963e-43
+    }
+  ],
+  "scope": "Exact causal coefficients and representative pairings; full seminorm theorem is analytic."
+}

@@ -1,0 +1,72 @@
+{
+  "sympy_version": "1.14.0",
+  "exact_zero_count": 10,
+  "mass_orthant_moments": {
+    "(0, 0)": {
+      "value": "1",
+      "residual": "0"
+    },
+    "(1, 0)": {
+      "value": "1/4",
+      "residual": "0"
+    },
+    "(0, 1)": {
+      "value": "1/4",
+      "residual": "0"
+    },
+    "(2, 0)": {
+      "value": "1/9",
+      "residual": "0"
+    },
+    "(1, 1)": {
+      "value": "1/36",
+      "residual": "0"
+    },
+    "(3, 0)": {
+      "value": "1/16",
+      "residual": "0"
+    }
+  },
+  "direct_radial_laplace_jets": {
+    "0": {
+      "laplace_transform": "0",
+      "target": "0",
+      "residual": "0"
+    },
+    "1": {
+      "laplace_transform": "-1",
+      "target": "-1",
+      "residual": "0"
+    },
+    "2": {
+      "laplace_transform": "A/2 + B/2",
+      "target": "A/2 + B/2",
+      "residual": "0"
+    },
+    "3": {
+      "laplace_transform": "-A**2/3 - A*B/6 - B**2/3",
+      "target": "-A**2/3 - A*B/6 - B**2/3",
+      "residual": "0"
+    }
+  },
+  "independent_transform_quadratures": [
+    {
+      "A": "0.7",
+      "u": "0.4",
+      "J_absolute_error": "2.295887404e-41",
+      "Y_absolute_error": "0.0"
+    },
+    {
+      "A": "1.2",
+      "u": "1.1",
+      "J_absolute_error": "1.147943702e-41",
+      "Y_absolute_error": "0.0"
+    },
+    {
+      "A": "2.0",
+      "u": "2.4",
+      "J_absolute_error": "0.0",
+      "Y_absolute_error": "1.434929627e-42"
+    }
+  ]
+}

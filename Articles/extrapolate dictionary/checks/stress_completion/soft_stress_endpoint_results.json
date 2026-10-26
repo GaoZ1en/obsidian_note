@@ -1,0 +1,100 @@
+{
+  "status": "all exact residuals passed",
+  "sympy_version": "1.14.0",
+  "exact_zero_count": 46,
+  "residuals": {
+    "soft_input_mass": "0",
+    "hard_input_mass": "0",
+    "exact_transfer_mass": "0",
+    "mass_injection_jacobian": "0",
+    "stationary_mass_relation": "0",
+    "stationary_gram_gap_identity": "0",
+    "projected_transfer_equivalence_00": "0",
+    "projected_transfer_equivalence_01": "0",
+    "projected_transfer_equivalence_02": "0",
+    "projected_transfer_equivalence_03": "0",
+    "projected_transfer_equivalence_10": "0",
+    "projected_transfer_equivalence_11": "0",
+    "projected_transfer_equivalence_12": "0",
+    "projected_transfer_equivalence_13": "0",
+    "projected_transfer_equivalence_20": "0",
+    "projected_transfer_equivalence_21": "0",
+    "projected_transfer_equivalence_22": "0",
+    "projected_transfer_equivalence_23": "0",
+    "projected_transfer_equivalence_30": "0",
+    "projected_transfer_equivalence_31": "0",
+    "projected_transfer_equivalence_32": "0",
+    "projected_transfer_equivalence_33": "0",
+    "transverse_0": "0",
+    "transverse_1": "0",
+    "transverse_2": "0",
+    "transverse_3": "0",
+    "trace": "0",
+    "core_weighted_divisibility_00": "0",
+    "core_weighted_divisibility_01": "0",
+    "core_weighted_divisibility_02": "0",
+    "core_weighted_divisibility_03": "0",
+    "core_weighted_divisibility_11": "0",
+    "core_weighted_divisibility_12": "0",
+    "core_weighted_divisibility_13": "0",
+    "core_weighted_divisibility_22": "0",
+    "core_weighted_divisibility_23": "0",
+    "core_weighted_divisibility_33": "0",
+    "core_nonnegative_parameter": "0",
+    "core_five_coordinate_measure": "0",
+    "mass_radial_operator_cube": "0",
+    "mass_bessel_eigenvalue": "0",
+    "raised_free_mode": "0",
+    "large_radial_power": "0",
+    "second_mass_derivative": "0",
+    "core_epsilon_exponent": "0",
+    "far_profile_exponent": "0"
+  },
+  "core_polynomial_degrees": {
+    "00": {
+      "minimum_e_power": 8,
+      "minimum_total_a_e_power": 8
+    },
+    "01": {
+      "minimum_e_power": 6,
+      "minimum_total_a_e_power": 8
+    },
+    "02": {
+      "minimum_e_power": 7,
+      "minimum_total_a_e_power": 8
+    },
+    "03": {
+      "minimum_e_power": 7,
+      "minimum_total_a_e_power": 8
+    },
+    "11": {
+      "minimum_e_power": 4,
+      "minimum_total_a_e_power": 8
+    },
+    "12": {
+      "minimum_e_power": 5,
+      "minimum_total_a_e_power": 8
+    },
+    "13": {
+      "minimum_e_power": 5,
+      "minimum_total_a_e_power": 8
+    },
+    "22": {
+      "minimum_e_power": 6,
+      "minimum_total_a_e_power": 8
+    },
+    "23": {
+      "minimum_e_power": 6,
+      "minimum_total_a_e_power": 8
+    },
+    "33": {
+      "minimum_e_power": 6,
+      "minimum_total_a_e_power": 8
+    }
+  },
+  "numerical_samples": 2000,
+  "maximum_near_tensor_ratio": 0.1659875814318728,
+  "maximum_far_tensor_ratio": 0.16741056187549846,
+  "minimum_stationary_gap_ratio": 0.9632361864675462,
+  "scope": "Exact algebra and representative numerical bounds; analytic proof is in soft_stress_endpoint.md."
+}

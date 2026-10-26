@@ -1,0 +1,70 @@
+{
+  "exact_zero_count": 16,
+  "checks": [
+    {
+      "name": "Null jet as radial mass Laplacian",
+      "residual": "0"
+    },
+    {
+      "name": "Right jet sign",
+      "residual": "0"
+    },
+    {
+      "name": "Combined jet rational numerator",
+      "residual": "0"
+    },
+    {
+      "name": "Radial dimension walk intertwiner",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=2 k=0",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=2 k=1",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=2 k=2",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=2 k=3",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=4 k=0",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=4 k=1",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=4 k=2",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=4 k=3",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=6 k=0",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=6 k=1",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=6 k=2",
+      "residual": "0"
+    },
+    {
+      "name": "Heat dimension walk d=6 k=3",
+      "residual": "0"
+    }
+  ],
+  "scope": "Exact identities only. Distribution order, cutoff convergence, and geometric scope are proved in the companion note."
+}

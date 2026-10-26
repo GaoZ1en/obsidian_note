@@ -1,0 +1,113 @@
+{
+  "exact_zero_count": 8,
+  "exact_checks": [
+    {
+      "name": "Mass relation",
+      "residual": "0"
+    },
+    {
+      "name": "Stationary Gram normal form",
+      "residual": "0"
+    },
+    {
+      "name": "Independent-mass derivative",
+      "residual": "0"
+    },
+    {
+      "name": "Tensor trace",
+      "residual": "0"
+    },
+    {
+      "name": "Tensor transverse 0",
+      "residual": "0"
+    },
+    {
+      "name": "Tensor transverse 1",
+      "residual": "0"
+    },
+    {
+      "name": "Tensor transverse 2",
+      "residual": "0"
+    },
+    {
+      "name": "Tensor transverse 3",
+      "residual": "0"
+    }
+  ],
+  "component_weights": [
+    {
+      "component": [
+        0,
+        0
+      ],
+      "minimum_lambda_power": 4
+    },
+    {
+      "component": [
+        0,
+        1
+      ],
+      "minimum_lambda_power": 5
+    },
+    {
+      "component": [
+        0,
+        2
+      ],
+      "minimum_lambda_power": 5
+    },
+    {
+      "component": [
+        0,
+        3
+      ],
+      "minimum_lambda_power": 4
+    },
+    {
+      "component": [
+        1,
+        1
+      ],
+      "minimum_lambda_power": 6
+    },
+    {
+      "component": [
+        1,
+        2
+      ],
+      "minimum_lambda_power": 6
+    },
+    {
+      "component": [
+        1,
+        3
+      ],
+      "minimum_lambda_power": 5
+    },
+    {
+      "component": [
+        2,
+        2
+      ],
+      "minimum_lambda_power": 6
+    },
+    {
+      "component": [
+        2,
+        3
+      ],
+      "minimum_lambda_power": 5
+    },
+    {
+      "component": [
+        3,
+        3
+      ],
+      "minimum_lambda_power": 4
+    }
+  ],
+  "stationary_gap_sample_count": 20000,
+  "observed_minimum_ratio": 0.8229125838405047,
+  "proven_lower_bound": 0.7901234567901235,
+  "scope": "Symbolic identities and numerical sampling; the uniform distribution bounds are analytic arguments in the companion note."
+}

@@ -1,0 +1,199 @@
+{
+  "exact_zero_count": 10,
+  "exact_checks": [
+    {
+      "name": "Six-dimensional radial kinetic normalization",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Six-dimensional cubic normalization",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Boundary free spectrum",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Cauchy angular polynomial division",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Cauchy angular primitive",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "S4 polar weight normalization",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Radial raising identity",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Outer/middle raising normalization",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Six-dimensional product Laplacian",
+      "kind": "exact",
+      "residual": "0"
+    },
+    {
+      "name": "Cubic source normalization",
+      "kind": "exact",
+      "residual": "0"
+    }
+  ],
+  "angular_endpoint": [
+    {
+      "delta": 0.01,
+      "H_outside": 1.9134035713480126,
+      "quadrature_difference": 0.0,
+      "endpoint_log_ratio": -1.880417555804338
+    },
+    {
+      "delta": 0.001,
+      "H_outside": 1.9867895939284999,
+      "quadrature_difference": -4.440892098500626e-16,
+      "endpoint_log_ratio": -1.9124021535179097
+    },
+    {
+      "delta": 0.0001,
+      "H_outside": 1.998219193454368,
+      "quadrature_difference": -8.881784197001252e-16,
+      "endpoint_log_ratio": -1.9334861402628705
+    },
+    {
+      "delta": 1e-06,
+      "H_outside": 1.9999729826690151,
+      "quadrature_difference": 8.881784197001252e-16,
+      "endpoint_log_ratio": -1.9555796270803705
+    },
+    {
+      "delta": 1e-08,
+      "H_outside": 1.9999996377234435,
+      "quadrature_difference": -1.7763568394002505e-15,
+      "endpoint_log_ratio": -1.9666838678063763
+    }
+  ],
+  "angular_cut": [
+    {
+      "t": -0.8,
+      "real": -2.391000847841039,
+      "imaginary": -1.1309733552923251,
+      "formula_error": 4.440892098500626e-16
+    },
+    {
+      "t": -0.1,
+      "real": -0.3986639885075299,
+      "imaginary": -3.1101767270538954,
+      "formula_error": 1.6653345369377348e-16
+    },
+    {
+      "t": 0.6,
+      "real": 2.0872283911167298,
+      "imaginary": -2.0106192982974678,
+      "formula_error": 0.0
+    },
+    {
+      "t": 0.99,
+      "real": 2.0853367660120172,
+      "imaginary": -0.06251769380643697,
+      "formula_error": 4.440892098500626e-16
+    }
+  ],
+  "star_triangle": [
+    {
+      "squared_distances": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "integral_over_pi3": 1.0000000000000362,
+      "target": 1.0,
+      "difference": 3.6193270602780103e-14
+    },
+    {
+      "squared_distances": [
+        1.0,
+        4.0,
+        3.0
+      ],
+      "integral_over_pi3": 0.08333333333333592,
+      "target": 0.08333333333333333,
+      "difference": 2.5951463200613034e-15
+    },
+    {
+      "squared_distances": [
+        0.7,
+        1.6,
+        2.2
+      ],
+      "integral_over_pi3": 0.4058441558441549,
+      "target": 0.40584415584415584,
+      "difference": -9.43689570931383e-16
+    }
+  ],
+  "soft_energy_model": {
+    "leading_coefficient": -0.00010917253341495766,
+    "samples": [
+      {
+        "epsilon": 0.01,
+        "difference": -2.2547336552419007e-06,
+        "quotient_by_eps_log": -4.8960919231655325e-05,
+        "ratio_to_predicted_leading": 0.44847286858827456
+      },
+      {
+        "epsilon": 0.001,
+        "difference": -4.526011507887725e-07,
+        "quotient_by_eps_log": -6.55207274302085e-05,
+        "ratio_to_predicted_leading": 0.6001576163957696
+      },
+      {
+        "epsilon": 0.0001,
+        "difference": -6.996709331964895e-08,
+        "quotient_by_eps_log": -7.596580635883353e-05,
+        "ratio_to_predicted_leading": 0.6958325870307732
+      },
+      {
+        "epsilon": 1e-05,
+        "difference": -9.50420971491651e-09,
+        "quotient_by_eps_log": -8.255251668079035e-05,
+        "ratio_to_predicted_leading": 0.7561656224190899
+      }
+    ]
+  },
+  "equal_energy_zero_transfer_model": [
+    {
+      "epsilon": 0.01,
+      "E_equals_F": 1.0,
+      "endpoint_difference_real": -0.0009596344817541791,
+      "imaginary": -0.0003141514113773585
+    },
+    {
+      "epsilon": 0.001,
+      "E_equals_F": 1.0,
+      "endpoint_difference_real": -1.4201800867308378e-05,
+      "imaginary": -3.141591867863359e-06
+    },
+    {
+      "epsilon": 0.0001,
+      "E_equals_F": 1.0,
+      "endpoint_difference_real": -1.8806974999563408e-07,
+      "imaginary": -3.141592634496855e-08
+    }
+  ],
+  "claims": {
+    "angular_lemma": "analytic proof in six_dimensional_seed.md",
+    "numerics": "supporting checks, not a proof of uniform estimates",
+    "gravity_trace": "radial raising algebra only; null jets remain a separate theorem"
+  }
+}

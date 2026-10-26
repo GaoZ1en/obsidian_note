@@ -1,0 +1,193 @@
+{
+  "ads5_scalar_noether": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "switched_bianchi_defect": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "gauge_variation_density_with_endpoint": {
+    "residuals": [
+      "0"
+    ],
+    "all_zero": true
+  },
+  "minimal_completion_cancels_gauge_defect": {
+    "residuals": [
+      "0"
+    ],
+    "all_zero": true
+  },
+  "bf_free_example": {
+    "residuals": [
+      "0"
+    ],
+    "all_zero": true
+  },
+  "nonzero_on_shell_bianchi_example": {
+    "phi": "u**2*(t - x)",
+    "switch_local_jet": "w=t",
+    "force_covector": [
+      "2*u**5*(-t + x)",
+      "-u**6",
+      "u**6",
+      "0",
+      "0"
+    ],
+    "interpretation": "local jets may be realized inside a smooth compact switch"
+  },
+  "timelike_logfree_mode": {
+    "residuals": [
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "timelike_on_shell_bianchi_example": {
+    "phi": "u**2*cos(t)*besselj(0, u)",
+    "boundary_mass_squared": "1",
+    "time": "pi/2",
+    "force_t": "-u**6*besselj(0, u)**2/2",
+    "interpretation": "A strict timelike Poincare mode; wave packets preserve a nonzero defect on an open neighborhood."
+  },
+  "anchored_xi_of_pure_gauge": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "radial_completion_conservation": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "radial_endpoint": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "switch_radial_adjoint_commutator": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "arbitrary_force_radial_repair": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "output_tt_projector": {
+    "residuals": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all_zero": true
+  },
+  "projector_outside_switch_counterexample": {
+    "output_p": [
+      "2",
+      "1",
+      "0",
+      "0"
+    ],
+    "input_k": [
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    "source_q": [
+      "3",
+      "0",
+      "1",
+      "0"
+    ],
+    "wrong_divergence": [
+      "0",
+      "-1/3",
+      "0",
+      "0"
+    ],
+    "good_minus_bad": [
+      [
+        "5/9",
+        "-10/9",
+        "1",
+        "0"
+      ],
+      [
+        "-10/9",
+        "23/9",
+        "-2",
+        "0"
+      ],
+      [
+        "1",
+        "-2",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1"
+      ]
+    ]
+  },
+  "canonical_to_U_vertex_normalization": {
+    "residuals": [
+      "0"
+    ],
+    "all_zero": true
+  },
+  "analytic_adiabatic_result": {
+    "statement": "At fixed compact radial regulator, the P-dagger switch commutator is O(R^-M) on bounded compact 12-momentum test sets for every M.",
+    "proof": "Exact commutator has one or two switch derivatives. Its switch-free coefficient is smooth in Omega with compact radial support; all positive moments of Fourier chi vanish for a plateau switch.",
+    "limitation": "Constants may depend on the radial IR cutoff. Uniform removal of that cutoff is a separate distributional estimate.",
+    "evidence_strength": "analytic proof in companion report; not inferred from numerical samples"
+  },
+  "runtime_seconds": 3.2347099781036377,
+  "sympy_version": "1.14.0",
+  "exact_zero_count": 46
+}
