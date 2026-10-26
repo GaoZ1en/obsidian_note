@@ -1,0 +1,121 @@
+{
+  "exact_checks": [
+    {
+      "name": "Radial boundary H identity",
+      "residual": "0"
+    },
+    {
+      "name": "H0",
+      "residual": "0"
+    },
+    {
+      "name": "Hprime0",
+      "residual": "0"
+    },
+    {
+      "name": "First spectral subtraction",
+      "residual": "0"
+    },
+    {
+      "name": "Second spectral subtraction",
+      "residual": "0"
+    },
+    {
+      "name": "Spatial 1111 TT decomposition",
+      "residual": "0"
+    },
+    {
+      "name": "Constraint discrepancy",
+      "residual": "0"
+    },
+    {
+      "name": "Spacelike exact counterexample",
+      "residual": "0"
+    },
+    {
+      "name": "Timelike exact counterexample",
+      "residual": "0"
+    },
+    {
+      "name": "Abel first Bessel moment",
+      "residual": "0"
+    },
+    {
+      "name": "Zero-frequency bare mode response",
+      "residual": "0"
+    }
+  ],
+  "exact_zero_count": 11,
+  "examples": [
+    {
+      "s": -1.0,
+      "k": 1.0,
+      "u": 1.0,
+      "H": {
+        "real": -0.20310486232939717,
+        "imag": 0.0
+      },
+      "analytic": {
+        "real": -0.0,
+        "imag": 0.0
+      },
+      "bare_modes": {
+        "real": -0.20833333333333331,
+        "imag": 0.0
+      },
+      "difference": {
+        "real": 0.20833333333333331,
+        "imag": 0.0
+      },
+      "expected_difference": 0.20833333333333331,
+      "identity_error": 0.0
+    },
+    {
+      "s": 3.0,
+      "k": 1.0,
+      "u": 1.0,
+      "H": {
+        "real": -0.45167481339126775,
+        "imag": -0.17059616967791
+      },
+      "analytic": {
+        "real": -0.5353182973526136,
+        "imag": -0.20218805295159703
+      },
+      "bare_modes": {
+        "real": -0.39179977883409506,
+        "imag": -0.202188052951597
+      },
+      "difference": {
+        "real": -0.14351851851851855,
+        "imag": -2.7755575615628914e-17
+      },
+      "expected_difference": -0.14351851851851852,
+      "identity_error": 3.925231146709438e-17
+    },
+    {
+      "s": -2.3,
+      "k": 0.7,
+      "u": 1.4,
+      "H": {
+        "real": -0.11843505956386319,
+        "imag": 0.0
+      },
+      "analytic": {
+        "real": -0.048897933035560455,
+        "imag": 0.0
+      },
+      "bare_modes": {
+        "real": -0.12087312837267448,
+        "imag": 0.0
+      },
+      "difference": {
+        "real": 0.07197519533711402,
+        "imag": 0.0
+      },
+      "expected_difference": 0.07197519533711405,
+      "identity_error": 2.7755575615628914e-17
+    }
+  ],
+  "scope": "The distinct retarded responses are fixed by exact algebra; source-defined projection requires the complete constrained response."
+}

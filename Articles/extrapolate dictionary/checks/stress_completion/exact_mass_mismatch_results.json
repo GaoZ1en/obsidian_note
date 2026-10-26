@@ -1,0 +1,81 @@
+{
+  "sympy_version": "1.14.0",
+  "exact_zero_count": 22,
+  "symbolic_checks": {
+    "exact_lambda": "0",
+    "mass_derivative_lambda_1": "0",
+    "mass_derivative_lambda_2": "0",
+    "mass_derivative_lambda_3": "0",
+    "second_derivative": "0",
+    "third_derivative": "0",
+    "stationary_second_density": "0",
+    "core_discriminant_scale": "0",
+    "null_threshold_w_-1": "0",
+    "null_threshold_t_-1": "0",
+    "null_threshold_jac_-1": "0",
+    "threshold_gradient_-1": "0",
+    "null_threshold_w_1": "0",
+    "null_threshold_t_1": "0",
+    "null_threshold_jac_1": "0",
+    "threshold_gradient_1": "0",
+    "radial_seed_antiderivative": "0",
+    "allnull_outside_chart_p": "0",
+    "allnull_outside_chart_q": "0",
+    "allnull_outside_chart_r": "0",
+    "allnull_outside_chart_M": "0",
+    "allnull_outside_chart_nonzero_N": "0"
+  },
+  "numerical_method": "Exact radial antiderivative of locally integrable complete scalar seed, then high-precision central finite difference in d.",
+  "test": "1 on |h|<0.2, |v|<0.3 in the m=1 rest frame; discontinuous cutoff boundaries are outside the threshold core.",
+  "numeric_rows": [
+    {
+      "d": "0.02",
+      "central_step": "0.0002",
+      "paired_second_derivative": "0.03520369355882755420608875",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.000688712840423",
+      "difference_over_dlog": "0.0070104806071"
+    },
+    {
+      "d": "0.01",
+      "central_step": "0.0001",
+      "paired_second_derivative": "0.03548795129349915739689647",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.000404455105752",
+      "difference_over_dlog": "0.00721575067895"
+    },
+    {
+      "d": "0.005",
+      "central_step": "0.00005",
+      "paired_second_derivative": "0.03567461918228551875901573",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.000217787216965",
+      "difference_over_dlog": "0.00691572698836"
+    },
+    {
+      "d": "-0.02",
+      "central_step": "0.0002",
+      "paired_second_derivative": "0.03709762892599757891209294",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.00120522252675",
+      "difference_over_dlog": "0.0122680871549"
+    },
+    {
+      "d": "-0.01",
+      "central_step": "0.0001",
+      "paired_second_derivative": "0.03642583567137554653099067",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.000533429272125",
+      "difference_over_dlog": "0.00951673641343"
+    },
+    {
+      "d": "-0.005",
+      "central_step": "0.00005",
+      "paired_second_derivative": "0.03614242758981621346370942",
+      "target_at_zero": "0.03589240639925101627685691",
+      "absolute_difference": "0.000250021190565",
+      "difference_over_dlog": "0.00793930111852"
+    }
+  ],
+  "numeric_limitation": "Supporting numerical evidence. The arbitrary smooth-test continuity theorem is proved analytically in the companion review."
+}

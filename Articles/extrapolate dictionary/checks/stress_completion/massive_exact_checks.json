@@ -1,0 +1,116 @@
+{
+  "exact_checks": [
+    {
+      "name": "Exact Kallen normal form",
+      "residual": "0"
+    },
+    {
+      "name": "Scaled core polynomial",
+      "residual": "0"
+    },
+    {
+      "name": "Scaled threshold gradient",
+      "residual": "0"
+    },
+    {
+      "name": "Transfer null intersection",
+      "residual": "0"
+    },
+    {
+      "name": "Second derivative",
+      "residual": "0"
+    },
+    {
+      "name": "Third derivative",
+      "residual": "0"
+    },
+    {
+      "name": "Stationary density",
+      "residual": "0"
+    },
+    {
+      "name": "Signed stationary cone moment",
+      "residual": "0"
+    },
+    {
+      "name": "Leading absolute coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Double-wall limiting Jacobian",
+      "residual": "0"
+    },
+    {
+      "name": "Hyperboloid first mass coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Hyperboloid second mass coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Quadrupole angular identity 11",
+      "residual": "0"
+    },
+    {
+      "name": "Quadrupole angular identity 12",
+      "residual": "0"
+    },
+    {
+      "name": "Quadrupole angular identity 33",
+      "residual": "0"
+    }
+  ],
+  "exact_zero_count": 15,
+  "stationary_absolute_norm": [
+    {
+      "radius": 0.2,
+      "absolute_norm": 0.48716729445424156,
+      "norm_divided_by_radius": 2.4358364722712076,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 0.017437319958917286,
+      "quadrature_error": 5.408643471474423e-15
+    },
+    {
+      "radius": 0.1,
+      "absolute_norm": 0.24223843374703505,
+      "norm_divided_by_radius": 2.4223843374703504,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 0.003985185158060123,
+      "quadrature_error": 2.6893868659509386e-15
+    },
+    {
+      "radius": 0.03,
+      "absolute_norm": 0.07256241988031141,
+      "norm_divided_by_radius": 2.418747329343714,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 0.0003481770314235355,
+      "quadrature_error": 8.056046927363992e-16
+    },
+    {
+      "radius": 0.01,
+      "absolute_norm": 0.024184377355296688,
+      "norm_divided_by_radius": 2.4184377355296687,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 3.8583217378374e-05,
+      "quadrature_error": 2.685005257607363e-16
+    },
+    {
+      "radius": 0.003,
+      "absolute_norm": 0.007255207871236713,
+      "norm_divided_by_radius": 2.4184026237455707,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 3.4714332803886805e-06,
+      "quadrature_error": 8.054898827088667e-17
+    },
+    {
+      "radius": 0.001,
+      "absolute_norm": 0.002418399538016781,
+      "norm_divided_by_radius": 2.4183995380167813,
+      "predicted_limit": 2.4183991523122903,
+      "ratio_error": 3.857044910127172e-07,
+      "quadrature_error": 2.684962849849072e-17
+    }
+  ],
+  "scope": "Exact normal-form algebra and stationary norm; finite-part continuity proved in Markdown."
+}

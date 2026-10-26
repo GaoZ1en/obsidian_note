@@ -1,5 +1,7 @@
 # Switched bulk equations and boundary-subtracted gravitational reconstruction
 
+**Subsequent result:** [Genuine switching and the first gravitational reconstruction](half_bps_stress_completion.md) constructs the complete corner and its global finite-radius limit in an explicit causal TT prescription, with the radial vertex cutoff removed before the spacetime adiabatic limit. Its anchored source completion records nonzero massless constraint terms and a separate condition on the global Einstein infrared domain. The boundary-subtracted theorem proved below remains an independent ingredient of that result.
+
 ## 1. Result
 
 For the first gravitational stress–scalar–scalar coefficient, a genuine spacetime switch can be removed from the **boundary-subtracted finite-radius observable** across every null stratum. The proof uses the correct switched derivative vertex and all external insertions, not a stationary complex-frequency substitution.

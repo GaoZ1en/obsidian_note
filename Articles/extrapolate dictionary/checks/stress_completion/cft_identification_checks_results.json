@@ -1,0 +1,84 @@
+{
+  "exact_zero_count": 19,
+  "exact_checks": [
+    {
+      "name": "Independent squared-mass derivative",
+      "residual": "0"
+    },
+    {
+      "name": "Ward coefficient in unit normalization",
+      "residual": "0"
+    },
+    {
+      "name": "Bulk and three-shell coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Shell polar angle",
+      "residual": "0"
+    },
+    {
+      "name": "Cut-domain discriminant",
+      "residual": "0"
+    },
+    {
+      "name": "Shell tensor conserved component 0",
+      "residual": "0"
+    },
+    {
+      "name": "Shell tensor conserved component 1",
+      "residual": "0"
+    },
+    {
+      "name": "Shell tensor conserved component 2",
+      "residual": "0"
+    },
+    {
+      "name": "Shell tensor conserved component 3",
+      "residual": "0"
+    },
+    {
+      "name": "Shell tensor trace",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 00",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 01",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 02",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 11",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 12",
+      "residual": "0"
+    },
+    {
+      "name": "Circle second moment 22",
+      "residual": "0"
+    },
+    {
+      "name": "Quadrupole conversion",
+      "residual": "0"
+    },
+    {
+      "name": "Three-shell measure",
+      "residual": "0"
+    },
+    {
+      "name": "Joint homogeneity",
+      "residual": "0"
+    }
+  ],
+  "pushforward_rank_generic": 8,
+  "pushforward_rank_one_parallel_pair": 7,
+  "scope": "Exact finite identities; properness, coarea and null-jet uniqueness are analytic arguments."
+}

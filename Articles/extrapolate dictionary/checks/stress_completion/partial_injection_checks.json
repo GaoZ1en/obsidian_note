@@ -1,0 +1,111 @@
+{
+  "exact_checks": [
+    {
+      "name": "Exact routing component 0",
+      "residual": "0"
+    },
+    {
+      "name": "Exact routing component 1",
+      "residual": "0"
+    },
+    {
+      "name": "Exact routing component 2",
+      "residual": "0"
+    },
+    {
+      "name": "Exact routing component 3",
+      "residual": "0"
+    },
+    {
+      "name": "p mass coordinate",
+      "residual": "0"
+    },
+    {
+      "name": "q mass coordinate",
+      "residual": "0"
+    },
+    {
+      "name": "Coordinate Jacobian magnitude",
+      "residual": "0"
+    },
+    {
+      "name": "Plus shift mass preservation",
+      "residual": "0"
+    },
+    {
+      "name": "Plus shift output routing 0",
+      "residual": "0"
+    },
+    {
+      "name": "Plus shift output routing 1",
+      "residual": "0"
+    },
+    {
+      "name": "Plus shift output routing 2",
+      "residual": "0"
+    },
+    {
+      "name": "Plus shift output routing 3",
+      "residual": "0"
+    },
+    {
+      "name": "Weighted tensor transverse 0",
+      "residual": "0"
+    },
+    {
+      "name": "Weighted tensor transverse 1",
+      "residual": "0"
+    },
+    {
+      "name": "Weighted tensor transverse 2",
+      "residual": "0"
+    },
+    {
+      "name": "Weighted tensor transverse 3",
+      "residual": "0"
+    },
+    {
+      "name": "Weighted tensor trace",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p routing 0",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p routing 1",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p routing 2",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p routing 3",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p q mass",
+      "residual": "0"
+    },
+    {
+      "name": "Soft-p r mass",
+      "residual": "0"
+    }
+  ],
+  "exact_zero_count": 23,
+  "lightfront_jacobian": "-1/(B*(B - rp))",
+  "weighted_tensor_minimum_powers": {
+    "00": 8,
+    "01": 6,
+    "02": 7,
+    "03": 7,
+    "11": 4,
+    "12": 5,
+    "13": 5,
+    "22": 6,
+    "23": 6,
+    "33": 6
+  },
+  "scope": "Exact coordinates and weights; distribution bounds proved in the companion Markdown."
+}

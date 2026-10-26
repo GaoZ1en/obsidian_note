@@ -1,0 +1,86 @@
+{
+  "exact_zero_count": 9,
+  "exact_checks": [
+    {
+      "name": "Shell numerator trace",
+      "residual": "0"
+    },
+    {
+      "name": "Shell numerator divergence 0",
+      "residual": "0"
+    },
+    {
+      "name": "Shell numerator divergence 1",
+      "residual": "0"
+    },
+    {
+      "name": "Shell numerator divergence 2",
+      "residual": "0"
+    },
+    {
+      "name": "Shell numerator divergence 3",
+      "residual": "0"
+    },
+    {
+      "name": "Independent-mass second derivative",
+      "residual": "0"
+    },
+    {
+      "name": "CFT cut nn coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "CFT cut delta coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Cut angle identity",
+      "residual": "0"
+    }
+  ],
+  "coarea_rank_examples": [
+    {
+      "configuration": "generic nonparallel",
+      "rank": 8,
+      "singular_values": [
+        2.336432264554826,
+        2.172277753921875,
+        1.6744527831616685,
+        1.4672347201553555,
+        1.287599336515086,
+        1.139087937938189,
+        0.5839742879970783,
+        0.2689742348206244
+      ]
+    },
+    {
+      "configuration": "one pair parallel",
+      "rank": 7,
+      "singular_values": [
+        2.3694652881969818,
+        2.1832614729377866,
+        1.722604766798507,
+        1.4563448455792765,
+        1.1773228273559544,
+        0.9471790985410158,
+        0.7126230932898223,
+        5.017831196365352e-17
+      ]
+    },
+    {
+      "configuration": "all three parallel",
+      "rank": 6,
+      "singular_values": [
+        2.4494897427831774,
+        2.2432910300231277,
+        1.445167759162557,
+        1.4142135623730954,
+        1.1737313809461578,
+        0.7561385156714349,
+        1.2865859786334816e-16,
+        5.156727363402007e-17
+      ]
+    }
+  ],
+  "scope": "Exact normalization/Ward identities and three numerical differential-rank examples. The general coarea and uniqueness arguments are analytic."
+}
