@@ -295,7 +295,7 @@ The exact complete-kernel decomposition in
 [the global transfer report](half_bps_stress_global_transfer.md), §5,
 uses the corner only where the Bessel multipliers have uniform polynomial
 bounds. Its compact Volterra remainders stop depending on $B$ once
-$B>\max(Z,W)$. Its high-spacelike pieces use the complete positive Green
+$b_0B>\max(Z,W)$. Its high-spacelike pieces use the complete positive Green
 kernel; their radial tails are exponentially small in $B/\max(Z,W)$,
 uniformly in $R\ge1$. Thus the only earlier order restriction was the
 corner trace. Replacing that input by (J1) proves the bounded-radii
