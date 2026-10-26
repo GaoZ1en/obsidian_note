@@ -1,0 +1,9 @@
+{
+  "scope": "32 sampled compact-cutoff radial integrals; numerical evidence only",
+  "exact_zero_count": 0,
+  "exact_residuals": {},
+  "profile": "beta=1 on [0,1], smooth transition, beta=0 on [2,infinity)",
+  "integration_warnings": [],
+  "max_log_normalized": 3760.117275977417,
+  "max_reported_quadrature_error": 3.6986935795255574e-07
+}

@@ -1,0 +1,21 @@
+{
+  "sympy_version": "1.14.0",
+  "exact_zero_count": 12,
+  "residuals": {
+    "full_potential_variation_component_0": "0",
+    "full_potential_variation_component_1": "0",
+    "full_potential_variation_component_2": "0",
+    "full_potential_variation_component_3": "0",
+    "full_potential_variation_component_4": "0",
+    "integrated_time_current_u4_coefficient": "0",
+    "integrated_time_current_u2_coefficient": "0",
+    "radial_current_has_only_inverse_square_power": "0",
+    "vacuum_current_conservation": "0",
+    "antisymmetry_time": "0",
+    "antisymmetry_radial": "0",
+    "gaussian_spatial_integrated_cross_cancellation": "0"
+  },
+  "time_current_coefficient": "4*(-k**2*sigma1*v20 + k**2*sigma2*v10 - k*sigma1*v21*w1 - k*sigma2*v11*w2 + 3*I*sigma1*sigma2*w1 - 3*I*sigma1*sigma2*w2)",
+  "radial_current_coefficient": "-2*I*(w1 + w2)*(-k**2*sigma1*v20 + k**2*sigma2*v10 - k*sigma1*v21*w1 - k*sigma2*v11*w2 + 3*I*sigma1*sigma2*w1 - 3*I*sigma1*sigma2*w2)",
+  "scope": "Einstein covariant current on the linearized FG exterior tail class. No assertion of a nonlinear global CPS or quantum operator domain."
+}

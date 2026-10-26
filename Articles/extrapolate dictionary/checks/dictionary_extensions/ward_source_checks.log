@@ -1,0 +1,87 @@
+{
+  "exact": {
+    "angular_position_kernel": "0",
+    "K0_Fourier_at_origin": "0",
+    "IR_discriminant_uniform_margin": "0",
+    "radial_PBH_source_adjoint": "0",
+    "finite_layer_radial_anomaly_a_larger": "0",
+    "finite_layer_radial_anomaly_b_larger": "0",
+    "finite_layer_gradient_anomaly": "0",
+    "switch_gradient_PBH_adjoint": "0",
+    "source_diffeomorphism_adjoint": "0",
+    "physical_source_PBH_primitive": "0",
+    "physical_source_radial_contact": "0",
+    "physical_source_gradient_product": "0",
+    "ct_switch_force": "0",
+    "ct_physical_plus_anchor": "0",
+    "finite_ct_R_Weyl": "0",
+    "finite_ct_gradchi_Weyl": "0",
+    "finite_ct_boxchi_Weyl": "0",
+    "finite_ct_gradJ_Weyl": "0",
+    "finite_ct_nonderivative_invariance": "0",
+    "BF_stress_UV_cancel": "0",
+    "Euclidean_joint_IR_bound": "0",
+    "Gaussian_Hankel_I3_limit": "0",
+    "Gaussian_Hankel_equal_mass_corner": "0"
+  },
+  "numerical": {
+    "Bessel_addition_0": {
+      "left": "0.21237796881867589050999535521728796155077816148759",
+      "right": "0.21237796881867589050999535521728796155077816148759",
+      "abs_error": "3.3409558876152445576756705839393523485189961001313e-52"
+    },
+    "Bessel_addition_1": {
+      "left": "0.27124474281176866088836879903484553972976975710152",
+      "right": "0.27124474281176866088836879903484553972976975710152",
+      "abs_error": "6.6819117752304891153513411678787046970379922002626e-52"
+    },
+    "Bessel_addition_2": {
+      "left": "0.65948583489391253121504987617018903351142740608912",
+      "right": "0.65948583489391253121504987617018903351142740608908",
+      "abs_error": "3.8755088296336836869037778773696487242820354761523e-50"
+    },
+    "position_angular_kernel_0": {
+      "left": "0.09142298928482432437664239266208727934342184836669",
+      "right": "0.09142298928482432437664239266208727934342184836669",
+      "abs_error": "1.6704779438076222788378352919696761742594980500657e-52"
+    },
+    "position_angular_kernel_1": {
+      "left": "0.92517078326819892795089309767821071309421794656357",
+      "right": "0.92517078326819892795089309767821071309421794656357",
+      "abs_error": "1.3363823550460978230702682335757409394075984400525e-51"
+    },
+    "position_angular_kernel_2": {
+      "left": "9.3583128565369094746059677359943842753448849223102",
+      "right": "9.3583128565369094746059677359943842753448849223101",
+      "abs_error": "1.069105884036878258456214586860592751526078752042e-49"
+    },
+    "Gaussian_position_Fourier_independent_pairing": {
+      "left": "0.0011814149536767926125951347296713384552324090402184",
+      "right": "0.0011814149536767926125951347296713384552324090402184",
+      "abs_error": "0.0"
+    },
+    "I3_heat_pair_eps_0.1": {
+      "left": "1.3888888888888888888888888888888888888888888888889",
+      "right": "1.3888888888888888888888888888888888888888888888889",
+      "abs_error": "2.672764710092195646140536467151481878815196880105e-51"
+    },
+    "I3_heat_pair_eps_0.02": {
+      "left": "1.849112426035502958579881656804733727810650887574",
+      "right": "1.849112426035502958579881656804733727810650887574",
+      "abs_error": "2.672764710092195646140536467151481878815196880105e-51"
+    },
+    "I3_heat_pair_eps_0.005": {
+      "left": "1.9605920988138417802176257229683364376041564552495",
+      "right": "1.9605920988138417802176257229683364376041564552495",
+      "abs_error": "5.3455294201843912922810729343029637576303937602101e-51"
+    }
+  },
+  "status": "all independent exact residuals and numerical quadratures passed",
+  "exact_zero_count": 23,
+  "numerical_count": 10,
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "numerical_dps": 50,
+  "scope": "One metric source and two BF scalar sources; no all-order claim.",
+  "historical_wolfram_outputs_executed": false
+}

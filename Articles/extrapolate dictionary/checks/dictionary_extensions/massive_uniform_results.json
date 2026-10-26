@@ -1,0 +1,52 @@
+{
+  "exact_zero_count": 11,
+  "exact_residuals": {
+    "hard_mass_H_fixed_T": "0",
+    "hard_mass_H_fixed_V": "0",
+    "soft_mass_H_fixed_V": "0",
+    "radial_measure_T_jacobian": "0",
+    "radial_majorant_order_zero": "0",
+    "radial_majorant_one_injection_derivative": "0",
+    "dyadic_massive_cutoff_power_3": "0",
+    "dyadic_injection_cutoff_power_2": "0",
+    "annular_tensor_measure_power": "0",
+    "annular_mixed_injection_measure_power": "0",
+    "transverse_tensor_source_reduction": "0"
+  },
+  "soft_retarded_mass_L1_samples": [
+    {
+      "v": 0.001,
+      "L1_T": 29.049614593916882,
+      "normalized": 3.6735601405277762
+    },
+    {
+      "v": 0.01,
+      "L1_T": 19.99577109840399,
+      "normalized": 3.567379835921805
+    },
+    {
+      "v": 0.1,
+      "L1_T": 11.188292212651863,
+      "normalized": 3.387737756215941
+    },
+    {
+      "v": 1.0,
+      "L1_T": 3.744554727366875,
+      "normalized": 3.744554727366875
+    },
+    {
+      "v": 10.0,
+      "L1_T": 0.9053963034675101,
+      "normalized": 2.8631145040543378
+    },
+    {
+      "v": 100.0,
+      "L1_T": 0.2812029170174574,
+      "normalized": 2.8120291701745743
+    }
+  ],
+  "sampled_axis_points": 4000,
+  "minimum_future_phase_derivative_over_rho": 2.000000043296179,
+  "maximum_past_phase_derivative_over_rho": -2.000000043296189,
+  "evidence_scope": "Exact coordinate/power identities and numerical norm/phase samples. The uniform distribution proof is in half_bps_stress_joint_massive.md."
+}

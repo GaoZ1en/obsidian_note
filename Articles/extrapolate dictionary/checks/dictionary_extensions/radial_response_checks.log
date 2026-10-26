@@ -1,0 +1,121 @@
+{
+  "tool": "Python/SymPy/mpmath",
+  "sympy_version": "1.14.0",
+  "mpmath_version": "1.3.0",
+  "count": 22,
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "scalar BF response at a generic exact point",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "Maxwell response coordinate component 0",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "Maxwell response coordinate component 1",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "Maxwell response coordinate component 2",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "Maxwell response coordinate component 3",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "Maxwell response coordinate component 4",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "all-point covariant Maxwell response coefficient",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "all-point scalar BF response coefficient",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "finite-insertion current source contacts",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "scalar radial jump p=0.7 v=1.2",
+      "evidence": "50-digit numerical",
+      "error": "2.672764710092195646140536467151481878815196880105e-51"
+    },
+    {
+      "label": "vector transverse radial jump p=0.7 v=1.2",
+      "evidence": "50-digit numerical",
+      "error": "0.0"
+    },
+    {
+      "label": "scalar radial jump p=2.3 v=0.4",
+      "evidence": "50-digit numerical",
+      "error": "0.0"
+    },
+    {
+      "label": "vector transverse radial jump p=2.3 v=0.4",
+      "evidence": "50-digit numerical",
+      "error": "0.0"
+    },
+    {
+      "label": "vector longitudinal radial jump",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "finite wall natural IR Gauss constraint",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "finite wall natural IR derivative",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "finite wall double Dirichlet missing Gauss constant",
+      "evidence": "exact rational/symbolic",
+      "residual": "0"
+    },
+    {
+      "label": "finite wall transverse natural IR condition",
+      "evidence": "50-digit numerical",
+      "error": "7.7787690973264271339300800672251553007378152109015e-62"
+    },
+    {
+      "label": "radial derivative bound |u d_u D| <= 1",
+      "evidence": "50-digit numerical sample supplement to Wronskian proof",
+      "samples": 36,
+      "maximum": "0.99694363295235503019337035752405294239884952287589"
+    },
+    {
+      "label": "transverse Green maximum-principle bound G_T <= G_0",
+      "evidence": "50-digit numerical sample supplement to analytic proof",
+      "samples": 36,
+      "maximum_ratio": "0.99986446836930239286012623929712313380805370073044"
+    },
+    {
+      "label": "6D circle-average covariance",
+      "evidence": "50-digit numerical",
+      "error": "1.3363823550460978230702682335757409394075984400525e-51"
+    },
+    {
+      "label": "6D circle-average covariance",
+      "evidence": "50-digit numerical",
+      "error": "0.0"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "tool": "Python/SymPy",
+  "sympy_version": "1.14.0",
+  "all_passed": true,
+  "count": 7,
+  "checks": [
+    {
+      "label": "full position identity tensor D_s",
+      "residual": "0"
+    },
+    {
+      "label": "full position identity tensor D_t",
+      "residual": "0"
+    },
+    {
+      "label": "full position identity tensor D_u",
+      "residual": "0"
+    },
+    {
+      "label": "full position identity tensor C_1",
+      "residual": "0"
+    },
+    {
+      "label": "full position identity tensor C_2",
+      "residual": "0"
+    },
+    {
+      "label": "full position identity tensor C_3",
+      "residual": "0"
+    },
+    {
+      "label": "flat-box cross-ratio derivative commutator",
+      "residual": "0"
+    }
+  ],
+  "method": "six independent distance derivatives, then exact box first-order differential algebra",
+  "scope": "Euclidean branch; continuous limits across discriminant zero; regular-distribution extension separately justified by source bounds"
+}

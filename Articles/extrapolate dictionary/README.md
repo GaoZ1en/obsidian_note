@@ -501,8 +501,49 @@ The [anchored gauge completion](half_bps_stress_gauge_completion.md) supplies a 
 
 The main report indexes the [causal corner](half_bps_stress_causal_corner.md), [partial-injection estimate](half_bps_stress_partial_injection.md), [massive trace](half_bps_stress_massive_trace.md), [soft stress](half_bps_stress_soft_p_trace.md), [soft scalar](half_bps_stress_soft_q_trace.md), [CFT identification](half_bps_stress_cft_identification.md), and [global transfer](half_bps_stress_global_transfer.md) proofs. Independent mass-jet and threshold calculations are linked there. [New executable checks and actual outputs](checks/stress_completion/README.md) use Python/SymPy/SciPy/mpmath; the existing Mathematica/xAct records remain earlier evidence and were not rerun for this addition.
 
-## Current open physical question
+## Extended reconstruction, generic tree amplitudes and protected domains
 
-The prescribed first-order causal TT coefficient now has a complete genuine-switching boundary and finite-radius distribution construction, and its first-order weak Einstein response has zero infrared cross flux on the specified dense free-CPS wave-packet domain. Its complete global interacting Einstein CPS interpretation still requires endpoint control of sourced--sourced pairings and a common operator domain. Other distinct tasks are a full finite-switch curved-boundary-source/anchor Ward functional with uniform infrared control, arbitrary joint radial/spacetime cutoff removal, and comparison with independently specified complex-frequency Abel prescriptions. A complete interacting Lorentzian algebra and its positivity remain further objectives. Generic $20'$ polarizations additionally require scalar and vector exchange; higher-twist OPE extraction must keep mixing explicit.
+The twenty-seventh report, [From first reconstruction to generic tree amplitudes and protected domains](half_bps_dictionary_extensions.md), starts from `aa128cb903e0f3750a16a69487d64013d38667b1` and closes several further interfaces. Its claim table distinguishes the actual perturbative, observable, source-scheme and operator-domain scopes. It does not claim the full all-orders IIB/SYM dictionary.
 
-The earlier scalar source functional is constructed through $\lambda^2$ in a specified physical scheme, with controlled two-point Lorentzian continuation. Beyond the scalar three-point coefficient just established, interacting higher-point Wightman limits and their positivity remain open; the auxiliary operator result must not be substituted for them. The larger research objective remains open: higher quantum corrections, actual interacting Lorentzian operator constructions, spin-one boundary dynamics and global sectors beyond the present models, Dirac extensions outside the mass window, nonlinear/global gravitational observables, and nonlinear finite-radial reconstruction in a genuine holographic dual. Future reports should remain separate physical calculations rather than append all these unresolved directions to one manuscript.
+The [joint-limit theorem](half_bps_stress_joint_limit.md) proves the complete **causal TT** stress coefficient converges strongly in $\mathcal S'$ along every common radial/spacetime path $B,R\to\infty$. The new [local cancellation](half_bps_stress_joint_cutoff_local.md), [massive zero-transfer](half_bps_stress_joint_massive.md) and [soft-endpoint](half_bps_stress_joint_soft.md) proofs retain the actual finite radial cutoff. In particular, the soft proof controls the mass-band leakage that an uncut support argument cannot discard. Summable null annuli, the common origin and Schwartz tails give the global result, uniformly at bounded external scalar radii.
+
+The [full-stress Ward theorem](half_bps_stress_full_ward_limit.md) includes the Brown–York trace and retained BF metric variation. It reconstructs the actual Hankel moment
+
+$$
+I_3(x,y)=-8m_+\delta''(d)+2\delta(m)\delta(d),
+\qquad m=(x+y)/2,\quad d=x-y,
+$$
+
+and uses its mass-origin contact to control every future-cone endpoint. The non-TT force response tends to zero under genuine switching, so the complete stress coefficient in the stated Wightman ordering agrees with the independent CFT distribution. This full-stress theorem retains **radial removal first**; its additional finite-$B$ Ward forces are not covered automatically by the causal TT joint theorem.
+
+The [finite-switch source functional](half_bps_stress_finite_switch_ward.md) specifies the physical and reference/anchor metrics at $hj^2$, derives both physical-only and combined Ward identities, and keeps the finite-layer PBH gradient contact. A direct Euclidean kernel estimate gives the actual source-integral error $C(B^{-2}+R^{-2})$ at fixed positive insertion radii. The [sourced endpoint theorem](half_bps_stress_sourced_endpoint.md), derived directly from the Einstein covariant potential, closes the sourced–sourced pairing for the linearized response to fixed smooth compact sources: the spatially integrated time current is $u^{-3}\mathcal C(t)$ and the finite-time infrared flux vanishes as $u^{-2}$. Neither statement is a nonlinear global CPS theorem.
+
+The [regulator comparison](half_bps_stress_regulator_identification.md) identifies the common Gram **sum**, the external ordered tube, the genuine spacetime switch and an explicitly defined common-action past-Abel construction with the same completed coefficient. Literal exponential switching is identified locally; its stated Schwartz completion has a global tempered limit. Denominator-only frequency substitutions and individual Gram finite-part diagrams remain separately defined objects.
+
+The [generic $20'$ calculation](half_bps_generic_tree.md) derives scalar, vector and graviton exchange together with both quartic terms from the consistent IIB action. All six polarization tensors match the Ward–Mellin amplitude and, independently, the complete position-space correlator including rational terms. The [generic radial-source theorem](half_bps_generic_radial_limits.md) adds the scalar exchange, the boundary-anchored Wilson insertion with the full constrained Maxwell inverse, and the derivative quartic bound. Together with the existing potential/gravity estimates, this proves the complete generic **Euclidean four-scalar tree** source limit for four independent radii in the stated scheme.
+
+The [leading string correction](half_bps_r4_correction.md) reconstructs
+
+$$
+\delta\widetilde M_{R^4}
+=\frac{480\zeta(3)}{N^2\lambda_{\rm tH}^{3/2}},
+$$
+
+its six full Mellin tensor coefficients and the lowest-twist singlet correction, using the independent IIB string-amplitude input. A finite-radius eight-derivative action is not derived here. The [finite-$N$ protected construction](half_bps_finite_n_protected_domain.md) gives a positive holomorphic $SU(N)$ invariant-polynomial Hilbert space, an exact trace quotient, common invariant polynomial and smooth-energy domains, and explicit mixing. For example,
+
+$$
+\left\|p_4-\frac{2N^2-3}{N(N^2+1)}p_2^2\right\|^2
+=\frac{4(N^2-1)(N^2-4)(N^2-9)}{N^2+1}.
+$$
+
+Its vanishing at $N=2,3$ is an exact finite-$N$ trace identity, not a negative norm. Identifying this protected construction with interacting SYM uses the stated non-renormalization and basis-transport input; general local and bulk products are outside that theorem.
+
+[Eleven newly executed programs, their outputs, primary-source checks and cross-reviews](checks/dictionary_extensions/README.md) record 199 exact zero residuals, additional exact inequality checks and numerical samples. Distributional convergence and domain claims use the analytic proofs, not numerical extrapolation.
+
+## Current open physical questions
+
+The remaining first-order full-stress joint-limit problem is precise: the finite-$B$ residual Ward forces need uniform estimates after the same retarded longitudinal/trace lift. The Euclidean curved-source theorem also needs estimates uniform in the insertion-layer lower bound before every layer and infrared cutoff may be removed together. The linearized fixed-support sourced–sourced endpoint result still leaves the nonlinear coupled Einstein CPS, support-growing limits and a common interacting operator domain to construct.
+
+The generic Euclidean four-point tree source limit is now established; its complete Lorentzian all-null causal and operator realization is a separate task. General interacting positivity, higher quantum/string corrections, additional Kaluza–Klein and supermultiplet sectors, and a finite-radius $R^4$ action remain open. No inference from the protected holomorphic domain or a finite set of correlator coefficients supplies those missing structures. Independently specified denominator-only Abel families and individual Gram diagrams likewise need their own definitions and proofs.
+
+The earlier scalar source functional remains constructed through $\lambda^2$ in its specified physical scheme, with controlled two-point Lorentzian continuation. Its auxiliary positive two-point realization is not the interacting higher-point algebra. Spin-one boundary dynamics/global sectors, Dirac extensions outside the mass window and nonlinear/global gravitational observables remain beyond the respective models. The [extension report's completion criteria](half_bps_dictionary_extensions.md) make these remaining tasks explicit rather than naming a finite-order result the complete IIB/SYM dictionary.
