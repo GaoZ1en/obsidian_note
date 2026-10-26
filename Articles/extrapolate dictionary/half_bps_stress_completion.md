@@ -475,3 +475,23 @@ functional and its IR limit; comparison with separately specified
 complex-frequency Abel prescriptions; higher-order and generic-polarization
 reconstruction; and an interacting operator algebra with positivity.
 These are distinct extensions of the coefficient proved here.
+
+## 8. Subsequent scoped extensions
+
+The [dictionary extension report](half_bps_dictionary_extensions.md), starting
+from this report's commit `aa128cb903e0f3750a16a69487d64013d38667b1`, supplies
+new proofs for several tasks listed above. The [joint-cutoff theorem](half_bps_stress_joint_limit.md)
+removes the radial-first restriction for the specified complete causal TT
+coefficient. The [sourced endpoint theorem](half_bps_stress_sourced_endpoint.md)
+closes sourced–sourced pairings in the linearized, fixed compact-source
+class. The [finite-switch Ward functional](half_bps_stress_finite_switch_ward.md)
+fixes the curved-source/reference prescription at $hj^2$ and proves its
+Euclidean infrared limit; the [full-stress theorem](half_bps_stress_full_ward_limit.md)
+adds the Lorentzian Brown–York Ward response in the stated iterated order.
+
+The same extension indexes the generic Euclidean $20'$ four-point tree,
+leading string correction and protected finite-$N$ domain. It retains the
+distinction between these results and a full nonlinear Einstein CPS or
+interacting IIB Hilbert-space theorem. The original claims above keep their
+original scopes; the follow-up proofs, rather than a changed reading of
+this report, establish the stronger statements.

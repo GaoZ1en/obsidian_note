@@ -1,0 +1,5 @@
+{
+  "exact_zero_count": 9,
+  "tensor_components": 20,
+  "maximum_sphere_residual": 2.220446049250313e-16
+}

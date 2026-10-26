@@ -1,0 +1,237 @@
+{
+  "fixed_commit": "aa128cb903e0f3750a16a69487d64013d38667b1",
+  "exact_zero_count": 10,
+  "exact_residuals": {
+    "same_sign_hankel_pair": "0",
+    "past_imaginary_cancellation": "0",
+    "future_imaginary_cancellation": "0",
+    "radial_second_mass_derivative_J": "0",
+    "radial_second_mass_derivative_Y": "0",
+    "individual_resonant_leading_coefficient": "0",
+    "past_collinear_phase_gap": "0",
+    "future_collinear_phase_gap": "0",
+    "retarded_frequency_laplace": "0",
+    "common_past_output_factor": "0"
+  },
+  "common_cutoff_radial_samples": [
+    {
+      "masses_a_b_c": [
+        2.0,
+        1.0,
+        1.0
+      ],
+      "canonical_complete_value": 0.0,
+      "samples": [
+        {
+          "B": 2.0,
+          "value": 0.03141321774607735,
+          "quadrature_error": 2.2218884542225477e-11
+        },
+        {
+          "B": 4.0,
+          "value": 0.04308746035905492,
+          "quadrature_error": 4.2600642137966947e-10
+        },
+        {
+          "B": 8.0,
+          "value": 0.006836268291449621,
+          "quadrature_error": 1.1108865228397084e-10
+        },
+        {
+          "B": 16.0,
+          "value": 0.003315194477685922,
+          "quadrature_error": 1.1164646761925003e-11
+        },
+        {
+          "B": 32.0,
+          "value": -0.0005696068630534068,
+          "quadrature_error": 4.11844262055378e-11
+        },
+        {
+          "B": 64.0,
+          "value": 1.696529027418263e-05,
+          "quadrature_error": 1.4592571476407503e-11
+        },
+        {
+          "B": 128.0,
+          "value": 6.307255543232726e-08,
+          "quadrature_error": 3.086635284487016e-10
+        },
+        {
+          "B": 256.0,
+          "value": 1.728435699687586e-12,
+          "quadrature_error": 2.433942567044395e-10
+        }
+      ]
+    },
+    {
+      "masses_a_b_c": [
+        3.0,
+        1.0,
+        1.5
+      ],
+      "canonical_complete_value": 0.0,
+      "samples": [
+        {
+          "B": 2.0,
+          "value": -0.003140840524888328,
+          "quadrature_error": 6.046952397358855e-11
+        },
+        {
+          "B": 4.0,
+          "value": -0.0008196175525799494,
+          "quadrature_error": 1.9587716997638643e-10
+        },
+        {
+          "B": 8.0,
+          "value": -0.0007616250931838237,
+          "quadrature_error": 7.255071142795567e-11
+        },
+        {
+          "B": 16.0,
+          "value": 4.199039176577287e-05,
+          "quadrature_error": 9.251161459758985e-11
+        },
+        {
+          "B": 32.0,
+          "value": 2.616824745561982e-06,
+          "quadrature_error": 3.550428230324795e-10
+        },
+        {
+          "B": 64.0,
+          "value": 2.4031300949189927e-08,
+          "quadrature_error": 9.573092417954466e-10
+        },
+        {
+          "B": 128.0,
+          "value": 5.760725230175012e-12,
+          "quadrature_error": 9.905526677803445e-10
+        },
+        {
+          "B": 256.0,
+          "value": -3.151368055398507e-13,
+          "quadrature_error": 9.793227621812796e-10
+        }
+      ]
+    },
+    {
+      "masses_a_b_c": [
+        2.0,
+        1.0,
+        0.3
+      ],
+      "canonical_complete_value": 0.0,
+      "samples": [
+        {
+          "B": 2.0,
+          "value": -0.10984703545846801,
+          "quadrature_error": 2.515763791216385e-11
+        },
+        {
+          "B": 4.0,
+          "value": 0.10216625566654736,
+          "quadrature_error": 5.911611985007949e-10
+        },
+        {
+          "B": 8.0,
+          "value": -0.15272871267717894,
+          "quadrature_error": 1.2185910349990618e-10
+        },
+        {
+          "B": 16.0,
+          "value": -0.08867611137791147,
+          "quadrature_error": 1.955108301614107e-11
+        },
+        {
+          "B": 32.0,
+          "value": 0.0029428082939070843,
+          "quadrature_error": 3.62217652462511e-10
+        },
+        {
+          "B": 64.0,
+          "value": -0.0005088879326803513,
+          "quadrature_error": 7.8712140995923e-10
+        },
+        {
+          "B": 128.0,
+          "value": 2.2761745764154906e-05,
+          "quadrature_error": 7.996694643596464e-10
+        },
+        {
+          "B": 256.0,
+          "value": 1.4681571514074676e-08,
+          "quadrature_error": 7.596383506623144e-10
+        }
+      ]
+    }
+  ],
+  "plateau_moment_3_2": 1.126983397670537,
+  "plateau_moment_quadrature_error": 7.356337761166287e-13,
+  "separated_collinear_terms": [
+    {
+      "B": 8.0,
+      "stress": {
+        "B": 8.0,
+        "value": -1.446060866838797,
+        "quadrature_error": 5.181487394803822e-10
+      },
+      "middle": {
+        "B": 8.0,
+        "value": 1.4528971351302795,
+        "quadrature_error": 5.057518794660917e-10
+      },
+      "stress_over_B_5_2": -0.007988433163673519,
+      "predicted_leading_ratio": -0.007025020728769354,
+      "sum": 0.006836268291482428
+    },
+    {
+      "B": 16.0,
+      "stress": {
+        "B": 16.0,
+        "value": -7.737588848480892,
+        "quadrature_error": 5.126010326575633e-12
+      },
+      "middle": {
+        "B": 16.0,
+        "value": 7.74090404295858,
+        "quadrature_error": 5.477124343340375e-12
+      },
+      "stress_over_B_5_2": -0.007556239109844621,
+      "predicted_leading_ratio": -0.007025020728769354,
+      "sum": 0.0033151944776879105
+    },
+    {
+      "B": 32.0,
+      "stress": {
+        "B": 32.0,
+        "value": -42.29151239839948,
+        "quadrature_error": 2.0500281395684154e-11
+      },
+      "middle": {
+        "B": 32.0,
+        "value": 42.290942791536445,
+        "quadrature_error": 1.481423958625102e-11
+      },
+      "stress_over_B_5_2": -0.007300931446177545,
+      "predicted_leading_ratio": -0.007025020728769354,
+      "sum": -0.0005696068630385298
+    },
+    {
+      "B": 64.0,
+      "stress": {
+        "B": 64.0,
+        "value": -234.7862005706614,
+        "quadrature_error": 1.0591355987038179e-09
+      },
+      "middle": {
+        "B": 64.0,
+        "value": 234.78621753595166,
+        "quadrature_error": 9.469727366563746e-10
+      },
+      "stress_over_B_5_2": -0.007165106218587079,
+      "predicted_leading_ratio": -0.007025020728769354,
+      "sum": 1.696529025707605e-05
+    }
+  ],
+  "interpretation": "Exact algebra verifies common-cutoff all-insertion cancellation. Numerical finite-B values support convergence on positive-mass timelike patches. Samples do not establish null-uniform estimates or arbitrary slow joint B(R) convergence."
+}

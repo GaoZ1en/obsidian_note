@@ -1,0 +1,199 @@
+{
+  "exact_zero_count": 9,
+  "exact_residuals": {
+    "sphere_average_series_0": "0",
+    "sphere_average_series_1": "0",
+    "sphere_average_series_2": "0",
+    "sphere_average_series_3": "0",
+    "sphere_average_series_4": "0",
+    "sphere_average_series_5": "0",
+    "positive_K0_sixth_moment": "0",
+    "soft_q_hard_mass_relation": "0",
+    "soft_p_hard_mass_relation": "0"
+  },
+  "verified_tensor_components": 20,
+  "tensor_leakage_powers": {
+    "soft_p": [
+      {
+        "component": [
+          0,
+          0
+        ],
+        "minimum_z_power": 4
+      },
+      {
+        "component": [
+          0,
+          1
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          0,
+          2
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          0,
+          3
+        ],
+        "minimum_z_power": 4
+      },
+      {
+        "component": [
+          1,
+          1
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          1,
+          2
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          1,
+          3
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          2,
+          2
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          2,
+          3
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          3,
+          3
+        ],
+        "minimum_z_power": 4
+      }
+    ],
+    "soft_q": [
+      {
+        "component": [
+          0,
+          0
+        ],
+        "minimum_z_power": 4
+      },
+      {
+        "component": [
+          0,
+          1
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          0,
+          2
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          0,
+          3
+        ],
+        "minimum_z_power": 4
+      },
+      {
+        "component": [
+          1,
+          1
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          1,
+          2
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          1,
+          3
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          2,
+          2
+        ],
+        "minimum_z_power": 6
+      },
+      {
+        "component": [
+          2,
+          3
+        ],
+        "minimum_z_power": 5
+      },
+      {
+        "component": [
+          3,
+          3
+        ],
+        "minimum_z_power": 4
+      }
+    ]
+  },
+  "sphere_average_quadratures": [
+    {
+      "argument": 0.0,
+      "angular_average": 1.0000000000000002,
+      "bessel_value": 1.0,
+      "residual": 2.220446049250313e-16,
+      "quadrature_error": 4.796163466380676e-13
+    },
+    {
+      "argument": 0.1,
+      "angular_average": 0.9991669270399354,
+      "bessel_value": 0.9991669270399351,
+      "residual": 2.220446049250313e-16,
+      "quadrature_error": 4.698463840213662e-13
+    },
+    {
+      "argument": 1.0,
+      "angular_average": 0.9192278794552039,
+      "bessel_value": 0.919227879455204,
+      "residual": -1.1102230246251565e-16,
+      "quadrature_error": 3.0730973321624333e-13
+    },
+    {
+      "argument": 5.0,
+      "angular_average": 0.014900837208880696,
+      "bessel_value": 0.014900837208880732,
+      "residual": -3.642919299551295e-17,
+      "quadrature_error": 6.484396353201305e-15
+    },
+    {
+      "argument": 20.0,
+      "angular_average": -0.0032068270384600296,
+      "bessel_value": -0.0032068270384599646,
+      "residual": -6.505213034913027e-17,
+      "quadrature_error": 4.956972332603726e-16
+    }
+  ],
+  "scope": "Actual algebra and numerical checks. Uniform oscillatory estimates, logarithmic integrability and profile-tail summation are proved in half_bps_stress_joint_soft.md."
+}

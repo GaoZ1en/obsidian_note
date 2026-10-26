@@ -1,0 +1,247 @@
+{
+  "tool": "Python/SymPy",
+  "sympy_version": "1.14.0",
+  "base_commit": "aa128cb903e0f3750a16a69487d64013d38667b1",
+  "checks": [
+    {
+      "label": "24-label derivative contact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full generic action equals full Ward-shift amplitude",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "s-channel spin 2/1/0 residues",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "SG crossing 12",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "SG crossing 24",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "SG crossing 23",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 crossing 12",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 crossing 24",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 crossing 23",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral projected amplitude agrees with earlier report",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral Ss vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral St vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral Su vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral Js vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral Jt vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral Ju vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "neutral R4 symmetric polynomial",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "STF completeness all 1296 indexed entries",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "so(6) completeness all 1296 indexed entries",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "STF completeness s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "so(6) completeness s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "STF completeness t",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "so(6) completeness t",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "STF completeness u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "so(6) completeness u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "nonneutral scalar exchange example",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "nonneutral vector exchange example",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "log-coordinate kinetic cubic vanishes",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "log-coordinate kinetic quartic -1/12 commutator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "potential constant",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "potential quadratic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "potential cubic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "potential quartic",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "flat-space gamma ratio",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 reduced relative coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 reduced absolute coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Virasoro-Shapiro cubic identity",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Virasoro-Shapiro zeta3 coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 Barnes logarithm integral",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 neutral leading logarithm coefficient",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "R4 unique leading singlet anomalous dimension",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "count": 41,
+  "all_passed": true,
+  "details": {
+    "N2_M_SG_coefficients": {
+      "(0, 0)": "-2*(t - 4)*(s + t - 4)/(s - 2)",
+      "(1, 0)": "4*(t - 4)*(s**2 + s*t - 8*s + 4)/((s - 2)*(s + t - 6))",
+      "(0, 1)": "-4*(s*t - 4)*(s + t - 4)/((s - 2)*(t - 2))",
+      "(2, 0)": "-2*(s - 4)*(t - 4)/(s + t - 6)",
+      "(1, 1)": "4*(s - 4)*(s*t + t**2 - 8*t + 4)/((t - 2)*(s + t - 6))",
+      "(0, 2)": "-2*(s - 4)*(s + t - 4)/(t - 2)"
+    },
+    "constant_reduced_seed_full_polynomial_coefficients": {
+      "(0, 0)": "(t - 4)**2*(s + t - 4)**2/16",
+      "(1, 0)": "-(t - 4)**2*(s**2 + s*t - 8*s + 2*t - 2)/8",
+      "(0, 1)": "(s + t - 4)**2*(s*t + 2*s + 2*t - 14)/8",
+      "(2, 0)": "(s - 4)**2*(t - 4)**2/16",
+      "(1, 1)": "-(s - 4)**2*(s*t + 2*s + t**2 - 8*t - 2)/8",
+      "(0, 2)": "(s - 4)**2*(s + t - 4)**2/16"
+    },
+    "action_derivative_contact": "-4*(3*C_1*s + 3*C_1*t - 16*C_1 - 3*C_2*t + 8*C_2 - 3*C_3*s + 8*C_3)/3",
+    "action_potential_contact": "-40*C_1/3 - 40*C_2/3 - 40*C_3/3 + 4*D_s + 4*D_t + 4*D_u",
+    "neutral_R4_symmetric_coefficients": {
+      "a": "1/16",
+      "b": "1/24",
+      "c": "-41/12",
+      "d": "134/3"
+    },
+    "neutral_R4_at_s_t_u_8_over_3": "82/81",
+    "neutral_R4_expanded": "(3*s**4 + 6*s**3*t - 48*s**3 + 9*s**2*t**2 - 98*s**2*t + 356*s**2 + 6*s*t**3 - 98*s*t**2 + 564*s*t - 1312*s + 3*t**4 - 48*t**3 + 356*t**2 - 1312*t + 2144)/48",
+    "nonneutral_examples": {
+      "TrY1_squared": 2,
+      "S_1111": "4/3",
+      "J_1212": 8
+    }
+  }
+}
