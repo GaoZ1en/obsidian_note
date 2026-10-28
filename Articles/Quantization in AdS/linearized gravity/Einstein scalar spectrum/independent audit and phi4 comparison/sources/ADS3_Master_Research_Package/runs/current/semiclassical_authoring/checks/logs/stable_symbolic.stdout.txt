@@ -1,0 +1,12 @@
+6 matrix 1.4693183898925781
+6 inverse 1.5176537036895752
+6 C computed 3.009467124938965
+{'P': 6, 'Delta': 'symbolic d', 'all_C2_entries_identically_zero_residual': True, 'seconds': 3.0370290279388428}
+8 matrix 3.6719014644622803
+8 inverse 3.8408098220825195
+8 C computed 7.527005910873413
+{'P': 8, 'Delta': 'symbolic d', 'all_C2_entries_identically_zero_residual': True, 'seconds': 7.576766490936279}
+9 matrix 4.346059560775757
+9 inverse 4.794135332107544
+9 C computed 7.557743787765503
+{'P': 9, 'Delta': 'symbolic d', 'all_C2_entries_identically_zero_residual': True, 'seconds': 7.600300550460815}

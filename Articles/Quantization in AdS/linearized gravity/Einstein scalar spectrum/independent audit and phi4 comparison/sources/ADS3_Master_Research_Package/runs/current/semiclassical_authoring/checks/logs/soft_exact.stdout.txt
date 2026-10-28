@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "inertia_selfcheck": {
+    "exact_test_cases": 4,
+    "zero_diagonal_2x2_pivot_exercised": true
+  },
+  "metric_transfer": {
+    "N": 3,
+    "P": 6,
+    "Q": 3,
+    "physical_Delta": "7/3",
+    "auxiliary_Delta": "1/2",
+    "labelled_dimension": 28,
+    "all_three_pair_flags_both_inclusions": true,
+    "restricted_metric_identity": true,
+    "Bose_equivariance": true
+  },
+  "boundary": {
+    "group_size": 384,
+    "central_count": 4,
+    "rotation_trace_counts": {
+      "3": 2,
+      "-1": 18,
+      "1": 12,
+      "0": 16
+    },
+    "exact_grid_count": 40400,
+    "plucker_moment_checks": 189,
+    "trace_constant": "2375/16",
+    "finite_count_coefficient": "1/2",
+    "finite_exponent_denominator": 2304,
+    "asymptotic_exponent_denominator": 4608
+  },
+  "spectral_certificates": [
+    {
+      "P": 16,
+      "Q": 8,
+      "dimension_auxiliary": 34,
+      "method": "direct polynomial transposition, no Racah formula imported",
+      "rows": [
+        {
+          "threshold": "0",
+          "inertia_positive_negative_zero": [
+            26,
+            0,
+            8
+          ]
+        },
+        {
+          "threshold": "1/5",
+          "inertia_positive_negative_zero": [
+            26,
+            8,
+            0
+          ]
+        },
+        {
+          "threshold": "1/3",
+          "inertia_positive_negative_zero": [
+            25,
+            9,
+            0
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.37351560592651367
+    },
+    {
+      "P": 32,
+      "Q": 16,
+      "dimension_auxiliary": 98,
+      "method": "direct polynomial transposition, no Racah formula imported",
+      "rows": [
+        {
+          "threshold": "0",
+          "inertia_positive_negative_zero": [
+            90,
+            0,
+            8
+          ]
+        },
+        {
+          "threshold": "1/6000",
+          "inertia_positive_negative_zero": [
+            90,
+            8,
+            0
+          ]
+        },
+        {
+          "threshold": "1/5000",
+          "inertia_positive_negative_zero": [
+            89,
+            9,
+            0
+          ]
+        }
+      ],
+      "elapsed_seconds": 45.2668240070343
+    }
+  ]
+}

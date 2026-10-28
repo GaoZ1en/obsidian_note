@@ -1,0 +1,2634 @@
+                                                 Time-periodicities in holographic CFTs
+
+                                                           Ben Craps,a Marine De Clerck a and Oleg Evninb,a
+
+
+
+
+arXiv:2103.12798v2 [hep-th] 3 Sep 2021
+                                                      a
+                                                          Theoretische Natuurkunde, Vrije Universiteit Brussel (VUB) and
+                                                              The International Solvay Institutes, Brussels, Belgium
+                                         b
+                                             Department of Physics, Faculty of Science, Chulalongkorn University, Bangkok, Thailand
+
+                                               Ben.Craps@vub.be, Marine.Alexandra.De.Clerck@vub.be, oleg.evnin@gmail.com
+
+
+
+
+                                                                                 ABSTRACT
+
+
+                                         Dynamics in AdS spacetimes is characterized by various time-periodicities. The most obvious
+                                         of these is the time-periodic evolution of linearized fields, whose normal frequencies form
+                                         integer-spaced ladders as a direct consequence of the structure of representations of the
+                                         conformal group. There are also explicitly known time-periodic phenomena on much longer
+                                         time scales inversely proportional to the coupling in the weakly nonlinear regime. We ask
+                                         what would correspond to these long time periodicities in a holographic CFT, provided
+                                         that such a CFT reproducing the AdS bulk dynamics in the large central charge limit has
+                                         been found. The answer is a very large family of multiparticle operators whose conformal
+                                         dimensions form simple ladders with spacing inversely proportional to the central charge.
+                                         We give an explicit demonstration of these ideas in the context of a toy model holography
+                                         involving a φ4 probe scalar field in AdS, but we expect the applicability of the underlying
+                                         structure to be much more general.
+Contents
+1 Introduction                                                                               2
+
+2 Classical dynamics in AdS and its time periodicities                                        6
+  2.1 Weakly nonlinear dynamics of strongly resonant systems . . . . . . . . . . .            6
+  2.2 AdS perturbations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      10
+  2.3 The maximally rotating sector . . . . . . . . . . . . . . . . . . . . . . . . . .      13
+  2.4 Time-periodicities . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   15
+  2.5 Similar behaviors for other systems . . . . . . . . . . . . . . . . . . . . . . .      19
+
+3 Quantum energy shifts in AdS                                                               20
+  3.1 Quantum perturbation theory in AdS . . . . . . . . . . . . . . . . . . . . . .         21
+  3.2 Maximally rotating sector in the quantum theory . . . . . . . . . . . . . . .          24
+
+4 Large c holography, multiparticle states and their energy corrections                      27
+
+5 Energy ladders in the fine structure                                                       29
+  5.1 Occupation numbers in ladder states . . . . . . . . . . . . . . . . . . . . . .        33
+
+6 Coherent states and classical time-periodic dynamics                                       35
+  6.1 Coherent states with Z = 0 . . . . . . . . . . . . . . . . . . . . . . . . . . .       36
+  6.2 Z-translated coherent states . . . . . . . . . . . . . . . . . . . . . . . . . . .     40
+
+7 Discussion                                                                                 42
+
+A Asymptotic behavior of the ratio of Jacobi polynomials (5.34)                              43
+
+
+
+
+                                               1
+1       Introduction
+The AdS/CFT correspondence provides an attractive framework to connect the algebraic
+structures of conformal field theories (CFTs) with the dynamics of fields and strings in Anti-
+de Sitter (AdS) spacetimes. The precise connection between specific features of interest on
+the two sides of the correspondence may, however, be far from obvious. It is our goal here to
+explore a range of such connections, in particular, in relation to dynamical time-periodicity.
+    While the subject of CFTs has a long and accomplished history, studies of nonlinear
+dynamics in AdS spacetimes are relatively recent, largely triggered by the observations of
+[1] that suggested formation of black holes starting from arbitrarily small perturbations of
+some shapes in the initial state of the AdS evolution. A crucial ingredient underlying the
+sophistication of nonlinear dynamics in AdS for arbitrarily small perturbation amplitudes is
+the perfectly resonant spectrum of linearized normal mode frequencies. Thus for linear fields
+of any spin and mass in AdS backgrounds, the differences of frequencies of any two normal
+modes are integer in appropriate units (fixed in terms of the AdS curvature radius). Hence,
+pronounced time-periodic features appear already at the linearized levels (for example, all
+solutions of equations of motion for linear massless fields in AdS backgrounds are exactly
+periodic functions of time). Resonances between the linear normal modes are what enables
+nonlinearities to exert significant influences on perturbations of arbitrarily small amplitudes,
+provided that one waits long enough. A selection of further studies of this type of nonlinear
+dynamics can be found in [2–16]; for a short review,1 see [19].
+    There are many other ways in which time periodicities, exact and approximate, manifest
+themselves in AdS dynamics. First of all, as one moves away from the linearized regime,
+the associated time-periodic bounces with waves moving between the AdS interior and the
+boundary are retained in a distorted form. Such bounces have been studied in numerical
+simulations at finite perturbation amplitudes in [2, 7]. In this case, the returns to the initial
+configuration are, of course, inexact, but they persist to appreciable perturbation amplitudes.
+Collapse into a black hole may happen after a number of such bounces, terminating the time-
+periodic evolution, but each individual bounce before that is approximately time-periodic.
+    Coming back to small perturbations, the effect of nonlinearities is to induce slow mod-
+ulations of the time-periodic linearized dynamics. These slow modulations may accumulate
+to large effects due to the resonant nature of the linearized spectrum. For perturbations of
+amplitude ε and quartic interactions, the relevant time scale for these modulations is 1/ε2 ,
+often referred to as the ‘slow time’. These slow modulations may themselves be approx-
+imately or exactly time-periodic, with correspondingly large periods of order 1/ε2 . Thus,
+while the exact returns to the initial configuration seen in the linearized theory are upset by
+the effects of nonlinearities, the resulting nonlinear dynamics may still reconstruct the initial
+state very accurately, or even exactly, after a much longer waiting period. For gravitational
+perturbations of AdS4 , the initial state is reconstructed with extremely high precision (but
+imperfectly) after many bounces of the waves between the interior and the boundary, as has
+been observed in [3] and investigated in detail in [14], in analogy to the Fermi-Pasta-Ulam
+    1
+     While AdS instability remains an evidence-based conjecture for classical field systems in AdS of more
+direct relevance for the AdS/CFT program and hence for the present work, analogous effects have been
+rigorously established in mathematical studies of the Einstein-Vlasov system describing null dust in AdS
+[17, 18].
+
+
+                                                    2
+recurrence phenomena of nonlinear oscillator chains [20].
+    The situation is particularly striking when the modulations of linearized dynamics in-
+duced by nonlinearities reconstruct the initial state with perfect precision after a long wait-
+ing period. Such situations have been observed in the literature for non-gravitating self-
+interacting fields in non-dynamical AdS backgrounds [21,22]. As we shall explain below, one
+should expect similar phenomena for gravitating fields, but only outside spherical symmetry,
+where the analysis is computationally very challenging and has not been performed up to
+this date. For this reason, our main focus in this article will be on the dynamics of non-
+gravitating ‘probe’ fields, keeping in mind that a generalization of our results to gravitating
+fields is likely, but would require substantial computational breakthroughs.
+    It is useful to keep in mind the mathematical relation between the nonlinear dynamics
+in AdS and simpler nonlinear Schrödinger equations in harmonic potentials, which are used
+to describe trapped Bose-Einstein condensates in contemporary terrestrial experiments [23].
+This relation was originally pointed out2 in [26] and explained by taking a nonrelativistic
+limit of AdS field equations in [22]. The linearized dynamics in this case is described by
+the well-known equispaced perfectly resonant spectrum of the harmonic oscillator, while the
+weakly nonlinear dynamics displays direct parallels to the more complicated AdS case. This
+dynamics has been studied in [27, 28] and shows some perfect periodic returns to the initial
+state. One may also take a nonrelativistic limit of gravitating systems in AdS, obtaining a
+Hartree equation in a harmonic potential, which also displays some perfect periodic returns
+[29]. The underlying mathematical structure responsible for these weakly nonlinear periodic
+behaviors, common for AdS fields and their nonrelativistic harmonically trapped limits, has
+been made manifest in [30, 31].
+    What is the CFT counterpart of all these time-periodic features in AdS dictated by the
+AdS/CFT correspondence? When gravitating perturbations of AdS collapse to form black
+holes, this is seen as the AdS counterpart of thermalization in the dual CFT. When black
+holes fail to form, or are only formed after a long train of revivals of the initial states,
+as happens for the approximately time-periodic scenarios, this is seen as an obstruction to
+effective thermalization in the dual CFT. Such a perspective is developed in [2, 3, 7] among
+other publications. But can one go beyond such ‘macroscopic’ statements in the spirit of non-
+equilibrium statistical physics, and recover specific features in the evolution of ‘microscopic’
+CFT states that provide a counterpart to the classical AdS behaviors?
+    Here we come to a subtle point. The time periodicities we have described are for classical
+nonlinear fields in AdS, and hence finding a ‘microscopic’ counterpart to this evolution on
+the CFT side requires identifying CFT states dual to semiclassical bulk geometries. This
+question does not appear to be fully systematically settled, though connections between
+coherent states in CFTs and semiclassical configurations in the dual bulk have been put
+forward in [32].
+    Rather than systematically identifying the CFT counterparts of the classical configura-
+tions responsible for the time-periodic behaviors in AdS, however, we prefer to turn things
+around and quantize our dynamics in the bulk. It will turn out that the weakly nonlinear
+   2
+     Analogies between turbulent dynamics in AdS and nonlinear Schrödinger equations have been put forth
+even earlier [24] with reference to the much-studied nonlinear Schrödinger equation on a torus [25]. However,
+it is specifically after introducing a harmonic potential that the nonlinear Schrödinger equation develops a
+precise mathematical relation to the AdS problems.
+
+
+                                                      3
+dynamics of perturbations with amplitudes ε on times scales of order 1/ε2 (or at coupling
+λ on time scales 1/λ) precisely corresponds to the lowest order nonlinear corrections to the
+energy eigenstates of quantum fields in AdS. As one stays at first order in the coupling
+parameter, no ultraviolet problems of quantum field theories arise, even if one chooses to
+include gravitational interactions. (Subtleties exist in defining interacting quantum field the-
+ories in AdS spacetimes beyond the leading order in the coupling parameter, see for instance
+the recent article [33], but they will not affect our considerations.) While straightforward
+to formulate and well-posed, the problem of finding these energy shifts is in general rather
+demanding because of the huge (arbitrarily large) degeneracies of the quantum levels of free
+fields in AdS. By the standard lore of quantum-mechanical perturbation theory for a de-
+generate spectrum, one has to diagonalize very large matrices made of the matrix elements
+of the interaction Hamiltonian within each highly degenerate unperturbed level. Finding
+patterns in this diagonalization problem and connecting them to the classical time-periodic
+behaviors will form the technical core of our study.
+    Once our time-periodic behaviors in the bulk have been recast as properties of energy
+eigenstates of quantum fields in AdS at linear order in the coupling parameter, connecting
+them to the CFT side of the holographic duality becomes straightforward. Indeed, energy
+eigenstates in the AdS bulk are in one-to-one correspondence with the CFT operators of
+definite conformal dimension, as dictated by the conformal symmetry. More specifically,
+discussions of small corrections to the conformal dimensions of the CFT operators are com-
+mon in the context of ‘large c holography’ [34, 35]. In this picture, one assumes to have a
+family of CFTs with the central charge c growing without a bound. In the limit c → ∞,
+the conformal dimensions of the primary operators tend to infinity, except for a finite set
+of operators that acquire the properties of ‘generalized free fields’ [35]. Such fields, while
+their dimensions do not necessarily take the values corresponding to free fields, behave as
+free fields in the sense that their correlators factorize. As a result, the conformal dimensions
+of such fields simply add up under taking products. If one considers the entire set of such
+product operators (often called the ‘multiparticle’ operators), their conformal dimensions
+form a tower precisely corresponding to the energy levels of a free quantum field in AdS. (A
+concrete realization of this picture in two-dimensional CFTs is known due to [36, 37].) As
+one moves away from the strict c = ∞ limit, the dimensions receive corrections of order 1/c
+(and in particular, the highly degenerate levels of conformal dimensions split due to these
+corrections). In the AdS bulk, this corresponds to the shifts of energy levels of free fields due
+to weak interaction, precisely the framework at which we arrived in the previous paragraph.
+    Analysis of the conformal dimensions of CFT operators is a common subject in the
+AdS/CFT literature. In application to self-interacting scalars, which will be our main focus
+in the technical part of the paper, these have been studied, for instance, in [34, 38, 39]. The
+dimensions are typically analyzed in the language of correlation functions, which is differ-
+ent (albeit equivalent) to our presentation (see, however, [40] for an approach based on the
+Hamiltonian perturbation theory, which is much closer to our study). A more important dif-
+ference between our analysis and the bulk of the literature is that the latter typically focuses
+on ‘small’ operators (made of products of a few single-particle operators, and corresponding
+to states with just a few particles in the AdS bulk), which are often analyzed at higher or-
+ders in the coupling parameter. By contrast, we shall always remain at the lowest nontrivial
+order in the coupling parameter, but are interested in analyzing the corrections to conformal
+
+                                               4
+dimensions to arbitrarily ‘large’ operators (corresponding to states with arbitrarily many
+particles in the bulk). This amounts to studying the diagonalization properties of a family
+of arbitrarily large, highly structured matrices.
+    In view of the above premises, what we have to do technically is to consider quantum
+fields in AdS and analyze the corrections to the energies of Hamiltonian eigenstates at lead-
+ing order in the interaction strength, in particular, for high energy levels which are hugely
+degenerate in the noninteracting theory. In practice, we shall focus on a non-gravitating φ4
+scalar within the maximally rotating sector (states that have the maximal possible amount
+of angular momentum for a given energy). We shall explain, following [31], that similar
+patterns should be expected in maximally rotating sectors of gravitating systems, but re-
+covering them explicitly would require substantial technical work beyond the scope of our
+treatment. As outlined already in [41], the problem of finding these energy shifts can be
+reduced to diagonalizing a specific quantum resonant system [42], whose Hamiltonian is a
+quartic combination of creation-annihilation operators. Such quantum resonant systems are,
+on the one hand, related to bosonic embedded Gaussian ensembles of random matrix the-
+ory [43], albeit without randomness in the couplings, and on the other hand, can be seen as
+a bosonic analog of the SYK model [44–46] that has attracted much attention in the context
+of gravitational holography.
+    While the quantum resonant systems corresponding to our cases of interest cannot be fully
+solved analytically, our goal is to present their partial analytic solution: a subset of energy
+levels and their explicit wavefunctions. This solution builds on the previous work [47, 48]
+for the simpler nonrelativistic analogs of the AdS systems. The explicit energy levels given
+by our solutions form simple ladders and provide clear quantum counterparts of the time-
+periodic behaviors of the classical theory. We note that the structure that we find is by no
+means guaranteed to exist from the onset. Indeed, classical behaviors emerge from the high-
+energy asymptotics of the spectrum of the corresponding quantum system, and classical time-
+periodicities, even if exact, do not, in principle, have to originate from any exact properties
+of quantum eigenstates at finite energies. Despite this general observation, what we find
+in fact is a large family of explicit quantum energy eigenstates with a simple formula for
+the energy that not only explains the classical time periodicities, but also demonstrates a
+considerably larger amount of explicit tractable analytic structure in the quantum theory
+than what had been previously seen in its classical counterpart!
+    While our analysis was initially motivated by observing time-periodic behaviors in classi-
+cal AdS dynamics, the value of the underlying explicit structure in the corresponding energy
+levels that we find goes beyond this initial motivation and stands in its own right. In partic-
+ular, it gives a prediction regarding properties of 1/c corrections to the conformal dimensions
+of multiparticle operators in a dual holographic CFT. It is nonetheless worthwhile, given our
+initial motivation, to make the connection between the family of quantum ‘ladder’ states
+we find and the corresponding time-periodic classical solutions as explicit as possible. To
+this end (again, building on the analysis of [48] for the considerably simpler nonrelativistic
+case), we develop a construction of coherent-like states made entirely out of our ladder states
+(and not involving any other energy eigenstates of the Hamiltonian) that can approximate
+the time-periodic classical dynamics with arbitrary precision. This completes the circle and
+answers the initial question that had triggered this study, in addition to the explicit identi-
+fication of the quantum level structure and its holographic CFT counterpart. The idea that
+
+                                              5
+coherent combinations of CFT eigenstates should correspond to semiclassical dynamics in
+the bulk has appeared in the literature before, see for example [32] where ordinary harmonic
+oscillator states are employed in this manner. The states we construct are similar in spirit,
+but much more powerful, since, being made of our explicit ladder eigenstates of the Hamil-
+tonian, they are adapted to the specific dynamics due to nonlinear interactions, and their
+evolution under the full interacting Hamiltonian at leading order in the interaction strength
+is completely straightforward.
+    Our exposition is organized as follows: In Section 2, we review classical perturbative
+treatments of systems with resonant spectra of normal mode frequencies, and applications of
+these methods to classical fields in AdS. Section 3 discusses the fate of these structures under
+quantization. In Section 4, we review the basics of large c holography, generalized free fields,
+towers of conformal dimensions of composite operators at c = ∞, and 1/c corrections to these
+towers, which are in direct correspondence with the quantum perturbation theory of section 3.
+In section 5, we specialize to the maximally rotating sector of a φ4 scalar field in AdS and
+display an explicit ‘ladder’ pattern in the 1/c corrections to the conformal dimensions in this
+sector. In section 6, we explain how to construct coherent-like combinations of the ladder
+states of section 5 that are in immediate correspondence with the classical weakly nonlinear
+solutions displaying time periodicity covered in section 2. We conclude in section 7 with
+a discussion and point out further settings where similar structures are likely to emerge,
+beyond probe fields in AdS.
+
+
+2     Classical dynamics in AdS and its time periodicities
+We shall start by reviewing the background material necessary for our subsequent technical
+investigations. First of all, we shall give an exposition of the treatment of the classical theory
+for which time-periodic approximate solutions emerge in the weakly nonlinear regime. This
+material is in principle completely standard and discussed in textbooks and reviews [49, 50],
+but it is not included in most theoretical physics curricula and may be unfamiliar to the
+reader. (Further sense of disorientation may emerge from the variety of names applied
+to these techniques: they are likely to be referred to as ‘multi-scale’ or ‘time-averaging’
+methods by applied mathematicians, and as ‘effective equation’ and ‘resonant approximation’
+by the pure math communities working on nonlinear PDEs.) Somewhat surprisingly, once
+the system is quantized, the counterpart of these methods is something universally known:
+the Rayleigh-Schrödinger perturbation theory for the energy shifts in degenerate quantum
+spectra due to perturbations. This will be explained in section 3.
+
+2.1   Weakly nonlinear dynamics of strongly resonant systems
+We start with a completely elementary example that nonetheless shows how naive pertur-
+bative expansions become inadequate to describe long-term dynamics of weakly nonlinear
+classical systems, and offers a remedy. Consider a weakly anharmonic oscillator with the
+Hamiltonian
+                                        p2 + ω 2 x2 gx4
+                                   H=              +    ,                           (2.1)
+                                            2        4
+
+
+                                                6
+where g is treated as a small parameter. The equation of motion is
+
+                                         ẍ + ω 2 x + gx3 = 0.                                (2.2)
+
+When g = 0,
+                                               1
+                                                   αe−iωt + ᾱeiωt ,
+                                                                  
+                              x(t) ≡ x0 (t) = √                                         (2.3)
+                                                2ω
+where α is a complex constant and the overall normalization is chosen for future convenience.
+One could naively try to perturbatively improve this solution at order g by writing x(t) =
+x0 (t) + gx1 (t) where x1 (t) satisfies
+
+                                         ẍ1 + ω 2 x1 + x30 = 0.                              (2.4)
+
+This is solved by
+
+                                       3ieiωt                   e3iωt 3
+                                                                                 
+                             1                              2
+                       x1 = √                 (i + 2tω)α ᾱ   +       ᾱ + c.c.               (2.5)
+                              2ω        8ω 3                    16ω 3
+
+(up to an arbitrary solution of ẍ1 + ω 2 x1 = 0, which simply fixes how the initial conditions
+depend on g). The problem with the above solution is that the first term grows with t and, at
+t ∼ 1/g, starts competing with x0 in magnitude, invalidating the naive perturbation theory.
+Such terms are known as secular terms. Naive perturbation theory of course remains valid
+for predictions on g-independent time scales, where it gives tiny corrections of order O(g) to
+(2.3). Such tiny corrections are, however, rarely of interest. What is interesting is to track
+the leading effect of small nonlinearities over long times where they give corrections of order
+1 to the unperturbed solution. This goal requires alternative approaches to the perturbative
+treatment.
+    There are many ways to construct an improved perturbative treatment that captures
+the regime of interest. We shall focus on the time-averaging approach that goes back to
+the classic works of Bogoliubov and Krylov almost a hundred years ago. To this end, we
+perform a canonical transformation from (x, p) to a pair of conjugate complex variables (α, ᾱ)
+patterned on the unperturbed solution (2.3):
+                                                          r
+                1         −iωt                              ω
+                                       iωt
+                                                              ᾱ(t)eiωt − α(t)e−iωt .
+                                                                                  
+       x(t) = √      α(t)e     + ᾱ(t)e      ,   p(t) = i                                 (2.6)
+                2ω                                          2
+
+(This transformation could be habitually called going to the interaction picture by a quantum
+field theorist.) The resulting equation of motion for α reads
+               r                     
+            d      ω         1                ig                 3
+       α̇ ≡           x + i√ p e    iωt
+                                          = − 2 αe−iωt + ᾱeiωt eiωt                           (2.7)
+            dt      2        2ω              4ω
+                                              ig
+                                          = − 2 (3ᾱα2 + 3ᾱ2 αe2iωt + α3 e−2iωt + ᾱ3 e4ωt ).
+                                             4ω
+We can see that the derivative of α is of order g so that α varies slowly, on time scales of
+order 1/g. At the same time, all terms on the right-hand side oscillate with periods of order
+1, except for the first term. The idea of time-averaging is that all such oscillating terms
+
+                                                    7
+‘average out’ at leading order and can be neglected. This can be proved rigorously [49]. The
+remaining averaged equation is
+                                              3ig
+                                       α̇ = − 2 ᾱα2 ,                                  (2.8)
+                                             4ω
+which is simply solved by
+                                                            
+                                                  3ig      2
+                              α(t) = α(0) exp − 2 |α(0)| t .                            (2.9)
+                                                  4ω
+
+Substituting this back into (2.6), we see that the leading effect of nonlinearities is to simply
+shift the oscillation frequency ω by a small amplitude-dependent correction 3g|α(0)|2 /4ω 2 ,
+known as the Poincaré-Lindstedt shift. Evidently, naively expanding (2.9) in powers of g
+would have recovered the secular term in (2.5), but that would have damaged the uniform
+applicability of our solution on time scales of order 1/g.
+    We now turn to a system of coupled oscillators with frequencies ωn , which are a prototype
+for all classical field systems. Consider the Hamiltonian
+                                X p2 + ω 2 x2          g X
+                                     n       n n
+                          H=                       +          Snmkl xn xm xk xl ,                (2.10)
+                                 n
+                                         2             4 nmkl
+
+where Snmkl is fully symmetric under interchanges of n, m, k, l. The idea behind its treatment
+at small g is similar to the trivial example above, but much richer structures may emerge
+depending on the spectrum of ωn . At g = 0, the system consists of independent oscillators.
+Attempting to construct naive perturbation theory around the corresponding solutions re-
+sults in secular terms that invalidate the perturbative expansion on time scales of order 1/g.
+Instead, one goes to the interaction picture, as in (2.6), by writing
+                                                                r
+              1            −iωn t                                 ωn
+                                            iωn t
+                                                                     ᾱn (t)eiωn t − αn (t)e−iωn t .
+                                                                                                 
+  xn (t) = √        αn (t)e       + ᾱn (t)e        , pn (t) = i
+              2ωn                                                 2
+                                                                                               (2.11)
+As an equation of motion for αn , one gets the following generalization of (2.7):
+                  X      Snmkl
+                                    αm (t)e−iωm t + ᾱm (t)eiωm t αk (t)e−iωk t + ᾱk (t)eiωk t
+                                                                                               
+      α̇n = −ig        √
+                  mkl
+                      4 ωn ωm ωk ωl
+                                                     × αl (t)e−iωl t + ᾱl (t)eiωl t eiωn t .
+                                                                                    
+                                                                                                  (2.12)
+
+We then proceed applying time-averaging to this equation, giving a valid approximation at
+small g on time scales 1/g, by discarding all explicitly oscillating terms on the right-hand
+side. Non-oscillating terms (which may generate large effects over long time scales) are
+defined by the condition
+                                 ωn ± ωm ± ωk ± ωl = 0,                                (2.13)
+where the three plus-minus signs are independent; they correlate with whether ᾱ or α is
+chosen when expanding the product of the three bracketed expressions in (2.12).
+   The structure of the resonant approximation (i.e., the time-averaged system) obtained
+by keeping only terms satisfying (2.13) on the right-hand side of (2.12) crucially depends
+
+                                                   8
+on how resonant is the spectrum of normal mode frequencies ωn . ‘Resonant’ here is used in
+a sense typical of Hamiltonian perturbation theory and the KAM theorem [51], namely, a
+spectrum possesses a resonance if there exists a set of not simultaneously vanishing integers
+nk such that                           X
+                                           nk ωk = 0.                                  (2.14)
+                                              k
+
+If no relations of these form exist, the only way to satisfy (2.13) is by forming combinations
+ωn + ωm − ωn − ωm , which are trivially zero irrespectively of the form of the spectrum. Such
+trivial resonances, however, provide only very few non-oscillating terms on the right-hand side
+of (2.12). Keeping only these terms results in a very simple resonant approximation of the
+form α̇n = iΩn (|α|2 )αn , where Ωn are linear functions of the absolute value squared of all α’s,
+but not of their phases. As a result, the equations completely decouple and are integrated as
+αn (t) = exp[ig Ωn (|α(0)|2 ) t] αn (0), which is a direct analog of the one-dimensional Poincaré-
+Lindstedt shift (2.9). The absolute values of the normal mode amplitudes |αn |2 do not
+depend on time in the absense of resonances (2.14), and hence there is no appreciable energy
+transfer between the modes due to nonlinearities at small g. The only significant effect of
+the nonlinearities for a nonresonant frequency spectrum is to give small corrections to the
+frequencies proportional to g.
+    The situation becomes much more complicated and interesting when resonances of the
+form (2.14) are present, as will be manifested by our subsequent studies of the AdS dynamics.
+In such cases, there are nontrivial solutions to (2.13). For example, if ωn is a linear function
+of n, resonances of the form ωn + ωm − ωk − ωl = 0 are present for any n + m = k + l. With
+extra terms present in the resonant approximation to (2.12) the equations for different αn
+no longer decouple from each other, and the absolute values |αn |2 are no longer constant. In
+physical terms, nontrivial resonances (2.14) enable significant energy transfer between the
+different modes on time scales of order 1/g, no matter how small g is. This is what makes
+weakly nonlinear dynamics of strongly resonant systems highly non-trivial.
+    The precise form of the resonant approximation to (2.12) depends on the precise structure
+of the resonant spectrum of ωn . Assuming, as in the previous paragraph, that ωn is a linear
+function of n and the only relevant resonances (2.13) are those with n + m = k + l (which will
+be the case in our subsequent AdS considerations), and then retaining only non-oscillatory
+terms on the right-hand side of (2.12) results in
+                                               X
+                                   iα̇n = 3g          Cnmkl ᾱm αk αl ,                     (2.15)
+                                             n+m=k+l
+
+                        √
+where Cnmkl = Snmkl /(4 ωn ωm ωk ωl ). Then, defining the slow time τ ≡ 3gt, we arrive at a
+resonant system of a form that will be crucial for the rest of our considerations:
+                                     dαn     X
+                                 i       =         Cnmkl ᾱm αk αl .                        (2.16)
+                                      dτ   n+m=k+l
+
+Of course, to give substance to this quick sketch of weakly nonlinear resonant dynamics, it
+remains to show accurately how the weakly nonlinear dynamics of fields in AdS can be recast
+as (2.16) and to specify the corresponding expression for the interaction coefficients Cnmkl .
+
+
+                                                   9
+2.2   AdS perturbations
+Our goal is to develop a treatment of small amplitude nonlinear fields in global Anti-de Sitter
+spacetime denoted as AdSd+1 , where d is the number of spatial dimensions. The AdS metric
+can be written as
+                                     1        2      2        2     2
+                           ds2 =
+                                                                        
+                                         −dt    +  dx  +  sin   x dΩd−1   ,               (2.17)
+                                  cos2 x
+where the curvature radius has been set to 1 by a choice of length units, and dΩ2d−1 is
+the round metric on the (d − 1)-sphere parametrized by hyperspherical coordinates Ω =
+{θ1 , · · · , θd−2 , ϕ}.
+    As it turns out, AdS spacetimes operate as cavities with a purely discrete, highly resonant
+spectrum of normal mode frequencies. Any field system placed in this cavity can then be
+represented as an infinite set of interacting oscillators with resonant relations among their
+frequencies. This is precisely the setup of (2.10), and hence weakly nonlinear dynamics of
+fields in AdS can be treated following the general guidelines given above for coupled oscillator
+systems.
+    We shall demonstrate these ideas explicitly using a complex scalar in AdS with quartic
+self-interactions, which will form the basis of our technical consideration in this paper. For
+that, we will closely follow the discussion in [22]. Then we shall briefly explain how things
+work for other field systems. The Lagrangian for a complex scalar field φ is simply
+                                                      λ|φ|4 √
+                             Z                             
+                         S=            2    2
+                                   |∂φ| + m |φ| +2
+                                                                  −g dd+1 x.              (2.18)
+                                                        2
+In the background (2.17), the equations of motion are
+                                                              
+                        1                         1
+        2      2                    d−1
+                                                       ∆S d−1 φ − m2 φ = λ|φ|2 φ,
+                                            
+     cos x −∂t φ +           ∂x tan x∂x φ +                                                        (2.19)
+                    tand−1 x                    sin2 x
+where ∆S d−1 is the (d − 1)-sphere Laplacian, which can be defined recursively,
+                                 1                                              1
+                                             ∂θd−1 sind−1 θd−1 ∂θd−1 +
+                                                                    
+                 ∆S d =         d−1                                             2    ∆S d−1 ,      (2.20)
+                          sin         θd−1                                  sin θd−1
+
+with ∆S 1 = ∂φ2 . The linearized system, obtained from (2.19) by replacing the right-hand
+side with zero, can be solved by separation of variables. One starts by solving the eigenvalue
+problem
+                                                 m2
+                                                     
+         1            d−1
+                                  1                                     2
+         d−1
+               ∂x tan x∂x +         2 ∆S d−1 −      2
+                                                         enlk (x, Ω) = −ωnlk enlk (x, Ω) (2.21)
+      tan x                      sin x          cos x
+for the mode functions enlk (x, Ω) and the corresponding frequencies ωnlk . Here, as usual
+for systems with spherical symmetry, the index n labels the radial overtone, while l and k
+characterize the angular momentum state, as will be discussed below. One then expands the
+field φ in terms of these mode functions, which yields the general linearized solution
+                                       ∞ X
+                                       X
+                 φlinear (t, x, Ω) =              (Anlk e−iωnlk t + Bnlk eiωnlk t ) enlk (x, Ω),   (2.22)
+                                        n=0 l,k
+
+
+                                                        10
+                                14
+
+
+                                12
+
+
+                                10
+
+                            ω
+                                8
+
+
+                                6
+
+
+                                4
+
+                                                                            l
+                                2
+                                     0   2      4     6     8     10   12
+
+Figure 1: The frequencies of the linearized normal modes (2.21) for different values of n
+and l. Each dot represents a full multiplet of states with angular momentum l containing
+(l + d − 3)!(2l + d − 2)/(l!(d − 2)!) states with degenerate frequencies given by (2.24) and
+evaluated at d = 3 and m = 1/2. The multiplets containing the maximally rotating modes,
+to play a crucial role in our later considerations, are highlighted and displayed as green
+rhombi.
+
+with arbitrary complex constants Anlk and Bnlk .
+   The mode functions are explicitly known and given by
+
+                                                  (δ− d ,l+ d −1)
+                 enlk (x, Ω) = Nnlk cosδ x sinl xPn 2 2 (− cos 2x)Ylk (Ω),                    (2.23)
+
+with associated frequencies
+                                             ωnlk = δ + 2n + l,                               (2.24)
+                 q
+                     d2
+where δ = d2 +       4
+                        + m2 and Nnlk is a normalization factor.        (It follows from (2.24) that
+                                                                                     (a,b)
+the difference of any two frequencies is integer irrespectively of δ.) The Pn (x) are the
+Jacobi polynomials and form an orthogonal basis on the interval (−1, 1) with respect to the
+measure (1 − x)a (1 + x)b . The Ylk are spherical harmonics on a (d − 1)-dimensional sphere,
+i.e. eigenfunctions of the sphere Laplacian ∆S d−1 with eigenvalues l(l + d − 2). The index k
+labels the spherical harmonics contained in a given l-multiplet. The number of values k takes
+can be deduced by remembering that the spherical harmonics of angular momentum l form
+a representation of SO(d) that is a rank l fully symmetric fully traceless tensor. The number
+of independent components of such a tensor can be counted as the number of components of
+a rank l fully symmetric tensor in d dimensions, which is (l + d − 1)!/(l!(d − 1)!), minus the
+same for a similar tensor of rank l − 2. This yields (l + d − 3)!(2l + d − 2)/(l!(d − 2)!), which
+is the number of values k takes. The resonant tower of frequencies given by (2.24) can be
+visualized as in Fig. 1. The full set of modes of a given frequency (all the dots on a given
+horizontal line in Fig. 1) has precisely the number of components of a fully symmetric tensor
+of rank l, where l is the maximal angular momentum within that frequency level. Such
+tensors form irreducible representations of SU (d) ⊃ SO(d), which is a hidden symmetry
+
+                                                    11
+of the problem and can be made manifest by relating the eigenvalue problem (2.21) to a
+particular superintegrable quantum-mechanical system on a sphere [52, 53] known as the
+‘Higgs oscillator’ [54, 55].
+    To employ time-averaging we first perform a canonical transformation from φ and its
+conjugate momentum to the complex amplitudes αnlk (t) and βnlk (t) in a manner analogous
+to (2.11), so that φ is given by
+                                        ∞ X
+                                        X                     1
+                    φ(t, x, Ω) =                         √         (αnlk e−iωnlk t + β̄nlk eiωnlk t )enlk (x, Ω).                       (2.25)
+                                         n=0 l,k
+                                                             2ωnlk
+
+From this, and the corresponding formula for the momentum conjugate to φ, as in (2.11),
+one gets
+                     X X X
+          iα̇nlk = λ             Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 c̄n1 l1 k1 cn2 l2 k2 cn3 l3 k3 eiωnlk t , (2.26)
+                            n1 l1 k1 n2 l2 k2 n3 l3 k3
+
+
+            iβ̄˙ nlk = −λ
+                             X X X
+                                                         Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 c̄n1 l1 k1 cn2 l2 k2 cn3 l3 k3 e−iωnlk t .   (2.27)
+                            n1 l1 k1 n2 l2 k2 n3 l3 k3
+
+
+Here, cnlk ≡ αnlk e−iωnlk t + β̄nlk eiωnlk t and
+                                            
+
+                                            Z π
+                                                        tand−1 x
+                                                                      Z
+                                                 2                                ēnlk ēn1 l1 k1 en2 l2 k2 en3 l3 k3
+      Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 =            dx                    dΩd−1 √                                     .                (2.28)
+                                             0           cos2 x                 4 ωnlk ωn1 l1 k1 ωn2 l2 k2 ωn3 l3 k3
+Note that angular momentum conservation imposes constraints on these interaction coef-
+ficients. Namely, each spherical harmonic in (2.23) labelled by lk carries a definite value
+of the angular momentum projection on the polar axis, which we denote m(l, k). The
+angular momentum conservation means that the interaction coefficient C vanishes unless
+m(l, k) + m(l1 , k1 ) = m(l2 , k2 ) + m(l3 , k3 ). We will schematically refer to this condition below
+as m + m1 = m2 + m3 .
+    The time-averaging then proceeds as per general guidelines discussed in section 2.1. The
+amplitudes α and β vary slowly, so that significant changes may only occur on time scales of
+order 1/λ. On these time scales, terms on the right-hand side containing explicit oscillatory
+functions of time can never contribute significantly, while the effect of terms without explicit
+oscillations may build up to contributions of order 1 to α and β. The time averaging (or
+resonant approximation) then amounts to keeping only these latter terms.
+    Due to the highly resonant spectrum of AdS normal mode frequencies given by (2.24),
+there are many ways for the oscillatory factors within the individual terms on the right-
+hand side of (2.26-2.27) to cancel each other. For generic values of δ, this occurs whenever
+ωnlk +ωn1 l1 k1 = ωn2 l2 k2 +ωn3 l3 k3 (or other similar relations obtained by permuting the groups of
+indices 1, 2 and 3). This condition translates to simply 2n + l + 2n1 + l1 = 2n2 + l2 + 2n3 + l3
+(note that δ cancels out in this formula). If δ is an integer, as it is for massless fields,
+even more possibilities to satisfy the resonant condition (2.13) exist a priori. A somewhat
+surprising result is that these resonances do not contribute since the corresponding mode
+couplings (2.28) vanish. A derivation of these selection rules and further discussion can be
+found in [56, 57].
+
+                                                                       12
+    As a result of the selection rules for the interaction coefficients, irrespectively of the value
+of δ, the resonant approximation to (2.26-2.27) takes the form
+
+             dαnlk      X
+         i         =           Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 ᾱn1 l1 k1 αn2 l2 k2 αn3 l3 k3                                    (2.29)
+              dτ     ω+ω =ω +ω  2    1   3
+                          m+m1 =m2 +m3
+                                                      X
+                                             +2               Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 β̄n1 l1 k1 βn2 l2 k2 αn3 l3 k3 ,
+                                                  ω+ω2 =ω1 +ω3
+                                                 m+m1 =m2 +m3
+             dβnlk      X
+         i         =           Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 β̄n1 l1 k1 βn2 l2 k2 βn3 l3 k3                                    (2.30)
+              dτ     ω+ω =ω +ω
+                             2   1  3
+                          m+m1 =m2 +m3
+
+                                                      X
+                                             +2               Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 ᾱn1 l1 k1 αn2 l2 k2 βn3 l3 k3 ,
+                                                  ω+ω2 =ω1 +ω3
+                                                 m+m1 =m2 +m3
+
+where we have introduced the slow time τ = λt, and the following shorthands: ω = ωnlk , ωi =
+ωni li ki . We have also displayed explicitly the angular momentum conservation constraint in
+the sums, as clarified under (2.28).
+     Note that symmetries got enhanced in transition from (2.26-2.27) to (2.29-2.30). Namely,
+while (2.26-2.27) is only invariant with respect to rotating all αnlk by a common phase and
+all βnlk by the opposite phase, (2.29-2.30) allows rotating all αnlk by a common phase and all
+βnlk by a completely independent common phase. Thus, the usual charge U (1) of the complex
+scalar got enhanced to U (1)×U (1). One can think of it pictorially as the number of particles
+and antiparticles being conserved independently (within the resonant approximation, and
+hence valid at leading order on time scales 1/λ). This will, of course, have pronounced
+consequences when we turn to the quantum theory. Within the classical equations (2.29-
+2.30), the symmetry enhancement implies, in particular, that one can consistently set β to
+zero. We shall henceforth focus on this simple truncation given by
+                         dαnlk     X
+                     i         =          Cnlk,n1 l1 k1 ,n2 l2 k2 ,n3 l3 k3 ᾱn1 l1 k1 αn2 l2 k2 αn3 l3 k3 .                       (2.31)
+                          dτ    ω+ω =ω +ω2   1    3
+                                    m+m1 =m2 +m3
+
+
+2.3   The maximally rotating sector
+With a huge tower of AdS normal modes, equations (2.31) remain rather unmanageable.
+They do admit, however, consistent truncations to many smaller sets of modes, and these
+truncations may often be more tractable.
+    One particular truncation of this type that we shall focus on restricts the normal modes to
+those with the maximal amount of angular momentum for a given frequency. Indeed, there is
+one specific mode of any given frequency that has the largest value of the angular momentum
+projection on the polar axis. From every frequency level, one then chooses precisely this
+mode (the angular momentum multiplets from which these modes originate are highlighted
+in Fig. 1). These modes are directly analogous to what is known under the name of the
+‘lowest Landau level’ in the literature on trapped Bose-Einstein condensates [27, 28].
+
+
+                                                                 13
+   To see that the truncation is consistent, consider (2.31) and imagine that only maximally
+rotating modes are initially turned on. In this case, the only nonzero contributions are from
+n1 = n2 = n3 = 0 and hence ω1 = δ + l1 , ω2 = δ + l2 , ω3 = δ + l3 . Hence, ω = δ + l2 + l3 − l1
+and
+                                    2n + l = l2 + l3 − l1 .                              (2.32)
+At the same time, the angular momentum is conserved, which is encoded in the mode
+couplings C. With respect to the polar axis used for defining maximal rotation, the n1 l1 k1
+mode has l1 units in its angular momentum projection, and similarly l2 for the n2 l2 k2 mode,
+and l3 for n3 l3 k3 . Angular momentum projections simply add up (and change sign under
+complex conjugation of the mode function), so the given contribution on the right-hand side
+of (2.31) is only nonzero if mode nlk has the angular momentum projection given by l2 +l3 −l1 .
+But such a state can only be in the angular momentum multiplet if l ≥ l2 + l3 − l1 , which
+together with (2.32) implies n = 0 and l = l2 + l3 − l1 . Hence, mode nlk precisely matches
+the definition of a maximally rotating mode, and no other modes, besides the maximally
+rotating ones, will ever get excited by equation (2.31) if none of them are excited in the
+initial state.
+    Looking at the explicit expressions (2.23–24), to extract the maximally rotating modes,
+one must evidently choose n = 0 as increasing n just increases the frequency without changing
+the angular momentum. Then, from the corresponding angular momentum multiplet labelled
+by k, one must choose the spherical harmonic that has the biggest projection of the angular
+momentum (equal to l) on the polar axis. An explicit expression for such mode functions,
+which are labelled by one index, is
+                                     s
+                                              Γ(l + 1 + δ)
+    el (x, θ1 , . . . , θd−2 , ϕ) =     d/2           d
+                                                              cosδ x sinl x sinl θ1 . . . sinl θd−2 e−ilϕ ,
+                                       π Γ 1 + δ − 2 Γ(l + 1)
+                                                                                                        (2.33)
+where we have written out explicitly the hyperspherical angles θ1 , . . . θd−2 , φ comprising Ω.
+The interaction coefficients are then evaluated from (2.28) as
+                                         s
+                        Γ 2δ − d2
+                                   
+                                            Γ(n + δ)Γ(m + δ)Γ(j + δ)Γ(k + δ) Γ(n + m + 1)
+   Cnmjk =                            2                                                             . (2.34)
+                4π d/2 Γ δ − + 1 d          Γ(n + 1)Γ(m + 1)Γ(j + 1)Γ(k + 1) Γ(n + m + 2δ)
+                            2
+
+Any numerical coefficient multiplying the interaction coefficient is irrelevant and can be
+absorbed in a redefinition of the slow time τ by redefining the coupling λ. In the following,
+we will therefore use the convention C0000 = 1, as in [30], so that the interaction coefficients
+become
+                            s
+                      Γ(2δ) Γ(n + δ)Γ(m + δ)Γ(j + δ)Γ(k + δ) Γ(n + m + 1)
+            Cnmjk =                                                               .       (2.35)
+                      Γ(δ)2 Γ(n + 1)Γ(m + 1)Γ(j + 1)Γ(k + 1) Γ(n + m + 2δ)
+
+Thereafter, one arrives at the equation (2.31) consistently truncated to the maximally ro-
+tating modes in the form
+                                         ∞ n+m
+                                  dαn   X   X
+                                i     =         Cnmk,n+m−k ᾱm αk αn+m−k .                            (2.36)
+                                   dτ   m=0 k=0
+
+
+                                                     14
+This equation could be derived from the ‘resonant’ Hamiltonian
+                                       1 X
+                              Hres =             Cnmkl ᾱn ᾱm αk αl ,                   (2.37)
+                                       2 n+m=k+l
+
+assuming that the canonical momentum conjugate to αn is iᾱn . It possesses two obvious
+conservation laws              ∞                ∞
+                              X                 X
+                          N=     |αn |2 , M=       n|αn |2 ,                     (2.38)
+                                   n=0                     n=0
+
+which can be thought of as the conservation of the ‘particle number’ and the total energy of
+the linearized theory, respectively. Conservation of N relies crucially on the selection rules
+for the interaction coefficients and the symmetry enhancement in the resonant approximation
+mentioned above (2.31).
+    The two conservation laws mentioned above are generic for equations of the form (2.36),
+irrespectively of the expression for the interaction coefficients C. In (2.36) with the specific
+interaction coefficients (2.35), one has, however, an extra conserved quantity
+                                 ∞
+                                 X p
+                              Z=    (n + 1)(n + δ) ᾱn+1 αn .                            (2.39)
+                                    n=0
+
+Conservation of Z can be traced back [31] to the fact that the center-of-mass of any system
+in AdS performs simple perfectly periodic motions irrespectively of the complexity of the
+dynamics of other degrees of freedom (just as the center-of-mass in Minkowski space moves
+with a constant velocity). Conservation of Z hints at solvable features in (2.36) that we
+shall explore below, while the fact that it comes from something as generic as the center-of-
+mass motion in AdS makes one expect that similar features would be seen in other, more
+complicated systems, and not just for the self-interacting probe scalar (2.18). While the
+center-of-mass motion in AdS may seem a triviality, it imposes powerful relations between
+the mode couplings in the normal mode basis [31] and leads to solvable features in the
+corresponding resonant systems.
+
+2.4   Time-periodicities
+A general theory of resonant systems of the form (2.36) admitting a conservation law of the
+form (2.39) was developed in [30]. It turns out that the relations between the interaction
+coefficients C this conservation law implies are also responsible for the existence of simple
+dynamically invariant manifolds where the evolution can be analyzed exactly. This evolution,
+furthermore, turns out to display time-periodic features which form the core of our current
+study. We demonstrate these features below using an adapted formulation of derivations
+from [22] where they were originally described for the maximally rotating sector of a complex
+scalar in AdS.
+    We start with the following ansatz
+
+                        αn (τ ) ≡ fn βn (τ ) = fn (b(τ ) + na(τ )) (p(τ ))n ,            (2.40)
+
+
+                                                 15
+where fn is a set of numbers given by
+                                                       r
+                                                            (δ)n
+                                              fn =               .                                     (2.41)
+                                                             n!
+Here, (x)n ≡ Γ(x + n)/Γ(x) is the rising Pochhammer symbol. We then demonstrate that
+the resonant system (2.36) respects the proposed ansatz. (Note that βn is just a rescaling of
+αn , and unrelated to the amplitudes βnlk appearing above, which we have set to zero.)
+    The evolution equations (2.36) written in terms of βn become
+                 ∞           n+m    
+    dβn   Γ(2δ) X Γ(m + δ) X n + m
+  i     =                             B (k + δ, n + m − k + δ) β̄m βk βn+m−k ,                         (2.42)
+    dτ    Γ(δ)3 m=0 Γ(m + 1) k=0   k
+
+using the beta function B(x, y) ≡ Γ(x)Γ(y)/Γ(x + y). Inserting the ansatz (2.40) in (2.42),
+one can compute the various sums over k using the integral representation of the beta function
+as follows
+           N                           Z 1 X   N  
+         X    N                                       N k+δ−1
+                  B (k + δ, N − k + δ) =     dx           x      (1 − x)N −k+δ−1
+          k=0
+               k                           0    k=0
+                                                       k
+                                         Z 1
+                                       =     dx xδ−1 (1 − x)δ−1 = B (δ, δ) ,
+                                                   0
+        N                                                                                            (2.43)
+        X     N                                        N
+           k    B (k + δ, N − k + δ) = N B (δ + 1, δ) = B (δ, δ) ,
+       k=0
+              k                                        2
+       N                                                    
+      X
+            2 N                          N    N (N − 1) 1 + δ
+          k     B (k + δ, N − k + δ) =      +                    B (δ, δ) .
+      k=0
+              k                          2         2    1 + 2δ
+
+The m-summation can afterwards be carried out using
+                               ∞
+                               X Γ(m + δ)                              Γ(δ)
+                                                mA xm = (x∂x )A               .                        (2.44)
+                               m=0
+                                     Γ(m + 1)                        (1 − x)δ
+
+Performing these summations in (2.42) results in an equation with quadratic polynomials
+in n on both sides, which shows the consistency of the ansatz (2.40) and provides three
+equations of motion for a(τ ), b(τ ) and p(τ ):
+
+     iḃ
+            = b|b|2 + yδ āb2 + a|b|2 + |a|2 b +
+                                                  
+  (y + 1) δ
+
+                                      a2 b̄ δ(δ + 1)                               a|a|2 δ 2 (δ + 1)(δ + 2)
+                                                                      
+                                                            2 δ(δ + 1)
+               2        2
+             y δ |a| b(δ + 1) +                      + a|a|                 + y3                            ,
+                                       2 1 + 2δ                1 + 2δ                2           1 + 2δ
+                                                                                                         (2.45)
+                   2                2
+                                                     2                                         2
+                                                                                                        
+     iȧ      a|b| 2 + 3δ a b̄ δ                      |a| b 2 + 3δ       2       δ        a|a|      δ
+            =                  −               + yδ                 +  a   b̄          +                  +
+  (y + 1)δ       2 1 + 2δ          2 1 + 2δ             2 1 + 2δ              1 + 2δ         2 1 + 2δ
+                       δ 2 (δ + 1)
+             y 2 a|a|2             ,                                                                     (2.46)
+                         1 + 2δ
+
+                                                       16
+                                        
+     iṗ    p        1          2    δ
+           = δ ab̄        + y|a|           ,                                                (2.47)
+  (y + 1)δ  2      1 + 2δ         1 + 2δ
+
+where we have defined
+                                                    |p|2
+                                             y≡            .
+                                                  1 − |p|2
+The equation of motion for y can be derived from (2.47), giving
+
+                                         ẏ          yδ
+                                             δ+1
+                                                 =        Im (b̄a).                         (2.48)
+                                     (y + 1)       1 + 2δ
+
+The conserved quantities (2.38) and (2.39) can be expressed within our ansatz as
+
+  N = (y + 1)δ |b|2 + 2 Re (ab̄)δy + |a|2 δy(1 + (δ + 1)y) ,
+                                                         
+                                                                                          (2.49)
+ M = δy(y + 1)δ |b|2 + 2 Re (ab̄)(1 + (δ + 1)y) + |a|2 (1 + y(1 + δ)(3 + y(2 + δ))) , (2.50)
+                                                                                    
+
+  Z = p̄δ(y + 1)δ+1 |b|2 + bā(1 + (1 + δ)y) + ab̄(1 + δ)y + |a|2 y(1 + δ)(2 + y(2 + δ)) ,
+                                                                                       
+
+                                                                                          (2.51)
+
+and an additional conserved quantity S follows from (2.48) and the time derivative of |a|2
+obtained from (2.46):
+                                 S = |a|2 δy(y + 1)δ+1 ,                           (2.52)
+which can be related to the Hamiltonian and the particle number through
+                                            1 + 2δ
+                                     S2 =          N 2 − 2Hres .
+                                                              
+                                                                                            (2.53)
+                                            1+δ
+Note that S can also be written in terms of N , M and Z, as expressed by (2.49–51),
+                                           1
+                                   S2 =       N M δ + M 2 − |Z|2 .
+                                                                
+                                                                                            (2.54)
+                                          1+δ
+By expressing |b|2 , |a|2 and Re (ab̄) through N , M , S and y
+
+                                       S
+                          |a|2 =              ,                                             (2.55)
+                                 yδ(y + 1)δ+1
+                                       M               N        1 + 2(δ + 1)y
+                      Re (ab̄) =                −             −                S,           (2.56)
+                                 2δy(y + 1)δ+1 2(y + 1)δ+1 2yδ(y + 1)δ+1
+                                       M        1 + (δ + 1)y      (δ + 1)y
+                          |b|2 = −            +              N +            S,              (2.57)
+                                   (y + 1)δ+1     (y + 1)δ+1     (y + 1)δ+1
+
+and using (Im(āb))2 = |a|2 |b|2 − (Re(āb))2 , the equation of motion for y can be turned into
+an equation expressing the energy conservation for an ordinary one-dimensional harmonic
+oscillator,
+
+                 N 2 δ 2 + 4(δ + 1)S 2     M (N δ + 2S) + S(N δ − 2(1 + δ)S)   (M − S)2
+  ẏ 2 = − y 2                         + y                                   −            , (2.58)
+                       4(1 + 2δ)2                     2(1 + 2δ)2               4(1 + 2δ)2
+
+                                                   17
+which demonstrates that y, and hence |p|, are exactly periodic functions in the three-
+dimensional invariant manifold, with period
+
+                                               4π(1 + 2δ)
+                                  T =p                              .                     (2.59)
+                                            N 2 δ 2 + 4(δ + 1)S 2
+
+From equations (2.55-2.57), one concludes that this exactly periodic behavior is shared by
+|a|2 , |b|2 and Re(ab̄), and therefore also by the absolute value of the amplitudes |αn |, which
+exhibit exact periodic returns to the initial configuration with period (2.59).
+     We end this section by briefly discussing the solutions of (2.36) on the submanifold Z = 0,
+as these solutions will be of relevance for comparing to the quantum results. In fact, the
+evolution on this submanifold is very simple. Indeed, the periodic returns with period (2.59)
+that were seen in y, |a|2 , |b|2 and Re(ab̄) are not manifest since these quantities do not
+depend on time at all. This can be understood by first noting from (2.51) that the following
+relation holds in general:
+                                    Im pZ = Im (bā)yδ(y + 1)δ .                           (2.60)
+From (2.48) it follows that when Z = 0, y is constant. Imposing that the right-hand side of
+(2.58) should vanish, one finds that y is equal to
+
+                                                S−M
+                                        y=              ,                                 (2.61)
+                                               2M + N δ
+and therefore
+                                              M (γ − 1)
+                                    |p|2 =               ,                                (2.62)
+                                             Mγ + M + Nδ
+                        q
+                            M +N δ
+where we defined γ ≡        M (1+δ)
+                                    to make the formulas more compact.    Using (2.55–57), it is
+then easily seen that
+
+                                   γ(2M + N δ)2+δ
+                     |a|2 =                              ,                                (2.63)
+                            δ (γ − 1) (M γ + M + N δ)δ+1
+                             (M − N )γ(2M + N δ)1+δ
+                 Re (ab̄) =                            ,                                  (2.64)
+                            (γ − 1) (M γ + M + N δ)δ+1
+                              (M − N ) (M (δ + 1)γ + M + N δ) (2M + δN )δ
+                     |b|2 = −                                             .               (2.65)
+                                           (M γ + M + N δ)δ+1
+
+The motions of a, b and p are then pure phase rotations. By plugging the above constant
+values in the equations (2.45–47), one finds that a and b share a common period
+
+                                               4π(1 + 2δ)
+                                    Tab =                                                 (2.66)
+                                            2N (1 + 2δ) − M δ
+
+while p evolves periodically with period (2.59) evaluated at Z = 0.
+
+
+
+
+                                                 18
+2.5   Similar behaviors for other systems
+We have exposed above how time-periodic behaviors on time scales 1/λ emerge in the max-
+imally rotating sector of a complex scalar field in AdS. It is important to keep in mind,
+however, that the algebraic pattern underlying the derivations of the time-periodic solutions
+is rather general and is present in many other resonant systems. Indeed, in [30], an enor-
+mous family of resonant systems of the form (2.37) was constructed that shares the same
+features: there is a three-dimensional invariant manifold of the resonant evolution where the
+energy spectrum of the normal modes given by |αn |2 is exactly periodic in time. This family
+is parametrized by an arbitrary function (through which the generating function of Cnmkl
+is expressed) and thus the set of resonant Hamiltonians with such time-periodic behaviors
+forms an infinite-dimensional space. Our considerations of the maximally rotating trunca-
+tion of the resonant system for a complex scalar field in AdS are simply a special case of the
+structure described in [30].
+    One might wonder how the systems in the class constructed in [30], with their time-
+periodic behaviors, could arise as resonant approximations to Hamiltonian PDEs of physical
+interest. This question has been addressed in [31]. The crucial ingredient for the con-
+struction of the time-periodic solutions of the resonant system [30] is conservation of the
+quantity Z defined by (2.39). This conservation law imposes a relation between the interac-
+tion coefficients C, which in turn guarantees the existence of the time-periodic solutions [30].
+Conservation laws of the form (2.39) naturally arise in resonant systems originating from
+PDEs with breathing modes [31]. Breathing modes are functions on the phase space that
+evolve exactly periodically for all solutions of the equations of motion (note, importantly,
+that these periodicities are on time scales of order 1, not 1/λ). Within the resonant approx-
+imation, such breathing modes translate [31] into conservation laws of the resonant system
+(2.16) of the form (2.39). The origin of (2.39) for the above example of a scalar field in AdS
+can be thus traced back to the center-of-mass motion in AdS, which simply follows geodesics
+(irrespectively of how complex the detailed evolution is) and thus provides breathing modes.
+It may seem paradoxical that a triviality like the free motion of the center-of-mass constrains
+the properties of the weakly nonlinear evolution captured by the resonant system. The point
+is that the exactly periodic motion of the center-of-mass implies relations between the mode
+couplings given by (2.28), and these relations, in turn, translate into existence of special so-
+lutions of the nonlinear resonant equations. Note that the construction is specific to quartic
+nonlinearities, and there is no obvious way to generalize it to higher nonlinearities [58]. On
+the other hand, quartic nonlinearities are very generic, and it makes our construction robust.
+We shall see below, and it is indeed the main point of our treatment, that the implications of
+these special structures in resonant systems in the corresponding quantum theory are even
+more far-reaching.
+    In what other setups, in particular those of interest for AdS/CFT dualities, can one
+expect the structures we have described to appear? The emergence of resonant systems with
+periodic behaviors in the general class of systems introduced in [30] relies on two essential
+ingredients. First, the original dynamical PDEs must admit breathing modes that give rise
+to conserved quantities, like the one in (2.39), within the resonant approximation. Second,
+there must exist a consistent truncation of the resonant dynamics to a subset of modes
+labelled by one nonnegative integer, so that the conservation law within this truncation
+
+
+                                              19
+becomes exactly (2.39). The first condition is easy to satisfy in AdS, as the center-of-
+mass motion provides breathing modes. Of course, some subtleties may arise when the
+gravitational interactions are included, but one expects that in an asymptotically AdS space
+the center-of-mass motion may still be defined and will follow simple geodesics (which are
+all exactly periodic). For special cases, there may be further breathing modes: for example,
+a conformally coupled scalar admits a radial breathing mode [31] which underlies the time-
+periodic resonant dynamics described in [21]. Regarding the truncations, the maximally
+symmetric truncation, like the one used above for φ4 theory, would exist for any nonlinear
+wave equation for a complex scalar field in AdS.
+    From this perspective, we find the setup of AdS3 particularly promising. In this setting,
+gravity does not have any propagating degrees of freedom and can be integrated out, leaving
+an effective theory for the matter motion, for example, a nonlinear wave equation for a
+complex scalar field. The same should be true for the more complicated higher spin theories
+in AdS3 that likewise do not have propagating degrees of freedom, as long as they can be
+consistently coupled to complex scalar field matter. Such formulations have received a lot
+of attention in the AdS/CFT literature [36, 37], and considerable understanding has been
+developed on the CFT side. Our setup is essentially guaranteed to work in this case, though
+technical details need to be checked and explicit computations will be much more complicated
+than in our current φ4 example, on account of the very complicated nonlinearities involved.
+In higher-dimensional AdS, truncation to the maximally rotating sector is possible, and
+resonant conservation laws inherited from the center-of-mass motion must exist, but a priori
+there are gravitational waves that couple to the matter and one is not guaranteed to end up
+with a simple resonant system of the form (2.16). There are other more distantly related
+situations where the pattern we discuss may arise approximately, rather than exactly, and
+we shall comment on that in the discussion section.
+    As we have remarked, treating resonant gravitational dynamics in AdS outside spherical
+symmetry is technically very challenging, and that is the main reason why we are focusing
+on a non-gravitating scalar here to illustrate our ideas. Extensive studies of secular terms
+in perturbation theory for AdS gravity outside spherical symmetry have been undertaken,
+see for instance [59–64], but no explicit formulas for the interaction coefficients as functions
+of the mode numbers have appeared thus far (analogous formulas in spherical symmetry
+are available in appendix A of [5]). Since our treatment below relies on analytic patterns
+in the mode number dependence of the interaction coefficients, further developments in
+analytic treatments of AdS gravity outside spherical symmetry will be necessary before we
+can approach that case from the point of view of our current work. Some considerations for
+optimizing the handling of nonlinearities in this setting have appeared in [63], and they may
+turn out useful for deriving explicit formulas for the interaction coefficients. The relatively
+simple case of AdS3 would in fact form a natural starting point for this program.
+
+
+3   Quantum energy shifts in AdS
+Given the treatment of classical AdS perturbations in the previous section and the relative
+ease of connecting the corresponding quantum theory to the CFT side of holographic duali-
+ties, it is worth asking what serves as the quantum counterpart of the resonant perturbation
+
+
+                                              20
+theory of the previous section. It will turn out that this quantum counterpart is considerably
+more elementary and familiar than the classical story.
+    A crucial property defining the resonant approximation is that it approximates weakly
+nonlinear solutions at leading order O(1) but in a way that is uniformly valid on very long
+time scales of order O(1/λ) when the coupling λ is small. It is worth contrasting this
+setup with the naive perturbation theory (expanding classical solutions in powers of λ) that
+captures solutions much more accurately with precision O(λn ) for any desired n, but only
+on short time scales O(1). On such short time scales, the effects of small nonlinearities are
+always small, while the resonant approximations aims at something completely different:
+large effects of small nonlinearities at long time scales. What approximation in the quantum
+theory shares these qualities?
+    The most general solution of a quantum theory can be written symbolically as a familiar
+sum over the Hamiltonian eigenstates |Ψn i:
+                                         X
+                               |Ψ(t)i =      e−iEn t hΨn |Ψ(0)i |Ψn i.                   (3.1)
+                                        n
+
+For a system whose Hamiltonian is of the form H = H0 + λHint , the Rayleigh-Schrödinger
+perturbation theory instructs us to expand eigenvalues and eigenvectors as power series in λ:
+        (0)    (1)                  (0)      (1)               (0)       (0)
+En = En +λEn +· · · , |Ψn i = |Ψn i+λ|Ψn i+· · · , where |Ψn i and En are the eigenvalues
+and eigenvectors of H0 . To attain the degree of accuracy characterizing the classical resonant
+                                  (0)
+approximation, corrections to |Ψn i are, in fact, completely irrelevant. They never grow and
+never reach a magnitude of O(1). Corrections to En on the other hand, may be relevant,
+since they are multiplied by t in (3.1) and become of order 1 when t ∼ 1/λ. However, by
+this reasoning, only the first correction E1 matters (higher corrections may only enter the
+game on much longer time scales like 1/λ2 ). Thus, the classical resonant approximation
+corresponds to the quantum evolution in which the energy eigenstates remain uncorrected,
+and the corresponding eigenvalues are corrected at order λ:
+                                     X       (0)  (1)
+                       |Ψ(t)ires =      e−i(En +λEn )t hΨ(0)        (0)
+                                                         n |Ψ(0)i |Ψn i.                   (3.2)
+                                    n
+                                              (1)
+    The computation of the energy shifts En is completely standard and treated in any
+textbook on quantum mechanics. They are expressed through the matrix elements of the
+perturbation Hamiltonian Hint in the eigenbasis of H0 . One essential point is that for a field
+theory with a resonant spectrum of normal mode frequencies, as in (2.24), the spectrum of
+energies of the free Hamiltonian is highly degenerate. One thus has to deal with the energy
+shifts in a degenerate spectrum, again by completely standard textbook methods of quantum
+mechanics. The quantum version of the resonant Hamiltonian (2.37) will automatically
+emerge from this analysis, confirming our expectation that the leading order energy shifts of
+the quantum theory correctly capture the content of the classical resonant approximation.
+
+3.1   Quantum perturbation theory in AdS
+The quantum Hamiltonian corresponding to (2.18) is
+                   Z h †
+                       π φ πφ       2      †          2 †     λφ†2 φ2 i d
+              H=              + cos   x ∇φ   · ∇φ + m  φ  φ +          d x,                (3.3)
+                      cos2 x                                    2
+
+                                              21
+where the Schrödinger picture operators only depend on the spatial coordinates denoted
+collectively as x = (x, Ω), and πφ is the momentum field conjugate to φ. The volume
+element is dd x = dx dΩ tand−1 x/ cos2 x and the dot-product is computed with the d-sphere
+metric dx2 + sin2 x dΩ2d−1 . For each normal mode function of φ (2.23) we introduce a pair of
+creation-annihilation operators for the particles and antiparticles, and expand the field and
+conjugate momentum as follows
+                                                         r
+        X       1    
+                               †
+                                                    X ωnlk  †             
+   φ=        √         anlk + bnlk enlk (x),  πφ = i             anlk − bnlk cos2 x ēnlk (x),
+         nlk
+               2ωnlk                                 nlk
+                                                            2
+                                                                                            (3.4)
+so that
+
+                                         [a†nlk , an0 l0 k0 ] = −δnn0 δll0 δkk0 ,                     (3.5)
+                                         [b†nlk , bn0 l0 k0 ] = −δnn0 δll0 δkk0 .                     (3.6)
+
+The mode functions are normalized as
+
+                           (enlk e−iωnlk t , en0 l0 k0 e−iωn0 l0 k0 t ) = 2ωnlk δnn0 δll0 δkk0        (3.7)
+
+with respect to the Klein-Gordon inner product
+                                   √
+                              Z
+               (φ1 , φ2 ) = −i dΣµ −gΣ φ1 (x)∂µ φ̄2 (x) − (∂µ φ1 (x))φ̄2 (x) ,
+                                                                            
+                                                                                                      (3.8)
+                                     Σ
+
+where Σ is a constant time slice, dΣµ = nµ dΣ and nµ = | cos1 x| ∂t is a future-directed unit
+vector normal to Σ. The Hamiltonian (3.3) can be expressed as a function of the creation-
+annihilation operators (subtracting the ground state energy)
+                              X
+                         H=       ωnlk (a†nlk anlk + b†nlk bnlk ) + λ Ĥint ,           (3.9)
+                                      nlk
+
+
+where Ĥint is simply 21       φ2 φ†2 expressed through (3.4),
+                           R
+
+                 1 X
+        Hint =           Cη η η η : (a†η1 + bη1 )(a†η2 + bη2 )(aη3 + b†η3 )(aη4 + b†η4 ) : .         (3.10)
+                 2η η η η 1 2 3 4
+                   1 2 3 4
+
+
+The colons indicate normal ordering, and the interaction coefficientsP C areP given by (2.28).
+We have introduced the collective index η = (n, l, k) so that           η =    n,l,k , ωη = ωnlk ,
+η1 = (n1 , l1 , k1 ), etc.
+    For λ = 0, the system reduces to a collection of decoupled oscillators where the eigenstates
+are Fock states |{n, ñ}i with nη particles and ñη antiparticles for each AdS normal mode η:
+
+                   a†η aη |{n, ñ}i = nη |{n, ñ}i,              b†η bη |{n, ñ}i = ñη |{n, ñ}i.   (3.11)
+
+The energy is                                       X
+                                             E=           ωη (nη + ñη ).                            (3.12)
+                                                      η
+
+
+                                                           22
+Note that the spectrum of the non-interacting theory is highly degenerate. Introducing the
+total particle and antiparticle numbers
+                                     X              X
+                                 N=     nη ,   Ñ =     ñη ,                       (3.13)
+                                           η                    η
+
+we note that
+                                      E 0 = E − δ(N + Ñ )                                  (3.14)
+is an integer, being made of integers ωη − δ, nη and ñη . Of course, there are many different
+ways to generate a given integer value of E 0 by choosing nη and ñη , which results in huge
+degeneracies (the level multiplicities grow without bound as one moves to higher energies).
+    When a small nonzero λ is turned on in (3.10), the degenerate energy levels we have just
+described split. To analyze this splitting at linear order in λ one must simply compute the
+matrix elements of Ĥint between the states within the same unperturbed energy level, and
+diagonalize the resulting finite-sized matrices. Before proceeding with these matrix elements,
+we must characterize the degeneracies more explicitly. If δ is a generic real number, different
+values of N + Ñ always correspond to different energies. Since the Hamiltonian exactly
+conserves N − Ñ , this means that the matrix elements hΨ0 |Hint |Ψi are only nonzero if |Ψ0 i
+has the same number of particles as |Ψi, and the same for antiparticles. This pattern, in
+fact, persists even if δ takes special rational values (as it does for massless fields) so that
+there are degeneracies between levels with different N + Ñ . The reason lies in the selection
+rules of [56, 57], which make the interaction coefficients C vanish for any term in (3.10)
+that could contribute to such matrix elements connecting different values of N + Ñ . For
+example, there are terms in (3.10) of the form a†η1 a†η2 b†η3 aη4 . Such term, if it contributed,
+would generate nonzero matrix elements of Hint between states with N + Ñ differing by
+2. However, this term cannot contribute: because we are only computing matrix elements
+within the same unperturbed energy level, the energy E given by (3.12) must be the same
+for |Ψi and |Ψ0 i in hΨ0 |Hint |Ψi. In order for this to be true, one must have ω4 = ω1 + ω2 + ω3 .
+But the interaction coefficients corresponding to mode quartets with such frequency relations
+precisely vanish due to the selection rules of [56,57]. Similar considerations hold for any other
+terms in (3.10) that change the number of particles or antiparticles. One may summarize
+that particle production plays no role in the computation of the energy splitting at leading
+order in λ.
+    In view of the above structure of the matrix elements of (3.10), the computation proceeds
+independently in each block indexed by three integers E 0 , N and Ñ . In fact, in correspon-
+dence with the consistent truncations we performed in classical theory, we prefer to focus
+here on blocks with
+                                               Ñ = 0,                                     (3.15)
+i.e., blocks without antiparticles. Then, for |Ψi and |Ψ0 i without antiparticles, one may write
+                                      1 X
+                      hΨ0 |Hint |Ψi =           Cη η η η hΨ0 |a†η1 a†η2 aη3 aη4 |Ψi.      (3.16)
+                                      2η ,η ,η ,η 1 2 3 4
+                                       1       2   3   4
+
+
+But since we are only interested in |Ψi and |Ψ0 i with the same energy, only terms with
+ω1 + ω2 = ω3 + ω4 may contribute, and hence
+                                   hΨ0 |Hint |Ψi = hΨ0 |Hres |Ψi,                           (3.17)
+
+                                                           23
+where
+                                    1    X
+                           Hres =             Cη1 η2 η3 η4 a†η1 a†η2 aη3 aη4 .          (3.18)
+                                    2ω +ω =ω +ω
+                                       1   2   3   4
+
+This is precisely the Hamiltonian corresponding to the resonant system (2.31).
+    Note furthermore that, by angular momentum conservation, (3.18) can only have nonzero
+matrix elements between states that carry the same total amount of angular momentum pro-
+jection on the polar axis. The Hamiltonian diagonalization and energy corrections can thus
+be discussed independently for such sectors with different values of total angular momentum.
+In what follows, we shall focus on the sectors with the maximal value of the angular momen-
+tum projection on the polar axis for a given number of particles and a given unperturbed
+energy.
+
+3.2     Maximally rotating sector in the quantum theory
+We have seen in section 2.3 that the classical resonant system (2.31), which is a counterpart
+of (3.18), can be consistently truncated to the set of modes that carry the maximal amount
+of angular momentum (in terms of its projection on the polar axis) for a given normal mode
+frequency. If the initial state of the classical evolution (2.31) only has such modes excited,
+no modes outside this sector will ever get excited at later times. What does this consistent
+truncation imply for the corresponding quantum theory (3.18)?
+    Classical truncations to subsets of degrees of freedom in general do not have immediate
+implications for the corresponding quantum theory. Indeed, classically, one may simply set
+to zero a selection of degrees of freedom (both coordinates and momenta) in the initial
+state and observe that they do not get excited by the subsequent evolution. The same
+cannot literally be done in the corresponding quantum theory, since the uncertainty principle
+forbids setting both coordinates and momenta to zero. A straightforward example in our
+context is the spherically symmetric truncation, which keeps only the AdS modes of zero
+angular momentum. This truncation is always classically consistent because of the rotational
+symmetry of the equations of motion, and has in fact been very commonly employed in
+studies of classical dynamics of AdS perturbations [1–12, 14, 21]. Still, the existence of
+these truncations does not translate directly to the corresponding quantum theory. Namely,
+if one wants to compute corrections to energies of multiparticle states with zero angular
+momentum, one must still deal with the full quantum resonant Hamiltonian (3.18), and
+cannot recover these corrections from a Hamitonian in which all non-spherically-symmetric
+modes have been simply discarded. Of course, as one approaches the semi-classical regime,
+the classical consistent truncation must still manifest itself and become valid approximately,
+but it is never valid exactly in the quantum theory.
+    The situation, however, is much simpler and more tractable for the maximally rotating
+truncations that we focus upon here. The reason for this is largely kinematic and originates
+from the location of the maximally rotating states at the boundary of the tower of modes
+in Fig. 1, which makes it difficult for these states to interact with other states via interac-
+tions that conserve energy and angular momentum. This is somewhat reminiscent of the
+simplification of interactions near the Fermi surface in solid state physics.
+    To see how the decoupling of the maximally rotating sector happens in practice within the
+quantum theory, consider first the composition of maximally rotating multiparticle states.
+
+                                                   24
+A state with N particles is maximally rotating if it has M units of angular momentum in
+projection on the polar axis (we choose M to be positive as a matter of convention) and
+N δ + M units of energy. Since the minimal value of energy of an individual particle with
+angular momentum m is δ +|m|, and energies as well as angular momenta add when creating
+multiparticle states, it means that the only way a multiparticle state can be maximally
+rotating is that all the individual particles occupy maximally rotating states. (The multiplets
+where these states reside are highlighted in Fig. 1, and there is only one such state for each
+frequency level.) In other words, the occupation numbers nη in (3.11) are only nonzero if η
+is a maximally rotating mode with angular momentum projection m > 0 and energy δ + m.
+(As a reminder, we only consider states whose ‘antiparticle’ occupation numbers ñη in (3.11)
+are zero.) Due to this structure of mode occupation, when computing the matrix elements
+of (3.18) between such maximally rotating multiparticle states, only terms contribute where
+η1 , η2 , η3 , η4 all represent maximally rotating modes. Hence, one can simply discard all the
+non-maximally-rotating modes for the purpose of the computation of energy shifts in the
+maximally rotating sector, which is precisely what one does in the naive classical truncation.
+The energy shifts in the maximally rotating sector can be computed exactly (at leading order
+in the coupling parameter) by considering the quantized version of the classical maximally
+rotating Hamiltonian (2.37), that is
+                                         1 X
+                                  Hres =           Cnmkl a†n a†m ak al ,                (3.19)
+                                         2 n+m=k+l
+
+with C given by (2.35), [a†m , an ] = −δmn , so that a†m and am are the creation-annihilation
+operators for the unique maximally rotating mode with m units of angular momentum (in
+terms of its projection on the chosen rotation axis) and frequency δ + m.
+    The analysis of energy eigenstates of (3.19), which is the main technical objective of our
+treatment, follows the general pattern outlined in [42]. The Hamiltonian (3.19) commutes
+with                                 ∞                  ∞
+                                    X                   X
+                             N=        a†n an ,   M=       na†n an ,                    (3.20)
+                                   n=0                 n=1
+and the three operators can be diagonalized simultaneously. The eigenvalues of N and M
+are integers that split the spectrum into (N, M )-blocks that can be treated independently.
+Furthermore, each such block is finite-dimensional, with dimensionalities related    Pto integer
+partition
+     P     numbers  [42], since  there is only a finite  number   of ways to satisfy  k nk = N
+and k knk = M with integer nk . Diagonalization of (3.19) then reduces to diagonalizing a
+finite-sized numerical matrix at each value of N and M , and produces the eigenvalues εI of
+(3.19), which provide the first order corrections to the degenerate unperturbed free energies
+of (3.3) in the maximally rotating sector
+                                                     Γ 2δ − d2 Γ(δ)2
+                                                                
+                     (0)      (1)
+                   EI + λEI = N δ + M +                            2     λεI ,           (3.21)
+                                                4π d/2 Γ δ − d2 + 1 Γ(2δ)
+where I labels the different eigenstates of (3.19) within the same (N, M )-block.
+  There is a further conserved quantity
+                                   X∞
+                                          (n + 1)(n + δ)a†n+1 an ,
+                                       p
+                               Z=                                                        (3.22)
+                                    n=0
+
+
+                                              25
+inherited from (2.39). Note that N manifestly commutes with all the conserved operators
+while Z and Z † respectively act as a raising and lowering operator for M
+                                 [M, Z] = Z,     [M, Z † ] = −Z † .                        (3.23)
+The commutation relation between Z and Z † involves both M and N ,
+                                  Z, Z † = −δN − 2M.
+                                       
+                                                                                           (3.24)
+The operators Z and Z † play an essential role in the diagonalization procedure of (3.19). In
+particular, the entire spectrum can be easily reconstructed from states in the kernel of Z †
+defined by
+                                        Z † |Ψi = 0.                                   (3.25)
+(This condition physically implies that the center-of-mass of the corresponding multiparticle
+state is in its ground state.) Indeed, since Z and Z † commute with the Hamiltonian (3.19),
+Z and Z † map energy eigenstates in an (N, M )-block to energy eigenstates in the (N, M +1)-
+block and (N, M − 1)-block, respectively, without changing the corresponding eigenvalue.
+Note that Z can never annihilate a state since
+                         2           2
+                  Z|Ψi       = Z † |Ψi + hΨ|δN + 2M |Ψi ≥ hΨ|δN + 2M |Ψi,                  (3.26)
+so that all eigenvalues in a given (N, M )-block are mapped to the next block. In particular,
+this means that an arbitrary energy eigenvalue in some (N, M )-block must either originate
+from a lower M block and then get transported by the action of Z to the current block, or
+it must emerge as a new eigenvalue in the current block and be associated to an eigenvector
+|ψi in the kernel of Z † . This latter statement follows directly from the fact that Z † |ψi would
+otherwise be an eigenvector living in the (N, M − 1)-block, which by assumption does not
+contain the associated eigenvalue in its spectrum. In fact, it is straightforward to show that
+any vector |φi in the (N, M )-block that lies in the orthogonal complement of the Z-image
+of the (N, M − 1)-block must be annihilated by Z † . One can simply write the condition
+hZψ|φi = 0, which must hold for any state |ψi in the (N, M − 1)-block, as hψ|Z † |φi = 0.
+This proves that Z † |φi, a state in the (N, M − 1)-block, is orthogonal to all states in that
+same block and hence must vanish.
+     There is an efficient way to keep track of when a given eigenvalue first appeared in
+the spectrum by considering the product ZZ † . This operator is Hermitian and commutes
+with the Hamiltonian so that one can simultaneously diagonalize the two operators. As
+a consequence of the structure of eigenstates presented above, all the eigenstates of (3.19)
+in the block (N, M ) can be written as Z m |ψker i for some m ≥ 0 and arbitrary Z † -kernel
+eigenstate |ψker i in block (N, M − m). Using the commutation relations (3.23) and (3.24),
+it is straightforward to show that such vectors are eigenstates of ZZ † with eigenvalue
+                ZZ † Z m |ψker i = (mδN + 2m(M − 1) − m(m − 1)) Z m |ψker i ,              (3.27)
+for Z m |ψker i in the (N, M )-block. All the vectors in the (N, M )-block that can be written
+in this way for a given value of m therefore share the same eigenvalue under ZZ † .
+    We therefore conclude that the simultaneous diagonalization of ZZ † and Hres in an
+(N, M )-block provides complete information about the spectrum in the current as well as in
+lower M -blocks and furthermore indicates the block in which the eigenvalues first appeared.
+
+                                               26
+4    Large c holography, multiparticle states and their energy cor-
+     rections
+Energy corrections for weakly nonlinear quantum fields in AdS fit very naturally in the
+framework of ‘large c holography’ [34,35], which points to their counterpart on the CFT side
+of holographic AdS/CFT dualities.
+    Isometries of the global AdSd+1 space form the group SO(d, 2) which acts as conformal
+isometries on the conformal boundary of AdS given by the Einstein cylinder R × S d−1 . The
+time translations along the R-direction are the same as the AdS time translations, which gives
+a natural identification between the energies of AdS states and energies of CFT states on the
+boundary. If one then switches to the Euclidean time evolution in the CFT and conformally
+maps R × S d−1 to Rd in the manner of ‘radial quantization,’ the time translations turn into
+dilatations in Rd and the energies of states are mapped into the conformal dimensions of
+the CFT operators, as per the usual operator-state correspondence. This construction gives
+an identification of energy eigenstates in the AdS bulk and operators of definite conformal
+dimension in the dual CFT.
+    For CFTs with holographic duals, the conformal dimensions must have a very special
+structure in order to match the patterns existing on the AdS side. Large c holography is a
+concrete proposal as to how such correspondence can be implemented. One considers a family
+of CFTs of growing central charge c and assumes that as c goes to infinity, only a finite set of
+primary operators retain finite conformal dimensions. Furthermore, one assumes that these
+primaries attain the status of Generalized Free Fields (GFFs), which is expressed in simple
+factorization properties of their correlation functions, modelled on large N factorization in
+gauge theories [65, 66]. For a generalized free field O, correlation functions satisfy [35]
+
+           hO(x1 ) . . . O(xn )i = hO(x1 )O(x2 )i . . . hO(xn−1 )O(xn )i + permutations,    (4.1)
+
+where one has to sum over all possible pairings. The fields thus behave as if they were free
+and their correlators satisfied Wick’s theorem, but their conformal dimensions do not agree
+with the free value (d − 2)/2. The above formula is understood to hold at c = ∞, and
+elsewhere receives corrections of order 1/c. These corrections encode the interactions of the
+AdS side of the holographic duality.
+    The factorization property (4.1) implies, in particular, that (at c = ∞) the conformal di-
+mensions of GFFs and their descendants simply add up under multiplication [35]. Hence, in
+this regime, one obtains an extremely simple spectrum of conformal dimensions for composite
+operators that matches, in fact, the energy spectrum of free fields in AdS. Indeed, the de-
+scendants of a single GFF primary O of conformal dimension δ are of the form ∂m1 . . . ∂mp O.
+Each differentiation increases the conformal dimension by 1, giving a total dimension δ + p
+and creating a tower of dimensions exactly identical to the frequency spectrum in AdS (which
+is the same as the single-particle energy spectrum) depicted in Fig. 1. The level of the tower
+at p units of energy above the ground state forms a rank p fully symmetric tensor, and it
+can be decomposed into angular momentum multiplets with p = 2n + l by separating this
+tensor into the traceless parts and the traces, so that individual dots in Fig. 1 correspond to
+states of the form (∂ 2 )n ∂m1 · · · ∂ml O, contracted with a fully symmetric fully traceless rank
+l tensor whose indices are m1 , ..., ml . (This matching between mode towers of free fields and
+
+                                                27
+descendants of a single CFT operator is treated at length in [67].) Because the conformal
+dimensions of GFFs add under multiplication, as do energies of individual particles in mul-
+tiparticle states of free fields, products of operators of the form ∂m1 · · · ∂mp O will possess a
+spectrum of conformal dimensions precisely matching the energies of the Fock states3 of free
+particles in AdS, whose individual energies fit in the tower of Fig. 1. This scenario gives a
+concrete mechanism by which the AdS/CFT correspondence can work at c = ∞. Its actual
+realization has been extensively discussed for higher spin holography in AdS3 [36, 37].
+    As one moves away from the strict c = ∞ limit, the simple picture outlined above acquires
+1/c corrections. In order for the match between the AdS and CFT sides of the holographic
+duality to persist at order 1/c, one must have the corrections to the conformal dimensions
+of multiparticle operators precisely reproduce the corrections to AdS energies described by
+the formalism of the previous section. This, in particular, implies that the huge degeneracy
+of the spectrum at c = ∞ will be lifted by the 1/c corrections, in precisely the same manner
+as the multiparticle energy level degeneracy in AdS.
+    The language that we use here to discuss the AdS/CFT duality is slightly different from
+the one most commonly employed, namely, the language of the correlation functions. The
+correlation functions are expressed through the standard CFT data: the dimensions of the
+primary operators and their three-point correlation functions, which encode all the informa-
+tion about the CFT. We discuss instead the conformal dimensions of arbitrary multiparticle
+operators which contain full information about the Schrödinger evolution of arbitrary CFT
+states, and thus also provide a complete definition of the CFT. The two languages must thus
+be equivalent. Discussions of conformal dimensions of operators have frequently appeared
+in the context of AdS/CFT correspondence, occasionally adapted to the Hamiltonian per-
+turbation theory for the conformal dimensions, as in [40]. These discussions most typically
+involve ‘small’ operators made from products of just a few primaries and their descendants,
+as in [38,39], treated at the first few orders of the perturbation theory at small coupling. By
+contrast, we restrict ourselves to the order 1/c, but systematically deal with arbitrarily large
+operators. Indeed, one of our interests is establishing a connection to the classical dynamics
+in AdS, which, strictly speaking, involves taking the limit of an infinite number of particles.
+    The main output of our considerations is an explicit family of energy eigenstates in AdS
+at order λ, whose individual particles reside in the maximally rotating sector of the spectrum
+marked in Fig. 1. This translates in the holographically dual (large c) CFT to an explicit
+family of arbitrarily large operators of definite conformal dimension (at order 1/c) associated
+with the same part of the spectrum. The form of these operators may be directly recovered
+from our explicit Fock space representation of the energy eigenstates in AdS. The rest of our
+treatment aims at presenting, at a technical level, the construction of these states and their
+connection to the weakly nonlinear classical time periodicities in AdS.
+   3
+    Many of such products are descendants rather than primary operators. The primaries, which cannot be
+expressed through derivatives of simpler operators, precisely correspond to combinations of Fock states in
+the kernel of the Z † operator of the bulk theory given by (3.25).
+
+
+
+
+                                                   28
+                                                                                            εI
+
+Figure 2: The eigenvalues of (3.19) in the block (N = 15, M = 12) at δ = 3, computed
+by numerical diagonalization of the relevant Hamiltonian block. Generic eigenvalues are de-
+picted as vertical bars and ladder state energies as red crosses. The lowest energy eigenvalue
+is a ladder eigenvalue, given by (5.1), at εmin
+                                             I   = 57 and the highest eigenvalue is given by
+ max
+εI = N (N − 1)/2 = 105, which is the single eigenvalue originating from the block (N, 0).
+
+
+
+5    Energy ladders in the fine structure
+We will now exploit the symmetries of the Hamiltonian (3.19) and develop algebraic tools to
+derive the wavefunctions and associated energies of a specific family of eigenstates that we call
+ladder states. We will see that the occupation number operator a†n an evaluated in the ladder
+states at large N and M has features reminiscent of the classical ansatz (2.40) for the modes
+|αn |2 . In the next section, we will make the connection to the classical analysis more concrete
+and build coherent-like combinations of the ladder states that reproduce the time-periodic
+features of the invariant manifold of classical solutions described in section 2.4. The present
+analysis extends the techniques introduced in [48], applied to the simpler nonrelativistic
+version of the AdS system.
+    We will start by showing that in every (N, M )-block with 2 ≤ M ≤ N , there exists
+exactly one ladder state in the kernel of Z † , with energy
+
+                                     N (N − 1) N M δ + M (M − 1)
+                         ε(N,M ) =            −                  .                          (5.1)
+                                         2           2 + 4δ
+From the structure of the Hamiltonian blocks that we described in section 3.2, it follows
+that, in addition to the state with energy (5.1), the block also contains Z m -transported
+ladder states that were Z † -kernel eigenstates in the (N, M − m)-block with corresponding
+energy
+                        N (N − 1) N (M − m)δ + (M − m)(M − m − 1)
+                εN,M
+                 (m) =              −                                     .           (5.2)
+                              2                        2 + 4δ
+In summary, every (N, M )-block with M ≤ N contains M − 1 ladder states, M − 2 of which
+are transported from lower M blocks. This structure of eigenvalues is illustrated in Fig. 2
+for a block with N = 15 and M = 12.
+    We now proceed with the construction of eigenstates with energy (5.1). We start by
+considering the Hermitian operator
+
+                             N (N − 1)     1
+                B ≡ Hres −             +        (N M δ + M (M − 1) − ZZ † ),                (5.3)
+                                 2       2 + 4δ
+which by definition annihilates a putative state with energy (5.1) that lies in the kernel of
+Z † . As a side note, it seems suggestive from the combination of (2.53) and (2.54) that an
+operator of this type would annihilate quantum states that are at the origin of the classical
+
+                                               29
+solutions. While the specific form of B has been chosen by trial and error to enable our
+subsequent derivations, one guiding feature is that this operator remains purely quartic in
+the creation-annihilation operators when brought to the normal ordered form (and all the
+quadratic terms that could arise from the commutations cancel out).
+    Operator B has a few further welcome features. First, it commutes with all the conserved
+operators, and specifically with Z and Z † , as can be seen from
+
+           [Z, ZZ † ] = −Z (δN + 2M ) ,                   [Z, δM N + M (M − 1)] = Z (δN + 2M ) .           (5.4)
+
+Moreover, normal ordering the creation and annihilation operators reveals that it possesses
+the structure of a resonant Hamiltonian,
+                            ∞              
+                        1 X nδ + nm
+           B =Hres +                     − 1 a†n a†m an am
+                        2 n,m=0  1 + 2δ
+                                        ∞
+                                 1     X
+                                              (δ + m)(m + 1) (δ + n)(n + 1)a†n+1 a†m an am+1 ,
+                                            p               p
+                         −                                                                                 (5.5)
+                               2 + 4δ n,m=0
+
+which can be conveniently rewritten as a quadratic form
+        ∞   j                        j
+                   "
+     1 X X † Γ(2δ) Γ(j + 1) X                   1         k!(j − k)!
+ B=            Ajk       2              Ajl +
+     2 j=0 k=0       Γ(δ) Γ(j + 2δ) l=0       2 + 4δ Γ(δ + k)Γ(δ + j − k)
+                                                                                                             #
+                                                                                                           
+ × (jδ + 2k(j − k) −2 − 4δ)Ajk −(k+1)(δ+j −k−1)Aj,k+1 −(j −k+1)(δ + k − 1)Aj,k−1
+
+             j
+           ∞ X
+           X
+                       Bkl A†jk Ajl ,
+                         (j)
+   ≡                                                                                                       (5.6)
+           j=0 k,l=0
+                                         q            q
+                                             Γ(δ+k)
+                                        Γ(δ+j−k)
+where we introduced Ajk ≡                (j−k)!k!
+                                                    ak aj−k (with Aj,−1 ≡ 0 ≡ Aj,j+1 ).                We list a
+few relevant properties of the matrices (B (j) )kl :
+   1. The matrices (B (j) )kl vanish for j ≤ 3.
+                                                                                       (j)   (j) (j)
+   2. At fixed j, we identify4 two eigenvectors of the quadratic form vk Bkl vl                        with zero
+      eigenvalues
+                                                      Γ(δ + k) Γ(δ + j − k)
+                                                      (j)
+                                                      vk =                                                 (5.7)
+                                                         k!      (j − k)!
+                                                  (j) Γ(δ + k) Γ(δ + j − k)
+                                             and vk =                       .
+                                                      (k − 1)! (j − k − 1)!
+   4
+    One way to arrive at these null eigenvectors is to consider the classical counterpart of B given by
+         2
+Hres − N2 + 2+4δ
+            1+δ 2
+                 S with S 2 given by (2.54). This quantity can be represented in terms of quadratic forms
+                 (j)
+defined by Bkl in a way completely analogous to (5.6). At the same time, substituting the values of N , M
+and Z for the ansatz (2.40) given by (2.49-2.51) into this classical expression for B gives zero identically,
+as seen from combining (2.53) and (2.54), which can be converted into explicit null eigenvectors for the
+            (j)
+individual Bkl , precisely of the form (5.7).
+
+
+                                                              30
+Note that the operator Ajk is invariant under k → j − k. It is therefore sufficient to examine
+                                                                                (j)
+the properties of the quadratic forms at fixed j (5.6) in the subspace where vk is identified
+      (j)
+with vj−k . In these subspaces, we find:
+
+  3. Explicit diagonalization for multiple values of j indicates that B is a nonnegative
+     operator with no other null directions than (5.7).
+
+As we already mentioned, B annihilates a state in the kernel of Z † with energy (5.1). The
+construction of Z † -kernel ladder states therefore amounts to solving the following two equa-
+tions simultaneously
+
+                                           B |ψi = 0,                                       (5.8)
+                                          Z † |ψi = 0,                                      (5.9)
+
+which, as we will now show, admits a single solution for every 2 ≤ M ≤ N . Note that
+property 3 listed above implies that the Z † -kernel ladder state is the lowest energy eigenstate
+in a given (N, M )-block. (Although we do not have an analytic proof of the nonnegativity
+of B, numerical diagonalization of the Hamiltonian strongly supports this statement.)
+    We start by making the crucial observation that property 1 implies that the states
+
+                               |N − M, M, 0, 0, 0 . . .i ,                                (5.10)
+                               |N − M + 1, M − 2, 1, 0, 0, 0 . . .i
+
+are annihilated by the operator B. These states therefore solve (5.8); they do not solve
+(5.9), though. However, because B commutes with Z and Z † , one can generate a larger set
+of vectors satisfying (5.8) by applying Z and Z † repetitively,
+                                      m †m
+                             |φN,M
+                               m i = Z Z   |N − M, M, 0, . . .i ,                         (5.11)
+
+for m = 0 . . . M ≤ N , yielding a set of linearly independent vectors in the (N, M )-block.
+Their linear independence can be understood by noting that the operator a†m+1 am+1 has a
+nonzero expectation value in |φN   M                        NM
+                                 m i but annihlates all |φn i with n < m. Put differently,
+there is a nonzero term with mode number m + 1 occupied in |φN        M
+                                                                     m i, while this mode is
+                                                       NM
+absent in all states whose superposition makes up |φn i with n < m. Note that the set of
+states (5.11) is equivalent to the set of states generated by Z m |N − M + m, M − m, 0, . . .i
+since
+                              s
+                                 M !(N − M + m)! √ m
+  Z †m |N − M, M, 0, . . .i =                         δ |N − M + m, M − m, 0, . . .i . (5.12)
+                                (N − M )!(M − m)!
+
+   It turns out that these states are sufficient to construct a state that is annihilated by
+both B and Z † . At fixed M and N , we consider a linear combination of the vectors (5.11)
+                                              M
+                                              X
+                                       N
+                                    |ψ̃M i=         bm |φN M
+                                                         m i,                             (5.13)
+                                              m=0
+
+
+
+                                               31
+and determine the coefficients bm by imposing that it should lie in the kernel of Z † . Using
+(3.24) and (5.12), we note that
+
+   Z † |φN,M      m †m
+                        + m (δN + 2M − (m + 1)) Z m−1 Z †m−1 Z † |N − M, M, 0, . . .i
+                                                              
+         m i = Z Z
+                                                                                
+                                                                          N,M −1
+               p                     N,M −1
+             = M (N − M + 1)δ |φm           i + m (δN + 2M − (m + 1)) |φm−1 i . (5.14)
+
+Requiring that Z † should annihilate (5.13) then provides the recursion relation
+                                                 bm−1
+                               bm = −                         ,                              (5.15)
+                                         mδN + 2mM − m(m + 1)
+which can be easily solved, setting b0 = 1,
+                                                    1
+                                    bm =                      .                              (5.16)
+                                            m!(2 − 2M − δN )m
+We have therefore explicitly constructed an (unnormalized) eigenstate of (3.19)
+                                        M
+                                 N
+                                        X           1
+                              |ψ̃M i=                         |φN M
+                                                                m i                          (5.17)
+                                        m=0
+                                            m!(2 − 2M − δN )m
+
+
+in every (N ,M )-block, where 2 ≤ M ≤ N . This state lies in the kernel of Z † , is annihilated
+by B and has energy given by (5.1), as can be simply read off from (5.3).
+    The norm of (5.17) can be computed by noting that most of the terms in the inner
+product are zero, because the Z † operators contained in hψ̃M
+                                                            N                 N
+                                                              | annihilate |ψ̃M i,
+                                             M
+    N    N                            N
+                                             X           δm          M!     (N − (M − m))!
+ hψ̃M |ψ̃M i = hN − M, M, 0, . . . |ψ̃M i=
+                                             m=0
+                                                 m!(2 − 2M − δN )m (M − m)!    (N − M )!
+                       M!         (1−2M −δN,−1+N +δN )
+            =                   P                      (1 + 2δ),                             (5.18)
+                 (2 − 2M − δN )M M
+         (α,β)
+where Pn (x) is a Jacobi polynomial, and we made use of (5.11) and (5.12). This defines
+the normalized ladder state
+                                                 |ψ̃ N i
+                                          N
+                                        |ψM i≡ q M          ,                                (5.19)
+                                                   N     N
+                                                hψ̃M |ψ̃M i
+
+which lies in the kernel of Z † at level (N, M ), for all 2 ≤ M ≤ N . In addition to the Z † -kernel
+ladder state, each block also contains Z m -transported kernel ladder states from lower angular
+momentum blocks. Note that these states are also eigenstates of the Hamiltonian (3.19) that
+are annihilated by B, because Z and B commute. Using the diagonalized expression of ZZ †
+(3.27), it is straightforward to show that the energy of the (unnormalized) eigenstates
+                                          (N,M )
+                                        |ψm      i ≡ Z m |ψM
+                                                           N
+                                                             −m i                            (5.20)
+
+is given by (5.2). One can deduce the same by simply noting that their energy originates
+from a Z † -kernel energy eigenstate with energy (5.1) in block (N, M − m).
+
+                                                   32
+5.1        Occupation numbers in ladder states
+We will show in the next section that the classical three-dimensional invariant manifold of
+solutions (2.40) emerges from particular coherent-like combinations of the ladder states in
+the quantum theory. In order to make contact with these classical solutions, it is practical
+to first compute the expectation value of the product a†n an in kernel ladder states |ψM
+                                                                                         N
+                                                                                              i ,
+which, as we will see, already contains interesting features that can be related to the classical
+ansatz (2.40).
+    We start by writing out three useful identities for future reference. First, using the
+commutation relations (3.23) and (3.24), one can show that powers of Z and Z † commute
+in the following way:
+                       min(m,m0 )
+     †m0
+                         X              (−1)k m!m0 !                                          0
+ Z         Z   m
+                   =                            0
+                                                       (1 − k + m − m0 − 2M − δN )k Z m−k Z †m −k . (5.21)
+                          k=0
+                                    k!(m − k)!(m − k)!
+Second, we will often use the following identity to commute an annihilation operator an past
+several factors of Z,
+                       n
+                                         r s
+                      X                    n! Γ(δ + n)           m!
+         an Z m =             Z m−n+k ak                                     .        (5.22)
+                                           k! Γ(δ + k) (n − k)!(m − n + k)!
+                             k=max(0,n−m)
+
+The last identity, valid on any state |ψi that lies in the kernel of Z † , allows one to commute
+powers of Z † past an annihilation operator
+                                         r           s
+                                           (n +  l)!   Γ(δ + n + l)
+                     Z †l an |ψi = (−1)l                            an+l |ψi .              (5.23)
+                                              n!        Γ(δ + n)
+    The expectation value hψM  N
+                                 | a†n an |ψM
+                                            N
+                                              i can be interpreted as computing the norm squared
+                    N                                                    N
+of the state an |ψM i. We therefore first argue that the state an |ψM      i can be expanded as a
+linear combination of ladder states in the (N − 1, M − n)-block. In order to see this, we
+                                                                             N
+first drag an through the Z operators inside the kernel ladder state |ψM       i using (5.22). Note
+                              N
+that for each term inside |ψM i, after the application of (5.22) only two terms remain in the
+sum over k, containing either of the two annihilation operators a0 and a1 . This follows from
+the fact that the operators act on a state which is only made out of the two corresponding
+                                                                                              N
+creation operators, as can be seen from (5.12). We are therefore able to write an |ψM           i as
+a sum of states of the form Z |φi with |φi in the kernel of B. Because Z and B commute,
+      N
+an |ψM  i also lies in the kernel of B and is therefore a linear combination of ladder states
+living in the (N − 1, M − n)-block, i.e.
+                                             M −n      N −1        †l       N
+                                             X      hψM   −n−l | Z an |ψM i              N −1
+                                     N
+                                an |ψM i=            N −1       †l   l    N −1
+                                                                                   Z l |ψM −n−l i .                    (5.24)
+                                              l=0
+                                                  hψM  −n−l | Z    Z   |ψ M −n−l i
+The expectation value of a†n an in ladder states therefore reduces to
+                                                                                                                      2
+                                                                                          N −1        †l         N
+                                M −n     N −1        †l       N 2      M −n          h ψ̃         | Z    a  | ψ̃   i
+                                X    hψM −n−l | Z an |ψM i             X                 M −n−l           n     M
+   N
+ hψM | a†n an |ψM
+                N
+                  i=                   N −1                 N −1
+                                                                     =                           −1
+                                                                                                                             .
+                                    hψ        | Z †l Z l |ψ        i        hψ̃ N
+                                                                                  |ψ̃ N
+                                                                                        i  hψ̃ N
+                                                                                                       | Z †l Z l |ψ̃ N −1 i
+                                l=0   M  −n−l              M  −n−l     l=0      M     M        M −n−l                M  −n−l
+                                                                                                                       (5.25)
+
+                                                                33
+The denominators in (5.25) are easily computed using (5.21), which leads to
+      N −1      †l l   N −1         N −1       N −1          l
+   hψ̃M −n−l | Z Z |ψ̃M −n−l i = hψ̃M −n−l |ψ̃M −n−l i (−1) l! (1 − l − 2(M − n) − δ(N − 1))l ,
+                                                                                               (5.26)
+together with (5.18).
+                                                                    N −1      †l     N
+   We now turn to the numerators in (5.25) and compute hψ̃M           −n−l | Z an |ψ̃M i. We start by
+applying (5.23), from which follows that
+                                               r
+                 N −1     †l    N            l    (n + l)!(δ + n)l N −1              N
+              hψM −n−l | Z an |ψM i = (−1)                         hψM −n−l | an+l |ψM i.      (5.27)
+                                                         n!
+In the next section, we will be interested in studying combinations of these expectation
+values in the classical limit, so that it is useful to consider the limit of large N, M with a
+fixed ρ given by
+                                                 M
+                                             ρ≡      .                                       (5.28)
+                                                  N
+                                                       N −1              N
+                                                                                         √
+As we will see, a matrix element of the type hψM         −n−l | a n+l |ψM  i scales with   N in the
+classical limit, independently of the mode number. Therefore, terms with l > 0 in (5.25) are
+suppressed
+       N −1       †l      N 2
+    hψM  −n−l | Z an |ψM i                  (−1)l (n + l)!(δ + n)l        N −1              N 2
+     N −1               N −1
+                                 =                                     hψM  −n−l | a n+l |ψ M i ,
+  hψM −n−l | Z †l Z l |ψM −n−l i   n!l! (1 − l − 2(M − n) − δ(N − 1))l
+                                                                                               (5.29)
+and the l = 0 term dominates the sum. In the classical limit, one therefore finds
+                                                       N −1          2
+                                  N
+                                hψM | a†n an |ψM
+                                               N
+                                                 i ≈ hψM           N
+                                                         −n | an |ψM i ,                      (5.30)
+
+as one could expect.
+                                                N −1        N
+    We proceed with the computation of hψM        −n | an |ψM i and start by applying (5.22) to
+                                                               N
+commute an past factors of Z in the various terms in |ψ̃M        i. Once again, only two terms
+remain in the sum over k on the right-hand side of (5.22). Moreover, because the bra state
+lies in the kernel of Z † , the only remaining terms in the expansion for the ket state (5.13)
+that produce a nonzero contributions are those for which m − n + k = 0, with k either 0 or
+1. Taking this and (5.26) into account, once the dust settles one obtains
+                                  p                                                   
+          N −1        N             (δ)n δ n                       n(1 − 2M − δN + n)
+        hψM −n | an |ψM i = √                      N −M +n+
+                              n!(2 − 2M − δN )n                             δ
+                              s
+                                 A(M − n, N − 1)
+                            ×                     ,                                      (5.31)
+                                     A(M, N )
+
+where A(M, N ) is defined as
+                                M
+                                X           δm        (N − (M − m))!
+                 A(M, N ) =
+                                m=0
+                                    m!(2 − 2M − δN )m    (M − m)!
+
+
+                                                  34
+                                   (N − M )!    (1−2M −δN,−1+N (δ+1))
+                           =                   PM                     (1 + 2δ).          (5.32)
+                               (2 − 2M − δN )M
+
+   In the limit of large N , M and fixed ratio ρ = M/N , the expectation value (5.31) can be
+approximated as follows
+                       √
+                                (δ)n δ(ρ − 1) n/2 δ + 2ρ δ/2              n(2ρ + δ) √
+                              p                                                
+    N −1        N        N
+  hψM −n | an |ψM i ≈ √        √                                 1−ρ−                   R,
+                        1−ρ      n!    δ+ρ           δ+ρ                      δ
+                                                                                       (5.33)
+
+where R is the following ratio of Jacobi polynomials
+                                (1−2(M −n)−δ(N −1),−1+(N −1)(δ+1))
+                               PM −n                                 (1 + 2δ)
+                        R=              (1−2M −δN,−1+N (δ+1))
+                                                                                .        (5.34)
+                                     PM                         (1 + 2δ)
+
+The limiting behavior of this ratio at large N and M = ρN can be computed using [68] (see
+appendix A) and yields
+                                                             −n
+                               (ρ − 1)(−1)n γ −1 ρδ + 2 + δ + 2
+                         R=                                                 ,            (5.35)
+                                       (ργ − 1) ((δ + 1)−1 γ −1 + 1)δ
+
+with the factor γ rewritten as a function of ρ,
+                                           s
+                                                    ρ+δ
+                                           γ=               .                            (5.36)
+                                                  ρ (1 + δ)
+
+We insert this in (5.33) and find that, in the classical limit,
+
+                                 √      p                                       n/2
+             N −1        N          N      (δ)n            δ(1 − ρ)
+           hψM −n | an |ψM i ≈ √         √                                     
+                                 1 − ργ     n!    (δ + ρ)(2 + δ + γ −1       δ
+                                                                         2+ ρ )
+                                              δ/2                     
+                                      δ + 2ρ                  n(2ρ + δ)
+                               ×                      1−ρ−                 ,             (5.37)
+                                    ργ + ρ + δ                    δ
+                             ≡fn (b + an)pn                                              (5.38)
+
+which demonstrates that the ladder state reproduces the form of the classical ansatz (2.40).
+Note however that the time evolution of ladder states is too simple to reproduce the time
+periodicities found in the classical analysis, as they are eigenstates of the Hamiltonian (3.19)
+and hence do not directly encode the dynamics of classical solutions.
+
+
+6    Coherent states and classical time-periodic dynamics
+The properties of the ladder states derived in the previous section are reminiscent of the clas-
+sical time-periodic solutions discussed in section 2.4. We will now complete the connection
+
+                                                  35
+between the classical and the quantum theory by defining explicit coherent-like combina-
+tions of the ladder states that reproduce the periodic returns of the configuration of classical
+amplitudes described in section 2.4.
+    Our construction of coherent-like states is inspired by the standard coherent states |αi
+for the harmonic
+              √      oscillator, which are a normalized infinite sum of terms a†N |0i with weight
+  N −|α|2 /2
+α e          / N ! such that a |αi = α |αi. Although a coherent state in principle contains an
+infinite number of terms with different energies and number of particles, at large values of
+|α|, it is able to reproduce classical physics because only terms for which N ∼ |α|2 are able to
+compete with the exponential suppression in |α|2 so that expectation values are dominated
+by a subset of high energy terms with energy ∼ ωN ∼ ω|α|2 and particle number |α|2 .
+In the present case, we aim at reproducing a three-complex-parameter family of nonlinear
+classical periodic solutions using ladder states. This set of energy eigenstates similarly has
+an unbounded parameter N and we will introduce a first complex parameter α which, when
+large, will tune which set of ladder states dominate the N -summation. In contrast to the
+harmonic oscillator modes, the kernel ladder states have an additional parameter M which
+is bounded by N . We will therefore introduce a second weighted sum, running over M ,
+and choose a distribution that peaks around a set of terms at large N so as to reproduce
+the angular momentum of classical solutions. A natural choice for this is the binomial
+distribution which introduces one additional complex parameter β. The building blocks
+of our construction are the Z † -kernel ladder states (5.19), so that we naturally start by
+proposing a family of coherent states that have zero expectation value for the operator Z.
+In section 6.1, we will describe in detail how the coherent states reproduce the subspace of
+classical solutions for which Z = 0, as given by the amplitudes (2.61–65) and periods (2.59)
+and (2.66). In section 6.2, we will move outside of the Z = 0 manifold and analyze the Z-
+translated coherent states, which will introduce a third complex parameter q in agreement
+with the three-dimensional classical invariant manifold of solutions.
+
+6.1   Coherent states with Z = 0
+Consider the following combination of kernel ladder states, parametrized by two complex
+numbers α and β
+                                                              s
+                              ∞                    N X N
+                         2
+                             X                   α                   N!
+           |α, βi = e−|α| /2     (1 + |β|2 )−N/2 √         βM                  N
+                                                                             |ψM i. (6.1)
+                             N =0
+                                                  N ! M =2
+                                                                M !(N − M )!
+
+In this expression, α plays a similar role to the parameter that is typically tuning how many
+particles will dominate the coherent state, while the summation over M contains a factor
+reminiscent of the binomial coefficient that is very sharply peaked at large N (hence, at
+large |α|2 ). Consequently, only a subset of the terms in the second sum will contribute
+substantially to expectation values. Moreover, we will analyze the coherent state (6.1) in the
+regime where it becomes semiclassical, which, as we will demonstrate later on, corresponds
+to the regime where |α| is large and |β| is of order one.
+    In order to connect the dynamics of (6.1) to the classical analysis of section 2.4, we
+
+
+
+
+                                               36
+evaluate the expectation value of an in these coherent-like states,
+                            ∞       2N
+                                       √
+                         2
+                           X     |α|     N /ᾱ
+ hα, β| an |α, βi =e−|α|                       (1 + |β|2 )−N +1/2                          (6.2)
+                           N =1
+                                      N !
+                                  s
+                     N
+                    X |β|2M               N!                    (N − 1)!       N −1        N
+                  ×                                                          hψM −n | an |ψM i ,
+                    M =n
+                            β̄ n     M !(N − M )! (M − n)!(N − 1 − (M − n))!
+
+where it has been taken into account that the expectation value of an is only nonzero between
+states in blocks (N − 1, M − n) and (N, M ), as determined in (5.38). For |α|  1, the sum
+over N is dominated by terms with N ∼ |α|2 . In the second sum, terms centered around
+M ∼ N |β|2 /(1 + |β|2 ) dominate due to the binomial distribution. We therefore conclude
+that in the classical regime, the dominant terms have both M and N large, with ratio
+M/N ∼ |β|2 /(1 + |β|2 ), so that the approximation (5.38) is valid. Moreover, in this limit,
+one can approximate
+   s                                                                      r                   !n/2
+                                                                                          M
+           N!                  (N − 1)!                        N!                M        N
+                                                     ≈                      1−                     ,
+      M !(N − M )! (M − n)!(N − 1 − (M − n))!            M !(N − M )!            N 1− M     N
+                                                                                                 (6.3)
+                                                          N
+                                                            
+and the second sum in (6.2) reduces to M |β|2M M
+                                             P
+                                                              f (M/N ) for some function f . The
+                                                       √
+binomial distribution has a sharp peak of width 2 N around the value N |β|2 /(1 + |β|2 ), so
+that the deviations from this mean value are effectively restricted to lie within one standard
+deviation. As a consequence, the function f (M/N ) is roughly constant when evaluated at the
+leading terms and can be approximated by f (M/N ) = f ((|β|2 /(1 + |β|2 )). It can therefore
+be taken outside of the sum over M , which is then easily evaluated and yields
+                                        ∞
+                                            |α|2N N/ᾱ                          |β|2
+                                                                                      
+                                 −|α|2                          2 1/2 1
+                                       X
+             hα, β| an |α, βi ≈ e                      (1 + |β| )         f          2
+                                                                                         .       (6.4)
+                                       N =1
+                                                N !                  β̄ n     1 + |β|
+
+This last sum can be performed exactly using
+                                          ∞
+                                          X N ξN
+                                                       = ξeξ .                                  (6.5)
+                                          N =1
+                                                 N!
+
+Note that the factors in (6.3) combine with a few remaining factors in (6.4) in such a way that
+the expectation value of an in the coherent states is actually very similar to the expectation
+value in ladder states in the limit of large N and M . More precisely, one can write,
+                                                 r
+                                                   (δ)n
+                              hα, β| an |α, βi ≈        (an + b) pn ,                     (6.6)
+                                                    n!
+with
+                                                          δ/2
+                                 α              δ + 2ρ            δ + 2ρ
+                         a = −√                                          ,                      (6.7)
+                               1 − ργ         ργ + ρ + δ             δ
+
+                                                  37
+                                              δ/2
+                               α      δ + 2ρ
+                       b= √                         (1 − ρ),                               (6.8)
+                             1 − ργ ργ + ρ + δ
+                                                               1/2
+                          |β|            δ(1 − ρ)
+                       p=                                            ,                     (6.9)
+                           β̄ (δ + ρ)(2 + δ + γ −1 (2 + ρ−1 δ))
+with γ defined as in (5.36) and
+                                                  |β|2
+                                           ρ=            .                               (6.10)
+                                                1 + |β|2
+A similar computation can be worked out for hα, β| a†n an |α, βi, where one finds
+                            hα, β| a†n an |α, βi ≈ |hα, β| an |α, βi|2 ,                 (6.11)
+which can be used to show that
+                                   hα, β| N |α, βi = |α|2                                (6.12)
+                                                                  2
+                                                               |β|
+                                  hα, β| M |α, βi = |α|2                                 (6.13)
+                                                             1 + |β|2
+                                   hα, β| Z |α, βi = 0.                                  (6.14)
+Note that these equations can also be obtained using the classical formulas (2.49) and (2.51)
+expressing N , M and Z as a function of a, b and p and (6.7–9). Hence, the absolute values
+of the complex parameters α and β can be interpreted as tuning the particle number N
+and the angular momentum (or energy) M respectively. Because the coherent-like states
+(6.1) are made of kernel ladder states, evaluating Z in those states evidently yields zero. In
+order to recover the full three-dimensional classical manifold of solutions, one must therefore
+                                           †
+consider the Z-translated state, eq̄Z−qZ |α, βi, parametrized by a third complex number q.
+We postpone this discussion to the next subsection.
+    At this point, one can compare the classical (constant) amplitudes (2.62–65) on the
+manifold Z = 0 with the parameters (6.7–9) which originate from expectation values in the
+coherent states and verify that these expressions agree upon the identifications (6.12) and
+(6.13). This result is a first non-trivial verification that the states we constructed reproduce
+the classical solutions. We furthermore need to explore the time-dependence of the coherent
+states in order to compare it to the classical periods of a and b (2.66) and the period of the
+function p (2.59) when Z = 0, which are in turn related to the periodic returns (2.59) of a
+general solution on the three-dimensional invariant manifold.
+    We therefore turn to the time-evolution of the expectation value of an in the coherent
+states (6.6) as induced by the resonant Hamiltonian (3.19):
+                            han iτ ≡ hα, β| eiHres τ an e−iHres τ |α, βi ,               (6.15)
+where we re-introduce the slow time τ = λt. First, we recall that the non-vanishing terms in
+                                                                  N −1        N
+the expectation value of an in a coherent state are of the type hψM −n | an |ψM i. Those terms
+involve energy eigenstates with energy (5.1) and therefore evolve with a frequency that is
+linear in N and M
+                                   2 + δ(4 − n) − n − n2 δ + 2n     δ(n − 4) − 2
+ ωM N = ε(N −1,M −n) − ε(N,M ) =                        +        M+              N. (6.16)
+                                           4δ + 2         4δ + 2       4δ + 2
+
+                                                 38
+The time-evolution of (6.6) can then be computed by including the phase factors eiωM N τ
+in (6.2) and working again through the summation over M , where the mean value of the
+              |β|2
+distribution 1+|β| 2 undergoes the following modification
+
+
+                                                                 δ+2n
+                                           |β|2 → |β|2 e 4δ+2 iτ .                                                        (6.17)
+Before evaluating the N -summation, we pause and consider the classical limit in more detail
+by restoring the factors of ~. In the classical limit, measurable quantities such as the canonical
+           P q~                                                      P √
+field φ ∼ n ωn an and its conjugate momentum field πφ ∼ n ~ωn an should remain
+finite. One should therefore take ~ → 0 while keeping the product |han i|2 ~ fixed. By
+requiring that the Hamiltonian (3.9) should also remain finite as a function of the canonical
+variables, this effectively amounts to adding a factor of ~2 in front of the Hamiltonian.
+Finally, by taking into consideration the usual factor of ~ in the denominator of the phase
+in the Schrödinger time evolution (3.2), one can account for the various factors of ~ by
+simply replacing τ by ~τ in all expressions. The modification (6.17) to the mean value
+  |β|2
+1+|β|2
+       arising from the evaluation of the M -summation in the time-dependent case therefore
+                        δ+2n
+becomes |β|2 → |β|2 e 4δ+2 i~τ , which will have almost no noticeable effect in the classical limit
+for τ ∼ 1 (the exponential can in general be approximated to 1), except in the following
+factor
+                   δ+2n
+                            !N                                 N
+        1 + |β|2 e 4δ+2 i~τ             1 |β|2 δ + 2n                  i~τ δ+2n
+                                                                                 |β|2
+                                                                                       N
+                                ∼   1 +                   i~τ N    ∼ e     4δ+2 1+|β|2
+                                                                                         ,  (6.18)
+            1 + |β|2                    N 1 + |β|2 4δ + 2
+
+where we used τ ∼ 1 in the first step while N ~ was kept fixed as N → ∞ and ~ → 0 in
+the second step. In all the other places where the mean of the binomial distribution needs
+to be evaluated, one can safely ignore the time-correction to the mean value of the binomial
+                                        |β|2
+distribution and simply evaluate it at 1+|β| 2 N (because of the absence of any additional factor
+
+of N that could compete with the presence of ~-factors). As a result, the N -summation can be
+                                                 (1+|β|2 )(−2−4δ+δn)+|β|2 (δ+2n)
+                                           i~τ
+performed using (6.5) with ξ = |α|2 e                      (4δ+2)(1+|β|2 )              which results in the following
+time-dependence
+                                                                                              (1+|β|2 )(−2−4δ+δn)+|β|2 (δ+2n)
+                                                      −n(1+n)+|β|2 (δ+n−n2 )            i~τ                                    
+                                                i~τ                                |α|2 e               (4δ+2)(1+|β|2 )       −1
+hα, β| an (t) |α, βi ≈ hα, β| an (0) |α, βi e             (4δ+2)(1+|β|2 )      e                                                   ,
+                                                         (1+|β|2 )(−2−4δ+δn)+|β|2 (δ+2n)
+                                                |α|2 i~τ
+                    ≈ hα, β| an (0) |α, βi e                       (4δ+2)(1+|β|2 )            .                           (6.19)
+(Note that the first exponential in the first line can be simply approximated by 1 when
+~τ is small.) Then at small ~ and finite |α|2 ~τ , separating the parts of the last exponent
+independent of n and linear in n, we see that a and b share the same period Tab while p
+evolves periodically with period T , where
+                                             2π(4δ + 2)(1 + |β|2 )
+                               Tab =                                     ,                                               (6.20)
+                                       |α|2 (1 + |β|2 )(2 + 4δ) − |β|2 δ
+                                      2π(4δ + 2)(1 + |β|2 )
+                                T =                          .                                                           (6.21)
+                                    |α|2 δ + |β|2 δ + 2 |β|2
+
+                                                           39
+Using (6.12) and (6.13), these periods coincide with the classical periods (2.66) and (2.59) on
+the Z = 0 slice of the three-dimensional invariant manifold. In the next subsection, we will
+discuss how the period of the parameter p drives the non-trivial periodic returns for Z 6= 0
+coherent states.
+    We conclude the discussion of the kernel coherent-like states by showing that the normal-
+ized standard deviation of the operator an in the constructed states vanishes in the classical
+limit. Using (6.19),
+                                                                       !
+                                                     2             2
+                                                                (1+|β| )(−2−4δ+δn)+|β| (δ+2n)
+                                               2|α|2 cos                                        ~τ −1
+ ha†n an iτ − |han iτ |2 = | han i0 |2   1−e                             (4δ+2)(1+|β|2 )
+                                                                                                             ,
+                                                                                                        !2
+                                             (1 + |β|2 )(−2 − 4δ + δn) + |β|2 (δ + 2n)
+                        ≈ | han i0 |2 |α|2                                                                   ~2 τ 2 . (6.22)
+                                                         (4δ + 2)(1 + |β|2 )
+
+We therefore find that, when the slow time τ is of order one, the standard deviation of an is
+suppressed by a factor of ~ in the classical limit where |α|2 ~ is kept finite,
+
+                                     ha†n an iτ − |han iτ |2
+                                                     2       ∼ ~τ 2 · |α|2 ~.                                       (6.23)
+                                            |han iτ |
+
+The states thus qualify as semiclassical.
+
+6.2   Z-translated coherent states
+The coherent-like states |α, βi reproduce the dynamics of those classical solutions on the
+three-dimensional manifold (2.40) for which Z vanishes identically. In order to reach the
+other solutions in this manifold, and recover the non-trivial periodic returns present in the
+amplitude spectrum of these solutions, one needs to map the coherent states (6.1) to states
+with nonvanishing Z. To this end, we define finite unitary symmetry transformations gen-
+erated by Z and act with them on |α, βi as follows:
+                                                                    †
+                                         |α, β, qi = eq̄Z−qZ |α, βi .                                               (6.24)
+
+     Consider first the infinitesimal versions of this transformation, converting a vector |Ψi to
+|Ψ̃i = (1 + ∆q̄Z − ∆qZ † ) |Ψi, where ∆q is a small parameter. From the commutation of Z
+and Z † with an , one easily recovers the expectation values of an in |Ψ̃i as
+                                  p                                 p
+  hΨ̃| an |Ψ̃i = hΨ| an |Ψi − ∆q (n + 1)(δ + n) hΨ|an+1 |Ψi + ∆q̄ n(δ + n − 1) hΨ|an−1 |Ψi .
+                                                                                           (6.25)
+                                                        †
+As a consequence of Z being bilinear in an and an , these transformations exactly coincide
+with the corresponding classical transformations of αn and ᾱn previously treated in [30].
+Importantly, if hΨ| an |Ψi is in the form of the ansatz (2.40), one can straightforwardly verify
+that hΨ̃| an |Ψ̃i respects that form as well, with infinitesimally shifted a, b and p.
+     If one then starts applying such infinitesimal transformation consecutively to |Ψi = |α, βi,
+which respects the ansatz (2.40) at large α as seen from (6.6–9), it follows that the expectation
+values of an in the transformed states will always respect the ansatz (2.40), which will
+
+                                                           40
+also be true of hα, β, q|an |α, β, qi after the infinitesimal transformations have accumulated
+to the finite transformation (6.24). Furthermore, since the infinitesimal transformations
+(6.25) exactly coincide with their classical analog, they can be explicitly integrated to finite
+transformations within the ansatz (2.40), as done in [30] (the formulas below correct a small
+typo in [30]). For imaginary q = iη, one gets
+                              p − i tanh η
+                       p 7→                 ,                                            (6.26)
+                              1 + ip tanh η
+                                                 ap
+                       a 7→                                              ,               (6.27)
+                            (p cosh η − i sinh η)(cosh η + ip sinh η)δ+1
+                               b(1 + ip tanh η) − iaδp tanh η
+                       b 7→                                      ,                       (6.28)
+                            (1 + ip tanh η)(cosh η + ip sinh η)δ
+and for real q = ξ,
+                                p + tanh ξ
+                        p 7→                ,                                            (6.29)
+                               1 + p tanh ξ
+                                                 ap
+                        a 7→                                           ,                 (6.30)
+                             (p cosh ξ + sinh ξ)(cosh ξ + p sinh ξ)δ+1
+                                b(1 + p tanh ξ) − aδp tanh ξ
+                        b 7→                                    .                        (6.31)
+                             (1 + p tanh ξ)(cosh ξ + p sinh ξ)δ
+By substituting the values of a, b, p of a large α kernel coherent state |α, βi, given by (6.7–
+9), one obtains the corresponding values for the Z-transformed coherent state (6.24). The
+expectation value of an in (6.24) can then be read off the ansatz (2.40).
+    Since Z and H commute, to compute the time evolution of an in the coherent states
+|α, β, qi it suffices to apply the Z-transformation with a given q to the time evolution of an
+given by (6.19) and characterized by the periods (6.20–21). In view of (6.6), the expectation
+value (6.19) always fits in the ansatz (2.40), and can therefore be Z-transformed by applying
+(6.26–28) or (6.29–31). In the state |α, βi, a and b evolve by pure phase rotation with period
+(6.20) and p evolves by pure phase rotation with period (6.21). By (6.26–31), this implies
+that the absolute values of a and b are no longer constant in |α, β, qi, but a, b, Re (ab̄)
+and therefore the amplitude spectrum | hα, β, q|an (t)|α, β, qi |2 of a general coherent state
+are exactly periodic with period controlled by the periodicity of p within the corresponding
+kernel coherent state |α, βi given by (6.21). If expressed through the conserved quantities
+(6.12–13) in the state |α, βi, which we denote N and M0 , this period becomes
+                                                4π(1 + 2δ)
+                                         T =               .                             (6.32)
+                                                N δ + 2M0
+We still need to express this period through the expectation value of M in the state |α, β, qi,
+rather than the state |α, βi from which |α, β, qi ispobtained by (6.24). The easiest way to
+do it is to notice that S given by (2.54) becomes (N M0 δ + M02 )/(1 + δ) within the state
+|α, βi, and furthermore commutes with Z and hence does not change its value under the
+transformation (6.24). Hence, the recurrence period within the state |α, β, qi can be read off
+by re-expressing (6.32) through S 2 , and is given precisely by (2.59) completing the connection
+to the classical considerations of section 2.4.
+
+                                                  41
+7    Discussion
+We have analyzed the leading order corrections at small coupling to multiparticle energy
+eigenstates of quantum fields in AdSd+1 with arbitrarily large numbers of particles. The
+corrections lift the large degeneracies in the free field energy eigenstates, inducing a fine
+structure in the spectrum. We have focused on this structure for the states with a maximal
+amount of angular momentum for the given energy. Within this sector we have identified
+a very large family of analytically tractable states whose energies form simple ladders (5.2)
+with explicit wavefunctions that can be read off from (5.11), (5.17) and (5.20). One can fur-
+thermore superpose the energy eigenstates in this family to form coherent-like combinations
+(6.1) that recover the special time-periodic solutions present in the corresponding classical
+dynamics described in section 2.4. In the context of large c holography, these findings imply
+explicit infinite families of multiparticle operators in the dual CFT with definite conformal
+dimensions at order 1/c, as well as a way to explicitly connect classical weakly nonlinear
+dynamics in AdS to these operator families.
+    All of our technical derivations have been phrased for a simple non-gravitating φ4 scalar
+in AdS, but the structure we have presented is robust and should manifest itself in other
+situations. The technical derivations of sections 5 and 6 apply not just to the quantum
+resonant system (3.19) that controls the energy shifts of the φ4 probe field, but to any of the
+resonant systems of the huge class described in [30]. Such systems appear naturally for field
+systems in AdS, provided that there is a breathing mode in the classical equations of motion
+(the center-of-mass motion in AdS gives such a breathing mode), the leading nonlinearities
+are quartic, and the resonant approximation to the classical dynamics can be consistently
+truncated to a simple set of modes labelled by one integer [31]. The maximally rotating
+sector of the φ4 scalar gives a simple implementation of this scenario. The most direct
+and interesting generalization would be to look for a similar construction involving a scalar
+field with gravitational or higher-spin interactions in AdS3 , adapted to the considerations
+of [36, 37].
+    Further afield, there are situations where there is a classical consistent truncation result-
+ing in a resonant system of the class [30], with the associated time periodicities, but it does
+not translate to an exact truncation of the quantum theory. An example is the spherically
+symmetric sector of a conformally coupled scalar in AdS4 [21]. In such situations, one should
+expect that the pattern we have displayed will not appear in the quantum spectrum exactly,
+but rather sufficiently high energy levels that start approaching the semiclassical regime will
+asymptote to our ladder structure. There is furthermore the subject of approximate time
+periodicities in AdS in the form of Fermi-Pasta-Ulam-like returns [3, 14]. An interesting
+question is what corresponds in the quantum spectra to such approximately periodic weakly
+nonlinear classical behaviors.
+
+
+Acknowledgments
+This work has been supported in part by FWO-Vlaanderen through project G006918N
+and by Vrije Universiteit Brussel through the Strategic Research Program “High-Energy
+Physics.” MDC is supported by a PhD fellowship from the Research Foundation Flan-
+
+
+                                               42
+ders (FWO). The work of OE is funded by the CUniverse research promotion initiative
+(CUAASC) at Chulalongkorn University.
+
+
+A    Asymptotic behavior of the ratio of Jacobi polynomials (5.34)
+We describe the steps in the computation of the limiting behavior of the ratio of Jacobi
+polynomials
+                            (1−2(M −n)−δ(N −1),−1+(N −1)(δ+1))
+                          PM −n                                  (1 + 2δ)
+                                 (1−2M −δN,−1+N (δ+1))
+                                                                            ,            (A.1)
+                                PM                     (1 + 2δ)
+
+in the large M and N limit at a fixed ratio ρ = M/N using the tools developed in [68] to
+                                          (α ,β )
+approximate a single Jacobi polynomial Pm m m (x) in the large m limit. To this end, we
+start by summarizing the notation and definitions that were used in [68]. The asymptotics
+of a Jacobi polynomial can be characterized by the following two parameters:
+                                       αm                    βm
+                              A ≡ lim     ,           B ≡ lim   .                        (A.2)
+                                   m→∞ m                 m→∞ m
+
+It is straightforward to see that for our purposes A and B are always real and such that
+A < −2, B > 0 and A + B > −1 (e.g. for the denominator in (A.1) we find A = −2 − δρ−1
+and B = (δ + 1)ρ−1 ). In particular, this means that the parameters of interest are outside of
+the triangle bounded by the lines at A = 0, B = 0 and A + B + 2 = 0 and the asymptotics
+of the corresponding Jacobi polynomials has been derived in [68] (to be precise, we will be
+interested in case C.2 in the notation of [68]). The large m behavior of the polynomials
+depends on the position x at which they are evaluated. In our case, we need x = 1 + 2δ and
+the asymptotic behavior is given by (2.17) in [68]:
+                                                                            
+            1     m                      1               2
+                                                             −m                   1
+  pm (x) = m G (x)N11 (x) 1 + O               + G(x)w (x)        N12 (x) 1 + O             .
+           κ                             m                                         m
+                                                                                        (A.3)
+
+where pm (x) is the asymptotic behavior for the monic Jacobi polynomial
+
+                                                     2m m!
+           pm (x) = lim P̂m(Am ,Bm ) (x) = lim                   Pm(Am ,Bm ) (x).
+                    m→∞                   m→∞ (Am + Bm + m + 1)m
+
+
+The functions (to be evaluated at x = 1 + 2δ) and variables appearing in (A.3) are defined
+as functions of the parameters A and B and are described in detail in [68]. Here, we simply
+mention some features that simplify the computation of the ratio (A.1) using (A.3).
+R x We first note that some of the functions appearing in (A.3) are defined through an integral
+  ζ2
+     f (t)dt for some function f (t) and where ζ2 is a function of A and B. In practice, this
+lower bound never actually needs to be taken into account because it turns out to cancel
+in the ratio (A.1). This statement is actually only true after noticing that the second term
+in (A.3) always dominates over the first term in the large M , N limit. For this reason, it
+is sufficient to determine the ratio (A.1) using the second term in (A.3) with appropriate A
+
+                                                 43
+and B defined for the polynomial in the numerator and denominator of (A.1). One then
+finds in the limit of large M and N
+                                                                                   −n
+                                                             n    −1 δ
+    (1−2(M −n)−δ(N −1),−1+(N −1)(δ+1))
+   PM −n                               (1 + 2δ)   (ρ − 1)(−1) γ        ρ
+                                                                         +2 +δ+2
+          (1−2M −δN,−1+N (δ+1))
+                                                =                                         , (A.4)
+        PM                      (1 + 2δ)               (ργ − 1) ((δ + 1)−1 γ −1 + 1)δ
+                           p
+with ρ = M/N and γ = (ρ + δ)/(ρ (1 + δ)).
+
+
+References
+ [1] P. Bizoń and A. Rostworowski, On weakly turbulent instability of anti-de Sitter space,
+     Phys. Rev. Lett. 107 (2011) 031102 arXiv:1104.3702 [gr-qc].
+
+ [2] J. Abajo-Arrastia, E. da Silva, E. Lopez, J. Mas and A. Serantes, Holographic relaxation
+     of finite-size isolated quantum systems, JHEP 05 (2014) 126 arXiv:1403.2632 [hep-th].
+
+ [3] V. Balasubramanian, A. Buchel, S. R. Green, L. Lehner and S. L. Liebling, Holographic
+     thermalization, stability of anti-de Sitter space, and the Fermi-Pasta-Ulam paradox,
+     Phys. Rev. Lett. 113 (2014) 071601 arXiv:1403.6471 [hep-th].
+
+ [4] B. Craps, O. Evnin and J. Vanhoof, Renormalization group, secular term resummation
+     and AdS (in)stability, JHEP 1410 (2014) 48 arXiv:1407.6273 [gr-qc].
+
+ [5] B. Craps, O. Evnin and J. Vanhoof, Renormalization, averaging, conservation laws and
+     AdS (in)stability, JHEP 1501 (2015) 108 arXiv:1412.3249 [gr-qc].
+
+ [6] P. Basu, C. Krishnan and A. Saurabh, A stochasticity threshold in holography and the
+     instability of AdS, Int. J. Mod. Phys. A 30 (2015) 1550128 arXiv:1408.0624 [hep-th].
+
+ [7] E. da Silva, E. Lopez, J. Mas and A. Serantes, Collapse and revival in holographic
+     quenches, JHEP 04 (2015) 038 arXiv:1412.6002 [hep-th].
+
+ [8] N. Deppe, A. Kolly, A. Frey and G. Kunstatter, Stability of AdS in Einstein-Gauss-
+     Bonnet gravity, Phys. Rev. Lett. 114 (2015) 071102 arXiv:1410.1869 [hep-th].
+
+ [9] F. V. Dimitrakopoulos, B. Freivogel, M. Lippert and I. S. Yang, Position space analysis
+     of the AdS (in)stability problem, JHEP 08 (2015) 077 arXiv:1410.1880 [hep-th].
+
+[10] P. Bizoń, M. Maliborski and A. Rostworowski, Resonant dynamics and the instability of
+     anti-de Sitter spacetime, Phys. Rev. Lett. 115 (2015) 081103 arXiv:1506.03519 [gr-qc].
+
+[11] S. R. Green, A. Maillard, L. Lehner and S. L. Liebling, Islands of stability and recurrence
+     times in AdS, Phys. Rev. D 92 (2015) 084001 arXiv:1507.08261 [gr-qc].
+
+[12] P. Bizoń and A. Rostworowski, Gravitational turbulent instability of AdS5 , Acta Phys.
+     Polon. B 48 (2017) 1375 arXiv:1710.03438 [gr-qc].
+
+
+
+                                               44
+[13] M. W. Choptuik, Ó. J. C. Dias, J. E. Santos and B. Way, Collapse and nonlinear
+     instability of AdS Space with angular momentum, Phys. Rev. Lett. 119 (2017) 191104
+     arXiv:1706.06101 [hep-th].
+[14] A. Biasi, B. Craps and O. Evnin, Energy returns in global AdS4 , Phys. Rev. D 100
+     (2019) 024008 arXiv:1810.04753 [hep-th].
+[15] A. Anabalon, J. Oliva and C. Quijada, Fully resonant scalars on asymptotically AdS
+     wormholes, Phys. Rev. D 99 (2019) 104022 arXiv:1903.08239 [hep-th].
+[16] D. Hunik-Kostyra and A. Rostworowski, AdS instability: resonant system for gravita-
+     tional perturbations of AdS5 in the cohomogeneity-two biaxial Bianchi IX ansatz, JHEP
+     06 (2020) 002 arXiv:2002.08393 [gr-qc].
+[17] G. Moschidis, A proof of the instability of AdS for the Einstein–null dust system with
+     an inner mirror, Anal. PDE 13 (2020) 1671 arXiv:1704.08681 [gr-qc].
+[18] G. Moschidis, A proof of the instability of AdS for the Einstein–massless Vlasov system,
+     arXiv:1812.04268 [math.AP].
+[19] B. Craps and O. Evnin, AdS (in)stability: an analytic approach, Fortsch. Phys. 64
+     (2016) 336 arXiv:1510.07836 [gr-qc].
+[20] G. P. Berman and F. M. Izrailev, The Fermi-Pasta-Ulam problem: 50 years of progress,
+     Chaos 15 (2005) 015104 arXiv:nlin/0411062.
+[21] P. Bizoń, B. Craps, O. Evnin, D. Hunik, V. Luyten and M. Maliborski, Conformal
+     flow on S 3 and weak field integrability in AdS4 , Comm. Math. Phys. 353 (2017) 1179
+     arXiv:1608.07227 [math.AP].
+[22] B. Craps, O. Evnin and V. Luyten, Maximally rotating waves in AdS and on spheres,
+     JHEP 1709 (2017) 059 arXiv:1707.08501 [hep-th].
+[23] I. Bloch, J. Dalibard and W. Zwerger, Many-body physics with ultracold gases, Rev.
+     Mod. Phys. 80 (2008) 885 arXiv:0704.3011 [cond-mat.other].
+[24] O. J. C. Dias, G. T. Horowitz, D. Marolf and J. E. Santos, On the nonlinear stabil-
+     ity of asymptotically anti-de Sitter solutions, Class. Quant. Grav. 29 (2012) 235019
+     arXiv:1208.5772 [gr-qc].
+[25] J. Colliander, M. Keel, G. Staffilani, H. Takaoka and T. Tao, Transfer of energy to high
+     frequencies in the cubic defocusing nonlinear Schrödinger equation, Invent. Math. 181
+     (2010) 39 arXiv:arXiv:0808.1742 [math.AP].
+[26] A. F. Biasi, J. Mas and A. Paredes, Delayed collapses of BECs in relation to AdS gravity,
+     Phys. Rev. E 95 (2017) 032216 arXiv:1610.04866 [nlin.PS].
+[27] A. Biasi, P. Bizoń, B. Craps and O. Evnin, Exact lowest-Landau-level solutions
+     for vortex precession in Bose-Einstein condensates, Phys. Rev. A 96 (2017) 053615
+     arXiv:1705.00867 [cond-mat.quant-gas].
+
+                                             45
+[28] A. Biasi, P. Bizoń, B. Craps and O. Evnin, Two infinite families of resonant solutions
+     for the Gross-Pitaevskii equation, Phys. Rev. E 98 (2018) 032222 arXiv:1805.01775
+     [cond-mat.quant-gas].
+
+[29] P. Bizoń, O. Evnin and F. Ficek, A nonrelativistic limit for AdS perturbations, JHEP
+     12 (2018), 113 arXiv:1810.10574 [gr-qc].
+
+[30] A. Biasi, P. Bizoń and O. Evnin, Solvable cubic resonant systems, Comm. Math. Phys.
+     369 (2019) 433 arXiv:1805.03634 [nlin.SI].
+
+[31] O. Evnin, Breathing modes, quartic nonlinearities and effective resonant systems,
+     SIGMA 16 (2020) 034 arXiv:1912.07952 [math-ph].
+
+[32] D. Marolf, O. Parrikar, C. Rabideau, A. Izadi Rad and M. Van Raamsdonk, From Eu-
+     clidean sources to Lorentzian spacetimes in holographic conformal field theories, JHEP
+     06 (2018) 077 arXiv:1709.10101 [hep-th].
+
+[33] E. T. Akhmedov, A. A. Artemev and I. V. Kochergin, Interacting quantum fields
+     in various charts of anti–de Sitter spacetime, Phys. Rev. D 103 (2021) 045009
+     arXiv:2011.05035 [hep-th].
+
+[34] I. Heemskerk, J. Penedones, J. Polchinski and J. Sully, Holography from conformal field
+     theory, JHEP 10 (2009) 079 arXiv:0907.0151 [hep-th].
+
+[35] S. El-Showk and K. Papadodimas, Emergent spacetime and holographic CFTs, JHEP
+     10 (2012) 106 arXiv:1101.4163 [hep-th].
+
+[36] M. R. Gaberdiel and R. Gopakumar, An AdS3 dual for minimal model CFTs,
+     Phys. Rev. D 83 (2011) 066007 arXiv:1011.2986 [hep-th].
+
+[37] M. R. Gaberdiel and R. Gopakumar, Minimal model holography, J. Phys. A 46 (2013)
+     214002 arXiv:1207.6697 [hep-th].
+
+[38] I. Bertan, I. Sachs and E. D. Skvortsov, Quantum φ4 theory in AdS4 and its CFT dual,
+     JHEP 1902 (2019) 099 arXiv:1810.00907 [hep-th].
+
+[39] P. Kraus, S. Megas and A. Sivaramakrishnan, Anomalous dimensions from thermal AdS
+     partition functions, JHEP 10 (2020) 149 arXiv:2004.08635 [hep-th].
+
+[40] A. L. Fitzpatrick and D. Shih, Anomalous dimensions of non-chiral operators from
+     AdS/CFT, JHEP 10 (2011) 113 arXiv:1104.5013 [hep-th].
+
+[41] O. Evnin, Spectroscopy instead of scattering: particle experimentation in AdS spacetime,
+     in Proceedings of HEPMAD18 (Antananarivo, Madagascar), eConf C180906 (2018)
+     arXiv:1812.07132 [hep-th].
+
+[42] O. Evnin and W. Piensuk, Quantum resonant systems, integrable and chaotic, J. Phys.
+     A 52 (2019) 025102 arXiv:1808.09173 [math-ph].
+
+[43] V. K. B. Kota, Embedded random matrix ensembles in quantum physics (Springer, 2014).
+
+                                             46
+[44] A. Kitaev, A simple model of quantum holography, unpublished
+     http://online.kitp.ucsb.edu/online/entangled15.
+
+[45] J. Polchinski and V. Rosenhaus, The spectrum in the Sachdev-Ye-Kitaev model, JHEP
+     1604 (2016) 001 arXiv:1601.06768 [hep-th].
+
+[46] J. Maldacena and D. Stanford, Remarks on the Sachdev-Ye-Kitaev model, Phys. Rev.
+     D 94 (2016) 106002 arXiv:1604.07818 [hep-th].
+
+[47] B. Craps, M. De Clerck, O. Evnin and S. Khetrapal, Energy level splitting for weakly in-
+     teracting bosons in a harmonic trap, Phys. Rev. A 100 (2019) 023605 arXiv:1903.04974
+     [cond-mat.quant-gas].
+
+[48] M. De Clerck and O. Evnin, Time-periodic quantum states of weakly interacting bosons
+     in a harmonic trap, Phys. Lett. A 384 (2020) 126930 arXiv:2003.03684 [cond-mat.quant-
+     gas].
+
+[49] J. A. Murdock, Perturbations: theory and methods (SIAM, 1987).
+
+[50] S. Kuksin and A. Maiocchi, The effective equation method, in New approaches to non-
+     linear waves (Springer, 2016) arXiv:1501.04175 [math-ph].
+
+[51] V. I. Arnold, Mathematical methods of classical mechanics (Springer, 1989).
+
+[52] O. Evnin and C. Krishnan, A hidden symmetry of AdS resonances, Phys. Rev. D 91
+     (2015) 126010 arXiv:1502.03749 [hep-th].
+
+[53] O. Evnin and R. Nivesvivat, Hidden symmetries of the Higgs oscillator and the confor-
+     mal algebra, J. Phys. A 50 (2017) 015202 arXiv:1604.00521 [nlin.SI].
+
+[54] P. W. Higgs, Dynamical symmetries in a spherical geometry 1, J. Phys. A 12 (1979)
+     309.
+
+[55] H. I. Leemon, Dynamical symmetries in a spherical geometry 2, J. Phys. A 12 (1979)
+     489.
+
+[56] I-S. Yang, Missing top of the AdS resonance structure, Phys. Rev. D 91 (2015) 065011
+     arXiv:1501.00998 [hep-th].
+
+[57] O. Evnin and R. Nivesvivat, AdS perturbations, isometries, selection rules and the Higgs
+     oscillator, JHEP 01 (2016) 151 arXiv:1512.00349 [hep-th].
+
+[58] A. Biasi, P. Bizon and O. Evnin, Complex plane representations and stationary
+     states in cubic and quintic resonant systems, J. Phys. A 52 (2019) no.43, 435201
+     arXiv:1904.09575 [math-ph].
+
+[59] Ó. J. C. Dias, G. T. Horowitz and J. E. Santos, Gravitational turbulent instability of
+     Anti-de Sitter space, Class. Quant. Grav. 29 (2012) 194002 arXiv:1109.1825 [hep-th].
+
+
+
+                                             47
+[60] G. T. Horowitz and J. E. Santos, Geons and the instability of Anti-de Sitter spacetime,
+     Surv. Diff. Geom. 20 (2015) 335 arXiv:1408.5906 [gr-qc].
+
+[61] A. Rostworowski, Higher order perturbations of anti–de Sitter space and time-
+     periodic solutions of vacuum Einstein equations, Phys. Rev. D 95 (2017) 124043
+     arXiv:1701.07804 [gr-qc].
+
+[62] Ó. J. C. Dias and J. E. Santos, AdS nonlinear instability: breaking spherical and axial
+     symmetries, Class. Quant. Grav. 35 (2018) 185006 arXiv:1705.03065 [hep-th].
+
+[63] A. Rostworowski, Towards a theory of nonlinear gravitational waves: A systematic ap-
+     proach to nonlinear gravitational perturbations in the vacuum, Phys. Rev. D 96 (2017)
+     124026 arXiv:1705.02258 [gr-qc].
+
+[64] G. Fodor and P. Forgács, Anti–de Sitter geon families, Phys. Rev. D 96 (2017) 084027
+     arXiv:1708.09228 [gr-qc].
+
+[65] A. M. Polyakov, Gauge fields and strings (CRC Press, 1987).
+
+[66] Y. Makeenko, Methods of contemporary gauge theory (Cambridge, 2009).
+
+[67] S. Terashima, AdS/CFT correspondence in operator formalism, JHEP 02 (2018) 019
+     arXiv:1710.07298 [hep-th].
+
+[68] A. Martı́nez-Finkelshtein and R. Orive, Riemann–Hilbert analysis for Jacobi polynomials
+     orthogonal on a single contour, J. Approx. Th. 134 (2005) 137 arXiv:math/0410320
+     [math.CA].
+
+
+
+
+                                             48
+

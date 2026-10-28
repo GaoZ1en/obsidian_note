@@ -251,4 +251,4 @@ This violates the BH $O(r^{-3})$ bound. The on-shell boundary constraints in the
 
 **Not verified by the symbolic checks:** the analytic global wave existence and asymptotic regularity input. Those enter through the stated reflecting realization. General asymptotic classes, infinite-time bounds, and a generic log-free limit at $\Delta_*$ are not claimed.
 
-The finite scalar-source response and its homogeneous-data prescription are described in [Einstein scalar response prescription](Einstein%20scalar%20response%20prescription.md); the bilinear response setup is in [Einstein response in de Donder gauge](Einstein%20response%20in%20de%20Donder%20gauge.md).
+The finite scalar-source response and its homogeneous-data prescription are described in [Einstein scalar response prescription](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/supporting%20material/Einstein%20scalar%20response%20prescription.md); the bilinear response setup is in [Einstein response in de Donder gauge](Articles/Quantization%20in%20AdS/linearized%20gravity/Einstein%20scalar%20spectrum/supporting%20material/Einstein%20response%20in%20de%20Donder%20gauge.md).

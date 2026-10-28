@@ -1,0 +1,6 @@
+{'Delta': '5/4', 'P': 6, 'dimension': 4, 'low_dimension': 2, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.053}
+{'Delta': '5/4', 'P': 8, 'dimension': 7, 'low_dimension': 2, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.041}
+{'Delta': '5/4', 'P': 9, 'dimension': 8, 'low_dimension': 2, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.038}
+{'Delta': '7/3', 'P': 10, 'dimension': 12, 'low_dimension': 2, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.119}
+{'Delta': '5', 'P': 12, 'dimension': 21, 'low_dimension': 3, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.24}
+{'Delta': '7/3', 'P': 14, 'dimension': 34, 'low_dimension': 3, 'B_low': True, 'C2': True, 'eta': True, 'seconds': 0.433}

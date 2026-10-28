@@ -1,0 +1,69 @@
+\documentclass[a4paper,11pt]{article}
+
+\pdfoutput=1
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+%\usepackage[dvips]{graphicx}
+\usepackage{cite}
+\usepackage[unicode]{hyperref}
+\usepackage{graphicx}
+\usepackage{leftidx}
+% \usepackage{subfig}
+% \usepackage[T1]{fontenc}
+%\usepackage{libertine}
+% Debug labels disabled in the reader PDF.
+\usepackage{caption}
+\usepackage{diagbox}
+%\usepackage{subcaption}
+
+\numberwithin{equation}{section}
+
+
+\setlength{\textwidth}{15.7cm}
+\setlength{\textheight}{22.5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+\setlength{\topmargin}{-0.0cm}
+\setlength{\headsep}{0.0cm}
+
+% Additions for this long research note; original A4/11pt dimensions retained.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{mathrsfs,bm}
+\usepackage{booktabs,longtable,array}
+\usepackage{microtype,xurl}
+\usepackage{fancyvrb,fvextra}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{2}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.6em}
+\renewcommand{\@tocrmarg}{3.6em}
+\makeatother
+\setlength{\emergencystretch}{2em}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\allowdisplaybreaks[2]
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\small}
+\BeforeBeginEnvironment{longtable}{\small}
+\AfterEndEnvironment{longtable}{\normalsize}
+\hypersetup{hidelinks,
+ pdftitle={Global AdS3 Einstein--Scalar: Complete Finite First-Order Spectra and Their Structures},
+ pdfauthor={Research note prepared for koishi},
+ bookmarksnumbered=false}
+\DeclareUnicodeCharacter{2083}{\ensuremath{_3}}
+\DeclareUnicodeCharacter{2081}{\ensuremath{_1}}
+\DeclareUnicodeCharacter{2082}{\ensuremath{_2}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\ge}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\le}}
+\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\to}}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{220E}{\ensuremath{\blacksquare}}

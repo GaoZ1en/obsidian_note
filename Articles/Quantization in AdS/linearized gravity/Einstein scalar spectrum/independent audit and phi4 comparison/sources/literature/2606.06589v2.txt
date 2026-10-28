@@ -1,0 +1,1935 @@
+                                                                                                                 CERN-TH-2026-121
+
+
+                                                            Closing the loop on Φ4 in AdS3
+
+                                                 Dean Carmia,b,c , Riccardo Cicconea,c , Shimon Sukholuskia,d
+
+
+                                                                     a Department of Physics and
+
+
+
+
+arXiv:2606.06589v2 [hep-th] 8 Oct 2026
+                                                  Haifa Research Center for Theoretical Physics and Astrophysics,
+                                                              University of Haifa, 31905 Haifa, Israel
+                                                              b Department of Mathematics and Physics,
+
+                                                     University of Haifa at Oranim, 36006 Kiryat Tivon, Israel
+                                                                  c Theoretical Physics Department,
+
+                                                                CERN, 1211 Geneva 23, Switzerland
+                                                                       d Department of Physics,
+
+                                                              Technion - Israel Institute of Technology,
+                                                                        32000 Haifa, Israel
+
+
+
+
+                                                                              Abstract
+
+
+                                         We compute the one-loop correction to the CFT data of all double-trace operators
+                                         [ϕϕ]n,ℓ for a Φ4 theory in AdS3 , for arbitrary values of n, ℓ, and of the scaling di-
+                                         mension ∆ϕ > 1. Working in the spectral representation, the t-channel one-loop
+                                         bubble diagram is reduced to a product of spectral integrals dressed by the confor-
+                                         mal 6j symbol. Both the spectral integrals and the subsequent sums over residues
+                                         are performed analytically, yielding finite closed-form expressions for the anomalous
+                                         dimensions in terms of higher hypergeometric functions. We discuss the structure of
+                                         the results, including their large-spin and high-energy behaviors, and show that the
+                                         anomalous dimensions are completely monotonic in spin.
+Contents
+
+1 Introduction                                                                                      2
+
+2 λΦ4 theory in AdSd+1                                                                              4
+  2.1 Tree-level corrections to OPE data . . . . . . . . . . . . . . . . . . . . . . . . . .        6
+
+3 One-loop corrections in AdS3                                                                      9
+  3.1 s-channel bubble exchange . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      10
+  3.2 t- and u-channel bubble exchange . . . . . . . . . . . . . . . . . . . . . . . . . . .       11
+
+4 Some specialized results                                                                         15
+  4.1 Special values of ∆ϕ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     15
+  4.2 Large-spin limit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   16
+  4.3 High-energy limits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     17
+
+5 Discussion                                                                                       18
+  5.1 Scheme ambiguity and scheme-independent parametrization . . . . . . . . . . . .              19
+  5.2 Derivative relations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   20
+  5.3 Monotonicity properties in spin . . . . . . . . . . . . . . . . . . . . . . . . . . . .      23
+
+A Sketch of the proof of eq. (3.30)                                                                25
+
+1   Introduction
+
+λΦ4 theory in flat space is arguably the simplest interacting quantum field theory, and its
+influence in physics has been correspondingly broad. It is the simplest nontrivial example in
+perturbative QFT and the textbook prototype for understanding renormalization and the or-
+ganization of UV divergences; its classical action is moreover the Landau-Ginzburg description
+underlying much of our understanding of continuous phase transitions and critical phenomena.
+Its perturbative structure, and the spectrum at its interacting fixed points, are understood to
+remarkable precision. Precisely because of this simplicity and reach, λΦ4 theory has long served
+as the canonical testing ground for general ideas.
+    It is then interesting to ask how much of this familiar story can be made equally explicit in
+Anti-de Sitter space. Quantum Field Theory in AdS combines local field theory dynamics with
+the strong kinematic constraints of the AdS isometry group. From the boundary point of view,
+these isometries act as the conformal group, so that asymptotic observables are naturally encoded
+by boundary conformal data: operator dimensions, OPE coefficients, and their perturbative
+corrections in the bulk coupling. This perspective is central in AdS/CFT [1–3], but it is useful
+even when the bulk theory is not gravitational [4–7]: AdS provides a maximally symmetric
+infrared regulator, and the dynamics of a perturbative bulk QFT can be studied precisely and
+
+
+
+                                                  2
+systematically through the lens of boundary conformal correlators. For λΦ4 , as the simplest
+interacting bulk scalar theory, this is precisely where one should expect the clearest results.
+    Let us be more precise about what one wants to compute. The observable of interest is
+the boundary four-point function ⟨ϕϕϕϕ⟩ of the operator ϕ dual to Φ. At zero coupling, this
+is entirely captured by mean field theory: the ϕ × ϕ OPE contains only an infinite tower of
+                                                      (0)
+double-trace operators [ϕϕ]n,ℓ , with dimensions ∆n,ℓ = 2∆ϕ + 2n + ℓ and OPE coefficients
+fixed by Wick contractions [5, 8]. Switching on interactions makes the problem nontrivial, as it
+generates anomalous dimensions γn,ℓ and corrections to the OPE coefficients an,ℓ , organized in
+a perturbative expansion in λ. In the bulk, the natural basis for the perturbative expansion is in
+terms of Witten diagrams. However, the direct computation of Witten diagrams is notoriously
+challenging already at lowest order. This has motivated several complementary approaches to
+perturbative AdS dynamics: Mellin space methods [8–16], analytic bootstrap techniques [17–31],
+crossing kernels, 6j symbols, and spectral representation [7, 32–43], and direct computations
+in position [44–52] and momentum space [53–59]. The first three approaches make different
+aspects of the problem manifest: Mellin space emphasizes the analogy with flat-space scattering
+amplitudes; the analytic bootstrap organizes CFT data through crossing symmetry and the
+large-spin expansion; crossing kernels and the spectral representation expose the representation-
+theoretic structure underlying Witten diagrams and organize the integrand in a basis where
+CFT data can be read off directly. Together, these methods have yielded loop-level results in a
+number of theories and special cases, yet general closed-form expressions remain elusive, a gap
+that is especially striking for λΦ4 theory, where existing results are confined either to special
+values of the external scaling dimension or to the leading Regge trajectory [46–49].
+    In this work we compute the one-loop correction to the CFT data of all double-trace operators
+[ϕϕ]n,ℓ in λΦ4 theory in AdS3 , for arbitrary n, ℓ, and external dimension ∆ϕ > 1. We focus on
+AdS3 as the simplest setting in which the computation can be carried out in full generality. Our
+strategy is direct, but uses conformal symmetry at every stage. We write the one-loop bubble
+in spectral form and reduce the problem to the extraction of boundary conformal data. The
+s-channel bubble is treated by closing the spectral contour for the bubble function and reading
+off poles at double-trace locations, as done in [7, 39]. For the crossed-channel bubbles, we use
+the conformal 6j symbol to decompose t-channel partial waves into s-channel partial waves
+[36, 37]. After evaluating the relevant residues, the result first appears as an infinite sum over
+intermediate states. We show that this sum can be performed analytically, yielding finite closed-
+form expressions for the anomalous dimensions in terms of very-well-poised hypergeometric
+functions 7 F6 (1). In the special case of half-integer scaling dimension, it further reduces to
+a finite sum of terminating 4 F3 (1). To the best of our knowledge, such general closed-form
+expressions have not appeared in the literature before.
+    Beyond the explicit results, we analyze several structural properties of the anomalous dimen-
+                                        (2)
+sions. The large-spin asymptotics of γn,ℓ reproduces the predictions of the lightcone bootstrap,
+with subleading corrections in even powers of the conformal spin, and we compute the behavior
+in the Regge and bulk-point limits. Intriguingly, we find that the double-trace anomalous di-
+
+
+                                                3
+mensions are completely monotonic functions of ℓ for all values of n and ∆ϕ > 1, namely they
+                   (2)
+satisfy (−1)r ∂ℓr γn,ℓ < 0, generalizing the pattern of negativity, monotonicity, and convexity [20]
+to all orders in derivatives with respect to spin. We also clarify the origin and the validity of the
+so-called “derivative relations” [5, 17] connecting perturbative corrections to OPE coefficients
+and anomalous dimensions from the viewpoint of spectral representation.
+    The rest of this paper is organized as follows. In section 2 we set up λΦ4 theory in AdSd+1 ,
+introduce the spectral representation, and analyze the tree-level corrections to OPE data for
+generic d. In section 3 we specialize to AdS3 and compute the one-loop corrections: in subsection
+3.1 the s-channel bubble is treated by closing the spectral contour, while in subsection 3.2 the t-
+and u-channel bubbles are handled via the conformal 6j symbol, yielding the closed-form 7 F6 (1)
+expressions for the anomalous dimensions. Section 4 records several specializations and limits:
+reductions at half-integer ∆ϕ in 4.1, large-spin asymptotics in 4.2, and Regge and bulk-point
+limits in 4.3. In section 5 we discuss the structure of the results, including the scheme ambiguity
+and its resolution in subsection 5.1, the derivative relation in subsection 5.2, and the complete
+monotonicity properties in subsection 5.3. Appendix A contains a sketch of the proof of the
+closed-form representation.
+
+2   λΦ4 theory in AdSd+1
+
+The action for λΦ4 theory in Euclidean AdSd+1 is given by
+                                                                                 
+                                      √
+                            Z
+                                               1          1        1
+                       S=       dd+1 x g         (∇µ Φ)2 + M 2 Φ2 + λΦ4               ,         (2.1)
+                                               2          2        4!
+
+with the background metric being, in Poincaré coordinates,
+
+                                    L2
+                            ds2 =      (dz 2 + dxi dxi ) ,   i = 1, . . . , d .                 (2.2)
+                                    z2
+In what follows we will set L = 1 for simplicity.
+    At the boundary of AdS the field Φ can have two possible asymptotic behaviors, Φ ∼
+z ϕ (ϕ + O(z 2 )) + z d−∆ϕ (φ + O(z 2 )). In the absence of interactions, the scaling dimension ∆ϕ
+ ∆
+
+corresponds to the one determined by the parameter M 2 as M 2 = ∆ϕ (∆ϕ − d). In order to have
+a well-defined variational problem that leads to a stable boundary condition, one must freeze
+either φ (standard quantization, or Dirichlet) or ϕ (alternative quantization, or Neumann). In
+an interacting theory, we cannot repeat this reasoning as the bare value of M 2 is not a physical
+quantity: what remains physical is the scaling dimension of the boundary operator ∆ϕ , which we
+keep fixed as renormalization condition. Notice also that we should include in the action (2.1)
+the appropriate counterterms to cancel bulk UV divergences. In the following we will work in
+standard quantization, that is ∆ϕ > d/2.
+
+
+
+
+                                                    4
+   Given these premises, the bulk-to-bulk propagator of Φ is given by
+                                                                                   
+                        Γ(∆ϕ )            −∆ϕ                1−d                  2
+   G∆ϕ (X, Y ) =    d                (2u)    2 F1 ∆ϕ , ∆ϕ +     , 2∆ϕ − d + 1, −     ,                (2.3)
+                 2π 2 Γ ∆ϕ + 1 − d2                           2                   u
+
+where u = −1 − X · Y is the chordal distance between the two points. Here and throughout the
+paper we adopt embedding space formalism for AdSd+1 and for the boundary conformal theory
+[60,61], where coordinates are described by points on a hyperboloid (and null rays, respectively)
+in Rd+1,1 . The relation between embedding space coordinates and Poincaré coordinates is
+
+                                          1 + (⃗x2 + z 2 ) 1 − (⃗x2 + z 2 )
+                                                                               
+                            A 1
+                          X =                             ,                 , ⃗x ,                     (2.4)
+                              z                  2                2
+
+where X · X = −1 with metric (−, +, . . . , +). Points on the boundary are described by null rays
+in Rd+1,1 , that is P ∼ λP , P 2 = 0. We choose the frame in which they are parametrized by
+
+                                                      1 + ⃗x2 1 − ⃗x2
+                                                                         
+                                          A
+                                      P       =              ,        , ⃗x .                           (2.5)
+                                                         2       2
+
+   Taking the boundary limit of one of the two points in (2.3), we obtain the bulk-to-boundary
+propagator
+                                                   C ∆ϕ
+                                K∆ϕ (X, P ) =                ,                            (2.6)
+                                               (−2P · X)∆ϕ
+with the two-point coefficient being
+
+                                                        Γ(∆ϕ )
+                                    C ∆ϕ =          d/2
+                                                                     .                                 (2.7)
+                                                  2π Γ(∆ϕ − d/2 + 1)
+
+   At the boundary, the observable of interest is the four-point function of the operator ϕ,
+                                                                            2
+                                                                           C∆ ϕ
+                  A(Pi ) ≡ ⟨ϕ(P1 )ϕ(P2 )ϕ(P3 )ϕ(P4 )⟩ =                                  G(z, z̄) ,    (2.8)
+                                                                    (P12 )∆ϕ (P34 )∆ϕ
+
+We explicitly factor out the normalization of the operators, so that the function G is independent
+of the choice of the latter. Here, z, z̄ are the conformal cross ratios
+
+                                   P12 P34                                   P14 P23
+                          z z̄ =           ,            (1 − z)(1 − z̄) =            ,                 (2.9)
+                                   P13 P24                                   P13 P24
+
+and Pij ≡ −2Pi · Pj .
+   In general, G(z, z̄) admits an expansion in terms of conformal blocks,
+                                                        X
+                                   G(z, z̄) = 1 +            aO K∆O ,ℓO (z, z̄) ,                     (2.10)
+                                                         O
+
+where the sum runs over all operators O different from the identity appearing in the ϕ × ϕ
+
+
+                                                             5
+OPE, and aO = cϕϕO cϕϕO ≥ 0 are the squared OPE coefficients. Only even spins ℓO contribute
+when the theory has no internal symmetry. Since the AdS background is fixed and gravity is
+not dynamical, the boundary data considered here does not assume a conserved stress tensor in
+the ϕ × ϕ OPE.
+   We set up a perturbative expansion in λ,
+
+                                A(Pi ) = AMFT (Pi ) + λ A(1) (Pi ) + λ2 A(2) (Pi ) + . . . ,         (2.11)
+
+or, equivalently,
+
+                            G(z, z̄) = GMFT (z, z̄) + λ G (1) (z, z̄) + λ2 G (2) (z, z̄) + . . . .   (2.12)
+
+The leading order GMFT is just the mean field theory correlator,
+                                                                                          ∆ϕ
+                                                                               z z̄
+                                 GMFT (z, z̄) = 1 + (z z̄)∆ϕ +                                   .   (2.13)
+                                                                         (1 − z)(1 − z̄)
+
+We can expand GMFT in terms of conformal blocks,
+                                                 ∞ X
+                                                 X ∞               
+                            GMFT = 1 +                     1 + (−1)ℓ c2n,ℓ K2∆ϕ +2n+ℓ,ℓ (z, z̄) ,    (2.14)
+                                                 n=0 ℓ=0
+
+with
+                                                                                2
+                                           (−1)ℓ         ∆ϕ − d2 + 1 n (∆ϕ )ℓ+n
+                                                                   
+       c2n,ℓ =                                                                         .            (2.15)
+                 ℓ!n! ℓ + d2 n (2∆ϕ + n − d + 1)n (2∆ϕ + 2n + ℓ − 1)ℓ 2∆ϕ + n + ℓ − d2 n
+                            
+
+
+The sum runs over the double-trace operators [ϕϕ]n,ℓ , which in the free theory saturate the ϕ × ϕ
+                                                                                 (0)
+OPE. From the above, it is manifest that in MFT they have scaling dimension ∆n,ℓ = 2∆ϕ +2n+ℓ
+                              (0)
+and squared OPE coefficient an,ℓ = 1 + (−1)ℓ c2n,ℓ . In particular, for d = 2,
+                                              
+
+
+                    (0)                                (∆ϕ )2n                (∆ϕ )2n+ℓ
+                                 1 + (−1)ℓ
+                                             
+                  an,ℓ =                                                                         .   (2.16)
+                          d=2                    n! (2∆ϕ + n − 1)n (n + ℓ)! (2∆ϕ + n + ℓ − 1)n+ℓ
+
+2.1     Tree-level corrections to OPE data
+
+The leading correction to (2.8) with respect to its MFT value corresponds to a contact interaction
+in the bulk,
+                            Z
+               (1)
+             A (Pi ) = − dX K∆ϕ (P1 , X)K∆ϕ (P2 , X)K∆ϕ (P3 , X)K∆ϕ (P4 , X) .              (2.17)
+
+
+
+
+                                                                 6
+We split the bulk integral by introducing the spectral representation [10],
+                                              Z
+                                 δ(X, Y ) = −i d∆ Ω∆ (X, Y ) ,                                  (2.18)
+
+
+where the integral runs over the principal series d2 +iR, and Ω∆ (X, Y ) is the AdS scalar harmonic
+of spectral parameter ∆,
+                                −∇2X + ∆(∆ − d) Ω∆ (X, Y ) = 0 .
+                                                     
+                                                                                              (2.19)
+
+The latter admits a representation as the convolution of bulk-to-boundary propagators,
+
+                                               ∆)2
+                                          (∆ − e
+                                                     Z
+                         Ω∆ (X, Y ) = −                  dP K∆ (X, P )K∆
+                                                                       e (Y, P ) ,              (2.20)
+                                             4π      ∂
+
+      e = d − ∆. For instance, the scalar propagator admits the spectral representation
+where ∆
+                                Z
+                                                  1
+                G∆ϕ (X, Y ) = i d∆                              Ω∆ (X, Y ) ,            (2.21)
+                                      (∆ − d/2)2 − (∆ϕ − d/2)2
+
+and in general any AdS bilocal scalar function can be decomposed in such a basis.
+   After introducing the spectral representation, one has
+                                               Z
+                                    (1)
+                                  A (Pi ) = i d∆ I∆ (Pi ) ,                                     (2.22)
+
+with [7]
+                   Z
+      I∆ (Pi ) ≡       dX dY Ω∆ (X, Y )K∆ϕ (P1 , X)K∆ϕ (P2 , X)K∆ϕ (P3 , Y )K∆ϕ (P4 , Y )
+                                                                                                (2.23)
+                       e 2
+                 (∆ − ∆)
+              =−           b∆ϕ ∆ϕ ∆ b e    Ψs (P ) ,
+                                     ∆∆ϕ ∆ϕ ∆,0 i
+                    4π
+where we have used (2.20) and
+  Z
+     dX K∆1 (X, P1 )K∆2 (X, P2 )K∆3 (X, P3 ) = b∆1 ,∆2 ,∆3 ⟨⟨O∆1 (P1 )O∆2 (P2 )O∆3 (P3 )⟩⟩ ,    (2.24)
+
+where ⟨⟨O∆1 (P1 )O∆2 (P2 )O∆3 (P3 )⟩⟩ is the conformal three-point structure, and the three-point
+coefficient reads
+                   d
+                 π 2 C∆1 C∆2 C∆3
+                                     Γ ∆1 +∆22+∆3 −d Γ ∆1 +∆22 −∆3 Γ ∆2 +∆23 −∆1 Γ ∆1 +∆23 −∆2 . (2.25)
+                                                                                           
+ b∆1 ,∆2 ,∆3 = 2Γ(∆1 )Γ(∆  2 )Γ(∆3 )
+
+
+The function Ψs∆,0 (Pi ) is the s-channel scalar conformal partial wave of dimension ∆, which is
+defined as the convolution of two three-point structures. Allowing for the possibility of a generic
+
+
+
+
+                                                     7
+spin J, it is given by
+                   Z
+        s                                                     e e (P0 )A1 ...AJ ϕ(P3 )ϕ(P4 )⟩⟩
+     Ψ∆,J (Pi ) ≡ dP0 ⟨⟨ϕ(P1 )ϕ(P2 )O∆,J (P0 )A1 ...AJ ⟩⟩⟨⟨O   ∆,J
+                    ∂
+                                                                                                     (2.26)
+                           1                                                
+                 =                     K∆,J
+                                            K∆,J (z, z̄) + K ∆,J K∆,J
+                                                                      (z, z̄)  ,
+                   (P12 )∆ϕ (P34 )∆ϕ
+                                         e                         e
+
+
+with                                                                          2
+                                             d
+                                           π 2 Γ ∆ − d2 Γ (∆ + J − 1) Γ ∆+J
+                                                                        e
+                                                                           2
+                                    K∆,J =                                        .                  (2.27)
+                                                                       ∆+J 2
+                                                                             
+                                             Γ (∆ − 1) Γ (d − ∆ + J) Γ 2
+All together, one finds
+                                                 Z           e 2
+                                                     d∆ (∆ − ∆)
+                               (1)
+                           G         (z, z̄) =             2     b∆ϕ ∆ϕ ∆ b∆∆      e K∆,0 ,
+                                                                           e ϕ ∆ϕ K∆,0               (2.28)
+                                                     2πi C∆  ϕ
+
+
+                                                                                  (0)
+which has double poles at scalar double-trace locations ∆ = ∆n,0 coming from the three-point
+coefficients. Closing the contour to the right and comparing with
+                                              ∞ X
+                                                ∞                      
+                              (1)
+                                              X      (1)  1 (0) (1) ∂
+                          G         (z, z̄) =       an,ℓ + an,ℓ γn,ℓ      K∆(0) ,ℓ (z, z̄) ,         (2.29)
+                                                          2          ∂n     n,ℓ
+                                             n=0 ℓ=0
+                                                ℓ even
+
+                    (1)               (1)
+we can extract γn,ℓ and an,ℓ from the residues at each double-trace pole [5, 21],
+
+                                 Γ d2 + n Γ(∆ϕ + n)Γ ∆ϕ + n + 12 − d2 Γ 2∆ϕ + n − d2
+                                                                                   
+        (1)           δℓ,0
+       γn,ℓ =                                                                          ,             (2.30)
+                2d+2 π d/2 Γ d2 n! Γ ∆ϕ + n + 12 Γ ∆ϕ + n + 1 − d2 Γ(2∆ϕ + n + 1 − d)
+                                                                
+
+
+                                                      (1)     1 ∂  (0) (1) 
+                                                     an,ℓ =        a γ        .                      (2.31)
+                                                              2 ∂n n,ℓ n,ℓ
+The identity (2.31) is also known as the “derivative relation” in the literature [5, 17]: here it
+descends immediately from the double poles appearing in the spectral integral (2.28), which tie
+ (1)     (1)
+an,ℓ to γn,ℓ as a function of n. Notice that operators with ℓ > 0 do not get corrected at this order
+due to angular momentum conservation. For later convenience, let us specialize to the case of
+d = 2,
+                                      (1)     δℓ,0      1
+                                     γn,ℓ =                     ,                             (2.32)
+                                          d=2 8π 2∆ϕ + 2n − 1
+
+                                     (0)
+                          δℓ,0 an,0
+                                                 
+        (1)
+       an,ℓ =                                     2ψ(∆ϕ + n) − 2ψ(2∆ϕ + 2n − 1)
+            d=2   8π (2∆ϕ + 2n − 1)
+                                                                                                    (2.33)
+                                                                                       1
+                                                     +ψ(2∆ϕ + n − 1) − ψ(n + 1) −                .
+                                                                                  2∆ϕ + 2n − 1
+   In passing, let us comment on the regime ∆ϕ ≤ d/2. At ∆ϕ = d/2 the operator ϕ2 becomes
+
+
+
+                                                                  8
+marginal, and standard and alternative quantization undergo merger-annihilation [62–65]. There
+is a single conformal boundary condition at this value: the spectral function in (2.21) has a
+double pole at ∆ = d/2, which leads to a possible propagator with logarithmic behavior at
+the boundary that must be discarded. For ∆ϕ < d/2 (alternative quantization), the contour
+in (2.21) is deformed in order to pick the residue of the pole to the left of the principal series
+rather than of the pole to the right of the principal series [50]. Furthermore, at ∆ϕ = d/4 it is
+now the operator ϕ4 that becomes marginal, suggesting that the MFT fixed point undergoes
+merger-annihilation with a nearby interacting fixed point, and the boundary theory becomes
+unstable for ∆ϕ < d/4 due to the now-relevant ϕ4 deformation. We also need ∆ϕ ≥ d/2 − 1 to
+be above the unitarity bound.
+
+3   One-loop corrections in AdS3
+
+Let us now specialize to d = 2, namely to AdS3 . In this case the bulk λΦ4 theory is super-
+renormalizable. At the level of connected correlators, the only divergent counterterm that is
+required is the mass counterterm, receiving contributions from the tadpole and sunset diagrams.
+Nevertheless, we also have to specify finite normalization conventions to fully determine the
+renormalization scheme. We fix the physical mass and the normalization of the two-point function
+by imposing
+                                                      C ∆ϕ
+                                ⟨ϕ(P1 )ϕ(P2 )⟩ ≡                ,                          (3.1)
+                                                 (−2P1 · P2 )∆ϕ
+with ∆ϕ now being the physical scaling dimension of ϕ, related to the physical mass of the bulk
+field Φ in the usual way. The remaining finite ambiguity, associated with the definition of the
+renormalized quartic coupling, affects the four-point function at one loop by the addition of a
+bulk Φ4 contact diagram. We postpone a discussion of how to get rid of this ambiguity until
+section 5.1.
+    The one-loop correction A(2) to the boundary four-point function corresponds to a sum of
+bulk bubble exchanges in the various channels,
+
+                         A(2) (Pi ) = A(2,s) (Pi ) + A(2,t) (Pi ) + A(2,u) (Pi ) .              (3.2)
+
+Our goal is to extract the correction to OPE data by matching with the conformal block expan-
+sion
+               X  (2) 1  (0) (2)                      1 (0)  (1) 2 ∂ 2
+                                                    ∂                     
+    (2)                                    (1) (1)
+  G (z, z̄) =        an,ℓ +     a γ + an,ℓ γn,ℓ        + a     γ             K∆(0) ,ℓ (z, z̄) . (3.3)
+                n            2 n,ℓ n,ℓ              ∂n 8 n,ℓ n,ℓ ∂n2           n,ℓ
+              ℓ even
+
+Note that no additional operators are exchanged at one-loop order. In what follows, we compute
+each contribution diagram by diagram.
+
+
+
+
+                                                    9
+                                1              2      1              4    1            4
+
+
+
+
+                                3              4      2              3    2            3
+                                    (a)                       (b)              (c)
+
+ Figure 1: One-loop s-channel (a), t-channel (b), and u-channel (c) bubble exchange Witten diagrams.
+
+
+3.1   s-channel bubble exchange
+
+To compute the s-channel contribution to the one-loop conformal data of [ϕϕ]n,ℓ , we start from
+the Witten diagram
+                  Z
+                1                    2
+ A(2,s) (Pi ) =     dX dY G∆ϕ (X, Y ) K∆ϕ (P1 , X)K∆ϕ (P2 , X)K∆ϕ (P3 , Y )K∆ϕ (P4 , Y ) , (3.4)
+                2
+
+and use the spectral representation to write G2∆ϕ (X, Y ) [7, 39],
+                                                          Z
+                                               2
+                                    G∆ϕ (X, Y ) = −i           d∆ B
+                                                                  e∆ (∆)Ω∆ (X, Y ) ,
+                                                                    ϕ
+                                                                                                      (3.5)
+
+
+with B
+     e∆ (∆) being the spectral function for a bubble of scalars of dimension ∆ϕ in AdS3 ,
+       ϕ
+
+                                               "                    !#
+                          e∆ (∆) = −     1             ∆            ∆
+                                                                    e
+                          B ϕ
+                                                ψ ∆ϕ −     − ψ ∆ϕ −      .                            (3.6)
+                                     8π(∆ − 1)         2            2
+
+Proceeding as for the contact diagram, one finds
+
+                                    1
+                                        Z
+                                            d∆ e             e 2
+                                                        (∆ − ∆)
+                (2,s)
+           G            (z, z̄) = −             B∆ϕ (∆)    2     b∆ϕ ∆ϕ ∆ b∆∆      e K∆,0 (z, z̄) .
+                                                                           e ϕ ∆ϕ K∆,0                (3.7)
+                                    2       2πi           C∆ ϕ
+
+
+We find that the integrand has third-order poles at ∆ = 2∆ϕ + 2n, n ∈ Z≥0 , the additional
+order coming from the spectral function of the bubble. By closing the contour to the right and
+                                                                   (2,s)    (2,s)
+picking the appropriate order of derivative of K, we can read off γn,ℓ and an,ℓ . We can also
+          (1)             (1)
+validate γn,ℓ and an,ℓ against the tree-level computation. Moreover, the fact that the coefficient
+                                                              (1)
+of ∂n2 K reproduces the known tree-level result γn,0 means that in the t- and u-channel we should
+find at most double poles at double-trace locations. Explicitly, for the s-channel contribution to
+the anomalous dimensions one finds
+                                                                                    
+        (2,s)   δℓ,0        1                                                 2
+       γn,ℓ =                           ψ(n + 1) − ψ(n + 2∆ϕ − 1) −                    .     (3.8)
+               128π 2 (2∆ϕ + 2n − 1)2                                  2∆ϕ + 2n − 1
+
+
+
+
+                                                              10
+Moreover, one readily verifies that the following relation holds for the correction to the OPE
+coefficients,
+                         1 ∂  (0) (2,s)              1 ∂2               
+                                                                       (1) 2
+                                                                     
+                 (2,s)                       (1) (1)             (0)
+                an,ℓ =          a γ       + an,ℓ γn,ℓ −        an,ℓ γn,ℓ      .            (3.9)
+                         2 ∂n n,ℓ n,ℓ                   8 ∂n2
+This is the one-loop generalization of the tree-level derivative relation (2.31), specialized to the
+s-channel contribution. Explicitly,
+                         (0)
+       (2,s)  δℓ,0      an,ℓ       h                            
+      an,ℓ =       2             2
+                                     2 ψ(n + ∆ϕ ) − ψ(2n + 2∆ϕ )
+             128π (2n + 2∆ϕ − 1)
+                                                                                                     (3.10)
+                                                                               
+                       × 2ψ(n + ∆ϕ ) − 2ψ(2n + 2∆ϕ ) + ψ(n + 2∆ϕ − 1) − ψ(n + 1)
+                                                         i
+                       + ψ ′ (n + ∆ϕ ) − 2ψ ′ (2n + 2∆ϕ ) .
+
+For more details about the derivative relation (3.9), we refer to section 5.2.
+
+3.2   t- and u-channel bubble exchange
+
+Let us focus on the t-channel, as the u-channel will be entirely analogous to this case. The
+starting point is the Witten diagram associated to the t-channel bubble exchange,
+                   Z
+   (2,t)         1                     2
+  A      (Pi ) =      dX dY G∆ϕ (X, Y ) K∆ϕ (P1 , X)K∆ϕ (P2 , Y )K∆ϕ (P3 , Y )K∆ϕ (P4 , X)
+                 2
+                     Z                                                                     (3.11)
+                   1    d∆ e              2                 t
+               =−          B∆ϕ (∆)(∆ − ∆) b∆ϕ ∆ϕ ∆ b∆∆
+                                       e            e ϕ ∆ϕ Ψ∆,0 (Pi ) ,
+                   4   2πi
+
+where Ψt∆,0 (P1 , P2 , P3 , P4 ) = Ψs∆,0 (P1 , P4 , P2 , P3 ) is the t-channel scalar conformal partial wave
+of dimension ∆. The latter can in turn be expressed in terms of s-channel partial waves by
+means of the conformal 6j symbol [36, 37],
+                                   ∞ Z
+                                              (                     )
+                                   X    d∆′       ϕ ϕ [∆, 0]              1
+                   Ψt∆,0 (Pi ) =                                                Ψs ′ ′ (Pi ) ,       (3.12)
+                                   ′  + 2πi
+                                   J =0
+                                                  ϕ ϕ [∆′ , J ′ ]       n∆′ ,J ′ ∆ ,J
+
+where n∆′ ,J ′ , in d = 2, is defined as
+                                                    π
+                                           n∆,J =     K∆,J K e
+                                                            ∆,J
+                                                                .                                    (3.13)
+                                                    2
+
+and + d∆′ means that the integral is over the upper half of the principal series d2 + iR+ . The
+     R
+
+6j symbol itself can be decomposed in terms of what we will call “reduced 6j symbols”,
+       (                   )                         !                        !
+           ϕ ϕ [∆, 0]                ϕ ϕ [∆, 0]               ϕ ϕ [∆,  e 0]
+                             = K∆,0                    + K∆,0                   .        (3.14)
+           ϕ ϕ [∆′ , J ′ ]           ϕ ϕ [∆′ , J ′ ]          ϕ ϕ [∆′ , J ′ ]
+                                e
+
+
+
+
+                                                     11
+Then, extending the contour to the whole principal series,
+                                                 Z
+                                                   d∆ e             e 2
+                                                               (∆ − ∆)
+                          (2,t)
+                      G           (z, z̄) = −          B∆ϕ (∆)    2     b∆ϕ ∆ϕ ∆ b∆∆
+                                                                                  e ϕ ∆ϕ K∆,0
+                                                   2πi           C∆
+                                                                                          e
+                                                                    ϕ
+                                                                               !                                                 (3.15)
+                                                   X Z d∆′      ϕ ϕ [∆, 0]        1
+                                                 ×                                  K ′ ′ K ′ ′ (z, z̄) .
+                                                    ′
+                                                        2πi              ′
+                                                                ϕ ϕ [∆ , J ]′     π ∆ ,J ∆ ,J
+                                                      J
+
+In our case, that is in d = 2 and equal external scaling dimensions, the reduced 6j symbol takes
+a particularly symmetric form,
+                      !        ′
+          ϕ ϕ [∆, 0]      (−1)J Γ(h′ )2 Γ(h
+                                          ē′ )2
+                                                                      b ϕ (∆, h′ ) Ω       ē′ ) ,
+                ′   ′
+                        =                        sin2 (π (∆/2 − ∆ϕ )) Ω            b ϕ (∆, h                                     (3.16)
+          ϕ ϕ [∆ , J ]      4        ′
+                                 Γ(2h )Γ(2h )
+                                            ē ′
+
+
+where we have introduced
+                                                            ∆′ + J ′                e′   ′
+                                                     h′ ≡            ,        ē′ ≡ ∆ + J ,
+                                                                              h                                                  (3.17)
+                                                               2                       2
+and we have let1
+                                                                             !
+              Γ(∆) Γ(a + 1 − 3x) Γ(2x − b)2         x, x, 2x − b, 2x − b
+ Ω
+ b ϕ (∆, x) =     2                       4 F3                           ;1
+                Γ ∆    Γ(a +  x + 1 − 2b)        2x, 3x − a, a + x + 1 − 2b
+                   2
+                                                                                                                             !
+                                                                                     ∆ ∆
+                    Γ(2x) Γ(3x − a − 1) Γ(a + 1 − 2x)2                               2 , 2 , a + 1 − 2x, a + 1 − 2x; 1           (3.18)
+                  +                                     4 F3
+                             Γ(x)2 Γ(a + 1 − x)                                         ∆, a + 2 − 3x, a + 1 − x
+                                                    !
+                                          b, b, x
+                  = Pϕ (∆, x) 7 W6 a;                 ,
+                                      x, a + 1 − 2x
+
+with
+                                                      ∆
+                                             a=         + 2x − ∆ϕ ,             b = 1 + x − ∆ϕ ,                                 (3.19)
+                                                      2
+and 7 W6 is a shorthand for a very-well-poised 7 F6 (1) [66],
+                                    !                                                                                    !
+                b1 , b2 , b3                                           a, 1 + a2 , b1 , b2 , b3 , b4 , b5
+  7 W6       a;                         ≡ 7 F6       a                                                                  ;1   , (3.20)
+                  b4 , b5                            2 , 1 + a − b1 , 1 + a − b2 , 1 + a − b3 , 1 + a − b4 , 1 + a − b5
+   1
+    The reduction of (3.38) of [36] to a very-well-poised 7 F6 (1) is not special to our case. In their notation, letting
+a ≡ h′ + 2h − p, one finds that a possible representation for Ωhh,h i
+                                                                      ′ ,p is
+
+
+                   Γ(h′ − p + 1)Γ(h′ − h12 + h34 − p + 1)Γ(h′ + 2h − p + 1)Γ(h13 + h + p − 1)Γ(h42 + h + p − 1)
+       Ωhh,h
+          i
+             ′ ,p =
+                    Γ(h′ + p − 1)Γ(h′ − h12 + h − p + 1)Γ(h′ + h13 + h)Γ(h′ + h42 + h)Γ(h′ + h34 + h − p + 1)
+                                    a, 1 + a2 , 1 + h − p − h13 , 1 + h − p − h42 , h − h34 , h′ − p + 1, h12 + h
+                                                                                                                   
+                 × Γ(2h′ ) 7 F6 a ′                   ′              ′                           ′                ;1 .
+                                 2
+                                   , h + h13 + h, h + h42 + h, h + h34 + h − p + 1, 2h, h − h12 + h − p + 1
+
+
+
+
+                                                                         12
+and
+                                        2                      
+                     Γ(∆) Γ 1 + ∆2 − ∆ ϕ    Γ  1 +  ∆
+                                                    2 +  2x − ∆  ϕ Γ(x + ∆ϕ − 1)
+                                                                                 2
+         Pϕ (∆, x) =                                         2        2      .                    (3.21)
+                          Γ ∆2 + ∆ ϕ − 1   Γ  1 + x + ∆
+                                                       2  − ∆ ϕ    Γ x + ∆
+                                                                         2
+
+
+    A feature of the reduced 6j symbol is that it does not have poles in ∆ to the right of the princi-
+pal series. We can then swap d∆ with J ′ d∆′ and close the contour. The sin2 (π(∆/2−∆ϕ ))
+                               R          P R
+
+term in the reduced 6j symbol kills the scalar double-trace poles in the three-point coefficients
+b∆ϕ ∆ϕ ∆ b e                                                                          e∆ (∆). They
+                 , thus the only relevant poles are the ones of the spectral function B
+          ∆∆ϕ ∆ϕ                                                                         ϕ
+
+satisfy
+                         e∆ (∆) = −        1
+                    Res B   ϕ
+                                                   , ∆p = 2∆ϕ + 2p , p ∈ Z≥0 .                  (3.22)
+                   ∆=∆p                4π(∆p − 1)
+Therefore,
+                                   
+                           ∞ Z   ′ X  ∞        e p )2
+                       1   X   d∆       (∆p − ∆
+ G (2,t) (z, z̄) = − 2 2                              b∆ϕ ∆ϕ ∆p b∆
+                                                                 e ∆ϕ ∆ϕ K∆ e ,0
+                    4π C∆ϕ ′   2πi         ∆p − 1                  p           p
+                          J =0       p=0
+                                                                     !                          # (3.23)
+                                                  ϕ ϕ [∆p , 0]
+                                            ×                          K∆′ ,J ′ K∆′ ,J ′ (z, z̄) .
+                                                  ϕ ϕ [∆′ , J ′ ]
+
+                                                                                                        (0)
+The reduced 6j symbol has double and simple poles at double-trace locations ∆′ → ∆n,J ′ =
+2∆ϕ + 2n + J ′ , n ∈ Z≥0 ,
+                                        ē′ ) ∼   ωbϕ (∆p )
+                              Ω
+                              b ϕ (∆p , h
+                                                        (0)
+                                                               ,                  (3.24)
+                                                  ′
+                                                (∆ − ∆n,J ′ )2
+with
+                                  ∆
+                                      
+                     4Γ(∆p ) Γ n + 2p
+                                                                                    !
+                                                 1 − ∆ϕ − n, 1 − ∆ϕ − n, −n, −n
+       ω
+       bϕ (∆p ) =         ∆ 2  ∆       4 F3                       ∆ ∆         ;1 .                  (3.25)
+                  (n!)2 Γ 2p    Γ 2p − n        2 − 2∆ϕ − 2n, 1 − n − 2p , 2p − n
+
+Then, closing the contour on the right, we arrive at
+                                         ∞ X ∞ X ∞          e p )2
+                                  1     X            (∆p − ∆
+          G (2,t) (z, z̄) =         2                              b∆ϕ ∆ϕ ∆p b∆
+                                                                              e ∆ϕ ∆ϕ K∆ e ,0
+                              4π 2 C∆ ϕ n=0 ℓ=0 p=0
+                                                        ∆p − 1                 p            p
+
+                                                      "                    !                       #    (3.26)
+                                                          ϕ ϕ [∆p , 0]
+                                          × Res                               K∆′ ,ℓ K∆′ ,ℓ (z, z̄) ,
+                                                  (0)
+                                             ∆′ =∆n,ℓ     ϕ ϕ [∆′ , ℓ]
+
+where we renamed J ′ → ℓ. Comparing with the expected expansion, we obtain an infinite-sum
+
+
+
+
+                                                           13
+                                                                                                      (2,t)
+representation of the t-channel contribution to the one-loop anomalous dimension γn,ℓ ,
+
+                              ∞       e p )2
+       (2,t)         1        X (∆p − ∆
+      γn,ℓ =        (0)                                 e ∆ϕ ∆ϕ K∆
+                                             b∆ϕ ∆ϕ ∆p b∆          e ,0
+                          2
+               4π 2 an,ℓ C∆        ∆p − 1                 p         p
+                            ϕ p=0
+                                  "                                     !        #                            (3.27)
+                                               2 ϕ ϕ [∆ , 0]
+                                            (0)                 p
+                                ×     ∆′ − ∆n,ℓ                (0)        K∆′ ,ℓ                  ,
+                                                     ϕ ϕ [∆n,ℓ , ℓ]                       (0)
+                                                                                     ∆′ =∆n,ℓ
+
+
+and equivalently for the OPE coefficients,
+                          ∞        e p )2
+       (2,t)       1     X   (∆p − ∆
+      an,ℓ =         2                               e ∆ϕ ∆ϕ K∆
+                                          b∆ϕ ∆ϕ ∆p b∆        e ,0
+               4π 2 C∆ ϕ p=0
+                               ∆p − 1                  p        p
+
+                                  "
+                                                  2 ϕ ϕ [∆ , 0]
+                                                                        !        #                            (3.28)
+                               d  ′          (0)                  p
+                           ×        ∆ − ∆n,ℓ                      (0)     K∆′ ,ℓ                  .
+                              d∆′                        ϕ ϕ [∆n,ℓ , ℓ]                   (0)
+                                                                                     ∆′ =∆n,ℓ
+
+
+Notice that the correction to the OPE coefficients computed in this way automatically satisfies
+the derivative relation
+                                    (2,t) 1 ∂  (0) (2,t) 
+                                   an,ℓ =        a γ        ,                           (3.29)
+                                          2 ∂n n,ℓ n,ℓ
+                                                   (2,t)
+provided that the analytic n-dependence of γn,ℓ is fixed as in (3.27). For more comments on
+this relation, we refer to section 5.2.
+                                                                                       (2,t)
+    In Appendix A we prove that, for generic ∆ϕ > 1, the anomalous dimension γn,ℓ can be
+written as a finite sum over very-well-poised 7 F6 (1) functions. A possible representation is
+                                    n
+                                                                                          !
+                (2,t) (−1)ℓ+1 X                            2∆ϕ − 1, ∆ϕ + q, ∆ϕ + q
+               γn,ℓ =           cn,q Λm,q7 W6         aq ;                                    ,               (3.30)
+                       128π 2
+                                    q=0
+                                                             m + 2∆ϕ + q − 12 , 1
+
+where aq = m + 3∆ϕ + q − 1, m = n + ℓ, and
+                                                                                     
+                                                                      1 2 ∆ϕ      3
+                                                                        
+                                1
+                          ∆ϕ − 2 n
+                                     (−n)  q (n + 2∆ ϕ −  1) q ∆ ϕ − 2 q    2 + 4 q
+               cn,q =                                                                         .               (3.31)
+                          ∆ϕ + 12 n q! (1)q 3 − ∆ϕ − n
+                                                                       1
+                                                                             ∆ϕ 1 
+                                              2            q
+                                                              n + ∆ ϕ +  2 q    2 − 4     q
+
+                                  Γ(2∆ϕ − 1)Γ(m + 1)(m + 3∆ϕ + q − 1)
+                   Λm,q =                                                  .                                  (3.32)
+                             (m + ∆ϕ + q)Γ(m + 2∆ϕ )(2∆ϕ − 1)(m + 2∆ϕ − 1)
+The truncation of the q-sum in (3.30) at n comes from the (−n)q term in cn,q .
+    The u-channel treatment is analogous and leads to formally identical results up to an addi-
+tional (−1)ℓ factor.
+
+
+
+
+                                                   14
+4     Some specialized results
+
+The closed-form expression (3.30) is valid for arbitrary n, ℓ, and ∆ϕ > 1. In this section we
+record several limits and specializations that either yield simpler expressions or connect directly
+to prior results in the literature.
+
+4.1     Special values of ∆ϕ
+
+While (3.30) is a closed-form expression, the trajectory label n also appears as the upper limit
+of a sum. In some cases, namely when ∆ϕ is a half-integer, we are able to reformulate the
+expressions in such a way that the termination depends on the value of ∆ϕ instead.
+    Let ∆ϕ = 3/2 + α, α ∈ Z≥0 . The very-well-poised 7 F6 (1) reduces to a terminating 4 F3 (1),
+                                        !                                                          !
+              2∆ϕ − 1, ∆ϕ + q, ∆ϕ + q                         −α, q + α + 32 , q + α + 32 , 1
+ 7 W6    aq ;                               = Pm,q 4 F3                                          ;1 ,
+                m + 2∆ϕ + q − 12 , 1                      α + 2, m + q + α + 23 , q − m − α + 12
+
+with Pm,q such that
+
+                              Γ(2α + 2)Γ(m + 1)                   1
+              Λm,q Pm,q =                                                            .
+                            (2α + 2)Γ(m + 2α + 2) (m + α + q + 32 )(m + α − q + 21 )
+
+Moreover, one has
+
+                        (α + 1)n                 (−n)q (n + 2α + 2)q (α + 1)2q ( α+3
+                                                                                  2 )q
+               cn,q =            Dq ,    Dq =                                            .
+                        (α + 2)n                 q!(1)q (−n − α)q (n + α + 2)q ( α+1
+                                                                                  2 )q
+
+Now, we notice that Fα (q) ≡ 4 F3 (1)/((m + α + q + 23 )(m + α − q + 12 )) admits the following
+partial fraction decomposition,
+                               α
+                                     "                                     #
+                              X                1                  1
+                     Fα (q) =     Cs                      −                  ,
+                              s=0
+                                       q + m + s + α + 32   q − m − s − 12
+
+with
+                          (m + α + 2)2α       (−α)s (m + 1)2s (2m + α + 2)s
+                 Cs =                                                       .
+                    (α + 2)α (2m + α + 2)α+1 s!(m + α + 2)2s (2m + 2α + 3)s
+Now we perform the q sum. To do so, let H(z) ≡ nq=0 Dq /(q + z). One finds
+                                                P
+
+                                                                              !
+                           α + 1 − 2z                    −n, n + 2α + 2, α + 1
+    H(z) − H(α + 1 − z) =              7 W6       α + 1;
+                          z(α + 1 − z)                        z, α + 1 − z
+                                                                                                !
+                              α + 1 − 2z (α + 2)n (2α + 2)n          −n, 1, α + 1, n + 2α + 2
+                           =                                4 F3                              ;1 ,
+                             z(α + 1 − z)   (α + 1)n n!              2α + 2, 1 + z, α + 2 − z
+
+
+
+
+                                                   15
+which we can apply to z = m + s + α + 32 in our case. The final result is
+
+   (2,t)       (−1)ℓ+1    Γ(α + 1)(2α + 2)n (α + 2)α
+  γn,ℓ  α + 32 =       2
+                   128π Γ(n + 1)(m + 1)α+1 (m + α + 2)α
+   α                                                                               ! (4.1)
+  X            1               1                      −n, 1, α + 1, n + 2α + 2
+×     Cs               +                  4 F3                                     ;1 .
+  s=0
+           2m + 2s + 1 2m + 2α + 2s + 3         2α + 2, m + s + α + 52 , 12 − m − s
+
+In particular, for α = 0, that is for ∆ϕ = 3/2, the expression further collapses to
+
+                                 (−1)ℓ+1 2ψ ℓ + n + 23 − ψ ℓ + 2n + 52 − ψ ℓ + 12
+                                                                              
+                   (2,t)    3
+                  γn,ℓ         =                                                    ,                (4.2)
+                            2     256π 2              (n + 1)(ℓ + n + 1)
+
+which matches the results of [49] for n = 0. In general, we find that similar decompositions in
+terms of digamma functions evaluated at half-integers exist for any value of α, typically with
+rational correction terms. This form can be obtained by explicitly performing the polynomial
+division Dq /(q + z).
+    We were not able to find similar reductions for other families of ∆ϕ , such as integer ∆ϕ .
+However, for ∆ϕ = 2 we were able to observe the following,
+
+                    (−1)ℓ+1                                              (2ℓ + 1)(ℓ2 + 5ℓ + 5)
+                                                                                              
+          (2,t)                2(ℓ + 1)(ℓ + 2)                ′
+         γ0,ℓ (2) =      2
+                                                             ψ (ℓ + 1) −                         ,   (4.3)
+                     128π (2ℓ + 1)(2ℓ + 3)(2ℓ + 5)                         2(ℓ + 1)2 (ℓ + 2)2
+
+which for low values of ℓ reduces to the results of [21].
+
+4.2        Large-spin limit
+
+The large-spin regime, ℓ ≫ 1 at fixed n, is the domain of the lightcone bootstrap. In this
+limit, the closed-form expression (3.30) admits a systematic expansion in inverse powers of
+the conformal spin, whose structure is predicted on general grounds by large-spin perturbation
+theory [19, 20, 25, 26].
+
+Leading Regge trajectory. For n = 0, the sum in (3.30) reduces to a single term. It is then
+interesting to perform an expansion at large spin ℓ, or more conveniently at large conformal
+spin, to compare with lightcone bootstrap predictions. We define the conformal spin as J2n =
+(τn /2 + ℓ)(τn /2 + ℓ − 1), where τn = 2∆ϕ + 2n is the twist, and we denote J ≡ J0 , τ ≡ τ0 . One
+finds that the large J expansion takes the form
+                                                             ∞
+                                                      "                           #
+                                                                   τ
+                                                                     
+                   (2,t)          (−1)ℓ+1 Γ(τ − 1) −τ       X
+                                                                   2 k   P k (τ )
+                  γ0,ℓ (∆ϕ ) ∼                     J    1+       τ +1               ,        (4.4)
+                             J→∞ 128π 2                                   J2k
+                                                                       
+                                           τ −1                    2 kk=1
+
+where Pk (τ ) are polynomials with rational coefficients. This matches the lightcone bootstrap
+expectation that only even powers of J enter in the subleading corrections [22–24]. For instance,
+
+
+
+                                                    16
+the first terms read
+
+                     τ 3 + τ 2 − 16τ + 8
+           P1 (τ ) =                     ,                                                               (4.5)
+                               24
+                     5τ 6 + 28τ 5 − 129τ 4 − 928τ 3 + 3616τ 2 − 2520τ + 288
+           P2 (τ ) =                                                              ,                      (4.6)
+                                               5760
+                         9     8    7       6       5         4
+                                                                −1881464τ +1162272τ 2 +6336τ −69120
+                                                                         3
+           P3 (τ ) = 35τ +483τ +429τ −23787τ −53136τ +812592τ
+                                                      2903040                                       .    (4.7)
+
+Let us now look at some special cases. For ∆ϕ = 3/2, namely τ = 3, this gives
+
+                                  (−1)ℓ+1 −3
+                                                                    
+                    (2,t)    3                   1     3     5
+                   γ0,ℓ         ∼         J   1− 2 +      −       + ... ,                                (4.8)
+                             2 J→∞ 256π 2       8J   128J4 1024J6
+
+in accordance with [49]. For ∆ϕ = 2, namely τ = 4, this gives
+
+                                  (−1)ℓ+1 −4
+                                                                                     
+                        (2,t)                                 4   4    16
+                       γ0,ℓ (2) ∼         J                1+ 2 + 4 +      + ...          ,              (4.9)
+                               J→∞ 192π 2                    5J  7J   35J6
+
+which matches the analysis of [21].
+
+Subleading trajectories. We can repeat the large Jn expansion for subleading trajectories
+n > 0, n fixed. Here we report only the expression containing the first correction in terms of the
+minimal twist τ = 2∆ϕ ,
+
+       (2,t)            (−1)ℓ+1 Γ(τ − 1 + n) −τ h    τ P1 (τ )+n(τ −1)(τ +n−1) −2
+                                                                                          i
+      γn,ℓ (∆ϕ )     ∼                      J n  1 +            τ +1          Jn  + . . .   .           (4.10)
+                   Jn →∞ 128π 2  n!(τ − 1)
+
+4.3   High-energy limits
+
+We consider two complementary high-energy limits: the Regge limit and the bulk-point limit.
+Both correspond to high-energy kinematic regimes of the boundary four-point function, associ-
+ated respectively to fixed AdS impact parameter [18,67,68] and to the approach to the bulk-point
+singularity [69, 70]. For concreteness, we work with ∆ϕ = 3/2 throughout.
+
+Regge limit.        We consider the so-called Regge limit,
+
+                                             n, ℓ → ∞ ,         ℓ/n fixed .
+
+This is equivalent to considering a fixed AdS impact parameter b ≈ log(ℓ/n + 1). One finds
+
+                                              (−1)ℓ+1 1 
+                                       
+                              (2,t)    3                           
+                                                                           −2b
+                                                                               
+                             γn,ℓ         ≈                  − log   1 − e        .                     (4.11)
+                                       2 Regge 128π 2 2n2 eb
+
+Several comments are in order. We recognize that this decays at large n as n−2 , which is the
+same power observed in tree-level t-channel scalar exchanges: in particular, at one loop no
+
+
+                                                           17
+enhancement occurs. On the other hand, the dependence on eb includes a logarithm. Expanding
+the logarithm,
+                                                  ∞ −(2k+3)b
+                              1              X     e
+                           − b log 1 − e−2b =                  ,
+                             2e                        2k + 2
+                                                           k=0
+
+we recognize that each term corresponds to the exchange of the operator [ϕϕ]k,0 , of dimension
+∆k,0 = 2k + 3, and the weight 1/(2k + 2) is related to the residue of the bubble at the corre-
+sponding double-trace pole, cf. (3.22). At large impact parameter, the k = 0 term dominates:
+this is consistent with the expectation that in the large b limit scattering is controlled by the
+lightest exchanged state. The limit of small b, instead, leads to a log(b) divergence that signals
+the breakdown of the Regge expansion, since it corresponds to ℓ ≪ n. Physics in this limit is
+better described in the bulk-point limit.
+
+Bulk-point limit.     We now consider the bulk-point limit,
+
+                                           n → ∞,        ℓ fixed .
+
+The leading large-n behavior is
+
+                                                  (−1)ℓ+1 log(n)
+                                            
+                                   (2,t)    3
+                                  γn,ℓ         ≈                 .                          (4.12)
+                                            2 b.p. 128π 2 2n2
+
+The physical origin of the log(n) term is the same as in the Regge limit. In that case, the whole
+tower of double-trace exchanges [ϕϕ]k,0 contributed to the anomalous dimension at fixed impact
+parameter b. In this case, only the lightest n states are kinematically accessible, and thus, for n
+large,
+                                                   n
+                                      1           X     1
+                                        log(n) ≈             .
+                                      2               2k + 2
+                                                    k=0
+
+
+5   Discussion
+
+In this paper, we have obtained closed-form expressions for the one-loop corrections to the CFT
+data of all double-trace operators [ϕϕ]n,ℓ , valid for arbitrary n, ℓ, and ∆ϕ > 1, for the boundary
+theory corresponding to λΦ4 in AdS3 . Explicitly, for the anomalous dimensions,
+
+                                (2)    (2,s)                (2,t)
+                               γn,ℓ = γn,0 δℓ,0 + 1 + (−1)ℓ γn,ℓ ,                            (5.1)
+
+with
+                                                                                   
+         (2,s)     1          1                                             2
+        γn,0 =                            ψ(n + 1) − ψ(n + 2∆ ϕ − 1) −                ,
+                 128π 2 (2∆ϕ + 2n − 1)2                                2∆ϕ + 2n − 1
+
+
+
+
+                                                    18
+and
+                              n
+                                                                                            !
+               (2,t) (−1)ℓ+1 X                                   2∆ϕ − 1, ∆ϕ + q, ∆ϕ + q
+              γn,ℓ =             cn,q Λm,q7 W6              aq ;                                ,
+                      128π 2
+                             q=0
+                                                                   m + 2∆ϕ + q − 12 , 1
+
+where aq = m + 3∆ϕ + q − 1, m = n + ℓ, and cn,q , Λm,q are given by (3.31), (3.32), respectively.
+Correspondingly, the OPE coefficients are expressed in terms of derivative relations involving
+the anomalous dimensions.
+    Beyond the explicit results and their specialization in various limits, we collect here a number
+of remarks on their structure and properties.
+
+5.1    Scheme ambiguity and scheme-independent parametrization
+
+Even in a super-renormalizable theory like λΦ4 in three spacetime dimensions, subleading anoma-
+lous dimensions are scheme-dependent and thus ambiguous unless a scheme is fixed. In the
+minimal theory this ambiguity is generated by a finite redefinition of the quartic coupling,
+λ → λ (1 + cλ λ + . . . ), or equivalently by adding a finite local Φ4 contact diagram. At one loop,
+then, it shifts only the spin-zero anomalous dimensions and corrections to OPE coefficients,
+
+                         (2)      (2)         (1)             (2)         (2)         (1)
+                      γn,ℓ ∼ γn,ℓ + cλ γn,0 δℓ,0 ,           an,ℓ ∼ an,ℓ + cλ an,0 δℓ,0 .           (5.2)
+
+   A convenient way to remove this ambiguity is not to define observables in terms of the bulk
+coupling λ and fix a renormalization scheme, but rather in terms of a physical CFT datum.
+This is analogous in spirit to an on-shell scheme in flat-space QFT, where the renormalized
+parameters are defined in terms of physical observables. We choose as perturbative parameter
+the full anomalous dimension of the lowest spin-zero double-trace operator,
+
+                                        g ≡ γ0,0 = ∆0,0 − 2∆ϕ .                                     (5.3)
+
+In an arbitrary intermediate scheme we can invert the perturbative expansion. Up to one loop,
+one has
+                                                               (2)
+                        (1)    2 (2)                   g      γ0,0 2
+              γ0,0 = λ γ0,0 + λ γ0,0 + O(λ ) =⇒ λ = (1) − (1) 3 g + O(g 3 ) .
+                                          3
+                                                                                        (5.4)
+                                                      γ0,0   γ0,0
+Substituting this relation into the remaining CFT data gives a physical expansion in g. For
+example,
+                                            (1)        (2)
+                                          bn,ℓ + g 2 γ
+                                 γn,ℓ = g γ          bn,ℓ + O(g 3 ) ,                 (5.5)
+
+with
+                                      (1)                       (2)             (2) (1)
+                                 (1) γn,ℓ             (2)     γn,ℓ     γ0,0 γn,ℓ
+                               bn,ℓ ≡ (1) ,
+                               γ                    bn,ℓ ≡
+                                                    γ          (1) 2
+                                                                    −    (1) 3
+                                                                                 .                  (5.6)
+                                     γ0,0                     γ0,0      γ0,0
+Similarly, one obtains
+                                          (0)         (1)           (2)
+                                                 an,ℓ + g 2 b
+                                 an,ℓ = an,ℓ + g b          an,ℓ + O(g 3 ) ,                        (5.7)
+
+
+
+                                                       19
+where
+                                    (1)                     (2)       (2) (1)
+                              (1)  an,ℓ            (2)     an,ℓ     γ0,0 an,ℓ
+                             an,ℓ = (1) ,
+                             b                    an,ℓ =
+                                                  b         (1) 2
+                                                                 −    (1) 3
+                                                                              .                (5.8)
+                                   γ0,0                    γ0,0      γ0,0
+The hatted coefficients are invariant under finite redefinitions of the coupling λ, because the
+                  (2)                                                     (2)
+induced shift of γn,ℓ is exactly canceled by the corresponding shift of γ0,0 . Thus, after fixing
+the two-point normalization of ϕ, expressing all CFT data in terms of g = γ0,0 gives a scheme-
+independent parametrization of the perturbative answer.
+
+5.2     Derivative relations
+
+For the case of λΦ4 theory in AdS3 , we can analyze how the derivative relation gets extended
+beyond tree level, where we recall it reads
+
+                                        (1)       1 ∂  (0) (1) 
+                                       an,ℓ =          a γ        .                            (5.9)
+                                                  2 ∂n n,ℓ n,ℓ
+At one loop, we can combine (3.9), (3.29), and its u-channel analog into a single relation,
+
+                             1 ∂  (0) (2)              1 ∂2              
+                      (2)                      (1) (1)           (0) (1) 2
+                    an,ℓ =        an,ℓ γn,ℓ + an,ℓ γn,ℓ −       a   γ         .              (5.10)
+                             2 ∂n                         8 ∂n2 n,ℓ n,ℓ
+Identical relations hold for hatted quantities as defined in section 5.1.
+    It has been argued that a correction term in the derivative relations is necessary already at
+tree level for the exchange of single-trace operators [27], and a similar claim has been made for
+the quartic theory at one loop in d = 1 [71]. Such corrections, however, depend on the choice of
+analytic continuation in n for the OPE data, and are therefore not universal. In the cases where
+the full spectral function is known at a given perturbative order, one can choose a prescription
+that leads to derivative relations free of correction terms. We recall that the spectral function
+ρ(∆, ℓ) is the spectral density of the four-point function G(z, z̄),
+                                            X Z d∆
+                             G(z, z̄) = 1 −         ρ(∆, ℓ) K∆,ℓ (z, z̄) .                   (5.11)
+                                                2πi
+                                              ℓ
+
+The full non-perturbative spectral function has only simple poles corresponding to primaries O
+in the ϕ × ϕ OPE,                        X aO
+                              ρ(∆, ℓ) =               + regular ,                       (5.12)
+                                             ∆ − ∆O
+                                              O
+
+such that when closing the contour in (5.11) one recovers the block expansion (2.10). Like G(z, z̄),
+also ρ(∆, ℓ) admits a perturbative expansion,
+
+                     ρ(∆, ℓ) = ρ(0) (∆, ℓ) + λ ρ(1) (∆, ℓ) + λ2 ρ(2) (∆, ℓ) + . . . ,        (5.13)
+
+
+
+
+                                                     20
+with the leading term determined by MFT data, consisting of double-trace operators only,
+
+                                                         ∞        (0)
+                                                         X     an,ℓ
+                                         ρ(0) (∆, ℓ) =                  (0)
+                                                                              + regular .               (5.14)
+                                                         n=0 ∆ − ∆n,ℓ
+
+                                                                                                  (0)
+Similarly, the functions ρ(k) have poles at every double-trace location ∆ = ∆n,ℓ , whose Laurent
+coefficients encode the CFT data at order k. They can also have additional poles, corresponding
+to new operators contributing at that order, but let us focus for simplicity on the double-trace
+ones in what follows. For instance,
+                                              (0) (1)             (1)
+              (1)
+                                            an,ℓ γn,ℓ          an,ℓ
+             ρ      (∆, ℓ)     ∼                  (0) 2
+                                                         +         (0)
+                                                                       + ... ,                          (5.15)
+                                   (0)
+                             ∆∼∆n,ℓ        ∆ − ∆n,ℓ        ∆ − ∆n,ℓ
+                                            (0) (1) 2      (0) (2)     (1) (1)       (2)
+                                           an,ℓ γn,ℓ       an,ℓ γn,ℓ + an,ℓ γn,ℓ     an,ℓ
+             ρ(2) (∆, ℓ)       ∼                  (0) 3
+                                                         +             (0) 2
+                                                                                 +        (0)
+                                                                                              + ... .   (5.16)
+                                   (0)
+                             ∆∼∆n,ℓ        ∆ − ∆n,ℓ             ∆ − ∆n,ℓ           ∆ − ∆n,ℓ
+
+As an analytic function of ∆, ρ(k) provides a way to fix the continuation of the OPE data
+to arbitrary n. In particular, correction terms to the derivative relations need not arise. Let
+us display the argument with a toy example. Consider the following O(λ) contribution to the
+spectral function,
+                                          π2        Fℓ (∆)
+                            ρ(1) (∆, ℓ) =      2 π
+                                                                 ,                      (5.17)
+                                          4 sin 2 (∆ − 2∆ϕ − ℓ)
+                                                               (0)
+with Fℓ (∆) regular at the double-trace poles ∆n,ℓ . Then we can extract the first correction to
+the CFT data as
+                                      
+                    (0) (1)        (0)                (1)
+                   an,ℓ γn,ℓ = Fℓ ∆n,ℓ ≡ An,ℓ ,      an,ℓ = ∂∆ Fℓ (∆) ∆=∆(0) .            (5.18)
+                                                                                            n,ℓ
+
+
+                                                                        (1)
+Now suppose Fℓ (∆) = 1 + sin π2 (∆ − 2∆ϕ − ℓ) , so that An,ℓ ≡ 1 and an,ℓ = π2 (−1)n . Since
+                                                   
+
+An,ℓ is constant in n, one might conclude that a correction term in the derivative relation is
+necessary,
+                           (1)
+                          an,ℓ = 12 ∂n An,ℓ + Bn,ℓ , Bn,ℓ = π2 (−1)n .                  (5.19)
+
+A more convenient analytic extension of An,ℓ is however Fℓ (2∆ϕ + 2n + ℓ) = 1 + sin(πn), which
+                         (1)
+reproduces the correct an,ℓ with Bn,ℓ = 0.
+    Having illustrated the ambiguous nature of the correction terms, let us see how relations like
+(5.9) and (5.10) arise in the spectral representation in full generality. To do so, let us discuss
+the pole structure of ρ(k) (∆, ℓ). In general, at double-trace locations it will have poles of order
+at most pk,ℓ + 1, with 1 ≤ pk,ℓ ≤ k, or it will be regular, in which case we set pk,ℓ = −1. It is
+then convenient to split ρ(k) as follows,
+
+                                          ρ(k) (∆, ℓ) = M(k) (∆, ℓ)R(k) (∆, ℓ) ,                        (5.20)
+
+
+                                                             21
+with R(k) (∆, ℓ) being an analytic function of ∆ which is regular near the poles, and M(k) being
+a meromorphic function that captures the leading divergence at each pole,
+
+                                                                 1
+                   M(k) (∆, ℓ)            ∼               (0) p +1
+                                                                                    + regular ,                   ∀ n ∈ Z≥0 ,                   (5.21)
+                                         (0)
+                                      ∆∼∆n,ℓ         ∆ − ∆n,ℓ k,ℓ
+
+in particular it has no subleading poles. A function that satisfies such requirements is
+                             ∞                                                                                                   
+           (k)
+                             X                  1                               1                 (pk,ℓ )       2∆ϕ + ℓ − ∆
+        M        (∆, ℓ) =                                            =                        ψ                                       .         (5.22)
+                             n=0     ∆ − ∆n,ℓ
+                                                (0) pk,ℓ +1             2pk,ℓ +1 pk,ℓ !                             2
+
+We intentionally avoid introducing an explicit n dependence, so that the analytic n dependence
+                            (0)
+only enters through ∆ → ∆n,ℓ , making the identification ∂∆ → 12 ∂n unambiguous. When closing
+the contour in (5.11), we then have
+                                              X                  h                          i
+                          G (k) (z, z̄) ⊃             Res            ρ(k) (∆, ℓ)K∆,ℓ (z, z̄)
+                                                           (0)
+                                              n,ℓ ∆=∆n,ℓ
+                                              X       1      ∂ pk,ℓ h (k)                   i
+                                          =                          R    (∆, ℓ)K∆,ℓ (z, z̄)
+                                                     pk,ℓ ! ∂∆pk,ℓ                            ∆=∆
+                                                                                                  (0)                                           (5.23)
+                                              n,ℓ                                                                           n,ℓ
+                                               pk,ℓ h                                i
+                                              XX
+                                          =                 A(k)
+                                                             r   (∆, ℓ)∂ r
+                                                                           K
+                                                                        ∆ ∆,ℓ (z, z̄)                             (0)
+                                                                                                                        ,
+                                                                                                            ∆=∆n,ℓ
+                                              n,ℓ r=0
+
+                              (k)
+where the functions Ar              are obtained by expanding the derivative,
+
+                                                                          1               p   −r
+                                          A(k)
+                                           r (∆, ℓ) =                         ∂ k,ℓ                  R(k) .                                     (5.24)
+                                                                 r!(pk,ℓ − r)! ∆
+
+                    (k)
+The functions Ar manifestly satisfy derivative identities among themselves. For instance, at
+k = 1, we have p1,0 = 1 and p1,ℓ>0 = −1, so the only nontrivial relation is
+
+                                                     (1)                            (1)
+                                                    A0 (∆, 0) = ∂∆ A1 (∆, 0) ,                                                                  (5.25)
+
+                                    (0)
+which, once we set ∆ = ∆n,0 , leads to (5.9). At k = 2, instead, we have p2,0 = 2 and p2,ℓ>0 = 1,
+so we get three basic relations,
+                                      
+                                        (2)                (2)
+                                      A0 (∆, ℓ > 0) = ∂∆ A1 (∆, ℓ > 0) ,
+                                      
+                                      
+                                              (2)                             (2)
+                                       A0 (∆, 0) = 12 ∂∆ A1 (∆, 0) ,                                                                            (5.26)
+                                      
+                                       (2)
+                                                         (2)
+                                       A1 (∆, 0) = 2∂∆ A2 (∆, 0) .
+
+                                                                                                                                  (2)
+The derivative relation (5.10) is then a special instance of the identities for Ar                                                        upon setting
+
+
+
+
+                                                                         22
+       (0)
+∆ = ∆n,ℓ , namely
+                              (2)               (2)     2        (2)
+                            A0 (∆, ℓ) = ∂∆ A1 (∆, ℓ) − ∂∆ A2 (∆, ℓ) ,                         (5.27)
+                                                                                   (2)
+and this is the only combination that is valid for all spins simultaneously, with A2 (∆, ℓ > 0) ≡ 0.
+                                                                                   (2)     (2)
+     We should also note that the third relation in (5.26), which connects A1 to A2 , might
+naively suggest that the one-loop CFT data can be fixed from tree-level data alone. This is
+not the case: extracting this relation required knowledge of the full one-loop spectral function.
+                                (2)
+In particular, evaluating ∂∆ A2 at the double-trace poles requires knowing the full analytic
+            (2)
+function A2 near the poles; this analytic function is fixed by the one-loop spectral function
+ρ(2) , not by the tree-level data as determined by ρ(1) . Both the analytic continuation of the
+CFT data and the form of the corresponding derivative relations also depend on the choice of
+split ρ(k) = M(k) R(k) . Our prescription puts only the leading pole at each double-trace location
+into M(k) ; if subleading pole terms are absorbed into M(k) instead, the relations (5.26) acquire
+additional terms proportional to the corresponding Laurent coefficients.
+     We have seen that, with this prescription, derivative relations such as (5.9) and (5.10) are au-
+tomatically built into the spectral representation approach, and reduce to elementary statements
+about residues. The correction terms found in [27, 71] are of course correct in their respective
+contexts, where anomalous dimensions are determined at integer n and a choice of analytic con-
+tinuation must be made independently; the correction terms measure the discrepancy between
+that choice and the continuation defined here by the full spectral function together with our
+prescription for M(k) . A direct comparison between the two approaches would provide an inde-
+pendent validation of the analytic continuation used here and a useful cross-check of our results;
+we leave this for future work.
+
+5.3   Monotonicity properties in spin
+                                                                                (2,t)
+The t-channel contribution to the anomalous dimension can be written as γn,ℓ = (−1)ℓ+1 En,ℓ ,
+where En,ℓ > 0 is a smooth positive function of ℓ > 0. Since the s-channel contributes only at
+ℓ = 0, the full anomalous dimension at ℓ > 0, ℓ even, is
+
+                                         (2)
+                                        γn,ℓ = −2 En,ℓ < 0 .                                  (5.28)
+
+The function En,ℓ is actually a completely monotonic function of ℓ,
+
+                                                ∂r
+                                        (−1)r       En,ℓ > 0 .                                (5.29)
+                                                ∂ℓr
+                                                        P
+We prove this as follows. Expanding the 7 W6 in En,ℓ as k Hk,q (m), where m = n + ℓ, each
+term factorizes as
+                            Λm,q Hk,q (m) = Bk,q Gk (m)Rk,q (m) ,                  (5.30)
+
+
+
+
+                                                      23
+              Γ(2∆ϕ −1) (2∆ϕ −1)k (∆ϕ +q)2k
+with Bk,q =    2∆ϕ −1      (∆ϕ +1/2)k       > 0, and
+
+                                                                       Z 1
+                          Γ(m + 1)            1
+              Gk (m) =                =                                      dt tm (1 − t)2∆ϕ +k−2 ,   (5.31)
+                       Γ(m + 2∆ϕ + k)   Γ(2∆ϕ + k − 1)                  0
+
+which leads to
+                                                   Z 1
+              ∂r
+              r                 1
+        (−1)     Gk (m) =                                   dt | log t|r tm (1 − t)2∆ϕ +k−2 > 0 .      (5.32)
+             ∂mr          Γ(2∆ϕ + k − 1)               0
+
+The remaining factor
+
+                            m + 3∆ϕ − 1 + q + 2k       (m + 2∆ϕ + q − 1/2)k
+            Rk,q (m) =                                                            ,
+                          (m + ∆ϕ + q)(m + 2∆ϕ − 1) (m + ∆ϕ + q + 1)k (m + 2∆ϕ )k
+                                                                      m+χ
+decomposes into a product of elementary fractions of the form (m+α)(m+β)      , each of which is
+completely monotonic whenever χ ≥ min(α, β), a condition verified by inspection. Since prod-
+ucts of completely monotonic functions are completely monotonic, each term Λm,q Hk,q (m) is
+completely monotonic in m. Very-well-poisedness of the 7 W6 guarantees that the series and all
+its m derivatives converge locally uniformly, justifying termwise differentiation and hence the
+                                                                                           (2)
+complete monotonicity of En,ℓ . We conclude that the sign pattern of all ℓ derivatives of γn,ℓ at
+even ℓ > 0 is
+
+                   (2)              (2)                    (2)                (2)
+                  γn,ℓ < 0,     ∂ℓ γn,ℓ > 0,      ∂ℓ2 γn,ℓ < 0,          ∂ℓ3 γn,ℓ > 0,      ... .      (5.33)
+
+    Negativity and monotonicity at n = 0 were argued in [21] using Nachtmann’s theorem and
+                                   (1)
+the lightcone bootstrap. Since γ0,ℓ>0 = 0, the one-loop anomalous dimensions are the leading
+correction to mean field theory for all spinning double-trace operators. Negativity follows from
+                                              (2)
+large-spin asymptotics: the leading term γ0,ℓ ∼ −c/J2∆ϕ , with c > 0, is manifestly negative, and
+monotonicity follows from reflection positivity of the ϕ × ϕ OPE and the even-spin constraint
+[19, 20].
+    Convexity of the twist spectrum was established in [20] via deep inelastic scattering in a
+gapped deformation of the CFT, and the lightcone bootstrap was used there to show that
+the leading large-spin correction to double-trace anomalous dimensions is negative, with its
+sign governed by the positivity of OPE coefficients of minimal-twist t-channel operators. In
+the bulk, −γn,ℓ is proportional to the two-particle scattering phase at impact parameter b ∼
+log ℓ, which must be positive by causality [67, 68, 72]. Negativity, monotonicity, and convexity
+were also verified for specific tree-level single-trace exchanges in [27]. Although in our case the
+boundary theory does not have a gravitational dual, the properties of negativity, monotonicity,
+and convexity established in [20] extend here to an alternating-sign pattern for all derivatives
+with respect to spin.
+    The complete monotonicity of En,ℓ is equivalent to it being the Laplace transform of a
+
+
+
+                                                       24
+non-negative function En (s),
+                                      Z ∞
+                             En,ℓ =         ds e−sℓ En (s) ,   En (s) ≥ 0 .                 (5.34)
+                                       0
+
+The large-spin asymptotics, controlled by the minimal twist 2∆ϕ of the t-channel exchanged
+operators, then fixes the behavior of En (s) near s = 0 by a Tauberian theorem,
+                                                     cn
+                                      En (s) ∼             s2∆ϕ −1 .                        (5.35)
+                                            s→0+   Γ(2∆ϕ )
+
+This argument is structurally identical to the one used in [73] to put the lightcone bootstrap on
+rigorous footing, with the positivity of En playing the role of positivity of OPE coefficients, and
+the large-spin expansion in place of the large-∆ expansion. Given the parallels, it is tempting to
+speculate whether the complete monotonicity of anomalous dimensions is a general consequence
+of unitarity. This would be consistent with the broader observation that complete monotonicity
+appears to be a pervasive property of QFT observables [74]. It would be interesting to formalize
+this further.
+
+Acknowledgments
+
+We thank Ivo Sachs and Weichen Xiao for discussions, as well as Agnese Bissi and Lorenzo Di
+Pietro for comments on the draft. The work of the authors is supported by the Israel Science
+Foundation (ISF) Grant No. 1487/21, by the MOST NSF/BSF physics grant number 2022726,
+and by the BSF grant number 2024187. The work of S.S. is also partially supported by a PhD
+fellowship from the Israel Scholarship Education Foundation.
+
+A    Sketch of the proof of eq. (3.30)
+
+The starting point is (3.27), which, after making everything explicit, becomes
+
+        (2,t)         (−1)ℓ+1 Γ(m + 1)              (∆ϕ − n)n (n + 2∆ϕ − 1)n
+       γn,ℓ (∆ϕ ) =          2
+                        64π      Γ(n + 1) (∆ϕ )n (m + ∆ϕ ) (m + 2∆ϕ − 1)2 (2∆ϕ − 1)m
+                         ∞
+                        X (n + ∆ϕ )p (2∆ϕ − 1)p (∆ϕ )2p (2∆ϕ + 2m + 1)p
+                      ×
+                                 (∆ϕ − n)p (m + 2∆ϕ )2p (m + ∆ϕ + 1)2p
+                        p=0
+                                                                            !                (A.1)
+                                    −n, −n, 1 − n − ∆ϕ , 1 − n − ∆ϕ
+                      × 4 F3                                              ;1
+                               2 − 2n − 2∆ϕ , 1 − n − p − ∆ϕ , p − n + ∆ϕ
+                                                                    !
+                                               m + 1, m + 1, p + 1,
+                      × 7 W6 2∆ϕ + 2m + p;                            .
+                                                 m + ∆ϕ , m + ∆ϕ
+
+
+
+
+                                                    25
+   The first step is to notice that the 4 F3 (1) in (3.25) admits the finite expansion
+                                                                   n
+                                                          !
+                    −n, −n, 1 − ∆ϕ − n, 1 − ∆ϕ − n                X        (∆ϕ + r)p
+        4 F3                                           ; 1 = Nn,p     αn,r           ,                  (A.2)
+               2 − 2∆ϕ − 2n, 1 − ∆ϕ − n − p, ∆ϕ − n + p                    (∆ϕ − r)p
+                                                                  r=0
+
+with
+                                                   (−n)r (n + 2∆ϕ − 1)r (1 − ∆ϕ )r
+                                      αn,r =                                       .                    (A.3)
+                                                             (1)r (∆ϕ )r r!
+After absorbing the prefactor Nn,p and the remaining prefactors into the summand, the anoma-
+lous dimension becomes
+                                                     n
+                                (2,t)       (−1)ℓ+1 X
+                               γn,ℓ (∆ϕ ) =            αn,r Ir .                        (A.4)
+                                             128π 2
+                                                                     r=0
+
+The quantity Ir is most conveniently analyzed by decomposing the very-well-poised 7 F6 appear-
+       b ϕ (∆p , ∆ϕ + m), m = n + ℓ, back into two 4 F3 ’s,
+ing in Ω
+                                                                               !
+                                       1 + m, 1 + m, 1 + p
+                  7 W6   2∆ϕ + 2m + p;
+                                        ∆ϕ + m, ∆ϕ + m
+                                                                                       !
+                              (1)                  1 + p, ∆ϕ + p, ∆ϕ + p, 2∆ϕ + p − 1
+                         =A         (p) 4 F3                                         ;1                 (A.5)
+                                                   2∆ϕ + 2p, m + 2∆ϕ + p, 1 − m + p
+                                                                                          !
+                              (2)                  m + 1, m + ∆ϕ , m + ∆ϕ , m + 2∆ϕ − 1
+                         +A         (p) 4 F3                                            ;1 ,
+                                                    m + 2∆ϕ + p, 2m + 2∆ϕ , 1 + m − p
+
+where A(i) (p) are the appropriate prefactors. Expanding the 4 F3 ’s and rearranging the summa-
+tion in each term we arrive at
+                                        Ir = Ir(1) + Ir(2) ,                               (A.6)
+                                     ∞                                             ∞
+                                     X         Ar (p)                              X Ar (p + m)
+                    Ir(1) = Pm                          ,          Ir(2) = −Pm                      ,   (A.7)
+                                           Γ(1 + p − m)                                  Γ(1 + p)
+                                     p=0                                           p=0
+
+where
+                                                  Γ(2∆ϕ − 1)2
+                                    Pm =                         Γ(m)Γ(1 − m) ,                         (A.8)
+                                               Γ(2∆ϕ )Γ(2∆ϕ + m)
+and
+                                           1                           1
+                                                                          
+                                           2 x (∆ϕ )x (2∆ϕ − 1)x       2 r (1 − ∆ϕ − x)r
+                         Ar (x) =                                                         .             (A.9)
+                                           ∆ϕ + 12 x (2∆ϕ + m)x        1
+                                                                            
+                                                                       2 − x r (1 − ∆ϕ )r
+
+The two terms are separately singular when m ∈ Z≥0 , but their sum is regular. The tempting
+direct truncation of the difference of the two sums is not legitimate before the integer m limit is
+regularized. We therefore change basis before taking this limit. Introduce the triangular kernel
+
+                      q! 12 q
+                           
+                                   (−q)r (1 − ∆ϕ )r ∆ϕ + q − 12 r
+                                                                 
+         Kq,r :=                                                   ,    0 ≤ r ≤ q.          (A.10)
+                 (∆ϕ )q ∆ϕ − 21 q            (1)r 21 r r!
+                                                   
+
+
+
+                                                              26
+It is chosen so that
+                                                      q
+                                                      X
+                                         Bq (x) ≡           Kq,r Ar (x)                       (A.11)
+                                                      r=0
+
+can be summed in closed form. Explicitly,
+                                                            1
+                                                                         
+                                      1
+                                        
+                                      2 x (∆ϕ )x (2∆ϕ − 1)x 2 q
+                                                                (∆ϕ + x)q
+                          Bq (x) =                                      .                    (A.12)
+                                      ∆ϕ + 2 x (2∆ϕ + m)x (∆ϕ )q 12 − x q
+                                           1
+                                             
+
+
+Moreover, the regulated combination
+                                                      q
+                                                      X
+                                               Jq ≡         Kq,r Ir                           (A.13)
+                                                      r=0
+
+can be resummed to a very-well-poised 7 F6 (1). One finds
+                                                                                  !
+                                                      2∆ϕ − 1, ∆ϕ + q, ∆ϕ + q,
+                 Jq = Λm,q 7 W6      m + 3∆ϕ + q − 1;                                 .       (A.14)
+                                                        m + 2∆ϕ + q − 21 , 1
+
+This expression is manifestly regular at non-negative integer m.
+    It remains to express the original coefficients αr in the triangular basis Kq,r . Namely, we
+solve
+                                              Xn
+                                      αn,r =      cn,q Kq,r .                            (A.15)
+                                                      q=r
+
+The triangular inversion gives
+                                                                                 
+                                                                  1 2 ∆ϕ      3
+                                                                    
+                         ∆ϕ − 21 n (−n)q (n + 2∆ϕ − 1)q ∆ϕ − 2 q 2 + 4 q
+                                
+                cn,q =                                                                    .   (A.16)
+                         ∆ϕ + 12 n q! (1)q 3 − ∆ϕ − n
+                                                                   1
+                                                                         ∆ϕ 1 
+                                           2            q
+                                                          n + ∆ ϕ +  2 q    2 − 4     q
+
+Consequently,
+                                         n
+                                         X                  n
+                                                            X
+                                               αn,r Ir =          cn,q Jq .                   (A.17)
+                                         r=0                q=0
+
+Combining this with the overall prefactor gives the desired finite representation (3.30).
+
+References
+
+ [1] J. M. Maldacena, The large n limit of superconformal field theories and supergravity, Adv.
+     Theor. Math. Phys. 2 (1998) 231–252, [hep-th/9711200]. 2
+
+ [2] S. S. Gubser, I. R. Klebanov, and A. M. Polyakov, Gauge theory correlators from
+     non-critical string theory, Phys. Lett. B 428 (1998) 105–114, [hep-th/9802109]. 2
+
+
+
+                                                       27
+ [3] E. Witten, Anti de sitter space and holography, Adv. Theor. Math. Phys. 2 (1998)
+     253–291, [hep-th/9802150]. 2
+
+ [4] C. G. Callan, Jr. and F. Wilczek, Infrared Behavior at Negative Curvature, Nucl. Phys. B
+     340 (1990) 366–386. 2
+
+ [5] I. Heemskerk, J. Penedones, J. Polchinski, and J. Sully, Holography from Conformal Field
+     Theory, JHEP 10 (2009) 079, [arXiv:0907.0151]. 2, 3, 4, 8
+
+ [6] A. L. Fitzpatrick and J. Kaplan, AdS field theory from conformal field theory, JHEP 02
+     (2013) 054, [arXiv:1208.0337]. 2
+
+ [7] D. Carmi, L. Di Pietro, and S. Komatsu, A Study of Quantum Field Theories in AdS at
+     Finite Coupling, JHEP 01 (2019) 200, [arXiv:1810.04185]. 2, 3, 7, 10
+
+ [8] A. L. Fitzpatrick, E. Katz, D. Poland, and D. Simmons-Duffin, Effective Conformal
+     Theory and the Flat-Space Limit of AdS, JHEP 07 (2011) 023, [arXiv:1007.2412]. 3
+
+ [9] G. Mack, D-independent representation of Conformal Field Theories in D dimensions via
+     transformation to auxiliary Dual Resonance Models. Scalar amplitudes, arXiv:0907.2407.
+     3
+
+[10] J. Penedones, Writing CFT correlation functions as AdS scattering amplitudes, JHEP 03
+     (2011) 025, [arXiv:1011.1485]. 3, 7
+
+[11] A. L. Fitzpatrick and J. Kaplan, Analyticity and the Holographic S-Matrix, JHEP 10
+     (2012) 127, [arXiv:1111.6972]. 3
+
+[12] L. Rastelli and X. Zhou, Mellin amplitudes for AdS5 × S 5 , Phys. Rev. Lett. 118 (2017),
+     no. 9 091602, [arXiv:1608.06624]. 3
+
+[13] E. Y. Yuan, Loops in the Bulk, arXiv:1710.01361. 3
+
+[14] E. Y. Yuan, Simplicity in AdS perturbative dynamics, arXiv:1801.07283. 3
+
+[15] Z. Huang, B. Wang, E. Y. Yuan, and X. Zhou, Simplicity of AdS super Yang-Mills at one
+     loop, JHEP 01 (2024) 190, [arXiv:2309.14413]. 3
+
+[16] K. Ghosh, Polyakov-Mellin Bootstrap for AdS loops, JHEP 02 (2020) 006,
+     [arXiv:1811.00504]. 3
+
+[17] A. L. Fitzpatrick and J. Kaplan, Unitarity and the Holographic S-Matrix, JHEP 10 (2012)
+     032, [arXiv:1112.4845]. 3, 4, 8
+
+[18] M. S. Costa, V. Goncalves, and J. Penedones, Conformal Regge theory, JHEP 12 (2012)
+     091, [arXiv:1209.4355]. 3, 17
+
+
+                                              28
+[19] A. L. Fitzpatrick, J. Kaplan, D. Poland, and D. Simmons-Duffin, The analytic bootstrap
+     and AdS superhorizon locality, JHEP 12 (2013) 004, [arXiv:1212.3616]. 3, 16, 24
+
+[20] Z. Komargodski and A. Zhiboedov, Convexity and Liberation at Large Spin, JHEP 11
+     (2013) 140, [arXiv:1212.4103]. 3, 4, 16, 24
+
+[21] O. Aharony, L. F. Alday, A. Bissi, and E. Perlmutter, Loops in AdS from Conformal Field
+     Theory, JHEP 07 (2017) 036, [arXiv:1612.03891]. 3, 8, 16, 17, 24
+
+[22] L. F. Alday, A. Bissi, and T. Lukowski, Large spin systematics in CFT, JHEP 11 (2015)
+     101, [arXiv:1502.07707]. 3, 16
+
+[23] A. Kaviraj, K. Sen, and A. Sinha, Analytic bootstrap at large spin, JHEP 11 (2015) 083,
+     [arXiv:1502.01437]. 3, 16
+
+[24] A. Kaviraj, K. Sen, and A. Sinha, Universal anomalous dimensions at large spin and large
+     twist, JHEP 07 (2015) 026, [arXiv:1504.00772]. 3, 16
+
+[25] L. F. Alday, Large Spin Perturbation Theory for Conformal Field Theories, Phys. Rev.
+     Lett. 119 (2017), no. 11 111601, [arXiv:1611.01500]. 3, 16
+
+[26] S. Caron-Huot, Analyticity in spin in conformal theories, JHEP 09 (2017) 078,
+     [arXiv:1703.00278]. 3, 16
+
+[27] L. F. Alday, A. Bissi, and E. Perlmutter, Holographic reconstruction of AdS exchanges
+     from crossing symmetry, JHEP 08 (2017) 147, [arXiv:1705.02318]. 3, 20, 23, 24
+
+[28] F. Aprile, J. M. Drummond, P. Heslop, and H. Paul, Quantum gravity from conformal
+     field theory, JHEP 01 (2018) 035, [arXiv:1706.02822]. 3
+
+[29] S. Albayrak, D. Meltzer, and D. Poland, More Analytic Bootstrap: Nonperturbative Effects
+     and Fermions, JHEP 08 (2019) 040, [arXiv:1904.00032]. 3
+
+[30] Z. Huang, B. Wang, E. Y. Yuan, and X. Zhou, AdS super gluon scattering up to two loops:
+     a position space approach, JHEP 07 (2023) 053, [arXiv:2301.13240]. 3
+
+[31] A. Bissi, G. Fardelli, and M. R. Khansari, Bubbles in AdS, JHEP 03 (2026) 246,
+     [arXiv:2509.13036]. 3
+
+[32] S. Giombi, C. Sleight, and M. Taronna, Spinning AdS Loop Diagrams: Two Point
+     Functions, JHEP 06 (2018) 030, [arXiv:1708.08404]. 3
+
+[33] C. Sleight and M. Taronna, Spinning Witten Diagrams, JHEP 06 (2017) 100,
+     [arXiv:1702.08619]. 3
+
+
+
+
+                                             29
+[34] C. Sleight and M. Taronna, Spinning Mellin Bootstrap: Conformal Partial Waves,
+     Crossing Kernels and Applications, Fortsch. Phys. 66 (2018), no. 8-9 1800038,
+     [arXiv:1804.09334]. 3
+
+[35] C. Sleight and M. Taronna, Anomalous dimensions from crossing kernels, JHEP 11
+     (2018) 089, [arXiv:1807.05941]. 3
+
+[36] J. Liu, E. Perlmutter, V. Rosenhaus, and D. Simmons-Duffin, d-dimensional SYK, AdS
+     Loops, and 6j Symbols, JHEP 03 (2019) 052, [arXiv:1808.00612]. 3, 11, 12
+
+[37] D. Meltzer, E. Perlmutter, and A. Sivaramakrishnan, Unitarity Methods in AdS/CFT,
+     JHEP 03 (2020) 061, [arXiv:1912.09521]. 3, 11
+
+[38] D. Ponomarev, From bulk loops to boundary large-n expansion, JHEP 01 (2020) 154,
+     [arXiv:1908.03974]. 3
+
+[39] D. Carmi, Loops in AdS: From the Spectral Representation to Position Space, JHEP 06
+     (2020) 049, [arXiv:1910.14340]. 3, 10
+
+[40] D. Carmi, Loops in AdS: From the spectral representation to position space. part II, JHEP
+     07 (2021) 186, [arXiv:2104.10500]. 3
+
+[41] D. Carmi, Loops in AdS: From the spectral representation to position space. part III,
+     JHEP 08 (2024) 193, [arXiv:2402.02481]. 3
+
+[42] S. Albayrak, D. Meltzer, and D. Poland, The Inversion Formula and 6j Symbol for 3d
+     Fermions, JHEP 09 (2020) 148, [arXiv:2006.07374]. 3
+
+[43] J. Dujava and P. Vaško, Finite-coupling spectrum of O(N) model in AdS, JHEP 12 (2025)
+     036, [arXiv:2503.16345]. 3
+
+[44] E. T. Akhmedov, U. Moschella, and F. K. Popov, Ultraviolet phenomena in AdS
+     self-interacting quantum field theory, JHEP 03 (2018) 183, [arXiv:1802.02955]. 3
+
+[45] S. L. Cacciatori, H. Epstein, and U. Moschella, Loops in anti de sitter space, JHEP 08
+     (2024) 109, [arXiv:2403.13142]. 3
+
+[46] I. Bertan and I. Sachs, Loops in anti-de sitter space, Phys. Rev. Lett. 121 (2018) 101601,
+     [arXiv:1804.01880]. 3
+
+[47] I. Bertan, I. Sachs, and E. D. Skvortsov, Quantum ϕ4 theory in AdS4 and its CFT dual,
+     JHEP 02 (2019) 099, [arXiv:1810.00907]. 3
+
+[48] T. Heckelbacher, I. Sachs, E. D. Skvortsov, and P. Vanhove, Analytical evaluation of AdS4
+     Witten diagrams as flat-space multi-loop Feynman integrals, JHEP 08 (2022) 052,
+     [arXiv:2201.09626]. 3
+
+
+                                              30
+[49] W. Xiao and I. Sachs, The 2-dimensional dual of ϕ4 in AdS3 , arXiv:2602.05750. 3, 16,
+     17
+
+[50] R. Ciccone, F. De Cesare, L. Di Pietro, and M. Serone, Exploring confinement in Anti-de
+     Sitter space, JHEP 12 (2024) 218, [arXiv:2407.06268]. [Erratum: JHEP 06, 037 (2025)].
+     3, 9
+
+[51] R. Ciccone, F. De Cesare, L. Di Pietro, and M. Serone, QCD in AdS, JHEP 04 (2026)
+     130, [arXiv:2511.04752]. 3
+
+[52] Ankur, L. Di Pietro, V. Gorbenko, S. Komatsu, and V. Sacchi, Dressing and Screening in
+     Anti-de Sitter, arXiv:2601.04321. 3
+
+[53] S. Raju, BCFW for Witten Diagrams, Phys. Rev. Lett. 106 (2011) 091601,
+     [arXiv:1011.0780]. 3
+
+[54] S. Raju, Recursion Relations for AdS/CFT Correlators, Phys. Rev. D 83 (2011) 126002,
+     [arXiv:1102.4724]. 3
+
+[55] S. Albayrak and S. Kharel, Towards the higher point holographic momentum space
+     amplitudes, JHEP 02 (2019) 040, [arXiv:1810.12459]. 3
+
+[56] S. Albayrak, C. Chowdhury, and S. Kharel, New relation for Witten diagrams, JHEP 10
+     (2019) 274, [arXiv:1904.10043]. 3
+
+[57] S. Albayrak and S. Kharel, Spinning loop amplitudes in anti–de Sitter space, Phys. Rev. D
+     103 (2021), no. 2 026004, [arXiv:2006.12540]. 3
+
+[58] S. Albayrak, C. Chowdhury, and S. Kharel, Study of momentum space scalar amplitudes
+     in AdS spacetime, Phys. Rev. D 101 (2020), no. 12 124043, [arXiv:2001.06777]. 3
+
+[59] S. Albayrak, S. Kharel, and X. Wang, Momentum-space formulae for AdS correlators for
+     diverse theories in diverse dimensions, JHEP 07 (2024) 281, [arXiv:2312.02154]. 3
+
+[60] M. S. Costa, J. Penedones, D. Poland, and S. Rychkov, Spinning Conformal Correlators,
+     JHEP 11 (2011) 071, [arXiv:1107.3554]. 5
+
+[61] M. S. Costa, V. Gonçalves, and J. Penedones, Spinning AdS Propagators, JHEP 09 (2014)
+     064, [arXiv:1404.5625]. 5
+
+[62] I. R. Klebanov and E. Witten, AdS/CFT correspondence and symmetry breaking, Nucl.
+     Phys. B 556 (1999) 89–114, [hep-th/9905104]. 9
+
+[63] D. B. Kaplan, J.-W. Lee, D. T. Son, and M. A. Stephanov, Conformality Lost, Phys. Rev.
+     D 80 (2009) 125005, [arXiv:0905.4752]. 9
+
+
+
+                                             31
+[64] V. Gorbenko, S. Rychkov, and B. Zan, Walking, Weak first-order transitions, and
+     Complex CFTs, JHEP 10 (2018) 108, [arXiv:1807.11512]. 9
+
+[65] E. Lauria, M. N. Milam, and B. C. van Rees, Perturbative RG flows in AdS. An étude,
+     JHEP 03 (2024) 005, [arXiv:2309.10031]. 9
+
+[66] W. N. Bailey, Generalized Hypergeometric Series. No. 32 in Cambridge Tracts in
+     Mathematics and Mathematical Physics. Cambridge University Press, Cambridge, 1935.
+     12
+
+[67] L. Cornalba, M. S. Costa, J. Penedones, and R. Schiappa, Eikonal Approximation in
+     AdS/CFT: Conformal Partial Waves and Finite N Four-Point Functions, Nucl. Phys. B
+     767 (2007) 327–351, [hep-th/0611123]. 17, 24
+
+[68] L. Cornalba, M. S. Costa, and J. Penedones, Eikonal approximation in AdS/CFT:
+     Resumming the gravitational loop expansion, JHEP 09 (2007) 037, [arXiv:0707.0120].
+     17, 24
+
+[69] M. Gary, S. B. Giddings, and J. Penedones, Local bulk S-matrix elements and CFT
+     singularities, Phys. Rev. D 80 (2009) 085005, [arXiv:0903.4437]. 17
+
+[70] J. Maldacena, D. Simmons-Duffin, and A. Zhiboedov, Looking for a bulk point, JHEP 01
+     (2017) 013, [arXiv:1509.03612]. 17
+
+[71] P. Ferrero, K. Ghosh, A. Sinha, and A. Zahed, Crossing symmetry, transcendentality and
+     the Regge behaviour of 1d CFTs, JHEP 07 (2020) 170, [arXiv:1911.12388]. 20, 23
+
+[72] X. O. Camanho, J. D. Edelstein, J. Maldacena, and A. Zhiboedov, Causality Constraints
+     on Corrections to the Graviton Three-Point Coupling, JHEP 02 (2016) 020,
+     [arXiv:1407.5597]. 24
+
+[73] J. Qiao and S. Rychkov, A tauberian theorem for the conformal bootstrap, JHEP 12
+     (2017) 119, [arXiv:1709.00008]. 25
+
+[74] J. Henn and P. Raman, Positivity properties of scattering amplitudes, JHEP 04 (2025)
+     150, [arXiv:2407.05755]. 25
+
+
+
+
+                                             32
+
