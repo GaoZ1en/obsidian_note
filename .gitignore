@@ -4,10 +4,33 @@
 # Ignore attachments and media files
 /Attachments/
 /Literature Notes/articles/
-/**/*.jpg
-/**/*.jpeg
-/**/*.JPG
-/**/*.JPEG
+
+# Ignore common raster, vector, and layered image formats (case-insensitive)
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.[jJ][pP][eE]
+*.[jJ][fF][iI][fF]
+*.[pP][nN][gG]
+*.[aA][pP][nN][gG]
+*.[gG][iI][fF]
+*.[bB][mM][pP]
+*.[dD][iI][bB]
+*.[tT][iI][fF]
+*.[tT][iI][fF][fF]
+*.[wW][eE][bB][pP]
+*.[aA][vV][iI][fF]
+*.[hH][eE][iI][cC]
+*.[hH][eE][iI][fF]
+*.[jJ][xX][lL]
+*.[sS][vV][gG]
+*.[sS][vV][gG][zZ]
+*.[eE][pP][sS]
+*.[iI][cC][oO]
+*.[cC][uU][rR]
+*.[pP][sS][dD]
+*.[pP][sS][bB]
+*.[dD][nN][gG]
+*.[rR][aA][wW]
 
 # Ignore json data files
 /**/*.json
@@ -34,7 +57,6 @@
 /**/__pycache__/
 /**/*.npz
 /**/requirements.txt
-/**/*.png
 
 # Ignore local solver projects
 tools/eternal-solitaire-solver/
