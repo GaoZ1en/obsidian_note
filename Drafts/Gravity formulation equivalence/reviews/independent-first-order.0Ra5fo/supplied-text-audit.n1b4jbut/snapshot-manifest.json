@@ -1,0 +1,23 @@
+{
+  "sourcePath": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/14 Geometric CS Gaussian map and regulator.md",
+  "sourceWholeFileSHA256": "43da890c03b57a494e70c62f4c92b53c4b08a67668399ef9ee2273622fb3ffc8",
+  "sourceBytes": 30938,
+  "capturedAtUTC": "2026-10-30T21:56:28.515033+00:00",
+  "scope": "Only sections 1-2 and 3.1 retained and audited; full source hashed only for version identification; no later theorem audited.",
+  "sections": [
+    {
+      "file": "source-sections-1-2.md",
+      "sourceFirstLine": 20,
+      "sourceLastLine": 127,
+      "sha256": "763ca7768d58c0ac6c35a583fef848e4504c4c8c3a469c3b17404c975a80f3b3",
+      "bytes": 5903
+    },
+    {
+      "file": "source-section-3.1.md",
+      "sourceFirstLine": 189,
+      "sourceLastLine": 202,
+      "sha256": "3a09d3d1b24854b98c79e391174bdd1ef6a53a70ebbb79e9dcefe97cafb14fbb",
+      "bytes": 1249
+    }
+  ]
+}

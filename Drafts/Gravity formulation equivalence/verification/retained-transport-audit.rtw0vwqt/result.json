@@ -1,0 +1,530 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "local links and line bounds",
+      "passed": true
+    },
+    {
+      "label": "all frozen deliverable hashes",
+      "passed": true
+    },
+    {
+      "label": "source and actual-return byte identities",
+      "passed": true
+    },
+    {
+      "label": "seven successful result label counts",
+      "passed": true
+    },
+    {
+      "label": "actual success diagnostics and string hashes",
+      "passed": true
+    },
+    {
+      "label": "sensitive nonzero UV and gravitational coverage",
+      "passed": true
+    },
+    {
+      "label": "synthesis delimiters and explicit scope",
+      "passed": true
+    }
+  ],
+  "details": {
+    "local links and line bounds": {
+      "documents": 16,
+      "links": 666,
+      "failures": []
+    },
+    "all frozen deliverable hashes": {
+      "count": 48,
+      "records": [
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/proof.md",
+          "expected": "45ae1dbff763b10d770f3033cf53abce793573d2edfe0142bd3b642249912711",
+          "actual": "45ae1dbff763b10d770f3033cf53abce793573d2edfe0142bd3b642249912711",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inputs_and_diagnostics.md",
+          "expected": "6f00ee2a342d931f29fb34d38e60995be6c38980e172af88d9f4b9967edbba0a",
+          "actual": "6f00ee2a342d931f29fb34d38e60995be6c38980e172af88d9f4b9967edbba0a",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_exterior_check.py",
+          "expected": "26a10a76594e9abbaf2fb7b0c4c3a2be9356d9b33aac56faefb642dc065938af",
+          "actual": "26a10a76594e9abbaf2fb7b0c4c3a2be9356d9b33aac56faefb642dc065938af",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json",
+          "expected": "b3fcd3bf93a3cdeedc6b800641e8113adcf186e9ecd8a28ee3151c31dfe142af",
+          "actual": "b3fcd3bf93a3cdeedc6b800641e8113adcf186e9ecd8a28ee3151c31dfe142af",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.txt",
+          "expected": "4c24821cd9b0dc4004d7715948951873121686f1b05919c0bbccfa9aa55c1727",
+          "actual": "4c24821cd9b0dc4004d7715948951873121686f1b05919c0bbccfa9aa55c1727",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_kernel_transport.json",
+          "expected": "0d53ea5e70fb5795c54a4ce15f93a51189201d8a82ca62360bfa452359b07ee3",
+          "actual": "0d53ea5e70fb5795c54a4ce15f93a51189201d8a82ca62360bfa452359b07ee3",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_sympy_check.py",
+          "expected": "1fcb72db9601c9acf0afcb32d37557a1ac2298e9ef558f87f81b8b62bea6c68c",
+          "actual": "1fcb72db9601c9acf0afcb32d37557a1ac2298e9ef558f87f81b8b62bea6c68c",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json",
+          "expected": "73bebae2359d5da7212f120f1f82fd3db3b74a28a4eb27ed0a023eee3a91c1c0",
+          "actual": "73bebae2359d5da7212f120f1f82fd3db3b74a28a4eb27ed0a023eee3a91c1c0",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.txt",
+          "expected": "5224a37cae4a52ff76a9d6da09e94d0e66a5fbb744397f2ebfaca3b949accbc8",
+          "actual": "5224a37cae4a52ff76a9d6da09e94d0e66a5fbb744397f2ebfaca3b949accbc8",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_kernel_transport.json",
+          "expected": "cfcc77109216624b95d4dedcb4f2724623c39661c57d310f6cf04c288a6cead2",
+          "actual": "cfcc77109216624b95d4dedcb4f2724623c39661c57d310f6cf04c288a6cead2",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_orientation_check.py",
+          "expected": "77213360359b293b1c90ba840a68e4b6dc14bca7565e42a3f9784ee076d78cdd",
+          "actual": "77213360359b293b1c90ba840a68e4b6dc14bca7565e42a3f9784ee076d78cdd",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_actual_output.json",
+          "expected": "6f7051ef594060e07fd6dc7662f52ec3a8092d78a6c3dd1b06e0261b8462e2ad",
+          "actual": "6f7051ef594060e07fd6dc7662f52ec3a8092d78a6c3dd1b06e0261b8462e2ad",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_actual_output.txt",
+          "expected": "24f88189b9fa9b1ed7bf5de00206bc533a8ae3239acfd53de0a04b31c1e85532",
+          "actual": "24f88189b9fa9b1ed7bf5de00206bc533a8ae3239acfd53de0a04b31c1e85532",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_kernel_transport.json",
+          "expected": "fb4208f9245f1c754a39e41fe74171c5200e5fac163f2f29c4464b336be66889",
+          "actual": "fb4208f9245f1c754a39e41fe74171c5200e5fac163f2f29c4464b336be66889",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/freeze_evidence.py",
+          "expected": "89b01d05cf8fb996091e40db6a4bb1c6995fb2ce638095cc1d99657c6fefa3cf",
+          "actual": "89b01d05cf8fb996091e40db6a4bb1c6995fb2ce638095cc1d99657c6fefa3cf",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/freeze_validation.txt",
+          "expected": "f7fba74ec1110371c2686a50d7bc0606ded44a8f0abbf07ec324a346a713f987",
+          "actual": "f7fba74ec1110371c2686a50d7bc0606ded44a8f0abbf07ec324a346a713f987",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/REPORT.md",
+          "expected": "e723e3ab13fe937b50079a20df9ba064d299d16acac050541b52bd97024ad401",
+          "actual": "e723e3ab13fe937b50079a20df9ba064d299d16acac050541b52bd97024ad401",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/EVIDENCE.md",
+          "expected": "42f1f050638eabcfded9253149779de19798c646d47f1ba391750fc1e421598c",
+          "actual": "42f1f050638eabcfded9253149779de19798c646d47f1ba391750fc1e421598c",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/source16.md",
+          "expected": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3",
+          "actual": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/source18.md",
+          "expected": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b",
+          "actual": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/source14-boundary-excerpt.md",
+          "expected": "e0e549d08f9fbc3d25ddc4da5ab05e02fc84c1b828738e23beb1e0ca93b17183",
+          "actual": "e0e549d08f9fbc3d25ddc4da5ab05e02fc84c1b828738e23beb1e0ca93b17183",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/cps-convention-excerpt.md",
+          "expected": "5912549e547d0f219d21f790b3d5cb4562fe2dde590a0b36dfc143d9ed42d069",
+          "actual": "5912549e547d0f219d21f790b3d5cb4562fe2dde590a0b36dfc143d9ed42d069",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/root-rules.md",
+          "expected": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7",
+          "actual": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/article-rules.md",
+          "expected": "3b556cdef13481e8cbec655ef90cd03d4b81448869d070cba584d3e18093002a",
+          "actual": "3b556cdef13481e8cbec655ef90cd03d4b81448869d070cba584d3e18093002a",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/source-manifest.json",
+          "expected": "1406c5b223472b8befdca6ae20bdedc0b374c004638de36445d5e22227dc9147",
+          "actual": "1406c5b223472b8befdca6ae20bdedc0b374c004638de36445d5e22227dc9147",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/freeze_sources.py",
+          "expected": "f4b337597c9e6ccaa5055aabdeb50fd6b17b56a6d13779b4bbafe067cc35c6fb",
+          "actual": "f4b337597c9e6ccaa5055aabdeb50fd6b17b56a6d13779b4bbafe067cc35c6fb",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/freeze.stdout.txt",
+          "expected": "09e7c0475f0ae239db63ec8993f4ad9a9db065077bd9349850f56fa67c3fe02f",
+          "actual": "09e7c0475f0ae239db63ec8993f4ad9a9db065077bd9349850f56fa67c3fe02f",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/freeze.stderr.txt",
+          "expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-hinfty-bv-20261031.J0xtad/freeze_final.py",
+          "expected": "8306a12189add5abe9c3d99f15f2e0344488ead930fd07dbbcc93e9a2b848900",
+          "actual": "8306a12189add5abe9c3d99f15f2e0344488ead930fd07dbbcc93e9a2b848900",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/derivation.md",
+          "expected": "cfff6455bbc6ef6cebcd15ab7ecf03e91553656546b4acb6bf9af2a2034f60a5",
+          "actual": "cfff6455bbc6ef6cebcd15ab7ecf03e91553656546b4acb6bf9af2a2034f60a5",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/check_map_path.py",
+          "expected": "924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b",
+          "actual": "924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/results.json",
+          "expected": "6d7d1da173cfc10579cca62105a56ee16482474904228ee7a245a72911428a10",
+          "actual": "6d7d1da173cfc10579cca62105a56ee16482474904228ee7a245a72911428a10",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/actual_diagnostics.txt",
+          "expected": "2470716718ca64c0b8196c2cbc50a98608ddfeb57697b62714f1c01015987d26",
+          "actual": "2470716718ca64c0b8196c2cbc50a98608ddfeb57697b62714f1c01015987d26",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/exact_key_expressions.txt",
+          "expected": "db1199270a44ee8bca6331b0758ad094d6eaefeb59c2019c201d0448b8d307bf",
+          "actual": "db1199270a44ee8bca6331b0758ad094d6eaefeb59c2019c201d0448b8d307bf",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/successful_tool_return.json",
+          "expected": "3600c8d90d489ddeb7034661a12bf03c83f232db8fbb7931682d5f8a4c1ed2cb",
+          "actual": "3600c8d90d489ddeb7034661a12bf03c83f232db8fbb7931682d5f8a4c1ed2cb",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/successful_tool_return_readable.txt",
+          "expected": "8ed9845ce501cb242ce22857aa61a9154037f04807b32f3aea0698f7e1f65325",
+          "actual": "8ed9845ce501cb242ce22857aa61a9154037f04807b32f3aea0698f7e1f65325",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/evidence_log.md",
+          "expected": "b1a992006ba647850a9b8fb726b26ea14151dd69ebecea9dd0a5518853e827de",
+          "actual": "b1a992006ba647850a9b8fb726b26ea14151dd69ebecea9dd0a5518853e827de",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/audit.md",
+          "expected": "2d075d6859ed8575d40025ac697deadf11559e775fe2ff28bee65bfc4c7178f1",
+          "actual": "2d075d6859ed8575d40025ac697deadf11559e775fe2ff28bee65bfc4c7178f1",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/check_supplied_note19.py",
+          "expected": "e2bbf84e654d2a6780fa3072357f960488f0a31242f2dd2de3dbcb52d2b6171d",
+          "actual": "e2bbf84e654d2a6780fa3072357f960488f0a31242f2dd2de3dbcb52d2b6171d",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/audit_results.json",
+          "expected": "b0dfa6105cfe393eebd6a816317dfffa1e5174e28495b85d836946d2f50f9db0",
+          "actual": "b0dfa6105cfe393eebd6a816317dfffa1e5174e28495b85d836946d2f50f9db0",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/audit_actual_diagnostics.txt",
+          "expected": "66f1c29cd171cc4564e0f5c36b3c0b41fefaa785299e6a307e7a6619d86faedd",
+          "actual": "66f1c29cd171cc4564e0f5c36b3c0b41fefaa785299e6a307e7a6619d86faedd",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/successful_tool_return.json",
+          "expected": "c64e618c4e7fec65e3886385e5e6782eb68cca1194f89074286702f6aa44446e",
+          "actual": "c64e618c4e7fec65e3886385e5e6782eb68cca1194f89074286702f6aa44446e",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/supplied-note19-snapshot.md",
+          "expected": "c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9",
+          "actual": "c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/source.py",
+          "expected": "5fc9bfd8df8c6c2c31e9c97809b4413148caf4f579c7dfec488c44859d3e65fb",
+          "actual": "5fc9bfd8df8c6c2c31e9c97809b4413148caf4f579c7dfec488c44859d3e65fb",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/result.json",
+          "expected": "a1fccddc97b493d0052f8cae2b1f6fbc0ff6575bac3a08ebee883caf1e064ac4",
+          "actual": "a1fccddc97b493d0052f8cae2b1f6fbc0ff6575bac3a08ebee883caf1e064ac4",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/expressions.txt",
+          "expected": "18d66f89bc53d5547fbbec93b8aed269dfb7af03e0d1d69fdd74481945e7bf78",
+          "actual": "18d66f89bc53d5547fbbec93b8aed269dfb7af03e0d1d69fdd74481945e7bf78",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/source.sha256",
+          "expected": "20fe9f425bf60b98ddf04f47a223113c059f6f9ea23bd917e97843c8d7cc323d",
+          "actual": "20fe9f425bf60b98ddf04f47a223113c059f6f9ea23bd917e97843c8d7cc323d",
+          "passed": true
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/actual-server-return.json",
+          "expected": "b89e149163cd19d95d8c1760ff7c5118138c68d8929cae1c1e43d9dc8ec89b2e",
+          "actual": "b89e149163cd19d95d8c1760ff7c5118138c68d8929cae1c1e43d9dc8ec89b2e",
+          "passed": true
+        }
+      ]
+    },
+    "source and actual-return byte identities": [
+      {
+        "copy": "source.py",
+        "same_bytes": true
+      },
+      {
+        "copy": "result.json",
+        "same_bytes": true
+      },
+      {
+        "copy": "expressions.txt",
+        "same_bytes": true
+      },
+      {
+        "copy": "source.sha256",
+        "same_bytes": true
+      },
+      {
+        "copy": "actual-server-return.json",
+        "same_bytes": true
+      },
+      {
+        "copy": "working mathematical source",
+        "same_bytes": true
+      },
+      {
+        "copy": "input note16 unchanged",
+        "same_bytes": true
+      },
+      {
+        "copy": "input note18 unchanged",
+        "same_bytes": true
+      },
+      {
+        "copy": "supplied snapshot identity",
+        "same_bytes": true
+      },
+      {
+        "copy": "supplied snapshot v2 identity",
+        "same_bytes": true
+      }
+    ],
+    "seven successful result label counts": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/result.json",
+        "actual": 18,
+        "expected": 18,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/initial-success-result.json",
+        "actual": 15,
+        "expected": 15,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json",
+        "actual": 217,
+        "expected": 217,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json",
+        "actual": 212,
+        "expected": 212,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_actual_output.json",
+        "actual": 185,
+        "expected": 185,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/results.json",
+        "actual": 127,
+        "expected": 127,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/audit_results.json",
+        "actual": 8,
+        "expected": 8,
+        "passed": true
+      }
+    ],
+    "actual success diagnostics and string hashes": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/actual-server-return.json",
+        "passed": true,
+        "warning_count": 0,
+        "warnings": [],
+        "elapsed_ms": 3595,
+        "stdout": "{\"export\": \"/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x\", \"all_passed\": true, \"checks\": 18, \"counts\": {\"F3_exterior_terms\": 21, \"F4_exterior_terms\": 18, \"F5_exterior_terms\": 1, \"G4_exterior_terms\": 57}}\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/initial-success-tool-envelope.json",
+        "passed": true,
+        "warning_count": 0,
+        "warnings": [],
+        "elapsed_ms": 3794,
+        "stdout": "{\"export\": \"/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-qbru2per\", \"all_passed\": true, \"checks\": 15, \"counts\": {\"F3_exterior_terms\": 21, \"F4_exterior_terms\": 18, \"F5_exterior_terms\": 1, \"G4_exterior_terms\": 57}}\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_kernel_transport.json",
+        "passed": true,
+        "warning_count": 0,
+        "warnings": [],
+        "elapsed_ms": 6889,
+        "stdout": "Sage native exterior implementation; version 10.9\n217/217 exact residual checks passed.\nS_t = e^(t*u)*p*c + s*d + 2*b*r*t*c*d + 2*r*d*v + 1/2*r^4 + r^2*u + 1/2*u^2\ny_t = (-t*e^(-r^2*t))*p*c - r^2\nS_eff_t = (e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d\ngamma_t = -b*r^2*c\nUV bracket on graph = 2*b*r*c*d\nnaive projection defect = -2*r*t*e^(r^2*t)*c\nS_eff quartic = -r^2*t*p*c + 2*b*r*t*c*d\nfull UV conjugate derivative on graph = -2*r*d\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_kernel_transport.json",
+        "passed": true,
+        "warning_count": 6,
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          }
+        ],
+        "elapsed_ms": 8062,
+        "stdout": "Independent bitmask exterior implementation; SymPy 1.14.0\n212/212 exact residual checks passed.\nS_t = ((r**2 + u)**2/2) + (exp(t*u))*p*c + (1)*s*d + (2*b*r*t)*c*d + (2*r)*d*v\ny_t = (-r**2) + (-t*exp(-r**2*t))*p*c\nS_eff_t = (exp(-r**2*t))*p*c + (1)*s*d + (2*b*r*t)*c*d\ngamma_t = (-b*r**2)*c\nUV bracket on graph = (2*b*r)*c*d\nnaive projection defect = (-2*r*t*exp(r**2*t))*c\nUV Hessian = (1) + (t**2*exp(-r**2*t))*p*c\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_kernel_transport.json",
+        "passed": true,
+        "warning_count": 0,
+        "warnings": [],
+        "elapsed_ms": 6855,
+        "stdout": "185/185 exact inverse-orientation residuals passed.\nRight-projection defect = (2*r*t*e^(-r^2*t))*c\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/successful_tool_return.json",
+        "passed": true,
+        "warning_count": 1,
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "elapsed_ms": 525530,
+        "stdout": "{\n  \"sage_version\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"fixture\": \"complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell\",\n  \"kappa\": \"indeterminate kap over QQ(i); exact rational functions\",\n  \"coordinates\": 48,\n  \"odd_generators\": 24,\n  \"even_fluctuation_variables\": 24,\n  \"all_passed\": true,\n  \"term_counts\": {\n    \"S2\": 57,\n    \"Sc3\": 108,\n    \"Sg3\": 147,\n    \"G3\": 36,\n    \"G4\": 108,\n    \"cubic_bridge\": 126,\n    \"quartic_G4S2\": 456\n  },\n  \"elapsed_seconds\": 514.9160530567169\n}\nFAILED LABELS: []\nCHECK COUNT: 127\nOUTPUT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou\n"
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/successful_tool_return.json",
+        "passed": true,
+        "warning_count": 0,
+        "warnings": [],
+        "elapsed_ms": 9559,
+        "stdout": "{\n  \"audit_kind\": \"post-freeze supplied-note19 audit, not independent initial derivation\",\n  \"supplied_note_sha256\": \"c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9\",\n  \"frozen_engine_sha256\": \"924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b\",\n  \"checks\": [\n    {\n      \"label\": \"note19 eq16 component ordering and normalization\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"note19 eq15 cubic right generator\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"note19 exact determinant-cleared eq2 equals eq13\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"determinant-cleared resolvent cubic jet\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"determinant-cleared resolvent quartic jet\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"omitting 2F4 in note19 eq16 is detected\",\n      \"passed\": true,\n      \"nonzero_terms\": 18\n    },\n    {\n      \"label\": \"opposite coframe-resolvent sign is detected at degree4\",\n      \"passed\": true,\n      \"nonzero_terms\": 108\n    },\n    {\n      \"label\": \"missing half in logarithm is detected\",\n      \"passed\": true,\n      \"nonzero_terms\": 108\n    }\n  ],\n  \"all_passed\": true,\n  \"elapsed_seconds\": 2.850371837615967,\n  \"Gamma13_numerator_terms\": 348,\n  \"Gamma2_numerator_terms\": 348\n}\n"
+      }
+    ],
+    "synthesis delimiters and explicit scope": {
+      "\\[": 40,
+      "\\]": 40,
+      "\\(": 162,
+      "\\)": 162
+    }
+  },
+  "synthesis_sha256": "3457e93cd555e5645d25edb09bbed82094efd7b775f9e9368d71a87e7d63220b",
+  "source_sha256": "ddc64e8175cd7d768ba453a870200d88e3b1e9c78bf222cc13f419dcd6468d7e",
+  "scope": "static archive, exact-copy, diagnostic and declared-coverage checks; no mathematical kernel rerun, no certification of historical line-anchor sentence identities"
+}

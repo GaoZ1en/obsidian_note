@@ -1,0 +1,53 @@
+{
+  "scope": "Archival byte equality only; no mathematical recomputation",
+  "files": [
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-trace-norm-bridge-e_4u4ezm/results.json",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_trace_norm_bridge.results.json",
+      "sha256": "38c67f60445b24358977b491ecb632acbc5a0178a115ae7f8fa4e336d2550218",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-trace-norm-bridge-e_4u4ezm/executed.py",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_trace_norm_bridge.executed.py",
+      "sha256": "cd1eac97e73062853088f5f799a00a563c15e936c29142c03d0407d78e80264a",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-trace-norm-bridge-e_4u4ezm/exact.sobj",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_trace_norm_bridge.exact.sobj",
+      "sha256": "8777ca2207d641776d551bcb72d4a95e6af84a0a63562043668299e163648c2f",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/6e7ab8eb02da-research-result.json",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_trace_norm_bridge.actual-tool-return.json",
+      "sha256": "9332e0827516e73312e7faa41688214d63edcfda31c138dfb62717083dcc7e69",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-homogeneous-198yf1rw/results.json",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_homogeneous_connection.results.json",
+      "sha256": "2ce4e144bd321215c7fe114c908e7be7c77f9ba035bd27cd4702933a14d62279",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-homogeneous-198yf1rw/executed.py",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_homogeneous_connection.executed.py",
+      "sha256": "f51c70a721d117608cecd270c0e52dd553e2d91ee0bc24031f1dcb539c650bdf",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/vacuum-homogeneous-198yf1rw/exact.sobj",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_homogeneous_connection.exact.sobj",
+      "sha256": "e1bba6a9e2a3885da5b7fec18056cd52192e5c7e018017f5e8154ec8507a4f3f",
+      "byte_equal": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/5431452adf61-research-result.json",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_homogeneous_connection.actual-tool-return.json",
+      "sha256": "4ae03b985a55f3e8f87a9573c6402a90c4e8916681865838be48700325a48e04",
+      "byte_equal": true
+    }
+  ]
+}

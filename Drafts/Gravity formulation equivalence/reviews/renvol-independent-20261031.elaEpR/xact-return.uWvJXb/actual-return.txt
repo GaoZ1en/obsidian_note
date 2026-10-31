@@ -1,0 +1,4 @@
+<|"Engine" -> {"1.4.2", {2014, 10, 30}}, "RicciComponents" -> {{-2*(1 + rr[]^2), 0, 0}, 
+   {0, -2/(1 + rr[]^2), 0}, {0, 0, -2*rr[]^2}}, "RicciPlus2g" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+ "ScalarCurvature" -> -6, "EinsteinResidualIsZero" -> True, "ScalarCurvatureIsMinus6" -> True, 
+ "Messages" -> {}|>

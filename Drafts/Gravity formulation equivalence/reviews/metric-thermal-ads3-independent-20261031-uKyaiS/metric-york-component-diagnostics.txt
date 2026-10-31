@@ -1,0 +1,141 @@
+<|"KernelVersion" -> {"1.4.2", {2014, 10, 30}}, "Chart" -> {zz, xx1, xx2}, 
+ "Assumptions" -> "z>0, smooth arbitrary ff and vector potentials aa1,aa2,aa3; all arrays \
+covariant", "Metric" -> {{zz^(-2), 0, 0}, {0, zz^(-2), 0}, {0, 0, zz^(-2)}}, 
+ "Christoffel" -> {{{-zz^(-1), 0, 0}, {0, zz^(-1), 0}, {0, 0, zz^(-1)}}, 
+   {{0, -zz^(-1), 0}, {-zz^(-1), 0, 0}, {0, 0, 0}}, {{0, 0, -zz^(-1)}, {0, 0, 0}, 
+    {-zz^(-1), 0, 0}}}, "Ricci" -> {{-2/zz^2, 0, 0}, {0, -2/zz^2, 0}, {0, 0, -2/zz^2}}, 
+ "RicciResidual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "DeDonderFPGhostResidual" -> 
+  {{-vv1[zz, xx1, xx2] + (zz*(-3 + 4*Derivative[0, 0, 1][vv3][zz, xx1, xx2] + 
+        4*Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 2*Derivative[1, 0, 0][vv1][zz, xx1, xx2] + 
+        2*zz*(Derivative[1, 0, 1][vv3][zz, xx1, xx2] + Derivative[1, 1, 0][vv2][zz, xx1, xx2] + 
+          Derivative[2, 0, 0][vv1][zz, xx1, xx2])))/2, -vv1[zz, xx1, xx2] + 
+     ((-1 + 2*zz^2)*Derivative[0, 0, 1][vv3][zz, xx1, xx2])/zz + 
+     ((-1 + 2*zz^2)*Derivative[0, 1, 0][vv2][zz, xx1, xx2])/zz + 
+     zz*Derivative[1, 0, 0][vv1][zz, xx1, xx2] + 
+     (-1 + zz^2)*(Derivative[1, 0, 1][vv3][zz, xx1, xx2] + Derivative[1, 1, 0][vv2][zz, xx1, xx2] + 
+       Derivative[2, 0, 0][vv1][zz, xx1, xx2]), 
+    (vv1[zz, xx1, xx2]*(-2 + zz^(-1) + 2*Derivative[1, {0}][Extract][
+          2*zz*(-vv1[zz, xx1, xx2] + zz*(Derivative[0, 0, 1][vv3][zz, xx1, xx2] + 
+              Derivative[0, 1, 0][vv2][zz, xx1, xx2] + Derivative[1, 0, 0][vv1][zz, xx1, xx2])), 
+          {3}]) - Derivative[0, 0, 1][vv3][zz, xx1, xx2] - Derivative[0, 1, 0][vv2][zz, xx1, xx2] - 
+      Derivative[1, 0, 0][vv1][zz, xx1, xx2] - 
+      2*zz*(-1 + Derivative[1, {0}][Extract][2*zz*(-vv1[zz, xx1, xx2] + 
+           zz*(Derivative[0, 0, 1][vv3][zz, xx1, xx2] + Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 
+             Derivative[1, 0, 0][vv1][zz, xx1, xx2])), {3}])*
+       (2*Derivative[0, 0, 1][vv3][zz, xx1, xx2] + 2*Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 
+        Derivative[1, 0, 0][vv1][zz, xx1, xx2] + zz*(Derivative[1, 0, 1][vv3][zz, xx1, xx2] + 
+          Derivative[1, 1, 0][vv2][zz, xx1, xx2] + Derivative[2, 0, 0][vv1][zz, xx1, xx2])))/2}, 
+   {(vv1[zz, xx1, xx2] + zz*(-Derivative[0, 0, 1][vv3][zz, xx1, xx2] - 
+        Derivative[0, 1, 0][vv2][zz, xx1, xx2] - Derivative[1, 0, 0][vv1][zz, xx1, xx2] + 
+        zz^2*(-Derivative[0, 1, 0][vv1][zz, xx1, xx2] + 
+          zz*(Derivative[0, 1, 1][vv3][zz, xx1, xx2] + Derivative[0, 2, 0][vv2][zz, xx1, xx2] + 
+            Derivative[1, 1, 0][vv1][zz, xx1, xx2]))))/zz^2, 
+    zz/2 + ((-1 + zz^2)*(-Derivative[0, 1, 0][vv1][zz, xx1, xx2] + 
+        zz*(Derivative[0, 1, 1][vv3][zz, xx1, xx2] + Derivative[0, 2, 0][vv2][zz, xx1, xx2] + 
+          Derivative[1, 1, 0][vv1][zz, xx1, xx2])))/zz, 
+    zz*(-1 + Derivative[1, {0}][Extract][2*zz*(-vv1[zz, xx1, xx2] + 
+         zz*(Derivative[0, 0, 1][vv3][zz, xx1, xx2] + Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 
+           Derivative[1, 0, 0][vv1][zz, xx1, xx2])), {3}])*
+     (Derivative[0, 1, 0][vv1][zz, xx1, xx2] - zz*(Derivative[0, 1, 1][vv3][zz, xx1, xx2] + 
+        Derivative[0, 2, 0][vv2][zz, xx1, xx2] + Derivative[1, 1, 0][vv1][zz, xx1, xx2]))}, 
+   {(vv1[zz, xx1, xx2] + zz*(-2*zz*Derivative[0, 0, 1][vv1][zz, xx1, xx2] - 
+        Derivative[0, 0, 1][vv3][zz, xx1, xx2] - Derivative[0, 1, 0][vv2][zz, xx1, xx2] - 
+        Derivative[1, 0, 0][vv1][zz, xx1, xx2] + 2*zz^2*(Derivative[0, 0, 2][vv3][zz, xx1, xx2] + 
+          Derivative[0, 1, 1][vv2][zz, xx1, xx2] + Derivative[1, 0, 1][vv1][zz, xx1, xx2])))/
+     (2*zz), ((-1 + zz^2)*(-Derivative[0, 0, 1][vv1][zz, xx1, xx2] + 
+       zz*(Derivative[0, 0, 2][vv3][zz, xx1, xx2] + Derivative[0, 1, 1][vv2][zz, xx1, xx2] + 
+         Derivative[1, 0, 1][vv1][zz, xx1, xx2])))/zz, 
+    (zz*(1 + 2*(-1 + Derivative[1, {0}][Extract][2*zz*(-vv1[zz, xx1, xx2] + 
+            zz*(Derivative[0, 0, 1][vv3][zz, xx1, xx2] + Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 
+              Derivative[1, 0, 0][vv1][zz, xx1, xx2])), {3}])*Derivative[0, 0, 1][vv1][zz, xx1, 
+         xx2] - 2*zz*(-1 + Derivative[1, {0}][Extract][2*zz*(-vv1[zz, xx1, xx2] + 
+            zz*(Derivative[0, 0, 1][vv3][zz, xx1, xx2] + Derivative[0, 1, 0][vv2][zz, xx1, xx2] + 
+              Derivative[1, 0, 0][vv1][zz, xx1, xx2])), {3}])*
+        (Derivative[0, 0, 2][vv3][zz, xx1, xx2] + Derivative[0, 1, 1][vv2][zz, xx1, xx2] + 
+         Derivative[1, 0, 1][vv1][zz, xx1, xx2])))/2}}, "GradientIntertwiningResidual" -> 
+  {{8 - (4*ff[zz, xx1, xx2])/zz - 4*Derivative[1, 0, 0][ff][zz, xx1, xx2], 
+    (6*xx1 - 4*ff[zz, xx1, xx2] - 4*zz*Derivative[1, 0, 0][ff][zz, xx1, xx2])/zz, 
+    (6*xx2 - 4*ff[zz, xx1, xx2] - 4*zz*Derivative[1, 0, 0][ff][zz, xx1, xx2])/zz}, 
+   {(6*xx1 - 4*ff[zz, xx1, xx2] - 4*zz*Derivative[0, 1, 0][ff][zz, xx1, xx2])/zz, 
+    (4*ff[zz, xx1, xx2])/zz - 4*(1 + Derivative[0, 1, 0][ff][zz, xx1, xx2]), 
+    -4*Derivative[0, 1, 0][ff][zz, xx1, xx2]}, 
+   {(6*xx2 - 4*ff[zz, xx1, xx2] - 4*zz*Derivative[0, 0, 1][ff][zz, xx1, xx2])/zz, 
+    -4*Derivative[0, 0, 1][ff][zz, xx1, xx2], (4*ff[zz, xx1, xx2])/zz - 
+     4*(1 + Derivative[0, 0, 1][ff][zz, xx1, xx2])}}, "ScalarYorkIntertwiningResidual" -> 
+  {{{(-4*(xx1 + xx2 - 13*zz + 6*ff[zz, xx1, xx2] - zz*(2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          2*(Derivative[0, 1, 0][ff][zz, xx1, xx2] - 4*Derivative[1, 0, 0][ff][zz, xx1, xx2]) + 
+          zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] + Derivative[0, 2, 0][ff][zz, xx1, xx2] - 
+            2*Derivative[2, 0, 0][ff][zz, xx1, xx2]))))/(3*zz^2), 
+     (38*xx1 - 4*xx2 + 6*zz - 24*ff[zz, xx1, xx2] + 4*zz*(2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+         2*(Derivative[0, 1, 0][ff][zz, xx1, xx2] - 4*Derivative[1, 0, 0][ff][zz, xx1, xx2]) + 
+         zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] + Derivative[0, 2, 0][ff][zz, xx1, xx2] - 
+           2*Derivative[2, 0, 0][ff][zz, xx1, xx2])))/(3*zz^2), 
+     (-4*xx1 + 38*xx2 + 6*zz - 24*ff[zz, xx1, xx2] + 
+       4*zz*(2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 2*(Derivative[0, 1, 0][ff][zz, xx1, xx2] - 
+           4*Derivative[1, 0, 0][ff][zz, xx1, xx2]) + zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] + 
+           Derivative[0, 2, 0][ff][zz, xx1, xx2] - 2*Derivative[2, 0, 0][ff][zz, xx1, xx2])))/
+      (3*zz^2)}, {(-2*(-19*xx1 + 4*zz + 6*ff[zz, xx1, xx2] + 
+        6*zz*(2*Derivative[0, 1, 0][ff][zz, xx1, xx2] + Derivative[1, 0, 0][ff][zz, xx1, xx2] + 
+          zz*Derivative[1, 1, 0][ff][zz, xx1, xx2])))/(3*zz^2), 
+     (4*(xx1 - 9*zz + 3*ff[zz, xx1, xx2] + 3*zz*(-2*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 
+          Derivative[1, 0, 0][ff][zz, xx1, xx2] - zz*Derivative[1, 1, 0][ff][zz, xx1, xx2])))/
+      (3*zz^2), (-4*(1 + 6*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 
+        3*zz*Derivative[1, 1, 0][ff][zz, xx1, xx2]))/(3*zz)}, 
+    {(-2*(-19*xx2 + 4*zz + 6*ff[zz, xx1, xx2] + 6*zz*(2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*Derivative[1, 0, 1][ff][zz, xx1, xx2])))/
+      (3*zz^2), (-4*(1 + 6*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+        3*zz*Derivative[1, 0, 1][ff][zz, xx1, xx2]))/(3*zz), 
+     (4*(xx2 - 9*zz + 3*ff[zz, xx1, xx2] + 3*zz*(-2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          Derivative[1, 0, 0][ff][zz, xx1, xx2] - zz*Derivative[1, 0, 1][ff][zz, xx1, xx2])))/
+      (3*zz^2)}}, 
+   {{(-4*(-8*xx1 + 2*zz + 6*ff[zz, xx1, xx2] + 3*zz*(2*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 
+          Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*Derivative[1, 1, 0][ff][zz, xx1, xx2])))/
+      (3*zz^2), (4*xx1 - 30*zz + 24*ff[zz, xx1, xx2] + 
+       12*zz*(-2*Derivative[0, 1, 0][ff][zz, xx1, xx2] + Derivative[1, 0, 0][ff][zz, xx1, xx2] - 
+         zz*Derivative[1, 1, 0][ff][zz, xx1, xx2]))/(3*zz^2), 
+     (-4*(1 + 6*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 3*zz*Derivative[1, 1, 0][ff][zz, xx1, 
+          xx2]))/(3*zz)}, 
+    {(2*(xx1 - 15*zz + 8*ff[zz, xx1, xx2] + 2*zz*(-8*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 
+          4*Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] - 
+            2*Derivative[0, 2, 0][ff][zz, xx1, xx2] + Derivative[2, 0, 0][ff][zz, xx1, xx2]))))/
+      (3*zz^2), (4*(-6*xx1 + 2*zz + 4*ff[zz, xx1, xx2] + 
+        zz*(4*(Derivative[0, 1, 0][ff][zz, xx1, xx2] + Derivative[1, 0, 0][ff][zz, xx1, xx2]) + 
+          zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] - 2*Derivative[0, 2, 0][ff][zz, xx1, xx2] + 
+            Derivative[2, 0, 0][ff][zz, xx1, xx2]))))/(3*zz^2), 
+     (-6*xx2 + 4*zz + 4*ff[zz, xx1, xx2] + 4*zz*(-2*Derivative[0, 1, 0][ff][zz, xx1, xx2] + 
+         4*Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*(Derivative[0, 0, 2][ff][zz, xx1, xx2] - 
+           2*Derivative[0, 2, 0][ff][zz, xx1, xx2] + Derivative[2, 0, 0][ff][zz, xx1, xx2])))/
+      (3*zz^2)}, {(-4*(Derivative[0, 0, 1][ff][zz, xx1, xx2] + Derivative[0, 1, 0][ff][zz, xx1, 
+         xx2] + zz*Derivative[0, 1, 1][ff][zz, xx1, xx2]))/zz, 
+     (-2*xx2 + 4*ff[zz, xx1, xx2] + 4*zz*Derivative[0, 0, 1][ff][zz, xx1, xx2])/zz^2 - 
+      4*Derivative[0, 1, 1][ff][zz, xx1, xx2], 
+     (-4*(xx1 - zz*Derivative[0, 1, 0][ff][zz, xx1, xx2] + zz^2*Derivative[0, 1, 1][ff][zz, xx1, 
+          xx2]))/zz^2}}, 
+   {{(-4*(-8*xx2 + 2*zz + 6*ff[zz, xx1, xx2] + 3*zz*(2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*Derivative[1, 0, 1][ff][zz, xx1, xx2])))/
+      (3*zz^2), (-4*(1 + 6*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+        3*zz*Derivative[1, 0, 1][ff][zz, xx1, xx2]))/(3*zz), 
+     (4*xx2 - 30*zz + 24*ff[zz, xx1, xx2] + 12*zz*(-2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+         Derivative[1, 0, 0][ff][zz, xx1, xx2] - zz*Derivative[1, 0, 1][ff][zz, xx1, xx2]))/
+      (3*zz^2)}, {(-4*(Derivative[0, 0, 1][ff][zz, xx1, xx2] + Derivative[0, 1, 0][ff][zz, xx1, 
+         xx2] + zz*Derivative[0, 1, 1][ff][zz, xx1, xx2]))/zz, 
+     (-4*(xx2 - zz*Derivative[0, 0, 1][ff][zz, xx1, xx2] + zz^2*Derivative[0, 1, 1][ff][zz, xx1, 
+          xx2]))/zz^2, (-2*xx1 + 4*ff[zz, xx1, xx2] + 4*zz*Derivative[0, 1, 0][ff][zz, xx1, xx2])/
+       zz^2 - 4*Derivative[0, 1, 1][ff][zz, xx1, xx2]}, 
+    {(2*(xx2 - 15*zz + 8*ff[zz, xx1, xx2] + 2*zz*(-8*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          4*Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*(-2*Derivative[0, 0, 2][ff][zz, xx1, xx2] + 
+            Derivative[0, 2, 0][ff][zz, xx1, xx2] + Derivative[2, 0, 0][ff][zz, xx1, xx2]))))/
+      (3*zz^2), (-6*xx1 + 4*zz + 4*ff[zz, xx1, xx2] + 
+       4*zz*(-2*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 4*Derivative[1, 0, 0][ff][zz, xx1, xx2] + 
+         zz*(-2*Derivative[0, 0, 2][ff][zz, xx1, xx2] + Derivative[0, 2, 0][ff][zz, xx1, xx2] + 
+           Derivative[2, 0, 0][ff][zz, xx1, xx2])))/(3*zz^2), 
+     (4*(-6*xx2 + 2*zz + 4*ff[zz, xx1, xx2] + zz*(4*Derivative[0, 0, 1][ff][zz, xx1, xx2] + 
+          4*Derivative[1, 0, 0][ff][zz, xx1, xx2] + zz*(-2*Derivative[0, 0, 2][ff][zz, xx1, xx2] + 
+            Derivative[0, 2, 0][ff][zz, xx1, xx2] + Derivative[2, 0, 0][ff][zz, xx1, xx2]))))/
+      (3*zz^2)}}}, "TransverseVectorDivergence" -> 0, "VectorYorkIntertwiningResidual" -> 
+  {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+ "Tests" -> <|"Ricci=-2g" -> True, "DeDonderFPOperator" -> False, "GradientIntertwining" -> False, 
+   "ScalarYorkIntertwining" -> False, "TransverseVectorDivergence" -> True, 
+   "VectorYorkIntertwining" -> True|>, "AllTestsPassed" -> False, "FailedOrAborted" -> False, 
+ "Messages" -> {"HoldForm[Extract::partw]", "HoldForm[Extract::partw]", "HoldForm[Extract::partw]", 
+   "HoldForm[General::stop]"}|>

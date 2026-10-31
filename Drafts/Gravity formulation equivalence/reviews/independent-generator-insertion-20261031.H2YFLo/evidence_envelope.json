@@ -1,0 +1,79 @@
+{
+  "scope": "Only exact Gaussian finite-fiber, explicit spectral integrals, and physical-action first-jet checks. Global analytic claims remain in proof.md and free_Q0_addendum.md.",
+  "runs": [
+    {
+      "label": "gaussian",
+      "tool": "mcp__sage__sage_run",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "source_code": "gaussian_checks.py",
+      "source_sha256": "9ba31322a36deda76a4abe330eef5572d4887e8408b4408e46b117dc72f6de54",
+      "raw_return": "gaussian_actual_tool_return.json",
+      "raw_return_sha256": "1893392698c729b9d2a6c30c9efa5f22c3fca5a5b51618087d44d29b7515de92",
+      "arguments": {
+        "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-generator-insertion-20261031.H2YFLo/gaussian_checks.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+        "timeoutMs": 120000,
+        "maxOutputChars": 12000
+      },
+      "ok": true,
+      "truncated": false,
+      "stdoutTruncated": false,
+      "stderr": "",
+      "stderrTruncated": false,
+      "warnings": [],
+      "warningsTruncated": false,
+      "error": null,
+      "transportStderr": [],
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "check_count": 75,
+      "failed_checks": [],
+      "reported_failures": []
+    },
+    {
+      "label": "spectral",
+      "tool": "mcp__mathematica__evaluate_mathematica",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "source_code": "spectral_checks.wl",
+      "source_sha256": "3e9b647be4ae52fac65a5c30dcb1e4c83d67d3eafd574c8dbe5cc257a34a3eb0",
+      "raw_return": "spectral_actual_tool_return.json",
+      "raw_return_sha256": "7494295b75d73117f6f1026e88b88d21961322b2a9759c01af1979c7ba4ac888",
+      "arguments": {
+        "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-generator-insertion-20261031.H2YFLo/spectral_checks.wl\"]"
+      },
+      "server_output_contains_expected_integral_residuals": true,
+      "server_output_contains_expected_finite_part_residual": true,
+      "server_output_contains_empty_message_list": true,
+      "failed_or_aborted_marker_present": false
+    },
+    {
+      "label": "free_action",
+      "tool": "mcp__sage__sage_run",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "source_code": "free_action_checks.py",
+      "source_sha256": "2b4bf5e8ea8bae51d2628dbf95cfeda444b0a9880a763b6d1b8bb159c7faeacb",
+      "raw_return": "free_action_actual_tool_return.json",
+      "raw_return_sha256": "f62f4318b002f69d7b4abb7c9070ff077d1e6d70a4fdc4d385f2833890acc1c6",
+      "arguments": {
+        "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-generator-insertion-20261031.H2YFLo/free_action_checks.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+        "timeoutMs": 120000,
+        "maxOutputChars": 12000
+      },
+      "ok": true,
+      "truncated": false,
+      "stdoutTruncated": false,
+      "stderr": "",
+      "stderrTruncated": false,
+      "warnings": [],
+      "warningsTruncated": false,
+      "error": null,
+      "transportStderr": [],
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "check_count": 12,
+      "failed_checks": [],
+      "reported_failures": []
+    }
+  ],
+  "failures_disclosed": "No failure in these three follow-up calls; frozen original tadpole run has a separately disclosed Series order error."
+}

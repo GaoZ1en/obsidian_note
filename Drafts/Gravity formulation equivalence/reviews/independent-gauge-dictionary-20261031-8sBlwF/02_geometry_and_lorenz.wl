@@ -1,0 +1,20 @@
+ClearAll[r, ph, t, f, v, coords, gg, gi, ga, ric, dv, ddv, hh, dh, lap, ff, curl];
+coords={r,ph,t}; gg=DiagonalMatrix[{1,Sinh[r]^2,Cosh[r]^2}]; gi=Simplify[Inverse[gg]];
+$Assumptions=r>0;
+ga=Table[FullSimplify[Sum[gi[[i,l]](D[gg[[l,j]],coords[[k]]]+D[gg[[l,k]],coords[[j]]]-D[gg[[j,k]],coords[[l]]]),{l,3}]/2],{i,3},{j,3},{k,3}];
+ric=Table[FullSimplify[Sum[D[ga[[k,i,j]],coords[[k]]]-D[ga[[k,i,k]],coords[[j]]]+Sum[ga[[k,k,l]]ga[[l,i,j]]-ga[[k,j,l]]ga[[l,i,k]],{l,3}],{k,3}]],{i,3},{j,3}];
+v=Table[Symbol["v"<>ToString[i]][r,ph,t],{i,3}];
+dv=Table[D[v[[i]],coords[[j]]]-Sum[ga[[l,j,i]]v[[l]],{l,3}],{j,3},{i,3}];
+ddv=Table[D[dv[[j,i]],coords[[k]]]-Sum[ga[[l,k,j]]dv[[l,i]]+ga[[l,k,i]]dv[[j,l]],{l,3}],{k,3},{j,3},{i,3}];
+lap=Table[Sum[gi[[j,k]]ddv[[k,j,i]],{j,3},{k,3}],{i,3}];
+hh=Table[dv[[i,j]]+dv[[j,i]],{i,3},{j,3}];
+dh=Table[D[hh[[i,j]],coords[[k]]]-Sum[ga[[l,k,i]]hh[[l,j]]+ga[[l,k,j]]hh[[i,l]],{l,3}],{k,3},{i,3},{j,3}];
+ff=Table[Sum[gi[[j,k]]dh[[k,i,j]],{j,3},{k,3}]-D[Sum[gi[[j,k]]hh[[j,k]],{j,3},{k,3}],coords[[i]]]/2,{i,3}];
+fpResidual=FullSimplify[ff-lap+2v];
+hess=Table[D[Log[Cosh[r]],coords[[i]],coords[[j]]]-Sum[ga[[k,i,j]]D[Log[Cosh[r]],coords[[k]]],{k,3}],{i,3},{j,3}];
+hessON=FullSimplify[DiagonalMatrix[{1,1/Sinh[r],1/Cosh[r]}].hess.DiagonalMatrix[{1,1/Sinh[r],1/Cosh[r]}]];
+traceHess=FullSimplify[Tr[gi.hess]];
+curl[b_List]:=FullSimplify[Table[Sinh[r]Cosh[r] Sum[Signature[{i,j,k}]gi[[j,a]]gi[[k,c]](D[b[[c]],coords[[a]]]-D[b[[a]],coords[[c]]]),{j,3},{k,3},{a,3},{c,3}]/2,{i,3}]];
+b={0,f[r],0}; curlB=curl[b]; curl2B=curl[curlB];
+expectedCurl={0,0,Coth[r]f'[r]}; expectedCurl2={0,-f''[r]+(Coth[r]-Tanh[r])f'[r],0};
+<|"RicciPlus2g"->FullSimplify[ric+2gg],"DeDonderMinusLaplacianMinusRicci"->fpResidual,"HessianLogCoshOrthonormal"->hessON,"LaplacianLogCosh"->traceHess,"Curl_f_dphi"->curlB,"CurlSquared_f_dphi"->curl2B,"CurlResidual"->FullSimplify[curlB-expectedCurl],"CurlSquaredResidual"->FullSimplify[curl2B-expectedCurl2]|>

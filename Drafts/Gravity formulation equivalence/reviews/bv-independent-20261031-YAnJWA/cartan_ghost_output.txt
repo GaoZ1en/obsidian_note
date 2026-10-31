@@ -1,0 +1,105 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: BCH first-jet sample 0: PASS
+  [I,L]=-2J sample 0: PASS
+  [I,J]=0 sample 0: PASS
+  BCH first-jet sample 1: PASS
+  [I,L]=-2J sample 1: PASS
+  [I,J]=0 sample 1: PASS
+  BCH first-jet sample 2: PASS
+  [I,L]=-2J sample 2: PASS
+  [I,J]=0 sample 2: PASS
+  BCH first-jet sample 3: PASS
+  [I,L]=-2J sample 3: PASS
+  [I,J]=0 sample 3: PASS
+  BCH first-jet sample 4: PASS
+  [I,L]=-2J sample 4: PASS
+  [I,J]=0 sample 4: PASS
+  BCH first-jet sample 5: PASS
+  [I,L]=-2J sample 5: PASS
+  [I,J]=0 sample 5: PASS
+  BCH first-jet sample 6: PASS
+  [I,L]=-2J sample 6: PASS
+  [I,J]=0 sample 6: PASS
+  BCH first-jet sample 7: PASS
+  [I,L]=-2J sample 7: PASS
+  [I,J]=0 sample 7: PASS
+  BCH first-jet sample 8: PASS
+  [I,L]=-2J sample 8: PASS
+  [I,J]=0 sample 8: PASS
+  BCH first-jet sample 9: PASS
+  [I,L]=-2J sample 9: PASS
+  [I,J]=0 sample 9: PASS
+  BCH first-jet sample 10: PASS
+  [I,L]=-2J sample 10: PASS
+  [I,J]=0 sample 10: PASS
+  BCH first-jet sample 11: PASS
+  [I,L]=-2J sample 11: PASS
+  [I,J]=0 sample 11: PASS
+  BCH first-jet sample 12: PASS
+  [I,L]=-2J sample 12: PASS
+  [I,J]=0 sample 12: PASS
+  BCH first-jet sample 13: PASS
+  [I,L]=-2J sample 13: PASS
+  [I,J]=0 sample 13: PASS
+  BCH first-jet sample 14: PASS
+  [I,L]=-2J sample 14: PASS
+  [I,J]=0 sample 14: PASS
+  BCH first-jet sample 15: PASS
+  [I,L]=-2J sample 15: PASS
+  [I,J]=0 sample 15: PASS
+  BCH first-jet sample 16: PASS
+  [I,L]=-2J sample 16: PASS
+  [I,J]=0 sample 16: PASS
+  BCH first-jet sample 17: PASS
+  [I,L]=-2J sample 17: PASS
+  [I,J]=0 sample 17: PASS
+  BCH first-jet sample 18: PASS
+  [I,L]=-2J sample 18: PASS
+  [I,J]=0 sample 18: PASS
+  BCH first-jet sample 19: PASS
+  [I,L]=-2J sample 19: PASS
+  [I,J]=0 sample 19: PASS
+  BCH first-jet sample 20: PASS
+  [I,L]=-2J sample 20: PASS
+  [I,J]=0 sample 20: PASS
+  affine diffeomorphism BRST nilpotency 0: PASS
+  affine diffeomorphism BRST nilpotency 1: PASS
+  affine diffeomorphism BRST nilpotency 2: PASS
+  affine diffeomorphism BRST nilpotency 3: PASS
+  affine diffeomorphism BRST nilpotency 4: PASS
+  affine diffeomorphism BRST nilpotency 5: PASS
+  affine diffeomorphism BRST nilpotency 6: PASS
+  affine diffeomorphism BRST nilpotency 7: PASS
+  affine diffeomorphism BRST nilpotency 8: PASS
+  affine diffeomorphism BRST nilpotency 9: PASS
+  affine diffeomorphism BRST nilpotency 10: PASS
+  affine diffeomorphism BRST nilpotency 11: PASS
+  s xi = xi.partial xi [0]: PASS
+  s xi = xi.partial xi [1]: PASS
+  s xi = xi.partial xi [2]: PASS
+  CS nonabelian BRST nilpotency 0: PASS
+  CS nonabelian BRST nilpotency 1: PASS
+  CS nonabelian BRST nilpotency 2: PASS
+  CS nonabelian BRST nilpotency 3: PASS
+  CS nonabelian BRST nilpotency 4: PASS
+  CS nonabelian BRST nilpotency 5: PASS
+  CS nonabelian BRST nilpotency 6: PASS
+  CS nonabelian BRST nilpotency 7: PASS
+  CS nonabelian BRST nilpotency 8: PASS
+  CS nonabelian BRST nilpotency 9: PASS
+  CS nonabelian BRST nilpotency 10: PASS
+  CS nonabelian BRST nilpotency 11: PASS
+  H3 torsion T[0]: PASS
+  H3 flat-CS curvature K[0]: PASS
+  H3 torsion T[1]: PASS
+  H3 flat-CS curvature K[1]: PASS
+  H3 torsion T[2]: PASS
+  H3 flat-CS curvature K[2]: PASS
+  ALL CARTAN, GHOST, AND BACKGROUND CHECKS PASSED; SageMath 10.9
+  
+elapsedMs: 3363

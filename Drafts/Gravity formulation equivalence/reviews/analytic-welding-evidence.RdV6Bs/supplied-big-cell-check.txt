@@ -1,0 +1,4 @@
+<|"new pushforward matching residual" -> 0, 
+ "global quadratic vector field third-order-zero coefficients" -> {{a -> 0, b -> 0, c -> 0}}, 
+ "assumptions" -> "z != 0 and gp != 0 in boundary identity; polynomial field a+b t+c t^2 in a \
+target coordinate with f(0)=0", "messages" -> {}|>

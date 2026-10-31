@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_4048b2dc6ed2495580c907bd0c9995fa|fc_0bb219d042654a58016ae544baa76881919d8717be7255075e",
+  "sessionId": "7acebc5c-3d28-4b18-a1c2-991813491893",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nsource=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_exterior_check.py')\nexec(compile(source.read_text(encoding='utf-8'),str(source),'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage native exterior implementation; version 10.9\\n217/217 exact residual checks passed.\\nS_t = e^(t*u)*p*c + s*d + 2*b*r*t*c*d + 2*r*d*v + 1/2*r^4 + r^2*u + 1/2*u^2\\ny_t = (-t*e^(-r^2*t))*p*c - r^2\\nS_eff_t = (e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d\\ngamma_t = -b*r^2*c\\nUV bracket on graph = 2*b*r*c*d\\nnaive projection defect = -2*r*t*e^(r^2*t)*c\\nS_eff quartic = -r^2*t*p*c + 2*b*r*t*c*d\\nfull UV conjugate derivative on graph = -2*r*d\\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"23fae6fb807ca2d4ff9602729f0775e5ccb6b8c8e95dcda1020cc96860f46212\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 6889,\n  \"transportStderr\": [],\n  \"codeSha256\": \"6e8baab81858d5fa7ce6c857779dff5589464cecac03e7505b52fee65728aade\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Sage native exterior implementation; version 10.9\n217/217 exact residual checks passed.\nS_t = e^(t*u)*p*c + s*d + 2*b*r*t*c*d + 2*r*d*v + 1/2*r^4 + r^2*u + 1/2*u^2\ny_t = (-t*e^(-r^2*t))*p*c - r^2\nS_eff_t = (e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d\ngamma_t = -b*r^2*c\nUV bracket on graph = 2*b*r*c*d\nnaive projection defect = -2*r*t*e^(r^2*t)*c\nS_eff quartic = -r^2*t*p*c + 2*b*r*t*c*d\nfull UV conjugate derivative on graph = -2*r*d\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "23fae6fb807ca2d4ff9602729f0775e5ccb6b8c8e95dcda1020cc96860f46212",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 6889,
+        "transportStderr": [],
+        "codeSha256": "6e8baab81858d5fa7ce6c857779dff5589464cecac03e7505b52fee65728aade"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage native exterior implementation; version 10.9\\n217/217 exact residual checks passed.\\nS_t = e^(t*u)*p*c + s*d + 2*b*r*t*c*d + 2*r*d*v + 1/2*r^4 + r^2*u + 1/2*u^2\\ny_t = (-t*e^(-r^2*t))*p*c - r^2\\nS_eff_t = (e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d\\ngamma_t = -b*r^2*c\\nUV bracket on graph = 2*b*r*c*d\\nnaive projection defect = -2*r*t*e^(r^2*t)*c\\nS_eff quartic = -r^2*t*p*c + 2*b*r*t*c*d\\nfull UV conjugate derivative on graph = -2*r*d\\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"23fae6fb807ca2d4ff9602729f0775e5ccb6b8c8e95dcda1020cc96860f46212\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 6889,\n  \"transportStderr\": [],\n  \"codeSha256\": \"6e8baab81858d5fa7ce6c857779dff5589464cecac03e7505b52fee65728aade\"\n}"
+      }
+    ]
+  }
+}

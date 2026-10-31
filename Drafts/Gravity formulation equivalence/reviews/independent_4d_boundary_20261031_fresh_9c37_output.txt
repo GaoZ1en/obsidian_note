@@ -1,0 +1,31 @@
+<|"Conventions" -> "eta=(-,+,+,+), eps0123=+1, vol=dt^dx^dy^dz, wall z=1 outward +z, corner orientation \
+dx^dy, Omega=delta Theta", "Checks" -> <|"Lorentzian Hodge star squared on every 2-form" -> True, 
+   "Linear Levi-Civita spin connection is antisymmetric" -> True, 
+   "Linear torsion vanishes for arbitrary tetrad first jets" -> True, 
+   "theta_E = theta_g - d star(e_I wedge delta e^I)/(2 kappa)" -> True, 
+   "theta_H = -d(e_I wedge delta e^I)/(2 kappa beta)" -> True, 
+   "C_n = C_g - star(e_I wedge delta e^I)/(2 kappa), including mixed h" -> True, 
+   "Covariant Palatini wall term has +K epsilon_Gamma/kappa sign" -> True, "normal theta numerator" -> True, 
+   "delta K with normal and mixed h" -> True, "off-shell theta_g + delta ell_g = BY + d C_g" -> True, 
+   "delta C_n = -delta alpha_E on all pure Lorentz pairs" -> True, 
+   "fixed-normal nonzero Holst pairing sign" -> True, "free-normal nonzero Einstein pairing sign" -> True, 
+   "canonical C cancels both pairings" -> True, "exact Lorentz family preserves metric" -> True, 
+   "exact family is torsion-free" -> True, "exact family fixes internal wall normal" -> True, 
+   "direct bulk integral agrees with corner +1/(kappa beta)" -> True, 
+   "off-shell ell_E = ell_g - B_contorsion_E on wall" -> True, "off-shell ell_H = -B_contorsion_H" -> True, 
+   "Holst contorsion residual equals delta e_I wedge T^I/(kappa beta)" -> True, 
+   "free-frame Dirichlet residual is +lambda D Sigma/(2 kappa)" -> True, 
+   "symmetric extrinsic contorsion has zero pullback torsion" -> True, 
+   "pullback torsion zero suffices for unrestricted Dirichlet Lorentz variations" -> True, 
+   "surviving symmetric extrinsic contorsion changes arbitrary-delta-q Brown-York source" -> True|>, 
+ "AllChecksPassed" -> True, "ActualResults" -> 
+  <|"metric residuals" -> <|"normal theta numerator" -> 0, "delta K with normal and mixed h" -> 0, 
+     "off-shell theta_g + delta ell_g = BY + d C_g" -> 0|>, 
+   "fixed n: B01,B02 raw Einstein pairing per area" -> 0, "fixed n: B01,B02 raw Holst pairing per area" -> 
+    1/(bet*kap), "free n: B01,R13 raw Einstein pairing per area" -> kap^(-1), 
+   "free n: B01,R13 raw Holst pairing per area" -> 0, "direct raw bulk Holst symplectic density" -> 
+    (2*zz)/(bet*kap), "direct raw bulk Holst integral per transverse area" -> 1/(bet*kap), 
+   "symmetric extrinsic contorsion residual for arbitrary delta q" -> 
+    "(tr_q c tr_q h - c^{ij} h_ij) epsilon_Gamma/(2 kappa); zero for delta q=0 but not for general sources", 
+   "full torsion not needed at wall" -> "For A^{13}=c e^1, pullback T=0 but T^1=c e^1 wedge e^3 is nonzero; \
+off-shell metric-Dirichlet descent still holds"|>|>

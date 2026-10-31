@@ -1,0 +1,85 @@
+INDEPENDENT WITT / POLARIZED TANGENT AUDIT
+SageMath version 10.9, Release Date: 2026-05-04
+Arithmetic: exact QQ/ZZ; no floating point, zeta summation, or fitted coefficients.
+
+SYMBOLIC IDENTITIES
+rho commutator residual = 0
+positive-m finite sum = -13/6*m^3 + m*r^2 - m*r + 1/6*m
+finite-sum minus claimed formula = 0
+Jacobi residual for f(x)=a*x^3+b*x, k=-m-n = 0
+threshold-change residual = 0
+sigma_r(1,-1) = r^2 - r - 2
+
+DIRECT FINITE-CROSSING GRID
+r=-8..8; m,n=-12..12; cases = 10625
+mismatches = []
+Table: r; sigma_r(m,-m) for m=1,2,3,4
+-2; [4, -5, -40, -114]
+-1; [0, -13, -52, -130]
+0; [-2, -17, -58, -138]
+1; [-2, -17, -58, -138]
+2; [0, -13, -52, -130]
+3; [4, -5, -40, -114]
+
+INDEPENDENT SPARSE-MATRIX TRACE CHECK
+Basis j=-18..18; r=-3..3; m,n=-5..5; cases = 847
+Crossing paths stay inside the matrix cutoff; no edge artifact enters these traces.
+mismatches = []
+
+DIRECT CROSSING JACOBI CHECK
+r=-3..3; m,n=-8..8; k=-m-n; cases = 2023
+mismatches = []
+
+ISOTROPY / PHYSICAL QUOTIENT CHECKS
+h-action leaks from W_{-1}, tested j=-1..8: []
+h-action leaks from W_2, tested j=2..8: [(-1, 2, 1, -3)]
+Tuple convention: (h mode, input j, output j, coefficient).
+Trace rho_0 on h=span(e_-1,e_0,e_1) = 0
+[Qrho_2Q,Qrho_-2Q] e_2 = {}
+4 Qrho_0Q e_2 = {2: -8}
+Witt representation defect on e_2 = {2: 8}
+Table: m; full sigma_2(m,-m); compressed physical tau(m,-m)
+1; 0; 0
+2; -13; 0
+3; -52; 0
+4; -130; -36
+5; -260; -112
+6; -455; -241
+7; -728; -436
+8; -1092; -710
+Compressed tau Jacobi residual, (m,n,k)=(1,3,-4) = 72
+
+DETERMINANT / CONNECTION SIGN CHECK IN TWO DIMENSIONS
+sigma(A,B) = 1
+Trace P[dP(A),dP(B)]P = -1
+Filled-plus CAR normal-order central defect diagonal = [1, 1, 1, 1]
+CAR defect minus sigma*I = [0 0 0 0]
+[0 0 0 0]
+[0 0 0 0]
+[0 0 0 0]
+
+TENSOR-DENSITY AND NORMALIZATION CHECKS
+rho_m^(a)e_n=(a*m-n)e_(m+n): representation residual = 0
+density crossing-sum residual = 0
+density determinant central charge c(a) = -12*a^2 - 12*a - 2
+a=1 (vector fields): c=-26; a=0: c=-2
+determinant c = -26; dual c = 26; dual-half c = 13
+determinant cylinder vacuum L0 shift = 13/12
+dual-half cylinder vacuum L0 shift = -13/24
+Vacuum-to-cylinder central polynomial residual = 0
+
+symbolic representation: PASS
+symbolic crossing sum: PASS
+symbolic Jacobi: PASS
+threshold coboundary: PASS
+direct finite crossings: PASS
+sparse matrix traces: PASS
+finite Jacobi grid: PASS
+physical quotient counterexample: PASS
+compressed trace Jacobi counterexample: PASS
+determinant curvature sign: PASS
+CAR central sign: PASS
+density representation: PASS
+density crossing sum: PASS
+ALL 13 EXACT CHECK GROUPS PASSED.
+OUTPUT_FILE=/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/witt_independent_20261031T021058_91f3a8_stdout.txt

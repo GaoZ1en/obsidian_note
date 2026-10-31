@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_40e7f617b5d3499dad9d4022a92932fd|fc_0beee4d74a95702a016ae5278df08081919a14676a2656cf25",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nfrom hashlib import sha256\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/berezinian_followup_check.py')\ns=p.read_text(encoding='utf-8')\nprint('Post-freeze source SHA256:',sha256(s.encode()).hexdigest())\nexec(compile(s,str(p),'exec'),{'__name__':'__main__'})",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Post-freeze source SHA256: 874f31c958fc8a42947c2ffc43abedc742c52a10009fbeef772d74d95acddb1d\\nRIGHT-Jacobian translation Schur row 0: PASS\\nRIGHT-Jacobian Lorentz Schur row 0: PASS\\nWRONG left-block result identified 0: PASS\\nRIGHT-Jacobian translation Schur row 1: PASS\\nRIGHT-Jacobian Lorentz Schur row 1: PASS\\nWRONG left-block result identified 1: PASS\\nRIGHT-Jacobian translation Schur row 2: PASS\\nRIGHT-Jacobian Lorentz Schur row 2: PASS\\nWRONG left-block result identified 2: PASS\\n2-Grassmann right Schur entry: 1\\n2-Grassmann wrong-left Schur entry: 2*g*theta*eta + 1\\nALL BEREZINIAN FOLLOW-UP CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"bddde5930593314bc50894556c219bcc5789c09ab666fabc4346c20f10aee42e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3453,\n  \"transportStderr\": [],\n  \"codeSha256\": \"d12d2a56261aaa1f636d255ec1be770f6f5fe2a0dce51f58b4c012c7517f0725\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Post-freeze source SHA256: 874f31c958fc8a42947c2ffc43abedc742c52a10009fbeef772d74d95acddb1d\nRIGHT-Jacobian translation Schur row 0: PASS\nRIGHT-Jacobian Lorentz Schur row 0: PASS\nWRONG left-block result identified 0: PASS\nRIGHT-Jacobian translation Schur row 1: PASS\nRIGHT-Jacobian Lorentz Schur row 1: PASS\nWRONG left-block result identified 1: PASS\nRIGHT-Jacobian translation Schur row 2: PASS\nRIGHT-Jacobian Lorentz Schur row 2: PASS\nWRONG left-block result identified 2: PASS\n2-Grassmann right Schur entry: 1\n2-Grassmann wrong-left Schur entry: 2*g*theta*eta + 1\nALL BEREZINIAN FOLLOW-UP CHECKS PASSED; SageMath 10.9\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "bddde5930593314bc50894556c219bcc5789c09ab666fabc4346c20f10aee42e",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3453,
+        "transportStderr": [],
+        "codeSha256": "d12d2a56261aaa1f636d255ec1be770f6f5fe2a0dce51f58b4c012c7517f0725"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Post-freeze source SHA256: 874f31c958fc8a42947c2ffc43abedc742c52a10009fbeef772d74d95acddb1d\\nRIGHT-Jacobian translation Schur row 0: PASS\\nRIGHT-Jacobian Lorentz Schur row 0: PASS\\nWRONG left-block result identified 0: PASS\\nRIGHT-Jacobian translation Schur row 1: PASS\\nRIGHT-Jacobian Lorentz Schur row 1: PASS\\nWRONG left-block result identified 1: PASS\\nRIGHT-Jacobian translation Schur row 2: PASS\\nRIGHT-Jacobian Lorentz Schur row 2: PASS\\nWRONG left-block result identified 2: PASS\\n2-Grassmann right Schur entry: 1\\n2-Grassmann wrong-left Schur entry: 2*g*theta*eta + 1\\nALL BEREZINIAN FOLLOW-UP CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"bddde5930593314bc50894556c219bcc5789c09ab666fabc4346c20f10aee42e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3453,\n  \"transportStderr\": [],\n  \"codeSha256\": \"d12d2a56261aaa1f636d255ec1be770f6f5fe2a0dce51f58b4c012c7517f0725\"\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+Purpose
+"Nonlinear-cutoff and full-symmetry counterchecks"
+
+KernelVersion
+"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)"
+
+Checks
+<|"NonlinearTwoModeHessian" -> True, "NonzeroCubicInteraction" -> True, 
+ "ProjectedWittJacobiFailureN2to8" -> True, "FullWittJacobiCancellation" -> True, 
+ "VacuumGramLevel4Determinant" -> True, "FiniteDescendantTailBound" -> True|>
+
+AllChecksPassed
+True
+
+Expressions
+<|"TwoModeQuadraticHamiltonian" -> (A^2*C)/4 + 5*B^2*C, "TwoModeCubicHamiltonian" -> -4*A^2*B*C, 
+ "ProjectedWittJacobi" -> {{2, 4*ell[2]}, {3, 10*ell[3]}, {4, 18*ell[4]}, {5, 28*ell[5]}, 
+   {6, 40*ell[6]}, {7, 54*ell[7]}, {8, 70*ell[8]}}, "FullWittJacobi" -> 0, 
+ "VacuumLevel4Gram" -> {{5*c, 3*c}, {3*c, (c*(8 + c))/2}}, 
+ "VacuumLevel4GramDeterminant" -> (c^2*(22 + 5*c))/2, "ExampleC2Gram" -> {{10, 6}, {6, 10}}, 
+ "ExampleC25Gram" -> {{125, 75}, {75, 825/2}}, "DescendantLogTailN20to200Beta0.7" -> 
+  8.20248200266273277418117358129090403736585376883160705924875095347343522728949591055411512`73.53\
+789328131609*^-7, "DescendantAnalyticTailBoundN20Beta0.7" -> 
+  8.20248425809382133051787346399136819272782634757776747464222427119094732809557851741656092`78.81\
+274699494406*^-7, "HeatSubtractedNumericsColumnsEpsilonEnergyResidualFromZeta" -> 
+  {{0.1000000000000000000000000000000000000000000000000000000001`40., 
+    -0.4940645506156163077562274978140141470892759006930898305375`40., 
+    0.0476021160510503589104391688526525195773907659735768361292`40.}, 
+   {0.05`40., -0.5172761711003448657713882328095532619881961792250400671724`40., 
+    0.0243904955663218008952784338571134046784704874416266052894`40.}, 
+   {0.02`40., -0.5317651699999383124884734004188299309273625906390913124714`40., 
+    0.009901496666728354178193266247836735739304076027575421881`40.}, 
+   {0.01`40., -0.5366913752087440768034967746359913951455665883432939849278`40., 
+    0.0049752914579225898631698920306752715211000783233726819762`40.}}|>
+
+Messages
+{}

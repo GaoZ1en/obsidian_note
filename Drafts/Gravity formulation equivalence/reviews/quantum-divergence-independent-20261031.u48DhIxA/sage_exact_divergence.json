@@ -1,0 +1,274 @@
+{
+  "DeltaGamma": [
+    {
+      "odd": [],
+      "coefficient": "(-3*f02*f11*f20*t^2 + 3*f01*f12*f20*t^2 + 3*f02*f10*f21*t^2 - 3*f00*f12*f21*t^2 - 3*f01*f10*f22*t^2 + 3*f00*f11*f22*t^2 - 2*f01*f10*t + 2*f00*f11*t - 2*f02*f20*t - 2*f12*f21*t + 2*f00*f22*t + 2*f11*f22*t + f00 + f11 + f22)/(f02*f11*f20*t^3 - f01*f12*f20*t^3 - f02*f10*f21*t^3 + f00*f12*f21*t^3 + f01*f10*f22*t^3 - f00*f11*f22*t^3 + f01*f10*t^2 - f00*f11*t^2 + f02*f20*t^2 + f12*f21*t^2 - f00*f22*t^2 - f11*f22*t^2 - f00*t - f11*t - f22*t - 1)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W00"
+      ],
+      "coefficient": "f20*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W00"
+      ],
+      "coefficient": "(-f10*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W01"
+      ],
+      "coefficient": "f21*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W01"
+      ],
+      "coefficient": "(-f11*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W02"
+      ],
+      "coefficient": "(f22*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W02"
+      ],
+      "coefficient": "(-f12*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W10"
+      ],
+      "coefficient": "(-f20*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W10"
+      ],
+      "coefficient": "(f00*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W11"
+      ],
+      "coefficient": "(-f21*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W11"
+      ],
+      "coefficient": "f01*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W12"
+      ],
+      "coefficient": "(-f22*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z2",
+        "W12"
+      ],
+      "coefficient": "f02*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W20"
+      ],
+      "coefficient": "f10*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W20"
+      ],
+      "coefficient": "(-f00*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W21"
+      ],
+      "coefficient": "(f11*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W21"
+      ],
+      "coefficient": "(-f01*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z0",
+        "W22"
+      ],
+      "coefficient": "f12*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    },
+    {
+      "odd": [
+        "z1",
+        "W22"
+      ],
+      "coefficient": "(-f02*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+    }
+  ],
+  "sectors": {
+    "fE": [
+      {
+        "odd": [
+          "z1",
+          "W00"
+        ],
+        "coefficient": "f20*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W00"
+        ],
+        "coefficient": "(-f10*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z1",
+          "W01"
+        ],
+        "coefficient": "f21*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W01"
+        ],
+        "coefficient": "(-f11*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z1",
+          "W02"
+        ],
+        "coefficient": "(f22*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W02"
+        ],
+        "coefficient": "(-f12*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W10"
+        ],
+        "coefficient": "(-f20*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W10"
+        ],
+        "coefficient": "(f00*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W11"
+        ],
+        "coefficient": "(-f21*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W11"
+        ],
+        "coefficient": "f01*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W12"
+        ],
+        "coefficient": "(-f22*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z2",
+          "W12"
+        ],
+        "coefficient": "f02*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W20"
+        ],
+        "coefficient": "f10*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z1",
+          "W20"
+        ],
+        "coefficient": "(-f00*t^2 - t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W21"
+        ],
+        "coefficient": "(f11*t^2 + t)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z1",
+          "W21"
+        ],
+        "coefficient": "(-f01*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z0",
+          "W22"
+        ],
+        "coefficient": "f12*t^2/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      },
+      {
+        "odd": [
+          "z1",
+          "W22"
+        ],
+        "coefficient": "(-f02*t^2)/(f02*f11*f20*t^3*kappa - f01*f12*f20*t^3*kappa - f02*f10*f21*t^3*kappa + f00*f12*f21*t^3*kappa + f01*f10*f22*t^3*kappa - f00*f11*f22*t^3*kappa + f01*f10*t^2*kappa - f00*f11*t^2*kappa + f02*f20*t^2*kappa + f12*f21*t^2*kappa - f00*f22*t^2*kappa - f11*f22*t^2*kappa - f00*t*kappa - f11*t*kappa - f22*t*kappa - kappa)"
+      }
+    ],
+    "wW": [],
+    "etaR": [],
+    "zetaT": [
+      {
+        "odd": [],
+        "coefficient": "(-3*f02*f11*f20*t^2 + 3*f01*f12*f20*t^2 + 3*f02*f10*f21*t^2 - 3*f00*f12*f21*t^2 - 3*f01*f10*f22*t^2 + 3*f00*f11*f22*t^2 - 2*f01*f10*t + 2*f00*f11*t - 2*f02*f20*t - 2*f12*f21*t + 2*f00*f22*t + 2*f11*f22*t + f00 + f11 + f22)/(f02*f11*f20*t^3 - f01*f12*f20*t^3 - f02*f10*f21*t^3 + f00*f12*f21*t^3 + f01*f10*f22*t^3 - f00*f11*f22*t^3 + f01*f10*t^2 - f00*f11*t^2 + f02*f20*t^2 + f12*f21*t^2 - f00*f22*t^2 - f11*f22*t^2 - f00*t - f11*t - f22*t - 1)"
+      }
+    ]
+  },
+  "detH": "-f02*f11*f20*t^3 + f01*f12*f20*t^3 + f02*f10*f21*t^3 - f00*f12*f21*t^3 - f01*f10*f22*t^3 + f00*f11*f22*t^3 - f01*f10*t^2 + f00*f11*t^2 - f02*f20*t^2 - f12*f21*t^2 + f00*f22*t^2 + f11*f22*t^2 + f00*t + f11*t + f22*t + 1",
+  "jacobian_halfdensity": "1/(-f02*f11*f20*t^3 + f01*f12*f20*t^3 + f02*f10*f21*t^3 - f00*f12*f21*t^3 - f01*f10*f22*t^3 + f00*f11*f22*t^3 - f01*f10*t^2 + f00*f11*t^2 - f02*f20*t^2 - f12*f21*t^2 + f00*f22*t^2 + f11*f22*t^2 + f00*t + f11*t + f22*t + 1)"
+}

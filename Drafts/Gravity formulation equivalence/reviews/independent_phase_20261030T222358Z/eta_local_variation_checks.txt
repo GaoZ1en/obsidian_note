@@ -1,0 +1,4 @@
+<|"Tr_P_Aj_squared" -> {-6, -6, -6}, "sum_Tr_P_Aj_squared" -> -18, "a2_with_multiplier_insertion" -> 
+  (-3*(12 + mu$8553^2)*v$8553)/(16*Pi^(3/2)), "eta_derivative" -> (3*(12 + mu$8553^2)*v$8553)/(8*Pi^2), 
+ "eta_from_local_variation" -> (9*mu$8553*v$8553)/(2*Pi^2) + (mu$8553^3*v$8553)/(8*Pi^2), 
+ "matches_residue_method" -> True, "Messages" -> {}|>

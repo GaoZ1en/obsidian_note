@@ -1,0 +1,33 @@
+{
+  "method": "byte-for-byte copy; exclusive destination creation; no kernel reruns",
+  "files": [
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-9588fdf1204f/b8b4ffd6ef14-research-result.json",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/tool-provenance.t0_b8ao0/verification-server-return.json",
+      "bytes": 1809,
+      "sha256": "d24e5cee94788b499e328de6926ba897af2ddca608dd2de44a68c287c825628e",
+      "byte_identity_verified": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-9588fdf1204f/a8562a78e28e-research-result-readable.txt",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/tool-provenance.t0_b8ao0/verification-tool-readable.txt",
+      "bytes": 493,
+      "sha256": "2995aa0c5b29aeb3a9f0d5661c04502c71a1370d3f6c4a071913167653959b78",
+      "byte_identity_verified": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-9588fdf1204f/a7ca31799b26-research-result.json",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/tool-provenance.t0_b8ao0/sign-check-server-return.json",
+      "bytes": 1761,
+      "sha256": "31bb2945ad6f376b5253d21074b38e74570a4ac153a51ff1a76948f8860482dc",
+      "byte_identity_verified": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-9588fdf1204f/2b4f6ca63264-research-result-readable.txt",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/tool-provenance.t0_b8ao0/sign-check-tool-readable.txt",
+      "bytes": 472,
+      "sha256": "1f11e78fe8c7f9e633fd3cc3c8302ea3d1d8dc59d800f345a19c3c2631b54b37",
+      "byte_identity_verified": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{'SageVersion': 'SageMath version 10.9, Release Date: 2026-05-04',
+ 'Ring': 'Multivariate Polynomial Ring in c11, c12, c13, c21, c22, c23, c31, c32, c33 over '
+         'Rational Field',
+ 'QuadraticForm': '-2*c12*c21 + 2*c11*c22 - 2*c13*c31 - 2*c23*c32 + 2*c11*c33 + 2*c22*c33',
+ 'DirectCurvatureCoefficient': '2*c12*c21 - 2*c11*c22 + 2*c13*c31 + 2*c23*c32 - 2*c11*c33 - '
+                               '2*c22*c33',
+ 'Hessian': [ 0  0  0  0  2  0  0  0  2]
+[ 0  0  0 -2  0  0  0  0  0]
+[ 0  0  0  0  0  0 -2  0  0]
+[ 0 -2  0  0  0  0  0  0  0]
+[ 2  0  0  0  0  0  0  0  2]
+[ 0  0  0  0  0  0  0 -2  0]
+[ 0  0 -2  0  0  0  0  0  0]
+[ 0  0  0  0  0 -2  0  0  0]
+[ 2  0  0  0  2  0  0  0  0],
+ 'CharacteristicPolynomial_det_lambdaI_minusH': (x - 4) * (x - 2)^3 * (x + 2)^5,
+ 'HessianDeterminant': -1024,
+ 'Eigenvalues': [4, 2, 2, 2, -2, -2, -2, -2, -2],
+ 'BasisDeterminant': -1.0000000000000?,
+ 'DiagonalHessian': [ 4  0  0  0  0  0  0  0  0]
+[ 0 -2  0  0  0  0  0  0  0]
+[ 0  0 -2  0  0  0  0  0  0]
+[ 0  0  0 -2  0  0  0  0  0]
+[ 0  0  0  0 -2  0  0  0  0]
+[ 0  0  0  0  0 -2  0  0  0]
+[ 0  0  0  0  0  0  2  0  0]
+[ 0  0  0  0  0  0  0  2  0]
+[ 0  0  0  0  0  0  0  0  2],
+ 'WallResidual': '0',
+ 'Checks': {'curvature_polynomial_identity': True,
+            'basis_orthonormal': True,
+            'complete_diagonal_hessian': True,
+            'hessian_determinant': True,
+            'general_normal_wall_identity': True,
+            'negative_symmetric_counterexample': True,
+            'positive_trace_counterexample': True,
+            'positive_antisymmetric_counterexample': True},
+ 'AllChecksPass': True}

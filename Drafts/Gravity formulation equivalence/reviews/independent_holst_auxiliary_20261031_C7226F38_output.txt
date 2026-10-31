@@ -1,0 +1,19 @@
+<|"Dimension" -> 4, "Signature" -> {-1, 1, 1, 1}, "Variables ordered as (I,J,A), I<J" -> 
+  {{0, 1, 0}, {0, 1, 1}, {0, 1, 2}, {0, 1, 3}, {0, 2, 0}, {0, 2, 1}, {0, 2, 2}, {0, 2, 3}, 
+   {0, 3, 0}, {0, 3, 1}, {0, 3, 2}, {0, 3, 3}, {1, 2, 0}, {1, 2, 1}, {1, 2, 2}, {1, 2, 3}, 
+   {1, 3, 0}, {1, 3, 1}, {1, 3, 2}, {1, 3, 3}, {2, 3, 0}, {2, 3, 1}, {2, 3, 2}, {2, 3, 3}}, 
+ "Normalization" -> "Q_beta = vol/(2 kappa) z^T (H0+r H1) z; r=1/beta", 
+ "Checks" -> <|"Epsilon convention" -> True, "EC wedge equals contracted scalar" -> True, 
+   "Holst K quadratic equals T wedge T/2" -> True, "Both Hessians symmetric" -> True, 
+   "Hessian reconstructs the full quadratic polynomial" -> True, 
+   "Internal star squares to minus identity" -> True, "Relative Hessian is minus internal star" -> 
+    True, "Relative Hessian squares to minus identity" -> True, 
+   "D Sigma intertwines internal star" -> True, "K to torsion is invertible" -> True, 
+   "K to D Sigma is invertible" -> True, "Determinant relative to EC" -> True, 
+   "beta=+i has rank 12" -> True, "beta=-i has rank 12" -> True, 
+   "beta=+i annihilates star=+i" -> True, "beta=-i annihilates star=-i" -> True|>, 
+ "All checks passed" -> True, "det H0" -> 256, "det (H0+r H1)" -> 256*(1 + r^2)^12, 
+ "Relative determinant" -> (1 + r^2)^12, "H0 eigenvalues with multiplicity" -> {{-2, 4}, {-1, 8}, 
+  {1, 8}, {2, 4}}, "H0 inertia (positive,negative,zero)" -> {12, 12, 0}, 
+ "det K-to-torsion matrix" -> 16, "det K-to-D-Sigma matrix" -> 256, "rank at r=+i,-i" -> {12, 12}, 
+ "Messages" -> {}|>

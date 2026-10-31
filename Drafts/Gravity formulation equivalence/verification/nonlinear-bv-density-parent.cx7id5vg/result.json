@@ -1,0 +1,105 @@
+{
+  "scope": "Finite pointwise density and nilpotent weighted-BV-divergence coefficients only; not a gauge-invariant lattice, continuum functional Jacobian or QME.",
+  "sage_version": "10.9",
+  "checks": [
+    {
+      "label": "polar coframe metric frame Jacobian absolute square",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "dynamical symmetric metric L2 volume exponent",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "dynamical diffeomorphism parameter L2 ghost exponent",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "joint finite pushforward equals geometric target density squared",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "full non diagonal cubic log density trace expansion",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "auxiliary and full logarithmic coefficients",
+      "passed": true,
+      "residual_count": 2
+    },
+    {
+      "label": "weighted BV divergence all nilpotent coefficients",
+      "passed": true,
+      "residual_count": 27
+    },
+    {
+      "label": "weighted divergence is genuinely nonzero example",
+      "passed": true,
+      "residual_count": 1
+    }
+  ],
+  "all_passed": true,
+  "residuals": {
+    "polar coframe metric frame Jacobian absolute square": [
+      "0"
+    ],
+    "dynamical symmetric metric L2 volume exponent": [
+      "0"
+    ],
+    "dynamical diffeomorphism parameter L2 ghost exponent": [
+      "0"
+    ],
+    "joint finite pushforward equals geometric target density squared": [
+      "0"
+    ],
+    "full non diagonal cubic log density trace expansion": [
+      "0"
+    ],
+    "auxiliary and full logarithmic coefficients": [
+      "0",
+      "0"
+    ],
+    "weighted BV divergence all nilpotent coefficients": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "weighted divergence is genuinely nonzero example": [
+      "0"
+    ]
+  },
+  "orientation": "det(e)>0; infinitesimal frame columns Omega_ij=epsilon_ijk r_k",
+  "polar_signed_jacobian": "145216494968533502226373290834951226575318379068300240142165220636322329800820739604020343212515268612285031620136032524458455590385244698026448298935780725174118246137447253314715469710380638366234296463120257539655053584656042977359091693393423640919145029829506241486695834845184/(-1161731959748268017810986326679609812602547032546401921137321765090578638406565916832162745700122148898280252961088260195667644723081957584211586391486245801392945969099578026517723757683045106929874371704962060317240428677248343818872733547147389127353160238636049931893566678761472*d0*d1*d2)",
+  "weighted_divergence_nonzero_coefficient_after_2a_detE": "1",
+  "finite_density_ratio": "J_body=(det(e)/det(ebar))^(-7/2)",
+  "elapsed_seconds": 0.279725749976933
+}

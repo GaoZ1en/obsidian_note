@@ -1,0 +1,63 @@
+{
+  "sage_version": "10.9",
+  "checks": {
+    "response-N1": true,
+    "gap-N1": true,
+    "projected-torsionfree-not-stationary-N1": true,
+    "response-N2": true,
+    "gap-N2": true,
+    "projected-torsionfree-not-stationary-N2": true,
+    "response-N3": true,
+    "gap-N3": true,
+    "projected-torsionfree-not-stationary-N3": true,
+    "response-N4": true,
+    "gap-N4": true,
+    "projected-torsionfree-not-stationary-N4": true,
+    "response-N5": true,
+    "gap-N5": true,
+    "projected-torsionfree-not-stationary-N5": true,
+    "response-N6": true,
+    "gap-N6": true,
+    "projected-torsionfree-not-stationary-N6": true
+  },
+  "count": 18,
+  "all_checks_true": true,
+  "rows": [
+    {
+      "N": 1,
+      "response": "9/50",
+      "continuum_response": "1/5",
+      "gap": "1/50"
+    },
+    {
+      "N": 2,
+      "response": "18/91",
+      "continuum_response": "1/5",
+      "gap": "1/455"
+    },
+    {
+      "N": 3,
+      "response": "819/4100",
+      "continuum_response": "1/5",
+      "gap": "1/4100"
+    },
+    {
+      "N": 4,
+      "response": "1476/7381",
+      "continuum_response": "1/5",
+      "gap": "1/36905"
+    },
+    {
+      "N": 5,
+      "response": "66429/332150",
+      "continuum_response": "1/5",
+      "gap": "1/332150"
+    },
+    {
+      "N": 6,
+      "response": "119574/597871",
+      "continuum_response": "1/5",
+      "gap": "1/2989355"
+    }
+  ]
+}

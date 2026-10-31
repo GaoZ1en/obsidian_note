@@ -1,0 +1,21 @@
+<|"Result" -> <|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+   "Conventions" -> 
+    "ell=1; F=log Z; deltaF=1/2 int S^ij deltag_ij; T=-2pi S_ww; w=t+ix; c symbolic", 
+   "Assumptions" -> {"Beltrami directions complexified at a positive Euclidean metric", 
+     "nonzero Fourier denominators", "epsilon>0; sigma real", "mode integer>=1"}, 
+   "ScalarCurvature" -> 4*wardEps*Derivative[2, 0][wardMu][u$18282, v$18282], 
+   "Checks" -> <|"xCoba_scalar_curvature_linear" -> 0, "source_trace_anomaly" -> 0, 
+     "source_conservation_Ward" -> 0, "covariant_vs_canonical_contact" -> 0, 
+     "nonzero_temporal_zero_spatial_contact" -> 0, "vacuum_kernel_PSL_factor" -> 
+      (cc$18282*(-1 + n$18282)*n$18282*(1 + n$18282))/12 - (cc$18282*n$18282*(-1 + n$18282^2))/12, 
+     "geodesic_cutoff_inverse" -> 0, "renormalized_volume_Weyl_finite_part" -> 0, 
+     "density_to_anomaly_normalization" -> 0, "constant_Beltrami_linear_modulus" -> 0, 
+     "constant_Beltrami_Hessian" -> 0, "constant_Beltrami_stress_response" -> 0, 
+     "sinusoidal_Weyl_source_integral" -> 0|>, "AllResidualsZero" -> True, 
+   "WardResponse" -> (2*(h$18282*(I*nu$18282 - n$18282) + (cc$18282*(I*nu$18282 - n$18282)^3)/96))/
+     (I*nu$18282 + n$18282), "CanonicalKernel" -> (2*h$18282*n$18282 + (cc$18282*n$18282^3)/12)/
+     (I*nu$18282 + n$18282), "ContactPolynomial" -> 
+    h$18282 + (cc$18282*((3*(I*nu$18282 - n$18282)^2)/4 - 
+        (3*(I*nu$18282 - n$18282)*(I*nu$18282 + n$18282))/4 + (I*nu$18282 + n$18282)^2/4))/24, 
+   "VolumeWeylFinitePart" -> -1/4*grad2$18282 - (curvature$18282*sig$18282)/4|>, "Failed" -> False, 
+ "UnevaluatedComputations" -> False, "Messages" -> {}|>

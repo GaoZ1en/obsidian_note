@@ -1,0 +1,125 @@
+{
+  "sage_version": "10.9",
+  "sympy_version": "1.14.0",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "all five native Darboux pairs",
+      "passed": true
+    },
+    {
+      "label": "BV product identity on coordinate pairs",
+      "passed": true
+    },
+    {
+      "label": "full classical master equation",
+      "passed": true
+    },
+    {
+      "label": "right-action classical family",
+      "passed": true
+    },
+    {
+      "label": "nonzero full generator divergence",
+      "passed": true
+    },
+    {
+      "label": "full half-density source equation",
+      "passed": true
+    },
+    {
+      "label": "full quantum master equation",
+      "passed": true
+    },
+    {
+      "label": "full Euclidean quantum transport",
+      "passed": true
+    },
+    {
+      "label": "exact stationary graph and invertible Hessian",
+      "passed": true
+    },
+    {
+      "label": "tree action and generator on graph",
+      "passed": true
+    },
+    {
+      "label": "Hessian and source density give one-loop action",
+      "passed": true
+    },
+    {
+      "label": "normalized Wick insertion has nonzero density term",
+      "passed": true
+    },
+    {
+      "label": "one-loop transport including insertion",
+      "passed": true
+    },
+    {
+      "label": "negative control omitting one-loop generator",
+      "passed": true
+    },
+    {
+      "label": "exact Gaussian-normalized effective semidensity",
+      "passed": true
+    },
+    {
+      "label": "exact normalized Gaussian generator insertion",
+      "passed": true
+    },
+    {
+      "label": "exact retained quantum master equation",
+      "passed": true
+    },
+    {
+      "label": "exact retained quantum transport",
+      "passed": true
+    },
+    {
+      "label": "exact semidensity BV-Stokes identity",
+      "passed": true
+    },
+    {
+      "label": "one-loop expansion of exact answer",
+      "passed": true
+    },
+    {
+      "label": "tree-Jacobian defect is explicit classical BV exact",
+      "passed": true
+    },
+    {
+      "label": "H3 radial Laplacian conjugation for actual trace block",
+      "passed": true
+    },
+    {
+      "label": "explicit compact sine-transform spectral support",
+      "passed": true
+    },
+    {
+      "label": "regular origin and nonzero field",
+      "passed": true
+    },
+    {
+      "label": "exact radial norm primitive",
+      "passed": true
+    },
+    {
+      "label": "exact scalar L2 norm using bounded-tail squeeze",
+      "passed": true
+    },
+    {
+      "label": "nonnegative radial density with positive periodic subintervals",
+      "passed": true
+    }
+  ],
+  "source_sha256": "e6e6633018c48c054798321b328dd58de39545cbff5ea5932a8638886cb18d3e",
+  "exact_expressions": {
+    "W0": "(e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d",
+    "W1": "(-1/2*t^2*e^(-r^2*t))*p*c - r^2*t",
+    "W_exact": "(e^(-r^2*t - 1/2*hbar*t^2))*p*c + s*d + 2*b*r*t*c*d - hbar*r^2*t - 1/2*hbar^2*t^2",
+    "gamma_exact": "(-b*r^2 - b*hbar*t)*c",
+    "missing_insertion_residual": "(-t*e^(-r^2*t))*p*c",
+    "retained_QME_residual": "0"
+  },
+  "scope": "finite graded Gaussian/BV identities and elementary radial identities; no continuum determinant, QME, or numerical spectral approximation"
+}

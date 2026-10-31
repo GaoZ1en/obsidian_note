@@ -1,0 +1,74 @@
+{
+  "scope": "Static link/provenance/entry synchronization audit, not mathematical verification or a CAS rerun",
+  "entry_files": [
+    {
+      "file": "README.md",
+      "sha256": "3ce9d5a0b0146fface2305d9c8017c488512e620311d7cea65fb885c5221a6f9",
+      "lines": 27,
+      "local_link_occurrences": 15
+    },
+    {
+      "file": "00 Research report.md",
+      "sha256": "5b66f08c9534593b36926b2ae26419675892c8706424fa4044b8dba5f9556e77",
+      "lines": 188,
+      "local_link_occurrences": 29
+    },
+    {
+      "file": "04 Comparison and open problems.md",
+      "sha256": "389242a2b2140a68bff32b73e7c90b143da8537c08e4c1e770cc9d81931b050b",
+      "lines": 96,
+      "local_link_occurrences": 11
+    },
+    {
+      "file": "10 Vacuum quantum equivalence benchmark.md",
+      "sha256": "9c851badba20ea3d0f330b8825fcae2f1cd6126160bfce0d42588bb00fe769fe",
+      "lines": 595,
+      "local_link_occurrences": 13
+    },
+    {
+      "file": "11 Projective vacuum curvature and global lifts.md",
+      "sha256": "73f628f0064e3f115711ca5f2086ed752f7971bb9d96b77bb0eb39c2e5db844a",
+      "lines": 390,
+      "local_link_occurrences": 20
+    },
+    {
+      "file": "verification/README.md",
+      "sha256": "2066cf53bd1fde980e5187fc71c1bb66a1ef0401c9e048d39424e368ee7ceef2",
+      "lines": 123,
+      "local_link_occurrences": 111
+    },
+    {
+      "file": "reviews/Independent reviews.md",
+      "sha256": "6e62bc66d1d288969a0d14c88a9c42af24c002f3d5ca552d672002ecc2623a44",
+      "lines": 198,
+      "local_link_occurrences": 81
+    },
+    {
+      "file": "sources/Source evidence.md",
+      "sha256": "58d3db6064d3570717dbca6c88877cb43084f70d21001fb20c97880728cdac50",
+      "lines": 98,
+      "local_link_occurrences": 28
+    }
+  ],
+  "local_link_occurrences": 308,
+  "broken_local_links": [],
+  "parent_archive_byte_comparisons": 8,
+  "recorded_sage_runs": [
+    {
+      "stem": "vacuum_homogeneous_connection",
+      "result_count": 20,
+      "source_sha256": "f51c70a721d117608cecd270c0e52dd553e2d91ee0bc24031f1dcb539c650bdf",
+      "elapsedMs": 3698,
+      "actual_diagnostics_checked": true
+    },
+    {
+      "stem": "vacuum_trace_norm_bridge",
+      "result_count": 5,
+      "source_sha256": "cd1eac97e73062853088f5f799a00a563c15e936c29142c03d0407d78e80264a",
+      "elapsedMs": 3941,
+      "actual_diagnostics_checked": true
+    }
+  ],
+  "new_report_display_math_delimiters": 48,
+  "all_static_checks_passed": true
+}

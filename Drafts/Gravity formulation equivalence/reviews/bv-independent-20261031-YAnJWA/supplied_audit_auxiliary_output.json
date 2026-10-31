@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_557ea44cfa8c4f33b22458d0dfba695a|fc_0beee4d74a95702a016ae52923b05c81919a45cdfe8799ca7b",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nfrom hashlib import sha256\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/supplied_audit_auxiliary_check.py')\ns=p.read_text(encoding='utf-8')\nprint('Supplied-text audit source SHA256:',sha256(s.encode()).hexdigest())\nexec(compile(s,str(p),'exec'),{'__name__':'__main__'})",
+    "timeoutMs": 120000,
+    "maxOutputChars": 8000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Supplied-text audit source SHA256: 33cd7994f4bc12a20b0f91c9642093c51dbd3cc9ed13196e996170e557fd9af8\\nbulk contorsion quadratic = a q(U) vol: PASS\\nL inverse on all matrix entries: PASS\\nauxiliary Hessian determinant: PASS\\nauxiliary Hessian characteristic polynomial: PASS\\nadapted-frame bulk flux: PASS\\ncompleted wall cancels same-cutoff bulk flux: PASS\\nALL SUPPLIED-TEXT AUXILIARY CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"f795cf2681a6c90f32ef07eb4d64380943b7cba4d6048ace3359fa2cff4658ea\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3845,\n  \"transportStderr\": [],\n  \"codeSha256\": \"a9a4644e7c983f07e03f75a53e6eddf870ad6af821f9ca699bdccc9c680cd75d\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Supplied-text audit source SHA256: 33cd7994f4bc12a20b0f91c9642093c51dbd3cc9ed13196e996170e557fd9af8\nbulk contorsion quadratic = a q(U) vol: PASS\nL inverse on all matrix entries: PASS\nauxiliary Hessian determinant: PASS\nauxiliary Hessian characteristic polynomial: PASS\nadapted-frame bulk flux: PASS\ncompleted wall cancels same-cutoff bulk flux: PASS\nALL SUPPLIED-TEXT AUXILIARY CHECKS PASSED; SageMath 10.9\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "f795cf2681a6c90f32ef07eb4d64380943b7cba4d6048ace3359fa2cff4658ea",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3845,
+        "transportStderr": [],
+        "codeSha256": "a9a4644e7c983f07e03f75a53e6eddf870ad6af821f9ca699bdccc9c680cd75d"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Supplied-text audit source SHA256: 33cd7994f4bc12a20b0f91c9642093c51dbd3cc9ed13196e996170e557fd9af8\\nbulk contorsion quadratic = a q(U) vol: PASS\\nL inverse on all matrix entries: PASS\\nauxiliary Hessian determinant: PASS\\nauxiliary Hessian characteristic polynomial: PASS\\nadapted-frame bulk flux: PASS\\ncompleted wall cancels same-cutoff bulk flux: PASS\\nALL SUPPLIED-TEXT AUXILIARY CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"f795cf2681a6c90f32ef07eb4d64380943b7cba4d6048ace3359fa2cff4658ea\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3845,\n  \"transportStderr\": [],\n  \"codeSha256\": \"a9a4644e7c983f07e03f75a53e6eddf870ad6af821f9ca699bdccc9c680cd75d\"\n}"
+      }
+    ]
+  }
+}

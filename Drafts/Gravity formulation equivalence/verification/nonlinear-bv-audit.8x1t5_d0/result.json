@@ -1,0 +1,200 @@
+{
+  "scope": "Static archive/link/diagnostic audit, not a mathematical rerun, external-URL audit or historical-anchor sentence check.",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "local links and line bounds",
+      "passed": true
+    },
+    {
+      "label": "frozen source result and PDF hashes",
+      "passed": true
+    },
+    {
+      "label": "byte copies without rerunning",
+      "passed": true
+    },
+    {
+      "label": "parent exact result groups",
+      "passed": true
+    },
+    {
+      "label": "actual successful Sage return diagnostics",
+      "passed": true
+    },
+    {
+      "label": "main math displays and critical scope",
+      "passed": true
+    }
+  ],
+  "details": {
+    "local links and line bounds": {
+      "documents": 20,
+      "local_link_occurrences": 604,
+      "errors": []
+    },
+    "frozen source result and PDF hashes": {
+      "checked": 23,
+      "mismatches": []
+    },
+    "byte copies without rerunning": [
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/executed-source.py",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/result.json",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/residuals.sobj",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/actual-server-return.json",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/executed-source.py",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/result.json",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/exact.sobj",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/actual-server-return.json",
+        "passed": true
+      }
+    ],
+    "parent exact result groups": {
+      "group_counts": [
+        14,
+        8
+      ]
+    },
+    "actual successful Sage return diagnostics": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/actual-server-return.json",
+        "passed": true,
+        "pass_labels": 0,
+        "elapsedMs": 3574
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/actual-server-return.json",
+        "passed": true,
+        "pass_labels": 0,
+        "elapsedMs": 3612
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/all_checks_final_output.json",
+        "passed": true,
+        "pass_labels": 134,
+        "elapsedMs": 4025
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/berezinian_followup_output.json",
+        "passed": true,
+        "pass_labels": 9,
+        "elapsedMs": 3453
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/supplied_audit_auxiliary_output.json",
+        "passed": true,
+        "pass_labels": 6,
+        "elapsedMs": 3845
+      }
+    ],
+    "main math displays and critical scope": {
+      "display_pairs": 47,
+      "inline_pairs": 156,
+      "lines": 517
+    }
+  },
+  "snapshot": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "963068db6fe8d853f537a5a78d339ec69407999a8baa6067de37be62d401ea30"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "4ed6bb2d9f87ecfde2d90492e71579f9e0376a14f3278c65bfd4a9e3a889ff68"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "baea937cad6794240fbd3b201b4ab864d3ca5f24e4832e726d5a577790819196"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/16 Nonlinear BV map and finite density transport.md",
+      "sha256": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "1ecff433743d7de389c015b05c246b7d65cc4213b12f3373f6097359a04b42f0"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "0c029a34173c298dc9f7b07fcde82ac35bca39dba3d388e4aa1f9fdcbcd1aeab"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/Source evidence.md",
+      "sha256": "ff597380427ab5c92472e60e3773fbf33cc4fac91204c68f507939b42bac23c7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/BV equivalence source audit.md",
+      "sha256": "4c7fe5724ed4a26d3287a55e05720158a9c696bbfbd759b013797f1bb9d8d40d"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/README.md",
+      "sha256": "62d01ee9d97d49bcec5b36ef639c9af4b81713bdd319f9326645f035f1b96ce0"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/README.md",
+      "sha256": "4c010d77fea76692c465d5581f5b495c43f0531e5e0c343338a51c7964913506"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/derivation.md",
+      "sha256": "e8a55d1ed71004cba97de5a4b0ffa3eb6a7a57f78d8120f3e10ff2e70aabe059"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/FREEZE.md",
+      "sha256": "913920347d5fe46bf609beabe06667742423efd5498ac26c659bbacd98534247"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/berezinian_followup.md",
+      "sha256": "9bbe75fb16661a6d76bd2df33c804ff576d73eeae3df95ce0edffe2d7bd58b69"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/BEREZINIAN_FREEZE.md",
+      "sha256": "f304e33a60649cc9d7d94fa3ef075969b2521a57edfd683d342ee05aa1a5490b"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/supplied_text_audit.md",
+      "sha256": "51ef21d9c5fbc9ed336a18e2c00301404dcddf090e9d730ac2d6b52fc0730936"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-bv-independent-20261031-065603/derivation.md",
+      "sha256": "faf6d7acc2bee7a33820d7d30b1d9cc6e05c05ba617251d1c533341f83bb1682"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-bv-independent-20261031-065603/heat_prescription_followup.md",
+      "sha256": "29f55584c70f4d541a46c1bd86dad59d5f4be89bf92485ad55370ca69e061cf7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-bv-independent-20261031-065603/kernel_return_provenance.md",
+      "sha256": "565d675973c9bc46ad4863abb6ff05b83a01d993deb65749f3e997ec970feaf3"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-bv-independent-20261031-065603/typeII-berezinian-followup/exact_berezinian.md",
+      "sha256": "fb3da8327687dd04b1ab3c19d39692408fea27c403c352b7c341909369154227"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-bv-independent-20261031-065603/typeII-berezinian-followup/supplied_synthesis_audit.md",
+      "sha256": "53732db66c53fc2ba634a27bdf7c9d3f78206f9c6e4cde3ed2fea62d0eb36f27"
+    }
+  ]
+}

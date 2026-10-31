@@ -1,0 +1,283 @@
+{
+  "python": "3.12.14 (main, Sep  1 2026, 14:09:38) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "implementation": "binary64 log1p product and composite Simpson on log proper-time; no Wolfram result imported",
+  "q_product_checks": [
+    {
+      "tau": [
+        0.0,
+        0.7
+      ],
+      "abs_q": 0.012299093542812717,
+      "winding_log": 0.0003063255365679858,
+      "product_log": 0.0003063255365679858,
+      "residual": 0.0,
+      "pass_abs_1e-12": true
+    },
+    {
+      "tau": [
+        0.23,
+        0.4
+      ],
+      "abs_q": 0.08100259215794316,
+      "winding_log": -0.01298537824676006,
+      "product_log": -0.012985378246760064,
+      "residual": 3.469446951953614e-18,
+      "pass_abs_1e-12": true
+    },
+    {
+      "tau": [
+        -0.37,
+        0.11
+      ],
+      "abs_q": 0.5009993958482307,
+      "winding_log": 0.019182898931162047,
+      "product_log": 0.01918289893116205,
+      "residual": -3.469446951953614e-18,
+      "pass_abs_1e-12": true
+    },
+    {
+      "tau": [
+        0.49,
+        0.03
+      ],
+      "abs_q": 0.82820418130686,
+      "winding_log": 2.356242319523098,
+      "product_log": 2.3562423195230973,
+      "residual": 8.881784197001252e-16,
+      "pass_abs_1e-12": true
+    },
+    {
+      "tau": [
+        0.0,
+        0.02
+      ],
+      "abs_q": 0.8819113782981763,
+      "winding_log": 17.984803988918806,
+      "product_log": 17.984803988918802,
+      "residual": 3.552713678800501e-15,
+      "pass_abs_1e-12": true
+    }
+  ],
+  "quadratures": [
+    {
+      "beta_theta_m": [
+        1.7,
+        0.4,
+        1
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        0.05061622427412782,
+        0.05061622427412782
+      ],
+      "closed_form": 0.050616224274127805,
+      "fine_residual": 1.3877787807814457e-17,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        4262,
+        8523
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        1.7,
+        0.4,
+        3
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        -1.840816800140402e-05,
+        -1.840816800140402e-05
+      ],
+      "closed_form": -1.8408168001404025e-05,
+      "fine_residual": 3.3881317890172014e-21,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        5521,
+        11041
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        1.7,
+        0.4,
+        7
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        1.0217390817788334e-11,
+        1.0217390817788334e-11
+      ],
+      "closed_form": 1.0217390817788334e-11,
+      "fine_residual": 0.0,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        6500,
+        13000
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        0.3,
+        1.2,
+        1
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        -1.0910129485262745,
+        -1.0910129485262745
+      ],
+      "closed_form": -1.0910129485262743,
+      "fine_residual": -2.220446049250313e-16,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        2279,
+        4557
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        0.3,
+        1.2,
+        3
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        0.056594664713689534,
+        0.056594664713689534
+      ],
+      "closed_form": 0.05659466471368952,
+      "fine_residual": 1.3877787807814457e-17,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        3536,
+        7070
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        0.3,
+        1.2,
+        7
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        -0.0014895299296191263,
+        -0.0014895299296191263
+      ],
+      "closed_form": -0.001489529929619126,
+      "fine_residual": -2.168404344971009e-19,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        4507,
+        9014
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        3.1,
+        0.0,
+        1
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        0.004250335496619189,
+        0.004250335496619189
+      ],
+      "closed_form": 0.0042503354966191885,
+      "fine_residual": 8.673617379884035e-19,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        4952,
+        9902
+      ],
+      "pass_abs_1e-12": true
+    },
+    {
+      "beta_theta_m": [
+        3.1,
+        0.0,
+        3
+      ],
+      "x_range": [
+        -12.0,
+        9.0
+      ],
+      "panels": [
+        12000,
+        24000
+      ],
+      "simpson_values": [
+        5.572769553756732e-09,
+        5.572769553756732e-09
+      ],
+      "closed_form": 5.57276955375673e-09,
+      "fine_residual": 2.481541837659083e-24,
+      "refinement_delta": 0.0,
+      "underflow_zero_samples": [
+        6216,
+        12431
+      ],
+      "pass_abs_1e-12": true
+    }
+  ],
+  "warnings": [],
+  "expected_underflow_policy": "Exponential tails at large absolute log-time can round to zero; counted above, only underflow suppression enabled.",
+  "all_passed": true
+}

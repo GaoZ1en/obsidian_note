@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_c32cf1560e684d5a9a35646bb92b334e|fc_0bb219d042654a58016ae544f48e788191939083c2ec402d03",
+  "sessionId": "7acebc5c-3d28-4b18-a1c2-991813491893",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nsource=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_sympy_check.py')\nexec(compile(source.read_text(encoding='utf-8'),str(source),'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Independent bitmask exterior implementation; SymPy 1.14.0\\n212/212 exact residual checks passed.\\nS_t = ((r**2 + u)**2/2) + (exp(t*u))*p*c + (1)*s*d + (2*b*r*t)*c*d + (2*r)*d*v\\ny_t = (-r**2) + (-t*exp(-r**2*t))*p*c\\nS_eff_t = (exp(-r**2*t))*p*c + (1)*s*d + (2*b*r*t)*c*d\\ngamma_t = (-b*r**2)*c\\nUV bracket on graph = (2*b*r)*c*d\\nnaive projection defect = (-2*r*t*exp(r**2*t))*c\\nUV Hessian = (1) + (t**2*exp(-r**2*t))*p*c\\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4eea9ecf894173785158c846b23c5b477da0887a960bdaec960ef2c1e5690bc1\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 8062,\n  \"transportStderr\": [],\n  \"codeSha256\": \"38f147277d21d6c5de0285055967a1f58cfde5a6e395323e31325c9f1c5a6d15\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Independent bitmask exterior implementation; SymPy 1.14.0\n212/212 exact residual checks passed.\nS_t = ((r**2 + u)**2/2) + (exp(t*u))*p*c + (1)*s*d + (2*b*r*t)*c*d + (2*r)*d*v\ny_t = (-r**2) + (-t*exp(-r**2*t))*p*c\nS_eff_t = (exp(-r**2*t))*p*c + (1)*s*d + (2*b*r*t)*c*d\ngamma_t = (-b*r**2)*c\nUV bracket on graph = (2*b*r)*c*d\nnaive projection defect = (-2*r*t*exp(r**2*t))*c\nUV Hessian = (1) + (t**2*exp(-r**2*t))*p*c\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "4eea9ecf894173785158c846b23c5b477da0887a960bdaec960ef2c1e5690bc1",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "bitcount function is deprecated",
+            "truncated": false,
+            "sha256": "2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be"
+          }
+        ],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 8062,
+        "transportStderr": [],
+        "codeSha256": "38f147277d21d6c5de0285055967a1f58cfde5a6e395323e31325c9f1c5a6d15"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Independent bitmask exterior implementation; SymPy 1.14.0\\n212/212 exact residual checks passed.\\nS_t = ((r**2 + u)**2/2) + (exp(t*u))*p*c + (1)*s*d + (2*b*r*t)*c*d + (2*r)*d*v\\ny_t = (-r**2) + (-t*exp(-r**2*t))*p*c\\nS_eff_t = (exp(-r**2*t))*p*c + (1)*s*d + (2*b*r*t)*c*d\\ngamma_t = (-b*r**2)*c\\nUV bracket on graph = (2*b*r)*c*d\\nnaive projection defect = (-2*r*t*exp(r**2*t))*c\\nUV Hessian = (1) + (t**2*exp(-r**2*t))*p*c\\nSaved: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4eea9ecf894173785158c846b23c5b477da0887a960bdaec960ef2c1e5690bc1\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"bitcount function is deprecated\",\n      \"truncated\": false,\n      \"sha256\": \"2689f6e8c95d5554c770ac27a956ce73299fdf961b5c25ced7a1f5310ba736be\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 8062,\n  \"transportStderr\": [],\n  \"codeSha256\": \"38f147277d21d6c5de0285055967a1f58cfde5a6e395323e31325c9f1c5a6d15\"\n}"
+      }
+    ]
+  }
+}

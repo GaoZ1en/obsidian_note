@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_08325e201ffa42a291369aa9868c7d9b|fc_0f57c9d4fca99a35016ae55c1984388191827dc073d80d19af",
+  "sessionId": "6782879e-0768-4665-9ca1-eff66c5647ce",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-generator-insertion-20261031.H2YFLo/free_action_checks.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"sage_version\\\": \\\"10.9\\\",\\n  \\\"conventions\\\": \\\"normal orthonormal frame, epsilon123=1, full first jets, coefficient-first (f,E)=1 implies (S2,E)=+EL_f\\\",\\n  \\\"residuals\\\": {\\n    \\\"EL_f_0_0\\\": \\\"0\\\",\\n    \\\"EL_f_0_1\\\": \\\"0\\\",\\n    \\\"EL_f_0_2\\\": \\\"0\\\",\\n    \\\"EL_f_1_0\\\": \\\"0\\\",\\n    \\\"EL_f_1_1\\\": \\\"0\\\",\\n    \\\"EL_f_1_2\\\": \\\"0\\\",\\n    \\\"EL_f_2_0\\\": \\\"0\\\",\\n    \\\"EL_f_2_1\\\": \\\"0\\\",\\n    \\\"EL_f_2_2\\\": \\\"0\\\",\\n    \\\"trace_T\\\": \\\"0\\\",\\n    \\\"trace_curl_is_negative_divergence\\\": \\\"0\\\",\\n    \\\"contracted_EOM_density\\\": \\\"0\\\"\\n  },\\n  \\\"checks\\\": {\\n    \\\"EL_f_0_0\\\": true,\\n    \\\"EL_f_0_1\\\": true,\\n    \\\"EL_f_0_2\\\": true,\\n    \\\"EL_f_1_0\\\": true,\\n    \\\"EL_f_1_1\\\": true,\\n    \\\"EL_f_1_2\\\": true,\\n    \\\"EL_f_2_0\\\": true,\\n    \\\"EL_f_2_1\\\": true,\\n    \\\"EL_f_2_2\\\": true,\\n    \\\"trace_T\\\": true,\\n    \\\"trace_curl_is_negative_divergence\\\": true,\\n    \\\"contracted_EOM_density\\\": true\\n  },\\n  \\\"failures\\\": []\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4ae6997392f1b856da06b4c4565864dafa6c1912e445d5e4d239500dccc50d5e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3828,\n  \"transportStderr\": [],\n  \"codeSha256\": \"bd9eccb32393f8b272d3bc86df7067382aa7e12efac7b37ac4eb32caa101c19a\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"sage_version\": \"10.9\",\n  \"conventions\": \"normal orthonormal frame, epsilon123=1, full first jets, coefficient-first (f,E)=1 implies (S2,E)=+EL_f\",\n  \"residuals\": {\n    \"EL_f_0_0\": \"0\",\n    \"EL_f_0_1\": \"0\",\n    \"EL_f_0_2\": \"0\",\n    \"EL_f_1_0\": \"0\",\n    \"EL_f_1_1\": \"0\",\n    \"EL_f_1_2\": \"0\",\n    \"EL_f_2_0\": \"0\",\n    \"EL_f_2_1\": \"0\",\n    \"EL_f_2_2\": \"0\",\n    \"trace_T\": \"0\",\n    \"trace_curl_is_negative_divergence\": \"0\",\n    \"contracted_EOM_density\": \"0\"\n  },\n  \"checks\": {\n    \"EL_f_0_0\": true,\n    \"EL_f_0_1\": true,\n    \"EL_f_0_2\": true,\n    \"EL_f_1_0\": true,\n    \"EL_f_1_1\": true,\n    \"EL_f_1_2\": true,\n    \"EL_f_2_0\": true,\n    \"EL_f_2_1\": true,\n    \"EL_f_2_2\": true,\n    \"trace_T\": true,\n    \"trace_curl_is_negative_divergence\": true,\n    \"contracted_EOM_density\": true\n  },\n  \"failures\": []\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "4ae6997392f1b856da06b4c4565864dafa6c1912e445d5e4d239500dccc50d5e",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3828,
+        "transportStderr": [],
+        "codeSha256": "bd9eccb32393f8b272d3bc86df7067382aa7e12efac7b37ac4eb32caa101c19a"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"sage_version\\\": \\\"10.9\\\",\\n  \\\"conventions\\\": \\\"normal orthonormal frame, epsilon123=1, full first jets, coefficient-first (f,E)=1 implies (S2,E)=+EL_f\\\",\\n  \\\"residuals\\\": {\\n    \\\"EL_f_0_0\\\": \\\"0\\\",\\n    \\\"EL_f_0_1\\\": \\\"0\\\",\\n    \\\"EL_f_0_2\\\": \\\"0\\\",\\n    \\\"EL_f_1_0\\\": \\\"0\\\",\\n    \\\"EL_f_1_1\\\": \\\"0\\\",\\n    \\\"EL_f_1_2\\\": \\\"0\\\",\\n    \\\"EL_f_2_0\\\": \\\"0\\\",\\n    \\\"EL_f_2_1\\\": \\\"0\\\",\\n    \\\"EL_f_2_2\\\": \\\"0\\\",\\n    \\\"trace_T\\\": \\\"0\\\",\\n    \\\"trace_curl_is_negative_divergence\\\": \\\"0\\\",\\n    \\\"contracted_EOM_density\\\": \\\"0\\\"\\n  },\\n  \\\"checks\\\": {\\n    \\\"EL_f_0_0\\\": true,\\n    \\\"EL_f_0_1\\\": true,\\n    \\\"EL_f_0_2\\\": true,\\n    \\\"EL_f_1_0\\\": true,\\n    \\\"EL_f_1_1\\\": true,\\n    \\\"EL_f_1_2\\\": true,\\n    \\\"EL_f_2_0\\\": true,\\n    \\\"EL_f_2_1\\\": true,\\n    \\\"EL_f_2_2\\\": true,\\n    \\\"trace_T\\\": true,\\n    \\\"trace_curl_is_negative_divergence\\\": true,\\n    \\\"contracted_EOM_density\\\": true\\n  },\\n  \\\"failures\\\": []\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4ae6997392f1b856da06b4c4565864dafa6c1912e445d5e4d239500dccc50d5e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3828,\n  \"transportStderr\": [],\n  \"codeSha256\": \"bd9eccb32393f8b272d3bc86df7067382aa7e12efac7b37ac4eb32caa101c19a\"\n}"
+      }
+    ]
+  }
+}

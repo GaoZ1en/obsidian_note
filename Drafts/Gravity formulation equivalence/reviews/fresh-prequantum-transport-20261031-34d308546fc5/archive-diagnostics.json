@@ -1,0 +1,43 @@
+{
+  "archive_kind": "Existing completed CAS calls; fresh derivation, not a candidate audit",
+  "cas_rerun": false,
+  "provenance": "The derivation and both CAS calls preceded the parent request to archive. No parent candidate or other review was read.",
+  "diagnostic_scope": "The raw JSON records preserve all server-returned data. The calls returned an explicit Messages list, empty in both cases. Separate process exit status, elapsed execution time, kernel version, and standalone stdout/stderr fields were not provided by the server; none have been invented.",
+  "message_capture": "Both original source strings used Block[{$Messages = {}, $MessageList = {}}, ...] and returned $MessageList. This archive does not rerun or alter that instrumentation.",
+  "records": [
+    {
+      "original_record": "/Users/koishi/.dsh/research-results/session-34d308546fc5/3a38d2dacf30-research-result.json",
+      "tool": "mcp__mathematica__evaluate_mathematica",
+      "call_id": "call_ffbf33ea003c4b7586a9c90eb389c56c|fc_062c2dd512a37c76016ae4e2e1f6788191ba3522bc009877c2",
+      "server_record_session_id": "71e90b3d-4c5c-4f6a-b30d-e5b40bf4a597",
+      "completeness": "server-returned",
+      "upstream_truncated": false,
+      "submitted_source_equals_returned_source_echo": true,
+      "messages": [],
+      "failed_or_aborted_present_in_returned_result": false,
+      "sha256": {
+        "01-general-commutator.raw.json": "fa1de9c36c51861fea234d5bde71dfbcd2736581634cd1853fdd7b92979823bc",
+        "01-general-commutator.executed.wl": "645d37b372472cb9953d50cd6062d590bef5f1a8ac90a27afa077c45b43f87c7",
+        "01-general-commutator.result.txt": "416727e9be51749d9e8ad020e817c7d417067ea1c2f1e1177fcce7e6155f57c6"
+      },
+      "raw_archive_equals_original_bytes": true
+    },
+    {
+      "original_record": "/Users/koishi/.dsh/research-results/session-34d308546fc5/1d2fd090f235-research-result.json",
+      "tool": "mcp__mathematica__evaluate_mathematica",
+      "call_id": "call_644b6d2ad56f4836a6502cdbc3229513|fc_062c2dd512a37c76016ae4e3132e548191bee6f9234e3c0434",
+      "server_record_session_id": "71e90b3d-4c5c-4f6a-b30d-e5b40bf4a597",
+      "completeness": "server-returned",
+      "upstream_truncated": false,
+      "submitted_source_equals_returned_source_echo": true,
+      "messages": [],
+      "failed_or_aborted_present_in_returned_result": false,
+      "sha256": {
+        "02-shear-intertwiner.raw.json": "c72d52640dd05e731b98deb72a1ab02d6847fc53891b411cf3176f6cdb232457",
+        "02-shear-intertwiner.executed.wl": "a181ebece792cae723d6ed382150fdb9012f0345a2a57a5047d2655a2a21aa6a",
+        "02-shear-intertwiner.result.txt": "0c16bc1bf9c661d45a2d5c408147a514f5b6cd72377cd25a4e28ae80764cde8f"
+      },
+      "raw_archive_equals_original_bytes": true
+    }
+  ]
+}

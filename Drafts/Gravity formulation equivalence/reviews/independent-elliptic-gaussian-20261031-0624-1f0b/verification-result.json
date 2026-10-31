@@ -1,0 +1,52 @@
+{
+  "provenance": "Fresh independent derivation; no parent or reviewer conclusions used.",
+  "source_sha256": "e902ce771d2503f940722da3058aa99c72cb072599fc5f6fc04750dd51d5e252",
+  "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+  "python_version": "3.14.3",
+  "checks": {
+    "B_is_symmetric": true,
+    "B_irreducible_split": true,
+    "B_squared": true,
+    "Tadj_T_is_two": true,
+    "T_Tadj_is_twice_antisym": true,
+    "algebraic_square_potential": true,
+    "gauge_scalar_offdiagonal": true,
+    "gauge_HG_derivative": true,
+    "curl_gradient_principal_zero": true,
+    "gauge_HG_curvature": true,
+    "twisted_Weitzenbock_internal_term": true,
+    "field_square_first_order_cancellation": true,
+    "L_derivative_is_skew": true,
+    "L_potential_is_symmetric": true,
+    "elliptic_principal_square": true,
+    "no_first_order_term_in_square": true,
+    "grading_unitary_real": true,
+    "grading_square_minus_one": true,
+    "grading_derivative_anticommutes": true,
+    "grading_potential_anticommutes": true,
+    "direct_CS_quadratic_sign_and_half": true,
+    "thermal_gravity_character_identity": true
+  },
+  "B_characteristic_polynomial": "(x - 2) * (x - 1)^3 * (x + 1)^5",
+  "L0_characteristic_polynomial": "(x - 2)^4 * (x + 2)^4 * (x - 1)^8 * (x + 1)^8",
+  "principal_series_blocks": {
+    "m=0": {
+      "L_block_size": 8,
+      "eigenvalues_each_sign": 4,
+      "square": "lambda^2+5"
+    },
+    "|m|=1": {
+      "L_block_size_per_helicity": 6,
+      "eigenvalues_each_sign": 3,
+      "square": "lambda^2+4"
+    },
+    "|m|=2": {
+      "L_block_size_per_helicity": 2,
+      "eigenvalues_each_sign": 1,
+      "square": "lambda^2+1"
+    }
+  },
+  "limitations": [
+    "Finite algebra checks do not prove essential selfadjointness, Sobolev domains, Weyl sequence estimates, or the thermal trace formula. These are separately derived in derivation.md."
+  ]
+}

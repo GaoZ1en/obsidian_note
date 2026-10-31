@@ -1,0 +1,15 @@
+<|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", "Chart" -> {zz, xx1, xx2}, 
+ "Assumptions" -> "z>0, smooth arbitrary ff and vector potentials aa1,aa2,aa3; all arrays \
+covariant; scalar rank handled explicitly", 
+ "Metric" -> {{zz^(-2), 0, 0}, {0, zz^(-2), 0}, {0, 0, zz^(-2)}}, 
+ "Christoffel" -> {{{-zz^(-1), 0, 0}, {0, zz^(-1), 0}, {0, 0, zz^(-1)}}, 
+   {{0, -zz^(-1), 0}, {-zz^(-1), 0, 0}, {0, 0, 0}}, {{0, 0, -zz^(-1)}, {0, 0, 0}, 
+    {-zz^(-1), 0, 0}}}, "Ricci" -> {{-2/zz^2, 0, 0}, {0, -2/zz^2, 0}, {0, 0, -2/zz^2}}, 
+ "RicciResidual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "DeDonderFPGhostResidual" -> {0, 0, 0}, 
+ "GradientIntertwiningResidual" -> {0, 0, 0}, "ScalarYorkIntertwiningResidual" -> 
+  {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "TransverseVectorDivergence" -> 0, 
+ "VectorYorkIntertwiningResidual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+ "Tests" -> <|"Ricci=-2g" -> True, "DeDonderFPOperator" -> True, "GradientIntertwining" -> True, 
+   "ScalarYorkIntertwining" -> True, "TransverseVectorDivergence" -> True, 
+   "VectorYorkIntertwining" -> True|>, "AllTestsPassed" -> True, "FailedOrAborted" -> False, 
+ "Messages" -> {}|>

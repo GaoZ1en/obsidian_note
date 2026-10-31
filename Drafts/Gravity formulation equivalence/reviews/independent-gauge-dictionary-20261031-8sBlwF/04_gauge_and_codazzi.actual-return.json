@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_7242703ae51f473580391f36001054b2|fc_02b378e47dbd0600016ae50f4efd0881918f0c3df13bc590c0",
+  "sessionId": "ab579ab6-a475-44ec-8723-087540b80446",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "profile": "core",
+    "code": "ClearAll[r,ph,t,coords,gg,gi,ga,cov1,cov2,spin,curl,v,h]; coords={r,ph,t}; gg=DiagonalMatrix[{1,Sinh[r]^2,Cosh[r]^2}]; gi=Simplify[Inverse[gg]]; $Assumptions=r>0;\nga=Table[FullSimplify[Sum[gi[[i,l]](D[gg[[l,j]],coords[[k]]]+D[gg[[l,k]],coords[[j]]]-D[gg[[j,k]],coords[[l]]]),{l,3}]/2],{i,3},{j,3},{k,3}];\ncov1[x_List]:=Table[D[x[[j]],coords[[i]]]-Sum[ga[[l,i,j]]x[[l]],{l,3}],{i,3},{j,3}];\ncov2[x_List]:=Table[D[x[[i,j]],coords[[k]]]-Sum[ga[[l,k,i]]x[[l,j]]+ga[[l,k,j]]x[[i,l]],{l,3}],{k,3},{i,3},{j,3}];\nspin[x_List]:=Module[{dx=cov2[x]},Table[Sinh[r]Cosh[r]Sum[Signature[{nu,j,k}]gi[[j,a]]gi[[k,b]]dx[[a,mu,b]],{j,3},{k,3},{a,3},{b,3}]/2,{mu,3},{nu,3}]];\ncurl[x_List]:=Table[Sinh[r]Cosh[r] Sum[Signature[{i,j,k}]gi[[j,a]]gi[[k,b]](D[x[[b]],coords[[a]]]-D[x[[a]],coords[[b]]]),{j,3},{k,3},{a,3},{b,3}]/2,{i,3}];\nv=Table[Symbol[\"v\"<>ToString[i]][r,ph,t],{i,3}];\nkg=cov1[v]+Transpose[cov1[v]];\nexpected=Table[Sinh[r]Cosh[r]Sum[Signature[{mu,nu,s}]gi[[s,l]]v[[l]],{s,3},{l,3}],{mu,3},{nu,3}];\ngaugeResidual=Map[FullSimplify,spin[kg]-cov1[curl[v]/2]-expected,{2}];\nh=Table[Symbol[\"h\"<>ToString[Min[i,j]]<>ToString[Max[i,j]]][r,ph,t],{i,3},{j,3}];\ndh=cov2[h]; div=Table[Sum[gi[[k,i]]dh[[k,i,j]],{k,3},{i,3}],{j,3}];\nsecondContract=Table[Sum[gi[[k,i]](D[dh[[nu,i,rho]],coords[[k]]]-Sum[ga[[l,k,nu]]dh[[l,i,rho]]+ga[[l,k,i]]dh[[nu,l,rho]]+ga[[l,k,rho]]dh[[nu,i,l]],{l,3}]),{k,3},{i,3}],{nu,3},{rho,3}];\ncommResidual=Map[FullSimplify,secondContract-cov1[div]+3h-gg Sum[gi[[i,j]]h[[i,j]],{i,3},{j,3}],{2}];\n<|\"TorsionFreeGaugeIdentityResidual\"->gaugeResidual,\"CodazziCurvatureCommutatorResidual\"->commResidual,\"BothAllZero\"->(gaugeResidual===ConstantArray[0,{3,3}]&&commResidual===ConstantArray[0,{3,3}])|>",
+    "timeoutMs": 180000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"TorsionFreeGaugeIdentityResidual\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"CodazziCurvatureCommutatorResidual\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"BothAllZero\\\" -> True|>\",\n  \"resultSha256\": \"c4cb2f2442373b63cb798987d082c334ee330d646261f1f7054dc8b55de34e84\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3115,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "core",
+        "result": "<|\"TorsionFreeGaugeIdentityResidual\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"CodazziCurvatureCommutatorResidual\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"BothAllZero\" -> True|>",
+        "resultSha256": "c4cb2f2442373b63cb798987d082c334ee330d646261f1f7054dc8b55de34e84",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3115,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"TorsionFreeGaugeIdentityResidual\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"CodazziCurvatureCommutatorResidual\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"BothAllZero\\\" -> True|>\",\n  \"resultSha256\": \"c4cb2f2442373b63cb798987d082c334ee330d646261f1f7054dc8b55de34e84\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3115,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

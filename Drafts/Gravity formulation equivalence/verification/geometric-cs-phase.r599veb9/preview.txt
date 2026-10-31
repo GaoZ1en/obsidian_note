@@ -1,0 +1,12 @@
+<|"Residuals" -> <|"Hermitian_block_characteristic" -> 0, "Schur_product" -> 0, 
+   "positive_spectral_pair_product" -> 0, "subordination_leading" -> 0, 
+   "subordination_subleading" -> 0, "generic_shift_count" -> 0, "even_form_shifted_a2" -> 0, 
+   "negative_spectral_count" -> 0, "Log_minus_phase" -> 0|>, "AllResidualsZero" -> True, 
+ "NegativeCountPerRenormalizedVolume" -> -51/(8*Pi^2), "LogDetPhasePerRenormalizedVolume" -> 
+  ((51*I)/8)/Pi, "Assumptions" -> "Heat of L=Delta_even+25/4: rank a0=4, a2=-23. No L2 harmonic \
+forms or removed zero modes; nonidentity Poisson heat has no constant. These analytic premises are \
+not proved by this script.", "Failed" -> False, "UnevaluatedComputations" -> False, 
+ "Messages" -> {}, "KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Source" -> "/Users/koishi/Documents/Note/Drafts/Gravity formulation \
+equivalence/verification/geometric_cs_phase_counterexample.wl", 
+ "SourceSHA256" -> "a260d954d14947e0459495e9707ed13b064633e6490957dedde245d8a94f17de"|>

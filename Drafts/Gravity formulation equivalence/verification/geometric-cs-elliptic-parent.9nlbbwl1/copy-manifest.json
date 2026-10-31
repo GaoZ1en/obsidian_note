@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric_cs_elliptic_bridge.wl",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/executed-source.wl",
+    "sha256": "5e2978918c580423a2a5bec2c6a5b80db209de6e08f1f1449d5534503c505379",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/preview.txt",
+    "sha256": "4703789bf9bd84fb399fa16959868e563be8308b4bba5959e0e81b302326c2b5",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/result.wxf",
+    "sha256": "479a3ba8e609ec077ff2356920f2beda8fb00f8e312818ea4bfd25ab214f35d3",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/8d4e002c2116-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/actual-server-return.json",
+    "sha256": "8b8c1b77fa4e1173f698046f3015a82b44eccf57d3da1246aa0af611861c18c6",
+    "byte_equal": true
+  }
+]

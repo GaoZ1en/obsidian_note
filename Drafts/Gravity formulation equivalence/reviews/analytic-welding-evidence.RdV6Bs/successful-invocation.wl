@@ -1,0 +1,1 @@
+Get["/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/checks.wl"]

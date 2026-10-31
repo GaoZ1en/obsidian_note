@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_aaabd36ab3df415798659e6df09f92a5|fc_0bb219d042654a58016ae5473f10148191b15ac78ebae571a8",
+  "sessionId": "7acebc5c-3d28-4b18-a1c2-991813491893",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nsource=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_orientation_check.py')\nexec(compile(source.read_text(encoding='utf-8'),str(source),'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 3000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"185/185 exact inverse-orientation residuals passed.\\nRight-projection defect = (2*r*t*e^(-r^2*t))*c\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c22d715985f5966746daafbf045dcf79a1023d53dc44f99a78bfd43a8697443d\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 6855,\n  \"transportStderr\": [],\n  \"codeSha256\": \"c2b88be0160255b951b6de1582da565c26efa46fe2d7c4bd8942970eb08d49a7\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "185/185 exact inverse-orientation residuals passed.\nRight-projection defect = (2*r*t*e^(-r^2*t))*c\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "c22d715985f5966746daafbf045dcf79a1023d53dc44f99a78bfd43a8697443d",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 6855,
+        "transportStderr": [],
+        "codeSha256": "c2b88be0160255b951b6de1582da565c26efa46fe2d7c4bd8942970eb08d49a7"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"185/185 exact inverse-orientation residuals passed.\\nRight-projection defect = (2*r*t*e^(-r^2*t))*c\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c22d715985f5966746daafbf045dcf79a1023d53dc44f99a78bfd43a8697443d\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 6855,\n  \"transportStderr\": [],\n  \"codeSha256\": \"c2b88be0160255b951b6de1582da565c26efa46fe2d7c4bd8942970eb08d49a7\"\n}"
+      }
+    ]
+  }
+}

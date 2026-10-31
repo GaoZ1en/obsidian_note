@@ -1,0 +1,32 @@
+{
+  "scope": "Exact physical gravitational cubic source and quartic propagator normalization; no complete-space analytic or loop claim. Concentrating test has alpha=lam(P1 e1+J2 e2+J3 e3).",
+  "sage_version": "10.9",
+  "checks": [
+    {
+      "label": "all real gravitational Lie Jacobi triples",
+      "passed": true
+    },
+    {
+      "label": "invariant cross pairing",
+      "passed": true
+    },
+    {
+      "label": "normalized cubic Palatini equality",
+      "passed": true
+    },
+    {
+      "label": "all eighteen physical cubic gradients",
+      "passed": true
+    },
+    {
+      "label": "concentrating admissible coframe cubic coefficient",
+      "passed": true
+    },
+    {
+      "label": "physical stationary quartic Schur coefficient",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "source_sha256": "b5cb8bed9cec89894ea48b0cc45deb13afe49e987260fb7e1cba80eaa60e029c"
+}

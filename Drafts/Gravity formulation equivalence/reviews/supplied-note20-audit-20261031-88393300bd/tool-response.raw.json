@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_e62206fc534641ac86f4195484cba8ae|fc_024294ed9c2ea992016ae552d21f288191a99b7129e5b1aee0",
+  "sessionId": "ce95a5d6-5982-4193-bb0a-c78334df5a55",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "import runpy\n_audit=runpy.run_path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/supplied-note20-audit-20261031-88393300bd/check_super_chain_rule.py',run_name='__main__')\nprint('Supplied-text audit only; frozen independent engine was not imported or rerun.')",
+    "timeoutMs": 60000,
+    "maxOutputChars": 4000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS: 18 narrow exact checks; ordinary-transpose residual = -2*A*alpha; graded residual = 0.\\nSupplied-text audit only; frozen independent engine was not imported or rerun.\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"64de60762d7a8f61f4d9010fa8ab672de7b92ada47510b0ae2209da18b39f555\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3994,\n  \"transportStderr\": [],\n  \"codeSha256\": \"f25291f75875205d07b001ca25fbe6f4e4d4af7417c193ba244cef7a72039b0e\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "PASS: 18 narrow exact checks; ordinary-transpose residual = -2*A*alpha; graded residual = 0.\nSupplied-text audit only; frozen independent engine was not imported or rerun.\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "64de60762d7a8f61f4d9010fa8ab672de7b92ada47510b0ae2209da18b39f555",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3994,
+        "transportStderr": [],
+        "codeSha256": "f25291f75875205d07b001ca25fbe6f4e4d4af7417c193ba244cef7a72039b0e"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS: 18 narrow exact checks; ordinary-transpose residual = -2*A*alpha; graded residual = 0.\\nSupplied-text audit only; frozen independent engine was not imported or rerun.\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"64de60762d7a8f61f4d9010fa8ab672de7b92ada47510b0ae2209da18b39f555\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3994,\n  \"transportStderr\": [],\n  \"codeSha256\": \"f25291f75875205d07b001ca25fbe6f4e4d4af7417c193ba244cef7a72039b0e\"\n}"
+      }
+    ]
+  }
+}

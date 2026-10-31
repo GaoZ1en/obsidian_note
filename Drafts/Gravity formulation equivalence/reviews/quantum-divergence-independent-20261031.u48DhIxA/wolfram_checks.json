@@ -1,0 +1,17 @@
+{
+	"Checks":{
+		"physical_trace_exact":true,
+		"T_trace_minus_identity_trace":true,
+		"actual_a1_physical_contraction":true,
+		"fixed_heat_semidensity_defect_4trA":true,
+		"projection_idempotence":true,
+		"leakage_square_trace_one":true,
+		"linear_log_insertion_zero":true,
+		"compressed_exponential_eigenvalue":true,
+		"compressed_log_quadratic_half":true,
+		"radial_integral_for_a_gt_two":true
+	},
+	"AllPassed":true,
+	"Messages":[],
+	"ExcludedFailures":[]
+}

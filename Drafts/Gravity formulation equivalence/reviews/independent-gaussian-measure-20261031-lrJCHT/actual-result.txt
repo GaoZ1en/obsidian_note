@@ -1,0 +1,55 @@
+<|"Results" -> <|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+   "FiniteBlockIdentity" -> <|"ShearDeterminant" -> 1, "CongruenceResidual" -> 
+      {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}}, 
+     "FullDeterminant" -> -(c1*c2*c3*(h12^2 - h11*h22)), "FactorizationResidual" -> 0|>, 
+   "IndefiniteToy" -> <|"H" -> {{7, 0}, {0, 11}}, "C_NotActualGravityAuxiliary" -> {{-2, 0, 0}, {0, 3, 0}, 
+      {0, 0, 5}}, "D" -> {{1, 2}, {3, -1}, {2, 4}}, "Hessian" -> {{52, 27, 2, -9, -10}, {27, 86, 4, 3, -20}, 
+      {2, 4, -2, 0, 0}, {-9, 3, 0, 3, 0}, {-10, -20, 0, 0, 5}}, "Determinant" -> -2310, 
+     "NumericalEigenvalues" -> {106.0591239344066597655335166257129186388`30., 
+       39.50261162994109236270670516667794100296`30., 
+       -2.5443581662461879891397236040091557292823786649052167643473`30., 
+       0.6484300668345673100219385167080734051764631211034088755809`30., 
+       0.3341925350638685508775632949106631712281860770014927344832`30.}, 
+     "PositiveNegativeZeroCounts" -> <|1 -> 4, -1 -> 1|>|>, "OneModeProjectionCounterexample" -> 
+    <|"FullMatrix" -> {{1 + lambda^2, 0, -lambda}, {0, 1, 0}, {-lambda, 0, 1}}, "FullDeterminant" -> 1, 
+     "CutMatrix" -> {{1 + lambda^2, 0}, {0, 1}}, "CutDeterminant" -> 1 + lambda^2|>, 
+   "FourierIndependentCutoff" -> {<|"N" -> 1, "ActualRatio" -> 3/2, "PredictedRatioResidual" -> 0|>, 
+     <|"N" -> 2, "ActualRatio" -> 9/5, "PredictedRatioResidual" -> 0|>, <|"N" -> 3, "ActualRatio" -> 19/10, 
+      "PredictedRatioResidual" -> 0|>, <|"N" -> 4, "ActualRatio" -> 33/17, "PredictedRatioResidual" -> 0|>, 
+     <|"N" -> 5, "ActualRatio" -> 51/26, "PredictedRatioResidual" -> 0|>, 
+     <|"N" -> 6, "ActualRatio" -> 73/37, "PredictedRatioResidual" -> 0|>, 
+     <|"N" -> 7, "ActualRatio" -> 99/50, "PredictedRatioResidual" -> 0|>}, "FourierLimit" -> 2, 
+   "EqualRankRotatedTopMode" -> <|"Ratio" -> (mSquared + n$9302^2*(1 + Sin[angle]^2))/(mSquared + n$9302^2), 
+     "Limit" -> 1 + Sin[angle]^2, "ExampleN4MassSquared1AnglePiOver3" -> 29/17|>, 
+   "CoframeCoordinateJacobian" -> <|"OrderedVariables" -> {h1, h2, h3, h4, h5, h6, theta1, theta2, theta3}, 
+     "Jacobian" -> {{1/2, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 1/(2*Sqrt[2]), 0, 0, 0, 0, 1}, 
+       {0, 0, 0, 0, 1/(2*Sqrt[2]), 0, 0, -1, 0}, {0, 0, 0, 1/(2*Sqrt[2]), 0, 0, 0, 0, -1}, 
+       {0, 1/2, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1/(2*Sqrt[2]), 1, 0, 0}, 
+       {0, 0, 0, 0, 1/(2*Sqrt[2]), 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1/(2*Sqrt[2]), -1, 0, 0}, 
+       {0, 0, 1/2, 0, 0, 0, 0, 0, 0}}, "GramMatrix" -> {{1/4, 0, 0, 0, 0, 0, 0, 0, 0}, 
+       {0, 1/4, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 1/4, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 1/4, 0, 0, 0, 0, 0}, 
+       {0, 0, 0, 0, 1/4, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1/4, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 2, 0, 0}, 
+       {0, 0, 0, 0, 0, 0, 0, 2, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 2}}, "AbsoluteJacobian" -> 1/(16*Sqrt[2]), 
+     "FrobeniusNormResidual" -> 0|>, "LaplaceHeatAndSpectralZeta" -> 
+    <|"HeatSeries_uEqualsSqrtT" -> SeriesData[u, 0, {vol/(8*Pi^(3/2)), 0, -1/8*(a^2*vol)/Pi^(3/2), 0, 
+        (a^4*vol)/(16*Pi^(3/2))}, -3, 2, 1], "ConstantCoefficient" -> 0, "ZetaAtZero" -> 0, 
+     "ZetaPrimeAtZero" -> (a^3*vol)/(6*Pi)|>, "ShiftedPoissonCounting" -> 
+    <|"HeatSeries" -> SeriesData[eps, 0, {vol/Pi^2, -((mu*vol)/Pi^2), -1/4*((a^2 - 2*mu^2)*vol)/Pi^2, 
+        ((3*a^2*mu - 2*mu^3)*vol)/(12*Pi^2)}, -3, 1, 1], "ConstantCoefficient" -> 
+      ((3*a^2*mu - 2*mu^3)*vol)/(12*Pi^2), "ConstantFormulaResidual" -> 0, 
+     "IntegralNumericalValue" -> 
+      0.20321904819771593259735426005209831359171667935911993215363919239113703420559`50., 
+     "BesselNumericalValue" -> 
+      0.20321904819771593259735426005209831359171667935911993215407560369198917977465`50., 
+     "IntegralMinusBessel" -> 0``50.39100559137648|>, "S3FirstOrderMultiplicativeAnomaly" -> 
+    <|"CubicCoefficientA" -> -1/6*(a^3*s*(1 + s)*(2 + s)), "CubicCoefficientB" -> 
+      -1/6*(b^3*s*(1 + s)*(2 + s)), "CubicCoefficientAB" -> 
+      -1/6*((a + b)*s*(1 + s)*(2*a^2 - 2*a*b + 2*b^2 + a^2*s + 2*a*b*s + b^2*s)), 
+     "ZetaDerivativeDifferenceFromUniquePole" -> ((a - b)^2*(a + b))/4, 
+     "LogDetAnomaly" -> -1/4*((a - b)^2*(a + b)), "Example_a1over4_b1over2" -> -3/256|>, 
+   "CoupledFirstOrderToySpectralPhase" -> <|"Block" -> {{m, -p}, {-p, -1}}, "Determinant" -> -m - p^2, 
+     "Eigenvalues" -> {(-1 + m - Sqrt[1 + 2*m + m^2 + 4*p^2])/2, (-1 + m + Sqrt[1 + 2*m + m^2 + 4*p^2])/2}, 
+     "NegativeEigenvalueCount_Zeta" -> -1/96*((-1 + m)*(1 + 12*a^2 + 10*m + m^2)*vol)/Pi^2, 
+     "EtaAtZero" -> ((-1 + m)*(1 + 12*a^2 + 10*m + m^2)*vol)/(48*Pi^2), "Example_m2_a1_NegativeCount" -> 
+      (-37*vol)/(96*Pi^2), "Example_m2_a1_Eta" -> (37*vol)/(48*Pi^2)|>, 
+   "FlatTorusFiniteWeylVolumeVariation" -> -1/2*(amplitude^2*Pi^2)|>, "Failed" -> False, "Messages" -> {}|>

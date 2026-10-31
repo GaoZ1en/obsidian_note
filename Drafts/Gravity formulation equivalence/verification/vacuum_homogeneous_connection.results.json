@@ -1,0 +1,158 @@
+{
+  "kernel": "SageMath 10.9",
+  "scope": "Exact coefficient, nonreductive connection, trace/tail and counterexample checks; analytic existence/global line issues separate",
+  "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_homogeneous_connection.py",
+  "source_sha256": "f51c70a721d117608cecd270c0e52dd553e2d91ee0bc24031f1dcb539c650bdf",
+  "checks": {
+    "positive_Koszul_coefficient": true,
+    "negative_Koszul_coefficient_in_positive_target_range": true,
+    "isotropy_equivariance_finite_full_signed_test": true,
+    "torsion_free_including_isotropy_inputs": true,
+    "Hermitian_metric_compatibility_on_positive_modes": true,
+    "isotropy_matches_quotient_bracket": true,
+    "general_Koszul_formula_on_signed_tangent": true,
+    "reality_conjugation": true,
+    "B_polynomial_plus_exact_remainder": true,
+    "diagonal_tail_decays_at_least_j_minus_two": true,
+    "exact_Faulhaber_trace_limit": true,
+    "finite_diagonal_sum_and_positive_remainder_identity": true,
+    "diagonal_curvature_nonnegative_finite_grid": true,
+    "isotropy_curvature_zero": true,
+    "mixed_tails_decay_at_least_j_minus_two": true,
+    "same_type_curvature_finite_test": true,
+    "metric_weight_recurrence": true,
+    "trace_polynomial_relative_cocycle": true,
+    "orthogonal_L2_crossing_sum": true,
+    "orthogonal_L2_isotropy_failure": true
+  },
+  "check_count": 20,
+  "all_passed": true,
+  "details": {
+    "equivariance_comparisons": 4350,
+    "torsion_comparisons": 961,
+    "metric_comparisons": 872,
+    "cutoff_comparisons": 575,
+    "cutoff_examples": {
+      "(1, 16)": {
+        "sum": "0",
+        "limit": "0",
+        "error": "0"
+      },
+      "(1, 64)": {
+        "sum": "0",
+        "limit": "0",
+        "error": "0"
+      },
+      "(2, 16)": {
+        "sum": "11195/969",
+        "limit": "13",
+        "error": "1402/969"
+      },
+      "(2, 64)": {
+        "sum": "604947/47905",
+        "limit": "13",
+        "error": "17818/47905"
+      },
+      "(3, 16)": {
+        "sum": "42053/969",
+        "limit": "52",
+        "error": "8335/969"
+      },
+      "(3, 64)": {
+        "sum": "162127707/3257540",
+        "limit": "52",
+        "error": "7264373/3257540"
+      },
+      "(4, 16)": {
+        "sum": "2758193/27132",
+        "limit": "130",
+        "error": "768967/27132"
+      },
+      "(4, 64)": {
+        "sum": "7346933241/59938736",
+        "limit": "130",
+        "error": "445102439/59938736"
+      },
+      "(5, 16)": {
+        "sum": "28367923/149226",
+        "limit": "260",
+        "error": "10430837/149226"
+      },
+      "(5, 64)": {
+        "sum": "7236350813/29969368",
+        "limit": "260",
+        "error": "555684867/29969368"
+      },
+      "(6, 16)": {
+        "sum": "304414507/980628",
+        "limit": "455",
+        "error": "141771233/980628"
+      },
+      "(6, 64)": {
+        "sum": "1770860275139/4255650256",
+        "limit": "455",
+        "error": "165460591341/4255650256"
+      },
+      "(7, 16)": {
+        "sum": "567029774/1225785",
+        "limit": "728",
+        "error": "325341706/1225785"
+      },
+      "(7, 64)": {
+        "sum": "871805169559/1329890705",
+        "limit": "728",
+        "error": "96355263681/1329890705"
+      },
+      "(8, 16)": {
+        "sum": "527138153/817190",
+        "limit": "1092",
+        "error": "365233327/817190"
+      },
+      "(8, 64)": {
+        "sum": "751826175961093/776656171720",
+        "limit": "1092",
+        "error": "96282363557147/776656171720"
+      },
+      "(9, 16)": {
+        "sum": "31798248523/37182145",
+        "limit": "1560",
+        "error": "26205897677/37182145"
+      },
+      "(9, 64)": {
+        "sum": "27380638279915225/20115394847548",
+        "limit": "1560",
+        "error": "3999377682259655/20115394847548"
+      },
+      "(10, 16)": {
+        "sum": "3682728776/3380195",
+        "limit": "2145",
+        "error": "3567789499/3380195"
+      },
+      "(10, 64)": {
+        "sum": "33682948039277129/18286722588680",
+        "limit": "2145",
+        "error": "5542071913441471/18286722588680"
+      }
+    },
+    "mixed_tail_j_degree_differences": {
+      "m_ge_n": -2,
+      "m_lt_n": -2
+    },
+    "orthogonal_L2_values": {
+      "1": "0",
+      "2": "-5",
+      "3": "-29",
+      "4": "-86",
+      "5": "-190",
+      "6": "-355"
+    }
+  },
+  "exact_formulas": {
+    "diagonal_tail": "(2*j^4*m^4 + 6*j^3*m^5 + 2*j^2*m^6 - 2*j*m^7 - m^8 - 2*j^4*m^2 - 6*j^3*m^3 + 4*j*m^5 + 2*m^6 - 2*j^2*m^2 - 2*j*m^3 - m^4)/(j^6 + 3*j^5*m + 3*j^4*m^2 + j^3*m^3 - 2*j^4 - 4*j^3*m - 3*j^2*m^2 - j*m^3 + j^2 + j*m)",
+    "diagonal_tail_factor": "(-1) * (j - 1)^-1 * j^-1 * (j + 1)^-1 * (j + m - 1)^-1 * (j + m)^-1 * (j + m + 1)^-1 * (m - 1) * (m + 1) * m^2 * (-2*j^4 - 6*j^3*m - 2*j^2*m^2 + 2*j*m^3 + m^4 - 2*j^2 - 2*j*m - m^2)",
+    "trace_limit": "13/6*m^3 - 13/6*m",
+    "positive_cutoff_error_summand": "(2*j^2*m^3 + 5*j*m^4 + 2*m^5 - 2*j^2*m - 5*j*m^2 - 2*m^3)/(j^3 + 3*j^2*m + 3*j*m^2 + m^3 - j - m)",
+    "mixed_tail_m_ge_n": "(4*j^4*m*n^3 + 14*j^3*m^2*n^3 + 14*j^2*m^3*n^3 + 4*j*m^4*n^3 - 2*j^4*n^4 - 9*j^3*m*n^4 - 15*j^2*m^2*n^4 - 9*j*m^3*n^4 - 2*m^4*n^4 + j^3*n^5 + 3*j^2*m*n^5 + 3*j*m^2*n^5 + m^3*n^5 - 4*j^4*m*n - 14*j^3*m^2*n - 14*j^2*m^3*n - 4*j*m^4*n + 2*j^4*n^2 + 9*j^3*m*n^2 + 15*j^2*m^2*n^2 + 9*j*m^3*n^2 + 2*m^4*n^2 - j^3*n^3 - 3*j^2*m*n^3 - 3*j*m^2*n^3 - m^3*n^3 + 2*j^2*n^4 + 3*j*m*n^4 + 2*m^2*n^4 - j*n^5 - m*n^5 - 2*j^2*n^2 - 3*j*m*n^2 - 2*m^2*n^2 + j*n^3 + m*n^3)/(j^6 + 6*j^5*m + 15*j^4*m^2 + 20*j^3*m^3 + 15*j^2*m^4 + 6*j*m^5 + m^6 - 3*j^5*n - 15*j^4*m*n - 30*j^3*m^2*n - 30*j^2*m^3*n - 15*j*m^4*n - 3*m^5*n + 3*j^4*n^2 + 12*j^3*m*n^2 + 18*j^2*m^2*n^2 + 12*j*m^3*n^2 + 3*m^4*n^2 - j^3*n^3 - 3*j^2*m*n^3 - 3*j*m^2*n^3 - m^3*n^3 - 2*j^4 - 8*j^3*m - 12*j^2*m^2 - 8*j*m^3 - 2*m^4 + 4*j^3*n + 12*j^2*m*n + 12*j*m^2*n + 4*m^3*n - 3*j^2*n^2 - 6*j*m*n^2 - 3*m^2*n^2 + j*n^3 + m*n^3 + j^2 + 2*j*m + m^2 - j*n - m*n)",
+    "mixed_tail_m_lt_n": "(-2*j^4*m^4 - 7*j^3*m^5 - 9*j^2*m^6 - 5*j*m^7 - m^8 + 4*j^4*m^3*n + 15*j^3*m^4*n + 21*j^2*m^5*n + 13*j*m^6*n + 3*m^7*n - 2*j^3*m^3*n^2 - 6*j^2*m^4*n^2 - 6*j*m^5*n^2 - 2*m^6*n^2 - 4*j^2*m^3*n^3 - 6*j*m^4*n^3 - 2*m^5*n^3 + 2*j*m^3*n^4 + m^4*n^4 + 2*j^4*m^2 + 7*j^3*m^3 + 11*j^2*m^4 + 8*j*m^5 + 2*m^6 - 4*j^4*m*n - 15*j^3*m^2*n - 21*j^2*m^3*n - 14*j*m^4*n - 4*m^5*n + 2*j^3*m*n^2 + 6*j^2*m^2*n^2 + 6*j*m^3*n^2 + 3*m^4*n^2 + 4*j^2*m*n^3 + 6*j*m^2*n^3 + 2*m^3*n^3 - 2*j*m*n^4 - m^2*n^4 - 2*j^2*m^2 - 3*j*m^3 - m^4 + j*m^2*n + m^3*n - m^2*n^2)/(j^6 + 6*j^5*m + 15*j^4*m^2 + 20*j^3*m^3 + 15*j^2*m^4 + 6*j*m^5 + m^6 - 3*j^5*n - 15*j^4*m*n - 30*j^3*m^2*n - 30*j^2*m^3*n - 15*j*m^4*n - 3*m^5*n + 3*j^4*n^2 + 12*j^3*m*n^2 + 18*j^2*m^2*n^2 + 12*j*m^3*n^2 + 3*m^4*n^2 - j^3*n^3 - 3*j^2*m*n^3 - 3*j*m^2*n^3 - m^3*n^3 - 2*j^4 - 8*j^3*m - 12*j^2*m^2 - 8*j*m^3 - 2*m^4 + 4*j^3*n + 12*j^2*m*n + 12*j*m^2*n + 4*m^3*n - 3*j^2*n^2 - 6*j*m*n^2 - 3*m^2*n^2 + j*n^3 + m*n^3 + j^2 + 2*j*m + m^2 - j*n - m*n)"
+  }
+}

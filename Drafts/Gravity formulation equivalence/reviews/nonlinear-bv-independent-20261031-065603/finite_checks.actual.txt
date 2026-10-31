@@ -1,0 +1,20 @@
+<|"Results" -> <|"contorsion_bulk_residual" -> 0, "bulk_flux_over_a" -> 2*uu[1, 2] - 2*uu[2, 1], 
+   "wall_flux_over_a" -> -2*uu[1, 2] + 2*uu[2, 1], "completed_flux_residual" -> 0, 
+   "quadratic_form" -> -2*uu[1, 2]*uu[2, 1] + 2*uu[1, 1]*uu[2, 2] - 2*uu[1, 3]*uu[3, 1] - 
+     2*uu[2, 3]*uu[3, 2] + 2*uu[1, 1]*uu[3, 3] + 2*uu[2, 2]*uu[3, 3], 
+   "L_eigenvalues" -> {-1, -1, -1, -1, -1, 1, 1, 1, 2}, "det_H" -> -1024*a$8553^9, 
+   "inverse_L_identity" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "det_field_L2_Gram" -> s1^3*s2^3*s3^3, "det_geometric_parameter_L2_Gram" -> s1^8*s2^8*s3^8, 
+   "connection_coordinate_Jacobian" -> s1^3*s2^3*s3^3, "odd_ghost_coordinate_Berezinian" -> 
+    1/(s1*s2*s3), "odd_cotangent_full_Berezinian" -> 1/(s1^2*s2^2*s3^2), 
+   "coframe_to_metric_rotation_signed_Jacobian" -> 1/(8*s1*s2*s3), 
+   "aux_frozen_L2_conformal_series" -> (-9*t$8553)/2 + (9*t$8553^2)/4 - (3*t$8553^3)/2, 
+   "aux_frozen_L2_metric_series" -> (-3*(h1$8553 + h2$8553 + h3$8553)*t$8553)/4 + 
+     (3*(h1$8553^2 + h2$8553^2 + h3$8553^2)*t$8553^2)/8 + 
+     ((-h1$8553^3 - h2$8553^3 - h3$8553^3)*t$8553^3)/4, "combined_frozen_L2_metric_series" -> 
+    (-7*(h1$8553 + h2$8553 + h3$8553)*t$8553)/4 + (7*(h1$8553^2 + h2$8553^2 + h3$8553^2)*t$8553^2)/
+      8 - (7*(h1$8553^3 + h2$8553^3 + h3$8553^3)*t$8553^3)/12, 
+   "dynamic_aux_density_cancellation" -> 1, "frozen_aux_density_factor" -> (s1*s2*s3)^(-3/2), 
+   "combined_base_Ber_before_aux_integration" -> (s1*s2*s3)/8, "conformal_counterexample_s2_aux" -> 
+    1/(16*Sqrt[2]), "conformal_counterexample_s2_combined" -> 1/(1024*Sqrt[2])|>, 
+ "Failed" -> False, "MessagesDuringReport" -> {}|>

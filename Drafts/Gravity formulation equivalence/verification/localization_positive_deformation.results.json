@@ -1,0 +1,17 @@
+{
+	"kernel":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"source":"\/Users\/koishi\/Documents\/Note\/Drafts\/Gravity formulation equivalence\/verification\/localization_positive_deformation.wl",
+	"scope":"Local algebra and a real harmonic-oscillator loop; not an infinite-dimensional path-integral localization theorem",
+	"checks":{
+		"printed_bosonic_deformation_has_wrong_kinetic_sign":true,
+		"repaired_bosonic_deformation_is_sum_of_real_norms":true,
+		"Q2_gauge_fermion_equals_Lie_metric_minus_time_derivative":true,
+		"confined_oscillator_printed_high_frequency_counterexample":true,
+		"confined_oscillator_repaired_positive_integral":true
+	},
+	"all_passed":true,
+	"check_count":5,
+	"printed_loop_integral":"(amp^2*(beta^2*freq^2 - 4*Pi^2))\/(2*beta)",
+	"repaired_loop_integral":"(amp^2*(beta^2*freq^2 + 4*Pi^2))\/(2*beta)",
+	"messages":[]
+}

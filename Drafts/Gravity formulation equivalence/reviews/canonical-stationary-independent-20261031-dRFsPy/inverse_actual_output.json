@@ -1,0 +1,933 @@
+{
+  "implementation": "native Sage supplementary inverse-orientation check",
+  "count": 185,
+  "all_passed": true,
+  "naive_defect": "(2*r*t*e^(-r^2*t))*c",
+  "checks": [
+    {
+      "label": "right full flow ODE q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full flow ODE v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical q,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical p,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical r,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical s,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical c,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical b,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical d,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical e,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical u,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full canonical v,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained flow ODE e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical q,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical p,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical r,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical s,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical c,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical b,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical d,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained canonical e,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right full action transport",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right retained action transport",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "right naive projection noncanonical defect",
+      "passed": true,
+      "residual": "0"
+    }
+  ]
+}

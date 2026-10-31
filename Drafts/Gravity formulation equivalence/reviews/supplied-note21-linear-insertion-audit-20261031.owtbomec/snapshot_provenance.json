@@ -1,0 +1,9 @@
+{
+  "audit_type": "supplied-text comparison, not fresh derivation; no mathematical rerun",
+  "source_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/21 Low-wheel heat traces and an AdS gravitational tadpole.md",
+  "captured_utc": "2026-10-31T03:19:25.010202+00:00",
+  "sha256": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847",
+  "snapshot_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/supplied-note21-linear-insertion-audit-20261031.owtbomec/note21-supplied-snapshot.md",
+  "snapshot_matches_source_bytes": true,
+  "scope": "Introductory bullets 2-4 and sections 4-6; compare with frozen independent tadpole/insertion/Q0 results."
+}

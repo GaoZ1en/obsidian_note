@@ -1,0 +1,128 @@
+{
+  "numpy_version": "2.3.5",
+  "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_critical_gram.py",
+  "source_sha256": "79e0f86bdfd80db5f79c7d267970dfd31f076164c61a3055f335a78870f2b6f0",
+  "scope": "finite numerical support only; not a proof of trace class or the infinite determinant limit",
+  "assumptions": {
+    "epsilon": 0.1,
+    "minimum_derivative": 0.8,
+    "weights_projective_modes": 1.0,
+    "float_type": "complex128/float64"
+  },
+  "records": [
+    {
+      "map": "x+0.1sin(2x)",
+      "input_cutoff": 8,
+      "output_cutoff": 48,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398926797153576,
+      "hermitian_residual_inf": 1.3838165564281657e-31,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": -1.2866380352522429e-33,
+      "logdet_compressed_full_gram": -0.013794942614135278,
+      "det_compressed_full_gram": 0.98629977158089
+    },
+    {
+      "map": "x+0.1sin(2x)",
+      "input_cutoff": 16,
+      "output_cutoff": 72,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398910819895067,
+      "hermitian_residual_inf": 4.461931155463637e-31,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": -2.6054400185288843e-33,
+      "logdet_compressed_full_gram": -0.007706206118928107,
+      "det_compressed_full_gram": 0.9923234105612011
+    },
+    {
+      "map": "x+0.1sin(2x)",
+      "input_cutoff": 32,
+      "output_cutoff": 120,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398910819345699,
+      "hermitian_residual_inf": 1.7808150688947066e-30,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": -1.8102292381777386e-33,
+      "logdet_compressed_full_gram": -0.003953572788263712,
+      "det_compressed_full_gram": 0.996054232291261
+    },
+    {
+      "map": "x+0.1sin(2x)",
+      "input_cutoff": 64,
+      "output_cutoff": 216,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398910819345712,
+      "hermitian_residual_inf": 8.500998243031072e-30,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": -1.380940797421208e-33,
+      "logdet_compressed_full_gram": -0.001996509050684836,
+      "det_compressed_full_gram": 0.9980054826478081
+    },
+    {
+      "map": "x+0.1sin(2x)",
+      "input_cutoff": 128,
+      "output_cutoff": 408,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398910819345696,
+      "hermitian_residual_inf": 4.1315181014580863e-29,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": 1.2422294933197075e-33,
+      "logdet_compressed_full_gram": -0.0010026524266178532,
+      "det_compressed_full_gram": 0.9989978500613721
+    },
+    {
+      "map": "x+0.1sin(2x), extra output modes",
+      "input_cutoff": 64,
+      "output_cutoff": 296,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.6398910819345706,
+      "hermitian_residual_inf": 9.299099398071261e-30,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": 2.255783217874628e-33,
+      "logdet_compressed_full_gram": -0.001996509050686199,
+      "det_compressed_full_gram": 0.9980054826478066
+    },
+    {
+      "map": "PSL r=tanh(0.2)",
+      "input_cutoff": 32,
+      "output_cutoff": 120,
+      "quadrature_points": 8192,
+      "min_eigenvalue": 0.41460265170987,
+      "hermitian_residual_inf": 3.149006265937965e-30,
+      "slogdet_sign_real": 1.0,
+      "slogdet_sign_imag": 5.568001785724399e-34,
+      "logdet_compressed_full_gram": 1.214306433183765e-14,
+      "det_compressed_full_gram": 1.0000000000000122
+    }
+  ],
+  "diagnostics": [
+    {
+      "name": "output_tail_refinement_at_N64",
+      "absolute_logdet_difference": 1.3630589712487762e-15
+    },
+    {
+      "name": "PSL_positive_quotient_isometry",
+      "input_modes": [
+        2,
+        24
+      ],
+      "output_modes": [
+        2,
+        160
+      ],
+      "residual_inf": 4.740950835498525e-15
+    },
+    {
+      "name": "rotation_isometry",
+      "residual_inf": 7.0037488919451185e-15
+    }
+  ],
+  "finite_checks": {
+    "positive_finite_grams": true,
+    "observed_logdet_decreases_to_zero_on_sampled_cutoffs": true,
+    "output_tail_refinement_below_1e_minus_9": true,
+    "PSL_quotient_residual_below_1e_minus_9": true,
+    "rotation_residual_below_1e_minus_9": true
+  },
+  "warnings": []
+}

@@ -1,0 +1,27 @@
+<|"Residuals" -> <|"su2_trace" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "su2_bracket" -> {{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, 
+     {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, 
+      {{0, 0}, {0, 0}}}}, "su2_cubic_trace" -> {{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+     {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}}, 
+   "Euclidean_generic_offshell_transgression_scaled_by_gamma" -> 0, 
+   "xCoba_hyperbolic_Ricci" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "both_hyperbolic_CS_curvatures" -> {{{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, 
+      {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, 
+       {{0, 0}, {0, 0}}}}, {{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, 
+      {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}}, {{{0, 0}, {0, 0}}, {{0, 0}, {0, 0}}, 
+       {{0, 0}, {0, 0}}}}}, "hyperbolic_torsion" -> {{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+     {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}}, 
+   "Casimir_LC_connection_intertwiner_all_linear_jets" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "Casimir_covariant_gradient_intertwiner_all_linear_jets" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "Casimir_metric_strain_intertwiner_all_linear_jets" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+   "de_Donder_proper_FP_sign" -> {0, 0, 0}, "LC_connection_on_adapted_diffeomorphism" -> 
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "finite_general_shear_determinant" -> 0, 
+   "finite_general_Schur_determinant" -> 0, "unequal_weight_log_counterexample_coefficient" -> 0, 
+   "three_spin_heat_counts_have_no_constant" -> {0, 0, 0}|>, "AllResidualsZero" -> True, 
+ "Scope" -> "Exact first-order normalization, linear differential symbols, finite Schur algebra and \
+heat-count coefficients. No CAS proof of self-adjointness, representation-fiber disintegration, \
+orbital convergence, or measure equivalence.", "UnevaluatedComputations" -> False, 
+ "Failed" -> False, "Messages" -> {}, "KernelVersion" -> 
+  "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", "Source" -> "/Users/koishi/Documents/Note/Draf\
+ts/Gravity formulation equivalence/verification/vacuum_geometric_cs_gaussian.wl", 
+ "SourceSHA256" -> "a5238ac0c488cca95783148948731bb04ae35a46a09fcb0d5e485d5c084fe2d1"|>

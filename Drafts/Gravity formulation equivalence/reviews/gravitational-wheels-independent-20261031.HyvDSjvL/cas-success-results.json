@@ -1,0 +1,37 @@
+{
+  "sage_version": "10.9",
+  "checks": {
+    "Killing_form": true,
+    "odd_adjoint_cube_trace": true,
+    "semisimple_cube_nonzero": true,
+    "null_cube_zero": true,
+    "null_square_nonzero": true,
+    "coexact_multiplicity_supercancellation": true
+  },
+  "Killing_form_actual": "-4*w1^2 - 4*w2^2 - 4*w3^2 + 4*f1^2 + 4*f2^2 + 4*f3^2",
+  "exterior_rows": [
+    {
+      "p": 0,
+      "coexact_form_rank": 1,
+      "quadratic_trace_without_minus_i_squared": "-4",
+      "cubic_trace_without_i_factor": "0",
+      "bv_sign": -1
+    },
+    {
+      "p": 1,
+      "coexact_form_rank": 2,
+      "quadratic_trace_without_minus_i_squared": "-8",
+      "cubic_trace_without_i_factor": "0",
+      "bv_sign": 1
+    },
+    {
+      "p": 2,
+      "coexact_form_rank": 1,
+      "quadratic_trace_without_minus_i_squared": "-4",
+      "cubic_trace_without_i_factor": "0",
+      "bv_sign": -1
+    }
+  ],
+  "semisimple_cube": "[ 0  0  0  0  0  0]\n[ 0  0  1  0  0  0]\n[ 0 -1  0  0  0  0]\n[ 0  0  0  0  0  0]\n[ 0  0  0  0  0  1]\n[ 0  0  0  0 -1  0]",
+  "nilpotent_square": "[ 1  0  0  0 -1  0]\n[ 0 -1  0 -1  0  0]\n[ 0  0  0  0  0  0]\n[ 0  1  0  1  0  0]\n[ 1  0  0  0 -1  0]\n[ 0  0  0  0  0  0]"
+}

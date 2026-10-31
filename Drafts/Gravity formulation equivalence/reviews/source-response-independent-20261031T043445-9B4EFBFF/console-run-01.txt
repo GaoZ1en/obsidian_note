@@ -1,0 +1,22 @@
+PASS canonical Fourier denominator
+PASS covariant Ward versus canonical contact polynomial
+PASS cylinder-to-plane central-shift identity
+PASS vacuum n=1 commutator vanishes
+PASS thermal n=1 commutator is twice L0 mean
+PASS nonstatic spatial zero mode is only covariant contact
+PASS PBW commutator on levels 0..8, modes 1..4
+PASS levelwise KMS trace-shift identity, n=1
+PASS levelwise KMS trace-shift identity, n=2
+PASS levelwise KMS trace-shift identity, n=3
+PASS physical thermal L1 insertion starts at level 2
+PASS vacuum L2 Lminus2 normalization
+PASS vacuum L3 Lminus3 normalization
+PASS finite cutoff KMS residual begins beyond retained levels, n=1
+PASS finite cutoff KMS is not an exact proof, n=1
+PASS finite cutoff KMS residual begins beyond retained levels, n=2
+PASS finite cutoff KMS is not an exact proof, n=2
+PASS vacuum Fourier sum gives c/2 times z^2/(1-z)^4
+PASS direct time integral: Matsubara plus angular shear denominators
+PASS constant Beltrami Teichmuller Hessian
+RAW_OUTPUT=/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/source-response-independent-20261031T043445-9B4EFBFF/raw-checks.json
+ALL_PASSED=True

@@ -1,0 +1,11 @@
+{
+  "tool": "mcp__sage__sage_run",
+  "timeoutMs": 120000,
+  "maxOutputChars": 16000,
+  "source_at_execution": "checks_v1_timed_out.py",
+  "actual_return": {
+    "ok": false,
+    "error": "Process execution timed out after 120000 ms."
+  },
+  "follow_up": "The original source is preserved. A subsequent process listing showed no remaining sage/checks.py process. The repeated dense-matrix constructions are being replaced with cached rational sparse matrices; the timeout is not a mathematical failure. No PASS claim is based on the timed-out invocation."
+}

@@ -1,0 +1,7 @@
+<|"Results" -> <|"Qe_all_9_residuals_zero" -> True, "Qomega_all_9_residuals_zero" -> True, 
+   "Qxi_all_3_residuals_zero" -> True, "Qlambda_all_3_residuals_zero" -> True, 
+   "cubic_generator_bracket_residual_zero" -> True, 
+   "inherited_density_Delta_generator_residual_zero" -> True, 
+   "inherited_density_Delta_generator_nonzero" -> True, 
+   "inherited_density_Delta_generator_monomials" -> 6, "generator_Grassmann_monomials" -> 18, 
+   "bracket_Grassmann_monomials" -> 36|>, "Failed" -> False|>

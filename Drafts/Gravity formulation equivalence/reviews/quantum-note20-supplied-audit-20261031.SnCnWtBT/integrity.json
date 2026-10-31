@@ -1,0 +1,22 @@
+{
+  "prior_freeze_unchanged": true,
+  "prior_file_checks": {
+    "report.md": true,
+    "supplied-followup-det2-assessment.md": true,
+    "exact_divergence_and_schur.py": true,
+    "heat_and_compression_checks.wl": true,
+    "sage_result.json": true,
+    "sage_exact_divergence.json": true,
+    "sage_actual_tool_return.json": true,
+    "wolfram_checks.json": true,
+    "wolfram_result.txt": true,
+    "wolfram_result.wxf": true,
+    "wolfram_actual_tool_return.json": true
+  },
+  "audit_files": {
+    "audit.md": "925900e36ba72673e3aa8b37e8110f88e94b30281ee2c7c7b3a271eac0018bb2",
+    "source_snapshot_diagnostics.json": "65d75bf49f686eeeb1a66ac0f6290f1df249bfa30a702575194e823dc317d941"
+  },
+  "new_kernel_runs": 0,
+  "source_edits": 0
+}

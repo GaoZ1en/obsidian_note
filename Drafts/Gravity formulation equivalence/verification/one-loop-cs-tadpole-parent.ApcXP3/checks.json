@@ -1,0 +1,25 @@
+{
+	"Checks":{
+		"Hodge cyclic involution":true,
+		"boost generators positive-metric symmetric":true,
+		"gravitational boost commutator":true,
+		"all physical fiber contractions":true,
+		"degree zero sector":true,
+		"degree one sector":true,
+		"degree two sector":true,
+		"top degree zero":true,
+		"coframe derivative fiber trace zero":true,
+		"connection derivative trace is divergence tensor":true,
+		"full-spin helicity combination":true,
+		"scalar heat Plancherel normalization":true,
+		"leading supertrace heat cancellation":true,
+		"all three spectral primitives":true,
+		"cutoff derivative equals positive-density tail":true,
+		"large cutoff coefficient":true,
+		"threshold coefficient":true,
+		"strictly nonzero finite tadpole":true
+	},
+	"AllPassed":true,
+	"Failed":false,
+	"Messages":[]
+}

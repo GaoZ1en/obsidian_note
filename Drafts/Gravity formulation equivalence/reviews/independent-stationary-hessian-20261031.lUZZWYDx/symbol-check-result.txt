@@ -1,0 +1,15 @@
+<|"Result" -> <|"Checks" -> <|"grav_adP3_symmetric" -> True, "grav_adP3_rank4" -> True, 
+     "grav_adP3_spectrum" -> True, "grav_adP3_square_trace4" -> True, "grav_adP3_cube_nonzero" -> True, 
+     "grav_adP3_commutator" -> True, "free_ghost_symbol_norm" -> True, "geometric_left_ratio_symbol" -> True, 
+     "geometric_isotropic_model" -> True, "cs_symbol_rank16_at_t1" -> True, 
+     "cs_symbol_all_early_powers_nonzero" -> True, "cs_symbol_supertrace_cancels_1_through_4" -> True, 
+     "cs_symbol_absolute_square_trace16" -> True, "geometric_power_never_vanishes_1_through_8" -> True|>, 
+   "AllPassed" -> True, "PrincipalData" -> <|"adP3" -> {{0, 0, 0, 0, 1, 0}, {0, 0, 0, -1, 0, 0}, {0, 0, 0, 0, 
+      0, 0}, {0, -1, 0, 0, 0, 0}, {1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}, 
+     "geometricGhostPrincipal" -> {{0, 0, 0, ww[1, 1], ww[1, 2], ww[1, 3]}, {0, 0, 0, ww[2, 1], ww[2, 2], 
+        ww[2, 3]}, {0, 0, 0, ww[3, 1], ww[3, 2], ww[3, 3]}, {0, 0, 0, ff[1, 1], ff[1, 2], ff[1, 3]}, 
+       {0, 0, 0, ff[2, 1], ff[2, 2], ff[2, 3]}, {0, 0, 0, ff[3, 1], ff[3, 2], ff[3, 3]}}, 
+     "isotropicGhostPrincipalSpectrum" -> {t$8554, t$8554, t$8554, 0, 0, 0}, 
+     "CS_coexact_symbol_supertraces_n1to4" -> {0, 0, 0, 0}, "CS_coexact_symbol_rank_at_t1" -> 16, 
+     "IR_and_global_scope" -> "Finite algebra only. Schatten membership, noncompactness, stationary \
+realization and sharp-cutoff smoothing require the analytic proof."|>|>, "Failed" -> False, "Messages" -> {}|>

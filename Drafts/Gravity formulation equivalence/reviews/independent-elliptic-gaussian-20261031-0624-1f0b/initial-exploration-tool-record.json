@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_3cb028a4e16e4190bc4b76e2126104a9|fc_04e3c9e1ca6e9f3a016ae5197fbab88191b089ce51cbb30b1b",
+  "sessionId": "d386e42f-9bea-40a7-82d9-6fa1e328af9a",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import *\nfrom itertools import product\nR=PolynomialRing(QQ, names=('p0','p1','p2')); p=R.gens()\ndef eps(i,j,k):\n    if len({i,j,k})<3: return 0\n    return 1 if (i,j,k) in [(0,1,2),(1,2,0),(2,0,1)] else -1\nD=matrix(R,9,3,lambda q,b: p[q//3] if q%3==b else 0)\nT=matrix(R,9,3,lambda q,b: eps(q%3,q//3,b))\nB=matrix(R,9,9,lambda q,r: (1 if q//3==q%3 and r//3==r%3 else 0)-(1 if r//3==q%3 and r%3==q//3 else 0))\nC=matrix(R,9,9,lambda q,r: sum(eps(q//3,j,r//3)*p[j] for j in range(3)) if q%3==r%3 else 0)\nP0=matrix(QQ,9,9,lambda q,r: QQ(1)/3 if q//3==q%3 and r//3==r%3 else 0)\nP1=matrix(QQ,9,9,lambda q,r: QQ(1)/2*((1 if q==r else 0)-(1 if r//3==q%3 and r%3==q//3 else 0)))\nchecks={\n'B_symmetric': B==B.transpose(),\n'B_square': B*B==identity_matrix(R,9)+3*P0,\n'TTadj': T*T.transpose()==2*P1,\n'potential_identity': B*B+T*T.transpose()==2*identity_matrix(R,9)+B,\n'offdiagonal_square_cancellation': B*C-C*B+D*T.transpose()+T*D.transpose()==zero_matrix(R,9),\n'gauge_derivative_1': B*D+C*T==zero_matrix(R,9),\n'gauge_derivative_2': C*D==zero_matrix(R,9)\n}\nfor k,v in checks.items(): print(k,v)\n# derivative symbol: use i to replace derivatives; principal H=[[0,C],[C,0]], G=diag(D,D).\nZ9=zero_matrix(R,9); Z93=zero_matrix(R,9,3); Z3=zero_matrix(R,3)\nHp=block_matrix([[Z9,C],[C,Z9]])\nGp=block_matrix([[D,Z93],[Z93,D]])\nLp=block_matrix([[Hp,Gp],[-Gp.transpose(),zero_matrix(R,6)]])\nprint('principal_raw_square_minus_p2', Lp*Lp == -sum(x*x for x in p)*identity_matrix(R,24))\nprint('B_eigenvalues', B.change_ring(QQ).charpoly().factor())"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"B_symmetric True\\nB_square True\\nTTadj True\\npotential_identity True\\noffdiagonal_square_cancellation True\\ngauge_derivative_1 False\\ngauge_derivative_2 False\\nprincipal_raw_square_minus_p2 True\\nB_eigenvalues (x - 2) * (x - 1)^3 * (x + 1)^5\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"6fda1af06e310ddd4c0f18ad6289c7e59ba38d03acb0a73c8cbf5161ce1c7c0c\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3894,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b790d816f53f5142a6d6f35e16acc5150d1f801b7e603e1cee1f9f4cb6f593ec\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "B_symmetric True\nB_square True\nTTadj True\npotential_identity True\noffdiagonal_square_cancellation True\ngauge_derivative_1 False\ngauge_derivative_2 False\nprincipal_raw_square_minus_p2 True\nB_eigenvalues (x - 2) * (x - 1)^3 * (x + 1)^5\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "6fda1af06e310ddd4c0f18ad6289c7e59ba38d03acb0a73c8cbf5161ce1c7c0c",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3894,
+        "transportStderr": [],
+        "codeSha256": "b790d816f53f5142a6d6f35e16acc5150d1f801b7e603e1cee1f9f4cb6f593ec"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"B_symmetric True\\nB_square True\\nTTadj True\\npotential_identity True\\noffdiagonal_square_cancellation True\\ngauge_derivative_1 False\\ngauge_derivative_2 False\\nprincipal_raw_square_minus_p2 True\\nB_eigenvalues (x - 2) * (x - 1)^3 * (x + 1)^5\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"6fda1af06e310ddd4c0f18ad6289c7e59ba38d03acb0a73c8cbf5161ce1c7c0c\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3894,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b790d816f53f5142a6d6f35e16acc5150d1f801b7e603e1cee1f9f4cb6f593ec\"\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "mode": "run",
+  "ok": false,
+  "result": "",
+  "resultType": "",
+  "truncated": false,
+  "resultSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": {
+    "type": "builtins.ArithmeticError",
+    "message": "ArithmeticError: factorization of 0 is not defined",
+    "messageTruncated": false,
+    "messageSha256": "1d2262535ec7a203f9fa42e7b9bf2b867f8e76e59686cd9e14a65c72202359ee",
+    "traceback": "Traceback (most recent call last):\n  File \"<cmdline>\", line 49, in <module>\n  File \"<cmdline>\", line 31, in _execute\n  File \"<sage-mcp>\", line 14, in <module>\n  File \"sage/rings/polynomial/multi_polynomial_libsingular.pyx\", line 4625, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n    return self.constant_coefficient().factor()\n  File \"sage/rings/rational.pyx\", line 3106, in sage.rings.rational.Rational.factor\n    return self.numerator().factor() * \\\n  File \"sage/rings/integer.pyx\", line 4092, in sage.rings.integer.Integer.factor\n    raise ArithmeticError(\"factorization of 0 is not defined\")\nArithmeticError: factorization of 0 is not defined",
+    "tracebackTruncated": false,
+    "tracebackSha256": "f560540a8b8c22710b6ee1d6a1c1d512af2302fb79000259c4713ec88eb7f1b4"
+  },
+  "stdout": "",
+  "stdoutTruncated": false,
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3947,
+  "transportStderr": [],
+  "codeSha256": "b43f67f2f6708e5f29fb81e3ccccf51e2d9a04ecba4f193952382041e099747d"
+}

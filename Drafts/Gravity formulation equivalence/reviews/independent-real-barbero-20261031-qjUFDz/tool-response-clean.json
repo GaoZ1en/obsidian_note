@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_d4d2454365ba41f1b914d939ddb0501b|fc_038b97a6f2ce1b34016ae4d50461408191a4619b84b9614a87",
+  "sessionId": "1ba45f9f-5faa-4ade-a6b5-947f64918f4e",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "profile": "core",
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/checks.wl\"]",
+    "timeoutMs": 600000,
+    "maxOutputChars": 10000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"all_passed\\\" -> True, \\\"check_count\\\" -> 21, \\\"messages\\\" -> {}, \\\"checks\\\" -> <|\\\"hodge_star_squared_two_forms\\\" -> True, \\\"full_pair_EC_cut_coefficient\\\" -> True, \\\"full_pair_Holst_cut_coefficient\\\" -> True, \\\"compatibility_d_e_delta_e_equals_2E_deltaGamma\\\" -> True, \\\"Lorentz_bivector_star_squared\\\" -> True, \\\"real_Holst_map_determinant\\\" -> True, \\\"real_Holst_map_inverse\\\" -> True, \\\"nondegenerate_coframe_torsion_map_rank\\\" -> True, \\\"off_shell_Holst_wall_identity\\\" -> True, \\\"EC_wall_theta_plus_deltaell_minus_dC_fixed_q\\\" -> True, \\\"metric_bulk_theta_equals_EC_plus_dalpha\\\" -> True, \\\"metric_wall_C_equals_EC_C_plus_alpha\\\" -> True, \\\"time_gauge_general_tilt_C_EC\\\" -> True, \\\"raw_example_density_theta_s\\\" -> True, \\\"raw_example_density_theta_t\\\" -> True, \\\"raw_example_density_omega_st\\\" -> True, \\\"raw_example_prescribed_corner_cancels_theta_s\\\" -> True, \\\"raw_example_prescribed_corner_cancels_theta_t\\\" -> True, \\\"densitized_triad_determinant\\\" -> True, \\\"densitized_triad_inverse_on_positive_orientation\\\" -> True, \\\"ADM_bridge_thetaK_equals_pi_deltah_plus_delta_cap\\\" -> True|>, \\\"diagnostics\\\" -> \\\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/diagnostics-clean.txt\\\", \\\"exact_results\\\" -> \\\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/results-clean.wxf\\\"|>\",\n  \"resultSha256\": \"72a1ccd5995d2c398be0fe00ae9bb6c382f47d5f56ba4d651e274f6e69f10253\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3675,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "core",
+        "result": "<|\"all_passed\" -> True, \"check_count\" -> 21, \"messages\" -> {}, \"checks\" -> <|\"hodge_star_squared_two_forms\" -> True, \"full_pair_EC_cut_coefficient\" -> True, \"full_pair_Holst_cut_coefficient\" -> True, \"compatibility_d_e_delta_e_equals_2E_deltaGamma\" -> True, \"Lorentz_bivector_star_squared\" -> True, \"real_Holst_map_determinant\" -> True, \"real_Holst_map_inverse\" -> True, \"nondegenerate_coframe_torsion_map_rank\" -> True, \"off_shell_Holst_wall_identity\" -> True, \"EC_wall_theta_plus_deltaell_minus_dC_fixed_q\" -> True, \"metric_bulk_theta_equals_EC_plus_dalpha\" -> True, \"metric_wall_C_equals_EC_C_plus_alpha\" -> True, \"time_gauge_general_tilt_C_EC\" -> True, \"raw_example_density_theta_s\" -> True, \"raw_example_density_theta_t\" -> True, \"raw_example_density_omega_st\" -> True, \"raw_example_prescribed_corner_cancels_theta_s\" -> True, \"raw_example_prescribed_corner_cancels_theta_t\" -> True, \"densitized_triad_determinant\" -> True, \"densitized_triad_inverse_on_positive_orientation\" -> True, \"ADM_bridge_thetaK_equals_pi_deltah_plus_delta_cap\" -> True|>, \"diagnostics\" -> \"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/diagnostics-clean.txt\", \"exact_results\" -> \"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/results-clean.wxf\"|>",
+        "resultSha256": "72a1ccd5995d2c398be0fe00ae9bb6c382f47d5f56ba4d651e274f6e69f10253",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3675,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"all_passed\\\" -> True, \\\"check_count\\\" -> 21, \\\"messages\\\" -> {}, \\\"checks\\\" -> <|\\\"hodge_star_squared_two_forms\\\" -> True, \\\"full_pair_EC_cut_coefficient\\\" -> True, \\\"full_pair_Holst_cut_coefficient\\\" -> True, \\\"compatibility_d_e_delta_e_equals_2E_deltaGamma\\\" -> True, \\\"Lorentz_bivector_star_squared\\\" -> True, \\\"real_Holst_map_determinant\\\" -> True, \\\"real_Holst_map_inverse\\\" -> True, \\\"nondegenerate_coframe_torsion_map_rank\\\" -> True, \\\"off_shell_Holst_wall_identity\\\" -> True, \\\"EC_wall_theta_plus_deltaell_minus_dC_fixed_q\\\" -> True, \\\"metric_bulk_theta_equals_EC_plus_dalpha\\\" -> True, \\\"metric_wall_C_equals_EC_C_plus_alpha\\\" -> True, \\\"time_gauge_general_tilt_C_EC\\\" -> True, \\\"raw_example_density_theta_s\\\" -> True, \\\"raw_example_density_theta_t\\\" -> True, \\\"raw_example_density_omega_st\\\" -> True, \\\"raw_example_prescribed_corner_cancels_theta_s\\\" -> True, \\\"raw_example_prescribed_corner_cancels_theta_t\\\" -> True, \\\"densitized_triad_determinant\\\" -> True, \\\"densitized_triad_inverse_on_positive_orientation\\\" -> True, \\\"ADM_bridge_thetaK_equals_pi_deltah_plus_delta_cap\\\" -> True|>, \\\"diagnostics\\\" -> \\\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/diagnostics-clean.txt\\\", \\\"exact_results\\\" -> \\\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/results-clean.wxf\\\"|>\",\n  \"resultSha256\": \"72a1ccd5995d2c398be0fe00ae9bb6c382f47d5f56ba4d651e274f6e69f10253\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3675,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

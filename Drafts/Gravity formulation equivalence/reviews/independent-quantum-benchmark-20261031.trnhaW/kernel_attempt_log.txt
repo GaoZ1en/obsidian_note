@@ -1,0 +1,25 @@
+Initial exact-check attempt
+Tool: mcp__mathematica__evaluate_mathematica
+Input: Get["/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-quantum-benchmark-20261031.trnhaW/benchmark_checks.wl"]
+Source preserved as benchmark_checks_initial_timeout.wl.
+Actual tool result: Error executing Mathematica code: Process execution timed out after 30000 ms.
+No benchmark_results.* files were created. A process inspection after the timeout found no WolframKernel or wolframscript process, with shell exit code 0.
+Response: replace repeated trigonometric integration by exact Laurent-coefficient extraction, and replace the symbolic rational-trigonometric integral by its exact contour-residue computation. No approximate formula substitutes for an uncompleted integration.
+
+Second attempt
+Source: benchmark_checks_attempt2.wl. Actual complete outputs preserved as benchmark_results_attempt2.txt and benchmark_results_attempt2.wxf (the original benchmark_results.txt/wxf contain the same incomplete output).
+The tool returned AllChecksPassed -> True, but only four checks had been recorded. Messages were AssociateTo::argrx (three times), General::stop, and Limit::alimv. This attempt is NOT accepted as verification.
+Diagnosis: AssociateTo requires a rule list rather than several positional rule arguments. Limit::alimv came from a global assumption on the variable being taken to zero; its message body is 'Warning: Assumptions that involve the limit variable are ignored.' A fresh isolated Limit computation without that inherited assumption returned -13/24 with no messages.
+Correction: add a held helper that passes all rule arguments as a list, set Assumptions -> True on the one-sided Limit, and require exactly 21 recorded checks plus an empty message list for AllChecksPassed.
+
+Accepted benchmark attempt
+Source: benchmark_checks.wl.
+Actual complete outputs: benchmark_verified_results.txt and benchmark_verified_results.wxf.
+All 21 expected checks are exactly True. Messages -> {}. The complete readable output was inspected.
+
+Accepted independent symmetry/cutoff batch
+Source: symmetry_and_cutoff_checks.wl.
+Actual complete outputs: symmetry_and_cutoff_results.txt and symmetry_and_cutoff_results.wxf.
+All 6 expected checks are exactly True. Messages -> {}. The complete readable output was inspected.
+
+No background jobs remain. No parent reports or candidate results were read. No original research note was edited.

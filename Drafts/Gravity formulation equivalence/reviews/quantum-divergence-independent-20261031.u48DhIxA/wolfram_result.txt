@@ -1,0 +1,12 @@
+<|"Checks" -> <|"physical_trace_exact" -> True, "T_trace_minus_identity_trace" -> True, 
+   "actual_a1_physical_contraction" -> True, "fixed_heat_semidensity_defect_4trA" -> True, 
+   "projection_idempotence" -> True, "leakage_square_trace_one" -> True, "linear_log_insertion_zero" -> True, 
+   "compressed_exponential_eigenvalue" -> True, "compressed_log_quadratic_half" -> True, 
+   "radial_integral_for_a_gt_two" -> True|>, "AllPassed" -> True, 
+ "trA" -> (t*w[2, 3]*z[1])/kappa - (t*w[3, 2]*z[1])/kappa - (t*w[1, 3]*z[2])/kappa + (t*w[3, 1]*z[2])/kappa + 
+   (t*w[1, 2]*z[3])/kappa - (t*w[2, 1]*z[3])/kappa, "actualHeatMismatchCoefficient" -> 
+  (4*t*w[2, 3]*z[1])/kappa - (4*t*w[3, 2]*z[1])/kappa - (4*t*w[1, 3]*z[2])/kappa + (4*t*w[3, 1]*z[2])/kappa + 
+   (4*t*w[1, 2]*z[3])/kappa - (4*t*w[2, 1]*z[3])/kappa, "Messages" -> {}, "ExcludedFailures" -> {}, 
+ "Assumptions" -> {"kappa nonzero", "F=0 for heat a1 fixture", "actual note18 Laplace-type potentials", 
+   "formal independent odd coefficients represented in fixed z W ordering", 
+   "2x2 compression fixture is not the AdS operator"}|>

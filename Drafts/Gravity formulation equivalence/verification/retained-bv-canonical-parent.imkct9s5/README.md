@@ -1,0 +1,19 @@
+# Retained canonical-map verification: frozen parent evidence
+
+**18 exact groups pass** in SageMath 10.9, using native ExteriorAlgebra over an exact polynomial coefficient ring, all 48 BV components, and symbolic g=1/kappa. This is an ultralocal full-map calculation, not an AdS spectral, boundary, or quantum test.
+
+- [Tested source](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/source.py>) — SHA256 `5fc9bfd8df8c6c2c31e9c97809b4413148caf4f579c7dfec488c44859d3e65fb`.
+- [Label-level result](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/result.json>) and [exact expressions](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/expressions.txt>).
+- [Actual server-return envelope](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/actual-server-return.json>) and [byte-copy manifest](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/copy-manifest.json>).
+
+The full quadratic and cubic coordinate jets are checked in all 48 components. The source-Hamiltonian quartic is checked both as 2F4 minus the mixed-derivative contraction and in the compact coframe-resolvent form. Three-dimensional top-form identities give the exact type-II cancellation. The rational generator identity is tested after clearing det(1+tF), with all matrix entries symbolic; invertibility of that determinant remains its explicitly stated domain assumption. Deliberate negative controls verify failure of the bare cubic flow and omission of the quartic source term. The displayed exterior-term counts group polynomial coefficients together and are not full scalar-monomial counts.
+
+Final actual diagnostics: ok=true; error=null; result/stdout/stderr/warnings untruncated; stderr, warnings and transportStderr empty; elapsedMs=3595. The execution-stub hash is `4d0bd02d9de6d4eb88e8c4870e151bae166570fcdd29c7518440afb6b646cb61`; it hashes only the exec invocation, not the mathematical source. The separate source hash above is authoritative.
+
+Two initial native-Sage basis-index API failures occurred before any completed label; their sources and [first](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/initial-failure.md>)/[second](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/second-failure.md>) diagnostics are preserved and excluded from positive evidence. The [initial successful 15-group result](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-bv-canonical-parent.imkct9s5/initial-success-result.json>) and its source/envelope are preserved separately. The 18-group run adds three substantive exact identities; it is not an independent second implementation.
+
+## Safe replay
+
+Execute the tested source in a fresh Sage 10.9 kernel with Python syntax and __file__ bound to its path. It creates a new private export under DSH_HOME/research-results/kernel-exports (or the documented home fallback); it does not overwrite this directory. The working [entry source](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained_bv_canonical_jet_checks.py>) is byte-identical at freeze. No library installation is needed.
+
+The general stationary theorem, every-radius boundary estimates and fixed-band formal continuity have separate analytic proofs. The independent gravitational cyclic fixture additionally checks the cubic action bridge and nonzero quartic endpoint cancellation, which are not tested by this ultralocal parent suite.

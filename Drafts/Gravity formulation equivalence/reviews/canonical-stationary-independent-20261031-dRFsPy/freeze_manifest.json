@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-31T09:42:54.608272+08:00",
+  "directory": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy",
+  "scope": "independent stationary BV canonical-transfer proof; no parent-note edits",
+  "deliverables": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/proof.md",
+      "bytes": 23795,
+      "sha256": "45ae1dbff763b10d770f3033cf53abce793573d2edfe0142bd3b642249912711"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inputs_and_diagnostics.md",
+      "bytes": 7977,
+      "sha256": "6f00ee2a342d931f29fb34d38e60995be6c38980e172af88d9f4b9967edbba0a"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_exterior_check.py",
+      "bytes": 7546,
+      "sha256": "26a10a76594e9abbaf2fb7b0c4c3a2be9356d9b33aac56faefb642dc065938af"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.json",
+      "bytes": 22600,
+      "sha256": "b3fcd3bf93a3cdeedc6b800641e8113adcf186e9ecd8a28ee3151c31dfe142af"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_actual_output.txt",
+      "bytes": 9560,
+      "sha256": "4c24821cd9b0dc4004d7715948951873121686f1b05919c0bbccfa9aa55c1727"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/sage_kernel_transport.json",
+      "bytes": 5126,
+      "sha256": "0d53ea5e70fb5795c54a4ce15f93a51189201d8a82ca62360bfa452359b07ee3"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_sympy_check.py",
+      "bytes": 6957,
+      "sha256": "1fcb72db9601c9acf0afcb32d37557a1ac2298e9ef558f87f81b8b62bea6c68c"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.json",
+      "bytes": 20901,
+      "sha256": "73bebae2359d5da7212f120f1f82fd3db3b74a28a4eb27ed0a023eee3a91c1c0"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_actual_output.txt",
+      "bytes": 8175,
+      "sha256": "5224a37cae4a52ff76a9d6da09e94d0e66a5fbb744397f2ebfaca3b949accbc8"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/bitmask_kernel_transport.json",
+      "bytes": 9581,
+      "sha256": "cfcc77109216624b95d4dedcb4f2724623c39661c57d310f6cf04c288a6cead2"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_orientation_check.py",
+      "bytes": 2517,
+      "sha256": "77213360359b293b1c90ba840a68e4b6dc14bca7565e42a3f9784ee076d78cdd"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_actual_output.json",
+      "bytes": 18938,
+      "sha256": "6f7051ef594060e07fd6dc7662f52ec3a8092d78a6c3dd1b06e0261b8462e2ad"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_actual_output.txt",
+      "bytes": 8131,
+      "sha256": "24f88189b9fa9b1ed7bf5de00206bc533a8ae3239acfd53de0a04b31c1e85532"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/inverse_kernel_transport.json",
+      "bytes": 3635,
+      "sha256": "fb4208f9245f1c754a39e41fe74171c5200e5fac163f2f29c4464b336be66889"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/freeze_evidence.py",
+      "bytes": 4097,
+      "sha256": "89b01d05cf8fb996091e40db6a4bb1c6995fb2ce638095cc1d99657c6fefa3cf"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/canonical-stationary-independent-20261031-dRFsPy/freeze_validation.txt",
+      "bytes": 460,
+      "sha256": "f7fba74ec1110371c2686a50d7bc0606ded44a8f0abbf07ec324a346a713f987"
+    }
+  ],
+  "input_versions_at_freeze": [
+    {
+      "path": "/Users/koishi/Documents/Note/AGENTS.md",
+      "bytes": 4402,
+      "sha256": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/.codex/skills/research-project-maintainer/SKILL.md",
+      "bytes": 4101,
+      "sha256": "63214463155c12bbf337012bde3482b645e104e2a15626e1463ea0e2ca4c885b"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "bytes": 9919,
+      "sha256": "bbc36c5018f0a931619550a33ab4defbb8e5a7081335684a90948937418aaf7d"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/18 Complete AdS BV contraction and tree transfer.md",
+      "bytes": 31575,
+      "sha256": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b"
+    },
+    {
+      "path": "/Users/koishi/.dsh/profiles/desktop/node_modules/@koishi/dsh-research-preset/skills/math-computation/references/sage.md",
+      "bytes": 2844,
+      "sha256": "a4dfc7572bc23884bedddc512fa5e42dda232580220f0ea6b3d1d2482b098221"
+    }
+  ],
+  "notes": [
+    "Manifest excludes its own hash.",
+    "Two independent superalgebra implementations; inverse check reuses native Sage definitions.",
+    "Source code and actual kernel envelopes, including warnings, are frozen together."
+  ]
+}

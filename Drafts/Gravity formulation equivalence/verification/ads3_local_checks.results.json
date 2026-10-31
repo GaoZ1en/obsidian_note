@@ -1,0 +1,27 @@
+{
+	"KernelVersion":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"Checks":{
+		"trace_bilinear":true,
+		"trace_trilinear":true,
+		"off_shell_transgression":true,
+		"potential_field_exact_relation":true,
+		"bulk_symplectic_current_relation":true,
+		"flatness_difference_torsion":true,
+		"flatness_sum_curvature":true,
+		"metric_trace_dictionary":true,
+		"metric_determinant":true,
+		"DS_residual_gauge":true,
+		"DS_charge_trace":true,
+		"KKS_pullback_density_total_derivative":true,
+		"Hill_half_density_cos":true,
+		"Hill_half_density_sin":true,
+		"Hill_Wronskian":true,
+		"constant_Hill_matrix_square":true,
+		"constant_Hill_matrix_exponential":true,
+		"constant_Hill_monodromy_integer":true,
+		"exceptional_stabilizer_modes":true
+	},
+	"AllPassed":true,
+	"Messages":[],
+	"Scope":"Exact local algebra and projective-orbit identities; not a global filling, quotient or quantum-equivalence proof."
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_a0c7292acaf74d4daeb6144688456f42|fc_00e61ec4e4885aea016ae51a83f8008191a80548bfa5de4532",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric_cs_elliptic_bridge.wl\"]",
+    "profile": "components",
+    "timeoutMs": 300000,
+    "maxOutputChars": 4000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Preview\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt\\\", \\\"Native\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf\\\", \\\"AllResidualsZero\\\" -> True, \\\"Failed\\\" -> False, \\\"UnevaluatedComputations\\\" -> False, \\\"KernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\"|>\",\n  \"resultSha256\": \"3de8f8c584ac42588736092fbeb32010bd9dbf04651f00260b2efd89fe301f78\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3314,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Preview\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt\", \"Native\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf\", \"AllResidualsZero\" -> True, \"Failed\" -> False, \"UnevaluatedComputations\" -> False, \"KernelVersion\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\"|>",
+        "resultSha256": "3de8f8c584ac42588736092fbeb32010bd9dbf04651f00260b2efd89fe301f78",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3314,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Preview\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt\\\", \\\"Native\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf\\\", \\\"AllResidualsZero\\\" -> True, \\\"Failed\\\" -> False, \\\"UnevaluatedComputations\\\" -> False, \\\"KernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\"|>\",\n  \"resultSha256\": \"3de8f8c584ac42588736092fbeb32010bd9dbf04651f00260b2efd89fe301f78\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3314,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

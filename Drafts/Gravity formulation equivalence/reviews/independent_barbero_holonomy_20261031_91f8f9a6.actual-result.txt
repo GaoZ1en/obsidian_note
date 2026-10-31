@@ -1,0 +1,10 @@
+Tool: mcp__xact__xact_run
+Readable view; exact canonical JSON is archived separately.
+
+xAct run; ok=true
+profile: core
+result: <|"GeometryCheckCount" -> 14, "HolonomyCheckCount" -> 12, "All26ChecksPass" -> True|>
+loadedPackages[1]: xAct`xTensor`
+loadedPackages[2]: xAct`xPert`
+loadedPackages[3]: xAct`xTras`
+elapsedMs: 3295

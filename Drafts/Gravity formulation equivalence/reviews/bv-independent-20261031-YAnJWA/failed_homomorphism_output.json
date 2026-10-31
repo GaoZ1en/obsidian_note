@@ -1,0 +1,29 @@
+{
+  "mode": "run",
+  "ok": false,
+  "result": "",
+  "resultType": "",
+  "truncated": false,
+  "resultSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": {
+    "type": "builtins.NotImplementedError",
+    "message": "NotImplementedError: Verification of correctness of homomorphisms from The exterior algebra of rank 10 over Multivariate Polynomial Ring in g, x, y, e0, e1, e2, w0, w1, w2 over Rational Field not yet implemented.",
+    "messageTruncated": false,
+    "messageSha256": "5d771e6836f36bd619ec7ed3bf64477804d59b54b261e49c9457313d9058f7f1",
+    "traceback": "Traceback (most recent call last):\n  File \"<cmdline>\", line 49, in <module>\n  File \"<cmdline>\", line 31, in _execute\n  File \"<sage-mcp>\", line 33, in <module>\n  File \"sage/structure/parent.pyx\", line 1435, in sage.structure.parent.Parent.hom\n    return self.Hom(codomain, **Hom_kwds)(im_gens, **kwds)\n  File \"sage/structure/parent.pyx\", line 899, in sage.structure.parent.Parent.__call__\n    return mor._call_(x)\n  File \"sage/structure/coerce_maps.pyx\", line 92, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_\n    raise\n  File \"sage/structure/coerce_maps.pyx\", line 87, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_\n    return C._element_constructor(x)\n  File \"/var/tmp/sage-10.9-current/local/lib/python3.14/site-packages/sage/rings/homset.py\", line 147, in _element_constructor_\n    return morphism.RingHomomorphism_im_gens(self, x, base_map=base_map, check=check)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nNotImplementedError: Verification of correctness of homomorphisms from The exterior algebra of rank 10 over Multivariate Polynomial Ring in g, x, y, e0, e1, e2, w0, w1, w2 over Rational Field not yet implemented.",
+    "tracebackTruncated": false,
+    "tracebackSha256": "9a22c89afde9ac6967daf3440114a645b88795532966432b9fb655b791c69189"
+  },
+  "stdout": "SageMath: 10.9\nGenerating density monomials: 23\ndF/dP_E[0]: PASS\ndF/dP_Omega[0]: PASS\ndF/de[0]: PASS\ndF/domega[0]: PASS\ndF/dP_E[1]: PASS\ndF/dP_Omega[1]: PASS\ndF/de[1]: PASS\ndF/domega[1]: PASS\ndF/dP_E[2]: PASS\ndF/dP_Omega[2]: PASS\ndF/de[2]: PASS\ndF/domega[2]: PASS\ndF/dP_rho: PASS\ndF/dP_tau: PASS\ndF/dlambda: PASS\n",
+  "stdoutTruncated": false,
+  "stdoutSha256": "1311fbf6d4601b17363c8816afc5f3f7a14e12c57e25b12a95dc08dd947f78b5",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3911,
+  "transportStderr": [],
+  "codeSha256": "ca3699f07fcb7a02fedd8c3acd1a50021717d417090005139befa34cad3dfcd8"
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_fd4941cbf348425d8432ab24d90ec41f|fc_00e61ec4e4885aea016ae559266e20819198dc2d2bc0f1316c",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one_loop_cs_tadpole_checks.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one_loop_cs_tadpole_checks.wl\"]\n```\n\nOutput:\n{/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one-loop-cs-tadpole-parent.ApcXP3/result.txt, /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one-loop-cs-tadpole-parent.ApcXP3/result.wxf, True, False, {}}"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one_loop_cs_tadpole_checks.wl\"]\n```\n\nOutput:\n{/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one-loop-cs-tadpole-parent.ApcXP3/result.txt, /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one-loop-cs-tadpole-parent.ApcXP3/result.wxf, True, False, {}}"
+      }
+    ]
+  }
+}

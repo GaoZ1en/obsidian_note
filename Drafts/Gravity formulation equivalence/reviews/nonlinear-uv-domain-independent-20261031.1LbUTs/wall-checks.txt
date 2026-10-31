@@ -1,0 +1,11 @@
+<|"Result" -> <|"Checks" -> <|"normal_tangency_x" -> True, "normal_tangency_y" -> True, 
+     "normal_normalization" -> True, "background_wall_density" -> True, 
+     "first_variation_before_divergence_removal" -> True, 
+     "first_variation_after_divergence_removal" -> True, "divergence_primitive_components" -> 
+      True|>, "AllPassed" -> True, "FirstVariation" -> dxf31$8554*kap$8554 + dyf32$8554*kap$8554 + 
+     f11$8554*kap$8554 + f22$8554*kap$8554 - f22$8554*k1$8554*kap$8554 - f11$8554*k2$8554*kap$8554, 
+   "TangentialDivergence" -> (dxf31$8554 + dyf32$8554)*kap$8554, 
+   "IntegratedRemainder" -> (f22$8554*(1 - k1$8554) + f11$8554*(1 - k2$8554))*kap$8554, 
+   "NormalVariation" -> {-f31$8554, -f32$8554, 0}, "Scope" -> "Exact first variation at an adapted \
+orthonormal principal frame with vanishing surface connection at the point; covariance and \
+closed-wall integration complete the analytic proof."|>, "Failed" -> False, "Messages" -> {}|>

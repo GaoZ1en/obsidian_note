@@ -1,0 +1,10 @@
+<|"WolframKernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "CharacteristicPolynomialFunction" -> -((lam - 4*z)*(lam - 2*z)^3*(lam + 2*z)^5), 
+ "ExplicitDetHminusLambdaI" -> -((lam - 4*z)*(lam - 2*z)^3*(lam + 2*z)^5), 
+ "ExplicitDetLambdaIminusH" -> (lam - 4*z)*(lam - 2*z)^3*(lam + 2*z)^5, "LorentzGaugeChiEquals2A_FP" -> 8, 
+ "CanonicalLorentzToFrobeniusJacobian" -> 2*Sqrt[2], "SymmetricFrameToMetricInverseJacobian" -> 1/64, 
+ "QuotientCanonicalLorentzFactor" -> 1/(16*Sqrt[2]), "NondiagonalCoframe" -> 
+  {{2, 1, 1}, {1, 2, 0}, {0, 1, 2}}, "CoframeDeterminant" -> 7, 
+ "MetricVariationResidual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "NondiagonalSignedCoordinateJacobian" -> 
+  -1/56, "NondiagonalAbsoluteJacobianResidual" -> 0, "NormalizedGaussianFromBare" -> (I/32)/z^(9/2), 
+ "Messages" -> {}|>

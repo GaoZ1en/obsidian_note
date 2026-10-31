@@ -1,0 +1,5 @@
+<|"checks" -> <|"basis bracket residual" -> 0, "Schwarzian ODE residual" -> 0, 
+   "positive chirality residual" -> 0, "PSL metric recurrence residual" -> 0, 
+   "Chern e1 equivariance residual" -> 0, "explicit cubic Schwarzian" -> 
+    (-6*a*(-1 + 6*a*z^2))/(1 + 3*a*z^2)^2, "beta cutoff representation finite tests" -> True|>, 
+ "messages" -> {}|>

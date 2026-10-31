@@ -1,0 +1,204 @@
+{
+  "scope": "Exact finite polynomial/Grassmann jets and pointwise determinants; not continuum BV regularization, boundary BFV, or an all-orders canonical map.",
+  "sage_version": "10.9",
+  "checks": [
+    {
+      "label": "Grassmann antisymmetry and left derivative",
+      "passed": true,
+      "residual_count": 3
+    },
+    {
+      "label": "geometric BRST nilpotency all fields",
+      "passed": true,
+      "residual_count": 18
+    },
+    {
+      "label": "geometric BRST nilpotency all ghosts",
+      "passed": true,
+      "residual_count": 6
+    },
+    {
+      "label": "off shell Cartan torsion correction",
+      "passed": true,
+      "residual_count": 9
+    },
+    {
+      "label": "off shell Cartan curvature correction",
+      "passed": true,
+      "residual_count": 9
+    },
+    {
+      "label": "geometric rho quadratic curvature remainder",
+      "passed": true,
+      "residual_count": 3
+    },
+    {
+      "label": "geometric tau quadratic torsion remainder",
+      "passed": true,
+      "residual_count": 3
+    },
+    {
+      "label": "full Palatini bulk BRST variation is divergence",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "cubic canonical generator exact sign and normalization",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "flat Darboux BV Laplacian of cubic generator",
+      "passed": true,
+      "residual_count": 18
+    },
+    {
+      "label": "field dependent six ghost map determinant",
+      "passed": true,
+      "residual_count": 2
+    },
+    {
+      "label": "connection to contorsion coordinate Jacobian",
+      "passed": true,
+      "residual_count": 1
+    },
+    {
+      "label": "auxiliary normalized Hessian determinant and spin spectrum",
+      "passed": true,
+      "residual_count": 2
+    },
+    {
+      "label": "dynamical L2 contorsion isometry cleared denominators",
+      "passed": true,
+      "residual_count": 9
+    }
+  ],
+  "all_passed": true,
+  "residuals": {
+    "Grassmann antisymmetry and left derivative": [
+      [],
+      [],
+      []
+    ],
+    "geometric BRST nilpotency all fields": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "geometric BRST nilpotency all ghosts": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "off shell Cartan torsion correction": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "off shell Cartan curvature correction": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "geometric rho quadratic curvature remainder": [
+      [],
+      [],
+      []
+    ],
+    "geometric tau quadratic torsion remainder": [
+      [],
+      [],
+      []
+    ],
+    "full Palatini bulk BRST variation is divergence": [
+      []
+    ],
+    "cubic canonical generator exact sign and normalization": [
+      []
+    ],
+    "flat Darboux BV Laplacian of cubic generator": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "field dependent six ghost map determinant": [
+      "0",
+      "0"
+    ],
+    "connection to contorsion coordinate Jacobian": [
+      "0"
+    ],
+    "auxiliary normalized Hessian determinant and spin spectrum": [
+      "0",
+      "0"
+    ],
+    "dynamical L2 contorsion isometry cleared denominators": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "counts": {
+    "even_generators": 199,
+    "odd_generators": 78,
+    "groups": 14
+  },
+  "conventions": {
+    "Q": "left odd derivation, Q fields = Lie_xi + positive D_lambda gauge; Qlambda=xi.dlambda-[lambda,lambda]/2",
+    "antibracket": "(F,G)=F right_d_phi left_d_phistar G - F right_d_phistar left_d_phi G; canonical action change exp((G,.))",
+    "G3": "(2a)^(-1) epsilon_(nu mu sigma) xi^nu omega*^mu_a e*^sigma_a",
+    "field_order": "e,omega,xi,lambda perturbations and every antifield count as degree one; fixed background degree zero"
+  },
+  "elapsed_seconds": 0.11758850002661347
+}

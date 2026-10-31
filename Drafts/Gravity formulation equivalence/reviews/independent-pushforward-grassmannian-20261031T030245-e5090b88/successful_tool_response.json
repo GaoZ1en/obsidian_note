@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_db9135a23d344f09a158e4bb1ac43690|fc_00e0d205757ef05e016ae4eb1a72e4819194da26ac08222480",
+  "sessionId": "32b8cb21-5306-4767-9d1f-330ddeaba4bb",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nsource = Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-pushforward-grassmannian-20261031T030245-e5090b88/checks.py')\nexec(compile(source.read_text(encoding='utf-8'), str(source), 'exec'), {'__file__':str(source), '__name__':'__main__'})",
+    "timeoutMs": 120000,
+    "maxOutputChars": 16000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage version: SageMath version 10.9, Release Date: 2026-05-04\\nAll algebra is exact over QQ or QQ(i).\\nPASS [A_m,A_n] = -A_[e_m,e_n]\\n  {'tested_triples': 2057, 'defects': []}\\nPASS Exact sum-of-squares polynomial\\n  7/3*p^3 - 9/2*p^2 + 13/6*p\\nPASS H-isotropy residual polynomial\\n  9/2*p^2 - 9/2*p\\nPASS Different nonorthogonal-idempotent trace polynomial\\n  13/6*p^3 - 13/6*p\\nPASS Complete finite-rank Q-curvature matrices, modes -8..8\\n  {'matrix_dimension': 21, 'pairs': 289, 'mismatches': []}\\nPASS Positive Witt diagonal values\\n  {'2': '-5', '3': '-29', '4': '-86', '5': '-190', '6': '-355', '7': '-595', '8': '-924'}\\nPASS Different R-curvature matrices agree with their polynomial\\n  {'2': '13', '3': '52', '4': '130', '5': '260', '6': '455', '7': '728', '8': '1092'}\\nPASS Real tangent derivatives are Hermitian\\nPASS h tangent directions vanish for Q\\nPASS Nonorthogonal R varies along real h direction e1-e-1\\n  dR = 3 |e_-1><e_-2|, whereas dQ=0\\nPASS Complex H-isotropy invariance fails by +9\\n  9\\nPASS Real H-isotropy invariance fails by +18i\\n  18*ii\\nPASS Curvature on two real p=2 directions is -10i\\n  -10*ii\\nPASS Exact third-derivative pushforward identity\\nPASS Circle-Schwarzian coefficient for stabilizer\\nDIAGNOSTICS_DIRECTORY = /Users/koishi/.dsh/research-results/kernel-exports/independent-pushforward-wl1hdz2_\\nALL_PASSED = True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"e804cd3cfd3e847894f962d3875ecfd5a2ee77cbb4d373ca630825ca8fec0da6\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3504,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ce1327992341d5420d3069e8ebea02f349f2e44cf86d83682a7befe27b5ca021\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Sage version: SageMath version 10.9, Release Date: 2026-05-04\nAll algebra is exact over QQ or QQ(i).\nPASS [A_m,A_n] = -A_[e_m,e_n]\n  {'tested_triples': 2057, 'defects': []}\nPASS Exact sum-of-squares polynomial\n  7/3*p^3 - 9/2*p^2 + 13/6*p\nPASS H-isotropy residual polynomial\n  9/2*p^2 - 9/2*p\nPASS Different nonorthogonal-idempotent trace polynomial\n  13/6*p^3 - 13/6*p\nPASS Complete finite-rank Q-curvature matrices, modes -8..8\n  {'matrix_dimension': 21, 'pairs': 289, 'mismatches': []}\nPASS Positive Witt diagonal values\n  {'2': '-5', '3': '-29', '4': '-86', '5': '-190', '6': '-355', '7': '-595', '8': '-924'}\nPASS Different R-curvature matrices agree with their polynomial\n  {'2': '13', '3': '52', '4': '130', '5': '260', '6': '455', '7': '728', '8': '1092'}\nPASS Real tangent derivatives are Hermitian\nPASS h tangent directions vanish for Q\nPASS Nonorthogonal R varies along real h direction e1-e-1\n  dR = 3 |e_-1><e_-2|, whereas dQ=0\nPASS Complex H-isotropy invariance fails by +9\n  9\nPASS Real H-isotropy invariance fails by +18i\n  18*ii\nPASS Curvature on two real p=2 directions is -10i\n  -10*ii\nPASS Exact third-derivative pushforward identity\nPASS Circle-Schwarzian coefficient for stabilizer\nDIAGNOSTICS_DIRECTORY = /Users/koishi/.dsh/research-results/kernel-exports/independent-pushforward-wl1hdz2_\nALL_PASSED = True\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "e804cd3cfd3e847894f962d3875ecfd5a2ee77cbb4d373ca630825ca8fec0da6",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          },
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3504,
+        "transportStderr": [],
+        "codeSha256": "ce1327992341d5420d3069e8ebea02f349f2e44cf86d83682a7befe27b5ca021"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage version: SageMath version 10.9, Release Date: 2026-05-04\\nAll algebra is exact over QQ or QQ(i).\\nPASS [A_m,A_n] = -A_[e_m,e_n]\\n  {'tested_triples': 2057, 'defects': []}\\nPASS Exact sum-of-squares polynomial\\n  7/3*p^3 - 9/2*p^2 + 13/6*p\\nPASS H-isotropy residual polynomial\\n  9/2*p^2 - 9/2*p\\nPASS Different nonorthogonal-idempotent trace polynomial\\n  13/6*p^3 - 13/6*p\\nPASS Complete finite-rank Q-curvature matrices, modes -8..8\\n  {'matrix_dimension': 21, 'pairs': 289, 'mismatches': []}\\nPASS Positive Witt diagonal values\\n  {'2': '-5', '3': '-29', '4': '-86', '5': '-190', '6': '-355', '7': '-595', '8': '-924'}\\nPASS Different R-curvature matrices agree with their polynomial\\n  {'2': '13', '3': '52', '4': '130', '5': '260', '6': '455', '7': '728', '8': '1092'}\\nPASS Real tangent derivatives are Hermitian\\nPASS h tangent directions vanish for Q\\nPASS Nonorthogonal R varies along real h direction e1-e-1\\n  dR = 3 |e_-1><e_-2|, whereas dQ=0\\nPASS Complex H-isotropy invariance fails by +9\\n  9\\nPASS Real H-isotropy invariance fails by +18i\\n  18*ii\\nPASS Curvature on two real p=2 directions is -10i\\n  -10*ii\\nPASS Exact third-derivative pushforward identity\\nPASS Circle-Schwarzian coefficient for stabilizer\\nDIAGNOSTICS_DIRECTORY = /Users/koishi/.dsh/research-results/kernel-exports/independent-pushforward-wl1hdz2_\\nALL_PASSED = True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"e804cd3cfd3e847894f962d3875ecfd5a2ee77cbb4d373ca630825ca8fec0da6\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    },\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3504,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ce1327992341d5420d3069e8ebea02f349f2e44cf86d83682a7befe27b5ca021\"\n}"
+      }
+    ]
+  }
+}

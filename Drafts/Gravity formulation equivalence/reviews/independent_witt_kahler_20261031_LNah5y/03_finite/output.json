@@ -1,0 +1,320 @@
+{
+  "sage_version": "10.9",
+  "finite_checks": {
+    "isotropy_action": {
+      "count": 84,
+      "passed": true,
+      "failures": []
+    },
+    "h_equivariance_all_boundaries": {
+      "count": 1428,
+      "passed": true,
+      "failures": []
+    },
+    "torsion_full_quotient": {
+      "count": 289,
+      "passed": true,
+      "failures": []
+    },
+    "metric_compatibility": {
+      "count": 13328,
+      "passed": true,
+      "failures": []
+    },
+    "first_bianchi": {
+      "count": 1000,
+      "passed": true,
+      "failures": []
+    },
+    "positive_type_curvature_zero": {
+      "count": 475,
+      "passed": true,
+      "failures": []
+    },
+    "negative_type_curvature_zero": {
+      "count": 475,
+      "passed": true,
+      "failures": []
+    },
+    "mixed_adjoint": {
+      "count": 1365,
+      "passed": true,
+      "failures": []
+    }
+  },
+  "cutoff_checks": [
+    {
+      "m": 1,
+      "N": 2,
+      "direct": "0",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 1,
+      "N": 7,
+      "direct": "0",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 1,
+      "N": 100,
+      "direct": "0",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 2,
+      "N": 3,
+      "direct": "33/5",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 2,
+      "N": 9,
+      "direct": "578/55",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 2,
+      "N": 100,
+      "direct": "2256837/176851",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 3,
+      "N": 4,
+      "direct": "829/35",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 3,
+      "N": 11,
+      "direct": "39854/1001",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 3,
+      "N": 100,
+      "direct": "2906466981/57476575",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 4,
+      "N": 5,
+      "direct": "1159/21",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 4,
+      "N": 13,
+      "direct": "296183/3094",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 4,
+      "N": 100,
+      "direct": "4030706037/32186882",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 5,
+      "N": 6,
+      "direct": "2206/21",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 5,
+      "N": 15,
+      "direct": "180154/969",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 5,
+      "N": 100,
+      "direct": "1057989314132/4264761865",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 6,
+      "N": 7,
+      "direct": "152029/858",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 6,
+      "N": 17,
+      "direct": "77957813/245157",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 6,
+      "N": 100,
+      "direct": "56060455730567/130379862730",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 7,
+      "N": 8,
+      "direct": "118211/429",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 7,
+      "N": 19,
+      "direct": "780408968/1562275",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 7,
+      "N": 100,
+      "direct": "44415658547272/65189931365",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 8,
+      "N": 9,
+      "direct": "982271/2431",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 8,
+      "N": 21,
+      "direct": "182074514/246675",
+      "boundary_identity": true,
+      "remainder_identity": true
+    },
+    {
+      "m": 8,
+      "N": 100,
+      "direct": "107870618568186602/106585537781775",
+      "boundary_identity": true,
+      "remainder_identity": true
+    }
+  ],
+  "mixed_common_numerator_degree_in_n": 4,
+  "mixed_common_numerator_total_degree": 8,
+  "mixed_numerator_divided_by_r_r2minus1": "-2*m^4*r + m^3*r^2 + 4*m^4*n - 9*m^3*r*n + 3*m^2*r^2*n + 14*m^3*n^2 - 15*m^2*r*n^2 + 3*m*r^2*n^2 + 14*m^2*n^3 - 9*m*r*n^3 + r^2*n^3 + 4*m*n^4 - 2*r*n^4 + 2*m^2*r - m*r^2 + 3*m*r*n - r^2*n + 2*r*n^2",
+  "mixed_factor_residual": "0",
+  "m2_special_checks": {
+    "general_minus_special": "0",
+    "special_minus_partial_fractions": "0"
+  },
+  "m2_first_eigenvalues": [
+    "22/5",
+    "11/5",
+    "46/35",
+    "61/70",
+    "13/21",
+    "97/210",
+    "59/165",
+    "47/165",
+    "166/715"
+  ],
+  "convergence": [
+    {
+      "m": 2,
+      "N": 10,
+      "cutoff_exact": "1536/143",
+      "cutoff_decimal": "10.74125874125874125874",
+      "limit_exact": "13"
+    },
+    {
+      "m": 2,
+      "N": 100,
+      "cutoff_exact": "2256837/176851",
+      "cutoff_decimal": "12.76123403316916500331",
+      "limit_exact": "13"
+    },
+    {
+      "m": 2,
+      "N": 1000,
+      "cutoff_exact": "2175668487/167668501",
+      "cutoff_decimal": "12.97601203579675349993",
+      "limit_exact": "13"
+    },
+    {
+      "m": 2,
+      "N": 10000,
+      "cutoff_exact": "2167566684987/166766685001",
+      "cutoff_decimal": "12.99760012003597960756",
+      "limit_exact": "13"
+    },
+    {
+      "m": 3,
+      "N": 10,
+      "cutoff_exact": "193764/5005",
+      "cutoff_decimal": "38.71408591408591408591",
+      "limit_exact": "52"
+    },
+    {
+      "m": 3,
+      "N": 100,
+      "cutoff_exact": "2906466981/57476575",
+      "cutoff_decimal": "50.56785274696691652208",
+      "limit_exact": "52"
+    },
+    {
+      "m": 3,
+      "N": 1000,
+      "cutoff_exact": "38970573642108/751514174125",
+      "cutoff_decimal": "51.85607269148591056855",
+      "limit_exact": "52"
+    },
+    {
+      "m": 3,
+      "N": 10000,
+      "cutoff_exact": "13551459510149973753/260677174492188125",
+      "cutoff_decimal": "51.98560072069554661998",
+      "limit_exact": "52"
+    },
+    {
+      "m": 4,
+      "N": 10,
+      "cutoff_exact": "1128/13",
+      "cutoff_decimal": "86.76923076923076923077",
+      "limit_exact": "130"
+    },
+    {
+      "m": 4,
+      "N": 100,
+      "cutoff_exact": "4030706037/32186882",
+      "cutoff_decimal": "125.2282230071244552361",
+      "limit_exact": "130"
+    },
+    {
+      "m": 4,
+      "N": 1000,
+      "cutoff_exact": "332005269168351/2563346528470",
+      "cutoff_decimal": "129.5202445244564628265",
+      "limit_exact": "130"
+    },
+    {
+      "m": 4,
+      "N": 10000,
+      "cutoff_exact": "3615195580461335168601/27819468061806316700",
+      "cutoff_decimal": "129.9520024045564261756",
+      "limit_exact": "130"
+    }
+  ]
+}

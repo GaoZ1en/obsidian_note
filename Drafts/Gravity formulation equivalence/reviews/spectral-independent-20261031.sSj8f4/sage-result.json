@@ -1,0 +1,77 @@
+{
+  "sage_version": "10.9",
+  "checks": {
+    "ghost-nonnilpotency-N2": true,
+    "N2-full-Q2c1": true,
+    "ghost-nonnilpotency-N3": true,
+    "ghost-nonnilpotency-N4": true,
+    "ghost-nonnilpotency-N5": true,
+    "defect-rank-N1": true,
+    "defect-edge-N1": true,
+    "exact-A-det-N1": true,
+    "exact-B-det-N1": true,
+    "full-parity-Ber-N1": true,
+    "defect-rank-N2": true,
+    "defect-edge-N2": true,
+    "exact-A-det-N2": true,
+    "exact-B-det-N2": true,
+    "full-parity-Ber-N2": true,
+    "defect-rank-N3": true,
+    "defect-edge-N3": true,
+    "exact-A-det-N3": true,
+    "exact-B-det-N3": true,
+    "full-parity-Ber-N3": true,
+    "defect-rank-N4": true,
+    "defect-edge-N4": true,
+    "exact-A-det-N4": true,
+    "exact-B-det-N4": true,
+    "full-parity-Ber-N4": true
+  },
+  "count": 25,
+  "all_checks_true": true,
+  "results": {
+    "Q2c1-N2": "-5*cm2*c1*c2",
+    "N2-all-Q2": {
+      "-2": "4*cm2*cm1*c1",
+      "-1": "5*cm2*cm1*c2",
+      "0": "0",
+      "1": "-5*cm2*c1*c2",
+      "2": "-4*cm1*c1*c2"
+    },
+    "Q2c1-N3": "-14*cm3*c1*c3",
+    "Q2c1-N4": "-27*cm4*c1*c4 - 9*cm4*c2*c3",
+    "Q2c1-N5": "-44*cm5*c1*c5 - 22*cm5*c2*c4",
+    "N1-rational": {
+      "detA": "41/50",
+      "detB": "125/81",
+      "defectRank": 2,
+      "evenDimension": 72,
+      "oddDimension": 72,
+      "fullChainBerezinian": "244140625000/36627445161"
+    },
+    "N2-rational": {
+      "detA": "6643/10000",
+      "detB": "12500/6561",
+      "defectRank": 2,
+      "evenDimension": 120,
+      "oddDimension": 120,
+      "fullChainBerezinian": "1953125000000000000000000/82794763625658704141067"
+    },
+    "N3-rational": {
+      "detA": "134521/250000",
+      "detB": "1250000/531441",
+      "defectRank": 2,
+      "evenDimension": 168,
+      "oddDimension": 168,
+      "fullChainBerezinian": "30517578125000000000000000000000000/365372141973171107201163447273081"
+    },
+    "N4-rational": {
+      "detA": "8716961/20000000",
+      "detB": "125000000/43046721",
+      "defectRank": 2,
+      "evenDimension": 216,
+      "oddDimension": 216,
+      "fullChainBerezinian": "15625000000000000000000000000000000000000000000/52834248603334455537531809875204522412519841"
+    }
+  }
+}

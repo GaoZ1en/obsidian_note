@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_49deea8051a040a1ba18c092ecef838d|fc_00e61ec4e4885aea016ae50ebfa3d88191b7e361e8b0349322",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_geometric_cs_gaussian.wl\"]",
+    "profile": "components",
+    "timeoutMs": 180000,
+    "maxOutputChars": 4000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Preview\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/preview.txt\\\", \\\"Native\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/result.wxf\\\", \\\"AllResidualsZero\\\" -> True, \\\"KernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"UnevaluatedComputations\\\" -> False|>\",\n  \"resultSha256\": \"59b377371f964f599f0819f87c206b4463cbc7231549c63bdea5bd3f769e3a6d\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 2950,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Preview\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/preview.txt\", \"Native\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/result.wxf\", \"AllResidualsZero\" -> True, \"KernelVersion\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\", \"UnevaluatedComputations\" -> False|>",
+        "resultSha256": "59b377371f964f599f0819f87c206b4463cbc7231549c63bdea5bd3f769e3a6d",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 2950,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Preview\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/preview.txt\\\", \\\"Native\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/result.wxf\\\", \\\"AllResidualsZero\\\" -> True, \\\"KernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"UnevaluatedComputations\\\" -> False|>\",\n  \"resultSha256\": \"59b377371f964f599f0819f87c206b4463cbc7231549c63bdea5bd3f769e3a6d\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 2950,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

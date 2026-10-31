@@ -1,0 +1,79 @@
+{
+  "engine": "native Sage ExteriorAlgebra over exact polynomial ring",
+  "sage_version": "10.9",
+  "components": 48,
+  "odd_generators": 24,
+  "even_variables": 24,
+  "parameter_g": "1/kappa",
+  "checks": [
+    {
+      "label": "all 24 Darboux position-momentum pairs",
+      "passed": true
+    },
+    {
+      "label": "opposite-parity generating function has coincident derivatives",
+      "passed": true
+    },
+    {
+      "label": "quartic source Hamiltonian 2F4 minus mixed derivative contraction",
+      "passed": true
+    },
+    {
+      "label": "quartic source Hamiltonian is genuinely nonzero",
+      "passed": true
+    },
+    {
+      "label": "quartic F4 contribution is genuinely nonzero",
+      "passed": true
+    },
+    {
+      "label": "isolated two-antifield generator omits ghost-cotangent terms",
+      "passed": true
+    },
+    {
+      "label": "exact type-II generator cancellation at arbitrary T",
+      "passed": true
+    },
+    {
+      "label": "top-form contraction identity at order t",
+      "passed": true
+    },
+    {
+      "label": "top-form contraction identity at order t squared",
+      "passed": true
+    },
+    {
+      "label": "48 quadratic coordinate jets of the exact gravitational map",
+      "passed": true
+    },
+    {
+      "label": "48 cubic coordinate jets of the exact gravitational map",
+      "passed": true
+    },
+    {
+      "label": "negative control: bare F3 flow fails cubic ghost jets",
+      "passed": true
+    },
+    {
+      "label": "negative control: omission of quartic source term fails coframe jets",
+      "passed": true
+    },
+    {
+      "label": "formal logarithmic quartic Hamiltonian equals F4 minus half contraction",
+      "passed": true
+    },
+    {
+      "label": "even ghost antifields actually occur",
+      "passed": true
+    }
+  ],
+  "check_count": 15,
+  "all_passed": true,
+  "counts": {
+    "F3_exterior_terms": 21,
+    "F4_exterior_terms": 18,
+    "F5_exterior_terms": 1,
+    "G4_exterior_terms": 57
+  },
+  "scope": "ultralocal all-component canonical generator/map jets; no AdS spectrum, derivative density, BV pushforward measure or loop test"
+}

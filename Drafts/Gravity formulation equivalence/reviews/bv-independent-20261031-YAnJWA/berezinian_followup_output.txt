@@ -1,0 +1,21 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: Post-freeze source SHA256: 874f31c958fc8a42947c2ffc43abedc742c52a10009fbeef772d74d95acddb1d
+  RIGHT-Jacobian translation Schur row 0: PASS
+  RIGHT-Jacobian Lorentz Schur row 0: PASS
+  WRONG left-block result identified 0: PASS
+  RIGHT-Jacobian translation Schur row 1: PASS
+  RIGHT-Jacobian Lorentz Schur row 1: PASS
+  WRONG left-block result identified 1: PASS
+  RIGHT-Jacobian translation Schur row 2: PASS
+  RIGHT-Jacobian Lorentz Schur row 2: PASS
+  WRONG left-block result identified 2: PASS
+  2-Grassmann right Schur entry: 1
+  2-Grassmann wrong-left Schur entry: 2*g*theta*eta + 1
+  ALL BEREZINIAN FOLLOW-UP CHECKS PASSED; SageMath 10.9
+  
+elapsedMs: 3453

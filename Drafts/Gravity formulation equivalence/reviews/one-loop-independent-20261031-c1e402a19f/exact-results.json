@@ -1,0 +1,5146 @@
+{
+  "status": "passed",
+  "sage_version": "10.9",
+  "python_version": "3.14.3",
+  "checks_total": 1271,
+  "checks_failed": 0,
+  "conventions": {
+    "odd_order": [
+      "p",
+      "alpha",
+      "beta",
+      "eta",
+      "chi"
+    ],
+    "bracket": "F right_dq left_dp G - F right_dp left_dq G",
+    "Delta": "d_x d_p - d_eta d_ve - d_chi d_vf (left derivatives)",
+    "Berezin": "integral dchi deta eta chi = 1",
+    "weight": "exp(-S/h)",
+    "Wick": "P=1/2 sum Cij d_j d_i; Cij on left; rightmost derivative first"
+  },
+  "exact_example": {
+    "S": "x^2/2+(m+t*x)*eta*chi",
+    "Gamma": "(1)*p*eta*chi",
+    "W": "x^2/2-h*log((m+t*x)/m)",
+    "gamma": "((-h)/(x*t + m))*p",
+    "density_ratio": "((x*t + m)/m)",
+    "full_transport_residual": "0",
+    "pushed_density_residual": "0",
+    "quantum_W_transport_residual": "0",
+    "one_loop_transport": "-x/(m+t*x)",
+    "uncancelled_h2_before_Delta_term": "h^2*t/(m+t*x)^2"
+  },
+  "mixed_super_gaussian": {
+    "quadratic_action": "A*z^2/2+B*eta*chi+z*(alpha*eta+beta*chi)",
+    "relative_prefactor": "(1) + (4/(4*A*B))*alpha*beta",
+    "covariance": [
+      [
+        "(1/A) + (2/(A^2*B))*alpha*beta",
+        "((-1)/(A*B))*beta",
+        "(1/(A*B))*alpha"
+      ],
+      [
+        "((-1)/(A*B))*beta",
+        "0",
+        "((-1)/B) + (1/(A*B^2))*alpha*beta"
+      ],
+      [
+        "(1/(A*B))*alpha",
+        "(1/B) + ((-1)/(A*B^2))*alpha*beta",
+        "0"
+      ]
+    ]
+  },
+  "nonGaussian_insertion": {
+    "denominator_one_loop": "((22830435532800*A^2*B*r^2 - 22830435532800*A*B*c*r + 45660871065600*A^2*d*r + 22830435532800*A^2*B*s - 45660871065600*A^3*k + 9512681472000*B*c^2 - 22830435532800*A*c*d - 5707608883200*A*B*e + 22830435532800*A^2*f)/(45660871065600*A^3*B))",
+    "normalized_one_loop": "((60525920668063739262894342144000000*A*B*r*g1 - 30262960334031869631447171072000000*B*c*g1 + 60525920668063739262894342144000000*A*d*g1 + 30262960334031869631447171072000000*A*B*g2 - 60525920668063739262894342144000000*A^2*gF)/(60525920668063739262894342144000000*A^2*B))*p",
+    "normalized_one_loop_factored": "p*(g2/(2*A)-gF/B+g1*r/A-g1*c/(2*A^2)+g1*d/(A*B))",
+    "ordered_Wick_residual": "0"
+  },
+  "checks": [
+    {
+      "label": "Darboux x,p",
+      "passed": true
+    },
+    {
+      "label": "Darboux eta,ve",
+      "passed": true
+    },
+    {
+      "label": "Darboux chi,vf",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 0,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 1,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 2,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 3,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 4,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 5,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 6,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 7,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 8,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 9,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 10,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 11,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 12,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 13,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 14,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 15,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 16,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 17,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 18,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 19,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 20,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 21,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 22,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 23,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 24,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 25,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 26,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 27,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 28,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 29,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 30,31",
+      "passed": true
+    },
+    {
+      "label": "Delta squared basis 31",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,0",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,1",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,2",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,3",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,4",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,5",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,6",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,7",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,8",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,9",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,10",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,11",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,12",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,13",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,14",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,15",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,16",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,17",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,18",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,19",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,20",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,21",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,22",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,23",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,24",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,25",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,26",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,27",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,28",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,29",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,30",
+      "passed": true
+    },
+    {
+      "label": "BV product rule 31,31",
+      "passed": true
+    },
+    {
+      "label": "full classical master equation",
+      "passed": true
+    },
+    {
+      "label": "full Delta S vanishes",
+      "passed": true
+    },
+    {
+      "label": "full Delta Gamma vanishes",
+      "passed": true
+    },
+    {
+      "label": "right-action isotopy",
+      "passed": true
+    },
+    {
+      "label": "canonical x velocity",
+      "passed": true
+    },
+    {
+      "label": "canonical eta-conjugate velocity",
+      "passed": true
+    },
+    {
+      "label": "canonical chi-conjugate velocity",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 0,5",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 1,5",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 2,5",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 3,5",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 4,5",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,0",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,1",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,2",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,3",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,4",
+      "passed": true
+    },
+    {
+      "label": "finite canonical map bracket 5,5",
+      "passed": true
+    },
+    {
+      "label": "stationary eta equation",
+      "passed": true
+    },
+    {
+      "label": "stationary chi equation",
+      "passed": true
+    },
+    {
+      "label": "tree generator is zero",
+      "passed": true
+    },
+    {
+      "label": "exact effective density",
+      "passed": true
+    },
+    {
+      "label": "exact generator insertion",
+      "passed": true
+    },
+    {
+      "label": "exact full semidensity transport",
+      "passed": true
+    },
+    {
+      "label": "BV pushforward commutes with twisted Delta",
+      "passed": true
+    },
+    {
+      "label": "exact pushed density transport",
+      "passed": true
+    },
+    {
+      "label": "exact Euclidean W transport",
+      "passed": true
+    },
+    {
+      "label": "nonzero one-loop insertion",
+      "passed": true
+    },
+    {
+      "label": "one-loop insertion contributes",
+      "passed": true
+    },
+    {
+      "label": "h^2 cancellation is nontrivial",
+      "passed": true
+    },
+    {
+      "label": "off-shell Gaussian ratio is not identity",
+      "passed": true
+    },
+    {
+      "label": "on-shell Gaussian ratio becomes identity",
+      "passed": true
+    },
+    {
+      "label": "t=0 generator is still nonzero",
+      "passed": true
+    },
+    {
+      "label": "nilpotent Gaussian exponential terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed super-Gaussian Berezinian factor",
+      "passed": true
+    },
+    {
+      "label": "Gaussian square cancels relative Berezinian",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 0,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 0,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 0,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 0,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 0,2",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 0,2",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 1,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 1,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 1,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 1,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 1,2",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 1,2",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 2,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 2,0",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 2,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 2,1",
+      "passed": true
+    },
+    {
+      "label": "super inverse H*C 2,2",
+      "passed": true
+    },
+    {
+      "label": "super inverse C*H 2,2",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta0 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z0 eta1 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta0 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z1 eta1 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta0 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z2 eta1 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi1 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi1 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi1 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta0 chi1 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta1 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta1 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta1 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z3 eta1 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z4 eta0 chi0 pref1",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z4 eta0 chi0 prefp",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z4 eta0 chi0 prefalpha",
+      "passed": true
+    },
+    {
+      "label": "Wick differential series terminates",
+      "passed": true
+    },
+    {
+      "label": "mixed Wick moment z4 eta0 chi0 prefbeta",
+      "passed": true
+    },
+    {
+      "label": "denominator tree normalization",
+      "passed": true
+    },
+    {
+      "label": "numerator tree insertion",
+      "passed": true
+    },
+    {
+      "label": "disconnected denominator coefficient",
+      "passed": true
+    },
+    {
+      "label": "normalized one-loop insertion",
+      "passed": true
+    },
+    {
+      "label": "ordered Wick formula equals direct ratio",
+      "passed": true
+    }
+  ]
+}

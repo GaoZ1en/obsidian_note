@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_ddd257b4a95c4835a391f63deb6937da|fc_0afa0b7a4e3b2591016ae502e0e4108191b9c8c9d947e2b79d",
+  "sessionId": "b98397fa-08d9-4d67-b5a4-616c875ca72a",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/checks_conformal_xact.wl\"]",
+    "profile": "components",
+    "timeoutMs": 120000,
+    "maxOutputChars": 16000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Engine\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"WeylFactor\\\" -> reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewB*reviewX[]*reviewY[] + reviewE*reviewY[]^2 + reviewC*reviewY[]^3, \\\"ScalarCurvature\\\" -> (-4*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \\\"StressTrace\\\" -> (reviewLam*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \\\"Checks\\\" -> <|\\\"WeylCurvatureResidual\\\" -> 0, \\\"StressTraceAnomalyResidual\\\" -> 0, \\\"StressConservationResidual\\\" -> 0|>, \\\"AllResidualsZero\\\" -> True, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"2e6250f77f58294f8c171bc82c5b6a7d9a20221af586a86bbd80ce61a0248356\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3587,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Engine\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\", \"WeylFactor\" -> reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewB*reviewX[]*reviewY[] + reviewE*reviewY[]^2 + reviewC*reviewY[]^3, \"ScalarCurvature\" -> (-4*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \"StressTrace\" -> (reviewLam*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \"Checks\" -> <|\"WeylCurvatureResidual\" -> 0, \"StressTraceAnomalyResidual\" -> 0, \"StressConservationResidual\" -> 0|>, \"AllResidualsZero\" -> True, \"Messages\" -> {}|>",
+        "resultSha256": "2e6250f77f58294f8c171bc82c5b6a7d9a20221af586a86bbd80ce61a0248356",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3587,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Engine\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"WeylFactor\\\" -> reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewB*reviewX[]*reviewY[] + reviewE*reviewY[]^2 + reviewC*reviewY[]^3, \\\"ScalarCurvature\\\" -> (-4*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \\\"StressTrace\\\" -> (reviewLam*(reviewA + reviewE + 3*reviewC*reviewY[]))/E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + reviewY[]*(reviewE + reviewC*reviewY[])))), \\\"Checks\\\" -> <|\\\"WeylCurvatureResidual\\\" -> 0, \\\"StressTraceAnomalyResidual\\\" -> 0, \\\"StressConservationResidual\\\" -> 0|>, \\\"AllResidualsZero\\\" -> True, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"2e6250f77f58294f8c171bc82c5b6a7d9a20221af586a86bbd80ce61a0248356\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3587,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

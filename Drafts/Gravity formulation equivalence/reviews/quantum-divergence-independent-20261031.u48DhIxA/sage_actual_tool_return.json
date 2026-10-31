@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_276de06cbc72493082adf45afaaef517|fc_0aa892727aded7c9016ae54e10519c8191a6c578b02a5bacd6",
+  "sessionId": "0cb9cbe4-9f16-4a0f-8672-47c4c57ed763",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quantum-divergence-independent-20261031.u48DhIxA/exact_divergence_and_schur.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"status\\\": \\\"passed\\\",\\n  \\\"checks\\\": {\\n    \\\"epsilon_orientation\\\": true,\\n    \\\"exterior_anticommutation\\\": true,\\n    \\\"left_derivative_product\\\": true,\\n    \\\"inverse_matrix\\\": true,\\n    \\\"delta_exact_all_sectors\\\": true,\\n    \\\"delta_physical_sector\\\": true,\\n    \\\"delta_ghost_sector\\\": true,\\n    \\\"delta_wW_sector_zero\\\": true,\\n    \\\"delta_etaR_sector_zero\\\": true,\\n    \\\"right_hamiltonian_f_component\\\": true,\\n    \\\"semidensity_source_PDE\\\": true,\\n    \\\"fixed_P_even_block_identity\\\": true,\\n    \\\"full_ghost_Schur_exact\\\": true,\\n    \\\"nilpotent_sector_nonzero\\\": true,\\n    \\\"jacobian_initial_one\\\": true,\\n    \\\"divergence_initial_minus_traceF\\\": true\\n  },\\n  \\\"assumptions\\\": [\\n    \\\"oriented unit canonical cell\\\",\\n    \\\"e0=identity at cell\\\",\\n    \\\"kappa nonzero\\\",\\n    \\\"det(I+tF) nonzero\\\",\\n    \\\"left Grassmann derivatives\\\",\\n    \\\"coefficient-first dx convention\\\"\\n  ],\\n  \\\"gamma_monomials\\\": 57,\\n  \\\"divergence_monomials\\\": 19,\\n  \\\"sector_monomials\\\": {\\n    \\\"fE\\\": 18,\\n    \\\"wW\\\": 0,\\n    \\\"etaR\\\": 0,\\n    \\\"zetaT\\\": 1\\n  },\\n  \\\"nilpotent_monomials\\\": 18,\\n  \\\"duration_seconds\\\": 0.15098285675048828,\\n  \\\"implementation\\\": \\\"fresh native Sage rational functions plus explicit bitmask exterior algebra; no prior review code imported\\\",\\n  \\\"diagnostics\\\": [],\\n  \\\"excluded_failures\\\": []\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"f17069cc9bba7a6f0b48683c6101883ae8f05e489927e461c1af85d6313d0bc9\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4009,\n  \"transportStderr\": [],\n  \"codeSha256\": \"66148b549f012582182897b84927d1f398d965ae93826de65b154e1d8dd4c428\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"status\": \"passed\",\n  \"checks\": {\n    \"epsilon_orientation\": true,\n    \"exterior_anticommutation\": true,\n    \"left_derivative_product\": true,\n    \"inverse_matrix\": true,\n    \"delta_exact_all_sectors\": true,\n    \"delta_physical_sector\": true,\n    \"delta_ghost_sector\": true,\n    \"delta_wW_sector_zero\": true,\n    \"delta_etaR_sector_zero\": true,\n    \"right_hamiltonian_f_component\": true,\n    \"semidensity_source_PDE\": true,\n    \"fixed_P_even_block_identity\": true,\n    \"full_ghost_Schur_exact\": true,\n    \"nilpotent_sector_nonzero\": true,\n    \"jacobian_initial_one\": true,\n    \"divergence_initial_minus_traceF\": true\n  },\n  \"assumptions\": [\n    \"oriented unit canonical cell\",\n    \"e0=identity at cell\",\n    \"kappa nonzero\",\n    \"det(I+tF) nonzero\",\n    \"left Grassmann derivatives\",\n    \"coefficient-first dx convention\"\n  ],\n  \"gamma_monomials\": 57,\n  \"divergence_monomials\": 19,\n  \"sector_monomials\": {\n    \"fE\": 18,\n    \"wW\": 0,\n    \"etaR\": 0,\n    \"zetaT\": 1\n  },\n  \"nilpotent_monomials\": 18,\n  \"duration_seconds\": 0.15098285675048828,\n  \"implementation\": \"fresh native Sage rational functions plus explicit bitmask exterior algebra; no prior review code imported\",\n  \"diagnostics\": [],\n  \"excluded_failures\": []\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "f17069cc9bba7a6f0b48683c6101883ae8f05e489927e461c1af85d6313d0bc9",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 4009,
+        "transportStderr": [],
+        "codeSha256": "66148b549f012582182897b84927d1f398d965ae93826de65b154e1d8dd4c428"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"status\\\": \\\"passed\\\",\\n  \\\"checks\\\": {\\n    \\\"epsilon_orientation\\\": true,\\n    \\\"exterior_anticommutation\\\": true,\\n    \\\"left_derivative_product\\\": true,\\n    \\\"inverse_matrix\\\": true,\\n    \\\"delta_exact_all_sectors\\\": true,\\n    \\\"delta_physical_sector\\\": true,\\n    \\\"delta_ghost_sector\\\": true,\\n    \\\"delta_wW_sector_zero\\\": true,\\n    \\\"delta_etaR_sector_zero\\\": true,\\n    \\\"right_hamiltonian_f_component\\\": true,\\n    \\\"semidensity_source_PDE\\\": true,\\n    \\\"fixed_P_even_block_identity\\\": true,\\n    \\\"full_ghost_Schur_exact\\\": true,\\n    \\\"nilpotent_sector_nonzero\\\": true,\\n    \\\"jacobian_initial_one\\\": true,\\n    \\\"divergence_initial_minus_traceF\\\": true\\n  },\\n  \\\"assumptions\\\": [\\n    \\\"oriented unit canonical cell\\\",\\n    \\\"e0=identity at cell\\\",\\n    \\\"kappa nonzero\\\",\\n    \\\"det(I+tF) nonzero\\\",\\n    \\\"left Grassmann derivatives\\\",\\n    \\\"coefficient-first dx convention\\\"\\n  ],\\n  \\\"gamma_monomials\\\": 57,\\n  \\\"divergence_monomials\\\": 19,\\n  \\\"sector_monomials\\\": {\\n    \\\"fE\\\": 18,\\n    \\\"wW\\\": 0,\\n    \\\"etaR\\\": 0,\\n    \\\"zetaT\\\": 1\\n  },\\n  \\\"nilpotent_monomials\\\": 18,\\n  \\\"duration_seconds\\\": 0.15098285675048828,\\n  \\\"implementation\\\": \\\"fresh native Sage rational functions plus explicit bitmask exterior algebra; no prior review code imported\\\",\\n  \\\"diagnostics\\\": [],\\n  \\\"excluded_failures\\\": []\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"f17069cc9bba7a6f0b48683c6101883ae8f05e489927e461c1af85d6313d0bc9\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4009,\n  \"transportStderr\": [],\n  \"codeSha256\": \"66148b549f012582182897b84927d1f398d965ae93826de65b154e1d8dd4c428\"\n}"
+      }
+    ]
+  }
+}

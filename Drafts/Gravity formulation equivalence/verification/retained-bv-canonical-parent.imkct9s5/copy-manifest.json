@@ -1,0 +1,32 @@
+[
+  {
+    "file": "source.py",
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x/source.py",
+    "sha256": "5fc9bfd8df8c6c2c31e9c97809b4413148caf4f579c7dfec488c44859d3e65fb",
+    "bytes": 10596
+  },
+  {
+    "file": "result.json",
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x/result.json",
+    "sha256": "a1fccddc97b493d0052f8cae2b1f6fbc0ff6575bac3a08ebee883caf1e064ac4",
+    "bytes": 2433
+  },
+  {
+    "file": "expressions.txt",
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x/expressions.txt",
+    "sha256": "18d66f89bc53d5547fbbec93b8aed269dfb7af03e0d1d69fdd74481945e7bf78",
+    "bytes": 2909
+  },
+  {
+    "file": "source.sha256",
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x/source.sha256",
+    "sha256": "20fe9f425bf60b98ddf04f47a223113c059f6f9ea23bd917e97843c8d7cc323d",
+    "bytes": 65
+  },
+  {
+    "file": "actual-server-return.json",
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/e68533cdfacc-research-result.json",
+    "sha256": "b89e149163cd19d95d8c1760ff7c5118138c68d8929cae1c1e43d9dc8ec89b2e",
+    "bytes": 4186
+  }
+]

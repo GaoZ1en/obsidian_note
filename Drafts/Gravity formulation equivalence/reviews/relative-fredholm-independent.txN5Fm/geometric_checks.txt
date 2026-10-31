@@ -1,0 +1,10 @@
+<|"Result" -> <|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+   "FullBolSchwarzianTransformationResidual" -> 0, "VirasoroJacobiResidual" -> 0, 
+   "L2dTraceB" -> (9*(-1 + m$8553)*m$8553^2)/2, "L2dTraceBResidual" -> 0, 
+   "UnboundedCyclicityBoundaryRemainder" -> 
+    -(((-1 + r$8553)*r$8553*(1 + r$8553)*(-2*j$8553^2 - j$8553*r$8553 + r$8553^2 + 
+        j$8553^2*r$8553^2 - j$8553*r$8553^3 - r$8553^4))/(j$8553^2*(-1 + j$8553 + r$8553)*
+       (j$8553 + r$8553)*(1 + j$8553 + r$8553))), "UnboundedCyclicityBoundaryRemainderOrder" -> 
+    SeriesData[j$8553, Infinity, {-(r$8553*(2 - 3*r$8553^2 + r$8553^4))}, 3, 4, 1], 
+   "FirstModeLCDefect" -> 0, "SecondModeCurvatureAtJ2" -> 22/5, "m2CrossBlockTrace" -> 13|>, 
+ "Failed" -> False, "UnevaluatedSumOrLimit" -> False, "Messages" -> {}|>

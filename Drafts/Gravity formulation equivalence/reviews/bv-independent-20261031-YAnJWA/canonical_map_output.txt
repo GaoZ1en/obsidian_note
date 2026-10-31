@@ -1,0 +1,37 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: SageMath: 10.9
+  Generating density monomials: 23
+  dF/dP_E[0]: PASS
+  dF/dP_Omega[0]: PASS
+  dF/de[0]: PASS
+  dF/domega[0]: PASS
+  dF/dP_E[1]: PASS
+  dF/dP_Omega[1]: PASS
+  dF/de[1]: PASS
+  dF/domega[1]: PASS
+  dF/dP_E[2]: PASS
+  dF/dP_Omega[2]: PASS
+  dF/de[2]: PASS
+  dF/domega[2]: PASS
+  dF/dP_rho: PASS
+  dF/dP_tau: PASS
+  dF/dlambda: PASS
+  dF/dxi[0] after antifield substitution: PASS
+  E[0] explicit: PASS
+  Omega[0] explicit: PASS
+  dF/dxi[1] after antifield substitution: PASS
+  E[1] explicit: PASS
+  Omega[1] explicit: PASS
+  dF/dxi[2] after antifield substitution: PASS
+  E[2] explicit: PASS
+  Omega[2] explicit: PASS
+  tau explicit: PASS
+  rho explicit: PASS
+  ALL CANONICAL MAP CHECKS PASSED
+  
+elapsedMs: 3253

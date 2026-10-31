@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_c4bf1d98c0c6444e9284b02dcfec7e54|fc_0588255e40b180b5016ae4ebac60008191af84f3a0ca9f4003",
+  "sessionId": "a9b2f8af-30c9-4e97-9c04-e08ac08f0e41",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "source = r'''from sage.all import *\nfrom pathlib import Path\nimport os, tempfile, json, sage.version\nw=lambda n: ZZ(n)*(ZZ(n)*ZZ(n)-1)\ndef C(m,n):\n    if n<2 or n+m<2:return QQ(0)\n    if m<=0:return QQ(m-n)\n    return -QQ(n+2*m)*w(n)/w(n+m)\ndef L(m,n):\n    if n>=2:return C(m,n)\n    if n<=-2:return -C(-m,-n)\n    return QQ(0)\ndef metric(n,k):\n    return -w(abs(n)) if abs(n)>=2 and n+k==0 else QQ(0)\ndef curvature(a,b,n):\n    return L(b,n)*L(a,b+n)-L(a,n)*L(b,a+n)-(a-b)*L(a+b,n)\nchecks={}\ndef check(label,residuals):\n    failures=[]; count=0\n    for key,value in residuals:\n        count+=1\n        if value!=0:failures.append({'key':str(key),'residual':str(value)})\n    checks[label]={'count':count,'passed':len(failures)==0,'failures':failures}\nV=[n for n in range(-15,16) if abs(n)>=2]\ncheck('isotropy_action',(((a,n),L(a,n)-(a-n if abs(a+n)>=2 else 0)) for a in [-1,0,1] for n in V))\ncheck('h_equivariance_all_boundaries',(((a,m,n),L(m,n)*L(a,m+n)-L(a,n)*L(m,a+n)-(a-m)*L(a+m,n)) for a in [-1,0,1] for m in range(-8,9) for n in V))\ncheck('torsion_full_quotient',(((a,b),L(a,b)-L(b,a)-(a-b if abs(a+b)>=2 else 0)) for a in range(-8,9) for b in range(-8,9)))\ncheck('metric_compatibility',(((a,n,k),L(a,n)*metric(a+n,k)+L(a,k)*metric(n,a+k)) for a in range(-8,9) for n in V for k in V))\nsmallV=[n for n in range(-6,7) if abs(n)>=2]\ncheck('first_bianchi',(((a,b,c),curvature(a,b,c)+curvature(b,c,a)+curvature(c,a,b)) for a in smallV for b in smallV for c in smallV))\ncheck('positive_type_curvature_zero',(((a,b,n),curvature(a,b,n)) for a in range(2,7) for b in range(2,7) for n in range(2,21)))\ncheck('negative_type_curvature_zero',(((a,b,n),curvature(a,b,n)) for a in range(-6,-1) for b in range(-6,-1) for n in range(2,21)))\ncheck('mixed_adjoint',(((m,r,n),curvature(m,-r,n)*w(n+m-r)-curvature(r,-m,n+m-r)*w(n)) for m in range(2,9) for r in range(2,9) for n in range(2,31) if n+m-r>=2))\ndef f(m,n):return QQ((n+2*m)**2)*w(n)/w(n+m)\ndef rem(m,n):return QQ(m*(m*m-1)*(m+2*n)*(2*m+n))/w(m+n)\ncutoff_data=[]\nfor m in range(1,9):\n    for N in [max(2,m+1),2*m+5,100]:\n        direct=sum(curvature(m,-m,n) for n in range(2,N+1))\n        boundary=m*N*(N+1)-2*m-sum(f(m,n) for n in range(N-m+1,N+1))\n        expected=QQ(13)/6*w(m)-sum(rem(m,n) for n in range(N-m+1,N+1))\n        cutoff_data.append({'m':m,'N':N,'direct':str(direct),'boundary_identity':direct==boundary,'remainder_identity':direct==expected})\nR=PolynomialRing(QQ,names=('m','r','n')); m,r,n=R.gens(); d=m-r\nww=lambda x:x*(x*x-1)\nNpoly=(n+r)*(n-r+2*m)*ww(n-r)*ww(n+m)-(n+2*m)*(n+m+r)*ww(n)*ww(n+d)+(m+r)*(n+2*d)*ww(n)*ww(n+m)\nfactor_mixed=Npoly//(r*(r*r-1))\nassert Npoly==r*(r*r-1)*factor_mixed\nK=R.fraction_field(); rt=K(2*m*n+(n+m)**2*ww(n-m)/ww(n)-(n+2*m)**2*ww(n)/ww(n+m))\nspecial2=K(24*(n*n+6*n+6)/(n*(n+1)*(n+2)*(n+3)))\npartial2=K(24/n-12/(n+1)-24/(n+2)+12/(n+3))\nspecial2checks={'general_minus_special':str(rt(m=2)-special2),'special_minus_partial_fractions':str(special2-partial2)}\nconvergence=[]\nfor mm in [2,3,4]:\n    for NN in [10,100,1000,10000]:\n        cut=QQ(13)/6*w(mm)-sum(rem(mm,j) for j in range(NN-mm+1,NN+1))\n        convergence.append({'m':mm,'N':NN,'cutoff_exact':str(cut),'cutoff_decimal':str(cut.n(digits=22)),'limit_exact':str(QQ(13)/6*w(mm))})\nanswer={'sage_version':sage.version.version,'finite_checks':checks,'cutoff_checks':cutoff_data,'mixed_common_numerator_degree_in_n':int(Npoly.degree(n)),'mixed_common_numerator_total_degree':int(Npoly.total_degree()),'mixed_numerator_divided_by_r_r2minus1':str(factor_mixed),'mixed_factor_residual':str(Npoly-r*(r*r-1)*factor_mixed),'m2_special_checks':special2checks,'m2_first_eigenvalues':[str(curvature(2,-2,j)) for j in range(2,11)],'convergence':convergence}\nstore=Path(os.environ.get('DSH_HOME') or (Path.home()/'.dsh'))/'research-results'/'kernel-exports'; store.mkdir(parents=True,exist_ok=True,mode=0o700)\nout=Path(tempfile.mkdtemp(prefix='sage-witt-fresh-finite-',dir=store))\nsave({'mixed_numerator':Npoly,'mixed_factor':factor_mixed,'answer':answer},str(out/'result.sobj'))\n(out/'output.json').write_text(json.dumps(answer,indent=2)+'\\n',encoding='utf-8')\n'''\nexec(compile(source,'fresh_witt_finite.py','exec'))\n(out/'source.py').write_text(source,encoding='utf-8')\nprint(str(out/'output.json'));print(str(out/'result.sobj'));print(str(out/'source.py'))",
+    "timeoutMs": 200000,
+    "maxOutputChars": 10000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/output.json\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/result.sobj\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/source.py\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a1c78759bf114d593e95e53af1bd2fa6fa2c01cd92c3ad6b8f2400802e2075bc\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3303,\n  \"transportStderr\": [],\n  \"codeSha256\": \"57d88dcc6c7ea90d9787cbd68188477b650c08f21a326c62b0bdb088d9dc8b7b\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/output.json\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/result.sobj\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/source.py\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "a1c78759bf114d593e95e53af1bd2fa6fa2c01cd92c3ad6b8f2400802e2075bc",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3303,
+        "transportStderr": [],
+        "codeSha256": "57d88dcc6c7ea90d9787cbd68188477b650c08f21a326c62b0bdb088d9dc8b7b"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/output.json\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/result.sobj\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-finite-4zpfozfs/source.py\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a1c78759bf114d593e95e53af1bd2fa6fa2c01cd92c3ad6b8f2400802e2075bc\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3303,\n  \"transportStderr\": [],\n  \"codeSha256\": \"57d88dcc6c7ea90d9787cbd68188477b650c08f21a326c62b0bdb088d9dc8b7b\"\n}"
+      }
+    ]
+  }
+}

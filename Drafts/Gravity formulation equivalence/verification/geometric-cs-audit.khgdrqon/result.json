@@ -1,0 +1,269 @@
+{
+  "scope": "Static stage archive/link audit; no mathematical kernel was run.",
+  "time": "2026-10-31T06:24:31.771973+08:00",
+  "checks": [
+    {
+      "label": "local link targets and numerical line bounds",
+      "passed": true,
+      "detail": {
+        "documents": 19,
+        "links": 492,
+        "broken": [],
+        "scope": "No external URL fetch or historical sentence-identity certification."
+      }
+    },
+    {
+      "label": "eight frozen hashes match recorded values",
+      "passed": true,
+      "detail": [
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/executed-source.wl",
+          "expected": "a5238ac0c488cca95783148948731bb04ae35a46a09fcb0d5e485d5c084fe2d1",
+          "actual": "a5238ac0c488cca95783148948731bb04ae35a46a09fcb0d5e485d5c084fe2d1"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/preview.txt",
+          "expected": "09ee864770498e13707722748629d2700c00c6bc38364d084c07b398640ddcac",
+          "actual": "09ee864770498e13707722748629d2700c00c6bc38364d084c07b398640ddcac"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/result.wxf",
+          "expected": "dba180a8aeb467e87aa7e8fdad3fd5f4ce73fb9432268734f6f1da3d0608150e",
+          "actual": "dba180a8aeb467e87aa7e8fdad3fd5f4ce73fb9432268734f6f1da3d0608150e"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/actual-server-return.json",
+          "expected": "12d44c4ba0208aeda9c6a2f355a7b37b5843187ffdedc57b3cd9f8e064de0161",
+          "actual": "12d44c4ba0208aeda9c6a2f355a7b37b5843187ffdedc57b3cd9f8e064de0161"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/executed-source.wl",
+          "expected": "a260d954d14947e0459495e9707ed13b064633e6490957dedde245d8a94f17de",
+          "actual": "a260d954d14947e0459495e9707ed13b064633e6490957dedde245d8a94f17de"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/preview.txt",
+          "expected": "375313a196636a86367fef107db51072d190d3481ae08401fdefc1da51c5ae52",
+          "actual": "375313a196636a86367fef107db51072d190d3481ae08401fdefc1da51c5ae52"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/result.wxf",
+          "expected": "4f7ed3c44aecf501e49ae43a171278aefe09af059129451c903c19e3dc3fe72b",
+          "actual": "4f7ed3c44aecf501e49ae43a171278aefe09af059129451c903c19e3dc3fe72b"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/actual-server-return.json",
+          "expected": "6c1afee813b6263926e8303593edf4bdd5682f7383d76aa6241d773e33e68ab5",
+          "actual": "6c1afee813b6263926e8303593edf4bdd5682f7383d76aa6241d773e33e68ab5"
+        }
+      ]
+    },
+    {
+      "label": "seven runnable or private-export copies are byte identical",
+      "passed": true,
+      "detail": [
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_geometric_cs_gaussian.wl",
+          "right": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/executed-source.wl",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric_cs_phase_counterexample.wl",
+          "right": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/executed-source.wl",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/preview.txt",
+          "right": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/preview.txt",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/result.wxf",
+          "right": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/result.wxf",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/preview.txt",
+          "right": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-phase.BgDSjU/preview.txt",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/result.wxf",
+          "right": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-phase.BgDSjU/result.wxf",
+          "byte_equal": true
+        },
+        {
+          "left": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/actual-server-return.json",
+          "right": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/0dc3bd5c2af3-research-result.json",
+          "byte_equal": true
+        }
+      ]
+    },
+    {
+      "label": "actual parent xAct server diagnostics",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Preview\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/preview.txt\", \"Native\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-parent.awRvgL/result.wxf\", \"AllResidualsZero\" -> True, \"KernelVersion\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\", \"UnevaluatedComputations\" -> False|>",
+        "resultSha256": "59b377371f964f599f0819f87c206b4463cbc7231549c63bdea5bd3f769e3a6d",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 2950,
+        "transportStderr": []
+      }
+    },
+    {
+      "label": "actual phase server result and available diagnostics",
+      "passed": true,
+      "detail": {
+        "scope": "Ordinary Mathematica envelope does not provide separate process exit/stderr."
+      }
+    },
+    {
+      "label": "recorded sixteen and nine groups with clean final flags",
+      "passed": true,
+      "detail": [
+        {
+          "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve",
+          "expected_groups": 16,
+          "keys": [
+            "su2_trace",
+            "su2_bracket",
+            "su2_cubic_trace",
+            "Euclidean_generic_offshell_transgression_scaled_by_gamma",
+            "xCoba_hyperbolic_Ricci",
+            "both_hyperbolic_CS_curvatures",
+            "hyperbolic_torsion",
+            "Casimir_LC_connection_intertwiner_all_linear_jets",
+            "Casimir_covariant_gradient_intertwiner_all_linear_jets",
+            "Casimir_metric_strain_intertwiner_all_linear_jets",
+            "de_Donder_proper_FP_sign",
+            "LC_connection_on_adapted_diffeomorphism",
+            "finite_general_shear_determinant",
+            "finite_general_Schur_determinant",
+            "unequal_weight_log_counterexample_coefficient",
+            "three_spin_heat_counts_have_no_constant"
+          ],
+          "passed": true
+        },
+        {
+          "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9",
+          "expected_groups": 9,
+          "keys": [
+            "Hermitian_block_characteristic",
+            "Schur_product",
+            "positive_spectral_pair_product",
+            "subordination_leading",
+            "subordination_subleading",
+            "generic_shift_count",
+            "even_form_shifted_a2",
+            "negative_spectral_count",
+            "Log_minus_phase"
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "label": "main display delimiters and aligned environments balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "signed orbital and gauge-realization qualifications are retained",
+      "passed": true,
+      "detail": {
+        "scope": "Static presence check only, not mathematical certification."
+      }
+    }
+  ],
+  "all_passed": true,
+  "auditor_sha256": "a25741879f5ada76285f178fd0e0085400aacae6c312fa3a35ee2ea3261f10b4",
+  "document_snapshots": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "5fae84c7d37e0c097619392cec208ef855b5866446343560f5f3276536ed2cc7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "d9ae304f03bf707ce8a1ffbb076a2bd85a367793b2c34805d9b5375c1c62e6ec"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "b65cd22df26f0994b9cf5da13e4905f77e7abe250fcc85488b0a1fea3c592733"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/14 Geometric CS Gaussian map and regulator.md",
+      "sha256": "536c9db80e2cca49e61d9c71be68ef2714f82934b23c89b796310e4c2c0d72f9"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "e77d42e04258ded933a5c9b71c635fec337b8a4a20f518f729879c77ba12050e"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "dce966e736489d2a68222121d36e14af33056584a6d1ab9c94b7c27dca46fca0"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/Source evidence.md",
+      "sha256": "6e07ce5a3a44880c208885f65b552b67abda5b4f33ac7b32356b0b1b568e3aba"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-parent.l4Mmve/README.md",
+      "sha256": "591f07abbcc467ee98c0fa1308aa8c0e7ad4119d2f7e8f50d0c9e044934fa508"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/README.md",
+      "sha256": "fad8e0cfa839be827932f130d52b957667efa4b836bcf78f16a1719720059274"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/report.md",
+      "sha256": "5e409c9e984b1b4795a1a742828de82d0d03a734bdde9d14f03003f66f1bfabc"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/supplied-text-audit.n1b4jbut/audit.md",
+      "sha256": "845eeff51c2977e44428a6c369854840dc9aa78d28f05e8d55b1b629e1e82b09"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-gauge-dictionary-20261031-8sBlwF/report.md",
+      "sha256": "2e6738bc496936b14718c8c1994032665815ee09dd8ead58e57aacb261972488"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-gauge-dictionary-20261031-8sBlwF/supplied-text-audit.md",
+      "sha256": "20eb995e5597747b0ee46d0b1a5368a30f7427083e460b8bcf0c10ea9b3e3bd7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-gaussian-measure-20261031-lrJCHT/report.md",
+      "sha256": "25a746d07d4ec99ddeb36760c4354f3d8d21eaddec08085df26e5164d5a62519"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-gaussian-measure-20261031-lrJCHT/supplied-text-audit-WkX9El/audit.md",
+      "sha256": "628a27ee9d4aafc73765a6edda2eab1fe9da8212d27493c9375f6de1d20fb58b"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-mixed-order-hc-20261031-d63e5774/report.md",
+      "sha256": "2894d5d5ed532e21ad3671f166288cf6fb935059c23ef973a995b0e9c31163de"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-mixed-order-hc-20261031-d63e5774/source-excerpts.md",
+      "sha256": "9cb74fb8ec0432ead571f296422ba0e23c5cedb74a9710f33e005b3eb62e02f7"
+    },
+    {
+      "path": "reviews/independent-mixed-order-hc-20261031-d63e5774/supplied-text-audit-parent14.md",
+      "sha256": "167948ec9ad608737e3ad89277ff47f6b605e2f50dbccd69e2eabb1769f82e87"
+    },
+    {
+      "path": "reviews/independent-mixed-order-hc-20261031-d63e5774/supplied-text-post-repair.md",
+      "sha256": "42fce4dc55c95ab19b362582f011d77761fc6d1e341255abf955b10d24e61eb8"
+    }
+  ]
+}

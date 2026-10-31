@@ -1,0 +1,27 @@
+Python 3.14.3; SymPy 1.14.0
+Source SHA256: d10d1d6d8f9e8c021adba7325d2ad29e049ad62bdf03bd62ede072ee33e96cc9
+PASS: generic normal EH potential | residuals=['0']
+PASS: generic extrinsic-curvature variation | residuals=['0']
+PASS: full boundary identity including counterterm | residuals=['0']
+PASS: intrinsic Lorentz Hodge wedge pairing | residuals=['0']
+PASS: bulk/intrinsic Hodge compatibility | residuals=['0', '0']
+PASS: generic frame obstruction C-alpha | residuals=['0', '0', '0']
+PASS: fixed internal normal implies C=alpha | residuals=['0', '0', '0']
+PASS: adapted FG C pullback | residuals=['0', '0', '0']
+PASS: adapted FG alpha pullback | residuals=['0', '0', '0']
+PASS: B01 preserves metric | residuals=['0', '0', '0', '0', '0', '0', '0', '0', '0']
+PASS: R12 preserves metric | residuals=['0', '0', '0', '0', '0', '0', '0', '0', '0']
+PASS: pure Lorentz obstruction has coefficient -2 e1 | residuals=['0', '0', '0']
+PASS: AdS3 Einstein equation Ric+2g/ell^2 | residuals=['0', '0', '0', '0', '0', '0', '0', '0', '0']
+PASS: AdS3 extrinsic curvature K=q/ell | residuals=['0', '0', '0', '0']
+PASS: AdS3 renormalized source tensor | residuals=['0', '0', '0', '0']
+OBSERVATIONS:
+alpha on metric FG slice only, gamma suppressed: ['2*m12', '-2*m02', '0']
+alpha full components, gamma suppressed: ['m12 - m21', '-m02 - m20', 'm01 + m10']
+C-alpha tangential components, gamma suppressed: ['2*m21', '2*m20', '0']
+intrinsic Hodge convention: *Gamma e0=-e1; *Gamma e1=-e0
+bulk Hodge convention: *(e0^e1)=-e2; *(e0^e2)=e1; *(e1^e2)=e0
+delta(C-alpha)(B01,R12), gamma suppressed: ['0', '-2', '0']
+on-shell example: e0=(r/ell)dt, e1=r dphi, e2=ell dr/r; phi period 2pi
+corner integral at r=R: -4*pi*gamma*R for ordered pair (B01,R12) and positive dphi orientation
+ALL_PASSED=True

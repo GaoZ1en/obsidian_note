@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_08425c60ec08431e8fa2c7670d346f30|fc_02b378e47dbd0600016ae50d5ead1c8191a29b5d9dade33f61",
+  "sessionId": "ab579ab6-a475-44ec-8723-087540b80446",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import *\nimport json\nK=QuadraticField(-1,'I'); I=K.gen()\npauli=[matrix(K,[[0,1],[1,0]]), matrix(K,[[0,-I],[I,0]]), matrix(K,[[1,0],[0,-1]])]\nT=[-I*x/2 for x in pauli]\ndef eps(a,b,c):\n    if len({a,b,c})<3: return 0\n    return Permutation([a+1,b+1,c+1]).signature()\nJ=[matrix(QQ,3,3,lambda a,c:eps(a,b,c)) for b in range(3)]\nchecks={}\nchecks['Ta_commutators']=all(T[a]*T[b]-T[b]*T[a]==sum((eps(a,b,c)*T[c] for c in range(3)),zero_matrix(K,2)) for a in range(3) for b in range(3))\nchecks['Ta_trace']=all((T[a]*T[b]).trace()==(-QQ(1)/2 if a==b else 0) for a in range(3) for b in range(3))\nchecks['sum_J_square_minus_2I']=sum((j*j for j in J),zero_matrix(QQ,3))==-2*identity_matrix(QQ,3)\nR=PolynomialRing(QQ, names=['p0','p1','p2','v0','v1','v2']+['u%d%d'%(a,b) for a in range(3) for b in range(3)])\ngens=R.gens(); p=vector(R,gens[0:3]); v=vector(R,gens[3:6]); u=matrix(R,3,3,gens[6:])\ndef cross(x,y): return vector(R,[sum(eps(a,b,c)*x[b]*y[c] for b in range(3) for c in range(3)) for a in range(3)])\ndef decomp(u):\n    h=u+u.transpose()\n    r=vector(R,[-sum(eps(a,b,c)*u[b,c] for b in range(3) for c in range(3))/2 for a in range(3)])\n    return h,r\ndef spin(h,r):\n    return matrix(R,3,3,lambda mu,a:sum(eps(a,b,c)*p[b]*h[mu,c] for b in range(3) for c in range(3))/2+p[mu]*r[a])\nh,r=decomp(u)\nu_recon=matrix(R,3,3,lambda mu,a:h[mu,a]/2+sum(eps(a,mu,c)*r[c] for c in range(3)))\nchecks['frame_decomposition_inverse']=u_recon==u\nug=matrix(R,3,3,lambda mu,a:p[mu]*v[a]); hg,rg=decomp(ug)\nchecks['rotation_ghost_symbol']=rg==-cross(p,v)/2\nchecks['spin_symbol_annihilates_pure_gradient_frame']=spin(hg,rg)==zero_matrix(R,3)\nS=spin(h,r)\nB=matrix(R,9,9,lambda i,j:S.list()[i].derivative(gens[6+j]))\nB1=B.subs({p[0]:1,p[1]:0,p[2]:0}).change_ring(QQ)\nchecks['full_spin_symbol_rank_at_unit_covector_is_6']=B1.rank()==6\nhh=zero_matrix(R,3); hh[1,1]=1\nSS=spin(hh,vector(R,[0,0,0])).subs({p[0]:1,p[1]:0,p[2]:0})\nchecks['high_frequency_h22_spin_symbol']=SS==matrix(R,[[0,0,0],[0,0,QQ(1)/2],[0,0,0]])\nprint(json.dumps({'checks':checks,'B_rank':int(B1.rank()),'h22_spin_symbol':str(SS),'all_passed':all(checks.values())},indent=2))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 16000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"checks\\\": {\\n    \\\"Ta_commutators\\\": true,\\n    \\\"Ta_trace\\\": true,\\n    \\\"sum_J_square_minus_2I\\\": true,\\n    \\\"frame_decomposition_inverse\\\": true,\\n    \\\"rotation_ghost_symbol\\\": true,\\n    \\\"spin_symbol_annihilates_pure_gradient_frame\\\": true,\\n    \\\"full_spin_symbol_rank_at_unit_covector_is_6\\\": true,\\n    \\\"high_frequency_h22_spin_symbol\\\": true\\n  },\\n  \\\"B_rank\\\": 6,\\n  \\\"h22_spin_symbol\\\": \\\"[  0   0   0]\\\\n[  0   0 1/2]\\\\n[  0   0   0]\\\",\\n  \\\"all_passed\\\": true\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"8453ffc45394fd7d713d332d07ac38592ea5e9f91edd8e65cfdb517210d9c4d3\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3409,\n  \"transportStderr\": [],\n  \"codeSha256\": \"4a5ec90be0664fa90dd0758b12e5b1361d954294ec88b1acaa5cbea743b0f2cf\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"checks\": {\n    \"Ta_commutators\": true,\n    \"Ta_trace\": true,\n    \"sum_J_square_minus_2I\": true,\n    \"frame_decomposition_inverse\": true,\n    \"rotation_ghost_symbol\": true,\n    \"spin_symbol_annihilates_pure_gradient_frame\": true,\n    \"full_spin_symbol_rank_at_unit_covector_is_6\": true,\n    \"high_frequency_h22_spin_symbol\": true\n  },\n  \"B_rank\": 6,\n  \"h22_spin_symbol\": \"[  0   0   0]\\n[  0   0 1/2]\\n[  0   0   0]\",\n  \"all_passed\": true\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "8453ffc45394fd7d713d332d07ac38592ea5e9f91edd8e65cfdb517210d9c4d3",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3409,
+        "transportStderr": [],
+        "codeSha256": "4a5ec90be0664fa90dd0758b12e5b1361d954294ec88b1acaa5cbea743b0f2cf"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"checks\\\": {\\n    \\\"Ta_commutators\\\": true,\\n    \\\"Ta_trace\\\": true,\\n    \\\"sum_J_square_minus_2I\\\": true,\\n    \\\"frame_decomposition_inverse\\\": true,\\n    \\\"rotation_ghost_symbol\\\": true,\\n    \\\"spin_symbol_annihilates_pure_gradient_frame\\\": true,\\n    \\\"full_spin_symbol_rank_at_unit_covector_is_6\\\": true,\\n    \\\"high_frequency_h22_spin_symbol\\\": true\\n  },\\n  \\\"B_rank\\\": 6,\\n  \\\"h22_spin_symbol\\\": \\\"[  0   0   0]\\\\n[  0   0 1/2]\\\\n[  0   0   0]\\\",\\n  \\\"all_passed\\\": true\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"8453ffc45394fd7d713d332d07ac38592ea5e9f91edd8e65cfdb517210d9c4d3\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3409,\n  \"transportStderr\": [],\n  \"codeSha256\": \"4a5ec90be0664fa90dd0758b12e5b1361d954294ec88b1acaa5cbea743b0f2cf\"\n}"
+      }
+    ]
+  }
+}

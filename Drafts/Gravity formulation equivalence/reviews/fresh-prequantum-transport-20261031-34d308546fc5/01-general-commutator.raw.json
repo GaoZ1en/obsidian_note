@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_ffbf33ea003c4b7586a9c90eb389c56c|fc_062c2dd512a37c76016ae4e2e1f6788191ba3522bc009877c2",
+  "sessionId": "71e90b3d-4c5c-4f6a-b30d-e5b40bf4a597",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Module[{br, xf, theta, qop, f, g, psi, h, residual, qp, pq, phaseF, targetPulled, sourceOp, connectionResidual}, Block[{$Messages = {}, $MessageList = {}}, br[a_, b_] := D[a, q] D[b, p] - D[a, p] D[b, q]; xf[a_, b_] := D[a, p] D[b, q] - D[a, q] D[b, p]; theta[a_] := p D[a, p]; qop[a_, b_] := -I hh xf[a, b] + (a - theta[a]) b; f = ff[q, p]; g = gg[q, p]; psi = ss[q, p]; h = br[f, g]; residual = FullSimplify[qop[f, qop[g, psi]] - qop[g, qop[f, psi]] - I hh qop[h, psi], Assumptions -> Element[{q, p, hh}, Reals] && hh != 0]; qp = Expand[qop[q, psi]]; pq = Expand[qop[p, psi]]; phaseF = aa q^2/2; connectionResidual = FullSimplify[D[Exp[I phaseF/hh] psi, q] - I (p + D[phaseF, q]) Exp[I phaseF/hh] psi/hh - Exp[I phaseF/hh] (D[psi, q] - I p psi/hh), Assumptions -> Element[{q, p, hh, aa}, Reals] && hh != 0]; <|\"GeneralCommutatorResidual\" -> residual, \"CanonicalBracket_q_p\" -> br[q,p], \"Qq\" -> qp, \"Qp\" -> pq, \"CanonicalCommutatorResidual\" -> FullSimplify[qop[q,qop[p,psi]]-qop[p,qop[q,psi]]-I hh psi], \"PositiveFiberPhaseConnectionResidual\" -> connectionResidual, \"Messages\" -> (ToString[#,InputForm]& /@ $MessageList)|>]]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nModule[{br, xf, theta, qop, f, g, psi, h, residual, qp, pq, phaseF, targetPulled, sourceOp, connectionResidual}, Block[{$Messages = {}, $MessageList = {}}, br[a_, b_] := D[a, q] D[b, p] - D[a, p] D[b, q]; xf[a_, b_] := D[a, p] D[b, q] - D[a, q] D[b, p]; theta[a_] := p D[a, p]; qop[a_, b_] := -I hh xf[a, b] + (a - theta[a]) b; f = ff[q, p]; g = gg[q, p]; psi = ss[q, p]; h = br[f, g]; residual = FullSimplify[qop[f, qop[g, psi]] - qop[g, qop[f, psi]] - I hh qop[h, psi], Assumptions -> Element[{q, p, hh}, Reals] && hh != 0]; qp = Expand[qop[q, psi]]; pq = Expand[qop[p, psi]]; phaseF = aa q^2/2; connectionResidual = FullSimplify[D[Exp[I phaseF/hh] psi, q] - I (p + D[phaseF, q]) Exp[I phaseF/hh] psi/hh - Exp[I phaseF/hh] (D[psi, q] - I p psi/hh), Assumptions -> Element[{q, p, hh, aa}, Reals] && hh != 0]; <|\"GeneralCommutatorResidual\" -> residual, \"CanonicalBracket_q_p\" -> br[q,p], \"Qq\" -> qp, \"Qp\" -> pq, \"CanonicalCommutatorResidual\" -> FullSimplify[qop[q,qop[p,psi]]-qop[p,qop[q,psi]]-I hh psi], \"PositiveFiberPhaseConnectionResidual\" -> connectionResidual, \"Messages\" -> (ToString[#,InputForm]& /@ $MessageList)|>]]\n```\n\nOutput:\n<|GeneralCommutatorResidual -> 0, CanonicalBracket_q_p -> 1, Qq -> q*ss[q, p] + I*hh*Derivative[0, 1][ss][q, p], Qp -> -I*hh*Derivative[1, 0][ss][q, p], CanonicalCommutatorResidual -> 0, PositiveFiberPhaseConnectionResidual -> 0, Messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nModule[{br, xf, theta, qop, f, g, psi, h, residual, qp, pq, phaseF, targetPulled, sourceOp, connectionResidual}, Block[{$Messages = {}, $MessageList = {}}, br[a_, b_] := D[a, q] D[b, p] - D[a, p] D[b, q]; xf[a_, b_] := D[a, p] D[b, q] - D[a, q] D[b, p]; theta[a_] := p D[a, p]; qop[a_, b_] := -I hh xf[a, b] + (a - theta[a]) b; f = ff[q, p]; g = gg[q, p]; psi = ss[q, p]; h = br[f, g]; residual = FullSimplify[qop[f, qop[g, psi]] - qop[g, qop[f, psi]] - I hh qop[h, psi], Assumptions -> Element[{q, p, hh}, Reals] && hh != 0]; qp = Expand[qop[q, psi]]; pq = Expand[qop[p, psi]]; phaseF = aa q^2/2; connectionResidual = FullSimplify[D[Exp[I phaseF/hh] psi, q] - I (p + D[phaseF, q]) Exp[I phaseF/hh] psi/hh - Exp[I phaseF/hh] (D[psi, q] - I p psi/hh), Assumptions -> Element[{q, p, hh, aa}, Reals] && hh != 0]; <|\"GeneralCommutatorResidual\" -> residual, \"CanonicalBracket_q_p\" -> br[q,p], \"Qq\" -> qp, \"Qp\" -> pq, \"CanonicalCommutatorResidual\" -> FullSimplify[qop[q,qop[p,psi]]-qop[p,qop[q,psi]]-I hh psi], \"PositiveFiberPhaseConnectionResidual\" -> connectionResidual, \"Messages\" -> (ToString[#,InputForm]& /@ $MessageList)|>]]\n```\n\nOutput:\n<|GeneralCommutatorResidual -> 0, CanonicalBracket_q_p -> 1, Qq -> q*ss[q, p] + I*hh*Derivative[0, 1][ss][q, p], Qp -> -I*hh*Derivative[1, 0][ss][q, p], CanonicalCommutatorResidual -> 0, PositiveFiberPhaseConnectionResidual -> 0, Messages -> {}|>"
+      }
+    ]
+  }
+}

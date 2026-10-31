@@ -1,0 +1,5 @@
+<|"Results" -> <|"QuantumCentralTerm" -> -(eps$9085*s$9085), "LineCurvature" -> eps$9085*s$9085, 
+   "NegativeWeightQuantumResidual" -> 0, "PositiveWeightQuantumResidual" -> 0, 
+   "NegativeWeightCurvatureResidual" -> 0, "PositiveWeightCurvatureResidual" -> 0, 
+   "MinusIOmegaResidual" -> 0, "FixedGroupPositiveWeightDualRoot" -> False, 
+   "FixedGroupNegativeWeightDualRoot" -> False|>, "FailedOrUnevaluated" -> False, "Messages" -> {}|>

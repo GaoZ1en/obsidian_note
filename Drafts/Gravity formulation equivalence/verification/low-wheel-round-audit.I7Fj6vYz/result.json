@@ -1,0 +1,191 @@
+{
+  "created_at": "2026-10-31T11:33:02.573614+08:00",
+  "purpose": "Static closure/provenance only; no mathematical kernel rerun.",
+  "checks": {
+    "local_link_targets_and_line_bounds": true,
+    "eight_previously_recorded_hashes": true,
+    "tadpole_frozen_files_and_byte_copies": true,
+    "two_successful_sage_envelopes_clean": true,
+    "saved_sage_result_counts": true,
+    "two_wolfram_success_envelopes": true,
+    "synthesis_rendering_and_required_qualifiers": true,
+    "paused_checkpoint_and_open_quantum_scope": true
+  },
+  "all_passed": true,
+  "failed_checks": [],
+  "details": {
+    "links": {
+      "occurrences": 685,
+      "failures": [],
+      "scope": "Existence and line bounds only, not historical sentence identity or external URLs."
+    },
+    "expected_hashes": {
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/20 One-loop BV transport and complete AdS trace obstructions.md": {
+        "expected": "e34cde4d455fae6d8b3e42e3ce22677889fb5ab3d5287608d6816842067eec33",
+        "actual": "e34cde4d455fae6d8b3e42e3ce22677889fb5ab3d5287608d6816842067eec33"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-followup-20261031.Re9NnFZn/followup.md": {
+        "expected": "600d18c42c13e45dcd723b43042e7f4b4d8208077bdb5dcc160e74e93d9d8d09",
+        "actual": "600d18c42c13e45dcd723b43042e7f4b4d8208077bdb5dcc160e74e93d9d8d09"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-regulated-ward-20261031.N3gA5eMW/report.md": {
+        "expected": "16063da2aa754287fa450a34e4a4913cad344a85b67b999c0b2f561373a1d0ca",
+        "actual": "16063da2aa754287fa450a34e4a4913cad344a85b67b999c0b2f561373a1d0ca"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-regulated-ward-20261031.N3gA5eMW/kv-followup.md": {
+        "expected": "88f22355cbbda6bff01052e120eab4d2e7934b7c3dd3379376fe17d26c16d008",
+        "actual": "88f22355cbbda6bff01052e120eab4d2e7934b7c3dd3379376fe17d26c16d008"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/gravitational-wheels-independent-20261031.HyvDSjvL/independent-proof.md": {
+        "expected": "4cfd6913d71e22ee928be53765a72712e95a7c66ddeb8971b8411c226306d762",
+        "actual": "4cfd6913d71e22ee928be53765a72712e95a7c66ddeb8971b8411c226306d762"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/gravitational-wheels-independent-20261031.HyvDSjvL/cas-failure-input.py": {
+        "expected": "0fc75f9f344c3d710c68d88e6eb73cca0c3be609624f8e6ff65fb8d4c5462fbc",
+        "actual": "0fc75f9f344c3d710c68d88e6eb73cca0c3be609624f8e6ff65fb8d4c5462fbc"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-main21-audit-20261031.NySd6MWK/supplied-note21.md": {
+        "expected": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847",
+        "actual": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847"
+      },
+      "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/supplied-note21-linear-insertion-audit-20261031.owtbomec/note21-supplied-snapshot.md": {
+        "expected": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847",
+        "actual": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847"
+      }
+    },
+    "tadpole_provenance": {
+      "frozen_files": 10,
+      "original_calls": 3,
+      "rerun": false
+    },
+    "sage_diagnostics": {
+      "ward": {
+        "ok": true,
+        "error": null,
+        "truncated": false,
+        "stdoutTruncated": false,
+        "stderr": "",
+        "stderrTruncated": false,
+        "warnings": [],
+        "warningsTruncated": false,
+        "transportStderr": [],
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04"
+      },
+      "fresh_global": {
+        "ok": true,
+        "error": null,
+        "truncated": false,
+        "stdoutTruncated": false,
+        "stderr": "",
+        "stderrTruncated": false,
+        "warnings": [],
+        "warningsTruncated": false,
+        "transportStderr": [],
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04"
+      }
+    },
+    "sage_saved_counts": {
+      "fresh_global": 6,
+      "ward": 25,
+      "scope": "Validate saved result reports, not new algebra."
+    },
+    "wolfram_diagnostics": {
+      "wolfram": {
+        "complete": true,
+        "untruncated": true,
+        "all_passed": true,
+        "empty_failed": true,
+        "empty_messages": true
+      },
+      "kv": {
+        "complete": true,
+        "untruncated": true,
+        "all_passed": true,
+        "empty_failed": true,
+        "empty_messages": true
+      }
+    },
+    "synthesis": {
+      "sha256": "d6ec546483071efad8fe2ef1dfe6cc02b3b48f21d024d1851973f9fde6650bad",
+      "lines": 704,
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "17a",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46"
+      ]
+    }
+  },
+  "observed_hashes": {
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/21 Low-wheel heat traces and an AdS gravitational tadpole.md": "d6ec546483071efad8fe2ef1dfe6cc02b3b48f21d024d1851973f9fde6650bad",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md": "ceb626cfdf700027daa4fd7fbd10dc886d1e1b81a53d1dbe88d3fc60a163e568",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md": "37270f416a557728b0432a30d725cb137b6ec4b0b14f14d8485479d7d4855cd4",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md": "984dabd04c7aeaf2ec54796fbb0f830ddcca4b42e9268648ecf34829b225c26d",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md": "beb3d112028abbdf38f32844700f9af2149815f959b1da6224f2a0af57672d00",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md": "a45e36883a7690b27801dc4df9e79d441724205a2d35042109030dff9bd9a3cc",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/Source evidence.md": "895b270368860d5770739adda41c506d06b8d18ea72e09d494cb01722d2d0978",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/20 One-loop BV transport and complete AdS trace obstructions.md": "e34cde4d455fae6d8b3e42e3ce22677889fb5ab3d5287608d6816842067eec33",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-followup-20261031.Re9NnFZn/followup.md": "600d18c42c13e45dcd723b43042e7f4b4d8208077bdb5dcc160e74e93d9d8d09",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-regulated-ward-20261031.N3gA5eMW/report.md": "16063da2aa754287fa450a34e4a4913cad344a85b67b999c0b2f561373a1d0ca",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-regulated-ward-20261031.N3gA5eMW/kv-followup.md": "88f22355cbbda6bff01052e120eab4d2e7934b7c3dd3379376fe17d26c16d008",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/gravitational-wheels-independent-20261031.HyvDSjvL/independent-proof.md": "4cfd6913d71e22ee928be53765a72712e95a7c66ddeb8971b8411c226306d762",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/gravitational-wheels-independent-20261031.HyvDSjvL/cas-failure-input.py": "0fc75f9f344c3d710c68d88e6eb73cca0c3be609624f8e6ff65fb8d4c5462fbc",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-main21-audit-20261031.NySd6MWK/supplied-note21.md": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847",
+    "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/supplied-note21-linear-insertion-audit-20261031.owtbomec/note21-supplied-snapshot.md": "b92baacd5460a7ee151e0964fffebf2748e3b89b0d50350232baf8baa2f1b847"
+  },
+  "auditor_sha256": "5fee9cdbe72602d0afab36227a99a6175aedba2d476bf0cdb62ea1408f346f89",
+  "source_extraction": {
+    "origin": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/gravitational-wheels-independent-20261031.HyvDSjvL/cas-success-server-return.json",
+    "exact_submitted_source_sha256": "b790c3183e2a60102bb8fd9b3c2074a511ce979b3ade46fc7aa3451e3affcffe",
+    "executed": false
+  },
+  "limits": [
+    "No new analytic or CAS theorem.",
+    "External URLs not fetched.",
+    "Historical line-anchor sentence identity not certified.",
+    "Static audit index entry may be added later; synthesis snapshot remains exact."
+  ]
+}

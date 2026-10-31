@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "profile": "core",
+  "result": "<|\"TorsionFreeGaugeIdentityResidual\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"CodazziCurvatureCommutatorResidual\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"BothAllZero\" -> True|>",
+  "resultSha256": "c4cb2f2442373b63cb798987d082c334ee330d646261f1f7054dc8b55de34e84",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 3115,
+  "transportStderr": []
+}

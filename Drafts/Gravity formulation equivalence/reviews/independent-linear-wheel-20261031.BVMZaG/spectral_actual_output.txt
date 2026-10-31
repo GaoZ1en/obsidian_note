@@ -1,0 +1,19 @@
+<|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", "IntegralResiduals" -> {0, 0, 0}, 
+ "FullSpinHeatDensities" -> {1/(8*E^(5*t$8553)*Pi^(3/2)*t$8553^(3/2)), 
+   (1 + E^t$8553*(2 + 4*t$8553))/(8*E^(5*t$8553)*Pi^(3/2)*t$8553^(3/2)), 
+   (1 + E^t$8553*(2 + 4*t$8553) + 2*E^(4*t$8553)*(1 + 8*t$8553))/(8*E^(5*t$8553)*Pi^(3/2)*t$8553^(3/2))}, 
+ "a0Residuals" -> {0, 0, 0}, "a2Residuals" -> {0, 0, 0}, "a4Residuals" -> {0, 0, 0}, 
+ "LowBandPrimitiveResiduals" -> {0, 0, 0}, "FullCoefficient" -> 
+  (1 - 2*E^t$8553 + E^(4*t$8553) + E^(5*t$8553)*Sqrt[Pi]*Sqrt[t$8553]*
+     (3*Erfc[Sqrt[t$8553]] + 3*Erfc[2*Sqrt[t$8553]] - Sqrt[5]*Erfc[Sqrt[5]*Sqrt[t$8553]]))/
+   (6*E^(5*t$8553)*Pi^(3/2)*Sqrt[t$8553]), "SmallHeatExpansion" -> 
+  SeriesData[t$8553, 0, {-1/6*(-6 + Sqrt[5])/Pi, -Pi^(-3/2)}, 0, 3, 2], "FiniteUncutLimitResidual" -> 0, 
+ "PositiveTailSquareIdentityResidual" -> 0, "TailAsymptotic" -> 
+  Series[(Sqrt[-5 + r$8553] - (2*(-3 + r$8553))/Sqrt[-4 + r$8553] + (3 + r$8553)/Sqrt[-1 + r$8553])/
+    (6*Pi^2*r$8553), {r$8553, Infinity, 5/2}], "PositiveCutoffNumericalSamples" -> 
+  {{{Sqrt[5], 1/100, 0.02519597674778111190942085613466848561`20.}, 
+    {Sqrt[5], 1/10000, 0.03875894771297593755087906281889504846`20.}}, 
+   {{3, 1/100, 0.01800714155515268344791763161956825079`20.}, 
+    {3, 1/10000, 0.03105495264933087551399710693510151845`20.}}, 
+   {{10, 1/100, 0.00089966185893237785249873174458191257`20.}, 
+    {10, 1/10000, 0.0084229913196264045732135102535949975`20.}}}, "Messages" -> {"HoldForm[Series::serlim]"}|>

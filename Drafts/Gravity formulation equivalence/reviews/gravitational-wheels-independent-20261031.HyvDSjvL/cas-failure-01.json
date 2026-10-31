@@ -1,0 +1,29 @@
+{
+  "tool": "mcp__sage__sage_run",
+  "mode": "run",
+  "ok": false,
+  "result": "",
+  "resultType": "",
+  "truncated": false,
+  "resultSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "error": {
+    "type": "builtins.TypeError",
+    "message": "TypeError: Object of type Integer is not JSON serializable\nwhen serializing dict item 'bv_sign'\nwhen serializing list item 0\nwhen serializing dict item 'exterior_rows'",
+    "messageTruncated": false,
+    "messageSha256": "639999473321bf216b05e8a99bf929eccc755d3bf4cad691efc62b8d70ca03e7",
+    "traceback": "Traceback (most recent call last):\n  File \"<cmdline>\", line 49, in <module>\n  File \"<cmdline>\", line 31, in _execute\n  File \"<sage-mcp>\", line 32, in <module>\n  File \"/var/tmp/sage-10.9-current/local/lib/python3.14/json/__init__.py\", line 242, in dumps\n    **kw).encode(obj)\n          ~~~~~~^^^^^\n  File \"/var/tmp/sage-10.9-current/local/lib/python3.14/json/encoder.py\", line 202, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File \"/var/tmp/sage-10.9-current/local/lib/python3.14/json/encoder.py\", line 263, in iterencode\n    return _iterencode(o, 0)\n  File \"/var/tmp/sage-10.9-current/local/lib/python3.14/json/encoder.py\", line 182, in default\n    raise TypeError(f'Object of type {o.__class__.__name__} '\n                    f'is not JSON serializable')\nTypeError: Object of type Integer is not JSON serializable\nwhen serializing dict item 'bv_sign'\nwhen serializing list item 0\nwhen serializing dict item 'exterior_rows'",
+    "tracebackTruncated": false,
+    "tracebackSha256": "050c57c2a214d2dfa8efa21aac09d4193507cef54a88fdd36d993e12b3e87443"
+  },
+  "stdout": "",
+  "stdoutTruncated": false,
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr": "",
+  "stderrTruncated": false,
+  "warnings": [{"category": "builtins.DeprecationWarning", "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.", "truncated": false, "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"}],
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3778,
+  "transportStderr": [],
+  "codeSha256": "e9b4c992573812d95af39c48b53379377ef30a627525a83808adfbcf23b0906b",
+  "interpretation": "The algebra ran but JSON export failed on Sage Integer bv_sign. No algebraic false condition was reported; no successful result was exported by this call. Next run casts JSON scalar fields explicitly."
+}

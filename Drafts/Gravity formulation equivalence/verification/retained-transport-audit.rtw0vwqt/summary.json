@@ -1,0 +1,39 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "local links and line bounds",
+      "passed": true
+    },
+    {
+      "label": "all frozen deliverable hashes",
+      "passed": true
+    },
+    {
+      "label": "source and actual-return byte identities",
+      "passed": true
+    },
+    {
+      "label": "seven successful result label counts",
+      "passed": true
+    },
+    {
+      "label": "actual success diagnostics and string hashes",
+      "passed": true
+    },
+    {
+      "label": "sensitive nonzero UV and gravitational coverage",
+      "passed": true
+    },
+    {
+      "label": "synthesis delimiters and explicit scope",
+      "passed": true
+    }
+  ],
+  "synthesis_sha256": "3457e93cd555e5645d25edb09bbed82094efd7b775f9e9368d71a87e7d63220b",
+  "source_sha256": "ddc64e8175cd7d768ba453a870200d88e3b1e9c78bf222cc13f419dcd6468d7e",
+  "scope": "static archive, exact-copy, diagnostic and declared-coverage checks; no mathematical kernel rerun, no certification of historical line-anchor sentence identities",
+  "link_count": 666,
+  "hash_count": 48,
+  "output": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained-transport-audit.rtw0vwqt"
+}

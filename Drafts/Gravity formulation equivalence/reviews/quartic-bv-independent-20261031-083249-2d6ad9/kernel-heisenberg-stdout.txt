@@ -1,0 +1,73 @@
+Exact cyclic BV finite exterior-algebra test
+10.9
+Coefficient field QQ; a=1/2; B(Ja,Pb)=delta_ab.
+A=Lambda(e1,e2,e3), de3=e1e2, integral(e1e2e3)=1.
+This is the finite left-invariant Heisenberg CE algebra, not hyperbolic AdS and not a torus result.
+P removes e3/e1e2 in colors J1,P1; h(e1e2 Ti)=e3 Ti for these colors only.
+Total field: Psi=c+alpha-alpha_star+c_star, with stars expressed in B/Poincare dual bases.
+48 full coordinates; 44 retained: 16 physical, 16 physical antifields, 6 ghosts, 6 ghost antifields.
+PASS D^2=0 on all 48 basis vectors
+PASS D is a graded Lie derivation on all 2304 basis pairs
+PASS D h+h D=R on all 48 basis vectors
+PASS h^2=hP=Ph=0 on all 48 basis vectors
+PASS P^2=P and DP=PD on all 48 basis vectors
+PASS DP is nonzero: this is not minimal transfer
+PASS P is cyclic self-transpose on all 2304 pairs
+PASS D is graded cyclic on all 2304 pairs
+PASS h is graded cyclic on all 2304 pairs
+PASS im h is isotropic
+PASS im h has half the dimension of UV
+PASS so(3,1) Jacobi on all 216 triples
+PASS B is invariant on all 216 color triples
+PASS all canonical fundamental antibrackets have the stated sign
+PASS actual UV Hessian is field-independent
+PASS actual UV Hessian is invertible
+PASS independent UV stationary solve yields -h[X,X]/2
+PASS stationary action has a nonzero quartic
+PASS stationary action correction is homogeneous polynomial degree 4
+PASS stationary elimination yields exactly -1/8 <K,hK>
+PASS h[X+Y2,X+Y2]=h[X,X], so the UV solution is exact in this model
+PASS both actual UV stationary derivatives vanish after substitution
+PASS UV solution lies in im h
+PASS unprojected full 48-variable BV action obeys CME
+PASS Hamiltonian map on ALL fields, ghosts and BOTH antifields: QPsi=-DPsi-[Psi,Psi]/2
+PASS projected cubic self-antibracket is NONZERO
+PASS both sides of quartic Ward identity are NONZERO
+PASS (S3P,S3P)=-1/4 <K,PK>
+PASS (S2P,S4)=-1/8 <K,RK>
+PASS (S2P,S4)=-1/2 (S3P,S3P), exact coefficient by coefficient
+PASS <[X,X],[X,X]>=0 with ghosts/antifields
+PASS full effective CME holds in this exactly Gaussian UV example
+PASS opposite quartic sign FAILS the quartic Ward identity
+PASS ghost-antifield sector is present
+PASS deleting ghost-antifield vertex FAILS the quartic Ward identity
+PASS all 44 retained coordinates occur in the effective action
+PASS all six ghost BRST transformations have Qc=-[c,c]/2
+PASS all eighteen full physical BRST transformations equal [alpha,c]_component
+PASS auxiliary degree-1/3 h map is graded cyclic (dictionary test only)
+PASS full component-first S4 formula including ghost antifields matches totalization
+PASS auxiliary dictionary test has NONZERO ghost-antifield quartic terms
+Monomial counts: full action=111, S2P=2, S3P=84, S4=56.
+S4 profile (physical,ghost,physical-antifield,ghost-antifield) -> term count: {(0, 2, 2, 0): 8, (2, 1, 1, 0): 32, (4, 0, 0, 0): 16}
+Quartic master LHS/RHS each has 48 nonzero exact monomials.
+UV stationary solution (g-valued alpha components):
+  A4_J1 =
+1 * c_P3 * As4_J2
+-1 * c_P2 * As4_J3
+-1 * c_J3 * As4_P2
+1 * c_J2 * As4_P3
+-1 * A1_J2 * A2_J3
+1 * A1_J3 * A2_J2
+1 * A1_P2 * A2_P3
+-1 * A1_P3 * A2_P2
+  A4_P1 =
+-1 * c_J3 * As4_J2
+1 * c_J2 * As4_J3
+-1 * c_P3 * As4_P2
+1 * c_P2 * As4_P3
+-1 * A1_J2 * A2_P3
+1 * A1_J3 * A2_P2
+-1 * A1_P2 * A2_J3
+1 * A1_P3 * A2_J2
+All 41 labelled exact checks passed.
+Saved exact source and outputs in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9

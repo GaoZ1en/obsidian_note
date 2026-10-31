@@ -1,0 +1,253 @@
+BV-EQUIVALENCE BETWEEN TRIADIC GRAVITY AND BF THEORY IN THREE DIMENSIONS
+                                                                       5
+
+
+  In the rest of the paper we show how to extend the correspondence between the
+symmetries also off shell in terms of the BV formalism.
+
+   ObserveR that it is possible to add a cosmological term to BF theory as well by
+adding Λ3 M TrB 3 to SBF 0
+                            . In this case the theory admits an additional symmetry,
+namely δΛ A = Λ[B, τ ] ≡ ΛB ∧τ . In the BV formalism this has to be complemented
+by additional higher terms for ghosts and antifields in order to yield a solution to the
+Classical Mater Equation (namely the term c† τ ∧ τ ). Such solution is summarised
+with the introduction of superfields, i.e. the inhomogeneous forms B = τ +B+A† +c†
+and A = c + A + B † + τ † . The BV-extended BF action in the superfield formalism
+then reads
+                                          Z              
+                                                      Λ
+                            SBF (Λ) =         Tr BFA + B3                                  (16)
+                                                      3
+                                          M
+
+
+
+                              2. Strong equivalence
+    In this section we will prove that there is a strong equivalence between the BV
+theories FBF and FGR . In order to do this we will adapt to three dimensions the
+strong equivalnce between the Palatini–Cartan BV formulation of gravity presented
+in [CS17b] and the version that was suggested by Piguet [Piguet]. The main differ-
+ence between the two BV theories is that the latter involves non-covariant expres-
+sions and non-global fields, but they are essentially equivalent up to (symplectic)
+field redefinitions.
+
+2.1. Non covariant BV teory. Consider the assignment
+                                 s e′ = Lξ′ e′ + [χ′ , e′ ]
+                                 s ω ′ = Lξ′ ω ′ + dω′ χ′
+                                         1                                                 (17)
+                                 s ξ ′ = [ξ ′ , ξ ′ ]
+                                         2
+                                                      1
+                                 s χ′ = Lξ′ χ′ + [χ′ , χ′ ]
+                                                      2
+defining a vector field s over
+                                 V2
+  FP P := Ω1 (M, W) × Ω1 (M,          W) × X[1](M ) × Ω0 [1](M, adP ) ∋ (e′ , ω ′ , ξ ′ , χ′ )
+
+which is cohomological, with ξ a vector field with ghost number gh(ξ) = 1 and θ a
+function with values in Λ2 V and ghost number gh(θ) = 1. The cotangent lift š of s
+to FP P := T ∗ [−1]FP P is a cohomological vector field, that defines a BV-manifold
+together with the BV-extension of the Palatini action by s. We will denote such
+extension by
+                        Z
+                0
+                              
+  SP P (Λ) = SGR  (Λ) + Tr e†′ (Lξ′ e′ + [χ′ , e′ ]) + ω †′ (Lξ′ ω ′ + dω′ χ′ ) +
+                        M
+                                                          
+                                        †′        1 ′ ′         1
+                                 + Tr χ         ′
+                                           Lξ′ χ + [χ , χ ]    + ι[χ′ ,χ′ ] ξ †′ . (18)
+                                                  2             2
+The subscript PP stands for Palatini-Piguet.
+
+Proposition 7 ([CS17b]). The BV theory FP P = (FP P , ΩP P , SP P , š) is strongly
+equivalent to FGR .
+6                      A. S. CATTANEO, M. SCHIAVINA, AND I. SELLIAH
+
+
+  The proposition was proven for 4 space-time dimensions but it carries over in
+one less dimension without obstructions. If we select charts in FP P and FGR we
+can express the symplectomorphism in terms of the generating function2
+                                           Z
+         † † †       † ′     ′ ′     ′
+     F [χ , ξ , e , ω , e , ω , ξ , χ ] :=   χ† (ιξ ω ′ − χ′ ) + ιξ ξ †′ − e† e′ − ω † ω ′ (19)
+                                             M
+and deduce the transformation rules as
+                                   δG                               δG
+                      p = −(−1)|q|    ;              Q = (−1)|P |      ,                        (20)
+                                   δq                               δP
+where q = (χ† , ξ, e, ω † ), P = (e†′ , ω ′ , ξ †′ , χ′ ).
+   We will see how the non covariant theory will turn out to be a simplifying
+intermediate step. In what follows we will indeed prove that there is the sequence
+of strong equivalences FBF −→ FP P −→ FGR , that can be composed to yield the
+desired strong equivalence between Palatini gravity and BF theory in 3 dimensions.
+2.2. Strong Equivalence.
+Theorem 8. The BV theories FBF and FP P are strongly equivalent. The symplec-
+tomorphism between their spaces of fields is given by the generating function
+                  top
+G =(−1)|P| Pe−ιξ q                                                              (21)
+                                                         
+                        1                     1        1                      
+  = − B † e − ιξ ω † + ι2ξ χ† − τ † −ιξ e + ι2ξ ω † − ι3ξ χ† − A ω † − ιξ χ† − cχ†
+                        2                     2        6
+where P = (B † , τ † , A, c) and q = (e, ω † , χ† ).
+Proof. Observe that the set of old coordinates is given by q = (ξ, q) = (ξ, e, ω † , χ† ),
+therefore, applying (20) we get the explicit transformation
+                                            1
+                        B = e − ιξ ω † + ι2ξ χ† B † = e† − ιξ τ †                 (22a)
+                                            2
+                                            1
+                         A = ω − ιξ e† + ι2ξ τ † A† = ω † − ιξ χ†                 (22b)
+                                            2
+                                  1         1
+                  c = χ − ιξ ω + ι2ξ e† − ι3ξ τ †        c† = χ†                  (22c)
+                                  2         6
+together with
+                                            1         1
+                              τ = −ιξ e + ι2ξ ω † − ι3ξ χ†                        (23a)
+                                            2         6
+                                ξa† = τ † ea + e† ωa† + ωχ†a                      (23b)
+Observe that Eq. (23b) can be solved in that e is an isomorphism, but it will be
+easier to leave τ † implicit when checking that the given transformation effectively
+yield the desired action-preserving symplectomorphism. Furthermore, notice that
+                                  a
+                                      δG
+in computing ξa† = −(−1)|ξ | δξ        a we used [ιξ , ι[ξ,ξ] ] = 0 several times.
+
+    Using the expression for ξa we just found we can also compute ιδξ ξ † = ιδξ eτ † +
+                                     †
+
+ιδξ ω † e† + ιδξ χ† ω, and ι[ξ,ξ] ξ † = ι[ξ,ξ] eτ † + ι[ξ,ξ] ω † e† + ι[ξ,ξ] χ† ω (notice the signs in
+commuting τ † and ιδξ e, as well as the sign in τ † ea δξ a = −τ † ιδξ e owing to the fact
+that we consider ea as an odd object and ι ∂a as an odd operator).
+                                                       ∂x
+    Then, if we denote the symplectomorphism generated in Eqts. (22) and (23) by
+φ : FP P −→ FBF we can verify with a long but straightforward computation that
+                                         φ∗ SBF = SP P ,                                        (24)
+concluding the proof.                                                                              X
+    2Observe that in [CS17b] the result differs by a trivial redefinition c 7→ −c.
+BV-EQUIVALENCE BETWEEN TRIADIC GRAVITY AND BF THEORY IN THREE DIMENSIONS
+                                                                       7
+
+
+Remark 9. To verify that the symplectomorphism preserves the action functionals
+one might find a couple of identities particularly handy. In particular, from the fact
+that ι[ξ,ξ] ιξ α = ιξ ι[ξ,ξ] α, in the case α ∈ Ωtop (M ) and dim(M ) = 3 we deduce
+                                                     1
+                                       ιξ Lω              3
+                                           ξ ιξ α = − dω ιξ α.
+                                                     3
+Similarly, from ι2ξ ι[ξ,ξ] α = ιξ ι[ξ,ξ] ιξ α = ι[ξ,ξ] ι2ξ α, when α is a top-form we have
+                                                        4
+                                       ι2ξ dω ι2ξ α =     ιξ dω ι3ξ α.
+                                                        3
+Finally, one repeatedly needs to use the derivation property of the k-fold contraction
+with ξ on (top + k)-forms, e.g. 0 = ιξ (α ∧ β) = ιξ α ∧ β + α ∧ ιξ β and ι2ξ (α ∧ β) =
+2ιξ α ∧ ιξ β + ι2ξ α ∧ β + α ∧ ι2ξ β, implying ι2ξ α ∧ β = α ∧ ι2ξ β.
+   Now we wold like to compose the two strong equivalences we have stated to
+construct a direct morphism between the covariant 3d Palatini BV-theory and BF-
+theory. In other words we want to complete the diagram
+                                 FBF ❋                     // FGR                                 (25)
+                                      ❋❋                  ①①<<
+                                        ❋❋              ①①
+                                          ❋❋          ①①
+                                            ❋""     ①①
+                                               FP P
+This is clearly possible, and the next statement spells out the details.
+Theorem 10. The BV theory for the 3-dimensional Palatini–Cartan theory of
+gravity is strongly equivalent to 3-dimensional BF theory.
+   The canonical transformation between the underlying spaces of fields is generated
+by the function
+                                                          
+            †         †    1 2 †                1 2 † 1 3 †
+  H = −B e − ιξ ω − ιξ χ − τ −ιξ e + ιξ ω + ιξ χ − Aω † − cχ† (26)
+                                      †
+                           2                    2       3
+where fields are (A, B, c, τ ) and their dual for BF-theory, and (e, ξ, ω, χ) together
+with their duals for Palatini gravity.
+Proof. To prove the result we use the standard formula for the composition of gen-
+erating functions (for a recent account see, e.g., [CDW, Section 3.3] for the usual
+case and [Ans, Section 2] for the super case.). Consider two canonical transfor-
+mations between three symplectic manifolds parametrised by, respectively, (qi , pi ).
+Denote the generating functions of such canonical transformations by G(p1 , q2 ) and
+F (p2 , q3 ), and assume that the generating functions are of degree −1 (this is the
+appropriate case for −1 shifted symplectic manifolds, and the procedure can be
+adapted to more general situations). Then we can find the generating function of
+the composed symplectomorphism as the critical point (q2 , p2 ) of the function3
+            e 1 , p1 , q2 , p2 , q3 , p3 ) = G(p1 , q2 ) + F (p2 , q3 ) − (−1)|p2 | p2 q2
+            H(q
+that is to say
+                                                                                              !
+                                                              e
+                                                             ∂H                e
+                                                                              ∂H
+                                   e
+          H(p1 , q1 , p3 , q3 ) := H     q1 , p1 , (−1)|p2 |     , −(−1)|q2 |     , q3 , p3
+                                                             ∂p2              ∂q2
+
+will generate the composite symplectomorphism.                                                      X
+
+   3We will write p q by simplicity, but indeed mean the sum over all components.
+                   2 2
+8                     A. S. CATTANEO, M. SCHIAVINA, AND I. SELLIAH
+
+
+2.3. A closer look to the cosmological term. The pullback of the action func-
+tionals can be performed explicitly by applying the explicit formulae, and the equiv-
+alence can be verified directly. However, it is worth noting that the symplectomor-
+phisms we found are stable under the addition of the respective cosmological terms,
+as follows from the following observations:
+Lemma 11. Consider φP P/GR : FP P/GR −→ FBF and denote by qi the i-th form
+in φ∗P P/GR (etιξ B). Then q0 = 0 and q1 = e. Moreover, the function
+                                         Z
+                                                  3
+                                 L(t) :=    etιξ B
+                                              M
+is constant.
+                            P3
+Proof. We write etιξ B = i=0 Bξi and we can easily show that Bξ0 = τ + ιξ B +
+1 2 †      1 3 †   ξ            †    1 2 †
+2 ιξ A + 6 ιξ c , B1 = B + ιξ A + 2 ιξ c . Computing their pullback along the sym-
+plectomorphisms φP P/GR we obtain q0 = 0 and q1 = e.
+    Finally, the time derivative L̇(t) reads
+                                        Z
+                                L̇(t) = ιξ (etιξ B)3 = 0
+                                          M
+                                                                                             X
+Proposition 12. The symplectomorphisms φP P/GR map the cosmological term of
+the BV-extended BF theory to the cosmological term of General Relativity.
+Proof. Since L(t) is constant by Lemma 11, we can replace the cosmological term
+L(0) with L(1)             Z          Z
+                                  Tr[ΛB3 ]        Tr[Λ (eιξ B)3 ]
+                              M               M
+  Since by Lemma 11 q0 vanishes, it is easy to gather that the only term that
+                                3
+contributes to φ∗P P/GR (etιξ B) is q31 = e3 , proving the claim.          X
+
+                                        References
+[Ans] D. Anselmi, Some reference formulas for the generating functions of canonical transforma-
+     tions, Eur. Phys. Journal C 76, (2016).
+[BV81] I. A. Batalin and G. A. Vilkovisky. Gauge algebra and quantization, Phys. Lett. B 102(1),
+     27-31 (1981).
+[BRST] C. Becchi, A. Rouet and R. Stora, Phys. Lett. B52 (1974) 344.
+     C. Becchi, A. Rouet and R. Stora, Commun. Math. Phys. 42 (1975) 127.
+     C. Becchi, A. Rouet and R. Stora, Ann. Phys. 98, 2 (1976).
+     I. V. Tyutin, Lebedev Physics Institute preprint 39 (1975), arXiv:0812.0580.
+[Carlip] S. Carlip, Quantum Gravity in 2+1 Dimensions, Cambridge Monographs on Mathemat-
+     ical Physics, Cambridge University Press (1998).
+[Car] E. Cartan. Sur une généralisation de la notion de courbure de Riemann et les espaces à
+     torsion, C. R. Acad. Sci. 174, 593?595 (1922).
+     E. Cartan, Comptes rendus hebdomadaires des séances de l’Académie des sciences, 174, 437-
+     439, 593-595, 734-737, 857-860, 1104-1107 (January 1922)
+[CDW] A. S. Cattaneo, B. Dherin, A. Weinstein, Symplectic microgeometry II: generating func-
+     tions, Bull. Braz. Math. Soc., New Series 42, 507 (2011).
+[CMR14] A.S. Cattaneo, P. Mnëv, N. Reshetikhin, Classical BV theories on manifolds with bound-
+     ary, Comm. Math. Phys. 332 (2): 535-603 (2014).
+[CS15] A. S. Cattaneo and M. Schiavina, BV-BFV approach to General Relativity: Einstein–
+     Hilbert action, J. Math. Phys. 57(2) (2015).
+[CS17a] A. S. Cattaneo and M. Schiavina, The reduced phase space of Palatini–Cartan–Holst
+     theory, arXiv:1707.05351 (2017).
+[CS17b] A. S. Cattaneo and M. Schiavina, BV-BFV approach to General Relativity: Palatini–
+     Cartan–Holst action, arXiv:1707.06328 (2017).
+

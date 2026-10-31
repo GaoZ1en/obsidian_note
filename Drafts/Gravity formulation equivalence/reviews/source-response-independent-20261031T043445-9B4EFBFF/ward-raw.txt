@@ -1,0 +1,8 @@
+<|"Metric" -> {{0, 1/2}, {1/2, eps*mu[w, v]}}, "InverseMetric" -> {{-4*eps*mu[w, v], 2}, {2, 0}}, 
+ "LinearScalarCurvature" -> 4*Derivative[2, 0][mu][w, v], 
+ "LinearTraceStress" -> (-2*h*mu[w, v] + 2*tx[w, v])/Pi, "LinearConservation_w_timesPi" -> 
+  Derivative[0, 1][tt][w, v] - 3*h*Derivative[1, 0][mu][w, v] + Derivative[1, 0][tx][w, v], 
+ "TraceEquationSolution_2Pi_t_wbar" -> h*mu[w, v] - (c*Derivative[2, 0][mu][w, v])/12, 
+ "WardComputed" -> Derivative[0, 1][tt][w, v] - 2*h*Derivative[1, 0][mu][w, v] - 
+   (c*Derivative[3, 0][mu][w, v])/12, "Residuals" -> <|"Determinant" -> 0, "ScalarCurvature" -> 0, 
+   "TraceAnomaly" -> 0, "DiffeomorphismPlusWeylWard" -> 0|>|>

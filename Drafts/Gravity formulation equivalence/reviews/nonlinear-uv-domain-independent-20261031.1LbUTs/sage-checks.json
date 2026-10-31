@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "full_superfield_master_residual": true,
+    "UV_stationarity_exact": true,
+    "quadratic_z_is_exact_fixed_point": true,
+    "effective_action_has_exact_negative_one_eighth_quartic": true,
+    "projected_gradient_is_F1_plus_F2_plus_F3": true,
+    "naively_compressed_cubic_has_NONZERO_degree_four_master_defect": true,
+    "quartic_tree_cancels_that_defect": true,
+    "degree_three_master_identity": true,
+    "degree_five_master_identity": true,
+    "degree_six_master_identity": true,
+    "ghost_antifield_terms_actually_present_in_quartic": true
+  },
+  "all_passed": true,
+  "S4": "(-a12*a20 + a10*a22)*c0*b122 + (-a12*a21 + a11*a22)*c1*b122 - 1/2*a12^2*a20^2 - 1/2*a12^2*a21^2 + a10*a12*a20*a22 + a11*a12*a21*a22 - 1/2*a10^2*a22^2 - 1/2*a11^2*a22^2",
+  "naive_degree_four_defect": "(2*a12*a20*a32 - 2*a10*a22*a32)*c0 + (2*a12*a21*a32 - 2*a11*a22*a32)*c1",
+  "variables": {
+    "even": [
+      "a10",
+      "a11",
+      "a12",
+      "a20",
+      "a21",
+      "a22",
+      "a32",
+      "r0",
+      "r1",
+      "r2"
+    ],
+    "odd": [
+      "c0",
+      "c1",
+      "c2",
+      "b130",
+      "b131",
+      "b132",
+      "b230",
+      "b231",
+      "b232",
+      "b122"
+    ]
+  },
+  "scope": "Exact finite cyclic dg-Lie sign and CME check only; NOT gravitational operator or analytic domain proof."
+}

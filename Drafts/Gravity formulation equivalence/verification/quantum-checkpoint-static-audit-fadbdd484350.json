@@ -1,0 +1,101 @@
+{
+  "scope": "Static integration/provenance check only; no CAS or mathematical calculation rerun",
+  "timestamp": "2026-10-30T18:53:20.099645+00:00",
+  "files": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "3fe36923a2dc4e7b6dbaafcb7699ca40272014f3df4fe381e020ef6b979f19c3",
+      "lines": 179
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "30593178f956374fd8de8761369deadcb6d1815aed2ae90a3947eb05b1984268",
+      "lines": 96
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/10 Vacuum quantum equivalence benchmark.md",
+      "sha256": "9fbd56066ba250bf448f88253fde101e282e1148e1c322e257f1b6677b5f2e82",
+      "lines": 593
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "a56146920005704a059ac6266023dcc8fcc2ec20e5e792e8c7c7d8c55c32f005",
+      "lines": 26
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "e864c53d9925b1ef97a08e6ce1ec374a2e71fbffe0594e1e53c438c037e87735",
+      "lines": 111
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "d000c6f1c59b6546e8ec39c6273f4c7b8f8b7707295a4c58317970f9d78d988c",
+      "lines": 174
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/Source evidence.md",
+      "sha256": "93d715bd2693c9a3591aff857f8885346f2295226f691db5f116454c8f020940",
+      "lines": 94
+    }
+  ],
+  "missing_local_links": [],
+  "invalid_line_ranges": [],
+  "malformed_displays": [],
+  "duplicate_equation_tags": [],
+  "archive_checks": [
+    {
+      "label": "prequantum archive hash 01-general-commutator.raw.json",
+      "passed": true
+    },
+    {
+      "label": "prequantum archive hash 01-general-commutator.executed.wl",
+      "passed": true
+    },
+    {
+      "label": "prequantum archive hash 01-general-commutator.result.txt",
+      "passed": true
+    },
+    {
+      "label": "01-general-commutator submitted source equals archived source",
+      "passed": true
+    },
+    {
+      "label": "01-general-commutator complete server record",
+      "passed": true
+    },
+    {
+      "label": "prequantum archive hash 02-shear-intertwiner.raw.json",
+      "passed": true
+    },
+    {
+      "label": "prequantum archive hash 02-shear-intertwiner.executed.wl",
+      "passed": true
+    },
+    {
+      "label": "prequantum archive hash 02-shear-intertwiner.result.txt",
+      "passed": true
+    },
+    {
+      "label": "02-shear-intertwiner submitted source equals archived source",
+      "passed": true
+    },
+    {
+      "label": "02-shear-intertwiner complete server record",
+      "passed": true
+    },
+    {
+      "label": "vacuum_polarized_determinant saved Boolean count/status",
+      "passed": true
+    },
+    {
+      "label": "localization_positive_deformation saved Boolean count/status",
+      "passed": true
+    },
+    {
+      "label": "polarized determinant frozen source hash",
+      "passed": true
+    }
+  ],
+  "local_link_occurrences_checked": 250,
+  "all_static_checks_passed": true
+}

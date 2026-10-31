@@ -1,0 +1,10 @@
+<|"Engine" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "ScalarCurvature" -> (-2*(PDconf[{0, -conf}][PDconf[{0, -conf}][sigma[xx[], yy[]]]] + 
+     PDconf[{1, -conf}][PDconf[{1, -conf}][sigma[xx[], yy[]]]]))/E^(2*sigma[xx[], yy[]]), "StressTrace" -> 0, 
+ "Checks" -> <|"WeylCurvatureResidual" -> (-2*(PDconf[{0, -conf}][PDconf[{0, -conf}][sigma[xx[], yy[]]]] + 
+       PDconf[{1, -conf}][PDconf[{1, -conf}][sigma[xx[], yy[]]]]))/E^(2*sigma[xx[], yy[]]), 
+   "StressTraceAnomalyResidual" -> -1/2*(lam*(PDconf[{0, -conf}][PDconf[{0, -conf}][sigma[xx[], yy[]]]] + 
+        PDconf[{1, -conf}][PDconf[{1, -conf}][sigma[xx[], yy[]]]]))/E^(2*sigma[xx[], yy[]]), 
+   "StressConservationResidual" -> 0|>, "AllResidualsZero" -> False, 
+ "Messages" -> {"HoldForm[ValidateSymbol::used]", "HoldForm[CTensor::unknown]", 
+   "HoldForm[CTensor::unknown]"}|>

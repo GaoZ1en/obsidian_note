@@ -1,0 +1,18 @@
+<|"Kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Checks" -> <|"complete commutator rewriting" -> True, "principal matrix commutator trace zero" -> 
+    True, "exact spherical angular coefficient" -> True, "exact Gaussian radial coefficient" -> 
+    True, "order minus one symbols are odd" -> True, "order two matrix heat symbol is even" -> 
+    True, "nonscalar odd-class weight leading coefficient" -> True, 
+   "nonscalar weight permits divergence" -> True, "scalar weight leading coefficient vanishes" -> 
+    True, "varying scalar weight divergence is derivative of low wheel divergence" -> True, 
+   "order minus two allowed local powers" -> True, "order minus three allowed local powers" -> 
+    True, "weight divergence has zero constant finite part" -> True|>, "AllPassed" -> True, 
+ "FailedLabels" -> {}, "ExactValues" -> <|"CRewriteResidual" -> 0, "AngularIntegral" -> (4*Pi)/3, 
+   "RadialIntegral" -> Sqrt[Pi]/(2*Sqrt[dd*eps]), "NonscalarWeightLeadingC" -> 
+    ((-Sqrt[d1*eps] + Sqrt[d2*eps])*vol)/(24*Sqrt[d1*d2]*eps*Pi^(3/2)), 
+   "NonscalarWeightLeadingCAtPoint" -> vol/(48*Sqrt[eps]*Pi^(3/2)), 
+   "VariableWeightLeading" -> -1/8*(b*eps*vol)/((c*eps)^(3/2)*Pi^(3/2)), 
+   "AllowedLocalPowersMinusTwo" -> {-1/2, 1/2, 3/2, 5/2}, "AllowedLocalPowersMinusThree" -> 
+    {1/2, 3/2, 5/2}|>, "AnalyticInputsNotCASTheorems" -> 
+  {"KV trace on odd-class operators in odd dimensions", "uniform differentiable heat expansions", 
+   "compact support/proper support and trace-class global remainders"}, "Messages" -> {}|>

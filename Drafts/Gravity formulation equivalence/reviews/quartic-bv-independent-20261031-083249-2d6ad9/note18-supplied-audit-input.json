@@ -1,0 +1,29 @@
+{
+  "captured_at_utc": "2026-10-31T01:00:13.302695+00:00",
+  "kind": "Supplied-text audit snapshot, captured only after independent derivation was frozen.",
+  "source_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/18 Complete AdS BV contraction and tree transfer.md",
+  "source_sha256": "c039f69b8c6bb93642652d9ca4ecc2d10ca128869e848a5ef2d0be4d5b110ae0",
+  "source_bytes": 20644,
+  "source_mtime_utc": "2026-10-31T00:58:52.964193+00:00",
+  "snapshot_sha256": "f74048853cac4f712a8fb059ed12a913c8687311211b1e0d8ebfa8ea95a7f5e0",
+  "sections": [
+    {
+      "label": "Introduction",
+      "line_start": 3,
+      "line_end": 26,
+      "sha256": "0b764004e91b938b1f8b09bdd45f1bbc354fc9804e6c8c08fcea7f7276144a53"
+    },
+    {
+      "label": "Section 1",
+      "line_start": 27,
+      "line_end": 104,
+      "sha256": "c28ea7c6d89453b66f5a5d9efd8aad9f2bc822c23b74c24782cde6f034f0e2ee"
+    },
+    {
+      "label": "Section 4",
+      "line_start": 255,
+      "line_end": 333,
+      "sha256": "2e63e411f24031a401bacd05af6ddb4c4d0b115cb224c43cf528cd93b243dcc1"
+    }
+  ]
+}

@@ -1,0 +1,1256 @@
+64                     Massimo Lanza de Cristoforis and Luca Preciso
+
+
+(ii)   Let 1 a j a m. For all f A Cm; a ðqD; CÞ, the real di¤erential of order j of
+       the function E½ f  at t A qD satisﬁes the following equation
+
+                              d j E½ f ðtÞðs1 ; . . . ; sj Þ ¼ f ð jÞ ðtÞs1 . . . sj ;          ð2:5Þ
+
+       for all ðs1 ; . . . ; sj Þ A C j . In particular, d j E½ f ðtÞ is also a complex j-
+       multilinear operator, whenever t A qD.
+
+     Proof. To prove statement (i), we ﬁrst show that there exists a linear
+                                             Qm    ml; a
+and continuous operator Z of                l¼0 C      ðqD; CÞ to C m; a ðcl D; CÞ such
+                      q m Z½f                       Qm
+that Z½fjqD ; . . . ; qn m jqD ¼ f for all f A l¼0 Cml; a ðqD; CÞ, where n is the
+outer unit normal to qD. If r; s A f0; . . . ; mg, then we set drs ¼ 1 if r ¼ s,
+drs ¼ 0 if r 0 s. As a ﬁrst step we ﬁx an arbitrary l A f0; . . . ; mg, and we
+show the existence of a linear and continuous operator Zl of Cml; a ðqD; CÞ
+                                   q j Z ½h
+to C m; a ðcl D; CÞ such that qnl j jqD ¼ djl l!h for 0 a j a l, and for all h A
+Cml; a ðqD; CÞ. By a standard argument based on the partition of unity and
+on the use of local charts for qD, the existence of Zl follows from that of
+a linear and continuous operator Z            ~l of C ml; a ð½1; 1; CÞ to C m; a ðclð1;
+                                  q j Z~l ½g
+1½  1; 0½Þ; CÞ such that                     ¼ djl l!g for 0a ja l. Let K be a linear and
+                                  qx2j jx ¼0
+                                         2
+                                 ml; a
+continuous operator of C                  ð½1; 1; CÞ to C ml; a ð½2; 2; CÞ with K½g ¼ g on
+½1; 1 and supp K½g J 2; 2½, for all g A C ml; a ð½1; 1; CÞ. Furthermore,
+one can choose K so that K maps C mlþ1 ð½1; 1; CÞ to C mlþ1 ð½2; 2; CÞ
+(cf. e.g., the construction of Troianiello [30, Thm. 1.3, p. 13] with k ¼
+m  l þ 1.) To construct Z            ~l , we take l þ 1 distinct real numbers a0 ; . . . ; al ,
+                                                                                       Pl
+and we determine b0 ; . . . ; bl by solving the (Vandermonde) system s¼0                       asj b s ¼
+                                                                Pl
+djl l!, j ¼ 0; . . . ; l, and we set Z       ~l ½gðx1 ; x2 Þ 1
+                                                                  s¼0 b s Gl ½gðx1 þ as x2 Þ, where
+Gl ½g is the m times di¤erentiable function of R to C determined by condi-
+           l                   j
+tions dtd l Gl ½g ¼ K½g, dtd j jt¼0 Gl ½g ¼ 0 for 0 a j < l. Then one can deﬁne Z by
+exploiting the operators Zl and formula (5.8) of Nečas [25, p. 93]. It is
+                                 Qm
+also clear that Z maps l¼0             Cmþ1l ðqD; CÞ to C mþ1 ðcl D; CÞ. Since cl D is of
+             y
+class C , it is also known that there exists a linear and continuous exten-
+sion operator ER of C m; a ðcl D; CÞ to C m; a ðclðRDÞ; CÞ such that ER ½vjcl D ¼ v,
+for all v A C m; a ðcl D; CÞ. Furthermore, one can choose ER so that ER maps
+C mþ1 ðcl D; CÞ to C mþ1 ðclðRDÞ; CÞ (cf. e.g., the construction of Troianiello [30,
+Thm. 1.3, p. 13] with k ¼ m þ 1.) Then we set E½ f  1 ER  Z½ f ðtÞ; tf 0 ðtÞ; . . . ;
+t m f ðmÞ ðtÞ. If f A Cy ðqD; CÞ, then E½ f  A C mþ1 ðclðRDÞ; CÞ and thus E½ f  A
+C m; a; 0 ðclðRDÞ; CÞ by Lemma 2.1. We now prove (ii). By construction, the
+function E½ f  is m-times real di¤erentiable at each point t A qD, and the
+real di¤erential d j E½ f ðtÞ is a real j-multilinear operator of R2j to R2 . Also,
+the right hand side of equation (2.5) delivers a complex j-multilinear oper-
+ator, which we denote by Mf ð jÞ ðtÞ of C j to C, and thus a real j-multilinear
+                      Di¤erentiability properties of some nonlinear operators                            65
+
+
+operator of R2j to R2 . In order to prove equality (2.5), it su‰ces to show
+that d j E½ f ðtÞ ¼ Mf ð jÞ ðtÞ on the j-tuples of elements of a real basis of R2 .
+                                                                 l terms
+                                                               zﬄﬄﬄ}|ﬄﬄﬄ{
+To shorten our notation, we write v½l  instead of v; . . . ; v in the argu-
+ment of a multilinear operator. Once t 1 ðt1 ; t2 Þ A qD is ﬁxed, we choose
+fðt1 ; t2 Þ; ðt2 ; t1 Þg as a real basis of R2 . Note that t equals the exterior unit
+normal to qD at t, and that it ¼ ðt2 ; t1 Þ lies in the tangent space to qD at t.
+Since d j E½ f ðtÞ and Mf ð jÞ ðtÞ are multilinear and symmetric operators, it su‰ces
+to check that for 0 a l a j, we have
+                  d j E½ f ðtÞððt2 ; t1 Þ½l  ; ðt1 ; t2 Þ½ jl  Þ ¼ f ð jÞ ðtÞðitÞ l t jl :      ð2:6Þ
+
+We now prove (2.6) by induction on j A f1; . . . ; mg.                          In case j ¼ 1, it su‰ces
+to prove the following two equalities
+
+           d E½ f ðtÞððt1 ; t2 ÞÞ ¼ f 0 ðtÞt;            d E½ f ðtÞððt2 ; t1 ÞÞ ¼ f 0 ðtÞit:       ð2:7Þ
+The ﬁrst equality of (2.7) follows by equality qn              q
+                                                                 E½ f ðtÞ ¼ f 0 ðtÞt, which holds
+by construction of E. We now turn to prove the second equality of (2.7). We
+know that E½ f ðcos y; sin yÞ ¼ f ðe iy Þ, for all y A ½0; 2p. Then by di¤er-
+entiating with respect to y, we obtain d E½ f ðcos y; sin yÞððsin y; cos yÞÞ ¼
+f 0 ðe iy Þie iy , which implies the validity of the second equation of (2.7). If
+m ¼ 1, the proof is complete, thus we can assume that m > 1. We assume
+that equality (2.6) holds for j A f1; . . . ; m  1g, and for all 0 a l a j, and we
+prove (2.6) for j þ 1, and for all 0 a l a j þ 1. If l ¼ 0, then (2.6) follows
+                    q jþ1                jþ1 ð jþ1Þ
+by equality qn         jþ1 E½ f ðtÞ ¼ t    f       ðtÞ, which holds by construction of E½ f .
+Thus we can assume that l b 1. By inductive assumption, we have
+
+             d j E½ f ðtÞððt2 ; t1 Þ½l1 ; ðt1 ; t2 Þ½ jlþ1 Þ ¼ f ð jÞ ðtÞðitÞ l1 t jlþ1 :     ð2:8Þ
+Now by setting t 1 ðt1 ; t2 Þ ¼ ðcos y; sin yÞ in (2.8), and by di¤erentiating with
+respect to y, we obtain
+
+         d jþ1 E½ f ðtÞððt2 ; t1 Þ½l  ; ðt1 ; t2 Þ½ jlþ1 Þ
+
+                    þ ðl  1Þd j E½ f ðtÞððt1 ; t2 Þ; ðt2 ; t1 Þ½l2 ; ðt1 ; t2 Þ½ jlþ1 Þ
+
+                    þ ð j  l þ 1Þd j E½ f ðtÞððt2 ; t1 Þ½l1 ; ðt2 ; t1 Þ; ðt1 ; t2 Þ½ jl  Þ
+
+                ¼ f ð jþ1Þ ðtÞðitÞ l t jlþ1 þ f ð jÞ ðtÞðl  1ÞðitÞ l2 ðtÞt jlþ1
+
+                    þ f ð jÞ ðtÞðitÞ l1 ð j  l þ 1Þt jl it:
+
+By exploiting the symmetry, the real j-multilinearity of d j E½ f ðtÞ, and the
+inductive assumption, we obtain that (2.6) holds for j þ 1, and for all
+0 a l a j þ 1.                                                               r
+66                          Massimo Lanza de Cristoforis and Luca Preciso
+
+
+We now have the following variant of [15, Thm. 4.19]. See also Henry
+[10, p. 96]. For references to previous contributions on this issue by various
+authors, we refer to [15].
+        Theorem 2.9. Let m; r A N, a; b A 0; 1. Let gm ða; bÞ be deﬁned as in
+Lemma 2.3 (iv). Let R A 1; þy½ . Let E be the extension operator of Lemma
+2.4. The operator T     ~ from C mþr; a; 0 ðqD; CÞ  C m; b ðqD; RDÞ to Cm; gm ða; bÞ ðqD; CÞ
+                                                          
+deﬁned by setting T          ~ ½ f ; g 1 ðE½ f Þ  g, for all ð f ; gÞ A C mþr; a; 0 ðqD; CÞ 
+                                                                               
+Cm; b ðqD; RDÞ is of class C r in the real sense. The restriction of T                      ~ to
+   mþr; a; 0             m; b
+C           ðqD; CÞ  C ðqD; qDÞ coincides with the ordinary composition operator
+T deﬁned by T½ f ; g1 f  g. The ordinary composition T maps Cm; a; 0 ðqD; CÞ 
+                          m; g ða; bÞ; 0
+Cm; b; 0 ðqD; qDÞ to C m               ðqD; CÞ. If r b 1, q A f1; . . . ; rg, and if ð f0 ; g0 Þ A
+Cmþr; a; 0 ðqD; CÞ  Cm; b ðqD; qDÞ, then the real di¤erential of order q of T              ~ at
+ð f0 ; g0 Þ is delivered by the formula
+        ~ ½ f0 ; g0 ððv½1 ; w½1 Þ; . . . ; ðv½q ; w½q ÞÞ
+     d qT
+                                                                       !
+                    X
+                    q
+                            ðq1Þ                                               ðqÞ
+             ¼                                     d
+                          ðv½ j   g0 Þw½1 . . . w½ j  . . . w½q       þ ð f0      g0 Þw½1 . . . w½q   ð2:10Þ
+                    j¼1
+
+for all ððv½1 ; w½1 Þ; . . . ; ðv½q ; w½q ÞÞ A ðCmþr; a; 0 ðqD; CÞ  Cm; b ðqD; CÞÞ q , where the
+‘b’ symbol on a factor denotes that such factor should not appear in the
+product.
+      Proof. We ﬁrst prove that T            ~ is of class C r . It clearly su‰ces to
+show that given ð f # ; g # Þ A Cmþr; a; 0 ðqD; CÞ  Cm; b ðqD; RDÞ, the map T     ~ is of
+            r                                           #      #
+class C in an open neighborhood of ð f ; g Þ. Now we set Ce 1 fz A C :
+j jzj  1j < eg for all e > 0. By uniform continuity of E½g #  on clðRDÞ and
+by the inclusion E½g # ðqDÞ J RD, there exists e > 0 such that E½g # ðcl Ce Þ J
+RD. Clearly, W # 1 fg A Cm; b ðqD; RDÞ : E½gðcl Ce Þ J RDg is an open
+neighborhood of g # in Cm; b ðqD; CÞ. By [16, Thm. 5.3] and Lemma 2.1, T is
+of class C r from C mþr; a; 0 ðclðRDÞ; CÞ  C m; b ðcl Ce ; RDÞ to C m; gm ða; bÞ ðcl Ce ; CÞ.
+Furthermore, the restriction operator is easily seen to be linear and contin-
+                                           m; g ða; bÞ
+uous from C m; gm ða; bÞ ðcl Ce ; CÞ to C m           ðqD; CÞ (for example, by arguing as
+                                        ~
+in [18, Lem. 2.8 (ii)].) Thus, T is of class C r from Cmþr; a; 0 ðqD; CÞ  W #
+        m; g ða; bÞ
+to C m             ðqD; CÞ. Formula (2.10) follows by formula (2.5) and by the
+formula for the derivatives of T of [16, Rmk. 5.4]. By deﬁnition of the
+space C m; b; 0 ðcl Ce ; CÞ and by continuity of T from C m; a; 0 ðclðRDÞ; CÞ 
+C m; b ðcl Ce ; RDÞ to C m; gm ða; bÞ ðcl Ce ; CÞ, and by Lemma 2.4 (i), T maps
+                                               m; g ða; bÞ; 0
+Cm; a; 0 ðqD; CÞ  Cm; b; 0 ðqD; qDÞ to C m                ðqD; CÞ.                      r
+
+We now turn to the study of the inversion operator by showing the validity of
+the following variant of [15, Thm. 5.9].
+                    Di¤erentiability properties of some nonlinear operators                      67
+
+
+     Theorem 2.11. Let m A Nnf0g, r A N, a A 0; 1. Let J be the operator of
+Cmþr; a; 0 ðqD; qDÞ V AqD to Cm; a ðqD; qDÞ deﬁned by equality J½ f  1 f ð1Þ , for all
+f A Cmþr; a; 0 ðqD; qDÞ V AqD . If r ¼ 0, then J is continuous and the image of J is
+contained in Cm; a; 0 ðqD; qDÞ. If r b 1, then for all f0 A Cmþr; a; 0 ðqD; qDÞ V AqD ,
+there exist an open neighborhood Wf0 of f0 in Cmþr; a; 0 ðqD; CÞ V AqD , and
+an operator J~f0 of class C r in the real sense from Wf0 to Cm; a; 0 ðqD; CÞ, such
+that
+                    J~f0 ½ f  ¼ J½ f ;     Ef A Wf0 V Cmþr; a; 0 ðqD; qDÞ:              ð2:12Þ
+
+Furthermore, the following formula holds
+
+         d J~f0 ½ f ðwÞ ¼ ð f 0  f ð1Þ Þ1 w  f ð1Þ ;       Ew A Cmþr; a; 0 ðqD; CÞ; ð2:13Þ
+
+for all f A Wf0 V Cmþr; a; 0 ðqD; qDÞ.
+       Proof. We ﬁrst consider case r ¼ 0. By Lemma 2.3 (v), (vii),
+the following inclusion holds JðCm; a; 0 ðqD; qDÞ V AqD Þ J Cm; a ðqD; CÞ. We
+now prove that J is continuous from Cm; a; 0 ðqD; qDÞ V AqD to Cm; a ðqD; CÞ.
+To do so, we proceed by induction on m. Let m ¼ 1, lim j!y fj ¼ f in
+C1; a; 0 ðqD; qDÞ V AqD . Since the sequence f fj gj A N converges uniformly to
+f in qD, and qD is compact, a simple contradiction argument shows
+                  ð1Þ
+that lim j!y fj        ¼ f ð1Þ pointwise on qD. By Lemma 2.2 (ii), (iii), there
+exists d > 0 such that minqD j fj 0 j b d, minqD j f 0 j b d. Then a simple compu-
+                                ð1Þ
+tation shows that supj A N k fj kC1; a ðqD; CÞ < y. Since C1; a ðqD; CÞ is compactly
+                                                    ð1Þ
+imbedded in C0; 1 ðqD; CÞ, and lim j!y fj                 ¼ f ð1Þ pointwise on qD, a simple
+                                                                ð1Þ
+contradiction argument shows that lim j!y fj                         ¼ f ð1Þ in C0; 1 ðqD; CÞ.
+Then by Theorem 2.9, case r ¼ 0, and by Lemma 2.3 (iii), we have
+                   ð1Þ                                                           ð1Þ
+lim j!y ½ fj 0 ð fj Þ1 ¼ ½ f 0 ð f ð1Þ Þ1 in C0; a ðqD; CÞ. Since lim j!y fj       ¼ f ð1Þ
+                                                           ð1Þ
+in C0; 1 ðqD; CÞ, we conclude that lim j!y fj             ¼ f ð1Þ in C1; a ðqD; CÞ. Now
+let the statement be true for m b 1 and lim j!y fj ¼ f in Cmþ1; a; 0 ðqD; CÞ. By
+                              ð1Þ
+case m we have lim j!y fj           ¼ f ð1Þ in Cm; a ðqD; CÞ. Then by Lemma 2.3
+(iii), by Theorem 2.9, by the limiting relation lim j!y fj 0 ¼ f 0 in Cm; a; 0 ðqD; CÞ,
+                         ð1Þ              ð1Þ
+and by equality ½ fj  0 ¼ ½ fj 0 ð fj Þ1 , we conclude that the sequence
+     ð1Þ
+f½ fj  0 gj A N converges to ½ f ð1Þ  0 in Cm; a ðqD; CÞ, and the proof of case r ¼ 0
+is complete. We now prove that JðCm; a; 0 ðqD; qDÞ V AqD Þ J Cm; a; 0 ðqD; qDÞ.
+Let f A Cm; a; 0 ðqD; qDÞ V AqD . Then there exists a sequence f fj gj A N in
+Cy ðqD; CÞ V AqD such that lim j!y fj ¼ f in Cm; a ðqD; CÞ. Since hfor i j
+                                         fj                                                  f
+su‰ciently large we have               j fj j
+                                              A Cy ðqD; qDÞ V AqD ,   then we have J j fjj j A
+Cy ðqD; qDÞ V AqD for the same j’s. Now let w A C y ðR2 ; R2 Þ be such that
+wðxÞ ¼ xjxj1 , for jxj b 1=2. By [16, Thm. 5.3], and by Lemma 2.1, and
+by the continuity of the restriction to qD (cf. e.g., [18, Lem. 2.8]), we have
+68                   Massimo Lanza de Cristoforis and Luca Preciso
+
+          f
+lim j!y j fjj j ¼ lim j!y wðE½ fj ÞjqD ¼ wð f Þ ¼ f in Cm; a ðqD; CÞ, with E as in
+Lemma 2.4. Then the continuity of J implies that J½ f  A Cm; a; 0 ðqD; qDÞ.
+We now consider case r b 1. We take R > 1 and we deﬁne the operator
+Y of ðCmþr; a; 0 ðqD; CÞ V AqD Þ  Cm; a; 0 ðqD; RDÞ to Cm; a; 0 ðqD; CÞ by setting
+Y½ f ; g ¼ ðE½ f Þ  g  idqD , where idqD denotes the identity map in qD. By
+Theorem 2.9, the operator Y is of class C r . We now observe that for all
+ f A Cmþr; a; 0 ðqD; CÞ V AqD such that f ðqDÞ ¼ qD, we have Y½ f ; g ¼ 0 if
+g ¼ f ð1Þ . We now apply the Implicit Function Theorem to equation
+                                            ð1Þ
+Y½ f ; g ¼ 0 around the pair ð f0 ; f0 Þ. By Theorem 2.9, the partial di¤er-
+                            ð1Þ
+ential of Y at ð f0 ; f0 Þ with respect to the variable g is deﬁned by
+              ð1Þ           ð1Þ
+dg Y½ f0 ; f0 ðhÞ ¼ f00 ð f0 Þh, for all h A Cm; a; 0 ðqD; CÞ. Since f00 belongs to
+Cmþr1; a; 0 ðqD; CÞ, which is contained in Cm; a; 0 ðqD; CÞ, and since f00 ðtÞ 0 0
+for all t A qD, then Lemma 2.3 (ii), (iii) and Theorem 2.9 imply that
+              ð1Þ
+dg Y½ f0 ; f0  is a linear isomorphism of Cm; a; 0 ðqD; CÞ. Thus the Implicit
+Function Theorem implies the existence of an open neighborhood Wf0 of f0
+                                                                                     ð1Þ
+in Cmþr; a; 0 ðqD; CÞ V AqD , and of an open neighborhood Vf ð1Þ of f0                  in
+                                                                            0
+C m; a; 0                             ~                r
+           ðqD; CÞ, and of a map Jf0 of class C from Wf0 to Vf ð1Þ such that the
+                                                                          0
+graph of J~f0 coincides with the set of zeros of Y in Wf0  Vf ð1Þ . By the
+                                                                              0
+                            mþr; a; 0               m; a; 0
+obvious inclusion of C               ðqD; CÞ in C         ðqD; CÞ, and by case r ¼ 0, J is
+continuous on Wf0 V Cmþr; a; 0 ðqD; qDÞ. Then by possibly shrinking Wf0 , we can
+assume that J maps Wf0 V Cmþr; a; 0 ðqD; qDÞ to Vf ð1Þ . Since Y½ f ; J½ f  ¼ 0, for
+                                                              0
+all f A Wf0 V Cmþr; a; 0 ðqD; qDÞ, we conclude that (2.12) holds. The validity of
+the formula (2.13) for the ﬁrst di¤erential follows from formula (2.10) and by
+the Implicit Function Theorem.                                                            r
+
+If fÐA C1 ðqD; CÞ, and if f is a function of L ¼ fðqDÞ to C, then we denote
+by f f ðsÞds the line integral of the function f computed with respect to
+the parametrization y 7! fðe iy Þ, with y A ½0; 2p, of fðqDÞ. Let f A AqD . We
+denote by ind½f the index of the curve y 7! fðe iy Þ, y A ½0; 2p with respect to
+                                               1
+                                                 Ð dx
+any of the points of I ½f. Thus ind½f 1 2pi     f xz , for all z A I ½f. The map
+ind½ is obviously constantly equal to 1 or to 1 on the open connected
+                                                   þ
+components of AqD in C1 ðqD; CÞ. We set AqD         1ff A AqD : ind½f > 0g. The
+following Theorem collects known facts related to singular integrals with
+Cauchy kernels and to Cauchy type integrals.
+                                                                  þ
+      Theorem 2.14. Let a A 0; 1½, m A N, f A C1; a ðqD; CÞ V AqD , L ¼ fðqDÞ.
+                                    1; a
+Let I be the identity operator in C ðL; CÞ. Then the following statements hold.
+( i ) For all f A Cm; a ðL; CÞ, the singular integral
+                                             ð
+                                           1    f ðsÞ
+                           Sf ½ f ðtÞ 1              ds;     Et A L;                ð2:15Þ
+                                           pi f s  t
+                        Di¤erentiability properties of some nonlinear operators                        69
+
+
+          exists in the sense of the principal value, and Sf ½ f ðÞ A Cm; a ðL; CÞ. The
+          operator Sf deﬁned by (2.15) is linear and continuous from Cm; a ðL; CÞ to
+          itself. If f coincides with the identity map idqD , then we set S 1 Sf .
+( ii )    For all f A Cm; a ðL; CÞ, the function f ½ f  of CnfLg to C deﬁned by
+                                            ð
+                                          1     f ðsÞ
+                           f ½ f ðzÞ 1              ds;     Ez A CnL;
+                                         2pi f s  z
+          is holomorphic. The function f ½ f jI ½f admits a continuous extension to
+          cl I ½f, which we denote by þ          f ½ f , and the function f ½ f jE½f admits a
+          continuous extension to cl E½f, which we denote by                  f ½ f . Then we have
+          þ f ½ f  A C m; a
+                              ðcl I ½f; CÞ V HðI ½fÞ,     
+                                                             f ½ f  A C 0
+                                                                           ðcl E½f;  CÞ V Cm; a ðL; CÞ V
+                                                            G
+          HðE½fÞ, and the Plemelj formulas f ½ f ðtÞ ¼ G2 f ðtÞ þ 12 Sf ½ f ðtÞ for all
+                                                                            1
+
+          t A L hold. Furthermore, þ          f ½ deﬁnes a linear and continuous operator of
+             m; a                 m; a
+          C ðL; CÞ to C ðcl I ½f; CÞ. If f coincides with the identity map idqD ,
+          then we set  1 f .
+(iii)     The function f A Cm; a ðL; CÞ satisﬁes equation ðI  Sf Þ½ f  ¼ 0, if and
+          only if there exists a function F A C m; a ðcl I ½f; CÞ V HðI ½fÞ such that
+          F ðtÞ ¼ f ðtÞ, for all t A L. The function F, if it exists, is unique.
+(iv)      The function f A Cm; a ðL; CÞ satisﬁes equation ðI þ Sf Þ½ f  ¼ 0, if and only
+          if there exists a function F A C 0 ðcl E½f; CÞ V Cm; a ðL; CÞ V HðE½fÞ such
+          that limz!y F ðzÞ ¼ 0, and F ðtÞ ¼ f ðtÞ, for all t A L. The function F, if it
+          exists, is unique.
+(v)       If f A C1; a ðL; CÞ, then ðSf ½ f Þ 0 ¼ Sf ½ f 0 .
+     For case m ¼ 0 of statements (i) and (ii), we refer to Hackbusch [8, Thm.
+7.2.5]. Statement (v) follows by Gakhov [6, p. 30]. Case m > 0 of statements
+(i) and (ii) follows by case m ¼ 0 and by statement (v). Statements (iii) and
+(iv) follow by Gakhov [6, p. 27] together with statement (ii).
+
+
+3.       Di¤erentiability properties of the conformal welding operator
+
+     As we have said in the introduction, the conformal welding map is a
+composite function of Riemann maps. Thus we introduce the following
+Theorem, which summarizes some well-known properties of Riemann maps.
+For a proof we refer to Ahlfors [1, Ch. 6, § 1] together with Pommerenke
+[26, Thms. 2.6, 3.5, 3.6].
+      Theorem 3.1. Let m A Nnf0g, a A 0; 1½ . Let z A Cm; a ðqD; CÞ V AqD .
+Then the following statements hold.
+( i ) There exists a unique homeomorphism g½z A C 1 ðCnD; CÞ V HðCncl DÞ
+       of CnD onto cl E½z, such that g½zðyÞ1 limz!y g½zðzÞ ¼ y, g½z 0 ðyÞ 1
+       limz!y g½z 0 ðzÞ A 0; þy½ . Furthermore g½zjqD A Cm; a ðqD; CÞ V AqD
+                                                                              þ
+                                                                                .
+70                     Massimo Lanza de Cristoforis and Luca Preciso
+
+
+( ii )   Let a1 ; a2 ; a3 be three distinct points of qD. Let z be orientation preserving.
+         There exists a unique homeomorphism f ½z A C m; a ðcl D; CÞ V HðDÞ of cl D
+         onto cl I ½z such that f ½zðaj Þ ¼ zðaj Þ, for all j ¼ 1; 2; 3. Furthermore,
+                         þ
+         f ½zjqD A AqD    .
+(iii)    For all b A I ½z, there exists a unique homeomorphism f~½z; b of cl D onto
+         cl I ½z such that f~½z; b A C m; a ðcl D; CÞ V HðDÞ and such that f~½z; bð0Þ ¼ b,
+         f~½z; b 0 ð0Þ A 0; þy½ . For short, we set f~½z ¼ f~½z; 0 if b ¼ 0.
+      We note that the map f ½z of Theorem 3.1 (ii) depends also on a1 ; a2 ; a3 .
+However, throughout the paper, we will assume the three points a1 ; a2 ; a3 to be
+ﬁxed. Thus we have chosen not to display the dependence on a1 ; a2 ; a3 in the
+notation for f ½z. By Lemma 2.3 (iv), (v), and by Theorem 3.1, the function
+f ½g½zjqD ð1Þ  g½zjqD belongs to Cm; a ðqD; qDÞ V AqD
+                                                          þ
+                                                            , for all z A Cm; a ðqD; CÞ V
+AqD , with m A Nnf0g, a A 0; 1½. Then we can introduce the following.
+     Definition 3.2. Let m A Nnf0g, a A 0; 1½ . Let a1 ; a2 ; a3 be three distinct
+points of qD. If z A Cm; a ðqD; CÞ V AqD , then we deﬁne as conformal welding
+map associated to z (and to the triple ða1 ; a2 ; a3 Þ), the map
+                               w½z 1 f ½g½zjqD ð1Þ  g½zjqD :                     ð3:3Þ
+We deﬁne as conformal welding operator, the operator w½ of Cm; a ðqD; CÞ V AqD
+                       þ
+to Cm; a ðqD; qDÞ V AqD , which takes z to w½z.
+     Clearly, one can deﬁne the conformal welding map by normalizing f ½z
+and g½z in a di¤erent way, and the corresponding w½z would di¤er from the
+w½z deﬁned above by a suitable composition with Möbius transformations.
+Now we introduce the following Theorem, whose ﬁrst statement has been
+proved in Lanza and Rogosin [20, Thm. 5.4]. Both statements can be con-
+sidered as a variant of [17, Thm. 3.10, Thm. 4.7].
+      Theorem 3.4. Let m A Nnf0g, a A 0; 1½ . Then the following statements
+hold.
+( i ) The map ðz; bÞ 7! f~½z; bð1Þ  z is real analytic from
+                     Em; a 1 fðz; bÞ A ðCm; a ðqD; CÞ V AqD Þ  C : b A I ½zg
+         to Cm; a ðqD; CÞ.
+(ii)     Let r A N. The map ðz; bÞ 7! f~½z; b of Emþr; a V ðCmþr; a; 0 ðqD; CÞ  CÞ to
+         Cm; a; 0 ðqD; CÞ is of class C r .
+      Proof. Statement (i) is contained in Lanza and Rogosin [20, Thm. 5.4].
+By Theorem 3.1, we deduce that f~½z; b A Cy ðqD; CÞ if z A Cy ðqD; CÞ V AqD ,
+b A I ½z. Then by statement (i), we have f~½z; bð1Þ  z A Cm; a; 0 ðqD; CÞ if z A
+Cm; a; 0 ðqD; CÞ V AqD , b A I ½z. Then statement (ii) follows by statement (i), and
+by Theorems 2.9, 2.11.                                                              r
+                    Di¤erentiability properties of some nonlinear operators                      71
+
+
+We now turn to consider the dependence of f ½zð1Þ  z upon z. Since f ½z has
+been normalized in a di¤erent way from f~½z; b, we need the following Lemma
+in order to exploit the previous Theorem.
+
+     Lemma 3.5.       Let a1 ; a2 ; a3 be three distinct points of qD.            Let
+
+        A 1 fðz; p1 ; p2 ; p3 Þ A C 4 : p1 ; p2 ; p3 are distinct;
+               ðz  p3 Þð p1  p2 Þða1  a3 Þ  ðz  p2 Þð p1  p3 Þða1  a2 Þ 0 0g:
+
+Let Q be the rational function of A to C deﬁned by
+
+                         a2 ðz  p3 Þð p1  p2 Þða1  a3 Þ  a3 ðz  p2 Þð p1  p3 Þða1  a2 Þ
+ Qðz; p1 ; p2 ; p3 Þ 1                                                                         ;
+                            ðz  p3 Þð p1  p2 Þða1  a3 Þ  ðz  p2 Þð p1  p3 Þða1  a2 Þ
+
+for all ðz; p1 ; p2 ; p3 Þ A A. If p1 ; p2 ; p3 are three distinct points of qD, and if
+the triple ðp1 ; p2 ; p3 Þ induces on qD the same orientation of the triple ða1 ; a2 ; a3 Þ,
+then ðz; p1 ; p2 ; p3 Þ A A for all z A cl D, and Qð ; p1 ; p2 ; p3 Þ is the unique homeo-
+morphism of cl D onto itself which is holomorphic in D and which maps pj to aj ,
+for j ¼ 1; 2; 3.
+
+      Proof. By elementary Conformal Mapping Theory (cf. e.g., Ahlfors
+[1, p. 79]), the function Qð ; p1 ; p2 ; p3 Þ is the only linear fractional transfor-
+mation which maps pj to aj . Since p1 ; p2 ; p3 are three distinct points of qD,
+the function Qð ; p1 ; p2 ; p3 Þ is well-known to map qD onto itself. If the
+triple ðp1 ; p2 ; p3 Þ induces on qD the same orientation of ða1 ; a2 ; a3 Þ, then
+Qð ; p1 ; p2 ; p3 Þ is well-known to be a bijection of cl D onto itself. The
+uniqueness follows by the Riemann Mapping Theorem.                                 r
+
+We are now ready to prove the following.
+
+      Theorem 3.6. Let m A Nnf0g, a A 0; 1½ . Let a1 ; a2 ; a3 be three distinct
+points of qD. Then the nonlinear operator z 7! f ½zð1Þ  z is real analytic from
+                    þ                        þ                                  þ
+Cm; a ðqD; CÞ V AqD   to Cm; a ðqD; qDÞ V AqD , and maps Cm; a; 0 ðqD; CÞ V AqD to
+  m; a; 0             þ
+C        ðqD; qDÞ V AqD .
+                                          þ
+      Proof. Let z0 A Cm; a ðqD; CÞ V AqD  , z0 A I ½z0 . Let W be an open
+                                           þ
+neighborhood of z0 in Cm; a ðqD; CÞ V AqD    such that z0 A I ½z, for all z A W.
+By the uniqueness inferred by the Riemann Mapping Theorem, we have
+f ½z  z0  ¼ f ½z  z0 . Thus there is no loss of generality in assuming that
+0 ¼ z0 A I ½z, for all z A W. By Lemma 3.5, and by the uniqueness inferred by
+the Riemann Mapping Theorem, we have
+
+f ½zð1Þ  zðÞ ¼ Qð f~½zð1Þ  zðÞ; f~½zð1Þ  zða1 Þ; f~½zð1Þ  zða2 Þ; f~½zð1Þ  zða3 ÞÞ;
+72                  Massimo Lanza de Cristoforis and Luca Preciso
+
+
+where Q is as in Lemma 3.5. Thus the analyticity of f ½zð1Þ  zðÞ on z
+follows by Theorem 3.4 (i), and by Lemmas 2.3 (ii), (iii) and 3.5. By Theorem
+3.1, we have f ½zð1Þ  z A Cy ðqD; qDÞ if z A Cy ðqD; CÞ V AqDþ
+                                                                    . Then the last
+                                                   ð1Þ
+statement follows by the continuity of z 7! f ½z        z, and by the deﬁnition of
+the spaces Cm; a; 0 .                                                            r
+                                                                   þ
+We now show that on a suitable subset Tm; a of Cm; a ðqD; CÞ V AqD   we have
+g½zjqD ¼ z, for all z A Tm; a . Thus the conformal welding operator coincides
+with the nonlinear operator of the previous Theorem on Tm; a .
+
+       Proposition 3.7. Let m A Nnf0g, a A 0; 1½ . Let
+                    
+            Dm; a 1 z A Cm; a ðqD; CÞ : bZ A HðCncl DÞ V C 0 ðCnD; CÞ
+                                                                 
+                                                  0        0
+                       such that z ¼ ZjqD ; lim Z ðzÞ 1 Z ðyÞ A R :            ð3:8Þ
+                                           z!y
+
+
+Then the following statements hold.
+                                                                          0
+( i ) If z A Dm; a , then the mapn Z of (3.8) is unique. Furthermore,
+          Ð                                  Ð                Ð       o Z ðyÞ ¼
+        1     zðsÞ                        z        zðsÞ     1    zðsÞ
+       2pi qD s 2
+                   ds, and limz!y ZðzÞ  2pi   qD s 2 ds  2pi qD s ds ¼ 0.
+                                               m; a
+( ii ) Dm; a is a real Banach subspace of C ðqD; CÞ.
+(iii) Let Z½z be the unique map of statement (i) corresponding to z A Dm; a .
+       Then the set
+                                               þ
+                         Tm; a 1 fz A Dm; a V AqD : Z½z 0 ðyÞ > 0g
+
+        is open in Dm; a .
+(iv)    If z A Tm; a , then limz!y Z½zðzÞ ¼ y, and Z½z ¼ g½z.
+
+      Proof. We          ﬁrst     prove       statement   (i). If    Z A HðCncl DÞ V
+C 0 ðCnD; CÞ, then standard properties of holomorphic functions imply
+that condition limz!y Z 0 ðzÞ 1 Z 0 ðyÞ A C is equivalent to the existence of
+a; b A C and K A HðCncl DÞ V C 0 ðCnD; CÞ such that limz!y KðzÞ ¼ 0 and
+ZðzÞ ¼ az þ b þ KðzÞ. Moreover, it is easily checked that if such condi-
+                                            Ð ZðsÞ              Ð ZðsÞ
+tion holds, then Z 0 ðyÞ ¼ a ¼ 2pi      1                     1
+                                             qD s 2 ds, b ¼ 2pi qD s ds. Then by
+Theorem 2.14   h (iv), the      membership of z ini Dm; a is equivalent to condi-
+                         z
+                           Ð zðsÞ         1
+                                             Ð zðsÞ
+tion ðI þ SÞ zðzÞ  2pi qD s 2 ds  2pi       qD s ds ¼ 0 together with condition
+ 1
+   Ð    zðsÞ
+2pi qD s 2
+             ds A R. Thus the uniqueness of Z follows. The completeness of
+Dm; a follows by the same argument, by Theorem 2.14 (i), and by the con-
+                              1
+                                Ð zðsÞ                1
+                                                        Ð zðsÞ            m; a
+tinuous dependence of 2pi        qD s ds and of 2pi qD s 2 ds on z A C ðqD; CÞ.
+Statement (iii) follows by Lemma 2.2 (ii) and by the continuous dependence
+                  Ð zðsÞ
+of Z 0 ðyÞ ¼ 2pi1
+                   qD s 2 ds on z A Dm; a . We now prove statement (iv). By (i),
+                  Di¤erentiability properties of some nonlinear operators           73
+
+
+we have limz!y Z½zðzÞ ¼ y. Now let o 0 A I ½z. Since Z½z 0 ðyÞ 0 0, then
+the function Z½z is injective in a neighborhood of y. Since we also have
+        þ
+z A AqD    and o 0 A I ½z, then a standard argument based on the Argument
+Principle shows that Z½zðÞ  o 0 does not vanish. Thus the function
+½Z½zð1=ðÞÞ  o 0 1 extends to a holomorphic map in D. Since z A AqD  þ
+                                                                           , then
+                             1
+the curve ½zð1=ðÞÞ  o 0       is one to one. Then again by the Argument
+Principle, ½Z½zð1=ðÞÞ  o 0 1 is one to one in cl D, and a simple topological
+argument shows that ½Z½zð1=ðÞÞ  o 0 1 maps D onto I ½½zð1=ðÞÞ  o 0 1 .
+Accordingly, Z½z is one to one and Z½zðCncl DÞ ¼ Cncl I ½z. Since
+Z½z 0 ðyÞ > 0, Theorem 3.1 (i) implies that Z½z ¼ g½z.                      r
+
+    As an immediate Corollary of Theorem 3.6 and of Proposition 3.7, we
+obtain the following.
+
+    Theorem 3.9. Let m A Nnf0g, a A 0; 1½ . Then the conformal welding
+                                                                   þ
+operator is real analytic from the set Tm; a to Cm; a ðqD; qDÞ V AqD .
+
+     We now turn to the di¤erentiability properties of g½, by means of the
+following.
+
+      Theorem 3.10. Let m A Nnf0g, a A 0; 1½, r A N. Then the map which
+takes z to g½zjqD is of class C r in the real sense from Cmþr; a; 0 ðqD; CÞ V AqD to
+                     þ
+Cm; a; 0 ðqD; CÞ V AqD .
+
+      Proof. Let z0 A Cmþr; a; 0 ðqD; CÞ V AqD , z0 A I ½z0 . Let W be an open
+neighborhood of z0 in Cmþr; a; 0 ðqD; CÞ V AqD such that z0 A I ½z, for all
+z A W. By the uniqueness inferred by the Riemann Mapping Theorem, we
+have g½z  z0  ¼ g½z  z0 . Thus there is no loss of generality in assuming
+that z0 ¼ 0, for all z A W. Let f~½ be as in Theorem 3.1. Clearly, g½zðzÞ ¼
+½ f~½1=zð1=zÞ1 , for all z A Cncl D, and for all z A W. In particular, Theorem
+3.1 implies that g½zjqD A Cy ðqD; CÞ if z A Cy ðqD; CÞ V AqD . Thus we can
+conclude the proof by Lemma 2.3 (iii), by Theorem 2.9, and by Theorem
+3.4 (ii).                                                                       r
+
+As a consequence of Theorem 3.6, and of Theorem 3.10, we obtain the
+following.
+
+     Theorem 3.11. Let m A Nnf0g, a A 0; 1½, r A N. Then the conformal
+                                                                      þ
+welding operator maps Cm; a ðqD; CÞ V AqD to Cm; a ðqD; qDÞ V AqD       and is of
+       r                        mþr; a; 0                   m; a; 0              þ
+class C in the real sense from C         ðqD; CÞ V AqD to C       ðqD; qDÞ V AqD .
+
+    We note that it can be proved that Theorem 3.11 is optimal in the frame
+of Schauder spaces (cf. [19, Thm. 2.14].)
+74                    Massimo Lanza de Cristoforis and Luca Preciso
+
+
+4.   Preliminaries on the conformal sewing problem, and deﬁnition of the
+     generalized conformal sewing operator.
+
+     The problem of ﬁnding a suitable right inverse for the noninjective
+operator w½ is called the conformal sewing problem and is a particular
+Haseman problem. In this section, by following the classical theory of the
+Haseman problem we recall a known existence and uniqueness result for the
+conformal sewing problem. Moreover, we prove a slightly more general
+regularity result for the solution in order to perform our perturbation analysis
+of the conformal sewing problem. To introduce a suitable right inverse of
+w½, we ﬁrst look at the injection which is naturally associated to the con-
+formal welding operator.
+
+      Proposition 4.1. Let m A Nnf0g, a A 0; 1½ . Let ‘@’ be the equiva-
+lence relation in Cm; a ðqD; CÞ V AqD which is naturally associated to the con-
+formal welding operator, i.e., z1 @ z2 if and only if w½z1  ¼ w½z2 , with z1 ; z2 A
+Cm; a ðqD; CÞ V AqD . If z1 A Cm; a ðqD; CÞ V AqD , then the equivalence class ½z1 @
+of z1 with respect to the relation @ contains exactly one element z~1 A Tm; a such
+        1
+          Ð z~1 ðsÞ         1
+                              Ð z~1 ðsÞ
+that 2pi   qD s ds ¼ 0, 2pi qD s 2 ds ¼ 1. Furthermore,
+                      n                 o1               1
+                                                             ð
+                                                                 g½z1 ðsÞ
+                                                                             
+                 z~1 ¼ lim g½z1  0 ðzÞ       g½z1 jqD                   ds :  ð4:2Þ
+                        z!y                               2pi qD    s
+
+The map z 7! ½z@ is a bijection of the set
+                              ð                   ð              
+         ~                   1     zðsÞ          1    zðsÞ
+        Tm; a 1 z A Tm; a :             ds ¼ 0;            ds ¼ 1
+                            2pi qD s            2pi qD s 2
+
+onto the quotient set Cm; a ðqD; CÞ V AqD =@. In particular, the conformal weld-
+ing operator is injective from the set T  ~m; a to C m; a ðqD; qDÞ V Aþ .
+                                                                     qD
+
+      Proof. Let z1 A Cm; a ðqD; CÞ V AqD . By deﬁnition of conformal weld-
+ing map, we have w½z1  ¼ f ½g½z1 jqD ð1Þ  g½z1 jqD . Also, if we set z1# 1 g½z1 jqD ,
+we have g½z1# jqD ¼ z1# and z1# A Tm; a . Then w½z1  ¼ w½z1# . We now note
+that if a > 0, b A C, then az1# þ b A Tm; a , g½az1# þ b ¼ ag½z1#  þ b, f ½az1# þ b ¼
+af ½z1#  þ b, and that accordingly w½z1  ¼ w½az1# þ b. In particular, the ele-
+ment z~1 deﬁned by the right-hand side of (4.2) belongs to Tm; a and satis-
+ﬁes w½z~1  ¼ w½z1 . Since g½z1 jqD ¼ z1# belongs to Dm; a , Proposition 3.7 (i)
+                                           Ð g½z1 ðsÞ
+implies that limz!y g½z1  0 ðzÞ ¼ 2pi  1
+                                            qD s 2     ds. Then one can easily check that
+z~1 A T ~m; a . Conversely, if h A T   ~m; a , and if w½z~1  ¼ w½h, then we have g½h ¼
+                                                                                            jqD
+h, g½z~1  ¼ z~1 , f ½z~1 ð1Þ  z~1 ¼ f ½hð1Þ  h, and thus z~1  hð1Þ ¼ f ½z~1   f ½hð1Þ
+        jqD
+on qD. Now the function K of C to itself deﬁned by KðzÞ 1 g½z~1   g½hð1Þ ðzÞ
+if jzj b 1, KðzÞ 1 f ½z~1   f ½hð1Þ ðzÞ if jzj < 1, is a homeomorphism of C to
+                     Di¤erentiability properties of some nonlinear operators        75
+
+
+itself, and is holomorphic on CnqD. Then it is well-known that K must be
+holomorphic on all C. Now the only entire homeomorphisms of C are the
+complex a‰ne maps. Thus there exist a A C, b A C such that KðzÞ ¼ az þ b,
+for all z A C. In particular, g½z~1  ¼ ag½h þ b, and thus we obtain z~1 ¼ ah þ b.
+Then by exploiting the assumption that both z~1 and h belong to T    ~m; a , one can
+easily deduce that a ¼ 1, b ¼ 0.                                                  r
+The previous Proposition says, in particular, that the natural injection of the
+                                                          þ
+quotient set Cm; a ðqD; CÞ V AqD =@ to Cm; a ðqD; CÞ V AqD associated to the con-
+formal welding operator can be identiﬁed with the restriction of w½ to T     ~m; a .
+Thus we now turn to deﬁne a right inverse of the restriction of w to T         ~m; a .
+By Proposition 3.7, we easily deduce the following.
+         Lemma 4.3. Let m A Nnf0g, a A 0; 1½ . Then
+                  
+            ~                            þ
+           Tm; a ¼ z A Cm; a ðqD; CÞ V AqD : bZ A HðCncl DÞ V C 0 ðCnD; CÞ;
+                                                         
+                   such that z ¼ ZjqD ; lim ZðzÞ  z ¼ 0 :                      ð4:4Þ
+                                            z!y
+
+             ~m; a and if Z is as in (4.4), then Z ¼ g½z.
+Also, if z A T
+     Proof. If z and Z are as in the right hand side of (4.4), then Zð1=vÞ  1=v
+has a removable singularity at v ¼ 0 and limiting value 0 at 0. Then by the
+                                   1
+                                     Ð zðsÞ                             0
+Cauchy formula, we obtain 2pi         qD s ds ¼ 0. Since ½Zð1=vÞ  1=v must have
+ﬁnite limit at v ¼ 0, we deduce that limv!0 Z 0 ð1=vÞ ¼ 1. Then by Prop-
+osition 3.7, we have z A T   ~m; a . Conversely, by Proposition 3.7 we easily deduce
+that if z A T~m; a , then z belongs to the set in the right hand side of (4.4) and
+Z ¼ g½z.                                                                         r
+As a next step we derive by classical means a system of two integral equations
+involving z, w½z (cf. e.g., Lu [22].)
+                                                                       þ
+    Theorem 4.5. Let a A 0; 1½ . Let f A C1; a ðqD; CÞ V AqD           . Let F A
+  0; a                            0                             0; a
+C ðcl I ½f; CÞ V HðI ½fÞ, G A C ðCnD; CÞ V HðCncl DÞ V C ðqD; CÞ such that
+limz!y GðzÞ  z ¼ 0, and F  f ¼ G jqD . Then z 1 G jqD satisﬁes the following
+two equations
+                  ð                   ð
+                1      zðsÞ         1      zðsÞf 0 ðsÞ
+       zðtÞ þ                ds                        ds ¼ t;      Et A qD; ð4:6Þ
+              2pi qD s  t        2pi qD fðsÞ  fðtÞ
+               ð                  ð
+            1      zðsÞ         1       zðsÞf 0 ðsÞ
+                         ds þ                        ds ¼ t;     Et A qD:      ð4:7Þ
+           2pi qD s  t        2pi qD fðsÞ  fðtÞ
+                                     ~m; a , then the pair ðf 1 w½z; zÞ satisﬁes
+In particular, if m A Nnf0g, and z A T
+equations (4.6) and (4.7).
+76                     Massimo Lanza de Cristoforis and Luca Preciso
+
+
+     Proof. By Theorem 2.14 (iii) and (iv), we have fðI  Sf Þ½z  fð1Þ g  f ¼ 0
+and ðI þ SÞ½z  idqD  ¼ 0. Then by adding and subtracting such two equa-
+tions, we obtain (4.6) and (4.7), respectively.                                  r
+                                                                               þ
+Next we show, by exploiting known results, that for all f A Cm; a ðqD; CÞ V AqD ,
+the system of equations (4.6) and (4.7) has a unique solution. We start by
+analyzing equation (4.6). To do so, we need some information on the integral
+operator associated to (4.6). Thus we introduce the following variant of a
+result of Kantorovich and Akilov [12, Thm. 4 p. 363, Rmk. 2 p. 365] (see also
+Gorenﬂo and Vessella [7, Thm. 4.1.7, p. 69].)
+     Lemma 4.8. Let a A 0; 1½ . Let kð ; Þ be a complex valued continuous
+function on the set B 1 fðt; xÞ A ðqDÞ 2 : t 0 xg. Let
+                          M1 1 sup jkðt; xÞj jx  tj 1a < þy:                          ð4:9Þ
+                                 ðt; xÞ A B
+
+Then the following statements hold.
+( i ) The integral
+                                                 ð
+                                    U½gðtÞ 1          kðt; xÞgðxÞdx
+                                                 qD
+
+         is convergent for all t A qD and for all g A Ly ðqD; CÞ.
+( ii )   Let X be normed space continuously imbedded in Ly ðqD; CÞ.                      Let
+         r > 0. If
+                   ( ð                                           
+                                                                 
+                                                                                 a
+         M2 1 sup                   ðkðt2 ; xÞ  kðt1 ; xÞÞgðxÞdx kgk1
+                                                                       X jt2  t1 j
+                     qDnLðt1 ; t2 Þ                              
+                                                                       )
+                      t1 ; t2 A qD; 0 < jt2  t1 j a r; g A Xnf0g          < þy;    ð4:10Þ
+
+         where Lðt1 ; t2 Þ 1 fx A qD : jx  t1 j < 2jt2  t1 jg. Then U deﬁnes a linear
+         and continuous operator of X to C0; a ðqD; CÞ.
+(iii)    If qt kð ; Þ exists and is continuous, and if
+                            M3 1 sup jqt kðt; xÞj jx  tj 2a < þy;                 ð4:11Þ
+                                    ðt; xÞ A B
+
+         then U deﬁnes a linear and continuous operator of Ly ðqD; CÞ to
+         C0; a ðqD; CÞ.
+     Proof. Let jdxj denote the usual arc-length measure on qD. It is
+                                                 Ð     jdxj
+well-known and easy to verify that ca 1 supt A qD qD           < y. Then by
+                                                     jtxj 1a
+assumption (4.9), we have
+                   jU½gðtÞj a M1 ca kgkLy ðqD; CÞ ;        Eg A Ly ðqD; CÞ;
+                      Di¤erentiability properties of some nonlinear operators                             77
+
+
+and for all t A qD, and statement (i) holds. We now prove statement (ii). We
+can clearly assume r a 21 . Let t1 ; t2 be two points of qD. If jt1  t2 j b r,
+then we have
+
+  jU½gðt2 Þ  U½gðt1 Þj jt2  t1 ja a 2ra sup jU½gðtÞj a 2ra ca M1 kgkLy ðqD; CÞ :
+                                              t A qD
+                                                                                  ð4:12Þ
+
+We now assume that 0 < jt1  t2 j a r.                        Then we have
+
+     jU½gðt2 Þ  U½gðt1 Þj a M2 kgkX jt1  t2 j a
+             (ð                          ð                                        )
+           þ                    jkðt2 ; xÞj jdxj þ                 jkðt1 ; xÞj jdxj kgkLy ðqD; CÞ :   ð4:13Þ
+                  Lðt1 ; t2 Þ                        Lðt1 ; t2 Þ
+
+Now it can be readily veriﬁed that there exists ca0 > 0 independent of t1 ; t2
+such that
+ ð                                              ð
+                  jdxj                      a                    jdxj
+                       1a
+                           a c 0
+                                 jt
+                               a 2   t 1 j   ;                       1a
+                                                                          a ca0 jt2  t1 j a : ð4:14Þ
+  Lðt1 ; t2 Þ jt2  xj                           Lðt1 ; t2 Þ jt1  xj
+
+By assumption (4.9), by inequalities (4.12)–(4.14), we conclude that there exists
+c 00 > 0 depending only on a, ca , ca0 , r, M1 , M2 , and on the norm of the
+imbedding of X into Ly ðqD; CÞ such that
+
+                           jU½gðt2 Þ  U½gðt1 Þj jt2  t1 ja a c 00 kgkX ;
+
+for all g A X, for all t1 ; t2 A qD. Then statement (ii) follows. We now prove
+statement (iii). Let 0 < r < 21 . Let 0 < jt1  t2 j a r. By parametrizing the
+arc joining t1 to t2 and contained in Lðt1 ; t2 Þ by the map y 7! e iy t1 , and by
+applying the Mean Value Inequality, we obtain that
+                                                p
+               jkðt2 ; xÞ  kðt1 ; xÞj a          jt2  t1 j      sup          jqt kðh; xÞj
+                                                2            jht1 jajt2 t1 j
+                                                                      h A qD
+                                                                                        !
+                                              p                                M3
+                                             a jt2  t1 j      sup                  2a
+                                                                                          ;
+                                              2           jht1 jajt2 t1 j jh  xj
+                                                                      h A qD
+
+for all x A qDnLðt1 ; t2 Þ. Now, if x A qDnLðt1 ; t2 Þ, and if h A qD satisﬁes
+inequality jh  t1 j a jt2  t1 j, then we have jh  xj b jt1  xj  jh  t1 j b
+jt1  xj  jt2  t1 j b 21 jt1  xj. Furthermore, it is well-known and easy to
+verify that there exists ca000 > 0 independent of t1 ; t2 such that
+                      ð
+                                 jt1  xj a2 jdxj a ca000 jt2  t1 j a1 :
+                            qDnLðt1 ; t2 Þ
+78                         Massimo Lanza de Cristoforis and Luca Preciso
+
+
+Then the following inequality holds
+          ð
+                    jkðt2 ; xÞ  kðt1 ; xÞj jdxj a ca000 p2 1a M3 jt2  t1 j a ;     ð4:15Þ
+                  qDnLðt1 ; t2 Þ
+
+and thus the supremum in (4.10) is ﬁnite and the conclusion follows by state-
+ment (ii) and by taking X ¼ Ly ðqD; CÞ.                                   r
+By the previous Lemma, and by arguing as in Lu [22, p. 418], we obtain the
+following.
+     Proposition 4.16. Let a; b A 0; 1½ . Let f A C1; a ðqD; CÞ V AqD .             If g A
+C0; b ðqD; CÞ,
+              then the map Uf ½gðÞ deﬁned by
+                        ð                      
+                      1       1         f 0 ðsÞ
+         Uf ½gðtÞ 1                            gðsÞds;       Et A qD;               ð4:17Þ
+                     2pi qD s  t fðsÞ  fðtÞ
+belongs to C0; a ðqD; CÞ. The operator Uf ½ of C0; b ðqD; CÞ to C0; a ðqD; CÞ
+deﬁned by (4.17) is compact.
+    Proof. By arguing as in Lu [22, p. 418], we can show that there exists a
+constant cf > 0 depending only on f such that
+                                           
+                     fðsÞ  fðtÞ           
+                                  f 0
+                                        ðsÞ  a cf js  tj a ;       ð4:18Þ
+                      st                  
+
+for all t; s A qD with t 0 s. Then we obtain that
+                                                        
+   1
+              f 0 ðsÞ      1     fðsÞ  fðtÞ
+                                                    0
+                                                           
+                                                            a cf js  tj a1 :
+                         ¼
+  s  t fðsÞ  fðtÞ jfðsÞ  fðtÞj  s  t       f   ðsÞ   lqD ½f
+                           1              f 0 ðsÞ
+Thus the kernel kðt; sÞ 1 st  fðsÞfðtÞ satisﬁes inequality (4.9).          Similarly, one
+can prove that k satisﬁes inequality (4.11). Thus Lemma 4.8 (iii) implies that
+Uf maps Ly ðqD; CÞ to C0; a ðqD; CÞ with continuity. Since C0; b ðqD; CÞ is well-
+known to be compactly imbedded in Ly ðqD; CÞ, the proof is complete. r
+We now introduce the following two statements, which we exploit later. For
+the sake of completeness we include a proof.
+                                                                                      þ
+     Proposition 4.19. Let a A 0; 1½ . Let f1 ; f2 A C1; a ðqD; CÞ V AqD              , L1 1
+                                        0                                        0
+f1 ðqDÞ, L2 1 f2 ðqDÞ. Let F A C ðcl I ½f1 ; CÞ V HðI ½f1 Þ, G A C ðCnI ½f2 ; CÞ V
+HðCncl I ½f2 Þ. Let Fjf1 ðqDÞ A C0; a ðL1 ; CÞ, G jf2 ðqDÞ A C0; a ðL2 ; CÞ, limz!y GðzÞ ¼
+0, F ðf1 ðtÞÞ ¼ Gðf2 ðtÞÞ, for all t A qD. Then both F and G vanish identically.
+      Proof. Clearly, F n ðf1 ðtÞÞ ¼ G n ðf2 ðtÞÞ, for all t A qD, n A Nnf0g. By
+Theorem 2.14, we have fðI þ Sf2 Þ½Gjfn ðqDÞ g  f2 ¼ 0, fðI  Sf1 Þ½G n  f2 
+                                               2
+ ð1Þ
+f1 g  f1 ¼ 0. Then by adding such two equalities, we obtain ðI þ Uf1 
+Uf2 Þ½G n  f2  ¼ 0. Since Uf1  Uf2 is compact in C0; a ðqD; CÞ, the kernel of
+                  Di¤erentiability properties of some nonlinear operators             79
+
+
+I þ Uf1  Uf2 is ﬁnite dimensional. Thus the family fG n  f2 gn A N must be lin-
+early dependent, and accordingly there exists a natural k such that G 0  f2 ; . . . ;
+G k  f2 are linearly dependent. If G is not identically zero, then the func-
+tion G  f2 cannot be constant on qD. Thus there exist k þ 1 distinct points
+x0 ; . . . ; xk in G  f2 ðqDÞ. By the linear dependence of G 0  f2 ; . . . ; G k  f2 ,
+we deduce that the determinant of the Vandermonde matrix of the numbers
+x0 ; . . . ; xk must vanish, contrary to the assumption that x0 ; . . . ; xk be distinct.
+Thus G ¼ 0, and accordingly F is identically zero.                                    r
+Then we have the following Theorem (cf. Lu [22, pp. 419–420].)
+                                                           þ
+      Theorem 4.20. Let a A 0; 1½, f A C1; a ðqD; CÞ V AqD   . Let I be the identity
+             0; a                                         0; a
+operator of C ðqD; CÞ. Let Uf be the operator of C ðqD; CÞ to itself deﬁned
+in (4.17). Then I þ Uf is a complex linear homeomorphism of C0; a ðqD; CÞ to
+itself.
+       Proof. By Proposition 4.16, the operator I þ Uf is a compact pertur-
+bation of the identity. Thus by the Fredholm Alternative, and by the
+Open Mapping Theorem, it su‰ces to show that I þ Uf is injective. If g A
+C0; a ðqD; CÞ and ðI þ Uf Þ½g ¼ 0, then we have 12 ðI þ SÞ½g þ 12 fðI  Sf Þ 
+½g  fð1Þ g  f ¼ 0, and by Theorem 2.14 (ii) we have þ ½g ¼   f ½g  f
+                                                                              ð1Þ
+                                                                                   f
+                                                        þ                  ð1Þ
+on qD. Then by Proposition 4.19, it follows that  ½g ¼ 0, f ½g  f  ¼ 0,
+and accordingly, ðI þ SÞ½g ¼ 0, fðI  Sf Þ½g  fð1Þ g  f ¼ 0 by Plemelj’s for-
+mula. By Theorem 2.14 (iii), (iv), there exist F A C 0 ðcl I ½fÞ V HðI ½fÞ, G A
+C 0 ðCnD; CÞ V HðCncl DÞ such that limz!y GðzÞ ¼ 0, g ¼ G jqD , g  fð1Þ ¼
+FjfðqDÞ , and thus G ¼ F  f on qD. Then by Lemma 2.3 (i), (iv), (v) and by
+Proposition 4.19, we conclude that F and G are identically zero. Thus g ¼ 0.
+                                                                                    r
+The previous Theorem shows that equation Uf ½g þ g ¼ f can be uniquely
+solved in C0; a ðqD; CÞ if f is in C0; a ðqD; CÞ. We now wish to prove that the
+solution is of class Cm; a if f is of class Cm; a . To do so, we prove the fol-
+lowing technical Lemma.
+                                                                         þ
+     Lemma 4.21. Let m A Nnf0g, 0 < b < a < 1. Let f A Cm; a ðqD; CÞ V AqD .
+                                            m; b            m; a
+Then the operator Uf deﬁned in (4.17) maps C ðqD; CÞ to C ðqD; CÞ with
+continuity.
+       Proof. By well-known properties of the Cauchy integral, and by Lemma
+2.3 and Theorem 2.14, the operator Uf maps Cm; b ðqD; CÞ to itself with
+continuity. Since Cm; b ðqD; CÞ is imbedded with continuity in Cm ðqD; CÞ, it
+su‰ces to show that the operator g 7! ðUf ½gÞðmÞ ðÞ maps Cm; b ðqD; CÞ to
+C0; a ðqD; CÞ with continuity. To do so, we ﬁnd convenient to introduce the
+following notation. We set
+80                 Massimo Lanza de Cristoforis and Luca Preciso
+
+                                 ~ ½f; g 1 Sf ½g  fð1Þ   f
+                                 S                                               ð4:22Þ
+
+for all g A C0; a ðqD; CÞ. As a ﬁrst step, we show by induction that for
+h ¼ 0; . . . ; m there exists a continuous operator Vf; h of Cm; b ðqD; CÞ to
+Cmh; a ðqD; CÞ such that
+                                          "       #
+                     dh                      gðhÞ
+                   2 h Uf ½g ¼ S½g   S f; 0 h ðf 0 Þ h þ Vf; h ½g:
+                                   ðhÞ  ~                                ð4:23Þ
+                     dt                     ðf Þ
+
+Case h ¼ 0 holds with Vf; h ¼ 0. We now assume that Vf; h exists for 0 a h <
+m, and prove the existence of Vf; hþ1 . By Theorem 2.14 (v), we have
+                                         0
+                 d ~               ~ f; g ðtÞf 0 ðtÞ;
+                    fS½f; gðtÞg ¼ S                              Et A qD;
+                 dt                     f0
+
+for all g A C1; b ðqD; CÞ. Then if h ¼ 0, we can take Vf; hþ1 ¼ 0. If h b 1, then
+m b 2 and by di¤erentiating formula (4.23), we can easily see that the same
+formula (4.23) holds for h þ 1 provided that
+                        "            #               "       #
+                           gðhÞ fð2Þ        hþ1         gðhÞ
+                      ~                0
+    Vf; hþ1 ½gðÞ 1 hS f; 0 hþ2 ðÞðf ðÞÞ      hS f; 0 h ðÞðf 0 ðÞÞ h1 fð2Þ ðÞ
+                                                   ~
+                           ðf Þ                        ðf Þ
+
+                  þ ðVf; h ½gÞ 0 ðÞ:
+
+By Lemma 2.3 (ii), (iii), by Theorem 2.14 (i), by the continuity of the
+imbeddings of Cmh; b ðqD; CÞ, of Cm1; a ðqD; CÞ, and of Cm2; a ðqD; CÞ in
+Cmh1; a ðqD; CÞ, and by the continuity of Vf; h ½ from Cm; b ðqD; CÞ to
+Cmh; a ðqD; CÞ, we deduce that Vf; hþ1 ½ is continuous from Cm; b ðqD; CÞ to the
+           mðhþ1Þ; a
+space C              ðqD; CÞ. Thus we conclude that formula (4.23) holds for all
+h ¼ 0; . . . ; m, and that in particular it holds for h ¼ m. To conclude the proof
+ithsu‰cesi to show that the operator which takes g A Cm; b ðqD; CÞ to S½gðmÞ  
+~ f; gðmÞ
+S       0 m ðf Þ
+                0 m
+                      is linear and continuous from C m; b ðqD; CÞ to C 0; a ðqD; CÞ.
+     ðf Þ                                                                   
+Since Uf maps continuously C0; b ðqD; CÞ to C0; a ðqD; CÞ, then it su‰ces to
+                                                          Ð
+show that the integral operator which takes gðÞ to qD km ð ; xÞgðxÞdx, with
+                                         0                      
+                               f 0 ðxÞ   ðf ðtÞÞ m  ðf 0 ðxÞÞ m
+                km ðt; xÞ 1
+                            fðxÞ  fðtÞ        ðf 0 ðxÞÞ m
+
+maps continuously C0; b ðqD; CÞ to C0; a ðqD; CÞ. We shall exploit Lemma 4.8.
+A simple computation based on the Hölder continuity of f 0 , on assumption
+lqD ½f > 0, and on Lemma 2.2 (i), (iii) shows that km ð ; Þ satisﬁes (4.9). We
+now consider case m ¼ 1 and we show that we can apply statement (ii) of
+Lemma 4.8 with X ¼ C0; b ðqD; CÞ. Clearly,
+                       Di¤erentiability properties of some nonlinear operators                     81
+       ð                                                
+                                                        
+                                                        
+                       ðk1 ðt2 ; xÞ  k1 ðt1 ; xÞÞgðxÞdx
+        qDnLðt1 ; t2 Þ                                  
+              ð                                                           
+                             ðf 0 ðt2 Þ  f 0 ðxÞÞðfðt2 Þ  fðt1 ÞÞ       
+                                                                          
+             a                                                      gðxÞdx
+               qDnLðt1 ; t2 Þ ðfðxÞ  fðt2 ÞÞðfðxÞ  fðt1 ÞÞ              
+                                      ð                                
+                                                           gðxÞ        
+                      0              0                                 
+                 þ jf ðt2 Þ  f ðt1 Þj                               dx
+                                       qDnLðt1 ; t2 Þ ðfðxÞ  fðt1 ÞÞ 
+                                 ð
+                 kgkLy ðqD; CÞ                jf 0 : qDja jt2  xj a jfðt2 Þ  fðt1 Þj
+             a                                                                         jdxj
+                    lqD ½f 2  qDnLðt1 ; t2 Þ            jx  t2 j jx  t1 j
+                                          ð                                    
+                                                               gðxÞ            
+                      0                  a                                     
+                 þ jf : qDja jt2  t1 j                                     dx;              ð4:24Þ
+                                           qDnLðt1 ; t2 Þ ðfðxÞ  fðt1 ÞÞ 
+
+and
+   ð                                          ð                             
+                          gðxÞ                                 gðxÞ   gðt1 Þ     f 0 ðxÞ
+                                     dx ¼                       0    0                      dx
+      qDnLðt1 ; t2 Þ ðfðxÞ  fðt1 ÞÞ          qDnLðt1 ; t2 Þ   f ðxÞ f ðt1 Þ ðfðxÞ  fðt1 ÞÞ
+                                                         ð
+                                                  gðt1 Þ                     f 0 ðxÞ
+                                              þ    0                                     dx:
+                                                  f ðt1 Þ qDnLðt1 ; t2 Þ ðfðxÞ  fðt1 ÞÞ
+
+Now, it can be easily veriﬁed that 23 jx  t2 j a jx  t1 j a 2jx  t2 j for all
+                                              Ð             jt t j 1a
+t1 ; t2 A qD, and x A qDnLðt1 ; t2 Þ and that qDnLðt1 ; t2 Þ 1 2 2a jdxj is bounded
+                                                                           jxt1 j
+uniformly in t1 ; t2 A qD. Then by the Lipschitz continuity of f (see Lemma
+2.3 (i)), there exists c > 0 depending only on a and f such that the right hand
+side of inequality (4.24) is less or equal to
+        (                ð                                                 
+                                          gðxÞ    gðt1 Þ       f 0 ðxÞ       
+                                                                             
+       c kgkLy ðqD; CÞ þ                                                 dx 
+                          qDnLðt1 ; t2 Þ f 0 ðxÞ f 0 ðt1 Þ ðfðxÞ  fðt1 ÞÞ 
+                        ð                              )
+                 gðt1 Þ                 f 0 ðxÞ       
+                                                                   a
+               þ 0                                  dx  jt2  t1 j :                       ð4:25Þ
+                 f ðt1 Þ qDnLðt1 ; t2 Þ ðfðxÞ  fðt1 ÞÞ 
+                           
+
+The membership of g in C0; b ðqD; CÞ, of f 01ðÞ in C0; a ðqD; CÞ, Lemma 2.2 (i),
+                                                      Ð       jdxj
+Lemma 2.3 (i), (ii), and the ﬁniteness of supt A qD qD           1b imply that there
+                                                                           jxtj
+exists c 0 > 0 depending only on a and f such that the ﬁrst integral in
+(4.25) is bounded by c 0 kgkC 0; b ðqD;CÞ uniformly in t1 ; t2 A qD. By Lemma
+                                          
+2.2 (iii) we have jgðt1 Þ=f 0 ðt1 Þj a lqD ½f1 kgkLy ðqD; CÞ . Thus it su‰ces to show
+                   Ð                   f 0 ðxÞ
+that I ðt1 ; t2 Þ 1 qDnLðt1 ; t2 Þ ðfðxÞfðt1 ÞÞ dx is bounded for 0 < jt1  t2 j < 21 . Let
+82                 Massimo Lanza de Cristoforis and Luca Preciso
+
+
+qDnLðt1 ; t2 Þ ¼ fe iy : ya a y a yb g with t1 ¼ e iy1 , y1 < ya < yb < y1 þ 2p,
+a 1 e iya , b 1 e iyb . By a well-known computation, we have
+
+                                                 fðbÞ  fðt1 Þ
+                           expfI ðt1 ; t2 Þg ¼                 :               ð4:26Þ
+                                                 fðaÞ  fðt1 Þ
+
+ Since f A C1; a ðqD; CÞ V AqD , a simple computation based on Lemma 2.2
+                                                                       1
+(i), and on  inequality (4.18) shows that there exists d A 0; 2 ½ such that
+fðbÞfðt1 Þ   
+fðaÞfðt Þ þ 1 < 14 whenever 0 < jt1  t2 j < d. Since I ð ; Þ is continuous on
+       1
+
+B 1 fðt; xÞ A ðqDÞ 2 : t 0 xg, we have supfjI ðt1 ; t2 Þj : d < jt1  t2 j a 21 g <
+þy. Thus it su‰ces to show that supfjI ðt1 ; t2 Þj : 0 < jt1  t2 j a dg < þy.
+Since the map I is continuous on Bd 1 fðt1 ; t2 Þ A B : jt1  t2 j a dg and Bd has a
+ﬁnite number of connected components, then the set I ðBd Þ has at most a ﬁnite
+number of connected components. Now the set A 1 fw A C : jexpðwÞ þ 1j <
+41 g is a countable union of bounded disjoint connected sets. Since I ðBd ÞJ A,
+then the set I ðBd Þ must be bounded. Then by Lemma 4.8 (ii), the proof of
+case m ¼ 1 is complete. We now consider case m b 2. A simple computation
+based on the Hölder continuity of f 0 , on assumption lqD ½f > 0, and on Lemma
+2.2 (i), (iii), shows that km ð ; Þ satisﬁes the assumptions of Lemma 4.8 (iii), and
+thus the proof of case m b 2 is complete.                                           r
+By the previous statement, by the compactness of the imbedding of
+Cm; a ðqD; CÞ to Cm; b ðqD; CÞ for 0 < b < a, by the injectivity of I þ Uf inferred
+by Theorem 4.20, by the Fredholm Alternative, and by the Open Mapping
+Theorem, we immediately deduce the following.
+                                                                           þ
+    Theorem 4.27. Let m A Nnf0g, a A 0; 1½ . Let f A Cm; a ðqD; CÞ V AqD   .
+Then I þ Uf is a complex linear homeomorphism of Cm; a ðqD; CÞ to itself.
+    We now turn to the analysis of the system of equations (4.6)–(4.7), and we
+prove the following.
+
+       Theorem 4.28. Let m A Nnf0g, a A 0; 1½ . Let a1 ; a2 ; a3 be three distinct
+points of qD. Then the following statements hold.
+                                 þ
+( i ) If f A Cm; a ðqD; CÞ V AqD  , then the system of equations (4.6) and (4.7)
+        admits a unique solution z A Cm; a ðqD; CÞ, which we denote by s½f and
+        deﬁne as the generalized conformal sewing corresponding to f. The system
+        of equations (4.6) and (4.7) is equivalent to equation (4.6).
+                                 þ
+( ii ) If f A C1; a ðqD; CÞ V AqD , then there exist two uniquely determined
+        functions      G A C 0 ðCnD; CÞ V HðCncl DÞ V C0; a ðqD; CÞ   and     FA
+          0; a
+        C ðcl I ½f; CÞ V HðI ½fÞ such that limz!y GðzÞ  z ¼ 0, and F  f ¼ G jqD .
+        Moreover, G jqD ¼ s½f, and FjfðqDÞ ¼ s½f  fð1Þ . We denote such unique
+        functions F and G by F ½f and G½f, respectively.
+                    Di¤erentiability properties of some nonlinear operators            83
+
+
+(iii)                             þ
+        If f A Cm; a ðqD; CÞ V AqD , then the function s½f belongs to T      ~m; a , and
+                                                       ð1Þ    m; a
+        G½f ¼ g½s½f, and F ½f ¼ f ½s½f  ð f ½fÞ     A C ðcl I ½f; CÞ V HðI ½fÞ.
+        Furthermore, s½ f ½fð1Þ  f ¼ s½f.
+                                     þ
+(iv)    If f A Cm; a ðqD; qDÞ V AqD   , and if fðaj Þ ¼ aj for j ¼ 1; 2; 3, then
+        f ½s½f ¼ F ½f, and w½s½f ¼ f.
+     Proof. We ﬁrst prove statement (i). By Theorem 4.27, equation (4.6)
+admits a unique solution z A Cm; a ðqD; CÞ. We now show that such solution
+satisﬁes also equation (4.7). We note that by Theorem 2.14 (ii), equation (4.6)
+can be rewritten as
+                                               ð1Þ
+                 þ ½z  idqD ðtÞ ¼ 
+                                      f ½z  f        fðtÞ;       Et A qD:
+Then by Theorem 2.14 (ii), and by Proposition 4.19, the functions þ ½z  idqD 
+              ð1Þ
+and f ½z  f      vanish identically. In particular, we have
+                                               ð1Þ
+                þ ½z  idqD ðtÞ ¼ 
+                                      f ½z  f        fðtÞ;        Et A qD:      ð4:29Þ
+By Theorem 2.14 (ii), equation (4.29) coincides with equation (4.7). We now
+prove statement (ii). By adding and subtracting equation (4.6) and (4.7),
+we obtain that ðI þ SÞ½z  idqD  ¼ 0 and that fðI  Sf Þ½z  fð1Þ g  f ¼ 0 for
+z 1 s½f. Thus by Theorem 2.14 (iii), (iv), F and G as in the statement exist.
+The uniqueness of F and G and equality G jqD ¼ s½f follow by Theorem 4.5
+and by (i). We now prove statement (iii). By equality F ½f  f ¼ G½f ¼
+s½f on qD, we deduce that F ½f  f ½f  ð f ½fð1Þ  fÞ ¼ G½f on qD. Then by
+statement (ii), we have G½ f ½fð1Þ  f ¼ G½f, F ½ f ½fð1Þ  f ¼ F ½f  f ½f, and
+thus s½f ¼ s½ f ½fð1Þ  f. We are now ready to prove that s½f A T       ~m; a . Since
+                ð1Þ
+s½f ¼ s½ f ½f       f, we can assume that fðqDÞ ¼ qD. By arguing as in Lu
+[22, pp. 427, 428], we prove that F ½f and G½f are injective. Then by arguing
+as in Gakhov [6, pp. 128, 129], it follows that F ½f 0 and G½f 0 do not vanish
+up to the boundary. Then by Lemma 2.2, we have G½fjqD ¼ s½f A AqD .
+Since s½f ¼ F ½f  f and F ½f and f are orientation-preserving, we also have
+         þ
+s½f A AqD   . By Lemma 4.3 an by (ii), we conclude that s½f A T      ~m; a and G½f ¼
+g½s½f. To prove equality F ½f  f ½f ¼ f ½s½f, it su‰ces to note that both
+hand sides of such equality deﬁne homeomorphisms of cl D onto cl I ½s½f which
+are holomorphic in D and coincide on a1 ; a2 ; a3 . Finally, we note that under
+the assumptions of statement (iv), f ½f is the identity, and thus F ½f ¼ f ½s½f
+and w½s½f ¼ f by statement (iii).                                                     r
+We are now ready to introduce the following.
+     Definition 4.30. Let m A Nnf0g, a A 0; 1½ . We deﬁne the generalized
+                                                                              þ
+conformal sewing operator, to be the nonlinear operator of Cm; a ðqD; CÞ V AqD
+to itself which takes f to s½f. We deﬁne as conformal sewing operator, the
+                                           þ
+restriction of s½ to Cm; a ðqD; qDÞ V AqD .
+84                 Massimo Lanza de Cristoforis and Luca Preciso
+
+
+    We note that statement (iii) of Theorem 4.28 implies that the generalized
+conformal sewing of f can be expressed as the conformal sewing of f ½fð1Þ  f.
+By Theorem 4.28 (iv), and by the deﬁnition of s½, we have the following.
+     Theorem 4.31. Let m A Nnf0g, a A 0; 1½ . Let a1 ; a2 ; a3 be three distinct
+points of qD. Then the conformal welding operator w is a bijection of T     ~m; a onto
+                          m; a             þ
+the set Sm; a 1 ff A C ðqD; qDÞ V AqD : fðaj Þ ¼ aj ; j ¼ 1; 2; 3g. The inverse of
+the operator wjT~m; a is the restriction of the generalized conformal sewing operator
+to Sm; a .
+      The advantage of having deﬁned the generalized conformal sewing oper-
+                                             þ
+ator s is that its domain Cm; a ðqD; CÞ V AqD is open, contrary to the domain
+  m; a             þ
+C ðqD; qDÞ V AqD of the classical conformal sewing operator.
+
+
+5.   Di¤erentiability results for the generalized conformal sewing operator
+     In this section we analyze the regularity of the operator s½ and of a
+related operator, which we introduce below. We ﬁrst consider s½ by means of
+the following.
+    Theorem 5.1. Let m A Nnf0g, a A 0; 1½ . Then the generalized conformal
+                                                              þ
+sewing operator s is complex analytic from Cm; a ðqD; CÞ V AqD    ~m; a .
+                                                                to T
+      Proof. Let ~
+                 S½ ;  be the operator introduced in (4.22). Let G be the
+                                               þ
+nonlinear map of the set ðCm; a ðqD; CÞ V AqD   Þ  Cm; a ðqD; CÞ to the space
+  m; a
+C ðqD; CÞ deﬁned by
+                                           1~             1~
+          G½f; g 1 g þ Uf ½g  idqD ¼ g þ S ½idqD ; g  S ½f; g  idqD ;
+                                           2              2
+                                      þ
+for all ðf; gÞ A ðCm; a ðqD; CÞ V AqD  Þ  Cm; a ðqD; CÞ. By deﬁnition of the gen-
+eralized conformal sewing operator s and by Theorem 4.28 (i), the graph of s
+coincides with the set of zeros of G. By [18, Prop. 4.1], which can be con-
+sidered as a Schauder space version of a known result of Coifman and Meyer
+[3, § 4], the map ~S½ ; , and thus the map G½ ; , is complex analytic. We now
+deduce the complex analyticity of s by the Implicit Function Theorem (cf. e.g.,
+Deimling [5, Thm. 15.3, p. 151].) To do so, we must show that the partial
+di¤erential dg G½f; s½f of G at ðf; s½fÞ is a complex linear homeomorphism of
+                                                           þ
+Cm; a ðqD; CÞ to itself, for all f A Cm; a ðqD; CÞ V AqD   . Since G is a‰ne in the
+variable g, we have dg G½f; s½fðmÞ ¼ ðI þ Uf Þ½m, for all m A Cm; a ðqD; CÞ. Then
+by Theorem 4.27, dg G½f; s½f is a complex linear homeomorphism.                  r
+By Theorem 4.28 (ii), the function F ½fjqD can be written as s½f  fð1Þ . We
+now turn to study the dependence of F ½fjqD ¼ s½f  fð1Þ upon the shift f by
+means of the following.
+                   Di¤erentiability properties of some nonlinear operators                 85
+
+
+       Theorem 5.2. Let m A Nnf0g, a A 0; 1½ . The (nonlinear) operator t
+ deﬁned by t½f 1 s½f  fð1Þ , for all f A Cm; a ðqD; qDÞ V AqD   þ
+                                                                       , maps Cm; a ðqD; qDÞ
+      þ          m; a             þ                                  m; a; 0              þ
+ V AqD to C ðqD; CÞ V AqD , and is continuous from C                       ðqD; qDÞ V AqD to
+   m; a; 0             þ                             mþr; a; 0                  þ
+ C        ðqD; CÞ V AqD . Let r A Nnf0g, f 0 A C             ðqD; qDÞ V AqD . Then there
+                                                                            þ
+ exist an open neighborhood Uf 0 of f 0 in Cmþr; a; 0 ðqD; CÞ V AqD           and an operator
+~tf of class C r in the real sense from Uf to Cm; a; 0 ðqD; CÞ such that ~tf ½f ¼ t½f,
+   0                                         0                                      0
+ for all f A Uf 0 V Cmþr; a; 0 ðqD; qDÞ.
+
+     Proof. By Theorem 5.1, s½ is complex analytic from Cmþr; a ðqD; CÞ V
+  þ
+AqD  to itself. In particular, the function s½f is of class Cy if f A Cy ðqD; CÞ V
+  þ                                                               þ
+AqD . Thus s½ is complex analytic from Cmþr; a; 0 ðqD; CÞ V AqD   to itself. Then
+we can conclude the proof by Theorem 2.9, by Theorem 2.11, and by the
+deﬁnition of the operator t.                                                      r
+
+We note that it can be actually shown that Theorem 5.2 is optimal in the frame
+of Schauder spaces (cf. [19, Thm. 2.17].)
+
+
+                                    Acknowledgement
+
+     This paper represents an extension of a part of the work performed by
+L. Preciso in his Doctoral Dissertation under the guidance of M. Lanza de
+Cristoforis.
+
+
+                                         References
+[ 1 ] L. V. Ahlfors, Complex Analysis, An Introduction to the Theory of Analytic Functions of
+      One Complex Variable, third edition, McGraw-Hill Book Co. New York, etc., 1979.
+[ 2 ] M. S. Berger, Nonlinearity and Functional Analysis, Academic Press, New York, 1977.
+[ 3 ] R. R. Coifman and Y. Meyer, Lavrentiev’s Curves and Conformal Mappings, Institut
+      Mittag-Le¿er, Report No. 5 (1983).
+[ 4 ] G. David, Courbes corde-arc et espaces de Hardy généralisés, Ann. Inst. Fourier (Gre-
+      noble), 32 (1982), pp. 227–239.
+[ 5 ] K. Deimling, Nonlinear Functional Analysis, Springer-Verlag, Berlin, etc., 1985.
+[ 6 ] F. D. Gakhov, Boundary Value Problems, Pergamon Press, Oxford, etc., 1966.
+[ 7 ] R. Gorenﬂo, S. Vessella, Abel Integral Equations, Lecture Notes in Mathematics, 1461,
+      Springer Verlag, Berlin, etc., 1991.
+[ 8 ] W. Hackbusch, Integral Equations, theory and numerical treatment, Birkhäuser Verlag,
+      Basel, etc., 1995.
+[ 9 ] C. Haseman, Anwendungen der Theorie der Integralgleichung auf einige Randwertaufgaben
+      der Funktiontheorie, Dissertation, University of Göttingen, 1907.
+[10] D. Henry, Topics in nonlinear analysis, Trabalho de Matemática n o 192, Universidade de
+      Brası́lia, 1982.
+[11] A. Huber and R. Kühnau, Stabilität konformer Verheftung, Comment. Math. Helvetici, 69
+      (1994), pp. 311–321.
+86                    Massimo Lanza de Cristoforis and Luca Preciso
+
+
+[12] L. V. Kantorovich and G. P. Akilov, Functional analysis in normed spaces, Pergamon
+     Press, Oxford, etc., 1964.
+[13] D. A. Kveselava, Some boundary problems of the theory of functions (in Russian), Akad.
+     Nauk Gruzin. SSR. Trudy Tibliss. Mat. Inst. Razmadze, 16 (1948), pp. 39–80.
+[14] M. Lanza de Cristoforis, Properties and Pathologies of the Composition and Inversion
+     Operators in Schauder Spaces, Acc. Naz. delle Sci. detta dei XL, 15 (1991), pp. 93–109.
+[15] M. Lanza de Cristoforis, Higher order di¤erentiability properties of the composition and of
+     the inversion operator, Indag. Mathem. N.S., 5 (1994), pp. 457–482.
+[16] M. Lanza de Cristoforis, Di¤erentiability Properties of an Abstract Autonomous Com-
+     position Operator, J. London Math. Soc., 61 (2000), pp. 923–936.
+[17] M. Lanza de Cristoforis, A functional decomposition theorem for the conformal repre-
+     sentation, J. Math. Soc. Japan, 49 (1997), pp. 759–780.
+[18] M. Lanza de Cristoforis and L. Preciso, On the analyticity of the Cauchy integral in
+     Schauder spaces, Journal of Integral Equations and Applications, 11 (1999), pp. 363–391.
+[19] M. Lanza de Cristoforis and L. Preciso, Regularity Properties of a Nonlinear Operator
+     associated to the Conformal Welding, Proceedings on Analysis and Geometry, Sobolev
+     Institute Press, Novosibirsk, pp. 300–317, 2000.
+[20] M. Lanza de Cristoforis and S. V. Rogosin, Analyticity of a nonlinear operator associated
+     to the conformal representation in Schauder spaces. An integral equation approach, Math.
+     Nachr., 220 (2000), pp. 59–77.
+[21] G. S. Litvinchuk, Boundary value problems and singular integral equations with shift
+     (in Russian), Izdat. Nauka, Moscow, 1977.
+[22] J. K. Lu, Boundary Value Problems for Analytic Functions, World Scientiﬁc, Singapore,
+     etc., 1993.
+[23] V. N. Monakhov, Boundary Value Problems with Free Boundaries for Elliptic Systems of
+     Equations, Translations of Mathematical Monographs, 57, American Mathematical Society,
+     Providence, 1983.
+[24] S. Nag, Singular Cauchy Integrals and Conformal Welding on Jordan Curves, Ann. Acad.
+     Scient. Fennicae Math., 21 (1996), pp. 81–88.
+[25] J. Nečas, Les méthodes directes en théorie des équations elliptiques, Masson et C., Paris,
+     1967.
+[26] C. Pommerenke, Boundary Behaviour of Conformal Maps, Springer Verlag, Berlin, etc.,
+     1992.
+[27] L. Preciso, Perturbation Analysis of the Conformal Sewing Problem and Related Problems,
+     Doctoral Dissertation, University of Padua, 1998.
+[28] G. Prodi and A. Ambrosetti, Analisi non lineare, Editrice tecnico scientiﬁca, Pisa, 1973.
+[29] V. Rohlin and D. Fuchs, Premier cours de Topologie—chapitres géométriques, Éditions
+     Mir, Moscou, 1981.
+[30] G. M. Troianiello, Elliptic Di¤erential Equations and Obstacle Problems, Plenum Pub-
+     lishing Co., New York, 1987.
+
+
+                              Massimo Lanza de Cristoforis and Luca Preciso
+                              Dipartimento di Matematica Pura ed Applicata
+                                           Università di Padova
+                                              Via Belzoni 7
+                                           Padova 35131, Italy
+                             E-mail: mldc@math.unipd.it, preciso@math.unipd.it
+

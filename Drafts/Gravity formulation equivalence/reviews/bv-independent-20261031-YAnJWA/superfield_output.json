@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_bd9957ecafc34c58ae76a6607671bafc|fc_0beee4d74a95702a016ae523ca62b08191b7ac449ecd59a487",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nfrom hashlib import sha256\nsource_path=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/superfield_checks.py')\nsource=source_path.read_text(encoding='utf-8')\nprint('Runnable source SHA256:',sha256(source.encode()).hexdigest())\nexec(compile(source,str(source_path),'exec'))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Runnable source SHA256: 87a5db214bde502ed2915d752d3d151fc629f6bc7b094588dd1bd35e1670a742\\nexp(I) beta exact component map [0]: PASS\\nexp(I) alpha exact component map [0]: PASS\\nexp(I) beta exact component map [1]: PASS\\nexp(I) alpha exact component map [1]: PASS\\nexp(I) beta exact component map [2]: PASS\\nexp(I) alpha exact component map [2]: PASS\\nsuperfield cubic interactions give Lorentz BV signs: PASS\\nfinite map preserves all cubic interactions exactly: PASS\\nunrestricted CS superfield gives all BRST ghost signs: PASS\\nALL SUPERFIELD CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"df6a2de997b756b0028ef492640aeb4ba4e7525448550aea46aa907912705807\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3736,\n  \"transportStderr\": [],\n  \"codeSha256\": \"dd39cbd05262c89a9e0a4d244865b3eeaf3709cb8810a535153858bbd9a05897\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Runnable source SHA256: 87a5db214bde502ed2915d752d3d151fc629f6bc7b094588dd1bd35e1670a742\nexp(I) beta exact component map [0]: PASS\nexp(I) alpha exact component map [0]: PASS\nexp(I) beta exact component map [1]: PASS\nexp(I) alpha exact component map [1]: PASS\nexp(I) beta exact component map [2]: PASS\nexp(I) alpha exact component map [2]: PASS\nsuperfield cubic interactions give Lorentz BV signs: PASS\nfinite map preserves all cubic interactions exactly: PASS\nunrestricted CS superfield gives all BRST ghost signs: PASS\nALL SUPERFIELD CHECKS PASSED; SageMath 10.9\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "df6a2de997b756b0028ef492640aeb4ba4e7525448550aea46aa907912705807",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3736,
+        "transportStderr": [],
+        "codeSha256": "dd39cbd05262c89a9e0a4d244865b3eeaf3709cb8810a535153858bbd9a05897"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Runnable source SHA256: 87a5db214bde502ed2915d752d3d151fc629f6bc7b094588dd1bd35e1670a742\\nexp(I) beta exact component map [0]: PASS\\nexp(I) alpha exact component map [0]: PASS\\nexp(I) beta exact component map [1]: PASS\\nexp(I) alpha exact component map [1]: PASS\\nexp(I) beta exact component map [2]: PASS\\nexp(I) alpha exact component map [2]: PASS\\nsuperfield cubic interactions give Lorentz BV signs: PASS\\nfinite map preserves all cubic interactions exactly: PASS\\nunrestricted CS superfield gives all BRST ghost signs: PASS\\nALL SUPERFIELD CHECKS PASSED; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"df6a2de997b756b0028ef492640aeb4ba4e7525448550aea46aa907912705807\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3736,\n  \"transportStderr\": [],\n  \"codeSha256\": \"dd39cbd05262c89a9e0a4d244865b3eeaf3709cb8810a535153858bbd9a05897\"\n}"
+      }
+    ]
+  }
+}

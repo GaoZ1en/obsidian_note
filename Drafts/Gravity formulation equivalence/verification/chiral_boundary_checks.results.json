@@ -1,0 +1,40 @@
+{
+	"KernelVersion":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"Checks":{
+		"coframe orientation and determinant":true,
+		"metric radial block":true,
+		"induced metric":true,
+		"induced determinant":true,
+		"extrinsic trace":true,
+		"transgression wall scalar":true,
+		"direct omega-e transgression agrees":true,
+		"GHY-counterterm wall scalar":true,
+		"finite-cutoff action defect":true,
+		"metric wall source":true,
+		"source is variation of negative defect":true,
+		"corner alpha pullback zero":true,
+		"wall defect limit":true,
+		"wall source limit":true,
+		"global vacuum defect":true,
+		"one vanishing chirality has zero defect":true,
+		"generic chiral wall variation":true,
+		"chiral covariant boundary density vanishes on slice":true,
+		"generic canonical CS decomposition including total derivative":true
+	},
+	"AllPassed":true,
+	"NonzeroResiduals":[],
+	"Expressions":{
+		"wallDefectTau":"(-4*a$8554*b$8554*ell$8554*gamma$8554)\/r$8554^2",
+		"metricWallSourceTau":"(4*(b$8554*da$8554 + a$8554*db$8554)*ell$8554*gamma$8554)\/r$8554^2",
+		"alphaCoordinatesTphiR":"{0, 0, ((-(b$8554*da$8554) + a$8554*db$8554)*ell$8554*gamma$8554)\/(-(a$8554*b$8554*r$8554) + r$8554^5)}",
+		"covariantChiralBoundaryTau":"(k$8554*(2*ta$8554[1]*ta$8554[4] - 2*ta$8554[4]^2 + ta$8554[3]*ta$8554[5] + ta$8554[2]*ta$8554[6] - 2*ta$8554[5]*ta$8554[6] - 2*tb$8554[1]*tb$8554[4] - 2*tb$8554[4]^2 - tb$8554[3]*tb$8554[5] - tb$8554[2]*tb$8554[6] - 2*tb$8554[5]*tb$8554[6]))\/(4*Pi)"
+	},
+	"Assumptions":[
+		"ell>0, r>0, r^4>a b",
+		"tau=-dt wedge dphi",
+		"k=4 Pi gamma ell",
+		"fixed embedding and FG adapted-frame variations",
+		"a and b and their variations arbitrary finite real values at the wall point"
+	],
+	"Messages":[]
+}

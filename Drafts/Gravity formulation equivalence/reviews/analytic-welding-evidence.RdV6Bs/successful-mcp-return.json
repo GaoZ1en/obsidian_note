@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_c5d0bb6e62f64cfe879f0a314fd1f535|fc_0427b195de91fb23016ae4f4c4aa8c819198dedf335339a153",
+  "sessionId": "bd193dbf-2e4e-41b5-ae52-acfa5f4507b6",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/checks.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/checks.wl\"]\n```\n\nOutput:\n<|checks -> <|basis bracket residual -> 0, Schwarzian ODE residual -> 0, positive chirality residual -> 0, PSL metric recurrence residual -> 0, Chern e1 equivariance residual -> 0, explicit cubic Schwarzian -> (-6*a*(-1 + 6*a*z^2))/(1 + 3*a*z^2)^2, beta cutoff representation finite tests -> True|>, messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/checks.wl\"]\n```\n\nOutput:\n<|checks -> <|basis bracket residual -> 0, Schwarzian ODE residual -> 0, positive chirality residual -> 0, PSL metric recurrence residual -> 0, Chern e1 equivariance residual -> 0, explicit cubic Schwarzian -> (-6*a*(-1 + 6*a*z^2))/(1 + 3*a*z^2)^2, beta cutoff representation finite tests -> True|>, messages -> {}|>"
+      }
+    ]
+  }
+}

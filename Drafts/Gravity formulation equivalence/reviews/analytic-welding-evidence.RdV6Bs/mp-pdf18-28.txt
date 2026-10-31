@@ -1,0 +1,756 @@
+The separating case is computed analogously, also resulting in (Σ ∗ϑ ϕ)∗ = Σ∗ ϑ◦J
+                                                                               ∗ (ϕ∗ ◦ J).
+    An isomorphism F : (Σ1 , ζ1 , . . . , ζb ) ! (Σ2 , ξ1 , . . . , ξb ) is also an isomorphism on the
+double (it is the same diffeomorphism, which is still complex-analytic since both complex
+structures are complex conjugated). Moreover, it preserves the new boundary parametriza-
+tions, F ◦ ζj ◦ J = ξj ◦ J, proving the well-definedness of complex conjugation over Segal
+moduli space (Item 3). Since the complex conjugate and sewing operation both preserve
+isomorphism classes, the doubling map is also well-defined (Item 4). Now, consider the
+sewing operation and the actions of Def C (S1 ), which generate the Frölicher structure on
+the Segal moduli spaces (see [MP26, Section 4.4] for details). In particular, the proven
+identities in Items 1 and 2 show that an initial Fr-smooth curve stays Fr-smooth after
+conjugation or doubling of the surface, proving the Fr-smoothness in Items 3 and 4.
+
+   Given a compact hyperbolic Riemann surface Σ without boundary, it is uniformized
+by a covering map πΣ : {z ∈ C | Im z > 0} ! Σ. The Fuchsian projective structure is the
+projective structure induced by the trivial projective structure on {z ∈ C | Im z > 0}. In the
+case of the sphere or torus, it is the projective structure induced from the universal covering
+by Ĉ or C. The Fuchsian projective structure on a compact connected Riemann surface
+with enumerated and analytically parametrized boundary components is the restriction of
+the that on the double Σ ∞ Σ∗ .
+    If F : Σ1 ! Σ2 is an isomorphism of Riemann surfaces with enumerated and analytically
+parametrized boundary components, then πΣ2 ∞ Σ∗2 and (F ∪ F ∗ ) ◦ πΣ1 ∞ Σ∗1 are related by
+a Möbius transformation, so the Fuchsian projective structures on Σ1 and Σ2 are related
+by pullback, making them consistent over equivalence classes in Mg,b . Since isomorphisms
+also preserve the boundary parametrizations, the following definition makes sense in Mg,b .
+
+Definition 2.7. A compact connected Riemann surface with enumerated and analytically
+parametrized boundary components is Fuchsian projective if it is projective with respect
+to the Fuchsian projective structure. We denote the subset of Fuchsian projective surfaces
+by Mfg,b ⊂ Mg,b .
+
+Proposition 2.8.
+ 1. Hyperbolic surfaces with analytic boundary parametrizations are Fuchsian projective,
+    and thus, we have a sequence of inclusions
+
+                                   Mhyp    f      proj
+                                    g,b ⊂ Mg,b ⊂ Mg,b ⊂ Mg,b .                                  (2.9)
+
+ 2. Any compact connected Riemann surface with enumerated and analytically parametrized
+    boundary components is of the form Σ ∗1 ϕ1 · · · ∗b ϕb , where Σ is a Fuchsian projective
+    surface and ϕ1 , . . . , ϕb ∈ Diff an
+                                       + (S ) are diffeomorphisms.
+                                           1
+
+ 3. Let Σ ∈ Mfg,b with b ≥ 1, and ϕ ∈ Def C (S1 ) and 1 ≤ j ≤ b be such that Σ ∗j ϕ exists.
+    Then, we have Σ ∗j ϕ ∈ Mfg,b if and only if ϕ is a Möbius transformation.
+
+Proof. The uniform metric with geodesic boundary components may be obtained by re-
+stricting the uniform metric on the double obtained from uniformization. Hence, ana-
+lytic continuations of negatively oriented unit speed boundary parametrizations are indeed
+charts in the Fuchsian projective structure, proving the first inclusion in (2.9). The other
+
+                                                 18
+inclusions in (2.9) follow directly from the definitions. For Item 2, the Fuchsian projective
+surface Σ is found by taking negatively oriented unit speed boundary parametrizations
+in a constant curvature metric with geodesic boundary. For Item 3, note that Fuchsian
+projective structure is independent of the boundary parametrizations, so any boundary
+reparametrization preserving the Fuchsian structure must be a Möbius transformation.
+
+
+3        R+ -extensions of Segal moduli spaces
+This section is devoted to the setup for our first main result, Theorem 1.1 (whose proof
+will be completed in Section 5). We first show how a Fr-smooth R+ -extension (Defini-
+tion 3.1) induces a central extension the complex deformations by the multiplicative group
+R+ (Section 3.1), and how this central extension acts on the R+ -extension (Section 3.2).
+Moreover, we spell out a number of cocycle identities (Section 3.3), and discuss the notion
+of locality (Section 3.4). Then, we define the central charge of a Fr-smooth R+ -extension
+using the cohomology class of the Lie algebra cocycle of the central extension (Section 3.5).
+Finally, we define natural, yet nontrivial, modular and crossing invariance properties of
+Fr-smooth local R+ -extension (Section 3.6). We show that these properties hold for the
+real determinant line bundle (Section 3.7), and later, in Section 5.3, we show that they
+actually hold for any local Fr-smooth R+ -extension (see Proposition 5.6).
+   Let us begin by defining R+ -extensions. We use the operations on Segal moduli spaces
+from Section 2. Additionally, we let · j↔k : Mg,b ! Mg,b denote the operation of swapping
+the labels j and k of boundary components.
+
+Definition 3.1. A Fr-smooth R+ -extension E of the Segal moduli spaces consists of Fr-
+smooth principal R+ -bundles
+
+                                 E(Mg,b ) −! Mg,b ,             g, b ≥ 0,                          (3.1)
+
+and Fr-smooth morphisms of principal R+ -bundles called sewing isomorphisms 12 ,
+                      E
+                   · j ∞k    · : E(Mg1 ,b2 ) ⊠ E(Mg2 ,b2 ) ! E(Mg1 +g2 ,b1 +b2 −2 ),               (3.2)
+                      E
+                      ∞j,k · : E(Mg,b ) ! E(Mg+1,b−2 ),                                            (3.3)
+                       ·     E : E(Mg,b ) ! E(Mg,b ),                                              (3.4)
+                           j ↔k
+
+They cover the respective operations · j ∞k · , ∞j,k · , and · j↔k preserving associativity13
+                                    E     E                 E            E
+                              · j ∞k ( · l ∞m · ) = ( · j ∞k · ) l ∞m · ,                          (3.5)
+                                E         E             E            E
+                               ∞j,k ( · l ∞m · ) = ( ∞j,k · ) l ∞m · ,                             (3.6)
+                                    E    E              E        E
+                                 ∞j,k ( ∞l,m · ) = ∞l,m ( ∞j,k · ),                                (3.7)
+
+    12
+     Since R+ is abelian, the fiber-wise tensor product, denoted by ⊠, is again a principal G-bundle over
+Mg1 ,b1 × Mg2 ,b2 . Morphisms of principal R+ -bundles are isomorphisms on fibers.
+  13
+     We use the convention that we assign new labels to boundary components only after all sewing
+operations have been performed.
+
+
+                                                   19
+and symmetry
+                      E        E            E        E
+           (·     E l ∞k · ) j ∞m · = ( · j ∞k · ) l ∞m · ,                                  (3.8)
+                j ↔l
+                                 E             E
+                           α j ∞k β = β k ∞j α,         α ∈ E(Mg1 ,b2 ), β ∈ E(Mg2 ,b2 ),    (3.9)
+                             E             E
+                            ∞j,k α = ∞k,j α,            α ∈ E(Mg,b ).                       (3.10)
+
+
+
+Remark 3.2. Note that the principal R+ -bundles are always trivial bundles. What is
+of interest is not the bundle structure, but the algebraic structure given by the sewing
+isomorphisms. Equivalently, R+ -extensions may be defined as real oriented line bundles.
+Our main example, the real determinant line bundle, is orientable and nontrivial as an
+R+ -extension (or a real one-dimensional modular functor) [MP25, Corollary 1.5].
+
+Remark 3.3. The trivial R+ -extension comprises the trivial bundles E(Mg,b ) = R+ ×
+Mg,b endowed with the trivial sewing operations (1, Σ1 ) j ∞E   k (1, Σ2 ) = (1, Σ1 j ∞k Σ2 ) and
+∞E j,k (1, Σ) = (1, ∞ j,k Σ). Alternatively, triviality is characterized   by the existence of a
+trivialization such that all cocycles vanish (see Section 3.3).
+
+
+3.1   Central extensions of complex deformations
+
+To construct the central extensions, we use Segal’s idea [Seg88, Seg89, Seg04], also used by
+Huang in [Hua97, Appendix D] in genus 0, and by Radnell in genus 1 [Rad03, Chapter 6.3].
+There, central extensions of the diffeomorphism group Diff an
+                                                            + (S ) are constructed for com-
+                                                                 1
+
+plex determinant line bundles (or complex one-dimensional modular functors), relative to
+the standard annulus A1 . In [MP25], we carried out this construction concretely for the
+real determinant line bundle and complex deformations, relative to the standard annulus
+A1 . In the following, we will show that the central extension can be defined relative to
+arbitrary surfaces, and for a general Fr-smooth R+ -extension E.
+    Conceptually, a complex deformation ϕ ∈ Def C (S1 ) encodes the difference between a
+surface S ∈ Mg,b and a deformed surface S ∗j ϕ. The fiber E(S) is a R+ -torsor, that is, a
+set on which R+ acts freely and transitively. Since R+ is abelian, there are natural notions
+of tensor products T1 ⊗ T2 and duals T ∨ of R+ -torsors T , with the evaluation map
+
+                        ev : T ⊗ T ∨ −! R+ ,         α ⊗ α∨ 7−! α∨ (α) = 1.                 (3.11)
+
+For fibers of E, given that S ∗j ϕ exists, we define
+                                                                ∨
+                                     ES,j (ϕ) = E(S ∗j ϕ) ⊗ E(S)      .                     (3.12)
+
+Tensoring with the dual of E(S) is a way of “dividing out” the original surface S after the
+deformation by ϕ, retaining only the structure of E on the difference between the surfaces
+S ∗j ϕ and S. In fact, the R+ -torsors ES,j (ϕ) do not actually depend on S and j, in the sense
+that we can consistently identify them by taking a (co-)limit in the category of R+ -torsors:
+
+                                 E(ϕ) = lim ES,j (ϕ) = lim ES,j (ϕ).                        (3.13)
+                                        −!               −
+
+                                                   20
+The category of R+ -torsors forms a connected groupoid, meaning that all morphisms are
+isomorphisms and any two objects are isomorphic (in many ways). For such a category,
+limits and colimits of connected diagrams exist and agree if they are related by inverting
+the isomorphisms. To elaborate this, we define the following diagrams for (3.13):
+
+   • The vertices are ES,j (ϕ) indexed by all surfaces S ∈ Mg,b , for g ≥ 0, b ≥ 1, with at
+     least one boundary component and 1 ≤ j ≤ b such that S ∗j ϕ exists.
+
+   • For the limit in (3.13), there is an edge from ES1 ,j (ϕ) to ES2 ,k (ϕ) if and only if
+     there exists a boundary component l ̸= j of S1 and a third surface A with boundary
+     component m, such that S2 = (S1 l ∞m A)j↔k . The edges are given by isomorphisms
+
+                                          ISS12 ,j
+                                                ,k,ϕ : ES1 ,j (ϕ) −! ES2 ,k (ϕ),                                  (3.14)
+
+      yet to be defined, such that for a loop and two consecutive edges, we respectively have
+
+                               ,j,ϕ = 1ES1 ,j (ϕ)
+                         ISS11 ,j                                    ISS23 ,k      S1 ,j      S1 ,j
+                                                      and                  ,l,ϕ ◦ IS2 ,k,ϕ = IS3 ,l,ϕ .           (3.15)
+
+                                                                                                                   −1
+   • For the colimit in (3.13), we invert the edges for the limit, that is, ISS21 ,k      S1 ,j
+                                                                                  ,l,ϕ = IS2 ,k,ϕ                         .
+
+These diagrams are indeed connected, since any two vertices have a common neighbor14 .
+The isomorphisms (3.14) are defined in terms of the sewing isomorphisms of E associated
+to the relation S2 = (S1 l ∞m A)j↔k as follows15 :
+
+                                      E                         E            ∨                E(A) −1
+                                                                                                
+                ISS12 ,j
+                      ,k,ϕ =                                                                                      (3.16)
+                                              
+                                   · l ∞m ·         E ⊗    · l ∞m ·             E         ◦ ev2,4         .
+                                                  j ↔k                        j ↔k
+
+In words, this isomorphism takes an element α ⊗ β ∨ ∈ ES1 ,j (ϕ) and tensors it with any
+δ ∈ E(A) and the dual element δ ∨ ∈ E(A)∨ to obtain α ⊗ δ ⊗ β ∨ ⊗ δ ∨ . Then, the sewing
+isomorphisms of E are applied to sew α to δ, and β ∨ to δ ∨ . (The latter is the uniquely
+defined sewing isomorphism induced on the dual of E.) This results in
+                                                      E                           E
+                         ISS12 ,k         ∨                             ∨
+                               ,l,ϕ (α ⊗ β ) = (α l ∞m δ) E ⊗ (β l ∞m δ) E ,                                      (3.17)
+                                                               j ↔k                         j ↔k
+
+which is independent of the choice of δ ∈ E(A). The identity (3.15) for two consecutive
+edges follows from associativity of the sewing isomorphisms of E. Note that the (co-)limit
+E(ϕ) gives us isomorphisms (3.14) satisfying (3.15), also between surfaces not connected
+by an edge, defined by composing isomorphisms to and from the limiting object.
+   To define the central extension for Def C (S1 ), we combine the R+ -torsors E(ϕ) defined
+by Equation (3.13) into the fibers of a principal R+ -bundle over Def C (S1 ),
+
+                                     E(Def C (S1 )) =                        E(ϕ).                                (3.18)
+                                                               G
+
+                                                           ϕ∈Def C   (S1 )
+
+
+   14
+      For instance, a standard annulus Aτ , which for sufficiently small τ > 0 embeds into any surface by
+aligning it at a boundary component through analytic continuation of the boundary parametrization.
+         E(A) −1
+   15
+             
+       ev2,4      is the inverse of the evaluation map (3.11) applied to the 2nd and 4th tensor components.
+
+
+                                                          21
+                                                        ∨
+Trivializations ZD,1 (ϕ) = Z(D ∗1 ϕ) ⊗ Z(D) relative to a Fr-smooth trivialization Z
+of E(M0,1 ) generate a Frölicher structure on E(Def C (S1 )). These trivializations are global
+(by Item 1 of Lemma 2.3). More generally, consider trivializations of the form
+                                                      ∨
+                     ZS,j (ϕ) = Z(S ∗j ϕ) ⊗ Z(S)            ,      S ∈ Mg,b , 1 ≤ j ≤ b.              (3.19)
+
+These trivializations are local, because they only make sense where S ∗j ϕ is defined.
+    Finally, we turn the principal R+ -bundle E(Def C (S1 )) into a central extension of by R+
+in the following manner (see also [MP25, Section 3.3])). The composition law is a bundle
+map covering the composition law of Def C (S1 ). For composable pairs ϕ, ψ ∈ Def C (S1 ), the
+fiber-wise multiplication isomorphism
+                                     E
+                                   · ∗ · : E(ϕ) ⊗ E(ψ) −! E(ϕ ◦ ψ)                                    (3.20)
+
+is an isomorphism of (co-)limits (3.13). It is fully determined by representing it over a
+single triple of vertices in the corresponding diagrams in the following way. Let S be a
+surface with boundary component j such that S ∗j ϕ, and S ∗j ψ, and S ∗j (ϕ ◦ ψ) exist, and
+define mϕ,ψ,S,j : ES,j (ϕ) ⊗ ES,j (ψ) ! ES,j (ϕ ◦ ψ) through the composition16
+
+                                                                ◦ (1 ⊗ IS,j
+                                                     E(S ∗ ϕ)
+                              mϕ,ψ,S,j = flip ◦ ev1,4 j                 S ∗ ϕ,j,ψ ),                  (3.21)
+                                                                           j
+
+which depends on the sewing isomorphisms of E through (3.16). Let us spell this out for
+elements α ⊗ β ∨ ∈ ES,j (ϕ) and γ ⊗ β ∨ ∈ ES,j (ψ), where the respective second factors may
+be chosen to agree without loss of generality. The first step is to change the vertex of the
+second element by finding the unique δ ∈ E(S ∗j (ϕ ◦ ψ)) matching α∨ such that
+
+                                         IS,j             ∨         ∨
+                                          S ∗ ϕ,j,ψ (γ ⊗ β ) = δ ⊗ α .                                (3.22)
+                                           j
+
+Then, the evaluation and flip of α ⊗ β ∨ ⊗ δ ⊗ α∨ results in δ ⊗ β ∨ . This defines the
+composition law (multiplication isomorphism) of Equation (3.20) as
+                              E
+                    (α ⊗ β ∨ ) ∗ (δ ⊗ α∨ ) = mϕ,ψ,S,j (α ⊗ β ∨ ⊗ γ ⊗ β ∨ ) = δ ⊗ β ∨ ,                (3.23)
+
+where it is convenient to start with α ⊗ β ∨ ∈ ES,j (ϕ) and δ ⊗ β ∨ ∈ ES ∗ ϕ,j (ψ).
+                                                                                          j
+
+Lemma 3.4.
+ 1. The multiplication isomorphism (3.21) is canonical in the sense that
+                                                                                         
+                           ISS12 ,j                                  S1 ,j      S1 ,j
+                                 ,k,ϕ◦ψ ◦ mϕ,ψ,S1 ,j = mϕ,ψ,S2 ,k ◦ IS2 ,k,ϕ ⊗ IS2 ,k,ψ               (3.24)
+
+       for common edges from (S1 , j) to (S2 , k) for ϕ, ψ, and ϕ ◦ ψ.
+                                                                               E   E          E   E
+ 2. The composition law is associative in the sense that ( · ∗ · ) ∗ · = · ∗ ( · ∗ · ).
+ 3. The composition law is Fr-smooth.
+
+
+
+  16
+       Here flip : v ⊗ w 7! w ⊗ v denotes the isomorphism that exchanges the tensor components.
+
+
+                                                      22
+Proof. Let S2 = (S1 l ∞m A)j↔k . We first consider the left-hand side of (3.24). Starting
+with α ⊗ β ∨ ∈ ES1 ,j (ϕ) and γ ⊗ β ∨ ∈ ES1 ,j (ψ) and following Equation (3.23), the mul-
+tiplication isomorphism maps the tensor product of these elements to δ ⊗ β ∨ , where δ is
+determined by (3.22). Taking any µ ∈ E(A), we apply Equation (3.17) to find
+                                                                E                            E
+      (ISS12 ,j                        ∨       ∨                             ∨
+             ,k,ϕψ ◦ mϕ,ψ,S1 ,j )(α ⊗ β ⊗ γ ⊗ β ) = (δ l ∞m µ) E ⊗ (β l ∞m µ) E .                       (3.25)
+                                                                         j ↔k                    j ↔k
+
+For the right-hand side of (3.24), we can factor through ES1 ∗ ϕ,j (ψ), where the defining
+                                                             j
+relation (3.22) for δ applies. We thus obtain
+                                                                                   
+                        flip ◦ ev1,4 ◦ ISS12 ,j      S2 ,k         S1 ,j
+                                             ,k,ϕ ⊗ IS2 ∗ ϕ,k,ψ ◦ IS2 ,k,ψ               .              (3.26)
+                                                    |       k       {z              }
+                                                   = ISS12 ∗∗j ϕ,k,ψ
+                                                               ϕ,j
+                                                                     ◦ ISS11 ,j∗ ϕ,j,ψ
+                                                            k                   j
+
+
+Before the evaluation and flip, α ⊗ β ∨ ⊗ γ ⊗ β ∨ is mapped to
+                 E                  E                       E                            E
+             (α l ∞m µ) E ⊗ (β l ∞m µ)∨E ⊗ (δ l ∞m µ) E ⊗ (α l ∞m µ)∨E .                                (3.27)
+                        j ↔k                j ↔k                         j ↔k                    j ↔k
+
+After applying the final evaluation and flip, we find that the right-hand side of (3.24) is
+equal to left-hand side, by Equation (3.25). Associativity follows by arguments similar
+to the proof of [MP25, Theorem 3.13] (which readily generalize to the present setting).
+Lastly, Fr-smoothness follows from the Fr-smoothness of the sewing isomorphisms of E,
+since other than those, the composition law is given by (Fr-smooth) linear operations.
+
+Theorem 3.5. The following sequence is exact:
+
+                 {1} −! R+ ,−! E(Def C (S1 )) −↠ Def C (S1 ) −! {1},                                    (3.28)
+
+where the second map is the inverse of ev : E(1) ! R+ and the third map is the projection of
+the bundle (3.18). It defines a central extension in the sense that, in addition to exactness,
+the maps are Fr-smooth and R+ maps into the center of E(Def C (S1 )).
+
+Proof. The inverse of the evaluation map is ev−1 (λ) = λ(γ ⊗ γ ∨ ) ∈ ES,j (1), represented
+by an arbitrary γ ∈ E(S) for some choice of surface S and boundary component j. The
+composition of two such elements λ(γ ⊗ γ ∨ ) and µ(γ ⊗ γ ∨ ) in E(1), for λ, µ ∈ R+ , is
+m1,1,S,j λ(γ ⊗ γ ∨ ) ⊗ µ(γ ⊗ γ ∨ ) = (λ µ)(γ ⊗ γ ∨ ), since the isomorphism in Equation (3.22)
+                                  
+
+is the identity in this case. Note that this agrees with the multiplication in R+ . The kernel
+of the projection E(Def C (S1 )) ↠ Def C (S1 ) is the fiber E(1) over 1 ∈ Def C (S1 ), which is
+clearly the image of this map, showing that the sequence in (3.28) is indeed exact.
+    The involved maps are clearly Fr-smooth. Lastly, let α ⊗ β ∨ ∈ ES,j (ϕ) be an element
+in the fiber of ϕ ∈ Def C (S1 ) represented using a surface and boundary component such
+that S ∗j ϕ and S ∗j ϕ−1 exist. We represent any element of E(1) by λ(α ⊗ α∨ ) ∈ ES ∗ ϕ,j (1),
+                                                                                      1
+and equivalently by λ(β ⊗ β ∨ ) ∈ ES ∗ ϕ−1 ,j (1), where λ ∈ R+ . By Equation (3.23), we have
+                                        j
+
+                     ∨ E                                                            E
+              (α ⊗ β ) ∗ λ(α ⊗ α ) = λ(α ⊗ β ∨ ) = λ(β ⊗ β ∨ ) ∗ (α ⊗ β ∨ ).
+                                    ∨ 
+                                                                                                        (3.29)
+
+Hence, the image of the second map in (3.28) is central in E(Def C (S1 )).
+
+
+                                                   23
+Remark 3.6. The inverse of an element α ⊗ β ∨ ∈ ES,j (ϕ) = E(S ∗j ϕ) ⊗ E(S) with respect
+     E
+to · ∗ · can conveniently be represented by
+                                                                  ∨                        ∨
+                (α ⊗ β ∨ )−1 = β ⊗ α∨ ∈ ES ∗ ϕ,j (ϕ−1 )                 = E(S) ⊗ E(S ∗j ϕ)         .   (3.30)
+                                                   j
+
+Indeed, then we have already found the right-hand side of Equation (3.22) such that
+                                                        E(S ∗ ϕ)
+      mϕ,ϕ−1 ,S,j (α ⊗ β ∨ ⊗ β ⊗ α∨ ) = flip ◦ ev1,4 j             (α ⊗ β ∨ ⊗ β ⊗ α∨ ) = β ⊗ β ∨ .     (3.31)
+
+
+
+3.2    Action of central extensions on R+ -extensions
+
+Consider an element γ ∈ E(Σ) in a fiber over any surface Σ ∈ Mg,b . Fix a boundary
+component j and ϕ ∈ Def C (S1 ) such that the deformed surface Σ ∗j ϕ exists. Any element
+of E(ϕ) may be represented by α ⊗ γ ∨ ∈ EΣ,j (ϕ). Conceptually, we can read the formula
+α⊗γ ∨ as “replace γ by α” (this is what ϕ does geometrically when deforming the surface Σ
+in (3.12)). Indeed, this defines actions of the central extension E(Def C (S1 )) on the principal
+R+ -bundles E(Mg,b ) covering the actions of Def C (S1 ) on Mg,b . The latter is partially
+defined on a set denoted Ug,b,j = (Σ, ϕ) ∈ Mg,b × Def C (S1 ) Σ ∗j ϕ exists .
+                                    
+
+Proposition 3.7. There exist Fr-smooth bundle morphisms
+                               E
+                              · ∗j · : E(Ug,b,j ) −! E(Mg,b ),
+                                                                          1 ≤ j ≤ b,                   (3.32)
+                                   (γ, α ⊗ γ ∨ ) 7−! α,
+such that the following compatibilities with the sewing isomorphisms of E hold:
+        E      E          E    E
+ 1. ( · ∗j · ) ∗j · = · ∗j ( · ∗j · ),
+                    E                   E                    E          E
+ 2. ( · j ∞E k · ) ∗l · = · j ∞k ( · ∗l · ), or ( · j ∞k · ) ∗l · = ( · ∗l · ) j ∞k · , depending on which
+                                  E                    E                          E
+
+    of the surfaces has the boundary component l,
+        E      E          E      E
+ 3. ( · ∗j · ) ∗k · = ( · ∗k · ) ∗j · ,
+                  E                   E
+ 4. ( ∞E  j,k · ) ∗l · = ∞j,k ( · ∗l · ), and
+                             E
+
+ 5. there exists a unique Fr-smooth involution tE : E(InvC (S1 )) ! E(InvC (S1 )), which is
+    a bundle morphism covering t(ϕ) = J ◦ ϕ−1 ◦ J (defined in Equation (2.6)) such that
+               E      E              E      E                  E          E       E       E
+            ( · ∗j · ) j ∞k · = · j ∞k ( · ∗k tE · ),         ∞j,k ( · ∗j · ) = ∞j,k ( · ∗k tE · ).    (3.33)
+
+
+
+    Note that these properties are rather elementary, covering the various compatibility
+relations of the actions of Def C (S1 ) and the sewing operations. In particular, Item 5
+covers the relation in Equation (2.7) of acting by a complex deformation at the seam of a
+sewing operation.
+
+Proof. Let Z denote a trivialization of E. Consider the corresponding trivialization (3.19)
+of E(Def C (S1 )) relative to a fixed surface Σ and boundary component j. The action (3.7)
+is defined by changing the representative from Σ and j to match the surface whose fiber is
+acted on. As the change of representative uses the isomorphisms (3.14), which are defined
+                                                                 E
+using the Fr-smooth sewing operation of E, we conclude that · ∗j · is smooth.
+
+                                                        24
+1. In Item 1, two elements of E(Def C (S1 )) act consecutively at the same boundary compo-
+   nent. We represent the arbitrary elements as α⊗γ ∨ ∈ EΣ,j (ϕ) and β ⊗α∨ ∈ EΣ ∗ ϕ,j (ψ),
+                                                                                    j
+   using the same γ ∈ E(Σ) without loss of generality. On the one hand, we have
+                                   E              E                       E
+                                   γ ∗j (α ⊗ γ ∨ ) ∗j (β ⊗ α∨ ) = α ∗j (β ⊗ α∨ ) = β,                               (3.34)
+
+   and on the other hand, by Equation (3.23), we have
+                                   E                   E                    E
+                                                                   
+                                  γ ∗j (α ⊗ γ ∨ ) ∗ (β ⊗ α∨ ) = γ ∗j (β ⊗ γ ∨ ) = β.                                (3.35)
+
+2. For the first case, with the underlying relation (Σ1 j ∞k Σ2 ) ∗l ϕ = Σ1 j ∞k (Σ2 ∗l ϕ), take
+   γ ∈ E(Σ2 ) and µ ∈ E(Σ1 ). Then, the element in E(ϕ) may be represented by either
+   α ⊗ γ ∨ ∈ EΣ2 ,l (ϕ) or (µ j ∞E
+                                 k α) ⊗ (µ j ∞k γ) ∈ EΣ1 j ∞k Σ2 ,l (ϕ) for some α ∈ E(Σ2 ∗
+                                              E   ∨
+                                                                                            j
+                                                                                              ϕ),
+   where the latter representative is independent of µ. The asserted relation follows:
+                                                                        E
+            E
+                   E                         E                E
+                                                                                   E               E
+                                                                                                                
+      µ j ∞k γ ∗ (α ⊗ γ ∨ ) = µ j ∞k α = (µ j ∞k γ) ∗j (µ j ∞k α) ⊗ (µ j ∞k γ)∨ .                                   (3.36)
+
+   The second case of Item 2 follows analogously.
+3. Item 3 follows from Item 2 by cutting the surface in two, so that the boundary com-
+   ponents j and k end up in distinct parts, and the underlying equation becomes
+                                                                                                     
+           (Σ1 l ∞m Σ2 ) ∗j ϕ ∗k ψ = (Σ1 ∗j ϕ) l ∞m (Σ2 ∗k ψ) = (Σ1 l ∞m Σ2 ) ∗k ψ ∗j ϕ.                            (3.37)
+
+4. The self-sewn surface in Item 4 may similarly be cut so that the self-sewing and action
+   happen in different connected components. The asserted equation then follows from
+   Item 2 (using also the compatibility of sewing and self-sewing from Definition 3.1).
+5. The asserted identities (3.33) cover the relations (Σ1 ∗j ϕ) j ∞k Σ2 = Σ1 j ∞k (Σ2 ∗k t(ϕ))
+   and ∞j,k (Σ ∗j ϕ) = ∞j,k (Σ ∗k t(ϕ)). Concretely, the involution tE maps representative
+   α ⊗ γ ∨ ∈ EΣ1 ,j (ϕ) to a representative β ⊗ δ ∨ ∈ EΣ2 ,k (t(ϕ)) satisfying
+             E                E               E          E          E
+                                                                                          E                
+                γ ∗j (α ⊗ γ ∨ )    j ∞k δ = α j ∞k δ = γ j ∞k β = γ j ∞k                  δ ∗k (β ⊗ δ ∨ ) ,         (3.38)
+
+   and equivalently for representatives α ⊗ γ ∨ ∈ EΣ,j (ϕ) and β ⊗ γ ∨ ∈ EΣ,k (t(ϕ)),
+                 E
+                        E                        E            E               E
+                                                                                         E             
+                 ∞j,k γ ∗j (α ⊗ γ ∨ ) = ∞j,k α = ∞j,k β = ∞j,k γ ∗k (β ⊗ γ ∨ ) .                                    (3.39)
+
+   Fixing α and γ for the first identity, we may take any δ and treat Equation (3.38) as
+   a linear equation, solving it for the unique β. The representative β ⊗ δ ∨ ∈ EΣ2 ,k (t(ϕ))
+   is then independent of the choice of δ. Moreover, changing the surfaces Σ1 and Σ2
+   or the boundary components does not affect the involution, since the change along an
+   edge in the sense of (3.14) may be resolved using Item 2. The second identity similarly
+   yields a unique β, and by Item 4, it is independent under a change of surface. The
+   compatibility of sewing and self-sewing in Definition 3.1 implies that the sewing and
+   self-sewing approaches equivalently define tE .
+
+
+
+
+                                                           25
+3.3     Various cocycle identities
+
+As before, let E be a Fr-smooth R+ -extension. Let Z collectively denote a trivialization
+of E, which comprises Fr-smooth trivializations of the principal R+ -bundles Zg,b : Mg,b !
+E(Mg,b ) for g, b ≥ 0. For each choice j, k of boundary labels, the trivialization defines the
+sewing cocycle ΩZ j,k : Mg1 ,b1 × Mg2 ,b2 ! R via the relation
+
+                                     E                  Z
+                            Z(Σ1 ) j ∞k Z(Σ2 ) = eΩj,k (Σ1 ,Σ2 ) Z(Σ1 j ∞k Σ2 ).                 (3.40)
+
+Similarly, we define the self-sewing cocycles ΩZj,k : Mg,b ! R associated to self-sewing at
+distinct boundary labels j ̸= k via the relation
+                                     E                  Z
+                                    ∞j,k Z(Σ) = eΩj,k (Σ) Z( ∞j,k Σ).                            (3.41)
+
+We call these functions the cocycles of E with respect to the trivialization Z. They satisfy
+cocycle identities arising from the associativity of the sewing isomorphisms of E:
+
+      ΩZ
+       j,k (Σ1 , Σ2 ) + Ωl,m (Σ1 j ∞k Σ2 , Σ3 ) = Ωj,k (Σ1 , Σ2 l ∞m Σ3 ) + Ωl,m (Σ2 , Σ3 ),
+                         Z                         Z                         Z
+                                                                                                 (3.42)
+            ΩZj,k (Σ1 ) + Ωl,m ( ∞j,k Σ1 , Σ2 ) = Ωj,k (Σ1 l ∞m Σ2 ) + Ωl,m (Σ1 , Σ2 ),
+                            Z                      Z                    Z
+                                                                                                 (3.43)
+         ΩZ
+          j,k (Σ1 l ∞m Σ2 ) + Ωl,m (Σ1 , Σ2 ) = Ωl,m (Σ1 j ∞k Σ2 ) + Ωj,k (Σ1 , Σ2 ),
+                                  Z                Z                    Z
+                                                                                                 (3.44)
+                   ΩZj,k (Σ) + Ωl,m ( ∞j,k Σ) = Ωj,k ( ∞l,m Σ) + Ωl,m (Σ).
+                                 Z                 Z                 Z
+                                                                                                 (3.45)
+
+In Equation (3.19), we already defined local trivializations ZS,j (ϕ) of the central extension
+E(Def C (S1 )) on the subset of ϕ ∈ Def C (S1 ) such that S ∗j ϕ exists. The composition law of
+the central extension defines a deformation-deformation cocycle
+                        E                    Z
+               ZS,j (ϕ) ∗ ZS,j (ψ) = eΩS,j (ϕ,ψ) ZS,j (ϕ ◦ ψ),           ϕ, ψ ∈ CompC (S1 ),     (3.46)
+
+which is defined where the trivialization is defined at all three complex deformations ϕ, ψ,
+and ϕ ◦ ψ. For surfaces related by S2 = (S1 l ∞m A)j↔k as in the definition of an edge in
+the limit (3.13), the trivializations are related by
+                                                 Z              Z
+                             ZS1 ,j (ϕ) = eΩl,m (S1 ∗j ϕ,A)−Ωl,m (S1 ,A) ZS2 ,j (ϕ).             (3.47)
+
+By Equation (3.24), the above cocycles are related by the identity
+
+          ΩZ
+           S1 ,j (ϕ, ψ) − ΩS2 ,k (ϕ, ψ)
+                           Z
+                                                                                                 (3.48)
+       = ΩZ
+          l,m (A, S1 ∗
+                     j
+                       ϕ) + ΩZ
+                             l,m (A, S1 ∗
+                                        j
+                                          ψ) − ΩZ
+                                                l,m (A, S1 ∗
+                                                           j
+                                                             (ϕ ◦ ψ)) − ΩZ
+                                                                         l,m (A, S1 ).
+
+Observe that in the cohomology group defined in [MP26, Section 3], the right-hand side
+of (3.49) is the differential of the function ΩZ
+                                               l,m (S1 ∗
+                                                       j
+                                                         · , A) − ΩZ
+                                                                   l,m (S1 , A). Associativity
+of the composition law of the central extension E(Def C (S1 )) (see Lemma 3.4) implies the
+deformation-deformation-deformation cocycle identity
+
+              ΩZ
+               S,j (ϕ1 ◦ ϕ2 , ϕ3 ) + ΩS,j (ϕ1 , ϕ2 ) = ΩS,j (ϕ1 , ϕ2 ◦ ϕ3 ) + ΩS,j (ϕ2 , ϕ3 ).
+                                      Z                 Z                      Z
+                                                                                                 (3.49)
+
+The action of E(Def C (S1 )) on E(Mg,b ) (see Proposition 3.7) yields the mixed cocycles
+                                         E                  Z
+                                 Z(Σ) ∗n ZS,j (ϕ) = eΩS,j,n (Σ,ϕ) Z(Σ ∗n ϕ),                     (3.50)
+
+                                                       26
+where S is the surface relative to which the trivialization of E(Def C (S1 )) is defined, and Σ
+is another surface whose nth boundary component the complex deformation ϕ ∈ Def C (S1 )
+acts on. For S2 = (S1 l ∞m A)j↔k as above, the cocycles are related by
+
+                 ΩZ
+                  S1 ,j,n (Σ, ϕ) − ΩS2 ,k,n (Σ, ϕ) = Ωl,m (S1 ∗
+                                    Z                 Z
+                                                              j
+                                                                ϕ, A) − ΩZ
+                                                                         l,m (S1 , A),          (3.51)
+
+which is the function whose differential appears on the right-hand side of (3.48), and which
+is independent of Σ. If we take Σ = S and j = n in Equation (3.50), then the definition
+of the action in Proposition 3.7 implies that
+
+                                 Σ,j,j (Σ, ϕ) = 0,
+                                ΩZ                        ϕ ∈ Def C (S1 ) .                     (3.52)
+
+By Items 2 & 5 of Proposition 3.7, the mixed cocycles satisfy mixed cocycle identities,
+
+      ΩZ
+       j,k (Σ1 , Σ2 ∗l ϕ) + ΩS,m,l (Σ2 , ϕ) = ΩS,m,l (Σ1 j ∞k Σ2 , ϕ) + Ωj,k (Σ1 , Σ2 ),
+                             Z                 Z                         Z
+                                                                                                (3.53)
+      ΩZ
+       j,k (Σ1 ∗l ϕ, Σ2 ) + ΩS,m,l (Σ1 , ϕ) = ΩS,m,l (Σ1 j ∞k Σ2 , ϕ) + Ωj,k (Σ1 , Σ2 ),
+                             Z                 Z                          Z
+                                                                                                (3.54)
+      ΩZ
+       j,k (Σ1 ∗
+               j
+                  ϕ, Σ2 ) + ΩZ
+                             S,m,j (Σ1 , ϕ) = Ωj,k (Σ1 , Σ2 ∗
+                                               Z
+                                                            k
+                                                              t(ϕ)) + ΩZ
+                                                                       S,m,k (Σ2 , t(ϕ)),       (3.55)
+
+depending on where ϕ acts. Moreover, by Items 1 & 3 of Proposition 3.7, we have
+
+                 ΩZ
+                  S,l,k (Σ ∗
+                           j
+                             ϕ, ψ) + ΩZ
+                                      S,l,j (Σ, ϕ) = ΩS,l,j (Σ ∗
+                                                      Z
+                                                               k
+                                                                 ψ, ϕ) + ΩZ
+                                                                          S,l,k (Σ, ψ),         (3.56)
+                 ΩZ
+                  S,l,j (Σ ∗
+                           j
+                             ϕ, ψ) + ΩZ
+                                      S,l,j (Σ, ϕ) = ΩS,l,j (Σ, ϕ ◦ ψ) + ΩS,l (ϕ, ψ),
+                                                      Z                   Z
+                                                                                                (3.57)
+
+and more cocycle identities follow from self-sewing in Items 4 & 5 of Proposition 3.7:
+
+                  ΩZ
+                   j,k (Σ ∗l ϕ) + ΩS,m,l (Σ, ϕ) = Ωj,k (Σ) + ΩS,m,l ( ∞j,k Σ, ϕ),
+                                   Z               Z          Z
+                                                                                                (3.58)
+                 ΩZ
+                  j,k (Σ ∗
+                         j
+                           ϕ) + ΩZ
+                                 S,m,j (Σ, ϕ) = Ωj,k (Σ ∗
+                                                 Z
+                                                        k
+                                                          t(ϕ)) + ΩZ
+                                                                   S,m,k (Σ, t(ϕ)).             (3.59)
+
+   Lastly, let us return to the involution tE defined by Item 5 of Proposition 3.7. The
+cocycle identities yield the following corollary.
+
+Corollary 3.8. For any S ∈ Mg,b , and 1 ≤ j ≤ b, and ϕ ∈ Def C (S1 ) such that S ∗j ϕ and
+S ∗j t(ϕ) exist, we have tE (ZS,j (ϕ)) = ZS,j (t(ϕ)).
+
+Proof. Equation (3.38) defining tE reads
+                       E                                                      E
+                                     E                     E
+                                                                                        
+                Z(Σ1 ) ∗j ZS,l (ϕ)    j ∞k Z(Σ2 ) = Z(Σ1 ) j ∞k       Z(Σ2 ) ∗k tE ZS,l (ϕ) .   (3.60)
+
+Consider the cocycle
+
+                      tE (ZS,m (ϕ)) = eΩS,m (ϕ) ZS,m (t(ϕ)),          ϕ ∈ InvC (S1 ) .          (3.61)
+
+It depends only on a single invertible complex deformation such that S ∗j ϕ exists, and has
+the symmetry ΩS,m (t(ϕ)) = −ΩS,m (ϕ). In terms of cocycles, Equation (3.60) reads
+
+ ΩZ
+  j,k (Σ1 ∗
+          j
+            ϕ, Σ2 ) + ΩZ
+                       S,m,j (Σ1 , ϕ) = Ωj,k (Σ1 , Σ2 ∗
+                                         Z
+                                                      k
+                                                        t(ϕ)) + ΩZ
+                                                                 S,m (Σ2 , t(ϕ)) − ΩS,m (ϕ). (3.62)
+                                                                                    Z
+
+
+Hence, the surface-deformation-surface cocycle (3.55) implies that ΩZ
+                                                                    S,m (ϕ) = 0.
+
+
+
+                                                     27
+3.4   Equivalent descriptions of locality
+
+Generally, the sewing isomorphisms of an R+ -extension can depend on the boundary
+parametrizations of the respective surfaces in any way — as long as associativity holds.
+Following the example of the real determinant line bundle in Section 1.4 (to which we
+also return in Section 3.7), it makes sense to assume that the sewing isomorphisms only
+depend on the boundary parametrizations that are involved in the sewing. In other words,
+if a boundary parametrization that is external to the sewing operation Σ1 j ∞k Σ2 is
+reparametrized, say, by a diffeomorphism in Diff an  + (S ) acting on Σ1 at l ̸= j, then the
+                                                          1
+
+sewing isomorphism should be somehow invariant under this reparametrization. We call
+such R+ -extensions “local,” for in the case of the real determinant line bundle, this follows
+from the locality of the conformal anomaly formula (1.15).
+    In Proposition 3.9, we characterize this property in several equivalent ways, and it
+serves as the definition of locality. Equation (3.63) in Proposition 3.9 is perhaps the most
+instructive realization of locality, as it emphasizes the aforementioned reparametrization
+invariance in terms of cocycles. Such cocycles are always relative to a trivialization Z,
+which we call “reparametrization invariant” if they realize locality.
+
+Proposition 3.9. Given a trivialization Z of a Fr-smooth R+ -extension E, the following
+are equivalent:
+ 1. For any surfaces Σ1 and Σ2 with boundary components j and k, we have
+
+                  ΩZ
+                   j,k (Σ1 ∗l ϕ, Σ2 ) = Ωj,k (Σ1 , Σ2 ),
+                                         Z
+                                                               ϕ ∈ Diff an
+                                                                        + (S ),
+                                                                            1
+                                                                                     l ̸= j.   (3.63)
+
+ 2. For any surfaces S and Σ with boundary components j and k, we have
+
+                               ΩZ
+                                S,j,k (Σ, ϕ) = 0,          ϕ ∈ Diff an
+                                                                    + (S ) .
+                                                                        1
+                                                                                               (3.64)
+
+ 3. For any surface S with boundary component j, we have
+
+                               ΩZ
+                                S,j (ϕ, ψ) = 0,        ϕ, ψ ∈ Diff an
+                                                                   + (S ),
+                                                                       1
+                                                                                               (3.65)
+
+ 4. For any surfaces S1 and S2 with boundary components j and k, we have
+
+                        ΩZ
+                         S1 ,j (ϕ, ψ) = ΩS2 ,k (ϕ, ψ),
+                                         Z
+                                                              ϕ, ψ ∈ Diff an
+                                                                          + (S ) .
+                                                                              1
+                                                                                               (3.66)
+
+ 5. For any surfaces Σ1 and Σ2 with boundary components j and k, we have
+
+                   ΩZ
+                    j,k (Σ1 ∗
+                            j
+                              ϕ, Σ2 ) = ΩZ
+                                         j,k (Σ1 , Σ2 ∗
+                                                      k
+                                                        t(ϕ)),        ϕ ∈ Diff an
+                                                                               + (S ) .
+                                                                                   1
+                                                                                               (3.67)
+
+If the conditions hold for a trivialization Z, we call it reparametrization invariant, and if
+any such Z exists, we call E local.
+
+Proof. We prove the implications 1 =⇒ 2 =⇒ 3 =⇒ 4 =⇒ 1, and 2 ⇐⇒ 5.
+
+1 =⇒ 2: By Equations (3.63, 3.51), the cocycle in Item 2 does not depend on S and j.
+        Thus, by changing to S = Σ and j = k, Equation (3.52) implies Item 2.
+
+
+                                                  28
+

@@ -1,0 +1,6 @@
+PASS sage: 217/217 exact residuals; transport successful and untruncated; warnings=0.
+PASS bitmask: 212/212 exact residuals; transport successful and untruncated; warnings=6.
+PASS inverse: 185/185 exact residuals; transport successful and untruncated; warnings=0.
+PASS every Python source parses without execution.
+PASS every Markdown file link resolves to an existing absolute path.
+No mathematical failure; no source or parent-note mutation during freezing.

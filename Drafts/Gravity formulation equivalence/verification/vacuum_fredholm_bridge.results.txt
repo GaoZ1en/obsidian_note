@@ -1,0 +1,8 @@
+<|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Assumptions" -> {"p0>0", "a and Schur complement S invertible", 
+   "finite block graph checks do not certify infinite-dimensional estimates"}, 
+ "Checks" -> <|"third_order_pullback_residual" -> 0, "projective_stabilizer_residual" -> 0, 
+   "infinitesimal_stress_residual" -> 0, "graph_frame_derivative_residual" -> {{0, 0}, {0, 0}}, 
+   "graph_connection_residual" -> {{0, 0}, {0, 0}}, "finite_graph_trace_residual" -> 0|>, 
+ "AllResidualsZero" -> True, "Failed" -> False, "UnevaluatedComputations" -> False, 
+ "Messages" -> {}|>

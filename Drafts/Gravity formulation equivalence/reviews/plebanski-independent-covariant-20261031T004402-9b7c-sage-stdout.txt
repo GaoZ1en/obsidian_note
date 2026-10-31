@@ -1,0 +1,109 @@
+{
+  "kernel": "SageMath 10.9",
+  "arithmetic": "exact QQ and multivariate polynomial rings",
+  "conventions": {
+    "eta": [
+      -1,
+      1,
+      1,
+      1
+    ],
+    "epsilon_0123": 1,
+    "epsilon_upper_0123": -1,
+    "pair_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "full_antisymmetric_pair_sums": true,
+    "wall_normal": "e_3 outward spacelike",
+    "epsilon_Gamma": "-e0 wedge e1 wedge e2",
+    "kappa_for_corner_polynomial_tests": 1
+  },
+  "checks": {
+    "internal_star_squared_minus_identity": true,
+    "Lorentz_Hodge_pairing_sign": true,
+    "spacetime_Hodge_e01_equals_minus_e23": true,
+    "topological_simplicity_rank20": true,
+    "gravitational_simplicity_rank20": true,
+    "tetrad_tangent_ranks16": true,
+    "tetrad_tangents_equal_simplicity_kernels": true,
+    "covariant_torsion_map_rank24": true,
+    "algebraic_Riemann_dimension20": true,
+    "gravitational_multiplier_constraints_exactly_Ricci_zero": true,
+    "gravitational_phi_epsilon_trace_equals_scalar_R": true,
+    "topological_phi_valid_for_every_algebraic_Riemann": true,
+    "grav_BF_numerator_is_plus_scalar_R": true,
+    "top_BF_numerator_zero_by_Bianchi": true,
+    "simplicity_volume_top_plus_grav_minus": true,
+    "constant_curvature_top_full_F_equals_phi_B": true,
+    "constant_curvature_top_multiplier_allowed": true,
+    "constant_curvature_top_not_Ricci_flat": true,
+    "constant_curvature_grav_multiplier_trace_obstructs": true,
+    "both_signs_reconstruct_F": true,
+    "BF_shift_grav_simplicity_violation_minus2": true,
+    "BF_shift_top_simplicity_violation_plus2": true,
+    "grav_corner_Ce_equals_Cmetric_minus_alpha_all_tetrad_variations": true,
+    "grav_wall_ell_equals_plus_K_epsilonGamma": true,
+    "grav_corner_cancels_Lorentz_BF_surface_term": true,
+    "top_wall_theta_plus_deltaell_equals_deltae_T_minus_half_dbeta": true,
+    "explicit_deSitter_coframe_torsion_zero": true,
+    "explicit_deSitter_curvature_Fij_Hubble_squared_ee": true
+  },
+  "all_passed": true,
+  "number_of_checks": 28,
+  "values": {
+    "simplicity_ranks": {
+      "topological": 20,
+      "gravitational": 20,
+      "tetrad_tangent": 16
+    },
+    "torsion_map_rank": 24,
+    "curvature_constraint_ranks": {
+      "gravitational_phi": 10,
+      "Ricci": 10,
+      "combined": 10,
+      "vacuum_curvature_kernel": 10
+    },
+    "constant_curvature_lambda1": {
+      "Ricci_diagonal": [
+        "-3",
+        "3",
+        "3",
+        "3"
+      ],
+      "scalar_R": "12",
+      "top_phi_epsilon_trace": "0",
+      "grav_phi_epsilon_trace": "12"
+    },
+    "BF_shift_delta_B01_wedge_B01": {
+      "grav_eta01_x0dx1": "-2",
+      "top_eta01_x2dx3": "2"
+    },
+    "wall_ell_e012_coefficient": "-k00 - k11 - k22",
+    "explicit_nonEinstein_solution": "e0=dt, ei=exp(H*t)dxi; omega^{0i}=H ei, omega^{ij}=0; F^{IJ}=H^2 eI wedge eJ; Ricci=3H^2 g, H!=0"
+  },
+  "scope": "Finite pointwise algebra, curvature constraints, and wall/corner identities. Not a nonlinear Dirac/BV/global theorem."
+}
+FINAL_EXACT_CHECKS 28 True

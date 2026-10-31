@@ -1,0 +1,656 @@
+{
+  "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+  "fixture": "complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell",
+  "kappa": "indeterminate kap over QQ(i); exact rational functions",
+  "coordinates": 48,
+  "odd_generators": 24,
+  "even_fluctuation_variables": 24,
+  "checks": [
+    {
+      "label": "background torsion 0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "background curvature 0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "d squared 0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "background torsion 1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "background curvature 1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "d squared 1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "background torsion 2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "background curvature 2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "d squared 2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "closed integral degree2 0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "closed integral degree2 1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "closed integral degree2 2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic action bridge",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "vanishing full quartic pullback",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "free master equation",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "CS cubic master equation",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "geometric cubic master equation",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "free and CS cubic master equation",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet f22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet f22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet w22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet w22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet eta0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet eta0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet eta1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet eta1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet eta2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet eta2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet z0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet z0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet z1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet z1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet z2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet z2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet E22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet E22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W00",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W01",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W02",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W10",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W11",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W12",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W20",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W21",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet W22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet W22",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet R0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet R0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet R1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet R1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet R2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet R2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet T0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet T0",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet T1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet T1",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "quadratic map jet T2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "cubic map jet T2",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "source Hamiltonian degree 3",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "source Hamiltonian degree 4",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "source Hamiltonian degree 5",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "source Hamiltonian cubic",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "source Hamiltonian quartic",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "nonzero cubic map Hamiltonian",
+      "passed": true,
+      "nonzero_terms": 36
+    },
+    {
+      "label": "nonzero quartic logarithm Hamiltonian",
+      "passed": true,
+      "nonzero_terms": 108
+    },
+    {
+      "label": "nonzero generated cubic interaction",
+      "passed": true,
+      "nonzero_terms": 126
+    },
+    {
+      "label": "nonzero quartic if G4 omitted",
+      "passed": true,
+      "nonzero_terms": 456
+    },
+    {
+      "label": "nonzero quartic if G4 sign flipped",
+      "passed": true,
+      "nonzero_terms": 456
+    },
+    {
+      "label": "nonzero cubic if antifield generator omitted",
+      "passed": true,
+      "nonzero_terms": 132
+    },
+    {
+      "label": "nonzero cubic if kappa normalization doubled",
+      "passed": true,
+      "nonzero_terms": 132
+    },
+    {
+      "label": "nonzero two-antifield quartic Hamiltonian",
+      "passed": true,
+      "nonzero_terms": 54
+    }
+  ],
+  "all_passed": true,
+  "term_counts": {
+    "S2": 57,
+    "Sc3": 108,
+    "Sg3": 147,
+    "G3": 36,
+    "G4": 108,
+    "cubic_bridge": 126,
+    "quartic_G4S2": 456
+  },
+  "elapsed_seconds": 514.9160530567169
+}

@@ -1,0 +1,31 @@
+<|"WolframKernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Assumptions" -> "3D Euclidean; epsilon123=1; z=gamma*v>0; row-major C; SO(3) norm (1/2)K_abj K_abj", 
+ "DirectCurvatureCoefficient" -> 2*cc[1, 2]*cc[2, 1] - 2*cc[1, 1]*cc[2, 2] + 2*cc[1, 3]*cc[3, 1] + 
+   2*cc[2, 3]*cc[3, 2] - 2*cc[1, 1]*cc[3, 3] - 2*cc[2, 2]*cc[3, 3], "CurvatureResidual" -> 0, 
+ "QuadraticForm" -> -2*cc[1, 2]*cc[2, 1] + 2*cc[1, 1]*cc[2, 2] - 2*cc[1, 3]*cc[3, 1] - 2*cc[2, 3]*cc[3, 2] + 
+   2*cc[1, 1]*cc[3, 3] + 2*cc[2, 2]*cc[3, 3], "OrthonormalBasis" -> 
+  {{{1/Sqrt[3], 0, 0}, {0, 1/Sqrt[3], 0}, {0, 0, 1/Sqrt[3]}}, {{1/Sqrt[2], 0, 0}, {0, -(1/Sqrt[2]), 0}, 
+    {0, 0, 0}}, {{1/Sqrt[6], 0, 0}, {0, 1/Sqrt[6], 0}, {0, 0, -Sqrt[2/3]}}, 
+   {{0, 1/Sqrt[2], 0}, {1/Sqrt[2], 0, 0}, {0, 0, 0}}, {{0, 0, 1/Sqrt[2]}, {0, 0, 0}, {1/Sqrt[2], 0, 0}}, 
+   {{0, 0, 0}, {0, 0, 1/Sqrt[2]}, {0, 1/Sqrt[2], 0}}, {{0, 1/Sqrt[2], 0}, {-(1/Sqrt[2]), 0, 0}, {0, 0, 0}}, 
+   {{0, 0, 1/Sqrt[2]}, {0, 0, 0}, {-(1/Sqrt[2]), 0, 0}}, {{0, 0, 0}, {0, 0, 1/Sqrt[2]}, 
+    {0, -(1/Sqrt[2]), 0}}}, "BasisGramMatrix" -> {{1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 1, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0}, 
+   {0, 0, 0, 0, 0, 0, 0, 0, 1}}, "BasisDeterminant" -> -1, 
+ "HessianRowMajor" -> {{0, 0, 0, 0, 2*z, 0, 0, 0, 2*z}, {0, 0, 0, -2*z, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, -2*z, 0, 0}, {0, -2*z, 0, 0, 0, 0, 0, 0, 0}, {2*z, 0, 0, 0, 0, 0, 0, 0, 2*z}, 
+   {0, 0, 0, 0, 0, 0, 0, -2*z, 0}, {0, 0, -2*z, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -2*z, 0, 0, 0}, 
+   {2*z, 0, 0, 0, 2*z, 0, 0, 0, 0}}, "HessianInOrthonormalBasis" -> 
+  {{4*z, 0, 0, 0, 0, 0, 0, 0, 0}, {0, -2*z, 0, 0, 0, 0, 0, 0, 0}, {0, 0, -2*z, 0, 0, 0, 0, 0, 0}, 
+   {0, 0, 0, -2*z, 0, 0, 0, 0, 0}, {0, 0, 0, 0, -2*z, 0, 0, 0, 0}, {0, 0, 0, 0, 0, -2*z, 0, 0, 0}, 
+   {0, 0, 0, 0, 0, 0, 2*z, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 2*z, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 2*z}}, 
+ "HessianDeterminant" -> -1024*z^9, "HessianEigenvalues" -> {4*z, -2*z, -2*z, -2*z, -2*z, -2*z, 2*z, 2*z, 
+   2*z}, "HessianCharacteristicPolynomial" -> -((lam - 4*z)*(lam - 2*z)^3*(lam + 2*z)^5), 
+ "QuadraticFormInBasis" -> 2*x[1]^2 - x[2]^2 - x[3]^2 - x[4]^2 - x[5]^2 - x[6]^2 + x[7]^2 + x[8]^2 + x[9]^2, 
+ "PositiveGaussian" -> Sqrt[Pi]/Sqrt[z], "TraceGaussian" -> Sqrt[Pi/2]/Sqrt[z], 
+ "UpperRotatedFiveModeGaussian" -> (I*Pi^(9/2))/(Sqrt[2]*z^(9/2)), 
+ "RealNegativeModeIntegral" -> Integrate[E^(u^2*z), {u, -Infinity, Infinity}, Assumptions -> z > 0], 
+ "FrameMetricGaugeSignedJacobianAtIdentity" -> -1/8, "MetricCongruenceJacobian" -> dd[1]^4*dd[2]^4*dd[3]^4, 
+ "CoframeCoordinateJacobian" -> dd[1]^3*dd[2]^3*dd[3]^3, "ConnectionCoordinateJacobian" -> 
+  dd[1]^3*dd[2]^3*dd[3]^3, "Messages" -> {"HoldForm[Integrate::idiv]"}|>

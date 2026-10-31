@@ -1,0 +1,27 @@
+{
+  "sage_version": "10.9",
+  "N_one_chain": 2,
+  "eps": "3/5",
+  "kappa": "7/3",
+  "integrated_theta_star_generators": 15,
+  "integrated_chi_generators": 15,
+  "mixed_matrix_even": 90,
+  "mixed_matrix_odd": 30,
+  "detD": "293151929707/1000000000000",
+  "BerM": "1000000000000/293151929707",
+  "full_Ber": "1000000000000000000000000/85938053890937869105849",
+  "fiber_raw_orientation_at_hbar1": 1,
+  "checks": {
+    "finite-Lorentz-pairing": true,
+    "ghost-D-inverse": true,
+    "ghost-D-determinant": true,
+    "theta-dependent-mixed-M-inverse": true,
+    "theta-block-is-nonzero": true,
+    "theta-block-has-only-degree-one": true,
+    "Schur-ghost-block-unchanged": true,
+    "normalized-fiber-top-coefficient": true
+  },
+  "count": 8,
+  "all_checks_true": true,
+  "scope": "Checks the analytic slice reduction; does not independently reconstruct the complete off-slice generating functional."
+}

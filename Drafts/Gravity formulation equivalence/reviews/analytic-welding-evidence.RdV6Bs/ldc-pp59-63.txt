@@ -1,0 +1,238 @@
+Hiroshima Math. J.
+33 (2003), 59–86
+
+
+
+Di¤erentiability properties of some nonlinear operators associated
+ to the conformal welding of Jordan curves in Schauder spaces
+
+                Massimo Lanza de Cristoforis and Luca Preciso
+                                  (Received November 16, 2001)
+                                     (Revised June 25, 2002)
+
+
+
+     Abstract. As it is well-known, to a given plane simple closed curve z with non-
+     vanishing tangent vector, one can associate a conformal welding homeomorphism w½z
+     of the unit circle to itself, obtained by composing the restriction to the unit circle of a
+     suitably normalized Riemann map of the domain exterior to z with the inverse of the
+     restriction to the unit circle of a suitably normalized Riemann map of the domain
+     interior to z. Now we think the functions z and w½z as points in a Schauder function
+     space on the unit circle, and we show that the correspondence w which takes z to w½z is
+     real di¤erentiable for suitable exponents of the Schauder spaces involved. Then we
+     show that w has a right inverse which is the restriction of a holomorphic nonlinear
+     operator.
+
+1.   Introduction
+    As it is well-known, given an element z of the set AqD of the complex-
+valued di¤erentiable injective functions, with nonvanishing ﬁrst derivative,
+deﬁned on the boundary qD of the open unit disk D of the complex plane
+C, the function z parametrizes a Jordan curve. To each z A AqD , one can
+associate a pair ðG; F Þ of Riemann maps, with G a suitably normalized
+holomorphic homeomorphism of the exterior Cncl D of D onto the exterior
+E½z of z, and with F a suitably normalized holomorphic homeomorphism
+of D onto the interior I ½z of z. It is also well-known that G and F can
+be extended with continuity to boundary homeomorphisms. Thus one can
+consider the so-called conformal welding homeomorphism F ð1Þ  G jqD of qD,
+which we denote by w½z. Now let Cm; a ðqD; CÞ be the Schauder space of
+m-times continuously di¤erentiable complex-valued functions on qD, whose
+m-th order derivative is a-Hölder continuous, with a A 0; 1½, m b 1. It is well-
+known that if z A Cm; a ðqD; CÞ V AqD , then w½z A Cm; a ðqD; CÞ V AqD . In this
+paper we ﬁrst prove some di¤erentiability theorems for the nonlinear ‘con-
+formal welding operator’ w½. We note that such theorems can be shown to
+be optimal in the frame of Schauder spaces (cf. [19, Thm. 2.14].) Moreover,
+
+  2000 Mathematics Subject Classiﬁcation. 30C99, 47H30.
+  Key words and phrases. Conformal welding, conformal sewing, di¤erentiability properties of
+nonlinear operators.
+60                Massimo Lanza de Cristoforis and Luca Preciso
+
+
+we observe that by restricting w½ to the set of z’s which are boundary values of
+Riemann maps deﬁned on CnD, the operator w½ becomes real analytic.
+       Next we turn to the problem of constructing a right inverse of w½. The
+problem of constructing a suitably normalized pair of functions ðG; F Þ as
+above, such that F ð1Þ  G jqD ¼ f by a given regular orientation preserving
+homeomorphism f of qD to itself, a so-called ‘shift’ of qD, is known as the
+conformal sewing problem and is a particular type of boundary value problem
+with shift for sectionally holomorphic functions. By exploiting a classical
+method (cf. e.g., Lu [22]), one can show that to each shift f A Cm; a ðqD; CÞ V
+AqD , one can associate a unique suitably normalized pair of functions ðG; F Þ as
+above. Then the nonlinear operator s, which takes f to s½f 1 G jqD is a right
+inverse of w, and will be called the ‘conformal sewing operator’. Next we
+prove that s½f A Cm; a ðqD; CÞ if the shift f A Cm; a ðqD; CÞ V AqD . Then we
+analyze the di¤erentiability properties of s. Since the domain of s, namely the
+set of positively oriented f A Cm; a ðqD; CÞ V AqD such that fðqDÞ ¼ qD is not
+open in the Banach space Cm; a ðqD; CÞ, we construct an extension of s to the
+open set of orientation preserving elements of Cm; a ðqD; CÞ V AqD , and we show
+that such extension is complex-analytic. In other words, we show that the
+boundary values of the Riemann map G of the domain exterior to the curve
+s½f, depend complex-analytically on f. Then we consider the Riemann map
+F which is related to G by the equality FjqD ¼ G  fð1Þ ¼ s½f  fð1Þ . We
+deduce the di¤erentiability properties of the dependence of the boundary values
+of F upon f by ‘ad hoc’ variants of the di¤erentiability results on the inversion
+and on the composition operator of [15]. We note that the di¤erentiability
+results for the dependence of F on f can be shown to be sharp by means of
+inverse theorems. In particular, one can show that F does not depend complex
+analytically on f (cf. [19, Thm. 2.17].)
+       The theory of boundary value problems with shift for sectionally holo-
+morphic functions, also called Haseman problems, is well-known and started
+with Haseman [9]. Kveselava [13] developped an existence and uniqueness
+theory in case f is of class C1; a . Later, other Haseman type problems have
+been studied, also for more general shifts (cf. Litvinchuk [21], Monakhov
+[23, pp. 357–367].) In the direction of the perturbation results however, the
+authors are only aware of the continuity result for the conformal welding
+operator of David [4], and of the continuity results for the conformal sewing
+operator of Monakhov [23, p. 363], and of Huber and Kühnau [11], in di¤erent
+function space settings. We mention also the work of Nag [24], who has
+considered a one-parameter family fft g of shifts depending real analytically
+on a real parameter t, and who has provided an algorithm to compute the
+coe‰cients of the formal expansion of the corresponding families of curves
+                     ð1Þ
+s½ft  and s½ft   ft , under the assumption that such expansions converge.
+                  Di¤erentiability properties of some nonlinear operators            61
+
+
+      We believe that our results could be employed in the perturbation analysis
+of other well-posed Haseman problems. Indeed, the operator which maps a
+shift to the corresponding solution of the Haseman problem can be expressed in
+terms of the conformal sewing operator and of operators of known regularity
+(cf. e.g., Gakhov [6, p. 129, § 14].)
+      This paper is organized as follows. Section 2 is a section of preliminaries
+and notation. Section 3 concerns the deﬁnition of the conformal welding map
+and contains di¤erentiability theorems for the conformal welding operator.
+Section 4 is devoted to the deﬁnition of the conformal sewing operator and of
+its extension. Section 5 contains a complex di¤erentiability theorem for the
+conformal sewing operator.
+
+
+2.   Technical preliminaries and notation
+      Let X, Y be normed spaces over the ﬁeld K, with K ¼ R or K ¼ C. We
+say that X is continuously imbedded in Y provided that X J Y and that the
+inclusion map is continuous. We say that a map T of a subset of X to Y is
+compact, provided that it maps bounded sets to sets with compact closure.
+For standard deﬁnitions of Calculus in normed spaces, we refer to Prodi and
+Ambrosetti [28] or to Berger [2]. Unless otherwise speciﬁed, we understand
+that a ﬁnite product of normed spaces is endowed with the supremum of the
+norms of the components. Let N be the set of nonnegative integers includ-
+ing zero. Throughout the paper, n denotes an element of Nnf0g. A com-
+plex normed space can be viewed naturally as a real normed space. Accord-
+ingly, we will say that a certain map between complex normed spaces is real
+linear, real di¤erentiable, or real analytic, to indicate that such map is linear,
+di¤erentiable or analytic between the corresponding underlying real spaces,
+respectively. To emphasize that we are retaining the complex structure, we
+will say that the map is complex linear, complex di¤erentiable, or complex
+analytic, respectively. The inverse function of a function f is denoted f ð1Þ ,
+as opposed to the reciprocal of a complex valued function g, which is denoted
+g1 . For all subsets B of Rn , the closure of B is denoted cl B. We now deﬁne
+the Schauder spaces on the closure of an open subset of Rn . Let W be an open
+subset of Rn , m A N. We denote by C m ðW; CÞ the space of m-times contin-
+uously real-di¤erentiable complex-valued functions on W, and by C m ðcl W; CÞ
+the subspace of those functions of C m ðW; CÞ such that for all h 1 ðh1 ; . . . ; hn Þ A
+                                                                  qjhj f
+N n , with jhj 1 h1 þ    þ hn a m, the function D h f 1 q h1 x ...q hn x can be
+                                                                  1        n
+extended with continuity to cl W. If W is bounded, then C m ðcl W; CÞ endowed
+                                                P
+with the norm deﬁned by k f kC m ðcl W; CÞ 1 jhjam supcl W jD h f j is a Banach
+space. If W is bounded and if a A 0; 1, we denote by C m; a ðcl W; CÞ the
+subspace of C m ðcl W; CÞ of those functions which have a-Hölder contin-
+62                   Massimo Lanza de Cristoforis and Luca Preciso
+
+                                               0; a
+uousn derivatives of order m. oIf f A C ðcl W; CÞ, then we set j f : Wja 1
+     j f ðxÞf ð yÞj
+sup jxyj a : x; y A cl W; x 0 y . The space C m; a ðcl W; CÞ is endowed with
+                                       P                       P
+its usual norm k f kC m; a ðcl W; CÞ 1 jhjam supcl W jD h f j þ jhj¼m jD h f : Wja , and it
+is well-known to be a Banach space. If B J C, then C m; a ðcl W; BÞ denotes
+the set f f A C m; a ðcl W; CÞ : f ðcl WÞ J Bg. By HðWÞ we understand the space
+of holomorphic functions of W to C. Finally, the space C m; a; 0 ðcl W; CÞ is
+deﬁned as the closure of C y ðcl W; CÞ in C m; a ðcl W; CÞ. Then we have the
+following.
+
+     Lemma 2.1. Let m A N, a A 0; 1. Let W be a bounded open con-
+nected subset of Rn of class C mþ1 . Then C m; a; 0 ðcl W; CÞ coincides with the
+closure in C m; a ðcl W; CÞ of the set of restrictions to cl W of the polynomials with
+complex coe‰cients in n real variables. Moreover, C m; a; 0 ðcl W; CÞ contains
+C mþ1 ðcl W; CÞ and C m; b ðcl W; CÞ, for all b A a; 1.
+     Proof. Since W is of class C mþ1 , then all functions of C mþ1 ðcl W; CÞ are
+restrictions of some element of C mþ1 ðRn ; CÞ (cf. e.g., Troianiello [30, p. 13].)
+Then by Weierstrass Theorem (cf. e.g., Rohlin and Fuchs [29, p. 185]), all
+elements of C mþ1 ðRn ; CÞ can be approximated in the C mþ1 ðcl W; CÞ-norm by
+polynomials. Since cl W is of class C mþ1 , then C mþ1 ðcl W; CÞ is continu-
+ously imbedded in C m; a ðcl W; CÞ (cf. e.g., [15, p. 460].) Then the ﬁrst part of
+the statement and the inclusion C mþ1 ðcl W; CÞ J C m; a; 0 ðcl W; CÞ follow. Now
+let f A C m; b ðcl W; CÞ. Since W is of class C mþ1 , then f admits an extension
+of class C m; b and with compact support in a ball containing cl W (cf. e.g.,
+Troianiello [30, Thm. 1.3, p. 13].) By taking the convolution with a family of
+molliﬁers, such extension can be approximated by a sequence of C y functions
+bounded in C m; b ðcl W; CÞ and convergent in C m; a ðcl W; CÞ (cf. e.g., Troianiello
+[30, pp. 20, 21].) Then f A C m; a; 0 ðcl W; CÞ.                                  r
+We now deﬁne the Schauder spaces on plane Jordan curves, which are par-
+ticular compact subsets of C with no isolated points. With somewhat more
+generality, we deﬁne the Schauder spaces on a general compact subset K of
+C with no isolated points. We say that a function f of K to C is complex
+                                         f ðzÞf ðz Þ
+di¤erentiable at z0 A C if limK C z!z0 zz0 0 exists ﬁnite. We denote such limit
+by f 0 ðz0 Þ. As usual the higher order derivatives, if they exist, are deﬁned
+inductively. Let m A N. We denote by Cm ðK; CÞ the complex normed space
+of the m-times continuously complex di¤erentiable functions f of K to C
+                                              Pm
+endowed with the norm k f kCm ðK;CÞ ¼ j¼0            supK j f ð jÞ j. If a A 0; 1, we denote
+       m; a                                  m
+by C ðK; CÞ the subspace of C ðK; CÞ of those functions having a-
+Hölder continuous
+               n         m-th order derivative in oK. If f A C0; a ðK; CÞ, then we set
+                j f ðz1 Þf ðz2 Þj
+j f : Kja 1 sup jz z j a : z1 ; z2 A K; z1 0 z2 . We endow Cm; a ðK; CÞ with the
+                     1   2
+norm k f kCm; a ðK; CÞ 1 k f kCm ðK; CÞ þ j f ðmÞ : Kja . If B J C, we set Cm; a ðK; BÞ 1
+                   Di¤erentiability properties of some nonlinear operators               63
+
+
+f f A Cm; a ðK; CÞ : f ðKÞ J Bg. We denote by Cm; a; 0 ðK; CÞ the closure of
+Cy ðK; CÞ in Cm; a ðK; CÞ. Then the following variant of [14, Cor. 4.24,
+Prop. 4.29] holds (cf. [18, Lem. 2.5].)
+       Lemma 2.2. The following statements nhold.                                    o
+                                                      jfðxÞfð yÞj
+(i)     Let f A C1 ðqD; CÞ. Then lqD ½f 1 inf          jxyj
+                                                                   : x; y A qD; x 0 y > 0 if
+        and only if f is injective and f 0 ðxÞ 0 0 for all x in qD.
+( ii ) The function of C1 ðqD; CÞ to R which maps f to lqD ½f is continuous,
+        and in particular, the set AqD 1 ff A C1 ðqD; CÞ : lqD ½f > 0g is open in
+        C1 ðqD; CÞ.
+(iii) minx A qD jf 0 ðxÞj b lqD ½f, for all f A C1 ðqD; CÞ.
+    We are now ready to state the following, which collects a few facts which
+we need on the spaces Cm; a ðK; CÞ. For a proof and for appropriate refer-
+ences, we refer to [18, Lems. 2.7, 2.8].
+
+       Lemma 2.3. Let m A N, a; b A 0; 1, f A AqD , L ¼ fðqDÞ. Then the fol-
+lowing statements hold.
+( i ) Cmþ1 ðL; CÞ is continuously imbedded in Cm; a ðL; CÞ. If a < b, then
+        Cm; b ðL; CÞ is compactly imbedded in Cm; a ðL; CÞ.
+( ii ) The pointwise product is continuous in the Banach space Cm; a ðL; CÞ.
+( iii ) The reciprocal map in Cm; a ðL; CÞ, which maps a nonvanishing function f to
+        its reciprocal, is complex analytic from Cm; a ðL; Cnf0gÞ to itself.
+( iv ) Let f1 A AqD , L1 ¼ f1 ðqDÞ. If f A Cm; a ðL1 ; CÞ and if g A Cm; b ðL; L1 Þ,
+                         m; g ða; bÞ
+        then f  g A C m            ðL; CÞ with g0 ða; bÞ ¼ ab and gm ða; bÞ ¼ minfa; bg if
+        m > 0.
+( v ) Let m b 1. If g A Cm; a ðL; CÞ is injective and satisﬁes condition g 0 ðxÞ 0 0,
+        for all x A L, then gð1Þ A Cm; a ðgðLÞ; LÞ.
+( vi ) If I ½f and E½f denote the bounded and the unbounded open connected
+        component of CnfðqDÞ, respectively, then qI ½f ¼ qE½f ¼ fðqDÞ.
+(vii) If f A AqD , and if f ðqDÞ J qD, then f ðqDÞ ¼ qD and f is a homeomorphism of
+        qD to itself.
+
+     We now introduce two di¤erentiability theorems, for the composition and
+for the inversion operator. To do so, we need the following, which we use to
+study the regularity of the operator w½, and the regularity of the dependence
+of F on the shift f.
+
+      Lemma 2.4. Let m A N, a A 0; 1, R A 1; þy½ . Let RD 1 fx A R2 :
+jxj < Rg. Then there exists a linear and continuous extension operator E of
+Cm; a ðqD; CÞ to C m; a ðclðRDÞ; CÞ such that the following statements hold.
+( i ) ðE½ f ÞjqD ¼ f , for all f A Cm; a ðqD; CÞ, and E½ f  A C m; a; 0 ðclðRDÞ; CÞ for
+       all f A Cm; a; 0 ðqD; CÞ.
+

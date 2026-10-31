@@ -1,0 +1,4 @@
+<|"cubic_source_equals_L_of_generator_shift" -> True, "auxiliary_stationary_equation_residual" -> 
+  {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "auxiliary_substitution_residual" -> 0, 
+ "trace_example_q" -> 6*t^2, "symmetric_traceless_example_q" -> -2*t^2, 
+ "antisymmetric_example_q" -> 2*t^2|>

@@ -1,0 +1,16 @@
+<|"Source normalization" -> 
+  "L_s = s Sum_{I,J,h,m} K^{IJ}_m epsilon_{IJhm} J^h eta^{mm} vol (full I,J sum)", 
+ "Parameter map" -> "r=1/beta; generic 1+r^2 != 0; kappa != 0", 
+ "J squared" -> -j[1]^2 + j[2]^2 + j[3]^2 + j[4]^2, "Covariant stationary K template" -> 
+  "K^{IJ}_A = ca epsilon^{IJ}{}_{Ah} J^h + cv (delta^I_A J^J-delta^J_A J^I)", 
+ "Stationary coefficients" -> {{ca -> -((kappa*s)/(1 + r^2)), cv -> (kappa*r*s)/(1 + r^2)}}, 
+ "EC induced coefficient multiplying J squared vol" -> -3*kappa*s^2, 
+ "Holst induced coefficient multiplying J squared vol" -> (-3*kappa*s^2)/(1 + r^2), 
+ "Induced ratio Holst/EC" -> (1 + r^2)^(-1), 
+ "Checks" -> <|"Imported base checks pass" -> True, "Full 24-component stationarity residual" -> 
+    True, "Covariant source-solution reconstruction" -> True, 
+   "Induced term equals one-half source on stationary K" -> True, 
+   "Induced interaction is Lorentz-scalar J squared" -> True, 
+   "Induced interaction relative to EC" -> True, "EC limit r=0" -> True, 
+   "Response to arbitrary source is nonzero" -> True|>, "All checks passed" -> True, 
+ "Messages" -> {}|>

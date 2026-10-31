@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_a13e630d151243a08c1d3f8ce5acfc54|fc_0602a53a5e0cf814016ae4f51d31788191803b05309c10d136",
+  "sessionId": "b2590a87-28ff-406f-900b-b37e38d95f90",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/additional-checks.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/additional-checks.wl\"]\n```\n\nOutput:\n<|KernelVersion -> 14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025), CosModeCrossingTrace -> (-13*m)/24 + (13*m^3)/24, Cos2InversePairDeterminantQuadraticCoefficient -> 13/4, ShiftedCubicCentralResidual -> 0, CubicRotationCentralShift -> -13/12, CubicRotationLoopPhase -> -(-1)^(5/6), RelativeRotationLoopPhase -> 1, Messages -> {}|>\nNull"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/additional-checks.wl\"]\n```\n\nOutput:\n<|KernelVersion -> 14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025), CosModeCrossingTrace -> (-13*m)/24 + (13*m^3)/24, Cos2InversePairDeterminantQuadraticCoefficient -> 13/4, ShiftedCubicCentralResidual -> 0, CubicRotationCentralShift -> -13/12, CubicRotationLoopPhase -> -(-1)^(5/6), RelativeRotationLoopPhase -> 1, Messages -> {}|>\nNull"
+      }
+    ]
+  }
+}

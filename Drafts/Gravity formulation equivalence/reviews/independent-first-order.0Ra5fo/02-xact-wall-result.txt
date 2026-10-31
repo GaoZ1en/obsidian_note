@@ -1,0 +1,9 @@
+<|"WolframKernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "xTensorVersion" -> {"1.3.0", {2025, 12, 29}}, "BulkTwoFormOnTangentVectors" -> 
+  2*qq[a]*uu[-a] - 2*pp[a]*vv[-a], "TwiceWallFormOnTangentVectors" -> 
+  -2*nn[b]*nn[d]*qq[-b]*uu[-d] + 2*nn[-b]*nn[b]*qq[d]*uu[-d] + 2*nn[b]*nn[d]*pp[-b]*vv[-d] - 
+   2*nn[-b]*nn[b]*pp[d]*vv[-d], "RemainderBeforeNormalConstraints" -> 
+  2*qq[a]*uu[-a] + 2*nn[a]*nn[b]*qq[-a]*uu[-b] - 2*nn[-a]*nn[a]*qq[b]*uu[-b] - 2*pp[a]*vv[-a] - 
+   2*nn[a]*nn[b]*pp[-a]*vv[-b] + 2*nn[-a]*nn[a]*pp[b]*vv[-b], "UnconstrainedIdentityResidual" -> 0, 
+ "Conditions" -> "n.n=1, n.u=0, n.v=0; p,q arbitrary dualized K on the two wall tangent vectors", 
+ "Messages" -> {}|>

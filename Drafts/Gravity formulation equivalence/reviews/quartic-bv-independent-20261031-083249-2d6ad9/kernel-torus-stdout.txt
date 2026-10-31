@@ -1,0 +1,41 @@
+Exact finite torus-flat-background cyclic BV test; Sage 10.9
+Constant T3 forms, volume=1, A0=e1 J3; D=[A0, .], F(A0)=0.
+Not a hyperbolic/AdS result: only a finite torus flat-background test.
+a=1/2. Color basis X1=J1+P1,X2=J2+P2,Y1=J1-P1,Y2=J2-P2,J3,P3.
+UV is the X doublet in form masks 0,1,6,7 (transverse sectors 1,e23); h=(ad J3)^-1 i_{e1} on UV.
+P retains all Y1,Y2,J3,P3 forms and X transverse sectors e2,e3; DP is nonzero.
+40 retained coordinates: 16 physical, 16 physical antifields, 4 ghosts, 4 ghost antifields.
+UV im h has 4 odd coordinates: 2 UV ghosts and 2 physical antifields.
+PASS D^2=0
+PASS D is a graded derivation on all 2304 basis pairs
+PASS Dh+hD=R
+PASS h^2=hP=Ph=0
+PASS P^2=P and DP=PD
+PASS P self-transpose
+PASS D graded cyclic
+PASS h graded cyclic
+PASS im h isotropic and half-dimensional
+PASS nonminimal DP and nonzero D on retained ghosts
+PASS UV Lagrangian includes ghosts and physical antifields
+PASS actual UV kinetic Hessian on im h is invertible
+PASS actual second-order stationary solve gives -h[X,X]/2
+PASS all actual UV stationary residuals vanish through degree 2
+PASS quartic from actual stationary substitution equals -<K,hK>/8
+PASS quartic is nonzero
+PASS full unprojected 48-coordinate CME
+PASS all fields/ghosts/antifields satisfy QPsi=-DPsi-[Psi,Psi]/2
+PASS explicit component-first Qalpha-star=Falpha-[alpha-star,c]
+PASS explicit component-first Qc-star=-Dalpha-star-[alpha,alpha-star]+[c-star,c]
+PASS both quartic master sides are nonzero
+PASS projected cubic self-bracket normalization
+PASS free BRST quartic normalization
+PASS quartic master equation exact coefficient by coefficient
+PASS wrong sign of S4 fails
+PASS S4 contains nonzero ghost-antifield terms
+PASS full component-first quartic including c-star agrees
+PASS all 40 retained coordinates occur
+PASS free quadratic BV action contains antifield times Dghost
+Monomial counts S2P=6, S3P=57, S4=43, each master side=32.
+Quartic profile (physical,ghost,physical-antifield,ghost-antifield): {(1, 2, 0, 1): 5, (2, 1, 1, 0): 38}
+All 29 labelled exact torus-fixture checks passed.
+Saved actual output and exact polynomials in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9

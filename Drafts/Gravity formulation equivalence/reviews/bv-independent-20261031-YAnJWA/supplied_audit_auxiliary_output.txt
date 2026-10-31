@@ -1,0 +1,16 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: Supplied-text audit source SHA256: 33cd7994f4bc12a20b0f91c9642093c51dbd3cc9ed13196e996170e557fd9af8
+  bulk contorsion quadratic = a q(U) vol: PASS
+  L inverse on all matrix entries: PASS
+  auxiliary Hessian determinant: PASS
+  auxiliary Hessian characteristic polynomial: PASS
+  adapted-frame bulk flux: PASS
+  completed wall cancels same-cutoff bulk flux: PASS
+  ALL SUPPLIED-TEXT AUXILIARY CHECKS PASSED; SageMath 10.9
+  
+elapsedMs: 3845

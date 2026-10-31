@@ -1,0 +1,6 @@
+<|"Results" -> <|"Assumptions" -> 
+    "0<x<pi, e=(dx,sin(x)dy,dz), arbitrary 9 K_ab(x), gamma=i, real lapse nn(x)", 
+   "Q^a + e^{ai}J_i residual" -> {0, 0, 0}, 
+   "H_scalar+H_G[-i gradN] - H_real - (i/kappa) div(N Q) residual" -> 0, 
+   "ADM potential identity at arbitrary symmetric K and arbitrary triad variation residual" -> 0|>, 
+ "FailedOrAbortedPresent" -> False, "Messages" -> {}|>

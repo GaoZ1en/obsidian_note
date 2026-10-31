@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_9e589c73106941e9a40e3ac7530c3b32|fc_033d43aad14c2852016ae50d85181481918871143c7b7c1066",
+  "sessionId": "7386efdc-b515-4a20-be9e-736565a6c896",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "DefManifold[MC, 3, {a, b, c, d, f}];\nDefChart[CH, MC, {1, 2, 3}, {rr[], tau[], phi[]}];\nDefMetric[1, gg[-a, -b], DD, PrintAs -> \"g\"];\nDefTensor[nn[a], MC];\nreport = Block[{$MessageList = {}},\n  MetricInBasis[gg, -CH, DiagonalMatrix[{1, Cosh[rr[]]^2, Sinh[rr[]]^2}]];\n  MetricCompute[gg, CH, All];\n  ComponentValue[nn[{1, CH}], 1];\n  ComponentValue[nn[{2, CH}], 0];\n  ComponentValue[nn[{3, CH}], 0];\n  scalar = FullSimplify[ToValues[TraceBasisDummy[ToBasis[CH][RicciScalarDD[]]]], rr[] > 0];\n  normalDivergence = FullSimplify[ToValues[TraceBasisDummy[ToBasis[CH][DD[-a][nn[a]]]]], rr[] > 0];\n  thetaPerCoordinateArea = 2 Sqrt[2] Exp[-3 rr[]/2] Cosh[rr[]] Sinh[rr[]];\n  tailQuadraticIntegral = Integrate[Exp[-3 u] Cosh[u] Sinh[u], {u, lower, Infinity}, Assumptions -> lower > 0];\n  <|\"WolframKernelVersion\" -> System`$Version, \"xCobaVersion\" -> xAct`xCoba`$Version,\n    \"Metric\" -> DiagonalMatrix[{1, Cosh[rr[]]^2, Sinh[rr[]]^2}],\n    \"ScalarCurvature\" -> scalar, \"CurvatureResidual\" -> FullSimplify[scalar + 6, rr[] > 0],\n    \"OutwardNormalDivergence\" -> normalDivergence,\n    \"ExtrinsicCurvatureResidual\" -> FullSimplify[normalDivergence - Tanh[rr[]] - Coth[rr[]], rr[] > 0],\n    \"AntisymmetricMode\" -> \"C12=exp(-3r/2)/sqrt(2), C21=-C12, all others zero in e1=cosh(r)dtau, e2=sinh(r)dphi, e3=dr\",\n    \"QuadraticTailPerCoordinateArea\" -> FullSimplify[tailQuadraticIntegral, lower > 0],\n    \"BoundaryThetaPerCoordinateArea\" -> thetaPerCoordinateArea,\n    \"BoundaryThetaLargeR\" -> Limit[thetaPerCoordinateArea, rr[] -> Infinity],\n    \"Messages\" -> (ToString[#, InputForm] & /@ $MessageList)|>\n];\nExport[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/05-xact-components-hyperbolic-result.wxf\", report, \"WXF\"];\nExport[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/05-xact-components-hyperbolic-result.txt\", ToString[report, InputForm, PageWidth -> 110], \"Text\"];\nreport",
+    "profile": "components",
+    "timeoutMs": 180000,
+    "maxOutputChars": 30000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"WolframKernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"xCobaVersion\\\" -> {\\\"0.8.6\\\", {2021, 2, 28}}, \\\"Metric\\\" -> {{1, 0, 0}, {0, Cosh[rr[]]^2, 0}, {0, 0, Sinh[rr[]]^2}}, \\\"ScalarCurvature\\\" -> -6, \\\"CurvatureResidual\\\" -> 0, \\\"OutwardNormalDivergence\\\" -> Coth[rr[]] + Tanh[rr[]], \\\"ExtrinsicCurvatureResidual\\\" -> 0, \\\"AntisymmetricMode\\\" -> \\\"C12=exp(-3r/2)/sqrt(2), C21=-C12, all others zero in e1=cosh(r)dtau, e2=sinh(r)dphi, e3=dr\\\", \\\"QuadraticTailPerCoordinateArea\\\" -> (-1 + 5*E^(4*lower))/(20*E^(5*lower)), \\\"BoundaryThetaPerCoordinateArea\\\" -> (2*Sqrt[2]*Cosh[rr[]]*Sinh[rr[]])/E^((3*rr[])/2), \\\"BoundaryThetaLargeR\\\" -> Infinity, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"5ef88f3911ca4743a400e12ece3c3c81da078c92125b291c117a93903a349857\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3734,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"WolframKernelVersion\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\", \"xCobaVersion\" -> {\"0.8.6\", {2021, 2, 28}}, \"Metric\" -> {{1, 0, 0}, {0, Cosh[rr[]]^2, 0}, {0, 0, Sinh[rr[]]^2}}, \"ScalarCurvature\" -> -6, \"CurvatureResidual\" -> 0, \"OutwardNormalDivergence\" -> Coth[rr[]] + Tanh[rr[]], \"ExtrinsicCurvatureResidual\" -> 0, \"AntisymmetricMode\" -> \"C12=exp(-3r/2)/sqrt(2), C21=-C12, all others zero in e1=cosh(r)dtau, e2=sinh(r)dphi, e3=dr\", \"QuadraticTailPerCoordinateArea\" -> (-1 + 5*E^(4*lower))/(20*E^(5*lower)), \"BoundaryThetaPerCoordinateArea\" -> (2*Sqrt[2]*Cosh[rr[]]*Sinh[rr[]])/E^((3*rr[])/2), \"BoundaryThetaLargeR\" -> Infinity, \"Messages\" -> {}|>",
+        "resultSha256": "5ef88f3911ca4743a400e12ece3c3c81da078c92125b291c117a93903a349857",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3734,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"WolframKernelVersion\\\" -> \\\"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\\\", \\\"xCobaVersion\\\" -> {\\\"0.8.6\\\", {2021, 2, 28}}, \\\"Metric\\\" -> {{1, 0, 0}, {0, Cosh[rr[]]^2, 0}, {0, 0, Sinh[rr[]]^2}}, \\\"ScalarCurvature\\\" -> -6, \\\"CurvatureResidual\\\" -> 0, \\\"OutwardNormalDivergence\\\" -> Coth[rr[]] + Tanh[rr[]], \\\"ExtrinsicCurvatureResidual\\\" -> 0, \\\"AntisymmetricMode\\\" -> \\\"C12=exp(-3r/2)/sqrt(2), C21=-C12, all others zero in e1=cosh(r)dtau, e2=sinh(r)dphi, e3=dr\\\", \\\"QuadraticTailPerCoordinateArea\\\" -> (-1 + 5*E^(4*lower))/(20*E^(5*lower)), \\\"BoundaryThetaPerCoordinateArea\\\" -> (2*Sqrt[2]*Cosh[rr[]]*Sinh[rr[]])/E^((3*rr[])/2), \\\"BoundaryThetaLargeR\\\" -> Infinity, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"5ef88f3911ca4743a400e12ece3c3c81da078c92125b291c117a93903a349857\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3734,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

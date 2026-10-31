@@ -1,0 +1,44 @@
+{
+  "kernel": "10.9",
+  "checks": {
+    "D^2=0": true,
+    "D is a graded derivation on all 2304 basis pairs": true,
+    "Dh+hD=R": true,
+    "h^2=hP=Ph=0": true,
+    "P^2=P and DP=PD": true,
+    "P self-transpose": true,
+    "D graded cyclic": true,
+    "h graded cyclic": true,
+    "im h isotropic and half-dimensional": true,
+    "nonminimal DP and nonzero D on retained ghosts": true,
+    "UV Lagrangian includes ghosts and physical antifields": true,
+    "actual UV kinetic Hessian on im h is invertible": true,
+    "actual second-order stationary solve gives -h[X,X]/2": true,
+    "all actual UV stationary residuals vanish through degree 2": true,
+    "quartic from actual stationary substitution equals -<K,hK>/8": true,
+    "quartic is nonzero": true,
+    "full unprojected 48-coordinate CME": true,
+    "all fields/ghosts/antifields satisfy QPsi=-DPsi-[Psi,Psi]/2": true,
+    "explicit component-first Qalpha-star=Falpha-[alpha-star,c]": true,
+    "explicit component-first Qc-star=-Dalpha-star-[alpha,alpha-star]+[c-star,c]": true,
+    "both quartic master sides are nonzero": true,
+    "projected cubic self-bracket normalization": true,
+    "free BRST quartic normalization": true,
+    "quartic master equation exact coefficient by coefficient": true,
+    "wrong sign of S4 fails": true,
+    "S4 contains nonzero ghost-antifield terms": true,
+    "full component-first quartic including c-star agrees": true,
+    "all 40 retained coordinates occur": true,
+    "free quadratic BV action contains antifield times Dghost": true
+  },
+  "counts": {
+    "S2P": 6,
+    "S3P": 57,
+    "S4": 43,
+    "ward_each_side": 32
+  },
+  "quartic_profiles": {
+    "(1, 2, 0, 1)": 5,
+    "(2, 1, 1, 0)": 38
+  }
+}

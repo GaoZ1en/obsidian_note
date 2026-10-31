@@ -1,0 +1,53 @@
+(* Independent follow-up: arbitrary nonsymmetric K, curved triad,
+   lapse-gradient Gauss compensation, and ADM potential conversion.
+   New source and new outputs; first verification output is untouched. *)
+ClearAll["Global`*"];
+artifactDirectory = "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-ashtekar-20261031-xB1k3D";
+report2 = Block[{$Messages = {}, $MessageList = {}}, Module[
+  {eps, coords, em, einv, densE, qm, km, ka, conn, curvature,
+   scalar, jj, qq, gradN, hg, hs, hr, surface, offshell,
+   de, dE, ksym, dq, potentialResidual, checks},
+  eps[a_, b_, c_] := Signature[{a, b, c}];
+  coords = {x, y, z};
+  em = DiagonalMatrix[{1, Sin[x], 1}];
+  einv = Transpose[Inverse[em]];
+  densE = Sin[x] einv; qm = em.Transpose[em];
+  km = Table[kk[a, b][x], {a, 3}, {b, 3}];
+  ka = km.Transpose[Inverse[em]];
+  conn = I ka; conn[[2, 3]] += Cos[x];
+  curvature = Table[D[conn[[b, i]], coords[[a]]] - D[conn[[a, i]], coords[[b]]]
+    + Sum[eps[i, j, k] conn[[a, j]] conn[[b, k]], {j, 3}, {k, 3}],
+    {a, 3}, {b, 3}, {i, 3}];
+  scalar = Sum[eps[i, j, k] densE[[a, i]] densE[[b, j]] curvature[[a, b, k]],
+    {a, 3}, {b, 3}, {i, 3}, {j, 3}, {k, 3}];
+  jj = Table[Sum[eps[i, j, k] ka[[a, j]] densE[[a, k]],
+    {a, 3}, {j, 3}, {k, 3}], {i, 3}];
+  qq = Table[Sum[eps[a, b, c] em[[c, k]] ka[[b, k]],
+    {b, 3}, {c, 3}, {k, 3}], {a, 3}];
+  gradN = Transpose[einv].{nn'[x], 0, 0};
+  hg = (-I gradN).jj/kap;
+  hs = nn[x] scalar/(2 kap Sin[x]);
+  hr = nn[x] Sin[x]/(2 kap) (Tr[Inverse[qm].km.Inverse[qm].km]
+    - Tr[Inverse[qm].km]^2 - 2);
+  surface = I/kap D[nn[x] qq[[1]], x];
+  offshell = FullSimplify[hs + hg - hr - surface,
+    Assumptions -> 0 < x < Pi && kap > 0];
+  de = Array[ee, {3, 3}];
+  dE = Tr[de] IdentityMatrix[3] - Transpose[de];
+  ksym = {{k11, k12, k13}, {k12, k22, k23}, {k13, k23, k33}};
+  dq = de + Transpose[de];
+  potentialResidual = Expand[-Sum[ksym[[a, i]] dE[[a, i]], {a, 3}, {i, 3}]
+    - 1/2 Sum[(ksym[[a, b]] - Tr[ksym] KroneckerDelta[a, b]) dq[[a, b]], {a, 3}, {b, 3}]];
+  checks = <|
+    "Assumptions" -> "0<x<pi, e=(dx,sin(x)dy,dz), arbitrary 9 K_ab(x), gamma=i, real lapse nn(x)",
+    "Q^a + e^{ai}J_i residual" -> FullSimplify[qq + einv.jj],
+    "H_scalar+H_G[-i gradN] - H_real - (i/kappa) div(N Q) residual" -> offshell,
+    "ADM potential identity at arbitrary symmetric K and arbitrary triad variation residual" -> potentialResidual
+  |>;
+  <|"Results" -> checks, "FailedOrAbortedPresent" -> !FreeQ[checks, $Failed | $Aborted],
+    "Messages" -> (ToString[#, InputForm] & /@ $MessageList)|>
+]];
+textPath = Export[FileNameJoin[{artifactDirectory, "offshell-actual-output.txt"}],
+  ToString[report2, InputForm, PageWidth -> 100], "Text"];
+wxfPath = Export[FileNameJoin[{artifactDirectory, "offshell-actual-output.wxf"}], report2, "WXF"];
+{textPath, wxfPath, report2["FailedOrAbortedPresent"], report2["Messages"]}

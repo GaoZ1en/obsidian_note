@@ -1,0 +1,9 @@
+# Frozen independent low-wheel investigation
+
+The [English proof](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-independent-20261031.cbreRi7V/proof.md>) is the independent report. Its last section states the exact scope and limitations.
+
+The [Wolfram source](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-independent-20261031.cbreRi7V/checks.wl>), [readable result](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-independent-20261031.cbreRi7V/results.txt>), [exact result](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-independent-20261031.cbreRi7V/results.wxf>), and [actual successful untruncated server return](</Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/low-wheels-independent-20261031.cbreRi7V/actual-server-return.json>) preserve the evidence. Fifteen exact labels passed; the symbolic covector test is one generic rational covector with eighteen arbitrary insertion coefficients. General-covector parity and analytic operator theorems are proved in prose, not inferred from this fixture.
+
+This directory is frozen by a SHA-256 manifest and read-only permissions. The original source contains this directory as its export destination. To replay, copy the source into a new private directory and change its `dir` assignment before running it. Do not execute the frozen source unchanged or overwrite any result. Any later supplied question, correction, or expanded proof belongs in a separately named follow-up directory.
+
+No parent note was edited. No files under Articles were modified. No new reviewer output other than this investigation was inspected. The later radial bounded-band/L1 question is explicitly identified in the proof.

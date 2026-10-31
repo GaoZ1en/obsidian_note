@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "profile": "core",
+  "result": "<|\"RicciPlus2g\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"DeDonderMinusLaplacianMinusRicci\" -> {0, 0, 0}, \"HessianLogCoshOrthonormal\" -> {{Sech[r]^2, 0, 0}, {0, 1, 0}, {0, 0, Tanh[r]^2}}, \"LaplacianLogCosh\" -> 2, \"Curl_f_dphi\" -> {0, 0, Coth[r]*Derivative[1][f][r]}, \"CurlSquared_f_dphi\" -> {0, Csch[r]*Sech[r]*Derivative[1][f][r] - Derivative[2][f][r], 0}, \"CurlResidual\" -> {0, 0, 0}, \"CurlSquaredResidual\" -> {0, 0, 0}|>",
+  "resultSha256": "c21f42dcfc8e33716f84e25be2d0c8072aff6273cc537589ac44096d16b382c8",
+  "truncated": false,
+  "messages": [],
+  "loadedPackages": [
+    "xAct`xTensor`",
+    "xAct`xPert`",
+    "xAct`xTras`"
+  ],
+  "loadErrors": [],
+  "loadMessages": [],
+  "elapsedMs": 3147,
+  "transportStderr": []
+}

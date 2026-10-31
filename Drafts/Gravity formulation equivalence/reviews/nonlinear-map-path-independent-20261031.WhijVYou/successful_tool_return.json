@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_5a8c51316b444767aba250b7c1f327bc|fc_040698c8e3d2c94c016ae545365b4c81918fbed420663e9986",
+  "sessionId": "5591b6f3-7f44-487e-ac64-b3a5b200fb87",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/check_map_path.py')\nexec(compile(p.read_text(),str(p),'exec'),{'__file__':str(p),'__name__':'__main__'})",
+    "timeoutMs": 600000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"sage_version\\\": \\\"SageMath version 10.9, Release Date: 2026-05-04\\\",\\n  \\\"fixture\\\": \\\"complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell\\\",\\n  \\\"kappa\\\": \\\"indeterminate kap over QQ(i); exact rational functions\\\",\\n  \\\"coordinates\\\": 48,\\n  \\\"odd_generators\\\": 24,\\n  \\\"even_fluctuation_variables\\\": 24,\\n  \\\"all_passed\\\": true,\\n  \\\"term_counts\\\": {\\n    \\\"S2\\\": 57,\\n    \\\"Sc3\\\": 108,\\n    \\\"Sg3\\\": 147,\\n    \\\"G3\\\": 36,\\n    \\\"G4\\\": 108,\\n    \\\"cubic_bridge\\\": 126,\\n    \\\"quartic_G4S2\\\": 456\\n  },\\n  \\\"elapsed_seconds\\\": 514.9160530567169\\n}\\nFAILED LABELS: []\\nCHECK COUNT: 127\\nOUTPUT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c5bc548a605cd93e8ab7cf977f9010cb4f7ae245554aa71d90a9c7d3dce54e92\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 525530,\n  \"transportStderr\": [],\n  \"codeSha256\": \"80d622d51eab1886d173ad0792f84ba87e7b8c08dba07986c9bf64eb791eb3ed\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"sage_version\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"fixture\": \"complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell\",\n  \"kappa\": \"indeterminate kap over QQ(i); exact rational functions\",\n  \"coordinates\": 48,\n  \"odd_generators\": 24,\n  \"even_fluctuation_variables\": 24,\n  \"all_passed\": true,\n  \"term_counts\": {\n    \"S2\": 57,\n    \"Sc3\": 108,\n    \"Sg3\": 147,\n    \"G3\": 36,\n    \"G4\": 108,\n    \"cubic_bridge\": 126,\n    \"quartic_G4S2\": 456\n  },\n  \"elapsed_seconds\": 514.9160530567169\n}\nFAILED LABELS: []\nCHECK COUNT: 127\nOUTPUT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "c5bc548a605cd93e8ab7cf977f9010cb4f7ae245554aa71d90a9c7d3dce54e92",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 525530,
+        "transportStderr": [],
+        "codeSha256": "80d622d51eab1886d173ad0792f84ba87e7b8c08dba07986c9bf64eb791eb3ed"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"sage_version\\\": \\\"SageMath version 10.9, Release Date: 2026-05-04\\\",\\n  \\\"fixture\\\": \\\"complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell\\\",\\n  \\\"kappa\\\": \\\"indeterminate kap over QQ(i); exact rational functions\\\",\\n  \\\"coordinates\\\": 48,\\n  \\\"odd_generators\\\": 24,\\n  \\\"even_fluctuation_variables\\\": 24,\\n  \\\"all_passed\\\": true,\\n  \\\"term_counts\\\": {\\n    \\\"S2\\\": 57,\\n    \\\"Sc3\\\": 108,\\n    \\\"Sg3\\\": 147,\\n    \\\"G3\\\": 36,\\n    \\\"G4\\\": 108,\\n    \\\"cubic_bridge\\\": 126,\\n    \\\"quartic_G4S2\\\": 456\\n  },\\n  \\\"elapsed_seconds\\\": 514.9160530567169\\n}\\nFAILED LABELS: []\\nCHECK COUNT: 127\\nOUTPUT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c5bc548a605cd93e8ab7cf977f9010cb4f7ae245554aa71d90a9c7d3dce54e92\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 525530,\n  \"transportStderr\": [],\n  \"codeSha256\": \"80d622d51eab1886d173ad0792f84ba87e7b8c08dba07986c9bf64eb791eb3ed\"\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<|"supplied_form_generator_equals_component_generator" -> True, 
+ "all_Qe_components_match_left_derivative" -> True, 
+ "all_Qomega_components_match_left_derivative" -> True, 
+ "all_Qrho_components_match_left_derivative" -> True, 
+ "all_Qtau_components_match_left_derivative" -> True, "Qq_right_Schur_tau_block_equals_e" -> True, 
+ "Qq_right_Schur_rho_block_equals_w" -> True, "pP_right_Schur_tau_block_equals_e" -> True, 
+ "pP_right_Schur_rho_block_equals_w" -> True, "exact_inverse_antifield_identity" -> True, 
+ "using_left_B_in_ungraded_Schur_is_wrong" -> True, "wrong_Schur_11_nonzero_monomials" -> 3, 
+ "coframe_determinant" -> -(ec[1, 3]*ec[2, 2]*ec[3, 1]) + ec[1, 2]*ec[2, 3]*ec[3, 1] + 
+   ec[1, 3]*ec[2, 1]*ec[3, 2] - ec[1, 1]*ec[2, 3]*ec[3, 2] - ec[1, 2]*ec[2, 1]*ec[3, 3] + 
+   ec[1, 1]*ec[2, 2]*ec[3, 3], "mixed_Qq_Berezinian" -> 
+  (-(ec[1, 3]*ec[2, 2]*ec[3, 1]) + ec[1, 2]*ec[2, 3]*ec[3, 1] + ec[1, 3]*ec[2, 1]*ec[3, 2] - 
+    ec[1, 1]*ec[2, 3]*ec[3, 2] - ec[1, 2]*ec[2, 1]*ec[3, 3] + ec[1, 1]*ec[2, 2]*ec[3, 3])^(-1), 
+ "mixed_pP_Berezinian" -> -(ec[1, 3]*ec[2, 2]*ec[3, 1]) + ec[1, 2]*ec[2, 3]*ec[3, 1] + 
+   ec[1, 3]*ec[2, 1]*ec[3, 2] - ec[1, 1]*ec[2, 3]*ec[3, 2] - ec[1, 2]*ec[2, 1]*ec[3, 3] + 
+   ec[1, 1]*ec[2, 2]*ec[3, 3], "full_canonical_Berezinian_qp_to_QP" -> 
+  (-(ec[1, 3]*ec[2, 2]*ec[3, 1]) + ec[1, 2]*ec[2, 3]*ec[3, 1] + ec[1, 3]*ec[2, 1]*ec[3, 2] - 
+    ec[1, 1]*ec[2, 3]*ec[3, 2] - ec[1, 2]*ec[2, 1]*ec[3, 3] + ec[1, 1]*ec[2, 2]*ec[3, 3])^(-2), 
+ "full_semidensity_factor_qp_to_QP_positive_body" -> 
+  (-(ec[1, 3]*ec[2, 2]*ec[3, 1]) + ec[1, 2]*ec[2, 3]*ec[3, 1] + ec[1, 3]*ec[2, 1]*ec[3, 2] - 
+    ec[1, 1]*ec[2, 3]*ec[3, 2] - ec[1, 2]*ec[2, 1]*ec[3, 3] + ec[1, 1]*ec[2, 2]*ec[3, 3])^(-1), 
+ "generating_function_Grassmann_monomials" -> 61|>

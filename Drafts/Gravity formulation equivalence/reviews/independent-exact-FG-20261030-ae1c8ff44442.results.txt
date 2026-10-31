@@ -1,0 +1,15 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: flat_A True
+  flat_B True
+  g_over_ell2 Matrix([[r**(-2), 0, 0], [0, a(u), (r**4 + a(u)*b(v))/(2*r**2)], [0, (r**4 + a(u)*b(v))/(2*r**2), b(v)]])
+  FG_vector_residual Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])
+  FG_vector_verified True
+  Hill_residuals [0, 0]
+  Hill_Wronskian 1/2
+  
+elapsedMs: 4684

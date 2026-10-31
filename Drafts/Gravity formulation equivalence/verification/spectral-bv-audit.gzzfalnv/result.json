@@ -1,0 +1,226 @@
+{
+  "scope": "Static archive/link/diagnostic audit only; no math kernel, external URL test or historical anchor sentence check.",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "local links and line bounds",
+      "passed": true
+    },
+    {
+      "label": "frozen hashes and working parent source",
+      "passed": true
+    },
+    {
+      "label": "byte copies without kernel reruns",
+      "passed": true
+    },
+    {
+      "label": "actual exact and interval result labels",
+      "passed": true
+    },
+    {
+      "label": "successful Sage return diagnostics",
+      "passed": true
+    },
+    {
+      "label": "main displays and critical scope",
+      "passed": true
+    }
+  ],
+  "details": {
+    "local links and line bounds": {
+      "documents": 14,
+      "local_link_occurrences": 532,
+      "errors": []
+    },
+    "frozen hashes and working parent source": {
+      "checked": 18,
+      "mismatches": []
+    },
+    "byte copies without kernel reruns": [
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/executed-source.py",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/result.json",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/ghost_exact.sobj",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/source.sha256",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/actual-server-return.json",
+        "passed": true
+      },
+      {
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-spectral-second-order-20261031-GVgawC/actual-server-return.json",
+        "passed": true
+      }
+    ],
+    "actual exact and interval result labels": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/result.json",
+        "labels": 40,
+        "expected": 40,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-spectral-second-order-20261031-GVgawC/actual-results.json",
+        "labels": 26,
+        "expected": 26,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/sage-result.json",
+        "labels": 25,
+        "expected": 25,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/connection-action-result.json",
+        "labels": 18,
+        "expected": 18,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/lorentz-fiber-N2-result.json",
+        "labels": 8,
+        "expected": 8,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/wolfram-result.txt",
+        "labels": 78,
+        "expected": 78,
+        "passed": true
+      }
+    ],
+    "successful Sage return diagnostics": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/actual-server-return.json",
+        "passed": true,
+        "elapsedMs": 3275
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-spectral-second-order-20261031-GVgawC/actual-server-return.json",
+        "passed": true,
+        "elapsedMs": 3343
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/sage-tool-return.json",
+        "passed": true,
+        "elapsedMs": 3434
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/connection-action-tool-return.json",
+        "passed": true,
+        "elapsedMs": 4047
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/lorentz-fiber-N2-tool-return.json",
+        "passed": true,
+        "elapsedMs": 3556
+      }
+    ],
+    "main displays and critical scope": {
+      "display_pairs": 41,
+      "inline_pairs": 168,
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "5a",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "11a",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "18a",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "lines": 467,
+      "missing_scope_fragments": []
+    }
+  },
+  "snapshot": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "e6b085fc97efe345fcdfbbc59e12abda50007a1edc30e5034d62a67f477a9f86"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "a8a87f80211421af6bcb6784b8f3781b14abbf08441e47e8905a6cc42e6a03ba"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "79adf3576e2f1e6f812bee516686c980a872b98a916e6f5077d7f920ab505b64"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/17 Spectral BV compression and master-equation obstruction.md",
+      "sha256": "59d0127a1d03b88b6defb10622b030bb660b701e70da61cf6a33d842ae2801ac"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "7919c479cba850efb11c8b300241602667b5e5f486242398b1a1791429263f05"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "fde964ded2d077e7b86c43d5c63e8648ffa20f77ffe4f756e333d465117fd990"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/README.md",
+      "sha256": "06366216ac53b60bb8d4b35a1241c106d18ee666464fb9c0803366721dc0de78"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-spectral-second-order-20261031-GVgawC/report.frozen-independent.md",
+      "sha256": "0aa7f6823cb80f0fa610c5133a34a55009132e209717854926e8e1262d082d0f"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-spectral-second-order-20261031-GVgawC/supplied-text-audit.md",
+      "sha256": "daa05dd0664c25bf892bd2952966b14d7756cfcf5fc6783148540d22edf5614f"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/FREEZE.md",
+      "sha256": "0cae149b936b48d7175421f53c558f19d8e8d97cd821a9d9237cb7204b522c98"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/derivation.md",
+      "sha256": "5f4985af2fb768645b46d455f9356005771286eb3bc655d8f2f319faa379b854"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/connection_action_addendum.md",
+      "sha256": "a649fbe7961b14fa864289b8cc956d3f19b7848316d81d2b844ee09857724cd7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/supplied_note17_audit.md",
+      "sha256": "a55b5a44497091254bdf3b393eceb449e4290ffe552ae3eaef4e459027aeb2d3"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/lorentz-fiber-api-diagnostic.md",
+      "sha256": "b9a67dc9b7c67964a8338cbcf8a745177218eb36b110f0558a47db3fd2003e8a"
+    }
+  ]
+}

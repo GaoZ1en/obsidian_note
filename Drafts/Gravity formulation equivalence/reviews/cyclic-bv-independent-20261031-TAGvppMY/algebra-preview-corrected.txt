@@ -1,0 +1,13 @@
+<|"Result" -> <|"Checks" -> <|"H squared minus identity" -> True, "Phi_i symmetric" -> True, 
+     "S anticommutes Phi_i" -> True, "Actual Hilbert delta equals H D H parity" -> True, 
+     "D Stokes transpose sign" -> True, "delta cyclic transpose sign" -> True, 
+     "K equals H D_1 with the stated blocks" -> True, "K formally selfadjoint" -> True, 
+     "Phi anticommutator on E0" -> True, "Phi anticommutator on E1" -> True, 
+     "Total Weitzenboeck potential on E1" -> True, "Phi anticommutator commutes star-S" -> True, 
+     "T spin decomposition" -> True|>, "AllChecksPassed" -> True, "SpinDimensions" -> {1, 3, 5}, 
+   "TSpinEigenvalues" -> {2, 1, -1}, "PhiPotentialSpinEigenvalues" -> {4, 3, 1}, 
+   "MetricTwistedHodgePotentialSpinEigenvalues" -> {0, -1, -3}, 
+   "FullPotentialSpinEigenvalues" -> {4, 2, -2}, "Coverage" -> "Exact finite \
+exterior/real-Lie-algebra matrices; not a proof of global domains or spectral gaps."|>, 
+ "Failed" -> False, "Messages" -> {}, "KernelVersion" -> 
+  "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)"|>

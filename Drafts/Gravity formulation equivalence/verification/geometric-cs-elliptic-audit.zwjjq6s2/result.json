@@ -1,0 +1,201 @@
+{
+  "scope": "Static stage audit only; no mathematical kernel or external URL fetch.",
+  "time": "2026-10-31T06:53:31.541978+08:00",
+  "checks": [
+    {
+      "label": "local link existence and numerical line bounds",
+      "passed": true,
+      "detail": {
+        "documents": 18,
+        "links": 501,
+        "bad": []
+      }
+    },
+    {
+      "label": "four fixed archive hashes",
+      "passed": true,
+      "detail": [
+        {
+          "file": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/executed-source.wl",
+          "expected": "5e2978918c580423a2a5bec2c6a5b80db209de6e08f1f1449d5534503c505379",
+          "actual": "5e2978918c580423a2a5bec2c6a5b80db209de6e08f1f1449d5534503c505379"
+        },
+        {
+          "file": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/preview.txt",
+          "expected": "4703789bf9bd84fb399fa16959868e563be8308b4bba5959e0e81b302326c2b5",
+          "actual": "4703789bf9bd84fb399fa16959868e563be8308b4bba5959e0e81b302326c2b5"
+        },
+        {
+          "file": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/result.wxf",
+          "expected": "479a3ba8e609ec077ff2356920f2beda8fb00f8e312818ea4bfd25ab214f35d3",
+          "actual": "479a3ba8e609ec077ff2356920f2beda8fb00f8e312818ea4bfd25ab214f35d3"
+        },
+        {
+          "file": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/actual-server-return.json",
+          "expected": "8b8c1b77fa4e1173f698046f3015a82b44eccf57d3da1246aa0af611861c18c6",
+          "actual": "8b8c1b77fa4e1173f698046f3015a82b44eccf57d3da1246aa0af611861c18c6"
+        }
+      ]
+    },
+    {
+      "label": "four archived copies retain original bytes",
+      "passed": true,
+      "detail": [
+        {
+          "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric_cs_elliptic_bridge.wl",
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/executed-source.wl",
+          "byte_equal": true
+        },
+        {
+          "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt",
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/preview.txt",
+          "byte_equal": true
+        },
+        {
+          "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf",
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/result.wxf",
+          "byte_equal": true
+        },
+        {
+          "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/8d4e002c2116-research-result.json",
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/actual-server-return.json",
+          "byte_equal": true
+        }
+      ]
+    },
+    {
+      "label": "actual xAct success and diagnostics",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Preview\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/preview.txt\", \"Native\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-elliptic.exqGf2/result.wxf\", \"AllResidualsZero\" -> True, \"Failed\" -> False, \"UnevaluatedComputations\" -> False, \"KernelVersion\" -> \"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)\"|>",
+        "resultSha256": "3de8f8c584ac42588736092fbeb32010bd9dbf04651f00260b2efd89fe301f78",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3314,
+        "transportStderr": []
+      }
+    },
+    {
+      "label": "eighteen recorded groups and clean flags",
+      "passed": true,
+      "detail": [
+        "actual_CS_quadratic_density_and_Hessian_factor",
+        "xCoba_Ricci_minus_two",
+        "proper_Gram_diagonal_all_jets",
+        "proper_Gram_cross_all_jets",
+        "gauge_annihilation_first_row_all_jets",
+        "gauge_annihilation_second_row_all_jets",
+        "elliptic_square_diagonal_all_jets",
+        "elliptic_square_cross_all_jets",
+        "full_elliptic_symbol_square",
+        "grading_square_and_principal_anticommutator",
+        "gauge_block_characteristic_and_determinant",
+        "upper_cycle_multiplier_normalization",
+        "multiplier_heat_coefficients",
+        "shifted_negative_count",
+        "actual_gravity_mu_logdet_defect",
+        "actual_gravity_mu_logZ_defect",
+        "flat_torus_phase",
+        "balanced_gaussian_metric_weights"
+      ]
+    },
+    {
+      "label": "main display and aligned delimiters balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "label": "precise phase and scope strings retained",
+      "passed": true,
+      "detail": {
+        "scope": "Static string presence, not a mathematical proof."
+      }
+    }
+  ],
+  "all_passed": true,
+  "auditor_sha256": "a3fb23fb101bf03ad9116ec548a4edd86ee90b1e69cb34888afd61fd2b8e21c8",
+  "documents": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/15 Elliptic gravitational CS determinant and gauge phase.md",
+      "sha256": "559535310abb78a6a109c464dc2af8b82c393cf852d3837860e4f64b3ec69532"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "0f47b5e50333675ecbf4e2c418a1b2ecfdc0691dff99736f2794e8e5a3e70cc4"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "bee1edeccb977deb49ca9525d77adb706da89e8fd4769342f7c300d4a3a4c9a4"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "8b028626a65fe0a0182f8ee5a73fb586acd352b414e5cd6f29c49e8f361909cf"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "4439dd10f10c944ec1406dc8b5c33b61ad393ea298bab47c3ceb836983ecdef5"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "5790a045a63ce6688466075e255b869136725264f9b2045a836e11e861f598ab"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-elliptic-parent.9nlbbwl1/README.md",
+      "sha256": "ea62ff0a298ada7787bb734ef7266cdead6293e868bda6596c7f0bd50984408d"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/14 Geometric CS Gaussian map and regulator.md",
+      "sha256": "536c9db80e2cca49e61d9c71be68ef2714f82934b23c89b796310e4c2c0d72f9"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/13 Source-dependent thermal AdS one-loop Ward comparison.md",
+      "sha256": "2d39ffa0bbf77400bede77259bf02af2e48b8c927a512c4e7ed7156f67061fc5"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/derivation.md",
+      "sha256": "26fa1d12e3360278af310fd6578cc1a452f6aab8a45685d94c2c95144263c5c4"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/supplied-text-audit.md",
+      "sha256": "9f9c356e5dd2cdf8d318c57b1d592d4244f1eedbf9d42dbc7c6169a2fa9ad476"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/post-repair-check.md",
+      "sha256": "2d9879f42d215cd544d80cf55ae64da3d452ff913b303d777e8643e100c0d407"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/README.md",
+      "sha256": "87e9d5598df8fc2d0751b2cf7c0fa15520fd23564f75951f781cf88fd8f7f7a1"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/01_frozen_independent_result.md",
+      "sha256": "1bf665a85973e1aff759ba7f4b94940a4b0e110d57ccd0566badc2f6389328db"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/02_independent_balanced_completion.md",
+      "sha256": "52ff412e4e4b03f40d05eba2351c4164720b366e372ac5cb087783817c493179"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/03_supplied_mu_family.md",
+      "sha256": "b07bd2f2d82aeed7fc161806891a6b8621b81b0a9df6d91495ca3df3c4ffe174"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/04_supplied_text_audit_and_trace_addendum.md",
+      "sha256": "c882367ff729b3016d86ad6bcf6d52f1f85a882917ea279b25128c72a0ed39a7"
+    },
+    {
+      "path": "Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/05_revised_supplied_text_audit.md",
+      "sha256": "a6e4e51c2b945b3529f8558e5731b8cfd4622be264a00c719fb8a1eb94051efc"
+    }
+  ]
+}

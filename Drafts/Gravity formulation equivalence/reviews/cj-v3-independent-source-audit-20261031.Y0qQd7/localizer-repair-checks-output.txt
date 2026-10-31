@@ -1,0 +1,6 @@
+<|"Kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", "Assumptions" -> "Real om,nu; beta>0; beta=2 \
+Pi t2, alpha=2 Pi t1 with t2>0. A=om J is skew and g=I. Torus branch has rotation eigenvalue -i n.", 
+ "BosonicOperator" -> {{nu^2 + om^2, 0}, {0, nu^2 + om^2}}, "FactorizationResidual" -> {{0, 0}, {0, 0}}, 
+ "FlowOperatorDeterminant" -> nu^2 + om^2, "FermionOperatorDeterminant" -> nu^2 + om^2, 
+ "BosonOperatorDeterminant" -> (nu^2 + om^2)^2, "OriginalHessianFactorizationResidual" -> {{0, 0}, {0, 0}}, 
+ "TorusEigenvalueResidual" -> 0, "Messages" -> {}|>

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_67ec959eff1641d79f7a814bd2ae576f|fc_00e61ec4e4885aea016ae4c2533ea88191a6023ec8ebaad8bb",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "report=Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/holst_axial_source_checks.wl\"]; report"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nreport=Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/holst_axial_source_checks.wl\"]; report\n```\n\nOutput:\n<|Definitions -> <|eta -> {-1, 1, 1, 1}, epsilon0123 -> 1, r -> 1/beta, kappa -> 8 Pi G4, source -> s K^{IJ}_m epsilon_{IJhm} J^h eta^{mm} volume|>, J2 -> -j0^2 + j1^2 + j2^2 + j3^2, Q_EC -> (-3*(aa - bb)*(aa + bb)*(j0^2 - j1^2 - j2^2 - j3^2))/kap, Q_H -> (6*aa*bb*(j0^2 - j1^2 - j2^2 - j3^2)*rr)/kap, Source -> 6*aa*(j0^2 - j1^2 - j2^2 - j3^2)*ss, ReducedByJ2 -> (-3*(-aa^2 + bb^2 + 2*aa*bb*rr + 2*aa*kap*ss))/kap, StationaryContortion -> {aa -> (kap*ss)/(1 + rr^2), bb -> -((kap*rr*ss)/(1 + rr^2))}, Induced -> (3*(j0^2 - j1^2 - j2^2 - j3^2)*kap*ss^2)/(1 + rr^2), InducedEC -> 3*(j0^2 - j1^2 - j2^2 - j3^2)*kap*ss^2, Ratio -> (1 + rr^2)^(-1), Checks -> <|antisymmetric_contortion -> True, EC_is_Lorentz_scalar -> True, stationarity_a -> True, stationarity_b -> True, torsionless_when_source_zero -> True, EC_limit_ratio -> True, even_Immirzi_ratio -> True|>, AllPassed -> True, Messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nreport=Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/holst_axial_source_checks.wl\"]; report\n```\n\nOutput:\n<|Definitions -> <|eta -> {-1, 1, 1, 1}, epsilon0123 -> 1, r -> 1/beta, kappa -> 8 Pi G4, source -> s K^{IJ}_m epsilon_{IJhm} J^h eta^{mm} volume|>, J2 -> -j0^2 + j1^2 + j2^2 + j3^2, Q_EC -> (-3*(aa - bb)*(aa + bb)*(j0^2 - j1^2 - j2^2 - j3^2))/kap, Q_H -> (6*aa*bb*(j0^2 - j1^2 - j2^2 - j3^2)*rr)/kap, Source -> 6*aa*(j0^2 - j1^2 - j2^2 - j3^2)*ss, ReducedByJ2 -> (-3*(-aa^2 + bb^2 + 2*aa*bb*rr + 2*aa*kap*ss))/kap, StationaryContortion -> {aa -> (kap*ss)/(1 + rr^2), bb -> -((kap*rr*ss)/(1 + rr^2))}, Induced -> (3*(j0^2 - j1^2 - j2^2 - j3^2)*kap*ss^2)/(1 + rr^2), InducedEC -> 3*(j0^2 - j1^2 - j2^2 - j3^2)*kap*ss^2, Ratio -> (1 + rr^2)^(-1), Checks -> <|antisymmetric_contortion -> True, EC_is_Lorentz_scalar -> True, stationarity_a -> True, stationarity_b -> True, torsionless_when_source_zero -> True, EC_limit_ratio -> True, even_Immirzi_ratio -> True|>, AllPassed -> True, Messages -> {}|>"
+      }
+    ]
+  }
+}

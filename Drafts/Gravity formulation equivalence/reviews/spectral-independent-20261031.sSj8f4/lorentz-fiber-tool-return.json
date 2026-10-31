@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_b15d919e3f9c4f85ac5f093f07e48366|fc_07a7e632dc318e80016ae531b0dfb48191be0a00a0e1af39fe",
+  "sessionId": "52c5b41a-a2b0-4e78-a763-e14c83592609",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nexec(compile(Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/spectral-independent-20261031.sSj8f4/lorentz_fiber_check.py').read_text(), 'lorentz_fiber_check.py', 'exec'))",
+    "timeoutMs": 60000,
+    "maxOutputChars": 5000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/spectral-lorentz-fiber.fmq8v1jv\\ncount= 8 all_true= True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4b55b937be6fba770a09b00f81c2d04da4c7e8ea065e87ebf1e18d57572b2d7f\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3320,\n  \"transportStderr\": [],\n  \"codeSha256\": \"606a53a83da5bcc9dedda20d0bf0338dbe5de94c1569e4a16fb03698f7fad180\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "/Users/koishi/.dsh/research-results/kernel-exports/spectral-lorentz-fiber.fmq8v1jv\ncount= 8 all_true= True\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "4b55b937be6fba770a09b00f81c2d04da4c7e8ea065e87ebf1e18d57572b2d7f",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3320,
+        "transportStderr": [],
+        "codeSha256": "606a53a83da5bcc9dedda20d0bf0338dbe5de94c1569e4a16fb03698f7fad180"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/spectral-lorentz-fiber.fmq8v1jv\\ncount= 8 all_true= True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"4b55b937be6fba770a09b00f81c2d04da4c7e8ea065e87ebf1e18d57572b2d7f\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3320,\n  \"transportStderr\": [],\n  \"codeSha256\": \"606a53a83da5bcc9dedda20d0bf0338dbe5de94c1569e4a16fb03698f7fad180\"\n}"
+      }
+    ]
+  }
+}

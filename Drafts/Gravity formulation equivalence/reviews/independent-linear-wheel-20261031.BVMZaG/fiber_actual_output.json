@@ -1,0 +1,278 @@
+{
+  "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+  "conventions": "forms lexicographic; (J_1,J_2,J_3,P_1,P_2,P_3); epsilon_123=1; positive adjoint; parity 1-p",
+  "checks": {
+    "Lie_JJ": true,
+    "Lie_JP": true,
+    "Lie_PP": true,
+    "positive_adjoint_B": true,
+    "skew_adjoint_J": true,
+    "projector_algebra": true,
+    "projector_sum": true,
+    "projector_ranks": true,
+    "star_square": true,
+    "isotropic_p0_s0_w": true,
+    "zero_w_p0_s0": true,
+    "isotropic_p0_s0_f": true,
+    "isotropic_p0_s1_w": true,
+    "zero_w_p0_s1": true,
+    "isotropic_p0_s1_f": true,
+    "isotropic_p0_s2_w": true,
+    "zero_w_p0_s2": true,
+    "isotropic_p0_s2_f": true,
+    "isotropic_p1_s0_w": true,
+    "zero_w_p1_s0": true,
+    "isotropic_p1_s0_f": true,
+    "isotropic_p1_s1_w": true,
+    "zero_w_p1_s1": true,
+    "isotropic_p1_s1_f": true,
+    "isotropic_p1_s2_w": true,
+    "zero_w_p1_s2": true,
+    "isotropic_p1_s2_f": true,
+    "isotropic_p2_s0_w": true,
+    "zero_w_p2_s0": true,
+    "isotropic_p2_s0_f": true,
+    "totalization_cancel": true
+  },
+  "contractions": {
+    "p0_s0_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p0_s0_f": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p0_s1_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p0_s1_f": [
+      [
+        "4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "4"
+      ]
+    ],
+    "p0_s2_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p0_s2_f": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p1_s0_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p1_s0_f": [
+      [
+        "8/3",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "8/3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "8/3"
+      ]
+    ],
+    "p1_s1_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p1_s1_f": [
+      [
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2"
+      ]
+    ],
+    "p1_s2_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p1_s2_f": [
+      [
+        "10/3",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "10/3",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "10/3"
+      ]
+    ],
+    "p2_s0_w": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "p2_s0_f": [
+      [
+        "4",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "4"
+      ]
+    ]
+  },
+  "failures": []
+}

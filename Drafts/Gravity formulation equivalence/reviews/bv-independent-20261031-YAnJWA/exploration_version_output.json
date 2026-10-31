@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_b46b32c6aea040ca878c3a5507981a6e|fc_0beee4d74a95702a016ae521df59a88191ad30e3cc3b80a2e7",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import *\nR=PolynomialRing(QQ, names=('k','x','y','e0','e1','e2','w0','w1','w2'))\nA=ExteriorAlgebra(R, names=('z0','z1','z2','p0','p1','p2','q0','q1','q2','l'))\nz=A.gens()\nf=z[0]*z[2]*z[4]\nprint('Sage version:', version())\nprint('Basis keys:', list(f.monomial_coefficients().items()))\nprint('Methods:', [s for s in dir(f) if 'deriv' in s or 'interior' in s or 'contract' in s])\nprint('Generator anticommutation:', z[0]*z[1]+z[1]*z[0]==0)",
+    "maxOutputChars": 4000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage version: SageMath version 10.9, Release Date: 2026-05-04\\nBasis keys: [(10101, 1)]\\nMethods: ['antiderivation', 'interior_product']\\nGenerator anticommutation: True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"49165ccb04b425934ea160ad33486f03f07347dc58569ceb8d2ec82e8b3947e3\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3976,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9aa7296b66b75a3fe29a0aaf9487364119e972a486363f777483c7cb1baf8bc4\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Sage version: SageMath version 10.9, Release Date: 2026-05-04\nBasis keys: [(10101, 1)]\nMethods: ['antiderivation', 'interior_product']\nGenerator anticommutation: True\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "49165ccb04b425934ea160ad33486f03f07347dc58569ceb8d2ec82e8b3947e3",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3976,
+        "transportStderr": [],
+        "codeSha256": "9aa7296b66b75a3fe29a0aaf9487364119e972a486363f777483c7cb1baf8bc4"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Sage version: SageMath version 10.9, Release Date: 2026-05-04\\nBasis keys: [(10101, 1)]\\nMethods: ['antiderivation', 'interior_product']\\nGenerator anticommutation: True\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"49165ccb04b425934ea160ad33486f03f07347dc58569ceb8d2ec82e8b3947e3\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3976,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9aa7296b66b75a3fe29a0aaf9487364119e972a486363f777483c7cb1baf8bc4\"\n}"
+      }
+    ]
+  }
+}

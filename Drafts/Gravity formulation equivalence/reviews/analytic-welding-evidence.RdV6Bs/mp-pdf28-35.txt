@@ -1,0 +1,579 @@
+3.4   Equivalent descriptions of locality
+
+Generally, the sewing isomorphisms of an R+ -extension can depend on the boundary
+parametrizations of the respective surfaces in any way — as long as associativity holds.
+Following the example of the real determinant line bundle in Section 1.4 (to which we
+also return in Section 3.7), it makes sense to assume that the sewing isomorphisms only
+depend on the boundary parametrizations that are involved in the sewing. In other words,
+if a boundary parametrization that is external to the sewing operation Σ1 j ∞k Σ2 is
+reparametrized, say, by a diffeomorphism in Diff an  + (S ) acting on Σ1 at l ̸= j, then the
+                                                          1
+
+sewing isomorphism should be somehow invariant under this reparametrization. We call
+such R+ -extensions “local,” for in the case of the real determinant line bundle, this follows
+from the locality of the conformal anomaly formula (1.15).
+    In Proposition 3.9, we characterize this property in several equivalent ways, and it
+serves as the definition of locality. Equation (3.63) in Proposition 3.9 is perhaps the most
+instructive realization of locality, as it emphasizes the aforementioned reparametrization
+invariance in terms of cocycles. Such cocycles are always relative to a trivialization Z,
+which we call “reparametrization invariant” if they realize locality.
+
+Proposition 3.9. Given a trivialization Z of a Fr-smooth R+ -extension E, the following
+are equivalent:
+ 1. For any surfaces Σ1 and Σ2 with boundary components j and k, we have
+
+                  ΩZ
+                   j,k (Σ1 ∗l ϕ, Σ2 ) = Ωj,k (Σ1 , Σ2 ),
+                                         Z
+                                                               ϕ ∈ Diff an
+                                                                        + (S ),
+                                                                            1
+                                                                                     l ̸= j.   (3.63)
+
+ 2. For any surfaces S and Σ with boundary components j and k, we have
+
+                               ΩZ
+                                S,j,k (Σ, ϕ) = 0,          ϕ ∈ Diff an
+                                                                    + (S ) .
+                                                                        1
+                                                                                               (3.64)
+
+ 3. For any surface S with boundary component j, we have
+
+                               ΩZ
+                                S,j (ϕ, ψ) = 0,        ϕ, ψ ∈ Diff an
+                                                                   + (S ),
+                                                                       1
+                                                                                               (3.65)
+
+ 4. For any surfaces S1 and S2 with boundary components j and k, we have
+
+                        ΩZ
+                         S1 ,j (ϕ, ψ) = ΩS2 ,k (ϕ, ψ),
+                                         Z
+                                                              ϕ, ψ ∈ Diff an
+                                                                          + (S ) .
+                                                                              1
+                                                                                               (3.66)
+
+ 5. For any surfaces Σ1 and Σ2 with boundary components j and k, we have
+
+                   ΩZ
+                    j,k (Σ1 ∗
+                            j
+                              ϕ, Σ2 ) = ΩZ
+                                         j,k (Σ1 , Σ2 ∗
+                                                      k
+                                                        t(ϕ)),        ϕ ∈ Diff an
+                                                                               + (S ) .
+                                                                                   1
+                                                                                               (3.67)
+
+If the conditions hold for a trivialization Z, we call it reparametrization invariant, and if
+any such Z exists, we call E local.
+
+Proof. We prove the implications 1 =⇒ 2 =⇒ 3 =⇒ 4 =⇒ 1, and 2 ⇐⇒ 5.
+
+1 =⇒ 2: By Equations (3.63, 3.51), the cocycle in Item 2 does not depend on S and j.
+        Thus, by changing to S = Σ and j = k, Equation (3.52) implies Item 2.
+
+
+                                                  28
+2 =⇒ 3: This implication follows directly from Equation (3.57).
+
+3 =⇒ 4: If all the cocycles on Diff an
+                                    + (S ) vanish, then they also agree.
+                                        1
+
+
+4 =⇒ 1: Assuming Item 4, the coboundaries in (3.48) vanish, so they define homomor-
+        phisms ϕ 7! ΩZ l,m (A, S1 ∗
+                                  j
+                                    ϕ) − ΩZ
+                                          l,m (A, S1 ) from Diff + (S ) to the abelian additive
+                                                                 an 1
+
+        group R. As Diff an+ (S ) is a perfect group (see, e.g., [GR07, Theorem 4.4.2]), any
+                               1
+
+        such homomorphism vanishes. It follows that ΩZ       l,m (S1 ∗
+                                                                     j
+                                                                       ϕ, A) − ΩZ
+                                                                                l,m (S1 , A) = 0,
+        which is precisely Equation (3.63) in Item 1 for the surfaces Σ1 = S1 and Σ2 = A.
+
+2 ⇐⇒ 5: This follows directly from Equation (3.55).
+
+Finally, observe that none of the implications above require changing the trivialization.
+
+    In fact, reparametrization invariant trivializations only depend on the internal moduli
+of the surfaces, i.e., the moduli of the surface without boundary parametrizations. Let us
+conclude with a characterization of locality emphasizing this perspective.
+
+Proposition 3.10. Any two globally defined reparametrization invariant trivializations Z
+and W are related by Fr-smooth functions B ∈ F(Mg,b ) such that Z(Σ) = eB(Σ) W (Σ).
+Moreover, for any boundary component j, we have B(Σ ∗j ϕ) = B(Σ) for all ϕ ∈ Diff an
+                                                                                  + (S ).
+                                                                                      1
+
+
+
+
+Proof. The existence of B ∈ F (Mg,b ) is a direct consequence of the Fr-smoothness of Z
+and W . By Equation (3.19), we have ZΣ,j (ϕ) = eB(Σ ∗j ϕ)−B(Σ) WΣ,j (ϕ) for any reference
+surface Σ ∈ Mg,b and diffeomorphism ϕ ∈ Diff an    + (S ). Setting B(ϕ) = B(Σ ∗
+                                                       1
+                                                                                 j
+                                                                                   ϕ) − B(Σ),
+Equations (3.46, 3.65) imply that B(ϕ) + B(ψ) = B(ϕ ◦ ψ) for ϕ, ψ ∈ Diff + (S ). Since
+                                                                                an 1
+
+Diff an
+     + (S ) is a perfect group (see, e.g., [GR07, Theorem 4.4.2]), this yields B(ϕ) = 0.
+         1
+
+
+Remark 3.11. One may also characterize locality without referencing a reparametriza-
+tion invariant trivialization, by considering the sewing isomorphisms on smaller moduli
+spaces Mg,b,j of surfaces which carry a boundary parametrization only at some boundary
+components labeled by j = {j1 , . . . , jn }. In other words, Mg,b,j is the quotient of Mg,b by
+the actions of Diff an
+                    + (S ) acting at all boundary components except j.
+                        1
+
+    Denoting the projection by πj : Mg,b ! Mg,b,j , we have πj (Σ ∗k ϕ) = πj (Σ) for all
+ϕ ∈ Diff an
+         + (S ) and k ∈
+             1         / j. Now, if Z is a reparametrization invariant trivialization of a
+local R+ -extension E, then by Item 2 in Proposition 3.9, we can also take the quotient of
+E(Mg,b ) by the actions of E(Diff an
+                                  + (S )) at all boundary components except j, to obtain
+                                      1
+
+an R+ -bundle E(Mg,b,j ) ! Mg,b,j with trivialization Z(πj (Σ)) = Z(Σ); for any reference
+surface Σ1 with boundary component l, the actions
+                        E
+                  Z(Σ) ∗k ZΣ1 ,l (ϕ) = Z(Σ ∗k ϕ),    ϕ ∈ Diff an
+                                                              + (S ),
+                                                                  1
+                                                                        k∈
+                                                                         / j,             (3.68)
+
+leave the trivialization invariant. Here, the quotients E(Mg,b,j ) are independent of Z by
+Proposition 3.10. Moreover, E(Mg,b,j ) still come with well-defined sewing isomorphisms for
+
+
+
+
+                                                29
+the still parametrized boundary components, such that the following diagrams commute17 :
+
+                                                   E
+                                                 j ∞k
+            E(Mg1 ,b2 ) ⊠ E(Mg2 ,b2 )                              E(Mg1 +g2 ,b1 +b2 −2 )
+                                                                                                     (3.69)
+                                                   E
+                                                 j ∞k
+        E(Mg1 ,b2 ,{j} ) ⊠ E(Mg2 ,b2 ,{k} )                       E(Mg1 +g2 ,b1 +b2 −2,∅ )
+                                                  E
+                                                 ∞j,k
+                      E(Mg,b )                                        E(Mg+1,b−2 )
+                                                                                                     (3.70)
+                                                  E
+                                                 ∞j,k
+                 E(Mg,b,{j,k} )                                      E(Mg+1,b−2,∅ ).
+
+    On the contrary, just the R+ -bundles E(Mg,b,∅ ) define the R+ -bundles E(Mg,b ) by pull-
+back via π∅ . Together with just the dotted sewing isomorphisms in the diagrams (3.69, 3.70),
+this fully determines the R+ -extension E. If Z is a trivialization of E(Mg,b,∅ ), then it pulls
+back to a reparametrization invariant trivialization of E(Mg,b ). For such a trivialization,
+the cocycles of Equation (3.63) agree in their defining relations:
+                  E                 Z
+         Z(Σ1 ) j ∞k Z(Σ2 ) = eΩj,k (Σ1 ,Σ2 ) Z(Σ1 j ∞k Σ2 ),
+                                                                                 ϕ ∈ Diff an
+                                                                                          + (S ),
+                                                                                              1
+                                                                                                     (3.71)
+                  E               ΩZ
+                                   j,k (Σ1 ∗ ϕ,Σ2 )
+      Z(Σ1 ∗l ϕ) j ∞k Z(Σ2 ) = e           l          Z((Σ1 j ∞k Σ2 ) ∗l ϕ),
+
+because the corresponding elements in the first and second lines of (3.71) each project to
+the same element in E(Mg,b,∅ ). This shows that any R+ -extension constructed by pullback
+from the classical finite-dimensional moduli space Mg,b,∅ is local.
+
+
+3.5     Central charge
+
+Consider the unit disk S = D as the reference surface, and the deformation-deformation
+cocycle identity (3.49) for a trivialization Z of an R+ -extension E. By Item 1 of Lemma 2.3,
+the disk is a special reference surface in the sense that the cocycle
+
+                                        ΩZ
+                                         D,1 : CompC (S ) ! R
+                                                       1
+                                                                                                     (3.72)
+
+is defined on any pair of composable complex deformations ϕ, ψ ∈ CompC (S1 ). Thus,
+ΩZD,1 (ϕ, ψ) defines a cohomology class in the cohomology group H (Def C (S ); R), which was
+                                                                 2         1
+
+defined in [MP26, Section 3]. This cohomology group was computed in [MP26, Figure 3.2],
+showing that there are unique real constants a, b, c ∈ R such that
+
+                         [ΩZ
+                           D,1 ] = a [Re ΩBT ] + b [Re ΩRCR ] + c [Im ΩBT ].                         (3.73)
+
+in the basis of cocycles described below. It is important to note that, because changing
+the trivialization Z only changes the cocycle ΩZD,1 by a coboundary, the constants a, b, c
+are independent of the choice of Z.
+   17
+      Here, Mg,b,∅ is the classical finite-dimensional moduli space [Abi89], which is the quotient of Mg,b by
+all reparametrizations, leaving only the enumeration of the boundary components.
+
+
+                                                         30
+Definition 3.12. The central charge of an R+ -extension E is the constant c ∈ R in
+Equation (3.73).
+
+    The central charge is also accessible at the Lie algebra level. Let ωD,1
+                                                                          Z be the Lie algebra
+
+2-cocycle on VectC (S 1 ) obtained from differentiation of ΩZ
+                  an
+                                                               D,1 . By the characterization of
+the Lie algebra cohomology H 2 (Vectan C (S 1 ), R) in [MP26, Figure 3.3], we have
+
+
+                               [ωD,1
+                                 Z
+                                     ] = a [Re ωGF ] + c [Im ωGF ].                        (3.74)
+
+The following complex-valued cocycles appear in Equations (3.73, 3.74):
+ 1. ΩBT is the Bott–Thurston cocycle [Bot77].
+ 2. ΩRCR is a cocycle combining the mean rotation and conformal radius of the complex
+    deformations. The Lie algebra cocycle ωrot associated to ΩRCR is a coboundary.
+ 3. ωGF is the Gel’fand–Fuks cocycle [GF68] given in Equation (1.16), also known as the
+                                                                             C (S ).
+    cocycle which defines the Virasoro algebra as a central extension of Vectan  1
+
+
+The relation between the cocycles is that the Lie algebra cocycle associated to ΩBT is
+                                    1
+                                         Z
+      ωGF (v, w) − ωrot (v, w) =              v ′ (z) w′′ (z) dz,   v, w ∈ Vectan
+                                                                               C (S ).
+                                                                                   1
+                                                                                           (3.75)
+                                   24π   S1
+
+See [MP26, Section 3.2] for details.
+   We showed in the previous work [MP25] that the Lie algebra cocycle of the real deter-
+minant line bundle (discussed in Section 1.4) is the imaginary part of the Gel’fand–Fuks
+cocycle (1.16) times the central charge c. This motivates Definition 3.12 for the central
+charge of E as the coefficient of the imaginary part of the Gel’fand–Fuks cocycle.
+
+Remark 3.13. If E is local, and Z is reparametrization invariant, then the cocycle ΩZ    D,1
+vanishes on diffeomorphisms by Item 3 of Proposition 3.9 — thus, it is a cocycle relative to
+Diff an
+     + (S ). The relative cohomology H (Def C (S ); Diff + (S ); R) was computed in [MP26,
+         1                               2         1     an 1
+
+Figure 3.2] as well: it only contains [Im ΩBT ], so
+
+                    [ΩZ
+                      D,1 ] = c [Im ΩBT ] ∈ H (Def C (S ); Diff + (S ); R),
+                                             2         1        an 1
+                                                                                           (3.76)
+                    [ωD,1
+                      Z
+                          ] = c [Im ωGF ] ∈ H 2 (Vectan
+                                                     C (S ); VectR (S ); R).
+                                                         1       an  1
+
+
+This characterizes the cocycles up differentials of trivialization-dependent functions which
+vanish respectively on Diff an
+                            + (S ) and VectR (S ). Since a = b = 0 here, we see that the
+                                1           an   1
+
+assumption of locality singles out the central charge as the only coefficient.
+
+   Let us also point out that Remark 3.13 confirms our earlier result [MP25, Theorem 1.1]:
+the real part of the Gel’fand–Fuks cocycle does not appear for the real determinant line
+bundle (which is local by Theorem 3.21).
+
+Remark 3.14. There might exist non-local R+ -extensions whose deformation-deformation
+cocycles lie in the nontrivial cohomology classes [Re ωGF ] and [Re ΩRCR ] in H 2 (Def C (S1 ); R).
+Hence, the locality in Theorem 1.1 might be necessary.
+
+
+
+
+                                                   31
+3.6     Modular and crossing invariance properties
+
+In this section, we discuss several properties of local Fr-smooth R+ -extensions that serve
+as intermediate steps in the proof of Theorem 1.1, also possibly interesting by their own
+right. The real determinant line bundle satisfies all of these properties (Theorem 3.21).
+We prove these properties for a general local Fr-smooth R+ -extension in Section 5.3, by
+relating them to the real determinant line bundle in genus 0. Before the definitions, let us
+briefly describe each property.
+ 1. Flat modular invariance (Definition 3.16). Sewing the two boundary components of
+    an annulus with the standard parametrization and cylindrical metric results in a torus
+    also with a flat metric, and the seam on the torus is a geodesic. If the same torus is
+    obtained from two different annuli, the geodesic seams may not be homotopic. Flat
+    modular invariance asserts that certain cocycles still agree in this case.
+ 2. Crossing invariance (Definition 3.18). A hyperbolic surface in Mhyp
+                                                                     0,4 with four bound-
+    ary components may be decomposed into two hyperbolic pairs of pants in several ways,
+    changing the homotopy class of the seam. Crossing invariance asserts that it is possible
+    to trivialize E(M0,3 ) such that any pants decomposition along hyperbolic geodesics
+    induces a trivialization of E(M0,4 ) independent of the homotopy class of the seam.
+ 3. Hyperbolic modular invariance (Definition 3.20). Similarly, a handle in M1,1 may be
+    decomposed into a pair of pants along a hyperbolic geodesic in a chosen homotopy class.
+    Hyperbolic modular invariance asserts the existence of a trivialization of E(M0,3 ) com-
+    patible with the self-sewing isomorphisms of hyperbolic pairs of pants. Together with
+    crossing invariance, this implies invariance under S- and A-moves between hyperbolic
+    pants decompositions, as defined by Hatcher and Thurston [HT80, Hat99].
+   Let E be a local Fr-smooth R+ -extension with reparametrization invariant trivialization
+Z. First, we require a more detailed characterization of the coboundaries that can appear
+in Equation (3.76). Consider the cocycles ΩZ   Aτ ,1 relative to a standard annulus Aτ of
+modulus τ > 0. These are related to ΩD,1 as
+                                       Z
+
+
+          ΩZ
+           D,1 (ϕ, ψ) − ΩAτ ,1 (ϕ, ψ)
+                         Z
+                                                                                                      (3.77)
+        = ΩZ
+           1,2 (D, Aτ ∗
+                      1
+                        ϕ) + ΩZ
+                              1,2 (D, Aτ ∗
+                                         1
+                                           ψ) − ΩZ
+                                                 1,2 (D, Aτ ∗
+                                                            1
+                                                              (ϕ ◦ ψ)) − ΩZ
+                                                                          1,2 (D, Aτ ),
+
+which is obtained as a special case of Equation (3.48) using the fact that Aτ 2 ∞1 D = D.
+Assuming that ΩZ   Aτ ,1 vanishes on pairs of scaling transformations (2.5), the Lie algebra
+cocycle ωAτ ,1 yields a cohomology class18 relative to the Lie algebra Rℓ0 generating the
+          Z
+
+scaling transformations (by Remark 3.13, we have [ωD,1  Z ] = c [Im ω
+                                                                      GF ]):
+
+
+        [ωAZτ ,1 ] = c [Im ωGF ] + hZ [Im ωrot ] ∈ H 2 (Vectan
+                                                            C (S ); VectR (S ), Rℓ0 ; R).
+                                                                1       an  1
+                                                                                                      (3.78)
+
+When changing τ , the cocycle is changed by the coboundary in Equation (3.48), but by
+the invariance under scaling transformations, the constant hZ ∈ R does not depend on τ .
+(However, it does depend on the reparametrization invariant trivialization Z.)
+   18
+     Technically, ΩZ                                                 2    1                              Z
+                    Aτ ,1 does not lie in the cohomology group H (Def C (S ); R), because the domain of ΩAτ ,1
+                                                  1
+is the subset of composable pairs in CompC (S ) acting on Aτ (without making the boundary components
+intersect). Yet, the Lie algebra cocycle ωAZτ ,1 is still well-defined.
+
+
+                                                     32
+    The following notion of “cylindrical” trivialization is named after the corresponding
+trivialization for the real determinant line bundle, which is given by cylindrical metrics
+on annuli (Theorem 3.21). It is obtained by making a trivialization scaling invariant, and
+forcing hZ = 0 in Equation (3.78), which is convenient when considering annuli.
+Proposition 3.15. For a local Fr-smooth R+ -extension E, there exists a unique reparametriza-
+tion invariant trivialization Z of E(M0,2 ) such that
+ 1. ΩZ1,2 (Aτ1 , Aτ2 ) = 0 for all τ1 , τ2 > 0, and
+ 2. [ωAZτ ,1 ] = c [Im ωGF ] ∈ H 2 (Vectan C (S ); VectR (S ), Rℓ0 ; R) for all τ > 0.
+                                               1       an  1
+
+
+We call this trivialization cylindrical.
+
+   A similar choice of c ̸= 0 and hZ = 0 also appears in the Kähler geometry of the
+homogeneous space Diff an
+                       + (S ) /S ; see [BR87, HR91, NV90].
+                           1    1
+
+
+Proof. Let Z be any reparametrization invariant trivialization of E. The assignment
+(τ1 , τ2 ) 7! ΩZ1,2 (Aτ1 , Aτ2 ) defines a cocycle in Z (R; R). Because the Lie group cohomology
+                                                          2
+
+H (R; R) is trivial (e.g. by [MP26, Figure 3.2], where Sc ∼
+  2
+                                                                       = R), there exists a function
+f ∈ C (R, R) such that Ω1,2 (Aτ1 , Aτ2 ) = f (τ1 ) + f (τ2 ) − f (τ1 + τ2 ) for τ1 , τ2 ∈ R. Now, the
+         ∞                        Z
+
+trivialization W (A) = ef (mod(A)) Z(A), where A ∈ M0,2 and mod(A) is the modulus19 of
+A, is another reparametrization invariant trivialization of E(M0,2 ). For this trivialization,
+we have ΩW    1,2 (Aτ1 , Aτ2 ) = 0 for all τ1 , τ2 > 0, so the property in Item 1 holds for W .
+    In terms of scaling transformations scτ1 , scτ2 with τ1 , τ2 > 0, we have
+
+                     ΩW
+                      Aτ ,1 (scτ1 , scτ2 ) = Ω1,2 (Aτ +τ2 , Aτ1 ) − Ω1,2 (Aτ , Aτ1 ) = 0,
+                                              W                      W
+                                                                                              (3.79)
+
+by (3.52, 3.54, 3.57). Thus, the cocycles ΩW Aτ ,1 are relative to scaling transformations,
+defining hW via (3.78). Fix λ ∈ R and consider the trivialization X(A) = eλ mod(A) W (A)
+for A ∈ M0,2 . The Lie algebra cocycles of X and W differ by a coboundary β, which
+is the Lie algebra cohomology differential of the derivative of the exponent relating the
+trivializations:
+                   ωAXτ ,1 (v, w) = ωAWτ ,1 (v, w) + β([v, w]),      v, w ∈ Vectan
+                                                                                C (S )
+                                                                                    1
+
+                                     ∂                                                        (3.80)
+                            β(v) =            λ mod(Aτ ∗1 Φv (t, · )),
+                                     ∂t t=0
+using the flow (2.1). Consider the exact sequence from [MP26, Figure 3.3],
+                                       δ
+                        H 1 (Rℓ0 ; R) −
+                                      −!
+                                       1
+                                         H 2 (Vectan
+                                                  C (S ); VectR (S ), Rℓ0 ; R)
+                                                      1       an  1
+                                                                                              (3.81)
+                                       δ
+                                      −
+                                      −!
+                                       2
+                                         H 2 (Vectan
+                                                  C (S ); VectR (S ); R),
+                                                      1       an  1
+
+
+where the first map δ1 is the transgression map obtained from the long exact sequence of
+relative Lie algebra cohomology, and the second map δ2 projects onto cohomology classes
+also up to coboundaries not vanishing on Rℓ0 . Using the fact that the flow of the vector
+field ℓ0 = −z∂z generates a scaling transformation Φℓ0 (t, · ) = sc t , we may compute
+                                                                               2π
+
+                                           ∂                        λ
+                                β(ℓ0 ) =          λ mod(Aτ + t ) =    .                       (3.82)
+                                           ∂t t=0           2π     2π
+  19
+       We normalize the modulus so that mod(Aτ ) = τ .
+
+
+                                                     33
+It follows that the Lie algebra cohomology differential β([v, w]) is a nontrivial cocycle
+relative to Rℓ0 , even though it looks like a coboundary. The non-relative cohomology class
+δ2 ([β([v, w])]), however, is trivial. Hence, by exactness, we find a preimage under δ1 , which
+is just δ1 ([β]) = [β([v, w])]. By [MP26, Figure 3.3], we have H 1 (Rℓ0 ; R) = R Im rot, where
+rot is the derivative of the mean rotation [MP26, Section 3.2] satisfying Im rot(ℓ0 ) = 24   1
+                                                                                               .
+Therefore, [β([v, w])] = π [Im ωrot ], giving the relation hX = hW + π . We conclude that
+                           12λ                                           12λ
+
+by setting λ = − 12 π
+                      hW , the Lie algebra cocycle of X satisfies the property in Item 2.
+   Finally, to prove uniqueness, let Y be another cylindrical trivialization of E. By
+Proposition 3.10, it is related to X by some smooth function f : R ! R such that
+Y (A) = ef (mod(A)) X(A) for A ∈ M0,2 . By Item 1, f is additive, so there exists some
+λ > 0 such that f (τ ) = λ τ for τ > 0. By the above, we have the relation hY = hX + 12λ
+                                                                                      π .
+Hence, we see that λ = 0, concluding that Y = X on M0,2 .
+
+    Sewing the two boundary components of an annulus A ∈ M0,2 results in a torus
+T = ∞1,2 A ∈ M1,0 . Up to scale, both the annulus and the torus come with a unique
+conformal flat metric with geodesic boundary. Since A conformally maps into T , we may
+ask whether the seam inside T defined by the parametrizations of A is a geodesic with
+respect to the flat metric on T . For annuli creating equivalent tori and having the geodesic
+seam, we define the following notion, assuming that the sewing isomorphisms agree on the
+cylindrical metrics. Note that the interesting case is where the seams are not homotopic.
+Definition 3.16. A local Fr-smooth R+ -extension E is flatly modular invariant if for all
+annuli A, B ∈ M0,2 such that ∞1,2 A = ∞1,2 B ∈ M1,0 and both seams in the torus are
+geodesics in a conformal flat metric, we have
+                                   E               E
+                                  ∞1,2 Z(A) = ∞1,2 Z(B),                                 (3.83)
+
+where Z is the cylindrical trivialization (Proposition 3.15).
+Remark 3.17. By reparametrization invariance of the cylindrical trivialization, the rela-
+tion (3.83) also holds if the seam is a reparametrization of a geodesic. Basic examples of
+annuli with geodesic seam in the torus are the standard annuli Aτ for τ > 0, and Aτ ∗1 rα ,
+where one boundary parametrization is twisted by a rotation rα (z) = ei α z for α ∈ R. Any
+other annulus with this geodesic seam property is of the form Aτ ∗1 rα ∗1 ϕ ∗2 t(ϕ) for some
+diffeomorphism ϕ ∈ Diff an+ (S ), which does not change the torus by Equation (2.7). Given
+                              1
+
+a torus and a homotopy class, there are unique τ > 0 and α ∈ [0, 2π) such that the torus
+is isomorphic to ∞1,2 (Aτ ∗1 rα ) with the seam belonging to the given homotopy class.
+Definition 3.18. A reparametrization invariant trivialization Z of a Fr-smooth R+ -
+extension E is crossing invariant if for all hyperbolic pairs of pants P1 , P2 , P3 , P4 ∈ Mhyp
+                                                                                            0,3
+such that P1 1 ∞1 P2 = P3 1 ∞1 P4 ∈ M0,4 , and such that the hyperbolic lengths of ∂1 P1
+and ∂1 P2 (resp. ∂1 P3 and ∂1 P4 ) agree, we have
+                                    E                    E
+                           Z(P1 ) 1 ∞1 Z(P2 ) = Z(P3 ) 1 ∞1 Z(P4 ).                      (3.84)
+
+If any such Z exists, we call E crossing invariant.
+Proposition 3.19. Any two crossing invariant trivializations of agree on M0,3 up to a
+real multiplicative constant factor.
+
+                                              34
+Proof. Let Z be a crossing invariant trivialization of E. By Proposition 3.10, any other
+crossing invariant trivialization is of the form ef (L1 ,L2 ,L3 ) Z(P ), where f ∈ C ∞ (R3+ , R) and
+L1 , L2 , L3 ∈ R+ are the hyperbolic lengths of the boundary components of P ∈ M0,3 .
+Consider the sewing operation (P ∗3 rα ) 3 ∞3 P , twisted by a rotation rα with angle α ∈ R.
+It yields a surface with boundary lengths L1 , L1 , L2 , L2 , which may also be obtained by
+sewing pants with boundary lengths L1 , L1 , L4 (α) and L2 , L2 , L4 (α), where L4 (α) is the
+length of the hyperbolic geodesic cutting (P ∗3 rα ) 3 ∞3 P so that the boundary components
+of equal length are in the same connected component. Equation (3.84) yields the identity
+
+                     2f (L1 , L2 , L3 ) = f (L1 , L1 , L4 (α)) + f (L2 , L2 , L4 (α)).         (3.85)
+
+The length L4 (α) changes as a function of the angle α ∈ R, while the lengths L1 , L2 , L3
+remain constant. Hence, we conclude that the right-hand side of Equation (3.85) is in-
+dependent of L4 (α), and thus, f (L1 , L2 , L3 ) is independent of L3 . By applying the same
+argument sewing at L1 and L2 , we find that f , and thus ef (L1 ,L2 ,L3 ) ∈ R, is constant.
+
+Definition 3.20. A crossing invariant trivialization Z of a Fr-smooth R+ -extension E is
+hyperbolically modular invariant if for all hyperbolic pairs of pants P1 , P2 ∈ Mhyp
+                                                                                 0,3 such
+that ∞j,k P1 = ∞l,m P2 ∈ M1,1 , and such that the hyperbolic lengths of ∂1 P1 and ∂1 P2
+agree, we have
+                                E              E
+                               ∞j,k Z(P1 ) = ∞l,m Z(P2 ).                           (3.86)
+If any such Z exists, we call E hyperbolically modular invariant.
+
+3.7    Example: The real determinant line bundle
+
+Let us now return to the guiding example of the real determinant line bundle DetcR+ ,
+discussed in Section 1.4. We will show in Theorem 3.21 below that it satisfies all the
+properties from Section 3.6. To begin, consider the trivialization
+
+                                   Z(Σ) = [gcc (Σ)] ∈ DetcR+ (Σ),                              (3.87)
+
+defined by metrics gcc (Σ) of constant Gaussian curvature +1, −1, or 0 such that the
+boundary components are geodesics [OPS88]. The metrics are unique, except for the flat
+case (tori and annuli). By compactness, we may additionally require unit volume to fix
+unique flat metrics20 . This trivialization is the canonical example for the modular and
+crossing invariance properties above, as will be evident from the proof of Theorem 3.21.
+Other trivializations of DetcR+ are reviewed in [LM25, Appendix B].
+Theorem 3.21. Fix c ∈ R. The real determinant line bundle DetcR+ is a local, flatly
+modular invariant, crossing invariant, and hyperbolically modular invariant Fr-smooth R+ -
+extension of central charge c.
+
+Proof. By [MP25, Corollary 1.5], the real determinant line bundle satisfies the defining
+properties of an R+ -extension (Definition 3.1). We can define Fr-smoothness of DetcR+
+with respect to the constant curvature metric trivialization (3.87).
+  20
+      In fact, the conformal anomaly of a constant conformal factor σ is σ6 χ(Σ), by the Gauss–Bonnet
+formula (here, χ(Σ) is the Euler characteristics of the surface Σ). Thus, for the χ(Σ) = 0 case, the
+trivialization Z(Σ) = [gcc (Σ)] ∈ DetcR+ (Σ) is independent of the global scale of the metric gcc (Σ).
+
+
+                                                    35
+

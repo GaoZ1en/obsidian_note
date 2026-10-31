@@ -1,0 +1,8 @@
+Exact torus color-projection control; Sage 10.9
+Same constant-form dgla and flat A0=e1 J3 as the endpoint test.
+CONTROL CHANGE: UV is X1,X2 in ALL form degrees; h=(ad J3)^-1 i1 R.
+32 retained coordinates. The projected binary color bracket is itself Lie.
+S4 is NONZERO, with 42 exact monomials, including ghost antifields.
+(S3P,S3P)=0 and (S2P,S4)=0 separately, verified exactly.
+Thus nonminimal DP!=0 and nonzero S4 do not alone make the quartic master cancellation a nontrivial two-sided test.
+This control is not used as evidence for the nonzero-side identity; the main endpoint torus and Heisenberg fixtures provide that evidence.

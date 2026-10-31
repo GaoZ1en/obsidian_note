@@ -1,0 +1,14 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: {
+    "output": "/Users/koishi/.dsh/research-results/kernel-exports/one-loop-bv-parent-j5m6h9jv",
+    "all_passed": true,
+    "groups": 27,
+    "source_sha256": "e6e6633018c48c054798321b328dd58de39545cbff5ea5932a8638886cb18d3e"
+  }
+  
+elapsedMs: 5625

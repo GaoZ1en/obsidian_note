@@ -1,0 +1,11 @@
+<|"eta_difference_large_lambda" -> 
+  (t$9302*x$9302*z$9302*(-6 + x$9302^2*(3*p$9302 - t$9302^2*(-1 + z$9302))*(1 + z$9302)))/3, 
+ "eta_pole_coefficient" -> -1/3*(t$9302*z$9302*(6*c$9302 - 3*p$9302 - t$9302^2 - 3*p$9302*z$9302 + 
+     t$9302^2*z$9302^2)), "eta_per_channel_without_density" -> 
+  (t$9302*(-6*c$9302 + 3*p$9302 + t$9302^2))/3, "eta_two_vectors" -> 
+  (t$9302*(9 + t$9302^2)*v$9302)/Pi^2, "eta_heat_residue_agrees" -> True, 
+ "eta_in_mu" -> (mu$9302*(36 + mu$9302^2)*v$9302)/(8*Pi^2), 
+ "logdet_phase_defect" -> ((I/16)*mu$9302*(36 + mu$9302^2)*v$9302)/Pi, 
+ "logZ_phase_defect" -> ((-1/32*I)*mu$9302*(36 + mu$9302^2)*v$9302)/Pi, "pair_product_r" -> r$9302, 
+ "pair_sum_has_no_x3" -> True, "multiplicative_anomaly_residue_zero" -> True, 
+ "shear_congruence" -> True, "shear_determinant" -> 1, "Messages" -> {}|>

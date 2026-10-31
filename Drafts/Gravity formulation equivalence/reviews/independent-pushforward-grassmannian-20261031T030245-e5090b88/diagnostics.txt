@@ -1,0 +1,29 @@
+Sage version: SageMath version 10.9, Release Date: 2026-05-04
+Output directory: /Users/koishi/.dsh/research-results/kernel-exports/independent-pushforward-wl1hdz2_
+PASS [A_m,A_n] = -A_[e_m,e_n]
+  {'tested_triples': 2057, 'defects': []}
+PASS Exact sum-of-squares polynomial
+  7/3*p^3 - 9/2*p^2 + 13/6*p
+PASS H-isotropy residual polynomial
+  9/2*p^2 - 9/2*p
+PASS Different nonorthogonal-idempotent trace polynomial
+  13/6*p^3 - 13/6*p
+PASS Complete finite-rank Q-curvature matrices, modes -8..8
+  {'matrix_dimension': 21, 'pairs': 289, 'mismatches': []}
+PASS Positive Witt diagonal values
+  {'2': '-5', '3': '-29', '4': '-86', '5': '-190', '6': '-355', '7': '-595', '8': '-924'}
+PASS Different R-curvature matrices agree with their polynomial
+  {'2': '13', '3': '52', '4': '130', '5': '260', '6': '455', '7': '728', '8': '1092'}
+PASS Real tangent derivatives are Hermitian
+PASS h tangent directions vanish for Q
+PASS Nonorthogonal R varies along real h direction e1-e-1
+  dR = 3 |e_-1><e_-2|, whereas dQ=0
+PASS Complex H-isotropy invariance fails by +9
+  9
+PASS Real H-isotropy invariance fails by +18i
+  18*ii
+PASS Curvature on two real p=2 directions is -10i
+  -10*ii
+PASS Exact third-derivative pushforward identity
+PASS Circle-Schwarzian coefficient for stabilizer
+ALL_PASSED = True

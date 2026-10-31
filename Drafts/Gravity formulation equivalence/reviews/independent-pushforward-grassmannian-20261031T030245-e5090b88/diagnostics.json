@@ -1,0 +1,106 @@
+{
+  "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+  "coefficient_fields": [
+    "QQ",
+    "QQ(i)"
+  ],
+  "records": [
+    {
+      "label": "[A_m,A_n] = -A_[e_m,e_n]",
+      "passed": true,
+      "detail": {
+        "tested_triples": 2057,
+        "defects": []
+      }
+    },
+    {
+      "label": "Exact sum-of-squares polynomial",
+      "passed": true,
+      "detail": "7/3*p^3 - 9/2*p^2 + 13/6*p"
+    },
+    {
+      "label": "H-isotropy residual polynomial",
+      "passed": true,
+      "detail": "9/2*p^2 - 9/2*p"
+    },
+    {
+      "label": "Different nonorthogonal-idempotent trace polynomial",
+      "passed": true,
+      "detail": "13/6*p^3 - 13/6*p"
+    },
+    {
+      "label": "Complete finite-rank Q-curvature matrices, modes -8..8",
+      "passed": true,
+      "detail": {
+        "matrix_dimension": 21,
+        "pairs": 289,
+        "mismatches": []
+      }
+    },
+    {
+      "label": "Positive Witt diagonal values",
+      "passed": true,
+      "detail": {
+        "2": "-5",
+        "3": "-29",
+        "4": "-86",
+        "5": "-190",
+        "6": "-355",
+        "7": "-595",
+        "8": "-924"
+      }
+    },
+    {
+      "label": "Different R-curvature matrices agree with their polynomial",
+      "passed": true,
+      "detail": {
+        "2": "13",
+        "3": "52",
+        "4": "130",
+        "5": "260",
+        "6": "455",
+        "7": "728",
+        "8": "1092"
+      }
+    },
+    {
+      "label": "Real tangent derivatives are Hermitian",
+      "passed": true
+    },
+    {
+      "label": "h tangent directions vanish for Q",
+      "passed": true
+    },
+    {
+      "label": "Nonorthogonal R varies along real h direction e1-e-1",
+      "passed": true,
+      "detail": "dR = 3 |e_-1><e_-2|, whereas dQ=0"
+    },
+    {
+      "label": "Complex H-isotropy invariance fails by +9",
+      "passed": true,
+      "detail": "9"
+    },
+    {
+      "label": "Real H-isotropy invariance fails by +18i",
+      "passed": true,
+      "detail": "18*ii"
+    },
+    {
+      "label": "Curvature on two real p=2 directions is -10i",
+      "passed": true,
+      "detail": "-10*ii"
+    },
+    {
+      "label": "Exact third-derivative pushforward identity",
+      "passed": true
+    },
+    {
+      "label": "Circle-Schwarzian coefficient for stabilizer",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "all_passed": true,
+  "scope": "Exact finite-rank matrix/algebra checks only; the Fourier estimate and Frechet smoothness are proved analytically in the report."
+}

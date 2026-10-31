@@ -1,0 +1,44 @@
+Sage version: 10.9
+Coefficient algebra: QQ(t) tensor exterior(eta,zeta); eta*zeta=-zeta*eta
+Grassmann sign: True
+upper odd shear canonical: True
+lower odd shear canonical: True
+exact full canonical map: True
+dagger anti-automorphism: True
+exact compression defect identity: True
+all four parity blocks nonzero: True
+first canonical jet: True
+second canonical jet: True
+X: [[1, 1, 0, eta], [1, 0, -eta, 0], [zeta, zeta, -1, -1], [zeta, 2*zeta, -1, 0]]
+PXQXP on retained 1|1: [[eta*zeta + 1, -2*eta], [0, eta*zeta + 1]]
+second defect nonzero: True
+second defect self-adjoint: True
+second defect supertrace zero: True
+second defect coefficient: True
+logBerezinian minus projected log coefficients [0,1,2,3]: [0, 0, 0, 2/3*eta*zeta - 1/3]
+quadratic logarithm discrepancy zero: True
+cubic discrepancy nonzero in this family: True
+universal cubic expression: True
+retained even and odd diagonal-path contributions: [1, 1]
+retained even and odd odd-block contributions: [eta*zeta, eta*zeta]
+diagonal paths cancel in supertrace: True
+odd paths cancel with Grassmann signs: True
+finite real example canonical: True
+finite real compressed matrix: [[2, 0], [0, 1]]
+finite real canonical defect: [[1, 0], [0, 1]]
+finite real compressed Berezinian equals 2: True
+log Ber(N1) interval: 0.693147180559945309417232121458176568075500134360255254120680?
+Str(P log M1 P) interval: 0.86081788192800807777886646590121085084914136508057930951402?
+rigorous finite real logarithms unequal: True
+torus log Ber(compression) series: 3/2*s^2 + 3/4*s^4 + 1/2*s^6 + O(s^8)
+torus projected supertrace log series: 3/2*s^2 + 9/16*s^4 + 5/16*s^6 + O(s^8)
+torus logarithm gap series: 3/16*s^4 + 3/16*s^6 + O(s^8)
+torus quadratic gap zero: True
+torus quartic gap 3/16: True
+torus exact gap at t=1/2 interval: 0.01550432350722792990232113534043299451115478282867741392267?
+torus finite exact gap positive: True
+full CME selfbracket: 0
+raw restricted CME selfbracket: -2*zp*c1*c2
+full action satisfies CME: True
+raw paired restriction violates CME: True
+Passed checks: 26/26

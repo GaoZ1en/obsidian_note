@@ -1,0 +1,160 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: 
+  === canonical_map_checks.py ===
+  Source SHA256: 1ece5e31ea07cb78a09c644b272d219f0ea464c469e00ea568407e3029acddaa
+  SageMath: 10.9
+  Generating density monomials: 23
+  dF/dP_E[0]: PASS
+  dF/dP_Omega[0]: PASS
+  dF/de[0]: PASS
+  dF/domega[0]: PASS
+  dF/dP_E[1]: PASS
+  dF/dP_Omega[1]: PASS
+  dF/de[1]: PASS
+  dF/domega[1]: PASS
+  dF/dP_E[2]: PASS
+  dF/dP_Omega[2]: PASS
+  dF/de[2]: PASS
+  dF/domega[2]: PASS
+  dF/dP_rho: PASS
+  dF/dP_tau: PASS
+  dF/dlambda: PASS
+  dF/dxi[0] after antifield substitution: PASS
+  E[0] explicit: PASS
+  Omega[0] explicit: PASS
+  dF/dxi[1] after antifield substitution: PASS
+  E[1] explicit: PASS
+  Omega[1] explicit: PASS
+  dF/dxi[2] after antifield substitution: PASS
+  E[2] explicit: PASS
+  Omega[2] explicit: PASS
+  tau explicit: PASS
+  rho explicit: PASS
+  ALL CANONICAL MAP CHECKS PASSED
+  
+  === superfield_checks.py ===
+  Source SHA256: 87a5db214bde502ed2915d752d3d151fc629f6bc7b094588dd1bd35e1670a742
+  exp(I) beta exact component map [0]: PASS
+  exp(I) alpha exact component map [0]: PASS
+  exp(I) beta exact component map [1]: PASS
+  exp(I) alpha exact component map [1]: PASS
+  exp(I) beta exact component map [2]: PASS
+  exp(I) alpha exact component map [2]: PASS
+  superfield cubic interactions give Lorentz BV signs: PASS
+  finite map preserves all cubic interactions exactly: PASS
+  unrestricted CS superfield gives all BRST ghost signs: PASS
+  ALL SUPERFIELD CHECKS PASSED; SageMath 10.9
+  
+  === cartan_and_ghost_checks.py ===
+  Source SHA256: 7b423ef450a7029c17a9d4e397287d77f22cca5756b86f2e93b083b8622d6bdf
+  BCH first-jet sample 0: PASS
+  [I,L]=-2J sample 0: PASS
+  [I,J]=0 sample 0: PASS
+  BCH first-jet sample 1: PASS
+  [I,L]=-2J sample 1: PASS
+  [I,J]=0 sample 1: PASS
+  BCH first-jet sample 2: PASS
+  [I,L]=-2J sample 2: PASS
+  [I,J]=0 sample 2: PASS
+  BCH first-jet sample 3: PASS
+  [I,L]=-2J sample 3: PASS
+  [I,J]=0 sample 3: PASS
+  BCH first-jet sample 4: PASS
+  [I,L]=-2J sample 4: PASS
+  [I,J]=0 sample 4: PASS
+  BCH first-jet sample 5: PASS
+  [I,L]=-2J sample 5: PASS
+  [I,J]=0 sample 5: PASS
+  BCH first-jet sample 6: PASS
+  [I,L]=-2J sample 6: PASS
+  [I,J]=0 sample 6: PASS
+  BCH first-jet sample 7: PASS
+  [I,L]=-2J sample 7: PASS
+  [I,J]=0 sample 7: PASS
+  BCH first-jet sample 8: PASS
+  [I,L]=-2J sample 8: PASS
+  [I,J]=0 sample 8: PASS
+  BCH first-jet sample 9: PASS
+  [I,L]=-2J sample 9: PASS
+  [I,J]=0 sample 9: PASS
+  BCH first-jet sample 10: PASS
+  [I,L]=-2J sample 10: PASS
+  [I,J]=0 sample 10: PASS
+  BCH first-jet sample 11: PASS
+  [I,L]=-2J sample 11: PASS
+  [I,J]=0 sample 11: PASS
+  BCH first-jet sample 12: PASS
+  [I,L]=-2J sample 12: PASS
+  [I,J]=0 sample 12: PASS
+  BCH first-jet sample 13: PASS
+  [I,L]=-2J sample 13: PASS
+  [I,J]=0 sample 13: PASS
+  BCH first-jet sample 14: PASS
+  [I,L]=-2J sample 14: PASS
+  [I,J]=0 sample 14: PASS
+  BCH first-jet sample 15: PASS
+  [I,L]=-2J sample 15: PASS
+  [I,J]=0 sample 15: PASS
+  BCH first-jet sample 16: PASS
+  [I,L]=-2J sample 16: PASS
+  [I,J]=0 sample 16: PASS
+  BCH first-jet sample 17: PASS
+  [I,L]=-2J sample 17: PASS
+  [I,J]=0 sample 17: PASS
+  BCH first-jet sample 18: PASS
+  [I,L]=-2J sample 18: PASS
+  [I,J]=0 sample 18: PASS
+  BCH first-jet sample 19: PASS
+  [I,L]=-2J sample 19: PASS
+  [I,J]=0 sample 19: PASS
+  BCH first-jet sample 20: PASS
+  [I,L]=-2J sample 20: PASS
+  [I,J]=0 sample 20: PASS
+  affine diffeomorphism BRST nilpotency 0: PASS
+  affine diffeomorphism BRST nilpotency 1: PASS
+  affine diffeomorphism BRST nilpotency 2: PASS
+  affine diffeomorphism BRST nilpotency 3: PASS
+  affine diffeomorphism BRST nilpotency 4: PASS
+  affine diffeomorphism BRST nilpotency 5: PASS
+  affine diffeomorphism BRST nilpotency 6: PASS
+  affine diffeomorphism BRST nilpotency 7: PASS
+  affine diffeomorphism BRST nilpotency 8: PASS
+  affine diffeomorphism BRST nilpotency 9: PASS
+  affine diffeomorphism BRST nilpotency 10: PASS
+  affine diffeomorphism BRST nilpotency 11: PASS
+  s xi = xi.partial xi [0]: PASS
+  s xi = xi.partial xi [1]: PASS
+  s xi = xi.partial xi [2]: PASS
+  CS nonabelian BRST nilpotency 0: PASS
+  CS nonabelian BRST nilpotency 1: PASS
+  CS nonabelian BRST nilpotency 2: PASS
+  CS nonabelian BRST nilpotency 3: PASS
+  CS nonabelian BRST nilpotency 4: PASS
+  CS nonabelian BRST nilpotency 5: PASS
+  CS nonabelian BRST nilpotency 6: PASS
+  CS nonabelian BRST nilpotency 7: PASS
+  CS nonabelian BRST nilpotency 8: PASS
+  CS nonabelian BRST nilpotency 9: PASS
+  CS nonabelian BRST nilpotency 10: PASS
+  CS nonabelian BRST nilpotency 11: PASS
+  H3 torsion T[0]: PASS
+  H3 flat-CS curvature K[0]: PASS
+  H3 torsion T[1]: PASS
+  H3 flat-CS curvature K[1]: PASS
+  H3 torsion T[2]: PASS
+  H3 flat-CS curvature K[2]: PASS
+  ALL CARTAN, GHOST, AND BACKGROUND CHECKS PASSED; SageMath 10.9
+  
+  === kinetic_density_check.py ===
+  Source SHA256: 699d3e71aba6e92a430ef3e0e8bd2a7d5e4c69f5a169cdda2249f39ac8a5631d
+  FULL raw kinetic pullback minus geometric = d I(e e*): PASS
+  raw CS kinetic minus minimal CS kinetic = d(tau E*): PASS
+  FULL minimal kinetic pullback boundary primitive: PASS
+  ALL FULL KINETIC-DENSITY CHECKS PASSED; arbitrary first jets; SageMath 10.9
+  
+elapsedMs: 4025

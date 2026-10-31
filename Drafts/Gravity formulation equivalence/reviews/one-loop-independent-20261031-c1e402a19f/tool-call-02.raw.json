@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_df157c79d6144f0a9703e9666c923638|fc_024294ed9c2ea992016ae54f29a87081918733f4460b068d83",
+  "sessionId": "ce95a5d6-5982-4193-bb0a-c78334df5a55",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "import runpy, os, tempfile, shutil\nfrom pathlib import Path\nscript=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/one-loop-independent-20261031-c1e402a19f/verify.py')\n_namespace=runpy.run_path(str(script), run_name='__main__')\nstore=Path(os.environ.get('DSH_HOME') or (Path.home()/'.dsh'))/'research-results'/'kernel-exports'\nstore.mkdir(parents=True,exist_ok=True,mode=0o700)\nout=Path(tempfile.mkdtemp(prefix='finite-bv-independent-',dir=store))\nfor name in ('exact-results.json','verification-summary.txt'):\n    shutil.copyfile(script.parent/name,out/name)\nprint('Complete exact mathematical results exported to:', str(out))\nprint('The runpy namespace is deliberately not returned.')",
+    "timeoutMs": 600000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS: all 1234 exact checks passed.\\nSage 10.9; Python 3.14.3\\nExact graded model: W=x^2/2-h log((m+t*x)/m).\\nExact normalized generator: ((-h)/(x*t + m))*p\\nOne-loop contribution: (W0,gamma1)=-x/(m+t*x).\\nNonzero h^2 term before Laplacian compensation: h^2*t/(m+t*x)^2.\\nMixed-super Gaussian relative prefactor: 1+alpha*beta/(A*B).\\nNon-Gaussian normalized one-loop insertion: p*(g2/(2*A)-gF/B+g1*r/A-g1*c/(2*A^2)+g1*d/(A*B)).\\nAll exact transport and ordered-Wick residuals: 0.\\nJSON: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/one-loop-independent-20261031-c1e402a19f/exact-results.json\\n\\nComplete exact mathematical results exported to: /Users/koishi/.dsh/research-results/kernel-exports/finite-bv-independent-0k6oqmj3\\nThe runpy namespace is deliberately not returned.\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"800b69f0a13f4570151db34bae3e34db7b81e7408c56a54a19e8078f43af557d\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4035,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b8bff7a89df1c743c65855671e6392b70b17c020bae9207c557121cfe6231e17\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "PASS: all 1234 exact checks passed.\nSage 10.9; Python 3.14.3\nExact graded model: W=x^2/2-h log((m+t*x)/m).\nExact normalized generator: ((-h)/(x*t + m))*p\nOne-loop contribution: (W0,gamma1)=-x/(m+t*x).\nNonzero h^2 term before Laplacian compensation: h^2*t/(m+t*x)^2.\nMixed-super Gaussian relative prefactor: 1+alpha*beta/(A*B).\nNon-Gaussian normalized one-loop insertion: p*(g2/(2*A)-gF/B+g1*r/A-g1*c/(2*A^2)+g1*d/(A*B)).\nAll exact transport and ordered-Wick residuals: 0.\nJSON: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/one-loop-independent-20261031-c1e402a19f/exact-results.json\n\nComplete exact mathematical results exported to: /Users/koishi/.dsh/research-results/kernel-exports/finite-bv-independent-0k6oqmj3\nThe runpy namespace is deliberately not returned.\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "800b69f0a13f4570151db34bae3e34db7b81e7408c56a54a19e8078f43af557d",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 4035,
+        "transportStderr": [],
+        "codeSha256": "b8bff7a89df1c743c65855671e6392b70b17c020bae9207c557121cfe6231e17"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS: all 1234 exact checks passed.\\nSage 10.9; Python 3.14.3\\nExact graded model: W=x^2/2-h log((m+t*x)/m).\\nExact normalized generator: ((-h)/(x*t + m))*p\\nOne-loop contribution: (W0,gamma1)=-x/(m+t*x).\\nNonzero h^2 term before Laplacian compensation: h^2*t/(m+t*x)^2.\\nMixed-super Gaussian relative prefactor: 1+alpha*beta/(A*B).\\nNon-Gaussian normalized one-loop insertion: p*(g2/(2*A)-gF/B+g1*r/A-g1*c/(2*A^2)+g1*d/(A*B)).\\nAll exact transport and ordered-Wick residuals: 0.\\nJSON: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/one-loop-independent-20261031-c1e402a19f/exact-results.json\\n\\nComplete exact mathematical results exported to: /Users/koishi/.dsh/research-results/kernel-exports/finite-bv-independent-0k6oqmj3\\nThe runpy namespace is deliberately not returned.\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"800b69f0a13f4570151db34bae3e34db7b81e7408c56a54a19e8078f43af557d\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4035,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b8bff7a89df1c743c65855671e6392b70b17c020bae9207c557121cfe6231e17\"\n}"
+      }
+    ]
+  }
+}

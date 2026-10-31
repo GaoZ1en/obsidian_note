@@ -1,0 +1,21 @@
+{
+  "mode": "run",
+  "ok": true,
+  "result": "None",
+  "resultType": "builtins.NoneType",
+  "truncated": false,
+  "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+  "error": null,
+  "stdout": "{\n  \"checks\": {\n    \"G_adjoint_G_equals_5I\": true,\n    \"adapted_FP_triangular\": true,\n    \"lorenz_FP_equals_5I\": true,\n    \"adapted_section_condition\": true,\n    \"lorenz_section_condition\": true,\n    \"same_quotient_quadratic_form\": true,\n    \"same_field_volume_jacobian\": true\n  },\n  \"adapted_FP_det\": -5,\n  \"lorenz_FP_det\": 25,\n  \"adapted_delta_jacobian\": \"5\",\n  \"lorenz_delta_jacobian\": \"1\",\n  \"FP_times_delta_jacobian_both\": 25,\n  \"all_passed\": true\n}\n",
+  "stdoutTruncated": false,
+  "stdoutSha256": "bac0ffb23c8c0a194bdca8018d517972d9575119d326cbad0f840f6a2f691d5c",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3254,
+  "transportStderr": [],
+  "codeSha256": "01f60d053879fbd8585c5cd8865df610e36ef3e1df7a958474a0ede87c005d71"
+}

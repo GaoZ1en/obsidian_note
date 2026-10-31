@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "checks": {
+    "epsilon_orientation": true,
+    "exterior_anticommutation": true,
+    "left_derivative_product": true,
+    "inverse_matrix": true,
+    "delta_exact_all_sectors": true,
+    "delta_physical_sector": true,
+    "delta_ghost_sector": true,
+    "delta_wW_sector_zero": true,
+    "delta_etaR_sector_zero": true,
+    "right_hamiltonian_f_component": true,
+    "semidensity_source_PDE": true,
+    "fixed_P_even_block_identity": true,
+    "full_ghost_Schur_exact": true,
+    "nilpotent_sector_nonzero": true,
+    "jacobian_initial_one": true,
+    "divergence_initial_minus_traceF": true
+  },
+  "assumptions": [
+    "oriented unit canonical cell",
+    "e0=identity at cell",
+    "kappa nonzero",
+    "det(I+tF) nonzero",
+    "left Grassmann derivatives",
+    "coefficient-first dx convention"
+  ],
+  "gamma_monomials": 57,
+  "divergence_monomials": 19,
+  "sector_monomials": {
+    "fE": 18,
+    "wW": 0,
+    "etaR": 0,
+    "zetaT": 1
+  },
+  "nilpotent_monomials": 18,
+  "duration_seconds": 0.15098285675048828,
+  "implementation": "fresh native Sage rational functions plus explicit bitmask exterior algebra; no prior review code imported",
+  "diagnostics": [],
+  "excluded_failures": []
+}

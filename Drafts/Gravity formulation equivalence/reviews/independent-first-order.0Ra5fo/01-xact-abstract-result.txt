@@ -1,0 +1,12 @@
+<|"KernelVersion" -> {"1.4.2", {2014, 10, 30}}, "Dimension" -> 3, "MetricSignature" -> 1, 
+ "Dualization" -> "K_ab_c = epsilon_abd C_dc", 
+ "Rules" -> {HoldPattern[kk[(a_)?TangentM3`pmQ, (b_)?TangentM3`pmQ, (c_)?TangentM3`pmQ]] :> 
+    Module[{s$18793}, cc[-s$18793, c]*epsilongg[a, b, s$18793]]}, 
+ "CurvatureQuadratic" -> -(kk[a, -c, -b]*kk[c, b, -a]) + kk[a, -c, -a]*kk[c, b, -b], 
+ "Substituted" -> -(cc[-s$18793$18805, -b]*cc[-s$18793$18806, -a]*
+     (gg[a, s$18793$18806]*gg[s$18793$18805, b] - gg[a, b]*gg[s$18793$18805, s$18793$18806])) + 
+   cc[-s$18793$18811, -a]*cc[-s$18793$18812, -b]*(gg[a, s$18793$18812]*gg[s$18793$18811, b] - 
+     gg[a, b]*gg[s$18793$18811, s$18793$18812]), "CanonicalQuadratic" -> 
+  cc[a, s$18793$18805]*cc[-s$18793$18805, -a] - cc[a, -a]*cc[s$18793$18805, -s$18793$18805], 
+ "Target" -> cc[a, -b]*cc[b, -a] - cc[a, -a]*cc[b, -b], "QuadraticResidual" -> 0, "DerivativeResidual" -> 0, 
+ "Messages" -> {}|>

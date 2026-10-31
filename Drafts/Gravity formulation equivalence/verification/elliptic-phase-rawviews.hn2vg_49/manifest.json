@@ -1,0 +1,38 @@
+[
+  {
+    "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/raw_01_balanced_operator.json",
+    "raw_sha256": "5f2e47915f303d504a5e29ae280aa399d49eba19780aff212265f91b30b1ad28",
+    "input_sha256": "9698b52ecd13e504c59a8cdcf9bd369ec12e7b29855c0ea4abe9cb216a1b7e77",
+    "input_copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_01_balanced_operator.executed.wl",
+    "readable_view": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_01_balanced_operator.readable.txt",
+    "upstreamTruncated": false,
+    "note": "Exact submitted input; return view only adds display line breaks. No kernel execution."
+  },
+  {
+    "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/raw_02_mu_asymptotics.json",
+    "raw_sha256": "3f953dfe7d5641d45700584ad721fb796424613fa66bd4a79fc320e57dc7eda7",
+    "input_sha256": "72b9ccb4c672c6fad11c56f2fbeb27bd7817cd6f5603c3fc1cfee9b9c6d1d488",
+    "input_copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_02_mu_asymptotics.executed.wl",
+    "readable_view": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_02_mu_asymptotics.readable.txt",
+    "upstreamTruncated": false,
+    "note": "Exact submitted input; return view only adds display line breaks. No kernel execution."
+  },
+  {
+    "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/raw_03_eta_counting.json",
+    "raw_sha256": "664510ab668459edc1c2d73299e1bf1ae8f90b0fdf806c5591958000b2f888e3",
+    "input_sha256": "f228ae37cc1782abd034da01e69aaec3933f84421c4e788b734c1e6ec2a0c103",
+    "input_copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_03_eta_counting.executed.wl",
+    "readable_view": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_03_eta_counting.readable.txt",
+    "upstreamTruncated": false,
+    "note": "Exact submitted input; return view only adds display line breaks. No kernel execution."
+  },
+  {
+    "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent_phase_20261030T222358Z/raw_04_eta_variation.json",
+    "raw_sha256": "c43ce8d5c98496c07b6d5d50f5ea8fd975e6c7298a3a5e0cddb7314617c814be",
+    "input_sha256": "319fc6d68ecbc8b8af805e941b3113ed16acd87245f55b3a6698cc542ccb90ad",
+    "input_copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_04_eta_variation.executed.wl",
+    "readable_view": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/elliptic-phase-rawviews.hn2vg_49/raw_04_eta_variation.readable.txt",
+    "upstreamTruncated": false,
+    "note": "Exact submitted input; return view only adds display line breaks. No kernel execution."
+  }
+]

@@ -1,0 +1,1 @@
+<|Shear_p2_equals_p1_plus_aq_IntertwiningResidual -> 0, Messages -> {}|>

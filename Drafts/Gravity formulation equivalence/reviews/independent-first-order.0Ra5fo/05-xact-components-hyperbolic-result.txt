@@ -1,0 +1,9 @@
+<|"WolframKernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "xCobaVersion" -> {"0.8.6", {2021, 2, 28}}, "Metric" -> {{1, 0, 0}, {0, Cosh[rr[]]^2, 0}, 
+   {0, 0, Sinh[rr[]]^2}}, "ScalarCurvature" -> -6, "CurvatureResidual" -> 0, 
+ "OutwardNormalDivergence" -> Coth[rr[]] + Tanh[rr[]], "ExtrinsicCurvatureResidual" -> 0, 
+ "AntisymmetricMode" -> 
+  "C12=exp(-3r/2)/sqrt(2), C21=-C12, all others zero in e1=cosh(r)dtau, e2=sinh(r)dphi, e3=dr", 
+ "QuadraticTailPerCoordinateArea" -> (-1 + 5*E^(4*lower))/(20*E^(5*lower)), 
+ "BoundaryThetaPerCoordinateArea" -> (2*Sqrt[2]*Cosh[rr[]]*Sinh[rr[]])/E^((3*rr[])/2), 
+ "BoundaryThetaLargeR" -> Infinity, "Messages" -> {}|>

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_a78e82ea5d384589b53cd58739965396|fc_0602a53a5e0cf814016ae4f4581ab08191abab1f1f023611f6",
+  "sessionId": "b2590a87-28ff-406f-900b-b37e38d95f90",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/checks.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/checks.wl\"]\n```\n\nOutput:\n<|KernelVersion -> 14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025), Assumptions -> m is an integer >= 1; complex Fourier modes e_m=i exp(i m x) d_x; cutoff j<=1, FiniteCrossingTrace -> (-13*m*(-1 + m^2))/6, TraceFormulaResidual -> 0, FirstEightTraces -> {{1, 0}, {2, -13}, {3, -52}, {4, -130}, {5, -260}, {6, -455}, {7, -728}, {8, -1092}}, GeneralCutoffTrace -> (m + 6*k*(1 + k)*m - 13*m^3)/6, JacobiResidual -> 0, ProjectiveGeneratorTraces -> {0, 0, 0}, KSinCos -> (-13*I)/12*m*(-1 + m^2), OmegaSinCos -> (-13*m*(-1 + m^2))/12, SigmaCoefficient -> 26, Messages -> {}|>\nNull"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-detlift-20261031.8djLkr/checks.wl\"]\n```\n\nOutput:\n<|KernelVersion -> 14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025), Assumptions -> m is an integer >= 1; complex Fourier modes e_m=i exp(i m x) d_x; cutoff j<=1, FiniteCrossingTrace -> (-13*m*(-1 + m^2))/6, TraceFormulaResidual -> 0, FirstEightTraces -> {{1, 0}, {2, -13}, {3, -52}, {4, -130}, {5, -260}, {6, -455}, {7, -728}, {8, -1092}}, GeneralCutoffTrace -> (m + 6*k*(1 + k)*m - 13*m^3)/6, JacobiResidual -> 0, ProjectiveGeneratorTraces -> {0, 0, 0}, KSinCos -> (-13*I)/12*m*(-1 + m^2), OmegaSinCos -> (-13*m*(-1 + m^2))/12, SigmaCoefficient -> 26, Messages -> {}|>\nNull"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"Checks":{
+		"Minkowski embedding gives tetrad metric":true,
+		"All four Cartan torsions vanish":true,
+		"All Lorentz curvatures vanish":true,
+		"Gamma matches Lorentz rotational projection":true,
+		"Spatial triad compatibility":true,
+		"Extrinsic K equals triad over radius":true,
+		"General Barbero curvature factor one plus gamma squared":true,
+		"Both selfdual curvatures vanish":true,
+		"Loop generator cubic identity":true,
+		"Rodrigues holonomy trace":true,
+		"Plane loop has identity adjoint holonomy":true,
+		"Exact real gamma example trace minus one":true,
+		"Exact real gamma example is a nonidentity SO3 halfturn":true,
+		"Both selfdual loop holonomies are identity":true
+	},
+	"Count":14,
+	"AllPassed":true,
+	"CurvatureCoefficient":"(1 + gam^2)\/a^2",
+	"LoopTrace":"1 + 2*Cos[2*Pi*Sqrt[1 + (1 + gam^2)*Sinh[rho]^2]]",
+	"SpecialRealExample":"gam=1, R\/a=sqrt(5\/8); adjoint trace=-1, versus 3 on plane",
+	"SpecialHolonomy":[
+		[
+			"-1",
+			"0",
+			"0"
+		],
+		[
+			"0",
+			"4\/9",
+			"-1\/9*Sqrt[65]"
+		],
+		[
+			"0",
+			"-1\/9*Sqrt[65]",
+			"-4\/9"
+		]
+	],
+	"Messages":[]
+}

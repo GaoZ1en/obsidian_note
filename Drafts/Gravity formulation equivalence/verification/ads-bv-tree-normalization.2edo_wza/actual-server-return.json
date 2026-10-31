@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_a3a0f4c3d49a4df5b06c769ba2ba5fb9|fc_00e61ec4e4885aea016ae5391b9bf481918b9cb1d7e2bd0745",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads_bv_tree_normalization_checks.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 4000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"output\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/result.json\\\",\\n  \\\"all_passed\\\": true,\\n  \\\"checks\\\": 6\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"8141dfa9d04a9a602309c7c703b20ed4559150292af4962f2e44855872272065\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4130,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ab41ca21b157186ab8ec59ec8c78ef45fd9d9ec67035f0cd1b6a2901afc38d33\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"output\": \"/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/result.json\",\n  \"all_passed\": true,\n  \"checks\": 6\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "8141dfa9d04a9a602309c7c703b20ed4559150292af4962f2e44855872272065",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 4130,
+        "transportStderr": [],
+        "codeSha256": "ab41ca21b157186ab8ec59ec8c78ef45fd9d9ec67035f0cd1b6a2901afc38d33"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"output\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/result.json\\\",\\n  \\\"all_passed\\\": true,\\n  \\\"checks\\\": 6\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"8141dfa9d04a9a602309c7c703b20ed4559150292af4962f2e44855872272065\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4130,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ab41ca21b157186ab8ec59ec8c78ef45fd9d9ec67035f0cd1b6a2901afc38d33\"\n}"
+      }
+    ]
+  }
+}

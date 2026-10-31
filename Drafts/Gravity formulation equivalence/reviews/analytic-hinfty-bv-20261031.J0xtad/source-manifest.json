@@ -1,0 +1,66 @@
+{
+  "frozen_at_utc": "2026-10-31T01:38:56.994051+00:00",
+  "method": "Byte snapshots or declared source-line excerpts; no algebra kernels run.",
+  "records": [
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/16 Nonlinear BV map and finite density transport.md",
+      "source_sha256": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3",
+      "source_bytes": 31603,
+      "snapshot": "source16.md",
+      "snapshot_sha256": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3",
+      "snapshot_bytes": 31603,
+      "original_line_range": null
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/18 Complete AdS BV contraction and tree transfer.md",
+      "source_sha256": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b",
+      "source_bytes": 31575,
+      "snapshot": "source18.md",
+      "snapshot_sha256": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b",
+      "snapshot_bytes": 31575,
+      "original_line_range": null
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/14 Geometric CS Gaussian map and regulator.md",
+      "source_sha256": "536c9db80e2cca49e61d9c71be68ef2714f82934b23c89b796310e4c2c0d72f9",
+      "source_bytes": 42163,
+      "snapshot": "source14-boundary-excerpt.md",
+      "snapshot_sha256": "e0e549d08f9fbc3d25ddc4da5ab05e02fc84c1b828738e23beb1e0ca93b17183",
+      "snapshot_bytes": 832,
+      "original_line_range": [
+        124,
+        126
+      ]
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/perturbation/formalism.md",
+      "source_sha256": "f57291a1af1cbee270d071c89bde5aee00116590d04c496317940b50cfaa403e",
+      "source_bytes": 19875,
+      "snapshot": "cps-convention-excerpt.md",
+      "snapshot_sha256": "5912549e547d0f219d21f790b3d5cb4562fe2dde590a0b36dfc143d9ed42d069",
+      "snapshot_bytes": 1398,
+      "original_line_range": [
+        7,
+        25
+      ]
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/AGENTS.md",
+      "source_sha256": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7",
+      "source_bytes": 4402,
+      "snapshot": "root-rules.md",
+      "snapshot_sha256": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7",
+      "snapshot_bytes": 4402,
+      "original_line_range": null
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Articles/Quantization in AdS/AGENTS.md",
+      "source_sha256": "3b556cdef13481e8cbec655ef90cd03d4b81448869d070cba584d3e18093002a",
+      "source_bytes": 3233,
+      "snapshot": "article-rules.md",
+      "snapshot_sha256": "3b556cdef13481e8cbec655ef90cd03d4b81448869d070cba584d3e18093002a",
+      "snapshot_bytes": 3233,
+      "original_line_range": null
+    }
+  ]
+}

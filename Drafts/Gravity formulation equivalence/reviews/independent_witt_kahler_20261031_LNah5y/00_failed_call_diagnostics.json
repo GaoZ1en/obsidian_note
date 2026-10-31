@@ -1,0 +1,17 @@
+{
+  "attempt": "First fresh Sage call, 2026-10-31",
+  "codeSha256": "b43f67f2f6708e5f29fb81e3ccccf51e2d9a04ecba4f193952382041e099747d",
+  "ok": false,
+  "result": "",
+  "error": {
+    "type": "builtins.ArithmeticError",
+    "message": "ArithmeticError: factorization of 0 is not defined",
+    "traceback": "Traceback (most recent call last):\n  File \"<cmdline>\", line 49, in <module>\n  File \"<cmdline>\", line 31, in _execute\n  File \"<sage-mcp>\", line 14, in <module>\n  File \"sage/rings/polynomial/multi_polynomial_libsingular.pyx\", line 4625, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.factor\n    return self.constant_coefficient().factor()\n  File \"sage/rings/rational.pyx\", line 3106, in sage.rings.rational.Rational.factor\n    return self.numerator().factor() * \\\n  File \"sage/rings/integer.pyx\", line 4092, in sage.rings.integer.Integer.factor\n    raise ArithmeticError(\"factorization of 0 is not defined\")\nArithmeticError: factorization of 0 is not defined"
+  },
+  "stdout": "",
+  "stderr": "",
+  "warnings": [],
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3947,
+  "interpretation": "The first torsion residual is exactly zero; Sage factor(0) raises instead of displaying zero. This is a diagnostic, not a failed mathematical check. Corrected calls avoid factorization of zero. No private result was written before this exception."
+}

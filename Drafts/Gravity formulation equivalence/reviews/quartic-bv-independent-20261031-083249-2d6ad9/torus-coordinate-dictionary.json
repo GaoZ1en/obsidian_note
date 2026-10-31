@@ -1,0 +1,542 @@
+[
+  {
+    "index": 0,
+    "name": "A1_X1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      0
+    ],
+    "retained": false,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 1,
+    "name": "A1_X2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      1
+    ],
+    "retained": false,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 2,
+    "name": "A1_Y1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 3,
+    "name": "A1_Y2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 4,
+    "name": "A1_J3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 5,
+    "name": "A1_P3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      1,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 6,
+    "name": "A2_X1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      0
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 7,
+    "name": "A2_X2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      1
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 8,
+    "name": "A2_Y1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 9,
+    "name": "A2_Y2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 10,
+    "name": "A2_J3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 11,
+    "name": "A2_P3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      2,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 12,
+    "name": "A4_X1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      0
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 13,
+    "name": "A4_X2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      1
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 14,
+    "name": "A4_Y1",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 15,
+    "name": "A4_Y2",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 16,
+    "name": "A4_J3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 17,
+    "name": "A4_P3",
+    "parity": 0,
+    "kind": "q",
+    "basis": [
+      4,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 18,
+    "name": "c_X1",
+    "parity": 1,
+    "kind": "c",
+    "basis": 0,
+    "retained": false,
+    "UV_lagrangian": true
+  },
+  {
+    "index": 19,
+    "name": "c_X2",
+    "parity": 1,
+    "kind": "c",
+    "basis": 1,
+    "retained": false,
+    "UV_lagrangian": true
+  },
+  {
+    "index": 20,
+    "name": "c_Y1",
+    "parity": 1,
+    "kind": "c",
+    "basis": 2,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 21,
+    "name": "c_Y2",
+    "parity": 1,
+    "kind": "c",
+    "basis": 3,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 22,
+    "name": "c_J3",
+    "parity": 1,
+    "kind": "c",
+    "basis": 4,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 23,
+    "name": "c_P3",
+    "parity": 1,
+    "kind": "c",
+    "basis": 5,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 24,
+    "name": "As1_X1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      0
+    ],
+    "retained": false,
+    "UV_lagrangian": true
+  },
+  {
+    "index": 25,
+    "name": "As1_X2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      1
+    ],
+    "retained": false,
+    "UV_lagrangian": true
+  },
+  {
+    "index": 26,
+    "name": "As1_Y1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 27,
+    "name": "As1_Y2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 28,
+    "name": "As1_J3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 29,
+    "name": "As1_P3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      1,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 30,
+    "name": "As2_X1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      0
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 31,
+    "name": "As2_X2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      1
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 32,
+    "name": "As2_Y1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 33,
+    "name": "As2_Y2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 34,
+    "name": "As2_J3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 35,
+    "name": "As2_P3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      2,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 36,
+    "name": "As4_X1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      0
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 37,
+    "name": "As4_X2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      1
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 38,
+    "name": "As4_Y1",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      2
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 39,
+    "name": "As4_Y2",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      3
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 40,
+    "name": "As4_J3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      4
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 41,
+    "name": "As4_P3",
+    "parity": 1,
+    "kind": "p",
+    "basis": [
+      4,
+      5
+    ],
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 42,
+    "name": "cs_X1",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 0,
+    "retained": false,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 43,
+    "name": "cs_X2",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 1,
+    "retained": false,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 44,
+    "name": "cs_Y1",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 2,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 45,
+    "name": "cs_Y2",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 3,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 46,
+    "name": "cs_J3",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 4,
+    "retained": true,
+    "UV_lagrangian": false
+  },
+  {
+    "index": 47,
+    "name": "cs_P3",
+    "parity": 0,
+    "kind": "pi",
+    "basis": 5,
+    "retained": true,
+    "UV_lagrangian": false
+  }
+]

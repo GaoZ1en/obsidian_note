@@ -1,0 +1,112 @@
+(* Independent Ashtekar-Barbero foliation test, 2026-10-31.
+   Conventions: eta=(-+++), Cartan de^I+omega^I_J wedge e^J=0,
+   Gamma^i=-epsilon^i_jk omega^{jk}/2, K^i=omega^{0i}.
+   Self-contained Wolfram component checks, executed in fresh xAct core kernels.
+   No abstract xAct definitions or external data are required.
+   The two sections reproduce the successful geometry and holonomy batches.
+*)
+
+(* ---------- Geometry ---------- *)
+ClearAll[tau,rho,theta,phi,tt,rr,gam,aa,ss,cc,conn,curvature,torsion,afied,curvA,eps,Js];
+eta=DiagonalMatrix[{-1,1,1,1}];
+eps[i_,j_,k_]:=Signature[{i,j,k}];
+Js=Table[Table[-eps[i,j,k],{j,3},{k,3}],{i,3}];
+conn[coords_,c_,s_,hyper_]:=Module[{w=ConstantArray[0,{4,4,4}]},
+  If[hyper,w[[1,2,2]]=1;w[[1,3,3]]=s;w[[1,4,4]]=s Sin[coords[[3]]]];
+  w[[2,3,3]]=-c;w[[2,4,4]]=-c Sin[coords[[3]]];w[[3,4,4]]=-Cos[coords[[3]]];
+  Do[w[[j,i,k]]=-w[[i,j,k]],{i,1,4},{j,i+1,4},{k,4}];w];
+curvature[w_,x_]:=Table[
+  D[w[[i,j,nu]],x[[mu]]]-D[w[[i,j,mu]],x[[nu]]]+
+  Sum[w[[i,k,mu]] w[[k,j,nu]]-w[[i,k,nu]] w[[k,j,mu]],{k,Length[w]}],
+  {i,Length[w]},{j,Length[w]},{mu,Length[x]},{nu,Length[x]}];
+torsion[e_,w_,x_]:=Table[
+  D[e[[i,nu]],x[[mu]]]-D[e[[i,mu]],x[[nu]]]+
+  Sum[w[[i,j,mu]] e[[j,nu]]-w[[i,j,nu]] e[[j,mu]],{j,4}],
+  {i,4},{mu,4},{nu,4}];
+zeroQ[z_]:=TrueQ[FullSimplify[z==ConstantArray[0,Dimensions[z]],
+  Assumptions->{tau>0,rho>0,0<theta<Pi,rr>0,aa>0,Element[gam,Reals]}]];
+xh={tau,rho,theta,phi};
+eh=DiagonalMatrix[{1,tau,tau Sinh[rho],tau Sinh[rho] Sin[theta]}];
+whUp=conn[xh,Cosh[rho],Sinh[rho],True];
+wh=Table[whUp[[i,j,mu]] eta[[j,j]],{i,4},{j,4},{mu,4}];
+xp={tt,rr,theta,phi};ep=DiagonalMatrix[{1,1,rr,rr Sin[theta]}];
+wpUp=conn[xp,1,0,False];
+wp=Table[wpUp[[i,j,mu]] eta[[j,j]],{i,4},{j,4},{mu,4}];
+afied[w_]:=Table[-Sum[eps[i,j,k] w[[j+1,k+1,mu]],{j,3},{k,3}]/2+
+  gam w[[1,i+1,mu]],{i,3},{mu,4}];
+curvA[A_,x_]:=Table[D[A[[i,nu]],x[[mu]]]-D[A[[i,mu]],x[[nu]]]+
+  Sum[eps[i,j,k] A[[j,mu]] A[[k,nu]],{j,3},{k,3}],
+  {i,3},{mu,Length[x]},{nu,Length[x]}];
+Ah=afied[whUp];Ap=afied[wpUp];Fh=curvA[Ah,xh];Fp=curvA[Ap,xp];
+FhExpected=Table[(1+gam^2)/tau^2 Sum[eps[i,j,k] eh[[j+1,mu]] eh[[k+1,nu]],{j,3},{k,3}],
+  {i,3},{mu,4},{nu,4}];
+R3=curvature[wh[[2;;4,2;;4,All]],xh];
+R3Expected=Table[-(eh[[i+1,mu]] eh[[j+1,nu]]-eh[[i+1,nu]] eh[[j+1,mu]])/tau^2,
+  {i,3},{j,3},{mu,4},{nu,4}];
+Gh=Ah/.gam->0;Kh=whUp[[1,2;;4,All]];
+DK=Table[D[Kh[[i,nu]],xh[[mu]]]-D[Kh[[i,mu]],xh[[nu]]]+
+  Sum[eps[i,j,k](Gh[[j,mu]] Kh[[k,nu]]-Gh[[j,nu]] Kh[[k,mu]]),{j,3},{k,3}],
+  {i,3},{mu,4},{nu,4}];
+metric=Transpose[eh].eta.eh;inverse=Inverse[metric];
+christ=Table[Sum[inverse[[l,k]](D[metric[[k,j]],xh[[i]]]+
+  D[metric[[k,i]],xh[[j]]]-D[metric[[i,j]],xh[[k]]]),{k,4}]/2,
+  {l,4},{i,4},{j,4}];
+M=-cc Js[[2]]+gam ss Js[[3]];lam2=cc^2+gam^2 ss^2;
+geometryChecks=<|
+  "J_commutators"->And@@Flatten[Table[Js[[i]].Js[[j]]-Js[[j]].Js[[i]]==Sum[eps[i,j,k] Js[[k]],{k,3}],{i,3},{j,3}]],
+  "hyperboloid_torsion_zero"->zeroQ[torsion[eh,wh,xh]],
+  "plane_torsion_zero"->zeroQ[torsion[ep,wp,xp]],
+  "hyperboloid_Lorentz_curvature_zero"->zeroQ[curvature[wh,xh]],
+  "plane_Lorentz_curvature_zero"->zeroQ[curvature[wp,xp]],
+  "hyperboloid_AB_curvature"->zeroQ[Fh-FhExpected],
+  "plane_AB_curvature_zero"->zeroQ[Fp],
+  "hyperboloid_intrinsic_curvature"->zeroQ[R3-R3Expected],
+  "Codazzi_DGamma_K_zero"->zeroQ[DK],
+  "positive_K_ab_equals_q_ab_over_tau"->zeroQ[christ[[1,2;;4,2;;4]]-metric[[2;;4,2;;4]]/tau],
+  "cross_product_minimal_polynomial"->zeroQ[MatrixPower[M,3]+lam2 M],
+  "trace_M_zero"->TrueQ[Simplify[Tr[M]]==0],
+  "trace_M_squared"->TrueQ[Simplify[Tr[M.M]+2 lam2]==0],
+  "chiral_norm_squared"->TrueQ[FullSimplify[(lam2/.{gam->I,cc->Cosh[rho],ss->Sinh[rho]})-1]==0]
+|>;
+geometryReport=<|"Checks"->geometryChecks,
+  "Hyperboloid_A_rows_i_columns_tau_rho_theta_phi"->Ah,
+  "Plane_A_rows_i_columns_t_r_theta_phi"->Ap|>;
+
+(* ---------- Holonomy, frame transitions, projection obstruction ---------- *)
+ClearAll[eps,Js,bs,ls,pp,ph,ss,cc,gam,rotSpherical];
+eps[i_,j_,k_]:=Signature[{i,j,k}];
+Js=Table[Table[-eps[i,j,k],{j,3},{k,3}],{i,3}];
+ls=Table[ArrayPad[Js[[i]],{{1,0},{1,0}}],{i,3}];
+bs=Table[Normal[SparseArray[{{1,i+1}->1,{i+1,1}->1},{4,4}]],{i,3}];
+pp[W_]:=Table[-Sum[eps[i,j,k] W[[j+1,k+1]],{j,3},{k,3}]/2+gam W[[1,i+1]],{i,3}].Js;
+rotSpherical={{Cos[ph],Sin[ph],0},{0,0,-1},{-Sin[ph],Cos[ph],0}};
+j=Table[-I PauliMatrix[i]/2,{i,3}];
+gspin=MatrixExp[ph j[[2]]].MatrixExp[Pi/2 j[[1]]];
+M=-cc Js[[2]]+gam ss Js[[3]];lambda=Sqrt[cc^2+gam^2 ss^2];
+H=IdentityMatrix[3]-Sin[2 Pi lambda]/lambda M+(1-Cos[2 Pi lambda])/lambda^2 M.M;
+Hhalf=FullSimplify[H/.{gam->1,ss->Sqrt[10]/4,cc->Sqrt[26]/4}];
+Hint=FullSimplify[H/.{gam->1,ss->Sqrt[6]/2,cc->Sqrt[10]/2}];
+Uopen=-cc j[[2]]+gam ss j[[3]];
+spinResidual=FullSimplify[Uopen.Uopen+(cc^2+gam^2 ss^2)/4 IdentityMatrix[2]];
+q=1+gam^2;traceSeries=Series[1+2 Cos[2 Pi Sqrt[1+q ss^2]],{ss,0,6}];
+holonomyChecks=<|
+  "Lorentz_rotation_commutators"->And@@Flatten[Table[ls[[i]].ls[[j]]-ls[[j]].ls[[i]]==Sum[eps[i,j,k] ls[[k]],{k,3}],{i,3},{j,3}]],
+  "Lorentz_boost_commutators"->And@@Flatten[Table[bs[[i]].bs[[j]]-bs[[j]].bs[[i]]==-Sum[eps[i,j,k] ls[[k]],{k,3}],{i,3},{j,3}]],
+  "projection_boost_obstruction"->TrueQ[Simplify[pp[bs[[1]].bs[[2]]-bs[[2]].bs[[1]]]-
+    (pp[bs[[1]]].pp[bs[[2]]]-pp[bs[[2]]].pp[bs[[1]]])+(1+gam^2) Js[[3]]]==ConstantArray[0,{3,3}]],
+  "spherical_rotation_is_SO3"->TrueQ[Simplify[{rotSpherical.Transpose[rotSpherical],Det[rotSpherical]}]=={IdentityMatrix[3],1}],
+  "spherical_connection_equals_minus_J2"->TrueQ[Simplify[-D[rotSpherical,ph].Transpose[rotSpherical]+Js[[2]]]==ConstantArray[0,{3,3}]],
+  "SO3_endpoint_matches"->TrueQ[(rotSpherical/.ph->2 Pi)==(rotSpherical/.ph->0)],
+  "spin_endpoint_is_minus"->TrueQ[FullSimplify[(gspin/.ph->2 Pi)+(gspin/.ph->0)]==ConstantArray[0,{2,2}]],
+  "half_integer_lambda_counterexample_trace_minus_one"->TrueQ[Tr[Hhalf]==-1],
+  "integer_lambda_SO3_identity"->TrueQ[Hint==IdentityMatrix[3]],
+  "chiral_SO3_identity"->TrueQ[FullSimplify[(H/.{gam->I,ss->Sinh[rho],cc->Cosh[rho]}),Assumptions->rho>0]==IdentityMatrix[3]],
+  "spin_matrix_square"->TrueQ[spinResidual==ConstantArray[0,{2,2}]],
+  "Rodrigues_trace"->TrueQ[FullSimplify[Tr[H]-(1+2 Cos[2 Pi lambda])]==0]
+|>;
+holonomyReport=<|"Checks"->holonomyChecks,
+  "Small_R_over_a_trace"->traceSeries,
+  "Half_integer_example_holonomy"->Hhalf|>;
+
+<|"Geometry"->geometryReport,"Holonomy"->holonomyReport,
+  "All26ChecksPass"->And@@Join[Values[geometryChecks],Values[holonomyChecks]]|>

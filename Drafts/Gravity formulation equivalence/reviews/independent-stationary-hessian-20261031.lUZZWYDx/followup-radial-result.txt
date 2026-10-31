@@ -1,0 +1,6 @@
+<|"Result" -> <|"Checks" -> <|"sine_band_representation" -> True, "regular_origin_value" -> True, 
+     "radial_laplacian_conjugation" -> True, "radial_L2_integral" -> True, "H3_scalar_L2_norm" -> True, 
+     "nonnegative_numerator" -> True, "even_origin_expansion" -> True|>, "AllPassed" -> True, 
+   "L2NormSquared" -> 2*b$8554*Pi^2, "OriginValue" -> b$8554^2/2, "Scope" -> "Exact scalar identities. Band \
+support follows from the half-line sine transform; the actual rank-3 ghost projector trace divergence is \
+proved analytically in followup.md."|>, "Failed" -> False, "Messages" -> {}|>

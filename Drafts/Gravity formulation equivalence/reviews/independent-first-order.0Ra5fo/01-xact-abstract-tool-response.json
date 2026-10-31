@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_0d8c498083d446ea939157e4ce58a5bb|fc_033d43aad14c2852016ae50c5c76bc81919444332472392ec0",
+  "sessionId": "7386efdc-b515-4a20-be9e-736565a6c896",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "DefManifold[M3, 3, {a, b, c, d, f, p, q, r, s}];\nDefMetric[1, gg[-a, -b], DD, PrintAs -> \"g\"];\nDefTensor[cc[-a, -b], M3, PrintAs -> \"C\"];\nDefTensor[kk[-a, -b, -c], M3, Antisymmetric[{-a, -b}], PrintAs -> \"K\"];\nreport = Block[{$MessageList = {}},\n  rules = MakeRule[{kk[-a, -b, -c], epsilongg[-a, -b, d] cc[-d, -c]}, MetricOn -> All, ContractMetrics -> True];\n  quad = kk[a, -c, -a] kk[c, b, -b] - kk[a, -c, -b] kk[c, b, -a];\n  target = cc[a, -b] cc[b, -a] - cc[a, -a] cc[b, -b];\n  substituted = quad /. rules;\n  canonical = ToCanonical[ContractMetric[Expand[substituted]]];\n  residual = ToCanonical[ContractMetric[Expand[canonical - target]]];\n  derivativeRaw = DD[-a][kk[a, b, -b]] - DD[-b][kk[a, b, -a]];\n  derivativeResidual = ToCanonical[ContractMetric[derivativeRaw - 2 DD[-a][kk[a, b, -b]]]];\n  <|\"KernelVersion\" -> $Version, \"Dimension\" -> 3, \"MetricSignature\" -> 1,\n    \"Dualization\" -> \"K_ab_c = epsilon_abd C_dc\", \"Rules\" -> rules,\n    \"CurvatureQuadratic\" -> quad, \"Substituted\" -> substituted,\n    \"CanonicalQuadratic\" -> canonical, \"Target\" -> target,\n    \"QuadraticResidual\" -> residual, \"DerivativeResidual\" -> derivativeResidual,\n    \"Messages\" -> (ToString[#, InputForm] & /@ $MessageList)|>\n];\nExport[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/01-xact-abstract-result.wxf\", report, \"WXF\"];\nExport[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-first-order.0Ra5fo/01-xact-abstract-result.txt\", ToString[report, InputForm, PageWidth -> 110], \"Text\"];\nreport",
+    "profile": "core",
+    "timeoutMs": 120000,
+    "maxOutputChars": 30000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"KernelVersion\\\" -> {\\\"1.4.2\\\", {2014, 10, 30}}, \\\"Dimension\\\" -> 3, \\\"MetricSignature\\\" -> 1, \\\"Dualization\\\" -> \\\"K_ab_c = epsilon_abd C_dc\\\", \\\"Rules\\\" -> {HoldPattern[kk[(a_)?TangentM3`pmQ, (b_)?TangentM3`pmQ, (c_)?TangentM3`pmQ]] :> Module[{s$18793}, cc[-s$18793, c]*epsilongg[a, b, s$18793]]}, \\\"CurvatureQuadratic\\\" -> -(kk[a, -c, -b]*kk[c, b, -a]) + kk[a, -c, -a]*kk[c, b, -b], \\\"Substituted\\\" -> -(cc[-s$18793$18805, -b]*cc[-s$18793$18806, -a]*(gg[a, s$18793$18806]*gg[s$18793$18805, b] - gg[a, b]*gg[s$18793$18805, s$18793$18806])) + cc[-s$18793$18811, -a]*cc[-s$18793$18812, -b]*(gg[a, s$18793$18812]*gg[s$18793$18811, b] - gg[a, b]*gg[s$18793$18811, s$18793$18812]), \\\"CanonicalQuadratic\\\" -> cc[a, s$18793$18805]*cc[-s$18793$18805, -a] - cc[a, -a]*cc[s$18793$18805, -s$18793$18805], \\\"Target\\\" -> cc[a, -b]*cc[b, -a] - cc[a, -a]*cc[b, -b], \\\"QuadraticResidual\\\" -> 0, \\\"DerivativeResidual\\\" -> 0, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"7867f8e5b71ab934695adc1d714730755458f7cc4d805e915af54bb69cc84c9e\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3355,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "core",
+        "result": "<|\"KernelVersion\" -> {\"1.4.2\", {2014, 10, 30}}, \"Dimension\" -> 3, \"MetricSignature\" -> 1, \"Dualization\" -> \"K_ab_c = epsilon_abd C_dc\", \"Rules\" -> {HoldPattern[kk[(a_)?TangentM3`pmQ, (b_)?TangentM3`pmQ, (c_)?TangentM3`pmQ]] :> Module[{s$18793}, cc[-s$18793, c]*epsilongg[a, b, s$18793]]}, \"CurvatureQuadratic\" -> -(kk[a, -c, -b]*kk[c, b, -a]) + kk[a, -c, -a]*kk[c, b, -b], \"Substituted\" -> -(cc[-s$18793$18805, -b]*cc[-s$18793$18806, -a]*(gg[a, s$18793$18806]*gg[s$18793$18805, b] - gg[a, b]*gg[s$18793$18805, s$18793$18806])) + cc[-s$18793$18811, -a]*cc[-s$18793$18812, -b]*(gg[a, s$18793$18812]*gg[s$18793$18811, b] - gg[a, b]*gg[s$18793$18811, s$18793$18812]), \"CanonicalQuadratic\" -> cc[a, s$18793$18805]*cc[-s$18793$18805, -a] - cc[a, -a]*cc[s$18793$18805, -s$18793$18805], \"Target\" -> cc[a, -b]*cc[b, -a] - cc[a, -a]*cc[b, -b], \"QuadraticResidual\" -> 0, \"DerivativeResidual\" -> 0, \"Messages\" -> {}|>",
+        "resultSha256": "7867f8e5b71ab934695adc1d714730755458f7cc4d805e915af54bb69cc84c9e",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3355,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"core\",\n  \"result\": \"<|\\\"KernelVersion\\\" -> {\\\"1.4.2\\\", {2014, 10, 30}}, \\\"Dimension\\\" -> 3, \\\"MetricSignature\\\" -> 1, \\\"Dualization\\\" -> \\\"K_ab_c = epsilon_abd C_dc\\\", \\\"Rules\\\" -> {HoldPattern[kk[(a_)?TangentM3`pmQ, (b_)?TangentM3`pmQ, (c_)?TangentM3`pmQ]] :> Module[{s$18793}, cc[-s$18793, c]*epsilongg[a, b, s$18793]]}, \\\"CurvatureQuadratic\\\" -> -(kk[a, -c, -b]*kk[c, b, -a]) + kk[a, -c, -a]*kk[c, b, -b], \\\"Substituted\\\" -> -(cc[-s$18793$18805, -b]*cc[-s$18793$18806, -a]*(gg[a, s$18793$18806]*gg[s$18793$18805, b] - gg[a, b]*gg[s$18793$18805, s$18793$18806])) + cc[-s$18793$18811, -a]*cc[-s$18793$18812, -b]*(gg[a, s$18793$18812]*gg[s$18793$18811, b] - gg[a, b]*gg[s$18793$18811, s$18793$18812]), \\\"CanonicalQuadratic\\\" -> cc[a, s$18793$18805]*cc[-s$18793$18805, -a] - cc[a, -a]*cc[s$18793$18805, -s$18793$18805], \\\"Target\\\" -> cc[a, -b]*cc[b, -a] - cc[a, -a]*cc[b, -b], \\\"QuadraticResidual\\\" -> 0, \\\"DerivativeResidual\\\" -> 0, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"7867f8e5b71ab934695adc1d714730755458f7cc4d805e915af54bb69cc84c9e\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3355,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

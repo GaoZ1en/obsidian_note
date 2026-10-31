@@ -1,0 +1,398 @@
+{
+  "scope": "Static archive/version/link/diagnostic check only; no math kernels, external URL test, or historical-anchor sentence certification.",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "local links and historical line bounds",
+      "passed": true
+    },
+    {
+      "label": "frozen hashes and current parent mathematical sources",
+      "passed": true
+    },
+    {
+      "label": "archived original byte copies",
+      "passed": true
+    },
+    {
+      "label": "saved mathematical result labels with declared scope",
+      "passed": true
+    },
+    {
+      "label": "actual Sage diagnostics and returned string hashes",
+      "passed": true
+    },
+    {
+      "label": "fixture stdout and exact inline-source bindings",
+      "passed": true
+    },
+    {
+      "label": "actual Wolfram successful return flags",
+      "passed": true
+    },
+    {
+      "label": "nonzero Ward witnesses and explicit endpoint coverage",
+      "passed": true
+    },
+    {
+      "label": "main-note displays and critical qualifications",
+      "passed": true
+    }
+  ],
+  "details": {
+    "local links and historical line bounds": {
+      "documents": 16,
+      "links": 626,
+      "errors": []
+    },
+    "frozen hashes and current parent mathematical sources": {
+      "comparisons": 41,
+      "mismatches": []
+    },
+    "archived original byte copies": [
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/executed-source.py",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/executed-source.py",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/result.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/radial-exact.sobj",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/radial-exact.sobj",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/b2d910111ae1-research-result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/actual-server-return.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/executed-source.py",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/executed-source.py",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/result.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/source-exact.sobj",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/source-exact.sobj",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/93c6e7eb410a-research-result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/actual-server-return.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/session-9e06126688d3/fe68e7191733-research-result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-heisenberg-success-envelope.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/session-9e06126688d3/dc60b771f221-research-result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-torus-success-envelope.json",
+        "passed": true
+      },
+      {
+        "source": "/Users/koishi/.dsh/research-results/session-9e06126688d3/20be64d7f81c-research-result.json",
+        "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-control-success-envelope.json",
+        "passed": true
+      }
+    ],
+    "saved mathematical result labels with declared scope": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/result.json",
+        "expected": 31,
+        "actual": 31,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/result.json",
+        "expected": 6,
+        "actual": 6,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/checks.json",
+        "expected": 41,
+        "actual": 41,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-checks.json",
+        "expected": 29,
+        "actual": 29,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/sage-checks.json",
+        "expected": 11,
+        "actual": 11,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/cyclic-bv-independent-20261031-TAGvppMY/algebra-preview-corrected.txt",
+        "expected": 13,
+        "actual": 13,
+        "passed": true
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/wall-checks.txt",
+        "expected": 7,
+        "actual": 7,
+        "passed": true
+      }
+    ],
+    "actual Sage diagnostics and returned string hashes": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/actual-server-return.json",
+        "passed": true,
+        "elapsedMs": 81304,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/actual-server-return.json",
+        "passed": true,
+        "elapsedMs": 4130,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-heisenberg-success-envelope.json",
+        "passed": true,
+        "elapsedMs": 3446,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-torus-success-envelope.json",
+        "passed": true,
+        "elapsedMs": 3508,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-control-success-envelope.json",
+        "passed": true,
+        "elapsedMs": 3438,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/sage-server-return.json",
+        "passed": true,
+        "elapsedMs": 3295,
+        "version": "SageMath version 10.9, Release Date: 2026-05-04",
+        "ok": true,
+        "error": null,
+        "warnings": [],
+        "stderr": "",
+        "transportStderr": []
+      }
+    ],
+    "fixture stdout and exact inline-source bindings": [
+      {
+        "fixture": "heisenberg",
+        "passed": true,
+        "extra_stdout": "Saved exact source and outputs in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9\n"
+      },
+      {
+        "fixture": "torus",
+        "passed": true,
+        "extra_stdout": "Saved actual output and exact polynomials in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9\n"
+      },
+      {
+        "fixture": "control",
+        "passed": true,
+        "extra_stdout": "\n"
+      },
+      {
+        "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/finite-graded-check.py",
+        "passed": true,
+        "archival_extra_LF": true
+      },
+      {
+        "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/wall-first-variation.wl",
+        "passed": true,
+        "archival_extra_LF": true
+      }
+    ],
+    "actual Wolfram successful return flags": [
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/cyclic-bv-independent-20261031-TAGvppMY/kernel-corrected-return.json",
+        "passed": true,
+        "actual_returned_output": "<|OutputDirectory -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/cyclic-bv-independent-20261031-TAGvppMY, AllChecksPassed -> True, Failed -> False, Messages -> {}|>",
+        "scope": "No separate process-exit/stderr inventory is provided by this server."
+      },
+      {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/wall-server-return.json",
+        "passed": true,
+        "actual_returned_output": "{/Users/koishi/.dsh/research-results/kernel-exports/wall-variation.szXbD3/preview.txt, /Users/koishi/.dsh/research-results/kernel-exports/wall-variation.szXbD3/result.wxf, True, False, {}}",
+        "scope": "No separate process-exit/stderr inventory is provided by this server."
+      }
+    ],
+    "nonzero Ward witnesses and explicit endpoint coverage": [
+      {
+        "fixture": "heisenberg",
+        "passed": true,
+        "ward_terms_per_side": 48
+      },
+      {
+        "fixture": "torus-",
+        "passed": true,
+        "ward_terms_per_side": 32
+      },
+      {
+        "fixture": "endpoint-sensitive torus",
+        "passed": true
+      },
+      {
+        "fixture": "nonlinear native-Sage label caveat",
+        "passed": true,
+        "scope": "Ghost times physical antifield, not even ghost-antifield dependence."
+      }
+    ],
+    "main-note displays and critical qualifications": {
+      "lines": 498,
+      "display_pairs": 47,
+      "inline_pairs": 168,
+      "tags": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "23a",
+        "24",
+        "24a",
+        "25",
+        "26",
+        "27",
+        "27a",
+        "27b",
+        "27c",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "missing": []
+    }
+  },
+  "snapshots": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/README.md",
+      "sha256": "bbc36c5018f0a931619550a33ab4defbb8e5a7081335684a90948937418aaf7d"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "844226c13f58ab7737e5cd953ba8a32f6f532d09be00c8e2b86680d23e61700c"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "411ba8642e4e5861f22387332020a0b203ea218ce9403a5d8b99227da933ea4e"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/17 Spectral BV compression and master-equation obstruction.md",
+      "sha256": "d74a542041b87a94e26929252d3efe9efa772cf14f64a4c40fe3dff6beab59be"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/18 Complete AdS BV contraction and tree transfer.md",
+      "sha256": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "8d52235ccac1c23e9969fd73089d8bbc6dea5edc44317f0a7522db084090e96a"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "133dcf7c465ac4d47beed734569d81fa4962a20c293db5ad85df2d4df75243f2"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/README.md",
+      "sha256": "94a5f5201f6be3175e04e4074a05c1c9dda166852e130bd3b4402ebf6b18d9dc"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/cyclic-bv-independent-20261031-TAGvppMY/report.md",
+      "sha256": "ca848706febcbd571fce623d3d2ac2468e89e7fef5f24c7a6200a412c9e258eb"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/cyclic-bv-independent-20261031-TAGvppMY/note18-supplied-text-audit.md",
+      "sha256": "748c75ab1a6a009e7e7e685ab1134a2c5037c5013433615090e55ae89d0d05ec"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/independent-derivation.md",
+      "sha256": "f5385f7f54fdd7093df07c4f592f26ee9ad53daa71e51579d187276779c21f0c"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/supplied-note18-audit.md",
+      "sha256": "381d1501465fdb41a909967ed79d49e6844dc4aa35b805f5ed094884eff3abbf"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/report.md",
+      "sha256": "2e40c815c548c4845f2e1c17d4b6cf7e173d05d01fde9221e4bdd2c87ecce0a6"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/FREEZE.md",
+      "sha256": "f9bf7759fd507eebb9f99108e6e689c8bf7787f3fa087f5029947533035b3850"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/evidence-label-caveat.md",
+      "sha256": "af39b9a3cc7c9a047b9db9aa1342944039eced7a29cda7a17652a9324f852748"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-uv-domain-independent-20261031.1LbUTs/supplied-note18-audit.ye33hb3w/audit.md",
+      "sha256": "364321c008e760898b090fcccfd7d8c558fc2d9facb75669b927f315944cfc01"
+    }
+  ],
+  "auditor_sha256": "d4721ec7a7dd2b0dc465f5275f96037811eef3e083b68db86ce43b06e9a90cc2"
+}

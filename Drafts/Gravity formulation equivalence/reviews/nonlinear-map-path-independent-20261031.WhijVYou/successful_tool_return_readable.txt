@@ -1,0 +1,33 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+warnings[1].category: builtins.DeprecationWarning
+warnings[1].message: Use sage.version.version instead.
+  See https://github.com/sagemath/sage/issues/39015 for details.
+result: None
+resultType: builtins.NoneType
+stdout: {
+    "sage_version": "SageMath version 10.9, Release Date: 2026-05-04",
+    "fixture": "complexified cyclic SU2 Chevalley-Eilenberg exterior algebra; full gravitational internal algebra; unit volume/cell",
+    "kappa": "indeterminate kap over QQ(i); exact rational functions",
+    "coordinates": 48,
+    "odd_generators": 24,
+    "even_fluctuation_variables": 24,
+    "all_passed": true,
+    "term_counts": {
+      "S2": 57,
+      "Sc3": 108,
+      "Sg3": 147,
+      "G3": 36,
+      "G4": 108,
+      "cubic_bridge": 126,
+      "quartic_G4S2": 456
+    },
+    "elapsed_seconds": 514.9160530567169
+  }
+  FAILED LABELS: []
+  CHECK COUNT: 127
+  OUTPUT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou
+  
+elapsedMs: 525530

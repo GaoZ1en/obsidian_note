@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear_bv_cubic_bridge.py",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/executed-source.py",
+    "sha256": "681620ab1adac9ae27fc4b458191cace42ca91817d983d8c44b3ade6c63831ca",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/nonlinear-bv-cubic.yjc_086p/result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/result.json",
+    "sha256": "bd4eb550a61cdb5006b6e21287bde2914e35b2cda132b975e77c08b93d6bd2b2",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/nonlinear-bv-cubic.yjc_086p/residuals.sobj",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/residuals.sobj",
+    "sha256": "b66eeca66dcaf80a7a58ab2ae966941dcdbed4a552443010ce2c6d8f04b364fb",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/eed4308d8d3a-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-parent.x0xir72t/actual-server-return.json",
+    "sha256": "3c46771c4bca2ad23393854d7d0922d1a627240fc887c53b58a7a7d60fa7e47e",
+    "byte_equal": true
+  }
+]

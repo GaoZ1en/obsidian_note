@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_e2b189cd3c5a45c7b053905a8a60751a|fc_040698c8e3d2c94c016ae5491d85a4819181c52920acfae1ba",
+  "sessionId": "5591b6f3-7f44-487e-ac64-b3a5b200fb87",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/nonlinear-map-path-independent-20261031.WhijVYou/note19-supplied-audit.RQWvHW/check_supplied_note19.py')\nexec(compile(p.read_text(),str(p),'exec'),{'__file__':str(p),'__name__':'__main__'})",
+    "timeoutMs": 120000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"audit_kind\\\": \\\"post-freeze supplied-note19 audit, not independent initial derivation\\\",\\n  \\\"supplied_note_sha256\\\": \\\"c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9\\\",\\n  \\\"frozen_engine_sha256\\\": \\\"924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b\\\",\\n  \\\"checks\\\": [\\n    {\\n      \\\"label\\\": \\\"note19 eq16 component ordering and normalization\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"note19 eq15 cubic right generator\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"note19 exact determinant-cleared eq2 equals eq13\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"determinant-cleared resolvent cubic jet\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"determinant-cleared resolvent quartic jet\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"omitting 2F4 in note19 eq16 is detected\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 18\\n    },\\n    {\\n      \\\"label\\\": \\\"opposite coframe-resolvent sign is detected at degree4\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 108\\n    },\\n    {\\n      \\\"label\\\": \\\"missing half in logarithm is detected\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 108\\n    }\\n  ],\\n  \\\"all_passed\\\": true,\\n  \\\"elapsed_seconds\\\": 2.850371837615967,\\n  \\\"Gamma13_numerator_terms\\\": 348,\\n  \\\"Gamma2_numerator_terms\\\": 348\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"b0dfa6105cfe393eebd6a816317dfffa1e5174e28495b85d836946d2f50f9db0\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 9559,\n  \"transportStderr\": [],\n  \"codeSha256\": \"bdfc192a1c99be76b17cac883287a6ae8bada4036029ee94bafc603f30333ced\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"audit_kind\": \"post-freeze supplied-note19 audit, not independent initial derivation\",\n  \"supplied_note_sha256\": \"c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9\",\n  \"frozen_engine_sha256\": \"924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b\",\n  \"checks\": [\n    {\n      \"label\": \"note19 eq16 component ordering and normalization\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"note19 eq15 cubic right generator\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"note19 exact determinant-cleared eq2 equals eq13\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"determinant-cleared resolvent cubic jet\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"determinant-cleared resolvent quartic jet\",\n      \"passed\": true,\n      \"residual_terms\": 0\n    },\n    {\n      \"label\": \"omitting 2F4 in note19 eq16 is detected\",\n      \"passed\": true,\n      \"nonzero_terms\": 18\n    },\n    {\n      \"label\": \"opposite coframe-resolvent sign is detected at degree4\",\n      \"passed\": true,\n      \"nonzero_terms\": 108\n    },\n    {\n      \"label\": \"missing half in logarithm is detected\",\n      \"passed\": true,\n      \"nonzero_terms\": 108\n    }\n  ],\n  \"all_passed\": true,\n  \"elapsed_seconds\": 2.850371837615967,\n  \"Gamma13_numerator_terms\": 348,\n  \"Gamma2_numerator_terms\": 348\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "b0dfa6105cfe393eebd6a816317dfffa1e5174e28495b85d836946d2f50f9db0",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 9559,
+        "transportStderr": [],
+        "codeSha256": "bdfc192a1c99be76b17cac883287a6ae8bada4036029ee94bafc603f30333ced"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"audit_kind\\\": \\\"post-freeze supplied-note19 audit, not independent initial derivation\\\",\\n  \\\"supplied_note_sha256\\\": \\\"c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9\\\",\\n  \\\"frozen_engine_sha256\\\": \\\"924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b\\\",\\n  \\\"checks\\\": [\\n    {\\n      \\\"label\\\": \\\"note19 eq16 component ordering and normalization\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"note19 eq15 cubic right generator\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"note19 exact determinant-cleared eq2 equals eq13\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"determinant-cleared resolvent cubic jet\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"determinant-cleared resolvent quartic jet\\\",\\n      \\\"passed\\\": true,\\n      \\\"residual_terms\\\": 0\\n    },\\n    {\\n      \\\"label\\\": \\\"omitting 2F4 in note19 eq16 is detected\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 18\\n    },\\n    {\\n      \\\"label\\\": \\\"opposite coframe-resolvent sign is detected at degree4\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 108\\n    },\\n    {\\n      \\\"label\\\": \\\"missing half in logarithm is detected\\\",\\n      \\\"passed\\\": true,\\n      \\\"nonzero_terms\\\": 108\\n    }\\n  ],\\n  \\\"all_passed\\\": true,\\n  \\\"elapsed_seconds\\\": 2.850371837615967,\\n  \\\"Gamma13_numerator_terms\\\": 348,\\n  \\\"Gamma2_numerator_terms\\\": 348\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"b0dfa6105cfe393eebd6a816317dfffa1e5174e28495b85d836946d2f50f9db0\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 9559,\n  \"transportStderr\": [],\n  \"codeSha256\": \"bdfc192a1c99be76b17cac883287a6ae8bada4036029ee94bafc603f30333ced\"\n}"
+      }
+    ]
+  }
+}

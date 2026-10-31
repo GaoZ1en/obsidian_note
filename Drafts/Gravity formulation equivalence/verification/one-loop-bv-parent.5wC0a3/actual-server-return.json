@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_d6ece8f7568043f2845528aadd10176d|fc_00e61ec4e4885aea016ae54faf400c8191be2ded458c2de708",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\n__file__='/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/one_loop_bv_transport_checks.py'\nexec(compile(Path(__file__).read_text(encoding='utf-8'),__file__,'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"output\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/one-loop-bv-parent-j5m6h9jv\\\",\\n  \\\"all_passed\\\": true,\\n  \\\"groups\\\": 27,\\n  \\\"source_sha256\\\": \\\"e6e6633018c48c054798321b328dd58de39545cbff5ea5932a8638886cb18d3e\\\"\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"de2bae0e8331702143dc92b63141f469ca492c9d6e97eb9161338bf4d7eb0163\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 5625,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b0e146697891747b527dfc62eb956f5c9324ac3a85034cc1163293efece0bd51\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"output\": \"/Users/koishi/.dsh/research-results/kernel-exports/one-loop-bv-parent-j5m6h9jv\",\n  \"all_passed\": true,\n  \"groups\": 27,\n  \"source_sha256\": \"e6e6633018c48c054798321b328dd58de39545cbff5ea5932a8638886cb18d3e\"\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "de2bae0e8331702143dc92b63141f469ca492c9d6e97eb9161338bf4d7eb0163",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 5625,
+        "transportStderr": [],
+        "codeSha256": "b0e146697891747b527dfc62eb956f5c9324ac3a85034cc1163293efece0bd51"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"output\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/one-loop-bv-parent-j5m6h9jv\\\",\\n  \\\"all_passed\\\": true,\\n  \\\"groups\\\": 27,\\n  \\\"source_sha256\\\": \\\"e6e6633018c48c054798321b328dd58de39545cbff5ea5932a8638886cb18d3e\\\"\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"de2bae0e8331702143dc92b63141f469ca492c9d6e97eb9161338bf4d7eb0163\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 5625,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b0e146697891747b527dfc62eb956f5c9324ac3a85034cc1163293efece0bd51\"\n}"
+      }
+    ]
+  }
+}

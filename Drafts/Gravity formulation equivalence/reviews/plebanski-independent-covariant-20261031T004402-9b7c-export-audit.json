@@ -1,0 +1,30 @@
+{
+  "audit_type": "export-plumbing and archival provenance only; no mathematical rerun",
+  "mathematical_source_unchanged": true,
+  "mathematical_source_sha256": "bd03e8e37117903c2ac17f79b1ebcd0cb853998f425a3c0c4309069e103b379f",
+  "executed_source_sha256": "381fed93b347f2a40c4b075a9b6d9c373b61e5410455dca1afa0c51d2ec86bc5",
+  "current_source_sha256": "2c66a6b5b075d8323c691b54b90170379c9a3b64fea2f87ec672ede264b08b4a",
+  "raw_server_return_sha256": "46533a84d9416e4353dc6f4d3d7715a6fa08803f0def3ead5ec5da0b25382c31",
+  "original_result_sha256": "2eb5e5f6a4022ee1351e3b36fb24d07471e3393623f909b5d3da7ca56a3e212c",
+  "archived_stdout_matches_original_result": true,
+  "server_diagnostics": {
+    "ok": true,
+    "error": null,
+    "truncated": false,
+    "stdoutTruncated": false,
+    "stderr": "",
+    "stderrTruncated": false,
+    "warnings": [],
+    "warningsTruncated": false,
+    "transportStderr": [],
+    "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+    "elapsedMs": 3721
+  },
+  "upstreamTruncated": false,
+  "original_default_preserved_by_export_probe": true,
+  "fallback_directory_mode": "0700",
+  "probe_outputs": [
+    "/Users/koishi/.dsh/research-results/kernel-exports/plebanski-export-audit-b6s_91he/probe.json",
+    "/Users/koishi/.dsh/research-results/kernel-exports/plebanski-covariant-cf0jxx7y/probe.json"
+  ]
+}

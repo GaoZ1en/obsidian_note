@@ -1,0 +1,71 @@
+{
+  "frozen_at_utc": "2026-10-31T01:40:47.650085+00:00",
+  "status": "frozen analytic proof and source evidence",
+  "records": [
+    {
+      "file": "REPORT.md",
+      "sha256": "e723e3ab13fe937b50079a20df9ba064d299d16acac050541b52bd97024ad401",
+      "bytes": 28674
+    },
+    {
+      "file": "EVIDENCE.md",
+      "sha256": "42f1f050638eabcfded9253149779de19798c646d47f1ba391750fc1e421598c",
+      "bytes": 7985
+    },
+    {
+      "file": "source16.md",
+      "sha256": "67ba95bec2561a42c51f1c181b406619d557e6bafcf173cf906c920fa3b49ee3",
+      "bytes": 31603
+    },
+    {
+      "file": "source18.md",
+      "sha256": "24a6dd696cebc45c896b8fb81493228caf1788079035227c170aac2a820aaa9b",
+      "bytes": 31575
+    },
+    {
+      "file": "source14-boundary-excerpt.md",
+      "sha256": "e0e549d08f9fbc3d25ddc4da5ab05e02fc84c1b828738e23beb1e0ca93b17183",
+      "bytes": 832
+    },
+    {
+      "file": "cps-convention-excerpt.md",
+      "sha256": "5912549e547d0f219d21f790b3d5cb4562fe2dde590a0b36dfc143d9ed42d069",
+      "bytes": 1398
+    },
+    {
+      "file": "root-rules.md",
+      "sha256": "6d0e27c7e5e894b24f69a72177e47018db685a40417402bf2ed7ebcb82d4b6d7",
+      "bytes": 4402
+    },
+    {
+      "file": "article-rules.md",
+      "sha256": "3b556cdef13481e8cbec655ef90cd03d4b81448869d070cba584d3e18093002a",
+      "bytes": 3233
+    },
+    {
+      "file": "source-manifest.json",
+      "sha256": "1406c5b223472b8befdca6ae20bdedc0b374c004638de36445d5e22227dc9147",
+      "bytes": 2856
+    },
+    {
+      "file": "freeze_sources.py",
+      "sha256": "f4b337597c9e6ccaa5055aabdeb50fd6b17b56a6d13779b4bbafe067cc35c6fb",
+      "bytes": 2110
+    },
+    {
+      "file": "freeze.stdout.txt",
+      "sha256": "09e7c0475f0ae239db63ec8993f4ad9a9db065077bd9349850f56fa67c3fe02f",
+      "bytes": 2342
+    },
+    {
+      "file": "freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "freeze_final.py",
+      "sha256": "8306a12189add5abe9c3d99f15f2e0344488ead930fd07dbbcc93e9a2b848900",
+      "bytes": 1077
+    }
+  ]
+}

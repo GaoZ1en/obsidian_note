@@ -1,0 +1,57 @@
+<|"kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "profile" -> "xact/core; explicit finite exterior algebra", "source" -> "/Users/koishi/Documents/Note/Drafts\
+/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/checks.wl", 
+ "normalization" -> "kappa=1 in homogeneous checks; eta=-+++; epsilon_0123=+1; full pair sums", 
+ "checks" -> <|"hodge_star_squared_two_forms" -> <|"pass" -> True, 
+     "residual" -> {{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+        0, 0, 0}}|>, "full_pair_EC_cut_coefficient" -> <|"pass" -> True, "residual" -> 0|>, 
+   "full_pair_Holst_cut_coefficient" -> <|"pass" -> True, "residual" -> 0|>, 
+   "compatibility_d_e_delta_e_equals_2E_deltaGamma" -> <|"pass" -> True, 
+     "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}|>, 
+   "Lorentz_bivector_star_squared" -> <|"pass" -> True, 
+     "residual" -> {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+       {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}|>, "real_Holst_map_determinant" -> 
+    <|"pass" -> True, "residual" -> 0|>, "real_Holst_map_inverse" -> 
+    <|"pass" -> True, "residual" -> {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+       {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}|>, 
+   "nondegenerate_coframe_torsion_map_rank" -> <|"pass" -> True, "residual" -> 0|>, 
+   "off_shell_Holst_wall_identity" -> <|"pass" -> True, "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0}|>, "EC_wall_theta_plus_deltaell_minus_dC_fixed_q" -> 
+    <|"pass" -> True, "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}|>, 
+   "metric_bulk_theta_equals_EC_plus_dalpha" -> <|"pass" -> True, 
+     "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}|>, 
+   "metric_wall_C_equals_EC_C_plus_alpha" -> <|"pass" -> True, 
+     "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}|>, 
+   "time_gauge_general_tilt_C_EC" -> <|"pass" -> True, "residual" -> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0}|>, "raw_example_density_theta_s" -> <|"pass" -> True, "residual" -> 0|>, 
+   "raw_example_density_theta_t" -> <|"pass" -> True, "residual" -> 0|>, 
+   "raw_example_density_omega_st" -> <|"pass" -> True, "residual" -> 0|>, 
+   "raw_example_prescribed_corner_cancels_theta_s" -> <|"pass" -> True, "residual" -> 0|>, 
+   "raw_example_prescribed_corner_cancels_theta_t" -> <|"pass" -> True, "residual" -> 0|>, 
+   "densitized_triad_determinant" -> <|"pass" -> True, "residual" -> 0|>, 
+   "densitized_triad_inverse_on_positive_orientation" -> <|"pass" -> True, 
+     "residual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}|>, 
+   "ADM_bridge_thetaK_equals_pi_deltah_plus_delta_cap" -> <|"pass" -> True, "residual" -> 0|>|>, 
+ "details" -> <|"raw_bulk_coefficients" -> {kk[1, 1] + kk[2, 2] + kk[3, 3], -gg[1, 1] - gg[2, 2] - gg[3, 3]}, 
+   "compatibility_rank" -> 9, "compatibility_solution" -> 
+    {dg[1, 1] -> (-jet[1, 2, 3] + jet[1, 3, 2] - jet[2, 1, 3] + jet[2, 3, 1] + jet[3, 1, 2] - jet[3, 2, 1])/
+       2, dg[1, 2] -> -jet[2, 2, 3] + jet[2, 3, 2], dg[1, 3] -> -jet[3, 2, 3] + jet[3, 3, 2], 
+     dg[2, 1] -> jet[1, 1, 3] - jet[1, 3, 1], dg[2, 2] -> (jet[1, 2, 3] - jet[1, 3, 2] + jet[2, 1, 3] - 
+        jet[2, 3, 1] + jet[3, 1, 2] - jet[3, 2, 1])/2, dg[2, 3] -> jet[3, 1, 3] - jet[3, 3, 1], 
+     dg[3, 1] -> -jet[1, 1, 2] + jet[1, 2, 1], dg[3, 2] -> -jet[2, 1, 2] + jet[2, 2, 1], 
+     dg[3, 3] -> (jet[1, 2, 3] - jet[1, 3, 2] - jet[2, 1, 3] + jet[2, 3, 1] - jet[3, 1, 2] + jet[3, 2, 1])/
+       2}, "Holst_map_determinant" -> (1 + beta^2)^3/beta^6, "torsion_map_rank" -> 24, 
+   "tilt_corner_coefficient" -> -dchi, "example_rotation_matrix" -> 
+    {{Cos[(s*x)/len]*Cos[(t*x)/len], -(Cos[(s*x)/len]*Sin[(t*x)/len]), Sin[(s*x)/len]}, 
+     {Sin[(t*x)/len], Cos[(t*x)/len], 0}, {-(Cos[(t*x)/len]*Sin[(s*x)/len]), Sin[(s*x)/len]*Sin[(t*x)/len], 
+      Cos[(s*x)/len]}}, "example_Gamma_x" -> {-((t*Sin[(s*x)/len])/len), -(s/len), 
+     -((t*Cos[(s*x)/len])/len)}, "example_raw_theta_density" -> 
+    {-((t*x*Cos[(t*x)/len] + len*Sin[(t*x)/len])/len^2), 0}, "example_raw_omega_density" -> 
+    (x*(2*len*Cos[(t*x)/len] - t*x*Sin[(t*x)/len]))/len^3, 
+   "example_integrated_theta_coefficients_without_area_over_kappa_gamma" -> {-Sin[t], 0}, 
+   "example_integrated_omega_without_area_over_kappa_gamma" -> Cos[t], 
+   "example_completed_theta_coefficients" -> {0, 0}, "example_completed_omega" -> 0, 
+   "ADM_cap_sign" -> "ThetaK = pi^{ab} delta h_ab + delta(sqrt(h) trK / kappa)"|>, "messages" -> {}, 
+ "all_passed" -> True, "check_count" -> 21|>

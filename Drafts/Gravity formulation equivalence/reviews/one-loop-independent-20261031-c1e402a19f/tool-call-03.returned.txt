@@ -1,0 +1,20 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: PASS: all 1271 exact checks passed.
+  Sage 10.9; Python 3.14.3
+  Exact graded model: W=x^2/2-h log((m+t*x)/m).
+  Exact normalized generator: ((-h)/(x*t + m))*p
+  One-loop contribution: (W0,gamma1)=-x/(m+t*x).
+  Nonzero h^2 term before Laplacian compensation: h^2*t/(m+t*x)^2.
+  Mixed-super Gaussian relative prefactor: 1+alpha*beta/(A*B).
+  Non-Gaussian normalized one-loop insertion: p*(g2/(2*A)-gF/B+g1*r/A-g1*c/(2*A^2)+g1*d/(A*B)).
+  All exact transport and ordered-Wick residuals: 0.
+  JSON: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/one-loop-independent-20261031-c1e402a19f/exact-results.json
+  
+  Verification completed without returning the execution namespace.
+  
+elapsedMs: 4051

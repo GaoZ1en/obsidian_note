@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_9150c4a42b0b4d0a854033a131f8cc7b|fc_03b87f6575da8c38016ae55dbccb9c819199d53ced7f762667",
+  "sessionId": "c1bdbc79-715e-41e0-bde0-6a607459bbf7",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import *\nfrom sage.version import version as sage_version\nfrom pathlib import Path\nimport os,tempfile,json\nR=PolynomialRing(QQ, names=('w1','w2','w3','f1','f2','f3')); w1,w2,w3,f1,f2,f3=R.gens()\nZ=zero_matrix(R,3)\ndef cross(v):\n    x,y,z=v\n    return matrix(R,[[0,-z,y],[z,0,-x],[-y,x,0]])\nW=cross((w1,w2,w3)); F=cross((f1,f2,f3)); C=block_matrix([[W,-F],[F,W]])\nexpected=4*(f1*f1+f2*f2+f3*f3-w1*w1-w2*w2-w3*w3)\nJ=cross((1,0,0)); P=cross((0,1,0))\nCsemi=block_matrix([[J,Z],[Z,J]])\nCnil=block_matrix([[J,-P],[P,J]])\nbases={p:[tuple(x) for x in Subsets(range(3),p)] for p in range(4)}\ndef wedge(a,p):\n    mat=zero_matrix(QQ,binomial(3,p+1),binomial(3,p))\n    for col,I in enumerate(bases[p]):\n        if a in I: continue\n        sign=(-1)**sum(1 for b in I if b<a)\n        Jt=tuple(sorted((a,)+I)); mat[bases[p+1].index(Jt),col]=sign\n    return mat\nrows=[]\nfor p in range(3):\n    E=wedge(2,p); I=E.transpose(); q=I*E\n    leading_no_i=q.tensor_product(Csemi)\n    rows.append({'p':int(p),'coexact_form_rank':int(q.rank()),'quadratic_trace_without_minus_i_squared':str((leading_no_i**2).trace()),'cubic_trace_without_i_factor':str((leading_no_i**3).trace()),'bv_sign':int((-1)**(p+1))})\nchecks={'Killing_form':bool((C**2).trace()==expected),'odd_adjoint_cube_trace':bool((C**3).trace()==0),'semisimple_cube_nonzero':bool(Csemi**3!=0),'null_cube_zero':bool(Cnil**3==0),'null_square_nonzero':bool(Cnil**2!=0),'coexact_multiplicity_supercancellation':bool(sum(row['bv_sign']*row['coexact_form_rank'] for row in rows)==0)}\nresult={'sage_version':sage_version,'checks':checks,'Killing_form_actual':str((C**2).trace()),'exterior_rows':rows,'semisimple_cube':str(Csemi**3),'nilpotent_square':str(Cnil**2)}\nstore=Path(os.environ.get('DSH_HOME') or (Path.home()/'.dsh'))/'research-results'/'kernel-exports'; store.mkdir(parents=True,exist_ok=True,mode=0o700)\nout=Path(tempfile.mkdtemp(prefix='actual-gravity-wheel-',dir=store)); (out/'results.json').write_text(json.dumps(result,indent=2)+'\\n'); save((C,Csemi,Cnil),str(out/'matrices.sobj'))\nprint(str(out/'results.json')); print(str(out/'matrices.sobj'))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 5000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/results.json\\n/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/matrices.sobj\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"36764310de88024f99e2c2eb3b6b2f32890aae1ae1aca586299b41ccc9f28247\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3269,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b790c3183e2a60102bb8fd9b3c2074a511ce979b3ade46fc7aa3451e3affcffe\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/results.json\n/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/matrices.sobj\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "36764310de88024f99e2c2eb3b6b2f32890aae1ae1aca586299b41ccc9f28247",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3269,
+        "transportStderr": [],
+        "codeSha256": "b790c3183e2a60102bb8fd9b3c2074a511ce979b3ade46fc7aa3451e3affcffe"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/results.json\\n/Users/koishi/.dsh/research-results/kernel-exports/actual-gravity-wheel-ong8i33o/matrices.sobj\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"36764310de88024f99e2c2eb3b6b2f32890aae1ae1aca586299b41ccc9f28247\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3269,\n  \"transportStderr\": [],\n  \"codeSha256\": \"b790c3183e2a60102bb8fd9b3c2074a511ce979b3ade46fc7aa3451e3affcffe\"\n}"
+      }
+    ]
+  }
+}

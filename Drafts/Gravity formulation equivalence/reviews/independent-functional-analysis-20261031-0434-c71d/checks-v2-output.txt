@@ -1,0 +1,14 @@
+<|"Source" -> "/Users/koishi/Documents/Note/Drafts/Gravity formulation \
+equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/checks-v2.wl", 
+ "SourceSHA256" -> "3af934f06e4be021dd7fba0b69571b64e54df0f0ffd9a1abc48e5721cebc1b7b", 
+ "IncludedV1SHA256" -> "431644dddb3f76b582bc83681abd309315b96be48be468a611c79515c2e4057d", 
+ "KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Result" -> <|"LocalResiduals" -> <|"RicciPlus2g" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+     "FKPlusO1_arbitraryJetAtRegularPoint" -> {0, 0, 0}, "O2LMinusLO1_arbitraryJetAtRegularPoint" -> 
+      {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "CodazziCurvatureContraction" -> 
+      {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}|>, "RadialMinusLaplacianFOverF" -> 1 + (1 + rr^2)^(-1), 
+   "FlatCutoffVolume" -> -1/2*(beta*Pi) + (beta*Pi)/z^2 + (beta*Pi*z^2)/16, 
+   "GaussianHeatNumerator" -> (1 + 2*q - E^(3*q)*(1 + 8*q))/E^(4*q), 
+   "ZetaSchemeLogZIdentityCoefficientPerRenormalizedVolume" -> -13/(6*Pi), 
+   "Scope" -> "Exact component/arbitrary-jet checks and scalar algebra; not a numerical or CAS proof of \
+self-adjointness, Plancherel, or trace interchange."|>, "Messages" -> {}, "Failed" -> False|>

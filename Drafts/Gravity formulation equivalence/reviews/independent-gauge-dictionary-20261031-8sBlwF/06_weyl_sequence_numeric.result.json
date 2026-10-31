@@ -1,0 +1,21 @@
+{
+  "mode": "run",
+  "ok": true,
+  "result": "None",
+  "resultType": "builtins.NoneType",
+  "truncated": false,
+  "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+  "error": null,
+  "stdout": "{\n  \"profile\": \"sin(pi*s)^2 on [0,1], zero outside; H2 but not C_infinity\",\n  \"rows\": [\n    {\n      \"R=L\": 4,\n      \"norm_Q_b_over_norm_b\": \"2.306365615878598\",\n      \"norm_O1_b_over_norm_b\": \"4.960777347382873\",\n      \"L_times_Q_ratio\": \"9.225462463514394\"\n    },\n    {\n      \"R=L\": 8,\n      \"norm_Q_b_over_norm_b\": \"0.9743211942586535\",\n      \"norm_O1_b_over_norm_b\": \"4.215657579409163\",\n      \"L_times_Q_ratio\": \"7.794569554069228\"\n    },\n    {\n      \"R=L\": 16,\n      \"norm_Q_b_over_norm_b\": \"0.4621081372124235\",\n      \"norm_O1_b_over_norm_b\": \"4.052056353116768\",\n      \"L_times_Q_ratio\": \"7.393730195398777\"\n    },\n    {\n      \"R=L\": 32,\n      \"norm_Q_b_over_norm_b\": \"0.2278149201580667\",\n      \"norm_O1_b_over_norm_b\": \"4.012892202319374\",\n      \"L_times_Q_ratio\": \"7.290077445058135\"\n    },\n    {\n      \"R=L\": 64,\n      \"norm_Q_b_over_norm_b\": \"0.1134989555606261\",\n      \"norm_O1_b_over_norm_b\": \"4.00321534023722\",\n      \"L_times_Q_ratio\": \"7.263933155880068\"\n    }\n  ],\n  \"predicted_limit_L_times_Q_ratio\": \"7.255197456936871\"\n}\n",
+  "stdoutTruncated": false,
+  "stdoutSha256": "016a83a5eec2945750200b64a8ac7f2dc31e5af6091aaf8b85cd5847c7f27556",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3553,
+  "transportStderr": [],
+  "codeSha256": "50cc4b64d9c7cbedcf165321e167b5b1af3c0e3f8e791022d382a5ddaaefeff5"
+}

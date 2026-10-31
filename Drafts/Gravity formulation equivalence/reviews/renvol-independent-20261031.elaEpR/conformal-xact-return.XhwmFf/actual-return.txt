@@ -1,0 +1,11 @@
+<|"Engine" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "WeylFactor" -> reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewB*reviewX[]*reviewY[] + 
+   reviewE*reviewY[]^2 + reviewC*reviewY[]^3, "ScalarCurvature" -> 
+  (-4*(reviewA + reviewE + 3*reviewC*reviewY[]))/
+   E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + 
+        reviewY[]*(reviewE + reviewC*reviewY[])))), 
+ "StressTrace" -> (reviewLam*(reviewA + reviewE + 3*reviewC*reviewY[]))/
+   E^(2*(reviewD*reviewX[] + reviewA*reviewX[]^2 + reviewY[]*(reviewB*reviewX[] + 
+        reviewY[]*(reviewE + reviewC*reviewY[])))), 
+ "Checks" -> <|"WeylCurvatureResidual" -> 0, "StressTraceAnomalyResidual" -> 0, 
+   "StressConservationResidual" -> 0|>, "AllResidualsZero" -> True, "Messages" -> {}|>

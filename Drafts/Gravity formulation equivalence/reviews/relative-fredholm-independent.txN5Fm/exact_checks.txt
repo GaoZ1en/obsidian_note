@@ -1,0 +1,39 @@
+<|"Result" -> <|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+   "Assumptions" -> 
+    "m,n,j integers; m>=1, j>=2; rational identities evaluated away from denominator zeros", 
+   "Checks" -> <|"LCMinusAmbientCoefficientResidual" -> 0, "CriticalMetricDefectResidual" -> 0, 
+     "FiniteCrossTraceResidual" -> 0, "PositiveConnectionBracketResidual" -> 0, 
+     "SchwarzianZerothCoefficientResidual" -> 0, "TailPolynomialResidual" -> 0|>, 
+   "AllResidualsZero" -> True, "TraceCrossBlock" -> (13*(-1 + m$8553)*m$8553*(1 + m$8553))/6, 
+   "L2ProjectionCurvatureNegativeOf" -> ((-1 + m$8553)*m$8553*(-13 + 14*m$8553))/6, 
+   "aLargeJ" -> SeriesData[j$8553, Infinity, {1, m$8553, -2*m$8553^2, 2*m$8553*(-1 + m$8553^2), 
+      m$8553^2 - m$8553^4}, -2, 3, 1], "tLargeJ" -> SeriesData[j$8553, Infinity, 
+     {-2*m$8553*(-1 + m$8553^2), 5*m$8553^2*(-1 + m$8553^2)}, 2, 4, 1], 
+   "CyclicityBoundaryLargeJ" -> SeriesData[j$8553, Infinity, {2*m$8553*(-1 + m$8553^2), 
+      m$8553^2 - m$8553^4}, 1, 3, 1], "TailPolynomial" -> m$8553/6 - (13*m$8553^3)/6 + 
+     m$8553*nn$8553 + m$8553*nn$8553^2, "FiniteExactCurvatureChecks" -> 
+    {<|"m" -> 1, "finiteCrossExact" -> 0, "curvaturePartialN80Exact" -> 0, 
+      "curvaturePartialN80Decimal" -> 0, "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 0|>, <|"m" -> 2, "finiteCrossExact" -> 13, 
+      "curvaturePartialN80Exact" -> 1167067/91881, "curvaturePartialN80Decimal" -> 
+       12.70194055354208160555501137340690675983`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 13|>, <|"m" -> 3, "finiteCrossExact" -> 52, 
+      "curvaturePartialN80Exact" -> 161475131/3215835, "curvaturePartialN80Decimal" -> 
+       50.21250499481472152644647502126197395078`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 52|>, <|"m" -> 4, "finiteCrossExact" -> 130, 
+      "curvaturePartialN80Exact" -> 775025467/6247908, "curvaturePartialN80Decimal" -> 
+       124.04559526164597814180362450919571799072`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 130|>, <|"m" -> 5, "finiteCrossExact" -> 260, 
+      "curvaturePartialN80Exact" -> 230494682951/940310154, "curvaturePartialN80Decimal" -> 
+       245.1262298620248654679528218728562193108`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 260|>, <|"m" -> 6, "finiteCrossExact" -> 455, 
+      "curvaturePartialN80Exact" -> 3301852084661/7791141276, "curvaturePartialN80Decimal" -> 
+       423.7956889361121629852473490175228084261`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 455|>, <|"m" -> 7, "finiteCrossExact" -> 728, 
+      "curvaturePartialN80Exact" -> 71756365129726/107128192545, "curvaturePartialN80Decimal" -> 
+       669.8177522185320278802058453977064623498`20., "tailIdentityResidual" -> 0, 
+      "predictedInfiniteTrace" -> 728|>, <|"m" -> 8, "finiteCrossExact" -> 1092, 
+      "curvaturePartialN80Exact" -> 6307875422996461/6356272757670, 
+      "curvaturePartialN80Decimal" -> 992.38589397927601410417024219437629424715`20., 
+      "tailIdentityResidual" -> 0, "predictedInfiniteTrace" -> 1092|>}|>, "Failed" -> False, 
+ "UnevaluatedSumOrLimit" -> False, "Messages" -> {}|>

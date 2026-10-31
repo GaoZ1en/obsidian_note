@@ -1,0 +1,5 @@
+Tool: mcp__mathematica__evaluate_mathematica
+Readable view; exact canonical JSON is archived separately.
+
+Mathematica output
+<|Preview -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/preview.txt, Exact -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/result.wxf, FailedOrUnevaluated -> False, Messages -> {}|>

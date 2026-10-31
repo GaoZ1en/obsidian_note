@@ -1,0 +1,4 @@
+<|"flat_massive_heat_minimal_FP" -> 0, "flat_second_derivative_insertion_minimal_FP" -> 0, 
+ "half_space_Dirichlet_minimal_FP" -> (alpha$8553*barea$8553)/(32*Pi), 
+ "half_space_FP_matches_boundary_jet" -> 0, "compressed_logdet_minus_compressed_log" -> 
+  Log[2] - Log[3]/2, "compression_counterexample_strictly_positive" -> True|>

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_7dff2bbdd6d34d1abc357d017e421f77|fc_04e3c9e1ca6e9f3a016ae51b04b3648191aaee30e68296e374",
+  "sessionId": "d386e42f-9bea-40a7-82d9-6fa1e328af9a",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nsource = Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/verify_operator.py')\nexec(compile(source.read_text(encoding='utf-8'),str(source),'exec'))",
+    "timeoutMs": 60000,
+    "maxOutputChars": 20000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS B_is_symmetric\\nPASS B_irreducible_split\\nPASS B_squared\\nPASS Tadj_T_is_two\\nPASS T_Tadj_is_twice_antisym\\nPASS algebraic_square_potential\\nPASS gauge_scalar_offdiagonal\\nPASS gauge_HG_derivative\\nPASS curl_gradient_principal_zero\\nPASS gauge_HG_curvature\\nPASS twisted_Weitzenbock_internal_term\\nPASS field_square_first_order_cancellation\\nPASS L_derivative_is_skew\\nPASS L_potential_is_symmetric\\nPASS elliptic_principal_square\\nPASS no_first_order_term_in_square\\nPASS grading_unitary_real\\nPASS grading_square_minus_one\\nPASS grading_derivative_anticommutes\\nPASS grading_potential_anticommutes\\nPASS direct_CS_quadratic_sign_and_half\\nPASS thermal_gravity_character_identity\\nB characteristic polynomial: (x - 2) * (x - 1)^3 * (x + 1)^5\\nL0 characteristic polynomial: (x - 2)^4 * (x + 2)^4 * (x - 1)^8 * (x + 1)^8\\nALL_CHECKS_PASSED: True\\nRESULT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/verification-result.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a45c2a5dad85cecbcce612db4f49e4c44241c6523485740c64de16af34559bcf\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4013,\n  \"transportStderr\": [],\n  \"codeSha256\": \"d997a815c2fdd7d472cdcb0f4d61005029db1a8a6802e5325dd1807a1e8e8fbc\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "PASS B_is_symmetric\nPASS B_irreducible_split\nPASS B_squared\nPASS Tadj_T_is_two\nPASS T_Tadj_is_twice_antisym\nPASS algebraic_square_potential\nPASS gauge_scalar_offdiagonal\nPASS gauge_HG_derivative\nPASS curl_gradient_principal_zero\nPASS gauge_HG_curvature\nPASS twisted_Weitzenbock_internal_term\nPASS field_square_first_order_cancellation\nPASS L_derivative_is_skew\nPASS L_potential_is_symmetric\nPASS elliptic_principal_square\nPASS no_first_order_term_in_square\nPASS grading_unitary_real\nPASS grading_square_minus_one\nPASS grading_derivative_anticommutes\nPASS grading_potential_anticommutes\nPASS direct_CS_quadratic_sign_and_half\nPASS thermal_gravity_character_identity\nB characteristic polynomial: (x - 2) * (x - 1)^3 * (x + 1)^5\nL0 characteristic polynomial: (x - 2)^4 * (x + 2)^4 * (x - 1)^8 * (x + 1)^8\nALL_CHECKS_PASSED: True\nRESULT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/verification-result.json\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "a45c2a5dad85cecbcce612db4f49e4c44241c6523485740c64de16af34559bcf",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 4013,
+        "transportStderr": [],
+        "codeSha256": "d997a815c2fdd7d472cdcb0f4d61005029db1a8a6802e5325dd1807a1e8e8fbc"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"PASS B_is_symmetric\\nPASS B_irreducible_split\\nPASS B_squared\\nPASS Tadj_T_is_two\\nPASS T_Tadj_is_twice_antisym\\nPASS algebraic_square_potential\\nPASS gauge_scalar_offdiagonal\\nPASS gauge_HG_derivative\\nPASS curl_gradient_principal_zero\\nPASS gauge_HG_curvature\\nPASS twisted_Weitzenbock_internal_term\\nPASS field_square_first_order_cancellation\\nPASS L_derivative_is_skew\\nPASS L_potential_is_symmetric\\nPASS elliptic_principal_square\\nPASS no_first_order_term_in_square\\nPASS grading_unitary_real\\nPASS grading_square_minus_one\\nPASS grading_derivative_anticommutes\\nPASS grading_potential_anticommutes\\nPASS direct_CS_quadratic_sign_and_half\\nPASS thermal_gravity_character_identity\\nB characteristic polynomial: (x - 2) * (x - 1)^3 * (x + 1)^5\\nL0 characteristic polynomial: (x - 2)^4 * (x + 2)^4 * (x - 1)^8 * (x + 1)^8\\nALL_CHECKS_PASSED: True\\nRESULT: /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-elliptic-gaussian-20261031-0624-1f0b/verification-result.json\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a45c2a5dad85cecbcce612db4f49e4c44241c6523485740c64de16af34559bcf\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [\n    {\n      \"category\": \"builtins.DeprecationWarning\",\n      \"message\": \"Use sage.version.version instead.\\nSee https://github.com/sagemath/sage/issues/39015 for details.\",\n      \"truncated\": false,\n      \"sha256\": \"a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce\"\n    }\n  ],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 4013,\n  \"transportStderr\": [],\n  \"codeSha256\": \"d997a815c2fdd7d472cdcb0f4d61005029db1a8a6802e5325dd1807a1e8e8fbc\"\n}"
+      }
+    ]
+  }
+}

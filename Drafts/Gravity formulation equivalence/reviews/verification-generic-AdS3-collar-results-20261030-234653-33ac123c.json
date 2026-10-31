@@ -1,0 +1,155 @@
+{
+	"Verification":"Generic smooth AdS3 collar pullback with cubic normal correction",
+	"WolframVersion":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"DateTimeLocal":"2026-10-30T23:46:52",
+	"TimeZoneHours":8.0,
+	"ElapsedSeconds":0.121851,
+	"Script":"\/Users\/koishi\/Documents\/Note\/Drafts\/Gravity formulation equivalence\/reviews\/verification-generic-AdS3-collar-20261030-1c676609.wls",
+	"ScriptSHA256":"713be51e4b03f67f7b38dd096a7f1e5d8b59ecbb2f6e73c0682966d8f5981bb2",
+	"Assumptions":"F'(u)>0, H'(v)>0; real u,v,z; all calculations local at z=0; metric is g\/ell^2",
+	"CoordinateMap":[
+		"U=F(u)+z^2 F'(u) H''(v)\/(2 H'(v))",
+		"V=H(v)+z^2 H'(v) F''(u)\/(2 F'(u))",
+		"Z=z sqrt(F'(u)H'(v)) [1+z^2 F''(u)H''(v)\/(4 F'(u)H'(v))]"
+	],
+	"TargetLineElement":"dZ^2\/Z^2-dU dV\/Z^2-(dU^2+dV^2)\/4-Z^2 dU dV\/16",
+	"CheckCount":19,
+	"Checks":[
+		{
+			"Label":"gzz coefficient z^-2",
+			"CoefficientInputForm":"1",
+			"ExpectedInputForm":"1",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzz coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzz coefficient z^0",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzz coefficient z^1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzu coefficient z^-2",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzu coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzu coefficient z^0",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzv coefficient z^-2",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzv coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gzv coefficient z^0",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guu coefficient z^-2",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guu coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guu projective stress",
+			"CoefficientInputForm":"-1\/4*(Derivative[1][f$8553][u$8553]^4 - 3*Derivative[2][f$8553][u$8553]^2 + 2*Derivative[1][f$8553][u$8553]*Derivative[3][f$8553][u$8553])\/Derivative[1][f$8553][u$8553]^2",
+			"ExpectedInputForm":"-1\/4*Derivative[1][f$8553][u$8553]^2 + ((3*Derivative[2][f$8553][u$8553]^2)\/(2*Derivative[1][f$8553][u$8553]^2) - Derivative[3][f$8553][u$8553]\/Derivative[1][f$8553][u$8553])\/2",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gvv coefficient z^-2",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gvv coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"gvv projective stress",
+			"CoefficientInputForm":"-1\/4*(Derivative[1][h$8553][v$8553]^4 - 3*Derivative[2][h$8553][v$8553]^2 + 2*Derivative[1][h$8553][v$8553]*Derivative[3][h$8553][v$8553])\/Derivative[1][h$8553][v$8553]^2",
+			"ExpectedInputForm":"-1\/4*Derivative[1][h$8553][v$8553]^2 + ((3*Derivative[2][h$8553][v$8553]^2)\/(2*Derivative[1][h$8553][v$8553]^2) - Derivative[3][h$8553][v$8553]\/Derivative[1][h$8553][v$8553])\/2",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guv coefficient z^-2",
+			"CoefficientInputForm":"-1\/2",
+			"ExpectedInputForm":"-1\/2",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guv coefficient z^-1",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		},
+		{
+			"Label":"guv coefficient z^0",
+			"CoefficientInputForm":"0",
+			"ExpectedInputForm":"0",
+			"ResidualInputForm":"0",
+			"Passed":true
+		}
+	],
+	"AllPassed":true,
+	"FailedExpression":false,
+	"Messages":[]
+}

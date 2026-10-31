@@ -1,0 +1,21 @@
+{
+  "mode": "run",
+  "ok": true,
+  "result": "None",
+  "resultType": "builtins.NoneType",
+  "truncated": false,
+  "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+  "error": null,
+  "stdout": "{\n  \"checks\": {\n    \"Ta_commutators\": true,\n    \"Ta_trace\": true,\n    \"sum_J_square_minus_2I\": true,\n    \"frame_decomposition_inverse\": true,\n    \"rotation_ghost_symbol\": true,\n    \"spin_symbol_annihilates_pure_gradient_frame\": true,\n    \"full_spin_symbol_rank_at_unit_covector_is_6\": true,\n    \"high_frequency_h22_spin_symbol\": true\n  },\n  \"B_rank\": 6,\n  \"h22_spin_symbol\": \"[  0   0   0]\\n[  0   0 1/2]\\n[  0   0   0]\",\n  \"all_passed\": true\n}\n",
+  "stdoutTruncated": false,
+  "stdoutSha256": "8453ffc45394fd7d713d332d07ac38592ea5e9f91edd8e65cfdb517210d9c4d3",
+  "stderr": "",
+  "stderrTruncated": false,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "warnings": [],
+  "warningsTruncated": false,
+  "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+  "elapsedMs": 3409,
+  "transportStderr": [],
+  "codeSha256": "4a5ec90be0664fa90dd0758b12e5b1361d954294ec88b1acaa5cbea743b0f2cf"
+}

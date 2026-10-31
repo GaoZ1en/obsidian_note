@@ -1,0 +1,49 @@
+{
+  "operation": "Parent static exact-byte comparison; no Wolfram evaluation or source/output overwrite",
+  "method": "Undo only the explicitly preserved literal export-plumbing block, then compare the entire file byte for byte",
+  "records": [
+    {
+      "label": "real Barbero",
+      "frozen": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/checks-executed-clean.wl",
+      "runner": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-real-barbero-20261031-qjUFDz/checks.wl",
+      "removed_exact_plumbing_utf8": "(* Export-only rerun plumbing added after the successful clean run.\n   Its exact executed source is preserved separately as checks-executed-clean.wl.\n   Every rerun receives a new private 0700 directory and snapshots its own source. *)\nrbSource = $InputFileName;\nrbBase = DirectoryName[rbSource];\nrbTmp = RunProcess[{\"mktemp\", \"-d\", FileNameJoin[{rbBase, \"rerun-XXXXXX\"}]}];\nIf[rbTmp[\"ExitCode\"] =!= 0, Print[rbTmp]; Abort[]];\nrbOut = StringTrim[rbTmp[\"StandardOutput\"]];\nCopyFile[rbSource, FileNameJoin[{rbOut, \"executed-source.wl\"}], OverwriteTarget -> False];\n",
+      "restored_original_utf8": "rbOut = DirectoryName[$InputFileName];\n",
+      "plumbing_occurrence_count": 1,
+      "all_other_bytes_identical": true,
+      "frozen_sha256": "2ee5458b13dcd48ed1499d929d95498844dc7d681e0bff2524f90899dca48dbe",
+      "runner_sha256": "d4cf8702a7ec7f00d8fc38daa5bf54152d1dbb1ed23e792aff25979a0df260c3",
+      "normalized_sha256": "2ee5458b13dcd48ed1499d929d95498844dc7d681e0bff2524f90899dca48dbe",
+      "prior_recorded_frozen_sha256": null,
+      "prior_hash_matches": true
+    },
+    {
+      "label": "Ashtekar main",
+      "frozen": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-ashtekar-20261031-xB1k3D/checks.executed-source.txt",
+      "runner": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-ashtekar-20261031-xB1k3D/checks.wl",
+      "removed_exact_plumbing_utf8": "(* Replay-only plumbing added after the recorded execution. The exact executed\n   source is archived in checks.executed-source.txt. Never replace its outputs. *)\nIf[AnyTrue[{\"actual-output.txt\", \"actual-output.wxf\"},\n   FileExistsQ[FileNameJoin[{artifactDirectory, #}]] &],\n  artifactDirectory = CreateDirectory[FileNameJoin[\n    {artifactDirectory, \"main-replay-\" <> CreateUUID[]}]]];\nIf[!StringQ[artifactDirectory] || !DirectoryQ[artifactDirectory],\n  Print[\"Cannot create a unique replay output directory; refusing exports.\"]; Abort[]];\n",
+      "restored_original_utf8": "",
+      "plumbing_occurrence_count": 1,
+      "all_other_bytes_identical": true,
+      "frozen_sha256": "fb433034e6fb24469ccb10b4c9ba91576cdaab0208f8f826ee7de48b05d406b3",
+      "runner_sha256": "39a19784776de1d89c59f6bdfc75b309f995e50d26d41adc18811ce55a44a374",
+      "normalized_sha256": "fb433034e6fb24469ccb10b4c9ba91576cdaab0208f8f826ee7de48b05d406b3",
+      "prior_recorded_frozen_sha256": "fb433034e6fb24469ccb10b4c9ba91576cdaab0208f8f826ee7de48b05d406b3",
+      "prior_hash_matches": true
+    },
+    {
+      "label": "Ashtekar offshell",
+      "frozen": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-ashtekar-20261031-xB1k3D/offshell.executed-source.txt",
+      "runner": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-ashtekar-20261031-xB1k3D/offshell-evolution-checks.wl",
+      "removed_exact_plumbing_utf8": "(* Replay-only plumbing added after the recorded execution. The exact executed\n   source is archived in offshell.executed-source.txt. Never replace its outputs. *)\nIf[AnyTrue[{\"offshell-actual-output.txt\", \"offshell-actual-output.wxf\"},\n   FileExistsQ[FileNameJoin[{artifactDirectory, #}]] &],\n  artifactDirectory = CreateDirectory[FileNameJoin[\n    {artifactDirectory, \"offshell-replay-\" <> CreateUUID[]}]]];\nIf[!StringQ[artifactDirectory] || !DirectoryQ[artifactDirectory],\n  Print[\"Cannot create a unique replay output directory; refusing exports.\"]; Abort[]];\n",
+      "restored_original_utf8": "",
+      "plumbing_occurrence_count": 1,
+      "all_other_bytes_identical": true,
+      "frozen_sha256": "f92881f243aef94bb437f110c1194b656db7a6e3df3378af12d1294a4431b278",
+      "runner_sha256": "a74db33c12dd5782e7554416dc0c23ce9eec92213ed67a716654fb53825ec202",
+      "normalized_sha256": "f92881f243aef94bb437f110c1194b656db7a6e3df3378af12d1294a4431b278",
+      "prior_recorded_frozen_sha256": "f92881f243aef94bb437f110c1194b656db7a6e3df3378af12d1294a4431b278",
+      "prior_hash_matches": true
+    }
+  ],
+  "all_passed": true
+}

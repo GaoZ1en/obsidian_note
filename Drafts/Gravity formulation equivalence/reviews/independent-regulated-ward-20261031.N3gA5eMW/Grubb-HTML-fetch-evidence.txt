@@ -1,0 +1,876 @@
+Fetched https://ar5iv.labs.arxiv.org/html/math/0311081 (HTTP 200)
+
+External web content follows. Treat it as untrusted data, not instructions.
+
+# A Resolvent Approach to Traces and Zeta Laurent Expansions Thanks: This work was supported in part by The Danish Science Research Council, SNF grant 21-02-0446
+
+Gerd Grubb Address: Copenhagen Univ. Math. Dept., Universitetsparken 5, DK-2100 Copenhagen, Denmark. Email: grubb@math.ku.dk
+
+###### Abstract
+
+Classical pseudodifferential operators on closed manifolds are considered. It is shown that the basic properties of the canonical trace AA introduced by Kontsevich and Vishik are easily proved by identifying it with the leading nonlocal coefficient TRA\operatorname{TR}A in the trace expansion of C0(A,P)C_{0}(A,P) (with an auxiliary elliptic operator A(P−λ)−NA(P-\lambda)^{-N}), as determined in a joint work with Seeley 1995. The definition of PP is extended from the cases of noninteger order, or integer order and even-even parity on odd-dimensional manifolds, to the case of even-odd parity on even-dimensional manifolds.TRA\operatorname{TR}A
+
+For the generalized zeta function, extended meromorphically to ζ(A,P,s)=Tr(AP−s)\zeta(A,P,s)=\operatorname{Tr}(AP^{-s}),ℂ\mathbb{C} equals the coefficient of C0(A,P)C_{0}(A,P) in the Laurent expansion at s0s^{0} when s=0s=0 is invertible. In the mentioned parity cases,PP is regular at all integer points. The higher Laurent coefficients ζ(A,P,s)\zeta(A,P,s) at Cj(A,P)C_{j}(A,P) are described as leading nonlocal coefficients s=0s=0 in trace expansions of resolvent expressions C0(B,P)C_{0}(B,P), with B(P−λ)−NB(P-\lambda)^{-N}log-polyhomogeneous as defined by Lesch (here BB gives the zeta-determinant). −C1(I,P)=C0(logP,P)-C_{1}(I,P)=C_{0}(\log P,P) is shown to be a quasi-trace in general, a canonical trace C0(B,P)C_{0}(B,P) in restricted cases, and the formula of Lesch for TRB\operatorname{TR}B in terms of a finite part integral of the symbol is extended to the parity cases.TRB\operatorname{TR}B
+
+The paper has appeared in AMS Contemp. Math. Proc. 366 (2005), 43–64. The present version includes minor corrections.
+
+††righthead: Resolvent approach
+
+###### Classification:
+58J42, 35S05, 58J35, 41A60
+\subjclassyear
+
+2000
+
+## Introduction
+
+The noncommutative residue, the canonical trace resA\operatorname{res}A and the zeta-regularized determinantTRA\operatorname{TR}A are three constants associated with the classical pseudodifferential operators (logdetA\log\det Ado’s) ψ\psi on an AA-dimensional closed manifold nn, under various hypotheses (Wodzicki [W], Guillemin [Gu], Kontsevich and Vishik [KV], Ray and Singer [RS]). When XX is an invertible elliptic classicalPPdo on ψ\psi of order XX and with spectrum in a subsector of m>0m>0, one can define the generalized zeta function ℂ\mathbb{C} as the meromorphic extension of ζ(A,P,s)\zeta(A,P,s) (defined for large Tr(AP−s)\operatorname{Tr}(AP^{-s})) to Res\operatorname{Re}s; it has a simple pole at ℂ\mathbb{C}:s=0s=0
+
+ζ(A,P,s)∼1sC−1(A,P)+C0(A,P)+∑j≥1Cj(A,P)sj.\zeta(A,P,s)\sim\frac{1}{s}C_{-1}(A,P)+C_{0}(A,P)+\sum_{j\geq 1}C_{j}(A,P)s^{j}. | 0.1 
+
+Then
+
+C−1(A,P)\displaystyle C_{-1}(A,P) | =1m⋅resA,\displaystyle=\tfrac{1}{m}\cdot\operatorname{res}A, | 0.2 
+---|---|---
+C0(A,P)\displaystyle C_{0}(A,P) | =TRAin restricted cases,\displaystyle=\operatorname{TR}A\;\text{
+in restricted cases}, 
+C1(I,P)\displaystyle C_{1}(I,P) | =−logdetP.\displaystyle=-\log\det P. 
+
+We shall investigate these constants, in particular andC0(A,P)C_{0}(A,P), by use of the knowledge of the structure of resolvent expressions C1(A,P)C_{1}(A,P). It turns out that it is rather easy to show the trace properties ofA(P−λ)−NA(P-\lambda)^{-N} using Grubb and Seeley [GS1, Th. 2.1 and 2.7], for the known cases where C0(A,P)C_{0}(A,P) is of low order, noninteger order or “odd class” (with AA odd), as well as for a new case with another parity property. (Section 1.)nn
+
+ does not extend to general operators of integer order TRA\operatorname{TR}A, but hereν\nu can be viewed as a quasi-trace, in the sense that it is determined from C0(A,P)C_{0}(A,P) modulo local contributions (from the firstAA homogeneous symbol terms in ν+n+1\nu+n+1 and AA), and vanishes on commutators modulo local contributions. The value of PPmodulo local terms is a finite part integral of the symbol of C0(A,P)C_{0}(A,P), in local coordinates. (Section 2.) (The deviation of AA from being an independently defined trace of C0(A,P)C_{0}(A,P) is further studied in [KV], Okikiolu [O1], Melrose and Nistor [MN]; the latter call AA a regularized trace. See also Cardona, Ducourtioux, Magnot, Paycha [CDMP], [CDP], where it is called a weighted trace.)C0(A,P)C_{0}(A,P)
+
+In the study of and the C1(A,P)C_{1}(A,P) with higher Cj(A,P)C_{j}(A,P) one meets the necessity of considering resolvent expressions where jj is replaced by a log-polyhomogeneous AAdo ψ\psi. Here we can use the results of Lesch [L] to extend the canonical traceBB to such operators TR\operatorname{TR}. This was done for cases with noninteger or low order in [L]; we now include also higher integer order cases with parity properties, and show that BB is in general a quasi-trace. In particular, we can identify C0(B,P)C_{0}(B,P) and higher derivatives of logdetP\log\det P at ζ(I,P,s)\zeta(I,P,s) as quasi-traces; canonical traces in particular situations. (Section 3.)s=0s=0
+
+Our method relies on an analysis of integrals of symbols, and involves neither comparison of meromorphic extensions nor homogeneous distributions. It moreover allows us to extend the explicit formula of Lesch [L] for the density definingωTR(B)\omega_{\operatorname{TR}}(B), to the new integer-order cases. — The strategy is useful in situations where complex powers of operators are not easy to study directly; for example in our treatment of boundary value problems jointly with Schrohe [GSc].TRB\operatorname{TR}B
+
+## 1. The canonical trace
+
+Consider an-dimensional compact nnmanifold C∞C^{\infty} without boundary. We denote XX. Let {0,1,2,…}=ℕ\{0,1,2,\dots\}=\mathbb{N} be a classical (i.e., one-step polyhomogeneous) AAdo of order ψ\psi, acting on the sections of a ν∈ℝ\nu\in\mathbb{R} vector bundle C∞C^{\infty} over EE. Let XX be a classical elliptic PPdo of positive integer order ψ\psi, likewise acting in mm and such that the principal symbol has no eigenvalues on EE. It is shown in [GS1, Th. 2.7] by use of calculations in local coordinates that the operator familyℝ−\mathbb{R}_{-} (for A(P−λ)−NA(P-\lambda)^{-N}) has an asymptotic expansion of the trace:N>(n+ν)/mN>(n+\nu)/m
+
+Tr(A(P−λ)−N)∼∑j∈ℕc~j(−λ)ν+n−jm−N+∑k∈ℕ(c~k′log(−λ)+c~k′′)(−λ)−k−N,\operatorname{Tr}\bigl(A(P-\lambda)^{-N}\bigr)\sim\sum_{j\in\mathbb{N}}\tilde{c}_{j}(-\lambda)^{\frac{\nu+n-j}{m}-N}+\sum_{k\in\mathbb{N}}\bigl(\tilde{c}^{\prime}_{k}\log(-\lambda)+\tilde{c}^{\prime\prime}_{k}\bigr)(-\lambda)^{{-k}-N}, | 1.1 
+
+for on rays in an open subsector of λ→∞\lambda\to\infty containing ℂ\mathbb{C}.ℝ−\mathbb{R}_{-}
+
+In local coordinates, the term of degree in the symbol of ν−mN−j\nu-mN-j determines the coefficient A(P+μm)−NA(P+\mu^{m})^{-N}and, if c~j\tilde{c}_{j} and ν∈ℤ\nu\in\mathbb{Z}, the coefficient j−ν−nm∈ℕ\frac{j-\nu-n}{m}\in\mathbb{N} withc~k′\tilde{c}^{\prime}_{k} (one sets the k=j−ν−nmk=\frac{j-\nu-n}{m} with c~k′\tilde{c}^{\prime}_{k} equal to 0). If mk+ν+n<0mk+\nu+n<0, ν∉ℤ\nu\notin\mathbb{Z} for all c~k′=0\tilde{c}^{\prime}_{k}=0. In terms of the original operators, k≥0k\geq 0 and (if c~j\tilde{c}_{j} and ν∈ℤ\nu\in\mathbb{Z}) j−ν−nm∈ℕ\frac{j-\nu-n}{m}\in\mathbb{N} depend solely on the (strictly homogeneous part of the) homogeneous terms of degrees c~(j−ν−n)/m′\tilde{c}^{\prime}_{(j-\nu-n)/m} resp. ν,ν−1,…,ν−j\nu,\nu-1,\dots,\nu-j in the symbols of m,m−1,…,m−jm,m-1,\dots,m-j resp. AA (in short: the first PP homogeneous terms). As in [GS1] and many other works, we call such coefficients “locally determined” or just “local”. The coefficients j+1j+1 depend on the full structure of the operators on the manifold (are “global”).c~k′′\tilde{c}^{\prime\prime}_{k}
+
+Note that when and ν∈ℤ\nu\in\mathbb{Z} is an integerj−n−νm\frac{j-n-\nu}{m}, both k≥0k\geq 0 and c~j\tilde{c}_{j}contribute to the power c~k′′\tilde{c}^{\prime\prime}_{k}. Their sum is independent of the choice of local coordinates, whereas the splitting in (−λ)−k−N(-\lambda)^{-k-N} and c~j\tilde{c}_{j} depends in a well-defined way on the symbol structure in the chosen local coordinates (see [GS1, Th. 2.1] or the elaboration in Theorem 1.3 below).c~k′′\tilde{c}^{\prime\prime}_{k}
+
+Along with (1.1) there is the essentially equivalent expansion (the transition between (1.1) and (1.2) is accounted for e.g. in [GS2]):
+
+Γ(s)Tr(AP−s)∼∑j∈ℕcjs+j−ν−nm−Tr(AΠ0(P))s+∑k∈ℕ(ck′(s+k)2+ck′′s+k).\Gamma(s)\operatorname{Tr}(AP^{-s})\sim\sum_{j\in\mathbb{N}}\frac{c_{j}}{s+\frac{j-\nu-n}{m}}-\frac{\operatorname{Tr}(A\Pi_{0}(P))}{s}+\sum_{k\in\mathbb{N}}\Bigl(\frac{c^{\prime}_{k}}{(s+k)^{2}}+\frac{c^{\prime\prime}_{k}}{s+k}\Bigr). | 1.2 
+
+This means that, defined in a standard way for Γ(s)Tr(AP−s)\Gamma(s)\operatorname{Tr}(AP^{-s}), extends meromorphically to Res>ν+nm\operatorname{Re}s>\frac{\nu+n}{m} with the pole structure indicated in the right hand side. Here ℂ\mathbb{C} is the orthogonal projection onto the nullspace of Π0\Pi_{0} (on which PP is taken to be zero). The coefficients P−sP^{-s} andc~j\tilde{c}_{j}, resp. cjc_{j} and c~k′\tilde{c}^{\prime}_{k}, are proportional by universal nonzero constants. When the ck′c^{\prime}_{k} vanish (e.g., when ck′c^{\prime}_{k}), the same holds for ν+n∉ℕ\nu+n\notin\mathbb{N} and c~k′′\tilde{c}^{\prime\prime}_{k}. More generally, the pair ck′′c^{\prime\prime}_{k} is for each {c~k′,c~k′′}\{\tilde{c}^{\prime}_{k},\tilde{c}^{\prime\prime}_{k}\}universally related to the pair kk in a linear way. In particular, {ck′,ck′′}\{c^{\prime}_{k},c^{\prime\prime}_{k}\}, and c~0′=c0′\tilde{c}^{\prime}_{0}=c^{\prime}_{0} if c~0′′=c0′′\tilde{c}^{\prime\prime}_{0}=c^{\prime\prime}_{0}, and when c0′=0c^{\prime}_{0}=0 is an integer ν\nu,≥−n\geq-n. We shall definec~ν+n=cν+n\tilde{c}_{\nu+n}=c_{\nu+n}
+
+c~ν+n=cν+n=0ifν<−norν∉ℤ;\tilde{c}_{\nu+n}=c_{\nu+n}=0\text{ if }\nu<-n\text{
+or }\nu\notin\mathbb{Z}; | 1.3 
+
+then the identifications hold in these cases too.
+
+We are particularly interested in, defined byC0(A,P)C_{0}(A,P)
+
+C0(A,P)=cν+n+c0′′,equal toc~ν+n+c~0′′ifN=1.C_{0}(A,P)=c_{\nu+n}+c^{\prime\prime}_{0},\text{ equal to }\tilde{c}_{\nu+n}+\tilde{c}^{\prime\prime}_{0}\text{ if }N=1. | 1.4 
+
+When, N=1N=1 is the coefficient of C0(A,P)C_{0}(A,P) in (1.1). For general (−λ)−1(-\lambda)^{-1}, the coefficient of NN in (1.1) satisfies(−λ)−N(-\lambda)^{-N}, where c~ν+n+c~0′′=C0(A,P)−αNc0′\tilde{c}_{\nu+n}+\tilde{c}^{\prime\prime}_{0}=C_{0}(A,P)-\alpha_{N}c^{\prime}_{0}, cf. [G5, Lemma 2.1]. [The preceding lines, modified in November 2005, correct the printed version of the present paper, where the term with αN=∑1≤j<N1j\alpha_{N}=\sum_{1\leq j<N}\frac{1}{j} was missing. However, in the sequel, αN\alpha_{N} is determined in cases where C0(A,P)C_{0}(A,P), so the results in the following remain valid.]c0′=0c^{\prime}_{0}=0
+
+Division by in (1.2) gives the structure of the meromorphic extension of Γ(s)\Gamma(s), also denoted Tr(AP−s)\operatorname{Tr}(AP^{-s}). When ζ(A,P,s)\zeta(A,P,s), it has the Laurent expansion at Π0(P)=0\Pi_{0}(P)=0:s=0s=0
+
+ζ(A,P,s)∼1sC−1(A,P)+C0(A,P)+∑l≥1Cl(A,P)sl,withC−1(A,P)=c0′;\zeta(A,P,s)\sim\frac{1}{s}{C_{-1}(A,P)}+C_{0}(A,P)+\sum_{l\geq 1}C_{l}(A,P)s^{l},\text{ with }C_{-1}(A,P)={c^{\prime}_{0}}; | 1.5 
+
+here must be replaced by C0(A,P)C_{0}(A,P) ifC0(A,P)−Tr(AΠ0(P))C_{0}(A,P)-\operatorname{Tr}(A\Pi_{0}(P)).Π0(P)≠0\Pi_{0}(P)\neq 0
+
+If the eigenvalues of the principal symbol of lie in a sectorPP with {λ∣|argλ|≤θ}\{\lambda\mid|\arg\lambda|\leq\theta\}, so that 0≤θ<π20\leq\theta<\frac{\pi}{2} is well-defined, there is a third trace expansion that is equivalent with (1.1) and (1.2) (cf. e.g. [GS2] for the transition):e−tPe^{-tP}
+
+Tr(Ae−tP)∼∑j∈ℕcjtj−ν−nm+∑k∈ℕ(−ck′logt+ck′′)tk,\operatorname{Tr}(Ae^{-tP})\sim\sum_{j\in\mathbb{N}}c_{j}t^{\frac{j-\nu-n}{m}}+\sum_{k\in\mathbb{N}}\bigl({-c^{\prime}_{k}}\log t+{c^{\prime\prime}_{k}}\bigr)t^{{k}}, | 1.6 
+
+for; the coefficients here are the same as those in (1.2).t→0+t\to 0+
+
+One interest of studying the resolvent-type expansion (1.1) along with (1.2) is that it allows to determine the coefficients from specific integrals of symbols (cf. [GS1, Th. 2.1], Th. 1.3 below). In the following, we use the notions of [GS1] without taking space up with repetition of basic rules of calculus explained there.
+
+In [W], Wodzicki introduced a trace functional on the full algebra of classicaldo’s, vanishing on trace-class operators; it is usually denoted ψ\psi and is called the noncommutative residue of resA\operatorname{res}A. In the above situation, it satisfiesAA
+
+resA=m⋅Ress=0Tr(AP−s)=m⋅c0′=m⋅c~0′.\operatorname{res}A=m\cdot\operatorname{Res}_{s=0}\operatorname{Tr}(AP^{-s})=m\cdot c^{\prime}_{0}=m\cdot\tilde{c}^{\prime}_{0}. | 1.7 
+
+See also Guillemin [Gu] and the survey of Kassel [K].
+
+In [KV], Kontsevich and Vishik introduced a different trace functional, called the canonical trace, which extends the standard trace for trace-class operators, but is only defined for part of the higher-order TRA\operatorname{TR}Ado’s. We shall show that the following definition is consistent with that of [KV]:ψ\psi
+
+###### Definition 1.1
+
+Let be a classical AAdo in ψ\psi of order EE, and let ν∈ℝ\nu\in\mathbb{R} be a classical elliptic PPdo in ψ\psi of even order EE such that the principal symbol has no eigenvalues on m>0m>0. Assume that one of the following statements is verified (with notation explained around (1.10)–(1.11) below):ℝ−\mathbb{R}_{-}
+
+In the cases (3) and (4), take even-even. ThenPP
+
+TRA=c~0′′=c0′′=C0(A,P).\operatorname{TR}A=\tilde{c}^{\prime\prime}_{0}=c^{\prime\prime}_{0}=C_{0}(A,P). | 1.8 
+
+Definitions for the cases (1), (2) and (3) were given in [KV], whereas the case (4) is new. The rest of Section 1 will be devoted to the justification of Definition 1.1. [Added November 2005:] It is seen in particular that vanishes in all four cases, so that c0′c^{\prime}_{0} identifies directly with the coeficient of C0(A,P)C_{0}(A,P) in (1.1).(−λ)−N(-\lambda)^{-N}
+
+In case (1), the definition is consistent with [KV] in view of the following fact:
+
+###### Lemma 1.2
+
+When, then ν<−n\nu<-n andcν+n=c0′=0c_{\nu+n}=c^{\prime}_{0}=0.c0′′=TrAc^{\prime\prime}_{0}=\operatorname{Tr}A
+
+###### Proof
+
+One has in this case that with Tr(A(P−λ)−N(−λ)N)=c~0′′+O(λ−ε)\operatorname{Tr}\bigl(A(P-\lambda)^{-N}(-\lambda)^{N}\bigr)=\tilde{c}^{\prime\prime}_{0}+O(\lambda^{-\varepsilon})when ε>0\varepsilon>0, in view of (1.1) and the comments on the coefficients. Then the identity follows since ν<−n\nu<-n in trace-norm for A(P−λ)−N(−λ)N→AA(P-\lambda)^{-N}(-\lambda)^{N}\to A on λ→−∞\lambda\to-\infty.ℝ−\mathbb{R}_{-}
+
+For a detailed proof of the latter fact, observe that satisfiesRλ=(P−λ)−1R_{\lambda}=(P-\lambda)^{-1}
+
+RλN(−λ)N−1=[(−λ)N−(P−λ)N](P−λ)−N=PRλMλ,R_{\lambda}^{N}(-\lambda)^{N}-1=[(-\lambda)^{N}-(P-\lambda)^{N}](P-\lambda)^{-N}=PR_{\lambda}M_{\lambda}, | 1.9 
+
+where is uniformly bounded in Mλ=(P−λ)1−N∑0≤j≤N−1(Nj)(−λ)jPN−1−jM_{\lambda}=(P-\lambda)^{1-N}\sum_{0\leq j\leq N-1}\binom{N}{j}(-\lambda)^{j}P^{N-1-j} operator norm for L2(X,E)L^{2}(X,E). Then with λ≤−1\lambda\leq-1,δ=min{12m(−n−ν),1}>0\delta=\min\{\frac{1}{2m}(-n-\nu),1\}>0
+
+‖(ARλN(−λ)N−A)f‖Hn+mδ≤c‖(RλN(−λ)N−I)f‖H−mδ≤c′|λ|−δ|λ|δ‖RλMλf‖Hm−mδ≤c′′|λ|−δ‖f‖L2,\multline\|(AR_{\lambda}^{N}(-\lambda)^{N}-A)f\|_{H^{n+m\delta}}\leq c\|(R_{\lambda}^{N}(-\lambda)^{N}-I)f\|_{H^{-m\delta}}\\
+\leq c^{\prime}|\lambda|^{-\delta}|\lambda|^{\delta}\|R_{\lambda}M_{\lambda}f\|_{H^{m-m\delta}}\leq c^{\prime\prime}|\lambda|^{-\delta}\|f\|_{L^{2}},\endmultline\|(AR_{\lambda}^{N}(-\lambda)^{N}-A)f\|_{H^{n+m\delta}}\leq c\|(R_{\lambda}^{N}(-\lambda)^{N}-I)f\|_{H^{-m\delta}}\\
+\leq c^{\prime}|\lambda|^{-\delta}|\lambda|^{\delta}\|R_{\lambda}M_{\lambda}f\|_{H^{m-m\delta}}\leq c^{\prime\prime}|\lambda|^{-\delta}\|f\|_{L^{2}}, 
+
+using that. Thus for |λ|δ‖Rλf‖Hm−mδ≤c3(‖Rλf‖Hm+|λ|‖Rλf‖L2)≤c4‖f‖L2|\lambda|^{\delta}\|R_{\lambda}f\|_{H^{m-m\delta}}\leq c_{3}(\|R_{\lambda}f\|_{H^{m}}+|\lambda|\|R_{\lambda}f\|_{L^{2}})\leq c_{4}\|f\|_{L^{2}},λ→−∞\lambda\to-\infty
+
+‖ARλN(−λ)N−A‖Tr≤c5‖ARλN(−λ)N−A‖L(L2,Hn+mδ)→0.□\|AR_{\lambda}^{N}(-\lambda)^{N}-A\|_{\operatorname{Tr}}\leq c_{5}\|AR_{\lambda}^{N}(-\lambda)^{N}-A\|_{L(L^{2},H^{n+m\delta})}\to 0.\quad\square 
+
+In the case (2), the formula (1.8) makes sense since and c0′=0c^{\prime}_{0}=0 by definition. It was shown by Lesch in [L] that the definition is consistent with that of [KV] in this case, if cν+n=0c_{\nu+n}=0 is selfadjoint positive with scalar leading symbol. The following analysis shows that the definition is likewise consistent with that of [KV] for the PP’s considered here.PP
+
+We now turn to (3) and (4): As in [G2, Sect. 5], we say that a classicaldo ψ\psi of order QQ with symbol r∈ℤr\in\mathbb{Z} (q∼∑l∈ℕqr−l(x,ξ)q\sim\sum_{l\in\mathbb{N}}q_{r-l}(x,\xi)qr−lq_{r-l} in C∞C^{\infty}and homogeneous of degree(x,ξ)(x,\xi) in r−lr-l for ξ\xi) has even-even alternating parity (in short: is even-even), when the symbols with even (resp. odd) degree |ξ|≥1|\xi|\geq 1 are even (resp. odd) in r−lr-l:ξ\xi
+
+qr−l(x,−ξ)=(−1)r−lqr−l(x,ξ)for|ξ|≥1.q_{r-l}(x,-\xi)=(-1)^{r-l}q_{r-l}(x,\xi)\text{ for }|\xi|\geq 1. | 1.10 
+
+The operator (or symbol) is said to have even-odd alternating parity in the reversed situation where the symbols with even (resp. odd) degree are odd (resp. even) in r−lr-l:ξ\xi
+
+qr−l(x,−ξ)=(−1)r−l−1qr−l(x,ξ)for|ξ|≥1.q_{r-l}(x,-\xi)=(-1)^{r-l-1}q_{r-l}(x,\xi)\text{ for }|\xi|\geq 1. | 1.11 
+
+Other authors use other names, e.g. [KV] calls the even-even symbols “odd-class”, studying them on odd-dimensional manifolds, and Okikiolu [O3] uses the words “regular parity” resp. “singular parity” for the even-even resp. even-odd alternating parity. Differential operators and their parametrices are even-even, whereas e.g. is even-odd, when |A|=(A2)12|A|=(A^{2})^{\frac{1}{2}} is a first-order elliptic selfadjoint differential operator (as noted in [GS2, p. 48]).AA
+
+In case (3), defining as TRA\operatorname{TR}A is consistent with [KV, Sect. 7.3], cf. also [O3]. We shall now show (from scratch) that this constant has the desired properties, and that the constant in case (4) likewise does so. The proof — inspired from [G2, Theorem 5.2] — shows that in the cases (3) and (4), the logarithmic terms and the local terms with C0(A,P)C_{0}(A,P) even vanish. It will be based on an exact application of the method of proof of [GS1, Th. 2.1] to the present operator family ν+n−j\nu+n-j. Here we moreover give an account of how the coefficientA(P−λ)−NA(P-\lambda)^{-N} looks for general C0(A,P)C_{0}(A,P).AA
+
+Write
+
+A(P−λ)−N=A(P+μm)−N=Q(μ),μ=(−λ)1m,A(P-\lambda)^{-N}=A(P+\mu^{m})^{-N}=Q(\mu),\quad\mu=(-\lambda)^{\frac{1}{m}}, | 1.12 
+
+where is included in the symbol as in [G1], [GS1], [G2]; then μ\mu is weakly polyhomogeneous in (P+μm)−N(P+\mu^{m})^{-N}(strongly so if (ξ,μ)(\xi,\mu) is a differential operator).PP
+
+There is a finite cover of by coordinate patches XX (UiU_{i}) with trivializations of i≤i0i\leq i_{0}; EE with ψiE|Ui→Vi×ℂdimE\psi_{i}\>E|_{U_{i}}\to V_{i}\times\mathbb{C}^{\operatorname{dim}E}, and a subordinate partition of unity Vi⊂⊂ℝnV_{i}\subset\subset\mathbb{R}^{n} (φj\varphi_{j}) such that any two of the functionsj≤j0j\leq j_{0} are supported in one of the φj\varphi_{j}’s (forUiU_{i}). Then we can writei=i(j1,j2)i=i(j_{1},j_{2})
+
+A=∑j1,j2≤j0φj1Aφj2,A=\sum_{j_{1},j_{2}\leq j_{0}}\varphi_{j_{1}}A\varphi_{j_{2}}, | 1.13 
+
+a finite sum ofdo’s, each acting in a coordinate patch (and preserving the property of being supported in the patch). Since the coefficients in the trace expansions depend linearly on ψ\psi, it suffices to consider the expansions for each term in (1.13). Actually, we can, by linear translations in AA, replace theℝn\mathbb{R}^{n} by sets Vi(j1,j2)V_{i(j_{1},j_{2})} with a positive distance from one another, so that Vj1,j2′V^{\prime}_{j_{1},j_{2}} in (1.13) carries over to aAAdo that is a sum of pieces supported in each ψ\psi forVj1,j2′V^{\prime}_{j_{1},j_{2}} — we shall denote it j1,j2≤j0j_{1},j_{2}\leq j_{0} again. We likewise consider AA in the coordinate patches carried over to (P−λ)−N(P-\lambda)^{-N} in this way.ℝn\mathbb{R}^{n}
+
+In the localized situation, lethave the symbolQ(μ)Q(\mu)
+
+q(x,ξ,μ)∼∑j∈ℕqν−mN−j(x,ξ,μ);q(x,\xi,\mu)\sim\sum_{j\in\mathbb{N}}q_{\nu-mN-j}(x,\xi,\mu); | 1.14 
+
+here the are homogeneous in qν−mN−jq_{\nu-mN-j} of degree (ξ,μ)(\xi,\mu), for ν−mN−j\nu-mN-j. For simplicity of notation, we can let |ξ|≥1|\xi|\geq 1 run on the ray μ\mu (other rays are treated similarly, and holomorphy in ℝ+\mathbb{R}_{+} is assured by [GS1, Lemma 2.3]). Besides this polyhomogeneous structure, the important knowledge is that the symbol of μ\mu lies in a suitable QQ-space, as defined in [GS1]. When a symbol Sk,dS^{k,d} lies in f(x,ξ,μ)f(x,\xi,\mu), theSk,dS^{k,d}-index indicates that dd, where f(x,ξ,μ)=μdf1(x,ξ,μ)f(x,\xi,\mu)=\mu^{d}f_{1}(x,\xi,\mu) has a Taylor expansion in f1f_{1} at z=1μz=\frac{1}{\mu}:z=0z=0
+
+f(x,ξ,μ)\displaystyle f(x,\xi,\mu) | =μdf1(x,ξ,1/z)=z−d∑0≤l<Lf(l)(x,ξ)zl+O(⟨ξ⟩k+Lz−d+L)\displaystyle=\mu^{d}f_{1}(x,\xi,1/z)=z^{-d}\sum_{0\leq l<L}f^{(l)}(x,\xi)z^{l}+O(\langle{\xi}\rangle^{k+L}z^{-d+L}) | 1.15 
+---|---|---
+=∑0≤l<Lf(l)(x,ξ)μd−l+O(⟨ξ⟩k+Lμd−L),for anyL,\displaystyle=\sum_{0\leq l<L}f^{(l)}(x,\xi)\mu^{d-l}+O(\langle{\xi}\rangle^{k+L}\mu^{d-L}),\text{ for any }L, 
+
+with (see [GS1] for further details; f(l)∈Sk+lf^{(l)}\in S^{k+l} stands for ⟨ξ⟩\langle{\xi}\rangle).(1+|ξ|2)12(1+|\xi|^{2})^{\frac{1}{2}}
+
+###### Theorem 1.3
+
+(i) In the localized situation, when, the diagonal value of the kernel N>(ν+n)/mN>(\nu+n)/m of K(Q(μ),x,y)K(Q(\mu),x,y) has an asymptotic expansionQ(μ)Q(\mu)
+
+K(Q(μ),x,x)∼∑j∈ℕc~j(x)μν+n−j−mN+∑k∈ℕ(mc~k′(x)logμ+c~k′′(x))μ−mk−mN∼∑j∈ℕc~j(x)(−λ)ν+n−jm−N+∑k∈ℕ(c~k′(x)log(−λ)+c~k′′(x))(−λ)−k−N.\multline K(Q(\mu),x,x)\sim\sum_{j\in\mathbb{N}}\tilde{c}_{j}(x)\mu^{\nu+n-j-mN}+\sum_{k\in\mathbb{N}}\bigl(m\tilde{c}^{\prime}_{k}(x)\log\mu+\tilde{c}^{\prime\prime}_{k}(x)\bigr)\mu^{-mk-mN}\\
+\sim\sum_{j\in\mathbb{N}}\tilde{c}_{j}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}+\sum_{k\in\mathbb{N}}\bigl(\tilde{c}^{\prime}_{k}(x)\log(-\lambda)+\tilde{c}^{\prime\prime}_{k}(x)\bigr)(-\lambda)^{-k-N}.\endmultline K(Q(\mu),x,x)\sim\sum_{j\in\mathbb{N}}\tilde{c}_{j}(x)\mu^{\nu+n-j-mN}+\sum_{k\in\mathbb{N}}\bigl(m\tilde{c}^{\prime}_{k}(x)\log\mu+\tilde{c}^{\prime\prime}_{k}(x)\bigr)\mu^{-mk-mN}\\
+\sim\sum_{j\in\mathbb{N}}\tilde{c}_{j}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}+\sum_{k\in\mathbb{N}}\bigl(\tilde{c}^{\prime}_{k}(x)\log(-\lambda)+\tilde{c}^{\prime\prime}_{k}(x)\bigr)(-\lambda)^{-k-N}. | 1.16 
+
+Here, when we define if c~ν+n(x)=0\tilde{c}_{\nu+n}(x)=0 or ν<−n\nu<-n,ν∈ℝ∖ℤ\nu\in\mathbb{R}\setminus\mathbb{Z}
+
+c~ν+n(x)+c~0′′(x)=∫@!@!@!@!−a(x,ξ)dξ–+local terms,\tilde{c}_{\nu+n}(x)+\tilde{c}^{\prime\prime}_{0}(x)={\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+\text{ local terms}, | 1.17 
+
+where is defined from the symbol ∫@!@!@!−a{\int\!\!\!\!\!@!@!@!{-}}a of a(x,ξ)∼∑j∈ℕaν−j(x,ξ)a(x,\xi)\sim\sum_{j\in\mathbb{N}}a_{\nu-j}(x,\xi) by:AA
+
+∫@!@!@!@!−a(x,ξ)dξ–=∑j≤ν+n(∫|ξ|≤1aν−j(x,ξ)dξ–−1−δν+n,jν+n−j∫|ξ|=1aν−j(x,ξ)dS–(ξ))+∫ℝn(a(x,ξ)−∑j≤ν+naν−j(x,ξ))d–ξ,\multline{\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,\xi)d\!{}^{\!\text{\rm--}}\!\xi=\sum_{j\leq\nu+n}\bigl(\int_{|\xi|\leq 1}a_{\nu-j}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi-\tfrac{1-\delta_{\nu+n,j}}{\nu+n-j}\int_{|\xi|=1}a_{\nu-j}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi)\bigr)\\
++\int_{\mathbb{R}^{n}}\bigl(a(x,\xi)-\sum_{j\leq\nu+n}a_{\nu-j}(x,\xi)\bigr)\,d\!{}^{\!\text{\rm--}}\!\xi,\endmultline{\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,\xi)d\!{}^{\!\text{\rm--}}\!\xi=\sum_{j\leq\nu+n}\bigl(\int_{|\xi|\leq 1}a_{\nu-j}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi-\tfrac{1-\delta_{\nu+n,j}}{\nu+n-j}\int_{|\xi|=1}a_{\nu-j}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi)\bigr)\\
++\int_{\mathbb{R}^{n}}\bigl(a(x,\xi)-\sum_{j\leq\nu+n}a_{\nu-j}(x,\xi)\bigr)\,d\!{}^{\!\text{\rm--}}\!\xi, | 1.18 
+
+and the local terms depend only on the first strictly homogeneous terms in the symbols of n+[ν]+1n+[\nu]+1 and AA. When PP, allν∉ℤ\nu\notin\mathbb{Z} vanish.c~k′\tilde{c}^{\prime}_{k}
+
+(ii) If, moreover, and AA are as in Definition 1.1 with (3) or (4), then the expansion (1.16) reduces to the formPP
+
+K(Q(μ),x,x)∼∑j∈ℕ,j−n−νoddc~j(x)(−λ)ν+n−jm−N+∑k∈ℕc~k′′(x)(−λ)−k−N.K(Q(\mu),x,x)\sim\sum_{j\in\mathbb{N},\,j-n-\nu\text{ odd}}\tilde{c}_{j}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}+\sum_{k\in\mathbb{N}}\tilde{c}^{\prime\prime}_{k}(x)(-\lambda)^{{-k}-N}. | 1.19 
+
+(iii) In each of the cases (1)–(4) in Definition 1.1,, c~0′(x)=0\tilde{c}^{\prime}_{0}(x)=0 (for any choice of local coordinates), andc~ν+n(x)=0\tilde{c}_{\nu+n}(x)=0
+
+c~0′′(x)=∫@!@!@!@!−a(x,ξ)dξ–,\tilde{c}_{0}^{\prime\prime}(x)={\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi, | 1.20 
+
+clearly independent of.PP
+
+###### Proof
+
+In these formulas, is the Kronecker delta, and we use the notation δr,s\delta_{r,s} for the largest integer[ν][\nu]. The theorem will be proved by an examination of how the coefficients in (1.1) arise in the proof of [GS1, Th. 2.1]. In the proof of (ii), we consider for definiteness e.g. the case (4) (the other case (3) is treated in a completely analogous fashion).≤ν\leq\nu
+
+It is shown in [GS1, Sect. 2] that has symbol in (P+μm)−N(P+\mu^{m})^{-N}, so the symbolS−mN,0∩S0,−mNS^{-mN,0}\cap S^{0,-mN} of q(x,ξ,μ)q(x,\xi,\mu) satisfiesQ(μ)=A(P+μm)−NQ(\mu)=A(P+\mu^{m})^{-N}
+
+q(x,ξ,μ)∈Sν−mN,0∩Sν,−mN.q(x,\xi,\mu)\in S^{\nu-mN,0}\cap S^{\nu,-mN}. | 1.21 
+
+The expansion of corresponding to (1.15) for the qq-index equal todd reflects the fact that−mN-mN
+
+A(P+μm)−N\displaystyle A(P+\mu^{m})^{-N} | =zmNA(I+zmP)−N=zmNA∑0≤l<L(−Nl)zmlPl+O(zm(N+L))\displaystyle=z^{mN}A(I+z^{m}P)^{-N}=z^{mN}A\sum_{0\leq l<L}\tbinom{-N}{l}z^{ml}P^{l}+O(z^{m(N+L)}) | 1.22 
+---|---|---
+=∑0≤l<L(−Nl)APlμ−m(N+l)+O(μ−m(N+L)).\displaystyle=\sum_{0\leq l<L}\tbinom{-N}{l}AP^{l}\mu^{-m(N+l)}+O(\mu^{-m(N+L)}). 
+
+In fact, only’th powers enter nontrivially in the expansion ofmm (since qq is a function of qq):λ=−μm\lambda=-\mu^{m}
+
+q(x,ξ,μ)=∑0≤l<Lq(l)(x,ξ)μ−m(N+l)+O(⟨ξ⟩ν+mLμ−m(N+L)).q(x,\xi,\mu)=\sum_{0\leq l<L}q^{(l)}(x,\xi)\mu^{-m(N+l)}+O(\langle{\xi}\rangle^{\nu+mL}\mu^{-m(N+L)}). | 1.23 
+
+Here the are polyhomogeneous symbols of order q(l)q^{(l)}. In case (4), ν+ml\nu+ml is even-odd and theq(x,ξ,μ)q(x,\xi,\mu) are even-odd. (It may be observed that the first term in the last sum in (1.22) equals q(l)q^{(l)}, so the first coefficient in (1.23) is Aμ−mNA\mu^{-mN}.)q(0)=a(x,ξ)q^{(0)}=a(x,\xi)
+
+The kernel of, restricted to the diagonalQ(μ)=OP(q)Q(\mu)=\operatorname{OP}(q), isx=yx=y
+
+Kq(x,x,μ)=∫ℝnq(x,ξ,μ)dξ–,dξ–=(2π)−n𝑑ξ.K_{q}(x,x,\mu)=\int_{\mathbb{R}^{n}}q(x,\xi,\mu)\,d\!{}^{\!\text{\rm--}}\!\xi,\quad d\!{}^{\!\text{\rm--}}\!\xi=(2\pi)^{-n}d\xi. | 1.24 
+
+The contributions from a homogeneous term to (1.16) are found by splitting the corresponding integral in three pieces:qν−mN−jq_{\nu-mN-j}
+
+Kqν−mN−j=∫|ξ|≥μqν−mN−jdξ–+∫|ξ|≤1qν−mN−jdξ–+∫1≤|ξ|≤μqν−mN−jdξ–.K_{q_{\nu-mN-j}}=\int_{|\xi|\geq\mu}q_{\nu-mN-j}\,d\!{}^{\!\text{\rm--}}\!\xi+\int_{|\xi|\leq 1}q_{\nu-mN-j}\,d\!{}^{\!\text{\rm--}}\!\xi+\int_{1\leq|\xi|\leq\mu}q_{\nu-mN-j}\,d\!{}^{\!\text{\rm--}}\!\xi. | 1.25 
+
+In the first integral we replace by ξ\xi and use the homogeneity; this gives a contribution to μη\mu\eta.c~j(x)μν+n−j−mN\tilde{c}_{j}(x)\mu^{\nu+n-j-mN}
+
+In case (4), is odd in qν−mN−jq_{\nu-mN-j} when ξ\xi is even, so the contribution vanishes when ν−j\nu-j is even. Since ν−j\nu-j is even (as well as nn), these are the cases where mNmN is even. (In a similar way one sees in case (3) that since ν+n−j\nu+n-j is even-even, the contributions to cases QQ even vanish since ν+n−j\nu+n-j is odd.)nn
+
+For the other pieces in (1.25) we use moreover that. The second piece contributes straightforwardly to the qν−mN−j∈Sν−j,−mNq_{\nu-mN-j}\in S^{\nu-j,-mN}-terms:c~k′′\tilde{c}^{\prime\prime}_{k}
+
+∫|ξ|≤1q(x,ξ,μ)dξ–=∑0≤l<Lμ−m(N+l)∫|ξ|≤1q(l)(x,ξ)dξ–+O(μ−m(N+L)),\int_{|\xi|\leq 1}q(x,\xi,\mu)\,d\!{}^{\!\text{\rm--}}\!\xi=\sum_{0\leq l<L}\mu^{-m(N+l)}\int_{|\xi|\leq 1}q^{(l)}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+O(\mu^{-m(N+L)}), | 1.26 
+
+where, as noted above. In the third piece, the terms in the symbol are homogeneous, and since we are integrating over a bounded part of q(0)=aq^{(0)}=a, we need not worry about integrability at infinity. We use the expansion (as in (1.23))ℝn\mathbb{R}^{n}
+
+qν−mN−j(x,ξ,μ)=∑0≤l<Lqν−j+ml(l)(x,ξ)μ−mN−ml+Rj,L(x,ξ,μ),q_{\nu-mN-j}(x,\xi,\mu)=\sum_{0\leq l<L}q_{\nu-j+ml}^{(l)}(x,\xi)\mu^{-mN-ml}+R_{j,L}(x,\xi,\mu), | 1.27 
+
+where the coefficients are homogeneous of degree qν−j+ml(l)q_{\nu-j+ml}^{(l)} in ν−j+ml\nu-j+ml and ξ\xi is Rj,LR_{j,L}; in case (4), all these terms are even-odd. One finds by use of polar coordinates:O(⟨ξ⟩ν−j+mLμ−m(N+L))O(\langle{\xi}\rangle^{\nu-j+mL}\mu^{-m(N+L)})
+
+μ−m(N+l)\displaystyle\mu^{-m(N+l)} | ∫1≤|ξ|≤μqν−j+ml(l)(x,ξ)dξ–\displaystyle\int_{1\leq|\xi|\leq\mu}q_{\nu-j+ml}^{(l)}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi | 1.28 
+---|---|---
+=μ−m(N+l)∫1μrν−j+ml+n−1dr∫|ξ|=1qν−j+ml(l)(x,ξ)dS–(ξ)\displaystyle=\mu^{-m(N+l)}\int_{1}^{\mu}r^{\nu-j+ml+n-1}\,dr\int_{|\xi|=1}q_{\nu-j+ml}^{(l)}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi) 
+={cj,l(x)ν−j+ml+n(μν−j−mN+n−μ−m(N+l))ifν−j+ml+n≠0,cj,l(x)μ−m(N+l)logμifν−j+ml+n=0,\displaystyle=\begin{cases}\frac{c_{j,l}(x)}{\nu-j+ml+n}(\mu^{\nu-j-mN+n}-\mu^{-m(N+l)})&\text{ if
+}\nu-j+ml+n\neq 0,\\
+c_{j,l}(x)\mu^{-m(N+l)}\log\mu&\text{ if }\nu-j+ml+n=0,\end{cases} 
+
+where
+
+cj,l(x)=∫|ξ|=1qν−j+ml(l)(x,ξ)dS–(ξ).c_{j,l}(x)=\int_{|\xi|=1}q_{\nu-j+ml}^{(l)}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi). | 1.29 
+
+When, the term j≠ν+ml+nj\neq\nu+ml+ncontributes to the 1ν−j+ml+ncj,l(x)μν−j−mN+n\frac{1}{\nu-j+ml+n}c_{j,l}(x)\mu^{\nu-j-mN+n}-term, whereas c~j(x)\tilde{c}_{j}(x) is absorbed in the −1ν−j+ml+ncj,l(x)μ−m(N+l)\frac{-1}{\nu-j+ml+n}c_{j,l}(x)\mu^{-m(N+l)}-term. When c~l′′(x)\tilde{c}^{\prime\prime}_{l}(x), we get the j=ν+ml+nj=\nu+ml+n’th log-term in the first line of (1.16) with coefficientll; it will be denoted cj,l(x)c_{j,l}(x) to comply with the notation conventions of (1.1). The second line in (1.16) is obtained by insertion of mc~l′(x)m\tilde{c}^{\prime}_{l}(x). If μ=(−λ)1m\mu=(-\lambda)^{\frac{1}{m}}, logarithmic terms cannot occur.ν∉ℤ\nu\notin\mathbb{Z}
+
+Let us see how the coefficients look in case (4): The logarithmic contribution comes when, and then since j=ν+ml+nj=\nu+ml+n is even and nn is even-odd of degreeqν−j+ml(l)q_{\nu-j+ml}^{(l)}, ν−j+ml=−n\nu-j+ml=-n. (Similarly, this coefficient vanishes in case (3) where cj,l(x)=0c_{j,l}(x)=0 is even-even and qν−j+ml(l)q_{\nu-j+ml}^{(l)} is odd.) Thus there are no logarithmic terms! Moreover, nnvanishes if cj,l(x)c_{j,l}(x) is even, i.e., whenν−j+mN+n\nu-j+mN+n is even, so there is no contribution to ν−j+n\nu-j+n in this case. Hence the expansion terms from the third piece in (1.25) only contribute to the terms in (1.19).c~j(x)\tilde{c}_{j}(x)
+
+It is accounted for in [GS1, pf. of Th. 2.1] (and in more detail in [GH, Sect. 3]) how the remainders, from the polyhomogeneous expansion (1.14) as well as the expansions in powers of, are handled; for completeness we recall the arguments here: For the remainder μ\mu in (1.27), consider a case whereRj,LR_{j,L}. As noted in [GS1], ν−j+mL>0\nu-j+mL>0 is Rj,LR_{j,L} for O(|ξ|ν−j+mLμ−m(N+L))O(|\xi|^{\nu-j+mL}\mu^{-m(N+L)}), so it extends by homogeneity for |ξ|≥1|\xi|\geq 1 to a continuous function|ξ|≤1|\xi|\leq 1 satisfying the same estimate. ThenRj,Lh(x,ξ,μ)R^{h}_{j,L}(x,\xi,\mu)
+
+∫1≤|ξ|≤μRj,Ldξ–\displaystyle\int_{1\leq|\xi|\leq\mu}R_{j,L}\,d\!{}^{\!\text{\rm--}}\!\xi | =∫|ξ|≤μRj,Lhdξ–−∫|ξ|≤1Rj,Lhdξ–\displaystyle=\int_{|\xi|\leq\mu}R^{h}_{j,L}\,d\!{}^{\!\text{\rm--}}\!\xi-\int_{|\xi|\leq 1}R^{h}_{j,L}\,d\!{}^{\!\text{\rm--}}\!\xi 
+---|---
+=cj,L′(x)μν−j−mN+n+O(μ−m(N+L)),\displaystyle=c^{\prime}_{j,L}(x)\mu^{\nu-j-mN+n}+O(\mu^{-m(N+L)}), 
+
+giving another contribution to the coefficient. In the case (4), the contribution vanishes for c~j(x)\tilde{c}_{j}(x) even. This shows that the homogeneous terms ν−j+n\nu-j+n have expansions as in (1.16) down to an qν−mN−jq_{\nu-mN-j}-error when O(μ−m(N+L))O(\mu^{-m(N+L)}) is large; then it holds a fortiori for small LL. Now consider the remainder LL in the expansion (1.14); it is in qJ′=q−∑j<Jqν−j−mNq^{\prime}_{J}=q-\sum_{j<J}q_{\nu-j-mN}(depending on Sν−J−mN,0∩Sν−J,−mNS^{\nu-J-mN,0}\cap S^{\nu-J,-mN} through μ\mu), so it has an expansion, for any λ\lambda,LL
+
+qJ′(x,ξ,μ)=∑0≤l<LqJ′(l)(x,ξ)μ−m(N+l)+O(⟨ξ⟩ν−J+mLμ−m(N+L)),q^{\prime}_{J}(x,\xi,\mu)=\sum_{0\leq l<L}q^{\prime(l)}_{J}(x,\xi)\mu^{-m(N+l)}+O(\langle{\xi}\rangle^{\nu-J+mL}\mu^{-m(N+L)}), 
+
+with. Assume that qJ′(l)(x,ξ)∈Sν−J+mlq^{\prime(l)}_{J}(x,\xi)\in S^{\nu-J+ml}; then all the terms are integrable in J>ν+mL+nJ>\nu+mL+n, andξ\xi
+
+∫ℝnqJ′(x,ξ,μ)dξ–=∑0≤l<LcJ,l′(x)μ−m(N+l)+O(μ−m(N+L)).\int_{\mathbb{R}^{n}}q^{\prime}_{J}(x,\xi,\mu)\,d\!{}^{\!\text{\rm--}}\!\xi=\sum_{0\leq l<L}c^{\prime}_{J,l}(x)\mu^{-m(N+l)}+O(\mu^{-m(N+L)}). 
+
+The are taken into the coefficients cJ,l′(x)c^{\prime}_{J,l}(x). We conclude that there is an asymptotic expansion (1.16) which for any c~l′′(x)\tilde{c}^{\prime\prime}_{l}(x) can be calculated down to an error L≥0L\geq 0 by taking O(μ−m(N+L))O(\mu^{-m(N+L)}), treating the remainder J>ν+mL+nJ>\nu+mL+n as last described, and the homogeneous terms with qJ′q^{\prime}_{J} as described above.j<Jj<J
+
+This shows how (1.16) is obtained in general, reduced to (1.19) in case (4) (and (3)). Clearly, each depends only on the strictly homogeneous term of degree c~j(x)\tilde{c}_{j}(x) in −mN−j-mN-j, hence on the strictly homogeneous terms of the first qqorders in j+1j+1 and AA.PP
+
+It remains to show the formulas (1.17), (1.20) for. Here we go back to the splitting (1.25), applied to the complete symbol c~0′′(x)\tilde{c}^{\prime\prime}_{0}(x), that we examine with special care. It is observed in [GS1, p. 501] that when q(x,ξ,μ)q(x,\xi,\mu) has symbol PP, the symbol p(x,ξ)p(x,\xi) of q~(x,ξ,μ)\tilde{q}(x,\xi,\mu) is a sum (P+μm)−1(P+\mu^{m})^{-1}, where (pm(x,ξ)+μm)−1+q~′(p_{m}(x,\xi)+\mu^{m})^{-1}+\tilde{q}^{\prime} and (pm+μm)−1∈S−m,0∩S0,−m(p_{m}+\mu^{m})^{-1}\in S^{-m,0}\cap S^{0,-m} has not only lower order but also better decrease in q~′\tilde{q}^{\prime}: μ\mu (since it is constructed from terms containing at least two powers of q~′∈S−m−1,0∩Sm−1,−2m\tilde{q}^{\prime}\in S^{-m-1,0}\cap S^{m-1,-2m}). A similar phenomenon holds for the (pm+μm)−1(p_{m}+\mu^{m})^{-1}’th power of NN; its symbol is a sum (P+μm)−1(P+\mu^{m})^{-1}, where (pm+μm)−N+q~(N)′(p_{m}+\mu^{m})^{-N}+\tilde{q}_{(N)}^{\prime} and (pm+μm)−N∈S−mN,0∩S0,−mN(p_{m}+\mu^{m})^{-N}\in S^{-mN,0}\cap S^{0,-mN}. The composition of q~(N)′∈S−mN−1,0∩Sm−1,−m(N+1)\tilde{q}^{\prime}_{(N)}\in S^{-mN-1,0}\cap S^{m-1,-m(N+1)} withAA gives an operator with symbol inOP(q~(N)′)\operatorname{OP}(\tilde{q}^{\prime}_{(N)}) (depending on Sν−mN−1,0∩Sν+m−1,−m(N+1)S^{\nu-mN-1,0}\cap S^{\nu+m-1,-m(N+1)} rather than μm\mu^{m}); by the preceding analysis, it has a diagonal kernel expansion of the formμ\mu
+
+K(x,x,μ)∼∑j∈ℕdj(x)μν−1+n−j−mN+∑k≥1(dk′(x)logμ+dk′′(x))μ−mk−mN,K(x,x,\mu)\sim\sum_{j\in\mathbb{N}}d_{j}(x)\mu^{\nu-1+n-j-mN}+\sum_{k\geq 1}\bigl(d^{\prime}_{k}(x)\log\mu+d^{\prime\prime}_{k}(x)\bigr)\mu^{-mk-mN}, | 1.30 
+
+where the sum over starts with kk, so thatk=1k=1 appears at most with a local coefficient from the series over μ−mN\mu^{-mN}. In the consideration of the symbol compositionjj
+
+a(x,ξ)∘(pm(x,ξ)+μm)−N=a(x,ξ)(pm(x,ξ)+μm)−N+∑1≤|α|<M(−i)|α|α!∂ξαa(x,ξ)∂xα(pm(x,ξ)+μm)−N+rM(x,ξ,μ),\multline a(x,\xi)\circ(p_{m}(x,\xi)+\mu^{m})^{-N}=a(x,\xi)(p_{m}(x,\xi)+\mu^{m})^{-N}\\
++\sum_{1\leq|\alpha|<M}\tfrac{(-i)^{|\alpha|}}{\alpha!}\partial_{\xi}^{\alpha}a(x,\xi)\partial_{x}^{\alpha}(p_{m}(x,\xi)+\mu^{m})^{-N}+r_{M}(x,\xi,\mu),\endmultline a(x,\xi)\circ(p_{m}(x,\xi)+\mu^{m})^{-N}=a(x,\xi)(p_{m}(x,\xi)+\mu^{m})^{-N}\\
++\sum_{1\leq|\alpha|<M}\tfrac{(-i)^{|\alpha|}}{\alpha!}\partial_{\xi}^{\alpha}a(x,\xi)\partial_{x}^{\alpha}(p_{m}(x,\xi)+\mu^{m})^{-N}+r_{M}(x,\xi,\mu), | 1.31 
+
+we observe that whenever a derivative (in or xx) hits ξ\xi, its (pm+μm)−N(p_{m}+\mu^{m})^{-N}-index is lowered (since the resulting expression contains at least one more power of dd) — and the same is true for the remainder (pm+μm)−1(p_{m}+\mu^{m})^{-1}(constructed by Taylor expansion as in standard proofs of the composition rule). So again, the part rMr_{M} gives a kernel expansion of the form (1.30), where ∑1≤|α|<M(−i)|α|α!∂ξαa∂xα(pm+μm)−N+rM\sum_{1\leq|\alpha|<M}\tfrac{(-i)^{|\alpha|}}{\alpha!}\partial_{\xi}^{\alpha}a\partial_{x}^{\alpha}(p_{m}+\mu^{m})^{-N}+r_{M} appears at most in the series over μ−mN\mu^{-mN}, with a local coefficient. (One could avoid this step by taking the symbol ofjj in (P+μm)−N(P+\mu^{m})^{-N}-form, found from the conjugate transpose of the symbol of yy.)(P∗+μm)−N(P^{*}+\mu^{m})^{-N}
+
+It remains to consider. Here we remark thatOP(a(x,ξ)(pm(x,ξ)+μm)−N)\operatorname{OP}(a(x,\xi)(p_{m}(x,\xi)+\mu^{m})^{-N})
+
+q~′′\displaystyle\tilde{q}^{\prime\prime} | ≡μ−mN−(pm+μm)−N=((pm+μm)N−μmN)(pm+μm)−Nμ−mN\displaystyle\equiv\mu^{-mN}-(p_{m}+\mu^{m})^{-N}=\big((p_{m}+\mu^{m})^{N}-\mu^{mN})(p_{m}+\mu^{m})^{-N}\mu^{-mN} | 1.32 
+---|---|---
+=∑1≤l≤N(Nl)pmlμm(N−l)(pm+μm)−Nμ−mN;\displaystyle=\sum_{1\leq l\leq N}\tbinom{N}{l}p_{m}^{l}\mu^{m(N-l)}(p_{m}+\mu^{m})^{-N}\mu^{-mN}; 
+
+a sum of terms in, Sm(l−N),−ml∩Sml,−m(l+N)S^{m(l-N),-ml}\cap S^{ml,-m(l+N)}; the sum is inl=1,…,Nl=1,\dots,N. Now writeS0,−m∩SmN,−m(1+N)S^{0,-m}\cap S^{mN,-m(1+N)}
+
+a(x,ξ)=a′(x,ξ)+a′′(x,ξ),a′=∑j≤ν+naν−j,a′′=a−∑j≤ν+naν−j.\begin{gathered}a(x,\xi)=a^{\prime}(x,\xi)+a^{\prime\prime}(x,\xi),\\
+a^{\prime}=\sum_{j\leq\nu+n}a_{\nu-j},\quad a^{\prime\prime}=a-\sum_{j\leq\nu+n}a_{\nu-j}.\end{gathered} | 1.33 
+
+Here is of order a′′a^{\prime\prime} (ν−J<−n\nu-J<-n) and defines a trace-class operator. ForJ=max{n+[ν]+1,0}J=\max\{n+[\nu]+1,0\}, the diagonal kernel isOP(a′′(pm+μm)−N)\operatorname{OP}(a^{\prime\prime}(p_{m}+\mu^{m})^{-N})
+
+∫ℝna′′(pm+μm)−Ndξ–=μ−mN∫ℝna′′dξ–−∫ℝna′′q~′′dξ–.\int_{\mathbb{R}^{n}}a^{\prime\prime}(p_{m}+\mu^{m})^{-N}\,d\!{}^{\!\text{\rm--}}\!\xi=\mu^{-mN}\int_{\mathbb{R}^{n}}a^{\prime\prime}\,d\!{}^{\!\text{\rm--}}\!\xi-\int_{\mathbb{R}^{n}}a^{\prime\prime}\tilde{q}^{\prime\prime}\,d\!{}^{\!\text{\rm--}}\!\xi. 
+
+Since, the last integral gives a series as in (1.30), now with a′q~′′∈Sν−J,−m∩Sν−J+mN,−m(1+N)a^{\prime}\tilde{q}^{\prime\prime}\in S^{\nu-J,-m}\cap S^{\nu-J+mN,-m(1+N)} replaced by ν−1\nu-1so that there is no term withν−J<−n\nu-J<-n. Thus the contribution from μ−mN\mu^{-mN} to the coefficient of a′′a^{\prime\prime} is μ−mN\mu^{-mN}, the last parenthesis in (1.18).∫a′′dξ–\int a^{\prime\prime}\,d\!{}^{\!\text{\rm--}}\!\xi
+
+For, we know that the integral over a′(pm+μm)−Na^{\prime}(p_{m}+\mu^{m})^{-N} of each |ξ|≥μ|\xi|\geq\mu gives a local term, as in the sum over aν−j(pm+μm)−Na_{\nu-j}(p_{m}+\mu^{m})^{-N} in (1.16). For the integral overjj, we consider the two parts |ξ|≤μ|\xi|\leq\mu andμ−mNa′\mu^{-mN}a^{\prime} separately. The latter gives a sum of expressions−a′q~′′-a^{\prime}\tilde{q}^{\prime\prime}
+
+(Nl)μ−ml∫|ξ|≤μa′pml(pm+μm)−Ndξ–,\tbinom{N}{l}\mu^{-ml}\int_{|\xi|\leq\mu}a^{\prime}p_{m}^{l}(p_{m}+\mu^{m})^{-N}\,d\!{}^{\!\text{\rm--}}\!\xi, | 1.34 
+
+where we find as in the analysis of above that the integral alone produces terms as in (1.26) and (1.28), where nonlocal contributions start at the power qq. Thanks to the extra factor μ−mN\mu^{-mN} in front (μ−ml\mu^{-ml}), (1.34) on the whole contributes locally (as in the sum over l≥1l\geq 1 in (1.30)) to the coefficient of jj.μ−mN\mu^{-mN}
+
+Finally, we study. The integral over μ−mN∫|ξ|≤μa′(x,ξ)dξ–\mu^{-mN}\int_{|\xi|\leq\mu}a^{\prime}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi simply gives|ξ|≤1|\xi|\leq 1. The integral over μ−mN∫|ξ|≤1a′(x,ξ)dξ–\mu^{-mN}\int_{|\xi|\leq 1}a^{\prime}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi of each homogeneous term is analyzed as in (1.28); here the contribution from 1≤|ξ|≤μ1\leq|\xi|\leq\mu to the coefficient ofaν−ja_{\nu-j} is μ−mN\mu^{-mN} if −1ν−j+n∫|ξ|=1aν−j(x,ξ)dS–(ξ)-\frac{1}{\nu-j+n}\int_{|\xi|=1}a_{\nu-j}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi), zero if ν−j≠−n\nu-j\neq-n.ν−j=−n\nu-j=-n
+
+Adding the contributions from and a′a^{\prime} we find (1.17) with (1.18). This completes the proof of (i) and (ii).a′′a^{\prime\prime}
+
+For (iii), we just have to check the local contributions found along the way in the preceding considerations. In case (1), the series in (as in (1.30)) begin below the power jj, and in case (2), they contain only noninteger powers of μ−mN\mu^{-mN}. In the cases (3) and (4), it is checked as in the beginning of the proof that the series in μ\mu contain only odd powers of jj. So in all these cases, the only contributions to the coefficient of μ\mu come from μ−mN\mu^{-mN}. ∎∫@!@!@!−a(x,ξ)dξ–{\int\!\!\!\!\!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi
+
+Point (iii) in cases (1) and (2) was shown already by Lesch in [L]; he introduced the notation with the following brief description: It equals the ∫@!@!@!−a(x,ξ)dξ–{\int\!\!\!\!\!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi-independent term μ\mu in the asymptotic expansion for a~0′′(x)\tilde{a}^{\prime\prime}_{0}(x):μ→∞\mu\to\infty
+
+∫|ξ|≤μa(x,ξ)dξ–∼∑j∈ℕ,j≠ν+na~j(x)μν+n−j+a~0′(x)logμ+a~0′′(x).\int_{|\xi|\leq\mu}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\sim\sum_{j\in\mathbb{N},j\neq\nu+n}\tilde{a}_{j}(x)\mu^{\nu+n-j}+\tilde{a}_{0}^{\prime}(x)\log\mu+\tilde{a}^{\prime\prime}_{0}(x). | 1.35 
+
+This description is clearly consistent with the calculation of in the above proof. Also the notation ∫@!@!@!−adξ–{\int\!\!\!\!\!@!@!@!{-}}a\,d\!{}^{\!\text{\rm--}}\!\xi is used. The concept is related to Hadamard’s definition of the finite part — partie finie — of certain integrals [H, p. 184 ff.].LIM∫|ξ|≤μμ→∞a(x,ξ)dξ–\operatorname{LIM}_{\mu\to\infty}\int_{|\xi|\leq\mu}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi
+
+Lesch moreover shows that in the cases (1) and (2), the density associated with ∫@!@!@!−a(x,ξ)dξ–|𝑑x|{\int\!\!\!\!\!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi|dx| is invariant under coordinate changes. In fact, he shows this also when AA is given by an amplitude function AA (a symbol ina(x,y,ξ)a(x,y,\xi)-form); then (x,y)(x,y) is invariant. The proof of the invariance extends to the cases (3) and (4), since in the proof of [L, Lemma 5.3], the logarithmic contributions (the sum over ∫@!@!@!−a(x,x,ξ)dξ–|𝑑x|{\int\!\!\!\!\!@!@!@!{-}}a(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi|dx|) in Prop. 5.2 vanish because the terms of order ll are odd in −n-n. So in all the cases,ξ\xi defines a densityAAdescribed in local coordinates byωTR(A)\omega_{\operatorname{TR}}(A)
+
+ωTR(A)=∫@!@!@!@!−a(x,ξ)dξ–|dx|resp.ωTR(A)=∫@!@!@!@!−a(x,x,ξ)dξ–|dx|,\omega_{\operatorname{TR}}(A)={\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi|dx|\text{
+resp. }\omega_{\operatorname{TR}}(A)={\int\!\!\!\!\!\!@!@!@!@!{-}}a(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\,|dx|, | 1.36 
+
+when has symbol in AA-form xx, resp. in a(x,ξ)a(x,\xi)-form(x,y)(x,y).a(x,y,ξ)a(x,y,\xi)
+
+Note that in (1.18) and (1.33), one can replace the sum over by the sum over j≤ν+nj\leq\nu+n for any choice of j≤Jj\leq J, sinceJ≥ν+nJ\geq\nu+n
+
+∫@!@!@!@!−aν−jdξ–=∫aν−jdξ–=∫|ξ|≤1aν−jdξ–+1j−ν−n∫|ξ|=1aν−jdS–(ξ){\int\!\!\!\!\!\!@!@!@!@!{-}}a_{\nu-j}\,d\!{}^{\!\text{\rm--}}\!\xi=\int a_{\nu-j}\,d\!{}^{\!\text{\rm--}}\!\xi=\int_{|\xi|\leq 1}a_{\nu-j}\,d\!{}^{\!\text{\rm--}}\!\xi+\tfrac{1}{j-\nu-n}\int_{|\xi|=1}a_{\nu-j}\,d\!{}^{\!\text{\rm--}}\!S(\xi) 
+
+for, by integrability and homogeneity. Note also that j>ν+nj>\nu+n when ∫@!@!@!−a(x,ξ)dξ–=0{\int\!\!\!\!\!@!@!@!{-}}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi=0 is polynomial in aa (reconfirming the fact from [GS1, Th. 2.7] that the coefficient of ξ\xi is local when (−λ)−N(-\lambda)^{-N} is a differential operator).AA
+
+For convenience, we recall that when, the coefficients of A=IA=I for (−λ)n−jm−N(-\lambda)^{\frac{n-j}{m}-N} are simplyj<m+nj<m+n
+
+c~j(x)=∫ℝnq−mN−jh(x,ξ,1)dξ–,0≤j<m+n,\tilde{c}_{j}(x)=\int_{\mathbb{R}^{n}}q^{h}_{-mN-j}(x,\xi,1)\,d\!{}^{\!\text{\rm--}}\!\xi,\quad 0\leq j<m+n, | 1.37 
+
+where is the strictly homogeneous version ofq−mN−jhq^{h}_{-mN-j}; a direct proof goes as in e.g. [G1, Th. 3.3.5, cf. (3.3.31), (3.3.39)] or [GS1, (2.16)], using that theq−mN−jq_{-mN-j} are integrable at q−mN−jhq^{h}_{-mN-j} for ξ=0\xi=0. (Also noninteger j<m+nj<m+n are allowed here.) This includes m>0m>0, the coefficient of c~n(x)\tilde{c}_{n}(x); here (−λ)−N(-\lambda)^{-N}.C0(I,P)=∫trc~n(x)𝑑xC_{0}(I,P)=\int\operatorname{tr}\tilde{c}_{n}(x)\,dx
+
+###### Remark 1.4
+
+The formulas (1.17), (1.18), (1.20) in Theorem 1.3 extend to the case where is given by a symbol AA in a(x,y,ξ)a(x,y,\xi)-form; then (x,y)(x,y) in the formulas is replaced by a(x,ξ)a(x,\xi). To see this, we just need a supplement to the last part of the above proof. We split in two partsa(x,x,ξ)a(x,x,\xi)
+
+a(x,y,ξ)=a′(x,y,ξ)+a′′(x,y,ξ),a′=∑j≤ν+naν−j,a(x,y,\xi)=a^{\prime}(x,y,\xi)+a^{\prime\prime}(x,y,\xi),\quad a^{\prime}=\sum_{j\leq\nu+n}a_{\nu-j}, | 1.38 
+
+as in (1.33). The trace-class part is easily dealt with: As in (1.32), has symbol inμ−mN−(P+μm)−N\mu^{-mN}-(P+\mu^{m})^{-N}, so its composition withS0,−(m+1)NS^{0,-(m+1)N} has symbol in OP(a′′(x,y,ξ))\operatorname{OP}(a^{\prime\prime}(x,y,\xi)) with Sν−J,−(m+1)NS^{\nu-J,-(m+1)N} (by the general composition rules for these symbol spaces), hence gives a diagonal kernel expansion as in (1.30) with ν−J<−n\nu-J<-n replaced by ν−1\nu-1; it contains no term with ν−J\nu-J. The diagonal kernel of μ−mN\mu^{-mN} is simply OP(a′′(x,y,ξ))μ−mN\operatorname{OP}(a^{\prime\prime}(x,y,\xi))\mu^{-mN}.μ−mN∫a′′(x,x,ξ)dξ–\mu^{-mN}\int a^{\prime\prime}(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi
+
+For, we observe that by the rules of calculus for OP(a′)\operatorname{OP}(a^{\prime})do’s, ψ\psi, whereOP(a′(x,y,ξ))=OP(a1(x,ξ))+OP(a2(x,y,ξ))\operatorname{OP}(a^{\prime}(x,y,\xi))=\operatorname{OP}(a_{1}(x,\xi))+\operatorname{OP}(a_{2}(x,y,\xi))
+
+a1(x,ξ)\displaystyle a_{1}(x,\xi) | =∑|α|<M(−i)|α|α!∂ξα∂xαa′(x,y,ξ)|y=x,\displaystyle=\sum_{|\alpha|<M}\tfrac{(-i)^{|\alpha|}}{\alpha!}\partial_{\xi}^{\alpha}\partial_{x}^{\alpha}a^{\prime}(x,y,\xi)|_{y=x}, | 1.39 
+---|---|---
+a2(x,y,ξ)\displaystyle a_{2}(x,y,\xi) | =∑|α|=MM(−i)|α|α!∂ξα∫01(1−t)M−1∂yαa′(x,x+t(y−x),ξ)dt;\displaystyle=\sum_{|\alpha|=M}\tfrac{M(-i)^{|\alpha|}}{\alpha!}\partial_{\xi}^{\alpha}\int_{0}^{1}(1-t)^{M-1}\partial_{y}^{\alpha}a^{\prime}(x,x+t(y-x),\xi)\,dt; 
+
+we take. We can take the symbol M>ν+n+1M>\nu+n+1 of q~\tilde{q} in (P+μm)−N(P+\mu^{m})^{-N}-form. The first term in the first line of (1.39) is yy, a symbol ina′(x,x,ξ)a^{\prime}(x,x,\xi)-form, whose effect is as described in the theorem; this gives the value in (1.17) with xx replaced by a(x,ξ)a(x,\xi). The other terms in the first line are also in a′(x,x,ξ)a^{\prime}(x,x,\xi)-form, now with a power xx in front. When the corresponding operators are composed with∂ξα\partial_{\xi}^{\alpha} and the kernel is calculated, we can perform an integration by parts w.r.t. OP(q~(y,ξ,μ))\operatorname{OP}(\tilde{q}(y,\xi,\mu)), placing the derivative onξ\xi. As noted earlier, the derivatives of q~\tilde{q} have symbols with q~\tilde{q}-indexdd, so the resulting integrals have expansions as in (1.30), giving only local contributions to the coefficient of ≤−(m+1)N\leq-(m+1)N. They vanish in the cases (1)–(4).μ−mN\mu^{-mN}
+
+As for, it is in a2a_{2}-form and equals a sum of (x,y)(x,y)-derivatives ξ\xi with ∑i=1n∂ξia2,i(x,y,ξ)\sum_{i=1}^{n}\partial_{\xi_{i}}a_{2,i}(x,y,\xi) of order a2,ia_{2,i}. Here the considerations on <−n<-n apply, and moreover, the contributions to (1.18) vanish since a′′(x,y,ξ)a^{\prime\prime}(x,y,\xi) as the integral of a derivative.∫ℝn∂ξia2,i(x,x,ξ)dξ–=0\int_{\mathbb{R}^{n}}\partial_{\xi_{i}}a_{2,i}(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi=0
+
+###### Corollary 1.5
+
+Consider operators and AA on the manifold PP, then there is an asymptotic expansion (1.1) forXX. In the localized situation,N>(n+ν)/mN>(n+\nu)/m
+
+C0(A,P)=c~ν+n+c~0′′=∫ℝn∫@!@!@!@!−tra(x,ξ)dξ–𝑑x+local terms;C_{0}(A,P)=\tilde{c}_{\nu+n}+\tilde{c}^{\prime\prime}_{0}=\int_{\mathbb{R}^{n}}{\int\!\!\!\!\!\!@!@!@!@!{-}}\operatorname{tr}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi dx+\text{ local terms}; | 1.40 
+
+the local terms depend only on the first strictly homogeneous terms in the symbols of n+[ν]+1n+[\nu]+1 and AA. Here PP denotes fiber trace. (If the symbol of tr\operatorname{tr} is in AA-form, the formula holds with (x,y)(x,y) instead.)a(x,x,ξ)a(x,x,\xi)
+
+(ii) If, moreover, and AA are as in Definition 1.1 with (3) or (4), then the expansion (1.1) reduces to the formPP
+
+Tr(A(P−λ)−N)∼∑j∈ℕ,j−n−νoddc~j(−λ)ν+n−jm−N+∑k∈ℕc~k′′(−λ)−k−N.\operatorname{Tr}(A(P-\lambda)^{-N})\sim\sum_{j\in\mathbb{N},\,j-n-\nu\text{ odd}}\tilde{c}_{j}(-\lambda)^{\frac{\nu+n-j}{m}-N}+\sum_{k\in\mathbb{N}}\tilde{c}^{\prime\prime}_{k}(-\lambda)^{{-k}-N}. | 1.41 
+
+In particular, has no poles at integers ζ(A,P,s)\zeta(A,P,s).ss
+
+(iii) In each of the cases (1)–(4) in Definition 1.1, and (cf. (1.36))c~0′=c~ν+n=0\tilde{c}^{\prime}_{0}=\tilde{c}_{\nu+n}=0
+
+C0(A,P)=c~0′′=∫XtrωTR(A).C_{0}(A,P)=\tilde{c}_{0}^{\prime\prime}=\int_{X}\operatorname{tr}\omega_{\operatorname{TR}}(A). | 1.42 
+
+###### Proof
+
+Since is trace-class,A(P−λ)−NA(P-\lambda)^{-N} can be expressed in the chosen local coordinates as the integral in Tr(A(P−λ)−N)\operatorname{Tr}(A(P-\lambda)^{-N}) of the fiber trace of the kernel diagonal value. Then the corollary follows directly from Theorem 1.3 by integration in xx. For the formula (1.42) we use the information leading to (1.36).∎xx
+
+Note in particular that we have obtained that depends only on c~0′′\tilde{c}^{\prime\prime}_{0} (not on the auxiliary operator AA) in the cases (1)–(4). See also Remark 1.8 further below.PP
+
+###### Remark 1.6
+
+Note that in all the cases (1)–(4) in Definition 1.1, is regular at ζ(A,P,s)\zeta(A,P,s), ands=0s=0
+
+ζ(A,P,0)=c0′′−Tr(AΠ0(P))=TRA−Tr(AΠ0(P)).\zeta(A,P,0)=c^{\prime\prime}_{0}-\operatorname{Tr}(A\Pi_{0}(P))=\operatorname{TR}A-\operatorname{Tr}(A\Pi_{0}(P)). | 1.43 
+
+Case (3) plays an important role in [O3]. The operators in case (4) do not in themselves form an algebra (neither do the operators in the cases (1) and (2)), but we think that the definition is of interest anyway. As examples of case (4) we mention eta functions on an even-dimensional manifold AA: Let XX be a selfadjoint first-order elliptic differential operator on DD, then the eta function XX is defined for η(D,s)\eta(D,s) large byRes\operatorname{Re}s
+
+η(D,s)=Tr(D|D|−s−1)=Tr(D(D2)−12(D2)−s2)=ζ(D|D|−1,D2,s2);\eta(D,s)=\operatorname{Tr}(D|D|^{-s-1})=\operatorname{Tr}(D(D^{2})^{-\frac{1}{2}}(D^{2})^{-\frac{s}{2}})=\zeta(D|D|^{-1},D^{2},\tfrac{s}{2}); 
+
+here (defined to vanish on the nullspace of D|D|−1D|D|^{-1}) is of order 0 and even-odd. For the meromorphic extension according to (1.2), the locally determined coefficients DD and cnc_{n} vanish due to parity, andc0′c^{\prime}_{0}, soDΠ0(D2)=0D\Pi_{0}(D^{2})=0
+
+η(D,0)=c0′′=TR(D|D|−1).\eta(D,0)=c^{\prime\prime}_{0}=\operatorname{TR}(D|D|^{-1}). | 1.44 
+
+It will now be shown that the expression defined in Definition 1.1 vanishes on commutators:TRA\operatorname{TR}A
+
+###### Theorem 1.7
+
+Let and AA be classical A′A^{\prime}do’s of orders ψ\psi resp. ν\nu, and let ν′∈ℝ\nu^{\prime}\in\mathbb{R} be a classical elliptic PPdo of even order ψ\psi such that the principal symbol has no eigenvalues on m>0m>0. Thenℝ−\mathbb{R}_{-}
+
+TR([A,A′])=0\operatorname{TR}([A,A^{\prime}])=0 | 1.45 
+
+holds in the following cases:
+
+###### Proof
+
+The case (1′) is an immediate consequence of the definition, since and the standard trace vanishes on commutators. For the other cases, we rewrite by use of suitable resolvent formulas and cyclic permutation, taking TR([A,A′])=Tr([A,A′])\operatorname{TR}([A,A^{\prime}])=\operatorname{Tr}([A,A^{\prime}]) even-even in case (3) and (4): In view of the identityPP
+
+∂λk(P−λ)−1=k!(P−λ)−k−1,\partial_{\lambda}^{k}(P-\lambda)^{-1}=k!(P-\lambda)^{-k-1}, | 1.46 
+
+we have that
+
+Tr([A,A′](P−λ)−N)\displaystyle\operatorname{Tr}\bigl([A,A^{\prime}](P-\lambda)^{-N}\bigr) | =1(N−1)!Tr(∂λN−1AA′(P−λ)−1−∂λN−1A(P−λ)−1A′)\displaystyle=\tfrac{1}{(N-1)!}\operatorname{Tr}\bigl(\partial_{\lambda}^{N-1}AA^{\prime}(P-\lambda)^{-1}-\partial_{\lambda}^{N-1}A(P-\lambda)^{-1}A^{\prime}\bigr) | 1.47 
+---|---|---
+=1(N−1)!Tr(A∂λN−1((P−λ)−1[P,A′](P−λ)−1))\displaystyle=\tfrac{1}{(N-1)!}\operatorname{Tr}\bigl(A\partial_{\lambda}^{N-1}((P-\lambda)^{-1}[P,A^{\prime}](P-\lambda)^{-1})\bigr) 
+=Tr(A∑0≤M<NcMN(P−λ)−1−M[P,A′](P−λ)−N+M).\displaystyle=\operatorname{Tr}\bigl(A\sum_{0\leq M<N}c_{MN}(P-\lambda)^{-1-M}[P,A^{\prime}](P-\lambda)^{-N+M}\bigr). 
+
+Let
+
+Q(μ)=A∑0≤M<NcMN(P+μm)−1−M[P,A′](P+μm)−N+M.Q(\mu)=A\sum_{0\leq M<N}c_{MN}(P+\mu^{m})^{-1-M}[P,A^{\prime}](P+\mu^{m})^{-N+M}. | 1.48 
+
+By the rules of calculus in [GS1], has symbol inQ(μ)Q(\mu)
+
+Sν+ν′−mN,0∩Sν+ν′+m,−m(N+1).S^{\nu+\nu^{\prime}-mN,0}\cap S^{\nu+\nu^{\prime}+m,-m(N+1)}. | 1.49 
+
+Here can be replaced by ν+ν′\nu+\nu^{\prime} if ν+ν′−1\nu+\nu^{\prime}-1 is scalar, but this is without importance for the special trace term we are investigating. Since PP actually only depends on QQ, the symbol expansion like that of λ=−μm\lambda=-\mu^{m} in (1.15) has only powers that are multiples of f′f^{\prime}. The important thing here is that the lowest mm-index, dd, is lower than that of d=−m(N+1)d=-m(N+1) itself. By [GS1, Th. 2.1], there is then a trace expansionA(P+μm)−NA(P+\mu^{m})^{-N}
+
+Tr([A,A′]CLOSE\displaystyle\operatorname{Tr}\bigl([A,A^{\prime}] | OPEN(P−λ)−N)=TrQ(μ)\displaystyle(P-\lambda)^{-N}\bigr)=\operatorname{Tr}Q(\mu) | 1.50 
+---|---|---
+∼∑j∈ℕb~j(−λ)ν+ν′+n−jm−N+∑k≥1(b~k′log(−λ)+b~k′′)(−λ)−k−N.\displaystyle\sim\sum_{j\in\mathbb{N}}\tilde{b}_{j}(-\lambda)^{\frac{\nu+\nu^{\prime}+n-j}{m}-N}+\sum_{k\geq 1}\bigl(\tilde{b}^{\prime}_{k}\log(-\lambda)+\tilde{b}^{\prime\prime}_{k}\bigr)(-\lambda)^{{-k}-N}. 
+
+When, there is no term of the formν+ν′∉ℤ\nu+\nu^{\prime}\notin\mathbb{Z}, so c(−λ)−Nc(-\lambda)^{-N} vanishes according to our definition. This takes care of the case (2′).TR([A,A′])\operatorname{TR}([A,A^{\prime}])
+
+In the cases (3′) and (4′), we note that whenand AA have the same alternating parity, then A′A^{\prime} and AA′AA^{\prime}are even-even, whereas when they have opposite parities, [A,A′][A,A^{\prime}] and AA′AA^{\prime}are even-odd. Then we can use the information from Theorem 1.3 that the terms in the series over [A,A′][A,A^{\prime}] vanish for jj even; this holds in particular for the constant term, where ν+ν′+n−j\nu+\nu^{\prime}+n-j. ∎j=ν+ν′+nj=\nu+\nu^{\prime}+n
+
+The result of Theorem 1.7 is essentially known from [KV] in the cases (1′)–(3′), but our proof is different; it will be generalized to log-polyhomogeneous operators in Section 3.
+
+We note in passing that the proof that in Definition 1.1 is independent of the choice ofTRA\operatorname{TR}A could also be based on resolvent rules instead of the painstaking analysis of its value: Since PP, we can write(P−λ)−1−(P′−λ)−1=(P−λ)−1(P′−P)(P′−λ)−1(P-\lambda)^{-1}-(P^{\prime}-\lambda)^{-1}=(P-\lambda)^{-1}(P^{\prime}-P)(P^{\prime}-\lambda)^{-1}
+
+Tr(ACLOSE\displaystyle\operatorname{Tr}\bigl(A | OPEN(P−λ)−N)−Tr(A(P′−λ)−N)\displaystyle(P-\lambda)^{-N}\bigr)-\operatorname{Tr}\bigl(A(P^{\prime}-\lambda)^{-N}\bigr) | 1.51 
+---|---|---
+=1(N−1)!Tr(A∂λN−1((P−λ)−1(P′−P)(P′−λ)−1)).\displaystyle=\tfrac{1}{(N-1)!}\operatorname{Tr}\bigl(A\partial_{\lambda}^{N-1}((P-\lambda)^{-1}(P^{\prime}-P)(P^{\prime}-\lambda)^{-1})\bigr). 
+
+This operator family has symbol in, hence has a trace expansion as in (1.50) with Sν−mN,0∩Sν+m,−m(N+1)S^{\nu-mN,0}\cap S^{\nu+m,-m(N+1)} replaced by ν+ν′\nu+\nu^{\prime}. From this, one can reason exactly as in the proof of Theorem 1.7.ν\nu
+
+###### Remark 1.8
+
+In the above considerations, we have kept the order of fixed, equal to an even number. One can in fact show trace expansions with a similar structure as in (1.1), (1.2) when the order of PP is an arbitrary PP, cf. Loya [Lo], Grubb and Hansen [GH], which could have been taken as the point of departure. On the other hand, when m∈ℝ+m\in\mathbb{R}_{+} is of an arbitrary order PP,m>0m>0 for ζ(A,P,s)=ζ(A,Pm′/m,s′)\zeta(A,P,s)=\zeta(A,P^{{m^{\prime}}/m},s^{\prime}), so by a scaling of the complex variable s′=sm/m′s^{\prime}=sm/{m^{\prime}} one can reduce to a situation where the order of ss is a given even number, at least for positive selfadjoint operators.PP
+
+## 2. A quasi-trace
+
+The functional does not extend to the general case TR\operatorname{TR} as a trace (cf. [KV], Lesch [L]). Yet it is still possible to make some further observations on the integer order case. Consider ν∈ℤ\nu\in\mathbb{Z} defined in (1.4). It coincides with C0(A,P)C_{0}(A,P) in the cases in Definition 1.1, but depends in general on TRA\operatorname{TR}A. However, PP has the independence of C0(A,P)C_{0}(A,P) and the commutator property in a weaker sense, namely:PP
+
+###### Proposition 2.1
+
+(i) Let be a classical AAdo of order ψ\psi, and let ν∈ℤ\nu\in\mathbb{Z} and PP be classical elliptic P′P^{\prime}do of positive orders ψ\psi and mm such that the principal symbols have no eigenvalues on m′m^{\prime}. Then ℝ−\mathbb{R}_{-} is locally determined. More precisely, it depends solely on the strictly homogeneous parts of the first C0(A,P)−C0(A,P′)C_{0}(A,P)-C_{0}(A,P^{\prime}) homogeneous terms in each of the symbols of ν+n+1\nu+n+1, AA and PP; it vanishes if P′P^{\prime}.ν<−n\nu<-n
+
+(ii) Let and AA be classical A′A^{\prime}do’s of order ψ\psi resp. ν\nu such that ν′\nu^{\prime}, and let ν+ν′∈ℤ\nu+\nu^{\prime}\in\mathbb{Z} be a classical elliptic PPdo of even order ψ\psi such that the principal symbol has no eigenvalues on m>0m>0. Then ℝ−\mathbb{R}_{-} is locally determined. More precisely it depends solely on the strictly homogeneous parts of the first C0([A,A′],P)C_{0}([A,A^{\prime}],P) homogeneous terms in each of the symbols of n+ν+ν′+1n+\nu+\nu^{\prime}+1, AA and A′A^{\prime}; it vanishes if PP.ν+ν′<−n\nu+\nu^{\prime}<-n
+
+###### Proof
+
+(i). By Remark 1.8, we may assume that and PP have the same even order P′P^{\prime}. Then the statement follows directly from Corollary 1.5 (i).mm
+
+(ii). As noted in the proof of Theorem 1.7, has an expansion (1.50). Since Tr([A,A′](P−λ)−N)\operatorname{Tr}([A,A^{\prime}](P-\lambda)^{-N}) is integer, and the sum over ν+ν′\nu+\nu^{\prime} begins with kk,k=1k=1
+
+C0([A,A′],P)=b~ν+ν′+n,C_{0}([A,A^{\prime}],P)=\tilde{b}_{\nu+\nu^{\prime}+n}, | 2.1 
+
+which is locally determined as stated. ∎
+
+Note that the expressions and C0(A,P)−C0(A,P′)C_{0}(A,P)-C_{0}(A,P^{\prime}) are pointwise locally determined, in the sense that they can be calculated as integrals in C0([A,A′])C_{0}([A,A^{\prime}]) of locally determined functions (in local coordinates).xx
+
+The proposition shows that is in general somewhat like a trace, just modulo local contributions. The values of C0(A,P)C_{0}(A,P) andC0([A,A′],P)C_{0}([A,A^{\prime}],P) can be described in terms of certain residues, as we shall recall in Proposition 3.1 below. However, for the sake of more general situations, we believe that it has an interest to introduce a notion of quasi-trace as follows:C0(A,P)−C0(A,P′)C_{0}(A,P)-C_{0}(A,P^{\prime})
+
+###### Definition 2.2
+
+Let be an XX-dimensional compact manifold without boundary, provided with a nn vector bundleC∞C^{\infty}, let EE run through an algebra of AAdo’s of orders ψ\psi on the sections of ν\nu, and let EE run through an auxiliary family of elliptic PPdo’s in ψ\psi without principal symbol eigenvalues on EE. Consider a functionℝ−\mathbb{R}_{-} such that for each f(A,P)f(A,P), it is a linear functional on thePP’s. We say that AA is a quasi-trace if (i) and (ii) hold:ff
+
+By the preceding results, is a quasi-trace in this sense. (In the formulation of (i) and (ii), when C0(A,P)C_{0}(A,P), the set of symbols of the first j≤0j\leq 0 degrees is understood to be empty. Thus since jj is linear in ff, the statement on the vanishing is a consequence of the preceding statement.)AA
+
+As shown in (i) of Theorem 1.3, moreover has a pointwise description, where it can be obtained, modulo local contributions, as an integral in C0(A,P)C_{0}(A,P)of the function xx, defined from the symbol∫@!@!@!−tra(x,ξ)dξ–{\int\!\!\!\!\!@!@!@!{-}}\operatorname{tr}a(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi of a(x,ξ)a(x,\xi) in the chosen local coordinates.AA
+
+Scott in [Sco] uses the name for a concept likeTRΔ\operatorname{TR}_{\Delta} withC0(A,P)C_{0}(A,P). We have recently been informed that the constant P=ΔP=\Delta(and its generalizations to C0(A,P)C_{0}(A,P)-calculi) plays an important role in the manuscript of Melrose and Nistor [MN] and subsequent works, where it is called a regularized trace, denoted bb orTr^(A)\widehat{\operatorname{Tr}}(A). It is taken up in a physics context under the name of a weighted trace TrP(A)\operatorname{Tr}_{P}(A) in Cardona, Ducourtioux, Magnot, Paycha [CDMP], [CDP].trP(A)\operatorname{tr}^{P}(A)
+
+The concept can also be useful when one has a vanishing property of the relevant local contributions, as e.g. in [G3]. A generalization to manifolds with boundary is worked out in Grubb and Schrohe [GSc].
+
+## 3. Higher Laurent coefficients of zeta functions, log-polyhomogeneous symbols
+
+Throughout the following, we make the extra assumption that is invertible. (This makes the statements simpler. In general, one can replace PP by PP, whereP+P0P+P_{0} is the operator with kernel P0P_{0}, where the K(P0,x,y)=∑1≤j≤dimkerPφj′(x)φj∗(y)K(P_{0},x,y)=\sum_{1\leq j\leq\dim\ker P}\varphi^{\prime}_{j}(x)\varphi^{*}_{j}(y) andφj′\varphi_{j}^{\prime} denote the zero eigensections of φj\varphi_{j} resp. P∗P^{*}, and correct for terms stemming from PP afterwards.) Then P0P_{0} has the Laurent expansion (1.5) at ζ(A,P,s)=Tr(AP−s)\zeta(A,P,s)=\operatorname{Tr}(AP^{-s}). The noncommutative residue s=0s=0and the quasi-traceres(A)=m⋅C−1(A,P)\operatorname{res}(A)=m\cdot C_{-1}(A,P) have been discussed above, but also the next coefficient C0(A,P)C_{0}(A,P) is of particular interest; in the case C1(A,P)C_{1}(A,P)it equals minus the so-called zeta-determinant of A=IA=I:PP
+
+logdetP=−∂sζ(I,P,0)=−C1(I,P).\log\det P=-\partial_{s}\zeta(I,P,0)=-C_{1}(I,P). | 3.1 
+
+Not only this coefficient, but the whole Laurent expansion (1.5) can be described by use of functional calculus combined with the work of Lesch [L], as we show in the following.
+
+According to Seeley [S], the complex powers of are defined byPP
+
+P−s\displaystyle P^{-s} | =i2π∫Cλ−s(P−λ)−1dλ,forRes>0,\displaystyle=\tfrac{i}{2\pi}\int_{{C}}\lambda^{-s}(P-\lambda)^{-1}\,d\lambda,\text{ for $\operatorname{Re}s>0$
+}, | 3.2 
+---|---|---
+P−s\displaystyle P^{-s} | =P−s−NPN=PNP−s−Nin general;\displaystyle=P^{-s-N}P^{N}=P^{N}P^{-s-N}\text{ in general}; 
+
+here is a curve in CCencircling the spectrum of ℂ∖ℝ¯−\mathbb{C}\setminus\overline{\mathbb{R}}_{-} in the positive direction (replace intervals of PP by small half-circles around the finitely many possible eigenvalues of ℝ¯−\overline{\mathbb{R}}_{-} on PP). One defines ℝ−\mathbb{R}_{-} (cf. e.g. [KV], [O1]); thenlogP=−∂sP−s|s=0\log P=-\partial_{s}P^{-s}|_{s=0}
+
+∂sP−s\displaystyle\partial_{s}P^{-s} | =−logPP−s,where\displaystyle=-\log P\,P^{-s},\text{ where} | 3.3 
+---|---|---
+logPP−s\displaystyle\log P\,P^{-s} | =i2π∫Clogλλ−s(P−λ)−1dλwhenRes>0.\displaystyle=\tfrac{i}{2\pi}\int_{{C}}\log\lambda\,\lambda^{-s}(P-\lambda)^{-1}\,d\lambda\text{ when $\operatorname{Re}s>0$
+}. 
+
+It is known (cf. e.g. [O1]) that is a logP\log Pdo such that in local coordinates,ψ\psi
+
+symbol oflogP∼mlog[ξ]I+∑j≥0b−j(x,ξ)\text{symbol of }\log P\sim m\log[\xi]I+\sum_{j\geq 0}b_{-j}(x,\xi) | 3.4 
+
+with homogeneous in b−jb_{-j} of degree ξ\xi,−j-j smooth positive and equal to [ξ][\xi] for |ξ||\xi|. These homogeneous terms are derived straightforwardly from the homogeneous terms in the symbol of |ξ|≥1|\xi|\geq 1; in particular, (P−λ)−1(P-\lambda)^{-1}is determined from the first b−jb_{-j} homogeneous terms in the symbol of j+1j+1.PP
+
+We remark, for the convenience of the reader, that one can show the following precisions of the quasi-trace property of, using C0(A,P)C_{0}(A,P) and the operator family logP\log P:P−sP^{-s}
+
+###### Proposition 3.1
+
+Let, AA, A′A^{\prime} and PP be as in Proposition 2.1. ThenP′P^{\prime}
+
+C0(A,P)−C0(A,P′)=1mres(A(−logP+logP′)),C0([A,A′],P)=1mres(A[logP,A′]).\begin{gathered}C_{0}(A,P)-C_{0}(A,P^{\prime})=\tfrac{1}{m}\operatorname{res}(A(-\log P+\log P^{\prime})),\\
+C_{0}([A,A^{\prime}],P)=\tfrac{1}{m}\operatorname{res}(A[\log P,A^{\prime}]).\end{gathered} | 3.53.6 
+
+###### Proof
+
+(3.5) is shown in [O1] and [KV]. (3.6) is shown in [MN], where its generalizations to the-calculus play an important role; related formulas have appeared in the physics litterature (see e.g. Mickelsson [M], Cederwall, Ferretti, Nilsson and Westerberg [CFNW]). The following method of proof is deduced from [MN].bb
+
+We first observe the following consequence of [Gu] and [W] (in particular [Gu, Th. 7.1]): Let be a holomorphic family of classical B(s)B(s)do’s of order ψ\psi (for some real α−s\alpha-s), with α\alpha. Then the meromorphic extension of B(0)=0B(0)=0 (holomorphic forTrB(s)\operatorname{Tr}B(s), the extension again denoted Res>n+α\operatorname{Re}s>n+\alpha), satisfies:TrB(s)\operatorname{Tr}B(s)
+
+lims→0TrB(s)=resB′(0).\lim_{s\to 0}\operatorname{Tr}B(s)=\operatorname{res}B^{\prime}(0). | 3.7 
+
+For, setting, we have thatC(s)=1s(B(s)−B(0))=1sB(s)C(s)=\frac{1}{s}(B(s)-B(0))=\frac{1}{s}B(s) is a holomorphic family of classical C(s)C(s)do’s of orderψ\psi with α−s\alpha-s. Moreover, C(0)=B′(0)C(0)=B^{\prime}(0) is another holomorphic family of classical Q(s)=1s(C(s)−C(0)P1−s)Q(s)=\frac{1}{s}(C(s)-C(0)P_{1}^{-s})do’s of order ψ\psi, when α−s\alpha-s is taken as an elliptic positive selfadjoint P1P_{1}do of order 1. Thenψ\psi
+
+B(s)=sC(s)=sC(0)P1−s+s(C(s)−C(0)P1−s)=sB′(0)P1−s+s2Q(s).B(s)=sC(s)=sC(0)P_{1}^{-s}+s(C(s)-C(0)P_{1}^{-s})=sB^{\prime}(0)P_{1}^{-s}+s^{2}Q(s). 
+
+Now
+
+lims→0Tr(sB′(0)P1−s)=resB′(0),\lim_{s\to 0}\operatorname{Tr}(sB^{\prime}(0)P_{1}^{-s})=\operatorname{res}B^{\prime}(0), 
+
+by definition of the noncommutative residue, and
+
+lims→0Tr(s2Q(s))=0,\lim_{s\to 0}\operatorname{Tr}(s^{2}Q(s))=0, | 3.8 
+
+by [Gu, Th. 7.1] (assuring that extends meromorphically to TrQ(s)\operatorname{Tr}Q(s), with simple poles lying in ℂ\mathbb{C}). This shows (3.7).α−ℤ\alpha-\mathbb{Z}
+
+Applying (3.7) to the holomorphic family of order A(P−s/m−(P′)−s/m)A(P^{-s/m}-(P^{\prime})^{-s/m}), we see thatν−s\nu-s
+
+lims→0Tr(A(P−s−(P′)−s))\displaystyle\lim_{s\to 0}\operatorname{Tr}(A(P^{-s}-(P^{\prime})^{-s})) | =lims→0Tr(A(P−s/m−(P′)−s/m))\displaystyle=\lim_{s\to 0}\operatorname{Tr}(A(P^{-s/m}-(P^{\prime})^{-s/m})) 
+---|---
+=1mres(A(−logP+logP′)),\displaystyle=\tfrac{1}{m}\operatorname{res}(A(-\log P+\log P^{\prime})), 
+
+since (note that ∂sP−s/m=−1mlogPP−s/m\partial_{s}P^{-s/m}=-\frac{1}{m}\log P\,P^{-s/m} is classical in view of (3.4)); this shows (3.5).−logP+logP′-\log P+\log P^{\prime}
+
+For (3.6), we apply (3.7) to the family of orderA[A′,P−s/m]A[A^{\prime},P^{-s/m}]. Noting that for ν+ν′−s\nu+\nu^{\prime}-s large,Res\operatorname{Re}s
+
+Tr([A,A′]P−s)=Tr(AA′P−s)−Tr(AP−sA′)=Tr(A[A′,P−s])\operatorname{Tr}([A,A^{\prime}]P^{-s})=\operatorname{Tr}(AA^{\prime}P^{-s})-\operatorname{Tr}(AP^{-s}A^{\prime})=\operatorname{Tr}(A[A^{\prime},P^{-s}]) 
+
+by cyclic permutation, we find:
+
+lims→0Tr([A,A′]P−s)=lims→0Tr(A[A′,P−s/m])=1mres(A[logP,A′]),\lim_{s\to 0}\operatorname{Tr}([A,A^{\prime}]P^{-s})=\lim_{s\to 0}\operatorname{Tr}(A[A^{\prime},P^{-s/m}])=\tfrac{1}{m}\operatorname{res}(A[\log P,A^{\prime}]), 
+
+which shows (3.6). Here is classical in view of (3.4).∎[logP,A′][\log P,A^{\prime}]
+
+The meromorphic extension for a holomorphic family TrA(s)\operatorname{Tr}A(s)of order A(s)A(s) coincides with α−s\alpha-s when TRA(s)\operatorname{TR}A(s), by [KV, Th. 3.1].α−s∉ℤ\alpha-s\notin\mathbb{Z}
+
+[Added November 2005: A proof of Proposition 3.1 based directly on resolvent information is given in [G4].]
+
+Consider now the higher derivatives of:P−sP^{-s}
+
+∂s2P−s\displaystyle\partial_{s}^{2}P^{-s} | =(−logP)2P−s,\displaystyle=(-\log P)^{2}P^{-s}, | 3.9 
+---|---|---
+∂slP−s\displaystyle\partial_{s}^{l}P^{-s} | =(−logP)lP−s,\displaystyle=(-\log P)^{l}P^{-s}, 
+
+which we also write as
+
+∂slP−s=Pl(P)P−s,withPl(P)=(−logP)l.\partial_{s}^{l}P^{-s}={P}_{l}(P)P^{-s},\text{ with }{P}_{l}(P)=(-\log P)^{l}. | 3.10 
+
+The value of at ∂slζ(I,P,s)\partial_{s}^{l}\zeta(I,P,s), more generally the constant term ofs=0s=0 at ∂slζ(A,P,s)\partial_{s}^{l}\zeta(A,P,s), will be determined as a specific coefficient in expansions ofs=0s=0 and Γ(s)Tr(APl(P)P−s)\Gamma(s)\operatorname{Tr}(A{P}_{l}(P)P^{-s}). A framework for such calculations has been set up in Lesch [L]. With the notation for symbol spaces introduced there, Tr(APl(P)(P−λ)−N)\operatorname{Tr}(A{P}_{l}(P)(P-\lambda)^{-N}) is log-polyhomogeneous belonging to APl(P)A{P}_{l}(P). In local coordinates, the symbols of such operators have the structureCLν,l(X)\operatorname{CL}^{\nu,l}(X)
+
+b(x,ξ)∼∑j∈ℕ∑σ=0lbν−j,σ(x,ξ)logσ[ξ],b(x,\xi)\sim\sum_{j\in\mathbb{N}}\sum_{\sigma=0}^{l}b_{\nu-j,\sigma}(x,\xi)\log^{\sigma}[\xi], | 3.11 
+
+with homogeneous in bν−j,σb_{\nu-j,\sigma} of degree ξ\xifor ν−j\nu-j. This defines the symbol space |ξ|≥1|\xi|\geq 1. The symbols (and the operators they define) are said to be of order CSν,l\operatorname{CS}^{\nu,l}; the degree of a term is the number ν\nu. Log-polyhomogeneous operators were studied earlier by Schrohe [Sc].ν−j\nu-j
+
+A generalization of [GS1, Th. 2.1] to such operators is shown in [L, Th. 3.7], which we develop further in Theorem 3.2 below. For this, we recall from [L] that the definition of the finite part integral in (1.18), (1.35) can be extended to the symbols∫@!@!@!−f(x,ξ)dξ–{\int\!\!\!\!\!@!@!@!{-}}f(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi: Omit f(x,ξ)∈CSν,l(ℝn)f(x,\xi)\in\operatorname{CS}^{\nu,l}(\mathbb{R}^{n})-dependence. When xx, ν<−n\nu<-n is the usual integral ∫@!@!@!−f(ξ)dξ–{\int\!\!\!\!\!@!@!@!{-}}f(\xi)\,d\!{}^{\!\text{\rm--}}\!\xi; more generally it is equal to the constant term∫ℝnf(ξ)dξ–\int_{\mathbb{R}^{n}}f(\xi)\,d\!{}^{\!\text{\rm--}}\!\xi in the asymptotic expansion of p0(0)p_{0}(0) in powers and log-powers of ∫|ξ|≤μf(ξ)dξ–\int_{|\xi|\leq\mu}f(\xi)\,d\!{}^{\!\text{\rm--}}\!\xi:μ\mu
+
+∫@!@!@!@!−f(ξ)dξ–\displaystyle{\int\!\!\!\!\!\!@!@!@!@!{-}}f(\xi)\,d\!{}^{\!\text{\rm--}}\!\xi | =p0(0),when\displaystyle=p_{0}(0),\text{ when} | 3.12 
+---|---|---
+∫|ξ|≤μf(ξ)dξ–\displaystyle\int_{|\xi|\leq\mu}f(\xi)\,d\!{}^{\!\text{\rm--}}\!\xi | ∼∑j∈ℕ,j≠ν+npν+n−j(logμ)μν+n−j+p0(logμ)μ0,forμ→∞.\displaystyle\sim\sum_{j\in\mathbb{N},j\neq\nu+n}p_{\nu+n-j}(\log\mu)\mu^{\nu+n-j}+p_{0}(\log\mu)\mu^{0},\text{ for
+}\mu\to\infty. 
+
+Here the are polynomials of degree pν+n−jp_{\nu+n-j} when ≤l\leq l, degree ν+n−j≠0\nu+n-j\neq 0 when ≤l+1\leq l+1. An explicit formula for ν+n−j=0\nu+n-j=0 defined from a log-homogeneous term is worked out in [L, (5.12)]: When p0(0)p_{0}(0)with f(x,ξ)=fν(x,ξ)logσ[ξ]f(x,\xi)=f_{\nu}(x,\xi)\log^{\sigma}[\xi] homogeneous of degree fνf_{\nu} in ν\nu for ξ\xi, then|ξ|≥1|\xi|\geq 1
+
+∫@!@!@!@!−f(x,ξ)dξ–=∫|ξ|≤1f(x,ξ)dξ–+(1−δν+n,0)(−1)σ+1σ!(ν+n)σ+1∫|ξ|=1fν(x,ξ)dS–(ξ).{\int\!\!\!\!\!\!@!@!@!@!{-}}f(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi=\int_{|\xi|\leq 1}f(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+\tfrac{(1-\delta_{\nu+n,0})(-1)^{\sigma+1}\sigma!}{(\nu+n)^{\sigma+1}}\int_{|\xi|=1}f_{\nu}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi). | 3.13 
+
+It follows that when is as in (3.11), thenbb
+
+∫@!@!@!@!−b(x,ξ)dξ–=∑j≤ν+n∑0≤σ≤l(∫|ξ|≤1bν−j,σ(x,ξ)dξ–+(1−δν+n,j)(−1)σ+1σ!(ν+n−j)σ+1∫|ξ|=1bν−j,σ(x,ξ)dS–(ξ))+∫ℝn(b(x,ξ)−∑j≤ν+n∑0≤σ≤lbν−j,σ(x,ξ)logσ[ξ])d–ξ.\multline{\int\!\!\!\!\!\!@!@!@!@!{-}}b(x,\xi)d\!{}^{\!\text{\rm--}}\!\xi\\
+=\sum_{j\leq\nu+n}\sum_{0\leq\sigma\leq l}\bigl(\int_{|\xi|\leq 1}b_{\nu-j,\sigma}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+\tfrac{(1-\delta_{\nu+n,j})(-1)^{\sigma+1}\sigma!}{(\nu+n-j)^{\sigma+1}}\int_{|\xi|=1}b_{\nu-j,\sigma}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi)\bigr)\\
++\int_{\mathbb{R}^{n}}\bigl(b(x,\xi)-\sum_{j\leq\nu+n}\sum_{0\leq\sigma\leq l}b_{\nu-j,\sigma}(x,\xi)\log^{\sigma}[\xi]\bigr)\,d\!{}^{\!\text{\rm--}}\!\xi.\endmultline{\int\!\!\!\!\!\!@!@!@!@!{-}}b(x,\xi)d\!{}^{\!\text{\rm--}}\!\xi\\
+=\sum_{j\leq\nu+n}\sum_{0\leq\sigma\leq l}\bigl(\int_{|\xi|\leq 1}b_{\nu-j,\sigma}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+\tfrac{(1-\delta_{\nu+n,j})(-1)^{\sigma+1}\sigma!}{(\nu+n-j)^{\sigma+1}}\int_{|\xi|=1}b_{\nu-j,\sigma}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi)\bigr)\\
++\int_{\mathbb{R}^{n}}\bigl(b(x,\xi)-\sum_{j\leq\nu+n}\sum_{0\leq\sigma\leq l}b_{\nu-j,\sigma}(x,\xi)\log^{\sigma}[\xi]\bigr)\,d\!{}^{\!\text{\rm--}}\!\xi. | 3.14 
+
+As in (1.18), the sum over can be replaced by the sum over j≤ν+nj\leq\nu+n for any choice of j≤Jj\leq J.J≥ν+nJ\geq\nu+n
+
+The definition of having even-even resp. even-odd alternating parity is extended to symbols (3.11) to mean that
+
+even-even:bν−l,σ(x,−ξ)\displaystyle\text{even-even: }b_{\nu-l,\sigma}(x,-\xi) | =(−1)ν−lbν−l,σ(x,ξ)for|ξ|≥1,resp.\displaystyle=(-1)^{\nu-l}b_{\nu-l,\sigma}(x,\xi)\text{ for }|\xi|\geq 1,\text{ resp.} | 3.15 
+---|---|---
+even-odd:bν−l,σ(x,−ξ)\displaystyle\text{even-odd: }b_{\nu-l,\sigma}(x,-\xi) | =(−1)ν−l−1bν−l,σ(x,ξ)for|ξ|≥1,\displaystyle=(-1)^{\nu-l-1}b_{\nu-l,\sigma}(x,\xi)\text{ for }|\xi|\geq 1, 
+
+with similar properties of the derivatives. Then we can consider the four cases in Definition 1.1 for log-polyhomogeneous operators.BB
+
+###### Theorem 3.2
+
+(i) Let and ν∈ℝ\nu\in\mathbb{R}, letl∈ℕl\in\mathbb{N} be log-polyhomogeneous inBB with symbol (3.11) on CLν,l\operatorname{CL}^{\nu,l}. Let ℝn\mathbb{R}^{n} be a classicalPPdo, uniformly elliptic of integer order ψ\psi on m>0m>0 and with no principal symbol eigenvalues in a sector around ℝn\mathbb{R}^{n}. Let ℝ−\mathbb{R}_{-}. There is an asymptotic expansion of the kernel of N>(ν+n)/mN>(\nu+n)/m at B(P−λ)−NB(P-\lambda)^{-N}:x=yx=y
+
+K(B(P−λ)−N,x,x)∼∑j=0∞∑σ=0l+1c~j,σ(x)(−λ)ν+n−jm−Nlogσ(−λ)+∑k=0∞c~k′′(x)(−λ)−k−N;K(B(P-\lambda)^{-N},x,x)\sim\sum_{j=0}^{\infty}\sum_{\sigma=0}^{l+1}\tilde{c}_{j,\sigma}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=0}^{\infty}\tilde{c}^{\prime\prime}_{k}(x)(-\lambda)^{-k-N}; | 3.16 
+
+here unless c~j,l+1(x)=0\tilde{c}_{j,l+1}(x)=0. The coefficients j−ν−nm∈ℕ\frac{j-\nu-n}{m}\in\mathbb{N}depend on the homogeneous or log-homogeneous symbols of the first c~j,σ(x)\tilde{c}_{j,\sigma}(x) degrees in j+1j+1 and BB (are local in this sense). ThePP depend on the full structure (are global). In particular, when we define c~k′′\tilde{c}^{\prime\prime}_{k} if c~ν+n,0(x)=0\tilde{c}_{\nu+n,0}(x)=0 or ν<−n\nu<-n,ν∈ℝ∖ℤ\nu\in\mathbb{R}\setminus\mathbb{Z}
+
+c~ν+n,0(x)+c~0′′(x)=∫@!@!@!@!−b(x,ξ)dξ–+local terms.\tilde{c}_{\nu+n,0}(x)+\tilde{c}^{\prime\prime}_{0}(x)={\int\!\!\!\!\!\!@!@!@!@!{-}}b(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi+\text{ local terms}. | 3.17 
+
+(ii) It follows that in the comparison of the coefficients for two choices of auxiliary operator and PP, P′P^{\prime} is local (in the above sense).c~0′′(B,P,x)−c~0′′(B,P′,x)\tilde{c}^{\prime\prime}_{0}(B,P,x)-\tilde{c}^{\prime\prime}_{0}(B,P^{\prime},x)
+
+(iii) If, moreover, and BB satisfy (3) or (4) of Definition 1.1 (in particular, PP is even), then the expansion (3.16) reduces to the formmm
+
+K(B(P−λ)−N,x,x)∼∑j∈ℕ,j−n−νodd∑σ=0lc~j,σ(x)(−λ)ν+n−jm−Nlogσ(−λ)+∑k=0∞c~k′′(x)(−λ)−k−N;\multline K(B(P-\lambda)^{-N},x,x)\\
+\sim\sum_{j\in\mathbb{N},j-n-\nu\,\text{\rm odd\;}}\sum_{\sigma=0}^{l}\tilde{c}_{j,\sigma}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=0}^{\infty}\tilde{c}^{\prime\prime}_{k}(x)(-\lambda)^{-k-N};\endmultline K(B(P-\lambda)^{-N},x,x)\\
+\sim\sum_{j\in\mathbb{N},j-n-\nu\,\text{\rm odd\;}}\sum_{\sigma=0}^{l}\tilde{c}_{j,\sigma}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=0}^{\infty}\tilde{c}^{\prime\prime}_{k}(x)(-\lambda)^{-k-N}; | 3.18 
+
+(iv) In each of the cases (1)–(4) of Definition 1.1, the vanish andc~ν+n,σ(x)\tilde{c}_{\nu+n,\sigma}(x)
+
+c~0′′(x)=∫@!@!@!@!−b(x,ξ)dξ–.\tilde{c}_{0}^{\prime\prime}(x)={\int\!\!\!\!\!\!@!@!@!@!{-}}b(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi. | 3.19 
+
+(v) If the symbol of is given in BB-form (x,y)(x,y), the formulas hold withb(x,y,ξ)b(x,y,\xi) replaced by b(x,ξ)b(x,\xi).b(x,x,ξ)b(x,x,\xi)
+
+###### Proof
+
+The proof of [L, Th. 3.7] is in fact modeled very closely after the proof of [GS1, Th. 2.1], which we recalled to a large extent in the proof of Theorem 1.3 above. Let
+
+Q(μ)=B(P−λ)−N,with−λ=μm.Q(\mu)=B(P-\lambda)^{-N},\text{ with }-\lambda=\mu^{m}. | 3.20 
+
+The symbol is now the composite of a log-polyhomogeneous symbol inq(x,ξ,μ)q(x,\xi,\mu) and a weakly polyhomogeneous symbol inCSν,l\operatorname{CS}^{\nu,l}. Here, since S−mN,0∩S0,−mNS^{-mN,0}\cap S^{0,-mN} for any CSν,l⊂Sν+ε\operatorname{CS}^{\nu,l}\subset S^{\nu+\varepsilon},ε>0\varepsilon>0
+
+q(x,ξ,μ)∈Sν+ε−mN,0∩Sν+ε,−mNq(x,\xi,\mu)\in S^{\nu+\varepsilon-mN,0}\cap S^{\nu+\varepsilon,-mN} | 3.21 
+
+(defined also for-symbols without requirements of polyhomogeneity). Now there are expansionsS1,0S_{1,0}
+
+q(x,ξ,μ)=μ−mN∑0≤l′<Lq(l′)(x,ξ)μ−ml′+O(⟨ξ⟩ν+ε+mLμ−m(N+L)),q(x,\xi,\mu)=\mu^{-mN}\sum_{0\leq l^{\prime}<L}q^{(l^{\prime})}(x,\xi)\mu^{-ml^{\prime}}+O(\langle{\xi}\rangle^{\nu+\varepsilon+mL}\mu^{-m(N+L)}), | 3.22 
+
+for all, with coefficient symbols LLlog-polyhomogeneous inq(l′)(x,ξ)q^{(l^{\prime})}(x,\xi). One analyzes the kernel defined fromCSν+ml′,l\operatorname{CS}^{\nu+ml^{\prime},l} by (1.24), by splitting the contribution from each log-homogeneous term into three pieces as in (1.25). The integral over qq contributes to the {|ξ|≥μ}\{|\xi|\geq\mu\}-terms. For the integral over c~j,σ\tilde{c}_{j,\sigma} one uses (3.22) and gets contributions to the {|ξ|≤1}\{|\xi|\leq 1\}-terms. For the integral over c~k′′\tilde{c}^{\prime\prime}_{k} one likewise uses the expansion (3.22) for each log-homogeneous term in the symbol; each expansion term gives a contribution{1≤|ξ|≤μ}\{1\leq|\xi|\leq\mu\}
+
+μ−m(N+l′)∫1≤|ξ|≤μqν−j+ml′,σ(l′)(x,ξ)logσ|ξ|dξ–\displaystyle\mu^{-m(N+l^{\prime})}\int_{1\leq|\xi|\leq\mu}q^{(l^{\prime})}_{\nu-j+ml^{\prime},\sigma}(x,\xi)\log^{\sigma}|\xi|\,d\!{}^{\!\text{\rm--}}\!\xi | 3.23 
+---|---
+=μ−m(N+l′)∫1μrν−j+ml′+n−1logσrdr∫|ξ|=1qν−j+ml′,σ(l′)(x,ξ)dS–(ξ)\displaystyle=\mu^{-m(N+l^{\prime})}\int_{1}^{\mu}r^{\nu-j+ml^{\prime}+n-1}\log^{\sigma}r\,dr\int_{|\xi|=1}q_{\nu-j+ml^{\prime},\sigma}^{(l^{\prime})}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi) 
+={∑σ′=0σcj,l′,σ′μν−j−mN+nlogσ′μ+cj,l′′′μ−m(N+l′)ifν−j+ml′+n≠0,cj,l′′μ−m(N+l′)logσ+1μifν−j+ml′+n=0.\displaystyle=\begin{cases}\sum_{\sigma^{\prime}=0}^{\sigma}c_{j,l^{\prime},\sigma^{\prime}}\mu^{\nu-j-mN+n}\log^{\sigma^{\prime}}\mu+c^{\prime\prime}_{j,l^{\prime}}\mu^{-m(N+l^{\prime})}&\text{ if
+}\nu-j+ml^{\prime}+n\neq 0,\\
+c^{\prime}_{j,l^{\prime}}\mu^{-m(N+l^{\prime})}\log^{\sigma+1}\mu&\text{ if }\nu-j+ml^{\prime}+n=0.\end{cases} 
+
+The coefficients and cj,l′,σ′c_{j,l^{\prime},\sigma^{\prime}} contribute to thecj,l′′c^{\prime}_{j,l^{\prime}}-terms, whereas the coefficient c~j,⋅\tilde{c}_{j,\cdot}contributes to the cj,l′′′c^{\prime\prime}_{j,l^{\prime}}-term. They are proportional to c~l′′′\tilde{c}^{\prime\prime}_{l^{\prime}}by universal factors; the value of ∫|ξ|=1qν−j+ml′,σ(l′)dS–\int_{|\xi|=1}q_{\nu-j+ml^{\prime},\sigma}^{(l^{\prime})}\,d\!{}^{\!\text{\rm--}}\!S iscj,l′′′c^{\prime\prime}_{j,l^{\prime}}
+
+cj,l′′′(x)=(−1)σ+1σ!(ν−j+ml′+n)σ+1∫|ξ|=1qν−j+ml′,σ(l′)(x,ξ)dS–(ξ),c^{\prime\prime}_{j,l^{\prime}}(x)=\frac{(-1)^{\sigma+1}\sigma!}{(\nu-j+ml^{\prime}+n)^{\sigma+1}}\int_{|\xi|=1}q_{\nu-j+ml^{\prime},\sigma}^{(l^{\prime})}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!S(\xi), | 3.24 
+
+cf. [L, (5.12)]. (This term was left out in [L, (3.38)]; the connection betweenand c~0′′\tilde{c}^{\prime\prime}_{0}was made only towards the end of the paper.) Remainders are treated essentially as in [GS1], as recalled above in Theorem 1.3; this shows (3.16).∫@!@!@!−b{\int\!\!\!\!\!@!@!@!{-}}b
+
+In the cases (3) and (4) as in Definition 1.1, the terms in the sum over vanish for jj even, since they are obtained by integration in j−n−νj-n-\nu of odd functions (like in Theorem 1.3); this shows (iii).ξ\xi
+
+The analysis leading to (3.17) is practically the same as in the proof of (1.17) in Theorem 1.3, only with replaced by aa; bb is unchanged. It is seen again that all parts of PP except (P+μm)−N(P+\mu^{m})^{-N} gives series with a locally determined constant term, (1.30) being replaced byOP((pm(y,μ)+μm)−N)\operatorname{OP}((p_{m}(y,\mu)+\mu^{m})^{-N})
+
+K(x,x,μ)∼∑j=0∞∑σ=0l+1d~j,σ(x)(−λ)ν+n−jm−Nlogσ(−λ)+∑k=1∞d~k′′(x)(−λ)−k−N.K(x,x,\mu)\sim\sum_{j=0}^{\infty}\sum_{\sigma=0}^{l+1}\tilde{d}_{j,\sigma}(x)(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=1}^{\infty}\tilde{d}^{\prime\prime}_{k}(x)(-\lambda)^{-k-N}. | 3.25 
+
+The considerations on the integral carry over vebatim from the considerations on ∫|ξ|≤μb(x,ξ)(pm(x,ξ)+μm)−Ndξ–\int_{|\xi|\leq\mu}b(x,\xi)(p_{m}(x,\xi)+\mu^{m})^{-N}\,d\!{}^{\!\text{\rm--}}\!\xi in Theorem 1.3.∫|ξ|≤μa(x,ξ)(pm(x,ξ)+μm)−Ndξ–\int_{|\xi|\leq\mu}a(x,\xi)(p_{m}(x,\xi)+\mu^{m})^{-N}\,d\!{}^{\!\text{\rm--}}\!\xi
+
+This shows (3.17), and (ii) is an immediate consequence since the are local and the symbol integrals cancel out. Moreover, (iv) is seen by observing that the local contributions (from integrals over c~ν+n,0\tilde{c}_{\nu+n,0} and from the sum over |ξ|≥μ|\xi|\geq\mu in the various series of the form (3.25) that arise in the analysis) vanish in the cases (1)–(4) of Definition 1.1.jj
+
+Finally, (v) is included as in Remark 1.4. ∎
+
+It is known from [L] in the cases (1) and (2) for log-polyhomogeneous operators that the density or ∫@!@!@!−b(x,ξ)dξ–|𝑑x|{\int\!\!\!\!\!@!@!@!{-}}b(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\,|dx| has an invariant meaning, and the argument carries over to log-polyhomogeneous operators in the parity cases (3) and (4), in the same way as mentioned after Theorem 1.3. So, in the cases (1)–(4), when ∫@!@!@!−b(x,x,ξ)dξ–|𝑑x|{\int\!\!\!\!\!@!@!@!{-}}b(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\,|dx| is given on BB, it defines a densityXXdescribed in local coordinates byωTR(B)\omega_{\operatorname{TR}}(B)
+
+ωTR(B)=∫@!@!@!@!−B(x,ξ)dξ–|dx|resp.ωTR(B)=∫@!@!@!@!−b(x,x,ξ)dξ–|dx|,\omega_{\operatorname{TR}}(B)={\int\!\!\!\!\!\!@!@!@!@!{-}}B(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi|dx|\;\text{
+resp. }\;\omega_{\operatorname{TR}}(B)={\int\!\!\!\!\!\!@!@!@!@!{-}}b(x,x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\,|dx|, | 3.26 
+
+when has symbol in BB-form xx, resp. in b(x,ξ)b(x,\xi)-form(x,y)(x,y).b(x,y,ξ)b(x,y,\xi)
+
+The inclusion of symbols in-form allows us in particular to observe that when (x,y)(x,y) is as in one of the cases (1)–(4), with B1B2B_{1}B_{2} and B1=OP(b1(x,ξ))B_{1}=\operatorname{OP}(b_{1}(x,\xi)) in a local coordinate system, thenB2=OP(b2(y,ξ))B_{2}=\operatorname{OP}(b_{2}(y,\xi))
+
+ωTR(B1B2)=∫@!@!@!@!−b1(x,ξ)b2(x,ξ)dξ–|𝑑x|.\omega_{\operatorname{TR}}(B_{1}B_{2})={\int\!\!\!\!\!\!@!@!@!@!{-}}b_{1}(x,\xi)b_{2}(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi\,|dx|. | 3.27 
+
+We have as usual a corollary on the manifold situation, when is decomposed as in (1.13) and the pieces are carried over to local coordinates in BB as explained there.ℝn\mathbb{R}^{n}
+
+###### Corollary 3.3
+
+Consider a log-polyhomogeneous operatoron the manifold BB, together with XX as in Proposition 2.1, with PP. Then there is an asymptotic expansion of the trace:N>(ν+n)/mN>(\nu+n)/m
+
+Tr(B(P−λ)−N)∼∑j∈ℕ∑σ=0l+1c~j,σ(−λ)ν+n−jm−Nlogσ(−λ)+∑k=0∞c~k′′(−λ)−k−N.\operatorname{Tr}(B(P-\lambda)^{-N})\sim\sum_{j\in\mathbb{N}}\sum_{\sigma=0}^{l+1}\tilde{c}_{j,\sigma}(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=0}^{\infty}\tilde{c}^{\prime\prime}_{k}(-\lambda)^{-k-N}. | 3.28 
+
+Here, when we define if c~ν+n,0=0\tilde{c}_{\nu+n,0}=0 or ν<−n\nu<-n, and consider the operators localized to ν∈ℝ∖ℤ\nu\in\mathbb{R}\setminus\mathbb{Z}as explained before Theorem 1.3, thenℝn\mathbb{R}^{n}
+
+c~ν+n,0+c~0′′=∫ℝn∫@!@!@!@!−trb(x,ξ)dξ–𝑑x+local terms;\tilde{c}_{\nu+n,0}+\tilde{c}^{\prime\prime}_{0}=\int_{\mathbb{R}^{n}}{\int\!\!\!\!\!\!@!@!@!@!{-}}\operatorname{tr}b(x,\xi)\,d\!{}^{\!\text{\rm--}}\!\xi dx+\text{ local terms}; | 3.29 
+
+where is the symbol of b(x,ξ)b(x,\xi); the local terms depend only on the strictly homogeneous terms in the symbols of BB and BB for PP. (If the symbol j≤n+[ν]j\leq n+[\nu] is in bb-form, the formula holds with (x,y)(x,y) instead.)b(x,x,ξ)b(x,x,\xi)
+
+(ii) It follows that in the comparison of the coefficients for two choices of auxiliary operator and PP, P′P^{\prime} is local.c~ν+n,0(B,P)+c~0′′(B,P)−(c~ν+n,0(B,P′)+c~0′′(B,P′))\tilde{c}_{\nu+n,0}(B,P)+\tilde{c}^{\prime\prime}_{0}(B,P)-(\tilde{c}_{\nu+n,0}(B,P^{\prime})+\tilde{c}^{\prime\prime}_{0}(B,P^{\prime}))
+
+(iii) If, moreover, and BB satisfy (3) or (4) of Definition 1.1, then the expansion reduces to the formPP
+
+Tr(B(P−λ)−N)∼∑j∈ℕ,j−n−νodd∑σ=0lc~j,σ(−λ)ν+n−jm−Nlogσ(−λ)+∑k=0∞c~k′′(−λ)−k−N.\operatorname{Tr}(B(P-\lambda)^{-N})\sim\sum_{j\in\mathbb{N},j-n-\nu\,\text{\rm odd\;}}\sum_{\sigma=0}^{l}\tilde{c}_{j,\sigma}(-\lambda)^{\frac{\nu+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=0}^{\infty}\tilde{c}^{\prime\prime}_{k}(-\lambda)^{-k-N}. | 3.30 
+
+In particular, (cf. (3.32) below) is regular at all integers ζ(B,P,s)\zeta(B,P,s).ss
+
+(iv) In each of the cases (1)–(4) in Definition 1.1, the vanish (for any choice of local coordinates), and (cf. (3.26))c~ν+n,σ\tilde{c}_{\nu+n,\sigma}
+
+c~0′′=∫XtrωTR(B).\tilde{c}_{0}^{\prime\prime}=\int_{X}\operatorname{tr}\omega_{\operatorname{TR}}(B). | 3.31 
+
+In the following, we draw on the hypothesis that is invertible. By the transition formulas in [GS2], (3.28) implies the structure of the meromorphic extension of PP, also denoted Γ(s)Tr(BP−s)\Gamma(s)\operatorname{Tr}(BP^{-s}):Γ(s)ζ(B,P,s)\Gamma(s)\zeta(B,P,s)
+
+Γ(s)Tr(BP−s)=Γ(s)ζ(B,P,s)∼∑j=0∞∑σ=0l+1cj,σ(s+j−ν−nm)σ+1+∑k=0∞ck′′s+k,\Gamma(s)\operatorname{Tr}(BP^{-s})=\Gamma(s)\zeta(B,P,s)\sim\sum_{j=0}^{\infty}\sum_{\sigma=0}^{l+1}\frac{c_{j,\sigma}}{(s+\frac{j-\nu-n}{m})^{\sigma+1}}+\sum_{k=0}^{\infty}\frac{c^{\prime\prime}_{k}}{s+k}, | 3.32 
+
+with universal nonzero factors linking withc~j,σ\tilde{c}_{j,\sigma} and cj,σc_{j,\sigma} withc~k′′\tilde{c}^{\prime\prime}_{k}; in particular, ck′′c^{\prime\prime}_{k} andc0′′=c~0′′c^{\prime\prime}_{0}=\tilde{c}^{\prime\prime}_{0} (with the usual zero convention if the series in cν+n,0=c~ν+n,0c_{\nu+n,0}=\tilde{c}_{\nu+n,0} does not contain such a term). Dividing out jj, we see thatΓ(s)\Gamma(s) has a Laurent expansion at ζ(B,P,s)\zeta(B,P,s) when s=0s=0:B∈CLν,l(X)B\in\operatorname{CL}^{\nu,l}(X)
+
+ζ(B,P,s)∼∑r≥−l−1Cr(B,P)sr;\zeta(B,P,s)\sim\sum_{r\geq-l-1}C_{r}(B,P)s^{r}; | 3.33 
+
+here
+
+C0(B,P)=cν+n,0+c0′′=c~ν+n,0+c~0′′.C_{0}(B,P)=c_{\nu+n,0}+c^{\prime\prime}_{0}=\tilde{c}_{\nu+n,0}+\tilde{c}^{\prime\prime}_{0}. | 3.34 
+
+Corollary 3.3 (ii) shows that satisfies the first condition in Definition 2.2 for being a quasi-trace. (In [O1], the difference C0(B,P)C_{0}(B,P) is shown to be a certain residue, in the case where the symbol of C0(B,P)−C0(B,P′)C_{0}(B,P)-C_{0}(B,P^{\prime}) equalsBB plus a zero-order classical symbol.) We shall now show that the second condition, concerning commutators, is likewise satisfied.clog[ξ]c\log[\xi]
+
+###### Theorem 3.4
+
+Let, B∈CLν,lB\in\operatorname{CL}^{\nu,l}, and let B′∈CLν′,l′B^{\prime}\in\operatorname{CL}^{\nu^{\prime},l^{\prime}} be as in Proposition 2.1 (ii). ThenPP
+
+Tr([B,B′](P−λ)−N)∼∑j=0∞∑σ=0l+1b~j,σ(−λ)ν+ν′+n−jm−Nlogσ(−λ)+∑k=1∞b~k′′(−λ)−k−N.\operatorname{Tr}([B,B^{\prime}](P-\lambda)^{-N})\sim\sum_{j=0}^{\infty}\sum_{\sigma=0}^{l+1}\tilde{b}_{j,\sigma}(-\lambda)^{\frac{\nu+\nu^{\prime}+n-j}{m}-N}\log^{\sigma}(-\lambda)+\sum_{k=1}^{\infty}\tilde{b}^{\prime\prime}_{k}(-\lambda)^{-k-N}. | 3.35 
+
+Hence the zeta functionsatisfies (when ζ([B,B′],P,s)=Tr([B,B′]P−s)\zeta([B,B^{\prime}],P,s)=\operatorname{Tr}([B,B^{\prime}]P^{-s}) is invertible)PP
+
+ζ([B,B′],P,s)∼∑r≥−l+l′−1Cr([B,B′],P)srfors→0,\zeta([B,B^{\prime}],P,s)\sim\sum_{r\geq-l+l^{\prime}-1}C_{r}([B,B^{\prime}],P)s^{r}\text{
+for }s\to 0, | 3.36 
+
+with local, depending solely on the terms of the firstC0([B,B′],P)C_{0}([B,B^{\prime}],P)homogeneity degrees in the symbols of n+[ν+ν′]+1n+[\nu+\nu^{\prime}]+1, BB and B′B^{\prime}.PP
+
+In particular, it vanishes if one of the conditions (1′)–(4′) in Theorem 1.7 is satisfied (with, AA replaced by A′A^{\prime}, BB).B′B^{\prime}
+
+###### Proof
+
+Since has symbol in [B,B′][B,B^{\prime}], we know already from Corollary 3.3 thatCSν+ν′,l+l′\operatorname{CS}^{\nu+\nu^{\prime},l+l^{\prime}} has the corresponding expansion (3.28); we just have to show that Q=[B,B′](P−λ)−NQ=[B,B^{\prime}](P-\lambda)^{-N} there.c~0′′=0\tilde{c}^{\prime\prime}_{0}=0
+
+As in (1.47) and (1.48), the trace calculation can be reduced to the calculation for
+
+Q(μ)=B∑0≤M<NcMN(P+μm)−1−M[P,B′](P+μm)−N+M;Q(\mu)=B\sum_{0\leq M<N}c_{MN}(P+\mu^{m})^{-1-M}[P,B^{\prime}](P+\mu^{m})^{-N+M}; | 3.37 
+
+by the rules of calculus, it has symbol in. The trace expansion can be analyzed as in the proof of Theorem 3.2; with the modification that the contributions from the integral over Sν+ν′−mN+ε,0∩Sν+ν′+m+ε,−(m+1)NS^{\nu+\nu^{\prime}-mN+\varepsilon,0}\cap S^{\nu+\nu^{\prime}+m+\varepsilon,-(m+1)N} start with the lower power {|ξ|≤1}\{|\xi|\leq 1\}, and the terms of the formμ−m(N+1)\mu^{-m(N+1)} from (3.23) all have −cj,l′′′μ−α-c^{\prime\prime}_{j,l^{\prime}}\mu^{-\alpha}. Thus α≥m(N+1)\alpha\geq m(N+1) for this operator family. In the special cases (1′)–(4′), also the contribution from the series in c~0′′=0\tilde{c}^{\prime\prime}_{0}=0vanishes, as shown in Corollary 3.3. ∎jj
+
+We have hereby obtained:
+
+###### Corollary 3.5
+
+(i) For log-polyhomogeneous operators with BB as in Proposition 2.1, PP (3.34) is a quasi-trace in the sense of Definition 2.3.C0(B,P)C_{0}(B,P)
+
+(ii) Definition 1.1 of the canonical trace extends to log-polyhomogeneous operators TR\operatorname{TR}, in such a way that the definition is independent ofBB, Theorem 1.7 extends to these operators, andPP
+
+TR(B)=∫XtrωTR(B).\operatorname{TR}(B)=\int_{X}\operatorname{tr}\omega_{\operatorname{TR}}(B). | 3.38 
+
+Point (ii) was shown in [L, Sect. 5] for the cases where or ν∉ℤ\nu\notin\mathbb{Z}, by a somewhat different proof (where <−n<-n was assumed to be selfadjoint positive with scalar principal symbol).PP
+
+Let us now return to the zeta function for a classicaldo, cf. (3.1). The expansions (3.28) and (3.32) hold in particular for ψ\psi; let us denote the coefficients in this case by B=APl(P)B=A{P}_{l}(P), c~j,σ(l)\tilde{c}^{(l)}_{j,\sigma}, resp. c~′′(l)k\tilde{c}^{\prime\prime(l)}_{k}, cj,σ(l)c^{(l)}_{j,\sigma}. Then we have found thatc′′(l)kc^{\prime\prime(l)}_{k}
+
+∂slζ(A,P,s)=Tr(APl(P)P−s)=ζ(APl(P),P,s)\partial_{s}^{l}\zeta(A,P,s)=\operatorname{Tr}(A{P}_{l}(P)P^{-s})=\zeta(A{P}_{l}(P),P,s) | 3.39 
+
+has the meromorphic structure determined from
+
+Γ(s)Tr(APl(P)P−s)∼∑j=0∞∑σ=0l+1cj,σ(l)(s+j−ν−nm)σ+1+∑k=0∞c′′(l)ks+k.\Gamma(s)\operatorname{Tr}(A{P}_{l}(P)P^{-s})\sim\sum_{j=0}^{\infty}\sum_{\sigma=0}^{l+1}\frac{c^{(l)}_{j,\sigma}}{(s+\frac{j-\nu-n}{m})^{\sigma+1}}+\sum_{k=0}^{\infty}\frac{c^{\prime\prime(l)}_{k}}{s+k}. | 3.40 
+
+Concerning in (3.1), we find by differentiation in ζ(A,P,s)\zeta(A,P,s):ss
+
+ζ(APl(P),P,s)=∂slζ(A,P,s)∼(−1)ll!sl+1C−1(A,P)+∑r≥lr!(r−l)!Cr(A,P)sr−l,\zeta(A{P}_{l}(P),P,s)=\partial_{s}^{l}\zeta(A,P,s)\sim\tfrac{(-1)^{l}l!}{s^{l+1}}C_{-1}(A,P)+\sum_{r\geq l}\tfrac{r!}{(r-l)!}C_{r}(A,P)s^{r-l}, | 3.41 
+
+so that for C0(APl(P),P)=l!Cl(A,P)C_{0}(A{P}_{l}(P),P)=l!C_{l}(A,P). Dividing by l≥1l\geq 1 in (3.40), we see that the constant term at Γ(s)\Gamma(s) in the expansion of s=0s=0 isζ(APl(P),P,s)\zeta(A{P}_{l}(P),P,s), with the usual conventions. So we have found:c(l)ν+n,0+c′′(l)0c^{(l)}_{\nu+n,0}+c^{\prime\prime(l)}_{0}
+
+###### Corollary 3.6
+
+For,l≥1l\geq 1
+
+Cl(A,P)=1l!C0(APl(P),P)=1l!(cν+n,0(l)+c0′′(l)),C_{l}(A,P)=\tfrac{1}{l!}C_{0}(A{P}_{l}(P),P)=\tfrac{1}{l!}(c^{(l)}_{\nu+n,0}+c^{\prime\prime(l)}_{0}), | 3.42 
+
+defined from the constants appearing in (3.40); here if cν+n,0(l)=0c^{(l)}_{\nu+n,0}=0 or ν+n∉ℕ\nu+n\notin\mathbb{N}.ν<−n\nu<-n
+
+Note that is locally determined (in local coordinates it comes from the part of the symbol of cν+n,0(l)c^{(l)}_{\nu+n,0} with homogeneity degree APl(P)(P+μm)−NA{P}_{l}(P)(P+\mu^{m})^{-N}), whereas −mN−n-mN-n depends on the full structure (is global).c′′(l)0c^{\prime\prime(l)}_{0}
+
+It may also be observed that the coefficient of in (3.41), proportional to s−l−1s^{-l-1}, is also proportional to the resA\operatorname{res}A’st higher residue of (l+1)(l+1) defined in [L, Sect. 4].APl(P)A{P}_{l}(P)
+
+In particular, equals C1(A,P)C_{1}(A,P); this specializes to a formula for c(1)ν+n,0+c′′(1)0c^{(1)}_{\nu+n,0}+c^{\prime\prime(1)}_{0} in the case −logdetP-\log\det P:A=IA=I
+
+###### Corollary 3.7
+
+One has that
+
+−logdetP=C1(I,P)=C0(−logP,P)=cν+n,0(1)+c0′′(1),-\log\det P=C_{1}(I,P)=C_{0}(-\log P,P)=c^{(1)}_{\nu+n,0}+c^{\prime\prime(1)}_{0}, | 3.43 
+
+determined from (3.40) in the case.A=IA=I
+
+One cannot conclude from Corollary 3.6 that the higher Laurent coefficients in (3.1) are quasi-traces of itself — for in AA, the first entry depends highly on the choice of C0(APl(P),P)C_{0}(A{P}_{l}(P),P) when PP. However, when parity and dimension match, these coefficients can be expressed by the extended l>0l>0 applied toTR\operatorname{TR}. In fact, when APl(P)A{P}_{l}(P) is even-even, PP is even-even for all Pl(P){P}_{l}(P). Then one gets, by Corollary 3.6:l≥1l\geq 1
+
+###### Corollary 3.8
+
+Let be even-even. If PP is odd, let the classical nndo ψ\psibe even-even; if AA is even, let nn be even-odd. ThenAA
+
+Cl(A,P)=1l!C0(APl(P),P)=1l!TR(APl(P)),forl≥1.C_{l}(A,P)=\tfrac{1}{l!}C_{0}(A{P}_{l}(P),P)=\tfrac{1}{l!}\operatorname{TR}(A{P}_{l}(P)),\text{ for }l\geq 1. | 3.44 
+
+In particular:
+
+(i) When is odd, thennn
+
+logdetP\displaystyle\log\det P | =TR(logP),\displaystyle=\operatorname{TR}(\log P), | 3.45 
+---|---|---
+∂slζ(I,P,0)\displaystyle\partial_{s}^{l}\zeta(I,P,0) | =TR(Pl(P)),forl≥1.\displaystyle=\operatorname{TR}({P}_{l}(P)),\text{ for $l\geq 1$}. 
+
+(ii) When is even and nn is a first-order selfajoint elliptic differential operator (cf. Remark 1.4),DD
+
+∂slη(D,0)=2−lTR(D|D|−1Pl(D2)),forl≥1.\partial_{s}^{l}\eta(D,0)=2^{-l}\operatorname{TR}(D|D|^{-1}{P}_{l}(D^{2})),\text{ for $l\geq 1$}. | 3.46 
+
+A formula similar to the first line in (3.45) appears in the abstract of [O3] (it can be justified on the basis of [O2], Lemma 0.1). As an example of the second line,
+
+∂s2ζ(I,P,0)=TR((logP)2).\partial_{s}^{2}\zeta(I,P,0)=\operatorname{TR}((\log P)^{2}). | 3.47 
+
+cf. (3.10). See also [KV, Sect. 4].
+
+###### Remark 3.9
+
+Let us set the above methods in relation to the results of [O1], [O2] and [KV] on the multiplicative anomaly of the determinant. [O1] shows that when the elliptic positive-order detAB/(detAdetB)\det AB/(\det A\det B)do’s ψ\psi, AA and BB have scalar principal symbol taking no values on ABAB, and have no eigenvalues on ℝ−\mathbb{R}_{-}, thenℝ¯−\overline{\mathbb{R}}_{-}
+
+logAB−logA−logB=[A,C(I)(A,B)]+[B,C(II)(A,B)]+F,\log AB-\log A-\log B=[A,C^{(I)}(A,B)]+[B,C^{(II)}(A,B)]+F, | 3.48 
+
+where and C(I)(A,B)C^{(I)}(A,B) are Lie polynomials inC(II)(A,B)C^{(II)}(A,B) and AA, and BB is an operator of order FF with <−n<-n. In [O2] this is used to show thatTrF=0\operatorname{Tr}F=0equals the noncommutative residue of a certain operator derived from logdetAB−logdetA−logdetB\log\det AB-\log\det A-\log\det B and AA; in particular it is locally determined. By variational methods, [O2] and [KV] show local determinedness ofBB also in cases where the principal symbol is not scalar. This implies local determinedness of logdetAB−logdetA−logdetB\log\det AB-\log\det A-\log\det B (by exponentiation).detAB/(detAdetB)\det AB/(\det A\det B)
+
+From our point of view, (3.48) implies that is locally determined for any auxiliary operator C0(logAB−logA−logB,P)C_{0}(\log AB-\log A-\log B,P), by Theorem 3.4 and the fact that PP. Then since the expressions TrF=0\operatorname{Tr}F=0, C0(logA,A)−C0(logA,P)C_{0}(\log A,A)-C_{0}(\log A,P)and C0(logB,B)−C0(logB,P)C_{0}(\log B,B)-C_{0}(\log B,P) are locally determined by Corollary 3.3 (ii), we conclude the local determinedness ofC0(logAB,AB)−C0(logAB,P)C_{0}(\log AB,AB)-C_{0}(\log AB,P)
+
+logdetAB−logdetA−logdetB=C0(logAB,AB)−C0(logA,A)−C0(logB,B).\log\det AB-\log\det A-\log\det B=C_{0}(\log AB,AB)-C_{0}(\log A,A)-C_{0}(\log B,B). 
+
+When is odd and nn and AA are even-even, then (cf. Corollary 3.6 (i))BB
+
+logdetAB−logdetA−logdetB=TR(logAB−logA−logB)=0,\log\det AB-\log\det A-\log\det B=\operatorname{TR}(\log AB-\log A-\log B)=0, 
+
+since it is locally determined (local contributions give zero because of parity), so then, as originally shown in [KV, Th. 7.1].detAB=detAdetB\det AB=\det A\det B
+
+## References
+
+- CDMP A. Cardona, C. Ducourtioux, J. P. Magnot and S. Paycha, Weighted traces on algebras of pseudodifferential operators, Infin. Dimens. Anal. Quantum Probab. Relat. Top. 5 (2002), 503–540.
+- CDP A. Cardona, C. Ducourtioux and S. Paycha, From tracial anomalies to anomalies in quantum field theory, Comm. Math. Phys. 242 (2003), 31–65.
+- CFNW M. Cederwall, G. Ferretti, B. Nilsson, A. Westerberg, Schwinger terms and cohomology of pseudodifferential operators, Comm. Math. Phys. 175 (1996), 203–220.
+- G1 G. Grubb, Functional Calculus of Pseudodifferential Boundary Problems, Progress in Math. vol. 65, Second Edition, Birkhäuser, 1996, first edition issued 1986.
+- G2 —, Logarithmic terms in trace expansions of Atiyah-Patodi-Singer problems, Ann. Global Anal. Geom. 24 (2003), 1–51.
+- G3 —, Spectral boundary conditions for generalizations of Laplace and Dirac operators, Comm. Math. Phys. 240 (2003), 243–280.
+- G4 —, On the logarithm component in trace defect formulas, Comm. Part. Diff. Equ. 30 (2005), 1671–1716.
+- G5 —, Remarks on nonlocal trace expansion coefficients, arXiv: math.AP/0510041, to appear in a proceedings volume in honor of K. Wojciechowski, “Analysis and Geometry of Boundary Value Problems”, World Scientific.
+- GH G. Grubb and L. Hansen, Complex powers of resolvents of pseudodifferential operators, Comm. Part. Diff. Eq. 27 (2002), 2333–2361.
+- GSc G. Grubb and E. Schrohe, Traces and quasi-traces on the Boutet de Monvel algebra, in Ann. Inst. Fourier 54 (2004), 1641–1696.
+- GS1 G. Grubb and R. Seeley, Weakly parametric pseudodifferential operators and Atiyah-Patodi-Singer boundary problems, Invent. Math. 121 (1995), 481–529.
+- GS2 —, Zeta and eta functions for Atiyah-Patodi-Singer operators, J. Geom. An. 6 (1996), 31–77.
+- Gu V. Guillemin, A new proof of Weyl’s formula on the asymptotic distribution of eigenvalues, Adv. Math. 102 (1985), 184–201.
+- H J. Hadamard, Le Problème de Cauchy et les Équations aux Dérivées Partielles Linéaires Hyperboliques, Hermann, 1932.
+- K C. Kassel, Le résidu non commutatif [d’après M. Wodzicki], Astérisque 177–178 (1989), 199-229. , Séminaire Bourbaki, 41ème année, Expose no. 41, 1988–99.
+- KV M. Kontsevich and S. Vishik, Geometry of determinants of elliptic operators, Functional Analysis on the Eve of the 21’st Century (Rutgers Conference in honor of I. M. Gelfand 1993), Vol. I (S. Gindikin et al., ed.), Progr. Math. 131, Birkhäuser, 1995, pp.˜173–197.
+- L M. Lesch, On the noncommutative residue for pseudodifferential operators with log-polyhomogeneous symbols, Ann. Global Anal. Geom. 17 (1999), 151–187.
+- Lo P. Loya, The structure of the resolvent of elliptic pseudodifferential operators, J. Funct. Anal. 184 (2001), 77–134.
+- MN R. Melrose and V. Nistor, Homology of pseudodifferential operators I. Manifolds with boundary, manuscript, arXiv: funct-an/9606005.
+- M J. Mickelsson, Schwinger terms, gerbes and operator residues, Symplectic Singularities and Geometry of Gauge Fields (Warsaw 1995), Banach Center Publications, vol.˜39, 1997, pp.˜345–361, arXiv: hep-th/9509002.
+- O1 K. Okikiolu, The Campbell-Hausdorff thorem for elliptic operators and a related trace formula, Duke Math. J. 79 (1995), 687–722.
+- O2 —, The multiplicative anomaly for determinants of elliptic operators, Duke Math. J. 79 (1995), 723–750.
+- O3 —, Critical metrics for the determinant of the Laplacian in odd dimensions, Annals of Math. 153 (2001), 471–531.
+- RS D. Ray and I. Singer, R-torsion and the Laplacian on Riemanninan manifolds, Adv. in Math. 7 (1971), 145–210.
+- Sc E. Schrohe, Complex powers of elliptic pseudodifferential operators, Integral Eq. Oper. Th. 9 (1986), 337–354.
+- Sco S. Scott, Eta forms and the Chern character (to appear).
+- S R. T. Seeley, Complex powers of an elliptic operator, Amer. Math. Soc. Proc. Symp. Pure Math. 10 (1967), 288–307.
+- W M. Wodzicki, Local invariants of spectral asymmetry, Invent. Math. 75 (1984), 143-178.

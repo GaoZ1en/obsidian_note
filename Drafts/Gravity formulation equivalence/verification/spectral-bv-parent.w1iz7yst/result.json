@@ -1,0 +1,381 @@
+{
+  "scope": "Exact finite Fourier/Grassmann checks, not an AdS continuum QME or a proof of Wilsonian transfer.",
+  "sage_version": "10.9",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "full 18-coordinate gravitational ghost Jacobi",
+      "passed": true
+    },
+    {
+      "label": "cutoff ghost-square witness is minus c0 c1 c2",
+      "passed": true
+    },
+    {
+      "label": "translation ghost slice has no competing term",
+      "passed": true
+    },
+    {
+      "label": "full gravitational ghost leakage identity",
+      "passed": true
+    },
+    {
+      "label": "N1 canonical defect edge matrix",
+      "passed": true
+    },
+    {
+      "label": "N1 one-dimensional leakage trace",
+      "passed": true
+    },
+    {
+      "label": "N1 full raw BV log-Berezinian second-order cancellation",
+      "passed": true
+    },
+    {
+      "label": "N1 full specified body-density ratio coefficient",
+      "passed": true
+    },
+    {
+      "label": "N1 scalar family has no linear or cubic ratio",
+      "passed": true
+    },
+    {
+      "label": "N1 projected auxiliary Hessian ordering defect",
+      "passed": true
+    },
+    {
+      "label": "N2 canonical defect edge matrix",
+      "passed": true
+    },
+    {
+      "label": "N2 one-dimensional leakage trace",
+      "passed": true
+    },
+    {
+      "label": "N2 full raw BV log-Berezinian second-order cancellation",
+      "passed": true
+    },
+    {
+      "label": "N2 full specified body-density ratio coefficient",
+      "passed": true
+    },
+    {
+      "label": "N2 scalar family has no linear or cubic ratio",
+      "passed": true
+    },
+    {
+      "label": "N2 projected auxiliary Hessian ordering defect",
+      "passed": true
+    },
+    {
+      "label": "N3 canonical defect edge matrix",
+      "passed": true
+    },
+    {
+      "label": "N3 one-dimensional leakage trace",
+      "passed": true
+    },
+    {
+      "label": "N3 full raw BV log-Berezinian second-order cancellation",
+      "passed": true
+    },
+    {
+      "label": "N3 full specified body-density ratio coefficient",
+      "passed": true
+    },
+    {
+      "label": "N3 scalar family has no linear or cubic ratio",
+      "passed": true
+    },
+    {
+      "label": "N3 projected auxiliary Hessian ordering defect",
+      "passed": true
+    },
+    {
+      "label": "N4 canonical defect edge matrix",
+      "passed": true
+    },
+    {
+      "label": "N4 one-dimensional leakage trace",
+      "passed": true
+    },
+    {
+      "label": "N4 full raw BV log-Berezinian second-order cancellation",
+      "passed": true
+    },
+    {
+      "label": "N4 full specified body-density ratio coefficient",
+      "passed": true
+    },
+    {
+      "label": "N4 scalar family has no linear or cubic ratio",
+      "passed": true
+    },
+    {
+      "label": "N4 projected auxiliary Hessian ordering defect",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N1 q(1, 0, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N1 q(1, 1, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N1 q(2, -1, 1)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N1 q(4, 0, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N2 q(1, 0, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N2 q(1, 1, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N2 q(2, -1, 1)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N2 q(4, 0, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N3 q(1, 0, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N3 q(1, 1, 0)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N3 q(2, -1, 1)",
+      "passed": true
+    },
+    {
+      "label": "cube leakage count N3 q(4, 0, 0)",
+      "passed": true
+    }
+  ],
+  "fourier_records": [
+    {
+      "N": 1,
+      "one_dim_raw_logBer": [
+        "0",
+        "0",
+        "9/2",
+        "0",
+        "27/16"
+      ],
+      "one_dim_trace_point_logBer": [
+        "0",
+        "0",
+        "9/2",
+        "0",
+        "27/16"
+      ],
+      "one_dim_joint_log_ratio": [
+        "0",
+        "0",
+        "9",
+        "0",
+        "45/8"
+      ],
+      "cube_second_order_joint_coefficient": "81"
+    },
+    {
+      "N": 2,
+      "one_dim_raw_logBer": [
+        "0",
+        "0",
+        "15/2",
+        "0",
+        "45/16"
+      ],
+      "one_dim_trace_point_logBer": [
+        "0",
+        "0",
+        "15/2",
+        "0",
+        "45/16"
+      ],
+      "one_dim_joint_log_ratio": [
+        "0",
+        "0",
+        "9",
+        "0",
+        "45/8"
+      ],
+      "cube_second_order_joint_coefficient": "225"
+    },
+    {
+      "N": 3,
+      "one_dim_raw_logBer": [
+        "0",
+        "0",
+        "21/2",
+        "0",
+        "63/16"
+      ],
+      "one_dim_trace_point_logBer": [
+        "0",
+        "0",
+        "21/2",
+        "0",
+        "63/16"
+      ],
+      "one_dim_joint_log_ratio": [
+        "0",
+        "0",
+        "9",
+        "0",
+        "45/8"
+      ],
+      "cube_second_order_joint_coefficient": "441"
+    },
+    {
+      "N": 4,
+      "one_dim_raw_logBer": [
+        "0",
+        "0",
+        "27/2",
+        "0",
+        "81/16"
+      ],
+      "one_dim_trace_point_logBer": [
+        "0",
+        "0",
+        "27/2",
+        "0",
+        "81/16"
+      ],
+      "one_dim_joint_log_ratio": [
+        "0",
+        "0",
+        "9",
+        "0",
+        "45/8"
+      ],
+      "cube_second_order_joint_coefficient": "729"
+    }
+  ],
+  "ghost_witness": "-c0*c1*c2",
+  "generic_nonzero_cutoff_ghost_components": 12,
+  "cube_counts": [
+    {
+      "N": 1,
+      "q": [
+        1,
+        0,
+        0
+      ],
+      "count": 9
+    },
+    {
+      "N": 1,
+      "q": [
+        1,
+        1,
+        0
+      ],
+      "count": 15
+    },
+    {
+      "N": 1,
+      "q": [
+        2,
+        -1,
+        1
+      ],
+      "count": 23
+    },
+    {
+      "N": 1,
+      "q": [
+        4,
+        0,
+        0
+      ],
+      "count": 27
+    },
+    {
+      "N": 2,
+      "q": [
+        1,
+        0,
+        0
+      ],
+      "count": 25
+    },
+    {
+      "N": 2,
+      "q": [
+        1,
+        1,
+        0
+      ],
+      "count": 45
+    },
+    {
+      "N": 2,
+      "q": [
+        2,
+        -1,
+        1
+      ],
+      "count": 77
+    },
+    {
+      "N": 2,
+      "q": [
+        4,
+        0,
+        0
+      ],
+      "count": 100
+    },
+    {
+      "N": 3,
+      "q": [
+        1,
+        0,
+        0
+      ],
+      "count": 49
+    },
+    {
+      "N": 3,
+      "q": [
+        1,
+        1,
+        0
+      ],
+      "count": 91
+    },
+    {
+      "N": 3,
+      "q": [
+        2,
+        -1,
+        1
+      ],
+      "count": 163
+    },
+    {
+      "N": 3,
+      "q": [
+        4,
+        0,
+        0
+      ],
+      "count": 196
+    }
+  ]
+}

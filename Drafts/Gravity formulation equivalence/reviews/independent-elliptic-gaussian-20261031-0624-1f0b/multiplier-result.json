@@ -1,0 +1,34 @@
+{
+  "provenance": "Fresh finite-dimensional derivation of the multiplier bridge.",
+  "source_sha256": "15b00723852d71e685fd04b2a471ffd9b55c697be43edc4865f4cd0a078fc53d",
+  "checks": {
+    "upper_thimble_orientation_det_i": true,
+    "upper_thimble_positive_quadratic": true,
+    "Fourier_regulator_determinant": true,
+    "one_parameter_normalization": true,
+    "finite_HG_zero": true,
+    "finite_det_factorization": true,
+    "finite_inertia": true,
+    "finite_full_gaussian_quotient": true,
+    "normalized_density_scalar": true
+  },
+  "one_pair_fourier_integral": "i*pi/sqrt(eps^2+a^2*s^2) -> i*pi/(a*s), a,s>0; eps -> 0+",
+  "one_pair_upper_thimble_integral": "i*pi/(a*s)",
+  "plain_L2_density_fourier_scalar_per_parameter": "a/(pi*i)",
+  "normalized_dx_over_sqrt_2pi_scalar_per_parameter": "2*a/i",
+  "spectral_log_branch_for_upper_thimble": "log(-r)=log(r)-i*pi",
+  "finite_full_eigenvalues": [
+    "3",
+    "3",
+    "2",
+    "2",
+    "-2",
+    "-2",
+    "-3",
+    "-3"
+  ],
+  "finite_full_quotient_divided_by_pi_over_a_squared": "-1",
+  "limitations": [
+    "The convergent Gaussian formula uses analytic continuation with positive real regulator; the script verifies its determinant and orientation algebra, not a continuum measure."
+  ]
+}

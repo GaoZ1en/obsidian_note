@@ -1,0 +1,10 @@
+<|"KernelVersion" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", "ActualIntegralResiduals" -> {0, 0}, 
+ "UncutExactCoefficient" -> (-2*(1/(4*E^(5*t$8553)*Pi^(3/2)*Sqrt[t$8553]) + 
+     2*(1/(4*E^(4*t$8553)*Pi^(3/2)*Sqrt[t$8553]) - (3*Erfc[2*Sqrt[t$8553]])/(8*Pi)) - 
+     (Sqrt[5]*Erfc[Sqrt[5]*Sqrt[t$8553]])/(4*Pi)))/(3*k$8553), 
+ "UncutHeatExpansion" -> SeriesData[t$8553, 0, {-1/2*1/(k$8553*Pi^(3/2)), (3 + Sqrt[5])/(6*k$8553*Pi), 
+    -3/(2*k$8553*Pi^(3/2))}, -1, 3, 2], "FinitePartResidual" -> 0, 
+ "LowBandPrimitive" -> b0$8553 - Sqrt[5]*ArcTan[b0$8553/Sqrt[5]] + 2*(b1$8553 - (3*ArcTan[b1$8553/2])/2), 
+ "FixedSharpFinitePart" -> (3 + Sqrt[5])/(6*k$8553*Pi) + 
+   (b0$8553 + 2*b1$8553 - Sqrt[5]*ArcTan[b0$8553/Sqrt[5]] - 3*ArcTan[b1$8553/2])/(3*k$8553*Pi^2), 
+ "Messages" -> {}|>

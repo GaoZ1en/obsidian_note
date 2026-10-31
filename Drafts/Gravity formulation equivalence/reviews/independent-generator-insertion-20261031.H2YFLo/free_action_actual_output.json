@@ -1,0 +1,33 @@
+{
+  "sage_version": "10.9",
+  "conventions": "normal orthonormal frame, epsilon123=1, full first jets, coefficient-first (f,E)=1 implies (S2,E)=+EL_f",
+  "residuals": {
+    "EL_f_0_0": "0",
+    "EL_f_0_1": "0",
+    "EL_f_0_2": "0",
+    "EL_f_1_0": "0",
+    "EL_f_1_1": "0",
+    "EL_f_1_2": "0",
+    "EL_f_2_0": "0",
+    "EL_f_2_1": "0",
+    "EL_f_2_2": "0",
+    "trace_T": "0",
+    "trace_curl_is_negative_divergence": "0",
+    "contracted_EOM_density": "0"
+  },
+  "checks": {
+    "EL_f_0_0": true,
+    "EL_f_0_1": true,
+    "EL_f_0_2": true,
+    "EL_f_1_0": true,
+    "EL_f_1_1": true,
+    "EL_f_1_2": true,
+    "EL_f_2_0": true,
+    "EL_f_2_1": true,
+    "EL_f_2_2": true,
+    "trace_T": true,
+    "trace_curl_is_negative_divergence": true,
+    "contracted_EOM_density": true
+  },
+  "failures": []
+}

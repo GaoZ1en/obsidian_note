@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/executed-source.py",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/executed-source.py",
+    "sha256": "2cb6e8995c638a2832405da4115c0b67883be6e3df92dbd3e302ab17c7a8a270"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/result.json",
+    "sha256": "9c417440be234251446566b489900814b1c995908437486a3c7e2f38b4ec7fb2"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-hodge-b18jfn0j/radial-exact.sobj",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/radial-exact.sobj",
+    "sha256": "c845481dbb27ce4ac9fa3402e9d6ac5d5c025b8a1c7f98aba688b383fb5f4772"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/b2d910111ae1-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-hodge-parent.mo_zlba1/actual-server-return.json",
+    "sha256": "019837d0ee1cb2f9e08f43724ac08d92efbbce1005047741452e2480f0c18475"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear_bv_density_bridge.py",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/executed-source.py",
+    "sha256": "c7158d094332dfe1dad1b644ca1f789fbcff4916220778b1a05a913acdc7fa93",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/nonlinear-bv-density.d6w4m5c2/result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/result.json",
+    "sha256": "84d760d173d25ad4ff9ff959328710db59a5bf7c3e9f476c1c5e3a91d57c45f3",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/nonlinear-bv-density.d6w4m5c2/exact.sobj",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/exact.sobj",
+    "sha256": "f3045cce6b955df27538c75b9f98b3a8d6ef640d3bf3d2fcb794f7083d7a8b2f",
+    "byte_equal": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/96fe5c94ce66-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/nonlinear-bv-density-parent.cx7id5vg/actual-server-return.json",
+    "sha256": "2914c874282ccec926c527627d89a31df945432b45ecee0f6b9d7028916cb141",
+    "byte_equal": true
+  }
+]

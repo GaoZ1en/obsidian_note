@@ -1,0 +1,281 @@
+{
+  "preserved_at_utc": "2026-10-31T00:59:14.071307+00:00",
+  "purpose": "Preserve existing successful MCP Sage kernel returns and hash the frozen evidence; no kernels rerun.",
+  "execution_kind": "mcp__sage__sage_run; no CLI was used, so no CLI exit code is invented.",
+  "source_hash_note": "The kernel wrapper codeSha256 hashes the execution stub that reads the source path, not the source file. Source/output hashes below were recorded during preservation; those frozen files were not modified by this operation.",
+  "frozen_files_unchanged_during_preservation": true,
+  "frozen_files": {
+    "source.sage.py": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/source.sage.py",
+      "bytes": 17973,
+      "sha256": "1b128d64cb3a3401865f7b46f822048ac05100a459377871a97ea996509f93d0",
+      "mtime_utc": "2026-10-31T00:42:17.008603+00:00"
+    },
+    "actual-output.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/actual-output.txt",
+      "bytes": 3316,
+      "sha256": "6d2b3b2bca66be53f5c36433ca49909f0a6ec71267485d72f4658cdf12e8ed71",
+      "mtime_utc": "2026-10-31T00:42:24.104171+00:00"
+    },
+    "checks.json": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/checks.json",
+      "bytes": 2703,
+      "sha256": "a7de656a7bb1f5e3338a898090ea30174b377a40f3ba93bc18cecab963827715",
+      "mtime_utc": "2026-10-31T00:42:24.104276+00:00"
+    },
+    "quartic-vertex.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/quartic-vertex.txt",
+      "bytes": 1884,
+      "sha256": "87f6dcd56b6206756c8d845e331ce4bb8329f1cb0f065a5e23caab8e9ccb6c38",
+      "mtime_utc": "2026-10-31T00:42:24.104405+00:00"
+    },
+    "quartic-master-left.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/quartic-master-left.txt",
+      "bytes": 1608,
+      "sha256": "612e7ad113183746f3ed1a48717835b1bdf30020902f0167ea30ec5b9e48ea32",
+      "mtime_utc": "2026-10-31T00:42:24.104507+00:00"
+    },
+    "quartic-master-right.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/quartic-master-right.txt",
+      "bytes": 1608,
+      "sha256": "612e7ad113183746f3ed1a48717835b1bdf30020902f0167ea30ec5b9e48ea32",
+      "mtime_utc": "2026-10-31T00:42:24.104608+00:00"
+    },
+    "projected-cubic.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/projected-cubic.txt",
+      "bytes": 2202,
+      "sha256": "2680996d54aa0e69ca81a943858349ac88c8474d1c5c1d2cb2b5ffe28bc45455",
+      "mtime_utc": "2026-10-31T00:42:24.104741+00:00"
+    },
+    "full-coordinate-dictionary.json": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/full-coordinate-dictionary.json",
+      "bytes": 6507,
+      "sha256": "87b43cb61e5630d30167a4a864a5dddf4ae261a6d3c7b3d9825654f8d76fb8ca",
+      "mtime_utc": "2026-10-31T00:42:24.104865+00:00"
+    },
+    "torus-source.sage.py": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-source.sage.py",
+      "bytes": 11644,
+      "sha256": "9896ef3ea3711c05c67fd4c7846ff30fbb332796a260023058b7e5a352c6aee2",
+      "mtime_utc": "2026-10-31T00:51:44.595356+00:00"
+    },
+    "torus-actual-output.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-actual-output.txt",
+      "bytes": 2077,
+      "sha256": "c55292eb60791c80af4aa1cc222b491e5d52ba422b08e2fe959646f61fe1e756",
+      "mtime_utc": "2026-10-31T00:51:53.496430+00:00"
+    },
+    "torus-checks.json": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-checks.json",
+      "bytes": 1706,
+      "sha256": "d5acb150b544c7b29174e70a2aa79f6253d44d0aa77ac16304949e6c8cf3d8b9",
+      "mtime_utc": "2026-10-31T00:51:53.496526+00:00"
+    },
+    "torus-quartic-vertex.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-quartic-vertex.txt",
+      "bytes": 1462,
+      "sha256": "8b7ecc0da79129d6e86612697dd8acdd103018b72b9670dbb385f1d911e19d9e",
+      "mtime_utc": "2026-10-31T00:51:53.496665+00:00"
+    },
+    "torus-quartic-master-left.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-quartic-master-left.txt",
+      "bytes": 1076,
+      "sha256": "0c7ea0871a226035af3a0804fe5aaa9ae7c8310de5c18cd6e0c3968e7050df47",
+      "mtime_utc": "2026-10-31T00:51:53.496753+00:00"
+    },
+    "torus-quartic-master-right.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-quartic-master-right.txt",
+      "bytes": 1076,
+      "sha256": "0c7ea0871a226035af3a0804fe5aaa9ae7c8310de5c18cd6e0c3968e7050df47",
+      "mtime_utc": "2026-10-31T00:51:53.496839+00:00"
+    },
+    "torus-projected-quadratic.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-projected-quadratic.txt",
+      "bytes": 111,
+      "sha256": "43aa9e92fd9bb13d13ca0bdf1732530761a972ffd62ddea47aaa330315a3de8c",
+      "mtime_utc": "2026-10-31T00:51:53.496893+00:00"
+    },
+    "torus-projected-cubic.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-projected-cubic.txt",
+      "bytes": 1505,
+      "sha256": "b4f86b186ef0c4370fcce00f4107c883ecf3f548f3102e366913dc62ba814bcc",
+      "mtime_utc": "2026-10-31T00:51:53.497000+00:00"
+    },
+    "torus-coordinate-dictionary.json": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-coordinate-dictionary.json",
+      "bytes": 7851,
+      "sha256": "a96b7c6369a386459afdbfc7c039a5281ec03e7a4096f84fdef8f0eb033b2664",
+      "mtime_utc": "2026-10-31T00:51:53.497101+00:00"
+    },
+    "torus-color-control.sage.py": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-color-control.sage.py",
+      "bytes": 1474,
+      "sha256": "ceb3a9c46d0348d720637bf5f859c6e65d89e762e0dcfdddadf122d0355fb981",
+      "mtime_utc": "2026-10-31T00:52:12.075970+00:00"
+    },
+    "torus-color-control-output.txt": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-color-control-output.txt",
+      "bytes": 635,
+      "sha256": "f9f2e83ea765b71e26c2533fd506c3139df86960cfac135f943878b2abedf83a",
+      "mtime_utc": "2026-10-31T00:52:19.875573+00:00"
+    },
+    "independent-derivation.md": {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/independent-derivation.md",
+      "bytes": 24203,
+      "sha256": "f5385f7f54fdd7093df07c4f592f26ee9ad53daa71e51579d187276779c21f0c",
+      "mtime_utc": "2026-10-31T00:53:52.522818+00:00"
+    }
+  },
+  "runs": [
+    {
+      "fixture": "heisenberg",
+      "original_envelope": {
+        "path": "/Users/koishi/.dsh/research-results/session-9e06126688d3/fe68e7191733-research-result.json",
+        "bytes": 14078,
+        "sha256": "867df593dfb118a14150596f62baf2449a52557c7e116ed42b4dbb9d008bd8dd",
+        "mtime_utc": "2026-10-31T00:42:24.276892+00:00"
+      },
+      "preserved_envelope": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-heisenberg-success-envelope.json",
+        "bytes": 14078,
+        "sha256": "867df593dfb118a14150596f62baf2449a52557c7e116ed42b4dbb9d008bd8dd",
+        "mtime_utc": "2026-10-31T00:42:24.276892+00:00"
+      },
+      "stdout_file": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-heisenberg-stdout.txt",
+        "bytes": 3472,
+        "sha256": "dd577596056b7eb2ae01fa76b555a4163139b6db515992a39574cf0d43f27262",
+        "mtime_utc": "2026-10-31T00:59:14.069943+00:00"
+      },
+      "source": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/source.sage.py",
+        "bytes": 17973,
+        "sha256": "1b128d64cb3a3401865f7b46f822048ac05100a459377871a97ea996509f93d0",
+        "mtime_utc": "2026-10-31T00:42:17.008603+00:00"
+      },
+      "saved_output": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/actual-output.txt",
+        "bytes": 3316,
+        "sha256": "6d2b3b2bca66be53f5c36433ca49909f0a6ec71267485d72f4658cdf12e8ed71",
+        "mtime_utc": "2026-10-31T00:42:24.104171+00:00"
+      },
+      "output_is_exact_stdout_prefix": true,
+      "additional_stdout_after_saved_output": "Saved exact source and outputs in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9\n",
+      "tool": "mcp__sage__sage_run",
+      "callId": "call_04488da0d9c5492fb0597b42cae6bae1|fc_02d642bd9644763a016ae5396bf194819180f92f71a4dfbcb4",
+      "envelope_sessionId": "e7f7c652-ceb5-4351-abae-6962f22c75bf",
+      "completeness": "server-returned",
+      "ok": true,
+      "error": null,
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "elapsedMs": 3446,
+      "stdoutSha256": "dd577596056b7eb2ae01fa76b555a4163139b6db515992a39574cf0d43f27262",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "codeSha256_of_execution_stub": "e9fb8399beb6422d177251156e4535069412861ad4094849ccc0faafbe4f0855",
+      "warnings": [],
+      "transportStderr": [],
+      "upstreamTruncated": false,
+      "stdoutTruncated": false
+    },
+    {
+      "fixture": "torus",
+      "original_envelope": {
+        "path": "/Users/koishi/.dsh/research-results/session-9e06126688d3/dc60b771f221-research-result.json",
+        "bytes": 10240,
+        "sha256": "39d479630590cd47e141500921683ada3126dfdeb1088da7b06ce7cbed38db23",
+        "mtime_utc": "2026-10-31T00:51:53.670971+00:00"
+      },
+      "preserved_envelope": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-torus-success-envelope.json",
+        "bytes": 10240,
+        "sha256": "39d479630590cd47e141500921683ada3126dfdeb1088da7b06ce7cbed38db23",
+        "mtime_utc": "2026-10-31T00:51:53.670971+00:00"
+      },
+      "stdout_file": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-torus-stdout.txt",
+        "bytes": 2244,
+        "sha256": "81e742ec59be92e6f7750de6a541a4f9dda5d342a1f2fe6cdedf442502711596",
+        "mtime_utc": "2026-10-31T00:59:14.070392+00:00"
+      },
+      "source": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-source.sage.py",
+        "bytes": 11644,
+        "sha256": "9896ef3ea3711c05c67fd4c7846ff30fbb332796a260023058b7e5a352c6aee2",
+        "mtime_utc": "2026-10-31T00:51:44.595356+00:00"
+      },
+      "saved_output": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-actual-output.txt",
+        "bytes": 2077,
+        "sha256": "c55292eb60791c80af4aa1cc222b491e5d52ba422b08e2fe959646f61fe1e756",
+        "mtime_utc": "2026-10-31T00:51:53.496430+00:00"
+      },
+      "output_is_exact_stdout_prefix": true,
+      "additional_stdout_after_saved_output": "Saved actual output and exact polynomials in /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9\n",
+      "tool": "mcp__sage__sage_run",
+      "callId": "call_bdbf09a8a92147ba9bdd6d6a23d2be65|fc_02d642bd9644763a016ae53ba5359881918d65ecd7a13d90cd",
+      "envelope_sessionId": "e7f7c652-ceb5-4351-abae-6962f22c75bf",
+      "completeness": "server-returned",
+      "ok": true,
+      "error": null,
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "elapsedMs": 3508,
+      "stdoutSha256": "81e742ec59be92e6f7750de6a541a4f9dda5d342a1f2fe6cdedf442502711596",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "codeSha256_of_execution_stub": "b30b75c816f17d14caaf4a595e5eb66ce5c2a35df765500bf2c6434c3754c8ed",
+      "warnings": [],
+      "transportStderr": [],
+      "upstreamTruncated": false,
+      "stdoutTruncated": false
+    },
+    {
+      "fixture": "control",
+      "original_envelope": {
+        "path": "/Users/koishi/.dsh/research-results/session-9e06126688d3/20be64d7f81c-research-result.json",
+        "bytes": 5262,
+        "sha256": "2d769db0a8a08e5bb48056a97809f9f3150a27c82d0cf495ab08da8d0c2d1eb9",
+        "mtime_utc": "2026-10-31T00:52:20.050004+00:00"
+      },
+      "preserved_envelope": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-control-success-envelope.json",
+        "bytes": 5262,
+        "sha256": "2d769db0a8a08e5bb48056a97809f9f3150a27c82d0cf495ab08da8d0c2d1eb9",
+        "mtime_utc": "2026-10-31T00:52:20.050004+00:00"
+      },
+      "stdout_file": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/kernel-control-stdout.txt",
+        "bytes": 636,
+        "sha256": "a9ee98872b3dafba7e9e009357f6f6e485f811838cbadd8c5a29bc719674e752",
+        "mtime_utc": "2026-10-31T00:59:14.070771+00:00"
+      },
+      "source": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-color-control.sage.py",
+        "bytes": 1474,
+        "sha256": "ceb3a9c46d0348d720637bf5f859c6e65d89e762e0dcfdddadf122d0355fb981",
+        "mtime_utc": "2026-10-31T00:52:12.075970+00:00"
+      },
+      "saved_output": {
+        "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-color-control-output.txt",
+        "bytes": 635,
+        "sha256": "f9f2e83ea765b71e26c2533fd506c3139df86960cfac135f943878b2abedf83a",
+        "mtime_utc": "2026-10-31T00:52:19.875573+00:00"
+      },
+      "output_is_exact_stdout_prefix": true,
+      "additional_stdout_after_saved_output": "\n",
+      "tool": "mcp__sage__sage_run",
+      "callId": "call_6ff3e52b192f4515a540e7469abf2d43|fc_02d642bd9644763a016ae53bbf47b08191804be95b95df4605",
+      "envelope_sessionId": "e7f7c652-ceb5-4351-abae-6962f22c75bf",
+      "completeness": "server-returned",
+      "ok": true,
+      "error": null,
+      "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+      "elapsedMs": 3438,
+      "stdoutSha256": "a9ee98872b3dafba7e9e009357f6f6e485f811838cbadd8c5a29bc719674e752",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "codeSha256_of_execution_stub": "ec0b509f4144a1eb9b98130ed6e4e05704a0c8414ac011c69de783f72070725c",
+      "warnings": [],
+      "transportStderr": [],
+      "upstreamTruncated": false,
+      "stdoutTruncated": false
+    }
+  ]
+}

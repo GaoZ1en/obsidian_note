@@ -1,0 +1,10 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: PASS: 18 narrow exact checks; ordinary-transpose residual = -2*A*alpha; graded residual = 0.
+  Supplied-text audit only; frozen independent engine was not imported or rerun.
+  
+elapsedMs: 3994

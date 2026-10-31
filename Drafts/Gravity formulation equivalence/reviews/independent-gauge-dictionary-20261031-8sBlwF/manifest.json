@@ -1,0 +1,68 @@
+[
+  {
+    "name": "01_lie_and_symbols",
+    "tool": "mcp__sage__sage_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/bdde1fea8c28-research-result.json",
+    "code_file": "01_lie_and_symbols.sage",
+    "raw_return_file": "01_lie_and_symbols.actual-return.json",
+    "result_file": "01_lie_and_symbols.result.json",
+    "code_sha256": "4a5ec90be0664fa90dd0758b12e5b1361d954294ec88b1acaa5cbea743b0f2cf",
+    "ok": true,
+    "truncated": false
+  },
+  {
+    "name": "02_geometry_and_lorenz",
+    "tool": "mcp__xact__xact_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/a46a70e6da4d-research-result.json",
+    "code_file": "02_geometry_and_lorenz.wl",
+    "raw_return_file": "02_geometry_and_lorenz.actual-return.json",
+    "result_file": "02_geometry_and_lorenz.result.json",
+    "code_sha256": "572db2775179c491800c361d59e73d3e09435488ecc20fa8019d3f89c2e8314e",
+    "ok": true,
+    "truncated": false
+  },
+  {
+    "name": "03_casimir_intertwiners",
+    "tool": "mcp__xact__xact_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/7f81f170d58e-research-result.json",
+    "code_file": "03_casimir_intertwiners.wl",
+    "raw_return_file": "03_casimir_intertwiners.actual-return.json",
+    "result_file": "03_casimir_intertwiners.result.json",
+    "code_sha256": "7cf93696875ea7da0d07ab05f4f8b864326d16e315a4a62b3d962b6317155acd",
+    "ok": true,
+    "truncated": false
+  },
+  {
+    "name": "04_gauge_and_codazzi",
+    "tool": "mcp__xact__xact_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/10ce440310d6-research-result.json",
+    "code_file": "04_gauge_and_codazzi.wl",
+    "raw_return_file": "04_gauge_and_codazzi.actual-return.json",
+    "result_file": "04_gauge_and_codazzi.result.json",
+    "code_sha256": "eaa9f3b2398ccf62dcfd7e9fddb1f71b33307ab425102aa86f2bcbc836464aeb",
+    "ok": true,
+    "truncated": false
+  },
+  {
+    "name": "05_finite_fiber_fp",
+    "tool": "mcp__sage__sage_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/7feeb4d54713-research-result.json",
+    "code_file": "05_finite_fiber_fp.sage",
+    "raw_return_file": "05_finite_fiber_fp.actual-return.json",
+    "result_file": "05_finite_fiber_fp.result.json",
+    "code_sha256": "01f60d053879fbd8585c5cd8865df610e36ef3e1df7a958474a0ede87c005d71",
+    "ok": true,
+    "truncated": false
+  },
+  {
+    "name": "06_weyl_sequence_numeric",
+    "tool": "mcp__sage__sage_run",
+    "original_archive": "/Users/koishi/.dsh/research-results/session-82fc4234f9d6/5484dd605361-research-result.json",
+    "code_file": "06_weyl_sequence_numeric.sage",
+    "raw_return_file": "06_weyl_sequence_numeric.actual-return.json",
+    "result_file": "06_weyl_sequence_numeric.result.json",
+    "code_sha256": "50cc4b64d9c7cbedcf165321e167b5b1af3c0e3f8e791022d382a5ddaaefeff5",
+    "ok": true,
+    "truncated": false
+  }
+]

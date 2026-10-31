@@ -1,0 +1,222 @@
+{
+  "scope": "Static archive/link audit only; no mathematical kernel executed.",
+  "time": "2026-10-31T05:16:49.871619+08:00",
+  "checks": [
+    {
+      "label": "local links and numerical line bounds",
+      "passed": true,
+      "detail": {
+        "documents": 15,
+        "links": 449,
+        "broken": [],
+        "limitation": "Historical anchors are checked for bounds, not unchanged sentence identity."
+      }
+    },
+    {
+      "label": "ten frozen hashes match recorded values",
+      "passed": true,
+      "detail": [
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run01-source.wl",
+          "expected": "e3ee522ec5e5b7361a4009ff6a86bcfce18b440d6a0b567ad0a337803785e58d",
+          "actual": "e3ee522ec5e5b7361a4009ff6a86bcfce18b440d6a0b567ad0a337803785e58d"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run02-source.wl",
+          "expected": "7151a0996f022e7094fc9b1dcc4b4474cf0b652afa0c5c541f35c5c8e3c2fd31",
+          "actual": "7151a0996f022e7094fc9b1dcc4b4474cf0b652afa0c5c541f35c5c8e3c2fd31"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run01-result.wxf",
+          "expected": "7622b64211c632090b1158189852ccec4fba112bec9837f2775147e987325dd8",
+          "actual": "7622b64211c632090b1158189852ccec4fba112bec9837f2775147e987325dd8"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run02-result.wxf",
+          "expected": "46b5bd7a113cc7e7b5254586009b76460d8facb7b39f5afe144bf08abf8dcbfa",
+          "actual": "46b5bd7a113cc7e7b5254586009b76460d8facb7b39f5afe144bf08abf8dcbfa"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/checks-v1.wl",
+          "expected": "431644dddb3f76b582bc83681abd309315b96be48be468a611c79515c2e4057d",
+          "actual": "431644dddb3f76b582bc83681abd309315b96be48be468a611c79515c2e4057d"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/checks-v2.wl",
+          "expected": "3af934f06e4be021dd7fba0b69571b64e54df0f0ffd9a1abc48e5721cebc1b7b",
+          "actual": "3af934f06e4be021dd7fba0b69571b64e54df0f0ffd9a1abc48e5721cebc1b7b"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/supplied-source-13-audit-snapshot.md",
+          "expected": "2b2cc2c05dc31c67491d446a67c99e879ec7f88f713fc1ee673d6e89d38ed0d5",
+          "actual": "2b2cc2c05dc31c67491d446a67c99e879ec7f88f713fc1ee673d6e89d38ed0d5"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/supplied-synthesis-snapshot-20261031.md",
+          "expected": "db85d9305a31691ced1d4079d9e551667fa8cb368ab6c7430825e059aa17d7fd",
+          "actual": "db85d9305a31691ced1d4079d9e551667fa8cb368ab6c7430825e059aa17d7fd"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/dgg-0911.5085v2-fetched.txt",
+          "expected": "e8587a07bf7968b498a57ee950f1fdffb59ab5aedf708041b64e4b751c8267ae",
+          "actual": "e8587a07bf7968b498a57ee950f1fdffb59ab5aedf708041b64e4b751c8267ae"
+        },
+        {
+          "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/mueller-pfaff-1108.2454-fetched.txt",
+          "expected": "65c512d793a96b91a94f259e2d5e48796b29a9f036a631f59183386317836798",
+          "actual": "65c512d793a96b91a94f259e2d5e48796b29a9f036a631f59183386317836798"
+        }
+      ]
+    },
+    {
+      "label": "six exported/raw copies are byte identical",
+      "passed": true,
+      "detail": [
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run01-preview.txt",
+          "original": "/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.Q4iqM5/preview.txt",
+          "byte_equal": true
+        },
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run01-result.wxf",
+          "original": "/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.Q4iqM5/result.wxf",
+          "byte_equal": true
+        },
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run02-preview.txt",
+          "original": "/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.wQLjJM/preview.txt",
+          "byte_equal": true
+        },
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run02-result.wxf",
+          "original": "/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.wQLjJM/result.wxf",
+          "byte_equal": true
+        },
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run01-server-raw.json",
+          "original": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/bb7d4695a29c-research-result.json",
+          "byte_equal": true
+        },
+        {
+          "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/run02-server-raw.json",
+          "original": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/e920e0a37ab2-research-result.json",
+          "byte_equal": true
+        }
+      ]
+    },
+    {
+      "label": "run02 changes only the version accessor",
+      "passed": true
+    },
+    {
+      "label": "current runnable source equals frozen run02",
+      "passed": true
+    },
+    {
+      "label": "actual parent server envelopes retain successful untruncated diagnostics",
+      "passed": true,
+      "detail": [
+        {
+          "file": "run01-server-raw.json",
+          "ok": true,
+          "profile": "components",
+          "truncated": false,
+          "upstreamTruncated": false,
+          "messages": [],
+          "loadErrors": [],
+          "loadMessages": [],
+          "transportStderr": [],
+          "recorded_AllResidualsZero_True": true,
+          "exact_submitted_code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_source_ward_bridge.wl\"]"
+        },
+        {
+          "file": "run02-server-raw.json",
+          "ok": true,
+          "profile": "components",
+          "truncated": false,
+          "upstreamTruncated": false,
+          "messages": [],
+          "loadErrors": [],
+          "loadMessages": [],
+          "transportStderr": [],
+          "recorded_AllResidualsZero_True": true,
+          "exact_submitted_code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_source_ward_bridge.wl\"]"
+        }
+      ]
+    },
+    {
+      "label": "archived Sage labels and retained cutoff counterexample",
+      "passed": true,
+      "detail": {
+        "scope": "Checks recorded outputs, not a rerun or independent mathematical proof."
+      }
+    },
+    {
+      "label": "main display delimiters and aligned environments balance",
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "document_snapshots": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/00 Research report.md",
+      "sha256": "cb3a9b002132770e448c2c2ed79a03c21a2d0dcc6f69782cbbcb959f9aa22c77"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/04 Comparison and open problems.md",
+      "sha256": "915b6123212d3ad992ac021c4a6cd01ac26fd8feabf7818f2c448ca6d55327a7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/13 Source-dependent thermal AdS one-loop Ward comparison.md",
+      "sha256": "2d39ffa0bbf77400bede77259bf02af2e48b8c927a512c4e7ed7156f67061fc5"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/Independent reviews.md",
+      "sha256": "ebbae9c97d5982f3ec17bc6b718d51efe808b8655313603d7ca8d13629a6cb28"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/sources/Source evidence.md",
+      "sha256": "dfcdb8583e053bd789b379bad5ccbeb9e6dd7a976cecda22b87ce5e25d23c183"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/README.md",
+      "sha256": "970d76d92c38cfee5e8710e55e4a4f37a9830101542fa6902a13f4bf54df90a7"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/source-ward-parent.RhLegw/README.md",
+      "sha256": "931171f0a79a7d9479fd69128f3b0f64c07f1347a12f3c929867f03e02de3832"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/REPORT.md",
+      "sha256": "f250c4a27261f923bd6bcca37a261d1b9c98022eb039fa425c2448bd80c8a08f"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/SUPPLIED_TEXT_AUDIT.md",
+      "sha256": "987af024723413e43c0b11c16fbd3dd39a036f69185c395cced292607a76f217"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/report.md",
+      "sha256": "27df5bb4f549b256ff54645c1a2cc4cf4e37e4eba6ec4c9614990bc85f66342b"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/source-evidence.md",
+      "sha256": "cb5f590003b0d8f3793b0bbdd89671b95d219da43798097a7c81c8105de6331a"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/supplied-text-audit-13-sections1-3.md",
+      "sha256": "79f66748308a477558c317a829a50152e7a56741971047d68cc4fc9fc126783c"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/source-response-independent-20261031T043445-9B4EFBFF/source-response-derivation.md",
+      "sha256": "4e0601d67fafc978717135498782b4a523681efc1bd1d0d8eacba9e96e014e43"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/source-response-independent-20261031T043445-9B4EFBFF/evidence-index.md",
+      "sha256": "dee9e8659afe812d0656630e7461418775c766d0355b3052b78e4f1883a06251"
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/source-response-independent-20261031T043445-9B4EFBFF/supplied-text-audit-sections-6-7-20261031T050128.md",
+      "sha256": "160218380188b756aff941fe75c6a9eb9b5ebc4518dc8910de7c792944547653"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_1190c75ddf9741328c4f671bf3dafc4a|fc_0e96cb18f05c3e16016ae50123584481919361dbf429225549",
+  "sessionId": "24e22380-c7c2-4acc-bbc1-55c9590f0771",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "profile": "core",
+    "code": "dir = \"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-functional-analysis-20261031-0434-c71d\";\nsource = FileNameJoin[{dir, \"checks-v1.wl\"}];\nreport = Block[{$MessageList = {}}, result = Get[source]; <|\"Source\" -> source, \"SourceSHA256\" -> FileHash[source, \"SHA256\", \"HexString\"], \"KernelVersion\" -> $Version, \"Result\" -> result, \"Messages\" -> (ToString[#, InputForm] & /@ $MessageList), \"Failed\" -> (result === $Failed || result === $Aborted)|>];\nExport[FileNameJoin[{dir, \"checks-v1-output.wxf\"}], report, \"WXF\"];\nExport[FileNameJoin[{dir, \"checks-v1-output.txt\"}], ToString[report, InputForm, PageWidth -> 110], \"Text\"];\nreport",
+    "timeoutMs": 120000,
+    "maxOutputChars": 18000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": false,\n  \"profile\": \"core\",\n  \"result\": \"$Failed\",\n  \"resultSha256\": \"8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3318,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": false,
+        "profile": "core",
+        "result": "$Failed",
+        "resultSha256": "8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3318,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": false,\n  \"profile\": \"core\",\n  \"result\": \"$Failed\",\n  \"resultSha256\": \"8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3318,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

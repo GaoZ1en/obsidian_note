@@ -1,0 +1,890 @@
+{
+  "diagnostics": {
+    "sage_version": "10.9",
+    "python_version": "3.14.3 (main, Mar  8 2026, 09:55:32) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "completed_utc": "2026-10-30T18:15:26.349733+00:00",
+    "all_checks_passed": true,
+    "number_of_checks": 112,
+    "vacuum_expectation_cache": "CacheInfo(hits=1559, misses=770, maxsize=None, currsize=770)",
+    "verification_limits": "Finite exact checks through levels 8 (Gram), 6 (independent realization and thermal traces); coefficient checks k<=40; normalization bounds K=60. Infinite-dimensional proofs are analytic, not inferred from this finite data."
+  },
+  "checks": [
+    {
+      "label": "Gram symmetric level 0",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 1",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 2",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 3",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 4",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 5",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 6",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 7",
+      "passed": true
+    },
+    {
+      "label": "Gram symmetric level 8",
+      "passed": true
+    },
+    {
+      "label": "Level two norm",
+      "passed": true
+    },
+    {
+      "label": "Level three norm",
+      "passed": true
+    },
+    {
+      "label": "Level four independently hand-derived entries",
+      "passed": true
+    },
+    {
+      "label": "Level five independently hand-derived entries",
+      "passed": true
+    },
+    {
+      "label": "Ising vacuum first extra null level six",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=0",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=1",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=2",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=3",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=4",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=5",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=1 level=6",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=0",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=1",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=2",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=3",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=4",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=5",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=2 level=6",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=0",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=1",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=2",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=3",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=4",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=5",
+      "passed": true
+    },
+    {
+      "label": "Independent free-boson realization c=3 level=6",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=0",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=1",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=2",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=3",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=4",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=5",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=2 level=6",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=0",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=1",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=2",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=3",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=4",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=5",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence generic n=3 level=6",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=0",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=1",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=2",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=3",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=4",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=5",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=2 level=6",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=0",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=1",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=2",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=3",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=4",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=5",
+      "passed": true
+    },
+    {
+      "label": "Thermal finite-block recurrence half n=3 level=6",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=0",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=1",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=2",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=3",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=4",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=5",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=6",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=7",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=8",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=9",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=10",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=11",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=12",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=13",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=14",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=15",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=16",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=17",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=18",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=19",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=20",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=21",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=22",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=23",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=24",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=25",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=26",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=27",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=28",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=29",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=30",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=31",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=32",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=33",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=34",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=35",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=36",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=37",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=38",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=39",
+      "passed": true
+    },
+    {
+      "label": "Binomial squeeze-coefficient recurrence k=40",
+      "passed": true
+    },
+    {
+      "label": "Exact rational normalized partial sum lower bound",
+      "passed": true
+    },
+    {
+      "label": "Exact rational normalized partial sum upper bound",
+      "passed": true
+    },
+    {
+      "label": "Exact rational squeezed mean lower bound",
+      "passed": true
+    },
+    {
+      "label": "Exact rational squeezed mean upper bound",
+      "passed": true
+    },
+    {
+      "label": "Squeezed analytic normalization at tanh r=3/5",
+      "passed": true
+    },
+    {
+      "label": "Squeezed mean formula at tanh r=3/5",
+      "passed": true
+    },
+    {
+      "label": "Squeezed variance formula at tanh r=3/5",
+      "passed": true
+    },
+    {
+      "label": "Two-mode normalization prefactor",
+      "passed": true
+    }
+  ],
+  "virasoro_grams": {
+    "0": {
+      "basis_partitions": [
+        []
+      ],
+      "gram": [
+        [
+          "1"
+        ]
+      ],
+      "determinant_factorized": "1",
+      "rank_at_c_0": 1,
+      "rank_at_c_half": 1,
+      "rank_at_c_1": 1,
+      "rank_at_c_2": 1
+    },
+    "1": {
+      "basis_partitions": [],
+      "gram": [],
+      "determinant_factorized": "1",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 0,
+      "rank_at_c_1": 0,
+      "rank_at_c_2": 0
+    },
+    "2": {
+      "basis_partitions": [
+        [
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "1/2*c"
+        ]
+      ],
+      "determinant_factorized": "(1/2) * c",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 1,
+      "rank_at_c_1": 1,
+      "rank_at_c_2": 1
+    },
+    "3": {
+      "basis_partitions": [
+        [
+          3
+        ]
+      ],
+      "gram": [
+        [
+          "2*c"
+        ]
+      ],
+      "determinant_factorized": "(2) * c",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 1,
+      "rank_at_c_1": 1,
+      "rank_at_c_2": 1
+    },
+    "4": {
+      "basis_partitions": [
+        [
+          4
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "5*c",
+          "3*c"
+        ],
+        [
+          "3*c",
+          "1/2*c^2 + 4*c"
+        ]
+      ],
+      "determinant_factorized": "(5/2) * (c + 22/5) * c^2",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 2,
+      "rank_at_c_1": 2,
+      "rank_at_c_2": 2
+    },
+    "5": {
+      "basis_partitions": [
+        [
+          5
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "10*c",
+          "4*c"
+        ],
+        [
+          "4*c",
+          "c^2 + 6*c"
+        ]
+      ],
+      "determinant_factorized": "(10) * (c + 22/5) * c^2",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 2,
+      "rank_at_c_1": 2,
+      "rank_at_c_2": 2
+    },
+    "6": {
+      "basis_partitions": [
+        [
+          6
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "35/2*c",
+          "5*c",
+          "18*c",
+          "24*c"
+        ],
+        [
+          "5*c",
+          "5/2*c^2 + 8*c",
+          "14*c",
+          "9/2*c^2 + 24*c"
+        ],
+        [
+          "18*c",
+          "14*c",
+          "8*c^2 + 36*c",
+          "30*c"
+        ],
+        [
+          "24*c",
+          "9/2*c^2 + 24*c",
+          "30*c",
+          "3/4*c^3 + 18*c^2 + 96*c"
+        ]
+      ],
+      "determinant_factorized": "(525/2) * (c - 1/2) * (c + 68/7) * (c + 22/5)^2 * c^4",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 3,
+      "rank_at_c_1": 4,
+      "rank_at_c_2": 4
+    },
+    "7": {
+      "basis_partitions": [
+        [
+          7
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          2,
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "28*c",
+          "6*c",
+          "22*c",
+          "30*c"
+        ],
+        [
+          "6*c",
+          "5*c^2 + 10*c",
+          "18*c",
+          "4*c^2 + 32*c"
+        ],
+        [
+          "22*c",
+          "18*c",
+          "10*c^2 + 48*c",
+          "6*c^2 + 42*c"
+        ],
+        [
+          "30*c",
+          "4*c^2 + 32*c",
+          "6*c^2 + 42*c",
+          "c^3 + 20*c^2 + 96*c"
+        ]
+      ],
+      "determinant_factorized": "(1400) * (c - 1/2) * (c + 68/7) * (c + 22/5)^2 * c^4",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 3,
+      "rank_at_c_1": 4,
+      "rank_at_c_2": 4
+    },
+    "8": {
+      "basis_partitions": [
+        [
+          8
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "gram": [
+        [
+          "42*c",
+          "7*c",
+          "26*c",
+          "60*c",
+          "36*c",
+          "44*c",
+          "240*c"
+        ],
+        [
+          "7*c",
+          "35/4*c^2 + 12*c",
+          "22*c",
+          "30*c",
+          "5*c^2 + 40*c",
+          "9*c^2 + 54*c",
+          "48*c^2 + 192*c"
+        ],
+        [
+          "26*c",
+          "22*c",
+          "20*c^2 + 60*c",
+          "90*c",
+          "54*c",
+          "16*c^2 + 80*c",
+          "210*c"
+        ],
+        [
+          "60*c",
+          "30*c",
+          "90*c",
+          "50*c^2 + 160*c",
+          "30*c^2 + 96*c",
+          "84*c",
+          "54*c^2 + 576*c"
+        ],
+        [
+          "36*c",
+          "5*c^2 + 40*c",
+          "54*c",
+          "30*c^2 + 96*c",
+          "5/2*c^3 + 45*c^2 + 128*c",
+          "14*c^2 + 112*c",
+          "9*c^3 + 168*c^2 + 768*c"
+        ],
+        [
+          "44*c",
+          "9*c^2 + 54*c",
+          "16*c^2 + 80*c",
+          "84*c",
+          "14*c^2 + 112*c",
+          "4*c^3 + 66*c^2 + 252*c",
+          "60*c^2 + 540*c"
+        ],
+        [
+          "240*c",
+          "48*c^2 + 192*c",
+          "210*c",
+          "54*c^2 + 576*c",
+          "9*c^3 + 168*c^2 + 768*c",
+          "60*c^2 + 540*c",
+          "3/2*c^4 + 72*c^3 + 1056*c^2 + 4608*c"
+        ]
+      ],
+      "determinant_factorized": "(5512500) * (c + 3/5) * (c + 46/3) * (c - 1/2)^2 * (c + 68/7)^2 * (c + 22/5)^4 * c^7",
+      "rank_at_c_0": 0,
+      "rank_at_c_half": 5,
+      "rank_at_c_1": 7,
+      "rank_at_c_2": 7
+    }
+  },
+  "thermal_trace_checks": {
+    "generic": {
+      "2": {
+        "dimensions": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          4
+        ],
+        "unnormalized_A_coefficients_k_0_through_6": [
+          "1/2*c",
+          "0",
+          "c + 8",
+          "1/2*c + 12",
+          "2*c + 40",
+          "3/2*c + 52",
+          "4*c + 136"
+        ]
+      },
+      "3": {
+        "dimensions": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          4
+        ],
+        "unnormalized_A_coefficients_k_0_through_6": [
+          "2*c",
+          "0",
+          "2*c + 12",
+          "4*c + 18",
+          "4*c + 48",
+          "6*c + 72",
+          "12*c + 162"
+        ]
+      }
+    },
+    "half": {
+      "2": {
+        "dimensions": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "unnormalized_A_coefficients_k_0_through_6": [
+          "1/4",
+          "0",
+          "17/2",
+          "49/4",
+          "41",
+          "211/4",
+          "455/4"
+        ]
+      },
+      "3": {
+        "dimensions": [
+          1,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3
+        ],
+        "unnormalized_A_coefficients_k_0_through_6": [
+          "1",
+          "0",
+          "13",
+          "20",
+          "50",
+          "75",
+          "131"
+        ]
+      }
+    }
+  },
+  "squeezed_state_checks": {
+    "tanh_r": "3/5",
+    "cosh_r": "5/4",
+    "sinh_r": "3/4",
+    "normalized_vacuum_probability": "4/5",
+    "mean_number": "9/16",
+    "variance_number": "225/128",
+    "partial_sum_cutoff_K": 60,
+    "norm_missing_mass_100_bit_decimal": "7.7140800183377721672431250868e-29",
+    "rigorous_norm_tail_bound_100_bit_decimal": "7.7487699628337583704624482188e-29",
+    "mean_missing_mass_100_bit_decimal": "9.4968910547603351804049294056e-27",
+    "rigorous_mean_tail_bound_100_bit_decimal": "9.5406730167390649936318893694e-27",
+    "exact_partial_norm": "78124999999999999999999999993973374985673615494341308525969347468962884708229139789456190232666246531301676268211861191/78125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "exact_norm_tail_bound": "193719249070843959261561205470558984277302440892166906879886351208061825100277838603111332459/2500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "exact_mean_partial": "1098632812499999999999999981451384658671220350771622254733790759851901668674813966300059825628476386976198330662680423/1953125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "exact_mean_tail_bound": "38162692066956259974527557477700119902628580855756880655337611187988179544754734204812932494423/4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "two_mode_tanh_values": [
+      "3/5",
+      "-5/13"
+    ],
+    "two_mode_vacuum_overlap_squared": "48/65",
+    "two_mode_mean_H_for_modes_2_3": "79/48"
+  }
+}

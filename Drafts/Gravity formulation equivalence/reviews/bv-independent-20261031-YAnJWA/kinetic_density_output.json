@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_8df7b22ef4254d898b60d0c92b745923|fc_0beee4d74a95702a016ae52602f8c08191b28ed6b50a5aad18",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\nfrom hashlib import sha256\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/bv-independent-20261031-YAnJWA/kinetic_density_check.py')\ns=p.read_text(encoding='utf-8')\nprint('Source SHA256:',sha256(s.encode()).hexdigest())\nexec(compile(s,str(p),'exec'),{'__name__':'__main__'})",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Source SHA256: 699d3e71aba6e92a430ef3e0e8bd2a7d5e4c69f5a169cdda2249f39ac8a5631d\\nFULL raw kinetic pullback minus geometric = d I(e e*): PASS\\nraw CS kinetic minus minimal CS kinetic = d(tau E*): PASS\\nFULL minimal kinetic pullback boundary primitive: PASS\\nALL FULL KINETIC-DENSITY CHECKS PASSED; arbitrary first jets; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"902fe2077d0505d16114b6935049a17b6f61c5007dd7390d20b074df72a94559\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3913,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9869b089466651a6d15cad57389d209916b7ce371ad11c2795fcbb1ab80f1d00\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Source SHA256: 699d3e71aba6e92a430ef3e0e8bd2a7d5e4c69f5a169cdda2249f39ac8a5631d\nFULL raw kinetic pullback minus geometric = d I(e e*): PASS\nraw CS kinetic minus minimal CS kinetic = d(tau E*): PASS\nFULL minimal kinetic pullback boundary primitive: PASS\nALL FULL KINETIC-DENSITY CHECKS PASSED; arbitrary first jets; SageMath 10.9\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "902fe2077d0505d16114b6935049a17b6f61c5007dd7390d20b074df72a94559",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3913,
+        "transportStderr": [],
+        "codeSha256": "9869b089466651a6d15cad57389d209916b7ce371ad11c2795fcbb1ab80f1d00"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Source SHA256: 699d3e71aba6e92a430ef3e0e8bd2a7d5e4c69f5a169cdda2249f39ac8a5631d\\nFULL raw kinetic pullback minus geometric = d I(e e*): PASS\\nraw CS kinetic minus minimal CS kinetic = d(tau E*): PASS\\nFULL minimal kinetic pullback boundary primitive: PASS\\nALL FULL KINETIC-DENSITY CHECKS PASSED; arbitrary first jets; SageMath 10.9\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"902fe2077d0505d16114b6935049a17b6f61c5007dd7390d20b074df72a94559\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3913,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9869b089466651a6d15cad57389d209916b7ce371ad11c2795fcbb1ab80f1d00\"\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kernel": "SageMath 10.9",
+  "normalization": "hbar=1; Witt [l_m,l_n]=(m-n)l_(m+n)",
+  "scope": "Algebraic finite-crossing determinant cocycle, isotropy counterexample, and formal Ward recurrence",
+  "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_polarized_determinant.py",
+  "source_sha256": "347260dfbc4c8c21ef79e6fdf13318a7712229c3731513ff4c10d4d025fe5b55",
+  "checks": {
+    "tensor_density_Witt_representation_polynomial": true,
+    "finite_crossing_sum_general_weight_and_threshold": true,
+    "Chevalley_Eilenberg_cocycle_polynomial": true,
+    "threshold_change_is_explicit_zero_mode_cochain": true,
+    "adjoint_threshold_minus_one_vacuum_cocycle": true,
+    "adjoint_threshold_two_same_vacuum_cocycle": true,
+    "dual_half_determinant_algebraic_cocycle": true,
+    "vacuum_cocycle_vanishes_on_projective_subalgebra": true,
+    "finite_band_crossing_matrices_match_polynomial": true,
+    "compressed_action_has_nonzero_interior_representation_defect": true,
+    "naively_compressed_trace_fails_cocycle_Jacobi": true,
+    "constant_energy_shift_keeps_cubic_central_coefficient": true,
+    "projective_vacuum_normalization_forces_offset_zero": true,
+    "thermal_Ward_recurrence_coefficients_through_level14": true
+  },
+  "check_count": 14,
+  "all_passed": true,
+  "details": {
+    "general_sigma_m_minus_m": "-m^3*lam^2 + m^3*lam - 1/6*m^3 + m*r^2 - m*r + 1/6*m",
+    "general_determinant_central_coefficient": "-12*lam^2 + 12*lam - 2",
+    "adjoint_vacuum_cocycle": "-13/6*m^3 + 13/6*m",
+    "dual_half_cocycle_if_that_line_is_chosen": "13/12*m^3 - 13/12*m",
+    "matrix_comparisons": 2904,
+    "compressed_Jacobi_counterexample_modes": [
+      2,
+      3,
+      -5
+    ],
+    "compressed_Jacobi_residual": "112",
+    "compressed_diagonal_examples": {
+      "1": "0",
+      "2": "0",
+      "3": "0",
+      "4": "-36",
+      "5": "-112",
+      "6": "-241"
+    },
+    "constant_zero_mode_shift_central_term": "1/12*c*k^3 - 1/12*c*k - 2*a*k",
+    "thermal_series_scope": "Recurrence/series check only; analytic trace argument is separate.",
+    "descendant_coefficients_through_level14": [
+      1,
+      0,
+      1,
+      1,
+      2,
+      2,
+      4,
+      4,
+      7,
+      8,
+      12,
+      14,
+      21,
+      24,
+      34
+    ],
+    "thermal_numerator_series": {
+      "2": "41*q^14*cc + 3752*q^14 + 53/2*q^13*cc + 2316*q^13 + 24*q^12*cc + 1848*q^12 + 29/2*q^11*cc + 1068*q^11 + 27/2*q^10*cc + 840*q^10 + 15/2*q^9*cc + 452*q^9 + 15/2*q^8*cc + 360*q^8 + 7/2*q^7*cc + 164*q^7 + 4*q^6*cc + 136*q^6 + 3/2*q^5*cc + 52*q^5 + 2*q^4*cc + 40*q^4 + 1/2*q^3*cc + 12*q^3 + q^2*cc + 8*q^2 + 1/2*cc",
+      "3": "116*q^14*cc + 4188*q^14 + 84*q^13*cc + 2808*q^13 + 70*q^12*cc + 2106*q^12 + 48*q^11*cc + 1332*q^11 + 36*q^10*cc + 936*q^10 + 28*q^9*cc + 594*q^9 + 20*q^8*cc + 408*q^8 + 12*q^7*cc + 216*q^7 + 12*q^6*cc + 162*q^6 + 6*q^5*cc + 72*q^5 + 4*q^4*cc + 48*q^4 + 4*q^3*cc + 18*q^3 + 2*q^2*cc + 12*q^2 + 2*cc",
+      "4": "255*q^14*cc + 4976*q^14 + 170*q^13*cc + 3152*q^13 + 155*q^12*cc + 2528*q^12 + 95*q^11*cc + 1480*q^11 + 85*q^10*cc + 1168*q^10 + 50*q^9*cc + 656*q^9 + 50*q^8*cc + 512*q^8 + 25*q^7*cc + 248*q^7 + 25*q^6*cc + 208*q^6 + 10*q^5*cc + 80*q^5 + 15*q^4*cc + 64*q^4 + 5*q^3*cc + 24*q^3 + 5*q^2*cc + 16*q^2 + 5*cc"
+    }
+  }
+}

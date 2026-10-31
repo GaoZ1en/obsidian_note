@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_356c29f9b6934da1abc80dedf6281bf6|fc_0afa0b7a4e3b2591016ae5018e44208191b09b15d628675f29",
+  "sessionId": "b98397fa-08d9-4d67-b5a4-616c875ca72a",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/checks_xact.wl\"]",
+    "profile": "components",
+    "timeoutMs": 120000,
+    "maxOutputChars": 16000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Engine\\\" -> {\\\"1.4.2\\\", {2014, 10, 30}}, \\\"RicciComponents\\\" -> {{-2*(1 + rr[]^2), 0, 0}, {0, -2/(1 + rr[]^2), 0}, {0, 0, -2*rr[]^2}}, \\\"RicciPlus2g\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"ScalarCurvature\\\" -> -6, \\\"EinsteinResidualIsZero\\\" -> True, \\\"ScalarCurvatureIsMinus6\\\" -> True, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"2deff4ede781cb278bb74187d388b6b06b8257db7f8ee58b3f7a10a81d5c1ed8\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 2986,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"Engine\" -> {\"1.4.2\", {2014, 10, 30}}, \"RicciComponents\" -> {{-2*(1 + rr[]^2), 0, 0}, {0, -2/(1 + rr[]^2), 0}, {0, 0, -2*rr[]^2}}, \"RicciPlus2g\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \"ScalarCurvature\" -> -6, \"EinsteinResidualIsZero\" -> True, \"ScalarCurvatureIsMinus6\" -> True, \"Messages\" -> {}|>",
+        "resultSha256": "2deff4ede781cb278bb74187d388b6b06b8257db7f8ee58b3f7a10a81d5c1ed8",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 2986,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"Engine\\\" -> {\\\"1.4.2\\\", {2014, 10, 30}}, \\\"RicciComponents\\\" -> {{-2*(1 + rr[]^2), 0, 0}, {0, -2/(1 + rr[]^2), 0}, {0, 0, -2*rr[]^2}}, \\\"RicciPlus2g\\\" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, \\\"ScalarCurvature\\\" -> -6, \\\"EinsteinResidualIsZero\\\" -> True, \\\"ScalarCurvatureIsMinus6\\\" -> True, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"2deff4ede781cb278bb74187d388b6b06b8257db7f8ee58b3f7a10a81d5c1ed8\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 2986,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/spectral-bv-parent-yjui1p6u/executed-source.py",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/executed-source.py",
+    "sha256": "5cbbffe20bd5812ad5b0955c9ad88d0e68572fe6a74e2c50c23a602e99c69a76",
+    "byte_identical": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/spectral-bv-parent-yjui1p6u/result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/result.json",
+    "sha256": "954a7973cf93836faf9070a88f6e37bd527cd056dc80d201b1cb6a8be6f8b3c0",
+    "byte_identical": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/spectral-bv-parent-yjui1p6u/ghost_exact.sobj",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/ghost_exact.sobj",
+    "sha256": "747a61ba6b8d43a3e057ee1cf299e4b2535bd4b482c074d6d86a1a64475f5f60",
+    "byte_identical": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/spectral-bv-parent-yjui1p6u/source.sha256",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/source.sha256",
+    "sha256": "1946c7bb13dcf07fa19530fbdc9ad26ddc8bb40f04dff655c9a6386b669785d0",
+    "byte_identical": true
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/ea35a645de5e-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/spectral-bv-parent.w1iz7yst/actual-server-return.json",
+    "sha256": "3398cf857f5b6701d6e3ebfad7035a5b5d99f0e39b77ba91a16a7be4c9631180",
+    "byte_identical": true
+  }
+]

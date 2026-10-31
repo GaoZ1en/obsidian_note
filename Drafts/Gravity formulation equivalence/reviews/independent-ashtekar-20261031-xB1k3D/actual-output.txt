@@ -1,0 +1,61 @@
+<|"Results" -> <|"Conventions" -> 
+    "kappa=8 pi G>0; Omega=deltaTheta; i_X Omega=-deltaH; gamma=+/-i; full antisym sums", 
+   "InternalStarAndHolst" -> <|"star matrix, basis 01,02,03,12,13,23" -> 
+      {{0, 0, 0, 0, 0, -1}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, -1, 0, 0}, {0, 0, 1, 0, 0, 0}, 
+       {0, -1, 0, 0, 0, 0}, {1, 0, 0, 0, 0, 0}}, "star squared plus identity residual" -> {{0, 0, 
+      0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+      {0, 0, 0, 0, 0, 0}}, "star:(Gamma,K)->(-K,Gamma) residual" -> {0, 0, 0, 0, 0, 0}, 
+     "projector ranks, s=+1,-1" -> {3, 3}, 
+     "Holst P_beta=star-beta^-1, beta=s i; retained/null residuals" -> 
+      {{{{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}, {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}}, 
+       {{{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}, {{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, 
+         {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}}}|>, 
+   "ChiralCompatibility" -> <|"Sigma^i=E^i-i e^0 wedge e^i; map a -> epsilon a wedge Sigma" -> 
+      {{0, 0, 0, 0, 1, 0, 0, 0, 0, -I, 0, 0}, {0, 0, 0, 0, 0, I, 0, 0, 1, 0, 0, 0}, 
+       {0, 0, 0, 0, 0, 0, I, 0, 0, 0, 0, I}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0}, 
+       {-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, -I, 0}, {0, -I, 0, 0, 0, 0, 0, 0, 0, 0, 0, -I}, 
+       {0, 0, -I, 0, 0, 0, 0, 0, 1, 0, 0, 0}, {0, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0}, 
+       {0, I, 0, 0, 0, 0, I, 0, 0, 0, 0, 0}, {-1, 0, 0, 0, 0, 0, 0, I, 0, 0, 0, 0}, 
+       {0, 0, 0, -I, -1, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0}}, 
+     "retained connection compatibility rank" -> 12, 
+     "retained connection compatibility determinant" -> -16|>, 
+   "TimeGaugeNormalization" -> <|"Palatini time-gauge potential" -> 
+      dkay[1, 1]/kap + dkay[2, 2]/kap + dkay[3, 3]/kap, 
+     "Holst time-gauge potential, negative Holst sign" -> dgam[1, 1]/(beta*kap) + 
+       dgam[2, 2]/(beta*kap) + dgam[3, 3]/(beta*kap), "normalization residuals" -> {0, 0}|>, 
+   "TriadBoundaryIdentity" -> 
+    <|"coefficient of d(e_i wedge delta e^i) after varied torsion equation" -> 
+      2*dgam[1, 1] + 2*dgam[2, 2] + 2*dgam[3, 3], "coefficient of E_i wedge delta Gamma^i" -> 
+      dgam[1, 1] + dgam[2, 2] + dgam[3, 3], 
+     "corner identity residual, d(e delta e)-2E delta Gamma" -> 0|>, 
+   "ConstraintsAtArbitraryCurvaturePoint" -> <|"Gauss residual for symmetric K" -> {0, 0, 0}, 
+     "vector minus gamma (d_a trK-d_b K_ab)" -> {0, 0, 0}, "general-gamma scalar residual" -> 0, 
+     "gamma=+i,-i ADM scalar residuals" -> {0, 0}|>, "NonorthogonalTriad" -> 
+    <|"nonorthogonal positive triad determinant" -> 3, "inverse triad residual" -> {{0, 0, 0}, {0, 
+      0, 0}, {0, 0, 0}}, "nonorthogonal KK scalar residual" -> 0, "nonorthogonal Gauss residual" -> 
+      {0, 0, 0}|>, "CurvedProductSlice" -> <|"triad e=(dx,sin(x)dy,dz), Gamma^3=cos(x)dy, R=2" -> 
+      True, "curved Gauss residual" -> {0, 0, 0}, "curved vector residual" -> {0, 0, 0}, 
+     "curved scalar residual, both chiral signs" -> {0, 0}|>, "NonLorentzianConstraintDatum" -> 
+    <|"E" -> {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}, "A" -> {{1, 0, 0}, {0, 1, 0}, {0, 0, -1/2}}, 
+     "Gauss, vector, scalar constraints" -> {{0, 0, 0}, {0, 0, 0}, 0}, 
+     "independent curvature components F_12^3,F_23^1,F_31^2" -> {1, -1/2, -1/2}, 
+     "A+bar(A)-2Gamma(E), nonzero" -> {{2, 0, 0}, {0, 2, 0}, {0, 0, -1}}, 
+     "K at gamma=i, not real" -> {{-I, 0, 0}, {0, -I, 0}, {0, 0, I/2}}|>, 
+   "HomogeneousEvolution" -> <|"Hamiltonian (densitized lapse nn), Lambda optional" -> 
+      (nn*(c1*c2*p1*p2 + c1*c3*p1*p3 + c2*c3*p2*p3 + Lambda*p1*p2*p3))/kap, 
+     "p-dot, gamma=i and c=i h" -> {nn*p1*(h2*p2 + h3*p3), nn*p2*(h1*p1 + h3*p3), 
+       nn*(h1*p1 + h2*p2)*p3}, "h-dot, gamma=i and c=i h" -> 
+      {-(nn*(h1*h2*p2 + h1*h3*p3 - Lambda*p2*p3)), -(nn*(h1*h2*p1 + h2*h3*p3 - Lambda*p1*p3)), 
+       -(nn*(h1*h3*p1 + h2*h3*p2 - Lambda*p1*p2))}, "both chiral signs agree in (p,h)" -> 
+      {0, 0, 0, 0, 0, 0}, "constraint derivative" -> 0, 
+     "reality-preserving vacuum datum p=(1,1,1),h=(1,1,-1/2), p-dot" -> {nn/2, nn/2, 2*nn}, 
+     "same datum with nn=i leaves real p, p-dot" -> {I/2, I/2, 2*I}|>, 
+   "InhomogeneousLapseCompensator" -> 
+    <|"bare scalar E-dot at flat E=1,K=0 and real nonconstant lapse" -> 
+      {{0, gam*nz, -(gam*ny)}, {-(gam*nz), 0, gam*nx}, {gam*ny, -(gam*nx), 0}}, 
+     "Gauss compensator lambda=-gamma gradN, residual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+     "bare metric inverse variation residual" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}|>|>, 
+ "FailedOrAbortedPresent" -> False, "Messages" -> {}|>

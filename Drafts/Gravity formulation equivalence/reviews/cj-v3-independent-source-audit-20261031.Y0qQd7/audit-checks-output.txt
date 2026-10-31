@@ -1,0 +1,10 @@
+<|"Kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Assumptions" -> "C=cb>0; B=bb real. TT formulas at separated w on the y>0 analytic branch. eps>0 approaches \
+zero. beta>0, a real. Quadratic check uses tau=i*tau2, tau2>0, phi=theta+a cos(2theta).", 
+ "ZetaVacuumSum" -> -13/12, "SmoothCutoffVacuumSum" -> SeriesData[eps, 0, {1, 0, -13/12, 1, -119/240}, -2, 3, 
+   1], "HeatKernelGammaFinitePart" -> -13/(6*Pi), "HeatKernelCutoffExpansion" -> 
+  SeriesData[eps, 0, {9/(4*Pi^(3/2)), -13/(6*Pi)}, -1, 1, 2], "TTExchangeResidual" -> 0, 
+ "TTLoopResidual" -> 0, "TTTotalResidual" -> 0, "TTLeadingSingularity" -> (1 + cb)/2, 
+ "CylinderPointSplitCurrentFinitePart" -> -cb^(-1), "LocalizationBosonCounterexample" -> (-2*a^2*Pi^2)/beta, 
+ "StaticN2QuadraticActionCoefficientFrom58" -> (cb*Pi*tau2)/2, 
+ "StaticN2QuadraticActionCoefficientPrinted518" -> cb*Pi*tau2, "Messages" -> {}|>

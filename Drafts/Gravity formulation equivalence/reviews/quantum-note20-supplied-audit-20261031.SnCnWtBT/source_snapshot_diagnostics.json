@@ -1,0 +1,16 @@
+{
+  "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/20 One-loop BV transport and complete AdS trace obstructions.md",
+  "sha256": "f572d3bec740f01ab48cd63bad798d4f42eec47ea5e839523895af8c3bc6f0ef",
+  "bytes": 29657,
+  "scope": "supplied text \u00a7\u00a73\u20136 only; no new kernel run; no source edit",
+  "controls": [
+    {
+      "line": 225,
+      "column": 38,
+      "codepoint": "U+0008",
+      "escaped_line": "' +\\\\frac{t}{\\\\kappa}\\\\operatorname{tr}\\\\!\\x08igl[B_te_0^{-1}(\\\\iota_{\\\\chi_t}W)\\\\bigr].}'"
+    }
+  ],
+  "basis": "read-tool inspection of entire \u00a7\u00a73\u20136 and earlier established operator conventions; fresh analytic check of radial sine transform, norm, positivity, and retained trace",
+  "frozen_prior_artifacts": "not modified"
+}

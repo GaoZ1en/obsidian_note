@@ -1,0 +1,397 @@
+         Wick-rotating to Euclidean time t = −iy, the Euclidean action corresponding to (2.31)
+is                                          Z        ¯ 0 00           
+                                     C           2   (∂φ )φ      ¯   0
+                               SE =             d x          + B(∂φ)φ ,                                  (2.36)
+                                    24π                φ02
+with ∂¯ = 12 (∂θ + i∂y ). Its real part is
+                                                         Z
+                                           Re(SE ) =         dy H(y) .                                   (2.37)
+
+So not only is H bounded below, but so is the real part of the Euclidean action. Thus it is at
+least plausible that the functional integral corresponding to the theory (2.31) is well-defined.
+     A similar variational argument demonstrates that for the other orbits B < −1, H still
+has a single critical point but its Hessian is not positive definite: the n = ±1 fluctuations
+decrease the value of H. It is also easy to exhibit kink-like configurations for φ(θ) which have
+arbitrarily large and negative values of H. Thus we expect the path integral to not exist for
+                                       C
+orbits with B < −1, i.e. for b0 < − 48π  , for which the real part of the Euclidean action is not
+bounded below.
+     The action (2.31) describes a two-dimensional chiral quantum field theory. It is nearly
+a chiral CFT since it satisfies all of the CFT axioms except modular invariance. Indeed, we
+will see later that the spectrum is a single Verma module. In order to avoid any ambiguity,
+we will call the theory a QFT rather than a CFT.
+     The left-moving stress tensor is just the Hamiltonian density
+                                                        C
+                                  T = 2πT−− = −            {φ, θ} + 2πb0 φ02 ,                           (2.38)
+                                                        12
+and in fact the field equation for φ is just the conservation of this stress tensor,
+
+                                                     ∂+ T = 0 .                                          (2.39)
+
+In this sense, the theory (2.31) is just a theory of the stress tensor, and so is an unconventional
+kind of hydrodynamics.2
+     The theory (2.31) is not manifestly Lorentz-invariant. However, this should not be sur-
+prising: the theory (2.31) is chiral, and there is no manifestly Lorentz-invariant Lagrangian
+for a single chiral boson. What is this chiral theory? The action (2.31) clearly admits a weak
+coupling limit C  1, and in that limit the semiclassical Ln ’s
+                                     Z 2π                          
+                                                C                02
+                           Ln = −         dθ       {φ, θ} − b0 φ      einθ ,                 (2.40)
+                                      0        24π
+have Poisson brackets
+                                                                     C 3
+                             {Ln , Lm }P.B. = (n − m)Ln+m +             n δn+m ,                         (2.41)
+                                                                     12
+     2
+     A naı̈ve computation also gives a left-moving stress tensor [12]. However, as we will see in Subsection 3.5,
+this stress tensor is identically zero after the addition of a suitable improvement term.
+
+
+
+
+                                                      – 15 –
+indicating that C plays the role of the chiral central charge at large C. At finite C we
+will see that C has a one-loop exact renormalization. Moreover at the origin of the orbit,
+φ = θ, we have L0 = 2πb0 . So at large C we expect that the Hilbert space of the quantized
+theory is a single Verma module with lowest weight state |hi where h has the classical value
+              C
+h = 2πb0 + 24   , which may receive quantum corrections at finite C. For the first exceptional
+orbit, the classical value of h is h = 0, and in this case we expect the Hilbert space to be
+the vacuum Verma module. Roughly speaking, the Fourier modes of the field φ(θ) = θ + δφ
+correspond to the Virasoro generators Ln , and the Virasoro descendant states are built up by
+dressing the ground state with excitations of the φ field. Later in Section 5 we will see that
+these expectations are correct.
+     In the classical theory it is easy to enforce that at any fixed t, φ(θ, t) is a Diff(S1 )/S field,
+i.e. that it is monotone and obeys φ(θ + 2π, t) = φ(θ, t) + 2π. What about in the quantum
+theory? The boundary condition and quotient can be accounted for with standard techniques,
+but a priori one might be concerned about enforcing that φ is monotone at fixed t. It turns
+out that, at least for the Euclidean theory, we can extend the domain of path integration
+from monotone φ to all φ: the real part of the action (2.36) diverges for non-monotone φ, so
+that the region of field space with non-monotone φ contributes zero to the Euclidean path
+integral.
+     In the Introduction we claimed that the theory (2.31) is ultraviolet-complete. We presently
+justify this claim. In this theory one assigns φ dimension −1, so that φ0 and φ̇ are dimen-
+sionless. For the first exceptional orbit, it is a straightforward exercise to demonstrate that
+there are no candidate relevant local counterterms invariant under the P SL(2; R) symmetry.
+Further, there is a unique dimension–2 operator consistent with the P SL(2; R) and Lorentz
+symmetries that may be generated, namely the Lagrangian itself. That is, quantum correc-
+tions may only renormalize the bare central charge C. In Section 5 we demonstrate that this
+renormalization is one-loop exact and under it only C is shifted.
+     The argument for the normal orbits is similar, although the quotient is smaller and so
+there are more invariant local operators. For example, any polynomial in φ0 is U (1)-invariant
+and has mass dimension 0. However, Lorentz invariance forbids almost all relevant and almost
+all marginal operators from being generated. Indeed the combination of the Lorentz and U (1)
+symmetries only allow C and b0 to be renormalized, and as above their renormalization is
+one-loop exact, shifting C.
+     The fact that the theory in Eq. (2.31) has a single real field with a tunable central charge
+is reminiscent of Liouville theory. Of course the two are not the same. The theory in Eq. (2.31)
+is chiral whereas Liouville is not. The chiral theory has a Hilbert space with a single Verma
+module, while Liouville theory has a continuous spectrum. Nevertheless, there is a precise
+relation [15, 47], namely that Liouville theory between so-called ZZ-branes has been argued
+to reduce to the Alekseev-Shatashvili theory considered here.
+     At the beginning of this Section we mentioned that the path integral quantization of a
+coadjoint orbit only exists when the symplectic flux is quantized. This issue is slightly more
+subtle when quantizing the orbits of the infinite-dimensional Virasoro group, as the measure
+
+
+
+
+                                               – 16 –
+may be anomalous. One requires that [dφ]eiS is well-defined. However, this does not appear
+to lead to a quantization condition on C.
+
+3   From AdS3 gravity to coadjoint orbits
+
+Pure AdS3 gravity is described by the action
+                                                √
+                                         Z
+                                     1
+                              S=            d3 x −g(R + 2) ,                              (3.1)
+                                   16πG
+plus suitable boundary terms. (Here and throughout we set the AdS radius to unity.) Fa-
+mously, it may be rewritten as Chern-Simons theory at the classical level [48] (see [6, 49] for
+a discussion of quantum aspects thereof). One groups the dreibein eA M and spin connection
+ A
+ω BM into one-forms
+                            AA = ω A + eA ,    ĀA = ω A − eA ,                          (3.2)
+where
+                                           1
+                                      ω A = ABC ωBC ,                               (3.3)
+                                           2
+and flat indices A, B, C are raised and lowered with the Minkowski metric ηAB . Taking JA
+and J¯A to be generators in the fundamental representation of the so(2, 1) algebra,
+
+                         [JA , JB ] = ABC J C ,       tr(JA JB ) = 2ηAB ,                (3.4)
+
+we define the algebra-valued one-forms A = AA JA and Ā = ĀA J¯A . The Einstein-Hilbert
+action may be rewritten as a difference of Chern-Simons actions for A and Ā,
+                      Z                                                     
+                  1                                             2
+           S=             I[A] − I[Ā] ,     I[A] = tr A ∧ dA + A ∧ A ∧ A ,        (3.5)
+                64πG                                             3
+
+again up to a boundary term. On a classical solution, the one-forms A and Ā transform
+as independent SO(2, 1) connections under the combination of infinitesimal diffeomorphisms
+and local Lorentz transformations. In this way, classical pure AdS3 gravity can be mapped
+to Chern-Simons theory.
+     As stressed in [6], the Chern-Simons fields are the natural variables in which to quantize
+three-dimensional gravity in perturbation theory around a classical geometry. Indeed, in the
+next Subsection we carefully quantize around global AdS3 , accounting for the asymptotically
+AdS3 boundary conditions. However, there are various non-perturbative puzzles as discussed
+in detail in [6]. Most importantly, one expects a theory of quantum gravity to include a
+sum over topologies, whereas the natural procedure in Chern-Simons theory is to quantize on
+a constant-time slice of fixed topology. Also, while infinitesimal diffeomorphisms and local
+Lorentz rotations correspond to infinitesimal SO(2, 1) × SO(2, 1) gauge transformations for A
+and Ā, the same is not necessarily true for globally non-trivial transformations. Furthermore,
+this classical map only establishes the local form of the gauge group of the Chern-Simons
+theory, but not its global topology. The minimal possibility is SO(2, 1) × SO(2, 1), but a
+
+
+
+
+                                              – 17 –
+priori perhaps one should instead consider a cover thereof. (Although as we will discuss
+shortly, physical considerations fix that the group is SO(2, 1) × SO(2, 1) [50].)
+     In the remainder of this Section we work out various aspects of the Chern-Simons formula-
+tion. In the next Subsection we carefully derive the boundary graviton action (1.4) advertised
+in the Introduction from the Chern-Simons theory on the cylinder. Related computations give
+the appropriate theory when the bulk spacetime is a Euclidean BTZ geometry. We also couple
+the theory (1.4) to a background geometry, which allows us to work toward a description of
+Chern-Simons theory on handlebody Euclidean AdS3 geometries with higher-genus boundary.
+
+3.1   Cylinder boundary
+We begin with global AdS3 , described by the metric
+                                                                 dr2
+                             g = −(r2 + 1)dt2 + r2 dθ2 +               ,                   (3.6)
+                                                                r2 + 1
+where θ is an angular variable with periodicity 2π. The conformal boundary is located as
+r → ∞. Constant-time slices are disks, so that the total space is a solid cylinder. Describing
+the bulk metric with the dreibein
+                         p                                        dr
+                    e0 = r2 + 1 dt ,      e1 = rdθ ,     er = √          ,               (3.7)
+                                                                 r2 + 1
+this geometry corresponds to
+                           p                               dr
+                       A = r2 + 1 dx+ J0 + rdx+ J1 + √           J2 ,
+                                                          r2 + 1
+                                                                                           (3.8)
+                           p                               dr
+                       Ā = r2 + 1 dx− J¯0 + rdx− J¯1 − √        J¯2 ,
+                                                          r2 + 1
+where x± = ±t + θ.
+    In the AdS3 literature it is common to work in a different convention than the one we
+used in the beginning of this Section. In this more common convention one writes out the
+Chern-Simons gauge fields as 2 × 2 matrices, i.e. takes the JA and J¯A to be the generators of
+the fundamental representation of sl(2; R). In this choice, we write out A and Ā as
+                          √                                            √            
+                          ( r2 +1−r)dx+                                  ( r2 +1+r)dx−
+               √dr      −                               −    √dr       −
+                r2 +1            2                             r2 +1            2
+   A =  (√r22 +1+r)dx+
+                                        ,     Ā =  (√r2 2+1−r)dx  −
+                                                                                        . (3.9)
+                                dr                                            dr
+                2          −   √
+                             2 r2 +1                          2
+                                                                            √
+                                                                           2 r2 +1
+
+In the Chern-Simons formulation the Einstein’s equations and torsion-free constraint corre-
+spond to A and Ā being flat. So locally we have
+
+                                A = g −1 dg ,       Ā = ḡ −1 dḡ −1 ,                  (3.10)
+
+and one may find representatives for g and ḡ,
+                +            +                         −        − 
+          ρ cos x2 −ρ−1 sin x2                       ρ−1 cos x2 −ρ sin x2
+     g=        +            +  ,         ḡ =          −       −  ,          (3.11)
+          ρ sin x2     ρ−1 cos x2                     ρ−1 sin x2  ρ cos x2
+
+
+
+
+                                                – 18 –
+where                                              qp
+                                            ρ=       r2 + 1 + r .                                     (3.12)
+    These representatives illustrate two facts which will be useful. First, these representatives
+are double-valued: going around the circle θ → θ + 2π takes us from g → −g and ḡ → −ḡ.
+Relatedly, the SL(2; R) × SL(2; R) holonomy around the spatial circle is non-trivial:
+                                 R 2π                         R 2π
+                                        dφ Aφ                        dφ Āφ
+                              Pe 0              = −I ,    Pe 0                = −I .                  (3.13)
+
+It follows that A and Ā are singular as SL(2; R) connections.
+     This seems like an undesirable state of affairs. Global AdS3 ought to be a non-singular
+configuration. Fortunately there is a simple remedy: rather than working with SL(2; R) we
+quotient it by the Z2 subgroup {I, −I}, thereby identifying g ∈ SL(2; R) with −g. The
+resulting group is SL(2; R)/Z2 = P SL(2; R) = SO(2, 1). It follows that A and Ā are perfectly
+non-singular as SO(2, 1) connections. A corollary is that A and Ā are singular as connections
+for any cover of SO(2, 1) × SO(2, 1).
+     That is, if we demand that global AdS3 is a non-singular configuration, then the gauge
+group of the Chern-Simons theory is fixed to be SO(2, 1) × SO(2, 1). To our knowledge this
+was first noted in [50].
+     The second fact is the following. SO(2, 1) is contractible to its maximum compact sub-
+group SO(2). At fixed (t, r), g and ḡ are maps from the spatial circle θ into this subgroup,
+winding the group circle exactly once. Because any classical configuration is locally AdS3 ,
+this is an example of a more general lesson: given any solution to Einstein’s equations with
+a contractible cycle C, writing the connections A and Ā as (3.10), the gauge transformation
+parameters wind the group circle once around C.
+     We proceed to quantize on this space following [10, 11]. (For work related to [10] and the
+WZW description of Chern-Simons theory on AdS3 see [51, 52].) We separate A and Ā into
+temporal and spatial parts,
+
+                             A = A0 dt + Ãi dxi ,        Ā = Ā0 dt + Ā˜i dxi .                    (3.14)
+
+The total action, including boundary terms is
+
+                                        Sgrav = S[A] − S[Ā] + Sbdy ,                                 (3.15)
+
+with3
+                                       Z                                 
+                                     k          0     1       ˙
+                           S[A] = −      dt ∧ tr − Ã ∧ Ã + A0 F̃ ,
+                                    2π M              2
+                                       Z                                                              (3.16)
+                                     k
+                                          d2 x tr0 (A2θ ) + tr0 (Ā2θ ) .
+                                                                       
+                           Sbdy = −
+                                    4π ∂M
+   3
+    We choose an orientation so that tθr = √1−g . Also, in (3.16), we are using a different convention for k
+than in the Introduction, with kthere = 4khere .
+
+
+
+
+                                                     – 19 –
+Here k = 4G   1
+                , F̃ is the spatial field strength F̃ = d˜Ã + Ã ∧ Ã with d˜ the spatial exterior
+derivative, and tr0 denotes the trace in the fundamental representation of SL(2; R). The
+unconventional boundary term is required [10] in order to enforce a variational principle
+consistent with the AdS3 boundary conditions,4 which are that A and Ā asymptote as r → ∞
+as [3, 10]
+                                           !                                            !
+           dr
+               +  O(r −2 )     O(r −1 )                − dr
+                                                            + O(r  −2 ) −rdx− + O(r −1 )
+  A=       2r                                , Ā =      2r                                , (3.17)
+         rdx+ + O(r−1 ) − dr 2r + O(r )
+                                        −2                 O(r−1 )        dr      −2
+                                                                          2r + O(r )
+
+and A and Ā are allowed to fluctuate at the indicated powers in 1/r. The connections
+describing global AdS3 (3.9) clearly respect these boundary conditions. Consistent with these
+boundary conditions, we only allow bulk gauge transformations Λ and Λ̄ which die off near
+the AdS boundary.
+    The on-shell variation of the action, including the boundary term, is
+                                  Z
+                                k
+                                        d2 x tr0 (A− δAθ ) + tr0 Ā+ δ Āθ ,
+                                                                         
+                    δSgrav = −                                                         (3.18)
+                                π ∂M
+
+which vanishes by the boundary conditions (3.17) as advertised.
+     The fields A0 and Ā0 appear as Lagrange multiplier fields inside the action (3.15), en-
+forcing the constraint that the spatial field strength vanishes. We observe that although A0
+and Ā0 drop out of the action, they can be gauge-fixed in a way that is consistent with the
+asymptotically AdS3 boundary conditions. Namely, we may fix them to their values for global
+AdS3 in (3.9) as
+                                 √         !                          √         !
+                                   r2 +1−r                              r2 +1+r
+                         0     −      2                        0           2
+               A0 = √r2 +1+r                 ,     Ā0 =    √
+                                                              r2 +1−r
+                                                                                  .    (3.19)
+                          2         0                     −      2         0
+
+    Before going on, some words are in order regarding gauge-fixing and ghosts. In the usual
+equivalence between CS theory on a cylinder and a chiral WZW model on its boundary,
+one allows for bulk gauge transformations that vanish at the boundary of the cylinder. The
+details of the bulk gauge fixing are then immaterial from the point of view of the WZW
+model, as any ghosts introduced by the gauge-fixing decouple on the boundary. Indeed, in
+the natural gauge choice A0 = 0, the Fadeev-Popov determinant does not introduce a coupling
+between the ghosts and the physical degrees of freedom. Similar considerations hold for our
+gauge theory in AdS, as we require that all bulk gauge transformations fall off near the AdS
+boundary.
+    The remaining functional integral is taken over the moduli space of flat connections on
+the disk, which we parameterize as
+
+                                      Ã = g −1 dg
+                                                ˜ ,      Ā˜ = ḡ −1 dḡ
+                                                                     ˜ .                            (3.20)
+  4
+      A similar boundary term appears in the treatment of ordinary Chern-Simons theory on AdS3 [53, 54].
+
+
+
+
+                                                  – 20 –
+This decomposition is redundant: we get the same spatial connection A for g(~x, t) and
+h(t)g(~x, t) for any h(t) ∈ P SL(2; R), and similarly for Ā˜. We identify these configurations in
+the residual integral over g, so that the field g is subject to a quasi-local SO(2, 1) quotient.
+    In terms of g the original action (3.15) becomes a difference of chiral WZW actions,
+
+                                           S = S− [g] + S+ [ḡ] ,                                             (3.21)
+
+with
+                     Z                                Z                                                 
+                 k           2   0      −1 0
+                                                  1           0     −1            −1            −1
+       S± [g] =             d x tr (g     ) ∂± g ∓           tr (g        dg ∧ g        dg ∧ g        dg) .   (3.22)
+                2π     ∂M                          6     M
+
+Here ∂± = 21 (∂θ ± ∂t ) and 0 indicates an angular derivative. Now recall the topological
+property of the map g we noted above for global AdS3 . In the quantum theory we enforce
+the same property: around the contractible θ-circle, we integrate over g and ḡ which wind
+once around the circle in SO(2, 1). It remains to enforce this boundary condition as well as
+to translate the AdS3 boundary conditions (3.17) into boundary conditions on g and ḡ.
+     To proceed we find it helpful to use a Gauss parameterization of SL(2; R) group elements
+as in [12],5                               !        !      !
+                                       1 0    λ 0      1Ψ
+                                g=                            .                         (3.23)
+                                       F 1    0 λ−1    0 1
+The corresponding spatial connection is
+                                                                               !
+                            d˜ln λ − Ψ(λ2 dF
+                                          ˜ )        2Ψd˜ln λ + dΨ
+                                                                 ˜ − Ψ2 (λ2 dF
+                                                                            ˜ )
+                     Ã =                                                        .                            (3.24)
+                                   λ ˜
+                                    2 dF                 −d˜ln λ + Ψ(λ2 ˜
+                                                                       dF )
+
+Comparing with (3.17) we see that the fields λ and Ψ are fixed as r → ∞ in terms of F as
+
+                                                      F 00
+                                   r
+                                      r
+                              λ=         ,     Ψ = −       ,                        (3.25)
+                                     F0              2rF 0
+
+with F finite. The constraint on λ comes from matching the bottom left components of (3.17)
+and (3.24), and the constraint on Ψ comes from matching the diagonal components. There
+are similar relations for the barred fields, for which it is convenient to parameterize ḡ as
+                                             !          !        !
+                                      1 −F̄      λ̄−1 0     1 0
+                                ḡ =                               .                       (3.26)
+                                      0 1          0 λ̄     Ψ̄ 1
+
+The asymptotically AdS boundary conditions enforce that as r → ∞
+
+                                                    F̄ 00
+                                  r
+                                     r
+                             λ̄ =        ,  Ψ̄ = −        .                                                   (3.27)
+                                    F̄ 0           2rF̄ 0
+  5
+     The Gauss parameterization, with F, Ψ ∈ R and λ > 0, covers P SL(2; R) but not SL(2; R). This is
+sufficient for our purposes.
+
+
+
+
+                                                    – 21 –
+

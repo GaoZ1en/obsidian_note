@@ -1,0 +1,162 @@
+{
+  "scope": "static archival/link integrity only; no mathematical verification or rerun",
+  "timestamp_utc": "2026-10-30T20:28:16.196781+00:00",
+  "script_sha256": "f0f3532b5f95d312072802e908afdac137f099c39988344497ff607d928263a1",
+  "documents": {
+    "README.md": "f3404db8392261354d7cceea3d125d9ad97962ffe3d2b3aa0f3c9e6d1a162c67",
+    "00 Research report.md": "8a77a6a1e1161236ba8c5ab4b57d350b620e14792dfc476c2bbb8ff8e6c40134",
+    "04 Comparison and open problems.md": "8d51f6b419cbe578cfef5a8556f1fb9de09819e3a8fa55666f27a35658377215",
+    "10 Vacuum quantum equivalence benchmark.md": "45a7e99be1886ab3d0a7392c8d351d7d07af161b511f8516d7f1bd10fe780fea",
+    "11 Projective vacuum curvature and global lifts.md": "8df2f59d25d3d672399f281268313a4607d1f75a0173530446397da841a35202",
+    "12 Fredholm determinant of the vacuum tangent bundle.md": "9744faf64de79e446d0061a43781705232cd1a3cf8241d87dec1e6e8c1004ca8",
+    "verification/README.md": "3ff84bbd9731d5530e790da94e26fe7bba6dee2f2e6f7a3ff85e0f12827e6e9a",
+    "reviews/Independent reviews.md": "3ef8c6b893704592efd336f3c90bb9705c82301ab4b392efc0f5c956d4f3cefa",
+    "sources/Source evidence.md": "b2e7c6e187295e52b06df77f3ee458d83ec24b1aa70c807cb5f85bab968dfb56",
+    "reviews/independent-detlift-20261031.8djLkr/supplied-text-audit-sections-7-8.md": "e68a3648b364962a13cc43b490fdca5ffe7545db8ccac868a83eaaed0a7490e3",
+    "reviews/analytic-welding-evidence.RdV6Bs/evidence-index.md": "9027db72c6e46677cd678106936f8dd31f8aa668d3acdf5983ebbf11d4cdbb62",
+    "reviews/relative-fredholm-independent.txN5Fm/metric_lift_supplement.md": "aae2efc17c7258ff964852a9277e2d09b0cfd53ecd84f7b68b4f5d3cdcbb32bd",
+    "reviews/supplied-global-big-cell-audit-RdV6Bs.md": "40ad73795228a36b4d997cfb9e3a1398ee2bba9878cd009c5a298ffaa0f9fd06"
+  },
+  "local_link_occurrences": 424,
+  "line_fragment_occurrences": 22,
+  "remote_links_not_fetched": 17,
+  "broken_links_or_fragments": [],
+  "hash_checks": [
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.results.txt",
+      "expected_sha256": "82add602fbb5af6d177df544518662b9eccb0cc844674a45f0c086fd96f2c2cb",
+      "sha256_match": true,
+      "byte_count_match": true,
+      "original_present": true,
+      "original_byte_equal": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.results.wxf",
+      "expected_sha256": "23e51c84e53a960a7f0112c188be58521f3abb252a50880f301397cf89a6fa0c",
+      "sha256_match": true,
+      "byte_count_match": true,
+      "original_present": true,
+      "original_byte_equal": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.actual-tool-return.json",
+      "expected_sha256": "6c1ceb8a659cc4b4b6b9e9a57cc9c7e97a1da3d6f586006c89457b50905a865b",
+      "sha256_match": true,
+      "byte_count_match": true,
+      "original_present": true,
+      "original_byte_equal": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_critical_gram.results.json",
+      "expected_sha256": "3f35098a303d144ff5ad08bf16007b69cb014c71ca57f4d8df96180f05fa1621",
+      "sha256_match": true,
+      "byte_count_match": true,
+      "original_present": true,
+      "original_byte_equal": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.wl",
+      "expected_sha256": "fa242fcbf8e1fe17a4210ee3dd9e5be2939c10b2229d41599f2e57e4e46261f5",
+      "sha256_match": true,
+      "byte_count_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_critical_gram.py",
+      "expected_sha256": "79e0f86bdfd80db5f79c7d267970dfd31f076164c61a3055f335a78870f2b6f0",
+      "sha256_match": true,
+      "byte_count_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/lanzadecristoforis-preciso-2003.pdf",
+      "expected_sha256": "1c003696d3c8326ed5736f3f15ac72f33515aec98659a2a18c8bef992bc2335a",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/checks.wl",
+      "expected_sha256": "0309de501a771dc2619abec9fdb458905a640af5b3529f78cb0769f9de6061b2",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/kernel-checks.txt",
+      "expected_sha256": "78b4a9a11cf836c8d73d120045aca0665f0ede4bfc1e035fcaac8e2e381feb9c",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/failed-inline-mcp-return.json",
+      "expected_sha256": "a2f65272aee7400dccc90e298a6181294a791da057e630915088d8fa2e0e5094",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/failed-inline-source.wl",
+      "expected_sha256": "8b6650369c7865e3a600bab8a88db57b6d895266e50580b89a84bf1f66ba41a2",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/successful-mcp-return.json",
+      "expected_sha256": "1d17ac284791688ce4dfd336c73b3064a8f6198ec552966500186f499e5bc728",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/successful-invocation.wl",
+      "expected_sha256": "1e5687a885a00b1ada559dcd3f729c723e5fce5dca2dadaa6c8036d0e35718c1",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/exact_checks.mcp-return.json",
+      "expected_sha256": "31115abb1b393f5bd723d6f1e553b74117099f7305c9662d0cfbde0fff0f5996",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/geometric_checks.mcp-return.json",
+      "expected_sha256": "b92b6a6c0887796e17db06c831816a454c324b33c04e9066839cfa19e68fcadd",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/exact_checks.wl",
+      "expected_sha256": "3f23513c5ca70085c5f23730466cf5b406c4269fdf5bae22c62535b8be4a1bcc",
+      "sha256_match": true
+    },
+    {
+      "path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/geometric_checks.wl",
+      "expected_sha256": "b079b5b686729fce9b5fdf08af807e708492f6cc64e0ef3c2ea350227b2d777b",
+      "sha256_match": true
+    }
+  ],
+  "invocation_checks": [
+    {
+      "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/failed-inline-mcp-return.json",
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/failed-inline-source.wl",
+      "decoded_arguments_byte_equal": true,
+      "upstream_truncated": false
+    },
+    {
+      "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/successful-mcp-return.json",
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/analytic-welding-evidence.RdV6Bs/successful-invocation.wl",
+      "decoded_arguments_byte_equal": true,
+      "upstream_truncated": false
+    },
+    {
+      "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/exact_checks.mcp-return.json",
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/exact_checks.executed-source.wl",
+      "decoded_arguments_byte_equal": false,
+      "upstream_truncated": false
+    },
+    {
+      "raw": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/geometric_checks.mcp-return.json",
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/relative-fredholm-independent.txN5Fm/geometric_checks.executed-source.wl",
+      "decoded_arguments_byte_equal": false,
+      "upstream_truncated": false
+    }
+  ],
+  "checks": {
+    "local_link_targets_and_line_bounds": true,
+    "all_expected_hashes": true,
+    "manifest_byte_counts": true,
+    "all_four_private_original_copies_equal": true,
+    "verbatim_archived_invocations": false,
+    "four_invocation_envelopes_untruncated": true,
+    "syntax_failure_preserved": true,
+    "unexecuted_draft_explicitly_labeled": true
+  },
+  "all_static_checks_pass": false
+}

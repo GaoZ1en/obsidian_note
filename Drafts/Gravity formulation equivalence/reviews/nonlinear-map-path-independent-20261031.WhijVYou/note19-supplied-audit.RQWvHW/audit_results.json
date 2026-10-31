@@ -1,0 +1,51 @@
+{
+  "audit_kind": "post-freeze supplied-note19 audit, not independent initial derivation",
+  "supplied_note_sha256": "c8b23c76b1e7526b4cf4c284f01778ac9a8d5fbdfd9baafbb6fd75903ff034f9",
+  "frozen_engine_sha256": "924dcb2815cd65f15d568c6e7b4825e2ca91080d95098f0484b28013d4678a9b",
+  "checks": [
+    {
+      "label": "note19 eq16 component ordering and normalization",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "note19 eq15 cubic right generator",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "note19 exact determinant-cleared eq2 equals eq13",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "determinant-cleared resolvent cubic jet",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "determinant-cleared resolvent quartic jet",
+      "passed": true,
+      "residual_terms": 0
+    },
+    {
+      "label": "omitting 2F4 in note19 eq16 is detected",
+      "passed": true,
+      "nonzero_terms": 18
+    },
+    {
+      "label": "opposite coframe-resolvent sign is detected at degree4",
+      "passed": true,
+      "nonzero_terms": 108
+    },
+    {
+      "label": "missing half in logarithm is detected",
+      "passed": true,
+      "nonzero_terms": 108
+    }
+  ],
+  "all_passed": true,
+  "elapsed_seconds": 2.850371837615967,
+  "Gamma13_numerator_terms": 348,
+  "Gamma2_numerator_terms": 348
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_8b06b35751f642d78c773cc6023b4551|fc_00e61ec4e4885aea016ae4f64665608191884f42f512278054",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.wl\"]\n```\n\nOutput:\n<|Directory -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO, Preview -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/preview.txt, Exact -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/result.wxf, AllResidualsZero -> True, Failed -> False, UnevaluatedComputations -> False, Messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.wl\"]\n```\n\nOutput:\n<|Directory -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO, Preview -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/preview.txt, Exact -> /Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/result.wxf, AllResidualsZero -> True, Failed -> False, UnevaluatedComputations -> False, Messages -> {}|>"
+      }
+    ]
+  }
+}

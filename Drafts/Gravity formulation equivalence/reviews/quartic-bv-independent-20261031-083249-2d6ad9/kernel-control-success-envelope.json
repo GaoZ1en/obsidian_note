@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_6ff3e52b192f4515a540e7469abf2d43|fc_02d642bd9644763a016ae53bbf47b08191804be95b95df4605",
+  "sessionId": "e7f7c652-ceb5-4351-abae-6962f22c75bf",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/quartic-bv-independent-20261031-083249-2d6ad9/torus-color-control.sage.py')\nexec(compile(p.read_text(encoding='utf-8'),str(p),'exec'))",
+    "timeoutMs": 600000,
+    "maxOutputChars": 5000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Exact torus color-projection control; Sage 10.9\\nSame constant-form dgla and flat A0=e1 J3 as the endpoint test.\\nCONTROL CHANGE: UV is X1,X2 in ALL form degrees; h=(ad J3)^-1 i1 R.\\n32 retained coordinates. The projected binary color bracket is itself Lie.\\nS4 is NONZERO, with 42 exact monomials, including ghost antifields.\\n(S3P,S3P)=0 and (S2P,S4)=0 separately, verified exactly.\\nThus nonminimal DP!=0 and nonzero S4 do not alone make the quartic master cancellation a nontrivial two-sided test.\\nThis control is not used as evidence for the nonzero-side identity; the main endpoint torus and Heisenberg fixtures provide that evidence.\\n\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a9ee98872b3dafba7e9e009357f6f6e485f811838cbadd8c5a29bc719674e752\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3438,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ec0b509f4144a1eb9b98130ed6e4e05704a0c8414ac011c69de783f72070725c\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "Exact torus color-projection control; Sage 10.9\nSame constant-form dgla and flat A0=e1 J3 as the endpoint test.\nCONTROL CHANGE: UV is X1,X2 in ALL form degrees; h=(ad J3)^-1 i1 R.\n32 retained coordinates. The projected binary color bracket is itself Lie.\nS4 is NONZERO, with 42 exact monomials, including ghost antifields.\n(S3P,S3P)=0 and (S2P,S4)=0 separately, verified exactly.\nThus nonminimal DP!=0 and nonzero S4 do not alone make the quartic master cancellation a nontrivial two-sided test.\nThis control is not used as evidence for the nonzero-side identity; the main endpoint torus and Heisenberg fixtures provide that evidence.\n\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "a9ee98872b3dafba7e9e009357f6f6e485f811838cbadd8c5a29bc719674e752",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3438,
+        "transportStderr": [],
+        "codeSha256": "ec0b509f4144a1eb9b98130ed6e4e05704a0c8414ac011c69de783f72070725c"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"Exact torus color-projection control; Sage 10.9\\nSame constant-form dgla and flat A0=e1 J3 as the endpoint test.\\nCONTROL CHANGE: UV is X1,X2 in ALL form degrees; h=(ad J3)^-1 i1 R.\\n32 retained coordinates. The projected binary color bracket is itself Lie.\\nS4 is NONZERO, with 42 exact monomials, including ghost antifields.\\n(S3P,S3P)=0 and (S2P,S4)=0 separately, verified exactly.\\nThus nonminimal DP!=0 and nonzero S4 do not alone make the quartic master cancellation a nontrivial two-sided test.\\nThis control is not used as evidence for the nonzero-side identity; the main endpoint torus and Heisenberg fixtures provide that evidence.\\n\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"a9ee98872b3dafba7e9e009357f6f6e485f811838cbadd8c5a29bc719674e752\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3438,\n  \"transportStderr\": [],\n  \"codeSha256\": \"ec0b509f4144a1eb9b98130ed6e4e05704a0c8414ac011c69de783f72070725c\"\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_ea61dfe844bd4c318383654f2ced2d85|fc_00e61ec4e4885aea016ae50376cfbc8191ab7a7c38611cc2f4",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "profile": "components",
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_source_ward_bridge.wl\"]",
+    "timeoutMs": 180000,
+    "maxOutputChars": 10000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"OutputDirectory\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.wQLjJM\\\", \\\"Checks\\\" -> <|\\\"xCoba_scalar_curvature_linear\\\" -> 0, \\\"source_trace_anomaly\\\" -> 0, \\\"source_conservation_Ward\\\" -> 0, \\\"covariant_vs_canonical_contact\\\" -> 0, \\\"nonzero_temporal_zero_spatial_contact\\\" -> 0, \\\"vacuum_kernel_PSL_factor\\\" -> (cc$18282*(-1 + n$18282)*n$18282*(1 + n$18282))/12 - (cc$18282*n$18282*(-1 + n$18282^2))/12, \\\"geodesic_cutoff_inverse\\\" -> 0, \\\"renormalized_volume_Weyl_finite_part\\\" -> 0, \\\"density_to_anomaly_normalization\\\" -> 0, \\\"constant_Beltrami_linear_modulus\\\" -> 0, \\\"constant_Beltrami_Hessian\\\" -> 0, \\\"constant_Beltrami_stress_response\\\" -> 0, \\\"sinusoidal_Weyl_source_integral\\\" -> 0|>, \\\"AllResidualsZero\\\" -> True, \\\"Failed\\\" -> False, \\\"UnevaluatedComputations\\\" -> False, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"f36b843c98bf103be036da4ae17da1b804884544a22f22065454dc96e1cb8234\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3323,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": true,
+        "profile": "components",
+        "result": "<|\"OutputDirectory\" -> \"/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.wQLjJM\", \"Checks\" -> <|\"xCoba_scalar_curvature_linear\" -> 0, \"source_trace_anomaly\" -> 0, \"source_conservation_Ward\" -> 0, \"covariant_vs_canonical_contact\" -> 0, \"nonzero_temporal_zero_spatial_contact\" -> 0, \"vacuum_kernel_PSL_factor\" -> (cc$18282*(-1 + n$18282)*n$18282*(1 + n$18282))/12 - (cc$18282*n$18282*(-1 + n$18282^2))/12, \"geodesic_cutoff_inverse\" -> 0, \"renormalized_volume_Weyl_finite_part\" -> 0, \"density_to_anomaly_normalization\" -> 0, \"constant_Beltrami_linear_modulus\" -> 0, \"constant_Beltrami_Hessian\" -> 0, \"constant_Beltrami_stress_response\" -> 0, \"sinusoidal_Weyl_source_integral\" -> 0|>, \"AllResidualsZero\" -> True, \"Failed\" -> False, \"UnevaluatedComputations\" -> False, \"Messages\" -> {}|>",
+        "resultSha256": "f36b843c98bf103be036da4ae17da1b804884544a22f22065454dc96e1cb8234",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3323,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": true,\n  \"profile\": \"components\",\n  \"result\": \"<|\\\"OutputDirectory\\\" -> \\\"/Users/koishi/.dsh/research-results/kernel-exports/source-ward-parent.wQLjJM\\\", \\\"Checks\\\" -> <|\\\"xCoba_scalar_curvature_linear\\\" -> 0, \\\"source_trace_anomaly\\\" -> 0, \\\"source_conservation_Ward\\\" -> 0, \\\"covariant_vs_canonical_contact\\\" -> 0, \\\"nonzero_temporal_zero_spatial_contact\\\" -> 0, \\\"vacuum_kernel_PSL_factor\\\" -> (cc$18282*(-1 + n$18282)*n$18282*(1 + n$18282))/12 - (cc$18282*n$18282*(-1 + n$18282^2))/12, \\\"geodesic_cutoff_inverse\\\" -> 0, \\\"renormalized_volume_Weyl_finite_part\\\" -> 0, \\\"density_to_anomaly_normalization\\\" -> 0, \\\"constant_Beltrami_linear_modulus\\\" -> 0, \\\"constant_Beltrami_Hessian\\\" -> 0, \\\"constant_Beltrami_stress_response\\\" -> 0, \\\"sinusoidal_Weyl_source_integral\\\" -> 0|>, \\\"AllResidualsZero\\\" -> True, \\\"Failed\\\" -> False, \\\"UnevaluatedComputations\\\" -> False, \\\"Messages\\\" -> {}|>\",\n  \"resultSha256\": \"f36b843c98bf103be036da4ae17da1b804884544a22f22065454dc96e1cb8234\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3323,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

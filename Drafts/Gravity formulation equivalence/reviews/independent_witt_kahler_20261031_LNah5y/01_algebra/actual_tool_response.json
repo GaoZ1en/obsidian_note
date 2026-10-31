@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_2a8c50ba82c742d192823a55f2fd3385|fc_0588255e40b180b5016ae4ea1f67088191a2a3be243e607b19",
+  "sessionId": "a9b2f8af-30c9-4e97-9c04-e08ac08f0e41",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "source = r'''from sage.all import *\nimport sage.version\nfrom pathlib import Path\nimport os, tempfile, json\nR = PolynomialRing(QQ, names=('m','n'))\nm,n=R.gens(); K=R.fraction_field()\nw=lambda x: x*(x*x-1)\nf=lambda x: K((x+2*m)**2*w(x)/w(x+m))\ntail=K(2*m*n + (n+m)**2*w(n-m)/w(n) - f(n))\npoly=n*n+m*n-2*m*m\nrem=f(n)-poly\nfactor_text=lambda x: '0' if x==0 else str(x.factor())\nresidual=(2*m+n)*w(n)-(m+2*n)*w(m)-(n-m)*w(m+n)\nanswer={\n 'sage_version':sage.version.version,\n 'positive_torsion_residual':str(residual),\n 'f_exact_remainder':factor_text(rem),\n 'curvature_tail_factored':factor_text(tail),\n 'formal_tail_coefficient':str(2*m*m*(m*m-1))\n}\nS=PolynomialRing(QQ,'t'); t=S.gen(); F=S.fraction_field()\nanswer['finite_m_tails']={}\nfor mm in range(1,9):\n    expr=F(tail(m=mm,n=t))\n    num=expr.numerator(); den=expr.denominator()\n    lim=QQ(num.leading_coefficient())/QQ(den.leading_coefficient()) if num!=0 and num.degree()+2==den.degree() else (0 if num==0 else 'unexpected degree')\n    answer['finite_m_tails'][str(mm)]={'factor':factor_text(expr), 'n2_limit':str(lim)}\nstore=Path(os.environ.get('DSH_HOME') or (Path.home()/'.dsh'))/'research-results'/'kernel-exports'; store.mkdir(parents=True, exist_ok=True, mode=0o700)\nout=Path(tempfile.mkdtemp(prefix='sage-witt-fresh-algebra-',dir=store))\nsave({'ring':R,'f':f(n),'tail':tail,'remainder':rem,'answer':answer},str(out/'result.sobj'))\n(out/'output.json').write_text(json.dumps(answer,indent=2)+'\\n',encoding='utf-8')\n'''\nexec(compile(source,'fresh_witt_algebra.py','exec'))\n(out/'source.py').write_text(source,encoding='utf-8')\nprint(str(out/'output.json')); print(str(out/'result.sobj')); print(str(out/'source.py'))",
+    "timeoutMs": 200000,
+    "maxOutputChars": 10000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/output.json\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/result.sobj\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/source.py\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"9f6d56edb341e9aa7d5e19b985780c9c6abbfdd001e16a18708f4b8e5b5efe5b\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3292,\n  \"transportStderr\": [],\n  \"codeSha256\": \"edb3e8d14a9d5ca2bc82ac042400e27bf82b7d7c3e7ce8438ac9630c2f0bdd28\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/output.json\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/result.sobj\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/source.py\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "9f6d56edb341e9aa7d5e19b985780c9c6abbfdd001e16a18708f4b8e5b5efe5b",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3292,
+        "transportStderr": [],
+        "codeSha256": "edb3e8d14a9d5ca2bc82ac042400e27bf82b7d7c3e7ce8438ac9630c2f0bdd28"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/output.json\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/result.sobj\\n/Users/koishi/.dsh/research-results/kernel-exports/sage-witt-fresh-algebra-ufp7a1f0/source.py\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"9f6d56edb341e9aa7d5e19b985780c9c6abbfdd001e16a18708f4b8e5b5efe5b\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3292,\n  \"transportStderr\": [],\n  \"codeSha256\": \"edb3e8d14a9d5ca2bc82ac042400e27bf82b7d7c3e7ce8438ac9630c2f0bdd28\"\n}"
+      }
+    ]
+  }
+}

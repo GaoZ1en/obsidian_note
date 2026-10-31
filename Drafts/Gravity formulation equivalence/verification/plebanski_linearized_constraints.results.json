@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_06f0131eb6a74e09a91b3c1c24bbd366|fc_00e61ec4e4885aea016ae4cabbb64881918a8efa60dedf38ed",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/plebanski_linearized_constraints.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/plebanski_linearized_constraints.wl\"]\n```\n\nOutput:\n<|Scope -> Linearized time gauge at Minkowski, p=Identity and q=0; homogeneous/spatial-zero-jet transverse simplicity test. Not full nonlinear constraint algebra, not a global phase-space classification., Checks -> <|simplicity_full_sum_normalization -> True, canonical_BF_potential_normalization -> True, spatial_torsion_dual_identity -> True, spatial_torsion_rank_nine -> True, boost_Gauss_annihilates_symmetric_Gamma -> True, boost_Gauss_detects_all_antisymmetric_Gamma -> True, symmetric_basis_is_orthonormal -> True, simplicity_compatibility_bracket -> True, full_twelve_constraint_matrix -> True, Dirac_determinant -> True, original_wedge_Gamma_quadratic -> True, primary_preservation_gives_spatial_compatibility -> True, symmetric_secondary_map_invertible -> True|>, AllPassed -> True, TorsionMapDeterminant -> 2, GammaLagrangian -> (gg[1, 2]*gg[2, 1])/kap - (gg[1, 1]*gg[2, 2])/kap + (gg[1, 3]*gg[3, 1])/kap + (gg[2, 3]*gg[3, 2])/kap - (gg[1, 1]*gg[3, 3])/kap - (gg[2, 2]*gg[3, 3])/kap, PrimaryPreservationMap -> {{0, -1, -1, 0, 0, 0}, {-1, 0, -1, 0, 0, 0}, {-1, -1, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}}, DiracMatrix -> {{0, 0, 0, 0, 0, 0, -kap, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, -kap, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, -kap, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, -kap, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -kap, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -kap}, {kap, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, kap, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, kap, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, kap, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, kap, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, kap, 0, 0, 0, 0, 0, 0}}, DiracDeterminant -> kap^12, Messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/plebanski_linearized_constraints.wl\"]\n```\n\nOutput:\n<|Scope -> Linearized time gauge at Minkowski, p=Identity and q=0; homogeneous/spatial-zero-jet transverse simplicity test. Not full nonlinear constraint algebra, not a global phase-space classification., Checks -> <|simplicity_full_sum_normalization -> True, canonical_BF_potential_normalization -> True, spatial_torsion_dual_identity -> True, spatial_torsion_rank_nine -> True, boost_Gauss_annihilates_symmetric_Gamma -> True, boost_Gauss_detects_all_antisymmetric_Gamma -> True, symmetric_basis_is_orthonormal -> True, simplicity_compatibility_bracket -> True, full_twelve_constraint_matrix -> True, Dirac_determinant -> True, original_wedge_Gamma_quadratic -> True, primary_preservation_gives_spatial_compatibility -> True, symmetric_secondary_map_invertible -> True|>, AllPassed -> True, TorsionMapDeterminant -> 2, GammaLagrangian -> (gg[1, 2]*gg[2, 1])/kap - (gg[1, 1]*gg[2, 2])/kap + (gg[1, 3]*gg[3, 1])/kap + (gg[2, 3]*gg[3, 2])/kap - (gg[1, 1]*gg[3, 3])/kap - (gg[2, 2]*gg[3, 3])/kap, PrimaryPreservationMap -> {{0, -1, -1, 0, 0, 0}, {-1, 0, -1, 0, 0, 0}, {-1, -1, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}}, DiracMatrix -> {{0, 0, 0, 0, 0, 0, -kap, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, -kap, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, -kap, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, -kap, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -kap, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -kap}, {kap, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, kap, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, kap, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, kap, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, kap, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, kap, 0, 0, 0, 0, 0, 0}}, DiracDeterminant -> kap^12, Messages -> {}|>"
+      }
+    ]
+  }
+}

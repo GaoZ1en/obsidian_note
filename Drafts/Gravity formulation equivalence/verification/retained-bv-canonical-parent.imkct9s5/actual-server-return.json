@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_ec006e3339be42f1a2a95c6e84002e3e|fc_00e61ec4e4885aea016ae547ec151c8191a8a11612d2aeba3e",
+  "sessionId": "session-4d21f900-3f0b-486f-9f7c-7fae381c1711",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/retained_bv_canonical_jet_checks.py')\nexec(compile(p.read_text(),str(p),'exec'),{'__name__':'__main__','__file__':str(p)})",
+    "timeoutMs": 240000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\\"export\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x\\\", \\\"all_passed\\\": true, \\\"checks\\\": 18, \\\"counts\\\": {\\\"F3_exterior_terms\\\": 21, \\\"F4_exterior_terms\\\": 18, \\\"F5_exterior_terms\\\": 1, \\\"G4_exterior_terms\\\": 57}}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"08daf8ea9f496c7043b2fcd0b189aa538462418327fa9e1e56306b50837f7c3e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3595,\n  \"transportStderr\": [],\n  \"codeSha256\": \"4d0bd02d9de6d4eb88e8c4870e151bae166570fcdd29c7518440afb6b646cb61\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\"export\": \"/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x\", \"all_passed\": true, \"checks\": 18, \"counts\": {\"F3_exterior_terms\": 21, \"F4_exterior_terms\": 18, \"F5_exterior_terms\": 1, \"G4_exterior_terms\": 57}}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "08daf8ea9f496c7043b2fcd0b189aa538462418327fa9e1e56306b50837f7c3e",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3595,
+        "transportStderr": [],
+        "codeSha256": "4d0bd02d9de6d4eb88e8c4870e151bae166570fcdd29c7518440afb6b646cb61"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\\"export\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/retained-bv-canonical-parent-ndb3ax_x\\\", \\\"all_passed\\\": true, \\\"checks\\\": 18, \\\"counts\\\": {\\\"F3_exterior_terms\\\": 21, \\\"F4_exterior_terms\\\": 18, \\\"F5_exterior_terms\\\": 1, \\\"G4_exterior_terms\\\": 57}}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"08daf8ea9f496c7043b2fcd0b189aa538462418327fa9e1e56306b50837f7c3e\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3595,\n  \"transportStderr\": [],\n  \"codeSha256\": \"4d0bd02d9de6d4eb88e8c4870e151bae166570fcdd29c7518440afb6b646cb61\"\n}"
+      }
+    ]
+  }
+}

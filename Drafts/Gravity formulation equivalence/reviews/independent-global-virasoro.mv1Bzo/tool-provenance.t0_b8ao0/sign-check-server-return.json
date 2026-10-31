@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__mathematica__evaluate_mathematica",
+  "callId": "call_f9f6a37e2e8b462a948b0d49e005613e|fc_0a395550875bdc12016ae4ecac2850819195aefc9af8b8ff18",
+  "sessionId": "9fa1b258-e0bf-4cd6-a6c5-44fdbf436735",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-check.wl\"]"
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-check.wl\"]\n```\n\nOutput:\n<|Preview -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/preview.txt, Exact -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/result.wxf, FailedOrUnevaluated -> False, Messages -> {}|>"
+        }
+      ]
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Mathematica code executed:\n```wl\nGet[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-check.wl\"]\n```\n\nOutput:\n<|Preview -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/preview.txt, Exact -> /Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-global-virasoro.mv1Bzo/sign-cas.NLf9ng/result.wxf, FailedOrUnevaluated -> False, Messages -> {}|>"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "scope": "Exact full first/second-order hyperbolic differential identities on all 48 bundle components; rational radial indicial contraction. Radial powers are not L2 states. No numerical spectrum, cutoff rank, boundary or loop assertion.",
+  "sage_version": "10.9",
+  "all_passed": true,
+  "checks": [
+    {
+      "label": "H squared degree 0",
+      "passed": true
+    },
+    {
+      "label": "Casimir Weitzenboeck degree 0",
+      "passed": true
+    },
+    {
+      "label": "H commutes Delta degree 0",
+      "passed": true
+    },
+    {
+      "label": "flat D squared degree 0",
+      "passed": true
+    },
+    {
+      "label": "D commutes Delta degree 0",
+      "passed": true
+    },
+    {
+      "label": "H squared degree 1",
+      "passed": true
+    },
+    {
+      "label": "Casimir Weitzenboeck degree 1",
+      "passed": true
+    },
+    {
+      "label": "H commutes Delta degree 1",
+      "passed": true
+    },
+    {
+      "label": "flat D squared degree 1",
+      "passed": true
+    },
+    {
+      "label": "D commutes Delta degree 1",
+      "passed": true
+    },
+    {
+      "label": "H squared degree 2",
+      "passed": true
+    },
+    {
+      "label": "Casimir Weitzenboeck degree 2",
+      "passed": true
+    },
+    {
+      "label": "H commutes Delta degree 2",
+      "passed": true
+    },
+    {
+      "label": "delta squared degree 2",
+      "passed": true
+    },
+    {
+      "label": "D commutes Delta degree 2",
+      "passed": true
+    },
+    {
+      "label": "H squared degree 3",
+      "passed": true
+    },
+    {
+      "label": "Casimir Weitzenboeck degree 3",
+      "passed": true
+    },
+    {
+      "label": "H commutes Delta degree 3",
+      "passed": true
+    },
+    {
+      "label": "delta squared degree 3",
+      "passed": true
+    },
+    {
+      "label": "radial contraction degree 0",
+      "passed": true
+    },
+    {
+      "label": "radial contraction degree 1",
+      "passed": true
+    },
+    {
+      "label": "radial Hilbert adjoint degree 1",
+      "passed": true
+    },
+    {
+      "label": "radial cyclic homotopy degree 1",
+      "passed": true
+    },
+    {
+      "label": "radial contraction degree 2",
+      "passed": true
+    },
+    {
+      "label": "radial Hilbert adjoint degree 2",
+      "passed": true
+    },
+    {
+      "label": "radial cyclic homotopy degree 2",
+      "passed": true
+    },
+    {
+      "label": "radial h squared degree 2",
+      "passed": true
+    },
+    {
+      "label": "radial contraction degree 3",
+      "passed": true
+    },
+    {
+      "label": "radial Hilbert adjoint degree 3",
+      "passed": true
+    },
+    {
+      "label": "radial cyclic homotopy degree 3",
+      "passed": true
+    },
+    {
+      "label": "radial h squared degree 3",
+      "passed": true
+    }
+  ],
+  "basis_sizes": [
+    6,
+    18,
+    18,
+    6
+  ],
+  "radial_Delta_determinants": {
+    "0": "(tt - 3)^4 * (tt + 1)^4 * (tt^2 - 2*tt - 4)^2",
+    "1": "(tt - 2)^4 * tt^4 * (tt - 3)^8 * (tt + 1)^8 * (tt^2 - 2*tt - 4)^6",
+    "2": "(tt - 2)^4 * tt^4 * (tt - 3)^8 * (tt + 1)^8 * (tt^2 - 2*tt - 4)^6",
+    "3": "(tt - 3)^4 * (tt + 1)^4 * (tt^2 - 2*tt - 4)^2"
+  },
+  "source_sha256": "2cb6e8995c638a2832405da4115c0b67883be6e3df92dbd3e302ab17c7a8a270"
+}

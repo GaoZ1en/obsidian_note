@@ -1,0 +1,28 @@
+{
+  "sage_version": "10.9",
+  "scope": "Exact rational identities; no finite grid, no analytic-bound inference.",
+  "checks": {
+    "exact_raising_correction": {
+      "passed": true,
+      "residual": "0"
+    },
+    "mixed_high_column_correction_m_ge_r": {
+      "passed": true,
+      "residual": "0"
+    },
+    "CPS_fourier_form": {
+      "passed": true,
+      "residual": "0"
+    },
+    "trace_to_CPS": {
+      "passed": true,
+      "residual": "0"
+    },
+    "prequantum_plus_dual_half": {
+      "passed": true,
+      "residual": "0"
+    }
+  },
+  "correction_derivative": "(m^6 + 6*m^5*j + 9*m^4*j^2 + 4*m^3*j^3 - 6*m^3*j - 9*m^2*j^2 - 4*m*j^3 - m^2)/(m^6 + 6*m^5*j + 15*m^4*j^2 + 20*m^3*j^3 + 15*m^2*j^4 + 6*m*j^5 + j^6 - 2*m^4 - 8*m^3*j - 12*m^2*j^2 - 8*m*j^3 - 2*j^4 + m^2 + 2*m*j + j^2)",
+  "all_passed": true
+}

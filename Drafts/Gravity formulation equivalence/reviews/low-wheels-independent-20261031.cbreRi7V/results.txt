@@ -1,0 +1,14 @@
+<|"checks" -> <|"coexact_principal_is_projection" -> True, "coexact_principal_form_ranks" -> True, 
+   "coexact_subprincipal_output_identity" -> True, "principal_A_equals_internal_contraction_on_coexact" -> 
+    True, "linear_subprincipal_trace" -> True, "quadratic_principal_trace" -> True, 
+   "cubic_principal_fiber_trace_zero" -> True, "gravitational_Killing_trace" -> True, 
+   "BV_coexact_rank_cancellation" -> True, "invariant_linear_wheel_spin_contractions" -> True, 
+   "super_linear_heat_leading_cancellation" -> True, "full_super_tadpole_density" -> True, 
+   "cutoff_five_super_tadpole_density" -> True, "cutoff_six_analytic_positive_lower_bound" -> True, 
+   "heat_weighted_cyclic_defect_exact_control" -> True|>, "allPassed" -> True, 
+ "linearSpinTraces" -> {12*kk1, 8*kk0 + 6*kk1 + 10*kk2, 12*kkM}, 
+ "fullSuperTadpoleDensity" -> (6 - Sqrt[5])/Pi, "cutoffFiveDensity" -> (3 - Sqrt[5])/Pi, 
+ "cutoffSixDensityNumeric60" -> 
+  0.23260263651345558108984708295783112341333918705206731159205576945650736307968`60., 
+ "heatCyclicDefect" -> -2*b^2*s1^2 + 4*b^2*s1*s2 - 2*b^2*s2^2, "covectorUsed" -> {2, -3, 5}, 
+ "messages" -> {}|>

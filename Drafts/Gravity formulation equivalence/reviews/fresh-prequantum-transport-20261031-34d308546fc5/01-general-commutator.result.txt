@@ -1,0 +1,1 @@
+<|GeneralCommutatorResidual -> 0, CanonicalBracket_q_p -> 1, Qq -> q*ss[q, p] + I*hh*Derivative[0, 1][ss][q, p], Qp -> -I*hh*Derivative[1, 0][ss][q, p], CanonicalCommutatorResidual -> 0, PositiveFiberPhaseConnectionResidual -> 0, Messages -> {}|>

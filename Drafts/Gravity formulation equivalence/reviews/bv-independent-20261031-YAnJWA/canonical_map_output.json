@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_7fd8664c16444f8ab74b562a240c713d|fc_0beee4d74a95702a016ae522c1708c81919942c7efa3c382e7",
+  "sessionId": "8ad0d9e8-86f5-4baf-a3f6-92439959f055",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import QQ, PolynomialRing, ExteriorAlgebra\nfrom sage.version import version\nR=PolynomialRing(QQ,names=('g','x','y','e0','e1','e2','w0','w1','w2'))\ng,x,y,*rest=R.gens(); e=rest[:3]; w=rest[3:]\nA=ExteriorAlgebra(R,names=('z0','z1','z2','p0','p1','p2','q0','q1','q2','l'))\nz=list(A.gens()[:3]); p=list(A.gens()[3:6]); q=list(A.gens()[6:9]); l=A.gens()[9]\ndef eps(i,j,k):\n if len({i,j,k})<3:return 0\n return 1 if (i,j,k) in ((0,1,2),(1,2,0),(2,0,1)) else -1\ndef i1_two(P):return [sum((eps(a,m,n)*z[m]*P[a] for a in range(3) for m in range(3)),A.zero()) for n in range(3)]\ndef i2_three(X):return [-sum((eps(m,n,j)*z[m]*z[n]*X for m in range(3) for n in range(3)),A.zero()) for j in range(3)]\ndef i2_two(P):return -sum((eps(a,m,n)*z[m]*z[n]*P[a] for a in range(3) for m in range(3) for n in range(3)),A.zero())\ndef i3_three(X):return -6*z[0]*z[1]*z[2]*X\ndef even_derivative(f,variable):return A.sum_of_terms((key,coefficient.derivative(variable)) for key,coefficient in f.monomial_coefficients().items())\ndef check(label,residual):\n ok=residual==0;print(label+': '+('PASS' if ok else 'FAIL'))\n if not ok:print(' residual =',residual)\n assert ok,label\nF=sum((p[i]*e[i]+q[i]*w[i]+y*z[i]*e[i]+x*z[i]*w[i] for i in range(3)),A.zero())+x*l\nF+=g*sum((p[i]*i1_two(q)[i] for i in range(3)),A.zero())\nF+=g/2*sum((p[i]*i2_three(x)[i]+q[i]*i2_three(y)[i] for i in range(3)),A.zero())\nF+=g/3*y*i3_three(x)\nprint('SageMath:',version); print('Generating density monomials:',len(F.monomial_coefficients()))\nfor i in range(3):\n check('dF/dP_E[%d]'%i,F.interior_product(p[i])-e[i]-g*i1_two(q)[i]-g/2*i2_three(x)[i])\n check('dF/dP_Omega[%d]'%i,F.interior_product(q[i])-w[i]-g*i1_two(p)[i]-g/2*i2_three(y)[i])\n check('dF/de[%d]'%i,even_derivative(F,e[i])-p[i]-z[i]*y)\n check('dF/domega[%d]'%i,even_derivative(F,w[i])-q[i]-z[i]*x)\ncheck('dF/dP_rho',even_derivative(F,x)-l-sum(z[i]*w[i] for i in range(3))-g/2*i2_two(p)-g/3*i3_three(y))\ncheck('dF/dP_tau',even_derivative(F,y)-sum(z[i]*e[i] for i in range(3))-g/2*i2_two(q)-g/3*i3_three(x))\ncheck('dF/dlambda',F.interior_product(l)-x)\nimages=z+[p[i]-z[i]*y for i in range(3)]+[q[i]-z[i]*x for i in range(3)]+[l]\nassert all(images[i]*images[j]+images[j]*images[i]==0 for i in range(10) for j in range(10))\ndef sub(f):\n ans=A.zero()\n for key,coefficient in f.monomial_coefficients().items():\n  term=A(coefficient)\n  for j in key:term*=images[j]\n  ans+=term\n return ans\nfor i in range(3):\n term=sum((eps(a,i,n)*q[n]*p[a] for a in range(3) for n in range(3)),A.zero())\n expected=y*e[i]+x*w[i]-g*term\n check('dF/dxi[%d] after antifield substitution'%i,sub(F.interior_product(z[i]))-expected)\n check('E[%d] explicit'%i,sub(F.interior_product(p[i]))-e[i]-g*i1_two(q)[i]+g/2*i2_three(x)[i])\n check('Omega[%d] explicit'%i,sub(F.interior_product(q[i]))-w[i]-g*i1_two(p)[i]+g/2*i2_three(y)[i])\ncheck('tau explicit',sub(even_derivative(F,y))-sum(z[i]*e[i] for i in range(3))-g/2*i2_two(q)+g/6*i3_three(x))\ncheck('rho explicit',sub(even_derivative(F,x))-l-sum(z[i]*w[i] for i in range(3))-g/2*i2_two(p)+g/6*i3_three(y))\nprint('ALL CANONICAL MAP CHECKS PASSED')",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"SageMath: 10.9\\nGenerating density monomials: 23\\ndF/dP_E[0]: PASS\\ndF/dP_Omega[0]: PASS\\ndF/de[0]: PASS\\ndF/domega[0]: PASS\\ndF/dP_E[1]: PASS\\ndF/dP_Omega[1]: PASS\\ndF/de[1]: PASS\\ndF/domega[1]: PASS\\ndF/dP_E[2]: PASS\\ndF/dP_Omega[2]: PASS\\ndF/de[2]: PASS\\ndF/domega[2]: PASS\\ndF/dP_rho: PASS\\ndF/dP_tau: PASS\\ndF/dlambda: PASS\\ndF/dxi[0] after antifield substitution: PASS\\nE[0] explicit: PASS\\nOmega[0] explicit: PASS\\ndF/dxi[1] after antifield substitution: PASS\\nE[1] explicit: PASS\\nOmega[1] explicit: PASS\\ndF/dxi[2] after antifield substitution: PASS\\nE[2] explicit: PASS\\nOmega[2] explicit: PASS\\ntau explicit: PASS\\nrho explicit: PASS\\nALL CANONICAL MAP CHECKS PASSED\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"45bde6f00b97356e8da159e1bb08bb1507bb2e7912aca1ee08fd45af5315cfde\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3253,\n  \"transportStderr\": [],\n  \"codeSha256\": \"76c56c4cbf387a158bbb42ae6783806aa21854e0de97c89b0f5d44451053c39e\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "SageMath: 10.9\nGenerating density monomials: 23\ndF/dP_E[0]: PASS\ndF/dP_Omega[0]: PASS\ndF/de[0]: PASS\ndF/domega[0]: PASS\ndF/dP_E[1]: PASS\ndF/dP_Omega[1]: PASS\ndF/de[1]: PASS\ndF/domega[1]: PASS\ndF/dP_E[2]: PASS\ndF/dP_Omega[2]: PASS\ndF/de[2]: PASS\ndF/domega[2]: PASS\ndF/dP_rho: PASS\ndF/dP_tau: PASS\ndF/dlambda: PASS\ndF/dxi[0] after antifield substitution: PASS\nE[0] explicit: PASS\nOmega[0] explicit: PASS\ndF/dxi[1] after antifield substitution: PASS\nE[1] explicit: PASS\nOmega[1] explicit: PASS\ndF/dxi[2] after antifield substitution: PASS\nE[2] explicit: PASS\nOmega[2] explicit: PASS\ntau explicit: PASS\nrho explicit: PASS\nALL CANONICAL MAP CHECKS PASSED\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "45bde6f00b97356e8da159e1bb08bb1507bb2e7912aca1ee08fd45af5315cfde",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3253,
+        "transportStderr": [],
+        "codeSha256": "76c56c4cbf387a158bbb42ae6783806aa21854e0de97c89b0f5d44451053c39e"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"SageMath: 10.9\\nGenerating density monomials: 23\\ndF/dP_E[0]: PASS\\ndF/dP_Omega[0]: PASS\\ndF/de[0]: PASS\\ndF/domega[0]: PASS\\ndF/dP_E[1]: PASS\\ndF/dP_Omega[1]: PASS\\ndF/de[1]: PASS\\ndF/domega[1]: PASS\\ndF/dP_E[2]: PASS\\ndF/dP_Omega[2]: PASS\\ndF/de[2]: PASS\\ndF/domega[2]: PASS\\ndF/dP_rho: PASS\\ndF/dP_tau: PASS\\ndF/dlambda: PASS\\ndF/dxi[0] after antifield substitution: PASS\\nE[0] explicit: PASS\\nOmega[0] explicit: PASS\\ndF/dxi[1] after antifield substitution: PASS\\nE[1] explicit: PASS\\nOmega[1] explicit: PASS\\ndF/dxi[2] after antifield substitution: PASS\\nE[2] explicit: PASS\\nOmega[2] explicit: PASS\\ntau explicit: PASS\\nrho explicit: PASS\\nALL CANONICAL MAP CHECKS PASSED\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"45bde6f00b97356e8da159e1bb08bb1507bb2e7912aca1ee08fd45af5315cfde\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3253,\n  \"transportStderr\": [],\n  \"codeSha256\": \"76c56c4cbf387a158bbb42ae6783806aa21854e0de97c89b0f5d44451053c39e\"\n}"
+      }
+    ]
+  }
+}

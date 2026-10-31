@@ -1,0 +1,41 @@
+{
+  "scope": "provenance only, not a mathematical check",
+  "files": [
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/preview.txt",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.results.txt",
+      "sha256": "82add602fbb5af6d177df544518662b9eccb0cc844674a45f0c086fd96f2c2cb",
+      "byte_count": 605
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/fredholm-parent.AjzmqO/result.wxf",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.results.wxf",
+      "sha256": "23e51c84e53a960a7f0112c188be58521f3abb252a50880f301397cf89a6fa0c",
+      "byte_count": 572
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/62cfd6f3ab5f-research-result.json",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.actual-tool-return.json",
+      "sha256": "6c1ceb8a659cc4b4b6b9e9a57cc9c7e97a1da3d6f586006c89457b50905a865b",
+      "byte_count": 1773
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/critical-gram._uo901tu/results.json",
+      "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_critical_gram.results.json",
+      "sha256": "3f35098a303d144ff5ad08bf16007b69cb014c71ca57f4d8df96180f05fa1621",
+      "byte_count": 4250
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_fredholm_bridge.wl",
+      "sha256": "fa242fcbf8e1fe17a4210ee3dd9e5be2939c10b2229d41599f2e57e4e46261f5",
+      "byte_count": 3500,
+      "role": "executed mathematical source"
+    },
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/vacuum_critical_gram.py",
+      "sha256": "79e0f86bdfd80db5f79c7d267970dfd31f076164c61a3055f335a78870f2b6f0",
+      "byte_count": 5250,
+      "role": "executed mathematical source"
+    }
+  ]
+}

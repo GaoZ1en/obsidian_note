@@ -1,0 +1,5 @@
+<|"Kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Assumptions" -> "Real f1>0; all jets real; s2>0; spatial circle integrals use the positive coordinate \
+interval on each side.", "AlphaSignResidual" -> 0, "TwoFormSignResidual" -> 0, 
+ "SchwarzianReflectionResidual" -> 0, "TorusSpectrumReflectionResidual" -> 0, 
+ "FugacityExponentReflectionResidual" -> 0, "Messages" -> {}|>

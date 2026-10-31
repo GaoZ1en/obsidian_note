@@ -1,0 +1,19 @@
+Tool: mcp__sage__sage_run
+Readable view; exact canonical JSON is archived separately.
+
+Sage run; ok=true
+result: None
+resultType: builtins.NoneType
+stdout: Runnable source SHA256: 87a5db214bde502ed2915d752d3d151fc629f6bc7b094588dd1bd35e1670a742
+  exp(I) beta exact component map [0]: PASS
+  exp(I) alpha exact component map [0]: PASS
+  exp(I) beta exact component map [1]: PASS
+  exp(I) alpha exact component map [1]: PASS
+  exp(I) beta exact component map [2]: PASS
+  exp(I) alpha exact component map [2]: PASS
+  superfield cubic interactions give Lorentz BV signs: PASS
+  finite map preserves all cubic interactions exactly: PASS
+  unrestricted CS superfield gives all BRST ghost signs: PASS
+  ALL SUPERFIELD CHECKS PASSED; SageMath 10.9
+  
+elapsedMs: 3736

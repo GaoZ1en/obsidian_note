@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__sage__sage_run",
+  "callId": "call_3840456f7315481d91839db3af436252|fc_08f2db253e581959016ae539dfcdb88191a74741e5e9cea84b",
+  "sessionId": "3f60e2a4-0a3a-4206-99fc-76829ab73ca9",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "from sage.all import QQ, PolynomialRing, ExteriorAlgebra, save\nfrom pathlib import Path\nimport os, tempfile, json\n# CE algebra: d e3=e1e2, integral e123=1; tensor su(2), B=delta.\n# P retains harmonic forms and the acyclic T3 pair. UV=T1,T2 acyclic pairs.\neven_names=['a10','a11','a12','a20','a21','a22','a32','r0','r1','r2']\nodd_names=['c0','c1','c2','b130','b131','b132','b230','b231','b232','b122']\nC=PolynomialRing(QQ,even_names)\nA=ExteriorAlgebra(C,names=odd_names)\nev=[A(v) for v in C.gens()]\nod=list(A.gens())\ndef degree(m):return int(m).bit_count()\ndef add(*args):\n    ans={}\n    for X in args:\n        for k,v in X.items():ans[k]=ans.get(k,A.zero())+v\n    return {k:v for k,v in ans.items() if v!=0}\ndef scale(X,a):return {k:a*v for k,v in X.items() if a*v!=0}\ndef wedge(m,n):\n    if m&n:return None,0\n    inv=sum(1 for i in range(3) for j in range(3) if (m>>i)&1 and (n>>j)&1 and i>j)\n    return m|n,(-1)**inv\ndef eps(a,b,c):\n    if len({a,b,c})<3:return 0\n    return (-1)**sum(1 for i in range(3) for j in range(i+1,3) if [a,b,c][i]>[a,b,c][j])\ndef bracket(X,tx,Y,ty):\n    ans={}\n    for (m,a),u in X.items():\n      for (n,b),v in Y.items():\n        w,sg=wedge(m,n)\n        if sg==0:continue\n        sg*=(-1)**(degree(m)*((ty-degree(n))%2))\n        for c in range(3):\n          e=eps(a,b,c)\n          if e:ans[(w,c)]=ans.get((w,c),A.zero())+sg*e*u*v\n    return {k:v for k,v in ans.items() if v!=0}\ndef D(X,t):return {(3,a):(-1)**((t-1)%2)*u for (m,a),u in X.items() if m==4}\ndef h(X,t):return {(4,a):(-1)**((t-2)%2)*u for (m,a),u in X.items() if m==3 and a in (0,1)}\ndef P(X):return {(m,a):u for (m,a),u in X.items() if not(m in (3,4) and a in (0,1))}\ndef beta(X,tx,Y,ty):\n    ans=A.zero()\n    for (m,a),u in X.items():\n      for (n,b),v in Y.items():\n        w,sg=wedge(m,n)\n        if a==b and w==7 and sg:ans+=sg*(-1)**(degree(m)*((ty-degree(n))%2))*u*v\n    return ans\nx={}\nfor a in range(3):\n    x[(0,a)]=od[a];x[(1,a)]=ev[a];x[(2,a)]=ev[3+a]\n    x[(5,a)]=-od[3+a];x[(6,a)]=-od[6+a];x[(7,a)]=ev[7+a]\nx[(4,2)]=ev[6];x[(3,2)]=-od[9]\nB=bracket(x,1,x,1)\nz=scale(h(B,2),-QQ(1)/2)\ny=add(x,z)\nFy=add(D(y,1),scale(bracket(y,1,y,1),QQ(1)/2))\nF1=D(x,1);F2=scale(P(B),QQ(1)/2);F3=P(bracket(x,1,z,1))\nSeff=QQ(1)/2*beta(y,1,D(y,1),2)+QQ(1)/6*beta(y,1,bracket(y,1,y,1),2)\nS2=QQ(1)/2*beta(x,1,D(x,1),2);S3=QQ(1)/6*beta(x,1,B,2)\nS4=-QQ(1)/8*beta(h(B,2),1,B,2)\nchecks={\n'full_superfield_master_residual':bool(beta(Fy,2,Fy,2)==0),\n'UV_stationarity_exact':bool(h(Fy,2)=={}),\n'quadratic_z_is_exact_fixed_point':bool(add(z,scale(h(bracket(y,1,y,1),2),QQ(1)/2))=={}),\n'effective_action_has_exact_negative_one_eighth_quartic':bool(Seff-S2-S3-S4==0),\n'projected_gradient_is_F1_plus_F2_plus_F3':bool(add(P(Fy),scale(add(F1,F2,F3),-1))=={}),\n'naively_compressed_cubic_has_NONZERO_degree_four_master_defect':bool(beta(F2,2,F2,2)!=0),\n'quartic_tree_cancels_that_defect':bool(beta(F2,2,F2,2)+2*beta(F1,2,F3,2)==0),\n'degree_three_master_identity':bool(beta(F1,2,F2,2)==0),\n'degree_five_master_identity':bool(beta(F2,2,F3,2)==0),\n'degree_six_master_identity':bool(beta(F3,2,F3,2)==0),\n'ghost_antifield_terms_actually_present_in_quartic':bool(any(len(k)>0 for k in S4.monomial_coefficients()))\n}\nreport={'checks':checks,'all_passed':all(checks.values()),'S4':str(S4),'naive_degree_four_defect':str(beta(F2,2,F2,2)),'variables':{'even':even_names,'odd':odd_names},'scope':'Exact finite cyclic dg-Lie sign and CME check only; NOT gravitational operator or analytic domain proof.'}\nstore=Path(os.environ.get('DSH_HOME') or (Path.home()/'.dsh'))/'research-results'/'kernel-exports'\nstore.mkdir(parents=True,exist_ok=True,mode=0o700)\nout=Path(tempfile.mkdtemp(prefix='sage-nonlinear-uv-',dir=store))\nsave(report,str(out/'result.sobj'))\n(out/'preview.json').write_text(json.dumps(report,indent=2)+'\\n',encoding='utf-8')\nprint(json.dumps({'checks':checks,'all_passed':all(checks.values()),'preview':str(out/'preview.json'),'native':str(out/'result.sobj')},indent=2))",
+    "timeoutMs": 120000,
+    "maxOutputChars": 6000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"checks\\\": {\\n    \\\"full_superfield_master_residual\\\": true,\\n    \\\"UV_stationarity_exact\\\": true,\\n    \\\"quadratic_z_is_exact_fixed_point\\\": true,\\n    \\\"effective_action_has_exact_negative_one_eighth_quartic\\\": true,\\n    \\\"projected_gradient_is_F1_plus_F2_plus_F3\\\": true,\\n    \\\"naively_compressed_cubic_has_NONZERO_degree_four_master_defect\\\": true,\\n    \\\"quartic_tree_cancels_that_defect\\\": true,\\n    \\\"degree_three_master_identity\\\": true,\\n    \\\"degree_five_master_identity\\\": true,\\n    \\\"degree_six_master_identity\\\": true,\\n    \\\"ghost_antifield_terms_actually_present_in_quartic\\\": true\\n  },\\n  \\\"all_passed\\\": true,\\n  \\\"preview\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/preview.json\\\",\\n  \\\"native\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/result.sobj\\\"\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c5f0be5d97d50bb9e18dddd44d17f13b41a78448a153c15bf69c82462bcea06c\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3295,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9fe65d5a1acbfb3deade169f6d5ab8bd6f0104b1ef048e9f321a27c5a6390e86\"\n}"
+        }
+      ],
+      "structuredContent": {
+        "mode": "run",
+        "ok": true,
+        "result": "None",
+        "resultType": "builtins.NoneType",
+        "truncated": false,
+        "resultSha256": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91",
+        "error": null,
+        "stdout": "{\n  \"checks\": {\n    \"full_superfield_master_residual\": true,\n    \"UV_stationarity_exact\": true,\n    \"quadratic_z_is_exact_fixed_point\": true,\n    \"effective_action_has_exact_negative_one_eighth_quartic\": true,\n    \"projected_gradient_is_F1_plus_F2_plus_F3\": true,\n    \"naively_compressed_cubic_has_NONZERO_degree_four_master_defect\": true,\n    \"quartic_tree_cancels_that_defect\": true,\n    \"degree_three_master_identity\": true,\n    \"degree_five_master_identity\": true,\n    \"degree_six_master_identity\": true,\n    \"ghost_antifield_terms_actually_present_in_quartic\": true\n  },\n  \"all_passed\": true,\n  \"preview\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/preview.json\",\n  \"native\": \"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/result.sobj\"\n}\n",
+        "stdoutTruncated": false,
+        "stdoutSha256": "c5f0be5d97d50bb9e18dddd44d17f13b41a78448a153c15bf69c82462bcea06c",
+        "stderr": "",
+        "stderrTruncated": false,
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "warnings": [],
+        "warningsTruncated": false,
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3295,
+        "transportStderr": [],
+        "codeSha256": "9fe65d5a1acbfb3deade169f6d5ab8bd6f0104b1ef048e9f321a27c5a6390e86"
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"mode\": \"run\",\n  \"ok\": true,\n  \"result\": \"None\",\n  \"resultType\": \"builtins.NoneType\",\n  \"truncated\": false,\n  \"resultSha256\": \"dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91\",\n  \"error\": null,\n  \"stdout\": \"{\\n  \\\"checks\\\": {\\n    \\\"full_superfield_master_residual\\\": true,\\n    \\\"UV_stationarity_exact\\\": true,\\n    \\\"quadratic_z_is_exact_fixed_point\\\": true,\\n    \\\"effective_action_has_exact_negative_one_eighth_quartic\\\": true,\\n    \\\"projected_gradient_is_F1_plus_F2_plus_F3\\\": true,\\n    \\\"naively_compressed_cubic_has_NONZERO_degree_four_master_defect\\\": true,\\n    \\\"quartic_tree_cancels_that_defect\\\": true,\\n    \\\"degree_three_master_identity\\\": true,\\n    \\\"degree_five_master_identity\\\": true,\\n    \\\"degree_six_master_identity\\\": true,\\n    \\\"ghost_antifield_terms_actually_present_in_quartic\\\": true\\n  },\\n  \\\"all_passed\\\": true,\\n  \\\"preview\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/preview.json\\\",\\n  \\\"native\\\": \\\"/Users/koishi/.dsh/research-results/kernel-exports/sage-nonlinear-uv-bokw21fy/result.sobj\\\"\\n}\\n\",\n  \"stdoutTruncated\": false,\n  \"stdoutSha256\": \"c5f0be5d97d50bb9e18dddd44d17f13b41a78448a153c15bf69c82462bcea06c\",\n  \"stderr\": \"\",\n  \"stderrTruncated\": false,\n  \"stderrSha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n  \"warnings\": [],\n  \"warningsTruncated\": false,\n  \"sageVersion\": \"SageMath version 10.9, Release Date: 2026-05-04\",\n  \"elapsedMs\": 3295,\n  \"transportStderr\": [],\n  \"codeSha256\": \"9fe65d5a1acbfb3deade169f6d5ab8bd6f0104b1ef048e9f321a27c5a6390e86\"\n}"
+      }
+    ]
+  }
+}

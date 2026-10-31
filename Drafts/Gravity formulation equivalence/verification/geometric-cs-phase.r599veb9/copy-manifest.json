@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-30T22:07:45.084582+00:00",
+  "copies": [
+    {
+      "source": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric_cs_phase_counterexample.wl",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/executed-source.wl",
+      "sha256": "a260d954d14947e0459495e9707ed13b064633e6490957dedde245d8a94f17de",
+      "bytes": 2825,
+      "byte_identical": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-phase.BgDSjU/preview.txt",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/preview.txt",
+      "sha256": "375313a196636a86367fef107db51072d190d3481ae08401fdefc1da51c5ae52",
+      "bytes": 1030,
+      "byte_identical": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/kernel-exports/geometric-cs-phase.BgDSjU/result.wxf",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/result.wxf",
+      "sha256": "4f7ed3c44aecf501e49ae43a171278aefe09af059129451c903c19e3dc3fe72b",
+      "bytes": 993,
+      "byte_identical": true
+    },
+    {
+      "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/0dc3bd5c2af3-research-result.json",
+      "archive": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/geometric-cs-phase.r599veb9/actual-server-return.json",
+      "sha256": "6c1afee813b6263926e8303593edf4bdd5682f7383d76aa6241d773e33e68ab5",
+      "bytes": 1576,
+      "byte_identical": true
+    }
+  ],
+  "rerun": false
+}

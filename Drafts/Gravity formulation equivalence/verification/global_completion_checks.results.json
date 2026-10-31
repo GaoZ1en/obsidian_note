@@ -1,0 +1,27 @@
+{
+	"KernelVersion":"14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)",
+	"Checks":{
+		"barred DS gauge parameter gives the same projective variation":true,
+		"barred DS trace normalization":true,
+		"circle reflection reverses orbit two-form density":true,
+		"SL target bi-invariant metric normalization":true,
+		"SL target sectional curvature minus one over ell squared":true,
+		"developing map Maurer-Cartan pullback":true,
+		"developing map metric pullback":true,
+		"embedding Jacobian is strictly positive":true,
+		"endpoint central time is negative softplus":true,
+		"endpoint central time derivative":true,
+		"endpoint central time has finite upper endpoint":true,
+		"central proper-time antiderivative":true,
+		"central future proper-time remainder vanishes":true,
+		"nonendpoint central time is future unbounded":true
+	},
+	"AllPassed":true,
+	"Assumptions":[
+		"ell>0",
+		"generic SL matrices use chart p1 q1 != 0; identities extend by polynomial\/rational identity and conjugation invariance",
+		"rho=Exp[t]>0, s and chi lie in [0,1]",
+		"global completeness and covering arguments are analytic, not CAS conclusions"
+	],
+	"Messages":[]
+}

@@ -1,0 +1,192 @@
+{
+  "suite": "Independent fixed-wall boundary/corner derivation",
+  "python": "3.14.3",
+  "sympy": "1.14.0",
+  "source_sha256": "d10d1d6d8f9e8c021adba7325d2ad29e049ad62bdf03bd62ede072ee33e96cc9",
+  "assumptions": {
+    "dimension_signature": "3D, (-,+,+)",
+    "orientation": "epsilon=e0^e1^e2, epsilon_Gamma=i_n epsilon",
+    "wall": "fixed embedding, spacelike unit outward normal; no equations of motion used in generic test",
+    "generic_jet_domain": "q00,q01,q11 and 9 first jets independent; det(q)!=0 algebraically, det(q)<0 physically",
+    "background_coordinate_choice": "g_rhorho=1 and g_rhoi=0 in a Gaussian neighborhood; all their background first derivatives vanish",
+    "variation_domain": "all 6 symmetric h components and all 18 first derivatives independent; not gauge-restricted",
+    "frame_comparison": "at an adapted orthonormal background; M^a_b arbitrary until explicit slice substitutions",
+    "coefficient": "gamma suppressed in symbolic frame/source checks",
+    "execution": "ordinary Python file executed without Sage preparsing"
+  },
+  "checks": [
+    {
+      "label": "generic normal EH potential",
+      "passed": true,
+      "normalized_residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "generic extrinsic-curvature variation",
+      "passed": true,
+      "normalized_residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "full boundary identity including counterterm",
+      "passed": true,
+      "normalized_residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "intrinsic Lorentz Hodge wedge pairing",
+      "passed": true,
+      "normalized_residuals": [
+        "0"
+      ]
+    },
+    {
+      "label": "bulk/intrinsic Hodge compatibility",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "generic frame obstruction C-alpha",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "fixed internal normal implies C=alpha",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "adapted FG C pullback",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "adapted FG alpha pullback",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "B01 preserves metric",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "R12 preserves metric",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "pure Lorentz obstruction has coefficient -2 e1",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "AdS3 Einstein equation Ric+2g/ell^2",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "AdS3 extrinsic curvature K=q/ell",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "label": "AdS3 renormalized source tensor",
+      "passed": true,
+      "normalized_residuals": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "observations": {
+    "alpha on metric FG slice only, gamma suppressed": [
+      "2*m12",
+      "-2*m02",
+      "0"
+    ],
+    "alpha full components, gamma suppressed": [
+      "m12 - m21",
+      "-m02 - m20",
+      "m01 + m10"
+    ],
+    "C-alpha tangential components, gamma suppressed": [
+      "2*m21",
+      "2*m20",
+      "0"
+    ],
+    "intrinsic Hodge convention": "*Gamma e0=-e1; *Gamma e1=-e0",
+    "bulk Hodge convention": "*(e0^e1)=-e2; *(e0^e2)=e1; *(e1^e2)=e0",
+    "delta(C-alpha)(B01,R12), gamma suppressed": [
+      "0",
+      "-2",
+      "0"
+    ],
+    "on-shell example": "e0=(r/ell)dt, e1=r dphi, e2=ell dr/r; phi period 2pi",
+    "corner integral at r=R": "-4*pi*gamma*R for ordered pair (B01,R12) and positive dphi orientation"
+  },
+  "all_passed": true
+}

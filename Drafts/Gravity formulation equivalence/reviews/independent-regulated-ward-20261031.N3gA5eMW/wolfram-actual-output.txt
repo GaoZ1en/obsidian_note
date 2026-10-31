@@ -1,0 +1,34 @@
+<|"Kernel" -> "14.3.0 for Mac OS X ARM (64-bit) (July 8, 2025)", 
+ "Checks" -> <|"ordered variation equals naive plus commutators" -> True, 
+   "generic 2x2 Frechet formula" -> True, 
+   "quadratic commutator vanishes only in chosen symmetric model" -> True, 
+   "cubic noncyclic contribution" -> True, "exact full BV Ward coefficient" -> True, 
+   "exact one-loop BV Ward coefficient" -> True, "source omission is detected" -> True, 
+   "generator insertion omission is detected" -> True, "hybrid residual formula" -> True, 
+   "hybrid residual nonzero exact value" -> True, 
+   "marked insertion residual nonzero exact value" -> True, 
+   "tail-only subtraction residual formula" -> True, 
+   "tail-only subtraction residual exact value" -> True, "actual normalized gamma1 coefficient" -> 
+    True, "actual normalized gamma1 includes tree Hessian factor" -> True, 
+   "source half-density and odd Gaussian are separate equal factors" -> True, 
+   "Kb determinant at exact test point" -> True, "heat weight is specified exactly" -> True, 
+   "A and heat weight do not commute" -> True, "A and its variation do not commute" -> True, 
+   "small relative operator at test point" -> True, "rotation Hessian has commutator derivative" -> 
+    True, "rotation regulator has matching transport derivative" -> True, 
+   "fixed rotation weight detects exact Ward defect" -> True, 
+   "transported weight cancels rotation defect" -> True, 
+   "rotation full determinant derivative vanishes" -> True|>, "AllPassed" -> True, 
+ "FailedLabels" -> {}, "ExactValues" -> <|"C2" -> 0, "C3" -> -(r1*t*z) + r2*t*z, 
+   "CommutatorCorrectionToHalfDeterminant" -> -1/6*((r1 - r2)*t*z), "FullGaussianWard" -> 0, 
+   "OneLoopWard" -> 0, "ActualGeneratorCoefficientG" -> (1 + t + 3*z + 2*z^2)/
+     ((1 + t)*(-1 + t^2 - 3*z - 2*z^2)), "Gamma1CoefficientAtPoint" -> -109417/130112, 
+   "SourceOmission" -> (1 + t)^(-1), "InsertionOmission" -> (1 + t + 3*z + 2*z^2)/
+     ((1 + t)*(-1 + t^2 - 3*z - 2*z^2)), "HybridResidual" -> 
+    (t*(6 - 3*r1 - 3*r2 - 18*z + 8*r1*z + 10*r2*z))/6, "HybridResidualAtPoint" -> 29/840, 
+   "NaiveMarkedResidual" -> -1/6*((r1 - r2)*t*z), "NaiveMarkedResidualAtPoint" -> -1/840, 
+   "TailOnlyResidual" -> 1 + t^2 - 3*t*z, "TailOnlyResidualAtPoint" -> 229/245, 
+   "RotationResidual" -> -1/12*((alpha*(6 + alpha*(-3 + 2*alpha)) + beta*(-6 + (3 - 2*beta)*beta))*
+      (r1 - r2)*Sin[2*theta]), "RotationResidualAtPoint" -> 119/6000, 
+   "TransportedRotationResidual" -> 0, "NoncommutingAR" -> {{0, -1/28, 0, 0}, {1/28, 0, 0, 0}, 
+     {0, 0, 0, 0}, {0, 0, 0, 0}}, "NoncommutingAH" -> {{0, -1/5, 0, 0}, {1/5, 0, 0, 0}, 
+     {0, 0, 0, 0}, {0, 0, 0, 0}}|>, "Messages" -> {}|>

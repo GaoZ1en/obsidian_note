@@ -1,0 +1,142 @@
+{
+  "supplement_created_utc": "2026-10-31T03:13:59.462078+00:00",
+  "operation": "Archive existing original server envelopes and unchanged source snapshots by byte copy; compute SHA256 only. No mathematical code was executed.",
+  "original_directory": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG",
+  "original_files_sha256_before": {
+    "fiber_checks.py": "898ccfa8e40f932509ae1a13780580ee269fd43b044d7cf44c173786c66854f0",
+    "fiber_actual_output.json": "378b48ca245c55cef32378ac04872d8dadef716bd58f8c695a0e100a1ecf911b",
+    "fiber_actual_output.txt": "f16c74ca1f558e8f5cb57fc08c1af990ff6325db87c0dc11000f5d74295c4e7a",
+    "spectral_checks.wl": "f674868c62fd8400603ba41cc636ec9743053624c30c13960cfb6aea1a95b237",
+    "spectral_actual_output.wxf": "ae0a0b458197879b632b3006b3261a6f9057a7bc9aa31e2c180581ac3099a301",
+    "spectral_actual_output.txt": "bbae1bf575a5e5015458ad67017d1600e63d7e7c42a375447cd68498901fcd2d",
+    "spectral_checks_v2.wl": "596bfd444e1515e89dcc522dfeb7099ef7cfafafa918f6d8dbb439b68d31f921",
+    "spectral_actual_output_v2.wxf": "92b1f7a8274ef647454ff3d7ccf037311ecb80184ee365d47749d138c73fc7e9",
+    "spectral_actual_output_v2.txt": "f52d5206303e71bf9bb0c9017473e9dea97d135a87e82245d780d99732860a68",
+    "proof.md": "d32649c43b9f15c46a4e94125dbea14da6d6229dc356eb0f58e737ee24c92d0d"
+  },
+  "original_files_sha256_after": {
+    "fiber_checks.py": "898ccfa8e40f932509ae1a13780580ee269fd43b044d7cf44c173786c66854f0",
+    "fiber_actual_output.json": "378b48ca245c55cef32378ac04872d8dadef716bd58f8c695a0e100a1ecf911b",
+    "fiber_actual_output.txt": "f16c74ca1f558e8f5cb57fc08c1af990ff6325db87c0dc11000f5d74295c4e7a",
+    "spectral_checks.wl": "f674868c62fd8400603ba41cc636ec9743053624c30c13960cfb6aea1a95b237",
+    "spectral_actual_output.wxf": "ae0a0b458197879b632b3006b3261a6f9057a7bc9aa31e2c180581ac3099a301",
+    "spectral_actual_output.txt": "bbae1bf575a5e5015458ad67017d1600e63d7e7c42a375447cd68498901fcd2d",
+    "spectral_checks_v2.wl": "596bfd444e1515e89dcc522dfeb7099ef7cfafafa918f6d8dbb439b68d31f921",
+    "spectral_actual_output_v2.wxf": "92b1f7a8274ef647454ff3d7ccf037311ecb80184ee365d47749d138c73fc7e9",
+    "spectral_actual_output_v2.txt": "f52d5206303e71bf9bb0c9017473e9dea97d135a87e82245d780d99732860a68",
+    "proof.md": "d32649c43b9f15c46a4e94125dbea14da6d6229dc356eb0f58e737ee24c92d0d"
+  },
+  "all_frozen_original_hashes_unchanged": true,
+  "runs": [
+    {
+      "label": "initial_fiber",
+      "original_envelope_path": "/Users/koishi/.dsh/research-results/session-ae0221270afb/df91bd0fa727-research-result.json",
+      "archived_envelope_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/initial_fiber_original_server_return.json",
+      "raw_envelope_sha256": "9651ea943d37e7e2991dbdbcf87b14a8d361f4e0ed793f2fec8474627c133cc2",
+      "byte_copy_verified": true,
+      "original_source_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/fiber_checks.py",
+      "source_snapshot_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/initial_fiber_source_snapshot.py",
+      "source_snapshot_sha256": "898ccfa8e40f932509ae1a13780580ee269fd43b044d7cf44c173786c66854f0",
+      "source_snapshot_byte_copy_verified": true,
+      "source_hash_scope": "Hash of unchanged source file copied at supplement creation; original server arguments and wrapper-code hash are preserved separately, not relabelled as the file hash.",
+      "original_tool": "mcp__sage__sage_run",
+      "original_callId": "call_f3d426019fce434d81b8a8fc28146367|fc_0f57c9d4fca99a35016ae557acf9788191bb543e3620bb31b3",
+      "original_sessionId": "6782879e-0768-4665-9ca1-eff66c5647ce",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "original_arguments": {
+        "code": "from pathlib import Path\np=Path('/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/fiber_checks.py')\nexec(compile(p.read_text(),str(p),'exec'))",
+        "timeoutMs": 120000,
+        "maxOutputChars": 16000
+      },
+      "original_structured_diagnostics": {
+        "ok": true,
+        "truncated": false,
+        "stdoutTruncated": false,
+        "stderr": "",
+        "stderrTruncated": false,
+        "warnings": [
+          {
+            "category": "builtins.DeprecationWarning",
+            "message": "Use sage.version.version instead.\nSee https://github.com/sagemath/sage/issues/39015 for details.",
+            "truncated": false,
+            "sha256": "a0abe9e92409af655c89604b9afe632c7217b48f5c10fa920d0876c6c86cb3ce"
+          }
+        ],
+        "warningsTruncated": false,
+        "error": null,
+        "transportStderr": [],
+        "sageVersion": "SageMath version 10.9, Release Date: 2026-05-04",
+        "elapsedMs": 3868,
+        "codeSha256": "035cf612cced24fe573ab9203aa6904c206fd4fd7e2ceedd205ffad1ba2be7e4",
+        "stdoutSha256": "378b48ca245c55cef32378ac04872d8dadef716bd58f8c695a0e100a1ecf911b",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "mathematical_check_count": 31,
+      "failed_mathematical_checks": [],
+      "failure_disclosure": "No failed mathematical checks. Original version() DeprecationWarning is preserved, not suppressed."
+    },
+    {
+      "label": "first_spectral_partial_failure",
+      "original_envelope_path": "/Users/koishi/.dsh/research-results/session-ae0221270afb/243ee071af97-research-result.json",
+      "archived_envelope_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/first_spectral_partial_failure_original_server_return.json",
+      "raw_envelope_sha256": "d32d99ee3d32d796db082da2fb0f94e86bdc4e5137270c66359c3d6be816bfdd",
+      "byte_copy_verified": true,
+      "original_source_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/spectral_checks.wl",
+      "source_snapshot_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/first_spectral_partial_failure_source_snapshot.wl",
+      "source_snapshot_sha256": "f674868c62fd8400603ba41cc636ec9743053624c30c13960cfb6aea1a95b237",
+      "source_snapshot_byte_copy_verified": true,
+      "source_hash_scope": "Hash of unchanged source file copied at supplement creation; original server arguments and wrapper-code hash are preserved separately, not relabelled as the file hash.",
+      "original_tool": "mcp__mathematica__evaluate_mathematica",
+      "original_callId": "call_eb00d156bb8d4d25a34695fbc79d1fcb|fc_0f57c9d4fca99a35016ae558695c7c81918a5b0f3807ac407b",
+      "original_sessionId": "6782879e-0768-4665-9ca1-eff66c5647ce",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "original_arguments": {
+        "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/spectral_checks.wl\"]"
+      },
+      "observed_output_markers": {
+        "Series::serlim": true,
+        "unevaluated_TailAsymptotic_Series": true,
+        "evaluated_TailAsymptotic_SeriesData": false,
+        "empty_message_list": false,
+        "Failed_or_Aborted": false,
+        "zero_integral_residuals": true,
+        "zero_lowband_primitive_residuals": true,
+        "zero_a0_a2_a4_residuals": true
+      },
+      "failure_disclosure": "Partial mathematical failure: noninteger Series order 5/2 emitted Series::serlim and left the tail asymptotic unevaluated. The original partial result is preserved; this run is not represented as wholly successful."
+    },
+    {
+      "label": "spectral_v2_success",
+      "original_envelope_path": "/Users/koishi/.dsh/research-results/session-ae0221270afb/7d9219b9aff0-research-result.json",
+      "archived_envelope_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/spectral_v2_success_original_server_return.json",
+      "raw_envelope_sha256": "33e4a0f81bf220ae94b228522a143356d08f7cd428b3e07cc52b72690c303e44",
+      "byte_copy_verified": true,
+      "original_source_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/spectral_checks_v2.wl",
+      "source_snapshot_path": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-evidence-20261031.dSHi7Q/spectral_v2_success_source_snapshot.wl",
+      "source_snapshot_sha256": "596bfd444e1515e89dcc522dfeb7099ef7cfafafa918f6d8dbb439b68d31f921",
+      "source_snapshot_byte_copy_verified": true,
+      "source_hash_scope": "Hash of unchanged source file copied at supplement creation; original server arguments and wrapper-code hash are preserved separately, not relabelled as the file hash.",
+      "original_tool": "mcp__mathematica__evaluate_mathematica",
+      "original_callId": "call_64d010a23b344b5f8eddbb0c8d0c8968|fc_0f57c9d4fca99a35016ae558dbf39c8191be6a545547f63ef4",
+      "original_sessionId": "6782879e-0768-4665-9ca1-eff66c5647ce",
+      "completeness": "server-returned",
+      "upstreamTruncated": false,
+      "original_arguments": {
+        "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/independent-linear-wheel-20261031.BVMZaG/spectral_checks_v2.wl\"]"
+      },
+      "observed_output_markers": {
+        "Series::serlim": false,
+        "unevaluated_TailAsymptotic_Series": false,
+        "evaluated_TailAsymptotic_SeriesData": true,
+        "empty_message_list": true,
+        "Failed_or_Aborted": false,
+        "zero_integral_residuals": true,
+        "zero_lowband_primitive_residuals": true,
+        "zero_a0_a2_a4_residuals": true
+      },
+      "failure_disclosure": "Corrected original v2 run: evaluated tail asymptotic, zero displayed residuals, empty message list. No rerun was performed for this supplement."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/executed-source.py",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/executed-source.py",
+    "sha256": "b5cb8bed9cec89894ea48b0cc45deb13afe49e987260fb7e1cba80eaa60e029c"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/result.json",
+    "sha256": "310802ed1c9e3aaabee5ccb44a72737874462b636db3e66691c8f3d8c3f39847"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/kernel-exports/ads-bv-tree-normalization-b0w1tghy/source-exact.sobj",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/source-exact.sobj",
+    "sha256": "4f63e92bce5293d83fcff4a8cbae177842a1217185b297aea44b533d409b28bf"
+  },
+  {
+    "source": "/Users/koishi/.dsh/research-results/session-3605db0fcd2b/93c6e7eb410a-research-result.json",
+    "copy": "/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/verification/ads-bv-tree-normalization.2edo_wza/actual-server-return.json",
+    "sha256": "a6f8fd198784f757e3e484156ca81fc3d23c262dfaa82d0da7625d99913ac9df"
+  }
+]

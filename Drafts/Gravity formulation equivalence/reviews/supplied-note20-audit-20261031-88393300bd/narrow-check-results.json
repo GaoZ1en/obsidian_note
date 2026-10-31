@@ -1,0 +1,29 @@
+{
+  "sage_version": "10.9",
+  "checks": {
+    "H_eta_z_is_minus_A_alpha": true,
+    "ordinary_transpose_predicts_plus_A_alpha": true,
+    "ordinary_transpose_residual_is_minus_2_A_alpha": true,
+    "graded_transpose_recovers_full_Hessian": true,
+    "ordinary_transpose_fails": true,
+    "odd_example_action_metachi": true,
+    "odd_example_action_xx": true,
+    "odd_example_action_txetachi": true,
+    "odd_example_generator_degree": true,
+    "odd_example_Berezin_measure_degree": true,
+    "even_example_action_pc": true,
+    "even_example_action_sd": true,
+    "even_example_action_tbcrd": true,
+    "even_example_action_uu": true,
+    "even_example_action_urr": true,
+    "even_example_generator_degree": true,
+    "even_example_gamma1_degree": true,
+    "even_example_log_amplitude_degree": true
+  },
+  "checks_total": 18,
+  "failed": 0,
+  "H_eta_z": "-A*alpha",
+  "ordinary_transpose_eta_z": "+A*alpha",
+  "residual_eta_z": "-2*A*alpha",
+  "graded_residual": "zero 3x3 matrix"
+}

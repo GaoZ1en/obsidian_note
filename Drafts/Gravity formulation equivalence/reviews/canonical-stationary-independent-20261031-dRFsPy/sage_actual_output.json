@@ -1,0 +1,1127 @@
+{
+  "implementation": "Sage native ExteriorAlgebra over Symbolic Ring",
+  "sage_version": "10.9",
+  "checks": [
+    {
+      "label": "canonical physical pair",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "canonical odd ghost pair",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "reversed ghost pair",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "free physical BRST sign",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "free ghost-antifield BRST sign",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "CME full action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "canonical action isotopy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "stationary substitution nilpotence",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "actual stationary equation",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "stationary action exactly",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "stationary generator exactly",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "CME effective action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective canonical isotopy",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "nonzero UV term exact value",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "UV term versus chain-rule correction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "Q graph tangency v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow ODE e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical q,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical p,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical r,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical s,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical c,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical b,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical d,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow canonical e,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective flow transports action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow ODE v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical q,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical p,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical r,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical s,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical c,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical b,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical d,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical e,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical u,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,q",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,p",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,r",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,s",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,c",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,b",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,d",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,e",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,u",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow canonical v,v",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full flow transports action",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "naive projection exact noncanonical defect",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full cubic exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "full quartic exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "graph quadratic correction",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective cubic zero",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective quartic exact",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "effective quartic generator",
+      "passed": true,
+      "residual": "0"
+    },
+    {
+      "label": "quartic master canonical identity",
+      "passed": true,
+      "residual": "0"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "S_t",
+      "value": "e^(t*u)*p*c + s*d + 2*b*r*t*c*d + 2*r*d*v + 1/2*r^4 + r^2*u + 1/2*u^2"
+    },
+    {
+      "label": "y_t",
+      "value": "(-t*e^(-r^2*t))*p*c - r^2"
+    },
+    {
+      "label": "S_eff_t",
+      "value": "(e^(-r^2*t))*p*c + s*d + 2*b*r*t*c*d"
+    },
+    {
+      "label": "gamma_t",
+      "value": "-b*r^2*c"
+    },
+    {
+      "label": "UV bracket on graph",
+      "value": "2*b*r*c*d"
+    },
+    {
+      "label": "naive projection defect",
+      "value": "-2*r*t*e^(r^2*t)*c"
+    },
+    {
+      "label": "S_eff quartic",
+      "value": "-r^2*t*p*c + 2*b*r*t*c*d"
+    },
+    {
+      "label": "full UV conjugate derivative on graph",
+      "value": "-2*r*d"
+    }
+  ],
+  "all_passed": true,
+  "count": 217
+}

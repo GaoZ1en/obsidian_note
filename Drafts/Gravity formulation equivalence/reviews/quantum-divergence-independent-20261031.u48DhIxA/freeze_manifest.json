@@ -1,0 +1,57 @@
+{
+  "scope": "new independent review only; no parent-note write was performed",
+  "evidence_label": "fresh custom bitmask exterior algebra over native Sage rational functions, not Sage ExteriorAlgebra",
+  "kernel_checks": {
+    "sage_passed": 16,
+    "wolfram_passed": 10,
+    "kernel_failures": 0,
+    "excluded_failures": []
+  },
+  "followup": "det2 assessment was supplied after the independent report and remains separately labeled; analytic proof, no extra CAS run",
+  "files": {
+    "report.md": {
+      "sha256": "ad31ab0556d2ff9dbbe4e181e593c64272535081004c0cee0c9c293a3b9088df",
+      "bytes": 29199
+    },
+    "supplied-followup-det2-assessment.md": {
+      "sha256": "18f807b76e5b19a9323f400786f7bf37db3638ed019144dd8e152760408e5064",
+      "bytes": 9543
+    },
+    "exact_divergence_and_schur.py": {
+      "sha256": "430b306b40f1b9b4940624150d2f63317bce2b3192304e52b712156d3a611382",
+      "bytes": 9111
+    },
+    "heat_and_compression_checks.wl": {
+      "sha256": "f3973fc708e8283c518622c0a2da953a6d8ec177bbd88729585f30dbf4ff8a24",
+      "bytes": 3254
+    },
+    "sage_result.json": {
+      "sha256": "f17069cc9bba7a6f0b48683c6101883ae8f05e489927e461c1af85d6313d0bc9",
+      "bytes": 1222
+    },
+    "sage_exact_divergence.json": {
+      "sha256": "37f1b4cfd6869a1b51b39e7ca566f3d42ee9ec93720045b14947c8169de31762",
+      "bytes": 16723
+    },
+    "sage_actual_tool_return.json": {
+      "sha256": "8ec6b4874fd75f5327d67901a771ac1c09c5f9840757d1c9e0b3289f67d54dd7",
+      "bytes": 7721
+    },
+    "wolfram_checks.json": {
+      "sha256": "0ed0c51c24605b4e6f5c8c66bff5f2aab225217b75ae569e58561dd9b2e2db26",
+      "bytes": 459
+    },
+    "wolfram_result.txt": {
+      "sha256": "a524147a64788cf59608accef956b6fc21578c4c9679831b97e08a514f9f4f4b",
+      "bytes": 1097
+    },
+    "wolfram_result.wxf": {
+      "sha256": "6a0f6c093f5663bfe7179f303ffb9b2b9e51aa02d8b97301d4db119f8d52dadb",
+      "bytes": 1623
+    },
+    "wolfram_actual_tool_return.json": {
+      "sha256": "b3b58fafd437767b8723569491ed35d86ef4181fac6997eb465eec926df993d5",
+      "bytes": 1760
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "tool": "mcp__xact__xact_run",
+  "callId": "call_ba03eb15fab84a83829788f4f88f9ab9|fc_0afa0b7a4e3b2591016ae502837b988191b0bf841219f4cc1e",
+  "sessionId": "b98397fa-08d9-4d67-b5a4-616c875ca72a",
+  "completeness": "server-returned",
+  "upstreamTruncated": false,
+  "arguments": {
+    "code": "Get[\"/Users/koishi/Documents/Note/Drafts/Gravity formulation equivalence/reviews/renvol-independent-20261031.elaEpR/checks_conformal_xact.wl\"]",
+    "profile": "components",
+    "timeoutMs": 120000,
+    "maxOutputChars": 12000
+  },
+  "received": {
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"ok\": false,\n  \"profile\": \"components\",\n  \"result\": \"$Failed\",\n  \"resultSha256\": \"8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3094,\n  \"transportStderr\": []\n}"
+        }
+      ],
+      "structuredContent": {
+        "ok": false,
+        "profile": "components",
+        "result": "$Failed",
+        "resultSha256": "8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b",
+        "truncated": false,
+        "messages": [],
+        "loadedPackages": [
+          "xAct`xTensor`",
+          "xAct`xPert`",
+          "xAct`xTras`",
+          "xAct`xCoba`"
+        ],
+        "loadErrors": [],
+        "loadMessages": [],
+        "elapsedMs": 3094,
+        "transportStderr": []
+      }
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"ok\": false,\n  \"profile\": \"components\",\n  \"result\": \"$Failed\",\n  \"resultSha256\": \"8342eb809646487a6d238680da47a615f5177703d8c9e6b6d81dbb6fb471c31b\",\n  \"truncated\": false,\n  \"messages\": [],\n  \"loadedPackages\": [\n    \"xAct`xTensor`\",\n    \"xAct`xPert`\",\n    \"xAct`xTras`\",\n    \"xAct`xCoba`\"\n  ],\n  \"loadErrors\": [],\n  \"loadMessages\": [],\n  \"elapsedMs\": 3094,\n  \"transportStderr\": []\n}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+<|"Source" -> "/Users/koishi/Documents/Note/Drafts/Gravity formulation \
+equivalence/reviews/independent-functional-analysis-20261031-0434-c71d/checks-v1.wl", 
+ "SourceSHA256" -> "431644dddb3f76b582bc83681abd309315b96be48be468a611c79515c2e4057d", 
+ "KernelVersion" -> {"1.4.2", {2014, 10, 30}}, 
+ "Result" -> <|"LocalResiduals" -> <|"RicciPlus2g" -> {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, 
+     "FKPlusO1_arbitraryJetAtRegularPoint" -> {0, 0, 0}, "O2LMinusLO1_arbitraryJetAtRegularPoint" -> 
+      {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, "CodazziCurvatureContraction" -> 
+      {{3*h11 - delta*h11 - delta*h22 - delta*h33 - h11*delta[[1,1]]*delta[[2,2]] + 
+         h22*delta[[1,1]]*delta[[2,2]] + h23*delta[[1,1]]*delta[[2,3]] - h13*delta[[2,2]]*delta[[3,1]] + 
+         h12*delta[[2,3]]*delta[[3,1]] + delta[[1,2]]*((h11 - h22)*delta[[2,1]] - h23*delta[[3,1]]) - 
+         delta[[1,3]]*(h23*delta[[2,1]] + (-h11 + h33)*delta[[3,1]]) + h23*delta[[1,1]]*delta[[3,2]] + 
+         h13*delta[[2,1]]*delta[[3,2]] - h11*delta[[1,1]]*delta[[3,3]] + h33*delta[[1,1]]*delta[[3,3]] - 
+         h12*delta[[2,1]]*delta[[3,3]], -(delta*h11) + 3*h12 - delta*h22 - delta*h33 + 
+         2*h12*delta[[1,2]]*delta[[2,1]] - 2*h12*delta[[1,1]]*delta[[2,2]] - h13*delta[[1,1]]*delta[[2,3]] - 
+         2*h23*delta[[2,2]]*delta[[3,1]] + h22*delta[[2,3]]*delta[[3,1]] - h33*delta[[2,3]]*delta[[3,1]] + 
+         delta[[1,3]]*(h13*delta[[2,1]] + h12*delta[[3,1]]) + 2*h23*delta[[2,1]]*delta[[3,2]] - 
+         h12*delta[[1,1]]*delta[[3,3]] - h22*delta[[2,1]]*delta[[3,3]] + h33*delta[[2,1]]*delta[[3,3]], 
+        -(delta*h11) + 3*h13 - delta*h22 - delta*h33 + 2*h13*delta[[1,3]]*delta[[3,1]] + 
+         h22*delta[[2,2]]*delta[[3,1]] - h33*delta[[2,2]]*delta[[3,1]] + 2*h23*delta[[2,3]]*delta[[3,1]] + 
+         delta[[1,2]]*(h13*delta[[2,1]] + h12*delta[[3,1]]) - h22*delta[[2,1]]*delta[[3,2]] + 
+         h33*delta[[2,1]]*delta[[3,2]] - 2*h23*delta[[2,1]]*delta[[3,3]] - 
+         delta[[1,1]]*(h13*delta[[2,2]] + h12*delta[[3,2]] + 2*h13*delta[[3,3]])}, 
+       {-(delta*h11) + 3*h12 - delta*h22 - delta*h33 - h23*delta[[1,3]]*delta[[2,2]] + 
+         h11*delta[[1,3]]*delta[[3,2]] - h33*delta[[1,3]]*delta[[3,2]] + h12*delta[[2,3]]*delta[[3,2]] - 
+         2*delta[[1,1]]*(h12*delta[[2,2]] + h13*delta[[3,2]]) - h12*delta[[2,2]]*delta[[3,3]] + 
+         delta[[1,2]]*(2*h12*delta[[2,1]] + h23*delta[[2,3]] + 2*h13*delta[[3,1]] - h11*delta[[3,3]] + 
+           h33*delta[[3,3]]), -(delta*h11) + 3*h22 - delta*h22 - delta*h33 + h13*delta[[1,3]]*delta[[2,2]] + 
+         h13*delta[[2,2]]*delta[[3,1]] + h12*delta[[1,3]]*delta[[3,2]] - h13*delta[[2,1]]*delta[[3,2]] + 
+         h22*delta[[2,3]]*delta[[3,2]] - h33*delta[[2,3]]*delta[[3,2]] + 
+         delta[[1,1]]*((h11 - h22)*delta[[2,2]] - h23*delta[[3,2]]) - h22*delta[[2,2]]*delta[[3,3]] + 
+         h33*delta[[2,2]]*delta[[3,3]] - delta[[1,2]]*((h11 - h22)*delta[[2,1]] + h13*delta[[2,3]] - 
+           h23*delta[[3,1]] + h12*delta[[3,3]]), -(delta*h11) - delta*h22 + 3*h23 - delta*h33 - 
+         h12*delta[[2,2]]*delta[[3,1]] + 2*h13*delta[[1,3]]*delta[[3,2]] + h12*delta[[2,1]]*delta[[3,2]] + 
+         2*h23*delta[[2,3]]*delta[[3,2]] - delta[[1,1]]*(h23*delta[[2,2]] + (-h11 + h33)*delta[[3,2]]) - 
+         2*h23*delta[[2,2]]*delta[[3,3]] + delta[[1,2]]*(h23*delta[[2,1]] + (-h11 + h33)*delta[[3,1]] - 
+           2*h13*delta[[3,3]])}, {-(delta*h11) + 3*h13 - delta*h22 - delta*h33 + 
+         h11*delta[[1,2]]*delta[[2,3]] - h22*delta[[1,2]]*delta[[2,3]] + h13*delta[[2,3]]*delta[[3,2]] + 
+         delta[[1,3]]*(2*h12*delta[[2,1]] + (-h11 + h22)*delta[[2,2]] + 2*h13*delta[[3,1]] + 
+           h23*delta[[3,2]]) - h23*delta[[1,2]]*delta[[3,3]] - h13*delta[[2,2]]*delta[[3,3]] - 
+         2*delta[[1,1]]*(h12*delta[[2,3]] + h13*delta[[3,3]]), -(delta*h11) - delta*h22 + 3*h23 - delta*h33 + 
+         2*h12*delta[[1,2]]*delta[[2,3]] + h13*delta[[2,3]]*delta[[3,1]] + 
+         delta[[1,3]]*((-h11 + h22)*delta[[2,1]] - 2*h12*delta[[2,2]] + h23*delta[[3,1]]) + 
+         2*h23*delta[[2,3]]*delta[[3,2]] - h13*delta[[2,1]]*delta[[3,3]] - 2*h23*delta[[2,2]]*delta[[3,3]] + 
+         delta[[1,1]]*((h11 - h22)*delta[[2,3]] - h23*delta[[3,3]]), -(delta*h11) - delta*h22 + 3*h33 - 
+         delta*h33 + h13*delta[[1,2]]*delta[[2,3]] - h12*delta[[2,3]]*delta[[3,1]] - 
+         h22*delta[[2,3]]*delta[[3,2]] + h33*delta[[2,3]]*delta[[3,2]] + 
+         delta[[1,3]]*(h23*delta[[2,1]] - h13*delta[[2,2]] - h11*delta[[3,1]] + h33*delta[[3,1]] - 
+           h12*delta[[3,2]]) + h12*delta[[1,2]]*delta[[3,3]] + h12*delta[[2,1]]*delta[[3,3]] + 
+         h22*delta[[2,2]]*delta[[3,3]] - h33*delta[[2,2]]*delta[[3,3]] - 
+         delta[[1,1]]*(h23*delta[[2,3]] + (-h11 + h33)*delta[[3,3]])}}|>, 
+   "RadialMinusLaplacianFOverF" -> 1 + (1 + rr^2)^(-1), "FlatCutoffVolume" -> 
+    -1/2*(beta*Pi) + (beta*Pi)/z^2 + (beta*Pi*z^2)/16, "GaussianHeatNumerator" -> 
+    (1 + 2*q - E^(3*q)*(1 + 8*q))/E^(4*q), "ZetaSchemeLogZIdentityCoefficientPerRenormalizedVolume" -> 
+    -13/(6*Pi), "Scope" -> "Exact component/arbitrary-jet checks and scalar algebra; not a numerical or CAS \
+proof of self-adjointness, Plancherel, or trace interchange."|>, 
+ "Messages" -> {"HoldForm[Set::wrsym]", "HoldForm[Part::partd]", "HoldForm[Part::partd]", 
+   "HoldForm[Part::partd]", "HoldForm[General::stop]"}, "Failed" -> False|>
