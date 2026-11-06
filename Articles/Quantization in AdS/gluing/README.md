@@ -4,6 +4,8 @@
 
 ## 归档后补充的独立笔记
 
+- 2026-11-07：[Strongly correlated quantum sewing](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/README.md>)：新建独立研究；有限自旋全界面历史 sewing 与严格 Markov 反例、临界 Ising 热谱连续极限、三态 Potts 扇区与有限链检验、replica entropy 及 cutoff 障碍。旧归档正文和未证边界保持原样。
+
 - 2026-09-26：[Regional Field Theories and Sewing](REGIONAL_THEORY_AND_SEWING.md)：一般 formalism，按英文定义、构造、定理与证明组织区域变分理论、闭合／opening、传输、光滑装配、CPS、响应、观测代数、量子重建及有限次组合；适用条件列在相应陈述中。
 - 2026-09-26：[Regional BV–BFV Theories and Sewing](REGIONAL_BV_BFV_FORMALISM.md)：一般 BV–BFV formalism，按区域定义与经典拼接、同伦匹配与 residual transfer、CPS／响应／观测、量子态／多重插入／corners、量子 sewing 与重建、有限组合与选择比较展开；态构造明确区域 Gaussian lift、联合 polarized BV fibre、界面 kernel 与 residual pushforward，保留新增界面零模，并列出全阶 symplectic chart 和共享 corner 的混合相容条件；区分态代表严格相等与态类相等，解析存在性仍作为输入，不含具体模型例子。
 - [配套例子与计算记录](REGIONAL_THEORY_AND_SEWING_EXAMPLES.md)：从正文移出的标量、Maxwell／Yang–Mills、YM2、Chern–Simons 与 Einstein／AdS3 材料，以及原展开稿的符号检查和来源记录。下面的历史归档及其 claim 状态保留原样。

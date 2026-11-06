@@ -1,0 +1,2100 @@
+                                                                                                                          AEI-2011-079
+                                                                                                                       NSF-KITP-11-221
+
+
+
+
+                                                         The Gravity Dual of the Ising Model
+                                                       Alejandra Castroa , Matthias R. Gaberdielb , Thomas Hartmanc ,
+
+
+
+
+arXiv:1111.1987v1 [hep-th] 8 Nov 2011
+                                                                  Alexander Maloneya , Roberto Volpatod
+
+
+                                        a
+                                            McGill Physics Department, 3600 rue University, Montreal, QC H3A 2T8, Canada
+
+                                              b
+                                                  Institut für Theoretische Physik, ETH Zurich, CH-8093 Zurich, Switzerland
+
+                                        c
+                                            Institute for Advanced Study, School of Natural Sciences, Princeton, NJ 08540, USA
+
+                                        d
+                                            Max Planck Institut für Gravitationsphysik, Albert Einstein Institut, 14476 Potsdam,
+                                                                                 Germany
+
+
+
+                                                                                   Abstract
+
+
+                                                 We evaluate the partition function of three dimensional theories of gravity in the
+                                             quantum regime, where the AdS radius is Planck scale and the central charge is of order
+                                             one. The contribution from the AdS vacuum sector can – with certain assumptions –
+                                             be computed and equals the vacuum character of a minimal model CFT. The torus
+                                             partition function is given by a sum over geometries which is finite and computable.
+                                             For generic values of Newton’s constant G and the AdS radius ℓ the result has no
+                                             Hilbert space interpretation, but in certain cases it agrees with the partition function
+                                             of a known CFT. For example, the partition function of pure Einstein gravity with
+                                             G = 3ℓ equals that of the Ising model, providing evidence that these theories are dual.
+                                             We also present somewhat weaker evidence that the 3-state and tricritical Potts models
+                                             are dual to pure higher spin theories of gravity based on SL(3) and E6 , respectively.
+Contents
+1 Introduction                                                                                 1
+
+2 AdS3 Quantum Gravity at Strong Coupling                                                      5
+  2.1 Sum over topologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      7
+  2.2 Fixed topology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      10
+
+3 Pure Gravity and the Ising Model                                                            13
+  3.1 Review of the Ising model as a minimal model . . . . . . . . . . . . . . . . .          14
+  3.2 Duality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   15
+  3.3 Tricritical Ising model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     16
+
+4 Pure Gravity at Other Values of c < 1                                                       17
+  4.1 Modular invariants of Virasoro minimal models . . . . . . . . . . . . . . . .           19
+      4.1.1 The Ising model (p, p′) = (3, 4) . . . . . . . . . . . . . . . . . . . . . .      20
+      4.1.2 The tricritical Ising model (p, p′ ) = (4, 5) . . . . . . . . . . . . . . . .     20
+      4.1.3 The (p, p′ ) = (5, 6) model . . . . . . . . . . . . . . . . . . . . . . . . .     20
+      4.1.4 The general case . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        21
+
+5 Higher Spin Gravity and the Potts Model                                                     21
+  5.1 The Potts model and extended chiral algebras . . . . . . . . . . . . . . . . .          22
+  5.2 Extended chiral algebras from higher spin gravity . . . . . . . . . . . . . . .         23
+  5.3 Parafermions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      25
+
+6 Discussion                                                                                  27
+
+A Minimal Models                                                                              29
+  A.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    29
+  A.2 ADE classification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      30
+  A.3 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      31
+
+B Modular Sums                                                                                33
+  B.1 Bases of modular invariants . . . . . . . . . . . . . . . . . . . . . . . . . . .       33
+  B.2 Models with one or two modular invariants . . . . . . . . . . . . . . . . . . .         35
+  B.3 More than two invariants: the (14, 15) minimal model . . . . . . . . . . . . .          35
+
+
+1     Introduction
+There are many exactly solvable CFTs in two dimensions, some of which describe important
+statistical systems. According to the AdS/CFT correspondence such theories are expected
+to be dual to theories of quantum gravity in three dimensions. Given the simplicity of
+the boundary theory, these dualities, if fully understood, would likely shed light on the
+nature of holography and the emergence of geometry from quantum field theory. Potential
+examples have been studied in the semiclassical regime (see e.g. [1, 2, 3]) but so far there is
+
+                                               1
+no completely satisfactory example of a fully quantum theory of gravity which is dual to an
+exactly solvable 2d CFT.
+    In this paper we will argue that a class of exactly solvable CFTs are dual to certain
+theories of quantum gravity in AdS3 . These are strongly coupled gravity theories where the
+AdS radius is Planck scale. Nevertheless the path integral of quantum gravity can – with
+certain assumptions – be computed exactly and agrees with that of a known minimal model
+CFT. The simplest example is the Ising model, which we conjecture to be dual to Einstein
+gravity with a particular (Planck scale) value of the cosmological constant.
+    Our basic strategy will be to compute the exact gravitational path integral of AdS3
+gravity in Euclidean signature with torus boundary conditions. This is formally a sum over
+three-dimensional geometries of the form
+                                               Z
+                              Zgrav (τ, τ̄ ) =      Dg e−SE [g] .                      (1.1)
+                                              ∂M=T 2
+
+In this sum over geometries we fix the boundary behaviour of the metric at asymptotic
+infinity to be a torus with a particular conformal structure, which is labelled by a conformal
+structure parameter τ . The physical interpretation of this path integral is as the finite
+temperature partition function of quantum gravity in Anti-de Sitter space. This theory of
+quantum gravity is, according to the AdS/CFT correspondence, expected to be dual to a
+boundary conformal field theory. Thus the path integral (1.1) should equal a CFT partition
+function at finite temperature. More precisely, it should equal the CFT partition function
+on a torus:
+                              Zcft (τ, τ̄ ) = Tr q L0 q̄ L̄0 , q = e2πiτ .                (1.2)
+The trace here is over the CFT spectrum. This means that the gravitational path integral
+(1.1) will – in principle – compute the complete quantum mechanical spectrum of the dual
+CFT.
+    The authors of [4] were the first to interpret a gravitational path integral of the form (1.1)
+as a CFT partition function; they dubbed the resulting sum over geometries the “Black Hole
+Farey Tail.” In this computation the bulk theory was a complicated string compactification
+for which the path integral (1.1) is not exactly computable.
+    In the search for exactly solvable theories of quantum gravity it is natural to consider
+simpler theories for which the path integral can be computed and matched with a putative
+dual CFT. The simplest candidate gravitational theories are “pure” theories of gravity which
+do not contain matter fields: the only degrees of freedom come from the metric, or perhaps
+some simple generalizations thereof to accommodate supersymmetry or higher spin symme-
+try. In these cases the equality Zcft = Zgrav imposes a highly nontrivial constraint on the
+bulk theory, one which appears quite difficult to realize. This is because in general there is
+no clear reason why the sum over geometries (1.1) should necessarily take the form (1.2) of
+a Hilbert space trace with positive integer coefficients in the q, q̄-expansion. For example, it
+was argued in [5] that in the semi-classical regime the path integral of pure general relativity
+cannot be interpreted as a Hilbert space trace of the form (1.2). In the present paper we
+will argue that in the strongly coupled regime this is no longer the case: the path integral
+can be computed and in several cases takes the form of a CFT partition function for certain
+simple, known CFTs.
+
+                                                2
+   We will start by arguing that the path integral for pure quantum gravity, at any value of
+the coupling, has the form
+                                               X
+                              Zgrav (τ, τ̄ ) =   Zvac (γτ, γ τ̄ ) .                    (1.3)
+                                                     γ
+
+
+Here the sum is over possible topologies, which are labeled by elements γ of the group
+SL(2, Z). The function Zvac represents the contribution from the vacuum topology. In the
+semiclassical limit, this formula can be interpreted as a sum over solutions to the Euclidean
+equations of motion, where Zvac is the exponential of the classical action along with an –
+in principle infinite – series of perturbative corrections. In attempting to calculate (1.3) we
+encounter two obstacles. The first is that the perturbative corrections to Zvac are difficult
+to compute. The second is that, at least in the semiclassical limit, the sum over geometries
+is badly divergent and needs to be regulated in some way. We will argue that both of
+these obstacles can be overcome in some cases for pure general relativity and its higher spin
+generalizations.
+    In performing these computations it is crucial that we are studying gravity in a strongly
+coupled regime where quantum effects are of order one. To understand why this is important,
+we recall the fundamental observation of Brown & Henneaux [6] that the symmetry group
+relevant for gravity in AdS3 is the two dimensional conformal group with central charge
+                                                         3ℓ
+                                                 c=         ,                                           (1.4)
+                                                         2G
+where ℓ is the AdS radius and G is Newton’s constant. This implies that the states of
+the theory are organized into representations of the (centrally extended) local conformal
+group. This statement follows from the symmetry structure of theories of gravity with
+asymptotically AdS boundary conditions and should be true even in the strongly coupled
+regime where c is of order one. In this regime the representations of the conformal group are
+highly constrained, unlike the semi-classical case where c is large. This strongly constrains the
+possible perturbative contributions to Zvac in (1.3), as first noted in [7]. For example, unlike
+the semi-classical case, the representations for c < 1 cannot be unitary unless the central
+charge is one of the special “minimal model” values. The function Zvac is then constrained
+to be the vacuum character of a minimal model. We will proceed by assuming that the
+expression so obtained for Zvac , based on considerations of local conformal invariance, is
+correct. This is the simplest – and seemingly only self-consistent – definition of the (a
+priori ill behaved) path integral (1.1) which is consistent with the symplectic structure of
+the classical phase space we wish to quantize.
+    Remarkably, this will imply that the sum over geometries – i.e. the sum over distinct
+topologies in (1.3) – can be performed explicitly. The important point is that in these cases
+the apparently infinite sum over topologies reduces to a finite sum.1 The resulting partition
+   1
+    This is in marked contrast with previous discussions of the black hole Farey tail which involved infinite
+sums which need to be regulated. In those cases it was only possible to obtain a reasonable answer for the
+regulated sum if the partition function was assumed to be a holomorphic function of τ . For supersymmetric
+theories this can be achieved by considering not the partition function but the elliptic genus, which is
+automatically holomorphic, as in [4, 8, 9, 10]. Alternatively one can consider a theory such as chiral gravity
+
+
+                                                      3
+function is a modular function built out of minimal model characters. For certain theories of
+gravity this will agree with the partition function of a known unitary conformal field theory.
+    The simplest case where this occurs is for pure Einstein general relativity with c = 21 . In
+this case the torus partition function agrees with that of the c = 21 critical Ising model, which
+is equivalent to a single free fermion. Thus we conjecture that the Ising model is dual to
+pure Einstein gravity at the specified coupling. This conjecture relies on certain assumptions
+(spelled out below) about the quantization of pure gravity at strong coupling used to derive
+(1.3).
+    The critical Ising model is but the first of an infinite family of exactly solvable CFTs, the
+Virasoro minimal models with c < 1. Virasoro minimal models are labeled by two coprime
+integers p < p′ , with central charge
+
+                                                         6(p − p′ )2
+                                       c(p, p′ ) = 1 −               .                                 (1.5)
+                                                            pp′
+
+The theories with p′ = p + 1, p > 2, are unitary; the simplest case (p, p′ ) = (3, 4) is the Ising
+model. The sum over geometries described above also gives the correct partition function
+of the (4, 5) theory, which is the tricritical Ising model. Thus we conjecture that this CFT
+                                       7
+is dual to pure gravity with c = 10      . However, when p > 4 pure gravity is apparently
+inconsistent. In these cases the partition function Zgrav at c = c(p, p + 1) cannot be written
+as an expansion in q, q̄ with positive integer coefficients and a unique vacuum state. So for
+these values of the coupling constants pure gravity does not have a consistent, quantum
+mechanical interpretation in terms of a Hilbert space.
+    It is therefore natural to ask why the quantum gravity path integral Zgrav appears to
+have a consistent quantum mechanical interpretation only in certain special cases. A partial
+answer comes from modular invariance. CFT partition functions must be modular invariant
+functions of τ , unchanged under τ → τ + 1 and τ → −1/τ . In the bulk gravitational
+theory this is related to general coordinate invariance; the sum over modular images in (1.3)
+describes a sum over geometries which are related by large diffeomorphisms. As we will
+see, this implies that Zgrav and Zcft at c < 1 are both built from characters of degenerate
+representations of the Virasoro algebra. For p = 3, 4 only one modular invariant combination
+of these characters can be constructed, so it is perhaps not surprising that Zgrav = Zcft . For
+p > 4, however, multiple modular invariant combinations exist [13]. In these cases the
+partition function Zgrav will typically be a non-trivial linear combination of these modular
+invariants, and as a consequence will not equal the partition function of a consistent, unitary
+CFT.
+    This apparent failure, however, leads to another possible construction of holographic
+duals for minimal conformal field theories. Many exactly solvable CFTs with p > 4 have
+the property that their partition functions are the unique modular invariant constructed
+out of the characters of an extended symmetry algebra. These extended symmetry algebras
+contain the Virasoro algebra as well as additional fields of higher conformal dimension.
+for which the partition function is holomorphic by design [11, 2]. In these cases the sum can be regulated in
+a simple way using the theory of holomorphic modular forms. (See [12] for a recent related discussion.) In
+this paper we will not assume holomorphic factorization in the sense of [1]; we are working directly with the
+partition sum over real geometries in general relativity.
+
+
+                                                     4
+This suggests that we should identify rational CFTs whose partition function is the unique
+modular invariant of a given chiral algebra and seek a dual theory of gravity based on this
+algebra. Following this strategy, we give evidence that the 3-state Potts model, a CFT with
+central charge c = 54 and chiral algebra W3 , could be dual to a higher spin theory of AdS3
+gravity which includes a massless spin 3 gauge field [14]. This higher spin generalization of
+three dimensional general relativity can be formulated classically as an SL(3, R) × SL(3, R)
+Chern-Simons theory, which was studied recently in [15]. Similarly, the tricritical Potts
+model with c = 67 could be dual to a novel higher spin theory of gravity based on E6 .
+    We emphasize that the evidence for these dualities comes from the matching of genus
+one partition functions, which includes all of the spectral data of the CFT but no non-trivial
+information about correlation functions. In order to check these dualities one would need to
+match correlation functions or – equivalently – higher genus partition functions, from which
+OPE coefficients can be extracted by pinching (see e.g. [16] for a recent discussion). We
+will see in section 5 some indications that this is less likely to work for the theories with
+extended chiral symmetry, namely the 3-state and tricritical Pots models. Thus detailed
+checks of these conjectures are desirable.
+    Ideally, we would like to find the holographic dual of a family of exactly solvable unitary
+CFTs with a large c limit. This would allow us to consider a semiclassical limit to obtain
+the dual of weakly coupled Einstein gravity. Unfortunately we were not able to find such
+a family.2 We will consider several families of exactly solvable CFTs, and describe many
+for which the partition function can indeed be written as a sum over 3d geometries. In
+some cases we will also identify candidate gravity duals. A summary of successful cases is
+presented in table 1 in the discussion section of this paper. This is not an exhaustive search,
+but rather an assortment of examples of CFTs that may be dual to pure gravity or its higher
+spin generalizations.
+    In the next section we derive the general formula (1.3) for the partition function of three
+dimensional gravity as a sum over geometries. In section 3, the gravity path integral is
+evaluated at G = 3ℓ and identified with that of the Ising model. Other dualities for pure
+gravity at c < 1 are considered in section 4. Similar dualities relating higher spin gravity to
+CFTs with extended chiral algebras, like the 3-state Potts model, are discussed in section 5.
+Finally in section 6 we conclude with a summary of results and discussion of open questions.
+In the appendices we review minimal model CFTs and provide further details on how the
+sum over modular images in (1.3) is computed.
+
+
+2       AdS3 Quantum Gravity at Strong Coupling
+In this section we discuss the quantization of gravity in the strong coupling regime, where
+the AdS radius is Planck scale. We will start by reviewing known features of the phase space
+of classical AdS gravity before discussing its quantization. Although we will not provide a
+completely rigorous quantization of this phase space, we will argue that the possible answers
+one can obtain are strongly constrained by the symmetry structure of the theory. As we will
+    2
+    However, it is possible to find families of non-unitary CFTs with bulk duals which admit a semiclassical
+limit.
+
+
+
+                                                     5
+see, this is sufficient to match the gravitational partition function with that of known CFTs
+for some specific values of the central charge.
+    We first review some general features of the path integral in three dimensional quantum
+gravity with negative cosmological constant, following [17, 4, 18, 1, 5]. We wish to compute
+the Euclidean path integral                 Z
+                                    Zgrav =      Dg e−cSE [g] .                           (2.1)
+                                              ∂M
+Here the integral is over asymptotically AdS manifolds M with fixed conformal structure
+at the boundary. The classical Euclidean action of a solution is proportional to the central
+             3ℓ
+charge c = 2G   , where ℓ is the AdS radius and G is Newton’s constant. We have therefore
+extracted an explicit factor of c from the Euclidean action SE . We note that the central
+            3ℓ
+charge c = 2G    is proportional to ~1 , so it plays the role of the (inverse) coupling constant in
+the bulk gravity theory.
+    In computing this path integral we should sum not just over all metrics on a fixed
+topological manifold, but also over all possible topologies. The boundary conditions in
+(2.1) fix the topology of spacetime only at the boundary, not in the interior. Thus the
+gravitational path integral should take the form
+                                                  X
+                                         Zgrav =      Z(M) ,                                  (2.2)
+                                                M
+
+where M denotes a particular topological three-manifold and Z(M) the contribution from
+the sum over all metrics on M.
+    We are now faced with the question of which manifolds M contribute to the sum (2.2).
+In the semi-classical approximation, this question can be answered as follows. The partition
+function should be expanded in the saddle point approximation as a sum over all solutions
+to the equations of motion
+                                                                         
+                         X
+                                                 (1)     1 (2)
+                 Zgrav =     exp −cSE [gcl ] + S [gcl ] + S [gcl ] + · · · .           (2.3)
+                          g
+                                                         c
+                            cl
+
+
+Here gcl is a classical saddle, i.e. a solution of the equations of motion, and SE is the classical
+action. The other terms describe loop contributions, which are suppressed by powers of the
+coupling constant (the central charge) c. The result is that in the semiclassical limit the only
+topologies which contribute to the path integral are those which admit a classical solution
+to the equations of motion.
+    We now wish to consider the quantization of the strongly-coupled theory, where c is of
+order one. Our central assumption is that the conclusion described above – that the only
+topologies which contribute are those which admit a classical solution – continues to hold.
+Thus we are requiring that the path integral should be organized as a sum over classical
+solutions, along with an (in principle infinite) series of quantum corrections around each
+saddle. We assume this even though the coupling constant is of order one, so that there is
+no sense in which the loop corrections are small compared to the classical Euclidean action.
+    This assumption can be viewed as part of our definition of the formal sum over geometries.
+Indeed, quantum field theory path integrals can typically only be defined in terms of a sum
+over classical solutions along with a series of perturbative corrections around each classical
+
+                                                6
+solution. There are even cases where the path integral can be computed exactly using other
+methods, and shown to agree precisely with a sum over classical saddles, each dressed by a
+series of quantum corrections. In these cases the saddle point approximation is, once one
+includes all perturbative corrections, exact. A notable example where this is the case is
+Chern-Simons gauge theory (see e.g. [19]). Given the similarity between three dimensional
+gravity and Chern-Simons theory, it is not unreasonable to hope that the same may be true
+here. Without a precise definition for the path integral of quantum gravity, however, this
+should be regarded as a conjecture, albeit a very natural one.
+    We will now discuss the sum over topologies, before turning to evaluate the contribution
+from a fixed topology.
+
+
+2.1    Sum over topologies
+Quantum gravity in Anti-de Sitter space makes sense only if one fixes the asymptotic bound-
+ary conditions on the metric appropriately. In AdS3 the metric is required to approach that
+of a two-manifold with fixed conformal structure. We now wish to organize the path integral
+(2.3) as a sum over topologies with fixed boundary conditions, following [17, 4, 5].
+    The integral we will perform is over Euclidean 3-manifolds M whose conformal boundary
+is a two-torus. The simplest geometry M which contributes to this sum is thermal AdS3 ,
+which is a Euclidean geometry with metric
+                           ds2
+                               = dρ2 + cosh2 ρ dt2E + sinh2 ρ dφ2                        (2.4)
+                            ℓ2
+where the angle φ is periodic φ ∼ φ + 2π. This is the geometry obtained by continuing
+the usual Lorentzian AdS metric in global coordinates to Euclidean signature by taking
+t → tE = it. Defining the complex coordinate z = i(φ + itE ), we see that at the boundary
+ρ → ∞ the metric approaches the usual flat metric dzdz̄. The coordinate z is identified
+according to
+                                z ∼ z + 2πin,     n∈Z                                (2.5)
+so that this is the flat metric on the cylinder. In order to define thermal AdS we must impose
+an additional identification of the z coordinate, which we will write as
+
+                                z ∼ z + 2πimτ,       m∈Z,                                (2.6)
+
+where τ is a complex parameter. This is the usual Euclidean identification that defines a
+grand canonical partition function at finite temperature and angular potential. The bound-
+ary is now a torus, whose conformal structure is determined by the parameter τ .
+    Topologically, thermal AdS3 is a solid torus. In this solid three-geometry one of the
+cycles of the boundary torus is contractible and the other is not. In the case of thermal
+AdS3 , the contractible cycle is the spatial φ circle. This makes it clear how one should
+construct other geometries that will contribute to the partition function. One just needs
+to consider other solid tori where other cycles of the boundary torus are contractible in
+the interior. Geometrically, these new solid tori will have the same metric as thermal AdS,
+but will be glued on to the boundary torus in a different way. That is to say, they will be
+related to thermal AdS by a large diffeomorphism which acts non-trivially on the boundary
+
+                                              7
+torus. Such large diffeomorphisms, known as modular transformations, will lead to distinct
+contributions to the gravitational path integral.
+   Let us illustrate this with a simple example. Consider the diffeomorphism
+                                                                1
+                                     z → z ′ = i(φ′ + it′E ) = − z .                                   (2.7)
+                                                                τ
+The periodicities (2.6) transform as
+                                                                 1
+                              z ′ ∼ z ′ + 2πin − 2πim              ,   n, m ∈ Z .                      (2.8)
+                                                                 τ
+Thus τ has been transformed to − τ1 . After making this change of variables, the contractible
+cycle is now a combination of t′E and φ′ . The φ′ cycle is not contractible, and thus the
+Lorentzian continuation of this geometry will have a horizon. Indeed this geometry is the
+Euclidean continuation of the BTZ black hole of [20].
+   More generally, the group of non-trivial large diffeomorphisms (i.e. the mapping class
+group) of the boundary torus is the modular group SL(2, Z). These modular transformations
+act on the conformal structure as
+                                                       
+                                 aτ + b            a b
+                     τ → γτ =           ,    γ=           ∈ SL(2, Z) .                  (2.9)
+                                 cτ + d            c d
+
+We emphasize that although these geometries are related by diffeomorphisms they are phys-
+ically inequivalent. Only diffeomorphisms that act trivially at infinity are true gauge sym-
+metries. Diffeomorphisms that act non-trivially at infinity generate new states in the theory
+and lead to new contributions to the path integral. For example, a modular transformation
+changes the identification of space and time, and will therefore change physical quantities
+such as the mass and angular momentum of a particular solution. Each element of SL(2, Z)
+will (up to an equivalence described below) lead to a topologically distinct solid torus, giving
+rise to a family of Euclidean solutions [17].
+    It is possible to show that the geometries described above are the only smooth solutions
+to the equations of motion with torus boundary conditions (see e.g. [5] for a simple proof).3
+Thus the geometries are labelled by the elements γ of the group SL(2, Z). We will refer to
+the contribution to the partition function of thermal AdS3 as Zvac (τ, τ̄ ). All of the other
+contributions to the path integral are obtained by modular transformations, so that
+
+                              Zγ (τ, τ̄ ) = Zvac (γτ, γ τ̄ ) ,     γ ∈ SL(2, Z) .                     (2.10)
+
+Here Zγ (τ, τ̄ ) is the contribution to the path integral from the geometry related to thermal
+AdS3 by the diffeomorphism which takes τ → γτ . The full path integral will therefore take
+the form of a sum over the modular group SL(2, Z), and the result is manifestly modular
+invariant.
+   3
+    We assume here that only smooth manifolds contribute to the path integral. We will not consider
+geometries which admit orbifold-type singularities, nor will we consider complexified geometries where the
+metric is not real. In order to address these questions precisely we would need a better understanding of the
+integration contour for the path integral of general relativity.
+
+
+                                                        8
+    There is one important subtlety, however, which is that certain elements of SL(2, Z) will
+act trivially on the geometry and hence not give distinct contributions to the path integral.
+In the semi-classical limit these trivial elements of SL(2, Z) are easy to understand. The
+transformation                                
+                                    n      1 n
+                                  T =            , n∈Z,                                (2.11)
+                                           0 1
+shifts τ → τ + n. This does not change the topology of the resulting three-manifold, because
+adding a contractible cycle to a non-contractible cycle leaves the non-contractible cycle
+unchanged. Thus in the semi-classical regime, physically inequivalent saddles are labelled
+not by the group SL(2, Z) but by the coset Γ = Γ∞ \SL(2, Z) where Γ∞ is the group of
+shifts in equation (2.11). Elements of this coset are labelled by a pair of coprime integers
+(c, d) with the restriction that c ≥ 0; these integers can be regarded as the bottom row of
+the SL(2, Z) matrix γ = ( ac db ). The path integral (2.3) then takes the form
+                                            X
+                        Zgrav (τ, τ̄ ) =          Zγ (τ, τ̄ )
+                                            γ∈Γ
+                                                                                 
+                                             X                   aτ + b aτ̄ + b
+                                     =                Zvac             ,              .   (2.12)
+                                            (c,d)=1
+                                                                 cτ + d cτ̄ + d
+                                              c≥0
+
+
+   In the strongly coupled regime, with central charge c < 1, there is no good semiclassical
+approximation. However, as described above we still wish to organize the path integral
+as a sum over smooth geometries with fixed conformal structure at the boundary. These
+geometries fall into distinct topological classes specified by the non-contractible cycle, so we
+can still formally write the partition function as
+                                            X
+                                Zgrav =             Zvac (γτ, γ τ̄ ) .                    (2.13)
+                                           γ∈Γc \SL(2,Z)
+
+
+As we will discover below there is an important difference between this formula and the
+semi-classical result (2.12). The group Γc , which describes trivial gauge transformations,
+will take a different form when c is less than one. Whereas in the semi-classical case Γc is
+simply the group of shifts (2.11), in the strongly coupled regime the identification of gauge
+inequivalent configurations will need to be modified. We will see that there is an enhanced
+group of gauge symmetries, so that Γc is a finite index subgroup of SL(2, Z). This novel
+feature will render the sum easily computable.
+    To summarize, we have made two fundamental assertions about the structure of the
+path integral of AdS3 quantum gravity. First, given our boundary conditions we expect the
+partition function defined on a two-torus to be modular invariant, i.e.
+
+                                  Zgrav (τ, τ̄ ) = Zgrav (γτ, γ τ̄ ) .                    (2.14)
+
+Second, the path integral should be given by a sum over topologies (2.13). We now turn to
+the computation of Zvac , the contribution to the path integral from a fixed topology.
+
+
+
+
+                                                      9
+2.2    Fixed topology
+We have written the path integral as a sum over topologies, where each topology is labelled
+by an element of SL(2, Z). The contribution to the path integral from a fixed topology should
+equal the classical action plus the set of quantum corrections described in equation (2.3).
+As we are considering a strongly coupled theory there is no sense in which these quantum
+corrections are small. It is not, for example, useful to organize them into a perturbative
+expansion in inverse powers of the coupling constant as would be natural in the semi-classical
+regime. We will need to obtain a full answer – including all quantum effects – in one fell
+swoop. Fortunately, following the work of [7] (see also [21]) it is possible to do precisely this.
+    We start by computing Zvac (τ, τ̄ ). This is defined as the contribution to the path integral
+from metrics which are continuously connected to the thermal AdS3 solution (2.4). This
+saddle is the Euclidean geometry obtained by analytically continuing the Lorentzian Anti-
+de Sitter metric to Euclidean signature and imposing the thermal identification (2.6). The
+partition function Zvac therefore has an alternate interpretation, as the finite temperature
+partition function of excitations around AdS3 . In particular,
+
+                            Zvac (τ, τ̄ ) = Trvac q L0 q̄ L̄0   q = e2πiτ ,                (2.15)
+
+where the trace is over all states of the bulk theory which are smoothly connected to empty
+AdS3 .
+    In principle this trace could be computed by quantizing an appropriate classical phase
+space. More precisely, we could consider the configuration space of all classical excitations of
+AdS3 which are continuously connected to the AdS ground state. This configuration space
+is equal to the classical phase space of the theory, which comes equipped with a symplectic
+structure. One could then hope to quantize this phase space explicitly in order to obtain the
+exact quantum Hilbert space and thus the trace (2.15).
+    At first sight, one might think that this classical phase space is trivial because three
+dimensional general relativity has no local degrees of freedom. Thus all classical solutions to
+Einstein’s equations which are continuously connected to empty AdS are in fact diffeomorphic
+to AdS. Thus they do not describe different geometries, but rather new metrics which are
+related to the original one by a change of coordinates. So one might think that these new
+solutions are pure gauge and do not lead to new contributions to the partition function.
+However, just as in the previous section, this is not quite the case: those diffeomorphisms
+which do not vanish sufficiently quickly at infinity lead to physical states and hence non-
+trivial contributions to the path integral.
+    To describe this space of states in more detail we must review the boundary conditions
+that are used to define our path integral. The definition of AdS gravity requires a choice of
+fall-off conditions for the metric and matter fields. The standard Brown-Henneaux boundary
+conditions state that the metric is
+                           ds2         1
+                                = dρ2 + e2ρ −dt2 + dφ2 + O(ρ0 ) ,
+                                                      
+                              2
+                                                                                           (2.16)
+                            ℓ          4
+at large ρ. We denote by ζ the vector which generates a diffeomorphism that preserves these
+boundary conditions, and by H[ζ] the corresponding phase space charge which generates
+
+
+                                                     10
+this symmetry. The set of vectors ζ that preserve the boundary structure are
+                                                                                 
+        inu       1 2 −2ρ        n                      inv      1 2 −2ρ       n
+ ζn = e       ∂u − n e ∂v − i ∂ρ + · · · ,       ζ̄n = e     ∂v − n e ∂u − i ∂ρ + · · · ,
+                  2              2                               2              2
+                                                                                        (2.17)
+             1              1
+where u = 2 (t + φ) and v = 2 (t − φ). Here we have expanded in Fourier modes and use “· · · ”
+to denote subleading corrections in ρ that do not affect the charges H[ζn ]. These subleading
+terms describe true gauge symmetries of the theory which do not lead to new physical states.
+The non-trivial symmetries are those for which H[ζ] is non-zero. These give new physical
+states.
+    The remarkable observation of Brown and Henneaux is that the H[ζn ] are computable
+and satisfy the Virasoro algebra:
+                                                                   c
+                    i{H[ζn ] , H[ζm]} = (n − m)H[ζn+m ] +            n(n2 − 1)δn+m,0 ,                (2.18)
+                                                                  12
+and similarly for H[ζ̄n ]. The brackets in (2.18) are Dirac brackets and the central charge is
+
+                                                      3ℓ
+                                                 c=      .                                            (2.19)
+                                                      2G
+    The states of the theory are obtained by acting on the ground state with one of these
+charges. These states are therefore labelled by a choice of diffeomorphism ζ, and are usually
+referred to as boundary gravitons. If we wish to compute the norm of a state ζ, the standard
+expression in terms of the symplectic structure (generalizing the scalar Klein-Gordon norm)
+reduces to the Dirac bracket of the Hamiltonian (see [7] for further details). In particular,
+the norm of the state ζ is
+                                   ||ζ||2 = {H[ζ ∗] , H[ζ]} .                          (2.20)
+The physical spectrum of the theory includes all states for which ||ζ||2 is positive.4 A state
+with zero norm describes an extra gauge symmetry, rather than a new physical excitation.
+    So far we have identified the classical phase space of the theory as the space of non-
+trivial diffeomorphisms applied to the vacuum. At the level of finite, rather than infinites-
+imal, diffeomorphisms this space is (a central extension of) the infinite dimensional group
+Diff(S 1 ) × Diff(S 1 ). Given this group structure one might hope that this phase space could
+be quantized and Zvac computed explicitly. When the central charge is greater than one this
+can be accomplished using the method of co-adjoint orbits [22]. Unfortunately the quanti-
+zation of the phase space in question appears to be much more difficult when c < 1.5 We
+will therefore proceed indirectly, and argue that there is only one natural answer consistent
+with the symmetries of the phase space in question.
+    To begin let us imagine canonically quantizing this theory by promoting the Dirac brack-
+ets in (2.18) to commutators. We will also re-label the generators as Ln = H[ζn ] and
+L̄n = H[ζ̄n ]; these are now operators in the quantum theory. The vacuum |0i is the state
+   4
+     For simplicity we assume unitarity in this subsection, but this is not required. In a non-unitary theory,
+a state is physical unless it has zero overlap with every other state, including itself.
+   5
+      See however [23], who discuss the quantization of this space using different methods and appear to
+obtain results consistent with ours below.
+
+
+                                                     11
+annihilated by L0 , L̄0 as well as all of the corresponding Virasoro lowering operators. This
+vacuum state is described semiclassically by empty AdS.
+    The conformal symmetry of AdS3 gravity then strongly constrains the quantum spectrum
+of the theory. The operators Ln , L̄n with n > 0 act as annihilation operators and hence lower
+the energy and momentum of a state. This implies that when acting on the vacuum
+
+                                            Ln |0i = 0 ,    n>0.                                       (2.21)
+
+Further, the vacuum is invariant under the rigid SL(2, R) generators which generate the
+SO(2, 2) = SL(2, R) × SL(2, R) isometries of empty AdS. Thus
+
+                                           L−1 |0i = L̄−1 |0i = 0 .                                    (2.22)
+
+Descendants of the vacuum are obtained by acting with raising operators L−n , L̄−n with
+n > 1. These states are the boundary gravitons, and generically take the form
+
+                                        L−n1 · · · L−nk |0i ,   ni > 1 .                               (2.23)
+
+It is important to note that these graviton states do not generate an ordinary Fock space
+and should not be regarded as free particles. Instead, they should be thought of as Virasoro
+descendants of the vacuum, whose norm is computed via commutators as in (2.20). This
+turns out to have important implications when c < 1.
+    The partition function Zvac is then the generating function which counts these states,
+according to equation (2.15). In computing Zvac it is important to count only physical states
+with positive norm. The result depends on whether c is greater than or less than one. When
+c > 1, the norm of any boundary graviton (2.23) is positive, with the exception of the null
+state L−1 |0i. This computation of the norm follows directly from the Virasoro algebra, using
+(2.20). The resulting trace is equal to the character of the full Verma module modded out
+by the null state, which is
+                                   2
+                         (1 − q)                                                              2
+     Zvac = q (1−c)/24                 = q −c/24 1 + q 2 + q 3 + 2q 4 + 2q 5 + 4q 6 + · · ·        .   (2.24)
+                          η(τ )
+
+Here η(τ ) is the Dedekind eta function. The factor of (1 − q) accounts for the removal of
+L−1 from the spectrum.
+    When c < 1 the result is more interesting. The computation is in fact identical to the
+construction of irreducible representations of the Virasoro algebra using the Kac determinant
+formula. This discussion is a standard part of the construction of minimal model conformal
+field theories with c < 1. We will therefore just state the results here and refer to the
+literature (e.g. [24]) for details.
+    The first result is that when c < 1 the theory contains negative norm states unless
+                                                           6
+                                              c=1−              ,                                      (2.25)
+                                                       p(p + 1)
+
+where p > 2 is an integer. When c takes one of these values there will still be null states with
+zero norm. Therefore the partition function which counts physical (non-zero norm) states
+
+                                                       12
+differs from that of (2.24). It is instead the character of a degenerate representation of the
+Virasoro algebra,
+                                 Zvac (τ, τ̄ ) = Trvac q L0 q̄ L̄0 = |χ1,1 (τ )|2 ,                                (2.26)
+where6
+                                     ∞
+                                                                                                                    !
+                     (1 − q)         X                                                                            
+χ1,1 = q (1−c)/24               1+         (−1)k q h1+k(p+1),(−1)k +(1−(−1)k )p/2 + q h1,kp+(−1)k +(1−(−1)k )p/2        ,
+                      η(τ )
+                                     k=1
+                                                                                                                   (2.27)
+with
+                                                  (pr − (p + 1)s)2 − 1
+                                        hr,s =                         .                                           (2.28)
+                                                       4p(p + 1)
+The complicated power series multiplying η(τ ) in (2.27) has the effect of removing the null
+states from the spectrum. The result is that χ1,1 is the character of an irreducible represen-
+tation of the Virasoro algebra. We note that while we have focused on unitary theories, for
+which all states have positive norm, similar expressions hold for the non-unitary minimal
+models. In these cases the character χ1,1 includes states with both positive and negative
+norm.
+    The above analysis, although performed in pure gravity, easily generalizes to other “pure”
+theories of quantum gravity whose only perturbative states are the boundary excitations
+of empty AdS associated with an extended symmetry algebra. One generalization of our
+results is to pure supergravity [25, 26]. Another is to the higher spin theories of [27, 28].
+In both cases the spectrum of boundary states is determined by an appropriate asymptotic
+symmetry algebra. These algebras are generalizations of the Virasoro algebra to include
+either fermionic generators and current algebras [29, 30] or (in the higher spin case) to a
+non-linear WN algebra [31, 15, 32, 33].
+    Let us now summarize our results. When c < 1 the partition function of AdS3 quantum
+gravity is                                   X
+                            Zgrav (τ, τ̄ ) =        Zvac (γτ, γ τ̄ ) .                   (2.29)
+                                                      γ∈Γc \SL(2,Z)
+
+Here Γc is the subgroup of pure gauge symmetries, which will be described in more detail
+below. The function Zvac is equal to the vacuum character of a minimal model CFT
+                                             Zvac (τ, τ̄ ) = |χ1,1 (τ )|2 ,                                        (2.30)
+where χ1,1 is given by (2.27) for c < 1. We emphasize that, although our results are phrased
+in the language of minimal model CFTs, these results were derived directly in the bulk
+gravity theory.
+
+
+3         Pure Gravity and the Ising Model
+We now wish to compute explicitly the partition function of quantum gravity and show that
+it matches exactly that of a known, unitary conformal field theory. In this section we will
+    6
+        The notation χ1,1 is chosen to match minimal model conventions in the literature.
+
+                                                           13
+focus on the simplest case, that of Einstein gravity with G = 3ℓ. The partition function will
+equal that of the c = 21 minimal model, which describes the critical Ising model. In later
+sections we will explore more complicated versions of the correspondence for other values of
+the central charge.
+
+
+3.1     Review of the Ising model as a minimal model
+The simplest unitary minimal model has central charge
+                                                                    1
+                                              c = c(3, 4) =           .                              (3.1)
+                                                                    2
+Minimal models have a finite number of primary fields, which can be found by determining
+the degenerate irreducible representations of the Virasoro algebra. When c = 12 there are
+three such degenerate, irreducible representations, with dimensions7
+                                                              1                1
+                                 h1,1 = 0 ,     h2,1 =          ,     h1,2 =     .                   (3.2)
+                                                             16                2
+Further details about this minimal model, including explicit formulae for the characters of
+these representations, are given in appendix A.
+   The partition function of this theory can, by conformal symmetry, be written as a sum
+over the characters of these representations
+                                           X
+                               Z(τ, τ̄ ) =   Nh,h̄ χh (τ )χh̄ (τ̄ ) .                 (3.3)
+                                                 h,h̄
+
+
+Here χh are the characters of the irreducible Virasoro representations appearing in equation
+(3.2) and τ is the conformal structure of the torus. The non-negative integers Nh,h̄ ∈ N0
+denote the multiplicities of the various representations.
+    Modular invariance
+                                Z(τ ) = Z(τ + 1) = Z(−1/τ ) ,                          (3.4)
+imposes a strong constraint on the theory. A simple way to impose invariance under τ → τ +1
+is to include only primaries with h = h̄ in the spectrum; this follows from the transformations
+properties of χh which are spelled out in (A.6)–(A.7). Thus we are led to consider the
+partition function
+
+                         ZIsing (τ, τ̄ ) = |χ1,1 (τ )|2 + |χ2,1 (τ )|2 + |χ1,2 (τ )|2 .              (3.5)
+
+It is straightforward to check that (3.5) is invariant under the action of S as well.
+    In fact, this minimal model has a simple interpretation in terms of the two dimensional
+Ising model. The Ising model consists of a square lattice with spin variables at each site
+taking values ±1. With a nearest neighbour interaction the theory has a conformally invari-
+ant critical point. At this critical point the dynamics are described by the minimal model
+   7
+    Here h denotes the scaling dimension of an operator on the plane. It is related to the eigenvalue of L0
+on the cylinder by L0 = h − 24
+                             c
+                               .
+
+
+                                                        14
+CFT with c = 12 . The theory contains three local primary operators: the identity 1, the spin
+operator σ(z, z̄), and the energy density ε(z, z̄), with conformal dimensions
+                                                                           
+                                                1 1                     1 1
+               (h, h̄)1 = (0, 0)   (h, h̄)ε =    ,         (h, h̄)σ =     ,     .       (3.6)
+                                                2 2                     16 16
+These fields 1, σ, ε are obtained by multiplying together the left- and right-moving represen-
+tations appearing in (3.2). The partition function (3.5) can then be seen to come from the
+states created by 1, σ, and ε, respectively. Remarkably, this conformal field theory can also
+be described in terms of a single free fermion.
+
+
+3.2    Duality
+We now compute the path integral of quantum gravity at c = 12 using the method described
+in section 2 and show that it is equal to ZIsing . The contribution of thermal AdS to the path
+integral is simply the minimal model vacuum character
+
+                                     Zvac (τ, τ̄ ) = |χ1,1 (τ )|2 .                        (3.7)
+
+The full path integral is the sum over all modular images
+                                                 X
+                                Zgrav (τ, τ̄ ) =   |χ1,1 (γτ )|2 ,                         (3.8)
+                                                  γ∈Γ
+
+
+where γτ = aτ     +b
+               cτ +d
+                     . Here Γ = Γc \SL(2, Z) is the coset which labels physically inequivalent
+geometries. We must now determine this coset.
+    The subgroup Γc ⊂ SL(2, Z) describes those diffeomorphisms which act trivially on the
+state of the system, and in particular leave the Hamiltonian and other observables unchanged.
+At first sight the identification of these residual gauge symmetries seems difficult, as we are
+working in the regime c < 1 where we have no perturbative control over the bulk theory.
+However, from the form of (3.8) is is clear that we should take Γc to be the subgroup
+of SL(2, Z) which leaves the vacuum character |χ1,1 |2 invariant. This Γc is a finite index
+subgroup of SL(2, Z), so that the coset Γ = Γc \SL(2, Z) is finite. Thus it is necessary to
+include only a finite number of inequivalent topologies in the sum over geometries. We will
+describe the general properties of this sum below, but before doing so let us work out the
+Ising model case in full detail.
+    When c = 12 one can determine all of the inequivalent contributions to the partition
+function (3.8) explicitly. In the basis (χ1,1 , χ2,1 , χ1,2 ) the modular matrices are given by
+equations (A.5) and (A.15) in the appendix. Starting with the contribution from thermal
+AdS, Zvac , one can then apply S and T repeatedly to this ‘seed’ contribution, obtaining new
+contributions to the partition function. This process terminates after producing 24 inequiv-
+alent contributions, so |Γ| = 24 and the modular sum in (3.8) is indeed finite. Summing up
+these contributions gives
+                                         Zgrav = 8ZIsing .                                 (3.9)
+The overall factor of 8 can be absorbed into the path integral measure. We conclude that
+the partition function of pure quantum gravity at c = 12 is equal to that of the Ising model.
+
+                                                  15
+Both the gravity path integral and the Ising model partition function are modular invariants
+constructed from the χr,s , so one might suspect that this equality is guaranteed by modular
+invariance. This is indeed the case as will be discussed below.
+    We emphasize the key fact that the gravitational path integral with c < 1 includes only
+a finite sum over topologies. This differs from the infinite sum – as in equation (2.12) – that
+arises in the c > 1 regime. The truncation to a finite number of terms was not imposed
+by hand. It is required by the standard rules of path integration in a theory with gauge
+invariance. In the quantum regime there is an enhanced gauge symmetry, rendering certain
+large gauge transformations trivial and collapsing the apparently infinite family of SL(2, Z)
+black holes to a finite number of inequivalent geometries. In a sense this enhanced gauge
+invariance implies that many of the apparently distinct semi-classical black hole solutions
+of three dimensional gravity must disappear in this quantum regime. This is clear if one
+attempts to interpret the primary states of the Ising model as black holes; there are only
+a finite number of such primaries, and they do not appear to have the large degeneracies
+associated with the semi-classical Bekenstein-Hawking formula.
+
+
+3.3       Tricritical Ising model
+The next conformal field theory on our list of unitary minimal models has central charge
+                                                              7
+                                                  c(4, 5) =      .                                         (3.10)
+                                                              10
+The theory contains primary fields with weights
+                                7               3               3               3              1
+        h1,1 = 0 ,     h1,2 =      ,   h1,3 =     ,    h2,2 =      ,   h2,3 =     ,   h3,3 =      .        (3.11)
+                                16              2               80              5              10
+As in the previous case, it is easy to construct a modular invariant partition function
+                                       X                            X
+                 ZTri−Ising (τ, τ̄ ) =     Nh,h̄ χh (τ )χh̄ (τ̄ ) =   |χr,s (τ )|2 ,    (3.12)
+                                                h,h̄                      r,s
+
+
+where χr,s are the Virasoro characters (A.8) for the fields listed in (3.11). Further details of
+this minimal model are given in appendix A.
+    This conformal field theory has a statistical interpretation as a simple generalization of
+the Ising model, where we now allow the spin variable to take values {0, ±1}. This adds to
+the model a chemical potential associated to the fractional occupation number. This new
+parameter modifies the structure of the phase diagram, so that there is now a tricritical
+point where three phases meet: paramagnetic, ferromagnetic and a two-phase region.8 This
+tricritical Ising model now has six primary operators, corresponding to the identity, three
+energy operators and two spin like operators; these give the six terms appearing in the
+partition function (3.12).
+    We now proceed to construct the gravitational dual of the tricritical Ising model. The
+discussion is very similar to that for the Ising model above. The gravitational path integral
+  8
+      The tricritical Ising model is secretly supersymmetric, but we will not exploit this feature here.
+
+
+                                                        16
+         7
+for c = 10 is
+                                                          X
+                                             Zgrav =            |χ1,1 (γτ )|2 ,                   (3.13)
+                                                          γ∈Γ
+
+where χ1,1 is the vacuum contribution of thermal AdS, which equals the vacuum character
+of the tricritical Ising model. To find the subgroup Γ = Γc \SL(2, Z) we must again identify
+those diffeomorphisms which leave the observables invariant. In practice, this means finding
+those elements of SL(2, Z) which leave |χ1,1 | invariant.
+    The operator content of every (p, p + 1) minimal model is different. Thus the representa-
+tion of the modular matrices in the basis χr,s depends on p. This means that the set of pure
+gauge transformations Γc is different for each value of the central charge. For example, one
+can construct explicitly Γc for the tricritical Ising model and show that it is an index 288
+subgroup of SL(2, Z). Thus there are 288 inequivalent contributions to the sum (3.13). This
+is in contrast to 24 for the critical Ising model. In performing these explicit computations of
+the sum over geometries, the determination of Γc is the most difficult part.
+    For the tricritical Ising model, we find by explicitly computation
+                                       X
+                           Zgrav =            |χ1,1 (γτ )|2 = 48ZTri−Ising .             (3.14)
+                                          γ∈Γc \SL(2,Z)
+
+As before the overall coefficient can be absorbed into the path integral measure. This allows
+us to identify the partition function of the tricritical Ising with the path integral of pure
+                                     7
+quantum general relativity at c = 10   .
+
+
+4         Pure Gravity at Other Values of c < 1
+We now consider the general case, where c takes any of the allowed minimal model values. We
+will begin by investigating more thoroughly the implications of modular invariance, which
+lead to an improved understanding of the (tri)critical Ising model examples discussed above.
+    A minimal model conformal field theory – and indeed any rational CFT – has only
+finitely many primary fields. The corresponding characters9 χλ will therefore form a finite-
+dimensional unitary representation of the modular group SL(2, Z). That is to say, for every
+γ ∈ SL(2, Z) we have                      X
+                               χλ (γτ ) =    M(γ)λµ χµ (τ ) ,                          (4.1)
+                                                          µ
+
+where M(γ) is a unitary matrix.
+   For any of the allowed minimal model values of c the partition function of quantum
+gravity will take the form              X
+                                Zgrav =   |χ1,1 (γτ )|2 .                        (4.2)
+                                                          γ∈Γ
+
+Here, as above, the vacuum character χ1,1 is a “seed” contribution from thermal AdS which
+is summed over modular images. The coset Γ is
+                 Γ = Γc \SL(2, Z) ,          Γc = {γ ∈ SL(2, Z) : |χ1,1 (γτ )| = |χ1,1 (τ )|} .    (4.3)
+    9
+        To simplify notation, we use the collective index λ = (r, s) to label primary fields.
+
+                                                              17
+We note that Γc always contains the parabolic subgroup of SL(2, Z) generated by T : τ 7→
+τ + 1. More generally, Γc contains the projective kernel of the modular representation M(γ),
+i.e. the subgroup of SL(2, Z) which leaves all of the characters χλ invariant up to a phase. It
+was shown in [34] that, for every rational CFT, this is a finite index subgroup of SL(2, Z).
+Hence the sum (4.2) involves only finitely many terms. This implies that there are no subtle
+issues involving the convergence of the sum over topologies. This is in contrast with previous
+discussions of the sum over topologies in the black hole Farey tail.
+     The function Zgrav is by construction modular invariant. Furthermore, given the structure
+of the modular transformations it must take the form
+                                              X
+                                      Zgrav =    Nλµ χλ χ̄µ                               (4.4)
+                                              λ,µ
+
+
+for some constants Nλµ . In order for Zgrav to have an interpretation as a quantum mechanical
+partition function the constants Nλµ must all, up to an overall scale factor, be non-negative
+integers with N11 = 1 so that the vacuum is unique. We will call a modular invariant
+combination of characters with these properties a physical invariant.
+    In order to understand whether Zgrav will be a physical invariant or not, let us first
+consider the following more general problem. Suppose we start with some combination of
+characters of the form                       X
+                                    Z(X) =       Xλµ χλ χ̄µ ,                           (4.5)
+                                             λ,µ
+
+where Xλµ is a constant hermitian matrix. Under the modular transformation τ 7→ γτ ,
+Z(X) becomes Z(γ · X), where
+
+                                   γ · X = M(γ) X M(γ)† .                                   (4.6)
+
+The product on the right hand side is standard matrix multiplication. We call X modular
+invariant if γ · X = X for all γ ∈ SL(2, Z); then the corresponding combination of characters
+Z(X) is a modular invariant function. Note that we do not assume that Z(X) is a physical
+invariant in the sense that it satisfies any integrality or positivity properties.
+   The space of matrices Xλµ has a non-degenerate inner product
+
+                                       (X, Y ) = Tr(X Y )                                   (4.7)
+
+that is clearly invariant under the action (4.6) of the modular group,
+
+                                   (X, Y ) = (γ · X, γ · Y ) .                              (4.8)
+
+    Suppose now that I1 , . . . , Ik is a basis for the space of modular invariant hermitian ma-
+trices. Without loss of generality we may assume that the Ij are orthonormal with respect
+to the inner product (4.7). Then, given some seed X the modular completion of X will take
+the form
+                                     X                Xk
+                                         Z(γ · X) =      cj Z(Ij ) ,                        (4.9)
+                                 γ∈Γ                j=1
+
+
+
+
+                                               18
+where                             X                      X
+                           cj =         (Ij , γ · X) =             (γ −1 Ij , X) = |Γ| (Ij , X) .      (4.10)
+                                  γ∈Γ                        γ∈Γ
+
+Here we have used that Ik is modular invariant, and |Γ| equals the number of elements in
+Γ. For a given rational CFT it is now (at least in principle) straightforward to determine
+the modular completion of any given seed X: once we have classified all modular invariants
+Ij , we only need to evaluate the inner products (Ij , X) in order to compute the modular
+completion of X. The gravitational path integral (4.2) can then be computed by choosing
+the seed Xλµ = δλ,1 δµ,1 .
+     If the CFT under consideration has more than one modular invariant combination of
+characters, then the modular completion of any seed will lead to a linear combination of the
+different modular invariants Z(Ij ). This linear combination will typically not be a physical
+invariant. Thus we should expect that the construction will not lead to a physical modular
+invariant unless the CFT has only one modular invariant combination of characters.
+     On the other hand, if the CFT has a unique modular invariant, then this modular invari-
+ant must be physical since every rational CFT has at least one physical modular invariant
+given by the diagonal10                       X
+                                     Z(I1 ) =     χλ χ̄λ .                             (4.11)
+                                                                   λ
+
+In this case the modular completion of any seed will lead to a physical invariant, since the
+modular completion is modular invariant by construction. Thus it will agree, up to an overall
+coefficient, with Z(I1 ). As we shall see momentarily, both the Ising and the tricritical Ising
+models fall into this class.
+
+
+4.1        Modular invariants of Virasoro minimal models
+For the Virasoro minimal models, the modular invariants have been classified by Cappelli,
+Itzykson & Zuber [35, 13]. Recall that the minimal models are parametrised by two coprime
+positive integers p < p′ , where
+
+                                                                       6(p − p′ )2
+                                             c(p, p′ ) = 1 −                       .                   (4.12)
+                                                                          pp′
+
+In the (p, p′ )-minimal model, the primary fields are labeled by (r, s), where r = 1, . . . , p′ − 1
+and s = 1, . . . , p −1 and we have the identification (r, s) ∼ (p′ −r, p −s). Thus the characters
+form a representation of P SL(2, Z) of dimension (p − 1)(p′ − 1)/2. Explicit formulae and
+further details of this representation are given in appendix A.
+    As reviewed in appendix B, the different modular invariant combinations of characters are
+labelled by pairs of integers (d, d′ ), where d(d′ ) is a divisor of p(p′ ). The modular invariants
+                                   (d,d′ )
+can be described by matrices Xλµ using the notation of equation (4.5), which satisfy
+
+                                         ′          p    ′                   p′        p p′
+                                  X (d,d ) = −X ( d ,d ) = −X (d, d′ ) = X ( d , d′ ) .                (4.13)
+  10
+       The combination (4.11) is modular invariant because the representation of the modular group is unitary.
+
+
+
+                                                               19
+The modular invariant I1 exists for all Virasoro minimal models and corresponds to d =
+d′ = 1. This is the diagonal invariant, also referred to as the ‘AA’ invariant. For unitary
+minimal models, we have (p, p′ ) = (m, m + 1) with m ≥ 3. For m ≥ 5 there exists at least
+one more modular invariant, namely X (2,1) when m is even, or X (1,2) when m is odd. The
+linear combination X (1,1) − X (1,2) or X (1,1) − X (2,1) is physical and corresponds to the ‘AD’
+or the ‘DA’ modular invariant, respectively.
+    In what follows we will illustrate the properties and consequences of this classification
+of modular invariants. We will start with a few simple examples, including the Ising and
+tricritical Ising models, before proceeding to the general case.
+
+4.1.1    The Ising model (p, p′ ) = (3, 4)
+For the Ising model (p, p′) = (3, 4), the possible divisors (d, d′ ) are (1, 1), (1, 2), (1, 4), (3, 1),
+(3, 2) and (3, 4). The modular invariants with d = 1, 3 and d′ = 1, 4 are all (up to an
+overall sign) equal to the I1 modular invariant. The invariants with (d, d′ ) = (1, 2) and
+(d, d′) = (3, 2) vanish by equation (4.13). Thus the Ising model has only one modular
+invariant. The argument around equation (4.11) then implies that Zgrav is, up to a constant,
+equal to the I1 modular invariant.
+
+4.1.2    The tricritical Ising model (p, p′ ) = (4, 5)
+The analysis for the tricritical Ising model is essentially identical. The possible divisors are
+(1, 1), (1, 5), (2, 1), (2, 5), (4, 1) and (4, 5). Again, the modular invariants with d = 1, 4 and
+d′ = 1, 5 are all (up to an overall sign) equal to the I1 modular invariant, while the invariants
+(2, 1) and (2, 5) vanish by equation (4.13). Thus the tricritical Ising model has also only one
+modular invariant, and again Zgrav is necessarily proportional to this modular invariant.
+
+4.1.3    The (p, p′ ) = (5, 6) model
+Let us now consider the next unitary minimal model, with (p, p′ ) = (5, 6). In this case there
+are two different invariants, both of which are physical. In addition to the AA invariant with
+(d, d′) = (1, 1) we also have a non-trivial AD invariant X (1,1) − X (1,2) . We should therefore
+not expect the Zgrav modular invariant, obtained as the modular completion of the seed
+|χ1,1 |2 , to be a physical invariant. Instead it will be a linear combination of the two physical
+modular invariants.
+    Let us denote by X AA and X AD the two canonically normalised physical modular invari-
+ants. An orthonormal basis for the modular invariants can be taken to be
+                                                     r 
+                                1                        5           4    
+                         I1 = √ X     AA
+                                         ,     I2 =          X AD − X AA .                  (4.14)
+                                 10                     48           5
+
+The inner products with the seed |χ1,1 |2 (i.e. with Xλµ = δλ1 δµ1 ) are
+
+                                         1                                 1
+                        c1 = (I1 , X) = √ ,            c2 = (I2 , X) = √       .                 (4.15)
+                                         10                                240
+
+
+                                                  20
+Thus, up to an overall numerical factor,
+                                          1       1
+                         |χ1,1 (γτ )|2 ∼
+                     X
+                                       = √ I1 + √     I2
+                     γ∈Γ
+                                          10      240
+                                            1 AA   1 AD ∼ 4 AA 1 AD
+                                       =      X +    X = X + X      .                                (4.16)
+                                           12     48      5    5
+In the last step we have rescaled the partition function so that the vacuum representation
+appears with multiplicity one. Because of the fractional coefficients the resulting invariant
+is not physical.11 The coefficients appearing in the q-expansion are not positive integers, so
+we conclude that in this case the partition function of pure quantum gravity does not have
+a quantum mechanical interpretation.
+
+4.1.4      The general case
+In general the analysis of the (p, p′ ) = (m, m + 1) = (5, 6) model above appears to be
+representative of all unitary minimal models with m ≥ 5. Indeed, all of these models have at
+least a second (physical) modular invariant. Thus generically we expect fractional coefficients
+in the normalised modular completion of the vacuum seed |χ1,1 |2 as in (4.16). We have tested
+this for a number of cases, and this conclusion seems to be fairly robust.
+    We note, however, that if p′ 6= p + 1 – so that the resulting models are non-unitary – then
+one can find models with a unique modular invariant. In this case, the modular completion
+of the vacuum seed (or indeed any other seed) will necessarily give the physical modular
+invariant. The minimal models that have this property are characterized by the condition
+that p and p′ are both prime or squares of primes; one can see from the discussion around
+(4.13) that there is a unique modular invariant in this case.
+    In general, however, it appears that the only cases where the path integral of general
+relativity equals that of a unitary CFT are the critical and tricritical Ising models.
+
+
+5       Higher Spin Gravity and the Potts Model
+So far we have limited our attention to pure gravity. Now we will consider a wider class of
+bulk theories, and find candidate duals for several more exactly solvable CFTs. The bulk
+theories that we consider are higher spin theories in AdS3 , which include higher spin gauge
+fields in addition to the graviton. Like pure gravity, higher spin gravity in three dimensions
+is locally trivial — the only degrees of freedom are boundary excitations — so the path
+integral can be computed exactly and compared with known CFTs.
+    The asymptotic symmetry algebra of higher spin gravity in AdS3 is a W-algebra [31, 15],
+which is an extension of the Virasoro algebra to include higher spin currents. This suggests
+that we look for dualities between quantum higher spin gravity and CFTs with extended
+conformal symmetry. We will compute the path integral of higher spin gravity and find
+several examples where the resulting partition function matches that of a known CFT with
+extended symmetry. The simplest duality in this class relates the 3-state Potts model to
+ 11
+      This final expression can also be checked by computing directly the sum over modular images.
+
+
+                                                    21
+SL(3)-gravity. Both theories have W3 symmetry, and we will show that they have the same
+torus partition function. This provides a higher spin analogue of the Ising model duality
+described above. Several other examples are also discussed below.
+
+
+5.1    The Potts model and extended chiral algebras
+We begin with a discussion of extended conformal symmetry in CFT, postponing the bulk
+interpretation until section 5.2.
+    In section 4.1.3, we concluded that pure gravity does not give a quantum mechanically
+consistent partition function when (p, p′ ) = (5, 6). At this value of the central charge, there
+are two possible minimal model conformal field theories, corresponding to the two modular
+invariants X AA and X AD described in section 4.1.3. The gravitational partition function
+                                       X
+                                            |χ1,1 (γτ )|2                                  (5.1)
+                                          γ∈Γ
+
+does not give either of these partition functions. However, this does not rule out a dual inter-
+pretation using a different theory of gravity. The second of these minimal model conformal
+field theories – the one with the non-diagonal ‘AD’ type partition function – is known as the
+3-state Potts model. An explicit formula for its partition function Zpotts is given in equation
+(A.25). It turns out that Zpotts can be written as a sum over modular images starting from
+a different vacuum seed. For the Potts model, we observe that
+                             X
+                                 |χ1,1 (γτ ) + χ1,4 (γτ )|2 = 12 Zpotts ,                  (5.2)
+                            γ∈Γ
+
+where the sum is over the 48 distinct images of the vacuum seed under SL(2, Z). Here χ1,4
+is the character built on a Virasoro primary with dimension 3.
+    The expression (5.2) has a natural CFT interpretation. The conserved spin-3 current of
+the Potts model extends the chiral algebra of the theory from the Virasoro algebra to W3 .
+Thus states can be organized into representations of W3 . The vacuum representation of this
+algebra now contains not just Virasoro descendants but also spin-3 descendants, so
+
+                                  χ(3)
+                                   vac (τ ) = χ1,1 (τ ) + χ1,4 (τ ) ,                      (5.3)
+
+where χ(3) denotes a W3 character at c = 45 . Therefore (5.2) can be written
+                               X
+                                   |χ(3)       2
+                                     vac (γτ )| = 12 Zpotts .                              (5.4)
+                                  γ∈Γ
+
+This is very similar to the identity for the Ising model, except that the vacuum contribution
+is a W3 character rather than a Virasoro character. The equality (5.4) is guaranteed by
+modular invariance: there is only one modular invariant combination of W3 characters at
+c = 45 (see e.g. [36]). We note that for the purposes of computing the torus partition function
+we only care about the functional dependence of this partition function on τ . However, this
+masks some of the structure of the theory, as there are conjugate representations of W3 which
+happen to have the same character. Thus the partition function can actually be written in
+
+                                                  22
+terms of W3 characters in many different ways. As we will discuss in more detail in section 5.3
+this will have implications for the computation of higher genus partition functions, although
+it is invisible in the torus partition function.
+     Other (p, p + 1) Virasoro minimal models in the D-series similarly have extended chiral
+algebras when p ≡ 1, 2(mod 4). The next case, p = 6 and c = 67 , is the tricritical Potts
+model. This CFT has a conserved dimension-5 current in addition to the stress tensor at
+dimension 2, so the chiral algebra is denoted W(2, 5). The W(2, 5) vacuum character at
+c = 67 is
+                                        χ(5)
+                                         vac = χ1,1 + χ1,5 ,                              (5.5)
+where χ1,5 contains the dimension-5 Virasoro primary. Summing over modular images, we
+find                          X
+                                  |χ(5)       2
+                                    vac (γτ )| = 16 Ztri−potts .                (5.6)
+                                 γ∈Γ
+
+    For p = 9, 10, 13, with chiral algebras W(2, 14), W(2, 18), and W(2, 33) respectively,
+the modular sum reproduces the CFT partition function. However, this pattern does not
+continue indefinitely. For p = 14, it fails: the modular sum produces a partition function
+with some negative integer coefficients, which is not the partition function of a unitary CFT.
+    As discussed in Appendix B.2, this can be understood from the Cappelli-Itzykson-Zuber
+classification of modular invariants. For p > 4, all minimal models have an AA invariant
+and an AD or DA invariant (and some have an exceptional E invariant). These are the
+only physical invariants – i.e. the only ones with positive integer coefficients – but in general
+there are also unphysical invariants. The unphysical invariants first appear at p = 14, and
+account for the negative integers in the gravity answer at this level. Conditions for a unitary
+model to have only physical invariants are given in Appendix B.2; in these cases the sum
+over modular images of the extended vacuum character reproduces the AD or DA-type CFT
+partition function. Otherwise we expect a contribution from unphysical invariants, which
+is confirmed in detail for p = 14 in Appendix B.3. These facts are summarized in the first
+three columns of Table 1 in section 6.
+
+
+5.2    Extended chiral algebras from higher spin gravity
+We have identified an infinite class of unitary CFTs — Virasoro models with p = 5, 6, 9, 10, 13,
+plus those in Appendix B.2 — with extended chiral algebras, where the modular sum of the
+extended vacuum character produces a consistent CFT partition function. Now we attempt
+to construct bulk theories whose contribution around thermal AdS is given by the extended
+vacuum character of these CFTs. We will succeed only for p = 5, 6; the results are summa-
+rized in the final column of Table 1.
+    As discussed above, the natural candidate dual for a theory with extended conformal
+symmetry is a higher spin theory. There are many different theories of higher spin gravity
+in AdS3 , specified by a Lie algebra g and an embedding ρ of sl(2) ⊆ g. The action is the
+sum of two Chern-Simons actions,
+                                                              Z           
+                                                            1          2 3
+               S = kcs ICS [A] − kcs ICS [Ā] ,  ICS [A] =        AdA + A     ,           (5.7)
+                                                           4π          3
+
+                                               23
+where the gauge fields A, Ā take values in g.12 Pure gravity is the case g = sl(2), studied
+in the Chern-Simons language by Achucarro and Townsend [25] and Witten [37]. Blencowe
+[14] (see also [28, 38]) generalized this construction to the infinite-rank higher spin algebra
+g = shs(1, 2) of Fradkin and Vasiliev [39, 40]. The choice g = sl(N) was studied recently in
+[15].
+    The choice of embedding sl(2) ⊆ g defines the metric components of the gauge field. This
+determines the boundary conditions and the spectrum; for example choosing g = sl(N, R)
+with the principal embedding of sl(2, R), the adjoint of sl(N, R) decomposes as
+                                                      N
+                                                      M −1
+                                              adj =          Dr ,                                        (5.8)
+                                                      r=1
+
+where Dr is the spin-r representation of sl(2, R). We see that these representations under
+sl(2, R) correspond to a tower of higher spin fields with spins s = 2, 3, . . . , N.13
+    Let us consider SL(3) higher spin gravity with the principal embedding, with the coupling
+constant chosen so that c = 54 . Since this theory has W3 asymptotic symmetry [33] it is
+natural to ask whether its path integral gives the partition function of the Potts model.
+This is indeed the case. The contribution to the path integral around thermal AdS can be
+computed much like in pure gravity; the only degrees of freedom are boundary gravitons
+and their higher spin cousins. Generalizing the argument of section 4 to include higher spin
+boundary excitations, we find for SL(3) gravity
+
+                                            Zvac = |χ(3)      2
+                                                     vac (τ )| ,                                         (5.9)
+         (3)
+where χvac is the W3 character defined in section 5.1. The sum over saddlepoints is the sum
+over modular images (5.4), so we find
+                                          c=4/5
+                                        ZSL(3) gravity = 12 Zpotts .                                   (5.10)
+
+Note that we have not included any new saddle points in the path integral; the only known
+classical solutions of higher spin gravity that obey the boundary conditions specified in
+section 2 are those of ordinary gravity – the SL(2, Z) family of black holes. Higher spin
+black holes which are inequivalent to BTZ have been constructed in [42, 43, 44], but they do
+not obey asymptotically AdS boundary conditions so do not contribute to our path integral.
+    For a general theory of higher spin gravity based on the Lie algebra g with a choice of
+embedding ρ, the asymptotic symmetry algebra is given by Drinfeld-Sokolov (DS) reduction.
+DS reduction [45, 46], reviewed in [47], is an algebraic construction that associates a W-
+algebra to any affine algebra ĝkcs and sl(2) embedding ρ. This algebra, WDS (g, kcs , ρ), is
+defined by imposing a constraint on the affine algebra ĝkcs . The relation between DS reduction
+  12
+      The subscript on kcs is to distinguish the level of the Chern-Simons theory from the level k in the coset
+construction of minimal models. In Lorentzian signature, A and Ā are independent, each taking values in
+the split real form of g. In Euclidean signature, A takes values in the complex Lie algebra g and Ā is its
+complex conjugate.
+   13
+      In four dimensions the situation is different: all known theories have an infinite tower of higher spin
+fields [41].
+
+
+                                                      24
+and the asymptotic symmetries of higher spin gravity was pointed out in [31, 15] and further
+explored in [32, 33, 48]. The essential point is as follows. The conserved charges of Chern-
+Simons gauge theory generate an affine algebra ĝkcs . Higher spin gravity has the same action
+(5.7) as Chern-Simons gauge theory, but is not quite identical because (among other reasons
+[1]) boundary conditions must be imposed on the metric and higher spin fields. The AdS3
+boundary conditions turn out to be exactly the constraints on ĝkcs that implement the DS
+                                                ˆ kcs affine symmetry of Chern-Simons theory
+reduction. For pure gravity, this reduces the sl(2)
+to the Virasoro symmetry found by Brown and Henneaux [49, 50]. For higher spin gravity
+based on g, ρ at level kcs , the boundary conditions reduce the asymptotic symmetries to
+WDS (g, kcs , ρ).
+    This suggests a candidate dual for the tricritical Potts model with chiral algebra W(2, 5).
+The W(2, 5) algebra can be obtained by DS reduction of E6 at central charge c = 67 [51].
+Therefore the asymptotic symmetry algebra of E6 higher spin gravity, though generically
+much larger, truncates to W(2, 5) at this special value of the coupling. The excitations
+around thermal AdS produce the vacuum character of W(2, 5), and thus according to (5.6)
+we have
+                                    c=6/7
+                                   ZE6 gravity = 16 Ztri−potts .                        (5.11)
+   The next case to consider is p = 9, with chiral algebra W(2, 14). We know of no way
+to construct this algebra by DS reduction, so cannot conjecture any bulk dual with the
+appropriate partition function around thermal AdS. Similarly for p = 10, 13 and the other
+cases in Appendix B.2. Although the CFT partition function can be written as a sum over
+modular images, we know of no bulk theory whose path integral produces this partition
+function.
+
+
+5.3    Parafermions
+One can also construct minimal models associated to the extended chiral algebra WN . Here
+WN denotes W(2, 3, . . . , N), the algebra with higher spin conserved currents of all spins up
+to N in addition to the stress tensor at dimension 2. In this section we ask whether these
+CFTs may be dual to pure higher spin gravity.
+   The WN minimal model CFTs, reviewed in [47], can be obtained as cosets
+                                     su(N)k × ˆ
+                                      ˆ      su(N)1
+                                                    ,                                   (5.12)
+                                        su(N)k+1
+                                         ˆ
+from which their characters, modular S and T matrices, and partition functions can be
+computed exactly. W2 is the Virasoro algebra, so setting N = 2 we recover the unitary
+Virasoro minimal models where p = k + 2. In general, the central charge of a WN minimal
+model is                                                    
+                                             N(N + 1)
+                       c = (N − 1) 1 −                          .                 (5.13)
+                                        (N + k)(N + k + 1)
+Setting N = 3, k = 1 gives c = 54 , the central charge of the Potts model. Thus in addition
+to being the (5, 6) Virasoro minimal model, it is the first W3 minimal model. Although this
+first example is the Potts model, generically these are new CFTs which do not appear among
+the Virasoro models. Since SL(N) gravity has asymptotic symmetry algebra WN [15], it
+
+                                              25
+is natural to ask when the path integral of SL(N) gravity produces a consistent partition
+function for one of the WN minimal models. We expect that this will only be the case when
+the characters of the chiral algebra have a unique modular invariant combination.
+    Some examples are provided by the WN minimal models at level k = 1, known as
+parafermion theories, with central charge
+                                                        N −1
+                                               c=2           .                                               (5.14)
+                                                        N +2
+N = 2 is the Ising model and N = 3 is the Potts model. N = 4 parafermions have chiral
+algebra W(1, 2, 3, 4), which is bigger than WN due to the appearance of the spin-1 current.
+The sum over modular images of the vacuum character of this algebra produces a consistent
+partition function, but we do not know of any algebra whose DS reduction gives W(1, 2, 3, 4),
+so there is no candidate bulk dual.
+    Parafermions with N = 5, 6, 7, 8 do not have any extra conserved currents — the chiral
+algebra is simply WN in each case — so the natural guess for a bulk dual is SL(N) gravity.
+The thermal AdS contribution to the bulk path integral of SL(N) gravity is the vacuum
+character of WN . To compute the sum over modular images, we need the S and T matrix of
+the coset model (see for example [24, 52]). T is the obvious generalization of (A.6), and S
+is the product of S-matrices for the affine algebras appearing in (5.12). Performing the sum
+over inequivalent saddlepoints, we find that the bulk path integral gives a consistent CFT
+partition function for all of these cases. It would be interesting to see whether this continues
+at larger N.
+    Although the CFT partition functions obtained in this way are consistent, they have a
+peculiar feature that is illustrated by the 3-state Potts model. Whether we view this theory
+as the k = 2 Virasoro model or the k = 1 W3 model, it is the same CFT, but the W3
+partition function contains in a sense more information. In W3 language, the Potts model
+consists of W3 primaries labelled by representations of SU(3),
+    φ1 = (0; 0),   φ2 = (f; 0),     φc2 = (f̄; 0),     φ3 = (0; f),        φc3 = (0; f̄),   φ4 = (f; f̄) ,   (5.15)
+where f is the fundamental and f̄ is the antifundamental. The corresponding conformal
+weights are h1,2,3,4 = 0, 32 , 15
+                               1 2
+                                  , 5 , and φc denotes a conjugate field, which has the same confor-
+mal weight but opposite eigenvalue under the spin-3 current. Thus the partition function is
+encoded in a 6 × 6 matrix of positive integers,
+                                                      6
+                                                      X
+                                  Zpotts (τ, τ̄ ) =           Rij Si (τ )Sj (τ ) ,                           (5.16)
+                                                      i,j=1
+
+where Si denote the W3 characters for (5.15).
+   Viewed as a function of τ , the partition function does not completely fix the matrix Rij
+because conjugate representations have the same character,
+                                          S2 = S2c ,          S3 = S3c .                                     (5.17)
+Therefore if we only know Z as a function of τ , we cannot distinguish between the diagonal
+spectrum
+                      Z = |S1 |2 + |S2 |2 + |S2c |2 + |S3 |2 + |S3c |2 + |S4 |2 ,     (5.18)
+
+                                                        26
+    c                 Minimal model CFT                       Algebra           Bulk dual
+    1
+    2
+                      N = 2, k = 1 (Ising)                    Virasoro        Pure gravity
+    7
+    10
+                N = 2, k = 2 (Tricritical Ising)              Virasoro        Pure gravity
+    4
+    5
+             N = 2, k = 3 or N = 3, k = 1 (Potts)                W3           SL(3) gravity
+    6
+    7
+                N = 2, k = 4 (Tricritical Potts)              W(2, 5)          E6 gravity
+  N −1
+ 2N +2
+              N = 5, 6, 7, 8, k = 1 (Parafermions)              WN            SL(N) gravity
+    1             N = 4, k = 1 (Parafermions)               W(1, 2, 3, 4)       unknown
+           N = 2, k = 7, 8, 11, . . . , see Appendix B.2                        unknown
+
+Table 1: Unitary CFTs for which the torus partition function has a natural interpretation as a
+sum over geometries. Where the bulk dual is ‘unknown’, there is no known way to produce the
+correct chiral algebra by Drinfeld-Sokolov reduction, as discussed in section 5.2. The last entry is
+an infinite class of models with central charge (5.13), and extended chiral algebras as discussed in
+section 5.1 and Appendix B.2.
+
+
+and the mixed invariant
+                                    1              1
+                        Z = |S1 |2 + |S2 + S2c |2 + |S3 + S3c |2 + |S4 |2 .                   (5.19)
+                                    2              2
+The first is the spectrum of the Potts model, while the second is inconsistent since it has
+half-integer coefficients when the vacuum is unit normalized. These are identical functions
+of τ which describe different operator content.
+    When the partition function of SL(3) higher spin gravity is computed by the prescription
+in section 4, it gives the matrix Rij in (5.16) corresponding to the latter spectrum, not the
+diagonal. This does not by itself imply any inconsistency, because the gravity path integral
+is only a function of τ ; it cannot distinguish between the diagonal and mixed invariants.
+Still, it leaves open the possibility that SL(3) gravity is not the 3-state Potts model, but
+rather an inconsistent theory with the spectrum (5.19). The two possibilities cannot be
+distinguished at genus one, but would lead to different correlation functions, and different
+partition functions at genus two or higher.
+
+
+6        Discussion
+We have provided evidence that several theories of quantum gravity are dual to simple,
+exactly solvable minimal conformal field theories. Table 1 summarizes our results. We
+emphasize that this is the first time that the partition function of general relativity has been
+computed in three dimensions and found to give a result which describes a unitary quantum
+theory.
+
+
+                                                27
+     At this point these dualities should be regarded as conjectural. The torus partition
+function of a CFT includes all data about its spectrum, but no non-trivial information
+about correlation functions. So there is much more that could be checked. The data in
+these correlation functions is encoded in the higher genus CFT partition functions, which
+can in principle be matched with an analogous gravity path integral computation at higher
+genus. This computation is more complicated than the one described in the present paper,
+but may be possible.14 In the case of the Ising model the higher genus partition functions
+are well studied so there is a possibility of a precise check. One might hope to prove that
+the all-genus partition function of Einstein gravity at c = 1/2 agrees with the Ising model,
+which would practically amount to a proof of the duality.
+     There is a second natural question to ask at this point, which is why only certain minimal
+model conformal field theories appear in Table 1. Of all possible minimal models, what is
+special about these theories which allows them to be interpreted as pure theories of quantum
+gravity? Although we cannot answer this question definitively, we can make one suggestive
+observation. Let us consider those theories which are dual to pure gravity, the critical and
+tricritical Ising models. These two theories have the property that all of the non-trivial states
+in the theory obey the bound
+                                                  c
+                                            h>      .                                       (6.1)
+                                                 24
+Moreover, among all the Virasoro minimal models with diagonal modular invariant these are
+the only two theories with this property! All other minimal models admit primary states
+below the bound (6.1).
+     From the bulk gravity point of view, this bound is completely natural. Three dimensional
+AdS gravity possesses BTZ black holes which are separated from the AdS ground state by a
+gap. These black holes correspond to states in the dual CFT with weight larger than c/24,
+i.e. they lie in the “Cardy regime” of the dual CFT. Indeed, this is why it is possible to
+describe the BTZ entropy using the Cardy formula of the dual CFT [55]. Thus the critical
+and tricritical Ising models are the only two diagonal minimal model CFTs with the property
+that all primary states can be interpreted as black holes. What is remarkable is that the
+bound h > c/24, which was justified using semiclassical gravitational reasoning, appears to
+apply in the strongly coupled regime. It would be interesting to understand the extent to
+which the primary operators of these CFTs can be interpreted as black holes. These are
+highly quantum theories of gravity where usual semi-classical notions fail to apply, but there
+may still be some useful sense in which these states share the properties of black holes.
+     All other minimal models have primaries which may be interpreted as matter fields, and
+hence may be dual not to pure gravity but rather to something more complicated. One might
+hope to generalize the analysis of the modular sums in sections 4 and 5 to construct other
+candidate vacuum partition functions whose sum over the modular group gives a minimal
+model partition function. However, it is not clear that this is possible. We have not been
+able to find a natural seed that would lead to a physical modular invariant even for a simple
+example (see appendix B.3).
+  14
+     A computation of this sort was described in [53, 54], under the assumption that the partition function
+of pure gravity factorizes holomorphically. This makes the computation technically easier, but cannot be
+justified from the bulk gravity point of view unless one includes complex saddle points or considers a chiral
+theory (such as chiral gravity).
+
+                                                     28
+    Finally, we note that the results described in Table 1 are not exhaustive. For example,
+we have restricted our attention to models without supersymmetry, but we expect that
+the generalization of this to supersymmetric models would be straightforward. It would be
+interesting to explore this and other classes of examples in detail. It may even be possible
+to find a class of unitary examples which have a large central charge limit; this would then
+provide simple examples of theories of quantum gravity with a semi-classical limit.
+
+
+Acknowledgements
+We thank M. Cheng, T. Gannon, H. Ooguri, E. Verlinde and X. Yin for useful discussions
+and comments. The work of MRG and RV was partially supported by the Swiss National
+Science Foundation. The work of TH is supported in part by U.S. Department of Energy
+grant DE-FG02-90ER40542. The work of AC and AM is supported in part by the National
+Science and Engineering Research Council of Canada. This material is based upon work
+supported in part by the National Science Foundation under Grant No. 1066293 and the
+hospitality of the Aspen Center for Physics. The work of AC was supported in part by the
+National Science Foundation under Grant No. NSF PHY05-51164 and the hospitality of the
+Kavli Institute for Theoretical Physics, UCSB.
+
+
+A     Minimal Models
+A.1     Overview
+The Virasoro minimal models are labeled by coprime integers (p, p′ ) with p′ > p > 2 and
+central charge given by (1.5). The degenerate representations of the Virasoro algebra at
+c = c(p, p′ ) < 1 are labeled by integers (r, s) with
+
+                1 ≤ r ≤ p′ − 1 ,   1≤s≤p−1 ,             (r, s) ∼ (p′ − r, p − s) .   (A.1)
+
+The conformal dimensions of these representations are
+
+                                       (pr − p′ s)2 − (p − p′ )2
+                              hr,s =                             ,                    (A.2)
+                                                 4pp′
+and their characters are denoted by
+
+                               χr,s (τ ) = tr q L0 ,   q ≡ e2πiτ ,                    (A.3)
+
+with L0 = h − c/24. These characters transform into one another under modular transfor-
+mations
+                           T : τ → τ + 1 , S : τ → −1/τ .                        (A.4)
+Organizing the characters into a vector χµ where µ = (r, s), the transformation rules are
+                              X                              X
+                 χµ (τ + 1) =     Tµν χν (τ ) , χµ (−1/τ ) =    Sµν χν (τ ) ,          (A.5)
+                               ν                                     ν
+
+
+                                                29
+where
+                                                              c
+                                                                 
+                           Trs;ρσ = δr,ρ δs,σ exp 2πi(hr,s − 24 )                         (A.6)
+and
+                           r                                           ′ 
+                               2          1+sρ+rσ             p           p
+                 Srs;ρσ = 2      ′
+                                   (−1)            sin π ′ rρ sin π sσ .               (A.7)
+                              pp                             p            p
+To write explicit expressions for the minimal model characters we will use, given the equiv-
+alence relation (A.1), the values of (r, s) such that the product rs is minimized. With this
+choice
+                                                (p,p′ )         (p,p′ )
+                                 χr,s (τ ) = Kr,s       (τ ) − Kr,−s (τ )              (A.8)
+where
+                             (p,p′ )          1 X (2pp′ n+pr−p′s)2 /4pp′
+                            Kr,s     (τ ) =              q                  .          (A.9)
+                                            η(τ ) n∈Z
+
+A.2     ADE classification
+We now review the construction of modular invariant partition functions. For a given chiral
+algebra we wish to construct all partition functions
+                                          X
+                              Z(τ, τ̄ ) =    Nh,h̄ χh (τ )χh̄ (τ̄ ) ,               (A.10)
+                                           h,h̄
+
+that are modular invariant and have a unique vacuum. These conditions imply that the
+matrix Nh,h̄ satisfies
+                  Nh,h̄ ∈ N0 ,   N0,0̄ = 1 ,      NT = T N ,    NS = SN .                (A.11)
+This classification problem for rational CFTs is a well posed, but difficult, algebraic problem.
+For rational theories based on the sl(2) algebra there is a one-to-one correspondence between
+modular invariants and pairs of simply laced Lie algebras with Coxeter numbers p′ and p.
+This is the ADE classification of minimal models developed in [35, 13, 56]. For a quick
+version of the construction see [57, 24].
+   We do not intend to review the entire ADE classification. For the purpose of our dis-
+cussion it will be sufficient to highlight two classes of physical modular invariants: diagonal
+(AA) and block diagonal (AD, DA).
+
+Diagonal Invariants
+Invariance under the action of T restricts the relative values of the left and right weights in
+(A.10) to
+                                    h − h̄ = 0 mod 1 .                                  (A.12)
+One natural solution is to have non-zero entries in N only for h = h̄. Together with the
+remaining conditions (A.11) the only solution is the diagonal modular invariant
+                                            X
+                                    ZAA =       |χr,s |2 .                        (A.13)
+                                                  r,s
+
+Modular invariance is guaranteed because S is a unitary matrix. The subscripts AA refer to
+the An algebra of the ADE classification.
+
+                                                  30
+Block diagonal Invariants
+The next to simplest solution to (A.12) involves linear combinations of characters whose
+conformal dimensions differ by integers (so that the whole linear combination is invariant
+under the T -transformation). Furthermore, one needs to require that the S-transformation
+relates the relevant linear combinations to one another. Then one can consider the usual
+diagonal modular invariant of this ‘extended theory’.
+    For example, for (p, p′ ) with p′ = 4m + 2 and m > 1, the DA modular invariant is of this
+type
+                               p−1
+                                   " 2m−1                                     #
+                             1X X
+                   ZDA =                   |χr,s + χ4m+2−r,s |2 + 2|χ2m+1,s |2 .      (A.14)
+                             2 s=1 r odd=1
+A similar formula (with the roles of r and s interchanged) applies for the AD invariant with
+p = 4m + 2.
+
+
+A.3     Examples
+Ising Model
+The Ising model is the (3, 4) Virasoro minimal model with central charge c = 12 . The
+                                                                          1
+characters χ1,1 , χ1,2 , χ2,1 correspond to fields of weight h = 0, 12 , 16 , respectively. These
+characters transform in the three dimensional representation of SL2 (Z) with
+                      
+                          − 2πi
+                                                                        √ 
+                         e  48     0     0                  1   1            2
+                      
+                                 2πi 23
+                                                      1                   √  
+                 T = 0         e 48     0       S=  1        1       − 2 .              (A.15)
+                                                                            
+                                                     2 √     √              
+                                         2πi
+                           0       0    e 24                 2 − 2          0
+
+The unique modular invariant function is the diagonal invariant
+                              X
+                    ZAA =         |χr,s |2 = |χ1,1 |2 + |χ1,2 |2 + |χ2,1 |2 .                    (A.16)
+                                       r,s
+
+
+Tricritical Ising Model
+The tricritical Ising model corresponds to the (4, 5) minimal model with central charge
+     7
+c = 10 . There are six primary fields with weights
+
+                                             1   3 3   3   7
+                                      0,       ,  ,  ,   ,   ,                                   (A.17)
+                                             10 5 2 80 16
+and the basis of characters are
+
+                                χ1,1 , χ3,3 , χ2,3 , χ1,3 , χ2,2 , χ1,2 .                        (A.18)
+
+The representation of SL2 (Z) is given by
+                                      233        17         137     113         2        98
+                    T = diag(e2πi 240 , e2πi 240 , e2πi 240 , e2πi 240 , e2πi 240 , e2πi 240 )   (A.19)
+
+                                                       31
+                                                                          √          √     
+                                 s2        s1        s1            s2          2s1      2s2
+                                                √                                     √ 
+                       s1    −s2    −s2   s1      2s2                                − 2s1 
+                                                                                           
+                                                √                                    √     
+                   1  s1     −s2    −s2   s1   − 2s2                                   2s1 
+                                                                                           
+                S=√                             √                                     √    ,   (A.20)
+                    5  s2
+                      
+                               s1    s1    s2   − 2s1                                 − 2s2 
+                      √      √      √     √                                                
+                       2s1     2s2 − 2s2 − 2s1    0                                    0 
+                                                                                           
+                      √      √     √      √                                                
+                         2s2 − 2s1    2s1 − 2s2    0                                    0
+where s1 = sin 2π
+                5
+                  , s2 = sin 4π  5
+                                   . The unique modular invariant function is the diagonal
+invariant
+                  X
+          ZAA =        |χr,s |2 = |χ1,1 |2 + |χ1,2 |2 + |χ1,3 |2 + |χ2,2 |2 + |χ2,3 |2 + |χ3,3 |2 . (A.21)
+                      r,s
+
+
+Three-State Potts Model
+The central charge of the (5, 6) model is c = 54 , there are 10 characters
+
+                 χ1,1 , χ1,2 , χ1,3 , χ1,4 , χ2,2 , χ2,3 , χ2,4 , χ3,3 , χ3,4 , χ4,4 ,            (A.22)
+
+corresponding to primaries of weight
+                                   2 7      1   21 13    1   2 1
+                            0,      ,  , 3,   ,   ,   ,    ,  ,  .                                (A.23)
+                                   5 5      40 40   8   15 3 8
+There are two physical partition functions for c = 54 . The diagonal invariant is
+                                                        X
+                                                ZAA =         |χr,s |2 ,                          (A.24)
+                                                        r,s
+
+
+and the block diagonal invariant is
+
+                    ZDA = |χ1,1 + χ1,4 |2 + |χ1,2 + χ1,3 |2 + 2|χ3,3|2 + 2|χ3,4 |2 .              (A.25)
+
+This block diagonal invariant is the partition function of the three-state Potts model.
+
+Tricritical Potts Model
+Finally we turn to the (6,7) minimal model. The central charge is c = 67 and there are 15
+irreducible characters χr,s
+
+                                χ1,1···5 , χ2,2···5 , χ3,3···5 , χ4,4 , χ4,5 χ5,5 ,               (A.26)
+
+with weights hr,s
+
+             3 4 23        1   10 85 22    1   33 12   5   5 1
+        0,    ,  ,   , 5,    ,   ,  ,   ,    ,   ,   ,   ,  ,  .                                  (A.27)
+             8 3   8      56 21 56    7   21 56    7   56 7 7
+
+                                                        32
+There are two physical partition functions for c = 76 . The diagonal invariant is
+                                            X
+                                    ZAA =       |χr,s |2 ,                                     (A.28)
+                                                     r,s
+
+and the block diagonal invariant is
+                                         X
+                              ZAD =             |χs,1 + χs,5 |2 + 2|χs,3 |2 .                  (A.29)
+                                      s=1,2,3
+
+This block diagonal invariant is the partition function of the tricritical Potts model.
+
+
+B      Modular Sums
+B.1     Bases of modular invariants
+In the (p, p′ )-minimal model, the primary fields are labeled by (r, s), with r = 1, . . . , p′ − 1,
+s = 1, . . . , p − 1 and the identification (r, s) ∼ (p′ − r, p − s). The corresponding characters
+form a representation of P SL(2, Z) of dimension (p − 1)(p′ − 1)/2, with generators S and
+T given by (A.6) and (A.7). Modular invariant combinations of characters correspond to
+hermitian matrices which commute with S and T . A basis for the space of such matrices
+has been found by Cappelli-Itzykson-Zuber [35, 13]. In this appendix, we will review their
+construction.
+
+Let p, p′ be coprime positive integers. For each r, s ∈ Z, we define λr,s ∈ Z2pp′ by
+
+                                  λr,s := rp − sp′         mod 2pp′ .                           (B.1)
+
+The following relations hold modulo 2pp′
+
+                     λr,s = −λp′ −r,p−s = ω0 λr,−s = −ω0 λ−r,s           mod 2pp′ ,             (B.2)
+
+where ω0 is defined mod 2pp′ by the properties
+
+      ω0 p = p mod 2pp′ ,         ω0 p′ = −p′        mod 2pp′ ,         ω02 = 1   mod 4pp′ .    (B.3)
+
+More precisely, if r0 , s0 are integers such that r0 p − s0 p′ = 1, then ω0 = r0 p + s0 p′ .
+   For 1 ≤ r ≤ p′ − 1 and 1 ≤ s ≤ p − 1, the element λr,s ∈ Z2pp′ is related to the conformal
+weight hr,s of the (r, s)-primary field by
+
+                                          c   λ2r,s     1
+                                hr,s −      =      ′
+                                                     −           mod 1 ,                        (B.4)
+                                         24   4pp      24
+where c ≡ c(p, p′) is the central charge (4.12). Furthermore, if we set
+                              ∞
+                       1 X (2pp4pp ′ n+λ)2
+
+                Kλ :=            q    ′
+                                           ,               and       χλ := Kλ − Kω0 λ ,         (B.5)
+                      η(τ ) n=−∞
+
+                                                    33
+then for 1 ≤ r ≤ p′ − 1 and 1 ≤ s ≤ p − 1
+
+                                       Kλr,s = Kr,s                               χλr,s = χr,s ,                                  (B.6)
+
+with Kr,s and χr,s defined in (A.8). The advantage of these definitions is that the modular
+transformations of χλ can be easily described as
+                         X                                       X
+           χλ (τ + 1) =       Tλµ χµ (τ ) ,       χλ (−τ −1 ) =       Sλµ χµ (τ ) ,   (B.7)
+                                 µ∈Z2pp′                                                                µ∈Z2pp′
+
+
+where the 2pp′ × 2pp′ matrices Tλµ and Sλµ are
+                                           λ2                                                               1
+                                                     
+                     (2pp′ )          2πi 4pp     1
+                                              ′ − 24                                                               2πi λµ
+             Tλµ = δ         (λ − µ) e                 ,                                  Sλµ = √               ′
+                                                                                                                  e 2pp′ .        (B.8)
+                                                                                                            2pp
+Using the identities
+
+                Kλ = K−λ = Kλ+2pp′ ,                              χλ = χ−λ = χλ+2pp′ = −χ±ω0 λ ,                                  (B.9)
+
+it follows that each (not necessarily physical) modular invariant combination of characters
+of the (p, p′ )-minimal model corresponds to a 2pp′ × 2pp′ -dimensional hermitian matrix Xλµ
+that commutes with Tλµ and Sλµ and satisfies
+
+                                       Xλ,µ = Xλ,−µ = −Xλ,ω0 µ = −Xλ,−ω0 µ .                                                     (B.10)
+
+The invariant Z(X) corresponding to such a Xλµ is
+                 1          X                                    1       X
+       Z(X) =                         Xλ,λ̃ χλ (τ )χ̄λ̃ (τ ) =                           Xλr,s ,λr̃,s̃ χr,s (τ )χ̄r̃,s̃ (τ ) .   (B.11)
+                 16                                              4
+                      λ,λ̃∈Z2pp′                                      1≤r,r̃≤p′ −1
+                                                                      1≤s,s̃≤p−1
+
+   A basis for the space of 2pp′ × 2pp′ -dimensional real symmetric matrices commuting with
+Tλµ and Sλµ has been constructed by Cappelli, Itzykson and Zuber [13]. The basis elements
+                                 ′
+                            (Ωpp
+                              dd′ )λ,µ ,                 d, d′ ∈ Z,       d, d′ > 0,              d|p, d′ |p′ ,                  (B.12)
+
+have integral entries, and are in one to one correspondence ′with positive integers d and d′
+such that d|p and d′ |p′ , see [13, eq. III.4]. The matrices (Ωpp
+                                                               dd′ )λ,µ satisfy the relations
+                       ′                       ′    pp            ′         pp                          ′
+                 (Ωpp           pp
+                   dd′ )λ,µ = (Ω(p/d)d′ )λ,ω0 µ = (Ωd(p′ /d′ ) )λ,−ω0 µ = (Ω(p/d)(p′ /d′ ) )λ,−µ .                               (B.13)
+
+The subspace of matrices satisfying the additional conditions (B.10) is spanned by
+                  (d,d′ )              ′             ′                    ′                         ′
+               Xλ,µ         :=(Ωpp           pp            pp              pp
+                                dd′ )λ,µ + (Ωdd′ )λ,−µ − (Ωdd′ )λ,ω0 µ − (Ωdd′ )λ,−ω0 µ                                          (B.14)
+                                     pp′           pp′                             pp′                           pp′
+                             =(Ωdd′ )λ,µ + (Ω(p/d)(p′ /d′ ) )λ,µ − (Ω(p/d)p′ )λ,µ − (Ωd(p′ /d′ ) )λ,µ ,                          (B.15)
+
+and the only linear relations are
+                                           ′              ′                   ′   ′                     ′    ′
+                               X (d,d ) = −X (p/d,d ) = −X (d,p /d ) = X (p/d,p /d ) .                                           (B.16)
+
+                                                                 34
+B.2     Models with one or two modular invariants
+In this subsection we discuss the minimal models with only one or two modular invariants.
+In the first case, the sum over modular images of any seed, if not zero, must correspond to
+a physical modular invariant up to normalization.
+    The (p, p′ )-minimal model has only one invariant X (1,1) if and only if both p and p′ are
+either primes or squares of primes. Thus, there is an infinite set of minimal models — with
+the exception of the (3, 4)- and (4, 5)-models they are non-unitary — for which the sum over
+the modular images of |χ1,1 |2 gives the AA physical invariant (up to the normalization)
+                                X                    X
+                                     |χ1,1 (γτ )|2 ∼   |χr,s (τ )|2 .                  (B.17)
+                                γ∈Γ                   r,s
+
+
+   The unitary minimal models (m, m+1) with m > 4 have always at least a second modular
+invariant. More generally, for any (p, p′ )-minimal model with p > 4 even, there are exactly
+two modular invariants (namely, X (1,1) and X (2,1) ) if and only if p′ is prime or the square of
+a prime, and p is twice a prime or p = 8. In this case, with the exception of the models with
+p = 8, one can define an extended chiral algebra with vacuum character χ1,1 + χp−1,1 . The
+modular invariants X (1,1) and X (2,1) satisfy
+
+                      Tr (X (1,1) )2 = Tr (X (2,1) )2 = (p − 1)(p′ − 1)/2 ,
+                                                    
+                                                                                          (B.18)
+
+so that I1 = X (1,1) − X (2,1) and I2 = X (1,1) + X (2,1) form an orthogonal basis. Furthermore,
+if we define the hermitian matrix Y by
+                                 X
+                                     Yλµ χλ χ̄µ = |χ1,1 + χ1,p−1 |2 ,                     (B.19)
+                                λ,µ
+
+we obtain
+                               Tr(I1 Y ) = 4 ,        Tr(I2 Y ) = 0 .                     (B.20)
+Thus,                                   X
+                                              γ · Y ∼ I1 ,                                (B.21)
+                                        γ∈Γ
+
+so that the sum over modular images gives (up to normalisation) the AD physical invariant.
+    One way to generate unitary models of this kind is to consider a Sophie Germain prime
+p, and to set m = 2p with m + 1 = 2p + 1. (Sophie Germain primes are characterised by the
+property that 2p + 1 is also prime.) It has been conjectured that there are infinitely many
+Sophie Germain primes, see e.g. [58], although this does not seem to have been proven yet.
+
+
+B.3     More than two invariants: the (14, 15) minimal model
+In general, when a model has many modular invariants, we do not expect the sum over the
+modular images of the vacuum character to correspond to a physical invariant. A simple
+example is provided by the (14, 15) Virasoro minimal model. This model has four modular
+invariants
+                       X (1,1) ,    X (2,1) ,  X (1,3) ,  X (2,3) ,              (B.22)
+
+                                                 35
+                                                  ′     ˜ ˜′              ′   ˜ ˜′
+and the matrix of scalar products (X (d,d ) , X (d,d ) ) := Tr(X (d,d ) X (d,d ) ) is
+                                                          
+                                     91 35 13 5
+                                                          
+                                   35 91 5 13
+                                                          
+                                                           ,                                    (B.23)
+                                   13 5 91 35
+                                                          
+                                                          
+                                      5 13 35 91
+                               ′
+where the invariants X (d,d ) are ordered as in (B.22). An orthonormal basis is given by
+          X (1,1) − X (2,1)                     X (1,1) + X (2,1)
+     I1 =      √            ,              I2 =      √            ,                               (B.24)
+                  112                                   252
+          −X (1,1) + 7X (1,3)                   −5X (1,1) + 13X (2,1) + 35X (1,3) − 91X (2,3)
+     I3 =        √            ,            I4 =                     √                         .   (B.25)
+                   4368                                               628992
+The physical
+         √ modular√ invariants are ZAA and ZDA , corresponding, up to normalization, to
+X (1,1) = 28I1 + 63I2 and I1 , respectively. Any linear combination of invariants involving
+I3 and I4 is non-physical. The invariant ZDA is the partition function for a model with an
+extended chiral algebra, whose vacuum character is
+                                                  χ1,1 + χ1,13 .                                  (B.26)
+If we sum over the modular images of
+                             X
+                                 Yλµ χλ χ̄µ = |χ1,1 + χ1,13 |2 ,                                  (B.27)
+                                         λ,µ
+
+we obtain                 X               4            2           36      
+                              γ · Y = |Γ| √     I1 − √      I3 − √        I4 .                    (B.28)
+                          γ∈Γ
+                                            112        4368        628992
+Thus, the modular invariant obtained this way is non-physical. More generally, one can
+consider a seed of the form
+                            X                      X
+                              Yλµ χλ χ̄µ = |χ1,1 +   cr,s χr,s |2 ,             (B.29)
+                                   λ,µ                         r,s
+
+where cr,s are non-negative integers. This seed corresponds to the vacuum character with
+respect to an extension of Virasoro algebra by cr,s copies of the (r, s)-fields. A necessary
+consistency condition for this algebra to be well defined is that cr,s = 0 whenever the confor-
+mal weight hr,s is not integral; for the (14, 15)-model, the most general seed satisfying this
+constraint is
+                 X
+                     Yλµ χλ χ̄µ = |χ1,1 + c1,13 χ1,13 + c4,13 χ4,13 + c11,13 χ11,13 |2 . (B.30)
+                    λ,µ
+                                                                              √      √
+The sum over modular images of this seed is proportional to the AA invariant 28I1 + 63I2
+if
+              √                      √
+   Tr(I1 Y ) = 28K ,    Tr(I2 Y ) = 63K ,         Tr(I3 Y ) = 0 ,    Tr(I4 Y ) = 0 , (B.31)
+
+                                                       36
+and proportional to the AD invariant I1 if
+
+         Tr(I1 Y ) = K ,         Tr(I2 Y ) = 0 ,       Tr(I3 Y ) = 0 ,       Tr(I4 Y ) = 0 ,           (B.32)
+
+for an arbitrary real constant K. These equations can be solved for the unknowns c1,13 ,
+c4,13 , c11,13 , and K, and one finds that there are no solutions where c1,13 , c4,13 , c11,13 are all
+non-negative integers. Thus, no physical invariant can be obtained by seeds of this form.
+    One could have also reached this conclusion by noting that if a consistent extended algebra
+existed, then it would lead to another physical modular invariant, namely the charge conjuga-
+tion invariant with respect to this algebra. Since the classification of Cappelli-Itzykson-Zuber
+[35, 13] excludes any further invariant, it follows that there are only two consistent algebras,
+the Virasoro algebra or its extension by the (r, s) = (1, 13) field. In both cases one checks
+easily that the modular completion does not lead to a physical invariant.
+    A natural way to relax the above ansatz is to consider seeds containing primaries (with
+respect to the Virasoro or an extended algebra) other than the vacuum, but to require that
+the corresponding conformal dimensions satisfy h + h̄ ≤ c+c̄                  24
+                                                                                 . By the argument above, we
+can restrict ourselves to the cases where the algebra is either the Virasoro algebra, or its
+extension by the (r, s) = (1, 13) field. In the Virasoro case the most general seed is
+           X
+                 Yλµ χλ χ̄µ = |χ1,1 |2 + c2,2 |χ2,2 |2 + c3,3 |χ3,3 |2 + c4,4 |χ4,4 |2 + c5,5 |χ5,5 |2 , (B.33)
+         λ,µ
+
+while for the extended algebra we have
+          X
+             Yλµ χλ χ̄µ = |χ1,1 + χ1,13 |2 + c3,3 |χ3,3 + χ3,11 |2 + c5,5 |χ5,5 + χ5,9 |2 .            (B.34)
+           λ,µ
+
+One can check that there are no solutions to (B.31) and (B.32) in the Virasoro case, while
+for the extended algebra the AD physical invariant is obtained from the seed
+                                                     1
+                                   |χ1,1 + χ1,13 |2 + |χ3,3 + χ3,11 |2 .                               (B.35)
+                                                     6
+However, the relative factor of 61 means that this does not have an interpretation as ‘the
+perturbative part’ of a consistent partition function.
+
+
+References
+ [1] E. Witten, “Three-Dimensional Gravity Revisited,” [arXiv:0706.3359 [hep-th]].
+ [2] A. Maloney, W. Song, A. Strominger, “Chiral Gravity, Log Gravity and Extremal CFT,”
+     Phys. Rev. D81, 064007 (2010). [arXiv:0903.4573 [hep-th]].
+
+ [3] M.R. Gaberdiel, R. Gopakumar, “An AdS3 Dual for Minimal Model CFTs,” Phys. Rev.
+     D83, 066007 (2011). [arXiv:1011.2986 [hep-th]].
+
+ [4] R. Dijkgraaf, J.M. Maldacena, G.W. Moore, E.P. Verlinde, “A Black hole Farey tail,”
+     [hep-th/0005003].
+
+                                                      37
+ [5] A. Maloney, E. Witten, “Quantum Gravity Partition Functions in Three Dimensions,”
+     JHEP 1002, 029 (2010). [arXiv:0712.0155 [hep-th]].
+
+ [6] J.D. Brown, M. Henneaux, “Central Charges in the Canonical Realization of Asymptotic
+     Symmetries: An Example from Three-Dimensional Gravity,” Commun. Math. Phys.
+     104, 207 (1986).
+
+ [7] A. Castro, T. Hartman, A. Maloney, “The Gravitational Exclusion Principle and Null
+     States in Anti-de Sitter Space,” [arXiv:1107.5098 [hep-th]].
+
+ [8] P. Kraus, F. Larsen, “Partition functions and elliptic genera from supergravity,” JHEP
+     0701, 002 (2007). [hep-th/0607138].
+
+ [9] J. Manschot, G.W. Moore, “A Modern Farey Tail,” Commun. Num. Theor. Phys. 4,
+     103 (2010). [arXiv:0712.0573 [hep-th]].
+
+[10] J. de Boer, M.C.N. Cheng, R. Dijkgraaf, J. Manschot, E. Verlinde, “A Farey Tail for
+     Attractor Black Holes,” JHEP 0611, 024 (2006). [hep-th/0608059].
+
+[11] A. Strominger, “A Simple Proof of the Chiral Gravity Conjecture,” [arXiv:0808.0506
+     [hep-th]].
+
+[12] M.C.N. Cheng, J.F.R. Duncan, “On Rademacher Sums, the Largest Mathieu Group,
+     and the Holographic Modularity of Moonshine,” [arXiv:1110.3859 [math.RT]].
+
+[13] A. Cappelli, C. Itzykson, J.B. Zuber, “The ADE Classification of Minimal and A1(1)
+     Conformal Invariant Theories,” Commun. Math. Phys. 113, 1 (1987).
+
+[14] M.P. Blencowe, “A Consistent Interacting Massless Higher Spin Field Theory In D =
+     (2+1),” Class. Quant. Grav. 6, 443 (1989).
+
+[15] A. Campoleoni, S. Fredenhagen, S. Pfenninger, S. Theisen, “Asymptotic symmetries
+     of three-dimensional gravity coupled to higher-spin fields,” JHEP 1011, 007 (2010).
+     [arXiv:1008.4744 [hep-th]].
+
+[16] M.R. Gaberdiel, C.A. Keller, R. Volpato, “Genus two partition functions of chiral con-
+     formal field theories,” Commun. Num. Theor. Phys. 4, 295 (2010). [arXiv:1002.3371
+     [hep-th]].
+
+[17] J.M. Maldacena, A. Strominger, “AdS(3) black holes and a stringy exclusion principle,”
+     JHEP 9812, 005 (1998). [hep-th/9804085].
+
+[18] P. Kraus, “Lectures on black holes and the AdS(3) / CFT(2) correspondence,” Lect.
+     Notes Phys. 755, 193 (2008). [hep-th/0609074].
+
+[19] R. Lawrence, L. Rozansky, “Witten-Reshetikhin-Turaev Invariants of Seifert Mani-
+     folds,” Comm. Math. Phys. 205, 287 (1999).
+
+[20] M. Banados, C. Teitelboim, J. Zanelli, “The Black hole in three-dimensional space-
+     time,” Phys. Rev. Lett. 69, 1849 (1992). [hep-th/9204099].
+
+                                            38
+[21] A. Castro, A. Lepage-Jutier, A. Maloney, “Higher Spin Theories in AdS3 and a Gravi-
+     tational Exclusion Principle,” JHEP 1101, 142 (2011). [arXiv:1012.0598 [hep-th]].
+
+[22] E. Witten, “Coadjoint Orbits of the Virasoro Group,” Commun. Math. Phys. 114, 1
+     (1988).
+
+[23] V. Aldaya, J. Navarro-Salas, “Quantization On The Virasoro Group,” Commun. Math.
+     Phys. 126, 575 (1989).
+
+[24] P. Di Francesco, P. Mathieu, D. Senechal, “Conformal field theory,” Springer (1997).
+
+[25] A. Achucarro, P.K. Townsend, “A Chern-Simons Action for Three-Dimensional anti-De
+     Sitter Supergravity Theories,” Phys. Lett. B180, 89 (1986).
+
+[26] A. Achucarro, P.K. Townsend, “Extended Supergravities in d=(2+1) as Chern-Simons
+     Theories,” Phys. Lett. B229, 383 (1989).
+
+[27] C. Aragone, S. Deser, “Hypersymmetry in D = 3 of Coupled Gravity-Massless Spin-5/2
+     System,” Class. Quant. Grav. 1, L9 (1984).
+
+[28] E. Bergshoeff, M.P. Blencowe, K.S. Stelle, “Area Preserving Diffeomorphisms and
+     Higher Spin Algebra,” Commun. Math. Phys. 128, 213 (1990).
+
+[29] M. Banados, K. Bautier, O. Coussaert, M. Henneaux, M. Ortiz, “Anti-de Sitter / CFT
+     correspondence in three-dimensional supergravity,” Phys. Rev. D58, 085020 (1998).
+     [arXiv:hep-th/9805165].
+
+[30] M. Henneaux, L. Maoz, A. Schwimmer, “Asymptotic dynamics and asymptotic symme-
+     tries of three-dimensional extended AdS supergravity,” Annals Phys. 282, 31 (2000).
+     [hep-th/9910013].
+
+[31] M. Henneaux, S.-J. Rey, “Nonlinear W∞ as Asymptotic Symmetry of Three-Dimensional
+     Higher Spin Anti-de Sitter Gravity,” JHEP 1012, 007 (2010). [arXiv:1008.4579
+     [hep-th]].
+
+[32] M.R. Gaberdiel and T. Hartman, “Symmetries of Holographic Minimal Models,” JHEP
+     1105, 031 (2011). [arXiv:1101.2910 [hep-th]].
+
+[33] A. Campoleoni, S. Fredenhagen, S. Pfenninger, “Asymptotic W-symmetries in three-
+     dimensional higher-spin gauge theories,” [arXiv:1107.0290 [hep-th]].
+
+[34] P. Bantay, “The kernel of the modular representation and the Galois action in RCFT,”
+     Commun. Math. Phys. 233, 423 (2003). [math/0102149].
+
+[35] A. Cappelli, C. Itzykson, J.-B. Zuber, “Modular Invariant Partition Functions in Two-
+     Dimensions,” Nucl. Phys. B280, 445 (1987).
+
+[36] T. Gannon, M.A. Walton, “On the classification of diagonal coset modular invariants,”
+     Commun. Math. Phys. 173, 175 (1995). [hep-th/9407055].
+
+
+                                            39
+[37] E. Witten, “(2+1)-Dimensional Gravity as an Exactly Soluble System,” Nucl. Phys.
+     B311, 46 (1988).
+[38] M.A. Vasiliev, “Quantization on sphere and high spin superalgebras,” JETP Lett. 50,
+     374 (1989).
+[39] E.S. Fradkin, M.A. Vasiliev, “Candidate to the Role of Higher Spin Symmetry,” Annals
+     Phys. 177, 63 (1987).
+[40] M.A. Vasiliev, “Extended Higher Spin Superalgebras And Their Realizations In Terms
+     Of Quantum Operators,” Fortsch. Phys. 36, 33 (1988).
+[41] M.A. Vasiliev, “Progress in higher spin gauge theories,” [hep-th/0104246].
+[42] M. Gutperle, P. Kraus, “Higher Spin Black Holes,” JHEP 1105, 022 (2011).
+     [arXiv:1103.4304 [hep-th]].
+[43] M. Ammon, M. Gutperle, P. Kraus, E. Perlmutter, “Spacetime Geometry in Higher
+     Spin Gravity,” [arXiv:1106.4788 [hep-th]].
+[44] A. Castro, E. Hijano, A. Lepage-Jutier, A. Maloney, “Black Holes and Singularity Res-
+     olution in Higher Spin Gravity,” [arXiv:1110.4117 [hep-th]].
+[45] V.G. Drinfeld, V.V. Sokolov, “Lie algebras and equations of Korteweg-de Vries type,”
+     J. Sov. Math. 30, 1975 (1984).
+[46] V.A. Fateev, S.L. Lukyanov, “The Models of Two-Dimensional Conformal Quantum
+     Field Theory with Z(n) Symmetry,” Int. J. Mod. Phys. A3, 507 (1988).
+[47] P. Bouwknegt, K. Schoutens, “W symmetry in conformal field theory,” Phys. Rept.
+     223, 183 (1993). [hep-th/9210010].
+[48] M.R. Gaberdiel, R. Gopakumar, T. Hartman, S. Raju, “Partition Functions of Holo-
+     graphic Minimal Models,” JHEP 1108, 077 (2011). [arXiv:1106.1897 [hep-th]].
+[49] H.L. Verlinde, “Conformal Field Theory, 2-d Quantum Gravity And Quantization Of
+     Teichmuller Space,” Nucl. Phys. B337, 652 (1990).
+[50] O. Coussaert, M. Henneaux, P. van Driel, “The Asymptotic dynamics of three-
+     dimensional Einstein gravity with a negative cosmological constant,” Class. Quant.
+     Grav. 12, 2961 (1995). [gr-qc/9506019].
+[51] P. Bouwknegt, “Extended Conformal Algebras,” Phys. Lett. B207, 295 (1988).
+[52] T. Gannon, “Algorithms for affine Kac-Moody algebras,” [hep-th/0106123].
+[53] X. Yin, “Partition Functions of Three-Dimensional Pure Gravity,” [arXiv:0710.2129
+     [hep-th]].
+[54] X. Yin, “On Non-handlebody Instantons in 3D Gravity,” JHEP 0809, 120 (2008).
+     [arXiv:0711.2803 [hep-th]].
+
+                                           40
+[55] A. Strominger, “Black hole entropy from near-horizon microstates,” JHEP 9802, 009
+     (1998). [arXiv:hep-th/9712251].
+
+[56] A. Kato, “Classification Of Modular Invariant Partition Functions In Two-dimensions,”
+     Mod. Phys. Lett. A2, 585 (1987).
+
+[57] T. Gannon, “The Cappelli-Itzykson-Zuber A-D-E classification,” Rev. Math. Phys. 12,
+     82 (2000). [arXiv:math/9902064].
+
+[58] G.H. Hardy, E.M. Wright, “An introduction to the theory of numbers,” Oxford Univer-
+     sity Press (1979).
+
+
+
+
+                                           41
+
