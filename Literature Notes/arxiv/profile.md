@@ -8,7 +8,7 @@ Always screen `hep-th`, `gr-qc`, and `math-ph`. Deduplicate by arXiv id and pres
 
 ## Screening And Placement Rules
 
-Assign the technical tier first, then attach every applicable reason code. Author signals, version updates, and missed-paper corrections are cross-cutting placement modifiers; they improve recall and auditability but do not replace technical relevance.
+Choose priority by technical relevance and explain the reason in ordinary prose. The codes below are optional shorthand, not fields that must be filled in for every paper. Consider authorship, version updates, and recorded missed papers when useful, while keeping the technical reason for reading a paper clear.
 
 ### Daily Selection Calibration — 2026-09-22
 
@@ -55,32 +55,30 @@ Usually secondary unless directly coupled to Tier 1 or Tier 2:
 ### Coverage By Placement
 
 - High priority: produce a completed deep note whenever source access is sufficient, regardless of page count. A short paper is not permission for a shallow note.
-- Medium priority: write a brief sketch in the overview, normally one short paragraph or 3–5 short bullets covering the question, main source claim, method or construction, likely use, and why it is not high priority. Inspect only the official source material needed for that sketch. Include a central formula only when it materially helps, with its assumptions and evidence status. Do not routinely perform full decomposition, derivation reproduction, CAS verification, or create a separate detailed note; deeper treatment requires an explicit request or promotion into the high-priority selection before queue freezing. Unprocessed overflow remains metadata-only and is clearly labelled deferred.
+- Medium priority: write a brief sketch in the overview, normally one short paragraph or 3–5 short bullets covering the question, main source claim, method or construction, likely use, and why it is not high priority. Inspect only the official source material needed for that sketch. Include a central formula only when it materially helps, with its assumptions and a clear statement of whether it has been independently checked. Do not routinely perform full decomposition, derivation reproduction, CAS verification, or create a separate detailed note; deeper treatment requires an explicit request or selection as a high-priority paper before detailed reading begins. Briefly list additional candidates that have not been read.
 - Preliminary source map: use only when source access prevents a completed treatment. Label it explicitly as unfinished and record that status in the overview.
 
 ### High-Priority Acceptance Criteria
 
 Use `Literature Notes/Charges of supergravity (2604.09928v1).md` as a behavioral calibration, not as a fixed heading template. A completed high-priority note must follow the paper's technical structure rather than read like an expanded abstract, and must include when applicable:
 
-- a source map covering every major section and useful appendix;
+- an account of the argument across the major sections and useful appendices, with source references where needed;
 - the theory, notation, and conventions, including fields or algebraic data, parameters, boundary conditions, gauge choices, indices, signs, normalizations, and source/response splits;
-- the important equations and a derivation map showing how assumptions and intermediate results lead to the central theorem, charge, symplectic form, obstruction, partition function, or algebra;
+- the important equations and derivation steps showing how assumptions and intermediate results lead to the central theorem, charge, symplectic form, obstruction, partition function, or algebra;
 - a local translation into the vault's CPS, charge, boundary, edge-mode, AdS, or spectral conventions, including concrete reusable objects and required convention changes;
-- a verification boundary recorded after, not instead of, the technical reconstruction.
+- a clear account of what was independently reproduced and what remains unresolved, alongside the technical explanation.
+
+These requirements concern the mathematical content. Use headings and tables only when they help the reader follow it; a separate source map or derivation table is optional. Write the note as an explanation of the paper, not an audit report.
 
 ### Monograph-Mode Additions
 
-Use monograph mode for papers around 30 pages or longer and for shorter papers that are technically dense, appendix-heavy, or organized around a long formula chain. In addition to the ordinary high-priority criteria:
+For papers around 30 pages or longer, and shorter papers with dense arguments or substantial appendices, allow enough space to explain the full argument. Cover the major sections and the appendices used by the results, grouping related material when that improves readability. Keep definitions, assumptions, important equations, intermediate steps, and their connections explicit.
 
-- build a complete section tree, including appendices used by the main argument;
-- organize the source into coherent section clusters, each recording its purpose, definitions, assumptions, important equations, derivation steps, and later dependencies;
-- synthesize a global notation dictionary, equation ledger, and derivation map;
-- add a `How to read this long paper` guide distinguishing essential, technical-reference, and optional-background sections while still recording every section;
-- use linked follow-up or appendix notes only when a single master note would become hard to navigate.
+A section outline, notation table, equation list, derivation diagram, or reading guide may help with a particular paper. Use only what helps; do not produce all of them by default or repeat the same material in several forms. Use linked follow-up or appendix notes only when a single main note would become hard to navigate. The required technical depth does not depend on these presentation choices.
 
 ## Formula And Computation Checks
 
-For formula-heavy high-priority papers, reconstruct the source chain first, then reproduce as much of the checkable calculation as the available sources and tools allow. Split a large chain into smaller targets and record the exact verification boundary. Medium sketches are Source-derived unless a specific check was actually performed; they do not carry a general derivation-verification requirement.
+For formula-heavy high-priority papers, reconstruct the argument first, then reproduce as much of the checkable calculation as the available sources and tools allow. Split a long calculation into manageable steps and explain exactly what was checked and what remains unresolved. Medium sketches report the source's claims unless a specific check was actually performed; they do not carry a general derivation-verification requirement.
 
 Use:
 
@@ -88,7 +86,7 @@ Use:
 - xAct for tensor, covariant-derivative, variational, CPS, or differential-geometry identities.
 - Sage for representation theory, Lie algebra, character, Young-diagram, or discrete-algebra checks.
 
-Use evidence labels consistently:
+Explain the distinction between source claims, reproduced results, and unresolved questions in ordinary prose. The following labels are optional shorthand when they make that distinction clearer; they do not require separate sections or a checklist:
 
 - `Source-derived`: precise claims or formulas obtained from source reading but not independently reproduced.
 - `Checked`: only content independently reproduced by an explicit computation or comparable verification.

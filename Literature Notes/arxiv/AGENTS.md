@@ -6,7 +6,7 @@ These instructions apply to work under `Literature Notes/arxiv/`. They complemen
 
 - Read `Literature Notes/arxiv/profile.md` before screening or ranking papers. It is authoritative for categories, priority tiers, author signals, reason codes, missed-paper corrections, breakdown depth, long-paper policy, and computation-check expectations.
 - Use this file for operational workflow, file-writing rules, safety boundaries, and orchestration. If it conflicts with `profile.md` on research relevance, follow `profile.md`; if it conflicts on orchestration or output safety, follow this file.
-- Keep technical relevance separate from author signal. Source reading is `Source-derived`, not independent verification.
+- Keep technical relevance separate from author signal. Explain which results come from the paper and which calculations have been independently reproduced; use labels only when they help.
 
 ## Daily arXiv Workflow
 
@@ -19,8 +19,15 @@ These instructions apply to work under `Literature Notes/arxiv/`. They complemen
    python3 scripts/arxiv_daily_inventory.py --categories hep-th gr-qc math-ph --format markdown --output Literature\ Notes/arxiv/YYYY/MM/DD/YYYY_MM_DD_inventory.md
    ```
 
-3. Use the generated inventory as the primary substrate for deduplication, counts, and candidate discovery. Do not reason from raw arXiv listing HTML when the helper succeeds. If it fails or partially succeeds, record the command and exact failure under `Source queries`, then use official arXiv pages as fallback.
+3. Use the generated inventory to find papers, remove duplicates, and count the list. If the helper fails or returns an incomplete list, briefly explain the missing coverage and use official arXiv pages to fill the gap.
 4. Cover `hep-th`, `gr-qc`, and `math-ph`, deduplicate by arXiv id, and preserve primary and cross-list categories. Use official arXiv sources for metadata and selected-paper content.
+
+### Dates And Repeated Runs
+
+- Read the official list date from the retrieved issue. The inventory helper already uses a fresh query parameter; do not routinely repeat its requests or inspect cache headers, RSS feeds, and the status page.
+- Investigate further when official dates or IDs disagree, an issue is unexpectedly old for the announcement schedule, or another concrete sign suggests missing papers. Use the additional source needed to resolve that question and stop checking once it is resolved. If it remains unresolved, state the gap without claiming complete coverage.
+- If today's results are complete and there is no newer issue, briefly report that there is nothing to add. Do not routinely compute hashes, download material already available, or repeat checks whose inputs have not changed.
+- On an explicitly requested same-day refresh, back up the stale dated outputs outside the vault and replace only that day's package; retain the strict serial queue and all older-note protections.
 
 ### Output And Safety
 
@@ -29,25 +36,11 @@ These instructions apply to work under `Literature Notes/arxiv/`. They complemen
 - Keep PDFs, TeX sources, rendered pages, and other retrieval artifacts in a temporary directory outside the vault. Do not create or link new PDF attachments.
 - Wiki-links are permitted only between that day's overview and that day's detailed notes. Do not add unrelated wiki-links or tags.
 
-The overview must contain, in this order:
+Organize the overview around the day's useful content. Include the Beijing run date, official list date/title, a link to the inventory and its deduplicated total, the recommendations, and a suggested reading order. Explain why the recommendations matter for current research. Do not duplicate the full inventory table unless inventory generation failed.
 
-1. `Today at a glance`
-2. `Complete screened arXiv list`
-3. `High-priority recommendations`
-4. `Medium-priority technical candidates`
-5. `Secondary candidates`
-6. `Author-signal watchlist`
-7. `Updated versions of tracked papers`
-8. `Reading order`
-9. `Why these match my current projects`
-10. `Retrospective context`
-11. `Skipped nearby papers`
-12. `Source queries`
-13. `Missed-paper correction follow-up`
+Add unread candidates, author observations, version updates, or missed-paper corrections when there is something useful to report; omit empty sections. Explain recommendation reasons in ordinary prose. Reason codes are optional, and routine searches and selection decisions do not need a separate log. Record retrieval problems when they affect coverage or the interpretation of a paper.
 
-In `Today at a glance`, state the Beijing run date and official list date/title. In `Complete screened arXiv list`, point to the inventory, report the deduplicated total and compact status/placement counts, and do not duplicate the full inventory table unless inventory generation failed.
-
-Attach profile reason codes to recommended, watched, skipped-nearby, and version-update items. Record categories and URLs queried, helper status, retrieval failures, deduplication decisions, author matches, version checks, reason-code decisions, and close-paper exclusions. For tracked-version updates, record the local note path, old and latest versions, source URL, and whether abstract/comments changes alter priority; do not rewrite the old note.
+For tracked-version updates, give the local note path, old and latest versions, source URL, and any apparent change in relevance from the abstract or comments. Do not rewrite the old note or routinely reread the updated paper.
 
 ### Selection And Note Depth
 
@@ -78,19 +71,17 @@ tags: []
 
 Do not add a `pdf` field unless a matching attachment already exists.
 
-### Strictly Sequential No-Subagent Execution
+### One Paper At A Time
 
-- Do not create, spawn, delegate to, or use subagents for inventory screening, paper decomposition, section clustering, verification, drafting, or validation.
-- After inventory screening and final selection, establish a deterministic queue: high-priority papers in reading order, followed by the selected medium-priority sketches.
-- Process exactly one paper at a time in the main agent. For high-priority papers, complete source retrieval and full-structure inspection, notation mapping, technical reconstruction, feasible verification, writing, evidence labels, audit entries, and file validation before starting another paper. For medium papers, finish only the targeted source reading, brief sketch, evidence labels, audit entry and validation required by the sketch scope before advancing.
-- Do not interleave reading, decomposition, verification, drafting, or section work across papers. For monograph mode, process section clusters sequentially within the same paper and finish the master note before advancing.
-- Advance after completion or after a concrete irreparable `Blocked`/`Failed` boundary has been documented and all usable work saved. Continue until every queued paper has been processed.
+- Work in the main agent without subagents. Read the high-priority papers first, then write the selected medium-priority sketches.
+- Finish each paper's reading, explanation, appropriate calculations, and note before starting the next. For medium papers, finish the short sketch without expanding it into a full technical treatment. Work through long papers one part at a time and finish the main note before moving on.
+- If a paper cannot be completed, save the useful work, explain the specific missing source or unresolved calculation, and continue with the remaining papers.
 
 ### Verification And Validation
 
 - For formula-heavy high-priority papers, reconstruct the source chain first, then attempt every feasible Mathematica, xAct, Sage, or comparable check in source order. Use PDF rendering when formulas, labels, tables, or layout are unreliable in extracted text or HTML.
-- `Checked` is only for independently reproduced content. Put source inspection in the technical exposition or `Source-derived`; state exact missing inputs or tool obstructions under `Blocked`; record irreparable contradictions with source location under `Failed` and do not rely on dependent claims.
-- Finish with the narrow relevant content checks, including required headings, frontmatter, same-day wiki-links, inventory counts, verification-log labels, trailing whitespace, final newlines, and `git diff --check` for tracked changes. Remember that `git diff --check` does not inspect untracked files, so scan new Markdown files directly.
+- Explain the paper's claims, independently reproduced calculations, and unresolved issues where they matter in the note. Labels from `profile.md` are optional. If a check contradicts a source claim, give the source location and assumptions and explain which later conclusions are affected. Write a readable research note rather than an audit report.
+- Finish with one focused review of the new notes: confirm the files were written, references and formulas have no obvious transcription errors, and the overview accurately describes what was covered. Check frontmatter, links, and formatting once; `git diff --check` can check tracked changes, while new files need a direct read. Recheck only after a relevant change or a concrete problem. Do not create a separate validation report for routine successful checks.
 
 ## Weekly Digest Boundary
 

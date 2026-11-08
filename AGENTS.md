@@ -9,6 +9,7 @@ This repository is a personal Obsidian vault for theoretical-physics research no
 - Do not rewrite, polish, rephrase, or otherwise alter koishi's existing wording unless explicitly asked. A request to extend or complete a note authorizes the requested additions, not edits to passages koishi has already written or revised.
 - When an existing passage appears incorrect or needs improvement, report its location, the specific problem, and the suggested correction; leave it unchanged unless the user explicitly requests that correction. This applies to prose, formulas, notation, and mathematical claims, even when a correction has been verified. Keep authorized edits within the requested scope and identify them clearly so koishi does not have to recheck unrelated text.
 - Write so a later reader can follow the reasoning and verify the claims without the original conversation.
+- Do not create new JSON files; record results directly in Markdown.
 - Do not delete, overwrite, move, rename, or merge notes without explicit authorization.
 - Do not add tags, Dataview fields, bibliography automation, or new wiki-links unless explicitly requested.
 - Distinguish what was edited, inspected, tested, assumed, and left unverified. Do not call work complete without the relevant edit and check.
