@@ -222,8 +222,12 @@ def fetch_text(
     last_error: BaseException | None = None
 
     for attempt in range(attempts):
+        # arXiv's CDN can serve an old issue even with no-cache headers.
+        # Give each attempt a fresh cache key while keeping the official URL.
+        separator = "&" if "?" in url else "?"
+        request_url = f"{url}{separator}_arxiv_inventory={time.time_ns()}"
         request = urllib.request.Request(
-            url,
+            request_url,
             headers={
                 "User-Agent": "CodexArxivInventory/0.1 (+https://arxiv.org)",
                 "Accept": "text/html,application/xhtml+xml",
