@@ -78,4 +78,10 @@ tools/wechat-decrypt/
 /Drafts/Gravitational sewing and relational time/
 
 # Keep OFPT calculation scripts and generated results local
-/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/scripts/
+/Articles/Quantization in AdS/perturbation/Einstein scalar spectrum/scripts/
+
+# Ignore Python virtual environments at any directory depth
+.venv/
+.venv-*/
+.venv_*/
+venv/
