@@ -20,7 +20,7 @@ tags: []
 
 阅读定位：`T1-Wald-CPS; T1-boundary; T1-symmetry; T1-symplectic; T2-model; T3-math`。这是本日首次详细处理的旧稿更新，不是对已有本地详细笔记的改写。官方 v2 于 2026-09-21 更新；78 页，采用 monograph mode。
 
-## Source map 与完整章节树
+## Source Map 与完整章节树
 
 以下重构均以官方 v2 TeX 和 PDF 为依据，未标 `Checked` 的一般结论均为 `Source-derived`。
 
@@ -68,34 +68,29 @@ tags: []
 
 采用与原文 EOM 一致的作用量：
 
-$$
-S^J[A]=-\frac12\langle dA,dA\rangle_{\bar N}-\langle J,A\rangle_{\bar N},
-\qquad -d^*dA=J.
-$$
+$$\begin{align}
+S^J[A]=-\frac12\langle dA,dA\rangle_{\bar N}-\langle J,A\rangle_{\bar N}, \qquad -d^*dA=J.
+\end{align}$$
 
 原文式 (3.1) 最右内积表达漏掉第一项的 $1/2$；PDF 第 11 页及 TeX 一致显示该笔误。这里明确恢复它，而不把错误的双倍动能继续用于电荷归一化。
 
 原文以 $\delta S=E-d\Theta$ 组织边界变分，$\Theta_A(a)=(*dA)\wedge a$。在固定源切空间上，其反对称变分给出
 
-$$
-\sigma(a_1,a_2)
- =\langle a_2,n_\Sigma da_1\rangle_\Sigma
- -\langle a_1,n_\Sigma da_2\rangle_\Sigma
- =\langle\mathbf A_1,\mathbf E_2\rangle_\Sigma
- -\langle\mathbf A_2,\mathbf E_1\rangle_\Sigma.
-$$
+$$\begin{align}
+\sigma(a_1,a_2) =\langle a_2,n_\Sigma da_1\rangle_\Sigma -\langle a_1,n_\Sigma da_2\rangle_\Sigma =\langle\mathbf A_1,\mathbf E_2\rangle_\Sigma -\langle\mathbf A_2,\mathbf E_1\rangle_\Sigma.
+\end{align}$$
 
 守恒来自线性化方程、Stokes 定理及 lens 的公共角几何。不能直接把它搬到有开放 timelike 通量的世界管。对纯规范切向量积分分部，Gauss 条件消去体项，留下
 
-$$
+$$\begin{align}
 \sigma(d\Lambda,a)=\int_{\partial\Sigma}\Lambda\,n_{\partial\Sigma}\mathbf E(a).
-$$
+\end{align}$$
 
 所以“规范变换”是否为退化方向取决于允许的参数迹，而不是只看 $F$ 是否不变。Appendix C 用任意满足 Gauss 条件的初值的可实现性反向证明核恰为
 
-$$
+$$\begin{align}
 \mathscr G=\{d\Lambda:\Lambda|_{\angle\bar N}=0\}.
-$$
+\end{align}$$
 
 等价代表可以给 $\Lambda$ 加体上的局部常数。若一个连通区域的角有两个分支，其相对常数仍能携带物理信息；这是壳层电通量例子的要点。
 
@@ -105,29 +100,22 @@ $$
 
 在 $\Sigma$ 上写
 
-$$
-\mathbf A=\mathbf A^t+d\alpha,\qquad
-\mathbf E=\mathbf E^t+d\varepsilon,
-\qquad \mathbf A^t,\mathbf E^t\in\Omega^1_{t,d^*}(\Sigma).
-$$
+$$\begin{align}
+\mathbf A=\mathbf A^t+d\alpha,\qquad \mathbf E=\mathbf E^t+d\varepsilon, \qquad \mathbf A^t,\mathbf E^t\in\Omega^1_{t,d^*}(\Sigma).
+\end{align}$$
 
 右侧空间要求余闭并且法向迹为零。proper-gauge 约化后选 $\Delta\alpha=0$，边界迹与体常数限制正交。$-\Delta\varepsilon=\rho$ 的 Neumann 相容性固定总通量；令 $f^\rho$ 在每个体连通分支的全边界上等于总电荷除以面积，则
 
-$$
-\mathfrak K^J_\Sigma[A]
- =(\mathbf A^t,\mathbf E^t;
- f=\alpha|_{\partial\Sigma},\ h=n\mathbf E-f^\rho),
-\quad
-V^C=\big(\Omega^1_{t,d^*}(\Sigma)\big)^{\oplus2},\quad
-V^S=\mathscr{LG}_\angle^{\oplus2}.
-$$
+$$\begin{align}
+\mathfrak K^J_\Sigma[A] =(\mathbf A^t,\mathbf E^t;
+ f=\alpha|_{\partial\Sigma},\ h=n\mathbf E-f^\rho), \quad V^C=\big(\Omega^1_{t,d^*}(\Sigma)\big)^{\oplus2},\quad V^S=\mathscr{LG}_\angle^{\oplus2}.
+\end{align}$$
 
 体与梯度项的交叉配对由 Hodge 正交性消失；两梯度的配对再分部，齐次电场满足 $\Delta\varepsilon=0$，仅余边界项。因此
 
-$$
-\sigma=\sigma^C\oplus\sigma^S,
-\qquad \sigma^S((f,h),(f',h'))=\langle f,h'\rangle-\langle f',h\rangle.
-$$
+$$\begin{align}
+\sigma=\sigma^C\oplus\sigma^S, \qquad \sigma^S((f,h),(f',h'))=\langle f,h'\rangle-\langle f',h\rangle.
+\end{align}$$
 
 这不是把界面独立自由度直接局域截出来：$f$ 及闭环部分通过整个 $\Sigma$ 的椭圆边值问题定义。总表面相空间可以内禀给出，其在区域相空间中的嵌入仍依赖 Cauchy 面。
 
@@ -135,25 +123,21 @@ $$
 
 局域场 $A(f)=\langle f,A\rangle$ 使用内部紧支撑、余闭一形式 $f$。Peierls 括号与源的约定为
 
-$$
+$$\begin{align}
 \{A(f),A(h)\}=-\langle f,G^{\mathrm{PJ}}h\rangle.
-$$
+\end{align}$$
 
 引入齐次解 $a$ 的辛涂抹
 
-$$
-O_A(a)(\widetilde A)=\sigma(a,\widetilde A-A),\qquad
-\{O_A(a),O_B(b)\}=\sigma(a,b),\qquad
-A(f)=-O_A(G^{\mathrm{PJ}}f)+\langle f,A\rangle.
-$$
+$$\begin{align}
+O_A(a)(\widetilde A)=\sigma(a,\widetilde A-A),\qquad \{O_A(a),O_B(b)\}=\sigma(a,b),\qquad A(f)=-O_A(G^{\mathrm{PJ}}f)+\langle f,A\rangle.
+\end{align}$$
 
 Green 恒等式把后两种描述相连。局域观测量只用空间紧支撑的 $a$；允许所有光滑区域齐次解，则获得半局域代数，并能探测大规范方向。CHH 坐标中的生成元为
 
-$$
-o^C(F,H)=\langle F,\mathbf E\rangle-\langle H,\mathbf A\rangle,
-\quad
-o^S(f,h)=\langle f,n\mathbf E\rangle-\langle d\varphi,\mathbf A\rangle,
-$$
+$$\begin{align}
+o^C(F,H)=\langle F,\mathbf E\rangle-\langle H,\mathbf A\rangle, \quad o^S(f,h)=\langle f,n\mathbf E\rangle-\langle d\varphi,\mathbf A\rangle,
+\end{align}$$
 
 其中 $\Delta\varphi=0$、$n d\varphi=h$。第二项在边界规范平移下变化为 $-\langle h,\lambda\rangle$。它类似谐和涂抹的开 Wilson 线；真正分布型细线一般过于奇异，不属于此光滑生成空间。
 
@@ -161,11 +145,9 @@ $$
 
 量子化使用
 
-$$
-W_A(a)W_A(b)=e^{-i\sigma(a,b)/2}W_A(a+b),\quad
-W_A(a)^*=W_A(-a),\quad
-W_{A-b}(a)=e^{i\sigma(a,b)}W_A(a).
-$$
+$$\begin{align}
+W_A(a)W_A(b)=e^{-i\sigma(a,b)/2}W_A(a+b),\quad W_A(a)^*=W_A(-a),\quad W_{A-b}(a)=e^{i\sigma(a,b)}W_A(a).
+\end{align}$$
 
 局域 Weyl 场为 $W^J_{\rm loc}(f)=e^{i\langle f,A\rangle}W_A(-G^{\mathrm{PJ}}f)$，背景依赖相消。非退化区域空间的 Weyl $C^*$ 代数简单；CHH 给出 $\mathcal A(\bar N)\cong\mathcal A^C_\Sigma\otimes\mathcal A^S_\angle$，但这不是独立于切片的局域协变张量分解。
 
@@ -177,16 +159,15 @@ $$
 
 添加 $(\varphi,\tau)\in V^S$，使用 $\widetilde V=V\oplus V^S$ 和直和辛形式。联合大规范作用
 
-$$
-(a,\varphi,\tau)\longmapsto(a+\mathfrak G\lambda,\varphi+\lambda,\tau),\qquad
-D=\{(\mathfrak G\lambda,\lambda,0)\}.
-$$
+$$\begin{align}
+(a,\varphi,\tau)\longmapsto(a+\mathfrak G\lambda,\varphi+\lambda,\tau),\qquad D=\{(\mathfrak G\lambda,\lambda,0)\}.
+\end{align}$$
 
 先限制 $D^\perp$，再商去 $D$。正交约束给出 $\tau=n^{(2)}_\angle da=-h$；不能漏掉两个区域外法向相反导致的负号。选 $\varphi=0$ 作为轨道代表，得到
 
-$$
+$$\begin{align}
 \widehat E(a)=(a,0,-h(a)),\qquad D^\perp/D\simeq V.
-$$
+\end{align}$$
 
 其逆映射从 $(a,\varphi,-h)$ 扣去联合方向，留下 $a-\mathfrak G\varphi$。辅助自由度在这个固定外部通量叶上没有增加最终相空间维数。
 
@@ -194,29 +175,27 @@ $$
 
 量子 relativisation 为
 
-$$
+$$\begin{align}
 \Upsilon(W_A(a))=W_A(a)\otimes W^S(0,-h(a)).
-$$
+\end{align}$$
 
 两因子的联合规范相位相消，额外表面因子之间的辛配对为零，所以保持原 Weyl 乘法。像 $\mathcal A_{\rm rel}$ 与 $\mathcal A$ 同构。然而整个联合不变量代数还有中心生成元 $U_{\mathscr{LG}}\otimes U^S_{\mathscr{LG}}$；需要再取理想
 
-$$
+$$\begin{align}
 I=\langle U_{\mathscr{LG}}(\lambda)\otimes U^S_{\mathscr{LG}}(\lambda)-1\rangle
-$$
+\end{align}$$
 
 才得到 $\mathcal A_{\rm ext}=\widetilde{\mathcal A}^{\mathscr{LG}}/I\cong\mathcal A_{\rm rel}$。商映射 $\Gamma$ 在 $\Upsilon$ 的像上为逆；不能把所有不变量直接等同于已约化观测量。
 
 §5.3 将上述中心取值推广为 $e^{i\langle\Phi,\lambda\rangle}$，$\Phi$ 表示外部电通量扇区；零值才是前述特定商。物理匹配式为 $n\mathbf E+\tau=\Phi$。相对观测量代数自身看不到这个外部标签；在扩展不变量代数的表示论层面才需记录它。源于所规定正则表示类别的扇区结论不可直接推广到所有表示。
 
-## §5.4 与 Appendix E：代数 dressing 的操作解释
+## §5.4 与 Appendix E：代数 Dressing 的操作解释
 
 取角 Laplacian 的低谱投影 $\Pi_\mu$，有限维子群 $G_\mu=\Pi_\mu\mathscr{LG}_\angle\cong\mathbb R^{n_\mu}$。在可分、忠实、正则参考系表示中，Stone–von Neumann 理论给出协变 PVM，满足
 
-$$
-U^{\mathcal R}(f)P_\mu(X)U^{\mathcal R}(f)^{-1}=P_\mu(X+f),
-\quad
-\Upsilon_\mu(a)=\int_{G_\mu}U^{\mathcal S}(f)aU^{\mathcal S}(f)^*\otimes dP_\mu(f).
-$$
+$$\begin{align}
+U^{\mathcal R}(f)P_\mu(X)U^{\mathcal R}(f)^{-1}=P_\mu(X+f), \quad \Upsilon_\mu(a)=\int_{G_\mu}U^{\mathcal S}(f)aU^{\mathcal S}(f)^*\otimes dP_\mu(f).
+\end{align}$$
 
 在生成元上积分就是傅里叶变换，输出参考系 Weyl 因子 $W^S(0,\Pi_\mu n^{(2)}da)$。利用谱投影的 Sobolev 收敛以及参考系表示相应强连续性，取强算子极限，恢复代数定义的 $\Upsilon$。这一步既不是无条件极限，也不是在无穷维非局部紧大规范群上直接使用 Haar 积分。crossed-product 识别先对有限维子群成立；范数闭包、弱闭包和固定点操作不能随意交换。
 
@@ -224,26 +203,23 @@ $$
 
 本节取 $J=0$。两个连通 lens 的正则 Cauchy 面拼成紧致无边界 $\Sigma$，只在公共角相交，环境时空由其 domain of dependence 给定。定义
 
-$$
-\mathcal A_{\rm glue}=
-(\mathcal A_1\otimes\mathcal A_2)^{\text{diagonal }\mathscr{LG}}/I.
-$$
+$$\begin{align}
+\mathcal A_{\rm glue}= (\mathcal A_1\otimes\mathcal A_2)^{\text{diagonal }\mathscr{LG}}/I.
+\end{align}$$
 
 CHH 表面变量满足 $h_2=-h_1$。对角平移消去共同的 $f$，留下 $q=f_1-f_2$ 及 $p=h_1$。明确计算
 
-$$
-\sigma^S_1+\sigma^S_2
-=(f_1-f_2)k_1-(g_1-g_2)h_1
-$$
+$$\begin{align}
+\sigma^S_1+\sigma^S_2 =(f_1-f_2)k_1-(g_1-g_2)h_1
+\end{align}$$
 
 说明公共表面共轭对不会在匹配通量后整个消失。Theorem 6.1 给出两个参数化：$\mathcal A_1\otimes\mathcal A^C_2\simeq\mathcal A_{\rm glue}\simeq\mathcal A^C_1\otimes\mathcal A_2$。切换参考区域在表面标签上作用为 $(f,h)\mapsto(-f,-h)$，保持辛形式；对应闭合开 Wilson 线的方式依赖补区 Cauchy 面。
 
 Theorem 6.3 的自然映射为
 
-$$
-\iota:\mathcal A(M)\hookrightarrow\mathcal A_{\rm glue},\qquad
-W^M([a])\mapsto\big[W_1([a|_{N_1}])\otimes W_2([a|_{N_2}])\big].
-$$
+$$\begin{align}
+\iota:\mathcal A(M)\hookrightarrow\mathcal A_{\rm glue},\qquad W^M([a])\mapsto\big[W_1([a|_{N_1}])\otimes W_2([a|_{N_2}])\big].
+\end{align}$$
 
 证明链：选全局 Coulomb 初值代表，使区域限制形成辛映射；不同全局规范代表的差是对角大规范，在商中被消去；非零含幺同态作用在简单 Weyl 代数上给出单射。映射不依赖为证明而选的切片，但前述 CHH 参数化和 dressing 依赖。
 
@@ -253,22 +229,21 @@ $$
 
 给定切片的表面边缘态需满足
 
-$$
+$$\begin{align}
 \omega_1^S(W(f,h))=\omega_2^S(W(-f,-h)).
-$$
+\end{align}$$
 
 可选的两个拼接态是 $\omega_{1(2)}=(\omega_1\otimes\omega_2^C)\circ\psi_{\bullet\circ}^{-1}$ 及 $\omega_{(1)2}=(\omega_1^C\otimes\omega_2)\circ\psi_{\circ\bullet}^{-1}$。它们保持所指定的 closed-loop 和 surface 边缘态，并非同时保持两侧所有原 bulk–surface 相关性。二者相等当且仅当两侧原态各自因子化为 $C\otimes S$。
 
 对准自由态，第一种拼接再限制到全局代数后，其 covariance 为
 
-$$
-\mu_{1(2)}=(\mu_1\oplus\mu_2^C)\circ\mathfrak i_{1(2)}^{\otimes2},\qquad
-\mathfrak i_{1(2)}[a]=(v_1^C,f_1-f_2,h_1,v_2^C).
-$$
+$$\begin{align}
+\mu_{1(2)}=(\mu_1\oplus\mu_2^C)\circ\mathfrak i_{1(2)}^{\otimes2},\qquad \mathfrak i_{1(2)}[a]=(v_1^C,f_1-f_2,h_1,v_2^C).
+\end{align}$$
 
 线性拉回保持准自由特征函数，但不决定 Hadamard 波前集。论文明确承认界面奇异性及可能的 Hadamard 失败；平滑拼接与 Wick 多项式是后续工作。
 
-## Equation ledger 与推导依赖
+## Equation Ledger 与推导依赖
 
 | 原文定位 | 可复用对象 | 所需前置条件 |
 |---|---|---|
@@ -286,19 +261,19 @@ $$
 
 整体链条是：作用量 → 固定源解空间 → proper-gauge 核 → 初值定理 → CHH 分解 → 半局域 Weyl 代数 → 联合扩展/约化 → 界面代数 → 全局光滑子代数。每个箭头改变的是对象或定义域，不能只根据最后电荷相消跳过中间步骤。
 
-## 与本库 CPS / sewing 的对接
+## 与本库 CPS / Sewing 的对接
 
 首要可复用对象是明确的商 $D^\perp/D$ 及其 gauge-fixed 截面；它展示“加入辅助边缘变量再消去”如何在一个固定通量叶上返回原相空间。第二个对象是全局代数单射：它把界面匹配、区域相空间约化、光滑延拓和态的正则性分成不同问题。对本库行动量优先的 sewing，应逐项建立这些箭头，不能把本文 Abelian 线性 Weyl 结果直接称为引力或非 Abelian 的量子定理。
 
 记号迁移时必须同时保留 $\delta S=E-d\Theta$、$\mathbf E=-n_\Sigma F$、$G^{\rm PJ}=G^- -G^+$。若本库采用 $\delta L=E+d\theta$，应先以 $\theta=-\Theta$ 对齐，再重算 $\omega$ 与 Hamiltonian-vector-field 约定；不能单独复制表面电荷的正负号。固定外源、全局势扇区、紧致 lens 与光滑场定义域也都是不可省略的输入。
 
-## How to read this long paper
+## How to Read This Long Paper
 
 第一遍按 §3.1 → §3.3 → §5.1–5.2 → §6.2 阅读，抓住每次约化保留了什么。第二遍补 §3.2 和 §4，将 Peierls 及表示论边界接上。若目标是拼接态，必须读 §6.3 的相关性和 Hadamard 限制，不能仅引用 Thm.6.1。
 
 技术参考按需回到 Appendix C 的边值可解性与 kernel 证明、Appendix D 的局域性、Appendix E 的 PVM 极限。§2 与 Appendix B 是所有几何推广前必须核对的定义；§1、§7 为背景与尚未完成的推广，不能作为已证明结果引用。Appendix A 用于跨章节符号核对。
 
-## Verification log
+## Verification Log
 
 - `Source-derived`：完整主要章节与附录结构、Green/初值论证、Weyl $C^*$ 简单性与连续性、定理6.1/6.3及态拼接定理。独立计算没有重新证明这些无穷维分析结论。
 - `Checked`（2026-09-22，Mathematica）：一个表面模态的 $\Omega=J_2\oplus J_2$，$D=\mathrm{span}(1,0,1,0)$。约束基 $(1,0,0,0),(0,1,0,-1),(0,0,1,0)$ 的拉回矩阵为 $\bigl(\begin{smallmatrix}0&1&0\\-1&0&1\\0&-1&0\end{smallmatrix}\bigr)$，核为 $(1,0,1)$；截面 $(f,h,0,-h)$ 的拉回与 $J_2$ 差为零。这检查约束、符号和商的单模态代数，不证明函数空间完备性。
