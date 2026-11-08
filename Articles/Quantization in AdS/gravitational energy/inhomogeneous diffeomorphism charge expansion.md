@@ -4,7 +4,7 @@ date: 2026-07-03
 summary: "Re-expands the diffeomorphism Noether charge by kappa order and restores the timelike-boundary corner term required for agreement with the Brown-York charge."
 ---
 
-# Inhomogeneous diffeomorphism charge expansion
+# Inhomogeneous Diffeomorphism Charge Expansion
 
 This note keeps the inhomogeneous action of an asymptotic diffeomorphism on the first metric perturbation. The expansion convention is
 
@@ -36,7 +36,7 @@ $$\begin{align}
 
 which is the perturbative expansion of $X_\xi\cdot\delta g_{\mu\nu}=\mathcal{L}_\xi g_{\mu\nu}$.
 
-## Action through $O(\kappa^0)$
+## Action Through $O(\kappa^0)$
 
 The full action is
 
@@ -77,7 +77,7 @@ S^{[0]}[h,k,\varphi] &=\frac{1}{2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}} \left(\math
 &\quad-\frac{1}{2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}} \left(\nabla_{\mu}\varphi\nabla^{\mu}\varphi+m^2\varphi^2\right).
 \end{align}$$
 
-## Variation, equations, and symplectic potential
+## Variation, Equations, and Symplectic Potential
 
 The variation through $O(\kappa^0)$ is written as
 
@@ -112,7 +112,7 @@ $$\begin{align}
 
 No equation of motion or gauge condition is used in this section.
 
-## Field-space variation of the action
+## Field-Space Variation of the Action
 
 Since the truncated bulk Lagrangian density is a scalar density, the field-space vector above gives
 
@@ -131,7 +131,7 @@ $$\begin{align}
 
 This is an off-shell identity for the truncated bulk action. No use has been made of $\mathcal{E}^{(1)}[h]=0$, the second-order constraint, TT gauge, radial gauge, or Brown-Henneaux falloffs. The timelike-boundary completion of $\theta$ and $\alpha_{\xi}$ is added next.
 
-## Timelike-boundary contribution
+## Timelike-Boundary Contribution
 
 The Brown-York expression is derived from the renormalized action with a timelike cutoff boundary,
 
@@ -229,7 +229,7 @@ H_{\xi} &=\lim_{\varepsilon\to0}\left[ \frac{1}{16\pi G}\int_{\Sigma_{\varepsilo
 
 The minimally coupled scalar changes the bulk equation and its perturbative constraint. Under the fixed-source, normalizable scalar boundary condition used here, it adds no finite boundary charge, so the gravitational data $\ell$, $C$, and $\mu_{\xi}$ continue to fix the full on-constraint charge by the Brown-York term. If a nonzero scalar source or scalar boundary flux is allowed, the corresponding scalar counterterm and boundary contribution must be added separately.
 
-## Bulk charge by $\kappa$ order
+## Bulk Charge by $\kappa$ Order
 
 Define the bulk-only intermediate quantity
 
@@ -300,7 +300,7 @@ S_{\xi,k,0}^{\mu\nu} &=\xi^{[\mu} \left(\nabla^{(0)}_{\rho}k^{\nu]\rho} -\nabla^
 
 The notation $\mathcal{H}_{\xi,\mathrm{bulk,tr}}^{[0]\mu}$ records the truncation. Since $X_{\xi}^{[-1]}$ lowers the $\kappa$-order by one, the bulk finite charge can also receive $X_{\xi}^{[-1]}$-contributions from the $O(\kappa)$ action. The selected contribution of this type is computed next.
 
-## The selected $S^{[1]}$ contribution
+## The Selected $S^{[1]}$ Contribution
 
 To isolate the contribution lowered by $X_{\xi}^{[-1]}$, extend the metric expansion by one order,
 
@@ -483,7 +483,7 @@ This conclusion concerns $H_{\xi,\mathrm{bulk}}$ only. It does not set the indep
 
 The scalar coupling in $S^{[1]}$ contributes to the bulk $E_h^{[1]\mu\nu}\mathcal{L}_{\xi}g^{(0)}_{\mu\nu}$ term but adds no antisymmetric surface tensor, because it contains no derivative of $h_{\mu\nu}$.
 
-## Using the constraints
+## Using the Constraints
 
 The first-order and second-order constraints from `perturbation.md` are
 
@@ -533,7 +533,7 @@ H_{\xi,\mathrm{bulk}}^{[-1]} &=\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\, 
 H_{\xi,\mathrm{bulk}}^{[0]} &=\int_{\partial\Sigma}\mathrm{d}x\sqrt{h^{(0)}}\, \tau_{\mu}^{(0)}n_{\nu}^{(0)} \left(S_{\xi,h}^{\nu\mu}+S_{\xi,k}^{\nu\mu}\right).
 \end{align}$$
 
-## Comparison with the Brown-York boundary charge
+## Comparison with the Brown-York Boundary Charge
 
 The Brown-York charge in `boundary charge.md` expands as
 

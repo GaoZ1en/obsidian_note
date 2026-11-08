@@ -1,4 +1,4 @@
-for an action
+For an action
 
 $$\begin{align}
 S & =\int \mathrm{d}^{d}x\sqrt{ -g }\mathcal{L}[\phi]
@@ -10,7 +10,7 @@ $$\begin{align}
 \delta S & =\int \mathrm{d}^{d}x\sqrt{ -g }E\delta \phi+\theta|_{\Sigma _{f}-\Sigma _{i}}
 \end{align}$$
 
-suppose this theory has a symmetry $\displaystyle{\phi\to \phi+\Delta _{\lambda} \phi}$. we summarize the symmetry as a vector on the configuration space
+suppose this theory has a symmetry $\displaystyle{\phi\to \phi+\Delta _{\lambda} \phi}$. We summarize the symmetry as a vector on the configuration space
 
 $$\begin{align}
 X_{\lambda} & =\int \mathrm{d}^{d}x \Delta _{\lambda}\phi \frac{\delta}{\delta \phi}

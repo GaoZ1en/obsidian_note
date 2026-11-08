@@ -17,7 +17,7 @@ This directory contains the AdS$_3$ linearized-gravity notes, the nonlinear Brow
 
 ## Einstein–Scalar Spectrum
 
-[Einstein scalar spectrum](Einstein%20scalar%20spectrum/README.md) contains the minimally coupled scalar project: action/CPS, gauge and response kernels, leading particle spectra, and the closed-form audit. The six notes and eleven verification/data files formerly listed above now live there.
+[Einstein scalar spectrum](Articles/Quantization%20in%20AdS/perturbation/Einstein%20scalar%20spectrum/README.md) contains the minimally coupled scalar project: action/CPS, gauge and response kernels, leading particle spectra, and the closed-form audit. The six notes and eleven verification/data files formerly listed above now live there.
 
 ## Charges and Algebras
 

@@ -4,11 +4,11 @@ date: 2026-07-11
 summary: "Tracks assumptions, sources, analytic derivations, and Mathematica/xAct checks for the formulas used in the draft."
 ---
 
-# Formula verification ledger
+# Formula Verification Ledger
 
-This ledger refers to “draft.md” and “explicit perturbative formulas.md” in the same directory. It distinguishes definitions and quoted covariant identities from derived perturbative claims. The machine checks in this audit used Wolfram Language 14.3 with xAct packages xTensor, xPert, and xTras. The earlier BTZ xCoba component check remains recorded in “../inhomogeneous diffeomorphism charge expansion.md”; the proof below does not depend on that special geometry.
+This ledger refers to “draft.md” and “explicit perturbative formulas.md” in the same directory. It distinguishes definitions and quoted covariant identities from derived perturbative claims. The machine checks in this audit used Wolfram Language 14.3 with xAct packages xTensor, xPert, and xTras. The earlier BTZ xCoba component check remains recorded in “../Inhomogeneous diffeomorphism charge expansion.md”; the proof below does not depend on that special geometry.
 
-## V01. Background geometry and boundary notation
+## V01. Background Geometry and Boundary Notation
 
 - Formula/claim: equations (2.1)--(2.4).
 - Assumptions: unit AdS radius; outward spacelike normal satisfies $n^2=1$; future normal satisfies $\tau^2=-1$.
@@ -17,7 +17,7 @@ This ledger refers to “draft.md” and “explicit perturbative formulas.md”
 - Verification result: accepted as setup data.
 - Draft status: included.
 
-## V02. Matter stress-tensor reduction
+## V02. Matter Stress-Tensor Reduction
 
 - Formula/claim: equations (2.6)--(2.7), and the use of $\xi_\nu T^{\mu\nu}$ as the matter current entering the matching.
 - Assumptions: diffeomorphism-covariant matter; leading matter equation imposed only in Sec. 3.4; fixed non-normalizable sources; zero matter symplectic flux; no independent asymptotic matter or gauge surface charge.
@@ -26,7 +26,7 @@ This ledger refers to “draft.md” and “explicit perturbative formulas.md”
 - Verification result: correct under the listed assumptions. It is not a claim about matter sectors with long-range gauge charge or nonzero boundary sources.
 - Draft status: included with assumptions stated before use.
 
-## V03. Brown--York normalization and background subtraction
+## V03. Brown--York Normalization and Background Subtraction
 
 - Formula/claim: the renormalized action (2.5), Brown--York normalization (2.9)--(2.10), background subtraction (2.11), and (3.39).
 - Assumptions: action normalization $\kappa^2=8\pi G$ and the orientation conventions of the draft.
@@ -35,7 +35,7 @@ This ledger refers to “draft.md” and “explicit perturbative formulas.md”
 - Verification result: the $\kappa^{-2}$ coefficient is common background data and vanishes in the relative charge.
 - Draft status: included.
 
-## V04. Inverse metric through $O(\kappa^3)$
+## V04. Inverse Metric Through $O(\kappa^3)$
 
 - Formula/claim: equation (A.1).
 - Assumptions: matrix perturbation $I+\kappa H+\kappa^2K+\kappa^3P$; indices are moved with $g^{(0)}$.
@@ -50,7 +50,7 @@ I+\kappa H+\kappa^2K+\kappa^3P
 - Verification result: zero residual at every checked order.
 - Draft status: included.
 
-## V05. Volume density through $O(\kappa^3)$
+## V05. Volume Density Through $O(\kappa^3)$
 
 - Formula/claim: equations (A.2)--(A.3).
 - Assumptions: same matrix expansion as V04.
@@ -59,7 +59,7 @@ I+\kappa H+\kappa^2K+\kappa^3P
 - Verification result: zero residual.
 - Draft status: included.
 
-## V06. Gravitational action ordering
+## V06. Gravitational Action Ordering
 
 - Formula/claim: equations (2.15)--(2.16), (2.18)--(2.19), and (A.4)--(A.8).
 - Assumptions: smooth Taylor expansion about $g^{(0)}$; the density is evaluated before integrations by parts.
@@ -70,11 +70,11 @@ F[g^{(0)}+\kappa h+\kappa^2k+\kappa^3p] =F_0+\kappa F_1[h] +\kappa^2\bigl(F_1[k]
 \end{align}$$
 
   Equations (A.6)--(A.8) follow by inserting V04 and V05 into the connection and Ricci definitions.
-- Mathematica/xAct/xCoba check: V04 and V05 check the algebraic coefficients. The quadratic density (A.5) is the previously derived xPert expression in “../perturbation.md”. The coefficient structure itself is an exact Taylor identity.
+- Mathematica/xAct/xCoba check: V04 and V05 check the algebraic coefficients. The quadratic density (A.5) is the previously derived xPert expression in “../Perturbation.md”. The coefficient structure itself is an exact Taylor identity.
 - Verification result: verified as an analytic functional Taylor expansion; the displayed quadratic representative is inherited from the checked project note.
 - Draft status: included.
 
-## V07. Linear matter coupling
+## V07. Linear Matter Coupling
 
 - Formula/claim: equation (2.17).
 - Assumptions: the metric variation of the matter action can be put in Hilbert form (2.6); any integrated matter boundary term has zero asymptotic integral.
@@ -83,7 +83,7 @@ F[g^{(0)}+\kappa h+\kappa^2k+\kappa^3p] =F_0+\kappa F_1[h] +\kappa^2\bigl(F_1[k]
 - Verification result: analytic consequence of the stress-tensor definition.
 - Draft status: included.
 
-## V08. Linearized cosmological Einstein tensor
+## V08. Linearized Cosmological Einstein Tensor
 
 - Formula/claim: equation (A.9).
 - Assumptions: three dimensions, unit AdS radius, and the derivative order displayed in (A.9).
@@ -97,7 +97,7 @@ $$\begin{align}
 - Verification result: zero canonical residual.
 - Draft status: included.
 
-## V09. Second-order Einstein coefficient
+## V09. Second-Order Einstein Coefficient
 
 - Formula/claim:
 
@@ -112,7 +112,7 @@ $$\begin{align}
 - Verification result: zero canonical residual.
 - Draft status: included.
 
-## V10. Variation of $S^{[1]}$ with respect to $h$
+## V10. Variation of $S^{[1]}$ with Respect to $h$
 
 - Formula/claim: equation (2.20).
 - Assumptions: covariant metric variation; stress convention (2.6).
@@ -126,7 +126,7 @@ E_h^{[1]\mu\nu} =-\frac12\bigl(\mathcal E^{(1)\mu\nu}[k] +\mathcal E^{(2)\mu\nu}
 - Verification result: verified.
 - Draft status: included.
 
-## V11. Einstein--Hilbert potential and symplectic form
+## V11. Einstein--Hilbert Potential and Symplectic Form
 
 - Formula/claim: equations (3.1)--(3.2), (3.5)--(3.9), including the compact finite coefficient (3.7a)--(3.7b).
 - Assumptions: the orientation and covariant-metric-variation convention stated in the draft.
@@ -135,7 +135,7 @@ E_h^{[1]\mu\nu} =-\frac12\bigl(\mathcal E^{(1)\mu\nu}[k] +\mathcal E^{(2)\mu\nu}
 - Verification result: accepted as a referenced exact identity. The statement $\delta\Theta^{[-1]}=0$ follows because (3.7) has no field-dependent coefficient.
 - Draft status: included.
 
-## V12. Boundary variation and corner potential
+## V12. Boundary Variation and Corner Potential
 
 - Formula/claim: equations (3.3)--(3.4).
 - Assumptions: spacelike unit normal $n^2=1$; Dirichlet conformal boundary data; counterterm $-\kappa^{-2}\int\sqrt{-\gamma}$.
@@ -144,7 +144,7 @@ E_h^{[1]\mu\nu} =-\frac12\bigl(\mathcal E^{(1)\mu\nu}[k] +\mathcal E^{(2)\mu\nu}
 - Verification result: verified analytically under the stated orientation.
 - Draft status: included.
 
-## V13. Perturbative diffeomorphism vector
+## V13. Perturbative Diffeomorphism Vector
 
 - Formula/claim: equations (3.10)--(3.12).
 - Assumptions: $g^{(0)}$ is held fixed as the expansion point.
@@ -153,7 +153,7 @@ E_h^{[1]\mu\nu} =-\frac12\bigl(\mathcal E^{(1)\mu\nu}[k] +\mathcal E^{(2)\mu\nu}
 - Verification result: verified algebraically.
 - Draft status: included.
 
-## V14. Noether functional, charge definition, and off-shell domain
+## V14. Noether Functional, Charge Definition, and Off-Shell Domain
 
 - Formula/claim: equations (3.13)--(3.16), including (3.14a)--(3.14b).
 - Assumptions: diffeomorphism covariance and allowed asymptotic symmetry, so $\nu_\xi$ vanishes.
@@ -168,7 +168,7 @@ H_\xi=X_\xi\mathbin{\cdot}\theta-\alpha_\xi
 - Verification result: the construction is off shell. No equation or gauge condition appears in Sec. 3.2.
 - Draft status: included.
 
-## V15. Projected derivative identity and exact boundary current
+## V15. Projected Derivative Identity and Exact Boundary Current
 
 - Formula/claim: equations (3.17)--(3.22).
 - Assumptions: $n^2=1$, $D$ is the connection projected to $\Gamma$, and the orientation conventions of the draft.
@@ -186,7 +186,7 @@ $$\begin{align}
 - Verification result: zero residual under $n^2=1$.
 - Draft status: included.
 
-## V16. Surface-tensor expansion
+## V16. Surface-Tensor Expansion
 
 - Formula/claim: equations (3.24), (3.28), and (A.10).
 - Assumptions: exact Einstein--Hilbert Noether surface tensor in the conventions of the project; perturbative inverse metric and volume density from V04--V05.
@@ -205,7 +205,7 @@ $$\begin{align}
 - Verification result: verified by coefficient extraction.
 - Draft status: included.
 
-## V17. $D_1$, $D_2$, and $S_k$ identities
+## V17. $D_1$, $D_2$, and $S_k$ Identities
 
 - Formula/claim: equations (3.29), (A.12)--(A.13).
 - Assumptions: $h_{\mu\nu}$ and $k_{\mu\nu}$ symmetric; antisymmetrization has weight one half.
@@ -218,7 +218,7 @@ $$\begin{align}
 - Verification result: four zero canonical residuals.
 - Draft status: included.
 
-## V18. Selected $S^{[1]}$ surface contribution
+## V18. Selected $S^{[1]}$ Surface Contribution
 
 - Formula/claim: equations (3.26b)--(3.30).
 - Assumptions: $X_\xi^{[-1]}h=\mathcal L_\xi g^{(0)}$ and $X_\xi^{[-1]}k=X_\xi^{[-1]}p=X_\xi^{[-1]}\Psi=0$.
@@ -233,11 +233,11 @@ $$\begin{align}
 - Verification result: the general asymptotic-symmetry current receives (3.27), while the selected extra antisymmetric surface tensor vanishes. In the background-Killing sector, $\mathcal L_\xi g^{(0)}=0$ and (3.27) vanishes as well.
 - Draft status: included.
 
-## V19. Off-shell finite bulk-current structure
+## V19. Off-Shell Finite Bulk-Current Structure
 
 - Formula/claim: equations (3.23)--(3.26a).
 - Assumptions: matter reduction V02 and the perturbative action through $S^{[1]}$.
-- Source/derivation: direct expansion in “../inhomogeneous diffeomorphism charge expansion.md”, sections “Bulk charge by kappa order” and “The selected S[1] contribution.” In particular,
+- Source/derivation: direct expansion in “../Inhomogeneous diffeomorphism charge expansion.md”, sections “Bulk charge by kappa order” and “The selected S[1] contribution.” In particular,
 
 $$\begin{align}
 \frac{\sqrt{-g}}{\sqrt{-g^{(0)}}}g^{\mu\alpha} =g^{(0)\mu\alpha} +\kappa\left(\frac12h\,g^{(0)\mu\alpha}-h^{\mu\alpha}\right) +O(\kappa^2).
@@ -249,7 +249,7 @@ $$\begin{align}
 - Verification result: verified by the cited analytic derivation, with its nontrivial surface identities independently machine checked.
 - Draft status: included.
 
-## V20. Abbott--Deser divergence identity
+## V20. Abbott--Deser Divergence Identity
 
 - Formula/claim: equations (3.32)--(3.33).
 - Assumptions: unit-radius AdS$_3$ and $\xi$ a Killing vector of $g^{(0)}$.
@@ -264,7 +264,7 @@ $$\begin{align}
 - Verification result: zero canonical residual.
 - Draft status: included.
 
-## V21. Constraint reduction and the two matching equations
+## V21. Constraint Reduction and the Two Matching Equations
 
 - Formula/claim: the effective source (1.1), main expansion and result (1.2)--(1.3), and equations (3.31), (3.31a), and (3.35)--(3.38), including the leading comparison (3.36a).
 - Assumptions: only in Sec. 3.4, impose $\mathcal E^{(1)}[h]=0$, $\mathcal E^{(1)}[k]+\mathcal E^{(2)}[h,h]=T$, and the leading matter equations.
@@ -284,7 +284,7 @@ H_\xi^{[-1]}=H_{\xi,T}^{[-1]}, \qquad H_\xi^{[0]}=H_{\xi,T}^{[0]}.
 
 - Draft status: included as the main result.
 
-## V22. Origin of the finite boundary/corner coefficient
+## V22. Origin of the Finite boundary/corner Coefficient
 
 - Formula/claim: equations (3.37)--(3.38).
 - Assumptions: same renormalized action and orientation as V12 and V15.
@@ -293,7 +293,7 @@ H_\xi^{[-1]}=H_{\xi,T}^{[-1]}, \qquad H_\xi^{[0]}=H_{\xi,T}^{[0]}.
 - Verification result: $H_{\xi,\Gamma}^{[0]}$ is fixed by the renormalized action. Expanding the exact form includes the terms lowered from the $O(\kappa)$ boundary action; no adjustable improvement coefficient is introduced.
 - Draft status: included.
 
-## V23. Vacuum cutoff action
+## V23. Vacuum Cutoff Action
 
 - Formula/claim: equations (B.1)--(B.3).
 - Assumptions: global AdS$_3$, radial cutoff $r=R$, per unit coordinate volume in $t$ and $\phi$.
@@ -313,7 +313,7 @@ $$\begin{align}
 - Verification result: the $R^2$ divergence cancels.
 - Draft status: included.
 
-## V24. Brown--Henneaux power counting and flux
+## V24. Brown--Henneaux Power Counting and Flux
 
 - Formula/claim: equations (B.4)--(B.9), including the explicit boundary densities (B.5a).
 - Assumptions: falloffs (2.8), fixed leading boundary metric, sufficiently regular inverse-power expansion, and matter conditions in Sec. 2.2.
@@ -326,7 +326,7 @@ $$\begin{align}
 - Verification result: the action variation, symplectic form, and charge coefficients used in the draft are finite in the stated sector.
 - Draft status: included.
 
-## V25. Algebraic coefficient dictionary through cubic order
+## V25. Algebraic Coefficient Dictionary Through Cubic Order
 
 - Formula/claim: Secs. 2--4 of “explicit perturbative formulas.md”: the inverse metric, volume density, density-weighted inverse metric, scalar-curvature contractions, cosmological Einstein coefficients, and gravitational density through $O(\kappa^3)$.
 - Assumptions: $g^{(0)}$ is nondegenerate; perturbative indices are moved only with $g^{(0)}$; the AdS simplifications use $R^{(0)}_{\mu\nu}=-2g^{(0)}_{\mu\nu}$ and $R^{(0)}=-6$.
@@ -335,17 +335,14 @@ $$\begin{align}
 - Verification result: all displayed algebraic coefficients have zero residual at the stated orders. The $O(\kappa^3)$ Einstein line is direct coefficient multiplication from the already checked Ricci and scalar dictionaries.
 - Companion-note status: included.
 
-## V26. Full connection variation and symplectic-potential coefficients
+## V26. Full Connection Variation and Symplectic-Potential Coefficients
 
 - Formula/claim: Secs. 3.1 and 5.1--5.2 of “explicit perturbative formulas.md”: $C_{(1)}$, $C_{(2)}$, $C_{(3)}$, their field-space variations, and $\Theta^{[-1]}$, $\Theta^{[0]}$, and $\Theta^{[1]}$.
 - Assumptions: the background connection is fixed; $h$, $k$, $p$ and their variations are arbitrary symmetric covariant tensors; no gauge or equation of motion is used.
 - Source/derivation: expand the exact difference
 
 $$\begin{align}
-C^\rho{}_{\mu\nu}=\frac12g^{\rho\lambda}
-\left(\nabla^{(0)}_\mu g_{\lambda\nu}
-+\nabla^{(0)}_\nu g_{\lambda\mu}
--\nabla^{(0)}_\lambda g_{\mu\nu}\right)
+C^\rho{}_{\mu\nu}=\frac12g^{\rho\lambda} \left(\nabla^{(0)}_\mu g_{\lambda\nu} +\nabla^{(0)}_\nu g_{\lambda\mu} -\nabla^{(0)}_\lambda g_{\mu\nu}\right)
 \end{align}$$
 
   and then vary each coefficient. Insert the result and the $P_{(n)}$ coefficients into the exact Einstein--Hilbert potential (3.2).
@@ -353,7 +350,7 @@ C^\rho{}_{\mu\nu}=\frac12g^{\rho\lambda}
 - Verification result: zero residual through the order needed for $\Theta_h^{[1]}$. The selected $\delta k=\delta p=0$ formulas are literal restrictions of the checked general result.
 - Companion-note status: included.
 
-## V27. Gauge-free radial boundary coefficients
+## V27. Gauge-Free Radial Boundary Coefficients
 
 - Formula/claim: Sec. 7 of “explicit perturbative formulas.md”: $N$, $n^\mu$, $\gamma^{ab}$, $\sqrt{-\gamma}$, $K_{ab}$, $K$, $B_{ab}$, $\tau^a$, $\sqrt\sigma$, and the Brown--York charge densities $\mathcal Q_1$ and $\mathcal Q_2$.
 - Assumptions: constant-$r$ timelike boundary in global AdS$_3$; $f=1+r^2>0$; $r>0$; no radial gauge, so radial-tangential perturbations are allowed.
@@ -366,7 +363,7 @@ C^\rho{}_{\mu\nu}=\frac12g^{\rho\lambda}
 - Verification result: all listed boundary series have zero algebraic residual. The formula $K_{ab}=-N\Gamma^r{}_{ab}$ is an exact coordinate identity following from $n_a=0$ and therefore keeps the $h_{ra}$ and $k_{ra}$ terms through $C_{(1,2)}$.
 - Companion-note status: included.
 
-## V28. Boundary-current coefficient identity
+## V28. Boundary-Current Coefficient Identity
 
 - Formula/claim: Sec. 8.3 of “explicit perturbative formulas.md”:
 
@@ -380,15 +377,14 @@ j_{\mathrm{EH},(n)}^\mu+j_{\Gamma,(n)}^\mu=j_{T,(n)}^\mu
 - Mathematica/xAct/xCoba check: at fixed $n$, direct algebra gives
 
 $$\begin{align}
-\frac12(-K_n+2b_n-d_n+z_n)
-+\frac12(-K_n+d_n-z_n)=-K_n+b_n.
+\frac12(-K_n+2b_n-d_n+z_n) +\frac12(-K_n+d_n-z_n)=-K_n+b_n.
 \end{align}$$
 
   The underlying covariant full-field identity has zero residual in V15.
 - Verification result: the equality is coefficientwise and does not use the metric equations. Boundary-volume and corner-measure factors are separate convolutions, explicitly included in Sec. 7.6.
 - Companion-note status: included.
 
-## Open verification boundary
+## Open Verification Boundary
 
 The draft does not claim the following:
 

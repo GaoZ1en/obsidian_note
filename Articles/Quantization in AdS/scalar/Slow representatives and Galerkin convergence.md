@@ -359,7 +359,7 @@ E_N^{(A)}=\max_{0\leq p\leq3}\left|\omega_{p,N}^{(A)}-(0.6+2p)\right|.
 | 64 | 8.918131e-06 | 7.981179e-06 | 1.041985e-05 | 1.787225e-05 |
 | 128 | 9.742558e-07 | 8.718079e-07 | 1.138564e-06 | 2.494061e-06 |
 
-![Maximum error of the lowest four frequencies](scalar_slow_representatives_convergence.svg)
+![Maximum error of the lowest four frequencies](Articles/Quantization%20in%20AdS/scalar/scripts/scalar_slow_representatives_convergence.svg)
 
 Every recorded fixed low frequency decreases with the listed cutoffs and remains above its target. The fractional representative has a larger ground-frequency error and a slower decrease in that error than the three smooth shapes. No universal convergence exponent is inferred from these finite data.
 
@@ -391,7 +391,6 @@ In the positive integral representation, $\alpha$ is the continuous boundary tra
 
 Thus changing the retained fast component of a fixed seed leaves every finite-cutoff eigenvalue unchanged, whereas changing its radial shape can alter the finite spectrum and convergence rate. Neither change alters the limiting alternative tower, provided the representative stays in the same form domain and has nonzero slow trace.
 
-
 ## Reverse Legendre Transform and Its Spectral Limit
 
 The reverse calculation appended to [Scalar mode expansions and boundary conditions](<Scalar mode expansions and boundary conditions.md>) uses the positive boundary term $+\int_{\Gamma_R}\sqrt{-\gamma}\,\Phi(n\cdot\nabla+\Delta)\Phi$. Its variation is $-2(1-\Delta)\alpha\,\delta\beta$ after removing the regulator, so freely varying the response selects $\alpha=0$. This section proves the precise finite-mode statement, including the additional negative eigenvalue. It also proves convergence of the positive constrained implementation.
@@ -407,15 +406,13 @@ q_{\mathrm L}(H,J)&=q(H,J)+2\nu\bigl(\alpha[H]\beta[J]+\beta[H]\alpha[J]\bigr).
 For complex profiles the first factor in each product is conjugated. The earlier cutoff profiles $B_\varepsilon=z^\nu\chi(z/\varepsilon)$ have $\alpha[B_\varepsilon]=0$, $\beta[B_\varepsilon]=1$, and $\|B_\varepsilon\|_q^2=O(\varepsilon^\nu)$. Consequently,
 
 $$\begin{align}
-q_{\mathrm L}(1-B_\varepsilon,1-B_\varepsilon)&\longrightarrow q(1,1)-4\nu,
-\qquad 1-B_\varepsilon\longrightarrow1\quad\text{in }\mathcal V.
+q_{\mathrm L}(1-B_\varepsilon,1-B_\varepsilon)&\longrightarrow q(1,1)-4\nu, \qquad 1-B_\varepsilon\longrightarrow1\quad\text{in }\mathcal V.
 \end{align}$$
 
 Thus $q_{\mathrm L}$ has no continuous extension in the original form norm. More strongly, choose $t_\varepsilon=\varepsilon^{-\nu/4}$. Then $t_\varepsilon B_\varepsilon\to0$ in that norm, but
 
 $$\begin{align}
-q_{\mathrm L}(1-t_\varepsilon B_\varepsilon,1-t_\varepsilon B_\varepsilon)
-&=q(1,1)-4\nu t_\varepsilon+o(1)\longrightarrow-\infty.
+q_{\mathrm L}(1-t_\varepsilon B_\varepsilon,1-t_\varepsilon B_\varepsilon) &=q(1,1)-4\nu t_\varepsilon+o(1)\longrightarrow-\infty.
 \end{align}$$
 
 The kinetic norm tends to $\|1\|_{\mathcal H}$, so there is no lower bound by a fixed multiple of the kinetic norm on this larger regular domain. This is compatible with the positive standard operator: that operator uses the closed form $q|_{\mathcal V_0}$, whereas $q_{\mathrm L}$ here is evaluated before imposing $\alpha=0$.
@@ -427,10 +424,8 @@ In particular, a positive-form argument for adding a slow representative cannot 
 Let $E_n^-$ be the kinetic-normalized transformed alternative modes already constructed above. Write
 
 $$\begin{align}
-\lambda_n^-&=(\Delta+\ell+2n)^2,&
-a_n&=\alpha[E_n^-]=\frac{(\Delta)_n}{n!\sqrt{g_n^-}}>0,\\
-T_N(\lambda)&=\sum_{n=0}^{N-1}\frac{a_n^2}{\lambda_n^--\lambda},&
-T(\lambda)&=\sum_{n=0}^{\infty}\frac{a_n^2}{\lambda_n^--\lambda}.
+\lambda_n^-&=(\Delta+\ell+2n)^2,& a_n&=\alpha[E_n^-]=\frac{(\Delta)_n}{n!\sqrt{g_n^-}}>0,\\
+T_N(\lambda)&=\sum_{n=0}^{N-1}\frac{a_n^2}{\lambda_n^--\lambda},& T(\lambda)&=\sum_{n=0}^{\infty}\frac{a_n^2}{\lambda_n^--\lambda}.
 \end{align}$$
 
 Since the $E_n^-/\sqrt{\lambda_n^-}$ form an orthonormal basis of $(\mathcal V,q)$ and $\alpha$ is bounded there, its dual norm gives
@@ -444,18 +439,14 @@ Therefore $T_N\to T$ locally uniformly away from the alternative poles, and $T'(
 The zeros of $T$ are precisely the standard eigenvalues
 
 $$\begin{align}
-\tau_p&=(2-\Delta+\ell+2p)^2,&
-\lambda_p^-&<\tau_p<\lambda_{p+1}^-.
+\tau_p&=(2-\Delta+\ell+2p)^2,& \lambda_p^-&<\tau_p<\lambda_{p+1}^-.
 \end{align}$$
 
 To prove this identification rather than assume it, take a standard eigenfunction $F_p$ from the earlier fast-mode construction. Its Green identity against $E_n^-$ is
 
 $$\begin{align}
-\lambda_n^-\langle E_n^-,F_p\rangle_{\mathcal H}
-&=\tau_p\langle E_n^-,F_p\rangle_{\mathcal H}
- -2\nu\beta[F_p]a_n,\\
-\langle E_n^-,F_p\rangle_{\mathcal H}
-&=\frac{2\nu\beta[F_p]a_n}{\tau_p-\lambda_n^-}.
+\lambda_n^-\langle E_n^-,F_p\rangle_{\mathcal H} &=\tau_p\langle E_n^-,F_p\rangle_{\mathcal H} -2\nu\beta[F_p]a_n,\\
+\langle E_n^-,F_p\rangle_{\mathcal H} &=\frac{2\nu\beta[F_p]a_n}{\tau_p-\lambda_n^-}.
 \end{align}$$
 
 The slow-mode spectral partial sums converge to $F_p$ in form norm. Taking their continuous slow trace gives
@@ -477,17 +468,14 @@ $$\begin{align}
 The normalization of $\beta$ can always be imposed when it is nonzero. The non-eigen example in the companion calculation is $h=z^\nu(1+z/2)$ in transformed variables. For the proof, no eigenvalue equation for $h$ is assumed. Put
 
 $$\begin{align}
-b_n&=\langle E_n^-,h\rangle_{\mathcal H},&
-g&=\|h\|_{\mathcal H}^2,&k&=q(h,h),\\
+b_n&=\langle E_n^-,h\rangle_{\mathcal H},& g&=\|h\|_{\mathcal H}^2,&k&=q(h,h),\\
 \mathcal U_N&=\operatorname{span}\{h,E_0^-,\ldots,E_{N-1}^-\}.
 \end{align}$$
 
 These spaces are nested and have dimension $N+1$: every finite slow combination has $\beta=0$, while $h$ has $\beta=1$. Slow-mode completeness in the kinetic and form norms, and continuity of $\alpha$, imply
 
 $$\begin{align}
-g&=\sum_{n=0}^{\infty}b_n^2,&
-k&=\sum_{n=0}^{\infty}\lambda_n^-b_n^2,&
-0&=\sum_{n=0}^{\infty}a_nb_n.
+g&=\sum_{n=0}^{\infty}b_n^2,& k&=\sum_{n=0}^{\infty}\lambda_n^-b_n^2,& 0&=\sum_{n=0}^{\infty}a_nb_n.
 \end{align}$$
 
 The last series is absolutely convergent by the same weighted Cauchy–Schwarz estimate. In the ordering $(h,E_0^-,\ldots,E_{N-1}^-)$, the kinetic matrix has blocks $(g,b^T;b,I)$ and the stiffness has diagonal blocks $k,\operatorname{diag}\lambda_n^-$ and mixed entries $\lambda_n^-b_n+2\nu a_n$.
@@ -495,32 +483,22 @@ The last series is absolutely convergent by the same weighted Cauchy–Schwarz e
 For $\lambda$ away from the retained poles, its characteristic determinant is
 
 $$\begin{align}
-\det(K_{\mathrm L,N}-\lambda G_N)
-&=\prod_{n=0}^{N-1}(\lambda_n^--\lambda)\,S_N(\lambda),\\
-S_N(\lambda)
-&=k-\lambda g-\sum_{n=0}^{N-1}
- \frac{\bigl((\lambda_n^--\lambda)b_n+2\nu a_n\bigr)^2}{\lambda_n^--\lambda}.
+\det(K_{\mathrm L,N}-\lambda G_N) &=\prod_{n=0}^{N-1}(\lambda_n^--\lambda)\,S_N(\lambda),\\
+S_N(\lambda) &=k-\lambda g-\sum_{n=0}^{N-1} \frac{\bigl((\lambda_n^--\lambda)b_n+2\nu a_n\bigr)^2}{\lambda_n^--\lambda}.
 \end{align}$$
 
 Define the nonnegative spectral tails $g_N^{\mathrm{tail}}=\sum_{n\geq N}b_n^2>0$ and $k_N^{\mathrm{tail}}=\sum_{n\geq N}\lambda_n^-b_n^2$. Expanding the square yields the useful identity
 
 $$\begin{align}
-S_N(\lambda)
-&=k_N^{\mathrm{tail}}-\lambda g_N^{\mathrm{tail}}
- +4\nu\sum_{n\geq N}a_nb_n-4\nu^2T_N(\lambda),\\
-S_N'(\lambda)
-&=-g_N^{\mathrm{tail}}-4\nu^2\sum_{n=0}^{N-1}
- \frac{a_n^2}{(\lambda_n^--\lambda)^2}<0.
+S_N(\lambda) &=k_N^{\mathrm{tail}}-\lambda g_N^{\mathrm{tail}} +4\nu\sum_{n\geq N}a_nb_n-4\nu^2T_N(\lambda),\\
+S_N'(\lambda) &=-g_N^{\mathrm{tail}}-4\nu^2\sum_{n=0}^{N-1} \frac{a_n^2}{(\lambda_n^--\lambda)^2}<0.
 \end{align}$$
 
 All tails tend to zero. In particular,
 
 $$\begin{align}
-\left|\sum_{n\geq N}a_nb_n\right|
-&\leq\left(\sum_{n\geq N}\frac{a_n^2}{\lambda_n^-}\right)^{1/2}
- \left(k_N^{\mathrm{tail}}\right)^{1/2}\longrightarrow0,\\
-S_N(\lambda)&\longrightarrow-4\nu^2T(\lambda)
-\quad\text{locally uniformly away from the poles}.
+\left|\sum_{n\geq N}a_nb_n\right| &\leq\left(\sum_{n\geq N}\frac{a_n^2}{\lambda_n^-}\right)^{1/2} \left(k_N^{\mathrm{tail}}\right)^{1/2}\longrightarrow0,\\
+S_N(\lambda)&\longrightarrow-4\nu^2T(\lambda) \quad\text{locally uniformly away from the poles}.
 \end{align}$$
 
 ### The Extra Negative Eigenvalue and the Physical Tower
@@ -539,8 +517,7 @@ For each fixed $p$, the zero in $(\lambda_p^-,\lambda_{p+1}^-)$ tends to the uni
 The lowest zero behaves differently. For every fixed $L<\lambda_0^-$, $T(L)>0$, hence $S_N(L)<0$ for all sufficiently large $N$. Since $S_N$ decreases from $+\infty$ on $(-\infty,\lambda_0^-)$, its zero is then below $L$. As $L$ is arbitrary,
 
 $$\begin{align}
-\theta_{0,N}&\longrightarrow-\infty,&
-\theta_{p+1,N}&\longrightarrow\tau_p.
+\theta_{0,N}&\longrightarrow-\infty,& \theta_{p+1,N}&\longrightarrow\tau_p.
 \end{align}$$
 
 There is at most one nonpositive eigenvalue at any cutoff, and exactly one negative eigenvalue for all sufficiently large cutoffs. The remaining eigenvalues are positive by interlacing.
@@ -548,8 +525,7 @@ There is at most one nonpositive eigenvalue at any cutoff, and exactly one negat
 Nestedness also gives monotonicity. The finite-dimensional min–max principle applies on every $\mathcal U_N$ even though the form on their union is not bounded below. Comparing the two finite spaces gives $\theta_{j,N+1}\leq\theta_{j,N}$ at every fixed available index $j$. Combining this with the identified limits proves
 
 $$\begin{align}
-\boxed{\theta_{0,N}\downarrow-\infty,\qquad
-\theta_{p+1,N}\downarrow(2-\Delta+\ell+2p)^2.}
+\boxed{\theta_{0,N}\downarrow-\infty,\qquad \theta_{p+1,N}\downarrow(2-\Delta+\ell+2p)^2.}
 \end{align}$$
 
 In particular, the fixed physical frequencies approach the standard spectrum from above. This theorem holds for every fixed fast representative satisfying the assumptions above, not just the polynomial seed used in the numerical table. It is a statement about stationary spectra with exact matrix elements, not stability of the full finite-time dynamics.
@@ -584,12 +560,11 @@ In the continuum mixed variational formulation, write the independent multiplier
 
 **Verified (analytic proof):** For fixed $0<\Delta<1$, fixed $\ell$, and any fixed finite-form-energy fast representative with $\alpha=0$, $\beta\ne0$ and the stated asymptotics, the raw Legendre restrictions have one eigenvalue escaping to $-\infty$ and every fixed remaining eigenvalue decreases to the standard tower. The proof uses the convergent boundary resolvent sum, finite Schur complements, interlacing and form completeness. Separately, the trace-constrained slow spaces are form-dense in $\mathcal V_0$ and yield a positive convergent approximation.
 
-**Verified (computational support):** xAct/xTras with the full canonicalization and `FullSimplification[]` pipeline gives zero residuals for the bulk scalar variation and both boundary-sign identities. [scalar_reverse_legendre.wl](scalar_reverse_legendre.wl) passes 81 Mathematica checks, including direct seed and cross integrals for $\Delta\in\{3/10,3/5,4/5\}$, $\ell\in\{0,2\}$, $n\leq3$, the renormalized Legendre limit, and symbolic finite Schur determinant/derivative checks. Exact moments followed by 80-digit diagonalization give the recorded spectra at $N=4,8,16,32,64,128$. Repeating the full $N=64$ spectrum with 100 digits changes it by less than $10^{-60}$. The $\ell=1,3$ tests at $\Delta=3/5,N=32$ also approach the angularly shifted standard targets. These finite checks support the formulas; they are not the proof of the infinite-dimensional assertions.
+**Verified (computational support):** xAct/xTras with the full canonicalization and `FullSimplification[]` pipeline gives zero residuals for the bulk scalar variation and both boundary-sign identities. [Scalar_reverse_legendre.wl](scalar_reverse_legendre.wl) passes 81 Mathematica checks, including direct seed and cross integrals for $\Delta\in\{3/10,3/5,4/5\}$, $\ell\in\{0,2\}$, $n\leq3$, the renormalized Legendre limit, and symbolic finite Schur determinant/derivative checks. Exact moments followed by 80-digit diagonalization give the recorded spectra at $N=4,8,16,32,64,128$. Repeating the full $N=64$ spectrum with 100 digits changes it by less than $10^{-60}$. The $\ell=1,3$ tests at $\Delta=3/5,N=32$ also approach the angularly shifted standard targets. These finite checks support the formulas; they are not the proof of the infinite-dimensional assertions.
 
 **Assumptions:** The original counterterm and outward-normal convention, fixed background, regular centre, $0<\Delta<1$, a fixed representative independent of cutoff, and exact restrictions of the displayed forms. At finite $R$ the Legendre term uses $\sqrt{-\gamma}$; its renormalized limit is taken before the mode cutoff is removed.
 
 **Not verified:** Uniform rates in mass, angular momentum or eigenvalue index; BF/logarithmic endpoints; or convergence of the full time evolution of the raw Legendre system. Its diverging negative squared frequency prevents interpreting the complete finite action as a positive oscillator theory. No asymptotic law such as $\theta_{0,N}\sim-cN^2$ is inferred from the numerical table.
-
 
 ## Boundary Response Coordinate and Multiplier Limit
 
@@ -609,18 +584,14 @@ The orthogonality in both pairings follows from the weak alternative eigenvalue 
 Write a field in $\mathcal U_N$ in either of two bases:
 
 $$\begin{align}
-H_N&=b(t)h+\sum_{n<N}q_n(t)E_n^-
- =b(t)r_N+\sum_{n<N}x_n(t)E_n^-,&x_n&=q_n+b_nb,\\
+H_N&=b(t)h+\sum_{n<N}q_n(t)E_n^- =b(t)r_N+\sum_{n<N}x_n(t)E_n^-,&x_n&=q_n+b_nb,\\
 \beta[H_N]&=b,&\alpha[H_N]&=\sum_{n<N}a_nx_n+b\alpha[r_N].
 \end{align}$$
 
 The scalar $b(t)$ is the response coefficient; it is distinct from the fixed overlaps $b_n$. Orthogonality removes all mixed terms from the original kinetic and potential forms. The Legendre term remains, giving the exact expression
 
 $$\begin{align}
-L_N^{\mathrm L}
-&=\frac12\sum_{n<N}(\dot x_n^2-\lambda_n^-x_n^2)
- +\frac{g_N^{\mathrm{tail}}}{2}\dot b^2-\frac{d_N}{2}b^2
- -2\nu b\sum_{n<N}a_nx_n,\\
+L_N^{\mathrm L} &=\frac12\sum_{n<N}(\dot x_n^2-\lambda_n^-x_n^2) +\frac{g_N^{\mathrm{tail}}}{2}\dot b^2-\frac{d_N}{2}b^2 -2\nu b\sum_{n<N}a_nx_n,\\
 d_N&=k_N^{\mathrm{tail}}+4\nu\alpha[r_N]\longrightarrow0.
 \end{align}$$
 
@@ -628,7 +599,8 @@ Equivalently, the coordinate change is the congruence with $\mathsf U_N=\left(\b
 
 $$\begin{align}
 \mathsf U_N^TK_{\mathrm L,N}\mathsf U_N
-&=\begin{pmatrix}d_N&2\nu a^T\\2\nu a&\operatorname{diag}(\lambda_n^-)\end{pmatrix}.
+&=\begin{pmatrix}d_N&2\nu a^T\\
+2\nu a&\operatorname{diag}(\lambda_n^-)\end{pmatrix}.
 \end{align}$$
 
 No equation of motion or large-cutoff approximation was used in this transformation.
@@ -638,7 +610,8 @@ No equation of motion or large-cutoff approximation was used in this transformat
 Restrict the potential form to the response coordinate and one fixed alternative mode, for example $E_0^-$. Its determinant is
 
 $$\begin{align}
-\det\begin{pmatrix}d_N&2\nu a_0\\2\nu a_0&\lambda_0^-\end{pmatrix}
+\det\begin{pmatrix}d_N&2\nu a_0\\
+2\nu a_0&\lambda_0^-\end{pmatrix}
 &=d_N\lambda_0^--4\nu^2a_0^2\longrightarrow-4\nu^2a_0^2<0.
 \end{align}$$
 
@@ -647,18 +620,14 @@ Thus sufficiently large cutoffs have a negative potential direction, while the k
 For a real eigenprofile with $\theta=\omega^2<0$,
 
 $$\begin{align}
-0>\theta\|H_N\|_{\mathcal H}^2
-&=q_{\mathrm L}(H_N,H_N)
- =q(H_N,H_N)+4\nu\alpha[H_N]\beta[H_N],\\
+0>\theta\|H_N\|_{\mathcal H}^2 &=q_{\mathrm L}(H_N,H_N) =q(H_N,H_N)+4\nu\alpha[H_N]\beta[H_N],\\
 \alpha[H_N]\beta[H_N]&<0.
 \end{align}$$
 
 The harmonic coefficient equations also identify the mixing explicitly:
 
 $$\begin{align}
-x_n&=-\frac{2\nu a_nb}{\lambda_n^--\theta},&
-\frac{\alpha[H_N]}{\beta[H_N]}
-&=\alpha[r_N]-2\nu T_N(\theta).
+x_n&=-\frac{2\nu a_nb}{\lambda_n^--\theta},& \frac{\alpha[H_N]}{\beta[H_N]} &=\alpha[r_N]-2\nu T_N(\theta).
 \end{align}$$
 
 Here $T_N(\theta)$ is the boundary resolvent sum defined earlier. A negative eigenvector necessarily has $b\ne0$. It couples a nonzero response to an opposite-sign slow trace. This identifies its boundary data without claiming pointwise localization or a continuum limit of its normalized profile.
@@ -668,8 +637,7 @@ Here $T_N(\theta)$ is the boundary resolvent sum defined earlier. A negative eig
 The exact response equation and its momentum are
 
 $$\begin{align}
-g_N^{\mathrm{tail}}\ddot b+d_Nb+2\nu\sum_{n<N}a_nx_n&=0,&
-p_b&=g_N^{\mathrm{tail}}\dot b.
+g_N^{\mathrm{tail}}\ddot b+d_Nb+2\nu\sum_{n<N}a_nx_n&=0,& p_b&=g_N^{\mathrm{tail}}\dot b.
 \end{align}$$
 
 For a sequence of solutions on a fixed time interval with $b_N$, $\dot b_N$ and $\ddot b_N$ uniformly bounded, this equation implies
@@ -689,8 +657,7 @@ The interpretation is therefore specific: $b$ parametrizes a boundary response o
 The two directions start from different closures in the same energy topology:
 
 $$\begin{align}
-\overline{\operatorname{span}\{F_n\}}^{\|\cdot\|_q}&=\mathcal V_0=\ker\alpha,&
-\overline{\operatorname{span}\{E_n^-\}}^{\|\cdot\|_q}&=\mathcal V.
+\overline{\operatorname{span}\{F_n\}}^{\|\cdot\|_q}&=\mathcal V_0=\ker\alpha,& \overline{\operatorname{span}\{E_n^-\}}^{\|\cdot\|_q}&=\mathcal V.
 \end{align}$$
 
 For a forward slow representative $\eta$ with $\alpha[\eta]=1$, the trace bound $|\alpha[H]|\leq C\|H\|_q$ gives

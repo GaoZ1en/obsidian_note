@@ -203,8 +203,7 @@ $$\begin{align}
 The cubic term obtained from this formula is exactly the $p=0$ specialization of the existing metric charge:
 
 $$\begin{align}
-H_{0,1} =-\frac{i}{6}
-\sum_{\substack{|k|,|l|,|m|\geq2\\
+H_{0,1} =-\frac{i}{6} \sum_{\substack{|k|,|l|,|m|\geq2\\
 k+l+m=0}} z_kz_lz_mD_k\,m(l-m).
 \end{align}$$
 

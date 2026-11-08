@@ -4,7 +4,7 @@ date: 2026-06-02
 summary: "Expands pure Einstein gravity around global AdS3 with a bulk stress tensor source, recording xPert conventions, geometric perturbations, the bulk action, and perturbative equations of motion."
 ---
 
-# Pure gravity perturbation in global AdS$_3$
+# Pure Gravity Perturbation in Global AdS$_3$
 
 We work in global AdS$_3$ with unit AdS radius,
 
@@ -38,9 +38,9 @@ $$\begin{align}
 h_i=g^{(0)\mu\nu}h^{(i)}_{\mu\nu},\qquad h_i{}^\mu{}_\nu=g^{(0)\mu\rho}h^{(i)}_{\rho\nu}.
 \end{align}$$
 
-## xPert convention
+## xPert Convention
 
-xPert uses the Taylor convention
+XPert uses the Taylor convention
 
 $$\begin{align}
 g_{\mu\nu}(\epsilon) =g^{(0)}_{\mu\nu} +\epsilon\,\delta g_{\mu\nu} +\frac{\epsilon^2}{2}\delta^2g_{\mu\nu} +O(\epsilon^3).
@@ -93,7 +93,7 @@ einstein2 = coeff2[einsteinExpr];
 
 After expanding, impose the AdS$_3$ background curvature rules above. The second rule in `xpToHere`, together with the factor `1/2` in `coeff2`, is the only place where the xPert Taylor convention differs from the expansion used here.
 
-## Geometric expansion
+## Geometric Expansion
 
 The inverse metric is
 
@@ -183,7 +183,7 @@ $$\begin{align}
 R^{(2)}[h^{(1)},h^{(1)}] &=g^{(0)\mu\nu}R^{(2)}_{\mu\nu}[h^{(1)},h^{(1)}] -h_1^{\mu\nu}R^{(1)}_{\mu\nu}[h^{(1)}] -2h^{(1)}_{\mu\nu}h_1^{\mu\nu}.
 \end{align}$$
 
-## Bulk action
+## Bulk Action
 
 At the level of the action, after discarding total-derivative terms in the quadratic coefficient, write
 
@@ -221,7 +221,7 @@ S_{\mathrm{bulk}} &=\frac{1}{2\kappa^2}\int_M\mathrm{d}^3x\sqrt{-g^{(0)}} \left[
 
 The terms involving $\mathcal{L}^{(1)}$ and the discarded total derivative are boundary terms. The non-trivial bulk quadratic action for the first-order graviton is represented by the $\mathcal{L}^{(2)}[h^{(1)}]$ term.
 
-## Equations of motion with a bulk source
+## Equations of Motion with a Bulk Source
 
 Define
 

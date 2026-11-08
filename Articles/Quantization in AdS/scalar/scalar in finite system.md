@@ -482,8 +482,7 @@ A_{m}(\omega)&=D_{m}(\omega)\left(2\psi(1)-\psi(a)-\psi(b)\right).
 The radial boundary form of two such solutions is proportional to
 
 $$\begin{align}
-\lim_{r\to\infty}r(1+r^{2})\left(R_{1}^{*}\partial_{r}R_{2}-\partial_{r}R_{1}^{*}R_{2}\right)
-&=A_{1}^{*}C_{2}-C_{1}^{*}A_{2}.
+\lim_{r\to\infty}r(1+r^{2})\left(R_{1}^{*}\partial_{r}R_{2}-\partial_{r}R_{1}^{*}R_{2}\right) &=A_{1}^{*}C_{2}-C_{1}^{*}A_{2}.
 \end{align}$$
 
 Consequently the real linear self-adjoint family at the BF point can be written as
@@ -520,9 +519,7 @@ $$\begin{align}
 Equivalently, the finite-wall boundary action is
 
 $$\begin{align}
-S_{\Gamma_{r_{0}}}^{(\kappa)}
-&=-\frac{1}{2}\int_{\Gamma_{r_{0}}}\mathrm{d}^{2}x\sqrt{-\gamma}
-\left(1-\frac{1}{\log r_{0}+\kappa}\right)\phi^{2}.
+S_{\Gamma_{r_{0}}}^{(\kappa)} &=-\frac{1}{2}\int_{\Gamma_{r_{0}}}\mathrm{d}^{2}x\sqrt{-\gamma} \left(1-\frac{1}{\log r_{0}+\kappa}\right)\phi^{2}.
 \end{align}$$
 
 The no-log construction is the special endpoint $\displaystyle{\lambda=0}$. A nonzero fixed wall coefficient does not directly define a finite $\displaystyle{\kappa}$ limit: the logarithm forces the Robin coefficient to run. Although ordinary bulk roots for some fixed-wall choices can approach no-log roots, that observation alone does not prove operator-level convergence because cutoff-localized modes must also be controlled.
@@ -532,9 +529,7 @@ The no-log construction is the special endpoint $\displaystyle{\lambda=0}$. A no
 For finite $\displaystyle{\kappa}$, the limiting normal frequencies satisfy
 
 $$\begin{align}
-\boxed{\kappa=\psi(1)-\frac{1}{2}\left[
-\psi\left(\frac{q+1-\omega}{2}\right)
-+\psi\left(\frac{q+1+\omega}{2}\right)\right]}.
+\boxed{\kappa=\psi(1)-\frac{1}{2}\left[ \psi\left(\frac{q+1-\omega}{2}\right) +\psi\left(\frac{q+1+\omega}{2}\right)\right]}.
 \end{align}$$
 
 In the endpoint $\displaystyle{\kappa=\infty}$, $\displaystyle{C=0}$ and the gamma-function zeros reproduce

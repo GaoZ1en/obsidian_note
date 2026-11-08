@@ -4,7 +4,7 @@ date: 2026-07-12
 summary: "A gauge-free coefficient dictionary for the metric, curvature, action, covariant phase-space data, Noether currents, and radial boundary geometry used in the second-order AdS3 charge-matching draft."
 ---
 
-# Explicit perturbative formulas
+# Explicit Perturbative Formulas
 
 This note is a calculation companion to “draft.md” in the same directory. Its purpose is to expose the coefficient formulas that are abbreviated there, so that every step can be checked or modified by hand. All formulas are off shell unless a constraint is explicitly displayed, and no gauge condition is imposed on $h_{mu\nu}$, $k_{mu\nu}$, or $p_{mu\nu}$.
 
@@ -16,7 +16,7 @@ H_\xi=X_\xi\mathbin{\cdot}\theta-\alpha_\xi.
 
 No alternative surface-form definition is introduced in this note.
 
-## 1. Background and notation
+## 1. Background and Notation
 
 Set the AdS radius to one and write
 
@@ -49,9 +49,9 @@ $$
 
 Antisymmetrization has weight one half. The notation $[\kappa^n]F$ means the coefficient of $\kappa^n$ in $F$.
 
-## 2. Algebraic metric expansions
+## 2. Algebraic Metric Expansions
 
-### 2.1 Inverse metric
+### 2.1 Inverse Metric
 
 Write
 
@@ -70,7 +70,7 @@ q_{(3)}^{\mu\nu}&=-p^{\mu\nu}+(hk)^{\mu\nu}+(kh)^{\mu\nu}-(h^3)^{\mu\nu}.
 
 Thus $\sum_{r+s=n}q_{(r)}^{\mu\rho}g^{(s)}_{\rho\nu}=0$ for $n\geq1$, where $g^{(0)}_{\mu\nu}$, $g^{(1)}_{\mu\nu}=h_{\mu\nu}$, $g^{(2)}_{\mu\nu}=k_{\mu\nu}$, and $g^{(3)}_{\mu\nu}=p_{\mu\nu}$.
 
-### 2.2 Volume density
+### 2.2 Volume Density
 
 The expansion
 
@@ -92,7 +92,7 @@ $$\begin{align}
 v_3=\frac12\operatorname{tr}p +\frac14(\operatorname{tr}h)(\operatorname{tr}k) -\frac12\operatorname{tr}(hk) +\frac1{48}(\operatorname{tr}h)^3 -\frac18(\operatorname{tr}h)\operatorname{tr}(h^2) +\frac16\operatorname{tr}(h^3).
 \end{align}$$
 
-### 2.3 Density-weighted inverse metric
+### 2.3 Density-Weighted Inverse Metric
 
 Define
 
@@ -110,9 +110,9 @@ P_{(3)}^{\mu\nu}&=v_3g^{(0)\mu\nu}-v_2h^{\mu\nu} +v_1\left((h^2)^{\mu\nu}-k^{\mu
 &\quad-p^{\mu\nu}+(hk)^{\mu\nu}+(kh)^{\mu\nu}-(h^3)^{\mu\nu}.
 \end{aligned}$$
 
-## 3. Connection and curvature
+## 3. Connection and Curvature
 
-### 3.1 Connection difference
+### 3.1 Connection Difference
 
 For any symmetric covariant tensor $u_{\mu\nu}$, define the background-linear connection operator
 
@@ -137,7 +137,7 @@ C_{(3)}^\rho{}_{\mu\nu} &=\mathscr C[p]^\rho{}_{\mu\nu} -h^\rho{}_{\lambda}\math
 
 These formulas include all $h$--$k$ mixing and require no coordinate or gauge specialization.
 
-### 3.2 Riemann and Ricci tensors
+### 3.2 Riemann and Ricci Tensors
 
 With the convention
 
@@ -162,7 +162,7 @@ R^{(3)}_{\mu\nu} &=\nabla^{(0)}_\rho C_{(3)}^\rho{}_{\mu\nu} -\nabla^{(0)}_\nu C
 &\quad-C_{(1)}^\rho{}_{\nu\lambda}C_{(2)}^\lambda{}_{\mu\rho} -C_{(2)}^\rho{}_{\nu\lambda}C_{(1)}^\lambda{}_{\mu\rho}.
 \end{aligned}$$
 
-### 3.3 Scalar curvature
+### 3.3 Scalar Curvature
 
 Write $R=R^{(0)}+\sum_{n=1}^3\kappa^n\mathcal R^{(n)}+O(\kappa^4)$. Then
 
@@ -182,7 +182,7 @@ $$\begin{aligned}
 &\quad+2p-4hk+2h_3.
 \end{aligned}$$
 
-### 3.4 Cosmological Einstein tensor
+### 3.4 Cosmological Einstein Tensor
 
 Define
 
@@ -219,9 +219,9 @@ $$\begin{align}
 T_{(h)\mu\nu}:=-\mathcal E^{(2)}_{\mu\nu}[h,h].
 \end{align}$$
 
-## 4. Perturbative action
+## 4. Perturbative Action
 
-### 4.1 Gravitational density
+### 4.1 Gravitational Density
 
 Let
 
@@ -279,7 +279,7 @@ $$\begin{align}
 S_{\mathrm{EH}} =\int_M\!\epsilon_0\left( \frac{\ell_0}{2\kappa^2}+\frac{\ell_1}{2\kappa} +\frac{\ell_2}{2}+\frac{\kappa\ell_3}{2} \right)+O(\kappa^2).
 \end{align}$$
 
-### 4.2 General matter sector
+### 4.2 General Matter Sector
 
 For a general diffeomorphism-covariant matter action, the model-independent information is
 
@@ -299,9 +299,9 @@ $$\begin{align}
 E_h^{[1]\mu\nu} =-\frac12\left( \mathcal E^{(1)\mu\nu}[k] +\mathcal E^{(2)\mu\nu}[h,h]-T^{\mu\nu} \right).
 \end{align}$$
 
-## 5. First variation and symplectic data
+## 5. First Variation and Symplectic Data
 
-### 5.1 Variations of the connection coefficients
+### 5.1 Variations of the Connection Coefficients
 
 Let $\delta C_{(n)}$ denote the field-space variation of $C_{(n)}$. The coefficients needed through $\Theta^{[1]}$ are
 
@@ -314,7 +314,7 @@ $$\begin{aligned}
 \mathscr C[\delta h]^\lambda{}_{\mu\nu}.
 \end{aligned}$$
 
-### 5.2 Einstein--Hilbert symplectic potential
+### 5.2 Einstein--Hilbert Symplectic Potential
 
 The exact convention is
 
@@ -356,7 +356,7 @@ $$\begin{aligned}
 
 Substituting these two lines into the displayed formula for $\Theta^{[1]}$ gives $\Theta_h^{[1]\mu}[\delta h]$ with every $h^2\delta h$ and $k\delta h$ term retained.
 
-### 5.3 Finite gravitational symplectic current
+### 5.3 Finite Gravitational Symplectic Current
 
 For field-space one-forms, define
 
@@ -380,9 +380,9 @@ $$\begin{align}
 
 Here $\delta\boldsymbol C_\Gamma^{[0]}$ denotes the field-space exterior derivative, evaluated on the ordered pair of variations.
 
-## 6. Diffeomorphisms and Noether coefficients
+## 6. Diffeomorphisms and Noether Coefficients
 
-### 6.1 Perturbative field-space vector
+### 6.1 Perturbative Field-Space Vector
 
 For any covariant perturbation $u_{\mu\nu}$,
 
@@ -411,7 +411,7 @@ $$
 
 All omitted contractions of $X_\xi^{[-1]}$ vanish.
 
-### 6.2 The $\alpha_\xi$ coefficients
+### 6.2 The $\alpha_\xi$ Coefficients
 
 For the bulk Lagrangian,
 
@@ -441,7 +441,7 @@ H_{\xi,\mathrm{bulk}} &=\int_\Sigma\left[ X_\xi\mathbin{\cdot}(\boldsymbol\Theta
 H_{\xi,\Gamma} &=\int_{C_R}\left( \boldsymbol\mu_\xi-X_\xi\mathbin{\cdot}\boldsymbol C_\Gamma \right).
 \end{aligned}$$
 
-### 6.3 Antisymmetric surface tensors
+### 6.3 Antisymmetric Surface Tensors
 
 Define
 
@@ -471,8 +471,7 @@ D_{2,\xi}^{\mu\nu} &=h^\mu{}_{\lambda}h^{\lambda\rho}\nabla^{(0)}_\rho\xi^\nu -h
 \mathscr C[h]^\lambda{}_{\rho\sigma}\xi^\sigma.
 \end{aligned}$$
 
-In the last line we used the pure-$h$ coefficient
-$C_{(2)}[h,h]^\nu{}_{\rho\sigma}=-h^\nu{}_{\lambda}\mathscr C[h]^\lambda{}_{\rho\sigma}$ explicitly. Then
+In the last line we used the pure-$h$ coefficient $C_{(2)}[h,h]^\nu{}_{\rho\sigma}=-h^\nu{}_{\lambda}\mathscr C[h]^\lambda{}_{\rho\sigma}$ explicitly. Then
 
 $$\begin{aligned}
 S_{\xi,h}^{\mu\nu} &=s_2\nabla^{(0)[\mu}\xi^{\nu]} +\frac12hD_{1,\xi}^{[\mu\nu]}+D_{2,\xi}^{[\mu\nu]},\\
@@ -496,7 +495,7 @@ D_{1,\xi}^{[\mu\nu]}=\frac12A_\xi^{(1)\mu\nu}[h], \qquad D_{2,\xi}^{[\mu\nu]}=\f
 
 show that the selected inhomogeneous contraction adds no independent antisymmetric Einstein--Hilbert surface tensor.
 
-### 6.4 Off-shell local bulk currents
+### 6.4 Off-Shell Local Bulk Currents
 
 After subtracting the background coefficient,
 
@@ -532,11 +531,11 @@ $$\begin{align}
 
 It vanishes for a background Killing field but has been retained here for checking the off-shell asymptotic-symmetry calculation.
 
-## 7. Radial boundary geometry
+## 7. Radial Boundary Geometry
 
 Let $\Gamma_R$ be the timelike surface $r=R$, with tangential indices $a,b\in\{t,\phi\}$. No radial gauge is imposed, so $h_{ra}$ and $k_{ra}$ are retained.
 
-### 7.1 Outward unit normal
+### 7.1 Outward Unit Normal
 
 The exact outward normal is
 
@@ -568,7 +567,7 @@ n_{(2)}^r&=\frac{(h^2)^{rr}-k^{rr}}{2\sqrt f} -\frac{(h^{rr})^2}{8f^{3/2}}, &n_{
 
 These expressions satisfy $n_\mu n^\mu=1$ through $O(\kappa^2)$ without setting $h_{ra}$ to zero.
 
-### 7.2 Induced metric and boundary volume
+### 7.2 Induced Metric and Boundary Volume
 
 The pullback metric is
 
@@ -604,7 +603,7 @@ $$\begin{align}
 \sqrt{-\gamma} =r\sqrt f\left[ 1+\frac\kappa2h_\partial +\kappa^2\left( \frac12k_\partial+\frac18h_\partial^2-\frac14h_{\partial,2} \right) \right]+O(\kappa^3).
 \end{align}$$
 
-### 7.3 Extrinsic curvature
+### 7.3 Extrinsic Curvature
 
 For a constant-$r$ surface, $n_a=0$ exactly, so
 
@@ -650,7 +649,7 @@ K^{(1)} &=\gamma^{(0)ab}K^{(1)}_{ab}-h_{\parallel}^{ab}K^{(0)}_{ab},\\
 K^{(2)} &=\gamma^{(0)ab}K^{(2)}_{ab}-h_{\parallel}^{ab}K^{(1)}_{ab} +\left(h_{\parallel}^a{}_ch_{\parallel}^{cb}-k_{\parallel}^{ab}\right)K^{(0)}_{ab}.
 \end{aligned}$$
 
-### 7.4 Brown--York tensor coefficients
+### 7.4 Brown--York Tensor Coefficients
 
 Define the unscaled Brown--York bracket
 
@@ -668,7 +667,7 @@ B^{(2)}_{ab} &=K^{(2)}_{ab}-K^{(2)}\gamma^{(0)}_{ab} -K^{(1)}h_{ab}-K^{(0)}k_{ab
 
 The stress tensor is $\mathcal T_{ab}=\kappa^{-2}B_{ab}$. Relative subtraction removes the full background charge, but perturbations of the corner measure and time normal multiplying $B^{(0)}_{ab}$ must still be retained.
 
-### 7.5 Future normal and corner measure
+### 7.5 Future Normal and Corner Measure
 
 On the $t={\rm const.}$ corner inside $\Gamma_R$, set
 
@@ -702,7 +701,7 @@ $$\begin{align}
 \sqrt\sigma =r\left(1+\kappa s_1+\kappa^2s_2\right)+O(\kappa^3), \qquad s_1=\frac{h_{\phi\phi}}{2r^2}, \qquad s_2=\frac{k_{\phi\phi}}{2r^2}-\frac{h_{\phi\phi}^2}{8r^4}.
 \end{align}$$
 
-### 7.6 Explicit Brown--York charge coefficients
+### 7.6 Explicit Brown--York Charge Coefficients
 
 For fixed contravariant $\xi^a$, define
 
@@ -729,9 +728,9 @@ H_{\xi,T}^{[0]}&=-\lim_{R\to\infty}\int_0^{2\pi}\!\mathrm d\phi\,\mathcal Q_2.
 
 These formulas make the measure and normal corrections at finite order explicit.
 
-## 8. Corner potential and boundary-current coefficients
+## 8. Corner Potential and Boundary-Current Coefficients
 
-### 8.1 Projector coefficients
+### 8.1 Projector Coefficients
 
 For use in the covariant boundary expressions, define the full projector
 
@@ -748,7 +747,7 @@ $$\begin{aligned}
 
 For tangential components, $\Pi_{(n)}^{ab}=\bar q_{(n)}^{ab}$.
 
-### 8.2 Corner potential
+### 8.2 Corner Potential
 
 Suppressing the boundary volume-form factor, write
 
@@ -768,7 +767,7 @@ c^{[1]\mu} &=-\frac12\bigg[ \Pi_{(0)}^{\mu\nu}n_{(0)}^\rho\delta p_{\nu\rho} +\P
 
 The coefficients of the actual one-form $\boldsymbol C_\Gamma$ are obtained by the additional convolution with the expansion of $\epsilon_\Gamma$. For $X_\xi\mathbin{\cdot}\boldsymbol C_\Gamma$, substitute the exact variation $\delta g=\mathcal L_\xi g$ before extracting powers of $\kappa$; this is what retains the order-lowered terms from $X_\xi^{[-1]}$.
 
-### 8.3 Boundary descent, Einstein--Hilbert, and Brown--York currents
+### 8.3 Boundary Descent, Einstein--Hilbert, and Brown--York Currents
 
 To expand the exact boundary currents, introduce
 
@@ -822,7 +821,7 @@ j_{\mathrm{EH},(n)}^\mu+j_{\Gamma,(n)}^\mu =j_{T,(n)}^\mu.
 
 The vector-current coefficients above must still be convolved with the boundary volume form when integrated. The explicit Brown--York charge formulas in Sec. 7.6 already perform the corresponding corner-measure convolution.
 
-## 9. Constraint reduction and matching coefficients
+## 9. Constraint Reduction and Matching Coefficients
 
 Only in this section impose
 
@@ -864,7 +863,7 @@ $$\begin{align}
 H_\xi^{[-1]}=H_{\xi,T}^{[-1]}, \qquad H_\xi^{[0]}=H_{\xi,T}^{[0]}.
 \end{align}$$
 
-## 10. Suggested manual-check order
+## 10. Suggested Manual-Check Order
 
 For a direct calculation with arbitrary $h$, $k$, and $p$, the shortest dependency chain is:
 

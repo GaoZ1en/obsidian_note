@@ -66,7 +66,7 @@ Amsel--Marolf use the inward normal associated with a defining function. Their l
 - [08-so23-representation.md](08-so23-representation.md): lowest weights, level multiplicities, Casimir, level-one boost matrix element, and second quantization.
 - [09-special-points.md](09-special-points.md): $m=0$ and the $m\to1/2$ Di endpoint.
 - [10-comparison-with-scalar.md](10-comparison-with-scalar.md): precise comparison with the uploaded scalar manuscript.
-- [verification/CLAIM_LEDGER.md](verification/CLAIM_LEDGER.md): claim-by-claim status and evidence.
+- [verification/CLAIM_LEDGER.md](Articles/Quantization%20in%20AdS/fermion/verification/CLAIM_LEDGER.md): claim-by-claim status and evidence.
 - [verification/modes-and-representation.wl](verification/modes-and-representation.wl): exact Section 01-to-radial $\kappa$ bridge, Jacobi first-order residuals, spectra, norms, and representation checks.
 - [verification/noether-time-translation.wl](verification/noether-time-translation.wl): time-Kosmann cancellation, one-mode Noether eigenvalues, particle/antiparticle ordering, and Hamiltonian/$U(1)$ generator signs.
 - [literature/README.md](literature/README.md): provenance map and limits of each source.

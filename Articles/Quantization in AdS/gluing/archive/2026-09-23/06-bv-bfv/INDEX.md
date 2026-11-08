@@ -6,7 +6,7 @@
 
 ## 笔记
 
-- [README.md](<README.md>)
+- [README.md](<Articles/Quantization in AdS/gluing/archive/2026-09-23/06-bv-bfv/README.md>)
 - [TODO.md](<TODO.md>)
 - [bulk_boundary_source_release.md](<bulk_boundary_source_release.md>)
 - [checks/bulk_source_release_verification.md](<checks/bulk_source_release_verification.md>)

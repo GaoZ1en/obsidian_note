@@ -52,8 +52,7 @@ Remark. Only causal curves can represent physical signal/worldline propagation.
 
 ### 2.1 Basic Relations
 
-**Definition 2.1 (Chronological / causal)**. For $p,q \in M$:
-$p \ll q$ if some timelike curve joins $p$ to $q$; $p < q$ if some causal curve joins them; $p \le q$ if $p<q$ or $p=q$.
+**Definition 2.1 (Chronological / causal)**. For $p,q \in M$: $p \ll q$ if some timelike curve joins $p$ to $q$; $p < q$ if some causal curve joins them; $p \le q$ if $p<q$ or $p=q$.
 
 **Definition 2.2 (Future/past sets)**.
 
