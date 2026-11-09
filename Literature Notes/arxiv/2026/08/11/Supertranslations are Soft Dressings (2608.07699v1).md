@@ -16,19 +16,19 @@ tags: []
 
 Daily overview: [[2026_08_11_overview]]
 
-## Why this is high priority
+## Why This Is High Priority
 
 Reason codes: `T1-symmetry`, `T1-charge`, `T1-boundary`.
 
 The paper gives an unusually explicit bridge among three languages that often remain separate: coherent infrared dressings of asymptotic states, large-gauge/BMS transformations at null infinity, and changes of classical scattering data. Its most reusable result for the vault is not merely the slogan that soft dressings are supertranslations, but the construction of a complete conserved charge
 
-$$
+$$\begin{align}
 Q[T]=Q_s[T]+Q_h[T],
-$$
+\end{align}$$
 
 including exact hard matter terms and their action on a resummed eikonal state. This is directly relevant to asymptotic charges, boundary data, and the distinction between a frame-dependent radiative observable and a frame-independent total charge.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 - Essential conceptual route: Sections 2, 3, 4.1, 4.4, 5, and 7.
 - Essential calculation for gravitational scattering: Sections 6.1--6.5.
@@ -38,9 +38,9 @@ including exact hard matter terms and their action on a resummed eikonal state. 
 
 The TeX source contains a long block after the compiled appendices marked by `\iffalse` and titled “to be removed.” It is scratch material, not a section of the 59-page paper, and is excluded from the section tree and claims below.
 
-## Complete source map
+## Complete Source Map
 
-### Cluster I: dressing data and asymptotic fields
+### Cluster I: Dressing Data and Asymptotic Fields
 
 1. **Introduction.** States the proposed equivalence among zero-energy coherent dressings, large transformations, and a displacement of scattering data. It also introduces the canonical/intrinsic Bondi-frame problem.
 2. **Dressing massive particles with zero-energy fields.** Defines the coherent state and the distributional zero-frequency profile; scalar theory, QED, and gravity are treated in parallel.
@@ -51,7 +51,7 @@ The TeX source contains a long block after the compiled appendices marked by `\i
    - 3.1 General dressing: relates coherent-state expectation values to the asymptotic metric.
    - 3.2 Canonical versus intrinsic frame: compares boosted Schwarzschild in Kerr-Schild and de Donder descriptions.
 
-### Cluster II: completion to a conserved charge
+### Cluster II: Completion to a Conserved Charge
 
 4. **The charge corresponding to soft dressing.** Requires the dressing operator to commute with the scattering matrix after completion by hard terms.
    - 4.1 General structure: separates soft, massless-hard, and massive-hard contributions.
@@ -59,7 +59,7 @@ The TeX source contains a long block after the compiled appendices marked by `\i
    - 4.3 Matter hard charge: evaluates massive external-leg contributions.
    - 4.4 Interpretation: shows that conjugation by the complete charge shifts retarded time by the same angular function.
 
-### Cluster III: scattering data and canonical/intrinsic charges
+### Cluster III: Scattering Data and canonical/intrinsic Charges
 
 5. **Eikonal final state and BMS dependence of impact parameter.** Applies the charge to a conservative two-body eikonal state and identifies a translation of the impact parameter.
 6. **Canonical-to-intrinsic frame connection.** Chooses the dressing fixed by the three-point amplitude and keeps the exact momentum-transfer dependence.
@@ -75,7 +75,7 @@ The TeX source contains a long block after the compiled appendices marked by `\i
 - **Appendix A: Rudiments of BMS.** Fixes Bondi gauge, falloffs, shear transformation, mass loss, and the charge normalization used in the main text.
 - **Appendix B: Integrals for general dressing.** Derives the sphere master integral for both null and timelike momenta, including an excised-cap analysis of the null endpoint.
 
-## Conventions and notation dictionary
+## Conventions and Notation Dictionary
 
 | Symbol | Meaning and convention |
 |---|---|
@@ -99,183 +99,163 @@ The TeX source contains a long block after the compiled appendices marked by `\i
 
 The zero-frequency distribution is an idealization:
 
-$$
+$$\begin{align}
 F_p^\eta(k)=\widehat\delta(\omega)f_p^\eta(\mathbf n).
-$$
+\end{align}$$
 
 All commutators are evaluated before taking the zero-frequency limit. At large but finite radius or retarded time, the intended physical replacement is support at frequencies of order $\omega\lesssim r^{-1}$ or $\omega\lesssim |T|^{-1}$.
 
-## From coherent profiles to large transformations
+## From Coherent Profiles to Large Transformations
 
-### Scalar control model
+### Scalar Control Model
 
 The scalar example separates the kinematic soft-factorization mechanism from gauge symmetry. A massive particle may be dressed by a coherent cloud with angular profile $T_p(\mathbf n)$ even though the mediator has no gauge redundancy. The resulting long-range scalar field changes, and the same soft/hard completion pattern later reappears. Therefore the charge-like construction alone does not prove that the underlying theory has a local gauge symmetry.
 
-### Electromagnetic dressing
+### Electromagnetic Dressing
 
 For helicity polarization $\bar\epsilon_\mu^\eta$, the shape is chosen as
 
-$$
+$$\begin{align}
 f_p^\eta(\mathbf n)=\bar\epsilon_\mu^\eta\,\partial_{n^\mu}T_p(\mathbf n).
-$$
+\end{align}$$
 
 The induced angular gauge potential is source-derived as
 
-$$
+$$\begin{align}
 \langle A_A\rangle=-\frac{1}{2\pi}D_A T_p,
-$$
+\end{align}$$
 
 up to the paper's normalization and polarization conventions. It is locally pure gauge on the celestial sphere, while its role in specifying asymptotic-state data is nontrivial.
 
-### Gravitational dressing and Bondi shear
+### Gravitational Dressing and Bondi Shear
 
 The helicity profile is
 
-$$
-f_p^\eta(\mathbf n)
-=-2\,\bar\epsilon_\mu^\eta\bar\epsilon_\nu^\eta
-\partial_{n^\mu}\partial_{n^\nu}T_p(\mathbf n).
-$$
+$$\begin{align}
+f_p^\eta(\mathbf n) =-2\,\bar\epsilon_\mu^\eta\bar\epsilon_\nu^\eta \partial_{n^\mu}\partial_{n^\nu}T_p(\mathbf n).
+\end{align}$$
 
 Its coherent expectation value generates the asymptotic shear
 
-$$
-C_{AB}[T_p]
-=\left(\Omega_{AB}D^2-2D_AD_B\right)T_p.
-$$
+$$\begin{align}
+C_{AB}[T_p] =\left(\Omega_{AB}D^2-2D_AD_B\right)T_p.
+\end{align}$$
 
 This is precisely the inhomogeneous part of a BMS supertranslation in the paper's sign convention. The operator annihilates the $\ell=0,1$ spherical harmonics, so ordinary translations are projected out of the shear. This fact is used again in the hard-charge integrals.
 
-## Canonical and intrinsic Bondi frames
+## Canonical and Intrinsic Bondi Frames
 
 The canonical frame is defined by vanishing initial shear. For a single boosted Schwarzschild solution, the large-$r$ expansion of the Kerr-Schild metric lands directly in this frame:
 
-$$
+$$\begin{align}
 C_{AB}^{\mathrm{KS}}=0.
-$$
+\end{align}$$
 
 The de Donder description, after the angle-independent retarded-time adjustment needed to reach Bondi form, instead carries a nonzero intrinsic shear. The two descriptions are related by a supertranslation. For an incoming body of mass $M_i$ and velocity $v_i^\mu$, the angular function contains the characteristic term
 
-$$
+$$\begin{align}
 T_i(\mathbf n)\supset 2GM_i\,(n\cdot v_i)\log(n\cdot v_i),
-$$
+\end{align}$$
 
 plus modes and convention-dependent pieces that do not contribute to $C_{AB}$. For several bodies the paper applies this identification to the linearized asymptotic data; it does not prove an exact nonlinear multi-black-hole Kerr-Schild decomposition.
 
 The conceptual payoff is sharp: ordinary amplitude calculations with no zero-mode expectation value naturally use the canonical frame, whereas some classical scattering analyses use the intrinsic frame. Their radiative angular momenta can differ by a BMS-frame term even though the total angular momentum, with the hard/matter contribution included, is unchanged.
 
-## Completing the displacement to a conserved charge
+## Completing the Displacement to a Conserved Charge
 
 The soft coherent displacement by itself fails to commute with the scattering matrix. Soft factorization organizes the commutator into contributions from external massless and massive legs. The paper defines
 
-$$
+$$\begin{align}
 Q[T]=Q_s[T]+Q_{h,0}[T]+Q_{h,M}[T]
-$$
+\end{align}$$
 
 so that
 
-$$
+$$\begin{align}
 [\mathcal S,Q[T]]=0.
-$$
+\end{align}$$
 
 The hard terms are diagonal number-operator charges. Since they contain no soft creation or annihilation operators, the paper also uses
 
-$$
+$$\begin{align}
 [Q_s,Q_h]=0.
-$$
+\end{align}$$
 
 The construction is driven by the universal soft factor rather than by assuming a pre-existing local symmetry. In gravity, however, the complete operator agrees with the BMS charge acting on scattering data.
 
-### Massless hard contribution
+### Massless Hard Contribution
 
 For a massless external momentum $K$, the sphere integral reduces to
 
-$$
-I^0_{p,K}
-=-\frac{1}{2\pi}\,\omega_K\,T_p^{\ell\ge 2}(\widehat{\mathbf K}).
-$$
+$$\begin{align}
+I^0_{p,K} =-\frac{1}{2\pi}\,\omega_K\,T_p^{\ell\ge 2}(\widehat{\mathbf K}).
+\end{align}$$
 
 The projection is essential: the shear operator kills $\ell=0,1$. The resulting hard charge shifts a finite-energy annihilation operator by the retarded-time phase
 
-$$
-e^{-iQ_h}a_\eta(k)e^{iQ_h}
-=e^{-i\omega T_p(\mathbf n)}a_\eta(k),
-$$
+$$\begin{align}
+e^{-iQ_h}a_\eta(k)e^{iQ_h} =e^{-i\omega T_p(\mathbf n)}a_\eta(k),
+\end{align}$$
 
 which is the momentum-space expression of $u\mapsto u+T_p(\mathbf n)$.
 
-### Massive hard contribution
+### Massive Hard Contribution
 
 For a timelike momentum $P$, the general dressing produces
 
-$$
-I_{p,P}
-=-\frac{1}{2\pi}(P^2)^2
-\int_{S^2}\frac{\mathrm d\Omega}{4\pi}
-\frac{T_p^{\ell\ge2}(\mathbf n)}{(P\cdot n)^3}.
-$$
+$$\begin{align}
+I_{p,P} =-\frac{1}{2\pi}(P^2)^2 \int_{S^2}\frac{\mathrm d\Omega}{4\pi} \frac{T_p^{\ell\ge2}(\mathbf n)}{(P\cdot n)^3}.
+\end{align}$$
 
 The diagonal term simplifies to
 
-$$
-J_p=\frac{6}{\pi E_p}
-\int_{S^2}\frac{\mathrm d\Omega}{4\pi}
-(p\cdot n)^2T_p^{\ell\ge2}(\mathbf n),
-$$
+$$\begin{align}
+J_p=\frac{6}{\pi E_p} \int_{S^2}\frac{\mathrm d\Omega}{4\pi} (p\cdot n)^2T_p^{\ell\ge2}(\mathbf n),
+\end{align}$$
 
 so only the $\ell=2$ component survives. The derivation uses a soft regulator $\widehat\delta(\omega)\to\widehat\delta(\omega-\beta)$ and requires the order of limits $d\to4$ before $\beta\to0$.
 
-## Eikonal action and the impact-parameter shift
+## Eikonal Action and the Impact-Parameter Shift
 
 For conservative two-body scattering, the outgoing state is represented by a resummed eikonal integral over momentum transfer. Acting with $Q_h$ multiplies the integrand by a phase linear in $q$; this may be absorbed into
 
-$$
+$$\begin{align}
 b^\mu\longmapsto b^\mu+\delta b^\mu[T].
-$$
+\end{align}$$
 
 Thus a supertranslation changes the coordinate representative of the impact parameter while preserving the complete charge. The paper's “all-orders” statement is exact within the conservative two-body eikonal/resummed setup and its asymptotic-state assumptions. It is not an unconditional theorem for radiation reaction, arbitrary multiparticle states, or the full nonlinear gravitational $S$-matrix.
 
-## Distinguished three-point dressing
+## Distinguished Three-Point Dressing
 
 Section 6 specializes the soft profile to half the zero-frequency three-point amplitude,
 
-$$
+$$\begin{align}
 F_p^\eta(k)=\frac12\widehat\delta(2p\cdot k)\,mathcal A_3(p+k,p,k_\eta),
-$$
+\end{align}$$
 
 which realizes the canonical-to-intrinsic frame transformation. Two universal integrals appear:
 
-$$
-I(p,P)
-=\frac{1}{16\pi Z}
-\log\frac{p\cdot P+Z}{p\cdot P-Z},
-\qquad
-Z=\sqrt{(p\cdot P)^2-p^2P^2},
-$$
+$$\begin{align}
+I(p,P) =\frac{1}{16\pi Z} \log\frac{p\cdot P+Z}{p\cdot P-Z}, \qquad Z=\sqrt{(p\cdot P)^2-p^2P^2},
+\end{align}$$
 
 and the regulated diagonal limit
 
-$$
+$$\begin{align}
 J_0(p)=\frac{1}{8\pi p^2}.
-$$
+\end{align}$$
 
 The scalar, QED, and gravitational hard charges differ only through the relevant three-point numerator $X$. This isolates which part of the impact shift is kinematic and which part depends on mediator spin and coupling.
 
 For gravity, the source gives the leading momentum-transfer contribution
 
-$$
-Q_h|1,2\rangle
-=-\frac{\kappa^2}{64\pi}q^2
-\left[
-\frac{16}{3}-\frac{2}{v^2}
-+\frac{2(1-3v^2)\operatorname{arctanh}v}{v^3}
-\right]|1,2\rangle
-+O(q^4).
-$$
+$$\begin{align}
+Q_h|1,2\rangle =-\frac{\kappa^2}{64\pi}q^2 \left[ \frac{16}{3}-\frac{2}{v^2} +\frac{2(1-3v^2)\operatorname{arctanh}v}{v^3} \right]|1,2\rangle +O(q^4).
+\end{align}$$
 
 Inserted into the eikonal phase, this yields the explicit gravitational $\delta b^\mu$ displayed in Section 6.5. The analogous scalar and QED expressions provide spin-0 and spin-1 controls. Because $q$ is an integration variable before the saddle is imposed, retaining its exact dependence in Section 6.1 is necessary for the all-orders argument.
 
-## Equation ledger and dependency map
+## Equation Ledger and Dependency Map
 
 | Object | Input assumptions | Role downstream |
 |---|---|---|
@@ -290,19 +270,13 @@ Inserted into the eikonal phase, this yields the explicit gravitational $\delta 
 
 The logical chain is
 
-$$
-\text{zero-mode profile}
-\Longrightarrow \text{asymptotic field/shear}
-\Longrightarrow \text{large transformation}
-\Longrightarrow Q_s+Q_h
-\Longrightarrow [\mathcal S,Q]=0
-\Longrightarrow \text{phase of eikonal integrand}
-\Longrightarrow \delta b^\mu.
-$$
+$$\begin{align}
+\text{zero-mode profile} \Longrightarrow \text{asymptotic field/shear} \Longrightarrow \text{large transformation} \Longrightarrow Q_s+Q_h \Longrightarrow [\mathcal S,Q]=0 \Longrightarrow \text{phase of eikonal integrand} \Longrightarrow \delta b^\mu.
+\end{align}$$
 
 No step from the linearized shear construction alone establishes the nonlinear conservation law; the soft-factorization calculation supplies the hard completion, and the final geometric interpretation remains tied to the stated asymptotic and eikonal regime.
 
-## Translation into the vault's charge/CPS language
+## Translation into the Vault's charge/CPS Language
 
 1. **Boundary datum versus gauge redundancy.** $T(\mathbf n)$ labels a change of asymptotic data. The scalar control shows why one should not infer “pure gauge” solely from coherent-state kinematics. In gravity, the BMS interpretation additionally uses the Bondi phase space and its large diffeomorphisms.
 2. **Complete generator.** $Q_s$ changes the boundary radiative field, while $Q_h$ changes hard-particle/radiation labels. This is the scattering analogue of a Hamiltonian generator whose differentiability requires both boundary and bulk/matter pieces.
@@ -310,28 +284,34 @@ No step from the linearized shear construction alone establishes the nonlinear c
 4. **Canonical versus intrinsic data.** The Kerr-Schild canonical frame is useful for amplitudes, but a de Donder/intrinsic frame may be more natural for worldline or post-Minkowskian calculations. The explicit $T_i(\mathbf n)$ is a reusable conversion object.
 5. **Finite-cutoff caution.** The strict $\delta(\omega)$ state is an asymptotic idealization. A finite-radius CPS comparison should replace it by a narrow band, keep flux through the cutoff, and test whether the putative charge remains integrable and conserved.
 
-## Verification log
+## Verification Log
 
 ### Checked
 
 - **PDF/source agreement.** Rendered pages 1, 24, 34, 46, and 55 of the 59-page PDF. The title/abstract, massless hard-charge equations, exact-hard-charge section, BMS appendix conventions, equation labels, and bibliography are visually legible and agree with the extracted TeX structure.
 - **$\ell=0,1$ kernel.** In a fresh Mathematica kernel, evaluated the round-$S^2$ components of
-  $$(\Omega_{AB}D^2-2D_AD_B)T.$$
+
+$$\begin{align}
+(\Omega_{AB}D^2-2D_AD_B)T.
+\end{align}$$
+
   Both components vanish for $T=1$ and $T=\cos\theta$. For $T=P_2(\cos\theta)$ the components are nonzero, $(-3\sin^2\theta,3\sin^4\theta)$ in $(\theta\theta,\phi\phi)$ coordinates. This independently confirms the claimed removal of translations.
 - **Off-diagonal logarithm.** In the rest frame of $p$, Mathematica reproduced
-  $$
-  \int_{-1}^{1}\frac{\mathrm dx}{E-qx}
-  =\frac1q\log\frac{E+q}{E-q},
-  \qquad E>q>0,
-  $$
+
+$$\begin{align}
+\int_{-1}^{1}\frac{\mathrm dx}{E-qx} =\frac1q\log\frac{E+q}{E-q}, \qquad E>q>0,
+\end{align}$$
+
   which is the angular dependence of $I(p,P)$ after $p\cdot P=mE$ and $Z=mq$. This checks the nontrivial logarithmic functional form, not the paper-specific phase-space prefactor.
 - **Velocity-series consistency.** Mathematica expanded the gravitational bracket as
-  $$
-  -\frac85v^2-\frac{32}{35}v^4-\frac{40}{63}v^6+O(v^8),
-  $$
+
+$$\begin{align}
+-\frac85v^2-\frac{32}{35}v^4-\frac{40}{63}v^6+O(v^8),
+\end{align}$$
+
   showing cancellation of the apparent $v^{-2}$ and $v^{-3}$ singularities at small relative velocity. Near $v=1$ it has the expected logarithmic behavior inherited from $\operatorname{arctanh}v$.
 
-### Source-derived
+### Source-Derived
 
 - The soft-factorization cancellation $[\mathcal S,Q_s+Q_h]=0$, the exact number-operator charges, and the spin-specific scalar/QED/graviton numerators were reconstructed from the TeX source but were not independently recomputed from amplitudes.
 - The Kerr-Schild/de Donder relation, intrinsic shear, and multi-body linearized supertranslation were followed through the paper's coordinate expansions but not rederived from the full metrics in an independent tensor package.
@@ -347,7 +327,7 @@ No step from the linearized shear construction alone establishes the nonlinear c
 
 - None. No contradiction was found under the assumptions tested.
 
-## Limitations and reusable next checks
+## Limitations and Reusable Next Checks
 
 - The zero-mode dressing and its conserved completion are distributional. A wave-packet or finite-time regulator would be needed before interpreting the state as operational finite-distance data.
 - The BMS identification is geometrically clean at linear order. Nonlinear shear, memory, and radiation reaction may modify both the frame map and the charge algebra.

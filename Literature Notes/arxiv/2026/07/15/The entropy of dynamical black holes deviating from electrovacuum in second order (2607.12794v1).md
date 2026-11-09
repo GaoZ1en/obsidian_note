@@ -25,7 +25,7 @@ $$\begin{align}
 
 The paper is asymptotically flat and four-dimensional from its CPS section onward. An AdS use therefore requires replacing future null infinity by a renormalized timelike boundary, not simply changing the background metric.
 
-# Source structure and reading map
+# Source Structure and Reading Map
 
 | Source part | Role in the argument | Main equations |
 |---|---|---|
@@ -41,9 +41,9 @@ The paper is asymptotically flat and four-dimensional from its CPS section onwar
 
 The source does not rederive every link. In particular, the full geometry behind (10), the pure-gravity horizon current, the Raychaudhuri/shear reduction, and the passage (96) to (97) are imported from arXiv:2606.16757.
 
-# Stationary electrovacuum horizon in affine Gaussian null coordinates
+# Stationary Electrovacuum Horizon in Affine Gaussian Null Coordinates
 
-## Bifurcate horizon and boost generator
+## Bifurcate Horizon and Boost Generator
 
 With coordinates $(u,v,x^i)$, the future horizon is $\mathcal H^+:u=0$, the past horizon is $\mathcal H^-:v=0$, and the bifurcation surface is $\mathcal B:u=v=0$. The metric is
 
@@ -71,7 +71,7 @@ $$\begin{align}
 
 where $\kappa$ is surface gravity. Stationarity means that the GNC coefficients depend on $u,v$ through the boost-invariant product $uv$.
 
-## Perturbative horizon gauge
+## Perturbative Horizon Gauge
 
 The one-parameter family is expanded as
 
@@ -87,7 +87,7 @@ $$\begin{align}
 
 This gauge keeps the perturbed event horizon at $u=0$. It does not freeze the horizon generator: ordinary $\delta$ later includes $\delta\xi$ and $\delta\kappa_3$, whereas $\delta_\phi$ varies only $\phi=(g,A)$ at fixed $\xi$.
 
-## Residual affine reparametrizations
+## Residual Affine Reparametrizations
 
 The constant transformation
 
@@ -103,9 +103,9 @@ $$\begin{align}
 
 Appendix A also allows an $x$-dependent affine rescaling. The authors explicitly say that covariance of the full area expression (10) under that more general freedom is expected but not directly checked.
 
-# The marginally trapped tube near the event horizon
+# The Marginally Trapped Tube Near the Event Horizon
 
-## Displacement and first-order marginality
+## Displacement and First-Order Marginality
 
 The apparent-horizon tube $\mathcal A$ is written as
 
@@ -127,7 +127,7 @@ $$\begin{align}
 
 Indices in (8)--(10) are compressed in the source and contracted with $\gamma_{ij}$. The second-order marginality equation (9) is explicitly called schematic; it contains $\delta^2U$, $\delta\theta_u$, $\delta\gamma$, $\delta\beta$, and $(D\delta U)^2$ and is used to remove $\delta^2U$ from the area.
 
-## Apparent-horizon area through second order
+## Apparent-Horizon Area Through Second Order
 
 After Taylor expanding the induced area from $u=0$ to $u=U$ and integrating transverse total derivatives on a compact cross section, the source obtains
 
@@ -151,9 +151,9 @@ $$
 
 where $\lambda=\alpha+\beta^2$. Equation (10) isolates the exact obstruction to identifying the entropy-like event-horizon functional with the apparent-horizon area: the obstruction is carried by $\delta U$ and its transverse derivatives.
 
-# Off-shell canonical energy with external matter
+# Off-Shell Canonical Energy with External Matter
 
-## Einstein--Maxwell data and conventions
+## Einstein--Maxwell Data and Conventions
 
 From Section III onward, the dynamical fields are $\phi=(g,A)$ in four dimensions, with $F=dA$. The Maxwell stress tensor and total null stress are
 
@@ -163,7 +163,7 @@ T^{EM}_{ab} =\frac{1}{4\pi G}\left( F_{ac}F_b{}^c-\frac14g_{ab}F_{cd}F^{cd} \rig
 
 Here $T_{ab}$ denotes external matter. The source assumes source-free Maxwell equations in its Maxwell appendix; independently charged external matter is therefore not covered by the displayed proof.
 
-## Constraint-subtracted symplectic current
+## Constraint-Subtracted Symplectic Current
 
 On the stationary background, the fixed-$\xi$ second-variation identity is
 
@@ -202,7 +202,7 @@ $$\begin{align}
 
 This is more precise than calling $\mathcal E$ “the symplectic form”: one slot of the current is specifically $\mathcal L_\xi\delta\phi$, and the constraint subtraction is part of the definition.
 
-## Horizon and null-infinity fluxes
+## Horizon and Null-Infinity Fluxes
 
 On $\mathcal H^+$, the Maxwell part has the form
 
@@ -239,7 +239,7 @@ $$\begin{align}
 \xi\cdot\nabla v=\kappa v\ge0,\qquad \widehat\xi\cdot\widehat\nabla\widehat u>0.
 \end{align}$$
 
-# Boundary-improved canonical energy
+# Boundary-Improved Canonical Energy
 
 The horizon and null-infinity endpoint pieces are absorbed into exact forms. The improved local currents are
 
@@ -259,9 +259,9 @@ $$\begin{align}
 
 The improvement is a choice of representative that removes endpoint leakage from the flux law. It should be compared with the vault's boundary/corner completion of the presymplectic potential, but it is a null-boundary construction and is not identical to an AdS timelike counterterm or Hayward corner term.
 
-# Dynamical entropy as a corrected horizon Noether charge
+# Dynamical Entropy as a Corrected Horizon Noether Charge
 
-## Corrected charge and Maxwell horizon gauge
+## Corrected Charge and Maxwell Horizon Gauge
 
 The entropy two-form is
 
@@ -289,7 +289,7 @@ k^a\delta^mA_a\big|_{\mathcal H^+}=0,\qquad m=0,1,2, \tag{52}
 
 makes the electromagnetic Noether term irrelevant to the displayed entropy variation. Maxwell fields still affect the law through their flux. The choice $\delta^2\bm B_{\mathcal H^+}^{EM}=0$ is a representative choice, not a uniqueness theorem for second-order entropy.
 
-## Varying the generator
+## Varying the Generator
 
 The background has $\kappa_3=\kappa$, but the perturbation varies both the generator and its normalization:
 
@@ -307,7 +307,7 @@ $$\begin{align}
 
 The second term is the explicit location of generator-normalization and foliation dependence.
 
-# From the Raychaudhuri reduction to the area law
+# From the Raychaudhuri Reduction to the Area Law
 
 For a smooth two-sided family satisfying the total NEC, together with late-time stationarity, the source invokes its previous analysis to obtain
 
@@ -333,7 +333,7 @@ The improved energy law simultaneously reduces to a sum of negative flux norms: 
 
 Without NEC, neither $\delta\theta_v$ nor $\delta U$ must vanish. The extra terms in (10) and (36) remain, so the area law is not automatic. A compensating choice of $\delta\xi$ can be made, but the paper emphasizes that it is not unique.
 
-# Translation to the AdS gravitational-energy project
+# Translation to the AdS Gravitational-Energy Project
 
 | Source object | Local counterpart | Necessary qualification |
 |---|---|---|
@@ -354,7 +354,7 @@ Three notation collisions must be corrected before reusing formulas:
 
 The most concrete extension is to repeat the sequence (11), (13), (29)--(32) with the renormalized AdS action and its timelike-boundary/corner completion. The correct test is whether the AdS representative produces a flux-free Hamiltonian in the fixed-source sector while retaining the off-shell constraint terms until the final step.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
@@ -366,7 +366,7 @@ $$\begin{align}
 \delta^2T^{EM}_{kk} =\frac{1}{2\pi G} k^ak^b\delta F_a{}^c\delta F_{bc}.
 \end{align}$$
 
-  xAct independently reduced the antisymmetric contractions $k^ak^b\delta F_{ab}$ and the exchange residual to zero.
+  XAct independently reduced the antisymmetric contractions $k^ak^b\delta F_{ab}$ and the exchange residual to zero.
 - **Quotient variation, (93).** With $\bm B_{\mathcal H^+}=0$ on the stationary background, Mathematica reproduced
 
 $$\begin{align}

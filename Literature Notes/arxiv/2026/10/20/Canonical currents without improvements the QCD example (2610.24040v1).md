@@ -12,15 +12,13 @@ summary: "The explicit pp-wave and finite-cell surface charges are checked; cano
 tags: []
 ---
 
-# Canonical-frame currents and a finite-cell spin charge
+# Canonical-Frame Currents and a Finite-Cell Spin Charge
 
 The concrete result is an exact classical example in which
 
-$$
-g_{\mu\nu}^{(+)}=g_{\mu\nu}^{(-)},\qquad
-T_{\mu\nu}^{(+)}=T_{\mu\nu}^{(-)},\qquad
-H_\varphi^{(\pm)}=\pm\frac{N_q}{2}.
-$$
+$$\begin{align}
+g_{\mu\nu}^{(+)}=g_{\mu\nu}^{(-)},\qquad T_{\mu\nu}^{(+)}=T_{\mu\nu}^{(-)},\qquad H_\varphi^{(\pm)}=\pm\frac{N_q}{2}.
+\end{align}$$
 
 The two configurations differ by quark helicity. Their finite-region rotation charge contains a spin surface term that is absent from the symmetric stress tensor. The metric, Dirac equation, gauge stress tensor, canonical-frame condition, relevant boundary potential and surface integrals can all be checked explicitly.
 
@@ -28,7 +26,7 @@ The general statement is conditional. Matter translation currents are separately
 
 **Source-derived:** complete reading of [v1](https://arxiv.org/abs/2610.24040v1), §§I–VII and Appendix A. **Checked:** exact component and Clifford calculations, a nontrivial flat massive-Dirac check of the spin-divergence identity, the pp-wave construction, restricted boundary potential, non-Abelian extension and finite-cell integrals. Broader claims about unique physical currents or existence/uniqueness of canonical frames are not established by these checks.
 
-## Section map and conventions
+## Section Map and Conventions
 
 | Source | Main step |
 |---|---|
@@ -45,294 +43,209 @@ The reference coframe $e^a{}_\mu$ and its dual, denoted here by $e_a{}^\mu$, are
 
 The metric and Clifford conventions are
 
-$$
-g_{\mu\nu}=\eta_{IJ}h^I{}_\mu h^J{}_\nu,\qquad
-\eta_{IJ}=\operatorname{diag}(-1,1,1,1),
-$$
+$$\begin{align}
+g_{\mu\nu}=\eta_{IJ}h^I{}_\mu h^J{}_\nu,\qquad \eta_{IJ}=\operatorname{diag}(-1,1,1,1),
+\end{align}$$
 
-$$
-\{\gamma^I,\gamma^J\}=-2\eta^{IJ},\qquad
-\gamma^{IJ}=\gamma^{[I}\gamma^{J]},\qquad
-\bar\psi=\psi^\dagger\gamma^0.
-$$
+$$\begin{align}
+\{\gamma^I,\gamma^J\}=-2\eta^{IJ},\qquad \gamma^{IJ}=\gamma^{[I}\gamma^{J]},\qquad \bar\psi=\psi^\dagger\gamma^0.
+\end{align}$$
 
-Thus the gamma matrices may be the usual Dirac matrices with
-$(\gamma^0)^2=1$, $(\gamma^i)^2=-1$, despite the mostly-plus metric. Antisymmetrization has weight $1/2$. Also
-$\kappa=(8\pi G)^{-1}$ and
-$\operatorname{tr}(t_At_B)=\delta_{AB}/2$.
+Thus the gamma matrices may be the usual Dirac matrices with $(\gamma^0)^2=1$, $(\gamma^i)^2=-1$, despite the mostly-plus metric. Antisymmetrization has weight $1/2$. Also $\kappa=(8\pi G)^{-1}$ and $\operatorname{tr}(t_At_B)=\delta_{AB}/2$.
 
 The objects $\Theta^{\mu\nu}$, $\mathcal S^{\rho\mu\nu}$, $J^\mu$ and $H_a{}^{\lambda\mu}$ are densities. Their ordinary coordinate divergences and surface integrals must not be confused with integrals of undensitized tensors against an independently inserted volume factor.
 
-## II: independent reference data and the QCD action
+## II: Independent Reference Data and the QCD Action
 
 The reference defines a torsion-free connection
 
-$$
-\Gamma^\alpha{}_{\mu\nu}
-=e_a{}^\alpha\partial_{(\mu}e^a{}_{\nu)}.
-$$
+$$\begin{align}
+\Gamma^\alpha{}_{\mu\nu} =e_a{}^\alpha\partial_{(\mu}e^a{}_{\nu)}.
+\end{align}$$
 
 The gravitational action instead uses the full difference tensor
 
-$$
-X^\alpha{}_{\mu\nu}
-=e_a{}^\alpha\partial_\mu e^a{}_\nu
--\mathring\Gamma^\alpha{}_{\mu\nu},
-$$
+$$\begin{align}
+X^\alpha{}_{\mu\nu} =e_a{}^\alpha\partial_\mu e^a{}_\nu -\mathring\Gamma^\alpha{}_{\mu\nu},
+\end{align}$$
 
 where the ring denotes the metric Levi-Civita connection. The two expressions should not be interchanged for an anholonomic coframe.
 
 For the Hermitian colour connection,
 
-$$
-F_{\mu\nu}
-=2\partial_{[\mu}A_{\nu]}-ig_s[A_\mu,A_\nu].
-$$
+$$\begin{align}
+F_{\mu\nu} =2\partial_{[\mu}A_{\nu]}-ig_s[A_\mu,A_\nu].
+\end{align}$$
 
 It does not involve the spacetime connection. The spinor derivative is
 
-$$
-\nabla_\mu\psi
-=\left[
-\partial_\mu
--\frac14h_{I\nu}
-\left(\partial_\mu h_J{}^\nu
-+\Gamma^\nu{}_{\mu\rho}h_J{}^\rho\right)\gamma^{IJ}
--ig_sA_\mu
-\right]\psi.
-$$
+$$\begin{align}
+\nabla_\mu\psi =\left[ \partial_\mu -\frac14h_{I\nu} \left(\partial_\mu h_J{}^\nu +\Gamma^\nu{}_{\mu\rho}h_J{}^\rho\right)\gamma^{IJ} -ig_sA_\mu \right]\psi.
+\end{align}$$
 
 The coupled action is
 
-$$
-\begin{aligned}
-I=\int d^4x\sqrt{-g}\bigg[
-&-\kappa X^\alpha{}_{[\beta}{}^\beta
-X^\gamma{}_{\gamma]\alpha}
--\frac12\operatorname{tr}(F_{\mu\nu}F^{\mu\nu})\\
-&+\sum_f\left(
-\frac i2\bar\psi_f\gamma^\mu
-\overset{\leftrightarrow}{\nabla}_\mu\psi_f
--m_f\bar\psi_f\psi_f\right)
+$$\begin{aligned}
+I=\int d^4x\sqrt{-g}\bigg[ &-\kappa X^\alpha{}_{[\beta}{}^\beta X^\gamma{}_{\gamma]\alpha} -\frac12\operatorname{tr}(F_{\mu\nu}F^{\mu\nu})\\
+&+\sum_f\left( \frac i2\bar\psi_f\gamma^\mu
+\overset{\leftrightarrow}{\nabla}_\mu\psi_f -m_f\bar\psi_f\psi_f\right)
 \bigg].
-\end{aligned}
-$$
+\end{aligned}$$
 
 The gravitational term differs from $\kappa\mathring R/2$ by a divergence. Its chosen boundary representative is part of the current prescription.
 
-The Hermitian Dirac action is independent of the torsion-free reference connection. Its change under a symmetric connection difference contracts that difference with
-$\{\gamma^\mu,\gamma^{IJ}\}$, which is totally antisymmetric in the relevant three frame directions. Hence the reference coframe drops out of the QCD bulk action. Replacing $\nabla$ by $\mathring\nabla$ in that action is therefore legitimate under the stated torsion-free assumption.
+The Hermitian Dirac action is independent of the torsion-free reference connection. Its change under a symmetric connection difference contracts that difference with $\{\gamma^\mu,\gamma^{IJ}\}$, which is totally antisymmetric in the relevant three frame directions. Hence the reference coframe drops out of the QCD bulk action. Replacing $\nabla$ by $\mathring\nabla$ in that action is therefore legitimate under the stated torsion-free assumption.
 
 The Hilbert tensor is defined by metric-tetrad variation:
 
-$$
-T^{\mu\nu}
-=\tau_I{}^{(\mu}h_J{}^{\nu)}\eta^{IJ},\qquad
-\tau_I{}^\mu=\frac1{\sqrt{-g}}
-\frac{\delta I_{\rm QCD}}{\delta h^I{}_\mu}.
-$$
+$$\begin{align}
+T^{\mu\nu} =\tau_I{}^{(\mu}h_J{}^{\nu)}\eta^{IJ},\qquad \tau_I{}^\mu=\frac1{\sqrt{-g}} \frac{\delta I_{\rm QCD}}{\delta h^I{}_\mu}.
+\end{align}$$
 
 On the spinor equations, local Lorentz invariance supplies its symmetry.
 
-### The boundary potential and the spin density
+### The Boundary Potential and the Spin Density
 
 Variation gives
 
-$$
-\begin{aligned}
-\theta^\mu_{\rm QCD}[\delta]
-={}&-\sqrt{-g}\,F_A^{\mu\nu}\delta A^A_\nu
-+\frac12\mathcal S^{\mu IJ}h_{J\nu}\delta h_I{}^\nu\\
-&+\frac i2\sqrt{-g}\sum_f
-\left(\bar\psi_f\gamma^\mu\delta\psi_f
--\delta\bar\psi_f\gamma^\mu\psi_f\right),
-\end{aligned}
-$$
+$$\begin{aligned}
+\theta^\mu_{\rm QCD}[\delta] ={}&-\sqrt{-g}\,F_A^{\mu\nu}\delta A^A_\nu +\frac12\mathcal S^{\mu IJ}h_{J\nu}\delta h_I{}^\nu\\
+&+\frac i2\sqrt{-g}\sum_f \left(\bar\psi_f\gamma^\mu\delta\psi_f -\delta\bar\psi_f\gamma^\mu\psi_f\right),
+\end{aligned}$$
 
 with
 
-$$
-\mathcal S^{\rho\mu\nu}
-=\frac i4\sqrt{-g}\sum_f
-\bar\psi_f\{\gamma^\rho,\gamma^{\mu\nu}\}\psi_f.
-$$
+$$\begin{align}
+\mathcal S^{\rho\mu\nu} =\frac i4\sqrt{-g}\sum_f \bar\psi_f\{\gamma^\rho,\gamma^{\mu\nu}\}\psi_f.
+\end{align}$$
 
 This spin density is completely antisymmetric. It arises from varying the tetrad-dependent spinor connection, rather than being appended to the stress tensor afterward. Minimal Yang–Mills curvature has no response to an independent Lorentz connection; this does not mean that gluon configurations have no angular momentum.
 
-## III: compensated Noether current and Belinfante relation
+## III: Compensated Noether Current and Belinfante Relation
 
 Combine a diffeomorphism with colour and Lorentz compensation:
 
-$$
-\widehat\delta_\xi A_\mu=\xi^\nu F_{\nu\mu},\qquad
-\widehat\delta_\xi\psi=\xi^\mu\mathring\nabla_\mu\psi,\qquad
-\widehat\delta_\xi h^I{}_\mu
-=h^I{}_\nu\mathring\nabla_\mu\xi^\nu.
-$$
+$$\begin{align}
+\widehat\delta_\xi A_\mu=\xi^\nu F_{\nu\mu},\qquad \widehat\delta_\xi\psi=\xi^\mu\mathring\nabla_\mu\psi,\qquad \widehat\delta_\xi h^I{}_\mu =h^I{}_\nu\mathring\nabla_\mu\xi^\nu.
+\end{align}$$
 
-The last equation gives
-$\widehat\delta_\xi g_{\mu\nu}=2\mathring\nabla_{(\mu}\xi_{\nu)}$.
-On the Dirac equations, the Hermitian kinetic term equals the mass term, so the quark Lagrangian vanishes on shell even for nonzero mass.
+The last equation gives $\widehat\delta_\xi g_{\mu\nu}=2\mathring\nabla_{(\mu}\xi_{\nu)}$. On the Dirac equations, the Hermitian kinetic term equals the mass term, so the quark Lagrangian vanishes on shell even for nonzero mass.
 
 With the paper's current sign,
 
-$$
-J^\mu_\xi
-=\sqrt{-g}\,\xi^\mu\mathcal L_{\rm QCD}
--\theta^\mu_{\rm QCD}[\widehat\delta_\xi]
-=\Theta^{\mu\nu}\xi_\nu
--\frac12\mathcal S^{\lambda\mu\nu}
-\mathring\nabla_\lambda\xi_\nu,
-$$
+$$\begin{align}
+J^\mu_\xi =\sqrt{-g}\,\xi^\mu\mathcal L_{\rm QCD} -\theta^\mu_{\rm QCD}[\widehat\delta_\xi] =\Theta^{\mu\nu}\xi_\nu -\frac12\mathcal S^{\lambda\mu\nu} \mathring\nabla_\lambda\xi_\nu,
+\end{align}$$
 
 where
 
-$$
-\begin{aligned}
-\Theta^{\mu\nu}
-=\sqrt{-g}\bigg[
-&2\operatorname{tr}\left(
-F^{\mu\lambda}F^\nu{}_\lambda
--\frac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}\right)\\
+$$\begin{aligned}
+\Theta^{\mu\nu} =\sqrt{-g}\bigg[ &2\operatorname{tr}\left( F^{\mu\lambda}F^\nu{}_\lambda -\frac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}\right)\\
 &-\frac i2\sum_f
 \bar\psi_f\gamma^\mu
 \overset{\leftrightarrow}{\mathring\nabla}{}^\nu\psi_f
 \bigg].
-\end{aligned}
-$$
+\end{aligned}$$
 
 Colour compensation removes the gauge-dependent connection term that occurs in an uncompensated translation current. Pure Lorentz-lift changes cancel between the spinor and tetrad pieces for this prescribed transformation.
 
 The on-shell Lorentz identity is
 
-$$
-\partial_\lambda\mathcal S^{\lambda\mu\nu}
-=\Theta^{\nu\mu}-\Theta^{\mu\nu}.
-$$
+$$\begin{align}
+\partial_\lambda\mathcal S^{\lambda\mu\nu} =\Theta^{\nu\mu}-\Theta^{\mu\nu}.
+\end{align}$$
 
 For a completely antisymmetric weight-one density, the Levi-Civita connection contributions to this divergence cancel. Consequently,
 
-$$
-\sqrt{-g}\,T^{\mu\nu}
-=\Theta^{(\mu\nu)}
-=\Theta^{\mu\nu}
-+\frac12\partial_\lambda\mathcal S^{\lambda\mu\nu}.
-$$
+$$\begin{align}
+\sqrt{-g}\,T^{\mu\nu} =\Theta^{(\mu\nu)} =\Theta^{\mu\nu} +\frac12\partial_\lambda\mathcal S^{\lambda\mu\nu}.
+\end{align}$$
 
 Substitution gives the useful surface form
 
-$$
-J^\mu_\xi
-=\sqrt{-g}\,T^{\mu\nu}\xi_\nu
--\frac12\partial_\lambda
-\left(\mathcal S^{\lambda\mu\nu}\xi_\nu\right).
-$$
+$$\begin{align}
+J^\mu_\xi =\sqrt{-g}\,T^{\mu\nu}\xi_\nu -\frac12\partial_\lambda \left(\mathcal S^{\lambda\mu\nu}\xi_\nu\right).
+\end{align}$$
 
-The spin term may be nonzero even when
-$\partial_\lambda\mathcal S^{\lambda\mu\nu}=0$, because the derivative also acts on $\xi$.
+The spin term may be nonzero even when $\partial_\lambda\mathcal S^{\lambda\mu\nu}=0$, because the derivative also acts on $\xi$.
 
-### The actual conservation criterion
+### The Actual Conservation Criterion
 
 On the matter equations,
 
-$$
-\partial_\mu J^\mu_\xi
-=\sqrt{-g}\,T^{\mu\nu}
-\mathring\nabla_{(\mu}\xi_{\nu)}.
-$$
+$$\begin{align}
+\partial_\mu J^\mu_\xi =\sqrt{-g}\,T^{\mu\nu} \mathring\nabla_{(\mu}\xi_{\nu)}.
+\end{align}$$
 
 A Killing vector is sufficient for conservation for arbitrary matter configurations. It is not necessary on a particular solution: the contraction can vanish for a non-Killing generator.
 
 The abstract's unqualified statement that curved-spacetime currents are conserved only along metric symmetries should therefore be read with this correction. The explicit solution below satisfies the weaker contraction condition directly, as the paper's own body explains.
 
-## IV: canonical frames are an additional selection
+## IV: Canonical Frames Are an Additional Selection
 
 For reference translations $\xi^\mu=e_a{}^\mu$, the gravitational current is
 
-$$
-J^\mu_{G,a}
-=-\kappa\sqrt{-g}\,\mathring G^\mu{}_\nu e_a{}^\nu
-+\partial_\lambda H_a{}^{\lambda\mu},
-$$
+$$\begin{align}
+J^\mu_{G,a} =-\kappa\sqrt{-g}\,\mathring G^\mu{}_\nu e_a{}^\nu +\partial_\lambda H_a{}^{\lambda\mu},
+\end{align}$$
 
-$$
-H_a{}^{\lambda\mu}
-=-\kappa\sqrt{-g}\,e_a{}^\alpha
-\left(X^{[\lambda}{}_\alpha{}^{\mu]}
-+2\delta^{[\lambda}_\alpha X^{\mu]}\right),
-$$
+$$\begin{align}
+H_a{}^{\lambda\mu} =-\kappa\sqrt{-g}\,e_a{}^\alpha \left(X^{[\lambda}{}_\alpha{}^{\mu]} +2\delta^{[\lambda}_\alpha X^{\mu]}\right),
+\end{align}$$
 
 with
 
-$$
-X^\mu=X^{[\mu}{}_\alpha{}^{\alpha]}
-=\frac12\left(
-g^{\alpha\beta}X^\mu{}_{\alpha\beta}
--g^{\mu\beta}X^\alpha{}_{\alpha\beta}\right).
-$$
+$$\begin{align}
+X^\mu=X^{[\mu}{}_\alpha{}^{\alpha]} =\frac12\left( g^{\alpha\beta}X^\mu{}_{\alpha\beta} -g^{\mu\beta}X^\alpha{}_{\alpha\beta}\right).
+\end{align}$$
 
 The total current obeys
 
-$$
-\partial_\mu J^\mu_{{\rm tot},\xi}
-=\sqrt{-g}\left(T^{\mu\nu}-\kappa\mathring G^{\mu\nu}\right)
-\mathring\nabla_{(\mu}\xi_{\nu)}.
-$$
+$$\begin{align}
+\partial_\mu J^\mu_{{\rm tot},\xi} =\sqrt{-g}\left(T^{\mu\nu}-\kappa\mathring G^{\mu\nu}\right) \mathring\nabla_{(\mu}\xi_{\nu)}.
+\end{align}$$
 
 The coupled Einstein equation conserves this total current for any generator; it does not generally conserve the matter current separately.
 
 A canonical reference is defined by
 
-$$
+$$\begin{align}
 J^\mu_{G,a}=0.
-$$
+\end{align}$$
 
 In such a frame, on a coupled solution,
 
-$$
-J^\mu_a=J^\mu_{{\rm tot},a}
-=\partial_\lambda
-\left(H_a{}^{\lambda\mu}
--\frac12\mathcal S^{\lambda\mu\nu}e_{a\nu}\right),
-\qquad \partial_\mu J^\mu_a=0.
-$$
+$$\begin{align}
+J^\mu_a=J^\mu_{{\rm tot},a} =\partial_\lambda \left(H_a{}^{\lambda\mu} -\frac12\mathcal S^{\lambda\mu\nu}e_{a\nu}\right), \qquad \partial_\mu J^\mu_a=0.
+\end{align}$$
 
 The paper explicitly states that $J_{G,a}=0$ is not obtained by varying the action: the reference has no bulk field equation. It selects a class of frames. The short paper does not prove a general global existence or uniqueness theorem for this condition. Its pp-wave example supplies one exact canonical frame.
 
-## V: rotation, integrability and spin surface terms
+## V: Rotation, Integrability and Spin Surface Terms
 
 For $\xi=f^ae_a$, a nonconstant $f^a$ gives
 
-$$
-J^\mu_{G,\xi}
-=f^aJ^\mu_{G,a}
-+(\partial_\lambda f^a)H_a{}^{\lambda\mu}.
-$$
+$$\begin{align}
+J^\mu_{G,\xi} =f^aJ^\mu_{G,a} +(\partial_\lambda f^a)H_a{}^{\lambda\mu}.
+\end{align}$$
 
 The canonical condition removes only the first term. The full current has
 
-$$
-J^\mu_{{\rm tot},\xi}
-=\sqrt{-g}\left(T^{\mu\nu}-\kappa\mathring G^{\mu\nu}\right)\xi_\nu
-+\partial_\lambda Q_\xi^{\lambda\mu},
-$$
+$$\begin{align}
+J^\mu_{{\rm tot},\xi} =\sqrt{-g}\left(T^{\mu\nu}-\kappa\mathring G^{\mu\nu}\right)\xi_\nu +\partial_\lambda Q_\xi^{\lambda\mu},
+\end{align}$$
 
-$$
-Q_\xi^{\lambda\mu}
-=f^aH_a{}^{\lambda\mu}
--\frac12\mathcal S^{\lambda\mu\nu}\xi_\nu.
-$$
+$$\begin{align}
+Q_\xi^{\lambda\mu} =f^aH_a{}^{\lambda\mu} -\frac12\mathcal S^{\lambda\mu\nu}\xi_\nu.
+\end{align}$$
 
 Thus separate matter rotation conservation does not follow merely from separate translation conservation.
 
 Let a fixed rotation generator $\varphi$ of period $2\pi$ be tangent to a fixed closed two-surface $\mathcal B$, and suppose it preserves the allowed boundary-data family. In the paper's convention,
 
-$$
-\delta H_\varphi
-=\oint_{\mathcal B}
-\left[\delta Q_\varphi+i_\varphi(\theta_G+\theta_{\rm QCD})\right]
-=\delta\oint_{\mathcal B}Q_\varphi.
-$$
+$$\begin{align}
+\delta H_\varphi =\oint_{\mathcal B} \left[\delta Q_\varphi+i_\varphi(\theta_G+\theta_{\rm QCD})\right] =\delta\oint_{\mathcal B}Q_\varphi.
+\end{align}$$
 
 The pullback of $i_\varphi\theta$ vanishes because a three-form is being evaluated on three vectors tangent to a two-dimensional surface. This gives integrability for the stated fixed surface/generator and potential prescription. It is not a statement about arbitrary field-dependent generators, moving boundaries or arbitrary boundary counterterms.
 
@@ -340,188 +253,149 @@ Conservation across time additionally requires a flux statement. The paper check
 
 In the flat limit, the kinetic angular-momentum density is
 
-$$
-J_{\rm kin}^{\rho\mu\nu}
-=2x^{[\mu}\Theta^{|\rho|\nu]}+\mathcal S^{\rho\mu\nu}.
-$$
+$$\begin{align}
+J_{\rm kin}^{\rho\mu\nu} =2x^{[\mu}\Theta^{|\rho|\nu]}+\mathcal S^{\rho\mu\nu}.
+\end{align}$$
 
 For a finite region,
 
-$$
-J_{\rm kin}^{\mu\nu}(V)-J_{\rm BR}^{\mu\nu}(V)
-=-\frac12\oint_{\partial V}dS\,\hat n_k
-\left(x^\mu\mathcal S^{k0\nu}
--x^\nu\mathcal S^{k0\mu}\right).
-$$
+$$\begin{align}
+J_{\rm kin}^{\mu\nu}(V)-J_{\rm BR}^{\mu\nu}(V) =-\frac12\oint_{\partial V}dS\,\hat n_k \left(x^\mu\mathcal S^{k0\nu} -x^\nu\mathcal S^{k0\mu}\right).
+\end{align}$$
 
 Complete antisymmetry means that, on a two-surface with two independent normals, only the component of $\xi$ tangent to the surface contributes to the spin potential. A normal time evolution has no such spin correction, while a rotation can.
 
-## VI: reconstructing the exact coupled wave
+## VI: Reconstructing the Exact Coupled Wave
 
-### Geometry, quarks and gluons
+### Geometry, Quarks and Gluons
 
 Use coordinates $(t,x,y,z)$ and
 
-$$
-u=t-z,\qquad k_\mu=(1,0,0,-1),\qquad
-e^a=dx^a,\qquad
-g_{\mu\nu}=\eta_{\mu\nu}+Wk_\mu k_\nu.
-$$
+$$\begin{align}
+u=t-z,\qquad k_\mu=(1,0,0,-1),\qquad e^a=dx^a,\qquad g_{\mu\nu}=\eta_{\mu\nu}+Wk_\mu k_\nu.
+\end{align}$$
 
 The inverse and determinant are
 
-$$
-g^{\mu\nu}=\eta^{\mu\nu}-Wk^\mu k^\nu,\qquad
-\det g=-1,\qquad k^\mu=(-1,0,0,-1).
-$$
+$$\begin{align}
+g^{\mu\nu}=\eta^{\mu\nu}-Wk^\mu k^\nu,\qquad \det g=-1,\qquad k^\mu=(-1,0,0,-1).
+\end{align}$$
 
 The vector $k$ is covariantly constant, and every profile depends on $u,x,y$, with $k^\mu\partial_\mu W=0$.
 
-Take three massless flavours with orthonormal colour vectors $c_f$ spanning the fundamental representation and
-$t_3c_f=\lambda_fc_f$, $\sum_f\lambda_f=0$:
+Take three massless flavours with orthonormal colour vectors $c_f$ spanning the fundamental representation and $t_3c_f=\lambda_fc_f$, $\sum_f\lambda_f=0$:
 
-$$
-\psi_f=\sqrt{\frac{n(u)}3}\,e^{-i\Phi(u)}
-\chi\otimes c_f,
-$$
+$$\begin{align}
+\psi_f=\sqrt{\frac{n(u)}3}\,e^{-i\Phi(u)} \chi\otimes c_f,
+\end{align}$$
 
-$$
-(\gamma^{\hat0}-\gamma^{\hat3})\chi=0,\qquad
-\chi^\dagger\chi=1,\qquad n>0,\quad\Phi'>0.
-$$
+$$\begin{align}
+(\gamma^{\hat0}-\gamma^{\hat3})\chi=0,\qquad \chi^\dagger\chi=1,\qquad n>0,\quad\Phi'>0.
+\end{align}$$
 
 The circularly polarized gluon wave is
 
-$$
-A=-t_3(x\varepsilon_x+y\varepsilon_y)\,du,
-\qquad
-(\varepsilon_x,\varepsilon_y)
-=E_0(\cos\omega_gu,\ \pm\sin\omega_gu),
-$$
+$$\begin{align}
+A=-t_3(x\varepsilon_x+y\varepsilon_y)\,du, \qquad (\varepsilon_x,\varepsilon_y) =E_0(\cos\omega_gu,\ \pm\sin\omega_gu),
+\end{align}$$
 
 so $F=t_3\,k\wedge\varepsilon$ and $F_{ui}=t_3\varepsilon_i$.
 
 Choose
 
-$$
-W=-\frac{\rho+E_0^2}{2\kappa}(x^2+y^2)
-+b_+(u)(x^2-y^2)+2b_\times(u)xy,
-\qquad \rho=\Phi'n.
-$$
+$$\begin{align}
+W=-\frac{\rho+E_0^2}{2\kappa}(x^2+y^2) +b_+(u)(x^2-y^2)+2b_\times(u)xy, \qquad \rho=\Phi'n.
+\end{align}$$
 
 The two $b$ functions are transverse harmonic vacuum-wave contributions.
 
-### Dirac and Yang–Mills equations
+### Dirac and Yang–Mills Equations
 
 The tetrad
 
-$$
+$$\begin{align}
 h^I{}_\mu=\delta^I_\mu+\frac W2k^Ik_\mu
-$$
+\end{align}$$
 
 has a simple inverse because $k$ is null. In this tetrad, the spin connection annihilates the two independent constant null spinors. The colour potential also appears multiplied by $k_\mu$, giving
 
-$$
-\mathring\nabla_\mu\psi_f
-=k_\mu\left(
-\frac{n'}{2n}-i\Phi'
-+ig_s\lambda_f x^i\varepsilon_i\right)\psi_f.
-$$
+$$\begin{align}
+\mathring\nabla_\mu\psi_f =k_\mu\left( \frac{n'}{2n}-i\Phi' +ig_s\lambda_f x^i\varepsilon_i\right)\psi_f.
+\end{align}$$
 
 Contraction with $\gamma^\mu$ vanishes by the null-spinor condition. In a standard Dirac representation, convenient normalized helicity representatives are
 
-$$
-\chi_+=\frac1{\sqrt2}(1,0,1,0)^T,\qquad
-\chi_-=\frac1{\sqrt2}(0,1,0,-1)^T,
-$$
+$$\begin{align}
+\chi_+=\frac1{\sqrt2}(1,0,1,0)^T,\qquad \chi_-=\frac1{\sqrt2}(0,1,0,-1)^T,
+\end{align}$$
 
-$$
-\Sigma_3=i\gamma^{\hat1}\gamma^{\hat2},\qquad
-\Sigma_3\chi_\pm=\pm\chi_\pm.
-$$
+$$\begin{align}
+\Sigma_3=i\gamma^{\hat1}\gamma^{\hat2},\qquad \Sigma_3\chi_\pm=\pm\chi_\pm.
+\end{align}$$
 
-Their vector bilinear is
-$\bar\chi\gamma^\mu\chi=-k^\mu$ in this metric convention.
+Their vector bilinear is $\bar\chi\gamma^\mu\chi=-k^\mu$ in this metric convention.
 
-Summing one equal-amplitude flavour per orthonormal colour vector gives
-$\sum_fc_f^\dagger t_Ac_f=\operatorname{tr}t_A=0$,
-so the colour current vanishes. The null alignment gives
-$k_\mu F^{\mu\nu}=0$, and the transverse-uniform wave satisfies the source-free Yang–Mills equation. The $\lambda_f$ terms in the quark stress tensor cancel in the flavour sum.
+Summing one equal-amplitude flavour per orthonormal colour vector gives $\sum_fc_f^\dagger t_Ac_f=\operatorname{tr}t_A=0$, so the colour current vanishes. The null alignment gives $k_\mu F^{\mu\nu}=0$, and the transverse-uniform wave satisfies the source-free Yang–Mills equation. The $\lambda_f$ terms in the quark stress tensor cancel in the flavour sum.
 
-### Einstein equation and non-Killing generators
+### Einstein Equation and Non-Killing Generators
 
 The only Ricci tensor contribution is
 
-$$
-\mathring G_{\mu\nu}
-=-\frac12(\partial_x^2+\partial_y^2)W\,k_\mu k_\nu,
-\qquad \mathring R=0.
-$$
+$$\begin{align}
+\mathring G_{\mu\nu} =-\frac12(\partial_x^2+\partial_y^2)W\,k_\mu k_\nu, \qquad \mathring R=0.
+\end{align}$$
 
-The quark and gluon stresses are respectively
-$\rho\,k_\mu k_\nu$ and $E_0^2k_\mu k_\nu$.
-The chosen $W$ therefore solves
+The quark and gluon stresses are respectively $\rho\,k_\mu k_\nu$ and $E_0^2k_\mu k_\nu$. The chosen $W$ therefore solves
 
-$$
-\kappa\mathring G_{\mu\nu}
-=(\rho+E_0^2)k_\mu k_\nu=T_{\mu\nu}.
-$$
+$$\begin{align}
+\kappa\mathring G_{\mu\nu} =(\rho+E_0^2)k_\mu k_\nu=T_{\mu\nu}.
+\end{align}$$
 
-Neither helicity changes this tensor. Generic $u$ dependence removes the $\partial_t$ isometry. For
-$\varphi=x\partial_y-y\partial_x$,
+Neither helicity changes this tensor. Generic $u$ dependence removes the $\partial_t$ isometry. For $\varphi=x\partial_y-y\partial_x$,
 
-$$
-\varphi(W)
-=2b_\times(x^2-y^2)-4b_+xy,
-$$
+$$\begin{align}
+\varphi(W) =2b_\times(x^2-y^2)-4b_+xy,
+\end{align}$$
 
 so generic vacuum-wave polarizations remove the rotation isometry too.
 
 Nevertheless,
 
-$$
-T^{\mu\nu}\mathring\nabla_\mu\xi_\nu
-=(\rho+E_0^2)\,k^\mu\partial_\mu(k\cdot\xi).
-$$
+$$\begin{align}
+T^{\mu\nu}\mathring\nabla_\mu\xi_\nu =(\rho+E_0^2)\,k^\mu\partial_\mu(k\cdot\xi).
+\end{align}$$
 
-This vanishes for both $\xi=\partial_t$ and $\xi=\varphi$.
-Thus the example's separate matter-current conservation also follows directly from the usual balance law. The canonical frame provides the chosen surface representation and interpretation; it does not replace that balance law.
+This vanishes for both $\xi=\partial_t$ and $\xi=\varphi$. Thus the example's separate matter-current conservation also follows directly from the usual balance law. The canonical frame provides the chosen surface representation and interpretation; it does not replace that balance law.
 
-### Exact canonical-frame check
+### Exact Canonical-Frame Check
 
 For the Cartesian reference, $X=-\mathring\Gamma$ and $X^\mu=0$. The superpotential reduces to
 
-$$
-H_a{}^{\lambda\mu}
-=\frac\kappa2k_a
-\left(k^\lambda\partial^\mu W-k^\mu\partial^\lambda W\right).
-$$
+$$\begin{align}
+H_a{}^{\lambda\mu} =\frac\kappa2k_a \left(k^\lambda\partial^\mu W-k^\mu\partial^\lambda W\right).
+\end{align}$$
 
 Direct differentiation gives
 
-$$
-\partial_\lambda H_a{}^{\lambda\mu}
-=\kappa\mathring G^\mu{}_a,
-$$
+$$\begin{align}
+\partial_\lambda H_a{}^{\lambda\mu} =\kappa\mathring G^\mu{}_a,
+\end{align}$$
 
-for arbitrary smooth $W(u,x,y)$. Therefore
-$J^\mu_{G,a}=0$ exactly, not merely in a weak-wave approximation.
+for arbitrary smooth $W(u,x,y)$. Therefore $J^\mu_{G,a}=0$ exactly, not merely in a weak-wave approximation.
 
-## The finite cell and its boundary phase space
+## The Finite Cell and Its Boundary Phase Space
 
 Keep
 
-$$
+$$\begin{align}
 V=D_R^2\times S_L^1,\qquad z\sim z+L
-$$
+\end{align}$$
 
 with finite $R,L$. The profiles are $L$-periodic, with
 
-$$
-\Phi(u+L)-\Phi(u)\in2\pi\mathbb Z,\qquad
-\omega_gL\in2\pi\mathbb Z,
-\qquad 1+W>0
-$$
+$$\begin{align}
+\Phi(u+L)-\Phi(u)\in2\pi\mathbb Z,\qquad \omega_gL\in2\pi\mathbb Z, \qquad 1+W>0
+\end{align}$$
 
 throughout the chosen cell. The last condition makes the constant-$t$ spatial slice nondegenerate and spacelike in this description. These conditions are part of the setup; no $R\to\infty$ limit or isolated transverse wave packet is taken.
 
@@ -536,137 +410,107 @@ The absence of radial symplectic flux has several separate ingredients:
 - The metric-tetrad spin term vanishes for the aligned $\delta h\propto k^Ik_\mu$ variations.
 - The gravitational potential from the displayed first-derivative action vanishes for $\delta g_{\mu\nu}=\delta W\,k_\mu k_\nu$ and for rigid transverse frame rotations.
 
-The last item was checked directly from the action's derivative coefficients, not inferred from the Einstein equation. Writing
-$\mathcal L_G=\mathcal L_G(g,X)$ and
-$\mathcal F_\alpha{}^{\mu\nu}
+The last item was checked directly from the action's derivative coefficients, not inferred from the Einstein equation. Writing $\mathcal L_G=\mathcal L_G(g,X)$ and $\mathcal F_\alpha{}^{\mu\nu}
 =\partial(\sqrt{-g}\mathcal L_G)/\partial X^\alpha{}_{\mu\nu}$,
 the derivative part of $\delta X$ is
 
-$$
-\delta X^\alpha{}_{\mu\nu}\big|_{\partial\delta}
-=e_a{}^\alpha\partial_\mu\delta e^a{}_\nu
--\frac12g^{\alpha\rho}
-\left(\partial_\mu\delta g_{\rho\nu}
-+\partial_\nu\delta g_{\rho\mu}
--\partial_\rho\delta g_{\mu\nu}\right).
-$$
+$$\begin{align}
+\delta X^\alpha{}_{\mu\nu}\big|_{\partial\delta} =e_a{}^\alpha\partial_\mu\delta e^a{}_\nu -\frac12g^{\alpha\rho} \left(\partial_\mu\delta g_{\rho\nu} +\partial_\nu\delta g_{\rho\mu} -\partial_\rho\delta g_{\mu\nu}\right).
+\end{align}$$
 
 Extracting the coefficients of these derivatives gives a boundary potential whose four components vanish on the two stated variation directions. Since the potential vanishes throughout this restricted family, its antisymmetrized variation gives no flux there. This check does not cover arbitrary perturbations outside the family.
 
 The rotation preserves the gravitational polarization amplitude:
 
-$$
-\delta_\varphi b_+=2b_\times,\qquad
-\delta_\varphi b_\times=-2b_+,\qquad
-\delta_\varphi(b_+^2+b_\times^2)=0.
-$$
+$$\begin{align}
+\delta_\varphi b_+=2b_\times,\qquad \delta_\varphi b_\times=-2b_+,\qquad \delta_\varphi(b_+^2+b_\times^2)=0.
+\end{align}$$
 
-## Energy, momentum and rotation: explicit surface integrals
+## Energy, Momentum and Rotation: Explicit Surface Integrals
 
 The translation spin term integrates to zero around the circle. Since $k^r=0$,
 
-$$
+$$\begin{align}
 H_a{}^{rt}=\frac\kappa2k_a\,\partial_rW.
-$$
+\end{align}$$
 
-Using the coordinate Gauss surface element appropriate to this density,
-$dS=R\,d\phi\,dz$,
+Using the coordinate Gauss surface element appropriate to this density, $dS=R\,d\phi\,dz$,
 
-$$
-P_a=\frac\kappa2k_a\oint_{\partial V}\partial_rW\,dS
-=-k_a\int_V(\rho+E_0^2)\,d^3x.
-$$
+$$\begin{align}
+P_a=\frac\kappa2k_a\oint_{\partial V}\partial_rW\,dS =-k_a\int_V(\rho+E_0^2)\,d^3x.
+\end{align}$$
 
 The harmonic terms integrate to zero. Hence
 
-$$
-E=-P_t
-=\pi R^2\int_0^L(\rho+E_0^2)\,dz>0,\qquad
-P_z=E.
-$$
+$$\begin{align}
+E=-P_t =\pi R^2\int_0^L(\rho+E_0^2)\,dz>0,\qquad P_z=E.
+\end{align}$$
 
 One should not insert an extra induced-metric volume factor into this density integral. The reference-frame energy here differs in interpretation from a detector-frame gravitational-wave energy; the absence of the harmonic wave's contribution is a statement about this chosen canonical frame.
 
-For rotation,
-$k_\mu\varphi^\mu=0$, so both
-$f^aH_a{}^{\lambda\mu}$ and
-$T^t{}_\nu\varphi^\nu$ vanish. The spin density is divergence-free but has
+For rotation, $k_\mu\varphi^\mu=0$, so both $f^aH_a{}^{\lambda\mu}$ and $T^t{}_\nu\varphi^\nu$ vanish. The spin density is divergence-free but has
 
-$$
-\mathcal S^{txy}
-=\frac n2\chi^\dagger\Sigma_3\chi.
-$$
+$$\begin{align}
+\mathcal S^{txy} =\frac n2\chi^\dagger\Sigma_3\chi.
+\end{align}$$
 
 Set $s=\mathcal S^{txy}$. The transverse spin potential has
 
-$$
-Q_\varphi^{xt}=\frac12sx,\qquad
-Q_\varphi^{yt}=\frac12sy,
-$$
+$$\begin{align}
+Q_\varphi^{xt}=\frac12sx,\qquad Q_\varphi^{yt}=\frac12sy,
+\end{align}$$
 
 so its divergence is $J_\varphi^t=s$. Integrating either the bulk density or its surface flux gives
 
-$$
-H_\varphi
-=\frac{N_q}{2}\chi^\dagger\Sigma_3\chi,\qquad
-N_q=\pi R^2\int_0^Ln(u)\,dz.
-$$
+$$\begin{align}
+H_\varphi =\frac{N_q}{2}\chi^\dagger\Sigma_3\chi,\qquad N_q=\pi R^2\int_0^Ln(u)\,dz.
+\end{align}$$
 
 Thus $H_\varphi=\pm N_q/2$ for the two helicities. The metric and symmetric stress tensor are identical. For a common choice of reference, the gravitational contribution is the same for the two configurations, so their charge difference is independent of that common reference contribution.
 
-Periodicity gives
-$d\int_0^Lf(t-z)\,dz/dt=f(t)-f(t-L)=0$.
-Therefore $P_a$, $N_q$ and the helicity eigenstate charges are time independent.
+Periodicity gives $d\int_0^Lf(t-z)\,dz/dt=f(t)-f(t-L)=0$. Therefore $P_a$, $N_q$ and the helicity eigenstate charges are time independent.
 
 The uniform circular gluon wave's helicity does not enter this rotation charge. This is a property of the aligned, transverse-uniform wave and the prescribed finite-cell charge. It is not a claim that arbitrary localized gluon configurations have no spin/angular-momentum contribution.
 
-## Appendix A: genuinely non-Abelian waves
+## Appendix A: Genuinely Non-Abelian Waves
 
 Replace the single-generator wave by
 
-$$
+$$\begin{align}
 A=-x^i\mathcal E_i(u)\,du,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \mathcal E_x=E_0\cos(\omega_gu)t_3,
-$$
+\end{align}$$
 
-$$
-\mathcal E_y
-=\sigma E_0\sin(\omega_gu)
-\left(\cos\alpha\,t_3+\sin\alpha\,t_1\right),
-\qquad \sigma=\pm1.
-$$
+$$\begin{align}
+\mathcal E_y =\sigma E_0\sin(\omega_gu) \left(\cos\alpha\,t_3+\sin\alpha\,t_1\right), \qquad \sigma=\pm1.
+\end{align}$$
 
-Because $A\propto k$, its wedge-square vanishes, while
-$k_\mu F^{\mu\nu}=0$ removes the commutator term from the Yang–Mills equation. Matrix-valued transverse profiles need not commute for this argument.
+Because $A\propto k$, its wedge-square vanishes, while $k_\mu F^{\mu\nu}=0$ removes the commutator term from the Yang–Mills equation. Matrix-valued transverse profiles need not commute for this argument.
 
 The colour traces are
 
-$$
-\operatorname{tr}\mathcal E_i=0,\qquad
-2\operatorname{tr}(\mathcal E_x^2+\mathcal E_y^2)=E_0^2.
-$$
+$$\begin{align}
+\operatorname{tr}\mathcal E_i=0,\qquad 2\operatorname{tr}(\mathcal E_x^2+\mathcal E_y^2)=E_0^2.
+\end{align}$$
 
 Thus the same three-flavour trace cancellation, stress tensor, geometry and charges remain. Yet
 
-$$
-[F_{ux},F_{uy}]
-=\frac i2\sigma E_0^2\sin\alpha\,
-\sin(2\omega_gu)t_2.
-$$
+$$\begin{align}
+[F_{ux},F_{uy}] =\frac i2\sigma E_0^2\sin\alpha\, \sin(2\omega_gu)t_2.
+\end{align}$$
 
 For $\sin\alpha\ne0$, this is nonzero at generic $u$, so the field is not gauge equivalent to an Abelian configuration. The gauge-invariant mixed trace is
 
-$$
-2\operatorname{tr}(F_{ux}F_{uy})
-=\frac12\sigma E_0^2\cos\alpha\,\sin(2\omega_gu),
-$$
+$$\begin{align}
+2\operatorname{tr}(F_{ux}F_{uy}) =\frac12\sigma E_0^2\cos\alpha\,\sin(2\omega_gu),
+\end{align}$$
 
 which distinguishes the family on $\alpha\in[0,\pi]$ under the stated nondegenerate wave conditions. These matrix identities were independently reproduced.
 
-## CPS interpretation and scope of “without improvements”
+## CPS Interpretation and Scope of “without Improvements”
 
 The paper gives a definite current once the action representative, compensated transformation, reference prescription and boundary phase space have been selected. The spin surface term is then fixed by that variational calculation. This is a useful way to avoid inserting a tensor improvement without tracking its boundary effect.
 
@@ -678,13 +522,11 @@ Three operations should therefore remain separate:
 2. Selecting a reference with $J_{G,a}=0$.
 3. Defining an integrable, conserved finite-region Hamiltonian on a specified boundary phase space.
 
-The explicit wave performs all three within a narrow family. The most reusable regional calculation is the spin potential
-$-\frac12\mathcal S^{\lambda\mu\nu}\xi_\nu$:
-its divergence can vanish for translations yet survive for a position-dependent rotation, and its boundary integral distinguishes states with the same symmetric tensor.
+The explicit wave performs all three within a narrow family. The most reusable regional calculation is the spin potential $-\frac12\mathcal S^{\lambda\mu\nu}\xi_\nu$: its divergence can vanish for translations yet survive for a position-dependent rotation, and its boundary integral distinguishes states with the same symmetric tensor.
 
 The non-Killing conservation example is also precise. A Killing vector is a universal sufficient condition, while this solution uses the special null stress tensor and $k\cdot\xi$. The example should not be presented as a general failure of the ordinary stress-tensor balance law.
 
-## Verification ledger
+## Verification Ledger
 
 **Verified:**
 
@@ -709,7 +551,7 @@ The non-Killing conservation example is also precise. A Killing vector is a univ
 
 **Failed / Blocked:** no irreparable algebraic failure or access blocker was found in the explicit construction. The abstract's “only along metric symmetries” wording is too strong without the solution-dependent balance-law qualification above. Initial verification scripts had bracket syntax errors and a missing map argument in the colour sum; corrected runs are those reported here, and these tool-code errors are not source failures.
 
-## Source and completion audit
+## Source and Completion Audit
 
 The official PDF and TeX source were retrieved outside the vault. All sections and Appendix A were read; PDF pages 1–5, containing all technical formulas and the cell figure, were rendered and inspected. The remaining page is bibliography continuation. A browser fetch of the versioned abstract returned a cache miss, while direct official PDF/source retrieval and the earlier official abstract metadata retrieval succeeded.
 

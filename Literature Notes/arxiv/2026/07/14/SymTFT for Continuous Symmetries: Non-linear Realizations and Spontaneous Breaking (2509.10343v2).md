@@ -18,7 +18,7 @@ Back to [[2026_07_14_overview]].
 
 The reusable mechanism is a “sandwich” construction: a topological bulk transports symmetry data between a symmetry boundary and a physical boundary. Closing the interval converts the boundary conditions into an ordinary Goldstone or CCWZ action. When the physical spacetime is noncompact, a lateral boundary and its corners encode the choice between broken and unbroken phases.
 
-# Continuous symmetry from non-Abelian BF theory
+# Continuous Symmetry from Non-Abelian BF Theory
 
 For a compact Lie group $G$ with an invariant positive pairing, the basic $(d+1)$-dimensional SymTFT is
 
@@ -56,7 +56,7 @@ This character-valued factor becomes the non-Abelian Ward-identity factor in the
 
 The long source contains additional higher-linking, fusion, mixed Chern--Simons, and non-flat-background proposals. They are important to the paper's scope but are not needed for the boundary-condition mechanism reconstructed here.
 
-# Abelian higher-form Goldstone action
+# Abelian Higher-Form Goldstone Action
 
 For a $U(1)$ $p$-form symmetry, the bulk fields are $C_{p+1}$ and $B_{d-p-1}$ with
 
@@ -96,7 +96,7 @@ $$
 
 This is the higher-form Goldstone action including the mixed background term. When $d=2p+2$, exchanging $B$ and $C$ implements $R\leftrightarrow R^{-1}$, unifying the topological core of compact-boson T-duality and Maxwell S-duality.
 
-# Non-Abelian boundary data and CCWZ
+# Non-Abelian Boundary Data and CCWZ
 
 For fully broken $G$, the symmetry boundary uses a $G$-valued field $\mathcal V$. Its action enforces
 
@@ -130,7 +130,7 @@ S=\frac1{2\pi}\int_{M^d} \left[ \mathcal L_{\mathrm{univ}}(P,d_QP,F_Q) +\mathcal
 
 The topological bulk does not determine all EFT coefficients. It determines which covariant objects are allowed and how the non-linear realization is assembled from boundary data.
 
-# Lateral boundaries and corners
+# Lateral Boundaries and Corners
 
 For noncompact physical spacetime,
 
@@ -171,7 +171,7 @@ The source summarizes the phases by the boundary-condition table:
 | Unbroken | $\mathcal D_A$ | $\mathcal D_B$ | $\mathcal D_A$--$\mathcal D_B$ |
 | Broken | $\mathcal D_A$ | $\mathcal D_A$ | $\mathcal D_A$--$\mathcal D_A$ |
 
-# Defect sweeping and Ward identities
+# Defect Sweeping and Ward Identities
 
 For an Abelian operator of charge $n$, a symmetry defect can be swept away in the unbroken configuration, giving
 
@@ -199,7 +199,7 @@ $$\begin{align}
 
 In the fully broken zero-form case, the family of lateral boundary conditions is parametrized by $G$; for Abelian higher-form symmetry, $\xi_p$ modulo integral periods supplies the Goldstone gauge-field family.
 
-# Boundary and charge translation
+# Boundary and Charge Translation
 
 | SymTFT object | Local interpretation |
 |---|---|
@@ -213,7 +213,7 @@ In the fully broken zero-form case, the family of lateral boundary conditions is
 
 This is `T1-boundary`, `T1-symmetry`, and `T3-math`. Defect linking supplies Ward data, but the paper does not construct a Hamiltonian charge, so it is not assigned `T1-charge`. The paper is medium rather than high because it does not directly construct the gravitational or gauge CPS/charge algebra used in the active projects; fully promoting the 86-page framework would also require monograph reconstruction of its fusion, higher-linking, higher-group, and appendix variation chains.
 
-# Verification note
+# Verification Note
 
 The section tree and the displayed BF, Goldstone, CCWZ, interface, and Ward-identity formulas were checked against the official TeX and rendered PDF. No independent full gauge-variation calculation was completed for the boundary actions, and the character/linking factor was not recomputed in Sage. The following boundaries should be retained:
 

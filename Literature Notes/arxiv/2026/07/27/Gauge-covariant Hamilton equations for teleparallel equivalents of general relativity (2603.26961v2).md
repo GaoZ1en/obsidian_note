@@ -17,130 +17,79 @@ Back to [[2026_07_27_overview]].
 
 Version 2 makes the paper substantially more useful than its original framing. The field-strength Legendre construction survives, but the earlier suggestion of a non-gauge Tomonaga--Schwinger bulk evolution is removed. The corrected message is that an invertible Legendre map on torsion or nonmetricity fibers does not eliminate diffeomorphism constraints, boundary flux, or the ADM refoliation algebra.
 
-## Field strengths as generalized velocities
+## Field Strengths as Generalized Velocities
 
-The paper starts from fields \(\phi^A\), a first-order field strength \(F_\mu{}^A\), and
+The paper starts from fields $\phi^A$, a first-order field strength $F_\mu{}^A$, and
 
-$$
-\Pi_A{}^\mu
-=
-\frac{\partial(\sqrt{-g}\mathcal L)}
-{\partial F_\mu{}^A}.
-$$
+$$\begin{align}
+\Pi_A{}^\mu = \frac{\partial(\sqrt{-g}\mathcal L)} {\partial F_\mu{}^A}.
+\end{align}$$
 
 The field-strength Hamiltonian density is
 
-$$
-\sqrt{-g}\mathcal H
-=
-\Pi_A{}^\mu F_\mu{}^A
--\sqrt{-g}\mathcal L.
-$$
+$$\begin{align}
+\sqrt{-g}\mathcal H = \Pi_A{}^\mu F_\mu{}^A -\sqrt{-g}\mathcal L.
+\end{align}$$
 
 When the fiber Hessian is invertible,
 
-$$
-\frac{\partial(\sqrt{-g}\mathcal H)}
-{\partial\Pi_A{}^\mu}
-=F_\mu{}^A,
-\qquad
-\left(
-\frac{\partial\mathcal H}{\partial\phi^A}
-\right)_\Pi
-=-
-\left(
-\frac{\partial\mathcal L}{\partial\phi^A}
-\right)_F.
-$$
+$$\begin{align}
+\frac{\partial(\sqrt{-g}\mathcal H)} {\partial\Pi_A{}^\mu} =F_\mu{}^A, \qquad \left( \frac{\partial\mathcal H}{\partial\phi^A} \right)_\Pi =- \left( \frac{\partial\mathcal L}{\partial\phi^A} \right)_F.
+\end{align}$$
 
-The second Hamilton equation is written with the negative formal adjoint \(E_{F,A}\) of the linearized field-strength map:
+The second Hamilton equation is written with the negative formal adjoint $E_{F,A}$ of the linearized field-strength map:
 
-$$
-E_{F,A}(\Pi)
-=-
-\frac{\partial(\sqrt{-g}\mathcal H)}
-{\partial\phi^A}.
-$$
+$$\begin{align}
+E_{F,A}(\Pi) =- \frac{\partial(\sqrt{-g}\mathcal H)} {\partial\phi^A}.
+\end{align}$$
 
 Only for the fixed-connection nonmetricity map does this reduce directly to a covariant divergence. This is already a useful distinction from a canonical time derivative.
 
 The conventions are
 
-$$
-Q_{\rho\mu\nu}=\nabla_\rho g_{\mu\nu},
-\qquad
-T^\rho{}_{\mu\nu}=2\Gamma^\rho{}_{[\mu\nu]},
-\qquad
-\kappa^2=\frac{32\pi G}{c^4},
-$$
+$$\begin{align}
+Q_{\rho\mu\nu}=\nabla_\rho g_{\mu\nu}, \qquad T^\rho{}_{\mu\nu}=2\Gamma^\rho{}_{[\mu\nu]}, \qquad \kappa^2=\frac{32\pi G}{c^4},
+\end{align}$$
 
-with signature \((-+++)\). The STEGR equivalence statement is restricted to compactly supported metric variations, or boundary conditions that remove the metric surface term, at fixed flat torsionless connection. It is not an unreduced metric-affine variation.
+with signature $(-+++)$. The STEGR equivalence statement is restricted to compactly supported metric variations, or boundary conditions that remove the metric surface term, at fixed flat torsionless connection. It is not an unreduced metric-affine variation.
 
-## STEGR: the nonmetricity Legendre map
+## STEGR: the Nonmetricity Legendre Map
 
 After discarding the Einstein-equivalence divergence in the bulk,
 
-$$
-S_{\mathrm{STEGR}}
-\simeq
--\frac1{\kappa^2}
-\int d^4x\sqrt{-g}\,
-Q_{\rho\mu\nu}\mathbb P^{\rho\mu\nu},
-$$
+$$\begin{align}
+S_{\mathrm{STEGR}} \simeq -\frac1{\kappa^2} \int d^4x\sqrt{-g}\, Q_{\rho\mu\nu}\mathbb P^{\rho\mu\nu},
+\end{align}$$
 
 where
 
-$$
-\begin{aligned}
-\mathbb P^{\rho\mu\nu}
-={}&
--\frac12Q^{\rho\mu\nu}
-+\frac12Q^{\mu\nu\rho}
-+\frac12Q^{\nu\mu\rho}
+$$\begin{aligned}
+\mathbb P^{\rho\mu\nu} ={}& -\frac12Q^{\rho\mu\nu} +\frac12Q^{\mu\nu\rho} +\frac12Q^{\nu\mu\rho}
 \\
-&+\frac12(Q^\rho-\widetilde Q^\rho)g^{\mu\nu}
--\frac14
-\left(
-g^{\rho\mu}Q^\nu+g^{\rho\nu}Q^\mu
-\right).
-\end{aligned}
-$$
+&+\frac12(Q^\rho-\widetilde Q^\rho)g^{\mu\nu} -\frac14 \left( g^{\rho\mu}Q^\nu+g^{\rho\nu}Q^\mu \right).
+\end{aligned}$$
 
 Writing
 
-$$
-\Pi^{\rho\mu\nu}=k\mathbb P^{\rho\mu\nu},
-\qquad
-k=-\frac{2\sqrt{-g}}{\kappa^2},
-$$
+$$\begin{align}
+\Pi^{\rho\mu\nu}=k\mathbb P^{\rho\mu\nu}, \qquad k=-\frac{2\sqrt{-g}}{\kappa^2},
+\end{align}$$
 
 the two traces obey
 
-$$
-\Pi^\rho=k(Q^\rho-\widetilde Q^\rho),
-\qquad
-\widetilde\Pi^\mu
-=k\left(
--\frac12\widetilde Q^\mu-\frac14Q^\mu
-\right).
-$$
+$$\begin{align}
+\Pi^\rho=k(Q^\rho-\widetilde Q^\rho), \qquad \widetilde\Pi^\mu =k\left( -\frac12\widetilde Q^\mu-\frac14Q^\mu \right).
+\end{align}$$
 
 The inverse map is
 
-$$
-\begin{aligned}
-Q_{\rho\mu\nu}
-=\frac1k\Big[
-&\Pi_{\mu\nu\rho}+\Pi_{\nu\mu\rho}
+$$\begin{aligned}
+Q_{\rho\mu\nu} =\frac1k\Big[ &\Pi_{\mu\nu\rho}+\Pi_{\nu\mu\rho}
 \\
-&+\frac13\{
-g_{\mu\nu}(\Pi_\rho-2\widetilde\Pi_\rho)
--g_{\rho\mu}(\Pi_\nu+\widetilde\Pi_\nu)
--g_{\rho\nu}(\Pi_\mu+\widetilde\Pi_\mu)
+&+\frac13\{ g_{\mu\nu}(\Pi_\rho-2\widetilde\Pi_\rho) -g_{\rho\mu}(\Pi_\nu+\widetilde\Pi_\nu) -g_{\rho\nu}(\Pi_\mu+\widetilde\Pi_\mu)
 \}
 \Big].
-\end{aligned}
-$$
+\end{aligned}$$
 
 The trace block
 
@@ -151,90 +100,57 @@ $$
 \end{pmatrix}
 $$
 
-has determinant \(-3/4\). Together with the nonzero eigenvalues on the double-trace-free sector, this removes zero modes from the declared 40-component nonmetricity fiber.
+has determinant $-3/4$. Together with the nonzero eigenvalues on the double-trace-free sector, this removes zero modes from the declared 40-component nonmetricity fiber.
 
 The Legendre transform gives
 
-$$
-\sqrt{-g}\mathcal H_{\mathrm{STEGR}}
-=
--\frac{\kappa^2}{2\sqrt{-g}}
-\left[
-\Pi^{\rho\mu\nu}\Pi_{\mu\nu\rho}
-+\frac16\Pi^2
--\frac23\Pi\cdot\widetilde\Pi
--\frac13\widetilde\Pi^2
-\right].
-$$
+$$\begin{align}
+\sqrt{-g}\mathcal H_{\mathrm{STEGR}} = -\frac{\kappa^2}{2\sqrt{-g}} \left[ \Pi^{\rho\mu\nu}\Pi_{\mu\nu\rho} +\frac16\Pi^2 -\frac23\Pi\cdot\widetilde\Pi -\frac13\widetilde\Pi^2 \right].
+\end{align}$$
 
-The first Hamilton equation reconstructs \(Q_{\rho\mu\nu}\); the second,
+The first Hamilton equation reconstructs $Q_{\rho\mu\nu}$; the second,
 
-$$
-\nabla_\rho\Pi^{\rho\mu\nu}
-=-
-\left(
-\frac{\partial\sqrt{-g}\mathcal H}
-{\partial g_{\mu\nu}}
-\right)_\Pi
-+\text{matter},
-$$
+$$\begin{align}
+\nabla_\rho\Pi^{\rho\mu\nu} =- \left( \frac{\partial\sqrt{-g}\mathcal H} {\partial g_{\mu\nu}} \right)_\Pi +\text{matter},
+\end{align}$$
 
 is reduced in the paper to the Einstein equation.
 
-## MTEGR: the torsion analogue
+## MTEGR: the Torsion Analogue
 
 For metric teleparallel gravity, the tetrad momentum is proportional to the torsion superpotential:
 
-$$
-P_a{}^{\mu\nu}
-=-\frac{2|e|}{\kappa^2}
-e_a{}^\rho S_\rho{}^{\mu\nu}.
-$$
+$$\begin{align}
+P_a{}^{\mu\nu} =-\frac{2|e|}{\kappa^2} e_a{}^\rho S_\rho{}^{\mu\nu}.
+\end{align}$$
 
 The inverse is
 
-$$
-T_{\rho\mu\nu}
-=\frac{\kappa^2}{2|e|}
-\left[
-P_{\mu\rho\nu}-P_{\nu\rho\mu}
-+\frac12g_{\rho\mu}\widetilde P_\nu
--\frac12g_{\rho\nu}\widetilde P_\mu
-\right],
-$$
+$$\begin{align}
+T_{\rho\mu\nu} =\frac{\kappa^2}{2|e|} \left[ P_{\mu\rho\nu}-P_{\nu\rho\mu} +\frac12g_{\rho\mu}\widetilde P_\nu -\frac12g_{\rho\nu}\widetilde P_\mu \right],
+\end{align}$$
 
 and
 
-$$
-|e|\mathcal H_{\mathrm{MTEGR}}
-=-\frac{\kappa^2}{2|e|}
-\left[
-P^{\rho\mu\nu}P_{\mu\nu\rho}
-+\frac12\widetilde P^2
-\right].
-$$
+$$\begin{align}
+|e|\mathcal H_{\mathrm{MTEGR}} =-\frac{\kappa^2}{2|e|} \left[ P^{\rho\mu\nu}P_{\mu\nu\rho} +\frac12\widetilde P^2 \right].
+\end{align}$$
 
 The second Hamilton equation becomes
 
-$$
-2D_\nu P_a{}^{\mu\nu}
-+
-\left(
-\frac{\partial |e|\mathcal H}{\partial e^a{}_\mu}
-\right)_P
-=
--\frac4{\kappa^2}|e|e_a{}^\rho G_\rho{}^\mu.
-$$
+$$\begin{align}
+2D_\nu P_a{}^{\mu\nu} + \left( \frac{\partial |e|\mathcal H}{\partial e^a{}_\mu} \right)_P = -\frac4{\kappa^2}|e|e_a{}^\rho G_\rho{}^\mu.
+\end{align}$$
 
 Thus the field-strength Hamiltonian description reproduces classical GR rather than generating an additional physical time.
 
-## Regularity does not count the gravitational constraints
+## Regularity Does Not Count the Gravitational Constraints
 
 The statement
 
-$$
+$$\begin{align}
 \ker W|_V=0
-$$
+\end{align}$$
 
 excludes only primary constraints caused by degeneracy of the selected field-strength Legendre map. It does not remove:
 
@@ -245,239 +161,180 @@ excludes only primary constraints caused by degeneracy of the selected field-str
 
 In the compact, boundaryless, boundary-subtracted, trivial-holonomy reduced ADM sector, the constraints are the standard ones:
 
-$$
-\mathcal H_\perp
-=
-\frac{\kappa^2}{2\sqrt\gamma}
-\left(
-\pi^{ij}\pi_{ij}-\frac12\pi^2
-\right)
--\frac{2\sqrt\gamma}{\kappa^2}
+$$\begin{align}
+\mathcal H_\perp = \frac{\kappa^2}{2\sqrt\gamma} \left( \pi^{ij}\pi_{ij}-\frac12\pi^2 \right) -\frac{2\sqrt\gamma}{\kappa^2}
 \,{}^{(3)}R
 \approx0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \mathcal H_i=-2D_j\pi_i{}^j\approx0,
-$$
+\end{align}$$
 
 together with the lapse and shift primary constraints. The resulting first-class count leaves two local degrees of freedom. This is a declared reduced-sector result, not an unreduced Dirac classification.
 
-## CPS pullback and the normal generator
+## CPS Pullback and the Normal Generator
 
-The covariant current associated with a field-dependent diffeomorphism parameter \(\xi\) is written
+The covariant current associated with a field-dependent diffeomorphism parameter $\xi$ is written
 
-$$
-J^\mu[\xi]
-=
-\Pi_A{}^\mu\mathcal L_\xi\phi^A
--\xi^\mu\sqrt{-g}\mathcal L.
-$$
+$$\begin{align}
+J^\mu[\xi] = \Pi_A{}^\mu\mathcal L_\xi\phi^A -\xi^\mu\sqrt{-g}\mathcal L.
+\end{align}$$
 
 Its variation has the CPS form
 
-$$
-\delta J^\mu
-=
-\omega^\mu(\delta,X_\xi)
-+\partial_\nu k_\xi^{\mu\nu}
--\xi^\mu E_A\delta\phi^A,
-$$
+$$\begin{align}
+\delta J^\mu = \omega^\mu(\delta,X_\xi) +\partial_\nu k_\xi^{\mu\nu} -\xi^\mu E_A\delta\phi^A,
+\end{align}$$
 
 with
 
-$$
-k_\xi^{\mu\nu}
-=2\xi^{[\nu}\Pi_A{}^{\mu]}\delta\phi^A.
-$$
+$$\begin{align}
+k_\xi^{\mu\nu} =2\xi^{[\nu}\Pi_A{}^{\mu]}\delta\phi^A.
+\end{align}$$
 
-After pullback to a hypersurface \(\Sigma\),
+After pullback to a hypersurface $\Sigma$,
 
-$$
-\Omega_\Sigma
-=\int_\Sigma
-\delta\pi_{\Sigma A}\wedge\delta\phi^A.
-$$
+$$\begin{align}
+\Omega_\Sigma =\int_\Sigma \delta\pi_{\Sigma A}\wedge\delta\phi^A.
+\end{align}$$
 
 On shell,
 
-$$
-\delta G_\Sigma^J[\xi]
-=
-\Omega_\Sigma(\delta,X_\xi)
-+F_{\partial\Sigma,\xi}(\delta).
-$$
+$$\begin{align}
+\delta G_\Sigma^J[\xi] = \Omega_\Sigma(\delta,X_\xi) +F_{\partial\Sigma,\xi}(\delta).
+\end{align}$$
 
 A Hamiltonian generator therefore exists only after the boundary flux is set to zero or made integrable.
 
 For lapse and shift,
 
-$$
-G_\Sigma[N,N^i]
-=
-\int_\Sigma
-\left(
-N\mathcal C_\perp+N^i\mathcal C_i
-\right)
-+B_{\partial\Sigma}.
-$$
+$$\begin{align}
+G_\Sigma[N,N^i] = \int_\Sigma \left( N\mathcal C_\perp+N^i\mathcal C_i \right) +B_{\partial\Sigma}.
+\end{align}$$
 
 Before constraints are imposed, the normal density contains
 
-$$
-\mathcal C_\perp^{\mathrm{raw}}
-=
-\mathcal H
-+P_A(\mathcal L_n\phi^A-F_\perp{}^A)
--\bar\Pi_A{}^iF_i{}^A.
-$$
+$$\begin{align}
+\mathcal C_\perp^{\mathrm{raw}} = \mathcal H +P_A(\mathcal L_n\phi^A-F_\perp{}^A) -\bar\Pi_A{}^iF_i{}^A.
+\end{align}$$
 
-The field-strength Hamiltonian \(\mathcal H\) is only one summand. It is not by itself the normal-deformation generator.
+The field-strength Hamiltonian $\mathcal H$ is only one summand. It is not by itself the normal-deformation generator.
 
-## Refoliations and field-dependent brackets
+## Refoliations and Field-Dependent Brackets
 
 For field-dependent hypersurface deformations the appropriate bracket is the Bergmann--Komar bracket,
 
-$$
-[\xi,\eta]_{\mathrm{BK}}
-=
-[\xi,\eta]_{\mathrm{Lie}}
--X_\xi\eta
-+X_\eta\xi.
-$$
+$$\begin{align}
+[\xi,\eta]_{\mathrm{BK}} = [\xi,\eta]_{\mathrm{Lie}} -X_\xi\eta +X_\eta\xi.
+\end{align}$$
 
 In the reduced compact sector the generators obey
 
-$$
+$$\begin{align}
 \{D[N],D[M]\}=D\!\left([N,M]\right),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \{D[N],H[M]\}=H[\mathcal L_NM],
-$$
+\end{align}$$
 
-$$
-\{H[N],H[M]\}
-=
-D\!\left[
-h^{ij}
-(N\partial_jM-M\partial_jN)
-\right].
-$$
+$$\begin{align}
+\{H[N],H[M]\} = D\!\left[ h^{ij} (N\partial_jM-M\partial_jN) \right].
+\end{align}$$
 
 This is the standard hypersurface-deformation algebra. A regular covariant field-strength map changes the Legendre description, not the refoliation symmetry.
 
-## Restoring the equivalence divergence at a corner
+## Restoring the Equivalence Divergence at a Corner
 
 The divergence discarded when establishing Einstein equivalence must be restored when charges or boundaries are present. For STEGR the corresponding corner term is
 
-$$
-B_{\partial\Sigma}^{\mathrm{STEGR,eq}}[N,N^i]
-=
-\oint_{\partial\Sigma}dS
-\left[
-N\,s_\mu\bar\Pi^\mu
--(s_iN^i)P_{\mathrm{tr}}
-\right],
-$$
+$$\begin{align}
+B_{\partial\Sigma}^{\mathrm{STEGR,eq}}[N,N^i] = \oint_{\partial\Sigma}dS \left[ N\,s_\mu\bar\Pi^\mu -(s_iN^i)P_{\mathrm{tr}} \right],
+\end{align}$$
 
 where
 
-$$
-P_{\mathrm{tr}}
-=\epsilon_n n_\mu\bar\Pi^\mu.
-$$
+$$\begin{align}
+P_{\mathrm{tr}} =\epsilon_n n_\mu\bar\Pi^\mu.
+\end{align}$$
 
 The shift term disappears only if the deformation preserves the corner,
 
-$$
+$$\begin{align}
 s_iN^i=0.
-$$
+\end{align}$$
 
 This is the most portable boundary lesson: do not discard equivalence divergences, normal displacement, or shift/corner pieces before the boundary conditions have been stated.
 
-## Bianchi I and volume time
+## Bianchi I and Volume Time
 
 For diagonal Bianchi I, the kinetic matrix and its inverse are
 
-$$
-A=I-\mathbf1\mathbf1^T,
-\qquad
-A^{-1}=I-\frac12\mathbf1\mathbf1^T.
-$$
+$$\begin{align}
+A=I-\mathbf1\mathbf1^T, \qquad A^{-1}=I-\frac12\mathbf1\mathbf1^T.
+\end{align}$$
 
-With logarithmic scale factors \(\beta_i\),
+With logarithmic scale factors $\beta_i$,
 
-$$
-L_{\mathrm{BI}}
-=-\frac{2V}{\kappa^2N}
-\dot\beta^T A\dot\beta,
-\qquad
-P=-\frac{4V}{\kappa^2N}A\dot\beta,
-$$
+$$\begin{align}
+L_{\mathrm{BI}} =-\frac{2V}{\kappa^2N} \dot\beta^T A\dot\beta, \qquad P=-\frac{4V}{\kappa^2N}A\dot\beta,
+\end{align}$$
 
 and
 
-$$
-H=N\mathcal C,
-\qquad
-\mathcal C
-=-\frac{\kappa^2}{8V}
-P^TA^{-1}P
-\approx0.
-$$
+$$\begin{align}
+H=N\mathcal C, \qquad \mathcal C =-\frac{\kappa^2}{8V} P^TA^{-1}P \approx0.
+\end{align}$$
 
 The swept four-volume
 
-$$
-\frac{d\tau}{ds}
-=\int_\Sigma N\,d\Sigma
-$$
+$$\begin{align}
+\frac{d\tau}{ds} =\int_\Sigma N\,d\Sigma
+\end{align}$$
 
 reparametrizes a chosen foliation. It does not remove the local shape modes of the lapse or convert the Hamiltonian constraint into unconstrained evolution.
 
-## Transfer to CPS and AdS boundary work
+## Transfer to CPS and AdS Boundary Work
 
 The paper supplies a three-layer audit:
 
-$$
+$$\begin{align}
 \text{field-strength Legendre map}
 \;\longrightarrow\;
 \text{CPS hypersurface pullback}
 \;\longrightarrow\;
 \text{constraint plus corner generator}.
-$$
+\end{align}$$
 
 For finite-boundary or AdS work, the relevant instructions are:
 
 - restore equivalence divergences before defining charges;
 - retain both lapse-normal and shift-corner terms;
 - distinguish invertibility of a covariant Legendre map from the Dirac constraint count;
-- require integrability of \(F_{\partial\Sigma,\xi}\) before naming a Hamiltonian charge.
+- require integrability of $F_{\partial\Sigma,\xi}$ before naming a Hamiltonian charge.
 
 The paper is not yet a turnkey treatment of null hypersurfaces, nontrivial holonomy, an unreduced connection/multiplier phase space, or asymptotically renormalized charges.
 
-## Verification boundary
+## Verification Boundary
 
 Checked with Mathematica:
 
-- A rational Lorentzian four-dimensional component test of the displayed \(Q\leftrightarrow\Pi\) inverse gave zero residual in every tested component. This is a nontrivial test, not a general tensor proof.
-- The trace-block determinant is \(-3/4\), with inverse
+- A rational Lorentzian four-dimensional component test of the displayed $Q\leftrightarrow\Pi$ inverse gave zero residual in every tested component. This is a nontrivial test, not a general tensor proof.
+- The trace-block determinant is $-3/4$, with inverse
 
-  $$
-  \begin{pmatrix}
+$$
+\begin{pmatrix}
   2/3&-4/3\\
   -1/3&-4/3
   \end{pmatrix}.
-  $$
+$$
 
-- \(AA^{-1}=I\) for the Bianchi-I matrices, and the Legendre transform gives
+- $AA^{-1}=I$ for the Bianchi-I matrices, and the Legendre transform gives
 
-  $$
-  H
-  =-\frac{\kappa^2N}{8V}
-  P^TA^{-1}P.
-  $$
+$$\begin{align}
+H =-\frac{\kappa^2N}{8V} P^TA^{-1}P.
+\end{align}$$
 
 Not independently verified:
 

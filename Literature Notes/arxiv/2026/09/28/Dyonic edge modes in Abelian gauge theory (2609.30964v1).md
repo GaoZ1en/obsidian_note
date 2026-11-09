@@ -13,13 +13,13 @@ summary: "Temporal boundary prescriptions retain dressed electric and magnetic c
 tags: []
 ---
 
-# Boundary conditions that retain both charge families
+# Boundary Conditions That Retain Both Charge Families
 
 The usable result is an explicit regional Maxwell action with boundary Chern–Simons fields and a choice of temporal boundary data for which both an electric-type charge and a magnetic charge have nonzero variations. The electric-type charge includes a boundary Chern–Simons flux. This is a concrete test of how a regional action and its allowed variations determine the physical edge algebra; it is not a construction of the full sewing map between two independent regions.
 
 **Source-derived:** [version 1](https://arxiv.org/abs/2609.30964v1), complete official PDF and TeX. **Checked:** the local variational chain below, boundary wedge/conservation identities, duality block algebra, and the stated smooth-parameter central-term argument. General global sectors and a quantum sewing theorem are not established by these checks.
 
-# Source map and conventions
+# Source Map and Conventions
 
 | Source | Content and dependency |
 |---|---|
@@ -35,14 +35,13 @@ Here page numbers are the printed numbers, one less than PDF page numbers. The t
 
 The Hodge star on bulk two-forms satisfies $*^2=-1$. Write
 
-$$
-F=dA,\qquad G=\frac{2\pi}{e^2}*F-\frac{\theta}{2\pi}F,
-\qquad \tau=\frac{\theta}{2\pi}+\frac{2\pi i}{e^2}.
-$$
+$$\begin{align}
+F=dA,\qquad G=\frac{2\pi}{e^2}*F-\frac{\theta}{2\pi}F, \qquad \tau=\frac{\theta}{2\pi}+\frac{2\pi i}{e^2}.
+\end{align}$$
 
 $e,\theta$ are fixed couplings. The bulk equation is $dG=0$, together with $dF=0$. Boundary fields are $a^0=A|_\Delta+d\phi^0$ and $a^j=A^j+d\phi^j$, $j=1,\ldots,n$. The compact scalars dress the potentials. Indices $J,L$ run from $0$ through $n$; $a,b$ instead denote sphere coordinates. $d$ is the spacetime exterior derivative and $\delta$ the field-space derivative. Wedges involving two variations carry both gradings.
 
-# Action, variations and the corner symplectic structure
+# Action, Variations and the Corner Symplectic Structure
 
 The source action (2.8)–(2.10) is
 
@@ -58,120 +57,107 @@ $K$ is symmetric integral, $p\in\mathbb Z$, and $\ker(v^T)\cap\ker k=0$. The spi
 
 The first variation can be reconstructed locally using
 
-$$
-\delta L_M=-\frac1{2\pi}\delta F\wedge G
-=-\frac1{2\pi}\delta A\wedge dG
--\frac1{2\pi}d(\delta A\wedge G),
-$$
+$$\begin{align}
+\delta L_M=-\frac1{2\pi}\delta F\wedge G =-\frac1{2\pi}\delta A\wedge dG -\frac1{2\pi}d(\delta A\wedge G),
+\end{align}$$
 
-$$
-\delta(a^J K_{JL}da^L)
-=2\delta a^J K_{JL}da^L-d(a^J K_{JL}\delta a^L).
-$$
+$$\begin{align}
+\delta(a^J K_{JL}da^L) =2\delta a^J K_{JL}da^L-d(a^J K_{JL}\delta a^L).
+\end{align}$$
 
 The second equality uses $K=K^T$ and the graded Leibniz rule. With the source's face orientation, the boundary variational two-forms are
 
-$$
+$$\begin{align}
 B_J=\delta_{J0}G+K_{JL}da^L.
-$$
+\end{align}$$
 
 Only the sum $\sum_J\delta a^J\wedge B_J/(2\pi)$ must be a face total derivative for a variational principle. The paper imposes the **stronger, componentwise** condition
 
-$$
-\frac1{2\pi}\delta a^J\wedge B_J\big|_\Delta=dc^J
-\quad\text{for each }J.
-$$
+$$\begin{align}
+\frac1{2\pi}\delta a^J\wedge B_J\big|_\Delta=dc^J \quad\text{for each }J.
+\end{align}$$
 
 Thus the analysis is a useful family of admissible boundary prescriptions, not a classification of all possible boundary conditions. Most of the paper then sets $c^J=0$.
 
 Equation (3.8) gives
 
-$$
-\Omega_\Sigma=\frac1{2\pi}\int_\Sigma\delta A\wedge\delta G
--\frac1{4\pi}\int_S\delta a^J\wedge K_{JL}\delta a^L
-+\frac1{2\pi}\int_S\delta\phi^0\,\delta G
-+\int_S\sum_J\delta c^J.
-$$
+$$\begin{align}
+\Omega_\Sigma=\frac1{2\pi}\int_\Sigma\delta A\wedge\delta G -\frac1{4\pi}\int_S\delta a^J\wedge K_{JL}\delta a^L +\frac1{2\pi}\int_S\delta\phi^0\,\delta G +\int_S\sum_J\delta c^J.
+\end{align}$$
 
 The bulk potential follows from the preceding variation; replacing boundary $A$ by $a-d\phi$ supplies the edge corner term after integration by parts and $dG=0$. The boundary Chern–Simons potential supplies the quadratic corner term. These terms must be kept together when testing degeneracy. The charge convention is $\delta Q=I_X\Omega$, as in (3.10); switching the vault's Hamiltonian convention can reverse the named generator's sign.
 
-# Which shifts are physical?
+# Which Shifts Are Physical?
 
 For $B_J=0$, charge variations vanish. Fixed-curvature Dirichlet conditions also remove the charge variations in the setting considered by the paper. A dressed field by itself does not prove the presence of a physical edge degree of freedom.
 
 Instead impose (3.13)
 
-$$
-\delta a^J_t=0,\qquad (B_J)_{at}=0,
-\qquad J=0,\ldots,n.
-$$
+$$\begin{align}
+\delta a^J_t=0,\qquad (B_J)_{at}=0, \qquad J=0,\ldots,n.
+\end{align}$$
 
 The prescribed temporal component is held fixed under variations; it need not be zero as a field. The spatial two-form $(B_J)_{ab}$ remains free. The face variation vanishes: in $(t,x,y)$ coordinates its coefficient is
 
-$$
+$$\begin{align}
 \delta a_t B_{xy}-\delta a_x B_{ty}+\delta a_y B_{tx}=0.
-$$
+\end{align}$$
 
 This explicit zero is independently checked. The allowed shift parameters are field-independent, smooth and time-independent, $\alpha^J=\alpha^J(\Omega)$. Contracting the source symplectic form and integrating by parts on closed $S$ gives
 
-$$
-\delta Q_J[\alpha^J]=\frac1{2\pi}\delta\int_S\alpha^J B_J,
-\qquad Q_J[\alpha^J]=\frac1{2\pi}\int_S\alpha^J B_J,
-$$
+$$\begin{align}
+\delta Q_J[\alpha^J]=\frac1{2\pi}\delta\int_S\alpha^J B_J, \qquad Q_J[\alpha^J]=\frac1{2\pi}\int_S\alpha^J B_J,
+\end{align}$$
 
 up to a field-independent constant. The boundary equations do not force these functionals to be constant. Conservation follows from $dB_J=0$ on shell and
 
-$$
+$$\begin{align}
 d(\alpha^J B_J)=d\alpha^J\wedge B_J+\alpha^JdB_J=0:
-$$
+\end{align}$$
 
 both $d\alpha^J$ and $B_J$ are spatial forms on a two-dimensional slice. This is a boundary conservation statement under the selected prescription, not a claim of independently conserved bare electric and magnetic fluxes in arbitrary boundary theories.
 
 With
 
-$$
-Q_e[\alpha]=e^{-2}\int_S\alpha *F,\quad
-Q_m[\alpha]=(2\pi)^{-1}\int_S\alpha F,\quad
-Q^l_{CS}[\alpha]=(2\pi)^{-1}\int_S\alpha da^l,
-$$
+$$\begin{align}
+Q_e[\alpha]=e^{-2}\int_S\alpha *F,\quad Q_m[\alpha]=(2\pi)^{-1}\int_S\alpha F,\quad Q^l_{CS}[\alpha]=(2\pi)^{-1}\int_S\alpha da^l,
+\end{align}$$
 
 the charges decompose as
 
-$$
-Q_0=Q_e+\left(p-\frac\theta{2\pi}\right)Q_m+v_lQ^l_{CS},
-\qquad Q_j=v_jQ_m+k_{jl}Q^l_{CS}.
-$$
+$$\begin{align}
+Q_0=Q_e+\left(p-\frac\theta{2\pi}\right)Q_m+v_lQ^l_{CS}, \qquad Q_j=v_jQ_m+k_{jl}Q^l_{CS}.
+\end{align}$$
 
 These combinations are conserved; individual displayed constituents generally are not. In mixed prescriptions, impose temporal conditions on selected labels and $B_J=0$ on the rest. Only the selected shift families remain physical. The paper's count is a count of local charge/edge-field families, not a proof that every globally constant smearing has a nonzero charge. In a smooth, source-free trivial-bundle ball, Gauss/Stokes constraints can remove integrated zero modes.
 
-# Two-charge example and the central term
+# Two-Charge Example and the Central Term
 
 At $\theta=0$ and $K=\left(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\right)$, impose temporal conditions for both labels. Then
 
-$$
+$$\begin{align}
 Q_0=Q_e+Q^1_{CS},\qquad Q_1=Q_m.
-$$
+\end{align}$$
 
 This differs from the earlier prescription (3.26), which allowed $\delta a^0=\delta\Lambda_a d\Omega^a+d\delta\lambda$ and needed a nonzero face potential $c$. That enlargement of allowed variations rendered the $\phi^0$ shift redundant. The change of admissible variations, rather than the mere addition of an edge scalar, accounts for the new physical electric-type family.
 
 The formal charge bracket (3.21) is
 
-$$
-\{Q_I[\alpha],Q_J[\beta]\}
-=\frac{K_{IJ}}{2\pi}\int_S d\alpha\wedge d\beta.
-$$
+$$\begin{align}
+\{Q_I[\alpha],Q_J[\beta]\} =\frac{K_{IJ}}{2\pi}\int_S d\alpha\wedge d\beta.
+\end{align}$$
 
 For globally defined smooth parameters on closed $S$, $d\alpha\wedge d\beta=d(\alpha d\beta)$, so Stokes' theorem makes this zero. A spherical-harmonic example was also integrated explicitly. Singular parameters require excisions or operator insertions and can change the action; the paper explicitly leaves their physical interpretation open. The result does **not** establish a nonzero central extension of the smooth physical charge algebra.
 
 Wilson and 't Hooft endpoints motivate the dyonic interpretation of the edge variables. Turning that interpretation into a regional observable map requires specifying admissible line endpoints and dressing, not just reading off a charge vector.
 
-# S and T walls: transporting the boundary prescription
+# S and T Walls: Transporting the Boundary Prescription
 
 An S wall separates $M_-$ from $M_+$ and has action $(2\pi)^{-1}\int_W a_-\wedge da_+$. Its independent potential variations give (4.5)
 
-$$
+$$\begin{align}
 G_-+F_+=0,\qquad G_+-F_-=0.
-$$
+\end{align}$$
 
 Thus $(F_-,G_-)=(G_+,-F_+)$ and $\tau_-=-1/\tau_+$. After fusion, the new boundary vector is $(\widetilde a^0,\widetilde a^1,\widetilde a^{j+1})=(a_-,a_+,a^j)$ and
 
@@ -184,14 +170,13 @@ The old temporal conditions are transported to labels $1,\ldots,n+1$. Label $0$ 
 
 Under T,
 
-$$
-\widetilde\theta=\theta+2\pi,\quad\widetilde p=p+1,
-\quad\widetilde F=F,\quad\widetilde G=G-F.
-$$
+$$\begin{align}
+\widetilde\theta=\theta+2\pi,\quad\widetilde p=p+1, \quad\widetilde F=F,\quad\widetilde G=G-F.
+\end{align}$$
 
 Using $da^0=F|_\Delta$ gives $\widetilde B_J=B_J$ and hence invariant physical boundary charges. The bulk displacement flux alone changes by $-Q_m$. There is no contradiction: the boundary level shift compensates it, and $p-\theta/(2\pi)$ is invariant.
 
-# Appendix A: reduction after two S transformations
+# Appendix A: Reduction After Two S Transformations
 
 For the two-charge example the successive matrices are
 
@@ -205,21 +190,21 @@ The first two new $B$'s vanish. In particular $d(a^0_{(2)}+a^2_{(2)})=0$. Since 
 
 The matrix reduction was independently checked by inserting $(a_C^0,0,-a_C^0,-a_C^1)$ into $K^{(2)}$. This computes the surviving quadratic coupling: terms containing $a^1_{(2)}$ cancel when $a^2_{(2)}=-a^0_{(2)}$, so setting its coefficient to zero in this algebraic embedding is not an extra physical gauge fixing. Nontrivial first cohomology and bundle sectors need additional flat data; the paper's spherical reduction must not be transported unchanged to a torus or a punctured face.
 
-# Reusable regional data and limits
+# Reusable Regional Data and Limits
 
 The concrete package to borrow is $(S_M,S_\Delta,K,a^J,B_J,\delta a_t^J,(B_J)_{at},\Omega,Q_J)$. It independently supplies the action and allowed face variations before charge reduction. A possible two-region construction still has to choose orientations, interface sources, matching constraints and the common gauge quotient. Matching charge values alone does not construct the regional configuration or solution space. The paper does not provide a quantum state pairing or show that these boundary symmetries survive arbitrary sewing.
 
 The derivation dependencies are
 
-$$
+$$\begin{align}
 (S_M,S_\Delta)\ \longrightarrow\ B_J,\Omega
 \ \xrightarrow{\text{temporal prescription}}\ Q_J
 \ \xrightarrow{dB_J=0}\ \text{conservation},
-$$
+\end{align}$$
 
 with wall matching transporting the entire prescription, and smoothness/topology separately determining whether a central term survives.
 
-# Verification and evidence ledger
+# Verification and Evidence Ledger
 
 | Evidence | Target and result |
 |---|---|

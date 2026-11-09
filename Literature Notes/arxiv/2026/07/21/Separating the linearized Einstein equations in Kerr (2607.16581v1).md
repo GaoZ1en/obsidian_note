@@ -16,104 +16,97 @@ Back to [[2026_07_21_overview]].
 
 The transferable mechanism is computational: combine the field equations with gauge, hidden symmetry, trace, parity, and Weyl-scalar constraints until all metric components can be eliminated in favor of separated master functions. The result should be read as a reconstruction inside a stated ansatz and generic parameter region, not as a proof that every Kerr perturbation is captured.
 
-# Kerr perturbations and the constrained system
+# Kerr Perturbations and the Constrained System
 
-The Boyer--Lindquist variables are \(x^\mu=(t,r,x,\phi)\) with \(x=\cos\theta\), and
+The Boyer--Lindquist variables are $x^\mu=(t,r,x,\phi)$ with $x=\cos\theta$, and
 
-$$
-X=r^2+a^2-2Mr,\qquad
-Y=1-x^2,\qquad
-H=r^2+a^2x^2.
-$$
+$$\begin{align}
+X=r^2+a^2-2Mr,\qquad Y=1-x^2,\qquad H=r^2+a^2x^2.
+\end{align}$$
 
-For \(h_{\mu\nu}=\delta g_{\mu\nu}\), the starting ingredients are:
+For $h_{\mu\nu}=\delta g_{\mu\nu}$, the starting ingredients are:
 
-- ten vacuum equations \(\delta R_{\mu\nu}=0\);
+- ten vacuum equations $\delta R_{\mu\nu}=0$;
 - four de Donder constraints;
-- ten eigenvalue equations for the rank-four symmetry operator \(\mathcal K_4\) built from the Kerr Killing--Yano tensor.
+- ten eigenvalue equations for the rank-four symmetry operator $\mathcal K_4$ built from the Kerr Killing--Yano tensor.
 
 With the harmonic convention
 
-$$
+$$\begin{align}
 h_{\mu\nu}=e^{-i(\omega t-m\phi)}f_{\mu\nu}(r,x),
-$$
+\end{align}$$
 
-the problem is a coupled system of 24 PDEs for ten component functions. Two further constraints define the extreme Weyl master functions \(f_0,f_4\), bringing the warmup system to 26 equations.
+the problem is a coupled system of 24 PDEs for ten component functions. Two further constraints define the extreme Weyl master functions $f_0,f_4$, bringing the warmup system to 26 equations.
 
 The paper uses
 
-$$
+$$\begin{align}
 \rho_\pm=r\pm iax,
-$$
+\end{align}$$
 
-and distinguishes \(\partial_r\) by a dot and \(\partial_x\) by a prime. Fixed parity is implemented by
+and distinguishes $\partial_r$ by a dot and $\partial_x$ by a prime. Fixed parity is implemented by
 
-$$
+$$\begin{align}
 \mathcal P f(r,x)=f(r,-x),
-$$
+\end{align}$$
 
-with a sign \(\epsilon=\pm1\) assigned to each tensor component and parity-related master functions
+with a sign $\epsilon=\pm1$ assigned to each tensor component and parity-related master functions
 
-$$
+$$\begin{align}
 \widetilde f_{0,4}=\epsilon f_{0,4}(r,-x).
-$$
+\end{align}$$
 
-# Differentiate--cancel--simplify elimination
+# Differentiate--Cancel--Simplify Elimination
 
 The algorithm repeatedly differentiates equations, cancels their highest derivatives against other equations, and simplifies the remainder.
 
-1. The warmup first removes higher \(r\) derivatives, giving ten radial evolution relations plus sixteen residual PDEs.
-2. To discover angular reductions, the calculation temporarily assigns numerical values to \(M,a,\omega,m,\lambda\). This produces angular Teukolsky equations and radial equations for \(f_0,f_4\), but does not close on every metric component.
-3. The trace of the field equation obeys \(\Box h=0\). The paper then **restricts** to
+1. The warmup first removes higher $r$ derivatives, giving ten radial evolution relations plus sixteen residual PDEs.
+2. To discover angular reductions, the calculation temporarily assigns numerical values to $M,a,\omega,m,\lambda$. This produces angular Teukolsky equations and radial equations for $f_0,f_4$, but does not close on every metric component.
+3. The trace of the field equation obeys $\Box h=0$. The paper then **restricts** to
 
-$$
+$$\begin{align}
 h=g^{\mu\nu}h_{\mu\nu}=0.
-$$
+\end{align}$$
 
-This is a selected traceless spin-two sector; \(\Box h=0\) alone does not imply \(h=0\).
-4. Adding parity-conjugate Weyl constraints gives 28 equations. Solving the trace condition removes \(f_{t\phi}\), leaving nine metric functions and nine radial relations.
-5. Further elimination leaves \(f_{tt}\) and \(f_{xx}\); fixing a numerical \(r\) then eliminates \(f_{tt}\) and produces a twelfth-order angular equation for \(f_{xx}\).
+This is a selected traceless spin-two sector; $\Box h=0$ alone does not imply $h=0$.
+4. Adding parity-conjugate Weyl constraints gives 28 equations. Solving the trace condition removes $f_{t\phi}$, leaving nine metric functions and nine radial relations.
+5. Further elimination leaves $f_{tt}$ and $f_{xx}$; fixing a numerical $r$ then eliminates $f_{tt}$ and produces a twelfth-order angular equation for $f_{xx}$.
 
 The closing ansatz is
 
-$$
-f_{xx}
-=(HY)^{-n}
-\sum_i\left[p_i(x)f_i+q_i(x)f_i'\right],
-\qquad
-f_i\in\{f_0,f_4,\widetilde f_0,\widetilde f_4\},
-\tag{source: ansatz.fxx1}
-$$
+$$\begin{align}
+f_{xx} =(HY)^{-n} \sum_i\left[p_i(x)f_i+q_i(x)f_i'\right], \qquad f_i\in\{f_0,f_4,\widetilde f_0,\widetilde f_4\}, \tag{source: ansatz.fxx1}
+\end{align}$$
 
-searched through \(n\le6\). A unique solution is reported **inside this ansatz class**. Dependence on the temporarily fixed parameters and on \(r\) is then restored by fitting coefficient ansätze. This numerical-discovery/generic-restoration step is practical but is not accompanied by a complete symbolic equivalence proof.
+searched through $n\le6$. A unique solution is reported **inside this ansatz class**. Dependence on the temporarily fixed parameters and on $r$ is then restored by fitting coefficient ansätze. This numerical-discovery/generic-restoration step is practical but is not accompanied by a complete symbolic equivalence proof.
 
-# Metric reconstruction from the extreme Weyl scalars
+# Metric Reconstruction from the Extreme Weyl Scalars
 
 After solving the trace condition, the nine remaining metric functions are written schematically as rational combinations of
 
-$$
+$$\begin{align}
 f_0,\quad f_4,\quad \widetilde f_0,\quad \widetilde f_4
-$$
+\end{align}$$
 
-and their first derivatives, with forty coefficient polynomials \(A_i(r,x)\). Remaining radial equations impose four \(B_i\) relations. Solving those produces six \(C_i\) relations and introduces the Teukolsky--Starobinsky constant \(Q\).
+and their first derivatives, with forty coefficient polynomials $A_i(r,x)$. Remaining radial equations impose four $B_i$ relations. Solving those produces six $C_i$ relations and introduces the Teukolsky--Starobinsky constant $Q$.
 
 An alternative split
 
-$$
+$$\begin{align}
 f_{\mu\nu}=f_{\mu\nu}^{(4)}+f_{\mu\nu}^{(0)}
-$$
+\end{align}$$
 
-uses forty \(D_i\) and forty \(E_i\) coefficients. Without the fixed-parity relation, the two pieces can be assigned one extreme Weyl scalar each. The paper's structural claim is therefore a metric reconstruction from separated Teukolsky data, rather than a new separated equation independent of the Teukolsky system.
+uses forty $D_i$ and forty $E_i$ coefficients. Without the fixed-parity relation, the two pieces can be assigned one extreme Weyl scalar each. The paper's structural claim is therefore a metric reconstruction from separated Teukolsky data, rather than a new separated equation independent of the Teukolsky system.
 
-# Exceptional modes and scope
+# Exceptional Modes and Scope
 
 The displayed formulas divide by powers of
 
-$$
+$$\begin{align}
 \omega,\quad M,\quad Q,\quad X,\quad Y,\quad \rho_\pm
-$$
+\end{align}$$
 
-and sometimes by separated functions. Consequently static modes, \(Q=0\), horizons \(X=0\), the rotation axis \(Y=0\), and zeros of the separated functions require limits or separate treatment. The source does not supply those branches.
+and sometimes by separated functions. Consequently static modes, $Q=0$, horizons $X=0$, the rotation axis $Y=0$, and zeros of the separated functions require limits or separate treatment. The source does not supply those branches.
 
 Other restrictions are substantive:
 
@@ -125,45 +118,41 @@ Other restrictions are substantive:
 
 These qualifications prevent the result from being called a complete, globally regular separation theorem.
 
-# What the supplemental Mathematica files contain
+# What the Supplemental Mathematica Files Contain
 
 The source distribution contains:
 
 | file | data |
 |---|---|
-| Supplemental_Eq_33_repA.m | \(A_1,\ldots,A_{40}\) |
-| Supplemental_Eq_35_repB.m | \(B_1,\ldots,B_4\) |
-| Supplemental_Eq_37_repC.m | \(C_1,\ldots,C_6\) |
-| Supplemental_Eq_40_repD.m | \(D_1,\ldots,D_{40}\) |
-| Supplemental_Eq_41_repE.m | \(E_1,\ldots,E_{40}\) |
+| Supplemental_Eq_33_repA.m | $A_1,\ldots,A_{40}$ |
+| Supplemental_Eq_35_repB.m | $B_1,\ldots,B_4$ |
+| Supplemental_Eq_37_repC.m | $C_1,\ldots,C_6$ |
+| Supplemental_Eq_40_repD.m | $D_1,\ldots,D_{40}$ |
+| Supplemental_Eq_41_repE.m | $E_1,\ldots,E_{40}$ |
 
 Each file is only a bare Wolfram replacement list. Its notation is
 
-$$
-\text{cM}=M,\qquad
-\text{sss}=\lambda,\qquad
-X[r]=r^2+a^2-2Mr,\qquad
-Y[x]=1-x^2,
-$$
+$$\begin{align}
+\text{cM}=M,\qquad \text{sss}=\lambda,\qquad X[r]=r^2+a^2-2Mr,\qquad Y[x]=1-x^2,
+\end{align}$$
 
-$$
-\text{rn}[r,x]=\rho_-=r-iax,\qquad
-\text{rp}[r,x]=\rho_+=r+iax.
-$$
+$$\begin{align}
+\text{rn}[r,x]=\rho_-=r-iax,\qquad \text{rp}[r,x]=\rho_+=r+iax.
+\end{align}$$
 
 There are no definitions of the Kerr metric, field equations, de Donder operator, symmetry operator, Weyl scalars, or Teukolsky equations. The files are coefficient data, not executable verification notebooks.
 
-# Reuse in the vault
+# Reuse in the Vault
 
 1. The constraint stack is a useful template for checking a metric-reconstruction ansatz: field equations, gauge constraints, hidden-symmetry eigenvalue, trace choice, and curvature/master-field definitions must all be tested separately.
 2. The numerical-discovery step should be followed by a generic residual substitution before a formula is imported into a Kerr/AdS calculation.
 3. Exceptional denominators should be turned into an explicit branch table rather than silently excluded.
 4. For CPS work, reconstruction must also be checked against residual gauge directions and the symplectic form; this paper establishes neither.
 
-# Verification note
+# Verification Note
 
-**Checked.** All five official supplemental files were loaded in a fresh Mathematica kernel. They are lists of unique rules with lengths \(40,4,6,40,40\) and left-hand sides \(A_1\ldots A_{40}\), \(B_1\ldots B_4\), \(C_1\ldots C_6\), \(D_1\ldots D_{40}\), and \(E_1\ldots E_{40}\). Exact comparison gives \(B_i=C_i\) for \(i=1,2,3\), while \(B_4\ne C_4\), consistent with their distinct roles.
+**Checked.** All five official supplemental files were loaded in a fresh Mathematica kernel. They are lists of unique rules with lengths $40,4,6,40,40$ and left-hand sides $A_1\ldots A_{40}$, $B_1\ldots B_4$, $C_1\ldots C_6$, $D_1\ldots D_{40}$, and $E_1\ldots E_{40}$. Exact comparison gives $B_i=C_i$ for $i=1,2,3$, while $B_4\ne C_4$, consistent with their distinct roles.
 
-**Not independently verified.** The files contain no residuals, so loading them does not test \(\delta R_{\mu\nu}=0\), de Donder gauge, the Killing--Yano eigen-equations, Weyl reconstruction, or Teukolsky separation. A full check would have to rebuild those differential operators and substitute all coefficients in source order.
+**Not independently verified.** The files contain no residuals, so loading them does not test $\delta R_{\mu\nu}=0$, de Donder gauge, the Killing--Yano eigen-equations, Weyl reconstruction, or Teukolsky separation. A full check would have to rebuild those differential operators and substitute all coefficients in source order.
 
 **Source issues.** The text calls all constraints “obviously mutually compatible,” which is stronger than the evidence shown; one displayed equation has a duplicated comma; and the uniqueness statement applies only to the finite rational ansatz searched.

@@ -14,23 +14,19 @@ summary: "Finite-lattice Villain kernels implement S and T-squared intertwiners 
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** use a finite three-dimensional periodic cubic lattice; impose the Villain $\mathbb Z$ one-form gauge quotient and the Gauss/Bianchi constraints appropriate to the chosen charge sector; adopt the paper's point-split cup product, cup-one product, Hodge projectors, and framing convention; and interpret unitarity on the physical Hilbert space rather than the unreduced tensor-product basis. Under these conditions the constructed kernels intertwine the Hamiltonians with
 
-$$
-\mathcal S:\tau\mapsto-\frac1\tau,
-\qquad
-\mathcal T^2:\tau\mapsto\tau+2,
-$$
+$$\begin{align}
+\mathcal S:\tau\mapsto-\frac1\tau, \qquad \mathcal T^2:\tau\mapsto\tau+2,
+\end{align}$$
 
 and act on charges as
 
-$$
-\mathcal S:(\rho^e,\rho^m)\mapsto(\rho^m,-\rho^e),
-\qquad
-\mathcal T^2:(\rho^e,\rho^m)\mapsto(\rho^e+2\rho^m,\rho^m),
-$$
+$$\begin{align}
+\mathcal S:(\rho^e,\rho^m)\mapsto(\rho^m,-\rho^e), \qquad \mathcal T^2:(\rho^e,\rho^m)\mapsto(\rho^e+2\rho^m,\rho^m),
+\end{align}$$
 
 after the explicit framing correction.
 
@@ -38,208 +34,160 @@ after the explicit framing correction.
 
 Relevance: **medium detailed** (`T2-model`, `T3-math`).
 
-# Villain Hilbert space and constraints
+# Villain Hilbert Space and Constraints
 
 The lattice variables are an $\mathbb R$-valued link field $\hat A^e$ and an integer plaquette field $\hat n$, with conjugate momenta $\hat\Pi^e$ and $\hat A^m$. At $\theta=0$,
 
-$$
-\hat H
-=\frac1{2\beta}\sum_{\ell}(\hat\Pi^e_\ell)^2
-+\frac\beta2\sum_p(d\hat A^e+2\pi\hat n)_p^2.
-$$
+$$\begin{align}
+\hat H =\frac1{2\beta}\sum_{\ell}(\hat\Pi^e_\ell)^2 +\frac\beta2\sum_p(d\hat A^e+2\pi\hat n)_p^2.
+\end{align}$$
 
 The physical Hilbert space obeys
 
-$$
-\partial\hat\Pi^e=0,
-\qquad
-d\hat n=0,
-$$
+$$\begin{align}
+\partial\hat\Pi^e=0, \qquad d\hat n=0,
+\end{align}$$
 
 in the neutral sector and is invariant under
 
-$$
-\hat A^e\mapsto\hat A^e+2\pi k,
-\qquad
-\hat n\mapsto\hat n-dk,
-\qquad k\in C^1(\Lambda,\mathbb Z).
-$$
+$$\begin{align}
+\hat A^e\mapsto\hat A^e+2\pi k, \qquad \hat n\mapsto\hat n-dk, \qquad k\in C^1(\Lambda,\mathbb Z).
+\end{align}$$
 
 The continuous closed shifts of $A^e$, modulo the global part of this integer gauge redundancy, form the electric $\mathrm U(1)$ one-form symmetry. Electric and magnetic charges are introduced by replacing the neutral constraints with
 
-$$
-\partial\hat\Pi^e=\rho^e,
-\qquad
-d\hat n=\rho^m.
-$$
+$$\begin{align}
+\partial\hat\Pi^e=\rho^e, \qquad d\hat n=\rho^m.
+\end{align}$$
 
-# The $\mathcal S$ kernel at $\theta=0$
+# The $\mathcal S$ Kernel at $\theta=0$
 
 The Fourier-type kernel is
 
-$$
-\mathcal K[A^{e\prime},n';A^e,n]
-=\exp\left[
-\frac{i}{2\pi}\sum
-\left(
-A^{e\prime}\cup(dA^e+2\pi n)
-+2\pi n'\cup A^e
-\right)
-\right].
-$$
+$$\begin{align}
+\mathcal K[A^{e\prime},n';A^e,n] =\exp\left[ \frac{i}{2\pi}\sum \left( A^{e\prime}\cup(dA^e+2\pi n) +2\pi n'\cup A^e \right) \right].
+\end{align}$$
 
 Integration by parts gives the operator exchange
 
-$$
-\Pi^{e\prime}\mathcal S
-=\mathcal S\frac{dA^e+2\pi n}{2\pi},
-\qquad
-\mathcal S\Pi^e
-=-\frac{dA^{e\prime}+2\pi n'}{2\pi}\mathcal S,
-$$
+$$\begin{align}
+\Pi^{e\prime}\mathcal S =\mathcal S\frac{dA^e+2\pi n}{2\pi}, \qquad \mathcal S\Pi^e =-\frac{dA^{e\prime}+2\pi n'}{2\pi}\mathcal S,
+\end{align}$$
 
 including the prescribed dual-lattice shifts. Consequently,
 
-$$
+$$\begin{align}
 \beta'=rac1{(2\pi)^2\beta},
-$$
+\end{align}$$
 
 which is the $\theta=0$ restriction of $\tau\mapsto-1/\tau$.
 
 The kernel is not asserted to be unitary on the unreduced tensor-product basis. The calculation gives
 
-$$
+$$\begin{align}
 \mathcal S^\dagger\mathcal S=U[k],
-$$
+\end{align}$$
 
 where $U[k]$ is an integer one-form gauge transformation selected by the fundamental-domain delta functions. It becomes the identity only on gauge-invariant physical states.
 
-# Why only $\mathcal T^2$ is bosonic
+# Why Only $\mathcal T^2$ Is Bosonic
 
 The lattice topological charge contains both cup and cup-one terms. Its boundary contribution defines a level-$\kappa$ Chern--Simons functional. For odd $\kappa$, a $\mathbb Z$ one-form gauge transformation changes the exponentiated action by a sign. Thus
 
-$$
+$$\begin{align}
 \widehat{\mathcal T}=e^{iCS_1}
-$$
+\end{align}$$
 
 maps the ordinary gauge generator $U[k]$ to a twisted generator $V[k]$ and does not preserve the bosonic physical Hilbert space. The level-two operator is gauge invariant and satisfies
 
-$$
-\widehat{\mathcal T}^{,2\dagger}
-\hat H(\beta,\theta)
-\widehat{\mathcal T}^{,2}
-=\hat H(\beta,\theta+4\pi).
-$$
+$$\begin{align}
+\widehat{\mathcal T}^{,2\dagger} \hat H(\beta,\theta) \widehat{\mathcal T}^{,2} =\hat H(\beta,\theta+4\pi).
+\end{align}$$
 
 The point-split lattice theta term is
 
-$$
-\frac1{2\beta}\sum_{x,\mu}
-\left[
-\Pi^e_{x,\mu}
-+\frac\theta{4\pi}
-\left(
-\frac{F_{x-\hat\nu-\hat\rho,\nu\rho}}{2\pi}
-+\frac{F_{x+\hat\mu,\nu\rho}}{2\pi}
-\right)
-\right]^2,
-$$
+$$\begin{align}
+\frac1{2\beta}\sum_{x,\mu} \left[ \Pi^e_{x,\mu} +\frac\theta{4\pi} \left( \frac{F_{x-\hat\nu-\hat\rho,\nu\rho}}{2\pi} +\frac{F_{x+\hat\mu,\nu\rho}}{2\pi} \right) \right]^2,
+\end{align}$$
 
 plus the magnetic energy. The split field strength is the Hamiltonian trace of the staggered Chern--Simons cup product, not the naive ultralocal continuum expression.
 
-# Isolating the theta-dependent zero modes
+# Isolating the Theta-Dependent Zero Modes
 
 In the neutral sector, Hodge decomposition gives
 
-$$
+$$\begin{align}
 n=dp+h,
-$$
+\end{align}$$
 
 with $h$ harmonic. The gauge-invariant unitary
 
-$$
-U_\theta
-=\exp\left[-\frac{i\theta}{8\pi^2}
-\sum(A^e+2\pi p)\cup d(A^e+2\pi p)
-\right]
-$$
+$$\begin{align}
+U_\theta =\exp\left[-\frac{i\theta}{8\pi^2} \sum(A^e+2\pi p)\cup d(A^e+2\pi p) \right]
+\end{align}$$
 
 removes the nonzero-momentum theta coupling. The reduced Hamiltonian separates into theta-independent oscillators at $p\neq0$ and the zero-mode block
 
-$$
-H_0
-=\frac1{2\beta}
-\left(\Pi^e_\mu(0)+\frac\theta{2\pi}n_{\nu\rho}(0)\right)^2
-+\frac\beta2\left(2\pi n_{\mu\nu}(0)\right)^2.
-$$
+$$\begin{align}
+H_0 =\frac1{2\beta} \left(\Pi^e_\mu(0)+\frac\theta{2\pi}n_{\nu\rho}(0)\right)^2 +\frac\beta2\left(2\pi n_{\mu\nu}(0)\right)^2.
+\end{align}$$
 
 With
 
-$$
+$$\begin{align}
 D=(2\pi\beta)^2+\left(\frac\theta{2\pi}\right)^2,
-$$
+\end{align}$$
 
 the modified kernel uses
 
-$$
-\beta'=\frac\beta D,
-\qquad
-\theta'=-\frac\theta D.
-$$
+$$\begin{align}
+\beta'=\frac\beta D, \qquad \theta'=-\frac\theta D.
+\end{align}$$
 
 The nonzero modes are transformed by a coupling-dependent Fourier kernel, while the zero modes exchange $\Pi^e(0)$ and $n(0)$ with the required sign. This exactly reproduces the reduced quadratic Hamiltonian at $(\beta',\theta')$.
 
-# Charge sectors and framing
+# Charge Sectors and Framing
 
 With magnetic charge, the Hodge decomposition contains a coexact representative
 
-$$
-n^m=P_\partial n,
-\qquad
-dn^m=\rho^m.
-$$
+$$\begin{align}
+n^m=P_\partial n, \qquad dn^m=\rho^m.
+\end{align}$$
 
 The reduced Hamiltonian splits orthogonally into a transverse dynamical block and a longitudinal charge block,
 
-$$
-H^{\mathrm{ch}}
-=\frac1{2\beta}\sum
-\left(\Pi^e_{\mathrm L}
-+\frac\theta{2\pi}n^m_{x+\hat\mu,\nu\rho}
-\right)^2
-+\frac\beta2(2\pi)^2\sum(n^m)^2.
-$$
+$$\begin{align}
+H^{\mathrm{ch}} =\frac1{2\beta}\sum \left(\Pi^e_{\mathrm L} +\frac\theta{2\pi}n^m_{x+\hat\mu,\nu\rho} \right)^2 +\frac\beta2(2\pi)^2\sum(n^m)^2.
+\end{align}$$
 
 The unmodified cup-product kernel exchanges electric and magnetic charges with a one-cell shift. The paper interprets this as a framing flip and adds a cup-one term to the longitudinal kernel. The corrected kernel removes the shift and produces the clean charge transformation quoted above.
 
 The appendix proves unitarity for the uncorrected $\mathcal S_\theta^{\mathrm T+\mathrm L}$ kernel. It does not repeat that determinant/delta-function calculation for the framing-corrected kernel. Gauge invariance of the added term is checked, but gauge invariance alone does not establish unitarity.
 
-# Non-invertible one-form gauging defect
+# Non-Invertible One-Form Gauging Defect
 
 Multiplying the $\mathcal S$ kernel by an integer $N$ defines the half-space $\mathbb Z_N$ one-form-gauging operator $\mathcal N$. It intertwines the neutral Hamiltonian with
 
-$$
+$$\begin{align}
 \beta'=rac{N^2}{4\pi^2\beta},
-$$
+\end{align}$$
 
 and, after the theta-dependent extension,
 
-$$
+$$\begin{align}
 \tau\mapsto-\frac{N^2}{\tau}.
-$$
+\end{align}$$
 
 On the physical Hilbert space of the spatial three-torus, the fusion calculation gives
 
-$$
-\mathcal N^\dagger\mathcal N
-=\frac1N
-\sum_{(r_1,r_2,r_3)\in(\mathbb Z_N)^3}
-\eta_{(r_1,r_2,r_3)}.
-$$
+$$\begin{align}
+\mathcal N^\dagger\mathcal N =\frac1N
+\sum_{(r_1,r_2,r_3)\in(\mathbb Z_N)^3} \eta_{(r_1,r_2,r_3)}.
+\end{align}$$
 
 The factor is not an average over the $N^3$ harmonic sectors. It follows from summing all closed one-cochains and dividing out the $N^{L^3-1}$ exact configurations for each harmonic class. The result therefore depends on the topology $T^3$ and the chosen normalization of the defect operator.
 
-# What “theta subgroup structure” establishes
+# What “Theta Subgroup Structure” Establishes
 
 The paper verifies:
 
@@ -251,16 +199,16 @@ The paper verifies:
 
 It does not calculate a presentation of $\Gamma_\theta$ at the operator level. In particular, it does not determine whether $\mathcal S^2$ is exactly charge conjugation, a lattice translation/framing operation, or a projective phase on every sector. The precise claim supported is therefore “operator realizations of the theta-subgroup generators and their Hamiltonian action,” not a completed group representation theorem.
 
-# Likely use for current projects
+# Likely Use for Current Projects
 
 - The paper is a clean finite-lattice example where a duality kernel is unitary only after the gauge quotient, a distinction relevant to constrained quantization.
 - Its Hodge split separates propagating, harmonic, and charge-sourced sectors before asserting duality, which is methodologically useful for gluing and boundary-mode bookkeeping.
 - The cup-one framing correction illustrates how a lattice-local representative can shift charge locations without changing the continuum charge matrix.
 - It does not directly address covariant phase space, AdS boundary charges, continuum factorization, or the user's interpolation theorem.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Read the complete 44-page v2 PDF and complete 4,768-line TeX source.
 - Visually inspected rendered pages containing the basic $\mathcal S$ kernel, Chern--Simons theta term, reduced modular action, charge-sector projectors, fusion calculation, conclusion, and unitarity appendix.
@@ -270,12 +218,9 @@ It does not calculate a presentation of $\Gamma_\theta$ at the operator level. I
 
 Verified: Mathematica substituted
 
-$$
-\beta'=\frac\beta D,
-\qquad
-\frac{\theta'}{2\pi}
-=-\frac{\theta/(2\pi)}D
-$$
+$$\begin{align}
+\beta'=\frac\beta D, \qquad \frac{\theta'}{2\pi} =-\frac{\theta/(2\pi)}D
+\end{align}$$
 
 and obtained zero residual against $-1/\tau$.
 
@@ -309,7 +254,7 @@ Blocked: no executable lattice implementation or finite-volume matrix representa
 
 Blocked: the bosonic Hilbert space is not closed under the level-one $\mathcal T$ operator. A full $\mathrm{SL}(2,\mathbb Z)$ realization requires additional spin/fermionic data not constructed here.
 
-## Not independently verified
+## Not Independently Verified
 
 Not verified: every point-split cup/cup-one sign and lattice translation in the charged framing calculation.
 
@@ -319,6 +264,6 @@ Not verified: theta-subgroup operator relations or projective phases beyond the 
 
 Not verified: continuum-limit convergence of these finite-lattice kernels or equality with continuum Maxwell partition functions on general spatial manifolds.
 
-# Bottom line
+# Bottom Line
 
 This is a strong finite-lattice operator construction, provided its claim is kept at the generator level. The bosonic Villain theory supports $\mathcal S$ and $\mathcal T^2$, with theta dependence isolated in harmonic modes, exact electric/magnetic charge transformations, and a topology-dependent one-form-gauging fusion rule. Unitarity is a physical-Hilbert-space statement. The full theta-subgroup relations, the corrected framing kernel's unitarity, the level-one $\mathcal T$, and the continuum limit remain open; several surviving v2 notation errors should also be corrected.

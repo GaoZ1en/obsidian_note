@@ -16,7 +16,7 @@ tags: []
 
 **Correct as an exhibition of a reference and order-of-limits ambiguity; it does not determine a unique Kerr/CFT energy gap.** The source gives one Kinnersley--Kelley path through exact vacuum solutions and three inequivalent endpoint prescriptions. The value (Q_0=J/2) reproduces the extremal Kerr entropy through Cardy's formula, but that agreement is a consistency motivation for an asymmetric limit prescription, not a derivation that selects it.
 
-# Source map
+# Source Map
 
 The paper is a short continuous argument rather than a sectioned article.
 
@@ -26,32 +26,29 @@ The paper is a short continuous argument rather than a sectioned article.
 4. It reduces the answer to endpoint values of a kink potential (Phi(p,u)), exposes the noncommuting limits, and discusses three possible gaps.
 5. It observes that the mixed prescription gives the Cardy entropy (2\pi J).
 
-# Geometry and conventions
+# Geometry and Conventions
 
 The coordinates are ((t,r,u,\phi)), with
 
-$$
+$$\begin{align}
 e^u=\cot\frac{\theta}{2}.
-$$
+\end{align}$$
 
 The one-parameter metric is
 
-$$
-ds^2=f(d\phi+\omega dt)^2+f^{-1}\left[e^{2\gamma}
-\left(dr^2+r^2\operatorname{sech}^2u\,du^2\right)-\rho^2dt^2\right],
-$$
+$$\begin{align}
+ds^2=f(d\phi+\omega dt)^2+f^{-1}\left[e^{2\gamma} \left(dr^2+r^2\operatorname{sech}^2u\,du^2\right)-\rho^2dt^2\right],
+\end{align}$$
 
 where
 
-$$
-f=4J\operatorname{sech}(2pu),\qquad
-\omega=pr,\qquad
-\rho=2Jr\operatorname{sech}u,
-$$
+$$\begin{align}
+f=4J\operatorname{sech}(2pu),\qquad \omega=pr,\qquad \rho=2Jr\operatorname{sech}u,
+\end{align}$$
 
-$$
+$$\begin{align}
 e^{2\gamma}=4J^2\left(\frac{\operatorname{sech}u}{r}\right)^{2p^2}.
-$$
+\end{align}$$
 
 The source keeps (J) fixed and varies (p). Its identifications are
 
@@ -61,112 +58,99 @@ The source keeps (J) fixed and varies (p). Its identifications are
 
 At (p=0), direct substitution gives
 
-$$
-ds_0^2=J\left[-r^2\operatorname{sech}^2u\,dt^2+dr^2
-+r^2\operatorname{sech}^2u\,du^2\right]+4J,d\phi^2.
-$$
+$$\begin{align}
+ds_0^2=J\left[-r^2\operatorname{sech}^2u\,dt^2+dr^2 +r^2\operatorname{sech}^2u\,du^2\right]+4J,d\phi^2.
+\end{align}$$
 
 This run checked the substitution and the determinant of the full coordinate metric, but did not independently construct the analytic continuation to standard Minkowski coordinates or recompute the Ricci tensor.
 
-# Charge path
+# Charge Path
 
 For neighboring metrics (g) and (g+h), the source uses
 
-$$
+$$\begin{align}
 \delta Q_\zeta[g]=\frac{1}{8\pi}\int_{\partial\Sigma}k_\zeta[h,g],
-$$
+\end{align}$$
 
 with the Barnich--Brandt two-form
 
-$$
-\begin{aligned}
-k_\zeta[h,g]=-
-\frac14\epsilon_{\alpha\beta\mu\nu}\bigg[&
-\zeta^\nu D^\mu h-\zeta^\nu D_\sigma h^{\mu\sigma}
-+\zeta_\sigma D^\nu h^{\mu\sigma}
-+\frac12hD^\nu\zeta^\mu\\
-&-h^{\nu\sigma}D_\sigma\zeta^\mu
-+\frac12h^{\sigma\nu}(D^\mu\zeta_\sigma+D_\sigma\zeta^\mu)
+$$\begin{aligned}
+k_\zeta[h,g]=- \frac14\epsilon_{\alpha\beta\mu\nu}\bigg[& \zeta^\nu D^\mu h-\zeta^\nu D_\sigma h^{\mu\sigma} +\zeta_\sigma D^\nu h^{\mu\sigma} +\frac12hD^\nu\zeta^\mu\\
+&-h^{\nu\sigma}D_\sigma\zeta^\mu +\frac12h^{\sigma\nu}(D^\mu\zeta_\sigma+D_\sigma\zeta^\mu)
 \bigg]dx^\alpha\wedge dx^\beta .
-\end{aligned}
-$$
+\end{aligned}$$
 
 The path and generator are
 
-$$
-h_{\mu\nu}=\partial_pg_{\mu\nu},\qquad
-p:0\longrightarrow1,qquad
+$$\begin{align}
+h_{\mu\nu}=\partial_pg_{\mu\nu},\qquad p:0\longrightarrow1,qquad
 \zeta=-\partial_\phi.
-$$
+\end{align}$$
 
 The central source-derived reduction is
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 Q_0={}&\Phi(1,+\infty)-\Phi(1,-\infty)\\
 &-\left[\Phi(0,+\infty)-\Phi(0,-\infty)\right],
-\end{aligned}
-$$
+\end{aligned}$$
 
 with
 
-$$
+$$\begin{align}
 \Phi(p,u)=\frac{J}{2}\tanh(2pu).
-$$
+\end{align}$$
 
 For every fixed (p>0), (Phi) interpolates from (-J/2) to (+J/2). As (p\to0^+), its width diverges, so the endpoint and reference limits do not commute:
 
-$$
-\lim_{p\to0^+}\lim_{u\to\pm\infty}\Phi(p,u)=\pm\frac J2,
-\qquad
-\lim_{u\to\pm\infty}\lim_{p\to0}\Phi(p,u)=0.
-$$
+$$\begin{align}
+\lim_{p\to0^+}\lim_{u\to\pm\infty}\Phi(p,u)=\pm\frac J2, \qquad \lim_{u\to\pm\infty}\lim_{p\to0}\Phi(p,u)=0.
+\end{align}$$
 
-# Three endpoint prescriptions
+# Three Endpoint Prescriptions
 
-## Reference first
+## Reference First
 
 Setting (p=0) at finite (u) assigns zero charge to the flat reference. The NHEK jump is then
 
-$$
+$$\begin{align}
 Q_0=J.
-$$
+\end{align}$$
 
 This is the conventional-looking subtraction, but it makes the charge discontinuous at the reference endpoint of this particular family.
 
-## Angular endpoint first
+## Angular Endpoint First
 
 Taking (u\to\pm\infty) at fixed (p>0) and only then sending (p\to0^+) assigns the same jump (J) to the reference. The gap is therefore
 
-$$
+$$\begin{align}
 Q_0=0.
-$$
+\end{align}$$
 
 This prescription keeps the fixed-(J) family at a common conformal energy.
 
-## Mixed endpoints
+## Mixed Endpoints
 
 Using the reference-first limit at one pole and the endpoint-first limit at the other subtracts (J/2), so
 
-$$
+$$\begin{align}
 Q_0=\frac J2.
-$$
+\end{align}$$
 
 With the standard Kerr/CFT central charge (c=12J), treating this gap as (h=J/2) gives
 
-$$
+$$\begin{align}
 S=2\pi\sqrt{\frac{ch}{6}}=2\pi J.
-$$
+\end{align}$$
 
 The mixed prescription is intrinsically asymmetric between the two angular endpoints. The entropy match is therefore not yet a local or global principle fixing the subtraction.
 
-# Translation to the vault's CPS language
+# Translation to the Vault's CPS Language
 
 The useful object is not the number (J/2) by itself but the attempted path integral in solution space,
 
-$$
+$$\begin{align}
 Q_\zeta[g_1;g_0]=\int_0^1dp\,\delta Q_\zeta[g(p);\partial_pg(p)].
-$$
+\end{align}$$
 
 This makes two separate choices visible:
 
@@ -177,9 +161,9 @@ In action-first CPS terms, a unique Hamiltonian requires more than a formally in
 
 For the regional-sewing programme, the two endpoint contributions should be retained separately as boundary-port data until a gluing or regularity condition selects their relation. Combining them into a single number before fixing the endpoint prescription hides the ambiguity.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - The Kinnersley--Kelley metric is an exact vacuum solution for real (p), with (p=1) NHEK and (p=0) an analytically continued flat reference.
 - The Barnich--Brandt integration reduces to the endpoint formula for (Phi(p,u)).
@@ -188,9 +172,11 @@ For the regional-sewing programme, the two endpoint contributions should be reta
 ## Checked
 
 - Mathematica reconstructed the coordinate metric and verified its determinant against the block-factorized expression
-  $$
-  \det g=-\rho^2\left(\frac{e^{2\gamma}}{f}\right)^2r^2\operatorname{sech}^2u.
-  $$
+
+$$\begin{align}
+\det g=-\rho^2\left(\frac{e^{2\gamma}}{f}\right)^2r^2\operatorname{sech}^2u.
+\end{align}$$
+
 - Direct symbolic substitution reproduced the displayed (p=0) metric.
 - Mathematica reproduced the NHEK jump (J), the reference-first jump (0), the endpoint-first reference jump (J), the mixed gap (J/2), and the Cardy value (2\pi J), assuming (J>0) and (p\to0^+).
 
@@ -198,12 +184,12 @@ For the regional-sewing programme, the two endpoint contributions should be reta
 
 - No regulator or boundary condition in the source selects one of the three noncommuting-limit prescriptions. Consequently a unique physical energy gap is not established.
 
-## Not independently verified
+## Not Independently Verified
 
 - The four-dimensional vacuum Einstein equations for the complete (p)-family.
 - The component reduction of the Barnich--Brandt surface integral to the kink potential.
 - Path independence under replacing the Kinnersley--Kelley interpolation by another admissible route through solution space.
 
-# Reusable takeaway
+# Reusable Takeaway
 
 This paper is a sharp warning about reference charges on noncompact or singularly limiting phase spaces: even when a smooth family of exact solutions connects the target to a nominal vacuum, a nonuniform boundary limit can leave the integrated Hamiltonian ambiguous. For later use, keep the two angular endpoint terms separate and ask which boundary/corner prescription makes the generator differentiable before adopting (Q_0=J/2).

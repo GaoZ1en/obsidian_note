@@ -16,7 +16,7 @@ summary: "球对称薄壳的 Volpert 原函数、non-null 边界动量与 null �
 tags: []
 ---
 
-# Thin shells in Lovelock and Quasi-topological gravities
+# Thin Shells in Lovelock and Quasi-Topological Gravities
 
 本文最可复用的对象是球对称约化后的边界动量：non-null 情形可同时从作用量和场方程的奇异部分得到；null 情形目前只有分布式构造。处理单壳层时，先把奇异组合写成跳变量空间中的全微分，再取 BV/Vol'pert 极限。把端点算术平均代入非线性分布乘积一般会改变壳层质量。
 
@@ -38,93 +38,119 @@ tags: []
 
 取 $D\geq5$，球对称度规与不变量
 
-$$ds_D^2=\gamma_{\mu\nu}dx^\mu dx^\nu+\phi^2d\Omega_{D-2}^2,
-\quad X=(\nabla\phi)^2,\quad\psi=\frac{1-X}{\phi^2}.$$
+$$\begin{align}
+ds_D^2=\gamma_{\mu\nu}dx^\mu dx^\nu+\phi^2d\Omega_{D-2}^2, \quad X=(\nabla\phi)^2,\quad\psi=\frac{1-X}{\phi^2}.
+\end{align}$$
 
 $\mu,\nu$ 为二维指标，$i,j$ 为球面指标，$\phi>0$ 是面积半径。特征函数 $h(\psi)=\psi+\sum_{n\ge2}\alpha_n\psi^n$；$\alpha_n=\widetilde\alpha_n(D-2n)/(D-2)$。以下逐幂公式排除 $D=2n$ 的拓扑项，不能直接把分母置零。
 
 记 $c=(D-2)\Omega_{D-2}/(16\pi G)$，约化作用量为
 
-$$I_2=c\int\sqrt{-\gamma}\,\mathcal L\,d^2x,
-\quad\mathcal L=G_2-G_3\Box\phi+G_4R-2G_{4X}[(\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu}],$$
+$$\begin{align}
+I_2=c\int\sqrt{-\gamma}\,\mathcal L\,d^2x, \quad\mathcal L=G_2-G_3\Box\phi+G_4R-2G_{4X}[(\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu}],
+\end{align}$$
 
-$$G_2=\phi^{D-2}[(D-1)h-2\psi h'],\quad G_3=2\phi^{D-3}h',
-\quad G_4=-\frac12\phi^{D-2}\psi^{(D-2)/2}\int d\psi\,\psi^{-D/2}h'.$$
+$$\begin{align}
+G_2=\phi^{D-2}[(D-1)h-2\psi h'],\quad G_3=2\phi^{D-3}h', \quad G_4=-\frac12\phi^{D-2}\psi^{(D-2)/2}\int d\psi\,\psi^{-D/2}h'.
+\end{align}$$
 
 逐项 $h=\alpha_n\psi^n$ 给出 $G_4=n\alpha_n\phi^{D-2n}(1-X)^{n-1}/(D-2n)$。关键恒等式
 
-$$G_{4\phi}=G_3/2,\qquad G_{2X}=-G_{3\phi}/2$$
+$$\begin{align}
+G_{4\phi}=G_3/2,\qquad G_{2X}=-G_{3\phi}/2
+\end{align}$$
 
 只属于这一理论族。它们把场方程压缩为
 
-$$\mathcal E_{\mu\nu}=\frac{D-2}{\phi^{D-2}}\left[\frac{G_3}{2}(\gamma_{\mu\nu}\Box\phi-\phi_{;\mu\nu})-\frac{G_2}{2}\gamma_{\mu\nu}\right],$$
+$$\begin{align}
+\mathcal E_{\mu\nu}=\frac{D-2}{\phi^{D-2}}\left[\frac{G_3}{2}(\gamma_{\mu\nu}\Box\phi-\phi_{;\mu\nu})-\frac{G_2}{2}\gamma_{\mu\nu}\right],
+\end{align}$$
 
-$$\mathcal E_{ij}=\frac{g_{ij}}{2\phi^{D-3}}\left[G_{3\phi}\Box\phi-G_{2\phi}-\frac12G_3R+G_{3X}((\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu})\right].$$
+$$\begin{align}
+\mathcal E_{ij}=\frac{g_{ij}}{2\phi^{D-3}}\left[G_{3\phi}\Box\phi-G_{2\phi}-\frac12G_3R+G_{3X}((\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu})\right].
+\end{align}$$
 
 在 $ds_2^2=-N^2fdt^2+dr^2/f,\phi=r$，
 
-$$\partial_r(r^{D-1}h)=-\frac{16\pi G}{D-2}r^{D-2}T^t{}_t,
-\quad\frac{\partial_tf}{rf}=-\frac{16\pi G}{(D-2)h'}T_{tr},$$
+$$\begin{align}
+\partial_r(r^{D-1}h)=-\frac{16\pi G}{D-2}r^{D-2}T^t{}_t, \quad\frac{\partial_tf}{rf}=-\frac{16\pi G}{(D-2)h'}T_{tr},
+\end{align}$$
 
-$$\frac{\partial_rN}{rN}=\frac{8\pi G}{(D-2)fh'}(T^r{}_r-T^t{}_t).$$
+$$\begin{align}
+\frac{\partial_rN}{rN}=\frac{8\pi G}{(D-2)fh'}(T^r{}_r-T^t{}_t).
+\end{align}$$
 
 真空有 $h((1-f)/r^2)=2\mathcal M/r^{D-1}$，$\mathcal M=8\pi GM/[(D-2)\Omega_{D-2}]$。$h'=0$ 分支和跨根反演不能从除以 $h'$ 后的式子判断；壳层条件应使用原始势函数。
 
-## III：Vaidya 正则化选出 secant
+## III：Vaidya 正则化选出 Secant
 
 令 $h(\psi_\epsilon)=2\mathcal M_\epsilon(v)/r^{D-1}$，$\mathcal M_\epsilon=\mathcal M_-+\Delta\mathcal M H_\epsilon$。平滑方程给出
 
-$$T_{vv}=T^r{}_v=\frac{D-2}{8\pi Gr^{D-2}}\Delta\mathcal M\,\delta_\epsilon(v).$$
+$$\begin{align}
+T_{vv}=T^r{}_v=\frac{D-2}{8\pi Gr^{D-2}}\Delta\mathcal M\,\delta_\epsilon(v).
+\end{align}$$
 
 积分质量 $\Delta M=(D-2)\Omega_{D-2}\Delta\mathcal M/(8\pi G)$ 不随半径改变。先整体使用平滑链式法则：
 
-$$h'(\psi_\epsilon)d\psi_\epsilon=d[h(\psi_\epsilon)]\longrightarrow[h]\delta,
-\quad\langle h'\rangle_V=\int_0^1h'(\psi_-+s[\psi])ds=\frac{[h]}{[\psi]}.$$
+$$\begin{align}
+h'(\psi_\epsilon)d\psi_\epsilon=d[h(\psi_\epsilon)]\longrightarrow[h]\delta, \quad\langle h'\rangle_V=\int_0^1h'(\psi_-+s[\psi])ds=\frac{[h]}{[\psi]}.
+\end{align}$$
 
 $[F]=F_+-F_-$；$[\psi]=0$ 取连续极限。这不是分别取两个弱极限后相乘。端点梯形平均 $(h'_++h'_-)/2$ 一般产生
 
-$$\Delta\mathcal M_{\rm trap}-\Delta\mathcal M=\frac{r^{D-1}[\psi]^3}{24}h^{(3)}(\psi_*).$$
+$$\begin{align}
+\Delta\mathcal M_{\rm trap}-\Delta\mathcal M=\frac{r^{D-1}[\psi]^3}{24}h^{(3)}(\psi_*).
+\end{align}$$
 
 $h=\psi+\alpha_3\psi^3$ 时误差恰为 $\alpha_3r^{D-1}[\psi]^3/4$。纯幂 $h=\alpha\psi^K$ 时错误答案甚至仍可不依赖 $r$；因此半径无关不能单独证明 prescription 正确。
 
-null 路径中 $\psi$ 线性依赖跳变量，二次 $h$ 的梯形法恰好精确；non-null 的 $\psi=a+bH+cH^2$，即使 Gauss–Bonnet 项也不具备同样性质。
+Null 路径中 $\psi$ 线性依赖跳变量，二次 $h$ 的梯形法恰好精确；non-null 的 $\psi=a+bH+cH^2$，即使 Gauss–Bonnet 项也不具备同样性质。
 
-## IV：non-null 匹配的分布式与变分式构造
+## IV：Non-Null 匹配的分布式与变分式构造
 
-### 第一匹配与 rank-one 奇异项
+### 第一匹配与 Rank-One 奇异项
 
 法向 $n^2=\varepsilon=\pm1$ 从 minus 指向 plus，$h_{\tau\tau}=-\varepsilon$。$K$ 是二维边界外曲率迹，完整迹为 $K+(D-2)\phi_n/\phi$。第一匹配 $[\phi]=[h_{\tau\tau}]=0$ 保证切向导数连续，但 $u=\phi_n,K$ 可跳。令 $Y=-\varepsilon\dot\phi^2$，$X=Y+\varepsilon u^2$。
 
 Hessian 奇异项为 $n_\mu n_\nu[u]\delta$，$R_{\rm sing}=-2\varepsilon[K]\delta$。反对称二阶组合中的 $\delta^2$ 系数为
 
-$$[u]^2[(n^2)^2-n_\mu n_\nu n^\mu n^\nu]=0.$$
+$$\begin{align}
+[u]^2[(n^2)^2-n_\mu n_\nu n^\mu n^\nu]=0.
+\end{align}$$
 
 这是单法向的 rank-one 结果，不能直接推广到壳层交叉。余下 delta 项仍需通过跳变量的全微分定义。
 
-### $F_3$、角向势与 second matching
+### $F_3$、角向势与 Second Matching
 
 定义
 
-$$F_w(\phi,Y,u)=\int_0^uG_w(\phi,Y+\varepsilon z^2)dz,
-\quad A=\Omega_{D-2}\phi^{D-2},\quad m=A\sigma,$$
+$$\begin{align}
+F_w(\phi,Y,u)=\int_0^uG_w(\phi,Y+\varepsilon z^2)dz, \quad A=\Omega_{D-2}\phi^{D-2},\quad m=A\sigma,
+\end{align}$$
 
-$$(\mathsf m,\mathsf p)=\frac{8\pi G}{(D-2)\Omega_{D-2}}(m,p).$$
+$$\begin{align}
+(\mathsf m,\mathsf p)=\frac{8\pi G}{(D-2)\Omega_{D-2}}(m,p).
+\end{align}$$
 
 壳层应力 $S_{AB}=(\sigma+\varepsilon p)u_Au_B+ph_{AB}$。Eq. (85)/(133) 为
 
-$$-[F_3]=2\mathsf m,
-\qquad\int_{u_+}^{u_-}h'\!\left(\frac{1+\varepsilon\dot\phi^2-\varepsilon z^2}{\phi^2}\right)dz=\frac{\mathsf m}{\phi^{D-3}}.$$
+$$\begin{align}
+-[F_3]=2\mathsf m, \qquad\int_{u_+}^{u_-}h'\!\left(\frac{1+\varepsilon\dot\phi^2-\varepsilon z^2}{\phi^2}\right)dz=\frac{\mathsf m}{\phi^{D-3}}.
+\end{align}$$
 
 由 $\partial_uF_3=G_3$，奇异二维方程积分成为端点原函数差。角向条件同时涉及 $u,K$：
 
-$$\Phi_\phi=-\varepsilon(G_3K+F_{3\phi}+2\Box_h\phi F_{3Y}),
-\qquad-[\Phi_\phi]=2\mathsf p\frac{dA}{d\phi}.$$
+$$\begin{align}
+\Phi_\phi=-\varepsilon(G_3K+F_{3\phi}+2\Box_h\phi F_{3Y}), \qquad-[\Phi_\phi]=2\mathsf p\frac{dA}{d\phi}.
+\end{align}$$
 
 偏导保持其他变量固定。全微分才保证结果不依赖连接端点的路径；作为反例，$\int v\,du$ 沿 $v=u$ 和 $v=u^2$ 在相同端点间分别为 $1/2,1/3$。
 
 GR 极限 $h=\psi$ 恢复 $[u]=-8\pi G\sigma\phi/(D-2)$ 和
 
-$$[K]+\frac{D-3}{\phi}[u]=8\pi G\varepsilon p.$$
+$$\begin{align}
+[K]+\frac{D-3}{\phi}[u]=8\pi G\varepsilon p.
+\end{align}$$
 
 这里 $K$ 仍是二维 trace，不能替换成完整 trace 而不改其他项。
 
@@ -132,18 +158,21 @@ $$[K]+\frac{D-3}{\phi}[u]=8\pi G\varepsilon p.$$
 
 从奇异 Lagrangian 抽出法向全导数，得到
 
-$$B=\varepsilon\int d\tau\sqrt{|h|}(F_3+2G_4K+4\Box_h\phi F_{4Y}).$$
+$$\begin{align}
+B=\varepsilon\int d\tau\sqrt{|h|}(F_3+2G_4K+4\Box_h\phi F_{4Y}).
+\end{align}$$
 
 奇异体作用量为 $-c[B]$。两侧区域 outward normals 相反。加入边界项后固定 induced metric 与 $\phi$，法向导数的变分抵消，余下动量为
 
-$$\Pi_{\tau\tau}=\frac{D-2}{2\phi^{D-2}}F_3,
-\quad g^{ij}\Pi_{ij}=\frac{D-2}{2\phi^{D-3}}\Phi_\phi,
-\quad-[\Pi_{AB}]=8\pi GS_{AB}.$$
+$$\begin{align}
+\Pi_{\tau\tau}=\frac{D-2}{2\phi^{D-2}}F_3, \quad g^{ij}\Pi_{ij}=\frac{D-2}{2\phi^{D-3}}\Phi_\phi, \quad-[\Pi_{AB}]=8\pi GS_{AB}.
+\end{align}$$
 
 约化变量的动量 $J_{\tau\tau}=cF_3/2$，另一表示为
 
-$$J_\phi=\frac{c\varepsilon}{\dot\phi}\left(\frac{dF_3}{d\tau}-G_3\nabla_n\nabla_\tau\phi\right),
-\quad\nabla_n\nabla_\tau\phi=\dot u-K\dot\phi.$$
+$$\begin{align}
+J_\phi=\frac{c\varepsilon}{\dot\phi}\left(\frac{dF_3}{d\tau}-G_3\nabla_n\nabla_\tau\phi\right), \quad\nabla_n\nabla_\tau\phi=\dot u-K\dot\phi.
+\end{align}$$
 
 $\dot\phi=0$ 时应使用无除法的角向势，不能据此表示式判定 turning point 奇异。
 
@@ -151,45 +180,57 @@ $\dot\phi=0$ 时应使用无除法的角向势，不能据此表示式判定 tur
 
 由 constraint 与 second matching，或壳层重参数化变分，Eq. (106)/(136) 为
 
-$$\dot m+\varepsilon p\dot A-A[T_{\tau n}]=0.$$
+$$\begin{align}
+\dot m+\varepsilon p\dot A-A[T_{\tau n}]=0.
+\end{align}$$
 
 只有零压、无净通量时 $m$ 恒定；有压壳层的面积功不能省略。
 
-## V：null 势、frame 与守恒
+## V：Null 势、Frame 与守恒
 
 取 $k^2=N^2=0,k\cdot N=-1$，$v=\phi_\lambda=k\cdot\nabla\phi$ 连续，$u=\phi_N=N\cdot\nabla\phi$ 可跳，$X=-2vu$。$C_{AB}=\tfrac12\mathcal L_Ng_{AB}$，$C_{\lambda\lambda}$ 记录 nonaffinity。原文归一化 $\zeta=-1/(-k\cdot u_{\rm obs})<0$，$T^{ab}_{\rm sing}=-\zeta S^{ab}\delta$，$S^{ab}=\mu k^ak^b+p\sigma^{ab}$；球对称切向电流为零。
 
 Hessian 奇异项 $-\zeta k_\mu k_\nu[u]\delta$ 的 trace 为零，$R_{\rm sing}=-2\zeta[C_{\lambda\lambda}]\delta$。定义
 
-$$\mathscr F_3=\int_0^uG_3(\phi,-2vz)dz
-=\frac{\phi^{D-1}}v\left[h\!\left(\frac{1+2vu}{\phi^2}\right)-h\!\left(\frac1{\phi^2}\right)\right].$$
+$$\begin{align}
+\mathscr F_3=\int_0^uG_3(\phi,-2vz)dz =\frac{\phi^{D-1}}v\left[h\!\left(\frac{1+2vu}{\phi^2}\right)-h\!\left(\frac1{\phi^2}\right)\right].
+\end{align}$$
 
 有 $-[\mathscr F_3]=2\mathsf m$，$m=A\mu$。$v\ne0$ 时
 
-$$-\frac{\phi^{D-1}}{2v}[h]=\mathsf m,
-\quad-[\mathscr M]=\mathsf m v,
-\quad\mathscr M=\frac12\phi^{D-1}h(\psi).$$
+$$\begin{align}
+-\frac{\phi^{D-1}}{2v}[h]=\mathsf m, \quad-[\mathscr M]=\mathsf m v, \quad\mathscr M=\frac12\phi^{D-1}h(\psi).
+\end{align}$$
 
 $v\to0$ 用原始积分得 $\mathscr F_3\to G_3(\phi,0)u$。非膨胀壳层仍可携带质量；乘过 $v$ 的式子丢失了这一条件。
 
 角向势为
 
-$$\Phi_\phi=G_3(C_{\lambda\lambda}-\phi_{\lambda\lambda}/v)\quad(v\ne0),$$
+$$\begin{align}
+\Phi_\phi=G_3(C_{\lambda\lambda}-\phi_{\lambda\lambda}/v)\quad(v\ne0),
+\end{align}$$
 
 或正则表示
 
-$$\Phi_\phi=G_3C_{\lambda\lambda}+2\phi_{\lambda\lambda}\int_0^uG_{3X}(\phi,-2vz)dz,
-\quad-[\Phi_\phi]=2\mathsf p\frac{dA}{d\phi}.$$
+$$\begin{align}
+\Phi_\phi=G_3C_{\lambda\lambda}+2\phi_{\lambda\lambda}\int_0^uG_{3X}(\phi,-2vz)dz, \quad-[\Phi_\phi]=2\mathsf p\frac{dA}{d\phi}.
+\end{align}$$
 
 GR 极限 $[C_{\lambda\lambda}]=-8\pi Gp$。由质量定义先求导，再代入二维方程消去 Hessian：
 
-$$d\mathscr M=\frac{G_2}{2}d\phi-\frac{G_3}{4}dX,$$
+$$\begin{align}
+d\mathscr M=\frac{G_2}{2}d\phi-\frac{G_3}{4}dX,
+\end{align}$$
 
-$$\nabla_\mu\mathscr M=\frac{8\pi GA}{(D-2)\Omega_{D-2}}(T_{\mu\nu}-T\gamma_{\mu\nu})\nabla^\nu\phi,$$
+$$\begin{align}
+\nabla_\mu\mathscr M=\frac{8\pi GA}{(D-2)\Omega_{D-2}}(T_{\mu\nu}-T\gamma_{\mu\nu})\nabla^\nu\phi,
+\end{align}$$
 
 $T$ 为二维 trace。沿生成元取跳值得 Eq. (182)
 
-$$\frac{d(mv)}{d\lambda}-A[T_{\lambda\lambda}\phi_N]+Av[T_{\lambda N}]=0.$$
+$$\begin{align}
+\frac{d(mv)}{d\lambda}-A[T_{\lambda\lambda}\phi_N]+Av[T_{\lambda N}]=0.
+\end{align}$$
 
 真空、$\lambda=-\phi$ 选规下 $m=M_+-M_-$ 恒定。$k\to\alpha k,N\to N/\alpha$ 时 $\mu\to\mu/\alpha,p\to\alpha p$，所以 $mv$ 比 $m$ 更适合比较不同 null frame。不能忽略参数归一化而称 $m$ 是不变量。
 
@@ -201,22 +242,27 @@ A 使用 $\Theta^k\delta\mapsto\delta/(k+1)$，保留 Heaviside 幂后重求和�
 
 B 允许独立 $G_2,G_3,G_4$，定义
 
-$$P=G_2+X\partial_\phi(G_3-2G_{4\phi}),\quad Q=2G_{4\phi}-2X\partial_X(G_3-2G_{4\phi}),\quad W=P_X+Q_\phi/2.$$
+$$\begin{align}
+P=G_2+X\partial_\phi(G_3-2G_{4\phi}),\quad Q=2G_{4\phi}-2X\partial_X(G_3-2G_{4\phi}),\quad W=P_X+Q_\phi/2.
+\end{align}$$
 
 二维方程的括号变成 $\tfrac Q2(\gamma_{\mu\nu}\Box\phi-\phi_{;\mu\nu})-\tfrac P2\gamma_{\mu\nu}+W\nabla_\mu\phi\nabla_\nu\phi$，角向表达式为
 
-$$
-(Q_\phi+2W)\Box\phi-P_\phi-\frac Q2R+Q_X[(\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu}]
-+2XW_\phi+2W_X\nabla\phi\cdot\nabla X.
-$$
+$$\begin{align}
+(Q_\phi+2W)\Box\phi-P_\phi-\frac Q2R+Q_X[(\Box\phi)^2-\phi_{;\mu\nu}\phi^{;\mu\nu}] +2XW_\phi+2W_X\nabla\phi\cdot\nabla X.
+\end{align}$$
 
-non-null 势 $F_Q=\int_0^uQ(\phi,Y+\varepsilon z^2)dz$，角向势
+Non-null 势 $F_Q=\int_0^uQ(\phi,Y+\varepsilon z^2)dz$，角向势
 
-$$-\varepsilon(QK+F_{Q\phi}+2\Box_h\phi F_{QY}+2uW).$$
+$$\begin{align}
+-\varepsilon(QK+F_{Q\phi}+2\Box_h\phi F_{QY}+2uW).
+\end{align}$$
 
-null 势 $\mathscr F_Q=\int_0^uQ(\phi,-2vz)dz$，角向势
+Null 势 $\mathscr F_Q=\int_0^uQ(\phi,-2vz)dz$，角向势
 
-$$QC_{\lambda\lambda}+2\phi_{\lambda\lambda}\int_0^uQ_X(\phi,-2vz)dz+2vW.$$
+$$\begin{align}
+QC_{\lambda\lambda}+2\phi_{\lambda\lambda}\int_0^uQ_X(\phi,-2vz)dz+2vW.
+\end{align}$$
 
 原理论对应 $P=G_2,Q=G_3,W=0$。$v=\phi_{\lambda\lambda}=0$ 时保留条件 $-Q(\phi,0)[u]=2\mathsf m$，$Q[C_{\lambda\lambda}]=-2\mathsf pA'$，提供非膨胀界面的测试模型。
 

@@ -15,7 +15,7 @@ tags: []
 
 Back to [[2026_08_03_overview]].
 
-# Claim tier
+# Claim Tier
 
 The paper establishes three different tiers that should not be conflated.
 
@@ -25,7 +25,7 @@ The paper establishes three different tiers that should not be conflated.
 
 This is not a construction of full gravitational or gauge asymptotic charges. The light-ray operators are detector densities in an ordinary four-dimensional CFT. Some low levels coincide with hard pieces of soft charges, but the paper does not supply the radiative soft pieces, gravitational constraints, conservation between $\mathscr J^-$ and $\mathscr J^+$, or a CPS derivation of Hamiltonian generators. The strongest reusable result is therefore an interacting-CFT realization of the same wedge algebraic structure, with a precise dictionary and a precise list of missing gravitational ingredients.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential path:** Sections 2, 3.1--3.4, 4.1--4.5, Appendix A.1, Appendix C, and Appendix D.1. This gives the detector geometry, stress-tensor primary classification, local commutator theorem, and wedge algebra.
 - **Parallel current path:** Section 5, Appendix A.2, Appendix D.2, and Appendix E. This constructs the $S$ tower and its mixed action under the stress algebra.
@@ -33,7 +33,7 @@ This is not a construction of full gravitational or gauge asymptotic charges. Th
 - **Boundary-of-validity path:** Appendix B and Section 7. Appendix B exposes the formal inverse-derivative prescription; the free scalar shows how light operators correct the local algebra outside the wedge.
 - **Optional orientation:** Section 1 and Section 8 state the program and open directions, but neither replaces the derivations above.
 
-# Source structure
+# Source Structure
 
 | Source unit | Technical role |
 |---|---|
@@ -57,162 +57,137 @@ This is not a construction of full gravitational or gauge asymptotic charges. Th
 | Appendix D | Classifies operators in $\ker P_u$ and shows Lorentz mixing prevents wedge-visible loopholes. |
 | Appendix E | Supplies low-order $S$ and mixed commutators used as current-sector base cases. |
 
-# Detector geometry and conventions
+# Detector Geometry and Conventions
 
-## Retarded coordinates
+## Retarded Coordinates
 
 The paper uses
 
-$$
+$$\begin{align}
 x^\mu=\frac12\left(un^\mu+r\hat q^\mu(z,\bar z)\right),
-$$
+\end{align}$$
 
-$$
-\hat q^\mu=(1+z\bar z,\ z+\bar z,\ -i(z-\bar z),\ 1-z\bar z),
-\qquad n^\mu=\partial_z\partial_{\bar z}\hat q^\mu,
-$$
+$$\begin{align}
+\hat q^\mu=(1+z\bar z,\ z+\bar z,\ -i(z-\bar z),\ 1-z\bar z), \qquad n^\mu=\partial_z\partial_{\bar z}\hat q^\mu,
+\end{align}$$
 
 so that
 
-$$
-ds^2=-du\,dr+r^2dz\,d\bar z.
-\tag{2.3}
-$$
+$$\begin{align}
+ds^2=-du\,dr+r^2dz\,d\bar z. \tag{2.3}
+\end{align}$$
 
 The factor $1/2$ in $x^\mu$ and the off-diagonal metric components are easy sources of normalization errors when translating to standard Bondi coordinates. Future null infinity is $r\to\infty$ at fixed $(u,z,\bar z)$.
 
 The charge convention is
 
-$$
+$$\begin{align}
 [Q,\Phi]=i\delta\Phi,
-$$
+\end{align}$$
 
 while an isometry acts by $\delta\Phi=-\mathcal L_\zeta\Phi$. A celestial Lorentz primary obeys
 
-$$
+$$\begin{align}
 -\delta_Y\mathcal O=(Y^z\partial_z+h\partial_zY^z)\mathcal O,
-$$
+\end{align}$$
 
 with a barred analogue. These are $SL(2,\mathbb C)$ weights of a detector operator, not four-dimensional local-primary weights.
 
-## Radial data and scaling labels
+## Radial Data and Scaling Labels
 
 $T_{\mu\nu}^{(n)}$ denotes the coefficient of $r^{-n}$ in a coordinate component. The generic finite-energy falloffs are weaker than the CFT falloffs. In the CFT specialization,
 
-$$
-T_{uu},T_{uz},T_{zz},T_{z\bar z}=O(r^{-2}),\qquad
-T_{rz},T_{ur}=O(r^{-4}),\qquad
-T_{rr}=O(r^{-6}).
-\tag{3.11}
-$$
+$$\begin{align}
+T_{uu},T_{uz},T_{zz},T_{z\bar z}=O(r^{-2}),\qquad T_{rz},T_{ur}=O(r^{-4}),\qquad T_{rr}=O(r^{-6}). \tag{3.11}
+\end{align}$$
 
 The paper's trace-sector normalization is
 
-$$
+$$\begin{align}
 T^{(n)}=-2\left(T_{ur}^{(n)}-T_{z\bar z}^{(n-2)}\right),
-$$
+\end{align}$$
 
 whereas the actual $r^{-n}$ coefficient of $T_\mu{}^\mu$ is $2T^{(n)}$. The paper's prose calls $T^{(n)}$ the trace coefficient, but its downstream equations consistently use the displayed half-trace normalization. It vanishes for the chosen traceless CFT stress tensor. The all-order stress tower is indexed by the four-dimensional light-ray scaling dimension
 
-$$
-\Delta_{\rm LR}=-m,\qquad
-\mathcal W^p\equiv\mathcal W_m,\qquad
-p=\frac{m+4}{2},\qquad
-(h,\bar h)=(p,3-p).
-$$
+$$\begin{align}
+\Delta_{\rm LR}=-m,\qquad \mathcal W^p\equiv\mathcal W_m,\qquad p=\frac{m+4}{2},\qquad (h,\bar h)=(p,3-p).
+\end{align}$$
 
 Thus $m=-1,0,1$ correspond to ANEC, superrotation level, and subsubleading-soft level. The same letter $m$ is also used in the paper for a wedge mode; below, $M,N$ denote wedge labels to keep the roles separate.
 
 For the current tower,
 
-$$
-\mathcal S^p\equiv\mathcal S_m,\qquad
-p=\frac{m+2}{2},\qquad
-(h,\bar h)=\left(\frac{m+2}{2},\frac{2-m}{2}\right).
-$$
+$$\begin{align}
+\mathcal S^p\equiv\mathcal S_m,\qquad p=\frac{m+2}{2},\qquad (h,\bar h)=\left(\frac{m+2}{2},\frac{2-m}{2}\right).
+\end{align}$$
 
-## Distributional and inverse-derivative conventions
+## Distributional and Inverse-Derivative Conventions
 
 Local commutators are supported at coincident celestial angle by $\delta^{(2)}(z-z')$ and derivatives. The identity
 
-$$
-\partial_z\bigl(\delta^{(2)}(z-z')O(z')\bigr)
-=\delta^{(2)}(z-z')\partial_{z'}O(z')
--\partial_{z'}\bigl(\delta^{(2)}(z-z')O(z')\bigr)
-\tag{4.33}
-$$
+$$\begin{align}
+\partial_z\bigl(\delta^{(2)}(z-z')O(z')\bigr) =\delta^{(2)}(z-z')\partial_{z'}O(z') -\partial_{z'}\bigl(\delta^{(2)}(z-z')O(z')\bigr) \tag{4.33}
+\end{align}$$
 
 means that local presentations are unique only modulo moving derivatives between insertions.
 
 For $m\ge3$, the bare generators contain formal $\partial_{\bar z}^{-k}$. Appendix B treats these as integrals and discards boundary terms. It fixes a formal Lorentz transformation, but not a Green function, base point, integration constant, celestial patching rule, or behavior at infinity. The local descendant $\partial_{\bar z}^{m-1}\mathcal W_m$ is consequently more unambiguous than $\mathcal W_m$ itself.
 
-# Stress-tensor detectors from conservation and primarity
+# Stress-Tensor Detectors from Conservation and Primarity
 
-## Low-order anchors
+## Low-Order Anchors
 
 The unique dimension-one detector is ANEC,
 
-$$
-\mathcal W_{-1}=\int du\,T_{uu}^{(2)},\qquad
-(h,\bar h)=\left(\frac32,\frac32\right).
-\tag{3.15}
-$$
+$$\begin{align}
+\mathcal W_{-1}=\int du\,T_{uu}^{(2)},\qquad (h,\bar h)=\left(\frac32,\frac32\right). \tag{3.15}
+\end{align}$$
 
 At dimension zero, conservation reduces the candidate basis to $uT_{uu}^{(2)}$ and the two mixed transverse components. The Lorentz primaries are
 
-$$
+$$\begin{align}
 \mathcal D=\int du\,uT_{uu}^{(2)},
-$$
+\end{align}$$
 
-$$
-\mathcal W_0=\frac12\int du
-\left(u\partial_zT_{uu}^{(2)}-2T_{uz}^{(2)}\right),
-\qquad (h,\bar h)=(2,1),
-\tag{3.25}
-$$
+$$\begin{align}
+\mathcal W_0=\frac12\int du \left(u\partial_zT_{uu}^{(2)}-2T_{uz}^{(2)}\right), \qquad (h,\bar h)=(2,1), \tag{3.25}
+\end{align}$$
 
 and its anti-chiral conjugate. At dimension $-1$, tracelessness gives
 
-$$
-\mathcal W_1=\frac18\int du\left(
-u^2\partial_z^2T_{uu}^{(2)}
--4u\partial_zT_{uz}^{(2)}
-+6T_{zz}^{(2)}\right),
-\qquad (h,\bar h)=\left(\frac52,\frac12\right).
-\tag{3.34}
-$$
+$$\begin{align}
+\mathcal W_1=\frac18\int du\left( u^2\partial_z^2T_{uu}^{(2)} -4u\partial_zT_{uz}^{(2)} +6T_{zz}^{(2)}\right), \qquad (h,\bar h)=\left(\frac52,\frac12\right). \tag{3.34}
+\end{align}$$
 
 These low levels are physically anchored as hard detector densities associated with the leading, subleading, and subsubleading graviton soft structures. The classification itself is obtained from the stress tensor, not guessed from the soft theorems.
 
-## Conservation first, coordinates second
+## Conservation First, Coordinates Second
 
 At fixed $\Delta_{\rm LR}=-m$, falloffs and nonnegative $u$ moments leave a finite list of radial coefficients. The authors expand $\partial_\mu T^{\mu\nu}=0$, integrate against $u^k$, discard total $u$ derivatives, and use the resulting equations (3.40)--(3.41) to eliminate dependent coefficients. This is the detector analogue of solving radial constraints before identifying independent charge aspects.
 
 The reduced basis contains leading radiative moments such as
 
-$$
-\int du\,u^{m+1}T_{uu}^{(2)},\qquad
-\int du\,u^mT_{uz}^{(2)},\qquad
-\int du\,u^{m-1}T_{z\bar z}^{(2)},
-$$
+$$\begin{align}
+\int du\,u^{m+1}T_{uu}^{(2)},\qquad \int du\,u^mT_{uz}^{(2)},\qquad \int du\,u^{m-1}T_{z\bar z}^{(2)},
+\end{align}$$
 
 and finitely many subleading transverse/radial coefficients. Trace terms are kept in the generic-QFT classification and set to zero only after specializing to the CFT.
 
-## Why a second primary appears at a discrete weight
+## Why a Second Primary Appears at a Discrete Weight
 
 A light-$\bar h$ trial family first produces the low-spin primaries $\mathcal L_m$, $\mathcal X_m$, and $\mathcal Y_m$. For $m\ge2$,
 
-$$
+$$\begin{align}
 \bar h=\frac{2-m}{2}\le0,
-$$
+\end{align}$$
 
 so the descendant $\partial_{\bar z}^{m-1}\mathcal O$ is itself a right-primary. At the new right weight $m/2$, subleading radial stress coefficients have the correct weights to mix. This requires a larger ansatz $R_{m,\ell,n}$ rather than merely differentiating the leading-radiative combination.
 
 Appendix A.1 solves six neighboring-radial-order recursions. The left-primary equations allow nontrivial solutions only for $\ell\ge1$; the right-primary equations require $\ell\le2$. Their intersection leaves
 
-$$
+$$\begin{align}
 \ell=1,2.
-$$
+\end{align}$$
 
 $\ell=1$ gives $\mathcal V_m$ and the maximal-spin $\ell=2$ solution gives $\mathcal W_m$. The all-order local descendant is
 
@@ -239,35 +214,29 @@ The trace term vanishes in the CFT. Undoing $\partial_{\bar z}^{m-1}$ gives the 
 
 The normalization is chosen so the allowed global translations close down the tower,
 
-$$
-\delta_f\mathcal W_m
-=\frac12\partial_z(f\mathcal W_{m-1})
-+\frac{m+2}{2}(\partial_zf)\mathcal W_{m-1}.
-\tag{3.62}
-$$
+$$\begin{align}
+\delta_f\mathcal W_m =\frac12\partial_z(f\mathcal W_{m-1}) +\frac{m+2}{2}(\partial_zf)\mathcal W_{m-1}. \tag{3.62}
+\end{align}$$
 
 For the global translation parameters used in (3.62), $\partial_z^2f=0$. A genuinely local supertranslation parameter produces additional low-order terms; for example, the $m=1$ variation contains $\frac34(\partial_z^2f)\mathcal D$.
 
 For the global null translation $f=1$,
 
-$$
-[P_u,\mathcal W^p]=\frac i2\partial_z\mathcal W^{p-1/2}.
-\tag{4.35}
-$$
+$$\begin{align}
+[P_u,\mathcal W^p]=\frac i2\partial_z\mathcal W^{p-1/2}. \tag{4.35}
+\end{align}$$
 
 This linear recursion is the exact CFT analogue the paper draws with gravitational charge-aspect recursions. It contains none of the nonlinear gravitational terms of a full high-order asymptotic charge.
 
-# From same-lightsheet OPE support to the local algebra
+# From Same-Lightsheet OPE Support to the Local Algebra
 
 The algebra theorem uses more than the classification. For a four-dimensional interacting CFT with no neutral scalar operator of dimension $1\le\Delta\le2$, the paper assumes that the same-lightsheet stress commutator receives only identity and stress-tensor contributions. It discards the identity/vacuum sector, integrates the null line, and writes transverse contact terms multiplying stress-tensor light-ray operators.
 
 For a primary output $\mathcal O_P$, Lorentz covariance fixes the total derivative orders
 
-$$
-\ell_P=h_1+h_2-h_P-1,\qquad
-\bar\ell_P=\bar h_1+\bar h_2-\bar h_P-1,
-\tag{4.10}
-$$
+$$\begin{align}
+\ell_P=h_1+h_2-h_P-1,\qquad \bar\ell_P=\bar h_1+\bar h_2-\bar h_P-1, \tag{4.10}
+\end{align}$$
 
 and the descendant coefficients obey
 
@@ -287,44 +256,35 @@ $$
 
 The Gamma-function expression (4.12) solves these recursions once one coefficient is fixed at generic nondegenerate weights. At physical half-integer weights it can contain pole-over-pole expressions that require analytic continuation, while exceptional zero factors can lower the recursion rank. At sufficiently negative output dimension, the minimal stress basis is not a basis of primaries, so the paper instead uses triangular Lorentz mixing matrices. That generalization is crucial for controlling $\ker P_u$.
 
-## The low levels expose the extra local terms
+## The Low Levels Expose the Extra Local Terms
 
 The first seeds are
 
-$$
+$$\begin{align}
 [\mathcal W_{-1},\mathcal W_{-1}]=0,
-$$
+\end{align}$$
 
-$$
-[\mathcal W_{-1}(z),\mathcal W_0(z')]
-=i\left(\frac12\partial_{z'}-\partial_z\right)
-\bigl(\delta^{(2)}\mathcal W_{-1}\bigr),
-$$
+$$\begin{align}
+[\mathcal W_{-1}(z),\mathcal W_0(z')] =i\left(\frac12\partial_{z'}-\partial_z\right) \bigl(\delta^{(2)}\mathcal W_{-1}\bigr),
+\end{align}$$
 
 and
 
-$$
-[\mathcal W_0(z),\mathcal W_0(z')]
-=i(\partial_{z'}-\partial_z)
-\bigl(\delta^{(2)}\mathcal W_0\bigr).
-\tag{4.26}
-$$
+$$\begin{align}
+[\mathcal W_0(z),\mathcal W_0(z')] =i(\partial_{z'}-\partial_z) \bigl(\delta^{(2)}\mathcal W_0\bigr). \tag{4.26}
+\end{align}$$
 
 At the next level, Appendix C already contains an outside-wedge term,
 
-$$
-[\mathcal W_{-1},\mathcal W_1]
-=i\left(\frac12\partial_{z'}-\frac32\partial_z\right)
-(\delta^{(2)}\mathcal W_0)
-+\frac{3i}{4}\partial_z^2(\delta^{(2)}\mathcal D).
-\tag{C.1}
-$$
+$$\begin{align}
+[\mathcal W_{-1},\mathcal W_1] =i\left(\frac12\partial_{z'}-\frac32\partial_z\right) (\delta^{(2)}\mathcal W_0) +\frac{3i}{4}\partial_z^2(\delta^{(2)}\mathcal D). \tag{C.1}
+\end{align}$$
 
 Thus the local algebra never equals only the universal $\mathcal W$ term. The clean result emerges after a projection.
 
 The same warning applies to the paper's “local conformal algebra.” Pointwise commutators involving the local special-conformal density $\mathcal K$ contain $\mathcal W_1$, $\mathcal X_1$, $\mathcal L_1$, $\mathcal Y_2$, and $\mathcal L_2$ terms. Only the appropriate polynomial global smearings remove or combine those terms and recover the finite-dimensional conformal algebra; the local densities do not close on fifteen generators by themselves.
 
-# The wedge theorem and its kernel argument
+# The Wedge Theorem and Its Kernel Argument
 
 The all-order local statement is
 
@@ -349,14 +309,9 @@ The proof is inductive in $p+q$:
 2. Add and subtract the desired universal $\mathcal W^{p+q-2}$ structure.
 3. Apply $P_u$ to the commutator. The Jacobi identity gives
 
-   $$
-   [P_u,[\mathcal W^p,\mathcal W^q]]
-   =\frac i2\left(
-   \partial_{z'}[\mathcal W^p,\mathcal W^{q-1/2}]
-   +\partial_z[\mathcal W^{p-1/2},\mathcal W^q]
-   \right).
-   \tag{4.36}
-   $$
+$$\begin{align}
+[P_u,[\mathcal W^p,\mathcal W^q]] =\frac i2\left( \partial_{z'}[\mathcal W^p,\mathcal W^{q-1/2}] +\partial_z[\mathcal W^{p-1/2},\mathcal W^q] \right). \tag{4.36}
+\end{align}$$
 
 4. By the induction hypothesis, every non-kernel remainder starts at $2p-1$ or $2q-1$ holomorphic derivatives. Local translation cannot lower an explicit derivative count.
 5. Operators in $\ker P_u$ are the only possible loophole. Appendix D shows that every nontrivial generic kernel combination Lorentz-mixes into a non-kernel operator. The same Lorentz recursion then transfers the derivative bound back to the kernel coefficient.
@@ -364,38 +319,31 @@ The proof is inductive in $p+q$:
 
 The wedge modes are
 
-$$
-\mathrm w^p_{M,\bar M}
-=\int d^2z\,z^{p+M-1}\bar z^{2-p+\bar M}
-\mathcal W^p(z,\bar z),\qquad
-1-p\le M\le p-1.
-\tag{4.30}
-$$
+$$\begin{align}
+\mathrm w^p_{M,\bar M} =\int d^2z\,z^{p+M-1}\bar z^{2-p+\bar M} \mathcal W^p(z,\bar z),\qquad 1-p\le M\le p-1. \tag{4.30}
+\end{align}$$
 
 The holomorphic smearing polynomial has degree at most $2p-2$, so integration by parts annihilates every first-insertion remainder with $\ell\ge2p-1$; the same holds at the second insertion. The paper states no separate range for $\bar M$, which supplies the loop direction; excluding barred derivatives in the remainder is therefore essential. Polynomial annihilation also assumes lattice-compatible nonnegative powers and no boundary or contour contribution. The surviving bracket is
 
-$$
-[\mathrm w^p_{M,\bar M},\mathrm w^q_{N,\bar N}]
-=i\big[M(q-1)-N(p-1)\big]
-\mathrm w^{p+q-2}_{M+N,\bar M+\bar N}.
-\tag{4.31}
-$$
+$$\begin{align}
+[\mathrm w^p_{M,\bar M},\mathrm w^q_{N,\bar N}] =i\big[M(q-1)-N(p-1)\big] \mathrm w^{p+q-2}_{M+N,\bar M+\bar N}. \tag{4.31}
+\end{align}$$
 
 This is the wedge subalgebra of the loop algebra of $\mathrm w_{1+\infty}$. Identity/central terms are outside the theorem and have not been calculated.
 
-# Conserved currents and the S tower
+# Conserved Currents and the S Tower
 
 A conserved dimension-three current has CFT falloffs
 
-$$
+$$\begin{align}
 j_u,j_z,j_{\bar z}=O(r^{-2}),\qquad j_r=O(r^{-4}).
-$$
+\end{align}$$
 
 The leading detector is
 
-$$
+$$\begin{align}
 \mathcal S_0^a=\int du\,j_u^{(2),a},\qquad (h,\bar h)=(1,1),
-$$
+\end{align}$$
 
 which is the hard part of a large-gauge-like generator. Conservation reduces the all-order current basis, and Appendix A.2 solves the primary-descendant recursions. The left condition requires $\ell\ge1$, the right condition $\ell\le1$, so only $\ell=1$ survives. The local descendant is
 
@@ -415,88 +363,65 @@ $$
 
 Its translation recursion is
 
-$$
-\delta_f\mathcal S_m
-=\frac12\partial_z(f\mathcal S_{m-1})
-+\frac m2(\partial_zf)\mathcal S_{m-1}.
-\tag{5.24}
-$$
+$$\begin{align}
+\delta_f\mathcal S_m =\frac12\partial_z(f\mathcal S_{m-1}) +\frac m2(\partial_zf)\mathcal S_{m-1}. \tag{5.24}
+\end{align}$$
 
 For a nonabelian global symmetry,
 
-$$
-[\mathcal S^{p,a}(z),\mathcal S^{q,b}(z')]
-=if^{abc}\delta^{(2)}(z-z')\mathcal S^{p+q-1,c}(z')
-+\text{terms beginning at }\partial_z^{2p-1}
-\text{ or }\partial_{z'}^{2q-1}.
-\tag{5.30}
-$$
+$$\begin{align}
+[\mathcal S^{p,a}(z),\mathcal S^{q,b}(z')] =if^{abc}\delta^{(2)}(z-z')\mathcal S^{p+q-1,c}(z') +\text{terms beginning at }\partial_z^{2p-1} \text{ or }\partial_{z'}^{2q-1}. \tag{5.30}
+\end{align}$$
 
 The wedge modes
 
-$$
-S^{p,a}_{M,\bar M}
-=\int d^2z\,z^{p+M-1}\bar z^{1-p+\bar M}\mathcal S^{p,a},
-\qquad1-p\le M\le p-1,
-$$
+$$\begin{align}
+S^{p,a}_{M,\bar M} =\int d^2z\,z^{p+M-1}\bar z^{1-p+\bar M}\mathcal S^{p,a}, \qquad1-p\le M\le p-1,
+\end{align}$$
 
 obey
 
-$$
-[S^{p,a}_{M,\bar M},S^{q,b}_{N,\bar N}]
-=if^{abc}S^{p+q-1,c}_{M+N,\bar M+\bar N}.
-\tag{5.32}
-$$
+$$\begin{align}
+[S^{p,a}_{M,\bar M},S^{q,b}_{N,\bar N}] =if^{abc}S^{p+q-1,c}_{M+N,\bar M+\bar N}. \tag{5.32}
+\end{align}$$
 
 For $U(1)$ this algebra is abelian. The mixed local bracket has the same universal differential kernel as the stress algebra and current-valued high-derivative remainders. After wedge projection,
 
-$$
-[\mathrm w^p_{M,\bar M},S^{q,a}_{N,\bar N}]
-=i\big[M(q-1)-N(p-1)\big]
-S^{p+q-2,a}_{M+N,\bar M+\bar N}.
-\tag{5.41}
-$$
+$$\begin{align}
+[\mathrm w^p_{M,\bar M},S^{q,a}_{N,\bar N}] =i\big[M(q-1)-N(p-1)\big] S^{p+q-2,a}_{M+N,\bar M+\bar N}. \tag{5.41}
+\end{align}$$
 
 Thus $S$ is a module for the stress-tensor wedge algebra; the flavor label is a spectator under $\mathrm w_{1+\infty}$.
 
 The low-order local base cases require one qualification. With
 
-$$
-I^c\equiv\int du\,j_z^{(2),c},
-\qquad
-2\mathcal S_1^c=\partial_z\mathcal J_1^c-I^c,
-\qquad
-[P_u,I^c]=0,
-$$
+$$\begin{align}
+I^c\equiv\int du\,j_z^{(2),c}, \qquad 2\mathcal S_1^c=\partial_z\mathcal J_1^c-I^c, \qquad [P_u,I^c]=0,
+\end{align}$$
 
 the printed Appendix-E commutators $[\mathcal S_0,\mathcal S_1]$ and $[\mathcal S_1,\mathcal S_1]$ satisfy the $P_u$ Jacobi identity, as do all five displayed mixed $[\mathcal W_m,\mathcal S_n]$ base cases. The printed equation (E.1c) for $[\mathcal S_0^a(z),\mathcal S_2^b(z')]$, however, leaves the color-stripped residual
 
-$$
--\frac14\partial_z\!\left[
-\delta^{(2)}(z-z')I^c(z')
-\right].
-$$
+$$\begin{align}
+-\frac14\partial_z\!\left[ \delta^{(2)}(z-z')I^c(z') \right].
+\end{align}$$
 
 No coefficient-only change among its three displayed structures can cancel this term while preserving the independent $\mathcal S_1$ and $\partial_z\mathcal J_1$ conditions. A repair would need an additional operator whose $P_u$ image is $I^c$, or a change to earlier transformation data; the source supplies neither. This local failure is annihilated by the $\mathcal S_0$ wedge smearing, so it does not change the independently checked wedge algebra, but it leaves a gap in the printed local base-case chain.
 
-# Scalar event shapes and the soft dictionary
+# Scalar Event Shapes and the Soft Dictionary
 
-## Position-space seeds
+## Position-Space Seeds
 
 The stress calculation begins from the unique scalar--stress--scalar three-point function, with the scalar two-point normalization fixing
 
-$$
+$$\begin{align}
 a=-\frac{2\Delta}{3\pi^2}.
-$$
+\end{align}$$
 
 The Wightman prescription is included before null integration. Contour integration gives
 
-$$
-\langle\mathcal O(x_1)\mathcal W_{-1}(z,\bar z)\mathcal O(x_3)\rangle
-=\frac a4\frac1{x_{13}^{2\Delta-2}}
-\frac{12\pi i}{(\hat q\cdot x_{13}+i\epsilon)^3}.
-\tag{6.10}
-$$
+$$\begin{align}
+\langle\mathcal O(x_1)\mathcal W_{-1}(z,\bar z)\mathcal O(x_3)\rangle =\frac a4\frac1{x_{13}^{2\Delta-2}} \frac{12\pi i}{(\hat q\cdot x_{13}+i\epsilon)^3}. \tag{6.10}
+\end{align}$$
 
 For $m=0,1$, the higher detector is a differential operator acting on this seed. From $m=2$ onward, radial coefficients appear. At $m=2$, the non-total-$u$ remainder from leading components cancels against a total $\bar z$ derivative from $T_{rr}^{(5)},T_{rz}^{(4)},T_{zz}^{(3)}$; analogous cancellations are worked out for $m=3,4$.
 
@@ -519,12 +444,9 @@ The paper checks this only through $m=4$ and expects it for all $m$. An independ
 
 For a charged scalar and a $U(1)$ current,
 
-$$
-\langle\mathcal O^\dagger(x_1)\mathcal S_0(z,\bar z)\mathcal O(x_3)\rangle
-=\frac b{2x_{13}^{2\Delta-2}}
-\frac{-4\pi i}{(\hat q\cdot x_{13}+i\epsilon)^2},
-\tag{6.38}
-$$
+$$\begin{align}
+\langle\mathcal O^\dagger(x_1)\mathcal S_0(z,\bar z)\mathcal O(x_3)\rangle =\frac b{2x_{13}^{2\Delta-2}} \frac{-4\pi i}{(\hat q\cdot x_{13}+i\epsilon)^2}, \tag{6.38}
+\end{align}$$
 
 and the checked-through-$m=4$ pattern is
 
@@ -543,55 +465,37 @@ $$
 
 An independent reconstruction from the scalar--current--scalar three-point function reproduced the $\mathcal S_0$ contour seed and (6.39) for $m=1,\ldots,4$, including the radial cancellations at $m=2,3,4$. This is a finite-order check, not an all-$m$ proof.
 
-## Momentum-space form
+## Momentum-Space Form
 
 With $\hat n=\hat q/2$ and orbital angular momentum
 
-$$
-\mathcal L_{k\mu\nu}
-=-i\left(p_{k\mu}\frac\partial{\partial p_k^\nu}
--p_{k\nu}\frac\partial{\partial p_k^\mu}\right),
-$$
+$$\begin{align}
+\mathcal L_{k\mu\nu} =-i\left(p_{k\mu}\frac\partial{\partial p_k^\nu} -p_{k\nu}\frac\partial{\partial p_k^\mu}\right),
+\end{align}$$
 
 the stress event shape is
 
-$$
-\langle\mathcal O(p_1)|\mathcal W_m|\mathcal O(p_3)\rangle
-=\frac1{4\pi}{m+3\choose2}
-\frac{(-p_1^2)^2
-(\partial_z\hat n^\mu\hat n^\nu\mathcal L_{1\mu\nu})^{m+1}}
-{(-\hat n\cdot p_1)^{m+4}}
-\langle\mathcal O(p_1)|\mathcal O(p_3)\rangle.
-\tag{6.31}
-$$
+$$\begin{align}
+\langle\mathcal O(p_1)|\mathcal W_m|\mathcal O(p_3)\rangle =\frac1{4\pi}{m+3\choose2} \frac{(-p_1^2)^2 (\partial_z\hat n^\mu\hat n^\nu\mathcal L_{1\mu\nu})^{m+1}} {(-\hat n\cdot p_1)^{m+4}} \langle\mathcal O(p_1)|\mathcal O(p_3)\rangle. \tag{6.31}
+\end{align}$$
 
 For a massive scalar, the universal graviton soft factor satisfies
 
-$$
-\partial_z^{m+3}S_k^{(m)}(\hat n)
-=i^{m+3}{m+3\choose2}
-\frac{p_k^4}{(-\hat n\cdot p_k)^{m+4}}
-(\partial_z\hat n^\mu\hat n^\nu\mathcal L_{k\mu\nu})^{m+1}.
-\tag{6.35}
-$$
+$$\begin{align}
+\partial_z^{m+3}S_k^{(m)}(\hat n) =i^{m+3}{m+3\choose2} \frac{p_k^4}{(-\hat n\cdot p_k)^{m+4}} (\partial_z\hat n^\mu\hat n^\nu\mathcal L_{k\mu\nu})^{m+1}. \tag{6.35}
+\end{align}$$
 
 This matches the kinematic coefficient in (6.31). The amplitude itself contains a nonuniversal term $\mathcal B_{(m)}^{\mu\nu}$ beginning at $m=1$, so the event shape matches the universal component, not the full all-order soft expansion.
 
 The gauge-current result is
 
-$$
-\langle\mathcal O(p_1)|\mathcal S_m|\mathcal O(p_3)\rangle
-=(m+1)\frac Q{4\pi}
-\frac{(-p_1^2)
-(\partial_z\hat n^\mu\hat n^\nu\mathcal L_{1\mu\nu})^m}
-{(-\hat n\cdot p_1)^{m+2}}
-\langle\mathcal O(p_1)|\mathcal O(p_3)\rangle.
-\tag{6.44}
-$$
+$$\begin{align}
+\langle\mathcal O(p_1)|\mathcal S_m|\mathcal O(p_3)\rangle =(m+1)\frac Q{4\pi} \frac{(-p_1^2) (\partial_z\hat n^\mu\hat n^\nu\mathcal L_{1\mu\nu})^m} {(-\hat n\cdot p_1)^{m+2}} \langle\mathcal O(p_1)|\mathcal O(p_3)\rangle. \tag{6.44}
+\end{align}$$
 
 Section 6.2 asserts the corresponding gauge-soft descendant relation but does not display a separate equation parallel to (6.35). That distinction should be preserved.
 
-# Free fields and the light-scalar loophole
+# Free Fields and the Light-Scalar Loophole
 
 For a free conformal scalar, wave-equation recursion lets one exchange transverse inverse derivatives for additional $u$ integrations. For example, the nonlocal radial part of $\mathcal W_2$ becomes a total $\bar z$ derivative of a double-null integral. An analogous identity holds for $\mathcal S_2$. This makes the pre-primary transverse-local at the price of null nonlocality.
 
@@ -599,7 +503,7 @@ The free real scalar violates the stress-algebra hypothesis: $\phi$ has dimensio
 
 The current free-field example checks the generator representation but does not calculate the free-current algebra in Section 7.2. Its $U(1)$ current also cannot test the nonabelian $f^{abc}$ coefficient.
 
-# Where the main equations enter
+# Where the Main Equations Enter
 
 | Equation | Role | Local translation |
 |---|---|---|
@@ -618,37 +522,27 @@ The current free-field example checks the generator representation but does not 
 | (6.31), (6.35), (6.44) | Momentum/soft dictionary | Matches universal soft descendants, not full amplitudes. |
 | (B.7) | Inverse-derivative covariance | Formal and globally underdetermined; contains a source typo as printed. |
 
-# Dependency map
+# Dependency Map
 
-$$
-\text{CFT falloffs}+\partial_\mu T^{\mu\nu}=0
-\Longrightarrow
-\text{finite conservation-reduced basis}
-\Longrightarrow
-SL(2,\mathbb C)\text{ primary recursions}
-\Longrightarrow
-\mathcal W_m.
-$$
+$$\begin{align}
+\text{CFT falloffs}+\partial_\mu T^{\mu\nu}=0 \Longrightarrow \text{finite conservation-reduced basis} \Longrightarrow SL(2,\mathbb C)\text{ primary recursions} \Longrightarrow \mathcal W_m.
+\end{align}$$
 
-$$
-\mathcal W_m+P_u\text{ descent}
-+\text{same-lightsheet OPE support}
-+\text{low-order bases}
+$$\begin{align}
+\mathcal W_m+P_u\text{ descent} +\text{same-lightsheet OPE support} +\text{low-order bases}
 \Longrightarrow
 \text{local commutator with derivative bounds}.
-$$
+\end{align}$$
 
-$$
-\text{derivative bounds}
-+\text{kernel/Lorentz mixing}
-+\text{wedge smearing}
+$$\begin{align}
+\text{derivative bounds} +\text{kernel/Lorentz mixing} +\text{wedge smearing}
 \Longrightarrow
 \text{loop }\mathrm w_{1+\infty}\text{ wedge algebra}.
-$$
+\end{align}$$
 
 The current chain is parallel, with $\partial_\mu j^\mu=0$ and flavor structure constants. The event-shape chain begins separately from CFT three-point functions, null contour integration, and explicit cancellations; it does not prove the operator algebra.
 
-# Translation to CPS, boundary, and charge language
+# Translation to CPS, Boundary, and Charge Language
 
 | Paper object | Closest local formalism object | Essential qualification |
 |---|---|---|
@@ -669,7 +563,7 @@ The current chain is parallel, with $\partial_\mu j^\mu=0$ and flavor structure 
 
 The key warning is that the paper supplies an algebra of detector densities and their projected modes, whereas a CPS charge construction would additionally require a gravitational/gauge phase space, presymplectic form, degeneracy quotient, integrable Hamiltonians, boundary conditions, and soft plus hard contributions.
 
-# Concrete project extensions
+# Concrete Project Extensions
 
 1. **Compare recursions before comparing algebras.** Put (3.62) beside the vault's gravitational charge-aspect recursion at finite cutoff. Separate the linear stress-tensor part from nonlinear gravitational corrections before asking whether the wedge brackets agree.
 2. **Formulate the wedge as a test-function quotient.** Express the threshold $\ell\ge2p-1$ as the annihilator of degree-$2p-2$ holomorphic smearings. This may clarify which CPS improvements are projected out and which are physically retained.
@@ -679,7 +573,7 @@ The key warning is that the paper supplies an algebra of detector densities and 
 6. **Do not overread the soft correspondence.** For gravity, compare (6.35) only with the universal factor and track $\mathcal B_{(m)}$ from $m=1$. For gauge theory, first derive the explicit descendant identity that Section 6.2 leaves implicit.
 7. **Use the free scalar as a falsification benchmark.** Reproduce the first outside-wedge $\phi^2$ terms and test whether a chosen gravitational/CPS projection removes them for structural rather than accidental low-order reasons.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

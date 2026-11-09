@@ -13,7 +13,7 @@ summary: "A clean exact Darboux map with checked scalar identities and honest li
 tags: []
 ---
 
-# Verdict and relevance
+# Verdict and Relevance
 
 **Direct verdict.** Correct on the real Darboux patch $1+\lambda>0$, with the removable point $\lambda=0$ understood by continuity. The scalar identities defining the transformation and the quoted series are independently reproduced. The map is an exact classical symplectomorphism; it is not a quantization theorem, and its eight-dimensional Poisson gauge theory is only a semiclassical construction whose four-dimensional interpretation remains open.
 
@@ -21,157 +21,125 @@ Reason codes: `T1-symplectic`, `T2-model`, `T3-math`.
 
 The main vault relevance is methodological: derive a symplectic potential, construct Darboux variables, and check singular parameter limits before interpreting deformed variables. It is not directly about boundary gluing.
 
-# Snyder--de Sitter Poisson tensor
+# Snyder--De Sitter Poisson Tensor
 
 For $X^{\mathcal M}=(x^\mu,p_\mu)$, the brackets include
 
-$$
-\{x^\mu,x^\nu\}
-=\beta^2(x^\mu p^\nu-x^\nu p^\mu),
-$$
+$$\begin{align}
+\{x^\mu,x^\nu\} =\beta^2(x^\mu p^\nu-x^\nu p^\mu),
+\end{align}$$
 
-$$
-\{p_\mu,p_\nu\}
-=\alpha^2(x_\mu p_\nu-x_\nu p_\mu),
-$$
+$$\begin{align}
+\{p_\mu,p_\nu\} =\alpha^2(x_\mu p_\nu-x_\nu p_\mu),
+\end{align}$$
 
-$$
-\{x^\mu,p_\nu\}
-=\delta^\mu_\nu+\alpha^2x^\mu x_\nu
-+\beta^2p^\mu p_\nu+2\alpha\beta p^\mu x_\nu.
-$$
+$$\begin{align}
+\{x^\mu,p_\nu\} =\delta^\mu_\nu+\alpha^2x^\mu x_\nu +\beta^2p^\mu p_\nu+2\alpha\beta p^\mu x_\nu.
+\end{align}$$
 
 Define
 
-$$
+$$\begin{align}
 \lambda=\alpha^2x^2+\beta^2p^2+2\alpha\beta x\cdot p.
-$$
+\end{align}$$
 
 The inverse Poisson tensor carries an overall $(1+\lambda)^{-1}$, so the displayed symplectic chart excludes $\lambda=-1$.
 
-# Symplectic potential
+# Symplectic Potential
 
 With $u=x^2/2$, $v=p^2/2$, and $z=x\cdot p$, the Lorentz-covariant potential uses
 
-$$
-F(\lambda)=\frac{\lambda-\log(1+\lambda)}{2\lambda^2},
-\qquad F(0)=\frac14.
-$$
+$$\begin{align}
+F(\lambda)=\frac{\lambda-\log(1+\lambda)}{2\lambda^2}, \qquad F(0)=\frac14.
+\end{align}$$
 
 The first-order action
 
-$$
+$$\begin{align}
 S=\int d\tau\,[J_{\mathcal M}(X)\dot X^{\mathcal M}-H(X)]
-$$
+\end{align}$$
 
 reproduces the SdS Poisson structure through $dJ=\Omega=\Theta^{-1}/2$. The logarithm makes the real chart condition $1+\lambda>0$ explicit.
 
-# Exact Darboux map
+# Exact Darboux Map
 
 Let $Y^{\mathcal M}=(y^\mu,\xi_\mu)$ be canonical. The inverse map $Y(X)$ is built from
 
-$$
-A(\lambda)=
-\frac{\lambda+\log(1+\lambda)}
-{2\sqrt{\lambda\log(1+\lambda)}},
-$$
+$$\begin{align}
+A(\lambda)= \frac{\lambda+\log(1+\lambda)} {2\sqrt{\lambda\log(1+\lambda)}},
+\end{align}$$
 
-$$
-B(\lambda)=
-\frac{\lambda-\log(1+\lambda)}
-{\sqrt{\lambda^3\log(1+\lambda)}}.
-$$
+$$\begin{align}
+B(\lambda)= \frac{\lambda-\log(1+\lambda)} {\sqrt{\lambda^3\log(1+\lambda)}}.
+\end{align}$$
 
 The coefficient matrix is fixed by
 
-$$
-A^2-\frac{\lambda^2}{4}B^2=1,
-\qquad
-B\left(A-\frac\lambda2B\right)=2F.
-$$
+$$\begin{align}
+A^2-\frac{\lambda^2}{4}B^2=1, \qquad B\left(A-\frac\lambda2B\right)=2F.
+\end{align}$$
 
 These two identities encode unit determinant and symplectic-potential matching.
 
 For the forward map $X(Y)$, define
 
-$$
-\bar\lambda=
-\alpha^2y^2+\beta^2\xi^2+2\alpha\beta y\cdot\xi,
-\qquad
-\lambda=e^{\bar\lambda}-1,
-$$
+$$\begin{align}
+\bar\lambda= \alpha^2y^2+\beta^2\xi^2+2\alpha\beta y\cdot\xi, \qquad \lambda=e^{\bar\lambda}-1,
+\end{align}$$
 
 and
 
-$$
-C(\bar\lambda)=
-\frac{e^{\bar\lambda}-1+\bar\lambda}
-{2\sqrt{(e^{\bar\lambda}-1)\bar\lambda}},
-$$
+$$\begin{align}
+C(\bar\lambda)= \frac{e^{\bar\lambda}-1+\bar\lambda} {2\sqrt{(e^{\bar\lambda}-1)\bar\lambda}},
+\end{align}$$
 
-$$
-D(\bar\lambda)=
-\frac{e^{\bar\lambda}-1-\bar\lambda}
-{\sqrt{(e^{\bar\lambda}-1)\bar\lambda^3}}.
-$$
+$$\begin{align}
+D(\bar\lambda)= \frac{e^{\bar\lambda}-1-\bar\lambda} {\sqrt{(e^{\bar\lambda}-1)\bar\lambda^3}}.
+\end{align}$$
 
 Then
 
-$$
-\begin{aligned}
-x_\mu={}&
-\left[C+(\alpha^2\bar u-\beta^2\bar v)D\right]y_\mu
-+(\beta^2\bar z+2\alpha\beta\bar u)D\,\xi_\mu,\\
-p_\mu={}&
-(\alpha^2\bar z+2\alpha\beta\bar v)D\,y_\mu
-+\left[C-(\alpha^2\bar u-\beta^2\bar v)D\right]\xi_\mu.
-\end{aligned}
-$$
+$$\begin{aligned}
+x_\mu={}& \left[C+(\alpha^2\bar u-\beta^2\bar v)D\right]y_\mu +(\beta^2\bar z+2\alpha\beta\bar u)D\,\xi_\mu,\\
+p_\mu={}& (\alpha^2\bar z+2\alpha\beta\bar v)D\,y_\mu +\left[C-(\alpha^2\bar u-\beta^2\bar v)D\right]\xi_\mu.
+\end{aligned}$$
 
 The apparent singularities at $\bar\lambda=0$ are removable:
 
-$$
-C=1+\frac{\bar\lambda^2}{32}
-+\frac{\bar\lambda^3}{192}+O(\bar\lambda^4),
-$$
+$$\begin{align}
+C=1+\frac{\bar\lambda^2}{32} +\frac{\bar\lambda^3}{192}+O(\bar\lambda^4),
+\end{align}$$
 
-$$
-D=\frac12+\frac{\bar\lambda}{24}
-+\frac{\bar\lambda^2}{192}+O(\bar\lambda^3).
-$$
+$$\begin{align}
+D=\frac12+\frac{\bar\lambda}{24} +\frac{\bar\lambda^2}{192}+O(\bar\lambda^3).
+\end{align}$$
 
 Because every deformation correction contains $\alpha$ or $\beta$, the simultaneous limit gives $x=y$, $p=\xi$. Setting one parameter to zero before the other also remains regular, which is the improvement claimed in the title.
 
-# Poisson gauge application
+# Poisson Gauge Application
 
 Canonical phase-space gauge transformations are pulled back using the Jacobian
 
-$$
-\Gamma^{\mathcal N}{}_{\mathcal M}(X)
-=\left.\frac{\partial X^{\mathcal N}}
+$$\begin{align}
+\Gamma^{\mathcal N}{}_{\mathcal M}(X) =\left.\frac{\partial X^{\mathcal N}}
 {\partial Y^{\mathcal M}}\right|_{Y=Y(X)}.
-$$
+\end{align}$$
 
 The proposed law is
 
-$$
-\delta_fA_{\mathcal M}
-=\Gamma^{\mathcal N}{}_{\mathcal M}\partial_{\mathcal N}f
-+\{A_{\mathcal M},f\},
-$$
+$$\begin{align}
+\delta_fA_{\mathcal M} =\Gamma^{\mathcal N}{}_{\mathcal M}\partial_{\mathcal N}f +\{A_{\mathcal M},f\},
+\end{align}$$
 
 with covariant field strength
 
-$$
-\mathcal F_{\mathcal M\mathcal N}
-=\Gamma^{\mathcal K}{}_{\mathcal M}\partial_{\mathcal K}A_{\mathcal N}
--\Gamma^{\mathcal K}{}_{\mathcal N}\partial_{\mathcal K}A_{\mathcal M}
-+\{A_{\mathcal M},A_{\mathcal N}\}.
-$$
+$$\begin{align}
+\mathcal F_{\mathcal M\mathcal N} =\Gamma^{\mathcal K}{}_{\mathcal M}\partial_{\mathcal K}A_{\mathcal N} -\Gamma^{\mathcal K}{}_{\mathcal N}\partial_{\mathcal K}A_{\mathcal M} +\{A_{\mathcal M},A_{\mathcal N}\}.
+\end{align}$$
 
 Closure is inherited from canonical coordinates. However, even at $\alpha=\beta=0$ the fields live on full phase space, so this is not yet ordinary four-dimensional Maxwell theory.
 
-# Independent verification
+# Independent Verification
 
 ## Checked
 
@@ -179,12 +147,12 @@ Closure is inherited from canonical coordinates. However, even at $\alpha=\beta=
 - Mathematica reproduces the displayed regular series for $C$ and $D$, including the next coefficients.
 - The relation $\bar\lambda=\log(1+\lambda)$ inverts to $\lambda=e^{\bar\lambda}-1$ and identifies the chart boundary.
 
-## Source-derived
+## Source-Derived
 
 - The complete 14-page PDF and TeX source were inspected.
 - The paper explicitly calls the representation nonunique and leaves physical interpretation of the phase-space gauge theory for future work.
 
-## Not independently verified
+## Not Independently Verified
 
 - The full component Jacobian $\Gamma$ and all Poisson brackets of the all-order map were not recomputed symbolically in four dimensions.
 - Global coverage across $\lambda=-1$, quantization, star-product ordering, Hilbert-space representations, and reduction from eight to four field-theory dimensions are not established.

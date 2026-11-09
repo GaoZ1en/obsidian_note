@@ -419,7 +419,7 @@ Total deduplicated entries: 407
 | [2610.11397](https://arxiv.org/abs/2610.11397) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th, quant-ph | A note on decoherence in quantum cosmology by thermal perturbations: an open quantum systems approach | Alexander Kulyabin | 14 pages. v2: revised title and abstract, typos and minor errors corrected |
 | [2610.11565](https://arxiv.org/abs/2610.11565) | hep-th:replacement; math-ph:replacement | hep-th, math-ph | Injectivity of specialization maps in critical cohomology | Yalong Cao | 22 pages. Applications to irreducibility of Yangian modules are added |
 
-## Screening audit
+## Screening Audit
 
 Original helper SHA-256: `57bdde08ec3930761ce28d3d6e20a8112791200a789a98810fa23437d74b633f`. Original helper rows retained. Full categories/primary and latest observed versions were fetched from all 407 official abstract pages; issue-row IDs are unversioned, so the observed latest version is not separately certified as the exact announcement version. All title/author/comment/category records were screened; focused abstract reading resolved technical near matches. Downloaded metadata is not independent verification.
 

@@ -163,7 +163,7 @@ Total deduplicated entries: 151
 | [2610.41416](https://arxiv.org/abs/2610.41416) | math-ph:replacement | math-ph | Tracy-Widom law for sample covariance matrices under quadratic form concentration | Guangchen Chen, Xing Lyu |  |
 | [2611.00864](https://arxiv.org/abs/2611.00864) | hep-th:replacement | hep-th | From MHV Gravity Amplitudes and Hodges map to Pentad Varieties | Joris Koefler, Emanuele Ventura, Hongmiao Yu | Comments welcome |
 
-## Screening and placement audit
+## Screening and Placement Audit
 
 This separate audit supplements the unmodified helper table. Every record was screened at metadata depth. Primary subject is the first official subject; the complete case-sensitive category union is retained below. Deferred and tracked-update entries received metadata only. Version pins refer to the saved official issue, with seven missing pins resolved from official abstract histories.
 

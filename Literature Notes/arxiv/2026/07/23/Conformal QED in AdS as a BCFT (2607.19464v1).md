@@ -19,197 +19,155 @@ Technical reason codes: T1-boundary, T2-dS-BH-holography, T2-model. Author signa
 
 The best reusable mechanism is
 
-$$
-\text{gauge boundary condition}
-\longrightarrow
-\text{residual gauge/ghost modes}
-\longrightarrow
-\text{boundary determinant and poles}
-\longrightarrow
+$$\begin{align}
+\text{gauge boundary condition} \longrightarrow
+\text{residual gauge/ghost modes} \longrightarrow
+\text{boundary determinant and poles} \longrightarrow
 \text{renormalized AdS free energy}.
-$$
+\end{align}$$
 
 The proposed BCFT stability chain is not presently reusable as printed because the displayed mixing matrices fail to produce the quoted anomalous dimensions.
 
-## Dirichlet and Neumann gauge boundary conditions
+## Dirichlet and Neumann Gauge Boundary Conditions
 
 The bulk is Euclidean AdS,
 
-$$
+$$\begin{align}
 ds^2=\frac{dz^2+d\vec x^{\,2}}{z^2},
-$$
+\end{align}$$
 
 viewed as a BCFT on the Weyl-equivalent half-space. The regularized boundary quantity is
 
-$$
-\widetilde F
-=-\sin\left(\frac{\pi(d-1)}2\right)F_{\mathrm{AdS}_d}.
-$$
+$$\begin{align}
+\widetilde F =-\sin\left(\frac{\pi(d-1)}2\right)F_{\mathrm{AdS}_d}.
+\end{align}$$
 
-For \(3<d\leq4\), the gauge conditions are:
+For $3<d\leq4$, the gauge conditions are:
 
-$$
-\text{Neumann:}\qquad
-A_i(z,\vec x)\sim a_i(\vec x),
-$$
+$$\begin{align}
+\text{Neumann:}\qquad A_i(z,\vec x)\sim a_i(\vec x),
+\end{align}$$
 
-where \(a_i\) is a dynamical boundary gauge field, and
+where $a_i$ is a dynamical boundary gauge field, and
 
-$$
-\text{Dirichlet:}\qquad
-A_i(z,\vec x)\sim z^{d-3}e^2J_i(\vec x),
-$$
+$$\begin{align}
+\text{Dirichlet:}\qquad A_i(z,\vec x)\sim z^{d-3}e^2J_i(\vec x),
+\end{align}$$
 
-where \(J_i\) is a conserved, gauge-invariant boundary current.
+where $J_i$ is a conserved, gauge-invariant boundary current.
 
 The ghost asymptotics separate the two cases:
 
-$$
-\text{N:}\quad c\sim z^0,
-\qquad
-\text{D:}\quad c\sim z^{d-1}.
-$$
+$$\begin{align}
+\text{N:}\quad c\sim z^0, \qquad \text{D:}\quad c\sim z^{d-1}.
+\end{align}$$
 
-Neumann therefore retains boundary gauge transformations and a constant ghost zero mode; Dirichlet does not. This residual sector generates the \(\log e_0^2\) term and the extra Neumann pole that must be canceled at next order.
+Neumann therefore retains boundary gauge transformations and a constant ghost zero mode; Dirichlet does not. This residual sector generates the $\log e_0^2$ term and the extra Neumann pole that must be canceled at next order.
 
-## One-loop free energies
+## One-Loop Free Energies
 
-For \(N_f\) four-component charge-one Dirac fermions,
+For $N_f$ four-component charge-one Dirac fermions,
 
-$$
-S_{\mathrm{Maxwell}}
-=\int\sqrt g\,\frac{F_{\mu\nu}F^{\mu\nu}}{4e_0^2},
-$$
+$$\begin{align}
+S_{\mathrm{Maxwell}} =\int\sqrt g\,\frac{F_{\mu\nu}F^{\mu\nu}}{4e_0^2},
+\end{align}$$
 
-$$
-S_{\mathrm{Ferm}}
-=-\int\sqrt g
-\sum_{i=1}^{N_f}
-\bar\psi_i\gamma^\mu(\nabla_\mu+iA_\mu)\psi^i.
-$$
+$$\begin{align}
+S_{\mathrm{Ferm}} =-\int\sqrt g
+\sum_{i=1}^{N_f} \bar\psi_i\gamma^\mu(\nabla_\mu+iA_\mu)\psi^i.
+\end{align}$$
 
-Curvature counterterms proportional to the Euler density and \(\mathcal R^2\) are retained because the AdS free energy has ultraviolet poles.
+Curvature counterterms proportional to the Euler density and $\mathcal R^2$ are retained because the AdS free energy has ultraviolet poles.
 
 For Dirichlet gauge BC,
 
-$$
-F_{\mathrm{Maxwell}}^{\mathrm D}
-=\frac12\log\det_{(1)}
-\big[-\nabla^2-(d-1)\big]
--\frac12\log\det_{(0)}[-\nabla^2].
-$$
+$$\begin{align}
+F_{\mathrm{Maxwell}}^{\mathrm D} =\frac12\log\det_{(1)} \big[-\nabla^2-(d-1)\big] -\frac12\log\det_{(0)}[-\nabla^2].
+\end{align}$$
 
 The source reports
 
-$$
-F_{\mathrm{Maxwell}}^{\mathrm D}
-=\frac{31}{90\epsilon}
--0.013417
-+0.54083\epsilon
-+O(\epsilon^2).
-$$
+$$\begin{align}
+F_{\mathrm{Maxwell}}^{\mathrm D} =\frac{31}{90\epsilon} -0.013417 +0.54083\epsilon +O(\epsilon^2).
+\end{align}$$
 
 Neumann is constructed by boundary gauging:
 
-$$
-Z_{\mathrm N}
-=\int\frac{\mathcal Da_i}{\operatorname{vol}\mathcal G}
-Z_{\mathrm D}[a].
-$$
+$$\begin{align}
+Z_{\mathrm N} =\int\frac{\mathcal Da_i}{\operatorname{vol}\mathcal G} Z_{\mathrm D}[a].
+\end{align}$$
 
 At quadratic order,
 
-$$
-F_{\mathrm{Maxwell}}^{\mathrm N}
--F_{\mathrm{Maxwell}}^{\mathrm D}
-=F_{a_i},
-$$
+$$\begin{align}
+F_{\mathrm{Maxwell}}^{\mathrm N} -F_{\mathrm{Maxwell}}^{\mathrm D} =F_{a_i},
+\end{align}$$
 
 where the transverse boundary determinant, primed scalar ghost determinant, and zero-mode volume give
 
-$$
-\delta F_{\mathrm{Maxwell}}
-=\frac12\log(2\pi)
--2.405\,\epsilon
--\frac12\log e_0^2
-+O(\epsilon^2).
-$$
+$$\begin{align}
+\delta F_{\mathrm{Maxwell}} =\frac12\log(2\pi) -2.405\,\epsilon -\frac12\log e_0^2 +O(\epsilon^2).
+\end{align}$$
 
 This boundary-gauging route is valuable independently of the paper's later stability interpretation.
 
-## Two-loop diagram and fermionic fixed point
+## Two-Loop Diagram and Fermionic Fixed Point
 
 In Fried--Yennie gauge,
 
-$$
+$$\begin{align}
 \xi=\frac d{d-2},
-$$
+\end{align}$$
 
 the vector propagator is decomposed into two chordal-distance functions. At this order the only fermionic interaction is
 
-$$
-e_0\Gamma^{\mathrm{FE}}
-=i\bar\psi_i\gamma^\mu\psi^iA_\mu.
-$$
+$$\begin{align}
+e_0\Gamma^{\mathrm{FE}} =i\bar\psi_i\gamma^\mu\psi^iA_\mu.
+\end{align}$$
 
 The source reports one two-loop photon-exchange contribution:
 
-$$
-G_{\mathrm F}^{\mathrm D}
-=-\frac{N_f}{12\pi^2},
-$$
+$$\begin{align}
+G_{\mathrm F}^{\mathrm D} =-\frac{N_f}{12\pi^2},
+\end{align}$$
 
-$$
-G_{\mathrm F}^{\mathrm N}
-=N_f\left(
-\frac{1}{6\pi^2\epsilon}
-+0.03187
-\right).
-$$
+$$\begin{align}
+G_{\mathrm F}^{\mathrm N} =N_f\left( \frac{1}{6\pi^2\epsilon} +0.03187 \right).
+\end{align}$$
 
 The charge beta function is
 
-$$
-\beta_e
-=-\frac\epsilon2e
-+\frac{4N_f}{3}\frac{e^3}{(4\pi)^2}
-+\cdots,
-$$
+$$\begin{align}
+\beta_e =-\frac\epsilon2e +\frac{4N_f}{3}\frac{e^3}{(4\pi)^2} +\cdots,
+\end{align}$$
 
 so
 
-$$
-e_*^2=\frac{6\pi^2\epsilon}{N_f},
-\qquad
-e_*=\pi\sqrt{\frac{6\epsilon}{N_f}}.
-$$
+$$\begin{align}
+e_*^2=\frac{6\pi^2\epsilon}{N_f}, \qquad e_*=\pi\sqrt{\frac{6\epsilon}{N_f}}.
+\end{align}$$
 
-After charge and curvature renormalization, the paper claims cancellation of the one-loop poles, the extra Neumann pole, and all fixed-point \(\log\mu\) terms. The displayed result has
+After charge and curvature renormalization, the paper claims cancellation of the one-loop poles, the extra Neumann pole, and all fixed-point $\log\mu$ terms. The displayed result has
 
-$$
-F_*^{\mathrm N}-F_*^{\mathrm D}
-=-1.1217-1.2117\epsilon
-+\frac12\log\frac{N_f}{\epsilon}
-+O(\epsilon^2).
-$$
+$$\begin{align}
+F_*^{\mathrm N}-F_*^{\mathrm D} =-1.1217-1.2117\epsilon +\frac12\log\frac{N_f}{\epsilon} +O(\epsilon^2).
+\end{align}$$
 
 The numerical determinant and diagram coefficients were not reproducible from the source without the authors' integration code.
 
-## Boundary displacement mixing
+## Boundary Displacement Mixing
 
-At \(d=4\), the Maxwell and matter sectors each supply a parity-even singlet scalar. For Dirichlet,
+At $d=4$, the Maxwell and matter sectors each supply a parity-even singlet scalar. For Dirichlet,
 
-$$
-\mathcal D_{\mathrm{Max}}^{\mathrm D}
-=\frac{e^2}{2}J_iJ^i,
-$$
+$$\begin{align}
+\mathcal D_{\mathrm{Max}}^{\mathrm D} =\frac{e^2}{2}J_iJ^i,
+\end{align}$$
 
 while for Neumann,
 
-$$
-\mathcal D_{\mathrm{Max}}^{\mathrm N}
-=-\frac{1}{4e^2}f_{ij}f^{ij}.
-$$
+$$\begin{align}
+\mathcal D_{\mathrm{Max}}^{\mathrm N} =-\frac{1}{4e^2}f_{ij}f^{ij}.
+\end{align}$$
 
 The corresponding fermion operator is a boundary kinetic bilinear. The source prints
 
@@ -241,173 +199,148 @@ $$
 
 The quoted eigen-dimensions are
 
-$$
-\Delta_1^{\mathrm D}
-=\Delta_1^{\mathrm N}
-=4-\epsilon=d,
-$$
+$$\begin{align}
+\Delta_1^{\mathrm D} =\Delta_1^{\mathrm N} =4-\epsilon=d,
+\end{align}$$
 
-$$
-\Delta_2^{\mathrm D}
-=4-2\epsilon-\frac{2\epsilon}{N_f},
-\qquad
-\Delta_2^{\mathrm N}
-=4+\frac{2\epsilon}{N_f}.
-$$
+$$\begin{align}
+\Delta_2^{\mathrm D} =4-2\epsilon-\frac{2\epsilon}{N_f}, \qquad \Delta_2^{\mathrm N} =4+\frac{2\epsilon}{N_f}.
+\end{align}$$
 
 These final formulas would make the first eigenvector the protected displacement operator and would drive the second Dirichlet operator toward marginality at
 
-$$
+$$\begin{align}
 \Delta=d-1.
-$$
+\end{align}$$
 
 However, using the source's own correlator convention
 
-$$
-\gamma_{\mathrm{eff}}
-=e_*^2\Gamma-\epsilon\,\delta\Delta,
-$$
+$$\begin{align}
+\gamma_{\mathrm{eff}} =e_*^2\Gamma-\epsilon\,\delta\Delta,
+\end{align}$$
 
-the displayed matrices do not have \(-\epsilon\) as an eigenvalue:
+the displayed matrices do not have $-\epsilon$ as an eigenvalue:
 
-$$
-\det(\gamma_{\mathrm{eff}}+\epsilon\mathbf1)
-=-\frac{6\epsilon^2(6+\pi^4)}{\pi^8}\neq0.
-$$
+$$\begin{align}
+\det(\gamma_{\mathrm{eff}}+\epsilon\mathbf1) =-\frac{6\epsilon^2(6+\pi^4)}{\pi^8}\neq0.
+\end{align}$$
 
-Moreover, after substituting \(e_*^2\), their eigenvalues lose the \(N_f\)-dependence required by the quoted \(2/N_f\) term. Missing operator normalizations, signs, or powers of \(\pi\) are likely. The source does not determine the repair.
+Moreover, after substituting $e_*^2$, their eigenvalues lose the $N_f$-dependence required by the quoted $2/N_f$ term. Missing operator normalizations, signs, or powers of $\pi$ are likely. The source does not determine the repair.
 
 The reported merger dimensions
 
-$$
-d_{\mathrm{merg}}
-=3+\frac{2}{N_f+2}
-$$
+$$\begin{align}
+d_{\mathrm{merg}} =3+\frac{2}{N_f+2}
+\end{align}$$
 
 are arithmetically correct **conditional on the quoted final dimension**, but that final dimension is not derived by the displayed matrix.
 
-Consequently, the existence of a second Dirichlet fixed point \(\mathrm D^*\), a \(\mathrm D\)-\(\mathrm D^*\) merger, and stability in \(d=3\) remain interpretation rather than checked output.
+Consequently, the existence of a second Dirichlet fixed point $\mathrm D^*$, a $\mathrm D$-$\mathrm D^*$ merger, and stability in $d=3$ remain interpretation rather than checked output.
 
-## Boundary fermion from the bulk equation
+## Boundary Fermion from the Bulk Equation
 
 For Dirichlet gauge BC, the bulk Dirac equation
 
-$$
-\gamma\cdot\nabla\Psi
-=-ieA_\mu\gamma^\mu\Psi
-$$
+$$\begin{align}
+\gamma\cdot\nabla\Psi =-ieA_\mu\gamma^\mu\Psi
+\end{align}$$
 
 is used to reduce the boundary anomalous dimension to AdS master integrals. The source reports
 
-$$
-\widehat\Delta_\Psi
-=\frac{d-1}{2}
-+\frac{3e^2}{16\pi^2},
-$$
+$$\begin{align}
+\widehat\Delta_\Psi =\frac{d-1}{2} +\frac{3e^2}{16\pi^2},
+\end{align}$$
 
 and hence
 
-$$
-\widehat\Delta_\Psi
-=\frac32+\frac{9-4N_f}{8N_f}\epsilon
-$$
+$$\begin{align}
+\widehat\Delta_\Psi =\frac32+\frac{9-4N_f}{8N_f}\epsilon
+\end{align}$$
 
 at the fermionic fixed point. Neumann is not treated because the boundary fermion is then not gauge invariant.
 
-## Scalar-QED extension and its beta-function mismatch
+## Scalar-QED Extension and Its Beta-Function Mismatch
 
 The scalar action is
 
-$$
-S_{\mathrm{scal}}
-=\int\sqrt g\left[
-D_\mu\phi_i^*D^\mu\phi^i
-+m^2\phi_i^*\phi^i
-+\lambda(\phi_i^*\phi^i)^2
-\right],
-$$
+$$\begin{align}
+S_{\mathrm{scal}} =\int\sqrt g\left[ D_\mu\phi_i^*D^\mu\phi^i +m^2\phi_i^*\phi^i +\lambda(\phi_i^*\phi^i)^2 \right],
+\end{align}$$
 
 with conformal mass
 
-$$
+$$\begin{align}
 m^2=-\frac{d(d-2)}4.
-$$
+\end{align}$$
 
-The source keeps the scalar \(\Delta_+=d/2\) quantization and both gauge boundary conditions. At NLO it includes photon exchange, a seagull, a quartic figure-eight, and a contact term generated by double derivatives of the scalar propagator. The contact term is a useful warning for any analogous AdS calculation.
+The source keeps the scalar $\Delta_+=d/2$ quantization and both gauge boundary conditions. At NLO it includes photon exchange, a seagull, a quartic figure-eight, and a contact term generated by double derivatives of the scalar propagator. The contact term is a useful warning for any analogous AdS calculation.
 
 The source prints
 
-$$
-\beta_e
-=-\frac{\epsilon e}{2}
-+\frac{N_s}{6}\frac{e^3}{(4\pi)^2},
-$$
+$$\begin{align}
+\beta_e =-\frac{\epsilon e}{2} +\frac{N_s}{6}\frac{e^3}{(4\pi)^2},
+\end{align}$$
 
 but then quotes
 
-$$
+$$\begin{align}
 e_*^2=\frac{24\pi^2\epsilon}{N_s}.
-$$
+\end{align}$$
 
 The printed beta function instead gives
 
-$$
+$$\begin{align}
 e_*^2=\frac{48\pi^2\epsilon}{N_s}.
-$$
+\end{align}$$
 
-The quoted fixed point would require the cubic coefficient \(N_s/3\), not \(N_s/6\). Therefore the scalar fixed-point chain fails as printed, and downstream scalar free energies and mixing data cannot be treated as derived from the displayed beta function.
+The quoted fixed point would require the cubic coefficient $N_s/3$, not $N_s/6$. Therefore the scalar fixed-point chain fails as printed, and downstream scalar free energies and mixing data cannot be treated as derived from the displayed beta function.
 
 The quartic fixed-point discriminant
 
-$$
+$$\begin{align}
 N_s^2-180N_s-540
-$$
+\end{align}$$
 
 has positive root
 
-$$
-90+24\sqrt{15}
-=182.9516\ldots,
-$$
+$$\begin{align}
+90+24\sqrt{15} =182.9516\ldots,
+\end{align}$$
 
-so the quoted first allowed integer \(N_s=183\) is arithmetically correct conditional on that formula.
+so the quoted first allowed integer $N_s=183$ is arithmetically correct conditional on that formula.
 
-The scalar mixing matrices have the same normalization problem as the fermionic matrices and do not reproduce the quoted protected and unprotected dimensions. The final large-\(N_s\) expansion
+The scalar mixing matrices have the same normalization problem as the fermionic matrices and do not reproduce the quoted protected and unprotected dimensions. The final large-$N_s$ expansion
 
-$$
-\widehat\Delta_\phi
-=2-\frac{5\epsilon}{8}
-+\frac{75\epsilon}{8N_s}
-+\frac{255\epsilon}{N_s^2}
-+\cdots
-$$
+$$\begin{align}
+\widehat\Delta_\phi =2-\frac{5\epsilon}{8} +\frac{75\epsilon}{8N_s} +\frac{255\epsilon}{N_s^2} +\cdots
+\end{align}$$
 
 does expand correctly from the preceding quoted closed form, but that does not repair the beta-function mismatch.
 
-## What can be reused
+## What Can Be Reused
 
-- The boundary-gauging identity \(Z_{\mathrm N}=\int Da\,Z_{\mathrm D}[a]\).
-- The connection among residual gauge transformations, ghost zero modes, \(\log e_0^2\), and the NLO pole structure.
+- The boundary-gauging identity $Z_{\mathrm N}=\int Da\,Z_{\mathrm D}[a]$.
+- The connection among residual gauge transformations, ghost zero modes, $\log e_0^2$, and the NLO pole structure.
 - Joint charge/curvature renormalization for AdS free energies.
-- The expectation that mixing of two decoupled displacement operators must leave one protected \(\Delta=d\) combination—useful as a normalization check.
+- The expectation that mixing of two decoupled displacement operators must leave one protected $\Delta=d$ combination—useful as a normalization check.
 - The bulk-EOM route to boundary anomalous dimensions.
 - Explicit contact-term bookkeeping for scalar derivative vertices.
 
-The printed mixing matrices should not be reused until corrected. The \(d=3\) fixed-point-merger story is an epsilon-extrapolation built on that failed matrix chain.
+The printed mixing matrices should not be reused until corrected. The $d=3$ fixed-point-merger story is an epsilon-extrapolation built on that failed matrix chain.
 
-## Verification note
+## Verification Note
 
 Checked with Mathematica:
 
-- the fermionic fixed point \(e_*=\pi\sqrt{6\epsilon/N_f}\);
+- the fermionic fixed point $e_*=\pi\sqrt{6\epsilon/N_f}$;
 - the merger-dimension arithmetic conditional on the quoted dimensions;
-- the scalar fixed-point reality threshold \(N_s\ge183\);
-- the large-\(N_s\) expansion of the quoted scalar boundary dimension;
+- the scalar fixed-point reality threshold $N_s\ge183$;
+- the large-$N_s$ expansion of the quoted scalar boundary dimension;
 - the numerical root arithmetic for the displayed free-energy differences, conditional on their decimal coefficients.
 
 Failed:
 
-- the printed scalar beta function does not yield the quoted scalar \(e_*\);
+- the printed scalar beta function does not yield the quoted scalar $e_*$;
 - the printed fermionic and scalar mixing matrices do not yield the quoted protected or unprotected dimensions.
 
 Blocked without the authors' calculation notebooks:

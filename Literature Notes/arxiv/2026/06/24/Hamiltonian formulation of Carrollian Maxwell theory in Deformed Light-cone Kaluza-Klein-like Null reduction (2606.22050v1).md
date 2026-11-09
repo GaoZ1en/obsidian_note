@@ -12,7 +12,7 @@ summary: "This paper is useful as a Carrollian Maxwell constraint-bookkeeping re
 tags: []
 ---
 
-# Why this is technically relevant
+# Why This Is Technically Relevant
 
 This note was created from [[overview]].
 
@@ -20,13 +20,13 @@ The paper is relevant because it keeps the Hamiltonian constraints visible durin
 
 It is not primarily a boundary-charge or edge-mode paper. The value for current projects is methodological: use it as a reminder to check the canonical constraint algebra before concluding that a Carrollian Maxwell sector has lost gauge invariance.
 
-## Minimal setup
+## Minimal Setup
 
 The parent theory is a complex Maxwell field on a deformed light-cone/Bargmann background with manifest $U(1)$ gauge symmetry. A Kaluza-Klein-like null reduction is performed first. The paper then derives canonical variables and a Hamiltonian action before taking Carrollian limits.
 
 The main scaling choice is made in phase space: coordinates, fields, and conjugate momenta are assigned independent powers of the contraction parameter. A term survives in the limiting action only when its scaling exponent is finite; divergent terms are rejected and suppressed terms are dropped.
 
-## Transferable mechanism or formula
+## Transferable Mechanism or Formula
 
 The transferable mechanism is:
 
@@ -44,20 +44,20 @@ Source-derived sector behavior:
 - Nonstandard scalings can produce extra scalar sectors, coupled or decoupled.
 - In the magnetic case, the paper says a finite interacting magnetic photon-scalar coupling is ruled out by regularity of the scaling limit.
 
-## Relation to current projects
+## Relation to Current Projects
 
 For null-boundary Maxwell notes, this paper is a useful guardrail. If a Carrollian limit seems to remove the gauge constraint, repeat the analysis with canonical variables before the limit. The result may depend on whether the limit is imposed on the Lagrangian fields all at once or on phase-space variables after constraint analysis.
 
 For edge-mode work, the paper is incomplete because it does not construct cut symplectic forms, large/proper gauge quotients, null flux balances, or boundary charge algebras. It may still help identify which bulk constraints should source edge modes.
 
-## What to check later
+## What to Check Later
 
 1. Reproduce the first-class constraint closure for the standard magnetic and electric sectors.
 1. Check degree-of-freedom counting in the scalar-extended sectors.
 1. Determine whether discarded surface terms are harmless; for edge-mode applications they are probably not harmless by default.
 1. Compare the electric/magnetic Carroll sectors with local Maxwell notes on null hypersurfaces.
 
-## Source-derived
+## Source-Derived
 
 - The first-class $U(1)$ Gauss constraint survives in both standard magnetic and electric Carrollian Maxwell limits.
 - Scalar sectors can appear in coupled or decoupled ways depending on canonical scaling.
@@ -70,7 +70,7 @@ For edge-mode work, the paper is incomplete because it does not construct cut sy
 - The HTML section structure was inspected.
 - The source repeatedly frames the key method as Hamiltonian-first plus independent canonical scalings.
 
-## Not independently verified
+## Not Independently Verified
 
 - I did not independently rederive the Poisson brackets, first-class closure, degree-of-freedom counts, or secondary/stability constraints.
 - I did not verify the limiting actions term by term.

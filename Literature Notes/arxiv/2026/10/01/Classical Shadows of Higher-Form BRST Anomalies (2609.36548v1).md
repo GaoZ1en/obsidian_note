@@ -19,7 +19,7 @@ The useful object is a **classical mixed corner cocycle**, constructed from a fi
 
 Reason codes: `T1-Wald-CPS; T1-charge; T1-boundary; T3-math`. Immediate use: a concrete model for testing the distinction between a relative Hamiltonian corner term and a central extension in regional gauge sewing. [Official v1](https://arxiv.org/abs/2609.36548v1).
 
-## Complete section tree and reading route
+## Complete Section Tree and Reading Route
 
 | Section | Content and later dependency |
 | --- | --- |
@@ -43,92 +43,83 @@ Reason codes: `T1-Wald-CPS; T1-charge; T1-boundary; T3-math`. Immediate use: a c
 
 All sections and appendices were read. Start with 4.1–4.5 and Appendix A, then 2 and 3.2–3.4; use 3.1 and D to reproduce signs. Appendix B is the abstract reference layer, C is needed for changing representatives, and the analogy in 5 is optional background. This dense short paper is treated with a full notation and derivation map.
 
-## Conventions and the classical obstruction
+## Conventions and the Classical Obstruction
 
 $Y$ has dimension $d+1$, an oriented hypersurface $\Sigma$ has dimension $d$, and $S=\partial\Sigma$ has dimension $d-1$ and is closed. The first variation is
 
-$$
-\delta L=\mathcal E+d_H\theta,\qquad
-\omega=\delta\theta,\qquad\Omega_\Sigma=\int_\Sigma\omega.
-$$
+$$\begin{align}
+\delta L=\mathcal E+d_H\theta,\qquad \omega=\delta\theta,\qquad\Omega_\Sigma=\int_\Sigma\omega.
+\end{align}$$
 
 Restrict to solutions and linearized solutions. Quotient appropriate degeneracies that vanish at $S$, or specify a presymplectic Hamiltonian algebra on the quotient; nontrivial boundary transformations are retained. The source assumes the boundary prescription permits integrable Hamiltonians. It does not construct those boundary conditions in general.
 
-$$
-\iota_{X_F}\Omega=-\delta F,\qquad
-\{F,G\}=\Omega(X_F,X_G),\qquad
-\iota_{v_\epsilon}\Omega=-\delta H_\epsilon.
-$$
+$$\begin{align}
+\iota_{X_F}\Omega=-\delta F,\qquad \{F,G\}=\Omega(X_F,X_G),\qquad \iota_{v_\epsilon}\Omega=-\delta H_\epsilon.
+\end{align}$$
 
 Assume a Lie algebra action with field-independent labels, $[v_\epsilon,v_\eta]=v_{[\epsilon,\eta]}$, and a linear Hamiltonian assignment. Then
 
-$$
-K(\epsilon,\eta)=\{H_\epsilon,H_\eta\}-H_{[\epsilon,\eta]},\qquad
-\delta K=0.
-$$
+$$\begin{align}
+K(\epsilon,\eta)=\{H_\epsilon,H_\eta\}-H_{[\epsilon,\eta]},\qquad \delta K=0.
+\end{align}$$
 
 The last result follows by applying the Hamiltonian-vector-field map and using the action property. Constancy is componentwise on phase space. The Jacobi identity gives the CE cocycle condition. For trivial real coefficients, a constant shift $H_\epsilon\mapsto H_\epsilon+\ell(\epsilon)$ changes $K$ by $-\ell([\epsilon,\eta])$. With the convention $(d_{\rm CE}\ell)(\epsilon,\eta)=-\ell([\epsilon,\eta])$, this is $+d_{\rm CE}\ell$; the source writes the opposite CE sign without defining it. The coboundary class, which is the relevant statement, is unaffected.
 
 For an Abelian algebra a nonzero alternating constant bilinear form cannot be removed by a constant improvement. It can disappear if allowed boundary parameters are restricted, so nontriviality is a property of the specified boundary symmetry algebra.
 
-## Weil and Cartan organization
+## Weil and Cartan Organization
 
 For a basis with structure constants $f^a{}_{bc}$,
 
-$$
-d_W\vartheta^a=u^a-\tfrac12f^a{}_{bc}\vartheta^b\vartheta^c,
-\qquad d_Wu^a=-f^a{}_{bc}\vartheta^bu^c.
-$$
+$$\begin{align}
+d_W\vartheta^a=u^a-\tfrac12f^a{}_{bc}\vartheta^b\vartheta^c, \qquad d_Wu^a=-f^a{}_{bc}\vartheta^bu^c.
+\end{align}$$
 
 The bicomplex has bidegrees $(r,q)$, total differential $D=d_W+(-1)^r\delta$, and total contractions $I_a=\iota_a^W+\iota_{v_a}$ with the graded tensor-product convention. Basic means annihilated by contractions and their total Lie derivatives. In the Cartan model,
 
-$$
+$$\begin{align}
 \Omega_C(\xi)=\Omega-H_\xi,\qquad d_C=\delta-\iota_{v_\xi}.
-$$
+\end{align}$$
 
 The Hamiltonian equation makes $d_C\Omega_C=0$; invariance further requires $\mathcal L_{v_\epsilon}H_\eta-H_{[\epsilon,\eta]}=0$, whose defect is $K$. Thus $[K]$ obstructs an equivariant moment map after allowed constant improvements. This construction needs no effective action or quantum loop coefficient. The Weil/Cartan isomorphism itself is source-derived background, not a new machine-verified cohomology theorem here.
 
-## What can actually be deghostified?
+## What Can Actually Be Deghostified?
 
 A local form has degrees $(p,q,g)$: horizontal, field-space and ghost degree. Its total parity is $p+q+g$ modulo two. The differentials $d_H,\delta,s$ are odd, square to zero and pairwise anticommute. The BRST contraction $\iota_Q$ has degree $(0,-1,+1)$, hence is even in the total algebra, and
 
-$$
+$$\begin{align}
 s=[\iota_Q,\delta]=\iota_Q\delta-\delta\iota_Q.
-$$
+\end{align}$$
 
 An anomaly candidate obeys
 
-$$
-s a_d^1+d_Ha_{d-1}^2=0,\qquad
- a_d^1\sim a_d^1+s m_d^0+d_Hn_{d-1}^1.
-$$
+$$\begin{align}
+s a_d^1+d_Ha_{d-1}^2=0,\qquad a_d^1\sim a_d^1+s m_d^0+d_Hn_{d-1}^1.
+\end{align}$$
 
 It is an actual quantum anomaly only if realized with nonzero coefficient in the quantum effective action or partition function. No such coefficient is computed in this paper.
 
 For a component homogeneous of degree $r$ in the degree-one ghosts, substitute $C=\sum_i\vartheta_i\epsilon_i$ and extract the coefficient of $\vartheta_1\cdots\vartheta_r$. The external Grassmann labels anticommute with each other and commute with local forms. This defines $\operatorname{Pol}_r$; the source uses an unnormalized alternating sum, so there is no extra $1/r!$. A ghost for ghost of ghost number two is not two degree-one insertions. The original descendant in the example must therefore be improved before applying $\operatorname{Pol}_2$.
 
-## Hamiltonian admissibility and the scope of the theorem
+## Hamiltonian Admissibility and the Scope of the Theorem
 
 Let $\mathfrak g_\partial=\mathfrak g_L\oplus\mathfrak g_R$ with commuting factors. The first descendant is chosen linear in $C_R$ only; its deghostified density $A_R(\eta)$ must satisfy
 
-$$
-H_R(\eta)=\int_\Sigma A_R(\eta),\qquad
-\iota_{v_\eta}\Omega=-\delta H_R(\eta).
-$$
+$$\begin{align}
+H_R(\eta)=\int_\Sigma A_R(\eta),\qquad \iota_{v_\eta}\Omega=-\delta H_R(\eta).
+\end{align}$$
 
 The second descendant must have an ordinary bilinear mixed polarization. Polarizing the descent yields
 
-$$
-\mathcal L_{v_\epsilon}A_R(\eta)
-+d_H\operatorname{Pol}_2(a_{d-1}^2)(\epsilon,\eta)=0.
-$$
+$$\begin{align}
+\mathcal L_{v_\epsilon}A_R(\eta) +d_H\operatorname{Pol}_2(a_{d-1}^2)(\epsilon,\eta)=0.
+\end{align}$$
 
 Stokes and the Hamiltonian sign convention then give the mixed identity
 
-$$
-K_{LR}(\epsilon,\eta)=\Omega(v_\epsilon,v_\eta)
-=-\int_S\operatorname{Pol}_2(a_{d-1}^2)(\epsilon,\eta).
-$$
+$$\begin{align}
+K_{LR}(\epsilon,\eta)=\Omega(v_\epsilon,v_\eta) =-\int_S\operatorname{Pol}_2(a_{d-1}^2)(\epsilon,\eta).
+\end{align}$$
 
 This proof is reproducible directly from the stated premises. It assumes fixed labels and the compatibility of BRST polarization with the chosen classical action; it does not establish integrability from descent alone.
 
@@ -136,130 +127,119 @@ This proof is reproducible directly from the stated premises. It assumes fixed l
 
 For representative independence, the source chooses the next descendant to change by $s n_{d-1}^1+d_Hr_{d-2}^2$. The horizontal term integrates to zero on closed $S$, while the polarized BRST term is asserted to become CE exact. Apply this only within compatible Hamiltonian-admissible representatives and a fixed coefficient/action convention. Arbitrary improvements that destroy Hamiltonian integrability or reintroduce higher-stage ghosts are not automatically in the domain of the displayed map.
 
-## Local identity before integrating
+## Local Identity Before Integrating
 
 With $sL+d_Ha_d^1=0$, apply $\delta$ and use all three anticommutators:
 
-$$
+$$\begin{align}
 d_H(s\theta-\delta a_d^1)=s\mathcal E.
-$$
+\end{align}$$
 
 Using the Cartan relation and $\mu=a_d^1+\iota_Q\theta$ gives
 
-$$
+$$\begin{align}
 d_H(\iota_Q\omega-\delta\mu)=s\mathcal E.
-$$
+\end{align}$$
 
 If the BRST vector is tangent to the solution locus, the right side vanishes there. Writing the resulting horizontally closed current as $d_Hk$ requires an appropriate local exactness assumption; on-shell characteristic cohomology is not automatically trivial. The example supplies $k$ explicitly, so no general local-cohomology vanishing claim is needed for it.
 
-## Five-dimensional model: action, variation, charges
+## Five-Dimensional Model: Action, Variation, Charges
 
 Take globally represented two-forms $B_E,B_M\in\Omega^2(Y)$, $H_I=d_HB_I$, and constant $\kappa$ (the source suggests $(2\pi)^{-2}$ for Maxwell normalization). In the higher Abelian Weil algebra, $d_Wb_I=h_I$, $d_Wh_I=0$. The polynomial and primitive are
 
-$$
-I_6=\kappa h_Eh_M,\qquad\mathrm{cs}_5=-\kappa h_Eb_M,\qquad
-d_W\mathrm{cs}_5=I_6.
-$$
+$$\begin{align}
+I_6=\kappa h_Eh_M,\qquad\mathrm{cs}_5=-\kappa h_Eb_M,\qquad d_W\mathrm{cs}_5=I_6.
+\end{align}$$
 
 The classical action density is $L_5=-\kappa H_E\wedge B_M$. It is first order and metric independent. Using $\delta H_E=-d_H\delta B_E$ and the total grading,
 
-$$
+$$\begin{align}
 \delta L_5=\kappa(\delta B_E\wedge H_M+H_E\wedge\delta B_M)+d_H\theta_4,
-$$
+\end{align}$$
 
-$$
-\theta_4=\kappa\delta B_E\wedge B_M,\qquad
-\omega_4=-\kappa\delta B_E\wedge\delta B_M,\qquad
-\Omega_\Sigma=-\kappa\int_\Sigma\delta B_E\wedge\delta B_M.
-$$
+$$\begin{align}
+\theta_4=\kappa\delta B_E\wedge B_M,\qquad \omega_4=-\kappa\delta B_E\wedge\delta B_M,\qquad \Omega_\Sigma=-\kappa\int_\Sigma\delta B_E\wedge\delta B_M.
+\end{align}$$
 
 The bulk equations are $H_E=H_M=0$. Ordinary one-form gauge parameters act as $v_I(\Lambda_I)B_J=\delta_{IJ}d_H\Lambda_I$. Parameter variations vanish. Hamiltonians are
 
-$$
-H_E[\Lambda_E]=\kappa\int_\Sigma d_H\Lambda_E\wedge B_M,
-\qquad H_M[\Lambda_M]=-\kappa\int_\Sigma B_E\wedge d_H\Lambda_M.
-$$
+$$\begin{align}
+H_E[\Lambda_E]=\kappa\int_\Sigma d_H\Lambda_E\wedge B_M, \qquad H_M[\Lambda_M]=-\kappa\int_\Sigma B_E\wedge d_H\Lambda_M.
+\end{align}$$
 
 Direct contraction gives $\iota_{v_I}\Omega=-\delta H_I$. On shell they become
 
-$$
-H_E\simeq\kappa\int_S\Lambda_E\wedge B_M,\qquad
-H_M\simeq-\kappa\int_S B_E\wedge\Lambda_M.
-$$
+$$\begin{align}
+H_E\simeq\kappa\int_S\Lambda_E\wedge B_M,\qquad H_M\simeq-\kappa\int_S B_E\wedge\Lambda_M.
+\end{align}$$
 
 Their mixed bracket is
 
-$$
-K_{EM}=-\kappa\int_\Sigma d_H\Lambda_E\wedge d_H\Lambda_M
-=-\kappa\int_S\Lambda_E\wedge d_H\Lambda_M.
-$$
+$$\begin{align}
+K_{EM}=-\kappa\int_\Sigma d_H\Lambda_E\wedge d_H\Lambda_M =-\kappa\int_S\Lambda_E\wedge d_H\Lambda_M.
+\end{align}$$
 
 For two parameter pairs $\lambda,\lambda'$, the full model cocycle is
 
-$$
-K(\lambda,\lambda')=-\kappa\int_S
-\left(\Lambda_E\wedge d_H\Lambda'_M-\Lambda'_E\wedge d_H\Lambda_M\right).
-$$
+$$\begin{align}
+K(\lambda,\lambda')=-\kappa\int_S \left(\Lambda_E\wedge d_H\Lambda'_M-\Lambda'_E\wedge d_H\Lambda_M\right).
+\end{align}$$
 
 Here the pure blocks do vanish directly from $\Omega$, so the full extension is justified in this model. Field independence is explicit. Exact parameter shifts leave it invariant because $d_H^2=0$ and $S$ is closed. On the Abelian quotient the CE cocycle condition is automatic.
 
 A concrete nonzero test on oriented $T^3$, with each coordinate $2\pi$-periodic, is $\Lambda_E=\cos z\,dx$, $\Lambda_M=\sin z\,dy$. Then $\int_{T^3}\Lambda_E\wedge d\Lambda_M=-4\pi^3$, so $K_{EM}=4\kappa\pi^3$. Mathematica evaluated the integral exactly. Nontriviality assumes these parameters belong to the allowed algebra; setting boundary parameters to zero removes this example.
 
-## Reducible BRST towers and the improved descent
+## Reducible BRST Towers and the Improved Descent
 
 The towers have tridegrees $B_I:(2,0,0)$, $C_I:(1,0,1)$, $c_I:(0,0,2)$ and obey
 
-$$
-sB_I=d_HC_I,\quad sC_I=d_Hc_I,\quad sc_I=0,\qquad
-(d_H+s)(B_I-C_I+c_I)=H_I.
-$$
+$$\begin{align}
+sB_I=d_HC_I,\quad sC_I=d_Hc_I,\quad sc_I=0,\qquad (d_H+s)(B_I-C_I+c_I)=H_I.
+\end{align}$$
 
 Although $C_I$ has odd ghost number, its **total** degree is two, so replacing all products by an ordinary ghost-only sign convention is incorrect. The original descent is
 
-$$
+$$\begin{align}
 a_4^1=\kappa H_EC_M,\qquad a_3^2=-\kappa H_Ec_M.
-$$
+\end{align}$$
 
 Choose $m_3^1=\kappa B_EC_M$ and $n_2^2=\kappa(C_EC_M+B_Ec_M)$. Explicitly,
 
-$$
+$$\begin{align}
 s m_3^1=\kappa(d_HC_E C_M+B_Ed_Hc_M),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 d_Hn_2^2=\kappa(d_HC_E C_M+C_Ed_HC_M+H_Ec_M+B_Ed_Hc_M).
-$$
+\end{align}$$
 
 Consequently,
 
-$$
+$$\begin{align}
 \widetilde a_4^1=a_4^1-d_Hm_3^1=-\kappa B_Ed_HC_M,
-$$
+\end{align}$$
 
-$$
-\widetilde a_3^2=a_3^2-sm_3^1+d_Hn_2^2=\kappa C_Ed_HC_M,
-\qquad\widetilde a_2^3=-\kappa c_Ed_HC_M.
-$$
+$$\begin{align}
+\widetilde a_3^2=a_3^2-sm_3^1+d_Hn_2^2=\kappa C_Ed_HC_M, \qquad\widetilde a_2^3=-\kappa c_Ed_HC_M.
+\end{align}$$
 
 The three consecutive descent residuals vanish. Deghostifying $\widetilde a_4^1$ gives exactly the magnetic Hamiltonian density, establishing admissibility rather than merely assuming it in this example. Polarizing $\widetilde a_3^2$ gives
 
-$$
-\operatorname{Pol}_2(\widetilde a_3^2)(\lambda,\lambda')
-=\kappa(\Lambda_E\wedge d_H\Lambda'_M-\Lambda'_E\wedge d_H\Lambda_M).
-$$
+$$\begin{align}
+\operatorname{Pol}_2(\widetilde a_3^2)(\lambda,\lambda') =\kappa(\Lambda_E\wedge d_H\Lambda'_M-\Lambda'_E\wedge d_H\Lambda_M).
+\end{align}$$
 
 Thus $K=-\int_S\operatorname{Pol}_2(\widetilde a_3^2)$ with the source's sign and no factor of two.
 
 For the original first descendant the local relative term is
 
-$$
-\iota_{Q_M}\omega_4-\delta a_4^1
-=d_H(\kappa\delta B_E\wedge C_M)+\kappa H_E\wedge\delta C_M.
-$$
+$$\begin{align}
+\iota_{Q_M}\omega_4-\delta a_4^1 =d_H(\kappa\delta B_E\wedge C_M)+\kappa H_E\wedge\delta C_M.
+\end{align}$$
 
 The last term vanishes on shell. Hence $k_3^{1,1}=\kappa\delta B_E\wedge C_M$. After deghostification, a second contraction gives $\iota_{v_E}k_{\Lambda_M}=\kappa d_H\Lambda_E\wedge\Lambda_M$. On closed $S$, integration by parts equates its integral with $\kappa\int_S\Lambda_E\wedge d_H\Lambda_M$, recovering the same negative cocycle. This is the concrete bridge from relative Hamiltonian defect to charge extension.
 
-## Reuse in regional gauge theory
+## Reuse in Regional Gauge Theory
 
 The derivation chain is $I_6\to L_5\to(\theta_4,\omega_4)\to H_E,H_M\to K$, while the parallel branch is $I_6\to(a_4^1,a_3^2)\to(\widetilde a_4^1,\widetilde a_3^2)\to\operatorname{Pol}_2\to K$. The common polynomial organizes two realizations; it does not identify a classical Poisson algebra with a quantum operator algebra.
 
@@ -267,7 +247,7 @@ For a regional construction, first fix boundary conditions and the action's boun
 
 Field-dependent parameters require a modified bracket; open corners require additional descendants; nontrivial gerbes require global transition data. None are covered by the local ordinary-form computation. The coefficient is treated classically as fixed; global quantization and a quantum effective-action anomaly coefficient remain separate.
 
-## Verification ledger
+## Verification Ledger
 
 **Verified:** exact total-graded algebra checks in Sage; ordinary Hamiltonian contractions and Stokes derivation; external Grassmann antisymmetrization; nonzero torus pairing and the pure-sector counterexample in Mathematica. The differential algebra used rational sparse monomials with explicit total parity. Restoring $\kappa$ is linear throughout.
 

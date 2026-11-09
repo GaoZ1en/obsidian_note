@@ -14,7 +14,7 @@ summary: "A three-way analytic/numerical interpolation between flat and boundary
 tags: []
 ---
 
-# Compact verdict
+# Compact Verdict
 
 **Direct verdict.** Correct as a classical-worldsheet calculation within the null-quadrilateral kinematics and chosen geometric regularization. The analytic limits are mutually consistent, and the ancillary notebooks document the amplitude comparison. The finite interpolation is numerical, and no quantum worldsheet correction is computed.
 
@@ -24,59 +24,49 @@ Reason codes: `T2-dS-BH-holography`, `T2-model`, `A-big-name`.
 
 With diagonal invariants $S,T$, the flat bulk-polygon limit gives
 
-$$
-\operatorname{Area}_{GM}
-=\frac1{2\pi}
-[(S+T)\log(S+T)-S\log S-T\log T].
-$$
+$$\begin{align}
+\operatorname{Area}_{GM} =\frac1{2\pi} [(S+T)\log(S+T)-S\log S-T\log T].
+\end{align}$$
 
 The large boundary-polygon limit has
 
-$$
-\operatorname{Area}_{AM}
-=\frac12\log S\log T
-+\beta(\log S+\log T)+C,
-$$
+$$\begin{align}
+\operatorname{Area}_{AM} =\frac12\log S\log T +\beta(\log S+\log T)+C,
+\end{align}$$
 
 where the single logs and $C$ depend on the geometric regularization.
 
 In the Regge regime,
 
-$$
+$$\begin{align}
 \operatorname{Area}_{\rm Regge}=f(T)\log S,
-$$
+\end{align}$$
 
 with
 
-$$
-f(T)\sim\frac{T}{2\pi}+\alpha T^2,
-\qquad
-\alpha=-\frac{15+2\pi^2}{48\pi^3}
-$$
+$$\begin{align}
+f(T)\sim\frac{T}{2\pi}+\alpha T^2, \qquad \alpha=-\frac{15+2\pi^2}{48\pi^3}
+\end{align}$$
 
 at small $T$, and
 
-$$
-f(T)\sim\frac12\log T+\beta,
-\qquad
-\beta=\log(1+\sqrt2)-\sqrt2
-$$
+$$\begin{align}
+f(T)\sim\frac12\log T+\beta, \qquad \beta=\log(1+\sqrt2)-\sqrt2
+\end{align}$$
 
 at large $T$.
 
 The independent symmetric expansion gives
 
-$$
-\delta\operatorname{Area}(T,T)=\gamma T^2,
-\qquad
-\gamma=\frac{\pi^2\log16-45\zeta(3)}{96\pi^3}.
-$$
+$$\begin{align}
+\delta\operatorname{Area}(T,T)=\gamma T^2, \qquad \gamma=\frac{\pi^2\log16-45\zeta(3)}{96\pi^3}.
+\end{align}$$
 
 The full $O(L^{-2})$ correction is an explicit combination of logarithms, dilogarithms, trilogarithms, and $\zeta(3)$. Its Regge limit reproduces $\alpha$, its symmetric limit reproduces $\gamma$, and evaluation at the high-energy disk saddle matches the recent amplitude bootstrap result.
 
-# Evidence ledger
+# Evidence Ledger
 
-## Source-derived
+## Source-Derived
 
 - Complete official TeX, 42-page PDF, two Mathematica notebooks, and the plotted numerical surfaces were retrieved.
 - The paper separates Lorentzian “minimal” surfaces from rigorous Riemannian minimizers; these are extremal saddles.
@@ -92,7 +82,7 @@ The full $O(L^{-2})$ correction is an explicit combination of logarithms, diloga
 
 - Headless `wolframscript` could not execute the `.nb` ancillary because `NotebookEvaluate` requires a Wolfram front end. The notebooks were inspected as source artifacts but not replayed.
 
-## Not independently verified
+## Not Independently Verified
 
 - The PDE numerics lack standalone raw grids and a headless reproducibility script in the arXiv package.
 - Existence/uniqueness for the Lorentzian null-boundary Plateau problem, worldsheet loop corrections, and general $n$-gon AdS interpolation are not established.

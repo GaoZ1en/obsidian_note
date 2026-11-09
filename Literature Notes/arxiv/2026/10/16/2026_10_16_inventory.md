@@ -177,7 +177,7 @@ Total deduplicated entries: 165
 | [2610.18816](https://arxiv.org/abs/2610.18816) | math-ph:replacement | math-ph, quant-ph | On the coincidence of discrete and continuous definitions of Entanglement of Formation | Haobo Ma, Maksim E.Shirokov, Wenlin Zhang | 14 pages, preliminary vesion, any comments are welcome |
 | [2610.20159](https://arxiv.org/abs/2610.20159) | math-ph:replacement | math-ph, quant-ph | Exact analytical spectra of an effective field-modified radial Schrödinger equation by the Nikiforov--Uvarov method | Tunde Joseph Osunmusanmi, Berihu Teklu | 17 |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 Primary and complete categories below come from official abstract metadata; source appearances above are preserved verbatim. Metadata-only does not certify technical claims. All rows screened at listing level; focused abstracts read for ranking.
 

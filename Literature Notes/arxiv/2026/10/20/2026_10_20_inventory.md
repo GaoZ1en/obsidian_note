@@ -292,7 +292,7 @@ Total deduplicated entries: 280
 | [2610.21574](https://arxiv.org/abs/2610.21574) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th | Krylov complexity and oscillatory quantum dynamics in two-field inflation | Tao Li, Lei-Hua Liu, Hai-Bing Fu | 31 pages, 6 figures |
 | [2610.23819](https://arxiv.org/abs/2610.23819) | math-ph:replacement | math-ph | Memory effects in the homogenization of a viscous fluid containing small elastic particles | Juan Casado-Díaz, Antonio Rafael Hormigo-Molina | 37 pages |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 All 280 listing records screened. Primary and complete category fields below come from current official abstract metadata. Versions are current at the recorded retrieval; local baselines distinguish pinned and unpinned records. Source reading is not independent technical verification.
 

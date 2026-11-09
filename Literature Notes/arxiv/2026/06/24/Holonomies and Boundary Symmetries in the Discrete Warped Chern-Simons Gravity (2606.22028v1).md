@@ -13,7 +13,7 @@ summary: "This paper is a three-dimensional gravity testbed for organizing bound
 tags: []
 ---
 
-# What this paper does
+# What This Paper Does
 
 This note was created from [[overview]].
 
@@ -21,13 +21,13 @@ The paper builds a discrete warped Chern-Simons model for three-dimensional warp
 
 The result is a boundary-holonomy description of warped sectors, residual symmetries, and thermodynamic observables. The source frames this as an alternative to starting from a smooth continuum geometry and imposing regularity conditions.
 
-## Setup and conventions
+## Setup and Conventions
 
 The source starts from the lower-spin $SL(2,\mathbb R)+U(1)$ gauge structure associated with warped AdS3 holography and warped conformal field theories. The discrete boundary framework replaces continuous gauge connections along noncontractible cycles with ordered products of link holonomies.
 
 The non-Abelian sector carries an $SL(2,\mathbb R)$ monodromy. The additional $U(1)$ holonomy supplies the warped contribution to boundary charge data.
 
-## Technical skeleton
+## Technical Skeleton
 
 The construction has the following source-derived structure.
 
@@ -38,7 +38,7 @@ The construction has the following source-derived structure.
 1. Residual boundary symmetries are analyzed as stabilizers of the monodromy sector.
 1. A discrete entropy relation is derived from boundary holonomy data and argued to reproduce warped black-hole/WCFT structure in the continuum limit.
 
-## Formalism map to my projects
+## Formalism Map to My Projects
 
 The local project translation is:
 
@@ -51,13 +51,13 @@ The local project translation is:
 
 This is useful for AdS3/Chern-Simons and edge-mode work because it treats boundary sectors as holonomy moduli rather than local metric data. It is also a useful contrast with finite-boundary metric polarizations: here local flatness leaves global boundary cycles as the natural physical data.
 
-## Symplectic structure, charges, or boundary data
+## Symplectic Structure, Charges, or Boundary Data
 
 The paper is directly about boundary data and charges, but the daily screening did not verify the full symplectic form. The source-derived charge claim is that the $U(1)$ holonomy supplies the warped contribution to boundary charges, while the non-Abelian monodromy classifies the $SL(2,\mathbb R)$ sector.
 
 For CPS use, the next thing to check is whether the discrete phase space admits a transparent symplectic form on monodromy moduli, and how the continuum limit matches standard warped AdS3 Chern-Simons boundary charges.
 
-## Key formulas and derivations
+## Key Formulas and Derivations
 
 Source-derived objects:
 
@@ -69,7 +69,7 @@ Source-derived objects:
 
 Displayed equations in the HTML were not independently transcribed because the formula extraction is not reliable enough for detailed formula copying.
 
-## Mathematica/xAct/Sage checks
+## Mathematica/xAct/Sage Checks
 
 No Mathematica, xAct, Sage, or independent group-theory computation was run.
 
@@ -79,7 +79,7 @@ Possible future checks:
 - check the large-lattice expansion of ordered products in simple cases;
 - compare the $U(1)$ holonomy charge contribution with standard warped Chern-Simons boundary charge formulae.
 
-## Source-derived
+## Source-Derived
 
 - The paper claims boundary monodromies are fundamental variables rather than auxiliary smooth-background quantities.
 - It claims hyperbolic, elliptic, and parabolic sectors arise from monodromy conjugacy classes.
@@ -92,18 +92,18 @@ Possible future checks:
 - The HTML introduction and boundary-monodromy section were inspected.
 - The daily note preserved primary `hep-th` plus cross-list categories `gr-qc` and `math-ph`.
 
-## Not independently verified
+## Not Independently Verified
 
 - I did not check the discrete action, constraint algebra, residual symmetry derivation, entropy relation, or continuum limit.
 - I did not compare with standard warped AdS3/WCFT charge normalizations.
 - I did not inspect the PDF rendering.
 
-## Possible extensions
+## Possible Extensions
 
 1. Compare this monodromy-sector classification with standard AdS3 Chern-Simons holonomy regularity conditions.
 1. Extract the discrete phase-space variables and see whether they admit a compact Poisson description.
 1. Check whether the warped $U(1)$ charge contribution has an analogue in current Proca-Chern-Simons or edge-mode notes.
 
-## Reading use
+## Reading Use
 
 Read the abstract, Section 3 for the discrete construction, and Section 4 for boundary monodromy matrices and sector classification. Only read the thermodynamics section after matching the normalization conventions to standard warped Chern-Simons gravity.

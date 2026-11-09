@@ -13,19 +13,19 @@ summary: "A finite representation-theoretic classification with fully checkable 
 tags: []
 ---
 
-# Why this is high priority
+# Why This Is High Priority
 
 Reason codes: `T1-symmetry`, `T2-celestial-carrollian`, `T3-math`.
 
 The paper analyzes the quantum algebra that combines superrotations, supertranslations, superdilatations, and super-special-conformal transformations in three-dimensional conformal BMS symmetry. Its strongest result is a sharply finite candidate list and explicit representation spectra, directly bearing on the boundary-symmetry side of flat holography.
 
-# Direct verdict
+# Direct Verdict
 
 **Correct with one essential status distinction:** the algebraic central-charge relation, four admissible levels, listed primary spectra, and finite spectral inequalities are internally consistent. CFT I--III are unitary by the external theorem cited by the authors. CFT IV satisfies the known necessary positivity/admissibility conditions, but its unitarity remains unresolved. Therefore “four unitary theories” is not established; the correct statement is **three proven unitary theories plus one admissible unitarity candidate**.
 
 The bulk holographic interpretation is conjectural. The paper does not construct a boundary action, state space from first principles, bulk/boundary map, or a quantum relation between the Chern--Simons and boundary levels.
 
-# Complete source map
+# Complete Source Map
 
 1. **Introduction:** identifies the quantum conformal BMS$_3$ algebra with $W_{(2,2,2,1)}$ and states the spectrum-classification goal.
 2. **Quantum algebra:** gives all mode commutators, normal-ordered composites, the Jacobi relation between $c$ and $k$, level duality, and important subalgebras.
@@ -37,60 +37,55 @@ The bulk holographic interpretation is conjectural. The paper does not construct
 8. **Outlook:** marks CFT IV unitarity, partition functions, supersymmetric/higher-spin extensions, BMS$_4$, and holography as open.
 9. **Supplement:** gives notation dictionaries, Jacobi calculations, complete primary lists, spectral-flow orbits, and the classical $\mathfrak{so}(3,2)$ Chern--Simons wedge algebra.
 
-# Quantum conformal BMS$_3$ algebra
+# Quantum Conformal BMS$_3$ Algebra
 
 The generators are $L_n$ (superrotations), $J_n$ (superdilatations), $M_n$ (supertranslations), and $K_n$ (super-SCTs). The linear brackets include
 
-$$
+$$\begin{align}
 [L_n,L_m]=(n-m)L_{n+m}+\frac c{12}(n^3-n)\delta_{n+m,0},
-$$
+\end{align}$$
 
-$$
-[J_n,J_m]=kn\delta_{n+m,0},
-\qquad
-[J_n,M_m]=M_{n+m},
-\qquad
-[J_n,K_m]=-K_{n+m},
-$$
+$$\begin{align}
+[J_n,J_m]=kn\delta_{n+m,0}, \qquad [J_n,M_m]=M_{n+m}, \qquad [J_n,K_m]=-K_{n+m},
+\end{align}$$
 
-$$
+$$\begin{align}
 [M_n,M_m]=[K_n,K_m]=0.
-$$
+\end{align}$$
 
 $[M_n,K_m]$ contains $L,J$ and three quadratic/cubic normal-ordered composites. Imposing the remaining Jacobi identities fixes their coefficients and requires
 
-$$
+$$\begin{align}
 c=-12k+28-\frac{30}{k+1}.
-$$
+\end{align}$$
 
 The presentation is singular at $c=1$, $k=1/4$, but the relevant coefficients have removable limits; for example,
 
-$$
+$$\begin{align}
 \lim_{k\to1/4}\frac{4k-1}{c(k)-1}=\frac59.
-$$
+\end{align}$$
 
 The level map
 
-$$
+$$\begin{align}
 \widetilde k=\frac{3-2k}{2(k+1)}
-$$
+\end{align}$$
 
 is an involution and leaves $c(k)$ invariant. It exposes a second large-$c$ branch near $k=-1^-$, although that branch is excluded by positive level.
 
-# Positivity and the four candidates
+# Positivity and the Four Candidates
 
 Necessary positivity of the Virasoro and current sectors requires $c\ge0$ and $k\ge0$. Combined with the Jacobi curve, this gives
 
-$$
-\frac23-\sqrt{\frac5{18}}\le k\le
-\frac23+\sqrt{\frac5{18}},
-$$
+$$\begin{align}
+\frac23-\sqrt{\frac5{18}}\le k\le \frac23+\sqrt{\frac5{18}},
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 0\le c\le40-12\sqrt{10}\approx2.05267.
-$$
+\end{align}$$
 
 The cited admissible-vertex-algebra classification leaves
 
@@ -103,91 +98,83 @@ The cited admissible-vertex-algebra classification leaves
 
 The paper's title and some shorthand uses “unitary” for all four, but its footnote and outlook correctly preserve this distinction.
 
-# Primaries and spectral flow
+# Primaries and Spectral Flow
 
 Primary states satisfy
 
-$$
-J_0|q,h\rangle=q|q,h\rangle,
-\qquad
-L_0|q,h\rangle=h|q,h\rangle,
-$$
+$$\begin{align}
+J_0|q,h\rangle=q|q,h\rangle, \qquad L_0|q,h\rangle=h|q,h\rangle,
+\end{align}$$
 
 and are annihilated by every positive mode. The spectral-flow automorphism is
 
-$$
-\psi(L_n)=L_n-J_n+\frac k2\delta_{n0},
-\qquad
-\psi(J_n)=J_n-k\delta_{n0},
-$$
+$$\begin{align}
+\psi(L_n)=L_n-J_n+\frac k2\delta_{n0}, \qquad \psi(J_n)=J_n-k\delta_{n0},
+\end{align}$$
 
-$$
-\psi(M_n)=M_{n-1},
-\qquad
-\psi(K_n)=K_{n+1}.
-$$
+$$\begin{align}
+\psi(M_n)=M_{n-1}, \qquad \psi(K_n)=K_{n+1}.
+\end{align}$$
 
 If the top space of $L(q,h)$ has dimension $i$, then
 
-$$
-\psi(L(q,h))
-=L\left(q+i-1-k,\ h-q-i+1+\frac k2\right).
-$$
+$$\begin{align}
+\psi(L(q,h)) =L\left(q+i-1-k,\ h-q-i+1+\frac k2\right).
+\end{align}$$
 
 Starting from the vacuum gives the universal extremal modules
 
-$$
-L(0,0)\longrightarrow L(-k,k/2)
-\longrightarrow L(-2k,2k).
-$$
+$$\begin{align}
+L(0,0)\longrightarrow L(-k,k/2) \longrightarrow L(-2k,2k).
+\end{align}$$
 
 Additional spectral-flow orbits complete the spectra for II--IV. The complete finite lists are supplied in the supplement; their counts include the vacuum and top-space multiplicities.
 
-# Spectral inequalities
+# Spectral Inequalities
 
 The current-sector positivity bound is
 
-$$
+$$\begin{align}
 h\ge\frac{q^2}{2k}.
-$$
+\end{align}$$
 
 Every listed spectrum satisfies it. Four non-vacuum primaries in each candidate saturate it:
 
-$$
+$$\begin{align}
 (q,h)=(\pm k,k/2),\qquad(\pm2k,2k).
-$$
+\end{align}$$
 
 Every non-vacuum primary also obeys
 
-$$
+$$\begin{align}
 h\ge\frac c{24},
-$$
+\end{align}$$
 
 with minimum margins
 
-$$
+$$\begin{align}
 \frac1{12},\quad\frac1{24},\quad\frac1{84},\quad0
-$$
+\end{align}$$
 
 for I--IV respectively. CFT IV saturates the gap at $(q,h)=(\pm1/6,1/12)$.
 
 Finally, all listed primaries obey
 
-$$
+$$\begin{align}
 h\le2k.
-$$
+\end{align}$$
 
 Unlike the BPS inequality, this upper bound is a property of the classified finite spectra and their spectral-flow orbits, not a general positivity theorem for arbitrary $W_{(2,2,2,1)}$ representations.
 
 The paper's broader derivation of the gap away from the four lists assumes that the lowest non-vacuum charge is not half-integral and that one of $i_\pm$ equals one. Its resulting condition
 
-$$
+$$\begin{align}
 -1<k\le6q_0^2+\frac12
-$$
+\end{align}$$
 
 is conditional on those representation assumptions.
 
-# Independent checks
+# Independent Checks
 
 **Checked (rendered PDF, TeX source, Sage, and exact rational arithmetic):**
 
@@ -203,7 +190,7 @@ is conditional on those representation assumptions.
 
 **Not verified / open:** unitarity of CFT IV, modular-invariant partition functions, thermal behavior, a quantum bulk-level dictionary, and any BMS$_4$ extension.
 
-# Bulk interpretation and vault relevance
+# Bulk Interpretation and Vault Relevance
 
 The supplement identifies the wedge algebra with $\mathfrak{so}(3,2)$ and recalls a three-dimensional conformal-gravity Chern--Simons action. This gives a candidate classical bulk origin, not a quantum holographic duality. In particular, the semiclassical identification $k_{CS}=-k$ cannot literally match an integrally normalized bulk level to any of the four fractional boundary levels; the paper leaves quantum and normalization corrections open.
 

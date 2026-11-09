@@ -17,7 +17,7 @@ Back to [[2026_07_15_overview]].
 
 This paper is useful for AdS$_3$ quantization and spectral bookkeeping. Its “boundary” language is radial/worldsheet language; it does not define CPS boundary data, a presymplectic current, or a surface charge.
 
-# Liouville--timelike--$U(1)$ realization of $SL(2,\mathbb R)_k$
+# Liouville--Timelike--$U(1)$ Realization of $SL(2,\mathbb R)_k$
 
 The free part uses a spacelike field $\phi_+$, a timelike field $\phi_-$, and a free boson $X$:
 
@@ -60,7 +60,7 @@ $$\begin{align}
 
 The ordinary Liouville wall and $\mathcal O$ have opposite radial behavior. The former grows toward the asymptotic Liouville direction; the latter probes the deep-bulk region.
 
-# Vertex operators and spectral-flow dictionary
+# Vertex Operators and Spectral-Flow Dictionary
 
 A generic vertex is represented by
 
@@ -89,7 +89,7 @@ This is the core translation table:
 | spectral flow $\omega$ | shift of $p$ by $\sqrt{k}\omega/2$ |
 | winding violation | number of insertions of the marginal deformation |
 
-# Integrating out the free fields
+# Integrating Out the Free Fields
 
 The $X$ zero mode imposes momentum conservation, while the timelike zero mode ties the total spectral flow to the number $\ell$ of deformation insertions:
 
@@ -114,7 +114,7 @@ $$\begin{align}
 
 The precise normalization $c_k$, the Liouville reflection conventions, and the treatment of the degenerate insertions must be kept together when this formula is reused.
 
-# KPZ scaling and the string coupling
+# KPZ Scaling and the String Coupling
 
 The Liouville cosmological constant $\mu$, deformation strength $\lambda$, and string coupling obey
 
@@ -128,7 +128,7 @@ $$\begin{align}
 
 The sphere correlators reproduce the AdS$_3$ string amplitudes with the winding-selection rule above. The torus extension carries the same dictionary into a one-loop kernel, making the paper potentially useful for spectral-flow-resolved partition functions.
 
-# The deep-bulk marginal operator
+# The Deep-Bulk Marginal Operator
 
 In the WZW labels, the deformation has
 
@@ -151,7 +151,7 @@ Thus it is:
 
 The abstract describes the same sector as $\omega=2$; the sign is a spectral-flow convention. A local use must fix the sign convention before comparing formulas.
 
-# Spectral-flow dual descriptions
+# Spectral-Flow Dual Descriptions
 
 Section 5 also relates the $\omega=-2$ representative to $\omega=-1$ and to the conventional spectral-flow operator. The practical lesson is that the same deformation can look like:
 
@@ -161,7 +161,7 @@ Section 5 also relates the $\omega=-2$ representative to $\omega=-1$ and to the 
 
 This three-way identification is more useful than the broad statement that the theories are “equivalent”: it tells which insertion changes the selection rule and how many degenerate Liouville operators appear.
 
-# Long strings and the symmetric-orbifold comparison
+# Long Strings and the Symmetric-Orbifold Comparison
 
 Appendix A improves the spacetime stress tensor in BRST cohomology and recovers the long-string central charge approaching
 
@@ -177,7 +177,7 @@ The resemblance is limited:
 - their background charges and Hilbert-space interpretations differ;
 - the worldsheet operator tracks spectral flow/winding directly, while the spacetime orbifold operator changes cycle structure.
 
-# Transfer to AdS$_3$ quantization notes
+# Transfer to AdS$_3$ Quantization Notes
 
 | Paper formula | Potential use |
 |---|---|
@@ -190,7 +190,7 @@ The resemblance is limited:
 
 The paper does not provide variational boundary conditions, a symplectic form, or a charge algebra. Its direct use is worldsheet/spectral, not CPS.
 
-# Verification boundary
+# Verification Boundary
 
 - The central-charge algebra, vertex dictionary, winding-selection rule, and marginal-operator labels were followed from the official HTML source.
 - The DOZZ zero mechanism, the complete WZW--Liouville normalization, the sphere-amplitude equality, and the torus kernel were not independently reproduced.

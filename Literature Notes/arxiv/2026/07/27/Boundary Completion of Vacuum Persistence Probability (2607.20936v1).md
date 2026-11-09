@@ -17,116 +17,75 @@ Back to [[2026_07_27_overview]].
 
 This is a clean temporal-boundary mechanism rather than a timelike AdS-boundary or null-corner result. Its main value is the rule that a parameter variation of an amplitude must vary both the bulk action and the endpoint states. It is especially close to finite-regulator Gaussian overlap calculations.
 
-## The two incomplete-looking prescriptions
+## The Two Incomplete-Looking Prescriptions
 
-For a free real scalar on a globally hyperbolic region \(\Omega\), with temporal boundaries \(\Sigma_{\mathrm{in}}\) and \(\Sigma_{\mathrm{out}}\),
+For a free real scalar on a globally hyperbolic region $\Omega$, with temporal boundaries $\Sigma_{\mathrm{in}}$ and $\Sigma_{\mathrm{out}}$,
 
-$$
-S_m[\phi]
-=-\frac12\int_\Omega d^{d+1}x\sqrt{|g|}
-\left[
-g^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi
-+m^2\phi^2
-\right].
-$$
+$$\begin{align}
+S_m[\phi] =-\frac12\int_\Omega d^{d+1}x\sqrt{|g|} \left[ g^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi +m^2\phi^2 \right].
+\end{align}$$
 
 The in-out amplitude and vacuum persistence probability are
 
-$$
-Z=\langle0,\mathrm{out}|0,\mathrm{in}\rangle=e^{iW},
-\qquad
-P_{\mathrm{vac}}=|Z|^2=e^{-2\operatorname{Im}W}.
-$$
+$$\begin{align}
+Z=\langle0,\mathrm{out}|0,\mathrm{in}\rangle=e^{iW}, \qquad P_{\mathrm{vac}}=|Z|^2=e^{-2\operatorname{Im}W}.
+\end{align}$$
 
 Canonical quantization gives the Bogoliubov expression
 
-$$
-W_B=\frac{i}{2}\operatorname{Tr}\log\alpha,
-\tag{1}
-$$
+$$\begin{align}
+W_B=\frac{i}{2}\operatorname{Tr}\log\alpha, \tag{1}
+\end{align}$$
 
 up to a real phase. The conventional Green-function prescription instead integrates the coincident in-out Feynman propagator:
 
-$$
-W_G
-=-\frac12\int_\Omega d^{d+1}x\sqrt{|g|}
-\int_{+\infty}^{m^2}d\bar m^2\,
-G_F(x,x;\bar m^2).
-\tag{2}
-$$
+$$\begin{align}
+W_G =-\frac12\int_\Omega d^{d+1}x\sqrt{|g|} \int_{+\infty}^{m^2}d\bar m^2\, G_F(x,x;\bar m^2). \tag{2}
+\end{align}$$
 
-The paper's point is not that either formula is intrinsically ambiguous. Equation (2) computes only the bulk response to changing \(m^2\).
+The paper's point is not that either formula is intrinsically ambiguous. Equation (2) computes only the bulk response to changing $m^2$.
 
-## The complete amplitude has endpoint states
+## The Complete Amplitude Has Endpoint States
 
 The path integral is
 
-$$
-e^{iW}
-=
-\int_\Omega\mathcal D\phi\,
-\Psi_{\mathrm{out}}^*
-[\phi|_{\Sigma_{\mathrm{out}}}]
-\Psi_{\mathrm{in}}
-[\phi|_{\Sigma_{\mathrm{in}}}]
-e^{iS_m[\phi]}.
-\tag{3}
-$$
+$$\begin{align}
+e^{iW} = \int_\Omega\mathcal D\phi\, \Psi_{\mathrm{out}}^* [\phi|_{\Sigma_{\mathrm{out}}}] \Psi_{\mathrm{in}} [\phi|_{\Sigma_{\mathrm{in}}}] e^{iS_m[\phi]}. \tag{3}
+\end{align}$$
 
 Consequently,
 
-$$
-\partial_{m^2}W
-=
-\partial_{m^2}W_G
-+\partial_{m^2}W_\Psi,
-\tag{5}
-$$
+$$\begin{align}
+\partial_{m^2}W = \partial_{m^2}W_G +\partial_{m^2}W_\Psi, \tag{5}
+\end{align}$$
 
 where
 
-$$
-\partial_{m^2}W_G
-=-\frac12
-\int_\Omega d^{d+1}x\sqrt{|g|}\,G_F(x,x),
-$$
+$$\begin{align}
+\partial_{m^2}W_G =-\frac12 \int_\Omega d^{d+1}x\sqrt{|g|}\,G_F(x,x),
+\end{align}$$
 
-and \(W_\Psi\) collects the variation of both endpoint wavefunctionals. A lateral boundary is assumed either absent or subject to falloff conditions that remove its contribution.
+and $W_\Psi$ collects the variation of both endpoint wavefunctionals. A lateral boundary is assumed either absent or subject to falloff conditions that remove its contribution.
 
-## The bulk trace becomes two Wronskians
+## The Bulk Trace Becomes Two Wronskians
 
-Let \(u_k^{\mathrm{in}}\) and \(u_{k'}^{\mathrm{out}}\) be positive-frequency bases related by
+Let $u_k^{\mathrm{in}}$ and $u_{k'}^{\mathrm{out}}$ be positive-frequency bases related by
 
-$$
-u_{k'}^{\mathrm{out}}
-=\sum_k
-\left(
-\alpha_{k'k}u_k^{\mathrm{in}}
-+\beta_{k'k}u_k^{\mathrm{in}*}
-\right).
-$$
+$$\begin{align}
+u_{k'}^{\mathrm{out}} =\sum_k \left( \alpha_{k'k}u_k^{\mathrm{in}} +\beta_{k'k}u_k^{\mathrm{in}*} \right).
+\end{align}$$
 
-With a common regulator in which \(\alpha\) is invertible,
+With a common regulator in which $\alpha$ is invertible,
 
-$$
-G_F(x,x)
-=\sum_{k,k'}
-(\alpha^{-1})_{kk'}
-u_{k'}^{\mathrm{out}}(x)
-u_k^{\mathrm{in}*}(x).
-\tag{6}
-$$
+$$\begin{align}
+G_F(x,x) =\sum_{k,k'} (\alpha^{-1})_{kk'} u_{k'}^{\mathrm{out}}(x) u_k^{\mathrm{in}*}(x). \tag{6}
+\end{align}$$
 
 The Green--Lagrange identity converts the spacetime mode product into a boundary current. With
 
-$$
-W_\Sigma[f,g]
-=
-\int_\Sigma d\Sigma_\mu
-\left(
-f\nabla^\mu g-g\nabla^\mu f
-\right),
-$$
+$$\begin{align}
+W_\Sigma[f,g] = \int_\Sigma d\Sigma_\mu \left( f\nabla^\mu g-g\nabla^\mu f \right),
+\end{align}$$
 
 one obtains
 
@@ -153,167 +112,104 @@ $$
 
 Separating the variation of
 
-$$
-W_\Sigma
-\left[
-u_{k'}^{\mathrm{out}},
-u_k^{\mathrm{in}*}
-\right]
-=i\alpha_{k'k},
-$$
+$$\begin{align}
+W_\Sigma \left[ u_{k'}^{\mathrm{out}}, u_k^{\mathrm{in}*} \right] =i\alpha_{k'k},
+\end{align}$$
 
 gives
 
-$$
-\partial_{m^2}W_G
-=
-\partial_{m^2}W_B
--\mathcal B_{\mathrm{in}}
--\mathcal B_{\mathrm{out}}.
-\tag{9}
-$$
+$$\begin{align}
+\partial_{m^2}W_G = \partial_{m^2}W_B -\mathcal B_{\mathrm{in}} -\mathcal B_{\mathrm{out}}. \tag{9}
+\end{align}$$
 
-The \(\mathcal B_\sigma\) are not new bulk terms. They are the endpoint Wronskians left by integrating the Green identity over \(\Omega\).
+The $\mathcal B_\sigma$ are not new bulk terms. They are the endpoint Wronskians left by integrating the Green identity over $\Omega$.
 
-## Gaussian vacua know the missing boundary data
+## Gaussian Vacua Know the Missing Boundary Data
 
-On either endpoint \(\Sigma_\sigma\), define mode coordinate and normal-momentum data
+On either endpoint $\Sigma_\sigma$, define mode coordinate and normal-momentum data
 
-$$
-q_k^\sigma=u_k^\sigma|_{\Sigma_\sigma},
-\qquad
-p_k^\sigma
-=n^\mu\nabla_\mu u_k^\sigma|_{\Sigma_\sigma}.
-$$
+$$\begin{align}
+q_k^\sigma=u_k^\sigma|_{\Sigma_\sigma}, \qquad p_k^\sigma =n^\mu\nabla_\mu u_k^\sigma|_{\Sigma_\sigma}.
+\end{align}$$
 
 The annihilation condition fixes a Gaussian Schrödinger wavefunctional
 
-$$
-\Psi_\sigma[\varphi^\sigma]
-=
-\mathcal N_\sigma
-\exp\left[
-\frac{i}{2}
-\varphi^\sigma\cdot K^\sigma\cdot\varphi^\sigma
-\right],
-\tag{10}
-$$
+$$\begin{align}
+\Psi_\sigma[\varphi^\sigma] = \mathcal N_\sigma \exp\left[ \frac{i}{2} \varphi^\sigma\cdot K^\sigma\cdot\varphi^\sigma \right], \tag{10}
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 K^\sigma\cdot q_j^{\sigma *}=p_j^{\sigma *}.
-$$
+\end{align}$$
 
-The normalization is not optional. In a finite \(N\)-site regulator,
+The normalization is not optional. In a finite $N$-site regulator,
 
-$$
-\mathcal N_\sigma
-=(2\pi)^{-N/4}
-\left[
-\det_{\Sigma_\sigma}Q^\sigma
-\right]^{-1/4}
-e^{i\theta^\sigma},
-\qquad
-Q^\sigma(\mathbf x,\mathbf y)
-=\sum_kq_k^\sigma(\mathbf x)q_k^{\sigma *}(\mathbf y).
-\tag{11}
-$$
+$$\begin{align}
+\mathcal N_\sigma =(2\pi)^{-N/4} \left[ \det_{\Sigma_\sigma}Q^\sigma \right]^{-1/4} e^{i\theta^\sigma}, \qquad Q^\sigma(\mathbf x,\mathbf y) =\sum_kq_k^\sigma(\mathbf x)q_k^{\sigma *}(\mathbf y). \tag{11}
+\end{align}$$
 
-Varying both \(K^\sigma\) and \(\mathcal N_\sigma\), and using the restriction of the same in-out Green function to the endpoint, produces
+Varying both $K^\sigma$ and $\mathcal N_\sigma$, and using the restriction of the same in-out Green function to the endpoint, produces
 
-$$
-\partial_{m^2}W_\Psi
-=
-\mathcal B_{\mathrm{in}}
-+\mathcal B_{\mathrm{out}}
-+\partial_{m^2}\Theta.
-\tag{17}
-$$
+$$\begin{align}
+\partial_{m^2}W_\Psi = \mathcal B_{\mathrm{in}} +\mathcal B_{\mathrm{out}} +\partial_{m^2}\Theta. \tag{17}
+\end{align}$$
 
-Here \(\Theta\) is real and combines the Gaussian normalization phases and the remaining imaginary boundary traces before multiplication by \(-i\).
+Here $\Theta$ is real and combines the Gaussian normalization phases and the remaining imaginary boundary traces before multiplication by $-i$.
 
-## Cancellation and the unique decay probability
+## Cancellation and the Unique Decay Probability
 
 Adding the bulk and endpoint variations gives
 
-$$
-\partial_{m^2}W
-=
-\partial_{m^2}W_B
-+\partial_{m^2}\Theta.
-\tag{18}
-$$
+$$\begin{align}
+\partial_{m^2}W = \partial_{m^2}W_B +\partial_{m^2}\Theta. \tag{18}
+\end{align}$$
 
-Thus the endpoint states cancel the Wronskian obstruction exactly. The undetermined \(\Theta\) changes only \(\operatorname{Re}W\), reflecting the phase convention of the in- and out-vacua.
+Thus the endpoint states cancel the Wronskian obstruction exactly. The undetermined $\Theta$ changes only $\operatorname{Re}W$, reflecting the phase convention of the in- and out-vacua.
 
 Taking the no-production large-mass limit as reference fixes the imaginary integration constant. Therefore
 
-$$
-\operatorname{Im}W
-=\frac14
-\operatorname{Tr}\log
-\left(
-\alpha\alpha^\dagger
-\right),
-\tag{19}
-$$
+$$\begin{align}
+\operatorname{Im}W =\frac14 \operatorname{Tr}\log \left( \alpha\alpha^\dagger \right), \tag{19}
+\end{align}$$
 
 and
 
-$$
-P_{\mathrm{vac}}
-=
-\exp\left[
--\frac12
-\operatorname{Tr}\log
-\left(
-\alpha\alpha^\dagger
-\right)
-\right].
-$$
+$$\begin{align}
+P_{\mathrm{vac}} = \exp\left[ -\frac12 \operatorname{Tr}\log \left( \alpha\alpha^\dagger \right) \right].
+\end{align}$$
 
 The vacuum-decay probability is prescription independent when all pieces are regulated and varied together. The real phase is not fixed without an additional convention or renormalization condition.
 
-## Translation to boundary quantization
+## Translation to Boundary Quantization
 
 The mechanism can be summarized as
 
-$$
-\delta\log Z
-=
-\left\langle i\,\delta S_{\mathrm{bulk}}\right\rangle
-+\delta\log\Psi_{\mathrm{in}}
-+\delta\log\Psi_{\mathrm{out}}^*.
-$$
+$$\begin{align}
+\delta\log Z = \left\langle i\,\delta S_{\mathrm{bulk}}\right\rangle +\delta\log\Psi_{\mathrm{in}} +\delta\log\Psi_{\mathrm{out}}^*.
+\end{align}$$
 
 This is directly reusable for finite-lattice Gaussian overlaps: the state normalization determinant and the quadratic kernel must be varied with the bulk operator. It is also a warning for alternative quantization and pAQFT amplitudes: a bulk Green function reconstructs a response of the operator, not automatically the response of the complete state-to-state amplitude.
 
 The boundaries here are spacelike Cauchy endpoints. Nothing in the paper derives a timelike AdS boundary term, a null presymplectic potential, a Wald--Zoupas flux, or a corner charge.
 
-## Verification boundary
+## Verification Boundary
 
 Checked with Mathematica:
 
 - The combination
 
-  $$
-  (\partial W_B-\mathcal B_{\mathrm{in}}-\mathcal B_{\mathrm{out}})
-  +(\mathcal B_{\mathrm{in}}+\mathcal B_{\mathrm{out}}+\partial\Theta)
-  -(\partial W_B+\partial\Theta)
-  $$
+$$\begin{align}
+(\partial W_B-\mathcal B_{\mathrm{in}}-\mathcal B_{\mathrm{out}}) +(\mathcal B_{\mathrm{in}}+\mathcal B_{\mathrm{out}}+\partial\Theta) -(\partial W_B+\partial\Theta)
+\end{align}$$
 
   has zero residual.
 - In a finite-dimensional regulator and on a consistent logarithm branch,
 
-  $$
-  \operatorname{Im}
-  \left(
-  \frac{i}{2}\log\det\alpha
-  \right)
-  =
-  \frac14\log\det(\alpha\alpha^\dagger).
-  $$
+$$\begin{align}
+\operatorname{Im} \left( \frac{i}{2}\log\det\alpha \right) = \frac14\log\det(\alpha\alpha^\dagger).
+\end{align}$$
 
 Visually checked in the rendered PDF:
 

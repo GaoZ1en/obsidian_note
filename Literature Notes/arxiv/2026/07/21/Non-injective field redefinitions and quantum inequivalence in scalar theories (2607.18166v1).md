@@ -16,280 +16,236 @@ Back to [[2026_07_21_overview]].
 
 This paper is directly useful for perturbative formalism: it isolates a failure mode that is invisible to every local vertex, Jacobian, and canonical-commutator check. A field redefinition can be locally exact and volume preserving while its global fibers change multiplicity, so no single global unitary identifies the two coordinate descriptions.
 
-# A unit-Jacobian map as a local field coordinate
+# A Unit-Jacobian Map as a Local Field Coordinate
 
 Let
 
-$$
-\mathcal F:\mathbb R^n_\varphi\longrightarrow\mathbb R^n_{\mathcal Q},
-\qquad
-\mathcal Q^I=\mathcal F^I(\varphi),
-$$
+$$\begin{align}
+\mathcal F:\mathbb R^n_\varphi\longrightarrow\mathbb R^n_{\mathcal Q}, \qquad \mathcal Q^I=\mathcal F^I(\varphi),
+\end{align}$$
 
 be polynomial with
 
-$$
-\det J_{\mathcal F}=1,
-\qquad
-(J_{\mathcal F})_{Ia}=\partial_a\mathcal F_I.
-$$
+$$\begin{align}
+\det J_{\mathcal F}=1, \qquad (J_{\mathcal F})_{Ia}=\partial_a\mathcal F_I.
+\end{align}$$
 
-The inverse-function theorem gives a local inverse branch \(\mathcal G_s:\mathcal V\to\mathcal U_s\) around every point, but says nothing about one global inverse. Pull back a free massive multiplet:
+The inverse-function theorem gives a local inverse branch $\mathcal G_s:\mathcal V\to\mathcal U_s$ around every point, but says nothing about one global inverse. Pull back a free massive multiplet:
 
-$$
-S_n[\varphi]
-=\frac{f_\phi^2}{2}\int d^dX\sqrt h
-\left[
-h^{\mu\nu}g_{ab}(\varphi)\partial_\mu\varphi^a\partial_\nu\varphi^b
-+m^2|\mathcal F(\varphi)-\mathcal Q_\star|^2
-\right],
-$$
+$$\begin{align}
+S_n[\varphi] =\frac{f_\phi^2}{2}\int d^dX\sqrt h \left[ h^{\mu\nu}g_{ab}(\varphi)\partial_\mu\varphi^a\partial_\nu\varphi^b +m^2|\mathcal F(\varphi)-\mathcal Q_\star|^2 \right],
+\end{align}$$
 
-$$
-g_{ab}
-=\partial_a\mathcal F^I\partial_b\mathcal F^I
-=(J_{\mathcal F}^{\mathsf T}J_{\mathcal F})_{ab}.
-$$
+$$\begin{align}
+g_{ab} =\partial_a\mathcal F^I\partial_b\mathcal F^I =(J_{\mathcal F}^{\mathsf T}J_{\mathcal F})_{ab}.
+\end{align}$$
 
 On each branch this is exactly
 
-$$
-S_n
-=\frac{f_\phi^2}{2}\int d^dX\sqrt h
-\left[(\partial\mathcal Q^I)^2
-+m^2(\mathcal Q^I-\mathcal Q_\star^I)^2\right].
-$$
+$$\begin{align}
+S_n =\frac{f_\phi^2}{2}\int d^dX\sqrt h \left[(\partial\mathcal Q^I)^2 +m^2(\mathcal Q^I-\mathcal Q_\star^I)^2\right].
+\end{align}$$
 
 Moreover,
 
-$$
+$$\begin{align}
 \det g=(\det J_{\mathcal F})^2=1.
-$$
+\end{align}$$
 
 Thus the field-space metric is locally flat and has unit volume density. Globally it is incomplete when the local coordinate map fails to cover target translations with one sheet.
 
-# Local equations and equal-mass normal modes
+# Local Equations and Equal-Mass Normal Modes
 
 Varying in the source variables factorizes the Euler--Lagrange equation:
 
-$$
-(J_{\mathcal F})_{Ia}
-\left[-\nabla^2\mathcal Q^I
-+m^2(\mathcal Q^I-\mathcal Q_\star^I)\right]=0.
-$$
+$$\begin{align}
+(J_{\mathcal F})_{Ia} \left[-\nabla^2\mathcal Q^I +m^2(\mathcal Q^I-\mathcal Q_\star^I)\right]=0.
+\end{align}$$
 
 Pointwise invertibility then gives
 
-$$
+$$\begin{align}
 (-\nabla^2+m^2)(\mathcal Q^I-\mathcal Q_\star^I)=0.
-$$
+\end{align}$$
 
-No global inverse is needed. If \(v_s\in\mathcal F^{-1}(\mathcal Q_\star)\), then
+No global inverse is needed. If $v_s\in\mathcal F^{-1}(\mathcal Q_\star)$, then
 
-$$
-\left.\partial_a\partial_bV\right|_{v_s}
-=f_\phi^2m^2g_{ab}(v_s).
-$$
+$$\begin{align}
+\left.\partial_a\partial_bV\right|_{v_s} =f_\phi^2m^2g_{ab}(v_s).
+\end{align}$$
 
-Because the kinetic matrix is \(f_\phi^2g_{ab}(v_s)\), every local normal mode has physical mass \(m\). Multiple preimages are therefore locally indistinguishable perturbative vacua.
+Because the kinetic matrix is $f_\phi^2g_{ab}(v_s)$, every local normal mode has physical mass $m$. Multiple preimages are therefore locally indistinguishable perturbative vacua.
 
-# Cotangent lift and formal canonical algebra
+# Cotangent Lift and Formal Canonical Algebra
 
 The local field change lifts to
 
-$$
-\mathcal Q=\mathcal F(\varphi),
-\qquad
-\Pi=J_{\mathcal F}^{-\mathsf T}\pi,
-$$
+$$\begin{align}
+\mathcal Q=\mathcal F(\varphi), \qquad \Pi=J_{\mathcal F}^{-\mathsf T}\pi,
+\end{align}$$
 
 and preserves the canonical one-form:
 
-$$
+$$\begin{align}
 \Pi_I\,d\mathcal Q^I=\pi_a\,d\varphi^a.
-$$
+\end{align}$$
 
 In the finite-dimensional Schrödinger test,
 
-$$
-\widehat{\mathcal Q}_I=M_{\mathcal F_I},
-\qquad
-\widehat\Pi_I=-i\Delta_I,
-\qquad
-\Delta_I=(J_{\mathcal F}^{-\mathsf T})_{Ia}\partial_a.
-$$
+$$\begin{align}
+\widehat{\mathcal Q}_I=M_{\mathcal F_I}, \qquad \widehat\Pi_I=-i\Delta_I, \qquad \Delta_I=(J_{\mathcal F}^{-\mathsf T})_{Ia}\partial_a.
+\end{align}$$
 
-Because \(\det J=1\), the inverse is the cofactor matrix. The Piola identity
+Because $\det J=1$, the inverse is the cofactor matrix. The Piola identity
 
-$$
+$$\begin{align}
 \partial_a(\operatorname{cof}J_{\mathcal F})_{Ia}=0
-$$
+\end{align}$$
 
 makes the momenta formally symmetric on compactly supported test functions. Pointwise duality
 
-$$
+$$\begin{align}
 \Delta_I\mathcal F_J=\delta_{IJ}
-$$
+\end{align}$$
 
 gives the formal relations
 
-$$
-[\widehat{\mathcal Q}_J,\widehat\Pi_I]
-=i\delta_{IJ},
-\qquad
-[\widehat\Pi_I,\widehat\Pi_J]=0.
-$$
+$$\begin{align}
+[\widehat{\mathcal Q}_J,\widehat\Pi_I] =i\delta_{IJ}, \qquad [\widehat\Pi_I,\widehat\Pi_J]=0.
+\end{align}$$
 
 These statements remain local/formal: they do not prove essential self-adjointness, completeness of the momentum flows, or a regular global Weyl representation.
 
-# The Alpöge cubic fiber
+# The Alpöge Cubic Fiber
 
-For three fields \(x,y,z\), set \(s=1+xy\) and
+For three fields $x,y,z$, set $s=1+xy$ and
 
-$$
+$$\begin{align}
 A=s^3z+y^2s(4+3xy),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 B=y+3xs^2z+3xy^2(4+3xy),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 C=2x-3x^2y-x^3z.
-$$
+\end{align}$$
 
 The normalized map
 
-$$
+$$\begin{align}
 \mathcal F_3=(-A/2,B,C)
-$$
+\end{align}$$
 
 has
 
-$$
+$$\begin{align}
 \det J_{\mathcal F_3}=1.
-$$
+\end{align}$$
 
 Nevertheless,
 
-$$
-v_0=(0,0,-1/4),\qquad
-v_+=(1,-3/2,13/2),\qquad
-v_-=(-1,3/2,13/2)
-$$
+$$\begin{align}
+v_0=(0,0,-1/4),\qquad v_+=(1,-3/2,13/2),\qquad v_-=(-1,3/2,13/2)
+\end{align}$$
 
 all map to
 
-$$
+$$\begin{align}
 \mathcal Q_\star^{(3)}=(1/8,0,0).
-$$
+\end{align}$$
 
 The fiber is encoded by
 
-$$
+$$\begin{align}
 P_{A,B,C}(T)=CT^3-2T^2+BT-2A.
-$$
+\end{align}$$
 
-If \(\tau\) is a simple real root and \(\rho=P'(\tau)\), the preimage is reconstructed by
+If $\tau$ is a simple real root and $\rho=P'(\tau)$, the preimage is reconstructed by
 
-$$
-x=\frac2\rho,\qquad
-y=\tau-\frac\rho2,\qquad
-z=\frac54\rho^2-\frac32\tau\rho-\frac C8\rho^3.
-$$
+$$\begin{align}
+x=\frac2\rho,\qquad y=\tau-\frac\rho2,\qquad z=\frac54\rho^2-\frac32\tau\rho-\frac C8\rho^3.
+\end{align}$$
 
 A comparison target has
 
-$$
+$$\begin{align}
 P_0^{(3)}(T)=(T-1)(T^2-T+2),
-$$
+\end{align}$$
 
 so only one root is real. The number of real sheets is therefore three on one regular open set and one on another.
 
 The interacting-looking action
 
-$$
-\begin{aligned}
-S_3=\frac{f_\phi^2}{2}\int d^dX\bigg[
-&\frac14(\partial A)^2+(\partial B)^2+(\partial C)^2\\
+$$\begin{aligned}
+S_3=\frac{f_\phi^2}{2}\int d^dX\bigg[ &\frac14(\partial A)^2+(\partial B)^2+(\partial C)^2\\
 &+m^2\left((-A/2-1/8)^2+B^2+C^2\right)
 \bigg]
-\end{aligned}
-$$
+\end{aligned}$$
 
 is locally free in the variables
 
-$$
+$$\begin{align}
 q^I=f_\phi[\mathcal F_3^I(\varphi)-\mathcal Q_\star^{(3)I}],
-$$
+\end{align}$$
 
-not in \(x,y,z\) separately.
+not in $x,y,z$ separately.
 
-# Spectral multiplicity as the global obstruction
+# Spectral Multiplicity as the Global Obstruction
 
 Define
 
-$$
-\mathcal N_{\mathcal F}(\mathcal Q)
-=\#\{\varphi:\mathcal F(\varphi)=\mathcal Q\}.
-$$
+$$\begin{align}
+\mathcal N_{\mathcal F}(\mathcal Q) =\#\{\varphi:\mathcal F(\varphi)=\mathcal Q\}.
+\end{align}$$
 
 The area formula decomposes the source Hilbert space almost everywhere over regular values as
 
-$$
-L^2(\mathbb R^n_\varphi)
-\simeq
-\int_{\mathbb R^n_{\mathcal Q}}^\oplus
-\mathbb C^{\mathcal N_{\mathcal F}(\mathcal Q)}\,d^n\mathcal Q.
-$$
+$$\begin{align}
+L^2(\mathbb R^n_\varphi) \simeq \int_{\mathbb R^n_{\mathcal Q}}^\oplus \mathbb C^{\mathcal N_{\mathcal F}(\mathcal Q)}\,d^n\mathcal Q.
+\end{align}$$
 
-Ordinary coordinate multiplication on \(L^2(\mathbb R^n_{\mathcal Q})\) has multiplicity one. A tuple whose joint spectral multiplicity changes from three to one cannot be globally unitarily conjugate to it. This is stronger and more precise than saying only that “the inverse is multivalued.”
+Ordinary coordinate multiplication on $L^2(\mathbb R^n_{\mathcal Q})$ has multiplicity one. A tuple whose joint spectral multiplicity changes from three to one cannot be globally unitarily conjugate to it. This is stronger and more precise than saying only that “the inverse is multivalued.”
 
 The paper extends the construction to four fields. The fourth coordinate changes the generic fiber polynomial to degree five and is not a spectator; again one finds target regions with three versus one real preimage.
 
-# Local equivalence versus global quantum equivalence
+# Local Equivalence Versus Global Quantum Equivalence
 
 The source establishes the implication chain
 
-$$
-\det J_{\mathcal F}=1
-\Longrightarrow
-\text{local diffeomorphism and unit measure}
-\Longrightarrow
-g=J^{\mathsf T}J
-\Longrightarrow
-\text{local free equations and local canonical form}.
-$$
+$$\begin{align}
+\det J_{\mathcal F}=1 \Longrightarrow \text{local diffeomorphism and unit measure} \Longrightarrow
+g=J^{\mathsf T}J \Longrightarrow \text{local free equations and local canonical form}.
+\end{align}$$
 
 What fails is the next step:
 
-$$
+$$\begin{align}
 \text{local canonical equivalence}
 \centernot\Longrightarrow
 \text{one global unitary equivalence}.
-$$
+\end{align}$$
 
 Noninjectivity produces a varying sheet multiplicity, incomplete pullback geometry, incomplete translation flows, and a nonconstant joint spectral multiplicity. The formal CCR do not erase those global data.
 
-# Transfer to perturbative field-redefinition work
+# Transfer to Perturbative Field-Redefinition Work
 
-1. A perturbative map \(u\mapsto u+\kappa v[u]\) may be perfectly valid on a local formal neighborhood while still lacking a global inverse. Claims should be restricted to that neighborhood unless properness/completeness is proved.
+1. A perturbative map $u\mapsto u+\kappa v[u]$ may be perfectly valid on a local formal neighborhood while still lacking a global inverse. Claims should be restricted to that neighborhood unless properness/completeness is proved.
 2. Equality of local symplectic forms and path-integral Jacobians is not a proof of global Hilbert-space equivalence.
 3. The right global audit is a fiber/domain/completion audit: count branches, identify incomplete ends, determine momentum self-adjoint extensions, and compare spectral multiplicities.
 4. This paper does not by itself invalidate the local equivalence theorem; it sharply states its scope.
 
-# Verification note
+# Verification Note
 
 **Checked.** Mathematica independently reproduced
 
-$$
-\det J_{\mathcal F_3}=1,
-\qquad
-\det(J_{\mathcal F_3}^{\mathsf T}J_{\mathcal F_3})=1,
-$$
+$$\begin{align}
+\det J_{\mathcal F_3}=1, \qquad \det(J_{\mathcal F_3}^{\mathsf T}J_{\mathcal F_3})=1,
+\end{align}$$
 
-and verified that all three displayed points \(v_0,v_+,v_-\) map exactly to \((1/8,0,0)\).
+and verified that all three displayed points $v_0,v_+,v_-$ map exactly to $(1/8,0,0)$.
 
 **Source-derived.** The area-formula direct integral, global Riemannian covering argument, Stone--von Neumann multiplicity conclusion, four-field quintic analysis, and relation between incomplete geometry and incomplete momentum flow were not independently reproved.
 
-**Open mathematical boundary.** Formal symmetry of \(-i\Delta_I\) does not decide its deficiency indices or essential self-adjointness. The paper also does not construct a completed functional Schrödinger representation or nonperturbative path integral for the full QFT.
+**Open mathematical boundary.** Formal symmetry of $-i\Delta_I$ does not decide its deficiency indices or essential self-adjointness. The paper also does not construct a completed functional Schrödinger representation or nonperturbative path integral for the full QFT.

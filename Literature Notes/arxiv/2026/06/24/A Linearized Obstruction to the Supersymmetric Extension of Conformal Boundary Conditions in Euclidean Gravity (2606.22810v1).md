@@ -12,7 +12,7 @@ summary: "This paper gives a finite-boundary supergravity obstruction showing ho
 tags: []
 ---
 
-# What this paper does
+# What This Paper Does
 
 This note was created from [[overview]].
 
@@ -20,7 +20,7 @@ The paper studies whether Witten's conformal boundary condition for finite-bound
 
 The result is not stated as a global or nonlinear no-go theorem. The paper explicitly leaves open nonlinear supercovariant boundary terms that tie $K_{ab}^{\mathrm{tf}}$ to gravitino bilinears.
 
-## Setup and conventions
+## Setup and Conventions
 
 The local model is the linearized Euclidean gravitational boundary problem on a flat half-space. The bosonic fields are metric perturbations $h_{\mu\nu}$, with Greek indices in the bulk and Latin indices tangent to the boundary. The gauge-fixed Einstein operator is treated at principal-symbol level in de Donder gauge.
 
@@ -38,7 +38,7 @@ $$\begin{align}
 
 The paper uses normal chirality projectors $P_\pm^\perp=(1\pm\gamma^\perp)/2$ and preserves one chiral half of supersymmetry.
 
-## Technical skeleton
+## Technical Skeleton
 
 The argument has three layers.
 
@@ -48,7 +48,7 @@ Second, forward supersymmetry closure of $h_{ab}^{\mathrm{tf}}|=0$ forces a chir
 
 Third, applying supersymmetry back to this chiral gravitino datum produces the normal-tangential spin connection. Its gauge-invariant quotient is the trace-free extrinsic curvature $K_{ab}^{\mathrm{tf}}$. That is precisely the variable left free by the conformal boundary condition as a Neumann response.
 
-## Formalism map to my projects
+## Formalism Map to My Projects
 
 The useful translation is:
 
@@ -62,13 +62,13 @@ This is directly relevant to CPS and edge-mode notes because it treats a boundar
 
 For AdS/CPS work, this is an obstruction template, not an AdS theorem. The source setting is a finite boundary and a local high-momentum half-space test. Asymptotic AdS supersymmetric Dirichlet problems and holographic renormalization are different boundary-value problems.
 
-## Symplectic structure, charges, or boundary data
+## Symplectic Structure, Charges, or Boundary Data
 
 The paper is not primarily a charge-construction paper. Its boundary data are nevertheless symplectic in the sense that the conformal boundary condition leaves a conjugate response free. The central variable for transfer is $K_{ab}^{\mathrm{tf}}$, interpreted source-derived as the response conjugate to the conformal boundary metric data.
 
 The charge/CPS relevance is therefore indirect but sharp: if a boundary supersymmetry condition fixes $K_{ab}^{\mathrm{tf}}$, it changes the boundary polarization. A future super-York construction should be checked as a graph condition relating this response to fermion bilinears, not as an independent extra Dirichlet row.
 
-## Key formulas and derivations
+## Key Formulas and Derivations
 
 Source-derived formulas and objects:
 
@@ -81,7 +81,7 @@ Source-derived formulas and objects:
 
 Theorem 4.1 is source-derived as a pointwise nonzero-tangential-momentum statement: no half-dimensional vector-spinor boundary datum, including local, pseudodifferential, APS/Calderon-type, or data mixing $\psi_\perp$ and $\psi_a$, closes both directions of the preserved supersymmetry while keeping the conformal bosonic data fixed.
 
-## Mathematica/xAct/Sage checks
+## Mathematica/xAct/Sage Checks
 
 No Mathematica, xAct, Sage, or ancillary-script verification was run in this daily screening.
 
@@ -91,7 +91,7 @@ Possible future checks:
 - use xAct to verify the relation between $\omega_a{}^{b\perp}$ and the linearized extrinsic curvature;
 - check the dimension and quotient of $S^2_0(T^*\partial X)$ modulo boundary conformal Killing image in low dimensions.
 
-## Source-derived
+## Source-Derived
 
 - The paper's result is a four-dimensional, linearized, flat-half-space, highest-derivative obstruction.
 - The obstruction survives local, pseudodifferential, APS-type, and compensating-gauge variations at the stated symbol level.
@@ -104,20 +104,20 @@ Possible future checks:
 - The HTML introduction, setup, local argument outline, and section structure were inspected.
 - The note's local-project interpretation was checked only for consistency with the source claims and the screening profile.
 
-## Not independently verified
+## Not Independently Verified
 
 - I did not run the author's `verify_all.py` or related NumPy scripts.
 - I did not render the PDF.
 - I did not independently prove the LS condition, BRST compatibility, or gamma-matrix rank statements.
 - I did not verify any nonlinear supergravity boundary action or any AdS extension.
 
-## Possible extensions
+## Possible Extensions
 
 1. Reproduce the finite-dimensional symbol calculation in a local Mathematica or Python notebook, then store only the result in a project note.
 1. Compare this obstruction with the local supergravity boundary conditions in older D'Eath-Esposito and van Nieuwenhuizen-Vassilevich treatments.
 1. Translate the source/response story into the finite-boundary CPS notation used in the vault.
 1. For AdS3/CS projects, check whether the analogue of $S^2_0/\operatorname{im}\mathrm{CK}$ survives as genuine response data or is replaced by holonomy/global super-Virasoro data.
 
-## Reading use
+## Reading Use
 
 Read the introduction and Section 2 first for the conformal boundary polarization. Then read the local no-go argument and theorem statement. Treat the ancillary scripts as the next verification target if this paper becomes part of an active derivation.

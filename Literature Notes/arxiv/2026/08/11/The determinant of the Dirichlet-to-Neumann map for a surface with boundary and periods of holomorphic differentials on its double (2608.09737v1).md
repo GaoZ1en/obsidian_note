@@ -21,135 +21,109 @@ Reason codes: `T3-math`, `T1-boundary`, `T2-spectral`.
 
 This is a medium-priority detailed note because it converts boundary response data into a conformal determinant invariant and period data on a doubled surface. It is mathematically adjacent to gluing determinants and boundary operators, but it does not address Lorentzian dynamics, covariant phase space, charges, or holographic boundary conditions.
 
-## Source map
+## Source Map
 
 - The introduction defines the Dirichlet-to-Neumann map, the boundary Hilbert transform, its essential and discrete spectra, and the proposed determinant identity.
 - The main proof uses Kontsevich--Vishik regularized determinants, trace-class deformations, and comparison with the disk Hilbert transform.
 - The appendix relates discrete Hilbert-transform eigenvalues to the periods of Abelian differentials on the Schottky double and gives a period-matrix characteristic equation.
 
-## Boundary operators and spectral data
+## Boundary Operators and Spectral Data
 
 Let $(M,g)$ be a smooth orientable surface of genus $\mathfrak g$ with connected boundary $\Gamma$. Constants are removed by working on
 
-$$
+$$\begin{align}
 \mathscr H=L^2(\Gamma,dl_g;\mathbb C)\ominus\mathbb C.
-$$
+\end{align}$$
 
 For the harmonic extension $u^f$ of boundary data $f$,
 
-$$
+$$\begin{align}
 \Lambda f=\partial_\nu u^f\big|_\Gamma
-$$
+\end{align}$$
 
 defines the Dirichlet-to-Neumann (DN) map. With arclength derivative $\partial_\gamma$ and the disk DN map $\Lambda_0=|\partial_\gamma|$,
 
-$$
+$$\begin{align}
 \Lambda=\Lambda_0+\widetilde\Lambda,
-$$
+\end{align}$$
 
 where $\widetilde\Lambda$ is smoothing. The boundary Hilbert transform is
 
-$$
-H=\partial_\gamma^{-1}\Lambda
-=H_0+\widetilde H,
-\qquad
-H_0=\partial_\gamma^{-1}|\partial_\gamma|,
-\qquad
-H_0^2=-I.
-$$
+$$\begin{align}
+H=\partial_\gamma^{-1}\Lambda =H_0+\widetilde H, \qquad H_0=\partial_\gamma^{-1}|\partial_\gamma|, \qquad H_0^2=-I.
+\end{align}$$
 
 Its essential spectrum is $\{-i,+i\}$. The finite discrete spectrum is asserted to consist of
 
-$$
-\lambda_{\pm k}=\pm i\mu_k,
-\qquad
-0<\mu_k<1,
-\qquad
-k=1,\ldots,\mathfrak g.
-$$
+$$\begin{align}
+\lambda_{\pm k}=\pm i\mu_k, \qquad 0<\mu_k<1, \qquad k=1,\ldots,\mathfrak g.
+\end{align}$$
 
 The paper defines a finite determinant rather than a zeta or Fredholm determinant of $H$:
 
-$$
-\operatorname{DET}(H)
-=\det H_{\mathrm{disc}}
-=\prod_{k=1}^{\mathfrak g}\mu_k^2.
-$$
+$$\begin{align}
+\operatorname{DET}(H) =\det H_{\mathrm{disc}} =\prod_{k=1}^{\mathfrak g}\mu_k^2.
+\end{align}$$
 
-## Proposed determinant identity
+## Proposed Determinant Identity
 
 The central formula is
 
-$$
-\det_\zeta\Lambda
-=\det_\zeta(\partial_\gamma)\operatorname{DET}(H).
-$$
+$$\begin{align}
+\det_\zeta\Lambda =\det_\zeta(\partial_\gamma)\operatorname{DET}(H).
+\end{align}$$
 
 For a circle of length $|\Gamma|$,
 
-$$
-\zeta_{\Lambda_0}(s)
-=2\zeta_R(s)\left(\frac{2\pi}{|\Gamma|}\right)^{-s},
-\qquad
-\det_\zeta\Lambda_0
-=\det_\zeta\partial_\gamma
-=|\Gamma|.
-$$
+$$\begin{align}
+\zeta_{\Lambda_0}(s) =2\zeta_R(s)\left(\frac{2\pi}{|\Gamma|}\right)^{-s}, \qquad \det_\zeta\Lambda_0 =\det_\zeta\partial_\gamma =|\Gamma|.
+\end{align}$$
 
 Consequently, the claimed conformal invariant is
 
-$$
-\frac{\det_\zeta\Lambda}{|\Gamma|}
-=\prod_{k=1}^{\mathfrak g}\mu_k^2.
-$$
+$$\begin{align}
+\frac{\det_\zeta\Lambda}{|\Gamma|} =\prod_{k=1}^{\mathfrak g}\mu_k^2.
+\end{align}$$
 
 Combining this with the quoted Guillarmou--Guillopé Ruelle formula for $\mathfrak g>1$ gives
 
-$$
-\left.(2\pi s)^{-\mathfrak g}\mathscr R(s)\right|_{s=0}
-=(1-\mathfrak g)\prod_{k=1}^{\mathfrak g}\mu_k^2.
-$$
+$$\begin{align}
+\left.(2\pi s)^{-\mathfrak g}\mathscr R(s)\right|_{s=0} =(1-\mathfrak g)\prod_{k=1}^{\mathfrak g}\mu_k^2.
+\end{align}$$
 
 This last relation inherits the hypotheses and normalization conventions of the quoted Ruelle formula; it is not derived independently from a geodesic product in this paper.
 
-## Proof architecture
+## Proof Architecture
 
 For a sectorial invertible pseudodifferential operator $A$ and positive order-one regularizer $Q$, the paper uses
 
-$$
-\det_Q(A)
-=\exp\operatorname*{f.p.}_{s=0}
-\operatorname{Tr}\bigl(Q^{-s}\log A\bigr).
-$$
+$$\begin{align}
+\det_Q(A) =\exp\operatorname*{f.p.}_{s=0} \operatorname{Tr}\bigl(Q^{-s}\log A\bigr).
+\end{align}$$
 
 Along trace-class differentiable deformations it derives
 
-$$
-\partial_t\log\det_Q A(t)
-=\operatorname{Tr}\bigl(A^{-1}\dot A\bigr).
-$$
+$$\begin{align}
+\partial_t\log\det_Q A(t) =\operatorname{Tr}\bigl(A^{-1}\dot A\bigr).
+\end{align}$$
 
 It then deforms
 
-$$
-B(t)=H_0+\theta(t)\widetilde H,
-\qquad
-\partial_\gamma B(t)=\Lambda_0+\theta(t)\widetilde\Lambda,
-$$
+$$\begin{align}
+B(t)=H_0+\theta(t)\widetilde H, \qquad \partial_\gamma B(t)=\Lambda_0+\theta(t)\widetilde\Lambda,
+\end{align}$$
 
 along a complex path avoiding the discrete noninvertibility set. A second deformation of $J(t)=-B(t)^2$ is used to isolate the finite discrete spectral contribution. Finally, regularizer independence under smoothing deformations identifies the Kontsevich--Vishik determinants of the positive DN operators with their zeta determinants.
 
 The strategy is plausible and exposes the correct finite-dimensional spectral factor. The source does not fully audit spectral cuts, possible winding of the complex deformation path, or every analytic-continuation interchange; those are material for a rigorous proof of the phase-sensitive determinant identity.
 
-## Periods on the double
+## Periods on the Double
 
 Let $2M$ be the Schottky double with antiholomorphic involution $\tau$. The appendix states that one can choose holomorphic differentials $\omega_{\pm k}$ satisfying
 
-$$
-\int_{\tau\circ l}\omega_{\pm k}
-=\frac{\pm\mu_k+1}{\pm\mu_k-1}
-\int_l\omega_{\pm k}
-$$
+$$\begin{align}
+\int_{\tau\circ l}\omega_{\pm k} =\frac{\pm\mu_k+1}{\pm\mu_k-1} \int_l\omega_{\pm k}
+\end{align}$$
 
 for loops $l\subset M$. In a symmetric homology basis, write the $b$-period matrix as
 
@@ -167,17 +141,13 @@ $$
 
 The discrete eigenvalues $\lambda$ are then characterized by
 
-$$
-\det\left(
-\frac{\lambda+i}{\lambda-i}\mathfrak F
-+2\operatorname{Re}\mathfrak G
-+\frac{\lambda-i}{\lambda+i}\overline{\mathfrak F}
-\right)=0.
-$$
+$$\begin{align}
+\det\left( \frac{\lambda+i}{\lambda-i}\mathfrak F +2\operatorname{Re}\mathfrak G +\frac{\lambda-i}{\lambda+i}\overline{\mathfrak F} \right)=0.
+\end{align}$$
 
 This makes the proposed DN determinant computable from the period matrix once the compatible symmetric basis and the roots $\lambda=\pm i\mu_k$ are fixed.
 
-## Verification log
+## Verification Log
 
 ### Checked
 
@@ -186,13 +156,11 @@ This makes the proposed DN determinant computable from the period matrix once th
 - For one discrete pair $H_{\mathrm{disc}}=\operatorname{diag}(i\mu,-i\mu)$, Mathematica verified $\det H_{\mathrm{disc}}=\mu^2$, $\det(-H_{\mathrm{disc}}^2)=\mu^4$, and $\operatorname{Tr}\log(-H_{\mathrm{disc}}^2)=4\log\mu$ for $0<\mu<1$.
 - The same model verifies that $K=I+H_{\mathrm{disc}}^2$ obeys
 
-  $$
-  -\sum_{n\ge1}\frac{\operatorname{Tr}K^n}{n}
-  =4\log\mu
-  =\operatorname{Tr}\log(I-K).
-  $$
+$$\begin{align}
+-\sum_{n\ge1}\frac{\operatorname{Tr}K^n}{n} =4\log\mu =\operatorname{Tr}\log(I-K).
+\end{align}$$
 
-### Source-derived
+### Source-Derived
 
 - The spectral description of $H$, the trace-class deformation formula, regularizer independence, and the period-matrix characteristic equation are source-derived and were checked for internal algebraic consistency only.
 - The link to the Ruelle length spectrum uses the normalization and genus restriction of the cited Guillarmou--Guillopé result.
@@ -207,20 +175,19 @@ This makes the proposed DN determinant computable from the period matrix once th
 - The printed proof says $\det_Q(I)=0$. By its own exponential definition it must be $1$; the following ratio also requires $1$.
 - The printed expansion has
 
-  $$
-  \operatorname{Tr}\log(I-K)
-  =+\sum_{n\ge1}\frac{\operatorname{Tr}K^n}{n}.
-  $$
+$$\begin{align}
+\operatorname{Tr}\log(I-K) =+\sum_{n\ge1}\frac{\operatorname{Tr}K^n}{n}.
+\end{align}$$
 
   The sign must be negative. For one eigenvalue pair the printed positive series gives $-4\log\mu$, whereas the left-hand side is $4\log\mu$. Correcting the sign restores the claimed finite spectral factor and does not by itself refute the final theorem.
 
-## Relevance and limits
+## Relevance and Limits
 
 The reusable idea is that a smoothing difference between a physical boundary response operator and a reference operator can compress global conformal data into a finite spectral determinant. This is potentially useful when comparing gluing determinants or doubled geometries.
 
 The paper is restricted to two-dimensional orientable Riemannian surfaces with one connected smooth boundary component. It does not establish a multi-boundary formula, a Lorentzian analogue, a determinant gluing theorem for the user's interface construction, or a direct relation to covariant symplectic data.
 
-## Next checks
+## Next Checks
 
 - Test the formula on an explicit genus-one bordered surface where both a period matrix and a DN spectrum can be computed numerically.
 - Rewrite the deformation proof with a fixed spectral cut and explicit winding control, correcting the two printed determinant identities.

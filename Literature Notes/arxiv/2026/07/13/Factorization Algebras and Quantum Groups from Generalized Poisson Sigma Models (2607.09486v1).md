@@ -14,7 +14,7 @@ tags: []
 
 Back to [[2026_07_13_overview]].
 
-## How the paper is organized
+## How the Paper Is Organized
 
 The paper develops one construction at three levels. Sections 2 and 5 define topological and holomorphic-topological generalized Poisson sigma models from shifted Poisson data. Sections 3 and 4 extract boundary operations and their Koszul-dual quantum groups by perturbative factorization-algebra methods. Sections 6 and 7 test this architecture on twisted gauge theories, Yangians, and a universal heat-kernel bulk-boundary model.
 
@@ -27,7 +27,7 @@ The paper develops one construction at three levels. Sections 2 and 5 define top
 
 For a selective reading, the shortest useful path is Sections 2.2, 2.6, 3.1-3.2, 3.5, 4.1, 4.3-4.4, 5.2-5.3, 6.6, and 7.3.
 
-## Shifted Poisson data and the BV bulk theory
+## Shifted Poisson Data and the BV Bulk Theory
 
 Let $A=\mathcal O(L)$ be a derived $P_d$ algebra. Its shifted higher brackets are encoded by structure functions
 
@@ -57,7 +57,7 @@ and the AKSZ target is $T^*_{\pi}[d]M$. The canonical boundary condition used fo
 
 This is a BV/AKSZ phase-space construction, but it is not an Iyer-Wald covariant phase space. The paper does not define a gravitational presymplectic potential, surface-charge variation, or charge-integrability condition.
 
-## Enriched boundaries as coisotropic lifts
+## Enriched Boundaries as Coisotropic Lifts
 
 An enriched boundary contains its own lower-dimensional Poisson theory. Algebraically, let $A$ be a $P_d$ algebra and $C$ a $P_{d-1}$ algebra. The derived Poisson center is
 
@@ -103,15 +103,12 @@ Expanding the master equation by the number of $\eta$ and $\chi$ fields reproduc
 When a bulk defect ends on this boundary, the intersection supports a corner algebra. The mixed tree operation of Eq. (3.35) sends
 
 $$\begin{align}
-\phi_i\otimes O_1(\theta)\otimes\cdots\otimes O_n(\theta)
-\longmapsto
-\sum_{k_1,\ldots,k_n}
-\Phi_{i,k_1\cdots k_n}(\theta) \prod_{a=1}^n\partial_{\theta_{k_a}}O_a. \tag{3.35}
+\phi_i\otimes O_1(\theta)\otimes\cdots\otimes O_n(\theta) \longmapsto \sum_{k_1,\ldots,k_n} \Phi_{i,k_1\cdots k_n}(\theta) \prod_{a=1}^n\partial_{\theta_{k_a}}O_a. \tag{3.35}
 \end{align}$$
 
 This is the paper's most direct boundary/corner dictionary: the abstract map $A\to\mathcal Z(C)$ becomes an explicit operation acting on corner observables.
 
-## Boundary tree diagrams and the $P_d$ algebra
+## Boundary Tree Diagrams and the $P_d$ Algebra
 
 With $\eta|_{\partial}=0$, the boundary observables are $\mathbb C[\phi]$. A reflected half-space propagator attached to a bulk interaction vertex produces the binary operation
 
@@ -137,7 +134,7 @@ d_\pi=\{\pi,-\}. \tag{3.40}
 
 The resulting bulk complex is a shifted Lichnerowicz-Poisson complex. This separates three related objects that can otherwise be conflated: the boundary observable algebra $A$, its bulk deformation complex or center, and a corner algebra $C$ carrying an $A$-module structure.
 
-## Universal defects and quantum-group operations
+## Universal Defects and Quantum-Group Operations
 
 For an augmented $E_k$ algebra $A$, the Koszul dual is the dual of the iterated bar construction,
 
@@ -167,7 +164,7 @@ $$\begin{align}
 
 and a crossing diagram gives the leading $R$-matrix. The all-orders identification in Conjecture 4.2 is not derived from a completed loop calculation; it is explicitly a conjectural, scheme-dependent extension of the leading results.
 
-## Holomorphic-topological models and the Yangian example
+## Holomorphic-Topological Models and the Yangian Example
 
 The holomorphic-topological theory replaces shifted Poisson brackets by shifted chiral $\lambda$-brackets. The BV action in Section 5 is the chiral analogue of Eq. (2.8), and weighted boundary trees reproduce binary and higher chiral operations. Section 5.4 treats holomorphic-topological defects and enriched boundaries, but the paper describes parts of their mathematical definition as heuristic and does not construct the purely holomorphic enriched-boundary theory.
 
@@ -193,7 +190,7 @@ $$\begin{align}
 
 These are the leading Yangian data. The complete $E_1$-chiral coproduct and the all-orders identification depend on the conjectural extension developed earlier.
 
-## Universal heat-kernel bulk and corners
+## Universal Heat-Kernel Bulk and Corners
 
 Let $(\mathcal E,Q)$ be an elliptic complex with gauge-fixing operator $Q^\dagger$, generalized Laplacian $D=[Q,Q^\dagger]$, heat kernel $K_u$, and propagator
 
@@ -210,7 +207,7 @@ $$\begin{align}
 
 Theorem 7.2 gives a corresponding corner coefficient $\frac1{32}P_{\mathcal E}$ in Eq. (7.32). These identities are potentially reusable shortcuts for half-space or corner Feynman graphs. Applying them to an AdS or gravitational problem would first require a suitable elliptic complex, gauge fixing, boundary condition, and heat kernel. The proposed general $n$-corner formula is Conjecture 7.1, not a theorem.
 
-## Transfer to boundary, BRST, and CPS projects
+## Transfer to Boundary, BRST, and CPS Projects
 
 The most immediate transferable construction is
 
@@ -222,7 +219,7 @@ which organizes how a bulk algebra acts on boundary or corner observables while 
 
 The translation to a gravitational CPS calculation is not automatic. Before using this framework for Wald charges or edge modes, one must identify the gravitational field complex, boundary conditions, residual gauge algebra, corner observable algebra, and the map from the BV pairing to the desired presymplectic structure. The paper does not supply these identifications.
 
-## Verification boundary
+## Verification Boundary
 
 The official abstract page, complete PDF structure, and displayed formulas cited above were inspected. Rendered PDF pages were used to confirm Eq. (2.36), Eq. (4.20), and the heat-kernel/propagator setup around Eqs. (7.18)-(7.22).
 

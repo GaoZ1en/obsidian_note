@@ -14,7 +14,7 @@ summary: "Two Riesz contour moments give an exact, label-free resolvent for an i
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** the complex-scaled operator forms an analytic family, one contour isolates an algebraic rank-two cluster, the complementary resolvent is regular, and the chosen source/channel matrix elements share a common continuation domain. Under these assumptions the zeroth and first Riesz moments determine the exact resolvent restricted to that cluster. At a second-order exceptional point they become the simple- and double-pole Laurent operators.
 
@@ -24,236 +24,189 @@ The black-hole application is not numerically demonstrated in this paper. The Ga
 
 Relevance: **medium detailed** (`T2-spectral`, `T2-model`).
 
-# Operator and scattering setup
+# Operator and Scattering Setup
 
 For one Schwarzschild Regge--Wheeler--Zerilli channel,
 
-$$
-H_\ell=-\frac{d^2}{dx^2}+V_\ell(x),
-\qquad
-R_\ell(z)=(z-H_\ell)^{-1},
-\qquad z=(\omega+i0)^2.
-$$
+$$\begin{align}
+H_\ell=-\frac{d^2}{dx^2}+V_\ell(x), \qquad R_\ell(z)=(z-H_\ell)^{-1}, \qquad z=(\omega+i0)^2.
+\end{align}$$
 
 The outgoing Green function is
 
-$$
-G_\ell(\omega;x,x')
-=\frac{u^H_\ell(\omega,x_<)u^\infty_\ell(\omega,x_>)}{W_\ell(\omega)}.
-$$
+$$\begin{align}
+G_\ell(\omega;x,x') =\frac{u^H_\ell(\omega,x_<)u^\infty_\ell(\omega,x_>)}{W_\ell(\omega)}.
+\end{align}$$
 
 With $u^H\sim A^{\mathrm{in}}e^{-i\omega x}+A^{\mathrm{out}}e^{i\omega x}$ at infinity,
 
-$$
-W_\ell=2i\omega A^{\mathrm{in}}_\ell,
-\qquad
-\mathcal T_\ell=\frac{1}{A^{\mathrm{in}}_\ell}
-=\frac{2i\omega}{W_\ell}.
-$$
+$$\begin{align}
+W_\ell=2i\omega A^{\mathrm{in}}_\ell, \qquad \mathcal T_\ell=\frac{1}{A^{\mathrm{in}}_\ell} =\frac{2i\omega}{W_\ell}.
+\end{align}$$
 
 Thus QNM poles, the real-axis transmission amplitude, and a sourced response are different matrix elements or analytic limits of the same resolvent. A trace such as the continuum level density cannot by itself recover the off-diagonal transmission channel.
 
 Complex scaling deforms the radial contour so outgoing QNM profiles become square-integrable and the continuum rotates away. For dilation-analytic source and observation vectors,
 
-$$
+$$\begin{align}
 R_\ell(z)=U_\theta^{-1}R_{\ell,\theta}(z)U_\theta.
-$$
+\end{align}$$
 
 The angle $\theta$ is representational, not physical. Exact admissible matrix elements are independent of it; finite-basis $\theta$ dependence is an error diagnostic.
 
-# Two Riesz moments
+# Two Riesz Moments
 
 Let $\Gamma_{\mathrm{pair}}$ enclose exactly two QNM eigenvalues, counted with algebraic multiplicity. Define
 
-$$
-P^\theta_{\mathrm{pair}}
-=\frac{1}{2\pi i}\oint_{\Gamma_{\mathrm{pair}}}
-R_{\ell,\theta}(z)\,dz,
-$$
+$$\begin{align}
+P^\theta_{\mathrm{pair}} =\frac{1}{2\pi i}\oint_{\Gamma_{\mathrm{pair}}} R_{\ell,\theta}(z)\,dz,
+\end{align}$$
 
-$$
-\mathcal M^\theta_{\mathrm{pair}}
-=\frac{1}{2\pi i}\oint_{\Gamma_{\mathrm{pair}}}
-zR_{\ell,\theta}(z)\,dz
-=H_{\ell,\theta}P^\theta_{\mathrm{pair}}.
-$$
+$$\begin{align}
+\mathcal M^\theta_{\mathrm{pair}} =\frac{1}{2\pi i}\oint_{\Gamma_{\mathrm{pair}}} zR_{\ell,\theta}(z)\,dz =H_{\ell,\theta}P^\theta_{\mathrm{pair}}.
+\end{align}$$
 
 The projector identifies the invariant two-dimensional root space, while the first moment records the operator restricted to it. Introduce
 
-$$
-E_c=\frac12\operatorname{Tr}\mathcal M^\theta_{\mathrm{pair}},
-\qquad
-K^\theta_{\mathrm{pair}}
-=\mathcal M^\theta_{\mathrm{pair}}-E_cP^\theta_{\mathrm{pair}},
-$$
+$$\begin{align}
+E_c=\frac12\operatorname{Tr}\mathcal M^\theta_{\mathrm{pair}}, \qquad K^\theta_{\mathrm{pair}} =\mathcal M^\theta_{\mathrm{pair}}-E_cP^\theta_{\mathrm{pair}},
+\end{align}$$
 
-$$
-\Delta^2
-=\frac12\operatorname{Tr}\left[(K^\theta_{\mathrm{pair}})^2\right].
-$$
+$$\begin{align}
+\Delta^2 =\frac12\operatorname{Tr}\left[(K^\theta_{\mathrm{pair}})^2\right].
+\end{align}$$
 
 On a two-dimensional space, Cayley--Hamilton and $\operatorname{Tr}K=0$ give
 
-$$
+$$\begin{align}
 K^2=\Delta^2P.
-$$
+\end{align}$$
 
 Therefore the exact cluster resolvent is
 
-$$
-R^\theta_{\mathrm{pair}}(z)
-=\frac{(z-E_c)P^\theta_{\mathrm{pair}}+K^\theta_{\mathrm{pair}}}
-{(z-E_c)^2-\Delta^2}.
-$$
+$$\begin{align}
+R^\theta_{\mathrm{pair}}(z) =\frac{(z-E_c)P^\theta_{\mathrm{pair}}+K^\theta_{\mathrm{pair}}} {(z-E_c)^2-\Delta^2}.
+\end{align}$$
 
 This is exact for the selected spectral component, not a fit of the full resolvent. The full response remains
 
-$$
+$$\begin{align}
 R_{\ell,\theta}=R^\theta_{\mathrm{pair}}+R^\theta_{\mathrm{rest}}.
-$$
+\end{align}$$
 
-# Exceptional-point limit
+# Exceptional-Point Limit
 
 Away from the EP, a local square-root branch gives
 
-$$
-E_\pm=E_c\pm\Delta,
-\qquad
-P_\pm=\frac12\left(P\pm\frac K\Delta\right).
-$$
+$$\begin{align}
+E_\pm=E_c\pm\Delta, \qquad P_\pm=\frac12\left(P\pm\frac K\Delta\right).
+\end{align}$$
 
 The $1/\Delta$ terms explain why the separately labeled projectors become ill-conditioned. Their sum, the cluster moments, $E_c$, and $\Delta^2$ remain single-valued.
 
 At a genuine second-order EP,
 
-$$
-\Delta^2=0,
-\qquad
-K\neq0,
-\qquad
-K^2=0,
-$$
+$$\begin{align}
+\Delta^2=0, \qquad K\neq0, \qquad K^2=0,
+\end{align}$$
 
 and
 
-$$
-R^\theta_{\mathrm{pair}}(z)
-=\frac{K^\theta_{\mathrm{pair}}}{(z-E_{\mathrm{EP}})^2}
-+\frac{P^\theta_{\mathrm{pair}}}{z-E_{\mathrm{EP}}}.
-$$
+$$\begin{align}
+R^\theta_{\mathrm{pair}}(z) =\frac{K^\theta_{\mathrm{pair}}}{(z-E_{\mathrm{EP}})^2} +\frac{P^\theta_{\mathrm{pair}}}{z-E_{\mathrm{EP}}}.
+\end{align}$$
 
 Hence
 
-$$
-\mathcal L_{-2}=K^\theta_{\mathrm{pair}},
-\qquad
-\mathcal L_{-1}=P^\theta_{\mathrm{pair}}.
-$$
+$$\begin{align}
+\mathcal L_{-2}=K^\theta_{\mathrm{pair}}, \qquad \mathcal L_{-1}=P^\theta_{\mathrm{pair}}.
+\end{align}$$
 
 The condition $\Delta^2=0$ alone locates a repeated eigenvalue. Establishing an EP rather than a semisimple degeneracy additionally requires rank $P=2$, $K\neq0$, and $K^2=0$ with geometric multiplicity one.
 
-# Real-frequency scattering
+# Real-Frequency Scattering
 
 The paper defines a linear channel functional $\mathfrak T_{\ell,\omega}$ such that
 
-$$
-\mathcal T_\ell(\omega;q)
-=\mathfrak T_{\ell,\omega}[R_\ell(z_\omega;q)].
-$$
+$$\begin{align}
+\mathcal T_\ell(\omega;q) =\mathfrak T_{\ell,\omega}[R_\ell(z_\omega;q)].
+\end{align}$$
 
 Equivalently, using the transition operator, the localized channel vectors are $V_\ell|-\omega\rangle$. Applying the exact cluster formula gives
 
-$$
-\mathcal T_{\ell,\mathrm{pair}}
-=\frac{(z_\omega-E_c)\tau_P+\tau_K}
-{(z_\omega-E_c)^2-\Delta^2}.
-$$
+$$\begin{align}
+\mathcal T_{\ell,\mathrm{pair}} =\frac{(z_\omega-E_c)\tau_P+\tau_K} {(z_\omega-E_c)^2-\Delta^2}.
+\end{align}$$
 
 The full amplitude is the coherent sum
 
-$$
-\mathcal T_\ell
-=\mathcal T_{\ell,\mathrm{pair}}
-+\mathcal T_{\ell,\mathrm{rest}}.
-$$
+$$\begin{align}
+\mathcal T_\ell =\mathcal T_{\ell,\mathrm{pair}} +\mathcal T_{\ell,\mathrm{rest}}.
+\end{align}$$
 
 Consequently the greybody factor includes interference:
 
-$$
-\Gamma_\ell
-=|\mathcal T_{\mathrm{pair}}|^2
-+|\mathcal T_{\mathrm{rest}}|^2
-+2\operatorname{Re}
-\left(\mathcal T_{\mathrm{pair}}\mathcal T_{\mathrm{rest}}^*\right).
-$$
+$$\begin{align}
+\Gamma_\ell =|\mathcal T_{\mathrm{pair}}|^2 +|\mathcal T_{\mathrm{rest}}|^2 +2\operatorname{Re} \left(\mathcal T_{\mathrm{pair}}\mathcal T_{\mathrm{rest}}^*\right).
+\end{align}$$
 
 The pair/rest terms are not separately measurable probabilities. Large near-EP modal contributions can cancel or interfere without a singularity in the total real-axis observable.
 
-# Sourced response and ringdown coefficients
+# Sourced Response and Ringdown Coefficients
 
 For source $f$ and observation functional $g$, define the physical cluster matrix elements
 
-$$
-C_{-1}[g,f]
-=\langle g|U_\theta^{-1}P^\theta_{\mathrm{pair}}U_\theta|f\rangle,
-$$
+$$\begin{align}
+C_{-1}[g,f] =\langle g|U_\theta^{-1}P^\theta_{\mathrm{pair}}U_\theta|f\rangle,
+\end{align}$$
 
-$$
-C_{-2}[g,f]
-=\langle g|U_\theta^{-1}K^\theta_{\mathrm{pair}}U_\theta|f\rangle.
-$$
+$$\begin{align}
+C_{-2}[g,f] =\langle g|U_\theta^{-1}K^\theta_{\mathrm{pair}}U_\theta|f\rangle.
+\end{align}$$
 
 At the EP they are the $z$-plane Laurent coefficients of the selected source-to-observer response. Converting $z=\omega^2$ around $\omega_{\mathrm{EP}}$ gives
 
-$$
+$$\begin{align}
 A_{-2}=\frac{C_{-2}}{4\omega_{\mathrm{EP}}^2},
-$$
+\end{align}$$
 
-$$
-A_{-1}
-=\frac{C_{-1}}{2\omega_{\mathrm{EP}}}
--\frac{C_{-2}}{4\omega_{\mathrm{EP}}^3}.
-$$
+$$\begin{align}
+A_{-1} =\frac{C_{-1}}{2\omega_{\mathrm{EP}}} -\frac{C_{-2}}{4\omega_{\mathrm{EP}}^3}.
+\end{align}$$
 
 With the paper's inverse Fourier convention, the positive-frequency causal term is
 
-$$
-\psi_{\mathrm{EP}}(t)
-=\Theta(t)(D_0+D_1t)e^{-i\omega_{\mathrm{EP}}t},
-$$
+$$\begin{align}
+\psi_{\mathrm{EP}}(t) =\Theta(t)(D_0+D_1t)e^{-i\omega_{\mathrm{EP}}t},
+\end{align}$$
 
-$$
-D_0=-iA_{-1},
-\qquad
-D_1=-A_{-2}.
-$$
+$$\begin{align}
+D_0=-iA_{-1}, \qquad D_1=-A_{-2}.
+\end{align}$$
 
 Thus $C_{-2}=0$ is a source--observer selection rule eliminating the linear-in-time term even though the operator still has a second-order EP.
 
-# Jost comparison
+# Jost Comparison
 
 Locally write the same scalar response as
 
-$$
+$$\begin{align}
 F_{g,f}(\omega)=\frac{\mathcal Q_{g,f}(\omega)}{W_\ell(\omega)}.
-$$
+\end{align}$$
 
 If $W(\omega_{\mathrm{EP}})=W'(\omega_{\mathrm{EP}})=0$ and $W''(\omega_{\mathrm{EP}})\neq0$, series division yields
 
-$$
+$$\begin{align}
 A^J_{-2}=\frac{2\mathcal Q(\omega_{\mathrm{EP}})}{W''(\omega_{\mathrm{EP}})},
-$$
+\end{align}$$
 
-$$
-A^J_{-1}
-=\frac{2\mathcal Q'(\omega_{\mathrm{EP}})}{W''(\omega_{\mathrm{EP}})}
--\frac{2\mathcal Q(\omega_{\mathrm{EP}})W'''(\omega_{\mathrm{EP}})}
-{3[W''(\omega_{\mathrm{EP}})]^2}.
-$$
+$$\begin{align}
+A^J_{-1} =\frac{2\mathcal Q'(\omega_{\mathrm{EP}})}{W''(\omega_{\mathrm{EP}})} -\frac{2\mathcal Q(\omega_{\mathrm{EP}})W'''(\omega_{\mathrm{EP}})} {3[W''(\omega_{\mathrm{EP}})]^2}.
+\end{align}$$
 
 Their equality with the Riesz coefficients follows from the uniqueness of the Laurent expansion of the same scalar meromorphic response. This is an analytic equivalence, not a reported numerical cross-check.
 
-# Proposed numerical realization
+# Proposed Numerical Realization
 
 The paper's appendix gives a useful implementation protocol:
 
@@ -266,17 +219,17 @@ The paper's appendix gives a useful implementation protocol:
 
 The benchmark is the odd-parity $\ell=2$ Regge--Wheeler potential plus a Gaussian bump. With the paper's tortoise convention, the imported EP center is shifted from $d_Y\simeq15.698$ to
 
-$$
+$$\begin{align}
 d_{\mathrm{EP}}=d_{Y,\mathrm{EP}}-2\ln2\simeq14.312.
-$$
+\end{align}$$
 
-# Why it is not high priority
+# Why It Is Not High Priority
 
 The rank-two contour-moment identity is mathematically reusable for non-self-adjoint spectral problems, and the source/channel distinction is valuable for interpreting resonant enhancement. It is not a direct contribution to covariant phase space, boundary charges, AdS gluing, or quantization. Moreover, the paper does not yet supply numerical values, convergence data, or a black-hole waveform produced by the proposed construction.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Read the complete 55-page PDF and the complete 4,230-line TeX source, including the numerical, complex-scaling, and individual-projector appendices.
 - Visually inspected the abstract, channel functional, Riesz-cluster construction, Jordan interpretation, conclusion, numerical workflow, and projector appendix on rendered pages.
@@ -300,12 +253,12 @@ Blocked: the paper reports no numerical contour moments, residuals, greybody cur
 
 Blocked: the imported Gaussian-potential EP values are not independently recomputed here; doing so requires the full complex-scaled Regge--Wheeler discretization and a two-parameter root search.
 
-## Not independently verified
+## Not Independently Verified
 
 Not verified: the functional-analytic hypotheses of the Aguilar--Balslev--Combes theorem for the analytically continued Schwarzschild tortoise map and Gaussian-deformed potential on the proposed contours.
 
 Not verified: convergence of finite pseudostates to the prompt response and late-time branch-cut tail.
 
-# Bottom line
+# Bottom Line
 
 The paper gives a clean and correct rank-two spectral construction: use the cluster projector and first moment, not two singular modal residues. It precisely explains when a double QNM pole yields a finite, channel-dependent $(D_0+D_1t)e^{-i\omega_{\mathrm{EP}}t}$ response and why a fixed real-frequency observable need not inherit the modal branch singularity. Its current evidence is analytic; the advertised black-hole computation remains a well-specified but unexecuted numerical program.

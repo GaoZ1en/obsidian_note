@@ -12,7 +12,7 @@ summary: "A concrete state-level massive/null-infinity dictionary with correct n
 tags: []
 ---
 
-# Why this is medium priority
+# Why This Is Medium Priority
 
 Reason codes: `T2-celestial-carrollian`, `T1-symmetry`.
 
@@ -20,7 +20,7 @@ This fills a precise gap in the recent Carrollian notes: a massive trajectory en
 
 The construction is valuable as a representation-theoretic dictionary, not as a statement that the massive worldline reaches null infinity and not as a bulk-to-boundary propagator.
 
-# Source map
+# Source Map
 
 - Section 2: scalar and spinning dictionary, reconstruction, isometry, and overcompleteness.
 - Section 3: Källén--Lehmann density in the non-contact Carrollian two-point function.
@@ -29,145 +29,120 @@ The construction is valuable as a representation-theoretic dictionary, not as a 
 - Appendix B: finite-spin unitary matrix factors.
 - Appendix C: three-dimensional analogue.
 
-# 1. Complete Carrollian orbit and null frame
+# 1. Complete Carrollian Orbit and Null Frame
 
 The boundary state is labelled by
 
-$$
-X=(u,z^a;\Delta,l,\beta^a,\kappa),
-\qquad a=1,2.
-$$
+$$\begin{align}
+X=(u,z^a;\Delta,l,\beta^a,\kappa), \qquad a=1,2.
+\end{align}$$
 
 The usual radiative representation sits at $\beta^a=\kappa=0$ and has zero quadratic Poincaré Casimir. Massive states instead use the $\kappa>0$ orbit for outgoing momenta and the $\kappa<0$ orbit for incoming momenta.
 
 With signature $(-,+,+,+)$, the celestial null frame is
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 q_0^\mu(z)&=(1+\vec z^{,2},2z^1,2z^2,1-\vec z^{,2}),\\
 q_1^\mu(z)&=(z^1,1,0,-z^1),\\
 q_2^\mu(z)&=(z^2,0,1,-z^2),\\
 q_3^\mu(z)&=\frac12(1,0,0,-1).
-\end{aligned}
-$$
+\end{aligned}$$
 
 It obeys
 
-$$
-q_0^2=q_3^2=0,
-\quad q_0\cdot q_3=-1,
-\quad q_a\cdot q_b=\delta_{ab},
-\quad q_0\cdot q_a=q_3\cdot q_a=0.
-$$
+$$\begin{align}
+q_0^2=q_3^2=0, \quad q_0\cdot q_3=-1, \quad q_a\cdot q_b=\delta_{ab}, \quad q_0\cdot q_a=q_3\cdot q_a=0.
+\end{align}$$
 
 The kernel support identifies
 
-$$
-\beta^a=-p\cdot q_a(z),
-\qquad
-\kappa=-p\cdot q_0(z).
-$$
+$$\begin{align}
+\beta^a=-p\cdot q_a(z), \qquad \kappa=-p\cdot q_0(z).
+\end{align}$$
 
 For $p^2=-m^2$, completeness of the frame gives the reconstruction
 
-$$
-p^\mu=
-\frac{m^2+\vec\beta^{,2}}{2\kappa}q_0^\mu(z)
--\beta^a q_a^\mu(z)
-+\kappa q_3^\mu(z).
-$$
+$$\begin{align}
+p^\mu= \frac{m^2+\vec\beta^{,2}}{2\kappa}q_0^\mu(z) -\beta^a q_a^\mu(z) +\kappa q_3^\mu(z).
+\end{align}$$
 
 The Fourier conjugate of $u$ is
 
-$$
-\rho=-2p\cdot q_3
-=\frac{m^2+\vec\beta^{,2}}{\kappa},
-$$
+$$\begin{align}
+\rho=-2p\cdot q_3 =\frac{m^2+\vec\beta^{,2}}{\kappa},
+\end{align}$$
 
 and $m^2=\kappa\rho-\vec\beta^{,2}$ is the nonzero quadratic Casimir.
 
-# 2. Dictionary and reconstruction
+# 2. Dictionary and Reconstruction
 
 For a scalar, the outgoing overlap kernel is
 
-$$
+$$\begin{align}
 G(p;X)=2m\,e^{2iu p\cdot q_3(z)}
 |\kappa|^{1-\Delta}
 \delta^{(2)}(\beta^a+p\cdot q_a(z))
 \delta(\kappa+p\cdot q_0(z)).
-$$
+\end{align}$$
 
 The reconstruction kernel is
 
-$$
+$$\begin{align}
 K(X;p)=2m\,e^{-2iu p\cdot q_3(z)}
 |\kappa|^{\Delta-3}
 \delta^{(2)}(\beta^a+p\cdot q_a(z))
 \delta(\kappa+p\cdot q_0(z)).
-$$
+\end{align}$$
 
 On the unitary line $\Delta=2+i\nu$, these satisfy $K=G^*$. The paper identifies them as state overlaps,
 
-$$
-G(p;X)=\langle p|O_X\rangle,
-\qquad
-K(X;p)=\langle O_X|p\rangle,
-$$
+$$\begin{align}
+G(p;X)=\langle p|O_X\rangle, \qquad K(X;p)=\langle O_X|p\rangle,
+\end{align}$$
 
 rather than propagators. With the stated normalization,
 
-$$
-\widehat G^\dagger\widehat G=I_{\mathcal H^{(+)}_j},
-\qquad
-\widehat G\widehat G^\dagger=\Pi_{S_O^{>0}}\neq I_{S_O^{>0}}.
-$$
+$$\begin{align}
+\widehat G^\dagger\widehat G=I_{\mathcal H^{(+)}_j}, \qquad \widehat G\widehat G^\dagger=\Pi_{S_O^{>0}}\neq I_{S_O^{>0}}.
+\end{align}$$
 
 Thus the map is an isometric embedding into an overcomplete boundary state space. The pullbacks of the Carrollian states form a continuous Parseval frame; the reverse composition projects out boundary combinations that do not encode a physical massive state.
 
 For spin $j$, the delta-function support is unchanged and a unitary matrix $R^{(j)}$ carries the little-group data. Appendix B gives $j=1/2$, $j=1$, and a polynomial $SU(2)$ formula for arbitrary half-integer spin.
 
-# 3. Spectral data
+# 3. Spectral Data
 
 Starting from
 
-$$
-\langle\Phi(p_1)\Phi(p_2)\rangle
-=(2\pi)^2\delta^{(4)}(p_1+p_2)
-\int_0^\infty d\mu^2\,
-\rho_{\rm KL}(\mu^2)\theta(p_1^0)
-\delta(p_1^2+\mu^2),
-$$
+$$\begin{align}
+\langle\Phi(p_1)\Phi(p_2)\rangle =(2\pi)^2\delta^{(4)}(p_1+p_2) \int_0^\infty d\mu^2\, \rho_{\rm KL}(\mu^2)\theta(p_1^0) \delta(p_1^2+\mu^2),
+\end{align}$$
 
 the two dictionary kernels produce a distributional Carrollian two-point function. Its support fixes
 
-$$
-\mu^2=-\frac{\kappa_2\vec\beta_1^{,2}
-+\kappa_1\vec\beta_2^{,2}}
-{\kappa_1+\kappa_2}.
-$$
+$$\begin{align}
+\mu^2=-\frac{\kappa_2\vec\beta_1^{,2} +\kappa_1\vec\beta_2^{,2}} {\kappa_1+\kappa_2}.
+\end{align}$$
 
 For $\mu^2>0$ and $\kappa_1>0$, the second state lies on the incoming $\kappa_2<0$ orbit. Matching the result to the globally invariant non-contact two-point function fixes its otherwise arbitrary coefficient to
 
-$$
+$$\begin{align}
 f(\mu^2,L)=\frac{\mu^2}{2\pi^2}\rho_{\rm KL}(\mu^2).
-$$
+\end{align}$$
 
 The conclusion is conditional: Carrollian symmetry alone permits an $L$ dependence, while boundary data that actually arise from the assumed scalar bulk spectral representation do not acquire an independent $L$ dependence.
 
-# 4. Massive hard actions from soft theorems
+# 4. Massive Hard Actions from Soft Theorems
 
 For a massive hard leg, the soft factor has no angular pole that localizes the smearing function at one celestial direction. The hard action remains a Poisson-type transform over the whole stereographic plane.
 
-## Large gauge transformations
+## Large Gauge Transformations
 
 For a local parameter $\alpha(w)$,
 
-$$
-\mathcal I_A^\gamma[\alpha]
-=\eta_A\frac{e_A m_A^2}{\pi}
-\int d^2w\,
-\frac{\alpha(w)}{[-p_A\cdot q_0(w)]^2}.
-$$
+$$\begin{align}
+\mathcal I_A^\gamma[\alpha] =\eta_A\frac{e_A m_A^2}{\pi} \int d^2w\, \frac{\alpha(w)}{[-p_A\cdot q_0(w)]^2}.
+\end{align}$$
 
 The derivation assumes the boundary term at stereographic infinity vanishes. The constant mode has a vanishing soft smearing kernel and its individual hard action is fixed separately by global $U(1)$ symmetry; the resulting Ward identity is charge conservation.
 
@@ -175,12 +150,9 @@ The derivation assumes the boundary term at stereographic infinity vanishes. The
 
 For a local supertranslation $f(w)$,
 
-$$
-\mathcal I_A^g[f]
-=\eta_A\frac{2m_A^4}{\pi}
-\int d^2w\,
-\frac{f(w)}{[-p_A\cdot q_0(w)]^3}.
-$$
+$$\begin{align}
+\mathcal I_A^g[f] =\eta_A\frac{2m_A^4}{\pi} \int d^2w\, \frac{f(w)}{[-p_A\cdot q_0(w)]^3}.
+\end{align}$$
 
 The four global modes $f\in\operatorname{span}\{1,w^a,-\vec w^{,2}\}$ are fixed by the ordinary translation representation. For these modes the total Ward identity reduces to momentum conservation.
 
@@ -188,28 +160,29 @@ The four global modes $f\in\operatorname{span}\{1,w^a,-\vec w^{,2}\}$ are fixed 
 
 At subleading soft-graviton order, a local vector field $Y^a(w)$ gives an angular integral involving the orbital Lorentz generator. The six global conformal vector fields have vanishing soft smearing kernel, while their hard action is the complete Carrollian differential representation of bulk Lorentz transformations. The paper proposes the same projection picture for local superrotations but leaves their action in the integral form rather than reducing it to a closed local operator.
 
-# Independent verification
+# Independent Verification
 
 ## Checked
 
 - **Mathematica:** reproduced all null-frame inner products and orthogonality relations.
 - **Mathematica:** substituting the reconstructed $p^\mu$ gives
-  $$
-  p^2=-m^2,
-  \quad -p\cdot q_a=\beta_a,
-  \quad -p\cdot q_0=\kappa,
-  \quad -2p\cdot q_3=(m^2+\vec\beta^{,2})/\kappa.
-  $$
+
+$$\begin{align}
+p^2=-m^2, \quad -p\cdot q_a=\beta_a, \quad -p\cdot q_0=\kappa, \quad -2p\cdot q_3=(m^2+\vec\beta^{,2})/\kappa.
+\end{align}$$
+
 - **Mathematica:** in the rest frame, the normalized constant-mode kernels give
-  $$
-  \frac{m^2}{\pi}\int_{\mathbb R^2}
-  \frac{d^2w}{[m(1+|w|^2)]^2}=1,
-  $$
+
+$$\begin{align}
+\frac{m^2}{\pi}\int_{\mathbb R^2} \frac{d^2w}{[m(1+|w|^2)]^2}=1,
+\end{align}$$
+
   and
-  $$
-  \frac{2m^4}{\pi}\int_{\mathbb R^2}
-  \frac{d^2w}{[m(1+|w|^2)]^3}=m.
-  $$
+
+$$\begin{align}
+\frac{2m^4}{\pi}\int_{\mathbb R^2} \frac{d^2w}{[m(1+|w|^2)]^3}=m.
+\end{align}$$
+
   These reproduce the constant $U(1)$ action and rest-energy translation normalization when the local kernels are continuously extended to the global modes.
 - **Visual confirmation:** rendered PDF pages 4, 6, 7, 9, 11, and 16 and checked the kernel, projection, spectral coefficient, soft hard-action, global Lorentz, and spin-unitarity statements against the TeX source.
 
@@ -220,7 +193,7 @@ At subleading soft-graviton order, a local vector field $Y^a(w)$ gives an angula
 - Soft hard-action formulas are for scalar massive legs; spin terms are absent in the displayed global superrotation action.
 - Local large-gauge and supertranslation formulas require sufficient behavior at stereographic infinity for the integrations by parts.
 
-## Not independently verified
+## Not Independently Verified
 
 - The paper states, but does not display and solve in detail, the full Poincaré intertwining equations that uniquely fix the kernel.
 - The distributional Jacobian establishing the exact $2m$ normalization and $\widehat G^\dagger\widehat G=I$ was not independently reconstructed.
@@ -229,7 +202,7 @@ At subleading soft-graviton order, a local vector field $Y^a(w)$ gives an angula
 - The $m\to0$ relation to the localized radiative dictionary is explicitly left open by the paper.
 - This is a one-particle representation map. It does not prove a boundary operator algebra, interacting holographic duality, asymptotic completeness, or Fock-space unitary equivalence.
 
-# Claim tier and takeaway
+# Claim Tier and Takeaway
 
 **Achieved claim tier:** exact one-particle kinematic dictionary at the level of null-frame projections, with source-stated isometry and spectral/soft applications. The current audit verifies the frame geometry and global kernel normalizations, not the full distributional isometry or an interacting boundary theory.
 

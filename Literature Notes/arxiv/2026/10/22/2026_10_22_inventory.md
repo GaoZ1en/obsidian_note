@@ -160,7 +160,7 @@ Total deduplicated entries: 148
 | [2610.27098](https://arxiv.org/abs/2610.27098) | hep-th:replacement | hep-th, quant-ph | A group theoretic calculation of multi-invariants of some stabilizer states | Bartlomiej Czech, Yichen Feng, Jonathan Harper, Xin-Xiang Ju | 28 pages, 11 figures. v2: references updated |
 | [2610.28572](https://arxiv.org/abs/2610.28572) | math-ph:replacement | math-ph | Nonlocal Equations on Domains and Manifolds Without Symmetries | Santiago Castellanos | 38 pages |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 All 148 official listing records screened. Primary/cross categories and version pins come from current official abstract metadata; local baselines exclude inventory-only mentions. Metadata reading is not independent technical verification.
 

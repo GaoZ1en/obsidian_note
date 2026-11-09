@@ -15,7 +15,7 @@ tags: []
 
 Back to [[2026_07_13_overview]].
 
-## From the monodromy problem to a geodesic network
+## From the Monodromy Problem to a Geodesic Network
 
 The paper has three technical stages. Section 2 rewrites the heavy-light monodromy problem in a uniformizing coordinate and identifies monodromy eigenvectors with geodesic endpoints. Section 3 reconstructs the same equations from Euclidean geometry in the two-heavy conical-defect background. Section 4 uses these vertex equations to compute non-vacuum four- and five-point blocks and to identify the analytic-computability threshold of the method.
 
@@ -47,7 +47,7 @@ $$\begin{align}
 
 The heavy background is explicitly solvable only while its Ward identities fix all accessory parameters. In this setup that restricts closed-form heavy backgrounds to at most three heavy insertions.
 
-## Holographic coordinate and monodromy eigenlines
+## Holographic Coordinate and Monodromy Eigenlines
 
 Let $\psi_1^{(0)}$ and $\psi_2^{(0)}$ be independent solutions of the heavy-background equation. The uniformizing or holographic coordinate is
 
@@ -79,7 +79,7 @@ T^{(0)}=\frac{\epsilon_h}{z^2}, \qquad \alpha=\sqrt{1-\frac{24\Delta_h}{c}}, \qq
 
 The heavy background therefore enters through the map $z\mapsto\mathfrak w(z)$; the internal light-network equations will depend only on cross-ratios in the $\mathfrak w$ plane.
 
-## Flatness at a cubic geodesic vertex
+## Flatness at a Cubic Geodesic Vertex
 
 For three geodesics meeting at a cubic vertex, a product of contours that is contractible in the flat bulk connection has trivial holonomy:
 
@@ -107,9 +107,7 @@ $$\begin{align}
 Their invariant form is the cross-ratio equation
 
 $$\begin{align}
-\bigl( \mathfrak w(z_i),\mathfrak w(z_{i+1});
-\mathfrak w(y_{i+2}),\mathfrak w(z_{i+2})
-\bigr) =- \frac{-\epsilon_i+\epsilon_{i+1}+\epsilon_{i+2}} {\epsilon_i-\epsilon_{i+1}+\epsilon_{i+2}}. \tag{2.12}
+\bigl( \mathfrak w(z_i),\mathfrak w(z_{i+1}); \mathfrak w(y_{i+2}),\mathfrak w(z_{i+2}) \bigr) =- \frac{-\epsilon_i+\epsilon_{i+1}+\epsilon_{i+2}} {\epsilon_i-\epsilon_{i+1}+\epsilon_{i+2}}. \tag{2.12}
 \end{align}$$
 
 The right-hand side contains only line weights. This is the central simplification: solve the light geodesic network in the uniformized plane without carrying the heavy geometry through every vertex calculation.
@@ -117,13 +115,12 @@ The right-hand side contains only line weights. This is the central simplificati
 Section 3 derives the same equation for two heavy insertions from a force triangle and circle geometry. For an internal vertex,
 
 $$\begin{align}
-(\mathfrak w_1,\mathfrak w_2;
-\widetilde{\mathfrak w}_{12},\widetilde{\mathfrak w}_{11}) =- \frac{-\epsilon_1+\epsilon_2+\widetilde\epsilon_1} {\epsilon_1-\epsilon_2+\widetilde\epsilon_1}. \tag{3.11}
+(\mathfrak w_1,\mathfrak w_2; \widetilde{\mathfrak w}_{12},\widetilde{\mathfrak w}_{11}) =- \frac{-\epsilon_1+\epsilon_2+\widetilde\epsilon_1} {\epsilon_1-\epsilon_2+\widetilde\epsilon_1}. \tag{3.11}
 \end{align}$$
 
 This is a source-internal geometric rederivation, not an independent check performed in this note.
 
-## Additive light action
+## Additive Light Action
 
 Integrating the accessory parameters gives the three-line light action
 
@@ -159,7 +156,7 @@ $$
 
 The practical algorithm is to decompose a network into vacuum four- and five-point building blocks, add their elementary actions, and subtract internal segments that were counted twice.
 
-## Non-vacuum four-point block
+## Non-Vacuum Four-Point Block
 
 For the internal line, the vertex cross-ratio is supplemented by zero angular momentum,
 
@@ -176,7 +173,7 @@ $$\begin{align}
 
 Substitution into the additive action yields the known non-vacuum HHLL block. The bulk position of the internal geodesic has been replaced by an algebraic endpoint problem.
 
-## Full five-point HHLLL block
+## Full Five-Point HHLLL Block
 
 Two cubic vertices give four cross-ratio constraints, collected in Eq. (4.5). After mapping the three external $\mathfrak w$ coordinates to $0$, $1$, and $\infty$, the system reduces to one quartic,
 
@@ -208,7 +205,7 @@ the quartic and five-point action reduce to the four-point quadratic problem.
 
 With $n$ light fields the number of auxiliary endpoints is $2n-2$, and the final elimination problem grows to degree $2^{n-1}$. Combining solvability by radicals in the light sector with the restriction to at most three explicitly solvable heavy insertions leads to the paper's HHHLLL six-point threshold for closed-form analytic computation.
 
-## Use in AdS3 correlator calculations
+## Use in AdS3 Correlator Calculations
 
 The reusable dictionary is
 
@@ -228,7 +225,7 @@ This isolates heavy-background dependence in the uniformizing map, converts inte
 
 The paper does not construct a boundary phase space, presymplectic form, surface charge, edge mode, or asymptotic-symmetry algebra. Its relevance is therefore spectral and holographic-correlator based rather than CPS based.
 
-## Verification boundary
+## Verification Boundary
 
 The official HTML, PDF, and TeX source were used to inspect the complete section structure and to confirm the displayed equations and their numbering. The paper's Euclidean construction supplies its own second derivation of Eqs. (2.12) and (2.17).
 

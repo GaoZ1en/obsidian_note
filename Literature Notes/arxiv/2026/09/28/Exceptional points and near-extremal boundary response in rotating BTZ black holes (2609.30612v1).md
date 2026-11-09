@@ -18,13 +18,13 @@ summary: "Exact Robin-to-FG normalization separates BTZ exceptional-point poles 
 tags: []
 ---
 
-# Exceptional points with a specified boundary source
+# Exceptional Points with a Specified Boundary Source
 
 The reusable result is a separation of three objects: a double zero of the Robin characteristic, a double pole in a specified FG source-response channel, and the response to a specified pulse. They are related, but their magnitudes are not interchangeable. In the source's near-extremal path, the boundary susceptibility grows while the complete double-pole impulse becomes smaller and longer lived. This path changes the scalar mass and the boundary coupling; a separate, critically selected fixed-theory path crosses an EP by changing the spin alone.
 
 Relevance: `T1-boundary`, `T2-spectral`, `T2-dS-BH-holography`. The immediate use is an exact AdS3 example for keeping the boundary condition, physical source, pole residues, and mode spectrum in the same calculation. An EP does not furnish an interacting symmetry or a universal amplification theorem.
 
-## Source map and reading guide
+## Source Map and Reading Guide
 
 Source: [2609.30612v1](https://arxiv.org/abs/2609.30612v1), official PDF and TeX including the supplemental section files. This master note uses monograph mode for the main article plus its substantial supplement. Page references below are printed page numbers, not PDF indices.
 
@@ -54,19 +54,15 @@ Source: [2609.30612v1](https://arxiv.org/abs/2609.30612v1), official PDF and TeX
 
 **How to read this long paper.** Essential: §2, §3.2, §4.1–4.3 and S3.2, in that order. Technical reference: S1, S3.1/S3.3 and S4 for reproducing response or discretization. Optional background after this chain: §1 and the survey of higher branches and loops in S2.2–S2.3. These latter sections are recorded here but their searches are not completeness proofs.
 
-## Radial problem and global notation
+## Radial Problem and Global Notation
 
 The geometry and Fourier convention are
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 ds^2&=-f\,dt^2+f^{-1}dr^2+r^2(d\phi+N^\phi dt)^2,\\
-f&=\frac{(r^2-r_+^2)(r^2-r_-^2)}{L^2r^2},
-&N^\phi&=-\frac{r_+r_-}{Lr^2},\\
-\Phi&=e^{-i\omega t+im\phi}R(r),
-&\mu^2L^2&=\nu^2-1,\qquad 0<\nu<1.
-\end{aligned}
-$$
+f&=\frac{(r^2-r_+^2)(r^2-r_-^2)}{L^2r^2}, &N^\phi&=-\frac{r_+r_-}{Lr^2},\\
+\Phi&=e^{-i\omega t+im\phi}R(r), &\mu^2L^2&=\nu^2-1,\qquad 0<\nu<1.
+\end{aligned}$$
 
 This is a linear probe scalar with an ingoing future-horizon condition. The open BF window is essential for the two normalizable boundary falloffs. The mass-window endpoints, extremality itself, and resonant Frobenius exceptions require separate analysis.
 
@@ -89,269 +85,216 @@ The two chiral scales are $T_{\rm co,ctr}=(r_+\mp r_-)/(2\pi L^2)$. They are not
 
 The separated equation is
 
-$$
-\frac1r\partial_r(rf\partial_rR)
-+\left[\frac{(\omega+mN^\phi)^2}{f}-\frac{m^2}{r^2}-\mu^2\right]R=0.
-$$
+$$\begin{align}
+\frac1r\partial_r(rf\partial_rR) +\left[\frac{(\omega+mN^\phi)^2}{f}-\frac{m^2}{r^2}-\mu^2\right]R=0.
+\end{align}$$
 
 Write
 
-$$
-R_{\rm in}=z^{-i(w-aq)/[2(1-a^2)]}(1-z)^{h_-}
-{}_2F_1(a_H,b_H;c_H;z),
-$$
+$$\begin{align}
+R_{\rm in}=z^{-i(w-aq)/[2(1-a^2)]}(1-z)^{h_-} {}_2F_1(a_H,b_H;c_H;z),
+\end{align}$$
 
 where $a_H=h_--ix_{\rm ctr}$, $b_H=h_--ix_{\rm co}$, and $c_H=1-i(w-aq)/(1-a^2)$. Substitution yields the hypergeometric equation. Since $c_H-a_H-b_H=\nu$, its continuation to $z=1$ gives
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 A(w)&=\frac1{\Gamma(h_+-ix_{\rm co})\Gamma(h_+-ix_{\rm ctr})},\\
 B(w)&=\frac1{\Gamma(h_--ix_{\rm co})\Gamma(h_--ix_{\rm ctr})},\\
-C_-&=\Gamma(c_H)\Gamma(\nu)A,
-&C_+&=\Gamma(c_H)\Gamma(-\nu)B.
-\end{aligned}
-$$
+C_-&=\Gamma(c_H)\Gamma(\nu)A, &C_+&=\Gamma(c_H)\Gamma(-\nu)B.
+\end{aligned}$$
 
 **Checked:** Mathematica substitution into the radial ODE, using $L=r_+=1$, returned zero for both nontrivial hypergeometric coefficient residuals; all three connection-index identities also returned zero. This checks the ODE reduction and the gamma arguments, not a general tensor-curvature identity.
 
-## From the boundary condition to a strict exceptional point
+## From the Boundary Condition to a Strict Exceptional Point
 
 The source uses $\cos\xi\,C_--\sin\xi\,C_+=0$ and
 
-$$
-g=-\frac{\Gamma(\nu)}{\Gamma(-\nu)}\cot\xi>0,
-\qquad \mathcal H(w;g,\nu,a,q)=B(w)+gA(w).
-$$
+$$\begin{align}
+g=-\frac{\Gamma(\nu)}{\Gamma(-\nu)}\cot\xi>0, \qquad \mathcal H(w;g,\nu,a,q)=B(w)+gA(w).
+\end{align}$$
 
 The common $\Gamma(c_H)$ has been removed. At ordinary, nonresonant points this gives a convenient entire characteristic; the removal does not justify ignoring exceptional ingoing-index singularities. The $g=0$ and $g\to\infty$ endpoint towers are
 
-$$
-w_{n,s}^{(\mp)}=\sigma_s q-i(1-\sigma_s a)(1\mp\nu+2n),
-\quad n\geq0,\quad \sigma_{\rm co}=1,\quad\sigma_{\rm ctr}=-1.
-$$
+$$\begin{align}
+w_{n,s}^{(\mp)}=\sigma_s q-i(1-\sigma_s a)(1\mp\nu+2n), \quad n\geq0,\quad \sigma_{\rm co}=1,\quad\sigma_{\rm ctr}=-1.
+\end{align}$$
 
 They label Neumann and Dirichlet limits. At finite $g$ the spectrum solves the coupled equation $B+gA=0$, not two independently imposed chiral quantizations.
 
 A strict second-order EP requires
 
-$$
-\mathcal H=\partial_w\mathcal H=0,
-\qquad\partial_w^2\mathcal H\ne0,
-\qquad A\ne0.
-$$
+$$\begin{align}
+\mathcal H=\partial_w\mathcal H=0, \qquad\partial_w^2\mathcal H\ne0, \qquad A\ne0.
+\end{align}$$
 
 Together with a one-dimensional ingoing solution space, this makes algebraic multiplicity two but geometric multiplicity one. The generalized radial mode obeys $P\psi_1=-(\partial_wP)\psi_0$. Taylor expansion at fixed other parameters gives
 
-$$
+$$\begin{align}
 \delta w=\pm\sqrt{-\frac{2A}{\mathcal H''}\delta g}+O(\delta g).
-$$
+\end{align}$$
 
 The source audits a real $(g,\nu)$ loop with radii $0.002$ and $0.0005$: one loop exchanges the two modes, two restore them. Interior profile normalization distinguishes this from a mere relabelling of roots. It is not a calculation of a Berry phase. Complex-$g$ loops in the supplement are auxiliary analytic diagnostics, not real boundary theories.
 
 The higher-family search at $(a,q)=(0.6,0.5)$ used 124 seeds and a finite window $-10<\operatorname{Im}w<0$, finding 13 roots across different $(g,\nu)$ theories: 11 co- and two counter-rotating. Eleven endpoint pairings were resolved, two remained unresolved. **Source-derived:** these counts, continuations and completeness limitations; they are not independently rerun here.
 
-## FG coupling and a fixed-theory crossing
+## FG Coupling and a Fixed-Theory Crossing
 
 Put $D=r_+^2(1-a^2)$. Since $1-z\sim D/r^2$,
 
-$$
-\alpha_{\rm FG}=D^{h_-}C_-,\qquad
-\beta_{\rm FG}=D^{h_+}C_+.
-$$
+$$\begin{align}
+\alpha_{\rm FG}=D^{h_-}C_-,\qquad \beta_{\rm FG}=D^{h_+}C_+.
+\end{align}$$
 
 With source $J_\kappa=\beta_{\rm FG}-\kappa_{\rm FG}\alpha_{\rm FG}$,
 
-$$
-\kappa_{\rm FG}=-D^\nu\frac{\Gamma(-\nu)}{\Gamma(\nu)}g,
-\qquad Z_{\rm FG}=D^{-\nu}\frac{\Gamma(\nu)}{\Gamma(-\nu)}.
-$$
+$$\begin{align}
+\kappa_{\rm FG}=-D^\nu\frac{\Gamma(-\nu)}{\Gamma(\nu)}g, \qquad Z_{\rm FG}=D^{-\nu}\frac{\Gamma(\nu)}{\Gamma(-\nu)}.
+\end{align}$$
 
 Thus holding $g$ fixed generally changes the physical boundary theory when $a$ changes. The source's selected fixed-theory trajectory fixes $m=L=\mu_R=1$, $r_+=2$, $\nu=0.6673385700873228$ and $\kappa_{\rm FG}=3.1886930911762534$, while varying $a$. It crosses an EP at $a=0.6$. This is a tuned example, not a claim that an arbitrary one-parameter spin path hits an EP.
 
 **Checked:** a fresh 40-digit Mathematica solution of the four real equations $(\Re\mathcal H,\Im\mathcal H,\Re\mathcal H',\Im\mathcal H')=0$ gives
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 w_*&=0.800446144090487-0.714082558501476i,\\
-g_*&=0.572689365204922,\qquad
-\nu_*=0.667338570087323,\\
+g_*&=0.572689365204922,\qquad \nu_*=0.667338570087323,\\
 \kappa_*&=3.188693091176253.
-\end{aligned}
-$$
+\end{aligned}$$
 
 The residuals vanish to more than 35 working digits, while $|\mathcal H''|=2.31394745$ and $|A|=0.36304995$ are nonzero. This confirms the characteristic double root and conversion to the specified coupling. The source's fitted fixed-theory square-root exponent $0.4998615628$ remains Source-derived.
 
-## Laurent coefficients and causal relaxation
+## Laurent Coefficients and Causal Relaxation
 
 Use the alternate-quantization response $\langle O_-\rangle=-2\nu\alpha_{\rm FG}$, zero contact polynomial, and fixed finite source/operator units. Then
 
-$$
-G^R_{\kappa,\rm FG}=Z_{\rm FG}\widetilde G_g^R,
-\qquad\widetilde G_g^R=-2\nu\frac{A}{\mathcal H}.
-$$
+$$\begin{align}
+G^R_{\kappa,\rm FG}=Z_{\rm FG}\widetilde G_g^R, \qquad\widetilde G_g^R=-2\nu\frac{A}{\mathcal H}.
+\end{align}$$
 
 At the double root,
 
-$$
-\begin{aligned}
-\widetilde G_g^R&=\frac{\widetilde R_2}{(w-w_*)^2}
-+\frac{\widetilde R_1}{w-w_*}+O(1),\\
+$$\begin{aligned}
+\widetilde G_g^R&=\frac{\widetilde R_2}{(w-w_*)^2} +\frac{\widetilde R_1}{w-w_*}+O(1),\\
 \widetilde R_2&=-\frac{4\nu A}{\mathcal H''},\\
-\widetilde R_1&=-4\nu\left(\frac{A'}{\mathcal H''}
--\frac{A\mathcal H'''}{3(\mathcal H'')^2}\right),
-\qquad R_j^{\rm FG}=Z_{\rm FG}\widetilde R_j.
-\end{aligned}
-$$
+\widetilde R_1&=-4\nu\left(\frac{A'}{\mathcal H''} -\frac{A\mathcal H'''}{3(\mathcal H'')^2}\right), \qquad R_j^{\rm FG}=Z_{\rm FG}\widetilde R_j.
+\end{aligned}$$
 
 The numerator condition excludes cancellation of this second-order pole in this particular channel. With $K(\widehat t)=\int dw\,e^{-iw\widehat t}G^R/(2\pi)$, lower-half-plane closure gives
 
-$$
-K_{\rm pole}(\widehat t)
-=-i\bigl(R_1^{\rm FG}-iR_2^{\rm FG}\widehat t\bigr)
-e^{-iw_*\widehat t}\Theta(\widehat t).
-$$
+$$\begin{align}
+K_{\rm pole}(\widehat t) =-i\bigl(R_1^{\rm FG}-iR_2^{\rm FG}\widehat t\bigr) e^{-iw_*\widehat t}\Theta(\widehat t).
+\end{align}$$
 
 The physical-time kernel is $(r_+/L^2)K(r_+t/L^2)$. Both terms belong to the double-pole contribution; dropping the simple Laurent term does not give the full pole kernel. The Jordan term alone peaks at $\widehat t=1/(-\operatorname{Im}w_*)$, with magnitude $|R_2|/[e(-\operatorname{Im}w_*)]$.
 
 **Checked:** a symbolic Laurent expansion reproduces both coefficients, including the $1/3$ factor. The causal double-pole residue is $-\widehat t e^{-iw_*\widehat t}$ with these Fourier signs. At the checked finite-spin EP, $(R_1^{\rm FG},R_2^{\rm FG})=(-0.178620641540+0.158932956692i,-0.0562890985953+0.0498937059115i)$.
 
-## Near extremality: the shrinking measure matters
+## Near Extremality: the Shrinking Measure Matters
 
 Follow the co-rotating critical surface, varying both $\nu$ and $g$, and set $w=q+\epsilon\zeta$. Then $x_{\rm co}=\zeta/2$, while $x_{\rm ctr}\to q/2$. The limiting factors are
 
-$$
-A_0=\frac1{\Gamma(h_+-i\zeta/2)\Gamma(h_+-iq/2)},
-\qquad B_0=A_0|_{\nu\mapsto-\nu},
-\qquad\mathcal H_0=B_0+gA_0.
-$$
+$$\begin{align}
+A_0=\frac1{\Gamma(h_+-i\zeta/2)\Gamma(h_+-iq/2)}, \qquad B_0=A_0|_{\nu\mapsto-\nu}, \qquad\mathcal H_0=B_0+gA_0.
+\end{align}$$
 
 Solving $\mathcal H_0=\partial_\zeta\mathcal H_0=0$ at $q=0.5$ gives
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \zeta_0&=0.786691072413211-1.894048482449527i,\\
-g_0&=0.324395562752348,
-\qquad\nu_0=0.785662413504241.
-\end{aligned}
-$$
+g_0&=0.324395562752348, \qquad\nu_0=0.785662413504241.
+\end{aligned}$$
 
 **Checked:** an independent 40-digit solve reproduces these values with residuals below $10^{-35}$, $|\mathcal H_{0,\zeta\zeta}|=0.180052079674$, and $|A_0|=0.432081505800$. The real four-equation Jacobian has determinant $0.0102481397430$ and smallest singular value $0.0946839608369$. This supports the local implicit-function continuation, not a global branch classification.
 
 Consequently $w_*=q+\epsilon\zeta_0+O(\epsilon^2)$, $g=g_0+O(\epsilon)$ and $\nu=\nu_0+O(\epsilon)$. The mass variation inside a power produces logarithmic corrections:
 
-$$
-\begin{aligned}
-Z_{\rm FG}&=\epsilon^{-\nu_0}(2r_+^2)^{-\nu_0}
-\frac{\Gamma(\nu_0)}{\Gamma(-\nu_0)}
-[1+O(\epsilon\log\epsilon)],\\
-G^R(q+\epsilon x)&=\epsilon^{-\nu_0}
-[\mathcal F(x)+O(\epsilon\log\epsilon)],\\
-\kappa_{\rm EP}&\sim K_0\epsilon^{\nu_0},
-\qquad K_0=7.64350066449\quad(r_+=2).
-\end{aligned}
-$$
+$$\begin{aligned}
+Z_{\rm FG}&=\epsilon^{-\nu_0}(2r_+^2)^{-\nu_0} \frac{\Gamma(\nu_0)}{\Gamma(-\nu_0)} [1+O(\epsilon\log\epsilon)],\\
+G^R(q+\epsilon x)&=\epsilon^{-\nu_0} [\mathcal F(x)+O(\epsilon\log\epsilon)],\\
+\kappa_{\rm EP}&\sim K_0\epsilon^{\nu_0}, \qquad K_0=7.64350066449\quad(r_+=2).
+\end{aligned}$$
 
 The real-frequency expansion is on a compact regular scaled interval. For a smooth cutoff $\chi$ supported there, changing integration variable gives
 
-$$
-K_\chi(\widehat t)=\epsilon^{1-\nu_0}e^{-iq\widehat t}
-\int\frac{dx}{2\pi}\chi(x)\mathcal F(x)e^{-ixT}
-+o(\epsilon^{1-\nu_0}),\qquad T=\epsilon\widehat t.
-$$
+$$\begin{align}
+K_\chi(\widehat t)=\epsilon^{1-\nu_0}e^{-iq\widehat t} \int\frac{dx}{2\pi}\chi(x)\mathcal F(x)e^{-ixT} +o(\epsilon^{1-\nu_0}),\qquad T=\epsilon\widehat t.
+\end{align}$$
 
 Height grows like $\epsilon^{-\nu_0}$; width shrinks like $\epsilon$; the band-limited impulse decreases like $\epsilon^{1-\nu_0}$. This does not establish the asymptotics of the unfiltered full-frequency kernel. Independently, $\partial_w=\epsilon^{-1}\partial_\zeta$ in the Laurent formulas gives $R_1^{\rm FG}=O(\epsilon^{1-\nu_0})$, $R_2^{\rm FG}=O(\epsilon^{2-\nu_0})$. Both contribute at order $\epsilon^{1-\nu_0}$ when $\widehat t=O(\epsilon^{-1})$.
 
 The detuned control $g=1.2g_{\rm EP}$ retains the same susceptibility power but splits the double pole. The source's limiting simple roots are approximately $0.414942-1.750076i$ and $1.386448-2.421084i$. The distinct control with fixed nonzero $\kappa_*$ and fixed $\nu_0$ obeys
 
-$$
-G^R=\frac{2\nu_0}{\kappa_*}
-\left[1-\frac{B/A}{\kappa_* Z_{\rm FG}}\right]^{-1}
-\longrightarrow\frac{2\nu_0}{\kappa_*}
-$$
+$$\begin{align}
+G^R=\frac{2\nu_0}{\kappa_*} \left[1-\frac{B/A}{\kappa_* Z_{\rm FG}}\right]^{-1} \longrightarrow\frac{2\nu_0}{\kappa_*}
+\end{align}$$
 
 on a regular scaled window. **Checked:** the exact algebraic identity preceding the limit has zero Mathematica residual. Neither control implies a uniform limit across zeros of $A$ or all frequencies.
 
-## A common finite drive is a different comparison
+## A Common Finite Drive Is a Different Comparison
 
 The source specifies $j(\widehat t)=j_0s(\widehat t/\tau_d)e^{-iw_d\widehat t}$, $w_d=q+\epsilon x_d$, $x_d=1.414858$, and $\eta=\epsilon\tau_d$. Let $h(v)=0$ for $v\leq0$, $h(v)=1$ for $v\geq1$, and
 
-$$
-h(v)=\frac{e^{-1/v}}{e^{-1/v}+e^{-1/(1-v)}}\quad(0<v<1),
-\qquad s(u)=h(u/0.2)h((1-u)/0.2).
-$$
+$$\begin{align}
+h(v)=\frac{e^{-1/v}}{e^{-1/v}+e^{-1/(1-v)}}\quad(0<v<1), \qquad s(u)=h(u/0.2)h((1-u)/0.2).
+\end{align}$$
 
 Its support is $[0,1]$ with a plateau on $[0.2,0.8]$. The source norm is $\|j\|_2^2=|j_0|^2\tau_d C_s^2$, where **Checked** numerical integration gives $C_s^2=0.762282101109341$. This norm is not automatically an injected energy.
 
 With $\widehat s(k)=\int du\,s(u)e^{iku}$, the exact full-frequency convolution becomes
 
-$$
-\frac{o(\widehat t)}{j_0}=\eta e^{-iq\widehat t}
-\int\frac{dx}{2\pi}e^{-ixT}G^R(q+\epsilon x)
-\widehat s[\eta(x-x_d)].
-$$
+$$\begin{align}
+\frac{o(\widehat t)}{j_0}=\eta e^{-iq\widehat t} \int\frac{dx}{2\pi}e^{-ixT}G^R(q+\epsilon x) \widehat s[\eta(x-x_d)].
+\end{align}$$
 
 Fixed $\eta$ means duration increases as extremality is approached. It does not keep the source norm or duration fixed. The source compares A: EP, B: $1.2g_{\rm EP}$ at the same mass, C: $\kappa_{\rm FG}=1$. Its 30-response dataset covers $\epsilon=0.03,0.01,0.003$ and $\eta=0.1,1,10$, plus a bridge at $(0.01,1/3)$. The EP/non-EP peak ratio is about $1.02$–$1.20$, not an unbounded EP-only enhancement.
 
 For the fixed-duration slice $\tau_d=100/3$, the reported A/B/C peak triplets are $(4.7945,4.7066,1.6634)$ at $\epsilon=0.003$, $(4.1575,3.9684,1.7266)$ at $0.01$, and $(3.0864,2.7958,1.8832)$ at $0.03$. **Source-derived:** these full-convolution values and convergence audits. A finite set of drives is not a theorem for arbitrary pulses.
 
-## Regulated energy operator and the resolvent diagnostic
+## Regulated Energy Operator and the Resolvent Diagnostic
 
 S4 fixes a separate bulk norm and regulator. In $L=1$ units use $\varphi=\phi-\Omega_Ht$, $dx/dr=f^{-1}$, $\beta=N^\phi+\Omega_H$, and $\Phi=r^{-1/2}\psi(t,x)e^{im\varphi}$. Then
 
-$$
--(\partial_t-im\beta)^2\psi+\partial_x^2\psi-V\psi=0,
-\qquad V=f\left[\mu^2+\frac{m^2}{r^2}+\frac{f'}{2r}-\frac{f}{4r^2}\right].
-$$
+$$\begin{align}
+-(\partial_t-im\beta)^2\psi+\partial_x^2\psi-V\psi=0, \qquad V=f\left[\mu^2+\frac{m^2}{r^2}+\frac{f'}{2r}-\frac{f}{4r^2}\right].
+\end{align}$$
 
 For $\tau=t+h(x)$, $B_h=h'(x)$, $U=V-m^2\beta^2$,
 
-$$
-(1-B_h^2)\psi_{\tau\tau}
--(2B_h\partial_x+\partial_xB_h+2im\beta)\psi_\tau
--\psi_{xx}+U\psi=0.
-$$
+$$\begin{align}
+(1-B_h^2)\psi_{\tau\tau} -(2B_h\partial_x+\partial_xB_h+2im\beta)\psi_\tau -\psi_{xx}+U\psi=0.
+\end{align}$$
 
 The regulated energy includes its boundary term:
 
-$$
-E=\frac12\int^{x_c}\!dx\,
-[(1-B_h^2)|\pi|^2+|\psi_x|^2+U|\psi|^2]
--\frac{\alpha_R}{2}|\psi(x_c)|^2,
-\quad\psi_x(x_c)=\alpha_R\psi(x_c).
-$$
+$$\begin{align}
+E=\frac12\int^{x_c}\!dx\, [(1-B_h^2)|\pi|^2+|\psi_x|^2+U|\psi|^2] -\frac{\alpha_R}{2}|\psi(x_c)|^2, \quad\psi_x(x_c)=\alpha_R\psi(x_c).
+\end{align}$$
 
 The outer slice has $B_h(x_c)=0$, so the real Robin term cancels the outer energy flux. The gyroscopic term contributes no real energy production. Positivity must still be checked for the chosen parameters; a displayed quadratic expression alone does not prove it.
 
 Set $s=r_+/r=s_c^u$, $J=-ds/du=|\log s_c|s$, $\chi=-dx/ds=r_+/(s^2f)$, $B_h=1-u$. With $p_\pm=1/2\pm\nu$ and $\rho_R=(1-a^2)^\nu\cot\xi$, the asymptotic cutoff prescription is
 
-$$
-\alpha_R=-\frac1{\chi_c}
-\frac{p_-+p_+\rho_Rs_c^{2\nu}}
-{s_c(1+\rho_Rs_c^{2\nu})}.
-$$
+$$\begin{align}
+\alpha_R=-\frac1{\chi_c} \frac{p_-+p_+\rho_Rs_c^{2\nu}} {s_c(1+\rho_Rs_c^{2\nu})}.
+\end{align}$$
 
 It is frequency independent but is an asymptotic boundary prescription at finite cutoff, not the exact finite-radius continuation of the full solution. A Legendre–Gauss–Lobatto derivative $D_u$ and quadrature $W$ satisfy $WD_u+D_u^TW=e_Ne_N^T-e_0e_0^T$. The source constructs
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 M&=W\operatorname{diag}[J\chi(1-B_h^2)],\\
 C&=W(B_hD_u+D_uB_h)+2imW\operatorname{diag}(J\chi\beta),\\
-K&=D_u^TW\operatorname{diag}[(J\chi)^{-1}]D_u
-+W\operatorname{diag}(J\chi U)-\alpha_Re_Ne_N^T,\\
+K&=D_u^TW\operatorname{diag}[(J\chi)^{-1}]D_u +W\operatorname{diag}(J\chi U)-\alpha_Re_Ne_N^T,\\
 M\ddot\psi-C\dot\psi+K\psi&=0,\qquad
-\mathcal L=i\begin{pmatrix}0&I\\-M^{-1}K&M^{-1}C\end{pmatrix},\\
+\mathcal L=i\begin{pmatrix}0&I\\
+-M^{-1}K&M^{-1}C\end{pmatrix},\\
 G_E&=\tfrac12\operatorname{diag}(K,M)=F^\dagger F.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Horizon entries require analytic endpoint limits. In this fixed energy norm,
 
-$$
-\widehat{\mathcal L}_E=\frac{L^2}{r_+}
-(F\mathcal LF^{-1}+m\Omega_HI),
-\qquad\|(wI-\widehat{\mathcal L}_E)^{-1}\|_2
-=\frac1{s_{\min}(wI-\widehat{\mathcal L}_E)}.
-$$
+$$\begin{align}
+\widehat{\mathcal L}_E=\frac{L^2}{r_+} (F\mathcal LF^{-1}+m\Omega_HI), \qquad\|(wI-\widehat{\mathcal L}_E)^{-1}\|_2 =\frac1{s_{\min}(wI-\widehat{\mathcal L}_E)}.
+\end{align}$$
 
 The reciprocal singular value concerns all bulk vectors in that norm, not the particular FG source-response channel. Changing $s_c$ also changes $B_h(s)=1-\log s/\log s_c$; thus it changes the foliation and norm, obstructing an unqualified continuum-limit comparison.
 
@@ -361,7 +304,7 @@ The bordered characteristic solves $[\mathcal L_N-\lambda I,b;c^T,0](x,f)^T=(0,1
 
 **Checked, model scope only:** for the canonical $2\times2$ Jordan block the squared smallest singular value at real displacement $r$ is $(1+2r^2-\sqrt{1+4r^2})/2=r^4+O(r^6)$, hence $s_{\min}\sim r^2$. This independently checks the diagnostic mechanism; it does not reproduce the paper's discretized BTZ matrix. The scalar backward error $|\mathcal H|/\sqrt{|B|^2+|gA|^2}$ is another, inequivalent diagnostic.
 
-## Equation ledger, dependencies and use in the vault
+## Equation Ledger, Dependencies and Use in the Vault
 
 | Chain | Reusable object | Conditions / boundary of the result |
 |---|---|---|
@@ -376,7 +319,7 @@ The bordered characteristic solves $[\mathcal L_N-\lambda I,b;c^T,0](x,f)^T=(0,1
 
 For AdS quantization, import the exact Robin determinant and its source numerator together. To translate to a different response convention, first change $J_\kappa$, the operator normalization and contact terms; then recompute residues. Pole positions alone are insufficient. For regional/CPS work, the real Robin domain and its energy boundary term are useful concrete inputs, but this article does not construct a regional symplectic reduction, interface measure or sewing theorem. The finite energy resolvent cannot be substituted for a boundary two-point function.
 
-## Verification and remaining boundaries
+## Verification and Remaining Boundaries
 
 **Verified:** Mathematica radial-to-hypergeometric residuals and connection indices; finite-spin double root and FG coupling; limiting double root and nonsingular real Jacobian; Laurent coefficients and inverse-Fourier sign; fixed-$\kappa$ algebra; compact-source norm; canonical Jordan singular-value mechanism. The checks above give equations, assumptions and numerical tolerances sufficient to reproduce their scope.
 

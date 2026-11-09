@@ -14,13 +14,13 @@ summary: "On a fixed-background geodesic Kerr--Schild submanifold, the Einstein-
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** restrict the gravitational covariant phase space to four-dimensional generalized Kerr--Schild metrics
 
-$$
+$$\begin{align}
 g_{\mu\nu}=\bar g_{\mu\nu}+f k_\mu k_\nu
-$$
+\end{align}$$
 
 with fixed background $\bar g_{\mu\nu}$, geodesic null $k^\mu$, fixed symmetry vector $\xi^\mu$, and variations tangent to the admissible Kerr--Schild solution family. On this restricted metric sector, the authors exhibit an integrable Einstein--Hilbert boundary two-form and obtain reference-relative charges on a closed two-surface. The spherical flat-background charge equals the Misner--Sharp mass, and the displayed rotating flat/AdS integrals reproduce the formulas claimed in the paper.
 
@@ -28,397 +28,279 @@ The statement should not be promoted to a Hamiltonian for the full Einstein--mat
 
 Relevance: **high** (`T1-charge`, `T1-Wald-CPS`, `T1-boundary`, `T1-AdS`).
 
-# Iyer--Wald starting point
+# Iyer--Wald Starting Point
 
 For a diffeomorphism-covariant Lagrangian four-form,
 
-$$
-\delta\mathbf L
-=
-\mathbf E(\phi)\delta\phi+d\boldsymbol\Theta(\phi,\delta\phi),
-$$
+$$\begin{align}
+\delta\mathbf L = \mathbf E(\phi)\delta\phi+d\boldsymbol\Theta(\phi,\delta\phi),
+\end{align}$$
 
 the Noether current and on-shell charge are
 
-$$
-\mathbf J[\xi]
-=
-\boldsymbol\Theta(\phi,\mathcal L_\xi\phi)-\iota_\xi\mathbf L,
-\qquad
-\mathbf J[\xi]\simeq d\mathbf Q[\xi].
-$$
+$$\begin{align}
+\mathbf J[\xi] = \boldsymbol\Theta(\phi,\mathcal L_\xi\phi)-\iota_\xi\mathbf L, \qquad \mathbf J[\xi]\simeq d\mathbf Q[\xi].
+\end{align}$$
 
 With $\delta\xi=0$, the Hamiltonian variation on a Cauchy surface is
 
-$$
-\delta H_\xi
-=
-\int_{\partial\Sigma}
-\left(\delta\mathbf Q[\xi]-\iota_\xi\boldsymbol\Theta\right).
-$$
+$$\begin{align}
+\delta H_\xi = \int_{\partial\Sigma} \left(\delta\mathbf Q[\xi]-\iota_\xi\boldsymbol\Theta\right).
+\end{align}$$
 
 The paper's finite-surface construction asks whether, on a restricted configuration/solution submanifold $\mathcal F$, there is a two-form $\boldsymbol{\mathcal B}$ satisfying
 
-$$
--\iota_\xi\boldsymbol\Theta(\phi,\bar\delta\phi)
-=
-\bar\delta\boldsymbol{\mathcal B}(\phi).
-$$
+$$\begin{align}
+-\iota_\xi\boldsymbol\Theta(\phi,\bar\delta\phi) = \bar\delta\boldsymbol{\mathcal B}(\phi).
+\end{align}$$
 
 If so, the surface density
 
-$$
+$$\begin{align}
 \mathbf H[\xi]=\mathbf Q[\xi]+\boldsymbol{\mathcal B}[\xi]
-$$
+\end{align}$$
 
 is integrable along $\mathcal F$. This is the precise sense in which the paper uses “quasi-local Hamiltonian.” It is not a construction on the unrestricted gravitational phase space.
 
-# Kerr--Schild integrability mechanism
+# Kerr--Schild Integrability Mechanism
 
 The generalized Kerr--Schild ansatz obeys
 
-$$
-g^{\mu\nu}=\bar g^{\mu\nu}-f k^\mu k^\nu,
-\qquad
-\det g=\det\bar g,
-$$
+$$\begin{align}
+g^{\mu\nu}=\bar g^{\mu\nu}-f k^\mu k^\nu, \qquad \det g=\det\bar g,
+\end{align}$$
 
 where $k^\mu$ is null with respect to both metrics. The restricted variation is
 
-$$
-\bar\delta g_{\mu\nu}
-=
-f k_\mu\delta k_\nu
-+f k_\nu\delta k_\mu
-+k_\mu k_\nu\delta f.
-$$
+$$\begin{align}
+\bar\delta g_{\mu\nu} = f k_\mu\delta k_\nu +f k_\nu\delta k_\mu +k_\mu k_\nu\delta f.
+\end{align}$$
 
 For the Einstein--Hilbert Lagrangian,
 
-$$
-\Theta_{\nu\alpha\beta}
-=
--\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta}
-\left[
-\nabla_\sigma\delta g^{\mu\sigma}
--\nabla^\mu(g^{\sigma\rho}\delta g_{\sigma\rho})
-\right].
-$$
+$$\begin{align}
+\Theta_{\nu\alpha\beta} = -\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta} \left[ \nabla_\sigma\delta g^{\mu\sigma} -\nabla^\mu(g^{\sigma\rho}\delta g_{\sigma\rho}) \right].
+\end{align}$$
 
 After substituting the Kerr--Schild variation, the contraction with $\xi$ becomes
 
-$$
-(-\iota_\xi\boldsymbol\Theta)_{\alpha\beta}
-=
--\frac{1}{16\pi}
-\epsilon_{\alpha\beta\mu\nu}\xi^\nu
-\left[
-\bar\delta\bar\nabla_\sigma(fk^\sigma k^\mu)
-+f^2 k^\mu k^\sigma\bar\nabla_\sigma k^\lambda\delta k_\lambda
-\right].
-$$
+$$\begin{align}
+(-\iota_\xi\boldsymbol\Theta)_{\alpha\beta} = -\frac{1}{16\pi} \epsilon_{\alpha\beta\mu\nu}\xi^\nu \left[ \bar\delta\bar\nabla_\sigma(fk^\sigma k^\mu) +f^2 k^\mu k^\sigma\bar\nabla_\sigma k^\lambda\delta k_\lambda \right].
+\end{align}$$
 
 The second term vanishes if
 
-$$
+$$\begin{align}
 k^\sigma\bar\nabla_\sigma k^\lambda=\alpha k^\lambda
-$$
+\end{align}$$
 
 and the null constraint is varied so that $k^\lambda\delta k_\lambda=0$. Metric compatibility and
 
-$$
+$$\begin{align}
 \bar g^{\sigma\mu}=g^{\sigma\mu}+f k^\sigma k^\mu
-$$
+\end{align}$$
 
 then imply
 
-$$
-\nabla_\sigma\bar g^{\sigma\mu}
-=
-\nabla_\sigma(fk^\sigma k^\mu).
-$$
+$$\begin{align}
+\nabla_\sigma\bar g^{\sigma\mu} = \nabla_\sigma(fk^\sigma k^\mu).
+\end{align}$$
 
 Because the determinant and hence the volume form are unchanged along the Kerr--Schild family, the remaining term is an exact field-space variation.
 
-# Relative Hamiltonian two-form
+# Relative Hamiltonian Two-Form
 
 The integrable boundary term is
 
-$$
-\mathcal B_{\mu\nu}
-=
--\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta}
-\nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta
-+C_{\mu\nu}(\bar g),
-$$
+$$\begin{align}
+\mathcal B_{\mu\nu} = -\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta} \nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta +C_{\mu\nu}(\bar g),
+\end{align}$$
 
 and the Einstein--Hilbert Noether charge supplies the Komar term. Thus
 
-$$
-H_{\mu\nu}(\xi)
-=
--\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta}
-\left(
-\nabla^\alpha\xi^\beta
-+\nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta
-\right)
-+C_{\mu\nu}(\bar g).
-$$
+$$\begin{align}
+H_{\mu\nu}(\xi) = -\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta} \left( \nabla^\alpha\xi^\beta +\nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta \right) +C_{\mu\nu}(\bar g).
+\end{align}$$
 
 The two-form $C(\bar g)$ is not fixed by the variational argument. The paper therefore defines a reference-relative quantity by subtracting it:
 
-$$
-\Delta_{\bar g}H_{\mu\nu}(\xi)
-=
--\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta}
-\left(
-\nabla^\alpha\xi^\beta
-+\nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta
-\right).
-$$
+$$\begin{align}
+\Delta_{\bar g}H_{\mu\nu}(\xi) = -\frac{1}{16\pi}\epsilon_{\mu\nu\alpha\beta} \left( \nabla^\alpha\xi^\beta +\nabla_\sigma\bar g^{\sigma\alpha}\xi^\beta \right).
+\end{align}$$
 
 For a timelike Killing field $t$ and axial Killing field $\varphi$,
 
-$$
-\Delta_{\bar g}\mathcal E
-=
--\frac{1}{8\pi}\int_{\mathcal S}
-\left(
-\nabla^{[\alpha}t^{\beta]}
-+\nabla_\sigma\bar g^{\sigma[\alpha}t^{\beta]}
-\right)dS_{\alpha\beta},
-$$
+$$\begin{align}
+\Delta_{\bar g}\mathcal E = -\frac{1}{8\pi}\int_{\mathcal S} \left( \nabla^{[\alpha}t^{\beta]} +\nabla_\sigma\bar g^{\sigma[\alpha}t^{\beta]} \right)dS_{\alpha\beta},
+\end{align}$$
 
-$$
-\Delta_{\bar g}\mathcal J
-=
-\frac{1}{8\pi}\int_{\mathcal S}
-\left(
-\nabla^{[\alpha}\varphi^{\beta]}
-+\nabla_\sigma\bar g^{\sigma[\alpha}\varphi^{\beta]}
-\right)dS_{\alpha\beta}.
-$$
+$$\begin{align}
+\Delta_{\bar g}\mathcal J = \frac{1}{8\pi}\int_{\mathcal S} \left( \nabla^{[\alpha}\varphi^{\beta]} +\nabla_\sigma\bar g^{\sigma[\alpha}\varphi^{\beta]} \right)dS_{\alpha\beta}.
+\end{align}$$
 
 The second term is essential: for Schwarzschild over Minkowski it supplies the missing half of the mass left by the paper's Noether/Komar normalization.
 
-# Spherical sector
+# Spherical Sector
 
 With flat background, $k=dt+dr$, and generic profile $f(r)$,
 
-$$
+$$\begin{align}
 g^{rr}=1-f.
-$$
+\end{align}$$
 
 The Misner--Sharp mass is therefore
 
-$$
-M_{\mathrm{MS}}(r)
-=
-\frac r2\left(1-g^{\mu\nu}\partial_\mu r\partial_\nu r\right)
-=
-\frac r2 f(r),
-$$
+$$\begin{align}
+M_{\mathrm{MS}}(r) = \frac r2\left(1-g^{\mu\nu}\partial_\mu r\partial_\nu r\right) = \frac r2 f(r),
+\end{align}$$
 
 which equals the proposed surface charge.
 
 Important examples are
 
-$$
-f_{\mathrm{Sch}}=\frac{2M}{r}
-\quad\Longrightarrow\quad
-\Delta_{\mathrm{Mink}}\mathcal E=M,
-$$
+$$\begin{align}
+f_{\mathrm{Sch}}=\frac{2M}{r} \quad\Longrightarrow\quad \Delta_{\mathrm{Mink}}\mathcal E=M,
+\end{align}$$
 
 and
 
-$$
-f_{\mathrm{RN}}=\frac{2M}{r}-\frac{Q^2}{r^2}
-\quad\Longrightarrow\quad
-\Delta_{\mathrm{Mink}}\mathcal E(r)
-=M-\frac{Q^2}{2r}.
-$$
+$$\begin{align}
+f_{\mathrm{RN}}=\frac{2M}{r}-\frac{Q^2}{r^2} \quad\Longrightarrow\quad \Delta_{\mathrm{Mink}}\mathcal E(r) =M-\frac{Q^2}{2r}.
+\end{align}$$
 
 The last expression is the gravitational Misner--Sharp energy inside the sphere. Its numerical agreement with the usual Einstein--Maxwell quasi-local energy does not itself show that the charge generates the full Einstein--Maxwell phase-space flow.
 
-# Rotating flat-background sector
+# Rotating Flat-Background Sector
 
 In oblate spheroidal coordinates, the generic surface functionals are
 
-$$
-\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{rot}}
-=
-\frac18\int_0^\pi
-\left[2rf-a^2\sin^2\theta\,\partial_r f\right]
-\sin\theta\,d\theta,
-$$
+$$\begin{align}
+\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{rot}} = \frac18\int_0^\pi \left[2rf-a^2\sin^2\theta\,\partial_r f\right] \sin\theta\,d\theta,
+\end{align}$$
 
-$$
-\Delta_{\mathrm{Mink}}\mathcal J_{\mathrm{rot}}
-=
-\frac a8\int_0^\pi
-\left[2rf-(r^2+a^2)\partial_r f\right]
-\sin^3\theta\,d\theta.
-$$
+$$\begin{align}
+\Delta_{\mathrm{Mink}}\mathcal J_{\mathrm{rot}} = \frac a8\int_0^\pi \left[2rf-(r^2+a^2)\partial_r f\right] \sin^3\theta\,d\theta.
+\end{align}$$
 
 For the Gürses--Gürsey profile
 
-$$
+$$\begin{align}
 f(r,\theta)=\frac{2M(r)r}{r^2+a^2\cos^2\theta},
-$$
+\end{align}$$
 
 the integrals give
 
-$$
-\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{GG}}
-=
-M(r)
-+\frac{ar-(r^2+a^2)\arctan(a/r)}{2a}M'(r),
-$$
+$$\begin{align}
+\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{GG}} = M(r) +\frac{ar-(r^2+a^2)\arctan(a/r)}{2a}M'(r),
+\end{align}$$
 
-$$
-\Delta_{\mathrm{Mink}}\mathcal J_{\mathrm{GG}}
-=
-aM(r)
--\frac{(r^2+a^2)\left[-ar+(r^2+a^2)\arctan(a/r)\right]}{2a^2}M'(r).
-$$
+$$\begin{align}
+\Delta_{\mathrm{Mink}}\mathcal J_{\mathrm{GG}} = aM(r) -\frac{(r^2+a^2)\left[-ar+(r^2+a^2)\arctan(a/r)\right]}{2a^2}M'(r).
+\end{align}$$
 
 The nonrotating limit is $\mathcal E\to M(r)$ and $\mathcal J\to0$. With $M(r)=M-Q^2/(2r)$, the energy becomes
 
-$$
-\mathcal E_{\mathrm{KN}}
-=
-M-\frac{Q^2}{4r}
--\frac{Q^2(r^2+a^2)}{4ar^2}\arctan\frac ar.
-$$
+$$\begin{align}
+\mathcal E_{\mathrm{KN}} = M-\frac{Q^2}{4r} -\frac{Q^2(r^2+a^2)}{4ar^2}\arctan\frac ar.
+\end{align}$$
 
-# AdS reference and additive subtraction
+# AdS Reference and Additive Subtraction
 
 For spherical GKS metrics over AdS with $\Lambda=-3/l^2$, the charge relative to AdS is
 
-$$
-\Delta_{\mathrm{AdS}}\mathcal E_{\mathrm{sph}}
-=
-\frac r2 f(r)+\frac{r^3}{2l^2}.
-$$
+$$\begin{align}
+\Delta_{\mathrm{AdS}}\mathcal E_{\mathrm{sph}} = \frac r2 f(r)+\frac{r^3}{2l^2}.
+\end{align}$$
 
 The authors separately evaluate pure AdS relative to a flat reference,
 
-$$
-\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}}
-=-
-\frac{r^3}{2l^2},
-$$
+$$\begin{align}
+\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}} =- \frac{r^3}{2l^2},
+\end{align}$$
 
 and define the additive regularized result
 
-$$
-\mathcal E_{\mathrm{sph}}
-=
-\Delta_{\mathrm{AdS}}\mathcal E_{\mathrm{sph}}
-+\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}}
-=
-\frac r2 f(r).
-$$
+$$\begin{align}
+\mathcal E_{\mathrm{sph}} = \Delta_{\mathrm{AdS}}\mathcal E_{\mathrm{sph}} +\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}} = \frac r2 f(r).
+\end{align}$$
 
 For rotation, with
 
-$$
-\Xi=1-\frac{a^2}{l^2},
-\qquad
-\Delta_\theta=1-\frac{a^2}{l^2}\cos^2\theta,
-$$
+$$\begin{align}
+\Xi=1-\frac{a^2}{l^2}, \qquad \Delta_\theta=1-\frac{a^2}{l^2}\cos^2\theta,
+\end{align}$$
 
 the regularized energy and angular momentum are
 
-$$
-\mathcal E_{\mathrm{rot}}
-=
-\frac{1}{8\Xi^2}
-\int_0^\pi
-\left[
-2r\Delta_\theta f
--a^2\sin^2\theta\left(1+\frac{r^2}{l^2}\right)\partial_r f
-\right]\sin\theta\,d\theta,
-$$
+$$\begin{align}
+\mathcal E_{\mathrm{rot}} = \frac{1}{8\Xi^2} \int_0^\pi \left[ 2r\Delta_\theta f -a^2\sin^2\theta\left(1+\frac{r^2}{l^2}\right)\partial_r f \right]\sin\theta\,d\theta,
+\end{align}$$
 
-$$
-\mathcal J_{\mathrm{rot}}
-=
-\frac{a}{8\Xi^2}
-\int_0^\pi
-\left[2rf-(r^2+a^2)\partial_r f\right]
-\sin^3\theta\,d\theta.
-$$
+$$\begin{align}
+\mathcal J_{\mathrm{rot}} = \frac{a}{8\Xi^2} \int_0^\pi \left[2rf-(r^2+a^2)\partial_r f\right] \sin^3\theta\,d\theta.
+\end{align}$$
 
 For constant $M(r)=M$, these reduce to the standard Kerr--AdS charges
 
-$$
-\mathcal E=\frac{M}{\Xi^2},
-\qquad
-\mathcal J=\frac{aM}{\Xi^2}
-$$
+$$\begin{align}
+\mathcal E=\frac{M}{\Xi^2}, \qquad \mathcal J=\frac{aM}{\Xi^2}
+\end{align}$$
 
 in the nonrotating-at-infinity thermodynamic frame.
 
 The subtraction should be interpreted cautiously. The covariant-phase-space calculation establishes integrability relative to one fixed GKS background. The transitive addition
 
-$$
-\Delta_{\mathrm{AdS}}\mathcal E[g]
-+\Delta_{\mathrm{Mink}}\mathcal E[\mathrm{AdS}]
-$$
+$$\begin{align}
+\Delta_{\mathrm{AdS}}\mathcal E[g] +\Delta_{\mathrm{Mink}}\mathcal E[\mathrm{AdS}]
+\end{align}$$
 
 uses two different Kerr--Schild decompositions and is an extra reference prescription. Its success on the examples is checked; a general cocycle/transitivity theorem is not supplied.
 
-# Smarr relation and frame bookkeeping
+# Smarr Relation and Frame Bookkeeping
 
 For the horizon generator
 
-$$
+$$\begin{align}
 \xi=t+\Omega_H\varphi,
-$$
+\end{align}$$
 
 the horizon evaluation is reorganized into a geometric Smarr relation in the rotating-at-infinity frame and the standard extended thermodynamic relation in the nonrotating frame.
 
 The paper defines the physical angular velocity in the latter frame by
 
-$$
+$$\begin{align}
 \Omega=\Omega_H+\frac{a}{l^2},
-$$
+\end{align}$$
 
 and reaches
 
-$$
-\frac{\mathcal E_{\mathrm{co}}}{2}
-=
-TS+\Omega\mathcal J
-+\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}}(r_+)
-+\frac{\Lambda\mathcal J^2}{6\mathcal E_{\mathrm{co}}}.
-$$
+$$\begin{align}
+\frac{\mathcal E_{\mathrm{co}}}{2} = TS+\Omega\mathcal J +\Delta_{\mathrm{Mink}}\mathcal E_{\mathrm{AdS}}(r_+) +\frac{\Lambda\mathcal J^2}{6\mathcal E_{\mathrm{co}}}.
+\end{align}$$
 
 Using $P=-\Lambda/(8\pi)$ identifies the last two terms as $-PV$, where
 
-$$
-V=V_{\mathrm{geo}}
-+\frac{4\pi}{3}\frac{\mathcal J^2}{\mathcal E_{\mathrm{co}}}.
-$$
+$$\begin{align}
+V=V_{\mathrm{geo}} +\frac{4\pi}{3}\frac{\mathcal J^2}{\mathcal E_{\mathrm{co}}}.
+\end{align}$$
 
 The final displayed Smarr formula should therefore contain $2\Omega\mathcal J$. The manuscript instead reverts to $2\Omega_H\mathcal J$; that is inconsistent with the immediately preceding definition and equation.
 
-# Relation to current vault work
+# Relation to Current Vault Work
 
-## Reusable lesson
+## Reusable Lesson
 
 The valuable part for the gluing/CPS project is the explicit restriction of integrability to a submanifold of field space. The fixed Kerr--Schild background and geodesic-null constraint play the same logical role that a polarization, embedding choice, or boundary condition can play in a gluing construction: they make a troublesome symplectic-potential term exact.
 
 The background contribution also demonstrates why a finite-surface charge cannot be identified with the Komar term alone. A reference-dependent correction can carry an essential half of the physical mass.
 
-## Non-transferable claim
+## Non-Transferable Claim
 
 This does not supply a general boundary Hamiltonian for arbitrary metrics, moving surfaces, or matter-coupled phase spaces. The GKS decomposition is strong, the background is fixed, and the surface is evaluated with exact stationary Killing fields. No corner embedding field or Wald--Zoupas flux problem is analyzed.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Source-derived: official arXiv metadata identifies `2608.16534v1`, published 2026-08-17T13:11:44Z, with primary category `gr-qc` and cross-category `hep-th`.
 - Source-derived: the complete 16-page official PDF and 707-line TeX source were inspected.
@@ -446,13 +328,13 @@ This does not supply a general boundary Hamiltonian for arbitrary metrics, movin
 - Blocked: the full connection-level reduction of the Einstein--Hilbert symplectic potential was not independently reproduced term by term; only its two decisive algebraic reductions and all subsequent polar integrals were checked.
 - Blocked: one direct Mathematica attempt to integrate all four rotating expressions simultaneously exceeded the 30-second tool limit. Rewriting the angular integrals with $x=\cos\theta$ reduced them to rational integrals and completed the checks above.
 
-## Not independently verified
+## Not Independently Verified
 
 - Not independently verified: global existence or uniqueness of the chosen GKS decomposition for every geometry to which the authors suggest applying the formula.
 - Not independently verified: the claimed flatness of the complicated $a,l$-dependent Minkowski reference metric used in the rotating AdS subtraction.
 - Not independently verified: equality of the full horizon Hamiltonian evaluation with the intermediate $TS+M/(2\Xi)$ expression before the Smarr rearrangement.
 - Not independently verified: a first-law variation with varying $\Lambda$, $a$, $M$, and matter charge; the paper primarily checks integrated Smarr-type identities.
 
-# Bottom line
+# Bottom Line
 
 This is a useful restricted-integrability calculation, not a universal quasi-local Hamiltonian theorem. Its strongest verified result is the explicit reference-relative surface functional on the geodesic GKS metric sector and its exact reproduction of Misner--Sharp/Kerr--AdS charge formulas. For the vault, the main caution is equally valuable: fixed-background integrability, matter-complete covariant phase space, and corner-completed moving-boundary dynamics are three different levels and should not be merged.

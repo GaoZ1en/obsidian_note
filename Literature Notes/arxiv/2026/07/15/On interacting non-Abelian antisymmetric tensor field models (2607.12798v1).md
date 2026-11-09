@@ -17,7 +17,7 @@ Back to [[2026_07_15_overview]].
 
 The durable value is the explicit reducibility tower. The paper does not construct a presymplectic form or a charge, but its gauge-for-gauge maps provide a useful testbed for the kernel of a future CPS form and for BRST ghosts, ghosts-for-ghosts, and higher-stage relations.
 
-# Group-manifold reduction of a gravitationally coupled 3-form
+# Group-Manifold Reduction of a Gravitationally Coupled 3-Form
 
 The higher-dimensional starting point is an Abelian 3-form $C_{MNP}$ coupled to gravity:
 
@@ -43,7 +43,7 @@ The dimensionful parameter $\kappa$ measures both the inverse compactification s
 
 The analysis freezes internal metric moduli and subsequently takes the external metric to be flat in the gauge-sector calculation. It should therefore be read as a controlled tensor/gauge reduction, not as a proof of a complete consistent gravitational truncation.
 
-# Yang--Mills-covariant tensor basis
+# Yang--Mills-Covariant Tensor Basis
 
 The Kaluza--Klein vector is a Yang--Mills connection. For an adjoint object $q_{\bar a}$,
 
@@ -91,7 +91,7 @@ $$
 
 The commutator parameters displayed in (2.29) close without using field equations. The resulting algebra is therefore off-shell closed at the level analyzed.
 
-# Covariant curvatures and interacting action
+# Covariant Curvatures and Interacting Action
 
 The reduced field strengths $H$ combine exterior derivatives, Yang--Mills covariant derivatives, $\mathcal F$, and the internal structure constants. Their organization in (2.31) is triangular: a transformation of a lower-external-degree tensor is compensated by the next Stückelberg level.
 
@@ -103,7 +103,7 @@ The reduced action (2.33) is a sum of quadratic covariant curvatures, with a Yan
 
 This is why reducibility can survive interaction: the differential complex is deformed covariantly rather than replaced by an unrelated non-Abelian ansatz.
 
-# Gauge-for-gauge parameters and reducibility
+# Gauge-for-Gauge Parameters and Reducibility
 
 For the 3-form tower, a set of trivial parameters is
 
@@ -128,7 +128,7 @@ For the reduced 4-form, equations (3.53)--(3.55) display one additional stage:
 
 The arbitrary-rank recursion in (4.58)--(4.67) continues the same pattern. The interaction changes the maps but not the number of reducibility stages inherited from the free higher form.
 
-# Stückelberg fields and the mass projector
+# Stückelberg Fields and the Mass Projector
 
 The adjoint Stückelberg vector is the structure-constant projection of $B_{\mu\bar a\bar b}$:
 
@@ -144,7 +144,7 @@ Q_{\bar a\bar b,\bar c\bar d} =\delta_{\bar a[\bar c}\delta_{\bar d]\bar b} -\fr
 
 This separates the structure-constant image, which participates in the Stückelberg mechanism, from the orthogonal internal tensor sector. The compactification scale $\kappa$ supplies the mass scale.
 
-# BRST/BFV/BV data extracted from the tower
+# BRST/BFV/BV Data Extracted from the Tower
 
 The displayed reducibility maps provide the following schematic complex:
 
@@ -167,7 +167,7 @@ A BRST implementation should introduce:
 
 The off-shell closure of the gauge commutator is favorable for BFV/BV bookkeeping. A complete BV action would still need the explicit reducibility operators, their algebraic identities, and the field dependence of the commutator assembled consistently; the paper leaves that construction for future work.
 
-# Relation to CPS and current projects
+# Relation to CPS and Current Projects
 
 | Paper object | Potential local use |
 |---|---|
@@ -179,7 +179,7 @@ The off-shell closure of the gauge commutator is favorable for BFV/BV bookkeepin
 
 The paper supplies no spacetime boundary conditions, presymplectic potential, corner term, Hamiltonian generator, or charge. It is therefore a model/BRST reference rather than a Tier-1 CPS result.
 
-# Verification boundary
+# Verification Boundary
 
 - The section logic and equations above are source-derived from the official HTML; no Mathematica/xAct reconstruction was performed.
 - The reducibility claims depend on the source's Bianchi and Jacobi identities. Their complete substitution through the arbitrary-rank recursion was not independently checked.

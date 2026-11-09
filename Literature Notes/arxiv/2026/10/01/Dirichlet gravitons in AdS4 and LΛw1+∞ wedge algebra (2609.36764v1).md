@@ -12,11 +12,11 @@ summary: "Dirichlet helicity reflection and a conditional formal soft algebra, w
 tags: []
 ---
 
-# Dirichlet pairing before the soft bracket
+# Dirichlet Pairing Before the Soft Bracket
 
 **Correct under precise conditions:** the displayed bracket defines a Lie algebra of formal Laurent modes. Its uniqueness uses the specified wedge, AdS-equivariant continuation, linear closure, absence of central/nonlinear terms, and the ten-mode global seed. The source does not construct a nonlinear Hamiltonian charge algebra on the standard Dirichlet gravitational phase space. Its immediate use here is to separate helicity reflection and source fixing from the additional problem of realizing an algebra by gravitational observables.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 The abstract-page comment says “15 pages+appendices”; the PDF has 32 pages including the cover and references, and 28 pages of main argument plus technical appendices. Treat it in monograph mode.
 
@@ -32,95 +32,135 @@ The abstract-page comment says “15 pages+appendices”; the PDF has 32 pages i
 | C; C.1; C.2 | Metric potential, regulated Mellin inversion, FG reconstruction, contour electric profiles and phase choice | Essential check of metric interpretation |
 | D | Tree-level Dirichlet correlator soft identities and infrared Mellin poles | Optional motivation; does not prove nonlinear closure |
 
-## Spinor scale, field weights and coefficient weights
+## Spinor Scale, Field Weights and Coefficient Weights
 
 Use physical Lorentzian AdS with
 
-$$\Lambda_{\rm Ein}=-3/\ell^2,\qquad \Lambda=-1/\ell^2\ne0.$$
+$$\begin{align}
+\Lambda_{\rm Ein}=-3/\ell^2,\qquad \Lambda=-1/\ell^2\ne0.
+\end{align}$$
 
 Complexify the spinors: dotted and undotted variables, and $z,\bar z$, are independent until a real slice is imposed. The bar on $\bar w$ denotes opposite helicity, not complex conjugation. With $\epsilon^{12}=1$, $\epsilon_{12}=-1$, the spinor representation contains
 
-$$\mathcal P_{\alpha\dot\alpha}=\lambda_\alpha\bar\lambda_{\dot\alpha}+\Lambda\partial_{\lambda^\alpha}\partial_{\bar\lambda^{\dot\alpha}},\qquad H_{\bar r,r}=-\tfrac12\mathcal P_{\alpha\dot\alpha}.$$
+$$\begin{align}
+\mathcal P_{\alpha\dot\alpha}=\lambda_\alpha\bar\lambda_{\dot\alpha}+\Lambda\partial_{\lambda^\alpha}\partial_{\bar\lambda^{\dot\alpha}},\qquad H_{\bar r,r}=-\tfrac12\mathcal P_{\alpha\dot\alpha}.
+\end{align}$$
 
 Indices $1,2$ correspond to $r=-1/2,+1/2$. Set $\lambda=a(1,z)$, $\bar\lambda=b(1,\bar z)$, $\omega=ab$, $\rho=a/b$. Helicity $\sigma=\pm2$ means $\rho\partial_\rho\Psi_\sigma=-\sigma\Psi_\sigma$. The Euler identity underlying the weights is
 
-$$\int_0^\infty d\omega\,\omega^{\Delta-1}\omega\partial_\omega\Psi=[\omega^\Delta\Psi]_0^\infty-\Delta\widetilde\Psi.$$
+$$\begin{align}
+\int_0^\infty d\omega\,\omega^{\Delta-1}\omega\partial_\omega\Psi=[\omega^\Delta\Psi]_0^\infty-\Delta\widetilde\Psi.
+\end{align}$$
 
 Discard the endpoint only in a convergence domain or with a declared continuation prescription. Then $h=(\Delta+\sigma)/2$, $\bar h=(\Delta-\sigma)/2$. This $\Delta$ is spinor homogeneity, **not** a CFT$_3$ dimension or global-AdS energy.
 
 At $\sigma=2$, $\Delta=4-2p$, the generating field has weights $(\bar h,h)=(1-p,3-p)$ and expands as
 
-$$\mathcal H^{p,+}(z,\bar z)=\sum_{\bar m,m}\bar z^{p-1-\bar m}z^{p-3-m}\frac{w^p_{\bar m,m}}{N_{p,\bar m}},$$
+$$\begin{align}
+\mathcal H^{p,+}(z,\bar z)=\sum_{\bar m,m}\bar z^{p-1-\bar m}z^{p-3-m}\frac{w^p_{\bar m,m}}{N_{p,\bar m}},
+\end{align}$$
 
-$$w^p_{\bar m,m}=N_{p,\bar m}\oint\frac{dz\,d\bar z}{(2\pi i)^2}z^{m+2-p}\bar z^{\bar m-p}\mathcal H^{p,+}.$$
+$$\begin{align}
+w^p_{\bar m,m}=N_{p,\bar m}\oint\frac{dz\,d\bar z}{(2\pi i)^2}z^{m+2-p}\bar z^{\bar m-p}\mathcal H^{p,+}.
+\end{align}$$
 
 For the finite barred polynomial module, $p\ge1$, $1-p\le\bar m\le p-1$,
 
-$$N_{p,\bar m}=(-1)^{p-1-\bar m}\Gamma(p+\bar m)\Gamma(p-\bar m).$$
+$$\begin{align}
+N_{p,\bar m}=(-1)^{p-1-\bar m}\Gamma(p+\bar m)\Gamma(p-\bar m).
+\end{align}$$
 
 The active bulk action is the negative of the action on labels. Coefficient extraction gives
 
-$$[\bar L_k,w^p_{\bar m,m}]=[k(p-1)-\bar m]w^p_{\bar m+k,m},\quad [L_k,w^p_{\bar m,m}]=[k(2-p)-m]w^p_{\bar m,m+k}.$$
+$$\begin{align}
+[\bar L_k,w^p_{\bar m,m}]=[k(p-1)-\bar m]w^p_{\bar m+k,m},\quad [L_k,w^p_{\bar m,m}]=[k(2-p)-m]w^p_{\bar m,m+k}.
+\end{align}$$
 
 Thus normalized coefficient weights are $(p,3-p)$, distinct from the generating-field weights. The extension to all $p\in\tfrac12\mathbb Z$ is an **assumption about equivariant modes**, not permission to evaluate the finite-module Gamma normalization at its poles. The full lattice obeys $p\pm m,p\pm\bar m\in\mathbb Z$. The wedge has
 
-$$a=\bar m+p-1\ge0,\qquad c=m-p+2\ge0.$$
+$$\begin{align}
+a=\bar m+p-1\ge0,\qquad c=m-p+2\ge0.
+\end{align}$$
 
 For $p<1$, barred raising never terminates. For finite modules it terminates at $\bar m=p-1$; a completed module needs its own continuation prescription. A boundary ANEC Fourier mode is used to motivate a normalized lowest state at every $p$; this is not a bulk Hilbert-space completeness proof.
 
-## Boundary sources and the helicity intertwiner
+## Boundary Sources and the Helicity Intertwiner
 
 On a flat boundary patch, use FG gauge and TT data:
 
-$$ds^2=\ell^2r^{-2}[dr^2+(\eta_{ij}+\gamma_{ij})dy^idy^j],\quad \gamma''-2r^{-1}\gamma'+\Box\gamma=0,$$
+$$\begin{align}
+ds^2=\ell^2r^{-2}[dr^2+(\eta_{ij}+\gamma_{ij})dy^idy^j],\quad \gamma''-2r^{-1}\gamma'+\Box\gamma=0,
+\end{align}$$
 
-$$\gamma=s+\tfrac12r^2\Box s+r^3t+O(r^4),\quad \mathcal E=-\tfrac32t,\quad \mathcal B=-\mathscr C[s],\quad \mathscr C[s]_{ij}=-\tfrac12\epsilon_i{}^{kl}\partial_k\Box s_{lj}.$$
+$$\begin{align}
+\gamma=s+\tfrac12r^2\Box s+r^3t+O(r^4),\quad \mathcal E=-\tfrac32t,\quad \mathcal B=-\mathscr C[s],\quad \mathscr C[s]_{ij}=-\tfrac12\epsilon_i{}^{kl}\partial_k\Box s_{lj}.
+\end{align}$$
 
 Here $s=\delta g_{(0)}$ is the source and $t$ the response; Newton's-constant normalization is absent from these geometric data. Source-free Dirichlet means $s=0$. It implies $\mathcal B=0$, but the converse requires fixing the Cotton kernel (boundary diffeomorphisms, conformal representative and possible global zero modes).
 
 With $\star^2=-1$ and $C^{(\pm)}=(C\mp i\star C)/2$, $\mathcal B^{(\pm)}=\pm i\mathcal E^{(\pm)}$. Hence reflection pairs equal electric data. The opposite-helicity coefficient module has weights $(3-q,q)$; equality of the Casimir differences,
 
-$$4p-6=6-4q,$$
+$$\begin{align}
+4p-6=6-4q,
+\end{align}$$
 
 requires $q=3-p$. Lowering to the wedge corner fixes the intertwiner coefficient to depend only on $p$. The transvection matrix is
 
-$$[H_{\bar r,r},w^p_{\bar m,m}]=A_pw^{p-1/2}_{\bar m+\bar r,m+r}-\Lambda B_pw^{p+1/2}_{\bar m+\bar r,m+r},$$
+$$\begin{align}
+[H_{\bar r,r},w^p_{\bar m,m}]=A_pw^{p-1/2}_{\bar m+\bar r,m+r}-\Lambda B_pw^{p+1/2}_{\bar m+\bar r,m+r},
+\end{align}$$
 
-$$A_p=\bar r(p-1)-\bar m/2,\qquad B_p=r(p-2)+m/2.$$
+$$\begin{align}
+A_p=\bar r(p-1)-\bar m/2,\qquad B_p=r(p-2)+m/2.
+\end{align}$$
 
 Appendix B derives the first channel from multiplication by $\omega q_r\bar q_{\bar r}$ and the second from two raised-index spinor derivatives. The normalization ratios cancel the extra barred derivative factor; both channels are necessary. In the opposite family the channels exchange, so equivariance gives
 
-$$\rho_{p-1/2}=\Lambda\rho_p,\qquad\rho_{p+1/2}=\Lambda^{-1}\rho_p,\qquad\rho_{3/2}=1.$$
+$$\begin{align}
+\rho_{p-1/2}=\Lambda\rho_p,\qquad\rho_{p+1/2}=\Lambda^{-1}\rho_p,\qquad\rho_{3/2}=1.
+\end{align}$$
 
 Therefore
 
-$$W^p_{\bar m,m}=w^p_{\bar m,m}+\Lambda^{3-2p}\bar w^{3-p}_{\bar m,m}.$$
+$$\begin{align}
+W^p_{\bar m,m}=w^p_{\bar m,m}+\Lambda^{3-2p}\bar w^{3-p}_{\bar m,m}.
+\end{align}$$
 
 This particular basis is singular as $\Lambda\to0$ at some levels. A smooth flat limit needs a separate rescaling; it does not follow by dropping $\Lambda$ everywhere in the pairing.
 
-## Metric realization and the contour prescription
+## Metric Realization and the Contour Prescription
 
 Appendix C uses stereographic $G=1-x^2/(4\ell^2)$, $g=G^{-2}\eta$ and local-frame Weyl spinors
 
-$$C^{(+)}_{\dot\alpha\dot\beta\dot\gamma\dot\delta}=-\tfrac12\bar\lambda_{\dot\alpha}\bar\lambda_{\dot\beta}\bar\lambda_{\dot\gamma}\bar\lambda_{\dot\delta}G^3e^{ik\cdot x},$$
+$$\begin{align}
+C^{(+)}_{\dot\alpha\dot\beta\dot\gamma\dot\delta}=-\tfrac12\bar\lambda_{\dot\alpha}\bar\lambda_{\dot\beta}\bar\lambda_{\dot\gamma}\bar\lambda_{\dot\delta}G^3e^{ik\cdot x},
+\end{align}$$
 
 with the dotted/undotted exchange for the other chirality. Its metric potential (C.10) uses a reference spinor $\mu$, $\mathfrak a=-2k\cdot x$, $\mathfrak b=-2x^2$, and the two structures
 
-$$-\left(G-\frac{i\mathfrak b}{2\ell^2\mathfrak a}\right)\frac{\mu_\alpha\mu_\beta\bar\lambda_{\dot\alpha}\bar\lambda_{\dot\beta}}{\langle\mu\lambda\rangle^2}e^{ikx}$$
+$$\begin{align}
+-\left(G-\frac{i\mathfrak b}{2\ell^2\mathfrak a}\right)\frac{\mu_\alpha\mu_\beta\bar\lambda_{\dot\alpha}\bar\lambda_{\dot\beta}}{\langle\mu\lambda\rangle^2}e^{ikx}
+\end{align}$$
 
 and
 
-$$-\frac{ie^{ikx}}{2\ell^2\mathfrak a}\frac{\mu_\alpha\mu_\beta(\lambda^\gamma x_{\gamma\dot\alpha}\bar\lambda_{\dot\beta}+\lambda^\gamma x_{\gamma\dot\beta}\bar\lambda_{\dot\alpha})}{\langle\mu\lambda\rangle^3}\langle\mu x\lambda].$$
+$$\begin{align}
+-\frac{ie^{ikx}}{2\ell^2\mathfrak a}\frac{\mu_\alpha\mu_\beta(\lambda^\gamma x_{\gamma\dot\alpha}\bar\lambda_{\dot\beta}+\lambda^\gamma x_{\gamma\dot\beta}\bar\lambda_{\dot\alpha})}{\langle\mu\lambda\rangle^3}\langle\mu x\lambda].
+\end{align}$$
 
 These are frame components, not coordinate components. The construction is local, away from reference-spinor/gauge singularities. The source imports the spinor curvature operator from its reference [37]; that full potential-to-curvature calculation was not independently reproduced here.
 
 Scaling both momentum spinors by $\sqrt\omega$ gives $h=e^{i\omega Qx}(H^{(0)}+\omega^{-1}H^{(-1)})$. For $Z_\epsilon=\epsilon-iQx$, $\epsilon>0$, initially $\Re\Delta>1$,
 
-$$\widetilde h_{\Delta,\epsilon}=\frac{\Gamma(\Delta)}{Z_\epsilon^\Delta}H^{(0)}+\frac{\Gamma(\Delta-1)}{Z_\epsilon^{\Delta-1}}H^{(-1)}.$$
+$$\begin{align}
+\widetilde h_{\Delta,\epsilon}=\frac{\Gamma(\Delta)}{Z_\epsilon^\Delta}H^{(0)}+\frac{\Gamma(\Delta-1)}{Z_\epsilon^{\Delta-1}}H^{(-1)}.
+\end{align}$$
 
 Mellin inversion uses a vertical contour $\Re\Delta>1$; choosing a discrete soft lattice is a different operation and is not an inversion theorem. In the TT sector,
 
-$$\gamma(r)=s+\tfrac12r^2\Box s-\int_0^r\frac{r^2-u^2}{u}E(u)\,du,$$
+$$\begin{align}
+\gamma(r)=s+\tfrac12r^2\Box s-\int_0^r\frac{r^2-u^2}{u}E(u)\,du,
+\end{align}$$
 
 so $s=-\mathscr C^{-1}\mathcal B$ only on a specified invertible sector.
 
@@ -128,35 +168,43 @@ At the boundary point $x_*=(0,0,0,2\ell)$, the adapted normal maps $(1,\bar z)$ 
 
 The source's residue formula (C.48) gives selection $j=2+\bar m-m$ and
 
-$$\mathcal E^p_+=N_{p,\bar m}(i\ell)^{2p-6}\frac{\Gamma(m-p+3)}{\Gamma(m+p-2)},\quad \mathcal E^{3-p}_{-,\mathrm{exch}}=N_{3-p,m}(i\ell)^{-2p}\frac{\Gamma(\bar m+p)}{\Gamma(\bar m+1-p)}.$$
+$$\begin{align}
+\mathcal E^p_+=N_{p,\bar m}(i\ell)^{2p-6}\frac{\Gamma(m-p+3)}{\Gamma(m+p-2)},\quad \mathcal E^{3-p}_{-,\mathrm{exch}}=N_{3-p,m}(i\ell)^{-2p}\frac{\Gamma(\bar m+p)}{\Gamma(\bar m+1-p)}.
+\end{align}$$
 
 Ratios are continued before imposing discrete weights. The phase convention is $\bar w=-w_-|_{\mathrm{exch}}$, a uniform sign, and yields $\mathcal E_+(w^p)=\Lambda^{3-2p}\mathcal E_-(\bar w^{3-p})$. With the Cotton-kernel source fixed separately, $s[W]=0$ and $t_D=-4\mathcal E_+/3$.
 
 A useful boundary of this argument: direct substitution of all ten global seed labels into (C.50) gives **zero electric profile at this evaluation point**. Thus a nonzero ratio continued off the lattice does not establish nonzero electric data for every discrete seed. This is not a proof that every such mode vanishes globally; the transported contour, residual gauge data and completion need separate treatment. It does preclude using this pointwise formula as proof of a faithful bulk phase-space representation.
 
-## Two-channel bootstrap and the Jacobi proof
+## Two-Channel Bootstrap and the Jacobi Proof
 
 The ten seed identifications are $\bar L_k=W^2_{k,0}$, $L_k=\Lambda^{-1}W^1_{0,k}$, $H_{\bar r,r}=W^{3/2}_{\bar r,r}$. They impose the geometric AdS action as input. No Poisson bracket of two metric perturbations has yet been derived.
 
 For $V^p_{a,c}=W^p_{1-p+a,p-2+c}$, lowering nilpotence bounds the output level by $p+q-2\le s\le p+q-1$. The lattice makes these the only two choices. Lowering covariance and antisymmetry then reduce the coefficients to
 
-$$[V^p_{a,c},V^q_{b,d}]=(\alpha_{p,q}a-\alpha_{q,p}b)V^{p+q-2}_{a+b-1,c+d}+(\beta_{p,q}c-\beta_{q,p}d)V^{p+q-1}_{a+b,c+d-1}.$$
+$$\begin{align}
+[V^p_{a,c},V^q_{b,d}]=(\alpha_{p,q}a-\alpha_{q,p}b)V^{p+q-2}_{a+b-1,c+d}+(\beta_{p,q}c-\beta_{q,p}d)V^{p+q-1}_{a+b,c+d-1}.
+\end{align}$$
 
 The $H_{-1/2,-1/2}$ Jacobi identity gives $\alpha_{p,q}=\alpha_{p-1/2,q}$ and $\beta_{p,q}=\beta_{p+1/2,q}$; the connected half-integer lattice and global seed fix $\alpha=q-1$, $\beta=-\Lambda(q-2)$. This is where the completion and $\Lambda\ne0$ enter uniqueness.
 
 The result (5.29) is
 
-$$[W^p_{\bar m,m},W^q_{\bar n,n}]=[\bar m(q-1)-\bar n(p-1)]W^{p+q-2}_{\bar m+\bar n,m+n}-\Lambda[m(q-2)-n(p-2)]W^{p+q-1}_{\bar m+\bar n,m+n}.$$
+$$\begin{align}
+[W^p_{\bar m,m},W^q_{\bar n,n}]=[\bar m(q-1)-\bar n(p-1)]W^{p+q-2}_{\bar m+\bar n,m+n}-\Lambda[m(q-2)-n(p-2)]W^{p+q-1}_{\bar m+\bar n,m+n}.
+\end{align}$$
 
 Map the formal basis injectively to Laurent monomials
 
-$$\Phi(W^p_{\bar m,m})=x_1^{p-1+\bar m}x_2^{p-1-\bar m}y_1^{2-p+m}y_2^{2-p-m}.$$
+$$\begin{align}
+\Phi(W^p_{\bar m,m})=x_1^{p-1+\bar m}x_2^{p-1-\bar m}y_1^{2-p+m}y_2^{2-p-m}.
+\end{align}$$
 
 All have total degree two. The constant Poisson tensor $\tfrac12\partial_{x_1}\wedge\partial_{x_2}+\tfrac\Lambda2\partial_{y_1}\wedge\partial_{y_2}$ reproduces the two coefficients. Its Jacobi identity and formal injectivity prove Jacobi. Negative wedge output distance occurs only when both corresponding input distances vanish, and then its coefficient vanishes. This proves algebraic wedge closure, with no assertion about normalizability or gravitational charge integrability.
 
 Appendix A distinguishes $\mathfrak{so}(3,1)$ reality, exchanging the two complex $\mathfrak{sl}_2$ factors, from independently real factors giving $\mathfrak{so}(2,2)$. The ambient stabilizers of a timelike and a spacelike direction are not conjugate by a real AdS isometry. Appendix D adds motivation: a tree-level Dirichlet correlator expansion $F_{n+1}(\varpi)=(S^{(0)}+\varpi S^{(1)})F_n+O(\varpi^2)$ gives IR Mellin residues at $\delta=0,-1$, modulo local contact terms. It does not establish the complete soft tower from a nonlinear Ward identity.
 
-## Equation ledger and translation to the vault
+## Equation Ledger and Translation to the Vault
 
 | Source object | Reusable result | Required boundary |
 | --- | --- | --- |
@@ -169,7 +217,7 @@ Appendix A distinguishes $\mathfrak{so}(3,1)$ reality, exchanging the two comple
 
 The dependency chain is spinor representation → regulated Mellin family → Laurent continuation → electric intertwiner → global-seed-normalized bracket → algebraic Jacobi. The independent chain needed for the vault is action and renormalized potential → allowed solutions and gauge quotient → Hamiltonian generators → Poisson algebra. The source does not fill this second chain. In particular, no map to the vault's smooth-centre $\mathcal V(3,2)/\mathcal V(4,1)$ normal modes, no symplectic norms and no artificial-interface sewing prescription are supplied.
 
-## Verification log
+## Verification Log
 
 **Verified:** independent Mathematica coefficient identities and regulated Mellin integral; exact symbolic Sage Jacobi; xAct component electric-Weyl check; finite residue checks. PDF printed pages 15, 26 and 27 were visually checked after an extraction font warning; full official TeX and PDF were read for the section reconstruction.
 

@@ -23,15 +23,15 @@ The modular-energy--entropy decomposition, Holevo decomposition, full bilocal sh
 
 **Not proved in general:**
 
-$$
+$$\begin{align}
 (D_{\alpha,z})''_{++}[V;y]\geq0.
-$$
+\end{align}$$
 
 The authors correctly label this the diagonal $\alpha$--$z$ Rényi QNEC conjecture. They verify it only for one coherent free-scalar family in the finite-divergence part of the upper data-processing region. The “quasi-local QNEC” is therefore an exact rewriting of a conjectured positivity statement, not a new general proof of QNEC.
 
 Reason codes: `T1-boundary`, `T1-symplectic`, `T2-dS-BH-holography`, `T3-math`.
 
-# Why this paper matters for regional structure
+# Why This Paper Matters for Regional Structure
 
 The central bridge is not a new entropy name. It is the distinction between two operations:
 
@@ -40,7 +40,7 @@ The central bridge is not a new entropy name. It is the distinction between two 
 
 These operations do not commute in general. The paper isolates the resulting failure in an explicit transport term $\mathfrak X_{\alpha,z;++}$. This is exactly why the Rényi QNEC is not simply an average of ordinary QNEC inequalities for a family of fixed global states.
 
-# Source map
+# Source Map
 
 1. **§1 Introduction and summary:** states the exact fixed-ray input, the regulated QFT outputs, the conjectural null convexity, and the continuum limitations.
 2. **§2 Integral representation:** defines the characteristic ray $c=z/\alpha$, the escorts $\rho_\beta^{(c)}$, the probability measure $\mu_\alpha$, support conditions, and the boundary-corrected lower-$\alpha$ formula.
@@ -51,344 +51,260 @@ These operations do not commute in general. The paper isolates the resulting fai
 7. **§6 Summary:** sharply limits the test family and lists squeezed, mixed, finite-particle, and transversely correlated states as open tests.
 8. **Appendix:** records the Fréchet derivatives used in the density-matrix response formulas.
 
-# Fixed-ray representation
+# Fixed-Ray Representation
 
 For faithful finite-dimensional density matrices, define
 
-$$
-D_{\alpha,z}(\rho\Vert\sigma)
-=\frac{1}{\alpha-1}
-\log\operatorname{Tr}
-\left(
-\sigma^{\frac{1-\alpha}{2z}}
-\rho^{\frac{\alpha}{z}}
-\sigma^{\frac{1-\alpha}{2z}}
-\right)^z,
-$$
+$$\begin{align}
+D_{\alpha,z}(\rho\Vert\sigma) =\frac{1}{\alpha-1} \log\operatorname{Tr} \left( \sigma^{\frac{1-\alpha}{2z}} \rho^{\frac{\alpha}{z}} \sigma^{\frac{1-\alpha}{2z}} \right)^z,
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 c=\frac z\alpha.
-$$
+\end{align}$$
 
 Along the characteristic ray $(\beta,c\beta)$, the escort state is
 
-$$
-\rho_\beta^{(c)}
-=\frac{
-\left(
-\sigma^{\frac{1-\beta}{2c\beta}}
+$$\begin{align}
+\rho_\beta^{(c)} =\frac{ \left( \sigma^{\frac{1-\beta}{2c\beta}} \rho^{1/c} \sigma^{\frac{1-\beta}{2c\beta}} \right)^{c\beta}
+}{ \operatorname{Tr}\left( \sigma^{\frac{1-\beta}{2c\beta}}
 \rho^{1/c}
-\sigma^{\frac{1-\beta}{2c\beta}}
-\right)^{c\beta}
-}{
-\operatorname{Tr}\left(
-\sigma^{\frac{1-\beta}{2c\beta}}
-\rho^{1/c}
-\sigma^{\frac{1-\beta}{2c\beta}}
-\right)^{c\beta}
+\sigma^{\frac{1-\beta}{2c\beta}} \right)^{c\beta}
 }.
-$$
+\end{align}$$
 
 For $\alpha>1$,
 
-$$
-d\mu_\alpha(\beta)
-=\frac{\alpha}{\alpha-1}\frac{d\beta}{\beta^2},
-\qquad \beta\in[1,\alpha],
-$$
+$$\begin{align}
+d\mu_\alpha(\beta) =\frac{\alpha}{\alpha-1}\frac{d\beta}{\beta^2}, \qquad \beta\in[1,\alpha],
+\end{align}$$
 
 and the input identity is
 
-$$
-D_{\alpha,z}(\rho\Vert\sigma)
-=\int_{1}^{\alpha}
-D(\rho_\beta^{(c)}\Vert\sigma)
+$$\begin{align}
+D_{\alpha,z}(\rho\Vert\sigma) =\int_{1}^{\alpha} D(\rho_\beta^{(c)}\Vert\sigma)
 \,d\mu_\alpha(\beta).
-$$
+\end{align}$$
 
 The paper emphasizes that an intrinsic version exists for normal states on arbitrary von Neumann algebras using Araki relative entropy. That operator-algebraic formula is the regulator-independent statement. The entropy and modular-energy splitting used later is not separately intrinsic on a Type-III local algebra.
 
-# Exact decompositions
+# Exact Decompositions
 
 Define the escort barycenter and averaged entropy
 
-$$
-\overline\rho_{\alpha,z}
-=\int\rho_\beta^{(c)}d\mu_\alpha(\beta),
-$$
+$$\begin{align}
+\overline\rho_{\alpha,z} =\int\rho_\beta^{(c)}d\mu_\alpha(\beta),
+\end{align}$$
 
-$$
-S_{\alpha,z}^{\mathrm{esc}}
-=\int S(\rho_\beta^{(c)})d\mu_\alpha(\beta).
-$$
+$$\begin{align}
+S_{\alpha,z}^{\mathrm{esc}} =\int S(\rho_\beta^{(c)})d\mu_\alpha(\beta).
+\end{align}$$
 
 Then
 
-$$
-D_{\alpha,z}(\rho\Vert\sigma)
-=\operatorname{Tr}
-\left[(\overline\rho_{\alpha,z}-\sigma)K_\sigma\right]
--\left(S_{\alpha,z}^{\mathrm{esc}}-S(\sigma)\right),
-$$
+$$\begin{align}
+D_{\alpha,z}(\rho\Vert\sigma) =\operatorname{Tr} \left[(\overline\rho_{\alpha,z}-\sigma)K_\sigma\right] -\left(S_{\alpha,z}^{\mathrm{esc}}-S(\sigma)\right),
+\end{align}$$
 
 where $K_\sigma=-\log\sigma$.
 
 Equivalently,
 
-$$
-D_{\alpha,z}(\rho\Vert\sigma)
-=D(\overline\rho_{\alpha,z}\Vert\sigma)
-+\chi_{\alpha,z}^{\mathrm{esc}},
-$$
+$$\begin{align}
+D_{\alpha,z}(\rho\Vert\sigma) =D(\overline\rho_{\alpha,z}\Vert\sigma) +\chi_{\alpha,z}^{\mathrm{esc}},
+\end{align}$$
 
 with
 
-$$
-\chi_{\alpha,z}^{\mathrm{esc}}
-=\int D\left(
-\rho_\beta^{(c)}\Vert\overline\rho_{\alpha,z}
-\right)d\mu_\alpha(\beta)\geq0.
-$$
+$$\begin{align}
+\chi_{\alpha,z}^{\mathrm{esc}} =\int D\left( \rho_\beta^{(c)}\Vert\overline\rho_{\alpha,z} \right)d\mu_\alpha(\beta)\geq0.
+\end{align}$$
 
 The second formula is the useful bookkeeping identity: replacing the whole escort ensemble by its barycenter loses exactly the Holevo term.
 
-# Perturbative entanglement laws
+# Perturbative Entanglement Laws
 
 For
 
-$$
-\rho_A(\varepsilon)
-=\sigma_A+\varepsilon X_A+\varepsilon^2Y_A+O(\varepsilon^3),
-$$
+$$\begin{align}
+\rho_A(\varepsilon) =\sigma_A+\varepsilon X_A+\varepsilon^2Y_A+O(\varepsilon^3),
+\end{align}$$
 
 the first derivative vanishes:
 
-$$
-\left.
-\frac{d}{d\varepsilon}
-D_{\alpha,z}(\rho_A(\varepsilon)\Vert\sigma_A)
-\right|_{\varepsilon=0}=0.
-$$
+$$\begin{align}
+\left. \frac{d}{d\varepsilon} D_{\alpha,z}(\rho_A(\varepsilon)\Vert\sigma_A) \right|_{\varepsilon=0}=0.
+\end{align}$$
 
 At second order,
 
-$$
-D_{\alpha,z}
-=\frac{\varepsilon^2}{2}
-\int
-\operatorname{Tr}\left[
-\xi_{\beta,c;A}
-\mathcal T_{\sigma_A}(\xi_{\beta,c;A})
-\right]
-d\mu_\alpha(\beta)
-+O(\varepsilon^3),
-$$
+$$\begin{align}
+D_{\alpha,z} =\frac{\varepsilon^2}{2} \int \operatorname{Tr}\left[ \xi_{\beta,c;A} \mathcal T_{\sigma_A}(\xi_{\beta,c;A}) \right] d\mu_\alpha(\beta) +O(\varepsilon^3),
+\end{align}$$
 
 where $\xi_{\beta,c;A}$ is the linearized escort and
 
-$$
-\mathcal T_\sigma(U)
-=D(\log)_\sigma[U]
-=\int_0^\infty
-(\sigma+t)^{-1}U(\sigma+t)^{-1}dt.
-$$
+$$\begin{align}
+\mathcal T_\sigma(U) =D(\log)_\sigma[U] =\int_0^\infty (\sigma+t)^{-1}U(\sigma+t)^{-1}dt.
+\end{align}$$
 
 Thus the information metric is an escort average of BKM forms. In the data-processing region it has the appropriate monotonicity interpretation; outside that region the algebraic second-order formula still exists but should not automatically be called a monotone quantum Fisher metric.
 
-# Vacuum-ball bound
+# Vacuum-Ball Bound
 
 For a CFT vacuum reduced to a ball,
 
-$$
-K_{\sigma_B}
-=2\pi\int_Bd^{d-1}x\,
-\frac{R^2-|\mathbf x|^2}{2R}T_{00}(\mathbf x)
-$$
+$$\begin{align}
+K_{\sigma_B} =2\pi\int_Bd^{d-1}x\, \frac{R^2-|\mathbf x|^2}{2R}T_{00}(\mathbf x)
+\end{align}$$
 
 up to an additive constant. Nonnegativity of each relative-entropy integrand yields an escort-averaged Bekenstein-type bound. Both its energy and entropy sides belong to the auxiliary escort ensemble; it is not a direct energy bound for the original state $\rho_B$.
 
-# Null-shape identity
+# Null-Shape Identity
 
 Let $R[V]$ be the causal completion of the portion of the null plane satisfying
 
-$$
+$$\begin{align}
 x^+>V(y),
-$$
+\end{align}$$
 
 and let $\rho_V,\sigma_V$ be the restricted excited and vacuum states. The centered vacuum modular Hamiltonian is
 
-$$
-H[V]
-=2\pi\int d^{d-2}y
-\int_{V(y)}^\infty du\,
-(u-V(y))T_{++}(u,0,y).
-$$
+$$\begin{align}
+H[V] =2\pi\int d^{d-2}y \int_{V(y)}^\infty du\, (u-V(y))T_{++}(u,0,y).
+\end{align}$$
 
 Its two shape derivatives isolate
 
-$$
+$$\begin{align}
 H_{;y}=-2\pi P_+[V;y],
-$$
+\end{align}$$
 
-$$
-H_{;yy'}
-=2\pi T_{++}(V(y),0,y)
-\delta_\perp(y-y').
-$$
+$$\begin{align}
+H_{;yy'} =2\pi T_{++}(V(y),0,y) \delta_\perp(y-y').
+\end{align}$$
 
 The paper first derives the full bilocal identity. Its diagonal contact part is
 
-$$
-\begin{aligned}
-(D_{\alpha,z})''_{++}[V;y]
-={}&2\pi
-\langle T_{++}(V(y),0,y)\rangle_{overline\eta_{\alpha,z}[V]}\\
-&-(\mathcal S_{\alpha,z}^{\mathrm{esc}})''_{++}[V;y]
-+S''_{\sigma,++}[V;y]
-+\mathfrak X_{\alpha,z;++}[V;y].
-\end{aligned}
-$$
+$$\begin{aligned}
+(D_{\alpha,z})''_{++}[V;y] ={}&2\pi \langle T_{++}(V(y),0,y)\rangle_{overline\eta_{\alpha,z}[V]}\\
+&-(\mathcal S_{\alpha,z}^{\mathrm{esc}})''_{++}[V;y] +S''_{\sigma,++}[V;y] +\mathfrak X_{\alpha,z;++}[V;y].
+\end{aligned}$$
 
 The energy is evaluated in the moving escort barycenter, not the original state.
 
-# Escort transport
+# Escort Transport
 
 Writing $\eta_{\beta,c;y}$ and $\eta^{(2)}_{\beta,c;++}$ for the first and diagonal second shape responses of the moving escort, the transport term is
 
-$$
-\mathfrak X_{\alpha,z;++}(y)
-=\int d\mu_\alpha(\beta)
-\left\{
-\operatorname{Tr}
-[\eta^{(2)}_{\beta,c;++}(y)H]
--2\pi\mathcal C_{\beta,c;++}(y)
-\right\},
-$$
+$$\begin{align}
+\mathfrak X_{\alpha,z;++}(y) =\int d\mu_\alpha(\beta) \left\{ \operatorname{Tr} [\eta^{(2)}_{\beta,c;++}(y)H] -2\pi\mathcal C_{\beta,c;++}(y) \right\},
+\end{align}$$
 
 where $\mathcal C$ pairs the first escort response with the half-ray energy operator.
 
 If every escort were the restriction of a fixed global state, with a compatible local modular-energy realization for nearby cuts, then
 
-$$
+$$\begin{align}
 \mathfrak X_{\alpha,z;++}=0.
-$$
+\end{align}$$
 
 Generically it is nonzero because the nonlinear power-map construction of the escort is performed after restriction and changes as the regional algebra changes.
 
 This is the most reusable result of the paper: the obstruction is a second regional-response term, not a new local stress tensor.
 
-# Exact identity versus conjectured inequality
+# Exact Identity Versus Conjectured Inequality
 
 In the upper data-processing region
 
-$$
-\max\{\alpha/2,\alpha-1\}\leq z\leq\alpha,
-\qquad \alpha>1,
-$$
+$$\begin{align}
+\max\{\alpha/2,\alpha-1\}\leq z\leq\alpha, \qquad \alpha>1,
+\end{align}$$
 
 the paper conjectures
 
-$$
+$$\begin{align}
 (D_{\alpha,z})''_{++}[V;y]\geq0.
-$$
+\end{align}$$
 
 Combining that conjecture with the exact identity gives
 
-$$
-2\pi\langle T_{++}\rangle_{\overline\eta_{\alpha,z}}
-\geq
-(\mathcal S_{\alpha,z}^{\mathrm{esc}})''_{++}
--S''_{\sigma,++}
--\mathfrak X_{\alpha,z;++}.
-$$
+$$\begin{align}
+2\pi\langle T_{++}\rangle_{\overline\eta_{\alpha,z}} \geq (\mathcal S_{\alpha,z}^{\mathrm{esc}})''_{++} -S''_{\sigma,++} -\mathfrak X_{\alpha,z;++}.
+\end{align}$$
 
 This implication is correct, but its logical status is conditional. On the sandwiched line $z=\alpha$, it becomes the corresponding Rényi QNEC form. The paper notes that the sandwiched positivity is proved only in specified free-field and modular-inclusion regimes; noninteger $\alpha>1$ remains open in general.
 
 The off-diagonal Hessian contains no local $T_{++}$ contact term. Accordingly, no off-diagonal QNEC-type bound follows from the same decomposition, and the paper cites the existing no-go result rather than overclaiming one.
 
-# Coherent free-scalar test
+# Coherent Free-Scalar Test
 
 On a null fibre, the derivative of a free scalar gives a chiral current $J(u)$ with
 
-$$
+$$\begin{align}
 T_{++}(u)=\frac12:J(u)^2:.
-$$
+\end{align}$$
 
 For the rational restricted profile
 
-$$
+$$\begin{align}
 j_\rho(u)=\frac{qg}{(u+g)^2},
-$$
+\end{align}$$
 
 completed outside the relevant half-lines to remove the global zero mode, the sandwiched escort has profile
 
-$$
-j_{\beta,V}(V+x)
-=\frac{qg\beta^2}{(g+V)^2}
-\frac{(x/(g+V))^{\beta-1}}
-{[1+(x/(g+V))^\beta]^2}.
-$$
+$$\begin{align}
+j_{\beta,V}(V+x) =\frac{qg\beta^2}{(g+V)^2} \frac{(x/(g+V))^{\beta-1}} {[1+(x/(g+V))^\beta]^2}.
+\end{align}$$
 
 Its relative entropy is
 
-$$
-E_\beta[V]
-=\frac{\pi q^2g^2\beta^3}{6(g+V)^2}.
-$$
+$$\begin{align}
+E_\beta[V] =\frac{\pi q^2g^2\beta^3}{6(g+V)^2}.
+\end{align}$$
 
 Fixed-ray averaging gives
 
-$$
-D_\alpha(\rho_V\Vert\sigma_V)
-=\frac{\pi q^2g^2}{12(g+V)^2}
-\alpha(\alpha+1),
-$$
+$$\begin{align}
+D_\alpha(\rho_V\Vert\sigma_V) =\frac{\pi q^2g^2}{12(g+V)^2} \alpha(\alpha+1),
+\end{align}$$
 
 and hence
 
-$$
-D_\alpha''[V]
-=\frac{\pi q^2g^2}{2(g+V)^4}
+$$\begin{align}
+D_\alpha''[V] =\frac{\pi q^2g^2}{2(g+V)^4}
 \alpha(\alpha+1)>0.
-$$
+\end{align}$$
 
 For every fixed $\alpha>1$, the escort-averaged boundary energy vanishes and the entropy terms cancel, so the entire Hessian is carried by transport:
 
-$$
-D_\alpha''[V]
-=\mathfrak X^{\mathrm s}_{\alpha,++}[V].
-$$
+$$\begin{align}
+D_\alpha''[V] =\mathfrak X^{\mathrm s}_{\alpha,++}[V].
+\end{align}$$
 
 This concrete example proves that $\mathfrak X$ is not dispensable bookkeeping.
 
 For general $z$, the result takes the form
 
-$$
-D_{\alpha,z}(\rho_V\Vert\sigma_V)
-=\frac{q^2g^2}{(g+V)^2}
-\mathcal A^{\mathrm{coh}}_{\alpha,z},
-$$
+$$\begin{align}
+D_{\alpha,z}(\rho_V\Vert\sigma_V) =\frac{q^2g^2}{(g+V)^2} \mathcal A^{\mathrm{coh}}_{\alpha,z},
+\end{align}$$
 
-$$
-\mathcal A^{\mathrm{coh}}_{\alpha,z}
-=\frac{z}{\pi(\alpha-1)}
-\int_0^\infty ds\,
-\frac{s\sinh(\alpha s/z)
-\sinh((\alpha-1)s/z)}
-{\sinh^2s\,\sinh(s/z)}.
-$$
+$$\begin{align}
+\mathcal A^{\mathrm{coh}}_{\alpha,z} =\frac{z}{\pi(\alpha-1)} \int_0^\infty ds\, \frac{s\sinh(\alpha s/z) \sinh((\alpha-1)s/z)} {\sinh^2s\,\sinh(s/z)}.
+\end{align}$$
 
 The coefficient is positive and finite precisely when
 
-$$
+$$\begin{align}
 z>\alpha-1.
-$$
+\end{align}$$
 
 Thus this family verifies the conjecture only in the finite-divergence portion of the parameter region. At $z=\alpha-1$, including $(\alpha,z)=(2,1)$, the divergence of this state is infinite; this is a domain obstruction, not a counterexample.
 
-# Continuum and regulator limits
+# Continuum and Regulator Limits
 
 The paper handles this boundary carefully:
 
@@ -401,9 +317,9 @@ The paper handles this boundary carefully:
 
 No continuum representation theorem for moving escorts, no general QNEC proof, and no statement about arbitrary correlated states follows from the finite-regulator identities.
 
-# Independent checks
+# Independent Checks
 
-## Noncommuting two-level test
+## Noncommuting Two-Level Test
 
 For
 
@@ -423,56 +339,49 @@ $$
 
 with $(\alpha,z)=(1.4,1.2)$, Mathematica gives
 
-$$
+$$\begin{align}
 D_{\alpha,z}=0.21410415072968,
-$$
+\end{align}$$
 
 while direct numerical fixed-ray integration gives
 
-$$
-\int D(\rho_\beta^{(c)}\Vert\sigma)d\mu_\alpha
-=0.21410415072968.
-$$
+$$\begin{align}
+\int D(\rho_\beta^{(c)}\Vert\sigma)d\mu_\alpha =0.21410415072968.
+\end{align}$$
 
 The residual is
 
-$$
+$$\begin{align}
 5.6\times10^{-17}.
-$$
+\end{align}$$
 
 The Holevo decomposition residual is
 
-$$
+$$\begin{align}
 3.7\times10^{-17}.
-$$
+\end{align}$$
 
-## Coherent integral checks
+## Coherent Integral Checks
 
 Mathematica verifies exactly
 
-$$
-\int_1^\alpha\frac{d\beta}{\beta^2}
-\frac{\sinh^2a}{\sinh^2(a/\beta)}
-=\frac{\sinh a\,\sinh(a-a/\alpha)}
-{a\sinh(a/\alpha)}
-$$
+$$\begin{align}
+\int_1^\alpha\frac{d\beta}{\beta^2} \frac{\sinh^2a}{\sinh^2(a/\beta)} =\frac{\sinh a\,\sinh(a-a/\alpha)} {a\sinh(a/\alpha)}
+\end{align}$$
 
 for $a>0$, $\alpha>1$. At $(\alpha,z)=(3/2,3/2)$, numerical integration reproduces
 
-$$
-\mathcal A^{\mathrm{coh}}_{\alpha,\alpha}
-=\frac{\pi\alpha(\alpha+1)}{12}
-$$
+$$\begin{align}
+\mathcal A^{\mathrm{coh}}_{\alpha,\alpha} =\frac{\pi\alpha(\alpha+1)}{12}
+\end{align}$$
 
 with zero displayed residual. Mathematica also returns zero for the second-derivative identity
 
-$$
-\frac{d^2}{dV^2}
-\frac{q^2g^2}{(g+V)^2}
-=\frac{6q^2g^2}{(g+V)^4}.
-$$
+$$\begin{align}
+\frac{d^2}{dV^2} \frac{q^2g^2}{(g+V)^2} =\frac{6q^2g^2}{(g+V)^4}.
+\end{align}$$
 
-# Verification record
+# Verification Record
 
 **Verified:** complete 46-page generated PDF and TeX source inspected; PDF pages 5, 24, 35, and 38 rendered and visually checked; noncommuting fixed-ray identity and Holevo identity checked numerically; the key $\beta$ integral, sandwiched coefficient, and cut-Hessian derivative checked in Mathematica.
 
@@ -480,11 +389,10 @@ $$
 
 **Not verified:** the companion paper's full operator-algebraic proof; every Fréchet kernel in the appendix; the null-current normalization from first principles; the complete oscillator-to-direct-integral construction; QNEC positivity beyond the explicit coherent family; regulator independence of separate quasi-local terms away from the sandwiched slice; the holographic outlook.
 
-# Questions for reuse
+# Questions for Reuse
 
 1. Can $\mathfrak X$ be formulated directly as a defect of a restriction/intertwining diagram at the von Neumann algebra level?
 2. Does the transport term admit a sign, cocycle, or relative-modular interpretation for half-sided modular inclusions?
 3. Which moving-escort families arise as restrictions of fixed global states, making $\mathfrak X=0$?
 4. What changes for transversely correlated Gaussian states, where the off-diagonal Hessian is nontrivial?
 5. Can the common-regulator total Hessian be isolated without assigning independent continuum values to entropy, local energy, and transport?
-

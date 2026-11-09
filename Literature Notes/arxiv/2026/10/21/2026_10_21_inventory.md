@@ -213,7 +213,7 @@ Total deduplicated entries: 201
 | [2610.24865](https://arxiv.org/abs/2610.24865) | math-ph:replacement | math-ph, physics.bio-ph, physics.soc-ph | A mechanism for collective foraging: percolating recruitment cascades coupled to a maximum-entropy | Galen J. Wilkerson | 48 pages, 19 figures (10 main + 9 SI), 2 tables, Code and data: this https URL |
 | [2610.25878](https://arxiv.org/abs/2610.25878) | math-ph:replacement | math-ph, quant-ph | Non-planar contact structures with Calabi-Yau Fillings and topological quantum computation | Atsuhide Mori | 13 pages. v2: shortened for readability. Companion to arXiv:2609.30406 |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 All 201 official listing records screened. Complete primary/cross categories and version pins below come from official abstract pages retrieved during this refresh. Local baselines exclude today’s superseded morning audit and inventory-only mentions. Metadata reading is not independent technical verification.
 

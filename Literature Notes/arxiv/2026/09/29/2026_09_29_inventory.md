@@ -151,9 +151,9 @@ Total deduplicated entries: 139
 | [2609.29842](https://arxiv.org/abs/2609.29842) | math-ph:replacement | math-ph | The Two-Component Becker-Döring System: Basic Properties | Jens Scholten | 36 pages; added eprint for [19] and repaired HTML version |
 | [2609.29891](https://arxiv.org/abs/2609.29891) | math-ph:replacement | math-ph | Long Time Behaviour of the Two-Component Becker-Döring System | Jens Scholten | 73 pages; added eprint for [29] and repaired HTML version |
 
-## Inherited category and placement audit — September 28 snapshot
+## Inherited Category and Placement Audit — September 28 Snapshot
 
-All 139 freshly fetched helper rows exactly match the September 28 helper rows, including titles, authors, categories, statuses and comments. Row SHA-256 (rows joined by LF, with a final LF): `56943f8e93ccb73fb091fe9d576a4697592868dc3a2398b4d3858bdedb248d3f`. The table below preserves the primary and full cross-list categories and placements from the September 28 official-abstract audit; these version pins are historical, not a fresh latest-version check. See [September 28 completed overview](</Users/koishi/Documents/Note/Literature Notes/arxiv/2026/09/28/2026_09_28_overview.md>). `high` and `medium` denote already completed prior-day treatment, not new work today. `tracked` comprises eleven replacement deferrals and one unchanged cross-list.
+All 139 freshly fetched helper rows exactly match the September 28 helper rows, including titles, authors, categories, statuses and comments. Row SHA-256 (rows joined by LF, with a final LF): `56943f8e93ccb73fb091fe9d576a4697592868dc3a2398b4d3858bdedb248d3f`. The table below preserves the primary and full cross-list categories and placements from the September 28 official-abstract audit; these version pins are historical, not a fresh latest-version check. See [September 28 completed overview](<../28/2026_09_28_overview.md>). `high` and `medium` denote already completed prior-day treatment, not new work today. `tracked` comprises eleven replacement deferrals and one unchanged cross-list.
 
 | arXiv version | primary | cross-list categories | placement |
 |---|---|---|---|

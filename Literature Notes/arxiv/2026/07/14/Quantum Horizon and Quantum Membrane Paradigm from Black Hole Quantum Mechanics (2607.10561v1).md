@@ -17,15 +17,12 @@ Back to [[2026_07_14_overview]].
 This paper is useful because it does not merely assign constitutive data to a stretched horizon. It proposes a microscopic interface system and follows a concrete chain
 
 $$\begin{align}
-\text{matrix blocks} \longrightarrow
-\text{Berry-monopole LLL partons} \longrightarrow
-\text{Hall/longitudinal response} \longrightarrow
-\text{link condensation} \longrightarrow b_A\simeq a_A|_{r=R} \longrightarrow \text{Maxwell boundary admittance}.
+\text{matrix blocks} \longrightarrow \text{Berry-monopole LLL partons} \longrightarrow \text{Hall/longitudinal response} \longrightarrow \text{link condensation} \longrightarrow b_A\simeq a_A|_{r=R} \longrightarrow \text{Maxwell boundary admittance}.
 \end{align}$$
 
 The result is promising but not a derivation of a complete black-hole geometry or a complete covariant phase space. The universal longitudinal conductivity is conjectural, the dissipative response has no KMS/Kubo derivation, the Schwarzschild propagation problem is assumed, and a printed polarization identity has the wrong sign. Those boundaries are part of the result, not afterthoughts.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 The essential route is Sections 2, 3.1, 4.2--4.5, 5.3, and 6.1--6.3. Section 5.1 is needed to understand why the link is a relative-gauge-field Higgs variable; Section 5.2 is a technical reference for later three-block extensions. The appendices are not optional: Appendix A fixes the sphere frames and orientation, Appendix B justifies the coherent-state continuum map, and Appendix C proves the Berry line-bundle data.
 
@@ -78,7 +75,7 @@ The global equation ledger used across the section-specific reconstruction is:
 | (6.64)--(6.68) | Ohmic, Hall, polarization, and total boundary currents | Gives the full horizon admittance |
 | (6.69), (6.72), (6.74)--(6.79) | Robin condition, helicity response, and optical observables | Converts microscopic response into reflectivity |
 
-# Fields, indices, and approximation regime
+# Fields, Indices, and Approximation Regime
 
 The basic matrix model is Eq. (1.1),
 
@@ -113,7 +110,7 @@ The derivation uses temporal gauge but does not discard Gauss' law; the constrai
 
 There is a notation collision in the source: the physical radius in the main text is $R=Nl_P$, whereas Appendix B also uses a dimensionless fuzzy radius denoted $R$. This note reserves $R$ for the physical horizon radius.
 
-# The classical stretched-horizon target
+# The Classical Stretched-Horizon Target
 
 For exterior Maxwell theory,
 
@@ -149,7 +146,7 @@ $$\begin{align}
 
 Hence $A_A|_\Gamma$ is the configuration datum and $F_{A\mu}n^\mu/(4\pi)$ its normal response. Because the stretched horizon is an inner boundary of the exterior region, the induced boundary orientation can differ from the paper's increasing-$r$ normal. Any comparison with a Harlow--Wu or covariant-phase-space convention must audit this sign separately.
 
-# A tangential photon on the fuzzy-sphere block
+# A Tangential Photon on the Fuzzy-Sphere Block
 
 The horizon background and fluctuation are
 
@@ -197,7 +194,7 @@ $$\begin{align}
 
 This is a gauge-fixed canonical expression, not a completed covariant phase space: the source does not construct the residual-gauge quotient, boundary improvement, or corner data.
 
-# The Cartesian environmental Maxwell block
+# The Cartesian Environmental Maxwell Block
 
 The second block is expanded as
 
@@ -231,7 +228,7 @@ A_a|_{r=R}=K_a{}^Aa_A+n_a\phi_E, \qquad \delta a_A=D_A\lambda, \qquad \delta\phi
 
 This matched normalization is what later permits the transparent locking relation $b_A=a_A$, rather than a relation with an additional rescaling.
 
-# Charged half-filled partons
+# Charged Half-Filled Partons
 
 On the fuzzy background, the fermions become two sets of oscillators. Their normal-ordered Hamiltonian and occupation numbers are
 
@@ -259,7 +256,7 @@ r=\frac12(N^2+n), \qquad s=\frac12(N^2-n), \qquad Q=nq. \tag{4.9}
 
 At this point $Q$ is a proposed identification. The equality between $q(r-s)$ and the external Maxwell flux is not established until the two-block Gauss law in Section 5.3.
 
-# The intrinsic Berry monopole and the LLL Hilbert space
+# The Intrinsic Berry Monopole and the LLL Hilbert Space
 
 For a spin-$J$ coherent state, the north-patch Berry connection is
 
@@ -289,7 +286,7 @@ $$\begin{align}
 
 and quantization reproduces the fuzzy commutator. The paper's geometric noncommutativity and parton guiding-center noncommutativity are therefore two readings of the same prequantum line bundle.
 
-# Particle--hole frame and microscopic current
+# Particle--Hole Frame and Microscopic Current
 
 The continuum spinor is expanded in a local radial-spin frame,
 
@@ -317,7 +314,7 @@ j^A=q\sum_I\left( \zeta^Au_I^\dagger d_I^\dagger +\bar\zeta^Ad_Iu_I \right). \ta
 
 The unprojected current is off-diagonal in radial-spin space. A time-dependent $b_A$ mixes the two radial-spin sectors virtually; after projection to the LLL, the same response is represented by diagonal guiding-center motion. This is why the field-theory current and the single-particle transport current look different without being contradictory.
 
-# Guiding-center symplectic dynamics and Hall transport
+# Guiding-Center Symplectic Dynamics and Hall Transport
 
 For occupied LLL wave packets the first-order mechanics is
 
@@ -359,7 +356,7 @@ $$\begin{align}
 
 The Hall current vanishes for a neutral half-filled sea and is nondissipative.
 
-# Thermal friction and the longitudinal response
+# Thermal Friction and the Longitudinal Response
 
 The paper then models the horizon as a bath through
 
@@ -397,7 +394,7 @@ c_T=\frac{1}{2q^2} \quad\Longrightarrow\quad \sigma_{xx}=\frac{1}{4\pi}.
 
 The paper cites decay of a fermion two-point function as support for the bath picture, but does not establish a KMS state, fluctuation--dissipation relation, noise kernel, or Kubo formula. The Ohmic normalization is therefore not a microscopic result of this paper.
 
-# Bifundamental links and the total Gauss constraint
+# Bifundamental Links and the Total Gauss Constraint
 
 For two blocks,
 
@@ -440,7 +437,7 @@ Q_{\rm BH} =\int_{S_R^2}d\Sigma\,E_r =q(r-s). \tag{5.68--5.69}
 
 This is the step that turns the internal fermion-number imbalance into the external Maxwell charge. It is not a Wald charge, and the source does not construct a surface-charge algebra.
 
-# The outward-extremal tachyon and a Planck-thick condensate
+# The Outward-Extremal Tachyon and a Planck-Thick Condensate
 
 On the horizon/environment background,
 
@@ -496,7 +493,7 @@ r=R+\delta, \qquad \delta\lesssim l_P. \tag{6.48}
 
 This establishes the existence of one tachyonic channel and a rotationally organized large-$N$ condensate ansatz. It does not prove that the displayed mode is the unique or globally lowest instability, and finite-$N$ overlaps among coherent link modes are not evaluated.
 
-# Higgs locking of the relative connection
+# Higgs Locking of the Relative Connection
 
 Turning on both gauge fields introduces
 
@@ -522,7 +519,7 @@ b_A\simeq a_A, \qquad \phi_H\simeq\phi_E. \tag{6.55}
 
 The gauge-invariant interpretation is that the link phase is a Stückelberg/Higgs field for the relative gauge group and the condensate leaves the diagonal subgroup. The displayed $(b-a)^2$ is a unitary-gauge form; the source does not retain $d\arg w$ explicitly. The equality is not exact off shell. The full kernel shows corrections of order $\omega^2/\mathscr K$, $p^2/\mathscr K$, and $\omega\sigma/\mathscr K$.
 
-# Boundary admittance and the origin of its three terms
+# Boundary Admittance and the Origin of Its Three Terms
 
 Varying the exterior potential and the horizon potential gives
 
@@ -531,8 +528,7 @@ $$\begin{align}
 \end{align}$$
 
 $$\begin{align}
-\frac{1}{g_{\rm BH}^2}
-(\Box b_B-\partial_B\partial_Ab_A) -j_B -\frac{\mathscr K}{R^2}(b_B-a_B)=0. \tag{6.58}
+\frac{1}{g_{\rm BH}^2} (\Box b_B-\partial_B\partial_Ab_A) -j_B -\frac{\mathscr K}{R^2}(b_B-a_B)=0. \tag{6.58}
 \end{align}$$
 
 Eliminating the locking force yields
@@ -573,7 +569,7 @@ j_A^{\rm pol}=\partial_\tau P_A, \qquad P_A=-D E_A. \tag{6.67--6.68}
 
 The negative susceptibility describes a reactive interface response. A local real action does not by itself encode the dissipative Ohmic term; a Keldysh/influence-functional or Kubo completion would be needed for a full phase-space treatment.
 
-# Helicity-resolved reflectivity
+# Helicity-Resolved Reflectivity
 
 Assuming that the matrix model produces a Schwarzschild exterior, the admittance becomes the Robin condition
 
@@ -617,7 +613,7 @@ $$\begin{align}
 
 The simple reflection coefficient is valid only after low-energy locking and the local admittance approximation. At higher frequency one must retain the full finite-$\mathscr K$ kernel of Eq. (6.62).
 
-# Relation to boundary, charge, and edge-mode formalisms
+# Relation to Boundary, Charge, and Edge-Mode Formalisms
 
 The paper's interface data translate into the vault's working language as follows:
 
@@ -637,7 +633,7 @@ The paper's interface data translate into the vault's working language as follow
 
 The paper therefore gives a matrix-derived dynamical boundary medium. It does not yet give a full covariant phase space with boundary/corner improvements, large-gauge charges, integrability, or a charge algebra.
 
-# Concrete project extensions
+# Concrete Project Extensions
 
 1. Restore the link phase and write the locking sector as a gauge-invariant boundary Stückelberg theory. This would make the diagonal/relative gauge reduction explicit before choosing unitary gauge.
 2. Derive the boundary symplectic potential from the combined Maxwell--horizon--link action, keeping finite $\mathscr K$. The response kernel should then be compared with the finite-boundary conventions used in the current AdS/CPS work.
@@ -649,7 +645,7 @@ The paper therefore gives a matrix-derived dynamical boundary medium. It does no
 
 Source inspection used the official TeX together with rendered PDF pages 6, 20--21, 31, 35, and 39--40 to confirm the displayed guiding-center, Gauss-law, tachyon, condensate, admittance, and reflection formulas and their equation labels. This is source confirmation, not an independent mathematical check.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

@@ -15,7 +15,7 @@ tags: []
 
 Back to [[2026_07_01_overview]].
 
-# Couplings as form-field charges
+# Couplings as Form-Field Charges
 
 The starting point is the scalar-gauge pair representation of dimensionful couplings. If the original $D$-form Lagrangian is split as
 
@@ -33,7 +33,7 @@ The pair equations impose $d\alpha_i=0$ and $\mathbf F_i=\mathbf L_i$. Then $\al
 
 The new paper asks for a local completion of this auxiliary sector while keeping that thermodynamic interpretation. The central restriction is that the new local scalar cannot simply replace $\alpha_i$ by $\alpha_i(x)$ in the original gravitational equations; otherwise the coupling-charge interpretation and the known black-hole first law would be lost.
 
-# The defect variable
+# The Defect Variable
 
 The safe local variable is the defect
 
@@ -51,7 +51,7 @@ In scalar-density form the last term is $+\frac12\hat\kappa_i\Delta_i^2$. This a
 
 The reason for using $\Delta_i$ instead of a bare $F_i^2$ term is important. On the original constant-coupling sector the pair demands $F_i=\mathcal L_i(x)$. For curvature densities such as Gauss-Bonnet, $\mathcal L_i(x)$ is not constant on a black-hole spacetime. A bare $F_i^2$ kinetic term would tend to force $F_i$ to be constant on constant-$\alpha_i$ backgrounds, obstructing the original sector. The defect condition $\Delta_i=0$ instead allows $F_i$ to track the local density.
 
-# Top-form elimination and the massive scalar
+# Top-Form Elimination and the Massive Scalar
 
 The scalar-density equations are
 
@@ -85,7 +85,7 @@ $$\begin{align}
 
 which is stronger than only requiring $m^2>0$.
 
-# Metric and matter equations
+# Metric and Matter Equations
 
 The variation of
 
@@ -119,7 +119,7 @@ $$\begin{align}
 
 This is the main conceptual result: local fluctuations of $\alpha_i(x)$ do not make the original coupling spacetime-dependent in the original equations.
 
-# Boundary charge and CPS interpretation
+# Boundary Charge and CPS Interpretation
 
 The enlarged theory preserves the asymptotic coupling charge when the massive scalar is localized or normalizable. The source gives the asymptotically flat falloff
 
@@ -155,7 +155,7 @@ H_{\boldsymbol\lambda_i}=\bar\alpha_i .
 
 The paper explicitly does not give the full surface-charge derivation for arbitrary boundary conditions. It states that this would require specifying allowed gauge parameters, boundary conditions on $\mathbf A_i$, and the representative of the CPS potential. The reliable local translation is therefore: the new scalar completion is compatible with the old coupling-charge boundary term, but only after the form equation locks the boundary coefficient to $\bar\alpha_i$.
 
-# Cosmological and Gauss-Bonnet examples
+# Cosmological and Gauss-Bonnet Examples
 
 For the cosmological term, set $\Delta_\Lambda=F_\Lambda-1$. The gauge equation gives
 
@@ -179,7 +179,7 @@ $$\begin{align}
 
 On the constant-coupling sector, $F_{\rm GB}=\mathcal G(x)$ and $\Delta_{\rm GB}=0$. This is the cleanest example of why the defect, rather than a bare top-form kinetic term, is necessary.
 
-# Local translation
+# Local Translation
 
 - The local-vault "charge" object is $\bar\alpha_i$, not $\alpha_i(x)$.
 - The defect $\Delta_i$ is a constraint-deviation variable: it vanishes on the old black-hole sector and stores the local completion away from it.
@@ -187,7 +187,7 @@ On the constant-coupling sector, $F_{\rm GB}=\mathcal G(x)$ and $\Delta_{\rm GB}
 - The CPS boundary term is auxiliary and form-field based; it should be kept separate from gravitational CPS until the allowed form gauge parameters and boundary conditions are fixed.
 - For finite-boundary notes, this paper is useful as a model of an auxiliary extension whose boundary charge survives while new bulk modes are arranged to vanish on the original sector.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

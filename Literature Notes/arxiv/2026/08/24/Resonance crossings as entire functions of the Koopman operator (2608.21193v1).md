@@ -12,63 +12,51 @@ summary: "The finite-window coefficients are regular at resonance, but the globa
 tags: []
 ---
 
-# Compact verdict
+# Compact Verdict
 
 **Direct verdict.** Correct for the finite-window coefficient identities and their detuning-regularity at every fixed Magnus order. The statement should be rewritten as: finite-time ordered integrals are entire functions of the detunings; they provide a locally chosen logarithmic generator for the one-cycle Koopman evolution. The complex logarithm is not itself an entire function of a general operator, and $U_\Lambda$ has eigenvalue one whenever $\delta\Lambda=2\pi n$, not only at the physical resonance $\delta=0$.
 
 Reason codes: `T2-spectral`, `T2-model`, `T3-math`.
 
-# Main statements
+# Main Statements
 
 For detuning $\delta=\mathbf{k}\cdot\boldsymbol\Upsilon$, near-identity averaging uses
 
-$$
+$$\begin{align}
 w_{\mathbf{k}}=\frac{\mathcal G_{\mathbf{k}}}{i\delta},
-$$
+\end{align}$$
 
 which diverges at $\delta=0$. The first finite-window coefficient is instead
 
-$$
-\chi_{\mathbf{k}}
-=\mathcal G_{\mathbf{k}}
-\frac{e^{i\delta\Lambda}-1}{i\delta}
-=\mathcal G_{\mathbf{k}}\Lambda e^{i\delta\Lambda/2}
-\operatorname{sinc}\!\left(\frac{\delta\Lambda}{2}\right),
-$$
+$$\begin{align}
+\chi_{\mathbf{k}} =\mathcal G_{\mathbf{k}} \frac{e^{i\delta\Lambda}-1}{i\delta} =\mathcal G_{\mathbf{k}}\Lambda e^{i\delta\Lambda/2} \operatorname{sinc}\!\left(\frac{\delta\Lambda}{2}\right),
+\end{align}$$
 
 so
 
-$$
-|\chi_{\mathbf{k}}|\le |\mathcal G_{\mathbf{k}}|\Lambda,
-\qquad
-\chi_{\mathbf{k}}\longrightarrow \mathcal G_{\mathbf{k}}\Lambda
-\quad(\delta\to0).
-$$
+$$\begin{align}
+|\chi_{\mathbf{k}}|\le |\mathcal G_{\mathbf{k}}|\Lambda, \qquad \chi_{\mathbf{k}}\longrightarrow \mathcal G_{\mathbf{k}}\Lambda \quad(\delta\to0).
+\end{align}$$
 
 At higher fixed orders, the coefficients are compact-simplex integrals of entire phase factors. For example,
 
-$$
-\int_0^\Lambda ds_1\int_0^{s_1}ds_2\,
-e^{i\delta_1s_1+i\delta_2s_2}
-=\frac{\mathcal W(\delta_1+\delta_2)-\mathcal W(\delta_1)}{i\delta_2},
-$$
+$$\begin{align}
+\int_0^\Lambda ds_1\int_0^{s_1}ds_2\, e^{i\delta_1s_1+i\delta_2s_2} =\frac{\mathcal W(\delta_1+\delta_2)-\mathcal W(\delta_1)}{i\delta_2},
+\end{align}$$
 
 where $\mathcal W(\delta)=\int_0^\Lambda e^{i\delta s}ds$; the apparent pole is removable. This proves coefficientwise regularity, not convergence of the full Magnus series. The paper states the usual sufficient smallness condition separately.
 
 For a linearly swept resonance, stationary phase predicts
 
-$$
-|\Delta J_{\rm res}|
-=2|\mathcal G_{\mathbf{k}_{\rm res}}|
-\sqrt{\frac{2\pi}{|\dot\delta|}}
-\left|\cos\left(q_0+\frac\pi4\operatorname{sgn}\dot\delta\right)\right|.
-$$
+$$\begin{align}
+|\Delta J_{\rm res}| =2|\mathcal G_{\mathbf{k}_{\rm res}}| \sqrt{\frac{2\pi}{|\dot\delta|}} \left|\cos\left(q_0+\frac\pi4\operatorname{sgn}\dot\delta\right)\right|.
+\end{align}$$
 
 The model experiment reports $\Xi=3.52\pm0.09$ at $q_0=0$, consistent with $2\sqrt\pi=3.54$, and recovers the predicted phase zeros.
 
-# Verification ledger
+# Verification Ledger
 
-## Source-derived
+## Source-Derived
 
 - The complete official TeX source and 16-page PDF were inspected.
 - The Kerr crossing uses a modelled forcing and prescribed sweep; it is not a self-force evolution. The paper itself says that matched-cost accuracy against partial averaging remains open.
@@ -83,7 +71,7 @@ The model experiment reports $\Xi=3.52\pm0.09$ at $q_0=0$, consistent with $2\sq
 
 - The published source contains figures but no executable code, measured frequency grids, located-crossing tables, or generated numerical arrays; those data are available only on request. The reported $10^{-6}$ saturation, $10^{-15}$ comparison, crossing sequence, and error bars were therefore not numerically reproduced.
 
-## Not independently verified
+## Not Independently Verified
 
 - The Kerr frequency extraction, torus projection, tidal-fit calibration, and multi-crossing composition were inspected only through the manuscript.
 - Fixed-order coefficient regularity does not establish convergence, a globally single-valued operator logarithm, or superior computational cost at matched waveform accuracy.

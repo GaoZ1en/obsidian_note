@@ -16,67 +16,51 @@ tags: []
 
 The paper's main value is methodological: retain the radial action and constrained metric variables long enough to see how a cubic interaction changes the source while leaving the GR tidal homogeneous operator intact. Three response notions must remain separate:
 
-$$
-\Delta(B/A)_\ell^{\rm ZM,fixed},
-\qquad
-k_\ell^E,
-\qquad
-c_{E,\ell}^{\rm fs}.
-$$
+$$\begin{align}
+\Delta(B/A)_\ell^{\rm ZM,fixed}, \qquad k_\ell^E, \qquad c_{E,\ell}^{\rm fs}.
+\end{align}$$
 
-They are, respectively, a fixed-integer Zerilli--Moncrief branch ratio, the canonically continued Love number, and the exterior finite-size worldline coefficient. Their distinction is essential already at \(\ell=2\).
+They are, respectively, a fixed-integer Zerilli--Moncrief branch ratio, the canonically continued Love number, and the exterior finite-size worldline coefficient. Their distinction is essential already at $\ell=2$.
 
-## Cubic-Weyl EFT and corrected background
+## Cubic-Weyl EFT and Corrected Background
 
 The bulk action is
 
-$$
-S_{\rm bulk}=\frac{M_{\rm Pl}^2}{2}\int d^4x\sqrt{-g}
-\left[R+\epsilon_{\rm e}r_s^4\mathcal O_{\rm e}\right],
-$$
+$$\begin{align}
+S_{\rm bulk}=\frac{M_{\rm Pl}^2}{2}\int d^4x\sqrt{-g} \left[R+\epsilon_{\rm e}r_s^4\mathcal O_{\rm e}\right],
+\end{align}$$
 
-$$
-\mathcal O_{\rm e}
-=C_{\mu\nu}{}^{\rho\sigma}
-C_{\rho\sigma}{}^{\alpha\beta}
-C_{\alpha\beta}{}^{\mu\nu}.
-$$
+$$\begin{align}
+\mathcal O_{\rm e} =C_{\mu\nu}{}^{\rho\sigma} C_{\rho\sigma}{}^{\alpha\beta} C_{\alpha\beta}{}^{\mu\nu}.
+\end{align}$$
 
-Everything is kept only to first order in \(\epsilon_{\rm e}\). Higher radial derivatives are order-reduced with the lower-order Einstein equations, so no extra EFT-external modes are retained.
+Everything is kept only to first order in $\epsilon_{\rm e}$. Higher radial derivatives are order-reduced with the lower-order Einstein equations, so no extra EFT-external modes are retained.
 
 In areal-radius gauge,
 
-$$
+$$\begin{align}
 ds^2=-A(r)dt^2+\frac{dr^2}{B(r)}+r^2d\Omega^2,
-$$
+\end{align}$$
 
-$$
-A=f(1+\epsilon_{\rm e}a),
-\qquad
-B=f(1+\epsilon_{\rm e}b),
-\qquad
-f=1-\frac{r_s}{r},
-$$
+$$\begin{align}
+A=f(1+\epsilon_{\rm e}a), \qquad B=f(1+\epsilon_{\rm e}b), \qquad f=1-\frac{r_s}{r},
+\end{align}$$
 
 where
 
-$$
-a=-2\sum_{n=1}^5(r_s/r)^n+4(r_s/r)^6,
-\qquad
-b=-2\sum_{n=1}^5(r_s/r)^n+16(r_s/r)^6.
-$$
+$$\begin{align}
+a=-2\sum_{n=1}^5(r_s/r)^n+4(r_s/r)^6, \qquad b=-2\sum_{n=1}^5(r_s/r)^n+16(r_s/r)^6.
+\end{align}$$
 
-The \(C^3\) and Riemann-cubic representatives agree on Ricci-flat configurations but differ off shell by Ricci-dependent terms; finite response values depend on the stated field-redefinition and mass-normalization convention.
+The $C^3$ and Riemann-cubic representatives agree on Ricci-flat configurations but differ off shell by Ricci-dependent terms; finite response values depend on the stated field-redefinition and mass-normalization convention.
 
-## Arbitrary multipoles from the radial metric action
+## Arbitrary Multipoles from the Radial Metric Action
 
-Set \(L=\ell(\ell+1)\). The source reduces the Einstein and cubic actions at exact integer \(\ell\), reconstructs their bounded polynomial dependence on \(L\), and checks unused multipoles. After order reduction and \(x=r/r_s\), the three metric corrections reduce to
+Set $L=\ell(\ell+1)$. The source reduces the Einstein and cubic actions at exact integer $\ell$, reconstructs their bounded polynomial dependence on $L$, and checks unused multipoles. After order reduction and $x=r/r_s$, the three metric corrections reduce to
 
-$$
-\mathbf X'=M_L(x)\mathbf X+\mathbf s_H(L,x)H+\mathbf s_{H'}(L,x)H',
-\qquad
-\mathbf X=(X_0,X_K)^T,
-$$
+$$\begin{align}
+\mathbf X'=M_L(x)\mathbf X+\mathbf s_H(L,x)H+\mathbf s_{H'}(L,x)H', \qquad \mathbf X=(X_0,X_K)^T,
+\end{align}$$
 
 with
 
@@ -90,193 +74,166 @@ $$
 
 The third field is algebraic:
 
-$$
-X_2=-X_0+
-\frac{12[(L+24)x^2-(L+62)x+39]}{x^6(x-1)}H
--\frac{12(14x-15)}{x^5}H'.
-$$
+$$\begin{align}
+X_2=-X_0+ \frac{12[(L+24)x^2-(L+62)x+39]}{x^6(x-1)}H -\frac{12(14x-15)}{x^5}H'.
+\end{align}$$
 
 The operative object is thus a constrained two-component first-order system plus an algebraic reconstruction, not an unconstrained higher-order metric equation.
 
-## The unchanged GR tidal operator
+## The Unchanged GR Tidal Operator
 
-Eliminating \(X_K\) gives
+Eliminating $X_K$ gives
 
-$$
-X_0''+\frac{2x-1}{x(x-1)}X_0'
--\frac{Lx(x-1)+1}{x^2(x-1)^2}X_0
-=j_L[H,H'].
-$$
+$$\begin{align}
+X_0''+\frac{2x-1}{x(x-1)}X_0' -\frac{Lx(x-1)+1}{x^2(x-1)^2}X_0 =j_L[H,H'].
+\end{align}$$
 
 The homogeneous basis is the GR static tidal pair
 
-$$
-u_\ell=P_\ell^2(2x-1),
-\qquad
-v_\ell=Q_\ell^2(2x-1),
-$$
+$$\begin{align}
+u_\ell=P_\ell^2(2x-1), \qquad v_\ell=Q_\ell^2(2x-1),
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 W_x[u_\ell,v_\ell]=\frac{L(L-2)}{2x(x-1)}.
-$$
+\end{align}$$
 
 Variation of parameters gives
 
-$$
-X_0^{\rm part}
-=-u_\ell(x)\int^x\frac{v_\ell(t)j_L(t)}{W_t}\,dt
-+v_\ell(x)\int^x\frac{u_\ell(t)j_L(t)}{W_t}\,dt.
-$$
+$$\begin{align}
+X_0^{\rm part} =-u_\ell(x)\int^x\frac{v_\ell(t)j_L(t)}{W_t}\,dt +v_\ell(x)\int^x\frac{u_\ell(t)j_L(t)}{W_t}\,dt.
+\end{align}$$
 
 The central chain is
 
-$$
-\text{metric action}
-\to
-\text{order-reduced constraints}
-\to
-\text{GR tidal operator + cubic source}
-\to
-\text{decaying-channel logarithm}.
-$$
+$$\begin{align}
+\text{metric action} \to \text{order-reduced constraints} \to \text{GR tidal operator + cubic source} \to \text{decaying-channel logarithm}.
+\end{align}$$
 
-## Residue, running, and the exceptional quadrupole
+## Residue, Running, and the Exceptional Quadrupole
 
 The decaying Green-function residue factorizes as
 
-$$
-\mathcal R_L(a_1)
-=-\frac76a_1^2L(L-2)(L-4)(L-6).
-$$
+$$\begin{align}
+\mathcal R_L(a_1) =-\frac76a_1^2L(L-2)(L-4)(L-6).
+\end{align}$$
 
 After the Wronskian normalization, the metric logarithm contains
 
-$$
-\widehat\beta_{X_0}
-=-\frac7{12}L^2(L-2)^2(L-4)(L-6).
-$$
+$$\begin{align}
+\widehat\beta_{X_0} =-\frac7{12}L^2(L-2)^2(L-4)(L-6).
+\end{align}$$
 
 The physical gauge-invariant Zerilli--Moncrief coefficient is
 
-$$
-\beta_\ell^{\rm ZM}
-=\epsilon_{\rm e}\frac7{12}
-L^2(L-2)^2(L-4)(L-6).
-$$
+$$\begin{align}
+\beta_\ell^{\rm ZM} =\epsilon_{\rm e}\frac7{12} L^2(L-2)^2(L-4)(L-6).
+\end{align}$$
 
 Hence
 
-$$
+$$\begin{align}
 \ell=2\Longrightarrow L=6\Longrightarrow\beta_2^{\rm ZM}=0,
-$$
+\end{align}$$
 
-while every physical \(\ell\ge3\) runs. The factor \(L-6\) appears at the source-residue level, before the gauge-invariant or EFT normalization is chosen.
+while every physical $\ell\ge3$ runs. The factor $L-6$ appears at the source-residue level, before the gauge-invariant or EFT normalization is chosen.
 
-For a subtraction length \(r_0\),
+For a subtraction length $r_0$,
 
-$$
+$$\begin{align}
 r_0\frac{dB_\ell^{\rm ZM}}{dr_0}=\beta_\ell^{\rm ZM}.
-$$
+\end{align}$$
 
-The sign reverses when using the energy scale \(\mu_R=r_0^{-1}\).
+The sign reverses when using the energy scale $\mu_R=r_0^{-1}$.
 
-## Quadrupole versus octupole
+## Quadrupole Versus Octupole
 
-At fixed integer \(\ell=2\), after removing the additional growing tide,
+At fixed integer $\ell=2$, after removing the additional growing tide,
 
-$$
+$$\begin{align}
 \Delta(B/A)_2^{\rm ZM,fixed}=-2400\,\epsilon_{\rm e}.
-$$
+\end{align}$$
 
 The analytically continued canonical Love number is instead
 
-$$
+$$\begin{align}
 k_2^E=448\,\epsilon_{\rm e}.
-$$
+\end{align}$$
 
 This is a prescription distinction rather than a gauge inconsistency. Fixed-integer local/homogeneous rearrangements and analytic continuation isolate different finite data.
 
-For \(\ell=3\), the source constructs a global horizon-regular Green-function solution. Horizon logarithms in the separate \(P_3^2\) and \(Q_3^2\) channels cancel in the full particular solution. At infinity,
+For $\ell=3$, the source constructs a global horizon-regular Green-function solution. Horizon logarithms in the separate $P_3^2$ and $Q_3^2$ channels cancel in the full particular solution. At infinity,
 
-$$
-\delta\Psi_3^{\rm ZM}\supset
-\frac{9600\,\epsilon_{\rm e}\log x}{x^3},
-$$
+$$\begin{align}
+\delta\Psi_3^{\rm ZM}\supset \frac{9600\,\epsilon_{\rm e}\log x}{x^3},
+\end{align}$$
 
-and, because \(\Psi_{Q,3}^{\rm ZM}\sim1/(42x^3)\),
+and, because $\Psi_{Q,3}^{\rm ZM}\sim1/(42x^3)$,
 
-$$
+$$\begin{align}
 \beta_3^{\rm ZM}=403200\,\epsilon_{\rm e}.
-$$
+\end{align}$$
 
-## Canonical and worldline normalization
+## Canonical and Worldline Normalization
 
 The gauge-invariant to canonical bridge is
 
-$$
-\beta_\ell^+
-=\mathcal C_\ell^{+\leftarrow{\rm ZM}}\beta_\ell^{\rm ZM},
-$$
+$$\begin{align}
+\beta_\ell^+ =\mathcal C_\ell^{+\leftarrow{\rm ZM}}\beta_\ell^{\rm ZM},
+\end{align}$$
 
-$$
-\mathcal C_\ell^{+\leftarrow{\rm ZM}}
-=-\frac{2^{2\ell-1}(\ell!)^4(\ell+1)(\ell+2)}
-{(\ell-1)\ell(2\ell+1)[(2\ell)!]^2}.
-$$
+$$\begin{align}
+\mathcal C_\ell^{+\leftarrow{\rm ZM}} =-\frac{2^{2\ell-1}(\ell!)^4(\ell+1)(\ell+2)} {(\ell-1)\ell(2\ell+1)[(2\ell)!]^2}.
+\end{align}$$
 
 In particular,
 
-$$
+$$\begin{align}
 \beta_3^+=-15360\,\epsilon_{\rm e}.
-$$
+\end{align}$$
 
 For the finite-size worldline action,
 
-$$
-S_{\rm fs}^{(\ell)}
-=\frac{1}{4\pi G}\frac{\lambda_\ell^E}{2\ell!}
-\int d\tau\,
-\mathcal E_{a_1\cdots a_\ell}\mathcal E^{a_1\cdots a_\ell},
-$$
+$$\begin{align}
+S_{\rm fs}^{(\ell)} =\frac{1}{4\pi G}\frac{\lambda_\ell^E}{2\ell!} \int d\tau\, \mathcal E_{a_1\cdots a_\ell}\mathcal E^{a_1\cdots a_\ell},
+\end{align}$$
 
 the exterior coefficient obeys
 
-$$
-r_0\frac{dc_{E,\ell}^{\rm fs}}{dr_0}
-=\frac{2^\ell M_0^{2\ell+1}}{G(2\ell)!}\beta_\ell^+.
-$$
+$$\begin{align}
+r_0\frac{dc_{E,\ell}^{\rm fs}}{dr_0} =\frac{2^\ell M_0^{2\ell+1}}{G(2\ell)!}\beta_\ell^+.
+\end{align}$$
 
-This does not compute a generic point-particle counterterm \(c_{E,\ell}^{\rm pp}\).
+This does not compute a generic point-particle counterterm $c_{E,\ell}^{\rm pp}$.
 
-## Reusable method and scope
+## Reusable Method and Scope
 
 The most useful workflow is:
 
-1. retain \(L=\ell(\ell+1)\) through the exact radial action;
+1. retain $L=\ell(\ell+1)$ through the exact radial action;
 2. reconstruct only the degree allowed by the projected action and verify unused multipoles;
 3. vary before perturbative order reduction;
 4. reduce the constrained metric fields while preserving the GR homogeneous operator;
 5. read the logarithm from the decaying Green-function residue and separately check horizon regularity;
 6. map the logarithm to a gauge invariant before converting to canonical/worldline conventions.
 
-The calculation is static, electric, even parity, asymptotically flat, first order in the parity-even cubic-Weyl coupling, and restricted to \(\ell\ge2\). Rotation, frequency dependence, magnetic sectors, and full point-source matching are outside scope.
+The calculation is static, electric, even parity, asymptotically flat, first order in the parity-even cubic-Weyl coupling, and restricted to $\ell\ge2$. Rotation, frequency dependence, magnetic sectors, and full point-source matching are outside scope.
 
 For metric/CPS work, the attraction is that the off-shell radial action and algebraic metric reconstruction remain visible. This note does not itself derive a covariant presymplectic current or gravitational charge.
 
-## Verification note
+## Verification Note
 
 ### Checked
 
 - The bundled exact expressions were loaded in Mathematica. Fifteen of its eighteen shipped checks pass directly: first-order matrix, polynomial degrees, source dimensions, normalization bridge, low-multipole anchors, finite-size running, and the quadrupole branch ratio.
-- After reconstructing the intended multiline expressions with enclosing parentheses, the stored \(X_2\) identity, generic Zerilli--Moncrief beta, and canonical beta all return exact zero residuals. Combined result: \(18/18\).
+- After reconstructing the intended multiline expressions with enclosing parentheses, the stored $X_2$ identity, generic Zerilli--Moncrief beta, and canonical beta all return exact zero residuals. Combined result: $18/18$.
 - Exact low-multipole values were independently recovered:
-  \[
-  \beta_2^{\rm ZM}=0,\qquad
-  \beta_3^{\rm ZM}=403200,\qquad
-  \beta_3^+=-15360.
-  \]
+
+$$\begin{align}
+\beta_2^{\rm ZM}=0,\qquad \beta_3^{\rm ZM}=403200,\qquad \beta_3^+=-15360.
+\end{align}$$
 
 ### Failed
 
@@ -284,6 +241,5 @@ For metric/CPS work, the attraction is that the off-shell radial action and alge
 
 ### Blocked
 
-- The full four-dimensional angular projections, reconstruction through \(\ell=13\), arbitrary-\(L\) Euler--Lagrange closure, global \(\ell=3\) solution, and all gauge-invariance identities were not independently rederived from the \(C^3\) action.
+- The full four-dimensional angular projections, reconstruction through $\ell=13$, arbitrary-$L$ Euler--Lagrange closure, global $\ell=3$ solution, and all gauge-invariance identities were not independently rederived from the $C^3$ action.
 - Agreement with the modified-Teukolsky literature and external point-source matching remains source-derived.
-

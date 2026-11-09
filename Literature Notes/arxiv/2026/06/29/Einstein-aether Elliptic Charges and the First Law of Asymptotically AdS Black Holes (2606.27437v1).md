@@ -19,7 +19,7 @@ tags: []
 
 Back to [[2026_06_29_overview]].
 
-# Einstein-aether universal horizons and the misalignment problem
+# Einstein-Aether Universal Horizons and the Misalignment Problem
 
 The paper works in Einstein-aether theory, where the metric is supplemented by a unit timelike one-form $u_a$. The action is
 
@@ -97,7 +97,7 @@ $$\begin{align}
 
 The parameter $\ell_s$ measures asymptotic misalignment through the growing behavior of $(s\cdot\chi)$. The aligned ensemble is the limit $\ell_s\to\infty$.
 
-# The AdS universal-horizon first-law obstruction
+# The AdS Universal-Horizon First-Law Obstruction
 
 The background-subtracted universal-horizon mass used by the paper is
 
@@ -119,7 +119,7 @@ q_{\mathrm{UH}} =\frac{2}{3r_{\mathrm{UH}}} +\frac{3r_{\mathrm{UH}}}{\ell_u^2} +
 
 The first two contributions are the entropy and AdS enthalpy pieces. The third contribution is proportional to $1/\ell_s$, so it disappears in the aligned limit. In Horava-Lifshitz gravity an analogous term is known to be tied to an elliptic charge for khronon reparameterizations. Einstein-aether theory does not inherit that charge directly, because $u_a=-N\nabla_a T$ is invariant under a reparameterization $T\mapsto \tilde T(T)$ after $N$ is transformed accordingly. The paper's problem is therefore to find the Einstein-aether replacement for that elliptic-charge mechanism.
 
-# Reduced aether symmetry
+# Reduced Aether Symmetry
 
 The key step is to use the Raychaudhuri identity for the aether congruence, restrict to the twist-free spherical sector, and set $c_a=c_{14}=0$. The kinetic aether Lagrangian can then be written as
 
@@ -165,7 +165,7 @@ $$\begin{align}
 
 using $a\cdot u=0$.
 
-# Current, charge, and flux
+# Current, Charge, and Flux
 
 In the covariant phase-space notation of the paper, a symmetry satisfies
 
@@ -215,7 +215,7 @@ $$\begin{align}
 
 This flux is the object that can contribute at the asymptotic boundary.
 
-# Hamiltonian role of the weakly vanishing charge
+# Hamiltonian Role of the Weakly Vanishing Charge
 
 The paper also gives a Hamiltonian interpretation. In units $16\pi G_{\ae}=1$, the momentum density conjugate to $u_a$ in the reduced sector is
 
@@ -261,7 +261,7 @@ $$\begin{align}
 
 The local translation for the vault is that $Q_f$ behaves more like a constraint generator than like a nonzero bulk charge. The physically relevant first-law data are in the boundary flux and in the choice of charge sector.
 
-# Alignment as the zero-aether-charge ensemble
+# Alignment as the Zero-Aether-Charge Ensemble
 
 To identify which part of the solution carries the charge flux, the paper switches to the Killing frame. Let $\mathcal R^a$ be spatial with respect to $\chi^a$. Writing $J_s=s_aJ^a$, one has
 
@@ -329,7 +329,7 @@ $$\begin{align}
 
 The aligned ensemble is $\alpha=0$ with $\delta\alpha=0$, so both the flux and its variation vanish. The extra term in $q_{\mathrm{UH}}$ is proportional to $1/\ell_s=-\vartheta/3$, so it switches off in the same charge sector.
 
-# Local translation
+# Local Translation
 
 For the vault's charge/CPS vocabulary, the useful dictionary is:
 
@@ -341,7 +341,7 @@ For the vault's charge/CPS vocabulary, the useful dictionary is:
 
 For null-boundary and CPS notes, the transferable mechanism is the separation between a vanishing constraint-type bulk charge and a nontrivial boundary flux. It is a useful model for situations where a field-space symmetry is invisible in a preferred slicing but visible in the boundary contribution to a first law.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

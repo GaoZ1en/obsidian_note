@@ -16,7 +16,7 @@ Back to [[2026_07_15_overview]].
 
 The paper's reusable mechanism is vertical integration in the presence of picture-changing-operator patching. A bulk torus integral vanishes by ghost number, yet the modular-domain patch boundary contributes a finite term. This is a spectral/one-loop reference rather than a CPS charge paper.
 
-# The soft-dilaton puzzle
+# The Soft-Dilaton Puzzle
 
 The soft dilaton theorem multiplies a genus-$g$, $n$-point closed-string amplitude by
 
@@ -54,9 +54,9 @@ $$\begin{align}
 
 so the new term cancels the unwanted string-coupling dependence.
 
-# Odd-spin-structure torus data
+# Odd-Spin-Structure Torus Data
 
-## Dilaton vertex and picture changing
+## Dilaton Vertex and Picture Changing
 
 The picture-changing operators are
 
@@ -72,7 +72,7 @@ V_D =-4\left( \eta c\,\bar c\bar\partial\bar\xi e^{-2\bar\phi} -\bar\eta\bar c\,
 
 Applying both picture-changing operators produces a sign opposite to a commonly quoted bosonic-string convention. The source keeps (2.2), whose normalization is fixed by comparison with the superstring field-theory action.
 
-## Torus and ghost normalization
+## Torus and Ghost Normalization
 
 The torus coordinate obeys
 
@@ -88,7 +88,7 @@ b(w)=4\pi^2\sum_nb_ne^{2\pi inw}, \qquad c(w)=\frac{1}{2\pi}\sum_nc_ne^{2\pi inw
 
 In the odd--odd spin structure, the matter partition function is a Witten index proportional to the target-space Euler number $\chi$. The relative sign follows from the opposite type-IIA/type-IIB GSO projections.
 
-# Why the bulk modular integral vanishes
+# Why the Bulk Modular Integral Vanishes
 
 The fundamental domain is
 
@@ -112,7 +112,7 @@ $$\begin{align}
 
 The bulk correlator (2.18) vanishes by left/right ghost-number conservation. This is not the final amplitude because the chosen PCO cycles are not globally compatible with modular identification.
 
-# Modular patching and vertical integration
+# Modular Patching and Vertical Integration
 
 The transformation
 
@@ -166,7 +166,7 @@ $$\begin{align}
 
 and hence the effective-action term (3.12).
 
-# Other spin structures
+# Other Spin Structures
 
 Section 4 checks that no additional contribution survives. Under modular transformations the three even spin structures permute, and their PCO contours must be patched as well. The relevant vertical correlator is odd under
 
@@ -178,7 +178,7 @@ for a symmetric contour choice, so its integral vanishes. The same parity argume
 
 Thus the nonzero term is localized to the odd--odd sector and its superghost zero-mode/vertical-integration structure.
 
-# Use in black-hole and one-loop calculations
+# Use in Black-Hole and One-Loop Calculations
 
 The practical chain is
 
@@ -195,7 +195,7 @@ This is useful when:
 
 It does not by itself determine a spacetime boundary charge, symplectic flux, or Wald entropy correction. The connection to black holes is through the effective action and index, not through a new horizon CPS construction.
 
-# Verification boundary
+# Verification Boundary
 
 - Mathematica substituted (3.8)--(3.9) into the coefficient in (3.4), canceled the $\tau$ and $\eta$ factors, integrated over the arc of length $\pi/6$, and reproduced $\mp\chi/48$ for one jump and $\mp\chi/24$ after doubling.
 - The theta-function contour evaluations leading to (3.8)--(3.9), the correlator normalizations, GSO signs, and the parity cancellation of all other spin structures remain source-derived.

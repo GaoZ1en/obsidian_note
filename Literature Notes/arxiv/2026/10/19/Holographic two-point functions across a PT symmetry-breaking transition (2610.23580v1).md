@@ -13,11 +13,11 @@ summary: "Mixed-scalar holographic source-response map and logarithmic EP limit,
 tags: []
 ---
 
-# Holographic two-point functions across a PT symmetry-breaking transition
+# Holographic Two-Point Functions Across a PT Symmetry-Breaking Transition
 
 结论：这个模型给出一套可直接复用的 **two-field source/response map、exceptional-point 极限和 logarithmic partner 构造**。两个普通幂律在保持原始 source basis 的极限中合成 logarithmic correlator；$\epsilon<0$ 时则变成 log-periodic correlator。中心公式通过独立代数和径向方程核验，但 PT 的量子实现有额外假设，且“任意两个距离即可判定 phase”的说法有相位混叠反例。
 
-## Source tree and reading guide
+## Source Tree and Reading Guide
 
 Read official [2610.23580v1](https://arxiv.org/abs/2610.23580v1), PDF (27 pages) and complete TeX, 2026-10-19. 因 three appendices 和跨 bulk/CFT/thermal 的长公式链，采用 monograph mode。PDF 第 14、18 页已渲染确认 two-scale inference 和 pole-order 讨论。
 
@@ -35,14 +35,13 @@ Read official [2610.23580v1](https://arxiv.org/abs/2610.23580v1), PDF (27 pages)
 
 Essential reading: 2 → 3 → 4.2 → B/C；technical reference: A、5.3；physical interpretation: 5.1/5.2 最后读。不要把 $\Delta_\pm$ 的下标读成 standard/alternate quantization，也不要先把 singular eigenbasis 的两项分别取 $\epsilon\to0$。
 
-## Indefinite kinetic form and the mass exceptional point
+## Indefinite Kinetic Form and the Mass Exceptional Point
 
 Fixed Euclidean $AdS_{d+1}$, $L_{\rm AdS}=1$, $ds^2=z^{-2}(dz^2+dx^idx^i)$；两 real scalars 的 action 是
 
-$$
-S=-\frac12\int\sqrt g\,[2\nabla\phi_1\cdot\nabla\phi_2
-+2m^2\phi_1\phi_2+\phi_1^2+\epsilon\phi_2^2].\tag{2.1}
-$$
+$$\begin{align}
+S=-\frac12\int\sqrt g\,[2\nabla\phi_1\cdot\nabla\phi_2 +2m^2\phi_1\phi_2+\phi_1^2+\epsilon\phi_2^2].\tag{2.1}
+\end{align}$$
 
 Assumptions: $a_0=m^2+d^2/4>0$, real $\epsilon<a_0^2$；此处 $m^2$ 是可为负的参数。令 $s=\sqrt\epsilon$，对 $\epsilon<0$ 取 $s=i\sqrt{|\epsilon|}$。EOM 为
 
@@ -54,27 +53,23 @@ $$
 
 由第二式消去 $\phi_1$ 得 $[(\Box-m^2)^2-\epsilon]\phi_2=0$。对 $s\ne0$，
 
-$$
-\psi_\pm=\frac12(\phi_1\pm s\phi_2),\quad
-\phi_1=\psi_++\psi_-,\quad\phi_2=(\psi_+-\psi_-)/s,
-$$
-$$
-S=-\frac1s\int\sqrt g\,[(\nabla\psi_+)^2+(m^2+s)\psi_+^2]
-+\frac1s\int\sqrt g\,[(\nabla\psi_-)^2+(m^2-s)\psi_-^2].
-$$
+$$\begin{align}
+\psi_\pm=\frac12(\phi_1\pm s\phi_2),\quad \phi_1=\psi_++\psi_-,\quad\phi_2=(\psi_+-\psi_-)/s,
+\end{align}$$
+
+$$\begin{align}
+S=-\frac1s\int\sqrt g\,[(\nabla\psi_+)^2+(m^2+s)\psi_+^2] +\frac1s\int\sqrt g\,[(\nabla\psi_-)^2+(m^2-s)\psi_-^2].
+\end{align}$$
 
 两通道的相反 kinetic signs 必须保留。原始 $K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ 满足 $\det K=-1$，包括 $\epsilon=0$；exceptional point 是 mass/evolution matrix 的不可对角化，不是 kinetic matrix 的秩降。$s=0$ 时 $M$ 是非零 nilpotent Jordan block，singular eigenbasis 必须由 generalized mode 补足。
 
-## Dimensions and notation dictionary
+## Dimensions and Notation Dictionary
 
 两通道都选 standard branch：
 
-$$
-\Delta_\pm=\frac d2+\sqrt{\frac{d^2}{4}+m^2\pm s},\quad
-\bar\Delta=\frac{\Delta_++\Delta_-}{2},\quad
-\delta=\frac{\Delta_+-\Delta_-}{2},\quad
-\beta=2\bar\Delta-d,\quad\eta=\delta^2=\frac\epsilon{\beta^2}.
-$$
+$$\begin{align}
+\Delta_\pm=\frac d2+\sqrt{\frac{d^2}{4}+m^2\pm s},\quad \bar\Delta=\frac{\Delta_++\Delta_-}{2},\quad \delta=\frac{\Delta_+-\Delta_-}{2},\quad \beta=2\bar\Delta-d,\quad\eta=\delta^2=\frac\epsilon{\beta^2}.
+\end{align}$$
 
 The identity $s=\beta\delta$ follows by subtracting $\Delta_\pm(\Delta_\pm-d)=m^2\pm s$. Principal square roots imply real $\Delta_\pm>d/2$ for $0<\epsilon<a_0^2$, and conjugate $\Delta_\pm$ with $\operatorname{Re}\Delta_\pm>d/2$ for $\epsilon<0$. At zero, $\Delta=d/2+\sqrt{a_0}$, $\beta_0=2\Delta-d>0$.
 
@@ -91,20 +86,19 @@ The identity $s=\beta\delta$ follows by subtracting $\Delta_\pm(\Delta_\pm-d)=m^
 
 No alternate boundary condition, mixed double-trace deformation, or positive bulk Hilbert-space construction is supplied here.
 
-## Bulk propagator and the regulated source/response map
+## Bulk Propagator and the Regulated source/response Map
 
 For $\operatorname{Re}\Delta>d/2$,
 
-$$
-K_\Delta(z,x;x')=\frac1{N_\Delta}\frac{z^\Delta}{(z^2+|x-x'|^2)^\Delta},\qquad
-N_\Delta=\pi^{d/2}\frac{\Gamma(\Delta-d/2)}{\Gamma(\Delta)}.
-$$
+$$\begin{align}
+K_\Delta(z,x;x')=\frac1{N_\Delta}\frac{z^\Delta}{(z^2+|x-x'|^2)^\Delta},\qquad N_\Delta=\pi^{d/2}\frac{\Gamma(\Delta-d/2)}{\Gamma(\Delta)}.
+\end{align}$$
 
 The normalization follows from integrating the rescaled kernel over $\mathbb R^d$; it fixes $\psi_\pm\sim z^{d-\Delta_\pm}u_\pm$. At noncoincident points the response term is $z^{\Delta_\pm}B_\pm$ with
 
-$$
+$$\begin{align}
 B_\pm(x)=\frac1{N_{\Delta_\pm}}\int\frac{u_\pm(x')\,d^dx'}{|x-x'|^{2\Delta_\pm}}.
-$$
+\end{align}$$
 
 This is a distributionally renormalized expression: the coincident-point singularity cannot be treated as an ordinary convergent integral. The mixed field kernel, with field index as row and source index as column, is
 
@@ -119,38 +113,33 @@ The paper names the upper-right entry $K_{21}$ and lower-left $K_{12}$; this ind
 
 On $z=\zeta>0$, $\sqrt\gamma=\zeta^{-d}$ and outward $n\cdot\nabla=-z\partial_z$. Thus
 
-$$
-S_{\rm reg}(\zeta)=\frac12\int_{z=\zeta}z^{-d}z\partial_z(\phi_1\phi_2),
-\qquad\phi_1\phi_2=(\psi_+^2-\psi_-^2)/s.
-$$
+$$\begin{align}
+S_{\rm reg}(\zeta)=\frac12\int_{z=\zeta}z^{-d}z\partial_z(\phi_1\phi_2), \qquad\phi_1\phi_2=(\psi_+^2-\psi_-^2)/s.
+\end{align}$$
 
 All mixed $\Delta_+\Delta_-$ products cancel. The zeroth-derivative counterterm is
 
-$$
-S_{\rm ct}^{(0)}(\zeta)=\int_{z=\zeta}\sqrt\gamma
-\left[\frac{\phi_1^2+\epsilon\phi_2^2}{2\beta}-(d-\bar\Delta)\phi_1\phi_2\right]
-=-\frac1s\int\sqrt\gamma[(d-\Delta_+)\psi_+^2-(d-\Delta_-)\psi_-^2].
-$$
+$$\begin{align}
+S_{\rm ct}^{(0)}(\zeta)=\int_{z=\zeta}\sqrt\gamma \left[\frac{\phi_1^2+\epsilon\phi_2^2}{2\beta}-(d-\bar\Delta)\phi_1\phi_2\right] =-\frac1s\int\sqrt\gamma[(d-\Delta_+)\psi_+^2-(d-\Delta_-)\psi_-^2].
+\end{align}$$
 
 For $\operatorname{Re}(2\Delta_\pm-d)\geq2$, include the derivative counterterms mentioned in B/C; integer $\Delta_\pm-d/2$ require the usual additional logarithmic treatment. The explicit calculation here is the noncontact sector with generic nonresonant dimensions. Keep the order
 
-$$
+$$\begin{align}
 S_{\rm ren}=\lim_{\zeta\to0}\left[S_{\rm reg}(\zeta)+S_{\rm ct}^{(0)}(\zeta)+S_{\rm ct}^{(\partial)}(\zeta)\right]
-$$
+\end{align}$$
 
 before taking $\epsilon\to0$ at fixed $r>0$ and fixed original sources. The direct EP calculation below cross-checks this separated-point limit, not uniform convergence at $r=0$ or arbitrary correlated cutoff limits.
 
 Writing $\widetilde A_\pm=(2\Delta_\pm-d)/(2N_{\Delta_\pm})$ gives
 
-$$
-S_{\rm ren}=\frac2s\int d^dx\,d^dx'
-\left[\frac{\widetilde A_+u_+(x)u_+(x')}{r^{2\Delta_+}}
--\frac{\widetilde A_-u_-(x)u_-(x')}{r^{2\Delta_-}}\right].
-$$
+$$\begin{align}
+S_{\rm ren}=\frac2s\int d^dx\,d^dx' \left[\frac{\widetilde A_+u_+(x)u_+(x')}{r^{2\Delta_+}} -\frac{\widetilde A_-u_-(x)u_-(x')}{r^{2\Delta_-}}\right].
+\end{align}$$
 
 The required cutoff counterterm has source-response cross terms contributing to this finite coefficient. This does **not** mean an arbitrary finite local functional of the renormalized sources can change separated-point normalization: its second variation is contact supported. The overall action normalization and operator basis remain physical inputs here.
 
-## Functional derivatives, the logarithmic limit and App. B
+## Functional Derivatives, the Logarithmic Limit and App. B
 
 With $W=\ln Z=-S_{\rm ren}$ and source coupling $\int(\phi_{1(0)}\mathscr O_1+\beta\phi_{2(0)}\mathscr O_2)$, define $a_\pm(r)=\widetilde A_\pm r^{-2\Delta_\pm}$. The Hessian is
 
@@ -163,12 +152,13 @@ $$
 
 Set $c_1=-(\widetilde A_+-\widetilde A_-)/s$ and $c_2=-(\widetilde A_++\widetilde A_-)/\beta$. Then
 
-$$
+$$\begin{align}
 G_{11}=r^{-2\bar\Delta}\left[c_1\cosh(2\delta\ln r)-\frac{c_2}{\delta}\sinh(2\delta\ln r)\right],
-$$
-$$
+\end{align}$$
+
+$$\begin{align}
 G_{12}=r^{-2\bar\Delta}[c_2\cosh(2\delta\ln r)-c_1\delta\sinh(2\delta\ln r)],\quad G_{22}=\eta G_{11}.
-$$
+\end{align}$$
 
 For $\delta=i\kappa$, these are real combinations of $\cos(2\kappa\ln r)$ and $\sin(2\kappa\ln r)$; reality follows from conjugate channel coefficients, not positivity. At the EP,
 
@@ -177,40 +167,36 @@ c_1\to-\frac{2\partial_\Delta\widetilde A}{\beta_0},\quad
 c_2\to-\frac{2\widetilde A}{\beta_0},\quad
 G\to r^{-2\Delta}\begin{pmatrix}c_1-2c_2\ln r&c_2\\c_2&0\end{pmatrix},
 $$
-$$
-\partial_\Delta\widetilde A=\widetilde A\left[
-\frac2{2\Delta-d}+\psi(\Delta)-\psi(\Delta-d/2)\right].
-$$
+
+$$\begin{align}
+\partial_\Delta\widetilde A=\widetilde A\left[ \frac2{2\Delta-d}+\psi(\Delta)-\psi(\Delta-d/2)\right].
+\end{align}$$
 
 App. B constructs the same answer without dividing two vanishing differences. Differentiate the KG equation with respect to $\Delta$ to obtain
 
-$$
-K_{12}=\frac1{2\Delta-d}\partial_\Delta K_\Delta,\quad
-(\Box-m^2)K_{12}=K_\Delta.
-$$
+$$\begin{align}
+K_{12}=\frac1{2\Delta-d}\partial_\Delta K_\Delta,\quad (\Box-m^2)K_{12}=K_\Delta.
+\end{align}$$
 
 At finite cutoff the source terms are
 
-$$
+$$\begin{align}
 \phi_1=z^{d-\Delta}\phi_{1(0)}+z^\Delta B_1+\cdots,
-$$
-$$
-\phi_2=z^{d-\Delta}\left(\phi_{2(0)}-\frac{\ln z}{\beta_0}\phi_{1(0)}\right)
-+z^\Delta\left[B_2+\frac{B_1\ln z-C_1-B_1\partial_\Delta\ln N_\Delta}{\beta_0}\right]+\cdots,
-$$
+\end{align}$$
+
+$$\begin{align}
+\phi_2=z^{d-\Delta}\left(\phi_{2(0)}-\frac{\ln z}{\beta_0}\phi_{1(0)}\right) +z^\Delta\left[B_2+\frac{B_1\ln z-C_1-B_1\partial_\Delta\ln N_\Delta}{\beta_0}\right]+\cdots,
+\end{align}$$
 
 where $C_1=N_\Delta^{-1}\int r^{-2\Delta}\ln r^2\,\phi_{1(0)}(x')d^dx'$. Both the leading distribution and the nonlocal response term are necessary; discarding the latter loses the finite action. The counterterm is $\int\sqrt\gamma[\phi_1^2/(2\beta_0)-(d-\Delta)\phi_1\phi_2]$ plus necessary derivative terms. The finite quadratic action reads
 
-$$
-S_{\rm ren}^{EP}=\int\frac{d^dx\,d^dx'}{r^{2\Delta}}
-\left[2\widetilde A\phi_{1(0)}(x)\phi_{2(0)}(x')
-+\frac{\partial_\Delta\widetilde A-\widetilde A\ln r^2}{\beta_0}
-\phi_{1(0)}(x)\phi_{1(0)}(x')\right].
-$$
+$$\begin{align}
+S_{\rm ren}^{EP}=\int\frac{d^dx\,d^dx'}{r^{2\Delta}} \left[2\widetilde A\phi_{1(0)}(x)\phi_{2(0)}(x') +\frac{\partial_\Delta\widetilde A-\widetilde A\ln r^2}{\beta_0} \phi_{1(0)}(x)\phi_{1(0)}(x')\right].
+\end{align}$$
 
 Differentiating it reproduces the limit above. A logarithmic basis shift $\mathscr O_1\mapsto\mathscr O_1+\lambda\mathscr O_2$ changes $c_1$ by $2\lambda c_2$ at the EP while leaving the logarithmic coefficient fixed. This is a basis convention, distinct from a local contact-term ambiguity.
 
-## Ward identities and what two distances can determine
+## Ward Identities and What Two Distances Can Determine
 
 On a closed pair of scalar primaries with unbroken conformal symmetry, $d\geq2$, write
 
@@ -221,9 +207,9 @@ $$
 
 Translation/rotation invariance gives symmetric $G(r)$. Dilatation and special conformal Ward identities independently give
 
-$$
+$$\begin{align}
 rG'=-HG-GH^T,\qquad HG=GH^T.
-$$
+\end{align}$$
 
 The latter condition removes the third independent normalization of a symmetric $2\times2$ matrix. Hence
 
@@ -238,20 +224,19 @@ App. A.2 gives an explicit real basis change. For $H_0=\begin{pmatrix}a&b\\c&e\e
 
 For $\det G(1)\ne0$,
 
-$$
+$$\begin{align}
 G(r)G(r_0)^{-1}=e^{-2H\ln(r/r_0)}.
-$$
+\end{align}$$
 
 **Failed — unrestricted inference after Eqs. (4.26)–(4.28), PDF p. 14.** The matrix identity is correct, but its eigenvalues need not be nonreal when $\eta<0$. For example, take $\eta=-1$, $N=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ and $\ln(r/r_0)=\pi$. Then $e^{-2\pi N}=I$, so the ratio is a positive scalar matrix although $H$ has conjugate complex eigenvalues. More generally the alias occurs at $2\kappa\ln(r/r_0)\in\pi\mathbb Z$; a matrix logarithm also has branch ambiguity. A nonreal pair is a useful sufficient diagnostic, while a real pair at one distance ratio is inconclusive. Multiple nearby scales or the local generator $H=-\tfrac12(rG')G^{-1}$ remove this particular ambiguity. At the genuine EP, $N\ne0$, $\ln(r/r_0)\ne0$ retains a Jordan block.
 
-## Pseudo-Hermiticity and the actual PT assumptions
+## Pseudo-Hermiticity and the Actual PT Assumptions
 
 For the holographic constants,
 
-$$
-\det G(1)=\eta c_1^2-c_2^2
-=-\frac{4\widetilde A_+\widetilde A_-}{\beta^2}<0.
-$$
+$$\begin{align}
+\det G(1)=\eta c_1^2-c_2^2 =-\frac{4\widetilde A_+\widetilde A_-}{\beta^2}<0.
+\end{align}$$
 
 For real dimensions both factors are positive; for conjugate dimensions their product is $|\widetilde A_+|^2$. Thus the conventional Gram form is indefinite, including the EP. With the paper's operator-index convention the coefficient-state Hamiltonian is $H^T$; $HG=GH^T$ is its self-adjointness relation in this real indefinite form. Do not replace this with positive-definite unitarity.
 
@@ -259,58 +244,53 @@ Source-derived physical identification: continue to Lorentzian global AdS, use $
 
 App. A.1 explains the kinetic restriction: for real constant symmetric $K,V$ with invertible $K$, a definite $K$ can be reduced to $\pm I$, making $K^{-1}V$ diagonalizable over the reals. An EP therefore requires indefinite $K$. Null-basis rescalings and field exchange bring the nontrivial two-field potential to the stated model, up to an overall action sign. This classification excludes derivative mixing beyond constant $K$, extra fields, and singular kinetic matrices.
 
-## Global AdS modes and thermal BTZ poles
+## Global AdS Modes and Thermal BTZ Poles
 
 For global $AdS_{d+1}$, $ds^2=\cos^{-2}\rho[-dt^2+d\rho^2+\sin^2\rho\,d\Omega_{d-1}^2]$, set $y=\sin^2\rho$ and $R=y^{\ell/2}(1-y)^{\Delta/2}F(y)$. Independent radial reduction gives
 
-$$
-y(1-y)F''+[\ell+d/2-(\ell+\Delta+1)y]F'
-+\frac{\omega^2-(\ell+\Delta)^2}{4}F=0.
-$$
+$$\begin{align}
+y(1-y)F''+[\ell+d/2-(\ell+\Delta+1)y]F' +\frac{\omega^2-(\ell+\Delta)^2}{4}F=0.
+\end{align}$$
 
 Regularity at the origin and source-free standard falloff select $F={}_2F_1(-n,\Delta+\ell+n;\ell+d/2;y)$ and the positive-frequency branch
 
-$$
+$$\begin{align}
 \omega_{\pm,n\ell}=\Delta_\pm+\ell+2n,\qquad n\in\mathbb Z_{\geq0}.
-$$
+\end{align}$$
 
 For complex $\Delta_\pm$ one mode grows and one decays as $e^{\pm\kappa t}$; at coalescence $(e^{-i\omega_+t}-e^{-i\omega_-t})/(\omega_+-\omega_-)\to-it e^{-i\omega t}$. Boundary logarithms and time-polynomial generalized modes are two aspects of the same Jordan limit.
 
 For planar nonrotating BTZ, $d=2$, $x\in\mathbb R$, temperature $T_H>0$, the Euclidean conformal map replaces $r$ by
 
-$$
-r_T=\frac{|\sinh[\pi T_H(x+i\tau)]|}{\pi T_H},\qquad
-G(\tau,x)=r_T^{-2H}G(1).
-$$
+$$\begin{align}
+r_T=\frac{|\sinh[\pi T_H(x+i\tau)]|}{\pi T_H},\qquad G(\tau,x)=r_T^{-2H}G(1).
+\end{align}$$
 
 Large-distance correlation lengths are $1/(2\pi T_H\Delta_\pm)$ for real dimensions. At the EP the spatial decay includes $(a+b|x|)e^{-2\pi T_H\Delta|x|}$; for complex dimensions there is a real envelope with wave number $2\pi T_H\kappa$.
 
 To reproduce the pole statement independently, set $r_h=2\pi T_H$, $f(r)=r^2-r_h^2$, $y=1-r_h^2/r^2$ and
 
-$$
-R=y^{-i\omega/(2r_h)}(1-y)^{\Delta/2}F(y),\quad
-a=\Delta/2-\frac{i(\omega-k)}{2r_h},\quad
-b=\Delta/2-\frac{i(\omega+k)}{2r_h},\quad c=1-\frac{i\omega}{r_h}.
-$$
+$$\begin{align}
+R=y^{-i\omega/(2r_h)}(1-y)^{\Delta/2}F(y),\quad a=\Delta/2-\frac{i(\omega-k)}{2r_h},\quad b=\Delta/2-\frac{i(\omega+k)}{2r_h},\quad c=1-\frac{i\omega}{r_h}.
+\end{align}$$
 
 The KG radial equation reduces to the hypergeometric equation with $(a,b,c)$. The ingoing solution has source coefficient proportional to $\Gamma(c)\Gamma(\Delta-1)/[\Gamma(a)\Gamma(b)]$, and response/source ratio proportional to
 
-$$
-\frac{\Gamma(1-\Delta)}{\Gamma(\Delta-1)}
-\frac{\Gamma(a)\Gamma(b)}{\Gamma(c-a)\Gamma(c-b)}.
-$$
+$$\begin{align}
+\frac{\Gamma(1-\Delta)}{\Gamma(\Delta-1)} \frac{\Gamma(a)\Gamma(b)}{\Gamma(c-a)\Gamma(c-b)}.
+\end{align}$$
 
 For generic noninteger $\Delta$ without cancellations, poles occur at
 
-$$
+$$\begin{align}
 \omega=\pm k-4\pi iT_H(n+\Delta_\pm/2).
-$$
+\end{align}$$
 
 All these BTZ poles are damped since $\operatorname{Re}\Delta_\pm>1$, in contrast with the global-AdS growing branch. At fixed $n,k$ and fixed sign of $k$, the channel difference is $-4\pi iT_H\delta$: imaginary for real $\delta$, real for $\delta=i\kappa$. The “over/critical/underdamped” terminology concerns the two-channel thermal response at fixed background parameters, not a PT-invariant dissipative Hamiltonian.
 
 At late time and fixed $x$, analytic continuation gives an exponential matrix $e^{-2\pi T_HtH}$ multiplied by a time-independent matrix containing the discontinuity/normalization (including $\sin\pi H$). Thus generic EP response contains $t e^{-2\pi T_H\Delta t}$; the prefactor can cancel terms at integer dimensions, explicitly excluded in the paper's discussion. At fixed nonzero momentum the single-channel poles are simple, so the dimension derivative producing $G_R^{11}$ makes them double. At $k=0$, the two gamma poles coincide: single-channel/$G_R^{12}$ poles are double, and $G_R^{11}$ is generically triple, giving $t^2e^{-2\pi T_H\Delta t}$ for a spatially uniform source. **Fixed position and fixed zero momentum are distinct limits.** No full contact-term normalization of the retarded function is claimed by this pole calculation.
 
-## Reusable objects and derivation ledger
+## Reusable Objects and Derivation Ledger
 
 | Input | Intermediate result | Output for AdS/CPS work |
 | --- | --- | --- |
@@ -324,7 +304,7 @@ At late time and fixed $x$, analytic continuation gives an exponential matrix $e
 
 The corresponding fixed-metric bulk potential current is $\theta^\mu=-\nabla^\mu\phi_2\delta\phi_1-\nabla^\mu\phi_1\delta\phi_2$ (with the volume form restored). This makes the original canonical pairing transparent before diagonalization; singular eigenmode normalization at $\epsilon=0$ does not erase a canonical field. Translating to the vault's scalar mode expansion should retain both generalized solutions and the source normalization $J_2=\beta\phi_{2(0)}$. No claim about alternate quantization, regional state sewing, or positivity follows from the present correlator calculation.
 
-## Verification log
+## Verification Log
 
 **Checked — xAct:** variational derivatives of the two-field action reproduce both coupled KG equations with zero residual.
 

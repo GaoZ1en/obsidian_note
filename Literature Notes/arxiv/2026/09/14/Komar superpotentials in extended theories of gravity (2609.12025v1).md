@@ -20,7 +20,7 @@ Daily overview: [[2026_09_14_overview]]
 
 The arbitrary-$N$ result is weaker than the abstract may suggest. For $N>2$ the paper proves a coordinate derivative-expansion recursion for the superpotential coefficients; it does not supply a closed manifestly covariant formula comparable to the $N=2$ expression.
 
-# How to read the paper
+# How to Read the Paper
 
 - **Essential:** Secs. III.B--III.C, especially Eqs. (3.21), (3.27), (3.29), and (3.39). These contain the covariant $M$-tensor formulation and the $f(R)$/quadratic examples.
 - **Derivation reference:** Sec. III.A and Appendix B.1. They show how independence of the derivatives of $\xi$ yields the current split and prove the $N=2$ potential.
@@ -28,7 +28,7 @@ The arbitrary-$N$ result is weaker than the abstract may suggest. For $N>2$ the 
 - **Higher-derivative reference:** Sec. V and Appendices A--B.4. The all-$N$ statement is an algebraic recursion in the coordinate derivative expansion.
 - **Covariantization details:** Appendix C derives the $N=2$ current and potential from the non-covariant coefficients.
 
-# Complete section tree
+# Complete Section Tree
 
 1. Introduction: motivation, split between gravitational and matter sectors, main formulas.
 2. Diffeomorphism invariance and Lie derivatives: active-sign convention and scalar-density identity.
@@ -39,198 +39,166 @@ The arbitrary-$N$ result is weaker than the abstract may suggest. For $N>2$ the 
 7. Appendix B: $N=2$ proof, $N=3$ formula, all-$N$ recursion, and proof.
 8. Appendix C: manifestly covariant $N=2$ current and potential.
 
-# Conventions and curvature response
+# Conventions and Curvature Response
 
 The metric signature is $(-+++)$ and $g=-\det g_{\mu\nu}>0$. The source fixes $R^\alpha{}_{\sigma\tau\omega}=\partial_\omega\Gamma^\alpha_{\sigma\tau}+\cdots$. It uses the active convention
 
-$$
+$$\begin{align}
 \pounds_\xi g_{\alpha\beta}=\nabla_\alpha\xi_\beta+\nabla_\beta\xi_\alpha
-$$
+\end{align}$$
 
 for $x^\mu\mapsto x^\mu+\xi^\mu(x)$, explicitly opposite in sign to older passive-variation conventions cited there.
 
 For
 
-$$
+$$\begin{align}
 \mathcal L_G=\mathcal L_G(g_{\mu\nu},R_{\alpha\mu\nu\beta})=\sqrt g\,L_G,
-$$
+\end{align}$$
 
 define
 
-$$
+$$\begin{align}
 \sqrt g\,M^{\alpha\mu\nu\beta}:=\frac{\partial\mathcal L_G}{\partial R_{\alpha\mu\nu\beta}}.
-$$
+\end{align}$$
 
 The derivative is taken with Riemann symmetries, hence
 
-$$
-M^{\alpha\mu\nu\beta}=-M^{\mu\alpha\nu\beta}=-M^{\alpha\mu\beta\nu}=M^{\nu\beta\alpha\mu},
-\qquad
-M^{\alpha\mu\nu\beta}+M^{\alpha\nu\beta\mu}+M^{\alpha\beta\mu\nu}=0.
-$$
+$$\begin{align}
+M^{\alpha\mu\nu\beta}=-M^{\mu\alpha\nu\beta}=-M^{\alpha\mu\beta\nu}=M^{\nu\beta\alpha\mu}, \qquad M^{\alpha\mu\nu\beta}+M^{\alpha\nu\beta\mu}+M^{\alpha\beta\mu\nu}=0.
+\end{align}$$
 
-# Noether identity and current split
+# Noether Identity and Current Split
 
 Scalar-density covariance gives
 
-$$
-0=\pounds_\xi\mathcal L_G-\partial_\alpha(\xi^\alpha\mathcal L_G)
-=\sqrt g\,E^{\alpha\beta}\pounds_\xi g_{\alpha\beta}+\partial_\alpha\mathcal J_G^\alpha.
-$$
+$$\begin{align}
+0=\pounds_\xi\mathcal L_G-\partial_\alpha(\xi^\alpha\mathcal L_G) =\sqrt g\,E^{\alpha\beta}\pounds_\xi g_{\alpha\beta}+\partial_\alpha\mathcal J_G^\alpha.
+\end{align}$$
 
 Expanding $\mathcal J_G^\alpha$ in the independent jets of arbitrary $\xi^\lambda$ forces the off-shell identity
 
-$$
+$$\begin{align}
 \nabla_\alpha E^\alpha{}_{\lambda}=0.
-$$
+\end{align}$$
 
 The current then separates as
 
-$$
-\mathcal J_G^\alpha
-=\underbrace{-2\sqrt g\,E^\alpha{}_{\lambda}\xi^\lambda}_{\mathcal J_{G1}^\alpha}
-+\mathcal J_{G2}^\alpha,
-\qquad
-\partial_\alpha\mathcal J_{G2}^\alpha=0.
-$$
+$$\begin{align}
+\mathcal J_G^\alpha =\underbrace{-2\sqrt g\,E^\alpha{}_{\lambda}\xi^\lambda}_{\mathcal J_{G1}^\alpha} +\mathcal J_{G2}^\alpha, \qquad \partial_\alpha\mathcal J_{G2}^\alpha=0.
+\end{align}$$
 
 This is an improper/off-shell conservation identity, not conservation of a physical energy current on a specified solution space.
 
-# Covariant $N=2$ result
+# Covariant $N=2$ Result
 
 The central potential is
 
-$$
-\boxed{\Phi_G^{[\alpha\mu]}
-=4\sqrt g\,(\nabla_\nu M^{\alpha\mu\nu\beta})\xi_\beta
--2\sqrt g\,M^{\alpha\mu\nu\beta}\nabla_\nu\xi_\beta}
-$$
+$$\begin{align}
+\boxed{\Phi_G^{[\alpha\mu]} =4\sqrt g\,(\nabla_\nu M^{\alpha\mu\nu\beta})\xi_\beta -2\sqrt g\,M^{\alpha\mu\nu\beta}\nabla_\nu\xi_\beta}
+\end{align}$$
 
 with $\partial_\mu\Phi_G^{[\alpha\mu]}=\mathcal J_{G2}^\alpha$. The displayed current is
 
-$$
-\mathcal J_{G2}^\alpha=\sqrt g\left[
-4(\nabla_\mu\nabla_\nu M^{\alpha\mu\nu\beta})\xi_\beta
--2(\nabla_\beta M^{\alpha\{\mu\nu\}\beta})\pounds_\xi g_{\mu\nu}
--2M^{\alpha\mu\nu\beta}\nabla_\mu\nabla_\nu\xi_\beta\right].
-$$
+$$\begin{align}
+\mathcal J_{G2}^\alpha=\sqrt g\left[ 4(\nabla_\mu\nabla_\nu M^{\alpha\mu\nu\beta})\xi_\beta -2(\nabla_\beta M^{\alpha\{\mu\nu\}\beta})\pounds_\xi g_{\mu\nu} -2M^{\alpha\mu\nu\beta}\nabla_\mu\nabla_\nu\xi_\beta\right].
+\end{align}$$
 
 Subtracting it from the full current gives
 
-$$
-E^{\alpha\beta}=2\nabla_\mu\nabla_\nu M^{\alpha\{\mu\nu\}\beta}
--\frac12M^{\alpha\mu\nu\rho}R^\beta{}_{\mu\nu\rho}
--\frac12M^{\beta\mu\nu\rho}R^\alpha{}_{\mu\nu\rho}
-+\frac12g^{\alpha\beta}L_G.
-$$
+$$\begin{align}
+E^{\alpha\beta}=2\nabla_\mu\nabla_\nu M^{\alpha\{\mu\nu\}\beta} -\frac12M^{\alpha\mu\nu\rho}R^\beta{}_{\mu\nu\rho} -\frac12M^{\beta\mu\nu\rho}R^\alpha{}_{\mu\nu\rho} +\frac12g^{\alpha\beta}L_G.
+\end{align}$$
 
 The source proves symmetry and zero covariant divergence using covariant-derivative commutators and the Bianchi identities.
 
 # Examples
 
-## $f(R)$ gravity
+## $f(R)$ Gravity
 
 For $\mathcal L_G=\sqrt g\,f(R)/(16\pi G)$,
 
-$$
-M^{\alpha\mu\nu\beta}=\frac{f'(R)}{32\pi G}
-(g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu}),
-$$
+$$\begin{align}
+M^{\alpha\mu\nu\beta}=\frac{f'(R)}{32\pi G} (g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu}),
+\end{align}$$
 
 and
 
-$$
-\Phi_G^{[\alpha\mu]}=\frac{\sqrt g}{16\pi G}\left[
-f'(R)(\nabla^\mu\xi^\alpha-\nabla^\alpha\xi^\mu)
-+2f''(R)((\nabla^\alpha R)\xi^\mu-(\nabla^\mu R)\xi^\alpha)\right].
-$$
+$$\begin{align}
+\Phi_G^{[\alpha\mu]}=\frac{\sqrt g}{16\pi G}\left[ f'(R)(\nabla^\mu\xi^\alpha-\nabla^\alpha\xi^\mu) +2f''(R)((\nabla^\alpha R)\xi^\mu-(\nabla^\mu R)\xi^\alpha)\right].
+\end{align}$$
 
 The Einstein--Hilbert case is recovered by $f(R)=R$ in the paper's sign convention.
 
-## Quadratic gravity
+## Quadratic Gravity
 
 For $L_G=aR^2+bR_{\mu\nu}R^{\mu\nu}+cR_{\rho\sigma\tau\omega}R^{\rho\sigma\tau\omega}$,
 
-$$
-\begin{aligned}
-M^{\alpha\mu\nu\beta}={}&aR(g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu})
-+\frac b2(g^{\alpha\nu}R^{\beta\mu}+g^{\beta\mu}R^{\alpha\nu}\\
+$$\begin{aligned}
+M^{\alpha\mu\nu\beta}={}&aR(g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu}) +\frac b2(g^{\alpha\nu}R^{\beta\mu}+g^{\beta\mu}R^{\alpha\nu}\\
 &-g^{\alpha\beta}R^{\mu\nu}-g^{\mu\nu}R^{\alpha\beta})+2cR^{\alpha\mu\nu\beta}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 For four-dimensional Gauss--Bonnet, $a=c$ and $b=-4c$: all derivative coefficients in the displayed Euler tensor cancel, while $M$ and the Lagrangian-level potential need not vanish.
 
-## Curvature-coupled scalar
+## Curvature-Coupled Scalar
 
 For $\mathcal L_M=\mathcal L_0(g,\phi,\partial\phi)+\sqrt g\,\gamma\phi^2R$,
 
-$$
-\widetilde M^{\alpha\mu\nu\beta}=\frac\gamma2\phi^2
-(g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu}),
-$$
+$$\begin{align}
+\widetilde M^{\alpha\mu\nu\beta}=\frac\gamma2\phi^2 (g^{\alpha\nu}g^{\beta\mu}-g^{\alpha\beta}g^{\mu\nu}),
+\end{align}$$
 
-$$
-\widetilde\Phi^{[\alpha\mu]}=\sqrt g\,\gamma\phi^2(\nabla^\mu\xi^\alpha-\nabla^\alpha\xi^\mu)
-+4\sqrt g\,\gamma\phi(\xi^\mu\nabla^\alpha\phi-\xi^\alpha\nabla^\mu\phi).
-$$
+$$\begin{align}
+\widetilde\Phi^{[\alpha\mu]}=\sqrt g\,\gamma\phi^2(\nabla^\mu\xi^\alpha-\nabla^\alpha\xi^\mu) +4\sqrt g\,\gamma\phi(\xi^\mu\nabla^\alpha\phi-\xi^\alpha\nabla^\mu\phi).
+\end{align}$$
 
 The matter identity is
 
-$$
-\nabla_\alpha T^\alpha{}_{\lambda}
-=\frac1{\sqrt g}\frac{\delta\mathcal L_M}{\delta\phi}\,\partial_\lambda\phi,
-$$
+$$\begin{align}
+\nabla_\alpha T^\alpha{}_{\lambda} =\frac1{\sqrt g}\frac{\delta\mathcal L_M}{\delta\phi}\,\partial_\lambda\phi,
+\end{align}$$
 
 so $T^{\alpha\beta}$ is conserved only on the scalar equation, although the separated $\mathcal J_{M2}$ is identically conserved.
 
-# Arbitrary derivative order
+# Arbitrary Derivative Order
 
 For a Lagrangian with up to $N-2$ symmetrized derivatives of the Riemann tensor, the source writes
 
-$$
-\mathcal J_{G2}^\alpha=-(\partial_\mu B_\lambda^{\mu\alpha})\xi^\lambda
-+\sum_{s=1}^{N}B_\lambda^{\alpha\{\mu_1\cdots\mu_s\}}
-\partial_{\mu_1}\cdots\partial_{\mu_s}\xi^\lambda.
-$$
+$$\begin{align}
+\mathcal J_{G2}^\alpha=-(\partial_\mu B_\lambda^{\mu\alpha})\xi^\lambda +\sum_{s=1}^{N}B_\lambda^{\alpha\{\mu_1\cdots\mu_s\}} \partial_{\mu_1}\cdots\partial_{\mu_s}\xi^\lambda.
+\end{align}$$
 
 Defining
 
-$$
-C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s}
-=B_\lambda^{\alpha\{\mu_1\cdots\mu_s\}}
--B_\lambda^{\mu_1\{\alpha\mu_2\cdots\mu_s\}},
-$$
+$$\begin{align}
+C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s} =B_\lambda^{\alpha\{\mu_1\cdots\mu_s\}} -B_\lambda^{\mu_1\{\alpha\mu_2\cdots\mu_s\}},
+\end{align}$$
 
 the potential coefficients are
 
-$$
-W_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s}
-=\frac{s}{s+1}C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s}
-+\sum_{p=1}^{N-s}\frac{s(-1)^p}{s+p+1}
-\partial_{\mu_{s+1}}\cdots\partial_{\mu_{s+p}}
-C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_{s+p}}.
-$$
+$$\begin{align}
+W_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s} =\frac{s}{s+1}C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_s} +\sum_{p=1}^{N-s}\frac{s(-1)^p}{s+p+1} \partial_{\mu_{s+1}}\cdots\partial_{\mu_{s+p}} C_\lambda^{[\alpha\mu_1]\mu_2\cdots\mu_{s+p}}.
+\end{align}$$
 
 Appendix B proves that its divergence reproduces the current. This is a coordinate formula; the paper does not finish a closed covariant all-$N$ version.
 
-# Translation to the vault's CPS language
+# Translation to the Vault's CPS Language
 
 The reusable curvature response is $M=(1/\sqrt g)\,\partial\mathcal L/\partial R$. But the logical relation is only
 
-$$
+$$\begin{align}
 \text{diffeomorphism identity}\Longrightarrow\mathcal J_{G2}=\partial\Phi,
-$$
+\end{align}$$
 
 not yet the CPS statement
 
-$$
+$$\begin{align}
 \delta H_\xi=\int_{\partial\Sigma}(\delta Q_\xi-i_\xi\theta).
-$$
+\end{align}$$
 
 That comparison still requires the full action including boundary/topological terms, a chosen symplectic-potential representative, boundary and corner conditions, phase-space-preserving $\xi$, and checks of finiteness and integrability. The nonzero Gauss--Bonnet potential with vanishing four-dimensional bulk Euler derivative is a concrete warning that the action representative matters for regional sewing.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
@@ -244,13 +212,13 @@ That comparison still requires the full action including boundary/topological te
 - The xAct checks establish the two specializations, not the general current--potential theorem.
 - The Gauss--Bonnet check establishes cancellation of derivative terms only; the dimension-dependent curvature-square identity was not reproduced.
 
-## Source-derived
+## Source-Derived
 
 - The current-jet proof of $\nabla_\alpha E^{\alpha\beta}=0$ and $\partial_\alpha\mathcal J_{G2}^\alpha=0$.
 - The general $N=2$ potential and the arbitrary-$N$ recursion/proof.
 - The complete quadratic Euler tensor and the second-derivative scalar construction.
 
-## Not independently verified
+## Not Independently Verified
 
 - Equality with a chosen Iyer--Wald or ADT representative after convention and ambiguity matching.
 - Global existence/uniqueness on nontrivial topology.

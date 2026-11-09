@@ -158,7 +158,7 @@ Total deduplicated entries: 146
 | [2610.06490](https://arxiv.org/abs/2610.06490) | math-ph:replacement | cond-mat.dis-nn, math-ph | TAP states at upper deviations of the free energy: existence, localization and marginal stability in Ising spin glasses | Yan Ru Pei | 164 pages, 4 figures, 2 tables |
 | [2610.07709](https://arxiv.org/abs/2610.07709) | math-ph:replacement | math-ph | A mathematical analogy between certain hollow vortex and bubble flows - existence, uniqueness, and identical boundary shapes | Valentin D. Kunz, Saleh Tanveer, Darren G. Crowdy |  |
 
-## Screening audit
+## Screening Audit
 
 Primary category is the first category below; remaining categories are cross-list subjects from official abstract metadata. Latest versions are as fetched on 2026-10-09, not a claim that the unversioned issue list pins these versions. In particular 2610.10045 appeared as v1 and has v2 dated 2026-10-08 07:13:38 UTC.
 

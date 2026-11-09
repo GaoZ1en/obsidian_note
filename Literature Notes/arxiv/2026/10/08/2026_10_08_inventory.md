@@ -209,7 +209,7 @@ Total deduplicated entries: 197
 | [2610.04626](https://arxiv.org/abs/2610.04626) | gr-qc:replacement | gr-qc, hep-ex, physics.optics | Vector field dark matter search with Sagnac interferometer | Yuki Inoue, Quynh Lan Nguyen, Ippei Obata | 8 pages, 3 figures |
 | [2610.06832](https://arxiv.org/abs/2610.06832) | math-ph:replacement | math-ph, physics.optics, quant-ph | Energy-constrained two-way capacities of pure-loss and quantum-limited amplifier channels | Stefano Pirandola | Submitted version which includes both pure loss and quantum limited amplification. Comments and feedback are welcome |
 
-## Screening and metadata audit
+## Screening and Metadata Audit
 
 Original helper rows above are preserved. Their LF-terminated SHA-256 is `8eea02617fa1c9e176095b6c2c222f190f47513b1d41b1d85aea488ebd1d1e7d`. The helper does not retain primary-category order or uppercase category codes; this audit restores both from official abstract pages. Versions are latest versions observed during this run, not separately archived issue-version evidence. Every inventory item received metadata screening; only the frozen queue receives technical treatment.
 

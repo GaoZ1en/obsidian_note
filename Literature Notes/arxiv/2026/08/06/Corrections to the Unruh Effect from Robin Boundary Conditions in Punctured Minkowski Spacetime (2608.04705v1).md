@@ -16,230 +16,186 @@ tags: []
 
 [[2026_08_06_overview|Back to the 2026-08-06 overview]]
 
-The reusable result is not a modified Unruh temperature. Removing a timelike line makes the \(s\)-wave radial operator non-unique; a Robin self-adjoint extension changes the static ground state and breaks the boost symmetry needed for a stationary accelerated response.
+The reusable result is not a modified Unruh temperature. Removing a timelike line makes the $s$-wave radial operator non-unique; a Robin self-adjoint extension changes the static ground state and breaks the boost symmetry needed for a stationary accelerated response.
 
-## The puncture as extension data
+## The Puncture as Extension Data
 
-On \(\mathbb R^{1,3}\setminus\mathcal L\), where \(\mathcal L=\{(t,\mathbf x=0)\}\), separate
+On $\mathbb R^{1,3}\setminus\mathcal L$, where $\mathcal L=\{(t,\mathbf x=0)\}$, separate
 
-$$
+$$\begin{align}
 \Phi=e^{-i\omega t}Y_\ell^m(\theta,\phi)R_{\ell m\omega}(r).
-$$
+\end{align}$$
 
 The radial equation is
 
-$$
+$$\begin{align}
 R''+\frac2rR'+\left[\omega^2-\frac{\ell(\ell+1)}{r^2}\right]R=0.
-$$
+\end{align}$$
 
-Only \(\ell=0\) admits an additional square-integrable irregular solution. With \(G=rR_0\),
+Only $\ell=0$ admits an additional square-integrable irregular solution. With $G=rR_0$,
 
-$$
-G''+\omega^2G=0,
-\qquad
-G(0)-\beta G'(0)=0,
-\qquad
-\beta\ge0.
-$$
+$$\begin{align}
+G''+\omega^2G=0, \qquad G(0)-\beta G'(0)=0, \qquad \beta\ge0.
+\end{align}$$
 
-Writing \(G_\omega=A_\omega\sin(\omega r+\delta_0)\) gives
+Writing $G_\omega=A_\omega\sin(\omega r+\delta_0)$ gives
 
-$$
-\tan\delta_0=\beta\omega,
-\qquad
-\omega\cot\delta_0=\beta^{-1},
-\qquad
-a_s=-\beta,
-$$
+$$\begin{align}
+\tan\delta_0=\beta\omega, \qquad \omega\cot\delta_0=\beta^{-1}, \qquad a_s=-\beta,
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 f_0(\omega)=\frac{1}{-1/a_s-i\omega}.
-$$
+\end{align}$$
 
-For \(G=e^{-\kappa r}\), the boundary condition requires \(1+\beta\kappa=0\). A decaying mode exists only for \(\beta<0\); the paper keeps the no-bound-state branch \(\beta\ge0\). The endpoints are Dirichlet/regular at \(\beta=0\) and formal Neumann at \(\beta\to\infty\).
+For $G=e^{-\kappa r}$, the boundary condition requires $1+\beta\kappa=0$. A decaying mode exists only for $\beta<0$; the paper keeps the no-bound-state branch $\beta\ge0$. The endpoints are Dirichlet/regular at $\beta=0$ and formal Neumann at $\beta\to\infty$.
 
 The mechanism is
 
-$$
-\text{removed locus}
-\longrightarrow
-\text{operator-domain ambiguity}
-\longrightarrow
-\text{self-adjoint boundary condition}
-\longrightarrow
+$$\begin{align}
+\text{removed locus} \longrightarrow
+\text{operator-domain ambiguity} \longrightarrow
+\text{self-adjoint boundary condition} \longrightarrow
 \text{scattering and state data}.
-$$
+\end{align}$$
 
-## Static state and boundary Wightman term
+## Static State and Boundary Wightman Term
 
 Positive frequency is defined with respect to inertial time. The two-point function splits as
 
-$$
+$$\begin{align}
 W(x,x')=W_{\rm M}(x,x')+W_\beta(x,x'),
-$$
+\end{align}$$
 
-and only the \(s\)-wave changes. For
+and only the $s$-wave changes. For
 
-$$
-R=r+r',
-\quad
-\Delta t=t-t',
-\quad
-w=R+\Delta t,
-\quad
-v=R-\Delta t,
-$$
+$$\begin{align}
+R=r+r', \quad \Delta t=t-t', \quad w=R+\Delta t, \quad v=R-\Delta t,
+\end{align}$$
 
 the source obtains
 
-$$
-W_\beta=
-\frac{1}{4\pi^2rr'}\lim_{\epsilon\to0^+}
-\int_0^\infty d\omega\,
-e^{-i\omega(\Delta t-i\epsilon)}
-\frac{\beta\sin(\omega R)+\beta^2\omega\cos(\omega R)}
-{1+\beta^2\omega^2},
-$$
+$$\begin{align}
+W_\beta= \frac{1}{4\pi^2rr'}\lim_{\epsilon\to0^+} \int_0^\infty d\omega\, e^{-i\omega(\Delta t-i\epsilon)} \frac{\beta\sin(\omega R)+\beta^2\omega\cos(\omega R)} {1+\beta^2\omega^2},
+\end{align}$$
 
 or
 
-$$
-W_\beta=
-\frac{
-e^{w/\beta}E_1[(w-i0)/\beta]
-+e^{v/\beta}E_1[(v+i0)/\beta]
+$$\begin{align}
+W_\beta= \frac{ e^{w/\beta}E_1[(w-i0)/\beta] +e^{v/\beta}E_1[(v+i0)/\beta]
 }{8\pi^2rr'}.
-$$
+\end{align}$$
 
 The extension chooses the spatial operator domain; the inertial positive-frequency prescription separately chooses a static quasifree state.
 
-## Accelerated detector and broken boost stationarity
+## Accelerated Detector and Broken Boost Stationarity
 
 For
 
-$$
-x^\mu(\tau)=
-\left(a^{-1}\sinh(a\tau),a^{-1}\cosh(a\tau),0,0\right),
-$$
+$$\begin{align}
+x^\mu(\tau)= \left(a^{-1}\sinh(a\tau),a^{-1}\cosh(a\tau),0,0\right),
+\end{align}$$
 
 one has
 
-$$
-w=a^{-1}(e^{a\tau}+e^{-a\tau'})>0,
-\qquad
-v=a^{-1}(e^{-a\tau}+e^{a\tau'})>0.
-$$
+$$\begin{align}
+w=a^{-1}(e^{a\tau}+e^{-a\tau'})>0, \qquad v=a^{-1}(e^{-a\tau}+e^{a\tau'})>0.
+\end{align}$$
 
 Therefore
 
-$$
-W_\beta(\tau,\tau')=
-\frac{e^{w/\beta}E_1(w/\beta)+e^{v/\beta}E_1(v/\beta)}
-{8\pi^2r(\tau)r(\tau')}
-$$
+$$\begin{align}
+W_\beta(\tau,\tau')= \frac{e^{w/\beta}E_1(w/\beta)+e^{v/\beta}E_1(v/\beta)} {8\pi^2r(\tau)r(\tau')}
+\end{align}$$
 
-is real and symmetric. The puncture preserves inertial time translations but not the boosts translating \(\tau\), so
+is real and symmetric. The puncture preserves inertial time translations but not the boosts translating $\tau$, so
 
-$$
+$$\begin{align}
 W_\beta(\tau+s,\tau'+s)\ne W_\beta(\tau,\tau')
-$$
+\end{align}$$
 
 in general. The Minkowski piece still gives
 
-$$
-\dot F_{\rm M}(\Omega)=\frac1{2\pi}
-\frac{\Omega}{e^{2\pi\Omega/a}-1},
-$$
+$$\begin{align}
+\dot F_{\rm M}(\Omega)=\frac1{2\pi} \frac{\Omega}{e^{2\pi\Omega/a}-1},
+\end{align}$$
 
 but the defect term has no time-independent rate or KMS temperature. For real switching, its symmetry implies
 
-$$
+$$\begin{align}
 F_\beta(-\Omega)=F_\beta(\Omega).
-$$
+\end{align}$$
 
 This concerns the subtracted correction, which may be negative; it is not detailed balance for the full positive response.
 
-## Long-time bound at finite Robin parameter
+## Long-Time Bound at Finite Robin Parameter
 
 Define
 
-$$
-H(z)=e^zE_1(z)=\int_0^\infty\frac{e^{-p}}{z+p}\,dp,
-\qquad
-0<H(z)\le z^{-1}.
-$$
+$$\begin{align}
+H(z)=e^zE_1(z)=\int_0^\infty\frac{e^{-p}}{z+p}\,dp, \qquad 0<H(z)\le z^{-1}.
+\end{align}$$
 
-At fixed \(0<\beta<\infty\),
+At fixed $0<\beta<\infty$,
 
-$$
-0\le W_\beta(\tau,\tau')
-\le
-\frac{\beta}{8\pi^2r(\tau)r(\tau')}
-\left(\frac1w+\frac1v\right).
-$$
+$$\begin{align}
+0\le W_\beta(\tau,\tau') \le \frac{\beta}{8\pi^2r(\tau)r(\tau')} \left(\frac1w+\frac1v\right).
+\end{align}$$
 
 With
 
-$$
-\xi=\frac a2(\tau+\tau'),
-\qquad
-\eta=\frac a2(\tau-\tau'),
-$$
+$$\begin{align}
+\xi=\frac a2(\tau+\tau'), \qquad \eta=\frac a2(\tau-\tau'),
+\end{align}$$
 
 the crucial integral is
 
-$$
-\int_{-\infty}^{\infty}d\eta\,
-\frac{\cosh\eta}
-{\cosh\xi(\cosh^2\xi+\sinh^2\eta)}
-=\frac{\pi}{\cosh^2\xi}.
-$$
+$$\begin{align}
+\int_{-\infty}^{\infty}d\eta\, \frac{\cosh\eta} {\cosh\xi(\cosh^2\xi+\sinh^2\eta)} =\frac{\pi}{\cosh^2\xi}.
+\end{align}$$
 
 It yields
 
-$$
-\int_{\mathbb R^2}d\tau\,d\tau'\,W_\beta(\tau,\tau')
-\le\frac{a\beta}{2\pi}.
-$$
+$$\begin{align}
+\int_{\mathbb R^2}d\tau\,d\tau'\,W_\beta(\tau,\tau') \le\frac{a\beta}{2\pi}.
+\end{align}$$
 
-Dominated convergence makes the long-window correction finite and \(O(1)\), with no additional term proportional to interaction duration. This is pointwise in finite \(\beta\).
+Dominated convergence makes the long-window correction finite and $O(1)$, with no additional term proportional to interaction duration. This is pointwise in finite $\beta$.
 
-## Singular Neumann endpoint
+## Singular Neumann Endpoint
 
 Since
 
-$$
+$$\begin{align}
 e^zE_1(z)=-\gamma-\log z+O(z|\log z|)
-$$
+\end{align}$$
 
-as \(z\to0^+\),
+as $z\to0^+$,
 
-$$
-W_\beta(\tau,\tau')
-=\frac{\log[\beta^2/(wv)]-2\gamma}
-{8\pi^2r(\tau)r(\tau')}+o(1)
-$$
+$$\begin{align}
+W_\beta(\tau,\tau') =\frac{\log[\beta^2/(wv)]-2\gamma} {8\pi^2r(\tau)r(\tau')}+o(1)
+\end{align}$$
 
-as \(\beta\to\infty\). The Neumann endpoint is infrared-singular in the \(s\)-wave sector, and the limit cannot be interchanged with the finite-\(\beta\) long-time estimate.
+as $\beta\to\infty$. The Neumann endpoint is infrared-singular in the $s$-wave sector, and the limit cannot be interchanged with the finite-$\beta$ long-time estimate.
 
-## Scope and local use
+## Scope and Local Use
 
 This is a clean example in which the domain and state are distinct, a background symmetry need not preserve the domain, a boundary correction can be finite but nonstationary, and an endpoint limit can fail uniformly because of an IR mode.
 
-The model is a real massless scalar on punctured flat spacetime with a static zero-range defect. The clean \(L^1\) theorem is for the unshifted radial hyperbola. It does not construct an AdS source-response action, CPS flux, or dynamical point defect.
+The model is a real massless scalar on punctured flat spacetime with a static zero-range defect. The clean $L^1$ theorem is for the unshifted radial hyperbola. It does not construct an AdS source-response action, CPS flux, or dynamical point defect.
 
-## Verification note
+## Verification Note
 
 ### Checked
 
-- Mathematica reproduced the Robin phase relation, scattering-length formula, and the \(\beta<0\) bound-state condition.
-- Mathematica verified the integral representation and upper bound for \(e^zE_1(z)\).
-- The \((\xi,\eta)\) identities and integrals giving \(a\beta/(2\pi)\) were reproduced.
-- A direct damped frequency integral at representative parameters agreed with the closed \(E_1\) form to about \(10^{-21}\).
-- Small- and large-\(z\) expansions reproduced the Neumann logarithm and Dirichlet suppression.
-- A representative common proper-time shift changed \(W_\beta\), explicitly confirming nonstationarity.
+- Mathematica reproduced the Robin phase relation, scattering-length formula, and the $\beta<0$ bound-state condition.
+- Mathematica verified the integral representation and upper bound for $e^zE_1(z)$.
+- The $(\xi,\eta)$ identities and integrals giving $a\beta/(2\pi)$ were reproduced.
+- A direct damped frequency integral at representative parameters agreed with the closed $E_1$ form to about $10^{-21}$.
+- Small- and large-$z$ expansions reproduced the Neumann logarithm and Dirichlet suppression.
+- A representative common proper-time shift changed $W_\beta$, explicitly confirming nonstationarity.
 
 ### Failed
 
@@ -247,6 +203,5 @@ The model is a real massless scalar on punctured flat spacetime with a static ze
 
 ### Blocked
 
-- The global distributional \(i0\)/Heaviside identity across \(w=0\) or \(v=0\), deficiency-index proof, full mode completeness, state positivity, and numerical detector plots were not independently reproduced.
+- The global distributional $i0$/Heaviside identity across $w=0$ or $v=0$, deficiency-index proof, full mode completeness, state positivity, and numerical detector plots were not independently reproduced.
 - No claim beyond the ideal static point scatterer was checked.
-

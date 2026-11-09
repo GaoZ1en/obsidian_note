@@ -171,7 +171,7 @@ Total deduplicated entries: 159
 | [2610.39215](https://arxiv.org/abs/2610.39215) | hep-th:replacement | hep-lat, hep-ph, hep-th | Nucleon Wave Functions from QCD Vacuum Topology | Wei-Yang Liu, Ismail Zahed | 50 pages, 16 figures |
 | [2610.39757](https://arxiv.org/abs/2610.39757) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-ph, hep-th | HWF Analysis of TRN Black Holes | Ashfaque Ahmad, Sudhir Kumar Gupta, Abbas Ali | 15 Pages, 8 Figures, 1 Table |
 
-## Placement and metadata audit — 2026-11-02
+## Placement and Metadata Audit — 2026-11-02
 
 Versions and categories refer to the saved official issue snapshot. All candidates were screened; secondary/deferred placements are metadata-only. No tracked updated PDF/TeX was retrieved. Primary subjects occur first in the complete subjects text.
 

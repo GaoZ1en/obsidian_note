@@ -14,7 +14,7 @@ tags: []
 
 Daily package: [[2026_08_25_overview]].
 
-# Direct verdict
+# Direct Verdict
 
 Correct under the following precise conditions: the outgoing map is a near-identity formal power series; every BCH-subtracted residual is a normally ordered polynomial in bosonic creation and annihilation operators; each homogeneous residual annihilates the Fock vacuum; the adjoint compatibility conditions and the full perturbative CCR hierarchy hold; and equality is understood in the polynomial CCR algebra, not as an operator-domain statement on completed Fock space.
 
@@ -22,7 +22,7 @@ Under those hypotheses, the paper's recursive lifting formula is correct and giv
 
 Reason codes: `T1-CCR`, `T1-canonical`, `T1-symplectic`, `T1-scattering`, `T2-null-surface`, `T2-gravity`.
 
-# Source map
+# Source Map
 
 1. The introduction separates the abstract inverse-adjoint theorem from its NSF application and fixes the flat solution-space specialization with the auxiliary cut operator $U=\mathrm{Id}$.
 2. Section 2 states and proves three algebraic results: local inverse-commutator reconstruction, the perturbative outgoing CCR hierarchy, and recursive BCH reconstruction.
@@ -31,14 +31,14 @@ Reason codes: `T1-CCR`, `T1-canonical`, `T1-symplectic`, `T1-scattering`, `T2-nu
 5. Appendix A supplies the direct order-two and order-three CCR identities, including the scalar ordering calculation.
 6. Later appendices collect NSF kernel and contraction details. No executable code or numerical dataset is supplied.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - Essential theorem path: Section 2 from the inverse-commutator theorem through the CCR hierarchy and Theorem 3; Sections 3--5 for the NSF input and the explicit lifts $\delta T_1$, $\delta T_2$; Appendix A for the direct CCR evidence.
 - Technical reference path: Sections 6--8 and Appendices B--C for $3\to1$, $2\to2$, crossing, helicity support, and canonical-contraction topology.
 - Optional background path: the introductory NSF history and the diagrammatic discussion are useful for interpretation but are not inputs to the algebraic reconstruction theorem.
 - Safe stopping point: readers interested only in regulated canonical-map reconstruction can stop after Section 5 plus Appendix A. The later amplitude sections do not strengthen formal self-adjointness into Hilbert-space implementability.
 
-# Complete section tree and dependencies
+# Complete Section Tree and Dependencies
 
 1. Introduction — defines the inverse problem, fixed-Minkowski-cone specialization, retarded Yang--Feldman prescription, and $U=\mathrm{Id}$.
 2. CCR integrability and recursive BCH reconstruction — fixes the polynomial CCR algebra; proves Theorem 1 (local lift), Theorem 2 (order hierarchy), and Theorem 3 (inductive reconstruction); supplies all later generator logic.
@@ -52,7 +52,7 @@ Reason codes: `T1-CCR`, `T1-canonical`, `T1-symplectic`, `T1-scattering`, `T2-nu
 10. Appendix B, tree-level $3\to1$ matrix element — records operator decomposition, momentum support, tree topology, and helicity constraints.
 11. Appendix C, construction of the $2\to2$ kernel — records signed crossing, crossed cone form factors, point and contraction terms, and helicity rules.
 
-# Global notation and equation ledger
+# Global Notation and Equation Ledger
 
 - $i=(\lambda_i,\vec k_i)$ is a complete oscillator label; $\int_i$ includes helicity sum and Lorentz-invariant momentum measure; $\Delta(i,j)$ implements the half-contraction convention.
 - $n$ labels perturbative order, while $d$ labels normal-ordered operator degree and $r$ the number of creators in a residual sector.
@@ -60,160 +60,137 @@ Reason codes: `T1-CCR`, `T1-canonical`, `T1-symplectic`, `T1-scattering`, `T2-nu
 - $K=\mathcal K^{aa}$ and $L=\mathcal K^{ca}$ are the quadratic NSF kernels; $A,B,C,D$ are cubic and linear pieces of $\delta a_3$; $\mathcal I_A,\mathcal I_B,\mathcal I_C,D_I$ are the corresponding $I_3$ kernels.
 - Central chain: outgoing CCRs $\Rightarrow$ identical inhomogeneous sources for $\delta a_n$ and $I_n$ $\Rightarrow$ homogeneous equations for $R_n$ $\Rightarrow$ polynomial lift $\Rightarrow$ formal self-adjoint $\delta T_{n-1}$.
 
-# Algebraic setup
+# Algebraic Setup
 
 The incoming oscillators satisfy
 
-$$
-[a(i),a^\dagger(j)]=\Delta(i,j),
-\qquad
-[a(i),a(j)]=0,
-$$
+$$\begin{align}
+[a(i),a^\dagger(j)]=\Delta(i,j), \qquad [a(i),a(j)]=0,
+\end{align}$$
 
 with the paper's half-contraction convention
 
-$$
+$$\begin{align}
 \int_i\Delta(j,i)F(i)=\frac12F(j).
-$$
+\end{align}$$
 
 The outgoing map is written as
 
-$$
-a_i^{\mathrm{out}}(\varepsilon)
-=a_i+\sum_{n=2}^{\infty}
-\varepsilon^{n-1}\delta a_{n,i}^{\mathrm{out}}.
-$$
+$$\begin{align}
+a_i^{\mathrm{out}}(\varepsilon) =a_i+\sum_{n=2}^{\infty} \varepsilon^{n-1}\delta a_{n,i}^{\mathrm{out}}.
+\end{align}$$
 
 The inverse problem asks for
 
-$$
-\delta T(\varepsilon)
-=\sum_{m\geq1}\varepsilon^m\delta T_m,
-\qquad
-\delta T_m^\dagger=\delta T_m,
-$$
+$$\begin{align}
+\delta T(\varepsilon) =\sum_{m\geq1}\varepsilon^m\delta T_m, \qquad \delta T_m^\dagger=\delta T_m,
+\end{align}$$
 
 such that, formally,
 
-$$
-a^{\mathrm{out}}
-=e^{-i\delta T}a\,e^{i\delta T}.
-$$
+$$\begin{align}
+a^{\mathrm{out}} =e^{-i\delta T}a\,e^{i\delta T}.
+\end{align}$$
 
 At order $n$, let $I_n$ be the BCH coefficient already fixed by $\delta T_1,\ldots,\delta T_{n-2}$ and define
 
-$$
+$$\begin{align}
 R_{n,i}=\delta a_{n,i}^{\mathrm{out}}-I_{n,i}.
-$$
+\end{align}$$
 
 The new information is precisely the inverse-commutator problem
 
-$$
+$$\begin{align}
 R_{n,i}=i[a_i,\delta T_{n-1}].
-$$
+\end{align}$$
 
-# Local lifting theorem
+# Local Lifting Theorem
 
 For a homogeneous residual of operator degree $d$, decompose
 
-$$
-R_{[d]}(i)
-=\sum_{r=0}^{d-1}R_{[d]}^{(r,d-r)}(i),
-$$
+$$\begin{align}
+R_{[d]}(i) =\sum_{r=0}^{d-1}R_{[d]}^{(r,d-r)}(i),
+\end{align}$$
 
 where $r$ counts creators. If the homogeneous $aa$ and mixed $aa^\dagger$ compatibility conditions hold, the paper proposes
 
-$$
-T_{[d]}
-=-2i\sum_{r=0}^{d-1}\frac{1}{r+1}
-\int_i a^\dagger(i)R_{[d]}^{(r,d-r)}(i).
-$$
+$$\begin{align}
+T_{[d]} =-2i\sum_{r=0}^{d-1}\frac{1}{r+1} \int_i a^\dagger(i)R_{[d]}^{(r,d-r)}(i).
+\end{align}$$
 
 The coefficient is fixed by two facts: the explicit $a^\dagger$ adds one creator, and commutation with the external annihilator can hit any of the $r+1$ symmetric creator legs; each hit contributes $1/2$ under the chosen normalization. Hence
 
-$$
+$$\begin{align}
 i[a(k),T_{[d]}]=R_{[d]}(k).
-$$
+\end{align}$$
 
 The mixed condition then forces $T_{[d]}^\dagger-T_{[d]}$ to contain only pure-creation, pure-annihilation, or central pieces. The hypothesis $R_{[d]}(i)|0\rangle=0$ makes the constructed lift contain both creator and annihilator legs, excluding the pure sectors. Vacuum normalization removes the scalar.
 
 This vacuum-preserving condition is essential. CCR preservation alone also permits canonical translations and more general sectors not covered by the stated lift. The theorem itself includes the condition, but the short slogan "CCRs are sufficient" suppresses it.
 
-# Perturbative CCR hierarchy
+# Perturbative CCR Hierarchy
 
 At order $\varepsilon^{n-1}$, the no-dagger equation is
 
-$$
-0=[\delta a_{n,i}^{\mathrm{out}},a_j]
-+[a_i,\delta a_{n,j}^{\mathrm{out}}]
-+\sum_{r=2}^{n-1}
-[\delta a_{r,i}^{\mathrm{out}},
-\delta a_{n+1-r,j}^{\mathrm{out}}],
-$$
+$$\begin{align}
+0=[\delta a_{n,i}^{\mathrm{out}},a_j] +[a_i,\delta a_{n,j}^{\mathrm{out}}] +\sum_{r=2}^{n-1} [\delta a_{r,i}^{\mathrm{out}}, \delta a_{n+1-r,j}^{\mathrm{out}}],
+\end{align}$$
 
 with an analogous mixed equation. A partial BCH conjugation built from the already reconstructed generators preserves the CCR exactly. Its order-$n$ coefficient $I_n$ has the same lower-order inhomogeneous sum as the given outgoing coefficient. Subtraction therefore yields homogeneous equations for $R_n$, so the local lifting theorem applies.
 
 The induction is logically clean: it does not assume a scattering generator to prove that one exists. Its conclusion remains a formal algebraic exponential.
 
-# First two reconstructed generators
+# First Two Reconstructed Generators
 
 The quadratic NSF coefficient has the normal-ordered form
 
-$$
-\delta a_2(3)
-=\int_{12}\mathcal K^{aa}(3;1,2)a(1)a(2)
-+\int_{12}\mathcal K^{ca}(3,1|2)a^\dagger(1)a(2).
-$$
+$$\begin{align}
+\delta a_2(3) =\int_{12}\mathcal K^{aa}(3;1,2)a(1)a(2) +\int_{12}\mathcal K^{ca}(3,1|2)a^\dagger(1)a(2).
+\end{align}$$
 
 The order-two CCR identities relate the two kernels and produce the manifestly Hermitian cubic generator
 
-$$
-\delta T_1
-=-i\int_{312}L(3,1|2)
-a^\dagger(3)a^\dagger(1)a(2)+\mathrm{H.c.}
-$$
+$$\begin{align}
+\delta T_1 =-i\int_{312}L(3,1|2) a^\dagger(3)a^\dagger(1)a(2)+\mathrm{H.c.}
+\end{align}$$
 
 At the next order,
 
-$$
-I_3=\frac{i}{2}[\delta a_2,\delta T_1],
-\qquad
-R_3=\delta a_3-I_3.
-$$
+$$\begin{align}
+I_3=\frac{i}{2}[\delta a_2,\delta T_1], \qquad R_3=\delta a_3-I_3.
+\end{align}$$
 
 Normal ordering splits $R_3$ into cubic and linear operator degrees. The lift correspondingly gives
 
-$$
+$$\begin{align}
 \delta T_2=\delta T_2^{(4)}+\delta T_2^{(2)},
-$$
+\end{align}$$
 
 where the quartic part comes from the cubic residual and the bilinear $a^\dagger a$ part comes from the linear residual. This separation is important: the bilinear term is a one-particle canonical rotation, not an extra four-point interaction.
 
-# Ordering selected by the scalar CCR
+# Ordering Selected by the Scalar CCR
 
 The mixed cubic monomial has three inequivalent placements of its creator. The paper parameterizes left, symmetric, and right ordering by $c=0,1,2$. Normal ordering produces
 
-$$
+$$\begin{align}
 D_c=cD_1
-$$
+\end{align}$$
 
 in the annihilation-linear sector. The scalar part of the mixed order-three CCR reduces to
 
-$$
-E_{3,ij}^{a\bar a;(0)}(c)
-=\frac{1-c}{2}
-\int_{rs}K(i;r,s)K(j;r,s)^*.
-$$
+$$\begin{align}
+E_{3,ij}^{a\bar a;(0)}(c) =\frac{1-c}{2} \int_{rs}K(i;r,s)K(j;r,s)^*.
+\end{align}$$
 
 Thus the nontrivial kernel selects $c=1$. At this value the induced linear contraction cancels the double contraction from $[\delta a_2,\delta a_2^\dagger]$. The coefficient arithmetic and the half-contraction factors are consistent.
 
-# NSF scope and geometric assumptions
+# NSF Scope and Geometric Assumptions
 
 The NSF variables $x^a$ label the four-dimensional solution space of the cut equation. The paper does not claim that an external background spacetime is inserted from the beginning. It does, however, specialize the reconstructed solution-space metric to $\eta_{ab}$ and holds the corresponding cuts, null generators, affine parameter, cone measure, and geodesics at their flat values. It also fixes the auxiliary cut-data operator to $U=\mathrm{Id}$ and omits recursive-cut products involving $\delta Z_1$.
 
 Therefore the application proves neither the fully dynamical NSF geometry nor generic curved-background graviton scattering. Metric and geodesic corrections must be restored together beyond this sector.
 
-# Scattering interpretation
+# Scattering Interpretation
 
 Exponentiating the reconstructed phase organizes point vertices and canonical contractions through on-shell intermediate states. The paper distinguishes:
 
@@ -224,7 +201,7 @@ Exponentiating the reconstructed phase organizes point vertices and canonical co
 
 Its topological loop counting is not a proof of equivalence with off-shell covariant Feynman loops, and it does not establish ultraviolet finiteness. Numerical amplitudes still require external kinematics and evaluation of the remaining angular Green-function and principal-value integrals.
 
-# Verification log
+# Verification Log
 
 - `Checked` The official 53-page PDF and TeX source were retrieved. The algebraic theorem pages and the displayed BCH/lifting formulas were visually inspected in the PDF.
 - `Checked` Expanding $e^{-i\delta T}ae^{i\delta T}$ through the first three nontrivial coefficients reproduces the paper's $\delta a_2$, $\delta a_3$, and $\delta a_4$ formulas.
@@ -235,6 +212,6 @@ Its topological loop counting is not a proof of equivalence with off-shell covar
 - `Blocked` The result does not address domains, closures, essential self-adjointness, Shale--Stinespring implementability, or convergence of the formal exponential on completed graviton Fock space.
 - `Not checked` The remaining angular integrals and numerical values of the $3\to1$ and $2\to2$ matrix elements were not evaluated.
 
-# Relevance to the current program
+# Relevance to the Current Program
 
 The paper supplies a clean finite-polynomial diagnostic for whether a perturbative canonical map can be integrated to a formal generator. It is useful for regulated finite-mode gluing calculations and order-by-order metaplectic/nonlinear checks. It does not justify passing from such finite or polynomial tests to continuum product-Fock factorization, a globally defined scattering unitary, or an entropy theorem.

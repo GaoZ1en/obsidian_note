@@ -18,7 +18,7 @@ tags: []
 
 优先理由：`T1-charge; T1-boundary; T2-dS-BH-holography; T2-model`。10 页 v1，初次提交 2026-09-20；这里重构全部正文和四个附录。核心代数及明确例子已独立复算，但不是 Einstein–Maxwell 耦合扰动或引力自力的验证。
 
-## Source map
+## Source Map
 
 | 原文 | 所解决的问题与依赖 |
 |---|---|
@@ -43,40 +43,35 @@ tags: []
 
 采用 Gaussian 单位、$G=c=1$、$(-,+,+,+)$，固定静态度规
 
-$$
+$$\begin{align}
 ds^2=-N^2dt^2+h_{ij}dx^idx^j,\qquad A=-\Phi\,dt.
-$$
+\end{align}$$
 
 $N$ 在此为 lapse，视界个数也在原文记作 $N$，使用时须由语境区分。$\rho$ 是坐标电荷密度，方程和无源 Killing 能量为
 
-$$
--\partial_i\left(\frac{\sqrt h}{N}h^{ij}\partial_j\Phi\right)=4\pi\rho,
-\qquad E=\frac1{8\pi}\int d^3x\,\frac{\sqrt h}{N}h^{ij}\partial_i\Phi\partial_j\Phi.
-$$
+$$\begin{align}
+-\partial_i\left(\frac{\sqrt h}{N}h^{ij}\partial_j\Phi\right)=4\pi\rho, \qquad E=\frac1{8\pi}\int d^3x\,\frac{\sqrt h}{N}h^{ij}\partial_i\Phi\partial_j\Phi.
+\end{align}$$
 
 MP 几何取
 
-$$
-N=U^{-1},\quad h_{ij}=U^2\delta_{ij},\quad
-U=1+\sum_A\frac{M_A}{r_A},\quad r_A=|\mathbf x-\mathbf x_A|,
-\quad R_{AB}=|\mathbf x_A-\mathbf x_B|.
-$$
+$$\begin{align}
+N=U^{-1},\quad h_{ij}=U^2\delta_{ij},\quad U=1+\sum_A\frac{M_A}{r_A},\quad r_A=|\mathbf x-\mathbf x_A|, \quad R_{AB}=|\mathbf x_A-\mathbf x_B|.
+\end{align}$$
 
 $M_A>0$，中心不同。$R_{AB}$ 是坐标模量，不是两个无限长极端 throat 之间的有限固有距离。$\sqrt h\,h^{ij}/N=U^2\delta^{ij}$，故
 
-$$
-\mathcal L_U=-\nabla\cdot U^2\nabla,\qquad
-\mathcal L_U(\Psi/U)=-U\nabla^2\Psi+\Psi\nabla^2U. \tag{6}
-$$
+$$\begin{align}
+\mathcal L_U=-\nabla\cdot U^2\nabla,\qquad \mathcal L_U(\Psi/U)=-U\nabla^2\Psi+\Psi\nabla^2U. \tag{6}
+\end{align}$$
 
 在排除中心的外部 $\nabla^2U=0$，于是无源问题化为平直调和分子。这个乘法变换不是 Maxwell gauge，也不是重力的 harmonic-coordinate gauge。
 
 定义
 
-$$
-h_A=\frac{M_A}{r_AU},\qquad h_\infty=U^{-1},\qquad
-h_\infty+\sum_Ah_A=1.
-$$
+$$\begin{align}
+h_A=\frac{M_A}{r_AU},\qquad h_\infty=U^{-1},\qquad h_\infty+\sum_Ah_A=1.
+\end{align}$$
 
 $h_A$ 在 $H_B$ 上为 $\delta_{AB}$，在无穷远为零；$h_\infty$ 在视界为零、无穷远为一。它们是边界常数数据的基。Appendix A 中分子的调和径向分支 $s^\ell$ 和 $s^{-\ell-1}$ 对应势 $s^{\ell+1}$ 和 $s^{-\ell}$；后者在 $\ell\ge1$ 使场强不变量发散，仅保留 monopole 的常数势。因此每个正则视界等势，而不同连通分支不必具有相同常数。要求势一形式跨多个视界正则时可能要用多个 gauge patch；本文使用的场强和通量不受此影响。
 
@@ -84,48 +79,41 @@ $h_A$ 在 $H_B$ 上为 $\delta_{AB}$，在无穷远为零；$h_\infty$ 在视界
 
 给定 $V_A$ 及 $V_\infty$，定义相对势 $v_A=V_A-V_\infty$。有限能量无源解为
 
-$$
-\Phi_0=V_\infty+\sum_Av_Ah_A
-=\frac{V_\infty+\sum_AM_AV_A/r_A}{U}.
-$$
+$$\begin{align}
+\Phi_0=V_\infty+\sum_Av_Ah_A =\frac{V_\infty+\sum_AM_AV_A/r_A}{U}.
+\end{align}$$
 
 边界值全为零的两个解之差由能量分部恒等式具有零梯度，结合无穷远值得到唯一性。此结论用的是规定的正则/有限能量类，不能允许额外奇异多极分支后仍说唯一。
 
 视界电荷定义为流出视界进入外部的 Maxwell 通量：
 
-$$
+$$\begin{align}
 Q_A=-\frac1{4\pi}\lim_{s\to0}\int_{r_A=s}U^2s^2\partial_s\Phi\,d\Omega. \tag{10}
-$$
+\end{align}$$
 
 在 $H_A$ 附近
 
-$$
+$$\begin{align}
 U=M_A/s+u_A+O(s),\quad U\Phi_0=M_AV_A/s+w_A+O(s),
-$$
+\end{align}$$
 
 其中 $u_A=1+\sum_{B\ne A}M_B/R_{AB}$、$w_A=V_\infty+\sum_{B\ne A}M_BV_B/R_{AB}$。商展开给
 
-$$
-\partial_s\Phi_0\to\frac{w_A-V_Au_A}{M_A},\qquad
-Q_A=M_AV_Au_A-M_Aw_A
-=M_Av_A+\sum_{B\ne A}\frac{M_AM_B}{R_{AB}}(v_A-v_B).
-$$
+$$\begin{align}
+\partial_s\Phi_0\to\frac{w_A-V_Au_A}{M_A},\qquad Q_A=M_AV_Au_A-M_Aw_A =M_Av_A+\sum_{B\ne A}\frac{M_AM_B}{R_{AB}}(v_A-v_B).
+\end{align}$$
 
 因此
 
-$$
-\mathbf Q=C\mathbf v,\quad
-C_{AA}=M_A+\sum_{B\ne A}w_{AB},\quad C_{AB}=-w_{AB},
-\quad w_{AB}=\frac{M_AM_B}{R_{AB}}. \tag{13}
-$$
+$$\begin{align}
+\mathbf Q=C\mathbf v,\quad C_{AA}=M_A+\sum_{B\ne A}w_{AB},\quad C_{AB}=-w_{AB}, \quad w_{AB}=\frac{M_AM_B}{R_{AB}}. \tag{13}
+\end{align}$$
 
 $C$ 是静电响应，不是自引力黑洞热力学电容。它的图形式 $C=D_M+L_w$ 直接给出
 
-$$
-\mathbf v^TC\mathbf v=\sum_AM_Av_A^2+
-\sum_{A<B}w_{AB}(v_A-v_B)^2>0\quad(\mathbf v\ne0),
-\qquad E=\frac12\mathbf v^TC\mathbf v. \tag{14–15}
-$$
+$$\begin{align}
+\mathbf v^TC\mathbf v=\sum_AM_Av_A^2+ \sum_{A<B}w_{AB}(v_A-v_B)^2>0\quad(\mathbf v\ne0), \qquad E=\frac12\mathbf v^TC\mathbf v. \tag{14–15}
+\end{align}$$
 
 任意有向关联矩阵 $B$ 满足 $L_w=BWB^T$；每条边的二次型恰为 $w_{AB}(v_A-v_B)^2$。这既解释正定性，也给出任意中心数的代数证明；不是稀疏远距离近似。行和 $C\mathbf1=\mathbf M$ 导致总视界电荷 $\sum_AQ_A=\sum_AM_Av_A$。加入无穷远顶点，$C_{A\infty}=-M_A$、$C_{\infty\infty}=\sum_AM_A$，扩展矩阵行和为零，表示同时平移所有电势的冗余。
 
@@ -135,47 +123,41 @@ $$
 
 点源在 $\mathbf a$，记 $U_a=U(\mathbf a)$、$a_A=|\mathbf a-\mathbf x_A|$。各视界与无穷远均接地的核为
 
-$$
-G_D(\mathbf x,\mathbf a)=\frac1{U(\mathbf x)U_a|\mathbf x-\mathbf a|},
-\quad\mathcal L_UG_D=4\pi\delta^3(\mathbf x-\mathbf a). \tag{17}
-$$
+$$\begin{align}
+G_D(\mathbf x,\mathbf a)=\frac1{U(\mathbf x)U_a|\mathbf x-\mathbf a|}, \quad\mathcal L_UG_D=4\pi\delta^3(\mathbf x-\mathbf a). \tag{17}
+\end{align}$$
 
 把 $UG_D$ 代入 (6)，源项的 $U(\mathbf x)/U_a$ 在 delta 支撑上等于一。其局部奇异系数是 $U_a^{-2}$，不是简单欧氏 Coulomb 系数。对电荷 $q$，近视界展开给
 
-$$
-Q_A^D=-q h_A(\mathbf a),\qquad q_\infty=q/U_a,
-\qquad p_A=h_A(\mathbf a),\quad p_\infty=h_\infty(\mathbf a),\quad\sum p=1.
-$$
+$$\begin{align}
+Q_A^D=-q h_A(\mathbf a),\qquad q_\infty=q/U_a, \qquad p_A=h_A(\mathbf a),\quad p_\infty=h_\infty(\mathbf a),\quad\sum p=1.
+\end{align}$$
 
 这里负的视界感应电荷对应正的吸收份额。多源及非零电势的总响应是
 
-$$
-\Phi=V_\infty+\mathbf v^T\mathbf h(\mathbf x)+\sum_sq_sG_D(\mathbf x,\mathbf a_s),
-\qquad\mathbf Q=C\mathbf v-\sum_sq_s\mathbf h(\mathbf a_s). \tag{20}
-$$
+$$\begin{align}
+\Phi=V_\infty+\mathbf v^T\mathbf h(\mathbf x)+\sum_sq_sG_D(\mathbf x,\mathbf a_s), \qquad\mathbf Q=C\mathbf v-\sum_sq_s\mathbf h(\mathbf a_s). \tag{20}
+\end{align}$$
 
 添加 $\mathbf h(\mathbf x)^T\boldsymbol\alpha$ 是改变边界常数势的齐次解，电荷改变 $C\boldsymbol\alpha$。逐分支消去感应通量必须解 $C\boldsymbol\alpha=\mathbf h(\mathbf a)$，故
 
-$$
+$$\begin{align}
 G_Q=G_D+\mathbf h(\mathbf x)^TC^{-1}\mathbf h(\mathbf a). \tag{24}
-$$
+\end{align}$$
 
 $C$ 对称保证 reciprocity；$C\mathbf1=\mathbf M$ 则保证全部单位源通量到无穷远。
 
 原文 Appendix D 将 Frolov–Zelnikov 的 kernel 转为本约定后得到
 
-$$
+$$\begin{align}
 G_{\rm FZ}=G_D+\mathbf h(\mathbf x)^TD_M^{-1}\mathbf h(\mathbf a). \tag{21}
-$$
+\end{align}$$
 
 它产生
 
-$$
-\delta Q_A^{\rm FZ}/q
-=\bigl[-I+CD_M^{-1}\bigr]_{AB}h_B(\mathbf a)
-=\frac{M_A}{U_a}\sum_{B\ne A}\frac{M_B}{R_{AB}}
-\left(\frac1{a_A}-\frac1{a_B}\right). \tag{22}
-$$
+$$\begin{align}
+\delta Q_A^{\rm FZ}/q =\bigl[-I+CD_M^{-1}\bigr]_{AB}h_B(\mathbf a) =\frac{M_A}{U_a}\sum_{B\ne A}\frac{M_B}{R_{AB}} \left(\frac1{a_A}-\frac1{a_B}\right). \tag{22}
+\end{align}$$
 
 每对 $A,B$ 在求和后相消，故总视界电荷变化为零，但分量一般非零。本次独立复算确认这一通量性质；关于旧论文的原文意图和 Eq.(65)/(68) 归属仍是本文 Appendix D 的 source-derived 转述，未另行审计旧全文。
 
@@ -201,10 +183,9 @@ $$
 
 定义
 
-$$
-K=\frac{M_1M_2}{R+M_1+M_2},\qquad
-\chi=\frac{h_1}{M_1}-\frac{h_2}{M_2},
-$$
+$$\begin{align}
+K=\frac{M_1M_2}{R+M_1+M_2},\qquad \chi=\frac{h_1}{M_1}-\frac{h_2}{M_2},
+\end{align}$$
 
 则
 
@@ -223,16 +204,15 @@ $$
 
 两核的局部奇异场相同，它们的差在源点光滑。静态 reciprocal Green 函数的重整化 Killing 自能为 $q^2G_{\rm reg}(\mathbf a,\mathbf a)/2$，因而不需要额外 UV subtraction 就能算出**差**：
 
-$$
+$$\begin{align}
 \Delta E_{\rm self}=-\frac{q^2K}{2}\chi(\mathbf a)^2\le0. \tag{33}
-$$
+\end{align}$$
 
 这没有给出任一 prescription 的绝对自能。用静态观察者的 $P_\mu{}^\nu=\delta_\mu{}^\nu+u_\mu u^\nu$，局部自力 covector 差为
 
-$$
-\Delta f_\mu=-N^{-1}P_\mu{}^\nu\nabla_\nu\Delta E_{\rm self}
-=\frac{q^2K}{N}\chi P_\mu{}^\nu\nabla_\nu\chi. \tag{34}
-$$
+$$\begin{align}
+\Delta f_\mu=-N^{-1}P_\mu{}^\nu\nabla_\nu\Delta E_{\rm self} =\frac{q^2K}{N}\chi P_\mu{}^\nu\nabla_\nu\chi. \tag{34}
+\end{align}$$
 
 MP 的正交空间基再给一个 $U^{-1}$，与 $N^{-1}=U$ 相消，所以 $\Delta f_{\hat i}=q^2K\chi\partial_i\chi$。沿 coincident kernel 求导时两自变量贡献相等，不能保留自能的 $1/2$ 因子而漏掉另一导数。维持粒子静止的外力差号相反。
 
@@ -248,7 +228,7 @@ $$
 
 $M\Delta E/q^2=-\widehat\chi^2/[2(\mathcal R+2)]$、$M^2\Delta f_{\hat z}/q^2=\widehat\chi\widehat\chi'/(\mathcal R+2)$。$\mathcal R=4$ 时视界极限为 $-q^2/(12M)$；远区能量与力分别按 $|z|^{-4}$、$|z|^{-5}$ 衰减。交换视界标签改变 $\chi$ 的号，不改变这些 observables。
 
-spectator 场的电荷不支撑背景，extremality 本身不选择其系综。若是背景同一 Einstein–Maxwell 场，线性 Maxwell 扰动会通过背景场产生线性应力张量变化，须联立度规扰动。固定背景质量下逐分支 $\delta Q_A=0$ 可作为该 Maxwell sector 的边界条件，但本文没有解耦合问题；沿 MP 家族的变化满足 $\delta M_A=\operatorname{sgn}(Q_A)\delta Q_A$，不能把所有非零 $\delta Q_A$ 都叫“变成超极端”。
+Spectator 场的电荷不支撑背景，extremality 本身不选择其系综。若是背景同一 Einstein–Maxwell 场，线性 Maxwell 扰动会通过背景场产生线性应力张量变化，须联立度规扰动。固定背景质量下逐分支 $\delta Q_A=0$ 可作为该 Maxwell sector 的边界条件，但本文没有解耦合问题；沿 MP 家族的变化满足 $\delta M_A=\operatorname{sgn}(Q_A)\delta Q_A$，不能把所有非零 $\delta Q_A$ 都叫“变成超极端”。
 
 ## IX 与 Appendices C–D：单中心、高维和归一化
 
@@ -256,25 +236,23 @@ spectator 场的电荷不支撑背景，extremality 本身不选择其系综。�
 
 $D=n+3$ 维的 MP metric 为 $ds^2=-U^{-2}dt^2+U^{2/n}d\mathbf x^2$，$U=1+\sum_AM_A/r_A^n$，空间维数 $n+2$。$M_A$ 在这里是极点强度，换成 ADM mass 要另补重力归一化。由于指数相消，$\sqrt h\,h^{ij}/N=U^2\delta^{ij}$ 仍成立。令
 
-$$
-\alpha_n=\frac{n\Omega_{n+1}}{4\pi}=\frac{\pi^{n/2}}{\Gamma(n/2)},\quad
-\beta_n=\alpha_n^{-1},\quad h_A=\frac{M_A}{r_A^nU}.
-$$
+$$\begin{align}
+\alpha_n=\frac{n\Omega_{n+1}}{4\pi}=\frac{\pi^{n/2}}{\Gamma(n/2)},\quad \beta_n=\alpha_n^{-1},\quad h_A=\frac{M_A}{r_A^nU}.
+\end{align}$$
 
 电容矩阵是把 $1/R_{AB}$ 换成 $1/R_{AB}^n$ 并整体乘 $\alpha_n$；$G_D^{(D)}=\beta_n/[UU_a|\mathbf x-\mathbf a|^n]$，$G_Q^{(D)}=G_D^{(D)}+\mathbf h^T[C^{(D)}]^{-1}\mathbf h$。接地通量份额保持同一形式。$D\ge5$ 一般多中心视界延拓正则性有限，因此这是 exterior puncture-limit 结果，不能直接宣称光滑高维视界上的所有结构成立。
 
 Appendix D 的旧文约定是 $A_0=-U^{-1}\psi=4\pi q\mathcal G_{00}$，本文 $A_0=-qG$，所以 $G=-4\pi\mathcal G_{00}$。转换后 FZ 对角项乘 $\beta_n$。近中心分子为 $S=\gamma_A/s^n+s_A+\cdots$，逐分支零通量要求
 
-$$
-\gamma_Au_A-M_A\sum_{B\ne A}\frac{\gamma_B}{R_{AB}^n}
-=M_A(a_A^{-n}+b).
-$$
+$$\begin{align}
+\gamma_Au_A-M_A\sum_{B\ne A}\frac{\gamma_B}{R_{AB}^n} =M_A(a_A^{-n}+b).
+\end{align}$$
 
 令 $x_A=\gamma_A/M_A$、$b=0$，即
 
-$$
+$$\begin{align}
 x_A+\sum_{B\ne A}\frac{M_B}{R_{AB}^n}(x_A-x_B)=a_A^{-n}.
-$$
+\end{align}$$
 
 它是完整响应矩阵方程；只取 $x_A=a_A^{-n}$ 会遗漏 cross terms。这个推导使用外部通量极限，避免了在 puncture 上直接乘奇异分布。
 
@@ -284,7 +262,7 @@ Equation ledger：静态算子 (2) → MP/Doob (5)–(6) → 边界调和基 (7)
 
 对本库而言，可直接复用的是边界响应矩阵作为有限维 DtN 数据、逐分支 Gauss 约束、有限秩 Green 修正和同一局部奇异场下的 observable 差。静态能量变分给 $\delta E=\mathbf Q^T\delta\mathbf v$，显示势和电荷是边界共轭响应变量；这不是完整 Lorentzian CPS 二形式的推导，也没有证明 dynamical edge-mode algebra。应把它作为检验“只匹配总 charge 会否丢失相对边界数据”的精确模型。
 
-## Verification log
+## Verification Log
 
 - `Checked`（Mathematica）：任意三变量函数 $U,\Psi$ 的 Doob 恒等式残差 0；近端通量极限为 $M_AV_Au_A-M_Aw_A$；高维度规指数为 2，球面积/Gamma 归一化残差 0。
 - `Checked`（Sage）：三顶点带独立符号边权的关联矩阵构造，$v^TCv$ 与逐边平方和残差 0，行和残差为零。一般有限顶点数的同一恒等式由每条边贡献逐项相加得到；正质量严格正定性的论证在正文明确列出。

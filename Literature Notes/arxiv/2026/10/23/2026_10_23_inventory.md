@@ -193,7 +193,7 @@ Total deduplicated entries: 181
 | [2610.30031](https://arxiv.org/abs/2610.30031) | gr-qc:replacement | gr-qc | Modeling QNMs-Filtered Gravitational Waveforms: Approximation Limits and Filtering Effects | Jun-Xi Shi, Zhen-Tao He, Tingyuan Jiang, Yu Tian, Dan-Dan Yuan, Hongbao Zhang | 8 pages, 5 figures |
 | [2610.30126](https://arxiv.org/abs/2610.30126) | hep-th:replacement | hep-th | Random Euclidean CFT$_2$ from Triangulated dS$_3$ Gravity | Ji-seong Chae |  |
 
-## Official-list completeness correction
+## Official-List Completeness Correction
 
 The helper exited 0 but its modern-ID-only regular expression omitted legacy ID `astro-ph/9912072`, the 25th gr-qc cross submission. Official gr-qc has 69 appearances, while the helper returned 68. The original 181-row helper output above is preserved verbatim; the following official record completes the inventory to **182 unique IDs**, with **79 any-new, 44 cross-only, 59 replacement-only**, and **223 category appearances** (hep-th 97, gr-qc 69, math-ph 57). This is a partial parser failure, not a missing-source failure. The helper source was not edited.
 
@@ -201,7 +201,7 @@ The helper exited 0 but its modern-ID-only regular expression omitted legacy ID 
 |---|---|---|---|---|---|
 | [astro-ph/9912072](https://arxiv.org/abs/astro-ph/9912072) | gr-qc:cross | astro-ph, gr-qc | Frame covariance of CMBR lensing in the exact 1+3 covariant radiation hierarchy | Gebbie, Tim | 28 pages, 3 figures, 4 tables. Submitted to GRG. Major revision, extension and replacement now states the domain conditions on the power-spectrum cancellation, the frame-covariance statement and the multipole stencil comparisons. Reproducibility bundle: this https URL |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 All 182 official records screened. Primary and complete cross categories and version pins are from official abstract pages; this separately restores uppercase subject suffixes omitted by the helper category regex. Local baselines exclude inventory-only mentions. Metadata reading is not independent technical verification.
 

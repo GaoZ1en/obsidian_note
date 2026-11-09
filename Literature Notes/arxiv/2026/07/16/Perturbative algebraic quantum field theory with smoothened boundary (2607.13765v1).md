@@ -19,14 +19,14 @@ This paper directly fills the gauge-theory gap in `Articles/Quantization in AdS/
 
 The framework is worth keeping. The printed v1 formulas are not safe to import verbatim. The source-order audit below finds several convention changes and genuine algebraic failures, including a non-nilpotent printed Abelian-YM differential. I therefore separate the invariant architecture from the formulas that require an erratum.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 - **Essential route:** Sections 2.2--2.4, 3.2--3.3, 4.1--4.3, 5.1, and 5.3. These carry the local-current distinction, AMWI, smoothened boundary, modified QME, retarded/advanced BFV corrections, and the Abelian-YM test.
 - **Technical reference:** Section 2.1 for Green operators and wavefront-compatible functionals; Section 5.2 for CMR ordering/polarization; Appendix A for the intended graded-sign ledger. Appendix A must be read critically because its statement and proof disagree.
 - **Interpretive route:** Section 5.4 translates the past boundary current into Hollands' interacting BRST charge and the Kugo--Ojima cohomology language.
 - **Optional background:** The introductory comparison with factorization algebras and the broad deformation-quantization review can be skipped on a first pass.
 
-## Complete source structure
+## Complete Source Structure
 
 | Source part | Construction and later use |
 |---|---|
@@ -49,7 +49,7 @@ The framework is worth keeping. The printed v1 formulas are not safe to import v
 
 The source PDF was inspected at the presentation table, the smoothened-region figure, the modified-QME/curved-$L_\infty$ pages, the causal-cylinder figure, the Abelian-YM calculation, the Hollands comparison, and Appendix A. This visual inspection fixes what the PDF actually prints; it is not counted as an independent mathematical check.
 
-## Global notation and convention dictionary
+## Global Notation and Convention Dictionary
 
 | Object | Paper meaning | Local translation or warning |
 |---|---|---|
@@ -73,7 +73,7 @@ The source PDF was inspected at the presentation table, the smoothened-region fi
 | $Q_{00}$ | Minimal free Koszul--Tate differential | Its cohomology implements free equations of motion. |
 | $J^-,J^+$ | Past/future collar pieces on a causal cylinder | Candidate past/future BRST/BFV generators. |
 
-## Local densities, cutoff currents, and the two brackets
+## Local Densities, Cutoff Currents, and the Two Brackets
 
 The local variational split is
 
@@ -135,7 +135,7 @@ $$\begin{align}
 
 This is the off-shell current ledger to preserve locally. A later printed descent formula changes its sign and fails the defining algebra; that failure is recorded below.
 
-## BV hierarchy and free/interacting splittings
+## BV Hierarchy and free/interacting Splittings
 
 The BV field space is modeled as a degree-shifted cotangent bundle, with a degree-$-1$ local symplectic density and degree-$+1$ antibracket. The field content is organized so that $Q$ contains equations of motion, gauge transformations, ghosts, and antifields in one cohomological vector field.
 
@@ -146,7 +146,7 @@ Two splittings matter:
 
 For the linear splitting, the Hessian $D$ and gauge operator $K$ satisfy the compatibility needed for a Green-hyperbolic gauge-fixed system. The causal propagator $\Delta=\Delta^R-\Delta^A$ induces the Peierls bracket. These identities are the bridge from the BV complex to the pAQFT algebra, but several displayed Section 3 formulas omit terms or right-hand sides; the safe route is to reconstruct them from the definitions rather than quote the propositions.
 
-## Two quantum presentations and the AMWI
+## Two Quantum Presentations and the AMWI
 
 The abstract algebra is represented in two useful ways:
 
@@ -188,7 +188,7 @@ $$\begin{align}
 
 These factors must also appear in the homotopy brackets.
 
-## Møller transport and the interacting BV differential
+## Møller Transport and the Interacting BV Differential
 
 For an interaction $V$, the hybrid $H$-presentation retarded map is
 
@@ -222,7 +222,7 @@ $$\begin{align}
 
 This is the algebraic slot into which the boundary current enters.
 
-## A boundary is replaced by the cutoff collar
+## A Boundary Is Replaced by the Cutoff Collar
 
 A smoothened region is a triple
 
@@ -250,7 +250,7 @@ J[f_n,df_n]\longrightarrow\pi^*L^\partial, \qquad \delta\theta[df_n]\longrightar
 
 This is a controlled way to retain boundary data while continuing to use compactly supported pAQFT interactions. It does not yet solve corner ambiguities or establish the distributional limit in every theory.
 
-## Modified QME and the adjusted current
+## Modified QME and the Adjusted Current
 
 The abstract modified QME is intended to be
 
@@ -278,7 +278,7 @@ J_V^{\rm std} =J^{\rm std}-J_0^{\rm std}-B_0(V), \qquad B_0(V)=Q_0(V)-\{L_0,V\}^
 
 The term $B_0(V)\sim0$ is only bulk-equivalent to zero. It is exactly the kind of off-shell boundary mismatch that the local gravitational-charge workflow should not discard before constructing the ledger.
 
-## Retarded and advanced quantum BFV corrections
+## Retarded and Advanced Quantum BFV Corrections
 
 Under the convention $\kappa(V)=-J$, define
 
@@ -316,7 +316,7 @@ $$\begin{align}
 
 The printed proof has the wrong sign on $J\cdot F$; the corrected derivation is included in the verification log.
 
-## Current-valued curvature of the AMWI brackets
+## Current-Valued Curvature of the AMWI Brackets
 
 The AMWI derivatives define a curved homotopy Lie structure whenever $\kappa(V)\ne0$. A normalization-safe presentation is
 
@@ -338,7 +338,7 @@ $$\begin{align}
 
 If one then sets $\kappa(V)=-J$, the curvature is $-J$, not an independently chosen $J$ with a new $i/\hbar$ factor. The paper switches among all of these normalizations, so any downstream calculation should carry $\kappa$ until the final convention is fixed.
 
-## Causal cylinders turn corrections into charge commutators
+## Causal Cylinders Turn Corrections into Charge Commutators
 
 Let $\Sigma_-$ and $\Sigma_+$ be separated Cauchy surfaces, thickened to $N_-$ and $N_+$, with observables supported in the region $\mathcal O$ between them. Split
 
@@ -360,7 +360,7 @@ Q_V^RF =\left(Q_0+\{V,\cdot\}-i\hbar\Delta_V^{\rm ren} +\frac{i}{\hbar}[J^-,\cdo
 
 and analogously $Q_V^A$ uses $J^+$. This is the closest analogue of a boundary Hamiltonian generator: the current localized near a Cauchy surface acts as an inner quantum derivation on bulk observables.
 
-## CMR bridge: phase space, ordering, and polarization
+## CMR Bridge: Phase Space, Ordering, and Polarization
 
 The CMR modified QME has the schematic form
 
@@ -378,7 +378,7 @@ $$\begin{align}
 
 Deformation quantization then relates Wick, Moyal, and standard orderings by intertwiners. This section supplies the conceptual polarization dictionary, but its printed $\hbar$-powers do not have the correct classical limit. The ordering formulas must be rederived before reuse.
 
-## Abelian Yang--Mills testbed
+## Abelian Yang--Mills Testbed
 
 The nonminimal fields are
 
@@ -440,7 +440,7 @@ $$\begin{align}
 
 This is the right target for comparing a covariant current insertion to the BFV boundary operator. The printed field degrees, polarization, signs, and differential do not consistently reach that target; they must be repaired first.
 
-## Hollands, the interacting BRST charge, and on-shell cohomology
+## Hollands, the Interacting BRST Charge, and On-Shell Cohomology
 
 In the minimal splitting $J_0=0$. The past collar current
 
@@ -469,7 +469,7 @@ Thus $q\star q=0$ makes the inner derivation nilpotent. A Krein-space representa
 
 The claim that the boundary inner-cohomology and the bulk differential cohomology coincide needs more than the displayed decomposition; a quasi-isomorphism or spectral-sequence argument remains to be supplied.
 
-## Global equation ledger
+## Global Equation Ledger
 
 | Role | Safe equation | Status |
 |---|---|---|
@@ -484,7 +484,7 @@ The claim that the boundary inner-cohomology and the bulk differential cohomolog
 | Causal cylinder | $\Omega_J^R=[J^-,\cdot]$, $\Omega_J^A=[\cdot,J^+]$ | Correct under stated support factorization. |
 | Sharp BFV limit | $J[d\eta_n]\to\pi^*L^\partial$ | Analytic convergence not independently established. |
 
-## Global derivation map
+## Global Derivation Map
 
 $$\begin{align}
 \delta\mathbf L=\delta^{\rm src}\mathbf L+d\boldsymbol\theta \Longrightarrow
@@ -507,7 +507,7 @@ $$\begin{align}
 
 The derivation is off-shell until the Hollands section takes $Q_{00}$-cohomology. That order matches the vault rule: construct the current and its boundary correction before imposing constraints or EOM.
 
-## Translation to the local CPS--pAQFT formalism
+## Translation to the Local CPS--pAQFT Formalism
 
 - `CPS data`: the local $\boldsymbol\theta$ and $\delta\boldsymbol\theta$ are the potential and presymplectic currents; their collar integrals should be placed beside the local note's $\theta$ and $\omega$, not after quotienting.
 - `Peierls map`: the paper's $R/A$ Green operators and $\star_H$ extend the local Peierls construction to a BV complex, but the propagator acts on gauge-fixed/extended fields.
@@ -517,7 +517,7 @@ The derivation is off-shell until the Hollands section takes $Q_{00}$-cohomology
 - `Off-shell ledger`: $B_0(V)$, the source/standard improvement, and the $J^-/J^+$ split are the three corrections to keep explicit before EOM.
 - `Quantization`: the local Hadamard/time-ordering construction remains useful, but the current-valued anomaly must be normalized consistently before defining a quantum BRST cohomology.
 
-## Concrete project extensions
+## Concrete Project Extensions
 
 1. Add a BV layer to `cps_paqft_complete_formalism_v1.md` using the invariant symbol $\kappa(V)$; postpone identifying it with $J$ until all signs and $i/\hbar$ factors are fixed.
 2. Re-run the Abelian Maxwell benchmark with the vault's $F^2$-anchored sign convention. Demand $Q^2=0$ before deriving $\theta_{YM}$, $J_{YM}$, or the boundary operator.
@@ -526,7 +526,7 @@ The derivation is off-shell until the Hollands section takes $Q_{00}$-cohomology
 5. Treat $J^-$ and $J^+$ as two presentations of hypersurface evolution; test whether their difference reproduces the local flux/balance term before imposing constraints.
 6. Prove the proposed bulk/boundary cohomology equivalence with a filtration or explicit contracting homotopy rather than inferring it from a sum of differentials.
 
-## Verification log
+## Verification Log
 
 ### Checked
 

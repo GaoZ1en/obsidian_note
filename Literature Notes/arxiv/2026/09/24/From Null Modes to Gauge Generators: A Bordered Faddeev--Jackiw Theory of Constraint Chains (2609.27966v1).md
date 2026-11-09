@@ -12,13 +12,13 @@ summary: "A useful finite-dimensional test for whether a presymplectic null mode
 tags: []
 ---
 
-# What can be reused
+# What Can Be Reused
 
 The useful result is the two-step Noether-chain test in §7: solve a presymplectic linear equation, then remove the remaining potential contraction by an allowed null direction. This gives a concrete test for the vault's proposed regional gauge quotients: a kernel vector on a restricted surface is insufficient; it must lift to a symmetry of the specified regional action. **The field-theory extension remains open in the paper.** No boundary charge, gluing theorem or infinite-dimensional gauge reduction follows from its finite matrices.
 
 The bordered-kernel formula is sound linear algebra. Several stronger identifications fail: the pseudoinverse need not define a Poisson bracket on arbitrary functions; a compressed kernel may require adding primary constraints; and rank deficiency of a secondary bracket alone does not ensure preservation by the Hamiltonian. These failures do not invalidate the direct variational proof of the two-step criterion. Reason codes: `T1-Wald-CPS`, `T1-symplectic`, `T1-symmetry`, `T2-model`.
 
-# Complete source map and reading guide
+# Complete Source Map and Reading Guide
 
 Source: official v1 PDF, 50 pages, TeX `NModes.tex`, and ancillary `NullModesSupplement.nb`. The September 24 issue membership is authoritative; the official raw record gives the unusual earlier v1 date 23 August. This note preserves that metadata rather than inferring submission time from the identifier. There are no technical appendices.
 
@@ -43,137 +43,166 @@ Source: official v1 PDF, 50 pages, TeX `NModes.tex`, and ancillary `NullModesSup
 
 **How to read this long paper.** Read §§2–4, 7–8 and 14.1 first; they contain the reusable construction. Read §§5–6 alongside the counterexamples below before using their interpretations. §§10–12 and 15 are technical reference for a concrete application. The mechanical drawings, historical discussion and bibliography are optional background, but all four mechanical models are reconstructed below. §13.5 should be read with the corrected original-variable transformation.
 
-# First-order conventions and the variational test
+# First-Order Conventions and the Variational Test
 
 Let $\xi^A$ be local real coordinates on a finite-dimensional manifold, with
-$$
-L=a_A(\xi)\dot\xi^A-V(\xi),\qquad
-f_{AB}=\partial_Aa_B-\partial_Ba_A,\qquad
-f_{AB}\dot\xi^B=\partial_AV.
-$$
+
+$$\begin{align}
+L=a_A(\xi)\dot\xi^A-V(\xi),\qquad f_{AB}=\partial_Aa_B-\partial_Ba_A,\qquad f_{AB}\dot\xi^B=\partial_AV.
+\end{align}$$
+
 Use a fixed constant-rank open stratum. The rank of the skew matrix is $r$, its nullity $d$, and $N$ is a local kernel frame. With an orthonormal frame $Q=(Q_R,N)$,
+
 $$
 Q^TfQ=\begin{pmatrix}J&0\\0&0\end{pmatrix},\qquad
 J^{-1}\text{ exists},\qquad f^+=Q_RJ^{-1}Q_R^T.
 $$
+
 The superscript $+$ here is relative to the splitting; the orthogonal choice is the skew Moore–Penrose inverse. It is not automatically a Poisson tensor.
 
 For generated constraints $\Omega_\alpha$, put
-$$
-B_{A\alpha}=\partial_A\Omega_\alpha,\quad
-\Sigma=\{\Omega=0\},\quad
-\mathcal I=\langle\Omega_1,\ldots,\Omega_k\rangle\subset\mathcal R.
-$$
+
+$$\begin{align}
+B_{A\alpha}=\partial_A\Omega_\alpha,\quad \Sigma=\{\Omega=0\},\quad \mathcal I=\langle\Omega_1,\ldots,\Omega_k\rangle\subset\mathcal R.
+\end{align}$$
+
 $\mathcal R$ is the declared effective function ring, including any explicit localizations. Polynomial, smooth and localized ideals are different objects. Bordering introduces auxiliary multiplier coordinates and
+
 $$
 f^{(m)}=\begin{pmatrix}f&B\\-B^T&0\end{pmatrix},\qquad
 \Gamma=N^TB,\quad B_u=Q_R^TB,\quad M=B_u^TJ^{-1}B_u.
 $$
+
 The added velocity terms impose $\dot\Omega=0$, not $\Omega=0$ without admissible initial data. The extended system need not be dynamically equivalent to the original one merely because this matrix exists.
 
 For $\delta\xi=\eta(t)u(\xi)$, integration by parts gives
-$$
-\delta S=-\int\eta A_u\,dt+[a_A\delta\xi^A],\qquad
-A_u=\dot\xi^Tf u+u\cdot\nabla V.
-$$
+
+$$\begin{align}
+\delta S=-\int\eta A_u\,dt+[a_A\delta\xi^A],\qquad A_u=\dot\xi^Tf u+u\cdot\nabla V.
+\end{align}$$
+
 Thus an arbitrary compactly supported $\eta$ produces a symmetry on every curve precisely when $fu=0$ and $uV=0$ as identities. Vanishing only on $\Sigma$, or membership of $uV$ in $\mathcal I$, does not prove this strong statement. Time-endpoint terms are retained; no spatial boundary theory is present.
 
-# Eliminating the symplectic block
+# Eliminating the Symplectic Block
 
 Write $u=Q_Rx+Ny$ and a bordered null vector as $(u,w)$. The two block equations become
-$$
+
+$$\begin{align}
 Jx+B_uw=0,\qquad \Gamma w=0,\qquad B_u^Tx+\Gamma^Ty=0.
-$$
+\end{align}$$
+
 Therefore
-$$
+
+$$\begin{align}
 x=-J^{-1}B_uw,\qquad \Gamma^Ty=Mw.
-$$
+\end{align}$$
+
 Let $\Pi$ be the orthogonal projector onto $\ker\Gamma$. A solution for $y$ exists iff $\Pi Mw=0$. On $w\in\ker\Gamma$, this is $\Pi M\Pi w=0$. Each admitted $w$ has an affine space of lifts with direction $\ker\Gamma^T$. Hence
-$$
-\dim\ker f^{(m)}
-=\dim\ker\Gamma^T+\dim\ker\Gamma-\operatorname{rank}(\Pi M\Pi).
-$$
+
+$$\begin{align}
+\dim\ker f^{(m)} =\dim\ker\Gamma^T+\dim\ker\Gamma-\operatorname{rank}(\Pi M\Pi).
+\end{align}$$
+
 This argument is pointwise linear algebra. Smooth choices of bases require constant ranks; ranks over a rational function field describe only a generic stratum. The multiplier-free contribution $w=0$ is $Ny$ with $\Gamma^Ty=0$, the original kernel tangent to the constraints.
 
 For square $\Gamma$ with $k=d$, elimination gives
-$$
+
+$$\begin{align}
 \det f^{(m)}=\det J\,(\det\Gamma)^2.
-$$
+\end{align}$$
+
 The reduced skew matrix
+
 $$
 C=\begin{pmatrix}0&-\Gamma\\\Gamma^T&M\end{pmatrix}
 $$
+
 has Pfaffian $(-1)^{d(d+1)/2}\det\Gamma$ in this block ordering. Nonorthonormal frames change the volume factor: replacing the orthonormal $N$ by $NS$ multiplies $\det\Gamma$ by $\det S$, and the invariant determinant formula must divide by $\det(N^TN)$. A determinant of the actual bordered matrix cannot change just because a kernel basis was rescaled.
 
-# What the reduced matrices do and do not mean
+# What the Reduced Matrices Do and Do Not Mean
 
 In the canonical cotangent extension define $\chi_A=p_A-a_A$. Then $\{\chi_A,\chi_B\}_{\rm can}=f_{AB}$. Eliminate the $r$ second-class combinations associated with $Q_R$. The remaining primary candidates are $\pi_\alpha=N^A_\alpha\chi_A$. Modulo the full primary constraints, the primary–secondary pairing is $\Gamma$ (with the displayed signs in $C$), and the secondary–secondary pairing is $M$.
 
 When $\Omega=N^T\nabla V$ and $N$ is constant, $\Gamma$ is a Hessian in null directions, hence symmetric; it cannot be the antisymmetric constraint-bracket matrix. Derivatives of $N$ enter for nonconstant frames. Changing the complement changes $M$ by terms containing $\Gamma$; its restriction to $\ker\Gamma$ is invariant under the stated regular splitting changes. These statements do not make an arbitrary ambient pseudoinverse into a Poisson tensor.
 
-## Lemma 5.5: the unrestricted Jacobi claim fails
+## Lemma 5.5: the Unrestricted Jacobi Claim Fails
 
 Take on $\mathbb R^3$
+
 $$
 a=x\,dy+\tfrac12(x^2+y^2)\,dz,\qquad
 f=\begin{pmatrix}0&1&x\\-1&0&y\\-x&-y&0\end{pmatrix},\qquad
 f^+=-\frac{f}{1+x^2+y^2}.
 $$
+
 The form is closed and has constant rank two everywhere. Its orthogonal pseudoinverse satisfies $ff^+f=f$. Nevertheless, for $\{F,G\}_+=\partial F\,f^+\partial G$,
-$$
-\{x,\{y,z\}_+\}_++\{y,\{z,x\}_+\}_++\{z,\{x,y\}_+\}_+
-=\frac{2}{(1+x^2+y^2)^2}\ne0.
-$$
+
+$$\begin{align}
+\{x,\{y,z\}_+\}_++\{y,\{z,x\}_+\}_++\{z,\{x,y\}_+\}_+ =\frac{2}{(1+x^2+y^2)^2}\ne0.
+\end{align}$$
+
 **Failed:** the final sentence of Lemma 5.5, printed p.10, asserts Jacobi on such arbitrary functions. Equality modulo remaining primary constraints cannot simply be substituted inside another bracket: the discarded terms can contribute. Work with invariant observables on an actual reduction, or prove an appropriate Poisson splitting. The constant-frame mechanical examples avoid this particular obstruction.
 
-## Theorem 6.1: primary corrections matter
+## Theorem 6.1: Primary Corrections Matter
 
 The compressed condition counts secondary coefficients *admitting a primary correction*, rather than proving that the pure secondary combination is first class. For
+
 $$
 \Gamma=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
 M=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\quad w=(0,1)^T,
 $$
+
 we have $\Gamma w=\Pi M\Pi w=0$, but $Mw=(1,0)^T\ne0$. In the ordering $(\pi_1,\pi_2,\Omega_1,\Omega_2)$,
-$$
-C(0,0,0,1)^T=(0,0,1,0)^T,\qquad
-C(-1,0,0,1)^T=0.
-$$
+
+$$\begin{align}
+C(0,0,0,1)^T=(0,0,1,0)^T,\qquad C(-1,0,0,1)^T=0.
+\end{align}$$
+
 **Failed:** identifying $\Omega_w$ itself as first class under only the compressed condition. The corrected combination here is $-\pi_1+\Omega_2$. This is realizable with canonical $(q,p)$ and null $(z_1,z_2)$, $V=z_1^2/2+qz_1+pz_2$, so $\Omega=(z_1+q,p)$; it is not merely an arbitrary inadmissible skew matrix. All statements at this stage concern the displayed constraint set, before any additional consistency constraints.
 
-# The two-step chain and its obstruction class
+# The Two-Step Chain and Its Obstruction Class
 
 For $\delta\xi=\sum_{s=0}^S\rho^{(s)}u_s$, integration by parts produces the Noether identity
-$$
+
+$$\begin{align}
 \sum_{s=0}^S(-1)^sD_t^s A_{u_s}\equiv0
-$$
+\end{align}$$
+
 on all jets. For $S=1$ and $fu_1=0$, this reduces exactly to
-$$
+
+$$\begin{align}
 fu_0=\nabla(u_1V),\qquad u_0V=0.
-$$
+\end{align}$$
+
 For $u_1=N_b$ and $\Omega_b=N_bV$, the first equation is solvable when the corresponding column of $\Gamma$ vanishes. Two solutions differ by $Nc$. If all null contractions generate the declared ideal, the change in $u_0V$ is $c^\alpha\Omega_\alpha$, and
-$$
+
+$$\begin{align}
 [u_0V]\in\mathcal R/\mathcal I
-$$
+\end{align}$$
+
 is well defined. If it vanishes, choose an explicit representation $u_0V=c^\alpha\Omega_\alpha$ and replace $u_0$ by $u_0-c^\alpha N_\alpha$. This yields an exact action symmetry. It is a constructive argument within the chosen ring, not merely a test on a constraint surface.
 
 A bordered vector $(u_0,-e_b)$ additionally obeys $B^Tu_0=0$; the chain equation alone need not imply this. Conversely, the full original transformation contains $\dot\rho N_b$. Keeping only the $u_0$ component loses part of the symmetry. Longer chains satisfy the general jet identity, but a general solvability algorithm for $S\ge2$ is explicitly open.
 
-## Weak halting and the missing Hamiltonian test
+## Weak Halting and the Missing Hamiltonian Test
 
 The source's four-variable example is
-$$
-L=q_2\dot q_1-q_1q_3-q_2q_4,\quad
-\Omega=(q_1,q_2),\quad\Gamma=0,\quad M=J^{-1}.
-$$
+
+$$\begin{align}
+L=q_2\dot q_1-q_1q_3-q_2q_4,\quad \Omega=(q_1,q_2),\quad\Gamma=0,\quad M=J^{-1}.
+\end{align}$$
+
 The bordered matrix has rank four and two multiplier-free null vectors $e_3,e_4$. Their contractions lie in $\langle q_1,q_2\rangle$, yet the equations require $q_1=q_2=q_3=q_4=0$. The chain obstructions are $[-q_4]$ and $[q_3]$, both nonzero. This is a successful example of the source criterion.
 
 **Failed:** Proposition 8.4 then claims that for $V=V_0(q,p)+z^\alpha\Omega_\alpha(q,p)$, gauge freedom exists iff $\operatorname{rank}M<k$. Consider instead
-$$
+
+$$\begin{align}
 L=p\dot q-\tfrac12q^2-zp.
-$$
+\end{align}$$
+
 Here $\Omega=p$, $\Gamma=M=0$, and $k=1$. But $fu_0=dp$ has $u_0=\partial_q$ with obstruction $[q]\ne0$ modulo $\langle p\rangle$. The equations give $p=0$, then $q=0$, then $z=0$. There is no nontrivial on-shell gauge freedom. Hamiltonian consistency must be exhausted; the rank of the initial secondary bracket does not replace this step. EL-proportional trivial transformations are excluded from the gauge count.
 
-# Regularity, reducibility, charges and physical counting
+# Regularity, Reducibility, Charges and Physical Counting
 
 Sections 9–12 supply the geometric cautions. Closed constant-rank presymplectic forms have involutive kernels; intersecting with $\ker dV$ describes strong directions under regularity assumptions. Pullback to $\Sigma$ can acquire additional null vectors. Quotient dimensions must use the final admissible constraint manifold and its actual gauge distribution, not the ambient bordered nullity.
 
@@ -181,37 +210,44 @@ Reducibility $Bw=0$ produces pure-multiplier null vectors that do not transform 
 
 Section 12 introduces a separate canonical form $\omega_{\rm can}$. A candidate charge requires $\iota_u\omega_{\rm can}$ to be closed, and exactness requires a local contractible/star-shaped domain or a global cohomological argument. A direction null for the original presymplectic form has only a locally constant intrinsic Hamiltonian; this is not the same as a nontrivial canonical generator on an extension. In the vault, a boundary charge can arise precisely because the regional form and allowed variations differ, but this paper does not construct that boundary data.
 
-# Worked parameter families and a repaired original-variable transformation
+# Worked Parameter Families and a Repaired Original-Variable Transformation
 
 For $V=W(q_1,q_2)+cq_3+mq_3^2/2$, $\Omega=c+mq_3$ and $\Gamma=m$. On $m\ne0$ the bordered determinant is $m^2$; on $m=0,c\ne0$ the constraint surface is empty; on $m=c=0$ the free shift of $q_3$ is a strong gauge direction. These are distinct branches. The separate choice $V=q_2q_3$ gives $L=q_2\dot q_1-q_2q_3$ and the genuine chain $\delta q_1=\rho$, $\delta q_3=\dot\rho$, $\delta q_2=0$, with $\delta L=0$ identically.
 
 For §13.5,
-$$
+
+$$\begin{align}
 L=p\dot q_1+\alpha q_1\dot q_2-\tfrac12p^2-\tfrac\beta2(q_1-q_2)^2,
-$$
+\end{align}$$
+
 $$
 f=\begin{pmatrix}0&\alpha&-1\\-\alpha&0&0\\1&0&0\end{pmatrix},\quad
 N=(0,1,\alpha)^T,\quad
 \Omega=\alpha p-\beta(q_1-q_2),\quad\Gamma=\alpha^2+\beta.
 $$
+
 On $\beta=-\alpha^2$, $\alpha\ne0$, $u_0=(\alpha,\alpha,0)$ obeys $fu_0=d\Omega$ and $u_0V=0$. The **original** transformation is therefore
-$$
-\delta q_1=\alpha\rho,\qquad
-\delta q_2=\alpha\rho+\dot\rho,\qquad
-\delta p=\alpha\dot\rho.
-$$
+
+$$\begin{align}
+\delta q_1=\alpha\rho,\qquad \delta q_2=\alpha\rho+\dot\rho,\qquad \delta p=\alpha\dot\rho.
+\end{align}$$
+
 Direct variation gives
-$$
+
+$$\begin{align}
 \delta L=D_t(\alpha q_1\dot\rho+\alpha^2q_2\rho).
-$$
+\end{align}$$
+
 **Failed:** source Eq.(63), p.27, prints only $\delta q_1=\delta q_2=\alpha\rho$, $\delta p=0$, plus a bordered $\delta\lambda=\dot\rho$. That is not the original-variable chain. Its original-action variation is $\alpha[\dot\rho(p+\alpha q_1)+\alpha\rho\dot q_2]$, which is not generically a total derivative. The corrected chain preserves the source's useful distinction between a regular branch with no arbitrary function and the critical branch with one arbitrary function. At $\alpha=\beta=0$, the border becomes reducible and $q_2$ instead has a direct strong shift symmetry.
 
-# Mechanical bridge and all four realizations
+# Mechanical Bridge and All Four Realizations
 
 For $L_{\rm mech}=\dot q^TK\dot q/2-V(q)$ with constant positive semidefinite $K$, let $w_a$ span its kernel. The constrained Legendre map imposes $\phi_a=w_a\cdot p=0$. The first-order action is
-$$
+
+$$\begin{align}
 L_{\rm FJ}=p\cdot\dot q-\left(\tfrac12p^TK^+p+V+\lambda^a w_a\cdot p\right).
-$$
+\end{align}$$
+
 Its presymplectic matrix has canonical $(q,p)$ block and null $\partial_{\lambda^a}$ directions: its rank is $2n$, not $\operatorname{rank}K$. Initially $\Gamma=M=0$, and the chain has $u_0=w_a\partial_q$, $u_1=\partial_{\lambda^a}$. Its only potential obstruction is $w_a\cdot\nabla V$. If this vanishes identically, $\delta q=\rho^aw_a$, $\delta p=0$, $\delta\lambda^a=\dot\rho^a$ is exact. If it does not, consistency generates new constraints. Since the obstruction depends only on $q$, it cannot belong to the momentum ideal except by vanishing.
 
 | Model | Kinetic and potential data | Chain result and domain |
@@ -222,14 +258,16 @@ Its presymplectic matrix has canonical $(q,p)$ block and null $\partial_{\lambda
 | Square, springs on corners (§14.5) | Same $K$, but $V=mg\sum y_i+(k/2)\sum(y_i-a)^2$ | $wV=k(-y_1+y_2-y_3+y_4)$. For $k\ne0$ a new constraint fixes the alternating direction; for $k=0$ it becomes gauge. |
 
 For the corner-spring model, with $m>0,k\ne0$, the equilibrium is $y_i^*=a-mg/k$ and
-$$
+
+$$\begin{align}
 \det(kI-\lambda K)=\frac{k}{4}(k-\lambda m)(2k-\lambda m)^2.
-$$
+\end{align}$$
+
 The finite squared frequencies are $k/m,2k/m,2k/m$. For $mg\ne0$, the equilibrium escapes to infinity as $k\to0$; for negative $k$ the finite modes are unstable, an extended negative-stiffness model. The exact $k=0$ branch has an additional gauge direction; this is not a collision of finite equilibrium branches. The source's coefficient $k/4$ in Eq.(116) was visually confirmed and independently reproduced.
 
 The compound-spring comparison separates loss of restoring force from changes in constraints: $k_{\rm eff}=k_1k_2/(k_1+k_2)$ can vanish when one spring vanishes while the constraint pairing $k_1+k_2$ stays nonzero. At $k_1+k_2=0$ the consistency chain changes and this reduced formula is undefined; it must not be used to infer gauge freedom or a finite reduced frequency on that locus. The introductory pendulum example similarly retains $2k\ell(x\cos\theta+y\sin\theta)=0$ until the $k\ell=0$ branch is separately considered.
 
-# Equation ledger and translation to the vault
+# Equation Ledger and Translation to the Vault
 
 | Object | Reusable conclusion | Required qualification |
 |---|---|---|
@@ -242,7 +280,7 @@ The compound-spring comparison separates loss of restoring force from changes in
 
 The derivation map is $L\to(f,V)\to(N,\Omega,B)\to(\Gamma,M)\to$ kernel candidates, followed by the logically separate $A_u\to$ chain equations $\to$ ideal obstruction $\to$ exact generator. Only after consistency and quotient regularity can physical degrees of freedom be counted. For regionalization, use this as a finite model for testing a proposed gauge quotient against its original regional action; do not transport a global null algebra and declare it a regional construction.
 
-# Verification record and remaining boundary
+# Verification Record and Remaining Boundary
 
 **Checked — independent Mathematica calculations.** The kernel formula passed 30 exact integer cases with varying symplectic rank, nullity and border size, including forced deficient $\Gamma$; the elimination argument above supplies the reason beyond those finite cases. A symbolic square two-by-two $\Gamma$ determinant test gives zero residual. The constant-rank Jacobi counterexample, primary-correction counterexample, Proposition 8.4 counterexample, four-variable bordered rank, critical two-step chain and corrected total derivative were explicitly reproduced. The pulley pseudoinverse identities, kinetic spectra, both square potential contractions and generalized characteristic polynomial also reduce exactly to the displayed results. An intermediate determinant test had a symbol-name collision; clearing the context and rerunning with distinct symbols gave zero residual.
 

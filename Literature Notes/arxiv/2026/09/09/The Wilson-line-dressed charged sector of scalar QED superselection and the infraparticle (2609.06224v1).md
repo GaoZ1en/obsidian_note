@@ -13,19 +13,19 @@ summary: "A concrete charged-sector and Euclidean-state-gluing calculation, with
 tags: []
 ---
 
-# Why this is high priority
+# Why This Is High Priority
 
 Reason codes: `T1-boundary`, `T1-symmetry`, `T2-model`, `T2-spectral`.
 
 The paper explicitly builds gauge-invariant charged operators by attaching semi-infinite Wilson lines, computes their state overlaps by Osterwalder--Schrader (OS) reflection and Euclidean gluing, and distinguishes superselection between photon clouds from infraparticle behavior inside one cloud sector. These are directly relevant to the vault's cut-charged observables and representation boundary.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential:** the dressed operator and OS-gluing construction in Sec. 1; the cloud-superselection calculation in Sec. 4.1; the same-cloud mass-shell limit in Sec. 4.2; and the finite-$m_\gamma$ crossover in Sec. 5.
 - **Technical reference:** the Stueckelberg/BRST regulator, the undressed self-energy subtraction, the Clausen-function form of the one-loop integral, and the worldline expansion.
 - **Background:** the historical discussion of Faddeev--Kulish dressing, Landau--Khalatnikov--Fradkin transformations, and gravitational dressing analogies.
 
-# Complete source map
+# Complete Source Map
 
 1. **Introduction and summary:** defines the charged dressings, interprets OS reflection/gluing as an inner product, and states cloud orthogonality and the infraparticle exponent.
 2. **Infrared-cutoff scalar QED:** gives the Euclidean action, gauge and BRST transformations, Stueckelberg factorization, and the relation between local massive-photon charged composites and nonlocal massless-photon dressings.
@@ -34,106 +34,95 @@ The paper explicitly builds gauge-invariant charged operators by attaching semi-
 5. **Massive photon and infrared window:** uses a worldline representation to show how the massless infraparticle power law crosses over when $t\sim m_\gamma^{-1}$.
 6. **Conclusion:** relates the perturbative calculation to algebraic QED and states that the claimed all-order one-loop exactness still awaits a separate rigorous proof.
 
-# Model, operators, and conventions
+# Model, Operators, and Conventions
 
 The Euclidean Stueckelberg-regulated scalar-QED action is
 
-$$
+$$\begin{align}
 S=\int\!\mathrm d^Dx\left[|D_\mu\phi|^2+m^2|\phi|^2+\frac\lambda2|\phi|^4+\frac14F_{\mu\nu}^2+\frac{m_\gamma^2}{2}\left(A_\nu-\frac1{m_\gamma}\partial_\nu\varphi\right)^2\right],
-$$
+\end{align}$$
 
 with $D=4-2\epsilon$, $0\le m_\gamma<2m$, and $\lambda=O(e^4)$ so that it does not enter the displayed $O(e^2)$ calculation. Gauge transformations are
 
-$$
-\phi\mapsto e^{ie\eta}\phi,\qquad A_\mu\mapsto A_\mu+\partial_\mu\eta,
-\qquad \varphi\mapsto\varphi+m_\gamma\eta.
-$$
+$$\begin{align}
+\phi\mapsto e^{ie\eta}\phi,\qquad A_\mu\mapsto A_\mu+\partial_\mu\eta, \qquad \varphi\mapsto\varphi+m_\gamma\eta.
+\end{align}$$
 
 The covariant gauge fixing is BRST exact. In Feynman gauge the Stueckelberg scalar and ghosts decouple, while gauge-invariant charged correlators remain independent of the gauge-fixing parameter.
 
 The nonlocal massless-photon charged operator is
 
-$$
+$$\begin{align}
 \Phi_v(x)=\phi(x)\exp\left[-ie\int_{-\infty}^0\!\mathrm ds\,v^\mu A_\mu(x+sv)\right].
-$$
+\end{align}$$
 
 Here $v$ is a future-directed timelike dressing direction after Lorentzian continuation. A smeared state $|f,v\rangle$ is required for normalization; the unsmeared point operator is not itself a normalizable state.
 
-# OS reflection and gluing
+# OS Reflection and Gluing
 
 The transition amplitude between two such states is obtained from the Euclidean correlator
 
-$$
-D_{vv'}(x)=\left\langle e^{ie\int_0^\infty v'\cdot A(x+sv')\,\mathrm ds}\,\phi(x)\phi^*(0)\,
-e^{ie\int_{-\infty}^0v\cdot A(sv)\,\mathrm ds}\right\rangle.
-$$
+$$\begin{align}
+D_{vv'}(x)=\left\langle e^{ie\int_0^\infty v'\cdot A(x+sv')\,\mathrm ds}\,\phi(x)\phi^*(0)\, e^{ie\int_{-\infty}^0v\cdot A(sv)\,\mathrm ds}\right\rangle.
+\end{align}$$
 
 The conjugated line is time-reversed by OS reflection before the two half-space wave functionals are sewn. This is a construction of a state inner product from a Euclidean functional integral. It is not a proof that regional charged observable algebras form an exact pushout or that their states admit a general sewing theorem.
 
-# Cloud superselection
+# Cloud Superselection
 
 For Euclidean unit directions with $v\cdot v'=\cos\delta$, the Wilson-line self-interaction gives
 
-$$
-D_{vv'}(p)=\frac1{p^2+m^2}
-\left(\frac{m_\gamma^2}{m^2}\right)^{\frac{e^2}{8\pi^2}(\delta\cot\delta-1)}
-\left[1+\text{finite as }m_\gamma\to0\right].
-$$
+$$\begin{align}
+D_{vv'}(p)=\frac1{p^2+m^2} \left(\frac{m_\gamma^2}{m^2}\right)^{\frac{e^2}{8\pi^2}(\delta\cot\delta-1)} \left[1+\text{finite as }m_\gamma\to0\right].
+\end{align}$$
 
 The exponent is negative for nonzero Euclidean angle, so the Euclidean correlator itself diverges. Under $\delta\mapsto-i\chi$, with $v\cdot v'=-\cosh\chi$ in Lorentzian signature,
 
-$$
-\langle f_x,v'|f_0,v\rangle\propto
-\left(\frac{m_\gamma^2}{m^2}\right)^{\frac{e^2}{8\pi^2}(\chi\coth\chi-1)}.
-$$
+$$\begin{align}
+\langle f_x,v'|f_0,v\rangle\propto \left(\frac{m_\gamma^2}{m^2}\right)^{\frac{e^2}{8\pi^2}(\chi\coth\chi-1)}.
+\end{align}$$
 
 Since $\chi\coth\chi-1>0$ for $\chi\ne0$, nonparallel clouds become orthogonal when $m_\gamma\to0$. The direction $v$ therefore labels superselection sectors in this ideal infinite-volume, massless-photon limit.
 
-# Same-cloud infraparticle
+# Same-Cloud Infraparticle
 
 Setting $v=v'$ cancels the cloud-orthogonality logarithm but does not restore an isolated particle pole. Near $p^2=-m^2$, write
 
-$$
-p\cdot v=im\cosh\zeta,
-\qquad \sqrt{(p\cdot v)^2+m^2}=im\sinh\zeta.
-$$
+$$\begin{align}
+p\cdot v=im\cosh\zeta, \qquad \sqrt{(p\cdot v)^2+m^2}=im\sinh\zeta.
+\end{align}$$
 
 The paper's one-loop assembly yields
 
-$$
-D_{vv}(p)=\frac1{p^2+m^2}\left[1+\frac{e^2}{2\pi^2}(\zeta\coth\zeta-1)
-\log\frac{p^2+m^2}{m^2}+\cdots\right],
-$$
+$$\begin{align}
+D_{vv}(p)=\frac1{p^2+m^2}\left[1+\frac{e^2}{2\pi^2}(\zeta\coth\zeta-1) \log\frac{p^2+m^2}{m^2}+\cdots\right],
+\end{align}$$
 
 and exponentiation gives the branch point
 
-$$
-D_{vv}(p)\sim\left[\frac1{p^2+m^2}\right]^{1-\gamma(\zeta)},
-\qquad
-\gamma(\zeta)=\frac{e^2}{2\pi^2}(\zeta\coth\zeta-1).
-$$
+$$\begin{align}
+D_{vv}(p)\sim\left[\frac1{p^2+m^2}\right]^{1-\gamma(\zeta)}, \qquad \gamma(\zeta)=\frac{e^2}{2\pi^2}(\zeta\coth\zeta-1).
+\end{align}$$
 
 The exponent vanishes quadratically when the dressing is tuned to the particle velocity:
 
-$$
+$$\begin{align}
 \gamma(\zeta)=\frac{e^2}{6\pi^2}\zeta^2+O(\zeta^4).
-$$
+\end{align}$$
 
 At large proper time in the massless window, the position-space amplitude behaves as $e^{-imt}t^{-3/2-\gamma}$. For finite $m_\gamma$, the anomalous power persists only for $m^{-1}\ll t\ll m_\gamma^{-1}$ and is cut off at longer times.
 
-# Finite-regulator crossover
+# Finite-Regulator Crossover
 
 The worldline photon-exchange term contains the exact crossover function $K_0(m_\gamma t)$. Its limits are
 
-$$
-K_0(w)=-\log\frac w2-\gamma_E+O(w^2\log w),
-\qquad
-K_0(w)\sim\sqrt{\frac\pi{2w}}e^{-w}.
-$$
+$$\begin{align}
+K_0(w)=-\log\frac w2-\gamma_E+O(w^2\log w), \qquad K_0(w)\sim\sqrt{\frac\pi{2w}}e^{-w}.
+\end{align}$$
 
 Thus the logarithmic running occurs at $m_\gamma t\ll1$ and freezes for $m_\gamma t\gtrsim1$. The caption of Fig. 3 says the running window is $m_\gamma t\gg1$; that literal inequality contradicts the displayed asymptotics and the next clause of the same caption.
 
-# Equation ledger and derivation map
+# Equation Ledger and Derivation Map
 
 1. Gauge invariance forces a long-range $1/(k\cdot v)$ dressing kernel.
 2. OS reflection reverses the bra Wilson line and turns the state overlap into $D_{vv'}$.
@@ -144,14 +133,16 @@ Thus the logarithmic running occurs at $m_\gamma t\ll1$ and freezes for $m_\gamm
 7. Its coefficient is $\gamma(\zeta)$; exponentiation replaces the pole by a branch point.
 8. A nonzero $m_\gamma$ replaces the unbounded logarithm by a $K_0(m_\gamma t)$ crossover.
 
-# Independent checks
+# Independent Checks
 
 **Checked (Mathematica and direct algebra):**
 
 - With $u=2\alpha-1$, the denominator in the Feynman-parameter integral becomes $\cos^2(\delta/2)+u^2\sin^2(\delta/2)$, giving
-  $$
-  \int_0^1\frac{\cos\delta\,\mathrm d\alpha}{\alpha^2+(1-\alpha)^2+2\alpha(1-\alpha)\cos\delta}=\delta\cot\delta
-  $$
+
+$$\begin{align}
+\int_0^1\frac{\cos\delta\,\mathrm d\alpha}{\alpha^2+(1-\alpha)^2+2\alpha(1-\alpha)\cos\delta}=\delta\cot\delta
+\end{align}$$
+
   for $0\le\delta<\pi/2$.
 - The analytic continuation $(\delta\cot\delta-1)|_{\delta=-i\chi}=\chi\coth\chi-1$ has exact zero residual.
 - The displayed mass-shell contributions combine as $[4\zeta\coth\zeta-2-2]/8=(\zeta\coth\zeta-1)/2$, reproducing $e^2(\zeta\coth\zeta-1)/(2\pi^2)$.
@@ -166,7 +157,7 @@ Thus the logarithmic running occurs at $m_\gamma t\ll1$ and freezes for $m_\gamm
 
 **Not independently verified:** the all-orders statement that both infrared exponents are one-loop exact. The conclusion itself says a systematic rigorous proof is deferred to future work; the current argument uses soft-theorem power counting and a charged-matter mass gap.
 
-# Translation to the vault programme
+# Translation to the Vault Programme
 
 The vector $v$ is not merely a gauge choice: after the massless infinite-volume limit it labels inequivalent charged-cloud sectors. This reinforces the vault distinction between a framed/cut-charged regional algebra and its cut-invariant subalgebra. A sewing prescription that discards the long-range dressing label cannot reconstruct these charged sectors.
 

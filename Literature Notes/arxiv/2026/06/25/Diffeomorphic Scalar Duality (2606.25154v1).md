@@ -15,26 +15,24 @@ tags: []
 
 Daily overview: [[2026_06_25_overview]]
 
-# Why this is useful here
+# Why This Is Useful Here
 
 This paper is not a charge or CPS paper. Its value for the vault is a convention warning: a transformation that looks like a scalar field redefinition in a fixed background becomes, once gravity is dynamical, a local transformation in Einstein-Cartan variables. The spin connection must remain independent, and a torsion-free configuration in one frame is generally mapped to a torsionful configuration in the dual frame.
 
 This is directly relevant whenever first-order gravity, Cartan variables, or field-dependent diffeomorphisms are used in boundary/CPS arguments. The lesson is that "same physics by field redefinition" may require changing which geometric variables are held independent.
 
-# Scalar duality as a field-dependent diffeomorphism
+# Scalar Duality as a Field-Dependent Diffeomorphism
 
 The starting point is a generic scalar EFT written as
 
 $$\begin{align}
-S=\int d^dx\,p(\phi,X),\qquad
-X=-\frac12\eta^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi .
+S=\int d^dx\,p(\phi,X),\qquad X=-\frac12\eta^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi .
 \end{align}$$
 
 The duality is not an ordinary pointwise map $\phi\mapsto f(\phi)$. It is a field-dependent change of spacetime coordinates and scalar variable. In the paper's useful schematic form, one works with a dual scalar $\tilde\phi$ and a derivative variable $\tilde\Phi_\mu=\partial_\mu\tilde\phi$, and writes
 
 $$\begin{align}
-x^\mu=\tilde x^\mu+\tilde G(\tilde\phi,\tilde X)\tilde\Phi^\mu,\qquad
-\phi(x)=\tilde\phi(\tilde x)+\tilde F(\tilde\phi,\tilde X).
+x^\mu=\tilde x^\mu+\tilde G(\tilde\phi,\tilde X)\tilde\Phi^\mu,\qquad \phi(x)=\tilde\phi(\tilde x)+\tilde F(\tilde\phi,\tilde X).
 \end{align}$$
 
 The functions $\tilde F$ and $\tilde G$ are constrained by integrability and invertibility. The dual map is only valid away from loci where the Jacobian of the field-dependent coordinate transformation degenerates. The paper calls these degeneration loci duality horizons.
@@ -45,13 +43,13 @@ For the local research use, the important distinction is:
 1. the map is local only after one includes the induced coordinate transformation;
 1. S-matrix equivalence is not the same statement as an ordinary local field redefinition at fixed coordinates.
 
-# Closure and the symmetry subgroup
+# Closure and the Symmetry Subgroup
 
 The source gives explicit families where the transformations compose into a group. The composition law is stated in terms of the functions that determine the scalar and coordinate shift. The appendix verifies closure by differentiating the composed transformation and checking that the integrability identity used in the main text is preserved.
 
 The practical upshot is that the duality is not just a one-off trick. Within the allowed branch of the square root and away from singular Jacobian loci, one gets a family of local scalar theories related by a controlled transformation.
 
-# Coupling to gravity requires first-order variables
+# Coupling to Gravity Requires First-Order Variables
 
 The gravitational completion is the main reason to keep this paper in the vault. In Einstein-Cartan variables, the fields are
 
@@ -62,10 +60,7 @@ e^a=e^a{}_\mu dx^\mu,\qquad \omega^a{}_b=\omega^a{}_{b\mu}dx^\mu,
 with $e^a$ and $\omega^a{}_b$ independent. The ordinary scalar-gravity action can be written in form language as
 
 $$\begin{align}
-S=\int \epsilon_{abcd}\left[
-\frac{M_{\rm Pl}^2}{4}e^a\wedge e^b\wedge R^{cd}[\omega]
-+\frac1{4!}e^a\wedge e^b\wedge e^c\wedge e^d\,p(\phi,X)
-\right].
+S=\int \epsilon_{abcd}\left[ \frac{M_{\rm Pl}^2}{4}e^a\wedge e^b\wedge R^{cd}[\omega] +\frac1{4!}e^a\wedge e^b\wedge e^c\wedge e^d\,p(\phi,X) \right].
 \end{align}$$
 
 Before dualizing, varying with respect to the spin connection gives the usual torsion-free condition
@@ -77,27 +72,18 @@ de^a+\omega^a{}_b\wedge e^b=0.
 The duality transformation keeps the spin connection fixed and shifts the vielbein by a covariant derivative of the scalar-gradient vector:
 
 $$\begin{align}
-e^a=\tilde e^a+D[\tilde\omega]\left(\tilde G\,\tilde\Phi^a\right),
-\qquad
-\omega^a{}_b=\tilde\omega^a{}_b .
+e^a=\tilde e^a+D[\tilde\omega]\left(\tilde G\,\tilde\Phi^a\right), \qquad \omega^a{}_b=\tilde\omega^a{}_b .
 \end{align}$$
 
 The transformed action has the schematic form
 
 $$\begin{align}
-S=\int \epsilon_{abcd}\left[
-\frac{M_{\rm Pl}^2}{4}
-\left(\tilde e+D[\tilde\omega](\tilde G\tilde\Phi)\right)^a
-\wedge
-\left(\tilde e+D[\tilde\omega](\tilde G\tilde\Phi)\right)^b
-\wedge R^{cd}[\tilde\omega]
-+\cdots
-\right],
+S=\int \epsilon_{abcd}\left[ \frac{M_{\rm Pl}^2}{4} \left(\tilde e+D[\tilde\omega](\tilde G\tilde\Phi)\right)^a \wedge \left(\tilde e+D[\tilde\omega](\tilde G\tilde\Phi)\right)^b \wedge R^{cd}[\tilde\omega] +\cdots \right],
 \end{align}$$
 
 where the matter term is evaluated on the dual scalar variables. The expression looks higher-derivative if one tries to eliminate $\tilde\omega$ too early, but it is obtained by a local invertible field redefinition from the original theory, so the apparent higher derivatives are degenerate rather than new propagating modes.
 
-# Torsion is generated by the dual frame
+# Torsion Is Generated by the Dual Frame
 
 The conceptual point is simple but important. If
 
@@ -108,8 +94,7 @@ T^a[e,\omega]=de^a+\omega^a{}_b\wedge e^b=0
 in the original frame, then substituting
 
 $$\begin{align}
-e^a=\tilde e^a+D[\tilde\omega](\tilde G\tilde\Phi^a),\qquad
-\omega=\tilde\omega
+e^a=\tilde e^a+D[\tilde\omega](\tilde G\tilde\Phi^a),\qquad \omega=\tilde\omega
 \end{align}$$
 
 does not imply
@@ -122,31 +107,29 @@ Instead, the dual frame generally has nonzero torsion. Therefore the duality is 
 
 For CPS or boundary work, this means a first-order duality can move data between the vielbein sector and torsion sector. Any boundary term or presymplectic potential written after imposing torsion-free conditions may obscure the duality.
 
-# Decoupling limit and scalar-graviton mixing
+# Decoupling Limit and Scalar-Graviton Mixing
 
 The source then studies the weak-gravity/decoupling limit. Freezing the vielbein to a fixed Cartesian background and setting $\omega=0$ reproduces the flat-space scalar duality, but this is not fully consistent when scalar and graviton fluctuations mix. The paper organizes the limit so that the usual Einstein-Hilbert term keeps its $M_{\rm Pl}$ normalization while the scalar-induced geometric terms retain the information needed to recover the flat scalar duality.
 
 The local message is that a flat-background scalar duality is the decoupling shadow of a first-order gravitational field redefinition. If the full system has boundaries, the correct boundary variables should be chosen before eliminating $\omega$.
 
-# Locality of the measure
+# Locality of the Measure
 
 The later section checks the path-integral Jacobian. The field-redefinition matrix has blocks involving $\delta\phi/\delta\tilde\phi$, $\delta\phi/\delta\tilde e$, $\delta e/\delta\tilde\phi$, $\delta e/\delta\tilde e$, and an identity block for the spin connection:
 
 $$\begin{align}
-\frac{\delta\omega^{ab}(x)}{\delta\tilde\omega^{cd}(x')}
-=\delta^{ab}_{cd}\delta^{(d)}(x-x').
+\frac{\delta\omega^{ab}(x)}{\delta\tilde\omega^{cd}(x')} =\delta^{ab}_{cd}\delta^{(d)}(x-x').
 \end{align}$$
 
 The only nontrivial field-dependent blocks come from the scalar and vielbein sectors. The source writes the variations in terms of the inverse vielbein and the dual scalar-gradient variables, for example
 
 $$\begin{align}
-\tilde\Phi^a=\tilde E^a{}_\mu\partial_\mu\tilde\phi,\qquad
-\tilde X=-\frac12\tilde\Phi^a\tilde\Phi_a.
+\tilde\Phi^a=\tilde E^a{}_\mu\partial_\mu\tilde\phi,\qquad \tilde X=-\frac12\tilde\Phi^a\tilde\Phi_a.
 \end{align}$$
 
 The conclusion is that the operators entering the Jacobian are local differential operators with finitely many derivatives. There is no nonlocal measure factor generated by the gravitational duality.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

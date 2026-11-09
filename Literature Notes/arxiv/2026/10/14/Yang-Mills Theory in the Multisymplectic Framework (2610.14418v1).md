@@ -35,7 +35,7 @@ It does **not** establish a Lorentzian initial-boundary value theorem, a Peierls
 
 Source: [official v1](https://arxiv.org/abs/2610.14418v1), 96 PDF pages, a Master's thesis by David Villa-Blanco. Page references below are printed pages; PDF page number is printed page + 5 in the main text. Full PDF and TeX were inspected; key pages 19, 57, 63–64 and 68–70 were visually checked. Reason codes: `T1-Wald-CPS; T1-symplectic; T1-charge; T2-model`.
 
-## Complete section tree and dependency map
+## Complete Section Tree and Dependency Map
 
 | Source cluster | Complete coverage and purpose | Downstream use |
 |---|---|---|
@@ -59,24 +59,19 @@ Source: [official v1](https://arxiv.org/abs/2610.14418v1), 96 PDF pages, a Maste
 
 The main dependency chain is
 
-$$
-(Y\to X,J^1Y,\theta^i)\longrightarrow
-(\Theta_L,\Omega_L,\mathrm{EL/DD})\longrightarrow
-(\operatorname{Leg},M_1,H)\longrightarrow
-(\widetilde\Omega_L,\widetilde J)
-$$
+$$\begin{align}
+(Y\to X,J^1Y,\theta^i)\longrightarrow (\Theta_L,\Omega_L,\mathrm{EL/DD})\longrightarrow (\operatorname{Leg},M_1,H)\longrightarrow (\widetilde\Omega_L,\widetilde J)
+\end{align}$$
 
 with a second input chain
 
-$$
-P\to X\longrightarrow C(P),\operatorname{ad}P
-\longrightarrow(F,D_A,\kappa)\longrightarrow
-(L_{YM},p,J^\xi,K^\xi).
-$$
+$$\begin{align}
+P\to X\longrightarrow C(P),\operatorname{ad}P \longrightarrow(F,D_A,\kappa)\longrightarrow (L_{YM},p,J^\xi,K^\xi).
+\end{align}$$
 
 The two chains meet only after the fields, momenta, boundary subbundle and allowed symmetry generators have been specified.
 
-## Global notation dictionary
+## Global Notation Dictionary
 
 | Symbol | Meaning and convention |
 |---|---|
@@ -93,56 +88,49 @@ The two chains meet only after the fields, momenta, boundary subbundle and allow
 | $A^a_{\mu\nu}$ | Jet coordinate for $\partial_\nu A^a_\mu$; the derivative index is **second**. This determines the sign of $p_a^{\mu\nu}$. |
 | $\mathbb A^a,\mathbb F_a$ | Lower-degree forms on $M_1$: $A^a_\mu dx^\mu$ and $\frac12p_a^{\mu\nu}\eta_{\mu\nu}$; $\mathbb F_a$ corresponds to $\kappa_{ab}*F^b$. |
 
-## Cluster I: jets, Poincaré–Cartan forms and dynamics
+## Cluster I: Jets, Poincaré–Cartan Forms and Dynamics
 
 For a first-order density $\mathcal L=L(x,y,z)\eta$, define
 
-$$
-p_i^\mu=\frac{\partial L}{\partial z^i_\mu},\qquad
-\Theta_L=L\eta+p_i^\mu\theta^i\wedge\eta_\mu,
-\qquad\Omega_L=-d\Theta_L.
-$$
+$$\begin{align}
+p_i^\mu=\frac{\partial L}{\partial z^i_\mu},\qquad \Theta_L=L\eta+p_i^\mu\theta^i\wedge\eta_\mu, \qquad\Omega_L=-d\Theta_L.
+\end{align}$$
 
 The vertical endomorphism is $S_\eta=\theta^i\wedge\eta_\nu\otimes\partial_{z^i_\nu}$; it packages the derivative of $L$ into the contact correction to $L\eta$. For a projectable vector field $\xi_Y=\xi^\mu\partial_\mu+\xi^i\partial_{y^i}$, preserving the contact structure determines its prolongation:
 
-$$
-\xi_Y^{(1)}=\xi^\mu\partial_\mu+\xi^i\partial_{y^i}
- +(D_\mu\xi^i-z^i_\nu D_\mu\xi^\nu)\partial_{z^i_\mu}.
-$$
+$$\begin{align}
+\xi_Y^{(1)}=\xi^\mu\partial_\mu+\xi^i\partial_{y^i} +(D_\mu\xi^i-z^i_\nu D_\mu\xi^\nu)\partial_{z^i_\mu}.
+\end{align}$$
 
 Integration by parts gives
 
-$$
-\delta\mathcal L=
-\left(\frac{\partial L}{\partial y^i}-D_\mu p_i^\mu\right)
-\delta y^i\eta+d\bigl(p_i^\mu\delta y^i\eta_\mu\bigr).
-$$
+$$\begin{align}
+\delta\mathcal L= \left(\frac{\partial L}{\partial y^i}-D_\mu p_i^\mu\right) \delta y^i\eta+d\bigl(p_i^\mu\delta y^i\eta_\mu\bigr).
+\end{align}$$
 
 Thus the Euler–Lagrange equation is $D_\mu p_i^\mu=\partial L/\partial y^i$. Intrinsically it is the vanishing of $(j^1\phi)^*(\iota_V\Omega_L)$ for all relevant variations, with higher jets used when differentiating the pulled-back coefficients. A De Donder section $\sigma:X\to Z$ instead obeys $\sigma^*(\iota_V\Omega_L)=0$ without initially requiring $\sigma=j^1\phi$. The regular Hessian can recover holonomicity; the singular case must retain the contact constraint separately. Appendix C is essential here.
 
 The connection formulation uses a horizontal projector $h$ satisfying
 
-$$
+$$\begin{align}
 \iota_h\Omega_L=n\Omega_L.
-$$
+\end{align}$$
 
 A constraint algorithm restricts to points where such projectors exist and are tangent to the preceding constraint surface and boundary data. Pointwise solvability of this equation does not establish integrability of the horizontal distribution. Integral sections require a Frobenius/integrability condition; identifying them with physical fields also requires holonomicity. No hyperbolic existence theorem follows from the finite-dimensional algebraic algorithm.
 
-## Cluster II: covariant Legendre map and Hamiltonian forms
+## Cluster II: Covariant Legendre Map and Hamiltonian Forms
 
 On the extended multimomentum bundle $\Lambda_2^dY$, the canonical form is
 
-$$
+$$\begin{align}
 \Theta=p\eta+p_i^\mu dy^i\wedge\eta_\mu.
-$$
+\end{align}$$
 
 The restricted bundle $Z^*=\Lambda_2^dY/\Lambda_1^dY$ forgets $p$. A section $h:Z^*\to\Lambda_2^dY$ fixes $p=-H$, and
 
-$$
-\Theta_h=-H\eta+p_i^\mu dy^i\wedge\eta_\mu,
-\qquad
-\Omega_h=dH\wedge\eta-dp_i^\mu\wedge dy^i\wedge\eta_\mu.
-$$
+$$\begin{align}
+\Theta_h=-H\eta+p_i^\mu dy^i\wedge\eta_\mu, \qquad \Omega_h=dH\wedge\eta-dp_i^\mu\wedge dy^i\wedge\eta_\mu.
+\end{align}$$
 
 The extended Legendre map sends $p_i^\mu=L_{z^i_\mu}$ and $p=L-z^i_\mu p_i^\mu$, so its pullback of the canonical form is $\Theta_L$. For a compatible Hamilton section, the restricted pullback agrees too. This qualification matters: an arbitrary Hamilton section does not satisfy the Legendre correspondence.
 
@@ -150,52 +138,43 @@ For an almost regular theory the image is embedded, the Legendre map onto it is 
 
 **Regularity correction (Remark 2.3.2, p. 19).** A nonsingular Hessian is a local statement. It does not imply globally connected fibres. For a mechanical first-order Lagrangian
 
-$$
-L(u,v)=e^u\cos v,\qquad
-\det\operatorname{Hess}L=-e^{2u},\qquad
-(p_u,p_v)=e^u(\cos v,-\sin v),
-$$
+$$\begin{align}
+L(u,v)=e^u\cos v,\qquad \det\operatorname{Hess}L=-e^{2u},\qquad (p_u,p_v)=e^u(\cos v,-\sin v),
+\end{align}$$
 
 the different velocities $(u,2\pi k)$ have the same restricted momenta and the same energy $E=e^u(u-1)$. Their extended Legendre fibre is disconnected. A globally invertible/hyperregular hypothesis, or a local branch restriction, removes this example. This does not undermine the independently justified affine-fibre property of Yang–Mills.
 
 For a Hamiltonian $\ell$-form $\alpha$ the source uses
 
-$$
-d\alpha=\iota_{U_\alpha}\Omega,
-\qquad \deg U_\alpha=n+1-\ell.
-$$
+$$\begin{align}
+d\alpha=\iota_{U_\alpha}\Omega, \qquad \deg U_\alpha=n+1-\ell.
+\end{align}$$
 
 The multivector is defined modulo the kernel of contraction with $\Omega$. Hamiltonian forms are then quotiented by closed forms. The bracket is
 
-$$
-\{\alpha,\beta\}=-\iota_{U_\alpha\wedge U_\beta}\Omega,
-\qquad
-\deg\{\alpha,\beta\}=\ell_\alpha+\ell_\beta-n.
-$$
+$$\begin{align}
+\{\alpha,\beta\}=-\iota_{U_\alpha\wedge U_\beta}\Omega, \qquad \deg\{\alpha,\beta\}=\ell_\alpha+\ell_\beta-n.
+\end{align}$$
 
 With shifted degree $|\widehat\alpha|=n-\ell_\alpha$ and the source's sign adjustment $\{\widehat\alpha,\widehat\beta\}^*=(-1)^{|\widehat\alpha|}\{\alpha,\beta\}$, the quotient carries a graded Lie bracket. Before taking the quotient, the Jacobiator has an exact-form remainder. In top degree the representative bracket is $\iota_{X_\alpha}\iota_{X_\beta}\Omega$. The thesis presents the general graded theorem from the multisymplectic literature; the checks below concern explicit Yang–Mills representatives, not a new proof for every degree and every premultisymplectic manifold.
 
-## Cluster III: hypersurface transgression and boundary conditions
+## Cluster III: Hypersurface Transgression and Boundary Conditions
 
 The data include a boundary subbundle $B$ and a primitive $\Pi$ with
 
-$$
+$$\begin{align}
 i_B^*\Theta_L=d\Pi,\qquad i_B^*\Omega_L=0.
-$$
+\end{align}$$
 
 The degree of $\Pi$ is $n$, as required by the equation; the $n+1$ degree printed in the early boundary discussion is a degree typo. For admissible embeddings $\gamma:M\to Z$, the thesis defines
 
-$$
-\widetilde\Theta_L(\delta\gamma)
-=\int_M\gamma^*(\iota_{\delta\gamma}\Theta_L)
- +\int_{\partial M}\gamma^*(\iota_{\delta\gamma}\Pi),
-$$
+$$\begin{align}
+\widetilde\Theta_L(\delta\gamma) =\int_M\gamma^*(\iota_{\delta\gamma}\Theta_L) +\int_{\partial M}\gamma^*(\iota_{\delta\gamma}\Pi),
+\end{align}$$
 
-$$
-\widetilde\Omega_L(\delta_1\gamma,\delta_2\gamma)
-=\int_M\gamma^*(\iota_{\delta_2\gamma}\iota_{\delta_1\gamma}\Omega_L),
-\qquad\widetilde\Omega_L=-\delta\widetilde\Theta_L.
-$$
+$$\begin{align}
+\widetilde\Omega_L(\delta_1\gamma,\delta_2\gamma) =\int_M\gamma^*(\iota_{\delta_2\gamma}\iota_{\delta_1\gamma}\Omega_L), \qquad\widetilde\Omega_L=-\delta\widetilde\Theta_L.
+\end{align}$$
 
 The general relative-form construction for $i_B^*\alpha=d\beta$ has a boundary term $-(-1)^k\int_{\partial M}\iota_{v_1}\cdots\iota_{v_k}\beta$ when transgressing an $(n+k)$-form. Stokes' theorem supplies the boundary correction needed for compatibility with exterior differentiation. Boundary tangency and preservation of the relative data are part of the statement, not optional conditions that can be discarded after integrating.
 
@@ -203,21 +182,19 @@ A spacetime slicing turns a De Donder section into a curve in $\widetilde Z$. Un
 
 Two distinctions matter for CPS. First, the source calls a compact embedded hypersurface a “Cauchy surface” without proving it is Cauchy for a Lorentzian PDE. Second, $\widetilde Z$ includes embedding/jet data; one must impose the equations, contact conditions and gauge quotient to obtain a physical phase space. The presymplectic construction alone proves neither uniqueness from initial data nor existence of advanced/retarded Green operators.
 
-## Cluster IV: exact, divergence and Cartan symmetries
+## Cluster IV: Exact, Divergence and Cartan Symmetries
 
 A projectable transformation preserving the Lagrangian modulo a divergence yields a Noether current. Exact preservation of $\Theta_L$ gives
 
-$$
-J^\xi=\iota_{\xi^{(1)}}\Theta_L,
-\qquad dJ^\xi=\iota_{\xi^{(1)}}\Omega_L,
-\qquad (j^1\phi)^*dJ^\xi=0
-$$
+$$\begin{align}
+J^\xi=\iota_{\xi^{(1)}}\Theta_L, \qquad dJ^\xi=\iota_{\xi^{(1)}}\Omega_L, \qquad (j^1\phi)^*dJ^\xi=0
+\end{align}$$
 
 on shell. More generally, for $\mathcal L_\xi\Theta_L=d\alpha$, Cartan's identity gives
 
-$$
+$$\begin{align}
 J^\xi=\iota_\xi\Theta_L-\alpha.
-$$
+\end{align}$$
 
 Subtracting $d\alpha$, as printed in Theorem 4.2.2, has the wrong form degree. The sign follows from $\mathcal L_\xi=d\iota_\xi+\iota_\xi d$ and $\Omega_L=-d\Theta_L$; a minus sign in the displayed Cartan identity in the earlier Hamiltonian-form discussion is likewise not the convention used in this reconstruction.
 
@@ -225,111 +202,91 @@ The source extends these statements across Lagrangian, De Donder, Hamiltonian an
 
 For momentum maps the representative-level algebra reads
 
-$$
-\{J^\xi,J^\zeta\}=J^{[\xi,\zeta]}
- -d\bigl(\iota_{\xi}\iota_{\zeta}\Theta_L\bigr).
-$$
+$$\begin{align}
+\{J^\xi,J^\zeta\}=J^{[\xi,\zeta]} -d\bigl(\iota_{\xi}\iota_{\zeta}\Theta_L\bigr).
+\end{align}$$
 
 The exact term disappears in the quotient by closed forms, but can contribute to boundary integrals in other settings. For the vertical Yang–Mills gauge vectors, $\Theta_L$ has at most one vertical differential, so the double contraction vanishes identically and the local top-form algebra closes exactly. The repeated $\xi$ in one printed double contraction in §6.9.1 is a typo; the general formula contains $\xi,\zeta$.
 
 Localizable symmetries lead to the second Noether statement: on shell their integrated charges vanish when their parameters have compact interior support. Extending a parameter to the boundary changes the boundary problem and requires a separate differentiability/integrability analysis. It does not follow merely from “gauge invariance of the bulk Lagrangian” that the transformation is an allowed Hamiltonian symmetry of a chosen region.
 
-## Cluster V: connection bundle, curvature and Yang–Mills density
+## Cluster V: Connection Bundle, Curvature and Yang–Mills Density
 
 Connections on $P\to X$ are sections of the affine bundle $C(P)=J^1P/G$. In a local trivialization the connection is $A=A^a_\mu e_a dx^\mu$ and
 
-$$
-F^a_{\mu\nu}=A^a_{\nu\mu}-A^a_{\mu\nu}
- +C^a{}_{bc}A^b_\mu A^c_\nu,
-\qquad F=dA+\tfrac12[A,A].
-$$
+$$\begin{align}
+F^a_{\mu\nu}=A^a_{\nu\mu}-A^a_{\mu\nu} +C^a{}_{bc}A^b_\mu A^c_\nu, \qquad F=dA+\tfrac12[A,A].
+\end{align}$$
 
 Under an active gauge transformation,
 
-$$
-A\mapsto g^{-1}Ag+g^{-1}dg,
-\quad F\mapsto g^{-1}Fg,
-\quad\delta_\xi A=D_A\xi,
-\quad\delta_\xi F=[F,\xi].
-$$
+$$\begin{align}
+A\mapsto g^{-1}Ag+g^{-1}dg, \quad F\mapsto g^{-1}Fg, \quad\delta_\xi A=D_A\xi, \quad\delta_\xi F=[F,\xi].
+\end{align}$$
 
 The infinitesimal action on the connection bundle has a pointwise Lie-algebra homomorphism convention. The principal-bundle realization by invariant vertical vector fields uses the corresponding anti-homomorphism convention; these should not be silently interchanged. Active transformations and passive changes of local section also have inverse-conjugation conventions that must be tracked.
 
 The Lagrangian density is
 
-$$
-\mathcal L_{YM}=-\tfrac12\kappa_{ab}F^a\wedge *F^b
-=L_{YM}\eta,\qquad
-L_{YM}=-\frac{\sqrt{|g|}}4\kappa_{ab}F^a_{\mu\nu}F^{b\mu\nu}.
-$$
+$$\begin{align}
+\mathcal L_{YM}=-\tfrac12\kappa_{ab}F^a\wedge *F^b =L_{YM}\eta,\qquad L_{YM}=-\frac{\sqrt{|g|}}4\kappa_{ab}F^a_{\mu\nu}F^{b\mu\nu}.
+\end{align}$$
 
 Ad-invariance of $\kappa$ proves gauge invariance. The unqualified “most general first-order gauge-invariant Lagrangian” statement on p. 57 is false: $[\kappa_{ab}F^a_{\mu\nu}F^{b\mu\nu}]^2\mathrm{vol}_g$ is another first-derivative gauge-invariant density. A uniqueness statement needs extra restrictions such as quadratic dependence on curvature and a specified invariant pairing/class of contractions. The thesis's actual quadratic model is well defined without that uniqueness claim.
 
-## Cluster VI: explicit Legendre constraints and field equations
+## Cluster VI: Explicit Legendre Constraints and Field Equations
 
 With the derivative index second, the momenta are
 
-$$
-p_a^{\mu\nu}:=\frac{\partial L_{YM}}{\partial A^a_{\mu\nu}}
-=\sqrt{|g|}\kappa_{ab}F^{b\mu\nu},\qquad
-p_a^{(\mu\nu)}=0.
-$$
+$$\begin{align}
+p_a^{\mu\nu}:=\frac{\partial L_{YM}}{\partial A^a_{\mu\nu}} =\sqrt{|g|}\kappa_{ab}F^{b\mu\nu},\qquad p_a^{(\mu\nu)}=0.
+\end{align}$$
 
 The remaining derivative and Hessian are
 
-$$
-\frac{\partial L_{YM}}{\partial A^a_\mu}
-=-C^c{}_{ab}A^b_\nu p_c^{\mu\nu},
-$$
+$$\begin{align}
+\frac{\partial L_{YM}}{\partial A^a_\mu} =-C^c{}_{ab}A^b_\nu p_c^{\mu\nu},
+\end{align}$$
 
-$$
-W_{ab}^{\mu\nu,\rho\sigma}
-=\sqrt{|g|}\kappa_{ab}
-\left(g^{\mu\sigma}g^{\nu\rho}-g^{\mu\rho}g^{\nu\sigma}\right).
-$$
+$$\begin{align}
+W_{ab}^{\mu\nu,\rho\sigma} =\sqrt{|g|}\kappa_{ab} \left(g^{\mu\sigma}g^{\nu\rho}-g^{\mu\rho}g^{\nu\sigma}\right).
+\end{align}$$
 
 For nondegenerate $g,\kappa$, this annihilates symmetric jets and is invertible on antisymmetric jets. Per Lie-algebra component the rank is $d(d-1)/2$ and the kernel has dimension $d(d+1)/2$. Consequently
 
-$$
-M_1=\{p_a^{(\mu\nu)}=0\},\qquad
-H=-\frac1{4\sqrt{|g|}}p_a^{\mu\nu}p^a_{\mu\nu}
- +\frac12C^a{}_{bc}A^b_\mu A^c_\nu p_a^{\mu\nu}.
-$$
+$$\begin{align}
+M_1=\{p_a^{(\mu\nu)}=0\},\qquad H=-\frac1{4\sqrt{|g|}}p_a^{\mu\nu}p^a_{\mu\nu} +\frac12C^a{}_{bc}A^b_\mu A^c_\nu p_a^{\mu\nu}.
+\end{align}$$
 
 To derive $H$, contract $p$ with $A_{\mu\nu}$; antisymmetry removes the symmetric jets. Replacing the antisymmetric combination by $F-[A,A]$ leaves $-p^2/(2\sqrt{|g|})+\frac12[A,A]p$, and subtracting $L=-p^2/(4\sqrt{|g|})$ produces the displayed result.
 
 The Euler–Lagrange equation becomes
 
-$$
-\partial_\nu p_a^{\mu\nu}+C^c{}_{ab}A^b_\nu p_c^{\mu\nu}
-\equiv D_\nu p_a^{\mu\nu}=0.
-$$
+$$\begin{align}
+\partial_\nu p_a^{\mu\nu}+C^c{}_{ab}A^b_\nu p_c^{\mu\nu} \equiv D_\nu p_a^{\mu\nu}=0.
+\end{align}$$
 
 In invariant form this is $D_A(\kappa_{ab}*F^b)=0$, equivalently $D_A*F=0$ after identifying adjoint and coadjoint bundles with $\kappa$. The Bianchi identity $D_AF=0$ is off shell. In coordinates the antisymmetry of $F^{\mu\nu}$ cancels the Christoffel term symmetric in its lower pair, while the trace Christoffel produces the derivative of $\sqrt{|g|}$.
 
 On a nonholonomic section $\sigma=(x,A,S)$ of $J^1C(P)$ define $\Delta^a_{\mu\nu}=\partial_\nu A^a_\mu-S^a_{\mu\nu}$. The De Donder contractions give
 
-$$
+$$\begin{align}
 \Delta^a_{[\mu\nu]}=0,\qquad D_\nu p_a^{\mu\nu}=0.
-$$
+\end{align}$$
 
 The symmetric $S^a_{(\mu\nu)}$ is undetermined. This is redundancy of the enlarged nonholonomic jet description; it is not by itself a proof that these directions coincide with gauge orbits of spacetime connections.
 
 **Constrained Hamilton equation (p. 64).** The displayed component equation
 
-$$
-\partial_\nu A^a_\mu
-=-\frac1{2\sqrt{|g|}}p^a_{\mu\nu}
- +\frac12C^a{}_{bc}A^b_\mu A^c_\nu
-$$
+$$\begin{align}
+\partial_\nu A^a_\mu =-\frac1{2\sqrt{|g|}}p^a_{\mu\nu} +\frac12C^a{}_{bc}A^b_\mu A^c_\nu
+\end{align}$$
 
 cannot hold for all ordered components on $M_1$. Its right side is antisymmetric, imposing an extra $\partial_{(\nu}A^a_{\mu)}=0$. The legitimate equation obtained by varying the independent antisymmetric momenta is its antisymmetric projection,
 
-$$
-\partial_\nu A^a_\mu-\partial_\mu A^a_\nu
-=-\frac1{\sqrt{|g|}}p^a_{\mu\nu}
- +C^a{}_{bc}A^b_\mu A^c_\nu.
-$$
+$$\begin{align}
+\partial_\nu A^a_\mu-\partial_\mu A^a_\nu =-\frac1{\sqrt{|g|}}p^a_{\mu\nu} +C^a{}_{bc}A^b_\mu A^c_\nu.
+\end{align}$$
 
 Together with $D_\nu p_a^{\mu\nu}=0$, this is equivalent to the preceding Yang–Mills equations. For an explicit failure of the literal equation, take $U(1)$ on flat space and $A=d(x^1)^2$. Then $F=p=0$, but $\partial_1A_1=2$. It solves Yang–Mills and the projected equation. Thus the source's transition to its boxed antisymmetric equation is a projection, not an equivalence to the stronger preceding equation.
 
@@ -337,64 +294,55 @@ The horizontal-projector computation in §6.6 similarly contracts the coefficien
 
 For nonconstant background metrics, retain the full differential
 
-$$
-dp_a^{\mu\nu}=\kappa_{ab}\sqrt{|g|}g^{\mu\rho}g^{\nu\sigma}\,dF^b_{\rho\sigma}
-+\kappa_{ab}F^b_{\rho\sigma}
-\partial_\alpha(\sqrt{|g|}g^{\mu\rho}g^{\nu\sigma})dx^\alpha.
-$$
+$$\begin{align}
+dp_a^{\mu\nu}=\kappa_{ab}\sqrt{|g|}g^{\mu\rho}g^{\nu\sigma}\,dF^b_{\rho\sigma} +\kappa_{ab}F^b_{\rho\sigma} \partial_\alpha(\sqrt{|g|}g^{\mu\rho}g^{\nu\sigma})dx^\alpha.
+\end{align}$$
 
 Appendix G.1 contains this coefficient dependence. A shortened expansion keeping only $\partial\sqrt{|g|}$ in the main computation is not valid on a general metric. For $g=\operatorname{diag}(e^{2x},1,1)$ and a fixed $F_{12}=f$, the true coefficient derivative is $-e^{-x}f$, whereas differentiating the density alone gives $+e^{-x}f$.
 
-## Cluster VII: gauge current, superpotential and boundary algebra
+## Cluster VII: Gauge Current, Superpotential and Boundary Algebra
 
 The gauge lift is
 
-$$
-\xi_C=(D_\mu\xi)^a\partial_{A^a_\mu},\qquad
-j^1\xi_C=\xi_C+D_\nu^{\rm total}(D_\mu\xi)^a\partial_{A^a_{\mu\nu}},
-$$
+$$\begin{align}
+\xi_C=(D_\mu\xi)^a\partial_{A^a_\mu},\qquad j^1\xi_C=\xi_C+D_\nu^{\rm total}(D_\mu\xi)^a\partial_{A^a_{\mu\nu}},
+\end{align}$$
 
 and its induced momentum variation is
 
-$$
+$$\begin{align}
 \delta_\xi p_a^{\mu\nu}=-C^b{}_{ad}p_b^{\mu\nu}\xi^d.
-$$
+\end{align}$$
 
 Ad-invariance makes $j^1\xi_C(L_{YM})=0$ and the canonical construction gives exact preservation of $\Theta_L$. The current is therefore
 
-$$
-J^\xi=p_a^{\mu\nu}(D_\mu\xi)^a\eta_\nu,
-\qquad dJ^\xi=\iota_{j^1\xi_C}\Omega_L.
-$$
+$$\begin{align}
+J^\xi=p_a^{\mu\nu}(D_\mu\xi)^a\eta_\nu, \qquad dJ^\xi=\iota_{j^1\xi_C}\Omega_L.
+\end{align}$$
 
 After holonomic pullback its divergence is proportional to $(D_\mu\xi)^aD_\nu p_a^{\mu\nu}$ and vanishes on shell. Integrating by parts covariantly gives
 
-$$
-p_a^{\mu\nu}(D_\mu\xi)^a
-=\partial_\mu(p_a^{\mu\nu}\xi^a)
- -(D_\mu p_a^{\mu\nu})\xi^a.
-$$
+$$\begin{align}
+p_a^{\mu\nu}(D_\mu\xi)^a =\partial_\mu(p_a^{\mu\nu}\xi^a) -(D_\mu p_a^{\mu\nu})\xi^a.
+\end{align}$$
 
 With the stated orientation,
 
-$$
-dx^\alpha\wedge\eta_{\mu\nu}
-=\delta^\alpha_\nu\eta_\mu-\delta^\alpha_\mu\eta_\nu,
-$$
+$$\begin{align}
+dx^\alpha\wedge\eta_{\mu\nu} =\delta^\alpha_\nu\eta_\mu-\delta^\alpha_\mu\eta_\nu,
+\end{align}$$
 
 so the on-shell current is
 
-$$
-J^\xi\simeq dK^\xi,\qquad
-K^\xi=-\frac12p_a^{\mu\nu}\xi^a\eta_{\mu\nu}
-=-\xi^a\mathbb F_a.
-$$
+$$\begin{align}
+J^\xi\simeq dK^\xi,\qquad K^\xi=-\frac12p_a^{\mu\nu}\xi^a\eta_{\mu\nu} =-\xi^a\mathbb F_a.
+\end{align}$$
 
 This minus sign is fixed by the jet ordering and volume contractions; changing the definition of momentum or of $\eta_{\mu\nu}$ changes its appearance. Under the additional condition $\iota_{j^1\xi_C}\Pi=0$, the instantaneous current integrates to
 
-$$
+$$\begin{align}
 \widetilde J^\xi\simeq\int_{\partial M}K^\xi.
-$$
+\end{align}$$
 
 The source invokes a horizontal $\Pi$ to remove the boundary contraction without specifying a universal boundary subbundle that supplies it. For reuse, impose this condition or keep the $\int_{\partial M}\iota_{j^1\xi_C}\Pi$ term. A prescribed regional boundary condition is still needed to establish a conserved, integrable Hamiltonian generator.
 
@@ -402,63 +350,49 @@ If $\xi|_{\partial M}=0$, the displayed flux vanishes. The converse is false: $F
 
 The top-current algebra follows from the coadjoint variation of $p$ and the derivation rule for $D_A$:
 
-$$
-\{J^\xi,J^\zeta\}
-=\iota_{j^1\xi_C}\iota_{j^1\zeta_C}\Omega_L
-=p_a^{\mu\nu}D_\mu[\xi,\zeta]^a\eta_\nu
-=J^{[\xi,\zeta]}.
-$$
+$$\begin{align}
+\{J^\xi,J^\zeta\} =\iota_{j^1\xi_C}\iota_{j^1\zeta_C}\Omega_L =p_a^{\mu\nu}D_\mu[\xi,\zeta]^a\eta_\nu =J^{[\xi,\zeta]}.
+\end{align}$$
 
 This is the local form algebra for fixed gauge parameters. It does not automatically identify the charge algebra after imposing boundary conditions, reducing gauge degeneracies, or using field-dependent parameters.
 
-## Cluster VIII: special lower-degree forms and the constant bracket
+## Cluster VIII: Special Lower-Degree Forms and the Constant Bracket
 
 On $M_1$ the source introduces
 
-$$
-\mathbb A^a=A^a_\mu dx^\mu,\qquad
-\mathbb F_a=\tfrac12p_a^{\mu\nu}\eta_{\mu\nu},\qquad
-\Omega_{M_1}=dH\wedge\eta-dp_a^{\mu\nu}\wedge dA^a_\mu\wedge\eta_\nu.
-$$
+$$\begin{align}
+\mathbb A^a=A^a_\mu dx^\mu,\qquad \mathbb F_a=\tfrac12p_a^{\mu\nu}\eta_{\mu\nu},\qquad \Omega_{M_1}=dH\wedge\eta-dp_a^{\mu\nu}\wedge dA^a_\mu\wedge\eta_\nu.
+\end{align}$$
 
 They are called **special** Hamiltonian forms: the equation $d\alpha=\iota_{X_\alpha}\Omega$ is relaxed by a horizontal remainder. In the selected trivialization the displayed multivectors are
 
-$$
-X_{\mathbb F_a}=\frac12\sum_\mu\partial_{A^a_\mu}\wedge\partial_\mu,
-\qquad
-X_{\mathbb A^a}=\frac1{2n}\sum_{\mu,\nu}
-\partial_{p_a^{\mu\nu}}\wedge\partial_{x_{\mu\nu}^{n-1}}.
-$$
+$$\begin{align}
+X_{\mathbb F_a}=\frac12\sum_\mu\partial_{A^a_\mu}\wedge\partial_\mu, \qquad X_{\mathbb A^a}=\frac1{2n}\sum_{\mu,\nu} \partial_{p_a^{\mu\nu}}\wedge\partial_{x_{\mu\nu}^{n-1}}.
+\end{align}$$
 
 Antisymmetric-coordinate differentiation means
 
-$$
-\partial_{p_a^{\mu\nu}}p_b^{\rho\sigma}
-=\delta^a_b(\delta^\rho_\mu\delta^\sigma_\nu-
-\delta^\rho_\nu\delta^\sigma_\mu).
-$$
+$$\begin{align}
+\partial_{p_a^{\mu\nu}}p_b^{\rho\sigma} =\delta^a_b(\delta^\rho_\mu\delta^\sigma_\nu- \delta^\rho_\nu\delta^\sigma_\mu).
+\end{align}$$
 
 With this convention the vertical part of the contraction gives $d\mathbb A$ or $d\mathbb F$; the $dH\wedge\eta$ term supplies the horizontal remainder. The thesis computes
 
-$$
-\{\mathbb A^a,\mathbb A^b\}^*=0\quad(n>2),\qquad
-\{\mathbb F_a,\mathbb F_b\}^*=0,\qquad
-\{\mathbb A^a,\mathbb F_b\}^*=(-1)^n\frac{n+1}{2}\delta^a_b.
-$$
+$$\begin{align}
+\{\mathbb A^a,\mathbb A^b\}^*=0\quad(n>2),\qquad \{\mathbb F_a,\mathbb F_b\}^*=0,\qquad \{\mathbb A^a,\mathbb F_b\}^*=(-1)^n\frac{n+1}{2}\delta^a_b.
+\end{align}$$
 
 The last coefficient follows by contracting one momentum derivative and one field derivative, leaving the number $d(d-1)$ of ordered distinct spacetime-index pairs divided by $2n$. Explicit exterior-algebra checks in $d=3,4,5$ give $3/2,-2,5/2$, respectively. Terms involving $dH$ cannot contribute to this mixed full contraction because they have only one vertical differential.
 
 There are two limits to the interpretation. First, the theorem of §2.1.7 is stated for ordinary Hamiltonian forms; extending it to forms satisfying a relaxed equation requires checking the new equivalence relation, closure and Jacobi identity. The words “applies verbatim” do not supply those missing hypotheses. Second, a constant zero-form is closed. In the earlier quotient $\mathcal H^0/Z^0$, the class of the displayed scalar is zero. One may retain the representative calculation or define a different algebra, but cannot simultaneously quotient by all closed forms and call this a nonzero canonical commutator. Also $\mathbb A$ is a local gauge potential, not a globally defined gauge-invariant observable.
 
-## Translation to the vault's CPS and regional questions
+## Translation to the Vault's CPS and Regional Questions
 
 For a fixed metric and invariant pairing, the usual spacetime presymplectic potential in these conventions is
 
-$$
-\theta_{\mathrm{CPS}}(A;\delta A)
-=p_a^{\mu\nu}\delta A^a_\mu\eta_\nu
-=-\kappa_{ab}\delta A^a\wedge *F^b.
-$$
+$$\begin{align}
+\theta_{\mathrm{CPS}}(A;\delta A) =p_a^{\mu\nu}\delta A^a_\mu\eta_\nu =-\kappa_{ab}\delta A^a\wedge *F^b.
+\end{align}$$
 
 The source uses $\Omega=-d\Theta$ and hence $\widetilde\Omega=-\delta\widetilde\Theta$. If the vault convention is $\omega=\delta\theta_{\mathrm{CPS}}$, the fixed-hypersurface bulk transgression is $-\int_M\omega$; orienting the field-space contraction consistently is necessary before comparing Hamiltonian signs.
 
@@ -466,7 +400,7 @@ The reusable objects are $\theta_{\mathrm{CPS}}$, the constraint $D_A*F=0$, the 
 
 For the current PDE reading route, use this as the geometric counterpart to a separate analysis of gauge fixing and hyperbolicity. The finite-dimensional Legendre Hessian diagnoses antisymmetric momentum constraints; it does not supply the Green-hyperbolic operator required for a Peierls construction.
 
-## Equation ledger and how to read this long paper
+## Equation Ledger and How to Read This Long Paper
 
 | Chain | Source location | Result to retain | Qualification |
 |---|---|---|---|
@@ -481,7 +415,7 @@ For the current PDE reading route, use this as the geometric counterpart to a se
 
 **How to read this long paper.** The essential path for CPS is §§2.1.3–2.1.5 → Chapter 3 → §§4.2, 4.5–4.6 → §§6.2–6.8. Read §§5.2–5.5 alongside Chapter 6 to track adjoint/coadjoint and active/passive signs. Keep §§2.2–2.3 and Appendix G as technical reference when reproducing the singular Legendre map. §§2.1.6–2.1.7 and 6.9 are a separate algebraic branch; read them after the current calculation so the quotient and special-form caveats are visible. The introduction, principal-bundle preliminaries, Appendices A–C and H supply background/dictionaries. The future-work list is optional motivation. Every section is mapped above; this is a completed master reconstruction, not a preliminary source map.
 
-## Verification record and limitations
+## Verification Record and Limitations
 
 **Verified:** Mathematica reproduced the momenta, Hessian, $\partial L/\partial A$ and Legendre energy for generic independent $SU(2)$ field/jet variables in flat Euclidean $d=3$; all polynomial residuals are zero and the Hessian rank is 9 out of 27. The displayed general rank/kernel follows from the Hessian's antisymmetrizer with invertible $g,\kappa$. A separate exterior-form implementation checked the superpotential sign and the vertical contractions of $X_{\mathbb A},X_{\mathbb F}$ in $d=3,4,5$, giving zero residuals and mixed coefficients $3/2,-2,5/2$. The exterior engine explicitly antisymmetrizes coordinate wedges and contracts independent ordered basis indices; it does not assume the sought formula.
 

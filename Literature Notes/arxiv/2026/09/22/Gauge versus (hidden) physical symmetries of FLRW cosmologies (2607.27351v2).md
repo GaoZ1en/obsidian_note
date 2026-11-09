@@ -16,7 +16,7 @@ summary: "Separates weak Dirac conformal charges from gauge-fixed ED symmetries,
 tags: []
 ---
 
-# Gauge versus (hidden) physical symmetries of FLRW cosmologies
+# Gauge Versus (Hidden) Physical Symmetries of FLRW Cosmologies
 
 ## 结论与适用域
 
@@ -52,22 +52,31 @@ $z=a^{3/2}>0$，$l_p=\sqrt{12\pi G}$、$c=V_0/l_p^3$；$\chi^i$ 是 $n$ 个 scal
 
 解约束为 $p_T=-H_r(q^A,p_A,T)$ 后，$Q_r$ 守恒的正确条件是
 
-$$\partial_TQ_r+\{Q_r,H_r\}_{red}=0.$$
+$$\begin{align}
+\partial_TQ_r+\{Q_r,H_r\}_{red}=0.
+\end{align}$$
 
 因此显式 clock dependence 与物理守恒兼容。若只搜索与钟无关、线性动量的 Killing 荷，才会漏掉这类 symmetries；一般 reduced Hamiltonian 方法本身并非原则上无法找到它们。
 
-## 从 null supermetric 到 FLRW 轨道
+## 从 Null Supermetric 到 FLRW 轨道
 
 $S=\int[(2N)^{-1}g_{ab}\dot\phi^a\dot\phi^b-NU]dt$，本模型 $U=0$。variation of $N$ 强制 null condition；$p_N\approx0$ 是 primary，$h=\tfrac12g^{ab}p_ap_b\approx0$ 是 secondary。消去 lapse 的 degree-one action 说法在 massless/null 情形须小心：$U=0$ 时 lapse 方程给 null constraint，不能代数唯一解出 $N$。本笔记直接使用合法的 lapse formulation。
 
 FLRW reduction 给
 
-$$S={cl_p\over2}\int{dt\over N}\left[l_p^2z^2\sum_i(\dot\chi^i)^2-4\dot z^2\right],$$
-$$g_{zz}=-4cl_p,\quad g_{ij}=cl_p^3z^2\delta_{ij},\quad h={\sum_ip_i^2\over2cl_p^3z^2}-{p_z^2\over8cl_p}.$$
+$$\begin{align}
+S={cl_p\over2}\int{dt\over N}\left[l_p^2z^2\sum_i(\dot\chi^i)^2-4\dot z^2\right],
+\end{align}$$
+
+$$\begin{align}
+g_{zz}=-4cl_p,\quad g_{ij}=cl_p^3z^2\delta_{ij},\quad h={\sum_ip_i^2\over2cl_p^3z^2}-{p_z^2\over8cl_p}.
+\end{align}$$
 
 约束 $\sum_iP_i^2=l_p^2P_z^2/4$。排除零动量 cone vertex，选 $P_n\ne0$ 的 matter-clock patch，
 
-$$H_r^{matter}=\pm\sqrt{{l_p^2z^2p_z^2\over4}-\sum_{i<n}p_i^2}=-P_n.$$
+$$\begin{align}
+H_r^{matter}=\pm\sqrt{{l_p^2z^2p_z^2\over4}-\sum_{i<n}p_i^2}=-P_n.
+\end{align}$$
 
 常量 $P_z,P_i$ 给 $z(\chi^n)=z_0\exp[l_p^2P_z(\chi^n-\chi_0^n)/(4H_r)]$、$p_z=P_z/z$、$\chi^i=\chi_0^i-P_i(\chi^n-\chi_0^n)/H_r$。
 
@@ -77,24 +86,39 @@ $$H_r^{matter}=\pm\sqrt{{l_p^2z^2p_z^2\over4}-\sum_{i<n}p_i^2}=-P_n.$$
 
 对 $\mathcal L_\xi g=\varphi g$，$Q_\xi=\xi^ap_a$ 满足 $\{Q_\xi,h\}=\varphi h$；若 $N$ 依相空间，还多 $\{Q,N\}h$，仍只 weakly 零。**Checked:** xAct 对称收缩 CKV relation 给该局部动力学系数；此计算不证明任何 global group action 完备性。
 
-canonical transformation
+Canonical transformation
 
-$$X^0=-{2\over l_p}\log z,\quad X^i=\chi^i,\quad P_0=-{l_p\over2}zp_z,\quad P_i=p_i$$
+$$\begin{align}
+X^0=-{2\over l_p}\log z,\quad X^i=\chi^i,\quad P_0=-{l_p\over2}zp_z,\quad P_i=p_i
+\end{align}$$
 
 把 supermetric 写成 $cl_p^3e^{-l_pX^0}\eta_{\mu\nu}dX^\mu dX^\nu$，$\eta=\mathrm{diag}(-,+,\ldots,+)$；$h=e^{l_pX^0}\eta^{\mu\nu}P_\mu P_\nu/(2cl_p^3)$。
 
 标准荷为
 
-$$P_\mu,\qquad M_{\mu\nu}=X_\mu P_\nu-X_\nu P_\mu,\qquad D=X^\mu P_\mu,$$
-$$K_\mu=X_\mu D-\tfrac12P_\mu X^2.$$
+$$\begin{align}
+P_\mu,\qquad M_{\mu\nu}=X_\mu P_\nu-X_\nu P_\mu,\qquad D=X^\mu P_\mu,
+\end{align}$$
+
+$$\begin{align}
+K_\mu=X_\mu D-\tfrac12P_\mu X^2.
+\end{align}$$
 
 本文 special conformal normalization 比常见定义少因子 2。核心 brackets 是 $\{D,P_\mu\}=P_\mu$、$\{D,K_\mu\}=-K_\mu$、$\{K_\mu,P_\nu\}=\eta_{\mu\nu}D+M_{\mu\nu}$，Lorentz 作用按 tensor indices。$n\geq2$ 时共 $(n+2)(n+3)/2$ 个线性独立函数，非 functionally independent。
 
 原变量的重要表示：
 
-$$B_i={l_p\over2}P_z\chi^i+{2\over l_p}P_i\log z,\quad D=P_z\log z+\sum_i\chi^iP_i,$$
-$$K_z={l_pP_z\over4}\left[\sum_i(\chi^i)^2+{4\over l_p^2}\log^2z\right]+{2\log z\over l_p}\sum_i\chi^iP_i,$$
-$$K_i=\chi^i\sum_j\chi^jP_j-\tfrac12P_i\sum_j(\chi^j)^2+P_z\chi^i\log z+{2P_i\over l_p^2}\log^2z.$$
+$$\begin{align}
+B_i={l_p\over2}P_z\chi^i+{2\over l_p}P_i\log z,\quad D=P_z\log z+\sum_i\chi^iP_i,
+\end{align}$$
+
+$$\begin{align}
+K_z={l_pP_z\over4}\left[\sum_i(\chi^i)^2+{4\over l_p^2}\log^2z\right]+{2\log z\over l_p}\sum_i\chi^iP_i,
+\end{align}$$
+
+$$\begin{align}
+K_i=\chi^i\sum_j\chi^jP_j-\tfrac12P_i\sum_j(\chi^j)^2+P_z\chi^i\log z+{2P_i\over l_p^2}\log^2z.
+\end{align}$$
 
 **Checked:** 在三维 minisuperspace ($n=2$) 逐个计算 $\{K_\mu,P_\nu\}$ 的九个 residual 都为 0；例如 $\{K_1,h\}/h=(2-l_pX^0)X^1$，明确是 weak 而非 strong conservation。
 
@@ -104,12 +128,17 @@ $n=1$ 时 minisuperspace 二维，local CKVs 是任意左右移动函数，形�
 
 即使 $n\geq2$，CKV 的局部 Hamiltonian vector fields/荷代数也不证明每个 special conformal flow 在全部 $z>0$、所有时间上完备，或保持选定 clock patch。本文可用结论是 regular chart 上的 Dirac 荷，而非不附条件的全局 conformal group identification。
 
-## ED lift：它扩大了哪个系统
+## ED Lift：它扩大了哪个系统
 
 附录 A 先固定 $\widetilde g=g/N,\widetilde V=NV$，加 $(u,w)$：
 
-$$ds^2_{ED}=\widetilde g_{ab}d\phi^ad\phi^b+2du\,dw-2\widetilde Vdu^2,$$
-$$h_{ED}=p_up_w+\tfrac12\widetilde g^{ab}p_ap_b+\widetilde Vp_w^2.$$
+$$\begin{align}
+ds^2_{ED}=\widetilde g_{ab}d\phi^ad\phi^b+2du\,dw-2\widetilde Vdu^2,
+\end{align}$$
+
+$$\begin{align}
+h_{ED}=p_up_w+\tfrac12\widetilde g^{ab}p_ap_b+\widetilde Vp_w^2.
+\end{align}$$
 
 $p_w=1,h_{ED}=0$ 给 $p_u=-Nh$；投影 $u=t$ 恢复 gauge-fixed mechanical evolution，**并未自动施加原 $h=0$**，原 cosmology 还需该限制。由于 transverse metric 本身不正定，这个 ED metric 一般有两个 timelike directions；不能把此模型的 lifted signature 一概称为普通单时 Lorentzian。
 
@@ -117,36 +146,45 @@ $p_w=1,h_{ED}=0$ 给 $p_u=-Nh$；投影 $u=t$ 恢复 gauge-fixed mechanical evol
 
 附录对一般几何说“仅 flat metric 可有 transverse time-dependent charges”需要额外范围；这里只使用实际解出的 FLRW power-lapse family，不把它提升为所有 Bargmann 几何的定理。
 
-## Power-lapse family 与 harmonic enhancement
+## Power-Lapse Family 与 Harmonic Enhancement
 
 $N=\alpha z^\beta$（$\alpha\ne0$，时向/正 lapse 按所选 patch），
 
-$$\widetilde g={cl_p^3\over\alpha}e^{-l_p(2-\beta)X^0/2}\eta.$$
+$$\begin{align}
+\widetilde g={cl_p^3\over\alpha}e^{-l_p(2-\beta)X^0/2}\eta.
+\end{align}$$
 
 在 $n\geq2$，$\beta\ne2$ 的 metric 弯曲，projectable 荷为 $P_i,J_{ij}$ 及
 
-$$\mathcal H=\alpha z^\beta h,\quad\mathcal D=\mathcal Ht+{P_z\over\beta-2},$$
-$$\mathcal K={4cl_pz^{2-\beta}\over\alpha(\beta-2)^2}-{P_z t\over\beta-2}-{\mathcal Ht^2\over2}.$$
+$$\begin{align}
+\mathcal H=\alpha z^\beta h,\quad\mathcal D=\mathcal Ht+{P_z\over\beta-2},
+\end{align}$$
+
+$$\begin{align}
+\mathcal K={4cl_pz^{2-\beta}\over\alpha(\beta-2)^2}-{P_z t\over\beta-2}-{\mathcal Ht^2\over2}.
+\end{align}$$
 
 它们满足带显式 $t$ 的 conservation，不等于分别与 $h$ weakly commute。不能在 $\beta=2$ 直接代这些奇异系数，须重解 flat case。
 
 在 harmonic gauge，令 $m=cl_p^3/\alpha$（此处是 Bargmann 常数，不是宇宙物质质量），可统一写
 
-$$\mathcal H={P^2\over2m},\quad\mathcal D=t\mathcal H-\tfrac12D,\quad
-\mathcal K=-{mX^2\over4}+{tD\over2}-{t^2\mathcal H\over2},\quad\mathcal G_\mu=tP_\mu-mX_\mu.$$
+$$\begin{align}
+\mathcal H={P^2\over2m},\quad\mathcal D=t\mathcal H-\tfrac12D,\quad \mathcal K=-{mX^2\over4}+{tD\over2}-{t^2\mathcal H\over2},\quad\mathcal G_\mu=tP_\mu-mX_\mu.
+\end{align}$$
 
 连同 $P_\mu,M_{\mu\nu}$ 构成 Lorentzian Schrödinger 代数；$\{P_\mu,\mathcal G_\nu\}=m\eta_{\mu\nu}$。**Checked:** Mathematica 验证 $\partial_t\mathcal D+\{\mathcal D,\mathcal H\}=0$、$\partial_t\mathcal K+\{\mathcal K,\mathcal H\}=0$、$\{\mathcal H,\mathcal K\}=-\mathcal D$。守恒包含 explicit derivative，因而不是 Dirac 检验。
 
 对 $e^{2aX^0}\eta$ 直接从 Christoffels 计算，维数 $d=2,3,4$ 的 scalar curvature 分别为 $0,2a^2e^{-2aX^0},6a^2e^{-2aX^0}$。二维 conformal-flat metric 的曲率张量由 scalar 决定，故这个 power-lapse family 全部平坦；不能改说“任意函数 lapse”都平坦。高维结果显示此族仅 $a=0$、即 $\beta=2$ 平坦。
 
-## Clock substitution 的像与重新闭合
+## Clock Substitution 的像与重新闭合
 
 选 $T=\chi^n=X^n$，$P_n\ne0$，clock-adapted $\alpha=cl_p^3/P_n$，于是 $m\to P_n$，$t\to X^n$，再限制 $h=0$：
 
-$$\mathcal G_\mu\mapsto X^nP_\mu-P_nX_\mu=M^n{}_{\mu},\quad
-\mathcal H\mapsto0,\quad\mathcal D\mapsto-\tfrac12D,\quad\mathcal K\mapsto\tfrac12K_n.$$
+$$\begin{align}
+\mathcal G_\mu\mapsto X^nP_\mu-P_nX_\mu=M^n{}_{\mu},\quad \mathcal H\mapsto0,\quad\mathcal D\mapsto-\tfrac12D,\quad\mathcal K\mapsto\tfrac12K_n.
+\end{align}$$
 
-translations/Lorentz 已在像里；一个 $K_n$ 与 Lorentz brackets 再生成其余 $K_\mu$。因此是**像的 Poisson closure** 恢复 finite conformal algebra，不是直接线性像已经含全部生成元。用 $X^0\propto\log z$ 作钟得到 timelike special conformal seed；直接用 $z$ 作钟则适配 $\beta=1$，只留下 $P_z,P_i,J_{ij}$ 的小子代数，不能靠自身 brackets 生出缺失的 boosts/$K$。
+Translations/Lorentz 已在像里；一个 $K_n$ 与 Lorentz brackets 再生成其余 $K_\mu$。因此是**像的 Poisson closure** 恢复 finite conformal algebra，不是直接线性像已经含全部生成元。用 $X^0\propto\log z$ 作钟得到 timelike special conformal seed；直接用 $z$ 作钟则适配 $\beta=1$，只留下 $P_z,P_i,J_{ij}$ 的小子代数，不能靠自身 brackets 生出缺失的 boosts/$K$。
 
 **Checked / 重要边界:** 此代入不是 Poisson map：原 $\{\mathcal H,\mathcal K\}=-\mathcal D$，但像的 bracket $\{0,K_n/2\}=0$，原 bracket 的像却是 $D/2$，通常非零。Mathematica 给出该差 $D/2$。把原常数 $m$ 提升为动量 $P_n$ 后必须重新求 bracket；central generator 因此也不再 central。这是过程本身的结构边界，不否定所得各像是 Dirac observable。
 
@@ -156,20 +194,27 @@ translations/Lorentz 已在像里；一个 $K_n$ 与 Lorentz brackets 再生成�
 
 ## 附录 B：独立荷不是所有生成元
 
-regular constraint surface 去掉 gauge orbit 后维数 $2n$。在 $P_nP_z\ne0$ patch，可选 $P_1,\ldots,P_n,J_{1n},\ldots,J_{n-1,n},D$。其余 $J,B,K$ 由约束及 Lagrange identity 重构，例如
+Regular constraint surface 去掉 gauge orbit 后维数 $2n$。在 $P_nP_z\ne0$ patch，可选 $P_1,\ldots,P_n,J_{1n},\ldots,J_{n-1,n},D$。其余 $J,B,K$ 由约束及 Lagrange identity 重构，例如
 
-$$J_{ij}={P_jJ_{in}-P_iJ_{jn}\over P_n},\quad B_i={2\over l_pP_z}\left(P_iD+\sum_jJ_{ij}P_j\right),$$
-$$K_z={D^2+\sum_{i<j}J_{ij}^2\over l_pP_z},\quad K_i={2(B_iD-P_iK_z)\over l_pP_z}.$$
+$$\begin{align}
+J_{ij}={P_jJ_{in}-P_iJ_{jn}\over P_n},\quad B_i={2\over l_pP_z}\left(P_iD+\sum_jJ_{ij}P_j\right),
+\end{align}$$
+
+$$\begin{align}
+K_z={D^2+\sum_{i<j}J_{ij}^2\over l_pP_z},\quad K_i={2(B_iD-P_iK_z)\over l_pP_z}.
+\end{align}$$
 
 前者需 $P_n\ne0$，后者需 $P_z\ne0$；constraint 的平方根还需选择 cone sheet。这些不是覆盖 cone vertex 的全局坐标。
 
 固定荷后，$\chi^i=(P_i/P_n)\chi^n+J_{in}/P_n$，
 
-$$\log z={1\over P_z}\left(D-\sum_{i<n}{J_{in}P_i\over P_n}\right)-{l_p^2P_z\over4P_n}\chi^n,$$
+$$\begin{align}
+\log z={1\over P_z}\left(D-\sum_{i<n}{J_{in}P_i\over P_n}\right)-{l_p^2P_z\over4P_n}\chi^n,
+\end{align}$$
 
 代回 $H_r=-P_n$ 就重现 §3.1，无需另解 ODE。**Checked:** Sage 在 $n=2$ 的 exact rational regular sample 上，kinematical Jacobian rank 为 6；先限制到 null-cone tangent chart 后 rank 为 4；零动量点 ambient Jacobian rank 为 3，说明不能把 regular count 当全局 rank 定理。本次未以有限样本证明任意 $n$ 的 rank assertion。
 
-## How to read / 如何用于当前问题
+## How to Read / 如何用于当前问题
 
 先读 §2 的 $\partial_TQ_r+\{Q_r,H_r\}=0$，然后从 §3.2 的 canonical conformal coordinates 自己重算荷。把 §4 作为比较两种不同 phase-space constructions 的工具，而不是“看到更大代数就发现更多物理对称”。最后用附录 B 检查荷是否实际分离 regular gauge orbits；即使在这里成立，也依赖具体表示、约束、cone sheet 与 clock patch。
 

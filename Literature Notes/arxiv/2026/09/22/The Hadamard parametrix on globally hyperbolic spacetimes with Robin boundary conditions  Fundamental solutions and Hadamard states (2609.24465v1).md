@@ -14,7 +14,7 @@ summary: "100-page reconstruction separating Green, reflected wavefront, paramet
 tags: []
 ---
 
-# The Hadamard parametrix on globally hyperbolic spacetimes with Robin boundary conditions
+# The Hadamard Parametrix on Globally Hyperbolic Spacetimes with Robin Boundary Conditions
 
 ## 结论、用途与证据边界
 
@@ -52,7 +52,9 @@ tags: []
 
 取 $g=-\beta dt^2+h_t$、signature $(-,+,\ldots,+)$、$n$ 为向内的单位 spacelike 法向，$d\geq2$。算子为
 
-$$P=\Box_g-m^2,\qquad m^2=m_0^2+\xi R,\qquad B_\kappa=\nabla_n+\kappa.$$
+$$\begin{align}
+P=\Box_g-m^2,\qquad m^2=m_0^2+\xi R,\qquad B_\kappa=\nabla_n+\kappa.
+\end{align}$$
 
 $\kappa$ 在主讨论中为实常数；推广到函数时需分别检查光滑性和静态时间独立性。$\nabla t$ 沿边界切向。本文 $G_\kappa^-$ 是 retarded，$G_\kappa^+$ 是 advanced，$G_\kappa=G_\kappa^--G_\kappa^+$。不要按上标正负猜支撑，也不要与别篇 $G$ 的取向混用。
 
@@ -70,11 +72,15 @@ $\kappa$ 在主讨论中为实常数；推广到函数时需分别检查光滑�
 
 **Source-derived:** 在边界点反射速度
 
-$$\mathcal R(v)=v-2g(v,n)n.$$
+$$\begin{align}
+\mathcal R(v)=v-2g(v,n)n.
+\end{align}$$
 
 固定恰好 $N$ 次横截反射的初始数据，在反射时刻隐函数定理适用的开集上产生光滑端点映射。若对初速度的端点导数可逆，$(x,v)\mapsto(x,\operatorname{Exp}_{-,N}(x,v))$ 给局部坐标。不同轨道可以连接相同端点，因此必须保留分支 $\alpha$，不能用一个全局 $\sigma_-$ 替代所有反射路径。
 
-$$\sigma_{-,N,\alpha}(x,y)=\frac12\int_0^1g(\dot\gamma,\dot\gamma)ds=\frac12g_x(v,v),\qquad |d_x\sigma_-|_g^2=|d_y\sigma_-|_g^2=2\sigma_-.$$
+$$\begin{align}
+\sigma_{-,N,\alpha}(x,y)=\frac12\int_0^1g(\dot\gamma,\dot\gamma)ds=\frac12g_x(v,v),\qquad |d_x\sigma_-|_g^2=|d_y\sigma_-|_g^2=2\sigma_-.
+\end{align}$$
 
 $x$ 端梯度为 $-v^\flat$；$y$ 端为末速度的 covector。倒转路径一般把 $\alpha$ 换成反向分支，不自动保持标签。边界处入射与出射相位相等、切向导数相同、法向导数互为相反数；横截性保证 $\rho=\partial_n\sigma\ne0$。
 
@@ -82,7 +88,9 @@ $x$ 端梯度为 $-v^\flat$；$y$ 端为末速度的 covector。倒转路径一�
 
 **Checked:** 平直半空间 $z\geq0$，
 
-$$\sigma_-={-(t-t')^2+(z+z')^2+|\mathbf x-\mathbf x'|^2\over2}.$$
+$$\begin{align}
+\sigma_-={-(t-t')^2+(z+z')^2+|\mathbf x-\mathbf x'|^2\over2}.
+\end{align}$$
 
 Mathematica 检查 eikonal residual 为 0；xAct 在 $n^an_a=1$ 下检查 $g(\mathcal Rv,\mathcal Rw)-g(v,w)=0$。这只验证反射代数与平直模型，不证明一般分支图存在、无焦散或波前传播定理。
 
@@ -94,14 +102,21 @@ Mathematica 检查 eikonal residual 为 0；xAct 在 $n^an_a=1$ 下检查 $g(\ma
 
 对本笔记的 $P=\Box-m^2$、向内法向，正确的 ultrastatic 弱形式为
 
-$$K(\ddot u,v)+a(u,v)=-\int_\Sigma fv,\quad K(u,v)=\int_\Sigma uv,$$
-$$a(u,v)=\int_\Sigma(\nabla u\cdot\nabla v+m^2uv)-\kappa\int_{\partial\Sigma}uv.$$
+$$\begin{align}
+K(\ddot u,v)+a(u,v)=-\int_\Sigma fv,\quad K(u,v)=\int_\Sigma uv,
+\end{align}$$
+
+$$\begin{align}
+a(u,v)=\int_\Sigma(\nabla u\cdot\nabla v+m^2uv)-\kappa\int_{\partial\Sigma}uv.
+\end{align}$$
 
 一般 lapse 的相应形式在体积分中乘 $\sqrt\beta$，而 $K$ 的权为 $\beta^{-1/2}$。原文附录 B 切到 $\Box+m^2$ 并写负质量项；这是与主定义不一致的符号，不能直接导入。系数光滑有界时仍可做 Gårding 平移，但这不是对所印质量约定的确认。
 
 $PG^\pm f=f$，而 $G^\pm Pu=u$ 要求 $u$ 在相应紧支撑 Robin 定义域。形式伴随交换 advanced/retarded。Exact sequence 使用
 
-$$0\to C^\infty_{tc,\kappa}\xrightarrow{P}C^\infty_{tc}\xrightarrow{G}C^\infty_\kappa\xrightarrow{P}C^\infty\to0.$$
+$$\begin{align}
+0\to C^\infty_{tc,\kappa}\xrightarrow{P}C^\infty_{tc}\xrightarrow{G}C^\infty_\kappa\xrightarrow{P}C^\infty\to0.
+\end{align}$$
 
 **Failed (domain):** 随后印出的商空间把分子写成 $C^\infty_{tc,\kappa}$，与此序列不合。应取 $C^\infty_{tc}/P(C^\infty_{tc,\kappa})$。局部 Neumann 例 $u=\chi(t)z^3$（加空间 cutoff）满足 $\partial_z u|_0=0$，但 $\partial_z Pu|_0=6\chi(t)$；因此 $P$ 不保持 Robin 域，原商的分母甚至未必包含于分子。
 
@@ -113,39 +128,55 @@ $$0\to C^\infty_{tc,\kappa}\xrightarrow{P}C^\infty_{tc}\xrightarrow{G}C^\infty_\
 
 Robin-Hadamard 两点函数须同时满足双解条件、边界条件、正性、$\omega_2-\omega_2^T=iG$，以及第一 covector 为指定未来方向的 broken relation。两态之差对称，而其波前同时受未来和转置后的过去关系约束，故在内部光滑。原文把结论写到 $M\times M$；给出的内部波前论证本身没有独立建立延伸到边界的全部正则性。本笔记只使用内部结论。
 
-## 局部 parametrix 与反射系数的重构
+## 局部 Parametrix 与反射系数的重构
 
 在正则支上设 $\sigma_\epsilon=\sigma\pm i\epsilon(t-t')+\epsilon^2$；$d>2$ 的常数为 $c_d=\Gamma(d/2-1)/[2(2\pi)^{d/2}]$。
 
-$$H=c_d\left[{U\over\sigma_\epsilon^{(d-2)/2}}+\mathbf1_{d\,\mathrm{even}}V\log(\sigma_\epsilon/\lambda^2)\right].$$
+$$\begin{align}
+H=c_d\left[{U\over\sigma_\epsilon^{(d-2)/2}}+\mathbf1_{d\,\mathrm{even}}V\log(\sigma_\epsilon/\lambda^2)\right].
+\end{align}$$
 
 加上 $\sigma\to\sigma_-$、$U,V\to U',V'$ 的反射部分。偶数 $d\geq4$ 的 $U$ 有有限个系数，$V$ 是渐近级数；奇数维的 $U$ 是无限渐近级数且无 $V$。Borel 实现保证可选光滑函数具有所需 jets，不意味着普通幂级数收敛。$d=2$ 的 logarithmic normalization 必须单独指定；$c_d$ 在 $d\to2$ 发散，不能只把 $U$ 设零就得到有限公式。
 
 直接 leading coefficient 满足
 
-$$2\sigma^\mu\nabla_\mu u_0+(\Box\sigma-d)u_0=0,\qquad[u_0]=1.$$
+$$\begin{align}
+2\sigma^\mu\nabla_\mu u_0+(\Box\sigma-d)u_0=0,\qquad[u_0]=1.
+\end{align}$$
 
 反射 leading coefficient 用 $\sigma_-$ 替代，并从 $u'_0|_{\partial M}=u_0|_{\partial M}$ 出发。其 Van Vleck 形式只在正则 branch 适用。高阶直接/反射系数在各自相位上满足同型 transport equations，但反射的起始条件来自 Robin 匹配，而非重合点极限：
 
-$$B_\kappa(u_j+u'_j)+{2j+4-d\over2}\rho(u_{j+1}-u'_{j+1})=0,$$
-$$B_\kappa(u_{d/2-2}+u'_{d/2-2})+\rho(v_0-v'_0)=0,$$
-$$B_\kappa(v_k+v'_k)+(k+1)\rho(v_{k+1}-v'_{k+1})=0.$$
+$$\begin{align}
+B_\kappa(u_j+u'_j)+{2j+4-d\over2}\rho(u_{j+1}-u'_{j+1})=0,
+\end{align}$$
+
+$$\begin{align}
+B_\kappa(u_{d/2-2}+u'_{d/2-2})+\rho(v_0-v'_0)=0,
+\end{align}$$
+
+$$\begin{align}
+B_\kappa(v_k+v'_k)+(k+1)\rho(v_{k+1}-v'_{k+1})=0.
+\end{align}$$
 
 $\rho\ne0$ 使每步边界数据可解，随后沿反射 null 流输运。不能未经证明把直接系数的对称性转移给单个反射标签；应连同反向分支与 iε 取向一起比较。
 
 **Checked:** $d=4$ 平直无质量半空间，令 $s=z+z'$。边界 leading 数据 $u_0=u'_0=1$，直接 $v_k=0$。Robin 匹配和输运给
 
-$$v'_0=-{2\kappa\over s},\qquad v'_1=-{2\kappa\over s^3}+{2\kappa^2\over s^2}.$$
+$$\begin{align}
+v'_0=-{2\kappa\over s},\qquad v'_1=-{2\kappa\over s^3}+{2\kappa^2\over s^2}.
+\end{align}$$
 
 代入 $\partial_s^2v'_0+2s\partial_sv'_1+4v'_1$，Mathematica 得 0。这是远离 $s=0$ 的横截反射局部检查，不是角点或任意曲率背景的证明。
 
 **Failed (4.9):** 将原 transport equation 取重合点 $[\sigma^\mu]=0,[\Box\sigma]=d$，系数为 $(j+1)(2j+4-d)$。故应是
 
-$$[u_{j+1}]=-{[Pu_j]\over(j+1)(2j+4-d)},$$
+$$\begin{align}
+[u_{j+1}]=-{[Pu_j]\over(j+1)(2j+4-d)},
+\end{align}$$
 
 而 PDF p.50 印成缺少 $(j+1)$。该问题在 $j=0$ 不显现，高维更高阶或奇维 continuation 会显现。Mathematica 直接化简验证系数。不能用印出的不一致两式同时初始化递推。
 
-## 多重反射、全局拼装与 causal normalization
+## 多重反射、全局拼装与 Causal Normalization
 
 **Source-derived:** 固定有限反射链时，从最后一段向前逐级传输边界系数，建立各 branch 的 singular kernel。两种 iε 边界值之差给局部 causal kernel；再通过 cutoff、光滑边界 lift 与 Green 算子修正，对照精确传播子。局部误差必须同时对 $P$ 和 $B_\kappa$ 光滑。
 
@@ -155,13 +186,17 @@ $$[u_{j+1}]=-{[Pu_j]\over(j+1)(2j+4-d)},$$
 
 **Checked:** 半直线 Robin 的平面波 $e^{-ikz}+R e^{ikz}$ 在向内 $n=\partial_z$ 下给
 
-$$R(k)={ik-\kappa\over ik+\kappa},\qquad |R|=1\quad(k,\kappa\in\mathbb R).$$
+$$\begin{align}
+R(k)={ik-\kappa\over ik+\kappa},\qquad |R|=1\quad(k,\kappa\in\mathbb R).
+\end{align}$$
 
 $\kappa>0$ 时 $e^{-\kappa z}$ 是允许的衰减模，$A=-\partial_z^2+m^2$ 的该本征值为 $m^2-\kappa^2$。因此 Green 初边值存在与 $A\geq0$ 是两件事；若 $\kappa>m\geq0$，没有本文所需的正谱静态种子。Mathematica 验证 Robin residual、模长与本征值。
 
 **Failed (5.1, PDF pp.71–73):** 原文印 $A^{-1/2}e^{i\tau A}$，但 KG 演化要求频率 $\sqrt A$。取本征值 $A=4$，印出核 $w=\tfrac12e^{4i\tau}$ 满足
 
-$$(\partial_\tau^2+4)w=-6e^{4i\tau}\ne0.$$
+$$\begin{align}
+(\partial_\tau^2+4)w=-6e^{4i\tau}\ne0.
+\end{align}$$
 
 取 $\tfrac14e^{2i\tau}$ 则残差为 0，且相对于原文所印 $G=\sin(2\tau)/2$ 恢复 $w-w^T=iG$。这同时显示缺失的 $1/2$。PDF p.73 的证明实际上改用 $\sqrt A$ 的谱测度和 $e^{i\lambda\tau}/2$，与 p.71 公式不一致；同页 Fourier transform of sine 又把两个 delta 的差印成和。
 
@@ -169,7 +204,7 @@ $$(\partial_\tau^2+4)w=-6e^{4i\tau}\ne0.$$
 
 结论是：正谱与红外定义域是有内容的假设，标准静态谱策略也可在一致约定下实施，但本次不能把原文印出的 Proposition 5.1 当作已通过校验的态。一般 $\beta$ 权重、完整分布域及全局 Hadamard 性未由单模修正证明。
 
-## Deformation 与 time-slice 的可移植部分
+## Deformation 与 Time-Slice 的可移植部分
 
 **Source-derived:** 作者构造 bounded-geometry 的辅助静态背景，再用时间 cutoff 插值，并控制因果锥及边界 first jet。选与边界相容的时间 cutoff $\chi$，令 $h=P(\chi Gf)$，把源类移到共同时间带。先从静态种子向中间背景转移，再转到目标背景；正性由 pullback 保持，CCR 与波前关系需 time-slice/传播定理。
 
@@ -192,13 +227,13 @@ $$(\partial_\tau^2+4)w=-6e^{4i\tau}\ne0.$$
 | general deformation existence | §5.2 | Not independently verified；依赖有效种子和辅助几何 |
 | appendix weak mass sign | B Step 1 | Failed，相对主文 $P=\Box-m^2$；按固定约定重写 |
 
-## How to read this paper
+## How to Read This Paper
 
 先读 §3.1 与附录 A，固定边界通量、支撑和定义域；然后读 §2.3 的反射相位与 §3.3 的波前定理，区分“波前可沿焦散传播”和“某个世界函数在焦散处不再是好坐标”。再以四维半空间检查 §4.1 的 Robin 递推，最后才读 §4.2 的分支求和假设。§5 应在修正静态谱核及传播子整体号之后进入；当前印出公式不宜作计算模板。
 
 对自己的区域量子化问题，建议先问：区域边界条件是否产生自伴正谱实现；其 Green 配对与 CPS 的取向是否一致；界面消除后两点函数是否满足全局 broken/ordinary Hadamard 条件。本文有助于列出这些问题，但没有替我们证明去边界极限或独立区域态的粘合。
 
-## Retrieval and verification
+## Retrieval and Verification
 
 官方 [摘要与版本](https://arxiv.org/abs/2609.24465v1)、[PDF](https://arxiv.org/pdf/2609.24465v1)、[source](https://arxiv.org/src/2609.24465v1) 均成功读取。100 页 PDF、主 TeX 和附录均用于结构重构；PDF pp.50、71、73 已渲染目视核对递推与谱核，避免将文本提取错误误判为原文错误。其余公式结合 TeX 阅读，未逐页视觉验证。
 

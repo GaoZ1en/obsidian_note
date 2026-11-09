@@ -12,13 +12,13 @@ summary: "A useful charge-versus-asymptotic-regularity example whose analytic ex
 tags: []
 ---
 
-# Why this is high priority
+# Why This Is High Priority
 
 Reason codes: `T1-charge`, `T1-Wald-CPS`, `T1-boundary`, `T2-model`.
 
 The paper directly separates three statements that are often conflated: existence of ADM/Iyer--Wald charges, existence of a smooth conformal completion, and existence of the standard higher-multipole hierarchy. For the vault, the reusable point is that finite surface charges do not imply enough asymptotic regularity to define every higher observable.
 
-# Source map
+# Source Map
 
 1. **Introduction:** motivates an action-based rotating wormhole and distinguishes global charges from smooth multipoles.
 2. **Action and localization mechanism:** fixes the covariant metric--phantom-scalar--two-form--string system and its two nonminimal curvature couplings.
@@ -31,107 +31,93 @@ The paper directly separates three statements that are often conflated: existenc
 9. **Validity, discussion, conclusion:** restricts the spin window and lists the unproved stability, uniqueness, UV-completion, and rapid-rotation questions.
 10. **Appendix:** records fixed-norm corrections, quadratic field-strength sources, and the vacuum indicial polynomial.
 
-# Theory, conventions, and boundary data
+# Theory, Conventions, and Boundary Data
 
 The signature is $(-,+,+,+)$ and $G=c=1$. The bulk action is
 
-$$
+$$\begin{align}
 S_{\mathrm{bulk}}=\frac{1}{2\kappa}\int \mathrm d^4x\sqrt{-g}\left[R-\frac1{12}H^2+\frac12(\nabla\phi)^2-\Lambda_B\bigl(B^2+b_0^2F(\phi)\bigr)+\xi_1B^2R+\xi_2X^{\mu\nu}R_{\mu\nu}\right],
-$$
+\end{align}$$
 
 with $H=\mathrm dB$, $X^{\mu\nu}=B^{\mu\lambda}B^\nu{}_{\lambda}$, phantom scalar sign, and the fixed-norm constraint
 
-$$
+$$\begin{align}
 B^2=-b_0^2F(\phi),\qquad F(\phi)=\cos^2\!\left(\frac{\phi}{f_{\mathrm{loc}}}\right).
-$$
+\end{align}$$
 
 The radial string congruence comes from a Nambu--Goto action with scalar-dependent tension. The displayed choice
 
-$$
+$$\begin{align}
 \mu_{\mathrm{eff}}(\phi)=\left[\frac14+\frac38\cos^2\!\left(\frac{\phi}{\sqrt3}\right)\right]F(\phi)
-$$
+\end{align}$$
 
 is a benchmark model definition, not a universal localization law. The static proper-radial gauge is
 
-$$
-\mathrm ds^2=-N(l)^2\mathrm dt^2+\mathrm dl^2+R(l)^2\mathrm d\Omega^2,
-\qquad B^{(0)}=-\beta(l)\,\mathrm dt\wedge\mathrm dl,
-$$
+$$\begin{align}
+\mathrm ds^2=-N(l)^2\mathrm dt^2+\mathrm dl^2+R(l)^2\mathrm d\Omega^2, \qquad B^{(0)}=-\beta(l)\,\mathrm dt\wedge\mathrm dl,
+\end{align}$$
 
 with reflection conditions $R'(0)=N'(0)=0$, $R(0)=r_0$, $\phi(0)=0$, and localization $F\to0$ on both asymptotic ends. The numerical benchmark fixes $\alpha=\xi_2b_0^2=0.5$ and finds
 
-$$
+$$\begin{align}
 p_+=0.7936049731094987,\qquad F\sim R^{-2p_+},\qquad \beta\sim R^{-p_+}.
-$$
+\end{align}$$
 
-# First-order charge construction
+# First-Order Charge Construction
 
 The axial perturbation is defined by
 
-$$
+$$\begin{align}
 g_{t\phi}=-\epsilon h(l)\sin^2\theta,
-$$
+\end{align}$$
 
 together with $B^{(1)}_{l\phi}=\beta V\sin^2\theta$ and $B^{(1)}_{\theta\phi}=\beta w\sin\theta\cos\theta$. Its regular variables include $K=\xi_2\beta^2V$ and a field-strength combination $\bar Q$.
 
 For a Lagrangian depending algebraically on curvature, the paper uses
 
-$$
-P^{abcd}=\frac{\partial\mathcal L}{\partial R_{abcd}}
-=\frac{1+\xi_1B^2}{4\kappa}(g^{ac}g^{bd}-g^{ad}g^{bc})
-+\frac{\xi_2}{8\kappa}\bigl(g^{ac}X^{bd}-g^{ad}X^{bc}-g^{bc}X^{ad}+g^{bd}X^{ac}\bigr).
-$$
+$$\begin{align}
+P^{abcd}=\frac{\partial\mathcal L}{\partial R_{abcd}} =\frac{1+\xi_1B^2}{4\kappa}(g^{ac}g^{bd}-g^{ad}g^{bc}) +\frac{\xi_2}{8\kappa}\bigl(g^{ac}X^{bd}-g^{ad}X^{bc}-g^{bc}X^{ad}+g^{bd}X^{ac}\bigr).
+\end{align}$$
 
 Both the $P\nabla\varphi$ and $\varphi\nabla P$ pieces of the Iyer--Wald potential are retained. Relative to the Einstein contribution,
 
-$$
-\frac{\mathcal I_{\xi_1}}{\mathcal I_{\mathrm{EH}}}=-\alpha\gamma F,
-\qquad
-\frac{\mathcal I_{\xi_2}}{\mathcal I_{\mathrm{EH}}}
-=\frac{RK'}{-Rh'+2hR'}.
-$$
+$$\begin{align}
+\frac{\mathcal I_{\xi_1}}{\mathcal I_{\mathrm{EH}}}=-\alpha\gamma F, \qquad \frac{\mathcal I_{\xi_2}}{\mathcal I_{\mathrm{EH}}} =\frac{RK'}{-Rh'+2hR'}.
+\end{align}$$
 
 The source-derived falloffs make both ratios vanish. With no linear surface contribution from the $H^2$ sector under the stated boundary conditions, the paper concludes
 
-$$
-J_{\mathrm{Wald}}=J_{\mathrm{metric}},
-\qquad
-\widehat j\equiv\frac{J}{r_0^2}=0.3423494582\,\epsilon+O(\epsilon^3).
-$$
+$$\begin{align}
+J_{\mathrm{Wald}}=J_{\mathrm{metric}}, \qquad \widehat j\equiv\frac{J}{r_0^2}=0.3423494582\,\epsilon+O(\epsilon^3).
+\end{align}$$
 
 This equality is conditional on the selected branch, localization falloffs, axial Killing field, and boundary conditions; it is not a theorem for arbitrary nonminimally coupled two-form solutions.
 
-# Second order and fractional multipole obstruction
+# Second Order and Fractional Multipole Obstruction
 
 At fixed scalar-tail charge $Q_\phi$, the reported monopole data are
 
-$$
-\delta M_{\mathrm{ADM/Wald}}^{(2)}=0,
-\qquad
-\frac{A_{\mathrm{th}}}{4\pi r_0^2}=1+(7.74723\pm0.02560)\widehat j^2+O(\widehat j^4).
-$$
+$$\begin{align}
+\delta M_{\mathrm{ADM/Wald}}^{(2)}=0, \qquad \frac{A_{\mathrm{th}}}{4\pi r_0^2}=1+(7.74723\pm0.02560)\widehat j^2+O(\widehat j^4).
+\end{align}$$
 
 The quadrupolar system contains metric functions $(n_2,a_2,k_2)$, polar two-form response, scalar response, and string bending. Its numerical principal rank is five for six displayed evolution rows; three additional equations are treated as constraints and the Bianchi/two-form identities remove the apparent extra left-null condition. The resulting branch is numerical and requires parity-aware projection onto the affine constraint manifold.
 
 The vacuum metric subsystem has
 
-$$
-\det\mathcal M(s)\propto(s-2)(s+3),
-\qquad
-(n_2,a_2,k_2)\propto(-1,1,1)R^{-3}
-$$
+$$\begin{align}
+\det\mathcal M(s)\propto(s-2)(s+3), \qquad (n_2,a_2,k_2)\propto(-1,1,1)R^{-3}
+\end{align}$$
 
 for its decaying mode. The localized polar response instead obeys $d_2\sim R^{-1}$. Since the leading nonminimal source is $\beta d_2$, the metric balance gives
 
-$$
-q_{\mathrm{KR}}=1+p_+=1.793604973109499,
-\qquad
-a_2,k_2\sim R^{-q_{\mathrm{KR}}}.
-$$
+$$\begin{align}
+q_{\mathrm{KR}}=1+p_+=1.793604973109499, \qquad a_2,k_2\sim R^{-q_{\mathrm{KR}}}.
+\end{align}$$
 
 This tail precedes the vacuum $R^{-3}$ term. With $\rho=R^{-1}$, its compactified form is $\rho^{q_{\mathrm{KR}}}P_2(\cos\theta)$; generic second derivatives scale as $\rho^{q_{\mathrm{KR}}-2}=\rho^{-0.206395\ldots}$. Hence the completion is generically $C^1$ but not $C^2$, outside the smooth domain needed for the ordinary Geroch--Hansen/ACMC quadrupole.
 
-# Independent checks
+# Independent Checks
 
 **Checked (Mathematica):**
 
@@ -147,13 +133,13 @@ This tail precedes the vacuum $R^{-3}$ term. With $\rho=R^{-1}$, its compactifie
 
 **Not independently verified:** existence and uniqueness of the codimension-two stationary root, dynamical stability, robustness under different localization profiles, and continuation beyond $|\widehat j|\lesssim0.015$--$0.02$.
 
-# Translation to the vault programme
+# Translation to the Vault Programme
 
 This is a clean warning for observable-algebra sewing: a charge functional can exist on the declared asymptotic domain while sharper multipole observables fail because their domain requires extra regularity. In vault language, the charge algebra and the higher-composite completion should therefore be assigned different domains.
 
 The paper does not construct regional algebras, exact trace/response sewing, or a quantum representation. Its numerical equality $J_{\mathrm{Wald}}=J_{\mathrm{metric}}$ should not be generalized beyond its localized branch. The reusable structural statement is narrower: noninteger matter-supported falloffs can preserve leading Hamiltonian charges while obstructing smoother asymptotic observables.
 
-# Reading route
+# Reading Route
 
 Read the action and boundary data first, then the Iyer--Wald subsection, the fractional-tail balance, and the compactification argument. Treat the long numerical DAE discussion as reference material unless reproducing the stationary branch; the missing code prevents an independent end-to-end replay.
 

@@ -16,17 +16,13 @@ Back to [[2026_08_14_overview]].
 
 The paper's strongest result is not merely a list of counterterms. It gives an explicit chain
 
-$$
-\text{string reduction}
-\longrightarrow
-\text{five-dimensional SDLH couplings}
-\longrightarrow
-\text{FG recursion and anomaly}
-\longrightarrow
-\text{renormalized one-point functions}
-\longrightarrow
+$$\begin{align}
+\text{string reduction} \longrightarrow
+\text{five-dimensional SDLH couplings} \longrightarrow
+\text{FG recursion and anomaly} \longrightarrow
+\text{renormalized one-point functions} \longrightarrow
 \text{an algebraic inverse for the couplings}.
-$$
+\end{align}$$
 
 For the vault, the useful lesson is that several logically different nondegeneracy conditions remain separate:
 
@@ -36,14 +32,14 @@ For the vault, the useful lesson is that several logically different nondegenera
 4. the logarithmic obstruction fixes the anomaly, while normalizable data remain state-dependent;
 5. four normalization-invariant observables identify the four continuous reduced couplings only on the stated regular quotient.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential:** Sections 2--8. They contain the reduced action, exact branch, completed boundary term, ordered FG recursion, anomaly, finite currents, Ward identities, and inverse map.
 - **Technical reference:** Appendix A for signs and FG identities; Appendix B for the nine paired Euler variations; Appendix C for the deterministic extraction of finite coefficients.
 - **Read with caution:** the phrase “complete dictionary” is completeness within the paper's five-dimensional SDLH truncation, regular Frobenius chart, Dirichlet quantization, and chosen derivative order. It is not a statement about all string corrections or resonant branches.
 - **Do not identify:** finite-cutoff differentiability, cancellation of divergences, Wess--Zumino consistency, regularity of the radial recursion, and invertibility of the observable map are different checks.
 
-# Complete source map
+# Complete Source Map
 
 1. **Introduction:** states the goal of reconstructing reduced string couplings from source-resolved holographic response.
 2. **String-derived Lovelock--Horndeski theory:** derives the five-dimensional shift-symmetric action, scalar current, second-order equations, vacuum polynomials, and regular response domain.
@@ -58,183 +54,153 @@ For the vault, the useful lesson is that several logically different nondegenera
 11. **Appendix B:** lists paired metric and scalar Euler variations for the nine weight-four densities and the Euler/Lanczos null direction.
 12. **Appendix C:** records the solved lower-weight substitution, counterterm currents, finite-coefficient operation, response decomposition, and scheme vectors.
 
-# Theory, conventions, and claim domain
+# Theory, Conventions, and Claim Domain
 
 The five-dimensional bulk action is
 
-$$
-S_{\rm bulk}=\frac1{16\pi G_5}\int d^5x\sqrt{-G}\left[
-R+\alpha_0X+\alpha_1\mathcal L_{\rm GB}
-+\alpha_2\mathcal G^{MN}\nabla_M\phi\nabla_N\phi
-+\alpha_3X\Box\phi+\alpha_4X^2
-\right],
-$$
+$$\begin{align}
+S_{\rm bulk}=\frac1{16\pi G_5}\int d^5x\sqrt{-G}\left[ R+\alpha_0X+\alpha_1\mathcal L_{\rm GB} +\alpha_2\mathcal G^{MN}\nabla_M\phi\nabla_N\phi +\alpha_3X\Box\phi+\alpha_4X^2 \right],
+\end{align}$$
 
 where
 
-$$
-X=G^{MN}\nabla_M\phi\nabla_N\phi,
-\qquad
-\mathcal L_{\rm GB}=R_{MNRS}^2-4R_{MN}^2+R^2.
-$$
+$$\begin{align}
+X=G^{MN}\nabla_M\phi\nabla_N\phi, \qquad \mathcal L_{\rm GB}=R_{MNRS}^2-4R_{MN}^2+R^2.
+\end{align}$$
 
 The signature is $(-++++)$ and
 
-$$
-[\nabla_M,\nabla_N]V^P=R^P{}_{QMN}V^Q,
-\qquad
-R_{QN}=R^P{}_{QPN}.
-$$
+$$\begin{align}
+[\nabla_M,\nabla_N]V^P=R^P{}_{QMN}V^Q, \qquad R_{QN}=R^P{}_{QPN}.
+\end{align}$$
 
 The source convention is
 
-$$
-\delta S_{\rm ren}=\int d^4x\sqrt{-g_{(0)}}\left[
-\frac12\langle T^{ij}\rangle\delta g_{(0)ij}
-+\langle\mathcal O_\phi\rangle\delta\phi_{(0)}
-\right].
-$$
+$$\begin{align}
+\delta S_{\rm ren}=\int d^4x\sqrt{-g_{(0)}}\left[ \frac12\langle T^{ij}\rangle\delta g_{(0)ij} +\langle\mathcal O_\phi\rangle\delta\phi_{(0)} \right].
+\end{align}$$
 
 Therefore the two Ward combinations are fixed as
 
-$$
-D_i\langle T^i{}_j\rangle-\langle\mathcal O_\phi\rangle D_j\phi_{(0)},
-\qquad
-\langle T^i{}_i\rangle-2s\langle\mathcal O_\phi\rangle.
-$$
+$$\begin{align}
+D_i\langle T^i{}_j\rangle-\langle\mathcal O_\phi\rangle D_j\phi_{(0)}, \qquad \langle T^i{}_i\rangle-2s\langle\mathcal O_\phi\rangle.
+\end{align}$$
 
 The second expression is not the ordinary CFT trace: the logarithmic radial scalar profile supplies a beta-function weight $2s$.
 
-# Exact linear-dilaton branch
+# Exact Linear-Dilaton Branch
 
 The background is
 
-$$
-ds^2=\frac{\ell^2}{4\rho^2}d\rho^2+\rho^{-1}\eta_{ij}dx^idx^j,
-\qquad
-\phi=s\log\rho+\phi_c.
-$$
+$$\begin{align}
+ds^2=\frac{\ell^2}{4\rho^2}d\rho^2+\rho^{-1}\eta_{ij}dx^idx^j, \qquad \phi=s\log\rho+\phi_c.
+\end{align}$$
 
 Its two independent vacuum equations are
 
-$$
-V_1=24\alpha_1-24\alpha_2s^2+16\alpha_4s^4
-+\ell^2(4\alpha_0s^2-12)=0,
-$$
+$$\begin{align}
+V_1=24\alpha_1-24\alpha_2s^2+16\alpha_4s^4 +\ell^2(4\alpha_0s^2-12)=0,
+\end{align}$$
 
-$$
+$$\begin{align}
 V_2=\frac12\alpha_0\ell^2+3\alpha_2-4\alpha_3s+4\alpha_4s^2=0.
-$$
+\end{align}$$
 
 For $s\ne0$ they eliminate $\alpha_1$ and $\alpha_4$:
 
-$$
+$$\begin{align}
 \alpha_4=\frac{-\alpha_0\ell^2-6\alpha_2+8\alpha_3s}{8s^2},
-$$
+\end{align}$$
 
-$$
-\alpha_1=\frac{\ell^2}{2}+\frac32\alpha_2s^2
--\frac1{12}\alpha_0\ell^2s^2-\frac23\alpha_3s^3.
-$$
+$$\begin{align}
+\alpha_1=\frac{\ell^2}{2}+\frac32\alpha_2s^2 -\frac1{12}\alpha_0\ell^2s^2-\frac23\alpha_3s^3.
+\end{align}$$
 
 The regular analytic chart is
 
-$$
+$$\begin{align}
 s\Delta_T\Delta_S\ne0,
-$$
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 \Delta_T=3\ell^2+12\alpha_2s^2-\alpha_0\ell^2s^2-8\alpha_3s^3,
-$$
+\end{align}$$
 
-$$
-\Delta_S=18\alpha_2+3\alpha_0\ell^2-12\alpha_3s
-+6\alpha_0\alpha_2s^2-\alpha_0^2\ell^2s^2-4\alpha_0\alpha_3s^3.
-$$
+$$\begin{align}
+\Delta_S=18\alpha_2+3\alpha_0\ell^2-12\alpha_3s +6\alpha_0\alpha_2s^2-\alpha_0^2\ell^2s^2-4\alpha_0\alpha_3s^3.
+\end{align}$$
 
 The exclusions $\Delta_T=0$ and $\Delta_S=0$ are not stability statements. They mark resonant indicial strata where this ordinary Frobenius inverse fails and additional logarithmic modes can enter.
 
-# Finite-cutoff Dirichlet problem
+# Finite-Cutoff Dirichlet Problem
 
 With outward normal
 
-$$
-n_{\rm out}=-\frac{2\rho}{\ell}\partial_\rho,
-\qquad
-K_{ij}^{\rm out}=\frac1\ell(\rho^{-1}g_{ij}-g'_{ij}),
-$$
+$$\begin{align}
+n_{\rm out}=-\frac{2\rho}{\ell}\partial_\rho, \qquad K_{ij}^{\rm out}=\frac1\ell(\rho^{-1}g_{ij}-g'_{ij}),
+\end{align}$$
 
 the completed boundary density is
 
-$$
-\mathcal B_D=2K+4\alpha_1(J-2\widehat{\mathcal G}_{ij}K^{ij})
-+\alpha_2(K^{ij}X_iX_j-KX_kX^k)
--\alpha_3v\left(X_kX^k+\frac13v^2\right).
-$$
+$$\begin{align}
+\mathcal B_D=2K+4\alpha_1(J-2\widehat{\mathcal G}_{ij}K^{ij}) +\alpha_2(K^{ij}X_iX_j-KX_kX^k) -\alpha_3v\left(X_kX^k+\frac13v^2\right).
+\end{align}$$
 
 Here $v=n^M\nabla_M\phi$ and $X_i=D_i\phi$. The four terms respectively complete Einstein--Hilbert, Gauss--Bonnet, Einstein-tensor derivative coupling, and cubic Horndeski sectors. The claim is a finite-cutoff Dirichlet variational principle for fixed $\gamma_{ij}$ and $\phi$; it does not impose regularity in the bulk interior.
 
-# Ordered FG recursion
+# Ordered FG Recursion
 
 The expansions are
 
-$$
-g_{ij}=g_{(0)ij}+\rho g_{(2)ij}
-+\rho^2\bigl(g_{(4)ij}^{\rm tot}+\log\rho\,h_{(4)ij}\bigr)+\cdots,
-$$
+$$\begin{align}
+g_{ij}=g_{(0)ij}+\rho g_{(2)ij} +\rho^2\bigl(g_{(4)ij}^{\rm tot}+\log\rho\,h_{(4)ij}\bigr)+\cdots,
+\end{align}$$
 
-$$
-\phi=s\log\rho+\phi_{(0)}+\rho\phi_{(2)}
-+\rho^2\bigl(\phi_{(4)}^{\rm tot}+\log\rho\,\psi_{(4)}\bigr)+\cdots.
-$$
+$$\begin{align}
+\phi=s\log\rho+\phi_{(0)}+\rho\phi_{(2)} +\rho^2\bigl(\phi_{(4)}^{\rm tot}+\log\rho\,\psi_{(4)}\bigr)+\cdots.
+\end{align}$$
 
 The Laurent--log algebra is made algorithmic by
 
-$$
-\partial_\rho[\rho^p(\log\rho)^q]
-=p\rho^{p-1}(\log\rho)^q+q\rho^{p-1}(\log\rho)^{q-1},
-$$
+$$\begin{align}
+\partial_\rho[\rho^p(\log\rho)^q] =p\rho^{p-1}(\log\rho)^q+q\rho^{p-1}(\log\rho)^{q-1},
+\end{align}$$
 
 and a recursive series inverse for $g^{-1}$. The normalized equation blocks use weight $w=2p$ for $(\rho\rho,i{}^j,\phi)$ and $w=2p+3$ for $(\rho i)$.
 
 At weight two, symmetry permits
 
-$$
-g_{(2)ij}=c_{\rm Ric}R_{ij}+c_RRg_{(0)ij}
-+c_{XX}X_iX_j+c_{X^2}X^2g_{(0)ij}
-+c_HH_{ij}+c_{\Box}Hg_{(0)ij},
-$$
+$$\begin{align}
+g_{(2)ij}=c_{\rm Ric}R_{ij}+c_RRg_{(0)ij} +c_{XX}X_iX_j+c_{X^2}X^2g_{(0)ij} +c_HH_{ij}+c_{\Box}Hg_{(0)ij},
+\end{align}$$
 
-$$
+$$\begin{align}
 \phi_{(2)}=b_RR+b_{X^2}X^2+b_{\Box}H,
-$$
+\end{align}$$
 
 where $H_{ij}=D_iD_j\phi_{(0)}$ and $H=D^2\phi_{(0)}$. The paper gives all nine rational coefficients. Their denominators display $\Delta_T$ and $\Delta_S$ explicitly.
 
 Suppressing boundary derivatives, the indicial blocks factor as
 
-$$
+$$\begin{align}
 P_{\rm TT}(\lambda)\propto\lambda(\lambda-2)\Delta_T,
-$$
+\end{align}$$
 
-$$
-\det P_{\rm scalar/trace}(\lambda)
-=-\frac8{\ell^4}(\lambda-2)\lambda^2\Delta_S.
-$$
+$$\begin{align}
+\det P_{\rm scalar/trace}(\lambda) =-\frac8{\ell^4}(\lambda-2)\lambda^2\Delta_S.
+\end{align}$$
 
 Thus the state data at weight four and the logarithmic obstruction live in the same response channels, but are selected by different rows of the recursion.
 
-# Weight-four obstruction and anomaly
+# Weight-Four Obstruction and Anomaly
 
 Define
 
-$$
-a=\alpha_0\ell^2+6\alpha_2-4\alpha_3s,
-\qquad
-b=3\alpha_2-2\alpha_3s.
-$$
+$$\begin{align}
+a=\alpha_0\ell^2+6\alpha_2-4\alpha_3s, \qquad b=3\alpha_2-2\alpha_3s.
+\end{align}$$
 
 The trace/scalar obstruction is governed by
 
@@ -250,166 +216,138 @@ $$
 
 The identity
 
-$$
+$$\begin{align}
 a\Delta_T-8s^2b^2=\ell^2\Delta_S
-$$
+\end{align}$$
 
 implies that the determinant of the displayed response operator is
 
-$$
+$$\begin{align}
 \frac{32\Delta_S}{\ell^4}.
-$$
+\end{align}$$
 
 The compact regular anomaly is
 
-$$
+$$\begin{align}
 \mathcal A_{\rm reg}=a_EE_4+a_CC_{ijkl}C^{ijkl}-\frac\kappa4\Xi^2,
-$$
+\end{align}$$
 
 where
 
-$$
+$$\begin{align}
 \Xi=X_iX^i+2sD^2\phi_{(0)}-\frac23s^2R.
-$$
+\end{align}$$
 
 Under
 
-$$
-\delta_\sigma g_{(0)ij}=2\sigma g_{(0)ij},
-\qquad
-\delta_\sigma\phi_{(0)}=-2s\sigma,
-$$
+$$\begin{align}
+\delta_\sigma g_{(0)ij}=2\sigma g_{(0)ij}, \qquad \delta_\sigma\phi_{(0)}=-2s\sigma,
+\end{align}$$
 
 one obtains $\delta_\sigma\Xi=-2\sigma\Xi$: the $D_i\sigma D^i\phi_{(0)}$ and $D^2\sigma$ terms cancel separately. Hence $\sqrt{-g_{(0)}}\,\Xi^2$ is generalized-Weyl invariant in four dimensions.
 
 The nine-density representation is redundant by one integrated Euler/Lanczos direction. This is a functional-basis null vector, not an extra dynamical zero mode.
 
-# Finite currents and Ward identities
+# Finite Currents and Ward Identities
 
 After power counterterms and the logarithmic counterterm, the normalizable response coefficients are
 
-$$
-C_g=-\frac{2\Delta_T}{3\ell^3},
-\qquad
-C_\phi=D_g=\frac{8s(3\alpha_2-2\alpha_3s)}{\ell^3},
-$$
+$$\begin{align}
+C_g=-\frac{2\Delta_T}{3\ell^3}, \qquad C_\phi=D_g=\frac{8s(3\alpha_2-2\alpha_3s)}{\ell^3},
+\end{align}$$
 
-$$
+$$\begin{align}
 D_\phi=\frac{16(\alpha_0\ell^2+6\alpha_2-4\alpha_3s)}{\ell^3}.
-$$
+\end{align}$$
 
 They mix $\operatorname{tr}g_{(4)}^{\rm tot}$ and $\phi_{(4)}^{\rm tot}$ in the scalar/trace sector. The remaining transverse-traceless components couple with $C_g$.
 
 At vector weight five, the mixed radial equation gives
 
-$$
-D_i\langle T^i{}_j\rangle-\langle\mathcal O_\phi\rangle D_j\phi_{(0)}
-=\frac{\overline{\mathcal E}_{\rho j}^{\rm nonlog}
--\frac12\overline{\mathcal E}_{\rho j}^{\log}}
+$$\begin{align}
+D_i\langle T^i{}_j\rangle-\langle\mathcal O_\phi\rangle D_j\phi_{(0)} =\frac{\overline{\mathcal E}_{\rho j}^{\rm nonlog} -\frac12\overline{\mathcal E}_{\rho j}^{\log}}
 {4\pi G_5\ell}=0.
-$$
+\end{align}$$
 
 In the minimal finite scheme,
 
-$$
-\langle T^i{}_i\rangle-2s\langle\mathcal O_\phi\rangle
-=-\frac{\mathcal A_{\rm reg}}{8\pi G_5}.
-$$
+$$\begin{align}
+\langle T^i{}_i\rangle-2s\langle\mathcal O_\phi\rangle =-\frac{\mathcal A_{\rm reg}}{8\pi G_5}.
+\end{align}$$
 
 Finite local counterterms shift the trace by their own paired Euler responses. Therefore the compact formula above is explicitly scheme-qualified.
 
-# Observable fingerprint and global inverse
+# Observable Fingerprint and Global Inverse
 
 On the scalar-normalization quotient, define
 
-$$
-x=\mathsf c_0,\qquad y=\mathsf c_2,\qquad z=\mathsf c_3,
-\qquad m=3y-2z,
-$$
+$$\begin{align}
+x=\mathsf c_0,\qquad y=\mathsf c_2,\qquad z=\mathsf c_3, \qquad m=3y-2z,
+\end{align}$$
 
-$$
-T=3-x+4m,
-\qquad
-Q=3+24y-x-8z.
-$$
+$$\begin{align}
+T=3-x+4m, \qquad Q=3+24y-x-8z.
+\end{align}$$
 
 The four invariant observables are
 
-$$
-G=C_g,
-\qquad A=sC_\phi=sD_g,
-\qquad B=s^2D_\phi,
-\qquad E=a_E+a_C.
-$$
+$$\begin{align}
+G=C_g, \qquad A=sC_\phi=sD_g, \qquad B=s^2D_\phi, \qquad E=a_E+a_C.
+\end{align}$$
 
 Their forward map is
 
-$$
-G=-\frac{2T}{3\ell},
-\qquad
-A=\frac{8m}{\ell},
-\qquad
-B=\frac{16(x+2m)}{\ell},
-\qquad
-E=-\frac{\ell^3}{48}(Q+T+6).
-$$
+$$\begin{align}
+G=-\frac{2T}{3\ell}, \qquad A=\frac{8m}{\ell}, \qquad B=\frac{16(x+2m)}{\ell}, \qquad E=-\frac{\ell^3}{48}(Q+T+6).
+\end{align}$$
 
 It has the rational inverse
 
-$$
-\ell=\frac{48}{B-12A-24G},
-\qquad
-m=\frac{\ell A}{8},
-\qquad
-x=\frac{\ell(B-4A)}{16},
-$$
+$$\begin{align}
+\ell=\frac{48}{B-12A-24G}, \qquad m=\frac{\ell A}{8}, \qquad x=\frac{\ell(B-4A)}{16},
+\end{align}$$
 
-$$
-T=-\frac{3\ell G}{2},
-\qquad
-Q=-\frac{48E}{\ell^3}-T-6,
-$$
+$$\begin{align}
+T=-\frac{3\ell G}{2}, \qquad Q=-\frac{48E}{\ell^3}-T-6,
+\end{align}$$
 
-$$
-y=\frac{Q-T}{12},
-\qquad
-z=\frac{Q-T}{8}-\frac m2.
-$$
+$$\begin{align}
+y=\frac{Q-T}{12}, \qquad z=\frac{Q-T}{8}-\frac m2.
+\end{align}$$
 
 The exact Jacobian is
 
-$$
+$$\begin{align}
 \det\frac{\partial(G,A,B,E)}{\partial(\ell,x,y,z)}=\frac{128}{\ell}.
-$$
+\end{align}$$
 
 The response-only triple $(G,A,B)$ has kernel
 
-$$
+$$\begin{align}
 v_R=(0,0,2,3)_{(\ell,x,y,z)},
-$$
+\end{align}$$
 
 while
 
-$$
+$$\begin{align}
 dE(v_R)=-\frac{\ell^3}{2}.
-$$
+\end{align}$$
 
 Thus the anomaly sum $E$ removes precisely the continuous ambiguity left by the finite response block. At fixed $\alpha_0=-4/5$,
 
-$$
-\det\frac{\partial(G,A,B,E)}{\partial(\ell,s,y,z)}
-=-\frac{1024s}{5\ell}.
-$$
+$$\begin{align}
+\det\frac{\partial(G,A,B,E)}{\partial(\ell,s,y,z)} =-\frac{1024s}{5\ell}.
+\end{align}$$
 
 The particularly transparent relation
 
-$$
+$$\begin{align}
 a_E+a_C=-\frac\ell2\alpha_1
-$$
+\end{align}$$
 
 reconstructs the reduced Gauss--Bonnet coupling with its sign. This identifiability result is algebraic and local in parameter space only after quotienting scalar normalization and excluding the finite chart boundaries.
 
-# Relevance to current projects
+# Relevance to Current Projects
 
 **Reason codes:** `T1-boundary`, `T1-charge`, `T2-model`, `T3-math`.
 
@@ -419,9 +357,9 @@ reconstructs the reduced Gauss--Bonnet coupling with its sign. This identifiabil
 - The generalized trace identity is close to the user's interest in boundary charges, but the paper computes holographic one-point functions rather than a full covariant phase-space charge algebra.
 - The observable inverse is a controlled finite-dimensional identifiability statement. It should not be upgraded to uniqueness of a UV string compactification.
 
-# Evidence audit
+# Evidence Audit
 
-## Source-derived
+## Source-Derived
 
 - The action, sign conventions, vacuum polynomials, branch elimination, FG ansatz, completed boundary density, weight-two basis, indicial factors, anomaly coefficients, finite currents, Ward identities, and inverse map were reconstructed from the TeX source and checked against the rendered PDF.
 - All twelve source sections and appendices were read. The PDF has 29 pages; pages 1, 10, 17, 23, and 28 were rendered and visually inspected.
@@ -443,7 +381,7 @@ reconstructs the reduced Gauss--Bonnet coupling with its sign. This identifiabil
 - The authors do not provide an executable symbolic notebook for the full FG coefficient solve. Reproducing the complete nine-by-nine weight-two system, all weight-four source tensors, and the finite-current extraction from the bulk equations would require rebuilding their tensor-algebra pipeline.
 - The string-reduction pullback was not recomputed from a higher-dimensional action because the paper provides formulas but no machine-readable reduction notebook.
 
-## Not independently verified
+## Not Independently Verified
 
 - The complete component formulas for $g_{(2)ij}$ and $\phi_{(2)}$, beyond their basis, denominators, and selected algebraic consequences.
 - The nine long paired metric variations in Appendix B, except for their stated Euler/Lanczos linear relation at the displayed-formula level.
@@ -451,7 +389,7 @@ reconstructs the reduced Gauss--Bonnet coupling with its sign. This identifiabil
 - The higher-dimensional Kaluza--Klein reduction map, its determinant, and the final reduction Jacobian.
 - Interior existence, regularity, positivity, causality, or unitarity of bulk saddles for generic points of the algebraic regular chart.
 
-# Achieved claim tier
+# Achieved Claim Tier
 
 **Verified tier:** exact finite-dimensional algebraic consistency of the branch equations, obstruction matrix, generalized-Weyl scalar, current-divergence identity, and observable inverse, plus source/PDF reconstruction of the complete holographic-renormalization pipeline.
 

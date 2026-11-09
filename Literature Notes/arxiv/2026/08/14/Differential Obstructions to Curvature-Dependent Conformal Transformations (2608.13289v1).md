@@ -27,7 +27,7 @@ The paper's most useful conceptual distinction is among:
 3. a metric-only inverse, which requires solving a differential projection;
 4. an unrestricted scalar--tensor parent theory, which has a larger off-shell fluctuation domain than the projected metric theory.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential theorem:** Sections II--IV. These contain the fixed-point equation, full inverse symbol, $f(R)$ parent, normal operator, and tangent constraint.
 - **Essential variational content:** Sections V and VI. Boundary/Cauchy data define the section; the pulled-back Hessian includes an off-shell embedding term.
@@ -35,7 +35,7 @@ The paper's most useful conceptual distinction is among:
 - **Scope control:** Sections XI and XII. Palatini and higher-curvature models require separate normal matrices; no generic quantum equivalence theorem is claimed.
 - **Do not conflate:** Legendre degeneracy, nonlocal inverse, nonunique graph, tachyonic response, normal zero mode, and a zero mode of the projected action Hessian.
 
-# Complete source map
+# Complete Source Map
 
 1. **Introduction:** defines finite-jet locality and separates solution maps from off-shell field redefinitions.
 2. **Curvature-dependent conformal maps:** derives the differential fixed point, auxiliary localization, inverse symbol, and off-shell fibers.
@@ -51,264 +51,225 @@ The paper's most useful conceptual distinction is among:
 12. **Discussion:** restates the finite-jet result and lists the missing gauge-fixed quantum and nonlinear-global analyses.
 13. **Appendices:** derive the normal operator and the second-variation embedding term.
 
-# Generic curvature-dependent map
+# Generic Curvature-Dependent Map
 
 Consider
 
-$$
-\widetilde g_{\mu\nu}=F(R[g])g_{\mu\nu},
-\qquad F>0.
-$$
+$$\begin{align}
+\widetilde g_{\mu\nu}=F(R[g])g_{\mu\nu}, \qquad F>0.
+\end{align}$$
 
 Given $\widetilde g$, write
 
-$$
-g_{\mu\nu}=F(R_J)^{-1}\widetilde g_{\mu\nu},
-\qquad R_J=R[g].
-$$
+$$\begin{align}
+g_{\mu\nu}=F(R_J)^{-1}\widetilde g_{\mu\nu}, \qquad R_J=R[g].
+\end{align}$$
 
 The unknown curvature must satisfy
 
-$$
+$$\begin{align}
 R_J=R[F(R_J)^{-1}\widetilde g].
-$$
+\end{align}$$
 
 In four dimensions the conformal formula gives
 
-$$
-R_J=F\widetilde R+3F_R\widetilde\Box R_J
-+3\left(F_{RR}-\frac32\frac{F_R^2}{F}\right)
-(\widetilde\nabla R_J)^2.
-$$
+$$\begin{align}
+R_J=F\widetilde R+3F_R\widetilde\Box R_J +3\left(F_{RR}-\frac32\frac{F_R^2}{F}\right) (\widetilde\nabla R_J)^2.
+\end{align}$$
 
 This is a nonlinear differential fixed point. Formal iteration generally generates derivatives of unbounded order. That observation motivates the result, but the actual no-go proof uses the complete inverse response rather than derivative counting alone.
 
-# Auxiliary localization and symbol proof
+# Auxiliary Localization and Symbol Proof
 
 Introduce an independent carrier $X$:
 
-$$
+$$\begin{align}
 \widetilde g_{\mu\nu}=F(X)g_{\mu\nu}.
-$$
+\end{align}$$
 
 The Weyl map is now algebraic, while the metric sector is selected by
 
-$$
-\widehat{\mathcal P}_F[\widetilde g,X]
-=R[F(X)^{-1}\widetilde g]-X=0.
-$$
+$$\begin{align}
+\widehat{\mathcal P}_F[\widetilde g,X] =R[F(X)^{-1}\widetilde g]-X=0.
+\end{align}$$
 
 Explicitly,
 
-$$
-\widehat{\mathcal P}_F
-=F\widetilde R+3F_X\widetilde\Box X
-+3\left(F_{XX}-\frac32\frac{F_X^2}{F}\right)(\widetilde\nabla X)^2-X.
-$$
+$$\begin{align}
+\widehat{\mathcal P}_F =F\widetilde R+3F_X\widetilde\Box X +3\left(F_{XX}-\frac32\frac{F_X^2}{F}\right)(\widetilde\nabla X)^2-X.
+\end{align}$$
 
 Linearize as
 
-$$
-\delta\widehat{\mathcal P}_F=B_F[\gamma]+\mathcal N_F\chi,
-\qquad
-\gamma_{\mu\nu}=\delta\widetilde g_{\mu\nu},
-\quad \chi=\delta X.
-$$
+$$\begin{align}
+\delta\widehat{\mathcal P}_F=B_F[\gamma]+\mathcal N_F\chi, \qquad \gamma_{\mu\nu}=\delta\widetilde g_{\mu\nu}, \quad \chi=\delta X.
+\end{align}$$
 
 For a noncharacteristic covector $\xi^2\ne0$, the principal symbols are
 
-$$
+$$\begin{align}
 \sigma_2(\mathcal N_F)=-3F_X\xi^2,
-$$
+\end{align}$$
 
-$$
-\sigma_2(B_F)\gamma
-=F(-\xi^\mu\xi^\nu\gamma_{\mu\nu}+\xi^2\gamma).
-$$
+$$\begin{align}
+\sigma_2(B_F)\gamma =F(-\xi^\mu\xi^\nu\gamma_{\mu\nu}+\xi^2\gamma).
+\end{align}$$
 
 Therefore
 
-$$
-\sigma_0(-\mathcal N_F^{-1}B_F)\gamma
-=-\frac{F}{3F_X}
-\left(\frac{\xi^\mu\xi^\nu}{\xi^2}\gamma_{\mu\nu}-\gamma\right).
-$$
+$$\begin{align}
+\sigma_0(-\mathcal N_F^{-1}B_F)\gamma =-\frac{F}{3F_X} \left(\frac{\xi^\mu\xi^\nu}{\xi^2}\gamma_{\mu\nu}-\gamma\right).
+\end{align}$$
 
 The inverse metric response is
 
-$$
-\sigma_0(\delta g_{\mu\nu})
-=\frac1F\gamma_{\mu\nu}
-+\frac1{3F}
-\left(\frac{\xi^\alpha\xi^\beta}{\xi^2}\gamma_{\alpha\beta}-\gamma\right)
-\widetilde g_{\mu\nu}.
-$$
+$$\begin{align}
+\sigma_0(\delta g_{\mu\nu}) =\frac1F\gamma_{\mu\nu} +\frac1{3F} \left(\frac{\xi^\alpha\xi^\beta}{\xi^2}\gamma_{\alpha\beta}-\gamma\right) \widetilde g_{\mu\nu}.
+\end{align}$$
 
 A finite-order differential operator has polynomial momentum dependence. The longitudinal factor $\xi^\mu\xi^\nu/\xi^2$ is nonpolynomial, so a $C^1$ finite-jet inverse on an open set of unrestricted metrics would contradict its own linearization.
 
 The conclusion is microlocal and generic. At $\xi^2=0$ one must choose a global Green prescription; special symmetry reductions or exceptional cancellations require separate proof.
 
-# Off-shell fibers
+# Off-Shell Fibers
 
 A single transformed metric can have multiple preimages. On a monotonic branch, set
 
-$$
+$$\begin{align}
 g_{\mu\nu}=\varphi^2\widetilde g_{\mu\nu}.
-$$
+\end{align}$$
 
 Then the fiber equation is
 
-$$
-6\widetilde\Box\varphi
-=\varphi\left[\widetilde R-\varphi^2r_F(\varphi^{-2})\right],
-$$
+$$\begin{align}
+6\widetilde\Box\varphi =\varphi\left[\widetilde R-\varphi^2r_F(\varphi^{-2})\right],
+\end{align}$$
 
 where $r_F$ is the local inverse of $F$. For $F=1+2\alpha R$ and $\widetilde g=\eta$, homogeneous fibers satisfy
 
-$$
+$$\begin{align}
 \ddot\varphi+\frac{\varphi(\varphi^2-1)}{12\alpha}=0,
-$$
+\end{align}$$
 
 with conserved energy
 
-$$
+$$\begin{align}
 E_\varphi=\frac12\dot\varphi^2+\frac{(\varphi^2-1)^2}{48\alpha}.
-$$
+\end{align}$$
 
 For $0<E_\varphi<1/(48\alpha)$ there are positive oscillatory preimages above the same Minkowski transformed metric. These are generally off shell, so they do not contradict equivalence of exact regular solutions.
 
-# Metric $f(R)$ parent and differential projection
+# Metric $f(R)$ Parent and Differential Projection
 
 On a regular Legendre branch,
 
-$$
-\Phi=f_X(X),
-\qquad f_{XX}\ne0,
-\qquad \Phi>0,
-$$
+$$\begin{align}
+\Phi=f_X(X), \qquad f_{XX}\ne0, \qquad \Phi>0,
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 U(\Phi)=\Phi X(\Phi)-f(X(\Phi)).
-$$
+\end{align}$$
 
 The Jordan parent is
 
-$$
+$$\begin{align}
 S_J=\frac1{2\kappa^2}\int\sqrt{-g}[\Phi R-U(\Phi)]+S_m.
-$$
+\end{align}$$
 
 With
 
-$$
-\widetilde g_{\mu\nu}=\Phi g_{\mu\nu},
-\qquad s=\ln\Phi,
-$$
+$$\begin{align}
+\widetilde g_{\mu\nu}=\Phi g_{\mu\nu}, \qquad s=\ln\Phi,
+\end{align}$$
 
 the Einstein-frame parent becomes
 
-$$
-S_E=\frac1{2\kappa^2}\int\sqrt{-\widetilde g}
-\left[\widetilde R-\frac32(\widetilde\nabla s)^2-W(s)\right]
-+S_m[e^{-s}\widetilde g,\psi].
-$$
+$$\begin{align}
+S_E=\frac1{2\kappa^2}\int\sqrt{-\widetilde g} \left[\widetilde R-\frac32(\widetilde\nabla s)^2-W(s)\right] +S_m[e^{-s}\widetilde g,\psi].
+\end{align}$$
 
 The original metric theory is not the unrestricted parent. It is the constraint set
 
-$$
-\widehat{\mathcal P}_f[\widetilde g,s]
-=e^s\left[\widetilde R+3\widetilde\Box s
--\frac32(\widetilde\nabla s)^2\right]-X(e^s)=0.
-$$
+$$\begin{align}
+\widehat{\mathcal P}_f[\widetilde g,s] =e^s\left[\widetilde R+3\widetilde\Box s -\frac32(\widetilde\nabla s)^2\right]-X(e^s)=0.
+\end{align}$$
 
 On the full parent shell this projection is a linear combination of the parent metric trace and scalar equations. Exact regular parent and metric solutions therefore coincide. The distinction begins off shell.
 
-# Normal operator and tangent section
+# Normal Operator and Tangent Section
 
 The linearized constraint is
 
-$$
-B[\gamma]+\mathcal L_\Phi\sigma=0,
-\qquad
-\sigma=\delta s.
-$$
+$$\begin{align}
+B[\gamma]+\mathcal L_\Phi\sigma=0, \qquad \sigma=\delta s.
+\end{align}$$
 
 On the projected section,
 
-$$
-\mathcal L_\Phi
-=3\Phi(\widetilde\Box-\widetilde\nabla^\mu s\,\widetilde\nabla_\mu)
-+X(\Phi)-\Phi X_\Phi(\Phi).
-$$
+$$\begin{align}
+\mathcal L_\Phi =3\Phi(\widetilde\Box-\widetilde\nabla^\mu s\,\widetilde\nabla_\mu) +X(\Phi)-\Phi X_\Phi(\Phi).
+\end{align}$$
 
 For a chosen right inverse $G_P$,
 
-$$
-\sigma=-G_PB[\gamma]+\sigma_h,
-\qquad
-\mathcal L_\Phi\sigma_h=0.
-$$
+$$\begin{align}
+\sigma=-G_PB[\gamma]+\sigma_h, \qquad \mathcal L_\Phi\sigma_h=0.
+\end{align}$$
 
 The Green operator determines a particular sourced response. Homogeneous data are separate boundary or Cauchy data.
 
 If the realization has kernel or cokernel,
 
-$$
+$$\begin{align}
 \Pi_{\rm coker}B[\gamma]=0
-$$
+\end{align}$$
 
 is the Fredholm compatibility condition. A normal zero mode obstructs a unique graph only for the chosen domain; it does not automatically imply a physical flat direction.
 
 On a constant projected background,
 
-$$
+$$\begin{align}
 \mathcal L_\Phi=3f_R(\widetilde\Box-m_E^2),
-$$
+\end{align}$$
 
-$$
-m_E^2=\frac{f_R-Rf_{RR}}{3f_Rf_{RR}},
-\qquad
-m_J^2=f_Rm_E^2.
-$$
+$$\begin{align}
+m_E^2=\frac{f_R-Rf_{RR}}{3f_Rf_{RR}}, \qquad m_J^2=f_Rm_E^2.
+\end{align}$$
 
 On a common-shell background this is the physical scalaron pole after conformal rescaling. Off shell it is a projection-response parameter.
 
-# Pure-trace response remains nonlocal
+# Pure-Trace Response Remains Nonlocal
 
 For constant $s$ the frozen tangent symbol is
 
-$$
-\widehat{\delta s_\star}
-=-\frac{widetilde R^{\mu\nu}\widehat\gamma_{\mu\nu}
-+\xi^\mu\xi^\nu\widehat\gamma_{\mu\nu}-\xi^2\widehat\gamma}
-{3(\xi^2+m_E^2)}.
-$$
+$$\begin{align}
+\widehat{\delta s_\star} =-\frac{widetilde R^{\mu\nu}\widehat\gamma_{\mu\nu} +\xi^\mu\xi^\nu\widehat\gamma_{\mu\nu}-\xi^2\widehat\gamma} {3(\xi^2+m_E^2)}.
+\end{align}$$
 
 For $\widehat\gamma_{\mu\nu}=\widehat\gamma\widetilde g_{\mu\nu}/4$,
 
-$$
-\widehat{\delta s_\star}
-=\left[
-\frac14-\frac1{12f_{RR}}\frac1{\xi^2+m_E^2}
-\right]\widehat\gamma.
-$$
+$$\begin{align}
+\widehat{\delta s_\star} =\left[ \frac14-\frac1{12f_{RR}}\frac1{\xi^2+m_E^2} \right]\widehat\gamma.
+\end{align}$$
 
 The identity used here is
 
-$$
+$$\begin{align}
 \widetilde R+3m_E^2=\frac1{f_{RR}}.
-$$
+\end{align}$$
 
 Since $f_{RR}$ is finite and nonzero on a regular Legendre branch, the inverse-operator residue does not vanish. The obstruction is therefore not confined to diffeomorphism directions.
 
-# Boundary and inverse data
+# Boundary and Inverse Data
 
 The usual metric boundary completion is
 
-$$
+$$\begin{align}
 S_{\partial f}=\frac1{\kappa^2}\int_{\partial\mathcal M}\sqrt{|h|}\,f_RK,
-$$
+\end{align}$$
 
 with induced metric plus higher-derivative data such as $\delta R|_{\partial\mathcal M}=0$. The boundary term alone does not eliminate the need for this additional datum.
 
@@ -321,146 +282,126 @@ Different problems require different inverses:
 
 A retarded Green operator is not symmetric, so it cannot simply be inserted as the Hessian kernel of a standard single-history action.
 
-# Pulled-back Hessian
+# Pulled-Back Hessian
 
 Define the metric-only section action
 
-$$
+$$\begin{align}
 S_\star[\widetilde g]=S_E[\widetilde g,s_\star[\widetilde g]].
-$$
+\end{align}$$
 
 For tangent lifts $\eta_a=(\gamma_a,\sigma_a)$,
 
-$$
-\delta^2s_\star[\gamma_1,\gamma_2]
-=-G_P\delta^2\widehat{\mathcal P}_f[\eta_1,\eta_2].
-$$
+$$\begin{align}
+\delta^2s_\star[\gamma_1,\gamma_2] =-G_P\delta^2\widehat{\mathcal P}_f[\eta_1,\eta_2].
+\end{align}$$
 
 Hence
 
-$$
-\boxed{
-\delta^2S_\star
-=\delta^2S_E[\eta_1,\eta_2]
--\left\langle E_s,
-G_P\delta^2\widehat{\mathcal P}_f[\eta_1,\eta_2]
-\right\rangle
+$$\begin{align}
+\boxed{ \delta^2S_\star =\delta^2S_E[\eta_1,\eta_2] -\left\langle E_s, G_P\delta^2\widehat{\mathcal P}_f[\eta_1,\eta_2] \right\rangle
 }.
-$$
+\end{align}$$
 
 The second term is the embedding correction. It is the normal Euler derivative contracted with the second fundamental form of the constraint section. It vanishes on the parent scalar shell, but it is generally present off shell.
 
 Thus three quadratic objects differ:
 
-$$
-H_{\rm metric}^{\rm proj}
-=H_{\rm parent}|_{T\mathcal M_f}+H_{\rm embed},
-$$
+$$\begin{align}
+H_{\rm metric}^{\rm proj} =H_{\rm parent}|_{T\mathcal M_f}+H_{\rm embed},
+\end{align}$$
 
-$$
-H_{\rm restricted}=H_{\rm parent}|_{T\mathcal M_f},
-\qquad
-H_{\rm parent}=H_{\rm parent}[\gamma,\sigma\ \text{arbitrary}].
-$$
+$$\begin{align}
+H_{\rm restricted}=H_{\rm parent}|_{T\mathcal M_f}, \qquad H_{\rm parent}=H_{\rm parent}[\gamma,\sigma\ \text{arbitrary}].
+\end{align}$$
 
 An unrestricted scalar--tensor Gaussian cannot be turned into the metric result merely by adding or deleting a scalar determinant.
 
-# Explicit $R+\alpha R^2$ checks
+# Explicit $R+\alpha R^2$ Checks
 
 For
 
-$$
-f(R)=R+\alpha R^2,
-\qquad
-m_s^2=\frac1{6\alpha},
-$$
+$$\begin{align}
+f(R)=R+\alpha R^2, \qquad m_s^2=\frac1{6\alpha},
+\end{align}$$
 
 the flat projected constraint is
 
-$$
+$$\begin{align}
 \widetilde R^{(1)}+3(\widetilde\Box-m_s^2)s=0.
-$$
+\end{align}$$
 
 On a constant projected but off-parent-shell background, the paper gives a nonzero constant-mode embedding contribution in exponential metric coordinates:
 
-$$
-\Delta H_{\chi_0}^{(\exp)}
-=-\frac{V_E}{\kappa^2}
-\frac{(\Phi-1)^2}{\alpha\Phi}\chi_0^2.
-$$
+$$\begin{align}
+\Delta H_{\chi_0}^{(\exp)} =-\frac{V_E}{\kappa^2} \frac{(\Phi-1)^2}{\alpha\Phi}\chi_0^2.
+\end{align}$$
 
 Its isolated sign is not a parametrization-independent stability criterion. The covariant statement is the full pullback identity.
 
 For a self-adjoint inverse, constrained Gaussian elimination gives
 
-$$
-S_{\star,0}^{(2)}
-=S_{\rm EH}^{(2)}
-+\frac1{12\kappa^2}\int
-\widetilde R^{(1)}\frac1{\widetilde\Box-m_s^2}\widetilde R^{(1)}.
-$$
+$$\begin{align}
+S_{\star,0}^{(2)} =S_{\rm EH}^{(2)} +\frac1{12\kappa^2}\int \widetilde R^{(1)}\frac1{\widetilde\Box-m_s^2}\widetilde R^{(1)}.
+\end{align}$$
 
 Simultaneously it produces the normal determinant $|\det(3D_s)|^{-1}$ for the displayed factorized scalar measure. A complete quantum answer still needs the pushed-forward Jordan metric measure, projected gauge and ghosts, regularization, phase/contour, and zero-mode treatment.
 
-# Weak-field and cosmological response
+# Weak-Field and Cosmological Response
 
 For a static nonrelativistic source,
 
-$$
+$$\begin{align}
 (\Delta-m_s^2)s=-\frac{\kappa^2}{3}\rho.
-$$
+\end{align}$$
 
 With regularity, matching, and decay,
 
-$$
+$$\begin{align}
 s_{\rm ext}(r)=\frac{Q_se^{-m_sr}}r,
-$$
+\end{align}$$
 
-$$
-Q_s=\frac{\kappa^2}{3m_s}\int_0^{R_b}d\bar r\,
-\bar r\sinh(m_s\bar r)\rho(\bar r).
-$$
+$$\begin{align}
+Q_s=\frac{\kappa^2}{3m_s}\int_0^{R_b}d\bar r\, \bar r\sinh(m_s\bar r)\rho(\bar r).
+\end{align}$$
 
 The same denominator yields the standard $1/3$ Yukawa correction to the Jordan potentials. The exterior scalar charge is fixed only for this static boundary problem; Lorentzian scalaron waves correspond to different homogeneous Cauchy data.
 
 For homogeneous Einstein-frame FLRW, the projection becomes
 
-$$
-e^s\left[
-6(\dot{\widetilde H}+2\widetilde H^2)
--3\ddot s-9\widetilde H\dot s+\frac32\dot s^2
-\right]=X(e^s).
-$$
+$$\begin{align}
+e^s\left[ 6(\dot{\widetilde H}+2\widetilde H^2) -3\ddot s-9\widetilde H\dot s+\frac32\dot s^2 \right]=X(e^s).
+\end{align}$$
 
 It is a nonlinear second-order ODE requiring branch and initial data. In the weak Starobinsky regime,
 
-$$
+$$\begin{align}
 \ddot s+3\widetilde H\dot s+m_s^2s\simeq\frac{\widetilde R}{3},
-$$
+\end{align}$$
 
 whose retarded solution contains both a curvature-sourced particular response and independent homogeneous scalaron data.
 
-# Spectral graph breakdown
+# Spectral Graph Breakdown
 
 On a compact Euclidean constant-curvature background,
 
-$$
+$$\begin{align}
 -\widetilde\Box Y_n=\lambda_nY_n,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \mathcal L_\Phi Y_n=-3\Phi(\lambda_n+m_E^2)Y_n.
-$$
+\end{align}$$
 
 The chosen graph fails to be uniquely invertible when $\lambda_n+m_E^2=0$. On $S^4$,
 
-$$
+$$\begin{align}
 \lambda_\ell=\frac{\ell(\ell+3)}{a^2}.
-$$
+\end{align}$$
 
 This is a zero mode of the normal operator realization. It is not automatically a zero mode of the projected action Hessian, a nonlinear fold, or a physical instability.
 
-# Relevance to current projects
+# Relevance to Current Projects
 
 **Reason codes:** `T1-boundary`, `T2-model`, `T2-spectral`, `T3-math`.
 
@@ -470,9 +411,9 @@ This is a zero mode of the normal operator realization. It is not automatically 
 - The paper preserves the scalaron as a physical spin-zero metric mode while denying that it is a local finite-jet function of the Einstein metric alone.
 - It is medium rather than high priority because the vault's active work concerns boundary/CPS constructions directly, whereas this paper develops a modified-gravity field-redefinition benchmark.
 
-# Evidence audit
+# Evidence Audit
 
-## Source-derived
+## Source-Derived
 
 - The official abstract, full 25-page PDF, complete TeX source, all twelve main sections, and both appendices were read.
 - PDF pages 1, 7, 12, 19, and 24 were rendered and visually checked; the field-space diagram, normal-operator formulas, embedding formulas, spectral section, and bibliography were legible.
@@ -492,7 +433,7 @@ This is a zero mode of the normal operator realization. It is not automatically 
 - The paper gives a structural constrained path integral, not a fully gauge-fixed one-loop computation. No explicit pushed-forward metric measure or projected ghost determinant is supplied for independent evaluation.
 - No numerical solver is supplied for the nonlinear global section or off-shell fiber bifurcations.
 
-## Not independently verified
+## Not Independently Verified
 
 - Full covariant variation of every arbitrary-background tensor term in $B[\gamma]$ and $\delta^2\widehat{\mathcal P}_f$.
 - Existence and uniqueness of any nonlinear global section beyond the local implicit-function framework.
@@ -500,7 +441,7 @@ This is a zero mode of the normal operator realization. It is not automatically 
 - Cosmological observable formulas beyond their standard quasistatic algebra and the stated approximations.
 - Exceptional symmetry-reduced or higher-curvature models, which require separate normal-matrix calculations.
 
-# Achieved claim tier
+# Achieved Claim Tier
 
 **Verified tier:** the finite-jet symbol obstruction and its main algebraic/variational $R+\alpha R^2$ consequences, with complete source reconstruction and explicit operator-domain qualifications.
 

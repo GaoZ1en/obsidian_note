@@ -138,7 +138,7 @@ Total deduplicated entries: 126
 | [2609.39992](https://arxiv.org/abs/2609.39992) | math-ph:replacement | cond-mat.stat-mech, math-ph, quant-ph | Predicting properties of Scrooge ensembles with high accuracy and low sample complexity | Yue Wu, Yuzhi Tong, Helen Propson, Yihui Quek, Liang Mao | 50 pages, 2 figures |
 | [2609.40266](https://arxiv.org/abs/2609.40266) | math-ph:replacement | math-ph, quant-ph | Compatibility of quantum instruments | Chloe Kim, Yujie Zhang, Eric Chitambar, Marius Junge, Felix Leditzky |  |
 
-## Placement and version audit
+## Placement and Version Audit
 
 Primary category is first; category order restored from official abstract metadata. Version metadata checked on the run date. Local tracking excludes inventory-only mentions.
 

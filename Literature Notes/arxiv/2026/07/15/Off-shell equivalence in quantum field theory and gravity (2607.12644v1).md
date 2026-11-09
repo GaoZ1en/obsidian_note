@@ -17,7 +17,7 @@ Back to [[2026_07_15_overview]].
 
 The paper is relevant to the vault's “strictly off shell before EOM” rule, but its geometry is configuration-space geometry in the Vilkovisky--DeWitt sense. It does not compute a spacetime presymplectic potential, covariant phase-space current, or surface charge.
 
-# Metric $f(R)$ as a constrained parent reduction
+# Metric $f(R)$ as a Constrained Parent Reduction
 
 The clean starting point is the multiplier form of metric $f(R)$ gravity. Schematically,
 
@@ -49,7 +49,7 @@ Thus the reduced description is equivalent only on a patch where $f''(\chi)\ne0$
 - the two-field action has a branch-dependent equation;
 - a scalar--tensor path integral over independently fluctuating $g$ and $\chi$ is a different quantum object unless the parent constraint and its measure factors are retained.
 
-# Jordan and Einstein frames on nondegenerate patches
+# Jordan and Einstein Frames on Nondegenerate Patches
 
 The usual Legendre and Weyl maps require an invertible patch, including the positivity condition on the scalar multiplying the Ricci term. The paper treats an equivalence claim as a tuple, not just as a field map:
 
@@ -61,7 +61,7 @@ Every entry must be pushed forward or pulled back. A clock, ruler, matter coupli
 
 This is particularly important for gravitational energy. Equality of two local energy densities is not the correct test. One should transport the same charge or probe pairing and then compare its scalar value.
 
-# LSZ equivalence versus off-shell response
+# LSZ Equivalence Versus Off-Shell Response
 
 A nonlinear scalar redefinition can leave S-matrix elements unchanged while altering a susceptibility computed from a source that is declared “linear” in both coordinate systems. The reason is simple: the two source couplings are not related by pullback.
 
@@ -87,7 +87,7 @@ $$\begin{align}
 \text{same observable}.
 \end{align}$$
 
-# Vilkovisky--DeWitt covariant Hessian
+# Vilkovisky--DeWitt Covariant Hessian
 
 The ordinary action Hessian is not a configuration-space tensor. Under a nonlinear field change it acquires a term proportional to the first derivative of the action. The VDW covariant Hessian is
 
@@ -105,7 +105,7 @@ This field-space connection should not be confused with:
 
 The paper's VDW result can organize an off-shell effective action, but it cannot replace a derivation of $\Theta$, $\omega$, or $Q_\xi$.
 
-# Probe pairings and charge-type readouts
+# Probe Pairings and Charge-Type Readouts
 
 The operational observable is a scalar pairing of a configuration-space tensor with an admissible probe. The paper includes charge-like protocols of the form
 
@@ -123,23 +123,23 @@ For the gravitational-energy project, this translates into a concrete audit:
 4. compare the same integrated observable;
 5. only then use constraints or EOM according to the stated sector.
 
-# Direct, parent-mediated, and branchwise equivalence
+# Direct, Parent-Mediated, and Branchwise Equivalence
 
 The paper separates several notions that are often conflated.
 
-## Direct equivalence
+## Direct Equivalence
 
 There is an invertible map between the two field spaces and every part of the theory/probe tuple is transported.
 
-## Parent-mediated equivalence
+## Parent-Mediated Equivalence
 
 Two descriptions arise as reductions of a common constrained parent. Equality depends on how the constraint, determinant, and boundary data are implemented.
 
-## Local or branchwise equivalence
+## Local or Branchwise Equivalence
 
 The map is valid only where its Jacobian and the relevant Hessians do not degenerate. Distinct branches require distinct path integrals and gluing rules.
 
-## Global equivalence
+## Global Equivalence
 
 The local patches, branch identifications, gauge quotients, boundary conditions, and measures agree globally. Local agreement of equations does not establish this.
 
@@ -157,7 +157,7 @@ W=-i\log Z
 
 is not the sum of the individual $W_\alpha$. This blocks a common but incorrect shortcut in off-shell comparisons.
 
-# Constrained parent quantization
+# Constrained Parent Quantization
 
 At the quantum level, imposing an auxiliary equation inside the path integral requires the appropriate functional delta distribution and its Jacobian or determinant. Quantizing the enlarged field space freely and later imposing a quantum equation of motion does not reproduce the same measure.
 
@@ -169,7 +169,7 @@ The metric $f(R)$ conclusion is therefore precise:
 
 Boundary terms and endpoint conditions are part of this statement. An integration by parts or field map that changes them can change the off-shell theory even when bulk EOM agree.
 
-# Translation to the gravitational-energy project
+# Translation to the Gravitational-Energy Project
 
 | Off-shell-equivalence datum | Local gravitational-energy use |
 |---|---|
@@ -183,7 +183,7 @@ Boundary terms and endpoint conditions are part of this statement. An integratio
 
 The paper is a methods reference for formulating an equivalence statement. It does not supply a new gravitational surface-charge formula, which is why it remains medium priority.
 
-# Verification boundary
+# Verification Boundary
 
 - The scalar field-redefinition example and the $f(R)$ branch logic were followed at the level of the displayed source equations.
 - The VDW gauge-independence theorem, infinite-dimensional functional determinants, global branch gluing, endpoint-compatible parent measure, and real-time CTP extension were not independently reproduced.

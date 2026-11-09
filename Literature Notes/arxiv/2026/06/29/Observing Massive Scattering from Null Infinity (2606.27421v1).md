@@ -16,61 +16,59 @@ tags: []
 
 Back to [[2026_06_29_overview]].
 
-# Timelike data matched to late null infinity
+# Timelike Data Matched to Late Null Infinity
 
 The technical problem is that massive particles do not arrive at $\mathscr I^+$, while the soft gravitational field they produce does. The paper uses Beig-Schmidt coordinates near timelike infinity,
 
-$$
+$$\begin{align}
 X^\mu=\tau \hat x^\mu ,
-$$
+\end{align}$$
 
 and expands the massive scalar stress tensor in inverse powers of $\tau$. The leading gravitational datum is the hyperbolic scalar $\sigma$ on the unit timelike hyperboloid. In the vacuum region it obeys
 
-$$
+$$\begin{align}
 (\hat\nabla^2-3)\sigma=0.
-$$
+\end{align}$$
 
 The matching condition identifies the large-radius boundary of this timelike datum with the late retarded-time limit of the Bondi mass aspect. In the notation used in the paper, the boundary behavior has the form
 
-$$
+$$\begin{align}
 \sigma=-2m_B^{(0)} e^{-3\rho}+\cdots ,
-$$
+\end{align}$$
 
 so the coefficient of the exponentially decaying hyperbolic mode is the same information as the leading late-time Bondi mass aspect.
 
-# Massive scalar stress tensor as the source of sigma
+# Massive Scalar Stress Tensor as the Source of Sigma
 
 For a massive scalar, the stress tensor has a leading timelike-infinity piece
 
-$$
+$$\begin{align}
 T_{\tau\tau}=\tau^{-3}T_{\tau\tau}^{(3)}+\cdots .
-$$
+\end{align}$$
 
 The hyperbolic scalar equation becomes a sourced equation,
 
-$$
+$$\begin{align}
 (\hat\nabla^2-3)\sigma=4\pi G_N T_{\tau\tau}^{(3)}.
-$$
+\end{align}$$
 
 The solution is written with a bulk-to-bulk Green function on the hyperboloid, and the boundary limit gives a bulk-to-boundary kernel $G_{Bb}$. This turns the late Bondi mass aspect into an operator built from the massive creation and annihilation operators.
 
 The detector operator emphasized by the paper is
 
-$$
-M(n)=\frac{1}{4\pi G_N}m_B^{(0)}(n)
-     =-\frac12\int d^3\hat x\,\sqrt h\,G_{Bb}(n;\hat x)T_{\tau\tau}^{(3)}(\hat x).
-$$
+$$\begin{align}
+M(n)=\frac{1}{4\pi G_N}m_B^{(0)}(n) =-\frac12\int d^3\hat x\,\sqrt h\,G_{Bb}(n;\hat x)T_{\tau\tau}^{(3)}(\hat x).
+\end{align}$$
 
 For the free massive field this becomes schematically
 
-$$
-M(n)=-\frac{m^3}{32\pi^3}\int d^3\hat x\,\sqrt h\,G_{Bb}(n;\hat x)\,
-b^\dagger(\hat x)b(\hat x),
-$$
+$$\begin{align}
+M(n)=-\frac{m^3}{32\pi^3}\int d^3\hat x\,\sqrt h\,G_{Bb}(n;\hat x)\, b^\dagger(\hat x)b(\hat x),
+\end{align}$$
 
 up to the paper's normalization conventions for hyperbolic modes.
 
-# Bondi mass aspect as the detector operator
+# Bondi Mass Aspect as the Detector Operator
 
 The important structural point is that $M(n)$ is diagonal in the massive out-state basis but lives at null infinity. Thus null infinity does not need to receive the massive particles themselves; it receives the gravitational memory of their energy distribution.
 
@@ -78,7 +76,7 @@ For scattering, the late null-infinity correlators of $M(n)$ become weighted sum
 
 This makes $M(n)$ closer to an inclusive detector observable than to a hard particle observable. The construction is useful because it extracts massive scattering information with an asymptotic operator that belongs to the same null-boundary algebra as ordinary soft radiation data.
 
-# Carrollian stress tensor constraints
+# Carrollian Stress Tensor Constraints
 
 The paper then rewrites the relevant null-infinity data as components of a Carrollian stress tensor. The matrix of boundary data includes the Bondi mass aspect $M$, angular-momentum aspect $N_A$, and a traceless tensor $A^A{}_B$ built from radiative data.
 
@@ -86,13 +84,11 @@ The Ward identities strongly constrain two-point functions. In the vacuum sector
 
 For the vault's null-boundary work, the useful lesson is that the same late Bondi coefficient can be read in two ways:
 
-$$
-\text{timelike massive stress tensor source}
-\quad\longleftrightarrow\quad
-\text{Carrollian boundary stress-tensor component}.
-$$
+$$\begin{align}
+\text{timelike massive stress tensor source} \quad\longleftrightarrow\quad \text{Carrollian boundary stress-tensor component}.
+\end{align}$$
 
-# In-in correlators as weighted cross sections
+# In-In Correlators as Weighted Cross Sections
 
 The in-in formulas organize the detector correlators as inclusive cross-section data. The source-derived chain is:
 
@@ -103,12 +99,12 @@ The in-in formulas organize the detector correlators as inclusive cross-section 
 
 This is a concrete mechanism for recovering information about massive scattering from null infinity. It is not a new charge algebra, but it is a useful bridge between massive scattering, null boundary observables, and Carrollian Ward identities.
 
-# Use in null-boundary notes
+# Use in Null-Boundary Notes
 
 This paper is most useful as a model for detector observables at null infinity. It can be cited when a note needs an explicit example where data from timelike infinity are represented by null-boundary fields.
 
 The transfer is technical but not immediate for CPS work. The construction gives operators and correlators, not a symplectic form or Hamiltonian generator. Its best use is therefore as a boundary-observable example in notes about null infinity, Carrollian stress tensors, or massive scattering.
 
-# Verification boundary
+# Verification Boundary
 
 The decomposition above is source-derived from the official arXiv TeX source. I did not independently rederive the hyperbolic Green function normalization or the scattering-amplitude completeness formulas. The formulas most likely to need future checking before reuse are the precise coefficient in the free-field expression for $M(n)$ and the contact term in the two-point in-in correlator.

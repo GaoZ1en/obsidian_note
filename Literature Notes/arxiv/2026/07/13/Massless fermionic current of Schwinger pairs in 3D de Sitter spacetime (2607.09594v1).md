@@ -15,7 +15,7 @@ tags: []
 
 Back to [[2026_07_13_overview]].
 
-## Expanding dS3 patch and constant electric field
+## Expanding dS3 Patch and Constant Electric Field
 
 The paper works on the expanding Poincaré patch,
 
@@ -49,7 +49,7 @@ j^{\hat x}=\Omega J.
 
 This distinction is essential for interpreting the plots and strong-field limit.
 
-## Dirac modes and the in-vacuum
+## Dirac Modes and the In-Vacuum
 
 After the rescaling $\widetilde\psi=\Omega\psi$, the massless Dirac equation is squared into Whittaker equations for the two spinor components. The Whittaker parameters are
 
@@ -61,7 +61,7 @@ The early-time limit $\tau\to-\infty$ selects $W_{\kappa,\gamma_s}$ modes with p
 
 The source calls this state Bunch-Davies and Hadamard. Because the external electric field breaks full de Sitter invariance, the operational definition is the early-time positive-frequency Hadamard in-state. Equation (2.42) prints only the particle annihilation condition; the antiparticle condition $b_{\mathrm{in},\mathbf k}|0\rangle=0$ is required as well.
 
-## Bare mode-sum current
+## Bare Mode-Sum Current
 
 The field operator is expanded in normalized in-modes and substituted into
 
@@ -73,7 +73,7 @@ After angular variables and a momentum cutoff $\Lambda$ are introduced, the mode
 
 The complete Appendix B residue chain was inspected but not independently reproduced.
 
-## Adiabatic current subtraction
+## Adiabatic Current Subtraction
 
 The two spinor components obey
 
@@ -113,7 +113,7 @@ The source then derives a component ratio from the first-order Dirac equation, n
 
 The source does not fully specify the adiabatic-order assignment of the electromagnetic background. More importantly, the printed component ratio and current sign do not reproduce the printed counterterm; this failure is recorded below.
 
-## Source expression for the renormalized current
+## Source Expression for the Renormalized Current
 
 Taking the real part of Eq. (4.15), the paper reports
 
@@ -139,7 +139,7 @@ $$
 
 Here $I_0$ and $I_1$ are modified Bessel functions and $\Psi$ is the digamma function. Equation (4.16) was transcribed from the rendered PDF. It is retained as the source's final formula, not as the endpoint of an independently verified subtraction derivation.
 
-## Weak- and strong-field limits
+## Weak- and Strong-Field Limits
 
 In the weak-field limit, Eq. (5.5) gives
 
@@ -161,7 +161,7 @@ $$\begin{align}
 
 This is the $E^{3/2}$ Schwinger scaling of a $2+1$-dimensional theory. At fixed physical electric field, the result still contains a secular $1/H$ timescale. It should not be read as a finite stationary-current limit obtained merely by setting $H\to0$.
 
-## Internal sign failure in the subtraction chain
+## Internal Sign Failure in the Subtraction Chain
 
 The printed Eqs. (4.10) and (4.12) imply
 
@@ -172,8 +172,7 @@ $$\begin{align}
 Using the stated normalization gives
 
 $$\begin{align}
-\frac{|U_1|^2-|U_2|^2}
-{|U_1|^2+|U_2|^2} =- \frac{\lambda+pr} {\sqrt{p^2+2\lambda pr+\lambda^2}}.
+\frac{|U_1|^2-|U_2|^2} {|U_1|^2+|U_2|^2} =- \frac{\lambda+pr} {\sqrt{p^2+2\lambda pr+\lambda^2}}.
 \end{align}$$
 
 Its ultraviolet angular integral is $-\pi\lambda/2$. These printed inputs therefore produce the counterterm
@@ -186,13 +185,13 @@ whereas Eq. (4.14) prints the positive sign. The bare divergence in Eq. (3.5) is
 
 Equation (5.3) also has an incompatible power of $H$: when rewritten from the corrected orthonormal-frame form of Eq. (5.4), it requires $H^{-3}$ rather than the printed $H^{-1}$. The abstract says the current is opposite to the external field, while Section 5.1.1 says it is along the field. A direction statement requires a single explicit convention for $e$, $E$, $J^1$, and $j^{\hat x}$.
 
-## Transfer to three-dimensional quantization problems
+## Transfer to Three-Dimensional Quantization Problems
 
 The Whittaker parameterization supplies a compact benchmark for spinor modes in $2+1$-dimensional curved backgrounds. The distinction between coordinate and orthonormal-frame currents should be carried into any mode-sum calculation. The local adiabatic counterterm can be compared with heat-kernel, Hadamard point-splitting, or resolvent methods.
 
 For AdS$_3$ applications, the spectral equation and special-function techniques may transfer after changing the background and boundary conditions. The expanding-patch in-vacuum and the final dS current do not follow by a direct substitution $H\to i/L$. Adding parity-even or Haldane masses would also expose Hall and Chern-Simons contributions relevant to topological matter in three dimensions.
 
-## Verification log
+## Verification Log
 
 ### Checked
 

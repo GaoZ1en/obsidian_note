@@ -17,13 +17,12 @@ tags: []
 
 Back to [[2026_07_09_overview]].
 
-# Chern-Simons gravity and the reduced boundary phase space
+# Chern-Simons Gravity and the Reduced Boundary Phase Space
 
 The source begins with AdS$_3$ Einstein gravity in Chern-Simons form:
 
 $$\begin{align}
-I_{\rm EH}=I_{\rm CS}[A^+]-I_{\rm CS}[A^-],\qquad
-A^\pm=\omega\pm\frac1\ell e.
+I_{\rm EH}=I_{\rm CS}[A^+]-I_{\rm CS}[A^-],\qquad A^\pm=\omega\pm\frac1\ell e.
 \end{align}$$
 
 The Chern-Simons level is $k=\ell/(4G)$. In radial gauge,
@@ -52,21 +51,14 @@ The source structure is:
 - Sections 11-12: Lax pair, inverse scattering, spectral data, soliton sector, and finite-cutoff deformation.
 - Discussion and outlook: spectral data as gravitational observables, non-compact boundaries, no-go theorem for radial Hamiltonian flow, and future extensions. The TeX source contains appendix-like draft material in commented regions; I do not treat that material as part of the official compiled source.
 
-# Surface charges and affine current algebra
+# Surface Charges and Affine Current Algebra
 
 The reduced symplectic potential and two-form are
 
 $$\begin{align}
-\boldsymbol{\Theta}
-&=-\int_{\cal B}
-\left(\mu_+\delta{\cal J}_+ +\mu_-\delta{\cal J}_-\right)\,dt\,dx\\
-&\quad
-+\frac12\delta\int_{\cal B}
-\left(\mu_+{\cal J}_+ +\mu_-{\cal J}_-+2L^r_{\rm bdy}\right)\,dt\,dx,\\
-\boldsymbol{\Omega}
-&=-\int_{\cal B}
-\left(\delta\mu_+\curlywedge\delta{\cal J}_+
-+\delta\mu_-\curlywedge\delta{\cal J}_-\right)\,dt\,dx .
+\boldsymbol{\Theta} &=-\int_{\cal B} \left(\mu_+\delta{\cal J}_+ +\mu_-\delta{\cal J}_-\right)\,dt\,dx\\
+&\quad +\frac12\delta\int_{\cal B} \left(\mu_+{\cal J}_+ +\mu_-{\cal J}_-+2L^r_{\rm bdy}\right)\,dt\,dx,\\
+\boldsymbol{\Omega} &=-\int_{\cal B} \left(\delta\mu_+\curlywedge\delta{\cal J}_+ +\delta\mu_-\curlywedge\delta{\cal J}_-\right)\,dt\,dx .
 \end{align}$$
 
 The exact variation in $\boldsymbol{\Theta}$ drops out of $\boldsymbol{\Omega}$, leaving two chiral canonical sectors.
@@ -80,57 +72,40 @@ $$\begin{align}
 The charge balance law is
 
 $$\begin{align}
-\delta Q_{\rm CS}(\epsilon)\big|_{t\to+\infty}
-=
-\delta Q_{\rm CS}(\epsilon)\big|_{t\to-\infty}
-+\boldsymbol{\Omega}_{\rm CS}[\delta A,\delta_\epsilon A].
+\delta Q_{\rm CS}(\epsilon)\big|_{t\to+\infty} = \delta Q_{\rm CS}(\epsilon)\big|_{t\to-\infty} +\boldsymbol{\Omega}_{\rm CS}[\delta A,\delta_\epsilon A].
 \end{align}$$
 
 In the reduced phase space this becomes
 
 $$\begin{align}
-\delta Q(\epsilon)=\int_\Sigma dx\,
-\left(\epsilon_+\delta{\cal J}_+ +\epsilon_-\delta{\cal J}_-\right),
+\delta Q(\epsilon)=\int_\Sigma dx\, \left(\epsilon_+\delta{\cal J}_+ +\epsilon_-\delta{\cal J}_-\right),
 \end{align}$$
 
 and, for field-independent parameters,
 
 $$\begin{align}
-Q(\epsilon)=\int_\Sigma dx\,
-\left(\epsilon_+{\cal J}_+ +\epsilon_-{\cal J}_-\right).
+Q(\epsilon)=\int_\Sigma dx\, \left(\epsilon_+{\cal J}_+ +\epsilon_-{\cal J}_-\right).
 \end{align}$$
 
 The equal-time current algebra is
 
 $$\begin{align}
-\{{\cal J}_\pm(t,x),{\cal J}_\pm(t,y)\}
-&=\pm\frac{k}{\pi}\partial_x\delta(x-y),\\
+\{{\cal J}_\pm(t,x),{\cal J}_\pm(t,y)\} &=\pm\frac{k}{\pi}\partial_x\delta(x-y),\\
 \{{\cal J}_+(t,x),{\cal J}_-(t,y)\}&=0.
 \end{align}$$
 
 Equivalently, for functionals $F,G$,
 
 $$\begin{align}
-\{F,G\}=\frac{k}{\pi}\int_\Sigma dx
-\left[
-\frac{\delta F}{\delta{\cal J}_+}\partial_x\frac{\delta G}{\delta{\cal J}_+}
--
-\frac{\delta F}{\delta{\cal J}_-}\partial_x\frac{\delta G}{\delta{\cal J}_-}
-\right].
+\{F,G\}=\frac{k}{\pi}\int_\Sigma dx \left[ \frac{\delta F}{\delta{\cal J}_+}\partial_x\frac{\delta G}{\delta{\cal J}_+} - \frac{\delta F}{\delta{\cal J}_-}\partial_x\frac{\delta G}{\delta{\cal J}_-} \right].
 \end{align}$$
 
-# Brown-York fluid variables and finite-cutoff radial flow
+# Brown-York Fluid Variables and Finite-Cutoff Radial Flow
 
 The exact fluid/gravity dictionary gives
 
 $$\begin{align}
-\rho
-=\frac{\pi}{2k}
-\left[
-\frac{r^4+\ell^4}{r^4-\ell^4}
-\left({\cal J}_+^2+{\cal J}_-^2\right)
-+\frac{4\ell^2 r^2}{r^4-\ell^4}{\cal J}_+{\cal J}_-
-\right],
+\rho =\frac{\pi}{2k} \left[ \frac{r^4+\ell^4}{r^4-\ell^4} \left({\cal J}_+^2+{\cal J}_-^2\right) +\frac{4\ell^2 r^2}{r^4-\ell^4}{\cal J}_+{\cal J}_- \right],
 \end{align}$$
 
 and
@@ -150,9 +125,7 @@ so the effective Brown-York stress tensor is traceless in the chosen frame.
 Eliminating ${\cal J}_\pm$ gives the closed radial flow
 
 $$\begin{align}
-\partial_r\rho
-=-\frac{4\ell^2 r}{r^4-\ell^4}\sqrt{\rho^2-J^2},
-\qquad \partial_r J=0.
+\partial_r\rho =-\frac{4\ell^2 r}{r^4-\ell^4}\sqrt{\rho^2-J^2}, \qquad \partial_r J=0.
 \end{align}$$
 
 The determinant interpretation is
@@ -164,13 +137,12 @@ $$\begin{align}
 With $\varepsilon=\ell^2/r^2$ this becomes
 
 $$\begin{align}
-\partial_\varepsilon T_{uu}
-=\frac{2}{1-\varepsilon^4}\sqrt{\det T_{\rm frame}}.
+\partial_\varepsilon T_{uu} =\frac{2}{1-\varepsilon^4}\sqrt{\det T_{\rm frame}}.
 \end{align}$$
 
 The paper is careful that this is an exact local radial-flow statement for quasi-local observables, not by itself a full proof of equality with finite-volume $T\bar T$ spectral flow.
 
-# Symplectic flux, Hamiltonian boundary conditions, and integrability
+# Symplectic Flux, Hamiltonian Boundary Conditions, and Integrability
 
 The consistency condition for a closed Hamiltonian boundary system is vanishing symplectic flux,
 
@@ -200,13 +172,12 @@ The integrable hierarchy appears when $\mu_\pm$ are chosen as Gel'fand-Dikii-typ
 
 The paper's no-go result is conceptually important: although the boundary time evolution is Hamiltonian, the radial flow at finite cutoff is not generated by a local Hamiltonian functional with respect to the same canonical Poisson structure. Thus finite-cutoff solvability and canonical Hamiltonian flow are separated.
 
-# Bi-Hamiltonian hierarchy and conserved boundary Hamiltonians
+# Bi-Hamiltonian Hierarchy and Conserved Boundary Hamiltonians
 
 The integrable part of the paper is built in each chiral sector from two compatible Poisson operators. In a normalization adapted to one sector, they are
 
 $$\begin{align}
-P=\partial_x,\qquad
-D=\partial_x{\cal J}+2{\cal J}\partial_x-\frac{c}{24\pi}\partial_x^3.
+P=\partial_x,\qquad D=\partial_x{\cal J}+2{\cal J}\partial_x-\frac{c}{24\pi}\partial_x^3.
 \end{align}$$
 
 The Gel'fand-Dikii densities $R_I[{\cal J}]$ are generated by the Lenard recursion
@@ -221,16 +192,13 @@ $$\begin{align}
 R_0&=1,\\
 R_1&={\cal J},\\
 R_2&=\frac32{\cal J}^2-\frac{c}{24\pi}{\cal J}'',\\
-R_3&=\frac52{\cal J}^3-\frac{5c}{16\pi}{\cal J}{\cal J}''
--\frac{5c}{32\pi}({\cal J}')^2
-+\frac{c^2}{384\pi^2}{\cal J}^{(4)} .
+R_3&=\frac52{\cal J}^3-\frac{5c}{16\pi}{\cal J}{\cal J}'' -\frac{5c}{32\pi}({\cal J}')^2 +\frac{c^2}{384\pi^2}{\cal J}^{(4)} .
 \end{align}$$
 
 The hierarchy Hamiltonians are
 
 $$\begin{align}
-H_I=\int dx\,{\cal H}_I,\qquad
-\frac{\delta H_I}{\delta{\cal J}}=R_I.
+H_I=\int dx\,{\cal H}_I,\qquad \frac{\delta H_I}{\delta{\cal J}}=R_I.
 \end{align}$$
 
 Choosing
@@ -247,22 +215,18 @@ $$\begin{align}
 
 with the two brackets generated by $P$ and $D$. The important technical separation is that $P$ is the affine current bracket inherited directly from the Chern-Simons symplectic form, while $D$ is the second Hamiltonian structure of the boundary integrable system. The latter is not an additional bulk symplectic form; it is an integrability structure on the allowed boundary Hamiltonians.
 
-# Lax problem and inverse-scattering data as gravitational observables
+# Lax Problem and Inverse-Scattering Data as Gravitational Observables
 
 The Lax formulation uses the Schrödinger operator
 
 $$\begin{align}
-S_\pm=-\partial_x^2+\frac{2}{\nu_\pm}{\cal J}_\pm,
-\qquad
-S_\pm\psi_\pm=\lambda_\pm^2\psi_\pm .
+S_\pm=-\partial_x^2+\frac{2}{\nu_\pm}{\cal J}_\pm, \qquad S_\pm\psi_\pm=\lambda_\pm^2\psi_\pm .
 \end{align}$$
 
 In Riccati form, with $\Gamma_\pm=\partial_x\log\psi_\pm$,
 
 $$\begin{align}
-\partial_x\Gamma_\pm+\Gamma_\pm^2
--\frac{2}{\nu_\pm}{\cal J}_\pm
-+\lambda_\pm^2=0.
+\partial_x\Gamma_\pm+\Gamma_\pm^2 -\frac{2}{\nu_\pm}{\cal J}_\pm +\lambda_\pm^2=0.
 \end{align}$$
 
 The inverse-scattering data are therefore attached to the boundary current itself. On a non-compact boundary the reflection coefficient, bound-state poles, norming constants, and soliton parameters are not merely a solution-generating trick; they parameterize a class of boundary graviton configurations.
@@ -270,8 +234,7 @@ The inverse-scattering data are therefore attached to the boundary current itsel
 For a one-soliton sector the current profile can be written as
 
 $$\begin{align}
-{\cal J}_\pm(\xi_\pm)
-=-\nu_\pm\alpha_\pm^2\operatorname{sech}^2(\alpha_\pm\xi_\pm),
+{\cal J}_\pm(\xi_\pm) =-\nu_\pm\alpha_\pm^2\operatorname{sech}^2(\alpha_\pm\xi_\pm),
 \end{align}$$
 
 with $\xi_\pm$ the chiral traveling coordinate fixed by the chosen hierarchy flow. The corresponding potential variable satisfies
@@ -283,27 +246,17 @@ $$\begin{align}
 and the source gives a representative
 
 $$\begin{align}
-\Phi_\pm
-=\pm\frac{2\pi\nu_\pm\alpha_\pm}{k}
-\frac{1}{1+e^{\pm2\alpha_\pm\xi_\pm}}
-+\varphi_\pm(t).
+\Phi_\pm =\pm\frac{2\pi\nu_\pm\alpha_\pm}{k} \frac{1}{1+e^{\pm2\alpha_\pm\xi_\pm}} +\varphi_\pm(t).
 \end{align}$$
 
 This is the practical gravitational interpretation: soliton data are encoded in the boundary current, then lifted through the radial gauge map to metric data and Brown-York observables. The non-compactness assumption is essential because the spectral problem is the line-scattering problem, not a compact-mode Fourier diagonalization.
 
-# Finite-cutoff observables and the radial-flow no-go
+# Finite-Cutoff Observables and the Radial-Flow No-Go
 
 At finite cutoff, the Brown-York energy density contains both chiral squares and a mixed product:
 
 $$\begin{align}
-\rho(r)
-=\frac{\pi}{2k}
-\left[
-\frac{r^4+\ell^4}{r^4-\ell^4}
-({\cal J}_+^2+{\cal J}_-^2)
-+\frac{4\ell^2r^2}{r^4-\ell^4}
-{\cal J}_+{\cal J}_-
-\right].
+\rho(r) =\frac{\pi}{2k} \left[ \frac{r^4+\ell^4}{r^4-\ell^4} ({\cal J}_+^2+{\cal J}_-^2) +\frac{4\ell^2r^2}{r^4-\ell^4} {\cal J}_+{\cal J}_- \right].
 \end{align}$$
 
 The mixed ${\cal J}_+{\cal J}_-$ term is the finite-cutoff interaction in the quasi-local observable. It should not be read as an interaction in the chiral boundary Hamiltonian: the Chern-Simons phase-space currents are still the same $r$-independent variables, and the radial dependence enters through the map to Brown-York data.
@@ -313,8 +266,7 @@ The no-go theorem can be read as a locality statement. One might ask whether the
 This distinction is important for using the paper in finite-boundary work. The flow
 
 $$\begin{align}
-\partial_r\rho
-=-\frac{4\ell^2 r}{r^4-\ell^4}\sqrt{\rho^2-J^2}
+\partial_r\rho =-\frac{4\ell^2 r}{r^4-\ell^4}\sqrt{\rho^2-J^2}
 \end{align}$$
 
 is a radial reconstruction/deformation equation. It does not replace the time Hamiltonian equations
@@ -325,7 +277,7 @@ $$\begin{align}
 
 The paper's conceptual payload is exactly the coexistence of these two structures.
 
-# Local translation for current projects
+# Local Translation for Current Projects
 
 - CPS dictionary: the central object is the finite-boundary symplectic form and its surface-charge variation. This is directly parallel to finite-boundary CPS charge work, with ${\cal J}_\pm$ as edge/current data and $\mu_\pm$ as boundary sources.
 - Charge dictionary: $Q(\epsilon)$ is integrable for field-independent $\epsilon$, and charge differences are governed by symplectic flux. This is a compact model for balance-law bookkeeping on a causal boundary.
@@ -335,26 +287,20 @@ The paper's conceptual payload is exactly the coexistence of these two structure
 - Spectral dictionary: scattering data of the Schrödinger operator are boundary-graviton observables in the non-compact setup. They are not optional decorative integrability variables.
 - Project extension: use this paper when comparing AdS$_3$ finite-boundary charges, $T\bar T$-type radial flow, and integrable boundary conditions. Its clean separation between time Hamiltonian flow and radial non-Hamiltonian flow is likely reusable.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
 - Mathematica checked the algebraic factorization behind the finite-cutoff flow. From the source formulas for $\rho$ and $J$,
 
 $$\begin{align}
-(\rho^2-J^2)\frac{4k^2}{\pi^2}(r^4-\ell^4)^2
-=4(\ell^2{\cal J}_+ +r^2{\cal J}_-)^2(\ell^2{\cal J}_-+r^2{\cal J}_+)^2.
+(\rho^2-J^2)\frac{4k^2}{\pi^2}(r^4-\ell^4)^2 =4(\ell^2{\cal J}_+ +r^2{\cal J}_-)^2(\ell^2{\cal J}_-+r^2{\cal J}_+)^2.
 \end{align}$$
 
 - Mathematica also checked
 
 $$\begin{align}
-\partial_r\rho\,
-\frac{k}{\pi}
-\frac{(r^4-\ell^4)^2}{2\ell^2 r}
-=
--2(\ell^2{\cal J}_+ +r^2{\cal J}_-)
-(\ell^2{\cal J}_-+r^2{\cal J}_+).
+\partial_r\rho\, \frac{k}{\pi} \frac{(r^4-\ell^4)^2}{2\ell^2 r} = -2(\ell^2{\cal J}_+ +r^2{\cal J}_-) (\ell^2{\cal J}_-+r^2{\cal J}_+).
 \end{align}$$
 
 Together these reproduce the paper's radial-flow equation after choosing the source's principal square-root branch in the physical region.

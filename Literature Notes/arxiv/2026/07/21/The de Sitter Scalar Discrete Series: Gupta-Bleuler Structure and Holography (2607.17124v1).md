@@ -24,14 +24,14 @@ $$\begin{align}
 
 together with an explicit boundary mode transform. The chain is useful for the vault's quotient-first treatment of gauge directions, boundary data, and indefinite one-particle structures. It must, however, be separated from three claims that do not follow from the displayed formulas: the second quotient is not an irreducible UIR, its inherited KG form is not negative definite, and reflection positivity is asserted without an Osterwalder-Schrader construction.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential chain:** Secs. II C, III A--C, IV A--B, and V. These give the scalar Casimir equation, the two radial branches, the KG matrix, the Gupta-Bleuler quotient, the boundary kernel, and the physical intertwiner.
 - **Technical reference:** Appendix B for the hypergeometric branches and their asymptotics, Appendix C for every KG normalization, and Appendix D for the noncompact-generator leakage between sectors.
 - **Background:** Sec. II A--B reviews ambient dS representation theory. Appendix A collects special-function and hyperspherical-harmonic identities.
 - **Read with corrections:** Sec. III C's claim about (V_{\mathrm{tot}}/V), Sec. IV B's low-(L) boundary coefficient, and Appendix D's top supplementary-level generator formula cannot be used as printed. The verified physical quotient (V/V_g) and the (L\ge p) Fourier kernel do not depend on those errors.
 
-# Source structure and dependency map
+# Source Structure and Dependency Map
 
 The TeX contains four numbered appendix sections, although the introduction says “five appendices.” The actual dependency tree is:
 
@@ -46,7 +46,7 @@ The TeX contains four numbered appendix sections, although the introduction says
 9. **Appendix C: KG Products and Mode Normalization.** Abel/Wronskian reduction, positive/negative high-(L) norms, low-(L) cross-pairing, and normalization constants.
 10. **Appendix D: dS Action and Fourier Covariance.** Noncompact generators, harmonic recurrences, radial recurrences, leakage at (L=p), actions on (V'), (V_g), (V_s), (H_{p-1}), and (V_{p-1}), followed by a basis-level intertwining calculation.
 
-# Conventions and objects
+# Conventions and Objects
 
 | Paper object                  | Definition and convention                                                           | Local reading                                                                                                        |        |                                           |
 | ----------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------ | ----------------------------------------- |
@@ -69,7 +69,7 @@ The TeX contains four numbered appendix sections, although the introduction says
 
 The paper calls the (L<p) sector “gauge,” but no local gauge transformation of a scalar action is supplied. Operationally, “gauge” means the radical of the KG form after restriction to (V), together with invariance under the dS algebra. That quotient meaning is the one compatible with the vault's CPS vocabulary.
 
-# From the dS Casimir to the two radial branches
+# From the dS Casimir to the Two Radial Branches
 
 For Dixmier labels ((p,q)), the scalar quadratic Casimir eigenvalue is
 
@@ -113,10 +113,9 @@ $$\begin{align}
 \lambda_L^{(1)}\sim C_L^{(1;\pm)}(\cos\rho)^{1-p}, \qquad \lambda_L^{(2)}=O((\cos\rho)^{p+2}).
 \end{align}$$
 
-This asymptotic split drives the whole construction: the first branch survives after multiplying by ((\cos\rho)^{p-1}), while the second disappears. A global subtlety is already visible here. The paper states that the displayed representation of (lambda^{(2)}) is valid only for (cos\rho<1/2), yet later evaluates KG data at (
-ho=0). The local ODE and near-boundary continuation can be checked, but the distributional analytic-continuation sheet across the hypergeometric cut is not specified well enough to reconstruct the global branch independently.
+This asymptotic split drives the whole construction: the first branch survives after multiplying by ((\cos\rho)^{p-1}), while the second disappears. A global subtlety is already visible here. The paper states that the displayed representation of (lambda^{(2)}) is valid only for (cos\rho<1/2), yet later evaluates KG data at ( ho=0). The local ODE and near-boundary continuation can be checked, but the distributional analytic-continuation sheet across the hypergeometric cut is not specified well enough to reconstruct the global branch independently.
 
-# The KG matrix and the Krein completion
+# The KG Matrix and the Krein Completion
 
 Set
 
@@ -172,7 +171,7 @@ V_{\rm tot}=H_+\oplus H_-,
 
 where (H_+) contains (V') and the positive low-(L) combinations, while (H_-) contains their conjugates. This is a one-particle indefinite completion. It is not the covariant phase space of a specified action, and the paper does not discuss reality conditions, a complex structure, or a Fock completion.
 
-# The invariant filtration and the physical quotient
+# The Invariant Filtration and the Physical Quotient
 
 The noncompact dS generators lower an (L=p) true mode into the low-(L) first branch. Therefore
 
@@ -209,7 +208,7 @@ $$\begin{align}
 
 The source labels this finite nonunitary representation by ((0,p-1)). In Sage's standard (B_2) Dynkin order the same dimensions occur for ((p-1,0)); this convention reversal should be made explicit before comparing highest weights.
 
-## Why the second claimed quotient is not another UIR
+## Why the Second Claimed Quotient Is Not Another UIR
 
 The paper also writes
 
@@ -233,7 +232,7 @@ W/V\simeq\overline{V'}, \qquad V_{\rm tot}/W\simeq V_s.
 
 Moreover, the original KG form cannot descend to (V_{\rm tot}/V): a form descends through a quotient only if the quotienting subspace lies in its radical, but (V) contains positive-norm vectors. The natural displayed representatives (overline{V'}\oplus V_s) also include null supplementary modes. Thus neither “irreducible” nor “negative-definite inherited KG quotient” is valid as printed. None of this alters (V/V_g).
 
-# Boundary kernel, radical, and mode limits
+# Boundary Kernel, Radical, and Mode Limits
 
 On either conformal boundary the underlying vector space is decomposed as
 
@@ -275,7 +274,7 @@ $$\begin{align}
 
 The supplementary branch maps to zero, and the conjugate high-(L) mode maps to the same boundary carrier with (m\mapsto-m) and an (L,p,m)-dependent phase. Thus the bulk negative copy has no independent boundary image.
 
-## Corrected low-harmonic boundary coefficient
+## Corrected Low-Harmonic Boundary Coefficient
 
 Holding the paper's displayed bulk normalizations fixed, direct multiplication of the normalization, asymptotic coefficient, and rescaling factors gives
 
@@ -302,7 +301,7 @@ H_{p-1}\longrightarrow H_{p-1}\oplus V_{p-1}, \qquad V_{p-1}\longrightarrow V_{p
 
 Accordingly the representation should again be assigned to the quotient, not to the non-invariant complement (H_{p-1}) without qualification.
 
-# The Fourier-type physical intertwiner
+# The Fourier-Type Physical Intertwiner
 
 The bulk-boundary kernel retains only physical harmonics:
 
@@ -344,7 +343,7 @@ after choosing (V') and (H_{p-1}) as representatives and supplying a topology in
 
 The abstract's phrase “preserving reflection positivity” is stronger than the construction. A positive invariant boundary norm is displayed, but there is no reflection (Theta), no positive-time/hemisphere subspace, and no inequality (langle\Theta f,f\rangle\ge0). What is actually established at source level is a positive quotient kernel norm and a modewise isometry, not Osterwalder-Schrader reflection positivity.
 
-# Antipodal relation
+# Antipodal Relation
 
 The bulk modes obey a relation of the form
 
@@ -354,7 +353,7 @@ $$\begin{align}
 
 while (Y_{Llm}(-u)=(-1)^LY_{Llm}(u)). This pairs the (mathcal I^+) and (mathcal I^-) mode realizations and explains why the two boundary copies carry the same data. The phase bookkeeping is mode dependent. It is harmless on a fixed harmonic basis but should be regarded as a spectral multiplier, with its domain stated, before treating (mathcal L_\pm) as a single operator on a completed space.
 
-# Translation into the vault's boundary and CPS language
+# Translation into the Vault's Boundary and CPS Language
 
 | Paper statement | Vault translation | Qualification |
 |---|---|---|
@@ -370,7 +369,7 @@ while (Y_{Llm}(-u)=(-1)^LY_{Llm}(u)). This pairs the (mathcal I^+) and (mathcal 
 
 For the current AdS/CPS work, the most reusable lesson is the order of operations: first identify the invariant subspace on which the pairing becomes degenerate, then quotient its radical, and only afterwards select positive representatives and a boundary transform. Attempting to identify a non-invariant complement directly with the representation is precisely what creates several of the paper's misleading sentences.
 
-# Global derivation map
+# Global Derivation Map
 
 1. Insert (q=0) in the scalar Casimir eigenvalue to obtain the wave operator (Q_0+(p-1)(p+2)).
 2. Use global (S^3) harmonics to reduce the field equation to the radial ODE.
@@ -384,7 +383,7 @@ For the current AdS/CPS work, the most reusable lesson is the order of operation
 10. Sum matched orthonormal modes to form (K). KG and boundary coefficient extraction give inverse isometries on the chosen physical representatives.
 11. Do **not** infer that (V_{\rm tot}/V) is another irreducible negative UIR, or that a positive kernel automatically supplies OS reflection positivity.
 
-# Concrete project extensions
+# Concrete Project Extensions
 
 1. **Quotient-first benchmark for linearized gravity.** Recast a familiar dS or AdS gauge sector as (V_g\subset V) using the actual CPS form and compare its radical quotient to the scalar construction. The scalar note supplies the finite-dimensional leakage pattern; the gravity calculation must supply the action-level gauge symmetry and boundary symplectic flux.
 2. **Boundary-kernel spectral audit.** Diagonalize the logarithmic kernel on (S^3) directly and recover the coefficient (Gamma(L-p+1)/\Gamma(L+p+2)), including the (L<p) radical. This would turn an imported Takahashi theorem into a locally reusable spectral calculation.
@@ -392,7 +391,7 @@ For the current AdS/CPS work, the most reusable lesson is the order of operation
 4. **Topology before holography.** Specify Sobolev/weighted sequence completions on which (K), (mathcal F), (mathcal G), and the dS generators are continuous. This is the missing step between a mode ledger and a genuine unitary equivalence.
 5. **Separate kernel positivity from OS positivity.** If reflection positivity matters, choose an involution and hemisphere subspace and test the OS quadratic form explicitly; the present paper does not provide that argument.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

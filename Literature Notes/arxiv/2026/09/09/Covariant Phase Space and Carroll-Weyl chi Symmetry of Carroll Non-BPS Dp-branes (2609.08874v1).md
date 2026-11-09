@@ -12,19 +12,19 @@ summary: "A useful constrained-Hamiltonian no-go analysis; its 'covariant phase 
 tags: []
 ---
 
-# Why this is high priority
+# Why This Is High Priority
 
 Reason codes: `T1-symmetry`, `T1-boundary`, `T2-celestial-carrollian`, `T2-model`.
 
 The paper explicitly compares a symplectic transformation with a genuine gauge degeneracy. It asks whether a Carroll--Weyl scaling that preserves the canonical two-form also preserves the full constraint surface and supplies an additional first-class generator. Its negative answer is directly useful for guarding the vault's distinction between canonical symmetry, constraint-compatible symmetry, and quotient gauge redundancy.
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** on a spatial slice with no boundary contribution, with field-independent smearings and on the generic regular stratum where the listed constraints are independent, the canonical Carroll contraction, weak/strong constraint-closure statements, degree counts, and χ no-go follow as stated.
 
 The statement should be rewritten as: **the paper analyzes the canonical phase space on a fixed spatial slice, not a spacetime-covariant phase space derived from a Lagrangian presymplectic current.** No boundary conditions or generator improvements are supplied. Therefore its charge and algebra claims are not established for regional slices with boundary or nontrivial edge modes.
 
-# Complete source map
+# Complete Source Map
 
 1. **Parent theory:** gives the non-BPS DBI action, canonical pairs, constraints, canonical one-form, and two-form.
 2. **Carroll limit:** defines electric- and magnetic-like scalings and shows pairwise invariance of the canonical one-form.
@@ -37,152 +37,135 @@ The statement should be rewritten as: **the paper analyzes the canonical phase s
 9. **Comparison and conclusion:** contrasts the D-brane no-go with null strings and leaves boundary phase spaces and quantization open.
 10. **Appendix:** derives the Gauss correction in the transformation of $\pi^i$.
 
-# Parent and contracted phase spaces
+# Parent and Contracted Phase Spaces
 
 The parent canonical one-form is
 
-$$
-\widetilde\Theta=\int_\Sigma
-\left(\widetilde p_M\delta\widetilde x^M
-+\widetilde p_T\delta\widetilde T
-+\widetilde\pi^i\delta\widetilde A_i\right).
-$$
+$$\begin{align}
+\widetilde\Theta=\int_\Sigma \left(\widetilde p_M\delta\widetilde x^M +\widetilde p_T\delta\widetilde T +\widetilde\pi^i\delta\widetilde A_i\right).
+\end{align}$$
 
 Both Carroll scalings rescale each canonical pair inversely, so
 
-$$
-\Theta^{\mathrm{Car}}=\int_\Sigma
-\left(P_\mu\delta X^\mu+P_I\delta X^I+p_T\delta T+\pi^i\delta A_i\right)
-$$
+$$\begin{align}
+\Theta^{\mathrm{Car}}=\int_\Sigma \left(P_\mu\delta X^\mu+P_I\delta X^I+p_T\delta T+\pi^i\delta A_i\right)
+\end{align}$$
 
 is unchanged. Hence
 
-$$
-\Omega=\delta\Theta^{\mathrm{Car}}
-=\int_\Sigma\left(
-\delta P_\mu\wedge\delta X^\mu
-+\delta P_I\wedge\delta X^I
-+\delta p_T\wedge\delta T
-+\delta\pi^i\wedge\delta A_i\right)
-$$
+$$\begin{align}
+\Omega=\delta\Theta^{\mathrm{Car}} =\int_\Sigma\left( \delta P_\mu\wedge\delta X^\mu +\delta P_I\wedge\delta X^I +\delta p_T\wedge\delta T +\delta\pi^i\wedge\delta A_i\right)
+\end{align}$$
 
 is the same in the two leading sectors. On the unconstrained canonical phase space this form is symplectic. It becomes presymplectic only after pullback to the first-class constraint surface.
 
-# Electric and magnetic constraints
+# Electric and Magnetic Constraints
 
 The common Gauss and spatial-diffeomorphism densities are
 
-$$
+$$\begin{align}
 \mathcal G=\partial_i\pi^i,
-$$
+\end{align}$$
 
-$$
-\mathcal H_i=P_\mu\partial_iX^\mu+P_I\partial_iX^I
-+p_T\partial_iT+F_{ij}\pi^j.
-$$
+$$\begin{align}
+\mathcal H_i=P_\mu\partial_iX^\mu+P_I\partial_iX^I +p_T\partial_iT+F_{ij}\pi^j.
+\end{align}$$
 
 The electric Hamiltonian density is
 
-$$
-h_E=P_\mu\eta^{\mu\nu}P_\nu
-+\pi^ia_{ij}\pi^j
-+\tau_p^2V(T)^2\det a,
-$$
+$$\begin{align}
+h_E=P_\mu\eta^{\mu\nu}P_\nu +\pi^ia_{ij}\pi^j +\tau_p^2V(T)^2\det a,
+\end{align}$$
 
-$$
+$$\begin{align}
 a_{ij}=\partial_iX^I\partial_jX^I+\partial_iT\partial_jT.
-$$
+\end{align}$$
 
 The magnetic density is
 
-$$
-h_M=P_\mu\eta^{\mu\nu}P_\nu
-+\tau_p^2V(T)^2\det(a+F).
-$$
+$$\begin{align}
+h_M=P_\mu\eta^{\mu\nu}P_\nu +\tau_p^2V(T)^2\det(a+F).
+\end{align}$$
 
 Neither contains $P_I^2$ or $p_T^2$, so $X^I$ and $T$ are frozen under the leading Hamiltonian flow even though they remain coordinates on the reduced phase space.
 
-# Constraint algebra
+# Constraint Algebra
 
 The gauge-covariant diffeomorphism generator acts on the electric density as
 
-$$
-\{h_E,H_i[\xi]\}
-=\mathcal L_\xi h_E-2\xi^i\mathcal G\,a_{ij}\pi^j,
-$$
+$$\begin{align}
+\{h_E,H_i[\xi]\} =\mathcal L_\xi h_E-2\xi^i\mathcal G\,a_{ij}\pi^j,
+\end{align}$$
 
 so
 
-$$
-\{H_i[\xi],H_E[\lambda]\}
-\approx H_E[\mathcal L_\xi\lambda].
-$$
+$$\begin{align}
+\{H_i[\xi],H_E[\lambda]\} \approx H_E[\mathcal L_\xi\lambda].
+\end{align}$$
 
 For the magnetic density the analogous bracket closes strongly. In both sectors,
 
-$$
-\{H_i[\xi],H_i[\eta]\}
-=H_i[\mathcal L_\xi\eta]
--\frac12\int_\Sigma(\xi^i\eta^j-\eta^i\xi^j)F_{ij}\mathcal G,
-$$
+$$\begin{align}
+\{H_i[\xi],H_i[\eta]\} =H_i[\mathcal L_\xi\eta] -\frac12\int_\Sigma(\xi^i\eta^j-\eta^i\xi^j)F_{ij}\mathcal G,
+\end{align}$$
 
 so spatial diffeomorphisms close only on the Gauss surface unless the generator is improved by a Gauss term.
 
 The self-brackets $\{H_E,H_E\}$ and $\{H_M,H_M\}$ vanish strongly because each density separates conjugate dependencies: $P_\mu$ appears without $X^\mu$, while $X^I,T,A_i$ appear without $P_I,p_T,\pi^i$ in the magnetic case, and the electric $A$ dependence is absent while $\pi$ appears. The paper's sentence that $h_E$ “does not depend on $X^I,T$” is false; Eqs. (2.17) and (3.11) show that it does. The zero self-bracket survives for the more precise conjugate-pair reason.
 
-# Degree counts and rank
+# Degree Counts and Rank
 
 There are
 
-$$
+$$\begin{align}
 N_{\mathrm{pairs}}=(p+1)+(D-p-1)+1+p=D+p+1
-$$
+\end{align}$$
 
 canonical pairs and $p+2$ first-class constraints. On a regular irreducible stratum,
 
-$$
+$$\begin{align}
 N_{\mathrm{phys}}=N_{\mathrm{pairs}}-(p+2)=D-1.
-$$
+\end{align}$$
 
 The tachyon vacuum is not reached by an extra first-class constraint. The paper imposes
 
-$$
+$$\begin{align}
 T-T_{\min}=0,\qquad p_T=0,
-$$
+\end{align}$$
 
 as a second-class pair, reducing the count to $D-2$. This is an effective sector selection and additionally assumes $V(T_{\min})=V'(T_{\min})=0$ so that it is dynamically consistent.
 
 Since $a_{ij}$ is the Gram matrix of $D-p$ gradients in the generic sector, full rank $p$ requires
 
-$$
+$$\begin{align}
 D\ge2p.
-$$
+\end{align}$$
 
 At fixed tachyon vacuum the tachyon gradient disappears, giving
 
-$$
+$$\begin{align}
 D\ge2p+1.
-$$
+\end{align}$$
 
 These are conditions for the nondegenerate electric stratum, not universal restrictions on every Carroll D-brane configuration. The magnetic matrix $b=a+F$ may remain invertible when $a$ is singular.
 
-# χ transformation and charge
+# χ Transformation and Charge
 
 The proposed transformation scales
 
-$$
+$$\begin{align}
 \delta_\chi(X^I,T,A_i)=\chi(X^I,T,A_i),
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \delta_\chi(P_I,p_T,\pi^i)=-\chi(P_I,p_T,\pi^i),
-$$
+\end{align}$$
 
 while leaving longitudinal pairs fixed. For field-independent $\chi$, it preserves $\Omega$ and is generated on the unconstrained phase space by
 
-$$
+$$\begin{align}
 Q_\chi=\int_\Sigma\chi(P_IX^I+p_TT+\pi^iA_i).
-$$
+\end{align}$$
 
 Preserving $\Omega$ is not sufficient for gauge symmetry. A first-class generator must also preserve the constraint ideal and become a degeneracy direction on the constrained surface.
 
@@ -190,68 +173,57 @@ Preserving $\Omega$ is not sufficient for gauge symmetry. A first-class generato
 
 For local $\chi$,
 
-$$
-\{G[\alpha],Q_\chi\}
-\approx-\int_\Sigma\alpha(\partial_i\chi)\pi^i,
-$$
+$$\begin{align}
+\{G[\alpha],Q_\chi\} \approx-\int_\Sigma\alpha(\partial_i\chi)\pi^i,
+\end{align}$$
 
 and the diffeomorphism bracket contains additional $\partial_i\chi$ terms. Thus local χ does not preserve the Gauss/diffeomorphism constraint surface generically.
 
 For global χ, those derivative obstructions vanish, but the electric potential gives
 
-$$
-\{H_E[\lambda],Q_\chi\}
-=\int_\Sigma\lambda\tau_p^2\det a\,
-2\chi\left(pV^2+TVV'\right),
-$$
+$$\begin{align}
+\{H_E[\lambda],Q_\chi\} =\int_\Sigma\lambda\tau_p^2\det a\, 2\chi\left(pV^2+TVV'\right),
+\end{align}$$
 
 which is not weakly zero for a generic potential.
 
 In the magnetic sector,
 
-$$
-\{H_M[\lambda],Q_\chi\}
-=\int_\Sigma\lambda\tau_p^2\chi\left[
-2TVV'\det b+V^2\det b\,b^{ji}(2a_{ij}+F_{ij})
-\right].
-$$
+$$\begin{align}
+\{H_M[\lambda],Q_\chi\} =\int_\Sigma\lambda\tau_p^2\chi\left[ 2TVV'\det b+V^2\det b\,b^{ji}(2a_{ij}+F_{ij}) \right].
+\end{align}$$
 
 The paper exhibits an on-shell point where this is nonzero, proving that global χ is not even a weak symmetry of the generic constrained phase space.
 
 At $T_{\min}=0$ with $V(0)=V'(0)=0$, $T=p_T=0$, and spatially constant χ, the vacuum sector is preserved. Even there, $Q_\chi$ is a global symmetry charge, not an added first-class constraint, so it does not reduce the local degree count.
 
-# Explicit magnetic counterexample
+# Explicit Magnetic Counterexample
 
 For $p\ge2$, choose
 
-$$
-a=\operatorname{diag}(1,\ldots,1,0),
-\qquad
-F_{p-1,p}=f=-F_{p,p-1}.
-$$
+$$\begin{align}
+a=\operatorname{diag}(1,\ldots,1,0), \qquad F_{p-1,p}=f=-F_{p,p-1}.
+\end{align}$$
 
 Then
 
-$$
+$$\begin{align}
 \det(a+F)=f^2,
-$$
+\end{align}$$
 
-$$
-(a+F)^{ji}a_{ij}=p-2,
-\qquad
-(a+F)^{ji}F_{ij}=2.
-$$
+$$\begin{align}
+(a+F)^{ji}a_{ij}=p-2, \qquad (a+F)^{ji}F_{ij}=2.
+\end{align}$$
 
 Set $V(0)=v\ne0$, $T=p_T=0$, $\pi^i=P_I=P_i=0$, and $P_0=\tau_pv|f|$. All three constraints vanish, while
 
-$$
-\{H_M[\lambda],Q_\chi\}
-=\int_\Sigma2\lambda\chi\tau_p^2v^2(p-1)f^2\ne0.
-$$
+$$\begin{align}
+\{H_M[\lambda],Q_\chi\} =\int_\Sigma2\lambda\chi\tau_p^2v^2(p-1)f^2\ne0.
+\end{align}$$
 
 The paper also supplies a separate $p=1$ example, where no spatial two-form exists.
 
-# Independent checks
+# Independent Checks
 
 **Checked (rendered PDF, TeX source, Sage, and direct canonical algebra):**
 
@@ -266,15 +238,13 @@ The paper also supplies a separate $p=1$ example, where no spatial two-form exis
 
 **Not established:** a Lagrangian presymplectic current, hypersurface independence, corner flux, central extensions, BRST quantization, or a regional observable-algebra quotient.
 
-# Translation to the vault programme
+# Translation to the Vault Programme
 
 This paper supports a key distinction:
 
-$$
-\mathcal L_{\delta_\chi}\Omega=0
-\quad\not\Rightarrow\quad
-\delta_\chi\ \text{is gauge}.
-$$
+$$\begin{align}
+\mathcal L_{\delta_\chi}\Omega=0 \quad\not\Rightarrow\quad \delta_\chi\ \text{is gauge}.
+\end{align}$$
 
 One must also check tangency to every constraint, first-class closure, and whether the transformation becomes a kernel direction of the pulled-back two-form. The explicit on-shell counterexample is stronger than a formal off-shell mismatch because it proves the obstruction is not merely proportional to existing constraints.
 

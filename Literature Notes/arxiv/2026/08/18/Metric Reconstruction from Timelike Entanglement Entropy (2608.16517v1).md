@@ -14,7 +14,7 @@ summary: "Selected-branch timelike strip entropy fixes an Abel density, not a un
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** fix a holographic TEE prescription and a smooth extremal-surface branch upstream; require a one-to-one transformed coordinate $W$ along the selected real or complex path; keep one square-root sheet and pole prescription; and supply one independent radial-profile anchor. Under these conditions the entropy slope determines a conserved parameter, the time-width function gives an Abel density, and a one-function blackening factor can be reconstructed along that branch.
 
@@ -24,7 +24,7 @@ The numerical SAdS$_4$ and RN tests are forward-generated benchmarks. They use t
 
 Relevance: **medium detailed** (`T2-dS-BH-holography`, `T2-model`).
 
-# Two distinct holographic inputs
+# Two Distinct Holographic Inputs
 
 The paper keeps two proposed HTEE constructions separate.
 
@@ -33,229 +33,196 @@ The paper keeps two proposed HTEE constructions separate.
 
 The reconstruction never selects between competing HTEE prescriptions or among all admissible saddles. It takes one smooth branch as input. This is essential because inequivalent prescriptions can assign different entropy curves to the same timelike boundary interval.
 
-# Hamilton--Jacobi data extraction
+# Hamilton--Jacobi Data Extraction
 
 For the CWES metric ansatz
 
-$$
+$$\begin{align}
 ds^2=-f(r)dt^2+\frac{dr^2}{f(r)}+r^2d\mathbf x^2,
-$$
+\end{align}$$
 
 the conserved quantity on a spacelike branch gives
 
-$$
-\Delta t(E)
-=2E\int_0^\infty
-\frac{dr}{f(r)\sqrt{r^{2d-4}f(r)+E^2}},
-$$
+$$\begin{align}
+\Delta t(E) =2E\int_0^\infty \frac{dr}{f(r)\sqrt{r^{2d-4}f(r)+E^2}},
+\end{align}$$
 
 and
 
-$$
-\operatorname{Re}S_T(E)
-=\frac12\int_0^\Lambda
-\frac{r^{2d-4}\,dr}{\sqrt{r^{2d-4}f(r)+E^2}}.
-$$
+$$\begin{align}
+\operatorname{Re}S_T(E) =\frac12\int_0^\Lambda \frac{r^{2d-4}\,dr}{\sqrt{r^{2d-4}f(r)+E^2}}.
+\end{align}$$
 
 The timelike segment contributes an $E$-independent imaginary constant. Differentiating the two $E$-dependent integrals yields
 
-$$
-\frac{dS_T}{d\Delta t}=-\frac E4,
-\qquad
-E(\Delta t)=-4\frac{dS_T}{d\Delta t}.
-$$
+$$\begin{align}
+\frac{dS_T}{d\Delta t}=-\frac E4, \qquad E(\Delta t)=-4\frac{dS_T}{d\Delta t}.
+\end{align}$$
 
 The same ratio follows for the complex-coordinate contour because its time and area integrals have the same denominator. This step assumes the selected contour can be held in one homotopy class under infinitesimal changes of $E$, with no pole or branch point crossing.
 
-# CWES Abel inversion
+# CWES Abel Inversion
 
 Define
 
-$$
-W(r)=r^{2d-4}f(r),
-\qquad
-H(W)=\frac{r(W)^{2d-4}}{W}\frac{dr}{dW}.
-$$
+$$\begin{align}
+W(r)=r^{2d-4}f(r), \qquad H(W)=\frac{r(W)^{2d-4}}{W}\frac{dr}{dW}.
+\end{align}$$
 
 On a monotone real branch,
 
-$$
-\mathcal I(x)
-:=\frac{\Delta t(E)}{2E}
-=\int_{W_0}^{\infty}\frac{H(W)}{\sqrt{W-x}}\,dW,
-\qquad x=-E^2.
-$$
+$$\begin{align}
+\mathcal I(x) :=\frac{\Delta t(E)}{2E} =\int_{W_0}^{\infty}\frac{H(W)}{\sqrt{W-x}}\,dW, \qquad x=-E^2.
+\end{align}$$
 
 Analytically continuing $\mathcal I$ to the cut gives
 
-$$
-\operatorname{Disc}\mathcal I(s)
-=2i\int_{W_0}^{s}\frac{H(W)}{\sqrt{s-W}}\,dW,
-$$
+$$\begin{align}
+\operatorname{Disc}\mathcal I(s) =2i\int_{W_0}^{s}\frac{H(W)}{\sqrt{s-W}}\,dW,
+\end{align}$$
 
 and hence
 
-$$
-H(W)
-=\frac{1}{2\pi i}\frac d{dW}
-\int_{W_0}^{W}
-\frac{\operatorname{Disc}\mathcal I(s)}{\sqrt{W-s}}\,ds.
-$$
+$$\begin{align}
+H(W) =\frac{1}{2\pi i}\frac d{dW} \int_{W_0}^{W} \frac{\operatorname{Disc}\mathcal I(s)}{\sqrt{W-s}}\,ds.
+\end{align}$$
 
 Recovering the radial coordinate requires one more integration:
 
-$$
-r^{2d-3}(W)
-=(2d-3)\int_{W_0}^{W}\xi H(\xi)\,d\xi+C.
-$$
+$$\begin{align}
+r^{2d-3}(W) =(2d-3)\int_{W_0}^{W}\xi H(\xi)\,d\xi+C.
+\end{align}$$
 
 For the selected BTZ branch, the singular endpoint sets $r(W_0)=0$ and fixes $C=0$. This is geometric information beyond the local Abel density.
 
-# Analytic BTZ check
+# Analytic BTZ Check
 
 For BTZ, the boundary data give
 
-$$
-E=-\coth\frac{\Delta t}{2},
-\qquad
-W_0=-1.
-$$
+$$\begin{align}
+E=-\coth\frac{\Delta t}{2}, \qquad W_0=-1.
+\end{align}$$
 
 The discontinuity of the continued input is
 
-$$
-\operatorname{Disc}\mathcal I(s)
-=-\frac{i\pi}{\sqrt{-s}},
-\qquad -1<s<0.
-$$
+$$\begin{align}
+\operatorname{Disc}\mathcal I(s) =-\frac{i\pi}{\sqrt{-s}}, \qquad -1<s<0.
+\end{align}$$
 
 Abel inversion yields
 
-$$
+$$\begin{align}
 H(W)=\frac{1}{2W\sqrt{1+W}}.
-$$
+\end{align}$$
 
 With the singularity anchor,
 
-$$
-r=\sqrt{1+W},
-\qquad
-f(r)=W=r^2-1.
-$$
+$$\begin{align}
+r=\sqrt{1+W}, \qquad f(r)=W=r^2-1.
+\end{align}$$
 
 The complex-coordinate prescription produces the same analytic density on a different continued sheet. There the horizon position fixes the remaining integration constant and gives $f(z)=1-z^2$.
 
-# Complex-coordinate reconstruction
+# Complex-Coordinate Reconstruction
 
 For
 
-$$
+$$\begin{align}
 ds^2=z^{-2}\left[-f(z)dt^2+\frac{dz^2}{f(z)}+h(z)d\mathbf x^2\right],
-$$
+\end{align}$$
 
 the turning point satisfies
 
-$$
+$$\begin{align}
 E^2=-\frac{h(z_t)^{d-2}f(z_t)}{z_t^{2d-2}}.
-$$
+\end{align}$$
 
 In the one-function case $h=1$, set
 
-$$
-W(z)=\frac{f(z)}{z^{2d-2}},
-\qquad
-H(W)=-\frac{1}{z^{2d-2}W}\frac{dz}{dW}.
-$$
+$$\begin{align}
+W(z)=\frac{f(z)}{z^{2d-2}}, \qquad H(W)=-\frac{1}{z^{2d-2}W}\frac{dz}{dW}.
+\end{align}$$
 
 On a directed simple $W$-curve with a single-valued inverse $z(W)$,
 
-$$
-\mathcal I(x)=\int_x^\infty\frac{H(W)}{\sqrt{W-x}}\,dW,
-\qquad x=-E^2,
-$$
+$$\begin{align}
+\mathcal I(x)=\int_x^\infty\frac{H(W)}{\sqrt{W-x}}\,dW, \qquad x=-E^2,
+\end{align}$$
 
 and the adjoint Abel inverse is
 
-$$
-H(W)
-=-\frac1\pi\frac d{dW}
-\int_W^\infty\frac{\mathcal I(x)}{\sqrt{x-W}}\,dx.
-$$
+$$\begin{align}
+H(W) =-\frac1\pi\frac d{dW} \int_W^\infty\frac{\mathcal I(x)}{\sqrt{x-W}}\,dx.
+\end{align}$$
 
 Then
 
-$$
-z^{-(2d-3)}(W)
-=(2d-3)\int \xi H(\xi)\,d\xi+C,
-\qquad
-f(z)=z^{2d-2}W(z).
-$$
+$$\begin{align}
+z^{-(2d-3)}(W) =(2d-3)\int \xi H(\xi)\,d\xi+C, \qquad f(z)=z^{2d-2}W(z).
+\end{align}$$
 
 The constant $C$ is invisible to the Abel inversion. The complex surface does not end at the real singularity, so the paper supplies a UV coefficient or horizon position to fix it.
 
-# SAdS$_4$ and RN benchmarks
+# SAdS$_4$ and RN Benchmarks
 
 For SAdS$_4$, $f(z)=1-z^3$ and $u=W^{-1/4}$. The exact near-boundary inverse is
 
-$$
+$$\begin{align}
 z(u)=u-\frac14u^4+\frac{3}{32}u^7+\cdots.
-$$
+\end{align}$$
 
 The entropy data fix lower coefficients, while the quartic coefficient is the residual radial-profile freedom. Scanning this coefficient and imposing the known horizon condition $f(1)=0$ selects
 
-$$
+$$\begin{align}
 a_4^*=-0.2498,
-$$
+\end{align}$$
 
 close to $-1/4$. AAA rational approximation is then used to continue the reconstructed complex-path samples to the real horizon.
 
 For planar RN--AdS$_4$,
 
-$$
-f_{\mathrm{RN}}(z)
-=1-(1+Q^2)z^3+Q^2z^4,
-$$
+$$\begin{align}
+f_{\mathrm{RN}}(z) =1-(1+Q^2)z^3+Q^2z^4,
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 z(u)=u-\frac{1+Q^2}{4}u^4+\frac{Q^2}{4}u^5+O(u^7).
-$$
+\end{align}$$
 
 At $Q=1.2$, the anchored scan returns $(-0.6103,0.3595)$, close to the exact $(-0.61,0.36)$. These are consistency tests against known forward data and known horizon normalization.
 
-# What one strip cannot determine
+# What One Strip Cannot Determine
 
 For the Gubser--Rocha example, the natural transformed variable is
 
-$$
+$$\begin{align}
 W(z)=\frac{f(z)h(z)}{z^4},
-$$
+\end{align}$$
 
 and the reconstructed density satisfies
 
-$$
-H(W)=-\frac1{f(z(W))}\frac{dz}{dW},
-\qquad
-f(z(W))h(z(W))=Wz(W)^4.
-$$
+$$\begin{align}
+H(W)=-\frac1{f(z(W))}\frac{dz}{dW}, \qquad f(z(W))h(z(W))=Wz(W)^4.
+\end{align}$$
 
 These are two relations for the three branch functions $z(W)$, $f(z(W))$, and $h(z(W))$. The real and imaginary parts of the same complex entropy do not provide an additional independent equation. One must supply $f$, $h$, or a second observable/region family.
 
-# Likely use for current projects
+# Likely Use for Current Projects
 
 - The paper is a clear inverse-problem example where boundary data determine a reduced density before a geometric representative is fixed.
 - Its branch and anchor bookkeeping is directly relevant to avoiding overclaims in boundary-to-bulk reconstruction.
 - The Abel transform may be reusable for one-dimensional reconstruction subproblems.
 - It does not construct a covariant phase space, charge algebra, gluing map, or quantum error-correcting recovery channel.
 
-# Why it is not high priority
+# Why It Is Not High Priority
 
 The method concerns a restricted static strip ansatz and a chosen HTEE prescription. The main object reconstructed directly is $H(W)$, not a unique metric. Numerical validation is on synthetic data generated from benchmark geometries, with external anchoring. This is useful holographic methodology but not a direct solution of the vault's boundary-symplectic or gluing problems.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Read the complete 46-page PDF and the complete 2,687-line TeX source, including the numerical settings and BTZ Abel-condition appendix.
 - Visually inspected the abstract, analytic BTZ inversion, residual UV freedom, RN benchmark, numerical settings, and complex-branch discussion on rendered pages.
@@ -269,15 +236,15 @@ Verified: Mathematica evaluated the BTZ Abel integral with $H(W)=1/[2W\sqrt{1+W}
 
 Verified: Mathematica series reversion reproduced
 
-$$
+$$\begin{align}
 z(u)=u-\frac14u^4+\frac{3}{32}u^7+\cdots
-$$
+\end{align}$$
 
 for SAdS$_4$, and
 
-$$
+$$\begin{align}
 z(u)=u-\frac{1+Q^2}{4}u^4+\frac{Q^2}{4}u^5+O(u^7)
-$$
+\end{align}$$
 
 for RN.
 
@@ -291,7 +258,7 @@ Blocked: no executable forward/reconstruction code or raw sampled branch data ar
 
 Blocked: prescription selection is upstream of the inverse map. The entropy data used here cannot decide whether CWES, a complex extremal surface, or another TEE prescription is the correct bulk dual.
 
-## Not independently verified
+## Not Independently Verified
 
 Not verified: numerical contour homotopy and square-root sheet continuity at every sample used in the figures.
 
@@ -299,6 +266,6 @@ Not verified: stability of AAA continuation away from the sampled complex path b
 
 Not verified: existence or uniqueness of a Lorentzian metric compatible with generic noisy boundary TEE data.
 
-# Bottom line
+# Bottom Line
 
 The paper succeeds at something narrower and more precise than its title suggests. It derives and benchmarks an Abel inversion for the geometric density seen by one selected timelike strip branch. A one-function metric requires one extra radial anchor, and a two-function metric requires an additional independent observable. The analytic BTZ formulas and critical slopes check; the numerical inverse pipeline is visually documented but not reproducible from the supplied paper package because code and raw data are absent.

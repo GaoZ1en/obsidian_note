@@ -22,7 +22,7 @@ Daily overview: [[2026_09_07_overview]].
 
 For Virasoro, affine Kac--Moody, and super-Virasoro orbits, **the statement should be rewritten as:** the formal localized fixed-point prescription reproduces the standard characters for the listed generic, vacuum, and BPS modules. The paper explicitly does not establish an infinite-dimensional index theorem, a measure on the full orbit, convergence of the original orbit integral, or a general orbit-method classification of all unitary chiral-algebra representations.
 
-# Complete section tree
+# Complete Section Tree
 
 - Section 1 states the orbit/index/localization chain and its relation to Chern--Simons theory on a punctured disk or solid torus.
 - Section 2.1 reviews KKS symplectic forms, momentum maps, prequantum line bundles, Kähler polarization, and the invariant-complex-structure criterion.
@@ -37,259 +37,241 @@ For Virasoro, affine Kac--Moody, and super-Virasoro orbits, **the statement shou
 - Appendix A reduces the superindex to characteristic classes on the bosonic reduced space and derives the bosonic/fermionic fixed-point ratio.
 - Appendix B identifies canonical or Berezinian line bundles through ghost determinant lines for Virasoro, affine, and $\mathcal N=1,2,4$ cases.
 
-# Finite-dimensional geometric core
+# Finite-Dimensional Geometric Core
 
 For $\lambda\in\mathfrak g^*$, the orbit
 
-$$
+$$\begin{align}
 \mathcal O_\lambda=\{\operatorname{Ad}^*(g)\lambda:g\in G\}\cong G/H_\lambda
-$$
+\end{align}$$
 
 carries the KKS form
 
-$$
+$$\begin{align}
 \omega_\lambda(\xi_X,\xi_Y)=\langle\lambda,[X,Y]\rangle.
-$$
+\end{align}$$
 
 The $G$ action is Hamiltonian and the momentum map is the inclusion
 
-$$
+$$\begin{align}
 \mu:\mathcal O_\lambda\hookrightarrow\mathfrak g^*.
-$$
+\end{align}$$
 
 Prequantization requires the normalized class $[\omega]$ to be integral. With a Kähler polarization and line bundle $\mathcal L_\lambda$ satisfying
 
-$$
+$$\begin{align}
 c_1(\mathcal L_\lambda)=[\omega],
-$$
+\end{align}$$
 
 the quantized space is
 
-$$
+$$\begin{align}
 \mathcal H_\lambda=H^0(\mathcal O_\lambda,\mathcal L_\lambda).
-$$
+\end{align}$$
 
 If $\mathfrak g=\mathfrak h\oplus\mathcal K$ and
 
-$$
+$$\begin{align}
 \mathcal K_\mathbb C=\mathcal K^+\oplus\mathcal K^-,
-$$
+\end{align}$$
 
 the invariant integrable complex structure must obey
 
-$$
-[\mathfrak h,\mathcal K^+]\subset\mathfrak h\oplus\mathcal K^+,
-\qquad
-[\mathcal K^+,\mathcal K^+]\subset\mathfrak h\oplus\mathcal K^+.
-$$
+$$\begin{align}
+[\mathfrak h,\mathcal K^+]\subset\mathfrak h\oplus\mathcal K^+, \qquad [\mathcal K^+,\mathcal K^+]\subset\mathfrak h\oplus\mathcal K^+.
+\end{align}$$
 
 These conditions later exclude most exceptional Virasoro and generic Ramond super-Virasoro orbits.
 
-# Index and localization chain
+# Index and Localization Chain
 
 Under the compact positivity assumptions, Kodaira vanishing reduces the holomorphic Euler characteristic to $H^0$. Equivariant Riemann--Roch gives
 
-$$
-\chi_\lambda(e^X)=\int_{\mathcal O_\lambda}
-\operatorname{td}^G(T\mathcal O_\lambda)e^{\omega^G}(X).
-$$
+$$\begin{align}
+\chi_\lambda(e^X)=\int_{\mathcal O_\lambda} \operatorname{td}^G(T\mathcal O_\lambda)e^{\omega^G}(X).
+\end{align}$$
 
 At isolated torus fixed points $p$, ABBV localization gives
 
-$$
-\chi_\lambda(e^X)=\sum_{p\in\mathcal O_\lambda^T}
-e^{\mu_p(X)}\prod_i\frac{1}{1-e^{-x_i(X)}},
-$$
+$$\begin{align}
+\chi_\lambda(e^X)=\sum_{p\in\mathcal O_\lambda^T} e^{\mu_p(X)}\prod_i\frac{1}{1-e^{-x_i(X)}},
+\end{align}$$
 
 where $x_i$ are the holomorphic tangent weights. For a regular compact orbit $G/T$, fixed points are labelled by the Weyl group. Rewriting the denominator antisymmetrically yields
 
-$$
-\chi_\lambda=
-\frac{\sum_{w\in W}\epsilon(w)e^{w(\lambda+\rho)}}
+$$\begin{align}
+\chi_\lambda= \frac{\sum_{w\in W}\epsilon(w)e^{w(\lambda+\rho)}}
 {\prod_{\alpha\in\Delta^+}(e^{\alpha/2}-e^{-\alpha/2})}.
-$$
+\end{align}$$
 
 For weights on Weyl walls, the stabilizer enlarges. Quantizing the smaller orbit $G/H$ or the degenerate pullback on $G/T$ gives the same sections because the compact fiber $H/T$ contributes only constants. Compactness of that fiber is essential.
 
-# Virasoro cluster
+# Virasoro Cluster
 
 The Virasoro dual is represented by $(b(\varphi)d\varphi^2,c)$ with coadjoint action
 
-$$
-b\mapsto b\circ f^{-1}\,((f^{-1})')^2-
-\frac{c}{24\pi}\{f^{-1},\varphi\}.
-$$
+$$\begin{align}
+b\mapsto b\circ f^{-1}\,((f^{-1})')^2- \frac{c}{24\pi}\{f^{-1},\varphi\}.
+\end{align}$$
 
 For generic constant $b_0$, the orbit is
 
-$$
+$$\begin{align}
 \operatorname{Diff}^+(S^1)/S^1,
-$$
+\end{align}$$
 
 with holomorphic directions $L_n$, $n\ge1$. At
 
-$$
+$$\begin{align}
 b_0=-\frac{k^2c}{48\pi},
-$$
+\end{align}$$
 
 the stabilizer includes $L_0,L_{\pm k}$, but only $k=1$ admits the required invariant Kähler structure. This is the vacuum orbit
 
-$$
+$$\begin{align}
 \operatorname{Diff}^+(S^1)/\operatorname{PSL}(2,\mathbb R),
-$$
+\end{align}$$
 
 with holomorphic modes $L_n$, $n\ge2$.
 
 The rigid-rotation action has one constant fixed point. Identifying
 
-$$
+$$\begin{align}
 2\pi b_0=h-\frac{c}{24},
-$$
+\end{align}$$
 
 the prescription gives
 
-$$
+$$\begin{align}
 \chi_h(q)=q^{h-c/24}\prod_{m=1}^\infty(1-q^m)^{-1},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \chi_{\rm vac}(q)=q^{-c/24}\prod_{m=2}^\infty(1-q^m)^{-1}.
-$$
+\end{align}$$
 
 The missing $m=1$ vacuum factor is exactly the removal of the $L_{-1}$ descendant by the enhanced $\operatorname{PSL}(2,\mathbb R)$ stabilizer.
 
-# Affine Kac--Moody cluster
+# Affine Kac--Moody Cluster
 
 A coadjoint vector of $\widehat{LG}$ is a circle gauge field $A(\varphi)d\varphi$ together with level $k$, with action
 
-$$
+$$\begin{align}
 A\mapsto gAg^{-1}-ik\,\partial_\varphi g\,g^{-1}d\varphi.
-$$
+\end{align}$$
 
 The orbit is labelled by the conjugacy class of the holonomy of $A/k$. For $G=SU(2)$, generic orbits are $LSU(2)/U(1)$ and the vacuum orbit is $LSU(2)/SU(2)$. Integrality of the KKS class quantizes both $j$ and $k$, with integrable representatives
 
-$$
+$$\begin{align}
 j\in\left\{0,\frac12,\ldots,\frac{k}{2}\right\}.
-$$
+\end{align}$$
 
 The $U(1)\times U(1)$ fixed points are
 
-$$
-A_{\sigma,n}=\operatorname{diag}(\sigma j+nk,-\sigma j-nk)d\varphi,
-\quad \sigma=\pm1,\quad n\in\mathbb Z,
-$$
+$$\begin{align}
+A_{\sigma,n}=\operatorname{diag}(\sigma j+nk,-\sigma j-nk)d\varphi, \quad \sigma=\pm1,\quad n\in\mathbb Z,
+\end{align}$$
 
 and are labelled by the affine Weyl group. Passing from the Todd class to the $\widehat A$ class requires the canonical-line-bundle correction
 
-$$
+$$\begin{align}
 \mathcal K_{\mathcal O}\cong\mathcal L_{-1,-4},
-$$
+\end{align}$$
 
 so $j\mapsto j+\frac12$ and $k\mapsto k+2$. The fixed-point sum then reproduces the $\widehat{\mathfrak{su}}(2)_k$ Weyl--Kac character. For general simple simply connected $G$, the shifts are
 
-$$
-\lambda\mapsto\lambda+\rho,
-\qquad
-k\mapsto k+h^\vee,
-$$
+$$\begin{align}
+\lambda\mapsto\lambda+\rho, \qquad k\mapsto k+h^\vee,
+\end{align}$$
 
 and fixed points are indexed by $\widehat W=W\ltimes Q^\vee$.
 
 The paper relates this orbit to Chern--Simons theory on a punctured disk. Its character is the solid-torus partition function with a Wilson line around the noncontractible cycle. This is the most direct connection to the vault's regional operator-algebra direction, but the paper does not construct a gluing map between multiple punctured regions.
 
-# Superindex rule
+# Superindex Rule
 
 For a super-orbit, localization reduces to the bosonic fixed set. If $x_i$ and $\xi_j$ are bosonic and fermionic holomorphic tangent weights,
 
-$$
-\chi_\pm=
-\sum_{p\ {m fixed}}e^{\mu_p}
-\frac{\prod_j(1\pm e^{-\xi_j})}{\prod_i(1-e^{-x_i})}.
-$$
+$$\begin{align}
+\chi_\pm= \sum_{p\ { m fixed}}e^{\mu_p} \frac{\prod_j(1\pm e^{-\xi_j})}{\prod_i(1-e^{-x_i})}.
+\end{align}$$
 
 The plus sign gives the ordinary character and the minus sign the supercharacter with $(-1)^F$. Appendix A justifies the fermionic exterior-algebra factor at the level of characteristic classes on the reduced space, while retaining the same formal infinite-dimensional caveat.
 
-# $\mathcal N=1$ cluster
+# $\mathcal N=1$ Cluster
 
 Generic NS orbits have stabilizer $S^1$ and holomorphic modes
 
-$$
+$$\begin{align}
 L_n\ (n\ge1),\qquad G_r\ (r\ge\tfrac12).
-$$
+\end{align}$$
 
 The vacuum removes $L_1$ and $G_{1/2}$. A generic Ramond orbit cannot carry the chosen Kähler structure because the Hermitian zero mode $G_0$ cannot belong to only one of $\mathcal K^\pm$. The special $b_0=0$ Ramond orbit includes $G_0$ in its stabilizer and is admissible.
 
 The characters are
 
-$$
-\chi_{\pm,h}=q^{h-c/24}\prod_{m=1}^\infty
-\frac{1\pm q^{m-1/2}}{1-q^m},
-$$
+$$\begin{align}
+\chi_{\pm,h}=q^{h-c/24}\prod_{m=1}^\infty \frac{1\pm q^{m-1/2}}{1-q^m},
+\end{align}$$
 
-$$
-\chi_{\pm,\rm vac}=q^{-c/24}\prod_{m=2}^\infty
-\frac{1\pm q^{m-1/2}}{1-q^m},
-$$
+$$\begin{align}
+\chi_{\pm,\rm vac}=q^{-c/24}\prod_{m=2}^\infty \frac{1\pm q^{m-1/2}}{1-q^m},
+\end{align}$$
 
-$$
+$$\begin{align}
 \chi_{\pm,R}=\prod_{m=1}^\infty\frac{1\pm q^m}{1-q^m}.
-$$
+\end{align}$$
 
 In particular $\chi_{-,R}=1$, the expected Witten index.
 
-# $\mathcal N=2$ cluster
+# $\mathcal N=2$ Cluster
 
 The paper uses noncompact $U(1)_R$, so $J_0$ charge is not quantized and winding sectors are absent. Generic NS orbits have stabilizer $S^1\times\mathbb R$ generated by $L_0,J_0$. Constant orbit data obey
 
-$$
-2\pi b_0=h-\frac{c}{24},
-\qquad
-2\pi A_0=Q.
-$$
+$$\begin{align}
+2\pi b_0=h-\frac{c}{24}, \qquad 2\pi A_0=Q.
+\end{align}$$
 
 The BPS loci
 
-$$
+$$\begin{align}
 b_0=\pm\frac12A_0-\frac{c}{48\pi}
-$$
+\end{align}$$
 
 give $h=\pm Q/2$ and enlarged $U(1|1)^\pm$ stabilizers. The generic character is
 
-$$
+$$\begin{align}
 \chi_{\pm,h,Q}=q^{h-c/24}y^Q
-\prod_{m=1}^\infty
-\frac{(1\pm q^{m-1/2}y)(1\pm q^{m-1/2}y^{-1})}{(1-q^m)^2}.
-$$
+\prod_{m=1}^\infty \frac{(1\pm q^{m-1/2}y)(1\pm q^{m-1/2}y^{-1})}{(1-q^m)^2}.
+\end{align}$$
 
 Vacuum and (anti-)BPS characters follow by deleting precisely the modes in the enhanced stabilizer. Ramond-sector statements are obtained by spectral flow, not by a separate orbit-localization proof in this paper.
 
-# Small $\mathcal N=4$ cluster
+# Small $\mathcal N=4$ Cluster
 
 The algebra contains $L_n$, an $\widehat{\mathfrak{su}}(2)_k$ R current, and four supercurrents, with
 
-$$
+$$\begin{align}
 c=6k.
-$$
+\end{align}$$
 
 The shortening constraint on the $S^{1|4}$ generating superfield leaves the independent content
 
-$$
+$$\begin{align}
 \mathbf1\oplus(\mathbf2,\mathbf2)\oplus(\mathbf3,\mathbf1),
-$$
+\end{align}$$
 
 corresponding to stress tensor, four supercurrents, and R-current triplet. Generic, spin-zero, vacuum, and BPS stabilizers determine which tangent modes are removed.
 
 Localization uses $L_0$, $J_0^3$, and an outer-automorphism $U(1)$. Bosonic fixed points are the affine-$SU(2)$ fixed points; fermions alter the characteristic-class ratio but not the fixed-point set. The canonical/Berezinian correction shifts
 
-$$
-j\mapsto j+\frac12,
-\qquad
-k\mapsto k+1.
-$$
+$$\begin{align}
+j\mapsto j+\frac12, \qquad k\mapsto k+1.
+\end{align}$$
 
 The generic and BPS formulas are affine-Weyl sums multiplied by the common oscillator factor $\Xi_\pm$. Degenerate representations require removing the stabilizer modes separately at each spectral-flow image. This geometric deletion reproduces the familiar null-state subtractions.
 
-# Canonical-line-bundle ledger
+# Canonical-Line-Bundle Ledger
 
 Appendix B obtains the determinant-line shifts from ghost systems:
 
@@ -301,7 +283,7 @@ Appendix B obtains the determinant-line shifts from ghost systems:
 
 These anomaly computations motivate the square-root canonical-line-bundle corrections. They do not by themselves construct the global square root or resolve every determinant-line phase on an infinite-dimensional orbit.
 
-# Global derivation map
+# Global Derivation Map
 
 1. Identify a coadjoint orbit and its KKS form.
 2. Impose integrality and choose an invariant Kähler polarization.
@@ -314,25 +296,22 @@ These anomaly computations motivate the square-root canonical-line-bundle correc
 
 Steps 1--8 are theorems in the finite compact setting under the listed hypotheses. In the chiral infinite-dimensional setting, Step 4 is not defined independently; the fixed-point formula in Step 5 is adopted as the formal prescription and checked against known characters.
 
-# Local translation to the vault
+# Local Translation to the Vault
 
 The reusable bridge is
 
-$$
-\text{boundary phase space}
-\longrightarrow
-\text{coadjoint orbit}
-\longrightarrow
-\text{polarized Hilbert space}
-\longrightarrow
+$$\begin{align}
+\text{boundary phase space} \longrightarrow
+\text{coadjoint orbit} \longrightarrow
+\text{polarized Hilbert space} \longrightarrow
 \text{character/solid-torus trace}.
-$$
+\end{align}$$
 
 For Chern--Simons sewing, the punctured-disk orbit and its Wilson-line label are concrete regional data. However, the paper computes a single-region character; it does not prove factorization, fusion under gluing, an exact regional-to-global observable map, or compatibility of polarizations across cuts. Those remain separate tasks.
 
 The explicit stabilizer audit is especially relevant: null states are not inserted ad hoc but correspond to tangent directions removed by enhanced gauge symmetry. Any regional analogue should likewise distinguish a true stabilizer quotient from a formal cancellation in a partition function.
 
-# Verification log
+# Verification Log
 
 - **Source-derived:** the complete section tree, every orbit/stabilizer class, tangent-mode prescription, fixed-point set, character family, and both appendices were reconstructed from the official v1 TeX source and complete 43-page PDF.
 - **Visually confirmed:** PDF pages 1, 10, 20, 30, 40, and 43 display the metadata, finite Weyl setup, affine $\widehat A$ correction, $\mathcal N=2/4$ transition, and reference tail without clipped formulas or missing text.
@@ -341,7 +320,7 @@ The explicit stabilizer audit is especially relevant: null states are not insert
 - **Not independently verified:** a rigorous infinite-dimensional equivariant index theorem, all higher-cohomology vanishing statements outside the compact finite case, global determinant-line square roots, the full $\mathcal N=4$ affine-Weyl sum coefficient by coefficient, or equivalence to a nonperturbative Chern--Simons path integral.
 - **Blocked:** the method intentionally starts from the localized formula in the infinite-dimensional cases, so it cannot by itself prove that a pre-localization orbit integral or measure exists.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 Essential: Sections 2.1--2.3 for the logic and hypotheses; Section 3.1 for the cleanest infinite-dimensional example; Section 3.2 for the punctured-disk/Chern--Simons connection and affine Weyl sum.
 

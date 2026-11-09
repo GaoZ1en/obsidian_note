@@ -12,27 +12,25 @@ summary: "从smooth reflected domain重建CW null string的约束代数、D−3�
 tags: []
 ---
 
-# 结果：一个定义域明确的 reflected constraint phase space
+# 结果：一个定义域明确的 Reflected Constraint Phase Space
 
 本文构造的是 **open Carroll–Weyl (CW) null string 的经典约束相空间**：选择 smooth fixed-point fold、constant metric-preserving target involution、相容的 auxiliary-field parity 和 even gauge parameter 后，三条约束在 interval 上可微、流保持定义域，并给出 O–P–A algebra。主要可借用对象是
 
-$$
-\Omega_I=\int_0^\pi\delta P_\mu\wedge\delta X^\mu\,d\sigma,
-\qquad (C_1,C_2,C_3)=(P^2,P\cdot D_1X,P\cdot X),
-$$
+$$\begin{align}
+\Omega_I=\int_0^\pi\delta P_\mu\wedge\delta X^\mu\,d\sigma, \qquad (C_1,C_2,C_3)=(P^2,P\cdot D_1X,P\cdot X),
+\end{align}$$
 
 以及 displaced endpoint 的 **canonical affine lift**
 
-$$
-X_R=2\widehat x-X,\quad P_R=-P,\quad
-\pi_R=\pi+2\overline P,\qquad \overline P=\int_0^\pi P\,d\sigma.
-$$
+$$\begin{align}
+X_R=2\widehat x-X,\quad P_R=-P,\quad \pi_R=\pi+2\overline P,\qquad \overline P=\int_0^\pi P\,d\sigma.
+\end{align}$$
 
 三点边界必须保留：$D-3$ 是 rank-three 区域的 local embedding canonical-pair count；O–P–A 是 constraint algebra，不是已完成 gauge fixing 后的 residual charge algebra；affine cotangent lift 不自动保持原来的 local constraint surface，也不自动对一般 local CW transformation equivariant。
 
 已独立核对：完整 interior bracket table 的 variational residual、circle-to-interval projection、有限模式 Jacobi、显式 regular/boost 解、charge balance、symplectic pullback 和 affine lift。执行范围中未发现矛盾；全局约化、rank-deficient strata 和 quantum/BRST 结论未验证。
 
-## Source map 与 How to read this long paper
+## Source Map 与 How to Read This Long Paper
 
 PDF 共 **31 页**，comments “30 pages, 3 appendices”。全文、A–C 已重建。下表页码沿用正文印刷页；PDF 还含 front matter。TeX 用于公式，PDF rendered pages 用于确认 mode normalization 和 physical-sector 公式；文本提取有 font-type warning，未把失真 extraction 当公式证据。
 
@@ -57,7 +55,7 @@ PDF 共 **31 页**，comments “30 pages, 3 appendices”。全文、A–C 已�
 
 建议先读 §2→§3.1→§4.1–4.4→§5.1；要研究 edge sewing 再读 §3.2+C。§5.2 与 §5.3 是两个不同解空间 patch，不应合并成同一个 global reduced chart。B 用作归一化和 endpoint-domain 的技术参考。
 
-## 符号、边界域与 canonical 约定
+## 符号、边界域与 Canonical 约定
 
 | symbol | 定义及域 |
 |---|---|
@@ -75,35 +73,31 @@ PDF 共 **31 页**，comments “30 pages, 3 appendices”。全文、A–C 已�
 
 原文 $\Omega=\delta\Theta=\int\delta P\wedge\delta X$；canonical bracket 仍取 $\{X^\mu,P_\nu\}=\delta^\mu{}_\nu\delta(\sigma-\sigma')$。Hamiltonian vector field 的 contraction 符号应与此一起搬运。全部 mode 计算先保留完整函数空间；有限 mode grid 仅为独立 bookkeeping check，不是替代 continuum 定义的 regulator。
 
-## §2：action、CW covariance 与 endpoint flux
+## §2：Action、CW Covariance 与 Endpoint Flux
 
-$$
+$$\begin{align}
 S_{\rm CW}=\frac\kappa2\int V^aV^bD_aX^\mu D_bX_\mu\,d\tau d\sigma,
-$$
+\end{align}$$
 
-$$
-\delta_\chi X=\chi X,\quad \delta_\chi V^a=-\chi V^a,
-\quad\delta_\chi W_a=-\partial_a\chi,
-\quad\delta_\chi(D_aX)=\chi D_aX.
-$$
+$$\begin{align}
+\delta_\chi X=\chi X,\quad \delta_\chi V^a=-\chi V^a, \quad\delta_\chi W_a=-\partial_a\chi, \quad\delta_\chi(D_aX)=\chi D_aX.
+\end{align}$$
 
 因此 integrand 的 CW weight 为 $-2+1+1=0$，是 pointwise invariant，而不是靠 boundary counterterm 取消。worldsheet diffeomorphism density weight 与 CW weight 是两种不同变换。
 
 定义 $Y^\mu=V^aD_aX^\mu$、$F^a{}_{\mu}=\kappa V^aY_\mu$，对 $X$ 变分有
 
-$$
-F^aD_a\delta X=\partial_a(F^a\delta X)
--(\partial_a-W_a)F^a\,\delta X,
-$$
+$$\begin{align}
+F^aD_a\delta X=\partial_a(F^a\delta X) -(\partial_a-W_a)F^a\,\delta X,
+\end{align}$$
 
-$$
-\delta_XS\big|_{\partial\Sigma}
-=\kappa\int_{\partial\Sigma}n_aV^aY_\mu\delta X^\mu\,d\tau.
-$$
+$$\begin{align}
+\delta_XS\big|_{\partial\Sigma} =\kappa\int_{\partial\Sigma}n_aV^aY_\mu\delta X^\mu\,d\tau.
+\end{align}$$
 
 **Checked:** Mathematica 展开 infinitesimal $X\to(1+\epsilon\chi)X$、$W\to W-\epsilon d\chi$，$D_aX$ covariance residual 为零；weighted integration-by-parts residual 为零。这里没有删掉 $n\cdot V$，它正是 endpoint 分支的判据。
 
-## §3.1：reflection、Neumann 与 characteristic 的不同约束
+## §3.1：Reflection、Neumann 与 Characteristic 的不同约束
 
 自然 Neumann 流方程是 $Y^A|_{\partial}=0$。characteristic/null endpoint 则是 $n_aV^a|_\partial=0$。后者让 action variation 的 endpoint 项消失，本身不要求前者。
 
@@ -116,183 +110,165 @@ $$
 
 完整 fold parity 要求 $V^0,W_0$ even、$V^1,W_1$ odd。even $\chi$ 才保持这些条件。fixed Dirichlet $X^I=x_0^I$ 在 arbitrary endpoint scaling 下 invariant 仅当 $x_0^I=0$；这也是引入 edge center 的实际原因。上述正定性和 transport 命题本次作为 **Source-derived**；没有把它泛化到 null/spacelike defects 或含 boundary interactions 的系统。
 
-## §3.2 与 C：affine reflection 及其两个独立障碍
+## §3.2 与 C：Affine Reflection 及其两个独立障碍
 
 对一端或两个共享同一 center 的 transverse directions，增广
 
-$$
+$$\begin{align}
 \Theta=\int_0^\pi P_\mu\delta X^\mu d\sigma+\pi_I\delta\widehat x^I.
-$$
+\end{align}$$
 
 $\widehat x$、$\pi$ 的 CW weights 分别为 $+1,-1$，使用 endpoint parameter $\chi_b$。affine point map 的 natural cotangent lift 必须是
 
-$$
-X_R=2\widehat x-X,\quad P_R=-P,\quad
-\pi_R=\pi+2\overline P.
-$$
+$$\begin{align}
+X_R=2\widehat x-X,\quad P_R=-P,\quad \pi_R=\pi+2\overline P.
+\end{align}$$
 
 因为 $\int(-P)\delta(2\widehat x-X)=\int P\delta X-2\overline P\delta\widehat x$，edge shift 正好取消第二项。**Checked:** Mathematica 在两个任意 bulk canonical samples 加一个 edge pair 上算完整 Jacobian，$J^T\omega J-\omega$ 的 $6\times6$ residual 为零，重复 affine map 为 identity；continuum one-form cancellation 又是无离散近似的直接证明。该 statement 是 natural cotangent lift；不把任意附加 exact generating function 的 symplectomorphism 说成同一 lift。
 
 然而原来的第三约束并非 reflection even：
 
-$$
-C_{3,R}=C_3-2T,\quad T=\widehat x\cdot P,\quad
-U=C_3-T=P\cdot(X-\widehat x),\quad U_R=U.
-$$
+$$\begin{align}
+C_{3,R}=C_3-2T,\quad T=\widehat x\cdot P,\quad U=C_3-T=P\cdot(X-\widehat x),\quad U_R=U.
+\end{align}$$
 
 同时要求 $C_3\approx C_{3,R}\approx0$ 还需 **pointwise** $T\approx0$。canonical lift 不能替代此条件；$U$ 或其 integrated version 不是原约束的自动替代。
 
 第二个障碍是 parameter 的空间依赖：
 
-$$
-\delta_\chi T=(\chi_b-\chi)T,\quad
-\delta_\chi U=-(\chi_b-\chi)T,
-$$
+$$\begin{align}
+\delta_\chi T=(\chi_b-\chi)T,\quad \delta_\chi U=-(\chi_b-\chi)T,
+\end{align}$$
 
-$$
-\delta_\chi\pi_R+\chi_b\pi_R
-=-2\int_0^\pi(\chi(\sigma)-\chi_b)P(\sigma)d\sigma.
-$$
+$$\begin{align}
+\delta_\chi\pi_R+\chi_b\pi_R =-2\int_0^\pi(\chi(\sigma)-\chi_b)P(\sigma)d\sigma.
+\end{align}$$
 
 故仅 endpoint-equivariant 不能推出 whole-interval affine map equivariant。Mathematica 检查了 local weight mismatch algebra；不能省掉不同的 $\chi$ 与 $\chi_b$。
 
-relative coordinates $Y=X-\widehat x$、$\Lambda=\pi+\overline P$ 给
+Relative coordinates $Y=X-\widehat x$、$\Lambda=\pi+\overline P$ 给
 
-$$
-\Theta=\int P\delta Y+\Lambda\delta\widehat x,
-\quad (Y_R,P_R,\widehat x_R,\Lambda_R)=(-Y,-P,\widehat x,\Lambda).
-$$
+$$\begin{align}
+\Theta=\int P\delta Y+\Lambda\delta\widehat x, \quad (Y_R,P_R,\widehat x_R,\Lambda_R)=(-Y,-P,\widehat x,\Lambda).
+\end{align}$$
 
 $U[f]$ 与 $\Lambda$ 对 interior-supported test functions 形成 commuting blocks；实际耦合在 $C_3[f]=U[f]+\widehat x\cdot\overline P[f]$ 及原 edge pair 的 joint constrained system。integrated invariant $\widehat U_0=\int PX+\widehat x\pi$ 的 reflection/CW invariance 不意味着这个 joint system 已完成约化。两个独立 displaced centers 还需要额外 gluing relation；本文明确留作后续。
 
-## §4.1–4.2：target involution、connection parity 与 doubling factor
+## §4.1–4.2：Target Involution、Connection Parity 与 Doubling Factor
 
-$$
-X(-\sigma)=RX(\sigma),\qquad
-P(-\sigma)=R^{-T}P(\sigma),\qquad X'(-\sigma)=-RX'(\sigma).
-$$
+$$\begin{align}
+X(-\sigma)=RX(\sigma),\qquad P(-\sigma)=R^{-T}P(\sigma),\qquad X'(-\sigma)=-RX'(\sigma).
+\end{align}$$
 
 $P$ 是 covector；若随意也取 $RP$ 而不同时升降指标，会破坏 pairing。$R^2=1$ 实现 fixed-point reflection，$R^T\eta R=\eta$ 使 $P^2$ even。$P\delta X$ 在两半相同，因此
 
-$$
+$$\begin{align}
 \Omega_{\rm circle}|_{\mathcal R}=2\Omega_I.
-$$
+\end{align}$$
 
 只对 reflection-invariant functionals 且 Hamiltonian vector fields tangent to $\mathcal R$，才有
 
-$$
+$$\begin{align}
 \{\iota^*F,\iota^*G\}_I=2\{F,G\}_{\rm circle}|_{\mathcal R}.
-$$
+\end{align}$$
 
 不是对 arbitrary unprojected parent modes 直接乘二。$\Pi_t=(1+R)/2$、$\Pi_n=(1-R)/2$ 在 fixed points 给 $\Pi_nX=0$。all-even $R=1$ 是一种 independent minimal boundary-state input；null endpoint equation 本身不决定 $R$。
 
 完整 $C_2=P\cdot X'+W_1C_3$ 的 parity 还要求 $W_1$ odd，且
 
-$$
-C_2(-\sigma)+C_2(\sigma)
-=[W_1(-\sigma)+W_1(\sigma)]C_3(\sigma).
-$$
+$$\begin{align}
+C_2(-\sigma)+C_2(\sigma) =[W_1(-\sigma)+W_1(\sigma)]C_3(\sigma).
+\end{align}$$
 
 所以 algebra 的 $(C_1,C_2,C_3)$ parities 为 $(+,-,+)$，有 worldsheet 与 target 两类兼容性输入，不能仅凭 target gluing 得到。
 
-## §4.3、A、B.2：half-interval mode algebra 的归一化
+## §4.3、A、B.2：Half-Interval Mode Algebra 的归一化
 
-parent circle modes 定义
+Parent circle modes 定义
 
-$$
-L_n=-i\int e^{-in\sigma}C_2d\sigma,\quad
-M_n=\int e^{-in\sigma}C_1d\sigma,\quad
-S_n=\int e^{-in\sigma}C_3d\sigma.
-$$
+$$\begin{align}
+L_n=-i\int e^{-in\sigma}C_2d\sigma,\quad M_n=\int e^{-in\sigma}C_1d\sigma,\quad S_n=\int e^{-in\sigma}C_3d\sigma.
+\end{align}$$
 
 $-i$ 只在 $L$ 中，是 Fourier convention；缺掉它会使 derivative bracket 系数错位。projected generators
 
-$$
+$$\begin{align}
 O_n=\tfrac12(L_n-L_{-n})=-2\int_0^\pi\sin(n\sigma)C_2d\sigma,
-$$
+\end{align}$$
 
-$$
-P_n=\tfrac12(M_n+M_{-n})=2\int_0^\pi\cos(n\sigma)C_1d\sigma,
-\quad A_n=2\int_0^\pi\cos(n\sigma)C_3d\sigma.
-$$
+$$\begin{align}
+P_n=\tfrac12(M_n+M_{-n})=2\int_0^\pi\cos(n\sigma)C_1d\sigma, \quad A_n=2\int_0^\pi\cos(n\sigma)C_3d\sigma.
+\end{align}$$
 
 在 $W=0$ representative 上，$\delta O_n$ 的 boundary term 为 $-2[\sin(n\sigma)P\delta X]_0^\pi=0$；$P_n,A_n$ 不含 spatial derivatives。smooth reflected domain 同时排除 derivative-jump profiles，保证其 flows 保持全部 reflected jets；只检查一个 endpoint value 不够。
 
-interval bracket 为
+Interval bracket 为
 
-$$
+$$\begin{align}
 [O_n,O_m]=(n-m)O_{n+m}-(n+m)O_{n-m},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 [O_n,P_m]=(n-m)P_{n+m}+(n+m)P_{n-m},
-$$
+\end{align}$$
 
-$$
-[O_n,A_m]=-mA_{n+m}+mA_{n-m},
-\quad [P_n,A_m]=-2(P_{n+m}+P_{n-m}),
-\quad[P_n,P_m]=[A_n,A_m]=0.
-$$
+$$\begin{align}
+[O_n,A_m]=-mA_{n+m}+mA_{n-m}, \quad [P_n,A_m]=-2(P_{n+m}+P_{n-m}), \quad[P_n,P_m]=[A_n,A_m]=0.
+\end{align}$$
 
-parity relations 是 $O_{-n}=-O_n$、$P_{-n}=P_n$、$A_{-n}=A_n$、$O_0=0$。**Checked:** Sage 从 parent LL、LM、LS、SM brackets 直接投影、乘上正确 interval factor，对 $O_{1\ldots4},P_{0\ldots4},A_{0\ldots4}$ 的 **196 对**全部一致；同一 14 个 basis entries 的 **2,744 个 triples** 按 parity reduction 复算 Jacobi，全部精确零。中间和差 mode 未截断，不把超出测试 grid 的 mode 丢掉。这是 finite bookkeeping audit；全整数证明仍来自 tangent Hamiltonian functionals 的 closed Poisson subalgebra。
+Parity relations 是 $O_{-n}=-O_n$、$P_{-n}=P_n$、$A_{-n}=A_n$、$O_0=0$。**Checked:** Sage 从 parent LL、LM、LS、SM brackets 直接投影、乘上正确 interval factor，对 $O_{1\ldots4},P_{0\ldots4},A_{0\ldots4}$ 的 **196 对**全部一致；同一 14 个 basis entries 的 **2,744 个 triples** 按 parity reduction 复算 Jacobi，全部精确零。中间和差 mode 未截断，不把超出测试 grid 的 mode 丢掉。这是 finite bookkeeping audit；全整数证明仍来自 tangent Hamiltonian functionals 的 closed Poisson subalgebra。
 
 $V^a=(1,0),W_a=0$ 固定后，保持该 chart 的 CW parameter 必须 $\chi=0$，因为 $\delta W=-d\chi$、$\delta V^0=-\chi$。故这张 mode table 不是该 fixed chart 的非零 residual CW symmetry algebra。
 
-## §4.4：zero modes 不等于 local pair count
+## §4.4：Zero Modes 不等于 Local Pair Count
 
-$$
-[P_0,A_0]=-4P_0,\quad [P_0,A_m]=-4P_m,\quad
-[A_0,P_m]=4P_m,
-$$
+$$\begin{align}
+[P_0,A_0]=-4P_0,\quad [P_0,A_m]=-4P_m,\quad [A_0,P_m]=4P_m,
+\end{align}$$
 
-$$
+$$\begin{align}
 [O_m,P_0]=2mP_m,\qquad[O_m,A_0]=0.
-$$
+\end{align}$$
 
 $-4$ 来自两次 half-projection/interval normalization；Sage 独立重现。even target directions 用 cosine including $x_0,p_0$，odd directions 用 sine only。A 的 pairing
 
-$$
+$$\begin{align}
 \int_0^\pi\sin(n\sigma)\sin(m\sigma)d\sigma=\frac\pi2\delta_{nm}
-$$
+\end{align}$$
 
 配对同一个正 mode number；zero cosine normalization 是 $\pi$。因此 $\{x_n,p_m\}=2\delta_{nm}/\pi$ 对 nonzero modes，zero cosine pair 为 $1/\pi$，除非显式重标度 canonical variables。
 
-circle-average constraints
+Circle-average constraints
 
-$$
+$$\begin{align}
 C_{1,0}=p_{0A}p_0^A+\tfrac12\sum_{n\ge1}p_{n\mu}p_n^\mu=0,
-$$
+\end{align}$$
 
-$$
-C_{3,0}=p_{0A}x_0^A+\tfrac12\sum_{n\ge1}p_{n\mu}x_n^\mu=0,
-\quad C_{2,0}=0,
-$$
+$$\begin{align}
+C_{3,0}=p_{0A}x_0^A+\tfrac12\sum_{n\ge1}p_{n\mu}x_n^\mu=0, \quad C_{2,0}=0,
+\end{align}$$
 
 且 $P_0=2\pi C_{1,0}$、$A_0=2\pi C_{3,0}$。它们把 even zero modes 与 oscillator sums 耦合；不能用 $D-3$ 来宣称 global zero-mode vacuum 已解决。本文未引入 infinite-mode summation regularization 或 quantum normal ordering，不能从 classical finite expressions 推出量子收敛。
 
-## §5、B.1：Legendre chain 与 first-classness
+## §5、B.1：Legendre Chain 与 First-Classness
 
 在 $V^0\ne0$，
 
-$$
-P_\mu=\kappa V^0V^aD_aX_\mu,\qquad
-H_c=\int\left[{P^2\over2\kappa(V^0)^2}
--{V^1\over V^0}P\cdot D_1X-W_0P\cdot X\right]d\sigma.
-$$
+$$\begin{align}
+P_\mu=\kappa V^0V^aD_aX_\mu,\qquad H_c=\int\left[{P^2\over2\kappa(V^0)^2} -{V^1\over V^0}P\cdot D_1X-W_0P\cdot X\right]d\sigma.
+\end{align}$$
 
 四条 primary 为 $\Pi_a=Q^a=0$。$Q^0$ stability 给 $C_3$；$Q^1$ 给 $(V^1/V^0)C_3$，可冗余；$\Pi_1$ 给 $C_2/V^0$，即使 $V^1=0$ 仍独立；$\Pi_0$ 再给 $C_1$。**Checked:** Mathematica 对 $H_c$ 的四个 auxiliary derivatives 重现该链。
 
 B.1 使用 interior compact support，保留所有 $W_1$：
 
-$$
-\{C_1[f],C_2[g]\}=C_1[fg'-f'g-2W_1fg],\quad
-\{C_1[f],C_3[g]\}=-2C_1[fg],
-$$
+$$\begin{align}
+\{C_1[f],C_2[g]\}=C_1[fg'-f'g-2W_1fg],\quad \{C_1[f],C_3[g]\}=-2C_1[fg],
+\end{align}$$
 
-$$
-\{C_2[f],C_2[g]\}=C_2[fg'-f'g],\quad
-\{C_2[f],C_3[g]\}=C_3[fg'],
-$$
+$$\begin{align}
+\{C_2[f],C_2[g]\}=C_2[fg'-f'g],\quad \{C_2[f],C_3[g]\}=C_3[fg'],
+\end{align}$$
 
 其余两条为零。若比较使用 $D=P\cdot X'$ 的文献 table，必须先用 $D[f]=C_2[f]-C_3[W_1f]$ 换 basis。
 
@@ -300,124 +276,111 @@ $$
 
 令 $H_c=C_1[\alpha]+C_2[\beta]+C_3[\gamma]$，$\alpha=[2\kappa(V^0)^2]^{-1}$、$\beta=-V^1/V^0$、$\gamma=-W_0$，则 $\dot C_i$ 都是三条 $C$ 的线性组合；例如
 
-$$
-\{C_2[f],H_c\}=C_1[f\alpha'-f'\alpha+2W_1f\alpha]
-+C_2[f\beta'-f'\beta]+C_3[f\gamma'].
-$$
+$$\begin{align}
+\{C_2[f],H_c\}=C_1[f\alpha'-f'\alpha+2W_1f\alpha] +C_2[f\beta'-f'\beta]+C_3[f\gamma'].
+\end{align}$$
 
 连同 $\{Q^1[u],C_2[f]\}=-C_3[uf]$，七条约束 weakly first class，没有独立 tertiary。$P=0$ 等 rank-deficient loci 不在 generic count 中。
 
-## §5.1：complete CW generator 与 boundary-domain preservation
+## §5.1：Complete CW Generator 与 Boundary-Domain Preservation
 
-$$
+$$\begin{align}
 G[\chi]=\int_0^\pi\left[\chi C_3-\chi\Pi_aV^a-(\partial_a\chi)Q^a\right]d\sigma.
-$$
+\end{align}$$
 
 这里时间 derivative 是给定 gauge parameter 的 derivative。functional variation 不对 canonical fields 作 spatial integration by parts，所以无新增 boundary term。它生成 $\delta X=\chi X,\delta P=-\chi P,\delta V=-\chi V,\delta W=-d\chi$。对完整 $C_2$，$C_3$ term 产生的 $\chi'$ 项与 $Q^1$ improvement 抵消，不能只拿 $C_3$ 去判断 auxiliary-field covariance。
 
 $\chi=c_0+c_1\cos\sigma$ 显示两个 endpoint values 可独立非零；minimal origin/characteristic branches 上无需额外 boundary charge。这里“无需”限于已定义的 unreduced phase space，不包括 displaced coupled sector。
 
-$$
+$$\begin{align}
 \delta H_c|_\partial=[\beta P\cdot\delta X]_0^\pi=0,
-$$
+\end{align}$$
 
-$$
-\dot X=2\alpha P^\sharp+\beta X'+(\beta W_1+\gamma)X,
-\quad \dot P=(\beta P)'-(\beta W_1+\gamma)P.
-$$
+$$\begin{align}
+\dot X=2\alpha P^\sharp+\beta X'+(\beta W_1+\gamma)X, \quad \dot P=(\beta P)'-(\beta W_1+\gamma)P.
+\end{align}$$
 
 $\alpha,\beta W_1+\gamma$ even、$\beta$ odd，因此流保持 target parity 与 smooth reflected domain。$W=0$ 的局部实现还使用 primary sector 的 connection shift：$\delta W_1=\varepsilon$、$\delta W_0=-(V^1/V^0)\varepsilon$，其 odd $\varepsilon$ 保持 parity。先在 time-adapted $V^1=0$ 用 $\partial_\tau\chi=W_0$ 移除 $W_0$，再移除 $W_1$，无需声称 connection curvature 为零。
 
 因此 rank-three regular embedding sector 留下 $D-3$ canonical pairs。四个 auxiliary pairs 被相应 primary/gauge directions 处理；该数不计 global zero modes。特别是 $P^2=0,PX=0$ 不推出 $X^2=0$。
 
-## §5.2：一个明确的 regular local pair
+## §5.2：一个明确的 Regular Local Pair
 
 四维 mixed reflection $R=\mathrm{diag}(1,1,1,-1)$，设 $\rho>0$、$0<a<\pi/2$，
 
-$$
-\theta_*=a\cos\sigma,\quad
-\mathbf n=(\cos\varphi\cos\theta_*,\cos\varphi\sin\theta_*,\sin\varphi),
-\quad\mathbf b=\mathbf n\times\mathbf n',
-$$
+$$\begin{align}
+\theta_*=a\cos\sigma,\quad \mathbf n=(\cos\varphi\cos\theta_*,\cos\varphi\sin\theta_*,\sin\varphi), \quad\mathbf b=\mathbf n\times\mathbf n',
+\end{align}$$
 
-$$
-P_\mu=\rho(-1,\mathbf n),\quad X_0^\mu=(0,r\mathbf b),\quad
-X=X_0+\tau P^\sharp/\kappa.
-$$
+$$\begin{align}
+P_\mu=\rho(-1,\mathbf n),\quad X_0^\mu=(0,r\mathbf b),\quad X=X_0+\tau P^\sharp/\kappa.
+\end{align}$$
 
 $r$ smooth even、$\varphi$ smooth odd、$|\varphi|<\pi/2$。$\mathbf n\cdot\mathbf b=\mathbf n\cdot\mathbf b'=0$ 保证三条约束，且
 
-$$
+$$\begin{align}
 |\mathbf n'|^2=(\theta_*')^2\cos^2\varphi+(\varphi')^2>0
-$$
+\end{align}$$
 
 在 interior 成立。$P,P'$ 独立使 $d(C_1[f]+C_2[g]+C_3[h])=0$ 先给 $g=h=0$，再给 $f=0$，证明 rank-three。
 
-local slice 固定 $X^0=0,P_0=-\rho,\theta(P)=\theta_*$，同时固定 endpoint angles 并要求 endpoint quadratic extrema nondegenerate；这不是任意 nearby profiles 的 global gauge choice。canonical pullback
+Local slice 固定 $X^0=0,P_0=-\rho,\theta(P)=\theta_*$，同时固定 endpoint angles 并要求 endpoint quadratic extrema nondegenerate；这不是任意 nearby profiles 的 global gauge choice。canonical pullback
 
-$$
-\Theta_{\rm red}=-\int\rho r\,\mathbf b\cdot\delta\mathbf n
-=\int p_\varphi\delta\varphi,
-\qquad p_\varphi=-\rho r\theta_*'\cos\varphi,
-$$
+$$\begin{align}
+\Theta_{\rm red}=-\int\rho r\,\mathbf b\cdot\delta\mathbf n =\int p_\varphi\delta\varphi, \qquad p_\varphi=-\rho r\theta_*'\cos\varphi,
+\end{align}$$
 
-$$
-\Omega_{\rm red}=\int\delta p_\varphi\wedge\delta\varphi,
-\quad p_\varphi/\sin\sigma=\rho ar\cos\varphi
-$$
+$$\begin{align}
+\Omega_{\rm red}=\int\delta p_\varphi\wedge\delta\varphi, \quad p_\varphi/\sin\sigma=\rho ar\cos\varphi
+\end{align}$$
 
 为 smooth even。**Checked:** Mathematica 独立计算 $\mathbf n^2=1$、$\mathbf n\mathbf b=\mathbf n\mathbf b'=0$、$\mathbf b\cdot\partial_\varphi\mathbf n=\theta_*'\cos\varphi$，各 residual 为零。有限 reparametrization 的 global existence 和 supplementary right-inverse estimates 未复验。
 
-## §5.3：boost 解、非零 observable 与非退化 pullback
+## §5.3：Boost 解、非零 Observable 与非退化 Pullback
 
 另取固定 $\rho,\kappa>0$、固定 $q_1$，让 $q_0>|q_1|>0$、rapidity $\zeta$ 变化：
 
-$$
-q=q_0+q_1\cos\sigma,\quad
-P_\mu=\rho(-\cosh\zeta,\sinh\zeta,\cos\sigma,\sin\sigma),
-$$
+$$\begin{align}
+q=q_0+q_1\cos\sigma,\quad P_\mu=\rho(-\cosh\zeta,\sinh\zeta,\cos\sigma,\sin\sigma),
+\end{align}$$
 
-$$
-X_0=q(\sinh\zeta,\cosh\zeta,0,0),\qquad
-X=X_0+\tau P^\sharp/\kappa.
-$$
+$$\begin{align}
+X_0=q(\sinh\zeta,\cosh\zeta,0,0),\qquad X=X_0+\tau P^\sharp/\kappa.
+\end{align}$$
 
 **Checked:** arbitrary $\tau$ 下 $P^2=PX=PX'=0$、$X^2=q^2>0$、$(P')^2=\rho^2$、reflection parity 均由 Mathematica 精确重现。该解明确否定把 CW count 解释为 $X^2=0$ target hypersurface 的说法。
 
-$$
+$$\begin{align}
 J^{01}=\int_0^\pi(X^0P^1-X^1P^0)d\sigma=-\pi\rho q_0\ne0,
-$$
+\end{align}$$
 
-$$
-\Theta_{\mathcal S}=J^{01}d\zeta,\qquad
-\Omega_{\mathcal S}=dJ^{01}\wedge d\zeta=-\pi\rho\,dq_0\wedge d\zeta,
-\qquad\{\zeta,J^{01}\}_{\mathcal S}=1.
-$$
+$$\begin{align}
+\Theta_{\mathcal S}=J^{01}d\zeta,\qquad \Omega_{\mathcal S}=dJ^{01}\wedge d\zeta=-\pi\rho\,dq_0\wedge d\zeta, \qquad\{\zeta,J^{01}\}_{\mathcal S}=1.
+\end{align}$$
 
 Mathematica 直接对 $P\cdot dX$ 积分得到 coefficients $(0,-\pi\rho q_0)$，two-form coefficient $-\pi\rho$ 非零。一般 Hamiltonian flow 下又独立得到
 
-$$
-\dot j^{\mu\nu}=(\beta j^{\mu\nu})',\qquad
-\dot J^{\mu\nu}=[\beta j^{\mu\nu}]_0^\pi=0.
-$$
+$$\begin{align}
+\dot j^{\mu\nu}=(\beta j^{\mu\nu})',\qquad \dot J^{\mu\nu}=[\beta j^{\mu\nu}]_0^\pi=0.
+\end{align}$$
 
 守恒依赖 reflected endpoint 的 $\beta=0$。$P^1/P^0|_\partial=\tanh\zeta$ 对允许 embedding gauge directions 不变，解释 rapidity 为什么不是已被约束除掉的纯 gauge parameter。此二维 symplectic pullback 只证明一族物理解的非退化方向，不是全 reduced space 的 global Darboux chart，也没有增加 $D-3$ 以外的 local field pair。
 
-## B.3：受限 central-extension 结论
+## B.3：受限 Central-Extension 结论
 
 原文只分类 **parity-compatible local diagonal-contact** ansatz，支持在正 mode labels 的 $n=m$，并固定 zero-mode actions。negative labels 必须先按 parity 化简；没有独立 negative-mode central coefficients。
 
 OO、PP、AA 的 diagonal term 因 antisymmetry 消失。$(O_n,P_n,A_0)$ Jacobi 给 $-4C_{OP}(n)=0$；$(A_0,P_n,A_n)$ 给 $-4C_{PA}(n)=0$。剩余 $b_n=C_{OA}(n)$ 满足
 
-$$
+$$\begin{align}
 b_2=2b_1,\qquad b_{n+1}=(2n+1)b_1-b_n,
-$$
+\end{align}$$
 
 故 $b_n=nb_1$。取 linear functional $\Phi(A_0)=b_1$，其余零，就有 $\Phi([O_n,A_m])=nb_1\delta_{nm}$，是 coboundary。这个 recurrence 和 coboundary 是源文的 analytic reduction，finite centreless Jacobi grid 不认证一个更大的 cohomology classification。
 
 该结论不排除 nonlocal cocycles、修改 zero-mode module 的 extension、quantum normal-ordering anomaly 或 BRST obstruction。不能将之缩写成“边界不存在中心荷”。
 
-## Equation ledger 与 regional CPS 的翻译
+## Equation Ledger 与 Regional CPS 的翻译
 
 | 对象 | 构造链 | 当前用途与限制 |
 |---|---|---|
@@ -430,7 +393,7 @@ $$
 
 对当前 regional sewing 最有价值的是：先规定两侧 canonical pairing 的归一化，再比较 projected algebra；边界可微性与 bulk first-classness 分开证明；edge coordinate 的提升可以是 canonical，却仍不保持原 constraint surface。这三个结构能直接用作 gauge-theory boundary constructions 的反例测试模板。
 
-## Verification log
+## Verification Log
 
 **Verified:** Mathematica CW covariance、weighted IBP、四条 primary stability、六项 smeared constraint bracket 的 compact-support variational residual、regular-chart vector identities、arbitrary-time boost constraints/reflection/norms、charge density、symplectic pullback、general Lorentz-current balance、finite affine symplectic matrix/involution 和 continuum one-form cancellation。Sage 196 projection pairs、2,744 Jacobi triples、zero-mode normalization 全部精确通过。
 

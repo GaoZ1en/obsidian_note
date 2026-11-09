@@ -15,7 +15,7 @@ summary: "A concrete finite-Weyl, complementary-Rindler-wedge construction that 
 tags: []
 ---
 
-# Verdict and relevance
+# Verdict and Relevance
 
 **Direct verdict.** Correct under the paper's stated free massive scalar, Fock-vacuum, one-particle modular conventions. The finite Weyl algebra, finite-band Gram matrix, six-Weyl violation, Fejér sequence, and quoted numerical values are independently reproduced below. The passage from the abstract boost-spectral vectors to compactly supported spacetime smearings remains theorem-dependent and was not independently reproved.
 
@@ -23,7 +23,7 @@ Reason codes: `T1-boundary`, `T1-symplectic`, `T2-spectral`.
 
 This is unusually close to the vault's scalar-gluing problem because it uses the massive scalar in (1+1) dimensions and complementary Rindler wedges. Its actual lesson is narrower than a gluing theorem: it constructs bounded observables inside the global Fock representation using modular localization. It does **not** factor the global Hilbert space into sharp left/right Fock factors, reconstruct the field from characteristic data, or give a regional canonical sewing map.
 
-# Source map
+# Source Map
 
 1. Section I states the finite-polynomial goal and separates one-quadrature Gaussian settings from genuinely noncommuting local Weyl sums.
 2. Section II fixes the CCR/Bell conventions, proves the contraction version of Tsirelson's bound, and gives the common-Gaussian-measure obstruction for four final one-quadrature settings.
@@ -36,229 +36,196 @@ This is unusually close to the vault's scalar-gluing problem because it uses the
 9. Appendix D records the degree-511 coefficients and the cancellation-safe evaluation formula.
 10. Appendix E gives Abel--Poisson approximants as an alternative odd-harmonic regularization.
 
-# CCR and Bell conventions
+# CCR and Bell Conventions
 
 The one-particle inner product is linear in its second entry, with
 
-$$
-\Delta_{PJ}(h,k)=2\,\operatorname{Im}\langle h|k\rangle,
-\qquad [\varphi(h),\varphi(k)]=i\Delta_{PJ}(h,k).
-$$
+$$\begin{align}
+\Delta_{PJ}(h,k)=2\,\operatorname{Im}\langle h|k\rangle, \qquad [\varphi(h),\varphi(k)]=i\Delta_{PJ}(h,k).
+\end{align}$$
 
 The Weyl convention is
 
-$$
-W(h)=e^{i\varphi(h)},\qquad
-W(h)W(k)=e^{-\frac{i}{2}\Delta_{PJ}(h,k)}W(h+k),
-$$
+$$\begin{align}
+W(h)=e^{i\varphi(h)},\qquad W(h)W(k)=e^{-\frac{i}{2}\Delta_{PJ}(h,k)}W(h+k),
+\end{align}$$
 
 and the vacuum characteristic functional is
 
-$$
+$$\begin{align}
 \langle0|W(h)|0\rangle=e^{-\|h\|^2/2}.
-$$
+\end{align}$$
 
 For commuting Alice/Bob algebras, Hermitian contractions (A,A',B,B'), and
 
-$$
+$$\begin{align}
 \mathcal C=(A+A')B+(A-A')B',
-$$
+\end{align}$$
 
 the paper uses Cauchy--Schwarz plus the parallelogram identity to obtain
 
-$$
-|\omega(\mathcal C)|
-\leq \sqrt{\omega(A^2+A'^2)}
-\sqrt{2\omega(B^2+B'^2)}
+$$\begin{align}
+|\omega(\mathcal C)| \leq \sqrt{\omega(A^2+A'^2)} \sqrt{2\omega(B^2+B'^2)}
 \leq 2\sqrt2.
-$$
+\end{align}$$
 
 This form applies to contractions and does not require $A^2=A'^2=B^2=B'^2=1$.
 
-# Why individual quadratures remain classical for CHSH
+# Why Individual Quadratures Remain Classical for CHSH
 
 For a centered quasifree state
 
-$$
+$$\begin{align}
 \omega(W(h))=e^{-\mu(h,h)/2},
-$$
+\end{align}$$
 
 take four final settings $F(\varphi(f)),F'(\varphi(f')),G(\varphi(g)),G'(\varphi(g'))$, with every cross-wedge Pauli--Jordan pairing zero. The real covariance matrix
 
-$$
-\Gamma_{\alpha\beta}=\mu(h_\alpha,h_\beta),
-\qquad (h_1,h_2,h_3,h_4)=(f,f',g,g')
-$$
+$$\begin{align}
+\Gamma_{\alpha\beta}=\mu(h_\alpha,h_\beta), \qquad (h_1,h_2,h_3,h_4)=(f,f',g,g')
+\end{align}$$
 
 defines one positive Gaussian measure on $\mathbb R^4$. Each of the four cross-region correlators is a marginal expectation of this same measure, so the CHSH value is at most $2$. Same-side noncommutativity is not being represented as a joint quantum measurement; only the four compatible Alice--Bob contexts are reproduced.
 
 The finite-Weyl construction escapes this restriction because Bob's final settings combine two noncommuting axes and are not functions of one quadrature.
 
-# Odd harmonics and exact anticommutation
+# Odd Harmonics and Exact Anticommutation
 
 Let
 
-$$
-p(x)=\sum_{m\in M}c_m\cos(mx),
-\qquad M\subset\{1,3,5,\ldots\},
-\qquad \|p\|_\infty\leq1,
-$$
+$$\begin{align}
+p(x)=\sum_{m\in M}c_m\cos(mx), \qquad M\subset\{1,3,5,\ldots\}, \qquad \|p\|_\infty\leq1,
+\end{align}$$
 
 and define
 
-$$
-S_p(h)=p\!\left(\alpha\varphi(h)\right),
-\qquad \alpha=\sqrt{\frac\pi2}.
-$$
+$$\begin{align}
+S_p(h)=p\!\left(\alpha\varphi(h)\right), \qquad \alpha=\sqrt{\frac\pi2}.
+\end{align}$$
 
 If $\Delta_{PJ}(h,k)=2$, then $U=W(\alpha h)$ and $V=W(\alpha k)$ obey
 
-$$
+$$\begin{align}
 UV=e^{-i\alpha^2\Delta_{PJ}(h,k)}VU=-VU.
-$$
+\end{align}$$
 
 Every pair $(U^m,V^n)$ with odd $(m,n)$, including negative powers from the cosine expansion, anticommutes. Therefore
 
-$$
+$$\begin{align}
 \{S_p(h),S_p(k)\}=0.
-$$
+\end{align}$$
 
 The spectral theorem gives $\|S_p(h)\|\leq1$. Consequently, for anticommuting Hermitian contractions $S,T$,
 
-$$
+$$\begin{align}
 B=\frac{S+T}{\sqrt2},\qquad B'=\frac{S-T}{\sqrt2}
-$$
+\end{align}$$
 
 remain contractions because $B^2=B'^2=(S^2+T^2)/2\leq1$.
 
 The economical polynomial is
 
-$$
+$$\begin{align}
 p_{\rm six}(x)=\frac65\cos x-\frac3{10}\cos3x+\frac1{10}\cos5x.
-$$
+\end{align}$$
 
 It gives six Weyl operators per axis observable.
 
-# Complementary-wedge modular vectors
+# Complementary-Wedge Modular Vectors
 
 For the right/left wedges
 
-$$
-W_R=\{(t,x):x>|t|\},\qquad
-W_L=\{(t,x):-x>|t|\},
-$$
+$$\begin{align}
+W_R=\{(t,x):x>|t|\},\qquad W_L=\{(t,x):-x>|t|\},
+\end{align}$$
 
 the paper uses the Bisognano--Wichmann normalization
 
-$$
-\delta=e^{-2\pi K},\qquad jKj=-K,
-\qquad s=j\delta^{1/2},\qquad s^\dagger=j\delta^{-1/2}.
-$$
+$$\begin{align}
+\delta=e^{-2\pi K},\qquad jKj=-K, \qquad s=j\delta^{1/2},\qquad s^\dagger=j\delta^{-1/2}.
+\end{align}$$
 
 In boost-frequency space $K\psi(\omega)=\omega\psi(\omega)$. The normalized seed packet is
 
-$$
-h_d(\omega)=\frac1{\sqrt{2d}}\,
-\chi_{[\omega_0-d,\,\omega_0+d]}(\omega),
-\qquad 0<d<\omega_0.
-$$
+$$\begin{align}
+h_d(\omega)=\frac1{\sqrt{2d}}\, \chi_{[\omega_0-d,\,\omega_0+d]}(\omega), \qquad 0<d<\omega_0.
+\end{align}$$
 
 Compact boost-frequency support puts the seed in every modular domain, but it is not itself wedge-local. Localization is imposed by $1+s$ and $1+s^\dagger$.
 
 Define
 
-$$
-\lambda^2=e^{-2\pi\omega_0},\qquad
-S_d=\frac{\sinh(2\pi d)}{2\pi d},\qquad
-\mu_+=\lambda^2S_d,
-\qquad \mu_-=\lambda^{-2}S_d.
-$$
+$$\begin{align}
+\lambda^2=e^{-2\pi\omega_0},\qquad S_d=\frac{\sinh(2\pi d)}{2\pi d},\qquad \mu_+=\lambda^2S_d, \qquad \mu_-=\lambda^{-2}S_d.
+\end{align}$$
 
 Then
 
-$$
-\begin{aligned}
-f&=(1-\mu_+)^{-1/2}(1+s)\Psi_d,
-&f'&=(1-\mu_+)^{-1/2}(1+s)i\Psi_d,\\
-g&=(\mu_--1)^{-1/2}(1+s^\dagger)\Psi_d,
-&g'&=-(\mu_--1)^{-1/2}(1+s^\dagger)i\Psi_d.
-\end{aligned}
-$$
+$$\begin{aligned}
+f&=(1-\mu_+)^{-1/2}(1+s)\Psi_d, &f'&=(1-\mu_+)^{-1/2}(1+s)i\Psi_d,\\
+g&=(\mu_--1)^{-1/2}(1+s^\dagger)\Psi_d, &g'&=-(\mu_--1)^{-1/2}(1+s^\dagger)i\Psi_d.
+\end{aligned}$$
 
 The complete Gram data are
 
-$$
-\begin{aligned}
-\|f\|^2=\|f'\|^2&=\nu_A=\frac{1+\mu_+}{1-\mu_+},
-&\langle f|f'\rangle&=i,\\
-\|g\|^2=\|g'\|^2&=\nu_B=\frac{1+\mu_-}{\mu_--1},
-&\langle g|g'\rangle&=i,\\
-\langle f|g\rangle&=\kappa,
-&\langle f'|g'\rangle&=-\kappa,\\
-\langle f|g'\rangle&=0,
-&\langle f'|g\rangle&=0,
-\end{aligned}
-$$
+$$\begin{aligned}
+\|f\|^2=\|f'\|^2&=\nu_A=\frac{1+\mu_+}{1-\mu_+}, &\langle f|f'\rangle&=i,\\
+\|g\|^2=\|g'\|^2&=\nu_B=\frac{1+\mu_-}{\mu_--1}, &\langle g|g'\rangle&=i,\\
+\langle f|g\rangle&=\kappa, &\langle f'|g'\rangle&=-\kappa,\\
+\langle f|g'\rangle&=0, &\langle f'|g\rangle&=0,
+\end{aligned}$$
 
 with
 
-$$
+$$\begin{align}
 \kappa=\frac2{\sqrt{(1-\mu_+)(\mu_--1)}}.
-$$
+\end{align}$$
 
 The within-wedge imaginary parts give the exact symplectic normalization; all cross-wedge products are real.
 
-# Finite CHSH sum and ordered limit
+# Finite CHSH Sum and Ordered Limit
 
 Alice takes $(S_p(f),S_p(f'))$, while Bob takes the normalized sum and difference of $(S_p(g),S_p(g'))$. The CHSH operator reduces to
 
-$$
+$$\begin{align}
 \mathcal C=\sqrt2\bigl[S_p(f)S_p(g)+S_p(f')S_p(g')\bigr].
-$$
+\end{align}$$
 
 The vacuum correlator is the finite double sum
 
-$$
-\begin{aligned}
-E_p(\lambda,d)
-=\frac12\sum_{m,n\in M}c_mc_n\bigg[&
-e^{-\frac{\alpha^2}{2}(m^2\nu_A+n^2\nu_B+2mn\kappa)}\\
+$$\begin{aligned}
+E_p(\lambda,d) =\frac12\sum_{m,n\in M}c_mc_n\bigg[& e^{-\frac{\alpha^2}{2}(m^2\nu_A+n^2\nu_B+2mn\kappa)}\\
 &+e^{-\frac{\alpha^2}{2}(m^2\nu_A+n^2\nu_B-2mn\kappa)}\bigg],
-\end{aligned}
-$$
+\end{aligned}$$
 
 and
 
-$$
+$$\begin{align}
 \langle\mathcal C\rangle=2\sqrt2\,E_p(\lambda,d).
-$$
+\end{align}$$
 
 Set $x=2\pi\omega_0$, $d=r\omega_0$, $0<r<1$, and let $x\downarrow0$. With $u=1-\mu_+$ and $v=\mu_--1$, the cancellation-sensitive exponent has the exact stable form
 
-$$
-m^2\nu_A+n^2\nu_B-2mn\kappa
-=2\left(\frac m{\sqrt u}-\frac n{\sqrt v}\right)^2+n^2-m^2.
-$$
+$$\begin{align}
+m^2\nu_A+n^2\nu_B-2mn\kappa =2\left(\frac m{\sqrt u}-\frac n{\sqrt v}\right)^2+n^2-m^2.
+\end{align}$$
 
 It tends to zero for $m=n$, diverges for $m\neq n$, and the positive-cross-term exponent always diverges. Hence, for every fixed polynomial,
 
-$$
-\lim_{\substack{\omega_0\downarrow0\\d=r\omega_0}}
-\langle\mathcal C\rangle
-=\sqrt2\sum_{m\in M}c_m^2.
-$$
+$$\begin{align}
+\lim_{\substack{\omega_0\downarrow0\\
+d=r\omega_0}} \langle\mathcal C\rangle =\sqrt2\sum_{m\in M}c_m^2.
+\end{align}$$
 
 For the normalized Fejér approximants $p_L$, $\|p_L\|_\infty=1$ and
 
-$$
-\sum_{k=0}^{L-1}c_{k,L}^2<2,
-\qquad
-\sum_{k=0}^{L-1}c_{k,L}^2\longrightarrow2.
-$$
+$$\begin{align}
+\sum_{k=0}^{L-1}c_{k,L}^2<2, \qquad \sum_{k=0}^{L-1}c_{k,L}^2\longrightarrow2.
+\end{align}$$
 
 Thus the ordered modular-concentration and degree limits approach $2\sqrt2$, but no finite continuous odd-harmonic polynomial attains the supremum. The convergence is in vacuum mean square, not operator norm.
 
-# Independent checks
+# Independent Checks
 
 ## Checked
 
@@ -269,16 +236,14 @@ Thus the ordered modular-concentration and degree limits approach $2\sqrt2$, but
 - Mathematica reduces the residual of the stable exponent identity to exactly zero for (u,v>0).
 - The small-(x) expansion of the diagonal exponent is
 
-  $$
-  \nu_A+\nu_B-2\kappa
-  =\frac{(3+r^2)^2}{18}x+O(x^2)
-  =2\left(\frac12+\frac{r^2}{6}\right)^2x+O(x^2),
-  $$
+$$\begin{align}
+\nu_A+\nu_B-2\kappa =\frac{(3+r^2)^2}{18}x+O(x^2) =2\left(\frac12+\frac{r^2}{6}\right)^2x+O(x^2),
+\end{align}$$
 
   matching Appendix B.
 - The PDF was rendered at the central formula and Fejér-appendix pages; equations, labels, and the coefficient bounds are visually consistent with the TeX source.
 
-## Source-derived
+## Source-Derived
 
 - The identification of the fixed-point spaces of $s$ and $s^\dagger$ with the right/left wedge standard subspaces uses Bisognano--Wichmann and modular-localization theorems.
 - The statement that compactly supported spacetime smearings are dense in the wedge standard subspace and preserve a strict violation after symplectic renormalization uses cited one-particle localization results plus strong continuity of the Weyl representation.
@@ -289,11 +254,11 @@ Thus the ordered modular-concentration and degree limits approach $2\sqrt2$, but
 - No independent proof of the Bisognano--Wichmann theorem, wedge duality, or the cited density theorem was attempted; these are imported functional-analytic inputs.
 - The authors provide no explicit compactly supported spacetime test functions or convergence rate from such functions to the boost-spectral packet, so the operational localization approximation cannot be numerically replayed from the submission.
 
-## Not independently verified
+## Not Independently Verified
 
 - The general measurement-scheme claim for every local observable and the type-$\mathrm{III}_1$ characterization were checked only at the level of the manuscript's cited source chain, not reproved.
 
-# Translation to the vault's gluing language
+# Translation to the Vault's Gluing Language
 
 1. The vectors (f,f') and (g,g') are one-particle directions in the **connected global representation**. They are not independent regional oscillators and do not define a sharp product-Fock factorization.
 2. The parameter $d>0$ regulates boost frequency, not the spatial cut. Every finite $d$ gives a normalizable packet; the large Bell value requires $\omega_0,d\to0$ with diverging one-particle norms.
@@ -301,6 +266,6 @@ Thus the ordered modular-concentration and degree limits approach $2\sqrt2$, but
 4. Complementary-wedge commutativity is a local-algebra statement. It does not supply characteristic Goursat data, a corner compatibility condition, or the dynamical response map needed for causal-complement gluing.
 5. The common-Gaussian obstruction is useful for the continuum-limit program: restricting all final observables to functions of single quadratures can erase Bell nonclassicality even though the quasifree state retains cross-region covariance. Noncommuting Weyl directions are essential data.
 
-# Reading recommendation
+# Reading Recommendation
 
 Read Sections III--V and Appendices A--B first. Appendix C is the reusable finite-polynomial lemma. For the current Rindler/gluing project, the most important boundary is the distinction between an exact global modular-localization construction and an actual regional canonical composition theorem.

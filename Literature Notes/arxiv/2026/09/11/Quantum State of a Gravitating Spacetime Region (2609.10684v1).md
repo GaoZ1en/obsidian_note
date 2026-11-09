@@ -25,20 +25,20 @@ Not proven by the paper as an unconditional Hilbert-space construction or as a b
 
 The 2+1-dimensional BTZ example is the strongest evidence. It solves the rotationally symmetric mixed-conformal boundary-value problem and numerically finds
 
-$$
+$$\begin{align}
 S_1=\frac{2\pi r_1}{4G_N}
-$$
+\end{align}$$
 
 for every nonzero deformation amplitude in the tested family. This is a leading semiclassical, replica-symmetric result, not a nonperturbative theorem. The separate appendix resolves one proposed positivity counterexample only on a scanned parameter family.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - Essential for regional gluing: sections 2--4, which define mixed-conformal data, the action and joint term, the GPI pairing, the quotient by null states, and the CRT classical-limit map.
 - Essential for algebraic substructure: section 5, where factorization is visibly an assumption and partial trace is defined by gluing whole connected components.
 - Main technical evidence: section 6, especially the constraint reduction, closure equation, normalized action, and $n\to1$ limit.
 - Limitation audit: the introduction/outlook and appendix A, which separate proposal-level assumptions from the two numerical saddle comparisons.
 
-# Source map
+# Source Map
 
 1. **Introduction.** Proposes the wedge/state correspondence, defines the complex Cauchy-slice deformation and mixed-conformal data, and previews factorization and replica gluing.
 2. **Gravitational Path Integral.** Defines the GPI, its saddle expansion, conformal and mixed-conformal boundary conditions, and the Einstein action with the conformal and Hayward terms.
@@ -48,310 +48,265 @@ for every nonzero deformation amplitude in the tested family. This is a leading 
 6. **Example: Entropy of a Reduced Gravitational State.** Constructs complex mixed-conformal data from a finite maximal BTZ slice, solves the replica boundary-value problem, includes Hayward terms, compares BTZ and thermal-AdS saddles, and extracts $S_1$.
 7. **Appendix A.** Revisits a Dirichlet negative-norm example and numerically finds a dominant CRT-invariant Euclidean saddle for the corresponding special mixed-conformal data.
 
-# Fundamental objects
+# Fundamental Objects
 
 Let $\sigma$ be a closed compact oriented $(d-1)$-manifold with fixed real metric. A vector is represented by an oriented $d$-manifold $J(\sigma)$ bounded by $\sigma$, equipped with mixed-conformal data. Away from selected codimension-one joints $\zeta\subset J(\sigma)$, the data are
 
-$$
+$$\begin{align}
 ([h_{ab}],K)_{J(\sigma)\setminus\zeta};
-$$
+\end{align}$$
 
 on $\zeta$, including $\partial J(\sigma)=\sigma$, the full induced metric is fixed:
 
-$$
+$$\begin{align}
 (\gamma_{pq})_\zeta.
-$$
+\end{align}$$
 
 Thus the construction does not retain a full canonical pair on the preparation manifold. It chooses elliptic polarization-like data: the conformal class $[h]$ and mean curvature $K$ in the interior, but full metric data on the joints.
 
 The GPI on a closed elliptic data manifold is formally
 
-$$
-G[\mathcal J(\varnothing)]
-=\int_{(g,\varphi)\sim\mathcal J(\varnothing)}
-\frac{\mathcal Dg\,\mathcal D\varphi}{\operatorname{Diff}(g)}
-e^{-I[g,\varphi]}.
-$$
+$$\begin{align}
+G[\mathcal J(\varnothing)] =\int_{(g,\varphi)\sim\mathcal J(\varnothing)} \frac{\mathcal Dg\,\mathcal D\varphi}{\operatorname{Diff}(g)} e^{-I[g,\varphi]}.
+\end{align}$$
 
 In the small-$G_N$ expansion,
 
-$$
-G[\mathcal J(\varnothing)]
-\sim\sum_g e^{-I[g]}G^{(1)}[g;\mathcal J]
-\bigl(1+O(G_N)\bigr).
-$$
+$$\begin{align}
+G[\mathcal J(\varnothing)] \sim\sum_g e^{-I[g]}G^{(1)}[g;\mathcal J] \bigl(1+O(G_N)\bigr).
+\end{align}$$
 
 The paper assumes that appropriate saddles exist and that a UV completion controls the terms beyond one loop.
 
-# Mixed-conformal action and ellipticity
+# Mixed-Conformal Action and Ellipticity
 
 For Einstein gravity with cosmological constant, the proposed action is
 
-$$
-\begin{aligned}
-I[g]={}&-\frac{1}{16\pi G_N}\int_M\sqrt g\,(R-2\Lambda)
--\frac{1}{8\pi G_Nd}\int_{\partial M\setminus\zeta}\sqrt h\,K\\
+$$\begin{aligned}
+I[g]={}&-\frac{1}{16\pi G_N}\int_M\sqrt g\,(R-2\Lambda) -\frac{1}{8\pi G_Nd}\int_{\partial M\setminus\zeta}\sqrt h\,K\\
 &-\frac{1}{8\pi G_N}\int_\zeta\sqrt\gamma\,\Theta.
-\end{aligned}
-$$
+\end{aligned}$$
 
 The $1/d$ coefficient is the conformal-boundary coefficient. The last term is the Hayward joint term, with signed exterior angle
 
-$$
+$$\begin{align}
 \cos\Theta=g^{ij}n^{(+)}_in^{(-)}_j.
-$$
+\end{align}$$
 
 Full conformal boundary conditions are known to be elliptic in the perturbative Euclidean problem cited by the paper, while generic Dirichlet conditions are not. The extension to mixed-conformal data changes the condition on finitely many measure-zero joints. The authors expect this to retain strong ellipticity but do not prove it. Therefore the one-loop well-definedness of the proposed generic mixed problem remains conditional.
 
-# Gluing and the Hilbert-space claim
+# Gluing and the Hilbert-Space Claim
 
 Let $\mathbf V_\sigma$ be the free complex vector space generated by all elliptic data manifolds with boundary $\sigma$ and the fixed boundary metric. Involution reverses orientation and conjugates interior data:
 
-$$
-([h],K)\mapsto(\overline{[h]},\overline K),
-\qquad
-\gamma|_\sigma\mapsto\gamma|_\sigma.
-$$
+$$\begin{align}
+([h],K)\mapsto(\overline{[h]},\overline K), \qquad \gamma|_\sigma\mapsto\gamma|_\sigma.
+\end{align}$$
 
 The pairing is defined by gluing and evaluating the GPI,
 
-$$
-\langle\mathcal K(\sigma),\mathcal L(\sigma)\rangle
-:=G[\mathcal K_A^*(\bar\sigma)\mathcal L^A(\sigma)].
-$$
+$$\begin{align}
+\langle\mathcal K(\sigma),\mathcal L(\sigma)\rangle :=G[\mathcal K_A^*(\bar\sigma)\mathcal L^A(\sigma)].
+\end{align}$$
 
 Conjugate symmetry follows formally from the involution property of $G$. Positive semidefiniteness does not follow from the construction; it is the explicit assumption
 
-$$
+$$\begin{align}
 \sum_{m,n}\overline c_m c_n
 \langle\mathcal J_m,\mathcal J_n\rangle\ge0.
-$$
+\end{align}$$
 
 Only after this assumption can one define
 
-$$
-\mathbf N_\sigma
-=\{v\in\mathbf V_\sigma:\langle v,v\rangle=0\},
-\qquad
-\mathbf H_\sigma^{(0)}=\mathbf V_\sigma/\mathbf N_\sigma,
-$$
+$$\begin{align}
+\mathbf N_\sigma =\{v\in\mathbf V_\sigma:\langle v,v\rangle=0\}, \qquad \mathbf H_\sigma^{(0)}=\mathbf V_\sigma/\mathbf N_\sigma,
+\end{align}$$
 
 and complete in the induced norm to obtain $\mathbf H_\sigma$. The usual Cauchy--Schwarz consequence for a positive-semidefinite form makes every null vector orthogonal to every vector, so the quotient is algebraically correct once positivity is granted.
 
-# Lorentzian region from a norm saddle
+# Lorentzian Region from a Norm Saddle
 
 Suppose the norm GPI of $\mathcal J(\sigma)$ has exactly one leading saddle $(M,g)$ as $G_N\to0$. Its CRT conjugate has the same real action and boundary data, so uniqueness forces an antiholomorphic involution $\boldsymbol\Theta$. If the real fixed locus has Lorentzian signature, the paper defines
 
-$$
-w[\mathcal J(\sigma)]
-:=\operatorname{Fix}(\boldsymbol\Theta).
-$$
+$$\begin{align}
+w[\mathcal J(\sigma)] :=\operatorname{Fix}(\boldsymbol\Theta).
+\end{align}$$
 
 It is called the classical spacetime limit only if $\mathcal J(\sigma)$ can also be smoothly deformed toward a Cauchy slice of this locus through states whose norm geometries form a nested family. The authors note that these criteria may need refinement.
 
 Conversely, for a real-analytic Lorentzian wedge $w_\sigma$ with Cauchy slice $t=0$, they complexify the solution and choose
 
-$$
-t=is(r,\ldots),
-\qquad
-s>0\text{ in the interior},
-\qquad
-s|_\sigma=0.
-$$
+$$\begin{align}
+t=is(r,\ldots), \qquad s>0\text{ in the interior}, \qquad s|_\sigma=0.
+\end{align}$$
 
 Retaining only the induced mixed-conformal data defines a candidate state $\mathcal J_s(\sigma)$. The desired inverse relation
 
-$$
+$$\begin{align}
 w[\mathcal J_s(\sigma)]=w_\sigma
-$$
+\end{align}$$
 
 depends on contour and dominance. It fails in the paper's closed de Sitter example: a disconnected Euclidean saddle has lower real action, so the dominant CRT fixed locus is empty.
 
-# Factorization and reduced states
+# Factorization and Reduced States
 
 For disconnected
 
-$$
+$$\begin{align}
 \sigma=\sigma_1\sqcup\cdots\sqcup\sigma_n,
-$$
+\end{align}$$
 
 the paper posits
 
-$$
-\mathbf H_\sigma
-=\mathbf H_{\sigma_1}\otimes\cdots\otimes\mathbf H_{\sigma_n}.
-$$
+$$\begin{align}
+\mathbf H_\sigma =\mathbf H_{\sigma_1}\otimes\cdots\otimes\mathbf H_{\sigma_n}.
+\end{align}$$
 
 This is not derived from the gravitational constraints or the GPI. It is the extra input that permits operators and partial traces. For a bipartition $\sigma=\chi\sqcup\chi_c$, gluing the $\chi_c$ slots gives
 
-$$
-\widetilde\rho^A{}_{A'}(\chi,\bar\chi)
-=(\mathcal J^*)_{A'B}\mathcal J^{AB}.
-$$
+$$\begin{align}
+\widetilde\rho^A{}_{A'}(\chi,\bar\chi) =(\mathcal J^*)_{A'B}\mathcal J^{AB}.
+\end{align}$$
 
 Cyclic gluing defines
 
-$$
-S_n(\widetilde\rho)
-=\frac{1}{1-n}
-\log\frac{\operatorname{tr}(\widetilde\rho^n)}
-{(\operatorname{tr}\widetilde\rho)^n}.
-$$
+$$\begin{align}
+S_n(\widetilde\rho) =\frac{1}{1-n} \log\frac{\operatorname{tr}(\widetilde\rho^n)} {(\operatorname{tr}\widetilde\rho)^n}.
+\end{align}$$
 
 The construction given in the main text traces only unions of whole connected components. A footnote sketches, but does not develop, a tensionless-end-of-the-world-brane regulator for subregions with nonempty boundary.
 
-# BTZ test family
+# BTZ Test Family
 
 The explicit example uses nonrotating BTZ,
 
-$$
-ds^2=-(r^2-r_1^2)dt^2
-+\frac{dr^2}{r^2-r_1^2}+r^2d\phi^2,
-$$
+$$\begin{align}
+ds^2=-(r^2-r_1^2)dt^2 +\frac{dr^2}{r^2-r_1^2}+r^2d\phi^2,
+\end{align}$$
 
 and a left--right-symmetric maximal slice with minimum radius $r_a<r_1$ and finite cutoff $R>r_1$. The undeformed data are
 
-$$
-ds_{\Sigma,0}^2
-=\frac{r^2dr^2}{r^4-r_1^2r^2+\mathcal E_0^2}+r^2d\phi^2,
-\qquad
-K^r{}_r=-K^\phi{}_\phi=-\frac{i\mathcal E_0}{r^2},
-$$
+$$\begin{align}
+ds_{\Sigma,0}^2 =\frac{r^2dr^2}{r^4-r_1^2r^2+\mathcal E_0^2}+r^2d\phi^2, \qquad K^r{}_r=-K^\phi{}_\phi=-\frac{i\mathcal E_0}{r^2},
+\end{align}$$
 
-$$
+$$\begin{align}
 \mathcal E_0=r_a\sqrt{r_1^2-r_a^2}.
-$$
+\end{align}$$
 
 A complex normal deformation $\delta=i\epsilon_R(u)$ vanishes at the two cutoff circles. It changes the conformal modulus and the trace $K(x)$ while leaving a real circle metric at the boundary. The deformation must be nonzero in the interior; $\epsilon=0$ is a degenerate limit that loses the Lorentzian wedge information.
 
-# Constraint reduction
+# Constraint Reduction
 
 In conformal gauge the replica surface has
 
-$$
+$$\begin{align}
 ds_{\Sigma_n}^2=\varrho_n(x)^2(dx^2+d\phi^2),
-$$
+\end{align}$$
 
 with prescribed trace $K(x)$. Define
 
-$$
-\mathcal P_n(x)
-=\mathcal E_n+\int_0^x
-d\widetilde x\,\varrho_n\varrho_n'K.
-$$
+$$\begin{align}
+\mathcal P_n(x) =\mathcal E_n+\int_0^x d\widetilde x\,\varrho_n\varrho_n'K.
+\end{align}$$
 
 Then
 
-$$
-K^\phi{}_{\phi,n}=\frac{\mathcal P_n}{\varrho_n^2},
-\qquad
-K^x{}_{x,n}=K-\frac{\mathcal P_n}{\varrho_n^2}.
-$$
+$$\begin{align}
+K^\phi{}_{\phi,n}=\frac{\mathcal P_n}{\varrho_n^2}, \qquad K^x{}_{x,n}=K-\frac{\mathcal P_n}{\varrho_n^2}.
+\end{align}$$
 
 The Hamiltonian constraint reduces to
 
-$$
-\left(\frac{\varrho_n'}{\varrho_n}\right)'
-=\varrho_n^2-\mathcal P_nK
-+\frac{\mathcal P_n^2}{\varrho_n^2}.
-$$
+$$\begin{align}
+\left(\frac{\varrho_n'}{\varrho_n}\right)' =\varrho_n^2-\mathcal P_nK +\frac{\mathcal P_n^2}{\varrho_n^2}.
+\end{align}$$
 
 Together with $\mathcal P_n'=\varrho_n\varrho_n'K$, it integrates to
 
-$$
-(\varrho_n')^2
-=\varrho_n^4-r_+^2\varrho_n^2-\mathcal P_n^2.
-$$
+$$\begin{align}
+(\varrho_n')^2 =\varrho_n^4-r_+^2\varrho_n^2-\mathcal P_n^2.
+\end{align}$$
 
 Eliminating $\mathcal P_n$ on the branch continued from the norm saddle gives
 
-$$
-\varrho_n''
-=2\varrho_n^3-r_+^2\varrho_n
--\varrho_nK(x)
-\sqrt{\varrho_n^4-r_+^2\varrho_n^2-(\varrho_n')^2}.
-$$
+$$\begin{align}
+\varrho_n'' =2\varrho_n^3-r_+^2\varrho_n -\varrho_nK(x) \sqrt{\varrho_n^4-r_+^2\varrho_n^2-(\varrho_n')^2}.
+\end{align}$$
 
 Mathematica independently verifies the Hamiltonian reduction, propagation of the first integral, and this eliminated second-order equation.
 
 The global conditions are modulus matching,
 
-$$
+$$\begin{align}
 \varrho_n(\pi m_R)=R,
-$$
+\end{align}$$
 
 and smooth closure of $n$ original--involuted pairs around the Euclidean BTZ circle,
 
-$$
+$$\begin{align}
 2n\Delta\tau=\frac{2\pi}{r_+}.
-$$
+\end{align}$$
 
 These determine $\mathcal E_n$ and $r_+(n)$ numerically.
 
-# Action and entropy
+# Action and Entropy
 
 The normalized actions are
 
-$$
-\widehat I^{\rm BTZ}(n)
-=\frac{4G_N}{2\pi r_1}(I_n^{\rm BTZ}-nI_1),
-$$
+$$\begin{align}
+\widehat I^{\rm BTZ}(n) =\frac{4G_N}{2\pi r_1}(I_n^{\rm BTZ}-nI_1),
+\end{align}$$
 
-$$
-\widehat I^{\rm AdS}(n)
-=\frac{4G_N}{2\pi r_1}(I_n^{\rm AdS}-nI_1).
-$$
+$$\begin{align}
+\widehat I^{\rm AdS}(n) =\frac{4G_N}{2\pi r_1}(I_n^{\rm AdS}-nI_1).
+\end{align}$$
 
 At leading order the smaller action is chosen:
 
-$$
-\frac{4G_N}{2\pi r_1}S_n
-=\frac{1}{n-1}min\{\widehat I^{\rm BTZ}(n),
-\widehat I^{\rm AdS}(n)\}.
-$$
+$$\begin{align}
+\frac{4G_N}{2\pi r_1}S_n =\frac{1}{n-1}min\{\widehat I^{\rm BTZ}(n), \widehat I^{\rm AdS}(n)\}.
+\end{align}$$
 
 For the displayed parameter set $(r_a,r_1,R,\epsilon)=(2,\sqrt5,500,10^{-2})$, the source's numerical points give
 
-$$
+$$\begin{align}
 \left.\frac{d\widehat I^{\rm BTZ}}{dn}\right|_{n=1}=1.0000,
-$$
+\end{align}$$
 
 hence
 
-$$
+$$\begin{align}
 S_1=\frac{2\pi r_1}{4G_N}.
-$$
+\end{align}$$
 
 The elementary limit from the stated slope was independently checked exactly. The slope itself and the ODE solution were not independently reproduced because no numerical code or tabulated data accompany the source. The paper's figures show that higher Rényi entropies depend on $(r_a,R,\epsilon)$, that thermal AdS overtakes BTZ near $n=4.03$ for the displayed parameters, and that the common $n\to1$ limit changes discontinuously at $\epsilon=0$.
 
-# Positivity appendix
+# Positivity Appendix
 
 For Dirichlet norm data, a CRT-breaking saddle pair contributes
 
-$$
-e^{-I}+e^{-\bar I}
-=2e^{-\operatorname{Re}I}\cos(\operatorname{Im}I),
-$$
+$$\begin{align}
+e^{-I}+e^{-\bar I} =2e^{-\operatorname{Re}I}\cos(\operatorname{Im}I),
+\end{align}$$
 
 which can be negative. Generic mixed-conformal data induced on the same geometry do not define a norm because the mean-curvature data on the two halves are not CRT conjugates. In the special $K=0$ case where they do define a norm, the appendix constructs a fully Euclidean CRT-invariant saddle and numerically finds
 
-$$
+$$\begin{align}
 I_{\rm Euc}-\operatorname{Re}I_{\rm Wall}<0
-$$
+\end{align}$$
 
 over the scanned $R_0$ range, with $G_N\Delta I\simeq-0.0389053$ at the reference point. This removes that specific counterexample. It is explicitly not a proof of positivity for all mixed-conformal states.
 
-# Relation to the gluing programme
+# Relation to the Gluing Programme
 
 The paper offers a clean geometric sewing dictionary:
 
-$$
-\text{data manifold with slots}
-\xrightarrow{\text{glue slots}}
-\text{closed GPI boundary}
-\xrightarrow{G}
+$$\begin{align}
+\text{data manifold with slots} \xrightarrow{\text{glue slots}}
+\text{closed GPI boundary} \xrightarrow{G}
 \text{pairing or trace}.
-$$
+\end{align}$$
 
 Its most useful ingredients are the orientation/involution bookkeeping, explicit joint terms, and separation between connected-component factorization and geometric gluing. But this is not yet the vault's desired observable-algebra theorem:
 
@@ -363,7 +318,7 @@ Its most useful ingredients are the orientation/involution bookkeeping, explicit
 
 The appropriate use is therefore as a conditional gravitational-state sewing model and a strong finite-BTZ benchmark, not as a finished nonperturbative quantum-gravity Hilbert space.
 
-# Verification record
+# Verification Record
 
 - **Source-derived:** Definitions of elliptic data manifolds, involution, GPI pairing, null quotient, CRT fixed locus, complex slice deformation, factorization, partial trace, replica gluing, BTZ boundary-value problem, action, and appendix saddle comparison were read from the official v1 source.
 - **Checked:** Mathematica gives zero residual for the 2D Hamiltonian-constraint reduction, propagation of the first integral, elimination to the second-order embedding ODE, and the normalized $n\to1$ entropy limit. It also verifies the algebraic $\kappa=x+x^{-1}>2$ form used in the appendix for $x>1$.
@@ -372,7 +327,7 @@ The appropriate use is therefore as a conditional gravitational-state sewing mod
 - **Blocked:** The full numerical BTZ replica solve and appendix parameter scan cannot be independently rerun from the arXiv source because no calculation code or raw numerical tables are included.
 - **Not independently verified:** Generic existence and strong ellipticity of mixed-conformal boundary-value problems; positivity of the full GPI pairing; connected-component factorization in gravity; the general wedge/state correspondence; integration-cycle membership of the displayed saddles; one-loop and nonperturbative corrections; the subregion-with-boundary partial trace sketched only in a footnote.
 
-# What to reuse
+# What to Reuse
 
 - Reuse the exact mixed-conformal action, orientation convention, and Hayward-term bookkeeping when testing finite gravitational cuts.
 - Reuse the abstract-index gluing notation as a state/tensor calculus, while labeling factorization as an assumption.

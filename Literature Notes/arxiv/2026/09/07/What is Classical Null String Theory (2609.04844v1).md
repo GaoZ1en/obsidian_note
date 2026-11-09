@@ -21,7 +21,7 @@ Daily overview: [[2026_09_07_overview]].
 
 Under those conditions the ILST action alone describes a consistent partially gauged Carrollian sigma model. A gauge-complete null string additionally imposes $P\cdot X=0$ and quotients by its local scaling flow. This changes the regular local phase-space dimension from $2(D-2)$ to $2(D-3)$. It does not establish the curved-target, open-string/boundary, global-zero-mode, or quantum theory.
 
-# Source map
+# Source Map
 
 - Section 1 separates a consistent sigma model from a string theory whose changes of intrinsic worldsheet representative are gauge redundancies.
 - Section 2 reviews the ILST action, identifies the missing relative Carroll-Weyl rescaling, constructs the minimally gauged action, and distinguishes necessity of the new constraint from its first-class admissibility.
@@ -31,210 +31,168 @@ Under those conditions the ILST action alone describes a consistent partially ga
 - Appendix B records the complete three-constraint Poisson algebra and the finite-tension obstruction.
 - Appendix C explains why gauging a generic target-space conformal Killing vector is not the same as gauging the worldsheet Carroll-Weyl redundancy.
 
-# Intrinsic data and the missing redundancy
+# Intrinsic Data and the Missing Redundancy
 
 The Carrollian coframe and dual frame are
 
-$$
-(n_a,\ell_a;v^a,\ell^a),\qquad
-v^a n_a=1,\quad v^a\ell_a=0,\quad \ell^a n_a=0,\quad \ell^a\ell_a=1.
-$$
+$$\begin{align}
+(n_a,\ell_a;v^a,\ell^a),\qquad v^a n_a=1,\quad v^a\ell_a=0,\quad \ell^a n_a=0,\quad \ell^a\ell_a=1.
+\end{align}$$
 
 They determine
 
-$$
-h_{ab}=\ell_a\ell_b,
-\qquad
-\varepsilon_{ab}=n_a\ell_b-n_b\ell_a.
-$$
+$$\begin{align}
+h_{ab}=\ell_a\ell_b, \qquad \varepsilon_{ab}=n_a\ell_b-n_b\ell_a.
+\end{align}$$
 
 The same temporal and spatial line fields admit independent changes of representative,
 
-$$
-n_a\mapsto e^{\chi_t}n_a,
-\quad v^a\mapsto e^{-\chi_t}v^a,
-\qquad
-\ell_a\mapsto e^{\chi_s}\ell_a,
-\quad \ell^a\mapsto e^{-\chi_s}\ell^a.
-$$
+$$\begin{align}
+n_a\mapsto e^{\chi_t}n_a, \quad v^a\mapsto e^{-\chi_t}v^a, \qquad \ell_a\mapsto e^{\chi_s}\ell_a, \quad \ell^a\mapsto e^{-\chi_s}\ell^a.
+\end{align}$$
 
 Writing
 
-$$
-\rho=\frac{\chi_t+\chi_s}{2},
-\qquad
-\chi=\frac{\chi_t-\chi_s}{2},
-$$
+$$\begin{align}
+\rho=\frac{\chi_t+\chi_s}{2}, \qquad \chi=\frac{\chi_t-\chi_s}{2},
+\end{align}$$
 
 separates common Weyl rescaling from the relative Carroll-Weyl rescaling. If
 
-$$
-\mathfrak e=\epsilon^{ab}n_a\ell_b,
-\qquad
-\mathcal V^a=|\mathfrak e|^{1/2}v^a,
-$$
+$$\begin{align}
+\mathfrak e=\epsilon^{ab}n_a\ell_b, \qquad \mathcal V^a=|\mathfrak e|^{1/2}v^a,
+\end{align}$$
 
 then the relative transformation gives
 
-$$
+$$\begin{align}
 \mathcal V^a\mapsto e^{-\chi}\mathcal V^a.
-$$
+\end{align}$$
 
 The ILST action
 
-$$
-S_{\mathrm{ILST}}
-=\frac{\kappa}{2}\int_\Sigma d^2\sigma\,
-\mathcal V^a\mathcal V^b
-\eta_{\mu\nu}\partial_aX^\mu\partial_bX^\nu
-$$
+$$\begin{align}
+S_{\mathrm{ILST}} =\frac{\kappa}{2}\int_\Sigma d^2\sigma\, \mathcal V^a\mathcal V^b \eta_{\mu\nu}\partial_aX^\mu\partial_bX^\nu
+\end{align}$$
 
 gauges worldsheet diffeomorphisms and the common rescaling but is not invariant under this relative rescaling when $X^\mu$ is inert. The paper's physical criterion is that all local changes of representative of one intrinsic worldsheet geometry must be gauged.
 
-# Minimal Carroll-Weyl completion
+# Minimal Carroll-Weyl Completion
 
 Introduce a connection $\mathcal W_a$ and assign weight $+1$ to the embedding coordinate:
 
-$$
+$$\begin{align}
 D_aX^\mu=\partial_aX^\mu+\mathcal W_aX^\mu,
-$$
+\end{align}$$
 
-$$
-\delta_\chi\mathcal W_a=-\partial_a\chi,
-\qquad
-\delta_\chi X^\mu=\chi X^\mu,
-\qquad
-\delta_\chi\mathcal V^a=-\chi\mathcal V^a.
-$$
+$$\begin{align}
+\delta_\chi\mathcal W_a=-\partial_a\chi, \qquad \delta_\chi X^\mu=\chi X^\mu, \qquad \delta_\chi\mathcal V^a=-\chi\mathcal V^a.
+\end{align}$$
 
 Then $\delta_\chi(D_aX^\mu)=\chi D_aX^\mu$, so
 
-$$
-S_{\mathrm{CW}}
-=\frac{\kappa}{2}\int_\Sigma d^2\sigma\,
-\mathcal V^a\mathcal V^b\eta_{\mu\nu}D_aX^\mu D_bX^\nu
-$$
+$$\begin{align}
+S_{\mathrm{CW}} =\frac{\kappa}{2}\int_\Sigma d^2\sigma\, \mathcal V^a\mathcal V^b\eta_{\mu\nu}D_aX^\mu D_bX^\nu
+\end{align}$$
 
 is gauge invariant. Varying $\mathcal W_a$ imposes the Gauss law
 
-$$
+$$\begin{align}
 P\cdot X=0.
-$$
+\end{align}$$
 
 Only after deriving this equation may one choose $\mathcal V^a\mathcal W_a=0$. In temporal gauge $\mathcal V^a=(1,0)$, the residual parameter obeys $\partial_\tau\chi=0$, hence $\chi=\chi(\sigma)$. The gauge-fixed Lagrangian then has the ILST form, but its physical phase space still contains the additional constraint and quotient.
 
-# Constraint system and geodesic congruence
+# Constraint System and Geodesic Congruence
 
 In temporal gauge,
 
-$$
+$$\begin{align}
 X^\mu(\tau,\sigma)=P^\mu(\sigma)\tau+Q^\mu(\sigma).
-$$
+\end{align}$$
 
 The gauge-complete system is
 
-$$
-C_1=P^2=0,
-\qquad
-C_2=P\cdot Q'=0,
-\qquad
-C_3=P\cdot Q=0.
-$$
+$$\begin{align}
+C_1=P^2=0, \qquad C_2=P\cdot Q'=0, \qquad C_3=P\cdot Q=0.
+\end{align}$$
 
 A pure affine reparametrization
 
-$$
+$$\begin{align}
 \widetilde\tau=a(\sigma)\tau+b(\sigma)
-$$
+\end{align}$$
 
 acts by
 
-$$
-\widetilde P=a^{-1}P,
-\qquad
-\widetilde Q=Q-\frac{b}{a}P,
-$$
+$$\begin{align}
+\widetilde P=a^{-1}P, \qquad \widetilde Q=Q-\frac{b}{a}P,
+\end{align}$$
 
 and preserves $C_1=C_2=0$ without requiring $C_3$. Thus the third constraint is not an affine-parameter artifact.
 
 Combining the temporal reparametrization with the residual Carroll-Weyl transformation gives
 
-$$
-\widetilde P=\alpha^{-1/2}P,
-\qquad
-\widetilde Q=\alpha^{1/2}Q-\beta\alpha^{-1/2}P,
-$$
+$$\begin{align}
+\widetilde P=\alpha^{-1/2}P, \qquad \widetilde Q=\alpha^{1/2}Q-\beta\alpha^{-1/2}P,
+\end{align}$$
 
 and
 
-$$
-\widetilde C_2
-=C_2-\frac{\beta}{2\alpha}C_1'
--\frac{\beta}{\alpha}
-\left(\frac{\beta'}{\beta}-\frac{\alpha'}{2\alpha}\right)C_1
-+\frac{\alpha'}{2\alpha}P\cdot Q.
-$$
+$$\begin{align}
+\widetilde C_2 =C_2-\frac{\beta}{2\alpha}C_1' -\frac{\beta}{\alpha} \left(\frac{\beta'}{\beta}-\frac{\alpha'}{2\alpha}\right)C_1 +\frac{\alpha'}{2\alpha}P\cdot Q.
+\end{align}$$
 
 Because $\alpha(\sigma)$ is arbitrary, the surface $C_1=C_2=0$ is not preserved unless $C_3=0$. The physical data are therefore
 
-$$
-P^2=0,
-\qquad
-P\cdot Q'=0,
-\qquad
-P\cdot Q=0,
-$$
+$$\begin{align}
+P^2=0, \qquad P\cdot Q'=0, \qquad P\cdot Q=0,
+\end{align}$$
 
 modulo the displayed $(\alpha,\beta)$ action and residual $\sigma$-reparametrizations.
 
-# First-class algebra and finite-tension obstruction
+# First-Class Algebra and Finite-Tension Obstruction
 
 For
 
-$$
-H[f]=\int d\sigma\,f\frac{P^2}{2},
-\quad
-D[g]=\int d\sigma\,gP\cdot X',
-\quad
-S[h]=\int d\sigma\,hP\cdot X,
-$$
+$$\begin{align}
+H[f]=\int d\sigma\,f\frac{P^2}{2}, \quad D[g]=\int d\sigma\,gP\cdot X', \quad S[h]=\int d\sigma\,hP\cdot X,
+\end{align}$$
 
 with $\{X^\mu(\sigma),P_\nu(\sigma')\}=\delta^\mu{}_\nu\delta(\sigma-\sigma')$, the brackets are
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \{H[f],H[k]\}&=0,\\
 \{D[f],D[g]\}&=D[fg'-gf'],\\
 \{H[f],D[g]\}&=H[fg'-gf'],\\
 \{D[g],S[h]\}&=S[gh'],\\
 \{S[h],H[f]\}&=2H[hf],\\
 \{S[h],S[k]\}&=0.
-\end{aligned}
-$$
+\end{aligned}$$
 
 This establishes admissibility at zero tension, subject to the boundary assumption. Necessity instead comes from the intrinsic Carrollian representative redundancy.
 
 At finite tension,
 
-$$
+$$\begin{align}
 H_T=\frac12(P^2+T^2X'^2),
-$$
+\end{align}$$
 
 and the local scaling generated by $S[h]$ gives on $H_T\approx0$
 
-$$
+$$\begin{align}
 \delta_hH_T\approx T^2\bigl(2hX'^2+h'X\cdot X'\bigr).
-$$
+\end{align}$$
 
 This is not a combination of the tensile constraints for arbitrary $h$; the obstruction disappears only at $T=0$.
 
-# Local translation to the vault
+# Local Translation to the Vault
 
 The reusable lesson is that equality of gauge-fixed Lagrangians does not imply equality of physical phase spaces. One must derive the Gauss law before gauge fixing and retain both the constraint and its quotient. This is directly relevant to regional gauge sewing: matching local equations or a gauge-fixed action cannot replace an audit of the constraint surface, gauge generators, boundary terms, and quotient.
 
 The result does **not** supply a regional observable algebra, edge-mode extension, exact gluing map, quantum representation, or curved-target construction. It should therefore be used as a classical gauge-completion benchmark, not as a theorem about the vault's quantum sewing problem.
 
-# Verification log
+# Verification Log
 
 - **Source-derived:** the section tree, intrinsic Carrollian data, minimally gauged action, Gauss law, congruence interpretation, degree count, and stated scope were reconstructed from the official v1 TeX source and the complete 12-page generated PDF.
 - **Checked:** Mathematica reproduced $\delta_\chi(D_aX)=\chi D_aX$; the pure-affine transformations of $C_1,C_2$; the Carroll-Weyl transformations of $C_1,C_2$; all six smeared brackets modulo explicit total derivatives; and the finite-tension obstruction after imposing $H_T\approx0$. All ten residuals were exactly zero.
@@ -242,6 +200,6 @@ The result does **not** supply a regional observable algebra, edge-mode extensio
 - **Not independently verified:** the cited extended-BMS$_3$ representation, the earlier papers' full Hamiltonian reductions, the $D-3$ count at singular strata, quantum anomaly freedom, and any extension to curved targets or open worldsheets.
 - **Blocked:** no boundary symplectic potential or boundary-condition class is supplied, so the bracket algebra cannot be promoted from the stated closed/no-surface-term setting to a boundary-aware charge algebra.
 
-# Reading route
+# Reading Route
 
 Read Section 2.3 for the action-level completion, Appendix B for the algebra, and Section 3 for the distinction between affine reparametrization and the Carroll-Weyl orbit. Appendix A fixes the geometric weights; Appendix C is useful when checking that a proposed target-space gauging really represents the worldsheet redundancy.

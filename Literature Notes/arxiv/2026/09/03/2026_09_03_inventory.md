@@ -7,8 +7,7 @@ Sources:
 - `gr-qc`: Showing new listings for Thursday, 3 September 2026
 - `math-ph`: Showing new listings for Thursday, 3 September 2026
 
-Total deduplicated entries: 132
-Subject codes below are in official primary-then-cross-list order, supplemented from the same official issue to preserve uppercase mathematical categories omitted by the helper normalizer.
+Total deduplicated entries: 132 Subject codes below are in official primary-then-cross-list order, supplemented from the same official issue to preserve uppercase mathematical categories omitted by the helper normalizer.
 
 | arXiv | source status | subjects | title | authors | comments |
 |---|---|---|---|---|---|

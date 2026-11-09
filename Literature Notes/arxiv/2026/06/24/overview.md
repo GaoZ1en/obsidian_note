@@ -5,7 +5,7 @@ summary: "Daily screening of hep-th, gr-qc, and math-ph for boundary, charge, CP
 tags: []
 ---
 
-# Today at a glance
+# Today at a Glance
 
 Beijing run date: 2026-06-24. Official arXiv new-list date checked: Tuesday, 23 June 2026.
 
@@ -18,7 +18,7 @@ Strongest match today:
 
 No active missed-paper correction was present in `profile.md`. No watched-author match was found in the new-list pages for Witten, Chandrasekaran, Freidel, Geiller, Pranzetti, or Speranza.
 
-# High-priority recommendations
+# High-Priority Recommendations
 
 ## A Linearized Obstruction to the Supersymmetric Extension of Conformal Boundary Conditions in Euclidean Gravity
 
@@ -52,9 +52,9 @@ Use case: Compare with AdS3 Chern-Simons boundary conditions, warped AdS3/WCFT c
 
 Verification status: abstract and selected HTML sections were inspected. I did not reproduce the discrete holonomy construction or entropy relation.
 
-# Medium-priority technical candidates
+# Medium-Priority Technical Candidates
 
-## Hamiltonian formulation of Carrollian Maxwell theory in Deformed Light-cone Kaluza-Klein-like Null reduction
+## Hamiltonian Formulation of Carrollian Maxwell Theory in Deformed Light-Cone Kaluza-Klein-Like Null Reduction
 
 - arXiv: [2606.22050v1](https://arxiv.org/abs/2606.22050)
 - Categories: `hep-th`
@@ -70,7 +70,7 @@ Likely use case: Recheck whether electric/magnetic Carroll sectors in local Maxw
 
 Reason it is not high-priority today: It does not construct boundary charges, null flux balance, a cut symplectic form, or a large/proper gauge quotient. It is a Hamiltonian model note rather than a CPS boundary-charge paper.
 
-## Gauge invariant generalizations of the Proca equation and the Yang-Mills-Proca equation
+## Gauge Invariant Generalizations of the Proca Equation and the Yang-Mills-Proca Equation
 
 - arXiv: [2606.20828v1](https://arxiv.org/abs/2606.20828)
 - Categories: `math-ph`
@@ -104,7 +104,7 @@ Compact breakdown: The paper studies resurgent structure of short-time heat-kern
 
 Compact breakdown: The paper builds statistical mechanics for planar Carroll systems using central extensions and Souriau geometric thermodynamics. The source claim is that rotating systems with planar Carroll central charges have a well-defined partition function, logarithmic area-scaling entropy, and a two-dimensional ideal-gas pressure law. Transferable use is to compare Carrollian moment-map thermodynamics with null-boundary or horizon thermodynamic variables. It is not high-priority today because it is not a gauge/gravity boundary-charge construction.
 
-## The conformal null string in d+2 and d dimensions
+## The Conformal Null String in D+2 and D Dimensions
 
 - arXiv: [2606.22498v1](https://arxiv.org/abs/2606.22498)
 - Categories: `hep-th`
@@ -113,7 +113,7 @@ Compact breakdown: The paper builds statistical mechanics for planar Carroll sys
 
 Compact breakdown: The paper relates a conformal string in Dirac $d+2$ dimensional conformal space to a $d$-dimensional tensionless/null string through slice choices and Dirac reduction, mapping a Virasoro semidirect Kac-Moody constraint algebra to Carrollian-Weyl symmetry. It is useful as a small algebraic reference for Carrollian reductions but not directly tied to field-theory boundary charges today.
 
-# Secondary candidates
+# Secondary Candidates
 
 ## N=1 Supersymmetry, Weil-Petersson Volume Recursion, and a Spectral Curve
 
@@ -124,7 +124,7 @@ Compact breakdown: The paper relates a conformal string in Dirac $d+2$ dimension
 
 This derives the Stanford-Witten-Norbury volume recursion from a spectral curve. It is mathematically adjacent to gravity path-integral and recursion technology, but not close enough to current CPS/boundary projects to prioritize today.
 
-## Non-relativistic limits of N=4 supersymmetric Yang-Mills theory and S-duality
+## Non-Relativistic Limits of N=4 Supersymmetric Yang-Mills Theory and S-Duality
 
 - arXiv: [2606.21494v1](https://arxiv.org/abs/2606.21494)
 - Categories: `hep-th`
@@ -142,13 +142,13 @@ This studies nonrelativistic limits, S-duality, monopole moduli-space quantum me
 
 This proposes a codimension-1 entanglement wedge polygon in holographic spacetimes and studies examples in AdS. It is relevant to holographic subregion geometry, but the screening profile today favors explicit charge, CPS, boundary, and Carrollian structures.
 
-# Author-signal watchlist
+# Author-Signal Watchlist
 
 No new-list author match was found for the tracked names in `profile.md`: Edward Witten, Chandrasekaran, Freidel, Geiller, Pranzetti, or Speranza.
 
 Technical Witten signal, not author signal: arXiv:2606.22810v1 is centered on Witten's conformal boundary condition, but Witten is not an author; it is therefore not tagged `A-big-name`.
 
-# Updated versions of tracked papers
+# Updated Versions of Tracked Papers
 
 Checked recent detailed notes and recent arXiv screening outputs represented in `Literature Notes/`.
 
@@ -172,7 +172,7 @@ Checked recent detailed notes and recent arXiv screening outputs represented in 
 
 No update found today for: `2604.11884v2`, `2604.07334v1`, `2604.13163v1`, `2601.07915v1`, `2510.07017v1`.
 
-# Reading order
+# Reading Order
 
 1. Read arXiv:2606.22810 first. It gives the cleanest finite-boundary source/response obstruction and directly informs how to phrase boundary data in CPS language.
 1. Read arXiv:2606.22028 next for a 3d Chern-Simons/warped-gravity boundary-holonomy example.
@@ -180,19 +180,19 @@ No update found today for: `2604.11884v2`, `2604.07334v1`, `2604.13163v1`, `2601
 1. Skim arXiv:2606.20828 only if Proca/Yang-Mills-Proca gauge restoration becomes relevant to the Proca-Chern-Simons notes.
 1. Keep arXiv:2606.21909 and arXiv:2606.23039 as method references for heat kernels/resurgence and Carrollian thermodynamics.
 
-# Why these match my current projects
+# Why These Match My Current Projects
 
-The strongest match is the boundary-polarization theme. arXiv:2606.22810 and arXiv:2606.22028 both force the question of what the real boundary data are: conformal source plus extrinsic-curvature response in one case, holonomy/monodromy sector plus boundary charge data in the other. That is directly aligned with finite-boundary, CPS, charge, corner, and edge-mode work.
+The strongest match is the boundary-polarization theme. ArXiv:2606.22810 and arXiv:2606.22028 both force the question of what the real boundary data are: conformal source plus extrinsic-curvature response in one case, holonomy/monodromy sector plus boundary charge data in the other. That is directly aligned with finite-boundary, CPS, charge, corner, and edge-mode work.
 
-The Maxwell/Proca items are testbed papers. arXiv:2606.22050 is useful because it keeps the Gauss constraint visible during a Carrollian/null reduction. arXiv:2606.20828 is useful because it gives a small massive-vector gauge-restoration model, though it does not yet speak the CPS language.
+The Maxwell/Proca items are testbed papers. ArXiv:2606.22050 is useful because it keeps the Gauss constraint visible during a Carrollian/null reduction. ArXiv:2606.20828 is useful because it gives a small massive-vector gauge-restoration model, though it does not yet speak the CPS language.
 
 The heat-kernel and Carrollian-statistical papers match secondary threads: one-loop/spectral methods for AdS and thermodynamic structures for Carrollian or null systems. They are worth logging but not reading before the boundary/CPS papers.
 
-# Retrospective context
+# Retrospective Context
 
 No previous daily `overview.md` files were found under `Literature Notes/arxiv/`. I lightly scanned the existing monthly arXiv screening notes for January, February, and March 2026. Today's arXiv:2606.22810 naturally follows the finite-null-boundary and corner/edge-mode themes highlighted in February and March, while arXiv:2606.22028 follows the January note's interest in 3d gauge theories and Chern-Simons/BF quantization. The previous recommendations remain unchanged; today's papers add a finite-boundary supergravity obstruction and a discrete warped-CS holonomy example rather than replacing earlier priorities.
 
-# Skipped nearby papers
+# Skipped Nearby Papers
 
 - [2606.20790](https://arxiv.org/abs/2606.20790), Complexity Inequalities for Quantum Subsystems. Reason codes: `T2-dS-BH-holography` nearby only. Skipped because it is complexity/entanglement-inequality oriented and not a charge, boundary condition, CPS, or spectral-calculation paper.
 - [2606.21079](https://arxiv.org/abs/2606.21079), Linear Growth of Holographic Time-like Entanglement Entropy and Kasner exponents. Reason codes: `T2-dS-BH-holography`. Skipped because it is holographic extremal-surface dynamics, not a boundary-charge or phase-space construction.
@@ -201,7 +201,7 @@ No previous daily `overview.md` files were found under `Literature Notes/arxiv/`
 - [2606.22204](https://arxiv.org/abs/2606.22204), AdS black holes with nonminimal $F^{\alpha\beta}F^{\gamma\lambda}R_{\alpha\gamma}R_{\beta\lambda}$ coupling. Reason codes: `T2-dS-BH-holography`, `T2-model`. Skipped because it is black-hole thermodynamic phase-transition modeling, not boundary-charge formalism.
 - [2606.23650](https://arxiv.org/abs/2606.23650), Position-Space Renormalization and Half-Space Truncations in $\phi^4_4$. Reason codes: `T3-math`, boundary-adjacent. Skipped because the half-space observable technology is mathematically nearby but not currently tied to gauge/gravity boundary data.
 
-# Source queries
+# Source Queries
 
 Official arXiv sources used:
 
@@ -235,6 +235,6 @@ Retrieval failures:
 - No arXiv outage or listing failure observed.
 - Formula-rich HTML sometimes suppresses or mangles displayed equations; for detailed notes I therefore mark formula-level claims as source-derived unless independently checked.
 
-# Missed-paper correction follow-up
+# Missed-Paper Correction Follow-Up
 
 `profile.md` contains the missed-paper correction loop instructions but no active correction entries. No current paper was included because of an active correction. No edit was made to `profile.md`.

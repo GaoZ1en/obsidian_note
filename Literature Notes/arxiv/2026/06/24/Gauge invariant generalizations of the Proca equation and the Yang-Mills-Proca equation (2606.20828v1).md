@@ -12,7 +12,7 @@ summary: "This paper is a compact massive-vector testbed for checking how Proca-
 tags: []
 ---
 
-# Why this is technically relevant
+# Why This Is Technically Relevant
 
 This note was created from [[overview]].
 
@@ -20,13 +20,13 @@ The paper is relevant as a small model for gauge restoration in massive vector s
 
 It is medium priority because it does not develop covariant phase space, boundary symplectic forms, edge modes, or charge algebras.
 
-## Minimal setup
+## Minimal Setup
 
 The source starts from Maxwell theory and the ordinary Proca equation for a massive vector field. The Proca equation lacks the Maxwell gauge symmetry. The proposed generalization introduces an additional vector field and assigns gauge transformations so that the enlarged system is invariant.
 
 The HTML states that the enlarged system contains all ordinary Proca solutions in a particular solution class. Later sections extend the idea to several masses and to Yang-Mills-Proca equations.
 
-## Transferable mechanism or formula
+## Transferable Mechanism or Formula
 
 The transferable mechanism is not a specific CPS formula but a modeling strategy:
 
@@ -37,20 +37,20 @@ The transferable mechanism is not a specific CPS formula but a modeling strategy
 
 This can be compared with Stueckelberg formulations, constrained BF embeddings, and massive gauge-field models used as finite-dimensional or field-theoretic testbeds.
 
-## Relation to current projects
+## Relation to Current Projects
 
 For Proca-Chern-Simons work, this paper is a possible reference for asking whether a massive vector system is genuinely gauge invariant or merely contains Proca solutions after embedding. It may also help distinguish physical gauge redundancy from an enlarged solution-generating system.
 
 For Maxwell edge-mode work, it is less directly useful because no boundary phase space or charge construction is given.
 
-## What to check later
+## What to Check Later
 
 1. Compare this extra-vector construction with the standard Stueckelberg Proca action.
 1. Derive the canonical constraints and count degrees of freedom.
 1. Check whether the Yang-Mills-Proca extension closes off shell or only under field equations.
 1. Decide whether the enlarged gauge symmetry introduces extra physical sectors beyond ordinary Proca solutions.
 
-## Source-derived
+## Source-Derived
 
 - The ordinary Proca equation lacks Maxwell gauge symmetry.
 - The paper introduces additional vector fields to build a gauge-invariant enlarged system.
@@ -63,7 +63,7 @@ For Maxwell edge-mode work, it is less directly useful because no boundary phase
 - The HTML introduction and Section 2 were inspected.
 - The daily screening classification as `T2-model` and `T1-symmetry` follows from the massive-vector and gauge-invariance content.
 
-## Not independently verified
+## Not Independently Verified
 
 - I did not rederive the field equations or the claimed inclusion of all Proca solutions.
 - I did not perform canonical constraint counting.

@@ -13,7 +13,7 @@ summary: "The conformal-boundary electric/magnetic Weyl data diagnose radiation 
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** for a non-conformally-flat member of the displayed Plebański--Demiański family, on a regular connected portion of conformal infinity with $P>0$, $Q\neq0$, and nonzero rescaled Weyl tensor, the spacetime carries asymptotic gravitational radiation somewhere on that component if and only if the acceleration parameter $\alpha$ is nonzero. The statement is global/non-identical, not a claim that the local super-Poynting vector is nonzero at every point.
 
@@ -21,58 +21,43 @@ The unconditional wording in the abstract is too strong for degenerate type-O su
 
 Relevance: **high** (`T1-boundary`, `T2-celestial-carrollian`, `T2-dS-BH-holography`).
 
-# Geometric and conformal setup
+# Geometric and Conformal Setup
 
 The physical metric is written as
 
-$$
-d\hat s^2=\Omega^{-2}ds^2,
-\qquad
-\Omega=q-\alpha x,
-$$
+$$\begin{align}
+d\hat s^2=\Omega^{-2}ds^2, \qquad \Omega=q-\alpha x,
+\end{align}$$
 
 where $ds^2$ is the conformal metric. The two quartics $Q(q)$ and $P(x)$ encode the radial and angular sectors. The allowed physical region obeys
 
-$$
-\Omega>0,
-\qquad
-P(x)>0,
-$$
+$$\begin{align}
+\Omega>0, \qquad P(x)>0,
+\end{align}$$
 
 while conformal infinity is
 
-$$
-\mathscr J:\quad \Omega=0
-\quad\Longleftrightarrow\quad
-q=\alpha x.
-$$
+$$\begin{align}
+\mathscr J:\quad \Omega=0 \quad\Longleftrightarrow\quad q=\alpha x.
+\end{align}$$
 
 The normal is
 
-$$
-N_\beta=\nabla_\beta\Omega
-=
-\partial_\beta q-\alpha\partial_\beta x,
-$$
+$$\begin{align}
+N_\beta=\nabla_\beta\Omega = \partial_\beta q-\alpha\partial_\beta x,
+\end{align}$$
 
 with contravariant form
 
-$$
-N^\alpha
-=
-\frac{1}{\rho^2}
-\left(Q\,\delta_q^\alpha-\alpha P\,\delta_x^\alpha\right).
-$$
+$$\begin{align}
+N^\alpha = \frac{1}{\rho^2} \left(Q\,\delta_q^\alpha-\alpha P\,\delta_x^\alpha\right).
+\end{align}$$
 
 At $\mathscr J$, the conformal Einstein equation gives
 
-$$
-N_\mu N^\mu
-=
-\frac{Q+\alpha^2P}{\rho^2}
-=-
-\frac{\Lambda}{3}.
-$$
+$$\begin{align}
+N_\mu N^\mu = \frac{Q+\alpha^2P}{\rho^2} =- \frac{\Lambda}{3}.
+\end{align}$$
 
 Therefore:
 
@@ -82,100 +67,77 @@ Therefore:
 
 For $\Lambda\neq0$ the paper uses
 
-$$
+$$\begin{align}
 n^\alpha=\sqrt{\frac{3}{|\Lambda|}}N^\alpha.
-$$
+\end{align}$$
 
-# Corrected metric parameters and conicity
+# Corrected Metric Parameters and Conicity
 
 The paper starts from a recent compact form of the general type-D Einstein--Maxwell solution and corrects the identification of the cosmological constant. A homothety
 
-$$
+$$\begin{align}
 g=\frac{1}{C_f}g'
-$$
+\end{align}$$
 
 is accompanied by the corresponding rescaling of $\Lambda$. The resulting $C_f>0$ is retained as a physical conicity parameter rather than being fixed as a gauge normalization.
 
 The angular polynomial is
 
-$$
+$$\begin{align}
 P(x)=1+c_1x+c_2x^2+c_3x^3+c_4x^4,
-$$
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 c_1=-2\alpha m,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 c_2=\alpha^2(a^2+e^2+g^2-l^2)-1-\Lambda l^2,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 c_3=2\alpha m-\frac43\Lambda al,
-$$
+\end{align}$$
 
-$$
-c_4=-\alpha^2(a^2+e^2+g^2-l^2)
--\frac{\Lambda}{3}
-\left[a^2+\alpha^2(a^2-l^2)^2\right].
-$$
+$$\begin{align}
+c_4=-\alpha^2(a^2+e^2+g^2-l^2) -\frac{\Lambda}{3} \left[a^2+\alpha^2(a^2-l^2)^2\right].
+\end{align}$$
 
 The allowed $x$-ranges are the connected intervals with $P>0$. Possible axes occur at simple roots $x_i$ of $P$ for a Killing field
 
-$$
-\partial_\varphi+\tau_{x_i}\partial_t,
-\qquad
-\tau_{x_i}=\frac{B(x_i)}{A(x_i)}.
-$$
+$$\begin{align}
+\partial_\varphi+\tau_{x_i}\partial_t, \qquad \tau_{x_i}=\frac{B(x_i)}{A(x_i)}.
+\end{align}$$
 
 The deficit/excess angle obeys
 
-$$
-\left.
-\frac{P'(x)^2}{4C_fA(x)^2}
-\right|_{x=x_i}
-=
-\left(1-\frac{\Delta_{x_i}}{2\pi}\right)^2.
-$$
+$$\begin{align}
+\left. \frac{P'(x)^2}{4C_fA(x)^2} \right|_{x=x_i} = \left(1-\frac{\Delta_{x_i}}{2\pi}\right)^2.
+\end{align}$$
 
 A higher-multiplicity root cannot be a regular axis. At a single simple root, $C_f$ can always remove the deficit. For a finite interval $(x_i,x_j)$, regularity at both ends requires the same axial Killing field and compatible slopes:
 
-$$
-\frac{A(x_i)}{A(x_j)}
-=
-\frac{B(x_i)}{B(x_j)}
-=
-\epsilon\frac{P'(x_i)}{P'(x_j)},
-\qquad
-\epsilon^2=1.
-$$
+$$\begin{align}
+\frac{A(x_i)}{A(x_j)} = \frac{B(x_i)}{B(x_j)} = \epsilon\frac{P'(x_i)}{P'(x_j)}, \qquad \epsilon^2=1.
+\end{align}$$
 
 The paper's radiation/deficit equivalence is consequently conditional: it concerns the subcase with a unique well-defined axial Killing vector and two relevant simple-root components. It is not a theorem that every accelerating coordinate patch must possess a conical defect.
 
-# Boundary metric and conformal stationarity
+# Boundary Metric and Conformal Stationarity
 
 Using coordinates $(\bar t,\bar x,\bar\varphi)$ on $\mathscr J$, the boundary representative is
 
-$$
-h
-=
-\frac{\bar P}{C_f\bar\rho^2}(\omega^1)^2
--\frac{\bar Q}{C_f\bar\rho^2}(\omega^2)^2
--\frac{\Lambda}{3}
-\frac{\bar\rho^4}{\bar P\bar Q}(\omega^3)^2,
-$$
+$$\begin{align}
+h = \frac{\bar P}{C_f\bar\rho^2}(\omega^1)^2 -\frac{\bar Q}{C_f\bar\rho^2}(\omega^2)^2 -\frac{\Lambda}{3} \frac{\bar\rho^4}{\bar P\bar Q}(\omega^3)^2,
+\end{align}$$
 
 where
 
-$$
-\omega^1=\bar A,d\bar\varphi+\alpha^2\bar B,d\bar t,
-\quad
-\omega^2=\bar A,d\bar t-\bar B,d\bar\varphi,
-\quad
-\omega^3=d\bar x.
-$$
+$$\begin{align}
+\omega^1=\bar A,d\bar\varphi+\alpha^2\bar B,d\bar t, \quad \omega^2=\bar A,d\bar t-\bar B,d\bar\varphi, \quad \omega^3=d\bar x.
+\end{align}$$
 
 For $\Lambda<0$, the causal character of boundary conformal Killing fields depends on $Q|_{\mathscr J}$:
 
@@ -185,54 +147,45 @@ For $\Lambda<0$, the causal character of boundary conformal Killing fields depen
 
 Thus conformal stationarity and the paper's radiation criterion are not opposites. A timelike boundary CKVF can coexist with nonzero transverse superenergy flux.
 
-# Principal null directions and rescaled Weyl field
+# Principal Null Directions and Rescaled Weyl Field
 
 The principal null directions $k^\alpha,l^\alpha$ are completed by a complex vector $m^\alpha$. Only the Newman--Penrose type-D scalar survives:
 
-$$
-\psi_0=\psi_1=\psi_3=\psi_4=0,
-\qquad
-\psi_2\neq0.
-$$
+$$\begin{align}
+\psi_0=\psi_1=\psi_3=\psi_4=0, \qquad \psi_2\neq0.
+\end{align}$$
 
 Since the physical Weyl tensor vanishes at the conformal boundary, the finite radiative datum is extracted from
 
-$$
-d_{\alpha\beta\gamma}{}^\delta
-=
-\Omega^{-1}C_{\alpha\beta\gamma}{}^\delta.
-$$
+$$\begin{align}
+d_{\alpha\beta\gamma}{}^\delta = \Omega^{-1}C_{\alpha\beta\gamma}{}^\delta.
+\end{align}$$
 
 The associated rescaled scalar $\phi_2|_{\mathscr J}$ contains separate mass, charge, and cosmological/NUT terms. Its explicit denominator is built from
 
-$$
+$$\begin{align}
 A-i\alpha B.
-$$
+\end{align}$$
 
 This scalar matters for the logical scope of the headline result: the super-Poynting flux is proportional to $|\phi_2|^2$. Acceleration supplies the non-coplanarity that permits radiation, while a nonzero rescaled Weyl field supplies the actual curvature being transported.
 
-# Radiation for positive cosmological constant
+# Radiation for Positive Cosmological Constant
 
 For $\Lambda>0$, $\mathscr J$ is spacelike. The normal and the two principal null directions are coplanar exactly when
 
-$$
+$$\begin{align}
 \alpha P=0.
-$$
+\end{align}$$
 
 Inside the regular angular domain $P>0$, this is equivalent to $\alpha=0$. The determinant of the three directions in the natural $(T,q,x)$ basis is proportional to $2\alpha P$.
 
 The asymptotic super-Poynting vector is tangent to $\mathscr J$ and has the form
 
-$$
-\overline{\mathcal P}^{\alpha}
-=
-18\alpha
-\left(\frac{3}{\Lambda}\right)^{5/2}
-\frac{PQ}{\rho^6}
-(Q-\alpha^2P)
+$$\begin{align}
+\overline{\mathcal P}^{\alpha} = 18\alpha \left(\frac{3}{\Lambda}\right)^{5/2} \frac{PQ}{\rho^6} (Q-\alpha^2P)
 |\phi_2|^2
 (\delta_x^\alpha+\alpha\delta_q^\alpha).
-$$
+\end{align}$$
 
 The intrinsic flux has only an $\bar x$ component. Hence:
 
@@ -242,127 +195,97 @@ The intrinsic flux has only an $\bar x$ component. Hence:
 
 This pointwise/global distinction is absent from the abstract's wording.
 
-# Radiation for negative cosmological constant
+# Radiation for Negative Cosmological Constant
 
 For $\Lambda<0$, $\mathscr J$ is timelike and the relevant flux is the component normal to the boundary as measured by every timelike boundary observer. Write
 
-$$
-u^\alpha
-=
-a k^\alpha+b l^\alpha+d m^\alpha+\bar d\bar m^\alpha,
-$$
+$$\begin{align}
+u^\alpha = a k^\alpha+b l^\alpha+d m^\alpha+\bar d\bar m^\alpha,
+\end{align}$$
 
 with
 
-$$
-ab-d\bar d=\frac12,
-\qquad
-aB_1+bB_2+dE+\bar d\bar E=0.
-$$
+$$\begin{align}
+ab-d\bar d=\frac12, \qquad aB_1+bB_2+dE+\bar d\bar E=0.
+\end{align}$$
 
 For $Q>0$,
 
-$$
-B_1=-B_2
-=-
-\sqrt{\frac{3}{-\Lambda}}
-\frac{\sqrt Q}{\sqrt2\rho},
-\qquad
-E=i\alpha
-\sqrt{\frac{3}{-\Lambda}}
-\frac{\sqrt P}{\sqrt2\rho}.
-$$
+$$\begin{align}
+B_1=-B_2 =- \sqrt{\frac{3}{-\Lambda}} \frac{\sqrt Q}{\sqrt2\rho}, \qquad E=i\alpha \sqrt{\frac{3}{-\Lambda}} \frac{\sqrt P}{\sqrt2\rho}.
+\end{align}$$
 
 The observer-dependent normal flux is
 
-$$
-\overline{\mathcal P}^{\mu}(u)n_\mu
-=
--36
-\sqrt{\frac{3}{-\Lambda}}
-\frac{\sqrt Q}{\sqrt2\rho}
+$$\begin{align}
+\overline{\mathcal P}^{\mu}(u)n_\mu = -36 \sqrt{\frac{3}{-\Lambda}} \frac{\sqrt Q}{\sqrt2\rho}
 |\phi_2|^2
 (ab+d\bar d)(a-b).
-$$
+\end{align}$$
 
 When $\alpha=0$, one has $E=0$ and the tangency constraint forces $a=b$ for every boundary observer, so the flux vanishes for all $u$. When $\alpha\neq0$, admissible observers with $a\neq b$ exist and detect a nonzero flux wherever $\phi_2\neq0$.
 
 For $Q<0$, both principal null directions point outward and
 
-$$
-\overline{\mathcal P}^{\mu}(u)n_\mu
-=
--36
-\sqrt{\frac{3}{-\Lambda}}
-\frac{\sqrt{-Q}}{\sqrt2\rho}
-|\phi_2|^2
-(ab+d\bar d)(a+b)<0.
-$$
+$$\begin{align}
+\overline{\mathcal P}^{\mu}(u)n_\mu = -36 \sqrt{\frac{3}{-\Lambda}} \frac{\sqrt{-Q}}{\sqrt2\rho}
+|\phi_2|^2 (ab+d\bar d)(a+b)<0.
+\end{align}$$
 
 The negative sign means superenergy escapes from the spacetime through the timelike boundary in the paper's orientation convention. Such a region necessarily has $\alpha\neq0$.
 
-# Cotton--York and electric Weyl data
+# Cotton--York and Electric Weyl Data
 
 Define the magnetic and electric parts of the rescaled Weyl tensor relative to $n^\alpha$:
 
-$$
+$$\begin{align}
 C_{\alpha\beta}
 \mathrel{\mathop:}_{\mathscr J}
 \frac12n^\mu n^\nu
 \eta_{\alpha\mu}{}^{\rho\sigma}
 d_{\rho\sigma\beta\nu},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 D_{\alpha\beta}
 \mathrel{\mathop:}_{\mathscr J}
 n^\mu n^\nu d_{\alpha\mu\beta\nu}.
-$$
+\end{align}$$
 
 $C_{\alpha\beta}$ is proportional to the boundary Cotton--York tensor. For $\Lambda>0$, $D_{\alpha\beta}$ is part of the conformal initial/final data on spacelike $\mathscr J$. For $\Lambda<0$, it is the electric Weyl datum commonly related to the holographic stress tensor on timelike $\mathscr J$.
 
 The two no-radiation tests are:
 
-$$
-\Lambda>0:
-\qquad
-D^\mu{}_{\beta}C_{\mu\gamma}
+$$\begin{align}
+\Lambda>0: \qquad D^\mu{}_{\beta}C_{\mu\gamma}
 \eta^{\beta\gamma\alpha\nu}n_\nu=0,
-$$
+\end{align}$$
 
 and
 
-$$
-\Lambda<0:
-\qquad
-\beta D_{\alpha\beta}=\gamma C_{\alpha\beta}
-$$
+$$\begin{align}
+\Lambda<0: \qquad \beta D_{\alpha\beta}=\gamma C_{\alpha\beta}
+\end{align}$$
 
 for functions $\beta,\gamma$ not simultaneously zero.
 
 For the most general nonaccelerating member, both tensors share one trace-free tensor structure:
 
-$$
-C_{\alpha\beta}
-=
-l\left(\frac{\Lambda l^2}{3}-1\right)S_{\alpha\beta},
-\qquad
-D_{\alpha\beta}=-mS_{\alpha\beta}.
-$$
+$$\begin{align}
+C_{\alpha\beta} = l\left(\frac{\Lambda l^2}{3}-1\right)S_{\alpha\beta}, \qquad D_{\alpha\beta}=-mS_{\alpha\beta}.
+\end{align}$$
 
 Consequently,
 
-$$
-l\left(1-\frac{\Lambda l^2}{3}\right)D_{\alpha\beta}
-=
-mC_{\alpha\beta}.
-$$
+$$\begin{align}
+l\left(1-\frac{\Lambda l^2}{3}\right)D_{\alpha\beta} = mC_{\alpha\beta}.
+\end{align}$$
 
 This is an important conceptual result: non-radiating boundary data need not have vanishing Cotton tensor. Conformal flatness of $\mathscr J$ is stronger than absence of radiation.
 
-# What this contributes to the vault
+# What This Contributes to the Vault
 
-## Useful boundary-data distinction
+## Useful Boundary-Data Distinction
 
 The paper gives an explicit example in which the boundary Cotton tensor, electric rescaled Weyl tensor, causal character of $\mathscr J$, and radiation flux are distinct pieces of data. For the AdS/CPS notes, this prevents a common conflation:
 
@@ -371,13 +294,13 @@ The paper gives an explicit example in which the boundary Cotton tensor, electri
 - their alignment can mean no radiation even when neither tensor vanishes;
 - none of these objects is automatically an integrable covariant-phase-space charge.
 
-## What does not transfer directly
+## What Does Not Transfer Directly
 
 The analysis is entirely asymptotic and solution-specific. It does not construct a symplectic form, Wald--Zoupas flux, Hamiltonian generator, or gluing map. The “radiation” criterion is based on the rescaled Weyl super-Poynting tensor rather than Bondi news or an AdS boundary symplectic flux, so comparisons must retain the criterion being used.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Source-derived: official arXiv metadata identifies `2608.15280v1`, published 2026-08-15T15:24:37Z, with primary category `gr-qc`, cross-category `hep-th`, and comment `26 pages`.
 - Source-derived: the complete 899-line TeX source and 26-page official PDF were inspected.
@@ -388,27 +311,25 @@ The analysis is entirely asymptotic and solution-specific. It does not construct
 - Checked: Mathematica expanded $P(x)$ and reproduced all five coefficients $c_0,\ldots,c_4$ exactly.
 - Checked: Mathematica verified at $q=\alpha x$ that
 
-  $$
-  Q+\alpha^2P=-\frac{\Lambda}{3}\rho^2
-  $$
+$$\begin{align}
+Q+\alpha^2P=-\frac{\Lambda}{3}\rho^2
+\end{align}$$
 
   and that $\rho^2=A^2+\alpha^2B^2$.
 - Checked: a direct linear-algebra calculation gives the coplanarity determinant $2\alpha P$, so on a regular $P>0$ boundary region the normal and the two PNDs are coplanar exactly when $\alpha=0$.
 - Checked: xAct reduced the claimed nonradiating relation
 
-  $$
-  l(1-\Lambda l^2/3)D_{ab}-mC_{ab}
-  $$
+$$\begin{align}
+l(1-\Lambda l^2/3)D_{ab}-mC_{ab}
+\end{align}$$
 
   to zero after substituting the displayed common tensor structure.
 - Checked: Mathematica substituted $a=e=g=0$ into the general $\phi_2$ and obtained
 
-  $$
-  \phi_2
-  =-
-  \frac{m(1+\alpha^2l^2)-il[1-(\alpha^2+\Lambda/3)l^2]}
-  {(1+\alpha^2l^2x^2-2i\alpha lx)^3}.
-  $$
+$$\begin{align}
+\phi_2 =- \frac{m(1+\alpha^2l^2)-il[1-(\alpha^2+\Lambda/3)l^2]} {(1+\alpha^2l^2x^2-2i\alpha lx)^3}.
+\end{align}$$
+
 - Checked: setting $m=e=g=l=a=0$ in the general expression gives $\phi_2=0$ identically, demonstrating the conformally-flat degeneration behind the qualification in the direct verdict.
 
 ## Failed
@@ -424,13 +345,13 @@ The analysis is entirely asymptotic and solution-specific. It does not construct
 - Blocked: the metric correction/homothety is explained, but a full independent Einstein--Maxwell residual check would require constructing the entire metric, vector potential, and curvature system; that computation was not feasible within this daily run.
 - Blocked: statements at $Q=0$ are explicitly outside the boundary chart used in the calculation. Extending through those loci would require a different conformal chart.
 
-## Not independently verified
+## Not Independently Verified
 
 - Not independently verified: the exhaustive classification of all quartic-root orderings and every contradiction used to rule out simultaneous axis regularization.
 - Not independently verified: global causal claims involving closed timelike curves after one or two helical identifications.
 - Not independently verified: normalization relating $D_{ab}$ to the renormalized holographic stress tensor for a chosen AdS counterterm convention.
 - Not independently verified: the $\Lambda\to0$ limit of the positive-$\Lambda$ super-Poynting formula, which is singular as written and must be taken in the framework cited by the authors.
 
-# Bottom line
+# Bottom Line
 
 The main reusable insight is not simply “acceleration radiates.” It is the boundary-data mechanism: acceleration tilts the principal null plane relative to conformal infinity, and a nonzero rescaled Weyl field then produces asymptotic superenergy flux. For the vault, the $\Lambda<0$ alignment condition $\beta D=\gamma C$ is especially valuable as an explicit reminder that boundary stress data, intrinsic conformal curvature, radiation, and integrable charges are related but inequivalent structures.

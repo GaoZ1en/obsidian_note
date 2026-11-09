@@ -16,89 +16,71 @@ Back to [[2026_07_01_overview]].
 
 This is a medium-priority technical note. It is substantial and formula-rich, but its main transfer is finite-radius black-hole thermodynamics rather than the user's immediate CPS/charge queue.
 
-# York and shell stability obstruction
+# York and Shell Stability Obstruction
 
 The source begins from the known tension between two stability requirements. York cavity thermodynamics gives stable thermal behavior when the cavity lies inside the appropriate photon-sphere-controlled region, while mechanical stability of shells around a black hole pushes massive shells outside the photon sphere unless the equation of state is special.
 
 The shell variables are surface density $\sigma$ and surface pressure $p$. The mechanical-stability condition quoted in the introduction includes
 
-$$
-\begin{align}
+$$\begin{align}
 \sigma\geq 2p
-\end{align}
-$$
+\end{align}$$
 
 unless one allows superluminal sound. Radiation at the limiting point has $\sigma\simeq 2p$.
 
-# Time-dependent Israel layers
+# Time-Dependent Israel Layers
 
 The paper derives time-dependent Israel junction conditions for spherically symmetric shells and then specializes to static shells. A central statement is that $Z_2$ static shells sit at the photon sphere and are pure tension.
 
 For local reference, the shell/IJC part should be read as a finite-radius boundary mechanics model: the shell's allowed static positions and stability are controlled by the same geometric data that control photon orbits.
 
-# TOV equals IJC at zero radial pressure
+# TOV Equals IJC at Zero Radial Pressure
 
 The technically useful result is the equivalence between the anisotropic TOV equation and the Israel junction conditions when the radial pressure vanishes:
 
-$$
-\begin{align}
-P_r=0
-\quad\Longrightarrow\quad
-\text{TOV fixed-point data coincide with IJC shell data}.
-\end{align}
-$$
+$$\begin{align}
+P_r=0 \quad\Longrightarrow\quad \text{TOV fixed-point data coincide with IJC shell data}.
+\end{align}$$
 
 In the source's fixed-point variables, the photon sphere appears at
 
-$$
-\begin{align}
+$$\begin{align}
 \alpha_\pm=\frac{1}{\sqrt 3}.
-\end{align}
-$$
+\end{align}$$
 
 For orbiting massless radiation, the relevant anisotropic equation-of-state data include
 
-$$
-\begin{align}
+$$\begin{align}
 w_r=0,\qquad w_\perp=\frac12,\qquad \nu=\frac13,\qquad v_{\rm loc}=1.
-\end{align}
-$$
+\end{align}$$
 
 The HBH corresponds to the tangent point where the TOV solution curve meets the critical line.
 
-# Entropy and extended photon spheres
+# Entropy and Extended Photon Spheres
 
 The source identifies the scaling condition needed for black-hole-like entropy:
 
-$$
-\begin{align}
-S\propto M^2
-\quad\Longrightarrow\quad
-\delta=2,
-\end{align}
-$$
+$$\begin{align}
+S\propto M^2 \quad\Longrightarrow\quad \delta=2,
+\end{align}$$
 
 which is also the photon-sphere condition for the self-similar family. The HBH satisfies
 
-$$
-\begin{align}
+$$\begin{align}
 P_r=0,\qquad \delta=2,\qquad T^\mu{}_\mu=-\sigma+2p=0,
-\end{align}
-$$
+\end{align}$$
 
 and hence realizes the continuum of nested shell layers without extra edge walls.
 
 The headline thermodynamic values inherited from the companion papers are
 
-$$
-\begin{align}
+$$\begin{align}
 T=(8\pi M)^{-1},\qquad S=4\pi M^2
-\end{align}
-$$
+\end{align}$$
 
 in the source's units for the asymptotically flat HBH.
 
-# Finite-radius lesson
+# Finite-Radius Lesson
 
 The transferable point is that photon-sphere geometry is not only optical. In this paper it governs:
 
@@ -109,6 +91,6 @@ The transferable point is that photon-sphere geometry is not only optical. In th
 
 This makes the paper a useful reference when finite radial walls, shells, or boxes appear in black-hole thermodynamic notes.
 
-# Verification note
+# Verification Note
 
 No independent IJC/TOV derivation was performed for this medium note. The equations and fixed-point statements are source-derived from the official arXiv HTML. A later useful check would verify the $P_r=0$ TOV-to-IJC reduction and the $\delta=2$ photon-sphere condition in the paper's dimensionless variables.

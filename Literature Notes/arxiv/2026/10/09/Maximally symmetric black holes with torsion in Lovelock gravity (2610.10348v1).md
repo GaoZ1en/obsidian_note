@@ -19,11 +19,9 @@ tags: []
 
 **Correct under the following precise conditions:** 在独立 vielbein/spin connection 的五维 Lovelock 理论中，取
 
-$$
-a:=\frac{\alpha_0}{\alpha_1}<0,\qquad
-\alpha_2=\frac{\alpha_1^2}{12\alpha_0},\qquad
-\alpha_0\alpha_1\ne0,
-$$
+$$\begin{align}
+a:=\frac{\alpha_0}{\alpha_1}<0,\qquad \alpha_2=\frac{\alpha_1^2}{12\alpha_0},\qquad \alpha_0\alpha_1\ne0,
+\end{align}$$
 
 并限制在下述实的静态外部区域，原稿的两参数解满足一阶场方程。相对于同一 $k$、同一耦合的 $C_0=C_1=0$ 背景，指定 Nester 边界表达式的七个等距荷确实为零。三种拓扑的完整代入和相关 covariant momenta 已重算。
 
@@ -31,7 +29,7 @@ $$
 
 版本固定为 [2610.10348v1](https://arxiv.org/abs/2610.10348v1)，2026-10-07 提交，16 页。全文 TeX、PDF 和附录 A/B 已读；关键 printed equations 在 pp.6、8–10、13 的渲染页上复核。PDF 文本提取有字体警告，以 TeX 与渲染确认公式。本文是一个特殊耦合扇区的解族，不是所有静态含挠率解的完备分类。
 
-# 阅读路线与完整 source map
+# 阅读路线与完整 Source Map
 
 先沿 §2 → §§3.1–3.4 → §4/B 阅读“action → 解 → 动量 → 零荷”，再读 §5 的极端极限。§3.5 必须连同本笔记的修正一起使用；附录 A 提供对称生成元，B 提供可直接核对的荷分量。
 
@@ -55,41 +53,31 @@ $$
 
 内部指标 $i,j=0,\ldots,4$，$\eta_{ij}=\operatorname{diag}(+,-,-,-,-)$，$\epsilon_{01234}=+1$。记 $e^{ij\cdots}=e^i\wedge e^j\wedge\cdots$，体积形式 $\mathrm{vol}_5=e^{01234}$。独立变量为 $e^i$ 和反对称 $\omega^{ij}$；本文没有把 $\omega$ 预先设成 Levi–Civita connection：
 
-$$
-T^i=de^i+\omega^i{}_j\wedge e^j,\qquad
-R^{ij}=d\omega^{ij}+\omega^i{}_k\wedge\omega^{kj},
-\qquad \omega^i{}_j=\omega^{ik}\eta_{kj}.
-$$
+$$\begin{align}
+T^i=de^i+\omega^i{}_j\wedge e^j,\qquad R^{ij}=d\omega^{ij}+\omega^i{}_k\wedge\omega^{kj}, \qquad \omega^i{}_j=\omega^{ik}\eta_{kj}.
+\end{align}$$
 
 原稿 (2.1) 的归一化为
 
-$$
-L=\epsilon_{ijkln}\left[
-\frac{\alpha_0}{5}e^{ijkln}
-+\frac{\alpha_1}{3}R^{ij}\wedge e^{kln}
-+\alpha_2 R^{ij}\wedge R^{kl}\wedge e^n\right].
-$$
+$$\begin{align}
+L=\epsilon_{ijkln}\left[ \frac{\alpha_0}{5}e^{ijkln} +\frac{\alpha_1}{3}R^{ij}\wedge e^{kln} +\alpha_2 R^{ij}\wedge R^{kl}\wedge e^n\right].
+\end{align}$$
 
 $\alpha_i$ 已包含该文的整体作用量归一化，不应额外补入 $1/(16\pi G)$。$\delta R^{ij}=D\delta\omega^{ij}$ 后分部积分，得到
 
-$$
-E_i=\epsilon_{ijkln}
-\left(\alpha_0e^{jkln}+\alpha_1R^{jk}\wedge e^{ln}
-+\alpha_2R^{jk}\wedge R^{ln}\right)=0,
-$$
+$$\begin{align}
+E_i=\epsilon_{ijkln} \left(\alpha_0e^{jkln}+\alpha_1R^{jk}\wedge e^{ln} +\alpha_2R^{jk}\wedge R^{ln}\right)=0,
+\end{align}$$
 
-$$
-E_{ij}=\epsilon_{ijkln}
-\left(\alpha_1e^{kl}+2\alpha_2R^{kl}\right)\wedge T^n=0.
-$$
+$$\begin{align}
+E_{ij}=\epsilon_{ijkln} \left(\alpha_1e^{kl}+2\alpha_2R^{kl}\right)\wedge T^n=0.
+\end{align}$$
 
 第二式不普遍强迫 $T^i=0$；本例恰好选择允许非零挠率的退化代数扇区。按原稿反对称指标求和约定，
 
-$$
-\tau_i=\frac{\partial L}{\partial T^i}=0,\qquad
-\rho_{ij}=2\epsilon_{ijkln}
-\left(\frac{\alpha_1}{3}e^{kl}+2\alpha_2R^{kl}\right)\wedge e^n.
-$$
+$$\begin{align}
+\tau_i=\frac{\partial L}{\partial T^i}=0,\qquad \rho_{ij}=2\epsilon_{ijkln} \left(\frac{\alpha_1}{3}e^{kl}+2\alpha_2R^{kl}\right)\wedge e^n.
+\end{align}$$
 
 变分边界势可取 $\Theta=\tfrac12\delta\omega^{ij}\wedge\rho_{ij}$；这个 $1/2$ 与显式反对称指标双重计数配套。转入 metric CPS 前必须先处理独立 connection、Lorentz gauge 和边界项，不能把本解的挠率默默删掉。
 
@@ -97,43 +85,33 @@ $$
 
 令 $\Sigma_k$ 为单位常曲率三维空间，$k=1,0,-1$。原稿采用
 
-$$
-ds^2=f(r)dt^2-\frac{dr^2}{f(r)}-r^2d\Omega_k^2,
-\qquad
-N=B=\sqrt f,
-$$
+$$\begin{align}
+ds^2=f(r)dt^2-\frac{dr^2}{f(r)}-r^2d\Omega_k^2, \qquad N=B=\sqrt f,
+\end{align}$$
 
-$$
-\boxed{f(r)=\frac{C_1}{r^6}-\frac{2C_0}{7}r-\frac{3a}{2}r^2},
-\qquad
-A(r)=6ar+C_0,\qquad Q(r)=\sqrt{k-2ar^2}.
-$$
+$$\begin{align}
+\boxed{f(r)=\frac{C_1}{r^6}-\frac{2C_0}{7}r-\frac{3a}{2}r^2}, \qquad A(r)=6ar+C_0,\qquad Q(r)=\sqrt{k-2ar^2}.
+\end{align}$$
 
 $C_0$、$C_1$ 为独立积分常数。设 $d\Omega_k^2=\delta_{ab}\bar e^a\bar e^b$，$a,b=2,3,4$，则
 
-$$
+$$\begin{align}
 e^0=Ndt,\quad e^1=dr/N,\quad e^a=r\bar e^a,
-$$
+\end{align}$$
 
-$$
-\omega^{01}=A\,dt,\qquad\omega^{0a}=\omega^{1a}=0,
-\qquad
-\omega^{ab}=\bar\omega^{ab}+Q\epsilon^{ab}{}_c\bar e^c,
-\quad \epsilon^{23}{}_4=1.
-$$
+$$\begin{align}
+\omega^{01}=A\,dt,\qquad\omega^{0a}=\omega^{1a}=0, \qquad \omega^{ab}=\bar\omega^{ab}+Q\epsilon^{ab}{}_c\bar e^c, \quad \epsilon^{23}{}_4=1.
+\end{align}$$
 
 这里 $\epsilon^{ab}{}_c$ 表示三维欧氏数值交错符号，与五维 Lorentz 指标升降分开。$\bar\omega$ 使用上式 $\eta$ 的空间连接约定。具体而言，球面/双曲面令 $s(\psi)=\sin\psi/\sinh\psi$，则
 
-$$
-\bar e^2=d\psi,\quad\bar e^3=s\,d\theta,
-\quad\bar e^4=s\sin\theta\,d\varphi,
-$$
+$$\begin{align}
+\bar e^2=d\psi,\quad\bar e^3=s\,d\theta, \quad\bar e^4=s\sin\theta\,d\varphi,
+\end{align}$$
 
-$$
-\omega^{23}=s' d\theta+Q s\sin\theta d\varphi,
-\quad\omega^{24}=-Q s d\theta+s'\sin\theta d\varphi,
-\quad\omega^{34}=Qd\psi+\cos\theta d\varphi.
-$$
+$$\begin{align}
+\omega^{23}=s' d\theta+Q s\sin\theta d\varphi, \quad\omega^{24}=-Q s d\theta+s'\sin\theta d\varphi, \quad\omega^{34}=Qd\psi+\cos\theta d\varphi.
+\end{align}$$
 
 平面采用 $\bar e^a=(dx,dy,dz)$、$\bar\omega^{ab}=0$，所以 $\omega^{23}=Qdz,\omega^{24}=-Qdy,\omega^{34}=Qdx$。这分别对应原稿的 $A_4$ 和 planar $A_2$；其余 $A_i$ 的编号不跨小节通用。
 
@@ -141,51 +119,43 @@ $$
 
 先保留任意 $N(r)$，直接外微分得到
 
-$$
+$$\begin{align}
 T^0=-\left(N'+\frac{A}{N}\right)e^{01},\quad T^1=0,
-$$
+\end{align}$$
 
-$$
-T^2=\frac Nr e^{12}+\frac{2Q}{r}e^{34},\quad
-T^3=\frac Nr e^{13}-\frac{2Q}{r}e^{24},\quad
-T^4=\frac Nr e^{14}+\frac{2Q}{r}e^{23},
-$$
+$$\begin{align}
+T^2=\frac Nr e^{12}+\frac{2Q}{r}e^{34},\quad T^3=\frac Nr e^{13}-\frac{2Q}{r}e^{24},\quad T^4=\frac Nr e^{14}+\frac{2Q}{r}e^{23},
+\end{align}$$
 
 以及
 
-$$
+$$\begin{align}
 R^{01}=-6a e^{01},\qquad R^{0a}=R^{1a}=0,
-$$
+\end{align}$$
 
-$$
-R^{23}=-2a e^{23}+D e^{14},\quad
-R^{24}=-2a e^{24}-D e^{13},\quad
-R^{34}=-2a e^{34}+D e^{12},\qquad
-D=\frac{NQ'}r=-\frac{2aN}{Q}.
-$$
+$$\begin{align}
+R^{23}=-2a e^{23}+D e^{14},\quad R^{24}=-2a e^{24}-D e^{13},\quad R^{34}=-2a e^{34}+D e^{12},\qquad D=\frac{NQ'}r=-\frac{2aN}{Q}.
+\end{align}$$
 
 这些表达式在 $r>0,N>0,Q>0$ 的局部坐标片使用。$Q=0$ 端点需取极限，不能直接代入含 $1/Q$ 的表达式。
 
 代入两组 EOM 后，剩余非零分量都是
 
-$$
-\pm\frac{4\alpha_1}{3N}
-\left(NN'+\frac{3N^2}{r}+6ar+C_0\right)
-$$
+$$\begin{align}
+\pm\frac{4\alpha_1}{3N} \left(NN'+\frac{3N^2}{r}+6ar+C_0\right)
+\end{align}$$
 
 的倍数。写 $f=N^2$ 后，唯一剩余径向条件为
 
-$$
-r f'+6f+12ar^2+2C_0r=0,
-\qquad
-(r^6f)'=-12ar^7-2C_0r^6.
-$$
+$$\begin{align}
+r f'+6f+12ar^2+2C_0r=0, \qquad (r^6f)'=-12ar^7-2C_0r^6.
+\end{align}$$
 
 积分立刻给出上面的 $f$。这补足了原稿“软件求解得到”的中间环节；不是从同一最终公式自行构造一个恒等式。独立坐标外微分与 wedge 程序对 $k=1,0,-1$ 分别得到全部 $E_i,E_{ij}$ 的零残差。解上还可简化
 
-$$
+$$\begin{align}
 N'+A/N=-3N/r,\qquad T^0=3N e^{01}/r.
-$$
+\end{align}$$
 
 未证明所选 connection ansatz 内不存在其他分支，也未证明原稿给出的 ansatz 是所有允许局部 Lorentz 补偿后的最一般形式。
 
@@ -193,23 +163,21 @@ $$
 
 对 $r>0$，$f$ 与
 
-$$
+$$\begin{align}
 P(r)=r^6f=C_1-\frac{2C_0}{7}r^7-\frac{3a}{2}r^8
-$$
+\end{align}$$
 
 有相同零点。由于 $a<0$，$P(\infty)>0$，且
 
-$$
+$$\begin{align}
 P'=-2r^6(C_0+6ar).
-$$
+\end{align}$$
 
 当 $C_0>0$ 时存在唯一正极小值点
 
-$$
-r_e=-\frac{C_0}{6a},\qquad
-C_{1,e}=-\frac{C_0^8}{28(6a)^7}>0,
-\qquad P(r_e)=C_1-C_{1,e}.
-$$
+$$\begin{align}
+r_e=-\frac{C_0}{6a},\qquad C_{1,e}=-\frac{C_0^8}{28(6a)^7}>0, \qquad P(r_e)=C_1-C_{1,e}.
+\end{align}$$
 
 因此原稿 (3.21)–(3.25) 的正根分类成立，但要把 $C_0>0$ 与 extremal equality 一起保留：
 
@@ -223,9 +191,9 @@ $$
 
 这首先是 metric horizon 分类。对 $k=-1$ 还需要
 
-$$
+$$\begin{align}
 Q_h^2=-1-2ar_h^2\ge0.
-$$
+\end{align}$$
 
 若希望上述光滑局部公式直接适用，则取严格大于零；等号情形需专门验证边界延拓。球面和平面在 $r>0$ 自动满足 $Q^2>0$。双曲空间实场只在 $r\ge1/\sqrt{-2a}$ 有定义，不能把形式上的 $r\to0$ 展开直接当成该实解的物理内区。
 
@@ -235,37 +203,29 @@ $$
 
 区分 Levi–Civita 的 $\widetilde R$ 与独立 connection 的 $R$。在原稿曲率号约定下，warped-product metric 给出
 
-$$
-\boxed{\widetilde R=f''+\frac{6f'}r+\frac{6(f-k)}{r^2}
-=-30a+\frac{12C_1}{r^8}-\frac{24C_0}{7r}-\frac{6k}{r^2}},
-$$
+$$\begin{align}
+\boxed{\widetilde R=f''+\frac{6f'}r+\frac{6(f-k)}{r^2} =-30a+\frac{12C_1}{r^8}-\frac{24C_0}{7r}-\frac{6k}{r^2}},
+\end{align}$$
 
-$$
-\boxed{\widetilde R_{\mu\nu\rho\sigma}\widetilde R^{\mu\nu\rho\sigma}
-=(f'')^2+\frac{6(f')^2}{r^2}+\frac{12(f-k)^2}{r^4}}.
-$$
+$$\begin{align}
+\boxed{\widetilde R_{\mu\nu\rho\sigma}\widetilde R^{\mu\nu\rho\sigma} =(f'')^2+\frac{6(f')^2}{r^2}+\frac{12(f-k)^2}{r^4}}.
+\end{align}$$
 
-xAct/xCoba 从球面对称坐标度规独立计算得到以上 Ricci scalar 与 Kretschmann；Mathematica 对一般 $k$ 代数展开。原稿 (3.26)、(3.27) 是 $k=0$ 的表达式，并不适用于所有三种拓扑。其 Kretschmann 与正确式之差为
+XAct/xCoba 从球面对称坐标度规独立计算得到以上 Ricci scalar 与 Kretschmann；Mathematica 对一般 $k$ 代数展开。原稿 (3.26)、(3.27) 是 $k=0$ 的表达式，并不适用于所有三种拓扑。其 Kretschmann 与正确式之差为
 
-$$
-\widetilde K_k-\widetilde K_{\mathrm{printed}}
-=\frac{12k}{7r^{10}}
-\left[-14C_1+r^6(7k+4C_0r+21ar^2)\right].
-$$
+$$\begin{align}
+\widetilde K_k-\widetilde K_{\mathrm{printed}} =\frac{12k}{7r^{10}} \left[-14C_1+r^6(7k+4C_0r+21ar^2)\right].
+\end{align}$$
 
 独立 connection 的标量仍为 $R=-24a$，但二次量不同。用上述 $R^{ij},T^i$，Hodge 由 $\eta=(+----)$ 和 $\mathrm{vol}_5$ 定义，有
 
-$$
-\boxed{R^{ij}\wedge\star R_{ij}
-=\left(96a^2+\frac{24a^2 f}{k-2ar^2}\right)\mathrm{vol}_5},
-$$
+$$\begin{align}
+\boxed{R^{ij}\wedge\star R_{ij} =\left(96a^2+\frac{24a^2 f}{k-2ar^2}\right)\mathrm{vol}_5},
+\end{align}$$
 
-$$
-\boxed{T^i\wedge\star T_i
-=-\frac{12(f+Q^2)}{r^2}\mathrm{vol}_5
-=\left(42a+\frac{24C_0}{7r}-\frac{12k}{r^2}
--\frac{12C_1}{r^8}\right)\mathrm{vol}_5}.
-$$
+$$\begin{align}
+\boxed{T^i\wedge\star T_i =-\frac{12(f+Q^2)}{r^2}\mathrm{vol}_5 =\left(42a+\frac{24C_0}{7r}-\frac{12k}{r^2} -\frac{12C_1}{r^8}\right)\mathrm{vol}_5}.
+\end{align}$$
 
 三种连接分别作坐标外微分并全指标收缩，均与这些结果一致。原稿 (3.29)、(3.30) 仅给出 $k=1$ 分支；其中 (3.29) 与上式球面版本的差经 Mathematica 化简为零。
 
@@ -277,37 +237,29 @@ $$
 
 原稿选择同一拓扑、同一耦合下的 $C_0=C_1=0$ 为 reference，$\Delta X=X-\bar X$。Nester 形式为
 
-$$
-\mathcal B_\xi=(\iota_\xi e^i)\Delta\tau_i
-+\Delta e^i\wedge\iota_\xi\bar\tau_i
-+\frac12(\iota_\xi\omega^{ij})\Delta\rho_{ij}
-+\frac12\Delta\omega^{ij}\wedge\iota_\xi\bar\rho_{ij},
-\qquad Q_\xi=\int_{\partial\Sigma}\mathcal B_\xi.
-$$
+$$\begin{align}
+\mathcal B_\xi=(\iota_\xi e^i)\Delta\tau_i +\Delta e^i\wedge\iota_\xi\bar\tau_i +\frac12(\iota_\xi\omega^{ij})\Delta\rho_{ij} +\frac12\Delta\omega^{ij}\wedge\iota_\xi\bar\rho_{ij}, \qquad Q_\xi=\int_{\partial\Sigma}\mathcal B_\xi.
+\end{align}$$
 
 耦合关系给出
 
-$$
-\rho_{01}=\frac{4(\alpha_1^2-12\alpha_0\alpha_2)}{\alpha_1}e^{234}=0,
-\qquad \rho_{23}=\rho_{24}=\rho_{34}=0.
-$$
+$$\begin{align}
+\rho_{01}=\frac{4(\alpha_1^2-12\alpha_0\alpha_2)}{\alpha_1}e^{234}=0, \qquad \rho_{23}=\rho_{24}=\rho_{34}=0.
+\end{align}$$
 
 其余独立非零分量为
 
-$$
-\rho_{02}=-\frac{8\alpha_1}{3}e^{134},\quad
-\rho_{03}=\frac{8\alpha_1}{3}e^{124},\quad
-\rho_{04}=-\frac{8\alpha_1}{3}e^{123},
-$$
+$$\begin{align}
+\rho_{02}=-\frac{8\alpha_1}{3}e^{134},\quad \rho_{03}=\frac{8\alpha_1}{3}e^{124},\quad \rho_{04}=-\frac{8\alpha_1}{3}e^{123},
+\end{align}$$
 
-$$
+$$\begin{align}
 \rho_{12}=\frac{8\alpha_1}{3}e^{034}-\frac{4\alpha_1N}{3Q}e^{012},
-$$
+\end{align}$$
 
-$$
-\rho_{13}=-\frac{8\alpha_1}{3}e^{024}-\frac{4\alpha_1N}{3Q}e^{013},\quad
-\rho_{14}=\frac{8\alpha_1}{3}e^{023}-\frac{4\alpha_1N}{3Q}e^{014}.
-$$
+$$\begin{align}
+\rho_{13}=-\frac{8\alpha_1}{3}e^{024}-\frac{4\alpha_1N}{3Q}e^{013},\quad \rho_{14}=\frac{8\alpha_1}{3}e^{023}-\frac{4\alpha_1N}{3Q}e^{014}.
+\end{align}$$
 
 这是三种拓扑共同的 frame 表达式。原稿 B.1 相符；B.3 平面分支把后三项系数写成 $2\alpha_1^2N/(3\alpha_0r^2A_2)$，与 $-4\alpha_1N/(3A_2)$ 不相等。该错误未进入下面的零荷结论，因为相应 $\omega^{1a}=0$。
 
@@ -323,27 +275,21 @@ $$
 
 球面/双曲面以 $c(\psi)=\cot\psi/\coth\psi$ 统一写作
 
-$$
+$$\begin{align}
 \xi_1=\cos\theta\,\partial_\psi-c\sin\theta\,\partial_\theta,
-$$
+\end{align}$$
 
-$$
-\xi_2=\sin\theta\cos\varphi\,\partial_\psi
-+c\cos\theta\cos\varphi\,\partial_\theta
--\frac{c\sin\varphi}{\sin\theta}\partial_\varphi,
-$$
+$$\begin{align}
+\xi_2=\sin\theta\cos\varphi\,\partial_\psi +c\cos\theta\cos\varphi\,\partial_\theta -\frac{c\sin\varphi}{\sin\theta}\partial_\varphi,
+\end{align}$$
 
-$$
-\xi_3=\sin\theta\sin\varphi\,\partial_\psi
-+c\cos\theta\sin\varphi\,\partial_\theta
-+\frac{c\cos\varphi}{\sin\theta}\partial_\varphi,
-$$
+$$\begin{align}
+\xi_3=\sin\theta\sin\varphi\,\partial_\psi +c\cos\theta\sin\varphi\,\partial_\theta +\frac{c\cos\varphi}{\sin\theta}\partial_\varphi,
+\end{align}$$
 
-$$
-\xi_4=\cos\varphi\partial_\theta-\cot\theta\sin\varphi\partial_\varphi,
-\quad\xi_5=\sin\varphi\partial_\theta+\cot\theta\cos\varphi\partial_\varphi,
-\quad\xi_6=\partial_\varphi.
-$$
+$$\begin{align}
+\xi_4=\cos\varphi\partial_\theta-\cot\theta\sin\varphi\partial_\varphi, \quad\xi_5=\sin\varphi\partial_\theta+\cot\theta\cos\varphi\partial_\varphi, \quad\xi_6=\partial_\varphi.
+\end{align}$$
 
 平面为三平移 $(\partial_x,\partial_y,\partial_z)$ 及三旋转 $(y\partial_x-x\partial_y,z\partial_x-x\partial_z,z\partial_y-y\partial_z)$。这些 source-derived 具体生成元只需“无 $t,r$ 分量”即可进入零荷论证；本次没有另作全部 Lie bracket/classification 的 CAS 检查。
 
@@ -351,27 +297,21 @@ $$
 
 取 $C_0>0,C_1=C_{1,e}$，则 $f(r_e)=f'(r_e)=0$，并有
 
-$$
-\frac12f''(r_e)=-6a=\frac1{\ell^2},\qquad
-\ell^2=-\frac1{6a}>0,\qquad r_e=\ell^2C_0.
-$$
+$$\begin{align}
+\frac12f''(r_e)=-6a=\frac1{\ell^2},\qquad \ell^2=-\frac1{6a}>0,\qquad r_e=\ell^2C_0.
+\end{align}$$
 
 按原稿 (5.2) 使用 $r=r_e+\varepsilon\rho$、$t=\tau/\varepsilon$，得到
 
-$$
-ds_{\rm NH}^2=\frac{\rho^2}{\ell^2}d\tau^2
--\frac{\ell^2}{\rho^2}d\rho^2-r_e^2d\Omega_k^2.
-$$
+$$\begin{align}
+ds_{\rm NH}^2=\frac{\rho^2}{\ell^2}d\tau^2 -\frac{\ell^2}{\rho^2}d\rho^2-r_e^2d\Omega_k^2.
+\end{align}$$
 
 这里是 $N(r_e+\varepsilon\rho)/\varepsilon\to\rho/\ell$，不是未缩放的 $N$ 本身趋于有限 $\rho/\ell$。又因 $A(r_e)=0$，
 
-$$
-\omega^{01}\to-\frac{\rho}{\ell^2}d\tau,
-\qquad
-\omega^{ab}\to\bar\omega^{ab}
-+Q_e\epsilon^{ab}{}_c\bar e^c,
-\qquad Q_e^2=k+\frac{r_e^2}{3\ell^2}.
-$$
+$$\begin{align}
+\omega^{01}\to-\frac{\rho}{\ell^2}d\tau, \qquad \omega^{ab}\to\bar\omega^{ab} +Q_e\epsilon^{ab}{}_c\bar e^c, \qquad Q_e^2=k+\frac{r_e^2}{3\ell^2}.
+\end{align}$$
 
 $AdS_2\times S^3,AdS_2\times\mathbb R^3,AdS_2\times H^3$ 的 metric 结论成立。双曲分支要求 $\ell^2C_0^2\ge3$；等号的原解边界平滑性未由上述极限自动证明。
 
@@ -379,19 +319,15 @@ $AdS_2\times S^3,AdS_2\times\mathbb R^3,AdS_2\times H^3$ 的 metric 结论成立
 
 对 near-horizon coframe
 
-$$
-e^0=\rho d\tau/\ell,\quad e^1=\ell d\rho/\rho,\quad
- e^a=r_e\bar e^a,
-$$
+$$\begin{align}
+e^0=\rho d\tau/\ell,\quad e^1=\ell d\rho/\rho,\quad e^a=r_e\bar e^a,
+\end{align}$$
 
 直接重算 $de^i+\omega^i{}_je^j$ 得到
 
-$$
-\boxed{T^0_{\rm NH}=T^1_{\rm NH}=0},\qquad
-T^2_{\rm NH}=\frac{2Q_e}{r_e}e^{34},\quad
-T^3_{\rm NH}=-\frac{2Q_e}{r_e}e^{24},\quad
-T^4_{\rm NH}=\frac{2Q_e}{r_e}e^{23}.
-$$
+$$\begin{align}
+\boxed{T^0_{\rm NH}=T^1_{\rm NH}=0},\qquad T^2_{\rm NH}=\frac{2Q_e}{r_e}e^{34},\quad T^3_{\rm NH}=-\frac{2Q_e}{r_e}e^{24},\quad T^4_{\rm NH}=\frac{2Q_e}{r_e}e^{23}.
+\end{align}$$
 
 因此通常只有三维因子保留 axial torsion。AdS₂ 因子的 $de^0=-e^{01}/\ell$ 与 $\omega^0{}_1e^1=+e^{01}/\ell$ 精确抵消。双曲边界 $Q_e=0$ 时，这个极限几何的三维挠率也消失。原稿“both factors carry torsion”不成立。
 
@@ -405,7 +341,7 @@ $$
 
 原稿未计算线性扰动谱、稳定性、ghost 条件、旋转族或区域 sewing；这些是开放方向，不是现有零荷结果的推论。
 
-# Equation ledger 与依赖
+# Equation Ledger 与依赖
 
 | 原稿位置 | 判断 | 依赖及可用范围 |
 |---|---|---|
@@ -422,7 +358,7 @@ $$
 | §§5.1–5.2 “both factors” | Failed | 完整连接给 $T^0=T^1=0$ |
 | §6 的零熵/稳定性讨论 | Conditional / open | 未验证完整 ensemble、边界变分或谱 |
 
-# Verification log
+# Verification Log
 
 - **Verified / Checked — geometric substitution:** xAct 环境中的显式坐标 exterior-algebra 程序使用 32 个五维形式基，独立计算 $d,\wedge,T,R$、全部 EOM、$\rho_{ij}$、二次缩并与 $L$。球面、平面、双曲分支分别得到 EOM 全零、$L=0$，同时保留非零挠率与非零其他 momentum 分量；没有以“所有对象都置零”的方式通过检查。
 - **Verified / Checked — metric invariants:** xAct/xCoba 从球面对称 CTensor metric 计算 Ricci scalar 和全 Riemann contraction，与本笔记公式之差为零。Mathematica 展开一般 $k$ 的 warped-product 表达式并与 printed 公式比较，输出上述非零拓扑差。

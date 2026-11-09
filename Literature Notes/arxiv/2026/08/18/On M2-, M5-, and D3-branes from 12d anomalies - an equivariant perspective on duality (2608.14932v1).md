@@ -13,7 +13,7 @@ summary: "Successive equivariant pushforwards of twelve-dimensional characterist
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** use the standard Bott--Cattaneo fiber identities as an input; restrict to the factorized equivariant extension spaces and toric Calabi--Yau models specified in the paper; keep the authors' flux, Euclidean-continuation, ensemble, and equivariant-normalization conventions; and interpret the resulting zero-forms as protected/Cardy or perturbative contributions rather than complete partition functions. Under these conditions, the M5, M2, and D3 pushforward formulas have the advertised common structure.
 
@@ -23,230 +23,181 @@ The paper's displayed general derivation of Bott--Cattaneo from two affine fixed
 
 Relevance: **medium detailed** (`T2-model`, `T3-math`).
 
-# Equivariant pushforward framework
+# Equivariant Pushforward Framework
 
 The common object is a twelve-form on an extension space $Y_{12}$,
 
-$$
-\mathcal I_0
-=\pi_{Y*}(\mathcal I_{12})
-=\sum_{p\in Y^{\mathbb T}}
-\frac{\mathcal I_{12}|_p}{e^{\mathbb T}(N_p)}.
-$$
+$$\begin{align}
+\mathcal I_0 =\pi_{Y*}(\mathcal I_{12}) =\sum_{p\in Y^{\mathbb T}} \frac{\mathcal I_{12}|_p}{e^{\mathbb T}(N_p)}.
+\end{align}$$
 
 When
 
-$$
+$$\begin{align}
 Y_{12}=Z_d\times X_{12-d},
-$$
+\end{align}$$
 
 the two orders of pushforward factorize formally:
 
-$$
-\pi_{Y*}
-=(\pi_{X\to\mathrm{pt}})_*\circ\pi_{Z*}
-=(\pi_{Z\to\mathrm{pt}})_*\circ\pi_{X*}.
-$$
+$$\begin{align}
+\pi_{Y*} =(\pi_{X\to\mathrm{pt}})_*\circ\pi_{Z*} =(\pi_{Z\to\mathrm{pt}})_*\circ\pi_{X*}.
+\end{align}$$
 
 The paper interprets the first integration as following the directions threaded by the relevant form field. Magnetic charge suggests first integrating the transverse linking geometry; electric chemical potential suggests first integrating the Euclidean worldvolume extension. Supersymmetry imposes the equivariant Calabi--Yau constraint
 
-$$
-c_1^{\mathbb T}(Y_{12})
-=\sum_i\epsilon_i-\sum_\alpha\omega_\alpha=0.
-$$
+$$\begin{align}
+c_1^{\mathbb T}(Y_{12}) =\sum_i\epsilon_i-\sum_\alpha\omega_\alpha=0.
+\end{align}$$
 
 This factorization is exact for the product models used here. Wrapped, intersecting, twisted, or nonfactorized configurations require additional embedding and flux data and are not derived.
 
-# Bott--Cattaneo input and the sign problem
+# Bott--Cattaneo Input and the Sign Problem
 
 For a normalized global angular form on an even sphere bundle,
 
-$$
+$$\begin{align}
 \int_{S^{2k}}e_{2k}=2,
-$$
+\end{align}$$
 
 the standard Bott--Cattaneo identities are
 
-$$
-\int_{S^{2k}}e_{2k}^{,2s+1}=2p_k(E)^s,
-\qquad
-\int_{S^{2k}}e_{2k}^{,2s}=0.
-$$
+$$\begin{align}
+\int_{S^{2k}}e_{2k}^{,2s+1}=2p_k(E)^s, \qquad \int_{S^{2k}}e_{2k}^{,2s}=0.
+\end{align}$$
 
 The intended localization picture assigns opposite Euler classes to the north and south fixed points. It therefore produces
 
-$$
-(\omega_1\cdots\omega_k)^{m-1}
-+[-(\omega_1\cdots\omega_k)]^{m-1},
-$$
+$$\begin{align}
+(\omega_1\cdots\omega_k)^{m-1} +[-(\omega_1\cdots\omega_k)]^{m-1},
+\end{align}$$
 
 which has the required odd/even selection.
 
 However, equation (2.14) instead flips every weight $\omega_i\mapsto-\omega_i$ and multiplies the second affine contribution by $(-1)^k$. With
 
-$$
-\mathbb V_{\mathbb C^k}(\lambda;\omega)
-=\frac{e^{\sum_i\omega_i\lambda^i}}{\prod_i\omega_i},
-\qquad
-\mathcal D_k=\prod_i\partial_{\lambda^i},
-$$
+$$\begin{align}
+\mathbb V_{\mathbb C^k}(\lambda;\omega) =\frac{e^{\sum_i\omega_i\lambda^i}}{\prod_i\omega_i}, \qquad \mathcal D_k=\prod_i\partial_{\lambda^i},
+\end{align}$$
 
 its left-hand side evaluates to
 
-$$
+$$\begin{align}
 \left[1+(-1)^{km}\right]
 (\omega_1\cdots\omega_k)^{m-1},
-$$
+\end{align}$$
 
 not the printed parity formula. For the physically central $k=2$ case, $m=2$ gives $2\omega_1\omega_2$ instead of zero. The south-pole orientation/weight prescription must be changed before this becomes a derivation of Bott--Cattaneo.
 
-# M5 reduction
+# M5 Reduction
 
 The M-theory twelve-form is
 
-$$
-\mathcal I_{12}^{\mathrm M}
-=\frac16E_4^3+E_4I_8,
-\qquad
-I_8=\frac1{192}\left[p_1(TM)^2-4p_2(TM)\right].
-$$
+$$\begin{align}
+\mathcal I_{12}^{\mathrm M} =\frac16E_4^3+E_4I_8, \qquad I_8=\frac1{192}\left[p_1(TM)^2-4p_2(TM)\right].
+\end{align}$$
 
 For $N_{\mathrm{M5}}$ magnetic branes,
 
-$$
-E_4=\frac{N_{\mathrm{M5}}}{2}e_4,
-\qquad
-Y_{12}=X_8^{(\parallel)}\times S^4_{(\perp)}.
-$$
+$$\begin{align}
+E_4=\frac{N_{\mathrm{M5}}}{2}e_4, \qquad Y_{12}=X_8^{(\parallel)}\times S^4_{(\perp)}.
+\end{align}$$
 
 Using the standard Bott--Cattaneo identity gives
 
-$$
-\pi_{S^4*}(E_4)=N_{\mathrm{M5}},
-\qquad
-\pi_{S^4*}(E_4^3)
-=\frac{N_{\mathrm{M5}}^3}{4}(\omega_1\omega_2)^2.
-$$
+$$\begin{align}
+\pi_{S^4*}(E_4)=N_{\mathrm{M5}}, \qquad \pi_{S^4*}(E_4^3) =\frac{N_{\mathrm{M5}}^3}{4}(\omega_1\omega_2)^2.
+\end{align}$$
 
 The resulting eight-form is
 
-$$
-\begin{aligned}
-\mathcal I_8^{\mathrm{M5}}
-={}&\frac{N_{\mathrm{M5}}^3}{24}(\omega_1\omega_2)^2\\
-&+\frac{N_{\mathrm{M5}}}{48}
-\left[
-\frac14\left(\omega_1^2+\omega_2^2-p_1(TX_8)\right)^2
--(\omega_1\omega_2)^2-p_2(TX_8)
-\right].
-\end{aligned}
-$$
+$$\begin{aligned}
+\mathcal I_8^{\mathrm{M5}} ={}&\frac{N_{\mathrm{M5}}^3}{24}(\omega_1\omega_2)^2\\
+&+\frac{N_{\mathrm{M5}}}{48} \left[ \frac14\left(\omega_1^2+\omega_2^2-p_1(TX_8)\right)^2 -(\omega_1\omega_2)^2-p_2(TX_8) \right].
+\end{aligned}$$
 
 After the second pushforward over a toric $X_8$, this reproduces the classical inflow expression in terms of its equivariant volume $C_X$ and normalized equivariant Chern numbers $k_p^X$. It is classical inflow data; the exact interacting $(2,0)$ anomaly requires the usual index-theoretic finite-$N$ corrections.
 
-# Electric M2 polarization
+# Electric M2 Polarization
 
 For M2 branes the same product is polarized oppositely:
 
-$$
-Y_{12}=\mathbb C^2_{(\parallel)}\times X_8^{(\perp)},
-\qquad
-E_4=\frac{\mu_{\mathrm{M2}}}{2\pi i}
-e(T\mathbb C^2).
-$$
+$$\begin{align}
+Y_{12}=\mathbb C^2_{(\parallel)}\times X_8^{(\perp)}, \qquad E_4=\frac{\mu_{\mathrm{M2}}}{2\pi i} e(T\mathbb C^2).
+\end{align}$$
 
 Single-fixed-point localization over $\mathbb C^2$ yields
 
-$$
+$$\begin{align}
 \pi_*(e^m)=(\omega_1\omega_2)^{m-1}.
-$$
+\end{align}$$
 
 Consequently,
 
-$$
-\begin{aligned}
--2\pi i\,\mathcal I_0^{\mathrm{M2}}(\mu)
-={}&-\frac{\mu_{mathrm{M2}}^3}{24\pi^2}
-(\omega_1\omega_2)^2C_X(\epsilon)\\
-&+\frac{\mu_{\mathrm{M2}}}{24}
-\left(k_1^Xk_3^X-\omega_1\omega_2k_2^X-k_4^X\right)
+$$\begin{aligned}
+-2\pi i\,\mathcal I_0^{\mathrm{M2}}(\mu) ={}&-\frac{\mu_{mathrm{M2}}^3}{24\pi^2} (\omega_1\omega_2)^2C_X(\epsilon)\\
+&+\frac{\mu_{\mathrm{M2}}}{24} \left(k_1^Xk_3^X-\omega_1\omega_2k_2^X-k_4^X\right)
 C_X(\epsilon).
-\end{aligned}
-$$
+\end{aligned}$$
 
 The cubic and linear dependence matches the genus-zero and genus-one constant-map structures quoted from earlier work, including the Euler-characteristic charge shift
 
-$$
+$$\begin{align}
 N_{\mathrm{M2}}\longrightarrow
 N_{\mathrm{M2}}-\frac{\chi(X)}{24}.
-$$
+\end{align}$$
 
 This is evidence that the anomaly integral captures the universal constant-map sector. It does not derive higher-genus constants, worldsheet instantons, nonperturbative corrections, or the full M2 partition function.
 
-# D3 electric/magnetic pair
+# D3 electric/magnetic Pair
 
 For D3 branes the proposed characteristic form is
 
-$$
-\mathcal I_{12}^{\mathrm{IIB}}
-=\frac12E_6\wedge E_6,
-\qquad
-Y_{12}=X_6^{(\parallel)}\times Z_6^{(\perp)}.
-$$
+$$\begin{align}
+\mathcal I_{12}^{\mathrm{IIB}} =\frac12E_6\wedge E_6, \qquad Y_{12}=X_6^{(\parallel)}\times Z_6^{(\perp)}.
+\end{align}$$
 
 In the magnetic frame,
 
-$$
-E_6=N e(T\mathbb C^3),
-\qquad
-\mathcal I_0^{\mathrm{D3}}(N)
-=\frac{N^2}{2}\frac{C_X(\epsilon)}{C_Z(\omega)}.
-$$
+$$\begin{align}
+E_6=N e(T\mathbb C^3), \qquad \mathcal I_0^{\mathrm{D3}}(N) =\frac{N^2}{2}\frac{C_X(\epsilon)}{C_Z(\omega)}.
+\end{align}$$
 
 In the electric frame,
 
-$$
-E_6=i\mu e(T\mathbb C^3),
-\qquad
-\mathcal I_0^{\mathrm{D3}}(\mu)
-=-\frac{\mu^2}{2}\frac{C_Z(\omega)}{C_X(\epsilon)}.
-$$
+$$\begin{align}
+E_6=i\mu e(T\mathbb C^3), \qquad \mathcal I_0^{\mathrm{D3}}(\mu) =-\frac{\mu^2}{2}\frac{C_Z(\omega)}{C_X(\epsilon)}.
+\end{align}$$
 
 With the convention
 
-$$
-\mathcal I_0(N)
-=\underset{\mu}{\operatorname{ext}}
-\left[\mathcal I_0(\mu)+\mu N\right],
-$$
+$$\begin{align}
+\mathcal I_0(N) =\underset{\mu}{\operatorname{ext}} \left[\mathcal I_0(\mu)+\mu N\right],
+\end{align}$$
 
 the saddle $\mu=N C_X/C_Z$ exactly reproduces the magnetic answer. This is a consistent Legendre relation for the self-dual D3 system.
 
 Equation (4.14), however, writes $\mathcal I_0(N)$ itself as a Gaussian integral with exponent $2C_Z\widetilde\mu^2-2N\widetilde\mu$. Besides equating a zero-form/logarithm to a partition integral, its saddle exponent is $-N^2/(2C_Z)$ rather than the positive canonical expression displayed in equation (4.13), unless an additional contour and overall logarithmic/sign convention is supplied.
 
-# Toric cubic normalization
+# Toric Cubic Normalization
 
 The general D3 discussion writes
 
-$$
-\frac1{C_Z(\omega)}
-=\sum_{i,j,k}
-\left|\det(v^i,v^j,v^k)\right|
-\omega_i\omega_j\omega_k.
-$$
+$$\begin{align}
+\frac1{C_Z(\omega)} =\sum_{i,j,k} \left|\det(v^i,v^j,v^k)\right| \omega_i\omega_j\omega_k.
+\end{align}$$
 
 If the sum is over ordered triples as written, each unordered triple occurs six times. The conifold appendix correctly inserts $1/6$ in the corresponding ordered sum. Thus the general formula either needs a $1/6$ or must explicitly restrict the sum to $i<j<k$; its present equality conflicts with the appendix normalization.
 
-# Likely use for current projects
+# Likely Use for Current Projects
 
 - The paper is a useful example of commuting partial equivariant pushforwards and of how the order of reduction encodes an ensemble/polarization choice.
 - The separation between characteristic-class data and a full path-integral derivation is directly relevant to the vault's insistence on claim tiers.
 - The fixed-point gluing sign error is a concrete warning that a correct global fiber identity is not automatically reproduced by a proposed patchwise implementation.
 - The work does not construct a covariant phase space, boundary charge algebra, gluing map, or operator-algebraic duality.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Read the complete 35-page PDF and complete 1,627-line TeX source.
 - Visually inspected rendered pages containing the abstract, Bott--Cattaneo localization, M5/M2 reductions, D3 electric/magnetic formulas, inverse Laplace expression, discussion, and toric examples.
@@ -258,12 +209,9 @@ Verified: Mathematica evaluated equation (2.14) from the printed affine equivari
 
 Verified: the M2 cubic normalization obeys
 
-$$
-(2\pi i)\frac16
-\left(\frac{\mu}{2\pi i}\right)^3
-(\omega_1\omega_2)^2
-=-\frac{\mu^3}{24\pi^2}(\omega_1\omega_2)^2,
-$$
+$$\begin{align}
+(2\pi i)\frac16 \left(\frac{\mu}{2\pi i}\right)^3 (\omega_1\omega_2)^2 =-\frac{\mu^3}{24\pi^2}(\omega_1\omega_2)^2,
+\end{align}$$
 
 matching the printed eight-form.
 
@@ -289,7 +237,7 @@ Blocked: the paper deliberately does not fix a precise normalization between $\m
 
 Blocked: no first-principles equivalence with the full eleven-dimensional or type-IIB localized supergravity path integral, including holographic renormalization and boundary terms, is supplied.
 
-## Not independently verified
+## Not Independently Verified
 
 Not verified: all equivariant Pontryagin pushforwards entering the subleading M5/M2 terms for a general resolved toric fourfold.
 
@@ -297,6 +245,6 @@ Not verified: exact finite-$N$, higher-genus, instanton, or nonperturbative comp
 
 Not verified: the proposed extension of the magnetic D3 result from $Z=\mathbb C^3$ to an arbitrary toric Calabi--Yau threefold; the paper infers it from electric/magnetic consistency because its magnetic Euler-class ansatz does not directly generalize.
 
-# Bottom line
+# Bottom Line
 
 The paper identifies a useful common architecture: twelve-dimensional characteristic data, two equivariant factors, and an electric/magnetic choice of which factor to push forward first. With the standard Bott--Cattaneo identity supplied externally, this organizes familiar M5 inflow and recent M2/D3 protected formulas. It remains a relation among protected geometric quantities, not a proved microscopic duality or full quantum equivalence. The paper's own general fixed-point derivation has a sign error, and its D3 inverse-Laplace and toric-cubic normalizations need correction.

@@ -14,7 +14,7 @@ tags: []
 
 Back to [[2026_07_07_overview]].
 
-# Lie-Poisson gauge field
+# Lie-Poisson Gauge Field
 
 The paper works on $\mathcal M\simeq \mathbb R^d$ with coordinates $x^\mu$ and a gauge one-form
 
@@ -54,7 +54,7 @@ M^\lambda{}_\varepsilon =\gamma^\lambda{}_\varepsilon(A) +x^\xi\mathcal C^{\omeg
 
 This is the first convention to keep straight locally: the non-Abelian character is carried by the spacetime Poisson bracket and the $A$-dependent matrix $M$, not by a Lie-algebra-valued Maxwell potential.
 
-# Deformed field strength and geometric action
+# Deformed Field Strength and Geometric Action
 
 The covariant LPE field strength is
 
@@ -118,7 +118,7 @@ g^A_{\mu\nu}=J^\alpha{}_\mu J^\beta{}_\nu \eta_{\alpha\beta}. \tag{2.27}
 
 The working domain of the construction is local: $A(x)$ must stay in the coordinate neighborhood on $G$, $J$ must be non-degenerate, and later $M$ must be invertible.
 
-# Maxwell field variable and dynamical equivalence
+# Maxwell Field Variable and Dynamical Equivalence
 
 The central redefinition is a one-form $B$ in the $y$ coordinates such that
 
@@ -202,7 +202,7 @@ $$\begin{align}
 
 This is the paper's main technical bridge. It lets every Maxwell solution, symmetry, and current be transported to LPE as long as the local invertibility assumptions hold.
 
-# Gauge orbits as a Seiberg-Witten map
+# Gauge Orbits as a Seiberg-Witten Map
 
 For a gauge variation $\delta A=\delta_f A$, the induced $B$ variation is Abelian:
 
@@ -230,7 +230,7 @@ $$\begin{align}
 
 Locally, this is exactly the role of a Seiberg-Witten map: deformed LPE gauge orbits are identified with Abelian Maxwell gauge orbits in the $B$ variable.
 
-# Pulling back Maxwell currents
+# Pulling Back Maxwell Currents
 
 Let $j_B^\mu(y)$ be a Maxwell Noether current for a symmetry
 
@@ -276,7 +276,7 @@ $$\begin{align}
 
 This is the note's main charge/CPS-relevant object. The construction is not a covariant phase space derivation, but it has the same practical shape: a current conservation statement is pulled across a field redefinition and equation-of-motion map, and the generator is read from the off-shell divergence identity.
 
-# Deformed Poincare transformations and currents
+# Deformed Poincare Transformations and Currents
 
 For Maxwell theory, an infinitesimal Poincare transformation is
 
@@ -352,7 +352,7 @@ j^\mu_{A;(\alpha,\beta)} =y_\alpha(x)T^\mu{}_{A\beta} -y_\beta(x)T^\mu{}_{A\alph
 
 The paper leaves the algebra of the deformed transformations open. For local use, that means the note gives explicit current and generator formulas but does not yet give a closed LPE Poincare algebra in the deformed variables.
 
-# Quantization prescription
+# Quantization Prescription
 
 The quantization proposal is to use the $B$ variable as the path-integral measure:
 
@@ -380,7 +380,7 @@ A^{[N]}(x;B) =\sum_{n=0}^N A^{[N]}_n(x;B)+O(\mathcal C^{N+1}), \qquad A^{[N]}_n=
 
 The paper's claim is deliberately modest: this is a starting prescription. Gauge fixing, regularization, and renormalization of the composite operators still have to be analyzed.
 
-# Local translation to charge and CPS vocabulary
+# Local Translation to Charge and CPS Vocabulary
 
 - Fields: the LPE field $A_\mu(x)$ is the original gauge variable; $B_\mu(y)$ is the Maxwell variable obtained through the field-dependent coordinate map $y(x)$ and linear-in-$A$ map $K(A)$.
 - Gauge directions: $\delta_f A_\mu=M_\mu{}^\omega\partial_\omega f$ maps to $\delta_{\tilde f}B_\mu=\partial_\mu\tilde f$. The deformed gauge orbit is Abelianized by the field redefinition.
@@ -390,7 +390,7 @@ The paper's claim is deliberately modest: this is a starting prescription. Gauge
 - CPS comparison: the construction is not Iyer-Wald or covariant phase space, but it is compatible with CPS thinking because it uses field-space variations, gauge orbit maps, equations of motion, and current pullbacks. The missing object is a presymplectic potential/current for LPE and the induced symplectic map between $A$ and $B$ variables.
 - Quantization use: the proposal is to avoid a naive $\mathcal D A$ measure and quantize with $\mathcal D B$, treating $A(B)$ as a composite operator expansion. This is potentially useful as a toy model for nonlinearly field-redefined gauge theories.
 
-# Source structure map
+# Source Structure Map
 
 - Section 1 introduces LPE as a Poisson-bracket deformation of electrodynamics, explains why Poincare invariance appears broken, and states the aim: construct deformed symmetries and conserved currents by mapping LPE to Maxwell theory.
 - Section 2 fixes notation for the Lie-Poisson bracket, the local Lie group matrices $\gamma,\rho$, the gauge transformation algebra, the deformed field strength $F^s$, the field-dependent diffeomorphism $y(x)$, the invariant $F^t$, and the local action written with $g_A$.
@@ -400,7 +400,7 @@ The paper's claim is deliberately modest: this is a starting prescription. Gauge
 - Section 6 summarizes the symmetry/current result and proposes the quantization prescription based on the $B$ measure and composite $A(B)$ insertions.
 - Appendix A proves the identities for $\chi^\sigma$, $\tilde\delta A$, $\tilde\delta z$, and the determinant relation $\det M=\det J(\det\gamma)^2\det\rho$.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
@@ -429,7 +429,7 @@ This is the algebraic step used in Eq. (4.11) before substituting the equation m
 
 - No checked equation failed under the stated local non-degeneracy assumptions.
 
-## Not independently verified
+## Not Independently Verified
 
 - The equivalence between the LPE action and the Maxwell action through $B$ is source-derived from the exactness of $F^s$ and the $y(x)$ map.
 - The quantization proposal is source-derived. It requires later gauge-fixing, regularization, and composite-operator renormalization work before it can be used as a complete quantum definition.

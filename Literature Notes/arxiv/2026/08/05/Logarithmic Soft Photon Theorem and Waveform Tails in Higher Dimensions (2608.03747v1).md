@@ -107,8 +107,7 @@ u\to-\infty: \quad A_{\mathrm{acc}} \sim\frac{\mathcal C_{\mathrm{in}}} {r^{(d-2
 In odd dimensions, differentiating the branch-transform formula
 
 $$\begin{align}
-\int\frac{d\omega}{2\pi}e^{-i\omega s}
-(\omega+i0)^\alpha =\frac{e^{i\pi\alpha/2}}{\Gamma(-\alpha)} \frac{\Theta(s)}{s^{\alpha+1}}
+\int\frac{d\omega}{2\pi}e^{-i\omega s} (\omega+i0)^\alpha =\frac{e^{i\pi\alpha/2}}{\Gamma(-\alpha)} \frac{\Theta(s)}{s^{\alpha+1}}
 \end{align}$$
 
 produces a logarithmic late tail,

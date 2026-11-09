@@ -21,7 +21,7 @@ Reason codes: `T2-dS-BH-holography`, `T1-boundary`, `T3-math`.
 
 This is a medium-priority detailed note because its conformal-interface constructions, gluing matrices, boundary states, $g$-factors, and transmission formulas are reusable boundary data. It is not high priority for the current charge/CPS program: no covariant phase space, gravitational surface charge, edge-mode, or boundary-condition variational analysis is developed.
 
-## Source map
+## Source Map
 
 - Section 1 reviews walking flows and the perturbative Im-flip relation.
 - Section 2 introduces scalar-gravity domain walls, a fake-superpotential beta function, a holographic walking model, and the leading holographic Im-flip check.
@@ -31,53 +31,43 @@ This is a medium-priority detailed note because its conformal-interface construc
 - Appendix B derives the linear-dilaton zero-mode state, Cardy normalization, and a modified reflection/transmission prescription.
 - Appendix C treats nonlinear sigma-model scalars and proposes an “imaginary distance” bound.
 
-## Complex fixed points and Im-flip
+## Complex Fixed Points and Im-Flip
 
 A walking beta function
 
-$$
+$$\begin{align}
 \beta(\lambda)=-x-\lambda^2+O(\lambda^3)
-$$
+\end{align}$$
 
 has conjugate fixed points $\lambda=\pm i\sqrt{x}$ when $x>0$. For an almost marginal operator $\mathcal O$ with $\Delta_{\mathcal O}=2-i\epsilon$,
 
-$$
+$$\begin{align}
 \beta(g)=-i\epsilon g+\frac\pi2C_{\mathcal O\mathcal O\mathcal O}g^2.
-$$
+\end{align}$$
 
 Identifying the nonzero fixed point with the conjugate CFT gives, to the first nontrivial order,
 
-$$
-\frac{\operatorname{Im}\Delta_{\mathcal O}}
-{C_{\mathcal O\mathcal O\mathcal O}}
-=
-\frac{\operatorname{Im}\Delta_\psi}
-{C_{\mathcal O\psi\psi}}.
-$$
+$$\begin{align}
+\frac{\operatorname{Im}\Delta_{\mathcal O}} {C_{\mathcal O\mathcal O\mathcal O}} = \frac{\operatorname{Im}\Delta_\psi} {C_{\mathcal O\psi\psi}}.
+\end{align}$$
 
 The relation assumes small imaginary data and nonproliferation of nearby complex fixed points. It is not claimed as an exact identity at finite imaginary separation.
 
 In the holographic model,
 
-$$
-V=2\left(G^{ab}\partial_aW\partial_bW-W^2\right),
-\qquad
-\beta^a=-2G^{ab}\frac{\partial_bW}{W}.
-$$
+$$\begin{align}
+V=2\left(G^{ab}\partial_aW\partial_bW-W^2\right), \qquad \beta^a=-2G^{ab}\frac{\partial_bW}{W}.
+\end{align}$$
 
 A two-scalar superpotential yields
 
-$$
-\operatorname{Im}\Delta_\phi=\mp\frac{4a\epsilon}{w_0},
-\quad
-\operatorname{Im}\Delta_\psi=\mp\frac{4c_3\epsilon}{w_0},
-$$
+$$\begin{align}
+\operatorname{Im}\Delta_\phi=\mp\frac{4a\epsilon}{w_0}, \quad \operatorname{Im}\Delta_\psi=\mp\frac{4c_3\epsilon}{w_0},
+\end{align}$$
 
-$$
-C_{\phi\phi\phi}=-\frac{4a}{\pi w_0},
-\quad
-C_{\psi\psi\phi}=-\frac{4c_3}{\pi w_0},
-$$
+$$\begin{align}
+C_{\phi\phi\phi}=-\frac{4a}{\pi w_0}, \quad C_{\psi\psi\phi}=-\frac{4c_3}{\pi w_0},
+\end{align}$$
 
 which satisfy Im-flip through the stated order. The paper finds failure at $O(\epsilon^3)$, consistent with the perturbative scope.
 
@@ -85,93 +75,79 @@ which satisfy Im-flip through the stated order. The paper finds failure at $O(\e
 
 For $V=-2$ and an AdS$_2$ slicing,
 
-$$
+$$\begin{align}
 ds^2=du^2+e^{2A(u)}\frac{dz^2-dt^2}{z^2},
-$$
+\end{align}$$
 
 the Janus solution is analytically continued by $\alpha=i\gamma$:
 
-$$
+$$\begin{align}
 e^{2A}=\frac12\left(1+\sqrt{1+\gamma^2}\cosh2u\right).
-$$
+\end{align}$$
 
 The scalar endpoints are conjugate imaginary sources, but the metric remains real. The half-separation used in the main text is
 
-$$
+$$\begin{align}
 \Delta\phi=\frac12(\phi_+-\phi_-)=i\arctan\gamma,
-$$
+\end{align}$$
 
 and approaches $i\pi/2$.
 
 For a symmetric interval, the defect entropy is
 
-$$
+$$\begin{align}
 \log g=-\frac{c}{12}\log(1+\gamma^2).
-$$
+\end{align}$$
 
 For an interval ending at the interface,
 
-$$
-c_{\rm eff}
-=c\sqrt{\frac{1+\sqrt{1+\gamma^2}}{2}}.
-$$
+$$\begin{align}
+c_{\rm eff} =c\sqrt{\frac{1+\sqrt{1+\gamma^2}}{2}}.
+\end{align}$$
 
 The holographic transport coefficient is determined by
 
-$$
-\sigma=\int du\,(\phi')^2
-=\frac8\gamma\arctan\frac{\gamma}{1+\sqrt{1+\gamma^2}}-4.
-$$
+$$\begin{align}
+\sigma=\int du\,(\phi')^2 =\frac8\gamma\arctan\frac{\gamma}{1+\sqrt{1+\gamma^2}}-4.
+\end{align}$$
 
 For $\gamma\ne0$, $\mathcal T>1$ and $\mathcal R<0$. In a nonunitary theory these are Ward/flux coefficients, not positive probabilities.
 
-## Complex RG-flow interfaces
+## Complex RG-Flow Interfaces
 
 With a potential possessing conjugate extrema $\phi_\pm$, the AdS radii and central charges are conjugate:
 
-$$
-L_\pm=\sqrt{-\frac2{V(\phi_\pm)}},
-\qquad
-c_\pm=\frac{3L_\pm}{2G_N}.
-$$
+$$\begin{align}
+L_\pm=\sqrt{-\frac2{V(\phi_\pm)}}, \qquad c_\pm=\frac{3L_\pm}{2G_N}.
+\end{align}$$
 
 The paper numerically shoots the second-order AdS$_2$-sliced equations using a quartic superpotential. The displayed flows connect $\phi_+$ to $\phi_-$ or return to the same complex vacuum and spiral near UV-attractive complex dimensions. Their strong sensitivity to initial data is documented in figures. No data files, integration code, tolerances, or numerical residual tables are supplied.
 
-## Free-boson Janus interface
+## Free-Boson Janus Interface
 
 The two half-space stiffnesses are conjugate,
 
-$$
-k_L=k_0e^{-i\arctan\gamma_{\rm cft}},
-\qquad
-k_R=\bar k_L.
-$$
+$$\begin{align}
+k_L=k_0e^{-i\arctan\gamma_{\rm cft}}, \qquad k_R=\bar k_L.
+\end{align}$$
 
 Continuity of the field and weighted normal derivative gives amplitudes
 
-$$
-T=\frac{2k_L}{k_L+k_R},
-\qquad
-R=\frac{k_L-k_R}{k_L+k_R}.
-$$
+$$\begin{align}
+T=\frac{2k_L}{k_L+k_R}, \qquad R=\frac{k_L-k_R}{k_L+k_R}.
+\end{align}$$
 
 The bilinear energy coefficients are
 
-$$
-\mathcal T=\frac{4k_Lk_R}{(k_L+k_R)^2},
-\qquad
-\mathcal R=\left(\frac{k_L-k_R}{k_L+k_R}\right)^2,
-$$
+$$\begin{align}
+\mathcal T=\frac{4k_Lk_R}{(k_L+k_R)^2}, \qquad \mathcal R=\left(\frac{k_L-k_R}{k_L+k_R}\right)^2,
+\end{align}$$
 
 so
 
-$$
-\mathcal T=1+\gamma_{\rm cft}^2,
-\qquad
-\mathcal R=-\gamma_{\rm cft}^2,
-\qquad
-\mathcal T+\mathcal R=1.
-$$
+$$\begin{align}
+\mathcal T=1+\gamma_{\rm cft}^2, \qquad \mathcal R=-\gamma_{\rm cft}^2, \qquad \mathcal T+\mathcal R=1.
+\end{align}$$
 
 The sum rule is algebraic; the absence of complex conjugation in $R^2$ is precisely why it is not a probability statement.
 
@@ -187,54 +163,49 @@ $$
 
 and the noncompact boundary-state normalization gives
 
-$$
-g=\frac1{\sqrt{\sin2\theta}}
-=\sqrt{\frac{k_L+k_R}{2\sqrt{k_Lk_R}}}.
-$$
+$$\begin{align}
+g=\frac1{\sqrt{\sin2\theta}} =\sqrt{\frac{k_L+k_R}{2\sqrt{k_Lk_R}}}.
+\end{align}$$
 
 Matching the small-deformation holographic coefficient fixes a convention-dependent normalization $\gamma_{\rm cft}=\sqrt{8\pi/c}\,\gamma$; this is not an independently derived full dictionary.
 
-## Complex linear-dilaton interface
+## Complex Linear-Dilaton Interface
 
 The conjugate background charges are
 
-$$
+$$\begin{align}
 Q^{(1,2)}=q_R\pm iq_I,
-$$
+\end{align}$$
 
 with
 
-$$
+$$\begin{align}
 c_{1,2}=1+6(Q^{(1,2)})^2.
-$$
+\end{align}$$
 
 The folded total central charge is real. Virasoro gluing fixes the complex angle
 
-$$
+$$\begin{align}
 \tan\theta=\frac{Q^{(2)}}{Q^{(1)}}.
-$$
+\end{align}$$
 
 The zero-mode boundary state includes the background-momentum shifts required by the linear-dilaton anomaly. Cardy matching yields the same normalization $g=1/\sqrt{\sin2\theta}$.
 
 Because the vacuum overlap vanishes, Appendix B replaces it by a selected primary-state overlap in the Quella--Runkel--Watts construction. The resulting proposal is
 
-$$
-\mathcal T=\sin^2(2\theta),
-\qquad
-\mathcal R=\cos^2(2\theta),
-$$
+$$\begin{align}
+\mathcal T=\sin^2(2\theta), \qquad \mathcal R=\cos^2(2\theta),
+\end{align}$$
 
 or, for $Q^{(1,2)}=re^{\pm i\varphi}$,
 
-$$
-\mathcal T=\sec^2(2\varphi),
-\qquad
-\mathcal R=-\tan^2(2\varphi).
-$$
+$$\begin{align}
+\mathcal T=\sec^2(2\varphi), \qquad \mathcal R=-\tan^2(2\varphi).
+\end{align}$$
 
 The independence from the auxiliary momentum supports but does not prove universality of the modified prescription.
 
-## Verification log
+## Verification Log
 
 ### Checked
 
@@ -243,7 +214,7 @@ The independence from the auxiliary momentum supports but does not prove univers
 - For the single-scalar Janus path, direct integration gives total endpoint displacement $\int\phi' du=2i\arctan\gamma$, hence the paper's half-separation is $i\arctan\gamma$ and tends to $i\pi/2$.
 - Numerical quadrature at $\gamma=0.5,2,10$ reproduced the source formula for $\int du\,(\phi')^2=\sigma$ to numerical precision.
 
-### Source-derived
+### Source-Derived
 
 - The leading Im-flip check, holographic entropy formulas, folded boundary states, and linear-dilaton Cardy calculation were reconstructed from the source but not independently derived from correlation functions or cylinder amplitudes.
 - The complex RG-flow interfaces are supported by source figures and stated initial conditions only.
@@ -257,11 +228,13 @@ The independence from the auxiliary momentum supports but does not prove univers
 ### Failed
 
 - Appendix C Eq. (C.3) calls
-  $$
-  \int du\,G_{ab}\phi'^a\phi'^b
-  $$
+
+$$\begin{align}
+\int du\,G_{ab}\phi'^a\phi'^b
+\end{align}$$
+
   the “total geodesic length” (written $\Delta s^2$). This is the integrated squared speed, not the square of path length, which would involve $(\int du\sqrt{G_{ab}\phi'^a\phi'^b})^2$. In the one-scalar imaginary Janus limit the three quantities differ: the total displacement tends to $i\pi$, its half-separation squared to $-\pi^2/4$, while Eq. (C.3) tends to $-4$. Thus the formula is valid as $\sigma$ but does not establish the claimed geodesic-distance bound.
 
-## Likely use
+## Likely Use
 
 The free-boson gluing matrix and linear-dilaton zero-mode construction are useful interface references, especially when analytic continuation makes the symplectic/energy pairing indefinite. The main caution is to keep algebraic transmission/reflection identities separate from positivity or probability, and to treat Appendix C's $-4<\sigma<0$ as an integrated kinetic bound rather than a geodesic-distance theorem.

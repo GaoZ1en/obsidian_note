@@ -303,7 +303,7 @@ Total deduplicated entries: 291
 | [2610.00478](https://arxiv.org/abs/2610.00478) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th, quant-ph | Algebraic structure in holographic tensor networks | Abhisek Sahu, Jeremy van der Heijden, Mark Van Raamsdonk, Rana Zibakhsh | 57 pages + appendices, 7 figures; reference added |
 | [2610.02231](https://arxiv.org/abs/2610.02231) | math-ph:replacement | math-ph | A coupled geometric surface and surface reaction-diffusion framework for modelling nuclear mechanics during confined cell migration | Francesca Ballatore, Silvia Comunian, Anotida Madzvamuse, Slimane Ait-Si-Ali, Rachele Allena |  |
 
-## Official metadata and placement audit
+## Official Metadata and Placement Audit
 
 Original helper rows above are preserved. Their LF-terminated row SHA-256 is `01d78d606a30fd7a10374e266b5cd63d8b38c1be5b19301fb4e9bc784bf02d85`. Full categories below come from official abstract pages, with primary category listed first. Latest versions are the versions inspected during this run; the original helper listing uses unversioned IDs. Placement counts: Secondary 9, Other 219, Deferred candidate 25, Medium 10, High 3, Author watch 2, Tracked unchanged 1, Tracked update 22.
 

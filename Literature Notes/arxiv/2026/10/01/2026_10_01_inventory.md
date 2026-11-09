@@ -219,7 +219,7 @@ Total deduplicated entries: 207
 | [2609.33621](https://arxiv.org/abs/2609.33621) | math-ph:replacement | cond-mat.stat-mech, math-ph | Boolean Cumulants and Exact Reduced Descriptions of Renewal-Driven Systems | Marco Bianucci, Riccardo Mannella | 46 pages |
 | [2609.34811](https://arxiv.org/abs/2609.34811) | hep-th:replacement | hep-th | Semiclassical Liouville Theory on the Real Projective Plane: A Complex Interpretation of the Bootstrap | Yu Nakayama | 34 pages |
 
-## Primary-category, version and placement audit
+## Primary-Category, Version and Placement Audit
 
 Official abstract metadata was freshly inspected for all 207 helper IDs. The category order below preserves the primary category first and all cross-lists; the helper’s source-status column records where each ID appeared. IDs are deduplicated across categories and each receives one disjoint placement. These metadata checks are screening, not technical processing.
 

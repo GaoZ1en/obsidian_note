@@ -25,7 +25,7 @@ C_L =1-\sum_{m=2}m\lambda_m f_\infty^{m-1} =-P'(f_\infty).
 
 It multiplies three different objects: the linearized Lovelock equation, the holographic stress tensor, and the first variation of the Jacobson--Myers entropy. The paper thereby proves a first-law/EOM equivalence in its hyperbolic, normalizable, fixed-source sector. It does not derive the Lovelock presymplectic potential, symplectic current, or Iyer--Wald charge.
 
-# Source structure and reading map
+# Source Structure and Reading Map
 
 | Source part | Technical role |
 |---|---|
@@ -42,9 +42,9 @@ It multiplies three different objects: the linearized Lovelock equation, the hol
 | 6. Conclusions | States the regime of the first-law/EOM equivalence |
 | Appendix A | Fixes extrinsic-curvature conventions for the conformal and extremal-surface boundaries |
 
-# Lovelock AdS vacuum and effective coupling
+# Lovelock AdS Vacuum and Effective Coupling
 
-## Action and Euler densities
+## Action and Euler Densities
 
 In $D=d+1$ bulk dimensions the action is
 
@@ -79,7 +79,7 @@ P(f)=1-f+\sum_{m\ge2}\lambda_m f^m,\qquad P(f_\infty)=0.
 
 The physical branch used throughout is the one continuously connected to Einstein gravity.
 
-## Wald versus Jacobson--Myers entropy
+## Wald Versus Jacobson--Myers Entropy
 
 For a codimension-two surface $\Sigma$, the Wald expression contains the tangential projection of the bulk curvature:
 
@@ -101,7 +101,7 @@ S_{\rm JM} =\frac{1}{4G_{d+1}}\int_\Sigma d^{d-1}x\sqrt\gamma \left[ 1+\sum_{m=2
 
 together with its own boundary completion. Wald and Jacobson--Myers agree for the spherical surface considered later because its two second fundamental forms vanish. This is a property of that special extremal surface, not a general equivalence of the two functionals.
 
-# Timelike entropy and modular energy
+# Timelike Entropy and Modular Energy
 
 The timelike first law is written in the usual relative-entropy form
 
@@ -117,9 +117,9 @@ H_{\mathcal D'} =2\pi\int_{\mathcal D'}d\tau\,d^{d-2}\mathbf x\, \frac{T_0^2-\ta
 
 The field-theory input is therefore the boundary stress response. The bulk input is the first variation of the completed Jacobson--Myers functional on the complex spherical surface.
 
-# Cubic Lovelock thermal excitation
+# Cubic Lovelock Thermal Excitation
 
-## Vacuum polynomial and entropy functional
+## Vacuum Polynomial and Entropy Functional
 
 For the cubic example,
 
@@ -135,7 +135,7 @@ C_L^{(3)} =1-2\lambda f_\infty-3\mu f_\infty^2.
 
 The completed entropy contains the intrinsic Einstein, Gauss--Bonnet, and cubic Lovelock densities on the codimension-two surface, plus a Myers-type term on its cutoff boundary. That surface term is essential for a well-posed variation even though its first-order contribution vanishes in the conformal limit used here.
 
-## Normalizable black-brane perturbation
+## Normalizable Black-Brane Perturbation
 
 At first order in $m_z$, the double-Wick-rotated metric is
 
@@ -157,7 +157,7 @@ $$\begin{align}
 
 The divergence terms are precisely where the entropy surface completion matters.
 
-## Common renormalization of entropy and stress
+## Common Renormalization of Entropy and Stress
 
 After including the surface term and taking the cutoff $\epsilon\to0$, the entropy variation is
 
@@ -179,7 +179,7 @@ $$\begin{align}
 
 The equality is not obtained by discarding all boundary terms. It follows after the action and entropy variations have each been given their correct Myers completion and the remaining cutoff contributions have been shown to vanish with the paper's normalizable falloff.
 
-# Arbitrary-order Lovelock linearized equations
+# Arbitrary-Order Lovelock Linearized Equations
 
 The exact Lovelock equations are
 
@@ -213,9 +213,9 @@ $$\begin{align}
 
 At a critical/degenerate root, $\Delta S$, $\Delta H$, and the linearized EOM can all lose their leading coefficient. Their simultaneous vanishing then does not reconstruct $\delta G_{AB}=0$.
 
-# Fixed sources and the general Lovelock boundary stress tensor
+# Fixed Sources and the General Lovelock Boundary Stress Tensor
 
-## Fefferman--Graham sector
+## Fefferman--Graham Sector
 
 The perturbation is expanded as
 
@@ -235,7 +235,7 @@ This is the local boundary dictionary:
 - $\delta\widetilde h^{(d)}_{\mu\nu}$ is the normalizable response;
 - fixing the source is what removes additional boundary-state variation from the first law.
 
-## Myers completion and canonical momentum
+## Myers Completion and Canonical Momentum
 
 The action boundary term begins with
 
@@ -262,7 +262,7 @@ $$\begin{align}
 \Delta\langle H\rangle =C_L\,\Delta\langle H\rangle_{\rm Einstein}. \tag{5.31}
 \end{align}$$
 
-# Spherical extremal surface and completed entropy variation
+# Spherical Extremal Surface and Completed Entropy Variation
 
 The source next varies the completed Jacobson--Myers functional for a rotationally symmetric embedding. The bulk Euler-density variation produces second derivatives of the embedding; the entropy boundary term cancels those derivatives. The remaining equation admits the spherical surface as an extremum for every Lovelock order.
 
@@ -288,7 +288,7 @@ $$\begin{align}
 
 Combining this with (5.31) yields the first law and, for $C_L\ne0$, the linearized Lovelock equation.
 
-# Translation to local CPS and gravitational-energy language
+# Translation to Local CPS and Gravitational-Energy Language
 
 | Paper object | Local interpretation | What is not proved |
 |---|---|---|
@@ -309,7 +309,7 @@ $$\begin{align}
 
 Those relations may hold only modulo exact forms, EOM terms, and boundary/corner completions. For the gravitational-energy project, deriving this representative-level dictionary is the next nontrivial step.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

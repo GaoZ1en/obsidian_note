@@ -17,7 +17,7 @@ tags: []
 
 Daily overview: [[2026_09_03_overview]]
 
-## Result and scope
+## Result and Scope
 
 Correct under the following precise conditions: the semiclassical representation must admit the regulated charge generators with compatible self-adjoint domains; the relevant time-slice, timelike-tube, duality, split, and representation-compatibility assumptions must hold. The paper does not establish a nonperturbative holographic dual or remove those hypotheses.
 
@@ -25,7 +25,7 @@ Reason codes: T1-charge, T1-Wald-CPS, T1-boundary, T2-celestial-carrollian. This
 
 The central distinction is between a Bondi mass at an ideal null cut and a family of regulated finite-radius charges. Smearing only in retarded time does not remove the angular divergence at null infinity. The finite-radius family, when admitted as self-adjoint generators, enlarges a thin asymptotic strip algebra enough to reconstruct a bulk wedge.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 Read §§2.1, 3.1, 3.2, and 4.2 first: these contain the charge, obstruction, regulator, and algebra definition. Read §§4.3–4.4 for the reconstruction and entropy result. Appendix A is essential technical reference for the unbounded-region split argument; Appendix B is essential for the modular crossed product. Sections 1, 2.2–2.3, and 4.1 supply representation and comparison background, while §4.5 is an extension whose localized supertranslation regulator is only proposed.
 
@@ -48,7 +48,7 @@ Read §§2.1, 3.1, 3.2, and 4.2 first: these contain the charge, obstruction, re
 | A.4, p. 73 | Shifted collars and proposed higher-dimensional, Maxwell and graviton extensions. |
 | B, pp. 74–80 | Six structural assumptions; B.1 collar/tail factorization; B.2 inner comparison, continuous cocycle and converse Connes theorem. |
 
-## Conventions and global notation
+## Conventions and Global Notation
 
 The background is vacuum, asymptotically flat, and stationary in the main reconstruction examples. Matter background fields vanish. Spatial falloff is $g_{\mu\nu}-\eta_{\mu\nu}=O(\rho^{-(d-3)})$, with corresponding derivative falloff; in four dimensions Regge–Teitelboim parity conditions are imposed. Null falloff is described in affine Bondi-like coordinates, explicitly distinct from the usual determinant-fixed Bondi gauge.
 
@@ -68,137 +68,107 @@ The background is vacuum, asymptotically flat, and stationary in the main recons
 
 For a future unit normal $n^a$,
 
-$$
-W_\Sigma(\delta_1g,\delta_2g)
-=-\int_\Sigma\sqrt h\,n_a\omega^a,\qquad
-\omega^a=\frac{P^{abcdef}}{16\pi G_N}
-(\delta_2g_{bc}\nabla_d\delta_1g_{ef}
--\delta_1g_{bc}\nabla_d\delta_2g_{ef}).
-$$
+$$\begin{align}
+W_\Sigma(\delta_1g,\delta_2g) =-\int_\Sigma\sqrt h\,n_a\omega^a,\qquad \omega^a=\frac{P^{abcdef}}{16\pi G_N} (\delta_2g_{bc}\nabla_d\delta_1g_{ef} -\delta_1g_{bc}\nabla_d\delta_2g_{ef}).
+\end{align}$$
 
 Here
 
-$$
-P^{abcdef}=g^{ae}g^{fb}g^{cd}
--\tfrac12g^{ad}g^{be}g^{fc}
--\tfrac12g^{ab}g^{cd}g^{ef}
--\tfrac12g^{bc}g^{ae}g^{fd}
-+\tfrac12g^{bc}g^{ad}g^{ef}.
-$$
+$$\begin{align}
+P^{abcdef}=g^{ae}g^{fb}g^{cd} -\tfrac12g^{ad}g^{be}g^{fc} -\tfrac12g^{ab}g^{cd}g^{ef} -\tfrac12g^{bc}g^{ae}g^{fd} +\tfrac12g^{bc}g^{ad}g^{ef}.
+\end{align}$$
 
 With $p^{ab}=\sqrt h(K^{ab}-h^{ab}K)$ this becomes
 
-$$
-W_\Sigma=-\frac1{16\pi G_N}
-\int_\Sigma(\delta_1h_{ab}\delta_2p^{ab}
--\delta_2h_{ab}\delta_1p^{ab}).
-$$
+$$\begin{align}
+W_\Sigma=-\frac1{16\pi G_N} \int_\Sigma(\delta_1h_{ab}\delta_2p^{ab} -\delta_2h_{ab}\delta_1p^{ab}).
+\end{align}$$
 
 Do not identify this sign with a vault symplectic form before comparing slot order, boundary orientation, and Hamiltonian contraction convention. Appendix A separately writes the scalar form as $\Omega^{\rm KG}(\phi_1,\phi_2)=\int N^{-1}\sqrt h(\phi_1\dot\phi_2-\phi_2\dot\phi_1)$.
 
-## From Einstein CPS to Bondi loss
+## From Einstein CPS to Bondi Loss
 
 Source-derived: the off-shell identity for field-independent $X$ is
 
-$$
-\omega(\delta g,\mathcal L_Xg)
-=i_X(E\cdot\delta g)+\delta C_X
-+d(\delta Q_X-i_X\theta).
-$$
+$$\begin{align}
+\omega(\delta g,\mathcal L_Xg) =i_X(E\cdot\delta g)+\delta C_X +d(\delta Q_X-i_X\theta).
+\end{align}$$
 
 Only after imposing the background and linearized equations does it reduce to a boundary integral. A small diffeomorphism is a degeneracy when its boundary pairing vanishes for every allowed variation; merely being nonzero at the boundary is not a sufficient test for a nonzero physical charge.
 
 At spatial infinity, the prescribed asymptotic conditions give
 
-$$
-\delta H_X=\int_{i^0}\mathcal Q_X
-=W_\Sigma(\delta g,\mathcal L_Xg),\qquad H_t=M_{i^0}.
-$$
+$$\begin{align}
+\delta H_X=\int_{i^0}\mathcal Q_X =W_\Sigma(\delta g,\mathcal L_Xg),\qquad H_t=M_{i^0}.
+\end{align}$$
 
 At null infinity the angular metric is
 
-$$
+$$\begin{align}
 g_{AB}=r^2(q_{AB}+r^{1-d/2}C_{AB}+\cdots).
-$$
+\end{align}$$
 
 The radiative symplectic form on the past of a cut is
 
-$$
-W_{\mathscr I^+_{<u}}=
--\frac1{16\pi G_N}\int_{-\infty}^u
-(\delta_1\sigma_{AB}\delta_2N^{AB}
--\delta_1N_{AB}\delta_2\sigma^{AB})\,du\,d\Omega.
-$$
+$$\begin{align}
+W_{\mathscr I^+_{<u}}= -\frac1{16\pi G_N}\int_{-\infty}^u (\delta_1\sigma_{AB}\delta_2N^{AB} -\delta_1N_{AB}\delta_2\sigma^{AB})\,du\,d\Omega.
+\end{align}$$
 
 Insert $\delta_2=\mathcal L_t$ and integrate by parts. The bulk term is $\delta\int N^2/(32\pi G_N)$, but the endpoint term remains:
 
-$$
-B(u)=\frac1{16\pi G_N}\int_{S^{d-2}}
-N^{AB}\delta\sigma_{AB},\qquad
-\delta M_B(u)=\int_{\mathcal C(u)}\mathcal Q_t-B(u).
-$$
+$$\begin{align}
+B(u)=\frac1{16\pi G_N}\int_{S^{d-2}} N^{AB}\delta\sigma_{AB},\qquad \delta M_B(u)=\int_{\mathcal C(u)}\mathcal Q_t-B(u).
+\end{align}$$
 
 Vanishing early news and matching to the ADM charge then yield
 
-$$
-M_B(u)=M_{i^0}
--\frac1{32\pi G_N}\int_{\mathscr I^+_{<u}}N^{AB}N_{AB}
--\int_{\mathscr I^+_{<u}}T_{uu}^{(d-2)}.
-$$
+$$\begin{align}
+M_B(u)=M_{i^0} -\frac1{32\pi G_N}\int_{\mathscr I^+_{<u}}N^{AB}N_{AB} -\int_{\mathscr I^+_{<u}}T_{uu}^{(d-2)}.
+\end{align}$$
 
 The matter contribution is nonnegative as radiated energy under the stated classical energy condition. That positivity does not extend pointwise to the renormalized quantum stress tensor.
 
-## Quantization starts from smeared observables
+## Quantization Starts from Smeared Observables
 
 For compactly supported symmetric divergence-free $f^{ab}$,
 
-$$
-\widehat\gamma(f)=\int_M\sqrt{-g}\,\widehat\gamma_{ab}f^{ab},
-\qquad
-[\widehat\gamma(f),\widehat\gamma(f')]=iE(f,f')\mathbf1.
-$$
+$$\begin{align}
+\widehat\gamma(f)=\int_M\sqrt{-g}\,\widehat\gamma_{ab}f^{ab}, \qquad [\widehat\gamma(f),\widehat\gamma(f')]=iE(f,f')\mathbf1.
+\end{align}$$
 
 $E$ is advanced-minus-retarded in the paper. Its unsmeared metric representative is gauge dependent; the divergence-free pairing removes this ambiguity. With complete scattering data and the required falloff,
 
-$$
-\widehat\gamma(f)=W_\Sigma(\widehat\gamma,Ef)
-=\frac1{8\pi G_N}\delta\widehat N(F),
-$$
+$$\begin{align}
+\widehat\gamma(f)=W_\Sigma(\widehat\gamma,Ef) =\frac1{8\pi G_N}\delta\widehat N(F),
+\end{align}$$
 
 where $F$ is the trace-free radiative limit of $Ef$, including the same $-1/2$ shear convention.
 
 The news commutator and vacuum two-point function are
 
-$$
-[\delta\widehat N_{AB}(u,x),\delta\widehat N_{CD}(u',x')]
-=16\pi iG_N Q_{ABCD}\delta'(u-u')\delta_S(x,x'),
-$$
+$$\begin{align}
+[\delta\widehat N_{AB}(u,x),\delta\widehat N_{CD}(u',x')] =16\pi iG_N Q_{ABCD}\delta'(u-u')\delta_S(x,x'),
+\end{align}$$
 
-$$
-\langle\delta\widehat N_{AB}(u,x)\delta\widehat N_{CD}(u',x')\rangle
-=-\frac{8G_NQ_{ABCD}\delta_S(x,x')}
-{(u-u'-i0)^2},\quad
-Q_{ABCD}=q_{A(C}q_{D)B}-\frac{q_{AB}q_{CD}}{d-2}.
-$$
+$$\begin{align}
+\langle\delta\widehat N_{AB}(u,x)\delta\widehat N_{CD}(u',x')\rangle =-\frac{8G_NQ_{ABCD}\delta_S(x,x')} {(u-u'-i0)^2},\quad Q_{ABCD}=q_{A(C}q_{D)B}-\frac{q_{AB}q_{CD}}{d-2}.
+\end{align}$$
 
 This is a representation choice after the algebraic construction. For interacting four-dimensional massless gauge fields the ordinary Fock scattering picture can fail; the paper invokes fixed large-charge/Faddeev–Kulish sectors and assumes the appropriate extension beyond QED. Massive data at $i^+$ also have to be retained. A one-sided null presentation must not be substituted for complete Cauchy data without the scattering/reconstruction assumptions.
 
-## Why the ideal Bondi operator fails
+## Why the Ideal Bondi Operator Fails
 
 In a stationary no-hole background, $\delta M_{i^0}=0$ and
 
-$$
-\delta^2M_{i^0}
-=\tfrac12W_\Sigma^{\rm GR}(\gamma,\mathcal L_t\gamma)
-+\tfrac12W_\Sigma^{\rm matt}(\delta\phi,\mathcal L_t\delta\phi).
-$$
+$$\begin{align}
+\delta^2M_{i^0} =\tfrac12W_\Sigma^{\rm GR}(\gamma,\mathcal L_t\gamma) +\tfrac12W_\Sigma^{\rm matt}(\delta\phi,\mathcal L_t\delta\phi).
+\end{align}$$
 
 The factor $1/2$ follows from the Taylor-coefficient convention. With a two-sided hole the corresponding constraint is
 
-$$
-\delta^2\widehat M^{\rm R}_{i^0}
--\delta^2\widehat M^{\rm L}_{i^0}=\widehat H.
-$$
+$$\begin{align}
+\delta^2\widehat M^{\rm R}_{i^0} -\delta^2\widehat M^{\rm L}_{i^0}=\widehat H.
+\end{align}$$
 
 The semiclassical limit keeps the horizon radius fixed and removes order-$G_N^{-1/2}$ mass fluctuations; the remaining mass variable is order one.
 
@@ -206,35 +176,27 @@ Formally, subtracting the early-time normal-ordered flux from ADM gives a Bondi 
 
 Wick contraction of the news two-point function produces
 
-$$
+$$\begin{align}
 \langle\mathcal E_{<u}^2\rangle
-\supset\frac{d(d-3)}{16\pi^2}N_L
-\int_{-\infty}^u du_1du_2\,
-(u_1-u_2-i0)^{-4},
-\qquad N_L\sim L^{d-2}.
-$$
+\supset\frac{d(d-3)}{16\pi^2}N_L \int_{-\infty}^u du_1du_2\, (u_1-u_2-i0)^{-4}, \qquad N_L\sim L^{d-2}.
+\end{align}$$
 
 There are two separate singularities: the sharp temporal endpoint and the angular mode sum. Time smoothing addresses the first, not the second. In $d=4$, $N_L=\sum_{\ell=0}^L(2\ell+1)=(L+1)^2$. The full infinite-time flux involves a different order of limits and can be an operator even when finite-cut flux is not.
 
-## The finite-radius generator and its boundary dressing
+## The Finite-Radius Generator and Its Boundary Dressing
 
 For a sphere $S(u_0,r_0)$ and an exterior partial Cauchy surface,
 
-$$
-M_B^{(2)}(u_0,r_0)=
-\frac12\int_{S(u_0,r_0)}
-\left.\frac d{d\lambda}\mathcal Q_t
+$$\begin{align}
+M_B^{(2)}(u_0,r_0)= \frac12\int_{S(u_0,r_0)} \left.\frac d{d\lambda}\mathcal Q_t
 (g(\lambda);g'(\lambda))\right|_{\lambda=0}.
-$$
+\end{align}$$
 
 Second variation of the CPS identity gives
 
-$$
-\widehat M_B^{(2)}
-=\delta^2\widehat M_{i^0}
--\widehat E_{\rm out}^{\rm GR}
--\widehat E_{\rm out}^{\rm QFT}.
-$$
+$$\begin{align}
+\widehat M_B^{(2)} =\delta^2\widehat M_{i^0} -\widehat E_{\rm out}^{\rm GR} -\widehat E_{\rm out}^{\rm QFT}.
+\end{align}$$
 
 It is not generally the second variation of a unique integrable finite-surface mass. An additional boundary improvement could produce an integrable charge; the paper deliberately uses the simpler second-order observable.
 
@@ -242,32 +204,27 @@ The gravitational energy on a partial slice changes under small diffeomorphisms 
 
 Let $f$ be real, smooth and normalized, with time support inside the chosen strip. After time smearing at fixed finite radius,
 
-$$
-\widehat M_B^{(2)}(f;u_0,r_0)
-=\delta^2\widehat M_{i^0}
--\widehat E_{\rm out}^{\rm GR}[f]
--\widehat E_{\rm out}^{\rm QFT}[f].
-$$
+$$\begin{align}
+\widehat M_B^{(2)}(f;u_0,r_0) =\delta^2\widehat M_{i^0} -\widehat E_{\rm out}^{\rm GR}[f] -\widehat E_{\rm out}^{\rm QFT}[f].
+\end{align}$$
 
 For operators spacelike to the whole smearing region its commutator is $-i\mathcal L_t$ on the inward side, and zero on the outward side. It is not asserted to have this simple action through the sphere's causal future/past. In four-dimensional flat space the quoted regulated variance scales as $r_0^2/\delta u^4$; keeping $\delta u$ fixed while sending $r_0$ to infinity restores the divergence.
 
 For a no-hole spacetime the exterior integral equals total energy minus a compact interior integral. With two asymptotic ends only the sum of the left/right energies is obtained immediately. The split inclusion is then used to separate their implementations. Neither this argument nor time smearing supplies the missing common-domain/self-adjoint-extension theorem: §3.2 explicitly assumes it.
 
-## Algebra construction and what it reconstructs
+## Algebra Construction and What It Reconstructs
 
 Write the strip as
 
-$$
-\mathfrak R[u_0,\delta u,r_{\min}]
-=\{u_0<u<u_0+\delta u,\ r>r_{\min}\}.
-$$
+$$\begin{align}
+\mathfrak R[u_0,\delta u,r_{\min}] =\{u_0<u<u_0+\delta u,\ r>r_{\min}\}.
+\end{align}$$
 
 The strip algebra is generated by bounded functions of all smeared matter, graviton and regulated-mass observables supported there, followed by double commutant. Then
 
-$$
-\mathcal A(u_0)=\bigcap_{\delta u>0,r_{\min}}
-\mathcal A_{\delta u,r_{\min}}(u_0).
-$$
+$$\begin{align}
+\mathcal A(u_0)=\bigcap_{\delta u>0,r_{\min}} \mathcal A_{\delta u,r_{\min}}(u_0).
+\end{align}$$
 
 The order of reasoning matters: finite generators first, algebra closure second, intersection last. This is not a strong operator limit of the divergent sharp Bondi mass.
 
@@ -281,156 +238,131 @@ The source's derivation is:
 
 Without a hole,
 
-$$
+$$\begin{align}
 \mathcal A(u_0)=\mathcal A(\mathcal W_{u_0})
-\cong\mathcal A(\mathscr I^+_{>u_0})
-\overline\otimes\mathcal A(i^+),\qquad
-\mathcal A(u_0)'=\mathcal A(\mathscr I^+_{<u_0}).
-$$
+\cong\mathcal A(\mathscr I^+_{>u_0}) \overline\otimes\mathcal A(i^+),\qquad \mathcal A(u_0)'=\mathcal A(\mathscr I^+_{<u_0}).
+\end{align}$$
 
 The finite-cut algebra is Type III$_1$ when massless radiation is included. Its increasing early-cut limit is $(\bigcup_u\mathcal A(u))''=\mathcal B(\mathcal H)$, Type I$_\infty$.
 
 With a hole, adjoin an independent left mass on $L^2(\mathbb R)_{\rm L}$ and set $\delta^2\widehat M^{\rm R}=\widehat H+\delta^2\widehat M^{\rm L}$. Right dressing makes the left mass commute with right fields. Under the stated reconstruction and relative-duality assumptions,
 
-$$
-\widetilde{\mathcal A}(u_0)
-=\widetilde{\mathcal A}(\mathcal R\cap\mathcal W_{u_0}),
-$$
+$$\begin{align}
+\widetilde{\mathcal A}(u_0) =\widetilde{\mathcal A}(\mathcal R\cap\mathcal W_{u_0}),
+\end{align}$$
 
-$$
-\widetilde{\mathcal A}(u_0)'
-\cong\widetilde{\mathcal A}(\mathcal L)
-\overline\otimes\mathcal A(\mathscr I^+_{<u_0}).
-$$
+$$\begin{align}
+\widetilde{\mathcal A}(u_0)' \cong\widetilde{\mathcal A}(\mathcal L) \overline\otimes\mathcal A(\mathscr I^+_{<u_0}).
+\end{align}$$
 
 The left factor is Type II$_\infty$; early radiation is Type III$_1$; thus the finite-cut algebra and its commutant are Type III$_1$. The early-cut limit recovers the Type II$_\infty$ spatial-infinity algebra. Kerr additionally needs regulated angular momentum to generate the horizon Killing flow in the ergoregion.
 
-## Appendix A: the actual scalar split mechanism
+## Appendix A: the Actual Scalar Split Mechanism
 
 The detailed proof treats a free, minimally coupled massless scalar in four dimensions. It deforms Schwarzschild to a static horizonless two-ended geometry
 
-$$
-ds^2=-N(s)^2dt^2+ds^2+r(s)^2d\Omega^2,\quad
-(r_s)^2=1-r_{\rm BH}/r,\quad
-r_{ss}=r_{\rm BH}/(2r^2).
-$$
+$$\begin{align}
+ds^2=-N(s)^2dt^2+ds^2+r(s)^2d\Omega^2,\quad (r_s)^2=1-r_{\rm BH}/r,\quad r_{ss}=r_{\rm BH}/(2r^2).
+\end{align}$$
 
 $N>0$ is constant on a collar and agrees with Schwarzschild outside a compact region. Left/right data are separated by that collar.
 
 For $F=(q,p)$,
 
-$$
-\mu_0(F_1,F_2)=\tfrac12
-\big(\langle q_1,H^{1/2}q_2\rangle+
-\langle p_1,H^{-1/2}p_2\rangle\big).
-$$
+$$\begin{align}
+\mu_0(F_1,F_2)=\tfrac12 \big(\langle q_1,H^{1/2}q_2\rangle+ \langle p_1,H^{-1/2}p_2\rangle\big).
+\end{align}$$
 
 Deleting the left/right cross terms gives $\mu_{\rm split}$. Positivity follows from symplectic orthogonality plus Cauchy–Schwarz. Normality in the vacuum representation is a separate question. The sufficient criteria are
 
-$$
-c\mu_{\rm split}\leq\mu_0\leq C\mu_{\rm split},
-\quad
-\mu_0-\mu_{\rm split}=\mu_{\rm split}(\cdot,T\cdot),
-\quad \operatorname{Tr}|T|<\infty.
-$$
+$$\begin{align}
+c\mu_{\rm split}\leq\mu_0\leq C\mu_{\rm split}, \quad \mu_0-\mu_{\rm split}=\mu_{\rm split}(\cdot,T\cdot), \quad \operatorname{Tr}|T|<\infty.
+\end{align}$$
 
 A.3.1 proves the norm comparison using a smooth collar cutoff, the homogeneous three-dimensional Sobolev inequality, interpolation to $H^{1/4}$, and duality for $H^{-1/4}$. Compactness of the cutoff-gradient support, positivity of the lapse, and its lower bound are necessary. This is stronger than observing that each individual cross correlation decays.
 
 For A.3.2 introduce $dz/ds=N^{-1}$ and $\psi=r^{-1}\sum u_{\ell m}Y_{\ell m}$. The spatial operator reduces to
 
-$$
-H_\ell=-\partial_z^2+U_\ell,\qquad
-U_\ell=\frac{r''}{r}+\ell(\ell+1)\frac{N^2}{r^2}.
-$$
+$$\begin{align}
+H_\ell=-\partial_z^2+U_\ell,\qquad U_\ell=\frac{r''}{r}+\ell(\ell+1)\frac{N^2}{r^2}.
+\end{align}$$
 
 It factorizes as $D^\dagger D+\ell(\ell+1)N^2/r^2$ with $D=\partial_z-r'/r$. The relative covariance has off-diagonal $q$ and $p$ blocks, so
 
-$$
-\operatorname{Tr}|T|=
-2\sum_{\ell\geq0}(2\ell+1)
-\big(\|T_{q,\ell}\|_1+\|T_{p,\ell}\|_1\big).
-$$
+$$\begin{align}
+\operatorname{Tr}|T|= 2\sum_{\ell\geq0}(2\ell+1) \big(\|T_{q,\ell}\|_1+\|T_{p,\ell}\|_1\big).
+\end{align}$$
 
 The fractional powers are handled through resolvents:
 
-$$
-H_\ell^{-1/2}=\frac2\pi\int_0^\infty
-(H_\ell+\lambda^2)^{-1}d\lambda.
-$$
+$$\begin{align}
+H_\ell^{-1/2}=\frac2\pi\int_0^\infty (H_\ell+\lambda^2)^{-1}d\lambda.
+\end{align}$$
 
 For disjoint left/right supports, the $H_\ell^{1/2}$ matrix element instead contains $-(2/\pi)\int\lambda^2(H_\ell+\lambda^2)^{-1}d\lambda$: the identity term vanishes only because of disjoint support.
 
 The one-dimensional Green kernel is
 
-$$
-G_\ell(\lambda;z,z')=
-\frac{u^-_{\ell,\lambda}(z_<)
+$$\begin{align}
+G_\ell(\lambda;z,z')= \frac{u^-_{\ell,\lambda}(z_<)
 u^+_{\ell,\lambda}(z_>)}{W_{\ell,\lambda}},
-$$
+\end{align}$$
 
 with $W=u^{-\,\prime}u^+-u^-u^{+\,\prime}$ and endpoint normalizations $u^-(a)=u^+(b)=1$. Across the collar it is rank one at fixed $\lambda$. The growing halves of $u^\pm$ must be replaced by collar-truncated extensions $v^\pm$ before taking global $L^2$ norms.
 
 Trial ramps of width $\min(\delta_0,[1+\ell(\ell+1)+\lambda^2]^{-1/2})$, tail comparison and Sobolev duality give
 
-$$
-\|H_\ell^{1/2}v^\pm\|^2\lesssim1+\ell+\lambda,\quad
-\|v^\pm\|\lesssim1+\lambda^{-1/2},\quad
-\|H_\ell^{-1/2}v^\pm\|\lesssim1+\lambda^{-3/2}.
-$$
+$$\begin{align}
+\|H_\ell^{1/2}v^\pm\|^2\lesssim1+\ell+\lambda,\quad \|v^\pm\|\lesssim1+\lambda^{-1/2},\quad \|H_\ell^{-1/2}v^\pm\|\lesssim1+\lambda^{-3/2}.
+\end{align}$$
 
 The last bound follows from an $L^{6/5}$ tail integral scaling as $\lambda^{-9/5}$ before taking its $5/6$ power. The zero-frequency $\ell=0$ Green function is finite because $\int dz/r^2$ converges. Comparison across the angular barrier gives $G_\ell(\lambda;a,b)\lesssim e^{-\gamma(\ell+\lambda)}$.
 
 A.3.3 then obtains
 
-$$
-\|T_{q,\ell}\|_1\lesssim e^{-\gamma\ell},\qquad
-\|T_{p,\ell}\|_1\lesssim(1+\ell)^{1/2}e^{-\gamma\ell}.
-$$
+$$\begin{align}
+\|T_{q,\ell}\|_1\lesssim e^{-\gamma\ell},\qquad \|T_{p,\ell}\|_1\lesssim(1+\ell)^{1/2}e^{-\gamma\ell}.
+\end{align}$$
 
 The $\lambda^2$ numerator removes the dangerous $q$-sector infrared power; the $p$ sector has only integrable $\lambda^{-1/2}$. The angular exponential beats the $(2\ell+1)$ degeneracy. Quasiequivalence gives the normal product state and hence a Type I factor between the separated algebras. Unitary Cauchy evolution transports the inclusion back to Schwarzschild.
 
 A.4 proposes higher-dimensional and Maxwell/graviton adaptations. Their full constrained one-particle analysis is not supplied by the scalar calculation and was not independently established here.
 
-## Appendix B: from a collar comparison to a weight
+## Appendix B: from a Collar Comparison to a Weight
 
 The six assumptions are time-slice, factoriality and wedge/collar Haag duality, compatible local quasiequivalence preserving wedge intersections, two-sided split inclusions, continuous geometric covariance, and a normal faithful Hartle-Hawking state in its own representation. The vacuum-at-infinity and thermal representations are globally different; a local identification does not identify their asymptotic states.
 
 B.1 uses split factors to obtain
 
-$$
-\mathcal A(\mathcal R)=\mathcal C\overline\otimes
-\mathcal B(\mathcal H_{\rm R}),\qquad
-\mathcal A_{\rm HH}(\mathcal R)=
-\theta(\mathcal C)\overline\otimes\mathcal Q_{\rm HH}.
-$$
+$$\begin{align}
+\mathcal A(\mathcal R)=\mathcal C\overline\otimes \mathcal B(\mathcal H_{\rm R}),\qquad \mathcal A_{\rm HH}(\mathcal R)= \theta(\mathcal C)\overline\otimes\mathcal Q_{\rm HH}.
+\end{align}$$
 
 The common collar is bounded; $\mathcal Q_{\rm HH}$ need not be Type I. B.2 enlarges the collar for each fixed time, chooses compatible product reference states, and transfers the thermal modular comparison using a normal unital embedding. The remaining automorphism fixes the collar and acts on a Type I tail, so it is inner.
 
 This yields pointwise innerness relative to one fixed faithful normal reference state $\rho$. It is not yet a continuous cocycle. Writing $U_t=\widetilde w_t\Delta_\rho^{it}$, factoriality makes the group-law defect a phase. Measurable selection and the projective one-parameter-group theorem permit phases giving strong continuity, then
 
-$$
-\widehat w_{s+t}=\widehat w_s
-\sigma_s^\rho(\widehat w_t).
-$$
+$$\begin{align}
+\widehat w_{s+t}=\widehat w_s \sigma_s^\rho(\widehat w_t).
+\end{align}$$
 
 The converse Connes cocycle theorem supplies a faithful normal semifinite weight with
 
-$$
+$$\begin{align}
 \sigma_t^{\Psi_{\rm HH}}=\alpha_{-t}^{(0)}
-$$
+\end{align}$$
 
 at the appendix's $\beta=1$ normalization. With physical Schwarzschild time the inverse-temperature rescaling must be restored. Factoriality makes the weight unique only up to a positive scalar. The paper explicitly leaves some vacuum-representation wedge-compatibility assumptions unproved.
 
-## Entropy, partial cuts, and local reuse
+## Entropy, Partial Cuts, and Local Reuse
 
 The exact finite-cut algebra is Type III and has no intrinsic density-matrix entropy. Replace the early-radiation factor by a Type I split factor separated by a nonzero collar. Tensoring it with the left Type II factor, and taking the commutant, gives a Type II$_\infty$ regulator.
 
 For the specified semiclassical product states, with a slowly varying mass wavefunction, its renormalized entropy is related to
 
-$$
-\frac{\langle A_{\rm BH}\rangle}{4G_N}
-+S_{\rm vN}^{\mathcal R\cap\mathcal W_{u_0}},
-$$
+$$\begin{align}
+\frac{\langle A_{\rm BH}\rangle}{4G_N} +S_{\rm vN}^{\mathcal R\cap\mathcal W_{u_0}},
+\end{align}$$
 
 up to trace normalization and mass-wavefunction terms. The horizon area renormalization does not cancel the separate cut divergence at null infinity.
 
@@ -438,7 +370,7 @@ For partial angular cuts, the paper expects localized regulated supertranslation
 
 For the vault, the reusable sequence is: action and CPS → allowed boundary variations → finite charge with dressing → representation and domain → generated regional algebra → theorem-dependent reconstruction. It supplies no automatic equivalence between spacelike, double-null, and one-sided phase spaces. The scalar split theorem concerns separated regions and a positive collar; it does not prove exact gluing at a common boundary. A characteristic time-slice axiom must not be inferred from ordinary Cauchy time-slice.
 
-## Equation ledger and dependency boundary
+## Equation Ledger and Dependency Boundary
 
 | Construction | Source location | Dependency |
 |---|---|---|
@@ -451,7 +383,7 @@ For the vault, the reusable sequence is: action and CPS → allowed boundary var
 | Trace-class covariance | A.3, TclassTqTplm, TrTqell, TrTpell | Scalar radial operator and uniform infrared/collar bounds. |
 | Hartle-Hawking weight | B.2, Eq. (B.32) onward, HHcocycle | All six Appendix B assumptions and cocycle theorem. |
 
-## Verification log
+## Verification Log
 
 Source-derived: the section-by-section reconstruction, operator-algebra classification, entropy relation, and global analytic proof above. Official TeX and PDF were retrieved; PDF pages 9, 26, 32, 73, and 79 were visually inspected. Text extraction issued a font-type warning; the displayed formulas and relevant qualification paragraphs were readable in the renders.
 

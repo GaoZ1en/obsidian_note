@@ -21,173 +21,143 @@ Reason codes: `T2-dS-BH-holography`, `T2-model`, `T1-boundary`.
 
 This is useful less as a new de Sitter observable than as a careful dictionary between bulk Maxwell modes and exceptional/discrete-series boundary data. The main limitation for current charge work is equally clear: the paper constructs Hilbert-space representations and invariant inner products, not a covariant phase-space boundary symplectic form.
 
-## Maxwell theory in the planar patch
+## Maxwell Theory in the Planar Patch
 
 The background is
 
-$$
-ds^2=\frac{-d\eta^2+d\vec x^{\,2}}{H^2|\eta|^2},
-\qquad \eta<0,
-$$
+$$\begin{align}
+ds^2=\frac{-d\eta^2+d\vec x^{\,2}}{H^2|\eta|^2}, \qquad \eta<0,
+\end{align}$$
 
 with the standard Maxwell action
 
-$$
+$$\begin{align}
 S=-\frac14\int d^4x\,\sqrt{-g}\,F_{\mu\nu}F^{\mu\nu}.
-$$
+\end{align}$$
 
 Four-dimensional conformal invariance makes the planar-coordinate equations especially simple. The authors completely fix
 
-$$
-A_\eta=0,
-\qquad
-\partial_iA_i=0,
-$$
+$$\begin{align}
+A_\eta=0, \qquad \partial_iA_i=0,
+\end{align}$$
 
 so the lower-index transverse components obey the flat wave equation
 
-$$
+$$\begin{align}
 (\partial_\eta^2-\nabla^2)A_i=0.
-$$
+\end{align}$$
 
 This is a complete gauge fixing for the nonzero-momentum modes considered in the paper. Possible zero modes and large gauge transformations are not developed into an independent boundary sector.
 
-## Bunch--Davies modes and canonical operators
+## Bunch--Davies Modes and Canonical Operators
 
 For transverse polarization vectors
 
-$$
-k^i\epsilon_i^{(\lambda)}(\vec k)=0,
-\qquad
-\epsilon^{(\lambda)}(\vec k)\cdot
-\epsilon^{(\lambda')*}(\vec k)=\delta_{\lambda\lambda'},
-$$
+$$\begin{align}
+k^i\epsilon_i^{(\lambda)}(\vec k)=0, \qquad \epsilon^{(\lambda)}(\vec k)\cdot \epsilon^{(\lambda')*}(\vec k)=\delta_{\lambda\lambda'},
+\end{align}$$
 
 the positive-frequency modes are written as
 
-$$
-A_j^{(\lambda,\vec k)}
-=
-\frac{C}{(2\pi)^{3/2}}|\eta|^{1/2}
-H_{1/2}^{(1)}(k|\eta|)
-\epsilon_j^{(\lambda)}(\vec k)e^{i\vec k\cdot\vec x},
-\qquad
-C=\frac{\sqrt{\pi}}2.
-$$
+$$\begin{align}
+A_j^{(\lambda,\vec k)} = \frac{C}{(2\pi)^{3/2}}|\eta|^{1/2} H_{1/2}^{(1)}(k|\eta|) \epsilon_j^{(\lambda)}(\vec k)e^{i\vec k\cdot\vec x}, \qquad C=\frac{\sqrt{\pi}}2.
+\end{align}$$
 
 The normalization follows from the Maxwell Klein--Gordon product after imposing transversality. Quantization gives
 
-$$
-[a_{\vec k,\lambda},a_{\vec k',\lambda'}^\dagger]
-=\delta_{\lambda\lambda'}\delta^{(3)}(\vec k-\vec k')
-$$
+$$\begin{align}
+[a_{\vec k,\lambda},a_{\vec k',\lambda'}^\dagger] =\delta_{\lambda\lambda'}\delta^{(3)}(\vec k-\vec k')
+\end{align}$$
 
 and the equal-time commutator contains the transverse projector
 
-$$
+$$\begin{align}
 \Pi_{ij}(\vec k)=\delta_{ij}-\frac{k_i k_j}{k^2}.
-$$
+\end{align}$$
 
 The projector is important later: the boundary representation is carried only by the two transverse polarizations, not by a three-component conformal primary with a positive unconstrained norm.
 
-## The two late-time operators
+## The Two Late-Time Operators
 
 Near $\eta=0^-$,
 
-$$
-A_i(\eta,\vec x)
-=\alpha_i(\vec x)+|\eta|\,\beta_i(\vec x)+O(\eta^2).
-$$
+$$\begin{align}
+A_i(\eta,\vec x) =\alpha_i(\vec x)+|\eta|\,\beta_i(\vec x)+O(\eta^2).
+\end{align}$$
 
 The two coefficients have conformal weights
 
-$$
-\Delta_\alpha=1,
-\qquad
-\Delta_\beta=2.
-$$
+$$\begin{align}
+\Delta_\alpha=1, \qquad \Delta_\beta=2.
+\end{align}$$
 
 In momentum space the operator coefficients are
 
-$$
-\alpha_j(\vec k)
-=
-i\sqrt{\frac2\pi}
-\sum_\lambda\epsilon_j^{(\lambda)}(\vec k)
-\bigl(a_{-\vec k,\lambda}^\dagger-a_{\vec k,\lambda}\bigr)k^{-1/2},
-$$
+$$\begin{align}
+\alpha_j(\vec k) = i\sqrt{\frac2\pi} \sum_\lambda\epsilon_j^{(\lambda)}(\vec k) \bigl(a_{-\vec k,\lambda}^\dagger-a_{\vec k,\lambda}\bigr)k^{-1/2},
+\end{align}$$
 
-$$
-\beta_j(\vec k)
-=
-\sqrt{\frac2\pi}
-\sum_\lambda\epsilon_j^{(\lambda)}(\vec k)
-\bigl(a_{-\vec k,\lambda}^\dagger+a_{\vec k,\lambda}\bigr)k^{1/2}.
-$$
+$$\begin{align}
+\beta_j(\vec k) = \sqrt{\frac2\pi} \sum_\lambda\epsilon_j^{(\lambda)}(\vec k) \bigl(a_{-\vec k,\lambda}^\dagger+a_{\vec k,\lambda}\bigr)k^{1/2}.
+\end{align}$$
 
 Thus the two falloffs are not two unrelated photon Hilbert spaces. They are two presentations of the same two physical polarizations, with the expected relative power of $k$.
 
 The de Sitter generators are represented directly on the oscillators. In particular, the paper writes the one-particle charges schematically as
 
-$$
-Q(\xi)
-=
--i\sum_\lambda\int d^3k\,
-a_{\vec k,\lambda}^\dagger\,\delta_\xi a_{\vec k,\lambda}.
-$$
+$$\begin{align}
+Q(\xi) = -i\sum_\lambda\int d^3k\, a_{\vec k,\lambda}^\dagger\,\delta_\xi a_{\vec k,\lambda}.
+\end{align}$$
 
 For special conformal transformations, gauge-restoring terms appear in the transformation of $A_\mu$. They drop from the physical transverse pairing after integration by parts, subject to the momentum-space boundary assumptions used in the paper.
 
-## Exceptional intertwiners and positivity
+## Exceptional Intertwiners and Positivity
 
 At the exceptional point appropriate to a conserved spin-one operator, the usual conformal norm is degenerate before quotienting by longitudinal data. For the $\Delta=1$ operator, the relevant intertwiner is
 
-$$
+$$\begin{align}
 G_{01}^{\prime +}(\vec k)=k\,\Pi^{11}(\vec k),
-$$
+\end{align}$$
 
 so the shadow-like variable is
 
-$$
+$$\begin{align}
 \widetilde\alpha_i(\vec k)=k\,\alpha_i(\vec k)
-$$
+\end{align}$$
 
 on the transverse subspace. Inserting the oscillator expansion gives a positive one-particle norm with the paper's densitized normalization $2/\pi$.
 
 The naive intertwiner for $\beta_i$ instead isolates the helicity-zero component and therefore annihilates the physical transverse sector. The paper avoids declaring the $\Delta=2$ realization null by introducing
 
-$$
+$$\begin{align}
 \beta_i'(\vec k)=\frac1k\beta_i(\vec k).
-$$
+\end{align}$$
 
 This is isomorphic to the $\alpha$ realization and imports its positive invariant inner product. The construction is representation-theoretic: it does not identify $\alpha$ and $\beta$ as canonically conjugate boundary variables or derive a boundary action for them.
 
-## Self-duality and the two helicity modules
+## Self-Duality and the Two Helicity Modules
 
 Choose circular transverse polarizations satisfying
 
-$$
-i\,\vec k\times\vec\epsilon^{(\lambda)}
-=\lambda k\,\vec\epsilon^{(\lambda)},
-\qquad \lambda=\pm1.
-$$
+$$\begin{align}
+i\,\vec k\times\vec\epsilon^{(\lambda)} =\lambda k\,\vec\epsilon^{(\lambda)}, \qquad \lambda=\pm1.
+\end{align}$$
 
 For the corresponding field-strength modes,
 
-$$
-\widetilde F_{\mu\nu}^{(\lambda)}
-=i\lambda F_{\mu\nu}^{(\lambda)}.
-$$
+$$\begin{align}
+\widetilde F_{\mu\nu}^{(\lambda)} =i\lambda F_{\mu\nu}^{(\lambda)}.
+\end{align}$$
 
 Because the Hodge star commutes with the de Sitter isometry action, the self-dual and anti-self-dual subspaces do not mix. The photon representation therefore splits as
 
-$$
+$$\begin{align}
 D_{01}=D_{01}^{(+)}\oplus D_{01}^{(-)},
-$$
+\end{align}$$
 
 with one helicity in each irreducible summand. Both $\alpha^{(\lambda)}$ and $\beta^{(\lambda)}$ realize this split.
 
-## Translation to boundary and phase-space language
+## Translation to Boundary and Phase-Space Language
 
 - $\alpha_i$ and $\beta_i$ are the two independent late-time coefficients. Their weights match the source/response pattern familiar from AdS, but the paper stresses that de Sitter representation theory treats both as realizations of the photon discrete series.
 - $k\Pi_{ij}$ is an invariant intertwiner and norm kernel. It is not the Maxwell presymplectic current, a Dirichlet-to-Neumann map derived from an action, or a proof that the late-time flux vanishes.
@@ -195,7 +165,7 @@ with one helicity in each irreducible summand. Both $\alpha^{(\lambda)}$ and $\b
 - The helicity split is a clean representation-theoretic analogue of decomposing Maxwell data into self-dual and anti-self-dual sectors. It should be useful when comparing Carrollian or celestial boundary modules.
 - The contrast with AdS is structural: the $\Delta=1$ Maxwell branch is normally non-normalizable in standard AdS quantization, whereas here a CFT-inspired de Sitter inner product makes both late operators into positive exceptional-series realizations.
 
-## Verification boundary
+## Verification Boundary
 
 ### Checked
 

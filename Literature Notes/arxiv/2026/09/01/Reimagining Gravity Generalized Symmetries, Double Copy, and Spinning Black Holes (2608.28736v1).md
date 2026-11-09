@@ -19,7 +19,7 @@ tags: []
 
 The remaining 13 chapters contain a mixture of reviews, published results, original unpublished constructions, and candidate exact worldline actions. This note records their dependency structure and advertised results. It does not independently verify the 50,880 lines of TeX or the all-orders black-hole dynamics.
 
-# Source and reading status
+# Source and Reading Status
 
 - Official metadata: https://arxiv.org/abs/2608.28736v1
 - Official PDF: 479 pages, 47 figures.
@@ -30,9 +30,9 @@ The remaining 13 chapters contain a mixture of reviews, published results, origi
 - Independent check: Sage verified the relevant Spin$(4)$ and Spin$(1,3)$ center characters and an $\mathfrak{su}(2)$ representative exponentiating to $-\mathbf 1$.
 - Daily context: [[2026_09_01_overview]].
 
-# How to read this thesis
+# How to Read This Thesis
 
-## Fast route for generalized symmetry and CPS
+## Fast Route for Generalized Symmetry and CPS
 
 1. Read §§1.2.1 and 1.3 for the problem statement and claim map.
 2. Read §§2.2 and 2.5.2 for the first-order Lorentz-gauge and chiral action conventions.
@@ -40,7 +40,7 @@ The remaining 13 chapters contain a mixture of reviews, published results, origi
 4. Read §§3.5.6--3.5.7 only after the formal construction; these give the distributional tetradic-string interpretation.
 5. Read §§3.6--3.7 last, because the Standard Model and swampland statements add physical assumptions beyond the Ward identity.
 
-## Fast route for double copy and rotating black holes
+## Fast Route for Double Copy and Rotating Black Holes
 
 1. Chapter 2 supplies the metric/coframe/frame/self-dual dictionary.
 2. Chapter 4 defines the proposed diffeomorphism-gauge-theory language and states its dimensional/self-dual limitations.
@@ -49,7 +49,7 @@ The remaining 13 chapters contain a mixture of reviews, published results, origi
 5. Chapters 12--13 formulate spinspacetime and the Poisson/symplectic framework.
 6. Chapter 14 is the amplitude endpoint and should be read together with the candidate actions of Chapters 10--11.
 
-# Thesis architecture
+# Thesis Architecture
 
 The dissertation is organized around three questions:
 
@@ -59,7 +59,7 @@ The dissertation is organized around three questions:
 
 The dependency graph is
 
-\[
+$$
 \text{gravity formulations (Ch. 2)}
 \longrightarrow
 \begin{cases}
@@ -67,26 +67,22 @@ The dependency graph is
 \text{diffeomorphism gauge theory (Ch. 4)},\\
 \text{SD/ASD decomposition (Chs. 5--7)}
 \end{cases}
-\]
+$$
 
 and
 
-\[
-\text{SD/ASD black holes}
-+\text{all-orders deviation (Ch. 8)}
-\longrightarrow
-\text{probe NJ and actions (Chs. 9--11)}
-\longrightarrow
-\text{spinspacetime/EOM (Chs. 12--13)}
-\longrightarrow
+$$\begin{align}
+\text{SD/ASD black holes} +\text{all-orders deviation (Ch. 8)} \longrightarrow
+\text{probe NJ and actions (Chs. 9--11)} \longrightarrow
+\text{spinspacetime/EOM (Chs. 12--13)} \longrightarrow
 \text{Compton amplitudes (Ch. 14)}.
-\]
+\end{align}$$
 
-# Chapter and section tree
+# Chapter and Section Tree
 
 This is the complete chapter/section-level tree; key Chapter 3 subsections and the dense endpoint chapters are expanded one level further.
 
-## Chapter 1 — Introduction, pp. 1--16
+## Chapter 1 — Introduction, Pp. 1--16
 
 - 1.1 Gravitation from the Infrared to the Ultraviolet
 - 1.2 Open Puzzles in Gravitation
@@ -95,7 +91,7 @@ This is the complete chapter/section-level tree; key Chapter 3 subsections and t
   - 1.2.3 Effective Dynamics of Spinning Black Holes
 - 1.3 Plan of This Thesis
 
-## Chapter 2 — Reimagining Gravity, pp. 17--66
+## Chapter 2 — Reimagining Gravity, Pp. 17--66
 
 - 2.1 Gravity as Metric Geometry: Einstein--Hilbert, Landau--Lifshitz, Cheung--Remmen
 - 2.2 Gravity as Lorentz Gauge Theory: electric/magnetic equations; second- and first-order coframe GR
@@ -104,7 +100,7 @@ This is the complete chapter/section-level tree; key Chapter 3 subsections and t
 - 2.5 Gravity as a Tapestry of Self-Dual and Anti-Self-Dual Parts: Chalmers--Siegel; chiral coframe/frame actions; covariant color--kinematics; nonlinear SD/ASD superposition
 - 2.6 Ending Remarks
 
-## Chapter 3 — Generalized Symmetries in Dynamical Gravity, pp. 67--123
+## Chapter 3 — Generalized Symmetries in Dynamical Gravity, Pp. 67--123
 
 - 3.1 Introduction
 - 3.2 The Symmetry Triangle
@@ -134,7 +130,7 @@ This is the complete chapter/section-level tree; key Chapter 3 subsections and t
   - 3.A.2 Ward Identity
   - 3.A.3 Plebański Gravity
 
-## Chapter 4 — Double Copy and Diffeomorphism Gauge Theories, pp. 124--174
+## Chapter 4 — Double Copy and Diffeomorphism Gauge Theories, Pp. 124--174
 
 - 4.1 Introduction
 - 4.2 Color--Kinematics Duality from Equations of Motion: bi-adjoint scalar, nonlinear sigma model, Born--Infeld
@@ -148,13 +144,13 @@ This is the complete chapter/section-level tree; key Chapter 3 subsections and t
 
 The thesis itself limits exact GR realizations here to three dimensions or the self-dual sector in four dimensions.
 
-## Chapter 5 — Simplicity of Self-Dual Black Hole, pp. 175--181
+## Chapter 5 — Simplicity of Self-Dual Black Hole, Pp. 175--181
 
 - 5.1 Dyon Motion in Dyon Background
 - 5.2 Self-Dual Dyon as the Hydrogen Atom
 - 5.3 Maximal Superintegrability from Killing--Yano Tensors
 
-## Chapter 6 — Self-Dual Black Hole from Double Copy, pp. 182--197
+## Chapter 6 — Self-Dual Black Hole from Double Copy, Pp. 182--197
 
 - 6.1 Introduction
 - 6.2 Derivation of Self-Dual Taub--NUT Solution from Double Copy
@@ -165,7 +161,7 @@ The thesis itself limits exact GR realizations here to three dimensions or the s
 - 6.A Double Kerr--Schild Metric
 - 6.B A Puzzle Regarding Two Classical Double Copies
 
-## Chapter 7 — Newman--Janis Algorithm from Taub--NUT Instantons, pp. 198--215
+## Chapter 7 — Newman--Janis Algorithm from Taub--NUT Instantons, Pp. 198--215
 
 - 7.1 Introduction
 - 7.2 Intuition and Overview
@@ -178,7 +174,7 @@ The thesis itself limits exact GR realizations here to three dimensions or the s
 - 7.A Nonlinear Superposition Theorem
 - 7.B Spheroidal Coordinates
 
-## Chapter 8 — Geodesic Deviation to All Orders, pp. 216--236
+## Chapter 8 — Geodesic Deviation to All Orders, Pp. 216--236
 
 - 8.1 Introduction
 - 8.2 Tangent-bundle formulation
@@ -193,7 +189,7 @@ The thesis itself limits exact GR realizations here to three dimensions or the s
 - 8.B Explicit Jacobi propagators, Lagrangian, and GDE
 - 8.C Gauge-Covariant Translations in Nonabelian Gauge Theory
 
-## Chapter 9 — Probe Newman--Janis Algorithm, pp. 237--249
+## Chapter 9 — Probe Newman--Janis Algorithm, Pp. 237--249
 
 - 9.1 Introduction
 - 9.2 Schwarzschild Equations of Motion
@@ -207,7 +203,7 @@ The thesis itself limits exact GR realizations here to three dimensions or the s
 - 9.10 Interpretation
 - 9.11 Conclusion
 
-## Chapter 10 — The Kerr Effective Action, pp. 250--274
+## Chapter 10 — The Kerr Effective Action, Pp. 250--274
 
 - 10.1 Introduction
 - 10.2 Flat: free particle, twistor construction, spinspacetime, correspondence space, $N$ and $J$
@@ -220,7 +216,7 @@ The thesis itself limits exact GR realizations here to three dimensions or the s
 
 The thesis plan calls the resulting all-orders Kerr action a **candidate**; this tier should be preserved.
 
-## Chapter 11 — The Kerr--Newman Effective Action, pp. 275--286
+## Chapter 11 — The Kerr--Newman Effective Action, Pp. 275--286
 
 - 11.1 Introduction
 - 11.2 Geodesic Deviation in Einstein--Maxwell Geometry
@@ -232,7 +228,7 @@ The thesis plan calls the resulting all-orders Kerr action a **candidate**; this
 - 11.8 Googly Formulation
 - 11.9 Interpretation
 
-## Chapter 12 — Spinspacetime, pp. 287--299
+## Chapter 12 — Spinspacetime, Pp. 287--299
 
 - 12.1 Introduction
 - 12.2 Reconstructing Spacetime from Poincaré Symmetry
@@ -244,7 +240,7 @@ The thesis plan calls the resulting all-orders Kerr action a **candidate**; this
 - 12.8 What Defines Spinning Black Holes
 - 12.9 Conclusions
 
-## Chapter 13 — Exact Black Hole Equations of Motion, pp. 300--329
+## Chapter 13 — Exact Black Hole Equations of Motion, Pp. 300--329
 
 - 13.1 Universal Poisson Brackets: Poincaré derivation, partial reduction, symplectic leaves
 - 13.2 Interacting Universality in Electromagnetism: symplectic perturbations, BMT equations, higher multipoles
@@ -254,7 +250,7 @@ The thesis plan calls the resulting all-orders Kerr action a **candidate**; this
 - 13.6 Conclusion and Outlook
 - 13.A Definition of Black-Hole Coupling
 
-## Chapter 14 — Black Hole Compton Amplitudes, pp. 330--365
+## Chapter 14 — Black Hole Compton Amplitudes, Pp. 330--365
 
 - 14.1 Introduction
 - 14.2 Summary of Results
@@ -267,19 +263,19 @@ The thesis plan calls the resulting all-orders Kerr action a **candidate**; this
 - 14.9 Conclusions
 - 14.A Scalar Compton Amplitudes
 
-## Appendix A — More on Self-Dual Spacetime, pp. 435--443
+## Appendix A — More on Self-Dual Spacetime, Pp. 435--443
 
 - A.1 Plebański's Second Heavenly Equation
 - A.2 Self-Dual Spacetime as a Cotangent Bundle
 - A.3 Curved Twistor Theory: Lax pair, deformed incidence relation, double fibration
 - A.4 Canonical Transformations on Fibers
 
-## Appendix B — Worldline Formalisms, pp. 444--457
+## Appendix B — Worldline Formalisms, Pp. 444--457
 
 - B.1 S-Matrix Elements/Scattering Amplitudes: classic worldline formalism, reduction by topology, universal phase-space Feynman rules
 - B.2 S-Symplectomorphism/Scattering Generators: classical definition, Magnus series, dequantization, deformation quantization
 
-# Chapter 3 notation dictionary
+# Chapter 3 Notation Dictionary
 
 | Symbol | Meaning |
 |---|---|
@@ -300,149 +296,123 @@ The thesis plan calls the resulting all-orders Kerr action a **candidate**; this
 | $\operatorname{link}(C,S)$ | Topological linking number |
 | $\kappa^2$ | $8\pi G_N$ |
 
-# Chapter 3 equation ledger
+# Chapter 3 Equation Ledger
 
-## Palatini action grammar
+## Palatini Action Grammar
 
 The local action is written as
 
-\[
-L[\gamma,e]
-=\frac1{\kappa^2}
-\left[B_a[e]\wedge R^a[\gamma]+f[e]\right],
-\]
+$$\begin{align}
+L[\gamma,e] =\frac1{\kappa^2} \left[B_a[e]\wedge R^a[\gamma]+f[e]\right],
+\end{align}$$
 
 with Einstein gravity corresponding to
 
-\[
-L
-=\frac1{\kappa^2}\left[
-B_a[e]\wedge R^a[\gamma]
--\frac\Lambda6B_a[e]\wedge\star B^a[e]
-\right].
-\]
+$$\begin{align}
+L =\frac1{\kappa^2}\left[ B_a[e]\wedge R^a[\gamma] -\frac\Lambda6B_a[e]\wedge\star B^a[e] \right].
+\end{align}$$
 
 This resembles a $BF$ action but is not topological $BF$ theory because $B[e]$ is composite and obeys the simplicity structure inherited from the coframe.
 
-## Multivalued transformation
+## Multivalued Transformation
 
-\[
-\gamma\mapsto\Omega_S^{-1}\gamma\Omega_S+\Omega_S^{-1}d\Omega_S,
-\qquad
-e\mapsto\Omega_S^{-1}e,
-\]
+$$\begin{align}
+\gamma\mapsto\Omega_S^{-1}\gamma\Omega_S+\Omega_S^{-1}d\Omega_S, \qquad e\mapsto\Omega_S^{-1}e,
+\end{align}$$
 
 with center jump
 
-\[
+$$\begin{align}
 \lim_{P_+\to P_-}\Omega_S(P_+)\Omega_S^{-1}(P_-)=\alpha\in Z(G).
-\]
+\end{align}$$
 
 Because $\Omega_S$ is multivalued, the distributional term $\Omega_S^{-1}dd\Omega_S$ is retained.
 
-## Charged line
+## Charged Line
 
-\[
-W_\rho(C)=\operatorname{Tr}_\rho\,
-\mathcal P\exp\oint_C\gamma,
-\]
+$$\begin{align}
+W_\rho(C)=\operatorname{Tr}_\rho\, \mathcal P\exp\oint_C\gamma,
+\end{align}$$
 
 and the branch-cut insertion gives
 
-\[
-W_\rho(C)\mapsto
-\rho(\alpha)^{\operatorname{link}(C,S)}W_\rho(C).
-\]
+$$\begin{align}
+W_\rho(C)\mapsto \rho(\alpha)^{\operatorname{link}(C,S)}W_\rho(C).
+\end{align}$$
 
 The center condition is what removes dependence on the arbitrary insertion point/branch sheet.
 
-## Surface operator and Ward identity
+## Surface Operator and Ward Identity
 
-\[
-U_\alpha(S)=
-\exp\left[-\frac{i}{\kappa^2}
-\int_M B_a[e]\wedge(\Omega_S^{-1}dd\Omega_S)^a\right],
-\]
+$$\begin{align}
+U_\alpha(S)= \exp\left[-\frac{i}{\kappa^2} \int_M B_a[e]\wedge(\Omega_S^{-1}dd\Omega_S)^a\right],
+\end{align}$$
 
-\[
-\left\langle W_\rho(C)U_\alpha(S)\right\rangle
-=\rho(\alpha)^{\operatorname{link}(C,S)}
-\left\langle W_\rho(C)\right\rangle.
-\]
+$$\begin{align}
+\left\langle W_\rho(C)U_\alpha(S)\right\rangle =\rho(\alpha)^{\operatorname{link}(C,S)} \left\langle W_\rho(C)\right\rangle.
+\end{align}$$
 
 For $\Omega_S=e^{\lambda\phi_S}$ with $e^{2\pi\lambda}=\alpha$,
 
-\[
-U_\alpha(S)=
-\exp\left[-\frac{2\pi i}{\kappa^2}
-\int_S B_a[e]\lambda^a\right]
-=\exp\left[-\frac{i}{4G_N}\int_S
-\frac12(\star\lambda)_{AB}e^A\wedge e^B\right].
-\]
+$$\begin{align}
+U_\alpha(S)= \exp\left[-\frac{2\pi i}{\kappa^2} \int_S B_a[e]\lambda^a\right] =\exp\left[-\frac{i}{4G_N}\int_S \frac12(\star\lambda)_{AB}e^A\wedge e^B\right].
+\end{align}$$
 
 The last expression is area-like, but its topological character is not visible term by term; it depends on the Ward-identity/change-of-variables argument.
 
-## Canonical avatar
+## Canonical Avatar
 
 On a spatial slice, with
 
-\[
+$$\begin{align}
 E^i{}_a=\frac12B_{ajk}\epsilon^{ijk},
-\]
+\end{align}$$
 
 the surface operator translates the connection by a delta one-form:
 
-\[
-U_\alpha(S_0)A^a_iU_\alpha(S_0)^{-1}
-=\left(A^a+2\pi\lambda^a\delta_3(S_0)\right)_i,
-\qquad
-U_\alpha(S_0)E^i{}_aU_\alpha(S_0)^{-1}=E^i{}_a.
-\]
+$$\begin{align}
+U_\alpha(S_0)A^a_iU_\alpha(S_0)^{-1} =\left(A^a+2\pi\lambda^a\delta_3(S_0)\right)_i, \qquad U_\alpha(S_0)E^i{}_aU_\alpha(S_0)^{-1}=E^i{}_a.
+\end{align}$$
 
 Therefore
 
-\[
-U_\alpha(S_0)W_\rho(C)U_\alpha(S_0)^{-1}
-=\rho(\alpha)^{\operatorname{intersect}_3(C,S_0)}W_\rho(C).
-\]
+$$\begin{align}
+U_\alpha(S_0)W_\rho(C)U_\alpha(S_0)^{-1} =\rho(\alpha)^{\operatorname{intersect}_3(C,S_0)}W_\rho(C).
+\end{align}$$
 
 The Plebański appendix supplies a fundamental $B$ field and a Darboux phase space, making this canonical step cleaner than in the composite-$B[e]$ tetrad description.
 
-# Defect interpretation
+# Defect Interpretation
 
 Applying the multivalued transformation to a flat tetrad/spin-connection background gives
 
-\[
-e^A=(e^{-\lambda\phi_S})^A{}_B\bar e^B,
-\qquad
-R^A{}_B=2\pi\lambda^A{}_B\delta(S).
-\]
+$$\begin{align}
+e^A=(e^{-\lambda\phi_S})^A{}_B\bar e^B, \qquad R^A{}_B=2\pi\lambda^A{}_B\delta(S).
+\end{align}$$
 
 The metric remains unchanged,
 
-\[
+$$\begin{align}
 g_{\mu\nu}=\bar g_{\mu\nu},
-\]
+\end{align}$$
 
 so scalar geodesics see no conical deficit. The source is instead distributional in the coframe formulation, with both ordinary and dual stress tensors proportional to $\star\lambda\,\delta(S)$ and $\lambda\,\delta(S)$. The author calls this a tetradic cosmic string. Its spin holonomy detects a quantized center phase/spin-precession angle.
 
 This is a formal distributional geometry. It is not a smooth Einstein solution, and its interpretation relies on allowing a multivalued coframe whose metric is single-valued.
 
-# Group and screening conditions
+# Group and Screening Conditions
 
 For Lorentzian signature:
 
-\[
-G=\operatorname{Spin}(1,3)\cong SL(2,\mathbb C),
-\qquad Z(G)=\mathbb Z_2,
-\]
+$$\begin{align}
+G=\operatorname{Spin}(1,3)\cong SL(2,\mathbb C), \qquad Z(G)=\mathbb Z_2,
+\end{align}$$
 
 or
 
-\[
-G=SO^+(3,1),
-\qquad Z(G)=1.
-\]
+$$\begin{align}
+G=SO^+(3,1), \qquad Z(G)=1.
+\end{align}$$
 
 The nontrivial Spin center fixes vectors but flips Weyl spinors. Sage confirmed these representation phases. For Euclidean Spin$(4)\cong SU(2)_L\times SU(2)_R$, the two center factors act separately on left and right spinors, while the diagonal center fixes the vector representation.
 
@@ -454,7 +424,7 @@ Screening is representation-dependent:
 
 This last statement assumes the lightest neutrino is massive and concerns the low-energy effective spectrum. Heavy fermions still break the symmetry in the full theory.
 
-# Claim ledger for the whole dissertation
+# Claim Ledger for the Whole Dissertation
 
 | Claim | Status in this note |
 |---|---|
@@ -469,7 +439,7 @@ This last statement assumes the lightest neutrino is massive and concerns the lo
 | Chapter 14 amplitudes lack spurious poles and have correct residues | Source-derived; not independently recomputed |
 | Complete exact spinning-black-hole dynamics in generic backgrounds | Not established by this note |
 
-# Relevance to current projects
+# Relevance to Current Projects
 
 - **Directly relevant:** Chapter 3 is an action-first example of a surface operator derived by a singular change of variables and checked again in canonical phase space.
 - **Regional gluing caution:** the proof uses relative linking and an exact support $S=\partial V$; it does not supply a general gluing theorem for arbitrary regional boundaries or nontrivial homology.
@@ -478,7 +448,7 @@ This last statement assumes the lightest neutrino is massive and concerns the lo
 - **Double-null project:** no PDE well-posedness or characteristic development theorem is supplied; the thesis should not be used to bypass the existing subsidiary-system gate.
 - **Spinning-black-hole program:** Chapters 8--14 form a coherent source map for geodesic deviation, twistor/spinspacetime variables, candidate actions, and amplitude diagnostics.
 
-# Verification ledger
+# Verification Ledger
 
 ## Checked:
 
@@ -487,7 +457,7 @@ This last statement assumes the lightest neutrino is massive and concerns the lo
 - Sage checks of Spin$(4)$ and Spin$(1,3)$ center characters and a Lie-algebra representative exponentiating to the nontrivial $SU(2)$ center.
 - Internal consistency of the charged-line transformation and canonical intersection-number statement at the algebraic level.
 
-## Source-derived:
+## Source-Derived:
 
 - The path-integral measure is assumed invariant under the singular multivalued change of variables.
 - The distributional tetradic-string stress tensors and absence of scalar conical deficit.
@@ -508,17 +478,12 @@ This last statement assumes the lightest neutrino is massive and concerns the lo
 - Equivalence of the symmetry across tetrad, pure-metric, metric-affine, and constrained Plebański formulations.
 - Independent tensor/symbolic reproduction of the 14-chapter all-orders results.
 
-# Bottom line
+# Bottom Line
 
 This is worth keeping as a high-priority monograph, especially Chapter 3. Its best use is as a precise construction template:
 
-\[
-\text{global gauge-group choice}
-\to \text{multivalued transformation}
-\to \text{charged holonomy}
-\to \text{surface insertion}
-\to \text{Ward identity}
-\to \text{screening test}.
-\]
+$$\begin{align}
+\text{global gauge-group choice} \to \text{multivalued transformation} \to \text{charged holonomy} \to \text{surface insertion} \to \text{Ward identity} \to \text{screening test}.
+\end{align}$$
 
 The stop line is equally precise: the thesis establishes that template in a fixed-topology tetradic/Plebański EFT setting, but it does not close the regulator, measure, arbitrary-homology, finite-boundary/corner, or formulation-independence gates needed for a general quantum-gravity symmetry theorem.

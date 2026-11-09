@@ -14,7 +14,7 @@ tags: []
 
 Back to [[2026_07_01_overview]].
 
-# Boundary conditions before charges
+# Boundary Conditions Before Charges
 
 The paper is about the Hamiltonian side of boundary field theory, not directly about the covariant phase space formalism. Its value for the vault is that it gives a clean distinction between:
 
@@ -25,7 +25,7 @@ The paper is about the Hamiltonian side of boundary field theory, not directly a
 
 This is directly relevant to finite-boundary and edge-mode notes because it identifies when a missing boundary momentum is a structural feature of the chosen phase space, rather than a failed charge calculation.
 
-# GiMmsy 3+1 split and the Legendre square
+# GiMmsy 3+1 Split and the Legendre Square
 
 Let $M$ be spacetime, $Y\to M$ the field bundle, and $Q=\Gamma(Y)$ the covariant configuration space. A slicing gives Cauchy surfaces $\Sigma_t$ and compatible generators $(\zeta_M,\zeta_Y)$. A field history $\varphi$ is decomposed into
 
@@ -59,7 +59,7 @@ $$\begin{align}
 
 The point of the paper is that boundary conditions can change the domain of this Legendre transform before any constraint reduction is performed.
 
-# Fixed spatial Dirichlet data
+# Fixed Spatial Dirichlet Data
 
 A covariant boundary condition is a subspace
 
@@ -105,7 +105,7 @@ $$\begin{align}
 
 Proposition 3.5 then says fixed spatial Dirichlet data give an ordinary instantaneous state space $TQ_t^{b_t}$.
 
-# Velocity-only boundary conditions and sector decomposition
+# Velocity-Only Boundary Conditions and Sector Decomposition
 
 The more interesting case is when the boundary condition only says that the velocity vanishes at the boundary, without specifying the boundary value in advance. Then every admissible history has some constant boundary value, but that value labels a sector. The state space is therefore not a single tangent bundle:
 
@@ -127,7 +127,7 @@ D^*|_{Q^b}\cong T^*Q^b, \qquad D^*=\bigsqcup_{b\in Q^\partial}T^*Q^b.
 
 The important physical statement is that there is no boundary-conjugate momentum in this phase space, because boundary velocities were removed from $D$.
 
-# Legendre transform on the sectored velocity bundle
+# Legendre Transform on the Sectored Velocity Bundle
 
 The Legendre transform on $D$ is defined by
 
@@ -149,7 +149,7 @@ $$\begin{align}
 
 Hamiltonian vector fields for this Poisson structure are tangent to the leaves. This is the structural reason sector-moving transformations cannot be Hamiltonian unless the phase space is enlarged.
 
-# Yang-Mills at spatial infinity
+# Yang-Mills at Spatial Infinity
 
 In temporal gauge on a compactified Cauchy surface, the Yang-Mills instantaneous Lagrangian is
 
@@ -183,7 +183,7 @@ $$\begin{align}
 
 The electric field acts only on variations that vanish at the boundary, even though the boundary electric flux itself can be nonzero.
 
-# Gauge transformations, Gauss law, and flux momentum
+# Gauge Transformations, Gauss Law, and Flux Momentum
 
 Gauge transformations act by
 
@@ -231,7 +231,7 @@ J_b^\xi=-\int_{\partial\Sigma}\operatorname{Tr}(E\xi_\partial).
 
 If $D_b\xi_\partial\neq0$, the transformation moves the boundary connection and hence moves the Poisson leaf. It has no Hamiltonian function in this phase space because Hamiltonian vector fields are leaf-tangent.
 
-# Physical boundary gauge group
+# Physical Boundary Gauge Group
 
 The paper proposes defining the physical boundary gauge group as
 
@@ -256,7 +256,7 @@ $$\begin{align}
 
 For semisimple non-Abelian $G$, the center condition leaves no nontrivial connected physical gauge group on the unrestricted all-sector phase space. If one restricts to $\operatorname{Ad}(G)$-invariant boundary configurations, the paper recovers $\mathcal G_{\rm phys}\cong G$, but notes that this restriction is strong.
 
-# Translation to CPS and edge-mode language
+# Translation to CPS and Edge-Mode Language
 
 - $b$ is fixed boundary configuration data, not fixed electric flux.
 - $D=\ker(Tr)$ means boundary velocities are removed; the missing boundary momentum is a choice of phase space.
@@ -266,7 +266,7 @@ For semisimple non-Abelian $G$, the center condition leaves no nontrivial connec
 - Edge modes would enlarge the phase space with boundary-conjugate variables; the paper presents this as the route by which sector-moving transformations may become Hamiltonian.
 - Away from temporal gauge, finite energy constrains $u=\dot A-D_AA_0$ rather than $\dot A$, producing affine admissible velocities. The present vector-bundle Legendre transform must then be generalized.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

@@ -150,7 +150,7 @@ Total deduplicated entries: 138
 | [2610.09814](https://arxiv.org/abs/2610.09814) | gr-qc:replacement | gr-qc, physics.optics | Bogoliubov-de Gennes spectrum, Cherenkov radiation and recoil of solitons with third-order dispersion underlying optical analogue horizons | Hasan Oguz | 32 pages, 6 figures. Supplementary material (15 pages, 1 figure) in the ancillary file this http URL |
 | [2610.09997](https://arxiv.org/abs/2610.09997) | math-ph:replacement | math-ph | Asymptotic Neutrality for the Ionization Conjecture in the Two-Center Thomas-Fermi-Dirac-von Weizsäcker Theory | Lu Chen, Yong Wu | 31 pages |
 
-## Screening audit
+## Screening Audit
 
 Original helper SHA-256: `c8eb94113923634d1f09ed91a455319d340d3e1f3d817557cebe84807e3c0048`. Original rows retained. Latest versions below come from official abstract-page submission histories; helper IDs are unversioned, so an independently archived issue-version is not asserted. Full category order restores the primary category and uppercase mathematical categories omitted by the helper regex.
 

@@ -13,7 +13,7 @@ summary: "A compelling conditional bulk realization of heavy Virasoro sectors, w
 tags: []
 ---
 
-# Direct verdict and claim tier
+# Direct Verdict and Claim Tier
 
 Not proven by the current construction; the evidence only shows: a principal-series Wilson line fixes a hyperbolic puncture sector, the flowed cylinder constraint has a unique **formal level-zero** class at fixed Casimir, low affine levels (N=0,\ldots,4) have the expected partition-number cohomology according to the authors, and the large-(k), high-temperature saddle algebra reproduces the smooth BTZ holonomy, Cardy entropy and leading canonical area variance.
 
@@ -21,17 +21,19 @@ The advertised finite-(k) bulk construction of a heavy Virasoro primary and its 
 
 1. a satisfactory quantization and integration contour for noncompact (SL(2,\mathbb R)) Chern--Simons theory in the fixed principal-series Wilson sector;
 2. the all-level theorem
-   \[
-   H^0_{\mathrm{DS,flow}}(\widehat{\mathcal C}^{\,0}_s)
+
+$$\begin{align}
+H^0_{\mathrm{DS,flow}}(\widehat{\mathcal C}^{\,0}_s)
    \cong \mathcal V_{h_P},
-   \]
+\end{align}$$
+
    which is explicitly deferred to a future paper.
 
 The principal-series Whittaker representative is a non-normalizable bilateral formal sum in a direct-product completion with no growth condition. Declaring the reduced class normalizable because the target Verma module is expected to have a positive Shapovalov form assumes the all-level identification that is still to be proved.
 
 Claim tier: the level-zero representation-theory statement and the large-(k) saddle/thermal calculations are substantive conditional results. “Quantum black-hole microstate at finite (k),” “singular horizon of an individual microstate,” and “smooth horizon emerges only from the modular ensemble” are proposed interpretations, not established nonperturbative theorems.
 
-# Essential reading route
+# Essential Reading Route
 
 1. Section 2.5.1 for why Brown--Henneaux reduction on the cylinder fixes (J^-_0=1), not the usual plane mode (J^-_{-1}=1).
 2. Section 2.5.2 for the flowed physical Hamiltonian and central charge.
@@ -40,314 +42,269 @@ Claim tier: the level-zero representation-theory statement and the large-(k) sad
 5. Sections 5.2--5.4 for the modular kernel, holonomy saddle and smoothness condition.
 6. Sections 5.6--5.8 for the entropy and fluctuation calculation.
 
-# Construction and conventions
+# Construction and Conventions
 
 Three-dimensional gravity is written as
 
-\[
-S=S_{\mathrm{CS}}[A]-S_{\mathrm{CS}}[\widetilde A],
-\qquad
-k=\frac{\ell}{4G_N},
-\]
+$$\begin{align}
+S=S_{\mathrm{CS}}[A]-S_{\mathrm{CS}}[\widetilde A], \qquad k=\frac{\ell}{4G_N},
+\end{align}$$
 
 with
 
-\[
-A=(\omega^a+e^a/\ell)J_a,
-\qquad
-\widetilde A=(\omega^a-e^a/\ell)J_a.
-\]
+$$\begin{align}
+A=(\omega^a+e^a/\ell)J_a, \qquad \widetilde A=(\omega^a-e^a/\ell)J_a.
+\end{align}$$
 
 The matrix generators satisfy
 
-\[
-[H,E]=E,
-\qquad [H,F]=-F,
-\qquad [E,F]=-2H.
-\]
+$$\begin{align}
+[H,E]=E, \qquad [H,F]=-F, \qquad [E,F]=-2H.
+\end{align}$$
 
 The Chern--Simons trace and the affine invariant form have opposite signs. This convention is essential for comparing the holonomy matrices, affine Casimir and Sugawara weight.
 
 A Wilson line at the center of the spatial disc makes the time slice a punctured disc. Its coadjoint-orbit charge obeys
 
-\[
-F_{ij}=\frac{2\pi}{k}q^a\delta^{(2)}(x)\epsilon_{ij}J_a,
-\qquad
-\operatorname{Hol}(A)=\exp\!\left(\frac{2\pi\mu}{k}\right).
-\]
+$$\begin{align}
+F_{ij}=\frac{2\pi}{k}q^a\delta^{(2)}(x)\epsilon_{ij}J_a, \qquad \operatorname{Hol}(A)=\exp\!\left(\frac{2\pi\mu}{k}\right).
+\end{align}$$
 
 Elliptic holonomy is matched to a discrete-series module below threshold; hyperbolic holonomy is matched to a principal continuous-series module above threshold.
 
-# Flowed Brown--Henneaux reduction
+# Flowed Brown--Henneaux Reduction
 
 In lowest-weight Drinfel'd--Sokolov gauge,
 
-\[
+$$\begin{align}
 a_\phi=F-\frac{2\pi}{k}\mathcal L(\phi)E.
-\]
+\end{align}$$
 
 On the cylinder the constant constraint is
 
-\[
-J^-_{\mathrm{cyl}}(w)=1
-\quad\Longleftrightarrow\quad
-J^-_n=\delta_{n0}.
-\]
+$$\begin{align}
+J^-_{\mathrm{cyl}}(w)=1 \quad\Longleftrightarrow\quad J^-_n=\delta_{n0}.
+\end{align}$$
 
 On the plane, a constant instead fixes (J^-_{-1}=1). The two frames are related by spectral flow (\omega=-1):
 
-\[
-\widetilde J^3_n=J^3_n-\frac k2\omega\delta_{n0},
-\qquad
-\widetilde J^\pm_n=J^\pm_{n\pm\omega}.
-\]
+$$\begin{align}
+\widetilde J^3_n=J^3_n-\frac k2\omega\delta_{n0}, \qquad \widetilde J^\pm_n=J^\pm_{n\pm\omega}.
+\end{align}$$
 
 The abelian BRST charge is
 
-\[
+$$\begin{align}
 Q_{\mathrm{DS}}=\sum_n c_{-n}(J^-_n-\delta_{n0}).
-\]
+\end{align}$$
 
 The unflowed improved (L_0) fails to commute with this cylinder BRST charge. In the flowed frame, the (J^3_0) terms cancel and
 
-\[
-L_0^{\mathrm{phys}}
-=L_0^{\mathrm{Sug}}+L_0^{\mathrm{gh}}+\frac k4.
-\]
+$$\begin{align}
+L_0^{\mathrm{phys}} =L_0^{\mathrm{Sug}}+L_0^{\mathrm{gh}}+\frac k4.
+\end{align}$$
 
 The resulting level-zero weight is
 
-\[
+$$\begin{align}
 h=\frac{C_2}{k-2}+\frac k4.
-\]
+\end{align}$$
 
 The total DS central charge is
 
-\[
-c=\frac{3k}{k-2}+6k-2
-=1+6Q^2,
-\qquad
-Q=b+b^{-1},
-\qquad
-b^{-2}=k-2.
-\]
+$$\begin{align}
+c=\frac{3k}{k-2}+6k-2 =1+6Q^2, \qquad Q=b+b^{-1}, \qquad b^{-2}=k-2.
+\end{align}$$
 
 This is one of the paper's cleanest results: spectral flow is not cosmetic but supplies the Hamiltonian compatible with the cylinder constraint.
 
-# Below and above the BTZ threshold
+# Below and Above the BTZ Threshold
 
-## Discrete series
+## Discrete Series
 
 For (\mathcal D_j^+),
 
-\[
-C_2=-j(j-1),
-\qquad
-h_j=\frac k4-\frac{j(j-1)}{k-2}
-=\frac{c-1}{24}-\frac{(j-\tfrac12)^2}{k-2}.
-\]
+$$\begin{align}
+C_2=-j(j-1), \qquad h_j=\frac k4-\frac{j(j-1)}{k-2} =\frac{c-1}{24}-\frac{(j-\tfrac12)^2}{k-2}.
+\end{align}$$
 
 The level-zero constraint has a normalizable Whittaker solution
 
-\[
-|\psi\rangle=\sum_{p\ge0}
-\frac{c_0}{p!(2j)_p}(J^+_0)^p|j,j\rangle.
-\]
+$$\begin{align}
+|\psi\rangle=\sum_{p\ge0} \frac{c_0}{p!(2j)_p}(J^+_0)^p|j,j\rangle.
+\end{align}$$
 
 At (j=k/2), the weight is (h=0). Obtaining the Virasoro vacuum module still requires an extra quotient by the (L_{-1}|0\rangle) singular submodule; the flowed reduction alone gives the full (h=0) Verma module.
 
-## Principal continuous series
+## Principal Continuous Series
 
 For (\mathcal C_s^\epsilon),
 
-\[
-C_2=s^2+\frac14,
-\qquad
-h_P=\frac{c-1}{24}+P^2,
-\qquad
-P=\frac{s}{\sqrt{k-2}}.
-\]
+$$\begin{align}
+C_2=s^2+\frac14, \qquad h_P=\frac{c-1}{24}+P^2, \qquad P=\frac{s}{\sqrt{k-2}}.
+\end{align}$$
 
 In a (J^3_0) basis,
 
-\[
-J^-_0|s,\epsilon;m\rangle=B_m|s,\epsilon;m-1\rangle,
-\qquad B_m\ne0.
-\]
+$$\begin{align}
+J^-_0|s,\epsilon;m\rangle=B_m|s,\epsilon;m-1\rangle, \qquad B_m\ne0.
+\end{align}$$
 
 The constraint ((J^-_0-t)|\psi\rangle=0) produces the recurrence
 
-\[
+$$\begin{align}
 B_{m+1}c_{m+1}=tc_m.
-\]
+\end{align}$$
 
 On the unrestricted direct-product completion, one coefficient fixes the bilateral sequence, so the kernel is one-dimensional. This is an algebraic statement about that chosen completion. It is not a Hilbert-space normalizability result.
 
 The paper says direct cohomology calculations through (N=4) give
 
-\[
+$$\begin{align}
 \dim H^0_N=p(N),
-\]
+\end{align}$$
 
 and no other ghost-number cohomology. Those calculations are reported but not displayed in the source. The all-level extension is a stated expectation.
 
-# Path-integral state and its boundary
+# Path-Integral State and Its Boundary
 
 The half-cylinder expression is schematic:
 
-\[
-|\boldsymbol\Psi_{s_L,s_R}\rangle_{\mathrm{aff}}
-=\int[\mathcal DA][\mathcal D\widetilde A]
-W_{\mathcal C^0_{s_L}}[A]
-W_{\bar{\mathcal C}^0_{s_R}}[\widetilde A]
+$$\begin{align}
+|\boldsymbol\Psi_{s_L,s_R}\rangle_{\mathrm{aff}} =\int[\mathcal DA][\mathcal D\widetilde A] W_{\mathcal C^0_{s_L}}[A] W_{\bar{\mathcal C}^0_{s_R}}[\widetilde A]
 e^{-S_E}|A,\widetilde A\rangle_{\tau=0}.
-\]
+\end{align}$$
 
 Appendix A carefully explains that a semi-infinite open Wilson line has a free representation index at its far endpoint. In a topological theory the bulk Hamiltonian does not project this index onto a preferred vector. The compact (SU(2)_k) prototype prepares a multiplet-valued affine primary, with a particular vector selected only by endpoint data.
 
 The compact prototype is standard and useful, but its transfer to the noncompact principal series is conditional: the relevant Hilbert space, measure, contour and endpoint completion are exactly the unresolved elements of noncompact Chern--Simons quantization.
 
-# Semiclassical BTZ saddle
+# Semiclassical BTZ Saddle
 
 For hyperbolic holonomy
 
-\[
+$$
 \operatorname{Hol}(A)\sim
 \begin{pmatrix}e^{\pi\lambda}&0\\0&e^{-\pi\lambda}\end{pmatrix},
 \qquad
 s=\frac{k\lambda}{2}+O(1),
-\]
+$$
 
 the constant DS connection is
 
-\[
-a_\phi=-\frac{r_+^2}{4}E+F,
-\qquad
-\widetilde a_\phi=-\frac{r_+^2}{4}F+E.
-\]
+$$\begin{align}
+a_\phi=-\frac{r_+^2}{4}E+F, \qquad \widetilde a_\phi=-\frac{r_+^2}{4}F+E.
+\end{align}$$
 
 Chirality fixes (a_t=a_\phi) and (\widetilde a_t=-\widetilde a_\phi). The metric reconstructed from the connection is the BTZ exterior,
 
-\[
-ds^2=-r_+^2\sinh^2\rho\,dt^2+d\rho^2
-+r_+^2\cosh^2\rho\,d\phi^2.
-\]
+$$\begin{align}
+ds^2=-r_+^2\sinh^2\rho\,dt^2+d\rho^2 +r_+^2\cosh^2\rho\,d\phi^2.
+\end{align}$$
 
 The same exterior admits the usual smooth source-free Kruskal completion. Calling the individual state “singular at the horizon” comes from retaining the punctured-disc topology and Wilson source at (\rho=0), with noncompact Euclidean time. It is not determined by the local metric or hyperbolic holonomy alone. The paper acknowledges this by saying the smooth completion answers a different global problem.
 
 Thus the robust result is: the fixed-holonomy WKB saddle on the chosen punctured half-cylinder is locally BTZ and geodesically incomplete at the puncture. The stronger statement that this is the unique semiclassical geometry of an exact CFT heavy eigenstate is not proven.
 
-# Modular ensemble
+# Modular Ensemble
 
 The modular transform of the vacuum character is
 
-\[
-\chi_{\mathrm{vac}}(-1/\tau)
-=\int_0^\infty dP\,S_{0P}\chi_P(\tau),
-\]
+$$\begin{align}
+\chi_{\mathrm{vac}}(-1/\tau) =\int_0^\infty dP\,S_{0P}\chi_P(\tau),
+\end{align}$$
 
 with
 
-\[
+$$\begin{align}
 S_{0P}=4\sqrt2\sinh(2\pi bP)\sinh(2\pi P/b).
-\]
+\end{align}$$
 
 At large (k) and in the Cardy regime,
 
-\[
+$$\begin{align}
 \log S_{0P}\simeq2\pi QP.
-\]
+\end{align}$$
 
 For each chirality,
 
-\[
+$$\begin{align}
 I(\beta_L)=\int_0^\infty dP\,S_{0P}e^{-\beta_LP^2}
-\]
+\end{align}$$
 
 has leading saddle
 
-\[
-P_*=\frac{\pi}{b\beta_L},
-\qquad
-\lambda_L=2bP_*=\frac{2\pi}{\beta_L}.
-\]
+$$\begin{align}
+P_*=\frac{\pi}{b\beta_L}, \qquad \lambda_L=2bP_*=\frac{2\pi}{\beta_L}.
+\end{align}$$
 
 Together with the right sector this is exactly the smooth Euclidean BTZ holonomy condition
 
-\[
-\lambda_L\beta_L=2\pi,
-\qquad
-\lambda_R\beta_R=2\pi.
-\]
+$$\begin{align}
+\lambda_L\beta_L=2\pi, \qquad \lambda_R\beta_R=2\pi.
+\end{align}$$
 
 This is a sound saddle statement for the vacuum modular transform. Calling (S_{0P}) the actual density of primaries of a specific compact CFT is an approximation: an exact compact-CFT spectrum is discrete, and the vacuum modular image is only the high-temperature dominant contribution. The paper generally preserves this qualification.
 
 With a hypothetical density (e^{2\pi\gamma QP}), the saddle gives a conical angle (2\pi\gamma) and
 
-\[
+$$\begin{align}
 S=\gamma\frac{A}{4G_N}.
-\]
+\end{align}$$
 
 This deformation is diagnostic, not a modular-invariant CFT construction.
 
-# Entropy and fluctuations
+# Entropy and Fluctuations
 
 The primary saddle gives
 
-\[
+$$\begin{align}
 \log I\simeq\frac{\pi^2(c-1)}{6\beta_L}.
-\]
+\end{align}$$
 
 The descendant (\eta^{-1}) restores the remaining unit of central charge, so
 
-\[
-\log Z_{\mathrm{BTZ}}simeq
-\frac{\pi^2c}{6}
-\left(\frac1{\beta_L}+\frac1{\beta_R}\right),
-\]
+$$\begin{align}
+\log Z_{\mathrm{BTZ}}simeq \frac{\pi^2c}{6} \left(\frac1{\beta_L}+\frac1{\beta_R}\right),
+\end{align}$$
 
 and
 
-\[
+$$\begin{align}
 S=\frac{2\pi r_+}{4G_N}.
-\]
+\end{align}$$
 
 The Gaussian width is
 
-\[
+$$\begin{align}
 \operatorname{Var}(P)=\frac1{2\beta_L}.
-\]
+\end{align}$$
 
 Using (A=2\pi b(P+\bar P)) at leading order gives
 
-\[
-\operatorname{Var}(A)=4G_NA,
-\qquad
-\frac{\Delta A}{A}=S^{-1/2}.
-\]
+$$\begin{align}
+\operatorname{Var}(A)=4G_NA, \qquad \frac{\Delta A}{A}=S^{-1/2}.
+\end{align}$$
 
 This is a canonical ensemble variance of the holonomy-derived area across heavy sectors at fixed potentials. It is not the variance of a local area operator in one microstate, and the paper correctly separates those observables in its comparison with perturbative gravity.
 
 The phrase (\operatorname{Var}(S)=S) treats the thermodynamic function (S(h)) as a fluctuating function of the sampled energy. Entropy itself is not an ordinary microstate observable; the area/holonomy variance is the cleaner primary result.
 
-# Independent verification
+# Independent Verification
 
 Mathematica checks returned zero for the following identities, assuming (k>2):
 
-\[
-\frac{3k}{k-2}+6k-2
-=1+6\left(\sqrt{k-2}+\frac1{\sqrt{k-2}}\right)^2,
-\]
+$$\begin{align}
+\frac{3k}{k-2}+6k-2 =1+6\left(\sqrt{k-2}+\frac1{\sqrt{k-2}}\right)^2,
+\end{align}$$
 
-\[
-\frac k4-\frac{j(j-1)}{k-2}
-=\frac{c-1}{24}-\frac{(j-\tfrac12)^2}{k-2},
-\]
+$$\begin{align}
+\frac k4-\frac{j(j-1)}{k-2} =\frac{c-1}{24}-\frac{(j-\tfrac12)^2}{k-2},
+\end{align}$$
 
-\[
-\frac k4+\frac{s^2+\tfrac14}{k-2}
-=\frac{c-1}{24}+\frac{s^2}{k-2}.
-\]
+$$\begin{align}
+\frac k4+\frac{s^2+\tfrac14}{k-2} =\frac{c-1}{24}+\frac{s^2}{k-2}.
+\end{align}$$
 
 For (a_\phi=-aE+F), direct diagonalization returned eigenvalues (\pm\sqrt a), confirming the holonomy matching (a=r_+^2/4\). The Gaussian chain from (P_*=\pi\sqrt{(c-1)/6}/\beta_L) and (\operatorname{Var}(P)=1/(2\beta_L)) reproduces (\operatorname{Var}(S_L)=S_L) at leading (c-1\to c).
 
@@ -357,12 +314,12 @@ Assumptions: (k>2), large (k), Cardy/high-temperature regime, macroscopic saddle
 
 Not independently verified: existence of the noncompact path-integral measure and contour, all-level flowed BRST cohomology, normalizability of the reduced principal-series class, identification with an actual primary in a specified compact CFT, or uniqueness of the singular global completion.
 
-# Relevance to the vault
+# Relevance to the Vault
 
 The flowed cylinder-versus-plane DS distinction is directly relevant to Brown--Henneaux quantization notes. It is a concrete example where using the familiar plane constraint changes the physical (L_0) and misses the vacuum endpoint.
 
 The paper also supplies a useful comparison target for the vault's gluing program: a puncture/inner-boundary holonomy sector is converted into an asymptotic Virasoro module, but the boundary symplectic reduction, endpoint degrees of freedom and sewing map are not derived here. Those are precisely the structures that must be kept explicit before importing the “microstate” language into a finite-region CPS construction.
 
-# Bottom line
+# Bottom Line
 
 Keep the spectral-flowed DS weight formula and modular holonomy saddle as verified conditional results. Treat the full Wilson-line-to-Verma-module arrow as a conjecture supported at level zero and through reported low-level computations. Treat the singular-horizon picture as the semiclassical geometry selected by a punctured global completion, not as a theorem about every exact heavy CFT eigenstate.

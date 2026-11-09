@@ -14,13 +14,13 @@ tags: []
 
 Back to [[2026_07_13_overview]].
 
-## How to read the Letter and End Matter
+## How to Read the Letter and End Matter
 
 The main Letter has four technical stages. The residual-gauge section defines a bulk supertranslation through an eikonal equation for a new null foliation. The Minkowski section solves that equation by characteristics and translates the foliation change into optical memory. The Schwarzschild section identifies a curvature-dependent transition between null geodesics with and without turning points. The final main-text section proposes a light-ray operator as the generator on a fixed null hypersurface.
 
 The End Matter is essential rather than optional. It records the Newman-Unti inverse-metric conditions, extends the characteristic construction to a spherical boundary in generic dimension, and derives the real light-cone coordinate map used for the linearized operator. It also contains a missing factor in Eq. (23), so its formulas cannot be treated as a clean appendix.
 
-## Null foliations and the coordinate-independent definition
+## Null Foliations and the Coordinate-Independent Definition
 
 In Newman-Unti coordinates $(u,r,x^a)$, the hypersurfaces $u=\mathrm{const}$ are null and $r$ is an affine parameter along their generators. The inverse metric obeys
 
@@ -44,7 +44,7 @@ The paper defines a residual transformation by a scalar $H$ for which $dH$ is nu
 
 This is a geometric definition of a change of foliation. It does not by itself prove that the change is a nontrivial Hamiltonian symmetry of dynamical gravity. Global existence also requires control of caustics, branch points, and the integrability of a position-dependent rescaling of the normal.
 
-## Plane-fronted Minkowski characteristic flow
+## Plane-Fronted Minkowski Characteristic Flow
 
 For
 
@@ -90,7 +90,7 @@ u=\bar u-f_0 -\frac{\partial_\zeta f_0\partial_{\bar\zeta}f_0}{r}, \qquad z=\zet
 
 with the complex-conjugate equation for $\bar z$. The boundary datum $f_0$ labels a cross-section at null infinity; the characteristic flow propagates it to a bulk null hypersurface.
 
-## Optical memory of the Minkowski congruence
+## Optical Memory of the Minkowski Congruence
 
 The memory effect concerns the congruence and its light front, not the curvature of each individual Minkowski null ray. Define
 
@@ -112,7 +112,7 @@ $$\begin{align}
 
 At large radius, $\theta\sim-2/r$. The paper identifies the asymptotic Newman-Penrose shear with $\sigma^0=\partial_{\bar\zeta}^2f_0$. A complete comparison requires the complex-tetrad and index-conjugation dictionary because Eq. (9) displays the conjugate derivative in a different component.
 
-## Schwarzschild flow and turning-point memory
+## Schwarzschild Flow and Turning-Point Memory
 
 In retarded Eddington-Finkelstein coordinates,
 
@@ -170,7 +170,7 @@ L^2\geq27M^2,
 
 with the critical orbit at $r=3M$. The invariant memory statement is conditional: a change from $L=0$ data to sufficiently large $L$ data can move the congruence between geodesic classes without and with a turning point. The supertranslation does not create a turning point absent from the Schwarzschild null-geodesic potential.
 
-## Spherical Minkowski flow and the printed Eq. (23)
+## Spherical Minkowski Flow and the Printed Eq. (23)
 
 The End Matter considers
 
@@ -216,7 +216,7 @@ f=f_0(\bar x^a) +r\left(1-\sqrt{1-\frac{L^2}{r^2}}\right). \tag{25}
 
 This remains an implicit solution because the general angular characteristic map $x^a(r,\bar x)$ is not printed.
 
-## Finite null plane and the pulled-back metric
+## Finite Null Plane and the Pulled-Back Metric
 
 For real light-cone coordinates,
 
@@ -255,7 +255,7 @@ $$\begin{align}
 \bar q=(I-\bar x^-\operatorname{Hess}f)^T (I-\bar x^-\operatorname{Hess}f).
 \end{align}$$
 
-## Light-ray operator and its exact scope
+## Light-Ray Operator and Its Exact Scope
 
 On $\Sigma:x^+=\mathrm{const}$,
 
@@ -293,7 +293,7 @@ Equation (18) is a fixed-background, linearized light-ray-type operator. Its cla
 
 The source restricts the construction to perturbation theory on a fixed background and states that a fully diffeomorphism-invariant nonlinear gravitational generator remains open.
 
-## Translation into CPS and boundary language
+## Translation into CPS and Boundary Language
 
 - $f_0$ is a boundary residual-symmetry parameter.
 - The characteristic flow extends $f_0$ to a bulk eikonal solution $f$.
@@ -304,7 +304,7 @@ The source restricts the construction to perturbation theory on a fixed backgrou
 
 A gravitational CPS completion would still need the active field-dependent vector $\xi_f$, the presymplectic potential $\Theta[g,\delta g]$, the current $\omega[g;\delta_1g,delta_2g]$, the codimension-two charge variation, integrability and flux conditions, moving-embedding or edge-mode terms, and the adjusted bracket. None of these is constructed in the Letter.
 
-## Verification log
+## Verification Log
 
 ### Checked
 

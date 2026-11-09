@@ -185,7 +185,7 @@ Total deduplicated entries: 173
 | [2609.39936](https://arxiv.org/abs/2609.39936) | gr-qc:replacement | gr-qc | Zero modes and oscillatory instabilities of a Lorentz-violating Kalb-Ramond field on a Schwarzschild background | Hong-Da Lyu, Zhi Xiao, Zhong-Xi Yu, Shoulong Li | 18 pages,6 figures |
 | [2609.40214](https://arxiv.org/abs/2609.40214) | math-ph:replacement | math-ph, quant-ph | Quantum Markov State Models for Metastable Dynamics | Hao-En Li, Lin Lin, Michael Ragone | 53 pages, 6 figures |
 
-## Official metadata and placement audit
+## Official Metadata and Placement Audit
 
 Original helper rows above are preserved. Their LF-joined SHA-256 is b33c4db286c26cb534ac443886b349d20cb6ed8a0d8743f56a1be5d465f59b3f. Primary category comes from each official abstract page; cross-lists include categories outside the three queried lists. Latest submission histories were checked against the issue cutoff, 2026-10-01 18:00 UTC: all issue versions equal the retrieved latest versions. Placements below are disjoint; author signals elsewhere are cross-references.
 

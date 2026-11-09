@@ -15,7 +15,7 @@ summary: "A useful mode-basis decomposition explaining when a Planck-like mirror
 tags: []
 ---
 
-# Why this is medium priority
+# Why This Is Medium Priority
 
 Reason codes: `T2-spectral`, `T2-dS-BH-holography`.
 
@@ -27,7 +27,7 @@ This is a controlled free-field analogue for the active horizon/KMS pipeline. It
 
 The paper gives a useful answer to the first two. The third requires a regulator that is not fully specified.
 
-# Source map
+# Source Map
 
 - Section II: in-vacuum squeezing structure for asymptotically null and timelike-final mirrors.
 - Section III: connected number correlations.
@@ -37,17 +37,13 @@ The paper gives a useful answer to the first two. The third requires a regulator
 - Section VII: numerical spectra/correlations, entropy comparison, and statistical inversion.
 - Appendices A--C: continuum integral identities.
 
-# 1. Geometry and mode split
+# 1. Geometry and Mode Split
 
 Use null coordinates $u=t-x$, $v=t+x$. The mirror trajectory defines inverse ray-tracing functions
 
-$$
-u=F(v),
-\qquad
-v=P(u),
-\qquad
-F(P(u))=u.
-$$
+$$\begin{align}
+u=F(v), \qquad v=P(u), \qquad F(P(u))=u.
+\end{align}$$
 
 For the asymptotically null trajectory,
 
@@ -66,75 +62,57 @@ The line $v=v_0$ divides the past null surface into:
 
 These Rindler/Milne modes are an entangled pair in the Minkowski in-vacuum, with occupation factor
 
-$$
+$$\begin{align}
 n_\Omega=\frac1{e^{2\pi\Omega/\kappa}-1}.
-$$
+\end{align}$$
 
-# 2. Exact versus idealized spectrum
+# 2. Exact Versus Idealized Spectrum
 
 For a right-moving out frequency $\omega$ and incoming frequency $\omega'$, the coefficient is the Fourier transform
 
-$$
-\beta^R_{\omega,-\omega'}
-=-\frac1{2\pi}\sqrt{\frac{\omega'}\omega}
-\int_{-\infty}^{v_0}dv\,
-e^{-i\omega'v-i\omega F(v)}.
-$$
+$$\begin{align}
+\beta^R_{\omega,-\omega'} =-\frac1{2\pi}\sqrt{\frac{\omega'}\omega} \int_{-\infty}^{v_0}dv\, e^{-i\omega'v-i\omega F(v)}.
+\end{align}$$
 
 Extending the accelerated motion to the infinite past gives the Carlitz--Willey expression
 
-$$
-|\beta^R_{\omega,-\omega'}|^2
-=\frac1{2\pi\kappa\omega'}
-\frac1{e^{2\pi\omega/\kappa}-1}.
-$$
+$$\begin{align}
+|\beta^R_{\omega,-\omega'}|^2 =\frac1{2\pi\kappa\omega'} \frac1{e^{2\pi\omega/\kappa}-1}.
+\end{align}$$
 
 For the actual trajectory, static motion at $T<0$ and accelerated motion at $T>0$ give separate contributions. The latter contains an upper incomplete gamma function. Only when
 
-$$
-\omega'\gg\kappa,
-\qquad
-\omega'\gg\omega
-$$
+$$\begin{align}
+\omega'\gg\kappa, \qquad \omega'\gg\omega
+\end{align}$$
 
 does its asymptotic term cancel the static contribution and leave the complete-gamma Planck factor. At $\omega'\ll\kappa$ the leading behavior is instead
 
-$$
-\beta^R_{\omega,-\omega'}
-\simeq-\frac{i}{2\pi}sqrt{\frac{\omega'}\omega}
-\frac1{\omega+\omega'}.
-$$
+$$\begin{align}
+\beta^R_{\omega,-\omega'} \simeq-\frac{i}{2\pi}sqrt{\frac{\omega'}\omega} \frac1{\omega+\omega'}.
+\end{align}$$
 
 Therefore a Planck-like kernel in a restricted frequency regime does not establish exact thermality of the integrated particle number or the outgoing state.
 
-# 3. Squeezed Milne modes and partners
+# 3. Squeezed Milne Modes and Partners
 
 The reflected Milne annihilator is related to inertial out modes by a second Bogoliubov map. The outgoing number decomposes as
 
-$$
-\langle b_\omega^{R\dagger}b_\omega^R\rangle
-=\int_0^\infty d\Omega\,
-\frac{|\alpha^{\rm II}_{\omega,-\Omega}|^2}
-{e^{2\pi\Omega/\kappa}-1}
-\left(1+e^{2\pi\Omega/\kappa}
-\frac{|\beta^{\rm II}_{\omega,-\Omega}|^2}
-{|\alpha^{\rm II}_{\omega,-\Omega}|^2}
-\right).
-$$
+$$\begin{align}
+\langle b_\omega^{R\dagger}b_\omega^R\rangle =\int_0^\infty d\Omega\, \frac{|\alpha^{\rm II}_{\omega,-\Omega}|^2} {e^{2\pi\Omega/\kappa}-1} \left(1+e^{2\pi\Omega/\kappa} \frac{|\beta^{\rm II}_{\omega,-\Omega}|^2} {|\alpha^{\rm II}_{\omega,-\Omega}|^2} \right).
+\end{align}$$
 
 The first factor is the exact Milne occupation. The second records mirror-history-dependent mixing. In the eternal Carlitz--Willey limit,
 
-$$
-\alpha^{\rm II}_{\omega,-\Omega}=\delta(\omega-\Omega),
-\qquad
-\beta^{\rm II}_{\omega,-\Omega}=0,
-$$
+$$\begin{align}
+\alpha^{\rm II}_{\omega,-\Omega}=\delta(\omega-\Omega), \qquad \beta^{\rm II}_{\omega,-\Omega}=0,
+\end{align}$$
 
 so the inertial out mode coincides with an unsqueezed Milne mode. For the finite-history trajectory, the out particle is a squeezed Milne mode and gains same-side frequency correlations in addition to correlations with its Rindler partner.
 
 This is a basis-dependent structural statement. It does not identify a localized interior black-hole degree of freedom; the partner here is the Rindler member of a specified free-field mode decomposition.
 
-# 4. Mirror returning to timelike infinity
+# 4. Mirror Returning to Timelike Infinity
 
 If the mirror stops accelerating before the would-be asymptote, there is no true horizon. The authors nevertheless split the past null surface at the would-be $v_0$ and propagate both bases forward. Both the Rindler and Milne sectors are then accessible at $\mathscr I_R^+$.
 
@@ -146,25 +124,19 @@ The inertial spectrum contains:
 
 Equation (66) expresses all three through four history-dependent coefficients. A finite stopping time replaces complete gamma functions by incomplete ones, so the Planck form is not recovered for generic fixed stopping data.
 
-# 5. Correlations and the regulator problem
+# 5. Correlations and the Regulator Problem
 
 The paper uses the connected number correlation
 
-$$
-Q(k_1,k_2)=
-\langle N_{k_1}N_{k_2}\rangle
--\langle N_{k_1}\rangle\langle N_{k_2}\rangle,
-\qquad k_1\ne k_2.
-$$
+$$\begin{align}
+Q(k_1,k_2)= \langle N_{k_1}N_{k_2}\rangle -\langle N_{k_1}\rangle\langle N_{k_2}\rangle, \qquad k_1\ne k_2.
+\end{align}$$
 
 For the ideal continuum thermofield-double limit it writes
 
-$$
-Q^{RL}(\omega_1,-\omega_2)
-=\frac{[\delta(\omega_1-\omega_2)]^2}
-{4\sinh(\pi\omega_1/\kappa)
-\sinh(\pi\omega_2/\kappa)}.
-$$
+$$\begin{align}
+Q^{RL}(\omega_1,-\omega_2) =\frac{[\delta(\omega_1-\omega_2)]^2} {4\sinh(\pi\omega_1/\kappa) \sinh(\pi\omega_2/\kappa)}.
+\end{align}$$
 
 This expression is not a defined Schwartz distribution: $\delta^2$ needs a finite-time, box, detector-response, or wave-packet prescription. Likewise $\delta(0)$ in the ideal occupation is only heuristically identified with an observation duration.
 
@@ -174,21 +146,23 @@ Accordingly:
 
 > Not proven by the current formulas/plots: the numerical magnitude and detailed shape of the sharp-mode correlations. The evidence supports the qualitative existence of additional Bogoliubov mixing, but the continuum correlation observable requires a stated regulator.
 
-# Independent verification
+# Independent Verification
 
 ## Checked
 
 - **Mathematica:** verified the inverse relation
-  $$
-  F(v)=-\kappa^{-1}\log(1-\kappa v),
-  \qquad
-  P(u)=\kappa^{-1}(1-e^{-\kappa u})
-  $$
+
+$$\begin{align}
+F(v)=-\kappa^{-1}\log(1-\kappa v), \qquad P(u)=\kappa^{-1}(1-e^{-\kappa u})
+\end{align}$$
+
   on $0<v<\kappa^{-1}$.
 - **Mathematica:** using
-  $$
-  |\Gamma(1+ix)|^2=\frac{\pi x}{\sinh\pi x},
-  $$
+
+$$\begin{align}
+|\Gamma(1+ix)|^2=\frac{\pi x}{\sinh\pi x},
+\end{align}$$
+
   reproduced the Bose--Einstein modulus in the ideal coefficient.
 - **Algebraic check:** the no-secondary-squeezing limit $\alpha=\delta$, $\beta=0$ reduces the Milne decomposition to the standard Planck occupation.
 - **Visual confirmation:** rendered PDF pages 12, 13, 15, 18, 19, and 23 and checked the exact coefficients, Milne decomposition, timelike-final mode split, three-term spectrum, and correlation/entropy discussion against the TeX source.
@@ -200,7 +174,7 @@ Accordingly:
 - The eternal Planck expression is a spectral density in continuum normalization, not a finite particle number.
 - The timelike-final Rindler/Milne partition uses a would-be asymptote rather than a causal horizon.
 
-## Not independently verified
+## Not Independently Verified
 
 - The incomplete-gamma asymptotics were not given uniform error bounds across the frequency integrals.
 - The Bogoliubov completeness/canonical identities for the piecewise trajectories were not independently integrated.
@@ -208,16 +182,16 @@ Accordingly:
 - The connected number correlation is not an entanglement monotone; the paper explicitly distinguishes it from entanglement entropy.
 - No result here proves information recovery, Hilbert-space unitarity of an evaporating black hole, or equivalence to higher-dimensional Hawking radiation.
 
-# Claim tier and takeaway
+# Claim Tier and Takeaway
 
 **Achieved claim tier:** analytic free-field mode decomposition and verified ideal thermal factor, with a source-supported qualitative squeezing mechanism. Sharp-mode correlation magnitudes remain regulator-dependent and unverified.
 
 The reusable lesson for the AdS-Rindler/KMS project is:
 
-$$
+$$\begin{align}
 \text{Planck factor in one basis}
 \not\Rightarrow
 \text{thermal outgoing state in another basis}.
-$$
+\end{align}$$
 
 One must state the Cauchy split, normalize wave packets, verify the full Bogoliubov identities, and separate mutual partner correlations from same-side correlations induced by additional squeezing.

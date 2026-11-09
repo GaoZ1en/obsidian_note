@@ -171,7 +171,7 @@ Total deduplicated entries: 182
 | [2608.06924](https://arxiv.org/abs/2608.06924) | gr-qc:replacement | gr-qc | Optical Signatures of Sgr A* and M87* with Dark Matter Halos | Noraiz Tahir, Muhammad Ali Paracha, Mubasher Jamil | arXiv admin note: This submission has been withdrawn because it does not meet arXiv s research content quality standards |
 | [2608.08774](https://arxiv.org/abs/2608.08774) | math-ph:replacement | math-ph | Elliptic solutions to matrix CKP equation | A. Zabrodin | 15 pages, no figures. Presentation improved, typos corrected |
 | [2608.27640](https://arxiv.org/abs/2608.27640) | hep-th:replacement | hep-th | A geometric resolution limit from vacuum entanglement: Topological Structure and Particle-Wave Asymmetry | Isbelia Martin | 8 pages, 1 figure. Spectral calculation implemented in Python with SciPy, N=3000, n-modes= 1000 |
-| [2609.02175](https://arxiv.org/abs/2609.02175) | math-ph:replacement | math-ph | Inverse Semiclassical Scattering at Fixed Energy | François Nicoleau | The upper bound constant \(\sqrt{2}\) has been replaced by the optimal constant \(2\) |
+| [2609.02175](https://arxiv.org/abs/2609.02175) | math-ph:replacement | math-ph | Inverse Semiclassical Scattering at Fixed Energy | François Nicoleau | The upper bound constant $\sqrt{2}$ has been replaced by the optimal constant $2$ |
 | [2609.10755](https://arxiv.org/abs/2609.10755) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th, quant-ph | Massive quantum divergence on the Cauchy horizon of a black hole | Marc Casals, Lorenzo Pisani, Peter Taylor | Minor revisions |
 | [2609.12812](https://arxiv.org/abs/2609.12812) | hep-th:replacement | hep-th | Stochastic dynamics from O(2N) fractional Laplacian vector model and O(N) vector model free energy in finite temperature | WooCheol Shin, Jun Hyuk Lee, Ji-seong Chae, Jae-Hyuk Oh | 47+1 pages, 9 figures |
 | [2609.20042](https://arxiv.org/abs/2609.20042) | math-ph:replacement | math-ph | Non-simple blow-up for the Chern--Simons--Higgs equation on Riemannian surfaces | Youngae Lee, Lei Zhang | 59 pages |
@@ -194,7 +194,7 @@ Total deduplicated entries: 182
 | [2611.04232](https://arxiv.org/abs/2611.04232) | math-ph:replacement | math-ph | Galois-modular obstructions to the categorification of near-group fusion rings | Víctor Blasco | 11 pages; v2 adds an acknowledgements section, text and mathematical content remain unchanged |
 | [2611.06295](https://arxiv.org/abs/2611.06295) | hep-th:replacement | hep-th | Spectral flow in AdS$\mathbf{_3}$ revisited | Nathan McStay, Ronald Reid-Edwards, Sean Seet | 66 pages, 6 figures. V2: Added the ancillary Mathematica notebook omitted from V1 |
 
-## Screening and version audit
+## Screening and Version Audit
 
 All rows screened from the complete helper inventory and official listing metadata. The primary subject and full cross-list set below preserve case-sensitive category codes that the helper regex omits. Version pins come from versioned HTML links in the saved lists; “not displayed” is not a latest-version claim. Only selected high papers received technical retrieval/checks; medium items received Source-derived abstract sketches; all remaining rows are metadata only.
 

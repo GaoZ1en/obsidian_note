@@ -25,7 +25,7 @@ Four boundaries matter before importing formulas:
 
 These are source-level transcription defects rather than evidence against the review's central physical picture. They do, however, make literal copy-and-use unsafe.
 
-# Source map
+# Source Map
 
 - **Sections 1--3:** define self-duality, derive the scalar lightcone actions, and use the propagator/vertex helicity structure to isolate tree one-minus and one-loop all-plus sectors.
 - **Sections 4--5:** derive the SDYM action from full Yang--Mills and the SDG action from Einstein--Hilbert in lightcone gauge, including ghost-decoupling arguments.
@@ -36,53 +36,47 @@ These are source-level transcription defects rather than evidence against the re
 - **Sections 15--16:** separate several anomaly interpretations and survey MHV, double-copy, conformal, $N=2$ string, supersymmetric, and Burns-space connections.
 - **Appendices A--H:** cover the first heavenly equation, covariant actions and gauge fixing, color factors, current recursions, the double-off-shell proof, one-loop formula properties, and the perturbiner/current/amplitude dictionary.
 
-# Conventions and classical actions
+# Conventions and Classical Actions
 
 The paper uses signature $(+---)$ and lightcone variables
 
-$$
-u=\frac{x^0-x^3}{2},\qquad \bar u=\frac{x^0+x^3}{2},\qquad
-w=\frac{x^1+i x^2}{2},\qquad \bar w=\frac{x^1-i x^2}{2},
-$$
+$$\begin{align}
+u=\frac{x^0-x^3}{2},\qquad \bar u=\frac{x^0+x^3}{2},\qquad w=\frac{x^1+i x^2}{2},\qquad \bar w=\frac{x^1-i x^2}{2},
+\end{align}$$
 
 with
 
-$$
-\Box=\partial_u\partial_{\bar u}-\partial_w\partial_{\bar w},
-\qquad
-\{f,g\}=\partial_u f\,\partial_w g-\partial_w f\,\partial_u g.
-$$
+$$\begin{align}
+\Box=\partial_u\partial_{\bar u}-\partial_w\partial_{\bar w}, \qquad \{f,g\}=\partial_u f\,\partial_w g-\partial_w f\,\partial_u g.
+\end{align}$$
 
 In Lorentzian signature $u,\bar u$ and $w,\bar w$ are not related as real/complex conjugate coordinate pairs in the naive Euclidean sense. Non-flat self-dual solutions are generally complex; this is part of the paper's nonunitarity boundary.
 
 The scalar lightcone actions are
 
-$$
-S_{\rm SDYM}=-\int d^4x\,\operatorname{tr}\,
-\bar\Phi\left(\Box\Phi+i\sqrt2g[\partial_u\Phi,\partial_w\Phi]\right),
-$$
+$$\begin{align}
+S_{\rm SDYM}=-\int d^4x\,\operatorname{tr}\, \bar\Phi\left(\Box\Phi+i\sqrt2g[\partial_u\Phi,\partial_w\Phi]\right),
+\end{align}$$
 
-$$
-S_{\rm SDG}=-\int d^4x\,\bar\phi\left(
-\Box\phi-\frac\kappa2\{\partial_u\phi,\partial_w\phi\}
-\right).
-$$
+$$\begin{align}
+S_{\rm SDG}=-\int d^4x\,\bar\phi\left( \Box\phi-\frac\kappa2\{\partial_u\phi,\partial_w\phi\} \right).
+\end{align}$$
 
 $\Phi,\phi$ encode positive-helicity fields and $\bar\Phi,\bar\phi$ negative-helicity fields. Setting the barred field to zero gives the classical self-dual equation; retaining it supplies a linear negative-helicity fluctuation on the self-dual background. The gravitational cubic vertex is the kinematic square of the Yang--Mills vertex, making the self-dual color--kinematics relation manifest.
 
-# Why the sector is one-loop exact
+# Why the Sector Is One-Loop Exact
 
 Both actions have only a mixed propagator and a cubic $++-$ vertex. Let $V$ be the number of vertices, $I$ internal lines, and $E_-$ external negative-helicity legs. Counting barred-field ends gives $V=I+E_-$. For a connected graph $L=I-V+1$, hence
 
-$$
+$$\begin{align}
 L=1-E_-.
-$$
+\end{align}$$
 
 Consequently, all-plus graphs can occur only at one loop, one-minus graphs only at tree level, and no graph exists with two external minus legs. The generic tree one-minus sum vanishes, apart from the three-point amplitude. The paper carefully records a newer caveat: in split signature there can be distributional support on a lower-dimensional collinear locus, so “vanishes” means away from that exceptional distributional support.
 
 Equality with the corresponding pure-YM/pure-Einstein amplitudes follows from the full lightcone actions: the extra vertices require helicity configurations unavailable in the tree-one-minus and one-loop-all-plus sectors. This is a perturbative flat-background statement, not a claim about equality of nonperturbative theories or curved-background determinants.
 
-# Lightcone reductions and ghost boundaries
+# Lightcone Reductions and Ghost Boundaries
 
 For SDYM the paper fixes $A_u=0$, solves the nondynamical constraint, and integrates out the remaining constrained component. Keeping the action only to first order in the negative-helicity scalar gives the Chalmers--Siegel self-dual action above.
 
@@ -90,42 +84,32 @@ For gravity it imposes lightcone gauge on the metric, solves the constraint equa
 
 **Boundary:** the scalar lightcone derivation is useful for amplitudes but is not a covariant phase-space reduction. Inverse $\partial_u$ operators, boundary conditions, zero modes, reality conditions, and the path-integral measure are not developed as a global phase-space construction. The later covariant appendix sketches how the covariant actions reduce to lightcone form, but its gravitational ghost discussion is not an explicit determinant calculation and its finiteness argument is expressly described as “slightly hand-wavy.”
 
-# Berends--Giele currents
+# Berends--Giele Currents
 
 With a reference spinor $|\alpha\rangle$, the Yang--Mills current takes the Parke--Taylor form
 
-$$
-J_{\rm YM}(1,\ldots,n)
-=\frac{(i\sqrt2g)^{n-1}}
-{\langle\alpha1\rangle\langle12\rangle\cdots
-\langle n\alpha\rangle}.
-$$
+$$\begin{align}
+J_{\rm YM}(1,\ldots,n) =\frac{(i\sqrt2g)^{n-1}} {\langle\alpha1\rangle\langle12\rangle\cdots \langle n\alpha\rangle}.
+\end{align}$$
 
 The gravity current obeys
 
-$$
-p_N^2\mathcal J_{\rm G}(N)
-=-\frac\kappa2\sum_{A\sqcup B=N}
-\langle\alpha|p_Ap_B|\alpha\rangle^2
-\mathcal J_{\rm G}(A)\mathcal J_{\rm G}(B),
-$$
+$$\begin{align}
+p_N^2\mathcal J_{\rm G}(N) =-\frac\kappa2\sum_{A\sqcup B=N} \langle\alpha|p_Ap_B|\alpha\rangle^2 \mathcal J_{\rm G}(A)\mathcal J_{\rm G}(B),
+\end{align}$$
 
 where $(A,B)$ is an unordered bipartition. Its tree solution is intended to be
 
-$$
-\mathcal J_{\rm G}(1,\ldots,n)=
-\left(-\frac\kappa2\right)^{n-1}
-\left(\prod_{a=1}^n\frac1{\langle\alpha a\rangle^4}\right)
-\sum_{T\text{ tree}}\prod_{(ij)\in E(T)}
-\frac{[ij]}{\langle ij\rangle}
-\langle\alpha i\rangle^2\langle\alpha j\rangle^2.
-$$
+$$\begin{align}
+\mathcal J_{\rm G}(1,\ldots,n)= \left(-\frac\kappa2\right)^{n-1} \left(\prod_{a=1}^n\frac1{\langle\alpha a\rangle^4}\right)
+\sum_{T\text{ tree}}\prod_{(ij)\in E(T)} \frac{[ij]}{\langle ij\rangle} \langle\alpha i\rangle^2\langle\alpha j\rangle^2.
+\end{align}$$
 
 **Source correction:** Eqs. (8.14), (8.15), and their appendix repetition print $\sum_{(ij)\in E(T)}$ in place of $\prod_{(ij)\in E(T)}$. The adjacent sentence assigns a factor to every edge, the degree formula needs multiplication, the two- and three-node examples have the product structure, and Eq. (8.18) invokes a Laplacian cofactor. This is not a choice of convention.
 
 The current also has a collinear recursion that turns directly into the classical perturbiner Ward recursion. This is the cleanest reusable bridge in the paper between Feynman recursion, weighted trees, and infinite-dimensional symmetry.
 
-# One-loop all-plus amplitudes
+# One-Loop All-Plus Amplitudes
 
 The review gives three complementary routes:
 
@@ -135,20 +119,15 @@ The review gives three complementary routes:
 
 Scaleless bubbles vanish in dimensional regularization. A $\mu^2$ insertion shifts the triangle to $6-2\epsilon$ dimensions:
 
-$$
-\int\frac{d^{4-2\epsilon}L}{(2\pi)^{4-2\epsilon}}
-\frac{\mu^2}{(L^2-\Delta)^3}
-=-\epsilon(4\pi)
-\int\frac{d^{6-2\epsilon}L}{(2\pi)^{6-2\epsilon}}
-\frac1{(L^2-\Delta)^3}
-=\frac{i}{2(4\pi)^2}+O(\epsilon).
-$$
+$$\begin{align}
+\int\frac{d^{4-2\epsilon}L}{(2\pi)^{4-2\epsilon}} \frac{\mu^2}{(L^2-\Delta)^3} =-\epsilon(4\pi) \int\frac{d^{6-2\epsilon}L}{(2\pi)^{6-2\epsilon}} \frac1{(L^2-\Delta)^3} =\frac{i}{2(4\pi)^2}+O(\epsilon).
+\end{align}$$
 
 The resulting SDYM formula is rational, finite, and has only holomorphic collinear singularities. For gravity the paper derives a double-off-shell representation and compares it to BDPR.
 
 **Evidence boundary:** the SDYM intermediate expression is said to agree with the canonical all-plus expression by high-multiplicity numerical checks, but no notebook or test data are supplied. The gravitational double-off-shell formula is tested on random kinematics, and agreement with BDPR is reported through $n\le9$. BDPR itself remains an all-$n$ conjecture; the note explicitly does not provide a proof.
 
-# Classical perturbiners and celestial symmetry
+# Classical Perturbiners and Celestial Symmetry
 
 The perturbiner expands a classical solution in nilpotent plane-wave labels. Its coefficients are Fourier transforms of off-shell Berends--Giele currents. For SDG, plane-wave generators close under the $(u,w)$ Poisson bracket and organize into the loop algebra $Lw_{1+\infty}$; for SDYM, the color commutator combined with loop modes gives $Ls$.
 
@@ -158,7 +137,7 @@ Beyond the classical self-dual sector, stripped MHV representatives obey related
 
 The anomaly discussion is usefully non-monolithic. It separates MHV/CSW interpretations, electromagnetic-duality anomaly language, and the twistor-space Celestial Chiral Algebra anomaly cancelled by a fourth-order axion or special matter. These are related viewpoints, not a single theorem equating all mechanisms.
 
-# Equation and claim ledger
+# Equation and Claim Ledger
 
 | Source item | Role | Status |
 |---|---|---|
@@ -175,19 +154,22 @@ The anomaly discussion is usefully non-monolithic. It separates MHV/CSW interpre
 | covariant SDG gauge fixing | recover lightcone action | **Blocked** as printed by component and finite-transformation typos |
 | covariant rescaling finiteness sketch | alternate finiteness argument | **Not a proof**; source labels it hand-wavy |
 
-# Verification log
+# Verification Log
 
 - **Checked — dimension shift:** Mathematica evaluated the $D=6-2\epsilon$, $a=3$ scalar-integral formula with the prefactor $-\epsilon(4\pi)$ and returned $i/(32\pi^2)=i/[2(4\pi)^2]$, with zero residual against Eq. (11.27). **Assumptions:** the scalar-integral branch and $i0$ prescription are those of Eq. (11.26), with fixed nonzero $\Delta$ before taking $\epsilon\to0$.
 - **Checked — matrix-tree theorem:** Sage and Mathematica computed a $3\times3$ weighted Laplacian cofactor and obtained
-  $$
-  w_{12}w_{13}+w_{12}w_{23}+w_{13}w_{23},
-  $$
+
+$$\begin{align}
+w_{12}w_{13}+w_{12}w_{23}+w_{13}w_{23},
+\end{align}$$
+
   exactly the sum of products over the three spanning trees. The printed sum of individual edge weights is not equal to this cofactor.
 - **Failed — Eq. (D.5) normalization:** with the paper's $p_i\cdot p_j=\langle ij\rangle[ij]/2$,
-  $$
-  p_N^2=\sum_{a<b}\langle ab\rangle[ab]
-  =\frac12\sum_{a\ne b}\langle ab\rangle[ab].
-  $$
+
+$$\begin{align}
+p_N^2=\sum_{a<b}\langle ab\rangle[ab] =\frac12\sum_{a\ne b}\langle ab\rangle[ab].
+\end{align}$$
+
   The printed ordered-pair sum omits the factor $1/2$. Mathematica returned a nonzero residual equal to the unordered sum.
 - **Failed as printed — Feynman parameter:** the displayed
   $(u_1p_1+u_2p_2^2+u_3p_3)^2$ adds a scalar to vectors. The completed square requires $(u_1p_1+u_2p_2+u_3p_3)^2$. The preceding denominator and shift show the intended expression.
@@ -197,7 +179,7 @@ The anomaly discussion is usefully non-monolithic. It separates MHV/CSW interpre
 - **Visually confirmed:** generated PDF pages 30, 49, 87, 89, and 99 reproduce the source defects in the tree-current edge operation, $\Delta$, finite Lorentz transformation, repeated tetrad component, and ordered-pair $p_N^2$ identity. PDF page 31 confirms the adjacent matrix-cofactor form.
 - **Blocked:** no author notebook accompanies the high-multiplicity numerical comparisons. I did not independently rederive the full SDG lightcone constraint solution, all $n$ double-off-shell identities, BDPR checks through nine points, twistor anomaly calculation, or every appendix proof.
 
-# Translation to current vault projects
+# Translation to Current Vault Projects
 
 The most reusable part for the vault is a four-level separation:
 
@@ -210,7 +192,7 @@ This prevents an attractive but invalid shortcut in null-boundary work: the appe
 
 The weighted-tree current is potentially useful for finite-mode gluing and reconstruction comparisons, but only after correcting products, pair-counting, and reference-spinor conventions. The dimension-shift example is also a clean warning that a four-dimensional on-shell test can certify vanishing cuts while entirely missing the finite rational quantum answer.
 
-# Bottom line for current projects
+# Bottom Line for Current Projects
 
 Keep this as a high-priority reference for the self-dual action/current/symmetry dictionary. Its strongest contribution is organizational: it makes the chain from lightcone reductions to currents, loop amplitudes, perturbiners, and celestial algebras unusually explicit, while openly recording where unitarity and all-$n$ proofs stop. For formula reuse, patch the five printed defects above and preserve the distinction between author-proved, author-numerically-checked, conjectural, and independently checked statements.
 

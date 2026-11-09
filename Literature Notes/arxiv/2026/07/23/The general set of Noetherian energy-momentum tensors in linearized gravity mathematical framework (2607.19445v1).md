@@ -23,12 +23,12 @@ The direct verdict is:
 
 That distinction is the organizing principle of this note.
 
-## How to read this long paper
+## How to Read This Long Paper
 
-1. Read §§2.1--2.4 and Appendix A together. They define the input coefficients \(C_i,D_i,B_i\), the current, the 43 output coefficients, and the polynomial map between them.
+1. Read §§2.1--2.4 and Appendix A together. They define the input coefficients $C_i,D_i,B_i$, the current, the 43 output coefficients, and the polynomial map between them.
 2. Read §2.5 immediately after the general tensor. It limits every later positive classification.
-3. Use §3 as a catalogue of one-way exclusion certificates. The quickest tests are \(b_4=b_5\), \(d_4=d_{5_i}\), and \(d_{5_{ii}}=0\).
-4. Read §4 with Appendix B. Symmetry and trace are extra polynomial constraints; Christoffel and canonical transformations are fixed choices of the \(B_i\).
+3. Use §3 as a catalogue of one-way exclusion certificates. The quickest tests are $b_4=b_5$, $d_4=d_{5_i}$, and $d_{5_{ii}}=0$.
+4. Read §4 with Appendix B. Symmetry and trace are extra polynomial constraints; Christoffel and canonical transformations are fixed choices of the $B_i$.
 5. Read the Rose--Xavier example in §4.6 as an explicit current-derived symmetric-traceless tensor, not as a completed proof of action symmetry.
 6. Appendix C is only a presence/absence map. Appendix D contains the raw current expansion from which Appendix A is collected.
 
@@ -51,7 +51,7 @@ $$
 
 Only a further action-symmetry calculation would turn candidacy into a general positive Noetherian classification.
 
-## Source structure
+## Source Structure
 
 | Source part | Technical role | PDF pages |
 |---|---|---:|
@@ -74,497 +74,381 @@ Only a further action-symmetry calculation would turn candidacy into a general p
 | Appendix C | Records which basis monomials occur in the surveyed tensors. | 31--32 |
 | Appendix D | Displays the four uncollected current contributions. | 32--33 |
 
-## Linearized Einstein operator and conventions
+## Linearized Einstein Operator and Conventions
 
 The background and signature are
 
-$$
-g_{\mu\nu}
-=\eta_{\mu\nu}+\epsilon h_{\mu\nu},
-\qquad
-\eta=\operatorname{diag}(+,-,-,-),
-\qquad
-h_{\mu\nu}=h_{\nu\mu}.
-$$
+$$\begin{align}
+g_{\mu\nu} =\eta_{\mu\nu}+\epsilon h_{\mu\nu}, \qquad \eta=\operatorname{diag}(+,-,-,-), \qquad h_{\mu\nu}=h_{\nu\mu}.
+\end{align}$$
 
-Indices on linearized fields are moved with \(\eta_{\mu\nu}\), and
+Indices on linearized fields are moved with $\eta_{\mu\nu}$, and
 
-$$
-h=h^\alpha{}_\alpha,
-\qquad
-\Box=\partial^\alpha\partial_\alpha.
-$$
+$$\begin{align}
+h=h^\alpha{}_\alpha, \qquad \Box=\partial^\alpha\partial_\alpha.
+\end{align}$$
 
 The linearized Einstein operator is
 
-$$
-\begin{aligned}
-E^{\mu\nu}
-=\frac12\big[
-&-\eta^{\mu\nu}\Box h
-+\Box h^{\mu\nu}
-+\partial^\mu\partial^\nu h\\
-&-\partial_\alpha\partial^\nu h^{\mu\alpha}
--\partial_\alpha\partial^\mu h^{\nu\alpha}
-+\eta^{\mu\nu}\partial^\alpha\partial^\beta h_{\alpha\beta}
+$$\begin{aligned}
+E^{\mu\nu} =\frac12\big[ &-\eta^{\mu\nu}\Box h +\Box h^{\mu\nu} +\partial^\mu\partial^\nu h\\
+&-\partial_\alpha\partial^\nu h^{\mu\alpha} -\partial_\alpha\partial^\mu h^{\nu\alpha} +\eta^{\mu\nu}\partial^\alpha\partial^\beta h_{\alpha\beta}
 \big].
-\end{aligned}
-$$
+\end{aligned}$$
 
 It is invariant under
 
-$$
+$$\begin{align}
 h_{\mu\nu}
 \longmapsto
-h_{\mu\nu}
-+\partial_\mu\xi_\nu
-+\partial_\nu\xi_\mu.
-$$
+h_{\mu\nu} +\partial_\mu\xi_\nu +\partial_\nu\xi_\mu.
+\end{align}$$
 
 The source uses constant translations
 
-$$
+$$\begin{align}
 \delta x_\lambda=a_\lambda.
-$$
+\end{align}$$
 
 The canonical field variation in its convention is
 
-$$
-\delta h_{\rho\sigma}
-=-\partial_\beta h_{\rho\sigma}\,\delta x^\beta.
-$$
+$$\begin{align}
+\delta h_{\rho\sigma} =-\partial_\beta h_{\rho\sigma}\,\delta x^\beta.
+\end{align}$$
 
-## The ten-parameter Lagrangian and its field equation
+## The Ten-Parameter Lagrangian and Its Field Equation
 
 The Lagrangian ansatz is
 
-$$
-\begin{aligned}
-\mathcal L={}&
-C_1\partial_\beta h_{\mu\nu}\partial^\beta h^{\mu\nu}
-+C_2\partial_\beta h\,\partial^\beta h
-+C_3\partial_\beta h^{\beta\mu}\partial_\mu h\\
-&+C_4\partial_\beta h^{\beta\mu}\partial^\nu h_{\mu\nu}
-+C_5\partial_\mu h_{\nu\beta}\partial^\nu h^{\mu\beta}\\
-&+D_1h_{\mu\nu}\partial^\mu\partial^\nu h
-+D_2h_{\mu\nu}\partial^\mu\partial_\beta h^{\nu\beta}
-+D_3h_{\mu\nu}\Box h^{\mu\nu}\\
-&+D_4h\Box h
-+D_5h\,\partial^\mu\partial^\nu h_{\mu\nu}.
-\end{aligned}
-$$
+$$\begin{aligned}
+\mathcal L={}& C_1\partial_\beta h_{\mu\nu}\partial^\beta h^{\mu\nu} +C_2\partial_\beta h\,\partial^\beta h +C_3\partial_\beta h^{\beta\mu}\partial_\mu h\\
+&+C_4\partial_\beta h^{\beta\mu}\partial^\nu h_{\mu\nu} +C_5\partial_\mu h_{\nu\beta}\partial^\nu h^{\mu\beta}\\
+&+D_1h_{\mu\nu}\partial^\mu\partial^\nu h +D_2h_{\mu\nu}\partial^\mu\partial_\beta h^{\nu\beta} +D_3h_{\mu\nu}\Box h^{\mu\nu}\\
+&+D_4h\Box h +D_5h\,\partial^\mu\partial^\nu h_{\mu\nu}.
+\end{aligned}$$
 
 The second-derivative Euler--Lagrange expression is
 
-$$
-\begin{aligned}
-E^{\omega\sigma}_{\mathcal L}={}&
-2(D_4-C_2)\eta^{\omega\sigma}\Box h
-+2(D_3-C_1)\Box h^{\omega\sigma}\\
-&+(D_1-C_3+D_5)
-\left(
-\partial^\omega\partial^\sigma h
-+\eta^{\omega\sigma}\partial^\mu\partial^\nu h_{\mu\nu}
-\right)\\
-&+(D_2-C_4-C_5)
-\left(
-\partial_\mu\partial^\sigma h^{\omega\mu}
-+\partial_\mu\partial^\omega h^{\sigma\mu}
-\right).
-\end{aligned}
-$$
+$$\begin{aligned}
+E^{\omega\sigma}_{\mathcal L}={}& 2(D_4-C_2)\eta^{\omega\sigma}\Box h +2(D_3-C_1)\Box h^{\omega\sigma}\\
+&+(D_1-C_3+D_5) \left( \partial^\omega\partial^\sigma h +\eta^{\omega\sigma}\partial^\mu\partial^\nu h_{\mu\nu} \right)\\
+&+(D_2-C_4-C_5) \left( \partial_\mu\partial^\sigma h^{\omega\mu} +\partial_\mu\partial^\omega h^{\sigma\mu} \right).
+\end{aligned}$$
 
-Requiring \(E^{\omega\sigma}_{\mathcal L}=nE^{\omega\sigma}\) gives
+Requiring $E^{\omega\sigma}_{\mathcal L}=nE^{\omega\sigma}$ gives
 
-$$
-D_4-C_2=-\frac n4,
-\qquad
-D_3-C_1=\frac n4,
-$$
+$$\begin{align}
+D_4-C_2=-\frac n4, \qquad D_3-C_1=\frac n4,
+\end{align}$$
 
-$$
-D_1-C_3+D_5=\frac n2,
-\qquad
-D_2-C_4-C_5=-\frac n2.
-$$
+$$\begin{align}
+D_1-C_3+D_5=\frac n2, \qquad D_2-C_4-C_5=-\frac n2.
+\end{align}$$
 
-The paper does not explicitly require \(n\neq0\). A genuine equivalence with the linearized Einstein equation needs this nonzero normalization; \(n=0\) is a degenerate zero-Euler--Lagrange case.
+The paper does not explicitly require $n\neq0$. A genuine equivalence with the linearized Einstein equation needs this nonzero normalization; $n=0$ is a degenerate zero-Euler--Lagrange case.
 
-## Higher-derivative Noether current
+## Higher-Derivative Noether Current
 
-For \(\mathcal L(h,\partial h,\partial\partial h)\), the Noether identity is
+For $\mathcal L(h,\partial h,\partial\partial h)$, the Noether identity is
 
-$$
-E^{\omega\sigma}_{\mathcal L}\delta h_{\omega\sigma}
-+\partial_\rho J^\rho=0,
-$$
+$$\begin{align}
+E^{\omega\sigma}_{\mathcal L}\delta h_{\omega\sigma} +\partial_\rho J^\rho=0,
+\end{align}$$
 
 with
 
-$$
-\begin{aligned}
-J^\rho={}&
-\eta^{\rho\lambda}\mathcal L\,\delta x_\lambda
-+\frac{\partial\mathcal L}
-{\partial(\partial_\rho h_{\omega\sigma})}
-\delta h_{\omega\sigma}\\
+$$\begin{aligned}
+J^\rho={}& \eta^{\rho\lambda}\mathcal L\,\delta x_\lambda +\frac{\partial\mathcal L} {\partial(\partial_\rho h_{\omega\sigma})} \delta h_{\omega\sigma}\\
 &+\frac{\partial\mathcal L}
 {\partial(\partial_\rho\partial_\zeta h_{\omega\sigma})}
-\partial_\zeta\delta h_{\omega\sigma}
--\partial_\zeta\left[
-\frac{\partial\mathcal L}
-{\partial(\partial_\rho\partial_\zeta h_{\omega\sigma})}
-\right]\delta h_{\omega\sigma}.
-\end{aligned}
-$$
+\partial_\zeta\delta h_{\omega\sigma} -\partial_\zeta\left[ \frac{\partial\mathcal L}
+{\partial(\partial_\rho\partial_\zeta h_{\omega\sigma})} \right]\delta h_{\omega\sigma}.
+\end{aligned}$$
 
 Factoring the constant translation defines
 
-$$
+$$\begin{align}
 J^\rho=a_\lambda T^{\rho\lambda},
-$$
+\end{align}$$
 
 so that
 
-$$
-E^{\omega\sigma}_{\mathcal L}\delta h_{\omega\sigma}
-+a_\lambda\partial_\rho T^{\rho\lambda}=0.
-$$
+$$\begin{align}
+E^{\omega\sigma}_{\mathcal L}\delta h_{\omega\sigma} +a_\lambda\partial_\rho T^{\rho\lambda}=0.
+\end{align}$$
 
-The source treats changing \(\mathcal L\) by a boundary term as an internal Noether freedom because it changes this current directly. By contrast, adding a superpotential to a finished tensor is treated as an external “improvement.”
+The source treats changing $\mathcal L$ by a boundary term as an internal Noether freedom because it changes this current directly. By contrast, adding a superpotential to a finished tensor is treated as an external “improvement.”
 
-## The nine-parameter field transformation
+## The Nine-Parameter Field Transformation
 
-The most general displayed local ansatz, linear in \(a_\lambda\partial h\), is
+The most general displayed local ansatz, linear in $a_\lambda\partial h$, is
 
-$$
-\begin{aligned}
-\delta h_{\omega\sigma}={}&
-B_1\partial^\alpha h_{\omega\sigma}a_\alpha
-+B_2\partial^\alpha h_{\alpha\sigma}a_\omega
-+B_3\partial^\alpha h_{\omega\alpha}a_\sigma\\
-&+B_4\partial_\omega h_{\alpha\sigma}a^\alpha
-+B_5\partial_\sigma h_{\omega\alpha}a^\alpha\\
-&+B_6\partial_\omega h\,a_\sigma
-+B_7\partial_\sigma h\,a_\omega\\
-&+B_8\eta_{\omega\sigma}
-\partial^\alpha h_{\alpha\gamma}a^\gamma
-+B_9\eta_{\omega\sigma}\partial^\alpha h\,a_\alpha.
-\end{aligned}
-$$
+$$\begin{aligned}
+\delta h_{\omega\sigma}={}& B_1\partial^\alpha h_{\omega\sigma}a_\alpha +B_2\partial^\alpha h_{\alpha\sigma}a_\omega +B_3\partial^\alpha h_{\omega\alpha}a_\sigma\\
+&+B_4\partial_\omega h_{\alpha\sigma}a^\alpha +B_5\partial_\sigma h_{\omega\alpha}a^\alpha\\
+&+B_6\partial_\omega h\,a_\sigma +B_7\partial_\sigma h\,a_\omega\\
+&+B_8\eta_{\omega\sigma} \partial^\alpha h_{\alpha\gamma}a^\gamma +B_9\eta_{\omega\sigma}\partial^\alpha h\,a_\alpha.
+\end{aligned}$$
 
 Symmetry of the transformed field requires only
 
-$$
-B_2=B_3,
-\qquad
-B_4=B_5,
-\qquad
-B_6=B_7.
-$$
+$$\begin{align}
+B_2=B_3, \qquad B_4=B_5, \qquad B_6=B_7.
+\end{align}$$
 
-These equations ensure \(\delta h_{\mu\nu}=\delta h_{\nu\mu}\). They do not ensure that the transformation is a symmetry of the action.
+These equations ensure $\delta h_{\mu\nu}=\delta h_{\nu\mu}$. They do not ensure that the transformation is a symmetry of the action.
 
 Two special transformations are:
 
-$$
+$$\begin{align}
 \text{canonical:}\qquad B_1=-1,\quad B_{2,\ldots,9}=0,
-$$
+\end{align}$$
 
 and
 
-$$
-\text{Christoffel:}\qquad
-B_1=-1,\quad B_4=B_5=1,
-\quad\text{all other }B_i=0.
-$$
+$$\begin{align}
+\text{Christoffel:}\qquad B_1=-1,\quad B_4=B_5=1, \quad\text{all other }B_i=0.
+\end{align}$$
 
-## The 43-term current-derived family
+## The 43-Term Current-Derived Family
 
-After inserting \(\mathcal L[C,D]\) and \(\delta h[B]\), the paper expands
+After inserting $\mathcal L[C,D]$ and $\delta h[B]$, the paper expands
 
-$$
-T^{\rho\lambda}
-=\sum b\,(\partial h\,\partial h)
-+\sum c\,\eta^{\rho\lambda}(\partial h\,\partial h)
-+\sum d\,(h\,\partial\partial h)
-+\sum a\,\eta^{\rho\lambda}(h\,\partial\partial h).
-$$
+$$\begin{align}
+T^{\rho\lambda} =\sum b\,(\partial h\,\partial h) +\sum c\,\eta^{\rho\lambda}(\partial h\,\partial h) +\sum d\,(h\,\partial\partial h) +\sum a\,\eta^{\rho\lambda}(h\,\partial\partial h).
+\end{align}$$
 
 The basis contains:
 
-- fifteen non-metric \(\partial h\,\partial h\) coefficients \(b\);
-- five metric-proportional \(\partial h\,\partial h\) coefficients \(c\);
-- eighteen non-metric \(h\,\partial\partial h\) coefficients \(d\);
-- five metric-proportional \(h\,\partial\partial h\) coefficients \(a\).
+- fifteen non-metric $\partial h\,\partial h$ coefficients $b$;
+- five metric-proportional $\partial h\,\partial h$ coefficients $c$;
+- eighteen non-metric $h\,\partial\partial h$ coefficients $d$;
+- five metric-proportional $h\,\partial\partial h$ coefficients $a$.
 
 Appendix A is the complete polynomial map
 
-$$
+$$\begin{align}
 (B_i,C_i,D_i,n)
 \longmapsto
 (b_i,c_i,d_i,a_i).
-$$
+\end{align}$$
 
 Three structural identities drive many comparisons:
 
-$$
-b_4=b_5
-=\frac14(B_4+B_5)(4C_5-D_2),
-$$
+$$\begin{align}
+b_4=b_5 =\frac14(B_4+B_5)(4C_5-D_2),
+\end{align}$$
 
-$$
-d_4=d_{5_i}
-=\frac14(B_4+B_5)D_2,
-$$
+$$\begin{align}
+d_4=d_{5_i} =\frac14(B_4+B_5)D_2,
+\end{align}$$
 
-$$
+$$\begin{align}
 d_{5_{ii}}=0.
-$$
+\end{align}$$
 
 The metric-sector relations
 
-$$
-c_2=C_1,
-\qquad
-c_4=C_5,
-\qquad
-a_5=D_3
-$$
+$$\begin{align}
+c_2=C_1, \qquad c_4=C_5, \qquad a_5=D_3
+\end{align}$$
 
 are independent of the transformation coefficients.
 
-## The decisive scope boundary
+## The Decisive Scope Boundary
 
 Let
 
-$$
-\mathcal A
-=\{\text{tensors algebraically obtainable from the displayed current ansatz}\},
-$$
+$$\begin{align}
+\mathcal A =\{\text{tensors algebraically obtainable from the displayed current ansatz}\},
+\end{align}$$
 
 and
 
-$$
-\mathcal N
-=\{\text{tensors whose transformations are genuine action symmetries}\}.
-$$
+$$\begin{align}
+\mathcal N =\{\text{tensors whose transformations are genuine action symmetries}\}.
+\end{align}$$
 
 Section 2.5 establishes only
 
-$$
+$$\begin{align}
 \mathcal N\subseteq\mathcal A.
-$$
+\end{align}$$
 
-The paper computes \(\mathcal A\), not \(\mathcal N\). The missing calculation is to impose the simultaneous coordinate/field transformation as a symmetry of \(\mathcal L[C,D]\), so that the full Noether identity—not merely the formal current expression—holds.
+The paper computes $\mathcal A$, not $\mathcal N$. The missing calculation is to impose the simultaneous coordinate/field transformation as a symmetry of $\mathcal L[C,D]$, so that the full Noether identity—not merely the formal current expression—holds.
 
 Consequences:
 
-- Failure of Appendix A proves \(T\notin\mathcal A\), hence \(T\notin\mathcal N\), within the chosen local ansatz.
-- Passing Appendix A proves only \(T\in\mathcal A\).
+- Failure of Appendix A proves $T\notin\mathcal A$, hence $T\notin\mathcal N$, within the chosen local ansatz.
+- Passing Appendix A proves only $T\in\mathcal A$.
 - A positive Noetherian classification requires an independent action-symmetry derivation.
-- Symmetry, tracelessness, or a special \(B_i\) choice does not close this gap.
+- Symmetry, tracelessness, or a special $B_i$ choice does not close this gap.
 - Equality is tested for the displayed off-shell local expression, not modulo equations of motion, gauge conditions, arbitrary superpotentials, or quasi-local equivalence.
 - The ansatz excludes higher-derivative, nonlocal, explicit-coordinate, and parity-odd extensions.
 
-## Literature tensors and their exclusion certificates
+## Literature Tensors and Their Exclusion Certificates
 
 The paper compares fifteen displayed targets when the two index orderings of the Einstein pseudotensor are counted separately. Fourteen fail Appendix A. The right-raised Einstein expression is the only positive item.
 
 | Target | Decisive Appendix-A result | Exact interpretation |
 |---|---|---|
-| Einstein, left-raised | Selected equations require \(D_2=2\) and \(D_2=0\). | Excluded from \(\mathcal A\). |
-| Einstein, right-raised | Full system has the canonical solution below. | In \(\mathcal A\); independently known canonical origin supplies the positive Noether claim. |
-| Landau--Lifshitz | \(b_4=4\), \(b_5=0\). | Violates \(b_4=b_5\). |
-| Goldberg mixed, weight \(0\) | Equals left-raised Einstein at this order. | Same contradiction; arbitrary weight is not classified. |
-| Goldberg symmetric, weight \(0\) | Equals Landau--Lifshitz at this order. | Same contradiction; arbitrary weight is not classified. |
-| Weinberg | \(d_4=-1/2\), \(d_{5_i}=0\). | Violates \(d_4=d_{5_i}\). |
-| Papapetrou | After \(D_3=0\), the same parameter combination must equal \(-1\) and \(+1\). | Inconsistent system. |
-| Bergmann--Thomson | \(d_{5_{ii}}=2\). | Violates \(d_{5_{ii}}=0\). |
-| Imitation Einstein | \(d_4=1\), \(d_{5_i}=-1\). | Violates \(d_4=d_{5_i}\). |
-| Møller | \(d_{5_{ii}}=1\). | Violates \(d_{5_{ii}}=0\). |
-| Hilbert | \(d_4=-1\), \(d_{5_i}=0\). | Violates \(d_4=d_{5_i}\). |
-| Fierz | \(b_4=1\), \(b_5=0\). | Violates \(b_4=b_5\). |
-| Butcher \(\tau\) | The solve requires \(C_4=1/4\) and \(C_4=0\). | Inconsistent system. |
-| Modified Butcher | \(d_{5_{ii}}=-1\). | Violates \(d_{5_{ii}}=0\). |
-| Padmanabhan | \(b_4=1\), \(b_5=-1\). | Violates \(b_4=b_5\). |
+| Einstein, left-raised | Selected equations require $D_2=2$ and $D_2=0$. | Excluded from $\mathcal A$. |
+| Einstein, right-raised | Full system has the canonical solution below. | In $\mathcal A$; independently known canonical origin supplies the positive Noether claim. |
+| Landau--Lifshitz | $b_4=4$, $b_5=0$. | Violates $b_4=b_5$. |
+| Goldberg mixed, weight $0$ | Equals left-raised Einstein at this order. | Same contradiction; arbitrary weight is not classified. |
+| Goldberg symmetric, weight $0$ | Equals Landau--Lifshitz at this order. | Same contradiction; arbitrary weight is not classified. |
+| Weinberg | $d_4=-1/2$, $d_{5_i}=0$. | Violates $d_4=d_{5_i}$. |
+| Papapetrou | After $D_3=0$, the same parameter combination must equal $-1$ and $+1$. | Inconsistent system. |
+| Bergmann--Thomson | $d_{5_{ii}}=2$. | Violates $d_{5_{ii}}=0$. |
+| Imitation Einstein | $d_4=1$, $d_{5_i}=-1$. | Violates $d_4=d_{5_i}$. |
+| Møller | $d_{5_{ii}}=1$. | Violates $d_{5_{ii}}=0$. |
+| Hilbert | $d_4=-1$, $d_{5_i}=0$. | Violates $d_4=d_{5_i}$. |
+| Fierz | $b_4=1$, $b_5=0$. | Violates $b_4=b_5$. |
+| Butcher $\tau$ | The solve requires $C_4=1/4$ and $C_4=0$. | Inconsistent system. |
+| Modified Butcher | $d_{5_{ii}}=-1$. | Violates $d_{5_{ii}}=0$. |
+| Padmanabhan | $b_4=1$, $b_5=-1$. | Violates $b_4=b_5$. |
 
 These are literal coefficient comparisons after Minkowski expansion to the paper's chosen order. They do not decide equivalence classes modulo superpotentials or field equations.
 
-### The right-raised Einstein solution
+### The Right-Raised Einstein Solution
 
 The unique positive catalogue item is reproduced by
 
-$$
-B_1=-1,
-\qquad
-B_{2,\ldots,9}=0,
-$$
+$$\begin{align}
+B_1=-1, \qquad B_{2,\ldots,9}=0,
+\end{align}$$
 
-$$
-C_1=-\frac14,
-\quad
-C_2=\frac14,
-\quad
-C_3=-\frac12,
-\quad
-C_4=0,
-\quad
-C_5=\frac12,
-$$
+$$\begin{align}
+C_1=-\frac14, \quad C_2=\frac14, \quad C_3=-\frac12, \quad C_4=0, \quad C_5=\frac12,
+\end{align}$$
 
-$$
-D_i=0,
-\qquad
-n=1.
-$$
+$$\begin{align}
+D_i=0, \qquad n=1.
+\end{align}$$
 
-This is the canonical field transformation and the standard linearized Einstein--Hilbert/Fierz--Pauli Lagrangian representative. The full Appendix-A map vanishes against the target coefficient list. Membership in \(\mathcal A\) is therefore checked. The stronger statement that it is Noetherian comes from its independently known canonical Noether derivation, not merely the coefficient solve.
+This is the canonical field transformation and the standard linearized Einstein--Hilbert/Fierz--Pauli Lagrangian representative. The full Appendix-A map vanishes against the target coefficient list. Membership in $\mathcal A$ is therefore checked. The stronger statement that it is Noetherian comes from its independently known canonical Noether derivation, not merely the coefficient solve.
 
-## Symmetric and traceless restrictions
+## Symmetric and Traceless Restrictions
 
 Tensor symmetry imposes ten pair equalities:
 
-$$
-b_{p_i}=b_{p_{ii}},
-\qquad p=8,9,10,11,
-$$
+$$\begin{align}
+b_{p_i}=b_{p_{ii}}, \qquad p=8,9,10,11,
+\end{align}$$
 
-$$
-d_{m_i}=d_{m_{ii}},
-\qquad m=5,6,9,10,11,12.
-$$
+$$\begin{align}
+d_{m_i}=d_{m_{ii}}, \qquad m=5,6,9,10,11,12.
+\end{align}$$
 
 The trace in four dimensions is a sum of ten independent basis structures. Their coefficients must vanish:
 
-$$
+$$\begin{align}
 b_1+b_{8_i}+b_{8_{ii}}+b_{9_i}+b_{9_{ii}}+4c_5=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 b_2+b_6+4c_1=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 b_3+b_{10_i}+b_{10_{ii}}+4c_3=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 b_4+b_7+4c_2=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 b_5+b_{11_i}+b_{11_{ii}}+4c_4=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 d_1+d_3+d_7+4a_4=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 d_2+d_{11_i}+d_{11_{ii}}+4a_2=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 d_4+d_{9_i}+d_{9_{ii}}+4a_1=0,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 d_{5_i}+d_{5_{ii}}+d_8+4a_5=0,
-$$
+\end{align}$$
 
-$$
-d_{6_i}+d_{6_{ii}}
-+d_{10_i}+d_{10_{ii}}
-+d_{12_i}+d_{12_{ii}}
-+4a_3=0.
-$$
+$$\begin{align}
+d_{6_i}+d_{6_{ii}} +d_{10_i}+d_{10_{ii}} +d_{12_i}+d_{12_{ii}} +4a_3=0.
+\end{align}$$
 
 This is an off-shell algebraic trace condition in the chosen basis. It is not weakened modulo field equations, total derivatives, or gauge conditions.
 
 The source reports infinitely many symmetric-only, traceless-only, Christoffel-only, canonical-only, and symmetric-traceless solutions. It does not provide general parametrizations or rank/nullity certificates for these cardinality claims.
 
-## Fixed transformation families
+## Fixed Transformation Families
 
 For the Christoffel transformation,
 
-$$
+$$\begin{align}
 B=(-1,0,0,1,1,0,0,0,0).
-$$
+\end{align}$$
 
 Some useful specialized coefficients are
 
-$$
-b_4=b_5=2C_5-\frac12D_2,
-\qquad
-d_4=d_{5_i}=\frac12D_2,
-$$
+$$\begin{align}
+b_4=b_5=2C_5-\frac12D_2, \qquad d_4=d_{5_i}=\frac12D_2,
+\end{align}$$
 
-$$
-d_{5_{ii}}=0,
-\qquad
-c_2=C_1,
-\qquad
-c_4=C_5,
-\qquad
-a_5=D_3.
-$$
+$$\begin{align}
+d_{5_{ii}}=0, \qquad c_2=C_1, \qquad c_4=C_5, \qquad a_5=D_3.
+\end{align}$$
 
 For the canonical transformation,
 
-$$
+$$\begin{align}
 B=(-1,0,0,0,0,0,0,0,0),
-$$
+\end{align}$$
 
-only the canonical subset of the \(b,d\) sectors survives, while the five \(c_i\) and five \(a_i\) retain their Lagrangian origin.
+only the canonical subset of the $b,d$ sectors survives, while the five $c_i$ and five $a_i$ retain their Lagrangian origin.
 
 After combining Appendix A with symmetry and tracelessness, the source reports:
 
-$$
-\text{Christoffel}+\text{symmetric}+\text{traceless}
-\Longrightarrow T^{\mu\nu}=0,
-$$
+$$\begin{align}
+\text{Christoffel}+\text{symmetric}+\text{traceless} \Longrightarrow T^{\mu\nu}=0,
+\end{align}$$
 
-$$
-\text{canonical}+\text{symmetric}+\text{traceless}
-\Longrightarrow T^{\mu\nu}=0.
-$$
+$$\begin{align}
+\text{canonical}+\text{symmetric}+\text{traceless} \Longrightarrow T^{\mu\nu}=0.
+\end{align}$$
 
-The independent polynomial solve confirms both nonzero no-solution claims even without imposing the EOM relations. This is a statement only about the fixed-\(B\) subfamilies, not about the whole current-derived family.
+The independent polynomial solve confirms both nonzero no-solution claims even without imposing the EOM relations. This is a statement only about the fixed-$B$ subfamilies, not about the whole current-derived family.
 
-## The Rose--Xavier symmetric-traceless representative
+## The Rose--Xavier Symmetric-Traceless Representative
 
 The explicit simultaneous solution chooses
 
-$$
-n=1,
-\qquad
-D_i=0,
-$$
+$$\begin{align}
+n=1, \qquad D_i=0,
+\end{align}$$
 
-$$
-C_1=-\frac14,
-\quad
-C_2=\frac14,
-\quad
-C_3=-\frac12,
-\quad
-C_4=C_5=\frac14,
-$$
+$$\begin{align}
+C_1=-\frac14, \quad C_2=\frac14, \quad C_3=-\frac12, \quad C_4=C_5=\frac14,
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 B_1=-\frac43,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 B_2=B_3=B_4=B_5=B_8=\frac23,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 B_6=B_7=B_9=-\frac23.
-$$
+\end{align}$$
 
 The nonzero output coefficients are
 
@@ -587,23 +471,21 @@ c_5=-\frac76.
 \end{gathered}
 $$
 
-All \(d_i,a_i\) vanish. Substitution verifies:
+All $d_i,a_i$ vanish. Substitution verifies:
 
-$$
-T^{\rho\lambda}=T^{\lambda\rho},
-\qquad
-T^\rho{}_\rho=0,
-$$
+$$\begin{align}
+T^{\rho\lambda}=T^{\lambda\rho}, \qquad T^\rho{}_\rho=0,
+\end{align}$$
 
 and every Appendix-A equation, including the EOM normalization, is satisfied.
 
-What is not proved is that the selected \(B_i\) transformation is a symmetry of the chosen action. Thus the example is exactly symmetric, traceless, and current-derived; its membership in the fully restricted \(\mathcal N\) remains open.
+What is not proved is that the selected $B_i$ transformation is a symmetry of the chosen action. Thus the example is exactly symmetric, traceless, and current-derived; its membership in the fully restricted $\mathcal N$ remains open.
 
-## Improvements, boundary terms, and CPS translation
+## Improvements, Boundary Terms, and CPS Translation
 
 The paper's distinction is:
 
-- a boundary term in \(\mathcal L\) is internal because it changes \(J^\rho\) before \(T^{\rho\lambda}\) is read off;
+- a boundary term in $\mathcal L$ is internal because it changes $J^\rho$ before $T^{\rho\lambda}$ is read off;
 - a superpotential appended to an already derived tensor is external and is not counted as a Noether derivation.
 
 This is not formulated as a cohomological quotient of local currents. In CPS language, changing the Lagrangian by an exact term can change the presymplectic potential and the representative of the Noether current; a superpotential corresponds to an ambiguity in the current/charge representative. The paper fixes literal representatives rather than quotienting these ambiguities.
@@ -617,7 +499,7 @@ The object here is a bulk energy-momentum current for global translations of the
 
 Its immediate value for the vault is a coefficient-level obstruction language. Before comparing a proposed linearized gravitational energy tensor, first determine whether equality is meant literally, on shell, modulo a superpotential, or after a boundary-term change. The paper decides only the first of these within its ansatz.
 
-## What the framework actually establishes
+## What the Framework Actually Establishes
 
 The strongest reliable statements are:
 
@@ -632,16 +514,16 @@ The strongest reliable statements are:
 
 The result is therefore an effective **necessary-condition engine**, not a completed uniqueness theorem. It does not select a unique gravitational energy tensor, and it does not supply the naturalness or predictive criterion needed to privilege one representative.
 
-## Verification log
+## Verification Log
 
 ### Checked
 
-- **Euler--Lagrange chain, Mathematica.** A full four-dimensional symmetric-component implementation of the ten-term Lagrangian was varied with VariationalD. All ten independent component residuals between the computed result and the source's Eq. (4) vanish. Matching to \(nE^{\mu\nu}\) reproduces the four Appendix-A EOM relations with zero residuals.
-- **Linearized operator, xAct.** On a flat background, the gauge variation of \(E^{\mu\nu}\) reduces to zero after canonical derivative sorting. Its divergence \(\partial_\mu E^{\mu\nu}\) also reduces to zero, verifying the linearized Bianchi identity under commuting derivatives.
-- **Noether-current map, Mathematica.** The four-term current was reconstructed from \(\mathcal L[C,D]\) and \(\delta h[B]\). Projection gives \(b_4=b_5\), \(d_4=d_{5_i}\), and \(d_{5_{ii}}=0\) exactly. Representative off-diagonal and diagonal components reproduce the complete printed Appendix-A \(b,d,c,a\) map with zero residuals.
+- **Euler--Lagrange chain, Mathematica.** A full four-dimensional symmetric-component implementation of the ten-term Lagrangian was varied with VariationalD. All ten independent component residuals between the computed result and the source's Eq. (4) vanish. Matching to $nE^{\mu\nu}$ reproduces the four Appendix-A EOM relations with zero residuals.
+- **Linearized operator, xAct.** On a flat background, the gauge variation of $E^{\mu\nu}$ reduces to zero after canonical derivative sorting. Its divergence $\partial_\mu E^{\mu\nu}$ also reduces to zero, verifying the linearized Bianchi identity under commuting derivatives.
+- **Noether-current map, Mathematica.** The four-term current was reconstructed from $\mathcal L[C,D]$ and $\delta h[B]$. Projection gives $b_4=b_5$, $d_4=d_{5_i}$, and $d_{5_{ii}}=0$ exactly. Representative off-diagonal and diagonal components reproduce the complete printed Appendix-A $b,d,c,a$ map with zero residuals.
 - **Section 3 certificates, Mathematica.** The left-raised Einstein and original Butcher selected systems reduce to False. The eleven direct structural contradictions give the exact nonzero residuals stated in the catalogue. Goldberg mixed and symmetric inherit the corresponding checked contradictions.
-- **Right-raised Einstein, Mathematica.** Substitution of the canonical \(B_i\), Fierz--Pauli \(C_i\), \(D_i=0\), and \(n=1\) leaves no residual in the full output map or EOM conditions.
-- **Symmetry and trace, Mathematica.** Direct calculation of \(T^{01}-T^{10}\) reproduces the ten pair equalities; direct contraction \(\eta_{\rho\lambda}T^{\rho\lambda}\) reproduces the ten printed trace combinations.
+- **Right-raised Einstein, Mathematica.** Substitution of the canonical $B_i$, Fierz--Pauli $C_i$, $D_i=0$, and $n=1$ leaves no residual in the full output map or EOM conditions.
+- **Symmetry and trace, Mathematica.** Direct calculation of $T^{01}-T^{10}$ reproduces the ten pair equalities; direct contraction $\eta_{\rho\lambda}T^{\rho\lambda}$ reproduces the ten printed trace combinations.
 - **Christoffel and canonical tables, Mathematica.** Both full specialization tables, including structurally zero coefficients, have empty residual sets.
 - **Combined no-solution claims, Mathematica.** For both fixed transformations, Reduce returns False for a nonzero tensor satisfying symmetry and trace, even before the EOM constraints are imposed.
 - **Rose--Xavier example, Mathematica.** The complete coefficient list, four EOM relations, ten symmetry residuals, and ten trace residuals all vanish.
@@ -650,10 +532,10 @@ Reproduction artifact: /tmp/arxiv-2026-07-23/2607.19445v1/verify_2607_19445.wl, 
 
 ### Blocked
 
-- The nonlinear definitions of every surveyed GR pseudotensor were not independently re-expanded to \(O(\epsilon^2)\). The exclusion certificates are exact conditional on the coefficient decompositions printed immediately before them.
+- The nonlinear definitions of every surveyed GR pseudotensor were not independently re-expanded to $O(\epsilon^2)$. The exclusion certificates are exact conditional on the coefficient decompositions printed immediately before them.
 - The separate claims of infinitely many symmetric-only, traceless-only, and symmetric-traceless solutions were not proved by a general parametrization or dimension calculation.
 - The gauge-invariant-local-energy no-go invoked by the source was not independently reconstructed.
-- Most importantly, the action-symmetry conditions for the general \(B_i\) transformation are absent from the paper and were not derivable from the displayed coefficient map. Passing Appendix A remains necessary, not sufficient.
+- Most importantly, the action-symmetry conditions for the general $B_i$ transformation are absent from the paper and were not derivable from the displayed coefficient map. Passing Appendix A remains necessary, not sufficient.
 
 ### Failed
 
@@ -661,8 +543,8 @@ Reproduction artifact: /tmp/arxiv-2026-07-23/2607.19445v1/verify_2607_19445.wl, 
 
 ### Assumptions
 
-- Four-dimensional Minkowski signature \((+---)\).
-- Symmetric \(h_{\mu\nu}\).
+- Four-dimensional Minkowski signature $(+---)$.
+- Symmetric $h_{\mu\nu}$.
 - Commuting partial derivatives.
 - Literal equality in the paper's Fock basis, without integrations by parts, equations of motion, gauge fixing, or superpotential quotient at the comparison stage.
 

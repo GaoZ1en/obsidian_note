@@ -23,7 +23,7 @@ The statement should be rewritten as:
 
 The appendix's (\gamma=i) conclusion is also not justified by its displayed field redefinition, because that redefinition divides by (\gamma^2+1) and is singular at (\gamma=\pm i).
 
-# Source map
+# Source Map
 
 1. **Introduction:** motivates the Ashtekar/Barbero--Immirzi comparison and Smolin's (G\to0) truncation.
 2. **Holst action in the (G\to0) limit:**
@@ -36,93 +36,72 @@ The appendix's (\gamma=i) conclusion is also not justified by its displayed fiel
 4. **Conclusions:** claims two propagating degrees of freedom in both the self-dual and gauge-fixed generic-(\gamma) cases.
 5. **Appendix:** adds Pontryagin and Euler terms, analyzes the topological sector, and writes the shifted canonical momenta and constraints of the combined model.
 
-# Starting action and conventions
+# Starting Action and Conventions
 
 The Holst action is written without an overall normalization as
 
-$$
-S[e,\omega]
-=\int \star(e_I\wedge e_J)\wedge R^{IJ}
-+\frac1\gamma\int e_I\wedge e_J\wedge R^{IJ}.
-$$
+$$\begin{align}
+S[e,\omega] =\int \star(e_I\wedge e_J)\wedge R^{IJ} +\frac1\gamma\int e_I\wedge e_J\wedge R^{IJ}.
+\end{align}$$
 
 The source uses internal indices (I,J=0,1,2,3), spatial internal indices (i,j,k), and spacetime indices (\mu,\nu=0,1,2,3). Its line
 
-$$
+$$\begin{align}
 \eta_{IJ}=(-1,0,0,0)
-$$
+\end{align}$$
 
 is malformed; the intended Lorentz metric is presumably (\operatorname{diag}(-1,1,1,1)).
 
 The (G\to0) prescription is applied only to the nonlinear part of the connection curvature:
 
-$$
-R_{\rho\sigma}^{IJ}
-=\partial_\rho\omega_\sigma^{IJ}
--\partial_\sigma\omega_\rho^{IJ}.
-$$
+$$\begin{align}
+R_{\rho\sigma}^{IJ} =\partial_\rho\omega_\sigma^{IJ} -\partial_\sigma\omega_\rho^{IJ}.
+\end{align}$$
 
 This is not the ordinary weak-field expansion of the tetrad. The source retains nonlinear powers of the triad momentum while Abelianizing the connection curvature.
 
 The variable change is
 
-$$
-\omega_\alpha^{ij}=\epsilon^{ij}{}_k\omega_\alpha^k,
-\qquad
-\omega_\alpha^k=\gamma(A_\alpha^k+\omega_\alpha^{0k}).
-$$
+$$\begin{align}
+\omega_\alpha^{ij}=\epsilon^{ij}{}_k\omega_\alpha^k, \qquad \omega_\alpha^k=\gamma(A_\alpha^k+\omega_\alpha^{0k}).
+\end{align}$$
 
 The field strengths are
 
-$$
-F_{ab}^i=\partial_a\omega_b^i-\partial_b\omega_a^i,
-\qquad
-\widetilde F_{ab}^i=\partial_aA_b^i-\partial_bA_a^i.
-$$
+$$\begin{align}
+F_{ab}^i=\partial_a\omega_b^i-\partial_b\omega_a^i, \qquad \widetilde F_{ab}^i=\partial_aA_b^i-\partial_bA_a^i.
+\end{align}$$
 
-# Canonical chain in the source
+# Canonical Chain in the Source
 
 The momentum conjugate to (A_d^l) is
 
-$$
-\widetilde\pi_l^d
-=-\eta^{abd}e_{aj}e_{bi}\epsilon^{ij}{}_l,
-$$
+$$\begin{align}
+\widetilde\pi_l^d =-\eta^{abd}e_{aj}e_{bi}\epsilon^{ij}{}_l,
+\end{align}$$
 
 whereas the momenta (\pi_k^\alpha) conjugate to (\omega_\alpha^k) vanish.
 
 The canonical Hamiltonian is displayed as
 
-$$
-\begin{aligned}
-\mathcal H_c={}&\widetilde N\epsilon_i{}^{jk}
-\widetilde\pi_j^b\widetilde\pi_k^c
-\left[\frac{\gamma^2+1}{\gamma^2}F_{bc}^i
--\frac1\gamma\widetilde F_{bc}^i\right]\\
-&+2N^a\widetilde\pi_i^b\widetilde F_{ab}^i
--A_0^k\partial_c\widetilde\pi_k^c.
-\end{aligned}
-$$
+$$\begin{aligned}
+\mathcal H_c={}&\widetilde N\epsilon_i{}^{jk} \widetilde\pi_j^b\widetilde\pi_k^c \left[\frac{\gamma^2+1}{\gamma^2}F_{bc}^i -\frac1\gamma\widetilde F_{bc}^i\right]\\
+&+2N^a\widetilde\pi_i^b\widetilde F_{ab}^i -A_0^k\partial_c\widetilde\pi_k^c.
+\end{aligned}$$
 
 The intended constraint list is
 
-$$
-Q=\epsilon_i{}^{jk}\widetilde\pi_j^b\widetilde\pi_k^c
-\left[\frac{\gamma^2+1}{\gamma^2}F_{bc}^i
--\frac1\gamma\widetilde F_{bc}^i\right],
-$$
+$$\begin{align}
+Q=\epsilon_i{}^{jk}\widetilde\pi_j^b\widetilde\pi_k^c \left[\frac{\gamma^2+1}{\gamma^2}F_{bc}^i -\frac1\gamma\widetilde F_{bc}^i\right],
+\end{align}$$
 
-$$
-Q_a=2\widetilde\pi_i^b\widetilde F_{ab}^i,
-\qquad
-P_i=\partial_c\widetilde\pi_i^c,
-\qquad
-\phi_k^a=\pi_k^a,
-$$
+$$\begin{align}
+Q_a=2\widetilde\pi_i^b\widetilde F_{ab}^i, \qquad P_i=\partial_c\widetilde\pi_i^c, \qquad \phi_k^a=\pi_k^a,
+\end{align}$$
 
 together with six symmetric relations (P^{ac}). The printed formulas for (P^{ac}) are not stable across the paper: the prefactor changes, one derivative loses its index, and the Faddeev--Jackiw version later uses incompatible derivative indices.
 
-# Decisive failure of the generic-γ classification
+# Decisive Failure of the Generic-γ Classification
 
 The paper declares
 
@@ -143,15 +122,15 @@ where (B\) represents (\{\phi_k^a,Q\}) and (D\) represents (\{Q,Q\}).
 
 For any vector ((x,s)\in\mathbb R^9\oplus\mathbb R),
 
-$$
+$$\begin{align}
 C(x,s)=(Bs,-B^{\mathsf T}x+Ds).
-$$
+\end{align}$$
 
 The first component always lies in the one-dimensional span of (B), and the second component is a scalar. Hence
 
-$$
+$$\begin{align}
 \operatorname{rank}C\le2,
-$$
+\end{align}$$
 
 so (C) cannot be invertible as a (10\times10) operator. This is structural and does not depend on the detailed distributional kernel.
 
@@ -159,73 +138,65 @@ Therefore the ten constraints cannot all be second class. The source itself noti
 
 The printed count
 
-$$
+$$\begin{align}
 \frac12(36-2\times12-10)=1
-$$
+\end{align}$$
 
 is arithmetically correct but physically inapplicable because the rank assumption behind the number ten is false.
 
-# Self-dual branch
+# Self-Dual Branch
 
 At (\gamma=i),
 
-$$
-\frac{\gamma^2+1}{\gamma^2}=0,
-\qquad
--\frac1\gamma=i.
-$$
+$$\begin{align}
+\frac{\gamma^2+1}{\gamma^2}=0, \qquad -\frac1\gamma=i.
+\end{align}$$
 
 The scalar constraint therefore reduces formally to
 
-$$
-Q=i\epsilon_i{}^{jk}\widetilde\pi_j^b\widetilde\pi_k^c
-\widetilde F_{bc}^i.
-$$
+$$\begin{align}
+Q=i\epsilon_i{}^{jk}\widetilde\pi_j^b\widetilde\pi_k^c \widetilde F_{bc}^i.
+\end{align}$$
 
 The six (P^{ac}) relations proportional to (\gamma^2+1) disappear, and the source keeps Gauss, vector, and scalar constraints as seven first-class constraints on an 18-dimensional phase space:
 
-$$
+$$\begin{align}
 \frac12(18-2\times7)=2.
-$$
+\end{align}$$
 
 This finite count is reproducible. It is still a complex phase-space count; the required reality conditions and their effect on the reduced phase space are not developed.
 
-# Generic-Immirzi reduction
+# Generic-Immirzi Reduction
 
 The source imposes
 
-$$
-\omega_a^i=0,
-\qquad
-A_a^i=-\gamma\omega_a^{0i},
-$$
+$$\begin{align}
+\omega_a^i=0, \qquad A_a^i=-\gamma\omega_a^{0i},
+\end{align}$$
 
 and calls this a gauge fixing. It then keeps a Gauss, vector, and scalar system built from (A_a^i) and (\widetilde\pi_i^a), obtaining the standard canonical bracket
 
-$$
-\{A_a^i(x),\widetilde\pi_j^b(y)\}
-=\delta_a^b\delta_j^i\delta^3(x-y).
-$$
+$$\begin{align}
+\{A_a^i(x),\widetilde\pi_j^b(y)\} =\delta_a^b\delta_j^i\delta^3(x-y).
+\end{align}$$
 
 The problem is conceptual: a presymplectic null direction is a gauge direction only if its contraction with the equations vanishes appropriately and its generated transformation preserves the action and constraint surface. The paper alternately calls the (\omega) null sector an “inconsistency” and a “gauge symmetry,” without deriving its gauge generator. Thus (\omega_a^i=0) defines a further restriction, not an established gauge slice.
 
 The statement that (\omega_a^i=0) forces vanishing intrinsic curvature is true for the Abelianized curvature (F=d\omega) locally, but it does not validate the preceding reduction.
 
-# Faddeev--Jackiw analysis
+# Faddeev--Jackiw Analysis
 
 The initial symplectic one-form is
 
-$$
+$$\begin{align}
 \int d^3x\,\widetilde\pi_i^a\dot A_a^i.
-$$
+\end{align}$$
 
 Zero modes reproduce the Gauss, scalar, vector, and (P^{ac})-type relations. The source then appends them with multipliers, finds a remaining (\omega)-sector zero mode, and imposes
 
-$$
-A_0^i=N=N^a=0,
-\qquad
-\omega_a^i=0.
-$$
+$$\begin{align}
+A_0^i=N=N^a=0, \qquad \omega_a^i=0.
+\end{align}$$
 
 After this restriction it writes a nonsingular symplectic matrix and its inverse.
 
@@ -239,29 +210,25 @@ Several printed expressions prevent a reliable independent reconstruction:
 
 These are not all merely cosmetic because they enter the matrix claimed to be inverted.
 
-# Pontryagin--Euler appendix
+# Pontryagin--Euler Appendix
 
 The appendix defines
 
-$$
-F=R-\frac1\gamma\star R,
-\qquad
-\widetilde F=F+\frac1\gamma\star F.
-$$
+$$\begin{align}
+F=R-\frac1\gamma\star R, \qquad \widetilde F=F+\frac1\gamma\star F.
+\end{align}$$
 
 Using (\star^2=-1) on Lorentz bivectors gives
 
-$$
-\widetilde F=\frac{\gamma^2+1}{\gamma^2}R,
-\qquad
-R=\frac{\gamma^2}{\gamma^2+1}\widetilde F.
-$$
+$$\begin{align}
+\widetilde F=\frac{\gamma^2+1}{\gamma^2}R, \qquad R=\frac{\gamma^2}{\gamma^2+1}\widetilde F.
+\end{align}$$
 
 The second relation is singular at (\gamma=\pm i). Therefore the subsequent statement that one may simply set (\gamma=i) in the formulation obtained after this inversion is not established. A self-dual analysis must be performed before dividing by (\gamma^2+1), or by using chiral projectors adapted to the degenerate map.
 
 The source-derived result that pure Pontryagin--Euler terms shift canonical momenta while carrying no local degrees of freedom is plausible, but the combined Holst-plus-topological constraint system is not independently verified here.
 
-# Translation to the vault's formalism
+# Translation to the Vault's Formalism
 
 This paper is useful mainly as a warning about presymplectic reduction. In the action-first CPS language, a degenerate two-form does not license setting the corresponding field to zero. One must first identify whether the kernel is
 
@@ -274,9 +241,9 @@ Only after that classification can a gauge condition such as (\omega_a^i=0) be i
 
 For a reusable (G\to0) toy model, the clean branch is the (\gamma=i) coefficient limit, provided reality conditions are supplied. The generic-(\gamma) “Barbero-type” branch should not be imported into the vault as a validated canonical model.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - The (3+1) decomposition, displayed momenta, constraint formulas, Faddeev--Jackiw matrices, and topological extension.
 - The comparison with Smolin's self-dual model and the geometric interpretation proposed for (\omega_a^i=0).
@@ -284,11 +251,11 @@ For a reusable (G\to0) toy model, the clean branch is the (\gamma=i) coefficient
 ## Checked
 
 - Mathematica verified the self-dual coefficient limits
-  $$
-  \left.\frac{\gamma^2+1}{\gamma^2}\right|_{\gamma=i}=0,
-  \qquad
-  \left.-\frac1\gamma\right|_{\gamma=i}=i.
-  $$
+
+$$\begin{align}
+\left.\frac{\gamma^2+1}{\gamma^2}\right|_{\gamma=i}=0, \qquad \left.-\frac1\gamma\right|_{\gamma=i}=i.
+\end{align}$$
+
 - Mathematica reproduced the arithmetic counts (1) and (2) from the numbers inserted by the source; this checks only the arithmetic, not the constraint classification.
 - A finite exact (10\times10) representative of the displayed second-class block had determinant zero and rank two. The block-form argument above proves the rank bound structurally.
 - Mathematica verified that (\gamma^2+1=0) at (\gamma=i), confirming that the appendix's inversion for (R) is singular in the self-dual limit.
@@ -305,12 +272,12 @@ For a reusable (G\to0) toy model, the clean branch is the (\gamma=i) coefficient
 - A corrected Dirac analysis is blocked by inconsistent printed formulas for (P^{ac}), (\Omega_5^{eb}), and several functional derivatives.
 - The physical real phase-space count in the self-dual branch is blocked by the absence of explicit reality conditions.
 
-## Not independently verified
+## Not Independently Verified
 
 - Closure of the full distribution-valued constraint algebra after correcting the source typos.
 - Invertibility of the final (f^{(3)}) kernel as an operator with specified boundary conditions.
 - The canonical structure of the combined Holst plus Pontryagin--Euler theory.
 
-# Reusable takeaway
+# Reusable Takeaway
 
 Do not cite this paper as establishing a real-(\gamma), two-degree-of-freedom Barbero analogue of Smolin's (G\to0) model. Its reliable local content is the self-dual coefficient reduction and the observation that the generic branch develops a large presymplectic kernel. Resolving that kernel requires a fresh constraint analysis from the action, with consistent indices and explicit boundary conditions.

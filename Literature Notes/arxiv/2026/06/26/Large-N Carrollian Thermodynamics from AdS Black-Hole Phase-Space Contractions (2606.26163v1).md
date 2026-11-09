@@ -17,7 +17,7 @@ Back to [[2026_06_26_overview]].
 
 This is a medium-priority technical note. It is relevant because it connects Carrollian thermodynamics, Brown--York energy, and supertranslation zero modes, but the paper is a stationary thermodynamic construction rather than a new boundary charge algebra.
 
-# Phase-space contraction
+# Phase-Space Contraction
 
 The finite sector is defined by the line
 
@@ -39,7 +39,7 @@ T_\lambda\sim c^{1-\alpha}\to0,\qquad S\sim c^{-\gamma}\to\infty,\qquad T_\lambd
 
 The finite limit is therefore not a trivial zero-temperature limit. It is a low-temperature/large-degeneracy compensation.
 
-# Large-$N$ dictionary
+# Large-$N$ Dictionary
 
 The boundary degree-of-freedom normalization scales as
 
@@ -67,7 +67,7 @@ $$\begin{align}
 T_C N_{\rm eff}=O(1), \qquad T_C S_C=O(1).
 \end{align}$$
 
-# Brown--York tensor and boundary first law
+# Brown--York Tensor and Boundary First Law
 
 After subtracting the AdS reference background, the finite Carrollian Brown--York variables for the static black hole include
 
@@ -87,7 +87,7 @@ $$\begin{align}
 \delta E_C=\lim_{c\to0}(T_\lambda\delta S+V_\lambda\delta P).
 \end{align}$$
 
-# Boundary work term and Hawking--Page locus
+# Boundary Work Term and Hawking--Page Locus
 
 The bulk pressure-volume term is rewritten in boundary variables:
 
@@ -115,7 +115,7 @@ F_C=E_C-\widehat T_CS_C=N_C\mu_{N_C}.
 
 Thus the Hawking--Page locus is the zero of $\mu_{N_C}$, equivalently $r_h=\ell$.
 
-# Carroll charge and celestial variables
+# Carroll Charge and Celestial Variables
 
 The global Brown--York energy is the Carrollian supertranslation zero mode:
 
@@ -141,10 +141,10 @@ $$\begin{align}
 \delta_f O^+_{\Delta,J}(z,\bar z) =-if(z,\bar z)O^+_{\Delta+1,J}(z,\bar z).
 \end{align}$$
 
-# Use for current projects
+# Use for Current Projects
 
 The useful distinction is that this AdS Carrollian construction describes a stationary zero-mode sector. It gives a clean Brown--York charge and a thermodynamic first law, while generic null boundaries require explicit flux/balance-law data. It is therefore a good comparison point for null-boundary notes, not a substitute for a full radiative CPS construction.
 
-# Verification note
+# Verification Note
 
 The formulas above are source-derived from official arXiv HTML/PDF sources. The Brown--York subtraction, extended first-law contraction, Cardy/Brown-Henneaux normalization, and celestial Mellin identities were not independently verified in this run.

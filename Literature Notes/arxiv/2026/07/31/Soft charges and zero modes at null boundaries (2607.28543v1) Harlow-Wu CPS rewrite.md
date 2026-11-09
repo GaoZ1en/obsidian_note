@@ -16,35 +16,41 @@ Back to [[2026_07_31_overview]] and [[Soft charges and zero modes at null bounda
 
 This companion file rewrites the constraint-algebra construction of 2607.28543 in the **Harlow–Wu (HW) covariant phase space formalism** as used in the bachelor thesis (`Articles/Thesis/Bachelor/section 2 covariant phase space formalism and Noether theorem.md`). The source note is **not modified**. Equation tags `(S n)` refer to the source paper; `(HW n)` to the thesis section 2; `(R n)` to this rewrite.
 
-# Why a rewrite is useful
+# Why a Rewrite Is Useful
 
 The source paper works in a **null canonical (Hamiltonian constraint) language**: primary constraints $\chi_\alpha$, a bracket matrix $\Omega_{\alpha\beta}$, and radial kernel modes $U$. The thesis works in the **HW covariant language**: boundary Lagrangian $\ell$, corner term $C$, presymplectic potential
 
-$$\begin{align}
+$$
+\begin{align}
 \theta=\int_\Sigma(\Theta-\delta\ell-\mathrm dC),
 \end{align}
-\tag{HW 2.24}$$
+\tag{HW 2.24}
+$$
 
 presymplectic form $\omega=\delta\theta$, and Noether charge
 
-$$\begin{align}
+$$
+\begin{align}
 H_\lambda=X_\lambda\cdot\theta-\alpha_\lambda,
 \end{align}
-\tag{HW 2.28}$$
+\tag{HW 2.28}
+$$
 
 with the Hamilton equation
 
-$$\begin{align}
+$$
+\begin{align}
 X_\lambda\cdot\omega\big|_{\tilde{\mathcal P}}=-\delta H_\lambda\big|_{\tilde{\mathcal P}}.
 \end{align}
-\tag{HW 2.31}$$
+\tag{HW 2.31}
+$$
 
 The rewrite translates each object, and it exposes two things the source leaves implicit:
 
 1. the zero modes are **first-class (null) directions of $\omega$ pulled back to the constraint surface** — equivalently kernel directions of the constraint-bracket matrix $\Omega$. They are *large* gauge (boundary-parametrized, so not removed by the quotient $\tilde{\mathcal P}/\tilde G$), not compactly supported pure gauge; their Abelian algebra follows from first-classness, not from being quotiented;
 2. the printed sign defect in the source Eq. (36) is **fixed by the HW Hamilton equation** $X\cdot\omega=-\delta H$ — the corrected minus sign is not a convention choice but a consistency requirement.
 
-# Notation dictionary (source → HW)
+# Notation Dictionary (Source → HW)
 
 | Source paper | HW thesis counterpart | Meaning |
 |---|---|---|
@@ -59,208 +65,246 @@ The rewrite translates each object, and it exposes two things the source leaves 
 | tangent lift $\delta_\varepsilon\pi_\alpha=-\int\frac{\delta f_\alpha}{\delta\psi^\beta}\eta^\beta$ | $X_\varepsilon\cdot\omega=-\delta H_\varepsilon$ | fixes the sign (source Eq. 36 is wrong) |
 | $\{Q[\varepsilon_1],Q[\varepsilon_2]\}^*=0$ | charges of first-class (soft) directions commute | Abelian, no central term |
 
-# The rewrite step by step
+# The Rewrite Step by Step
 
-## 1. Presymplectic structure on the null slice
+## 1. Presymplectic Structure on the Null Slice
 
 On $\Xi$ with fields $\Psi^\Lambda$ and conjugate momenta $\Pi_\Lambda$, the canonical field-space two-form is
 
-$$\begin{align}
+$$
+\begin{align}
 \omega_\Xi=\int_\Xi\delta\Pi_\Lambda\wedge\delta\Psi^\Lambda.
 \end{align}
-\tag{S 35}$$
+\tag{S 35}
+$$
 
 In HW form this is the presymplectic potential
 
-$$\begin{align}
+$$
+\begin{align}
 \Theta_\Xi=\int_\Xi\Pi_\Lambda\,\delta\Psi^\Lambda,
 \qquad
 \omega_\Xi=\delta\Theta_\Xi,
 \end{align}
-\tag{R1}$$
+\tag{R1}
+$$
 
 the exact analogue of $\theta=\int_\Sigma(\Theta-\delta\ell-\mathrm dC)$ with $\ell=C=0$ at the abstract stage. The constraints $\chi_\alpha=\pi_\alpha+f_\alpha(\Psi)\approx0$ select the presymplectic (not symplectic) reduction.
 
-## 2. Zero modes as first-class (null) directions
+## 2. Zero Modes as First-Class (Null) Directions
 
 The constraint bracket matrix
 
-$$\begin{align}
+$$
+\begin{align}
 \{\chi_\alpha(x),\chi_\beta(x')\}=\Omega_{\alpha\beta}(x,x')
 \end{align}
-\tag{S 1}$$
+\tag{S 1}
+$$
 
 is the pullback of $\omega_\Xi$ to the constraint surface (in canonical coordinates the two coincide up to the $f$-dependent shift). A residual vector
 
-$$\begin{align}
+$$
+\begin{align}
 v^\alpha(x)=\int_{\partial\Xi}P^\alpha{}_I(x,\varphi')V^I(\varphi'),
 \qquad
 \int_\Xi\Omega_{\alpha\beta}P^\beta{}_I=0
 \end{align}
-\tag{S 2,4}$$
+\tag{S 2,4}
+$$
 
 is therefore a **first-class (null) direction**: $X_v$ is tangent to $\tilde{\mathcal P}$ and annihilates the pullback of $\omega_\Xi$ to the constraint surface, $\omega_\Xi(X_v,\cdot)|_{\tilde{\mathcal P}}=0$ — equivalently $\Omega v=0$. Under angular locality,
 
-$$\begin{align}
+$$
+\begin{align}
 P^\alpha{}_I(x,\varphi')=U^\alpha{}_I(r,\varphi)\delta^{(d-1)}(\varphi-\varphi'),
 \qquad
 \widehat{\mathcal L}_{\alpha\beta}U^\beta{}_I=0,
 \end{align}
-\tag{S 20–21}$$
+\tag{S 20–21}
+$$
 
 the kernel equation is a radial ODE for $U$. The residual shift is $\delta_\varepsilon\psi^\alpha=U^\alpha{}_I\varepsilon^I$.
 
 **HW reading.** Only the *compactly supported* first-class directions are pure gauge in the strict sense: the quotient $\tilde{\mathcal P}/\tilde G$ (thesis Eq. HW 2.8 discussion) removes them and they carry no charge. The zero modes here are the *large* ones — their smearing data live on $\partial\Xi$, so they survive the quotient and become the soft charges $Q[\varepsilon]$ once Section 3 makes them integrable. Removing exactly the small directions is what turns the presymplectic form into a symplectic one on the physical phase space; the large directions are precisely the charges that survive.
 
-## 3. RT completion is the HW corner improvement
+## 3. RT Completion Is the HW Corner Improvement
 
 The bulk generator $G[\varepsilon]=\int_\Xi\chi_\alpha\eta^\alpha$ is not differentiable: its variation has the radial obstruction
 
-$$\begin{align}
+$$
+\begin{align}
 \delta G=\text{regular}-\int_{\partial\Xi}k^r_{\alpha\beta}\eta^\alpha\delta\psi^\beta.
 \end{align}
-\tag{S 30}$$
+\tag{S 30}
+$$
 
 Adding
 
-$$\begin{align}
+$$
+\begin{align}
 \delta Q=\int_{\partial\Xi}k^r_{\alpha\beta}\eta^\alpha\delta\psi^\beta
 \end{align}
-\tag{S 31}$$
+\tag{S 31}
+$$
 
 cancels it. This is the HW move $(\Theta+\delta\ell)|_\Gamma=\mathrm dC$ in disguise: the boundary term $\delta Q$ plays the role of $-\delta\ell-\mathrm dC$, converting the bare presymplectic potential into an integrable one. Under fixed leading data $\delta\bar k^r=\delta\bar U=0$, the charge is
 
-$$\begin{align}
+$$
+\begin{align}
 \boxed{\;Q[\varepsilon]=\int_{\partial\Xi}\bar k^r_{\alpha\beta}\bar U^\alpha{}_I\varepsilon^I\psi^\beta\;}.
 \end{align}
-\tag{S 34, R2}$$
+\tag{S 34, R2}
+$$
 
-## 4. The tangent-lift sign is fixed by the HW Hamilton equation
+## 4. The Tangent-Lift Sign Is Fixed by the HW Hamilton Equation
 
 Tangency $\delta_\varepsilon\chi_\alpha=0$ with $\chi_\alpha=\pi_\alpha+f_\alpha$ requires
 
-$$\begin{align}
+$$
+\begin{align}
 \boxed{\;\delta_\varepsilon\pi_\alpha(x)=-\int_\Xi\mathrm d^dx'\,\frac{\delta f_\alpha(x)}{\delta\psi^\beta(x')}\eta^\beta(x')\;}.
 \end{align}
-\tag{R3}$$
+\tag{R3}
+$$
 
 The source prints a plus sign (its Eq. 36); that gives $\delta_\varepsilon\chi_\alpha=2\,\delta f_\alpha[\eta]$, incompatible with tangency. **HW fixes the sign**: with the corrected lift, the double contraction reproduces $X_\varepsilon\cdot\omega_\Xi=-\delta H_\varepsilon$ on the constraint surface, the thesis's Hamilton equation (HW 2.31). The plus sign would violate it.
 
-## 5. Abelian reduced algebra
+## 5. Abelian Reduced Algebra
 
 With both profiles in the kernel,
 
-$$\begin{align}
+$$
+\begin{align}
 \{Q[\varepsilon_1],Q[\varepsilon_2]\}^*=\int_{\Xi\times\Xi}\eta_1^\alpha\Omega_{\alpha\beta}\eta_2^\beta=0.
 \end{align}
-\tag{S 38–40, R4}$$
+\tag{S 38–40, R4}
+$$
 
 **HW reading.** Commutators of the soft charges vanish because the underlying directions are first-class: null directions of $\omega|_{\tilde{\mathcal P}}$ cannot source a central extension. This is not the vanishing of quotiented pure gauge — each $Q[\varepsilon]$ is a genuine boundary-parametrized charge — but the commutativity of the soft sector. The residual shift algebra is Abelian by construction, not by a model-specific miracle.
 
-# The four models in HW form
+# The Four Models in HW Form
 
 For each model: fields, symplectic potential, constraint, radial kernel, boundary charge. All kernels are solutions of $\widehat{\mathcal L}U=0$.
 
-## 1. Four-dimensional scalar
+## 1. Four-Dimensional Scalar
 
 - Fields: $\phi$; momentum $\pi_\phi$; constraint $\chi=\pi_\phi+f(\phi)\approx0$.
 - Radial operator and kernel:
 
-$$\begin{align}
+$$
+\begin{align}
 \widehat{\mathcal L}=-2\epsilon\sqrt\gamma\,\partial_r(r\,\cdot),
 \qquad
 U=r^{-1},
 \qquad
 \bar k^r=\epsilon r^2\sqrt\gamma.
 \end{align}
-\tag{S scalar}$$
+\tag{S scalar}
+$$
 
 - Residual shift: $\delta_\varepsilon\phi=r^{-1}\varepsilon(\varphi^A)$ — a boundary-parametrized, radially decaying shift.
 - HW charge (codim-2, quasilocal, boundary-linear):
 
-$$\begin{align}
+$$
+\begin{align}
 Q[\varepsilon]=\int_{\partial\Xi}\epsilon\,r\sqrt\gamma\,\varepsilon\,\phi,
 \end{align}
-\tag{R5}$$
+\tag{R5}
+$$
 
 i.e. $\epsilon\,r_0\sqrt\gamma\,\varepsilon(\varphi)\,\phi(r_0,\varphi)$ at $\partial\Xi=\{r=r_0\}$. The $r^{-1}$ falloff of the kernel is what makes the charge finite against $\bar k^r\sim r^2$.
 
-## 2. Four-dimensional Maxwell–Pontryagin
+## 2. Four-Dimensional Maxwell–Pontryagin
 
 - Fields: angular potential $A_A$; constraint matrix is vector-valued with
 
-$$\begin{align}
+$$
+\begin{align}
 \widehat{\mathcal L}^{AB}=-\frac{2\epsilon}{e^2}\sqrt\gamma\,\gamma^{AB}\partial_r,
 \qquad
 U^A{}_B=\delta^A{}_B,
 \end{align}
-\tag{S MP}$$
+\tag{S MP}
+$$
 
 so the kernel is the **constant** boundary transformation $\delta_\varepsilon A_A=\varepsilon_A(\varphi)$.
 
 - The boundary tensor
 
-$$\begin{align}
+$$
+\begin{align}
 \bar k^{r\,AB}=\epsilon\sqrt\gamma\,\sigma^{AB},
 \qquad
 \sigma^{AB}=\frac{1}{e^2}\gamma^{AB}-\frac{\epsilon\theta}{e^2\sqrt\gamma}\epsilon^{AB}
 \end{align}
-\tag{S 25}$$
+\tag{S 25}
+$$
 
 decomposes into a **symmetric** Maxwell part ($\gamma^{AB}/e^2$) and an **antisymmetric** Pontryagin/Chern–Simons part ($\propto\epsilon^{AB}$). The radial constraint operator sees only the symmetric part (it is built from $\gamma^{AB}$); the CS part enters only the boundary observable:
 
-$$\begin{align}
+$$
+\begin{align}
 Q[\varepsilon]=\int_{\partial\Xi}\epsilon\sqrt\gamma\left(\frac{1}{e^2}\gamma^{AB}-\frac{\epsilon\theta}{e^2\sqrt\gamma}\epsilon^{AB}\right)\varepsilon_AA_B.
 \end{align}
-\tag{R6}$$
+\tag{R6}
+$$
 
 **HW remark.** This is a clean example of the general principle that the corner-improved charge is sensitive to terms invisible in the bulk constraint dynamics. Pure Maxwell is the $\theta=0$ specialization.
 
-## 3. Three-dimensional Maxwell
+## 3. Three-Dimensional Maxwell
 
 - Field: $A_\varphi$; kernel is a radial square root:
 
-$$\begin{align}
+$$
+\begin{align}
 \widehat{\mathcal L}=-\frac{2\epsilon}{e^2\sqrt r}\partial_r(r^{-1/2}\,\cdot),
 \qquad
 U=\sqrt r,
 \qquad
 \bar k^r=\frac{\epsilon}{e^2}.
 \end{align}
-\tag{S 3d}$$
+\tag{S 3d}
+$$
 
 - Residual shift: $\delta_\varepsilon A_\varphi=\sqrt r\,\varepsilon$; the charge
 
-$$\begin{align}
+$$
+\begin{align}
 Q[\varepsilon]=\int_{\partial\Xi}\frac{\epsilon}{e^2}\sqrt r\,\varepsilon\,A_\varphi
 \end{align}
-\tag{R7}$$
+\tag{R7}
+$$
 
 is constant-weight in $r$ ($\bar k^r$ independent of $r$), the 3d special case.
 
-## 4. Four-dimensional Yang–Mills
+## 4. Four-Dimensional Yang–Mills
 
 - The kernel is **covariantly constant**:
 
-$$\begin{align}
+$$
+\begin{align}
 \mathcal D_rU=0,
 \qquad
 U(\infty)=\mathbb 1,
 \qquad
 U(r,\varphi)=\mathcal P\exp\left(\int_r^\infty\mathrm dr'\,A_r(r',\varphi)\right),
 \end{align}
-\tag{S 26–27}$$
+\tag{S 26–27}
+$$
 
 and the adjoint zero mode is
 
-$$\begin{align}
+$$
+\begin{align}
 v_A(x)=U(x)V_A(\varphi)U^{-1}(x).
 \end{align}
-\tag{S 28}$$
+\tag{S 28}
+$$
 
 - **Field-dependence subtlety.** $U$ depends on the configuration through $A_r$. The displayed residual shift acts on $A_A$ with $\delta_\varepsilon U=0$ in the restricted example (the paper does not establish the general field-dependent-parameter bracket). In HW terms this means: the charge is a function on configuration space built from a parallel-transported probe $V_A(\varphi)$; a general variation $\delta A_r$ would move $U$, and the integrability of $Q[\varepsilon]$ under such variations is exactly the question the paper leaves open.
 
-# Comparison with the thesis AdS$_3$ charge
+# Comparison with the Thesis AdS$_3$ Charge
 
 The thesis's boundary charge (its Eq. HW 3.2.68)
 
@@ -279,13 +323,13 @@ arises from the same machinery: a corner-improved Noether charge whose variation
 
 The Abelianness in the source is not a small-$c$ limit: it is the statement that kernel directions carry no central charge, in contrast to the diffeomorphism sector of AdS$_3$.
 
-# What the rewrite adds beyond the source
+# What the Rewrite Adds Beyond the Source
 
 1. **Conceptual unification.** Zero modes = first-class (null) directions of $\omega|_{\tilde{\mathcal P}}$ carrying boundary data (large gauge, surviving the quotient); RT charge = HW Noether charge with corner improvement; Abelian algebra = commutativity of soft charges, following from first-classness rather than from being quotiented. The three features of the paper are one fact about $\omega|_{\tilde{\mathcal P}}$ and its first-class directions.
 2. **The sign fix is derived, not patched.** The HW Hamilton equation $X\cdot\omega=-\delta H$ selects the minus sign in the tangent lift (R3). The source's Eq. (36) plus sign violates it.
 3. **Model dictionary in HW language.** Each of the four models is now a triplet (symplectic potential, radial kernel ODE, corner charge), ready to be compared with the CPS notes' conventions.
 
-# Verification log
+# Verification Log
 
 ## Checked (Mathematica)
 
@@ -301,14 +345,14 @@ The Abelianness in the source is not a small-$c$ limit: it is the statement that
 
 - Canonical null-slice coordinates on $\Xi$; angular locality of the kernel (S 20); fixed leading boundary data $\delta\bar k^r=\delta\bar U=0$ for integrability; the paper's sign conventions for $U(\infty)=\mathbb 1$ and $\mathcal P\exp$ ordering.
 
-## Not verified
+## Not Verified
 
 - The underlying actions and full primary/secondary constraint sets of the four models (not displayed in the source; the tabulated operators cannot be rederived from the source alone).
 - Charge falloffs and finiteness at $\partial\Xi$; the general field-dependent residual bracket ($\delta_\varepsilon U\ne0$ sector); the Gauss constraint sector and mixed brackets.
 - The schematic flux-balance law (S 41) and null-patch matching are not derived here.
 - No xAct check: the decisive objects are canonical brackets and radial ODE kernels, not tensor identities; no Sage check needed (no representation-theory content in the four Abelian examples).
 
-# Open problems and project extensions
+# Open Problems and Project Extensions
 
 1. **Field-dependent kernel bracket.** For Yang–Mills, determine $\{Q[\varepsilon_1],Q[\varepsilon_2]\}$ when $\delta_\varepsilon U\ne0$ — the exact analogue of the field-dependent-generator problem in the CPS notes ($k_\xi=\delta Q_\xi-i_\xi\Theta$ with $\delta\xi\ne0$).
 2. **Corner term of $\Theta_\Xi$.** Reproduce (S 30–31) from $\delta\Theta_\Xi$ with the explicit corner reduction, matching the thesis's $\ell,C$ bookkeeping.

@@ -12,162 +12,131 @@ summary: "An exact Legendre-dual composition identity for additive connected gen
 tags: []
 ---
 
-## Result and placement
+## Result and Placement
 
 Correct under the following precise conditions: the connected generators obey
 
-\[
+$$\begin{align}
 W_{\cal O}[J]=W_{\cal C}[J]+W_{\rm IF}[J],
-\]
+\end{align}$$
 
 the relevant Legendre maps are locally invertible, and one follows the stationary branch induced by the open-system Legendre transform. Then
 
-\[
-\Gamma_{\cal O}[\Phi]
-=\operatorname*{Stat}_{\Psi}
-\left\{
-\Gamma_{\cal C}[\Psi]
-+\Gamma_{\rm IF}[\Phi-\Psi]
-\right\}.
-\]
+$$\begin{align}
+\Gamma_{\cal O}[\Phi] =\operatorname*{Stat}_{\Psi} \left\{ \Gamma_{\cal C}[\Psi] +\Gamma_{\rm IF}[\Phi-\Psi] \right\}.
+\end{align}$$
 
 This is a useful `T1-symplectic` and `T2-model` paper because it isolates a gluing-like variational composition rule at the level of Schwinger--Keldysh effective actions. It is not a canonical boundary-gluing theorem: it begins from connected generating functionals and Legendre transforms, introduces no boundary symplectic reduction, and proves no reduced CCR or continuum/Fock statement.
 
-## Source map
+## Source Map
 
 - Section 2 distinguishes closed, open, and environment-induced connected generators and reconstructs the influence contribution from the microscopic SK insertion.
 - Section 3 defines the Legendre transforms, derives the stationary composition law, proves its algebraic properties, and formulates decomposition covariance.
 - Section 4 gives quadratic operator kernels, their microscopic interpretation, computational regimes, and a nonlinear effective-potential example.
 - Section 5 summarizes the formal scope and the branch assumptions.
 
-## Stationary composition
+## Stationary Composition
 
 Using the convention
 
-\[
-\Gamma[\Phi]=W[J]-J\cdot\Phi,
-\qquad
-\frac{\delta\Gamma}{\delta\Phi}=-J,
-\]
+$$\begin{align}
+\Gamma[\Phi]=W[J]-J\cdot\Phi, \qquad \frac{\delta\Gamma}{\delta\Phi}=-J,
+\end{align}$$
 
 define
 
-\[
-F[\Phi,\Psi]
-=\Gamma_{\cal C}[\Psi]
-+\Gamma_{\rm IF}[\Phi-\Psi].
-\]
+$$\begin{align}
+F[\Phi,\Psi] =\Gamma_{\cal C}[\Psi] +\Gamma_{\rm IF}[\Phi-\Psi].
+\end{align}$$
 
 Stationarity in the splitting field gives
 
-\[
-\left.\frac{\delta\Gamma_{\cal C}}{\delta\Psi}\right|_{\Psi_\star}
-=
-\left.\frac{\delta\Gamma_{\rm IF}}{\delta\chi}\right|_{\chi=\Phi-\Psi_\star},
-\]
+$$\begin{align}
+\left.\frac{\delta\Gamma_{\cal C}}{\delta\Psi}\right|_{\Psi_\star} = \left.\frac{\delta\Gamma_{\rm IF}}{\delta\chi}\right|_{\chi=\Phi-\Psi_\star},
+\end{align}$$
 
 or equivalently the common-source condition
 
-\[
-J_{\cal C}[\Psi_\star]
-=J_{\rm IF}[\Phi-\Psi_\star].
-\]
+$$\begin{align}
+J_{\cal C}[\Psi_\star] =J_{\rm IF}[\Phi-\Psi_\star].
+\end{align}$$
 
 The branch selected by the open-system Legendre map is
 
-\[
-\Psi_\star[\Phi]
-=\Phi_{\cal C}[J_{\cal O}[\Phi]],
-\qquad
-\Phi-\Psi_\star
-=\Phi_{\rm IF}[J_{\cal O}[\Phi]].
-\]
+$$\begin{align}
+\Psi_\star[\Phi] =\Phi_{\cal C}[J_{\cal O}[\Phi]], \qquad \Phi-\Psi_\star =\Phi_{\rm IF}[J_{\cal O}[\Phi]].
+\end{align}$$
 
 The symbol $\operatorname{Stat}$ means evaluation at a stationary point, not minimization. If the auxiliary Hessian
 
-\[
-\mathcal H_\star
-=\Gamma_{\cal C}^{(2)}[\Psi_\star]
-+\Gamma_{\rm IF}^{(2)}[\Phi-\Psi_\star]
-\]
+$$\begin{align}
+\mathcal H_\star =\Gamma_{\cal C}^{(2)}[\Psi_\star] +\Gamma_{\rm IF}^{(2)}[\Phi-\Psi_\star]
+\end{align}$$
 
 is invertible, the implicit-function theorem gives a locally unique branch. If additional branches exist, stationarity alone does not select the physical one.
 
-## Algebra and decomposition covariance
+## Algebra and Decomposition Covariance
 
 The binary operation
 
-\[
-(\Gamma_1\circledast\Gamma_2)[\Phi]
-=\operatorname*{Stat}_{\Psi}
+$$\begin{align}
+(\Gamma_1\circledast\Gamma_2)[\Phi] =\operatorname*{Stat}_{\Psi}
 \{\Gamma_1[\Psi]+\Gamma_2[\Phi-\Psi]\}
-\]
+\end{align}$$
 
 is commutative by $\Xi=\Phi-\Psi$. It is associative after rewriting either nesting as the simultaneous stationary problem
 
-\[
+$$\begin{align}
 \operatorname*{Stat}_{\Psi,\Xi}
 \{\Gamma_1[\Psi]+\Gamma_2[\Xi]+\Gamma_3[\Phi-\Psi-\Xi]\},
-\]
+\end{align}$$
 
 provided the corresponding stationary branches exist and are compatible. Thus associativity is a branchwise statement, not a global uniqueness theorem.
 
 For any source functional $X[J]$ that preserves the required Legendre maps and branches,
 
-\[
-W_{\cal C}\mapsto W_{\cal C}+X,
-\qquad
-W_{\rm IF}\mapsto W_{\rm IF}-X
-\]
+$$\begin{align}
+W_{\cal C}\mapsto W_{\cal C}+X, \qquad W_{\rm IF}\mapsto W_{\rm IF}-X
+\end{align}$$
 
 changes the individual dual actions but leaves their stationary composition equal to $\Gamma_{\cal O}$. This is covariance of the reduced decomposition, not a symmetry of a specified microscopic model.
 
-## Quadratic realization
+## Quadratic Realization
 
 For
 
-\[
-\Gamma_{\cal C}[\Psi]=\frac12\Psi\cdot\mathbb A\cdot\Psi,
-\qquad
-\Gamma_{\rm IF}[\Psi]=\frac12\Psi\cdot\mathbb B\cdot\Psi,
-\]
+$$\begin{align}
+\Gamma_{\cal C}[\Psi]=\frac12\Psi\cdot\mathbb A\cdot\Psi, \qquad \Gamma_{\rm IF}[\Psi]=\frac12\Psi\cdot\mathbb B\cdot\Psi,
+\end{align}$$
 
 the stationary equation and solution are
 
-\[
-(\mathbb A+\mathbb B)\Psi_\star=\mathbb B\Phi,
-\qquad
-\Psi_\star=(\mathbb A+\mathbb B)^{-1}\mathbb B\Phi.
-\]
+$$\begin{align}
+(\mathbb A+\mathbb B)\Psi_\star=\mathbb B\Phi, \qquad \Psi_\star=(\mathbb A+\mathbb B)^{-1}\mathbb B\Phi.
+\end{align}$$
 
 When the required inverses exist,
 
-\[
-\Gamma_{\cal O}[\Phi]
-=\frac12\Phi\cdot
-(\mathbb A^{-1}+\mathbb B^{-1})^{-1}
-\cdot\Phi.
-\]
+$$\begin{align}
+\Gamma_{\cal O}[\Phi] =\frac12\Phi\cdot (\mathbb A^{-1}+\mathbb B^{-1})^{-1} \cdot\Phi.
+\end{align}$$
 
 The response kernel $\mathbb B$ is generally not the microscopic influence kernel. In a fully quadratic microscopic model,
 
-\[
-\mathbb B^{-1}
-=(\mathbb K_{\cal C}+\mathbb K_{\rm IF})^{-1}
--\mathbb K_{\cal C}^{-1}.
-\]
+$$\begin{align}
+\mathbb B^{-1} =(\mathbb K_{\cal C}+\mathbb K_{\rm IF})^{-1} -\mathbb K_{\cal C}^{-1}.
+\end{align}$$
 
 For static nonlinear potentials the same construction becomes
 
-\[
-U_{\cal O}(\phi)
-=\operatorname*{Stat}_{\psi}
+$$\begin{align}
+U_{\cal O}(\phi) =\operatorname*{Stat}_{\psi}
 \{U_{\cal C}(\psi)+U_{\rm IF}(\phi-\psi)\},
-\]
+\end{align}$$
 
 with a force-balance equation and local uniqueness whenever the auxiliary Hessian has nonzero determinant.
 
-## Verification log
+## Verification Log
 
 - `Source-derived`: The connected-generator decomposition, inverse Legendre relations, branch identification, commutativity, associativity, decomposition covariance, quadratic kernels, and effective-potential realization were reconstructed from the official v1 TeX source and checked against the rendered 22-page PDF.
 - `Checked`: Mathematica evaluated a non-diagonal symmetric $2\times2$ example and found zero residual between direct stationary substitution and $(\mathbb A^{-1}+\mathbb B^{-1})^{-1}$.

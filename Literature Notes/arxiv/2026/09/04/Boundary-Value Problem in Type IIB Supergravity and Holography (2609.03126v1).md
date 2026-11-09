@@ -26,7 +26,7 @@ Daily overview: [[2026_09_04_overview]]
 
 Reason codes: `T1-boundary`, `T2-dS-BH-holography`, `T2-model`.
 
-# Source map
+# Source Map
 
 1. **§I Introduction:** reframes the vanishing/mismatched parent-theory on-shell action as an ensemble mismatch rather than only a defect of self-duality formulations.
 2. **§II Euclidean type-IIB boundary-value problem:**
@@ -38,107 +38,81 @@ Reason codes: `T1-boundary`, `T2-dS-BH-holography`, `T2-model`.
    - §IV.B treats warped $\mathrm{EAdS}_6\times S^2\times\Sigma$, where all ensemble-changing terms vanish on shell and the ordinary pseudo action already matches Romans $F(4)$ supergravity.
 5. **§V Discussion:** states the unresolved fibred-background, Page-shift, type-IIA, bubbling-geometry, and one-loop problems.
 
-# Conventions and field content
+# Conventions and Field Content
 
 The analysis is Euclidean and uses the Einstein frame. The bosonic fields are
 
-$$
+$$\begin{align}
 (g_{\mu\nu},B_2,\phi;C_0,C_2,C_4),
-$$
+\end{align}$$
 
 with
 
-$$
-H_3=dB_2,
-\qquad
-F_{n+1}=dC_n,
-$$
+$$\begin{align}
+H_3=dB_2, \qquad F_{n+1}=dC_n,
+\end{align}$$
 
-$$
-\widetilde F_3=F_3-C_0H_3,
-\qquad
-\widetilde F_5=F_5+\mathcal X_5,
-$$
+$$\begin{align}
+\widetilde F_3=F_3-C_0H_3, \qquad \widetilde F_5=F_5+\mathcal X_5,
+\end{align}$$
 
-$$
+$$\begin{align}
 \mathcal X_5=-\frac{1}{2}C_2\wedge H_3+\frac{1}{2}B_2\wedge F_3.
-$$
+\end{align}$$
 
 The Euclidean self-duality convention is
 
-$$
+$$\begin{align}
 *\widetilde F_5=i\widetilde F_5.
-$$
+\end{align}$$
 
 It is imposed after varying the pseudo action. The gravitational Dirichlet problem includes the ten-dimensional Gibbons–Hawking–York term with outward normal and the paper's sign convention
 
-$$
+$$\begin{align}
 S_{\mathrm{GHY}}^{(10)}=-\frac{1}{\kappa^2}\int_{\partial\mathcal M}\sqrt h\,K.
-$$
+\end{align}$$
 
-# Canonical boundary data
+# Canonical Boundary Data
 
 For $\Phi\in\{\phi,B_2,C_0,C_2,C_4\}$, the variation is organized as
 
-$$
-\delta S_{\mathrm{IIB}}
-=\frac{1}{2\kappa^2}\sum_\Phi
-\left[
-\int_{\mathcal M}E_\Phi\wedge\delta\Phi
-+\int_{\partial\mathcal M}\delta\Phi\wedge\Pi_\Phi
-\right].
-$$
+$$\begin{align}
+\delta S_{\mathrm{IIB}} =\frac{1}{2\kappa^2}\sum_\Phi \left[ \int_{\mathcal M}E_\Phi\wedge\delta\Phi +\int_{\partial\mathcal M}\delta\Phi\wedge\Pi_\Phi \right].
+\end{align}$$
 
 The momenta are
 
-$$
-\Pi_\phi=*d\phi,
-\qquad
-\Pi_{C_0}=e^{2\phi}*F_1,
-\qquad
-\Pi_{C_4}=\frac{1}{2}*\widetilde F_5,
-$$
+$$\begin{align}
+\Pi_\phi=*d\phi, \qquad \Pi_{C_0}=e^{2\phi}*F_1, \qquad \Pi_{C_4}=\frac{1}{2}*\widetilde F_5,
+\end{align}$$
 
-$$
-\Pi_{B_2}=e^{-\phi}*H_3-C_0e^\phi*\widetilde F_3
--\frac{1}{4}C_2\wedge*\widetilde F_5
-+\frac{i}{2}C_4\wedge F_3,
-$$
+$$\begin{align}
+\Pi_{B_2}=e^{-\phi}*H_3-C_0e^\phi*\widetilde F_3 -\frac{1}{4}C_2\wedge*\widetilde F_5 +\frac{i}{2}C_4\wedge F_3,
+\end{align}$$
 
-$$
-\Pi_{C_2}=e^\phi*\widetilde F_3
-+\frac{1}{4}B_2\wedge*\widetilde F_5
--\frac{i}{2}C_4\wedge H_3.
-$$
+$$\begin{align}
+\Pi_{C_2}=e^\phi*\widetilde F_3 +\frac{1}{4}B_2\wedge*\widetilde F_5 -\frac{i}{2}C_4\wedge H_3.
+\end{align}$$
 
 The bare action supports pointwise Dirichlet data $\delta\Phi=0$ and homogeneous Neumann data $\Pi_\Phi=0$, but not a generic nonzero fixed momentum $\delta\Pi_\Phi=0$.
 
-# Generalized pseudo action and ensemble switch
+# Generalized Pseudo Action and Ensemble Switch
 
 The proposed action is
 
-$$
-\widetilde S_{\mathrm{IIB}}
-=S_{\mathrm{IIB}}+S_{\mathrm{bdry}},
-$$
+$$\begin{align}
+\widetilde S_{\mathrm{IIB}} =S_{\mathrm{IIB}}+S_{\mathrm{bdry}},
+\end{align}$$
 
-$$
-S_{\mathrm{bdry}}
-=-\frac{1}{2\kappa^2}
-\sum_\Phi s_\Phi
-\int_{\partial\mathcal M}\Phi\wedge\Pi_\Phi,
-\qquad s_\Phi\in\{0,1\}.
-$$
+$$\begin{align}
+S_{\mathrm{bdry}} =-\frac{1}{2\kappa^2} \sum_\Phi s_\Phi \int_{\partial\mathcal M}\Phi\wedge\Pi_\Phi, \qquad s_\Phi\in\{0,1\}.
+\end{align}$$
 
 Its boundary variation is
 
-$$
-\delta\widetilde S_{\mathrm{IIB}}\big|_{\partial\mathcal M}
-=\frac{1}{2\kappa^2}\sum_\Phi
-\int_{\partial\mathcal M}
-\left[(1-s_\Phi)\delta\Phi\wedge\Pi_\Phi
--s_\Phi\Phi\wedge\delta\Pi_\Phi\right].
-$$
+$$\begin{align}
+\delta\widetilde S_{\mathrm{IIB}}\big|_{\partial\mathcal M} =\frac{1}{2\kappa^2}\sum_\Phi \int_{\partial\mathcal M} \left[(1-s_\Phi)\delta\Phi\wedge\Pi_\Phi -s_\Phi\Phi\wedge\delta\Pi_\Phi\right].
+\end{align}$$
 
 Therefore:
 
@@ -148,53 +122,45 @@ Therefore:
 
 For gauge potentials, pointwise Dirichlet/Neumann data are stronger than necessary. On a closed cutoff boundary, Hodge decomposition reduces the boundary constraint to co-exact and harmonic pairings. It is sufficient to fix local field-strength data and holonomies in the potential ensemble, or the corresponding momentum periods in the momentum ensemble.
 
-# Canonical momentum versus Page charge
+# Canonical Momentum Versus Page Charge
 
 For the $C_4$ sector, the D3 Page charge uses
 
-$$
+$$\begin{align}
 N=\frac{2}{i(2\pi\ell_s)^4g_s}\int_{S^5}\Pi'_{C_4},
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 \Pi'_{C_4}=\Pi_{C_4}-\frac{i}{2}\mathcal X_5.
-$$
+\end{align}$$
 
 The variational principle above fixes $\Pi_{C_4}$, not automatically $\Pi'_{C_4}$. Dirichlet conditions on $B_2$ and $C_2$ make the shift inert in the examples and in the Lunin–Maldacena ensemble discussed by the paper. Outside that sector, a field-dependent shift can vary, so “fixed canonical momentum” and “fixed quantized Page charge” need not coincide.
 
-# Equality with the PST-motivated correction
+# Equality with the PST-Motivated Correction
 
 Choose
 
-$$
-s_{C_4}=1,
-\qquad
-s_\Phi=0\quad(\Phi\ne C_4).
-$$
+$$\begin{align}
+s_{C_4}=1, \qquad s_\Phi=0\quad(\Phi\ne C_4).
+\end{align}$$
 
 Then
 
-$$
-S_{\mathrm{bdry}}^{(C_4)}
-=-\frac{1}{4\kappa^2}\int_{\partial\mathcal M}C_4\wedge*\widetilde F_5.
-$$
+$$\begin{align}
+S_{\mathrm{bdry}}^{(C_4)} =-\frac{1}{4\kappa^2}\int_{\partial\mathcal M}C_4\wedge*\widetilde F_5.
+\end{align}$$
 
 Using self-duality, split the closed five-form as
 
-$$
+$$\begin{align}
 F_5=F_{5E}+F_{5NE},
-$$
+\end{align}$$
 
 where $F_{5E}$ is globally exact and $F_{5NE}$ is closed but not globally exact. Under the paper's assumptions, the radial-boundary pullback of $F_{5E}$ vanishes. Stokes' theorem then gives
 
-$$
-S_{\mathrm{bdry}}^{(C_4)}
-=-\frac{i}{4\kappa^2}\int_{\mathcal M}
-\left[
-F_{5E}\wedge F_{5NE}
-+d(\mathcal X_5\wedge C_4)
-\right],
-$$
+$$\begin{align}
+S_{\mathrm{bdry}}^{(C_4)} =-\frac{i}{4\kappa^2}\int_{\mathcal M} \left[ F_{5E}\wedge F_{5NE} +d(\mathcal X_5\wedge C_4) \right],
+\end{align}$$
 
 which is the earlier PST-motivated correction.
 
@@ -210,78 +176,65 @@ The equality requires:
 
 The background has constant dilaton, $C_0=B_2=C_4=0$, $\widetilde F_5=0$, and R–R three-form flux
 
-$$
+$$\begin{align}
 F_3=2Q_5(\epsilon_3+i*_6\epsilon_3).
-$$
+\end{align}$$
 
 The field-theory data fix $(N_1,N_5)$. The electric D1 charge selects $s_{C_2}=1$; the magnetic D5 flux is a topological sector and is fixed independently of $s_{C_2}$. The relevant action is
 
-$$
-\widetilde S_{\mathrm{IIB}}^{(C_2)}
-=S_{\mathrm{IIB}}
--\frac{1}{2\kappa^2}\int_{\partial\mathcal M}C_2\wedge\Pi_{C_2}.
-$$
+$$\begin{align}
+\widetilde S_{\mathrm{IIB}}^{(C_2)} =S_{\mathrm{IIB}} -\frac{1}{2\kappa^2}\int_{\partial\mathcal M}C_2\wedge\Pi_{C_2}.
+\end{align}$$
 
 The bare pseudo action vanishes on shell, while the boundary term gives
 
-$$
-\widetilde S_{\mathrm{IIB}}^{(C_2)}
-=\frac{2\ell^4}{\kappa^2}
-\operatorname{Vol}_{\mathrm{EAdS}_3}
-\operatorname{Vol}_{S^3}
-\operatorname{Vol}_{M_4}.
-$$
+$$\begin{align}
+\widetilde S_{\mathrm{IIB}}^{(C_2)} =\frac{2\ell^4}{\kappa^2} \operatorname{Vol}_{\mathrm{EAdS}_3} \operatorname{Vol}_{S^3} \operatorname{Vol}_{M_4}.
+\end{align}$$
 
 Dimensional reduction gives
 
-$$
-\frac{1}{\kappa_3^2}
-=\frac{\ell^3}{\kappa^2}
-\operatorname{Vol}_{S^3}\operatorname{Vol}_{M_4},
-$$
+$$\begin{align}
+\frac{1}{\kappa_3^2} =\frac{\ell^3}{\kappa^2} \operatorname{Vol}_{S^3}\operatorname{Vol}_{M_4},
+\end{align}$$
 
 so the three-dimensional vacuum action is identical. The 10d and 3d GHY terms also match at a common cutoff because $K_{10}=K_3=2/\ell$ and the internal volume produces the same Newton-constant map.
 
 The Brown–Henneaux central charge becomes
 
-$$
-c=\frac{12\pi\ell^4\operatorname{Vol}_{S^3}\operatorname{Vol}_{M_4}}{\kappa^2}
-=6N_1N_5.
-$$
+$$\begin{align}
+c=\frac{12\pi\ell^4\operatorname{Vol}_{S^3}\operatorname{Vol}_{M_4}}{\kappa^2} =6N_1N_5.
+\end{align}$$
 
-# Example 2: warped $\mathrm{EAdS}_6\times S^2\times\Sigma$
+# Example 2: Warped $\mathrm{EAdS}_6\times S^2\times\Sigma$
 
 The regular solutions are described by holomorphic data $\mathcal A_\pm$ on $\Sigma$. The two-form potentials have two $S^2$ legs, the three-form fluxes have two $S^2$ legs and one $\Sigma$ leg, and $\widetilde F_5=0$. Hence
 
-$$
-B_2\wedge F_3=C_2\wedge H_3=0,
-\qquad
-F_5=0.
-$$
+$$\begin{align}
+B_2\wedge F_3=C_2\wedge H_3=0, \qquad F_5=0.
+\end{align}$$
 
 All remaining momentum pairings contain a normal EAdS leg after Hodge duality, so their pullbacks to the radial cutoff vanish. Thus
 
-$$
+$$\begin{align}
 \widetilde S_{\mathrm{IIB}}=S_{\mathrm{IIB}}
-$$
+\end{align}$$
 
 on these solutions for any $s_\Phi$. The known ten-dimensional action equals the six-dimensional Romans action with
 
-$$
-\frac{1}{16\pi G_N^{(6)}}
-=\frac{16\pi}{3\kappa^2}
-\int_\Sigma d^2z\,\mathcal K^2\mathcal G.
-$$
+$$\begin{align}
+\frac{1}{16\pi G_N^{(6)}} =\frac{16\pi}{3\kappa^2} \int_\Sigma d^2z\,\mathcal K^2\mathcal G.
+\end{align}$$
 
 At finite cutoff, $K_6=5\coth u_c$ and $K_{10}=K_6/f_6$; the warp-factor integral converts the 10d GHY term into its 6d counterpart.
 
-# Verification log
+# Verification Log
 
 - **Checked:** Mathematica gives a zero residual for the Legendre-transform variation
 
-  $$
-  \delta(\Phi\wedge\Pi)-\left(\delta\Phi\wedge\Pi+\Phi\wedge\delta\Pi\right)=0
-  $$
+$$\begin{align}
+\delta(\Phi\wedge\Pi)-\left(\delta\Phi\wedge\Pi+\Phi\wedge\delta\Pi\right)=0
+\end{align}$$
 
   for the even-degree type-IIB potentials used here, reproducing the $s_\Phi$ boundary variation.
 - **Checked:** the D1–D5 Newton-constant relation makes the 3d and 10d on-shell coefficients identical.
@@ -291,7 +244,7 @@ At finite cutoff, $K_6=5\coth u_c$ and $K_{10}=K_6/f_6$; the warp-factor integra
 - **Blocked:** a general variation of the shifted Page momentum, including large gauge transformations and nontrivial patching, is not supplied by the source and cannot be inferred from the two examples.
 - **Not independently verified:** the full ten-dimensional equations of motion, the external/internal Hodge-star signs, the globally defined nine-form claims on arbitrary flux backgrounds, the original warped-$\mathrm{EAdS}_6$ on-shell integral, holographic renormalization, and the localization comparison.
 
-# Translation to action/CPS and regional gluing
+# Translation to action/CPS and Regional Gluing
 
 The paper gives a clean action-level distinction between two polarizations of boundary data:
 
@@ -308,7 +261,7 @@ This is directly useful for the vault's source/response bookkeeping: a Legendre 
 
 It does **not** establish regional composition. The paper treats an outer radial boundary of a fixed background; it does not duplicate interface ports, prove flux matching between two regions, eliminate common histories, or show associativity. Its Hodge-decomposition remark is about admissible boundary variations, not a physical partial trace or a gauge quotient.
 
-# Limitations and reusable stop rule
+# Limitations and Reusable Stop Rule
 
 - The pseudo action still imposes five-form self-duality by hand.
 - Product geometry and internal-degree counting exclude important fibred backgrounds.

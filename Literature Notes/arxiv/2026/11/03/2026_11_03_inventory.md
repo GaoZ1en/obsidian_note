@@ -226,7 +226,7 @@ Total deduplicated entries: 214
 | [2611.03637](https://arxiv.org/abs/2611.03637) | gr-qc:cross | gr-qc, physics.comp-ph | Mercury (Hg): a relativistic $N$-body simulation for Horndeski gravity | Ahmad Nouri-Zonoz, Farbod Hassani, Julian Adamek, Emilio Bellini, Martin Kunz | 44 pages, 15 figures, 4 tables |
 | [2611.03640](https://arxiv.org/abs/2611.03640) | math-ph:cross | math-ph | Construction of the 2D non-Abelian Yang-Mills-Higgs measure via stochastic quantisation | Bjoern Bringmann, Sky Cao, Martin Hairer, Wenhao Zhao | 350 pages, 3 figures |
 
-## Historical coverage boundary and metadata audit
+## Historical Coverage Boundary and Metadata Audit
 
 This is the complete recoverable November 3 new/cross subset, reconstructed from official recent date groups retrieved November 4. It is NOT the complete original November 3 all-status issue: the historical replacement section is unavailable, with unknown count and unknown tracked updates. Current historical-list comments/metadata can reflect subsequent revisions; no byte-identical reconstruction of the lost original /new is claimed. The helper prefix above is preserved verbatim (SHA-256 184e5baa3d3a359f142700c5b11fd8486e0113ad07cb43bd4e63d79de87ff293).
 

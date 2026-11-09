@@ -16,7 +16,7 @@ tags: []
 
 Back to [[2026_07_09_overview]].
 
-# BMS generators, boundary corners, and model classes
+# BMS Generators, Boundary Corners, and Model Classes
 
 The paper starts from the centrally extended BMS$_3$ algebra
 
@@ -47,7 +47,7 @@ The source is organized as follows:
 - Section 6: nonlinear sigma models, Toda theories, and a two-field model with an extended symplectic structure.
 - Section 7: flat-space holography interpretation and open problems.
 
-# Electric scalar: counterterm and flux-balance mechanism
+# Electric Scalar: Counterterm and Flux-Balance Mechanism
 
 The simplest electric model is
 
@@ -89,7 +89,7 @@ $$\begin{align}
 
 obey flux-balance laws rather than conservation. The source-driven jump example in the paper shows explicitly how an incoming delta-function source changes the energy density. Locally, this is the flat-space-holography analogue of a balance law: source data replace the missing bulk radiation channel in 3D.
 
-# Central extensions and the monodromy dictionary
+# Central Extensions and the Monodromy Dictionary
 
 The electric free scalar admits an improved transformation
 
@@ -160,7 +160,7 @@ $$\begin{align}
 
 with the smooth Minkowski reference at $E_0=-1/(8G)$ after the standard identification $2/\gamma^2=1/(16\pi G)$.
 
-# Magnetic and canonical sectors
+# Magnetic and Canonical Sectors
 
 The magnetic model uses
 
@@ -197,36 +197,26 @@ The sign flip of $c_M$ is the key difference between AdS$_3$ and dS$_3$ flat lim
 
 The canonical first-order model is a degenerate symplectic limit: its action is essentially a first-order pairing, and the BMS algebra emerges from a Sugawara-like construction. For local use, it is a toy model for boundary degrees of freedom whose dynamics is carried by the symplectic term more than by a Hamiltonian potential.
 
-# Electric-magnetic coupling and the potential constraint
+# Electric-Magnetic Coupling and the Potential Constraint
 
 The coupled sector makes the paper more than a list of free examples. It considers one electric scalar and one magnetic first-order pair with Carrollian Lagrangian
 
 $$\begin{align}
-{\cal L}
-=\frac12\dot\psi^2+\chi\dot\phi-\frac12\phi'^2
--V(\psi,\phi).
+{\cal L} =\frac12\dot\psi^2+\chi\dot\phi-\frac12\phi'^2 -V(\psi,\phi).
 \end{align}$$
 
 The transformations combine the electric and magnetic background-charge shifts,
 
 $$\begin{align}
-\delta\psi
-&=f\dot\psi+b\psi'+\frac{2}{\beta}f'
-+\frac{\lambda}{\gamma}b',\\
-\delta\phi
-&=f\dot\phi+b\phi'+\frac{2}{\gamma}b',\\
-\delta\chi
-&=f\dot\chi+(b\chi)'+f'\phi'
-+\frac{2}{\gamma}f''
-+\frac{\lambda}{\gamma}b'' .
+\delta\psi &=f\dot\psi+b\psi'+\frac{2}{\beta}f' +\frac{\lambda}{\gamma}b',\\
+\delta\phi &=f\dot\phi+b\phi'+\frac{2}{\gamma}b',\\
+\delta\chi &=f\dot\chi+(b\chi)'+f'\phi' +\frac{2}{\gamma}f'' +\frac{\lambda}{\gamma}b'' .
 \end{align}$$
 
 BMS invariance does not allow an arbitrary interaction. The potential must solve a first-order functional constraint whose general solution is
 
 $$\begin{align}
-V(\psi,\phi)
-=g\,\exp\left(\frac{\beta}{2}\psi+\frac{\gamma}{2}\phi\right)
-h(\beta\psi-\gamma\phi).
+V(\psi,\phi) =g\,\exp\left(\frac{\beta}{2}\psi+\frac{\gamma}{2}\phi\right) h(\beta\psi-\gamma\phi).
 \end{align}$$
 
 Thus the interaction has one fixed exponential direction, plus an arbitrary function along the BMS-invariant transverse combination $\beta\psi-\gamma\phi$. This is the most useful technical point of Section 5: the coupled model is constrained by the same background-charge data that generate the central terms. It is not just a product of the electric and magnetic models.
@@ -240,35 +230,29 @@ Q=i\int d\sigma\,(f{\cal H}+b{\cal P}),
 but now ${\cal H}$ receives both electric kinetic and magnetic-gradient contributions, while ${\cal P}$ contains the mixed first-order momentum density. The source-derived central charges are
 
 $$\begin{align}
-c_M=96\pi\left(\frac{1}{\beta^2}+\frac{1}{\gamma^2}\right),
-\qquad
-c_L=\frac{96\pi\lambda}{\gamma^2}.
+c_M=96\pi\left(\frac{1}{\beta^2}+\frac{1}{\gamma^2}\right), \qquad c_L=\frac{96\pi\lambda}{\gamma^2}.
 \end{align}$$
 
 The coupled construction is a good local model for a null-boundary theory in which electric data carry the supertranslation anomaly while magnetic data carry the spatial-gradient Hamiltonian. The potential constraint identifies which interactions respect the BMS representation rather than merely preserving the Carrollian kinetic terms.
 
-# Multifield sigma models and Toda theories
+# Multifield Sigma Models and Toda Theories
 
 The sigma-model extension replaces the single scalar by target coordinates $\phi^A$ with kinetic metric $G_{AB}(\phi)$ and potential $V(\phi)$:
 
 $$\begin{align}
-{\cal L}
-=\frac12G_{AB}(\phi)\dot\phi^A\dot\phi^B
--V(\phi).
+{\cal L} =\frac12G_{AB}(\phi)\dot\phi^A\dot\phi^B -V(\phi).
 \end{align}$$
 
 The BMS shift data are target-space vector fields $T^A(\phi)$ and $R^A(\phi)$. Invariance requires them to be covariantly constant Killing-type background-charge directions in the source conventions:
 
 $$\begin{align}
-\nabla_A T_B=0,\qquad
-\nabla_A R_B+\nabla_B R_A=0,
+\nabla_A T_B=0,\qquad \nabla_A R_B+\nabla_B R_A=0,
 \end{align}$$
 
 together with homogeneity conditions on $V$. The associated central charges are determined by target-space contractions,
 
 $$\begin{align}
-c_M=24\pi\,G_{AB}T^AT^B,\qquad
-c_L=48\pi\,G_{AB}T^AR^B.
+c_M=24\pi\,G_{AB}T^AT^B,\qquad c_L=48\pi\,G_{AB}T^AR^B.
 \end{align}$$
 
 This package is useful because it turns the single-field background charge into a geometric datum on the target. In local CPS language, the anomaly coefficient is not a freely attached number; it is the norm or pairing of the field-space directions that appear in the symmetry transformation.
@@ -276,9 +260,7 @@ This package is useful because it turns the single-field background charge into 
 For BMS Toda models the paper uses a collection of scalar fields associated with simple roots. Schematically,
 
 $$\begin{align}
-{\cal L}
-=\frac12K_{ij}\dot\psi^i\dot\psi^j
--\sum_i g_i\exp\left(\frac{\gamma}{2}K_{ij}\psi^j\right),
+{\cal L} =\frac12K_{ij}\dot\psi^i\dot\psi^j -\sum_i g_i\exp\left(\frac{\gamma}{2}K_{ij}\psi^j\right),
 \end{align}$$
 
 with $K_{ij}$ the Cartan matrix data. BMS invariance fixes the background-charge vector through the root/Cartan relation
@@ -290,22 +272,17 @@ $$\begin{align}
 For the $sl(3)$ example the paper reports
 
 $$\begin{align}
-c_M=\frac{768\pi}{\gamma^2},\qquad
-c_L=\frac{768\pi\lambda}{\gamma^2}.
+c_M=\frac{768\pi}{\gamma^2},\qquad c_L=\frac{768\pi\lambda}{\gamma^2}.
 \end{align}$$
 
 The main transfer from the Toda sector is the normalization bookkeeping. Compared with the one-field Liouville-type model, the Cartan matrix multiplies the anomaly coefficients. This matters when comparing BMS field-theory central charges against 3D gravity normalizations.
 
-# Extended first-order phase space and the critical symplectic surface
+# Extended First-Order Phase Space and the Critical Symplectic Surface
 
 The most CPS-adjacent construction in the paper is the two-field magnetic model with a deformed first-order symplectic structure:
 
 $$\begin{align}
-{\cal L}
-=\chi_i\dot\phi^i
-+q_1\epsilon_{ij}\phi^i\dot\phi^j
-+q_2\epsilon^{ij}\chi_i\dot\chi_j
--{\cal H}(\phi,\chi).
+{\cal L} =\chi_i\dot\phi^i +q_1\epsilon_{ij}\phi^i\dot\phi^j +q_2\epsilon^{ij}\chi_i\dot\chi_j -{\cal H}(\phi,\chi).
 \end{align}$$
 
 The field-space two-form is no longer the canonical $\delta\chi_i\wedge\delta\phi^i$ alone. In matrix form it contains the $\phi\phi$ and $\chi\chi$ blocks proportional to $q_1$ and $q_2$. The paper's key invariant is
@@ -318,7 +295,7 @@ For $\Delta\neq0$ the symplectic form is invertible and the model has a deformed
 
 The authors also identify an $Sp(2,\mathbb R)$-type structure acting on the field doublet. For local use, the critical value $\Delta=0$ should be treated like a boundary-condition transition rather than like a singular parameter limit to be ignored. It changes the rank of the symplectic form, so charge integrability and source admissibility have to be rechecked there.
 
-# Local translation for current projects
+# Local Translation for Current Projects
 
 - CPS/boundary dictionary: the paper is not a Wald-charge paper, but its counterterm analysis is directly relevant to null-boundary variational principles. The important objects are the endpoint/corner conditions at $u=\pm\infty$, the renormalized action, and the balance laws.
 - Charge dictionary: $Q=i\int(f{\cal H}+b{\cal P})$ is the boundary charge. The pair $({\cal H},{\cal P})$ plays the same organizational role as energy and momentum aspects in 3D gravity.
@@ -329,7 +306,7 @@ The authors also identify an $Sp(2,\mathbb R)$-type structure acting on the fiel
 - Presymplectic dictionary: the two-field $\Delta=0$ surface is the closest analogue of a boundary phase-space degeneracy. It is a small laboratory for how null directions, compatibility conditions, and admissible sources enter a would-be charge algebra.
 - Project extension: use the counterterm plus flux-balance logic as a compact model before writing null-infinity or finite-boundary charge notes. The source terms give a clean place to compare charge non-conservation, balance laws, and memory-like jumps; the deformed first-order sector gives a separate place to compare rank-changing symplectic forms.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

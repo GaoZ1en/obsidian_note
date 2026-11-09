@@ -148,7 +148,7 @@ Total deduplicated entries: 136
 | [2610.16650](https://arxiv.org/abs/2610.16650) | gr-qc:replacement | gr-qc | Charge-activated birefringence of an Einstein-tensor-coupled vector field on Reissner--Nordström black holes | Mao-Yuan Wan, Chen Wu |  |
 | [2610.21574](https://arxiv.org/abs/2610.21574) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th | Krylov complexity and oscillatory quantum dynamics in two-field inflation | Tao Li, Lei-Hua Liu, Hai-Bing Fu | 31 pages, 6 figures |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 All 136 listing records screened; focused official abstracts read for ranking. Primary and full categories are the union of official primary-subject and subject fields. Versions and local baselines are metadata, not technical verification.
 

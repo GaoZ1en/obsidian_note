@@ -176,8 +176,7 @@ is exactly what aligns adjacent codimensions. The transgression tower is therefo
 ### Dependency Map for the Main Result
 
 $$\begin{align}
-\text{oriented collars}
-\Rightarrow [F:G] \Rightarrow \partial_{\mathrm{face}}^2=0,
+\text{oriented collars} \Rightarrow [F:G] \Rightarrow \partial_{\mathrm{face}}^2=0,
 \end{align}$$
 
 $$\begin{align}

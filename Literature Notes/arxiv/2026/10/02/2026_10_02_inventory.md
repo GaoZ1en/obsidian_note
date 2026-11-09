@@ -207,7 +207,7 @@ Total deduplicated entries: 195
 | [2609.36792](https://arxiv.org/abs/2609.36792) | math-ph:replacement | math-ph | Analysis of Delay Differential Equations Using the Offset Linear Canonical Transform | Gita Rani Mahato, Manab Kundu |  |
 | [2609.37269](https://arxiv.org/abs/2609.37269) | gr-qc:replacement; hep-th:replacement | cond-mat.quant-gas, gr-qc, hep-th | Active normal-fluid feedback in quantum turbulence from holography | Yu-Ping An, Li Li, Makoto Tsubota, Sebastian Waeber, Hua-Bi Zeng | 10 pages, 4 figures + Supplementary Information |
 
-## Per-ID screening audit
+## Per-ID Screening Audit
 
 Official abstract metadata inspected on 2026-10-02. Original helper rows above are preserved. Primary category is read from the first subject on the abstract page; cross-list categories are retained in source order. Issue versions use the 2026-09-30 18:00 UTC submission cutoff for the October 1 issue. Latest versions may postdate that cutoff. Placements are disjoint; author signals overlap. Full-text retrieval is limited to the frozen high queue.
 

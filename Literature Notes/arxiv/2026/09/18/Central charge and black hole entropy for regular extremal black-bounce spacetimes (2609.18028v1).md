@@ -17,7 +17,7 @@ tags: []
 
 # Verdict
 
-**Incorrect as a covariant-phase-space derivation of the claimed microscopic entropy.** The paper applies pure Einstein and Einstein--Maxwell surface-charge formulas to black-bounce metrics without specifying a diffeomorphism-invariant action and complete matter content for which those metrics are solutions. This is not a cosmetic omission: an xAct component calculation shows that the black-bounce Reissner--Nordström metric has nonzero Ricci scalar for \(\ell\neq0\), whereas four-dimensional source-free Einstein--Maxwell theory has traceless stress tensor and therefore requires \(R=0\).
+**Incorrect as a covariant-phase-space derivation of the claimed microscopic entropy.** The paper applies pure Einstein and Einstein--Maxwell surface-charge formulas to black-bounce metrics without specifying a diffeomorphism-invariant action and complete matter content for which those metrics are solutions. This is not a cosmetic omission: an xAct component calculation shows that the black-bounce Reissner--Nordström metric has nonzero Ricci scalar for $\ell\neq0$, whereas four-dimensional source-free Einstein--Maxwell theory has traceless stress tensor and therefore requires $R=0$.
 
 The statement should be rewritten as:
 
@@ -25,209 +25,185 @@ The statement should be rewritten as:
 
 There is a second independent failure in the static charged sector: the paper reuses a four-dimensional two-form Barnich--Brandt charge density after uplifting to five dimensions. In five dimensions the codimension-two charge density is a three-form and is integrated over a three-dimensional boundary. The displayed RN calculation is therefore dimensionally incomplete even before asking whether the uplift solves a specified five-dimensional theory.
 
-# Why this is high priority
+# Why This Is High Priority
 
 This paper sits directly on the boundary between a correct algebraic Kerr/CFT pattern and an unestablished charge construction. The central question is action-first:
 
-$$
-\text{background solution}
-\longrightarrow
-\text{presymplectic potential}
-\longrightarrow
-\text{surface charge}
-\longrightarrow
+$$\begin{align}
+\text{background solution} \longrightarrow
+\text{presymplectic potential} \longrightarrow
+\text{surface charge} \longrightarrow
 \text{central extension}.
-$$
+\end{align}$$
 
 The source starts at the third arrow. For phenomenological black-bounce metrics, the missing first two arrows cannot be reconstructed from the metric alone.
 
-# Source map
+# Source Map
 
 1. **Black-bounce Kerr:** writes the regularized metric, takes an extremal near-horizon limit, imposes Kerr/CFT falloffs, and reads a Virasoro central term from the Einstein-gravity charge form.
 2. **Black-bounce Kerr--Newman:** adds a Maxwell potential and a compensating gauge transformation, then combines gravitational and Maxwell charge densities.
 3. **Black-bounce Reissner--Nordström:** uplifts the four-dimensional near-horizon metric and gauge fiber to a five-dimensional line element and builds a Virasoro algebra along the fiber.
 4. **Frolov--Thorne temperatures:** rewrites thermal weights in near-horizon variables for the rotating cases and through an assumed left/right split in the RN case.
-5. **Cardy check:** multiplies each displayed \(c_L\) and \(T_L\) to recover the area-law entropy.
+5. **Cardy check:** multiplies each displayed $c_L$ and $T_L$ to recover the area-law entropy.
 
-# Formal near-horizon results
+# Formal Near-Horizon Results
 
-## Extremal black-bounce Kerr
+## Extremal Black-Bounce Kerr
 
 The rotating metric is obtained from Kerr by replacing the Boyer--Lindquist radial function with
 
-$$
+$$\begin{align}
 \rho=\sqrt{r^2+\ell^2}.
-$$
+\end{align}$$
 
-Extremality is imposed by \(a=m\), with horizon coordinate
+Extremality is imposed by $a=m$, with horizon coordinate
 
-$$
+$$\begin{align}
 r_e=\sqrt{m^2-\ell^2},
-$$
+\end{align}$$
 
-so a real horizon requires \(m^2>\ell^2\). The near-horizon metric is written as
+so a real horizon requires $m^2>\ell^2$. The near-horizon metric is written as
 
-$$
-ds^2=\Gamma(\theta)\left(-R^2dT^2+\frac{dR^2}{R^2}+\alpha^2d\theta^2\right)
-+\gamma(\theta)(d\phi_1+kR,dT)^2,
-$$
+$$\begin{align}
+ds^2=\Gamma(\theta)\left(-R^2dT^2+\frac{dR^2}{R^2}+\alpha^2d\theta^2\right) +\gamma(\theta)(d\phi_1+kR,dT)^2,
+\end{align}$$
 
 with
 
-$$
-\Gamma=\frac{m^4(1+\cos^2\theta)}{m^2-\ell^2},
-\qquad
-\gamma=\frac{4m^2\sin^2\theta}{1+\cos^2\theta},
-$$
+$$\begin{align}
+\Gamma=\frac{m^4(1+\cos^2\theta)}{m^2-\ell^2}, \qquad \gamma=\frac{4m^2\sin^2\theta}{1+\cos^2\theta},
+\end{align}$$
 
-$$
-\alpha=\frac{\sqrt{m^2-\ell^2}}{m},
-\qquad
-k=\frac{m}{\sqrt{m^2-\ell^2}}.
-$$
+$$\begin{align}
+\alpha=\frac{\sqrt{m^2-\ell^2}}{m}, \qquad k=\frac{m}{\sqrt{m^2-\ell^2}}.
+\end{align}$$
 
 The proposed Virasoro generators are
 
-$$
+$$\begin{align}
 \xi_n=-inR e^{-in\phi_1}\partial_R-e^{-in\phi_1}\partial_{\phi_1}.
-$$
+\end{align}$$
 
 Using the standard two-derivative Einstein near-horizon expression gives
 
-$$
-c_L=\frac{12m^3}{\sqrt{m^2-\ell^2}},
-\qquad
-T_L=\frac{\sqrt{m^2-\ell^2}}{2\pi m}.
-$$
+$$\begin{align}
+c_L=\frac{12m^3}{\sqrt{m^2-\ell^2}}, \qquad T_L=\frac{\sqrt{m^2-\ell^2}}{2\pi m}.
+\end{align}$$
 
 Their product yields
 
-$$
+$$\begin{align}
 \frac{\pi^2}{3}c_LT_L=2\pi m^2.
-$$
+\end{align}$$
 
-## Extremal black-bounce Kerr--Newman
+## Extremal Black-Bounce Kerr--Newman
 
 The extremality condition is
 
-$$
+$$\begin{align}
 a^2=m^2-Q^2,
-$$
+\end{align}$$
 
-with \(m^2>Q^2\) and \(m^2>\ell^2\). The source reports
+with $m^2>Q^2$ and $m^2>\ell^2$. The source reports
 
-$$
+$$\begin{align}
 c_L=\frac{12m^2\sqrt{m^2-Q^2}}{\sqrt{m^2-\ell^2}},
-$$
+\end{align}$$
 
-$$
-T_L=\frac{\sqrt{m^2-\ell^2}(2m^2-Q^2)}
-{4\pi m^2\sqrt{m^2-Q^2}},
-$$
+$$\begin{align}
+T_L=\frac{\sqrt{m^2-\ell^2}(2m^2-Q^2)} {4\pi m^2\sqrt{m^2-Q^2}},
+\end{align}$$
 
 and hence
 
-$$
+$$\begin{align}
 \frac{\pi^2}{3}c_LT_L=\pi(2m^2-Q^2).
-$$
+\end{align}$$
 
 The Maxwell contribution to the cubic central term is reported to vanish. That result is standard for ordinary Kerr--Newman under the usual boundary conditions, but it cannot simply be transferred to a black-bounce geometry before the additional supporting sector is known.
 
-## Extremal black-bounce Reissner--Nordström
+## Extremal Black-Bounce Reissner--Nordström
 
 The four-dimensional metric is
 
-$$
+$$\begin{align}
 ds^2=-f(r)dt^2+\frac{dr^2}{f(r)}+(r^2+\ell^2)d\Omega_2^2,
-$$
+\end{align}$$
 
-$$
-f(r)=1-\frac{2m}{\sqrt{r^2+\ell^2}}+\frac{Q^2}{r^2+\ell^2},
-\qquad
-A=-\frac{Q}{\sqrt{r^2+\ell^2}}dt.
-$$
+$$\begin{align}
+f(r)=1-\frac{2m}{\sqrt{r^2+\ell^2}}+\frac{Q^2}{r^2+\ell^2}, \qquad A=-\frac{Q}{\sqrt{r^2+\ell^2}}dt.
+\end{align}$$
 
-At \(m=Q\), the near-horizon geometry has
+At $m=Q$, the near-horizon geometry has
 
-$$
-v_1=\frac{Q^4}{Q^2-\ell^2},
-\qquad
-v_2=Q^2,
-\qquad
-A=\frac{Q^2}{\sqrt{Q^2-\ell^2}}R,dT.
-$$
+$$\begin{align}
+v_1=\frac{Q^4}{Q^2-\ell^2}, \qquad v_2=Q^2, \qquad A=\frac{Q^2}{\sqrt{Q^2-\ell^2}}R,dT.
+\end{align}$$
 
 The proposed uplift is
 
-$$
-ds_5^2=ds_4^2+(dy+A)^2,
-\qquad y\sim y+2\pi.
-$$
+$$\begin{align}
+ds_5^2=ds_4^2+(dy+A)^2, \qquad y\sim y+2\pi.
+\end{align}$$
 
 The source then states
 
-$$
-c_L=\frac{6Q^4}{\sqrt{Q^2-\ell^2}},
-\qquad
-T_L=\frac{\sqrt{Q^2-\ell^2}}{2\pi Q^2},
-$$
+$$\begin{align}
+c_L=\frac{6Q^4}{\sqrt{Q^2-\ell^2}}, \qquad T_L=\frac{\sqrt{Q^2-\ell^2}}{2\pi Q^2},
+\end{align}$$
 
 so that
 
-$$
+$$\begin{align}
 \frac{\pi^2}{3}c_LT_L=\pi Q^2.
-$$
+\end{align}$$
 
-# Decisive action-level obstruction
+# Decisive Action-Level Obstruction
 
 For the black-bounce RN metric, xAct gives
 
-$$
-R=
--\frac{2\ell^2\left[Q^2+\rho^2-3m\rho\right]}{\rho^6},
-\qquad
-\rho=\sqrt{r^2+\ell^2}.
-$$
+$$\begin{align}
+R= -\frac{2\ell^2\left[Q^2+\rho^2-3m\rho\right]}{\rho^6}, \qquad \rho=\sqrt{r^2+\ell^2}.
+\end{align}$$
 
-At the extremal horizon \(m=Q\), \(\rho=Q\), this becomes
+At the extremal horizon $m=Q$, $\rho=Q$, this becomes
 
-$$
+$$\begin{align}
 R\big|_{r_e}=\frac{2\ell^2}{Q^4},
-$$
+\end{align}$$
 
-which is nonzero for \(\ell\neq0\).
+which is nonzero for $\ell\neq0$.
 
-By contrast, tracing the source-free Einstein--Maxwell equation gives \(R=0\). Therefore the displayed metric and Maxwell potential do not by themselves solve the theory whose gravitational and Maxwell surface-charge formulas the paper uses. Some additional stress tensor or modified gravitational dynamics is required.
+By contrast, tracing the source-free Einstein--Maxwell equation gives $R=0$. Therefore the displayed metric and Maxwell potential do not by themselves solve the theory whose gravitational and Maxwell surface-charge formulas the paper uses. Some additional stress tensor or modified gravitational dynamics is required.
 
 That missing sector matters twice:
 
 1. it determines whether the black-bounce metric is an on-shell background at all;
 2. its presymplectic potential can contribute to the surface charge and central extension.
 
-The equality \(c_{\rm gauge}=0\) for the displayed Maxwell field does not show that the complete non-gravitational contribution vanishes.
+The equality $c_{\rm gauge}=0$ for the displayed Maxwell field does not show that the complete non-gravitational contribution vanishes.
 
-# Charge-algebra gaps
+# Charge-Algebra Gaps
 
-## Triviality is not commutativity
+## Triviality Is Not Commutativity
 
-The paper says that \(Q_{\partial_T}\) and certain gauge charges are trivial because their generators commute with the other ASG generators. This inference is false. A central or commuting generator can carry a nonzero charge; ordinary electric charge is the immediate example. Triviality requires the associated charge variation to vanish on the allowed phase space, not merely a vanishing commutator.
+The paper says that $Q_{\partial_T}$ and certain gauge charges are trivial because their generators commute with the other ASG generators. This inference is false. A central or commuting generator can carry a nonzero charge; ordinary electric charge is the immediate example. Triviality requires the associated charge variation to vanish on the allowed phase space, not merely a vanishing commutator.
 
 For the Kerr/CFT phase space, a zero-energy condition may be imposed as an additional boundary constraint, but it must be stated and checked. It does not follow from algebraic commutativity.
 
-## Five-dimensional form degree
+## Five-Dimensional Form Degree
 
 The displayed four-dimensional expression has the structure
 
-$$
-k_\xi^{\rm grav}\sim
-\epsilon_{\alpha\beta\mu\nu}(\cdots)\,dx^\alpha\wedge dx^\beta,
-$$
+$$\begin{align}
+k_\xi^{\rm grav}\sim \epsilon_{\alpha\beta\mu\nu}(\cdots)\,dx^\alpha\wedge dx^\beta,
+\end{align}$$
 
 which is a two-form suitable for integration over a two-dimensional codimension-two surface in four dimensions.
 
 After the uplift, a five-dimensional surface charge must be a three-form integrated over a three-dimensional codimension-two surface. The source nevertheless repeats the four-index epsilon and two-form expression while calling it the five-dimensional generalization. Thus the RN central integral is not correctly defined as written.
 
-## Missing phase-space checks
+## Missing Phase-Space Checks
 
 The paper lists falloffs and leading vector fields but does not establish:
 
@@ -240,57 +216,53 @@ The paper lists falloffs and leading vector fields but does not establish:
 
 Without these, the vector-field Lie bracket is not yet a centrally extended algebra of Hamiltonian charges.
 
-# RN temperature normalization
+# RN Temperature Normalization
 
 In the appendix, the source defines
 
-$$
-\omega_L=\frac12(\omega+k),
-\qquad
-\omega_R=\frac12(\omega-k),
-$$
+$$\begin{align}
+\omega_L=\frac12(\omega+k), \qquad \omega_R=\frac12(\omega-k),
+\end{align}$$
 
 and then reads
 
-$$
-T_L=\frac{T_H}{1-\Phi_H},
-\qquad
-T_R=\frac{T_H}{1+\Phi_H}.
-$$
+$$\begin{align}
+T_L=\frac{T_H}{1-\Phi_H}, \qquad T_R=\frac{T_H}{1+\Phi_H}.
+\end{align}$$
 
-This split is a choice, not a consequence of the displayed near-horizon coordinate transformation. Rescaling the fiber coordinate or redefining the left-moving quantum number rescales \(c_L\) and \(T_L\) inversely. A valid RN/CFT construction must fix the circle radius, gauge normalization, charge quantization, Newton constant relation, and five-dimensional action together. The paper fixes \(y\sim y+2\pi\) and \(G_5=2\pi\) by convention but does not derive the uplift as a solution of that theory.
+This split is a choice, not a consequence of the displayed near-horizon coordinate transformation. Rescaling the fiber coordinate or redefining the left-moving quantum number rescales $c_L$ and $T_L$ inversely. A valid RN/CFT construction must fix the circle radius, gauge normalization, charge quantization, Newton constant relation, and five-dimensional action together. The paper fixes $y\sim y+2\pi$ and $G_5=2\pi$ by convention but does not derive the uplift as a solution of that theory.
 
-# Independent checks
+# Independent Checks
 
 ## Verified with xAct
 
 Using the four-dimensional black-bounce RN metric exactly as displayed, xCoba computed
 
-$$
+$$\begin{align}
 R=-\frac{2\ell^2(Q^2+\rho^2-3m\rho)}{\rho^6}.
-$$
+\end{align}$$
 
-This proves that the \(\ell\neq0\) background is not a source-free Einstein--Maxwell solution. The check used the stated signature and coordinates \((t,r,\theta,\phi)\); no field equation was assumed.
+This proves that the $\ell\neq0$ background is not a source-free Einstein--Maxwell solution. The check used the stated signature and coordinates $(t,r,\theta,\phi)$; no field equation was assumed.
 
 ## Verified with Mathematica
 
-Under \(m>\ell\ge0\), \(m^2>Q^2\), and \(Q>\ell\ge0\):
+Under $m>\ell\ge0$, $m^2>Q^2$, and $Q>\ell\ge0$:
 
 - the standard near-horizon geometric integral reproduces the paper's Kerr and Kerr--Newman central-charge expressions;
-- all three displayed Cardy products reduce to \(2\pi m^2\), \(\pi(2m^2-Q^2)\), and \(\pi Q^2\);
-- the extremal RN limit of \(T_H/(1-\Phi_H)\) equals \(\sqrt{Q^2-\ell^2}/(2\pi Q^2)\), while \(T_H/(1+\Phi_H)\to0\).
+- all three displayed Cardy products reduce to $2\pi m^2$, $\pi(2m^2-Q^2)$, and $\pi Q^2$;
+- the extremal RN limit of $T_H/(1-\Phi_H)$ equals $\sqrt{Q^2-\ell^2}/(2\pi Q^2)$, while $T_H/(1+\Phi_H)\to0$.
 
 These are algebraic checks inside the source's assumed formulas. They do not verify the underlying covariant charges.
 
 ## Assumptions
 
-- \(m^2>\ell^2\) for rotating horizons;
-- \(m^2>Q^2\) in the rotating charged case;
-- \(Q^2>\ell^2\) for the extremal RN horizon;
-- positive \(m\) and \(Q\) when taking square-root branches;
+- $m^2>\ell^2$ for rotating horizons;
+- $m^2>Q^2$ in the rotating charged case;
+- $Q^2>\ell^2$ for the extremal RN horizon;
+- positive $m$ and $Q$ when taking square-root branches;
 - the stated near-horizon coordinate limits.
 
-## Not verified
+## Not Verified
 
 - any complete action supporting the black-bounce backgrounds;
 - the missing supporting-field symplectic and charge terms;
@@ -299,13 +271,13 @@ These are algebraic checks inside the source's assumed formulas. They do not ver
 - consistency of the five-dimensional uplift as a solution;
 - the dynamical existence, unitarity, modular invariance, or Cardy regime of a dual CFT.
 
-# Source-level errors and typos
+# Source-Level Errors and Typos
 
-- In the Kerr thermal factor, one equation writes \(\Omega_H m\) where the azimuthal quantum number is \(\Omega_H\bar m\).
-- In the Kerr--Newman extremal-temperature line, the limit is printed as \(a\to\sqrt{Q^2-m^2}\), inconsistent with the preceding and following condition \(a\to\sqrt{m^2-Q^2}\).
-- One Kerr--Newman temperature denominator contains \(m^2-L^2\) instead of \(m^2-\ell^2\).
+- In the Kerr thermal factor, one equation writes $\Omega_H m$ where the azimuthal quantum number is $\Omega_H\bar m$.
+- In the Kerr--Newman extremal-temperature line, the limit is printed as $a\to\sqrt{Q^2-m^2}$, inconsistent with the preceding and following condition $a\to\sqrt{m^2-Q^2}$.
+- One Kerr--Newman temperature denominator contains $m^2-L^2$ instead of $m^2-\ell^2$.
 - The five-dimensional charge density is copied in four-dimensional two-form notation.
 
-# Bottom line
+# Bottom Line
 
 The entropy equalities are real algebraic cancellations, but they are not yet a microscopic derivation. The paper has found a suggestive Kerr/CFT-shaped pattern for the chosen near-horizon metrics. It has not shown that the relevant Virasoro generators possess the claimed Hamiltonian charges in any complete black-bounce theory, and the RN uplift calculation is malformed at the level of differential-form degree.

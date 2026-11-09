@@ -255,4 +255,3 @@ Total deduplicated entries: 244
 | [2608.26785](https://arxiv.org/abs/2608.26785) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th | Gravitational Lensing of Hayward Black Holes with EFT-Corrected Photon Propagation | Takamasa Kanai | 25 pages, 6 figures |
 | [2608.27188](https://arxiv.org/abs/2608.27188) | math-ph:replacement | math-ph, math.MP | Multiscale Loop Vertex Expansion for Cumulants, the $\phi^4_2$ Model | Vincent Rivasseau | 30 pages, 5 figures |
 | [2608.27410](https://arxiv.org/abs/2608.27410) | hep-th:replacement | hep-th | Doubly-scaled planar $\mathcal{N} = 4$ SYM & Carroll Holography | Arjun Bagchi, Prateksh Dhivakar, Alok Laddha, and Partha Paul | 46 pages, 1 figure; v2: revised abstract, minor typos |
-

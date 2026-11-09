@@ -13,13 +13,13 @@ summary: "重建双纵向 canonical spin Ward 系统、闭球 Killing flux 与�
 tags: []
 ---
 
-# Curvature-driven spin transport in rank-two string-Carroll hydrodynamics
+# Curvature-Driven Spin Transport in Rank-Two String-Carroll Hydrodynamics
 
 本文的可复用结果是一个固定 canonical pseudo-gauge 的曲率—自旋 Ward 系统，及其在双纵向近视界极限中的受控球对称响应。这里的纵向自旋是 Lorentz boost 分量；施加 Frenkel 条件会将其去掉。通道比例随半径变化的部分只是基底转换，真正的物质流响应由纵向曲率和有符号自旋通量共同决定。结果是指定 ideal closure 内的一阶自旋系数，不能称为完整因果流体理论或一般视界动力学。
 
 日总览：[[2026_09_03_overview]]。来源为 [官方 v1](https://arxiv.org/abs/2609.01634v1)，PDF 26 页及完整 TeX 均已获取。双栏正文和长公式链采用 monograph mode。
 
-## Source-derived：完整结构与推导路径
+## Source-Derived：完整结构与推导路径
 
 | 源部分 | 工作、输入与后续依赖 |
 |---|---|
@@ -39,12 +39,9 @@ tags: []
 
 取 $(-,+,+,+)$，单位权重反对称，曲率为
 
-$$
-R^\rho{}_{\sigma\mu\nu}
-=2\partial_{[\mu}\Gamma^\rho_{\nu]\sigma}
-+2\Gamma^\rho_{[\mu|\lambda|}\Gamma^\lambda_{\nu]\sigma},
-\qquad [\nabla_\mu,\nabla_\nu]V^\rho=R^\rho{}_{\sigma\mu\nu}V^\sigma.
-$$
+$$\begin{align}
+R^\rho{}_{\sigma\mu\nu} =2\partial_{[\mu}\Gamma^\rho_{\nu]\sigma} +2\Gamma^\rho_{[\mu|\lambda|}\Gamma^\lambda_{\nu]\sigma}, \qquad [\nabla_\mu,\nabla_\nu]V^\rho=R^\rho{}_{\sigma\mu\nu}V^\sigma.
+\end{align}$$
 
 | 记号 | 定义与边界 |
 |---|---|
@@ -67,36 +64,29 @@ $$
 
 以 vielbein 和 metric-compatible spin connection 为独立源：
 
-$$
-\delta W=\int e\left(T^\mu{}_I\delta\widehat E_\mu{}^I
--\frac12S^\mu{}_{IJ}\delta\omega_\mu{}^{IJ}\right).
-$$
+$$\begin{align}
+\delta W=\int e\left(T^\mu{}_I\delta\widehat E_\mu{}^I -\frac12S^\mu{}_{IJ}\delta\omega_\mu{}^{IJ}\right).
+\end{align}$$
 
 自旋流只在末两指标反对称，第一指标是通量方向。先在 Riemann–Cartan 几何分部积分，散度使用 $\mathcal D_\mu-\mathcal G_\mu$，$\mathcal G$ 是 torsion trace；再把物理 torsion 置零，得到
 
-$$
-\nabla_\mu T^{\mu\nu}=-\frac12R^\nu{}_{\alpha\beta\gamma}S^{\alpha\beta\gamma},
-\qquad
-\nabla_\lambda S^{\lambda\mu\nu}=-2T^{[\mu\nu]}.
-$$
+$$\begin{align}
+\nabla_\mu T^{\mu\nu}=-\frac12R^\nu{}_{\alpha\beta\gamma}S^{\alpha\beta\gamma}, \qquad \nabla_\lambda S^{\lambda\mu\nu}=-2T^{[\mu\nu]}.
+\end{align}$$
 
 因此分别写 $\nabla T=0$、$\nabla S=0$ 会漏掉曲率交换项。对 Killing 场，
 
-$$
-\mathcal I_\xi^\mu=T^\mu{}_\nu\xi^\nu+
-\frac12S^{\mu\alpha\beta}\nabla_\alpha\xi_\beta,\qquad
-\nabla_\mu\mathcal I_\xi^\mu=0.
-$$
+$$\begin{align}
+\mathcal I_\xi^\mu=T^\mu{}_\nu\xi^\nu+ \frac12S^{\mu\alpha\beta}\nabla_\alpha\xi_\beta,\qquad \nabla_\mu\mathcal I_\xi^\mu=0.
+\end{align}$$
 
 推导分两步：$\nabla\xi$ 的反对称部分使应力和 spin divergence 抵消；$\nabla_\mu\nabla_\alpha\xi_\beta=R_{\beta\alpha\mu\gamma}\xi^\gamma$ 再抵消曲率力。这是本文最适合 charge/balance-law 研究复用的对象，而非单独的物质能流。
 
 对 $\Phi^{\lambda\mu\nu}=-\Phi^{\lambda\nu\mu}$，定义
 
-$$
-B^{\lambda\mu\nu}
-=\frac12(\Phi^{\lambda\mu\nu}+\Phi^{\mu\nu\lambda}
-+\Phi^{\nu\mu\lambda}),\quad B^{\lambda\mu\nu}=-B^{\mu\lambda\nu}.
-$$
+$$\begin{align}
+B^{\lambda\mu\nu} =\frac12(\Phi^{\lambda\mu\nu}+\Phi^{\mu\nu\lambda} +\Phi^{\nu\mu\lambda}),\quad B^{\lambda\mu\nu}=-B^{\mu\lambda\nu}.
+\end{align}$$
 
 $T'=T+\nabla B,\ S'=S-\Phi$ 导致 $\mathcal I'_\xi-\mathcal I_\xi=\nabla_\lambda U_\xi^{\lambda\mu}$，$U_\xi^{\lambda\mu}=B^{\lambda\mu}{}_\nu\xi^\nu$。stationary 径向 flux 的时间导数消失，反对称性消去纯径向项，闭球上的角向全导数积分为零。
 
@@ -106,94 +96,81 @@ $T'=T+\nabla B,\ S'=S-\Phi$ 导致 $\mathcal I'_\xi-\mathcal I_\xi=\nabla_\lambd
 
 缩放 $\widehat E^A_\mu=\epsilon E^A_\mu,\ \widehat E^a_\mu=E^a_\mu$ 得
 
-$$
-g_{\mu\nu}=\epsilon^2V_{\mu\nu}+\Pi_{\mu\nu},\quad
-g^{\mu\nu}=\epsilon^{-2}V^{\mu\nu}+\Pi^{\mu\nu}.
-$$
+$$\begin{align}
+g_{\mu\nu}=\epsilon^2V_{\mu\nu}+\Pi_{\mu\nu},\quad g^{\mu\nu}=\epsilon^{-2}V^{\mu\nu}+\Pi^{\mu\nu}.
+\end{align}$$
 
 互补投影满足 $P_\parallel+P_\perp=1$、$P_\parallel P_\perp=0$，秩分别为 2 和 $d-2$。leading $h_{\mu\nu}$ 的核是 Lorentzian 纵向平面，由另一个退化张量 $v_{\mu\nu}$ 提供该平面上的几何，不能把 $h^{\mu\nu}$ 当作 $h_{\mu\nu}$ 的矩阵逆。
 
-boost 的三角结构为 $\delta e^A=\Lambda^A{}_ae^a,\ \delta e^a=0$；$h_{\mu\nu}$ 和 $v^{\mu\nu}$ 不变，互补块改变。spin 的末两指标分解为 $LL,LT,TT$，在四维有 $1+4+1=6$ 分量；加上未投影的通量指标，一般 spin current 有 24 分量，而不是 6。
+Boost 的三角结构为 $\delta e^A=\Lambda^A{}_ae^a,\ \delta e^a=0$；$h_{\mu\nu}$ 和 $v^{\mu\nu}$ 不变，互补块改变。spin 的末两指标分解为 $LL,LT,TT$，在四维有 $1+4+1=6$ 分量；加上未投影的通量指标，一般 spin current 有 24 分量，而不是 6。
 
 从 Christoffel 式直接得到
 
-$$
-\Gamma=\epsilon^{-2}\mathcal A+\mathcal C+\epsilon^2\mathcal B,\quad
-\mathcal A^\rho{}_{\mu\nu}=V^{\rho\lambda}\Pi_{\lambda\mu\nu}.
-$$
+$$\begin{align}
+\Gamma=\epsilon^{-2}\mathcal A+\mathcal C+\epsilon^2\mathcal B,\quad \mathcal A^\rho{}_{\mu\nu}=V^{\rho\lambda}\Pi_{\lambda\mu\nu}.
+\end{align}$$
 
 其中 $\Pi_{\lambda\mu\nu}$ 是 Christoffel 第一类导数组合。frame 的偶数展开意味着有限项为 $\Gamma^{(0)}=\mathcal A_{(2)}+\mathcal C_{(0)}$；漏掉 $\mathcal A_{(2)}$ 会错误得到简单直积联络。由于 $\det\widehat E=\epsilon^2\det E$，且 $\epsilon$ 与时空无关，$\Gamma^{(-2)\rho}{}_{\rho\nu}=0$。
 
-raised Riemann 可有 $\epsilon^{-4}$，但该项的第一个上指标纵向，故
+Raised Riemann 可有 $\epsilon^{-4}$，但该项的第一个上指标纵向，故
 
-$$
+$$\begin{align}
 h_{\nu\rho}R^{(-4)\rho}{}_{\alpha\beta\gamma}=0.
-$$
+\end{align}$$
 
 先把 stress 方程写成 mixed 形式、曲率写成全下指标，首次可能的曲率力是 $\epsilon^{-2}$。降指标时的 $kR^{(-4)}$、下一阶的 $\ell R^{(-4)}$ 仍须保留；不是宣布所有负阶曲率都消失。
 
-### balanced sector 与本构选择
+### Balanced Sector 与本构选择
 
 固定 $T^\mu{}_\nu=O(1)$，令 $S=O(\varsigma\epsilon^p)$。一般几何的 induced stress divergence 为 $\varsigma\epsilon^{-2}$，曲率力为 $\varsigma\epsilon^{p-2}$：$p>0$ 在首阶 passive，$p=0$ balanced，$p<0$ 需更奇异应力。这是指定有限流及首个一般阶下的唯一性，不排除偶然零点延迟作用或别的非解析 scaling。
 
 采用
 
-$$
-T^{\mu\nu}=w\widehat u^\mu\widehat u^\nu+pg^{\mu\nu}
-+O(\varsigma^2),\qquad
-S^{\lambda\mu\nu}=\widehat u^\lambda\Omega^{\mu\nu},
-\quad\Omega^{\mu\nu}=\varsigma\epsilon\Sigma^{\mu\nu}+\cdots.
-$$
+$$\begin{align}
+T^{\mu\nu}=w\widehat u^\mu\widehat u^\nu+pg^{\mu\nu} +O(\varsigma^2),\qquad S^{\lambda\mu\nu}=\widehat u^\lambda\Omega^{\mu\nu}, \quad\Omega^{\mu\nu}=\varsigma\epsilon\Sigma^{\mu\nu}+\cdots.
+\end{align}$$
 
 应力里的 $\mathcal E,\widehat u$ 可以有 induced 一阶响应；排除的是显式线性 spin-potential 项。二次项 $\mu_s\Omega$ 在独立 $\varsigma$ 展开中被一致去除，不能只按 $\epsilon$ 阶数在不同自旋阶间比较大小。
 
 模型不施加 $\widehat u_\mu\Omega^{\mu\nu}=0$。它把 boost 和 rotation susceptibilities 独立取为 $\chi_B<0,\chi_R>0$；这是引文约定下必要的低动量符号，未证明双曲性。物理正交 frame 的 $LL,LT,TT$ 分别按 $\varsigma\epsilon^3,\varsigma\epsilon^2,\varsigma\epsilon$ 缩放，所以有限 contracted density 不等于有限 parent polarization。
 
-regular branch 定义为 $\Gamma^{(-2)}=0$。这消去相应负阶曲率，得到 $\bar\nabla h=0,\bar\nabla v^{-1}=0$ 和 leading convective spin 方程。双纵向平面可在速度之外选单位空间向量 $z$，故存在独立纵向动量投影；rank-one 无对应的 $LL$ bivector。几何计数不证明两套本构动力学完全等价。
+Regular branch 定义为 $\Gamma^{(-2)}=0$。这消去相应负阶曲率，得到 $\bar\nabla h=0,\bar\nabla v^{-1}=0$ 和 leading convective spin 方程。双纵向平面可在速度之外选单位空间向量 $z$，故存在独立纵向动量投影；rank-one 无对应的 $LL$ bivector。几何计数不证明两套本构动力学完全等价。
 
 ## IV：球对称外视界、局部基底和首次曲率力
 
 取固定背景
 
-$$
-ds^2=-e^{2\psi(r)}F(r)dt^2+\frac{dr^2}{F(r)}+r^2d\Omega_2^2,
-\quad F(r_h)=0,\quad f_1>0.
-$$
+$$\begin{align}
+ds^2=-e^{2\psi(r)}F(r)dt^2+\frac{dr^2}{F(r)}+r^2d\Omega_2^2, \quad F(r_h)=0,\quad f_1>0.
+\end{align}$$
 
 面积半径必须是光滑单调的局部坐标，$\psi_h$ 有限。ingoing 变换 $dv=dt+e^{-\psi}dr/F$ 消去 $dr^2$，再令 $r=r_h+\lambda\rho$：
 
-$$
-ds^2=r_h^2d\Omega_2^2+\lambda
-[-N_h^2f_1\rho\,dv^2+2N_h\,dv\,d\rho+2r_h\rho\,d\Omega_2^2]+\cdots.
-$$
+$$\begin{align}
+ds^2=r_h^2d\Omega_2^2+\lambda [-N_h^2f_1\rho\,dv^2+2N_h\,dv\,d\rho+2r_h\rho\,d\Omega_2^2]+\cdots.
+\end{align}$$
 
 $\kappa=N_hf_1/2$。leading 纵向块 $q=-2N_h\kappa\rho\,dv^2+2N_h\,dv\,d\rho$ 是二维 ingoing Rindler，$\det q=-N_h^2$。leading sphere 无纵向依赖，使 $\mathcal A_{(0)}=0$，但其下一阶径向变化仍进入有限联络，故不能把整个有限连接看作 Rindler×sphere 直积。
 
 球对称允许
 
-$$
-\Sigma=s_\parallel\varepsilon_\parallel+s_\perp\varepsilon_\perp,\quad
-\varepsilon_\parallel^{v\rho}=N_h^{-1},\quad
-\varepsilon_\perp^{\theta\phi}=(r_h^2\sin\theta)^{-1}.
-$$
+$$\begin{align}
+\Sigma=s_\parallel\varepsilon_\parallel+s_\perp\varepsilon_\perp,\quad \varepsilon_\parallel^{v\rho}=N_h^{-1},\quad \varepsilon_\perp^{\theta\phi}=(r_h^2\sin\theta)^{-1}.
+\end{align}$$
 
 不存在 $SO(3)$ 不变的非零 sphere 切向向量，所以 mixed sector 消失。局部基底改用 $N_\epsilon^{-1},r_\epsilon^{-2}$；沿径向流的 frame 导数恰好抵消联络迹，两个局部 bivector 都平行输运。
 
 由 $\nabla_\lambda S^{\lambda\mu\nu}=0$，
 
-$$
-\widehat D\bar s_X+\widehat\Theta\bar s_X=0,\quad
-\widehat D\log(\bar s_\perp/\bar s_\parallel)=0.
-$$
+$$\begin{align}
+\widehat D\bar s_X+\widehat\Theta\bar s_X=0,\quad \widehat D\log(\bar s_\perp/\bar s_\parallel)=0.
+\end{align}$$
 
 最后一式需分母非零；有符号比例可在固定符号区间使用对数。固定视界基底的系数则为
 
-$$
-\widetilde s_\parallel=\frac{N_h}{N_\epsilon}\bar s_\parallel,\quad
-\widetilde s_\perp=\frac{r_h^2}{r_\epsilon^2}\bar s_\perp,\quad
-\frac{\mathcal R_s^{(h)}(\rho)}{\mathcal R_s^{(h)}(0)}
-=\frac{N_\epsilon}{N_h}\left(\frac{r_h}{r_\epsilon}\right)^2.
-$$
+$$\begin{align}
+\widetilde s_\parallel=\frac{N_h}{N_\epsilon}\bar s_\parallel,\quad \widetilde s_\perp=\frac{r_h^2}{r_\epsilon^2}\bar s_\perp,\quad \frac{\mathcal R_s^{(h)}(\rho)}{\mathcal R_s^{(h)}(0)} =\frac{N_\epsilon}{N_h}\left(\frac{r_h}{r_\epsilon}\right)^2.
+\end{align}$$
 
 这个变化不含独立输运系数。parent 正交 frame 比例为 $\epsilon^{-2}\bar s_\perp/\bar s_\parallel$，绝对值一般无有限收缩极限，但固定 $\epsilon$ 的径向归一化变化仍为 1。它比较 boost 与 rotation，不是两个可直接测量的 rest-frame 空间极化。
 
@@ -201,76 +178,65 @@ $$
 
 ### 为什么不是 $O(\lambda)$ 的力
 
-unexpanded 基底的曲率为
+Unexpanded 基底的曲率为
 
-$$
-R_{vrvr}=\frac{e^{2\psi}}2
-[F''+3\psi'F'+2F(\psi''+\psi'^2)].
-$$
+$$\begin{align}
+R_{vrvr}=\frac{e^{2\psi}}2 [F''+3\psi'F'+2F(\psi''+\psi'^2)].
+\end{align}$$
 
 坐标变换中每个下 $\rho$ 指标带 $\lambda$，于是
 
-$$
-R_{v\rho v\rho}=\frac{\lambda^2N_h^2}2\mathcal K_h+O(\lambda^3),
-\qquad \mathcal K_h=f_2+3f_1\psi_1.
-$$
+$$\begin{align}
+R_{v\rho v\rho}=\frac{\lambda^2N_h^2}2\mathcal K_h+O(\lambda^3), \qquad \mathcal K_h=f_2+3f_1\psi_1.
+\end{align}$$
 
 设 $\mathcal F$ 为物理力中 $\varsigma$ 的系数，
 
-$$
-\mathcal F_v=-\frac{\lambda^2N_h}2\mathcal K_hu^\rho s_\parallel,\quad
-\mathcal F_\rho=\frac{\lambda^2N_h}2\mathcal K_hu^vs_\parallel
-+O(\lambda^3).
-$$
+$$\begin{align}
+\mathcal F_v=-\frac{\lambda^2N_h}2\mathcal K_hu^\rho s_\parallel,\quad \mathcal F_\rho=\frac{\lambda^2N_h}2\mathcal K_hu^vs_\parallel +O(\lambda^3).
+\end{align}$$
 
 因此 $u^i\mathcal F_i=0$、$z^i\mathcal F_i=\lambda^2\mathcal K_hs_\parallel/2+O(\lambda^3)$。横向 rotation 分量不进入该 warped-product 曲率收缩。单位纵向面积 bivector 定义的标量 $\mathcal R_h^{(L)}=\frac14R\varepsilon_L\varepsilon_L=\mathcal K_h/2$ 使这一系数可在正则基底坐标变换下解释。
 
-## V 与 Appendix B：第一积分、声点与 matched response
+## V 与 Appendix B：第一积分、声点与 Matched Response
 
-leading 球对称方程为
+Leading 球对称方程为
 
-$$
-D\mathcal E+w\Theta=0,\quad wa_\parallel+z^i\partial_ip=0,\quad
-Ds_X+\Theta s_X=0.
-$$
+$$\begin{align}
+D\mathcal E+w\Theta=0,\quad wa_\parallel+z^i\partial_ip=0,\quad Ds_X+\Theta s_X=0.
+\end{align}$$
 
 定义 $\mathcal N(\mathcal E)=\exp\int_{\mathcal E_h}^{\mathcal E}dE/w(E)$，则 $D(s_X/\mathcal N)=0$。stationary 时 $u^\rho\mathcal N,\ u^\rho s_X,\ \tau^\rho{}_v$ 各为常数。ingoing 正则的视界速度为 $u_h^v=e^{\eta_h}/\sqrt2$、$u_h^\rho=-e^{-\eta_h}/(\sqrt2N_h)$，无需额外把两个视界自旋幅度相关联。
 
 令 $y=N_h\kappa\rho e^{2\eta},x=N_h\kappa\rho e^{2\eta_h}$，并记 $R_\mathcal N=\mathcal N/\mathcal N_h,\ R_w=w/w_h,\ H=R_w/R_\mathcal N^2$。两条 flux ratio 给
 
-$$
-R_\mathcal Ne^{-(\eta-\eta_h)}(1-y)=1,\qquad
-R_we^{-2(\eta-\eta_h)}(1-y^2)=1.
-$$
+$$\begin{align}
+R_\mathcal Ne^{-(\eta-\eta_h)}(1-y)=1,\qquad R_we^{-2(\eta-\eta_h)}(1-y^2)=1.
+\end{align}$$
 
 在 $H$ 单调可逆的区间，
 
-$$
-\mathcal E(y)=H^{-1}\left(\frac{1-y}{1+y}\right),\quad
-e^{\eta-\eta_h}=R_\mathcal N(1-y),\quad
-x=\frac{y}{R_\mathcal N^2(1-y)^2}.
-$$
+$$\begin{align}
+\mathcal E(y)=H^{-1}\left(\frac{1-y}{1+y}\right),\quad e^{\eta-\eta_h}=R_\mathcal N(1-y),\quad x=\frac{y}{R_\mathcal N^2(1-y)^2}.
+\end{align}$$
 
 所以“解析”是一个热力学积分加局部函数反演，不是任意状态方程都有初等闭式。
 
-affine 本构 $p=\alpha\mathcal E+\Pi$、$0\le\alpha<1,\ w>0$ 给出初等参数解
+Affine 本构 $p=\alpha\mathcal E+\Pi$、$0\le\alpha<1,\ w>0$ 给出初等参数解
 
-$$
-R_w=\left(\frac{1+y}{1-y}\right)^{(1+\alpha)/(1-\alpha)},\quad
-\frac{s_X}{s_{Xh}}=\left(\frac{1+y}{1-y}\right)^{1/(1-\alpha)},
-$$
+$$\begin{align}
+R_w=\left(\frac{1+y}{1-y}\right)^{(1+\alpha)/(1-\alpha)},\quad \frac{s_X}{s_{Xh}}=\left(\frac{1+y}{1-y}\right)^{1/(1-\alpha)},
+\end{align}$$
 
-$$
-e^{\eta-\eta_h}=(1+y)^{1/(1-\alpha)}(1-y)^{-\alpha/(1-\alpha)},\quad
-x=y(1-y)^{2\alpha/(1-\alpha)}(1+y)^{-2/(1-\alpha)}.
-$$
+$$\begin{align}
+e^{\eta-\eta_h}=(1+y)^{1/(1-\alpha)}(1-y)^{-\alpha/(1-\alpha)},\quad x=y(1-y)^{2\alpha/(1-\alpha)}(1+y)^{-2/(1-\alpha)}.
+\end{align}$$
 
-stationary 微分系统的行列式是 $w\Delta_s$，其中
+Stationary 微分系统的行列式是 $w\Delta_s$，其中
 
-$$
-\Delta_s=\frac{e^{-2\eta}}{2N_h^2}D_0(y),\quad
-D_0=(1-y)^2-\alpha(1+y)^2.
-$$
+$$\begin{align}
+\Delta_s=\frac{e^{-2\eta}}{2N_h^2}D_0(y),\quad D_0=(1-y)^2-\alpha(1+y)^2.
+\end{align}$$
 
 首个声点 $y_s=(1-\sqrt\alpha)/(1+\sqrt\alpha)$。本文只给出从视界到该点前的支；$\alpha=1$、穿越 sonic layer 和 global accretion 需新分析。dust 有 $x=y/(1+y)^2$ 的初等反演，正则支 $0\le x<1/4$；这不解决声点匹配。
 
@@ -278,18 +244,15 @@ $$
 
 固定背景、本构、$\mathcal E_h,\eta_h$，定义 $\Delta_{\rm sp}X=X(\epsilon,\varsigma)-X(\epsilon,0)$。纯几何修正抵消，因力已带 $\lambda^2$，其系数使用 leading spinless flow：
 
-$$
-\partial_\rho\Delta_{\rm sp}\tau^\rho{}_v
-=-\varsigma\frac{\lambda^2N_h}2\mathcal K_hj_\parallel
-+O(\varsigma\lambda^3,\varsigma^2),\qquad j_\parallel=u^\rho s_\parallel.
-$$
+$$\begin{align}
+\partial_\rho\Delta_{\rm sp}\tau^\rho{}_v =-\varsigma\frac{\lambda^2N_h}2\mathcal K_hj_\parallel +O(\varsigma\lambda^3,\varsigma^2),\qquad j_\parallel=u^\rho s_\parallel.
+\end{align}$$
 
 匹配视界值后
 
-$$
-\mathcal G_{\rm sp}=1+\varsigma g(\rho),\quad
-g=-\frac{\lambda^2N_h\mathcal K_hj_\parallel}{2\Phi_{E,h}}\rho.
-$$
+$$\begin{align}
+\mathcal G_{\rm sp}=1+\varsigma g(\rho),\quad g=-\frac{\lambda^2N_h\mathcal K_hj_\parallel}{2\Phi_{E,h}}\rho.
+\end{align}$$
 
 总 Killing flux 的 spin 项补偿物质 flux 的径向变化。不要把物质流减少直接解释为破坏守恒。
 
@@ -297,26 +260,21 @@ $$
 
 在固定半径 $x$ 下，
 
-$$
-y_{[1]}=-\frac{2g\,y_0(1-y_0^2)}{D_0},\qquad
-\frac{w_{[1]}}{w^{(0)}}=-\frac{(1+\alpha)g}{1-\alpha}
-\left(1+\frac{4y_0}{D_0}\right),
-$$
+$$\begin{align}
+y_{[1]}=-\frac{2g\,y_0(1-y_0^2)}{D_0},\qquad \frac{w_{[1]}}{w^{(0)}}=-\frac{(1+\alpha)g}{1-\alpha} \left(1+\frac{4y_0}{D_0}\right),
+\end{align}$$
 
-$$
-\eta_{[1]}=-\frac g{1-\alpha}
-\left[1+\frac{2y_0((1+\alpha)+(\alpha-1)y_0)}{D_0}\right].
-$$
+$$\begin{align}
+\eta_{[1]}=-\frac g{1-\alpha} \left[1+\frac{2y_0((1+\alpha)+(\alpha-1)y_0)}{D_0}\right].
+\end{align}$$
 
 推导来自 $d\ln x/dy=D_0/[(1-\alpha)y(1-y^2)]$ 和固定 $x$ 的一阶变分，pole 是 sonic expansion 失效的诊断。需要 $|\varsigma g|\ll1$ 且远离 $D_0=0$。一阶 spin 密度自身仍在无自旋 leading 背景上求值；再代入其 induced 一阶修正会不受控地拾取部分二阶项。
 
 局部标量响应为
 
-$$
-\Delta_{\rm sp}\left(a_\parallel+\frac{z^i\partial_ip}{w}\right)
-=\frac{\varsigma\lambda^2}2\mathcal K_h\frac{s_\parallel}{w}
-+O(\varsigma\lambda^3,\varsigma^2).
-$$
+$$\begin{align}
+\Delta_{\rm sp}\left(a_\parallel+\frac{z^i\partial_ip}{w}\right) =\frac{\varsigma\lambda^2}2\mathcal K_h\frac{s_\parallel}{w} +O(\varsigma\lambda^3,\varsigma^2).
+\end{align}$$
 
 只有 dust 才可直接把右侧认作加速度变化；有压流体还须包括压力与焓的变化。
 
@@ -324,26 +282,19 @@ $$
 
 标准 EMD 坐标 $R$ 不等于面积半径。令 $\Xi=1+a^2,\ B=1-R_-/R,\ H_R=1-R_-/(\Xi R)$：
 
-$$
-r=RB^{a^2/\Xi},\quad
-F=(1-R_+/R)\frac{H_R^2}{B},\quad
-e^\psi=\frac{B^{1/\Xi}}{H_R},\quad
-\frac d{dr}=\frac{B^{1/\Xi}}{H_R}\frac d{dR}.
-$$
+$$\begin{align}
+r=RB^{a^2/\Xi},\quad F=(1-R_+/R)\frac{H_R^2}{B},\quad e^\psi=\frac{B^{1/\Xi}}{H_R},\quad \frac d{dr}=\frac{B^{1/\Xi}}{H_R}\frac d{dR}.
+\end{align}$$
 
 用 $\sigma=R_-/R_+$、$0\le\sigma<1$，求导给
 
-$$
-r_hf_1=\frac{\Xi-\sigma}{\Xi},\quad
-r_h\psi_1=\frac{a^2\sigma^2}{(\Xi-\sigma)^2},
-$$
+$$\begin{align}
+r_hf_1=\frac{\Xi-\sigma}{\Xi},\quad r_h\psi_1=\frac{a^2\sigma^2}{(\Xi-\sigma)^2},
+\end{align}$$
 
-$$
-r_h^2\mathcal K_h=-2+\frac{4\sigma}{\Xi},\quad
-\mathcal J_h=\frac{r_h\mathcal K_h}{f_1}
-=-2\frac{\Xi-2\sigma}{\Xi-\sigma},\quad
-\mathcal D_h=r_h\psi_1-2.
-$$
+$$\begin{align}
+r_h^2\mathcal K_h=-2+\frac{4\sigma}{\Xi},\quad \mathcal J_h=\frac{r_h\mathcal K_h}{f_1} =-2\frac{\Xi-2\sigma}{\Xi-\sigma},\quad \mathcal D_h=r_h\psi_1-2.
+\end{align}$$
 
 | 背景 | 曲率结果 | 解释 |
 |---|---|---|

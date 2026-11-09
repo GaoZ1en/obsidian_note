@@ -187,7 +187,7 @@ Total deduplicated entries: 175
 | [2610.18421](https://arxiv.org/abs/2610.18421) | math-ph:replacement | math-ph, physics.optics | Spectral Theory of an Exactly Solvable Quantum-Optical Oscillator | Sam Johar, Joseph Kraisler | 15 pages, 1 figure |
 | [2610.18542](https://arxiv.org/abs/2610.18542) | gr-qc:replacement | gr-qc | Mini-Superspace Hamiltonian Dynamics and Canonical Quantization of Bumblebee Cosmology | Pranjal Sarmah |  |
 
-## Screening audit
+## Screening Audit
 
 Original helper SHA-256: `cb60e7e19d2dd758e2e3b83a339eae7a66193ab8c1a56075e6da2e57ecf21b52`. All 175 title/author/comment/category records screened; official abstract metadata fetched for every ID, focused abstracts inspected. Primary/full categories and latest versions below come from official abstract pages. Versionless issue IDs are not separate certification of the exact announcement version. Source-derived metadata, not independent mathematical verification.
 

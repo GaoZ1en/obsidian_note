@@ -18,37 +18,29 @@ Back to [[2026_07_01_overview]].
 
 This is a medium-priority conceptual/technical note. It is relevant to dS/AdS state preparation and boundary-sector logic, but it is not a direct charge, CPS, or boundary-flux paper.
 
-# dS brane behind an AdS3 black hole
+# dS Brane Behind an AdS3 Black Hole
 
 The gravitational setup is AdS3 Einstein gravity coupled to a two-dimensional end-of-the-world brane. The brane obeys the Neumann-type condition
 
-$$
-\begin{align}
+$$\begin{align}
 K_{ab}-(K-T)h_{ab}=0,
-\end{align}
-$$
+\end{align}$$
 
 where $T$ is the brane tension and $h_{ab}$ is the induced brane metric. The Lorentzian solution places a dS2 EOW brane behind the horizon of an AdS3 black hole.
 
 The conceptual problem is Euclidean preparation: ordinary AdS/BCFT branes intersect the asymptotic AdS boundary and have a direct boundary-condition interpretation, but dS branes do not give a real Euclidean saddle intersecting the boundary in the same way.
 
-# Complex saddles and boundary conditions
+# Complex Saddles and Boundary Conditions
 
 The proposed resolution is to use complex Euclidean saddles. For a Euclidean boundary manifold $\Sigma$, the holographic path integral is interpreted through
 
-$$
-\begin{align}
-Z_{\rm AdS}[\Sigma]
-=
-\int_{\partial M=\Sigma}\mathcal D h\,\mathcal D g\,e^{-I_E},
-\qquad
-Z_{\rm CFT}[\Sigma]=Z_{\rm AdS}[\Sigma].
-\end{align}
-$$
+$$\begin{align}
+Z_{\rm AdS}[\Sigma] = \int_{\partial M=\Sigma}\mathcal D h\,\mathcal D g\,e^{-I_E}, \qquad Z_{\rm CFT}[\Sigma]=Z_{\rm AdS}[\Sigma].
+\end{align}$$
 
 The complex disk solutions define non-unitary conformal boundary conditions. Their disk amplitudes give complex boundary entropies or $g$-functions, denoted by a conjugate pair $g_+$ and $g_-$. The paper labels the corresponding boundary conditions as $B$ and $\bar B$.
 
-# Disk and cylinder preparations
+# Disk and Cylinder Preparations
 
 For disk $\Sigma$, the source constructs complex disk wedges. The boundary condition is non-unitary, in contrast with the unitary boundary conditions familiar from AdS2 branes in AdS3/BCFT2.
 
@@ -56,19 +48,17 @@ For cylinder $\Sigma$, the paper distinguishes $BB$ and $B\bar B$ boundary assig
 
 The CFT state is prepared by a Euclidean cylinder with these boundary conditions and then evolved unitarily in the ordinary CFT Hilbert space. Thus the non-unitarity is attached to the boundary condition used in state preparation, not to the bulk CFT time evolution.
 
-# Boundary-sector primary
+# Boundary-Sector Primary
 
 The construction predicts a boundary-condition-changing primary with
 
-$$
-\begin{align}
+$$\begin{align}
 h=-\frac{c}{8}.
-\end{align}
-$$
+\end{align}$$
 
 The source emphasizes that this operator lives in the boundary sector, not the bulk spectrum. That is the mechanism by which a negative conformal weight can coexist with unitarity of the underlying holographic CFT.
 
-# Local use
+# Local Use
 
 The transferable idea is a clean separation between:
 
@@ -79,6 +69,6 @@ The transferable idea is a clean separation between:
 
 This is useful for dS/AdS interface notes because it makes the "dS holography as state preparation" slogan precise enough to compare with boundary-condition sectors.
 
-# Verification note
+# Verification Note
 
 No independent gravitational action or conformal-block check was performed for this medium note. The note uses the official arXiv abstract and official PDF text because arXiv HTML was unavailable for this paper. The key formula-level statements above are source-derived, especially the Neumann brane condition and the predicted $h=-c/8$ boundary-changing primary.

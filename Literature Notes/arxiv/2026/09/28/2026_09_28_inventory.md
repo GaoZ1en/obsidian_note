@@ -151,7 +151,7 @@ Total deduplicated entries: 139
 | [2609.29842](https://arxiv.org/abs/2609.29842) | math-ph:replacement | math-ph | The Two-Component Becker-Döring System: Basic Properties | Jens Scholten | 36 pages; added eprint for [19] and repaired HTML version |
 | [2609.29891](https://arxiv.org/abs/2609.29891) | math-ph:replacement | math-ph | Long Time Behaviour of the Two-Component Becker-Döring System | Jens Scholten | 73 pages; added eprint for [29] and repaired HTML version |
 
-## Primary/category and placement audit
+## Primary/category and Placement Audit
 
 The helper table above remains the frozen issue inventory. Its subject column is a sorted union, not a primary-category ordering; the following metadata-only audit restores the primary and full cross-list categories from each official abstract page. Latest versions were checked after queue completion without retrieving additional technical sources. Placement is disjoint; author signals cross-reference it. All 139 current version timestamps precede the issue cutoff of 2026-09-25 18:00 UTC.
 

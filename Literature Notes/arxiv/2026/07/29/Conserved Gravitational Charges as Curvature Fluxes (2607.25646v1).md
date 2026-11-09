@@ -19,7 +19,7 @@ Reason codes: `T1-charge`, `T1-boundary`, `T1-symmetry`.
 
 This paper is directly aligned with the charge program because it asks the right structural question: given the usual Einstein/Abbott--Deser current, can one replace a first-derivative metric potential by a flux of the linearized curvature without changing the charge? Its strongest contribution is the flat-space Killing potential that treats all Poincaré generators in one formula. Its main caveat is equally important: the advertised AdS reduction from the exact $\mathcal P$ representative to a mixed-index Riemann representative conflicts with the paper's own stated linearization convention unless an omitted background-raising term is restored.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 1. Read Sections II--IV to fix conventions and the exact $\mathcal P$ identity. Keep the exact $\mathcal P$-flux formula; do not yet replace it by Riemann.
 2. Read Sections V--VI as the conceptual core. The flat Killing potential, not a $\Lambda\to0$ limit of the AdS Killing two-form, is what makes translations work.
@@ -28,7 +28,7 @@ This paper is directly aligned with the charge program because it asks the right
 5. Section X identifies the exact background-Weyl obstruction. The charge still exists through Abbott--Deser; what fails generically is a universal, local, curvature-only representative.
 6. Appendix A explains the canonical generator and algebra, but assumes the standard differentiable phase space and absence of symplectic flux rather than reconstructing them from the curvature formula.
 
-## Source structure map
+## Source Structure Map
 
 - **I. Introduction:** the curvature-flux question, the $P/\mathcal P$ tensors, the AdS, flat, and generic-Einstein claims.
 - **II. Conventions:** signature, Riemann sign, field-equation normalization, perturbative index placement, binormal orientation, and the $E=M$ Schwarzschild normalization.
@@ -43,7 +43,7 @@ This paper is directly aligned with the charge program because it asks the right
 - **XI. Conclusions and outlook:** scope, equivalence rather than a new charge, and the open curvature-only Weyl completion.
 - **Appendix A. Canonical interpretation of the AdS curvature charge:** differentiable generators, constraints, exact-Killing algebra, absence of a central term in the chosen phase space, and contrast with Brown--Henneaux.
 
-## Conventions and notation dictionary
+## Conventions and Notation Dictionary
 
 | Object | Meaning and convention |
 | --- | --- |
@@ -61,114 +61,72 @@ This paper is directly aligned with the charge program because it asks the right
 
 Antisymmetrization has weight $1/2$. The construction requires $n>3$; the trace of $P$ degenerates in three dimensions.
 
-## The divergence-free curvature tensor
+## The Divergence-Free Curvature Tensor
 
 For $\Lambda=0$,
 
-$$
-\begin{aligned}
-P^{\mu\nu\rho\sigma}
-={}&R^{\mu\nu\rho\sigma}
-+g^{\mu\sigma}R^{\nu\rho}
--g^{\mu\rho}R^{\nu\sigma}\\
-&-g^{\nu\sigma}R^{\mu\rho}
-+g^{\nu\rho}R^{\mu\sigma}
-+\frac R2
-\left(g^{\mu\rho}g^{\nu\sigma}
--g^{\mu\sigma}g^{\nu\rho}\right).
-\end{aligned}
-$$
+$$\begin{aligned}
+P^{\mu\nu\rho\sigma} ={}&R^{\mu\nu\rho\sigma} +g^{\mu\sigma}R^{\nu\rho} -g^{\mu\rho}R^{\nu\sigma}\\
+&-g^{\nu\sigma}R^{\mu\rho} +g^{\nu\rho}R^{\mu\sigma} +\frac R2 \left(g^{\mu\rho}g^{\nu\sigma} -g^{\mu\sigma}g^{\nu\rho}\right).
+\end{aligned}$$
 
 Its two decisive off-shell identities are
 
-$$
-\nabla_\mu P^{\mu\nu\rho\sigma}=0,
-\qquad
-P^\mu{}_{\nu\mu\sigma}=-(n-3)G_{\nu\sigma}.
-$$
+$$\begin{align}
+\nabla_\mu P^{\mu\nu\rho\sigma}=0, \qquad P^\mu{}_{\nu\mu\sigma}=-(n-3)G_{\nu\sigma}.
+\end{align}$$
 
 Equivalently, $P$ is one half of the derivative of the Gauss--Bonnet scalar with respect to the Riemann tensor. For cosmological Einstein gravity, the paper shifts the Ricci and scalar pieces to define $\mathcal P$ so that
 
-$$
-\nabla_\nu\mathcal P^{\nu\mu\beta\sigma}=0,
-\qquad
-\mathcal P^\nu{}_{\mu\nu\sigma}=-(n-3)\mathcal G_{\mu\sigma},
-\qquad
-\bar{\mathcal P}=0
-$$
+$$\begin{align}
+\nabla_\nu\mathcal P^{\nu\mu\beta\sigma}=0, \qquad \mathcal P^\nu{}_{\mu\nu\sigma}=-(n-3)\mathcal G_{\mu\sigma}, \qquad \bar{\mathcal P}=0
+\end{align}$$
 
 on maximally symmetric AdS. These three properties are the whole engine: divergence turns a product into a boundary form, while the trace turns its derivative into the Einstein current.
 
-## The baseline Abbott--Deser current
+## The Baseline Abbott--Deser Current
 
 For a vacuum background $E_{\mu\nu}[\bar g]=0$, the nonlinear remainder is moved into an effective stress tensor,
 
-$$
-\left(E_{\mu\nu}\right)^{(1)}
-=\kappa_nT_{\mu\nu}^{\rm eff},
-\qquad
-\bar\nabla_\mu\left(E^{\mu\nu}\right)^{(1)}=0.
-$$
+$$\begin{align}
+\left(E_{\mu\nu}\right)^{(1)} =\kappa_nT_{\mu\nu}^{\rm eff}, \qquad \bar\nabla_\mu\left(E^{\mu\nu}\right)^{(1)}=0.
+\end{align}$$
 
 Every background Killing vector therefore gives
 
-$$
-J^\mu[\bar\xi]
-=\bar\xi_\nu\left(E^{\mu\nu}\right)^{(1)}.
-$$
+$$\begin{align}
+J^\mu[\bar\xi] =\bar\xi_\nu\left(E^{\mu\nu}\right)^{(1)}.
+\end{align}$$
 
 For cosmological Einstein gravity,
 
-$$
-\bar\xi_\nu
-\left(\mathcal G^{\mu\nu}\right)^{(1)}
-=\bar\nabla_\alpha
-\mathcal F_{\rm AD}^{\mu\alpha}[h;\bar\xi].
-$$
+$$\begin{align}
+\bar\xi_\nu \left(\mathcal G^{\mu\nu}\right)^{(1)} =\bar\nabla_\alpha \mathcal F_{\rm AD}^{\mu\alpha}[h;\bar\xi].
+\end{align}$$
 
 The curvature-flux formulas in the rest of the paper are alternative representatives of this same current and charge. They are not new observables.
 
-## AdS: exact $\mathcal P$ flux and the index-convention fault
+## AdS: Exact $\mathcal P$ Flux and the Index-Convention Fault
 
 On AdS,
 
-$$
-\bar R_{\mu\nu\rho\sigma}
-=K(\bar g_{\mu\rho}\bar g_{\nu\sigma}
--\bar g_{\mu\sigma}\bar g_{\nu\rho}),
-\qquad
-K=\frac{2\Lambda}{(n-1)(n-2)}.
-$$
+$$\begin{align}
+\bar R_{\mu\nu\rho\sigma} =K(\bar g_{\mu\rho}\bar g_{\nu\sigma} -\bar g_{\mu\sigma}\bar g_{\nu\rho}), \qquad K=\frac{2\Lambda}{(n-1)(n-2)}.
+\end{align}$$
 
 With $\bar S_{\beta\sigma}=\bar\nabla_\beta\bar\xi_\sigma$, linearizing the exact product identity is clean because $\bar{\mathcal P}=0$:
 
-$$
-\bar\nabla_\nu
-\left[
-\bar S^{\beta\sigma}
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-\right]
-=
-\frac{4\Lambda(n-3)}{(n-1)(n-2)}
-\bar\xi_\lambda
-\left(\mathcal G^{\mu\lambda}\right)^{(1)}.
-$$
+$$\begin{align}
+\bar\nabla_\nu \left[ \bar S^{\beta\sigma} \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} \right] = \frac{4\Lambda(n-3)}{(n-1)(n-2)} \bar\xi_\lambda \left(\mathcal G^{\mu\lambda}\right)^{(1)}.
+\end{align}$$
 
 Hence the exact linearized representative is
 
-$$
-\boxed{
-Q[\bar\xi]
-=
-\frac{(n-1)(n-2)}
-{4\kappa_n\Lambda(n-3)}
-\int_{\partial\bar\Sigma}
-\mathrm d\bar\Sigma_{\mu\nu}\,
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-\bar\nabla^\beta\bar\xi^\sigma
+$$\begin{align}
+\boxed{ Q[\bar\xi] = \frac{(n-1)(n-2)} {4\kappa_n\Lambda(n-3)} \int_{\partial\bar\Sigma} \mathrm d\bar\Sigma_{\mu\nu}\, \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} \bar\nabla^\beta\bar\xi^\sigma
 }.
 \tag{IV.13}
-$$
+\end{align}$$
 
 This identity was independently checked and is the safe AdS formula.
 
@@ -189,20 +147,13 @@ $$
 \tag{IV.14}
 $$
 
-But Section II explicitly says that an object such as
-$(R^{\nu\mu}{}_{\beta\sigma})^{(1)}$ means: first linearize the all-down Riemann tensor, then raise with the background metric. Under that convention, xAct gives the nonzero residual
+But Section II explicitly says that an object such as $(R^{\nu\mu}{}_{\beta\sigma})^{(1)}$ means: first linearize the all-down Riemann tensor, then raise with the background metric. Under that convention, xAct gives the nonzero residual
 
-$$
-\begin{aligned}
-\mathrm{LHS}-\mathrm{RHS}
-=K\bigl(
-&\delta^\nu_\sigma h^\mu{}_\beta
--\delta^\nu_\beta h^\mu{}_\sigma\\
-&+\delta^\mu_\beta h^\nu{}_\sigma
--\delta^\mu_\sigma h^\nu{}_\beta
+$$\begin{aligned}
+\mathrm{LHS}-\mathrm{RHS} =K\bigl( &\delta^\nu_\sigma h^\mu{}_\beta -\delta^\nu_\beta h^\mu{}_\sigma\\
+&+\delta^\mu_\beta h^\nu{}_\sigma -\delta^\mu_\sigma h^\nu{}_\beta
 \bigr).
-\end{aligned}
-$$
+\end{aligned}$$
 
 Equation (IV.14) closes only if the mixed tensor is varied *after* raising indices with the full metric. Thus one must choose one of two repairs:
 
@@ -211,115 +162,74 @@ Equation (IV.14) closes only if the mixed tensor is varied *after* raising indic
 
 Only after making that repair and imposing sufficiently strong asymptotic vacuum falloffs can the Ricci/scalar pieces be dropped to obtain the Riemann-only flux (IV.15). The exact $\mathcal P$ formula (IV.13) is unaffected.
 
-## Flat space: the missing potential for translations
+## Flat Space: the Missing Potential for Translations
 
 The AdS Killing two-form cannot survive a naive $\Lambda\to0$ limit: for a translation $\xi^\mu=a^\mu$, $\partial_\mu\xi_\nu=0$. The replacement is an antisymmetric potential
 
-$$
+$$\begin{align}
 \partial_\nu F^{\nu\mu}[\xi]=\xi^\mu.
-$$
+\end{align}$$
 
 For a general Poincaré Killing vector
 
-$$
-\xi^\mu=a^\mu+\omega^\mu{}_\nu x^\nu,
-\qquad
-\omega_{\mu\nu}=-\omega_{\nu\mu},
-$$
+$$\begin{align}
+\xi^\mu=a^\mu+\omega^\mu{}_\nu x^\nu, \qquad \omega_{\mu\nu}=-\omega_{\nu\mu},
+\end{align}$$
 
 the chosen representative is
 
-$$
-\boxed{
-F^{\mu\nu}[\xi]
-=
-\frac1{n-1}(x^\mu\xi^\nu-x^\nu\xi^\mu)
-+\frac{x^2}{2(n-1)}\omega^{\mu\nu}
+$$\begin{align}
+\boxed{ F^{\mu\nu}[\xi] = \frac1{n-1}(x^\mu\xi^\nu-x^\nu\xi^\mu) +\frac{x^2}{2(n-1)}\omega^{\mu\nu}
 }.
 \tag{V.8}
-$$
+\end{align}$$
 
 Its derivative contains a trace part plus
 
-$$
-x_\beta\omega_{\sigma\nu}
--x_\sigma\omega_{\beta\nu}
-+x_\nu\omega_{\beta\sigma}
-=3x_{[\nu}\omega_{\beta\sigma]}.
-$$
+$$\begin{align}
+x_\beta\omega_{\sigma\nu} -x_\sigma\omega_{\beta\nu} +x_\nu\omega_{\beta\sigma} =3x_{[\nu}\omega_{\beta\sigma]}.
+\end{align}$$
 
 The latter dies against the algebraic Bianchi identity of $P$. This is why the selected potential treats translations and Lorentz generators uniformly.
 
-## The flat master identity
+## The Flat Master Identity
 
 On Minkowski space,
 
-$$
-\partial_\nu
-\left[
-F_{\beta\sigma}
-\left(P^{\nu\mu\beta\sigma}\right)^{(1)}
-\right]
-=
-\left(P^{\nu\mu\beta\sigma}\right)^{(1)}
-\partial_\nu F_{\beta\sigma}.
-$$
+$$\begin{align}
+\partial_\nu \left[ F_{\beta\sigma} \left(P^{\nu\mu\beta\sigma}\right)^{(1)} \right] = \left(P^{\nu\mu\beta\sigma}\right)^{(1)} \partial_\nu F_{\beta\sigma}.
+\end{align}$$
 
 Using the two traces of $P$ and the Bianchi cancellation gives
 
-$$
-\boxed{
-\xi_\lambda\left(G^{\mu\lambda}\right)^{(1)}
-=
--\frac{n-1}{2(n-3)}
-\partial_\nu
-\left[
-F_{\beta\sigma}[\xi]
-\left(P^{\nu\mu\beta\sigma}\right)^{(1)}
-\right]
+$$\begin{align}
+\boxed{ \xi_\lambda\left(G^{\mu\lambda}\right)^{(1)} = -\frac{n-1}{2(n-3)} \partial_\nu \left[ F_{\beta\sigma}[\xi] \left(P^{\nu\mu\beta\sigma}\right)^{(1)} \right]
 }.
 \tag{VI.8}
-$$
+\end{align}$$
 
 The resulting exact linearized $P$-flux is
 
-$$
-Q[\xi]
-=
-\frac1{2\kappa_n(n-3)}
-\int_{\partial\Sigma}\mathrm d\Sigma_{\mu\nu}\,
-\left(P^{\nu\mu\beta\sigma}\right)^{(1)}
-\left(
-\xi_\beta x_\sigma-\xi_\sigma x_\beta
--\frac12x^2\omega_{\beta\sigma}
-\right).
-$$
+$$\begin{align}
+Q[\xi] = \frac1{2\kappa_n(n-3)} \int_{\partial\Sigma}\mathrm d\Sigma_{\mu\nu}\, \left(P^{\nu\mu\beta\sigma}\right)^{(1)} \left( \xi_\beta x_\sigma-\xi_\sigma x_\beta -\frac12x^2\omega_{\beta\sigma} \right).
+\end{align}$$
 
 The replacement $P^{(1)}\to R^{(1)}$ is conditional. The weighted Ricci and scalar fluxes must vanish. For Lorentz generators the polynomial weight is $O(r^2)$, so the condition is stronger than an unweighted statement that the Ricci tensor approaches zero.
 
-## Translations and ADM four-momentum
+## Translations and ADM Four-Momentum
 
 On a $t=$ constant slice the binormal convention yields
 
-$$
-\mathrm d\Sigma_{\mu\nu}
-\left(R^{\nu\mu\beta\sigma}\right)^{(1)}
-=
--\mathrm dS_i
-\left(R^{i0\beta\sigma}\right)^{(1)}.
-$$
+$$\begin{align}
+\mathrm d\Sigma_{\mu\nu} \left(R^{\nu\mu\beta\sigma}\right)^{(1)} = -\mathrm dS_i \left(R^{i0\beta\sigma}\right)^{(1)}.
+\end{align}$$
 
 For a constant translation,
 
-$$
-Q[a]
-=
--\frac1{\kappa_n(n-3)}
-\lim_{r\to\infty}
-\int_{S_r}\mathrm dS_i\,
-\left(R^{i0\beta\sigma}\right)^{(1)}
-a_\beta x_\sigma.
-$$
+$$\begin{align}
+Q[a] = -\frac1{\kappa_n(n-3)}
+\lim_{r\to\infty} \int_{S_r}\mathrm dS_i\, \left(R^{i0\beta\sigma}\right)^{(1)} a_\beta x_\sigma.
+\end{align}$$
 
 Substituting the linearized Riemann tensor, integrating angular total derivatives, and imposing the vacuum/constraint falloffs recovers the standard ADM expressions. The checked examples are:
 
@@ -329,7 +239,7 @@ Substituting the linearized Riemann tensor, integrating angular total derivative
 
 These equalities are integrated boundary identities. They use regularity and asymptotic constraints; they are not pointwise identities between a Riemann component and the ADM density.
 
-## Lorentz generators and the Regge--Teitelboim completion
+## Lorentz Generators and the Regge--Teitelboim Completion
 
 Lorentz charges require the Regge--Teitelboim phase space. In four dimensions the leading spatial metric perturbation is even under $\hat x\mapsto-\hat x$, while the leading canonical momentum is odd. These parities cancel the apparently divergent leading rotation and boost integrals.
 
@@ -337,168 +247,121 @@ For rotations, the linear Codazzi relation converts $R_{0ijk}^{(1)}$ into deriva
 
 For boosts, the Gauss/Ricci decomposition contains both the spatial curvature and a subtraction term. That subtraction is essential for the center-of-mass charge. A displaced Schwarzschild solution gives
 
-$$
--r^3f'(r)+r^2f(r)
-=2Ar+3A(\vec a\cdot\hat{\vec r}),
-$$
+$$\begin{align}
+-r^3f'(r)+r^2f(r) =2Ar+3A(\vec a\cdot\hat{\vec r}),
+\end{align}$$
 
 and the parity-odd divergent part drops out, leaving
 
-$$
+$$\begin{align}
 K_k=\frac{4\pi A}{\kappa_4}a_k=Ea_k.
-$$
+\end{align}$$
 
 For Kerr, the main angular density and correction are
 
-$$
-\rho_{\rm main}=3GJ\sin^2\theta,
-\qquad
-\rho_{\rm corr}
-=\frac{3GJ}{2}(3\cos^2\theta-1).
-$$
+$$\begin{align}
+\rho_{\rm main}=3GJ\sin^2\theta, \qquad \rho_{\rm corr} =\frac{3GJ}{2}(3\cos^2\theta-1).
+\end{align}$$
 
 Their sphere integrals give $8\pi GJ$, $0$, and $8\pi GJ$ in the source's three decompositions, hence the standard spin.
 
 The component Poincaré brackets are consistent with
 
-$$
-\eta_{\mu\nu}=\operatorname{diag}(-,+,+,+),
-\qquad
-P_0=-E,
-\qquad
-J_{0i}=K_i.
-$$
+$$\begin{align}
+\eta_{\mu\nu}=\operatorname{diag}(-,+,+,+), \qquad P_0=-E, \qquad J_{0i}=K_i.
+\end{align}$$
 
 The algebraic signs were checked. Functional differentiability and the absence of a central term still come from the Regge--Teitelboim canonical theorem, not from the curvature integral alone.
 
-## Gauge transformations and boundary conditions
+## Gauge Transformations and Boundary Conditions
 
 For a covariantly constructed tensor,
 
-$$
+$$\begin{align}
 \delta_\zeta X^{(1)}=\mathcal L_\zeta\bar X.
-$$
+\end{align}$$
 
 On flat space, $\bar R=0$, so the linearized Riemann tensor is invariant under
 
-$$
+$$\begin{align}
 h_{\mu\nu}\mapsto h_{\mu\nu}+2\partial_{(\mu}\zeta_{\nu)}.
-$$
+\end{align}$$
 
 On maximally symmetric AdS, the mixed constant-curvature identity is Lie invariant. An all-down curvature perturbation acquires the metric Lie-derivative terms expected from lowering indices. This distinction is another way to see why the mixed-index convention in Section IV must be handled consistently.
 
 Local gauge invariance of the integrand is not enough. The integrated charge is invariant only for proper gauge transformations whose boundary term vanishes. Improper transformations are asymptotic symmetries and may carry nonzero charges. Finiteness and conservation further require the stated falloffs, RT parity in the Lorentz sector, and no unwanted boundary flux.
 
-## Generic Einstein backgrounds: the Weyl obstruction
+## Generic Einstein Backgrounds: the Weyl Obstruction
 
 For
 
-$$
-\bar R_{\mu\nu}
-=\frac{2\Lambda}{n-2}\bar g_{\mu\nu},
-$$
+$$\begin{align}
+\bar R_{\mu\nu} =\frac{2\Lambda}{n-2}\bar g_{\mu\nu},
+\end{align}$$
 
 the shifted tensor no longer vanishes:
 
-$$
-\bar{\mathcal P}^{\nu\mu}{}_{\beta\sigma}
-=\bar C^{\nu\mu}{}_{\beta\sigma}.
-$$
+$$\begin{align}
+\bar{\mathcal P}^{\nu\mu}{}_{\beta\sigma} =\bar C^{\nu\mu}{}_{\beta\sigma}.
+\end{align}$$
 
 A Killing potential still exists,
 
-$$
-\bar F^{\nu\mu}[\bar\xi]
-=-\frac{n-2}{2\Lambda}\bar\nabla^\nu\bar\xi^\mu,
-\qquad
-\bar\nabla_\nu\bar F^{\nu\mu}=\bar\xi^\mu.
-$$
+$$\begin{align}
+\bar F^{\nu\mu}[\bar\xi] =-\frac{n-2}{2\Lambda}\bar\nabla^\nu\bar\xi^\mu, \qquad \bar\nabla_\nu\bar F^{\nu\mu}=\bar\xi^\mu.
+\end{align}$$
 
 The obstruction instead has two pieces:
 
-$$
-\delta_\zeta
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-=
-\mathcal L_\zeta\bar C^{\nu\mu}{}_{\beta\sigma},
-$$
+$$\begin{align}
+\delta_\zeta \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} = \mathcal L_\zeta\bar C^{\nu\mu}{}_{\beta\sigma},
+\end{align}$$
 
 and
 
-$$
-\bar\nabla_\nu
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-=-\mathcal A^\mu{}_{\beta\sigma}[h;\bar C],
-$$
+$$\begin{align}
+\bar\nabla_\nu \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} =-\mathcal A^\mu{}_{\beta\sigma}[h;\bar C],
+\end{align}$$
 
 where $\mathcal A$ is linear in $\bar C$ and $\bar\nabla h$. The exact product identity is
 
-$$
-\bar\nabla_\nu
-\left[
-\bar S^{\beta\sigma}
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-\right]
-=
-\frac{4\Lambda(n-3)}{(n-1)(n-2)}
-\bar\xi_\lambda
-\left(\mathcal G^{\mu\lambda}\right)^{(1)}
-+\mathcal W^\mu,
-$$
+$$\begin{align}
+\bar\nabla_\nu \left[ \bar S^{\beta\sigma} \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} \right] = \frac{4\Lambda(n-3)}{(n-1)(n-2)} \bar\xi_\lambda \left(\mathcal G^{\mu\lambda}\right)^{(1)} +\mathcal W^\mu,
+\end{align}$$
 
 with
 
-$$
-\mathcal W^\mu
-=
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-\bar C^{\sigma\beta}{}_{\nu\lambda}\bar\xi^\lambda
--\bar S^{\beta\sigma}\mathcal A^\mu{}_{\beta\sigma}.
-$$
+$$\begin{align}
+\mathcal W^\mu = \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} \bar C^{\sigma\beta}{}_{\nu\lambda}\bar\xi^\lambda -\bar S^{\beta\sigma}\mathcal A^\mu{}_{\beta\sigma}.
+\end{align}$$
 
 The current $\mathcal W^\mu$ itself has a superpotential,
 
-$$
-\mathcal V_W^{\nu\mu}
-=
-\bar S^{\beta\sigma}
-\left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)}
-+\frac{4\Lambda(n-3)}{(n-1)(n-2)}
-\mathcal F_{\rm AD}^{\nu\mu},
-\qquad
-\mathcal W^\mu=\bar\nabla_\nu\mathcal V_W^{\nu\mu}.
-$$
+$$\begin{align}
+\mathcal V_W^{\nu\mu} = \bar S^{\beta\sigma} \left(\mathcal P^{\nu\mu}{}_{\beta\sigma}\right)^{(1)} +\frac{4\Lambda(n-3)}{(n-1)(n-2)} \mathcal F_{\rm AD}^{\nu\mu}, \qquad \mathcal W^\mu=\bar\nabla_\nu\mathcal V_W^{\nu\mu}.
+\end{align}$$
 
 Thus the surface charge has not disappeared; the known completion contains the metric Abbott--Deser potential. What remains open is a universal local completion built only from background and linearized curvatures. An AdS-like curvature representative survives only if the boundary flux of $\mathcal V_W$ vanishes for the particular phase space.
 
-## Canonical and covariant-phase-space translation
+## Canonical and Covariant-Phase-Space Translation
 
 The paper's charge $Q[\xi]$ is the boundary term in the differentiable canonical generator
 
-$$
-G[\xi]
-=
-\int_\Sigma
-\left(\xi^\perp\mathcal H+\xi^i\mathcal H_i\right)
-+Q[\xi].
-$$
+$$\begin{align}
+G[\xi] = \int_\Sigma \left(\xi^\perp\mathcal H+\xi^i\mathcal H_i\right) +Q[\xi].
+\end{align}$$
 
 On the constraint surface, $G=Q$. For exact AdS Killing vectors and charges normalized to vanish on the background,
 
-$$
-K(\xi_1,\xi_2)
-=
-\int_{\partial\Sigma}
-k_{\xi_1}[\mathcal L_{\xi_2}\bar g;\bar g]
-=0,
-$$
+$$\begin{align}
+K(\xi_1,\xi_2) = \int_{\partial\Sigma} k_{\xi_1}[\mathcal L_{\xi_2}\bar g;\bar g] =0,
+\end{align}$$
 
 so
 
-$$
-\{Q[\xi_1],Q[\xi_2]\}
-=Q\!\left([\xi_1,\xi_2]\right).
-$$
+$$\begin{align}
+\{Q[\xi_1],Q[\xi_2]\} =Q\!\left([\xi_1,\xi_2]\right).
+\end{align}$$
 
 This is a statement about the standard no-flux global AdS phase space. It does not cover Brown--Henneaux asymptotic Killing vectors, for which $\mathcal L_\xi\bar g\neq0$ and a central term can survive.
 
@@ -510,7 +373,7 @@ In local CPS notation:
 - the exact-Killing algebra inherits its normalization and absence of central term from the established canonical/CPS representative;
 - proper gauge invariance, charge conservation, and absence of symplectic flux are logically separate requirements.
 
-## Global equation ledger
+## Global Equation Ledger
 
 | Source location | Role | Status |
 | --- | --- | --- |
@@ -528,7 +391,7 @@ In local CPS notation:
 | X.24--X.31 | Abbott--Deser completion and boundary simplification | Source-derived; conditional on the AD identity and boundary flux. |
 | A.15--A.25 | exact-Killing covariance and $\mathfrak{so}(n-1,2)$ algebra | Algebra checked; canonical premises conditional. |
 
-## Global derivation map
+## Global Derivation Map
 
 1. Diffeomorphism invariance gives the linearized Bianchi identity.
 2. A background Killing vector turns the linearized Einstein tensor into a conserved current.
@@ -540,7 +403,7 @@ In local CPS notation:
 8. ADM and RT formulas follow by Gauss--Codazzi decomposition, parity, and asymptotic field equations.
 9. On a generic Einstein background, $\bar{\mathcal P}=\bar C$ creates both gauge-variation and divergence obstructions; the standard AD potential supplies the known Weyl completion.
 
-## Concrete project extensions
+## Concrete Project Extensions
 
 1. Re-derive the AdS representative covariantly with an explicit declaration of whether $\delta(R^{\nu\mu}{}_{\beta\sigma})$ varies the full mixed tensor or raises $\delta R_{\alpha\gamma\beta\sigma}$ afterward. Record the two representatives and their $Kh$ difference.
 2. Compare the exact $\mathcal P$ surface form with the local Iyer--Wald/Barnich--Brandt $k_\xi$ before taking radial limits. This will show which improvement and normal-displacement terms are being discarded.
@@ -549,7 +412,7 @@ In local CPS notation:
 5. Search for special-background Weyl completions using Killing--Yano tensors, but treat them as background-specific currents rather than a universal solution.
 6. Reconstruct the RT Lorentz sector from the CPS symplectic form to decide exactly which parity conditions guarantee integrability and zero flux.
 
-## Verification log
+## Verification Log
 
 ### Checked
 

@@ -10,7 +10,8 @@ url: https://arxiv.org/abs/2611.07180v1
 summary: "Null chiral-tensor action reconstructed with a checked flat sector and explicit Hodge, normalization and appendix obstructions to the printed curved proof."
 tags: []
 ---
-# Verdict and immediate use
+
+# Verdict and Immediate Use
 
 **Not proven by the current source; the evidence only shows:** the proposed null $2+4$ chiral-tensor action has a recoverable flat-space sector after fixing its projector normalization and sign conventions. The printed proof of the general curved-space variation contains false intermediate identities and incompatible Hodge formulas. The claimed curved-space gauge reduction and supersymmetric cancellation must therefore remain conditional.
 
@@ -18,7 +19,7 @@ The paper is selected for an immediate null-CPS use: an explicit two-form action
 
 All seven main sections and four appendices of the 15-page [official v1](https://arxiv.org/abs/2611.07180v1) were inspected in the full PDF and TeX. PDF pp. 4–5, 8–9 and 13–14 were rendered and visually checked for the action, $T$ normalization, Hodge decomposition and appendices. This note uses monograph mode despite the short page count because the argument is a dense chain of tensor identities with four dependent appendices.
 
-# Complete source map and reading order
+# Complete Source Map and Reading Order
 
 | Section | Technical content and dependency |
 |---|---|
@@ -41,97 +42,82 @@ All seven main sections and four appendices of the 15-page [official v1](https:/
 
 Essential reading: §2 and the original action first, then the failure ledger before using §3.4. The integrated/gauge argument in §§4–5 is useful as a conditional design pattern. Appendix D and §6 are a later reference; their cancellation cannot repair the prior bosonic variation. The historical comparisons in §§1,7 are optional background.
 
-# Null geometry and fixed conventions for this audit
+# Null Geometry and Fixed Conventions for This Audit
 
 Use six-dimensional Lorentzian signature with one negative eigenvalue and a positive transverse four-metric. The background vectors are fixed under $B$ variation:
 
-$$
-U^2=V^2=0,\qquad\mathcal N=U\cdot V>0,
-\qquad u=U^\flat/\mathcal N,\quad v=V^\flat/\mathcal N.
-$$
+$$\begin{align}
+U^2=V^2=0,\qquad\mathcal N=U\cdot V>0, \qquad u=U^\flat/\mathcal N,\quad v=V^\flat/\mathcal N.
+\end{align}$$
 
 Thus $u(U)=v(V)=0$ and $u(V)=v(U)=1$. The longitudinal and transverse projectors are
 
-$$
-Q^M{}_P=\frac{U^MV_P+V^MU_P}{\mathcal N},\qquad P=1-Q,
-\quad g=\mathcal N(u\otimes v+v\otimes u)+\widetilde g.
-$$
+$$\begin{align}
+Q^M{}_P=\frac{U^MV_P+V^MU_P}{\mathcal N},\qquad P=1-Q, \quad g=\mathcal N(u\otimes v+v\otimes u)+\widetilde g.
+\end{align}$$
 
 Their algebraic projector properties follow from the stated null contractions; existence of a pair with nonzero inner product is an assumption of this split, not a necessary condition for a Lorentzian metric itself to be nondegenerate for every choice of two null vectors.
 
 Set $e^u=\sqrt{\mathcal N}u$, $e^v=\sqrt{\mathcal N}v$ and transverse frame $E^i$. The source orientation is
 
-$$
-*1=e^v\wedge e^u\wedge E^1\wedge E^2\wedge E^3\wedge E^4
-=\mathcal N v\wedge u\wedge *_4 1.
-$$
+$$\begin{align}
+*1=e^v\wedge e^u\wedge E^1\wedge E^2\wedge E^3\wedge E^4 =\mathcal N v\wedge u\wedge *_4 1.
+\end{align}$$
 
 For the explicit checks use coordinates $(x^+,x^-,x^1,x^2,x^3,x^4)$,
 
-$$
-ds^2=2\mathcal N dx^+dx^-+\sum_i(dx^i)^2,
-\quad U=\partial_+,\quad V=\partial_-,\quad
-u=dx^-,\quad v=dx^+,
-\quad\epsilon_{+-1234}=\mathcal N.
-$$
+$$\begin{align}
+ds^2=2\mathcal N dx^+dx^-+\sum_i(dx^i)^2, \quad U=\partial_+,\quad V=\partial_-,\quad u=dx^-,\quad v=dx^+, \quad\epsilon_{+-1234}=\mathcal N.
+\end{align}$$
 
 Here $\mathcal N>0$ is initially any constant, and $\epsilon^{+-1234}=-1/\mathcal N$. The Hodge definition used is $\alpha\wedge*\beta=\langle\alpha,\beta\rangle *1$, with standard $1/p!$ component norms and normalized antisymmetrization. In particular $*^2=+1$ on six-dimensional three-forms and $*_4^2=+1$ on transverse two-forms.
 
 The paper uses $L$ for both $H-*H$ in Eq. (2) and $(H-*H)/2$ in §4. To prevent silently mixing these definitions, write throughout the independent reconstruction
 
-$$
+$$\begin{align}
 l:=\frac12(H-*H),\qquad *l=-l.
-$$
+\end{align}$$
 
 Source equations quoted with their printed $L$ retain their original normalization and are labelled accordingly.
 
-## Hodge decomposition actually implied by the metric
+## Hodge Decomposition Actually Implied by the Metric
 
 For a transverse three-form $a_3$, two-forms $b_2,c_2$ and one-form $d_1$, the complete basis calculation gives
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 *a_3&=-\mathcal N u\wedge v\wedge *_4a_3,\\
 *(u\wedge b_2)&=u\wedge *_4b_2,\\
 *(v\wedge c_2)&=-v\wedge *_4c_2,\\
 *(u\wedge v\wedge d_1)&=\mathcal N^{-1}*_4d_1.
-\end{aligned}
-$$
+\end{aligned}$$
 
 **Checked:** using the xCoba inverse metric, the explicit orientation density and all 20 independent three-form components gives a $20\times20$ star matrix with $S^2=1$ and anti-selfdual projector rank 10. Representative outputs are
 
-$$
-*(dx^-\wedge dx^1\wedge dx^2)=dx^-\wedge dx^3\wedge dx^4,
-\qquad
-*(dx^-\wedge dx^+\wedge dx^1)=\mathcal N^{-1}dx^2\wedge dx^3\wedge dx^4.
-$$
+$$\begin{align}
+*(dx^-\wedge dx^1\wedge dx^2)=dx^-\wedge dx^3\wedge dx^4, \qquad *(dx^-\wedge dx^+\wedge dx^1)=\mathcal N^{-1}dx^2\wedge dx^3\wedge dx^4.
+\end{align}$$
 
 In the transverse expansion
 
-$$
+$$\begin{align}
 l=\widetilde l+v\wedge l_U+u\wedge l_V+u\wedge v\wedge l_{UV},
-$$
+\end{align}$$
 
 anti-selfduality consequently implies
 
-$$
-*_4l_U=+l_U,\qquad *_4l_V=-l_V,
-\qquad l_{UV}=\mathcal N *_4\widetilde l.
-$$
+$$\begin{align}
+*_4l_U=+l_U,\qquad *_4l_V=-l_V, \qquad l_{UV}=\mathcal N *_4\widetilde l.
+\end{align}$$
 
 The transverse three-form and longitudinal one-form are paired, not two independent unconstrained sets. These relations also show why $\widetilde l=l_U=l_V=0$ forces the omitted $l_{UV}$ to vanish.
 
-# The action and the intended variation chain
+# The Action and the Intended Variation Chain
 
 Define $F=\iota_VH$, $G=\iota_UH$, $H=dB$. The original action in Eqs. (15)–(16), written as a single density, is
 
-$$
-\mathcal L_{\rm src}
-=-\frac{\sqrt{-g}}{24}H_{MNP}H^{MNP}
-+\frac{\sqrt{-g}}{8\mathcal N}F^{MN}G_{MN}
-+\frac{\sqrt{-g}}{96}\epsilon^{MNPRST}
-(F_{MN}u_P+G_{MN}v_P)H_{RST}.
-$$
+$$\begin{align}
+\mathcal L_{\rm src} =-\frac{\sqrt{-g}}{24}H_{MNP}H^{MNP} +\frac{\sqrt{-g}}{8\mathcal N}F^{MN}G_{MN} +\frac{\sqrt{-g}}{96}\epsilon^{MNPRST} (F_{MN}u_P+G_{MN}v_P)H_{RST}.
+\end{align}$$
 
 The subscript “src” refers specifically to the sign in Eq. (16), not the opposite sign printed when the third piece is reintroduced in Eq. (27). With $B,U,V$ Weyl weight zero, $g\mapsto e^{2\sigma}g$ and $\mathcal N\mapsto e^{2\sigma}\mathcal N$, each density term has net weight zero: the first has weights $6-6$, the second $6-4-2$, and the epsilon term $6-6$ with invariant $u,v$. This weight count does not prove the curved-space Euler derivative.
 
@@ -147,45 +133,41 @@ The intended background conditions are commuting null conformal Killing vectors,
 
 Because $\mathcal N>0$, one may locally choose the Weyl gauge $\mathcal N=1$. Under the stated commuting conformal-Killing hypotheses both rescaled vectors become Killing. This can remove a normalization factor after gauge fixing; it does not resolve the printed $T$ sign or the remaining Hodge/chirality contradictions.
 
-# Exact failure ledger for the printed tensor chain
+# Exact Failure Ledger for the Printed Tensor Chain
 
 These are source-formula failures under the explicit conventions above. They are not edits to any pre-existing vault note or a claim that every possible $2+4$ theory is impossible.
 
-## Hodge normalization and internal chirality mismatch: Eqs. (48)–(50)
+## Hodge Normalization and Internal Chirality Mismatch: Eqs. (48)–(50)
 
 **Failed:** Eq. (49) puts a factor $\mathcal N$ on each single-null two-form rule, where the complete component result has coefficient 1; its double-null rule is $-\mathcal N *_4d_1$, where the component result is $+\mathcal N^{-1}*_4d_1$. Even setting $\mathcal N=1$ leaves the last sign wrong. The printed transverse/double-null pair would give $*^2=-\mathcal N^2$ on a transverse three-form, contradicting Lorentzian three-form $*^2=+1$.
 
 Also Eq. (50)'s chirality signs do not follow even from Eq. (48) as printed: comparing the $v$ and $u$ coefficients in $L=-*L$ reverses the signs stated in Eq. (50). Thus a common overall orientation change cannot repair all of these equations at once. A formula involving $L_U=\pm\mathcal N *_4L_U$ for arbitrary positive $\mathcal N$ would in addition force its nonzero eigencomponents to have $\mathcal N^2=1$.
 
-## $T$ changes sign and $L$ changes normalization: Eqs. (2), (42), (46), (81)
+## $T$ Changes Sign and $L$ Changes Normalization: Eqs. (2), (42), (46), (81)
 
 For an antisymmetric tensor, $3Q^{[M}{}_RL^{NP]R}$ is understood as the projector acting on its three slots; use distinct dummy indices when expanding it. More unambiguously define
 
-$$
-(\mathsf Q L)^{MNP}
-=Q^M{}_RL^{RNP}+Q^N{}_RL^{MRP}+Q^P{}_RL^{MNR}.
-$$
+$$\begin{align}
+(\mathsf Q L)^{MNP} =Q^M{}_RL^{RNP}+Q^N{}_RL^{MRP}+Q^P{}_RL^{MNR}.
+\end{align}$$
 
 It multiplies a component with $n$ longitudinal slots by $n$. Main Eq. (42) uses $T_{42}=(\mathsf Q-2)L$, whereas Appendix C, Eq. (81), uses $T_C=(2-\mathsf Q)L$. Appendix C's transverse formula corresponds to $T_C$, not $T_{42}$. Both equalities cannot hold for a generic nonzero anti-selfdual field. Moreover, Eq. (2) and the form definition below Eq. (46) differ by a factor two.
 
 A direct flat witness makes the variation problem concrete. Take $\mathcal N=1$ and only $B_{23}=b(x^1)$ nonzero. The original action has
 
-$$
-\mathcal L_{\rm src}=-\frac14[b'(x^1)]^2,
-\qquad \frac{\delta S}{\delta B_{23}}=\frac12b''(x^1).
-$$
+$$\begin{align}
+\mathcal L_{\rm src}=-\frac14[b'(x^1)]^2, \qquad \frac{\delta S}{\delta B_{23}}=\frac12b''(x^1).
+\end{align}$$
 
 Using Eq. (2)'s $L=H-*H$ in Eq. (42) gives $T_{42}^{123}=-2b'$. The all-indices contraction in Eqs. (40)–(41) then gives a coefficient $-b''$ for $\delta B_{23}$, rather than $+b''/2$. **Failed:** the printed normalization/sign chain does not equal the original action variation. A homogeneous equation can survive a constant rescaling, but the variational normalization is essential for the later matter cancellation.
 
-## Appendix A identity, Eq. (25): a local counterexample
+## Appendix A Identity, Eq. (25): a Local Counterexample
 
 At $\mathcal N=1$, let
 
-$$
-H=dx^+\wedge dx^-\wedge dx^2,
-\qquad du=dx^1\wedge dx^2-dx^3\wedge dx^4,
-\qquad dv=0.
-$$
+$$\begin{align}
+H=dx^+\wedge dx^-\wedge dx^2, \qquad du=dx^1\wedge dx^2-dx^3\wedge dx^4, \qquad dv=0.
+\end{align}$$
 
 The transverse $du$ is anti-selfdual. For the $(M,N)=(-,1)$ component of the first Eq. (25), the left side is zero, while its printed right side is $-2$. The residual left minus right is $+2$. This is an exact component calculation; it does not assume $H$ is selfdual off shell.
 
@@ -193,17 +175,17 @@ These pointwise data can occur with the listed background assumptions: locally t
 
 Appendix A Eq. (75) also replaces the unnormalized difference in Eq. (25) by a normalized bracket without adjusting its right-hand coefficient. Its stated discarded $L$ term is not generally zero in the counterexample. **Failed:** Appendix A cannot justify the printed §3.2 replacement under the stated off-shell assumptions.
 
-## Appendix B, Eq. (79): a nonzero discarded term
+## Appendix B, Eq. (79): a Nonzero Discarded Term
 
 Use the same transverse $du$, $dv=0$, and now take $H=dx^-\wedge dx^1\wedge dx^2$. Let $L=H-*H$ in the source's initial normalization. The exact component evaluation gives
 
-$$
+$$\begin{align}
 L^{M[+|P|}(du)_{MP}V^{-]}=-2.
-$$
+\end{align}$$
 
 The source asserts that this expression vanishes. Using the half projection rescales the witness to $-1$, rather than making it zero. **Failed:** the term discarded through Appendix B need not vanish with the paper's claimed twist orientation and the stated Hodge convention. Since these identities are used before reaching the curved divergence equation, the general curved variation is not certified by the flat-space reconstruction below.
 
-## Additional source defects retained for audit
+## Additional Source Defects Retained for Audit
 
 - Eq. (16) defines the third action piece with a minus sign, while Eq. (27) restates that same piece with a plus sign; PDF pp. 4–5 confirm the conflict.
 - Eq. (21) omits the variation on $\mathcal L_V\delta B$/$\mathcal L_U\delta B$ and the antisymmetrization of its displayed derivative. The correct differential-form identity is $\delta F=\mathcal L_V\delta B-d\iota_V\delta B$, and similarly for $G$.
@@ -215,99 +197,85 @@ The source asserts that this expression vanishes. Using the half projection resc
 
 The first four blocks above are decisive independently of these smaller notation defects.
 
-# What the direct flat-space calculation does establish
+# What the Direct Flat-Space Calculation Does Establish
 
 This is an independent reconstruction in the constant frame with $\mathcal N=1$, original action sign Eq. (16), and the uniform half projection $l=(H-*H)/2$. Define
 
-$$
-T_+:=(2-\mathsf Q)l
-=2\widetilde l+v\wedge l_U+u\wedge l_V.
-$$
+$$\begin{align}
+T_+:=(2-\mathsf Q)l =2\widetilde l+v\wedge l_U+u\wedge l_V.
+\end{align}$$
 
 Let $h$ be the column of 20 independent covariant components $H_{IJK}$ with $I<J<K$, $R_3$ the matrix raising all three indices, and $S_3$ the Hodge matrix defined above. A direct differentiation of the original quadratic action gives
 
-$$
-\nabla_h\mathcal L_{\rm src}
-=-\frac12(T_+)^{\rm up}-\frac14R_3S_3h.
-$$
+$$\begin{align}
+\nabla_h\mathcal L_{\rm src} =-\frac12(T_+)^{\rm up}-\frac14R_3S_3h.
+\end{align}$$
 
 The second term is a dual momentum whose divergence vanishes by the Bianchi identity when $H=dB$. It cannot simply be declared zero in a boundary symplectic potential.
 
 **Checked:** for an arbitrary symbolic covector $k_M$, construct the $20\times15$ exterior-derivative matrix $D(k)$ taking a two-form to $k\wedge B$. If $G_H$ is the exact Hessian of the action with respect to $h$, then the entire $15\times15$ matrix
 
-$$
+$$\begin{align}
 D(k)^T\left[G_H+\frac12(T_+)^{\rm up}_{,h}\right]D(k)=0
-$$
+\end{align}$$
 
 vanishes identically. The same test with main Eq. (42) and its initial full $L$ does not vanish; at $k=(1,2,3,4,5,6)$ its residual matrix has rank 9. Thus the corrected flat variational chain is an exact all-symbolic-$k$ result, while the printed chain is false with those definitions. This is stronger than matching a single mode, but it is still a **flat, fixed-background** statement.
 
 The reconstructed Euler derivative is therefore
 
-$$
-\delta\mathcal L_{\rm src}
-=\frac14\partial_MT_+^{MNP}\delta B_{NP}+\partial_M\theta^M,
-\qquad
-\theta^M=\frac12 C^{MNP}\delta B_{NP},
-\quad C^{MNP}=-\frac12T_+^{MNP}-\frac14(*H)^{MNP}.
-$$
+$$\begin{align}
+\delta\mathcal L_{\rm src} =\frac14\partial_MT_+^{MNP}\delta B_{NP}+\partial_M\theta^M, \qquad \theta^M=\frac12 C^{MNP}\delta B_{NP}, \quad C^{MNP}=-\frac12T_+^{MNP}-\frac14(*H)^{MNP}.
+\end{align}$$
 
 Here $C$ is the antisymmetric tensor whose ordered components are the gradient above. This formula follows directly from $\delta H=3\partial_{[M}\delta B_{NP]}$ and retains the boundary term; it is not imported from the paper's boundary-discarding proof. A flat regional symplectic-current candidate is consequently $\omega^M(\delta_1,\delta_2)=\tfrac12[\delta_1C^{MNP}\delta_2B_{NP}-\delta_2C^{MNP}\delta_1B_{NP}]$ at fixed background. A physical phase space still needs boundary conditions, possible improvements and a decision about boundary-supported gauge generators.
 
 The full $20$-component calculation gives rank 10 both for the anti-selfdual projector and for $T_+(H)$. Its kernel is exactly the selfdual subspace. Equivalently, $T_+=0$ forces $\widetilde l,l_U,l_V=0$ and then $l_{UV}=\mathcal N *_4\widetilde l=0$. This algebraic implication survives the source's omitted double-null component once the Hodge relations are made consistent.
 
-# Integrated equations and generalized gauge parameters
+# Integrated Equations and Generalized Gauge Parameters
 
 The intended local chain is $\partial_M(\sqrt{-g}T^{MNP})=0\Rightarrow d*T=0\Rightarrow T=*dX$ on a contractible patch. No global vanishing of de Rham classes or boundary flux is implied. In form notation decompose
 
-$$
+$$\begin{align}
 X=\widetilde X+u\wedge X_V+v\wedge X_U+u\wedge v\,X_{UV}.
-$$
+\end{align}$$
 
 With commuting, invariant null directions and transverse derivative $d_4$, the derivative organizes as
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 dX={}&A_3+u\wedge B_2+v\wedge C_2+u\wedge v\wedge D_1,\\
 A_3={}&d_4\widetilde X+du\wedge X_V+dv\wedge X_U,\\
 B_2={}&\mathcal L_V\widetilde X-d_4X_V,\\
 C_2={}&\mathcal L_U\widetilde X-d_4X_U,\\
 D_1={}&d_4X_{UV}-\mathcal L_UX_V+\mathcal L_VX_U.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Applying the consistent Hodge rules gives
 
-$$
-*dX=-\mathcal N u\wedge v\wedge *_4A_3
-+u\wedge *_4B_2-v\wedge *_4C_2+\mathcal N^{-1}*_4D_1.
-$$
+$$\begin{align}
+*dX=-\mathcal N u\wedge v\wedge *_4A_3 +u\wedge *_4B_2-v\wedge *_4C_2+\mathcal N^{-1}*_4D_1.
+\end{align}$$
 
 The absence of a double-null part in $T_+$ requires $A_3=0$. Its single-null chiralities also constrain $B_2,C_2$; it is not enough to assert that $\widetilde X$ is closed when $du,dv$ are nonzero. This explains the useful structural idea behind Eq. (54), even though the printed star formulas are wrong.
 
 Section 5 expands a shift of the potential as
 
-$$
+$$\begin{align}
 \delta B=\Upsilon+v\wedge\alpha+u\wedge\beta+v\wedge u\,\gamma.
-$$
+\end{align}$$
 
 The proposed parameter constraints are
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 d_4\Upsilon+dv\wedge\alpha+du\wedge\beta&=0,\\
 *_4A&=A,& A&:=d_4\alpha-\mathcal L_U\Upsilon,\\
 *_4B&=-B,& B&:=d_4\beta-\mathcal L_V\Upsilon.
-\end{aligned}
-$$
+\end{aligned}$$
 
 There is no restriction on $D:=d_4\gamma-\mathcal L_V\alpha+\mathcal L_U\beta$. These transformations can change $H$ and are distinct from ordinary $\delta B=d\lambda$. On the flat background, their consistent projected variation is
 
-$$
-\delta l=\frac1{2\mathcal N}*_4D-v\wedge A-u\wedge B
-+\frac12v\wedge u\wedge D,
-\qquad
-\delta T_+=\mathcal N^{-1}*_4D-v\wedge A-u\wedge B.
-$$
+$$\begin{align}
+\delta l=\frac1{2\mathcal N}*_4D-v\wedge A-u\wedge B +\frac12v\wedge u\wedge D, \qquad \delta T_+=\mathcal N^{-1}*_4D-v\wedge A-u\wedge B.
+\end{align}$$
 
 The double-null term in $\delta l$ is essential for anti-selfduality; it drops from $\delta T_+$ by projection rather than by being zero. These flat formulas, extended as algebraic frame relations, do not certify the source's curved variation of the action.
 
@@ -317,26 +285,21 @@ With the consistent star, the printed identification $X_{UV}=-\gamma$, $X_V=\bet
 
 Even a repaired local matching requires the gauge parameters to obey the induced chirality constraints and the same boundary/global conditions as $X$. On a finite null region, a transformation with nonzero boundary symplectic flux or charge is not automatically a disposable gauge direction. The paper drops boundary terms at the beginning and does not answer that CPS question.
 
-# Supersymmetric extension and gamma conventions
+# Supersymmetric Extension and Gamma Conventions
 
 The source proposes a scalar $\phi$, symplectic-Majorana-Weyl doublet $\lambda_I$ and conformal Killing spinors $\varepsilon_I$ with $\nabla_M\varepsilon_I=\Gamma_M\eta_I$. Its transformations are
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \delta\phi&=-i\bar\varepsilon^I\lambda_I,\\
 \delta B_{MN}&=i\bar\varepsilon^I\Gamma_{MN}\lambda_I,\\
-\delta\lambda_I&=\tfrac1{12}\Gamma^{MNP}\varepsilon_I T_{MNP}
-+\Gamma^M\varepsilon_I\partial_M\phi+4\eta_I\phi.
-\end{aligned}
-$$
+\delta\lambda_I&=\tfrac1{12}\Gamma^{MNP}\varepsilon_I T_{MNP} +\Gamma^M\varepsilon_I\partial_M\phi+4\eta_I\phi.
+\end{aligned}$$
 
 The matter density is
 
-$$
-\mathcal L_{\rm matter}
-=-\frac{\sqrt{-g}}2(\partial\phi)^2-\frac{\sqrt{-g}}{10}R\phi^2
-+\frac{i\sqrt{-g}}2\bar\lambda^I\Gamma^M\nabla_M\lambda_I.
-$$
+$$\begin{align}
+\mathcal L_{\rm matter} =-\frac{\sqrt{-g}}2(\partial\phi)^2-\frac{\sqrt{-g}}{10}R\phi^2 +\frac{i\sqrt{-g}}2\bar\lambda^I\Gamma^M\nabla_M\lambda_I.
+\end{align}$$
 
 The curvature coefficient is the standard six-dimensional conformal scalar value: $\xi=(d-2)/[4(d-1)]=1/5$ in $-\tfrac12\xi R\phi^2$. The paper states that its matter variation is $-\sqrt{-g}\delta B_{NP}\nabla_MT^{MNP}/4$, canceling the tensor variation. This statement uses the same $T$ whose bosonic normalization/sign is inconsistent above. It is therefore **Source-derived and not independently verified** as a curved supersymmetry proof.
 
@@ -344,7 +307,7 @@ The curvature coefficient is the standard six-dimensional conformal scalar value
 
 The statement that Dirac currents of suitable conformal Killing spinors realize the necessary background properties is taken from the cited work; no global existence of those spinors on an arbitrary chosen six-manifold is established here. The bosonic restrictions themselves do not imply the existence of supersymmetry.
 
-# Global notation dictionary
+# Global Notation Dictionary
 
 | Symbol | Definition and scope |
 |---|---|
@@ -361,7 +324,7 @@ The statement that Dirac currents of suitable conformal Killing spinors realize 
 | C with three indices | Flat action momentum, defined by differentiation of the quadratic action |
 | C in Appendix D | Charge-conjugation matrix, a distinct object |
 
-# Equation ledger, CPS translation and verification boundary
+# Equation Ledger, CPS Translation and Verification Boundary
 
 | Object | What can be reused | What prevents a stronger claim |
 |---|---|---|

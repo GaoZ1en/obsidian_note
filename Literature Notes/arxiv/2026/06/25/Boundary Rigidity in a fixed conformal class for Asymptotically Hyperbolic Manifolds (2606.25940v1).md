@@ -15,7 +15,7 @@ tags: []
 
 Daily overview: [[2026_06_25_overview]]
 
-# Why this belongs in the daily notes
+# Why This Belongs in the Daily Notes
 
 This is not a field-theory boundary-condition paper. It is a geometric inverse problem for asymptotically hyperbolic manifolds. The reason to keep it is that it gives a clean theorem about how much conformal-infinity boundary distance data can determine in an AH geometry when the conformal class is fixed.
 
@@ -26,7 +26,7 @@ For AdS-related work, it is a background reference for the distinction between:
 1. proving rigidity only after imposing simplicity or negative curvature;
 1. fixing the conformal class rather than allowing arbitrary boundary-fixing diffeomorphisms.
 
-# AH metrics and renormalized distance
+# AH Metrics and Renormalized Distance
 
 An asymptotically hyperbolic metric is conformally compact. Near the boundary, one chooses a boundary defining function $\rho$ and writes the compactified metric
 
@@ -44,7 +44,7 @@ with the precise convention depending on the chosen representatives at the confo
 
 The renormalized boundary distance function assigns this finite part to geodesics connecting boundary points. In negative curvature, where homotopy classes matter, the marked version records the renormalized length in each homotopy class.
 
-# Main rigidity statements
+# Main Rigidity Statements
 
 The first theorem is the simple AH case. If $g$ and $\hat g$ lie in the same conformal class, both are simple AH metrics, and their renormalized boundary distance functions agree for chosen conformal representatives at infinity, then
 
@@ -60,7 +60,7 @@ g=\hat g.
 
 The fixed-conformal-class hypothesis is essential for this note's use: the theorem is not claiming that arbitrary AH metrics are determined by the boundary distance without gauge or class restrictions.
 
-# Proof route
+# Proof Route
 
 The proof compares two conformal metrics
 
@@ -84,7 +84,7 @@ $$\begin{align}
 
 with equality only at $c=1$. Applied to the conformal factor along the relevant geodesic data, the equality of renormalized distances and volumes forces the integrand to vanish, hence $f=0$.
 
-# Local interpretation
+# Local Interpretation
 
 For AdS notes, the source is most useful as a precise inverse-boundary-data statement:
 
@@ -96,7 +96,7 @@ For AdS notes, the source is most useful as a precise inverse-boundary-data stat
 
 This should not be cited as evidence that arbitrary AdS boundary conditions determine the bulk. It is a conditional rigidity theorem for a specific geometric inverse problem.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

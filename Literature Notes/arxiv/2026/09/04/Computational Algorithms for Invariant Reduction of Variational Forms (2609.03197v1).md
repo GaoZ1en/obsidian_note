@@ -21,14 +21,14 @@ Daily overview: [[2026_09_04_overview]]
 
 Reason codes: `T1-symplectic`, `T3-math`.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential:** §§3–6 for the shifted tangent representation, invariant-reduction mechanism, evolution algorithm, and general descent theorem.
 - **Application layer:** §§7–8 for point-symmetry shortcuts, quotient systems, and the six worked examples.
 - **Technical reference:** §2 and Appendices A, C, D for jet notation, graded signs, the descent proof, bicomplex input, and the homotopy.
 - **Implementation reference:** Appendix B and the linked Maple repository. The executable worksheets require Maple 2026 with `DifferentialGeometry` and `JetCalculus`.
 
-# Source map
+# Source Map
 
 1. **§1 Introduction:** identifies the missing computational counterpart of invariant reduction and states three contributions.
 2. **§2 Notation and dictionary:** defines jets, Cartan forms, horizontal/contact bicomplexes, differential equations, regularity, $\ell$-normality, variational forms, and the application-oriented dictionary.
@@ -44,31 +44,31 @@ Reason codes: `T1-symplectic`, `T3-math`.
 12. **Appendix C:** proves the descent theorem and the quotient-system isomorphism used in §7.
 13. **Appendix D:** constructs the symbol-lowering homotopy.
 
-# Theory, notation, and assumptions
+# Theory, Notation, and Assumptions
 
-## Jet-space data
+## Jet-Space Data
 
 The ambient infinite jet space is $J^\infty(n,m)$ with independent variables $x=(x^1,\ldots,x^n)$, fields $u=(u^1,\ldots,u^m)$, jets $u^i_\alpha$, and total derivatives
 
-$$
+$$\begin{align}
 D_{x^i}=\partial_{x^i}+u^j_{\alpha+x^i}\partial_{u^j_\alpha}.
-$$
+\end{align}$$
 
 Cartan 1-forms are
 
-$$
+$$\begin{align}
 \theta^j_\alpha=du^j_\alpha-u^j_{\alpha+x^i}dx^i.
-$$
+\end{align}$$
 
 The quotient modules $E_0^{p,k}=\mathcal C^p\Lambda^{p+k}/\mathcal C^{p+1}\Lambda^{p+k}$ carry the horizontal differential $d_0$ and the vertical differential $d_v=d-d_0$. The first-page cohomology $E_1^{p,k}$ contains conservation laws at $p=0$, variational 1-forms at $p=1$, and variational 2-forms at $p=2$; a presymplectic structure is additionally $d_1$-closed.
 
-## Equation and symmetry data
+## Equation and Symmetry Data
 
 A system $F=0$ has infinite prolongation
 
-$$
+$$\begin{align}
 \mathcal E=\{D_\alpha F^i=0\}.
-$$
+\end{align}$$
 
 Its linearization is $l_F(\varphi)=E_\varphi(F)$. The paper assumes local regularity of the differential ideal and a finite-dimensional inverse-limit presentation; it also assumes trivial positive-degree de Rham cohomology for the systems used in the reduction argument.
 
@@ -76,124 +76,115 @@ $\mathcal E$ is called $\ell$-normal when a total differential operator $\Delta$
 
 For a symmetry $X=E_\varphi|_\mathcal E$, the invariant subsystem is obtained by adjoining $\varphi=0$ and its differential consequences; this is $\mathcal E_X$. This is a formal local PDE reduction, not automatically a smooth global orbit-space quotient.
 
-## Shifted tangent system
+## Shifted Tangent System
 
 Append anticommuting perturbations $q^i_\alpha$ and the linearized equation:
 
-$$
+$$\begin{align}
 \mathfrak T[1]\mathcal E:\qquad F=0,\qquad l_F(q)=0.
-$$
+\end{align}$$
 
 Internal degree counts powers of $q$. The correspondence is
 
-$$
-\theta^{i_1}_{\alpha_1}\wedge\cdots\wedge\theta^{i_p}_{\alpha_p}\wedge\xi
-\longleftrightarrow
+$$\begin{align}
+\theta^{i_1}_{\alpha_1}\wedge\cdots\wedge\theta^{i_p}_{\alpha_p}\wedge\xi \longleftrightarrow
 q^{i_1}_{\alpha_1}\cdots q^{i_p}_{\alpha_p}\,\xi.
-$$
+\end{align}$$
 
 Thus a variational $p$-form on $\mathcal E$ becomes an ordinary horizontal conservation law of $\mathfrak T[1]\mathcal E$ with internal degree $p$. The lift of $X$ is
 
-$$
+$$\begin{align}
 \mathcal X=E_{\widetilde\varphi},qquad
 \widetilde\varphi=(\varphi,E_q\varphi).
-$$
+\end{align}$$
 
-# Main mechanism and derivation map
+# Main Mechanism and Derivation Map
 
 Let $\omega\in E_0^{p,n-1}(\mathcal E)$ represent an $X$-invariant class. Invariance means that its Lie derivative is horizontally exact:
 
-$$
+$$\begin{align}
 \mathcal L_X\omega=(-1)^p d_0\vartheta.
-$$
+\end{align}$$
 
 The restriction $\vartheta|_{\mathcal E_X}$ represents the reduced class in $E_1^{p,n-2}(\mathcal E_X)$. On the shifted tangent system, the same equation is an ordinary conservation-law potential equation for $\omega'$ and the lifted symmetry $\mathcal X$.
 
 The logic is therefore
 
-$$
-\text{variational }p\text{-form}
-\to \text{degree-}p\text{ conservation law of }\mathfrak T[1]\mathcal E
-\to \mathcal X\text{-invariance}
-\to d_0\text{-potential}
-\to \text{restriction to }\mathcal E_X.
-$$
+$$\begin{align}
+\text{variational }p\text{-form} \to \text{degree-}p\text{ conservation law of }\mathfrak T[1]\mathcal E \to \mathcal X\text{-invariance} \to d_0\text{-potential} \to \text{restriction to }\mathcal E_X.
+\end{align}$$
 
-# Algorithm 1: evolution systems
+# Algorithm 1: Evolution Systems
 
 For
 
-$$
+$$\begin{align}
 F^i=u^i_t-f^i=0,
-$$
+\end{align}$$
 
 write the shifted system as $\widetilde F=(F_0,F_1)$ and a left conservation-law characteristic as $(\psi'^p,\psi'^{p-1})$. The right characteristic is
 
-$$
+$$\begin{align}
 \psi_r=(\psi'^p,(-1)^{p-1}\psi'^{p-1}).
-$$
+\end{align}$$
 
 The algorithm is:
 
 1. **Invariance:** check
 
-   $$
-   E_{\widetilde\varphi}(\psi_r)+l^*_{\widetilde\varphi}(\psi_r)=0.
-   $$
+$$\begin{align}
+E_{\widetilde\varphi}(\psi_r)+l^*_{\widetilde\varphi}(\psi_r)=0.
+\end{align}$$
 
 2. **Integration by parts:** construct $A$ such that
 
-   $$
-   \langle l_{\widetilde\varphi}(\widetilde F),\psi_r\rangle
-   -\langle\widetilde F,l^*_{\widetilde\varphi}(\psi_r)\rangle
-   =d_0(A\widetilde F).
-   $$
+$$\begin{align}
+\langle l_{\widetilde\varphi}(\widetilde F),\psi_r\rangle -\langle\widetilde F,l^*_{\widetilde\varphi}(\psi_r)\rangle =d_0(A\widetilde F).
+\end{align}$$
 
 3. **Horizontal homotopy:** solve
 
-   $$
-   \mathcal L_{E_{\widetilde\varphi}}\widehat\omega'-A\widetilde F
-   =d_0((-1)^p\widehat\vartheta').
-   $$
+$$\begin{align}
+\mathcal L_{E_{\widetilde\varphi}}\widehat\omega'-A\widetilde F =d_0((-1)^p\widehat\vartheta').
+\end{align}$$
 
 Then $\widehat\vartheta'|_{\mathfrak T[1]\mathcal E}$ corresponds to the reduced variational form on $\mathcal E_X$. At $p=0$ this is ordinary conservation-law reduction; $p=1,2$ give variational 1-forms and variational/presymplectic 2-forms.
 
-# The general descent theorem
+# The General Descent Theorem
 
 For an $\ell$-normal system and $p\geq1$, let $\psi$ be the internal-degree-$(p-1)$ part of the shifted-system characteristic, let $E_\varphi(F)=\Phi(F)$, and integrate by parts to obtain
 
-$$
+$$\begin{align}
 \psi(\Phi(F))=(\Phi^*_{(p-1)}\psi)F+d_0\nu(F).
-$$
+\end{align}$$
 
 Theorem 1 constructs
 
-$$
+$$\begin{align}
 \gamma:\varkappa(n,m)\to E_0^{p-1,n-2}(n,m)
-$$
+\end{align}$$
 
 with
 
-$$
-(\nu\circ l_F-\gamma_{\widehat\omega}\circ l_\varphi)|_{\mathcal E_X}
-=d_0\circ\gamma|_{\mathcal E_X}.
-$$
+$$\begin{align}
+(\nu\circ l_F-\gamma_{\widehat\omega}\circ l_\varphi)|_{\mathcal E_X} =d_0\circ\gamma|_{\mathcal E_X}.
+\end{align}$$
 
 Alternatizing $\gamma$ gives a form $\widehat\omega_\gamma|_{\mathcal E_X}$. It represents the reduced class provided there is no nonzero total differential operator $\square$ satisfying
 
-$$
+$$\begin{align}
 \square\circ l_F|_{\mathcal E_X}=0.
-$$
+\end{align}$$
 
 The constructive descent repeatedly removes the highest-order symbol with the Appendix-D homotopy. This is the non-evolution analogue of integration by parts, but it applies here only for positive internal degree.
 
-# Point symmetries and quotient systems
+# Point Symmetries and Quotient Systems
 
 When the symmetry is equivalent to $\partial_\tau$ and the equation is $\tau$-independent, the invariant system can descend to a quotient system $\mathcal S$ with one fewer independent variable. Under the paper's compatibility and $\ell$-normality assumptions, the relevant first-page groups on $\mathcal S$ and $\mathcal E_X$ are isomorphic. For an invariant ambient representative, the reduction can collapse to contraction with the point-symmetry generator, as in the KdV and Euler examples.
 
 This is the closest part of the paper to regional reduction, but the quotient is a symmetry quotient of a formal PDE system; it is not the physical quotient by gauge degeneracies of a covariant presymplectic form.
 
-# Worked-example ledger
+# Worked-Example Ledger
 
 | Example | Input structure | Reduction output | Scope |
 |---|---|---|---|
@@ -204,49 +195,49 @@ This is the closest part of the paper to regional reduction, but the quotient is
 | Laplace equation | presymplectic 2-form | $(y\theta_y+x\theta_x)\wedge\theta$ on rotational invariants | general descent without evolution form |
 | 2D incompressible Euler | energy conservation law | rotational energy-balance law | direct contraction shortcut |
 
-# Reproducible checks
+# Reproducible Checks
 
 For the KdV traveling-wave equation
 
-$$
+$$\begin{align}
 U'''+UU'+cU'=0,
-$$
+\end{align}$$
 
 the two reduced quantities are
 
-$$
+$$\begin{align}
 I_1=\frac{1}{2}U^2+U^{\prime\prime}+cU,
-$$
+\end{align}$$
 
-$$
+$$\begin{align}
 I_2=\frac{1}{3}U^3+U U^{\prime\prime}-\frac{1}{2}(U^{\prime})^2+\frac{c}{2}U^2.
-$$
+\end{align}$$
 
 For the running $(1+2)$-dimensional equation, the paper uses
 
-$$
+$$\begin{align}
 F=u_t-u_x^2-u_{xxx}-u_{xxy}
-$$
+\end{align}$$
 
 and
 
-$$
+$$\begin{align}
 \lambda=\frac{1}{2}u_t u_x+\frac{1}{2}u_{xx}(u_{xx}+u_{xy})-\frac{1}{3}u_x^3.
-$$
+\end{align}$$
 
 The scaling characteristic is
 
-$$
+$$\begin{align}
 \varphi_s=u+3tu_t+xu_x+yu_y,
-$$
+\end{align}$$
 
 and the associated cosymmetry is
 
-$$
+$$\begin{align}
 \psi=2u_x+3tu_{tx}+xu_{xx}+yu_{xy}.
-$$
+\end{align}$$
 
-## Verification log
+## Verification Log
 
 - **Checked:** Mathematica gives $D_zI_1-(U'''+UU'+cU')=0$ identically.
 - **Checked:** Mathematica gives $D_zI_2-U(U'''+UU'+cU')=0$ identically.
@@ -256,17 +247,13 @@ $$
 - **Blocked:** Maple 2026 is not installed in the current environment, so the six official worksheets and their claimed 38 zero checkpoints were not independently executed. The files were retrieved and inventoried, but stored outputs are not independent verification.
 - **Not independently verified:** the complete bicomplex proof of Theorem 1, column exactness, the general no-left-annihilator claim, the full $p=2$ homotopy output, the Pavlov reduction, and the global behavior of any quotient system.
 
-# Translation to the vault's CPS and gluing language
+# Translation to the Vault's CPS and Gluing Language
 
 The reusable object is not a new physical gluing product. It is a reduction pipeline for a local variational bicomplex:
 
-$$
-(\mathcal E,\omega,X)
-\mapsto
-(\mathcal E_X,[\vartheta]),
-\qquad
-\mathcal L_X\omega=(-1)^p d_0\vartheta.
-$$
+$$\begin{align}
+(\mathcal E,\omega,X) \mapsto (\mathcal E_X,[\vartheta]), \qquad \mathcal L_X\omega=(-1)^p d_0\vartheta.
+\end{align}$$
 
 For action/CPS work, the most promising import is algorithmic handling of a presymplectic current represented as a variational 2-form. Before using it for gauge or regional sewing, one would still need:
 
@@ -278,7 +265,7 @@ For action/CPS work, the most promising import is algorithmic handling of a pres
 
 The immediate useful comparison is therefore with symmetry-reduced PDE/CPS examples, not with the scalar DtN/Schur sewing theorem itself. The paper supplies a computational language for reducing attached structures after a symmetry constraint; it does not supply interface composition or associativity.
 
-# Limitations and stop rule
+# Limitations and Stop Rule
 
 - Local formal jets are not global solution spaces.
 - $\ell$-normality excludes the untreated gauge-complex case central to Maxwell and gravity.

@@ -18,7 +18,7 @@ Back to [[2026_07_01_overview]].
 
 This is a medium-priority technical note. The paper is not primarily a new boundary-charge result, but it is useful as a formalism reference for comparing Lagrangian momentum maps, multisymplectic momentum maps, polysymplectic constraints, and instantaneous Hamiltonian data in first-order gravity.
 
-# Geometric-covariant setup
+# Geometric-Covariant Setup
 
 The source begins with a review of geometric-covariant classical field theory. The field bundle, jet bundle, Lagrangian density, Poincare-Cartan form, multisymplectic phase space, polysymplectic constraint algorithm, and space-plus-time decomposition are set up before specializing to Palatini-Cartan gravity.
 
@@ -30,7 +30,7 @@ $$\begin{align}
 
 This is valuable because it follows the same broad chain as CPS notes, but in a geometric mechanics language rather than the Lee-Wald/Iyer-Wald language.
 
-# Palatini-Cartan variables and equations
+# Palatini-Cartan Variables and Equations
 
 The Palatini-Cartan model is the first-order tetrad/spin-connection formulation of four-dimensional gravity. The dynamical variables are the coframe and Lorentz connection. The Lagrangian-level analysis recovers:
 
@@ -41,7 +41,7 @@ The Palatini-Cartan model is the first-order tetrad/spin-connection formulation 
 
 The technical value is not the field equations themselves, but the way the paper organizes them through momentum maps. The Lagrangian momentum map is associated with the action of the gauge symmetry group on the configuration space, and its Noether currents provide a reference for comparing first-order gravity charge conventions.
 
-# Multisymplectic and polysymplectic data
+# Multisymplectic and Polysymplectic Data
 
 Within the multisymplectic approach, the paper studies the action of the gauge symmetry group on the multimomenta phase space and constructs an induced momentum map. The stated purpose is to recover the admissible Cauchy data of Palatini-Cartan gravity.
 
@@ -55,7 +55,7 @@ $$\begin{align}
 
 This can be compared with local notes where first-order gravity or BF-like systems require separating gauge directions, constraints, and true boundary or corner data.
 
-# Space-plus-time decomposition
+# Space-Plus-Time Decomposition
 
 The paper finally uses the multisymplectic framework as the starting point for a space-plus-time decomposition. The output is:
 
@@ -65,7 +65,7 @@ The paper finally uses the multisymplectic framework as the starting point for a
 
 The local lesson is that the covariant momentum-map data and the instantaneous Hamiltonian data are meant to be compatible descriptions of the same first-order gravity system. This is useful for comparing covariant and canonical treatments of gravitational charges, especially when a boundary analysis later requires knowing which transformations are constraints and which have nontrivial momenta.
 
-# Relation to current projects
+# Relation to Current Projects
 
 - `T1-Wald-CPS` nearby: the paper is not written in Lee-Wald notation, but it handles the same structural question of how symmetries, momenta, and constraints organize first-order gravity.
 - `T2-model`: Palatini-Cartan gravity is a direct first-order gravity testbed.
@@ -73,6 +73,6 @@ The local lesson is that the covariant momentum-map data and the instantaneous H
 
 This is not high-priority today because it does not center on finite-boundary charges, corner modes, or a new charge algebra. Its best use is as a formalism reference when a local first-order-gravity note needs a clean momentum-map or Dirac-bracket comparison.
 
-# Verification note
+# Verification Note
 
 No independent tensor or xAct verification was performed for this medium note. The technical chain above is source-derived from the official arXiv abstract and HTML structure. A useful later check would be to reproduce the Palatini-Cartan Euler-Lagrange equations and the second-class constraint matrix in xAct or Mathematica after fixing the paper's local index conventions.

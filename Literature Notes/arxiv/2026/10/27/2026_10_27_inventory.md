@@ -306,7 +306,7 @@ Total deduplicated entries: 294
 | [2610.31738](https://arxiv.org/abs/2610.31738) | math-ph:replacement | math-ph, physics.flu-dyn | Strongly non-linear continuous model for wave propagation in 2D granular media: derivation and hyperbolicity analysis | Sebastiano Cominelli, Régis Cottereau, Sergey Gavrilyuk, Bruno Lombard, Fabien Petitpas | 23 pages, 8 figures |
 | [2610.31750](https://arxiv.org/abs/2610.31750) | hep-th:replacement | hep-th | Six and seven dimensional extrema of Non-SUSY heterotic theory with non-maximal enhancements | Stevell Muller, Daniel Robbins, Hassaan Saleem | 50 pages, 18 tables, 1 figure, typos corrected |
 
-## Placement and metadata audit
+## Placement and Metadata Audit
 
 The helper table above is preserved verbatim. All 294 official IDs were screened. The audit below restores primary category and case-sensitive cross-list codes from official metadata, pins versions from official listing HTML links or abstract metadata, and records one exclusive placement per ID. Technical evidence is recorded in the overview and the four selected deep notes. Deferred rows contain metadata only.
 

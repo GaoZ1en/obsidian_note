@@ -16,29 +16,25 @@ tags: []
 
 Daily overview: [[2026_09_16_overview]]
 
-# Result and claim boundary
+# Result and Claim Boundary
 
 The paper constructs an infinite-dimensional Lie algebra
 
-$$
+$$\begin{align}
 \mathcal Cw_{1+\infty}
-$$
+\end{align}$$
 
 with three key embeddings:
 
-$$
-\mathfrak{so}(4,2)\subset\mathcal Cw_{1+\infty},
-\qquad
-\mathcal Lw_{1+\infty}\subset\mathcal Cw_{1+\infty},
-\qquad
-\mathcal L_\Lambda w_{1+\infty}\subset\mathcal Cw_{1+\infty}.
-$$
+$$\begin{align}
+\mathfrak{so}(4,2)\subset\mathcal Cw_{1+\infty}, \qquad \mathcal Lw_{1+\infty}\subset\mathcal Cw_{1+\infty}, \qquad \mathcal L_\Lambda w_{1+\infty}\subset\mathcal Cw_{1+\infty}.
+\end{align}$$
 
 Its cleanest realization is the Lie algebra of homogeneous holomorphic vector fields on projective twistor space, quotient by vertical multiples of the Euler homogeneity vector. In self-dual conformal gravity this becomes a gauge symmetry of the BN twistor action.
 
 The construction is an algebraic and twistor-action result. It does not provide a covariant-phase-space derivation of finite surface charges, a flux law, an integrability analysis, or a centrally extended boundary charge algebra for a specified four-dimensional phase space.
 
-# Source map
+# Source Map
 
 1. **Conformal gravity:** reviews the Weyl-squared action, Bach equation, self-dual truncation, and the six linearized conformal-gravity states.
 2. **Known soft algebras:** states the flat $\mathcal Lw_{1+\infty}$ algebra and its $\Lambda$-deformation.
@@ -49,386 +45,323 @@ The construction is an algebraic and twistor-action result. It does not provide 
 7. **Twistor derivation:** identifies the algebra with gauge vector fields of the self-dual conformal-gravity twistor action.
 8. **Appendix:** constructs all projective vector fields from Hamiltonian generators $M_{AB}$ obtained by repeated conformal action on the original $M_{12}$ tower.
 
-# Conformal-gravity setting
+# Conformal-Gravity Setting
 
 The four-dimensional conformal-gravity action is
 
-$$
-S[g]=\frac1{\lambda^2}\int_M
-C^{\mu\nu\rho\sigma}C_{\mu\nu\rho\sigma}\sqrt{|g|}\,d^4x,
-$$
+$$\begin{align}
+S[g]=\frac1{\lambda^2}\int_M C^{\mu\nu\rho\sigma}C_{\mu\nu\rho\sigma}\sqrt{|g|}\,d^4x,
+\end{align}$$
 
 with Bach equation
 
-$$
-B_{\mu\nu}\equiv
-\left(2\nabla^\rho\nabla^\sigma+R^{\rho\sigma}\right)
+$$\begin{align}
+B_{\mu\nu}\equiv \left(2\nabla^\rho\nabla^\sigma+R^{\rho\sigma}\right)
 C_{\mu\rho\nu\sigma}=0.
-$$
+\end{align}$$
 
 The Weyl tensor splits into self-dual and anti-self-dual spinors,
 
-$$
-C_{\alpha\dot\alpha\beta\dot\beta\gamma\dot\gamma\delta\dot\delta}
-=\Psi_{\alpha\beta\gamma\delta}
-\varepsilon_{\dot\alpha\dot\beta}\varepsilon_{\dot\gamma\dot\delta}
-+\widetilde\Psi_{\dot\alpha\dot\beta\dot\gamma\dot\delta}
-\varepsilon_{\alpha\beta}\varepsilon_{\gamma\delta}.
-$$
+$$\begin{align}
+C_{\alpha\dot\alpha\beta\dot\beta\gamma\dot\gamma\delta\dot\delta} =\Psi_{\alpha\beta\gamma\delta} \varepsilon_{\dot\alpha\dot\beta}\varepsilon_{\dot\gamma\dot\delta} +\widetilde\Psi_{\dot\alpha\dot\beta\dot\gamma\dot\delta} \varepsilon_{\alpha\beta}\varepsilon_{\gamma\delta}.
+\end{align}$$
 
 Self-dual conformal gravity is imposed by the Lagrange-multiplier action
 
-$$
-S[g,b]=\int_M b^{\alpha\beta\gamma\delta}
-\Psi_{\alpha\beta\gamma\delta}\sqrt{|g|}\,d^4x,
-$$
+$$\begin{align}
+S[g,b]=\int_M b^{\alpha\beta\gamma\delta} \Psi_{\alpha\beta\gamma\delta}\sqrt{|g|}\,d^4x,
+\end{align}$$
 
 whose field equation includes $\Psi_{\alpha\beta\gamma\delta}=0$.
 
 Around flat space and in conformal gauge, the linearized Bach equation reduces to
 
-$$
+$$\begin{align}
 \Box^2h_{\mu\nu}=0.
-$$
+\end{align}$$
 
 The six propagating states consist of two helicity-$\pm2$ pairs and one helicity-$\pm1$ pair. In the self-dual subsector only the three positive-helicity states remain: an Einstein graviton, a conformal graviton, and a spin-one mode. These become the three towers of the quotient algebra below.
 
-# The input soft algebras
+# The Input Soft Algebras
 
 The flat gravitational soft algebra is
 
-$$
-[w^p_{\bar m,m},w^q_{\bar n,n}]
-=\bigl(\bar m(q-1)-\bar n(p-1)\bigr)
-w^{p+q-2}_{\bar m+\bar n,m+n}.
-$$
+$$\begin{align}
+[w^p_{\bar m,m},w^q_{\bar n,n}] =\bigl(\bar m(q-1)-\bar n(p-1)\bigr) w^{p+q-2}_{\bar m+\bar n,m+n}.
+\end{align}$$
 
 The standard wedge is
 
-$$
-p\in\left\{1,\frac32,2,\ldots\right\},
-\quad
-\bar m\in\{1-p,2-p,\ldots,p-1\},
-\quad
-m\in\mathbb Z+p.
-$$
+$$\begin{align}
+p\in\left\{1,\frac32,2,\ldots\right\}, \quad \bar m\in\{1-p,2-p,\ldots,p-1\}, \quad m\in\mathbb Z+p.
+\end{align}$$
 
 The $\Lambda$-deformation is
 
-$$
-\begin{aligned}
-[w^p_{\bar m,m},w^q_{\bar n,n}]={}&
-\bigl(\bar m(q-1)-\bar n(p-1)\bigr)
-w^{p+q-2}_{\bar m+\bar n,m+n}\\
+$$\begin{aligned}
+[w^p_{\bar m,m},w^q_{\bar n,n}]={}& \bigl(\bar m(q-1)-\bar n(p-1)\bigr) w^{p+q-2}_{\bar m+\bar n,m+n}\\
 &-\Lambda\bigl(m(q-2)-n(p-2)\bigr)
 w^{p+q-1}_{\bar m+\bar n,m+n}.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Its global algebra is $\mathfrak{so}(3,2)$ in AdS$_4$ or $\mathfrak{so}(4,1)$ in dS$_4$, subject to the appropriate real form and sign of $\Lambda$.
 
-# Projective definition of the conformal w-algebra
+# Projective Definition of the Conformal W-Algebra
 
-## Four towers before quotienting
+## Four Towers Before Quotienting
 
 Introduce generators
 
-$$
-C_A[a_1,a_2,a_3,a_4],\qquad
-A\in\{1,2,3,4\},\qquad
-a_i\in\mathbb Z,\qquad
-\sum_{i=1}^4a_i=1,
-$$
+$$\begin{align}
+C_A[a_1,a_2,a_3,a_4],\qquad A\in\{1,2,3,4\},\qquad a_i\in\mathbb Z,\qquad \sum_{i=1}^4a_i=1,
+\end{align}$$
 
 with bracket
 
-$$
-[C_A[a_i],C_B[b_i]]
-=b_A C_B[a_i+b_i-\delta_{Ai}]
--a_B C_A[a_i+b_i-\delta_{Bi}].
-$$
+$$\begin{align}
+[C_A[a_i],C_B[b_i]] =b_A C_B[a_i+b_i-\delta_{Ai}] -a_B C_A[a_i+b_i-\delta_{Bi}].
+\end{align}$$
 
 The four integer labels are related to the celestial labels by
 
-$$
-a_1=p+\bar m-1,\qquad
-a_2=p-\bar m-1,\qquad
-a_3=-p+m+\frac32,\qquad
-a_4=-p-m+\frac32.
-$$
+$$\begin{align}
+a_1=p+\bar m-1,\qquad a_2=p-\bar m-1,\qquad a_3=-p+m+\frac32,\qquad a_4=-p-m+\frac32.
+\end{align}$$
 
 The common wedges become $a_1,a_2\geq0$ or, in the alternative half-plane realization, $a_1,a_3\geq0$.
 
-## Homogeneity ideal and three physical towers
+## Homogeneity Ideal and Three Physical Towers
 
 The algebra contains the ideal
 
-$$
-H[a_i]=\sum_{A=1}^4C_A[a_i+\delta_{Ai}],
-\qquad \sum_i a_i=0.
-$$
+$$\begin{align}
+H[a_i]=\sum_{A=1}^4C_A[a_i+\delta_{Ai}], \qquad \sum_i a_i=0.
+\end{align}$$
 
 The conformal w-algebra is
 
-$$
-\mathcal Cw_{1+\infty}
-=\widetilde{\mathcal C}w_{1+\infty}/\mathfrak h,
-$$
+$$\begin{align}
+\mathcal Cw_{1+\infty} =\widetilde{\mathcal C}w_{1+\infty}/\mathfrak h,
+\end{align}$$
 
 where $\mathfrak h$ is generated by the $H[a_i]$. In twistor coordinates, $H[a_i]$ is a Laurent monomial times the Euler vector
 
-$$
+$$\begin{align}
 E=\sum_A Z^A\frac{\partial}{\partial Z^A}.
-$$
+\end{align}$$
 
 It is vertical under projectivization and hence acts trivially on $T\mathbb{PT}$. Quotienting removes one linear combination of the four towers, leaving three.
 
-# Global conformal subalgebra
+# Global Conformal Subalgebra
 
 The generators with nonnegative $a_i$ give the $15$ global modes. Define
 
-$$
+$$\begin{align}
 T^A{}_B=C_B[\delta_i^A].
-$$
+\end{align}$$
 
 Because $\sum_AT^A{}_A=0$ in the quotient, these obey
 
-$$
-[T^A{}_B,T^C{}_D]
-=\delta^C_BT^A{}_D-\delta^A_DT^C{}_B,
-$$
+$$\begin{align}
+[T^A{}_B,T^C{}_D] =\delta^C_BT^A{}_D-\delta^A_DT^C{}_B,
+\end{align}$$
 
 the $\mathfrak{sl}(4,\mathbb C)\cong\mathfrak{so}(6,\mathbb C)$ algebra. Appropriate Lorentzian reality conditions select
 
-$$
+$$\begin{align}
 \mathfrak{su}(2,2)\cong\mathfrak{so}(4,2).
-$$
+\end{align}$$
 
 The familiar Lorentz, translation, special-conformal, and dilatation generators are linear combinations of the $T^A{}_B$. The intersection with the flat soft algebra is the seven-generator chiral Poincaré algebra; the intersection with the $\Lambda$-deformed soft algebra is the ten-generator $(A)dS$ isometry algebra.
 
-# Embedding flat, AdS, and dS soft algebras
+# Embedding Flat, AdS, and dS Soft Algebras
 
 Define Hamiltonian-type generators for $\sum_i a_i=2$,
 
-$$
-M_{AB}[a_i]
-=a_A C_B[a_i-\delta_{iA}]
--a_B C_A[a_i-\delta_{iB}].
-$$
+$$\begin{align}
+M_{AB}[a_i] =a_A C_B[a_i-\delta_{iA}] -a_B C_A[a_i-\delta_{iB}].
+\end{align}$$
 
 Two spin-two towers are
 
-$$
-u^p_{\bar m,m}=\frac12M_{12}
-\left[p+\bar m-1,p-\bar m-1,-p+m+2,-p-m+2\right],
-$$
+$$\begin{align}
+u^p_{\bar m,m}=\frac12M_{12} \left[p+\bar m-1,p-\bar m-1,-p+m+2,-p-m+2\right],
+\end{align}$$
 
-$$
-v^p_{\bar m,m}=\frac12M_{34}
-\left[p+\bar m-1,p-\bar m-1,-p+m+2,-p-m+2\right].
-$$
+$$\begin{align}
+v^p_{\bar m,m}=\frac12M_{34} \left[p+\bar m-1,p-\bar m-1,-p+m+2,-p-m+2\right].
+\end{align}$$
 
 Their brackets are
 
-$$
-[u^p_{\bar m,m},u^q_{\bar n,n}]
-=\bigl(\bar m(q-1)-\bar n(p-1)\bigr)
-u^{p+q-2}_{\bar m+\bar n,m+n},
-$$
+$$\begin{align}
+[u^p_{\bar m,m},u^q_{\bar n,n}] =\bigl(\bar m(q-1)-\bar n(p-1)\bigr) u^{p+q-2}_{\bar m+\bar n,m+n},
+\end{align}$$
 
-$$
-[v^p_{\bar m,m},v^q_{\bar n,n}]
-=-\bigl(m(q-2)-n(p-2)\bigr)
-v^{p+q-1}_{\bar m+\bar n,m+n}.
-$$
+$$\begin{align}
+[v^p_{\bar m,m},v^q_{\bar n,n}] =-\bigl(m(q-2)-n(p-2)\bigr) v^{p+q-1}_{\bar m+\bar n,m+n}.
+\end{align}$$
 
 Together with the mixed bracket, these imply that
 
-$$
+$$\begin{align}
 w^p_{\bar m,m}=u^p_{\bar m,m}+\Lambda v^p_{\bar m,m}
-$$
+\end{align}$$
 
 closes exactly on $\mathcal L_\Lambda w_{1+\infty}$. The flat inclusion is the special case $\Lambda=0$.
 
 Conformal inversion acts by
 
-$$
-i(C_A[a_1,a_2,a_3,a_4])
-=C_{A+2}[a_3,a_4,a_1,a_2],
-$$
+$$\begin{align}
+i(C_A[a_1,a_2,a_3,a_4]) =C_{A+2}[a_3,a_4,a_1,a_2],
+\end{align}$$
 
 with $A+2$ understood modulo four. This preserves the alternative wedge $a_1,a_3\geq0$ but not the standard wedge. Thus an algebraic automorphism need not preserve a chosen global pole or patch condition.
 
-# Einstein-cylinder proposal
+# Einstein-Cylinder Proposal
 
 For the Einstein cylinder $S^3\times\mathbb R$, the paper identifies the global algebra
 
-$$
+$$\begin{align}
 \mathfrak{so}(4)\oplus\mathfrak u(1)
-$$
+\end{align}$$
 
 and proposes the one-tower extension generated by
 
-$$
-v^1_{0,1},\quad v^1_{0,0},\quad v^1_{0,-1},\quad D,
-\quad\text{and}\quad
-u^p_{\bar m,m}\quad(p\geq2).
-$$
+$$\begin{align}
+v^1_{0,1},\quad v^1_{0,0},\quad v^1_{0,-1},\quad D, \quad\text{and}\quad u^p_{\bar m,m}\quad(p\geq2).
+\end{align}$$
 
 The nontrivial brackets are
 
-$$
-[u^p_{\bar m,m},u^q_{\bar n,n}]
-=\bigl(\bar m(q-1)-\bar n(p-1)\bigr)
-u^{p+q-2}_{\bar m+\bar n,m+n},
-$$
+$$\begin{align}
+[u^p_{\bar m,m},u^q_{\bar n,n}] =\bigl(\bar m(q-1)-\bar n(p-1)\bigr) u^{p+q-2}_{\bar m+\bar n,m+n},
+\end{align}$$
 
-$$
-[D,u^p_{\bar m,m}]=2(p-2)u^p_{\bar m,m},\qquad
-[v^1_{0,n},u^p_{\bar m,m}]
-=-\bigl(n(p-2)+m\bigr)u^p_{\bar m,m+n}.
-$$
+$$\begin{align}
+[D,u^p_{\bar m,m}]=2(p-2)u^p_{\bar m,m},\qquad [v^1_{0,n},u^p_{\bar m,m}] =-\bigl(n(p-2)+m\bigr)u^p_{\bar m,m+n}.
+\end{align}$$
 
 Its identification with the actual Einstein-cylinder gravity algebra is a conjecture, not a derived result.
 
-# Action on the gauge-theory S-algebra
+# Action on the Gauge-Theory S-Algebra
 
 The Yang--Mills soft generators satisfy
 
-$$
-[S^{p,a}_{\bar m,m},S^{q,b}_{\bar n,n}]
-=-if^{ab}{}_cS^{p+q-1,c}_{\bar m+\bar n,m+n}.
-$$
+$$\begin{align}
+[S^{p,a}_{\bar m,m},S^{q,b}_{\bar n,n}] =-if^{ab}{}_cS^{p+q-1,c}_{\bar m+\bar n,m+n}.
+\end{align}$$
 
 In the four-index basis, the conformal w-algebra acts by
 
-$$
-[C_A[a_i],S^c[b_i]]
-=b_A S^c[a_i+b_i-\delta_{Ai}].
-$$
+$$\begin{align}
+[C_A[a_i],S^c[b_i]] =b_A S^c[a_i+b_i-\delta_{Ai}].
+\end{align}$$
 
 This yields, for example,
 
-$$
-[u^p_{\bar m,m},S^{a,q}_{\bar n,n}]
-=\bigl(\bar m(q-1)-\bar n(p-1)\bigr)
-S^{a,p+q-2}_{\bar m+\bar n,m+n},
-$$
+$$\begin{align}
+[u^p_{\bar m,m},S^{a,q}_{\bar n,n}] =\bigl(\bar m(q-1)-\bar n(p-1)\bigr) S^{a,p+q-2}_{\bar m+\bar n,m+n},
+\end{align}$$
 
-$$
-[v^p_{\bar m,m},S^{a,q}_{\bar n,n}]
-=\bigl(n(p-2)-m(q-1)\bigr)
-S^{a,p+q-1}_{\bar m+\bar n,m+n}.
-$$
+$$\begin{align}
+[v^p_{\bar m,m},S^{a,q}_{\bar n,n}] =\bigl(n(p-2)-m(q-1)\bigr) S^{a,p+q-1}_{\bar m+\bar n,m+n}.
+\end{align}$$
 
-# Conformal completion
+# Conformal Completion
 
 Einstein gravity is not conformally invariant, so special conformal generators do not preserve $\mathcal Lw_{1+\infty}$. Acting with $\mathfrak{so}(4,2)$ on an Einstein soft mode produces a conformal-gravity mode, and repeated action plus Lie closure generates the larger algebra.
 
 For $\Lambda\neq0$, the dilatation already separates the two spin-two towers:
 
-$$
-u^p_{\bar m,m}
-=(p-1)w^p_{\bar m,m}-\frac12[D,w^p_{\bar m,m}],
-$$
+$$\begin{align}
+u^p_{\bar m,m} =(p-1)w^p_{\bar m,m}-\frac12[D,w^p_{\bar m,m}],
+\end{align}$$
 
-$$
-v^p_{\bar m,m}
-=\frac1{2\Lambda}
-\left([D,w^p_{\bar m,m}]-2(p-2)w^p_{\bar m,m}\right).
-$$
+$$\begin{align}
+v^p_{\bar m,m} =\frac1{2\Lambda} \left([D,w^p_{\bar m,m}]-2(p-2)w^p_{\bar m,m}\right).
+\end{align}$$
 
 The paper carefully limits the abstract claim: Jacobi identities alone do not uniquely choose a Lie algebra after new mixed commutators are introduced. “Conformal completion” means the smallest Lie algebra in the concrete twistor-vector-field realization. In that realization the appendix shows that every $C_A[a_i]$ is generated.
 
-# Twistor-action derivation
+# Twistor-Action Derivation
 
-## BN theory
+## BN Theory
 
 Self-dual conformal structures correspond to curved twistor spaces containing a four-parameter family of $\mathbb{CP}^1$ curves with normal bundle
 
-$$
+$$\begin{align}
 \mathcal O(1)\oplus\mathcal O(1).
-$$
+\end{align}$$
 
 A deformation of complex structure is described by a Beltrami differential
 
-$$
-\beta\in\Omega^{0,1}(\mathbb{PT},T^{1,0}\mathbb{PT}),
-\qquad
-\bar\nabla=\bar\partial+\beta.
-$$
+$$\begin{align}
+\beta\in\Omega^{0,1}(\mathbb{PT},T^{1,0}\mathbb{PT}), \qquad \bar\nabla=\bar\partial+\beta.
+\end{align}$$
 
 Integrability is the Maurer--Cartan equation
 
-$$
+$$\begin{align}
 N=\bar\partial\beta+\frac12[\beta,\beta]=0.
-$$
+\end{align}$$
 
 The BN action imposes it with
 
-$$
-B\in\Omega^{0,1}(\mathbb{PT},\mathcal O(-4)\otimes\Omega^1),
-\qquad
-S_{\rm BN}=\int_{\mathbb{PT}}D^3Z\,B\wedge N.
-$$
+$$\begin{align}
+B\in\Omega^{0,1}(\mathbb{PT},\mathcal O(-4)\otimes\Omega^1), \qquad S_{\rm BN}=\int_{\mathbb{PT}}D^3Z\,B\wedge N.
+\end{align}$$
 
 Its vector-field gauge symmetry is
 
-$$
-\delta_\chi\beta=\bar\partial\chi+[\beta,\chi],
-\qquad
-\delta_\chi B=[B,\chi],
-$$
+$$\begin{align}
+\delta_\chi\beta=\bar\partial\chi+[\beta,\chi], \qquad \delta_\chi B=[B,\chi],
+\end{align}$$
 
 with $\chi\in\Omega^{0,0}(\mathbb{PT},T^{1,0}\mathbb{PT})$. A second BF-type symmetry acts on $B$; the paper does not develop the associated negative-helicity algebra.
 
-## Mode realization
+## Mode Realization
 
 For homogeneous twistor coordinates $Z^A$,
 
-$$
-C_A[a_i]
-=(Z^1)^{a_1}(Z^2)^{a_2}(Z^3)^{a_3}(Z^4)^{a_4}
-\frac{\partial}{\partial Z^A}.
-$$
+$$\begin{align}
+C_A[a_i] =(Z^1)^{a_1}(Z^2)^{a_2}(Z^3)^{a_3}(Z^4)^{a_4} \frac{\partial}{\partial Z^A}.
+\end{align}$$
 
 The condition $\sum_i a_i=1$ makes the vector field weightless. Direct vector-field commutation gives the defining $C_A$ bracket. Quotienting the Euler direction makes the vector field projective.
 
 Einstein gravity requires an infinity twistor. For the flat choice, it supplies the bracket $\{\ ,\ \}_{12}$, and the $u$ tower is the corresponding Hamiltonian vector field. The $\Lambda$-deformed generator uses
 
-$$
+$$\begin{align}
 \{\ ,\ \}_{12}+\Lambda\{\ ,\ \}_{34}.
-$$
+\end{align}$$
 
 This extra structure breaks $\mathfrak{so}(4,2)$ to the appropriate Einstein isometry algebra. Acting with the full conformal algebra rotates the infinity twistor through the brackets $\{\ ,\ \}_{AB}$ and thereby generates the conformal-gravity completion.
 
-# Appendix generation mechanism
+# Appendix Generation Mechanism
 
 The appendix proves that the $M_{12}$ Hamiltonian tower generates every $M_{AB}$ under the global $T^A{}_B$ action. It uses
 
-$$
-[T^C{}_D,M_{AB}[a_i]]
-=a_D M_{AB}[a_i+\delta_{iC}-\delta_{iD}]
--\delta^C_A M_{DB}[a_i]
--\delta^C_B M_{AD}[a_i].
-$$
+$$\begin{align}
+[T^C{}_D,M_{AB}[a_i]] =a_D M_{AB}[a_i+\delta_{iC}-\delta_{iD}] -\delta^C_A M_{DB}[a_i] -\delta^C_B M_{AD}[a_i].
+\end{align}$$
 
 All projective vector fields are then recovered through
 
-$$
+$$\begin{align}
 C_A[a_i]=-\frac14\sum_{B\neq A}M_{AB}[a_i+\delta_{Bi}]
-$$
+\end{align}$$
 
 in the quotient by the homogeneity ideal. This is the concrete step that upgrades “closure under conformal action” from a formal Jacobi completion to the full stated algebra.
 
-# Translation into the vault's CPS and observable-algebra programme
+# Translation into the Vault's CPS and Observable-Algebra Programme
 
 The most useful structural object is the quotient
 
-$$
+$$\begin{align}
 \frac{\text{homogeneous twistor vector fields}}
 {\text{vertical Euler vector fields}}.
-$$
+\end{align}$$
 
 It is an explicit example of removing a redundancy before identifying the algebra carried by physical data. The analogy with regional gauge reduction is real but limited:
 
@@ -440,15 +373,17 @@ It is an explicit example of removing a redundancy before identifying the algebr
 
 For the Brown--Henneaux and null-boundary projects, the paper is best used as an algebraic target and a source of mode bases. It should not be cited as having derived a four-dimensional surface-charge algebra or its central extension.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
 - Sage represented $C_A[a_i]$ as Laurent-monomial vector fields in four variables and reproduced the defining $C_A$ bracket for an explicit integer-label sample.
 - In the same realization, Sage checked an explicit homogeneity-ideal bracket
-  $$
-  [C_A[a],H[b]]=b_AH[a+b-e_A]
-  $$
+
+$$\begin{align}
+[C_A[a],H[b]]=b_AH[a+b-e_A]
+\end{align}$$
+
   for $\sum a_i=1$ and $\sum b_i=0$.
 - Sage checked the $\mathfrak{sl}(4)$ relation for all $4^4=256$ index choices of $T^A{}_B$.
 - For one nontrivial half-integer sample with both structure coefficients nonzero, Sage checked that $w=u+\Lambda v$ obeys the displayed $\Lambda$-deformed bracket exactly over a Laurent-polynomial coefficient ring.
@@ -462,7 +397,7 @@ For the Brown--Henneaux and null-boundary projects, the paper is best used as an
 - Appropriate reality conditions when passing from complex algebras to $\mathfrak{so}(4,2)$, $\mathfrak{so}(3,2)$, or $\mathfrak{so}(4,1)$.
 - Self-dual conformal gravity for the explicit twistor-action derivation.
 
-## Not independently verified
+## Not Independently Verified
 
 - The all-label generation proof in the appendix beyond the finite exact algebra checks above.
 - Classical equivalence of the BN twistor action and the spacetime self-dual conformal-gravity action.

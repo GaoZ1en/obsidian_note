@@ -17,7 +17,7 @@ Back to [[2026_07_10_overview]].
 
 The paper asks for an algebra of observables associated with the local spacetime region determined by two intersecting null hypersurfaces. Its central distinction is geometric: transformations preserving the initial cut act canonically, whereas positive supertranslations move that cut and therefore change the phase-space domain. The latter are quantized as completely positive channels rather than automorphisms. The construction is valuable for null-boundary CPS and edge-mode work, but its final double-null algebra is a conditional candidate, not a theorem obtained solely from the classical CIVP.
 
-## How to read this long paper
+## How to Read This Long Paper
 
 1. Read Sections 2.1.2--2.1.3 first for the null constraints and the actual characteristic data.
 2. Read Sections 2.3.1--2.3.2 next for the distinction between the hypersurface generator $H_\xi$ and the corner charge $Q_\xi$, and for the supertranslation flux.
@@ -43,9 +43,9 @@ The source dependency map is:
 | Appendix A | Quasi-free and Fock representations | Weyl relations | Representation choices |
 | Appendix B | Twisted covariance | Group $2$-cocycles | Anomalous/projective sectors |
 
-## Null geometry and characteristic data
+## Null Geometry and Characteristic Data
 
-### Carroll structure on one branch
+### Carroll Structure on One Branch
 
 Let $\mathcal N$ be a null hypersurface with degenerate metric $q_{ab}$ and null generator $\ell^a$,
 
@@ -97,7 +97,7 @@ $$\begin{align}
 
 This algebraic reduction was independently reproduced in Mathematica.
 
-### Unimodular cut metric and area density
+### Unimodular Cut Metric and Area Density
 
 The cut metric is split as
 
@@ -121,7 +121,7 @@ The inverse metric must scale as $q^{ab}=\Omega^{-2/d}\bar q^{ab}$. The displaye
 
 Equations (18)--(21) expose the characteristic data count. Given $(\kappa,\ell^a,\sigma_{ab})$ along a branch, Raychaudhuri is second order for the area variable $\Omega$, while Damour is first order for $\pi_a$. The corner values of $(\Omega,\theta,\pi_a)$ provide the integration data.
 
-### Two intersecting branches
+### Two Intersecting Branches
 
 For branches $\mathcal N_u$ and $\mathcal N_v$ meeting at $\mathcal C$, the source review organizes the full local CIVP data as
 
@@ -144,7 +144,7 @@ The local development exists only before caustics and subject to the unexpanded 
 | $\square$ | $\theta|_{\mathcal C}$ | Supertranslation charge |
 | $\bigcirc$ | $(\bar h_{ij},m)|_{\mathcal C}$ | Cross-branch gluing data |
 
-## Null presymplectic form and its three spin sectors
+## Null Presymplectic Form and Its Three Spin Sectors
 
 With $\delta k=0$, the canonical null presymplectic potential of Eqs. (25)--(27) can be arranged schematically as
 
@@ -163,9 +163,9 @@ The scalar sector describes area and its conjugate combination of non-affinity a
 
 The source's raised-shear weight must be repaired before Eq. (29) is used literally. With the corrected $q^{ab}$ scaling, the densitized tensor momentum remains the natural object, but its power of $\Omega$ must be reconstructed from Eqs. (19), (21), and the presymplectic potential rather than copied from Eq. (28).
 
-## Cut-preserving corner symmetries and charges
+## Cut-Preserving Corner Symmetries and Charges
 
-### Superboosts and superrotations
+### Superboosts and Superrotations
 
 The cut-preserving group is
 
@@ -185,7 +185,7 @@ Q_{(0,Y)} =-\frac{1}{8\pi G} \int_{\mathcal C}\epsilon_{\mathcal C}\, Y^a\pi_a.
 
 Thus area is the superboost charge aspect and $\Omega\pi_a$ is the superrotation charge aspect.
 
-### Off-shell generator versus corner charge
+### Off-Shell Generator Versus Corner Charge
 
 The covariant current is decomposed as
 
@@ -207,7 +207,7 @@ C_\xi\widehat{=}0 \quad\Longleftrightarrow\quad H_\xi\widehat{=}Q_\xi.
 
 The construction should not be read as setting $H=Q$ before the constraint is imposed.
 
-## Cut-moving supertranslations and symplectic flux
+## Cut-Moving Supertranslations and Symplectic Flux
 
 A supertranslation $f_T(x)$ moves the initial cut along $\ell^a$. Its CPS contraction contains a nonzero flux through the swept null segment, so it is not an automorphism of a fixed-domain phase space. The corner charge is
 
@@ -238,9 +238,9 @@ G_{\sqrbullet}^+ =G_\bullet\ltimes G_\square^+. \tag{63--68}
 
 The local-formalism lesson is precise: the obstruction is not merely a nonzero matter flux. It is the change of the initial cut and hence of the phase-space domain. Cut-preserving large symmetries act canonically; cut-moving embeddings require a channel description.
 
-## Weyl algebra and the supertranslation channel
+## Weyl Algebra and the Supertranslation Channel
 
-### Linearized hypersurface observables
+### Linearized Hypersurface Observables
 
 Around a classical point $x$ of the branch phase space, the paper takes a linearized symplectic space
 
@@ -280,7 +280,7 @@ $$\begin{align}
 
 an automorphism of the Weyl algebra. The corner charge algebras are quantized separately: $\mathscr A_\bullet$ is based on the group algebra of $G_\bullet$, while $\mathscr A_\square$ is a Wiener--Hopf algebra for $G_\square^+$.
 
-### Completely positive maps from $G_\square^+$
+### Completely Positive Maps from $G_\square^+$
 
 For a reference state $\omega$, the proposed supertranslation action is
 
@@ -296,9 +296,9 @@ da_g:T_xX\longrightarrow T_{a_g(x)}X,
 
 so an identification with a fixed $T_xX$ needs a fixed point, affine structure, or parallel transport. That identification is not supplied in the source.
 
-## Dilation, constraints, and the single-branch algebra
+## Dilation, Constraints, and the Single-Branch Algebra
 
-### Coherent Stinespring extension
+### Coherent Stinespring Extension
 
 For each channel the Stinespring theorem gives a dilation. The paper assumes a family $(v_g^\square,\theta_g^\square)$ satisfying the semigroup law coherently. This produces the extended algebra
 
@@ -333,9 +333,9 @@ Its generators are the doubly dressed radiative Weyl operators together with sup
 
 The assertion that the crossed product exhausts the complete physical subalgebra requires the usual commutation-theorem and representation hypotheses; the source does not state them in a form sufficient for an unconditional result.
 
-## Gluing the two null branches
+## Gluing the Two Null Branches
 
-### Shared standard representation and diagonal corner data
+### Shared Standard Representation and Diagonal Corner Data
 
 The two single-branch algebras are represented on a common standard Hilbert space using left and right actions. The construction then identifies the shared area and Hájiček data,
 
@@ -348,7 +348,7 @@ $$\begin{align}
 
 The displayed delta-function projection in Eq. (123) is explicitly formal. A precise construction would require a diagonal quotient or relative tensor product, together with a faithful standard-form representation or a specified opposite-algebra action.
 
-### Matched positive-supertranslation semigroups
+### Matched Positive-Supertranslation Semigroups
 
 The remaining expansions $\theta_u$ and $\theta_v$ need not commute. The source introduces mutual actions
 
@@ -371,7 +371,7 @@ $$\begin{align}
 
 is printed as $g_u$ rather than $g_v$.
 
-### Proposed cross-expansion algebra
+### Proposed Cross-Expansion Algebra
 
 A more specific proposal is
 
@@ -389,7 +389,7 @@ $$\begin{align}
 
 It is a useful architecture for a null subregion algebra, but the symbols $\otimes_{\bigcirc}$ and $\sim_\bullet$ still encode unresolved analytic and geometric work.
 
-## Relational evolution and algebraic questions
+## Relational Evolution and Algebraic Questions
 
 The proposed relational generator is
 
@@ -401,7 +401,7 @@ Because both branch translations are positive, the evolution is nested and semig
 
 The paper asks whether the completed algebra can have type-II behavior. No type classification is established. Any such conclusion requires a precise von Neumann completion, a state/weight, and control of the relative tensor product and crossed-product hypotheses.
 
-## Dictionary to local CPS, boundary, and edge-mode conventions
+## Dictionary to Local CPS, Boundary, and Edge-Mode Conventions
 
 | Paper object | Local reading | Important qualification |
 |---|---|---|
@@ -418,7 +418,7 @@ The paper asks whether the completed algebra can have type-II behavior. No type 
 
 The closest source/response analogy is only structural. The prescribed branch data $(\kappa,\ell,\sigma)$ play the role of free data, while $(\Omega,\theta,\pi)|_{\mathcal C}$ are integration data propagated by constraints. This is not the AdS source/vev split.
 
-## Verification log
+## Verification Log
 
 ### Checked
 

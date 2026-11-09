@@ -40,83 +40,86 @@ tags: []
 ## 1. 几何与全局约定
 
 采用 mostly-plus、$G=1$，
-$$
-\begin{aligned}
-ds^2={}&-\frac{\Delta_r}{\Sigma}
-[dt+(2n(\cos\theta+c)-a\sin^2\theta)d\phi]^2
-+\frac{\Sigma}{\Delta_r}dr^2+\Sigma d\theta^2\\
+
+$$\begin{aligned}
+ds^2={}&-\frac{\Delta_r}{\Sigma} [dt+(2n(\cos\theta+c)-a\sin^2\theta)d\phi]^2 +\frac{\Sigma}{\Delta_r}dr^2+\Sigma d\theta^2\\
 &+\frac{\sin^2\theta}{\Sigma}
 [a\,dt-(r^2+a^2+n^2-2anc)d\phi]^2,
-\end{aligned}
-$$
-$$
-\Delta_r=r^2-2mr+a^2-n^2,\qquad
-\Sigma=r^2+(n+a\cos\theta)^2.
-$$
+\end{aligned}$$
+
+$$\begin{align}
+\Delta_r=r^2-2mr+a^2-n^2,\qquad \Sigma=r^2+(n+a\cos\theta)^2.
+\end{align}$$
+
 $a,n$ 有长度维数，$c$ 无量纲；$c=-1$ 隐去 north string，$c=1$ 隐去 south string。局部 $t\mapsto t+2nc\phi$ 改变 string 分配，但 $\phi$ 周期性意味着它未必是全局单值的小 gauge transformation。作者保留 Lorentzian Misner strings，不施加 $t$ 的 Misner 周期。
 
 这允许 $r_h,a,n,c$ 作为状态族参数。它不消除全部因果或全局问题，也没有自动给出 Euclidean ensemble 的 contour 与 regularity prescription。$n=0$ 且有限 $c$ 时 nut sector 消失；若改以 $cn=s$ 固定再令 $n\to0$，属于不同的极限，需要重新说明时间和角度的识别。
 
 定义便于整链检查的量
-$$
-D=r_h^2+a^2+n^2-2anc,\qquad
-m=\frac{r_h^2+a^2-n^2}{2r_h}.
-$$
+
+$$\begin{align}
+D=r_h^2+a^2+n^2-2anc,\qquad m=\frac{r_h^2+a^2-n^2}{2r_h}.
+\end{align}$$
+
 取 $r_h>0,D>0$；非极端外 horizon 满足 $r_h^2-a^2+n^2>0$。几何熵、角速度与温度为
-$$
-S=\pi D,\qquad \Omega_H=\frac aD,\qquad
-T=\frac{\Delta_r'(r_h)}{4\pi D}
-=\frac{r_h^2-a^2+n^2}{4\pi r_hD}.
-$$
+
+$$\begin{align}
+S=\pi D,\qquad \Omega_H=\frac aD,\qquad T=\frac{\Delta_r'(r_h)}{4\pi D} =\frac{r_h^2-a^2+n^2}{4\pi r_hD}.
+\end{align}$$
+
 最后的 $T$ 是由本文 metric 补出的 surface-gravity 表达式，正文没有单独完整列出它；本笔记的符号核验明确使用这个约定。
 
-**Checked:** 在 horizon 代入 $\Delta_r=0$，
-$g_{tt}+2\Omega_Hg_{t\phi}+\Omega_H^2g_{\phi\phi}=0$；
-$g_{\theta\theta}g_{\phi\phi}=D^2\sin^2\theta$，故面积 $4\pi D$。这验证 horizon generator 及面积表达式，不等于完整重算所有 spacetime curvature。
+**Checked:** 在 horizon 代入 $\Delta_r=0$， $g_{tt}+2\Omega_Hg_{t\phi}+\Omega_H^2g_{\phi\phi}=0$； $g_{\theta\theta}g_{\phi\phi}=D^2\sin^2\theta$，故面积 $4\pi D$。这验证 horizon generator 及面积表达式，不等于完整重算所有 spacetime curvature。
 
-## 2. Komar balance：必须把 string tubes 算入边界
+## 2. Komar Balance：必须把 String Tubes 算入边界
 
 设 $\xi=\partial_t,\chi=\partial_\phi$，Komar 公式中的微分对象是其 metric-dual one-form。真空区域的 Killing identity 给出适当的 closed Komar form，作者使用 horizon generator $\xi+\Omega_H\chi$。
 
 从 north/south 轴挖去细 tube，边界方向为
-$$
+
+$$\begin{align}
 \partial M=S_\infty-S_H+T_+-T_-.
-$$
+\end{align}$$
+
 由此得到
-$$
-0=\frac1{8\pi}\int_{\partial M}
-\left(\star d\xi^\flat+\Omega_H\star d\chi^\flat\right).
-$$
-本文将 rotational tube 积分记作
-$\int_{T_\pm}\star d\chi^\flat=\Pi_\pm^\infty-\Pi_\pm^{r_h}$。
-在 infinity 的组合负责消去单独角动量积分中的 string divergence，horizon endpoints 则进入 $J_s$。不能只保留 $S_\infty$ 与 $S_H$ 后再要求相同 Smarr relation。
+
+$$\begin{align}
+0=\frac1{8\pi}\int_{\partial M} \left(\star d\xi^\flat+\Omega_H\star d\chi^\flat\right).
+\end{align}$$
+
+本文将 rotational tube 积分记作 $\int_{T_\pm}\star d\chi^\flat=\Pi_\pm^\infty-\Pi_\pm^{r_h}$。 在 infinity 的组合负责消去单独角动量积分中的 string divergence，horizon endpoints 则进入 $J_s$。不能只保留 $S_\infty$ 与 $S_H$ 后再要求相同 Smarr relation。
 
 分组定义给出
-$$
-M=m,\qquad
-N_+=n(1+c),\quad N_-=n(1-c),
-$$
-$$
-\Phi_+=-\frac{n-a}{4r_h},\qquad
-\Phi_-=-\frac{n+a}{4r_h},
-$$
-$$
-J_{\rm bh}=(a-3cn)m,\qquad
-J_s=\frac n{r_h}\left[an+c(r_h^2+acn-2n^2)\right].
-$$
+
+$$\begin{align}
+M=m,\qquad N_+=n(1+c),\quad N_-=n(1-c),
+\end{align}$$
+
+$$\begin{align}
+\Phi_+=-\frac{n-a}{4r_h},\qquad \Phi_-=-\frac{n+a}{4r_h},
+\end{align}$$
+
+$$\begin{align}
+J_{\rm bh}=(a-3cn)m,\qquad J_s=\frac n{r_h}\left[an+c(r_h^2+acn-2n^2)\right].
+\end{align}$$
+
 其总角动量可大幅简化：
-$$
+
+$$\begin{align}
 J=J_{\rm bh}+J_s=\frac{(a-cn)D}{2r_h}.
-$$
+\end{align}$$
+
 **Checked:** 这条化简是精确有理恒等式。与 $\Omega_H$ 配对的是总 $J$，若只代 $J_{\rm bh}$，后面第一定律不会是同一条状态函数恒等式。
 
 由上述边界分组得到作者的 Smarr：
-$$
+
+$$\begin{align}
 M=2TS+2\Omega_HJ+2N_+\Phi_++2N_-\Phi_-.
-$$
+\end{align}$$
+
 Komar closure 提供几何 balance；从 balance 到 first law 的变分仍须另外检查，不能用一个 scaling relation 代替所有方向的微分一致性。
 
-## 3. 两套 nut variables 的换基
+## 3. 两套 Nut Variables 的换基
 
 $$
 \begin{pmatrix}N_n\\N_c\end{pmatrix}
@@ -124,104 +127,124 @@ $$
 \begin{pmatrix}N_+\\N_-\end{pmatrix}
 =\begin{pmatrix}n\\cn\end{pmatrix},
 $$
-$$
-\Phi_n=\Phi_++\Phi_-=-\frac n{2r_h},\qquad
-\Phi_c=\Phi_+-\Phi_-=\frac a{2r_h}.
-$$
-charge 与 potential 采用对偶的线性换基，因而
-$$
+
+$$\begin{align}
+\Phi_n=\Phi_++\Phi_-=-\frac n{2r_h},\qquad \Phi_c=\Phi_+-\Phi_-=\frac a{2r_h}.
+\end{align}$$
+
+Charge 与 potential 采用对偶的线性换基，因而
+
+$$\begin{align}
 \Phi_+dN_++\Phi_-dN_-=\Phi_n\,dn+\Phi_c\,d(cn),
-$$
-$$
+\end{align}$$
+
+$$\begin{align}
 N_+\Phi_++N_-\Phi_-=n\Phi_n+cn\Phi_c.
-$$
+\end{align}$$
+
 这些恒等式已核对。它们证明 thermodynamic one-form 的表示等价，不单独证明新变量是可积 Hamiltonian surface charges。
 
 独立性有两个不同问题：$(N_+,N_-)\leftrightarrow(N_n,N_c)$ 的线性矩阵总可逆；$(n,c)\mapsto(n,cn)$ 的 Jacobian 却为 $n$，在 $n=0$ 退化。不能不加条件地用后者反解 $c$。
 
 在 $a=0$ 时 $\Phi_c=0$，该 work coefficient 消失。对于 $c=0$，只有限制到 $dc=0$ 的子族才可把整个 nut work 写成 $-n\,dn/(2r_h)$：在完整状态空间的一点 $c=0$，仍有
-$$
+
+$$\begin{align}
 \Phi_c\,d(cn)=\frac{an}{2r_h}\,dc
-$$
+\end{align}$$
+
 可非零。“当前 charge 值为零”与“允许所有变分时 work term 为零”不能混淆。
 
 ## 4. 第一律、能量与 Gibbs 的完整代数重建
 
 作者使用的内能是
-$$
-U=M-n\Phi_n-cn\Phi_c
-=\frac{r_h^2+a^2-acn}{2r_h},
-$$
+
+$$\begin{align}
+U=M-n\Phi_n-cn\Phi_c =\frac{r_h^2+a^2-acn}{2r_h},
+\end{align}$$
+
 不是 $M=m$。其第一定律为
-$$
+
+$$\begin{align}
 dU=T\,dS+\Omega_H\,dJ+\Phi_n\,dn+\Phi_c\,d(cn).
-$$
+\end{align}$$
+
 取四个独立变量 $v\in\{r_h,a,n,c\}$，本次直接计算
-$$
-\partial_vU-T\partial_vS-\Omega_H\partial_vJ
--\Phi_n\partial_vn-\Phi_c\partial_v(cn)=0.
-$$
+
+$$\begin{align}
+\partial_vU-T\partial_vS-\Omega_H\partial_vJ -\Phi_n\partial_vn-\Phi_c\partial_v(cn)=0.
+\end{align}$$
+
 **Checked:** 四个系数均精确为零。没有固定 $n/m$、没有固定 $c$、没有先缩到低 cohomogeneity 子族。
 
 Smarr 的独立检查是
-$$
+
+$$\begin{align}
 M-2TS-2\Omega_HJ-2n\Phi_n-2cn\Phi_c=0.
-$$
+\end{align}$$
+
 也可以对 $U$ 用长度 scaling 写
-$$
+
+$$\begin{align}
 U=2TS+2\Omega_HJ+n\Phi_n+cn\Phi_c,
-$$
+\end{align}$$
+
 其权重是 $S,J$ 为二、$U,n,cn$ 为一，$c$ 为零。它与作者用 $M$ 写的关系相容。
 
 作者 action result 给出
-$$
-G=\frac I\beta=\frac m2
-=\frac{r_h^2-n^2+a^2}{4r_h}
-=U-TS-\Omega_HJ.
-$$
+
+$$\begin{align}
+G=\frac I\beta=\frac m2 =\frac{r_h^2-n^2+a^2}{4r_h} =U-TS-\Omega_HJ.
+\end{align}$$
+
 对应
-$$
+
+$$\begin{align}
 dG=-S\,dT-J\,d\Omega_H+\Phi_n\,dn+\Phi_c\,d(cn).
-$$
+\end{align}$$
+
 **Checked:** Legendre 恒等式残差为零；Gibbs differential 在四个原始参数方向上的残差也全部为零。
 
-这比在某些固定变量曲线上测一个偏导更完整。将它改写为
-$(\partial G/\partial T)_{n,cn,\Omega_H}=-S$ 等，仍要求 $(T,\Omega_H,n,cn)$ 在所考虑区域是合法局部坐标。Jacobian 退化点、extremality 或 ensemble turning point 应另行处理。
+这比在某些固定变量曲线上测一个偏导更完整。将它改写为 $(\partial G/\partial T)_{n,cn,\Omega_H}=-S$ 等，仍要求 $(T,\Omega_H,n,cn)$ 在所考虑区域是合法局部坐标。Jacobian 退化点、extremality 或 ensemble turning point 应另行处理。
 
-## 5. 对偶 angular integral：直接从 metric 检查
+## 5. 对偶 Angular Integral：直接从 Metric 检查
 
 正文第 9 页 Eq. (29) 声称
-$$
+
+$$\begin{align}
 -\frac1{8\pi}\int_{S_\infty^2}d\chi^\flat=2cn^2.
-$$
+\end{align}$$
+
 在 $t,r$ 固定、去掉极点的小圆后，pullback 满足
-$$
+
+$$\begin{align}
 (d\chi^\flat)_{\theta\phi}=\partial_\theta g_{\phi\phi}.
-$$
+\end{align}$$
+
 因此采用 $\theta:0\to\pi,\phi:0\to2\pi$ 的方向，
-$$
-\int d\chi^\flat
-=2\pi[g_{\phi\phi}(\pi)-g_{\phi\phi}(0)].
-$$
+
+$$\begin{align}
+\int d\chi^\flat =2\pi[g_{\phi\phi}(\pi)-g_{\phi\phi}(0)].
+\end{align}$$
+
 由同文 metric，
-$$
-g_{\phi\phi}(0)
-=-\frac{4n^2(1+c)^2\Delta_r}{r^2+(n+a)^2},
-\qquad
-g_{\phi\phi}(\pi)
-=-\frac{4n^2(c-1)^2\Delta_r}{r^2+(n-a)^2}.
-$$
+
+$$\begin{align}
+g_{\phi\phi}(0) =-\frac{4n^2(1+c)^2\Delta_r}{r^2+(n+a)^2}, \qquad g_{\phi\phi}(\pi) =-\frac{4n^2(c-1)^2\Delta_r}{r^2+(n-a)^2}.
+\end{align}$$
+
 取 $r\to\infty$ 后 endpoint difference 是 $16cn^2$，所以
-$$
+
+$$\begin{align}
 -\frac1{8\pi}\int d\chi^\flat=-4cn^2.
-$$
+\end{align}$$
+
 **Checked:** Wolfram kernel 对完整 $g_{\phi\phi}(q)$、$q=\cos\theta$ 取端点和极限，分别返回 $16cn^2$、$-4cn^2$。与印刷结果差 $-6cn^2$。改变 orientation 只能得到 $+4cn^2$。若用 $+\frac1{16\pi}\int d\chi^\flat$，则可得到作者右侧的 $2cn^2$，但这不是印出的归一化。
 
 这里还有独立的全局问题：若 $\chi^\flat$ 在一个光滑闭球上是全局单值光滑 one-form，则 $\int_{S^2}d\chi^\flat=0$。非零结果来自轴/string/patch 的非全局光滑结构，不能省略这些条件后仍称其“与 string boundary 无关”。在有限 $r$ 时上述 endpoint difference 一般依赖 $r$；$d^2\chi^\flat=0$ 的 Stokes balance 需要连同轴 tube 或 patch 贡献处理。
 
 本文的计算确实提供与 $cn^2$ 成比例的 asymptotic quantity 的候选。在 $n\ne0$ 且其 conservation 与 $n$ 的 conservation 已分别建立时，可推断 $cn$ 沿演化固定。此逻辑不等于已经证明其 charge 的全局定义、独立性、CPS integrability 或任意 flux 条件；也不意味着热力学变分必须令它不变。
 
-## 6. Euclidean action 的证据边界
+## 6. Euclidean Action 的证据边界
 
 §4 列出 Einstein–Hilbert bulk 与 Gibbons–Hawking boundary 项，然后直接给 $I=\beta m/2$。正文没有充分展示：
 
@@ -233,20 +256,18 @@ $$
 
 对于本地 action-first 研究，应先固定 boundary action、允许变分与 corner/string 处理，再问 $\delta H_\xi=\int(\delta Q_\xi-\iota_\xi\theta)$ 是否与文中 $U,M,J,N$ 对应。本文 Komar balance 可以提供候选组合，但没有计算完整的 $\theta$、flux 和 field-dependent horizon generator 修正。
 
-## 7. 公式依赖图与 claim ledger
+## 7. 公式依赖图与 Claim Ledger
 
-$$
-\text{metric + horizon root}
-\longrightarrow (S,T,\Omega_H)
-\longrightarrow (M,J_{\rm bh},J_s,N_\pm,\Phi_\pm)
-\longrightarrow (U,G)
-\longrightarrow \text{first law / Smarr / Gibbs}.
-$$
+$$\begin{align}
+\text{metric + horizon root} \longrightarrow (S,T,\Omega_H) \longrightarrow (M,J_{\rm bh},J_s,N_\pm,\Phi_\pm) \longrightarrow (U,G) \longrightarrow \text{first law / Smarr / Gibbs}.
+\end{align}$$
+
 这条热力学代数链通过了本次检查。另一路
-$$
-d\chi^\flat\text{ integral}\longrightarrow cn^2
-\longrightarrow cn\text{ conserved charge}
-$$
+
+$$\begin{align}
+d\chi^\flat\text{ integral}\longrightarrow cn^2 \longrightarrow cn\text{ conserved charge}
+\end{align}$$
+
 存在印刷归一化失败和未解决的全局定义条件，不能借第一条链的成功自动补齐。
 
 | Claim | 等级 | 边界 |

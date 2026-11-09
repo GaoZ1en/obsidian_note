@@ -14,7 +14,7 @@ tags: []
 
 Back to [[2026_06_30_overview]].
 
-# Source structure map
+# Source Structure Map
 
 - Purpose, scope, and assumptions: states the fixed-volume entropy version of the reverse isoperimetric inequality and emphasizes admissibility assumptions.
 - Covariant variables: introduces the Iyer-Wald/CPS notation, extended first law, thermodynamic volume, and Wald entropy.
@@ -27,138 +27,123 @@ Back to [[2026_06_30_overview]].
 - Einstein and higher-derivative forms: translates the entropy statement to area in Einstein gravity and to Wald entropy in higher-derivative theories.
 - Supplemental material in the same source file: gives additional details on CPS Hessians, Kerr-AdS fixed-volume expansion, bulk positivity, Kerr/RN equality sectors, zero-sector rigidity, and entropy-bound integration.
 
-# Iyer-Wald and extended-thermodynamic notation
+# Iyer-Wald and Extended-Thermodynamic Notation
 
 The paper uses the standard CPS variation
 
-$$
+$$\begin{align}
 \delta\mathbf L=\mathbf E\,\delta\phi+d\boldsymbol\theta(\phi,\delta\phi),
-$$
+\end{align}$$
 
 with symplectic current
 
-$$
-\boldsymbol\omega(\phi;\delta_1\phi,\delta_2\phi)
-=\delta_1\boldsymbol\theta(\phi,\delta_2\phi)
--\delta_2\boldsymbol\theta(\phi,\delta_1\phi).
-$$
+$$\begin{align}
+\boldsymbol\omega(\phi;\delta_1\phi,\delta_2\phi) =\delta_1\boldsymbol\theta(\phi,\delta_2\phi) -\delta_2\boldsymbol\theta(\phi,\delta_1\phi).
+\end{align}$$
 
 For a vector field $\xi$, the Noether current is
 
-$$
-\mathbf J_\xi
-=\boldsymbol\theta(\phi,\mathcal L_\xi\phi)-\xi\cdot\mathbf L
-=d\mathbf Q_\xi+\xi^a\mathbf C_a.
-$$
+$$\begin{align}
+\mathbf J_\xi =\boldsymbol\theta(\phi,\mathcal L_\xi\phi)-\xi\cdot\mathbf L =d\mathbf Q_\xi+\xi^a\mathbf C_a.
+\end{align}$$
 
 The horizon generator is
 
-$$
+$$\begin{align}
 \chi=t+\Omega_i\varphi_i,
-$$
+\end{align}$$
 
 and the Wald entropy is
 
-$$
+$$\begin{align}
 S_W=\frac{2\pi}{\kappa}\int_B\mathbf Q_\chi.
-$$
+\end{align}$$
 
 The pressure is
 
-$$
+$$\begin{align}
 P=-\frac{\Lambda}{8\pi G},
-$$
+\end{align}$$
 
 and the extended first law is
 
-$$
-\delta M
-=T\delta S_W+\Omega_i\delta J_i+\Phi_\alpha\delta Q_\alpha
-+V_{\mathrm{th}}\delta P+\Psi_I\delta\lambda_I.
-$$
+$$\begin{align}
+\delta M =T\delta S_W+\Omega_i\delta J_i+\Phi_\alpha\delta Q_\alpha +V_{\mathrm{th}}\delta P+\Psi_I\delta\lambda_I.
+\end{align}$$
 
 Thus
 
-$$
-V_{\mathrm{th}}
-=\left(\frac{\partial M}{\partial P}\right)_{S,J,Q,\lambda}.
-$$
+$$\begin{align}
+V_{\mathrm{th}} =\left(\frac{\partial M}{\partial P}\right)_{S,J,Q,\lambda}.
+\end{align}$$
 
 The important convention is that $V_{\mathrm{th}}$ is the thermodynamic conjugate of $P$, not an a priori geometric volume.
 
-# Reverse isoperimetry as fixed-volume entropy
+# Reverse Isoperimetry as Fixed-Volume Entropy
 
 In Einstein gravity, the usual reverse isoperimetric ratio is
 
-$$
-\mathcal R
-=\left(\frac{(D-1)V_{\mathrm{th}}}{\omega_{D-2}}\right)^{1/(D-1)}
-\left(\frac{\omega_{D-2}}{A}\right)^{1/(D-2)}\ge1.
-$$
+$$\begin{align}
+\mathcal R =\left(\frac{(D-1)V_{\mathrm{th}}}{\omega_{D-2}}\right)^{1/(D-1)} \left(\frac{\omega_{D-2}}{A}\right)^{1/(D-2)}\ge1.
+\end{align}$$
 
 At fixed $V_{\mathrm{th}}$, this is equivalent to an upper bound on horizon area. The paper writes the more general Wald-entropy version as
 
-$$
+$$\begin{align}
 S_W(X)\le S_W(X_0(V_{\mathrm{th}})),
-$$
+\end{align}$$
 
 where $X_0(V)$ is the reference static black hole at the same thermodynamic volume.
 
 The fixed-volume component is
 
-$$
+$$\begin{align}
 \mathscr C_V=\{X\in\mathscr P:V_{\mathrm{th}}(X)=V\}.
-$$
+\end{align}$$
 
 The equality sector $\mathscr Z_V$ is not simply "all stationary perturbations"; it is the allowed zero sector under the paper's admissibility assumptions. For example, if charged static variations are allowed, the RN-AdS branch can be an equality sector because fixed $V_{\mathrm{th}}$ fixes $r_+$ and hence fixes the area.
 
-# The boundary-completed entropy Hessian
+# The Boundary-Completed Entropy Hessian
 
 Define the constrained entropy functional
 
-$$
+$$\begin{align}
 \mathcal S_V=S_W-\mu V_{\mathrm{th}}.
-$$
+\end{align}$$
 
 The paper's central identity is
 
-$$
-\operatorname{Hess}_X(\mathcal S_V)(v,v)
-=-\frac{2\pi}{\kappa_X}\,
-\mathbb E_{\chi,V}(v,v),
-$$
+$$\begin{align}
+\operatorname{Hess}_X(\mathcal S_V)(v,v) =-\frac{2\pi}{\kappa_X}\, \mathbb E_{\chi,V}(v,v),
+\end{align}$$
 
 where
 
-$$
-\mathbb E_{\chi,V}(v,v)
-=\mathcal E^{\mathrm{bulk}}_{\chi,X}(v,v)
-+\mathcal B_{\infty,V}(v,v).
-$$
+$$\begin{align}
+\mathbb E_{\chi,V}(v,v) =\mathcal E^{\mathrm{bulk}}_{\chi,X}(v,v) +\mathcal B_{\infty,V}(v,v).
+\end{align}$$
 
 The bulk Hollands-Wald canonical energy is
 
-$$
-\mathcal E^{\mathrm{bulk}}_{\chi,X}(v,v)
-=\int_\Sigma\boldsymbol\omega(\phi;v,\mathcal L_\chi v).
-$$
+$$\begin{align}
+\mathcal E^{\mathrm{bulk}}_{\chi,X}(v,v) =\int_\Sigma\boldsymbol\omega(\phi;v,\mathcal L_\chi v).
+\end{align}$$
 
 For stationary perturbations, $\mathcal L_\chi v_{\mathrm{stat}}=0$, so
 
-$$
+$$\begin{align}
 \mathcal E^{\mathrm{bulk}}_{\chi,X}(v_{\mathrm{stat}},v_{\mathrm{stat}})=0.
-$$
+\end{align}$$
 
 Therefore the stationary entropy curvature cannot come from the bulk canonical energy. It is supplied by $\mathcal B_{\infty,V}$, the asymptotic Noether-charge Hessian constrained to fixed thermodynamic volume.
 
-# Dynamical, stationary, and gauge blocks
+# Dynamical, Stationary, and Gauge Blocks
 
 The paper assumes a decomposition
 
-$$
-T_X\mathscr C_V
-=T_X^{\mathrm{dyn}}\oplus T_X^{\mathrm{stat}}\oplus T_X\mathscr G.
-$$
+$$\begin{align}
+T_X\mathscr C_V =T_X^{\mathrm{dyn}}\oplus T_X^{\mathrm{stat}}\oplus T_X\mathscr G.
+\end{align}$$
 
 The positivity logic is:
 
@@ -168,63 +153,55 @@ The positivity logic is:
 
 The source invokes Regge-Wheeler-Zerilli/Kodama-Ishibashi-type positivity in the compact spherical Einstein-AdS sector with reflecting AdS boundary conditions and regular horizons. This input is an assumption or known-theorem import, not derived from scratch in the paper.
 
-# Kerr-AdS and RN-AdS equality behavior
+# Kerr-AdS and RN-AdS Equality Behavior
 
 The supplemental material checks the stationary sector in explicit Einstein examples.
 
 For four-dimensional Kerr-AdS at fixed
 
-$$
+$$\begin{align}
 V=\frac{4\pi R^3}{3},
-$$
+\end{align}$$
 
 the entropy expansion near $a=0$ is
 
-$$
-S(a)
-=\frac{\pi R^2}{G}
--\frac{\pi}{12G}
-\frac{(R^2+\ell^2)^2}{R^2\ell^4}a^4
-+O(a^6).
-$$
+$$\begin{align}
+S(a) =\frac{\pi R^2}{G} -\frac{\pi}{12G} \frac{(R^2+\ell^2)^2}{R^2\ell^4}a^4 +O(a^6).
+\end{align}$$
 
 The absence of an $a^2$ term means the Kerr direction is marginal to second order at the endpoint, but the first nonzero correction is negative for $a\ne0$. Thus nonzero rotation lowers the entropy at fixed volume.
 
 For static RN-AdS,
 
-$$
-S=\frac{\pi r_+^2}{G},
-\qquad
-V_{\mathrm{th}}=\frac{4\pi r_+^3}{3}.
-$$
+$$\begin{align}
+S=\frac{\pi r_+^2}{G}, \qquad V_{\mathrm{th}}=\frac{4\pi r_+^3}{3}.
+\end{align}$$
 
 At fixed $V_{\mathrm{th}}$, $r_+$ and hence $S$ are fixed, so charge variations can lie in an equality sector if the admissible phase space includes them.
 
-# Global concavity argument
+# Global Concavity Argument
 
 Let $\gamma(s)\subset\mathscr C_V$ be an admissible fixed-volume path and define
 
-$$
+$$\begin{align}
 F(s)=\mathcal S_V(\gamma(s)).
-$$
+\end{align}$$
 
 The Hessian identity gives
 
-$$
-F''(s)
-=-\frac{2\pi}{\kappa_s}
-\mathbb E_{\chi_s,V}(\dot\gamma,\dot\gamma).
-$$
+$$\begin{align}
+F''(s) =-\frac{2\pi}{\kappa_s} \mathbb E_{\chi_s,V}(\dot\gamma,\dot\gamma).
+\end{align}$$
 
 If $\mathbb E_{\chi_s,V}\ge0$ and $\kappa_s>0$, then $F''(s)\le0$. Concavity along paths from the reference solution gives
 
-$$
+$$\begin{align}
 S_W(X)\le S_W(X_0(V)).
-$$
+\end{align}$$
 
 If equality holds, the zero-energy rigidity assumption forces the path into $\mathscr Z_V$. This is why the theorem is conditional: positivity, properness/compactness, and zero-sector rigidity are part of the claim.
 
-# Local CPS and black-hole thermodynamics dictionary
+# Local CPS and Black-Hole Thermodynamics Dictionary
 
 - $\boldsymbol\omega$ is the vault's CPS symplectic current.
 - $\mathcal E_\chi^{\mathrm{bulk}}$ is the Hollands-Wald canonical energy, computed from the bulk symplectic current.
@@ -233,7 +210,7 @@ If equality holds, the zero-energy rigidity assumption forces the path into $\ma
 - The RII becomes a fixed-volume entropy maximum statement.
 - The theorem should be cited with its conditions. It is not an unconditional proof of the RII for all AdS black holes.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

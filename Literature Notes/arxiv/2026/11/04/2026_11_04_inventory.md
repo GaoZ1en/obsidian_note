@@ -221,7 +221,7 @@ Total deduplicated entries: 209
 | [2611.00820](https://arxiv.org/abs/2611.00820) | math-ph:replacement | math-ph | Spectral Theory and Continuum Norm Resolvent Convergence of a One-Sided Discrete Dirac-Type Operator | Mariusz Niwiński | 17p |
 | [2611.02070](https://arxiv.org/abs/2611.02070) | math-ph:replacement | math-ph, quant-ph | Classical and Quantum Logics with Multiple Non-Equivalent and Non-Isomorphic Models | Mladen Pavicic | 13 pages, 2 figures, minor typos corrected |
 
-## Placement and version audit
+## Placement and Version Audit
 
 All 209 helper rows above are retained verbatim. Every ID was screened at listing metadata depth; official abstracts were inspected for selected and nearby candidates. Primary/additional categories and issue versions are Source-derived. Missing version links were resolved at official abstract pages. Tracking includes detailed notes, completed overview sketches, and prior candidate/overflow entries; a historical skipped-nearby mention alone is not an active tracked recommendation. No updated tracked PDFs or sources were fetched.
 

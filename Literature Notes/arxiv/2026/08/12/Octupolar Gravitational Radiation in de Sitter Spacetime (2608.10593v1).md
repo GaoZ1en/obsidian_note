@@ -13,7 +13,7 @@ url: https://arxiv.org/abs/2608.10593v1
 tags: []
 ---
 
-## Why this paper is useful
+## Why This Paper Is Useful
 
 This is a **medium-priority reusable-method paper** rather than a direct advance on the vault's current charge or gluing calculations. Its reusable content is unusually concrete:
 
@@ -21,322 +21,261 @@ This is a **medium-priority reusable-method paper** rather than a direct advance
 2. a clean separation of the direct light-cone term, an exact global de Sitter tail, and a finite near-zone correction;
 3. explicit Clebsch--Gordan/STF formulae that convert Cartesian multipoles into electric- and magnetic-parity spherical harmonics.
 
-The closest vault connection is methodological: it provides an explicit model in which radiative data near \(\mathcal I^+\), tail terms, gauge conditions, and harmonic projection must be kept separate. It does **not** yet compute de Sitter fluxes or charges.
+The closest vault connection is methodological: it provides an explicit model in which radiative data near $\mathcal I^+$, tail terms, gauge conditions, and harmonic projection must be kept separate. It does **not** yet compute de Sitter fluxes or charges.
 
-## Main result first
+## Main Result First
 
-For a localized slowly moving source in the future Poincaré patch of four-dimensional de Sitter space, the authors extend the generalized-harmonic-gauge metric perturbation through source octupole order \(l=3\). Relative to the known quadrupole truncation, one adds a cubic source block \(G_3\). Its scalar part simplifies to
+For a localized slowly moving source in the future Poincaré patch of four-dimensional de Sitter space, the authors extend the generalized-harmonic-gauge metric perturbation through source octupole order $l=3$. Relative to the known quadrupole truncation, one adds a cubic source block $G_3$. Its scalar part simplifies to
 
-$$
-\begin{aligned}
-\widehat\chi\big|_{G_3}
-={}&\frac{2}{r}\left[
-\frac13\left(\partial_t^3-4H^2\partial_t\right)
-Q^{(\rho+p)}_{klm}n_kn_ln_m
--H\left(\partial_t^2-2H\partial_t\right)
-Q^{(\rho+p)}_{kll}n_k
-\right]\\
-&+\frac{2}{r^2}\left[
-\left(2\partial_t^2-3H^2\right)Q^{(\rho+p)}_{klm}n_kn_ln_m
--\left(\partial_t^2+H\partial_t-3H^2\right)Q^{(\rho+p)}_{kll}n_k
-\right]\\
-&+\frac{2}{r^3}\left[
-5\dot Q^{(\rho+p)}_{klm}n_kn_ln_m
--3\dot Q^{(\rho+p)}_{kll}n_k
-\right]\\
-&+\frac{2}{r^4}\left[
-5Q^{(\rho+p)}_{klm}n_kn_ln_m
--3Q^{(\rho+p)}_{kll}n_k
-\right].
-\end{aligned}
-$$
+$$\begin{aligned}
+\widehat\chi\big|_{G_3} ={}&\frac{2}{r}\left[ \frac13\left(\partial_t^3-4H^2\partial_t\right) Q^{(\rho+p)}_{klm}n_kn_ln_m -H\left(\partial_t^2-2H\partial_t\right) Q^{(\rho+p)}_{kll}n_k \right]\\
+&+\frac{2}{r^2}\left[ \left(2\partial_t^2-3H^2\right)Q^{(\rho+p)}_{klm}n_kn_ln_m -\left(\partial_t^2+H\partial_t-3H^2\right)Q^{(\rho+p)}_{kll}n_k \right]\\
+&+\frac{2}{r^3}\left[ 5\dot Q^{(\rho+p)}_{klm}n_kn_ln_m -3\dot Q^{(\rho+p)}_{kll}n_k \right]\\
+&+\frac{2}{r^4}\left[ 5Q^{(\rho+p)}_{klm}n_kn_ln_m -3Q^{(\rho+p)}_{kll}n_k \right].
+\end{aligned}$$
 
 The vector-sector answer follows by replacing
 
-$$
+$$\begin{align}
 Q^{(\rho+p)}_{klm}\longrightarrow P_{i|klm}.
-$$
+\end{align}$$
 
-In the tensor sector, the exact global tail is unchanged; new octupolar information enters the direct light-cone term and the near-zone tail correction. Projecting the result onto spherical harmonics reveals a new \(l=3\) magnetic-parity sector controlled by an STF current octupole and a new \(l=3\) electric-parity sector controlled by mass/pressure octupoles.
+In the tensor sector, the exact global tail is unchanged; new octupolar information enters the direct light-cone term and the near-zone tail correction. Projecting the result onto spherical harmonics reveals a new $l=3$ magnetic-parity sector controlled by an STF current octupole and a new $l=3$ electric-parity sector controlled by mass/pressure octupoles.
 
-## Geometric and gauge setup
+## Geometric and Gauge Setup
 
 The background is the future Poincaré patch
 
-$$
-\bar g_{\mu\nu}=a^2(\eta)\eta_{\mu\nu},
-\qquad
-a(\eta)=-\frac{1}{H\eta},
-\qquad \eta<0.
-$$
+$$\begin{align}
+\bar g_{\mu\nu}=a^2(\eta)\eta_{\mu\nu}, \qquad a(\eta)=-\frac{1}{H\eta}, \qquad \eta<0.
+\end{align}$$
 
 The trace-reversed and conformally rescaled perturbations are
 
-$$
-\widetilde h_{\mu\nu}=h_{\mu\nu}-\frac12\bar g_{\mu\nu}h,
-\qquad
-\chi_{\mu\nu}=a^{-2}\widetilde h_{\mu\nu}.
-$$
+$$\begin{align}
+\widetilde h_{\mu\nu}=h_{\mu\nu}-\frac12\bar g_{\mu\nu}h, \qquad \chi_{\mu\nu}=a^{-2}\widetilde h_{\mu\nu}.
+\end{align}$$
 
 In generalized harmonic gauge, the scalar combination
 
-$$
+$$\begin{align}
 \widehat\chi:=\chi_{00}+\delta^{ij}\chi_{ij}
-$$
+\end{align}$$
 
-and the vector \(\chi_{0i}\) obey flat retarded wave equations, whereas the spatial tensor satisfies a wave equation with de Sitter potential,
+and the vector $\chi_{0i}$ obey flat retarded wave equations, whereas the spatial tensor satisfies a wave equation with de Sitter potential,
 
-$$
-\left(\Box+\frac{2}{\eta^2}\right)\frac{\chi_{ij}}{\eta}
-=\text{source}.
-$$
+$$\begin{align}
+\left(\Box+\frac{2}{\eta^2}\right)\frac{\chi_{ij}}{\eta} =\text{source}.
+\end{align}$$
 
 This gauge choice is essential. The resulting perturbation has **not** been transformed to Bondi gauge, so the harmonic coefficients should not yet be identified directly with Bondi radiative data.
 
-## Source assumptions and controlled expansion
+## Source Assumptions and Controlled Expansion
 
 The calculation assumes:
 
-- a compact source of coordinate size \(d\);
-- physical size \(a(\eta_{\rm ret})d\ll H^{-1}\);
+- a compact source of coordinate size $d$;
+- physical size $a(\eta_{\rm ret})d\ll H^{-1}$;
 - slow source variation,
-  \(T_{\mu\nu}\gg d\,\partial_{\eta_{\rm ret}}T_{\mu\nu}\gg d^2\partial_{\eta_{\rm ret}}^2T_{\mu\nu}\cdots\);
-- an observation point near future infinity, \(-\eta/\rho\ll1\), which together with compactness gives \(d/\rho\ll1\);
-- an octupolar truncation in which moments with \(l>3\) are set to zero.
+  $T_{\mu\nu}\gg d\,\partial_{\eta_{\rm ret}}T_{\mu\nu}\gg d^2\partial_{\eta_{\rm ret}}^2T_{\mu\nu}\cdots$;
+- an observation point near future infinity, $-\eta/\rho\ll1$, which together with compactness gives $d/\rho\ll1$;
+- an octupolar truncation in which moments with $l>3$ are set to zero.
 
 With
 
-$$
-p=n_ix'^i,
-\qquad
-q=r'^2-p^2,
-\qquad
-n_i=\frac{x_i}{\rho},
-$$
+$$\begin{align}
+p=n_ix'^i, \qquad q=r'^2-p^2, \qquad n_i=\frac{x_i}{\rho},
+\end{align}$$
 
 the required geometric expansions are
 
-$$
-|\vec x-\vec x'|
-=\rho\left(1-\frac p\rho+\frac{q}{2\rho^2}
-+\frac{pq}{2\rho^3}+O(d^4/\rho^4)\right),
-$$
+$$\begin{align}
+|\vec x-\vec x'| =\rho\left(1-\frac p\rho+\frac{q}{2\rho^2} +\frac{pq}{2\rho^3}+O(d^4/\rho^4)\right),
+\end{align}$$
 
 and
 
-$$
-\frac1{|\vec x-\vec x'|}
-=\frac1\rho\left[
-1+\frac p\rho+\frac{3p^2-r'^2}{2\rho^2}
-+\frac{p(5p^2-3r'^2)}{2\rho^3}
-+O(d^4/\rho^4)
-\right].
-$$
+$$\begin{align}
+\frac1{|\vec x-\vec x'|} =\frac1\rho\left[ 1+\frac p\rho+\frac{3p^2-r'^2}{2\rho^2} +\frac{p(5p^2-3r'^2)}{2\rho^3} +O(d^4/\rho^4) \right].
+\end{align}$$
 
-The second expansion contains the Cartesian version of the \(l=3\) Legendre structure.
+The second expansion contains the Cartesian version of the $l=3$ Legendre structure.
 
-## Universal multipole differentiation identity
+## Universal Multipole Differentiation Identity
 
-For a multi-index \(L\) of length \(l\), define
+For a multi-index $L$ of length $l$, define
 
-$$
+$$\begin{align}
 S_{ij|L}:=\int d^3x'\,a^{l+1}x'^L T_{ij}.
-$$
+\end{align}$$
 
-Then, with \(T^{(n)}_{ij}:=\partial_\eta^nT_{ij}\),
+Then, with $T^{(n)}_{ij}:=\partial_\eta^nT_{ij}$,
 
-$$
-\boxed{
-\int d^3x'\,x'^LT^{(n)}_{ij}
-=a^{n-l-1}
+$$\begin{align}
+\boxed{ \int d^3x'\,x'^LT^{(n)}_{ij} =a^{n-l-1}
 \prod_{k=0}^{n-1}\left(\partial_t-(l+1-k)H\right)S_{ij|L}
 }
-$$
+\end{align}$$
 
-The proof is a short induction. For \(n=0\), the equation is the definition of \(S_{ij|L}\). If the formula holds at \(n\), then
+The proof is a short induction. For $n=0$, the equation is the definition of $S_{ij|L}$. If the formula holds at $n$, then
 
-$$
-\int x'^L T_{ij}^{(n+1)}d^3x'
-=a\partial_t\left[a^{n-l-1}\mathcal D_nS_{ij|L}\right]
-=a^{n-l}\left(\partial_t-(l-n)H\right)\mathcal D_nS_{ij|L},
-$$
+$$\begin{align}
+\int x'^L T_{ij}^{(n+1)}d^3x' =a\partial_t\left[a^{n-l-1}\mathcal D_nS_{ij|L}\right] =a^{n-l}\left(\partial_t-(l-n)H\right)\mathcal D_nS_{ij|L},
+\end{align}$$
 
-which appends precisely the next factor. The same operator applies to the scalar moment \(Q_L^{(\rho+p)}\) and vector moment \(P_{i|L}\). In the flat limit \(H\to0\), it reduces to \(\partial_t^n\).
+which appends precisely the next factor. The same operator applies to the scalar moment $Q_L^{(\rho+p)}$ and vector moment $P_{i|L}$. In the flat limit $H\to0$, it reduces to $\partial_t^n$.
 
 This identity is the main transferable tool in the paper: it avoids deriving a separate conformal-to-cosmic-time relation for each sector and multipole order.
 
-## Moment conventions and conservation relations
+## Moment Conventions and Conservation Relations
 
 The source moments are
 
-$$
-Q_L^{(\rho)}=\int d^3x\,a^{l+1}T_{00}x_L,
-\qquad
-P_{i|L}=\int d^3x\,a^{l+1}T_{0i}x_L,
-$$
+$$\begin{align}
+Q_L^{(\rho)}=\int d^3x\,a^{l+1}T_{00}x_L, \qquad P_{i|L}=\int d^3x\,a^{l+1}T_{0i}x_L,
+\end{align}$$
 
-$$
-S_{ij|L}=\int d^3x\,a^{l+1}T_{ij}x_L,
-\qquad
-Q_L^{(p)}=S_{ii|L},
-\qquad
-Q_L^{(\rho+p)}=Q_L^{(\rho)}+Q_L^{(p)}.
-$$
+$$\begin{align}
+S_{ij|L}=\int d^3x\,a^{l+1}T_{ij}x_L, \qquad Q_L^{(p)}=S_{ii|L}, \qquad Q_L^{(\rho+p)}=Q_L^{(\rho)}+Q_L^{(p)}.
+\end{align}$$
 
 Stress-tensor conservation gives the recursion
 
-$$
-\partial_tQ_L^{(\rho)}
-=H\left(lQ_L^{(\rho)}-Q_L^{(p)}\right)
--lP_{(i_1|i_2\cdots i_l)},
-$$
+$$\begin{align}
+\partial_tQ_L^{(\rho)} =H\left(lQ_L^{(\rho)}-Q_L^{(p)}\right) -lP_{(i_1|i_2\cdots i_l)},
+\end{align}$$
 
-$$
-\partial_tP_{i|L}
-=(l-1)HP_{i|L}-lS_{i(i_1|i_2\cdots i_l)}.
-$$
+$$\begin{align}
+\partial_tP_{i|L} =(l-1)HP_{i|L}-lS_{i(i_1|i_2\cdots i_l)}.
+\end{align}$$
 
-These relations reduce stress moments to mass, pressure, and current moments. They also generate de Sitter-specific \(H\)-dependent mixing between moments of different tensor character.
+These relations reduce stress moments to mass, pressure, and current moments. They also generate de Sitter-specific $H$-dependent mixing between moments of different tensor character.
 
-## Direct term, global tail, and near-zone tail
+## Direct Term, Global Tail, and Near-Zone Tail
 
 The tensor solution is organized as
 
-$$
+$$\begin{align}
 \chi_{ij}=\chi^{(I)}_{ij}+\chi^{(II)}_{ij}+\chi^{(III)}_{ij}.
-$$
+\end{align}$$
 
-- \(\chi^{(I)}_{ij}\) is the direct light-cone integral and acquires a new cubic source block.
-- \(\chi^{(II)}_{ij}\) is the global cosmological tail. It is exact and independent of where the multipole expansion is truncated, so it carries over unchanged from quadrupole order.
-- \(\chi^{(III)}_{ij}\) corrects the tail in the near zone and receives octupolar terms through the expanded integration boundary and integrand.
+- $\chi^{(I)}_{ij}$ is the direct light-cone integral and acquires a new cubic source block.
+- $\chi^{(II)}_{ij}$ is the global cosmological tail. It is exact and independent of where the multipole expansion is truncated, so it carries over unchanged from quadrupole order.
+- $\chi^{(III)}_{ij}$ corrects the tail in the near zone and receives octupolar terms through the expanded integration boundary and integrand.
 
-This split matters conceptually: the calculation is not simply a \(1/r\) radiation-zone expansion. It simultaneously tracks powers of \(d/\rho\) and \(d/(-\eta_{\rm ret})\), while the global tail retains information from the source's past history.
+This split matters conceptually: the calculation is not simply a $1/r$ radiation-zone expansion. It simultaneously tracks powers of $d/\rho$ and $d/(-\eta_{\rm ret})$, while the global tail retains information from the source's past history.
 
-## STF-to-spherical-harmonic dictionary
+## STF-to-Spherical-Harmonic Dictionary
 
-For an STF multi-index \(L\),
+For an STF multi-index $L$,
 
-$$
-\widehat n^{\langle L\rangle}
-=N_l\sum_{m=-l}^l\mathcal Y_{lm}^{\langle L\rangle}Y_{lm},
-\qquad
-N_l=\frac{4\pi l!}{(2l+1)!!},
-$$
+$$\begin{align}
+\widehat n^{\langle L\rangle} =N_l\sum_{m=-l}^l\mathcal Y_{lm}^{\langle L\rangle}Y_{lm}, \qquad N_l=\frac{4\pi l!}{(2l+1)!!},
+\end{align}$$
 
 with inverse relation
 
-$$
+$$\begin{align}
 Y_{lm}=\mathcal Y_{lm}^{*\langle L\rangle}\widehat n_{\langle L\rangle}.
-$$
+\end{align}$$
 
-Writing \(e_A^i=D_An^i\), the electric vector and tensor structures are
+Writing $e_A^i=D_An^i$, the electric vector and tensor structures are
 
-$$
-Y_A^{\langle L\rangle}
-=l\,e_{A\langle i_l}\widehat n_{L-1\rangle},
-$$
+$$\begin{align}
+Y_A^{\langle L\rangle} =l\,e_{A\langle i_l}\widehat n_{L-1\rangle},
+\end{align}$$
 
-$$
-Y_{AB}^{\langle L\rangle}
-=l(l-1)\operatorname{STF}_{AB}\operatorname{STF}_{L}
-\left(e_{Ai_l}e_{Bi_{l-1}}\widehat n_{L-2}\right),
-$$
+$$\begin{align}
+Y_{AB}^{\langle L\rangle} =l(l-1)\operatorname{STF}_{AB}\operatorname{STF}_{L} \left(e_{Ai_l}e_{Bi_{l-1}}\widehat n_{L-2}\right),
+\end{align}$$
 
 and magnetic harmonics insert the three-dimensional Levi--Civita tensor. The appendices derive two useful irreducible decompositions:
 
-$$
+$$\begin{align}
 D_1\otimes D_l=D_{l+1}\oplus D_l\oplus D_{l-1},
-$$
+\end{align}$$
 
-for \(e_{Ai}\widehat n_LP_{iL}\), and the corresponding five non-trace pieces in the product of a trace-free rank-two tensor with a rank-\(l\) STF tensor. These formulae expose which source moments populate each parity and angular momentum sector.
+for $e_{Ai}\widehat n_LP_{iL}$, and the corresponding five non-trace pieces in the product of a trace-free rank-two tensor with a rank-$l$ STF tensor. These formulae expose which source moments populate each parity and angular momentum sector.
 
-## Octupolar harmonic content
+## Octupolar Harmonic Content
 
-The genuinely new magnetic-parity \(l=3\) vector mode is controlled by the STF current octupole
+The genuinely new magnetic-parity $l=3$ vector mode is controlled by the STF current octupole
 
-$$
+$$\begin{align}
 J_{ijk}:=\operatorname{STF}_{ijk}\left(\epsilon_{iab}P_{a|bjk}\right).
-$$
+\end{align}$$
 
 Its radial/time operator has the schematic form
 
-$$
-e_A^i\chi_{0i}\big|_{l=3,\mathrm{mag}}
-=-\frac12\left[
-\frac{\partial_u^3-4H^2\partial_u}{3r}
-+\frac{2\partial_u^2-3H^2}{r^2}
-+\frac{5\partial_u}{r^3}
-+\frac5{r^4}
-\right]J_{ijk}\,X_A^{\langle ijk\rangle}.
-$$
+$$\begin{align}
+e_A^i\chi_{0i}\big|_{l=3,\mathrm{mag}} =-\frac12\left[ \frac{\partial_u^3-4H^2\partial_u}{3r} +\frac{2\partial_u^2-3H^2}{r^2} +\frac{5\partial_u}{r^3} +\frac5{r^4} \right]J_{ijk}\,X_A^{\langle ijk\rangle}.
+\end{align}$$
 
-The electric-parity \(l=3\) sector is built from STF parts of \(Q_{ijk}^{(\rho)}\) and \(Q_{ijk}^{(p)}\), acted on by related radial/time differential operators. Trace pieces of the rank-three Cartesian moments dress lower \(l\) sectors. The paper states that all such lower-multipole dressing was extracted, but postpones the detailed presentation to a companion work.
+The electric-parity $l=3$ sector is built from STF parts of $Q_{ijk}^{(\rho)}$ and $Q_{ijk}^{(p)}$, acted on by related radial/time differential operators. Trace pieces of the rank-three Cartesian moments dress lower $l$ sectors. The paper states that all such lower-multipole dressing was extracted, but postpones the detailed presentation to a companion work.
 
-## What the paper actually establishes
+## What the Paper Actually Establishes
 
 The established claim tier is:
 
 - an explicit **linearized**, generalized-harmonic-gauge retarded solution through octupole order for the stated compact/slow-source expansion;
 - algebraic organization into STF moments and spherical harmonics;
-- a reusable all-\(l\), all-\(n\) moment-differentiation identity;
+- a reusable all-$l$, all-$n$ moment-differentiation identity;
 - author-reported, mode-by-mode satisfaction of the linearized Einstein equations.
 
 It does not establish:
 
 - a Bondi-gauge solution;
-- a complete identification of radiative data at \(\mathcal I^+\);
+- a complete identification of radiative data at $\mathcal I^+$;
 - energy, angular-momentum, or other flux formulae;
 - nonlinear gravitational radiation;
 - convergence or error bounds for the full multipole series;
-- a fully displayed derivation of all lower-\(l\) dressing terms.
+- a fully displayed derivation of all lower-$l$ dressing terms.
 
-## Verification audit
+## Verification Audit
 
-### Source-derived
+### Source-Derived
 
 The arXiv abstract page, full 55-page PDF, and TeX source were inspected. Rendered pages were used to confirm the title/abstract, the octupolar direct-term formula, the STF tensor-harmonic derivation, and the documented Mathematica implementation. Text extraction was used for navigation; formulae recorded above were checked against the TeX source.
 
 ### Checked
 
-**Verified:** With \(q=r'^2-p^2\) and \(\rho>0\), direct series expansion of
+**Verified:** With $q=r'^2-p^2$ and $\rho>0$, direct series expansion of
 
-$$
+$$\begin{align}
 \sqrt{\rho^2-2\rho p+p^2+q}
-$$
+\end{align}$$
 
-and its reciprocal reproduces the paper's terms through combined source order \(d^3\); both symbolic residuals are zero.
+and its reciprocal reproduces the paper's terms through combined source order $d^3$; both symbolic residuals are zero.
 
-**Verified:** The universal moment operator gives, for \(n=0,1,2,3\), the successive commuting products
+**Verified:** The universal moment operator gives, for $n=0,1,2,3$, the successive commuting products
 
-$$
-1,quad
-\partial_t-(l+1)H,quad
-\prod_{j=0}^{1}[\partial_t-(l+1-j)H],quad
+$$\begin{align}
+1,quad \partial_t-(l+1)H,quad \prod_{j=0}^{1}[\partial_t-(l+1-j)H],quad
 \prod_{j=0}^{2}[\partial_t-(l+1-j)H],
-$$
+\end{align}$$
 
-and its \(H\to0\) limit at \(n=3\) is \(\partial_t^3\). The induction uses constant de Sitter \(H\); commutativity would require modification for time-dependent \(H\).
+and its $H\to0$ limit at $n=3$ is $\partial_t^3$. The induction uses constant de Sitter $H$; commutativity would require modification for time-dependent $H$.
 
-**Verified:** Independently summing the four \(\widehat T^{(3)},\widehat T^{(2)},\widehat T^{(1)},\widehat T^{(0)}\) contributions to \(G_3\), the residual against the displayed simplified coefficient of \(Q^{(\rho+p)}_{klm}n_kn_ln_m\) is zero.
+**Verified:** Independently summing the four $\widehat T^{(3)},\widehat T^{(2)},\widehat T^{(1)},\widehat T^{(0)}$ contributions to $G_3$, the residual against the displayed simplified coefficient of $Q^{(\rho+p)}_{klm}n_kn_ln_m$ is zero.
 
-**Verified:** The analogous residual for the trace structure \(Q^{(\rho+p)}_{kll}n_k\) is zero. This confirms the nontrivial cancellations among the \(H^3\), \(H^2/r\), \(H/r^2\), and \(1/r^3\) terms in the unsimplified blocks.
+**Verified:** The analogous residual for the trace structure $Q^{(\rho+p)}_{kll}n_k$ is zero. This confirms the nontrivial cancellations among the $H^3$, $H^2/r$, $H/r^2$, and $1/r^3$ terms in the unsimplified blocks.
 
-### Not independently verified
+### Not Independently Verified
 
-**Assumptions:** Four-dimensional exact de Sitter background; future Poincaré patch; generalized harmonic gauge; compact slow source; constant \(H\); octupolar truncation; source conservation; observation region and scale inequalities stated above.
+**Assumptions:** Four-dimensional exact de Sitter background; future Poincaré patch; generalized harmonic gauge; compact slow source; constant $H$; octupolar truncation; source conservation; observation region and scale inequalities stated above.
 
 **Not verified:** The full componentwise linearized Einstein equations were not independently reimplemented. The paper reports that they were checked mode by mode, but no complete executable notebook accompanies the arXiv source inspected here.
 
 **Not verified:** The lengthy Damour--Iyer rank-two decomposition and every numerical STF projection coefficient were inspected but not independently recomputed component by component.
 
-**Not verified:** No Bondi-gauge transformation, \(\mathcal I^+\) flux, charge, or radiative-phase-space calculation is supplied by the paper; these are future-work boundaries, not consequences of the present formulae.
+**Not verified:** No Bondi-gauge transformation, $\mathcal I^+$ flux, charge, or radiative-phase-space calculation is supplied by the paper; these are future-work boundaries, not consequences of the present formulae.
 
-## Practical reuse
+## Practical Reuse
 
 For future vault work, the safest reusable pieces are:
 
 1. use the universal moment identity before doing sector-specific manipulations;
-2. keep \(\chi^{(I)}\), \(\chi^{(II)}\), and \(\chi^{(III)}\) separate until after power counting;
+2. keep $\chi^{(I)}$, $\chi^{(II)}$, and $\chi^{(III)}$ separate until after power counting;
 3. project Cartesian moments to irreducible STF pieces before mapping them to spherical harmonics;
 4. do not infer radiative fluxes from generalized-harmonic coefficients without a gauge/asymptotic analysis;
-5. when extending to \(l>3\), treat moment order, \(1/r\) order, and powers of \(H\) as distinct gradings.
+5. when extending to $l>3$, treat moment order, $1/r$ order, and powers of $H$ as distinct gradings.

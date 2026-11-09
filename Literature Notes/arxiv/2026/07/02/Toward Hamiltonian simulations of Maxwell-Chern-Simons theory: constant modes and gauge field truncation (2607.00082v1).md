@@ -20,13 +20,13 @@ summary: "A compact MCS flat-sector benchmark that preserves magnetic-translatio
 tags: []
 ---
 
-# Constant modes of Maxwell-Chern-Simons theory as a finite Hamiltonian benchmark
+# Constant Modes of Maxwell-Chern-Simons Theory as a Finite Hamiltonian Benchmark
 
 Back to [[2026_07_02_overview]].
 
 This is a medium-priority technical note. The paper is not directly about covariant phase space or boundary charges, but it is a useful model paper for Maxwell-Chern-Simons quantization, compact zero modes, magnetic translations, and finite-dimensional truncations that preserve global topological data.
 
-## Flat sector and continuum Hamiltonian
+## Flat Sector and Continuum Hamiltonian
 
 The theory is compact $U(1)$ Maxwell-Chern-Simons theory in $2+1$ dimensions on a spatial torus. The field is restricted to the harmonic sector
 
@@ -37,10 +37,7 @@ A_i(t,x)\to a_i(t),\qquad i=1,2,
 where $a_i$ are holonomies around the two non-contractible cycles. The zero-mode Hamiltonian is
 
 $$\begin{align}
-H=\frac{Se^2}{2}\left[
-\left(p_1-\frac{k}{4\pi}a_2\right)^2
-+\left(p_2+\frac{k}{4\pi}a_1\right)^2
-\right].
+H=\frac{Se^2}{2}\left[ \left(p_1-\frac{k}{4\pi}a_2\right)^2 +\left(p_2+\frac{k}{4\pi}a_1\right)^2 \right].
 \end{align}$$
 
 The same expression follows from compact QED in the flat sector,
@@ -58,32 +55,25 @@ $$\begin{align}
 Thus
 
 $$\begin{align}
-[E_1,E_2]=-i\frac{e^4k}{2\pi S},
-\qquad
-[\tilde E_1,\tilde E_2]=-i\frac{k}{2\pi S},
-\qquad
-\tilde E_i=\frac{E_i}{e^2}.
+[E_1,E_2]=-i\frac{e^4k}{2\pi S}, \qquad [\tilde E_1,\tilde E_2]=-i\frac{k}{2\pi S}, \qquad \tilde E_i=\frac{E_i}{e^2}.
 \end{align}$$
 
 Introducing
 
 $$\begin{align}
-a=\frac{\tilde E_2+i\tilde E_1}{\sqrt{k/(\pi S)}},\qquad
-a^\dagger=\frac{\tilde E_2-i\tilde E_1}{\sqrt{k/(\pi S)}},
+a=\frac{\tilde E_2+i\tilde E_1}{\sqrt{k/(\pi S)}},\qquad a^\dagger=\frac{\tilde E_2-i\tilde E_1}{\sqrt{k/(\pi S)}},
 \end{align}$$
 
 one obtains $[a,a^\dagger]=1$ and
 
 $$\begin{align}
-H=\frac{e^2k}{2\pi}\left(a^\dagger a+\frac12\right),\qquad
-E_n=\frac{e^2k}{2\pi}\left(n+\frac12\right).
+H=\frac{e^2k}{2\pi}\left(a^\dagger a+\frac12\right),\qquad E_n=\frac{e^2k}{2\pi}\left(n+\frac12\right).
 \end{align}$$
 
 The oscillator algebra gives Landau levels, but not their degeneracy. The guiding-center operators are
 
 $$\begin{align}
-R_1=\tilde E_2-\frac{k}{2\pi}a_1,\qquad
-R_2=\tilde E_1+\frac{k}{2\pi}a_2,
+R_1=\tilde E_2-\frac{k}{2\pi}a_1,\qquad R_2=\tilde E_1+\frac{k}{2\pi}a_2,
 \end{align}$$
 
 with $[R_i,H]=0$ and
@@ -95,8 +85,7 @@ $$\begin{align}
 The magnetic translations
 
 $$\begin{align}
-U=\exp\left(i\frac{2\pi\sqrt S}{k}R_1\right),\qquad
-V=\exp\left(i\frac{2\pi\sqrt S}{k}R_2\right)
+U=\exp\left(i\frac{2\pi\sqrt S}{k}R_1\right),\qquad V=\exp\left(i\frac{2\pi\sqrt S}{k}R_2\right)
 \end{align}$$
 
 obey
@@ -107,7 +96,7 @@ UV=e^{2\pi i/k}VU.
 
 This Weyl algebra has a $k$-dimensional irreducible representation, so each Landau level has the expected $k$-fold topological degeneracy.
 
-## Zero-mode torus and effective magnetic bundle
+## Zero-Mode Torus and Effective Magnetic Bundle
 
 The compact variables obey
 
@@ -118,16 +107,13 @@ a_i\sim a_i+2\pi.
 In symmetric gauge,
 
 $$\begin{align}
-\widetilde A_1=-\frac{k}{4\pi}a_2,\qquad
-\widetilde A_2=\frac{k}{4\pi}a_1,
+\widetilde A_1=-\frac{k}{4\pi}a_2,\qquad \widetilde A_2=\frac{k}{4\pi}a_1,
 \end{align}$$
 
 so that
 
 $$\begin{align}
-B_{\mathrm{eff}}
-=\partial_{a_1}\widetilde A_2-\partial_{a_2}\widetilde A_1
-=\frac{k}{2\pi}.
+B_{\mathrm{eff}} =\partial_{a_1}\widetilde A_2-\partial_{a_2}\widetilde A_1 =\frac{k}{2\pi}.
 \end{align}$$
 
 The total flux through the zero-mode torus is
@@ -138,14 +124,12 @@ $$\begin{align}
 
 which enforces $k\in\mathbb Z$ under large gauge transformations.
 
-## Finite-dimensional truncation and Harper-Hofstadter form
+## Finite-Dimensional Truncation and Harper-Hofstadter Form
 
 The finite truncation discretizes the compact zero-mode torus by
 
 $$\begin{align}
-a_1=\frac{2\pi}{N_x}x,\qquad
-a_2=\frac{2\pi}{N_y}y,\qquad
-x=0,\ldots,N_x-1,\quad y=0,\ldots,N_y-1.
+a_1=\frac{2\pi}{N_x}x,\qquad a_2=\frac{2\pi}{N_y}y,\qquad x=0,\ldots,N_x-1,\quad y=0,\ldots,N_y-1.
 \end{align}$$
 
 The finite Hilbert space has dimension $N_xN_y$, with flux per plaquette
@@ -159,26 +143,23 @@ The key distinction from the usual Hofstadter problem is that the total flux $2\
 Using Landau gauge,
 
 $$\begin{align}
-\widetilde A_x=0,\qquad
-\widetilde A_y=B a_1=\frac{k}{N_x}x,
+\widetilde A_x=0,\qquad \widetilde A_y=B a_1=\frac{k}{N_x}x,
 \end{align}$$
 
 the link operators are
 
 $$\begin{align}
-U_y(x,y)=\exp(2\pi i\alpha x),\qquad
-U_x(x,y)=1.
+U_y(x,y)=\exp(2\pi i\alpha x),\qquad U_x(x,y)=1.
 \end{align}$$
 
 The lattice Hamiltonian is the covariant finite-difference Laplacian on this magnetic bundle. In the equal-spacing case it becomes a Hofstadter-type tight-binding model, with twisted boundary conditions required by the nontrivial bundle.
 
-## Magnetic translations and arithmetic obstruction
+## Magnetic Translations and Arithmetic Obstruction
 
 The lattice magnetic translations are
 
 $$\begin{align}
-T_x|x,y\rangle=e^{-2\pi i\alpha y}|x+1,y\rangle,\qquad
-T_y|x,y\rangle=|x,y+1\rangle,
+T_x|x,y\rangle=e^{-2\pi i\alpha y}|x+1,y\rangle,\qquad T_y|x,y\rangle=|x,y+1\rangle,
 \end{align}$$
 
 and obey
@@ -217,14 +198,14 @@ and similarly for $x\leftrightarrow y$. This is the finite-dimensional trace of 
 
 In the commensurate regime $k\mid N_x$ and $k\mid N_y$, reduced translations can be chosen so that the finite model realizes the continuum magnetic-translation algebra exactly. This is the case where the finite truncation produces exact $k$-fold multiplets rather than only continuum-limit quasi-degeneracies. Away from this regime, the arithmetic orbit structure is still informative, but exact finite-size degeneracy should not be identified with the continuum topological degeneracy.
 
-## Why this is useful locally
+## Why This Is Useful Locally
 
 - Maxwell-Chern-Simons testbed: the paper isolates the flat sector where topological degeneracy can be compared cleanly between continuum and finite truncation.
 - Quantization convention: the Chern-Simons level $k$ enters as magnetic flux through the zero-mode torus, not merely as a local mass parameter.
 - Boundary/global data: the degeneracy is controlled by magnetic translations and large gauge transformations. This is useful for checking any local Maxwell-Chern-Simons note where local mode quantization risks missing global sectors.
 - Numerical truncation warning: finite-dimensional clusters depend on arithmetic properties of $(N_x,N_y,k)$; they are not automatically physical topological degeneracies.
 
-## Verification boundary
+## Verification Boundary
 
 Source-derived: the Hamiltonian, Landau-level spectrum, magnetic-translation algebra, and arithmetic obstruction were checked against the official arXiv TeX source.
 

@@ -199,7 +199,7 @@ Total deduplicated entries: 187
 | [2610.08596](https://arxiv.org/abs/2610.08596) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th | Connected Geometries in Gravitational Path Integrals, and Normalized No-Boundary Probabilities | Jean-Luc Lehners | 32 pages, 4 figures, v2: typos corrected |
 | [2610.10045](https://arxiv.org/abs/2610.10045) | gr-qc:replacement; hep-th:replacement | gr-qc, hep-th | The Komar charges of type II supergravity and supersymmetric localization | Gabriele Barbagallo, Tomás Ortín | Latex file, 50 pages, no figures, irrelevant typos corrected |
 
-## Metadata and placement audit
+## Metadata and Placement Audit
 
 Original helper document SHA-256 before this appendix: 7b4e50c670d4c1327b798e5411586c915819ecbeb6fa74f98ab9361d298763e3. Original rows are preserved. Versions are latest metadata versions, not independently archived issue-time versions. Primary and cross categories are from official abstract pages. Placements are exclusive.
 

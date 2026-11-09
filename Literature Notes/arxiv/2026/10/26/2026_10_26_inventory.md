@@ -139,7 +139,7 @@ Total deduplicated entries: 125
 | [2610.28497](https://arxiv.org/abs/2610.28497) | math-ph:replacement | math-ph | Christoffel transformations of symmetric $d$-connections and gap probability recurrences | Anton Selemenchuk |  |
 | [2610.30064](https://arxiv.org/abs/2610.30064) | gr-qc:replacement | gr-qc | Post-adiabatic effective-one-body waveforms for coalescing compact binaries | Rossella Gamba | 25 pages, 9 figures (including appendices); updated references |
 
-## Official-list correction: legacy identifier
+## Official-List Correction: Legacy Identifier
 
 The helper completed successfully but recognizes only modern numeric IDs. Its original 125 rows above are preserved. Official math-ph replacement item 53 adds `math/0211070`; corrected unique total: **126**. Category appearances: **153 = hep-th 53 + gr-qc 47 + math-ph 53**. The audit below preserves official primary-first categories, including uppercase suffixes omitted by the helper category regex. Original helper SHA-256: `d532f3d5b962a2dcb21d8237a6716241a3ec5d973f835a4aaa87807364e3f723`.
 
@@ -147,7 +147,7 @@ The helper completed successfully but recognizes only modern numeric IDs. Its or
 |---|---|---|---|---|---|
 | [math/0211070](https://arxiv.org/abs/math/0211070) | math-ph:replacement | math.CO, math-ph | The degree distribution in bipartite planar maps: applications to the Ising model | Bousquet-Mélou, Mireille, Schaeffer, Gilles | 32 pages, 17 figures |
 
-## Complete metadata and placement audit
+## Complete Metadata and Placement Audit
 
 Screening uses the full official abstracts and comments. Placements are exclusive; author/version modifiers remain separate reason codes. `deferred`, `secondary`, `author watch`, and `tracked update` have no full-paper retrieval or technical treatment. Queue completion is reported in the overview.
 

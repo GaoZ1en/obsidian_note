@@ -291,7 +291,7 @@ Total deduplicated entries: 279
 | [2609.29699](https://arxiv.org/abs/2609.29699) | math-ph:replacement | math-ph | Critical-curve regularity for finite-lifespan frog models via local-to-global comparisons | Christian Mönch, Andreas Klippel | 39 pages, no figures. v2: identifies the exact short-lifespan constant in Theorem A and Proposition 5.3; clarifies several proofs, including the long-range sharpness exploration; updates references and exposition |
 | [2609.31406](https://arxiv.org/abs/2609.31406) | hep-th:replacement; math-ph:replacement | hep-ph, hep-th, math-ph | Topological Geometry of Neutrino Mass and Mixing | Enrique Arrieta-Diaz | 5 pages (main text), 18 pages (supplemental material) |
 
-## Ordered categories and final placement audit
+## Ordered Categories and Final Placement Audit
 
 Primary category is listed first; cross categories retain official order. Issue versions come from the frozen official listing. Latest versions are queried only where metadata screening required them; “not queried” is not an inferred version. The original helper table above is unchanged.
 

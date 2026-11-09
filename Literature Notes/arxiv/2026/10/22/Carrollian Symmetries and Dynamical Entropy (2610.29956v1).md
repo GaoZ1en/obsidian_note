@@ -12,20 +12,19 @@ summary: "Null-boundary boost entropy charge with explicit endpoint, stationarit
 tags: []
 ---
 
-# Result and scope
+# Result and Scope
 
 **Correct under precise additional conditions:** the primed null-boundary charge has aspect
 
-$$
-q'_f=\frac{\varepsilon_{\mathcal C}^{(0)}}{8\pi G_N}
-(\Omega\partial_v f-f\partial_v\Omega).
-$$
+$$\begin{align}
+q'_f=\frac{\varepsilon_{\mathcal C}^{(0)}}{8\pi G_N} (\Omega\partial_v f-f\partial_v\Omega).
+\end{align}$$
 
 For a field-independent, angle-independent boost $f=cv$, $c>0$, its single-cut value is $cS_{\rm dyn}/(2\pi)$, where $S_{\rm dyn}=(1-v\partial_v)A/(4G_N)$. The finite-slab charge is a difference of cut values. The classical first law and the semiclassical linearized GSL follow on a nonexpanding, shear-free, affinely parametrized background with the stated matter/entropy inequalities. The paper's argument that its primed-stationarity condition alone supplies all these background conditions is incorrect on an open interval. Explicit counterexamples and the usable conditional derivation are given below.
 
 The reusable object is the charge and its flux/anomaly accounting. It does not establish an unrestricted entropy law on every null hypersurface, a microscopic state count, or regulator-independent generalized entropy without a renormalization prescription.
 
-# Source map and how to read this long paper
+# Source Map and How to Read This Long Paper
 
 Source: [arXiv:2610.29956v1](https://arxiv.org/abs/2610.29956v1), official PDF and TeX `Draft.tex`. The abstract comments say 27 pages; the downloaded PDF has **33 pages**, including the cover and references. Printed page $n$ is PDF page $n+1$. There are no appendices. Some TeX labels are duplicated or empty; equation references below follow the **rendered PDF numbering**.
 
@@ -47,17 +46,13 @@ Source: [arXiv:2610.29956v1](https://arxiv.org/abs/2610.29956v1), official PDF a
 
 The derivation runs
 
-$$
-(q,\ell,k)\longrightarrow(\sigma,\mu,\Omega)
-\longrightarrow\theta^{\rm can}\longrightarrow(C,q'_f,a'_f)
-\longrightarrow S_{\rm dyn}
-\longrightarrow\text{conditional PPFL}
-\longrightarrow\text{conditional linearized GSL}.
-$$
+$$\begin{align}
+(q,\ell,k)\longrightarrow(\sigma,\mu,\Omega) \longrightarrow\theta^{\rm can}\longrightarrow(C,q'_f,a'_f) \longrightarrow S_{\rm dyn} \longrightarrow\text{conditional PPFL} \longrightarrow\text{conditional linearized GSL}.
+\end{align}$$
 
-# Ruled Carrollian geometry and the null constraint
+# Ruled Carrollian Geometry and the Null Constraint
 
-## Notation, orientation and dimension
+## Notation, Orientation and Dimension
 
 The preliminary geometry has a $(d+1)$-dimensional null manifold $\mathcal N$, with $d$-dimensional cuts $\mathcal C$. From source §3.3 onward $d=2$: four-dimensional Einstein gravity, three-dimensional $\mathcal N$. Use $G_N>0$, $\hbar=k_B=1$ unless restoring the regulator discussion below. The paper uses $c$ for the positive normalization of a boost, not the speed of light.
 
@@ -80,281 +75,238 @@ The raising prescription in source (2.4) requires $T_{ab}\ell^b=0$ on the index 
 
 **Source-derived geometry:** the Carrollian connection obeys
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 D_aq_{bc}&=-k_b\theta_{ac}-k_c\theta_{ab},\\
 D_a\ell^b&=\theta_a{}^b+\omega_a\ell^b,\\
 D_ak_b&=-\omega_ak_b-k_a(\varphi_b+\pi_b)+\bar\theta_{ab},\\
-dk&=-k\wedge\varphi+\varpi,\qquad
-\bar\theta_{[ab]}=-\tfrac12\varpi_{ab}.
-\end{aligned}
-$$
+dk&=-k\wedge\varphi+\varpi,\qquad \bar\theta_{[ab]}=-\tfrac12\varpi_{ab}.
+\end{aligned}$$
 
 The data $(\kappa,\pi_a,\bar\theta_{(ab)})$ require embedding information. Thus “intrinsic” in the charge discussion does not mean that all connection data are determined by $(q,\ell)$ alone. The volume identity is $d\varepsilon_{\mathcal C}=\theta\varepsilon_{\mathcal N}$.
 
 The internal rescaling $(\ell,k,q)\mapsto(e^\lambda\ell,e^{-\lambda}k,q)$ preserves the ruled structure. The horizontal shift $k\mapsto k+\zeta$, $i_\ell\zeta=0$, also preserves it; its vanishing charge is imported from earlier work, not derived anew here.
 
-## Brown–York data and Raychaudhuri
+## Brown–York Data and Raychaudhuri
 
 The source takes
 
-$$
-T_a{}^b=\tau_a{}^b+\tau_a\ell^b,
-\quad8\pi G_N\tau_a{}^b=\sigma_a{}^b-\mu q_a{}^b,
-\quad8\pi G_N\tau_a=\pi_a-\theta k_a.
-$$
+$$\begin{align}
+T_a{}^b=\tau_a{}^b+\tau_a\ell^b, \quad8\pi G_N\tau_a{}^b=\sigma_a{}^b-\mu q_a{}^b, \quad8\pi G_N\tau_a=\pi_a-\theta k_a.
+\end{align}$$
 
 The vacuum constraint is $D_bT_a{}^b=0$; matter changes it to $D_bT_a{}^b=T^{\rm mat}_{a\ell}$. The longitudinal projection gives
 
-$$
-R_{\ell\ell}=-(\mathcal L_\ell+\theta)\theta+\mu\theta-\sigma^2
-=-\mathcal L_\ell\theta+\kappa\theta-\frac{\theta^2}{d}-\sigma^2.
-$$
+$$\begin{align}
+R_{\ell\ell}=-(\mathcal L_\ell+\theta)\theta+\mu\theta-\sigma^2 =-\mathcal L_\ell\theta+\kappa\theta-\frac{\theta^2}{d}-\sigma^2.
+\end{align}$$
 
 For example, contract the divergence by writing $\ell^aT_a{}^b=-\theta\ell^b/(8\pi G_N)$. The product derivative contributes $-\ell(\theta)-\theta(\theta+\kappa)$, while subtracting $(D_b\ell^a)T_a{}^b$ contributes $-\sigma^2+\mu\theta+\kappa\theta$. The inaffinity pieces cancel in this form.
 
 The horizontal projection, source (2.20), is
 
-$$
-q_a{}^bR_{b\ell}=q_a{}^b(\mathcal L_\ell+\theta)\pi_b
-+\theta\varphi_a-(\bar D_b+\varphi_b)(\mu q_a{}^b-\sigma_a{}^b).
-$$
+$$\begin{align}
+q_a{}^bR_{b\ell}=q_a{}^b(\mathcal L_\ell+\theta)\pi_b +\theta\varphi_a-(\bar D_b+\varphi_b)(\mu q_a{}^b-\sigma_a{}^b).
+\end{align}$$
 
 It controls the spin-1 sector, which is removed in the subsequent primed restriction; it is not used to prove the entropy laws.
 
 Set $\ell=\partial_v$ after this restriction. Then $\theta=\Omega'/\Omega$ and
 
-$$
+$$\begin{align}
 C=-\Omega R_{\ell\ell}=\Omega''-\mu\Omega'+\Omega\sigma^2. \tag{3.43}
-$$
+\end{align}$$
 
 This is the central constraint, valid before imposing $C=0$. In matter-sourced gravity it equals $-8\pi G_N\Omega T^{\rm mat}_{\ell\ell}$.
 
-# Boundary action, anomalies and the primed restriction
+# Boundary Action, Anomalies and the Primed Restriction
 
-## The CPS bookkeeping
+## The CPS Bookkeeping
 
 The source convention is $\delta L=-E+d\theta$. For field-independent $\xi$, $J_\xi=I_\xi\theta-i_\xi L=C_\xi+dq_\xi$ when the Lagrangian is covariant. A boundary Lagrangian anomaly changes this to $J_\xi=C_\xi+dq_\xi+a_\xi$, where $a_\xi=\Delta_\xi\ell_{\rm bdy}$ and $\Delta_\xi=\mathfrak L_\xi-\mathcal L_\xi$. Pulling to a hypersurface tangent to $\xi$ removes $i_\xi L$ and the corresponding top-form equation-of-motion term. One obtains
 
-$$
-I_\xi\omega=-\delta(C_\xi+dq_\xi)+d i_\xi\theta
-+\Delta_\xi\theta-\delta a_\xi. \tag{3.18}
-$$
+$$\begin{align}
+I_\xi\omega=-\delta(C_\xi+dq_\xi)+d i_\xi\theta +\Delta_\xi\theta-\delta a_\xi. \tag{3.18}
+\end{align}$$
 
 The source discusses $\theta\mapsto\theta+\delta Y+d\beta$ through $\theta|_{\mathcal B}=\widetilde\theta-\delta\ell_{\mathcal B}+d\vartheta$. Fixing the boundary variational problem and the chosen improved potential constrains these ambiguities. Vanishing anomalies by itself is not a proof of a unique potential among every possible covariant improvement.
 
-## Action and canonical variables
+## Action and Canonical Variables
 
 For the orientation chosen in the paper,
 
-$$
-S=\frac1{16\pi G_N}\int_{\mathcal M}\varepsilon R
--\frac1{8\pi G_N}\int_{\mathcal N}\varepsilon_{\mathcal N}(\kappa+\theta). \tag{3.21}
-$$
+$$\begin{align}
+S=\frac1{16\pi G_N}\int_{\mathcal M}\varepsilon R -\frac1{8\pi G_N}\int_{\mathcal N}\varepsilon_{\mathcal N}(\kappa+\theta). \tag{3.21}
+\end{align}$$
 
 The canonical boundary potential is the **source-derived input**
 
-$$
-\theta^{\rm can}=\varepsilon_{\mathcal N}
-\left(\tfrac12\tau^{ab}\delta q_{ab}-\tau_a\delta\ell^a\right).
-$$
+$$\begin{align}
+\theta^{\rm can}=\varepsilon_{\mathcal N} \left(\tfrac12\tau^{ab}\delta q_{ab}-\tau_a\delta\ell^a\right).
+\end{align}$$
 
 With $\ell=e^{-\alpha}\partial_v$ and $\delta\ell=-\delta\alpha\ell$ this becomes
 
-$$
-\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}}{8\pi G_N}
-\left(\tfrac12\sigma^{ab}\delta q_{ab}
--\tfrac\mu2 q^{ab}\delta q_{ab}-\theta\delta\alpha\right).
-$$
+$$\begin{align}
+\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}}{8\pi G_N} \left(\tfrac12\sigma^{ab}\delta q_{ab} -\tfrac\mu2 q^{ab}\delta q_{ab}-\theta\delta\alpha\right).
+\end{align}$$
 
 A temporal diffeomorphism $f\partial_v$ gives $\mathfrak L_f\alpha=f'$, while an internal rescaling gives $\mathfrak L_\lambda\alpha=-\lambda$. Taking $\lambda_f=f'$ therefore preserves $\alpha=0$ and $\delta\ell=0$. This is a restricted/reduced phase space, not an assertion that the removed pair is physically irrelevant in every boundary problem. Dirichlet conditions before the restriction fix the full Carrollian structure.
 
 Using $\delta\log\Omega=\tfrac12q^{ab}\delta q_{ab}$ gives
 
-$$
-\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}
-\left(\frac\Omega2\sigma^{ab}\delta q_{ab}-\mu\delta\Omega\right). \tag{3.37}
-$$
+$$\begin{align}
+\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N} \left(\frac\Omega2\sigma^{ab}\delta q_{ab}-\mu\delta\Omega\right). \tag{3.37}
+\end{align}$$
 
 The primed transformations in (3.38)–(3.39) are
 
-$$
-\delta'_fq_{ab}=\mathcal L_fq_{ab},\quad
-\delta'_f\sigma_{ab}=(f\sigma_{ab})',\quad
-\delta'_f\Omega=f\Omega',\quad
-\delta'_f\mu=(f\mu)'+f''.
-$$
+$$\begin{align}
+\delta'_fq_{ab}=\mathcal L_fq_{ab},\quad \delta'_f\sigma_{ab}=(f\sigma_{ab})',\quad \delta'_f\Omega=f\Omega',\quad \delta'_f\mu=(f\mu)'+f''.
+\end{align}$$
 
 The last expression has a connection-like inhomogeneous term. When computing density anomalies below, retain the homogeneous weights in this specified transformation law; treating $\mu$ as an ordinary scalar with transformation $f\mu'$ would change the calculation.
 
-## Constraint-to-charge calculation and flux
+## Constraint-to-Charge Calculation and Flux
 
 The trace-free condition and $\mathcal L_fq_{ab}=2f\theta_{ab}$ imply
 
-$$
-I'_f\theta^{\rm can}=
-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}
- f(\Omega\sigma^2-\mu\Omega').
-$$
+$$\begin{align}
+I'_f\theta^{\rm can}= \frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N} f(\Omega\sigma^2-\mu\Omega').
+\end{align}$$
 
 Substitute $C$ and integrate the $f\Omega''$ term once:
 
-$$
-f(\Omega\sigma^2-\mu\Omega')
-=fC+\partial_v(\Omega f'-f\Omega')-\Omega f''.
-$$
+$$\begin{align}
+f(\Omega\sigma^2-\mu\Omega') =fC+\partial_v(\Omega f'-f\Omega')-\Omega f''.
+\end{align}$$
 
 Thus
 
-$$
-I'_f\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}fC+dq'_f+a'_f,
-\quad a'_f=-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}\Omega f''.
-$$
+$$\begin{align}
+I'_f\theta^{\rm can}=\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}fC+dq'_f+a'_f, \quad a'_f=-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}\Omega f''.
+\end{align}$$
 
 The potential anomaly is
 
-$$
-\Delta'_f\theta^{\rm can}=-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}\delta\Omega f''
-=\delta a'_f.
-$$
+$$\begin{align}
+\Delta'_f\theta^{\rm can}=-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}\delta\Omega f'' =\delta a'_f.
+\end{align}$$
 
 These two terms cancel in the fundamental identity **even for general $f$**:
 
-$$
-I'_f\omega^{\rm can}=-\delta\left(
-\frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}fC+dq'_f\right)
-+d i_f\theta^{\rm can}. \tag{3.53}
-$$
+$$\begin{align}
+I'_f\omega^{\rm can}=-\delta\left( \frac{\varepsilon_{\mathcal N}^{(0)}}{8\pi G_N}fC+dq'_f\right) +d i_f\theta^{\rm can}. \tag{3.53}
+\end{align}$$
 
 Demanding that each anomaly vanish separately is an additional covariance requirement, yielding $f''=0$ if arbitrary area variations are allowed. It is stronger than merely requiring their cancellation in this identity. The corner flux $i_f\theta^{\rm can}$ remains and must be controlled before calling the cut charge a Hamiltonian.
 
-# Entropy charge with both endpoints retained
+# Entropy Charge with Both Endpoints Retained
 
 Work first on $0<v_0<v_1<v_c$, without taking a caustic limit. For $f=f(v)$ define the **single-cut** functional
 
-$$
-Q_f(v)=\int_{\mathcal C(v)}q'_f
-=\frac1{2\pi}(f' S_{\rm BH}-fS'_{\rm BH}),\qquad
-S_{\rm BH}=\frac{A(v)}{4G_N}.
-$$
+$$\begin{align}
+Q_f(v)=\int_{\mathcal C(v)}q'_f =\frac1{2\pi}(f' S_{\rm BH}-fS'_{\rm BH}),\qquad S_{\rm BH}=\frac{A(v)}{4G_N}.
+\end{align}$$
 
 The on-shell **slab** charge is
 
-$$
+$$\begin{align}
 M'_f[v_0,v_1]=Q_f(v_1)-Q_f(v_0).
-$$
+\end{align}$$
 
 This distinction avoids the paper's reuse of $M'_f$ for a cut charge, an integrated constraint-plus-corner generator, and its slab variation.
 
 For the general anomaly-free function $f=cv+b$,
 
-$$
+$$\begin{align}
 Q_f=\frac1{2\pi}\big[cS_{\rm BH}-(cv+b)S'_{\rm BH}\big].
-$$
+\end{align}$$
 
 The additional origin/boost choice $b=0$ gives $Q_{cv}=cS_{\rm dyn}/(2\pi)$. Anomaly cancellation alone leaves $b$ undetermined. Angular independence and $c>0$ are also assumptions, not consequences of $f''=0$.
 
 Source (3.55)–(3.56) discards the lower endpoint because its area vanishes. The necessary condition is actually
 
-$$
-\lim_{\epsilon\to0^+}
-\big[f'(\epsilon)A(\epsilon)-f(\epsilon)A'(\epsilon)\big]=0.
-$$
+$$\begin{align}
+\lim_{\epsilon\to0^+} \big[f'(\epsilon)A(\epsilon)-f(\epsilon)A'(\epsilon)\big]=0.
+\end{align}$$
 
 For $A=a\epsilon^p$, $p>0$, and $f=c\epsilon$, it holds. For $A=a\epsilon$ and $f=c\epsilon+b$, the lower numerator is $-ab$, despite $A\to0$. Smoothness on the open interval does not supply the missing endpoint condition. Finite cuts are sufficient for the first-law calculation and will be retained here.
 
 The exact entropy derivative is
 
-$$
-S'_{\rm dyn}=-\frac{v}{4G_N}\int_{\mathcal C}
-\varepsilon_{\mathcal C}^{(0)}\Omega''
-=\frac{v}{4G_N}\int_{\mathcal C}\varepsilon_{\mathcal C}^{(0)}
-\big[\Omega\sigma^2+\Omega R_{\ell\ell}-\mu\Omega'\big].
-$$
+$$\begin{align}
+S'_{\rm dyn}=-\frac{v}{4G_N}\int_{\mathcal C} \varepsilon_{\mathcal C}^{(0)}\Omega'' =\frac{v}{4G_N}\int_{\mathcal C}\varepsilon_{\mathcal C}^{(0)} \big[\Omega\sigma^2+\Omega R_{\ell\ell}-\mu\Omega'\big].
+\end{align}$$
 
 For $v>0$, $\mu=0$ and $R_{\ell\ell}\ge0$ are sufficient for nondecrease. They are not necessary: the displayed combination itself can have the required sign with nonzero $\mu$.
 
-# Stationarity: explicit failures and the repaired first law
+# Stationarity: Explicit Failures and the Repaired First Law
 
-## $\mu=0$ does not imply affine time
+## $\mu=0$ Does Not Imply Affine Time
 
 **Failed source inference:** the sentence immediately after (3.61), printed p. 19, claims $\mu=0\Rightarrow\kappa=0$. Since $\mu=\kappa+\theta/2$, this only follows if $\theta=0$ as well.
 
 A flat four-dimensional metric on $v>0$ provides a geometric witness:
 
-$$
-ds^2=-2v^{-1/2}du\,dv+v(dx^2+dy^2),\quad \mathcal N:\ u=0,
-\quad \ell=\partial_v.
-$$
+$$\begin{align}
+ds^2=-2v^{-1/2}du\,dv+v(dx^2+dy^2),\quad \mathcal N:\ u=0, \quad \ell=\partial_v.
+\end{align}$$
 
-It has $\Omega=v$, $\theta=1/v$, $\sigma=0$, $\kappa=-1/(2v)$ and $\mu=0$. xAct/xCoba gives **zero for every Riemann component**. Thus this is already a vacuum counterexample; nonaffinity is not a matter effect. The finite transverse cell may be held fixed, or the transverse directions may be periodically identified for finite cut area.
+It has $\Omega=v$, $\theta=1/v$, $\sigma=0$, $\kappa=-1/(2v)$ and $\mu=0$. XAct/xCoba gives **zero for every Riemann component**. Thus this is already a vacuum counterexample; nonaffinity is not a matter effect. The finite transverse cell may be held fixed, or the transverse directions may be periodically identified for finite cut area.
 
-## A single primed boost does not force $\mu=0$
+## A Single Primed Boost Does Not Force $\mu=0$
 
 **Failed source inference:** following (3.65), printed pp. 19–20, stationarity under $f=cv$ is said to imply $\sigma=\mu=0$. For $v>0$, $\delta'_fq=0$ does give $q'=0$, hence $\theta=\sigma=0$. But the remaining equation is
 
-$$
-0=\delta'_{cv}\mu=c(v\mu)'\quad\Longrightarrow\quad
-\mu(v,x)=\frac{a(x)}v.
-$$
+$$\begin{align}
+0=\delta'_{cv}\mu=c(v\mu)'\quad\Longrightarrow\quad \mu(v,x)=\frac{a(x)}v.
+\end{align}$$
 
 A second flat metric realizes this loophole:
 
-$$
-ds^2=-2v^2du\,dv+dx^2+dy^2,
-\qquad \Omega=1,\quad\theta=\sigma=0,\quad\mu=\kappa=2/v.
-$$
+$$\begin{align}
+ds^2=-2v^2du\,dv+dx^2+dy^2, \qquad \Omega=1,\quad\theta=\sigma=0,\quad\mu=\kappa=2/v.
+\end{align}$$
 
 Again all Riemann components vanish. All reduced dynamical variables are invariant under the stated primed boost, but for general $\delta\Omega(v)$,
 
-$$
-8\pi G_N\,i_f\theta^{\rm can}=-2c\delta\Omega\,
-\varepsilon_{\mathcal C}^{(0)},\qquad
-8\pi G_N\,d i_f\theta^{\rm can}=-2c\partial_v\delta\Omega\,
-\varepsilon_{\mathcal N}^{(0)}.
-$$
+$$\begin{align}
+8\pi G_N\,i_f\theta^{\rm can}=-2c\delta\Omega\, \varepsilon_{\mathcal C}^{(0)},\qquad 8\pi G_N\,d i_f\theta^{\rm can}=-2c\partial_v\delta\Omega\, \varepsilon_{\mathcal N}^{(0)}.
+\end{align}$$
 
 The flux need not vanish. Bounded $\mu$ at a regular extension to $v=0$ would eliminate $a(x)/v$, but the paper works on an open interval near caustics and does not impose this extension. Requiring stationarity under both translations and boosts would also force $\mu=0$. Alternatively, impose $\kappa=0$ directly as a separate background normalization.
 
-## Conditional physical-process law
+## Conditional Physical-Process Law
 
 Use the stronger background conditions
 
-$$
-q'_{AB}=0,\quad \sigma=\theta=\kappa=\mu=0,
-\quad R_{\ell\ell}=0,
-\quad \delta\ell=0,
-\quad f=cv>0.
-$$
+$$\begin{align}
+q'_{AB}=0,\quad \sigma=\theta=\kappa=\mu=0, \quad R_{\ell\ell}=0, \quad \delta\ell=0, \quad f=cv>0.
+\end{align}$$
 
 Take a first-order sourced solution, with the cut labels and generator fixed. The linearized constraint is
 
-$$
+$$\begin{align}
 \delta C=\delta\Omega''=-8\pi G_N\Omega_0\delta T^{\rm mat}_{\ell\ell}.
-$$
+\end{align}$$
 
 At this background the potential and the contracted presymplectic form vanish in the relevant stationary direction. Equation (3.53) therefore reduces to
 
-$$
+$$\begin{align}
 d\delta q'_f=\varepsilon_{\mathcal N}f\delta T^{\rm mat}_{\ell\ell}.
-$$
+\end{align}$$
 
 Integrating over finite cuts,
 
-$$
-\Delta\delta S_{\rm dyn}
-=2\pi\int_{v_0}^{v_1}dv\,v\int_{\mathcal C}
-\varepsilon_{\mathcal C}\delta T^{\rm mat}_{\ell\ell}
-=\frac{2\pi}{c}\int_{\mathcal N[v_0,v_1]}
-\varepsilon_{\mathcal N}\chi^a\ell^b\delta T^{\rm mat}_{ab},
-\quad \chi=cv\ell. \tag{3.68}
-$$
+$$\begin{align}
+\Delta\delta S_{\rm dyn} =2\pi\int_{v_0}^{v_1}dv\,v\int_{\mathcal C} \varepsilon_{\mathcal C}\delta T^{\rm mat}_{\ell\ell} =\frac{2\pi}{c}\int_{\mathcal N[v_0,v_1]} \varepsilon_{\mathcal N}\chi^a\ell^b\delta T^{\rm mat}_{ab}, \quad \chi=cv\ell. \tag{3.68}
+\end{align}$$
 
 The area measure here is the background measure at linear order. If the **perturbation** obeys the NEC, the right hand side is nonnegative. There is no need to remove either endpoint. This is a linear statement; shear squared and nonlinear focusing terms re-enter at higher order. The inaffinity of $\chi$ is $c$ when $\ell$ is affine; identifying $c/(2\pi)$ with a thermodynamic temperature additionally requires an appropriate observer/state or horizon normalization. The intrinsic equation alone does not supply a KMS state.
 
-# Semiclassical entropy at fixed regulators
+# Semiclassical Entropy at Fixed Regulators
 
-## Regime and quantities that must be specified
+## Regime and Quantities That Must Be Specified
 
 Source §4.1 expands $g=g^{(0)}+g^{(1/2)}+g^{(1)}+O(G_N^{3/2})$, with superscripts denoting orders in $G_N$, not powers to multiply again. The background solves vacuum Einstein equations; $g^{(1/2)}$ is the free-graviton contribution, and $g^{(1)}$ is matter backreaction. The source assigns the leading shear-squared term to an effective quantum stress tensor. A separate consistent treatment is needed before interpreting this as a universal local graviton matter operator or applying a matter-QFT QNEC to it.
 
@@ -362,84 +314,67 @@ The small parameter is $\sqrt{\hbar G_N}/\lambda_{\rm matter}\ll1$. Stress-tenso
 
 Retain a UV regulator $\epsilon_{\rm UV}>0$, a finite transverse IR region $L_\perp$ if the cut is noncompact, and finite $0<v_0<v_1<v_c$. A regulated EFT entropy is schematically
 
-$$
-S_{\rm gen}^{\epsilon_{\rm UV},L_\perp}(v)=
-\frac{A^{L_\perp}(v)}{4G_{\rm bare}(\epsilon_{\rm UV})}
-+S_{\rm out}^{\epsilon_{\rm UV},L_\perp}(v)
-+S_{\rm local\,ct}^{\epsilon_{\rm UV},L_\perp}(v).
-$$
+$$\begin{align}
+S_{\rm gen}^{\epsilon_{\rm UV},L_\perp}(v)= \frac{A^{L_\perp}(v)}{4G_{\rm bare}(\epsilon_{\rm UV})} +S_{\rm out}^{\epsilon_{\rm UV},L_\perp}(v) +S_{\rm local\,ct}^{\epsilon_{\rm UV},L_\perp}(v).
+\end{align}$$
 
 The local terms allow the counterterms required by the chosen gravitational EFT and regulator; in four dimensions Newton's constant alone is not generally the whole renormalization problem. The source writes only $A/(4G_N)+S_{\rm vN}$ and assumes a well-defined regulator. It provides no explicit regulator, entropy counterterm calculation or limit-interchange proof. All manipulations below are at fixed compatible regulator/scheme. Only after combining counterterms and establishing convergence could one take $\epsilon_{\rm UV}\to0$, followed by an IR limit if desired. No caustic limit is required. No physical trace on a type-III algebra is asserted without this regulated construction.
 
-## QNEC assumption and the two integrations by parts
+## QNEC Assumption and the Two Integrations by Parts
 
 Source (4.13) is a diagonal null shape-variation inequality at a locally nonexpanding, shear-free cut. Its replacement by a uniform-cut second derivative in (4.14) needs control of the off-diagonal shape Hessian as well; integrating only the diagonal term does not algebraically equal the full double integral. The paper then **explicitly assumes** the perturbed global inequality (4.15). Use that as the hypothesis, rather than claiming it follows from subtracting arbitrary QNECs:
 
-$$
-\int_{\mathcal C}\varepsilon_{\mathcal C}\,
-\delta\langle T_{\ell\ell}\rangle
-\ge\frac1{2\pi}\partial_v^2\delta S_{\rm out}.
-$$
+$$\begin{align}
+\int_{\mathcal C}\varepsilon_{\mathcal C}\, \delta\langle T_{\ell\ell}\rangle \ge\frac1{2\pi}\partial_v^2\delta S_{\rm out}.
+\end{align}$$
 
 Perturbing an inequality generally requires background saturation or another independent argument to infer an inequality on its first variation. A common regulator, fixed cut deformation, suitable state class and the global perturbed inequality are all needed here.
 
 Let the slab constraint-plus-boundary variation be
 
-$$
-\delta\mathcal M_f=-\int_{v_0}^{v_1}dv\,f
-\int_{\mathcal C}\varepsilon_{\mathcal C}\delta\langle T_{\ell\ell}\rangle
-+\Delta\delta Q_f.
-$$
+$$\begin{align}
+\delta\mathcal M_f=-\int_{v_0}^{v_1}dv\,f \int_{\mathcal C}\varepsilon_{\mathcal C}\delta\langle T_{\ell\ell}\rangle +\Delta\delta Q_f.
+\end{align}$$
 
 For nonnegative $f$, the assumed inequality gives
 
-$$
-2\pi\delta\mathcal M_f\le
--\int_{v_0}^{v_1}f\,\delta S_{\rm out}''dv
-+\Delta(f'-f\partial_v)\delta S_{\rm BH}.
-$$
+$$\begin{align}
+2\pi\delta\mathcal M_f\le -\int_{v_0}^{v_1}f\,\delta S_{\rm out}''dv +\Delta(f'-f\partial_v)\delta S_{\rm BH}.
+\end{align}$$
 
 The exact identity
 
-$$
--\int_{v_0}^{v_1} fS''dv=
-\big[f'S-fS'\big]_{v_0}^{v_1}
--\int_{v_0}^{v_1}f''S\,dv
-$$
+$$\begin{align}
+-\int_{v_0}^{v_1} fS''dv= \big[f'S-fS'\big]_{v_0}^{v_1} -\int_{v_0}^{v_1}f''S\,dv
+\end{align}$$
 
 retains both endpoints and all regulator dependence. Consequently,
 
-$$
-2\pi\delta\mathcal M_f\le
-\Delta(f'-f\partial_v)\delta S_{\rm gen}
--\int_{v_0}^{v_1}f''\delta S_{\rm out}\,dv.
-$$
+$$\begin{align}
+2\pi\delta\mathcal M_f\le \Delta(f'-f\partial_v)\delta S_{\rm gen} -\int_{v_0}^{v_1}f''\delta S_{\rm out}\,dv.
+\end{align}$$
 
 For $f=cv$ this becomes
 
-$$
-\Delta\delta\widetilde S_{\rm dyn}\ge\frac{2\pi}{c}\delta\mathcal M_f,
-\qquad
-\widetilde S_{\rm dyn}=(1-v\partial_v)S_{\rm gen}. \tag{4.18–4.19}
-$$
+$$\begin{align}
+\Delta\delta\widetilde S_{\rm dyn}\ge\frac{2\pi}{c}\delta\mathcal M_f, \qquad \widetilde S_{\rm dyn}=(1-v\partial_v)S_{\rm gen}. \tag{4.18–4.19}
+\end{align}$$
 
 On the stronger zero-flux background used in the preceding section, the linearized sourced first law gives $\delta\mathcal M_f=0$: the constraint integral cancels the **difference** of boundary charges. It does not set each individual perturbed cut charge to zero. The resulting conditional GSL is
 
-$$
+$$\begin{align}
 \Delta\delta\widetilde S_{\rm dyn}\ge0.
-$$
+\end{align}$$
 
 Equivalently, at fixed regulators and within these assumptions,
 
-$$
-\partial_v\delta\widetilde S_{\rm dyn}
-=v\left[2\pi\int_{\mathcal C}\varepsilon_{\mathcal C}
-\delta\langle T_{\ell\ell}\rangle-\delta S_{\rm out}''\right]\ge0.
-$$
+$$\begin{align}
+\partial_v\delta\widetilde S_{\rm dyn} =v\left[2\pi\int_{\mathcal C}\varepsilon_{\mathcal C} \delta\langle T_{\ell\ell}\rangle-\delta S_{\rm out}''\right]\ge0.
+\end{align}$$
 
 This is a uniform-cut, linearized inequality. It is not the full local quantum focusing conjecture and does not prove the microscopic interpretation offered in the discussion.
 
-# Extensions and translation to the vault
+# Extensions and Translation to the Vault
 
 Source §5 proposes replacing the area entropy by the appropriate higher-curvature entropy, comparing to apparent-horizon/simple entropy, moving to a dressing time $V$ with $\mu=V''/V'$, and connecting the quantum Raychaudhuri algebra to microscopic entropy. These are proposals. The apparent-horizon equality cited there must keep the perturbative/horizon hypotheses of the cited work; this paper does not prove it for arbitrary dynamical cuts. The $V$ reparametrization changes the connection-like datum and does not automatically preserve the hypotheses or regulator of a QNEC.
 
@@ -455,7 +390,7 @@ For an action/CPS implementation, start with the boundary term and potential abo
 | (3.65)–(3.68) | Stronger affine, nonexpanding zero-flux background | Physical-process law | Conditional chain checked; weaker stationarity inference failed |
 | (4.13)–(4.21) | Perturbed global QNEC, compatible regulator, zero flux | Dynamical generalized entropy/GSL | Integration and sign checked; QNEC/regulator hypotheses source-dependent |
 
-# Verification log
+# Verification Log
 
 **Verified:** official full source read through all five sections and discussion; no appendices. Nine rendered PDF pages (7, 13, 16–20, 24–25) visually confirm the principal geometric, potential, charge, endpoint, stationarity and QNEC equations and printed numbering. Text extraction was used for navigation; the PDF font warning did not prevent source/render comparison.
 

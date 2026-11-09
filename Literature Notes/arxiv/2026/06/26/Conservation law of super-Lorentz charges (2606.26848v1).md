@@ -15,7 +15,7 @@ tags: []
 
 Back to [[2026_06_26_overview]].
 
-# Paper structure and conventions
+# Paper Structure and Conventions
 
 The paper works at the interface of null infinity, spatial infinity, and timelike infinity. Its goal is to define super-Lorentz charges in a way that is invariant under supertranslations and logarithmic translations, and then derive the matching law that relates the future and past charges.
 
@@ -44,7 +44,7 @@ The main notation is:
 - $p/q$ parity on $dS_3$: controls antipodal signs between the two ends of spatial infinity.
 - $E/B$ parity on $S^2$: separates superboost and superrotation parts.
 
-# Bondi-Sachs data and subleading aspects
+# Bondi-Sachs Data and Subleading Aspects
 
 Near $\mathcal I^\pm$, the Bondi-Sachs expansion supplies the radiative shear $C_{AB}$, the news $N_{AB}=\partial_u C_{AB}$ or $\partial_v C_{AB}$, the mass aspect $m$, and subleading angular data. The paper allows polyhomogeneous behavior, so tails and logarithmic terms are not simply discarded.
 
@@ -57,7 +57,7 @@ The flux-balance laws relate changes of the Bondi mass and angular aspects to ma
 
 The construction is sensitive to the fact that the super-Lorentz aspects are not purely local functions of the radiative data; they are defined after matching to spatial-infinity fields and after subtracting source-dependent inhomogeneous pieces.
 
-# Beig-Schmidt fields at spatial infinity
+# Beig-Schmidt Fields at Spatial Infinity
 
 At spatial infinity the expansion is written over the boundary de Sitter space $dS_3$. The Beig-Schmidt equations determine the leading field $\sigma$, the tensor $k_{ab}$, and the second-order tensors $i_{ab},j_{ab}$ with residual gauge transformations.
 
@@ -71,7 +71,7 @@ J_a=J_a^{(S)}+\widehat J_a.
 
 The charge should be read from $\widehat J_a$, not from the raw $J_a$.
 
-# Matching null and spatial infinity
+# Matching Null and Spatial Infinity
 
 The matching analysis expands coordinates near the corners and expresses Bondi-Sachs fields in terms of Beig-Schmidt fields. The leading-order matching relates mass and shear data antipodally. At subleading order, the matching gives the super-Lorentz conservation statement.
 
@@ -85,7 +85,7 @@ with equivalent logarithmic matching forms. The sign and the subtraction scheme 
 
 For local use, the matching should be viewed as a corner gluing condition between two asymptotic phase spaces. It is not a finite-radius boundary condition and it is not a local-in-retarded-time balance law.
 
-# Wronskian charges at spatial infinity
+# Wronskian Charges at Spatial Infinity
 
 The charges at spatial infinity are written as bilinear Wronskian-type integrals over $S^2(\tau)$ cuts of the $dS_3$ boundary. The leading charges include:
 
@@ -101,7 +101,7 @@ Q^V_\chi[\widehat J].
 
 The charge conservation statement is asymptotic: the charge extracted at one end of spatial infinity matches the antipodal charge extracted at the other end after the source subtraction and parity identifications have been made. It is not a statement that the raw fields are conserved at every intermediate $\tau$.
 
-# Timelike infinities and scattering data
+# Timelike Infinities and Scattering Data
 
 The timelike-infinity analysis analytically continues the Beig-Schmidt setup to Euclidean AdS$_3$-type boundary data. This is used to connect massive particle data, logarithmic deviation vectors, and the scattering interpretation of the spatial-infinity charges.
 
@@ -120,7 +120,7 @@ The soft-theorem comparison separates:
 - tail terms that cancel only under stated matching hypotheses;
 - peeling-violation terms, including a factor-two discrepancy with Damour's convention that the paper flags rather than hides.
 
-# Local CPS and charge translation
+# Local CPS and Charge Translation
 
 For the vault's CPS and boundary-charge projects:
 
@@ -133,7 +133,7 @@ For the vault's CPS and boundary-charge projects:
 
 The result is directly relevant to the current charge project because it supplies a detailed example where subleading gravitational charges are only well defined after dressing, source subtraction, and antipodal corner matching.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

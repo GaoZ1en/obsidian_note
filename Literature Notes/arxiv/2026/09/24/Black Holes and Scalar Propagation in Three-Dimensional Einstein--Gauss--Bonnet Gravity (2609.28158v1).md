@@ -12,7 +12,7 @@ summary: "An explicit AdS3 coupled system where positive bulk master energy and 
 tags: []
 ---
 
-# Why this is immediately useful
+# Why This Is Immediately Useful
 
 This gives a concrete boundary-value test for AdS quantization and regional evolution. A healthy bulk master equation has regular, zero-flux solutions at AdS, yet fixing the **original** metric and scalar sources imposes an additional equation on the master boundary trace. For compact initial displacement and zero initial velocity, the paper proves that fixed-source evolution cannot continue beyond first optical contact with AdS. Separately, the metric horizon is not an outflow boundary for the coupled scalar: exterior evolution needs interior information.
 
@@ -20,7 +20,7 @@ The reusable objects are the original covariant symplectic potential, the regula
 
 This note treats **v1**, the version in the official September 24 issue. OAI metadata also records v2 at 24 September 14:35 UTC, after the target announcement cutoff. That later revision was not downloaded or analyzed.
 
-# Source tree and reading guide
+# Source Tree and Reading Guide
 
 Although only 17 pages, this is a dense formula-chain paper with three essential appendices, so this note uses monograph-mode coverage. Sources are the official versioned PDF and `main.tex`; no ancillary numerical dataset is provided.
 
@@ -48,56 +48,62 @@ Although only 17 pages, this is a dense formula-chain paper with three essential
 
 **How to read this dense paper.** Read §§2.2, 3 and 4 for the construction, then B.2 and C for the boundary obstruction. A.1–A.3 are essential when importing a master variable into the vault's CPS conventions. The classification proof in §2.3 and the full boundary variation in B.1 are technical reference; neither may be replaced by assuming the gauge-fixed ansatz in the original variation. Historical discussion and references are background.
 
-# Action, covariant equations and conventions
+# Action, Covariant Equations and Conventions
 
 Use signature $(-++)$, $G_N=1$, $\alpha>0$, bare $\Lambda=-\ell^{-2}$, angular period $2\pi$, and
-$$
-I=\frac1{16\pi}\int\sqrt{-g}\left[R+\frac2{\ell^2}
-+\alpha\{4G^{ab}\nabla_a\phi\nabla_b\phi-4X\Box\phi+2X^2\}\right]d^3x,
-\qquad X=(\nabla\phi)^2.
-$$
+
+$$\begin{align}
+I=\frac1{16\pi}\int\sqrt{-g}\left[R+\frac2{\ell^2} +\alpha\{4G^{ab}\nabla_a\phi\nabla_b\phi-4X\Box\phi+2X^2\}\right]d^3x, \qquad X=(\nabla\phi)^2.
+\end{align}$$
+
 There is no $-1/2$ in $X$. On the Einstein branch,
-$$
-\Lambda_\alpha-\alpha\Lambda_\alpha^2=-\ell^{-2},\quad
-\Lambda_\alpha<0,\quad \ell_\alpha^{-2}=-\Lambda_\alpha,\quad
-B_\infty=1-2\alpha\Lambda_\alpha=\sqrt{1+4\alpha/\ell^2}.
-$$
+
+$$\begin{align}
+\Lambda_\alpha-\alpha\Lambda_\alpha^2=-\ell^{-2},\quad \Lambda_\alpha<0,\quad \ell_\alpha^{-2}=-\Lambda_\alpha,\quad B_\infty=1-2\alpha\Lambda_\alpha=\sqrt{1+4\alpha/\ell^2}.
+\end{align}$$
+
 Define $v_a=\nabla_a\phi$, $C_{ab}=\nabla_a\nabla_b\phi+v_av_b-Xg_{ab}$, $c=C^a{}_a$, $B=1+2\alpha X$ and
-$$
+
+$$\begin{align}
 Q_{ab}=C_{ac}C^c{}_b-cC_{ab}+\tfrac12g_{ab}(c^2-C_{cd}C^{cd}).
-$$
+\end{align}$$
+
 The source's covariant equations, varied before choosing coordinates, are
-$$
+
+$$\begin{align}
 E_{ab}=BG_{ab}-(\ell^{-2}+\alpha X^2)g_{ab}+4\alpha Q_{ab}=0,
-$$
-$$
-J^a=8\alpha\left[G^{ab}v_b+(X-\Box\phi)v^a+\tfrac12\nabla^aX\right],
-\quad E_\phi=-\nabla_aJ^a,
-$$
-$$
-\frac{E_\phi}{8\alpha}=c^2-C_{ab}C^{ab}+(Xg^{ab}-G^{ab})C_{ab}=0,
-\qquad 2\nabla^aE_{ab}+E_\phi\nabla_b\phi=0.
-$$
+\end{align}$$
+
+$$\begin{align}
+J^a=8\alpha\left[G^{ab}v_b+(X-\Box\phi)v^a+\tfrac12\nabla^aX\right], \quad E_\phi=-\nabla_aJ^a,
+\end{align}$$
+
+$$\begin{align}
+\frac{E_\phi}{8\alpha}=c^2-C_{ab}C^{ab}+(Xg^{ab}-G^{ab})C_{ab}=0, \qquad 2\nabla^aE_{ab}+E_\phi\nabla_b\phi=0.
+\end{align}$$
+
 The compact metric and scalar equations were independently checked on the full background family below. Their unrestricted derivation from the action is source-derived; on-shell substitution is not a substitute for that variational derivation.
 
-# The implicit family and the classification argument
+# The Implicit Family and the Classification Argument
 
 Fix $q>0$, $\phi_0$, $\alpha,\ell$, boundary time normalization and angular period. For each real $m$, solve
-$$
-H(r,X)=r^2(X+\alpha X^2-\ell^{-2})-\frac{q^2}{X}
-+2\alpha q^2\log\frac{X}{-\Lambda_\alpha}+m=0.
-$$
+
+$$\begin{align}
+H(r,X)=r^2(X+\alpha X^2-\ell^{-2})-\frac{q^2}{X} +2\alpha q^2\log\frac{X}{-\Lambda_\alpha}+m=0.
+\end{align}$$
+
 Then
-$$
-F=r^2X-\frac{q^2}{X},\quad ds^2=-Fdt^2+\frac{dr^2}{F}+r^2d\theta^2,
-\quad \phi=qt+\psi(r),\quad \psi'=\frac{rX}{F}.
-$$
+
+$$\begin{align}
+F=r^2X-\frac{q^2}{X},\quad ds^2=-Fdt^2+\frac{dr^2}{F}+r^2d\theta^2, \quad \phi=qt+\psi(r),\quad \psi'=\frac{rX}{F}.
+\end{align}$$
+
 Classification is only within a connected static circular exterior with this time-linear scalar ansatz, positive lapse and circumference, $C^3$ finite-radius fields, a smooth nonextremal future horizon with finite $X$, and twice-differentiable AdS falloffs
-$$
-g_{tt}=\Lambda_\alpha r^2+O(1),\quad
- g_{rr}=-\frac1{\Lambda_\alpha r^2}+O(r^{-4}),\quad
-\phi=qt+\log(r/\ell)+\phi_0+O(r^{-2}).
-$$
+
+$$\begin{align}
+g_{tt}=\Lambda_\alpha r^2+O(1),\quad g_{rr}=-\frac1{\Lambda_\alpha r^2}+O(r^{-4}),\quad \phi=qt+\log(r/\ell)+\phi_0+O(r^{-2}).
+\end{align}$$
+
 It is not a general Birkhoff theorem.
 
 The proof retains the lapse and off-diagonal equations. In proper distance $\rho$, write $ds^2=-N^2dt^2+d\rho^2+r^2d\theta^2$, $a_\rho=\dot N/N$, $b_\rho=\dot r/r$, $p_\rho=\dot\psi$, and $U_*=X-b_\rho p_\rho$. The mixed equation gives $(p_\rho-a_\rho)U_*=0$, while the radial equation gives $Ba_\rho b_\rho=\ell^{-2}+\alpha X^2>0$. Positivity at infinity and future-horizon regularity fix $B,a_\rho,b_\rho,p_\rho>0$.
@@ -105,170 +111,191 @@ The proof retains the lapse and off-diagonal equations. In proper distance $\rho
 On an interval with $U_*\ne0$, the other factor sets $p_\rho=a_\rho$ and $N^2(X+\alpha X^2-\ell^{-2})$ becomes a nonzero constant. It cannot end at a regular point where $U_*=0$, and it cannot reach the horizon with finite $X$ and $N\to0$. Hence $U_*=0$ everywhere. This excludes finite-radius branch joining. It also gives monotone circumference and a constant radial lapse, fixed by the boundary time normalization.
 
 Put
-$$
+
+$$\begin{align}
 D=\frac{\ell^{-2}-X-\alpha X^2}{B},\qquad S=r^2X^2+q^2.
-$$
+\end{align}$$
+
 The remaining radial system is
-$$
-BF'=2r(\ell^{-2}+\alpha X^2),\qquad
-X'=\frac{2rX^2D}{S},\qquad
-D'=-\left(1+\frac{2\alpha D}{B}\right)X'.
-$$
+
+$$\begin{align}
+BF'=2r(\ell^{-2}+\alpha X^2),\qquad X'=\frac{2rX^2D}{S},\qquad D'=-\left(1+\frac{2\alpha D}{B}\right)X'.
+\end{align}$$
+
 Direct differentiation verifies $dH/dr=0$ and
-$$
+
+$$\begin{align}
 H_X=B\left(r^2+\frac{q^2}{X^2}\right)>0.
-$$
+\end{align}$$
+
 Together with $H\to-\infty$ at $X\to0^+$ and $H\to+\infty$ at $X\to\infty$, this proves a unique positive analytic root at every $r>0$. At the horizon $X_h=q/r_h$,
-$$
-m(r_h)=\ell^{-2}r_h^2-\alpha q^2-2\alpha q^2\log\frac{q}{-\Lambda_\alpha r_h},
-\qquad m'(r_h)=2\ell^{-2}r_h+\frac{2\alpha q^2}{r_h}>0.
-$$
+
+$$\begin{align}
+m(r_h)=\ell^{-2}r_h^2-\alpha q^2-2\alpha q^2\log\frac{q}{-\Lambda_\alpha r_h}, \qquad m'(r_h)=2\ell^{-2}r_h+\frac{2\alpha q^2}{r_h}>0.
+\end{align}$$
+
 This function covers all real $m$; $F'>0$ gives one nonextremal metric horizon.
 
 In advanced EF time, normalized by $v-t\to0$ at infinity,
-$$
-\phi=qv+\log(r/\ell)+\phi_0+
-\int_r^\infty\frac{q\,d\rho}{\rho[\rho X(\rho)+q]},\qquad
-\partial_r\phi\big|_v=\frac{X}{rX+q}.
-$$
+
+$$\begin{align}
+\phi=qv+\log(r/\ell)+\phi_0+ \int_r^\infty\frac{q\,d\rho}{\rho[\rho X(\rho)+q]},\qquad \partial_r\phi\big|_v=\frac{X}{rX+q}.
+\end{align}$$
+
 At the horizon this is $1/(2r_h)$, so the apparent static-coordinate singularity is absent. The component check gives $C^\theta{}_{\theta}=0$, $c=2r^2X^2D/S$ and zero residual in all metric and scalar equations.
 
 Define $d_0=(m+q^2/\Lambda_\alpha)/B_\infty$. Then
-$$
-X=-\Lambda_\alpha-\frac{d_0}{r^2}+O(r^{-4}),\quad
-F=-\Lambda_\alpha r^2-d_0+\frac{q^2}{\Lambda_\alpha}+O(r^{-2}),
-$$
-$$
+
+$$\begin{align}
+X=-\Lambda_\alpha-\frac{d_0}{r^2}+O(r^{-4}),\quad F=-\Lambda_\alpha r^2-d_0+\frac{q^2}{\Lambda_\alpha}+O(r^{-2}),
+\end{align}$$
+
+$$\begin{align}
 \phi=qt+\log(r/\ell)+\phi_0-\frac{q^2}{2\Lambda_\alpha^2r^2}+O(r^{-4}).
-$$
+\end{align}$$
+
 The healthy branch is $d_0>0$, equivalently $0<X<-\Lambda_\alpha$ and $D>0$. At $d_0=0$, the scalar quadratic action degenerates; the nonlinear scalar equation survives, so the source identifies strong coupling. For $d_0<0$, the asymptotic kinetic sign is reversed.
 
-# Covariant charge and the shift-current balance
+# Covariant Charge and the Shift-Current Balance
 
 Appendix A.3 supplies, omitting a common $1/(16\pi)$,
-$$
-P^{abcd}=\frac{1-2\alpha X}{2}(g^{ac}g^{bd}-g^{ad}g^{bc})
-+\alpha(g^{ac}v^bv^d-g^{ad}v^bv^c-g^{bc}v^av^d+g^{bd}v^av^c),
-$$
-$$
-\Theta^a=2P^{abcd}\nabla_dh_{bc}-2\nabla_dP^{abcd}h_{bc}
-+J^a\pi-4\alpha X\nabla^a\pi+4\alpha Xv^ch^a{}_c-2\alpha Xv^ah,
-$$
-$$
-Q^{ab}_\xi=-2P^{abcd}\nabla_c\xi_d+4\xi_d\nabla_cP^{abcd}
--4\alpha X(v^ag^{bc}-v^bg^{ac})\xi_c.
-$$
+
+$$\begin{align}
+P^{abcd}=\frac{1-2\alpha X}{2}(g^{ac}g^{bd}-g^{ad}g^{bc}) +\alpha(g^{ac}v^bv^d-g^{ad}v^bv^c-g^{bc}v^av^d+g^{bd}v^av^c),
+\end{align}$$
+
+$$\begin{align}
+\Theta^a=2P^{abcd}\nabla_dh_{bc}-2\nabla_dP^{abcd}h_{bc} +J^a\pi-4\alpha X\nabla^a\pi+4\alpha Xv^ch^a{}_c-2\alpha Xv^ah,
+\end{align}$$
+
+$$\begin{align}
+Q^{ab}_\xi=-2P^{abcd}\nabla_c\xi_d+4\xi_d\nabla_cP^{abcd} -4\alpha X(v^ag^{bc}-v^bg^{ac})\xi_c.
+\end{align}$$
+
 Here $h_{ab}=\delta g_{ab}$, $h=g^{ab}h_{ab}$, $\pi=\delta\phi$, and the symplectic current uses the variation of $\sqrt{-g}\Theta^a$, not just $\Theta^a$.
 
 For fixed $q,\phi_0,\alpha,\ell$, the mass-direction surface variation is
-$$
-\delta H_{\partial_t}(r)=\frac{\delta m}{8}+\frac{\alpha q^2}{2}\delta\log X(r),
-\qquad \delta M_\infty=\frac{\delta m}{8}.
-$$
+
+$$\begin{align}
+\delta H_{\partial_t}(r)=\frac{\delta m}{8}+\frac{\alpha q^2}{2}\delta\log X(r), \qquad \delta M_\infty=\frac{\delta m}{8}.
+\end{align}$$
+
 Using $\delta X=-\delta m/H_X$, the explicit EF component evaluation of these potentials reproduces this expression, with the circle orientation for which BTZ has $\delta M=\delta m/8$. The additive reference energy is boundary-prescription dependent.
 
 The shift current satisfies
-$$
-J^r=0,\qquad rJ^t=4\alpha q(\log X)',\qquad
-Q_{\rm shift}[r_1,r_2]=\frac{\alpha q}{2}\log\frac{X(r_2)}{X(r_1)}.
-$$
+
+$$\begin{align}
+J^r=0,\qquad rJ^t=4\alpha q(\log X)',\qquad Q_{\rm shift}[r_1,r_2]=\frac{\alpha q}{2}\log\frac{X(r_2)}{X(r_1)}.
+\end{align}$$
+
 Although the metric is stationary, $\mathcal L_{\partial_t}\phi=q$. Time translation alone is not an exact symmetry of both fields. Thus the radial difference in $\delta H_{\partial_t}$ is $q\delta Q_{\rm shift}$; it must not be silently treated as a conserved same-surface Hamiltonian charge. This is a direct CPS use case for retaining matter symmetry data when comparing surfaces.
 
-# Coupled characteristic cones
+# Coupled Characteristic Cones
 
 The principal metric equation is $\delta E_{ab}=B\delta G_{ab}(h)+8\alpha\delta G_{ab}(C\pi)+\cdots$. The algebraic replacement $\widetilde h_{ab}=h_{ab}+8\alpha C_{ab}\pi/B$ removes the two-derivative mixing. Eliminating curvature from the scalar equation and differentiating its Hessian dependence gives
-$$
-Z^{ab}=2(cg^{ab}-C^{ab})-Dg^{ab}+\frac{12\alpha}{B}Q^{ab},\qquad
-I^{(2)}_{\rm pr}=-\frac{4\alpha}{16\pi}\int\sqrt{-g}\,Z^{ab}\partial_a\pi\partial_b\pi.
-$$
+
+$$\begin{align}
+Z^{ab}=2(cg^{ab}-C^{ab})-Dg^{ab}+\frac{12\alpha}{B}Q^{ab},\qquad I^{(2)}_{\rm pr}=-\frac{4\alpha}{16\pi}\int\sqrt{-g}\,Z^{ab}\partial_a\pi\partial_b\pi.
+\end{align}$$
+
 $I^{(2)}$ denotes the coefficient of the squared perturbation parameter. With $y_*=q/(rX)$,
-$$
-Z^{vv}=-\frac{4Dy_*}{r^2X(1+y_*)^2(1+y_*^2)},\quad
-Z^{vr}=D\frac{1-y_*}{1+y_*},\quad Z^{rr}=Dr^2X(1+y_*^2),
-$$
-$$
+
+$$\begin{align}
+Z^{vv}=-\frac{4Dy_*}{r^2X(1+y_*)^2(1+y_*^2)},\quad Z^{vr}=D\frac{1-y_*}{1+y_*},\quad Z^{rr}=Dr^2X(1+y_*^2),
+\end{align}$$
+
+$$\begin{align}
 Z^{\theta\theta}=\frac{D}{r^2}\frac{3B_\infty^2/B^2-y_*^2}{1+y_*^2}.
-$$
+\end{align}$$
+
 All components were reproduced from the covariant expression. On the exterior $0<y_*\le1$ and $D>0$, the angular coefficient is positive. The common time function $T=v-\Delta v(r)$, with
-$$
+
+$$\begin{align}
 \Delta v'=\frac1{r^2X(1+y_*)(1+y_*^2)},
-$$
+\end{align}$$
+
 has negative norm for both $g^{ab}$ and $Z^{ab}$; the scalar norm is $-D(1+2y_*)/[r^2X(1+y_*)^2(1+y_*^2)]$.
 
 The radial scalar rays obey
-$$
-\frac{dr}{dv}=\frac{r^2X(1+y_*)(1+y_*^2)}2,
-\qquad
-\frac{dr}{dv}=-\frac{r^2X(1+y_*)(1+y_*^2)}{2y_*}.
-$$
+
+$$\begin{align}
+\frac{dr}{dv}=\frac{r^2X(1+y_*)(1+y_*^2)}2, \qquad \frac{dr}{dv}=-\frac{r^2X(1+y_*)(1+y_*^2)}{2y_*}.
+\end{align}$$
+
 At the metric horizon these are $\pm2qr_h$: one ray travels into the exterior. Horizon regularity cannot replace incoming scalar data. Farther inside, $y_*^2=3B_\infty^2/B^2$ marks a degeneracy of angular propagation, beyond the analyzed domain.
 
-# Optical coordinates and circular reconstruction
+# Optical Coordinates and Circular Reconstruction
 
 Use $A=rX+q$, $p=X/A$, and
-$$
-\tau=v-\int^r z(\rho)d\rho,\quad z=\frac{X(rX-q)}{AS},\qquad
-x(r)=\int_r^\infty\frac{X(\rho)}{\rho^2X(\rho)^2+q^2}d\rho.
-$$
+
+$$\begin{align}
+\tau=v-\int^r z(\rho)d\rho,\quad z=\frac{X(rX-q)}{AS},\qquad x(r)=\int_r^\infty\frac{X(\rho)}{\rho^2X(\rho)^2+q^2}d\rho.
+\end{align}$$
+
 $x=0$ is AdS and $x$ increases inward; $dx/dr=-X/S$. The integration constant makes $\tau-t\to0$ at infinity. Constant-$\tau$ surfaces are scalar-spacelike; use $T$ above when a common metric/scalar spacelike surface is required.
 
 In the circular parity-even sector, choose $h_{\theta\theta}=h_{rr}=0$, $h_{vv}=-(w_c+2Fn)$ and $h_{vr}=n$. The gauge-invariant $U_c=B w_c$ becomes $-\delta m$ for a mass variation. Define
-$$
-\lambda_c=\frac{X^2}{BA^2S},\quad
-\mathsf a=\frac{rX-q}{8\alpha DqrA},\quad
-\mathsf h=\frac{S}{8\alpha DXqr},\quad
-\mathsf j=\frac{X^2}{2\alpha DA^2S}.
-$$
+
+$$\begin{align}
+\lambda_c=\frac{X^2}{BA^2S},\quad \mathsf a=\frac{rX-q}{8\alpha DqrA},\quad \mathsf h=\frac{S}{8\alpha DXqr},\quad \mathsf j=\frac{X^2}{2\alpha DA^2S}.
+\end{align}$$
+
 The reconstruction is
-$$
-n_r=\lambda_cU_{c,v},\quad
-\pi_r=q\lambda_cU_c+\mathsf aU_{c,r}-\mathsf jU_{c,v},\quad
-\pi_v-qn=-\mathsf hU_{c,r}-\mathsf aU_{c,v}.
-$$
+
+$$\begin{align}
+n_r=\lambda_cU_{c,v},\quad \pi_r=q\lambda_cU_c+\mathsf aU_{c,r}-\mathsf jU_{c,v},\quad \pi_v-qn=-\mathsf hU_{c,r}-\mathsf aU_{c,v}.
+\end{align}$$
+
 Commuting the derivatives of $\pi$ yields Eq.(44); the optical transformation, with $\mathsf a/\mathsf h=z$ and $\mathsf hX/S=W_c$, gives
-$$
-I_c^{(2)}=\frac1{16q}\int W_c(U_{c,\tau}^2-U_{c,x}^2)d\tau dx,
-\quad W_c=\frac1{8\alpha Dqr},\quad
-U_{c,\tau\tau}-W_c^{-1}(W_cU_{c,x})_x=0.
-$$
+
+$$\begin{align}
+I_c^{(2)}=\frac1{16q}\int W_c(U_{c,\tau}^2-U_{c,x}^2)d\tau dx, \quad W_c=\frac1{8\alpha Dqr},\quad U_{c,\tau\tau}-W_c^{-1}(W_cU_{c,x})_x=0.
+\end{align}$$
+
 The normalization is fixed in A.3 by the original current, not freely chosen after obtaining the equation. The angular-momentum perturbation is outside this parity sector.
 
-# Angular reconstruction and positive spatial form
+# Angular Reconstruction and Positive Spatial Form
 
 For $e^{ik\theta}$, integer $k\ne0$, define
-$$
-K=k^2+q^2/X+r^2D,\quad \mathfrak b=-\frac{ikBA}{4\alpha Dr^3S},\quad
-\mathfrak w=\frac{rDS}{X},\quad w=rD,
-$$
-$$
-\mu=\frac{Xk^2}{rS}+\frac{4\alpha DXr(Xk^2+q^2)}{BSK},\quad
-\chi=\frac{X^2k^2(F-k^2)}{r^2S^2}.
-$$
+
+$$\begin{align}
+K=k^2+q^2/X+r^2D,\quad \mathfrak b=-\frac{ikBA}{4\alpha Dr^3S},\quad \mathfrak w=\frac{rDS}{X},\quad w=rD,
+\end{align}$$
+
+$$\begin{align}
+\mu=\frac{Xk^2}{rS}+\frac{4\alpha DXr(Xk^2+q^2)}{BSK},\quad \chi=\frac{X^2k^2(F-k^2)}{r^2S^2}.
+\end{align}$$
+
 The gauge-invariant amplitudes obey
-$$
-\mathcal U=P+\frac{ikp}{K}V,\quad\Pi=\mathfrak bV,
-\quad\mathcal U_r=-\mu\mathcal U-z\mathcal U_v+\Pi,
-$$
-$$
-\Pi_r=\chi\mathcal U+\frac{X^2}{S^2}\mathcal U_{vv}
-+[\mu-(\log\mathfrak w)']\Pi-z\Pi_v.
-$$
+
+$$\begin{align}
+\mathcal U=P+\frac{ikp}{K}V,\quad\Pi=\mathfrak bV, \quad\mathcal U_r=-\mu\mathcal U-z\mathcal U_v+\Pi,
+\end{align}$$
+
+$$\begin{align}
+\Pi_r=\chi\mathcal U+\frac{X^2}{S^2}\mathcal U_{vv} +[\mu-(\log\mathfrak w)']\Pi-z\Pi_v.
+\end{align}$$
+
 Eliminating $\Pi$ gives, for $U(\tau,x)=\mathcal U(v,r)$,
-$$
-U_{\tau\tau}-w^{-1}(wU_x)_x+\mathcal V_kU=0,\quad
-\mathcal V_k=-\frac{S^2}{X^2}[\mu'+(\log\mathfrak w)'\mu-\mu^2-\chi],
-$$
-$$
+
+$$\begin{align}
+U_{\tau\tau}-w^{-1}(wU_x)_x+\mathcal V_kU=0,\quad \mathcal V_k=-\frac{S^2}{X^2}[\mu'+(\log\mathfrak w)'\mu-\mu^2-\chi],
+\end{align}$$
+
+$$\begin{align}
 I_k^{(2)}=\frac\alpha{4\pi}\int w(U_\tau^2-U_x^2-\mathcal V_kU^2)d\tau dx.
-$$
+\end{align}$$
+
 The real angular harmonic has squared integral one. The weight $\mathfrak w$ belongs to $r$, while $w$ belongs to $x$.
 
 To understand the map back to physical fields, A.2 first removes two residual coordinate transformations in areal advanced gauge. Their $(b,L)$ determinant is $2k^2BK$, so this step is regular. With $\sigma=\partial_v$ acting on amplitudes, define
-$$
-a_V=\frac{2ik(\sigma+q-rD)}K,\qquad d_V=1+\frac{r(\sigma+q-rD)}K,
-\quad h_*=\frac{8\alpha DXqr}{BA^2},\quad j_*=\frac{8\alpha DrX}{BA}.
-$$
+
+$$\begin{align}
+a_V=\frac{2ik(\sigma+q-rD)}K,\qquad d_V=1+\frac{r(\sigma+q-rD)}K, \quad h_*=\frac{8\alpha DXqr}{BA^2},\quad j_*=\frac{8\alpha DrX}{BA}.
+\end{align}$$
+
 The four equations solve for $(W,V',\mathcal T,\mathcal C)$ using
+
 $$
 \mathsf M=\begin{pmatrix}
 h_*&0&\sigma&-ik\\
@@ -277,115 +304,139 @@ j_*&0&2\sigma+2K/r&-2ik\\
 0&d_V&ik(r\sigma-F+k^2)&r(r\sigma+k^2)
 \end{pmatrix}.
 $$
+
 Its right side is $-(J_1,J_2,J_3,J_4)^T(P,V)$ from Eq.(53), containing the undifferentiated original constraint equations. Its determinant simplifies to
-$$
-\det\mathsf M=\frac{16i\alpha DkS\widetilde K}{BA},\qquad
-\widetilde K=k^2+q^2/X+2Dq^2r^2/S>0.
-$$
+
+$$\begin{align}
+\det\mathsf M=\frac{16i\alpha DkS\widetilde K}{BA},\qquad \widetilde K=k^2+q^2/X+2Dq^2r^2/S>0.
+\end{align}$$
+
 This avoids division by $F$ or temporal frequency. Then $V=(\mathcal U_r+\mu\mathcal U+z\mathcal U_v)/\mathfrak b$, $P=\mathcal U-ikpV/K$, and
-$$
+
+$$\begin{align}
 \pi=P,\quad h_{vv}=-a_VV,\quad h_{v\theta}=d_VV,\quad h_{\theta\theta}=0,
-$$
-$$
-h_{rr}=-2\mathcal T,\quad
-h_{vr}=(F-k^2)\mathcal T+ikr\mathcal C,\quad
-h_{r\theta}=-ikr\mathcal T-r^2\mathcal C.
-$$
+\end{align}$$
+
+$$\begin{align}
+h_{rr}=-2\mathcal T,\quad h_{vr}=(F-k^2)\mathcal T+ikr\mathcal C,\quad h_{r\theta}=-ikr\mathcal T-r^2\mathcal C.
+\end{align}$$
+
 The apparent radial integrals from residual gauge parameters cancel after subtracting the full Lie derivative. The constraints give $\delta E_{rr}=\delta E_{vr}=\delta E_{r\theta}=0$; the Bianchi identity and the nonzero factor $p\widetilde K/(qr)$ remove the remaining metric components, then $q\ne0$ removes the scalar equation. This is why the reconstruction includes zero temporal frequency. The source bounds the reconstructed Sobolev norms by $(1+|k|)^8$ times master norms with at most four extra radial derivatives, sufficient for smooth Fourier sums; this estimate remains source-derived.
 
 For spatial positivity, put
-$$
-\widehat\nu=\frac{4\alpha Dr(Xk^2+q^2)}{BK},\quad
-\widehat P_k=k^2\left[\frac F{r^2}+2X+\frac{4\alpha DX}{B}
-+\frac{8\alpha D(Xk^2+q^2)}{BK}\right]>0.
-$$
+
+$$\begin{align}
+\widehat\nu=\frac{4\alpha Dr(Xk^2+q^2)}{BK},\quad \widehat P_k=k^2\left[\frac F{r^2}+2X+\frac{4\alpha DX}{B} +\frac{8\alpha D(Xk^2+q^2)}{BK}\right]>0.
+\end{align}$$
+
 Then $\mathcal V_k=\widehat\nu^2+\widehat\nu_x+(\log w)_x\widehat\nu+\widehat P_k$, and
-$$
-\int w(|U_x|^2+\mathcal V_k|U|^2)dx
-=\int w(|U_x-\widehat\nu U|^2+\widehat P_k|U|^2)dx
-+[w\widehat\nu|U|^2]_{\rm endpoints}.
-$$
+
+$$\begin{align}
+\int w(|U_x|^2+\mathcal V_k|U|^2)dx =\int w(|U_x-\widehat\nu U|^2+\widehat P_k|U|^2)dx +[w\widehat\nu|U|^2]_{\rm endpoints}.
+\end{align}$$
+
 This is positive for compact radial support, not automatically for arbitrary boundary values. The characteristic angular coefficient is
-$$
+
+$$\begin{align}
 c_\theta^2=F/r^2+2X+12\alpha DX/B>0.
-$$
+\end{align}$$
+
 Using $B^2+4\alpha BD=B_\infty^2$, it agrees with $Z^{ab}$. The remainder after $c_\theta^2k^2$ has uniformly bounded radial derivatives for $|k|\ge1$ on the stated exterior interval; that functional estimate is part of the source's Fourier construction.
 
-# The original boundary action and the source-to-master map
+# The Original Boundary Action and the Source-to-Master Map
 
 The outward spacelike normal defines $K_{ij}=\mathcal L_n\gamma_{ij}/2$, $\phi_n=n^a\nabla_a\phi$ and $Y_\partial=\gamma^{ij}D_i\phi D_j\phi$. Appendix B.1 uses
-$$
-I_\partial=\frac1{16\pi}\int\sqrt{-\gamma}(B_D+c_0),\quad
-B_D=2K+4\alpha[K_{ij}D^i\phi D^j\phi-KY_\partial+\phi_nY_\partial+\phi_n^3/3],
-$$
-$$
+
+$$\begin{align}
+I_\partial=\frac1{16\pi}\int\sqrt{-\gamma}(B_D+c_0),\quad B_D=2K+4\alpha[K_{ij}D^i\phi D^j\phi-KY_\partial+\phi_nY_\partial+\phi_n^3/3],
+\end{align}$$
+
+$$\begin{align}
 c_0=-\frac2{\ell_\alpha}\left(1-\frac{2\alpha\Lambda_\alpha}{3}\right).
-$$
+\end{align}$$
+
 No optional finite term is included. With $M^{ij}=K^{ij}-K\gamma^{ij}+\phi_n\gamma^{ij}$,
-$$
+
+$$\begin{align}
 \Pi_\phi=J_n-8\alpha D_i(M^{ij}D_j\phi),
-$$
+\end{align}$$
+
 and the completed variation contains $P^{ij}\delta\gamma_{ij}+\sqrt{-\gamma}\Pi_\phi\pi/(16\pi)+\partial_iC_D^i$. The corner density is
-$$
+
+$$\begin{align}
 16\pi C_D^i=\sqrt{-\gamma}[2\alpha\phi_n(v^jh_j{}^i-v^ih)+8\alpha M^{ij}v_j\pi].
-$$
+\end{align}$$
+
 For the specified Fefferman–Graham expansions, $C_D^i$ and its antisymmetrized variation vanish at infinity. Normal derivatives cancel only after varying before imposing Gaussian normal gauge.
 
 Write $s=t/\ell_\alpha$, $g_{(0)}=-ds^2+d\theta^2$ and $\phi=\eta+f+b_{(2)}z_{\rm FG}+\cdots$. The finite momentum is
-$$
-\lim\sqrt{-\gamma}\Pi_\phi=-\frac{8\alpha}{\ell_\alpha}\Box_{(0)}f,
-\qquad\Box_{(0)}=-\partial_s^2+\partial_\theta^2.
-$$
+
+$$\begin{align}
+\lim\sqrt{-\gamma}\Pi_\phi=-\frac{8\alpha}{\ell_\alpha}\Box_{(0)}f, \qquad\Box_{(0)}=-\partial_s^2+\partial_\theta^2.
+\end{align}$$
+
 For $f=qt+\phi_0$ it vanishes. The original quadratic scalar boundary variation is $-\alpha(2\pi\ell_\alpha)^{-1}\int(\Box_{(0)}p_0)\delta p_0$, so the antisymmetrized flux vanishes when the scalar and metric sources are fixed. An intrinsic finite term with coefficient $c_\partial=-4\alpha/\ell_\alpha$, while allowing $p_0$ to vary, cancels this scalar boundary equation and defines a different problem.
 
 For $k\ne0$, the finite metric response has equal diagonal entries $a_k$ and an off-diagonal response $j_{(0)}$ satisfying the trace/divergence constraints. In particular,
-$$
-(\partial_t^2-\Lambda_\alpha k^2)a_k=0,\qquad
-p_1=\frac{\partial_t^2-3\Lambda_\alpha k^2-4q\partial_t}{4\Lambda_\alpha^2}p_0+\frac{a_k}{2}.
-$$
+
+$$\begin{align}
+(\partial_t^2-\Lambda_\alpha k^2)a_k=0,\qquad p_1=\frac{\partial_t^2-3\Lambda_\alpha k^2-4q\partial_t}{4\Lambda_\alpha^2}p_0+\frac{a_k}{2}.
+\end{align}$$
+
 Converting from Fefferman–Graham to areal advanced gauge and then to the invariant master gives, with $\kappa=k^2+d_0-q^2/\Lambda_\alpha$,
-$$
+
+$$\begin{align}
 b_k=U_k(\tau,0)=p_{0,k}+\frac{-\Lambda_\alpha k^2+q\partial_\tau}{k^2\kappa}a_k.
-$$
+\end{align}$$
+
 Consequently fixed $p_{0,k}=0$ implies
-$$
-(\partial_\tau^2-\Lambda_\alpha k^2)b_k=0,\qquad
-a_k=\frac{\kappa(\Lambda_\alpha k^2+q\partial_\tau)}{\Lambda_\alpha(q^2-\Lambda_\alpha k^2)}b_k.
-$$
+
+$$\begin{align}
+(\partial_\tau^2-\Lambda_\alpha k^2)b_k=0,\qquad a_k=\frac{\kappa(\Lambda_\alpha k^2+q\partial_\tau)}{\Lambda_\alpha(q^2-\Lambda_\alpha k^2)}b_k.
+\end{align}$$
+
 The inverse was checked modulo the oscillator equation. Fixing the original scalar source is **not** the same condition as freely allowing every regular master trace, nor does it generally set that trace to zero.
 
 At infinity $x=-1/(\Lambda_\alpha r)+O(r^{-3})$ and $w=-\Lambda_\alpha d_0x[1+O(x^2)]$. Both constant and logarithmic angular radial branches lie in $L^2(wdx)$, but only the regular branch has finite unrenormalized gradient energy. The required regularity is $U=b_k+O(x^2)$ and $U_x=O(x)$ plus the oscillator equation. The source requires $C^4$ coefficients and specified radial/time derivative bounds, not just finite energy.
 
 For the circular sector,
-$$
+
+$$\begin{align}
 W_c=\frac{c_c}{x}[1+O(x^2)],\quad c_c=-\frac1{8\alpha q\Lambda_\alpha d_0}>0,
-$$
-$$
+\end{align}$$
+
+$$\begin{align}
 U_c=u_0+x^2\left[u_2+\tfrac12u_{0,\tau\tau}\log(x/x_0)\right]+\cdots,
-$$
-$$
-\delta\phi_{\log}=-c_cu_{0,\tau},\qquad
-\partial_\tau\delta\phi_{\rm finite}=c_c(2u_2+\tfrac12u_{0,\tau\tau}).
-$$
+\end{align}$$
+
+$$\begin{align}
+\delta\phi_{\log}=-c_cu_{0,\tau},\qquad \partial_\tau\delta\phi_{\rm finite}=c_c(2u_2+\tfrac12u_{0,\tau\tau}).
+\end{align}$$
+
 Fixed logarithmic coefficient makes $u_0$ constant; fixed mass sets it to zero. Fixed finite source then requires $u_2=0$ and fixes the initial scalar shift. A zero master flux does not impose this last condition by itself.
 
-# First contact, uniqueness and incoming interior data
+# First Contact, Uniqueness and Incoming Interior Data
 
 Let the initial master displacement be smooth, real, nonzero and compactly supported in the open exterior, with zero initial velocity. In the angular statement it has zero angular mean; the circular statement is separate and fixes mass. Define
-$$
+
+$$\begin{align}
 d=x(r_{\max})\in(0,x_h),\qquad x_h=x(r_h).
-$$
+\end{align}$$
+
 The source proves $T_{\max}=d$ as a supremum: solutions exist on every interval of length $T<d$, and no fixed-source solution with the stated regularity exists for $T>d$. It does not assert nonlinear blow-up at $d$ or settle existence on a closed interval ending exactly there.
 
 The upper-bound mechanism is worth retaining. Set $H=\sqrt{w/(-\Lambda_\alpha d_0x)}U$ for angular modes. The equation becomes
-$$
+
+$$\begin{align}
 H_{xx}-H_{\tau\tau}+\frac nxH_x+Q(x)H=0,\qquad n=1,
-$$
+\end{align}$$
+
 with bounded $Q$. For the circular problem, $H=\sqrt{xW_c/c_c}\,U_c/x^2$ gives $n=3$. The regular branches are smooth radial equations in auxiliary dimensions two and four. The angular transformed potential is
-$$
-Q=-\mathcal V_k-\tfrac12\partial_x^2\log(w/x)
--\tfrac1{2x}\partial_x\log(w/x)-\tfrac14[\partial_x\log(w/x)]^2.
-$$
+
+$$\begin{align}
+Q=-\mathcal V_k-\tfrac12\partial_x^2\log(w/x) -\tfrac1{2x}\partial_x\log(w/x)-\tfrac14[\partial_x\log(w/x)]^2.
+\end{align}$$
+
 For a time interval where $H(\tau,0)=H_x(\tau,0)=0$, integrate the sideways energy over the shrinking time interval $[\tau_c-(T-x),\tau_c+(T-x)]$. Endpoint squares and $-(n/x)\int|H_x|^2$ are nonpositive; the bounded potential gives $E'(x)\le CE(x)$. Boundary regularity gives $E(\epsilon)\to0$, so Gronwall implies vanishing inside the corresponding triangle.
 
 Compact initial support makes the boundary oscillator's initial value and velocity zero, hence $b_k=0$ as long as sources stay fixed. Zero initial velocity permits even extension through $\tau=0$. If a solution persisted beyond $d$, the triangle uniqueness result would force the initial data to vanish on a larger interval than their support distance allows, a contradiction. Smoothness to every order at the support edge does not evade this argument.
@@ -393,18 +444,20 @@ Compact initial support makes the boundary oscillator's initial value and veloci
 For the lower bound, the paper extends the background slightly inside the metric horizon, where the relevant spatial coefficients remain positive, and uses an auxiliary Dirichlet inner boundary. A self-adjoint comparison wave operator on the regularized radial disk constructs a smooth solution; radial finite propagation ensures it vanishes near AdS for $\tau<d$. Reconstruction then preserves all original sources there. The auxiliary boundary is an existence construction, not part of the asserted physical boundary prescription.
 
 For prescribed inner information, the angular deformed energy uses $w(|U_\tau|^2+|U_x-\widehat\nu U|^2+\widehat P_k|U|^2)$. At $x_h$, put
-$$
-g_k=(U_{k,\tau}+U_{k,x}-\widehat\nu U_k)_h,\quad
-o_k=(U_{k,\tau}-U_{k,x}+\widehat\nu U_k)_h.
-$$
+
+$$\begin{align}
+g_k=(U_{k,\tau}+U_{k,x}-\widehat\nu U_k)_h,\quad o_k=(U_{k,\tau}-U_{k,x}+\widehat\nu U_k)_h.
+\end{align}$$
+
 Then
-$$
-E_{\rm def}(T)+\frac{\alpha w_h}{8\pi}\sum_k\int_0^T|o_k|^2d\tau
-=E_{\rm def}(0)+\frac{\alpha w_h}{8\pi}\sum_k\int_0^T|g_k|^2d\tau.
-$$
+
+$$\begin{align}
+E_{\rm def}(T)+\frac{\alpha w_h}{8\pi}\sum_k\int_0^T|o_k|^2d\tau =E_{\rm def}(0)+\frac{\alpha w_h}{8\pi}\sum_k\int_0^T|g_k|^2d\tau.
+\end{align}$$
+
 It gives uniqueness and continuous dependence **when a solution obeying the original sources exists**. Equal exterior initial data with different interior input agree only in $\tau+x<x_h$. The circular balance similarly has $g_c=U_{c,\tau}+U_{c,x}$, $o_c=U_{c,\tau}-U_{c,x}$ and coefficient $W_{c,h}/(32q)$. These are bulk master norms, not the full canonical energy including all boundaries.
 
-# Verification ledger and reuse limits
+# Verification Ledger and Reuse Limits
 
 **Checked — background and charge, xAct-enabled component calculations.** Christoffel symbols, Ricci tensor, scalar Hessian, $C,Q,J$ and $Z$ were constructed in EF coordinates with total radial derivative $\partial_r+X'\partial_X$. All nine metric-equation components, the scalar equation, $X=(\nabla\phi)^2$, $J^r$, $rJ^v-4\alpha qX'/X$ and all components of the claimed principal tensor gave zero residual. The source's $P,\Theta,Q_\xi$ were evaluated for the mass variation, reproducing Eq.(20) including the finite-radius term. This checks the given covariant equations and potentials on this family; it is not an unrestricted action variation.
 

@@ -16,30 +16,25 @@ tags: []
 
 This is a spectral-tooling note rather than a CPS note. Its useful abstraction is the reduction of a quotient-image sum to a holonomy character times a lower-dimensional shifted lattice sum on the invariant subspace of each group element.
 
-# Riemann-flat quotients and package data
+# Riemann-Flat Quotients and Package Data
 
 An orientable Riemann-flat manifold is represented as
 
-$$
-\mathcal F_k=T^k/\Gamma,
-\tag{2.1}
-$$
+$$\begin{align}
+\mathcal F_k=T^k/\Gamma, \tag{2.1}
+\end{align}$$
 
 where each $\gamma\in\Gamma$ acts freely by
 
-$$
-z\longmapsto D_\gamma z+b_\gamma,
-\qquad
-D_\gamma\in SO(k)\cap SL(k,\mathbb Z).
-\tag{2.2}
-$$
+$$\begin{align}
+z\longmapsto D_\gamma z+b_\gamma, \qquad D_\gamma\in SO(k)\cap SL(k,\mathbb Z). \tag{2.2}
+\end{align}$$
 
 The package represents a group element as
 
-$$
-g=\{D_\gamma,\{b_1,\ldots,b_k\},\sigma_\gamma\},
-\tag{2.4}
-$$
+$$\begin{align}
+g=\{D_\gamma,\{b_1,\ldots,b_k\},\sigma_\gamma\}, \tag{2.4}
+\end{align}$$
 
 including the sign of its spin lift.
 
@@ -48,100 +43,80 @@ The geometry workflow is:
 1. `DefGenerator`, `GetAllowedShifts`, and `GetGroup` construct the affine group;
 2. `ActsFreelyQ` tests whether the quotient action is free;
 3. `GetInvariantMetric` solves
-   $$
-   D_\gamma^TGD_\gamma=G;
-   \tag{2.14}
-   $$
+
+$$\begin{align}
+D_\gamma^TGD_\gamma=G; \tag{2.14}
+\end{align}$$
+
 4. `GetModuliSpaceMetric` extracts the lower-dimensional scalar metric from the Einstein--Hilbert kinetic term;
 5. `GetInvariantForms` computes point-group invariant real differential forms;
 6. `SpinStructures` imposes the lattice and lift constraints.
 
 The source explicitly warns that a symbolic invariant metric must still be restricted to its positive-definite region. Likewise, the returned invariant real forms need not form an integral cohomology basis suitable for flux quantization.
 
-# Spin structures, spectra, and holonomy traces
+# Spin Structures, Spectra, and Holonomy Traces
 
 A compatible spin structure is encoded by $h$ with
 
-$$
-(I-D_\gamma^T)h\in\mathbb Z^k,
-\tag{2.19}
-$$
+$$\begin{align}
+(I-D_\gamma^T)h\in\mathbb Z^k, \tag{2.19}
+\end{align}$$
 
 and
 
-$$
-p\sigma_\gamma
-=h\cdot(pb_\gamma)
-\pmod{\mathbb Z}.
-\tag{2.20}
-$$
+$$\begin{align}
+p\sigma_\gamma =h\cdot(pb_\gamma) \pmod{\mathbb Z}. \tag{2.20}
+\end{align}$$
 
 A spectrum is an association of bosonic and fermionic field records. Each record may specify multiplicity, tensor rank, self-duality or Weyl conditions, and a field-specific twist
 
-$$
+$$\begin{align}
 \texttt{"TwistedBoundaryConditions"}\to h.
-$$
+\end{align}$$
 
 The default is periodic bosons and the selected spin vector for fermions. Holonomy traces are evaluated in $SO(D-2)$ little-group representations, including symmetric traceless tensors, antisymmetric $p$-forms, spinors, Weyl spinors, and gamma-traceless Rarita--Schwinger fields.
 
 This separation is important: the quotient geometry enters through $(D_\gamma,b_\gamma,G)$, the boundary condition through $h$, and the field content through representation characters.
 
-# From the image sum to Casimir branes
+# From the Image Sum to Casimir Branes
 
 The lower-dimensional one-loop potential is
 
-$$
-V_{\mathrm{Cas}}
-=-\frac{\Gamma(s)}{2\pi^s|\Gamma|}
-\sum_{\mathbf r,\gamma,n}^{\sim}
-\int_{[0,1]^k}d^kz\,\sqrt G\,
-\frac{
-\operatorname{Tr}_{\mathbf r}(D_\gamma)
-e^{2\pi i h\cdot n}
-}{
-|z-(D_\gamma z+b_\gamma+n)|^D
-},
-\qquad s=\frac D2.
-\tag{2.21}
-$$
+$$\begin{align}
+V_{\mathrm{Cas}} =-\frac{\Gamma(s)}{2\pi^s|\Gamma|}
+\sum_{\mathbf r,\gamma,n}^{\sim} \int_{[0,1]^k}d^kz\,\sqrt G\, \frac{ \operatorname{Tr}_{\mathbf r}(D_\gamma) e^{2\pi i h\cdot n}
+}{ |z-(D_\gamma z+b_\gamma+n)|^D
+}, \qquad s=\frac D2. \tag{2.21}
+\end{align}$$
 
 Projecting to the invariant subspace of $D_\gamma$ reduces one group-element contribution to
 
-$$
-\mathcal E(\gamma)
-=-\widehat\delta_h
-\frac{\Gamma(s_\gamma)}{2\pi^{s_\gamma}}
-\frac{\sqrt{G_\parallel}}{|\Gamma|}
-\sum_{\xi\in\Xi_\gamma}
-\frac{
-e^{2\pi i\beta_\gamma\cdot\xi}
-}{
-|\xi+b_\gamma^\parallel|_\parallel^{2s_\gamma}
-},
-\tag{2.22}
-$$
+$$\begin{align}
+\mathcal E(\gamma) =-\widehat\delta_h \frac{\Gamma(s_\gamma)}{2\pi^{s_\gamma}} \frac{\sqrt{G_\parallel}}{|\Gamma|}
+\sum_{\xi\in\Xi_\gamma} \frac{ e^{2\pi i\beta_\gamma\cdot\xi}
+}{ |\xi+b_\gamma^\parallel|_\parallel^{2s_\gamma}
+}, \tag{2.22}
+\end{align}$$
 
 where
 
-$$
-s_\gamma
-=s-\frac{k-k'}{2}.
-$$
+$$\begin{align}
+s_\gamma =s-\frac{k-k'}{2}.
+\end{align}$$
 
 The selector $\widehat\delta_h$ is fixed by the integer solvability condition in Eq. (2.23). Each holonomy element therefore behaves like an effective $k'$-dimensional Casimir source supported on its invariant subspace.
 
 `CasimirEnergyDensity` evaluates the integrand of Eq. (2.21) pointwise. It omits the factor $1/|\Gamma|$, because that factor belongs to replacing an integral over the quotient by an integral over the covering torus.
 
-# Ewald summation and numerical control
+# Ewald Summation and Numerical Control
 
 The shifted twisted lattice sum is split into a real-space incomplete-gamma sum, a reciprocal-space incomplete-gamma sum, and two correction terms in Eq. (2.24). The split parameter $\alpha$ cancels in the exact expression but redistributes numerical work after truncation.
 
 Lattice points are enumerated in a metric ellipsoid,
 
-$$
-|n+c|_G^2<r^2,
-\tag{2.25}
-$$
+$$\begin{align}
+|n+c|_G^2<r^2, \tag{2.25}
+\end{align}$$
 
 rather than a rectangular box. A Schur-complement recursion gives coordinate bounds one dimension at a time, Eqs. (2.26)--(2.28).
 
@@ -149,7 +124,7 @@ For both Ewald branches, the omitted tail is approximated by a continuum radial 
 
 The implementation compiles its summation kernel to C with speed-oriented settings and `$MachinePrecision`. Practical precision is consequently limited to roughly sixteen decimal digits regardless of a more ambitious requested tolerance.
 
-# Type-IIB compactification example
+# Type-IIB Compactification Example
 
 The worked example is Type IIB supergravity on $T^6/\mathbb Z_8$. Its generator has a $1/8$ shift in the sixth direction and spin lift $\sigma_g=1/2$. The package reports:
 
@@ -158,22 +133,27 @@ The worked example is Type IIB supergravity on $T^6/\mathbb Z_8$. Its generator 
 - four compatible spin structures;
 - identity-holonomy bosonic and fermionic traces both equal to $128$;
 - at $G=I$ and default $\varepsilon=10^{-4}$,
-  $$
-  V_{\mathrm{Cas}}=98697.9
-  $$
+
+$$\begin{align}
+V_{\mathrm{Cas}}=98697.9
+\end{align}$$
+
   for the fully periodic choice;
 - for
-  $$
-  h=(1/2,1/2,1/2,1/2,0,0),
-  $$
-  $$
-  V_{\mathrm{Cas}}=51872.6;
-  $$
+
+$$\begin{align}
+h=(1/2,1/2,1/2,1/2,0,0),
+\end{align}$$
+
+$$\begin{align}
+V_{\mathrm{Cas}}=51872.6;
+\end{align}$$
+
 - two generator-associated Casimir branes wrapping the last two directions.
 
 The local bosonic and fermionic densities cancel at the second brane, explaining why it is absent from the total density plot. These values are demonstration outputs, not an external numerical benchmark.
 
-# A practical Mathematica route
+# A Practical Mathematica Route
 
 The intended end-to-end use is:
 
@@ -189,29 +169,25 @@ The intended end-to-end use is:
 
 Parallelization is expected to be supplied externally through `ParallelTable`, `ParallelSum`, or related Wolfram Language constructs.
 
-# Verification boundary
+# Verification Boundary
 
 Checked with Sage: the $SO(8)$ little-group dimensions used in the identity-holonomy Type-IIB trace are
 
-$$
-\dim(\text{graviton})=35,
-\qquad
-\dim(\text{two-form})=28,
-\qquad
-\dim(\text{self-dual four-form})=35,
-$$
+$$\begin{align}
+\dim(\text{graviton})=35, \qquad \dim(\text{two-form})=28, \qquad \dim(\text{self-dual four-form})=35,
+\end{align}$$
 
 so
 
-$$
+$$\begin{align}
 35+28+28+35+2=128
-$$
+\end{align}$$
 
 bosonic degrees of freedom. A Weyl spinor has dimension $8$ and a gamma-traceless Weyl gravitino has dimension $8\cdot8-8=56$, giving
 
-$$
+$$\begin{align}
 2\cdot56+2\cdot8=128
-$$
+\end{align}$$
 
 fermionic degrees of freedom.
 

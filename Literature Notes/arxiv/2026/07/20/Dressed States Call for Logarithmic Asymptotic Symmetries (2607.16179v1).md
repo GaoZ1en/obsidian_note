@@ -18,7 +18,7 @@ tags: []
 
 Back to [[2026_07_20_overview]].
 
-# Verdict and route through the letter
+# Verdict and Route Through the Letter
 
 **Verdict.** The paper is a high-priority asymptotic-symmetry input, but its main representation-theoretic conclusion is **not proven**. Conditional on the imported mixed surface-charge bracket, the logarithmic partners do generate the advertised infinite-dimensional Heisenberg algebra. What does not follow is that the central character uniquely fixes the soft representation, that Lorentz transformations have a one-point orbit on that representation, or that every dressed-particle carrier factors as a hard one-particle Hilbert space tensored with a soft Fock space.
 
@@ -34,23 +34,13 @@ The letter has no appendices. Its source logic is:
 
 The main logical chain intended by the authors is
 
-$$
-\text{logarithmic falloffs}
-\Longrightarrow
-\text{canonically paired asymptotic charges}
-\Longrightarrow
-\text{Heisenberg extension}
-\Longrightarrow
-\text{soft Hilbert space}
-\Longrightarrow
-\mathcal H_{\mathrm{dressed}}
-=
-\mathcal H_{\mathrm{hard}}\otimes\mathcal H_{\mathrm{soft}}.
-$$
+$$\begin{align}
+\text{logarithmic falloffs} \Longrightarrow \text{canonically paired asymptotic charges} \Longrightarrow \text{Heisenberg extension} \Longrightarrow \text{soft Hilbert space} \Longrightarrow \mathcal H_{\mathrm{dressed}} = \mathcal H_{\mathrm{hard}}\otimes\mathcal H_{\mathrm{soft}}.
+\end{align}$$
 
 Only the middle algebraic implication can be checked from the data supplied in the letter. The last two arrows require a choice of infinite-dimensional CCR representation, a measure or complex structure, Lorentz implementability, and a valid semidirect-product representation analysis.
 
-## Charges, parameters, and representation data
+## Charges, Parameters, and Representation Data
 
 | Symbol | Meaning and convention |
 | --- | --- |
@@ -59,183 +49,126 @@ Only the middle algebraic implication can be checked from the data supplied in t
 | (\eta(x)) | Logarithmic canonical partner. It has no zero mode in electromagnetism and only (\ell\geq2) modes in gravity. |
 | (F,\widetilde F) | Electromagnetic charge aspects paired with (\epsilon,\eta). The letter imports their field-theory definitions. |
 | (G,\widetilde G) | Gravitational supertranslation and logarithmic charge aspects. Their explicit definitions are not given. |
-| LGT, LGT\(^*\) | Large gauge transformations and their logarithmic duals. |
-| ST, ST\(^*\) | Genuine supertranslations and logarithmic dual supertranslations. Translations are the (\ell=0,1) kernel. |
+| LGT, LGT$^*$ | Large gauge transformations and their logarithmic duals. |
+| ST, ST$^*$ | Genuine supertranslations and logarithmic dual supertranslations. Translations are the (\ell=0,1) kernel. |
 | (P\mathrm{Max}) | Poincaré–Maxwell group with an Abelian normal subgroup. |
 | (\widehat{P\mathrm{Max}},\widehat{\mathrm{BMS}}) | Proposed Heisenberg-extended groups. The hat denotes the central extension, not a Hilbert completion. |
 | (\mathcal O_{(p,F)}) | Lorentz orbit of a momentum/charge-aspect pair. Its dimension is at most six. |
 | (\lambda) | Coordinate dual to the central generator in the Heisenberg group. |
 | (L^2(\mathrm{LGT}^*)), (L^2(\mathrm{ST}^*)) | Formal soft functional spaces. No measure or completion is specified. |
 
-# The asymptotic charge pairs
+# The Asymptotic Charge Pairs
 
-## Electromagnetism: large gauge transformations and logarithmic partners
+## Electromagnetism: Large Gauge Transformations and Logarithmic Partners
 
 The field is a (U(1)) potential (A_\mu) with logarithmic falloffs and parity conditions at infinity. These conditions are not reproduced in the letter. Ordinary charges are written as
 
-$$
-Q_\epsilon
-=
-\oint_{S^2}d^2x\,\sqrt{g(x)}\,\epsilon(x)F(x),
-\tag{2.1}
-$$
+$$\begin{align}
+Q_\epsilon = \oint_{S^2}d^2x\,\sqrt{g(x)}\,\epsilon(x)F(x), \tag{2.1}
+\end{align}$$
 
 and logarithmic charges as
 
-$$
-\widetilde Q_\eta
-=
-\oint_{S^2}d^2x\,\sqrt{g(x)}\,\eta(x)\widetilde F(x).
-\tag{2.2}
-$$
+$$\begin{align}
+\widetilde Q_\eta = \oint_{S^2}d^2x\,\sqrt{g(x)}\,\eta(x)\widetilde F(x). \tag{2.2}
+\end{align}$$
 
 The ordinary charges commute among themselves, as do the logarithmic charges. The decisive imported bracket is
 
-$$
-\{Q_\epsilon,\widetilde Q_\eta\}
-=
-\int_{S^2}d^2x\,\sqrt{g(x)}\,\epsilon(x)\eta(x).
-\tag{2.3}
-$$
+$$\begin{align}
+\{Q_\epsilon,\widetilde Q_\eta\} = \int_{S^2}d^2x\,\sqrt{g(x)}\,\epsilon(x)\eta(x). \tag{2.3}
+\end{align}$$
 
 Because (\eta) has zero average, the constant harmonic of (\epsilon) lies in the kernel and remains the global electric charge. On the nonzero harmonics, (2.3) is a nondegenerate canonical pairing. A compact way to display the cocycle is
 
-$$
-\omega\big((\epsilon,\eta),(\epsilon',\eta')\big)
-=
-\int_{S^2}\sqrt g\,
-\big(\epsilon\eta'-\epsilon'\eta\big).
-$$
+$$\begin{align}
+\omega\big((\epsilon,\eta),(\epsilon',\eta')\big) = \int_{S^2}\sqrt g\, \big(\epsilon\eta'-\epsilon'\eta\big).
+\end{align}$$
 
 It is bilinear and antisymmetric. Since its value multiplies a central generator, the Jacobi identity is automatic. This is the robust algebraic content of the proposal.
 
 Under a sphere diffeomorphism (x\mapsto\phi(x)), a density of weight (w) is defined by
 
-$$
-(\phi\!\cdot\!H)(\phi(x))
-=
-\left(\frac{g(x)}{g(\phi(x))}\right)^{w/2}
-\left|\frac{\partial\phi(x)}{\partial x}\right|^{-w}H(x).
-\tag{2.4}
-$$
+$$\begin{align}
+(\phi\!\cdot\!H)(\phi(x)) = \left(\frac{g(x)}{g(\phi(x))}\right)^{w/2} \left|\frac{\partial\phi(x)}{\partial x}\right|^{-w}H(x). \tag{2.4}
+\end{align}$$
 
 The stated electromagnetic weights are
 
-$$
-w(\epsilon)=0,
-\qquad
-w(F)=1,
-\qquad
-w(\eta)=1,
-\qquad
-w(\widetilde F)=0.
-$$
+$$\begin{align}
+w(\epsilon)=0, \qquad w(F)=1, \qquad w(\eta)=1, \qquad w(\widetilde F)=0.
+\end{align}$$
 
 Each integrand therefore has total weight one. Substitution into (2.4), together with the transformed integration measure, reproduces the original pairing. This checks covariance of the pairing **given** the stated weights; it does not derive the weights from the Maxwell phase space.
 
 The letter also distinguishes two Lorentz generators. The unimproved Noether generator acts conformally on the sphere charge aspects. A Belinfante-improved generator is said to commute with the gauge charges after a canonical transformation made possible by the logarithmic sector. The transformation and the boundary term generating it are imported rather than displayed.
 
-## Gravity: supertranslations and logarithmic supertranslations
+## Gravity: Supertranslations and Logarithmic Supertranslations
 
 The gravitational construction is parallel. Ordinary supertranslations include the four (\ell=0,1) translations and genuine (\ell\geq2) supertranslations. Their charges have the schematic form
 
-$$
-Q_\epsilon
-=
-\oint_{S^2}d^2x\,\sqrt g\,\epsilon(x)G(x),
-\tag{2.5}
-$$
+$$\begin{align}
+Q_\epsilon = \oint_{S^2}d^2x\,\sqrt g\,\epsilon(x)G(x), \tag{2.5}
+\end{align}$$
 
 while the logarithmic partners are
 
-$$
-\widetilde Q_\eta
-=
-\oint_{S^2}d^2x\,\sqrt g\,\eta(x)\widetilde G(x),
-\tag{2.6}
-$$
+$$\begin{align}
+\widetilde Q_\eta = \oint_{S^2}d^2x\,\sqrt g\,\eta(x)\widetilde G(x), \tag{2.6}
+\end{align}$$
 
 with (\eta) restricted to (\ell\geq2). The mixed bracket is again taken to be (2.3). The density weights become
 
-$$
-w(\epsilon)=-\frac12,
-\quad
-w(G)=\frac32,
-\quad
-w(\eta)=\frac32,
-\quad
-w(\widetilde G)=-\frac12.
-$$
+$$\begin{align}
+w(\epsilon)=-\frac12, \quad w(G)=\frac32, \quad w(\eta)=\frac32, \quad w(\widetilde G)=-\frac12.
+\end{align}$$
 
 Thus the four translation modes are precisely the kernel of the gravitational Heisenberg pairing, while the (\ell\geq2) supertranslations are paired with logarithmic modes. At finite spherical-harmonic cutoff (L), this gives
 
-$$
-\operatorname{rank}\omega_{\rm EM}
-=2\big((L+1)^2-1\big),
-\qquad
-\operatorname{nullity}\omega_{\rm EM}=1,
-$$
+$$\begin{align}
+\operatorname{rank}\omega_{\rm EM} =2\big((L+1)^2-1\big), \qquad \operatorname{nullity}\omega_{\rm EM}=1,
+\end{align}$$
 
 and
 
-$$
-\operatorname{rank}\omega_{\rm grav}
-=2\big((L+1)^2-4\big),
-\qquad
-\operatorname{nullity}\omega_{\rm grav}=4.
-$$
+$$\begin{align}
+\operatorname{rank}\omega_{\rm grav} =2\big((L+1)^2-4\big), \qquad \operatorname{nullity}\omega_{\rm grav}=4.
+\end{align}$$
 
 The gravitational field-theory input remains weaker than the electromagnetic one: the explicit aspects (G,\widetilde G), falloffs, surface terms, and charge derivation are absent, with part of the construction cited to work listed as forthcoming.
 
-# Why ordinary Poincaré–Maxwell and BMS are claimed to be too small
+# Why Ordinary Poincaré–Maxwell and BMS Are Claimed to Be Too Small
 
 The ordinary groups are written as
 
-$$
-P\mathrm{Max}
-=
-SO(3,1)^\uparrow
-\ltimes
-\big(\mathbb R^4\times U(1)\times\mathrm{LGT}\big),
-\tag{3.2}
-$$
+$$\begin{align}
+P\mathrm{Max} = SO(3,1)^\uparrow \ltimes \big(\mathbb R^4\times U(1)\times\mathrm{LGT}\big), \tag{3.2}
+\end{align}$$
 
 and
 
-$$
-\mathrm{BMS}
-=
-SO(3,1)^\uparrow
-\ltimes
-\big(\mathbb R^4\times\mathrm{ST}\big).
-\tag{3.3}
-$$
+$$\begin{align}
+\mathrm{BMS} = SO(3,1)^\uparrow \ltimes \big(\mathbb R^4\times\mathrm{ST}\big). \tag{3.3}
+\end{align}$$
 
 For an Abelian normal subgroup, the letter invokes Mackey induction: choose a dual element such as ((p,F)), take its Lorentz orbit
 
-$$
-\mathcal O_{(p,F)}
-=
-\left\{
-(\Lambda\!\cdot p,\Lambda\!\cdot F)
-\mid
-\Lambda\in O(3,1)
-\right\},
-\tag{3.4}
-$$
+$$\begin{align}
+\mathcal O_{(p,F)} = \left\{ (\Lambda\!\cdot p,\Lambda\!\cdot F) \mid
+\Lambda\in O(3,1) \right\}, \tag{3.4}
+\end{align}$$
 
 and build wavefunctions on that orbit. Since
 
-$$
+$$\begin{align}
 \mathcal O_{(p,F)}\cong SO(3,1)^\uparrow/G_{(p,F)},
-$$
+\end{align}$$
 
 one indeed has
 
-$$
-\dim\mathcal O_{(p,F)}
-=6-\dim G_{(p,F)}\leq6.
-$$
+$$\begin{align}
+\dim\mathcal O_{(p,F)} =6-\dim G_{(p,F)}\leq6.
+\end{align}$$
 
 This dimension bound is correct for a smooth orbit. Two additional steps used by the letter need qualifications:
 
@@ -244,79 +177,53 @@ This dimension bound is correct for a smooth orbit. Two additional steps used by
 
 So ordinary asymptotic groups may still be inadequate for the desired soft sector, but the orbit-dimension sentence is not a complete proof.
 
-# Adding the Heisenberg normal subgroup
+# Adding the Heisenberg Normal Subgroup
 
 The proposed extended groups are
 
-$$
-\widehat{P\mathrm{Max}}
-=
-SO(3,1)^\uparrow
-\ltimes
-\left(
-\mathbb R^4\times U(1)
-\times\widehat{\mathrm{LGT}\times\mathrm{LGT}^*}
-\right),
-\tag{3.5}
-$$
+$$\begin{align}
+\widehat{P\mathrm{Max}} = SO(3,1)^\uparrow \ltimes \left( \mathbb R^4\times U(1) \times\widehat{\mathrm{LGT}\times\mathrm{LGT}^*} \right), \tag{3.5}
+\end{align}$$
 
 and
 
-$$
-\widehat{\mathrm{BMS}}
-=
-SO(3,1)^\uparrow
-\ltimes
-\left(
-\mathbb R^4
-\times\widehat{\mathrm{ST}\times\mathrm{ST}^*}
-\right).
-\tag{3.6}
-$$
+$$\begin{align}
+\widehat{\mathrm{BMS}} = SO(3,1)^\uparrow \ltimes \left( \mathbb R^4 \times\widehat{\mathrm{ST}\times\mathrm{ST}^*} \right). \tag{3.6}
+\end{align}$$
 
 Given the cocycle (\omega), the corresponding Heisenberg multiplication may be reconstructed as
 
-$$
-(v,t)(v',t')
-=
-\left(v+v',,t+t'+\frac12\omega(v,v')\right).
-$$
+$$\begin{align}
+(v,t)(v',t') = \left(v+v',,t+t'+\frac12\omega(v,v')\right).
+\end{align}$$
 
 Associativity follows directly from bilinearity of (\omega). The normal subgroup is non-Abelian for nonzero central character, so the elementary Abelian-normal-subgroup form of Mackey induction no longer applies.
 
 The letter then proposes a soft carrier such as
 
-$$
-\mathcal H_{\mathrm{soft}}
-\stackrel{\rm formal}{=}
-L^2(\mathrm{LGT}^*)
-\quad\text{or}\quad
-L^2(\mathrm{ST}^*),
-$$
+$$\begin{align}
+\mathcal H_{\mathrm{soft}} \stackrel{\rm formal}{=} L^2(\mathrm{LGT}^*) \quad\text{or}\quad L^2(\mathrm{ST}^*),
+\end{align}$$
 
 and, for a massive scalar gravitational state,
 
-$$
-\mathcal H
-\stackrel{\rm claimed}{=}
-L^2(\mathbb R^3)
-\otimes
-L^2(\mathrm{ST}^*).
-$$
+$$\begin{align}
+\mathcal H \stackrel{\rm claimed}{=} L^2(\mathbb R^3) \otimes L^2(\mathrm{ST}^*).
+\end{align}$$
 
 The first factor also suppresses the usual invariant mass-shell measure (d^3p/(2E_p)). More importantly, the second expression is only a formal analogy: there is no translation-invariant infinite-dimensional Lebesgue measure on (\mathrm{ST}^*). A Gaussian measure or Fock completion requires extra covariance/complex-structure data.
 
-# Where the representation argument breaks
+# Where the Representation Argument Breaks
 
-## Restriction to the normal subgroup is not automatically irreducible
+## Restriction to the Normal Subgroup Is Not Automatically Irreducible
 
 The letter starts with an irreducible representation of the full semidirect product and states that its restriction to the normal subgroup is, at minimum, one irreducible representation of that subgroup. This is false in general.
 
 A finite counterexample is the two-dimensional irreducible representation of
 
-$$
+$$\begin{align}
 S_3=C_3\rtimes C_2
-$$
+\end{align}$$
 
 with
 
@@ -338,37 +245,31 @@ $$
 
 so that (r^3=s^2=1) and (srs=r^{-1}). The full representation is irreducible, but restriction to the normal (C_3) splits into the two characters carried by (e_1) and (e_2). This also shows that a semidirect-product irrep need not factor into irreps of its subgroup factors.
 
-## Infinite-dimensional Stone–von Neumann failure is decisive, not incidental
+## Infinite-Dimensional Stone–Von Neumann Failure Is Decisive, Not Incidental
 
 The paper correctly notes that Stone–von Neumann uniqueness fails in infinite dimension, but then later treats the central charge as the only label of the soft representation. Those statements are incompatible.
 
 For countably many oscillator modes, consider
 
-$$
+$$\begin{align}
 b_n=\frac54a_n+\frac34a_n^\dagger.
-$$
+\end{align}$$
 
 The coefficients satisfy
 
-$$
-\left(\frac54\right)^2-
-\left(\frac34\right)^2=1,
-$$
+$$\begin{align}
+\left(\frac54\right)^2- \left(\frac34\right)^2=1,
+\end{align}$$
 
 so the transformation preserves the CCR and the central character. Its off-diagonal part has truncated Hilbert–Schmidt norm
 
-$$
-\|V\|_{\mathrm{HS},N}^2
-=
-N\left(\frac34\right)^2
-=
-\frac{9N}{16}
-\longrightarrow\infty.
-$$
+$$\begin{align}
+\|V\|_{\mathrm{HS},N}^2 = N\left(\frac34\right)^2 = \frac{9N}{16} \longrightarrow\infty.
+\end{align}$$
 
 By the Shale–Stinespring criterion it is not unitarily implementable in the standard Fock representation. Hence the original representation and its transformed representation are inequivalent despite having the same central character.
 
-## Lorentz covariance of the cocycle does not prove Lorentz implementability
+## Lorentz Covariance of the Cocycle Does Not Prove Lorentz Implementability
 
 Invariance of (\omega) means Lorentz transformations act by automorphisms of the abstract Heisenberg algebra. A unitary action on a chosen soft Hilbert space requires more: the transformed representation must be unitarily equivalent to the original one. For a quasi-free representation this becomes an implementability condition on the chosen complex structure or covariance. None is supplied.
 
@@ -376,27 +277,25 @@ Consequently, the assertion that the Lorentz orbit of the soft representation is
 
 The defensible conclusion is therefore
 
-$$
-\boxed{
-\text{imported mixed charge bracket}
+$$\begin{align}
+\boxed{ \text{imported mixed charge bracket}
 \Longrightarrow
 \text{valid Heisenberg algebra with the claimed harmonic kernel}
 }
-$$
+\end{align}$$
 
 but
 
-$$
-\boxed{
-\text{Heisenberg extension}
+$$\begin{align}
+\boxed{ \text{Heisenberg extension}
 \centernot\Longrightarrow
 \text{unique soft representation}
 \centernot\Longrightarrow
 \text{hard/soft tensor factorization}.
 }
-$$
+\end{align}$$
 
-# Translation to boundary phase-space language
+# Translation to Boundary Phase-Space Language
 
 | Paper object | Local CPS / boundary interpretation | What is still required |
 | --- | --- | --- |
@@ -409,7 +308,7 @@ $$
 
 The paper is therefore most useful to the vault as an algebraic target for a boundary-CPS calculation. The calculation should begin from the complete asymptotic presymplectic structure and ask whether the logarithmic sector really supplies a nondegenerate boundary pair after constraints and flux are treated. Quantization comes only afterward.
 
-# Concrete project extensions
+# Concrete Project Extensions
 
 1. Reconstruct the Maxwell logarithmic bracket from the cited falloffs and symplectic form, retaining the parity conditions and the zero mode. The stop condition is an explicit derivation of (2.3) in one boundary convention.
 2. Repeat the calculation for gravity only after the gravitational charge aspects are available; do not import the electromagnetic bracket by analogy.
@@ -417,7 +316,7 @@ The paper is therefore most useful to the vault as an algebraic target for a bou
 4. Specify a soft complex structure and test whether the Lorentz action satisfies the Shale–Stinespring condition. This is the decisive bridge between algebra covariance and a quantum symmetry.
 5. Treat hard/soft factorization as a proposition to prove from a symplectic direct sum, not as a consequence of the group notation.
 
-# Verification log
+# Verification Log
 
 ## Checked
 

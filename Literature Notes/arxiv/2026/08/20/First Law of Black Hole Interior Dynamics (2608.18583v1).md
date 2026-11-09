@@ -13,431 +13,370 @@ summary: "A precise horizon-to-Kasner Iyer--Wald variation identity, useful prov
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
-Correct under the following precise conditions: the result is a **classical on-shell surface-charge variation identity** for four-dimensional Einstein--Maxwell--scalar theory in a static, spherically symmetric areal gauge, with fixed theory couplings, field-independent Killing vector \(\xi=\partial_t\), a regular horizon, no intervening singularity before the regulated endpoint, and a scalar-kinetic-dominated Kasner asymptotic satisfying the two stated Kasner constraints.
+Correct under the following precise conditions: the result is a **classical on-shell surface-charge variation identity** for four-dimensional Einstein--Maxwell--scalar theory in a static, spherically symmetric areal gauge, with fixed theory couplings, field-independent Killing vector $\xi=\partial_t$, a regular horizon, no intervening singularity before the regulated endpoint, and a scalar-kinetic-dominated Kasner asymptotic satisfying the two stated Kasner constraints.
 
 Under those conditions the paper obtains
 
-\[
-\delta M_{\rm K}
-=\mathcal T\,\delta S+\mathit\Phi_e\,\delta Q_e
-+\phi_{\rm K}\,\delta\Sigma_{\rm K}.
-\]
+$$\begin{align}
+\delta M_{\rm K} =\mathcal T\,\delta S+\mathit\Phi_e\,\delta Q_e +\phi_{\rm K}\,\delta\Sigma_{\rm K}.
+\end{align}$$
 
-The statement should not be rewritten as a new ADM-like interior energy law. \(M_{\rm K}\) is dimensionless and is defined from the regulated Kasner data so that the endpoint Iyer--Wald identity becomes exact. The paper does not construct a new asymptotic symmetry algebra, a boundary-completed covariant phase space, a quantum first law, or an autonomous thermodynamic ensemble at the singularity.
+The statement should not be rewritten as a new ADM-like interior energy law. $M_{\rm K}$ is dimensionless and is defined from the regulated Kasner data so that the endpoint Iyer--Wald identity becomes exact. The paper does not construct a new asymptotic symmetry algebra, a boundary-completed covariant phase space, a quantum first law, or an autonomous thermodynamic ensemble at the singularity.
 
 See [[2026_08_20_overview]] for today's queue and comparison set.
 
-# Source map
+# Source Map
 
-## Section 1 — motivation and target identity
+## Section 1 — Motivation and Target Identity
 
 The exterior black-hole first law pairs variations of asymptotic charges with horizon responses. The paper instead restricts attention to the cosmological region between a horizon and a Kasner-like spacelike singularity. Its target is an exact one-form on a family of interior solutions, with endpoint data at the horizon and at the regulated Kasner surface.
 
-## Section 2 — horizon and Kasner data
+## Section 2 — Horizon and Kasner Data
 
 The Einstein--Maxwell--scalar theory, spherical ansatz, horizon quantities, local electric and scalar momenta, Kasner exponents, singular coefficients, normalized scalar charge, and Kasner potential are defined here.
 
-## Section 3 — Iyer--Wald derivation
+## Section 3 — Iyer--Wald Derivation
 
-The source evaluates the Iyer--Wald two-form \(k_\xi=\delta Q_\xi-\iota_\xi\Theta\) on a sphere of radius \(r\). Radial closure equates the horizon and regulated-Kasner integrals. The Kasner constraint cancels the apparent logarithmic divergence; the finite part gives the first law after a field-dependent normalization by \(\Xi\).
+The source evaluates the Iyer--Wald two-form $k_\xi=\delta Q_\xi-\iota_\xi\Theta$ on a sphere of radius $r$. Radial closure equates the horizon and regulated-Kasner integrals. The Kasner constraint cancels the apparent logarithmic divergence; the finite part gives the first law after a field-dependent normalization by $\Xi$.
 
-## Section 4 — exact and numerical tests
+## Section 4 — Exact and Numerical Tests
 
-The exact checks use Schwarzschild, charged Einstein--Maxwell--dilaton black holes, and a one-parameter neutral scalar-hairy family. The numerical test uses two two-parameter horizon-to-Kasner families and compares gradients of a fitted \(M_{\rm K}(S,\Sigma_{\rm K})\) with directly extracted response coefficients.
+The exact checks use Schwarzschild, charged Einstein--Maxwell--dilaton black holes, and a one-parameter neutral scalar-hairy family. The numerical test uses two two-parameter horizon-to-Kasner families and compares gradients of a fitted $M_{\rm K}(S,\Sigma_{\rm K})$ with directly extracted response coefficients.
 
-## Section 5 — Smarr subtlety
+## Section 5 — Smarr Subtlety
 
-Because \(M_{\rm K}\) shifts logarithmically under length rescaling, Euler homogeneity gives a modified Smarr relation. A generalized Komar quantity reproduces the same relation and adds a bulk scalar-potential integral when \(V(\phi)\neq0\).
+Because $M_{\rm K}$ shifts logarithmically under length rescaling, Euler homogeneity gives a modified Smarr relation. A generalized Komar quantity reproduces the same relation and adds a bulk scalar-potential integral when $V(\phi)\neq0$.
 
-## Section 6 — scope and possible extension
+## Section 6 — Scope and Possible Extension
 
 The conclusion emphasizes that the construction uses no normalization at infinity and may apply to more general horizon-bounded cosmological interiors. Naked-singularity extensions are proposed but not established.
 
-# Theory, conventions, and endpoint data
+# Theory, Conventions, and Endpoint Data
 
-## Action and fields
+## Action and Fields
 
 The source uses natural units and
 
-\[
-I=\frac1{16\pi}\int d^4x\sqrt{-g}\left[
-R-\frac12(\nabla\phi)^2-\frac14 Z(\phi)F^2-V(\phi)
-\right],\qquad F=dA.
-\]
+$$\begin{align}
+I=\frac1{16\pi}\int d^4x\sqrt{-g}\left[ R-\frac12(\nabla\phi)^2-\frac14 Z(\phi)F^2-V(\phi) \right],\qquad F=dA.
+\end{align}$$
 
-The Maxwell normalization is therefore not the most common \((R-F^2)/(16\pi)\) convention. In particular, the paper defines
+The Maxwell normalization is therefore not the most common $(R-F^2)/(16\pi)$ convention. In particular, the paper defines
 
-\[
+$$\begin{align}
 Q_e=\frac1{16\pi}\int_{S_r^2}Z(\phi)*F.
-\]
+\end{align}$$
 
-Any comparison with a vault formula using \(1/(4\pi)\int *F\) requires a factor-of-four conversion and a check of the sphere orientation.
+Any comparison with a vault formula using $1/(4\pi)\int *F$ requires a factor-of-four conversion and a check of the sphere orientation.
 
 The areal-radius ansatz is
 
-\[
-ds^2=-h(r)dt^2+\frac{dr^2}{f(r)}+r^2d\Omega_2^2,
-\qquad \phi=\phi(r),\qquad A=A_t(r)dt.
-\]
+$$\begin{align}
+ds^2=-h(r)dt^2+\frac{dr^2}{f(r)}+r^2d\Omega_2^2, \qquad \phi=\phi(r),\qquad A=A_t(r)dt.
+\end{align}$$
 
-Outside the horizon \(r\) is spatial and \(t\) is timelike; inside, their causal roles interchange. The derivation nevertheless keeps the same static coordinate representation and fixed Killing vector \(\partial_t\).
+Outside the horizon $r$ is spatial and $t$ is timelike; inside, their causal roles interchange. The derivation nevertheless keeps the same static coordinate representation and fixed Killing vector $\partial_t$.
 
-## Horizon quantities
+## Horizon Quantities
 
-For a nondegenerate horizon at \(r=r_h\),
+For a nondegenerate horizon at $r=r_h$,
 
-\[
-T=\frac{\sqrt{h'(r_h)f'(r_h)}}{4\pi},
-\qquad S=\pi r_h^2,
-\qquad \Phi_{\rm H}=A_t(r_h).
-\]
+$$\begin{align}
+T=\frac{\sqrt{h'(r_h)f'(r_h)}}{4\pi}, \qquad S=\pi r_h^2, \qquad \Phi_{\rm H}=A_t(r_h).
+\end{align}$$
 
 The electric charge is radially conserved. The scalar momentum
 
-\[
+$$\begin{align}
 Q_\phi(r)=-\frac1{16\pi}\int_{S_r^2}\iota_{\partial_t}(*d\phi)
-\]
+\end{align}$$
 
-is local and generally varies with \(r\); it is not an asymptotic scalar charge.
+is local and generally varies with $r$; it is not an asymptotic scalar charge.
 
-## Kasner asymptotic and constraints
+## Kasner Asymptotic and Constraints
 
 The assumed singular regime is
 
-\[
-ds^2=-d\tau^2+a_1^2\tau^{2P_t}dt^2
-+a_2^2\tau^{2P_T}d\Omega_2^2,
-\qquad \phi=2P_\phi\log\tau,
-\]
+$$\begin{align}
+ds^2=-d\tau^2+a_1^2\tau^{2P_t}dt^2 +a_2^2\tau^{2P_T}d\Omega_2^2, \qquad \phi=2P_\phi\log\tau,
+\end{align}$$
 
 with
 
-\[
-P_t+2P_T=1,
-\qquad P_\phi^2+3P_T^2-2P_T=0.
-\]
+$$\begin{align}
+P_t+2P_T=1, \qquad P_\phi^2+3P_T^2-2P_T=0.
+\end{align}$$
 
 In areal gauge this becomes
 
-\[
-f\sim-F_0r^{-l},\qquad
-h\sim-H_0r^{l-2},\qquad
-\phi\sim c_1\log r+\phi_{\rm K},
-\]
+$$\begin{align}
+f\sim-F_0r^{-l},\qquad h\sim-H_0r^{l-2},\qquad \phi\sim c_1\log r+\phi_{\rm K},
+\end{align}$$
 
 where
 
-\[
-l=1+\frac{c_1^2}{4},
-\qquad
-\Xi=-\lim_{r\to0^+}r f\sqrt{\frac hf}=\sqrt{F_0H_0}.
-\]
+$$\begin{align}
+l=1+\frac{c_1^2}{4}, \qquad \Xi=-\lim_{r\to0^+}r f\sqrt{\frac hf}=\sqrt{F_0H_0}.
+\end{align}$$
 
 The endpoint scalar data are
 
-\[
-Q_\phi^{\rm K}=\frac14\Xi c_1,
-\qquad
-\Sigma_{\rm K}=\frac{Q_\phi^{\rm K}}{\Xi}=\frac{c_1}{4},
-\qquad
-\Phi_{\rm K}=A_t(0).
-\]
+$$\begin{align}
+Q_\phi^{\rm K}=\frac14\Xi c_1, \qquad \Sigma_{\rm K}=\frac{Q_\phi^{\rm K}}{\Xi}=\frac{c_1}{4}, \qquad \Phi_{\rm K}=A_t(0).
+\end{align}$$
 
-The signs of \(Q_e\) and \(Q_\phi\) depend on the Hodge and sphere-orientation conventions. The paper's later formulas must be read with its stated positive \(Q_e\) for the displayed EMD solution.
+The signs of $Q_e$ and $Q_\phi$ depend on the Hodge and sphere-orientation conventions. The paper's later formulas must be read with its stated positive $Q_e$ for the displayed EMD solution.
 
-## Kasner potential
+## Kasner Potential
 
 The central endpoint function is
 
-\[
+$$\begin{align}
 M_{\rm K}=\frac12\log F_0+\phi_{\rm K}\Sigma_{\rm K}.
-\]
+\end{align}$$
 
 It is not an energy. Its first term records the singular metric amplitude; its second supplies the Legendre-type completion needed to turn the finite Iyer--Wald endpoint expression into an exact differential.
 
-# Iyer--Wald derivation map
+# Iyer--Wald Derivation Map
 
-## Step 1 — closed surface variation
+## Step 1 — Closed Surface Variation
 
-For a solution variation \(\delta\Psi\) and fixed Killing vector \(\xi\),
+For a solution variation $\delta\Psi$ and fixed Killing vector $\xi$,
 
-\[
+$$\begin{align}
 k_\xi(\delta\Psi;\Psi)=\delta Q_\xi-\iota_\xi\Theta(\Psi,\delta\Psi).
-\]
+\end{align}$$
 
-On shell and for a linearized solution, \(dk_\xi=0\). Hence the sphere integral
+On shell and for a linearized solution, $dk_\xi=0$. Hence the sphere integral
 
-\[
+$$\begin{align}
 \delta\mathcal H_\xi(r)=\int_{S_r^2}k_\xi
-\]
+\end{align}$$
 
-is independent of \(r\) as long as the interpolating region has no additional singular boundary.
+is independent of $r$ as long as the interpolating region has no additional singular boundary.
 
 The source's reduced expression is
 
-\[
-\begin{aligned}
-\delta\mathcal H_\xi(r)=\frac1{16\pi}\int_{S_r^2}\bigg\{
-&r\left[-2\sqrt{\frac hf}\,\delta f
--fr\sqrt{\frac hf}\,\phi'\delta\phi\right]\\
+$$\begin{aligned}
+\delta\mathcal H_\xi(r)=\frac1{16\pi}\int_{S_r^2}\bigg\{ &r\left[-2\sqrt{\frac hf}\,\delta f -fr\sqrt{\frac hf}\,\phi'\delta\phi\right]\\
 &-A_t\,\delta\left(r^2\sqrt{\frac fh}\,Z(\phi)A_t'\right)
 \bigg\}.
-\end{aligned}
-\]
+\end{aligned}$$
 
-This is a **Hamiltonian variation density integrated on a sphere**. The paper does not separately prove integrability of \(\mathcal H_\xi\) on a boundary phase space with prescribed boundary conditions.
+This is a **Hamiltonian variation density integrated on a sphere**. The paper does not separately prove integrability of $\mathcal H_\xi$ on a boundary phase space with prescribed boundary conditions.
 
-## Step 2 — horizon endpoint
+## Step 2 — Horizon Endpoint
 
 Regularity at the horizon gives
 
-\[
+$$\begin{align}
 \delta\mathcal H_\xi(r_h)=T\,\delta S+\Phi_{\rm H}\,\delta Q_e.
-\]
+\end{align}$$
 
-## Step 3 — regulated Kasner endpoint
+## Step 3 — Regulated Kasner Endpoint
 
-At \(r=\epsilon\), the apparent divergent coefficient is
+At $r=\epsilon$, the apparent divergent coefficient is
 
-\[
+$$\begin{align}
 \Xi(c_1\delta c_1-2\delta l)\log\epsilon.
-\]
+\end{align}$$
 
-It vanishes because \(l=1+c_1^2/4\) implies
+It vanishes because $l=1+c_1^2/4$ implies
 
-\[
+$$\begin{align}
 2\delta l=c_1\delta c_1.
-\]
+\end{align}$$
 
 The remaining finite part is
 
-\[
-\delta\mathcal H_\xi(\epsilon)
-=\Xi\,\delta\log\sqrt{F_0}
-+\Phi_{\rm K}\delta Q_e
-+\Xi\Sigma_{\rm K}\delta\phi_{\rm K}
-+O(\epsilon).
-\]
+$$\begin{align}
+\delta\mathcal H_\xi(\epsilon) =\Xi\,\delta\log\sqrt{F_0} +\Phi_{\rm K}\delta Q_e +\Xi\Sigma_{\rm K}\delta\phi_{\rm K} +O(\epsilon).
+\end{align}$$
 
-## Step 4 — transported responses and exact potential
+## Step 4 — Transported Responses and Exact Potential
 
-Equating endpoints and dividing by \(\Xi\) gives
+Equating endpoints and dividing by $\Xi$ gives
 
-\[
-\delta\log\sqrt{F_0}+\Sigma_{\rm K}\delta\phi_{\rm K}
-=\frac{T}{\Xi}\delta S
-+\frac{\Phi_{\rm H}-\Phi_{\rm K}}{\Xi}\delta Q_e.
-\]
+$$\begin{align}
+\delta\log\sqrt{F_0}+\Sigma_{\rm K}\delta\phi_{\rm K} =\frac{T}{\Xi}\delta S +\frac{\Phi_{\rm H}-\Phi_{\rm K}}{\Xi}\delta Q_e.
+\end{align}$$
 
 Define
 
-\[
-\mathcal T=\frac{T}{\Xi},
-\qquad
-\mathit\Phi_e=\frac{\Phi_{\rm H}-\Phi_{\rm K}}{\Xi}.
-\]
+$$\begin{align}
+\mathcal T=\frac{T}{\Xi}, \qquad \mathit\Phi_e=\frac{\Phi_{\rm H}-\Phi_{\rm K}}{\Xi}.
+\end{align}$$
 
-Then varying \(M_{\rm K}\) adds \(\phi_{\rm K}\delta\Sigma_{\rm K}\) and yields the advertised first law.
+Then varying $M_{\rm K}$ adds $\phi_{\rm K}\delta\Sigma_{\rm K}$ and yields the advertised first law.
 
-The potential difference is invariant under \(A_t\mapsto A_t+C\). Under a constant normalization change of \(t\), \(T\), \(\Phi_{\rm H}-\Phi_{\rm K}\), and \(\Xi\) scale together, so both response coefficients remain invariant.
+The potential difference is invariant under $A_t\mapsto A_t+C$. Under a constant normalization change of $t$, $T$, $\Phi_{\rm H}-\Phi_{\rm K}$, and $\Xi$ scale together, so both response coefficients remain invariant.
 
-# Exact examples
+# Exact Examples
 
 ## Schwarzschild
 
-For mass parameter \(m\),
+For mass parameter $m$,
 
-\[
-M_{\rm K}=\frac12\log(2m),
-\qquad \Xi=2m,
-\qquad T=\frac1{8\pi m},
-\qquad S=4\pi m^2.
-\]
+$$\begin{align}
+M_{\rm K}=\frac12\log(2m), \qquad \Xi=2m, \qquad T=\frac1{8\pi m}, \qquad S=4\pi m^2.
+\end{align}$$
 
 Thus
 
-\[
-\delta M_{\rm K}=\frac{\delta m}{2m}
-=\frac{T}{\Xi}\delta S.
-\]
+$$\begin{align}
+\delta M_{\rm K}=\frac{\delta m}{2m} =\frac{T}{\Xi}\delta S.
+\end{align}$$
 
-## Charged Einstein--Maxwell--dilaton family
+## Charged Einstein--Maxwell--Dilaton Family
 
-With \(Z=e^{a\phi}\) and \(n=4/(1+a^2)\), the paper writes
+With $Z=e^{a\phi}$ and $n=4/(1+a^2)$, the paper writes
 
-\[
-M_{\rm K}=\frac12\log m-\frac1{2a^2}\log q,
-\quad
-Q_e=\frac14\sqrt{nq(m+q)},
-\quad
-\Sigma_{\rm K}=-\frac1{2a},
-\]
+$$\begin{align}
+M_{\rm K}=\frac12\log m-\frac1{2a^2}\log q, \quad Q_e=\frac14\sqrt{nq(m+q)}, \quad \Sigma_{\rm K}=-\frac1{2a},
+\end{align}$$
 
-\[
-\phi_{\rm K}=\frac2a\log q,
-\quad
-\Xi=\frac14m(4-n),
-\quad
-\mathit\Phi_e=-\frac1{a^2Q_e},
-\quad
-\mathcal T=\frac{m}{4\Xi S}.
-\]
+$$\begin{align}
+\phi_{\rm K}=\frac2a\log q, \quad \Xi=\frac14m(4-n), \quad \mathit\Phi_e=-\frac1{a^2Q_e}, \quad \mathcal T=\frac{m}{4\Xi S}.
+\end{align}$$
 
-At fixed coupling \(a\), \(\delta\Sigma_{\rm K}=0\). The \(dm\) and \(dq\) coefficients independently satisfy the first law.
+At fixed coupling $a$, $\delta\Sigma_{\rm K}=0$. The $dm$ and $dq$ coefficients independently satisfy the first law.
 
-## Neutral exact scalar-hairy family
+## Neutral Exact Scalar-Hairy Family
 
-For fixed \((\alpha,\mu)\) and the single integration constant \(q\),
+For fixed $(\alpha,\mu)$ and the single integration constant $q$,
 
-\[
+$$\begin{align}
 \Delta=\frac{\alpha q^2}{2(1-2\mu)}-1>0,
-\]
+\end{align}$$
 
-\[
-F_0=\frac{(1-\mu)^2}{4}\Delta q^{2/(1-\mu)},
-\quad
-\Xi=\frac{1-\mu}{2}\Delta q,
-\]
+$$\begin{align}
+F_0=\frac{(1-\mu)^2}{4}\Delta q^{2/(1-\mu)}, \quad \Xi=\frac{1-\mu}{2}\Delta q,
+\end{align}$$
 
-\[
-\Sigma_{\rm K}=-\frac12\sqrt{\frac{1+\mu}{1-\mu}},
-\qquad
-\phi_{\rm K}=2\sqrt{\frac{1+\mu}{1-\mu}}\log q.
-\]
+$$\begin{align}
+\Sigma_{\rm K}=-\frac12\sqrt{\frac{1+\mu}{1-\mu}}, \qquad \phi_{\rm K}=2\sqrt{\frac{1+\mu}{1-\mu}}\log q.
+\end{align}$$
 
-The exact identity reduces to the single \(dq\) coefficient because \(\Sigma_{\rm K}\) depends only on the fixed couplings.
+The exact identity reduces to the single $dq$ coefficient because $\Sigma_{\rm K}$ depends only on the fixed couplings.
 
-# Numerical test and its evidentiary limit
+# Numerical Test and Its Evidentiary Limit
 
 The numerical section studies the neutral Einstein--scalar theory with
 
-\[
-V_1=g_5\phi^5+g_7\phi^7,
-\qquad
-V_2=\frac12g_2\phi^2,
-\]
+$$\begin{align}
+V_1=g_5\phi^5+g_7\phi^7, \qquad V_2=\frac12g_2\phi^2,
+\end{align}$$
 
-using horizon data \((r_0,\phi_0)\) to generate two-parameter interior families. It extracts \((S,\Sigma_{\rm K},M_{\rm K},\mathcal T,\phi_{\rm K})\), fits \(M_{\rm K}(S,\Sigma_{\rm K})\), and compares
+using horizon data $(r_0,\phi_0)$ to generate two-parameter interior families. It extracts $(S,\Sigma_{\rm K},M_{\rm K},\mathcal T,\phi_{\rm K})$, fits $M_{\rm K}(S,\Sigma_{\rm K})$, and compares
 
-\[
-\mathcal T^{\rm th}=\frac{\partial M_{\rm K}}{\partial S},
-\qquad
-\phi_{\rm K}^{\rm th}=\frac{\partial M_{\rm K}}{\partial\Sigma_{\rm K}}
-\]
+$$\begin{align}
+\mathcal T^{\rm th}=\frac{\partial M_{\rm K}}{\partial S}, \qquad \phi_{\rm K}^{\rm th}=\frac{\partial M_{\rm K}}{\partial\Sigma_{\rm K}}
+\end{align}$$
 
 with directly extracted values.
 
 This is a consistency test of the fitted finite-dimensional data. It is not a proof of global existence, uniqueness, stability, or phase structure for the interior evolution. The source archive contains four finished figure images but no integration code, raw samples, fit basis, fit order, uncertainty model, or residual table.
 
-# Smarr relation
+# Smarr Relation
 
-## Scale-free theory
+## Scale-Free Theory
 
-When \(V=0\), the scaling is
+When $V=0$, the scaling is
 
-\[
-S\mapsto\lambda^2S,
-\quad Q_e\mapsto\lambda Q_e,
-\quad \Sigma_{\rm K}\mapsto\Sigma_{\rm K},
-\quad F_0\mapsto\lambda^lF_0,
-\quad \phi_{\rm K}\mapsto\phi_{\rm K}-c_1\log\lambda.
-\]
+$$\begin{align}
+S\mapsto\lambda^2S, \quad Q_e\mapsto\lambda Q_e, \quad \Sigma_{\rm K}\mapsto\Sigma_{\rm K}, \quad F_0\mapsto\lambda^lF_0, \quad \phi_{\rm K}\mapsto\phi_{\rm K}-c_1\log\lambda.
+\end{align}$$
 
 Therefore
 
-\[
-M_{\rm K}(\lambda^2S,\lambda Q_e,\Sigma_{\rm K})
-=M_{\rm K}(S,Q_e,\Sigma_{\rm K})
-+\left(\frac12-2\Sigma_{\rm K}^2\right)\log\lambda,
-\]
+$$\begin{align}
+M_{\rm K}(\lambda^2S,\lambda Q_e,\Sigma_{\rm K}) =M_{\rm K}(S,Q_e,\Sigma_{\rm K}) +\left(\frac12-2\Sigma_{\rm K}^2\right)\log\lambda,
+\end{align}$$
 
 and
 
-\[
-2\mathcal T S+\mathit\Phi_eQ_e
-=\frac12-2\Sigma_{\rm K}^2.
-\]
+$$\begin{align}
+2\mathcal T S+\mathit\Phi_eQ_e =\frac12-2\Sigma_{\rm K}^2.
+\end{align}$$
 
 This is logarithmic quasi-homogeneity, not ordinary extensivity of an energy.
 
-## Generalized Komar relation
+## Generalized Komar Relation
 
-For \(\xi=\partial_t\),
+For $\xi=\partial_t$,
 
-\[
+$$\begin{align}
 K(r)=\frac{r^2}{2}\sqrt{\frac fh}\,h'(r).
-\]
+\end{align}$$
 
 With the paper's electric orientation convention,
 
-\[
-K'=-Q_eA_t'-\frac12r^2\sqrt{\frac hf}\,V(\phi),
-\qquad
-J=K+Q_eA_t,
-\]
+$$\begin{align}
+K'=-Q_eA_t'-\frac12r^2\sqrt{\frac hf}\,V(\phi), \qquad J=K+Q_eA_t,
+\end{align}$$
 
 so
 
-\[
+$$\begin{align}
 J'=-\frac12r^2\sqrt{\frac hf}\,V(\phi).
-\]
+\end{align}$$
 
 The potential-corrected relation is
 
-\[
-2\mathcal T S+\mathit\Phi_eQ_e
-+\frac1{2\Xi}\int_0^{r_h}dr\,r^2\sqrt{\frac hf}V(\phi)
-=\frac12-2\Sigma_{\rm K}^2.
-\]
+$$\begin{align}
+2\mathcal T S+\mathit\Phi_eQ_e +\frac1{2\Xi}\int_0^{r_h}dr\,r^2\sqrt{\frac hf}V(\phi) =\frac12-2\Sigma_{\rm K}^2.
+\end{align}$$
 
-# Translation into the vault's CPS language
+# Translation into the Vault's CPS Language
 
 1. **What is genuinely constructed:** an on-shell closed Iyer--Wald two-form for a fixed exact Killing vector, evaluated on two homologous spheres within a restricted solution family.
-2. **What is transported:** the horizon variation is rewritten in terms of singular-endpoint coefficients after division by the solution-dependent normalization \(\Xi\).
-3. **What is integrable:** the displayed one-form is exact because \(M_{\rm K}=\tfrac12\log F_0+\phi_{\rm K}\Sigma_{\rm K}\) is explicitly supplied. This is finite-dimensional solution-space integrability, not a proof of a boundary Hamiltonian on an unrestricted field space.
+2. **What is transported:** the horizon variation is rewritten in terms of singular-endpoint coefficients after division by the solution-dependent normalization $\Xi$.
+3. **What is integrable:** the displayed one-form is exact because $M_{\rm K}=\tfrac12\log F_0+\phi_{\rm K}\Sigma_{\rm K}$ is explicitly supplied. This is finite-dimensional solution-space integrability, not a proof of a boundary Hamiltonian on an unrestricted field space.
 4. **What is absent:** no presymplectic-flux analysis at the regulated Kasner surface, no corner ambiguity audit, no field-dependent symmetry generator, no charge algebra, and no moving-embedding degree of freedom.
 5. **Relation to gluing:** the radial equality resembles a transfer identity across a bulk region, but it assumes one smooth classical solution connecting the endpoints. It neither constructs the user's interpolation/gluing map nor proves quantum or matter/pure-gravity factorization.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
 - The official 15-page PDF and complete 746-line TeX source were retrieved. PDF pages 3, 5, 7, 10, 12, and 14 were rendered; the displayed endpoint, exact-solution, and Smarr formulas agree with the TeX source.
-- Mathematica exactly reproduced the cancellation \(c_1\delta c_1-2\delta l=0\) from \(l=1+c_1^2/4\).
-- Mathematica independently returned zero for both \(dm\) and \(dq\) residuals of the EMD first law at fixed \(a\), and zero for its modified Smarr residual.
-- Mathematica returned zero for the neutral exact scalar-hairy \(dq\) residual under \(q>0\), \(-1<\mu<1/2\), and \(\Delta>0\).
-- Mathematica reproduced the Schwarzschild--AdS reduction \(M=2TS+\Lambda r_h^3/3\) from the potential-corrected relation.
-- xAct/xCoba computed the metric Christoffel component \(\Gamma^t{}_{tr}=h'/(2h)\) and verified, with the positive-root convention for \(\sqrt{f/h}\),
-  \[
-  K'(r)+r^2\sqrt{\frac hf}\,R^t{}_t=0.
-  \]
-  Combined with the EMS field equation, this reproduces the generalized Komar radial structure; the sign of the \(Q_eA_t'\) term follows the paper's Hodge/sphere orientation.
+- Mathematica exactly reproduced the cancellation $c_1\delta c_1-2\delta l=0$ from $l=1+c_1^2/4$.
+- Mathematica independently returned zero for both $dm$ and $dq$ residuals of the EMD first law at fixed $a$, and zero for its modified Smarr residual.
+- Mathematica returned zero for the neutral exact scalar-hairy $dq$ residual under $q>0$, $-1<\mu<1/2$, and $\Delta>0$.
+- Mathematica reproduced the Schwarzschild--AdS reduction $M=2TS+\Lambda r_h^3/3$ from the potential-corrected relation.
+- xAct/xCoba computed the metric Christoffel component $\Gamma^t{}_{tr}=h'/(2h)$ and verified, with the positive-root convention for $\sqrt{f/h}$,
 
-## Source-derived
+$$\begin{align}
+K'(r)+r^2\sqrt{\frac hf}\,R^t{}_t=0.
+\end{align}$$
 
-- The reduced Iyer--Wald sphere variation and its horizon value were reconstructed from the supplied TeX formulas and standard closure statement, but the paper does not print the intermediate \(\Theta\) and \(Q_\xi\) components needed for a line-by-line independent convention audit.
+  Combined with the EMS field equation, this reproduces the generalized Komar radial structure; the sign of the $Q_eA_t'$ term follows the paper's Hodge/sphere orientation.
+
+## Source-Derived
+
+- The reduced Iyer--Wald sphere variation and its horizon value were reconstructed from the supplied TeX formulas and standard closure statement, but the paper does not print the intermediate $\Theta$ and $Q_\xi$ components needed for a line-by-line independent convention audit.
 - The claim that the two numerical surfaces and samples “fit perfectly” is source-derived from the four plotted panels.
 
 ## Blocked
 
-- Reproducing the numerical horizon-to-Kasner integrations, fitted derivatives, and quoted agreement is blocked by the absence of executable code, raw \((r_0,\phi_0)\) samples, fit basis/order, numerical precision, and residual or uncertainty tables.
-- A complete independent check of every sign and normalization in the reduced \(k_\xi\) formula is blocked by the source's implicit orientation/Hodge conventions and omitted intermediate Noether-charge and presymplectic-potential expressions. The endpoint algebra and Komar geometry were checked instead.
+- Reproducing the numerical horizon-to-Kasner integrations, fitted derivatives, and quoted agreement is blocked by the absence of executable code, raw $(r_0,\phi_0)$ samples, fit basis/order, numerical precision, and residual or uncertainty tables.
+- A complete independent check of every sign and normalization in the reduced $k_\xi$ formula is blocked by the source's implicit orientation/Hodge conventions and omitted intermediate Noether-charge and presymplectic-potential expressions. The endpoint algebra and Komar geometry were checked instead.
 
 ## Failed
 
 - None in the independently checked algebraic targets.
 
-## Not independently verified
+## Not Independently Verified
 
-- The existence of a smooth three-parameter charged interior solution space with independent \((S,Q_e,\Sigma_{\rm K})\) is not established by the examples.
+- The existence of a smooth three-parameter charged interior solution space with independent $(S,Q_e,\Sigma_{\rm K})$ is not established by the examples.
 - Scalar-kinetic dominance, the absence of an intervening inner horizon, and the stability of the Kasner regime are assumptions on the class of solutions, not consequences of the first-law identity.
-- The proposed use of \(M_{\rm K}\) for interior phase structure and the extension to naked singularities remain research targets.
+- The proposed use of $M_{\rm K}$ for interior phase structure and the extension to naked singularities remain research targets.
 
-# Reusable takeaways
+# Reusable Takeaways
 
 - Keep the three layers separate: radial Iyer--Wald closure, endpoint response identity, and the chosen exact Kasner potential.
-- Use \(\Phi_{\rm H}-\Phi_{\rm K}\), not either potential separately, when comparing gauge conventions.
-- Preserve the nonstandard Maxwell charge normalization and the dimensionless nature of \(M_{\rm K}\).
-- For future checks, the most useful missing artifact is not another plot but the raw solution grid plus the map from near-horizon integration constants to \((F_0,H_0,c_1,\phi_{\rm K})\).
+- Use $\Phi_{\rm H}-\Phi_{\rm K}$, not either potential separately, when comparing gauge conventions.
+- Preserve the nonstandard Maxwell charge normalization and the dimensionless nature of $M_{\rm K}$.
+- For future checks, the most useful missing artifact is not another plot but the raw solution grid plus the map from near-horizon integration constants to $(F_0,H_0,c_1,\phi_{\rm K})$.

@@ -14,11 +14,11 @@ summary: "Fixed-null-structure WZ boost entropy and signed balance, with local m
 tags: []
 ---
 
-# Dynamical entropy and thermodynamics of causal diamonds
+# Dynamical Entropy and Thermodynamics of Causal Diamonds
 
 结论：这里可复用的是**指定 null boundary structure 与 Wald–Zoupas potential 后的 localized boost charge，以及它的 signed-flux balance**。它不是任意 diamond 上无条件的熵单调性定理，也没有把非平衡边界 charge 自动变成整个区域的 Hamiltonian。本文下面保留这些条件；公式取 $G=\hbar=c=k_B=1$。
 
-## Source map and how to read this long paper
+## Source Map and How to Read This Long Paper
 
 Source: [2610.22398v1](https://arxiv.org/abs/2610.22398v1), official PDF and TeX, read 2026-10-19. Abstract comments 写 40 pages，实际 PDF 为 59 pages；按 monograph mode 重建。TeX 用于符号和 label，PDF 第 22、50 页已渲染检查关键措辞与公式。
 
@@ -40,7 +40,7 @@ Source: [2610.22398v1](https://arxiv.org/abs/2610.22398v1), official PDF and TeX
 
 建议先读 II 的 potential/charge、III、IV A 和 App. B，再用 C1–C2 检验符号。IV C、VI、VII 是技术参考；V/App. D 的量子结论应最后读，保持 INEC、SSA 与余项条件。App. A 的 entanglement-equilibrium discussion 只是背景/一阶应用，不能替代本篇的非平衡 balance。
 
-## Fixed null structure and the WZ charge
+## Fixed Null Structure and the WZ Charge
 
 Signature $(-+++)$，$[\nabla_a,\nabla_b]V^c=R^c{}_{dab}V^d$。边界结构是 $[\ell^a,\kappa,\hat\ell_a]$；取固定代表与 affine parameter，$\kappa=0$、$\ell=\partial_v$。$\mathcal N^+$ 上 $v=0$ 是 diamond edge，$v$ 向 future tip 增大；辅助 null normal 满足 $n\cdot\ell=-1$。固定 generator、cut 和 $\delta\xi=0$ 是以下变分的必要约定。$q_{AB}$、$\theta$、$\sigma_{AB}$ 可变化，$\epsilon_3=dv\wedge\epsilon_2$。$\mathcal N^-$ 使用相应反向取向并在 edge 匹配 charge。
 
@@ -58,292 +58,260 @@ Signature $(-+++)$，$[\nabla_a,\nabla_b]V^c=R^c{}_{dab}V^d$。边界结构是 $
 
 由 $\delta L=E\delta\phi+d\theta$，
 
-$$
-\delta H_\xi=\int_C(\delta Q_\xi-i_\xi\theta),\qquad
-\delta(\delta H_\xi)=-\int_C i_\xi\omega.
-$$
+$$\begin{align}
+\delta H_\xi=\int_C(\delta Q_\xi-i_\xi\theta),\qquad \delta(\delta H_\xi)=-\int_C i_\xi\omega.
+\end{align}$$
 
 四维 Einstein gravity 选
 
-$$
-\rho=-\frac{\theta\epsilon_3}{8\pi},\quad
-Q_{\xi\,ab}=-\frac{1}{16\pi}\epsilon_{abcd}\nabla^c\xi^d,
-\quad
-\Theta=-\frac{\epsilon_3}{16\pi}(h_m{}^n\chi_n{}^m-h\theta),
-$$
+$$\begin{align}
+\rho=-\frac{\theta\epsilon_3}{8\pi},\quad Q_{\xi\,ab}=-\frac{1}{16\pi}\epsilon_{abcd}\nabla^c\xi^d, \quad \Theta=-\frac{\epsilon_3}{16\pi}(h_m{}^n\chi_n{}^m-h\theta),
+\end{align}$$
 
 其中 $h_{ab}=\delta g_{ab}$，$h$ 在固定 null structure 下是 transverse trace。于是
 
-$$
-q_\xi=\frac{\epsilon_2}{8\pi}
-\left(n_b\ell^a\nabla_a\xi^b-\theta\,\xi\cdot n\right),
-\qquad dq_\xi=\Theta(g;\mathcal L_\xi g)
-$$
+$$\begin{align}
+q_\xi=\frac{\epsilon_2}{8\pi} \left(n_b\ell^a\nabla_a\xi^b-\theta\,\xi\cdot n\right), \qquad dq_\xi=\Theta(g;\mathcal L_\xi g)
+\end{align}$$
 
 是 vacuum on-shell identity；matter 改为带 signed matter term 的 balance。此构造解决所选边界势下的 localized flux bookkeeping，未证明所有角点条件下的 charge algebra 或完整 reduced phase space。
 
 GNC 为 $ds^2=-Wdv^2-2du\,dv+q_{AB}(dx^A-W^Adv)(dx^B-W^Bdv)$，在 $u=0$ 上 $W=\partial_uW=W^A=0$。保持固定 affine structure 的 vector field 到所需阶为
 
-$$
-\xi=(\varsigma-v\beta)\partial_v+u\beta\partial_u+
-\big[X^A+u q^{AB}\partial_B(\varsigma-v\beta)\big]\partial_A.
-$$
+$$\begin{align}
+\xi=(\varsigma-v\beta)\partial_v+u\beta\partial_u+ \big[X^A+u q^{AB}\partial_B(\varsigma-v\beta)\big]\partial_A.
+\end{align}$$
 
 因此沿 generator 的 $f(v,x)$ 满足 $f''=0$；intrinsic algebra 是 $\mathrm{diff}(Z)\ltimes(\mathrm{Weyl}\ltimes\text{affine translations})$。固定 edge 令 $\varsigma=0$；常数 $\beta=-k_\beta$ 给 $\xi=k_\beta v\ell$。
 
-## Boost entropy and the exact balance
+## Boost Entropy and the Exact Balance
 
 把上述 boost 代入 cut charge：
 
-$$
-\mathcal Q_\xi[C]=-\frac{k_\beta}{2\pi}S[C],\qquad
-S[C]=\frac14\int_C a(1-v\theta)
-=\frac14\int_C(a-va').
-$$
+$$\begin{align}
+\mathcal Q_\xi[C]=-\frac{k_\beta}{2\pi}S[C],\qquad S[C]=\frac14\int_C a(1-v\theta) =\frac14\int_C(a-va').
+\end{align}$$
 
-edge 上 $S=A/4$。这既解释 expansion correction 的来源，也显示它不是额外指定的面积函数。对任意 ordered cuts $v_1(x)\leq v_2(x)$，cut pullback 的 $\epsilon_2$ 不产生 $\partial_Av_C$ 项。
+Edge 上 $S=A/4$。这既解释 expansion correction 的来源，也显示它不是额外指定的面积函数。对任意 ordered cuts $v_1(x)\leq v_2(x)$，cut pullback 的 $\epsilon_2$ 不产生 $\partial_Av_C$ 项。
 
 令 $c_d=(d-3)/(d-2)$，Raychaudhuri equation 为
 
-$$
-\theta'=-\frac{\theta^2}{d-2}-\sigma^2-8\pi T_{\ell\ell},\quad
-a''=a(c_d\theta^2-\sigma^2-8\pi T_{\ell\ell}),\quad
-(a-va')'=-va''.
-$$
+$$\begin{align}
+\theta'=-\frac{\theta^2}{d-2}-\sigma^2-8\pi T_{\ell\ell},\quad a''=a(c_d\theta^2-\sigma^2-8\pi T_{\ell\ell}),\quad (a-va')'=-va''.
+\end{align}$$
 
 由此得到本篇最可复用的式子：
 
-$$
+$$\begin{align}
 -\frac{k_\beta}{2\pi}\Delta S=\Delta E+F_g,
-$$
-$$
-\Delta E=-\int_{\Delta\mathcal N}k_\beta vT_{\ell\ell}\epsilon_3,
-\qquad F_g=-\int_{\Delta\mathcal N}\frac{k_\beta v}{8\pi}
-(\sigma^2-c_d\theta^2)\epsilon_3.
-$$
+\end{align}$$
+
+$$\begin{align}
+\Delta E=-\int_{\Delta\mathcal N}k_\beta vT_{\ell\ell}\epsilon_3, \qquad F_g=-\int_{\Delta\mathcal N}\frac{k_\beta v}{8\pi} (\sigma^2-c_d\theta^2)\epsilon_3.
+\end{align}$$
 
 负温度是 charge normalization 的后果；它不自行确定 $\Delta S$。若要求沿每条 generator 的所有子段都 nonincreasing，精确条件是
 
-$$
-\phi=-k_\beta v\left[T_{\ell\ell}+
-\frac{\sigma^2-c_d\theta^2}{8\pi}\right]\geq0,
-\quad\text{i.e.}\quad 8\pi T_{\ell\ell}+\sigma^2\leq c_d\theta^2.
-$$
+$$\begin{align}
+\phi=-k_\beta v\left[T_{\ell\ell}+ \frac{\sigma^2-c_d\theta^2}{8\pi}\right]\geq0, \quad\text{i.e.}\quad 8\pi T_{\ell\ell}+\sigma^2\leq c_d\theta^2.
+\end{align}$$
 
 NEC 本身不蕴涵这个上界。$d=3$ 时 $c_d=0$ 且 screen shear 为零，NEC 反而给 $S'\geq0$。若 regular tip 有 $a\sim c(V-v)^{d-2}$，则 $a-va'\sim(V-v)^{d-3}$，仅在 $d\geq4$ 推得 tip entropy 为零；这是 endpoint statement。
 
 **Failed — wording after Eq. (128), PDF p. 22.** 由端点结果推出 “always nonincreasing” 的句子过强，后文要求 local flux nonnegative 才是正确条件。局部检验取 $d=4$、$a=1-v^2$、$0<v<1$、$\sigma=0$、$T_{\ell\ell}=1/[4\pi(1-v^2)^2]>0$；Raychaudhuri residual 为零，而 $(a-va')'=2v>0$。这反驳 NEC 足以给局部单调性的推断；它不是满足所有 regular-corner 条件的 global diamond 反例，也不否定端点定理。
 
-## Physical-process variations: what survives without a Killing field
+## Physical-Process Variations: What Survives without a Killing Field
 
 在固定结构的 vacuum background 上加入 $\delta T$：
 
-$$
+$$\begin{align}
 -\frac{k_\beta}{2\pi}\Delta\delta S=\Delta\delta E+\delta F_g.
-$$
+\end{align}$$
 
 不需要 background Killing symmetry 的代价是保留 $\delta F_g$。设 $h=q^{AB}\delta q_{AB}$，$\delta a=ah/2$、$\delta\theta=h'/2$，则
 
-$$
+$$\begin{align}
 \delta S=\frac18\int a\,[h(1-v\theta)-vh'].
-$$
+\end{align}$$
 
 对 ordinary family $g(\lambda)$，$h_{ab}=\dot g_{ab}$，$\dot h=\mathrm{tr}(q^{-1}\ddot q)-h_{AB}h^{AB}$。二阶为
 
-$$
-\ddot S=\frac18\int a\left[
-(\dot h+h^2/2)(1-v\theta)-vhh'-v\dot h'\right].
-$$
+$$\begin{align}
+\ddot S=\frac18\int a\left[ (\dot h+h^2/2)(1-v\theta)-vhh'-v\dot h'\right].
+\end{align}$$
 
-metric inverse 与 area element 的 variation 都必须保留。尤其对 nonstationary background，family derivative 中
+Metric inverse 与 area element 的 variation 都必须保留。尤其对 nonstationary background，family derivative 中
 
-$$
-\frac{d}{d\lambda}\omega(g;h,\mathcal L_\xi g)
-=\dot{}_g\omega(g;h,\mathcal L_\xi g)
-+\omega(g;\ddot g,\mathcal L_\xi g)
-+\omega(g;h,\mathcal L_\xi h)
-$$
+$$\begin{align}
+\frac{d}{d\lambda}\omega(g;h,\mathcal L_\xi g) =\dot{}_g\omega(g;h,\mathcal L_\xi g) +\omega(g;\ddot g,\mathcal L_\xi g) +\omega(g;h,\mathcal L_\xi h)
+\end{align}$$
 
 的前三种贡献，加上 $d\,i_\xi\dot\Theta$，共同给完整二阶 flux；不能只保留 canonical-energy-looking 的最后一项。只有 Killing background 才去掉前两项。在 nonexpanding、shear-free vacuum background 且 $\dot\theta=0$ 的特殊情形，
 
-$$
+$$\begin{align}
 \ddot F_g=-\frac{k_\beta}{4\pi}\int v\,\dot\sigma^2\epsilon_3\leq0,
-$$
+\end{align}$$
 
 所以相应 $\ddot S$ 增加。higher-derivative extension 依赖存在满足所需条件的 boundary potential 和 charge entropy；本文没有给所有理论统一证明。
 
-## INEC and the indispensable remainder
+## INEC and the Indispensable Remainder
 
 Section V 在四维假设 improved QNEC，沿指定 null deformation，且采用一致 entropy renormalization：
 
-$$
-a\langle T_{\ell\ell}\rangle\geq\frac1{2\pi}
-\left(S_{\rm vn,diag}''-\frac\theta2 S_{\rm vn}'\right).
-$$
+$$\begin{align}
+a\langle T_{\ell\ell}\rangle\geq\frac1{2\pi} \left(S_{\rm vn,diag}''-\frac\theta2 S_{\rm vn}'\right).
+\end{align}$$
 
 把 diagonal variation 变成 uniform-cut second derivative，还需 nested regions 与 SSA 控制 off-diagonal kernel。相关 quantum-expansion/shear-free 条件不是一般 null surface 自动满足的。
 
 定义 $I=S_{\rm vn}''-\frac12\int\theta\,\delta S_{\rm vn}/\delta v$。从饱和 reference state 沿允许的单侧 perturbation 线性化时，记
 
-$$
-\mathcal R=2\pi\int a\,\delta T_{\ell\ell}-\delta I\geq0,
-\qquad (\delta S_q)'=-v\delta I.
-$$
+$$\begin{align}
+\mathcal R=2\pi\int a\,\delta T_{\ell\ell}-\delta I\geq0, \qquad (\delta S_q)'=-v\delta I.
+\end{align}$$
 
 若允许正负两侧任意 perturbation，饱和不等式的一阶项须为等式，不能一面允许双侧变化一面任意保留非零一阶 remainder。$S_q$ 是沿此 deformation path 定义到常数的量，不可直接识别成一般 cut 的 $S_{\rm vn}$。精确组合式是
 
-$$
--\frac{k_\beta}{2\pi}(\delta S+\delta S_q)'
-=\delta F_g'-\frac{k_\beta v}{2\pi}\mathcal R.
-$$
+$$\begin{align}
+-\frac{k_\beta}{2\pi}(\delta S+\delta S_q)' =\delta F_g'-\frac{k_\beta v}{2\pi}\mathcal R.
+\end{align}$$
 
 因此 decrease 需要 $\delta F_g'\geq k_\beta v\mathcal R/(2\pi)$，INEC 单独不够。在 stationary $\theta=0$ 情形，$S_q=S_{\rm vn}-vS_{\rm vn}'$，一阶 $\delta F_g'=0$，组合导数为 $v\mathcal R\geq0$。App. D 的 black-hole positive-temperature/GSL discussion 应按它自己的 horizon direction、reference saturation 与 entropy 条件读；不能搬成一般 diamond 的 $A/4+S_{\rm vn}$ GSL。
 
-## Spherical diamonds: CKV, affine boost and Smarr
+## Spherical Diamonds: CKV, Affine Boost and Smarr
 
 取 $F(r)=1-r^2/L^2$，$R=L\tanh(R_*/L)$，future cut $r_t=L\tanh[(R_*-t)/L]$，edge extrinsic curvature $K=(d-2)\sqrt{F(R)}/R$。diamond CKV 的非零分量为
 
-$$
-\zeta^t=\frac{kL^2}{R}\left[1-\frac{\sqrt{F(R)}}{\sqrt{F(r)}}\cosh(t/L)\right],
-\quad\zeta^r=-\frac{kLr}{R}\sqrt{F(R)F(r)}\sinh(t/L),
-$$
-$$
-\mathcal L_\zeta g=2\alpha g,\quad
-\alpha=-\frac{kL}{R}\sqrt{F(R)F(r)}\sinh(t/L),\quad
-\dot\alpha=-\frac{kK}{d-2}\cosh(t/L).
-$$
+$$\begin{align}
+\zeta^t=\frac{kL^2}{R}\left[1-\frac{\sqrt{F(R)}}{\sqrt{F(r)}}\cosh(t/L)\right], \quad\zeta^r=-\frac{kLr}{R}\sqrt{F(R)F(r)}\sinh(t/L),
+\end{align}$$
 
-dot on $\alpha$ denotes unit-normal derivative here. With $\ell=F^{-1}\partial_t-\partial_r$ and $v=R-r$, restriction to the future boundary gives
+$$\begin{align}
+\mathcal L_\zeta g=2\alpha g,\quad \alpha=-\frac{kL}{R}\sqrt{F(R)F(r)}\sinh(t/L),\quad \dot\alpha=-\frac{kK}{d-2}\cosh(t/L).
+\end{align}$$
 
-$$
+Dot on $\alpha$ denotes unit-normal derivative here. With $\ell=F^{-1}\partial_t-\partial_r$ and $v=R-r$, restriction to the future boundary gives
+
+$$\begin{align}
 \zeta|_{\mathcal N}=kv(1-v/R)\ell,\qquad\xi=kv\ell.
-$$
+\end{align}$$
 
 Thus $f_\zeta''=-2k/R$：CKV does not preserve the fixed affine structure used for $\xi$. Swapping the two generators loses both a charge difference and the WZ counterterm.
 
 The comparison-law current is
 
-$$
+$$\begin{align}
 \omega=\frac{d-2}{16\pi}\epsilon_a
 \{\alpha(\nabla^ah-\nabla_bh^{ab})+(h^{ab}-hg^{ab})\nabla_b\alpha\}.
-$$
+\end{align}$$
 
 On a generic $t$ slice its integral contains the volume term $-kK\cosh(t/L)\delta V/(8\pi)$, the $-(d-2)\int\alpha\theta$ potential term and $-(d-2)/(16\pi)\int u_ah^{ab}D_b\alpha\,dV$. Generic cuts retain both $\delta Q$ and $-i_\zeta\theta$. At the edge the comparison law reduces to
 
-$$
-\delta H_m+\frac{V_\zeta\delta\Lambda}{8\pi}
-=\frac{kK\delta V}{8\pi}-\frac{k\delta A}{8\pi}.
-$$
+$$\begin{align}
+\delta H_m+\frac{V_\zeta\delta\Lambda}{8\pi} =\frac{kK\delta V}{8\pi}-\frac{k\delta A}{8\pi}.
+\end{align}$$
 
 The boost form additionally retains $\int_C i_\xi\Theta$. Here $V$ is proper volume but $V_\zeta$ is lapse weighted; they cannot be interchanged. The source Smarr identity is
 
-$$
-(d-2)(k+\alpha_t)A_t=2\Lambda V_\zeta
--(d-1)(d-2)\int\dot\alpha\,dV,
-$$
-$$
-V_\zeta\big|_{t=0}=\frac{kL^2}{R}
-\left[\frac{\Omega_{d-2}R^{d-1}}{d-1}-\sqrt{F(R)}V\right].
-$$
+$$\begin{align}
+(d-2)(k+\alpha_t)A_t=2\Lambda V_\zeta -(d-1)(d-2)\int\dot\alpha\,dV,
+\end{align}$$
+
+$$\begin{align}
+V_\zeta\big|_{t=0}=\frac{kL^2}{R} \left[\frac{\Omega_{d-2}R^{d-1}}{d-1}-\sqrt{F(R)}V\right].
+\end{align}$$
 
 For a boost-based dynamical Smarr relation the extra integrated charge difference is
 
-$$
-\int_C(Q_\xi-Q_\zeta-i_\xi\rho)
-=-\frac{kA_t}{8\pi}\left[\frac vR+\frac{(d-2)v}{R-v}\right].
-$$
+$$\begin{align}
+\int_C(Q_\xi-Q_\zeta-i_\xi\rho) =-\frac{kA_t}{8\pi}\left[\frac vR+\frac{(d-2)v}{R-v}\right].
+\end{align}$$
 
 The spherical entropy is $S(v)=\frac{\Omega_{d-2}}4(R-v)^{d-3}[R+(d-3)v]$; in $d=4$, $S=\pi(R^2-v^2)$, while in $d=3$ it is constant. App. A checks the flat limit $V_\zeta=kRV/(d+1)$ and dS static patch $K=0$. Entanglement equilibrium there remains a first-order statement.
 
-## Einstein–scalar: keep the mixed metric variation
+## Einstein–Scalar: Keep the Mixed Metric Variation
 
 For $L=(R-(\nabla\Phi)^2-2U(\Phi))\epsilon/(16\pi)$,
 
-$$
-G_{ab}=\partial_a\Phi\partial_b\Phi-\tfrac12g_{ab}(\nabla\Phi)^2-g_{ab}U,
-\qquad\Box\Phi-U'=0,
-$$
-$$
-\theta_{ES}=\frac{\epsilon_a}{16\pi}
-(\nabla_bh^{ab}-\nabla^ah-2\nabla^a\Phi\,\delta\Phi),
-$$
-$$
-\omega_\Phi=-\frac1{8\pi}
-\left[\delta_1(\epsilon_a\nabla^a\Phi)\delta_2\Phi-(1\leftrightarrow2)\right].
-$$
+$$\begin{align}
+G_{ab}=\partial_a\Phi\partial_b\Phi-\tfrac12g_{ab}(\nabla\Phi)^2-g_{ab}U, \qquad\Box\Phi-U'=0,
+\end{align}$$
+
+$$\begin{align}
+\theta_{ES}=\frac{\epsilon_a}{16\pi} (\nabla_bh^{ab}-\nabla^ah-2\nabla^a\Phi\,\delta\Phi),
+\end{align}$$
+
+$$\begin{align}
+\omega_\Phi=-\frac1{8\pi} \left[\delta_1(\epsilon_a\nabla^a\Phi)\delta_2\Phi-(1\leftrightarrow2)\right].
+\end{align}$$
 
 The variation of $\epsilon_a\nabla^a\Phi$ includes metric terms. With the same $\rho$, the charge stays geometric, while in four dimensions
 
-$$
-\Theta_{ES}=-\frac{\epsilon_3}{16\pi}
-\left[(\sigma^{AB}-\tfrac12\theta q^{AB})h_{AB}+2(\ell\Phi)\delta\Phi\right],
-$$
-$$
-F_{ES}=-\int\frac{k_\beta v}{8\pi}
-\left[\sigma^2-\tfrac12\theta^2+(\ell\Phi)^2\right]\epsilon_3.
-$$
+$$\begin{align}
+\Theta_{ES}=-\frac{\epsilon_3}{16\pi} \left[(\sigma^{AB}-\tfrac12\theta q^{AB})h_{AB}+2(\ell\Phi)\delta\Phi\right],
+\end{align}$$
+
+$$\begin{align}
+F_{ES}=-\int\frac{k_\beta v}{8\pi} \left[\sigma^2-\tfrac12\theta^2+(\ell\Phi)^2\right]\epsilon_3.
+\end{align}$$
 
 Raychaudhuri has $R_{\ell\ell}=(\ell\Phi)^2$; count scalar matter once, either inside $F_{ES}$ or as its corresponding stress flux. A nonzero background scalar flux also varies the area factor. Constant $\Phi_0$ requires $U'(\Phi_0)=0$ and gives $\Lambda_{\rm eff}=U(\Phi_0)$; at fixed potential $\delta\Lambda_{\rm eff}=0$ at first order. If $\ell\Phi_0=0$, scalar flux starts at second order:
 
-$$
+$$\begin{align}
 \ddot F_\Phi=-\frac{k_\beta}{4\pi}\int v(\ell\delta\Phi)^2\epsilon_3.
-$$
+\end{align}$$
 
 App. E separately asks for symmetries preserving a prescribed scalar profile:
 
-$$
+$$\begin{align}
 (\varsigma-v\beta)\partial_v\Phi+X^A\partial_A\Phi=0.
-$$
+\end{align}$$
 
 For $\Phi=\Phi_0(x)$ this restricts $X\Phi_0=0$ only. For $\Phi=e^{a(x)v}\Phi_0(x)$ with $a\Phi_0\ne0$ it gives $\varsigma=-X\ln|\Phi_0|/a$ and $\beta=Xa/a$; at zeros keep the undivided equations. Locally this stabilizer can be described through $p=\ln|\Phi|$, but edge preservation still requires $\varsigma=0$. Allowing the scalar to fluctuate is different from imposing this stabilizer on every configuration. If the profile-dependent vector is recomputed across phase space, the bracket needs the field-dependent-generator correction; this note does not claim that algebra has been independently verified.
 
-## Appendix examples and regulator translation
+## Appendix Examples and Regulator Translation
 
 **C1, finite Minkowski diamond.** $t=v+u/2$, $r=R-v+u/2$ give $S=\pi(R^2-v^2)$ and $F=k_\beta(v_2^2-v_1^2)/2$. Nonzero flux here is an expansion contribution, not gravitational radiation.
 
 **C2, a thin NEC shell.** Write $\delta T_{\ell\ell}=\mu\delta(v-v_p)$, $r_p=R-v_p$, $r=R-v$, $\mu>0$. In the source's linearized solution,
 
-$$
-\delta a=8\pi\mu r_pr(r-r_p)\Theta(v-v_p),
-\quad\delta S=8\pi^2\mu r_p(Rv_p-v^2)\Theta(v-v_p),
-$$
-$$
-\delta E=-4\pi k_\beta\mu v_pr_p^2\Theta(v-v_p),\quad
-\delta F_g=4\pi k_\beta\mu r_p(v^2-v_p^2)\Theta(v-v_p).
-$$
+$$\begin{align}
+\delta a=8\pi\mu r_pr(r-r_p)\Theta(v-v_p), \quad\delta S=8\pi^2\mu r_p(Rv_p-v^2)\Theta(v-v_p),
+\end{align}$$
+
+$$\begin{align}
+\delta E=-4\pi k_\beta\mu v_pr_p^2\Theta(v-v_p),\quad \delta F_g=4\pi k_\beta\mu r_p(v^2-v_p^2)\Theta(v-v_p).
+\end{align}$$
 
 The area-derivative jump is $-8\pi\mu r_p^2$; the balance holds including the shell. The entropy perturbation changes sign at $v=\sqrt{Rv_p}$; the fixed-background linearization is nonuniform near the tip, so do not turn that limit into a nonlinear regular-corner conclusion.
 
 **C3–C4, Rindler and dS static patch.** $\theta=\sigma=0$ eliminates first-order geometric flux. In the paper's signed convention positive outward energy increases the associated entropy. The dS chart is
 
-$$
-ds^2=-\frac{2du\,dv}{(1-uv/2L^2)^2}
-+L^2\left(\frac{1+uv/2L^2}{1-uv/2L^2}\right)^2d\Omega^2.
-$$
+$$\begin{align}
+ds^2=-\frac{2du\,dv}{(1-uv/2L^2)^2} +L^2\left(\frac{1+uv/2L^2}{1-uv/2L^2}\right)^2d\Omega^2.
+\end{align}$$
 
 **C5, Poincaré AdS3 wedge.** Let $b=1-uv/L_{\rm AdS}^2$ and $D=L_{\rm AdS}b\cosh\eta+[(b+1)v-u]/2$. The embedding is
 
-$$
-t=\frac{R[(b+1)v+u]}{2D},\qquad
-x=\frac{RL_{\rm AdS}b\sinh\eta}{D},\qquad z=\frac{RL_{\rm AdS}}D.
-$$
+$$\begin{align}
+t=\frac{R[(b+1)v+u]}{2D},\qquad x=\frac{RL_{\rm AdS}b\sinh\eta}{D},\qquad z=\frac{RL_{\rm AdS}}D.
+\end{align}$$
 
 Pulling back $L_{\rm AdS}^2(-dt^2+dx^2+dz^2)/z^2$ gives
 
-$$
-ds^2=-2du\,dv-\frac{u^2}{L_{\rm AdS}^2}dv^2
-+L_{\rm AdS}^2b^2d\eta^2.
-$$
+$$\begin{align}
+ds^2=-2du\,dv-\frac{u^2}{L_{\rm AdS}^2}dv^2 +L_{\rm AdS}^2b^2d\eta^2.
+\end{align}$$
 
 PDF p. 50 Eq. (C51) prints an unbound $L^2$ in the last coefficient; the Jacobian fixes it to $L_{\rm AdS}^2$, consistent with Eq. (C60). On $u=0$, $q_{\eta\eta}=L_{\rm AdS}^2$, $\theta=0$, and $\xi=k(v\partial_v-u\partial_u)$ is Killing. A transported regulator with edge endpoints $\eta_{\max}=\operatorname{arcosh}(R/z_{\rm UV})$ gives
 
-$$
+$$\begin{align}
 S=\frac{L_{\rm AdS}}{2G}\operatorname{arcosh}(R/z_{\rm UV}),\qquad 0<z_{\rm UV}<R.
-$$
+\end{align}$$
 
 Keep $z_{\rm UV}$ explicit until the final limit. Transporting endpoint generators differs from imposing fixed Poincaré $z$ on each later cut. Later cuts are not generally extremal surfaces; the edge EE first law is not an EE interpretation of every cut. This also supplies no brick-wall/cone regulator equivalence or spectral partition function.
 
-## Equation ledger and derivation map
+## Equation Ledger and Derivation Map
 
 | Input | Intermediate equation | Reusable output / restriction |
 | --- | --- | --- |
@@ -358,7 +326,7 @@ Keep $z_{\rm UV}$ explicit until the final limit. Transporting endpoint generato
 
 For regional sewing the immediate object is the oriented triple $(\Theta,q_\xi,F_\xi)$ on a chosen interface, with matched normal/boost conventions on the two sides. The paper does not prove matching data suffice for state sewing or observable-algebra factorization. For AdS quantization the immediate object is the regulated C5 null chart and charge; it does not compute a one-particle trace or Fock partition function.
 
-## Verification log and exact boundaries
+## Verification Log and Exact Boundaries
 
 **Checked — Mathematica, independent algebra.** Entropy density derivative; Raychaudhuri-to-balance identity; first and ordinary second entropy variations; spherical entropy for general dimension; INEC rearrangement with $\mathcal R$; shell ODE away from the shell plus derivative jump and distributional balance; complete second variation of the algebraic flux density; spherical Smarr substitutions and boost/CKV charge correction; scalar-profile stabilizer equations. All reported residuals were zero. The NEC local witness residual and the full $3\times3$ AdS3 Jacobian metric residual were also zero.
 

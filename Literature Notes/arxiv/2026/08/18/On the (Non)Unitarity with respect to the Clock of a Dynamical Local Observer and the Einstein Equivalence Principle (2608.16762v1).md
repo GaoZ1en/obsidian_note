@@ -12,7 +12,7 @@ summary: "A relativistic clock-detector model is generally nonunitary in its int
 tags: []
 ---
 
-# Direct verdict
+# Direct Verdict
 
 **Correct under the following precise conditions:** on a fixed curved background, choose the positive-energy external constraint as the definition of the physical Hilbert space, assume the internal energy is small compared with the rest mass, and truncate the spacetime-derivative/adiabatic expansion. The resulting first-order equation in the observer's clock reading has a generally anti-Hermitian correction. Its observable effect requires internal--external entanglement and disappears in the ultrastatic decoupled case and at leading nonrelativistic order.
 
@@ -22,7 +22,7 @@ For dynamical gravity, the classical partially reduced construction is coherent:
 
 Relevance: **high** (`T1-symmetry`, `T1-symplectic`, `T2-model`).
 
-# Paper map
+# Paper Map
 
 1. A relativistic particle carries a semibounded clock and a matter detector on a prescribed curved background.
 2. Quantization from the external-time constraint gives ordinary unitary evolution in the external time.
@@ -31,100 +31,85 @@ Relevance: **high** (`T1-symmetry`, `T1-symplectic`, `T2-model`).
 5. With dynamical gravity, an observer-centric partial gauge fixing produces a Dirac-reduced phase space and a constraint linear in the clock Hamiltonian.
 6. The claimed quantum unitarity then follows only after assuming an anomaly-free quantization with a Hermitian generator.
 
-# Fixed-background model
+# Fixed-Background Model
 
 The observer has position $X^\mu$, momentum $P_\mu$, clock pair $(\alpha,H_{\mathrm C})$, and detector variables with Hamiltonian $H_{\mathrm D}$. Its effective mass is
 
-$$
-M_{\mathrm{eff}}=M+H_{\mathrm C}+H_{\mathrm D},
-\qquad
-\zeta:=\frac{H_{\mathrm C}+H_{\mathrm D}}{M}\ll1.
-$$
+$$\begin{align}
+M_{\mathrm{eff}}=M+H_{\mathrm C}+H_{\mathrm D}, \qquad \zeta:=\frac{H_{\mathrm C}+H_{\mathrm D}}{M}\ll1.
+\end{align}$$
 
 The quadratic mass-shell constraint is
 
-$$
+$$\begin{align}
 C^{\mathrm{KG}}=P^2+M_{\mathrm{eff}}^2.
-$$
+\end{align}$$
 
 Classically it can be factorized from either perspective. With
 
-$$
-\omega=\sqrt{|\mathbf P|_h^2+M_{\mathrm{eff}}^2},
-\qquad
-C^{\mathrm{ex}}_\pm=\mp\theta+\omega,
-$$
+$$\begin{align}
+\omega=\sqrt{|\mathbf P|_h^2+M_{\mathrm{eff}}^2}, \qquad C^{\mathrm{ex}}_\pm=\mp\theta+\omega,
+\end{align}$$
 
 the positive-energy external theory takes $C^{\mathrm{ex}}_+=0$. An internal factorization instead uses
 
-$$
-C^{\mathrm{in}}_\pm
-=M_{\mathrm{eff}}\mp\sqrt{-P^2},
-$$
+$$\begin{align}
+C^{\mathrm{in}}_\pm =M_{\mathrm{eff}}\mp\sqrt{-P^2},
+\end{align}$$
 
 which is linear in $H_{\mathrm C}$.
 
 At the quantum level the relevant factors do not generally commute. Defining
 
-$$
-\widehat\Delta_1=[\hat\theta,\hat\omega],
-\qquad
-\widehat\Delta_2=[\sqrt{-\hat P^2},\hat M_{\mathrm{eff}}],
-$$
+$$\begin{align}
+\widehat\Delta_1=[\hat\theta,\hat\omega], \qquad \widehat\Delta_2=[\sqrt{-\hat P^2},\hat M_{\mathrm{eff}}],
+\end{align}$$
 
 one has the ordered identities
 
-$$
-\hat C^{\mathrm{KG}}
-=\hat C^{\mathrm{ex}}_-\hat C^{\mathrm{ex}}_+-\widehat\Delta_1
-=\hat C^{\mathrm{in}}_-\hat C^{\mathrm{in}}_+-\widehat\Delta_2.
-$$
+$$\begin{align}
+\hat C^{\mathrm{KG}} =\hat C^{\mathrm{ex}}_-\hat C^{\mathrm{ex}}_+-\widehat\Delta_1 =\hat C^{\mathrm{in}}_-\hat C^{\mathrm{in}}_+-\widehat\Delta_2.
+\end{align}$$
 
 Thus the two linearized constraint choices no longer define obviously equivalent quantum theories. The paper keeps the external choice because it has a direct positive-energy interpretation and a self-adjoint external-time Hamiltonian.
 
-# External time versus internal time
+# External Time Versus Internal Time
 
 The physical condition
 
-$$
+$$\begin{align}
 \hat C^{\mathrm{ex}}_+\lVert\psi^{\mathrm{ex}}_{\mathrm{ph}}\rangle=0
-$$
+\end{align}$$
 
 becomes, in the external-time representation,
 
-$$
+$$\begin{align}
 \left(i\partial_T-\hat\omega(T)\right)
 |\psi^{\mathrm{ex}}_{\mathrm{ph}}(T)\rangle=0.
-$$
+\end{align}$$
 
 This is unitary provided the assumed external Hamiltonian is self-adjoint. The physical Hilbert space does not factor into independent internal and external sectors, but its group-averaged inner product is independent of $T$.
 
 The clock Hamiltonian has spectrum $\mathbb R_+$. Consequently the clock states
 
-$$
-|\alpha\rangle
-=\int_{\mathbb R_+}\frac{d\Omega}{2\pi}
-e^{-i\alpha\Omega}|\Omega\rangle
-$$
+$$\begin{align}
+|\alpha\rangle =\int_{\mathbb R_+}\frac{d\Omega}{2\pi} e^{-i\alpha\Omega}|\Omega\rangle
+\end{align}$$
 
 are nonorthogonal and resolve the identity as a POVM; the formal clock operator is symmetric rather than self-adjoint. Projecting the external physical state onto these clock states does not give an exact first-order equation because $\hat C^{\mathrm{ex}}_+$ is nonlinear in $H_{\mathrm C}$.
 
 After using $\zeta\ll1$ and a spacetime-derivative expansion, the paper obtains
 
-$$
+$$\begin{align}
 \left(i\partial_\alpha-\hat K\right)
 |\psi^{\mathrm{ex}}_{\mathrm{ph}}(\alpha)\rangle\simeq0,
-$$
+\end{align}$$
 
 with
 
-$$
-2[\hat K]_{\mathrm{AH}}
-\simeq
-\frac{[\hat\theta,\hat\omega_{\mathrm{rp}}]}{M}
-+\frac{[\hat\theta,\hat H_{\mathrm D,i}]}{\hat\omega_{\mathrm{rp}}}
-+\frac{[\hat P^2,\hat H_{\mathrm D,i}]}{2M^2}.
-$$
+$$\begin{align}
+2[\hat K]_{\mathrm{AH}} \simeq \frac{[\hat\theta,\hat\omega_{\mathrm{rp}}]}{M} +\frac{[\hat\theta,\hat H_{\mathrm D,i}]}{\hat\omega_{\mathrm{rp}}} +\frac{[\hat P^2,\hat H_{\mathrm D,i}]}{2M^2}.
+\end{align}$$
 
 Here $[A]_{\mathrm{AH}}=(A-A^\dagger)/2$. This formula is the paper's main fixed-background mechanism: operator dependence on the observer's spacetime position couples the clock/detector sector indirectly to its external motion.
 
@@ -134,7 +119,7 @@ The conclusion has three important boundaries:
 - it is formulated in the physical Hilbert space selected by the external constraint;
 - the anti-Hermitian term is absent in special decoupled limits, including an ultrastatic background with the detector interaction off.
 
-# Operational EEP criterion
+# Operational EEP Criterion
 
 With the detector reinterpreted as a local experiment, the paper asks whether its reduced state as a function of the clock reading depends on the observer's external quantum state. The correction to the reduced evolution is built from conditional expectations of $[K_o]_{\mathrm{AH}}$ on the external sector.
 
@@ -142,80 +127,64 @@ For a product state between the experiment and the external degrees of freedom, 
 
 There is also a local factor-of-two inconsistency. Equation (83) implies, after setting $H_{\mathrm D,i}=0$,
 
-$$
-[\hat K_o]_{\mathrm{AH}}
-\simeq\frac{[\hat\theta,\hat\omega_{\mathrm{rp}}]}{2M},
-$$
+$$\begin{align}
+[\hat K_o]_{\mathrm{AH}} \simeq\frac{[\hat\theta,\hat\omega_{\mathrm{rp}}]}{2M},
+\end{align}$$
 
 whereas equation (86) prints the same quantity with denominator $M$. The later EEP formulas that cite equation (86) therefore inherit an ambiguous overall coefficient, although the existence and state-dependence of the correction are unchanged.
 
-# Dynamical gravity and partial reduction
+# Dynamical Gravity and Partial Reduction
 
 For a closed ADM slice, the full constraints are
 
-$$
-\mathsf C^{\mathrm{diff}}[v,\mathbf v]
-=\mathsf C_\perp[v]+\mathsf C_\parallel[\mathbf v].
-$$
+$$\begin{align}
+\mathsf C^{\mathrm{diff}}[v,\mathbf v] =\mathsf C_\perp[v]+\mathsf C_\parallel[\mathbf v].
+\end{align}$$
 
 The observer contributions are
 
-$$
-\mathsf H_{\mathrm{obs}}
-=\sqrt{|\mathbf P|_{\mathsf h}^2+\mathsf M_{\mathrm{eff}}^2},
-\qquad
-\mathsf M_{\mathrm{eff}}
-=M+H_{\mathrm C}+H_{\mathrm D}.
-$$
+$$\begin{align}
+\mathsf H_{\mathrm{obs}} =\sqrt{|\mathbf P|_{\mathsf h}^2+\mathsf M_{\mathrm{eff}}^2}, \qquad \mathsf M_{\mathrm{eff}} =M+H_{\mathrm C}+H_{\mathrm D}.
+\end{align}$$
 
 The observer-centric gauge imposes
 
-$$
-\mathbf X=\mathbf x_{\mathrm{obs}},
-\qquad
-\mathbf P=0.
-$$
+$$\begin{align}
+\mathbf X=\mathbf x_{\mathrm{obs}}, \qquad \mathbf P=0.
+\end{align}$$
 
 The second equality is the consistency condition for the first. A finite set of gauge functions and matching combinations of diffeomorphism constraints forms a second-class set $\mathsf Z$. Its constraint matrix $\Upsilon$ defines the Dirac bracket on the partially reduced phase space.
 
 The remaining first-class constraints split as
 
-$$
-\mathsf C^{\mathrm{res}}
-=\{\mathsf C\}\oplus\mathsf C^\diamond,
-$$
+$$\begin{align}
+\mathsf C^{\mathrm{res}} =\{\mathsf C\}\oplus\mathsf C^\diamond,
+\end{align}$$
 
 where
 
-$$
-\mathsf C
-=M+H_{\mathrm C}+H_{\mathrm D}
-+\mathsf H_{\mathrm{g+m}}[n]
-$$
+$$\begin{align}
+\mathsf C =M+H_{\mathrm C}+H_{\mathrm D} +\mathsf H_{\mathrm{g+m}}[n]
+\end{align}$$
 
 is linear in $H_{\mathrm C}$ and is compatible, under the Dirac bracket, with the residual set $\mathsf C^\diamond$. Relational observables are obtained by group averaging along the flow of $\mathsf C$, with the additional requirement that their bare seeds commute weakly with $\mathsf C^\diamond$.
 
 This classical step is the strongest result in the gravity half of the paper. It makes clear why the square-root indirect interaction is removed after using the observer as a spatial reference point.
 
-# Conditional quantum-gravity step
+# Conditional Quantum-Gravity Step
 
 Quantization replaces the reduced constraints by operators satisfying an assumed closed algebra. The physical equations are
 
-$$
-\hat{\mathsf C}|\Psi_{\mathrm{ph}}\rangle=0,
-\qquad
-\hat{\mathsf C}^\diamond_r|\Psi_{\mathrm{ph}}\rangle=0.
-$$
+$$\begin{align}
+\hat{\mathsf C}|\Psi_{\mathrm{ph}}\rangle=0, \qquad \hat{\mathsf C}^\diamond_r|\Psi_{\mathrm{ph}}\rangle=0.
+\end{align}$$
 
 Projection onto a clock state then gives
 
-$$
+$$\begin{align}
 \left(i\partial_\alpha-\hat{\mathsf H}\right)
-|\Psi_{\mathrm{ph}}(\alpha)\rangle=0,
-\qquad
-\hat{\mathsf H}
-=M+\hat H_{\mathrm D}+\hat{\mathsf H}_{\mathrm{g+m}}[n].
-$$
+|\Psi_{\mathrm{ph}}(\alpha)\rangle=0, \qquad \hat{\mathsf H} =M+\hat H_{\mathrm D}+\hat{\mathsf H}_{\mathrm{g+m}}[n].
+\end{align}$$
 
 Unitarity follows if $\hat{\mathsf H}$ is Hermitian on a physical domain and the residual constraints remain compatible with this evolution. The paper explicitly assumes the needed diffeomorphism-preserving effective quantum theory. It also explicitly leaves open:
 
@@ -226,33 +195,33 @@ Unitarity follows if $\hat{\mathsf H}$ is Hermitian on a physical domain and the
 
 The resulting implication is therefore conditional:
 
-$$
+$$\begin{align}
 \text{anomaly-free reduced quantization + self-adjoint }\hat{\mathsf H}
 \Longrightarrow
 \text{internal-clock unitarity}.
-$$
+\end{align}$$
 
 It is not an independent construction of the premise.
 
-# Relation to current vault projects
+# Relation to Current Vault Projects
 
-## What transfers directly
+## What Transfers Directly
 
 - The observer-centric gauge is a concrete example of a partial reduction that turns a nonlinear clock dependence into a linear constraint.
 - The residual constraint $\mathsf C^\diamond$ is an important reminder that choosing a relational clock does not complete the spatial gauge reduction.
 - The group-averaged relational operators display a crossed-product-like structure while retaining an extra residual-constraint condition.
 - The paper gives a useful contrast between apparent internal-time nonunitarity on a fixed background and conditional unitarity after including gravitational gauge symmetry.
 
-## What does not transfer without new work
+## What Does Not Transfer without New Work
 
 - No covariant phase-space boundary term, corner symplectic form, or gluing Hamiltonian is constructed.
 - The ADM analysis assumes a spatially closed slice, so it does not directly address timelike AdS boundaries or Brown--Henneaux charges.
 - The quantum algebra is assumed rather than derived; it cannot establish the quantum completion of the vault's classical gluing theorems.
 - The point-observer gauge does not solve the moving-embedding or multi-observer compatibility problem.
 
-# Verification log
+# Verification Log
 
-## Source-derived
+## Source-Derived
 
 - Read the complete 32-page PDF and the complete 2,513-line TeX source, including the appendices on group averaging, dynamical matter, and the inverse constraint matrix.
 - Visually inspected the title/abstract, the fixed-background nonunitarity and EEP formulas, the partial reduction, the quantum-gravity construction, and the open-problem discussion on rendered PDF pages.
@@ -262,18 +231,15 @@ It is not an independent construction of the premise.
 
 Verified: direct noncommutative expansion gives
 
-$$
-(\theta+\omega)(-\theta+\omega)
-=C^{\mathrm{KG}}+[\theta,\omega],
-$$
+$$\begin{align}
+(\theta+\omega)(-\theta+\omega) =C^{\mathrm{KG}}+[\theta,\omega],
+\end{align}$$
 
 and
 
-$$
-(M_{\mathrm{eff}}+S)(M_{\mathrm{eff}}-S)
-=C^{\mathrm{KG}}+[S,M_{\mathrm{eff}}],
-\qquad S=\sqrt{-P^2},
-$$
+$$\begin{align}
+(M_{\mathrm{eff}}+S)(M_{\mathrm{eff}}-S) =C^{\mathrm{KG}}+[S,M_{\mathrm{eff}}], \qquad S=\sqrt{-P^2},
+\end{align}$$
 
 so the two ordered factorization identities have the signs printed in the paper.
 
@@ -287,9 +253,9 @@ Assumptions: $M>0$, $H_{\mathrm C}\geq0$, $H_{\mathrm D}\geq0$, $\zeta\ll1$, the
 
 Failed: equation (86) prints
 
-$$
+$$\begin{align}
 [K_o]_{\mathrm{AH}}\simeq[\theta,\omega_{\mathrm{rp}}]/M,
-$$
+\end{align}$$
 
 which differs by a factor of two from equation (83) under the stated specialization $H_{\mathrm D,i}=0$.
 
@@ -303,7 +269,7 @@ Blocked: no anomaly-free quantization or regulator for the reduced ADM constrain
 
 Blocked: no self-consistent solution including the observer's gravitational backreaction is constructed. The point-particle singularity and any covariant smearing remain open.
 
-## Not independently verified
+## Not Independently Verified
 
 Not verified: the full field-theoretic Dirac-bracket algebra for arbitrary residual smearings. Only the paper's finite block inverse formula was tested on an exact representative matrix.
 
@@ -311,6 +277,6 @@ Not verified: the functional-analytic self-adjointness of $\hat\omega$, $\hat{\m
 
 Not verified: empirical observability or universality of the proposed EEP correction.
 
-# Bottom line
+# Bottom Line
 
 The paper provides a useful classical partial-reduction mechanism and a carefully exposed fixed-background source of relational nonunitarity. Its strongest safe claim is conditional: a chosen external quantization produces approximate, entanglement-sensitive internal-time nonunitarity, while an anomaly-free diffeomorphism-preserving reduced quantization would restore unitary clock evolution. The source contains a factor-of-two error in the central fixed-background specialization, and it does not construct the quantum-gravity framework required by its positive conclusion.

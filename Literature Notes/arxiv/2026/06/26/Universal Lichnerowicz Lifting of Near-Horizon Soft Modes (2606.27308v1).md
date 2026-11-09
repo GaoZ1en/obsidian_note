@@ -17,7 +17,7 @@ Back to [[2026_06_26_overview]].
 
 This is a medium-priority technical note. Its value is spectral rather than charge-theoretic: it gives a reusable mechanism for near-horizon zero-mode lifting in one-loop determinant calculations.
 
-# Operator setup
+# Operator Setup
 
 The field is a metric fluctuation $h_{\mu\nu}$ around an extremal near-horizon background. The relevant gauge and sector are:
 
@@ -33,7 +33,7 @@ h^*_{\alpha\beta}\Delta_L^{\alpha\beta\mu\nu}h_{\mu\nu} =h^*_{\alpha\beta} \left
 
 The source argues that the relevant matter terms do not affect the small-temperature eigenvalue shift in this soft tensor sector.
 
-# Tensor zero modes from reparametrizations
+# Tensor Zero Modes from Reparametrizations
 
 On Euclidean $M_2$, the scalar generator obeys
 
@@ -61,7 +61,7 @@ h_{ab}^{(n)}=\bar\nabla_a\zeta_b+\bar\nabla_b\zeta_a.
 
 The $n=0,\pm1$ modes are excluded as $SL(2,\mathbb R)$ Killing modes, leaving the expected $\mathrm{Diff}(S^1)/SL(2,\mathbb R)$ soft sector.
 
-# Finite-temperature lifting
+# Finite-Temperature Lifting
 
 Small temperature deforms the metric and the operator:
 
@@ -85,7 +85,7 @@ where $r_i$ is the degenerate horizon radius and $\epsilon=+1,-1,0$ for AdS$_2$,
 
 The paper's key mechanism is that the local integrand depends on parent-geometry data such as derivatives of the blackening factor, but those details cancel after projection onto normalized tensor modes.
 
-# Rotating throats and angular projection
+# Rotating Throats and Angular Projection
 
 For warped rotating throats, angular data survive only through an average warp factor:
 
@@ -113,7 +113,7 @@ $$\begin{align}
 
 Thus rotation changes the projection normalization but not the radial soft-mode lifting mechanism.
 
-# Schwarzian matching
+# Schwarzian Matching
 
 The projected radial effective action becomes a boundary term:
 
@@ -133,7 +133,7 @@ $$\begin{align}
 \delta\lambda_n\propto \epsilon |n|T.
 \end{align}$$
 
-# Use for spectral projects
+# Use for Spectral Projects
 
 The reusable dictionary is:
 
@@ -152,6 +152,6 @@ $$\begin{align}
 
 only in the sector where the lifting calculation applies. The dS$_2$ branch has negative lifted eigenvalues and needs a contour or analytic-continuation prescription; the flat branch does not carry the same normalizable tensor soft sector.
 
-# Verification note
+# Verification Note
 
 The formulas above are source-derived from official arXiv HTML/PDF sources. The Lichnerowicz variation, normalization integrals, total-derivative reduction, and determinant contribution were not independently reproduced with Mathematica or xAct in this run.

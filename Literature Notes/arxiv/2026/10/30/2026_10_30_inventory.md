@@ -354,7 +354,7 @@ Total deduplicated entries: 342
 | [2610.35210](https://arxiv.org/abs/2610.35210) | math-ph:replacement | math-ph, physics.ao-ph, physics.flu-dyn | Instability of exact finite-amplitude acoustic-gravity waves | Christian Puntini | 4 figures |
 | [2610.35386](https://arxiv.org/abs/2610.35386) | gr-qc:replacement | gr-qc | Gravitational-Wave Signatures and Periodic Orbits of Charged Particles Around a Five-Dimensional Rotating Black Hole: Comparison with the Kerr Black Hole | Bahromjon Shokirov, Tursunali Xamidov, Chen Zhou, Sanjar Shaymatov, Chengxun Yuan | 18 pages, 12 captioned figures, 4 captioned tables |
 
-## Placement and metadata audit
+## Placement and Metadata Audit
 
 All 342 official IDs screened before queue freezing. Primary/case-sensitive cross categories and issue versions below come from the saved official listing batch, with seven missing versions pinned from official abstract history. Local tracking is the pre-queue full-vault frontmatter/filename snapshot. Technical work is restricted to H1–H3 and the ten overview sketches; deferred items and tracked updates remain metadata-only.
 

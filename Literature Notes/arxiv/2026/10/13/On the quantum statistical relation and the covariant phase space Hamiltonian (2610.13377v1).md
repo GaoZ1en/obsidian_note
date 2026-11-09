@@ -12,13 +12,13 @@ summary: Boundary and gauge completion produce a conditional CPS Hamiltonian; lo
 tags: []
 ---
 
-# Gauge completion of the CPS Hamiltonian
+# Gauge Completion of the CPS Hamiltonian
 
 The useful result is a boundary representative of the Hamiltonian once the variational problem and the allowed gauge transformations have both been fixed. It is conditional on the existence of compatible boundary data; it does not remove radiative flux on an unrestricted phase space. The source's final quantum statistical relation has the expected thermodynamic signs, but several intervening printed equations require repairs described below.
 
 **Source-derived:** the reconstruction follows [arXiv:2610.13377v1](https://arxiv.org/abs/2610.13377v1), the 42-page PDF and its TeX source. **Checked** below refers only to the explicit symbolic/form-algebra computations listed in the verification ledger. Reason codes: `T1-Wald-CPS`, `T1-charge`, `T1-boundary`.
 
-## Source map and reading route
+## Source Map and Reading Route
 
 | Source section | Pages | Role and dependence |
 |---|---|---|
@@ -40,14 +40,13 @@ The useful result is a boundary representative of the Hamiltonian once the varia
 
 **How to read this long paper:** read §2.2, §3 and Appendices A–B first; then §3.1.2 for the electric term and §3.1.3 for the nontrivial CS completion. Read §§4–5 with the corrected sign ledger. §2.1 and Appendix C are technical references; the introductory history and references are background. All technical sections and appendices are reconstructed here.
 
-## Fields, gradings and conventions
+## Fields, Gradings and Conventions
 
 The spacetime dimension is $d$. The physical fields are collectively $\varphi$; $d$ is the spacetime exterior derivative and $\delta$ is the field-space exterior derivative, with $[\delta,d]=0$. Variations are tangent to the on-shell space satisfying the selected boundary conditions. The source uses mostly-minus signature and
 
-$$
-de^a=\omega^a{}_b\wedge e^b,\qquad
-R^a{}_b=d\omega^a{}_b-\omega^a{}_c\wedge\omega^c{}_b.
-$$
+$$\begin{align}
+de^a=\omega^a{}_b\wedge e^b,\qquad R^a{}_b=d\omega^a{}_b-\omega^a{}_c\wedge\omega^c{}_b.
+\end{align}$$
 
 Thus an ordinary convention with $de^a+\omega_{\rm std}^a{}_b\wedge e^b=0$ has $\omega_{\rm src}=-\omega_{\rm std}$ and $R_{\rm src}=-R_{\rm std}$. The Hodge star and orientation must be translated as well; changing only the sign of the connection is insufficient to compare a full charge.
 
@@ -67,385 +66,331 @@ Thus an ordinary convention with $de^a+\omega_{\rm std}^a{}_b\wedge e^b=0$ has $
 
 The examples suppress the common gravitational normalization; restore $(16\pi G_d)^{-1}$ when comparing physical charges. The derivation takes $\delta\xi=0$. The compensator $\Lambda_\xi$ remains field dependent. If the horizon vector is written $k=\partial_t-\Omega\partial_\phi$, the source's rotational convention fixes the sign of $J$ accordingly; do not combine it with an independently chosen opposite convention.
 
-## Noether current, reducibility and the gauge lift
+## Noether Current, Reducibility and the Gauge Lift
 
 Start with the first variation, source (2.1),
 
-$$
+$$\begin{align}
 \delta L=E_\varphi\wedge\delta\varphi+d\Theta.
-$$
+\end{align}$$
 
 For a local transformation $\delta_\Lambda L=-d\Xi[\Lambda]$, integrations by parts give
 
-$$
-E_\varphi\wedge\delta_\Lambda\varphi
-=\Lambda^A N_A+dS[\Lambda;E_\varphi],\qquad N_A\equiv0,
-$$
+$$\begin{align}
+E_\varphi\wedge\delta_\Lambda\varphi =\Lambda^A N_A+dS[\Lambda;E_\varphi],\qquad N_A\equiv0,
+\end{align}$$
 
 so
 
-$$
-J[\Lambda]=\Theta(\varphi,\delta_\Lambda\varphi)+S[\Lambda;E_\varphi]+\Xi[\Lambda],
-\qquad dJ=0,\qquad J=dQ[\Lambda]
-$$
+$$\begin{align}
+J[\Lambda]=\Theta(\varphi,\delta_\Lambda\varphi)+S[\Lambda;E_\varphi]+\Xi[\Lambda], \qquad dJ=0,\qquad J=dQ[\Lambda]
+\end{align}$$
 
 locally. The last step invokes the relevant local Poincaré/cohomology statement. Off-shell closedness of the gauge current does not mean $dQ=0$. For reducibility parameters $\Lambda_K$, $\delta_{\Lambda_K}\varphi=0$ on the chosen solution, and $\Xi[\Lambda_K]\doteq dw_K$ gives the conserved form $K=-Q+w_K$.
 
 The source uses the compensated transformation
 
-$$
-\delta_\xi=-\mathcal L_\xi+\delta_{\Lambda_\xi},\qquad
-\Lambda_\xi=i_\xi A-P_\xi.
-$$
+$$\begin{align}
+\delta_\xi=-\mathcal L_\xi+\delta_{\Lambda_\xi},\qquad \Lambda_\xi=i_\xi A-P_\xi.
+\end{align}$$
 
 For an Abelian field,
 
-$$
-\delta_\xi A=-i_\xi F-dP_\xi;
-\qquad \delta_k A=0\ \Longrightarrow\ i_kF+dP_k=0.
-$$
+$$\begin{align}
+\delta_\xi A=-i_\xi F-dP_\xi; \qquad \delta_k A=0\ \Longrightarrow\ i_kF+dP_k=0.
+\end{align}$$
 
 For non-Abelian fields replace $dP$ by the covariant derivative. The Lorentz analogue is $P_k^{ab}=\nabla^a k^b=-P_k^{ba}$, with $i_kR^{ab}+\mathcal D P_k^{ab}=0$. The repeated $ab$ in the final minus term of printed (3.26) is a transposition typo.
 
 The diffeomorphism current and generalized Komar form are
 
-$$
-J[\xi]=\Theta(\delta_\xi\varphi)+S[\xi;E]+i_\xi L+\Xi[\Lambda_\xi]
-=dQ_{\rm NW}[\xi],
-$$
+$$\begin{align}
+J[\xi]=\Theta(\delta_\xi\varphi)+S[\xi;E]+i_\xi L+\Xi[\Lambda_\xi] =dQ_{\rm NW}[\xi],
+\end{align}$$
 
-$$
-dQ_{\rm NW}[k]\doteq i_kL+\Xi[\Lambda_k]=dw_k,
-\qquad K[k]=-Q_{\rm NW}[k]+w_k.
-$$
+$$\begin{align}
+dQ_{\rm NW}[k]\doteq i_kL+\Xi[\Lambda_k]=dw_k, \qquad K[k]=-Q_{\rm NW}[k]+w_k.
+\end{align}$$
 
 **Checked:** xAct canonical contraction reproduces the Abelian compensated Lie-derivative identity for arbitrary $A_a,k^a$; it is not a check that a global $P_k$ exists on every bundle.
 
-## Boundary action and the integrability calculation
+## Boundary Action and the Integrability Calculation
 
 The two inputs, source (2.26) and (2.28), are
 
-$$
-\left.(\Theta+\delta\ell)\right|_{\partial M}
-\doteq dD,\qquad
-\delta_\Lambda\ell-\Xi[\Lambda]=dR[\Lambda].
-$$
+$$\begin{align}
+\left.(\Theta+\delta\ell)\right|_{\partial M} \doteq dD,\qquad \delta_\Lambda\ell-\Xi[\Lambda]=dR[\Lambda].
+\end{align}$$
 
 The first is imposed only on allowed boundary variations. In a decomposition $\Theta=-\delta\ell+dD+F_{\partial}$, it requires the residual boundary flux one-form $F_{\partial}$ to vanish on those variations. The second makes $L+d\ell$ exactly invariant under the admitted infinitesimal gauge transformations. Neither is guaranteed for arbitrary boundary data, anomalous theories or global large transformations.
 
 Set
 
-$$
-\omega=\delta(\Theta+\delta\ell-dD)=\delta\Theta-d\delta D,
-\qquad \Omega_\Sigma=\int_\Sigma\omega,
-\qquad \Omega_\Sigma(\delta,\delta_\xi)=-\delta H[\xi].
-$$
+$$\begin{align}
+\omega=\delta(\Theta+\delta\ell-dD)=\delta\Theta-d\delta D, \qquad \Omega_\Sigma=\int_\Sigma\omega, \qquad \Omega_\Sigma(\delta,\delta_\xi)=-\delta H[\xi].
+\end{align}$$
 
 Bare $d\omega=0$ alone does not establish slice independence on a region with lateral boundary; the pullback flux must vanish. It does for this dressed current under the stated boundary equation.
 
 The field dependence of the compensator yields $[\delta,\delta_\xi]=\delta_{\delta\Lambda_\xi}$. Expanding the contraction in source order gives
 
-$$
+$$\begin{align}
 \omega_{\rm bare}(\delta,\delta_\xi)
 \doteq d\bigl(\delta Q_{\rm NW}[\xi]+i_\xi\Theta-C\bigr),
-$$
+\end{align}$$
 
 where the local correction obeys
 
-$$
-dC\doteq\delta\Xi[\Lambda_\xi]
-+\delta_{\Lambda_\xi}\Theta(\delta\varphi)
-+\Theta(\delta_{\delta\Lambda_\xi}\varphi).
-$$
+$$\begin{align}
+dC\doteq\delta\Xi[\Lambda_\xi] +\delta_{\Lambda_\xi}\Theta(\delta\varphi) +\Theta(\delta_{\delta\Lambda_\xi}\varphi).
+\end{align}$$
 
 This is the form-degree-consistent version of Appendix A, (A.3); the PDF omits $d$ on its right-hand side. Appendix A equates two expressions for $[\delta,\delta_{\Lambda_\xi}]L$, uses the gauge covariance of $E_\varphi\wedge\delta\varphi$, and obtains a closed form. Choosing a local primitive gives $C$. This is a local construction, with closed ambiguities still to be fixed.
 
 Adding the $D$ terms gives source (3.9b),
 
-$$
-W=\delta Q_{\rm NW}+i_\xi\Theta-C
-+\delta_\xi D(\delta\varphi)-\delta D(\delta_\xi\varphi)
-+D(\delta_{\delta\Lambda_\xi}\varphi).
-$$
+$$\begin{align}
+W=\delta Q_{\rm NW}+i_\xi\Theta-C +\delta_\xi D(\delta\varphi)-\delta D(\delta_\xi\varphi) +D(\delta_{\delta\Lambda_\xi}\varphi).
+\end{align}$$
 
 Cartan's formula leaves an additional $-d(i_\xi D)$ in the intermediate $W$; it can be omitted modulo spacetime exact forms on closed cuts. The two boundary equations imply Appendix B,
 
-$$
-C\doteq-\delta R[\Lambda_\xi]
-+\delta_{\Lambda_\xi}D(\delta\varphi)
-+D(\delta_{\delta\Lambda_\xi}\varphi),
-$$
+$$\begin{align}
+C\doteq-\delta R[\Lambda_\xi] +\delta_{\Lambda_\xi}D(\delta\varphi) +D(\delta_{\delta\Lambda_\xi}\varphi),
+\end{align}$$
 
 up to a fixed closed representative. Therefore
 
-$$
+$$\begin{align}
 W\simeq\delta\bigl(Q_{\rm NW}-i_\xi\ell-D(\delta_\xi\varphi)+R[\Lambda_\xi]\bigr),
-$$
+\end{align}$$
 
-$$
-\boxed{\boldsymbol H[\xi]=-Q_{\rm NW}[\xi]+i_\xi\ell
-+D(\delta_\xi\varphi)-R[\Lambda_\xi]},\qquad
-H[\xi]=\int_{\partial\Sigma}\boldsymbol H[\xi].
-$$
+$$\begin{align}
+\boxed{\boldsymbol H[\xi]=-Q_{\rm NW}[\xi]+i_\xi\ell +D(\delta_\xi\varphi)-R[\Lambda_\xi]},\qquad H[\xi]=\int_{\partial\Sigma}\boldsymbol H[\xi].
+\end{align}$$
 
 Here $\simeq$ allows the exact cut term just described. The $\omega_{\rm bare}$ label in printed (3.9a)/(3.12a) must denote the dressed current after the $D$ terms have been added. **Checked:** symbolic coefficient cancellation reproduces the displayed primitive. The admissibility of $\delta_\xi$ and its commutator with tangent variations is an assumption, not a consequence for arbitrary $\xi$.
 
 For an exact symmetry $\delta_k\varphi=0$, $D(\delta_k\varphi)=0$ and
 
-$$
-\boldsymbol H[k]=-Q_{\rm NW}[k]+i_k\ell-R[\Lambda_k],\qquad
-d\boldsymbol H[k]\doteq-i_k(L+d\ell).
-$$
+$$\begin{align}
+\boldsymbol H[k]=-Q_{\rm NW}[k]+i_k\ell-R[\Lambda_k],\qquad d\boldsymbol H[k]\doteq-i_k(L+d\ell).
+\end{align}$$
 
 The Hamiltonian surface form generally is not closed. If $i_k(L+d\ell)=dh$, then $\boldsymbol H+h$ is closed; printed (3.18) uses the wrong minus sign, giving $-2dh$. Defining a new closed form also does not prove it generates the same phase-space transformation.
 
-## GR and Maxwell: the concrete Dirichlet data
+## GR and Maxwell: the Concrete Dirichlet Data
 
 Write $\Sigma^{ab}=\star(e^a\wedge e^b)$. In the source convention,
 
-$$
-L_{\rm EH}=(-1)^{d-1}\Sigma^{ab}\wedge R_{ab},\qquad
-\Theta_{\rm EH}=-\Sigma^{ab}\wedge\delta\omega_{ab},
-$$
+$$\begin{align}
+L_{\rm EH}=(-1)^{d-1}\Sigma^{ab}\wedge R_{ab},\qquad \Theta_{\rm EH}=-\Sigma^{ab}\wedge\delta\omega_{ab},
+\end{align}$$
 
-$$
-Q_{\rm NW}[\xi]=(-1)^d\Sigma^{ab}P_{\xi ab},\qquad
-Q[\sigma]=(-1)^{d-1}\Sigma^{ab}\sigma_{ab}.
-$$
+$$\begin{align}
+Q_{\rm NW}[\xi]=(-1)^d\Sigma^{ab}P_{\xi ab},\qquad Q[\sigma]=(-1)^{d-1}\Sigma^{ab}\sigma_{ab}.
+\end{align}$$
 
 Dirichlet coframe data make the residual $\delta\Sigma$ term vanish after adding
 
-$$
-\ell_{\rm GHY}=\Sigma^{ab}\wedge\vartheta_{ab},\qquad
-\vartheta^{ab}=\omega^{ab}-\bar\omega^{ab}.
-$$
+$$\begin{align}
+\ell_{\rm GHY}=\Sigma^{ab}\wedge\vartheta_{ab},\qquad \vartheta^{ab}=\omega^{ab}-\bar\omega^{ab}.
+\end{align}$$
 
 Both connections must transform under the same Lorentz gauge transformation. The source chooses the lift normalization
 
-$$
+$$\begin{align}
 i_\xi\vartheta^{ab}=P_\xi^{ab}-\bar P_\xi^{ab}.
-$$
+\end{align}$$
 
 For $D=R=0$, contraction of the wedge product gives
 
-$$
-\boldsymbol H_D[\xi]
-=-(-1)^d\Sigma^{ab}\bar P_{\xi ab}
-+i_\xi\Sigma^{ab}\wedge\vartheta_{ab}.
-$$
+$$\begin{align}
+\boldsymbol H_D[\xi] =-(-1)^d\Sigma^{ab}\bar P_{\xi ab} +i_\xi\Sigma^{ab}\wedge\vartheta_{ab}.
+\end{align}$$
 
 Discarding the first term as a reference constant is justified only if its pullback is field-space constant on the chosen boundary-data space. Its variation is $-(-1)^d\delta\Sigma^{ab}\bar P_{\xi ab}$ for a fixed lift/background; this need not vanish on an enlarged phase space. It is not harmless merely because it is called a background term. Finiteness and background matching at infinity remain separate requirements.
 
 For Einstein–Maxwell,
 
-$$
-L=L_{\rm EH}+\frac{(-1)^d}{2}F\wedge\star F,\qquad
-E_A=-d\star F,\qquad
-\Theta=-\Sigma^{ab}\wedge\delta\omega_{ab}+\star F\wedge\delta A,
-$$
+$$\begin{align}
+L=L_{\rm EH}+\frac{(-1)^d}{2}F\wedge\star F,\qquad E_A=-d\star F,\qquad \Theta=-\Sigma^{ab}\wedge\delta\omega_{ab}+\star F\wedge\delta A,
+\end{align}$$
 
-$$
-Q[\Lambda]=(-1)^d\Lambda\star F,\qquad
-Q_{\rm NW}[\xi]=(-1)^d(\Sigma^{ab}P_{\xi ab}-P_\xi\star F).
-$$
+$$\begin{align}
+Q[\Lambda]=(-1)^d\Lambda\star F,\qquad Q_{\rm NW}[\xi]=(-1)^d(\Sigma^{ab}P_{\xi ab}-P_\xi\star F).
+\end{align}$$
 
 Fixing the pullback of $A$ requires no Maxwell boundary term. After the allowed gravitational reference normalization,
 
-$$
+$$\begin{align}
 \boldsymbol H_D[\xi]=i_\xi\Sigma^{ab}\wedge\vartheta_{ab}+(-1)^dP_\xi\star F.
-$$
+\end{align}$$
 
 This is the explicit reason the Hamiltonian of the compensated transformation contains electric work. An additive constant in $P$ must be fixed consistently at infinity and the horizon.
 
 For completeness the source defines the magnetic momentum map by $i_k\star F+d\widetilde P_k=0$ and gives
 
-$$
+$$\begin{align}
 w_k=\frac{(-1)^{d-1}}{d-2}(P_k\star F+\widetilde P_k\wedge F).
-$$
+\end{align}$$
 
 Together with its own $Q_{\rm NW}$ this implies
 
-$$
-K[k]=(-1)^d\left[-\Sigma^{ab}P_{kab}
-+\frac{d-3}{d-2}P_k\star F
--\frac1{d-2}\widetilde P_k\wedge F\right].
-$$
+$$\begin{align}
+K[k]=(-1)^d\left[-\Sigma^{ab}P_{kab} +\frac{d-3}{d-2}P_k\star F -\frac1{d-2}\widetilde P_k\wedge F\right].
+\end{align}$$
 
 Printed (3.41) has the opposite magnetic sign. **Checked:** subtracting the definition $-Q_{\rm NW}+w_k$ gives $2(-1)^d\widetilde P_k\wedge F/(d-2)$ for the printed result, and zero for the displayed repair. This is a consistency repair relative to (3.38)–(3.40), not an independent global magnetic-charge construction.
 
 **Checked:** xAct reproduces the EH metric Euler derivative $R_{ab}-\tfrac12g_{ab}R$, and independently verifies the fixed-metric Maxwell integration by parts,
 
-$$
--\tfrac12F^{ab}(\nabla_av_b-\nabla_bv_a)
-=(\nabla_aF^{ab})v_b-\nabla_a(F^{ab}v_b).
-$$
+$$\begin{align}
+-\tfrac12F^{ab}(\nabla_av_b-\nabla_bv_a) =(\nabla_aF^{ab})v_b-\nabla_a(F^{ab}v_b).
+\end{align}$$
 
 These checks establish the local variational ingredients, not a complete ADM-renormalization calculation in every asymptotic class.
 
-## Five-dimensional CS theory and transgression
+## Five-Dimensional CS Theory and Transgression
 
 The model in §3.1.3 is
 
-$$
-L=\Sigma^{ab}\wedge R_{ab}-\tfrac12F\wedge\star F+\gamma A\wedge F\wedge F,
-\qquad \gamma=3^{-3/2}\ \text{for minimal supergravity}.
-$$
+$$\begin{align}
+L=\Sigma^{ab}\wedge R_{ab}-\tfrac12F\wedge\star F+\gamma A\wedge F\wedge F, \qquad \gamma=3^{-3/2}\ \text{for minimal supergravity}.
+\end{align}$$
 
 For the original CS representative,
 
-$$
-E_A=-d\star F+3\gamma F\wedge F,\qquad
-\Theta_A=(\star F-2\gamma F\wedge A)\wedge\delta A,
-$$
+$$\begin{align}
+E_A=-d\star F+3\gamma F\wedge F,\qquad \Theta_A=(\star F-2\gamma F\wedge A)\wedge\delta A,
+\end{align}$$
 
-$$
-Q[\Lambda]=-\Lambda(\star F-3\gamma F\wedge A),\quad
-Q_{\rm NW}[\xi]=-\Sigma^{ab}P_{\xi ab}+P_\xi(\star F-2\gamma F\wedge A).
-$$
+$$\begin{align}
+Q[\Lambda]=-\Lambda(\star F-3\gamma F\wedge A),\quad Q_{\rm NW}[\xi]=-\Sigma^{ab}P_{\xi ab}+P_\xi(\star F-2\gamma F\wedge A).
+\end{align}$$
 
 The variation $\delta_\Lambda L=+d(\gamma\Lambda F\wedge F)$ means $\Xi=-\gamma\Lambda F\wedge F$ in the convention (2.3). The $+d\Xi$ identification in (3.44) changes convention without warning and cannot be substituted into the earlier general formulas unchanged.
 
 The source also records
 
-$$
-K[k]=\Sigma^{ab}P_{kab}+\tfrac13\widetilde P_k\wedge F-\tfrac23P_k\star F,
-\qquad d\widetilde P_k\doteq-i_k\star F+6\gamma P_kF.
-$$
+$$\begin{align}
+K[k]=\Sigma^{ab}P_{kab}+\tfrac13\widetilde P_k\wedge F-\tfrac23P_k\star F, \qquad d\widetilde P_k\doteq-i_k\star F+6\gamma P_kF.
+\end{align}$$
 
 The magnetic-potential equation is locally compatible with $d\star F=3\gamma F^2$ and $dP_k=-i_kF$: applying $d$ gives $i_kd\star F+6\gamma dP_k\wedge F=0$ on a stationary field. Its global primitive and full gravitational Komar evaluation are source-dependent.
 
 Introduce a connection $\bar A$ on the **same bundle**, $\bar F=d\bar A$, and $\vartheta=A-\bar A$. Then
 
-$$
-\mathcal Q(A,\bar A)
-=\vartheta\wedge(F^2+F\wedge\bar F+\bar F^2),
-$$
+$$\begin{align}
+\mathcal Q(A,\bar A) =\vartheta\wedge(F^2+F\wedge\bar F+\bar F^2),
+\end{align}$$
 
-$$
+$$\begin{align}
 d\mathcal Q=F^3-\bar F^3,
-$$
+\end{align}$$
 
-$$
-\mathcal Q=A\wedge F^2-\bar A\wedge\bar F^2
--d\bigl[A\wedge\bar A\wedge(F+\bar F)\bigr].
-$$
+$$\begin{align}
+\mathcal Q=A\wedge F^2-\bar A\wedge\bar F^2 -d\bigl[A\wedge\bar A\wedge(F+\bar F)\bigr].
+\end{align}$$
 
 The six-form identity is a formal characteristic-form identity; it vanishes by degree when restricted to a five-manifold. It does not replace the actual five-dimensional variation, which is
 
-$$
+$$\begin{align}
 \delta\mathcal Q=3F^2\wedge\delta A-3\bar F^2\wedge\delta\bar A+d\Theta_{\mathcal Q},
-$$
+\end{align}$$
 
-$$
-\Theta_{\mathcal Q}
-=-\vartheta\wedge(2F+\bar F)\wedge\delta A
--\vartheta\wedge(F+2\bar F)\wedge\delta\bar A.
-$$
+$$\begin{align}
+\Theta_{\mathcal Q} =-\vartheta\wedge(2F+\bar F)\wedge\delta A -\vartheta\wedge(F+2\bar F)\wedge\delta\bar A.
+\end{align}$$
 
 **Checked:** all three identities were independently expanded in a graded algebra with $A,\bar A,\delta A,\delta\bar A$ odd and $F,\bar F,d\delta A,d\delta\bar A$ even. Anticommutation, nilpotence and Leibniz self-tests passed before the final residuals were used.
 
 Using only transgression leaves the nondynamical variation coefficient $E_{\bar A}=-3\gamma\bar F^2$. To obtain a conserved background-subtracted electric current, the paper further subtracts the background Maxwell and EH Lagrangians, with the background itself satisfying the original equations:
 
-$$
+$$\begin{align}
 L_{\rm tr}=L_{\rm EM}(e,A)-L_{\rm EM}(\bar e,\bar A)+\gamma\mathcal Q.
-$$
+\end{align}$$
 
 The background Hodge operator uses $\bar e$, not $e$. The corrected background coefficient is
 
-$$
+$$\begin{align}
 E_{\bar A}=d(\bar\star\bar F)-3\gamma\bar F\wedge\bar F.
-$$
+\end{align}$$
 
 Printed (3.59a) omits $d$, subtracting a four-form from a three-form. The full potential is
 
-$$
-\begin{aligned}
-\Theta={}&-\Sigma^{ab}\wedge\delta\omega_{ab}
-+\bar\Sigma^{ab}\wedge\delta\bar\omega_{ab}\\
+$$\begin{aligned}
+\Theta={}&-\Sigma^{ab}\wedge\delta\omega_{ab} +\bar\Sigma^{ab}\wedge\delta\bar\omega_{ab}\\
 &+[\star F-\gamma\vartheta\wedge(2F+\bar F)]\wedge\delta A\\
 &-[\bar\star\bar F+\gamma\vartheta\wedge(2\bar F+F)]\wedge\delta\bar A.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Define
 
-$$
-\mathcal J=\star F-\bar\star\bar F-3\gamma\vartheta\wedge(F+\bar F),
-\qquad Q[\Lambda]=-\Lambda\mathcal J.
-$$
+$$\begin{align}
+\mathcal J=\star F-\bar\star\bar F-3\gamma\vartheta\wedge(F+\bar F), \qquad Q[\Lambda]=-\Lambda\mathcal J.
+\end{align}$$
 
 Its derivative is the physical-minus-background Maxwell equation,
 
-$$
+$$\begin{align}
 d\mathcal J=d\star F-d\bar\star\bar F-3\gamma(F^2-\bar F^2)\doteq0.
-$$
+\end{align}$$
 
 This current is invariant under simultaneous infinitesimal Abelian gauge transformations and vanishes on the reference solution. Both equations of motion are needed for conservation. An ordinary phase-space variation can keep the reference fixed, while an active gauge transformation must transform it together with the physical field.
 
 The unambiguous expression to use is source (3.64) followed by $\boldsymbol H=-Q_{\rm NW}+i_\xi\ell_{\rm GHY}$:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 Q_{\rm NW}={}&-\Sigma^{ab}P_{\xi ab}+\bar\Sigma^{ab}\bar P_{\xi ab}\\
 &+[\star F-\gamma\vartheta\wedge(2F+\bar F)]P_\xi\\
 &-[\bar\star\bar F+\gamma\vartheta\wedge(2\bar F+F)]\bar P_\xi.
-\end{aligned}
-$$
+\end{aligned}$$
 
 With $i_\xi\vartheta=P_\xi-\bar P_\xi$ and the analogous Lorentz relation, the **corrected** expansion is
 
-$$
-\begin{aligned}
-\boldsymbol H[\xi]={}&+(\Sigma^{ab}-\bar\Sigma^{ab})\bar P_{\xi ab}
-+i_\xi\Sigma^{ab}\wedge\vartheta_{ab}-P_\xi\mathcal J\\
+$$\begin{aligned}
+\boldsymbol H[\xi]={}&+(\Sigma^{ab}-\bar\Sigma^{ab})\bar P_{\xi ab} +i_\xi\Sigma^{ab}\wedge\vartheta_{ab}-P_\xi\mathcal J\\
 &-[\bar\star\bar F+\gamma\vartheta\wedge(2\bar F+F)]i_\xi\vartheta.
-\end{aligned}
-$$
+\end{aligned}$$
 
-The first sign is plus, whereas (3.65) prints minus. Since $\deg\Sigma=3$,
-$i_\xi(\Sigma\wedge\vartheta_{\rm L})=i_\xi\Sigma\wedge\vartheta_{\rm L}-\Sigma\,i_\xi\vartheta_{\rm L}$; substituting gives the repair directly. **Checked:** the printed residual is $2(\Sigma-\bar\Sigma)\bar P_\xi$ and the repaired residual vanishes. Dropping this term requires the fixed-boundary/reference condition already discussed. Calling it “$\delta$-exact” is not the needed criterion; the relevant property is vanishing variation.
+The first sign is plus, whereas (3.65) prints minus. Since $\deg\Sigma=3$, $i_\xi(\Sigma\wedge\vartheta_{\rm L})=i_\xi\Sigma\wedge\vartheta_{\rm L}-\Sigma\,i_\xi\vartheta_{\rm L}$; substituting gives the repair directly. **Checked:** the printed residual is $2(\Sigma-\bar\Sigma)\bar P_\xi$ and the repaired residual vanishes. Dropping this term requires the fixed-boundary/reference condition already discussed. Calling it “$\delta$-exact” is not the needed criterion; the relevant property is vanishing variation.
 
-## Thermal circle, horizon term and ensemble
+## Thermal Circle, Horizon Term and Ensemble
 
 For a top form $\omega_d$ and a non-null $k$,
 
-$$
+$$\begin{align}
 \omega_d=\frac{k^\flat}{k^2}\wedge i_k\omega_d.
-$$
+\end{align}$$
 
 Contracting the identically zero $(d+1)$-form $k^\flat\wedge\omega_d$ proves this identity. It fails as a literal expression where $k^2=0$. Section 4 therefore removes a small bolt neighbourhood $B_\epsilon$ before applying it. The omitted integral vanishes only if the completed density has a regular extension and the regulated volume tends to zero. Gauge invariance alone does not prove that extension for arbitrary bundles or singular references.
 
 For a stationary nonextremal saddle, compatible lift and thermal identification with $\beta=2\pi/\kappa$,
 
-$$
-I_E=-i\int_M(L+d\ell)
-=-\beta\int_{\Sigma_\epsilon}i_k(L+d\ell)
-=\beta\int_{\partial\Sigma_\epsilon}\boldsymbol H[k].
-$$
+$$\begin{align}
+I_E=-i\int_M(L+d\ell) =-\beta\int_{\Sigma_\epsilon}i_k(L+d\ell) =\beta\int_{\partial\Sigma_\epsilon}\boldsymbol H[k].
+\end{align}$$
 
 Taking the oriented boundary as infinity minus the bolt/horizon cut yields
 
-$$
+$$\begin{align}
 I_E=\beta\left(\int_{S_\infty}\boldsymbol H[k]-\int_{\mathcal H}\boldsymbol H[k]\right).
-$$
+\end{align}$$
 
 For rotation, $k^\flat/k^2$ need not define hypersurfaces globally: the thermal-orbit quotient and any section/patching need to be justified. A globally hypersurface-orthogonal $k$ is a sufficient special case. The source's “hypersurface normal to $k$” language is not a general construction for twisting stationary Killing fields.
 
 Dirichlet chemical potentials correspond to the grand-canonical ensemble. With a common electric-charge sign and reference,
 
-$$
-\int_{S_\infty}\boldsymbol H=M-\Omega J+\Phi_\infty Q,
-\quad
-\int_{\mathcal H}\boldsymbol H=TS+\Phi_HQ,
-\quad \mu=\Phi_H-\Phi_\infty,
-$$
+$$\begin{align}
+\int_{S_\infty}\boldsymbol H=M-\Omega J+\Phi_\infty Q, \quad \int_{\mathcal H}\boldsymbol H=TS+\Phi_HQ, \quad \mu=\Phi_H-\Phi_\infty,
+\end{align}$$
 
 so
 
-$$
-\boxed{I_E=\beta(M-\Omega J-\mu Q)-S},\qquad
-I_E\simeq-\log Z
-$$
+$$\begin{align}
+\boxed{I_E=\beta(M-\Omega J-\mu Q)-S},\qquad I_E\simeq-\log Z
+\end{align}$$
 
 at the saddle approximation. This is (5.7)/(5.11), not the printed (5.3)/(5.4). The electric momentum-map additive constant cancels in $\mu$ if the same shift is used at both cuts.
 
@@ -453,31 +398,29 @@ For the five-dimensional transgression example, $Q=-\int\mathcal J$ in the conve
 
 **Checked benchmark:** using standard four-dimensional RN variables $G>0$, $r_+>|q|$, $M=(r_+^2+q^2)/(2Gr_+)$, $T=(r_+^2-q^2)/(4\pi r_+^3)$, $S=\pi r_+^2/G$, $Q=q/G$ and $\Phi=q/r_+$, Mathematica gives both first-law coefficients zero and $I_E=\pi r_+^2/G$. At $q=0$ this is $\beta M/2$. This is an independent thermodynamic consistency benchmark, not an evaluation of the source's general transgression action on every five-dimensional black hole.
 
-## Exact ambiguities and local translation
+## Exact Ambiguities and Local Translation
 
 Appendix C shifts
 
-$$
+$$\begin{align}
 \Theta\to\Theta+dX,\quad\Xi\to\Xi+dY,\quad\ell\to\ell+dZ,
-$$
+\end{align}$$
 
-$$
-D\to D+\delta Z+X+dW,\quad
-R\to R+\delta_\Lambda Z-Y+dV,\quad
-Q_{\rm NW}\to Q_{\rm NW}+X(\delta_\xi\varphi)+Y+dU.
-$$
+$$\begin{align}
+D\to D+\delta Z+X+dW,\quad R\to R+\delta_\Lambda Z-Y+dV,\quad Q_{\rm NW}\to Q_{\rm NW}+X(\delta_\xi\varphi)+Y+dU.
+\end{align}$$
 
 Using $\delta_\xi Z=-\mathcal L_\xi Z+\delta_{\Lambda_\xi}Z$ gives
 
-$$
+$$\begin{align}
 \Delta\boldsymbol H=d[-U-i_\xi Z+W(\delta_\xi\varphi)-V].
-$$
+\end{align}$$
 
 **Checked:** all non-exact coefficients cancel. The integrated Hamiltonian is unchanged on a closed cut with globally defined representatives. At a cut with its own boundary, or with patch overlaps/large gauge transformations, this exact term can contribute. The source's inference $d(\delta_\Lambda\boldsymbol H)=0\Rightarrow\delta_\Lambda\boldsymbol H=d(\cdots)$ also requires a cohomological/normalization condition; closed is not globally exact.
 
 For the vault's regional action/CPS work, take the tuple $(L,\ell,D,R,\Lambda_\xi)$ as the reusable input. In positive-Lie-derivative conventions reverse the full lifted transformation and its generator sign together. Keep the field-space correction associated with $\delta\Lambda_\xi$; do not silently identify the moment map with a gauge-fixed $i_\xi A$. On two regions, match the boundary data and lifts before adding their oriented surface forms. This paper does not establish Hilbert-space or observable-algebra factorization, a general gluing theorem, or cancellation of all corner terms on arbitrary interfaces.
 
-## Equation and verification ledger
+## Equation and Verification Ledger
 
 The dependency chain is $(2.1),(2.3)\to(2.19)\to(2.26),(2.28)\to(3.8),\mathrm{A},\mathrm{B}\to(3.12b)\to(3.30),(3.42),(3.64)\to(4.10)\to(5.7)$. The CS branch additionally needs same-bundle transgression and both physical/background equations. Appendix C controls exact local representative changes.
 

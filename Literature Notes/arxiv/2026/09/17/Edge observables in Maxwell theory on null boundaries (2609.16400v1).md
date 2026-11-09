@@ -23,7 +23,7 @@ Daily overview: [[2026_09_17_overview]]
 
 The result is deliberately quasilocal. For the nonzero zero-mode source (W), the Minkowski and de Sitter configurations are not extended regularly through (r=0); the BTZ phase space is not extended to the AdS conformal boundary; and the horizon shift does not generally preserve the full bulk Hamilton equations. The paper therefore does **not** establish an extra global Maxwell gauge symmetry, a global edge sector of the complete spacetime, or a full covariant-phase-space sewing theorem.
 
-# How to read this long paper
+# How to Read This Long Paper
 
 - **Essential mechanism:** Sec. 2 from the momentum definition through the mixed charge bracket. This contains the null primary constraint, its radial zero mode, the two differentiable generators, and the central extension.
 - **Essential interpretation:** the mode algebra, matching/balance-law discussion, and the final three paragraphs of Sec. 5. These distinguish endpoint matching, time evolution, and an intrinsic boundary shift.
@@ -31,7 +31,7 @@ The result is deliberately quasilocal. For the nonzero zero-mode source (W), the
 - **Technical reference:** the detailed falloffs and the particular solution ($\\bar w$). These are needed when checking differentiability or attempting a gluing construction.
 - **Optional background:** the introductory comparison with three-dimensional Maxwell--scalar duality and prior soft-charge literature.
 
-# Complete source map
+# Complete Source Map
 
 | Source block | Purpose and output | Later dependency |
 |---|---|---|
@@ -50,26 +50,25 @@ The result is deliberately quasilocal. For the nonzero zero-mode source (W), the
 
 There are no technical appendices. The source consists of the five sections above plus the bibliography.
 
-# Theory, notation, and fixed assumptions
+# Theory, Notation, and Fixed Assumptions
 
 The probe field is Maxwell theory on a nondynamical background,
 
-$$
-I_{mathrm{EM}}=-\frac14\int \mathrm d^3x\,\sqrt{|g|}\,F_{\mu\nu}F^{\mu\nu},
-\qquad F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu.
-$$
+$$\begin{align}
+I_{mathrm{EM}}=-\frac14\int \mathrm d^3x\,\sqrt{|g|}\,F_{\mu\nu}F^{\mu\nu}, \qquad F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu.
+\end{align}$$
 
 The evolution coordinate is (u), and a null slice (Xi) has coordinates (x^i=(r,\varphi)). The sign (epsilon=+1) denotes retarded coordinates and (epsilon=-1) advanced coordinates. Canonical brackets use the coordinate measure,
 
-$$
+$$\begin{align}
 \{A_\mu(x),\pi^\nu(x')\}_{u=u'}=\delta_\mu^{\nu}\delta(r-r')\delta(\varphi-\varphi').
-$$
+\end{align}$$
 
 The common Eddington--Finkelstein form is
 
-$$
+$$\begin{align}
 \mathrm ds^2=-N^2(r)\,\mathrm du^2-2\epsilon\,\mathrm du\,\mathrm dr+r^2\mathrm d\varphi^2,
-$$
+\end{align}$$
 
 with (N^2=1) for Minkowski, (N^2=(r^2-r_+^2)/\ell^2) for static BTZ, and (N^2=1-r^2/\ell^2) for the de Sitter static patch. The background parameters (r_+), (M), and (ell) are fixed, not phase-space variables.
 
@@ -79,288 +78,233 @@ The three regional phase spaces are distinct:
 - (Gamma_H) is a near-BTZ-horizon phase space and excludes the AdS conformal boundary.
 - (Gamma_c) is a near-cosmological-horizon phase space and does not require regular continuation of the zero-mode sector to the static-patch origin.
 
-# Minkowski null infinity
+# Minkowski Null Infinity
 
-## Null Legendre transform and constraint kernel
+## Null Legendre Transform and Constraint Kernel
 
 The canonical momentum is
 
-$$
+$$\begin{align}
 \pi^\mu=-rF^{u\mu}.
-$$
+\end{align}$$
 
 Because (g^{uu}=0), only the radial velocity is invertible:
 
-$$
-\pi^r=r(\dot A_r-\partial_rA_u),
-\qquad
-\pi^u\approx0,
-\qquad
-\chi\equiv\pi^\varphi-\frac{\epsilon}{r}F_{r\varphi}\approx0.
-$$
+$$\begin{align}
+\pi^r=r(\dot A_r-\partial_rA_u), \qquad \pi^u\approx0, \qquad \chi\equiv\pi^\varphi-\frac{\epsilon}{r}F_{r\varphi}\approx0.
+\end{align}$$
 
 The secondary Gauss constraint is
 
-$$
+$$\begin{align}
 \psi=\nabla_i\pi^i=\partial_i\pi^i\approx0.
-$$
+\end{align}$$
 
 The characteristic information lies in the self-bracket of (chi):
 
-$$
-\{\chi(x),\chi(x')\}
-=\Omega(x,x')
-=\frac{\epsilon}{r^2}\delta^{(2)}(x-x')
--\frac{2\epsilon}{r}\partial_r\delta^{(2)}(x-x').
-$$
+$$\begin{align}
+\{\chi(x),\chi(x')\} =\Omega(x,x') =\frac{\epsilon}{r^2}\delta^{(2)}(x-x') -\frac{2\epsilon}{r}\partial_r\delta^{(2)}(x-x').
+\end{align}$$
 
 Acting on a smearing (v), the kernel is
 
-$$
-\int\mathrm d^2x'\,\Omega(x,x')v(x')
-=-\frac{2\epsilon}{\sqrt r}\partial_r\!\left(\frac{v}{\sqrt r}\right).
-$$
+$$\begin{align}
+\int\mathrm d^2x'\,\Omega(x,x')v(x') =-\frac{2\epsilon}{\sqrt r}\partial_r\!\left(\frac{v}{\sqrt r}\right).
+\end{align}$$
 
 Hence its radial zero modes are exactly
 
-$$
+$$\begin{align}
 v(x)=\sqrt r\,V(u,\varphi).
-$$
+\end{align}$$
 
 The primary constraint (chi) therefore has a first-class zero-mode sector and a second-class nonzero-mode sector. The paper retains the former instead of removing it by boundary conditions.
 
-## Radiative phase space and Hamiltonian differentiability
+## Radiative Phase Space and Hamiltonian Differentiability
 
 The large-(r) data are chosen as
 
-$$
-\begin{aligned}
-A_u&=\sqrt r\,A_{(0)u}+O(r^{-1/2}),
-&A_r&=r^{-1/2}A_{(1)r}+O(r^{-3/2}),\\
-A_\varphi&=\sqrt r\,A_{(0)\varphi}+O(r^{-1/2}),
-&\pi^r&=r^{-1/2}\pi^r_{(1)}+O(r^{-3/2}),\\
-\pi^\varphi&=r^{-3/2}\pi^\varphi_{(2)}+O(r^{-5/2}),
-&w&=\sqrt r\,w_{(0)}+O(r^{-1/2}).
-\end{aligned}
-$$
+$$\begin{aligned}
+A_u&=\sqrt r\,A_{(0)u}+O(r^{-1/2}), &A_r&=r^{-1/2}A_{(1)r}+O(r^{-3/2}),\\
+A_\varphi&=\sqrt r\,A_{(0)\varphi}+O(r^{-1/2}), &\pi^r&=r^{-1/2}\pi^r_{(1)}+O(r^{-3/2}),\\
+\pi^\varphi&=r^{-3/2}\pi^\varphi_{(2)}+O(r^{-5/2}), &w&=\sqrt r\,w_{(0)}+O(r^{-1/2}).
+\end{aligned}$$
 
 The total Hamiltonian contains the smeared primary constraint (S[w]=\int_\Xi w\chi). Preservation of (chi) determines
 
-$$
+$$\begin{align}
 w=\sqrt r\,W(u,\varphi)+\bar w,
-$$
+\end{align}$$
 
 where ($\\bar w=O(r^{-1/2})$) is fixed by the canonical fields. The free $W$ is the same characteristic zero mode that later acts as a boundary source.
 
 Fixing (A_u) at the boundary removes the Gauss-sector boundary variation,
 
-$$
+$$\begin{align}
 \delta A_{(0)u}=0,
-$$
+\end{align}$$
 
 but (S[w]) still varies by (-\epsilon\oint w_{(0)}\delta A_{(0)\varphi}). It is repaired by
 
-$$
+$$\begin{align}
 Q_S[w]=\oint_{S^1_\infty}\mathrm d\varphi\,\frac{\epsilon}{r}wA_\varphi.
-$$
+\end{align}$$
 
 This is already the first indication that the boundary value of (A_\varphi) is a released port variable rather than fixed Dirichlet data.
 
-## Two differentiable generators
+## Two Differentiable Generators
 
 The ordinary (U(1)) generator is
 
-$$
-G_Q[\varepsilon]
-=\int_\Xi\mathrm d^2x\,(\varepsilon\psi-\dot\varepsilon\pi^u)
-+Q[\varepsilon],
-\qquad
-Q[\varepsilon]=-\oint_{S^1_\infty}\mathrm d\varphi\,\varepsilon\pi^r.
-$$
+$$\begin{align}
+G_Q[\varepsilon] =\int_\Xi\mathrm d^2x\,(\varepsilon\psi-\dot\varepsilon\pi^u) +Q[\varepsilon], \qquad Q[\varepsilon]=-\oint_{S^1_\infty}\mathrm d\varphi\,\varepsilon\pi^r.
+\end{align}$$
 
 Finiteness requires
 
-$$
-\varepsilon=\sqrt r\,\varepsilon_{(0)}(\varphi)+O(r^{-1/2}),
-\qquad \dot\varepsilon_{(0)}=0.
-$$
+$$\begin{align}
+\varepsilon=\sqrt r\,\varepsilon_{(0)}(\varphi)+O(r^{-1/2}), \qquad \dot\varepsilon_{(0)}=0.
+\end{align}$$
 
 It generates the bulk gauge transformation (delta_\varepsilon A_\mu=-\partial_\mu\varepsilon).
 
 The zero-mode generator is
 
-$$
-G_S[\eta]=\int_\Xi\mathrm d^2x\,\eta\chi+Q_S[\eta],
-\qquad
-\eta=\sqrt r\,\eta_{(0)}(\varphi),
-$$
+$$\begin{align}
+G_S[\eta]=\int_\Xi\mathrm d^2x\,\eta\chi+Q_S[\eta], \qquad \eta=\sqrt r\,\eta_{(0)}(\varphi),
+\end{align}$$
 
 with
 
-$$
-Q_S[\eta]
-=\epsilon\oint_{S^1_\infty}\mathrm d\varphi\,
-\eta_{(0)}A_{(0)\varphi}.
-$$
+$$\begin{align}
+Q_S[\eta] =\epsilon\oint_{S^1_\infty}\mathrm d\varphi\, \eta_{(0)}A_{(0)\varphi}.
+\end{align}$$
 
 Its nonzero canonical action is
 
-$$
-\delta_\eta A_\varphi=\eta,
-\qquad
-\delta_\eta\pi^r=\frac{\epsilon}{r}\partial_\varphi\eta,
-\qquad
-\delta_\eta\pi^\varphi=-\epsilon\partial_r\!\left(\frac\eta r\right).
-$$
+$$\begin{align}
+\delta_\eta A_\varphi=\eta, \qquad \delta_\eta\pi^r=\frac{\epsilon}{r}\partial_\varphi\eta, \qquad \delta_\eta\pi^\varphi=-\epsilon\partial_r\!\left(\frac\eta r\right).
+\end{align}$$
 
 This is not a residual bulk (U(1)) transformation. It is an intrinsic canonical transformation of the selected boundary phase space. Its exact radial truncation is essential: a generic local smearing of (chi) would also include the second-class sector.
 
-## Central extension and mode algebra
+## Central Extension and Mode Algebra
 
 Each sector is Abelian, but the mixed bracket is
 
-$$
-\{Q[\varepsilon],Q_S[\eta]\}^*
-=C[\varepsilon,\eta]
-=-\epsilon\oint_{S^1_\infty}\mathrm d\varphi\,
-\varepsilon_{(0)}\partial_\varphi\eta_{(0)}.
-$$
+$$\begin{align}
+\{Q[\varepsilon],Q_S[\eta]\}^* =C[\varepsilon,\eta] =-\epsilon\oint_{S^1_\infty}\mathrm d\varphi\, \varepsilon_{(0)}\partial_\varphi\eta_{(0)}.
+\end{align}$$
 
 With Fourier modes (Q_n=-2\pi\pi_n), (S_n=2\pi\epsilon A_n), and (kappa=4\pi),
 
-$$
+$$\begin{align}
 \{S_n,Q_m\}^*=\frac{i\epsilon}{2}m\kappa\,\delta_{n+m,0}.
-$$
+\end{align}$$
 
 The combinations
 
-$$
+$$\begin{align}
 Q_n^\pm=Q_n\mp S_n
-$$
+\end{align}$$
 
 then obey
 
-$$
-\{Q_n^\pm,Q_m^\pm\}^*
-=\pm i\epsilon n\kappa\,\delta_{n+m,0},
-\qquad
-\{Q_n^+,Q_m^-\}^*=0.
-$$
+$$\begin{align}
+\{Q_n^\pm,Q_m^\pm\}^* =\pm i\epsilon n\kappa\,\delta_{n+m,0}, \qquad \{Q_n^+,Q_m^-\}^*=0.
+\end{align}$$
 
 Thus the boundary algebra is two commuting Abelian Kac--Moody algebras with opposite levels. The constant shift mode is proportional to the holonomy of the leading boundary connection (A_{(0)}); it is the finite leading coefficient of a bulk magnetic flux that diverges under these radiative falloffs.
 
-## Endpoint matching is not cut conservation
+## Endpoint Matching Is Not Cut Conservation
 
 Antipodal matching relates endpoint data at (mathscr I_-^+) and (mathscr I_+^-). Within one null patch the source (W) drives the electric modes:
 
-$$
-\dot Q[\varepsilon]=C[\varepsilon,W],
-\qquad
-\dot Q_n=-\frac{i\epsilon}{2}n\kappa W_n.
-$$
+$$\begin{align}
+\dot Q[\varepsilon]=C[\varepsilon,W], \qquad \dot Q_n=-\frac{i\epsilon}{2}n\kappa W_n.
+\end{align}$$
 
 Only (Q_0) is conserved for arbitrary (W). The shift observable satisfies
 
-$$
-\dot Q_S[\eta]
-=\epsilon\oint\mathrm d\varphi\,\eta_{(0)}
-\bigl(\partial_\varphi A_{(0)u}+W\bigr),
-$$
+$$\begin{align}
+\dot Q_S[\eta] =\epsilon\oint\mathrm d\varphi\,\eta_{(0)} \bigl(\partial_\varphi A_{(0)u}+W\bigr),
+\end{align}$$
 
 so it is likewise not generically conserved by the full bulk Hamiltonian.
 
-# BTZ horizon
+# BTZ Horizon
 
 For static BTZ,
 
-$$
-N^2=\frac{r^2-r_+^2}{\ell^2},
-\qquad r_+=\ell\sqrt M.
-$$
+$$\begin{align}
+N^2=\frac{r^2-r_+^2}{\ell^2}, \qquad r_+=\ell\sqrt M.
+\end{align}$$
 
 The momenta, constraints, and kernel (Omega) are unchanged. The only altered Hamilton equation is
 
-$$
+$$\begin{align}
 \dot A_\varphi=rN^2\pi^\varphi+\partial_\varphi A_u+w.
-$$
+\end{align}$$
 
-Regular fields are expanded in (ho=r-r_+). The horizon is an inner boundary of the exterior region, and the authors restrict to a near-horizon phase space because (W\ne0) is not compatible with generic AdS-boundary falloffs.
+Regular fields are expanded in ( ho=r-r_+). The horizon is an inner boundary of the exterior region, and the authors restrict to a near-horizon phase space because (W\ne0) is not compatible with generic AdS-boundary falloffs.
 
 The two horizon charges are
 
-$$
-Q[\varepsilon]
-=\oint_{S^1_+}\mathrm d\varphi\,
-\varepsilon_{+(0)}\pi^r_{+(0)},
-$$
+$$\begin{align}
+Q[\varepsilon] =\oint_{S^1_+}\mathrm d\varphi\, \varepsilon_{+(0)}\pi^r_{+(0)},
+\end{align}$$
 
-$$
-Q_S[\eta]
-=-\frac{\epsilon}{\sqrt{r_+}}
-\oint_{S^1_+}\mathrm d\varphi\,
-\eta_{+(0)}A_{+(0)\varphi}.
-$$
+$$\begin{align}
+Q_S[\eta] =-\frac{\epsilon}{\sqrt{r_+}} \oint_{S^1_+}\mathrm d\varphi\, \eta_{+(0)}A_{+(0)\varphi}.
+\end{align}$$
 
 Their mixed central term is
 
-$$
-C_+[\varepsilon,\eta]
-=\frac{\epsilon}{\sqrt{r_+}}
-\oint_{S^1_+}\mathrm d\varphi\,
-\varepsilon_{+(0)}\partial_\varphi\eta_{+(0)}.
-$$
+$$\begin{align}
+C_+[\varepsilon,\eta] =\frac{\epsilon}{\sqrt{r_+}} \oint_{S^1_+}\mathrm d\varphi\, \varepsilon_{+(0)}\partial_\varphi\eta_{+(0)}.
+\end{align}$$
 
 The sign relative to null infinity comes from the inner-boundary orientation, including the induced boundary symplectic orientation. The mode level is
 
-$$
+$$\begin{align}
 \kappa_+=\frac{4\pi}{\sqrt{r_+}}=4\pi(\ell^2M)^{-1/4}.
-$$
+\end{align}$$
 
 The shift preserves the near-horizon falloffs but not generally the full bulk Hamilton equations; transverse derivatives provide the obstruction. This is the sharpest reason to call it a horizon-intrinsic rather than bulk symmetry.
 
-# De Sitter cosmological horizon
+# De Sitter Cosmological Horizon
 
 For the static patch,
 
-$$
-N^2=1-\frac{r^2}{\ell^2},
-\qquad r_c=\ell,
-\qquad \rho=r_c-r.
-$$
+$$\begin{align}
+N^2=1-\frac{r^2}{\ell^2}, \qquad r_c=\ell, \qquad \rho=r_c-r.
+\end{align}$$
 
 The cosmological horizon is an outer boundary. The local Hamiltonian and constraint analysis again agrees with the BTZ calculation. The charges are
 
-$$
-Q[\varepsilon]
-=-\oint_{S^1_c}\mathrm d\varphi\,
-\varepsilon_{c(0)}\pi^r_{c(0)},
-$$
+$$\begin{align}
+Q[\varepsilon] =-\oint_{S^1_c}\mathrm d\varphi\, \varepsilon_{c(0)}\pi^r_{c(0)},
+\end{align}$$
 
-$$
-Q_S[\eta]
-=\frac{\epsilon}{\sqrt\ell}
-\oint_{S^1_c}\mathrm d\varphi\,
-\eta_{c(0)}A_{c(0)\varphi},
-$$
+$$\begin{align}
+Q_S[\eta] =\frac{\epsilon}{\sqrt\ell} \oint_{S^1_c}\mathrm d\varphi\, \eta_{c(0)}A_{c(0)\varphi},
+\end{align}$$
 
 and
 
-$$
-C_c[\varepsilon,\eta]
-=-\frac{\epsilon}{\sqrt\ell}
-\oint_{S^1_c}\mathrm d\varphi\,
-\varepsilon_{c(0)}\partial_\varphi\eta_{c(0)}.
-$$
+$$\begin{align}
+C_c[\varepsilon,\eta] =-\frac{\epsilon}{\sqrt\ell} \oint_{S^1_c}\mathrm d\varphi\, \varepsilon_{c(0)}\partial_\varphi\eta_{c(0)}.
+\end{align}$$
 
 The two diagonal currents have levels
 
-$$
+$$\begin{align}
 \kappa_c=\frac{4\pi}{\sqrt\ell}.
-$$
+\end{align}$$
 
 The (r=0) endpoint is geometrically regular, but the retained (W\ne0) sector is not regular there. The construction is consequently a horizon patch, not a global static-patch solution space.
 
-# Global notation dictionary
+# Global Notation Dictionary
 
 | Symbol | Meaning |
 |---|---|
@@ -377,7 +321,7 @@ The (r=0) endpoint is geometrically regular, but the retained (W\ne0) sector is 
 | (Q_n^\pm) | Linear combinations (Q_n\mp S_n) diagonalizing the mixed central bracket. |
 | (Gamma_\infty,Gamma_H,Gamma_c) | Restricted phase spaces at null infinity, the BTZ horizon, and the dS horizon. |
 
-# Equation ledger and derivation map
+# Equation Ledger and Derivation Map
 
 | Target | Inputs | Derivation step | Status |
 |---|---|---|---|
@@ -390,39 +334,33 @@ The (r=0) endpoint is geometrically regular, but the retained (W\ne0) sector is 
 | Balance law | Boundary term (Q_S[W]) in the Hamiltonian | Central bracket makes (W_n) source (Q_n). | Source-derived. |
 | BTZ/dS normalization | Evaluate (r^{-1/2}) at (r_+) or (ell) | Levels inherit (1/\sqrt{r_+}) or (1/\sqrt\ell). | Source-derived. |
 
-# Translation into the vault's action-first sewing language
+# Translation into the Vault's Action-First Sewing Language
 
 The useful regional data are not just the electric flux. On a released null boundary the paper keeps the pair
 
-$$
-q(\varphi)=A_{\parallel}(\varphi),
-\qquad
-p(\varphi)=\pi^r(\varphi),
-$$
+$$\begin{align}
+q(\varphi)=A_{\parallel}(\varphi), \qquad p(\varphi)=\pi^r(\varphi),
+\end{align}$$
 
 represented by (A_{(0)\varphi},\pi^r_{(1)}) at null infinity or their leading horizon values. The two linear boundary observables probe complementary data:
 
-$$
-Q[\varepsilon]\sim\oint\varepsilon p,
-\qquad
-Q_S[\eta]\sim\oint\eta q.
-$$
+$$\begin{align}
+Q[\varepsilon]\sim\oint\varepsilon p, \qquad Q_S[\eta]\sim\oint\eta q.
+\end{align}$$
 
 Their central mixed bracket is therefore evidence for a nontrivial boundary port bracket before reduction. It would be a mistake to retain only Gauss flux (p) and quotient away the tangential history (q) before sewing.
 
 For two complementary regions sharing the same cut, the expected sewing conditions are orientation-sensitive:
 
-$$
-q_L=q_R,
-\qquad
-p_L+p_R=0,
-$$
+$$\begin{align}
+q_L=q_R, \qquad p_L+p_R=0,
+\end{align}$$
 
 together with compatible gauge parameters and treatment of the (chi) zero mode. The paper states this gluing intuition but does not construct the product regional phase space, the coisotropic matching surface, or its reduced observable algebra. In particular, it does not show whether the two regional central terms cancel, combine, or leave a corner extension after matching. That is the concrete next calculation for the vault's gauge-sewing programme.
 
 For the proposed gravity--(U(1)) Chern--Simons boundary problem, this Maxwell algebra is a useful counterexample and calibration. Its Kac--Moody levels arise from a characteristic constraint and boundary normalization on a fixed metric, not from a bulk Chern--Simons coupling. Any mixed gravity--gauge calculation must keep those mechanisms distinct.
 
-# Verification log
+# Verification Log
 
 ## Checked
 
@@ -432,7 +370,7 @@ For the proposed gravity--(U(1)) Chern--Simons boundary problem, this Maxwell al
 - Direct differentiation verified that (v=\sqrt r\,V) is annihilated by the displayed radial kernel.
 - Symbolic mode algebra verified that the mixed bracket diagonalizes into levels (+\epsilon\kappa) and (-\epsilon\kappa) for (Q_n^+) and (Q_n^-).
 
-## Source-derived
+## Source-Derived
 
 - The distributional self-bracket (Omega(x,x')), all Regge--Teitelboim boundary variations, the reduced Dirac bracket, the cut-completion prescription, and the balance laws were reconstructed from the source but not independently derived from a fully gauge-fixed action.
 - The BTZ and de Sitter horizon algebras were followed through their orientation and normalization changes, but the induced reduced symplectic forms were not independently recomputed.
@@ -442,12 +380,12 @@ For the proposed gravity--(U(1)) Chern--Simons boundary problem, this Maxwell al
 - A complete independent Dirac-bracket computation is blocked because the source does not choose an explicit gauge fixing for the first-class constraints or give the full inverse second-class constraint matrix for the nonzero modes.
 - The claim that the logarithmically divergent symplectic potential contributes only an exact field-space variation is not accompanied by the explicit divergent functional in the source; the finiteness of (Omega=\delta\Theta) therefore remains source-derived.
 
-## Not independently verified
+## Not Independently Verified
 
 - The formal equivalence to a covariant-phase-space derivation, global antipodal matching, regularity of every subleading solution, and the physical interpretation of the constant shift mode as a magnetic observable were not independently proved.
 - No claim is made here that the restricted phase spaces embed into globally regular Maxwell solution spaces.
 
-# Reusable conclusions
+# Reusable Conclusions
 
 1. A null Legendre transform can release a genuine radial zero mode of a constraint that is absent from the standard spacelike presentation.
 2. The pair ((A_\parallel,\pi^r)) must remain visible at an open null port if one wants to reproduce the electric--shift central bracket.
