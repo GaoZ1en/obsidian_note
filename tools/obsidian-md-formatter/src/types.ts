@@ -17,6 +17,7 @@ export interface FormatterOptions {
   capitalizeSentenceStarts: boolean;
   capitalizeTitleWords: boolean;
   joinProseLines: boolean;
+  relativizeAbsoluteVaultLinks: boolean;
   maxConsecutiveBlankLines: number;
   showDiffBeforeApply: boolean;
 }
@@ -37,6 +38,7 @@ export const DEFAULT_FORMATTER_OPTIONS: FormatterOptions = {
   capitalizeSentenceStarts: true,
   capitalizeTitleWords: true,
   joinProseLines: true,
+  relativizeAbsoluteVaultLinks: true,
   maxConsecutiveBlankLines: 1,
   showDiffBeforeApply: false
 };
