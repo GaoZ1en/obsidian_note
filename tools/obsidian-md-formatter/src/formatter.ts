@@ -1,4 +1,6 @@
 import { formatMathSegment, normalizeInlineMathDelimiters } from "./math";
+import { relativizeVaultLinks } from "./links";
+import type { VaultLinkContext } from "./links";
 import { scanSegments } from "./segments";
 import type { Segment } from "./segments";
 import type { FormatResult, FormatterOptions } from "./types";
@@ -7,7 +9,11 @@ import { lintMarkdown } from "./lint";
 import { capitalizeHeadingTitle, capitalizeSentenceStarts, capitalizeTitleText } from "./prose";
 import type { SentenceCapitalizationResult } from "./prose";
 
-export function formatMarkdown(source: string, options: Partial<FormatterOptions> = {}): FormatResult {
+export function formatMarkdown(
+  source: string,
+  options: Partial<FormatterOptions> = {},
+  context?: VaultLinkContext
+): FormatResult {
   const resolved = resolveOptions(options);
   const segments = scanSegments(source);
   const output: string[] = [];
@@ -75,12 +81,15 @@ export function formatMarkdown(source: string, options: Partial<FormatterOptions
       inListBlock = false;
     }
     const markdownFormatted = formatMarkdownLine(line, resolved);
+    const linkFormatted = resolved.relativizeAbsoluteVaultLinks && context !== undefined
+      ? relativizeVaultLinks(markdownFormatted, context)
+      : markdownFormatted;
     const isSetextTitle = isSetextHeadingText(line, segments[segmentIndex + 1]);
     const titleFormatted = resolved.capitalizeTitleWords
       ? isSetextTitle
-        ? capitalizeTitleText(markdownFormatted)
-        : capitalizeHeadingTitle(markdownFormatted)
-      : markdownFormatted;
+        ? capitalizeTitleText(linkFormatted)
+        : capitalizeHeadingTitle(linkFormatted)
+      : linkFormatted;
     const hasTitleFormatting = resolved.capitalizeTitleWords && (isSetextTitle || isTitleHeading(titleFormatted));
     const proseFormatted: SentenceCapitalizationResult =
       resolved.capitalizeSentenceStarts && !hasTitleFormatting

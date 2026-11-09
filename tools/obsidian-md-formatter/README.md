@@ -38,6 +38,32 @@ The markers are preserved. Labelled fields such as `**Assumptions:** ...`
 join with their wrapped body; each new labelled field starts a separate line,
 so consecutive `**Status**: ...` and `**Author**: ...` fields stay separate.
 
+## Portable internal links
+
+With **Relativize absolute vault links** enabled (the default), formatting
+an Obsidian note converts filesystem-absolute link destinations pointing
+inside the current vault. Markdown links become paths relative to the note;
+Wiki links become paths relative to the vault root.
+
+For a note at `Literature Notes/arxiv/2026/11/09/2026_11_09_overview.md`
+in a vault rooted at `/Users/koishi/Documents/Note`:
+
+- `[inventory](</Users/koishi/Documents/Note/Literature Notes/arxiv/2026/11/09/2026_11_09_inventory.md>)`
+  becomes `[inventory](<./2026_11_09_inventory.md>)`.
+- `[example](</Users/koishi/Documents/Note/Articles/example.md>)`
+  becomes `[example](<../../../../../Articles/example.md>)`.
+- `[[/Users/koishi/Documents/Note/Articles/example.md|example]]`
+  becomes `[[Articles/example.md|example]]`.
+
+Angle-bracket links retain readable spaces; bare Markdown destinations
+remain percent-encoded. Fragments, link titles, images and reference-style
+definitions are supported. External URLs and paths outside the vault stay
+unchanged, as do frontmatter, fenced code, inline code, and math.
+
+The desktop FileSystemAdapter supplies the vault root; non-filesystem
+adapters skip link conversion. Use the diff preview before formatting a
+large folder. The converter uses the containing file's actual path.
+
 ## Commands
 
 - `Format current note`

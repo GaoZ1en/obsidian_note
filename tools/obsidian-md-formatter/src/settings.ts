@@ -112,6 +112,16 @@ export class FormatterSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
+      .setName("Relativize absolute vault links")
+      .setDesc("Replace absolute filesystem links inside this vault with note-relative Markdown paths or vault-relative Wiki paths. Desktop vaults only.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.relativizeAbsoluteVaultLinks).onChange(async (value) => {
+          this.plugin.settings.relativizeAbsoluteVaultLinks = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
       .setName("Maximum consecutive blank lines")
       .setDesc("Blank lines are compressed outside frontmatter, code blocks, and math blocks.")
       .addText((text) => {

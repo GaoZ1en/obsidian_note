@@ -1,8 +1,9 @@
-import { Editor, MarkdownView, Notice, Plugin, TFile, TFolder, Vault } from "obsidian";
+import { Editor, FileSystemAdapter, MarkdownView, Notice, Plugin, TFile, TFolder, Vault } from "obsidian";
 import type { EventRef } from "obsidian";
 import { DiffModal, FolderFormatModal, LintModal } from "./diff-modal";
 import type { FolderFormatSummary } from "./diff-modal";
 import { formatMarkdown } from "./formatter";
+import type { VaultLinkContext } from "./links";
 import { lintMarkdown } from "./lint";
 import { DEFAULT_SETTINGS, FormatterSettingTab } from "./settings";
 import type { MarkdownFormatterSettings } from "./settings";
@@ -67,9 +68,19 @@ export default class MarkdownFormatterPlugin extends Plugin {
     await this.saveData(this.settings);
   }
 
+  private linkContextFor(file: TFile | null): VaultLinkContext | undefined {
+    if (file === null || !(this.app.vault.adapter instanceof FileSystemAdapter)) {
+      return undefined;
+    }
+    return {
+      vaultBasePath: this.app.vault.adapter.getBasePath(),
+      notePath: file.path
+    };
+  }
+
   private formatCurrentNote(editor: Editor): void {
     const source = editor.getValue();
-    const result = formatMarkdown(source, this.settings);
+    const result = formatMarkdown(source, this.settings, this.linkContextFor(this.app.workspace.getActiveFile()));
 
     if (!result.changed) {
       new Notice("No formatting changes.");
@@ -94,7 +105,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
       return;
     }
 
-    const result = formatMarkdown(selection, this.settings);
+    const result = formatMarkdown(selection, this.settings, this.linkContextFor(this.app.workspace.getActiveFile()));
     if (!result.changed) {
       new Notice("No formatting changes in selection.");
       return;
@@ -106,7 +117,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
 
   private previewCurrentNote(editor: Editor): void {
     const source = editor.getValue();
-    const result = formatMarkdown(source, this.settings);
+    const result = formatMarkdown(source, this.settings, this.linkContextFor(this.app.workspace.getActiveFile()));
 
     if (!result.changed) {
       new Notice("No formatting changes.");
@@ -137,7 +148,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
         return;
       }
 
-      const result = formatMarkdown(editor.getValue(), this.settings);
+      const result = formatMarkdown(editor.getValue(), this.settings, this.linkContextFor(view.file));
       if (result.changed) {
         editor.setValue(result.text);
       }
@@ -166,7 +177,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
     this.formattingFiles.add(file.path);
     try {
       const source = await this.app.vault.read(file);
-      const result = formatMarkdown(source, this.settings);
+      const result = formatMarkdown(source, this.settings, this.linkContextFor(file));
       if (result.changed) {
         await this.app.vault.modify(file, result.text);
         new Notice(`Formatted on open: ${file.basename}`);
@@ -239,7 +250,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
 
     for (const file of files) {
       const source = await this.app.vault.read(file);
-      const result = formatMarkdown(source, this.settings);
+      const result = formatMarkdown(source, this.settings, this.linkContextFor(file));
       if (result.changed) {
         changes.push({
           file,
