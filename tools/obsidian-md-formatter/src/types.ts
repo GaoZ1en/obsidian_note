@@ -14,6 +14,8 @@ export interface FormatterOptions {
   normalizeMathDelimiters: boolean;
   wrapSimpleDisplayMathInAlign: boolean;
   normalizeListMarkers: boolean;
+  normalizeAbsoluteWikiLinks: boolean;
+  normalizeAbsoluteMarkdownLinks: boolean;
   capitalizeSentenceStarts: boolean;
   capitalizeTitleWords: boolean;
   joinProseLines: boolean;
@@ -34,6 +36,8 @@ export const DEFAULT_FORMATTER_OPTIONS: FormatterOptions = {
   normalizeMathDelimiters: true,
   wrapSimpleDisplayMathInAlign: true,
   normalizeListMarkers: true,
+  normalizeAbsoluteWikiLinks: true,
+  normalizeAbsoluteMarkdownLinks: true,
   capitalizeSentenceStarts: true,
   capitalizeTitleWords: true,
   joinProseLines: true,

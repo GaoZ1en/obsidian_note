@@ -74,7 +74,9 @@ export function formatMathSegment(segment: Segment, options: FormatterOptions): 
 
   const topEnvironment = getTopEnvironment(content);
   if (topEnvironment !== null && ALIGN_ENVIRONMENTS.has(topEnvironment.name)) {
-    return formatTopLevelEnvironment(normalizeRowsInTopLevelEnvironment(content, topEnvironment), topEnvironment);
+    // The body was already normalized above. Re-normalizing it here could change
+    // its length after endIndex was captured and serialize the closing token twice.
+    return formatTopLevelEnvironment(content, topEnvironment);
   }
 
   if (containsLatexEnvironment(content)) {
@@ -177,16 +179,18 @@ function normalizeTopLevelAlignEnvironment(content: string[]): string[] {
   ];
 }
 
-function normalizeRowsInTopLevelEnvironment(content: string[], environment: TopEnvironment): string[] {
-  const before = content.slice(0, environment.startIndex + 1);
-  const body = content.slice(environment.startIndex + 1, environment.endIndex);
-  const after = content.slice(environment.endIndex);
-
-  return [...before, ...normalizeMathRows(body), ...after];
-}
-
 function normalizeMathRows(lines: string[]): string[] {
-  return splitRowsAtLatexBreaks(mergeSourceOnlyLineBreaks(lines));
+  // Split explicit row breaks first, then reach a fixed point for source-only
+  // wraps. Each changing pass strictly reduces the number of lines, so this
+  // terminates without a pass cap and is stable on the next formatter run.
+  let current = splitRowsAtLatexBreaks(lines);
+  while (true) {
+    const merged = mergeSourceOnlyLineBreaks(current);
+    if (merged.length === current.length) {
+      return merged;
+    }
+    current = merged;
+  }
 }
 
 function mergeSourceOnlyLineBreaks(lines: string[]): string[] {

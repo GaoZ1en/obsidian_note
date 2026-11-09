@@ -1,4 +1,4 @@
-import { Editor, MarkdownView, Notice, Plugin, TFile, TFolder, Vault } from "obsidian";
+import { Editor, FileSystemAdapter, MarkdownView, Notice, Plugin, TFile, TFolder, Vault } from "obsidian";
 import type { EventRef } from "obsidian";
 import { DiffModal, FolderFormatModal, LintModal } from "./diff-modal";
 import type { FolderFormatSummary } from "./diff-modal";
@@ -18,24 +18,24 @@ export default class MarkdownFormatterPlugin extends Plugin {
     this.addCommand({
       id: "format-current-note",
       name: "Format current note",
-      editorCallback: (editor) => {
-        this.formatCurrentNote(editor);
+      editorCallback: (editor, view) => {
+        this.formatCurrentNote(editor, view.file?.path);
       }
     });
 
     this.addCommand({
       id: "format-selection",
       name: "Format selection",
-      editorCallback: (editor) => {
-        this.formatSelection(editor);
+      editorCallback: (editor, view) => {
+        this.formatSelection(editor, view.file?.path);
       }
     });
 
     this.addCommand({
       id: "preview-formatting-diff",
       name: "Preview formatting diff",
-      editorCallback: (editor) => {
-        this.previewCurrentNote(editor);
+      editorCallback: (editor, view) => {
+        this.previewCurrentNote(editor, view.file?.path);
       }
     });
 
@@ -67,9 +67,17 @@ export default class MarkdownFormatterPlugin extends Plugin {
     await this.saveData(this.settings);
   }
 
-  private formatCurrentNote(editor: Editor): void {
+  private formatSource(source: string, sourcePath?: string) {
+    const adapter = this.app.vault.adapter;
+    return formatMarkdown(source, this.settings, {
+      vaultBasePath: adapter instanceof FileSystemAdapter ? adapter.getBasePath() : undefined,
+      sourcePath
+    });
+  }
+
+  private formatCurrentNote(editor: Editor, sourcePath?: string): void {
     const source = editor.getValue();
-    const result = formatMarkdown(source, this.settings);
+    const result = this.formatSource(source, sourcePath);
 
     if (!result.changed) {
       new Notice("No formatting changes.");
@@ -87,14 +95,14 @@ export default class MarkdownFormatterPlugin extends Plugin {
     new Notice(`Formatted current note with ${result.warnings.length} warning(s).`);
   }
 
-  private formatSelection(editor: Editor): void {
+  private formatSelection(editor: Editor, sourcePath?: string): void {
     const selection = editor.getSelection();
     if (selection.length === 0) {
       new Notice("No selection to format.");
       return;
     }
 
-    const result = formatMarkdown(selection, this.settings);
+    const result = this.formatSource(selection, sourcePath);
     if (!result.changed) {
       new Notice("No formatting changes in selection.");
       return;
@@ -104,9 +112,9 @@ export default class MarkdownFormatterPlugin extends Plugin {
     new Notice(`Formatted selection with ${result.warnings.length} warning(s).`);
   }
 
-  private previewCurrentNote(editor: Editor): void {
+  private previewCurrentNote(editor: Editor, sourcePath?: string): void {
     const source = editor.getValue();
-    const result = formatMarkdown(source, this.settings);
+    const result = this.formatSource(source, sourcePath);
 
     if (!result.changed) {
       new Notice("No formatting changes.");
@@ -137,7 +145,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
         return;
       }
 
-      const result = formatMarkdown(editor.getValue(), this.settings);
+      const result = this.formatSource(editor.getValue(), view.file?.path);
       if (result.changed) {
         editor.setValue(result.text);
       }
@@ -166,7 +174,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
     this.formattingFiles.add(file.path);
     try {
       const source = await this.app.vault.read(file);
-      const result = formatMarkdown(source, this.settings);
+      const result = this.formatSource(source, file.path);
       if (result.changed) {
         await this.app.vault.modify(file, result.text);
         new Notice(`Formatted on open: ${file.basename}`);
@@ -239,7 +247,7 @@ export default class MarkdownFormatterPlugin extends Plugin {
 
     for (const file of files) {
       const source = await this.app.vault.read(file);
-      const result = formatMarkdown(source, this.settings);
+      const result = this.formatSource(source, file.path);
       if (result.changed) {
         changes.push({
           file,

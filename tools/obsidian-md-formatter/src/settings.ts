@@ -82,6 +82,26 @@ export class FormatterSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
+      .setName("Normalize absolute Wiki links")
+      .setDesc("Convert absolute paths inside this vault to vault-relative Wiki links; preserve aliases and heading/block references. External paths stay unchanged.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.normalizeAbsoluteWikiLinks).onChange(async (value) => {
+          this.plugin.settings.normalizeAbsoluteWikiLinks = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
+      .setName("Normalize absolute Markdown links")
+      .setDesc("Convert absolute paths inside this vault to paths relative to the current note. Preserve labels, titles and anchors; leave external paths unchanged.")
+      .addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.normalizeAbsoluteMarkdownLinks).onChange(async (value) => {
+          this.plugin.settings.normalizeAbsoluteMarkdownLinks = value;
+          await this.plugin.saveSettings();
+        });
+      });
+
+    new Setting(containerEl)
       .setName("Capitalize sentence starts")
       .setDesc("Capitalize lowercase English sentence starts in prose while leaving list-item starts unchanged.")
       .addToggle((toggle) => {

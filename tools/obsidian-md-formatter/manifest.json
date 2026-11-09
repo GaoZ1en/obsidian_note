@@ -1,7 +1,7 @@
 {
   "id": "koishi-markdown-formatter",
   "name": "formatter",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "minAppVersion": "1.5.0",
   "description": "Conservative Markdown formatting for math-heavy Obsidian notes.",
   "author": "Koishi",

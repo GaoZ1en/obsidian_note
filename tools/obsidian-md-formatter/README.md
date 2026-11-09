@@ -38,6 +38,38 @@ The markers are preserved. Labelled fields such as `**Assumptions:** ...`
 join with their wrapped body; each new labelled field starts a separate line,
 so consecutive `**Status**: ...` and `**Author**: ...` fields stay separate.
 
+Absolute Wiki-link normalization is enabled by default. For example, in a vault
+located at `/Users/koishi/Documents/Note`,
+`[[/Users/koishi/Documents/Note/Articles/example.md#Section|label]]` becomes
+`[[Articles/example.md#Section|label]]`. The root is detected from Obsidian's
+filesystem adapter, not hardcoded. Links and embeds preserve extensions, aliases,
+heading anchors and block references. POSIX paths, Windows drive/UNC paths and
+local `file:///` URLs are supported. Relative links, paths outside the vault,
+frontmatter, code and math spans are not rewritten. If no filesystem root is
+available (for example on mobile), link conversion is skipped. Disable
+`Normalize absolute Wiki links` to retain the old behavior. This runs through
+all existing formatting entry points; it does not add a background vault scan.
+As with the other rules, `Format selection` treats the selected text as an
+independent Markdown fragment; include surrounding code/math delimiters when
+those regions should remain protected.
+
+Absolute ordinary Markdown links and image/reference destinations are also
+normalized by default. Unlike Wiki links, their destination must be relative
+to the **source note's directory**, not the vault root, so the Markdown syntax
+and labels remain intact and path components are URL-encoded. For example,
+`[label](</vault/Articles/a.md#Heading>)` in `Literature/paper.md` becomes
+`[label](<../Articles/a.md#Heading>)`. The source note path is passed explicitly
+for every command and open/save/folder hook; conversion is skipped if it is
+unavailable. Disable `Normalize absolute Markdown links` independently of Wiki
+links. Fragments are preserved rather than guessed: code-viewer fragments such
+as `#L7-L27` must be replaced with a real Obsidian heading or block reference
+when repairing a broken jump.
+
+Display-math row normalization reaches a stable form before environment line
+positions are recorded. In particular, joining source-only wraps must not
+introduce extra closing tokens for `align`, `align*`, or `aligned`; explicit row
+breaks and nested environments remain intact on repeated formatting.
+
 ## Commands
 
 - `Format current note`

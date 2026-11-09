@@ -1,6 +1,6 @@
 {
   "name": "koishi-markdown-formatter",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "A conservative Obsidian Markdown formatter for physics notes.",
   "type": "module",
   "private": true,

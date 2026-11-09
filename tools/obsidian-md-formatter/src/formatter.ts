@@ -1,5 +1,6 @@
 import { formatMathSegment, normalizeInlineMathDelimiters } from "./math";
 import { scanSegments } from "./segments";
+import { normalizeVaultLinks } from "./links";
 import type { Segment } from "./segments";
 import type { FormatResult, FormatterOptions } from "./types";
 import { resolveOptions } from "./types";
@@ -7,9 +8,27 @@ import { lintMarkdown } from "./lint";
 import { capitalizeHeadingTitle, capitalizeSentenceStarts, capitalizeTitleText } from "./prose";
 import type { SentenceCapitalizationResult } from "./prose";
 
-export function formatMarkdown(source: string, options: Partial<FormatterOptions> = {}): FormatResult {
+export interface FormatterContext {
+  /** Filesystem vault root, supplied at runtime rather than persisted in settings. */
+  vaultBasePath?: string;
+  /** Vault-relative source note path, required for ordinary Markdown links. */
+  sourcePath?: string;
+}
+
+export function formatMarkdown(
+  source: string,
+  options: Partial<FormatterOptions> = {},
+  context: FormatterContext = {}
+): FormatResult {
   const resolved = resolveOptions(options);
-  const segments = scanSegments(source);
+  const scanned = scanSegments(source);
+  const segments = context.vaultBasePath && (resolved.normalizeAbsoluteWikiLinks || resolved.normalizeAbsoluteMarkdownLinks)
+    ? normalizeVaultLinks(scanned, context.vaultBasePath, {
+      wikiLinks: resolved.normalizeAbsoluteWikiLinks,
+      markdownLinks: resolved.normalizeAbsoluteMarkdownLinks,
+      sourcePath: context.sourcePath
+    })
+    : scanned;
   const output: string[] = [];
   let atSentenceStart = true;
   let preserveSentenceStateAcrossBlankLines = false;
