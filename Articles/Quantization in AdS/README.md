@@ -21,6 +21,7 @@ Research notes on quantization and perturbative field theory in AdS, including A
 | `preliminary analysis/` | Foundational calculations: constrained systems, path integrals, Dirac formalism |
 | `scalar/` | Free scalar quantization in global AdS: fast/slow falloffs, boundary-complete Noether charges, boundary-condition classification, BF stability, and unitarity; [mode expansions and changes of boundary condition](<scalar/Scalar mode expansions and boundary conditions.md>); [slow-representative Galerkin comparison and convergence proof](<scalar/Slow representatives and Galerkin convergence.md>) |
 | `thermodynamics of scalar in ads/` | Scalar field thermodynamics: heat kernel method in various spacetimes |
+| [ttbar-sewing](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/README.md>) | $T\bar T$ Ising: first-order local Hamiltonian and spatial cutoff, exact finite-history sewing, correlators/transport/entropy checks, and continuum UV obstructions |
 
 ## Reading Order
 
