@@ -1,0 +1,289 @@
+{
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "tests": {
+    "canonical": [
+      {
+        "Delta": "3/2",
+        "Nmax": 8,
+        "primary_coefficients": 25,
+        "matrix_entry_checks": 55,
+        "unused_off_diagonal_checks": 30,
+        "chiral_Gram_checks": 165,
+        "coefficients": {
+          "0,0": "-9/2",
+          "1,0": "-201/8",
+          "0,2": "-35/4",
+          "2,0": "-123/2",
+          "1,2": "-261/8",
+          "3,0": "-1821/16",
+          "0,4": "-9",
+          "2,2": "-145/2",
+          "4,0": "-1821/10",
+          "1,4": "-33",
+          "3,2": "-1027/8",
+          "5,0": "-2131/8",
+          "0,6": "-9",
+          "2,4": "-73",
+          "4,2": "-801/4",
+          "6,0": "-5133/14",
+          "1,6": "-33",
+          "3,4": "-129",
+          "5,2": "-2305/8",
+          "7,0": "-15453/32",
+          "0,8": "-9",
+          "2,6": "-73",
+          "4,4": "-201",
+          "6,2": "-392",
+          "8,0": "-3691/6"
+        },
+        "seconds": 1.5127742360000411
+      },
+      {
+        "Delta": "2",
+        "Nmax": 8,
+        "primary_coefficients": 25,
+        "matrix_entry_checks": 55,
+        "unused_off_diagonal_checks": 30,
+        "chiral_Gram_checks": 165,
+        "coefficients": {
+          "0,0": "-56/5",
+          "1,0": "-1368/35",
+          "0,2": "-552/35",
+          "2,0": "-416/5",
+          "1,2": "-1000/21",
+          "3,0": "-11040/77",
+          "0,4": "-16",
+          "2,2": "-7352/77",
+          "4,0": "-31400/143",
+          "1,4": "-48",
+          "3,2": "-68360/429",
+          "5,0": "-222936/715",
+          "0,6": "-16",
+          "2,4": "-96",
+          "4,2": "-34208/143",
+          "6,0": "-464128/1105",
+          "1,6": "-48",
+          "3,4": "-160",
+          "5,2": "-370272/1105",
+          "7,0": "-878976/1615",
+          "0,8": "-16",
+          "2,6": "-96",
+          "4,4": "-240",
+          "6,2": "-144368/323",
+          "8,0": "-1547640/2261"
+        },
+        "seconds": 1.124873609999895
+      },
+      {
+        "Delta": "7/3",
+        "Nmax": 8,
+        "primary_coefficients": 25,
+        "matrix_entry_checks": 55,
+        "unused_off_diagonal_checks": 30,
+        "chiral_Gram_checks": 165,
+        "coefficients": {
+          "0,0": "-28126/1683",
+          "1,0": "-174538/3519",
+          "0,2": "-75880/3519",
+          "2,0": "-10090934/102051",
+          "1,2": "-352576/6003",
+          "3,0": "-6903766/42021",
+          "0,4": "-196/9",
+          "2,2": "-4702996/42021",
+          "4,0": "-13149674/53505",
+          "1,4": "-532/9",
+          "3,2": "-13566748/74907",
+          "5,0": "-41673382/121401",
+          "0,6": "-196/9",
+          "2,4": "-1012/9",
+          "4,2": "-32330680/121401",
+          "6,0": "-419877158/919179",
+          "1,6": "-532/9",
+          "3,4": "-1636/9",
+          "5,2": "-337811360/919179",
+          "7,0": "-775556894/1322721",
+          "0,8": "-196/9",
+          "2,6": "-1012/9",
+          "4,4": "-2404/9",
+          "6,2": "-641145332/1322721",
+          "8,0": "-267765694/365859"
+        },
+        "seconds": 1.5826322519999394
+      },
+      {
+        "Delta": "Delta",
+        "Nmax": 3,
+        "primary_coefficients": 6,
+        "matrix_entry_checks": 8,
+        "unused_off_diagonal_checks": 2,
+        "chiral_Gram_checks": 20,
+        "coefficients": {
+          "0,0": "-2*Delta**2*(8*Delta**2 - 2*Delta - 7)/((2*Delta - 1)*(2*Delta + 1))",
+          "1,0": "-2*Delta**2*(8*Delta**2 + 46*Delta + 47)/((2*Delta + 1)*(2*Delta + 3))",
+          "0,2": "-4*Delta*(Delta + 1)*(4*Delta**2 + 4*Delta - 1)/((2*Delta + 1)*(2*Delta + 3))",
+          "2,0": "-2*(16*Delta**5 + 196*Delta**4 + 648*Delta**3 + 829*Delta**2 + 436*Delta + 84)/((2*Delta + 1)*(2*Delta + 3)*(2*Delta + 5))",
+          "1,2": "-4*Delta*(Delta + 3)*(4*Delta**2 + 20*Delta + 19)/((2*Delta + 3)*(2*Delta + 5))",
+          "3,0": "-2*(16*Delta**5 + 308*Delta**4 + 1792*Delta**3 + 4473*Delta**2 + 4980*Delta + 2052)/((2*Delta + 3)*(2*Delta + 5)*(2*Delta + 7))"
+        },
+        "seconds": 24.57184221500006
+      }
+    ],
+    "homological": {
+      "Schrieffer_Wolff_vs_Feshbach": "exact 3-state degenerate-block identity",
+      "Dyson_double_integral": "derivatives, initial data and resonant limit checked",
+      "scope": "Algebra/sign checks; these matrices are not an Einstein V2 computation."
+    },
+    "boundary_modes": {
+      "seed_CPS_bulk_pairing": "-I",
+      "seed_CPS_boundary_limit": "0",
+      "seed_trace": "0",
+      "normalized_vector_ladder_checks": 4,
+      "scope": "Uses the Einstein CPS bulk plus corner pairing, not an assumed Virasoro norm."
+    },
+    "cubic": {
+      "arbitrary_m_omega_IBP_identities": 2,
+      "generic_mass_finite_mode_integrals": 50,
+      "ground_pair_creation_vertex": "zero for all radial indices, by Jacobi orthogonality",
+      "Delta_2_bulk_cubic_self_energy_over_G": {
+        "2": "-232/25",
+        "3": "-1624/75",
+        "8": "-4567246/53361",
+        "20": "-137578858385759873/711006123497670",
+        "100": "-41724681528883510706971384653702300977722299218800100657824766232708024316021712150924491/91330144572144668015898851320813438377051461718056861144463933471845175395513724516000"
+      },
+      "large_cutoff_log_coefficient_over_G": -192,
+      "scope": "This is the TT-representative bulk-cubic contribution, NOT a complete bare self-energy including seagulls, canonical/boundary terms and counterterms."
+    },
+    "direct_bulk_vertices": {
+      "Delta": 2,
+      "direct_hT_integrals": [
+        {
+          "m": 2,
+          "n": 0,
+          "emission": true,
+          "value": "-1/sqrt(pi)"
+        },
+        {
+          "m": 2,
+          "n": 1,
+          "emission": true,
+          "value": "sqrt(6)/(5*sqrt(pi))"
+        },
+        {
+          "m": 3,
+          "n": 0,
+          "emission": true,
+          "value": "-4*sqrt(3)/(5*sqrt(pi))"
+        },
+        {
+          "m": 2,
+          "n": 0,
+          "emission": false,
+          "value": "0"
+        },
+        {
+          "m": 2,
+          "n": 1,
+          "emission": false,
+          "value": "0"
+        }
+      ],
+      "scope": "Actual radial tensor contraction; not the endpoint-polynomial formula."
+    },
+    "number_change": {
+      "exact_circular_resonant_integrals": 15,
+      "all_zero": true,
+      "scope": "Finite checks of the separate all-index intertwiner proof; not a scan of all noncircular channels."
+    },
+    "initial_row": {
+      "direct_beta_integrals_and_triangular_projections": 39,
+      "Jmax": 12,
+      "scope": "Arbitrary-J proof is in the note; these are finite independent evaluations."
+    },
+    "recurrence": {
+      "arbitrary_index_residuals": 3,
+      "endpoint_residuals": 3,
+      "removable_pole_Delta_3_over_2": "-9/2",
+      "scope": "Verifies the imported internal Einstein-Casimir recurrence; does not derive its tensor identity."
+    },
+    "descendant_counts": {
+      "Delta": 2,
+      "J": 0,
+      "even_scalar_parity_blocks": {
+        "4": [
+          {
+            "sector": "vacuum descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "0"
+          },
+          {
+            "sector": "two scalar primary (0,0) and Virasoro descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "-56/5"
+          }
+        ],
+        "6": [
+          {
+            "sector": "vacuum descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "0"
+          },
+          {
+            "sector": "two scalar primary (0,0) and Virasoro descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "-56/5"
+          },
+          {
+            "sector": "two scalar primary (1,0) and Virasoro descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "-1368/35"
+          }
+        ],
+        "8": [
+          {
+            "sector": "vacuum descendants",
+            "multiplicity": 4,
+            "gamma_over_G": "0"
+          },
+          {
+            "sector": "two scalar primary (0,0) and Virasoro descendants",
+            "multiplicity": 4,
+            "gamma_over_G": "-56/5"
+          },
+          {
+            "sector": "two scalar primary (0,-2) and Virasoro descendants",
+            "multiplicity": 2,
+            "gamma_over_G": "-552/35"
+          },
+          {
+            "sector": "two scalar primary (1,0) and Virasoro descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "-1368/35"
+          },
+          {
+            "sector": "two scalar primary (0,2) and Virasoro descendants",
+            "multiplicity": 2,
+            "gamma_over_G": "-552/35"
+          },
+          {
+            "sector": "two scalar primary (2,0) and Virasoro descendants",
+            "multiplicity": 1,
+            "gamma_over_G": "-416/5"
+          },
+          {
+            "sector": "four ground scalars (collision check only)",
+            "multiplicity": 1,
+            "gamma_over_G": "-336/5"
+          }
+        ]
+      },
+      "scope": "Character counts and theorem-implied leading eigenvalues; not a separately assembled raw unreduced V2 matrix."
+    }
+  },
+  "elapsed_seconds": 38.5079762429998,
+  "base_commit": "d3a8abfb145810458aa208222c92c9f99ead237b",
+  "script_git_blob_sha": "ff4918e079a03111c15702092efa065bc80d5c12",
+  "command": "python scripts/retained_gravity_ofpt_checks.py --radial-level 8 --symbolic-level 3 --out scripts/retained_gravity_ofpt_results.json",
+  "status": "all assertions passed"
+}
