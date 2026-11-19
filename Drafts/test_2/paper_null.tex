@@ -1,0 +1,203 @@
+\section{A regular null family and its four supersymmetry branches}\label{sec:null}
+
+The null deformation admits a nonsingular orthonormal frame and a direct Killing-spinor proof. With the electric flux orientation fixed, the two sphere Maurer--Cartan signs distinguish backgrounds with eight, four, or no local supercharges. We retain an arbitrary real amplitude $\beta$ throughout; no rescaling of a periodic coordinate is required.
+
+\subsection{Geometry, flux, and field equations}
+
+For $z>0$, define
+\begin{align}
+ e^0&=L\,\dd v+\frac L2(1+\beta^2)\frac{\dd u}{z^2},&
+ e^1&=-L\,\dd v+\frac L2(1-\beta^2)\frac{\dd u}{z^2},&
+ e^2&=L\frac{\dd z}{z},\label{null:frame}\\
+ n&=e^0+e^1=Lz^{-2}\dd u,&
+ \dd e^0&=a(1+\beta^2)n\wedge e^2,&
+ \dd e^1&=a(1-\beta^2)n\wedge e^2.\nonumber
+\end{align}
+The two round spheres have independent signs $s_\pm\in\{1,-1\}$:
+\begin{equation}\label{null:mc}
+ \dd e^i=-s_+b\,\varepsilon_{ijk}e^{jk}\quad(i,j,k\in\{3,4,5\}),\qquad
+ \dd e^i=-s_-c\,\varepsilon_{ijk}e^{jk}\quad(i,j,k\in\{6,7,8\}).
+\end{equation}
+Both repeated indices are summed, so $\dd e^5=-2s_+b e^{34}$ and $\dd e^8=-2s_-c e^{67}$. The complete fields are
+\begin{align}
+ g_N={}&L^2\left(\frac{\dd z^2-2\dd u\,\dd v}{z^2}-\frac{\beta^2\dd u^2}{z^4}\right)
+       +g_++g_-+\dd x^2+\dd y^2,\label{null:metric}\\
+ F_N={}&2a e^{0129}+2b e^{3459}+2c e^{6789}
+ -2\beta n\wedge\left(ae^{258}+s_+b e^{348}-s_-c e^{567}\right)\nonumber\\
+ ={}&F_0-\beta\,\dd(n\wedge e^5\wedge e^8).\label{null:flux}
+\end{align}
+Here $a=L^{-1}$, $b=R_+^{-1}$, $c=R_-^{-1}$, and $a^2=b^2+c^2$. In particular, the flux coefficients are $2a,2b,2c$. The signs in \eqref{null:mc} are relative to the positive electric coefficients in \eqref{null:flux}; changing a frame together with its flux components is not a change of this relative choice.
+
+The $(-,-)$ branch matches the round-sphere boundary $\omega_{\rm N}=1$ of Eq.~(3.1) in Ref.~\cite{Noris2026}. Explicitly, set $u_{\rm N}=z$, $x_-=u$, $x_+=-2v$, $\alpha_{\rm null,N}=\beta^2$, $\beta=-\sqrt{\alpha_{\rm null,N}}$, and $A_0=n$, $A_\pm=2e^{5,8}$. With physical three-volumes aligned, $x=-z_1$ fixes the electric-leg ordering and $y=-z_2$ preserves the total orientation. The source's $\sqrt{\alpha_{\rm null,N}}\,\dd(A_0\wedge A_+\wedge A_-)/4$ is then the last term of \eqref{null:flux}. The $(+,+)$ branch changes the relative Hopf action; it is not an enhancement locus of this fixed-chirality source branch.
+
+The field equations follow without a singular null-fiber limit. Bianchi is immediate from \eqref{null:flux}, and the wedge products give $F_N\wedge F_N=0$. The undeformed and additional fluxes are orthogonal, the latter is null, and hence $F_N^2=96(-a^2+b^2+c^2)=0$. More explicitly, exterior differentiation of the Hodge dual gives
+\begin{equation}\label{null:maxwell}
+\dd\star F_N=4\beta(-a^2+b^2+c^2)\,n\wedge e^{234679\,10}=0.
+\end{equation}
+For Einstein's equation, let $g_{N,A}$ be the deformed three-dimensional block in \eqref{null:metric}. Direct Cartan curvature gives
+\begin{equation}\label{null:einstein}
+ \operatorname{Ric}_{N,A}=-2a^2g_{N,A}+4a^2\beta^2 n\otimes n,
+ \qquad \operatorname{Ric}_+=2b^2g_+,
+ \qquad \operatorname{Ric}_-=2c^2g_-.
+\end{equation}
+The transverse three-form $ae^{258}+s_+be^{348}-s_-ce^{567}$ has norm squared $a^2+b^2+c^2=2a^2$. Its contribution to $F_{iPQR}F_j{}^{PQR}/12$ is therefore $4a^2\beta^2 n_i n_j$, precisely the extra term in \eqref{null:einstein}; the mixed electric--null contractions vanish. Thus all four sign choices solve the same bosonic equations.
+
+\subsection{A finite set of supercurvature identities}
+
+We use $\mathscr D_i=E_i+\mathcal A_i$ and the general Koszul and flux terms of \eqref{eq:connection}, now with the frame \eqref{null:frame}--\eqref{null:mc}. Its special non-null expression for $\mathcal F$ is replaced by \eqref{null:slash} below. Introduce
+\begin{equation}\label{null:operators}
+\begin{gathered}
+ U=\Gamma^0+\Gamma^1,\qquad V=\Gamma^0-\Gamma^1,\qquad
+ \Lambda=\Gamma^{01},\\
+ P_U=\frac{1+\Lambda}{2},\qquad \mathcal N=U\Gamma^{58},\qquad
+ \Delta=b^2(1-s_+)+c^2(1-s_-).
+\end{gathered}
+\end{equation}
+Then $U^2=\mathcal N^2=0$, $\ker U=\operatorname{im}P_U$, $[H,\Lambda]=0$, $[Q,\mathcal N]=0$, and $\{\mathcal N,X\}=0$. In particular $VU=-2(1-\Lambda)$. Explicitly, the spin-connection matrices are
+\begin{align}
+ \Omega_0&=\frac a2(\Gamma^{02}+\beta^2U\Gamma^2),&
+ \Omega_1&=\frac a2(-\Gamma^{12}+\beta^2U\Gamma^2),&
+ \Omega_2&=-\frac a2\Lambda,\nonumber\\
+ \Omega_i&=-\frac{s_+b}{2}\Gamma^iB\ (i=3,4,5),&
+ \Omega_i&=-\frac{s_-c}{2}\Gamma^iC\ (i=6,7,8),&
+ \Omega_x&=\Omega_y=0.\label{null:spinconnection}
+\end{align}
+A useful short form of the flux is
+\begin{equation}\label{null:slash}
+ \slashed F_N=2HX-2\beta U\mathcal W,\qquad
+ \mathcal W=a\Gamma^{258}+s_+b\Gamma^{348}-s_-c\Gamma^{567}.
+\end{equation}
+For example, if $\mathcal W_i$ denotes contraction of this transverse three-form, then
+$\slashed{\iota_iF_d}=-2\beta[(\delta_{i0}+\delta_{i1})\mathcal W-U\mathcal W_i]$.
+These expressions determine every $\mathcal A_i$ without a choice of explicit gamma matrices. The curvature is the non-coordinate one,
+$\mathcal R_{ij}=[\mathcal A_i,\mathcal A_j]-C^k{}_{ij}\mathcal A_k$.
+
+Expanding these short expressions and using $a^2=b^2+c^2$ gives
+\begin{align}
+ U\mathcal R_{5y}&=-\frac b{18}UY\Gamma^5BH,&
+ \mathcal R_{xy}P_U&=0,\nonumber\\
+ \mathcal R_{xy}P_H&=\frac{\beta\Delta}{6}U\Gamma^{58}YP_H,&
+ \mathcal R_{5y}P_U&=-\frac b{18}Y\Gamma^5BH P_U.\label{null:universal-curvature}
+\end{align}
+These are operator identities, not equations obtained by assuming the desired projectors. All Clifford reductions use the fixed irreducible convention $\Gamma^{0\cdots10}=-1$.
+
+Suppose first that $\Delta>0$, which includes exactly the three sign choices other than $(+,+)$. The first identity in \eqref{null:universal-curvature} implies $UH\epsilon=0$, since $Y\Gamma^5B=Y\Gamma^{34}$ is invertible and anticommutes with $U$. To avoid an unjustified replacement of $UH$ by $H$, decompose $\epsilon=\epsilon_++\epsilon_-$ with $\Lambda\epsilon_\pm=\pm\epsilon_\pm$. The map $U$ is injective on the negative eigenspace, and $H$ preserves this decomposition. Consequently $H\epsilon_-=0$. The middle two identities then give
+\begin{equation}\label{null:negative-sector}
+ 0=\mathcal R_{xy}\epsilon=\mathcal R_{xy}P_H\epsilon_-
+   =\frac{\beta\Delta}{6}U\Gamma^{58}Y\epsilon_-.
+\end{equation}
+For $\beta\ne0$, invertibility of $\Gamma^{58}Y$ within that eigenspace forces $\epsilon_-=0$. Thus $U\epsilon=0$, and only now does the last identity in \eqref{null:universal-curvature} imply $H\epsilon=0$. Every solution in these three branches lies in the eight-dimensional space $\operatorname{im}P$, where $P=P_HP_U$.
+
+\subsection{The four-supercharge branch and the mixed-sign obstruction}
+
+For $(s_+,s_-)=(-,-)$, one further factorization is decisive:
+\begin{equation}\label{null:four-upper}
+ \mathcal R_{0x}P=\frac{a^2\beta}{3}\Gamma^{58}(1+X)P.
+\end{equation}
+Its prefactor is invertible for nonzero $\beta$, so every solution satisfies
+\begin{equation}\label{null:four-projector}
+ H\epsilon=0,\qquad U\epsilon=0,\qquad X\epsilon=-\epsilon,
+ \qquad \Pi_4=\frac18(1-Q)(1+\Lambda)(1-X).
+\end{equation}
+The three commuting projector factors have trace $4$ in combination. This gives an upper bound, not yet existence. The latter follows from the explicit restricted connection:
+\begin{equation}\label{null:four-connection}
+ \begin{aligned}
+ \mathcal A_{0,1,2,x,y}\Pi_4&=0,\\
+ \mathcal A_i\Pi_4&=b\Gamma^iB\Pi_4\quad(i=3,4,5),&
+ \mathcal A_i\Pi_4&=c\Gamma^iC\Pi_4\quad(i=6,7,8).
+ \end{aligned}
+\end{equation}
+For clarity, the terms linear in $\beta$ in the first line vanish because
+$(\mathcal W-\Gamma^{58}H)P_U=0$ in this branch. All quadratic terms contain $U\Gamma^2$. In sphere directions, $U\mathcal W_i$ vanishes on the projector; the spin and electric-flux terms each contribute half of the displayed answer.
+
+The remaining matrices preserve all three constraints. Their flatness is elementary: on the first sphere,
+$\mathcal A_3=b\Gamma^{45}$, $\mathcal A_4=-b\Gamma^{35}$, and $\mathcal A_5=b\Gamma^{34}$, so
+\begin{equation}\label{null:four-flatness}
+ [\mathcal A_3,\mathcal A_4]=-2b^2\Gamma^{34}
+ =C^5{}_{34}\mathcal A_5,\qquad C^5{}_{34}=-2b.
+\end{equation}
+Cyclic permutations and the second sphere are identical, and different factors commute. Thus $\Pi_4$ defines a parallel flat subbundle. Every allowed initial value extends uniquely on a simply connected patch, proving exactly four solutions.
+
+For mixed signs, the same preliminary elimination gives $\epsilon=P\epsilon$, but now
+\begin{equation}\label{null:mixed-obstruction}
+ H\Gamma^{58}Y\mathcal R_{0y}P
+ =-\frac{(s_+-s_-)abc\beta}{3}XY P.
+\end{equation}
+Left multiplication of a curvature equation is legitimate without assuming the multiplier invertible. The right-hand side is invertible on the candidate space: $s_+-s_-=\pm2$, $abc\beta\ne0$, and $(XY)^2=-1$. Hence $\epsilon=0$ in both mixed branches. No exceptional positive radius ratio escapes this argument.
+
+\subsection{The eight-supercharge branch}
+
+For $(s_+,s_-)=(+,+)$, the correct first equation is stronger than its $U$-multiple:
+\begin{equation}\label{null:eight-upper}
+ \mathcal R_{5y}=-\frac b{18}Y\Gamma^5BH,\qquad
+ \mathcal R_{02}P_H=\frac{a^2\beta}{2}\Gamma^{258}(1+2\Lambda)
+ (1+\beta\mathcal N)(1-J_N)P_H,
+ \quad J_N=(1-\beta\mathcal N)X.
+\end{equation}
+The first equality forces $H\epsilon=0$, but not $U\epsilon=0$. In the second equality all prefactors are invertible:
+$(\Gamma^{258})^2=-1$, $(1+2\Lambda)^{-1}=(2\Lambda-1)/3$, and
+$(1+\beta\mathcal N)^{-1}=1-\beta\mathcal N$. Hence $J_N\epsilon=\epsilon$ for $\beta\ne0$. Since $J_N^2=1$ and $[Q,J_N]=0$, the candidate projector
+\begin{equation}\label{null:eight-projector}
+ \Pi_8=\frac14(1-Q)(1+J_N)
+ =S_N\Pi_0S_N^{-1},\qquad
+ S_N=1-\frac\beta2\mathcal N
+\end{equation}
+has rank eight.
+
+Existence is again visible in a small connection table. Direct substitution of \eqref{null:spinconnection}--\eqref{null:slash} gives
+\begin{equation}\label{null:eight-connection}
+ \mathcal A_iS_N\Pi_0=S_N M_i\Pi_0,\qquad
+ \begin{aligned}
+ M_0=M_1&=\frac a2V\Gamma^2,& M_2&=-a\Lambda,\\
+ M_i&=-b\Gamma^iB\ (i=3,4,5),&
+ M_i&=-c\Gamma^iC\ (i=6,7,8),\\
+ M_x=M_y&=0.
+ \end{aligned}
+\end{equation}
+Each $M_i$ preserves $\Pi_0$. The sphere connections are flat by the calculation in \eqref{null:four-flatness}, with both Maurer--Cartan and connection signs reversed. In the AdS block,
+\begin{equation}\label{null:eight-flatness}
+ [M_0,M_2]=-2aM_0
+ =-a(1+\beta^2)M_0-a(1-\beta^2)M_1
+ =C^k{}_{02}M_k.
+\end{equation}
+The $(1,2)$ equation is the same and the $(0,1)$ equation vanishes. Thus the restricted connection is flat in the deformed frame itself: the equality $M_0=M_1$ removes the apparent $\beta^2$ obstruction. This supplies eight solutions and completes the upper-bound argument.
+
+The real structure in Appendix~\ref{app:clifford} commutes with these connections and projectors, so their complex ranks equal the dimensions of their Majorana real forms. The complete local count is therefore
+\begin{equation}\label{null:count}
+\begin{array}{c|cccc}
+ (s_+,s_-)&(+,+)&(-,-)&(+,-)&(-,+)\\\hline
+ N_{\rm local}\ (\beta\ne0)&8&4&0&0.
+\end{array}
+\end{equation}
+At $\beta=0$ the curvature factors responsible for the additional projections vanish, and every branch returns to the sixteen-supercharge seed. The proof assumes $a,b,c>0$; decompactifying sphere limits are outside this assertion.
+
+\subsection{Odd brackets and spectator symmetries}
+
+The map $S_N$ in \eqref{null:eight-projector} transports the positive-$X$ seed Killing spinors. It also preserves their physical vector brackets. To make the frame dependence explicit, let $K_0^i=\bar\epsilon_{01}\Gamma^i\epsilon_{02}$ and let $K_N^i$ use $S_N\epsilon_{0r}$. The linear terms in $\beta$ vanish by the seed $X$ projection, while the quadratic terms give
+\begin{equation}\label{null:vector-transport}
+ \begin{pmatrix}K_N^0\\K_N^1\end{pmatrix}
+ =\begin{pmatrix}1+\beta^2/2&\beta^2/2\\-\beta^2/2&1-\beta^2/2\end{pmatrix}
+ \begin{pmatrix}K_0^0\\K_0^1\end{pmatrix},\qquad
+ K_N^i=K_0^i\quad(i\ge2).
+\end{equation}
+The matrix displayed here is exactly the change of coframe from $\beta=0$ to \eqref{null:frame}; its inverse occurs in the dual vectors. Consequently $K_N^iE_i^N=K_0^iE_i^0$. The odd-generated algebra in the $(+,+)$ branch is the single real $\mathfrak d(2,1;\alpha)$ factor with the unchanged parameter \eqref{susy:exceptional-parameter}.
+
+The four-supercharge branch has a different odd bracket. In the explicit Majorana realization of Appendix~\ref{app:clifford}, choose $\mathcal C=B_M\Gamma^0$. Since $B_M$ is real and symmetric, $\bar\epsilon_1\Gamma^i\epsilon_2=\epsilon_1^\dagger\Gamma^0\Gamma^i\epsilon_2$. The Hermitian involution $\Lambda$ is $+1$ on $\Pi_4$; for $i\ge2$, $\Gamma^0\Gamma^i$ anticommutes with $\Lambda$. Thus
+\begin{equation}\label{null:four-bilinear}
+ K^0=-\epsilon_1^\dagger\epsilon_2,
+ \qquad K^1=\epsilon_1^\dagger\epsilon_2,
+ \qquad K^i=0\quad(i\ge2).
+\end{equation}
+Since $E_0-E_1=L^{-1}\partial_v$, every odd bracket is along the central null translation $\mathsf N=\partial_v$. The pairing is nondegenerate: on Majorana spinors $\epsilon^\dagger\epsilon$ is a positive real norm. This establishes nondegeneracy without a numerical bilinear rank test.
+
+The two full sphere $SU(2)$ actions have generators proportional to $\Gamma^iB/2$ and $\Gamma^mC/2$ on this space; each quadratic Casimir is $-3/4$. The four real spinors consequently carry the real form of $(\mathbf2,\mathbf2)$. With a common odd normalization their bracket can be written
+\begin{equation}\label{null:four-algebra}
+ \{Q_{a\dot a},Q_{b\dot b}\}
+   =\varepsilon_{ab}\varepsilon_{\dot a\dot b}\mathsf N,
+ \qquad[\mathsf N,Q]=0,
+ \qquad
+ (\mathfrak{su}(2)_+\oplus\mathfrak{su}(2)_-)\ltimes\mathfrak h_{1|4}.
+\end{equation}
+Here the final expression includes the sphere automorphisms; the odd generators alone generate only $\mathsf N$. Explicitly, take $\varepsilon_{12}=\varepsilon_{\dot1\dot2}=1$ and $(Q_{a\dot a})^*=-\varepsilon_{ab}\varepsilon_{\dot a\dot b}Q_{b\dot b}$. On this real form the pairing is negative definite: for coefficients satisfying the same reality condition, $\varepsilon_{ab}\varepsilon_{\dot a\dot b}z^{a\dot a}z^{b\dot b}=-2(|z^{1\dot1}|^2+|z^{1\dot2}|^2)$. Thus the sign agrees with \eqref{null:four-bilinear}; only a positive overall factor is absorbed in the real odd normalization. In particular this algebra is not $\mathfrak d(2,1;\alpha)$, whose odd part has dimension eight.
+
+The remaining null $\mathfrak{sl}(2,\mathbb R)$, two Hopf symmetries, and flat translations are even spectators on these four spinors. One can establish their trivial action without integrating a spinorial Lie derivative: they preserve the fields and commute with the two full sphere $SU(2)$ actions and with $\mathsf N$. The real $(\mathbf2,\mathbf2)$ representation is absolutely irreducible, so Schur's lemma makes any such action a real scalar $r$. The Jacobi identity with the nondegenerate bracket \eqref{null:four-algebra} then gives $2r=0$. These are local statements; a quotient and its spin structure may reduce the number of globally defined supercharges.

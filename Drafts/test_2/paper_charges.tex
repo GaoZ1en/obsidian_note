@@ -1,0 +1,115 @@
+% !TeX root = paper.tex
+\section{Flux charges, compact quotients and global restrictions}\label{sec:charges}
+\subsection{Which charges are defined?}
+Fix the normalization
+\begin{equation}
+\begin{gathered}
+2\kappa_{11}^2=(2\pi)^8\ell_p^9=16\pi G_{11},\\
+N_5=\frac{1}{(2\pi\ell_p)^3}\int_{\Sigma_4}F,\qquad
+Q_2^{\rm Page}=\frac{1}{(2\pi\ell_p)^6}\int_{\Sigma_7}
+\left(\star F+\frac12C_3\wedge F\right).
+\end{gathered}
+\label{charge:definitions}
+\end{equation}
+The distinction between Maxwell, Page and source charge matters in a theory with a Chern--Simons term~\cite{Marolf2000}. Locally, $F=\dd C_3$ and \eqref{eq:eom} give $\dd(\star F+C_3\wedge F/2)=0$. Page charge can nevertheless depend on a large-gauge representative. Maxwell flux is gauge invariant but is not generally closed when $F\wedge F\ne0$.
+
+On the internal space stated in the seed,
+\begin{equation}
+H_4(S^3_+\times S^3_-\times\mathbb R^2;\mathbb Z)
+=H_7(S^3_+\times S^3_-\times\mathbb R^2;\mathbb Z)=0.
+\end{equation}
+Thus the compact charge cycles used below are absent before an additional quotient. For noncompact $x$, the seed has the global potential $C_3=-x(f_Av_A+f_+v_++f_-v_-)$. Integrating over $S^3_\pm\times I_x$, or the corresponding electric open chain, defines regulated flux densities, not integer brane charges. In the orientation specified below they are
+\begin{equation}
+\rho_{5,\pm}=\frac{R_\pm^2}{2\pi\ell_p^3},\qquad
+\rho_2=\frac{R_+^3R_-^3}{8\pi^2L\ell_p^6}.
+\end{equation}
+The electric expression is a Maxwell density; an open-chain Page integral also needs endpoint gauge data.
+
+\subsection{Torus periods, orientations and deformation invariance}
+Now impose, as an additional choice,
+\begin{equation}
+x\sim x+\ell_x,\qquad y\sim y+\ell_y.
+\label{charge:quotient}
+\end{equation}
+These coordinate periods are the proper seed circumferences. Their proper values in \eqref{eq:non-null} are $s\ell_x,s\ell_y$. The fields descend because they are independent of $x,y$. The Killing spinors also descend with the periodic spin structure: the seed KSE forces $\partial_x\epsilon_0=\partial_y\epsilon_0=0$, the non-null map is independent of $x,y$, and both reduced null connections have vanishing flat components. Therefore this particular torus quotient preserves the stated local supersymmetries; arbitrary further quotients need not do so.
+
+Orient $\Sigma_{4,\pm}=S^3_\pm\times S^1_x$ by $v_\pm\wedge\dd x$. Since
+\begin{equation}
+\star e^{0129}=-e^{345678\,10},
+\end{equation}
+choose $\Sigma_{7,y}=S^3_+\times S^3_-\times S^1_y$ with orientation $-v_+\wedge v_-\wedge\dd y$. The seed integrals are then
+\begin{align}
+\int_{\Sigma_{4,\pm}}F_0&=\frac{2}{R_\pm}(2\pi^2R_\pm^3)\ell_x,\notag\\
+\int_{\Sigma_{7,y}}\star F_0&=\frac{2}{L}(2\pi^2R_+^3)(2\pi^2R_-^3)\ell_y.
+\end{align}
+For the displayed deformations, the inclusion $\iota:\Sigma_{7,y}\hookrightarrow M$ obeys
+\begin{equation}
+\iota^*F=0,\qquad
+\iota^*(C_3\wedge F)=0.
+\label{charge:page-reduction}
+\end{equation}
+The second equality holds in every potential patch; the same pullback kills a large-gauge shift on this specified cycle. Consequently its Page integral equals its Maxwell integral. This argument does not make arbitrary Page charges gauge independent.
+
+The resulting classical cycle integrals, in the natural normalization \eqref{eq:non-null}, are
+\begin{equation}
+\boxed{N_{5,\pm}=\frac{R_\pm^2\ell_x}{2\pi\ell_p^3},\qquad
+N_2=\frac{R_+^3R_-^3\ell_y}{8\pi^2L\ell_p^6}.}
+\label{charge:values}
+\end{equation}
+To establish their invariance, it is insufficient to observe that the added four-form is exact. Its magnetic pullback vanishes, but the electric integral also involves the changed Hodge star. In the seed coframe the relevant weights are
+\begin{equation}
+\frac{\operatorname{vol}(g')}{\operatorname{vol}(g_0)}=G^{-1/3},\qquad
+(g'^{-1})^{\otimes4}\big|_{v_A\wedge\dd x}=G^{1/3}.
+\label{charge:hodge-weights}
+\end{equation}
+The original electric term has one fibre and three base indices, so the weights cancel. Every term in $\star'\dd\Theta$ retains an AdS leg and vanishes on $\Sigma_{7,y}$. This proves \eqref{charge:values} at fixed seed radii and coordinate periods. For the null family, the $(u,v)$ metric block has determinant $-L^4/z^4$, independent of the amplitude. The original AdS volume and its internal dual are unchanged, while the added dual flux again retains an AdS leg. The same charges therefore apply to all its chirality branches.
+
+By contrast, an independent overall scaling at fixed integration domain gives
+\begin{equation}
+(g,F,C_3)\mapsto(s^2g,s^3F,s^3C_3),\qquad
+N_5\mapsto s^3N_5,\qquad N_2\mapsto s^6N_2.
+\label{charge:scaling}
+\end{equation}
+Here $\star_{s^2g}|_{\Omega^4}=s^3\star_g$. One must not assign the invariant charges of \eqref{eq:non-null} directly to its scale-removed fields \eqref{eq:scaled} with the same proper periods.
+
+\subsection{Quantization and the seed central charge}
+Quantization is an additional condition on \eqref{charge:values}, not an automatic consequence of compactification. Impose $N_{5,+},N_{5,-},N_2\in\mathbb Z_{>0}$. The tangent bundles of the spheres and torus are trivial, so the gravitational shift $p_1/4$ in the magnetic flux-quantization condition~\cite{Witten1996flux} vanishes on the cycles in question. Nonzero magnetic charge still requires patchwise potentials.
+
+The two magnetic periods share the same $\ell_x$. Hence
+\begin{equation}
+\frac{R_+^2}{R_-^2}=\frac{N_{5,+}}{N_{5,-}}\in\mathbb Q_{>0},\qquad
+\alpha=\frac{N_{5,-}}{N_{5,+}}.
+\label{charge:rationality}
+\end{equation}
+If the squared-radius ratio is irrational, no nonzero common $\ell_x$ makes both magnetic charges integral. Conversely, for $R_+^2/R_-^2=m/n$, one may choose $\ell_x=2\pi\ell_p^3m/R_+^2=2\pi\ell_p^3n/R_-^2$, then choose $\ell_y$ to obtain an integer electric charge. The continuous deformations above preserve these selected flux integers.
+
+As a check confined to the undeformed AdS background, the internal volume and effective Newton constant are
+\begin{equation}
+V_8=4\pi^4R_+^3R_-^3\ell_x\ell_y,\qquad
+G_{11}=16\pi^7\ell_p^9,\qquad G_3=G_{11}/V_8.
+\end{equation}
+With ordinary AdS Brown--Henneaux boundary conditions~\cite{BrownHenneaux1986},
+\begin{equation}
+c_L=c_R=\frac{3L}{2G_3}
+=\frac{6N_2N_{5,+}N_{5,-}}{N_{5,+}+N_{5,-}}.
+\label{charge:seed-central}
+\end{equation}
+This is a seed central charge. It is not a derivation of a warped asymptotic algebra. Without \eqref{charge:quotient}, the internal volume is infinite and this finite central charge is replaced, at most, by a regulated density.
+
+\subsection{Causality and the boundary of the local analysis}
+Local supersymmetry does not ensure a causal global completion. For the timelike branch, use a connection regular at the origin of the hyperbolic base,
+\begin{equation}
+\dd s_A^2=\frac{s^2L^2}{4}\left[
+\dd\rho^2+\sinh^2\rho\,\dd\phi^2
+-\lambda^2\big(\dd\tau+(\cosh\rho-1)\dd\phi\big)^2\right],
+\qquad\phi\sim\phi+2\pi.
+\end{equation}
+At fixed $\tau$, the closed angular circles have
+\begin{equation}
+g_{\phi\phi}=\frac{s^2L^2}{4}(\cosh\rho-1)
+\big[(1-\lambda^2)\cosh\rho+1+\lambda^2\big].
+\end{equation}
+For every nonzero timelike deformation, $\lambda>1$, this is negative when
+$\cosh\rho>(\lambda^2+1)/(\lambda^2-1)$. Unwrapping the time coordinate does not remove these base-angle circles. Different global constructions require their own causal and spinorial analysis.
+
+Finally, the local fields do not specify warped energy or angular momentum. Those observables require global identifications, integration surfaces, boundary falloffs, normalized generators, a boundary action and a reference zero. Brane-flux charges and the local Killing superalgebra do not supply the missing data. Thus the unspecified gravitational charges are not assigned the value zero, nor is \eqref{charge:seed-central} exported to the warped geometries.

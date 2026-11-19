@@ -1,0 +1,216 @@
+\section{Exact supersymmetry and the exceptional algebra}\label{sec:susy}
+
+The regular non-null solutions of Section~\ref{sec:geometry} preserve exactly eight local real supercharges whenever $\nu\ne0$; the undeformed solution preserves sixteen. We prove both statements directly from the eleven-dimensional Killing-spinor equation. We then determine the odd brackets, including their relative normalization, rather than identifying the superalgebra from the number of spinors alone. All statements in this section concern a simply connected local patch; descent to a quotient is a separate condition.
+
+\subsection{The seed solution space}
+
+We use the Clifford conventions of \eqref{eq:kse}, with the five-index gamma matrix fully antisymmetrized. For any four-form,
+\begin{equation}\label{susy:slash}
+ \mathscr D_i=\nabla_i+\frac1{12}\Gamma_i\slashed F
+ -\frac14\slashed{\iota_iF},\qquad
+ \slashed F=\frac1{4!}F_{jklm}\Gamma^{jklm},\qquad
+ \slashed{\iota_iF}=\frac1{3!}F_{ijkl}\Gamma^{jkl}.
+\end{equation}
+In particular, $\slashed F_0=2HX$. On the seed, the flat-direction equations and the equations within a three-dimensional factor are
+\begin{align}
+ \mathscr D_x&=\partial_x+\frac13H,&
+ \mathscr D_y&=\partial_y+\frac16YHX,\label{susy:seed-flat}\\
+ \mathscr D_i&=\nabla_i+\Gamma_i\left(\frac16H-\frac r2V\right)X,
+ & (r,V)&=(a,A),(b,B),(c,C),\label{susy:seed-factor}
+\end{align}
+where the last line applies to an index in the corresponding factor. The volume Clifford elements are parallel in the product metric. Using $\{H,V\}=2rV^2$ gives the mixed supercurvature
+\begin{equation}\label{susy:seed-upper}
+ [\mathscr D_y,\mathscr D_i]=\frac r{18}Y\Gamma_iVH.
+\end{equation}
+Since $r>0$ and $Y\Gamma_iV$ is invertible, every Killing spinor satisfies $H\epsilon=0$. No independence of $x$ or $y$ has been assumed: it follows from \eqref{susy:seed-flat} after imposing this necessary condition.
+
+The radius relation \eqref{eq:radii} implies
+\begin{equation}\label{susy:seed-projector}
+ H^2=0,\qquad AH=a(1+Q),\qquad Q^2=1,\qquad
+ \operatorname{tr}Q=0.
+\end{equation}
+Thus $\ker H=\operatorname{im}P_H$ has real dimension sixteen. On this subbundle the remaining equations become
+\begin{equation}\label{susy:seed-reduced}
+ \nabla_i\epsilon=\frac r2\Gamma_iVX\epsilon,
+ \qquad \partial_x\epsilon=\partial_y\epsilon=0.
+\end{equation}
+They preserve $\ker H$. To see their integrability explicitly, put
+$\chi_A=-1$ and $\chi_+=\chi_-=1$. Within factor $I$, the spin curvature is
+$\chi_Ir_I^2\Gamma_{ij}/2$, whereas
+\begin{equation}\label{susy:seed-flatness}
+ \left[\frac{r_I}{2}\Gamma_iV_IX,
+       \frac{r_I}{2}\Gamma_jV_IX\right]
+ =-\frac{\chi_Ir_I^2}{2}\Gamma_{ij}.
+\end{equation}
+The mixed commutators between distinct factors vanish. Hence the restricted superconnection is flat, and each initial value in $\ker H$ extends uniquely to a local solution. This proves that the seed has exactly sixteen real Killing spinors. Since $X$ commutes with $Q$, its two eigenspaces split these into two eight-dimensional sectors. We shall transport
+\begin{equation}\label{susy:seed-sector}
+ W=\operatorname{im}\Pi_0,\qquad H\epsilon_0=0,\qquad X\epsilon_0=\epsilon_0.
+\end{equation}
+The real count uses the Majorana spinor bundle of signature $(1,10)$; the real bosonic superconnection and the projectors preserve its real structure.
+
+\subsection{The full deformed connection and its kernel}
+
+For the scale-removed fields in \eqref{eq:scaled}, write
+$e^i=d_i\theta^i$, where $d_i=\lambda$ on the selected fibers $f,5,8$ and $d_i=1$ otherwise. Here $f=2$ for $\delta=1$ and $f=0$ for $\delta=-1$. Let $E_i$ be the dual vectors, and define structure constants by
+$\dd e^k=-\tfrac12 C^k{}_{ij}e^i\wedge e^j$. Their actual values and the superconnection are
+\begin{equation}\label{eq:connection}
+\begin{aligned}
+ C^k{}_{ij}&=C^{(0)k}{}_{ij}\frac{d_k}{d_id_j},
+ &C^{(0)k}{}_{ij}&=2r_I\eta^{kk}\varepsilon_{kij}
+ \quad (i,j,k\in I),\\
+ \mathscr D_i&=E_i+\mathcal A_i,
+ &\mathcal A_i&=\frac14\omega_{i ab}\Gamma^{ab}
+       +\frac1{12}\Gamma_i\mathcal F
+       -\frac1{24}\widetilde F_{iabc}\Gamma^{abc},\\
+ \omega_{i ab}&=\frac12(C_{aib}-C_{iba}+C_{bai}),
+ &\mathcal F=\slashed{\widetilde F}&=2H(X-\delta\nu P),
+ \qquad P=\Gamma^{f58}.
+\end{aligned}
+\end{equation}
+Here $C_{aib}=\eta_{ak}C^k{}_{ib}$, the structure constants vanish between distinct factors, and
+$\omega_{i ab}=\langle E_a,\nabla_{E_i}E_b\rangle$ is the Koszul connection. Formula~\eqref{eq:connection}, together with the explicit four-form in \eqref{eq:scaled}, specifies all eleven differential operators. The overall constant rescaling $(g,F)=(s^2\widetilde g,s^3\widetilde F)$ multiplies their orthonormal components by $s^{-1}$ and does not alter their kernel.
+
+The useful Clifford relations are
+\begin{equation}\label{susy:deformed-projector}
+ P^2=-\delta,\qquad [P,H]=0,\qquad \{P,X\}=0,
+ \qquad J=(\lambda+\delta\nu P)X,
+ \qquad \Pi=\frac14(1-Q)(1+J).
+\end{equation}
+Since $\lambda^2+\delta\nu^2=1$, one has $J^2=1$, $[J,Q]=0$ and $\operatorname{tr}\Pi=8$. These algebraic conditions become sufficient for the full differential equation through the invertible map
+\begin{equation}\label{susy:spinor-map}
+ S=\frac{1+\lambda+\delta\nu P}{\sqrt{2(1+\lambda)}},
+ \qquad S^2=\lambda+\delta\nu P,\qquad
+ SXS^{-1}=J,\qquad [S,H]=0.
+\end{equation}
+In fact, substitution in \eqref{eq:connection} gives, for every direction,
+\begin{equation}\label{susy:transport}
+ d_i\mathcal A_i S\Pi_0=S\mathcal A_i^{(0)}\Pi_0.
+\end{equation}
+Here $\mathcal A_i^{(0)}$ is obtained by setting $\lambda=1$, $\nu=0$ in the same connection. The identity follows using $H\Pi_0=0$, $X\Pi_0=\Pi_0$, $P^2=-\delta$, and $\lambda^2+\delta\nu^2=1$; it includes the flat directions. Importantly, the dual vectors also obey $E_i=d_i^{-1}E_i^{(0)}$. Since $S$ has constant components in these frames, \eqref{susy:transport} is the differential intertwining identity
+\begin{equation}\label{susy:operator-transport}
+ d_i\mathscr D_i(S\epsilon_0)=S\mathscr D_i^{(0)}\epsilon_0.
+\end{equation}
+Thus every seed solution in $W$ gives a deformed solution $\epsilon=S\epsilon_0$. This establishes eight independent local solutions without assuming that their frame components are constant.
+
+To exclude additional solutions, the noncoordinate-frame curvature must include the structure-constant term:
+\begin{equation}\label{susy:curvature-definition}
+ \mathcal R_{ij}=[\mathcal A_i,\mathcal A_j]-C^k{}_{ij}\mathcal A_k.
+\end{equation}
+Two components of this operator suffice. Direct reduction of \eqref{eq:connection} yields
+\begin{align}
+ \mathcal R_{5y}&=-\frac{b\lambda^2}{18}Y\Gamma_5BH,
+ \label{susy:upper-H}\\
+ \mathcal R_{34}P_H&=
+ \delta b^2\nu\,\Gamma^{34}P(\lambda-\delta\nu P)(1-J)P_H.
+ \label{susy:upper-J}
+\end{align}
+The first identity forces $H\epsilon=0$ because $b\lambda>0$. In the second, $\Gamma^{34}$ and $P$ are invertible, and
+\begin{equation}\label{susy:invertible}
+ (\lambda-\delta\nu P)(\lambda+\delta\nu P)=1.
+\end{equation}
+For $\nu\ne0$, it therefore forces $J\epsilon=\epsilon$. The upper bound is precisely the eight-dimensional space already constructed. Consequently
+\begin{equation}\label{susy:count}
+ N_{\mathrm{local}}=8\quad(\nu\ne0),\qquad
+ N_{\mathrm{local}}=16\quad(\nu=0).
+\end{equation}
+This argument applies to both signs of $\delta$ throughout the nondegenerate parameter domain. In particular, it excludes additional supersymmetry at special finite positive radius ratios.
+
+\subsection{Normalized seed brackets}
+
+We determine the seed bracket in the sector $W$ before transporting it. For a Majorana pairing $\bar\epsilon=\epsilon^T\mathcal C$, use
+$(\Gamma^i)^T\mathcal C=-\mathcal C\Gamma^i$ and $\mathcal C^T=-\mathcal C$. If $M^\sharp=\mathcal C^{-1}M^T\mathcal C$, then
+\begin{equation}\label{susy:pairing}
+ \Pi_0^\sharp=\frac14(1+Q)(1-X),\qquad
+ \Pi_0^\sharp A=A\Pi_0,\qquad
+ \Omega(\epsilon,\chi)=\bar\epsilon A\chi.
+\end{equation}
+Since $A^2=1$, the last expression is a nondegenerate alternating pairing on $W$.
+
+Let $K_j$ denote the surviving opposite-side invariant Killing fields, normalized by $K_j(o)=E_j^{(0)}(o)$ at a reference point. Their brackets and the radius-independent generators are
+\begin{equation}\label{susy:even-normalization}
+ [K_j,K_k]=-2r_I\eta^{\ell\ell}\varepsilon_{jk\ell}K_\ell,
+ \qquad T_j=-\frac{K_j}{2r_I},\qquad j,k\in I.
+\end{equation}
+These $K_j$ are not globally the left-invariant frame vectors. At $o$,
+$\nabla_a(K_j)_b=r_I\varepsilon_{jab}$. Combining this identity with \eqref{susy:seed-reduced} in the spinorial Lie derivative gives
+\begin{equation}\label{susy:even-odd}
+ \mathcal L_K\epsilon=K^i\nabla_i\epsilon+\frac14(\nabla_iK_j)\Gamma^{ij}\epsilon,
+ \qquad
+ \rho(T_j)\epsilon=-\frac12\Gamma_jV_I\epsilon.
+\end{equation}
+The three commuting sets of degree-two Clifford matrices preserve $W$ and $\Omega$, realizing the real form of $(\mathbf2,\mathbf2,\mathbf2)$. Their invariant alternating pairing is unique up to normalization.
+
+The relation between this pairing and the physical vector current is
+\begin{equation}\label{susy:compression}
+ r_I\bar\epsilon A\Gamma_jV_I\chi
+ =a\bar\epsilon\Gamma_j\chi,
+ \qquad \epsilon,\chi\in W,
+ \qquad (r_I,V_I)=(a,A),(b,B),(c,C).
+\end{equation}
+For the AdS factor this is immediate from $A^2=1$. A short projector argument proves the spherical identities. Put
+$\mathsf S=AB$, $\mathsf T=AC$, $p=b/a$, $q=c/a$ and
+$Q'= -p\mathsf S+q\mathsf T$. With
+$P_-=(1-Q)/2$ and $P'_+=(1+Q')/2$, one has
+\begin{equation}\label{susy:compression-proof}
+ 2pP'_+\mathsf SP_-=P'_+(Q-Q')P_-=-2P'_+P_-.
+\end{equation}
+For $j$ in the plus sphere, $Q\Gamma_j=\Gamma_jQ'$ and
+$A\Gamma_jB=-\Gamma_j\mathsf S$. Inserting the projectors on both spinors in \eqref{susy:compression-proof} gives \eqref{susy:compression} with $r_I=b$. Interchanging $(\mathsf S,p)$ and $(\mathsf T,q)$ proves the minus-sphere identity. Both divisions are legitimate for finite positive radii.
+
+Normalize the invariant form on each simple Lie algebra by a common trace convention,
+\begin{equation}\label{susy:invariant-form}
+ h_I(U,V)=-2\operatorname{tr}_{\mathbf2}\bigl(\rho(U)\rho(V)\bigr),
+ \qquad h_I(T_j,T_k)=\chi_I\eta_{jk}.
+\end{equation}
+Define symmetric moment maps $\mu_I:W\times W\to\mathfrak g_I$ by
+\begin{equation}\label{susy:moment-map}
+ h_I\bigl(\mu_I(\epsilon,\chi),T_j\bigr)
+ =\Omega\bigl(\epsilon,\rho(T_j)\chi\bigr).
+\end{equation}
+Writing $\kappa^j=\bar\epsilon\Gamma^j\chi$, equations
+\eqref{susy:compression} and \eqref{susy:even-odd} imply
+\begin{equation}\label{susy:moment-coefficients}
+ \Omega\bigl(\epsilon,\rho(T_j)\chi\bigr)
+ =-\frac{a}{2r_I}\kappa_j,
+ \qquad
+ \mu_I=-\frac{\chi_Ia}{2r_I}\kappa^jT_j.
+\end{equation}
+The flat components of the vector current vanish by the $Q$ and $X$ projections. Equivariance selects the three simple-factor Killing fields in \eqref{susy:even-normalization}; there is no invariant symmetric scalar pairing that could produce a spectator vector. Thus their normalized coefficients give
+\begin{equation}\label{susy:seed-odd-bracket}
+ K_0(\epsilon,\chi)
+ =-\sum_I2r_I\kappa^jT_j
+ =4a\left(-\mu_A+\frac{b^2}{a^2}\mu_+
+                    +\frac{c^2}{a^2}\mu_-\right).
+\end{equation}
+The common factor is removed by choosing the invariant odd pairing
+$\Omega_{\mathrm{std}}=4a\Omega$, whose moment maps are
+$\mu_I^{\mathrm{std}}=4a\mu_I$. Relative to these normalized invariant tensors the odd-bracket coefficients are therefore
+\begin{equation}\label{susy:exceptional-parameter}
+ (-1,\gamma_+,\gamma_-),\qquad
+ \gamma_+=\frac{b^2}{a^2}=\frac{L^2}{R_+^2},\qquad
+ \gamma_-=\frac{c^2}{a^2}=\frac{L^2}{R_-^2},\qquad
+ \alpha=\frac{\gamma_+}{\gamma_-}=\frac{R_-^2}{R_+^2}.
+\end{equation}
+Their sum vanishes by the radius relation, as required by the odd Jacobi identity, and none vanishes at finite positive radii. Together with \eqref{susy:even-odd}, these brackets define the real form of $\mathfrak d(2,1;\alpha)$ with even algebra
+$\mathfrak{sl}(2,\mathbb R)\oplus\mathfrak{su}(2)_+\oplus\mathfrak{su}(2)_-$, in agreement with the seed superalgebra described in \cite{BachasEtAl2014}. Our convention defines $\alpha$ by the ratio of the two compact bracket coefficients; exchanging the spheres sends $\alpha$ to $\alpha^{-1}$. Thus the algebra parameter displayed in Eq.~(3.20) of Ref.~\cite{Noris2026} is $\alpha^{-1}$ in our convention.
+
+\subsection{Transport of the odd brackets}
+
+The spinor map \eqref{susy:spinor-map} also determines the deformed vector bilinears. Since $P^\sharp=P$, one has $S^\sharp=S$. The Clifford element $P$ anticommutes with a base gamma matrix and commutes with a fiber gamma matrix. Consequently
+\begin{align}
+ \overline{S\epsilon_1}\Gamma^iS\epsilon_2
+ &=\bar\epsilon_1\Gamma^i\epsilon_2,
+ &&i\text{ a base index},\label{susy:base-bilinear}\\
+ \overline{S\epsilon_1}\Gamma^fS\epsilon_2
+ &=\lambda\bar\epsilon_1\Gamma^f\epsilon_2
+   +\delta\nu\bar\epsilon_1\Gamma^fP\epsilon_2,
+ &&f\text{ a fiber index}.\label{susy:fiber-bilinear}
+\end{align}
+The additional term vanishes: $\Gamma^fP$ commutes with $X$, whereas $X\epsilon_j=\epsilon_j$ and $X^\sharp=-X$. Including the physical inverse frame, which scales by $s^{-1}$ on the base and $(s\lambda)^{-1}$ on the fibers, gives the equality of coordinate vector fields
+\begin{equation}\label{susy:vector-transport}
+ K'(S\epsilon_1,S\epsilon_2)=s^{-1}K_0(\epsilon_1,\epsilon_2).
+\end{equation}
+Thus the map $\epsilon\mapsto\sqrt{s}\,S\epsilon$ preserves the odd-odd bracket exactly. It is also equivariant under the surviving
+$SL(2,\mathbb R)\times SU(2)_+\times SU(2)_-$ action: the coframe tensors defining $S$ are invariant under that action, and \eqref{susy:operator-transport} intertwines the corresponding spinor solutions. Hence the even-odd brackets are transported as well.
+
+For every regular nonzero deformation, the complete odd space is the image of $W$. Its odd-generated Killing superalgebra is therefore a single $\mathfrak d(2,1;\alpha)$ with the unchanged parameter \eqref{susy:exceptional-parameter}. This statement distinguishes the algebra generated by the Killing spinors from an enlarged symmetry algebra that also includes bosonic spectator isometries. At $\nu=0$, the second seed spinor sector returns; the eight-supercharge conclusion is not asserted at that endpoint.

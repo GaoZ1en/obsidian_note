@@ -1,0 +1,136 @@
+% !TeX root = paper.tex
+\section{Homogeneous deformations and the flux constraint}\label{sec:geometry}
+\subsection{Theory, orientation and seed geometry}
+We work in the classical, source-free, two-derivative theory~\cite{CremmerJuliaScherk1978}, with mostly-plus signature and orientation $e^{0\cdots10}$. For an orthonormal coframe, $e^{i_1\cdots i_p}$ denotes its ordered wedge product. Our equations are
+\begin{align}
+\dd F&=0,& \dd\star F+\tfrac12F\wedge F&=0,\notag\\
+R_{MN}&=\frac1{12}\left(F_{MPQR}F_N{}^{PQR}-\frac1{12}g_{MN}F^2\right),&
+F^2&=F_{MNPQ}F^{MNPQ}.\label{eq:eom}
+\end{align}
+The Killing-spinor equation is
+\begin{equation}
+\mathscr D_M\epsilon=\left(\nabla_M+\frac1{12}\Gamma_M\slashed F
+-\frac14\slashed{\iota_M F}\right)\epsilon=0,
+\qquad \slashed F=\frac1{4!}F_{NPQR}\Gamma^{NPQR}.
+\label{eq:kse}
+\end{equation}
+Equivalently, its flux term is $(\Gamma_M{}^{NPQR}-8\delta_M^N\Gamma^{PQR})F_{NPQR}/288$, with the five-index gamma matrix \emph{fully antisymmetrized}. We take $\Gamma^{0\cdots10}=-1$. The orientation, this central Clifford sign, and the sign of the Chern--Simons term are held fixed together. Appendix~\ref{app:clifford} gives an explicit representation and Majorana structure.
+
+Indices are grouped as $(012)_A,(345)_+,(678)_-,9=x,10=y$. The seed is
+\begin{align}
+g_0&=g_A(L)+g_+(R_+)+g_-(R_-)+\dd x^2+\dd y^2,\notag\\
+F_0&=(f_Av_A+f_+v_++f_-v_-)\wedge\dd x,
+& f_A&=\frac2L,\qquad f_\pm=\frac2{R_\pm},\label{eq:seed}\\
+L^{-2}&=R_+^{-2}+R_-^{-2}.\label{eq:radii}
+\end{align}
+All radii are finite and positive. The $v_I$ are physical volume forms of the \emph{seed}, so that $\int_{S^3_\pm}v_\pm=2\pi^2R_\pm^3$. In particular, equality of radii is not assumed. The flat Einstein equations give $F_0^2=24(-f_A^2+f_+^2+f_-^2)=0$; the curved factors then have Ricci eigenvalues $-2/L^2,2/R_+^2,2/R_-^2$. The other equations follow from closure of the factor volume forms and $F_0\wedge F_0=0$.
+
+For the spinorial calculations we use
+\begin{gather}
+a=L^{-1},\qquad b=R_+^{-1},\qquad c=R_-^{-1},\qquad a^2=b^2+c^2,\notag\\
+A=\Gamma^{012},\quad B=\Gamma^{345},\quad C=\Gamma^{678},\quad
+X=\Gamma^9,\quad Y=\Gamma^{10},\notag\\
+H=aA+bB+cC,\qquad Q=\frac baAB+\frac caAC,\qquad
+P_H=\frac{1-Q}{2},\qquad \Pi_0=P_H\frac{1+X}{2}.\label{eq:clifford-data}
+\end{gather}
+Here $A^2=1$, $B^2=C^2=-1$ and the three volume elements anticommute. Consequently $H^2=0$, $Q^2=1$, and $H\epsilon=0$ is equivalent to $Q\epsilon=-\epsilon$.
+
+\subsection{The non-null three-fibre family}
+Choose orthonormal Maurer--Cartan forms on each seed factor, with
+\begin{equation}
+\dd\theta^i=-\frac12C^{(0)i}{}_{jk}\theta^{jk},\qquad
+C^{(0)i}{}_{jk}=f_I\eta^{ii}\varepsilon_{ijk}
+\quad(i,j,k\text{ in factor }I).
+\label{eq:mc}
+\end{equation}
+The ordered triples defining $\varepsilon$ are $(012),(345),(678)$. Select sphere fibres $5,8$, and AdS fibre $f=2$ for spacelike warping or $f=0$ for timelike warping. Set $\delta=\eta_{ff}=\pm1$. In particular, the timelike convention has $\dd\theta^0=+f_A\theta^{12}$ while $\dd\theta^5=-f_+\theta^{34}$ and $\dd\theta^8=-f_-\theta^{67}$. These relative choices are part of the supersymmetric ansatz.
+
+Let $g_{\rm base}$ denote the seed metric with these three fibre squares removed, including both flat directions, and put $\Theta=\theta^f\wedge\theta^5\wedge\theta^8$. For real $\widehat\gamma$ define
+\begin{align}
+G&=(1+\delta\widehat\gamma^2)^{-1}>0,\notag\\
+g'&=G^{-1/3}g_{\rm base}
++G^{2/3}\big[\delta(\theta^f)^2+(\theta^5)^2+(\theta^8)^2\big],\notag\\
+F'&=F_0+\delta\widehat\gamma G\,\dd\Theta.\label{eq:non-null}
+\end{align}
+The three fibre-to-base length ratios coincide. It is useful to remove a constant overall scale:
+\begin{gather}
+s=G^{-1/6},\qquad \lambda=\sqrt G,\qquad
+\nu=\widehat\gamma\sqrt G,\qquad \lambda^2+\delta\nu^2=1,\notag\\
+\widetilde g=s^{-2}g'=g_{\rm base}+\lambda^2
+\big[\delta(\theta^f)^2+(\theta^5)^2+(\theta^8)^2\big],\qquad
+\widetilde F=s^{-3}F'=\lambda F_0+\delta\lambda^2\nu\,\dd\Theta.
+\label{eq:scaled}
+\end{gather}
+This is the classical scaling symmetry $(g,F)\mapsto(s^2g,s^3F)$, not a metric rescaling at fixed flux. The orthonormal frame of $\widetilde g$ is $e^i=d_i\theta^i$, where $d_i=\lambda$ on the three fibres and $d_i=1$ otherwise. In the spacelike branch $0<\lambda\leq1$ and $|\nu|<1$; in the timelike branch $\lambda\geq1$ and $\nu\in\mathbb R$, equivalently $|\widehat\gamma|<1$. The endpoint $\lambda=0$ is excluded.
+
+For comparison with the source, the scale-removed metric has $\lambda_{\rm N}=\omega_{\rm N}=\lambda$ in Eqs.~(3.13) and (3.21) of Ref.~\cite{Noris2026}. With $R_{0,\rm N}=L$, $A_0=2\theta^f$ and $A_\pm=2\theta^{5,8}$, its boundary flux is obtained\footnote{Take $x=z_1$, $y=-z_2$ and $v_I=-R_I^3v^{(\rm N)}_{I,0}$, where $v^{(\rm N)}_{I,0}$ is the source's unit-radius undeformed volume form. Reversing one horizontal leg in each three-factor, together with $y$, preserves the eleven-dimensional orientation and gives \eqref{eq:mc}. The electric-leg ordering contributes the compensating minus sign.} by taking $\nu=\sqrt{1-\lambda^2}$ in the spacelike case and $\nu=-\sqrt{\lambda^2-1}$ in the timelike case. The more general terms proportional to $\sqrt{\lambda_{\rm N}^2-\omega_{\rm N}^2}$ are not reconstructed here.
+
+\subsection{Existence and a restricted necessity theorem}
+The field equations can be reduced while initially allowing independent squashing ratios. This makes explicit which equality is forced, rather than built into the starting geometry. Let $h_I=q_I\theta_I$ be the three orthonormal fibre forms, $q_I>0$, and $\Omega_I$ their horizontal area forms. Choose
+\begin{equation}
+\dd\Omega_I=0,\qquad \dd h_I=c_I\Omega_I,
+\qquad c_A=-\delta q_Af_A,\quad c_+=-q_+f_+,\quad c_-=-q_-f_-.
+\label{eq:hopf-curvatures}
+\end{equation}
+Thus $\Omega_A$ has norm squared $-\delta$, and the other area forms have norm squared $1$. For $f=2$, $\Omega_A=\theta^{01}$; for $f=0$, $\Omega_A=\theta^{12}$. Write precisely the following six flux components:
+\begin{align}
+F={}&\sum_{I=A,+,-}\mathcal E_I\,\Omega_I\wedge h_I\wedge\dd x
++\mathcal T_A\Omega_A\wedge h_+\wedge h_-\notag\\
+&+\mathcal T_+h_A\wedge\Omega_+\wedge h_-
++\mathcal T_-h_A\wedge h_+\wedge\Omega_-.
+\label{eq:six-flux}
+\end{align}
+The metric is a strict product of these Berger factors and the unwarped flat $x,y$ plane; all coefficients are constant. No other invariant four-form is admitted in this lemma.
+
+Define $S_E=-\mathcal E_A^2+\mathcal E_+^2+\mathcal E_-^2$ and $S_T=-\mathcal T_A^2+\mathcal T_+^2+\mathcal T_-^2$. Since $F^2=24(S_E+\delta S_T)$, the two flat equations are
+\begin{equation}
+0=R_{yy}=-\frac{F^2}{144},\qquad
+0=R_{xx}=\frac12S_E-\frac{F^2}{144}.
+\label{eq:flat-equations}
+\end{equation}
+They imply $F^2=S_E=S_T=0$. For $\chi_A=-1$, $\chi_+=\chi_-=1$, the geometric Ricci eigenvalues and the flux stress eigenvalues are respectively
+\begin{align}
+\frac{R^{(I)}_{\rm base}}{g^{(I)}_{\rm base}}
+&=\chi_If_I^2\left(1-\frac{q_I^2}{2}\right)
+=\frac{\chi_I}{2}(\mathcal E_I^2+\delta\mathcal T_I^2),\notag\\
+\frac{R^{(I)}_{\rm fibre}}{g^{(I)}_{\rm fibre}}
+&=\frac{\chi_If_I^2q_I^2}{2}
+=\frac{\chi_I}{2}(\mathcal E_I^2-\delta\mathcal T_I^2).
+\label{eq:ricci}
+\end{align}
+The geometric expressions follow by inserting the rescaled structure constants $C^k{}_{ij}=C^{(0)k}{}_{ij}d_k/(d_id_j)$ in the Koszul connection. Adding and subtracting the two equations gives
+\begin{equation}
+\mathcal E_I^2=f_I^2,\qquad
+\mathcal T_I^2=\delta f_I^2(1-q_I^2).
+\label{eq:stress-solution}
+\end{equation}
+Closure of \eqref{eq:six-flux} has three independent coefficients:
+\begin{equation}
+\mathcal T_Ac_++\mathcal T_+c_A=0,\qquad
+-\mathcal T_Ac_-+\mathcal T_-c_A=0,\qquad
+-\mathcal T_+c_--\mathcal T_-c_+=0.
+\label{eq:six-bianchi}
+\end{equation}
+Because every $c_I$ is nonzero, there is a real $\zeta$ such that
+$\mathcal T_A/c_A=-\mathcal T_+/c_+=\mathcal T_-/c_-=\zeta$. Equations~\eqref{eq:stress-solution} then imply
+\begin{equation}
+q_A^2=q_+^2=q_-^2=\frac1{1+\delta\zeta^2},\qquad
+f_A^2=f_+^2+f_-^2.
+\label{eq:squash-necessity}
+\end{equation}
+The second relation follows from $S_E=0$. This proves necessity within \eqref{eq:six-flux}, including the undeformed branch. It does not yet prove the Maxwell equation, and it is not a statement about all invariant fluxes.
+
+For existence, \eqref{eq:scaled} has $q_I=\lambda$, $\mathcal E_I=f_I$, and
+\begin{equation}
+\mathcal T_A=-\nu f_A,\qquad
+\mathcal T_+=\delta\nu f_+,\qquad
+\mathcal T_-=-\delta\nu f_-.
+\label{eq:magnetic-amplitudes}
+\end{equation}
+Every pair of the six four-forms has a repeated index, hence $F\wedge F=0$. The electric Hodge-duals are closed. Differentiating the magnetic duals leaves a single coefficient,
+\begin{equation}
+\delta(-c_A\mathcal T_A-c_+\mathcal T_++c_-\mathcal T_-)
+=-\lambda\nu(f_A^2-f_+^2-f_-^2)=0.
+\label{eq:maxwell-coefficient}
+\end{equation}
+Together with \eqref{eq:ricci}, this verifies all equations of motion. The restriction to six forms is essential: Appendix~\ref{app:unequal} gives an unequal-sphere solution with nonzero $F^2$ and $F\wedge F$, including a point with exactly eight real supercharges.

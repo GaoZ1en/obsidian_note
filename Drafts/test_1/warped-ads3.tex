@@ -1,0 +1,217 @@
+% !TeX program = pdflatex
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage[margin=29mm,top=25mm,bottom=27mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{cite}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,bookmarksnumbered=true]{hyperref}
+\hypersetup{pdftitle={Supersymmetric warped AdS3 with two Hopf-deformed three-spheres in eleven dimensions},pdfauthor={}}
+\numberwithin{equation}{section}
+\setlength{\emergencystretch}{1.2em}
+\setcounter{tocdepth}{1}
+\newcommand{\AdS}{\mathrm{AdS}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\dd}{\mathrm{d}}
+\title{Supersymmetric warped $\AdS_3$ with two\protect\\ Hopf-deformed three-spheres in eleven dimensions}
+\author{}\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+we construct new families of supersymmetric solutions of eleven-dimensional supergravity by deforming the half-BPS $\displaystyle{\mathrm{AdS}_{3}\times S^{3}_{+}\times S^{3}_{-}\times \mathbb{R}^{2}}$ background. we consider lightlike, spacelike and timelike warpings of the anti-de Sitter factor, accompanied by deformations of the two three-spheres, and determine the supporting four-form fluxes and the constraints imposed by the equation of motion. in particular, the deformation parameters of the two spheres are necessarily equal, although their radii need not coincide. we compute the conserved charges and determine the preserved supersymmetries and Killing superalgebras. generic lightlike solutions preserve four real supercharges, whereas spacelike and timelike solutions preserve eight, with a Killing superalgebra containing a single exceptional $\displaystyle{\mathfrak{d}(2,1;\alpha)}$ factor.
+\end{abstract}
+
+\section{Introduction}
+
+The near-horizon geometry $\AdS_3\times S^3_+\times S^3_-\times\mathbb R^2$ has two independent sphere rotation groups but only one ratio of curvature scales. In the intersecting-brane solution this ratio fixes the relative strengths with which the two rotations enter the supersymmetry algebra: each chiral sector of the throat carries a copy of $\mathfrak d(2,1;\alpha)$ \cite{BPS,GGP}. A Hopf deformation distinguishes one direction on each sphere without changing the group manifold. Once the full rotation symmetry is lost, there is no kinematical reason why the two Hopf fibres should undergo the same fractional change. This raises a dynamical question: can the eleven-dimensional four-form support two independent squashings while also supporting a warp of the anti-de Sitter metric?
+
+The distinction between spacelike, timelike and null warping is familiar from three-dimensional gravity \cite{Anninos}. Warped geometries also arise from brane intersections in type II string theory \cite{Orlando}; supersymmetric deformations of $\AdS_3\times S^3\times T^4$ give a setting in which the curvature of a single sphere accompanies the AdS warp \cite{HST}. With two curved spheres there is a further observable: the ratio of their magnetic fluxes. One can ask whether the warp preserves not only supersymmetry but also the value of $\alpha$ measured by that ratio. We use the three-isometry deformation of Lunin and Maldacena \cite{LM}, with the eleven-dimensional uplift and flux transformation of Refs.~\cite{GLMW,CD}. The transformation acts on an AdS isometry and the two Hopf isometries. In the null case the AdS generator can be combined with a flat translation; this gives a null warp of $\AdS_3$ even when the two spheres are not round. The transformation supplies candidate fields. It does not, by itself, establish the necessity of equal squashings or exclude additional Killing spinors that depend on the deformation coordinates.
+
+We restrict to a diagonal product of Hopf fibrations and distinguish the two chiral actions on each group manifold. For a non-null AdS fibre we choose the three isometries in one chiral sector; for a null fibre the two sphere Hopfs lie in one sector and the AdS generator in the other. It is for these choices, and for the flux components specified below, that the counts in the abstract hold. Closure constrains the relative coefficients of the mixed four-form, and the difference between horizontal and vertical Einstein equations then fixes the same fibre-to-base ratio on both spheres. The relation constrains a dimensionless shape, not a magnetic charge. Indeed the magnetic periods are unchanged, as is the electric Page charge, although the electric Maxwell flux changes on the null branch. We obtain the spinor count from the eleven-dimensional supercovariant curvature. In the non-null branches two curvature components yield an eight-dimensional space of initial data, all of which integrate to Killing spinors. In the null branch one chiral AdS doublet contributes only its nilpotent-invariant line; a nonvanishing curvature minor rules out further spinors on an open dense set. The difference is visible in the odd bracket: the eight spinors generate a single exceptional superalgebra, whereas the four generic null spinors square to the AdS null translation.
+
+\section{A three-isometry deformation of the brane throat}\label{sec:fields}
+
+\subsection{Choice of commuting directions}
+
+We work on the simply connected cover and use mostly plus signature. The metric $g_0$ is the product of $\widetilde{\AdS}_3(L)$, the round spheres $S^3_\pm(R_\pm)$ and the Euclidean plane with length coordinates $x,y$. Set $R_0=L$. Denote the three oriented physical volume forms by $V_0,V_+,V_-$, and orient the product by $V_0V_+V_-\,\dd x\,\dd y$. Juxtaposition of forms denotes exterior multiplication unless a metric is being written. With $\langle F,F\rangle=F_{abcd}F^{abcd}/4!$, the two-derivative bosonic equations of eleven-dimensional supergravity \cite{CJS} in our conventions are
+\begin{align}
+ \dd F&=0, & \dd\star F+\tfrac12 F\wedge F&=0,\nonumber\\
+ R_{ab}&=\tfrac12\langle\iota_a F,\iota_b F\rangle-\tfrac16 g_{ab}\langle F,F\rangle .\label{eq:eom}
+\end{align}
+For Clifford multiplication $\not\!H=H_{a_1\ldots a_p}\Gamma^{a_1\ldots a_p}/p!$, the Majorana Killing-spinor equation is
+\begin{equation}
+ \mathcal D_a\epsilon=\nabla_a\epsilon+\tfrac1{12}\Gamma_a\not\!F\epsilon-\tfrac14\not\!{(\iota_a F)}\epsilon=0 .\label{eq:kse}
+\end{equation}
+Choose the seed flux and the three positive inverse length scales as
+\begin{equation}
+ F_0=(q_0 V_0+q_+V_++q_-V_-)\dd x,\qquad q_i=2/R_i,\qquad q_0^2=q_+^2+q_-^2 .\label{eq:seed}
+\end{equation}
+The last equality is the $xx$ Einstein equation. It makes $\langle F_0,F_0\rangle=0$; the Ricci endomorphism on the three curved factors has respective eigenvalues $-q_0^2/2,q_+^2/2,q_-^2/2$. The other flat direction $y$, absent from $F_0$, will play a different role from $x$ in both the deformation and the charges.
+
+View the curved factors as group manifolds. Let $H_i$ be a unit Hopf generator on sphere $i=+,-$ and let $A$ be a constant-norm generator of one of the AdS translation groups. On the spheres set
+\begin{equation}
+ \eta_i=H_i^\flat,\qquad B_i=\iota_{H_i}V_i,\qquad V_i=B_i\eta_i,\qquad \dd\eta_i=t_i B_i,\quad |t_i|=q_i .\label{eq:hopf}
+\end{equation}
+The sign specifies the invariant coframe relative to the flux orientation. All duals in this construction use $g_0$. Write $a=A^\flat$, $r=g_0(A,A)$ and take as commuting deformation directions
+\begin{equation}
+ (W,H_+,H_-),\qquad W=A+c\partial_y,\quad w=W^\flat=a+c\,\dd y,\quad P=r+c^2 .\label{eq:legs}
+\end{equation}
+Thus $P$ is the determinant of the Gram matrix of the three generators, not in general the norm of the preferred AdS direction. We take either $r=\pm1$ with $c=0$, or $A=n\ne0$ null with $c$ arbitrary. For real $\gamma$ let $D=1+\gamma^2P>0$ and $G=D^{-1}$. In these three families the fields, written before any change of coordinates, are
+\begin{equation}
+ \boxed{\begin{aligned}
+ g&=D^{1/3}\bigl[g_0-\gamma^2G\bigl(w^2+P(\eta_+^2+\eta_-^2)\bigr)\bigr],\\
+ F&=F_0+\gamma G\,\dd(w\eta_+\eta_-)-\gamma c q_0 B_+ B_- .
+ \end{aligned}}\label{eq:fields}
+\end{equation}
+The squares in the first line are symmetric tensor squares.
+
+For $P>0$ these expressions follow from local reduction along \eqref{eq:legs}. The seed has zero internal three-form axion and no component of $F_0$ with two of the selected legs. The triangular $SL(2,\mathbb R)$ transformation on the scalar $\tau=i\sqrt P$ gives
+\begin{equation*}
+ \tau'=\frac{\tau}{1+\gamma\tau}=\frac{\gamma P+i\sqrt P}{D} .
+\end{equation*}
+The new axion is $\gamma GP$. The transverse and parallel metric multipliers on lifting are $D^{1/3}$ and $D^{-2/3}$ respectively \cite{LM,GLMW}. For $P\ne0$ the seed metric parallel to the three legs is $w^2/P+\eta_+^2+\eta_-^2$, which gives the first line of \eqref{eq:fields}. The axion contributes $\gamma\,\dd(Gw\eta_+\eta_-)$. There is also a contribution from the dual flux, since
+\begin{align}
+ \star_0 F_0&=(-q_0V_+V_- -q_+V_0V_-+q_-V_0V_+)\dd y,\nonumber\\
+ \iota_{H_-}\iota_{H_+}\iota_W\star_0F_0&=-c q_0 B_+B_- .\label{eq:magnetic}
+\end{align}
+This gives the last term in \eqref{eq:fields}; it cannot be discarded when the selected direction has a flat component. The final fields are regular at $P=0$. For a timelike fibre we use the direct field-equation calculation below, without compactifying time or invoking a timelike duality.
+
+\subsection{The causal branches}
+
+For a spacelike or timelike fibre put $c=0$, $r=s=+1$ or $-1$, respectively. Choose the three fibre subgroups in the same chiral sector of the seed. Equivalently choose coframes with $V_i=B_i\theta_i$, $a=s\theta_0$, $\eta_\pm=\theta_\pm$, and $\dd\theta_i=\varepsilon_i q_i B_i$, with fibre signatures $(\varepsilon_0,\varepsilon_+,\varepsilon_-)=(s,1,1)$. If $g_{\rm h}$ denotes the horizontal metric including both flat directions, then
+\begin{equation}
+ g=G^{-1/3}\left(g_{\rm h}+G\sum_i\varepsilon_i\theta_i^2\right),\qquad F=F_0+s\gamma G\,\dd(\theta_0\theta_+\theta_-).\label{eq:semisimple}
+\end{equation}
+The AdS base is locally $\AdS_2$ for a spacelike fibre and the hyperbolic plane for a timelike one. In the first case $G<1$ for $\gamma\ne0$; in the second the fibre is stretched, $G>1$, with $|\gamma|<1$. We do not identify the time fibre. This does not remove the closed timelike curves of the stretched metric: on the hyperbolic base take polar coordinates $(\rho,\phi)$ and the smooth connection $\theta_0=(L/2)[\dd\tau-(\cosh\rho-1)\dd\phi]$. At fixed $\tau,\rho$ the angular norm is proportional to $\sinh^2\rho-G(\cosh\rho-1)^2$, which is negative at sufficiently large $\rho$ if $G>1$. The timelike result is a statement about the supergravity fields and their Killing spinors, not a causality condition. Below we use the constant homothety $\widehat g=G^{1/3}g$, $\widehat F=G^{1/2}F$ to remove the overall scale from the local equations; it is not used in charge integrals.
+
+For a null warp choose $A=n\ne0$ parabolic, $p=n^\flat$, with the two sphere Hopfs in one chiral sector and $n$ in the other. Now $r=0$ and $D=1+\gamma^2c^2$. Pull the fields back by the AdS flow of $n$ for parameter $\gamma^2Gc\,y$. This fixes $p$ and changes $g_{\AdS}$ by $2\gamma^2Gc\,p\,\dd y$, cancelling the mixed metric term. The result, in the hatted normalization, is
+\begin{equation}
+ \widehat g=g_{\AdS}-\gamma^2G p^2+\sum_{i=+,-}(g_{B_i}+G\eta_i^2)+\dd x^2+G\dd y^2 .\label{eq:nullmetric}
+\end{equation}
+Here $g_{B_i}$ is the round horizontal base metric. For $g_t=g_{\AdS}-t p^2$, the Ricci tensor is $-q_0^2 g_t/2+q_0^2t p^2$; thus the warp is locally detectable even though its contribution to the scalar curvature vanishes. A pure AdS null leg ($c=0$) leaves the spheres round. Tilting that leg into $y$ gives $G<1$ and deforms both. Unless stated otherwise we use the unsheared coordinates of \eqref{eq:fields} for the flux and for identifications.
+
+\section{The field equations fix the relative fibre lengths}\label{sec:constraints}
+
+The common coefficient $G$ in \eqref{eq:semisimple} proves that equal squashings are sufficient. To test necessity, let the three fibres initially have independent lengths. Work in a product metric with physical orthonormal fibre coframes $f_i$ and horizontal unit area forms $B_i$. Put $\dd f_i=a_iB_i$, and denote the base Gaussian curvature by $\delta_i b_i^2$, where $b_i>0$ and $(\delta_0,\delta_+,\delta_-)=(-1,1,1)$ are the signs of the three block determinants. In these units the corresponding round block has radius $2/b_i$, so that the squared fibre length relative to its round value at fixed base is
+\begin{equation*}
+ k_i^2=a_i^2/b_i^2 .
+\end{equation*}
+We take nondegenerate Hopf fibrations ($a_i\ne0$). The flux component ansatz suggested by \eqref{eq:semisimple} has independent real coefficients $u_i,v_i$:
+\begin{equation}
+ F=\sum_i u_i B_i f_i\,\dd x+\sum_{(i,j,l)\,\mathrm{cyclic}}v_i B_i f_j f_l .\label{eq:ansatz}
+\end{equation}
+In this section $\dd x,\dd y$ denote unit flat coframes for the metric being tested. In $\dd F$, the coefficient of each $B_iB_j f_l$ is, up to cyclic orientation, $v_i a_j-v_j a_i$. Thus $v_i=m a_i$ for a single real $m$, and the second sum is exactly $m\,\dd(f_0f_+f_-)$. Let $s$ be the sign of the AdS fibre. The norms of the two types of flux components have signs $\delta_i$ and $s\delta_i$, respectively. Since $F$ has no $y$ leg, the $yy$ and $xx$ equations give, successively,
+\begin{equation}
+ \langle F,F\rangle=\sum_i\delta_i(u_i^2+s m^2 a_i^2)=0,\qquad \sum_i\delta_i u_i^2=0 .\label{eq:traces}
+\end{equation}
+In particular $\sum_i\delta_i a_i^2=0$ if $m\ne0$.
+
+For a constant-length circle fibre, the horizontal and vertical Ricci endomorphisms in block $i$ are $\delta_i(b_i^2-a_i^2/2)\mathbf 1$ and $\delta_i a_i^2/2$. These follow by inserting $\dd f_i=a_i B_i$ in the Koszul formula: the connection curvature subtracts $\delta_i a_i^2/2$ from the base Ricci eigenvalue and gives the same signed contribution to the vertical eigenvalue. The mixed flux with coefficient $v_i$ contains the two horizontal axes of block $i$ but \emph{not} its fibre. On a vertical axis the relevant sum is instead $s\sum_{j\ne i}\delta_j v_j^2=-s\delta_i m^2a_i^2$ by \eqref{eq:traces}. The two Einstein equations therefore reduce to
+\begin{equation}
+ a_i^2=u_i^2-sm^2a_i^2,\qquad 2b_i^2-a_i^2=u_i^2+sm^2a_i^2 .\label{eq:twoein}
+\end{equation}
+Adding these equations and substituting back gives
+\begin{equation}
+ u_i^2=b_i^2,\qquad b_0^2=b_+^2+b_-^2,\qquad k_0^2=k_+^2=k_-^2=\frac1{1+sm^2}.\label{eq:locking}
+\end{equation}
+The same formulas hold at $m=0$ by \eqref{eq:twoein}. No other Einstein component contributes: two distinct flux monomials in \eqref{eq:ansatz} never share three indices. Moreover $F\wedge F=0$, and $\dd\star F=0$ reduces to $m\sum_i\delta_i a_i^2=0$. In the hatted normalization of \eqref{eq:semisimple}, $f_i=\sqrt G\,\theta_i$, $b_i=q_i$ and $m=s\gamma$, which establishes the field equations for either causal sign.
+
+\paragraph{The null branch.}
+One cannot set the AdS fibre signature to zero in \eqref{eq:twoein}. Instead, use the AdS isometry which rescales $n\mapsto\lambda n$ for $\lambda>0$. Consider independent sphere fibre lengths and flux coefficients in the component ansatz of \eqref{eq:fields} and \eqref{eq:nullmetric}. We allow terms depending smoothly on $n$ and its derivative, but introduce no second, oppositely scaled null vector. The rescaled fields solve the same equations as the original fields. They have a smooth $\lambda\to0$ limit in the group frame, in which the wave disappears \emph{at fixed sphere lengths}. In this limit the independent flux components, now written with physical coframes, are
+\begin{align}
+ F={}&(u_0 V_0+u_+ B_+ f_+ +u_- B_- f_-)\dd x+M B_+B_-\nonumber\\
+ &+\dd y\,(v_+ B_+ f_- -v_- f_+B_-).\label{eq:nullzero}
+\end{align}
+Set $S=-u_0^2+u_+^2+u_-^2$ and $T=v_+^2+v_-^2$. The two flat Einstein equations give $3S=3T=\langle F,F\rangle=S+T+M^2$, so $M^2=T$. For the two spheres take the horizontal equation minus the vertical one. The $u_i$ contributions cancel, giving
+\begin{equation*}
+ 2(b_i^2-a_i^2)=M^2+v_i^2-v_j^2=2v_i^2\qquad(i\ne j).
+\end{equation*}
+Closure of \eqref{eq:nullzero} requires $v_+a_-=v_-a_+$. Thus $\mu=v_i/a_i$ is independent of the sphere, and both squared length ratios are $1/(1+\mu^2)$. For \eqref{eq:fields}, $\mu^2=\gamma^2c^2$. This limiting argument proves a necessary condition on the wave solution, not sufficiency for arbitrary wave terms; the complete fields in \eqref{eq:fields} solve the equations by the spacelike three-leg transformation when $c\ne0$ and by continuity at $c=0$.
+
+The assumption of separate Hopf fibrations matters. For example, deforming instead along $(A,uH_++vH_-,\partial_y)$ compresses the single combination $u\eta_++v\eta_-$. For a unit non-null $A$, the metric contains a term proportional to $-s\gamma^2(u\eta_++v\eta_-)^2/[1+s\gamma^2(u^2+v^2)]$ inside the overall scale. Its diagonal effects on the two sphere fibres need not agree, but it also produces an off-diagonal term for $uv\ne0$. Such a metric lies outside the diagonal ansatz used to derive \eqref{eq:locking}.
+
+\section{Magnetic periods and electric Page charge}\label{sec:charges}
+
+On the original flat plane there is no compact cycle carrying the electric or magnetic periods considered here. To define integrated charges, quotient by translations of $x,y$ of periods $\ell_x,\ell_y$ in the \emph{unsheared} coordinates of \eqref{eq:fields}. Dividing out the corresponding periods gives the densities on the cover. With $v_i=2\pi^2 R_i^3$ the seed sphere volumes and $\ell_p$ the Planck length, the magnetic charges are
+\begin{equation}
+ N_5^i=\frac{1}{(2\pi\ell_p)^3}\int_{S_i^3\times S_x^1}F
+      =\frac{q_i v_i\ell_x}{(2\pi\ell_p)^3}\qquad(i=+,-).\label{eq:n5}
+\end{equation}
+The correction $B_+B_-$ in \eqref{eq:magnetic} is exact on the total spaces of the Hopf fibrations: $B_+B_-=\dd(\eta_+B_-/t_+)$. Thus both deformation terms in $F-F_0$ have zero period, including on $S_i^3\times S_y^1$. The magnetic ratio $N_5^+/N_5^-=R_+^2/R_-^2$ can vary even though the two dimensionless squashings agree.
+
+Electric charge requires the Chern--Simons contribution \cite{Page,Marolf}. For $F=\dd C$ locally, \eqref{eq:eom} closes the Page form $J_7=\star F+\tfrac12 C\wedge F$, not necessarily the Maxwell form $\star F$. Choose the orientation $V_+V_-\dd y$ on $\Sigma=S_+^3\times S_-^3\times S_y^1$ at fixed AdS point and fixed $x$. Take the seed potential $C_0$ with vanishing pullback there and continue that gauge by
+\begin{equation}
+ C-C_0=\gamma G w\eta_+\eta_- -\gamma c q_0\,\eta_+B_-/t_+.\label{eq:potential}
+\end{equation}
+Although the magnetic periods preclude a global seed potential, the difference in \eqref{eq:potential} is a global three-form.
+
+For the Hodge contribution, the inverse hatted metric is $g_0^{-1}+\gamma^2(W\otimes W+P\sum_i H_i\otimes H_i)$, where the sum runs over the two spheres. In the physical metric $\sqrt{|g|}/\sqrt{|g_0|}=D^{1/3}$. Raising the three AdS indices of $V_0$ multiplies the result by $1+\gamma^2 r$ in addition to the common scale; only the seed component $q_0V_0\dd x$ contributes on $\Sigma$. For the potential term one has $w|_\Sigma=c\,\dd y$. Each cross term of \eqref{eq:potential} with the exterior derivative of the other term contributes $-q_0G\gamma^2c^2 V_+V_-\dd y$ to $C\wedge F|_\Sigma$. Hence
+\begin{align}
+ (\star F)|_\Sigma&=-q_0G(1+\gamma^2r)V_+V_-\dd y,\nonumber\\
+ \tfrac12(C\wedge F)|_\Sigma&=-q_0G\gamma^2 c^2 V_+V_-\dd y,\nonumber\\
+ N_2=\frac{1}{(2\pi\ell_p)^6}\int_\Sigma J_7&=-\frac{q_0v_+v_-\ell_y}{(2\pi\ell_p)^6}.\label{eq:n2}
+\end{align}
+The last equality uses $G[1+\gamma^2(r+c^2)]=1$. The Maxwell flux alone is a factor $G$ times its seed value on the null branch; the Page charge has no such factor. Reversing the orientation of $\Sigma$ reverses $N_2$. In fact a closed shift of $C$ cannot change this particular period, since $F|_\Sigma$ is exact.
+
+The other seven-cycle, $\Sigma_x=S_+^3\times S_-^3\times S_x^1$, intersects magnetic flux. To give its Page value one must specify a trivialization across a cut in $x$. Write $\Omega=\sum_iq_iV_i$ and use $C_0=-x\Omega$ on the cut interval, with transition $-\ell_x\Omega$. On $\Sigma_x$ the Maxwell pullback vanishes: $F$ has no component with three AdS legs and one $y$ leg, even after raising indices. Both $C\wedge F$ and its jump vanish on this cycle in the chosen gauge. Indeed $\Omega\wedge\Omega=0$, $\Omega\wedge B_+B_-$ pulls back to zero, and the surviving change of potential is proportional to $\eta_+B_-$, which wedges to zero with each sphere volume. The Page period on $\Sigma_x$ is therefore zero in this cut convention; adding flat three-form periods can shift it. Finally the AdS shear leading to \eqref{eq:nullmetric} changes how a given circle identification is written. The proper length of a sheared orbit cannot simply be substituted into \eqref{eq:n2}.
+
+\input{spin-section}
+
+\section{Conclusion}
+
+The three causal choices of an AdS isometry give distinct supersymmetric geometries within one eleven-dimensional deformation. The field equations constrain the shape of the two spheres more tightly than their radii: in the diagonal flux ansatz the same coefficient that closure leaves in the mixed four-form fixes both fibre-to-base length ratios. The two magnetic periods still measure independent sphere scales subject to the AdS radius relation. Their ratio sets $\alpha$ in the exceptional algebra of the non-null solutions and does not change with the squashing.
+
+On the null branch, tilting the deformation direction into the flux-transverse flat line separates two effects that coincide for an ordinary Hopf fibre. The norm of the tilted direction controls the sphere squashing, but the generator in the odd bracket is the null AdS translation itself. The same tilt induces a horizontal magnetic four-form whose contribution to $C\wedge F$ accounts precisely for the difference between Maxwell flux and Page charge. The generic null and non-null solutions thus have different odd brackets and different numbers of supercharges at the same brane charges; they meet at the undeformed sixteen-supercharge solution.
+
+The non-null spinor count applies throughout the regular nonzero deformation domain. The null rank argument determines the count on an open dense set of the joint space of radii and deformation parameters, not separately on every fixed-radius slice. It leaves open whether any nonzero exceptional parameters admit additional spinors. Deciding this requires the common kernel of the curvature operators where the minor used here vanishes, rather than the zero set of that minor alone. For the flat translation circles used in the charge integrals, the spinors constructed here have $x,y$-independent components in the unsheared group frame and descend for the periodic spin structure on both circles. A quotient involving an AdS orbit must instead be tested against its own lifted identification.
+
+\appendix
+\input{certificate-section}
+
+\begin{thebibliography}{99}
+\bibitem{BPS} H.~J.~Boonstra, B.~Peeters and K.~Skenderis,
+Brane intersections, anti-de Sitter spacetimes and dual superconformal theories,
+\emph{Nucl. Phys. B} \textbf{533} (1998) 127--162,
+\href{https://arxiv.org/abs/hep-th/9803231}{arXiv:hep-th/9803231}.
+\bibitem{GGP} J.~P.~Gauntlett, R.~C.~Myers and P.~K.~Townsend,
+Supersymmetry of rotating branes,
+\emph{Phys. Rev. D} \textbf{59} (1999) 025001,
+\href{https://arxiv.org/abs/hep-th/9809065}{arXiv:hep-th/9809065}.
+\bibitem{Anninos} D.~Anninos, W.~Li, M.~Padi, W.~Song and A.~Strominger,
+Warped $\mathrm{AdS}_3$ black holes,
+\emph{J. High Energy Phys.} \textbf{03} (2009) 130,
+\href{https://arxiv.org/abs/0807.3040}{arXiv:0807.3040}.
+\bibitem{Orlando} D.~Orlando and L.~I.~Uruchurtu,
+Warped anti-de Sitter spaces from brane intersections in type II string theory,
+\emph{J. High Energy Phys.} \textbf{06} (2010) 049.
+\bibitem{HST} B.~Hoare, F.~K.~Seibold and A.~A.~Tseytlin,
+Integrable supersymmetric deformations of $\mathrm{AdS}_3\times S^3\times T^4$,
+\emph{J. High Energy Phys.} \textbf{09} (2022) 018,
+\href{https://arxiv.org/abs/2206.12398}{arXiv:2206.12398}.
+\bibitem{LM} O.~Lunin and J.~M.~Maldacena,
+Deforming field theories with $U(1)\times U(1)$ global symmetry and their gravity duals,
+\emph{J. High Energy Phys.} \textbf{05} (2005) 033,
+\href{https://arxiv.org/abs/hep-th/0502086}{arXiv:hep-th/0502086}.
+\bibitem{GLMW} J.~P.~Gauntlett, S.~Lee, T.~Mateos and D.~Waldram,
+Marginal deformations of field theories with $\mathrm{AdS}_4$ duals,
+\emph{J. High Energy Phys.} \textbf{08} (2005) 030,
+\href{https://arxiv.org/abs/hep-th/0505207}{arXiv:hep-th/0505207}.
+\bibitem{CD} A.~\c{C}atal-\"Ozer and N.~S.~De\u{g}er,
+Beta, dipole and noncommutative deformations of M-theory backgrounds with one or more parameters,
+\emph{Class. Quantum Grav.} \textbf{26} (2009) 245015,
+\href{https://arxiv.org/abs/0904.0629}{arXiv:0904.0629}.
+\bibitem{CJS} E.~Cremmer, B.~Julia and J.~Scherk,
+Supergravity theory in eleven dimensions,
+\emph{Phys. Lett. B} \textbf{76} (1978) 409--412.
+\bibitem{Page} D.~N.~Page,
+Classical stability of round and squashed seven-spheres in eleven-dimensional supergravity,
+\emph{Phys. Rev. D} \textbf{28} (1983) 2976--2982.
+\bibitem{Marolf} D.~Marolf,
+Chern--Simons terms and the three notions of charge,
+\href{https://arxiv.org/abs/hep-th/0006117}{arXiv:hep-th/0006117} (2000).
+\bibitem{FOF} J.~Figueroa-O'Farrill, P.~Meessen and S.~Philip,
+Supersymmetry and homogeneity of M-theory backgrounds,
+\emph{Class. Quantum Grav.} \textbf{22} (2005) 207--226,
+\href{https://arxiv.org/abs/hep-th/0409170}{arXiv:hep-th/0409170}.
+\end{thebibliography}
+\end{document}

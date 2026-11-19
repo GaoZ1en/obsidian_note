@@ -1,0 +1,251 @@
+\section{Killing spinors and their superalgebras}\label{sec:spin}
+For either non-null choice of the AdS fibre, every regular deformation with
+$\gamma\ne0$ has exactly eight real Killing spinors. For the null choice
+there are at least four, and exactly four on an open dense set of parameters.
+We work locally, or on the simply connected cover; descent to a quotient
+also requires invariance under the lifted identifications.
+
+\subsection{Two mixed curvatures for a non-null fibre}
+Use the homothetic fields $(\hat g,\hat F)$ in \eqref{eq:kse}, and set
+$k=\sqrt G$, $b=s\gamma k$, so that $k^2+s b^2=1$ and $k>0$.
+In each block $i=0,+,-$, use an oriented seed group coframe
+$(h_i^1,h_i^2,\theta_i)$, with the last axis along the selected fibre.
+In the hatted metric the horizontal coframes are unchanged and the unit
+fibre coframe is $k\theta_i$. Write $f_i$ for its index, $e_a$ for the
+hatted frame vectors and $\sigma_a=\hat g(e_a,e_a)$. Choose group frames
+with seed Maurer--Cartan equations $d e_{(0)}^c=\sigma_c q_i
+ e_{(0)}^a\wedge e_{(0)}^d$ for cyclic axes $(a,d,c)$ in a block.
+Then $[e_a,e_d]=C_{ad}{}^c e_c$, where for those cyclic axes
+\[
+ C_{ad}{}^c=-q_i\sigma_c m_c,\qquad m_h=k^{-1},\quad m_f=k .
+\]
+Brackets between blocks vanish. With upper-index gamma matrices satisfying
+$\{\Gamma^a,\Gamma^d\}=2\hat g^{ad}$ in this frame, put
+\[
+ \begin{gathered}
+ \omega_i=\Gamma^{h_i^1h_i^2f_i},\qquad N=\sum_i q_i\omega_i,\qquad K=\Gamma^{f_0f_+f_-},\\
+ X=\Gamma^x,\qquad Y=\Gamma^y,\qquad Z_+=X+bK,\qquad Z_-=-X+bK .
+ \end{gathered}
+\]
+In \eqref{eq:fields} the seed flux contributes $NX$ to
+$\not{\hat F}$, and the three terms differentiating the fibre volume
+contribute $bNK$: $\omega_i K$ removes $f_i$ with its metric sign
+and the sign of its position in the ordered triple. Thus
+$\not{\hat F}=NZ_+$. Distinct $\omega_i$ anticommute, and their squares
+are $+1,-1,-1$, respectively. Hence
+\[
+ \begin{gathered}
+ N^2=0,\qquad [N,K]=0,\qquad \{N,X\}=\{N,Y\}=0,\\
+ K^2=-s,\qquad Z_\pm^2=k^2,\qquad Z_\pm N=NZ_\mp .
+ \end{gathered}
+\]
+Since $\{N,\omega_0\}=2q_0$, every element of $\ker N$ lies in
+$\operatorname{im}N$; the two coincide and have real dimension sixteen.
+
+For an axis in block $i$ write $J_a=\Gamma_a\omega_i$, so
+$J_a=\Gamma^d\Gamma^c$ for cyclic $(a,d,c)$. The Koszul formula gives
+$2\langle\nabla_a e_d,e_c\rangle=-q_i(m_c-m_a+m_d)$, and hence the spin
+connection matrix is $q_i(m_d+m_c-m_a)J_a/4$. The flux matrix in
+\eqref{eq:kse} is $-\Gamma_a\not{\hat F}/24+\not{\hat F}\Gamma_a/8$.
+Adding them, write $D_a=e_a+\mathcal A_a$, with
+\begin{equation}\label{eq:spin-connection}
+\begin{aligned}
+ \mathcal A_h&=\tfrac1{12}\Gamma_h NZ_+
+                 +\tfrac{q_i}{4}J_h(k-Z_+),\\
+ \mathcal A_f&=\tfrac1{12}\Gamma_f N(X-2bK)
+                 +\tfrac{q_i}{4}J_f(2/k-k+Z_-),\\
+ \mathcal A_y&=\tfrac1{12}YNZ_+,\qquad
+ \mathcal A_x=\tfrac1{12}N(2-bXK).
+\end{aligned}
+\end{equation}
+All $J_a$ commute with $N$ and $X$; $J_h$ anticommutes with $K$,
+whereas $J_f$ commutes with it. The matrices are constant, so the curvature
+on an arbitrary spinor is $\mathcal R_{ad}=[\mathcal A_a,\mathcal A_d]
+-C_{ad}{}^c\mathcal A_c$. In particular, no assumption on coordinate
+dependence enters the following two necessary conditions.
+
+First take $f=f_i$ and the flat direction $y$. There is no frame bracket,
+and the Levi--Civita term in $\mathcal A_f$ commutes with $\mathcal A_y$.
+Set $L_f=X-2bK$. Using $N\Gamma_fN=2q_iJ_f N$ and $Z_+N=NZ_-$,
+the two remaining commutators in \eqref{eq:spin-connection} give
+\begin{equation}\label{eq:spin-fy}
+ \mathcal R_{fy}=-\frac{q_i}{144}YJ_f N
+ \big[2Z_+L_f+3(Z_+^2+Z_+Z_-)\big]
+ =-\frac{q_i k^2}{72}YJ_f N .
+\end{equation}
+Indeed $2L_f+3(Z_++Z_-)=2Z_+$. As $YJ_f$ is invertible, every solution
+lies in $\ker N$. This constant subbundle is preserved by the connection:
+$X,K,Z_\pm$ preserve it, so the terms with left factor $\Gamma_a N$ and
+both flat matrices vanish there.
+
+Next take $f_i$ and $h_j$ in distinct blocks. Their frame bracket vanishes,
+$J_{f_i}$ commutes with $J_{h_j}$, and $Z_-J_{h_j}=-J_{h_j}Z_+$.
+With $d=2/k-k$ the restricted curvature is
+\begin{equation}\label{eq:spin-fh}
+\begin{aligned}
+ \mathcal R_{f_i h_j}\big|_{\ker N}
+ &=\frac{q_iq_j}{16}J_{f_i}J_{h_j}
+   \big[(d-Z_+)(k-Z_+)-(k-Z_+)(d+Z_-)\big]\\
+ &=-\frac{bq_iq_j}{8}J_{f_i}J_{h_j}(k-Z_+)K .
+\end{aligned}
+\end{equation}
+For $b\ne0$, conjugation by $K$ interchanges $Z_+$ and $Z_-$, so the
+allowed initial values lie in $E=\ker N\cap\ker(Z_--k)$. On $\ker N$,
+$Z_-^2=k^2$ and the invertible $Y$ exchanges the two real eigenspaces of
+$Z_-$. Thus $\dim E=8$, including throughout the regular timelike interval.
+
+\subsection{The eight solutions and their currents}
+At $b=0$ let $E_0=\ker N\cap\ker(X+1)$. Its seed connection matrices
+are $q_iJ_a/2$ on each group and zero on the plane. This connection is
+flat: for cyclic axes in block $i$, $[J_a,J_d]=-2\sigma_c J_c$, and
+matrices from distinct blocks commute. Every initial value in $E_0$
+therefore gives a parallel spinor. The complementary $X=+1$ eigenspace
+in $\ker N$ has zero connection matrices, giving sixteen seed spinors in
+all. To transport the first eight to $b\ne0$, set
+\begin{equation}\label{eq:spin-intertwiner}
+ u=\frac{b}{1+k},\qquad S=\sqrt{\frac{1+k}{2}}\,(1+uK).
+\end{equation}
+The identity $1+su^2=2/(1+k)$ makes $S$ invertible. It commutes with $N$;
+on $X=-1$ one has $Z_-(1+uK)=(1-sbu)+(b-u)K=k(1+uK)$.
+Thus $S E_0=E$. On $E$, substituting $Z_+=2bK-Z_-$ into
+\eqref{eq:spin-connection} gives
+\[
+ \mathcal A_h=\tfrac{q_i}{2}J_h(k-bK),\qquad
+ \mathcal A_f=\tfrac{q_i}{2k}J_f,\qquad \mathcal A_x=\mathcal A_y=0 .
+\]
+Now $(k-bK)(1+uK)=1-uK$, so $J_h(k-bK)S=SJ_h$, while $J_fS=SJ_f$.
+The hatted fibre vector is $e_f=e_f^{(0)}/k$; multiplying its differential
+equation by $k$ gives the seed equation on the same vector field.
+Consequently $\epsilon=S\epsilon_0$, with components compared in the two
+group frames, constructs all eight solutions.
+
+To compute their polarized Dirac currents, use the Majorana pairing $B$
+for which one-blades are skew-adjoint and three-blades are self-adjoint.
+In particular $K$ is self-adjoint. For a horizontal axis $h$ and a fibre
+axis $f$, the matrix between the two seed spinors in the current is
+\[
+ S\Gamma^h S=\Gamma^h,\qquad
+ S\Gamma^f S=\tfrac{1+k}{2}\Gamma^f(1-su^2+2uK).
+\]
+The term $\Gamma^f K$ commutes with $X$ and hence pairs two $X=-1$ spinors
+to zero by skew-adjointness of $X$. Since $1-su^2=k(1+su^2)$, the fibre
+component acquires a factor $k$, cancelled in the vector current by
+$e_f=e_f^{(0)}/k$. Moreover $\ker N=\operatorname{im}N$ is totally
+isotropic for $B$, since $N$ is self-adjoint and $N^2=0$. Both $X$ and
+$Y$ preserve this kernel, so there is no flat component. Thus the currents
+in the hatted metric are exactly the seed vector fields, not just vectors
+with the same components in two different frames. Restoring $g$ changes
+only their common normalization.
+
+\subsection{The four invariant spinors in the null branch}
+Call the seed symmetry sectors $L,R$ and choose $H_+,H_-$ in $R$ and the
+parabolic generator $n$ in $L$. The odd module of each sector is the real
+form of $(\mathbf 2,\mathbf 2,\mathbf 2)$ for its three simple factors.
+Each selected Hopf has no zero weight on its sphere doublet, leaving no
+$R$ spinor invariant under both. In $L$ the sphere conditions are trivial,
+and the spinorial Lie derivative along $n$ is rank-one nilpotent on the
+AdS doublet. Its kernel times the two sphere doublets gives four real
+spinors invariant under $W,H_+,H_-$, since the seed spinors are independent
+of $y$.
+
+Explicitly, use the null-branch seed frame with blocks $012,345,678$,
+$0$ timelike, $x=9$, $y=10$, $n=-e_0+e_1$ and $H_+=e_5$, $H_-=e_8$.
+The projector onto these four solutions at a point is
+\begin{equation}\label{eq:spin-null-projector}
+ P_0=\tfrac18(1+\Gamma^9)(1+\Gamma^{01})
+ \left[1-\frac{\Gamma^{012}(q_+\Gamma^{345}+q_-\Gamma^{678})}{q_0}\right].
+\end{equation}
+The three commuting factors select the sphere-invariant handedness, the
+line $\not p\,\epsilon_0=0$, and $\ker N$, respectively. For $c\ne0$ the
+three reduction directions span a spacelike plane. In the hatted coframe
+obtained by scaling that plane by $D^{-1/2}$, consider the following
+spinor map (an overall constant does not affect the Killing-spinor equation):
+\begin{equation}\label{eq:spin-null-rotation}
+ S_n=1+\frac{\gamma}{1+\sqrt D}\,\not w\,\not\eta_+\,\not\eta_- ,
+\end{equation}
+where the slashes use the seed frame. The triple squares to $-c^2$, so for $c\ne0$ the normalized matrix is a rotation. Its coefficient and sign are fixed by the connection identity below. The coframe
+extends through $c=0$, since $(D^{-1/2}-1)/c^2=-\gamma^2/[\sqrt D(1+
+\sqrt D)]$, and $S_n$ stays invertible there. In the homogeneous frames,
+write $e'_a=N^b{}_a e_b^{(0)}$ with $N^b{}_a$ the inverse coframe matrix of Appendix~\ref{app:certificate} and let $\mathcal A'_a,\mathcal A_b^{(0)}$
+be the corresponding connection matrices. The differential statement is
+\[
+ (\mathcal A'_a S_n-S_n N^b{}_a\mathcal A_b^{(0)})P_0=0
+ \qquad (a=0,\ldots,10).
+\]
+Appendix~\ref{app:certificate} proves these identities for the family;
+hence $S_n\epsilon_0$ gives four independent solutions, including at $c=0$.
+The same appendix exhibits a $28\times28$ minor of the stacked curvature
+matrices which is nonzero at one regular point. Its entries are analytic
+on the connected parameter domain, so the common Majorana kernel has
+dimension at most four on an open dense set. This proves generic equality,
+not enhancement wherever the chosen minor vanishes.
+
+\subsection{Odd brackets and spectator isometries}
+We distinguish the algebra generated by the odd part from the extension by
+all flux-preserving Killing vectors, using the Dirac current and spinorial
+Lie derivative as brackets~\cite{FOF}; no three-form gauge generators are
+included. To fix the parameter of the seed exceptional algebra, put
+$L_i=\omega_0\omega_i$ for $i=+,-$. These are anticommuting involutions,
+and the projector onto $\ker N$ is $P_*=(1-\sum_{i=+,-}q_i L_i/q_0)/2$.
+Thus $P_*L_iP_*=-(q_i/q_0)P_*$. This compression can be used inside the
+current: $P_*$ is self-adjoint for $B(\cdot,\omega_0\cdot)$, and $J_a$
+commutes with it. In AdS one has $\Gamma_a=\omega_0J_a$; on sphere $i$,
+$\Gamma_a=-\omega_0 L_i J_a$. The sphere current therefore carries a
+factor $q_i/q_0$ relative to the AdS current. Expressing the unit vectors
+in generators with radius-independent brackets supplies a second factor
+$L/R_i=q_i/q_0$. In the convention with the noncompact coefficient
+negative, the three bracket coefficients have ratios
+\begin{equation}\label{eq:spin-alpha}
+ -q_0^2:q_+^2:q_-^2=-(1+\alpha):1:\alpha,\qquad
+ \alpha=\frac{q_-^2}{q_+^2}=\frac{R_+^2}{R_-^2} .
+\end{equation}
+The sum vanishes as required by the odd Jacobi identity. Exchanging sphere
+labels inverts $\alpha$.
+
+The seed has two commuting $\mathfrak d(2,1;\alpha)$ sectors~\cite{GGP}. For a
+nonzero non-null deformation the intertwiner \eqref{eq:spin-intertwiner}
+is constant in group frames and equivariant under the three surviving
+translation groups. Its current calculation retains their seed brackets
+with the same $\alpha$. The odd-generated algebra is consequently one
+$\mathfrak d(2,1;\alpha)$, whereas the full local Killing superalgebra is
+\[
+ \mathfrak d(2,1;\alpha)\oplus\mathbb R^5 .
+\]
+Within each non-round block the Ricci tensor distinguishes the fibre line; a connected isometry therefore preserves the fibre metric and the round metric reconstructed from it. On the opposite side of the translation group this leaves only the selected one-parameter subgroup. Nor can a connected isometry mix different curved blocks, even for equal radii. By the three-dimensional curvature identity, each horizontal--fibre plane has nonzero sectional curvature $\delta_i a_i^2/4$ in the notation of Section~\ref{sec:constraints}. The two corresponding curvature endomorphisms generate the block rotation algebra, so each curved tangent block is an irreducible holonomy summand, separate from the flat directions. Equal blocks allow at most a discrete interchange. These three fibre actions commute with the rotation $S$
+(they preserve the ordered fibre volume) and act trivially on the selected
+seed sector. The two flat translations also act trivially; a rotation of
+the plane does not preserve the $V_0\wedge dx$ flux. The abelian summands
+here and below denote Lie algebras, not global identifications.
+
+At a generic null point with $c\gamma\ne0$, the four spinors transform as
+the real $(\mathbf 2,\mathbf 2)$ of the two full sphere groups. They still
+obey $\not p\,\epsilon=0$: $n$ is orthogonal to the deformation plane,
+and the triple in \eqref{eq:spin-null-rotation} anticommutes with
+$\not p$. The Dirac current of a nonzero Majorana spinor is nonzero and
+causal. Being orthogonal to $n$, it is therefore proportional to $n$;
+its coefficient is constant since $fn$ is Killing only if
+$df\otimes p+p\otimes df=0$. Polarization and the unique invariant
+symmetric inner product of $(\mathbf 2,\mathbf 2)$ give, in a normalized
+basis,
+\[
+ \{Q_I,Q_J\}=\delta_{IJ} n,\qquad [n,Q_I]=0,\qquad I,J=1,\ldots,4 .
+\]
+The odd-generated algebra is the supertranslation algebra
+$\mathfrak t^{1|4}$, with even line $\mathbb R n$, not $\mathbb R W$.
+For the full algebra, the non-Einstein part of the null AdS Ricci tensor
+fixes $p\otimes p$. Thus a connected isometry of this block preserves
+$p$, hence also the seed AdS metric reconstructed by adding back the wave
+term. The stabilizer keeps the opposite AdS group and the line generated
+by $n$. Each Berger sphere keeps its translation group and its selected
+Hopf subgroup; no curved block has a parallel direction that can mix
+with the flat plane. The selected Hopfs, opposite AdS group and flat
+translations preserve the frame transformation and \eqref{eq:spin-null-rotation}
+and act trivially on the four invariant seed spinors. The full algebra is
+therefore
+\begin{equation}\label{eq:spin-null-algebra}
+ \big[(\mathfrak{su}(2)_{+,L}\oplus\mathfrak{su}(2)_{-,L})
+       \ltimes\mathfrak t^{1|4}\big]
+ \oplus\mathfrak{sl}(2,\mathbb R)_R\oplus\mathbb R^4 ,
+\end{equation}
+where the last four generators are the two selected Hopfs and the two flat
+translations in the unsheared coordinates of \eqref{eq:fields}.

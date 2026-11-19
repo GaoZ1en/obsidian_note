@@ -1,0 +1,186 @@
+\section{A curvature minor and a polynomial certificate for the null family}\label{app:certificate}
+
+For the null branch of \eqref{eq:fields}, four real Killing spinors exist
+throughout the family, and four exhaust the local solutions on an open dense
+set. The two assertions use different certificates. A nonzero minor of the
+supercurvature at one parameter value gives the generic upper bound. An
+identity between the seed and deformed connections gives the lower bound,
+including at parameters where the minor vanishes.
+
+\paragraph{Frame and connection.}
+Use the unsheared seed coframe $e^a$ and its dual $E_a$, with
+$\eta_{ab}=\operatorname{diag}(-1,1,\ldots,1)$, $e^9=dx$, $e^{10}=dy$,
+and orientation $e^0\wedge\cdots\wedge e^{10}$. Write $e^{abc}$ for an
+ordered wedge. Define $C^{(0)}_{abc}=g_0([E_a,E_b],E_c)$: its only
+nonzero entries, up to antisymmetry, are
+\[
+ C^{(0)}_{012}=-q_0,\qquad C^{(0)}_{345}=q_+,\qquad C^{(0)}_{678}=q_-,
+ \qquad q_0^2=q_+^2+q_-^2,\quad q_i>0 .
+\]
+Thus $de^a=-\tfrac12 C^{(0)a}{}_{bc}\,e^b\wedge e^c$, where
+$C^{(0)a}{}_{bc}=\eta^{ad}C^{(0)}_{bcd}$. Set $n=-E_0+E_1$,
+$W=n+cE_{10}$, $w=W^\flat=e^0+e^1+c e^{10}$, $H_+=E_5$, $H_-=E_8$ and
+$h=(1+\gamma^2c^2)^{1/2}$. Remove the constant homothety by taking
+$(\hat g,\hat F)=(h^{-2/3}g,h^{-1}F)$. For $c\ne0$ the seed-orthogonal
+projector onto $\operatorname{span}(W,H_+,H_-)$ is
+\[
+ \Pi^a{}_b=W^a w_b/c^2+H_+^a(e^5)_b+H_-^a(e^8)_b .
+\]
+The change of coframe, its inverse, and the corresponding frame vectors are
+\begin{align*}
+ M&=1+(h^{-1}-1)\Pi, & N&=M^{-1}=1+(h-1)\Pi,\\
+ \vartheta^a&=M^a{}_b e^b, & e^b&=N^b{}_a\vartheta^a,
+ &\widehat E_a&=N^b{}_a E_b .
+\end{align*}
+Indeed $\hat g=\eta_{ab}\vartheta^a\otimes\vartheta^b$: $M$ scales the
+three selected directions by $h^{-1}$ and fixes their orthogonal complement.
+To obtain the hatted flux components, make the substitution
+$e^b=N^b{}_a\vartheta^a$ in the following seed-frame form:
+\begin{align*}
+ \hat F&=h^{-1}F_0+\gamma h^{-3}d(w\wedge e^5\wedge e^8)
+               -\gamma h^{-1}c q_0 e^{3467},\\
+ F_0&=(q_0e^{012}+q_+e^{345}+q_-e^{678})\wedge e^9 .
+\end{align*}
+In particular, the last term uses
+$\iota_{H_-}\iota_{H_+}\iota_W\star_0 F_0=-c q_0e^{3467}$.
+
+Define $C^d{}_{ab}$ by $[\widehat E_a,\widehat E_b]=C^d{}_{ab}\widehat E_d$
+and put $C_{abc}=\eta_{cd}C^d{}_{ab}$. The new brackets and the spin
+connection, with its two spin indices in the order used below, are
+\begin{align*}
+ C^d{}_{ab}&=M^d{}_k N^i{}_a N^j{}_b C^{(0)k}{}_{ij},\\
+ 2\omega_{abc}&=2\hat g(\widehat E_b,\nabla_{\widehat E_a}\widehat E_c)
+             =C_{acb}-C_{cba}+C_{bac} .
+\end{align*}
+Use $\{\Gamma^a,\Gamma^b\}=2\eta^{ab}$, $\Gamma_a=\eta_{ab}\Gamma^b$, and
+write $\operatorname{cl}(A)=A_{a_1\ldots a_p}\Gamma^{a_1\ldots a_p}/p!$
+for the Clifford contraction in \eqref{eq:kse}. In this convention
+the coefficient of each increasing wedge multiplies the corresponding
+ordered gamma product without a factorial. The connection in \eqref{eq:kse}
+and its curvature are $\mathcal D_a=\widehat E_a+T_a$ and
+\begin{align*}
+ T_a&=\tfrac12\sum_{b<c}\omega_{abc}\Gamma^b\Gamma^c
+       +\tfrac1{12}\Gamma_a\operatorname{cl}(\hat F)
+       -\tfrac14\operatorname{cl}(\iota_{\widehat E_a}\hat F),\\
+ \mathcal R_{ab}&=[T_a,T_b]-C^d{}_{ab}T_d .
+\end{align*}
+The matrices are constant in the homogeneous frame; the components of a
+parallel spinor need not be constant.
+
+\paragraph{A nonzero minor.}
+To specify rows and columns, complexify the Majorana module and index its
+basis by $j=\sum_{k=0}^4 2^k j_k$, $0\le j\le31$. Bit $0$ is least
+significant. On $|j\rangle$, $Z_k$ has eigenvalue $(-1)^{j_k}$, $X_k$
+flips bit $k$, and $Y_k$ flips it with coefficient $i(-1)^{j_k}$.
+Take the upper-index generators to be
+\[
+ \Gamma^0=i Z_0\cdots Z_4,\qquad
+ \Gamma^{2k+1}=\Bigl(\prod_{l<k}Z_l\Bigr)X_k,\qquad
+ \Gamma^{2k+2}=\Bigl(\prod_{l<k}Z_l\Bigr)Y_k .
+\]
+An increasing blade acts on a column rightmost generator first;
+$\Gamma^0\cdots\Gamma^{10}=-1$. At
+$(q_0,q_+,q_-,c,\gamma)=(10,6,8,3/4,1)$ one has $h=5/4$. Stack the
+following rows in the order displayed and retain the columns $J$:
+\[
+ L=\begin{pmatrix}
+       (\mathcal R_{01})_{0,\ldots,23\,;\,J}\\
+       (\mathcal R_{02})_{0,2,4,6\,;\,J}
+    \end{pmatrix},\qquad J=(0,1,\ldots,23,24,26,28,30).
+\]
+All denominators here are units modulo $257$. Reducing coefficients with
+$i\mapsto16$ ($16^2\equiv-1$) gives $\det L\equiv140\pmod{257}$; the
+leading $24\times24$ minor of $\mathcal R_{01}$ alone is $128\pmod{257}$.
+Thus $L$ has rank $28$ in characteristic zero. Evaluation of a local
+parallel spinor at one point is injective and takes values in the common
+curvature kernel. Its real dimension is therefore at most four wherever
+$\det L\ne0$. On the connected positive-radius cone times the real
+$(c,\gamma)$ plane, $|\det L|^2$ is real analytic (see the regular frame
+limit below). Its nonzero set is open and dense. A zero of this particular
+minor is not a test for enhancement.
+
+\paragraph{Transport of the seed subspace.}
+In the same spinor components define
+\begin{align*}
+ J_0&=\Gamma^{012}(q_+\Gamma^{345}+q_-\Gamma^{678})/q_0,\\
+ P_0&=\tfrac18(1+\Gamma^9)(1+\Gamma^{01})(1-J_0),\\
+ K&=(\Gamma^0+\Gamma^1+c\Gamma^{10})\Gamma^5\Gamma^8,
+ & S&=1+\frac{\gamma}{1+h}K .
+\end{align*}
+The three involutions in $P_0$ commute, and all nonscalar blades in the
+expansion have zero trace. Thus $P_0$ is a real rank-four projector. To
+see that its image carries four seed solutions, let $T_b^0$ denote $T_b$
+at $\gamma=0$. Substituting $\Gamma^9P_0=P_0$ and
+$(q_0\Gamma^{012}+q_+\Gamma^{345}+q_-\Gamma^{678})P_0=0$ into the
+connection gives $T_b^0P_0=0$ in the AdS and flat directions. On sphere
+$i$ it gives $T_b^0P_0=-(q_i/2)J_bP_0$, with $J_b=\Gamma_b\Gamma^{345}$
+for $i=+$ and $J_b=\Gamma_b\Gamma^{678}$ for $i=-$. These $J_b$ commute
+with $P_0$ and satisfy $[J_b,J_d]=-2J_f$ for cyclic sphere indices
+$(b,d,f)$; the two sphere actions commute. Hence the restricted matrices
+represent the seed brackets and the restricted connection is flat.
+
+Since $K^2=-c^2$, $S$ is invertible even at $c=0$. The identity to be
+certified in the hatted frame is
+\begin{equation}
+ \bigl(T_a S-S N^b{}_a T_b^0\bigr)P_0=0,
+ \qquad a=0,\ldots,10 . \label{eq:certificate-transport}
+\end{equation}
+Indeed $\widehat E_a(S\epsilon_0)=S N^b{}_a E_b\epsilon_0$ in the two
+homogeneous frames. Equation~\eqref{eq:certificate-transport} therefore
+transports every local parallel seed section in $\operatorname{im}P_0$,
+not merely its value at a point. This gives four independent solutions
+without assuming that the common kernel of the curvature is parallel.
+
+\paragraph{Exact verification over the family.}
+For $c>0$ an AdS boost sending $n$ to $cn$ sends $W$ to $c(n+E_{10})$;
+thus one can set $c=1$ and replace $\gamma$ by $c\gamma$. The boost
+preserves $P_0$ (its spin generator is proportional to $\Gamma^{01}$).
+Suppress the common positive frequency scale and set
+\[
+ \begin{gathered}
+ (q_0,q_+,q_-)=(1+z^2,1-z^2,2z),\qquad 0<z<1,\\
+ t=\frac{\gamma}{1+h},\qquad h=\frac{1+t^2}{1-t^2},\qquad
+ \gamma=\frac{2t}{1-t^2},\qquad |t|<1 .
+ \end{gathered}
+\]
+The omitted scale multiplies $C$, $\hat F$ and both connections by the
+same constant and leaves $P_0$ unchanged. The entries of $M,N$ have
+numerators of degree at most two over $1+t^2,1-t^2$, respectively. Put
+$\Delta=(1+t^2)^3(1-t^2)^4$. The bracket uses one $M$ and two $N$'s;
+the four-form uses four $N$'s multiplying $h^{-1}$, $\gamma h^{-3}$ or
+$\gamma h^{-1}$. Thus $\Delta C$ and $\Delta\hat F$ have $t$-degree at
+most $14$ and are linear in the frequencies. In the hatted frame $d$ of
+an invariant form inserts one bracket and the Hodge star is constant.
+The Ricci tensor is quadratic in the brackets by the connection formula
+above. Consequently $\Delta^2$ clears the denominators in $d\hat F$,
+$d\hat\star\hat F+\tfrac12\hat F\wedge\hat F$, and the Einstein residual
+$\operatorname{Ric}_{ab}-\tfrac12\langle\iota_a\hat F,\iota_b\hat F\rangle
++\tfrac16\eta_{ab}|\hat F|^2$, leaving bidegree at most $(28,4)$ in
+$(t,z)$. In \eqref{eq:certificate-transport}, $S=1+tK$ and $q_0P_0$ is
+linear in the frequencies; multiplication by $\Delta q_0$ gives bidegree
+at most $(15,4)$.
+
+On the Cartesian grid
+\[
+ t=j/17\quad(-14\le j\le14),\qquad z=m/7\quad(1\le m\le5),
+ \qquad j,m\text{ integers},
+\]
+all bosonic residuals and all eleven projected differences vanish in
+exact arithmetic. For the latter test one may multiply rational Clifford
+blades by reordering the indices with $\{\Gamma^a,\Gamma^b\}=2\eta^{ab}$,
+replacing blades of degree greater than five by their complements using
+$\Gamma^0\cdots\Gamma^{10}=-1$. The remaining blades form a basis of the
+irreducible matrix algebra. No modular rank test enters this step.
+For each fixed $z$ there are $29$ distinct roots in $t$; each resulting
+coefficient has five distinct roots in $z$. The degree bounds therefore
+prove polynomial identities. The extension to $c\le0$ follows by real
+analyticity, since the only apparent frame poles satisfy
+\[
+ \frac{h-1}{c^2}=\frac{\gamma^2}{1+h},\qquad
+ \frac{h^{-1}-1}{c^2}=-\frac{\gamma^2}{h(1+h)} .
+\]
+This certifies the lower bound at every regular parameter value, but does
+not determine the exceptional set for the upper bound. In particular the
+undeformed seed at $\gamma=0$ has sixteen spinors. The accompanying supplementary source includes the exact-arithmetic implementation. Both the minor and the interpolation can be reproduced with
+\verb|python3 -B check_null.py --family| from the directory containing
+the script (Python 3.10 or later, no external packages).

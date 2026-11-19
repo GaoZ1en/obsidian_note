@@ -1,0 +1,105 @@
+% !TeX root = paper.tex
+\section{An unequal-sphere supersymmetric example}\label{app:unequal}
+The necessity argument in Section~\ref{sec:geometry} excludes magnetic components that can change both the flat Einstein equations and the Chern--Simons contribution. The following explicit example exhibits this limitation. It is not a counterexample to a theorem whose hypotheses already restrict the flux to \eqref{eq:six-flux}.
+
+For this appendix, reverse the Maurer--Cartan convention:
+\begin{equation}
+C^{(0)i}{}_{jk}=-f_I\eta^{ii}\varepsilon_{ijk}.
+\label{unequal:mc}
+\end{equation}
+The selected spacelike fibres then obey $\dd\theta^2=f_A\theta^{01}$, $\dd\theta^5=f_+\theta^{34}$ and $\dd\theta^8=f_-\theta^{67}$. For $q^2+\nu^2=1$, $q>0$, scale only two fibres,
+\begin{equation}
+e^2=q\theta^2,\qquad e^5=q\theta^5,\qquad e^8=\theta^8,
+\qquad q_A=q_+=q,\quad q_-=1,
+\end{equation}
+with all other coframe components unchanged. The four-form is
+\begin{align}
+F_{\rm u}={}&f_Ae^{0129}+f_+e^{3459}+qf_-e^{6789}\notag\\
+&+\nu f_Ae^{015\,10}-\nu f_+e^{234\,10}+\nu f_-e^{0134}.
+\label{unequal:flux}
+\end{align}
+In particular, the last term lies outside \eqref{eq:six-flux}.
+
+\subsection{Field equations}
+Set $E=qf_-$, $T_A=\nu f_A$, $T_+=-\nu f_+$, $M=\nu f_-$, $c_A=qf_A$ and $c_+=qf_+$. The independent Bianchi and Maxwell coefficients reduce to
+\begin{align}
+\dd F=0:&\qquad c_+T_A+c_AT_+=0,\notag\\
+\dd\star F+\tfrac12F\wedge F=0:&\qquad
+EM-c_AT_A-c_+T_+=0,\notag\\
+&\qquad -c_AM+ET_A=0,\qquad c_+M+ET_+=0.
+\label{unequal:form-equations}
+\end{align}
+The first Maxwell coefficient is $q\nu(f_-^2-f_A^2+f_+^2)$, and the others vanish identically. Here $F^2=-72\nu^2f_-^2$ and $F\wedge F\ne0$ for $\nu\ne0$. The Chern--Simons term supplies the three terms $EM$, $ET_A$ and $ET_+$ in \eqref{unequal:form-equations}; it cannot be discarded.
+
+Retaining the trace term in \eqref{eq:eom}, the stress tensor gives
+\begin{equation}
+\begin{array}{c|cc}
+ &R_{\rm base}/g_{\rm base}&R_{\rm fibre}/g_{\rm fibre}\\ \hline
+\AdS_3&-f_A^2(1-q^2/2)&-f_A^2q^2/2\\
+S^3_+&f_+^2(1-q^2/2)&f_+^2q^2/2\\
+S^3_-&f_-^2/2&f_-^2/2
+\end{array}
+\end{equation}
+and $R_{xx}=R_{yy}=0$. Distinct flux components share at most two indices, so the off-diagonal stress vanishes. These are exactly the curvatures of the stated product metric, proving the full bosonic equations for this family.
+
+\subsection{A finite exact supersymmetry certificate}
+A single supersymmetric point is sufficient to rule out an unrestricted equality claim. Choose a length unit and take
+\begin{equation}
+(f_A,f_+,f_-)=(10,6,8),\qquad (q,\nu)=(3/5,4/5).
+\label{unequal:point}
+\end{equation}
+Define
+\begin{gather}
+P_{\rm u}=\Gamma^{2,5,10},\qquad
+H_{\rm u}=5A+3B+4(q+\nu P_{\rm u})C,\notag\\
+Q_{\rm u}=\frac35AB+\frac45A(q+\nu P_{\rm u})C,\qquad
+J_{\rm u}=(q+\nu P_{\rm u})X,\qquad
+\Pi_{\rm u}=\frac14(1-Q_{\rm u})(1-J_{\rm u}).
+\label{unequal:projector}
+\end{gather}
+Clifford multiplication gives $Q_{\rm u}^2=J_{\rm u}^2=1$, $[Q_{\rm u},J_{\rm u}]=0$, and $\operatorname{tr}\Pi_{\rm u}=8$. The projected conditions are $H_{\rm u}\epsilon=0$ and $J_{\rm u}\epsilon=-\epsilon$.
+
+For completeness, the finite matrix certificate can be specified without an unidentified rank computation. Construct the eleven connection matrices by \eqref{eq:kse} and the Koszul formula in \eqref{eq:connection}, using \eqref{unequal:mc}, $d_2=d_5=3/5$, all other $d_i=1$, and the following ordered four-form coefficients:
+\begin{equation}
+(F_{0129},F_{3459},F_{6789},F_{015\,10},F_{234\,10},F_{0134})
+=(10,6,24/5,8,-24/5,32/5).
+\label{unequal:matrix-input}
+\end{equation}
+Do not use the special equal-fibre expression for $\mathcal F$ in \eqref{eq:connection}; here $\mathcal F=\slashed F_{\rm u}$ is determined by \eqref{unequal:matrix-input}. With $\mathscr D_i=E_i+\mathcal A_i$, the matrices obey
+\begin{equation}
+(1-\Pi_{\rm u})\mathcal A_i\Pi_{\rm u}=0\quad(0\leq i\leq10),
+\qquad \mathcal R_{ij}\Pi_{\rm u}=0\quad(i<j).
+\label{unequal:flatness}
+\end{equation}
+These are finite rational Clifford identities with the explicitly specified operands. They show that the rank-eight subbundle is preserved and flat, giving eight local solutions, rather than merely eight vectors in a curvature kernel.
+
+An explicit nonzero minor supplies the converse. In the tensor-product representation of Appendix~\ref{app:clifford}, order matrix rows and columns from $1$ to $32$ and set
+\begin{equation}
+I=\{1,\ldots,12,17,\ldots,28\},\qquad
+\det\big[(\mathcal R_{01})_{I,I}\big]\equiv627\pmod{1009}.
+\label{unequal:minor}
+\end{equation}
+For this modular evaluation all rational denominators are invertible and $i$ may be represented by $469$, since $469^2=-1\pmod{1009}$. The nonzero $24\times24$ minor proves $\operatorname{rank}\mathcal R_{01}\geq24$, so no more than eight initial values are possible. Together with \eqref{unequal:flatness} and the Majorana structure below, the point \eqref{unequal:point} has exactly eight real supercharges. The first sphere has fibre-to-base ratio $3/5$ while the second is round. Their distinct Ricci eigenvalue ratios make the inequality geometric, not a coframe artifact. This certificate does not assert a supersymmetry classification of the entire unequal-sphere family.
+
+\section{Clifford representation and real spinors}\label{app:clifford}
+A fixed matrix realization makes the finite certificate above reproducible and clarifies real versus complex dimensions. Let $\sigma_1,\sigma_2,\sigma_3$ be the usual Pauli matrices. Define ten Euclidean matrices by
+\begin{align}
+\widetilde\Gamma^{2j}&=\sigma_3^{\otimes j}\otimes\sigma_1
+\otimes\mathbf1_2^{\otimes(4-j)},\notag\\
+\widetilde\Gamma^{2j+1}&=\sigma_3^{\otimes j}\otimes\sigma_2
+\otimes\mathbf1_2^{\otimes(4-j)},\qquad j=0,\ldots,4.
+\end{align}
+Take $\Gamma^0=i\widetilde\Gamma^0$, $\Gamma^i=\widetilde\Gamma^i$ for $1\leq i\leq9$, and $\Gamma^{10}=\sigma_3^{\otimes5}$. Tensor factors and their two-dimensional basis vectors are ordered as written. Then
+\begin{equation}
+\{\Gamma^i,\Gamma^j\}=2\eta^{ij},\qquad
+\Gamma^{0\cdots10}=-\mathbf1_{32}.
+\end{equation}
+For an increasing index set, the antisymmetrized gamma matrix equals the ordered product. Accordingly, the slash of a four-form with independent increasing coefficients is simply the sum $\sum_{i<j<k<l}F_{ijkl}\Gamma^{ijkl}$; no extra factorial is inserted.
+
+The antilinear map
+\begin{equation}
+\mathfrak r(\epsilon)=B_M\epsilon^*,\qquad
+B_M=\Gamma^{2468\,10},\qquad
+B_MB_M^*=1,\qquad B_M(\Gamma^i)^*=\Gamma^iB_M
+\end{equation}
+implements the Majorana real structure. All frame, flux and projector coefficients used here are real, so the superconnection and the selected subbundles commute with $\mathfrak r$. A complex solution space of dimension $n$ is therefore the complexification of a real fixed subspace of dimension $n$. The counts sixteen, eight and four in the text are real supercharge counts, not complex counts to be doubled. These local statements do not determine the spin structure or holonomy of an arbitrary quotient.
