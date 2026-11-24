@@ -1,0 +1,105 @@
+% !TeX root = ../main.tex
+\section{A jet is an equivalence class, not a Taylor series}\label{D-jets}
+We now have a base manifold, a field bundle $\pi:E\to M$, and a way to compare fibers. How can a first-derivative Lagrangian take a field as input without depending on which coordinates we used to differentiate it? Fix $p\in M$. Consider all local smooth sections defined near $p$. Declare two sections equivalent to order $k$ if, in one common base-and-fiber chart, their values and all component derivatives of total order up to $k$ agree at $p$. The equivalence class of $u$ is its \emph{$k$-jet} $j^k_pu$. Its base point must be the same to compare it with another jet. The family of these classes is the \emph{jet bundle} $J^kE\to M$. For $k=0$ it is just $E$: only the value survives. Forgetting the derivatives of top order maps $J^kE\to J^{k-1}E$ for $k\geq1$. A Lagrangian on $J^1 E$ assigns a density to first jets, not a field history to test against an equation of motion.
+
+Why does this definition not depend on the coordinates? Take a line as base and let two sections have real coefficients $u(x)=x$ and $v(x)=x+x^2$ in a product chart. At the origin their triples (value, first derivative, second derivative) are $(0,1,0)$ and $(0,1,2)$. In particular they have the same first jet but different second jets. Change both coordinates: use $y=2x$ on the base and $Z=\exp(u)$ in the fiber, so that a section with old coefficient $h$ now has coefficient $Z_h(y)=\exp(h(y/2))$. The chain rule gives
+\[
+ (Z_h)'=\tfrac12 e^h h',\qquad
+ (Z_h)''=\tfrac14 e^h\big((h')^2+h''\big),
+\]
+where the right sides are evaluated at $y/2$. The new triples are $(1,1/2,1/4)$ and $(1,1/2,3/4)$. Neither a derivative's number nor the origin of the fiber coordinates was invariant. \emph{Equality to a specified order} was. In general an order-$j$ derivative of a composite uses only derivatives of the original section through order $j$ and derivatives of the coordinate changes at the corresponding arguments. Equal old jets therefore give equal new jets; applying the inverse changes proves the converse. This supplies smooth transitions on the jet coordinates (with symmetry in repeated differentiations), not a separate tensor transformation for each derivative.
+
+A \emph{germ} remembers more: two sections give the same germ if they agree on some neighborhood of $p$. Even all jets at one point need not determine a smooth germ. The function zero and the function $e^{-1/x^2}$ for $x>0$, extended by zero for $x\leq0$, have the same jets at $0$ but different germs there. On the positive side every derivative is a polynomial in $1/x$ times the exponential and tends to zero. So a gluing proof based on matching derivatives must use the actual given sections, rather than summing a purported convergent Taylor series.
+
+\subsection{Test two sections for smooth descent}
+Work in the signed collar of Section~\ref{D-collars}. First rewrite the two local sections in the \emph{same} base coordinates and the \emph{same} fiber chart, using the specified collar realization of the lift. For instance a one-form $a(r,y)\,dr$ on the minus side has coefficient $-a(-s,y)$ in front of $ds$. For a nonconstant fiber change one must differentiate the change as well as the old field. Only after that operation compare ordinary derivatives. If $u_\pm$ denote the resulting scalar components in their inward variables and the common $y$, the test at the seam is
+\begin{equation}
+ (-1)^m \partial_y^\alpha\partial_{r_-}^m u_-(0,y)
+   =\partial_y^\alpha\partial_{r_+}^m u_+(0,y).
+ \label{D-field-test}
+\end{equation}
+Here $\alpha$ is a list of nonnegative integers, one for each tangential coordinate; $\partial_y^\alpha$ means differentiate that many times in each. For a $C^k$ test impose $m+|\alpha|\leq k$ on components already $C^k$ on closed halves; for smoothness impose all orders on smooth halves. The field value on the seam is its order-zero \emph{trace}. Equality of traces as functions of $y$ supplies all purely tangential equalities but says nothing about $\partial_s u$.
+
+Here is a direct sufficiency proof. At an internal seam the two values paste into a continuous function. Paste the two proposed $s$-derivatives into a continuous function $g$ using the first derivative test. On a coordinate interval crossing zero the fundamental theorem of calculus on the two halves gives
+\[
+ u(h,y)-u(-a,y)=\int_{-a}^{0}g(s,y)\,ds+\int_0^h g(s,y)\,ds
+ \qquad(a,h>0).
+\]
+The same identity holds on subintervals up to zero, so difference quotients give $\partial_s u(0,y)=g(0,y)$. Along tangential lines at the seam differentiate the common trace. All first partials are now continuous, so $u$ is $C^1$. Apply the same argument to the piecewise first partials, then the second partials, up to the required order. At a finite product junction the coordinate interval splits into finitely many sector intervals, and the same integral argument works for \emph{every mixed partial}. At a remaining exterior wall, smoothness in our convention means local extension across that wall: perform the argument on compatible local extensions and restrict back, as in Chapter~\ref{ch:03}. Necessity in each case is simply restriction of an actual smooth section. This is \emph{descent}: regional representatives satisfying the tests are the restrictions of one object, unique since the quotient points are all accounted for. For a gauge arrow apply the test to its group-valued functions in a common frame, not only to the fields on which it acts.
+
+\begin{exercise}[Two different failures at a face and a vertex]
+(i) On $s\leq0$ take $u=s$ and on $s\geq0$ take $u=s+bs^3$. Which jets match at $0$? (ii) On four closed quadrants put $u_\sigma=c_\sigma s_1s_2$. All values on both axes are zero. Which derivative at the common vertex detects differing $c_\sigma$?
+\end{exercise}
+\noindent\emph{Solution.} (i) Value, first, and second derivatives match. The third derivatives are $0$ and $6b$; if $b\ne0$ the field is $C^2$ but not $C^3$. (ii) Each pure derivative at the vertex is zero, but $\partial_{s_1}\partial_{s_2}u_\sigma=c_\sigma$. The full mixed test detects the discrepancy. These pieces need not even pass first-normal-derivative tests away from the vertex along an open axis; comparing only their restrictions to the axes did not test those derivatives.
+
+\begin{exercise}[Can the metrics be glued in the stated charts?]
+Use the inward collars $r_\pm\geq0$ and a common time $t$. Give each half the metric $g_\pm=dr_\pm^2-e^{2a_\pm r_\pm}dt^2$, with real constants $a_\pm$. Both induced metrics on the face are $-dt^2$. For which constants is there a smooth metric in the prescribed signed chart?
+\end{exercise}
+\noindent\emph{Solution.} The signed coefficients of $dt^2$ are $-e^{-2a_-s}$ and $-e^{2a_+s}$. Equality of the first derivatives at zero requires $2a_-=-2a_+$. In this family that condition is sufficient too: the two exponential formulas are then identical, the $ds^2$ coefficients are both one, and both choose $\partial_t$ as future if so marked. A general smooth metric need not be decided by its first jet. Here the special two-parameter family makes the test exact.
+
+\section{Use a conormal to test an equation}\label{D-symbol}
+Field equations can reduce the amount of data that must be exchanged. To see what is geometric about this assertion, let a linear second-order operator in coordinates have highest-derivative part $a^{\mu\nu}(x)\partial_\mu\partial_\nu$. Its \emph{principal symbol} at $p$ and covector $\xi$ is $a^{\mu\nu}(p)\xi_\mu\xi_\nu$ (we omit Fourier factors of $i$). For a system this is a linear map from field components to equation components. The second derivative of a change of coordinates only multiplies first derivatives of the unknown, by the chain rule. The highest-order coefficient therefore has exactly the two Jacobian factors canceled by the transformation of the covector slots. For a nonlinear equation one first linearizes at the solution jet under study. A hypersurface is \emph{characteristic} there if its symbol on a nonzero conormal is not invertible, for a square system of this type. Rescaling that conormal by a nonzero number only multiplies its symbol by the square of that number. This definition uses the equation; calling a hypersurface \emph{null} uses the metric.
+
+In units where the metric light speed is one, put a field of speed $c>0$ in a specified inertial frame on the flat $(t,x)$ plane. Its density is $\frac12(u_t^2-c^2u_x^2-m^2u^2)\,|dt\,dx|$. If $c\ne1$ this is intentionally a propagation law distinct from the metric wave equation. Take the moving cut $s=x-vt=0$, $y=t$. The common coordinate field $U(y,s)=u(y,s+vy)$ has $u_t=U_y-vU_s$, $u_x=U_s$, and the absolute coordinate Jacobian is one. Differentiating the transformed density coefficient with respect to $U_s$ gives the cooriented momentum, and changing coordinates in the equation gives
+\begin{align}
+ p^s&=(v^2-c^2)U_s-vU_y,\nonumber\\
+ 0&=U_{yy}-2vU_{ys}+(v^2-c^2)U_{ss}+m^2U .\label{D-moving-symbol}
+\end{align}
+Suppose two actual half-solutions smooth up to the cut have the same trace $q(y)$ and the same $p^s(y)$. For $v^2\ne c^2$, one first obtains $U_s=(p^s+vq')/(v^2-c^2)$ on both sides. In \eqref{D-moving-symbol} the terms $U_{yy}$ and $U_{ys}$ are now obtained by tangential differentiation. Solving for $U_{ss}$ gives a common second normal derivative. Differentiate the equation in $s$ and repeat to reconstruct every higher normal derivative. Section~\ref{D-jets} turns the matched jets of the half-fields into a smooth solution. A noncharacteristic timelike face need not be a surface on which arbitrary imposed data give a well-posed evolution; this argument started with solutions, not arbitrary data.
+
+For the metric $-dt^2+dx^2$, the squared conormal length is $1-v^2$, but the symbol of our operator on $ds$ is $v^2-c^2$. Thus if $c\ne1$, $v=1$ makes the cut metric-null without making it characteristic. At $v=c$ the momentum instead repeats tangential information: $p^s=-c q'$. For $m=0$ the halves $U_-=0$, $U_+=s$ are solutions with the same zero trace and momentum; their first normal derivatives differ. This failure cannot be repaired by a new choice of transverse coordinate. In Chapter~\ref{ch:07} a nonlinear normal momentum replaces this linear formula, and sharing an invertible branch becomes a separate requirement.
+
+The conormal has one further use later in the book. Collect, for every $p\in\Gamma$, the covectors that vanish on $T_p\Gamma$: this gives the conormal bundle $N^*\Gamma\subset T^*M|_\Gamma$. For a single defining function they are just the multiples of $ds|_p$. For a smooth field the pullback to $\Gamma$ is always defined. For a distribution, the question depends on whether its singular directions include a nonzero conormal; Appendix~\ref{app:C} states the precise sufficient pullback test. That is a third use of $ds$, not another definition of characteristicity.
+
+\section{Pull back a two-form before dividing out a direction}\label{D-reduction}
+The preceding tangent spaces belonged to spacetime. On a space of fields a tangent vector $Y$ instead differentiates a family $\phi_\epsilon$ of fields at $\epsilon=0$; on a family of solutions it respects the linearized equation and boundary conditions. We use $\delta$ for exterior differentiation in these variables. A \emph{presymplectic form} is a closed two-form $\omega$ ($\delta\omega=0$); at a point its kernel consists of the $Y$ for which $\omega(Y,Z)=0$ for \emph{every} $Z$. A closed nondegenerate two-form is symplectic in finite dimensions. For the covariant potential of a field the space and the variations have to be specified; a symmetry with a boundary charge need not be in the kernel. We can do a whole reduction with ordinary coordinates to see what the assertion about a kernel means.
+
+In the circle Maxwell example of Chapter~\ref{ch:09}, use arc angles $\alpha_1,\alpha_2$ modulo $2\pi$ for the two open transports $e^{i\alpha_i}$, and real electric momenta $e_1,e_2$. Angle differences by $2\pi$ on local charts are constant, so the one-forms $\delta\alpha_i$ agree globally. The unreduced potential is $\theta=e_1\,\delta\alpha_1+e_2\,\delta\alpha_2$. Impose flux matching first, by the inclusion
+\[
+ j:(\alpha_1,\alpha_2,e)\longmapsto(\alpha_1,e,\alpha_2,e)
+\]
+with output ordered as $(\alpha_1,e_1,\alpha_2,e_2)$. Restriction of a form is pullback, so
+\[
+ j^*\omega=j^*\delta\theta=\delta e\wedge(\delta\alpha_1+\delta\alpha_2).
+\]
+Contract this with $Y=A\partial_{\alpha_1}+B\partial_{\alpha_2}+C\partial_e$. The result is $C(\delta\alpha_1+\delta\alpha_2)-(A+B)\delta e$. It vanishes exactly for $C=0$ and $A+B=0$. The shifts $(\alpha_1,\alpha_2)\mapsto(\alpha_1+\lambda,\alpha_2-\lambda)$ move along precisely these directions. They are the effective relative endpoint re-marking. The map
+\[
+ (\alpha_1,\alpha_2,e)\longmapsto(\alpha=\alpha_1+\alpha_2\ \mathrm{mod}\ 2\pi,\ e)
+\]
+has exactly the shift orbits as fibers; every output has a representative $(\alpha,0,e)$. The resulting cylinder carries $\omega_{\rm red}=\delta e\wedge\delta\alpha$, nondegenerate and pulling back to $j^*\omega$. This is \emph{reduction} in this example: restrict, identify the null directions, and exhibit the form on the quotient. With $\delta H(Y)=\omega(Y,X_H)$ one gets $X_e=\partial_\alpha$, hence $\{e^{i\alpha},e\}=i e^{i\alpha}$. The relative angle was redundant; the sum, the phase of the closed loop, is measurable. The calculation would lose it if both open phases had been discarded at the outset.
+
+\section{Build a field on the circle from two strips}\label{D-capstone}
+Here is a problem to try without first guessing a field on an uncut circle. Let $R_i=\mathbb R_t\times[0,d_i]_{x_i}$, $d_i>0$, $i=1,2$. Identify $(t,d_1)_1$ with $(t,0)_2$, and $(t,d_2)_2$ with $(t,0)_1$. Each strip has the flat metric $-dt^2+dx_i^2$ and increasing future time. On each take a real line with its fixed fiber norm, so its orthonormal frame group is $O(1)=\{+1,-1\}$. A field is a section of this line bundle. When going from the end of strip 1 to the start of strip 2, multiply field components by $a\in\{+1,-1\}$; at the return seam multiply by $b\in\{+1,-1\}$. Use these constant identifications throughout the respective collars. On each strip take the massive wave density $\tfrac12[(\partial_t u_i)^2-(\partial_{x_i}u_i)^2-m^2u_i^2]$, $m\geq0$. There is no sheet action. From these data construct the space, identify the field bundle, and find the allowed frequencies of real separated modes. Does the answer depend on which strip end carries a minus sign?
+
+\subsection{Solution: build the base, then the field and its derivative}
+Put $L=d_1+d_2$. The circular coordinate is $X=x_1$ on strip 1 and $X=d_1+x_2$ on strip 2, read modulo $L$. The induced map is a homeomorphism onto $\mathbb R\times S^1$; one can write the inverse locally even for a time interval of infinite duration. At the first seam take the signed coordinate $s=x_1-d_1$ on strip 1 and $s=x_2$ on strip 2. At the return seam take $s=x_2-d_2$ on strip 2 and $s=x_1$ on strip 1. The inverse uses the old strip for $s\leq0$ and the new one for $s\geq0$. All transition derivatives for the spatial variable are $+1$ in these oriented charts. The local inverses and direct maps are smooth, both metrics become $-dt^2+ds^2$, and $\partial_t$ agrees. The time slices are Cauchy circles, as in the zero-shift case of Chapter~\ref{ch:01}.
+
+At the first seam a common fiber coordinate is the coefficient on strip 2: it equals $a u_1$ on the old side and $u_2$ on the new. On the covering line, changing the strip-2 frame by $a$ makes the first transition $+1$ and the return transition $H=ba$. Thus the pulled-back component obeys $u(t,X+L)=H u(t,X)$. This is a statement about the chosen field bundle, not an extra force at either seam. The product $H$ is unchanged by admissible constant re-markings of either connected strip. A first derivative of the field in the same common frame also carries the sign $a$, not a second, independently chosen transition.
+
+We can derive the derivative matching without first assuming a smooth field. Vary the regional actions under a common value at the first seam, so $\delta u_2(t,0)=a\,\delta u_1(t,d_1)$. Spatial integration by parts leaves
+\[
+ \int dt\,\big[-\partial_{x_1}u_1(t,d_1)+a\,\partial_{x_2}u_2(t,0)\big]\,\delta u_1(t,d_1).
+\]
+Time variations may be compactly supported. Since the face variation is free and $a^2=1$, this gives $\partial_{x_2}u_2(t,0)=a\,\partial_{x_1}u_1(t,d_1)$. The same argument at the second seam gives the return sign $b$. It is the stationarity of this specified action that yields the first derivative, while the fiber identification supplied the common field value. The bulk equation $u_{x_i x_i}=u_{tt}+m^2u$ then recursively supplies all higher spatial derivatives, with time derivatives obtained along the seams. The pieces consequently pass the jet test, not merely a point-value test.
+
+\subsection{Solution: carry two numbers around the assembled space}
+For a real mode write $u_i(t,x_i)=\cos(\omega t) f_i(x_i)$. Then $-f_i''=k^2 f_i$ with $k^2=\omega^2-m^2$. The symbol $k^2$ is initially just an eigenvalue; why is it nonnegative? Multiply by $f_i$ and integrate by parts on both intervals. The first seam gives $-f_1(d_1)f'_1(d_1)+f_2(0)f'_2(0)=0$, because both factors acquire $a$ and $a^2=1$. The return seam cancels in the same way. Thus
+\[
+ k^2\sum_i\int_0^{d_i} f_i^2\,dx_i=\sum_i\int_0^{d_i}(f_i')^2\,dx_i .
+\]
+For a nonzero mode we may take $k\geq0$. For $k>0$, solving the ordinary initial value problem at either strip's start gives
+\[
+ Y_i(d)=T_k(d)Y_i(0),\qquad Y_i=\binom{f_i}{f_i'},\qquad
+ T_k(d)=\begin{pmatrix}\cos(kd)&\sin(kd)/k\\-k\sin(kd)&\cos(kd)\end{pmatrix}.
+\]
+For example the two columns are the solutions with initial data $(1,0)$ and $(0,1)$, together with their derivatives. The first join gives $Y_2(0)=a T_k(d_1)Y_1(0)$; the second gives $Y_1(0)=b T_k(d_2)Y_2(0)$. Addition of angles gives $T_k(d_2)T_k(d_1)=T_k(L)$. A nonzero initial vector returns consistently if and only if
+\[
+ 0=\det(\mathbf{1}_2-H T_k(L))=1-H\operatorname{tr}T_k(L)+H^2\det T_k(L)
+   =2(1-H\cos(kL)).
+\]
+Thus for $H=+1$ the positive wave numbers are $2\pi n/L$, $n=1,2,\ldots$; for $H=-1$ they are $(2n+1)\pi/L$, $n=0,1,\ldots$. At these roots $H T_k(L)=\mathbf{1}_2$, the identity on value and slope, so any nonzero initial vector gives a mode with $\omega^2=m^2+k^2$. Check the excluded point $k=0$ separately: $T_0(L)=\left(\begin{smallmatrix}1&L\\0&1\end{smallmatrix}\right)$. Only a constant spatial mode survives for $H=+1$, and none survives for $H=-1$. If both $k=m=0$, the time equation for this one spatial mode also allows a linear function of time. No completeness theorem for mode expansions is needed to decide which separated modes exist.
+
+\begin{exercise}[Hand the data to the next strip]
+Let $d_1=d_2=L/2$, $a=-1$, $b=+1$. Start with $Y_1(0)=(1,k)^{\mathsf T}$ at $k=\pi/L$. Find $f_1$ and $f_2$ rather than inferring them from a known antiperiodic solution. What happens if the first join transmits the value but you forget to transmit the slope with the same sign?
+\end{exercise}
+\noindent\emph{Solution.} The first interval gives $f_1=\cos(kx_1)+\sin(kx_1)$ and $Y_1(d_1)=(1,-k)^{\mathsf T}$. Multiplying both entries by $a$ gives $Y_2(0)=(-1,k)^{\mathsf T}$. Hence $f_2=-\cos(kx_2)+\sin(kx_2)$ and $Y_2(d_2)=(1,k)^{\mathsf T}$, the original data since $b=+1$. Transmitting $(-1,-k)^{\mathsf T}$ instead already violates the stationary interface equation and returns $(-1,k)^{\mathsf T}$ at the final seam. The measurable distinction here is between two products $ba$, not between two positions for the same sign. The local charts, the metric, the incidence of the faces and the regional field equations did not change. What changed was the geometric instruction for comparing a field value after a complete circuit.

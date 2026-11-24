@@ -1,0 +1,60 @@
+% !TeX program = lualatex
+\documentclass[11pt,oneside,openany]{book}
+\usepackage[paperwidth=184mm,paperheight=254mm,inner=22mm,outer=22mm,top=23mm,bottom=24mm,headheight=16pt,footskip=12mm]{geometry}
+\usepackage{amsmath,amsthm}
+\usepackage{libertinus}
+\AtBeginDocument{\renewcommand{\Box}{\mathord{\mdlgwhtsquare}}}
+\usepackage[final]{microtype}
+\usepackage{xcolor,tikz,graphicx,array,booktabs,tabularx,enumitem,longtable,multicol,needspace}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
+\usepackage{titlesec,fancyhdr}
+\definecolor{ink}{HTML}{182E40}\definecolor{pine}{HTML}{126362}\definecolor{lightpine}{HTML}{E3F1EC}\definecolor{brick}{HTML}{984628}\definecolor{slate}{HTML}{435B68}
+\usepackage[unicode,pdfdisplaydoctitle,bookmarksnumbered,bookmarksopen=false,colorlinks,linkcolor=pine,citecolor=pine,urlcolor=pine]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={The Mathematics of Fields and Interfaces},pdfsubject={Topology, geometry, analysis and quantum algebras: a companion to Lorentzian Sewing},bookmarksdepth=2}
+\setcounter{tocdepth}{1}\setcounter{secnumdepth}{2}
+\setlength{\emergencystretch}{2.2em}\raggedbottom
+\setlist[enumerate]{leftmargin=1.8em,itemsep=.2em,topsep=.45em}\setlist[itemize]{leftmargin=1.45em,itemsep=.2em,topsep=.45em}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{ink}}{\sffamily\small\bfseries\color{pine}\MakeUppercase{\chaptertitlename}\enspace\thechapter}{6pt}{}
+\titlespacing*{\chapter}{0pt}{10pt}{17pt}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{pine}}{\thesubsection}{.55em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus .55ex minus .2ex}{.8ex}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{slate}The Mathematics of Fields and Interfaces}\fancyhead[R]{\small\sffamily\color{slate}\nouppercase{\leftmark}}\fancyfoot[R]{\thepage}\renewcommand{\headrulewidth}{.3pt}
+\renewcommand{\chaptermark}[1]{\markboth{Chapter \thechapter}{}}\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+\theoremstyle{plain}\newtheorem{theorem}{Theorem}[chapter]\newtheorem{proposition}[theorem]{Proposition}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}{Exercise}[chapter]\newtheorem{remark}[theorem]{Remark}
+\providecommand{\dd}{\mathrm{d}}\providecommand{\supp}{\operatorname{supp}}\providecommand{\WF}{\operatorname{WF}}
+\begin{document}
+\frontmatter
+\hypersetup{pageanchor=false}
+\begin{titlepage}\thispagestyle{empty}\setlength{\parindent}{0pt}
+\vspace*{18mm}{\large\sffamily\color{pine}MATHEMATICAL PHYSICS\par}\vspace{9mm}
+{\fontsize{35}{40}\selectfont\bfseries\color{ink}The Mathematics of\\Fields and Interfaces\par}\vspace{7mm}
+{\Large Topology, geometry, analysis and quantum algebras\par}\vspace{5mm}{\large\itshape A mathematical companion to Lorentzian Sewing\par}
+\vfill
+\begin{center}\begin{tikzpicture}[x=7.7cm,y=1.3cm,>=Stealth,font=\small]
+\draw[->,slate!65] (-.04,0)--(1.09,0) node[right] {$X/L$};
+\draw[->,slate!65] (0,-1.02)--(0,1.62) node[above] {$2mK_H$};
+\draw[dotted,slate!65] (1,-.88)--(1,1.44);
+\draw[very thick,pine,domain=0:1,samples=64] plot (\x,{(exp(-2*\x)+exp(-2*(1-\x)))/(1-exp(-2))}) node[right] {$H=+1$};
+\draw[very thick,brick,domain=0:1,samples=64] plot (\x,{(exp(-2*\x)-exp(-2*(1-\x)))/(1+exp(-2))}) node[right] {$H=-1$};
+\node[anchor=north west,text=slate] at (.05,-.98) {\sffamily Static response on a circle, $mL=2$};
+\end{tikzpicture}\end{center}\vfill
+{\small\sffamily\color{slate}Graduate text\enspace/\enspace English edition\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\input{preface}\tableofcontents
+\mainmatter
+\part{Spaces and smooth geometry}
+\input{chapters/01}\input{chapters/02}\input{chapters/03}\input{chapters/04}\input{chapters/05}
+\part{Geometry of fields and spacetime}
+\input{chapters/06}\input{chapters/07}\input{chapters/08}\input{chapters/09}
+\part{Analysis of fields and their boundary values}
+\input{chapters/10}\input{chapters/11}\input{chapters/12}\input{chapters/complexes}
+\part{Classical and quantum observables}
+\input{chapters/13}\input{chapters/14}\input{chapters/15}\input{chapters/16}
+\part{An application}
+\input{chapters/17}
+\backmatter\input{crosswalk}\input{references}
+\end{document}

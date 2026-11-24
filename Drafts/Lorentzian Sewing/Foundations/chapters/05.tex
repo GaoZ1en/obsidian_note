@@ -1,0 +1,81 @@
+% !TeX root = ../main.tex
+\chapter{Differential forms and integration}\label{f:forms}
+Euclidean change of variables multiplies a volume element by a determinant. To integrate something not confined to a single chart we must answer two questions: which geometric object transforms by that determinant, and how can the integrals over overlapping charts be assembled without counting anything twice? These questions lead separately to alternating forms and to partitions of unity. They meet in Stokes' theorem. No metric will be needed.
+
+\section{From bilinear to alternating functions}\label{f:tensor-product}
+What turns a bilinear rule into an ordinary linear map? For vector spaces $U,V$ over the same field $\mathbb K$, start with formal finite linear combinations of symbols $[u,v]$. Divide by the subspace spanned by the relations making the symbols linear in each slot. For instance, $[a u+b u',v]-a[u,v]-b[u',v]$ is set to zero, as is the corresponding expression in the second slot. The resulting vector space is $U\otimes V$; the class of a symbol is $u\otimes v$. A bilinear map $B:U\times V\to W$ now gives a linear map $U\otimes V\to W$ by $u\otimes v\mapsto B(u,v)$: the relations are killed exactly by bilinearity. Conversely every such linear map gives a bilinear rule, and is determined by that rule since the symbols span. This is the universal property of the tensor product.
+
+If $e_i,f_j$ are bases, their pairwise tensors span by expansion in the two slots. They are independent: the bilinear rules $(u,v)\mapsto e^i(u)f^j(v)$ formed from the dual basis covectors pick out individual coefficients. In particular, for finite-dimensional $U$, the map $U^*\otimes V\to\operatorname{Hom}(U,V)$ given by $\alpha\otimes v\mapsto (x\mapsto\alpha(x)v)$ is an isomorphism: the basis tensors give precisely the elementary matrices. A vector-valued one-form will use this identification in each fiber. Taking $U$ real, the space $U_{\mathbb C}=U\otimes_{\mathbb R}\mathbb C$ allows complex coefficients; its elements are uniquely $u+i v$ with $u,v\in U$. This operation adds no inner product. Iterating the tensor product allows arbitrary multilinear rules; alternating rules are a special case with fewer independent coefficients.
+
+For a finite-dimensional real vector space $V$, a covariant $k$-tensor is a multilinear map $V^k\to\mathbb R$. An alternating one changes sign when two arguments are exchanged; equivalently it vanishes whenever two arguments agree. The space of these maps is denoted $\Lambda^k V^*$, with $\Lambda^0 V^*=\mathbb R$. The exterior product of covectors $\alpha_1,\ldots,\alpha_k$ is the alternating tensor defined by
+\[
+ (\alpha_1\wedge\cdots\wedge\alpha_k)(v_1,\ldots,v_k)=\det[\alpha_i(v_j)] .
+\]
+If $e^1,\ldots,e^n$ is a dual basis, evaluating on the increasing $k$-tuples of primal basis vectors shows that the increasing wedges of the $e^i$ form a basis. Define the wedge of elementary wedges by concatenation and extend bilinearly. The determinant formula, or expansion on ordered basis vectors, shows independence of the chosen basis. Moving $k$ slots past $l$ slots changes the sign by $(-1)^{kl}$. In particular there are no nonzero $k$-forms for $k>n$.
+
+A differential $k$-form assigns an alternating tensor to each tangent space. Its coefficients in the coordinate basis must be smooth. In that basis the expansion is unique:
+\[
+ \eta=\sum_{i_1<\dots<i_k}\eta_{i_1\ldots i_k}\,dx^{i_1}\wedge\cdots\wedge dx^{i_k}.
+\]
+The pullback by $F:M\to N$ evaluates $\eta$ on $dF_p v_1,\ldots,dF_p v_k$; it commutes with wedges and reverses the order of composition of maps. A top-degree form written $a(y)\,dy^1\wedge\cdots\wedge dy^n$ has pullback coefficient $(a\circ F)\det DF$ in equal dimensions. For a fiber-independent example, take $(r,\theta)\mapsto(r\cos\theta,r\sin\theta)$: $dx\wedge dy$ pulls back to $r\,dr\wedge d\theta$. The formula exists even at $r=0$; it is the use of polar coordinates as a \emph{chart} there which fails.
+
+\section{Exterior differentiation and periods}\label{f:exterior}
+Define $d$ on a coordinate expansion by
+\[
+ d\!\left(\sum_I a_I\,dx^I\right)=\sum_{j,I}\partial_j a_I\,dx^j\wedge dx^I .
+\]
+This operator restricts on functions to the differential of Chapter~\ref{f:smooth}. Equality of mixed partial derivatives and antisymmetry give $d^2=0$. The ordinary product rule gives the graded rule $d(\eta\wedge\beta)=d\eta\wedge\beta+(-1)^k\eta\wedge d\beta$ for a $k$-form $\eta$. These formulas also prove that $d$ is independent of the chart. Indeed $F^*(dy^i)=d(y^i\circ F)$ by the chain rule, and $d$ of this last one-form vanishes in source coordinates. Applying the graded rule to each pulled-back coefficient times basis wedge gives $dF^*\eta=F^*d\eta$ first for maps between Euclidean open sets and then in manifold charts.
+
+Contraction $\iota_X$ inserts $X$ into the first slot of a form. It is a graded derivation of degree $-1$, as may be checked first on a wedge of covectors by expanding a determinant along its first column. One can also differentiate a form by moving points: set $\mathcal L_X\eta=(d/dt)|_0(\Phi_t^X)^*\eta$. Pullback keeps this a form over each \emph{original} point so the derivative is defined. On functions $\mathcal L_X f=Xf$ and on $df$ it gives $d(Xf)$. Both $\mathcal L_X$ and $d\iota_X+\iota_Xd$ are degree-zero derivations, agree on functions and their differentials by these formulas, and hence agree on every local form. This proves Cartan's formula. It relates infinitesimal symmetry to differentiation and boundary terms without requiring coordinates adapted to the symmetry.
+
+A form is \emph{closed} if $d\eta=0$ and \emph{exact} if $\eta=d\beta$. On the punctured plane consider
+\[
+ \eta=\frac{-y\,dx+x\,dy}{x^2+y^2} .
+\]
+Direct differentiation gives zero. Its pullback to $t\mapsto(r\cos t,r\sin t)$ with fixed $r>0$ is $dt$, whose integral along one revolution is $2\pi$. An exact one-form integrates along a path to the endpoint difference of its potential by the one-variable fundamental theorem, and cannot give this answer on a closed path. Locally one may choose a branch of the angle, but a global real angle does not exist. The quotient of closed $k$-forms by exact ones is the $k$th de Rham cohomology; we have exhibited a nonzero class without invoking a classification of surfaces. This period will have an interpretation in parallel transport.
+
+\section{Localizing a smooth integral}
+The support of a function or form is the closure of the set where it is nonzero. A family of subsets is locally finite if each point has a neighborhood meeting only finitely many members. A smooth partition of unity subordinate to an open cover is a locally finite family of nonnegative smooth functions whose sum is one, with each support contained in a member of the cover. It is the supports, not just the sets where the functions are positive, that must lie in the desired patches. This lets a local piece be extended by zero without introducing a kink.
+
+\begin{theorem}[Smooth partitions of unity]\label{f:partition}
+A Hausdorff second-countable smooth manifold, also with the corner charts of Chapter~\ref{f:submanifolds}, admits a smooth partition of unity subordinate to every open cover.
+\end{theorem}
+\begin{proof}
+In a coordinate patch choose two concentric balls with the closure of the smaller inside the larger and the closure of the larger inside the patch. There is a smooth function equal to one on the smaller ball, supported in the larger, with values in $[0,1]$: a one-variable cutoff can be made from $b(t)=e^{-1/t}$ for $t>0$, $0$ otherwise, using $b(t)/(b(t)+b(1-t))$ on a rescaled squared radius. Use an intermediate radius to put the support strictly inside the larger ball. At a corner restrict the ambient cutoff to the coordinate model. Extend by zero outside the patch.
+
+Here is why enough such choices can be made without losing local finiteness. Coordinate neighborhoods of compact closure form a basis; by second countability select countably many $V_i$ covering the space. There is an exhaustion by compact sets $K_j$ with $K_j\subset\operatorname{int}K_{j+1}$. Inductively cover the compact set $K_j\cup\overline V_{j+1}$ by finitely many relatively compact coordinate neighborhoods; the union of their closures can be taken for $K_{j+1}$. Start with $K_1=\overline V_1$. For each compact shell $K_j\setminus\operatorname{int}K_{j-1}$ choose pairs of balls as above whose larger closures stay in members of the prescribed cover and in $\operatorname{int}K_{j+1}\setminus K_{j-2}$ (early sets with nonpositive indices are empty). Finitely many smaller balls cover the shell. The resulting family is locally finite: inside $\operatorname{int}K_N$ no ball from shells with $j\ge N+2$ can occur. The sum $b$ of the chosen cutoff functions is smooth and positive everywhere since all shells are covered. Dividing each cutoff by $b$ gives the desired partition.
+\end{proof}
+
+\phantomsection\label{f:orientation-density}An orientation consists of a continuously consistent choice of sign for ordered tangent bases. Equivalently one can choose charts with positive transition determinants. On a connected oriented manifold there are two global choices. A smooth nowhere-zero form of top degree determines one; conversely local oriented coordinate volume forms can be combined by a partition of unity, since at each point a positive combination of positive volumes stays positive. A \emph{density} of top degree instead changes by the absolute determinant, so can be integrated without orientation. A volume form and the associated positive density are not interchangeable in formulas that keep track of boundary signs.
+
+For a compactly supported top form $\omega$ on an oriented manifold, take an oriented chart cover and a subordinate partition $\chi_i$. Integrate each $\chi_i\omega$ in its chart by the ordinary Euclidean integral of its coefficient, and sum. Only finitely many supports meet the compact support of $\omega$. Given another partition $\psi_j$, insert $1=\sum_j\psi_j$ in each first integral: each $\chi_i\psi_j\omega$ is supported in the intersection. Euclidean change of variables with positive Jacobian equates its two chart integrals. Sum first in $i$ and then in $j$ to get the other answer. This proves that $\int_M\omega$ is an operation on the form, not on its description. The same argument with absolute Jacobians defines integration of densities. Integrable forms of noncompact support require convergence; compact support suffices for the theorem below.
+
+\section{Stokes' theorem and oriented flux}
+At a face write the region as $\rho\le0$ with $d\rho\ne0$. A tangent vector to the ambient manifold is outward transverse when $d\rho(N)>0$. The boundary orientation makes $(e_1,\ldots,e_{n-1})$ positive on the face exactly when $(N,e_1,\ldots,e_{n-1})$ is positive in the ambient space. Any other outward transverse vector differs from a positive multiple of $N$ by something tangent, which does not change this test. If two faces meet, exchanging the order in which their outward vectors are inserted reverses the orientation of their common codimension-two corner. Thus $\partial\partial M=0$ as an oriented formal sum, not as a statement that the set of corner points is empty.
+
+\begin{theorem}[Stokes]\label{f:stokes}
+For an oriented $n$-manifold $M$ with embedded faces, and a smooth $(n-1)$-form $\eta$ compactly supported up to the boundary,
+\[
+ \int_M d\eta=\sum_F\int_F j_F^*\eta ,
+\]
+where each codimension-one face has the outward-first orientation. Use a locally finite face decomposition so the expression on a compact support is finite.
+\end{theorem}
+\begin{proof}
+By the partition construction, $d\eta=\sum_i d(\chi_i\eta)$ (the derivatives of the partition add to zero). It suffices to work with one supported chart form. In an oriented Euclidean orthant chart express it uniquely as
+\[
+ \eta=\sum_{j=1}^n(-1)^{j-1}a_j\,dx^1\wedge\cdots\wedge\widehat{dx^j}\wedge\cdots\wedge dx^n .
+\]
+The hat omits a factor. Then $d\eta=(\sum_j\partial_j a_j)\,dx^1\wedge\cdots\wedge dx^n$. Integrating in the $j$ direction over the whole line gives zero by compact support. In a direction restricted to $x^j\ge0$ it gives $-a_j|_{x^j=0}$. On that face all terms of $j_F^*\eta$ containing $dx^j$ vanish; inserting the outward vector $-\partial_j$ first gives exactly the same negative coefficient relative to the remaining coordinate integral. Intersections of faces have measure zero in these integrals. Addition over the pieces proves the formula, with orientation signs transformed in both integrals if the chart reverses the model orientation.
+\end{proof}
+
+Given a positive volume form $\epsilon$, normalize $N$ by $\nu(N)=1$ for $\nu=d\rho$ and write $\epsilon_\nu=j^*\iota_N\epsilon$. Then any vector $V$ splits as $\nu(V)N+T$ with $T$ tangent to the face. Alternation kills $j^*\iota_T\epsilon$; hence the outward flux form is $j^*\iota_V\epsilon=\nu(V)\epsilon_\nu$. Rescaling $\nu$ by a positive function rescales $\epsilon_\nu$ inversely. Instead of integrating the form with the boundary orientation one can integrate the outward density $\nu(V)|\epsilon_\nu|$ with a positive measure. On two matched faces the outward densities should then be \emph{added}: no extra minus sign is waiting in a Jacobian. We will use this convention when a variational derivative returns a flux through a boundary.
+
+\section*{Exercises}
+\begin{exercise}Orient the unit sphere by its outward normal in $\mathbb R^3$. Pull back its area form in the north-pole chart of Example~\ref{f:stereo}. Use the corresponding density to evaluate the total area.\end{exercise}
+\noindent\emph{Check.} For the inverse chart $P(u,v)$ the signed coefficient is $P\cdot(P_u\mathbin{\times}P_v)=-4/(1+r^2)^2$: this planar coordinate order gives the \emph{opposite} orientation. The density is positive. The omitted pole has measure zero in its other chart, and the integral is $2\pi\int_0^\infty4r(1+r^2)^{-2}dr=4\pi$.
+\begin{exercise}On the cylinder $S^1\times\mathbb R$ let the height be $z$ and let $d\theta$ denote the pullback of the angular form. Is $dz\wedge d\theta$ exact? Is $d\theta$ exact?\end{exercise}
+\noindent\emph{Solution.} $d(z\,d\theta)=dz\wedge d\theta$. A circle at fixed height has angular period $2\pi$; exactness of the two-form does not imply exactness of either factor.
+\begin{exercise}In the $(t,x)$ plane oriented by $dt\wedge dx$, retain $x\le h(t)$. Compute the outward flux per unit $|dt|$ for $V=V^t\partial_t+V^x\partial_x$ and check a flow which carries the boundary along with it.\end{exercise}
+\noindent\emph{Solution.} Take $\nu=dx-h'(t)dt$ and $N=\partial_x$, so $j^*\iota_N(dt\wedge dx)=-dt$. The outward coefficient is $V^x-h'V^t$, zero if $V^x=h'V^t$. Substituting directly into $\iota_V(dt\wedge dx)=V^t dx-V^x dt$ gives the same oriented form.
+\begin{exercise}Construct a smooth vector field on a manifold that agrees with a prescribed smooth vector field on a neighborhood of a point but vanishes outside one chosen coordinate patch containing it. Why would simply setting the coordinate formula to zero on the other patches fail?\end{exercise}
+\noindent\emph{Hint.} Multiply the local field by a cutoff identically one on a smaller neighborhood and supported strictly inside the patch. Smoothness near the boundary of its support, not a new rule for transformations of vectors, is the issue.

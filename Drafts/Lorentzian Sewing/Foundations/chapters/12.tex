@@ -1,0 +1,161 @@
+% !TeX root = ../main.tex
+\chapter{Hyperbolic operators and Green operators}\label{f:waves}
+
+A trace theorem tells us which boundary values an arbitrary field can have. It does not tell us which boundary values a wave can have if there was no wave yesterday. For the massless wave of speed one on $x>0$, an outgoing disturbance has the form $q(t-x)$: its value at the end is $q(t)$ and its spatial derivative there is $-q'(t)$. These are two measurements of one history. To understand this distinction we first construct the evolution of a forced wave, then use that evolution to determine what can be prescribed at a cut.
+
+\section{The principal symbol and the choice of initial surface}\label{f:wave-symbol}
+
+A linear differential operator of order $j$ has the local form $P=\sum_{|\alpha|\leq j}a_\alpha(x)\partial^\alpha$, with smooth matrix coefficients for a system. In the Fourier convention \eqref{f:fourier-pair}, its \emph{principal symbol} is
+\[
+ \sigma_j(P)(x,\xi)=\sum_{|\alpha|=j}a_\alpha(x)(i\xi)^\alpha .
+\]
+One can see why this is intrinsically a function of a covector: the coefficient of $L^j$ in $e^{-iL\phi}P(e^{iL\phi}u)$ at $x$ is $\sigma_j(P)(x,d\phi_x)u(x)$. A nonzero covector at which the symbol is not invertible is \emph{characteristic} (for a system, take equal input and output ranks). A hypersurface $r=0$, $dr\ne0$, is noncharacteristic if its conormals are noncharacteristic. In adapted coordinates this says that one can solve the equation algebraically for the highest pure normal derivative. It does not say that solving for it gives a stable evolution.
+
+Fix signature $(-,+,\ldots,+)$, and define the scalar operator, for a constant $m\geq0$, by
+\begin{equation}
+ P=\Box_g-m^2,\qquad \Box_g u=\nabla^\mu\nabla_\mu u
+   =|\det g|^{-1/2}\partial_\mu\big(|\det g|^{1/2}g^{\mu\nu}\partial_\nu u\big).
+ \label{f:wave-operator}
+\end{equation}
+This is the Euler operator of the action $-\tfrac12\int(g^{\mu\nu}\partial_\mu u\partial_\nu u+m^2u^2)\,dV_g$ after removing the volume density. Its principal symbol is $-g^{\mu\nu}\xi_\mu\xi_\nu$. A second-order system with this symbol times the identity is called \emph{normally hyperbolic} in our sign convention. Its characteristics are the null covectors. A spacelike slice is noncharacteristic, but so is a timelike wall. In Minkowski space there are inextendible timelike curves which never meet the wall. A Cauchy surface, by contrast, meets every inextendible timelike curve exactly once; the wave theorem below requires a smooth spacelike Cauchy surface. On a null face one loses even the algebraic determination of the second normal derivative. For example $4\partial_u\partial_v w=0$ has solutions $a(u)+b(v)$: data at $u=0$ do not determine $a(u)-a(0)$, and adding the tangential derivative $\partial_vw(0,v)$ gives no new information.
+
+\begin{exercise}[Evolution in a spatial direction]
+For the equation $w_{tt}-w_{xx}-w_{yy}=0$ with periodic $y$, show that continuation of two traces away from the timelike plane $x=0$ can amplify a small error in the data by an arbitrarily large factor.
+\end{exercise}
+\noindent\emph{Solution.} Fix $a>0$ and take $w_N=e^{-Na/2}\cos(Ny)\cosh(Nx)$. It is a time-independent solution. At $x=0$ the value tends to zero with all its tangential derivatives and the normal derivative is identically zero. At $x=a$ the amplitude grows like $e^{Na/2}/2$. Noncharacteristicity did let us compute $w_{xx}$; it gave no estimate in the proposed direction of evolution.
+
+\section{Energy, finite speed and existence in flat space}\label{f:wave-energy}
+
+For the estimates it is convenient to work with the \emph{positive evolution operator} $D=\partial_t^2-\Delta_x+m^2=-P$. Thus $Du=h$ means $Pu=-h$; every inverse of $P$ below is the \emph{negative} of the corresponding inverse of $D$. For a smooth real solution in $d$ spatial dimensions multiply $Du=h$ by $u_t$. The product rule gives a local identity, not just a conserved total:
+\begin{equation}
+ e=\tfrac12(u_t^2+|\nabla_x u|^2+m^2u^2),\qquad
+ \partial_t e-\operatorname{div}_x(u_t\nabla_xu)=h u_t .\label{f:wave-balance}
+\end{equation}
+With sufficient spatial decay to discard the boundary at infinity, put $\mathcal E(t)=\int e(t,x)\,dx$. Then $\mathcal E'\leq\|h\|_2\sqrt{2\mathcal E}$. Integrating the inequality for $\sqrt{2\mathcal E+\varepsilon}$ and letting $\varepsilon\downarrow0$ yields, for $t\geq t_0$,
+\begin{equation}
+ \sqrt{2\mathcal E(t)}\leq \sqrt{2\mathcal E(t_0)}+\int_{t_0}^t\|h(\tau,\cdot)\|_2\,d\tau .\label{f:energy-estimate}
+\end{equation}
+Apply this also to differences of solutions. It gives uniqueness with fixed Cauchy data and continuous dependence in the energy norm. If $m=0$, energy controls derivatives; the initial value fixes the remaining constant, and $\|u(t)\|_2\leq\|u(t_0)\|_2+\int_{t_0}^t\|u_t\|_2\,d\tau$ supplies the missing norm on finite time intervals.
+
+For a local conclusion, integrate \eqref{f:wave-balance} over the shrinking ball $|x-x_*|<T-t$. Differentiating this integral in time contributes $-e$ on the moving sphere, so its boundary integrand is
+\[
+ u_t\partial_\nu u-e=-\tfrac12(u_t-\partial_\nu u)^2-\tfrac12|\nabla_{\rm tan}u|^2-\tfrac12m^2u^2\leq0 .
+\]
+If the source is absent in this backward cone and the data vanish on its initial ball, the energy in each shrinking ball remains zero. The solution is zero there, also in the massless case by the initial value, and continuity gives $u(T,x_*)=0$. This is finite speed one. On a static internal cut the two boundary power terms are $u_t$ times the two outward spatial derivatives. If the field and the cooriented derivative match, these powers cancel on the part of the cut \emph{inside the cone}. Vanishing power alone would not imply matching: two reflecting Dirichlet walls also have zero power.
+
+Neither estimate produces a solution. For that purpose take smooth compactly supported displacement $a$, velocity $b$ at $t_0$, and smooth compact spacetime force $h$. Fourier transform only in $x$ and set $\omega_k=(|k|^2+m^2)^{1/2}$, $s_k(v)=\sin(\omega_k v)/\omega_k$, interpreted as $v$ at $\omega_k=0$. The scalar oscillator at each $k$ has solution
+\begin{align}
+ \widehat u(t,k)={}&\cos(\omega_k(t-t_0))\widehat a(k)+s_k(t-t_0)\widehat b(k)\notag\\
+ &+\int_{t_0}^t s_k(t-\tau)\widehat h(\tau,k)\,d\tau .\label{f:wave-existence}
+\end{align}
+Indeed $s_k(0)=0$, $s_k'(0)=1$ and $s_k''+\omega_k^2s_k=0$: the second time derivative of the integral produces exactly $\widehat h(t,k)$. On a bounded time interval the transforms of the data and force decay faster than any power of $|k|$, uniformly in the integration time. The kernels and their time derivatives grow at most polynomially in $|k|$ there. Thus the inverse transform and all the derivatives needed for the equation and initial conditions converge absolutely. This constructs the smooth solution and the cone argument proves its support bound. Choosing zero data at a time before the source gives the retarded solution. By approximation, \eqref{f:energy-estimate} also constructs limits in $C_t H^1_x\cap C^1_t L^2_x$ for $a\in H^1$, $b\in L^2$ and $h\in L^1_tL^2_x$ on finite intervals; their equation holds on compact tests by passage to the limit. Here continuity in time, in the indicated spatial norms, is a consequence of evolution. It is not the trace of a general spacetime $L^2$ field.
+
+\section{One-sided inverses and adjoint domains}\label{f:green-domains}
+
+Let $M$ be smooth, time oriented, globally hyperbolic and without boundary, $V\to M$ a smooth finite-rank vector bundle, and $P$ a smooth normally hyperbolic operator on it. We use the global Cauchy and Green theorems of B\"ar, Ginoux and Pf\"affle \cite[Thm.~3.2.11 and Cor.~3.4.3]{BGP}: compactly supported smooth data $(u,\nabla_nu)$ on a smooth spacelike Cauchy hypersurface and compactly supported smooth forcing give a unique smooth solution supported in $J^+(K)\cup J^-(K)$, where $K$ is the union of the three supports. Here $n$ is the future unit normal and one may use the connection belonging to the operator (for a scalar, the normal derivative). On compact smooth spacetime sources there are unique retarded and advanced Green operators, mapping $C_c^\infty(M;V)$ to $C^\infty(M;V)$, characterized by
+\begin{equation}
+ \begin{gathered}
+  PG^{R/A} f=f,\qquad G^{R/A}P v=v \quad(f,v\in C_c^\infty(M;V)),\\
+  \operatorname{supp}G^R f\subset J^+(\operatorname{supp}f),\qquad
+  \operatorname{supp}G^A f\subset J^-(\operatorname{supp}f).
+ \end{gathered}\label{f:green-identities}
+\end{equation}
+In that reference the leading differential expression is $-g^{\mu\nu}\partial_\mu\partial_\nu$, and the future-supported map is called $G_+$ (``advanced''). For our scalar $P$ one applies their theorem to $-P$ and negates its Green operators; our word \emph{retarded} specifies future support of the response. The flat-space proof above illustrates the theorem, not its proof for curved metrics.
+
+The output on a compact source need not be compact. To apply a retarded inverse a second time, we need a class of supports that the first inverse preserves. Call a closed set $A$ \emph{past compact} if $A\cap J^-(C)$ is compact for every compact $C\subset M$; reverse the sign for \emph{future compact}. Write $C^\infty_{\rm pc}(M;V)$ and $C^\infty_{\rm fc}(M;V)$ for the corresponding spaces of smooth sections. We use the geometric fact that $J^+(K)\cap J^-(C)$ is compact for compact $K,C$ in a globally hyperbolic spacetime \cite[Lemma~A.5.7]{BGP}. In particular a field supported in $J^+(K)$ for compact $K$ is past compact. Differential operators preserve either support condition because they do not enlarge supports.
+
+\begin{proposition}[One-sided extension]\label{f:one-sided-extension}
+Under the same boundaryless, globally hyperbolic hypotheses, $P$ is invertible on $C^\infty_{\rm pc}(M;V)$, with inverse extending $G^R$ and satisfying $\operatorname{supp}G^R f\subset J^+(\operatorname{supp}f)$. On $C^\infty_{\rm fc}(M;V)$ its inverse extends $G^A$ with the past support bound.
+\end{proposition}
+\begin{proof}
+Let $A=\operatorname{supp}f$ be past compact and $O$ a relatively compact open neighborhood of an observation point. Choose $\chi\in C_c^\infty(M)$ equal to one near the compact set $A\cap J^-(\overline O)$. On $O$ define the answer as $G^R(\chi f)|_O$, using only the compact-source inverse. For any two such cutoffs the difference of the cut-off sources has support disjoint from $J^-(\overline O)$, so its retarded response vanishes on $O$ by \eqref{f:green-identities}. Shrinking $O$ gives the same construction on overlaps, so the local answers fit together to a smooth response $u$. It is linear: one cutoff can be used for the union of two past-compact supports. On each $O$ we have $Pu=\chi f=f$ and $\operatorname{supp}u\cap O\subset J^+(A)$. To see that the output is past compact, note that
+\[
+ J^+(A)\cap J^-(C)=J^+\big(A\cap J^-(C)\big)\cap J^-(C)
+\]
+is a compact diamond for each compact $C$. In particular $u$ is in the domain for another application.
+
+For the other inverse identity take a past-compact \emph{field} $v$ and choose $\chi$ as above for its support. It also cuts off $Pv$ correctly, since $\operatorname{supp}Pv\subset\operatorname{supp}v$. The compact fields $P(\chi v)$ and $\chi Pv$ differ only away from $J^-(\overline O)$: wherever $v$ can contribute in that past, $\chi$ is locally one. Hence on $O$ the extended $G^R Pv$ equals $G^R P(\chi v)=\chi v=v$. This proves both inverse identities and uniqueness on the past-compact space. Reversing the causal directions proves the advanced statement.
+\end{proof}
+
+Without a support condition $G^RPv-v$, even if defined, can contain a free solution with nonzero past data. On a finite slab one needs $Pv$ in the chosen source space, $v$ satisfying the wall condition, and zero Cauchy data at the past cap for the retarded identity or the future cap for the advanced one. Compact support away from both caps suffices for the cap conditions; mere compactness up to the caps does not. Smooth sources can be taken to vanish near the relevant initial cap, avoiding compatibility conditions at its corners. Likewise, a physical timelike boundary requires a separate, well-posed initial--boundary problem. At a wall the one-sided extension needs causal uniqueness and propagation for that boundary problem, with compositions acting in its wall domain. Even $\chi v$ in the cutoff proof may fail a normal-derivative boundary condition unless $\chi$ is chosen compatibly. The tempered inverse of $1-\partial_x^2$ in Chapter~\ref{f:distributions} illustrates a different choice altogether: its kernel $e^{-|x|}/2$ is nonzero on both sides of the source, with no propagation direction selected.
+
+For the scalar, represent source densities using $dV_g$, and write $(u,v)_M=\int\overline u v\,dV_g$ when the supports have compact intersection. The \emph{formal adjoint} $P^\dagger$ is defined by $(Pu,v)_M=(u,P^\dagger v)_M$ on compact interior tests; a fibre inner product gives the analogous notation for bundles. For \eqref{f:wave-operator}, the difference $\overline{Pu}\,v-\overline u\,Pv$ is the divergence of $(\nabla\overline u)v-\overline u\nabla v$, so $P^\dagger=P$. Put $u=G_P^R f$ and $v=G_{P^\dagger}^A h$. Their supports overlap only in $J^+(\operatorname{supp}f)\cap J^-(\operatorname{supp}h)$, compact by global hyperbolicity. A cutoff equal to one near this intersection permits integration by parts with no end term, giving
+\[
+ (G_P^R f,h)_M=(u,P^\dagger v)_M=(Pu,v)_M=(f,G_{P^\dagger}^A h)_M .
+\]
+At a wall one needs \emph{adjoint boundary conditions} to cancel the remaining boundary integral; formal symmetry of the interior expression does not do that. With matching adjoint domains and formally self-adjoint $P$, on the common source space the \emph{causal propagator}
+\begin{equation}
+ E=G^R-G^A\qquad\text{satisfies}\qquad PEf=0,\quad EPv=0,\quad(Ef,h)_M=-(f,Eh)_M .\label{f:causal-propagator}
+\end{equation}
+In the boundaryless problem its support on $f$ lies in $J^+(K)\cup J^-(K)$, $K=\operatorname{supp}f$. For a spatial oscillator mode of the scalar $P$, the kernels are $-\Theta(t)s_k(t)$ and $\Theta(-t)s_k(t)$: their slopes both jump by $-1$ at zero, so applying $-(\partial_t^2+\omega_k^2)$ gives $\delta_0$. Their difference is $-s_k(t)$, a homogeneous solution with the sign fixed by the source equation.
+
+\begin{exercise}[The adjoint of an absorbing wall]
+On a static spatial wall take $\partial_\nu u+u_t=0$, with $\nu$ outward. Compute the power leaving the bulk and the adjoint wall condition. Assume the variations vanish near the time caps.
+\end{exercise}
+\noindent\emph{Solution.} The contribution to the derivative of bulk energy is $\int u_t\partial_\nu u=-\int u_t^2$ for a real field. On the wall the adjoint boundary integral for $P$ is $\int ((\partial_\nu\overline u)v-\overline u\partial_\nu v)$. Substituting $-\overline u_t$ and integrating it by parts in time leaves $\int\overline u(v_t-\partial_\nu v)$. Thus the adjoint condition is $\partial_\nu v-v_t=0$, with the opposite sign. Using the forward absorbing law for both fields would leave a boundary term.
+
+\section{Determining a retarded interface history}\label{f:interface-history}
+
+Cut a linear problem in two. Keep its physical outer boundary conditions and choose, at the artificial face on each piece, an auxiliary problem that is solvable with one prescribed trace. Denote the pair of retarded particular solutions with frozen zero trace by $G_0f$; a pair of homogeneous solutions with adjustable boundary histories $\eta$ and zero past data is $H\eta$. We require $G_0f+H\eta$ to parametrize the regional responses in the declared class. The map $H$ here solves an equation: the Sobolev lift \eqref{f:trace-lift} was not required to do so. Let $\mathcal B$ measure transmission error. For an ordinary scalar joining two media this is the difference of the values and the sum of the outward fluxes; if a common value has already been imposed only the flux row remains. Put
+\[
+ Nf=\mathcal BG_0f,\qquad M\eta=\mathcal B H\eta .
+\]
+The adjustable history must satisfy $M\eta=-Nf$. If a prescribed sheet load calls for nonzero mismatch $b$, the right hand side is $b-Nf$. In particular the number of measurements is no guarantee that arbitrary measurements can be prescribed.
+
+\begin{proposition}[Regional reconstruction]\label{f:causal-sewing}
+Fix source, history and mismatch spaces for the retarded problems above. Suppose zero mismatch assembles the regional fields into a global solution of the stated regularity, without a sheet source. Suppose $\operatorname{ran}N\subseteq\operatorname{ran}M$ and there is a continuous linear $L$ on $\operatorname{ran}N$ with $MLy=y$ there. Assume the regional maps are continuous and the zero-past homogeneous global solution is unique. With $K=\operatorname{supp}f$ and $\Gamma$ the cut, require $\operatorname{supp}G_0 f\subset J^+(K)$, $\operatorname{supp}LNf\subset\Gamma\cap J^+(K)$, and $\operatorname{supp}H\eta\subset J^+(\operatorname{supp}\eta)$, using the propagation cones of the assembled problem. Then the global retarded response on the chosen sources is
+\begin{equation}
+ G^R_{\rm joined} f=G_0f-HLNf .\label{f:sewn-inverse}
+\end{equation}
+\end{proposition}
+\begin{proof}
+The correction satisfies the homogeneous interior equations and the same homogeneous outer conditions, so it changes no bulk forcing. The mismatch becomes $Nf-MLNf=0$. A signal from $LNf$ reaches only points in $J^+(\operatorname{supp}LNf)\subset J^+(K)$ by transitivity of causal reachability. The assembled field therefore has the required support, and uniqueness identifies it. Two allowed choices of $L$ differ on a given mismatch by an element of $\ker M$, whose lifted difference would be a homogeneous joined solution with zero past, hence zero. This argument needs a right inverse on the generated errors, not a two-sided inverse on an arbitrary set of boundary measurements.
+\end{proof}
+
+Consider two strings of positive mass densities $\rho_\pm$ and tensions $T_\pm$, joined at $x=0$. Use the positive equation $\rho u_{tt}-\partial_x(Tu_x)=h$. Give the two ends a common displacement. By \eqref{f:jump-formula} the sheet term in the positive equation is $(T_-u_{-,x}-T_+u_{+,x})\delta(x)$; the Euler operator of opposite sign has the opposite sheet term. Continuity of $Tu_x$ therefore joins piecewise smooth solutions without a singular load. Put $c_\pm=\sqrt{T_\pm/\rho_\pm}$ and $Z_\pm=T_\pm/c_\pm$; the second constant is called the impedance. Start with smooth compact forces supported off the cut after $t=0$, zero initial data, and no incoming wave from infinity. The frozen Dirichlet solutions exist on each half-line: extend the force oddly across the end, solve on the full line by \eqref{f:wave-existence} after rescaling the speed and force, and restrict the odd solution. For a common smooth history $q$ vanishing for $t\leq0$, the outgoing homogeneous fields are
+\[
+ H_-q(t,x)=q(t+x/c_-),\quad x<0;\qquad H_+q(t,x)=q(t-x/c_+),\quad x>0 .
+\]
+Both outward weighted derivatives $T\partial_\nu$ now have the same sign at the cut. Their sum and its retarded inverse are
+\begin{equation}
+ Mq=(Z_-+Z_+)q',\qquad (Ly)(t)=\frac{1}{Z_-+Z_+}\int_{-\infty}^t y(\tau)\,d\tau .\label{f:retarded-history-lift}
+\end{equation}
+These maps act continuously on smooth histories zero for $t\leq0$, with convergence of every derivative on compact time intervals. In particular $M$ is onto there. If one also required $q$ compact in time, any $y$ of nonzero integral would be out of range. Even on a single half-line, prescribing an outward force $g$ as well as displacement $q$ in the homogeneous experiment requires $g=Zq'$: the range of the pair is a graph, not a product. For a sourced problem one must first subtract the frozen particular force. This is the overdetermination that a trace theorem alone cannot see.
+
+For a force confined to $y<0$, we can also compute the actual frozen error $Nh$. Let $v$ be the frozen left solution and $w=v_t-c_-v_x$. Then $(\partial_t+c_-\partial_x)w=h/\rho_-$. Integrate along the ray $y=-c_-(t-\tau)$ ending at the face at time $t$. There $v_t=0$ by the frozen condition, so
+\[
+ Nh(t)=T_-v_x(t,0)=-\frac{T_-}{\rho_-c_-}\int_{-\infty}^t h(\tau,-c_-(t-\tau))\,d\tau
+     =-\int_{-\infty}^0 h(t+y/c_-,y)\,dy .
+\]
+The right-hand field is $H_+(-LNh)$. At a detector $x>0$ this gives
+\begin{equation}
+ u_+(t,x)=\frac{1}{Z_-+Z_+}\int_{-\infty}^0\!dy\int_{-\infty}^{\,t-x/c_+ - |y|/c_-} h(\tau,y)\,d\tau .\label{f:string-transmission}
+\end{equation}
+The integration limit adds the travel times in the two media. The same half-line support bounds apply on the left, including to the correction radiated back from the cut. A homogeneous difference with zero Dirichlet trace on a half-line has zero boundary power, hence vanishes for zero past data. This gives uniqueness for each regional parametrization. For the joined problem use energy densities $(\rho u_t^2+T u_x^2)/2$ on the two strings: the internal terms are the common $u_t$ times the sum of outward weighted derivatives, hence cancel. The hypotheses of the reconstruction therefore hold in this piecewise smooth class. In a medium with a genuine jump in coefficients, a reflected wave can be part of the joined solution.
+
+\begin{exercise}[Measuring the impedance jump]
+Send towards the cut a right-moving pulse $i(t-x/c_-)$ on the left with $i\in C_c^\infty((0,\infty))$. At time zero this specifies compact data strictly to the left. Find the reflected and transmitted displacements with no incoming wave on the right.
+\end{exercise}
+\noindent\emph{Solution.} If $r(t+x/c_-)$ is reflected and $q(t-x/c_+)$ transmitted, continuity gives $r=q-i$ at the face. The force sum is $Z_-(-i'+r')+Z_+q'=0$. With zero past interface history this gives
+\[
+ q=\frac{2Z_-}{Z_-+Z_+}i,\qquad r=\frac{Z_--Z_+}{Z_-+Z_+}i .
+\]
+In particular equal impedances remove the reflection even if the two speeds differ; the arrival time on the far side still measures its speed.
+
+\section{Eliminating one of two cuts}\label{f:delayed-schur}
+
+If two cuts carry independent admissible histories $q,r$, the two transmission equations can have the form $Aq+Br=b$, $Cq+Dr=d$. The blocks are now operators on histories. If $A$ has a causal inverse on the required domain, the first row gives $q=A^{-1}(b-Br)$ \emph{while $r$ is still free}. Substitution gives the Schur complement equation $(D-CA^{-1}B)r=d-CA^{-1}b$. This is equivalent to both rows if the operations are defined and the eliminated history is restored. To solve uniquely by this route the remaining equation must also have a unique causal solution on the data in question. A time delay, for example, has a time advance as its formal inverse; formal invertibility alone would give the wrong support.
+
+One can see the delay in an exact calculation. Take unit tension, density and speed on the whole line and insert cuts at $0$ and $\ell>0$. Use the Laplace transform $\widetilde q(z)=\int_0^\infty e^{-zt}q(t)\,dt$, initially on smooth compact driving histories vanishing near zero, $\Re z>0$. Between the cuts the homogeneous lift with endpoint values $\widetilde q,\widetilde r$ obeys $U''=z^2 U$, hence
+\[
+ U(x)=\frac{\sinh(z(\ell-x))\widetilde q+\sinh(zx)\widetilde r}{\sinh(z\ell)} .
+\]
+The exterior half-lines contribute $z\widetilde q$ and $z\widetilde r$ to the two outward sums. Adding $-U'(0)$ and $U'(\ell)$ gives equal diagonal blocks $A=D=z(1+\coth(z\ell))$ and off-diagonal blocks $B=C=-z/\sinh(z\ell)$. Writing the hyperbolic functions in exponentials gives
+\[
+ A^{-1}=\frac{1-e^{-2z\ell}}{2z},\qquad A^{-1}B=-e^{-z\ell},\qquad D-CA^{-1}B=2z .
+\]
+Thus the remaining equation is $2z\widetilde r=\widetilde d+e^{-z\ell}\widetilde b$, not $2z\widetilde r=\widetilde d$. In time, if $b,d$ denote the required corrections to the two outward sums, the result is
+\[
+ r(t)=\tfrac12\int_{-\infty}^t \big(d(\tau)+b(\tau-\ell)\big)\,d\tau .
+\]
+Indeed $e^{-z\ell}$ translates a zero-past input to the right by $\ell$, and $1/z$ integrates it from the past, by substitution and integration by parts in the defining transform. The first pivot also has a causal inverse, half the integral over $[t-2\ell,t]$. These time formulas extend to smooth zero-past data on each finite interval; the direct blocks expand in delayed derivatives using $(1-e^{-2z\ell})^{-1}=\sum_{j\geq0}e^{-2jz\ell}$, with only finitely many arrivals on that interval. Eliminating a cut removed an unknown from the equation. It did not shorten the time a wave takes to cross the region.

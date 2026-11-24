@@ -1,0 +1,90 @@
+\chapter{Sewing a causal response}\label{ch:08}
+A retarded solution answers a question with an arrow of time: where does an initially absent disturbance go after a source is applied? Knowing which derivatives of an existing solution match at a face does not give this answer. In particular, solving an algebraic mismatch equation at every frequency need not give a retarded inverse in time. We first construct an operator from independent experiments on the two regions; then we examine how the construction works differently at three kinds of face.
+
+\section{The equation for the missing interface history}
+Fix a smooth assembled background solution and linearize there. Let $P$ denote the resulting field operator, gauge fixed where necessary. On each region choose a well-posed auxiliary boundary problem at the cut, retaining the true outer boundary problem. For one choice of time direction, write
+\begin{equation}
+ v_a=G_a f_a+H_a\eta_a .\label{eq:particular-poisson}
+\end{equation}
+Here $G_a$ solves $P_a v_a=f_a$ with zero perturbation of the auxiliary trace; $H_a$ solves $P_a v_a=0$ with trace perturbation $\eta_a$. Both have zero incoming data for the retarded problem (zero outgoing data in the future for the advanced problem). $H_a$ here is a boundary-to-solution operator, not a Hamiltonian. The trace need not be Dirichlet, but \eqref{eq:particular-poisson} must parametrize all the allowed responses in the chosen class. This is an initial-boundary value hypothesis on a \emph{single} region, not information fetched from the global answer.
+
+For a transparent first-order variational problem let $\mathcal B$ take a pair to the difference of the identified field traces and the sum of their outward linearized responses. Other problems use their actual transmission equations. Set $G=G_-\oplus G_+$ and $H=H_-\oplus H_+$. The two things we can measure independently are
+\[
+ Nf=\mathcal B Gf,\qquad M\eta=\mathcal B H\eta.
+\]
+The first is the error caused by freezing the cut; the second is how much an adjustment of the trace can change that error. The trace histories of a sourced sewn solution must therefore satisfy $M\eta=-Nf$. For a sheet that prescribes a linearized mismatch $b$, the right side is $b-Nf$ instead; a dynamical sheet generally adds unknowns and equations to $M$ itself.
+
+\begin{proposition}[Causal response from regional data]\label{prop:causal}
+Fix either the retarded or the advanced problem, with a time orientation and a propagation cone for the chosen hyperbolic system. The notation $J^\pm_{M_D}$ below refers to that cone on the assembled manifold; for a normally hyperbolic operator it is the metric cone. Take admissible global test sources restricted to the pieces, with their outer boundary and corner compatibility conditions. Suppose:
+\begin{enumerate}
+\item $G,H,\mathcal B$ act on specified solution and trace spaces as above, and zero mismatch assembles a solution of the declared global equation in its required regularity class, with no extra surface source.
+\item $\operatorname{im}N\subseteq\operatorname{im}M$. On $\operatorname{im}N$ there is a linear right inverse $L$ of $M$ in those spaces, with trace assignments giving the required causal support and continuity. For retarded support this means no response outside $J^+_{M_D}(\operatorname{supp}f)$, including at the physical boundary; advanced support reverses the cone.
+\item A homogeneous sewn solution in this causal class with zero past (respectively future) data is zero. For a physical quotient, replace zero by a proper gauge perturbation and the conclusion by equality of physical responses.
+\end{enumerate}
+Then, identifying matched pairs with assembled fields, the response is
+\begin{equation}
+ \mathcal G_\#=G-HLN .\label{eq:causal-sew}
+\end{equation}
+For the fixed-gauge problem this gives the causal Green operator on the declared domains; on compatible compact test fields both inverse identities hold.
+\end{proposition}
+\begin{proof}
+Each component solves the correct interior equation because the correction is homogeneous there. Its mismatch is $Nf-MLNf=0$. The first two hypotheses give a genuine global solution with the right source and support. In particular this proves existence on the source domain; it does not assume a previously calculated global inverse. Uniqueness identifies it with any independently constructed causal response. For the second identity let $w$ obey the global wall and transmission conditions with $Pw$ in the source domain and with zero incoming Cauchy data at the past cap (zero outgoing data at the future cap for the advanced identity). Compact interior tests supported away from both caps have both properties. Then $\mathcal G_\#Pw-w$ is homogeneous with zero data at the required end, hence zero. Compactness merely up to a cap does not suffice: a nonzero homogeneous solution on a closed finite cylinder is a counterexample.
+\end{proof}
+
+A second choice of $L$ changes the answer by a field in $H\ker M$. A kernel can describe redundant trace coordinates ($H\eta=0$), a proper gauge transformation, or a genuine free excitation satisfying the matching equations. In the last case prescribing the causal data or the initial state of a sheet matters. Merely naming a right inverse says nothing about this distinction. Causal paths connecting two points of the face may travel through the bulk, so the support test is made in the assembled spacetime, not solely in the induced geometry on the face. In gauge theory one must apply the construction to the field, ghost and dual-ghost problems on domains that intertwine the gauge and gauge-fixing maps of Chapter~\ref{ch:06}; sewing the field block alone does not produce a Green homotopy.
+
+\section{A spacelike cut carries data forward}
+Suppose the cut is a Cauchy slice $t=t_*$ for a regular hyperbolic initial-value problem. For a retarded source before the cut, the earlier region supplies the field and its canonical momentum at $t_*$. Propagate this Cauchy pair forward with the homogeneous equation in the later region; add the response to subsequent sources with zero initial data. The future need not send a trace correction back to the past. For gauge fields the Cauchy pair must obey the constraint, and the evolution must propagate it. An arbitrary spacelike patch that is not Cauchy for the domain under study does not carry all incoming information.
+
+One spatial Fourier mode makes this composition visible. For $D=\partial_t^2+\Omega^2$, its retarded impulse at time $t_0<t_*$ produces $(\sin(\Omega(t_*-t_0))/\Omega,\cos(\Omega(t_*-t_0)))$ at the cut. For $t>t_*$ its value is
+\begin{align*}
+ &\cos(\Omega(t-t_*))\frac{\sin(\Omega(t_*-t_0))}{\Omega}
+ +\frac{\sin(\Omega(t-t_*))}{\Omega}\cos(\Omega(t_*-t_0))\\[-1mm]
+ &\hspace{2.5em}=\frac{\sin(\Omega(t-t_0))}{\Omega}.
+\end{align*}
+The arbitrary time $t_*$ disappears. The zero-frequency formula follows by continuity, not by division by zero. On a curved spacetime the evolution need not be a trigonometric function, but uniqueness of Cauchy evolution gives the same composition law.
+
+\section{A timelike cut exchanges histories}
+Let $D=\partial_t^2-\partial_x^2$ on the line. Here we drive the equation as $Dw=f$; for the usual scalar action the Euler Hessian is $J=-D$, so $G_J^{R}=-G_D^{R}$ on the same source. The calculation below concerns $D$, not a change of sign in the Peierls convention. Cut the line at $x=0$ and set the trace to zero in the auxiliary half-line problems. Strike the left side at $(t,x)=(0,-a)$, $a>0$, with a unit impulse. Using the image source to enforce the Dirichlet trace, the independent retarded answers are
+\[
+ w_-^0=\tfrac12\{\Theta(t-|x+a|)-\Theta(t-|x-a|)\},\qquad w_+^0=0.
+\]
+The free kernel used for the half-line can itself be obtained by integrating the two characteristic transports of $D$. The two terms vanish against one another at $x=0$. Their outward \emph{spatial derivatives} on the two sides sum to $r(t)=-\delta(t-a)$: the first image term gives $-\tfrac12\delta(t-a)$ and the second gives another $-\tfrac12\delta(t-a)$. At a timelike face these outward derivatives have the opposite overall sign to the scalar action responses $\Pi$ in Chapter~\ref{ch:07}; their vanishing sum is the same transmission equation.
+
+Now drive the common trace with a history $q(t)$. The homogeneous outgoing wave on either side is $q(t-|x|)$. The sum of its outward spatial derivatives is $2\dot q(t)$. In these reduced coordinates for the common trace, the mismatch equation and its \emph{retarded} solution are
+\begin{equation}
+ 2\dot q=-r,\qquad q(t)=-\tfrac12\int_{-\infty}^{t}r(t')\,dt'
+             =\tfrac12\Theta(t-a).\label{eq:retarded-trace}
+\end{equation}
+An arbitrary primitive would add a constant to $q$; the absence of a past disturbance removes it. At $x>0$ the detector reads $\tfrac12\Theta(t-a-x)$. On the left the correction cancels precisely the negative image term. The result on both halves is $\tfrac12\Theta(t-|x+a|)$: no premature arrival and no reflected pulse. The impulse is a distributional check; convolution with smooth compact pulses gives the corresponding solution on the smooth source domain. A source actually confined to $x=0$ belongs in the flux jump, not in one half's interior Dirichlet kernel.
+
+\begin{figure}[htb]\centering
+\begin{tikzpicture}[x=1.03cm,y=.77cm,>=Stealth]
+\fill[pale] (0,0) rectangle (2.6,4.1);\draw[quiet,->] (-2.7,0)--(2.75,0) node[right] {$x$};\draw[marine,thick,->] (0,0)--(0,4.3) node[above] {$t$};
+\draw[ochre,thick,-{Stealth}] (-1.65,.35)--(0,2);\draw[ochre,thick,-{Stealth}] (0,2)--(1.65,3.65);\draw[quiet,densely dashed] (0,2)--(-1.65,3.65);
+\fill[ink] (-1.65,.35) circle (2pt) node[left] {source};\fill[ink] (0,2) circle (2pt);\fill[ochre] (1.65,3.65) circle (2pt) node[right] {detector};\node[below] at (0,0) {$0$};
+\end{tikzpicture}
+\caption{The dashed image wave of the auxiliary reflecting problem is canceled by the wave emitted from the corrected trace. Only the solid signal reaches the physical detector.}\end{figure}
+
+The construction is not peculiar to a one-dimensional massless wave. For a planar cut in flat spacetime with a Klein--Gordon mass $m$, take a Laplace transform in positive time ($\Re z>0$) and a Fourier transform along the cut (momentum $k$). The outgoing/decaying half-space lift is $\widehat q\exp(-\kappa |x|)$, where $\kappa=\sqrt{z^2+|k|^2+m^2}$ is the branch with $\Re\kappa>0$. The two outward derivatives give $M=2\kappa$. Its inverse kernel in time at fixed $k$ is
+\[
+ \mathcal L^{-1}\!\left(\frac{1}{2\kappa}\right)
+ =\tfrac12\Theta(t)J_0\!\left(\sqrt{|k|^2+m^2}\,t\right),
+\]
+where $J_0$ is the Bessel function of order zero. At $m=|k|=0$ this reduces to the primitive in \eqref{eq:retarded-trace}, with the overall minus furnished by the mismatch equation. On smooth causal data of suitable growth the transformed solution satisfies the equations, transmission and zero-past conditions. Time support follows from the Laplace prescription; \emph{spatial} finite speed also follows from the local energy estimate on backward cones, since the flux terms of the two internal faces cancel (Appendix~\ref{app:B}). A real-frequency reciprocal stripped of its branch prescription would not establish either causal inverse.
+
+\section{A characteristic cut carries less transverse information}
+For the metric wave operator set $u=t-x$, $v=t+x$. A null side $u=0$ is characteristic: the normal coefficient of the highest derivative vanishes. Indeed $4\partial_u\partial_v w=0$ has solutions $a(v)+b(u)$, and prescribing $w(0,v)$ alone does not determine $b(u)-b(0)$. Simply requesting the field and its conjugate flux on that side asks twice for related data. What is needed depends on the domain. In the future rectangle $0\le u\le U$, $0\le v\le V$, a second intersecting side supplies exactly the missing incoming information.
+
+For a calculation that retains a mass term, prescribe $w(0,v)=a(v)$ and $w(u,0)=b(u)$ with $a(0)=b(0)=c$, and drive $(4\partial_u\partial_v+m^2)w=f$. Integrating once in each variable gives a causal integral equation:
+\begin{equation}
+ w(u,v)=a(v)+b(u)-c+\frac14\int_0^u d\xi\int_0^v d\eta\,[f(\xi,\eta)-m^2 w(\xi,\eta)].\label{eq:double-null}
+\end{equation}
+Its right side uses only the causal past rectangle of $(u,v)$. Iterating the integral part $k$ times bounds its operator norm on continuous data by $(m^2UV/4)^k/(k!)^2$: each ordered $u$-integral gives $U^k/k!$, and similarly for $v$. The successive integrals therefore converge uniformly on each finite rectangle, and iterating the same bound on the difference of two solutions proves uniqueness. With smooth compatible data the integral equation gives smoothness by differentiation. For $m=0$ it gives the explicit sum of the two traces minus their common corner value, plus the source integral. The shared corner was counted once, not twice.
+
+This is a characteristic data problem on the stated domain, not a claim that every null hypersurface requires a second one. A complete cone with vertex conditions or an appropriate characteristic Cauchy surface calls for a different data theorem. More generally, a metric-null face is characteristic for a normally hyperbolic field; for a material field with a different principal symbol, the two notions can disagree. The spacetime atlas is common to all species, while the causal data problems need not be.
+
+\begin{exercise}[A load at the cut]\label{ex:sheetpulse}
+For $Dw=\delta(x)h(t)$ on the massless line with no past disturbance, compute the trace and the two outgoing fields using only the half-line lifts. What is measured at $x=b>0$ before a pulse supported at $t\geq0$ has traveled for time $b$?
+\end{exercise}
+\noindent\emph{Check.} Integration across $0$ gives $-[\partial_x w]=h$. The summed outward derivative is $2\dot q=h$, so $w(t,x)=\tfrac12\int_{-\infty}^{t-|x|}h(t')\,dt'$. The answer before the first light ray arrives is zero, independently of how the subsequent sheet history is chosen.

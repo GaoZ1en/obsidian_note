@@ -1,0 +1,95 @@
+\chapter{Transmission and the reconstruction of solutions}\label{ch:07}
+The variational principle exchanges only a few functions across a face. A smooth field has infinitely many derivatives there. Why should a few functions suffice? They do not suffice off shell. On shell the field equation may determine the missing derivatives, but even on a noncharacteristic face it matters which branch of a nonlinear theory the two sides occupy. We will prove a reconstruction result in which neither analyticity nor a previously known global solution is an input.
+
+\section{The variable shared by two variations}
+Work near the interior of an artificial face in a fixed geometric assembly. Write $s<0$ on $R_-$, $s>0$ on $R_+$, and use $y=(y^1,\ldots,y^{n-1})$ along the face. Use compatible frames; thus the face identification $D$ is temporarily invisible. Consider $m$ real components $u^A$ with a first-order action density $\mathcal L(s,y,u,v)\,|ds\,d^{n-1}y|$, where $v^A_\mu=\partial_\mu u^A$. Calculations are local, so a density can be represented by its coefficient in this coordinate system. Write
+\begin{equation}
+ p_A^\mu=\frac{\partial\mathcal L}{\partial v^A_\mu},\qquad E_A=\frac{\partial\mathcal L}{\partial u^A}-\partial_\mu p_A^\mu .\label{eq:normal-momentum}
+\end{equation}
+The primitive choice in this problem is to give the two fields a \emph{common value} $q(y)$. Vary a pair of smooth half-fields with this value but without yet relating their normal derivatives. A compactly supported variation of $q$ is realized by extending it into each collar with a cutoff equal to one at the face. Integration by parts on the two sides then gives
+\begin{equation}
+ \delta(S_-^o+S_+^o)\big|_\Gamma
+   =\int_\Gamma (p_{-,A}^s-p_{+,A}^s)\,\delta q^A\,d^{n-1}y .\label{eq:summed-momentum}
+\end{equation}
+Thus common value is an identification, while common \emph{cooriented momentum} $p^s$ is an equation. Equivalently, \emph{outward} responses add to zero: $\Pi_-+D^\vee\Pi_+=0$, where the dual transport is fixed by the integral pairing with $\delta q$. These signs also apply to a spacelike face; one need not guess the sign from a drawing of two unit normals. Restricted variations, for instance those intrinsic to a constrained trace manifold, test only the corresponding tangent directions. In that case it is the pullback of the boundary one-form that must vanish. Equation~\eqref{eq:summed-momentum} with arbitrary $\delta q^A$ is not a universal set of boundary variables for every first-order constrained or higher-derivative theory.
+
+\section{A prescribed load is not a new degree of freedom}
+Let $[b]=b_+|_0-b_-|_0$. A continuous piecewise smooth field has weak first derivatives equal to its piecewise derivatives, with no delta function. Its Euler density does, however, have the singular part $-[p^s]\delta(s)$: this follows by differentiating the two step functions multiplying $p^s$. It is the distributional version of \eqref{eq:summed-momentum}. Adding a sheet action changes what it means to solve the global problem. For instance, with a prescribed surface density $j_A$ the term $-\int_\Gamma j_A q^A$ gives
+\[
+ p_{-,A}^s-p_{+,A}^s=j_A .
+\]
+The piecewise bulk field solves the equation $E_A=j_A\delta(s)$, not the smooth sourceless equation. For a scalar in flat spacetime with $s=x$ a spatial coordinate and $\mathcal L=-\tfrac12\partial_\mu u\,\partial^\mu u-V(u)$, $p^x=-\partial_x u$. The result is $[\partial_x u]=j$. This is why forcing all transverse jets to agree would discard the physical solution in the presence of a load.
+
+For comparison, place a dynamical coordinate $\chi(t)$ on a timelike seam in two spacetime dimensions. In a fixed time coordinate let its action be
+\[
+ S_\Gamma=\int dt\left[\frac{\mu}{2}\dot\chi^2-\frac{\mu\Omega^2}{2}\chi^2-\frac{\kappa}{2}(\chi-q)^2-jq\right].
+\]
+Varying both $q$ and $\chi$ gives, per unit $t$,
+\begin{align*}
+ \Pi_-+\Pi_++\kappa(\chi-q)-j&=0,\\
+ \mu(\ddot\chi+\Omega^2\chi)+\kappa(\chi-q)&=0 .
+\end{align*}
+There is now initial data for $\chi$, and the endpoint potential contains $\mu\dot\chi\,\delta\chi$. A clamped source $j$ alone has neither property. This is a physical sheet, not a choice of regulator for a transparent seam. On a higher-dimensional sheet a tangential integration by parts has an additional destination, its own boundary: the edge variation must be canceled, set to zero by allowed boundary data, or accounted for by an edge action. Appendix~\ref{app:A} fixes the incidence signs.
+
+\paragraph{Where does a sheet current go at its edge?} Gauge invariance puts a restriction even on sources that are prescribed rather than varied. In $2+1$ dimensions take a timelike strip with coordinates $(t,y)$, $0\leq y\leq b$. Couple its current density $k^a$ to the pullback of a Maxwell potential, and an edge charge $Q_e(t)$ to its time component at $y=b$:
+\[
+ S_{\rm src}=\int dt\,dy\,(k^t A_t+k^y A_y)+\int dt\, Q_e A_t(t,b).
+\]
+Under $A_a\mapsto A_a+\partial_a\varepsilon$ choose a test parameter supported away from the time caps and $y=0$. Integration by parts gives
+\[
+ \delta_\varepsilon S_{\rm src}=-\int dt\,dy\,\varepsilon(\partial_t k^t+\partial_y k^y)
+  +\int_{y=b} dt\,\varepsilon\,(k^y-\dot Q_e).
+\]
+The current must be conserved inside the strip, and current leaving the strip at its edge must increase the edge charge: $\dot Q_e=k^y(t,b)$. If the theory has no such charge and no neighboring face to receive current, $k^y(t,b)$ must vanish. These are consistency conditions for the source. They neither create an independent edge oscillator nor follow merely from counting faces. Allowing charge on an edge and choosing dynamics for that charge are separate decisions.
+
+\section{How a finite trace recovers all normal derivatives}
+Here is a useful positive answer for nonlinear variational equations. State it first in one collar; initial and physical outer boundary conditions, if present, are unchanged. The word smooth on a closed half-collar includes smooth one-sided derivatives up to its face. The result concerns such solutions, not the creation of smoothness from arbitrary finite-energy traces.
+
+\begin{theorem}[Transparent sewing on one regular branch]\label{thm:branch}
+Let $\mathcal L$ be the same smooth first-order density on both sides in the assembled coordinates and frames. Let $u_-,u_+$ be smooth up to their closed half-collars and solve $E_A=0$ on the interiors. At fixed $(s,y,u,v_i)$, $i$ tangential, suppose the normal Legendre map
+\[
+ w^B=v_s^B\longmapsto p_A^s(s,y,u,v_i,w)
+\]
+has a single smooth local inverse covering the two realized normal velocities at each face point. Equivalently for this purpose, equality of their momenta separates these two velocities and the normal Hessian $A^{ss}_{AB}=\partial p_A^s/\partial v_s^B$ is invertible at the matched jet. Then equality of $q$ and $p^s$ is necessary and sufficient for the pair to be restrictions of a unique smooth solution on the union. A given smooth, globally matching bulk source can be included on both sides.
+\end{theorem}
+\begin{proof}
+The common value is a smooth function of $y$, so its tangential derivatives agree. Both sides therefore use the same normal Legendre map at the face. On the stated branch the common momentum gives the same $\partial_s u$. Tangentially differentiating this equality gives all tangential derivatives of the first normal jet, including $\partial_i\partial_s u$.
+
+To see the next step rather than assume it, set $A^{\mu\nu}_{AB}=\partial p_A^\mu/\partial v_\nu^B$. Expand $\partial_\mu p_A^\mu$ by the chain rule. On a solution,
+\begin{align}
+ A^{ss}_{AB}\,\partial_s^2 u^B
+   &=\mathcal L_{u^A}-(\partial_{x^\mu}p_A^\mu)_{u,v}
+       -\frac{\partial p_A^\mu}{\partial u^B}\,\partial_\mu u^B
+       -\sum_{(\mu,\nu)\ne(s,s)}A^{\mu\nu}_{AB}\,\partial_\mu\partial_\nu u^B .\label{eq:solve-normal}
+\end{align}
+Here $x^\mu=(s,y)$, and the derivative with subscript $u,v$ acts on explicit coordinate dependence only. The right side is known in terms of the jets already matched and their tangential derivatives. The inverse of $A^{ss}$ thus gives a common second normal jet. More generally, write \eqref{eq:solve-normal} with $\partial_s^2u$ isolated and differentiate $k$ times in $s$. The right side uses normal order at most $k+1$, with tangential derivatives, since no remaining second derivative has two normal indices. Induction yields normal order $k+2$. A common smooth source contributes its known Taylor coefficients to the same recursion.
+
+The closed-half smoothness criterion of Chapter~\ref{ch:03} now gives one smooth field. It solves the equation at the face by continuity. Piecewise evaluation makes it unique. Conversely the restrictions of a smooth solution have the same value and momentum in a common frame. No convergent Taylor series was used: each equality is a trace of derivatives of actual half-fields.
+\end{proof}
+
+Here the principal symbol in the conormal direction is, up to the overall equation sign, $A^{ss}$. Its invertibility is noncharacteristicity for this second-order system. It is a pointwise algebraic statement, not a claim about stable evolution with $s$ as time. For example, a timelike surface can be noncharacteristic for a wave equation without being a Cauchy surface. Nor does the theorem assert that every prescribed trace occurs on a solution.
+
+\paragraph{Why a branch matters.} Take $\mathcal L=\tfrac12 u_t^2-W(u_x)$, $W(v)=\tfrac14(v^2-1)^2$, in rescaled units. On the two sides of $x=0$ set $u=|x|$. Each side is a smooth static solution. At the cut $q=0$, $p^x=-W'(u_x)=0$ on both sides, and $-W''(\pm1)=-2$ is nonsingular at both realized velocities. Yet $u_x$ jumps from $-1$ to $+1$. It is a weak stationary configuration, not a smooth field. Knowing that the linearized equation is noncharacteristic \emph{on each side} did not tell us that the two velocities occupy the same branch. In particular a proof that inverts the normal symbol only after having silently equated $u_x$ would miss this example.
+
+\paragraph{Which cone belongs to the field?} To apply the theorem to a branch with genuine derivative nonlinearity, take $\mathcal L=P(X)$ on a flat $(t,x)$ patch, $X=(u_t^2-u_x^2)/2$, $P(X)=X+\beta X^2$, with $\beta>0$ in the corresponding units. The constant-gradient solution $u=v t$ has $v\ne0$. Direct differentiation in the two velocities gives its normal-symbol matrix and characteristic speed:
+\[
+ (A^{\mu\nu})=\begin{pmatrix}1+3\beta v^2&0\\0&-(1+\beta v^2)\end{pmatrix},\qquad
+ c_{\rm field}^2=\frac{1+\beta v^2}{1+3\beta v^2}<1 .
+\]
+Indeed a plane disturbance depending on $x-c t$ has principal coefficient $(1+3\beta v^2)c^2-(1+\beta v^2)$. For the metric-null face $s=t-x$, the contraction $A^{\mu\nu}\partial_\mu s\,\partial_\nu s=2\beta v^2$ is nonzero. In a sufficiently small neighborhood of that jet the scalar normal momentum has a local inverse; Theorem~\ref{thm:branch} applies to existing half-solutions on that branch even at this metric-null face. On $x-c_{\rm field}t=0$ it does not. As $\beta\to0$ the two cones coincide. The distinction between null and characteristic is therefore a statement about propagation, not a choice of name for a geometric cut.
+
+\section{What changes when the field is a connection?}
+The component $A_s$ of a gauge potential is a good way to spot an illegitimate use of Theorem~\ref{thm:branch}. Yang--Mills curvature $F_{si}=\partial_s A_i-\partial_i A_s+[A_s,A_i]$ contains no $\partial_s A_s$. The normal Legendre map for \emph{all} the components is singular. Demanding a gauge-invariant determination of $\partial_s A_s$ asks the equations to determine a convention.
+
+A local result is nevertheless available. Take a flat product collar $g=\epsilon\,ds^2+h_{ij}dy^i dy^j$ with constant nondegenerate $h$ and $\epsilon=\pm1$. Use a boundary bundle identification to put tangential connections into the same frame; their common value and the equality of the cooriented $F^{si}$ are the transmission data for ordinary Yang--Mills theory with the same coupling. Assume smooth source-free half-solutions. On each side solve the ordinary differential equation $\partial_s g_0=-A_s g_0$, $g_0(0,y)=1$. The transformed connection $g_0^{-1}Ag_0+g_0^{-1}dg_0$ is in axial gauge $A_s=0$. This transformation fixes the frame on the face. Now $F^{si}=\epsilon h^{ij}\partial_s A_j$, so the transmission conditions match $A_i$ and $\partial_s A_i$. The tangential equations $D_\mu F^{\mu i}=0$ read
+\[
+ \partial_s^2 A_i=-\epsilon D^j F_{ji} .
+\]
+Tangential differentiation and the same normal induction give a smooth connection across the collar. The remaining equation $D^i\partial_s A_i=0$ is the constraint: it holds on both halves by hypothesis and on the joined face by continuity. It was not replaced by a new boundary condition. Any gauge transformation between two axial representatives satisfies $\partial_s g_0=0$, so two such arrows with the same face value also assemble. This proves a local result \emph{up to gauge}, including the arrows, not uniqueness of a preferred gauge potential on the entire manifold.
+
+In more geometric language, restriction on solutions should be essentially surjective (a matching pair is isomorphic to a restriction) and fully faithful (its compatible changes of description are precisely restrictions of global ones). For ordinary fields of Theorem~\ref{thm:branch} this was a bijection. For the local product Yang--Mills problem the axial representatives exhibit the two stronger-looking conditions without discarding the arrows first. To assert an equivalence for a larger gauge system one must in addition justify its gauge slice or descent argument, the outer boundary conditions and any continuation across lower strata. At a corner, smoothness up to each sector and compatible jets in the incident sector chart are substantive assumptions; a singular corner solution is not covered by an interior-face proof.
+
+\begin{exercise}[Identify the missing derivative]
+In null coordinates $(u,v)$, take $\partial_u\partial_v w=0$ and cut at $u=0$. Does continuity of $w$ and its variational flux for the density $\partial_u w\,\partial_v w$ require $\partial_u w$ to agree? Construct a pair of smooth halves that answers the question.
+\end{exercise}
+\noindent\emph{Check.} The cooriented momentum is $\partial_v w$, already determined by the common trace. Take $w=0$ for $u<0$ and $w=u$ for $u>0$. Both the trace and the momentum vanish, and the piecewise solution even solves the equation weakly, but $\partial_u w$ jumps. The failure is now a characteristic one, not a choice between two locally invertible branches.

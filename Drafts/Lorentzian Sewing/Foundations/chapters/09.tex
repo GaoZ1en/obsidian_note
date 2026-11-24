@@ -1,0 +1,84 @@
+% !TeX root = ../main.tex
+\chapter{Jets and the calculus of variations}\label{f:variation}
+The differential of a field is often written $\partial_\mu u^A$. A change of frame can make these numbers nonzero even for a field with constant old components. Yet a Lagrangian is supposed to depend on a field and its first derivatives independently of who described them. Its argument cannot be a list of numbers taken out of their chart. We start by finding an intrinsic first derivative for a section of any bundle; a connection is not required for this step.
+
+\section{The bundle of possible derivatives}\label{f:jet}
+Let $\pi:E\to M$ be a smooth fiber bundle and $u$ a section near $p$. At $e=u(p)$ the derivative $\ell=du_p:T_pM\to T_eE$ satisfies $d\pi_e\circ\ell=1_{T_pM}$, by differentiating $\pi\circ u=1_M$. Conversely, in bundle coordinates $(x^\mu,z^A)$ near $e$ every linear map with this property has the form $v\mapsto(v,w^A_\mu v^\mu)$. A section with a coordinate affine-linear fiber component realizes any such $w$ locally. Thus the value $e$ and the splitting $\ell$ specify its \emph{first jet} at $p$. The difference of two splittings with the same value lands in the vertical space $V_eE=\ker d\pi_e$. Consequently first jets over $e$ are an affine space modeled on $\operatorname{Hom}(T_pM,V_eE)$: their differences add linearly, even when no splitting has been distinguished as zero. A connection chooses a horizontal splitting and thereby converts the first jet into an ordinary vertical-valued covariant derivative.
+
+For arbitrary $k$ identify two local sections at the same point if their values and the derivatives of their coordinate functions of total order at most $k$ agree there in a common bundle chart. The class is $j^k_p u$ and all such classes give $J^kE$, with projections to $M$ and to lower jets. Multi-indices record how often each coordinate is differentiated; the arrays have symmetric mixed indices since ordinary partial derivatives commute. The chain rule through order $k$ uses only the old derivatives through this order. Applying also the inverse coordinate change proves equivalence independent of coordinates and gives smooth transitions on these arrays. In a new base coordinate $y$ and new fiber coordinate $Z=Z(x,z)$ the first array is explicitly
+\[
+ w'^a_i=\left(\frac{\partial Z^a}{\partial x^\mu}+\frac{\partial Z^a}{\partial z^A}w^A_\mu\right)\frac{\partial x^\mu}{\partial y^i} .
+\]
+The inhomogeneous term is why these numbers are not generally the components of a tensor. At a fixed point every compatible finite symmetric array occurs: take the corresponding polynomial in local coordinates on a sufficiently small neighborhood. A smooth \emph{section} of the jet bundle need not arise by differentiating a single field throughout a neighborhood. Such a section is called holonomic when it does. For example on the line, the proposed value zero everywhere and proposed slope one everywhere give perfectly good individual first jets but not a holonomic section.
+
+\begin{example}Take $y=e^x$, $Z=e^x z$ and a section $z=h(x)$. In the new variables it is $y\,h(\log y)$. At $x=0$ put $(h,h',h'')=(a,b,c)$; at $y=1$ the new array is $(a,a+b,b+c)$. In fact the first derivative is $h+h'$ and the second is $(h'+h'')/y$. Agreement of arrays between \emph{two sections} is invariant, not the old numerical value of an entry. Nor does agreement to every order at one point imply agreement of germs. The smooth extension of $e^{-1/x^2}$ by zero from $x>0$ has the same derivatives there at $x=0$ as the zero function, but differs on every neighborhood of zero.\end{example}
+
+\section{When do local representatives give one field?}
+In a vector bundle it is meaningful to add field values in one fiber; in a general bundle it need not be. In either case smoothness can be tested in a common local product and hence by ordinary calculus on the component functions. Across a signed chart $(s,y)$, assume the given sections are smooth up to their closed halves. Perform any prescribed fiber transformation on an actual collar before differentiating. Let $u_-$ and $u_+$ now represent components in the common frame, written using their inward variables $r_-=-s$, $r_+=s$.
+\begin{proposition}[Smooth pasting of sections]\label{f:jet-pasting}
+The two sections are restrictions of one smooth section across the open face if and only if at every point of the face and for every $j,\alpha$,
+\[
+ (-1)^j\partial_{r_-}^{j}\partial_y^\alpha u_-(0,y)=\partial_{r_+}^{j}\partial_y^\alpha u_+(0,y).
+\]
+At a finite product intersection use every mixed derivative in common signed coordinates, for all incident sectors. At a remaining exterior wall, where smoothness means local extendibility, the same test on a choice of extensions across that exterior wall is necessary and sufficient.
+\end{proposition}
+\begin{proof}
+Necessity is restriction of a genuine section or its local extension. Conversely, in signed coordinates each proposed derivative, including order zero, pastes to a continuous function $v_I$ on the box by finite closed pasting. Split a short coordinate segment at every wall it crosses. Fundamental calculus on the individual segments gives
+\[
+ v_I(x+he_j)-v_I(x)=\int_0^h v_{I+e_j}(x+te_j)\,dt .
+\]
+A line in a wall uses the common smooth restriction there. The quotient by $h$ tends to $v_{I+e_j}(x)$ on either side. It follows by induction that the pasted value actually has these derivatives. For an exterior wall do the argument on the given compatible extensions and restrict back. The identical necessity and sufficiency statements with total order bounded by $k$ hold for $C^k$ fields. In nonlinear fibers take a chart at the common value and shrink the base box by continuity. The construction is unique pointwise and agrees under change of bundle chart.
+\end{proof}
+
+Notice that the theorem starts with \emph{functions on half-neighborhoods}, not formal series assigned to a subset. For a one-form, the transition must change its coordinate covectors as well as its coefficient functions. For a connection its potentials transform affinely as in Chapter~\ref{f:connections}. For a gauge transformation the same argument applies to the group-valued representative in its bundle chart. Gluing fields only up to transformations requires gluing the transformations too. In categorical language, a groupoid is a collection of objects and composable invertible arrows with identities. A functor respects these operations. A restriction functor is an equivalence if every matching pair is isomorphic to a restriction and if, between any two global objects, the map on arrows is bijective (essential surjectivity and full faithfulness). Merely taking a set of orbits discards the stabilizers and does not prove the assertion about arrows.
+
+\section{The first variation and its boundary term}\label{f:first-variation}
+A first-order Lagrangian assigns a top density $L(j_p^1u)$ at $p$ to every first jet. In oriented coordinates write it as $\mathcal L(x,u,v)\,d^nx$ with $v^A_\mu=\partial_\mu u^A$ when evaluated on a field. For a family $u_\lambda$ over the fixed base, the variation $Y=\partial_\lambda u_\lambda|_0$ belongs pointwise to the vertical tangent space. The momentum conjugate to a derivative in these coordinates is $p_A^\mu=\partial\mathcal L/\partial v^A_\mu$. Differentiate the action and use the ordinary product rule \emph{before} any field equation:
+\begin{align*}
+ \partial_\lambda \mathcal L(j^1u_\lambda)|_0
+ &=\mathcal L_{u^A}Y^A+p_A^\mu\partial_\mu Y^A\\
+ &=\big(\mathcal L_{u^A}-\partial_\mu p_A^\mu(j^1u)\big)Y^A
+       +\partial_\mu(p_A^\mu Y^A).
+\end{align*}
+Repeated indices are summed; the derivative on $p(j^1u)$ is the total derivative along the actual field. The Euler expression, valued in the vertical dual tensored with densities along $u$, is $\mathcal E_A=\mathcal L_{u^A}-\partial_\mu p_A^\mu$. One way to see why it is intrinsic is to compare the first variations under two charts for every compactly supported vertical variation: the integral is intrinsic, the divergences integrate to zero, and an everywhere nonnegative bump supported where a component of the difference has fixed nonzero sign would contradict equality. The same test proves the fundamental lemma used in deriving $\mathcal E=0$ in the interior. Labels before and after a coordinate change need not be the same array.
+
+For the real scalar put $L=-\tfrac12(g^{ab}\partial_a u\,\partial_b u+m^2u^2)dV_g$ with a fixed Lorentzian metric. Metric compatibility and the volume form give
+\[
+ \delta L(Y)=(\Box_g u-m^2u)Y\,dV_g+d\Theta(Y),
+ \qquad \Theta(Y)=-Y\,\iota_{\nabla u}dV_g ,
+\]
+where for oriented Stokes integrals $dV_g$ denotes the positive volume form and $\Box_g=\nabla_a\nabla^a$. The interior Euler operator has the displayed sign. In a flat time coordinate the contribution of a final time slice is $+\int u_tY\,d^{n-1}x$; on the right spatial end of a strip it is $-\int u_xY\,dt$ with the time measure positive. These signs come from one divergence, not from separate force conventions.
+
+\section{Boundary data, the Hessian and propagation of matched jets}
+Consider a slab with oriented boundary $\Sigma_f-\Sigma_i+\Gamma$. A physical wall may carry an action $\int_\Gamma\ell$. With a chosen wall condition, suppose the pullback of $\Theta+\delta\ell$ to the wall on allowed variations is $d_\Gamma C$, where $C$ is a spacetime $(n-2)$-form linear in a field variation. Then Stokes and $\partial\Gamma=-\partial\Sigma_f+\partial\Sigma_i$ give
+\[
+ \delta S(Y)=\int_M\mathcal E(Y)+\theta_{\Sigma_f}(Y)-\theta_{\Sigma_i}(Y),\qquad
+ \theta_\Sigma=\int_\Sigma\Theta-\int_{\partial\Sigma} C .
+\]
+These identities fix the boundary convention used here \cite{HW}. On a smooth family of fields the symbol $\delta$ means exterior differentiation in the family parameters; $d$ means exterior differentiation in the base, with $\delta d=d\delta$ in these formulas. Thus $\omega_\Sigma=\delta\theta_\Sigma$ is closed. Its kernel and the existence of a quotient on which it becomes nondegenerate will be separate issues in Chapter~\ref{f:symplectic}. For commuting trial variations $u,v$ at a solution, subtract the two second variations. The linearization $J=D\mathcal E$ maps perturbations to dual densities. When both variations implement the stated wall condition one obtains
+\begin{equation}
+ \langle Jv,u\rangle-\langle Ju,v\rangle
+   =\omega_{\Sigma_f}(u,v)-\omega_{\Sigma_i}(u,v) .\label{f:green-variation}
+\end{equation}
+Here $\langle f,u\rangle=\int f(u)$; on compactly supported interior trials this says $J$ is formally self-adjoint. It is not yet an equality of inverses on any chosen boundary domain. On two homogeneous solutions the slice forms agree, assuming the integrals exist.
+
+An artificial face instead has two contributions. At fixed common trace $q=u|_F$, the boundary variations vanish. When its value is released on both pieces with no face action, the two outward momenta must sum to zero, not vanish individually. Write both in one signed coordinate, with $s\le0$ and $s\ge0$ on the two sides. The remaining term is $(p^s_{-,A}-p^s_{+,A})\delta q^A$ per unit common tangential coordinate measure, so its vanishing for all $\delta q$ gives equality of the \emph{cooriented} momenta. A prescribed face density adds its own Euler variation; the jump then measures its load instead of necessarily vanishing. An independent face field, if present, has an additional equation from its own variation.
+
+\subsection{The normal Legendre map}\label{f:normal-legendre}
+Can this finite amount of information enforce the infinite-order matching of Proposition~\ref{f:jet-pasting}? Suppose the two actual half-fields solve the same regular first-order variational problem smoothly up to an ordinary face. At given $s,y,q$ and tangential derivatives of $q$, the map $w^B=\partial_s u^B\mapsto p^s_A$ is the \emph{normal Legendre map}. If both realized velocities belong to one smooth inverse branch with invertible $A_{AB}^{ss}=\partial p^s_A/\partial w^B$, equality of $p^s$ gives equality of $w$. With $A_{AB}^{\mu\nu}=\partial p_A^\mu/\partial v^B_\nu$, the equation now reads
+\begin{align*}
+ A_{AB}^{ss}\,\partial_s^2u^B={}&\mathcal L_{u^A}-(\partial_{x^\mu}p_A^\mu)_{u,v}
+ -\frac{\partial p_A^\mu}{\partial u^B}\partial_\mu u^B\\[-1mm]
+ &-\sum_{(\mu,\nu)\ne(s,s)} A_{AB}^{\mu\nu}\partial_\mu\partial_\nu u^B .
+\end{align*}
+Every term on the right at the face is determined by the common jets of normal order zero or one and their tangential derivatives. Inverting $A^{ss}$ gives a common second normal derivative. After solving for $\partial_s^2u$, differentiate the resulting equation $k$ times in $s$. Its right side needs at most normal order $k+1$, with tangential derivatives; its left side gives order $k+2$. Tangential derivatives are taken along matching functions on the \emph{whole} face. Induction and the pasting result prove smoothness. This uses an invertible coefficient in the equation, not an existence theorem for half-solutions from arbitrary timelike data. The other half of the hypothesis matters: for $\mathcal L=\tfrac12u_t^2-(u_x^2-1)^2/4$ the static piecewise field $u=|x|$ has equal cooriented momenta zero and $A^{xx}=-2$ on each side, but the slopes lie on different branches and do not match.
+
+\section*{Exercises}
+\begin{exercise}On the trivial line over the $(x,y)$-plane you are given first-jet data $(q,p_x,p_y)$. If only the two functions $p_x,p_y$ are prescribed on a rectangle, find a necessary condition for a field with these partials and show it is sufficient. What if $q$ is prescribed too?\end{exercise}
+\noindent\emph{Solution.} Commuting mixed derivatives gives $\partial_xp_y=\partial_yp_x$. Integrate $p_x$ along a horizontal segment on the bottom and then $p_y$ up at the final $x$. Differentiation using the equality gives both prescribed partials; an additive constant is free. A prescribed $q$ must itself have these partials and the correct base value. On the punctured plane the closed angular form in Chapter~\ref{f:forms} shows why a rectangular domain mattered.
+\begin{exercise}Take the potential energy $\frac12\int c(x)(u')^2dx$, where $c$ is constant and positive on each side of zero, and include a spring energy $\tfrac12 kq^2$ at the shared trace $q=u(0)$. Derive the interface equation. Does it imply equality of slopes?\end{exercise}
+\noindent\emph{Solution.} With fixed outer endpoints the coefficient of $\delta q$ is $c_-u'_-(0)-c_+u'_+(0)+kq$. Its vanishing is the equation. Even if $k=0$ it is the weighted slopes that agree. This inhomogeneous material is not an artificial subdivision of one smooth homogeneous density.
+\begin{exercise}For a scalar with Lagrangian coefficient $\partial_u\phi\,\partial_v\phi$, test the cut $u=0$. Can equal value and cooriented momentum fail to determine the first transverse derivative even on two solutions?\end{exercise}
+\noindent\emph{Answer.} $p^u=\partial_v\phi$ follows from the common trace along the face. On $u\le0$ take zero and on $u\ge0$ take $\phi=u$. Both solve $\partial_u\partial_v\phi=0$. The normal Hessian vanishes and the transverse derivatives differ.
+\begin{exercise}For a matrix connection on a product collar, $F_{si}=\partial_s A_i-\partial_i A_s+[A_s,A_i]$. Which normal derivative is absent? Can one choose a frame in which matching $F_{si}$ directly matches the normal derivative of $A_i$?\end{exercise}
+\noindent\emph{Solution.} No term contains $\partial_sA_s$. With $A'=hAh^{-1}-(dh)h^{-1}$, solve $\partial_s h=hA_s$, $h(0,y)=1$ locally. Then $A'_s=0$ throughout the collar and $F'_{si}=\partial_sA'_i$. This is a frame choice fixed at the face on each side, not the discovery of a new equation for $A_s$. The remaining Yang--Mills constraint still has to hold on the solutions being matched.

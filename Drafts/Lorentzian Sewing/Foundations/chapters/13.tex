@@ -1,0 +1,145 @@
+% !TeX root = ../main.tex
+\chapter{Symplectic reduction and classical observables}\label{f:symplectic}
+Suppose two angular readings determine a position only through their sum. Opposite changes in the two angles leave the position unchanged. Do they change anything measurable? If the conjugate momenta can vary independently, the relative rotation has a measurable generator. If the momenta must agree, the same rotation pairs to zero with every allowed displacement. To distinguish the two cases we start with a linear question: given an observable $H$, can we find a vector $X$ such that pairing any displacement $Y$ with $X$ gives the change $\delta H(Y)$? For the wave equation we shall solve this inverse problem without phase-space coordinates, using compact sources.
+
+\section{What an alternating form can detect}
+Let $V$ be a finite-dimensional real vector space. An alternating bilinear form $b$ satisfies $b(x,x)=0$; applying this to $x+y$ gives $b(x,y)=-b(y,x)$. We put the unknown vector in the \emph{second} slot: $b^\flat(x)=b(\,\cdot\,,x)\in V^*$. There are three different spaces to keep track of. For a subspace $W\subset V$ its \emph{annihilator} is $W^\circ=\{\lambda\in V^*: \lambda|_W=0\}$. Its orthogonal with respect to $b$ is $W^\perp=(b^\flat)^{-1}(W^\circ)\subset V$. The \emph{radical} of the whole form is $R=V^\perp$. Thus an annihilator consists of covectors, whereas a radical consists of vectors. A nondegenerate alternating form, one for which $R=0$, is called symplectic.
+
+\begin{lemma}\label{f:alternating-quotient}
+The equation $b(\,\cdot\,,x)=\lambda$ has a solution exactly for $\lambda\in R^\circ$; its solutions then form a translate of $R$. The form induced on $V/R$ is symplectic. If $V$ itself is symplectic, $(W^\perp)^\perp=W$ and the radical of the restriction to $W$ is $W\cap W^\perp$.
+\end{lemma}
+\begin{proof}
+Skewness puts the image of $b^\flat$ in $R^\circ$. Both spaces have dimension $\dim V-\dim R$, by rank--nullity for the first and extension of a basis of $R$ for the second. The kernel is $R$, giving the claimed ambiguity. Adding an element of $R$ to either entry leaves $b$ unchanged; a class pairing to zero with all classes has a representative in $R$. In the nondegenerate case $b^\flat$ is an isomorphism, so $\dim W^\perp=\dim V-\dim W$. The inclusion $W\subset (W^\perp)^\perp$ is then equality by dimension. A vector in $W$ pairs to zero with all of $W$ precisely when it also lies in $W^\perp$.
+\end{proof}
+
+In a nonzero symplectic space choose $e\ne0$, then $f$ with $b(f,e)=1$. The plane they span is already nondegenerate. It and its orthogonal have zero intersection and complementary dimensions; the orthogonal is nondegenerate as well, since a vector there annihilating the orthogonal annihilates all of $V$. Repetition decomposes $V$ into such planes, proving in particular that $\dim V$ is even. Imposing a condition that restricts displacements to $W$ can destroy this pairing even when it was perfect on $V$. The appropriate linear reduction is then $W/(W\cap W^\perp)$, not $V/W$.
+
+\section{Hamiltonian fields and the Poisson bracket}
+On a smooth manifold $M$ a two-form $\omega$ gives an alternating pairing on each tangent space, smoothly in its point of attachment. It is \emph{symplectic} if it is nondegenerate at every point and closed. We write $\delta$ for the exterior derivative on phase space, as distinct from differentiation on spacetime. A closed two-form allowed to have a kernel is \emph{presymplectic}. For instance on the cotangent bundle $\pi:T^*Q\to Q$ a point $(q,p)$ already contains a covector. Applying it to the projection of a displacement defines the canonical one-form $\theta(Y)=p(\dd\pi\,Y)$. In local coordinates, with repeated coordinate indices summed,
+\[
+ \theta=p_i\,\delta q^i,\qquad \omega=\delta\theta=\delta p_i\wedge\delta q^i .
+\]
+Closedness here follows from $\delta^2=0$; nondegeneracy follows by testing independently with displacements of $p$ and of $q$. A general symplectic manifold need not have a globally defined potential $\theta$.
+
+\begin{definition}\label{f:hamiltonian-slots}
+The Hamiltonian vector field of a smooth real function $H$ and the bracket of two functions are specified by
+\begin{equation}
+ \delta H(Y)=\omega(Y,X_H),\qquad \{F,G\}=\delta F(X_G).
+ \label{f:poisson-convention}
+\end{equation}
+On a symplectic manifold the field exists uniquely: the inverse of the smooth, pointwise invertible matrix of $\omega^\flat$ depends smoothly on its entries.
+\end{definition}
+In the cotangent coordinates, $\omega(Y,X_H)=Yp_i\,X_H q^i-Yq^i\,X_H p_i$. Reading off the coefficients gives Hamilton's equations $X_H q^i=\partial H/\partial p_i$, $X_H p_i=-\partial H/\partial q^i$ \cite{Arnold}. In particular $\{q^i,p_j\}=\delta^i_j$: the second entry generates the motion of the first. On a constant-rank presymplectic manifold a local Hamiltonian vector exists precisely when $\delta H$ annihilates the radical everywhere on the patch. Indeed the lemma gives pointwise solvability, and solving on a local smooth complement to the kernel gives a smooth choice. Two choices differ by a null field. A function varying along a null direction cannot have such a generator.
+
+\begin{proposition}\label{f:poisson-jacobi}
+The bracket on a symplectic manifold is a Poisson bracket: it is bilinear, antisymmetric, a derivation in each argument for multiplication of functions, and satisfies the Jacobi identity.
+\end{proposition}
+\begin{proof}
+Bilinearity follows from the defining linear equations, and $\{F,G\}=\omega(X_G,X_F)$ gives antisymmetry. Differentiating a product gives the derivation rule. For Jacobi, $\iota_{X_F}\omega=-\delta F$, so Cartan's formula and closedness imply $\mathcal L_{X_F}\omega=0$. Therefore
+\[
+ \iota_{[X_F,X_G]}\omega=\mathcal L_{X_F}(\iota_{X_G}\omega)
+      =-\delta(X_F G)=\delta\{F,G\}.
+\]
+Thus $[X_F,X_G]=-X_{\{F,G\}}$. Apply both sides to $H$: the result is $\{\{H,G\},F\}-\{\{H,F\},G\}=-\{H,\{F,G\}\}$, which is Jacobi after using antisymmetry. It was closedness, not merely an invertible skew matrix at each point, that supplied the differential identity.
+\end{proof}
+
+More generally a \emph{Poisson manifold} has a bracket on its smooth functions with the four properties of the proposition; no inverse two-form is required. For example, on $(q,p,s)\in\mathbb R^3$ take $\{F,G\}=F_qG_p-F_pG_q$. The symplectic planes $s=\text{constant}$ carry all the motions, and $s$ is a \emph{Casimir}, a function whose bracket with every function vanishes. This is a bracket defined on \emph{all} functions. Simply declaring the same three-dimensional space presymplectic with form $\delta p\wedge\delta q$ poses a different inverse problem for $s$ (Exercise~\ref{f:ex-null-coordinate}).
+
+\section{Momentum constraints and the reduced space}
+For a closed two-form of constant rank, the null spaces fit together into a distribution of tangent planes. If $Y,Z$ are null fields, Cartan's formula gives $\mathcal L_Y\omega=0$ and $\iota_{[Y,Z]}\omega=\mathcal L_Y\iota_Z\omega-\iota_Z\mathcal L_Y\omega=0$. The Frobenius theorem for a smooth constant-rank distribution closed under brackets \cite{LeeSM} therefore integrates these planes to leaves. A function with a Hamiltonian vector is constant on every connected null leaf. This local construction does not ensure that the set of leaves is a smooth manifold. A group action gives an important case in which the global quotient can be controlled.
+
+Let a Lie group $G$ act smoothly, preserving $\omega$, on a symplectic manifold $M$. For $\xi$ in its Lie algebra $\mathfrak g$, write $\xi_M(x)$ for the velocity of $\exp(t\xi)x$ at $t=0$. Preservation of $\omega$ implies $-\iota_{\xi_M}\omega$ is closed, but it need not be exact. A \emph{momentum map} $J:M\to\mathfrak g^*$ supplies actual functions $J_\xi(x)=\langle J(x),\xi\rangle$ with $\delta J_\xi=-\iota_{\xi_M}\omega$. We assume equivariance: $J(gx)(\xi)=J(x)(\operatorname{Ad}_{g^{-1}}\xi)$, where $\operatorname{Ad}$ is obtained by differentiating conjugation in $G$. In particular $G$ preserves $C=J^{-1}(0)$.
+
+\begin{theorem}[Regular reduction at zero]\label{f:regular-reduction}
+Suppose $0$ is a regular value of $J$ and $G$ acts freely and properly on $C$. The orbit space $C/G$ has a unique symplectic form $\omega_{\rm red}$ such that $\pi_C^*\omega_{\rm red}=i^*\omega$, with $i:C\hookrightarrow M$ the inclusion and $\pi_C$ the orbit projection.
+\end{theorem}
+\begin{proof}
+Regular means $\dd J_x$ is surjective at each $x\in C$, so $C$ is a submanifold with tangent space $\ker\dd J_x$. Write $O_x=\{\xi_M(x):\xi\in\mathfrak g\}$ for the orbit tangent. Since $\delta J_\xi(Y)=\omega(Y,\xi_M)$ for every $\xi$, we have $T_xC=O_x^\perp$. Equivariance gives $O_x\subset T_xC$. Lemma~\ref{f:alternating-quotient} now identifies the kernel of $i^*\omega$ at $x$ with $T_xC\cap O_x=O_x$.
+
+We use the smooth quotient theorem for free proper actions \cite{Marsden}: freeness means no nonidentity element fixes a point, and properness means $(g,x)\mapsto(gx,x)$ is proper (compact sets have compact inverse images). The projection to the smooth quotient is a submersion whose differential has kernel $O_x$. The constraint and the orbit directions each cost $\dim G$ dimensions, giving $\dim(C/G)=\dim M-2\dim G$ when $C$ is nonempty. To pair two quotient tangents, lift them to $T_xC$ and pair the lifts. Changing a lift by an orbit tangent changes nothing; changing $x$ on its orbit changes nothing by invariance. Local smooth sections of the submersion show that the resulting form is smooth and closed. It is nondegenerate because a lift annihilating all lifts lies in $O_x$, and it is unique because every tangent pair has lifts.
+\end{proof}
+An invariant smooth $F$ on $M$ gives an observable $\bar F$ on $C/G$: $X_F$ is tangent to $C$ since $\delta J_\xi(X_F)=-\xi_M F=0$. For $Y\in TC$ the pullback identity gives
+\[
+ \omega_{\rm red}(\dd\pi_C\,Y,\dd\pi_C\,X_F)=\omega(Y,X_F)
+                  =\delta\bar F(\dd\pi_C\,Y).
+\]
+Thus $\dd\pi_C\,X_F=X_{\bar F}$, and the bracket of invariant extensions can be computed before restriction, independently of the extensions. At a nonzero momentum value only the subgroup stabilizing that value preserves the level; replacing zero by an arbitrary value in $C/G$ would not in general define a quotient action.
+
+An action symmetry and a null direction of a restricted form are not synonyms. In action language an off-shell symmetry can change the action by an endpoint difference $\alpha_X|_i^f$. If $\mathcal L_X\theta=\delta\alpha_X$ on the allowed domain, the Noether charge $H_X=\theta(X)-\alpha_X$ satisfies $\delta H_X=-\iota_X\omega$ by Cartan's formula \cite{HW}. A varying charge detects a physical motion; it does not identify two descriptions of the same point. Boundary conditions determine which variations can test this charge.
+
+\begin{example}[Two angular coordinates, one invariant]\label{f:two-rotor}
+On $T^*(S^1\times S^1)$ use angles $\alpha_1,\alpha_2$ modulo $2\pi$ and momenta $e_1,e_2$. The circle acting by $(\alpha_1+t,\alpha_2-t)$ is generated by $J=e_1-e_2$. Its zero level is regular, and the circle action is free and proper. On this level $e_1=e_2=e$; the orbits are exactly the fibers of $(\alpha_1,\alpha_2,e)\mapsto(w,e)$ with $w=\exp(i(\alpha_1+\alpha_2))$. Indeed any two decompositions of the same total angle differ by $(t,-t)$. Writing $w=e^{i\alpha}$ locally, the restricted potential is $e\,\delta\alpha$ and $\{w,e\}=iw$ by complex linearity. Its value is independent of the local lift of the angle. Rotating just the first circle is still a symmetry on the level, but it changes $w$ and its charge is $e$, not the vanishing $J$. Only the relative rotation has been divided out. Geometrically the two angles can record open transports along consecutive arcs of a circle; $w$ is the transport around the closed path.
+\end{example}
+
+\section{From compact sources to Hamiltonian solutions}
+For fields there is no finite-dimensional rank argument identifying every covector with a vector. We construct the inverse on a stated domain. Take a time-oriented globally hyperbolic spacetime without boundary, of signature $(-,+,\ldots,+)$, with metric volume $\dd V$. The real scalar action on a slab is
+\[
+ S[\phi]=-\tfrac12\int\big(\nabla_\mu\phi\nabla^\mu\phi+m^2\phi^2\big)\,\dd V,
+ \qquad P=\Box_g-m^2,\quad \Box_g=\nabla_\mu\nabla^\mu .
+\]
+Varying the integrand in a direction $Y$ gives $(P\phi)Y-\nabla_\mu(Y\nabla^\mu\phi)$; the linearization of the Euler term is therefore $P$ with the displayed sign. It is the action Hessian relative to $\dd V$. With $n$ the future unit normal, the final cap potential of Chapter~\ref{f:variation} is $\theta_\Sigma(Y)=\int_\Sigma(\nabla_n\phi)Y\,\dd\Sigma$. Thus the form on two variations is
+\[
+ \omega_\Sigma(u,v)=\int_\Sigma\big[(\nabla_n u)v-(\nabla_n v)u\big]\,\dd\Sigma .
+\]
+The divergence of $u\nabla^\mu v-v\nabla^\mu u$ is $uPv-vPu$. With the future cap contributing minus the contraction with $n_\mu$ in this signature, the slab identity is
+\begin{equation}
+ \int_{\Sigma_-}^{\Sigma_+}(uPv-vPu)\,\dd V
+       =\omega_{\Sigma_+}(u,v)-\omega_{\Sigma_-}(u,v).
+ \label{f:observable-green}
+\end{equation}
+We use it when the products have compact spatial support in the slab. For homogeneous solutions it proves slice independence.
+
+Let $\mathcal D=C_c^\infty(M;\mathbb R)$ and $\langle f,u\rangle=\int_M fu\,\dd V$: $f$ represents a source density using this fixed measure. By the Green and Cauchy theorems for normally hyperbolic operators (Chapter~\ref{f:waves}; \cite{BGP}), there are unique retarded and advanced inverses $G^R,G^A$ on $\mathcal D$, supported in $J^+(\supp f)$ and $J^-(\supp f)$ respectively on input $f$. They invert $P$ on both sides on tests. Put $E=G^R-G^A$ and let $\mathcal S_{\rm sc}$ consist of smooth real homogeneous solutions supported in $J(K)=J^+(K)\cup J^-(K)$ for some compact $K$ (spacelike-compact solutions).
+
+\begin{theorem}[Compact source presentation]\label{f:source-exact}
+The sequence of real vector spaces
+\[
+ 0\longrightarrow\mathcal D\xrightarrow{P}\mathcal D
+       \xrightarrow{E}\mathcal S_{\rm sc}\longrightarrow0
+\]
+is exact: $P$ is injective on tests, $\ker E=P\mathcal D$, and $E$ reaches every solution in the indicated space.
+\end{theorem}
+\begin{proof}
+A compactly supported homogeneous solution has zero data on an early Cauchy surface, so is zero. The inverse identities imply $PE=0$ and $EP=0$ on tests. If $Ef=0$, the common value $k=G^R f=G^A f$ satisfies $Pk=f$. Its support is contained in the compact causal diamond $J^+(\supp f)\cap J^-(\supp f)$, so $k$ is a test, not just a smooth preimage.
+
+Given $u\in\mathcal S_{\rm sc}$, choose a smooth function $\chi$ of Cauchy time, zero before one level and one after a later level. Since $Pu=0$, the source
+\[
+ f=P(\chi u)=[P,\chi]u=(\Box_g\chi)u+2\nabla_\mu\chi\nabla^\mu u
+\]
+has support in $J(K)$ within that intervening closed slab. This set is compact: the future part is bounded between $K$ and the compact set $J^+(K)\cap\Sigma_+$, and the past part has the analogous earlier bound. Causal diamonds of compact sets are compact. Both $\chi u$ and $(\chi-1)u$ solve $Pv=f$; the first has zero early data, the second zero late data. Uniqueness therefore gives
+\[
+ G^R f=\chi u,\qquad G^A f=(\chi-1)u,\qquad Ef=u.
+\]
+Changing the switch in this time coordinate changes the representative by $P((\chi-\widetilde\chi)u)$ with compactly supported argument. A time cutoff alone would not make the source compact for an arbitrary spatially extended solution.
+\end{proof}
+
+The smeared observable is $F_f(\phi)=\langle f,\phi\rangle$ on solutions. Formal self-adjointness gives $F_{Pk}=0$ for $k\in\mathcal D$. To find its generator, take $Pu=0$, $v=G^R f$ in \eqref{f:observable-green} with caps before and after the source. The early retarded data vanish; on the late cap $v=Ef$ with its normal derivative. It follows that $\delta F_f(u)=\omega(u,Ef)$ on every slice for $u\in\mathcal S_{\rm sc}$. Taking instead $u=G^R f$, $v=G^A h$ makes both cap pairings vanish, yielding $\langle h,G^R f\rangle=\langle f,G^A h\rangle$. In particular $E$ is skew for the source pairing.
+
+\begin{corollary}\label{f:peierls-labels}
+The labels of these linear observables are precisely $V=\mathcal D/P\mathcal D$. Their nondegenerate Poisson pairing is
+\begin{equation}
+ \sigma([f],[h])=\{F_f,F_h\}_{\rm P}=\langle f,Eh\rangle
+          =\omega(Eh,Ef)=-\omega(Ef,Eh).
+ \label{f:label-sign}
+\end{equation}
+\end{corollary}
+\begin{proof}
+If $F_f$ vanishes on all spacelike-compact solutions, $0=\langle f,Eh\rangle=-\langle h,Ef\rangle$ for all tests $h$, so $Ef=0$. Exactness gives $f\in P\mathcal D$. The same test proves that the pairing has no radical on the quotient. The bracket follows from \eqref{f:poisson-convention} with $X_{F_h}=Eh$. Its minus sign in the last expression exchanges two arguments; it does not reverse the causal propagator.
+\end{proof}
+Since $E$ is onto, \eqref{f:label-sign} also proves nondegeneracy of $\omega$ on $\mathcal S_{\rm sc}$. It does not identify that space with its entire algebraic dual: the covectors inverted here are represented by compact smooth sources. Adding $-\varepsilon F_h$ to the action gives $Pv=h$ for its first-order response. Thus the Hamiltonian perturbation really is the retarded response minus the advanced one: this is the Peierls construction. The bracket extends by the product rule to finite polynomials in smearings. It makes no assertion about a product of distributions at the same point. With a timelike wall the variational domain, wall action and possible corner in $\theta$ must be specified: both causal problems have to exist and obey the adjoint Green identity on that domain. For gauge equations one must also restrict sources to annihilate proper gauge directions and justify an inverse modulo those directions \cite{Khavkine}. Neither extension follows from the boundaryless scalar sequence.
+
+\section*{Exercises}
+\begin{exercise}[Basic: a missing conjugate]\label{f:ex-null-coordinate}
+For $\omega=\delta p\wedge\delta q$ on $\mathbb R^3$ with coordinates $(q,p,s)$, find all functions admitting a Hamiltonian vector field and all such fields for $H=p$. Compare with the Poisson bracket that ignores $s$.
+\end{exercise}
+\noindent\emph{Solution.} The radical is spanned by $\partial_s$, so $H_s=0$ is necessary and sufficient. For $H=p$ all choices are $\partial_q+c(q,p,s)\partial_s$. In particular $s$ admits no field for the two-form, whereas in the Poisson description it is a Casimir with zero Hamiltonian field.
+
+\begin{exercise}[Intermediate: where regularity fails]
+Rotate $\mathbb R^2$ about its origin, acting on the momentum vector by the same rotation. Show that $J=xp_y-yp_x$ generates the action. Identify the reduced form on $J=0$ where $r=(x^2+y^2)^{1/2}>0$. Why does the proof not describe the orbit of $(x,y,p_x,p_y)=0$?
+\end{exercise}
+\noindent\emph{Solution.} Hamilton's equations give $X_J=(-y,x,-p_y,p_x)$ in this ordering. In polar coordinates $p_x\delta x+p_y\delta y=p_r\delta r+J\delta\alpha$, where $p_r=(xp_x+yp_y)/r$. Dividing out the angle on the zero level leaves $\delta p_r\wedge\delta r$. At the origin $\dd J=0$ and every rotation fixes the point: both regularity and freeness fail there.
+
+\begin{exercise}[Advanced: the sign measured by a switched source]
+For $P=-(\partial_t^2+\nu^2)$, $\nu>0$, choose a switch $\chi$ as in Theorem~\ref{f:source-exact}. Construct tests $f_c,f_s$ for the solutions $\cos(\nu t),\sin(\nu t)$ and compute $\sigma([f_c],[f_s])$ by integration without using a propagator kernel.
+\end{exercise}
+\noindent\emph{Solution.} Write $c=\cos(\nu t)$ and $s=\sin(\nu t)$. The tests are $f_c=-\chi''c+2\nu\chi's$ and $f_s=-\chi''s-2\nu\chi'c$. The cutoff argument gives $Ef_s=s$. Integrating the $-\chi''cs$ term by parts leaves $\int f_c s\,\dd t=\nu\int\chi'(c^2-s^2+2s^2)\,\dd t=\nu$. On any time slice $\omega(c,s)=\dot c s-\dot s c=-\nu$, confirming which pairing belongs to the labels.

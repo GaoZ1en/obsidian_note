@@ -1,0 +1,114 @@
+\section{Building a bundle from local products}\label{sec:D-bundles}
+
+A tangent vector at $x$ comes with a base point before it comes with any components. A charged field value also belongs to a space over $x$; reporting it as a complex number requires a choice of phase convention there. To compare two reports at a cut, we need to know how each convention names the elements of the fiber.
+
+A smooth \emph{fiber bundle} consists of a total space $E$, a smooth surjection $\pi:E\to M$ (the projection), and local product descriptions with a common model fiber $Y$. More precisely, there is an open cover $\{U_i\}$ of $M$ and there are diffeomorphisms
+\[
+ \tau_i:\pi^{-1}(U_i)\longrightarrow U_i\times Y,
+ \qquad \operatorname{pr}_1(\tau_i(v))=\pi(v) .
+\]
+Such a map is a \emph{local trivialization}: it identifies each actual fiber $E_x=\pi^{-1}(x)$ over $U_i$ with $Y$. It need not extend to a trivialization over all of $M$. A \emph{section} $s:M\to E$ is a smooth choice of one element of each fiber, so $\pi\circ s=\mathrm{id}_M$. In the $i$th trivialization it is described by a function $z_i:U_i\to Y$ through $\tau_i(s(x))=(x,z_i(x))$. The function $z_i$ is not the field $s$: a second report of the very same value generally uses another function.
+
+On $U_i\cap U_j$ write $\tau_i\tau_j^{-1}(x,w)=(x,t_{ij}(x)w)$, where $t_{ij}(x)$ is a diffeomorphism of $Y$ and juxtaposition denotes its action on $w$. The index on the left is the \emph{destination}: $z_i=t_{ij}z_j$. At a point covered by three patches, passing from $k$ to $j$ and then to $i$ is a change of description of just one element. Hence
+\begin{equation}
+ t_{ii}=1,\qquad t_{ji}=t_{ij}^{-1},\qquad t_{ij}t_{jk}=t_{ik} .
+ \label{eq:D-bundle-cocycle}
+\end{equation}
+The last equality on triple overlaps is the \emph{cocycle condition}. The rightmost map acts first.
+
+Conversely, start with the products $U_i\times Y$ and smooth transition maps satisfying \eqref{eq:D-bundle-cocycle}. Form their disjoint union, identify $(x,w)_j$ with $(x,t_{ij}(x)w)_i$ on each overlap, and use the quotient topology. Project the class $[x,w]_j$ to $x$. Over $U_i$ there is an explicit chart and inverse:
+\[
+ [x,w]_j\longmapsto (x,t_{ij}(x)w),
+ \qquad (x,v)\longmapsto [x,v]_i .
+\]
+The first map gives the same answer on a representative from $k$ because $t_{ik}t_{kj}w=t_{ij}w$. It is continuous by the quotient topology, and the inverse is continuous by restriction of the quotient map to the $i$th product. Their chart changes are the prescribed smooth transitions. This constructs a local product rather than merely a collection of sets of the same size. To construct a section of it, give smooth functions $z_i$ with $z_i=t_{ij}z_j$ and set $s(x)=[x,z_i(x)]_i$; the transition rule is precisely what removes the choice of $i$.
+
+In a rank-$n$ real \emph{vector bundle}, $Y=\mathbb R^n$ and the transitions are invertible linear maps. One can add vectors in $E_x$ by adding their columns in any trivialization, since a linear transition gives the same sum in the next one. Complex bundles use $\mathbb C^n$ instead. The \emph{tangent bundle} $TM$ is the collection of all $T_xM$, with projection $(x,V)\mapsto x$. Each coordinate basis gives a local product, and its transition matrix is the Jacobian $J=\partial x_i/\partial x_j$: a column of vector components changes by $V_i=J V_j$. The \emph{cotangent bundle} $T^*M$ is built out of the dual spaces. A column of covector components changes by $\eta_i=(J^{-1})^{\mathsf T}\eta_j$, since the pairing $\eta_i^{\mathsf T}V_i$ must give $\eta_j^{\mathsf T}V_j$ for every $V_j$. A \emph{frame} $p:\mathbb R^n\to E_x$ is the linear isomorphism sending the standard basis to a chosen ordered basis of the fiber. Once $p$ is chosen, every other frame at $x$ is $p g=p\circ g$ for a unique $g\in\mathrm{GL}(n,\mathbb R)$; none is preferred.
+
+Collecting all frames gives a \emph{principal bundle} with group $\mathrm{GL}(n,\mathbb R)$. More generally take a Lie group $G$, a manifold whose group multiplication and inversion are smooth. A principal $G$-bundle $P\to M$ carries a smooth \emph{right} action, $(p g)k=p(gk)$, free and transitive on each fiber: for any $p,q$ in that fiber there is exactly one $g$ with $q=p g$. Its local trivializations identify this action with right multiplication on the $G$ factor of $U_i\times G$. The local section $e_i$ given by $e_i(x)=\tau_i^{-1}(x,1)$ lets us write every point over $U_i$ uniquely as $e_i(x)a_i$. If $e_j=e_i g_{ij}$, then $e_i a_i=e_j a_j$ implies $a_i=g_{ij}a_j$, not $a_j g_{ij}$.
+
+Now let $G$ act smoothly on $W$ from the \emph{left}, so $\rho(gk)w=\rho(g)(\rho(k)w)$. Make the \emph{associated bundle} $P\times_G W$ out of pairs $(p,w)$ by declaring
+\[
+ [p g,w]=[p,\rho(g)w],\qquad [p,w]\longmapsto\pi(p) .
+\]
+Equivalently, changing $p$ to $p g$ while holding an element fixed changes its component to $\rho(g^{-1})w$. Thus $[e_j,z_j]=[e_i,\rho(g_{ij})z_j]$: the same principal frames give the component changes for every associated field. With the frame bundle and $W=\mathbb R^n$ in the defining representation, the map $[p,w]\mapsto p(w)$ recovers the original vector bundle. Other left actions need not be linear.
+
+\begin{example}[A line with no global frame]\label{ex:D-sign-line}
+Regard the unit circle as the complex numbers of modulus one. Cover it by $U=S^1\setminus\{-1\}$ and $V=S^1\setminus\{1\}$. Their intersection has two components. Glue real lines by $t_{VU}=+1$ on the upper semicircle and $t_{VU}=-1$ on the lower semicircle, using the inverse maps on the return. These smooth transitions give a line bundle by the construction above. A nowhere-zero section would have a constant sign in each of the connected patches. Its two signs would have to be equal on the upper overlap and opposite on the lower one. Thus there is no such section and the bundle cannot be a product line, whose constant unit section is nowhere zero. It still has a zero section.
+
+The transitions preserve $|w|$, so it makes sense to keep only the unit vectors. They give a principal $\{+1,-1\}$-bundle: either unit vector in a fiber determines the other by multiplication by $-1$. Lift a circuit starting at $1\in S^1$ with coordinate $+1$ in $U$. In a continuous lift to these two sheets the coordinate cannot change within a patch. Cross to $V$ on the upper overlap, obtaining $+1$, and back to $U$ on the lower one, obtaining $-1$. The returned sign is the holonomy of this discrete bundle. Switching charts and back \emph{at one point} gives $t_{UV}(x)t_{VU}(x)=1$; the circuit switches at two different points. Its minus sign does not violate the cocycle condition.
+\end{example}
+
+\section{Lifting a seam map and comparing connections}\label{sec:D-bundle-lift}
+
+Let a diffeomorphism $f:F_-\to F_+$ identify faces of two regions carrying principal bundles $P_\pm\to R_\pm$. The plus-side fiber to be used at $y\in F_-$ lies over $f(y)$. For any smooth $b:N\to M$ the \emph{pullback bundle} implements this change of base:
+\[
+ b^*E=\{(y,v)\in N\times E:\ b(y)=\pi(v)\},\qquad (y,v)\longmapsto y .
+\]
+Over $b^{-1}(U_i)$ use $y$ and the second coordinate of $\tau_i(v)$ as a trivialization. Its transitions are $t_{ij}(b(y))$. A section $s$ pulls back to $y\mapsto(y,s(b(y)))$; inclusion of a face gives ordinary restriction. For instance, pull the twisted line of Example~\ref{ex:D-sign-line} back by the double covering $b(e^{i\phi})=e^{2i\phi}$. Start with a unit vector at $\phi=0$ and continue it by following its sheet. When $\phi$ reaches $2\pi$ the image has circled twice: the returned sign is $(-1)^2=1$. The choices close to a global unit section, smooth because its local components are constant. Multiplying this section by an arbitrary real coordinate trivializes the pullback line.
+
+At a cut, pulling back $P_+|_{F_+}$ by $f$ puts two principal bundles over $F_-$, but does not identify them. Even the identity of the circle cannot lift to a linear isomorphism from the product line to the twisted line: the image of its constant unit section would be nowhere zero.
+
+A seam lift is an equivariant bundle isomorphism $D:P_-|_{F_-}\to P_+|_{F_+}$ with $\pi_+D=f\pi_-$ and $D(p a)=D(p)a$. The first equality is read along the two routes in Figure~\ref{D-lift-diagram}.
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[>=Stealth,thick,font=\small]
+\node (p) at (0,1.4) {$P_-|_{F_-}$};\node (q) at (4.5,1.4) {$P_+|_{F_+}$};
+\node (x) at (0,0) {$F_-$};\node (y) at (4.5,0) {$F_+$};
+\draw[->,marine] (p)--node[above] {$D$} (q);\draw[->,ink] (x)--node[below] {$f$} (y);
+\draw[->,quiet] (p)--node[left] {$\pi_-$} (x);\draw[->,quiet] (q)--node[right] {$\pi_+$} (y);
+\end{tikzpicture}
+\caption{A lift maps actual fiber elements; the face map below it maps base points. Starting with a frame over $y$ on the minus side gives base point $f(y)$ along either route. Commutativity specifies where the frame must land, not which frame there to choose.}\label{D-lift-diagram}\end{figure}
+
+Equivalently, $p\mapsto(\pi_-(p),D(p))$ is an isomorphism over the identity of $F_-$ onto $f^*(P_+|_{F_+})$. To construct it, choose frames on corresponding patches of the faces and specify smooth $h_i$ on the minus patches by
+\begin{equation}
+ D(e_i^-(y)a)=e_i^+(f(y))h_i(y)a,\qquad
+ h_i g_{ij}^-=(g_{ij}^+\circ f)h_j .
+ \label{eq:D-lift-frames}
+\end{equation}
+Indeed, $D(e_j^-)$ computed as $D(e_i^-g_{ij}^-)$ has coefficient $h_i g_{ij}^-$ in the plus $i$ frame. Starting with $e_j^+$ instead gives the coefficient $(g_{ij}^+\circ f)h_j$. Equality makes the displayed prescription a single map, whose inverse uses $f^{-1}$ and $h_i(y)^{-1}$. Glue $p$ to $D(p)$, not just $\pi_-(p)$ to $f(\pi_-(p))$. Choose product descriptions of the collar bundles as pullbacks of their face bundles, as in Chapter~\ref{ch:02}, and extend the frames and $h_i(y)$ constantly in the collar parameter. A common group coordinate is $h_i(y)a_-$ on the minus side and $a_+$ on the plus side. Equation~\eqref{eq:D-lift-frames} now makes its transition between patches the same on both halves. The two descriptions agree on the identified face; they do not identify base points at positive collar distance. For associated fields the induced map is $[p,w]\mapsto[D(p),w]$. In the common plus frame the two values to compare on the face are therefore $\rho(h_i(y))z_i^-(y)$ and $z_i^+(f(y))$.
+
+Changing local frames to $e_i^\pm k_i^\pm$ describes the \emph{same} $D$ by $(k_i^+\circ f)^{-1}h_i k_i^-$. In contrast, an allowed re-marking acts on the pieces. With the base fixed, let $u_\pm$ be automorphisms of the whole regional bundles respecting the exterior markings, and use hats for their face restrictions. The pair carries $p\sim D(p)$ to $u_-p\sim u_+D(p)$, so the new identification is $D'=\widehat u_+D\widehat u_-^{-1}$. The \emph{stabilizer} consists of the pairs with $D'=D$. This tests the face identification; an isomorphism of smooth sewn configurations must also be smooth in the sewn charts and carry the specified fields to their counterparts.
+
+Cut the circle example at one point of each overlap and allow either sign at each cut. Denote the first crossing sign from $U$ to $V$ by $a$ and the return sign by $b$. A smooth automorphism of the discrete bundle over either complete arc is a single sign, say $u$ or $v$. The crossings become $vau^{-1}$ and $ubv^{-1}$, so their ordered product on return is $u(ba)u^{-1}=ba$. Taking $u=1$, $v=a^{-1}$ reduces the pair to $(1,ba)$. With no fixed exterior frame there are two classes, each with the diagonal stabilizer $u=v$. Independent signs supplied at the two ends of one arc would falsely identify the classes: they need not extend over that arc. The sewings together with their re-markings form a \emph{groupoid}: its objects are the choices $(a,b)$, and its arrows are the pairs $(u,v)$ carrying one choice to another. Arrows compose by composing the regional maps and every arrow has an inverse. The set of two classes remembers possible values of $ba$, but not the nonidentity arrow fixing each object.
+
+To compare values at \emph{different} points of a path in a vector bundle, choose a connection. Its covariant derivative is a linear operator taking sections to bundle-valued one-forms, with the Leibniz rule $\nabla(\lambda z)=\mathrm{d}\lambda\otimes z+\lambda\nabla z$ for a scalar function $\lambda$. In a frame it therefore has the form $\nabla z=\mathrm{d}z+A z$: apply the derivative to the frame vectors to obtain the columns of $A$. On a tangent vector $X$ its column is $X(z)+A(X)z$. For a matrix group in its defining representation the potential $A$ is a matrix of one-forms valued in the Lie algebra (the tangent space to $G$ at the identity). To construct a connection from these local potentials, require that the resulting derivatives represent the same fiber vector in either frame. Write $z_+=h z_-$ on a common base patch. Then
+\begin{align*}
+ \mathrm{d}(h z_-)+A_+h z_-
+ &=h\,\mathrm{d}z_-+(\mathrm{d}h+A_+h)z_-
+ =h(\mathrm{d}z_-+A_-z_-)
+\end{align*}
+for all columns precisely when
+\begin{equation}
+ A_+=h A_-h^{-1}-(\mathrm{d}h)h^{-1} .\label{eq:D-bundle-connection}
+\end{equation}
+The inhomogeneous term cancels the derivative of the frame change. The same calculation in fixed frames gives the action on a connection of an active gauge transformation $z\mapsto h z$. On a face the common-base notation on the plus side means $z_+\circ f$ and $f^*A_+$, with the potentials restricted to their faces: $(f^*A_+)_y(X)=A_{+,f(y)}(df_y X)$. This only compares tangential directions. For a comparison in the full signed collar, use the realized frame change and differentiate it in the collar, not just on the face.
+
+To construct parallel transport, take a path $\gamma:[0,1]\to M$ in a frame patch and solve the matrix initial-value problem
+\[
+ \dot a(t)=-A(\dot\gamma(t))a(t),\qquad a(0)=1 .
+\]
+The right side is tangent to $G$ at $a(t)$: it is the Lie algebra element $-A(\dot\gamma(t))$ carried from the identity by right multiplication. The curve $e(\gamma(t))a(t)$ is the transported frame, called the \emph{horizontal lift} of $\gamma$ starting at $e(\gamma(0))$. To start at $e(\gamma(0))c$, use $a(t)c$; transport commutes with the principal right action. Thus an associated element $[e(\gamma(0)),w]$ is carried to $[e(\gamma(t)),\rho(a(t))w]$. On a longer path change frames at each crossing and compose the transports, with the later matrix on the left.
+
+In the defining representation each transported column solves $\dot z=-A(\dot\gamma)z$. If the initial-to-final matrix is $U_\gamma$, covariance of this equation gives the new matrix $h(\gamma(1))U_\gamma h(\gamma(0))^{-1}$. The initial frame change is inverted because the new input column must first be put in the old frame. For a loop the two endpoints coincide, giving conjugation, as in Chapter~\ref{ch:09}. The resulting transport around a loop is the \emph{holonomy}. Even the \emph{product} complex line over $S^1$ with one global unit frame can have any $U(1)$ holonomy. Set $A=-i\alpha\,\mathrm{d}\theta$, $\alpha\in\mathbb R$; the angle is local but its differential agrees on overlaps. Parallel transport gives $z(2\pi)=e^{2\pi i\alpha}z(0)$. Changing components by $h=e^{i n\theta}$, $n\in\mathbb Z$, sends $\alpha$ to $\alpha+n$ without changing this phase. Here the nontrivial phase comes from the connection, not from any twist of the bundle.
+
+A small loop also measures \emph{curvature}. In commuting coordinates $s,y$ define $F_{sy}$ by $[\nabla_s,\nabla_y]z=F_{sy}z$. Expanding the two derivatives cancels the terms containing derivatives of $z$ and leaves
+\[
+ F_{sy}=\partial_s A_y-\partial_y A_s+[A_s,A_y],\qquad [A_s,A_y]=A_sA_y-A_yA_s .
+\]
+These are the components of the curvature two-form $F=\mathrm{d}A+A\wedge A$, with matrix multiplication in the wedge product. For arbitrary vector fields $X,Y$ subtract $\nabla_{[X,Y]}$ from the commutator to remove the effect of their own failure to commute. The transformation of $\nabla$ implies $F_+=h F_-h^{-1}$ in a common base chart. For a direct check choose $A=-i B s\,\mathrm{d}y$ with constant $B$ in a product complex line. Around the rectangle $0\leq s\leq a$, $0\leq y\leq b$, oriented by $\mathrm{d}s\wedge\mathrm{d}y$, only the side $s=a$ contributes to $\oint A=-iBab$. The transported phase is $e^{-\oint A}=e^{iBab}$. The earlier circle connection had $F=0$ yet could have nontrivial holonomy: a loop encircling this rectangle bounds a surface in its patch, whereas a circuit generating the circle does not.
+
+\begin{exercise}[Pull back before changing frame]
+On a seam interval the plus coordinate is $x=2y$ in terms of the minus coordinate. Take
+\[
+ h(y)=\begin{pmatrix}1&y\\0&1\end{pmatrix},\qquad
+ A_-=\begin{pmatrix}0&0\\1&0\end{pmatrix}\mathrm{d}y .
+\]
+Find $A_+$ in its own coordinate $x$, and check it on the minus-side parallel column $z_-=(1,-y)^{\mathsf T}$.
+
+\emph{Answer.} The right side of \eqref{eq:D-bundle-connection} is $\left(\begin{smallmatrix}y&-1-y^2\\1&-y\end{smallmatrix}\right)\mathrm{d}y$. This is the \emph{pullback} of the desired potential. Since $\mathrm{d}x=2\,\mathrm{d}y$,
+\[
+ A_+(x)=\tfrac12\begin{pmatrix}x/2&-1-x^2/4\\1&-x/2\end{pmatrix}\mathrm{d}x .
+\]
+The plus column pulled back is $h(y)z_-(y)=(1-y^2,-y)^{\mathsf T}$. Its $y$ derivative is $(-2y,-1)^{\mathsf T}$, whereas $(f^*A_+)(\partial_y)$ applied to it gives $(2y,1)^{\mathsf T}$. The column is still parallel, although its ordinary derivative has changed.
+\end{exercise}

@@ -1,0 +1,90 @@
+% !TeX root = ../main.tex
+\chapter{Test functions, Hilbert spaces and distributions}\label{f:distributions}
+
+Consider a nonnegative pulse of total integral one confined to a ball of radius $\varepsilon$ about zero. As the ball shrinks, the pulse has a simple limit in one experiment and no limit at all in another. A smooth detector with profile $\varphi$ records an average that tends to $\varphi(0)$. A detector that measures the squared amplitude of the pulse records a quantity that grows without bound. To speak of the limit of fields we must say what it means for two fields to be close. We shall build two answers: a distance based on mean square, and convergence judged by the readings of smooth tests. Their relation will let us differentiate fields across a surface at which they cease to be smooth.
+
+\section{Completing a space of fields}\label{f:distributions-completion}
+
+A norm on a real or complex vector space assigns a number $\|u\|\geq0$ to each vector, zero only for the zero vector; it satisfies $\|au\|=|a|\|u\|$ and the triangle inequality. It gives a distance $\|u-v\|$. A sequence is Cauchy if its terms become arbitrarily close to one another, whether or not there is a vector to which they converge. A normed space in which every Cauchy sequence converges is a \emph{Banach space}. The completion of a normed space $X$ can be constructed without guessing its missing vectors. Take Cauchy sequences in $X$, identifying $(u_j)$ and $(v_j)$ when $\|u_j-v_j\|\to0$. The norm of a class is $\lim_j\|u_j\|$; the reverse triangle inequality makes this limit well defined. Constant sequences embed $X$, and the terms of any representative approximate its class. To see completeness, approximate the $j$th term of a Cauchy sequence of classes by an element of $X$ to within $2^{-j}$. Those elements form a Cauchy sequence in $X$, and its class is the required limit.
+
+Integration gives important examples of norms. Fix a positive smooth density $d\mu$ on a manifold, or Lebesgue measure $dx$ on $\mathbb R^n$. In the Lebesgue integral, a nonnegative simple function $\sum_i a_i{\bf1}_{A_i}$ on disjoint measurable sets has integral $\sum_i a_i\mu(A_i)$. The integral of a nonnegative measurable function is the supremum of the integrals of simple functions below it. Integrate signed or complex functions by taking their parts when the absolute value is integrable. In particular, changing a function on a null set changes none of these integrals. For $1\leq p<\infty$ put
+\[
+  \|u\|_p=\left(\int |u|^p\,d\mu\right)^{1/p};
+\]
+$\|u\|_\infty$ is the smallest almost-everywhere upper bound on $|u|$. The space $L^p$ consists of functions with finite norm, \emph{identified up to equality almost everywhere}. We use H\"older's inequality $\int |uv|\,d\mu\leq\|u\|_p\|v\|_{p'}$ for $1/p+1/p'=1$, and Minkowski's inequality $\|u+v\|_p\leq\|u\|_p+\|v\|_p$ for $p\geq1$ \cite[Appendix~B, integral inequalities]{Evans}. Without the identification the supposed norm would vanish on some nonzero functions.
+
+An inner product $(u,v)$ here is conjugate-linear in its first entry, linear in its second, conjugate symmetric, and positive definite. It induces the norm $\sqrt{(u,u)}$ and satisfies $|(u,v)|\leq\|u\|\,\|v\|$ (minimize $\|u-av\|^2$ over $a$). A complete inner product space is a \emph{Hilbert space}. In $L^2$ we use $(u,v)=\int\overline u v\,d\mu$. Here is why a Cauchy sequence has a limit there. Choose a subsequence $u_{j_k}$ with $\|u_{j_{k+1}}-u_{j_k}\|_2\leq 2^{-k}$. The partial sums of $\sum_k |u_{j_{k+1}}-u_{j_k}|$ have $L^2$ norms bounded by $\sum_k 2^{-k}$. By monotone convergence (the integrals of an increasing sequence of nonnegative measurable functions converge to the integral of its limit \cite[Ch.~I, Thm.~I.10]{RS}), applied to the squares, the full sum belongs to $L^2$. Thus $u_{j_k}$ converges almost everywhere to a function $u$, and the same bound on the tail gives $\|u-u_{j_k}\|_2\leq\sum_{l\geq k}2^{-l}$. The original Cauchy sequence has this limit too. In Euclidean space $C_c^\infty$ is dense in $L^p$ for $1\leq p<\infty$: one cuts off at large distance and smooths by convolution with a compactly supported approximate identity \cite[Appendix~C, mollifiers]{Evans}. Consequently completing smooth tests in mean square really does give $L^2$, not a smaller space of smooth representatives.
+
+The \emph{continuous dual} $X'$ consists of linear functionals $\ell:X\to\mathbb C$ (or $\mathbb R$) satisfying $|\ell(u)|\leq C\|u\|$. The least such $C$ is the dual norm. Continuity at zero implies this bound by scaling a ball about zero, and the bound implies continuity everywhere. More generally, a bounded linear map into a complete normed space extends uniquely from a dense subspace: apply it to any approximating sequence and take the limit. We will use this principle to define a boundary value.
+
+\begin{proposition}[Hilbert space representation]\label{f:hilbert-representation}
+For every $\ell$ in the continuous dual of a Hilbert space there is a unique $h$ with $\ell(u)=(h,u)$ and $\|\ell\|=\|h\|$.
+\end{proposition}
+\begin{proof}
+For $\ell\ne0$ take the closed affine set $A=\{v:\ell(v)=1\}$ and let $d=\inf_{v\in A}\|v\|$. A minimizing sequence is Cauchy: its midpoints are in $A$, and the parallelogram identity gives $\|v-w\|^2\leq 2\|v\|^2+2\|w\|^2-4d^2$. Its limit $z\in A$ thus minimizes the norm there. For $k\in\ker\ell$ every $z+ak$ belongs to $A$; minimizing its squared norm at $a=0$ gives $(z,k)=0$ (vary both real and imaginary parts). Since $u-\ell(u)z\in\ker\ell$, we have $(z,u)=\ell(u)\|z\|^2$. Take $h=z/\|z\|^2$. Cauchy--Schwarz gives the norm bound, with equality at $h/\|h\|$. The zero functional has $h=0$, and testing the difference of two representing vectors against itself proves uniqueness.
+\end{proof}
+
+\section{Compactly supported tests and their dual}\label{f:test-topology}
+
+Point evaluation is not an $L^2$ functional. Even on smooth functions it is unbounded in the $L^2$ norm: a bump $\varphi(x/\varepsilon)$ equal to one at zero has norm $\varepsilon^{n/2}\|\varphi\|_2$. To keep point evaluation, and also evaluation of derivatives, give the tests a finer topology. For an open set $U\subset\mathbb R^n$ write $\mathcal D(U)=C_c^\infty(U)$. For a compact $K\subset U$ let $\mathcal D_K$ consist of the tests supported in $K$, and put
+\[
+ p_{K,m}(\varphi)=\max_{|\alpha|\leq m}\ \sup_{x\in K}|\partial^\alpha\varphi(x)|,\qquad m=0,1,2,\ldots .
+\]
+Here $\alpha$ is a list of nonnegative integers and $|\alpha|$ is their sum. A seminorm satisfies the norm inequalities but may vanish on a nonzero vector. A family of seminorms defines neighborhoods of zero by requiring finitely many seminorms to be smaller than prescribed positive bounds; the resulting topology is called locally convex. On $\mathcal D_K$ convergence means convergence in every $p_{K,m}$. On the union $\mathcal D(U)$ one takes all seminorms whose restriction to each $\mathcal D_K$ is continuous. This is the finest locally convex topology making the inclusions continuous, the \emph{test-function topology}. Its convergent sequences have a common compact support bound and converge there with all derivatives \cite[Ch.~II, \S2.1]{HormI}. A bump translated off to infinity therefore does not converge to zero as a test, even though it vanishes eventually on each fixed compact set.
+
+\begin{definition}\label{f:order-bound}
+A distribution on $U$ is a continuous linear functional $T$ on $\mathcal D(U)$. Equivalently, for every compact $K\subset U$ there are $m\geq0$ and $C<\infty$ such that
+\begin{equation}
+ |T(\varphi)|\leq C p_{K,m}(\varphi)\qquad (\varphi\in\mathcal D_K).\label{f:distribution-estimate}
+\end{equation}
+The space of distributions is denoted by $\mathcal D'(U)$.
+\end{definition}
+Indeed a linear functional on the union is continuous exactly when its restrictions to the $\mathcal D_K$ are continuous, by the defining locally convex topology. On one $K$, a neighborhood at zero imposes bounds on finitely many seminorms. They are increasing in $m$, so scaling gives \eqref{f:distribution-estimate} for the largest index needed. Conversely that estimate proves continuity there. A common choice of $m$ for all compact sets bounds the \emph{order} of $T$ on $U$; local bounds need not give one common order. A locally integrable $f$ defines an order-zero distribution $T_f(\varphi)=\int f\varphi\,dx$, since $|T_f(\varphi)|\leq p_{K,0}(\varphi)\int_K |f|\,dx$. The functional $\delta_a(\varphi)=\varphi(a)$ also has order zero, but it cannot equal any $T_f$: integration of $|f|$ over shrinking balls tends to zero, whereas a bounded bump in the ball can have value one at $a$.
+
+The support of $T$ is the complement of the union of all open sets on which it annihilates every supported test. It annihilates tests supported in the union as well: use a partition of unity on the compact support of such a test to write it as a finite sum of tests in the open sets. Thus the support of $\delta_a$ is exactly $\{a\}$. Convergence $T_j\to T$ in the distributional sense means $T_j(\varphi)\to T(\varphi)$ for every test. It makes no assertion about pointwise convergence or convergence in a norm.
+
+On a manifold there is a distinction hidden by $dx$. A distributional \emph{density} acts on compactly supported smooth functions; a distributional \emph{scalar} acts on compactly supported smooth densities. A locally integrable field $u$ with values in a bundle $V$ acts on a test dual density $a\in C_c^\infty(M;V^*\otimes |\Lambda^{\rm top}T^*M|)$ by $\int_M a(u)$. This defines the test space for distributional sections without choosing a volume or a fibre metric. In a chart and frame we apply the compact estimates to the components. A fixed positive density identifies the scalar and density versions, but the integral already knew which object supplied the measure. These distributional pairings are bilinear; the associated Hilbert pairing, when needed, conjugates the test.
+
+\begin{exercise}[Two measurements of one pulse]
+Let $\rho\in C_c^\infty(\mathbb R^n)$ be nonnegative with integral one, and set $\rho_\varepsilon(x)=\varepsilon^{-n}\rho((x-a)/\varepsilon)$. Determine its distributional limit, its $L^1$ norm and its $L^2$ norm.
+\end{exercise}
+\noindent\emph{Solution.} Substitution gives $\int\rho(y)\varphi(a+\varepsilon y)\,dy\to\varphi(a)$ by uniform continuity on the compact integration region. Thus the limit is $\delta_a$, although $\|\rho_\varepsilon\|_1=1$ and $\|\rho_\varepsilon\|_2=\varepsilon^{-n/2}\|\rho\|_2$. No $L^2$ limit is possible.
+
+\section{Differentiating across a surface}\label{f:jump-derivative}
+
+Integration by parts against compactly supported tests suggests the definition $(\partial_j T)(\varphi)=-T(\partial_j\varphi)$. Differentiation of a test raises the index in \eqref{f:distribution-estimate} by at most one, so this defines a distribution. When $T=T_f$ and $\partial_j T=T_h$ with $h$ locally integrable, $h$ is called the \emph{weak derivative} of $f$. Not all distributional derivatives are represented by functions. If $b$ is smooth, $(bT)(\varphi)=T(b\varphi)$ makes sense and the usual product rule with $b$ follows by differentiating $b\varphi$. This construction does not define a product of two arbitrary distributions.
+
+For instance $\delta'_a(\varphi)=-\varphi'(a)$ has support $\{a\}$ and order exactly one. In fact $\partial_x^j\delta_a$ needs order $j$: to rule out a bound of order $m<j$, use $\varepsilon^m\psi((x-a)/\varepsilon)$ with $\psi\in C_c^\infty$ and $\psi^{(j)}(0)\ne0$. Its derivatives through order $m$ stay bounded as $\varepsilon\downarrow0$, but its $j$th derivative at $a$ grows like $\varepsilon^{m-j}$. Thus $\sum_{j\geq1}\partial_x^j\delta_j$ on the line gives a distribution of locally finite but globally unbounded order: only finitely many terms meet any compact set.
+
+Let $r$ be a transverse coordinate and $y$ the coordinates along $r=0$. Write $u$ in the two half-spaces as $u_-$ and $u_+$, smooth up to the common plane, and set $[u]=u_+(0,y)-u_-(0,y)$. Integrating $-u\partial_r\varphi$ on the two halves gives the two interior derivatives and the boundary integral $\int [u](y)\varphi(0,y)\,dy$. Thus
+\begin{equation}
+ \partial_r u=(\partial_r u)_{\rm pieces}+[u]\delta(r),\qquad
+ \partial_r^2 u=(\partial_r^2 u)_{\rm pieces}+[\partial_r u]\delta(r)+[u]\delta'(r).
+ \label{f:jump-formula}
+\end{equation}
+A continuous field produces no sheet in its first derivative, but a jump in its slope is a sheet in its second derivative. A tangential derivative creates no such term: its integration by parts does not cross the interface. In one dimension the first formula gives the derivative of the step function $\Theta$ as $\delta_0$, independently of which value was assigned to $\Theta(0)$.
+
+\begin{exercise}[A singular derivative with no jump law]
+On the line show that $\partial_x\log|x|$ is the principal value of $1/x$, that is, the distribution $\varphi\mapsto\lim_{\varepsilon\downarrow0}\int_{|x|>\varepsilon}\varphi(x)/x\,dx$.
+\end{exercise}
+\noindent\emph{Solution.} The logarithm is locally integrable. Integrating $-\log|x|\,\varphi'(x)$ away from $(-\varepsilon,\varepsilon)$ gives the truncated integral plus the boundary term $\log\varepsilon\,[\varphi(\varepsilon)-\varphi(-\varepsilon)]$. That term tends to zero. The truncated integral has a limit: near zero its paired integrand is $(\varphi(x)-\varphi(-x))/x$, bounded by $2\sup|\varphi'|$. Separate integrals of $\varphi(x)/x$ on the two sides need not exist.
+
+\section{Fourier transformation on tests and on fields}\label{f:fourier-convention}
+
+Fourier transformation does not keep compact support. Instead we use the Schwartz space $\mathcal S(\mathbb R^n)$: its elements are smooth and every $\sup_x|x^\alpha\partial^\beta\varphi(x)|$ is finite. These seminorms specify convergence there. Its continuous linear dual $\mathcal S'$ consists of \emph{tempered distributions}; continuity means a bound by finitely many of the Schwartz seminorms. Cutting a Schwartz test off on successively larger balls approximates it in all those seminorms, by rapid decay and the product rule. Thus a tempered distribution is determined by its compact tests. Every polynomially bounded, locally integrable function (with the growth bound outside a ball) gives one, as does $\delta_a$. Local integrability alone is not enough to pair with all rapidly decreasing tests.
+
+We use the following Fourier inversion and Plancherel theorem as an input \cite[Ch.~VII, \S7.1]{HormI}. For $\varphi\in\mathcal S$ the transform is a continuous bijection of $\mathcal S$ onto itself, with transform and inverse
+\begin{equation}
+ \widehat\varphi(\xi)=\int_{\mathbb R^n} e^{-ix\cdot\xi}\varphi(x)\,dx,\qquad
+ \varphi(x)=(2\pi)^{-n}\int_{\mathbb R^n}e^{ix\cdot\xi}\widehat\varphi(\xi)\,d\xi .\label{f:fourier-pair}
+\end{equation}
+With this normalization $\varphi\mapsto(2\pi)^{-n/2}\widehat\varphi$ extends to a \emph{unitary} map on $L^2$, meaning a surjection preserving the inner product. In particular,
+\begin{equation}
+ (u,v)_{L^2}=(2\pi)^{-n}\int\overline{\widehat u(\xi)}\widehat v(\xi)\,d\xi \qquad (u,v\in L^2).\label{f:plancherel}
+\end{equation}
+The $L^2$ transform is obtained by completion; it need not be an absolutely convergent integral. For $T\in\mathcal S'$ define $\widehat T(\varphi)=T(\widehat\varphi)$. This transpose, with no conjugation or inverse, gives the ordinary transform for integrable fields by interchanging the two integrals. In particular $\widehat{\delta_0}=1$ and $\widehat 1=(2\pi)^n\delta_0$. Differentiating the kernel on a test gives $\widehat{\partial_j T}=i\xi_j\widehat T$. In this representation the question whether a weak derivative is square integrable becomes a question about a weighted integral of $|\widehat u|^2$.
+
+\begin{exercise}[Recovering a fundamental solution]
+Find the tempered solution $K$ of $(1-\partial_x^2)K=\delta_0$ on the line and verify its normalization without a transform table.
+\end{exercise}
+\noindent\emph{Solution.} The transformed equation is $(1+\xi^2)\widehat K=1$. Division is legitimate on Schwartz tests because multiplication by $(1+\xi^2)^{-1}$ preserves them. Thus there is at most one solution. Try $K=c e^{-|x|}$: away from zero $K''=K$, and its slope jumps by $-2c$. Equation~\eqref{f:jump-formula} gives $(1-\partial_x^2)K=2c\delta_0$. Taking $c=1/2$ proves existence as well. Although the forcing is confined to one point, this inverse produces a field on the entire line.

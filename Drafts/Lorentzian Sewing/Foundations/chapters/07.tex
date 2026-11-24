@@ -1,0 +1,138 @@
+% !TeX root = ../main.tex
+\chapter{Connections, curvature and geodesics}\label{f:connections}
+
+In the line bundle of Example~\ref{f:circle-line}, a vector can be followed along a path by keeping its coefficient constant in a local unit frame. This works because two such frames differ by a locally constant sign. For a general frame change $z_+=h z_-$, differentiating produces a term $(\mathrm dh)z_-$. A connection compensates for this term. Applied to the tangent bundle, the same construction will specify what it means for a curve to follow its own velocity without turning.
+
+\section{Differentiation independent of the frame}
+
+A connection on $E$ is a $\mathbb K$-linear derivative $\nabla:\Gamma(E)\to\Gamma(T^*M\otimes E)$ satisfying $\nabla(fs)=\mathrm df\otimes s+f\nabla s$. The output assigns to $X_x\in T_xM$ a vector in $E_x$; evaluation on a vector field is written $\nabla_Xs$. In particular $\nabla_{fX}s=f\nabla_Xs$. The rule is local: if $s$ vanishes near $x$, choose a bump function equal to one near $x$ with support where $s=0$ and differentiate its product with $s$. Thus we can compute in a local frame $e$. Writing the derivatives of the frame columns as $\nabla e_j=\sum_i e_i A^i{}_j$ gives
+\[
+ \nabla(e z)=e(\mathrm dz+A z).
+\]
+Every matrix of one-forms $A$ defines such an operator on a product patch. Connections exist globally: take the zero matrices in local frames and sum the resulting local derivatives with a subordinate partition of unity. The derivative of $f$ in the Leibniz rule gets coefficient $\sum_i\chi_i=1$. The difference of two connections has no $\mathrm df$ term and is an $\operatorname{End}(E)$-valued one-form; adding any such form to a connection gives another one.
+
+Suppose $j_-:S\to M_-$ and $j_+:S\to M_+$ are smooth, and $H:j_-^*E_-\to j_+^*E_+$ is a bundle isomorphism over $S$. In pulled-back frames let $z_+=h z_-$ be its action on columns over $S$. A pulled-back connection has local matrix $j_\pm^* A_\pm$, evaluated on $X\in T_yS$ using $(dj_\pm)_y X$. To say that $H$ intertwines the two derivatives is to require
+\[
+ \mathrm d(h z_-)+(j_+^*A_+)h z_-=h(\mathrm dz_-+(j_-^*A_-)z_-)
+\]
+for every local column. Cancelling its derivative and multiplying by $h^{-1}$ gives
+\begin{equation}
+ j_+^*A_+=h(j_-^*A_-)h^{-1}-(\mathrm dh)h^{-1}.\label{f:connection-change}
+\end{equation}
+For two descriptions of the same section on an open overlap both base maps are inclusions. This proves that the pullback prescription is itself independent of frames, since pullback respects products and commutes with $\mathrm d$. For a face diffeomorphism $f:F_-\to F_+$ with inclusions $\iota_\pm$, the maps are $j_-=\iota_-$ and $j_+=\iota_+\circ f$. Now \eqref{f:connection-change} compares only tangential derivatives. A frame map defined on the face has supplied no transverse derivative of $h$.
+
+\begin{exercise}[Comparing two base coordinates]
+On $s>0$ take $j_-(s)=s$, $j_+(s)=s^2=x$, $h=e^{ics}$ and $A_-=i s\,\mathrm ds$ on a complex line, with $c$ real. Find the target potential in its own coordinate.
+
+\emph{Solution.} The pulled-back target potential must be $i(s-c)\,\mathrm ds$. Since $\mathrm dx=2s\,\mathrm ds$, the target potential is $\tfrac i2(1-c/\sqrt{x})\,\mathrm dx$. As a check, $(\mathrm d+A_-)e^{-is^2/2}=0$. On the comparison interval the transformed column is $e^{ics-is^2/2}$; its logarithmic derivative cancels the pulled-back potential.
+\end{exercise}
+
+\section{Parallel transport and horizontal frames}
+
+Along a smooth path $\gamma:[0,1]\to M$, a parallel column solves
+\begin{equation}
+ \dot z(t)=-A_{\gamma(t)}(\dot\gamma(t))z(t).\label{f:parallel-ode}
+\end{equation}
+A linear ODE with smooth coefficients has a unique solution on each compact parameter subinterval in a chart. Subdivide the path into finitely many such intervals and use the transition matrices at their endpoints. Equation~\eqref{f:connection-change} makes the result independent of the subdivision and frames, giving transport $P_\gamma:E_{\gamma(0)}\to E_{\gamma(1)}$. Reversal gives its inverse and concatenation gives composition by uniqueness. Piecewise smooth paths work by concatenation. If the components change by $h$, the transport matrix becomes $h(\gamma(1))P_\gamma h(\gamma(0))^{-1}$; for a loop these are conjugate matrices of the same endomorphism. How should covectors travel? Demand that $\lambda(t)(s(t))$ stay constant whenever $\lambda$ and $s$ travel in parallel. In dual frames $\dot z=-A(\dot\gamma)z$ then forces $\dot\lambda=A(\dot\gamma)^{\mathsf T}\lambda$. Thus the dual connection has matrix $-A^{\mathsf T}$ and its transport is the dual of $P_\gamma^{-1}$, a map of covectors from the initial point to the final one.
+
+There is a corresponding derivative on frames \cite{KN}. On a right principal $G$-bundle a connection form $\omega$ has values in $\mathfrak g$; it returns $\xi$ on the vertical velocity of $p\exp(t\xi)$ at zero and satisfies $R_a^*\omega=\operatorname{Ad}_{a^{-1}}\omega$. Its kernel is a complement to the fiber tangents, the \emph{horizontal} subspace. In the product given by a section $e$, put $A=e^*\omega$. Differentiating $p=e(x)g$ first in $x$, then in $g$, gives
+\[
+ \omega=\operatorname{Ad}_{g^{-1}}A+g^{-1}\mathrm dg .
+\]
+Here $g^{-1}\mathrm dg$ translates a tangent vector to $G$ back to the identity by left multiplication. Conversely this formula constructs $\omega$ from potentials with the principal change-of-section rule $(e k)^*\omega=\operatorname{Ad}_{k^{-1}}A+k^{-1}\mathrm dk$. For the frame bundle take $G=\mathrm{GL}(r,\mathbb K)$: the rule is precisely \eqref{f:connection-change} with $h=k^{-1}$, so every vector bundle connection determines a principal frame connection. For matrix $G$ a horizontal lift satisfies $\dot g=-A(\dot\gamma)g$. Hence in the associated representation $\rho$, transporting $[e(\gamma(0)),w]$ transports its column by $\rho(g(t))$, with $g(0)=1$. Its local derivative has matrix $\rho_* A$. Not every connection on an associated vector bundle must respect a prescribed smaller frame group.
+
+\section{What curvature detects}
+
+\begin{definition}[Curvature]\label{f:curvature}
+For vector fields $X,Y$ let $F(X,Y)s=\nabla_X\nabla_Ys-\nabla_Y\nabla_Xs-\nabla_{[X,Y]}s$. The last term subtracts the commutator already present in differentiating functions. Expanding in a frame cancels all derivatives of the column and leaves
+\[
+ F(X,Y)=(\mathrm dA)(X,Y)+[A(X),A(Y)],\qquad F=\mathrm dA+A\wedge A .
+\]
+Here $\mathrm dA(X,Y)=X(A(Y))-Y(A(X))-A([X,Y])$. Thus $F$ is an $\operatorname{End}(E)$-valued two-form, and the intertwining law for $\nabla$ gives $F_+=h F_-h^{-1}$ on a common base.
+\end{definition}
+
+Transport around all loops based at $p$ gives the \emph{holonomy group} in $\mathrm{GL}(E_p)$. To see curvature in this group, take a coordinate square of side $\epsilon$ based at $p$, traversed first in direction $i$ and then $j$. Near $p$ change components by $h(x)=1+\sum_k A_k(p)(x^k-x^k(p))$. Equation~\eqref{f:connection-change} makes the new $A$ vanish at $p$, so it is $O(\epsilon)$ on the square. Integrating the parallel ODE once around the edges gives $1-\oint A+O(\epsilon^4)$: the first correction to a constant column is $O(\epsilon^2)$ and inserting it in the integral costs a further $O(\epsilon^2)$. By Stokes applied entry by entry, $\oint A=\epsilon^2 F_{ij}(p)+O(\epsilon^3)$, since $A\wedge A$ vanishes at $p$. The frame at $p$ itself was unchanged. Thus curvature, with a minus sign for our parallel equation, is the leading transport per oriented area.
+
+Conversely, if $F=0$, then transport is unchanged by a smooth deformation of paths with fixed endpoints. To see this, pull back the connection to a parameter square $H(t,u)$ and transport the same initial vector in the $t$ direction for each $u$, obtaining $s(t,u)$. The two parameter fields commute, so
+\[
+ \nabla_t\nabla_u s=\nabla_u\nabla_t s+(H^*F)(\partial_t,\partial_u)s=0 .
+\]
+Since $\nabla_u s(0,u)=0$, uniqueness of parallel transport gives $\nabla_u s(1,u)=0$ as well. The final vectors are in one fixed fiber, hence equal. In a coordinate ball this constructs a parallel frame by transporting a basis out from its center; path independence makes its columns parallel in every direction. It does not eliminate holonomy along noncontractible loops. On a product complex line over a circle, $A=i\alpha\,\mathrm d\theta$ in a global unit frame gives $F=0$ but transport $e^{-2\pi i\alpha}$ on one positive circuit. Here $\mathrm d\theta$ is global although the angle is not. In contrast the real line of Example~\ref{f:circle-line} has transport $-1$ with $A=0$ in its unit frames: the transition supplies the sign.
+
+\begin{exercise}[The sign of an infinitesimal loop]
+On a trivial plane bundle take $A=P\,\mathrm dx+Q\,\mathrm dy$ for constant matrices. Traverse a rectangle with sides $a,b$, starting along $+x$, then $+y$. Find the term of order $ab$ in its transport.
+
+\emph{Hint.} The four factors in their order of action give $e^{bQ}e^{aP}e^{-bQ}e^{-aP}$. Their product through degree two is $1-ab[P,Q]$; the minus sign comes from \eqref{f:parallel-ode}. In particular constant matrix coefficients need not give zero curvature.
+\end{exercise}
+
+\section{The connection selected by a metric}
+
+An affine connection is a connection on $TM$. Its torsion is $T(X,Y)=\nabla_XY-\nabla_YX-[X,Y]$, a tensor: the derivatives of functions from the two first-order operations cancel. A pseudo-Riemannian metric $g$ is a smooth symmetric nondegenerate bilinear form on tangent spaces, of fixed signature. Nondegeneracy identifies vectors with covectors by $v^\flat=g(v,\cdot)$; write $\lambda^\sharp$ for the inverse identification, $g^{-1}$ for the resulting pairing on covectors, and $\operatorname{grad} f=(\mathrm df)^\sharp$. Compatibility with $g$ means $Xg(Y,Z)=g(\nabla_XY,Z)+g(Y,\nabla_XZ)$.
+
+\Needspace{8\baselineskip}
+\begin{theorem}[Fundamental theorem of pseudo-Riemannian geometry]
+There is a unique torsion-free connection compatible with $g$, the Levi--Civita connection.\label{f:levi-civita} It is specified by the Koszul formula
+\begin{align*}
+ 2g(\nabla_XY,Z)={}&Xg(Y,Z)+Yg(Z,X)-Zg(X,Y)\\
+ &+g([X,Y],Z)-g([Y,Z],X)+g([Z,X],Y).
+\end{align*}
+\end{theorem}
+\begin{proof}
+Write the compatibility equation for $(X,Y,Z)$ and its two cyclic permutations. Add the first two and subtract the third. Replacing $\nabla_YX$ by $\nabla_XY-[X,Y]$, and likewise for the cyclic pairs, leaves the displayed equality. Thus nondegeneracy gives uniqueness. Conversely call its right-hand side $K(X,Y,Z)$. The bracket product rule makes $K$ linear over functions in $X$ and $Z$; for example the terms $Y(f)g(Z,X)-Z(f)g(X,Y)$ in the metric derivatives of $K(fX,Y,Z)$ cancel the bracket terms $-Y(f)g(X,Z)+Z(f)g(X,Y)$. In the middle slot the extra term is $2X(f)g(Y,Z)$, so raising the last slot of $K/2$ defines a connection. Adding $K(X,Y,Z)$ to $K(X,Z,Y)$ gives $2Xg(Y,Z)$, and subtracting $K(Y,X,Z)$ from $K(X,Y,Z)$ gives $2g([X,Y],Z)$. These are compatibility and zero torsion, respectively.
+\end{proof}
+
+Write $\nabla_{\partial_i}\partial_j=\Gamma^k{}_{ij}\partial_k$, summing repeated indices. Since coordinate brackets vanish, the Koszul formula gives
+\[
+ \Gamma^k{}_{ij}=\tfrac12 g^{km}(\partial_i g_{jm}+\partial_j g_{im}-\partial_m g_{ij}).
+\]
+Our Riemann curvature is the curvature in Definition~\ref{f:curvature} for this connection: $R(\partial_i,\partial_j)\partial_\ell=R^k{}_{\ell i j}\partial_k$, where
+\[
+ R^k{}_{\ell i j}=\partial_i\Gamma^k{}_{j\ell}-\partial_j\Gamma^k{}_{i\ell}
+ +\Gamma^k{}_{im}\Gamma^m{}_{j\ell}-\Gamma^k{}_{jm}\Gamma^m{}_{i\ell} .
+\]
+For instance on the unit sphere, away from the poles, $g=\mathrm du^2+\sin^2 u\,\mathrm d\phi^2$. Here $\Gamma^u{}_{\phi\phi}=-\sin u\cos u$ and $\Gamma^\phi{}_{u\phi}=\Gamma^\phi{}_{\phi u}=\cot u$ are the only nonzero types. Thus $R^u{}_{\phi u\phi}=\partial_u(-\sin u\cos u)-(-\sin u\cos u)\cot u=\sin^2u$. The two contractions used for a scalar field are $\operatorname{Ric}_{\ell j}=R^i{}_{\ell i j}$ and $R=g^{\ell j}\operatorname{Ric}_{\ell j}$, called the Ricci tensor and the scalar curvature. On this sphere the nonzero diagonal Ricci entries are $1$ and $\sin^2 u$; contracting with the inverse metric gives $R=2$. The curvature convention is thus positive on the round sphere.
+
+\section{One-point and two-point exponential coordinates}
+
+A geodesic is a curve with parallel velocity, $\nabla_{\dot\gamma}\dot\gamma=0$, with its parameter called affine. In coordinates it satisfies $\ddot x^k+\Gamma^k{}_{ij}(x)\dot x^i\dot x^j=0$. Compatibility implies that $g(\dot\gamma,\dot\gamma)$ is constant, including when it is zero. Given $p$ and $v\in T_pM$, the second-order ODE has a unique local solution $\gamma_{p,v}$ with these initial data. Define $\exp_p(v)=\gamma_{p,v}(1)$ where the solution exists up to time one. Rescaling time gives $\exp_p(tv)=\gamma_{p,v}(t)$ near $t=0$; hence $(d\exp_p)_0$ is the identity under $T_0(T_pM)\simeq T_pM$. Smooth dependence and the inverse function theorem give a diffeomorphism from a star-shaped neighborhood of zero onto a \emph{normal neighborhood of $p$}. Straight radial lines in these coordinates are geodesics through $p$. This says nothing yet about a pair of points neither of which is $p$.
+
+\begin{exercise}[What do geodesics forget?]
+Suppose two affine connections have the same affinely parametrized geodesics for every initial velocity. What can they still disagree on?
+
+\emph{Solution.} Their difference $C(X,Y)=\widetilde\nabla_XY-\nabla_XY$ is a tensor. On the common geodesic starting with $v$ one has $C(v,v)=0$. Applying this to $v+w$ shows $C(v,w)=-C(w,v)$. Conversely any such alternating $C$ drops out of the geodesic equation but changes the torsion by $2C$. Among torsion-free connections the affinely parametrized geodesics determine the connection.
+\end{exercise}
+
+\begin{theorem}[Convex normal neighborhoods]\label{f:convex-normal}
+On a smooth pseudo-Riemannian manifold without boundary, each point has arbitrarily small open neighborhoods $U$ normal for every $p\in U$, in which every pair $p,q$ is joined by a unique geodesic segment lying entirely in $U$ (with endpoints at parameters $0,1$). Its initial velocity $v=\exp_p^{-1}(q)$ depends smoothly on $(p,q)\in U\times U$.
+\end{theorem}
+
+We use the convex neighborhood theorem for smooth connections here \cite[Ch.~3]{ON}; see also \cite{LeeRM} in the positive-definite case. Smooth dependence of the short branch follows using the endpoint map $(p,v)\mapsto(p,\exp_p v)$. A one-point inverse function theorem alone does not prove convexity. The uniqueness is among segments in $U$, not among ones that leave and reenter it. On a circle, for instance, longer geodesics can wind before reaching the same endpoint.
+
+On such a $U$ let $\gamma$ go from $p$ to $q$ in parameter interval $[0,1]$. The \emph{world function} is the smooth two-point function
+\begin{equation}
+ \sigma_g(q,p)=\tfrac12 g_p(v,v)=\tfrac12\int_0^1 g(\dot\gamma,\dot\gamma)\,\mathrm dt .\label{f:world-function}
+\end{equation}
+Vary the endpoints and denote the variation field by $W$. Torsion freeness lets the two parameter derivatives interchange in the derivative of the energy. Metric compatibility then makes its integrand $g(\nabla_tW,\dot\gamma)=\partial_t g(W,\dot\gamma)-g(W,\nabla_t\dot\gamma)$. The integral is just the endpoint term, so
+\[
+ \operatorname{grad}_q\sigma_g=\dot\gamma(1),\qquad
+ \operatorname{grad}_p\sigma_g=-v,\qquad
+ g_q^{-1}(\mathrm d_q\sigma_g,\mathrm d_q\sigma_g)=2\sigma_g .
+\]
+In Lorentzian signature a timelike interval has negative world function. Null-separated points have zero world function, but its endpoint differential need not vanish there.
+
+The mixed derivatives measure the response of initial velocity to moving the final point. In independent coordinates at $q$ and $p$, set
+\begin{equation}
+ \Delta(q,p)=\frac{\big|\det(-\partial_{q^a}\partial_{p^b}\sigma_g)\big|}
+ {\sqrt{|\det g(q)|}\,\sqrt{|\det g(p)|}} .\label{f:van-vleck}
+\end{equation}
+This is the Van Vleck--Morette determinant on the convex neighborhood; the absolute values make the formula independent of orientation and signature. Indeed $-\partial_{p^b}\sigma_g=g_{bc}(p)v^c$, so the mixed matrix has entries $g_{bc}(p)\,\partial v^c/\partial q^a$. Taking determinants shows that $\Delta=J^{-1}$, where $(\exp_p)^*\mathrm d\mathrm{vol}_g=J\,\mathrm d\mathrm{vol}_{g_p}$: the right-hand density apart from $J$ is constant on $T_pM$. In particular $\Delta(p,p)=1$. In exponential coordinates at $p$, $V=\operatorname{grad}_q\sigma_g$ is the radial field $v^i\partial_{v^i}$; its divergence in the density $J(v)\,\mathrm d\mathrm{vol}_{g_p}$ is $n+V(\log J)$ for $n=\dim M$. Consequently $U_0=\sqrt{\Delta}$ obeys the transport law
+\[
+ 2V(U_0)+(\Box_g\sigma_g-n)U_0=0,\qquad U_0(p,p)=1,
+\]
+where $\Box_g\sigma_g=\operatorname{div}V$ differentiates in $q$. Conversely any smooth solution with this normalization equals $\sqrt{\Delta}$: its ratio to $\sqrt{\Delta}$ is constant along each radial geodesic and tends to one at its origin. This local formula needs neither completeness nor a choice of geodesic at a distant pair of points.
+
+\begin{exercise}[Spreading from the north pole]
+On the unit round sphere, use geodesic polar coordinates about the north pole to compute $\Delta$ for $0<r<\pi$ along the short radial branch. What fails at the antipode?
+
+\emph{Solution.} The tangent-plane density in polar coordinates is $r\,\mathrm dr\,\mathrm d\phi$ while the sphere density is $\sin r\,\mathrm dr\,\mathrm d\phi$. Meridians are unit-speed geodesics, so $J=\sin r/r$ and $\Delta=r/\sin r$ with limit one at zero. At $r=\pi$ all radial directions have the same endpoint; the exponential has singular differential, and this inverse-Jacobian construction no longer applies.
+\end{exercise}

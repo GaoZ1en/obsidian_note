@@ -1,0 +1,168 @@
+\chapter{The covariant phase space and its boundary charges}\label{ch:05}
+The endpoint term in an action variation does more than supply canonical
+momenta. Its change under a second variation tells us whether a proposed
+gauge transformation is a redundancy of a region or changes a measurable
+flux at its boundary. No canonical coordinates on the full space of fields
+are needed to make the test.
+
+\section{From endpoints to a two-form}
+At prescribed cut datum $j$, the \emph{pre-phase space}
+$\widetilde{\mathcal P}_R[j]$ is the space of solutions satisfying the physical
+and prescribed cut conditions, before any identification by gauge. At a
+regular solution its tangent vectors solve the linearized equations and the
+linearized boundary conditions. A spacetime integral can still be a form on
+this space: for instance
+\[
+ \theta_\Sigma(Y)=\int_\Sigma\Theta(\phi;Y)
+      -\sum_F\int_{\partial_F\Sigma}C_F(\phi;Y)
+\]
+is a number linear in the variation $Y$. The sum includes each side face of
+Chapter~\ref{ch:04}. The exterior derivative in \emph{field} space is
+\begin{align}
+ \omega_\Sigma&=\delta\theta_\Sigma,\nonumber\\
+ \omega_\Sigma(Y,Z)&=Y[\theta_\Sigma(Z)]-Z[\theta_\Sigma(Y)]
+                                      -\theta_\Sigma([Y,Z]).
+ \label{eq:05-omega}
+\end{align}
+In particular, $\theta=p\,\delta q$ gives $\omega=\delta p\wedge\delta q$,
+not its negative. The commutator term allows $Y$ and $Z$ to vary from one
+solution to the next. The integrals of $\delta C_F$ enter $\omega_\Sigma$
+with exactly the same minus signs as the $C_F$ enter $\theta_\Sigma$.
+
+Pull the first-variation identity back to the space of solutions. It becomes
+$\delta S_R=\theta_{\Sigma_f}-\theta_{\Sigma_i}$. Taking one more field-space derivative gives
+$0=\delta^2S_R=\omega_{\Sigma_f}-\omega_{\Sigma_i}$. This proof of slice
+independence would have failed had we dropped a physical corner momentum.
+For example, return to the string with a massive endpoint $B$ in
+Chapter~\ref{ch:04}, holding the other endpoint fixed. For two perturbations
+$u,v$, the bulk two-form is $\int(\dot u v-\dot v u)\,dx$. Differentiate it
+in time and use $\ddot u=\partial_x^2u-m^2u$ and the same equation for $v$.
+The mass terms cancel, and spatial integration by parts leaves
+$(\partial_n u)v-(\partial_n v)u$ at $B$. The endpoint equation converts
+this into $-d[\kappa(\dot u v-\dot v u)]/dt$. Thus the bulk form alone
+changes by exactly the amount stored at the endpoint.
+
+The same endpoint argument tells us what changes when we open the cut.
+There the first variation
+has an additional one-form $\langle\Pi,\delta q\rangle_\Gamma$, so
+\[
+ (\omega_{\Sigma_f}-\omega_{\Sigma_i})(Y,Z)
+ =-\langle Y\Pi,Zq\rangle_\Gamma+\langle Z\Pi,Yq\rangle_\Gamma.
+\]
+Here the integrated potentials are those of the opened action. Flux through
+one region need not vanish. On matched solutions the two fluxes cancel,
+since both variations preserve the common trace and the vanishing sum of
+outward responses. Closedness, $\delta\omega_\Sigma=0$, follows from its
+definition even before one asks about slice independence. A closed two-form
+with a possible kernel is called \emph{presymplectic}. Only after identifying
+its null directions and, when regular, taking the appropriate quotient does
+one obtain a symplectic physical phase space.
+
+\section{An action symmetry and the sign of its generator}
+Let $X$ be an infinitesimal transformation tangent to the specified domain,
+with any external symmetry parameter held fixed when fields vary. Test it as
+an action symmetry \emph{off shell}:
+\[
+ \iota_X\delta S_R=\alpha_{X,\Sigma_f}-\alpha_{X,\Sigma_i}+\beta_X,
+ \qquad \delta\beta_X=0.
+\]
+The endpoint functional $\alpha_X$ includes contributions from a changed
+boundary Lagrangian or corner. It need not be zero merely because the field
+equations are invariant. Comparing this identity with the on-shell variation
+gives the Noether generator \cite{HW}
+\begin{equation}
+ H_{X,\Sigma}=\iota_X\theta_\Sigma-\alpha_{X,\Sigma}.
+ \label{eq:05-noether}
+\end{equation}
+It has equal endpoint values if $\beta_X=0$; a nonzero field-independent
+$\beta_X$ shifts their difference by a prescribed number. To obtain a
+Hamiltonian vector field, the transformation must also have a differentiable
+charge with the chosen boundary data. For the representative of the potential
+being used, the endpoint check is
+$\mathcal L_X\theta_\Sigma=\delta\alpha_{X,\Sigma}$ on solution variations
+(including the corner). Cartan's identity then fixes the slot and the sign:
+\[
+ \delta H_{X,\Sigma}=
+ \mathcal L_X\theta_\Sigma-\iota_X\delta\theta_\Sigma-\delta\alpha_{X,\Sigma}
+ =-\iota_X\omega_\Sigma,\qquad
+ \delta H_{X,\Sigma}(Y)=\omega_\Sigma(Y,X).
+\]
+If the endpoint check leaves a nonzero one-form, the stated charge does not
+generate $X$ with this potential and these boundary data. The test is local
+to each slice; an identity for the difference of two endpoints is not by
+itself this test.
+
+For example, a free particle with $L=m\dot q^2/2$ has the boost $Xq=vt$.
+Off shell $XL=mv\dot q=d(mvq)/dt$, so $\alpha_X=mvq$. Since
+$Xp=mv$ and $\mathcal L_X(p\,\delta q)=mv\,\delta q$ at fixed $t$,
+\eqref{eq:05-noether} gives $H_X=v(tp-mq)$. Directly,
+$\omega(Y,X)=v(t\,Yp-m\,Yq)$. The term $-mvq$ is what generates the change
+of momentum; $vtp$ alone would only generate the change of position.
+
+\section{Gauss' law and a charged cut}
+Take source-free Maxwell theory on an ultrastatic slab,
+$g=-dt^2+h_{ij}dx^i dx^j$, with the spatial metric fixed. Vary
+$L=-F_{\mu\nu}F^{\mu\nu}\epsilon/4$, $F=dA$. Antisymmetry gives
+\[
+ -F^{\mu\nu}\nabla_\mu\delta A_\nu
+ =(\nabla_\mu F^{\mu\nu})\delta A_\nu
+     -\nabla_\mu(F^{\mu\nu}\delta A_\nu).
+\]
+Use walls with no corner kinetic term here, for instance fixed tangential
+$A$ on a physical wall; take gauge parameters to vanish there. Define
+$E^i=F^{i0}=h^{ij}F_{0j}$, so that $-F^{0i}\delta A_i=E^i\delta A_i$ is
+the \emph{final}-slice coefficient. With $dV_h$ the spatial volume measure,
+\[
+ \theta_\Sigma=\int_\Sigma E^i\delta A_i\,dV_h,
+ \qquad \omega_\Sigma=\int_\Sigma\delta E^i\wedge\delta A_i\,dV_h,
+ \qquad D_iE^i=0.
+\]
+The last equation is the time component of Maxwell's equations; $D_i$ is
+the connection of $h$. The gauge transformation $X_\lambda A=d\lambda$
+leaves $F$, and hence $\theta_\Sigma$, invariant for fixed $\lambda$;
+$\alpha_\lambda=0$. Integrating its generator by parts gives
+\begin{align*}
+ H_{\lambda,\Sigma}
+ &=\int_\Sigma E^i D_i\lambda\,dV_h
+ =-\int_\Sigma\lambda D_iE^i\,dV_h
+    +\int_{\partial\Sigma}\lambda E_\perp\,dS,\\
+ \omega_\Sigma(Y,X_\lambda)
+ &=\int_{\partial\Sigma}\lambda\,Y E_\perp\,dS
+ \quad\text{on the linearized Gauss constraint}.
+\end{align*}
+Here $E_\perp=r_iE^i$, with $r$ the \emph{outward} unit normal to
+$\partial\Sigma$ within $\Sigma$. For a transformation preserving the boundary
+problem, vanishing trace of $\lambda$ on every boundary component is
+sufficient for a proper gauge variation: it lies in the
+kernel and carries no boundary charge. At a cut $S=\Gamma\cap\Sigma$ an
+allowed $\lambda$ with nonzero trace can instead generate the charge
+$Q_\lambda=\int_S\lambda E_\perp\,dS$ if that flux can vary. Not every
+nonzero parameter gives a nontrivial generator. For example, a spatial
+constant has $d_\Sigma\lambda=0$ and sees only the total flux through the
+whole closed boundary, which vanishes by Gauss' law. Also, a transformation
+that changes prescribed data is not tangent to that fixed-$j$ problem: it
+may act between fibers in the opened family. A slice charge there need not
+be conserved in the presence of flux.
+
+For a source-free join the outward electric fluxes on the two copies of $S$
+are opposite. Equal gauge parameters on both sides have zero \emph{sum} of
+cut charges; the regional charge was not an error to be discarded in advance.
+Nor does a surface integral by itself put independent fields at the cut. To
+see what the latter choice entails, introduce a boundary coordinate $u$ and
+an independent momentum density $p$, adding $\int_S p\,\delta u$ to
+$\theta_\Sigma$. If $X_\lambda u=\lambda|_S$ and $X_\lambda p=0$, the new
+cut generator on Gauss data is $\int_S\lambda(E_\perp dS+p)$. Imposing
+$p=-E_\perp dS$ makes this diagonal transformation null on the constraint
+surface. We added variables, a symmetry action, and a constraint. None of
+these follows just by integrating the original bulk Gauss law by parts.
+
+\begin{exercise}
+In one spatial dimension take $h=dx^2$ on $[0,L]$ and set $A_t=0$ at the
+endpoints. Set $a=\int_0^L A_x\,dx$. What charge generates time-independent
+endpoint gauge parameters, and what happens if the endpoint values agree?
+\end{exercise}
+\noindent\emph{Answer.} Gauss' law sets $E^x=e$ independent of $x$, giving
+$\theta=e\,\delta a$. The transformation shifts $a$ by
+$\lambda(L)-\lambda(0)$, so $H=e[\lambda(L)-\lambda(0)]$. Equal values give
+zero even if neither value vanishes. The minus sign at the left endpoint is
+its outward orientation, not a sign assigned to its gauge parameter.

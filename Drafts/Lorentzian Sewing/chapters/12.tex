@@ -1,0 +1,242 @@
+\chapter{Perturbations about a sewn solution}\label{ch:12}
+Send in two weak pulses. A linear field gives the sum of the two signals,
+but an interacting field can respond to their overlap. The first coefficient
+sensitive to that overlap is a mixed derivative with respect to the source
+strengths. Its calculation makes a good test of sewing: the pulses, the
+vertex where they meet, and the detector need not be on the same side. We
+will compute the coefficient twice, first from a classical initial-value
+problem and then as a tree term of finite-time quantum evolution.
+
+\section{Choosing the background and the free problem}
+Let $\bar\phi$ be a solution on the whole slab, or a matched regional pair
+proved to assemble to such a solution. Fix the outer data and geometric
+sector. Write $\phi=\bar\phi+\eta$ in a field chart. A source expansion
+will vary the bulk driving force while holding initial data fixed. Thus the
+response $\eta$ has zero incoming Cauchy data, although the background
+need not have zero data. With the exterior conditions held fixed, and for
+variations supported away from the caps, the first variation of the joined
+action vanishes on $\bar\phi$. This includes the cancellation of its two
+outward responses. Otherwise the proposed fluctuation theory would start
+with a source on the seam even before the pulses are sent.
+
+The quadratic action is one half of the second variation evaluated twice
+on $\eta$; its operator is the Jacobi operator at $\bar\phi$. Its domain includes the linearized transmission and
+outer conditions. Higher variations give interaction vertices, including
+any allowed physical boundary vertices. Linearizing independently around
+two convenient regional vacua need not give these operators: their fields
+or normal momenta might not be the traces of one solution. For a gauge
+theory a Green operator may require a gauge choice; the external
+observables must still descend to the physical theory of
+Chapter~\ref{ch:11}. We now choose a scalar self-interaction for which the
+mixed response can be found without any gauge assumption.
+
+Use a fixed background metric, $P=\Box-m^2-\xi R$, and add to the free
+action the terms
+\begin{equation}
+ -\int_M\left(\frac{\lambda}{3!}\chi\phi^3+j\phi\right)dV .
+ \label{eq:12-source-action}
+\end{equation}
+Here $\chi$ is smooth, $j$ is an applied bulk source, and $\lambda$ counts
+cubic vertices. Use compact switching where end effects or spatial support
+matter. The action sign fixes the equation
+$P\phi-\lambda\chi\phi^2/2=j$. Suppose $\bar\phi$ solves it at $j=j_0$,
+with the transparent scalar matching of Chapter~\ref{ch:04}. For
+$j=j_0+s f+r h$ the \emph{exact} equation for the fluctuation is
+\begin{equation}
+ P_{\bar\phi}\eta=s f+r h+\tfrac{\lambda}{2}\chi\eta^2,
+ \qquad P_{\bar\phi}=P-\lambda\chi\bar\phi .
+ \label{eq:12-jacobi}
+\end{equation}
+The term linear in $\eta$ from expanding the interaction belongs to the
+free operator about this solution. The quadratic coefficient is
+$\tfrac12\int\eta P_{\bar\phi}\eta\,dV$ when the integrations by parts
+have no uncancelled surface terms; the remaining interaction is cubic in
+$\eta$. Since the interaction in \eqref{eq:12-source-action} contains no
+derivatives, it does not change the scalar trace or the outward normal
+momentum. This is one reason for the choice of model.
+
+\section{The mixed response and its regional construction}
+Let $G_R^{\bar\phi}$ be the retarded inverse of $P_{\bar\phi}$ on this
+problem. Assume the finite-time initial-boundary problem is well posed for
+the smooth sources used here and has the requisite derivatives at zero;
+alternatively read the following as a formal recursion in $s,r$ with a
+well-defined linear inverse. Write $u_f=\partial_s\eta|_0$,
+$u_h=\partial_r\eta|_0$, $w_{fh}=\partial_s\partial_r\eta|_0$.
+Differentiating \eqref{eq:12-jacobi} and imposing zero initial data at each
+order gives
+\begin{align}
+ u_f&=G_R^{\bar\phi} f,\qquad u_h=G_R^{\bar\phi}h,\nonumber\\
+ P_{\bar\phi}w_{fh}&=\lambda\chi u_f u_h,\qquad
+ w_{fh}=\lambda G_R^{\bar\phi}\!\left(\chi u_f u_h\right).
+ \label{eq:12-response}
+\end{align}
+There are two ways to assign the incoming derivatives to the two factors
+of $\eta^2$. They cancel the $1/2$ in its coefficient. Thus the coefficient
+of $sr$ in $\eta$ is $w_{fh}$, whereas the coefficient of $s^2$ alone is
+$\lambda G_R^{\bar\phi}(\chi u_f^2)/2$. The expression retains the
+background dependence of the inverse; it is not an assertion that the
+background is of order zero in an independent expansion in $\lambda$.
+
+For a numerical sign and normalization check, take a massless flat patch,
+$\bar\phi=0$, and $\chi=f=h=1$ in the causal past of the observation
+between the initial cap and elapsed time $T$. Cutoffs outside that domain
+do not change this retarded calculation. With zero initial perturbation
+the solution there has no spatial dependence. Its first derivative is
+$u_f(T)=u_h(T)=-T^2/2$, because $P=-\partial_T^2$ on this field. The
+second derivative is
+\[
+ w_{fh}(T)=-\frac{\lambda}{4}\int_0^T(T-t)t^4\,dt
+          =-\frac{\lambda T^6}{120} .
+\]
+In particular the nonlinear signal is not obtained by simply multiplying
+the two first-order readings at the detector. Their product acts as a new
+source; it must propagate from its point of formation to the detector.
+
+To reproduce \eqref{eq:12-response} from regional data, first compute
+$u_f,u_h$ by solving the linearized response problem on the pieces. On a
+timelike scalar cut this means varying their common boundary history until
+the two outward normal responses cancel. Do the same for the source
+$\lambda\chi u_f u_h$ at the next step. Why should the result equal a
+whole-slab response? For this scalar, continuity kills a delta derivative
+in the wave operator of a piecewise field; equality of the two normal
+derivatives in a common signed coordinate kills the delta itself. The
+piecewise field then solves the whole inhomogeneous equation weakly. With
+the prescribed past and outer data, uniqueness in the solution class gives
+the claimed response. This uses the reconstruction and Green-operator
+hypotheses of Chapters~\ref{ch:07} and~\ref{ch:08}; it is not a rule for
+manipulating Heaviside functions times quantum fields.
+
+There is a useful way to compare the two computations directly without
+placing a singular Green kernel on the cut. Smear the output with a smooth
+detector profile $k$. By adjointness of retarded and advanced inverses,
+\begin{equation}
+ \int_M k\,w_{fh}\,dV
+ =\lambda\sum_{a=1,2}\int_{M_a}
+ (G_A^{\bar\phi}k)\,\chi\,u_f u_h\,dV .
+ \label{eq:12-sewn-tree}
+\end{equation}
+The restriction to each piece is now an integral of smooth fields. The
+advanced solution carries the detector profile back to the vertex; the
+retarded solutions carry the sources forward. If $f$ and $h$ lie in
+different pieces, replacing the transmitted fields by independently
+reflecting fields can set the overlap to zero. With the correctly joined
+Green operators the two integrals instead add to the whole answer, without
+an independent interaction assigned to the artificial wall. Were the
+interface equation itself nonlinear, differentiating it would produce an
+additional inhomogeneous interface condition for $w_{fh}$; it is absent
+here by the particular action and domain.
+
+\section{Finite-time evolution and the same tree}
+Choose the same free fluctuation problem, with an admissible state if an
+expectation is wanted. Write $\widehat\eta_I$ for the interaction-picture
+free field. For this nondifferentiated potential the interaction Hamiltonian
+has the opposite sign to the added Lagrangian density. For a foliation with
+$dV=N\,dt\,d\Sigma_t$ its insertions are
+\[
+ V_I(t)=\int_{\Sigma_t} N\,d\Sigma_t\left[
+  \frac{\lambda}{3!}\chi\, :\widehat\eta_I^3:
+     +(s f+r h)\widehat\eta_I\right].
+\]
+The colons denote Wick products in a specified subtraction. In the field
+theory $V_I(t)$ denotes an operator-valued distribution in time obtained
+from spacetime insertions, integrated with smooth switching; the notation
+does not assert that a sharp-time Wick cube is an operator on a Hilbert
+space. No stationary Hamiltonian or choice of particles at infinity is
+needed: the free linear evolution identifies the slice algebras. With
+$\hbar=1$, the Dyson series on the finite slab is
+\begin{align}
+ U(t_f,t_i)&=\mathcal T\exp\!\left(-i\int_{t_i}^{t_f} V_I(t)\,dt\right)
+ \nonumber\\
+ &=\mathbf 1-i\int_{t_i}^{t_f}V_I(t)\,dt
+ -\frac{1}{2!}\int_{t_i}^{t_f}dt\int_{t_i}^{t_f}dt'\,
+   \mathcal T\{V_I(t)V_I(t')\}+\cdots .
+ \label{eq:12-dyson}
+\end{align}
+Later times stand on the left. In a field theory this is an order-by-order
+formula for smeared, renormalized insertions, not an operator-norm
+convergence claim. One may use switching supported in the interior of the
+slab. If an actual time-dependent Hamiltonian evolution is defined,
+$U(t_f,t_i)=U(t_f,t_*)U(t_*,t_i)$ follows by splitting the ordered
+integration domains. For local perturbations the corresponding statement
+is causal factorization for suitably ordered supports. Neither operation
+makes two spatial regions independent, and neither takes an infinite-time
+scattering limit \cite{FR}.
+
+The quantity appropriate to our detector is a response in the specified
+initial state, namely the expectation of
+$U(t_x,t_i)^*\widehat\eta_I(x)U(t_x,t_i)$, understood after smearing.
+At first order in $V_I$, its change is
+$i\int_{t_i}^{t_x}[V_I(t),\widehat\eta_I(x)]\,dt$. For the source term,
+$i[\widehat\eta_I(y),\widehat\eta_I(x)]=E_{\bar\phi}(x,y)\mathbf1$.
+With retarded ordering the result is $u=G_R^{\bar\phi}(s f+r h)$.
+All higher source commutators of this c-number vanish: in the free theory
+a source simply displaces the field by $u$. To keep that displacement
+exact while counting cubic vertices, factor out the evolution $U_j$
+generated by the source alone, writing $U=U_j U_{\rm rel}$. The cubic
+insertion in $U_{\rm rel}$ is then conjugated by $U_j$: its field at $y$
+is $\widehat\eta_I(y)+u(y)$. Use one Wick prescription for the powers,
+so that the ordinary binomial rule holds for a shift by a smooth function.
+The commutator needed at first cubic order is
+\[
+ i[:\!(\widehat\eta_I(y)+u(y))^3\!:,\widehat\eta_I(x)]
+ =3 E_{\bar\phi}(x,y):\!(\widehat\eta_I(y)+u(y))^2\!: .
+\]
+The three identical terms cancel a factor of three in $3!$. With retarded
+ordering the one-vertex correction to the mean field is therefore
+\begin{equation}
+ \frac{\lambda}{2}\int_M G_R^{\bar\phi}(x,y)\chi(y)
+  \left\langle :\!\big(\widehat\eta_I(y)+u(y)\big)^2\!:\right\rangle dV_y .
+ \label{eq:12-displaced-tree}
+\end{equation}
+Equivalently, insert the source-only solution into the quadratic source on
+the right side of the renormalized field equation at first vertex order.
+For a centered free state, the term quadratic in source amplitudes is just
+$u(y)^2$. Its mixed derivative is $2u_fu_h$, so
+\eqref{eq:12-displaced-tree} reproduces \eqref{eq:12-response} with both
+its sign and its factor of $\lambda$. A local expectation of the Wick
+square, if nonzero in the chosen subtraction, is source independent at
+this order. It is not part of the two-pulse response.
+
+\section{What survives the comparison at the next order?}
+A classical response graph is drawn with its output at the root and a
+retarded line for each inversion of $P_{\bar\phi}$. Equation
+\eqref{eq:12-sewn-tree} has one three-legged vertex and no closed chain.
+Iterating the classical equation gives more vertices but still trees. In a
+quantum calculation two fluctuations at vertices can instead be contracted
+with each other. Two lines joining the same pair of vertices already make
+one loop. The distinction is not the power of $\lambda$: two cubic
+vertices can occur both in a tree and in a loop. For example, with $n$
+vertices and $I$ internal lines a connected graph has $L=I-n+1$ independent
+loops. One way to keep the counting straight is to expand a connected
+functional with external classical fields held fixed: internal contractions
+carry $\hbar$, action insertions carry $1/\hbar$, and the overall
+$\hbar$ multiplying the connected logarithm gives $\hbar^L$. The tree
+response is of order $\hbar^0$ in this counting.
+
+In a centered quasifree reference state Wick's rule reduces free-field
+expectations in the Dyson expansion to pair contractions
+$G_F(x,y)=\langle\mathcal T\widehat\eta_I(x)\widehat\eta_I(y)\rangle$,
+without a further factor of $i$, once the coincident products are defined.
+For a general initial state higher connected correlations are additional
+data. The time-ordered contraction is not the retarded Green operator used
+in a classical response. Even away from coincident vertices, an ordinary
+quantum correlator computed in independently chosen regional states need
+not have the correct cross contraction. At coincidence the product of two
+lines in a loop can also require a local extension. Agreement of the
+transmitted Hessian and all the classical vertices gives the tree response
+derived here; agreement of a quantum coefficient further requires the
+chosen state's contractions, the same operator and subtraction
+normalizations, and compatible time-ordered products including contact
+terms. Chapter~\ref{ch:13} works out the first example where a genuine
+extension choice enters. The one-vertex calculation supplies a comparison
+at that order, not an all-orders commutation of quantization with sewing.
+
+\begin{exercise}
+Couple a third source $b\,l$ to the same cubic problem. Derive the fully
+mixed third derivative of the retarded classical field at zero source in
+terms of the first responses and $w_{fh}$ of \eqref{eq:12-response}. How
+many distinct terms remain when the three source labels are different?
+\end{exercise}
+\noindent\emph{Hint.} Differentiate $\eta^2$ three times at $\eta=0$.
+One factor must receive one derivative, the other two. Pair the two possible
+orders of these factors before applying $G_R^{\bar\phi}$.

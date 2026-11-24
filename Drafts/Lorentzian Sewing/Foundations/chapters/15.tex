@@ -1,0 +1,378 @@
+% !TeX root = ../main.tex
+\chapter{Singular directions and two-point functions}\label{f:microlocal}
+
+A delta function on a sheet is singular at every point of the sheet. Yet a
+probe moving across the sheet can register a perfectly well-defined impulse,
+whereas a probe confined to the sheet would be asked to sample that impulse
+at zero distance for its entire history. Singular support alone does not
+distinguish the two measurements. We need to know in which directions a
+localized field carries arbitrarily high frequencies.
+
+\section{A Fourier test with two localizations}
+Let $u$ be a distribution on an open subset of $\mathbb R^n$. Localize it
+first in position: take a smooth compactly supported cutoff $\chi$ equal to
+one on a neighborhood of $x_0$. Then
+\[
+  \widehat{\chi u}(\xi)=\langle u,\chi(x)e^{-ix\cdot\xi}\rangle
+\]
+is a smooth function of at most polynomial growth. Indeed the test function
+in this pairing has fixed compact support, and differentiating it a finite
+number of times in $x$ costs at most a polynomial in $\xi$. If $u$ is
+smooth on the support of $\chi$, integration by parts gives rapid decay in
+all directions. Conversely, rapid decay in all directions allows Fourier
+inversion after multiplication by every monomial $(i\xi)^\alpha$; hence
+$\chi u$ is smooth. The second localization keeps only directions in an
+open cone $\Gamma$: if $\xi\in\Gamma$, so is $a\xi$ for every $a>0$.
+One ray by itself is not an open cone in dimension greater than one.
+
+\begin{definition}\label{f:wf-test}
+A pair $(x_0,\xi_0)$, $\xi_0\ne0$, is \emph{regular for $u$} if there
+exist such a cutoff $\chi$ and an open cone $\Gamma$ containing $\xi_0$
+for which, for every nonnegative integer $N$,
+\begin{equation}
+ \sup_{\xi\in\Gamma}(1+|\xi|)^N|\widehat{\chi u}(\xi)|<\infty .
+ \label{f:wf-decay}
+\end{equation}
+The complementary pairs form the \emph{wavefront set} $\operatorname{WF}(u)$.
+It is closed in the cotangent bundle with the zero section removed, and
+is invariant under positive rescaling of the covector.
+\end{definition}
+
+The same cutoff and cone work for nearby pairs, which explains closedness.
+A more useful fact is that one can shrink the position neighborhood even
+when this changes the Fourier transform everywhere. If $\psi$ is supported
+where $\chi=1$, the transform of $\psi u$ is the convolution of
+$\widehat\psi$ with $\widehat{\chi u}$, divided by $(2\pi)^n$.
+Take a smaller cone whose unit directions have closure inside $\Gamma$.
+For $\xi$ in this cone, split the convolution integral over $\eta$ into
+$\eta\in\Gamma$ and its complement. In the first part use
+$1+|\xi|\le(1+|\xi-\eta|)(1+|\eta|)$: every power of the second factor
+can be absorbed by \eqref{f:wf-decay}, and $\widehat\psi$ is rapidly
+decreasing. In the second part angular separation gives
+$|\xi-\eta|\ge c(|\xi|+|\eta|)$ for some $c>0$. There the decay of
+$\widehat\psi(\xi-\eta)$ absorbs both the polynomial growth of
+$\widehat{\chi u}(\eta)$ and any desired power of $|\xi|$.
+
+\begin{proposition}
+The projection of $\operatorname{WF}(u)$ onto the base is the ordinary
+singular support of $u$.
+\end{proposition}
+\begin{proof}
+A smooth neighborhood supplies a single cutoff good in all directions.
+Conversely, if no direction over $x_0$ is singular, cover the unit sphere
+by finitely many of the \emph{smaller} cones just described. Choose one
+cutoff equal to one near $x_0$ and supported where all the corresponding
+position cutoffs are one. Its transform is rapidly decreasing on each of
+the finitely many cones, hence everywhere. Fourier inversion now gives a
+smooth representative near $x_0$.
+\end{proof}
+
+\section{A sheet and a one-sided singularity}
+In coordinates $(y,s)\in\mathbb R^{n-1}\times\mathbb R$, the distribution
+$\delta(s)$ acts by integrating a test function over $s=0$. With dual
+coordinates $(\eta,\tau)$ one has
+\[
+ \widehat{\chi\delta(s)}(\eta,\tau)
+    =\int e^{-iy\cdot\eta}\chi(y,0)\,\mathrm{d}y .
+\]
+In a cone with $|\eta|\ge c|(\eta,\tau)|$, rapid decay follows by
+integrating in $y$. In contrast, when $\chi$ equals one near a point of
+the sheet its restriction to the sheet is not identically zero. Its
+transform is nonzero at some fixed $\eta_*$; the sequence
+$(\eta_*,\tau)$ tends in direction to either normal ray as
+$\tau\to\pm\infty$, without any decay. Thus the wavefront set consists
+precisely of $(y,0;0,\tau)$ with $\tau\ne0$. The two signs matter.
+
+A distribution can have just one sign even at a point singularity.
+Set $b_\pm(x)=(x\pm i0)^{-1}$, the limits in distributions of
+$(x\pm i\epsilon)^{-1}$ as $\epsilon\downarrow0$. Their real part tends
+to the principal value of $1/x$; their imaginary parts tend to
+$\mp\pi\delta_0$, since $\epsilon/(x^2+\epsilon^2)$ has integral $\pi$
+and concentrates at zero. To find the singular directions, use the actual
+Fourier sign, not the sign of the imaginary part. For instance
+\[
+  (x+i\epsilon)^{-1}=-i\int_0^\infty e^{ipx-\epsilon p}\,\mathrm{d}p.
+\]
+The conjugate formula has $+i$ and $e^{-ipx}$. With forward phase
+$e^{-ix\xi}$ and inverse factor $1/(2\pi)$ this gives
+\begin{equation}
+ \widehat b_+(\xi)=-2\pi i\,\mathbf 1_{\xi>0},\qquad
+ \widehat b_-(\xi)= 2\pi i\,\mathbf 1_{\xi<0} .
+ \label{f:wf-bv}
+\end{equation}
+These are transforms of the \emph{unlocalized} distributions. To perform
+the defining test, multiply by $\chi$ and convolve. The answer for $b_+$
+is $-i\int_{-\infty}^\xi\widehat\chi(v)\,\mathrm{d}v$. It decreases
+rapidly toward $-\infty$ but tends to $-2\pi i\chi(0)$ toward $+\infty$.
+The answer for $b_-$ is $i\int_\xi^\infty\widehat\chi(v)\,\mathrm{d}v$.
+Consequently $\operatorname{WF}(b_\pm)=\{(0,\xi):\ \pm\xi>0\}$. Although
+both singular supports are $\{0\}$, the singular frequencies are disjoint.
+
+\begin{exercise}
+Determine the two limiting high-frequency values of
+$\widehat{\chi\,\mathrm{pv}(1/x)}$ when $\chi=1$ near zero. Do the same
+for $\chi\delta_0$. Why is the singularity of neither distribution
+one-sided?
+\end{exercise}
+\noindent\emph{Hint.} Take the half-sum of $b_+$ and $b_-$ in the first
+case and $(b_--b_+)/(2\pi i)$ in the second. On the positive ray the
+answers tend to $-i\pi$ and $1$, respectively; now reverse the ray.
+
+\section{Restriction and multiplication as pullbacks}
+For a smooth map $F:Y\to X$, the transpose of the differential sends a
+covector $k$ at $F(y)$ to $dF_y^T k$ at $y$. A rapid phase on $X$ may
+cease to oscillate after composition with $F$: its new differential can
+be zero. Define the set of offending directions of the map by
+\[
+ N_F=\{(F(y),k):k\ne0,\ dF_y^Tk=0\}.
+\]
+For an embedding this is its nonzero conormal bundle: its covectors
+annihilate the tangent space of the embedded submanifold.
+
+\begin{theorem}[H\"ormander's pullback theorem, smooth manifolds \cite{HormI}]
+\label{f:wf-pullback}
+If $u$ is a distribution on $X$ and $N_F\cap\operatorname{WF}(u)$ is
+empty, the distributional pullback $F^*u$ exists canonically, agrees
+with composition on smooth functions, and satisfies
+\[
+ \operatorname{WF}(F^*u)\subset
+ \{(y,dF_y^Tk):(F(y),k)\in\operatorname{WF}(u)\}.
+\]
+Here distributions are scalar, acting on test densities. For a
+diffeomorphism the inclusion is equality, by applying the theorem to
+the inverse.
+\end{theorem}
+
+The transformation law also explains why these directions are covectors
+rather than vectors. In coordinates the oscillatory factor before Fourier
+transformation on $Y$ is $e^{i F(y)\cdot k}$; its new Fourier phase has
+differential $dF_y^Tk-\eta$. Directions separated from the possible
+stationary ones can be estimated by integration by parts. In particular,
+straightening a smooth sheet by a diffeomorphism turns the calculation for
+$\delta(s)$ into the intrinsic statement: a nonvanishing smooth density
+of delta mass on a sheet has exactly its nonzero conormals as wavefront
+set. Smooth nonzero density factors do not change this conclusion.
+
+For multiplication use the diagonal map $d:x\mapsto(x,x)$ and set
+$uv=d^*(u\otimes v)$. Its transpose sends $(k,l)$ to $k+l$.
+The tensor-product wavefront estimate allows a singular covector from
+either factor alone (zero in the other slot), or one from each. Thus a
+sufficient test is that no $(x,k)\in\operatorname{WF}(u)$ have
+$(x,-k)\in\operatorname{WF}(v)$. In particular $b_+^2$ passes, whereas
+$b_+b_-$ does not. The latter's common-width regularizations give
+$1/(x^2+\epsilon^2)$, with pairing asymptotic to
+$\pi\psi(0)/\epsilon$ on a test $\psi$ with $\psi(0)\ne0$. A failed
+sufficient test is not a general impossibility theorem: the square of a
+bounded step function, for example, is defined by ordinary almost
+everywhere multiplication.
+
+For a kernel $K(x,y)$ it is useful to record $(x,k;y,l)$ in its
+\emph{primed} relation when $(x,k;y,-l)\in\operatorname{WF}(K)$. Then the
+delta kernel of the identity relates a covector to itself. There is a
+simple composition rule when every singular pair of both kernels has two
+nonzero entries. For $K(x,y),L(y,z)$ assume also that the projection of
+their joint support in $(x,y,z)$ onto $(x,z)$ is proper (compact sets
+have compact inverse images there). Multiply their lifts to the triple
+space and integrate in $y$ with the chosen smooth density. Cancellation in
+the product test cannot occur: a singularity from $K$ has nonzero $x$
+covector, one from $L$ has nonzero $z$ covector. Under integration only
+singular directions with zero \emph{total} $y$ covector can remain. The
+primed relation of the result is therefore contained in the composition
+of the two primed relations \cite{HormI}. Dropping the support assumption
+can instead leave a divergent integral even for smooth kernels.
+
+\begin{exercise}
+Pull the sheet $\delta(s)$ in the $(y,s)$ plane back by the curves
+$v\mapsto(v,av)$ for $a\ne0$ and $v\mapsto(v,v^2)$. Where does the test
+fail? For the second curve, try a smooth approximation
+$\delta_\epsilon(s)=\epsilon^{-1}\rho(s/\epsilon)$ with $\rho\ge0$,
+$\rho(0)>0$, compact support and unit integral.
+\end{exercise}
+\noindent\emph{Solution.} The transverse pullback is
+$|a|^{-1}\delta(v)$. At the tangency the conormal $\mathrm{d}s$ pulls
+back to zero. Setting $v=\sqrt\epsilon\,w$ in the regularized pairing
+gives leading term $\epsilon^{-1/2}\psi(0)\int\rho(w^2)\,\mathrm{d}w$.
+The transverse formula has no limiting analogue here.
+
+\section{Which singularities can a wave transport?}
+Now take $P=\Box_g-m^2-\xi R$ for a real scalar on a smooth Lorentzian
+spacetime, with $\Box_g=\nabla^a\nabla_a$, $R$ the scalar curvature and
+$\xi$ a constant curvature coupling. Its characteristic covectors are the
+nonzero zeros of
+$p(x,k)=g^{ab}k_a k_b/2$. With Fourier symbol $\partial_a\mapsto ik_a$,
+$p$ is the principal symbol multiplied by $-1/2$; this rescaling only
+reparametrizes its Hamilton curves. A hypersurface is
+\emph{non-characteristic for $P$} if its nonzero conormals are not
+characteristic. This is a property of an operator and a surface, not a
+test for restricting an arbitrary distribution to the surface. For
+example, $t=0$ in Minkowski space is non-characteristic for $P$, yet
+$\delta(t)$ has precisely the conormals that obstruct its own trace.
+
+\begin{theorem}[Microlocal elliptic regularity and propagation, scalar wave operator \cite{HormIII}]
+\label{f:wf-propagation}
+Let $u$ be a distribution in a smooth boundaryless open region, and
+let $O$ be an open conic set in its nonzero cotangent bundle on which
+$Pu$ is microlocally smooth. Then $\operatorname{WF}(u)\cap O$ lies in
+$p=0$ and is a union of maximal segments in $O$ of the Hamilton curves
+of $p$ there.
+\end{theorem}
+
+The hypothesis on $Pu$ says $O\cap\operatorname{WF}(Pu)=\varnothing$.
+The Hamilton curves in the characteristic set are called
+\emph{bicharacteristics}. The real principal type hypothesis of the
+propagation theorem holds here: $\partial_k p=k^\sharp\ne0$ on the
+nonzero null cone. Off that cone the leading symbol is invertible, giving
+the elliptic regularity assertion. On the cone the Hamilton equations are
+\[
+ \dot x^a=g^{ab}k_b,\qquad
+ \dot k_a=-\tfrac12(\partial_a g^{bc})k_b k_c
+          =\tfrac12(\partial_a g_{bc})\dot x^b\dot x^c .
+\]
+The last expression equals $\Gamma^c{}_{ab}k_c\dot x^b$ for the
+Levi--Civita connection. Thus $k$ is parallel along $x$ and $x$ is a
+null geodesic. The theorem transports a singularity \emph{if it is
+present}; it neither puts one on every ray nor chooses its frequency
+sign. At a source singularity the hypothesis on $Pu$ must be rechecked.
+
+In particular, if $Pu$ is smooth, every non-characteristic hypersurface
+passes the pullback test for $u$; so do its spacetime derivatives, which
+cannot enlarge the wavefront set. Both spacelike and timelike
+hypersurfaces are non-characteristic for this operator. This does not
+make a timelike surface a Cauchy surface. Conversely a perfectly smooth
+solution has a restriction even to a characteristic surface. These are
+different questions from well-posedness for data on that surface.
+
+\begin{exercise}
+In two-dimensional Minkowski space, take $u(t,x)=b_-(t-x)$. Check that
+$\Box u=0$ distributionally, determine its wavefront set, and follow one
+singular covector along a Hamilton curve.
+\end{exercise}
+\noindent\emph{Hint.} Use the coordinates $(t-x,x)$ to identify the
+covectors as $a\,\mathrm{d}(t-x)$ with $a<0$ over $t=x$. The two second
+derivatives in $-\partial_t^2+\partial_x^2$ cancel. The metric dual of
+that covector points along the line, not across it.
+
+\section{The frequency selected by a Hadamard state}
+Return to a smooth time-oriented globally hyperbolic spacetime without
+boundary. For real test functions $f,h$, let $W(f,h)=\Lambda([f],[h])$
+be the ordered moment of Proposition~\ref{f:gaussian-positivity}, and
+extend $W$ bilinearly to complex tests. Assume continuity on spacetime
+tests so the Schwartz kernel theorem gives a distribution $W$ on the
+product spacetime \cite{HormI}. This $W$ is not a Weyl generator.
+With $\hbar=1$ the free equation and CCR read
+$P_x W=P_{x'} W=0$ and $W-W^T=iE$, with $E=G_R-G_A$ and
+$W^T(x,x')=W(x',x)$. Hermiticity and positivity mean that $W(\bar f,h)$
+is a Hermitian form with $W(\bar f,f)\ge0$, using the spacetime volume
+density. Which of the two frequency
+orientations is its short-distance singularity allowed to carry?
+
+With signature $(-,+,\ldots,+)$ call a causal covector $k$ future if
+$k^\sharp$ is future, equivalently $k(v)<0$ on future timelike vectors
+$v$ for nonzero causal $k$. A flat positive-energy phase
+$e^{-i\omega t+i\mathbf p\cdot\mathbf x}$ has $k_t=-\omega$, not
+$+\omega$, for our Fourier transform. Individual plane waves are smooth;
+it is the superposition up to unbounded momentum that produces the
+singularity. In a massive field the large-momentum directions still
+approach the null cone, in agreement with the principal-symbol test.
+
+\begin{theorem}[Microlocal characterization of Hadamard states \cite{Rad,SV}]
+\label{f:wf-hadamard}
+For a quasifree Klein--Gordon state with distributional two-point function
+on a smooth time-oriented globally hyperbolic spacetime without boundary,
+the Hadamard condition in four dimensions \cite{Rad}, and more generally
+in spacetime dimension at least three \cite{SV}, is equivalently
+\begin{equation}
+ \operatorname{WF}(W)=C^+:=
+ \{(x,k;x',-k'):(x,k)\sim(x',k'),\ k^\sharp\text{ future null}\}.
+ \label{f:wf-spectrum}
+\end{equation}
+The relation means cotangents to the same null geodesic, parallel
+transported along it, with the null tangent proportional to their metric
+duals. It includes $x=x'$ with $k=k'\ne0$ null. It does not require
+$x$ to be later than $x'$.
+\end{theorem}
+
+In four spacetime dimensions one can see exactly what is being prescribed
+in position space. Work in a convex normal neighborhood, taking the pair
+in a smaller causally convex neighborhood so no returning null ray leaves
+the chart. Let $\gamma$ be the unique local geodesic from $x'$ to $x$,
+affinely parametrized from zero to one. Write $\sigma=\sigma_g(x,x')$ for
+Synge's world function \eqref{f:world-function}: it is half the signed
+squared interval, $\tfrac12\int_0^1 g(\dot\gamma,\dot\gamma)\,\mathrm{d}s$.
+For a smooth temporal function $T$ increasing to the future, in length units,
+put $\sigma_\epsilon=\sigma+i\epsilon(T(x)-T(x'))+\epsilon^2/2$.
+The local singular part for a canonically normalized scalar is
+\begin{equation}
+ H_\ell=\frac1{8\pi^2}\lim_{\epsilon\downarrow0}
+ \left(\frac{U}{\sigma_\epsilon}
+       +V\log\frac{\sigma_\epsilon}{\ell^2}\right),\qquad \ell>0 ,
+ \label{f:wf-parametrix}
+\end{equation}
+with the logarithm real on the positive axis and $\ell$ a length. The
+coefficients are fixed geometrically up to the smooth freedom of a
+parametrix. For instance, off the cone use
+$\nabla_a\sigma\nabla^a\sigma=2\sigma$ to calculate
+\[
+ P(U/\sigma)=\frac{PU}{\sigma}
+  +\frac{(4-\Box_g\sigma)U-2\nabla^a\sigma\nabla_a U}{\sigma^2} .
+\]
+Canceling the second numerator transports $U$ along the geodesic, from
+$U(x',x')=1$; the logarithmic term cancels the subsequent singular orders.
+On smooth metrics this is a parametrix modulo smooth terms, not a claim
+that a series for $V$ converges. At any specified finite differentiability
+order one can use sufficiently many transport coefficients
+\cite{WaldQFT,HWick}. In the massless flat vacuum $U=1,V=0$. Write
+$\tau=t-t'$, $\mathbf z=\mathbf x-\mathbf x'$ and $r=|\mathbf z|$.
+For $p=|\mathbf p|$, the angular average of $e^{i\mathbf p\cdot\mathbf z}$
+is $\sin(pr)/(pr)$. Thus the damped positive-frequency integral is
+\begin{align*}
+ \int \frac{\mathrm{d}^3\mathbf p}{(2\pi)^3\,2p}
+       e^{-(\epsilon+i\tau)p+i\mathbf p\cdot\mathbf z}
+ &=\frac1{4\pi^2 r}\int_0^\infty
+         e^{-(\epsilon+i\tau)p}\sin(rp)\,\mathrm{d}p\\
+ &=\frac1{4\pi^2[r^2-(\tau-i\epsilon)^2]} .
+\end{align*}
+Taking $\epsilon\downarrow0$ checks the factor of two from the world
+function. It also recovers the Fourier test: near a noncoincident null
+pair use the normal coordinate $q=r^2-\tau^2$. For $\tau>0$ the boundary
+value is $b_+(q)$ up to the prefactor, and for $\tau<0$ it is $b_-(q)$.
+In either case a singular covector $a\,\mathrm{d}_x q$ in the first
+argument has $k_t=-2a\tau<0$ by \eqref{f:wf-bv}.
+The local Hadamard requirement is that $W-H_\ell$ be smooth, using the
+full parametrix modulo smooth terms. A change of $\ell$ adds a smooth
+multiple of $V$, not a new frequency direction. $H_\ell$ alone
+need not be a positive bisolution. A true boundary may introduce waves
+reflected along additional rays; the bulk theorem does not supply a
+global wavefront condition for an unspecified boundary problem.
+
+\Needspace{.47\textheight}
+Two consequences separate measurement from subtraction. First, if $W_1$
+and $W_2$ obey \eqref{f:wf-spectrum} and have the same commutator, their
+difference is symmetric and has wavefront set contained in $C^+$. Its
+transpose instead has past first covector. Since these cones are disjoint,
+the difference is a smooth symmetric bisolution. Smooth does not mean
+zero: adding $c\,v(x)v(x')$ with $c\ge0$ and $v$ a smooth real solution
+preserves positivity and the commutator and can change a fluctuation.
+Second, restricting both arguments of $W$ to a spacelike hypersurface is
+permitted: its nonzero conormals are timelike and cannot be either null
+entry in \eqref{f:wf-spectrum}. On a null hypersurface two arguments on
+the same generator can instead have a wavefront pair normal in both
+slots. Restricting to $x=x'$ is yet another
+map: $(k,-k)$ is a diagonal conormal, so the ordinary pullback test
+fails. By contrast $W^2$ as a distribution of \emph{two} arguments passes
+the product test because the first covectors cannot be opposite.
+
+\begin{exercise}
+Restrict both arguments of the four-dimensional flat massless vacuum to
+one inertial clock $\gamma(t)=(t,\mathbf0)$. Why is the pullback allowed
+even at equal clock readings? As a distribution of $\tau=t-t'$, compute
+the Fourier transform of the result and check its spectral sign.
+\end{exercise}
+\noindent\emph{Solution.} A nonzero null covector cannot annihilate the
+clock's timelike tangent. The restricted distribution is
+$-(4\pi^2)^{-1}(\tau-i0)^{-2}=(4\pi^2)^{-1}\partial_\tau b_-$, as one
+also finds by doing the exponentially damped mode integral at $r=0$.
+Equation~\eqref{f:wf-bv} gives
+$-\xi\,\mathbf 1_{\xi<0}/(2\pi)$, a nonnegative spectral density on the
+negative temporal Fourier ray. This is a distribution on two clock
+readings, not a finite pointwise variance at one reading.

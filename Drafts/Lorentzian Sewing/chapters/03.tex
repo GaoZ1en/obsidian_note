@@ -1,0 +1,69 @@
+\chapter{Smooth fields and gauge transformations across a seam}\label{ch:03}
+
+A Lagrangian can depend on just a field and its first derivatives without making every once-differentiable field a smooth configuration. These are two distinct choices: the \emph{order of a local rule} and the \emph{regularity of its inputs}. The distinction matters at a cut. A finite list of measurements can suffice to evaluate a density there, yet fail to decide whether a pair of independently prepared fields is the restriction of one smooth field.
+
+\section{What a finite jet measures}
+
+Let $E\to M$ be a field bundle on the spacetime constructed in Chapters~\ref{ch:01} and~\ref{ch:02}. A configuration is a smooth section, with any stated exterior conditions. \emph{Off shell} means that no equations of motion have been imposed. Two local sections have the same $k$-jet at $p$ if, in one bundle chart, their values and all their partial derivatives through total order $k$ agree at $p$. The chain rule makes the definition independent of the chart. The set of such jets as $p$ varies is a bundle $J^k E\to M$; $j^k_p\phi$ records derivatives of an actual section $\phi$. A local density of order $k$ is a smooth map on these jets to densities of the base, possibly using specified background jets as well \cite{GMS}.
+
+For example, if $\phi$ takes values in a curved target with metric $H$, the sigma-model density in coordinates is
+\[
+ -\left[\tfrac12 g^{\mu\nu}(x) H_{AB}(\phi(x))\,
+       \partial_\mu\phi^A\partial_\nu\phi^B+V(\phi(x))\right]
+       \,d\mathrm{vol}_g .
+\]
+Here $d\mathrm{vol}_g$ is the metric volume density. The expression depends on $j^1\phi$ even if $H$ and $V$ depend nonlinearly on $\phi$. Under a change of fiber coordinates $v=F(s,y,u)$ in a common base chart, for a scalar fiber coordinate $u$ one has
+\[
+ v_s=F_s+F_u u_s,\qquad
+ v_{ss}=F_{ss}+2F_{su}u_s+F_{uu}u_s^2+F_u u_{ss} .
+\]
+Thus transforming derivatives is not just multiplying each one by the linearized field map. When the base coordinates change as well, one first reexpresses the section over the new base using the inverse coordinate map. For independent regional rules, the one-sided coefficient functions on the jet bundle must fit smoothly at the seam for all values of the jet variables. This includes their signed base derivatives, not only their values on one favored field. For instance, two massive scalar Lagrangians with different $m^2$ agree on the zero field but have incompatible coefficients of $\phi^2$.
+
+\section{Signed traces and mixed derivatives}
+
+Write fields in a single realized seam frame, doing any tensor, affine or nonlinear coordinate change \emph{before} comparing components. Let $u_-(r_-,y)$ and $u_+(r_+,y)$ denote the resulting coefficients, with $s=-r_-$ on the minus side and $s=r_+$ on the plus side. For a one-form, for example, the coefficient of $dr_-$ acquires a minus sign when rewritten as a coefficient of $ds$. The smooth trace test uses the derivatives
+\begin{equation}
+ (-1)^m\partial_y^\alpha\partial_{r_-}^m u_-(0,y)
+   =\partial_y^\alpha\partial_{r_+}^m u_+(0,y),
+ \qquad m\geq0,\quad\text{all multi-indices }\alpha .\label{eq:03-jet}
+\end{equation}
+If the normal traces agree as smooth \emph{functions} of $y$, their tangential derivatives agree by differentiation. If $s$ is already used on both sides, its derivatives are equal with no further $(-1)^m$. There is no demand that the two fields be analytic, or that they agree on collars of positive width. A scalar equal to zero for $s\leq0$ and to $e^{-1/s^2}$ for $s>0$ passes every test: each right derivative is a polynomial in $1/s$ times the exponential and tends to zero.
+
+At a crossing $s_i=\sigma_i r_i$ with $\sigma_i=\pm1$, put all incident components $u_\sigma$ in the same fiber chart by the coherent lifts. At every shared point compare
+\[
+ \left(\prod_{i=1}^k \sigma_i^{\beta_i}\right)
+ \partial_{r_1}^{\beta_1}\cdots\partial_{r_k}^{\beta_k}
+ \partial_w^\gamma u_\sigma
+\]
+for every pair of incident sectors and all multi-indices $\beta,\gamma$. Here $w$ comprises the remaining coordinates, including any exterior ones. This compares the actual derivatives, including mixed ones, independently of the order in which faces were reached. For sector fields smooth up to each closed wall, full normal trace equalities along the adjacent walls give the mixed equalities at their ends by tangential differentiation and continuity in these product charts. Bare corner values or separate pure derivatives at the vertex would not: $c_\sigma s_1s_2$ on each quadrant has vanishing pure derivatives at the vertex but mixed derivative $c_\sigma$.
+
+Where exterior coordinates satisfy $\rho_a\geq0$, the definition of smoothness uses an ambient extension. The following local test makes this convention explicit: in each sector choose extensions across the \emph{exterior} walls to a slightly larger box and require that the extensions satisfy the same internal jet equalities there. It suffices that one compatible choice exists, not that arbitrary extensions work. This is necessary for a smooth sewn field, since a local ambient extension restricts to such a choice. It will be sufficient by the proof below. All tests are on actual regional fields or on such local extensions. Arbitrary assignments of Taylor coefficients on strata, without a common coordinate realization and extension conditions, are not their substitute.
+
+\section{Descent of objects and arrows}
+
+Fix the sewn bundles and the allowed local field and gauge operations; in particular these operations must be the same in corresponding frames. A vertical gauge transformation is an equivariant bundle automorphism over the identity. On $P$ it is a section of the group bundle $\operatorname{Ad}P=P\times_{\rm conj}G$: writing $U(e_i)=e_i u_i$, a change of frame conjugates $u_i$. It is an \emph{arrow} from $\phi$ to $\psi$ when $U$ takes $\phi$ to $\psi$. The collection of configurations with these invertible arrows is called a groupoid. Remembering the arrows retains, in particular, the transformations that fix a field.
+
+\begin{theorem}[Off-shell descent]\label{thm:off-shell-descent}
+In the finite product-sector atlas of Proposition~\ref{prop:sewn-atlas}, restriction identifies smooth configurations with tuples of regional configurations satisfying the signed, mixed and exterior tests above. It also identifies smooth vertical gauge arrows between two configurations with the regional arrows satisfying the tests in their group bundle. Impose the same exterior requirements in both descriptions. If a further nonlocal condition is specified, impose it on the joint tuple as well.
+\end{theorem}
+\begin{proof}
+For fields, order zero gives a well-defined continuous piecewise section; this is finite closed-sector pasting in a bundle chart. For each multi-index $I$ paste the signed derivatives to a continuous coefficient $v_I$, with $v_0$ the original component. In a small open box a coordinate segment crosses finitely many walls. Apply the fundamental theorem of calculus on its pieces and add, obtaining, in direction $j$ with coordinate vector $e_j$,
+\[
+ v_I(x+h e_j)-v_I(x)=\int_0^h v_{I+e_j}(x+t e_j)\,dt .
+\]
+Here $I+e_j$ means incrementing the $j$th derivative count. A segment lying in a wall uses either incident smooth restriction; the traces coincide. Continuity gives $\partial_jv_I=v_{I+e_j}$, and induction proves smoothness of every order, including at an internal crossing. At a surviving exterior wall apply this argument to the extensions and then restrict. For a nonlinear fiber choose a chart about the common value and shrink the box by continuity. The bundle transition laws identify the resulting local sections on overlaps. Restriction is inverse to piecewise evaluation; a smooth section plainly has all the required traces.
+
+For arrows use the same argument in a chart of $G$. In the frames of Chapter~\ref{ch:02} the seam condition at order zero is $u_+=h u_-h^{-1}$, since $U_+D(e_-)=e_+u_+ h$ and $DU_-(e_-)=e_+h u_-$. At higher orders one differentiates the \emph{transported} group-valued map. Thus the regional arrows give a single smooth section of $\operatorname{Ad}P$. Its inverse and its products are smooth by the group operations. Acting on the assembled field agrees with the assembled target because the two sections agree on each regional interior and are continuous. Conversely, restriction gives the original arrows with their composition, identities and stabilizers intact. This proves descent on arrows, not merely a bijection after taking gauge orbits.
+\end{proof}
+
+A theory with independent wall or corner fields applies the same argument to the bundles on those strata, with the given incidence conditions. Such a field need not be the trace of a bulk field. If gauge arrows can change the base, the analogous assertion concerns arrows preserving the labelled cut. Write the regional maps and their inverses in corresponding source and target charts and apply the same component proof to each; their composites restrict to the identity everywhere. A diffeomorphism moving the cut does not restrict to this kind of regional arrow. A smooth fixed metric or coupling must pass the test before it can be used as common background input. A dynamical metric, by contrast, is a section to which the test is applied along with its pointwise signature and any stipulated time orientation. A global causal restriction is a further condition on the assembled history, not a jet equality.
+
+\section{Worked check: a nonlinear chart can hide a derivative jump}
+
+Use $u>0$ in the minus chart and $v=\log u$ in the plus chart. Near the face take $u_-(r_-)=(1-r_-)^2$ and $v_+(r_+)=2\log(1+r_+)+a r_+^3$. In signed $s$ and common $v$ coordinates the left field is $2\log(1+s)$. Its first derivative at zero is $2$ and its second is $-2$: from the $u$ chart the latter is $u_{ss}/u-(u_s/u)^2=2-4$, not $u_{ss}=2$. Both right derivatives agree. The third derivative is $4$ on the left and $4+6a$ on the right. For $a\ne0$ the piecewise field is $C^2$ but not $C^3$, even though its first jet, and hence every common first-order density evaluated there, is unambiguous. For $a=0$ the two formulas give one smooth section. Replacing the cubic by $a s^{m+1}$ on the positive side defeats any proposed finite order $m$ off shell.
+
+\begin{exercise}
+Take a charged scalar identically zero on both sides in a trivial $U(1)$ bundle with identity seam transition. Consider regional gauge maps $u_-=1$ and $u_+=e^{i c s}$, $c\ne0$. They fix the scalar and agree on the face. Are they the restrictions of a smooth stabilizing arrow? What would they do to the zero connection?
+
+\emph{Answer.} The signed first derivatives at the seam are $0$ and $ic$. So there is no such smooth arrow, although both regional scalars remain zero. With the $d+A$ convention their actions on the zero connection give $A'_-=0$ and $A'_+=-ic\,ds$, exposing the jump already in the values of the transformed one-forms.
+\end{exercise}

@@ -1,0 +1,103 @@
+\section{Tangent vectors and pullbacks}\label{D-tangent-maps}
+
+In a signed collar, $+\partial_s$ points out of the piece $s\leq0$. No path starting on its face and proceeding into that piece has this initial velocity. Yet a smooth field on the closed piece has a derivative in the $+\partial_s$ direction. To see why, consider what a tangent vector does to a function.
+
+A \emph{germ} at $p$ is a smooth function defined near $p$, with two functions regarded as the same if they agree on some neighborhood of $p$. A tangent vector $X$ at $p$ is a real linear operation on such germs, with values in $\mathbb R$, satisfying the product rule
+\[
+ X(hk)=h(p)X(k)+k(p)X(h).
+\]
+An operation with this rule is called a \emph{derivation at $p$}. It kills constants, since $X(1)=2X(1)$. In a chart $x=(x^1,\ldots,x^d)$, expand a germ as
+\[
+ h(x)-h(p)=\sum_i (x^i-x^i(p))h_i(x),\qquad h_i(p)=\partial_i h(p).
+\]
+To obtain $h_i$, integrate $\partial_i h$ along the segment from $x(p)$ to $x$ with parameter running from zero to one, using a smooth extension in a small coordinate box. At a corner the derivatives at $p$ do not depend on the extension: two extensions agree on the nearby interior, and their derivatives agree at $p$ by continuity. Applying the product rule now gives $X(h)=\sum_i X(x^i)\partial_i h(p)$. Conversely, every choice of the $d$ numbers $X(x^i)$ gives a derivation by this formula. The $d$ coordinate derivations $\partial_i|_p$ therefore form a basis of the \emph{tangent space} $T_p R$. In new coordinates $z^a$ the components of this same vector are $X(z^a)=\sum_i(\partial_i z^a)(p)X(x^i)$.
+
+The space $T_p R$ has dimension $d$ even at a corner. By contrast, let $\gamma(\tau)$ be a smooth curve in $R$ for $0\leq\tau<\eta$, with $\gamma(0)=p$. Each active wall coordinate $r_i$ starts at zero and stays nonnegative, so $(r_i\circ\gamma)'(0)\geq0$. These inequalities describe exactly the cone of possible right velocities: for every tuple satisfying them, the straight ray stays in the chart for a short time. A two-sided curve staying in $R$ has derivative zero in each active wall coordinate at $p$, since each has a local minimum. Neither collection of velocities should replace the full tangent space when differentiating across a cut.
+
+For a smooth map $H:R\to M$, the \emph{differential} $\mathrm{d}H_p:T_p R\to T_{H(p)}M$ is defined by $(\mathrm{d}H_p X)(h)=X(h\circ H)$. Applying this to the target coordinate functions gives the matrix of partial derivatives of $H$, its Jacobian. The \emph{cotangent space} $T_p^*R$ consists of linear maps from $T_p R$ to $\mathbb R$. For instance $\mathrm{d}h_p(X)=X(h)$; the coordinate covectors $\mathrm{d}x^i$ are dual to the coordinate vectors because $\mathrm{d}x^i(\partial_j)=\delta^i_j$. A smooth choice of covector at each point is a one-form. To bring a one-form $\beta$ on $M$ back to $R$, set
+\[
+ {(H^*\beta)}_p(X)=\beta_{H(p)}(\mathrm{d}H_p X).
+\]
+Thus vectors go forward and covectors pull back. No inverse of $H$ is required; in particular $H$ can be the inclusion of a face.
+
+For example, write a minus collar in a common two-dimensional chart by the map $\Phi(r,y)=(s,z)=(-r,y+\lambda r)$, where $\lambda$ is constant. It gives
+\[
+ \mathrm{d}\Phi(\partial_r)=-\partial_s+\lambda\partial_z,
+ \qquad \Phi^*\mathrm{d}s=-\mathrm{d}r,\qquad
+ \Phi^*\mathrm{d}z=\mathrm{d}y+\lambda\mathrm{d}r .
+\]
+Consequently a one-form $\alpha=A\,\mathrm{d}s+B\,\mathrm{d}z$ has the regional expression
+\[
+ \Phi^*\alpha=\bigl(-(A\circ\Phi)+\lambda(B\circ\Phi)\bigr)\,\mathrm{d}r
+                  +(B\circ\Phi)\,\mathrm{d}y .
+\]
+On the face all these maps are $y\mapsto z=y$. Pulling back to the face itself gives only $B(0,y)\,\mathrm{d}y$: a vector tangent to $r=0$ pairs to zero with $\mathrm{d}r$. Thus the face map knows how to compare tangential traces, but it cannot tell us the coefficient of $\mathrm{d}r$ in the collar.
+
+\begin{exercise}[Clean is not the same as transverse]
+Two embedded submanifolds $A,B$ meet \emph{cleanly} if $A\cap B$ is a submanifold and $T_p(A\cap B)=T_pA\cap T_pB$ at each point of intersection. They meet \emph{transversely} if $T_pA+T_pB=T_pM$ there. Compare two distinct coordinate planes in $\mathbb R^3$, a plane taken twice, and the curves $y=0$, $y=x^2$ in $\mathbb R^2$ at zero.
+\end{exercise}
+\noindent\emph{Solution.} Two coordinate planes meet in a coordinate line; their tangent spaces intersect in that line and span $\mathbb R^3$. A plane taken twice meets cleanly but the sum is the plane, not $\mathbb R^3$. The two curves meet in a point, whose tangent space is zero, but both tangent lines are the $x$-axis. Their meeting is neither clean nor transverse. Independent defining covectors at a product corner provide more than a drawing of intersecting faces.
+
+\section{Forms and the oriented flux through a face}\label{D-forms-flux}
+
+A differential $k$-form assigns to each point an alternating, multilinear function of $k$ tangent vectors, with coefficients smooth in a chart. A function is a zero-form. The coordinate $k$-forms $\mathrm{d}x^{i_1}\wedge\cdots\wedge\mathrm{d}x^{i_k}$, $i_1<\cdots<i_k$, form a basis at each point: their values on $X_1,\ldots,X_k$ are the determinants of the matrices with entries $\mathrm{d}x^{i_a}(X_b)$. The \emph{wedge product} concatenates lists of covectors and extends by bilinearity; interchanging two covectors changes the sign, so a repeated covector gives zero. For example,
+\[
+ (\mathrm{d}s\wedge\mathrm{d}z)(V,W)=V^s W^z-V^z W^s,
+ \qquad \iota_V(\mathrm{d}s\wedge\mathrm{d}z)=V^s\mathrm{d}z-V^z\mathrm{d}s .
+\]
+The second operation, \emph{contraction}, puts $V$ in the first slot and leaves the other slots free. Pullback of a form puts $\mathrm{d}H_p X_i$ in \emph{each} slot, so pullback preserves wedge products.
+
+The \emph{exterior derivative} differentiates coefficients and puts the new covector first. Writing $\mathrm{d}x^I$ for an increasing wedge as above, the rule is $\mathrm{d}(a_I\,\mathrm{d}x^I)=\mathrm{d}a_I\wedge\mathrm{d}x^I$, extended by addition. Thus $\mathrm{d}\alpha=(\partial_s B-\partial_z A)\,\mathrm{d}s\wedge\mathrm{d}z$ for the one-form just computed. Commuting second partial derivatives occur with opposite wedge signs, so $\mathrm{d}^2=0$. The ordinary product rule gives $\mathrm{d}(\omega\wedge\eta)=\mathrm{d}\omega\wedge\eta + {(-1)}^k\omega\wedge\mathrm{d}\eta$ for $\omega$ of degree $k$. On functions the chain rule reads $H^*\mathrm{d}h=\mathrm{d}(h\circ H)$; applying the wedge and product rules to the coordinate expansion then gives $H^*\mathrm{d}\omega=\mathrm{d}(H^*\omega)$ in every degree.
+
+An orientation chooses positive ordered bases of $T_p R$ consistently from point to point. Let $\epsilon$ be a volume form, a top-degree form positive on these bases. Suppose $F$ is given locally by $\rho=0$, with $\rho\leq0$ inside and $\mathrm{d}\rho\ne0$ on $F$. The tangent space $T_p F$ is the kernel of $\mathrm{d}\rho_p$. Covectors vanishing on this kernel form the \emph{conormal line}; a \emph{coorientation} selects one of its two rays continuously. Here $\nu_p=\mathrm{d}\rho_p$ selects the outward ray. It is a covector on the \emph{ambient} space at $p\in F$, not the pullback $j^*\mathrm{d}\rho$ by inclusion $j:F\hookrightarrow R$; the latter vanishes because $\rho\circ j=0$.
+
+There is also a \emph{normal quotient} $T_pR/T_pF$. Two ambient vectors give the same element of this one-dimensional space if their difference is tangent. The conormal line is its dual: a covector that vanishes on all tangents assigns one value to the entire equivalence class. No metric has so far selected a preferred vector representing that class.
+
+Choose an outward transverse vector $N$, meaning $\nu(N)>0$. The \emph{outward-first} boundary orientation makes $e_1,\ldots,e_{d-1}$ positive on $F$ if $\epsilon(N,e_1,\ldots,e_{d-1})>0$. Any other such vector has the form $cN+T$, with $c>0$ and $T$ tangent to $F$. Its tangential part contributes zero by alternation, so the sign does not change. This convention fixes Stokes' formula for a smooth compactly supported $(d-1)$-form $\omega$ up to the faces:
+\[
+   \int_R\mathrm{d}\omega=\sum_{F\text{ a boundary face}}\int_F j_F^*\omega .
+\]
+To check the sign, orient the strip $a\leq s\leq b$, $z\in\mathbb R$, by $\mathrm{d}s\wedge\mathrm{d}z$ and use $\omega=\alpha$ with compact support in $z$. Integrating $\partial_s B-\partial_z A$ over the strip gives $\int_{\mathbb R}(B(b,z)-B(a,z))\,\mathrm{d}z$ by the fundamental theorem of calculus. At $b$ the positive boundary direction is $+\partial_z$; at $a$ it is $-\partial_z$. Splitting the integral at an intermediate $s$ gives the upper-end sign on the minus piece and the lower-end sign on the plus piece.
+
+For a face pairing $f:F_-\to F_+$, write $j_\pm$ for the regional inclusions. An oriented sewing requires $f$ to reverse the induced boundary orientations: the same signed transverse direction is outward on one piece and inward on the other. Changing variables in the second face integral gives
+\[
+ \int_{F_-}j_-^*\omega_-+\int_{F_+}j_+^*\omega_+
+   =\int_{F_-}\bigl(j_-^*\omega_- - f^*(j_+^*\omega_+)\bigr).
+\]
+In particular, restrictions of a single form on the sewn collar cancel there. It is the tangential pullbacks that enter this calculation, not all the coefficients of the regional forms.
+
+Normalize $N$ by $\nu(N)=1$ and put $\epsilon_\nu=j^*\iota_N\epsilon$. For any vector field $V$, the difference $V-\nu(V)N$ is tangent on $F$, so $j^*\iota_V\epsilon=\nu(V)\epsilon_\nu$. If instead one integrates against a positive measure, the \emph{outward flux density} is $\nu(V)|\epsilon_\nu|$. The absolute value means that the measure transforms by the absolute Jacobian, without an orientation sign. Rescaling $\nu$ by a positive function rescales the normalized transverse vector by the inverse factor, up to a tangent vector. Hence the density is unchanged. When adding outward densities one must not insert a second boundary sign (Appendix~\ref{app:A}).
+
+\begin{exercise}[Flux through a moving face]
+In the $(t,x)$ plane orient by $\mathrm{d}t\wedge\mathrm{d}x$ and keep $x\leq h(t)$. Find the outward flux of $V$ per unit $|\mathrm{d}t|$ on the curve $j(t)=(t,h(t))$.
+
+\emph{Answer.} Here $\nu=\mathrm{d}x-h'(t)\mathrm{d}t$ and $N=\partial_x$ has $\nu(N)=1$, giving $\epsilon_\nu=-\mathrm{d}t$. Direct pullback gives $j^*(V^t\mathrm{d}x-V^x\mathrm{d}t)=(h'V^t-V^x)\mathrm{d}t$, with coefficients evaluated on the curve. Relative to the boundary orientation $-\mathrm{d}t$, the outward coefficient is therefore $V^x-h'V^t$. In particular a vector moving with the face has zero flux even if $V^x\ne0$.
+\end{exercise}
+
+\section{Lorentzian cones and Cauchy surfaces}\label{D-causal-geometry}
+
+A Lorentzian metric $g$ assigns to each tangent space a symmetric bilinear form varying smoothly with the point. In a suitable basis its matrix is $\operatorname{diag}(-1,1,\ldots,1)$. It is therefore nondegenerate: the only vector pairing to zero with every vector is zero. A nonzero $V$ is timelike, null, or spacelike according as $g(V,V)$ is negative, zero, or positive. Timelike and null vectors are called causal. The timelike vectors form two cones; a \emph{time orientation} selects one continuously as future. Given a future timelike vector $T$, a causal $V$ belongs to the future cone or its null boundary exactly when $g(T,V)<0$. Choosing future is independent of orienting the spacetime for integration.
+
+To compare two metrics one must give them the same vectors as arguments: ${(H^*g)}_p(X,Y)=g_{H(p)}(\mathrm{d}H_p X,\mathrm{d}H_p Y)$. For the collar map $\Phi$ above, $\mathrm{d}s^2-\mathrm{d}z^2$ pulls back to $\mathrm{d}r^2-{(\mathrm{d}y+\lambda\mathrm{d}r)}^2$; the squares here are tensor squares, not wedges. For every $\lambda$ the induced metric at $r=0$ is $-\mathrm{d}y^2$, but its value on tangential vectors does not determine the mixed coefficient in the collar. For a smooth metric on the chosen sewing, compare all coefficients and their one-sided derivatives of every order in the \emph{same signed chart}. The two choices of future must also agree there.
+
+The metric identifies vectors with covectors by $V^\flat(W)=g(V,W)$. Its inverse sends $\nu$ to the vector $\nu^\sharp$ determined by $g(\nu^\sharp,W)=\nu(W)$; in coordinates ${(\nu^\sharp)}^\mu=\sum_\lambda g^{\mu\lambda}\nu_\lambda$, where $(g^{\mu\lambda})$ is the inverse metric matrix. For a hypersurface the orthogonal complement of $T_p F$ is thus the line spanned by its raised conormal. Write $g^{-1}(\nu,\nu)=\nu(\nu^\sharp)$. If this is negative, an orthonormal basis starting with the normalized timelike normal leaves only positive directions in $T_p F$: the hypersurface is \emph{spacelike}. If it is positive, the normal removes a positive direction, leaving a timelike direction in $T_p F$: the hypersurface is \emph{timelike}. If it is zero, $\nu^\sharp$ belongs to $\ker\nu=T_p F$ and is orthogonal to all of $T_p F$. The induced metric is then degenerate and the hypersurface is \emph{null}. Its metric normal cannot serve as the transverse vector used in Stokes' formula.
+
+For example take the Minkowski plane with $g=-\mathrm{d}t^2+\mathrm{d}x^2$, future $\partial_t$, and orientation $\mathrm{d}t\wedge\mathrm{d}x$. Set $u=(t-x)/\sqrt{2}$ and $v=(t+x)/\sqrt{2}$. Substituting $\mathrm{d}t=(\mathrm{d}u+\mathrm{d}v)/\sqrt{2}$ and $\mathrm{d}x=(\mathrm{d}v-\mathrm{d}u)/\sqrt{2}$ gives
+\[
+ g=-\mathrm{d}u\otimes\mathrm{d}v-\mathrm{d}v\otimes\mathrm{d}u
+     =-2\,\mathrm{d}u\,\mathrm{d}v,\qquad
+ \mathrm{d}t\wedge\mathrm{d}x=\mathrm{d}u\wedge\mathrm{d}v .
+\]
+Keep $u\leq0$. The inverse metric has $g^{uv}=g^{vu}=-1$ and zero diagonal, so the outward conormal $\mathrm{d}u$ raises to $-\partial_v$, tangent to the cut. Instead $N=\partial_u$ gives the positive boundary form $\mathrm{d}v$. A unit time translation $V=\partial_t$ carries flux $\mathrm{d}u(V)=1/\sqrt{2}$ per unit $|\mathrm{d}v|$. Indeed $\iota_{\partial_t}(\mathrm{d}t\wedge\mathrm{d}x)=\mathrm{d}x$, which pulls back to $\mathrm{d}v/\sqrt{2}$ there.
+
+A causal curve has a consistent time direction: orient it toward the future and its tangent must be future causal. Piecewise smooth curves suffice for the following examples; more generally one can take locally Lipschitz curves with future causal tangent almost everywhere. The \emph{causal future} $J^+(p)$ consists of $p$ and the points reachable from it by such curves. In the null chart $g(V,V)=-2V^u V^v\leq0$ and $g(\partial_t,V)=-(V^u+V^v)/\sqrt{2}<0$ together require $V^u,V^v\geq0$, not both zero. Integrating along the curve, both coordinates are nondecreasing. Conversely a straight segment reaches any point $u,v\geq0$ from the origin, so this entire quadrant is $J^+(0)$ in the full plane.
+
+A spacelike hypersurface is \emph{Cauchy} if every inextendible causal curve meets it exactly once. Inextendible means that the curve cannot be continued within the spacetime at either end, even after reparametrization. In the full plane a future causal curve has increasing $t$ and $|\mathrm{d}x/\mathrm{d}t|\leq1$. If its $t$ range had a finite upper endpoint, the bound would give a limit for $x$ there; the curve could continue along a vertical timelike line. The same argument holds at the lower end, so every line $t=\text{constant}$ is Cauchy. The cut $u=0$ misses all the inextendible null lines $u=u_0\ne0$.
+
+\begin{exercise}[A spacelike curve that misses a light ray]
+Consider the entire graph $t=\sqrt{1+x^2}$ in the Minkowski plane. Is it spacelike? Is it Cauchy?
+
+\emph{Answer.} Its tangent for increasing $x$ is $Y=(x/\sqrt{1+x^2})\partial_t+\partial_x$, so $g(Y,Y)=1/(1+x^2)>0$ everywhere. Yet the inextendible null line $t=x$ never meets the graph: $\sqrt{1+x^2}>x$ for all real $x$. Spacelikeness was a test at each point of the graph; the Cauchy condition also tests curves elsewhere in spacetime.
+\end{exercise}
+
+For a time-oriented spacetime without boundary, existence of a spacelike Cauchy hypersurface characterizes \emph{global hyperbolicity}. It is not a matching condition on a collar. For example, identifying the time caps $(0,x)\sim (L,x)$ of a flat slab with $L>0$ sews both the metric and the future direction smoothly but closes every vertical timelike line. No surface meets such a repeatedly traversed line exactly once. Even on the globally hyperbolic plane, a single null trace need not determine a wave: both $\phi=0$ and $\phi=u$ solve $-2\partial_u\partial_v\phi=0$ and vanish on $u=0$. A well-posed evolution requires existence, uniqueness, and continuous dependence in the chosen data and solution norms. These tests concern a specified equation and admissible data, including conditions at any surviving physical wall; smoothness of the sewn metric alone does not imply them (Appendix~\ref{app:B}).

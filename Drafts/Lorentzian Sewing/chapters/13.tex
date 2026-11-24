@@ -1,0 +1,280 @@
+\chapter{Time-ordered products at a cut}\label{ch:13}
+In the mixed response of Chapter~\ref{ch:12} the point where two pulses
+meet is integrated against smooth solutions. A pair of quantum vertices is
+different. Even if each vertex has already been defined as a Wick
+polynomial, contracting two lines between the vertices asks for the square
+of a singular propagator. Putting the vertices on opposite sides of a drawn
+line does not remove the issue: both points can approach the same point of
+the line. What does the regional calculation have to reproduce there?
+
+\section{Causal ordering fixes the separated-vertex answer}
+A time-ordered product $T_n(F_1,\ldots,F_n)$ is a symmetric multilinear
+operator-valued distribution in its bosonic local insertions. More
+precisely, its kernels are distributions; the displayed product denotes
+their evaluation on smooth compactly supported couplings. An important
+part of its definition is \emph{causal factorization}. If the supports of
+a first group do not meet the causal past of the supports of the remaining
+group, then
+\begin{equation}
+ T_n(F_1,\ldots,F_n)=
+ T_k(F_1,\ldots,F_k)\,T_{n-k}(F_{k+1},\ldots,F_n).
+ \label{eq:13-causal}
+\end{equation}
+The product on the right is the ordinary quantum product, with the later
+group to the left. For spacelike-separated groups the opposite ordering is
+also possible and the products commute. For two fields in a specified
+state, the expectation of this ordered operator product is $W(x,y)$ when
+$x$ is later, and $W(y,x)$ when $y$ is later;
+at spacelike separation the two agree. It does not say to put all the
+vertices on the left of a \emph{spatial} division later than all those on
+the right. With lower time-ordered products known, causal factorization
+constructs the next one off the total coincidence diagonal in an ordinary
+globally hyperbolic bulk. Extending to the diagonal is a separate step
+\cite{BF,HWT,FR}.
+
+For instance, introduce smooth parts $\chi_1+\chi_2=\chi$ of the
+switching function, supported in two overlapping neighborhoods of a cut.
+Let $F_a=\lambda\int\chi_a\,:\!\phi^3\!:\,dV/3!$. The quadratic Dyson
+term for $F_1+F_2$ is
+\[
+ -\tfrac12 T_2(F_1,F_1)-T_2(F_1,F_2)-\tfrac12 T_2(F_2,F_2).
+\]
+The cross term has coefficient one, not one half. Its contractions require
+the two-point function \emph{between} neighborhoods. Matching the
+commutator and the two separately renormalized regional Wick cubes need
+not supply it. A smooth partition is a way of labeling the vertices. It
+introduces neither a new boundary condition nor a discontinuous coupling;
+the answer for a transparent cut must be independent of the partition when
+the pieces are added back together.
+
+\section{One loop with its normalization}
+Use a four-dimensional flat interior patch to see the extension explicitly.
+Take the massless scalar vacuum and use its normal ordering in this
+calculation. For $z=x-y$ set $z^2=-(z^0)^2+|\mathbf z|^2$. In units
+$\hbar=1$, our time-ordered contraction is
+\[
+ G_F(z)=\frac{1}{4\pi^2}\frac{1}{z^2+i0},\qquad
+ \Box G_F=i\delta^{(4)} .
+\]
+The $i0$ is a boundary value, not a small real cutoff. To check the source
+sign, spatial Fourier transformation gives
+$e^{-i|\mathbf p|\,|t|}/(2|\mathbf p|)$, whose first time derivative has
+jump $-i$ at $t=0$; $\Box$ contains $-\partial_t^2$.
+Appendix~\ref{app:C} gives the slightly different boundary value for the
+unordered two-point function.
+
+Take two cubic vertices at $x,y$. Choosing two of the three fields at each
+point and pairing them across the vertices gives
+$\binom32^2 2!=18$ double contractions. Away from coincidence this part of
+the second-order operator in \eqref{eq:12-dyson} is
+\begin{equation}
+ -\frac{\lambda^2}{4}
+ \int dV_x\,dV_y\,\chi(x)\chi(y)\,
+  G_F(x-y)^2\,:\!\phi(x)\phi(y)\!: .
+ \label{eq:13-fish}
+\end{equation}
+Indeed the coefficient before counting pairings is
+$(-i\lambda)^2/[2!(3!)^2]$. The remaining fields in
+\eqref{eq:13-fish} have \emph{not} been contracted with external
+detectors. This is the two-line loop, or fish. On the punctured relative
+space $z\ne0$ its scalar distribution is
+$t^\circ(z)=(16\pi^4)^{-1}(z^2+i0)^{-2}$. This notation includes the
+noncoincident light cone, where the boundary value is singular but has a
+consistent frequency direction. Under $z\mapsto a z$, $a>0$, the degree
+is $-4$. The normal space to $x=y$ has dimension four, so the divergence
+is logarithmic. An ordinary integral using the pointwise formula at the
+origin would not define the coefficient.
+
+Here one can write an extension rather than just count the free parameters.
+Take $\ell>0$ of dimension length and set
+\begin{equation}
+ t_\ell(z)=-\frac{1}{64\pi^4}\Box
+ \left[\frac{\log((z^2+i0)/\ell^2)}{z^2+i0}\right].
+ \label{eq:13-fish-extension}
+\end{equation}
+Off the origin the bracket is defined by the same complex boundary value;
+its scaling degree is two, so it extends uniquely there without increasing
+its scaling degree. The derivative is then taken on distributions. To see
+why the coefficient works, for $s=z^2$ one has
+$\Box h(s)=4s h''(s)+8h'(s)$. For $h(s)=\log(s/\ell^2)/s$ this is
+$-4/s^2$; the identity continues to the prescribed boundary value away
+from $z=0$. Hence \eqref{eq:13-fish-extension} agrees with $t^\circ$ and
+has scaling degree four. Two such power-counting extensions can differ by
+$c\,\delta^{(4)}(z)$, but not by derivatives of that delta. In particular
+the displayed family gives
+\[
+ t_{\ell'}-t_\ell=\frac{i}{8\pi^2}
+       \log(\ell'/\ell)\,\delta^{(4)}(z),
+\]
+by $\Box(1/(z^2+i0))=4\pi^2 i\delta^{(4)}(z)$. Inserting a contact
+difference $c\,\delta^{(4)}$ into \eqref{eq:13-fish} changes the full
+operator by $-c\lambda^2\int\chi^2:\!\phi^2\!:\,dV/4$. Its mixed part
+for the smooth partition $\chi=\chi_1+\chi_2$ is
+\[
+ -\frac{c\lambda^2}{2}\int_M\chi_1\chi_2:\!\phi^2\!:\,dV .
+\]
+This contact is exactly zero for disjoint supports, even though the
+nonlocal fish contraction can still connect the two supports. The bulk
+mass normalization matters for overlapping supports and for the full
+coefficient, not as a new sheet of mass on the cut. Reality and unitarity
+further restrict admissible constants in the chosen propagator convention.
+
+\section{Power counting in the normal directions}
+The fish displays the general geometry of power counting. Near the diagonal
+of $n$ bulk vertices in spacetime dimension $D$, hold the common point
+fixed and scale the $k=(n-1)D$ relative coordinates to zero. If the
+relative distribution has scaling degree $\rho$, an extension preserving
+that degree is unique for $\rho<k$. Otherwise the local ambiguity consists
+of derivatives of a delta in the relative coordinates of orders
+$|\alpha|\le\lfloor\rho-k\rfloor$; tangential coefficients are restricted
+by the normalization axioms. In a scalar graph in $D>2$, $I$ singular
+internal lines of leading degree $D-2$ and $b$ derivatives on such lines
+give the superficial bound
+\[
+ \rho-k\ \le\ (D-2)I+b-D(n-1)=D L-2I+b
+\]
+for a connected cluster with $L=I-n+1$. This counts allowed local terms;
+tensor cancellations can lower the actual degree. Proper subclusters must
+first have their products defined, and their extension choices propagated
+to larger clusters. On a curved smooth bulk the short-distance counting
+is local, although allowed coefficients can now involve the metric, mass
+and curvature \cite{HWick,HWT}.
+
+In a geometry with distinguished faces the collision set can itself have
+strata. For the stratum with all $n$ bulk points coincident \emph{on} a
+face of codimension $q$, the normal dimension in $M^n$ is
+$(n-1)D+q$: one must bring the common point to the face as well as bring
+the points together. Vertices constrained from the start to the face have
+a different configuration space, and hence a different normal dimension.
+On a smooth stratum with a normal scaling-degree bound, possible additional
+ambiguities are normal derivatives of deltas supported there, subject to
+that bound. If the coefficients themselves are singular at an edge or
+corner, that smaller stratum needs its own analysis; one cannot count a
+bulk delta once and call it a boundary counterterm. This reasoning
+classifies local freedoms \emph{if} the respective distributions and
+extensions exist. Bulk theorems on smooth globally hyperbolic manifolds do
+not supply a renormalization theorem for every proposed boundary problem.
+
+For the flat fish just computed, write $X=(x+y)/2$. The uncut distribution
+is independent of the coordinate $X_\perp$ normal to a planar cut.
+Under joint scaling of $(z,X_\perp)$ its degree is still four, whereas
+$\delta^{(4)}(z)\delta(X_\perp)$ has degree five. Thus the latter is not
+an additional ambiguity with this scaling bound. More generally, an
+\emph{artificial} wall is absent from the whole theory's local background
+data. Regional subtractions, including any auxiliary sheet terms needed by
+a regulator, must combine into the same whole-spacetime prescription at a
+transparent seam. A surviving wall coupling that changes correlators when
+the plane is moved fails this comparison. A \emph{physical} defect, by
+contrast, may have a prescribed action, a jump equation or its own fields.
+The face and its geometry then are local data of the theory. Face, corner
+or junction operators allowed by power counting and symmetries must be
+fixed by the physical normalization conditions when needed. Their
+coefficients cannot be inferred by demanding that this defect disappear.
+
+\section{Ward identities are more than matching conditions}
+Time-ordered products obey differential identities with contact terms.
+For the free scalar, $P_xW(x,y)=0$ but $P_xG_F(x,y)=i\delta(x,y)$.
+Differentiating the time ordering has detected the equal-time commutator.
+Treating time-ordered fields as classical solutions at the coincident
+point would miss it. At zero coupling the flat massless scalar has a shift
+symmetry $\phi\mapsto\phi+\epsilon$, with current
+$j^\mu=-\partial^\mu\phi$ and $j^0=\partial_t\phi$. In the interior the
+Ward identity for one field insertion is
+\[
+ \partial_\mu^x\langle\mathcal T j^\mu(x)\phi(y)\rangle
+ =-\Box_x G_F(x-y)=-i\delta^{(4)}(x-y).
+\]
+The sign is that of $[j^0(t,\mathbf x),\phi(t,\mathbf y)]
+=-i\delta^{(3)}(\mathbf x-\mathbf y)$. Integrating the identity over a
+small spacetime neighborhood of $y$ detects that the inserted field shifts
+by one. A cubic potential breaks this shift explicitly; that breaking is
+not a quantum anomaly. For other symmetries the contact terms involve the
+variations of the insertions, together with any physical boundary fluxes.
+Matching the smooth classical fluxes alone does not test the quantum
+contact terms.
+
+Two failures of a local comparison have different diagnoses. The two routes may use different allowed local terms, such as
+different mass normalizations in \eqref{eq:13-fish}. Aligning the
+prescriptions can remove that discrepancy. Or a symmetry condition may
+itself be obstructed. In the usual local perturbative framework, when the
+Ward identities hold at lower orders, their first possible local violation
+$\mathcal A$ obeys a consistency condition. For a gauge theory written
+with a nilpotent symmetry differential $s$ this reads $s\mathcal A=0$
+modulo the relevant total derivatives. Adding an admissible local
+counterterm $B$ shifts the violation by $sB$ in that quotient. At an actual
+boundary a total derivative has a boundary term; it is the combined bulk
+and boundary identity that must be tested. A nontrivial class, not
+removable by any allowed $B$, is a quantum anomaly of that Ward identity,
+not an arbitrary failure to match two choices of subtraction. Conversely,
+absence of such a class does not furnish a state, a transmission Green
+operator or equality of every pair of renormalized products. These are
+separate inputs to an order-by-order comparison \cite{FR}.
+
+\section{Fixed sectors and an optional weighted sum}
+Suppose the classical gluing problem allows several inequivalent global
+sectors: for instance, transport around a loop through the seam may depend
+on transition data which cannot be removed by a gauge transformation.
+Choose one such sector $s_0$, its exterior conditions and its fluctuation
+problem. For insertions in the common observable domain let $\iota_{s_0}$
+be the comparison from the matched regional algebra to the whole algebra,
+including transport of any crossing observable. The \emph{strong,
+fixed-sector} assertion at order $n$ is an equality there, for every
+admissible collection of insertions,
+\begin{equation}
+ \iota_{s_0}\!\left(T^{\rm sewn}_{n,s_0}(F_1,\ldots,F_n)\right)
+ =T^M_{n,s_0}(\iota_{s_0}F_1,\ldots,\iota_{s_0}F_n).
+ \label{eq:13-fixed}
+\end{equation}
+Here $F_i$ are matched labels for local insertions on which both products
+are defined. For numerical correlators one uses corresponding states as
+well. The preceding fish calculation identifies one local ambiguity that
+must be fixed for this assertion even at $n=2$; it is not a proof of
+\eqref{eq:13-fixed} at all orders. In a fixed flux or fixed bundle sector
+there is no instruction in causal factorization to sum over others.
+
+A different observable may deliberately leave sector data unobserved.
+First map the sector answers to a common target, for example complex
+amplitudes $A_s$ with the same fixed external data. If a \emph{chosen}
+measure is a finite groupoid counting measure with weights $w_s$, the
+combined amplitude takes the form
+\[
+ A_{\rm sum}=\sum_{[s]}\frac{w_s}{|\operatorname{Aut}(s)|}\,A_s .
+\]
+The meaning of the denominator can be checked without a path integral. If
+a finite gauge group $G$ acts on a set of presentations $X$, then dividing
+$\sum_{x\in X}w_x A_x$ by $|G|$ counts an orbit $Gx$ with coefficient
+$|Gx|/|G|=1/|G_x|$ for invariant $w_x A_x$. Here $G_x$ is the stabilizer,
+namely the automorphism group of that presentation. If the weights are
+already a measure on equivalence classes, one does not divide a second
+time. For continuous labels a measure and treatment of residual symmetry
+volumes must be supplied; there is no default convergent sum. A statistical
+mixture of states would instead require nonnegative normalized weights.
+Summing complex amplitudes and mixing states are different experiments.
+
+For a numerical example, measure the holonomy $H=ba$ in the two-strip
+circle of Chapter~\ref{ch:02}. Each of the two classes $H=+1,-1$ has a
+diagonal $\mathbb Z_2$ stabilizer, so unit groupoid weights give each
+class counting mass $1/2$. The normalized mean of the measured sign is
+$[(+1)/2+(-1)/2]/[1/2+1/2]=0$. In a fixed periodic sector the same
+measurement gives $+1$, and in a fixed antiperiodic sector it gives $-1$.
+Zero is the mean for the chosen ensemble, not a third possible holonomy.
+
+Equality in each fixed sector implies equality of common weighted sums
+when those sums are defined with the same measure. Equality only after a
+sum is weaker, since sector discrepancies can cancel. In particular,
+releasing a common classical trace to obtain transmission, contracting
+quantum insertions across a cut, and summing over sectors held fixed in
+\eqref{eq:13-fixed} are three different operations.
+
+\begin{exercise}
+Suppose an order-two distribution in flat four-dimensional spacetime is a
+single relative derivative $\partial_{z^\mu}t_\ell(z)$ of the renormalized
+fish, constant in $X$. At the coincident-on-plane stratum, what sheet
+contact term is no longer ruled out by the scaling-degree count alone?
+Why does that count not allow you to introduce a new freely adjustable
+sheet coupling in the transparent theory?
+\end{exercise}
+\noindent\emph{Hint.} Scale $z$ and $X_\perp$ together. A derivative can
+raise the degree by one. Then ask what additional data a coefficient with
+index $\mu$ would need, and whether differentiation of the already fixed
+whole distribution leaves such a choice.

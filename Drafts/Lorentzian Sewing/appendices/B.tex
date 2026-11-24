@@ -1,0 +1,54 @@
+\chapter{Traces, support, and well-posed wave problems}\label{app:B}
+An inverse of a differential operator is not specified by a formula alone. The functions it acts on, the boundary conditions of the functions it returns, and its support in time are part of the inverse. This appendix gives practical tests for those three pieces of information. The elementary estimates are given for a scalar; they are not substitutes for the energy and constraint estimates of a gauge system.
+
+\section{What can actually be evaluated at a hypersurface?}
+For a smooth field, restriction to $s=0$ is evaluation. For a square-integrable field it is not: changing its values on a set of measure zero changes no $L^2$ equivalence class. The local Sobolev space $H^r$ measures $r$ derivatives in a mean-square sense; in a coordinate patch its norm is given by the Fourier weight $(1+|\xi|^2)^{r/2}$. This is an auxiliary positive norm on the coordinates, not the indefinite norm of a Lorentz metric.
+
+On a flat hyperplane $s=0$, write $k$ for the Fourier variable tangential to the plane and $\lambda$ for the one dual to $s$. The tangential Fourier transform of $u|_0$ is, up to the Fourier normalization, $\int \widehat u(k,\lambda)\,d\lambda$. Cauchy--Schwarz bounds its square by
+\[
+ \left(\int_{\mathbb R}(1+|k|^2+\lambda^2)^{-r}\,d\lambda\right)
+ \left(\int_{\mathbb R}(1+|k|^2+\lambda^2)^r|\widehat u(k,\lambda)|^2\,d\lambda\right).
+\]
+The first integral is $C_r(1+|k|^2)^{1/2-r}$ for $r>1/2$. Multiplying by $(1+|k|^2)^{r-1/2}$ and integrating over $k$ proves the loss of half a derivative:
+\[
+ \|u|_0\|_{H^{r-1/2}}\leq C\|u\|_{H^r},\qquad r>1/2.
+\]
+Localization and a smooth extension of half-space Sobolev fields give the corresponding local result in a collar. For the classical trace of $\partial_s u$ the same argument needs $r>3/2$. It is a sufficient condition, not the only way a normal flux can exist. For example on a bounded Lipschitz coordinate patch a flux vector density $p$ with $p$ and $\partial_\mu p^\mu$ in $L^2$ has a weak normal trace in $H^{-1/2}$: pair a test trace $q$ with
+\[
+ \int_R \big((\partial_\mu p^\mu)\,\widetilde q+p^\mu\partial_\mu\widetilde q\big),
+\]
+where $\widetilde q\in H^1$ extends $q$. Integration by parts on zero-trace extensions proves independence of the extension; the extension bound controls the pairing. These facts justify a weak mismatch equation in appropriate norms. They do not upgrade it to matching infinite jets. At a corner one cannot assign mutually incompatible traces on intersecting faces. Starting with traces of actual smooth fields, or specifying the appropriate compatibility subspace in a completion, avoids treating those assignments as independent.
+
+\section{Sources, trace histories, and causal inverses}
+Let $P$ be a wave operator with specified physical boundary conditions on a time-oriented spacetime. $J^+(K)$ consists of points reachable from $K$ by future-directed causal curves in the specified spacetime, allowing the physical boundary as appropriate. On smooth compact sources a retarded Green operator must satisfy
+\[
+ PG^R f=f,\qquad G^R P v=v,\qquad \operatorname{supp} G^R f\subseteq J^+(\operatorname{supp} f).
+\]
+The test field $v$ in the middle identity must satisfy the boundary domain of $P$, have $Pv$ in the source domain, and itself have zero past Cauchy data. On a finite slab a smooth field supported away from both caps is a common test for both inverses; mere compactness up to the caps is not enough. Reverse $+$ to $-$ and past to future for $G^A$. On finite slabs, take sources vanishing near the past cap for a smooth zero-past solution, or impose the corner compatibility conditions of forced initial data; the advanced problem uses the future cap instead. Retarded and advanced do \emph{not} mean that data are prescribed independently at both caps. Existence on a globally hyperbolic spacetime without timelike boundary for a normally hyperbolic operator is a standard input \cite{BGP}; a timelike physical boundary brings a separate initial-boundary value problem.
+
+Here is one way to specify the spaces used in Chapter~\ref{ch:08}. In a static half-space with the scalar wave operator, take $f$ smooth of compact support consistent with zero past; for the elementary half-line check one may start with supports away from the artificial corners. Take smooth trace histories $\eta$ that vanish in the distant past, locally bounded with all derivatives on finite time intervals. Impose compatible support in the directions parallel to the cut, or work with compact spatial wave packets and causal completion. On the massless half-line the lift $H\eta(t,x)=\eta(t-|x|)$ is explicitly continuous on these smooth causal histories. On the corresponding smooth past-zero mismatch space $M=2\partial_t$ is onto: $Ly(t)=\tfrac12\int_{-\infty}^t y(s)ds$ is continuous on each fixed finite interval with a common past cutoff. It need \emph{not} return a history compact in time. Insisting on compact support for the response as well as for the source would incorrectly impose $\int y=0$. For more general equations these spaces and bounds have to be supplied; an everywhere-defined right inverse of abstract vector spaces does not give them. Energy norms often give the first existence result and smooth compatible data a second regularity result.
+
+\section{Flux cancellation and finite speed}
+For $D=\partial_t^2-\nabla^2+m^2$, $m^2\geq0$, multiply $Du=f$ by $u_t$. For a real field the elementary conservation law is
+\[
+ e=\tfrac12\big(u_t^2+|\nabla u|^2+m^2u^2\big),\qquad
+ \partial_t e-\nabla\!\cdot(u_t\nabla u)=f\,u_t .
+\]
+Integrating on a spatial region with a static boundary gives an outward-derivative term $\int_{\partial}u_t\partial_nu$ on the right of the energy balance. At an artificial cut the two $u_t$ equal $\dot q$, and the outward derivatives sum to zero. The internal energy contributions cancel. At a fixed homogeneous Dirichlet or Neumann outer wall the same power vanishes by the corresponding boundary condition. A passive or dynamical boundary may instead require an estimate or its own stored energy. On a closed system with zero initial data the integrated energy estimate gives uniqueness. It gives continuous dependence in the energy norm by estimating $\int f u_t$; existence still needs a construction, such as mode expansion on the line, or the appropriate hyperbolic initial-boundary value theorem.
+
+Cancellation of the total flux alone proves neither transparency nor finite speed: two separately reflecting Dirichlet walls already have zero power at the cut because $u_t=0$ there. To test support for the matched problem, use smooth data and repeat the calculation on a ball shrinking with radius $T-t$ toward an observation point. The moving sphere contributes $-e$ per unit area as well as $u_t\partial_nu$. Since
+\[
+ u_t\partial_nu-e=-\tfrac12(u_t-\partial_nu)^2
+                    -\tfrac12|\nabla_{\rm tan}u|^2-\tfrac12m^2u^2\leq0,
+\]
+energy cannot enter the backward cone through its lateral characteristic side. Any paired internal faces cancel \emph{within that cone}, not just after an integral over the entire cut. If the cone contains no source and its initial ball has zero data, its tip sees no disturbance. For $m=0$ the energy controls derivatives and the initial value fixes the constant. The argument gives the spacetime support statement used for the planar example in Chapter~\ref{ch:08}. Sources or interactions assigning data instantaneously between separated parts of a face would not pass this local argument.
+
+\section{Which analytic input belongs to which cut?}
+At an actual Cauchy surface the wave equation propagates a pair of initial data, typically $H^1\times L^2$ at energy regularity. On a timelike wall those two traces generally cannot be prescribed independently. One admissible boundary history produces the other as a response. In a spatial Fourier mode growing into a half-space one can see why an arbitrary sideways prescription does not even give a stable estimate. For the massless wave equation a time-independent tangential mode $e^{iky}$ obeys $\partial_s^2 u=k^2u$ in a flat collar. The continuation $e^{|k|s}$ has exponentially large amplification at fixed $s>0$ as $|k|$ increases. Noncharacteristicity of $ds$ did not turn $s$ into a good time variable.
+
+On a characteristic surface even counting the data as a Cauchy pair is usually wrong. In a double-null rectangle, Equation~\eqref{eq:double-null} provides existence as well as a support estimate using one trace on each incoming side. The trace on a single characteristic Cauchy surface with suitable causal/global conditions is a distinct problem; see B\"ar and Tagne Wafo~\cite{BW}. For gauge fields add propagation of constraints, compatible gauge-parameter boundary conditions, and the definition of proper gauge at exterior faces to the list of analytic inputs. Existence of the geometric quotient supplies none of these estimates.
+
+\begin{exercise}[A retarded inverse on the wrong space]
+Let $y$ be a smooth compactly supported function of unit integral on the time line. Can there be a compactly supported $q$ with $2\dot q=y$? Does this rule out a retarded solution?
+\end{exercise}
+\noindent\emph{Answer.} The time integral of a derivative of a compactly supported function is zero. The retarded solution nevertheless exists: it is zero sufficiently early and tends to $1/2$ sufficiently late. Causal support is not compact support.

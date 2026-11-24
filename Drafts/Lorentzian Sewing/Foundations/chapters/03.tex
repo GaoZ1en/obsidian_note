@@ -1,0 +1,74 @@
+% !TeX root = ../main.tex
+\chapter{Smooth manifolds and differentiation}\label{f:smooth}
+A circle has small neighborhoods homeomorphic to intervals. That statement lets us test continuity on the circle, but it does not yet say what the velocity of a moving point is. Even on an interval one can change the coordinate $x$ to $x^3$: no open set detects the change, yet a particle described by the inverse change has no finite derivative at the origin. To differentiate we must specify which coordinates may replace one another. We begin with spaces without boundary. What is special about a boundary point will be easier to recognize once differentiation at an ordinary point is understood.
+
+\section{Charts, changes of variables and smooth maps}
+A topological manifold of dimension $n$ is a Hausdorff, second-countable space locally homeomorphic to open subsets of $\mathbb R^n$. A \emph{chart} is such a homeomorphism $x:U\to x(U)$, not just an assignment of $n$ numbers. Given charts $x:U\to x(U)$ and $y:V\to y(V)$, the change $y\circ x^{-1}$ is defined on $x(U\cap V)$; it is not generally defined on all of $x(U)$. The charts are smoothly compatible if this map and its inverse are smooth in the sense of Euclidean calculus. An atlas consists of pairwise compatible charts covering the space. Including every chart compatible with this atlas gives its \emph{smooth structure}. By the Euclidean chain rule, two charts both compatible with a covering atlas are compatible with each other: near each common point insert a chart of the atlas between the two changes. Thus there is no further choice in passing to the maximal atlas. A smooth manifold is a topological manifold equipped with this extra structure.
+
+\begin{example}[Reading an atlas on the sphere]\label{f:stereo}
+Give $S^2=\{(X,Y,Z):X^2+Y^2+Z^2=1\}$ its subspace topology. The lines through the north pole give coordinates $(u,v)=(X,Y)/(1-Z)$ on its complement. With $r^2=u^2+v^2$ the inverse there is
+\[
+ (X,Y,Z)=\frac{(2u,2v,r^2-1)}{1+r^2}.
+\]
+Indeed the vector on the right has squared length one and $1-Z=2/(1+r^2)$. At the south pole the chart gives $(0,0)$; it is the \emph{north} pole which has no coordinates here. The chart from the other pole is $(X,Y)/(1+Z)$. On the overlap the change is $(u,v)\mapsto (u,v)/r^2$, a smooth involution of the punctured plane. These two charts cover the sphere. No global coordinate is required. In fact no single planar chart can cover $S^2$: its image would be a nonempty compact open subset of $\mathbb R^2$, which does not exist. The last argument is topological; the compatibility calculation is smooth.
+\end{example}
+
+For a map $F:M\to N$, assume first that $F$ is continuous. In charts near $p$ and $F(p)$ its representative is $y\circ F\circ x^{-1}$, restricting the domain to $x(U\cap F^{-1}(V))$ as needed. The map is \emph{smooth} when these representatives are smooth. Testing in one pair about each point suffices: changing either chart only pre- or post-composes with a smooth map. Equivalently one may ask directly for such local smooth representatives on open neighborhoods; this implies continuity. Smooth maps compose, and a smooth bijection with smooth inverse is a diffeomorphism. Neither bijectivity nor a merely topological inverse implies this last property.
+
+We use the following Euclidean theorem (the inverse function theorem): a $C^1$ map between open subsets of $\mathbb R^n$ with invertible Jacobian at a point restricts on neighborhoods to a $C^1$ diffeomorphism; if the map is smooth so is the inverse. It is a \emph{local} assertion. The exponential parametrization $t\mapsto(\cos t,\sin t)$ of the circle is locally invertible as a map of one-manifolds, but is not globally injective. The distinction will matter for both coordinates on a hypersurface and coordinates obtained by following geodesics.
+
+\section{Germs, velocities and the tangent space}
+A curve $c:(-a,a)\to M$ through $p=c(0)$ differentiates every smooth real function $h$ near $p$: it gives $(h\circ c)'(0)$. This operation cannot distinguish two functions which agree on a neighborhood of $p$, however different they are far away. Their equivalence class under local equality is a \emph{germ} at $p$; the real smooth germs form an algebra under pointwise addition and multiplication on common neighborhoods. Evaluation $h\mapsto h(p)$ is well defined on it.
+
+\begin{definition}
+A tangent vector at $p$ is a real-linear map $X$ from the algebra of smooth germs at $p$ to $\mathbb R$ such that $X(hk)=h(p)X(k)+k(p)X(h)$. The space of these maps is $T_pM$. An operation obeying this product rule is a derivation at $p$.
+\end{definition}
+No coordinates occur in this definition. Why should it give exactly $n$ numbers? In a chart write $x_0=x(p)$. After shrinking to a convex coordinate ball, the fundamental theorem of calculus along line segments gives
+\[
+ h(x)-h(x_0)=\sum_{j=1}^n(x^j-x_0^j)h_j(x),\qquad
+ h_j(x)=\int_0^1\partial_j h(x_0+t(x-x_0))\,dt .
+\]
+Here $h$ in coordinates denotes $h\circ x^{-1}$; $h_j$ is smooth and $h_j(x_0)=\partial_j h(x_0)$. Since $X(1)=2X(1)$, $X$ kills constants. Applying it to the displayed expression gives
+\begin{equation}
+ X(h)=\sum_j X(x^j)\,\partial_j h(x_0).\label{f:tangent-coords}
+\end{equation}
+Conversely this formula with arbitrary coefficients is a derivation. The $n$ coordinate derivatives $\partial/\partial x^j|_p$ form a basis; the coefficients of the same vector in a new chart are $X(y^a)=\sum_j(\partial y^a/\partial x^j)X(x^j)$. In particular these numbers do not specify a new point of $M$. They specify a linear probing operation at one particular point.
+
+The velocity of $c$ is precisely the derivation described at the start of the section. Every derivation is realized by a curve: in a chart take the straight line through $x_0$ with coordinates of velocity $X(x^j)$, then apply $x^{-1}$ for sufficiently small positive and negative parameters. Different curves give the same tangent vector exactly when their first coordinate derivatives agree in one, hence every, chart. Unlike the definition by derivations, this last proof uses the fact that $x_0$ lies in an \emph{open} Euclidean set. On a closed half-line, a two-sided curve through the endpoint cannot have velocity into either half at that instant. This will not cause the dimension of the tangent space to drop.
+
+\section{Differentials, covectors and rank}
+A smooth map $F:M\to N$ pushes a tangent vector forward by precomposing what the vector differentiates. For a test germ $h$ at $F(p)$ define
+\[
+ (dF_p X)(h)=X(h\circ F).
+\]
+The product rule for $X$ proves that this is a derivation at $F(p)$. In coordinates its matrix has entries $\partial (y^a\circ F)/\partial x^j$ at $p$. The germ formula yields $d(G\circ F)_p=dG_{F(p)}\,dF_p$ by associativity of composition. In particular $dF_p$ is invertible for a diffeomorphism. The converse in equal dimensions holds locally by the inverse function theorem. The \emph{rank} of $F$ at $p$ is the dimension of the image of this linear map: the chain rule proves it cannot be changed by choosing different coordinates.
+
+A covector at $p$ belongs to the dual space $T_p^*M=\operatorname{Hom}(T_pM,\mathbb R)$. For a real function $f$, $df_p(X)=X(f)$. In a chart the $dx^i$ are dual to the coordinate derivatives. The operation on covectors induced by $F$ goes in the other direction:
+\[
+ F^*\eta=\eta\circ dF_p\ \in T_p^*M,\qquad \eta\in T_{F(p)}^*N .
+\]
+For example, take $F(u,v)=(u,uv)$ from the plane to a plane with coordinates $x,y$. Then $F^*dy=v\,du+u\,dv$, and $dF(\partial_v)=u\,\partial_y$. At $u=0$ the map annihilates one tangent direction but still pulls back any covector. One cannot in general push a covector forward: it would have to assign a value to every target vector although $dF$ might miss some, and give one answer for all preimages although some vectors may be collapsed. This distinction is why restriction to a submanifold will require no choice of normal direction.
+
+\section{Vector fields, brackets and flows}
+The disjoint union of the spaces $T_pM$, with their points of attachment retained, is the tangent bundle $TM$. On a coordinate patch describe it by $(x,v)$ with $v\in\mathbb R^n$; the transition is $(x,v)\mapsto(y(x),D y(x)v)$. It is smooth with smooth inverse. This is our first example of a space built from local vector spaces, to be studied in Chapter~\ref{f:bundles}. A vector field $X$ assigns to each $p$ a vector in $T_pM$ with smooth coordinate coefficients. It differentiates a function to another function: $(Xf)(p)=X_p(f)$. The product rule holds at each point.
+
+For two smooth vector fields define the bracket $[X,Y]f=X(Yf)-Y(Xf)$. The second derivatives of $f$ cancel because they are symmetric, giving
+\[
+ [X,Y]^j=\sum_i\big(X^i\partial_iY^j-Y^i\partial_iX^j\big).
+\]
+It is a vector field, independent of coordinates by its original definition. The commutator of operators satisfies the Jacobi identity: expanding the three double commutators $[X,[Y,Z]]$ and its cyclic permutations cancels each ordered product of three operators twice with opposing signs. The bracket is real bilinear, but $[X,fY]=(Xf)Y+f[X,Y]$; in particular it is not a bilinear operation on tangent vectors at just one point.
+
+A local flow $\Phi^X_t(p)$ solves $\partial_t\Phi_t^X(p)=X_{\Phi_t^X(p)}$, $\Phi_0^X(p)=p$. In charts this is a system of ordinary differential equations. Local existence, uniqueness and smooth dependence on the initial point glue the local solutions; uniqueness also gives $\Phi_t^X\circ\Phi_s^X=\Phi_{t+s}^X$ wherever both sides are defined near the trajectory. Each fixed-time map there has inverse $\Phi_{-t}^X$. A vector field is complete if these maps are defined for every real time and starting point. The equation $\dot x=x^2$ on the whole real line has solution $x(t)=x_0/(1-tx_0)$, so a smooth field need not be complete.
+
+The bracket has an observable geometric effect even in the plane. Take $X=\partial_x$, $Y=x\partial_y$. Flow first by $X$ for time $s$, then by $Y$ for time $t$, then undo the first and the second flows in this same order. The four points are $(x+s,y)$, $(x+s,y+(x+s)t)$, $(x,y+(x+s)t)$ and $(x,y+st)$. The displacement is $st\,\partial_y$, agreeing here exactly with $st[X,Y]$. Thus mixed changes of position can measure a derivative of a vector field that inspection at the starting point alone misses.
+
+\Needspace{.58\textheight}
+\section*{Exercises}
+\begin{exercise}The underlying real line is coordinatized in one atlas by $x$ and in another by $u=x^3$. Show that the identity from the first structure to the second is smooth while its inverse is not. Are the two manifolds nevertheless diffeomorphic?\end{exercise}
+\noindent\emph{Solution.} The identity is represented by $x\mapsto x^3$, with inverse not differentiable at zero. A different point map, $x\mapsto\sqrt[3]{x}$ in the underlying real numbers, has coordinate representative $u(\sqrt[3]{x})=x$, a smooth map with smooth inverse. An identification of point sets and an abstract isomorphism of smooth manifolds are different assertions.
+\begin{exercise}In the sphere atlas of Example~\ref{f:stereo}, differentiate the transition at $(u,v)=(2,0)$ and find the components of the old vector $\partial_u+\partial_v$ in the new coordinates. Is the transition orientation preserving?\end{exercise}
+\noindent\emph{Check.} Its matrix there is $\operatorname{diag}(-1/4,1/4)$. At a general nonzero point inversion reverses the radial direction and preserves the transverse one, both with scale $1/r^2$. Its determinant is $-1/r^4$. A convention for oriented charts will have to account for this sign.
+\begin{exercise}The map $i(t)=(\cos t,\sin t)$ takes $\mathbb R$ to the plane. Apply its differential and the pullback of the plane covector field $-y\,dx+x\,dy$ to $\partial_t$. Explain why this does not assign a globally defined real angle to the circle.\end{exercise}
+\noindent\emph{Solution.} $di(\partial_t)=(-\sin t,\cos t)$, on which the covector has value one, so the pullback is $dt$. But $i(t+2\pi)=i(t)$ while $t+2\pi\ne t$; the real function $t$ does not descend. Its derivative need not share its obstruction to descent.
+\begin{exercise}Prove that every smooth vector field on a compact manifold without boundary is complete. Why does the same assertion fail for a vector field on a closed interval when the endpoints are part of the space?\end{exercise}
+\noindent\emph{Hint.} At each point, smooth ODE theory gives a common positive existence time for initial points in a smaller neighborhood. Use a finite cover, take a minimum, and restart the solution. On $[0,1]$ the constant field $+\partial_x$ cannot be followed forward from $1$ inside the interval.

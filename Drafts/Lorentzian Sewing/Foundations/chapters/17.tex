@@ -1,0 +1,90 @@
+% !TeX root = ../main.tex
+\chapter{A field on a compact spatial circle}\label{f:capstone}
+Consider a small static source placed at a point of a compact one-dimensional space. Does the static field produced at the source depend on how field values on that space are identified? And if the static response at that point is finite, is the vacuum fluctuation there finite too? We shall obtain three different kernels for the same system. Each answers exactly one of these questions: the inverse of a positive spatial operator; the difference of causal inverses of a spacetime equation; and a positive two-point function. They involve the same frequencies with different weights.
+
+\section{The domain comes before the operator}
+Take two intervals of lengths $d_1,d_2>0$ at each real time. Pair their ends cyclically at equal time, using the common flat metric $-dt^2+dx_i^2$, increasing future time, and no sheet action. The base is $\mathbb R\times S^1_L$, where $L=d_1+d_2$: use $X=x_1$ on the first interval and $X=d_1+x_2$ on the second, modulo $L$. At each paired endpoint the signed chart of Chapter~\ref{f:submanifolds} proves that these are smooth coordinates across the join, not just a parametrization by equivalence classes. Every constant-time circle is Cauchy. Indeed a causal curve parametrized by $t$ has spatial speed at most one. If the range of $t$ had a finite endpoint the spatial curve would have a limit on the compact circle, and the curve could be continued. Thus a future-directed inextendible curve passes each time exactly once.
+
+Use a real Euclidean line as field fiber. Choose signs $a,b$ for the transitions, in cyclic order, and no fixed frames on the two pieces. Changing the second frame by $a$ makes the first transition $+1$ and the second $H=ba$. In a lifted real coordinate the field component then satisfies
+\begin{equation}
+ u(t,X+L)=H u(t,X),\qquad H=(-1)^\epsilon,\quad \epsilon\in\{0,1\}.\label{f:twist-domain}
+\end{equation}
+The coefficient of the derivative in this common frame has the same transition. In fact if at first only values are matched, varying the homogeneous scalar action gives at the first join the coefficient $-u_{1,x}(d_1)+a\,u_{2,x}(0)$ multiplying the common variation on side 1. Its vanishing matches both slopes in the common frame, and the return join works the same way. This derivation is why the domain of the operator below involves \emph{two} endpoint conditions; it is not obtained by varying each interval with a free, unrelated endpoint.
+
+For $m>0$ let $A=-d^2/dX^2+m^2$ on the complexification of the space of spatial sections. Its Hilbert space in this description is $L^2(0,L)$ with inner product $\int_0^L\bar f g\,dX$. Set $D(A)=\{f\in H^2(0,L): f(L)=H f(0),\ f'(L)=H f'(0)\}$. These are traces of $H^2$ functions, not values assigned to arbitrary $L^2$ representatives. Integration by parts twice gives the boundary form $[\bar f'g-\bar f g']_0^L=0$ for $f,g\in D(A)$, since $H^2=1$ as a sign. Also $\langle f,Af\rangle=\|f'\|^2+m^2\|f\|^2$. To see self-adjointness rather than merely symmetry, it is useful to exhibit a complete diagonalization.
+
+\subsection{Why the modes are complete}\label{f:circle-fourier}
+Set $k_n=(2\pi n+\pi\epsilon)/L$ and $e_n(X)=L^{-1/2}e^{ik_n X}$ for $n\in\mathbb Z$. Multiplication by $e^{-i\pi\epsilon X/L}$ identifies the twisted Fourier family with the ordinary periodic one and is unitary on $L^2$. For completeness of the periodic family, in the $2\pi$ angle coordinate use the Fej\'er kernels
+\[
+ F_N(\theta)=\frac1N\left|\sum_{j=0}^{N-1}e^{ij\theta}\right|^2 .
+\]
+They are nonnegative trigonometric polynomials of integral $2\pi$. Outside any arc about zero the geometric-sum formula bounds them by a constant divided by $N$. Convolution with $F_N/(2\pi)$ therefore converges uniformly to every continuous periodic function by uniform continuity. Continuous functions are dense in $L^2$ (already smooth functions supported in the open interval are dense there). This proves completeness. On the domain, integration by parts gives $(Af)_n=\omega_n^2f_n$, with $\omega_n=\sqrt{k_n^2+m^2}$. Conversely a sequence with $\sum(1+k_n^2)^2|f_n|^2<\infty$ has partial sums Cauchy in $H^2$, which converges on the interval and retains both trace conditions. The two descriptions of the domain thus agree. Multiplication by the real numbers $\omega_n^2$ on this maximal square-summability domain is self-adjoint: testing an adjoint candidate against individual basis vectors forces exactly the same coefficient condition.
+
+\section{A point source and a static measurement}\label{f:static-circle}
+A unit point source at $X=0$ is specified relative to a chosen unit vector in that fiber. Transport all reported values to the frame on the lift. The static response is $A^{-1}\delta_0$ in that frame, with value at the source given by the kernel $K_H(0)$. In one spatial dimension $\delta_0$ is not in $L^2$, but the pairing with an $H^1$ section is continuous: use its Fourier series and Cauchy--Schwarz with $\sum(1+k_n^2)^{-1}<\infty$. Despite the point source, the inverse has enough smoothing for its value to exist. Indeed its Fourier kernel with second argument zero is
+\[
+ K_H(X)=\frac1L\sum_{n\in\mathbb Z}\frac{e^{ik_n X}}{k_n^2+m^2} .
+\]
+The sum converges absolutely and uniformly. Testing against a smooth section shows distributionally $AK_H=\delta_0$, since the twist-Fourier delta evaluates the test at zero. Changing the frame at the source changes both the components of the unit source and the returned field. The diagonal kernel, as the scalar of a linear map on the same fiber, does not depend on that choice.
+
+There is a second computation which does not need a summation identity. On the real line, $K_\infty(X)=e^{-m|X|}/(2m)$ solves the homogeneous equation off zero and has derivative jump $-1$, exactly what the leading $-d^2/dX^2$ requires. Add its translates with factors $H^j$. The series $\sum_{j\in\mathbb Z}H^j K_\infty(X+jL)$ converges locally uniformly, has precisely this jump per fundamental interval, and obeys the required transition. It agrees with the spectral answer by uniqueness (a homogeneous difference has zero positive quadratic form). On $0\le X\le L$, summing the two geometric series gives
+\begin{align}
+ K_H(X)&=\frac{e^{-mX}+H e^{-m(L-X)}}{2m(1-He^{-mL})},\nonumber\\
+ K_+(0)&=\frac{1}{2m}\coth\frac{mL}{2},\qquad
+ K_-(0)=\frac{1}{2m}\tanh\frac{mL}{2}.\label{f:static-measurement}
+\end{align}
+For example $K_H(L)=H K_H(0)$ and $K'_H(0^+)-H K'_H(L^-)=-1$. These are checks at the source, where matching equal slopes would have been incorrect. Far from the massless limit both sectors tend to the infinite-line response as $mL\to\infty$ at fixed $m$. As $m\downarrow0$ at fixed $L$, $K_+(0)=1/(Lm^2)+L/12+O(m^2L^3)$, while $K_-(0)\to L/4$. In the periodic sector a constant mode obstructs inversion at zero mass for a source with nonzero total integral. In the twisted sector no such mode exists. A local detector distinguishes two global domains without any force added at either artificial join.
+
+\section{The causal inverse and the commutator}
+Return to $P=\Box-m^2=-(\partial_t^2+A)$. In each spatial mode, a unit time impulse forces the retarded response
+\[
+ g^R_n(\tau)=-\mathbf1_{\tau>0}\frac{\sin(\omega_n\tau)}{\omega_n},\qquad
+ g^A_n(\tau)=\mathbf1_{\tau<0}\frac{\sin(\omega_n\tau)}{\omega_n},\quad \tau=t-t'.
+\]
+Both are continuous across zero with derivative jump $-1$. This proves $-(\partial_\tau^2+\omega_n^2)g_n^{R/A}=\delta$ as a distribution; the support distinguishes the two. For a smooth compact-in-time test source $f(t,X)$, spatial Fourier coefficients decay faster than any power locally uniformly in $t$ with all derivatives, by integration by parts and the twist conditions. Convolving them in time with $g_n^R$ and reconstructing the Fourier series gives a smooth solution with zero past data. Homogeneous energy uniqueness and finite propagation as in Chapter~\ref{f:waves} identify this solution as the retarded inverse, not just an operator whose output happens to vanish before its input starts. The advanced inverse is obtained with zero future data. Subtracting gives the causal distribution kernel
+\[
+ E(t,X;t',X')=-\sum_n e_n(X)\overline{e_n(X')}\frac{\sin(\omega_n\tau)}{\omega_n} .
+\]
+The sum is used after smearing. Replacing $(t,X)$ by $(t',X')$ changes its sign since conjugation interchanges $n$ with $-n-\epsilon$. Unlike $K_H$, it solves the \emph{homogeneous} spacetime equation in both variables: its derivative jumps in the two inverses cancel. The field commutator is $iE$ in units $\hbar=1$. Nothing in the subtraction asks for an inner product on a space of particles or a ground state.
+
+\section{Which kernel may be evaluated at a point?}
+There is time-translation symmetry on this cylinder. Selecting modes $e^{-i\omega_n t}$ of positive energy gives the candidate two-point kernel
+\begin{equation}
+ W_H(t,X;t',X')=\sum_n\frac{e_n(X)\overline{e_n(X')}}{2\omega_n}\,e^{-i\omega_n(t-t')} .\label{f:circle-two-point}
+\end{equation}
+For a complex test $f$ put $c_n(f)=\int e^{i\omega_n t}\overline{e_n(X)} f(t,X)\,dt\,dX$. Smearing $\bar f$ in the first slot and $f$ in the second gives $\sum_n |c_n(f)|^2/(2\omega_n)\ge0$. The mode equation makes the kernel a bisolution, and $W_H-W_H^{\mathrm{op}}=iE$ by the sine identity. It defines a positive quasifree state by Chapter~\ref{f:quantum}. These properties still do not say the kernel is a function at coincidence. In fact a formal equal-point sum is $(2L)^{-1}\sum_n1/\omega_n$, divergent like the harmonic series. The difference between this and the convergent static sum is one power of frequency, not a change of geometry. Nor does replacing a vacuum by another admissible state remove the local singularity: adding $c\,u(x)u(x')$ with $c\ge0$ and $u$ a real smooth solution changes the positive symmetric part while leaving both the commutator and the singular directions unchanged.
+
+One can also see the local singularity directly. On the line at equal times the positive-frequency kernel off its diagonal is
+\[
+ W_\infty(0,X)=\frac1{2\pi}\int_{\mathbb R}\frac{e^{ikX}}{2\sqrt{k^2+m^2}}\,dk
+   =\frac1{4\pi}\int_0^\infty e^{-m^2s-X^2/(4s)}\frac{ds}{s} .
+\]
+The first integral is a Fourier transform in the distributional sense; insert a Gaussian cutoff or smear first. The second follows by the Laplace representation of the inverse square root and the Gaussian Fourier integral. At $X\ne0$ both endpoints of the $s$ integral converge, and near $X=0$ the singularity is logarithmic. For instance, $X^2\ll s\ll m^{-2}$ contributes the logarithm, and substituting $s=X^2 v$ at the small endpoint bounds the remainder from that endpoint. The kernel is $K_0(m|X|)/(2\pi)$ in terms of the modified Bessel function. At spacelike separation replace $|X|$ by $\sqrt{X^2-\tau^2}$: writing $k=m\sinh\theta$ shows $dk/\sqrt{k^2+m^2}=d\theta$ is boost invariant, so the time difference can be transformed to zero.
+
+To find the singularity also at unequal times, first damp the frequency integral by $e^{-a\omega}$ for real $a>0$, $\omega=\sqrt{k^2+m^2}$. The Gaussian identity
+\[
+ \frac{e^{-a\omega}}{\omega}=\frac1{\sqrt\pi}\int_0^\infty s^{-1/2}e^{-s\omega^2-a^2/(4s)}\,ds
+\]
+adds $a^2$ to $X^2$ in the integral above. Thus the damped kernel is $K_0(m\sqrt{X^2+a^2})/(2\pi)$. Both the damped mode integral and this Bessel expression are analytic for $\operatorname{Re}a>0$ with the square root of positive real part. Set $a=\varepsilon+i\tau$ there and take its distributional boundary value as $\varepsilon\downarrow0$. Write $Q=X^2-(\tau-i0)^2$ for this prescription. The expansion $K_0(z)=-I_0(z)\log(z/2)+b(z^2)$, with $b$ analytic near zero and $I_0(z)=\sum_{j\ge0}(z^2/4)^j/(j!)^2$ \cite[Eq.~10.31.2]{DLMF}, shows that the local singular part modulo smooth terms is
+\begin{equation}
+ -\frac{1}{4\pi}I_0(m\sqrt Q)\log(Q/\ell^2),\qquad \ell>0 .\label{f:circle-subtraction}
+\end{equation}
+Changing the reference length $\ell$ changes a smooth function. This is the logarithmic subtraction in \emph{two} spacetime dimensions; inserting the four-dimensional $1/\sigma$ term of \eqref{f:wf-parametrix} here would subtract the wrong singularity.
+
+Periodizing this flat kernel in the spatial difference with factors $H^j$ gives \eqref{f:circle-two-point}. Indeed taking the $n$th Fourier coefficient over an interval unfolds the translated intervals to the full line: $e^{ik_n jL}=H^j$ cancels the chosen image sign. This calculation can first be performed with a positive imaginary-time regulator $e^{-\varepsilon\omega_n}$ and then against smooth tests. Near any point of the diagonal choose the coordinate differences small enough that all $j\ne0$ images are spacelike with a fixed positive separation. Their sum is smooth there, with all derivatives locally uniformly convergent: for large spacelike distance $r$, the representation $K_0(mr)=\int_0^\infty e^{-mr\cosh v}dv$ and its differentiated versions give exponential bounds when $m>0$. Finitely many nearby nonzero images are individually smooth. Thus only the unshifted Minkowski singularity remains locally: the same subtraction \eqref{f:circle-subtraction} works in both sectors.
+
+There is now a finite fluctuation that can be compared. Define $\langle\Phi^2\rangle_{H,\ell}$ by subtracting \eqref{f:circle-subtraction} from the positive-frequency two-point function and then taking coincidence in a common local frame. The scalar result does not depend on a reversal of that frame. At fixed $m,L$ the unshifted term, including its smooth remainder, cancels in the difference. The even images cancel as well; the images at $jL$ and $-jL$ have equal values. Hence
+\begin{equation}
+ \langle\Phi^2\rangle_{+,\ell}-\langle\Phi^2\rangle_{-,\ell}
+   =\frac{2}{\pi}\sum_{j=0}^\infty K_0\big(m(2j+1)L\big)>0 .\label{f:relative-fluctuation}
+\end{equation}
+The integral representation above makes every term positive and gives exponential convergence. The difference is independent of $\ell$, not because either unrenormalized variance was finite, but because the two vacua have the same local subtraction. Only paths returning after an odd winding distinguish the two transports. The conclusion compares these particular vacua, not arbitrary states sharing their commutation relations.
+
+\Needspace{.52\textheight}
+\section*{Exercises}
+\begin{exercise}In the twisted sector put the detector half a circumference from the source. Evaluate $K_-(L/2)$ and interpret the result without invoking energy-level degeneracy.\end{exercise}
+\noindent\emph{Solution.} In the numerator of the image formula both exponentials are $e^{-mL/2}$, with opposite signs. The value is zero. Paths around the two sides have equal attenuation and opposite transport signs; in the image series they cancel in pairs.
+\begin{exercise}For a source with zero spatial average in the periodic massless theory, produce a static solution and describe exactly what remains undetermined.\end{exercise}
+\noindent\emph{Solution.} Divide the nonconstant Fourier components by $k_n^2$ and choose any constant component. The zero-average condition is the range condition; fixing the average of the solution selects a representative. At the level of the time equation the massless constant mode has two real initial data, not an oscillator vacuum of frequency zero.
+\begin{exercise}Restrict \eqref{f:circle-two-point} to a spacelike time slice in both variables. Why does the singular-direction criterion permit this restriction but not an ordinary scalar value at a coincident point?\end{exercise}
+\noindent\emph{Hint.} Locally the kernel depends on the two coordinate differences, so a singular covector pair must have the form $(k,-k)$. Apply Theorem~\ref{f:wf-propagation} to the homogeneous equation in the difference variables: $k$ must be null. At a spacelike slice a nonzero conormal is timelike. On a point all covectors are conormal; the sufficient criterion no longer applies there. In this example the positive divergent sum gives a separate direct obstruction to assigning the unsubtracted variance at a point. Not all pairs of points need be coincident to be singular in spacetime.

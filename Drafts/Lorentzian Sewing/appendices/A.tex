@@ -1,0 +1,71 @@
+\chapter{Orientations and calculus at a cut}\label{app:A}
+
+An outward flux has a sign even when the face has no unit normal. A corner has a sign too, but it depends on which face one took first. Both facts can be read off from a volume form. Throughout this appendix $n$ is the spacetime dimension, the metric has signature $(-,+,\ldots,+)$, and $\epsilon$ is the volume form for a chosen spacetime orientation. The initial and final slices, when named as slices, are both oriented as the boundary of their past. Thus it is $\Sigma_f-\Sigma_i$, not $\Sigma_f+\Sigma_i$, that occurs in the oriented boundary of a time slab.
+
+\section{Which way does the corner point?}
+
+On a smooth face $F$ of a region $R$, choose a defining function $s$ with $s\leq 0$ inside, $s=0$ on $F$, and $\mathrm{d}s\ne0$ there. If $N$ is any transverse vector with $\mathrm{d}s(N)>0$, a tangent frame $(e_1,\ldots,e_{n-1})$ of $F$ is positive precisely when $(N,e_1,\ldots,e_{n-1})$ is positive in $R$. This outward-first rule is the one in Stokes' formula. There is no metric in it. In particular at the top of a slab one can use $N=\partial_t$; raising the outward covector $\mathrm{d}t$ in Minkowski space would instead give $-\partial_t$.
+
+At the transverse intersection of two faces choose outward vectors $N_1,N_2$, each tangent to the other face, in a corner chart. For example if the coordinate inequalities are $s_1,s_2\leq0$, use $N_i=\partial_{s_i}$. The two successive boundary orientations are represented by
+\[
+ \iota_{N_2}\iota_{N_1}\epsilon
+       =-\iota_{N_1}\iota_{N_2}\epsilon
+\]
+on their common tangent space. Thus every codimension-two face of an ordinary manifold with corners occurs twice with opposite incidence signs in $\partial(\partial R)$. It does not vanish as a set; it vanishes in the oriented sum. If one sums over only some faces, there is no reason for their boundary to vanish. For example, if $\partial R=\Sigma_f-\Sigma_i+\Gamma$ with $\Gamma$ the entire lateral wall, then
+\begin{equation}
+ \partial\Gamma=-\partial\Sigma_f+\partial\Sigma_i .
+ \label{eq:app-a-wall-ends}
+\end{equation}
+When $\Gamma$ itself is divided into faces, the right side does not include their common edges: those cancel within $\partial\Gamma$. For face-dependent integrands there may nevertheless be an edge term, since the two values being integrated need not agree.
+
+Here is a sign check that works in any $n\geq2$. Take $t_i\leq t\leq t_f$, $x\leq0$, with volume $\mathrm{d}t\wedge\mathrm{d}x\wedge\epsilon_Y$ in a product chart. At the corner $t=t_f$, $x=0$, the final cap carries $\mathrm{d}x\wedge\epsilon_Y$ and its boundary carries $+\epsilon_Y$. The wall $x=0$ carries $-\mathrm{d}t\wedge\epsilon_Y$ and its final rim carries $-\epsilon_Y$. Performing the same computation at $t_i$ reverses the cap's sign as a face of $R$. In two spacetime dimensions $\epsilon_Y$ here is simply $1$; the calculation determines the sign of an endpoint in the elementary integration-by-parts formula.
+
+\section{Use a flux density, not a unit null normal}
+
+Write $\nu=\mathrm{d}s|_F$ for the outward conormal as a covector in the ambient cotangent space, and normalize a transverse vector by $\nu(N)=1$. If $j:F\hookrightarrow R$ is inclusion, put $\epsilon_\nu=j^*\iota_N\epsilon$. Replacing $N$ by $N+T$ with $T$ tangent does not change this form: evaluation would involve $n$ tangent vectors to an $(n-1)$-dimensional space. Decomposing any flux vector $V$ on the face as $\nu(V)N+T$ gives
+\begin{equation}
+ j^*\iota_V\epsilon=\nu(V)\epsilon_\nu,
+ \qquad \mathrm{d}\Sigma_\mu=\nu_\mu\,|\epsilon_\nu| .
+ \label{eq:app-a-flux-density}
+\end{equation}
+The first formula is for integration of forms with the induced orientation; the second uses a positive density and places the outward sign in the covector. If $s$ is replaced by $a s$, $a>0$, its differential on the face is $a\nu$ and $\epsilon_{a\nu}=a^{-1}\epsilon_\nu$. Consequently $\mathrm{d}\Sigma_\mu$ does not depend on this rescaling, even when $a$ varies along $F$. On a non-null face one can normalize $\nu$ to have squared norm $\varepsilon=\pm1$. Then $N=\varepsilon\nu^\sharp$ has the required pairing and $|\epsilon_\nu|$ is the induced metric volume density. On a null face $\nu^\sharp$ is tangent, not transverse. Nothing in \eqref{eq:app-a-flux-density} requires raising $\nu$.
+
+On opposite copies of one cut there are two equivalent ways to add fluxes. Pull a single flux \emph{form} back to both copies and integrate over their opposite boundary orientations. Alternatively, integrate two outward flux \emph{densities} with the same positive measure: it is then the outward conormals which are opposite. Inserting an extra orientation reversal into the density sum counts the sign twice. For the scalar Lagrangian $-\tfrac12(\nabla_\mu\phi\nabla^\mu\phi+m^2\phi^2)\epsilon$ the potential flux vector is $V^\mu=-\nabla^\mu\phi\,\delta\phi$. In a flat chart with orthonormal $t,x$, the potential on a future cap is $+\partial_t\phi\,\delta\phi$ per unit spatial volume. At the wall $x=0$, with $x\leq0$ to the left and $x\geq0$ to the right, the sum of the outward densities per unit wall volume is
+\[
+ (-\partial_x\phi_{\rm left}+\partial_x\phi_{\rm right})\,\delta q,
+ \qquad q=\phi_{\rm left}|_{x=0}=\phi_{\rm right}|_{x=0} .
+\]
+Thus releasing one trace enforces equality of the two derivatives taken along the \emph{same} $x$ direction, not equality of the two outward derivatives.
+
+For comparison take a null chart with metric $-2\,\mathrm{d}u\,\mathrm{d}v+h_{AB}\,\mathrm{d}y^A\mathrm{d}y^B$, oriented by $\mathrm{d}u\wedge\mathrm{d}v\wedge\epsilon_h$, and keep $u\leq0$. Here $\nu=\mathrm{d}u$, $N=\partial_u$, $\nu^\sharp=-\partial_v$, and $\epsilon_\nu=\mathrm{d}v\wedge\epsilon_h$. The same scalar potential has outward coefficient $V^u=+\partial_v\phi\,\delta\phi$. This derivative runs \emph{along} the generator. One can see exactly what it misses. In flat $1+1$ dimensions the massive equation $(-2\partial_u\partial_v-m^2)\phi=0$ restricts to a transport equation for the transverse derivative $b(v)=\partial_u\phi(0,v)$. If $q(v)=\phi(0,v)$, it gives
+\[
+ b(v)=b(v_0)-\tfrac12 m^2\int_{v_0}^{v}q(v')\,\mathrm{d}v' .
+\]
+Thus equal traces fix the change in $b$ \emph{along} the cut but not its starting value. A datum on a transversely intersecting null side can fix $b(v_0)$ (Chapter~\ref{ch:08}); without it even equal potential flux need not give a smooth join. The massless kink in Chapter~\ref{ch:07} is the special case in which the undetected difference is constant along the entire generator.
+
+\section{From a wall derivative to a cap potential}
+
+Let $\mathrm{d}$ denote the spacetime exterior derivative and $\delta$ the exterior derivative on field space, with $\mathrm{d}\delta=\delta\mathrm{d}$. Write $\delta L=E_a\delta\phi^a+\mathrm{d}\Theta$, so $\Theta$ is a spacetime $(n-1)$-form linear in variations. Keep the wall Lagrangian $\ell$ in $S=\int_R L+\int_\Gamma\ell$. Suppose the allowed wall variations obey the Harlow--Wu condition \cite[eqs.~(2.20)--(2.27)]{HW}
+\[
+ (\Theta+\delta\ell)|_\Gamma=\mathrm{d}_\Gamma C .
+\]
+The corner potential $C$ is a spacetime $(n-2)$-form and a field-space one-form. Applying \eqref{eq:app-a-wall-ends} after integrating the wall derivative, one finds
+\begin{equation}
+ \begin{aligned}
+  \delta S&=\int_R E_a\delta\phi^a+\theta_{\Sigma_f}-\theta_{\Sigma_i},\\
+  \theta_\Sigma&=\int_\Sigma\Theta-\int_{\partial\Sigma}C,
+  \qquad \omega_\Sigma=\delta\theta_\Sigma .
+ \end{aligned}
+ \label{eq:app-a-cap-potential}
+\end{equation}
+This assumes no separate cap action. Adding $B_f-B_i$ to the action adds $\delta B$ to the cap potential, but not to its two-form. There is a second useful freedom: replacing $\Theta$ by $\Theta+\mathrm{d}Y$ and $C$ by $C+Y|_\Gamma$ leaves \emph{the potential itself} unchanged, by Stokes on $\Sigma$. Changing just $C$ at an artificial cut is not this operation.
+
+One can check conservation without extending $C$ into the interior. On a solution and a pair of linearized solutions, $\mathrm{d}\delta\Theta=-\delta E_a\wedge\delta\phi^a$ vanishes. The pullback of $\delta\Theta$ to the wall need not vanish: it equals $\mathrm{d}_\Gamma\delta C$ on the allowed variations. Stokes on the slab and then on its wall consequently gives $\omega_{\Sigma_f}=\omega_{\Sigma_i}$. If the boundary history $q$ is opened instead, the face one-form may contain a response term $\Pi\,\delta q$ in addition to $\mathrm{d}_\Gamma C$. Its field variation is $\delta\Pi\wedge\delta q$, and the same computation leaves precisely this flux to be matched. Ignoring a surviving flux would make the answer depend on where the cap was drawn.
+
+\begin{exercise}[A tilted defining function]
+For the wall $x=0$ in the product chart, replace $x$ by $e^{b(t,y)}x$. Compute the wall density of a vector $V$ anew. \emph{Hint:} use $N=e^{-b}\partial_x$ on the wall. The factor multiplying $V^x$ in the conormal cancels the one in the surface element.
+\end{exercise}
+
+\begin{exercise}[An unmatched corner]
+Two adjacent cap pieces induce opposite orientations on $K$. Suppose that in the same corner orientation their potentials obey $C_1-C_2=p\,\delta q$ there, with $p,q$ independent data. What remains in the sum of the two cap two-forms? \emph{Answer:} $-\int_K\delta p\wedge\delta q$. It vanishes on a fixed-$q$ slice of field space, which is not a justification for dropping it after $q$ is released.
+\end{exercise}

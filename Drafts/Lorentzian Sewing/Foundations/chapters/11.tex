@@ -1,0 +1,108 @@
+% !TeX root = ../main.tex
+\chapter{Sobolev spaces and the trace problem}\label{f:traces}
+
+Suppose a sequence of smooth fields converges in the bulk. Must its restrictions to a dividing surface converge? For mean-square convergence the answer is no: a layer of unit height can become arbitrarily thin without changing its height at the surface. The thinner the layer, however, the larger its normal frequencies. We shall find how much control of these frequencies makes restriction continuous. The answer is different for the value of the field and for its flux through the surface.
+
+\section{Measuring derivatives in mean square}\label{f:sobolev-scale}
+
+Write $\langle\xi\rangle=(1+|\xi|^2)^{1/2}$, using the Euclidean length of the coordinate frequency, even when the coordinates describe a Lorentzian spacetime. A Lorentzian quadratic form changes sign and cannot supply a norm. With the convention \eqref{f:fourier-pair}, the \emph{Sobolev space} $H^s(\mathbb R^n)$, $s\in\mathbb R$, consists of the tempered distributions whose Fourier transforms are functions with finite norm
+\begin{equation}
+ \|u\|_{H^s}^2=(2\pi)^{-n}\int_{\mathbb R^n}\langle\xi\rangle^{2s}|\widehat u(\xi)|^2\,d\xi .\label{f:sobolev-norm}
+\end{equation}
+The inner product $(u,v)_{H^s}$ uses $\overline{\widehat u}\,\widehat v$ in place of $|\widehat u|^2$. Thus $H^0=L^2$ by Plancherel, while larger $s$ imposes a stronger condition at high frequencies. Multiplication by $(2\pi)^{-n/2}\langle\xi\rangle^s$ after Fourier transformation takes $H^s$ isometrically \emph{onto} $L^2$: dividing an $L^2$ function by this weight gives a tempered distribution by Cauchy--Schwarz against rapidly decreasing tests. Hence $H^s$ is complete. Schwartz functions are dense since their transforms, multiplied by the weight, still range over all Schwartz functions, a dense subspace of $L^2$.
+
+For an integer $m\geq0$ this definition says exactly that $u$ and all its distributional derivatives up to order $m$ belong to $L^2$. Indeed Plancherel and $\widehat{\partial^\alpha u}=(i\xi)^\alpha\widehat u$ give
+\[
+ \sum_{|\alpha|\leq m}\|\partial^\alpha u\|_2^2
+  =(2\pi)^{-n}\int\!\left(\sum_{|\alpha|\leq m}|\xi^\alpha|^2\right)|\widehat u|^2\,d\xi .
+\]
+Expansion of $(1+\sum_j\xi_j^2)^m$ gives the same monomials with positive coefficients, so the two norms bound one another up to constants. In particular $H^1$ measures weak first derivatives; it does not require a differentiable representative. For any real $s$, $|\xi_j|\leq\langle\xi\rangle$ shows that $\partial_j:H^s\to H^{s-1}$ is bounded.
+
+The Hilbert inner product on $H^s$ is not the pairing of a load with a field. For a field $q\in H^s$ and a load $F\in H^{-s}$ we use the pairing that equals $(q,F)_{L^2}$ when both entries are square integrable:
+\begin{equation}
+ \langle F,q\rangle=(2\pi)^{-n}\int\widehat F(\xi)\overline{\widehat q(\xi)}\,d\xi .\label{f:sobolev-duality}
+\end{equation}
+Insert weights $\langle\xi\rangle^{-s}$ and $\langle\xi\rangle^s$ in the two factors to get $|\langle F,q\rangle|\leq\|F\|_{H^{-s}}\|q\|_{H^s}$. Conversely take any bounded conjugate-linear functional of $q$. Proposition~\ref{f:hilbert-representation}, applied after complex conjugation, writes it as $(q,v)_{H^s}$ for some $v\in H^s$. Taking $\widehat F=\langle\xi\rangle^{2s}\widehat v$ in \eqref{f:sobolev-duality} represents this functional and $\|F\|_{H^{-s}}=\|v\|_{H^s}$. This is the identification of $H^{-s}$ with the \emph{anti-dual} of $H^s$; for real fields the distinction from the linear dual disappears. In the bilinear distribution notation the same functional is $q\mapsto F(\overline q)$ on smooth tests.
+
+\begin{exercise}[A point load]
+In what dimensions and for what $s$ does a point source belong to $H^{-s}(\mathbb R^n)$? Compare this with the continuity of point evaluation.
+\end{exercise}
+\noindent\emph{Solution.} The transform of $\delta_0$ is one. Its squared norm is proportional to $\int_0^\infty (1+r^2)^{-s}r^{n-1}\,dr$, finite exactly for $s>n/2$, with a logarithmic divergence at equality. Duality therefore gives exactly this condition for bounded point evaluation on smooth $H^s$ fields. Above the threshold $\widehat u\in L^1$ by the same weighted Cauchy--Schwarz inequality; Fourier inversion gives a continuous representative.
+
+\section{Restriction to a plane}\label{f:plane-restriction}
+
+Put $x=(y,r)\in\mathbb R^{n-1}\times\mathbb R$, $n\geq2$, with frequency $(k,\lambda)$, and write $a=\langle k\rangle$. For $u\in\mathcal S$, restriction $\gamma u=u(\cdot,0)$ removes one Fourier inversion:
+\begin{equation}
+  \widehat{\gamma u}(k)=\frac1{2\pi}\int_{\mathbb R}\widehat u(k,\lambda)\,d\lambda .\label{f:trace-fourier}
+\end{equation}
+Even arbitrarily high normal frequencies contribute at $r=0$ with no oscillatory cancellation. The following estimate controls their sum.
+
+\begin{theorem}[Trace on a hyperplane]\label{f:plane-trace}
+For $s>1/2$, restriction extends uniquely to a bounded surjection $\gamma:H^s(\mathbb R^n)\to H^{s-1/2}(\mathbb R^{n-1})$. It has a bounded linear right inverse. For $s\leq1/2$ there is no continuous restriction from $H^s$ even into distributions on the plane agreeing with restriction of Schwartz functions.
+\end{theorem}
+\begin{proof}
+Let $I_s=\int_{\mathbb R}(1+t^2)^{-s}\,dt$, finite for $s>1/2$. Apply Cauchy--Schwarz in \eqref{f:trace-fourier}, with the reciprocal weights in the two factors. Substitution $\lambda=at$ gives
+\begin{align*}
+  (2\pi)^2 |\widehat{\gamma u}(k)|^2
+  &\leq \underbrace{\int_{\mathbb R}(a^2+\lambda^2)^{-s}\,d\lambda}_{a^{1-2s}I_s}
+         \int_{\mathbb R}(a^2+\lambda^2)^s |\widehat u(k,\lambda)|^2\,d\lambda .
+\end{align*}
+Multiply by $a^{2s-1}$ before integrating in $k$. With the two different dimensions in \eqref{f:sobolev-norm} the result is $\|\gamma u\|_{H^{s-1/2}}^2\leq (I_s/2\pi)\|u\|_{H^s}^2$. Density gives the unique extension. For a general $u\in H^s$, the very same inequality makes the normal integral in \eqref{f:trace-fourier} absolutely convergent for almost every $k$ and identifies it with this extended trace.
+
+To recover a prescribed $q\in H^{s-1/2}$, make the two factors in Cauchy--Schwarz proportional as functions of $\lambda$. The normal integral must be $2\pi\widehat q(k)$, which fixes the coefficient:
+\begin{equation}
+ \widehat{R_s q}(k,\lambda)=\frac{2\pi}{I_s}\,a^{2s-1}(a^2+\lambda^2)^{-s}\widehat q(k).\label{f:trace-lift}
+\end{equation}
+Integrating in $\lambda$ gives $\gamma R_s q=q$. Integrating its squared modulus with the bulk weight gives $\|R_s q\|_{H^s}^2=(2\pi/I_s)\|q\|_{H^{s-1/2}}^2$, as the same normal integral appears once again. In particular the half-derivative loss cannot be reduced. For example, shift a fixed nonzero Fourier bump $\widehat q$ to frequency $Ne_1$ to obtain $\widehat q_N$. For $\delta>0$, the ratio of the $H^{s-1/2+\delta}$ and $H^{s-1/2}$ norms of $q_N$ grows like $N^\delta$. The fields $R_s q_N$ therefore violate any bound into the stronger space.
+
+At the endpoint we must rule out an estimate, not merely observe that our proof fails. Take a nonzero $h\in C_c^\infty(\mathbb R^{n-1})$ in frequency space. Let $0\leq\chi\leq1$ be smooth, one on $[-1,1]$ and zero outside $[-2,2]$. For $L>2$ set
+\[
+ b_L(\lambda)=\frac{\chi(\lambda/L)}{\sqrt{1+\lambda^2}},\quad
+ B_L=\int b_L(\lambda)\,d\lambda,\qquad
+ \widehat u_L(k,\lambda)=2\pi h(k)b_L(\lambda)/B_L .
+\]
+Then $u_L$ is Schwartz and its trace has transform $h$, independently of $L$. But $B_L$ grows like $\log L$ (integrate $1/\sqrt{1+\lambda^2}$ up to $L$). On the fixed support of $h$, $(a^2+\lambda^2)^{1/2}\leq C(1+\lambda^2)^{1/2}$, so $\|u_L\|_{H^{1/2}}^2\leq C' B_L/B_L^2\to0$, using $\chi^2\leq\chi$. The nonzero fixed traces could not converge even weakly to zero. The same sequence tends to zero in $H^s$ for every smaller $s$.
+\end{proof}
+
+The trace is thus a limit of restrictions, not evaluation of an arbitrary representative on a null set. For example, in $n=3$ multiply $|x|^{-1/4}$ by a smooth bump equal to one near zero. The product belongs to $H^1$: its squared gradient is of order $|x|^{-5/2}$, integrable with the radial measure $r^2dr$. Integrating by parts outside a ball of radius $\varepsilon$ leaves a boundary term of order $\varepsilon^{2-1/4}$, so there is no hidden first-derivative sheet. This field has an $H^{1/2}$ plane trace through zero but no continuous representative at the origin. Its value at that single point is not trace data.
+
+\begin{exercise}[What the right inverse does at $s=1$]
+Find the tangential Fourier transform $\widehat{R_1q}^{\,y}(k,r)$ at distance $|r|$ from the plane. Is this extension smooth across the plane for every smooth $q$?
+\end{exercise}
+\noindent\emph{Solution.} Here $I_1=\pi$. Direct integration on $r>0$ and $r<0$ gives $\int e^{-ir\lambda}e^{-a|r|}\,dr=2a/(a^2+\lambda^2)$. Hence \eqref{f:trace-lift} gives $\widehat{R_1q}^{\,y}(k,r)=e^{-a|r|}\widehat q(k)$. Its normal derivative jumps by $-2a\widehat q(k)$; a lift bounded in $H^1$ need not be a smooth continuation. Nor does this formula solve a time evolution problem.
+
+\section{One-sided fields and smooth boundaries}\label{f:localized-trace}
+
+Often the field is initially defined only on one side of the proposed cut. For an open $\Omega\subset\mathbb R^n$ define $H^s(\Omega)$ as the restrictions of whole-space $H^s$ distributions, with norm the infimum of $\|U\|_{H^s(\mathbb R^n)}$ over extensions $U$. Distributional restriction to an \emph{open} set only shrinks the test space: extend a compact interior test by zero. It is not restriction to the boundary. The infimum is a quotient norm, since vanishing on interior tests defines a closed subspace of $H^s$.
+
+Why is the trace on a half-space independent of the whole-space extension? For $s>1/2$ equip every parallel slice with the trace just constructed. Translation is continuous in $H^s$ (on transforms it multiplies by a phase tending to one); therefore $r\mapsto\gamma_r U$ is continuous in $H^{s-1/2}$. Integrating $\gamma_r U$ against a compact smooth test in $r$ recovers the distribution $U$ tested in that variable. This holds first for Schwartz fields and then by the uniform slice estimate. If $U$ vanishes in $r>0$, its slices paired with any tangential test vanish there as distributions of $r$, hence everywhere there by continuity. Letting $r\downarrow0$ gives $\gamma_0 U=0$. Apply this to the difference of two extensions.
+
+To pass to a curved face we use the following localization and extension facts \cite[Ch.~4, \S\S1--4]{Taylor}. For fixed real $s$, a smooth compactly supported multiplier is bounded on $H^s(\mathbb R^n)$; pullback by a smooth coordinate diffeomorphism, localized by cutoffs on relatively compact chart patches, is bounded in both coordinate descriptions. For a half-space, or a bounded domain with smooth boundary, and $s\geq0$, there is a bounded linear extension from $H^s(\Omega)$ into whole-space $H^s$ which restricts to the identity on $\Omega$. At nonnegative integral $s=m$ the restriction norms are equivalent on such domains to the norms formed from all interior weak derivatives through order $m$. In particular the extension applies to a field given originally by its weak derivatives on the domain. One should not extend a general field by \emph{zero}: a smooth nonzero boundary value then produces the jump in \eqref{f:jump-formula}.
+
+Here is the use of those facts. Flatten a smooth boundary in a chart, multiply the field by a cutoff supported within that chart, and extend the resulting half-space field. The flat trace estimate bounds its trace on the smaller patch where the cutoff is one. Independence of the extension and agreement on smooth fields identify the traces on overlaps by density. On a bounded smooth $\Omega$, finitely many such patches define $H^{s-1/2}(\partial\Omega)$ using tangential coordinates and a partition of unity. They give a bounded trace into this boundary space. To lift a given boundary field, split it with the partition of unity, use \eqref{f:trace-lift} on each flattened patch, multiply by a second cutoff equal to one on the boundary support of that piece, pull back and add. This gives a bounded right inverse on the smooth boundary. The same argument is local in a smooth manifold or a bundle frame. It does not assign independent values on meeting faces of a corner. Applied to a first derivative it gives an ordinary derivative trace in $H^{s-3/2}$ for $s>3/2$; an $H^1$ bound alone does not give that trace.
+
+\section{Flux without a pointwise normal component}\label{f:normal-flux}
+
+Let $\Omega$ be a bounded smooth Euclidean domain. For a smooth vector field $p$ the integration by parts identity for divergence involves $p\cdot\nu$, where $\nu$ is the outward unit normal. For an $L^2$ field this expression has no intrinsic boundary value. The identity itself admits an extension on the graph domain
+\[
+ H(\operatorname{div};\Omega)=\{p\in L^2(\Omega;\mathbb C^n):\operatorname{div}p\in L^2(\Omega)\},
+\]
+where the divergence is distributional and the squared graph norm is $\|p\|_2^2+\|\operatorname{div}p\|_2^2$. For the following argument we need the zero-trace characterization: on a bounded smooth domain, $\ker(\gamma:H^1(\Omega)\to H^{1/2}(\partial\Omega))$ is $H^1_0(\Omega)$, the closure in $H^1$ of compactly supported interior tests \cite[\S5.5, trace-zero theorem]{Evans}.
+
+\begin{proposition}[Weak outward flux]\label{f:weak-flux}
+There is a bounded normal-trace map $H(\operatorname{div};\Omega)\to H^{-1/2}(\partial\Omega)$ agreeing with $p\cdot\nu$ on smooth fields, with surface measure understood in the pairing.
+\end{proposition}
+\begin{proof}
+For $q\in H^{1/2}(\partial\Omega)$ choose $v\in H^1(\Omega)$ with trace $q$. Define
+\begin{equation}
+ \langle\gamma_\nu p,q\rangle=\int_\Omega\big((\operatorname{div}p)\overline v+p\cdot\nabla\overline v\big)\,dx .\label{f:flux-pairing}
+\end{equation}
+Two choices differ by an $H^1_0$ field. The expression on their difference vanishes for compact interior tests by definition of divergence, hence for their $H^1$ closure by Cauchy--Schwarz. Taking the bounded lift from the preceding section bounds the absolute value by $C\|p\|_{H(\operatorname{div})}\|q\|_{H^{1/2}}$. It therefore defines an element of the boundary anti-dual, denoted $H^{-1/2}$ using \eqref{f:sobolev-duality} in charts and the surface density. For smooth $p,v$ the divergence theorem gives exactly $\int_{\partial\Omega}(p\cdot\nu)\overline q\,dS$.
+\end{proof}
+
+In a coordinate patch one can use the components of a vector density and its coordinate divergence in the same integral. The normal flux is then a boundary density; no Lorentzian unit normal is needed to define it. For example $p=A\nabla u$ belongs to $L^2$ when $A$ is bounded and $u\in H^1$. The additional requirement $\operatorname{div}(A\nabla u)\in L^2$ is an equation-domain condition, not part of the definition of $H^1$. This is how a differential equation can supply a flux which the field's Sobolev index alone did not provide.
+
+\begin{exercise}[Testing the joined flux]
+A smooth interface separates two domains. Let $p_\pm$ be in the divergence graph domain on their sides and define $p$ by joining them off the interface. On tests supported away from the exterior boundary, compute $\operatorname{div}p$ and identify the matching condition for an $L^2$ divergence across the cut.
+\end{exercise}
+\noindent\emph{Solution.} Apply \eqref{f:flux-pairing} on each side with the same test $v$. The action of $\operatorname{div}p$ on $\overline v$ is the sum of the two bulk pairings with $\operatorname{div}p_\pm$, \emph{minus} $\langle\gamma_{\nu_-}p_-+\gamma_{\nu_+}p_+,\gamma v\rangle$. The interface term vanishes when the outward fluxes sum to zero. Conversely if the global divergence belongs to $L^2$, it equals the two bulk divergences almost everywhere, since the interface has measure zero. Their difference on tests must therefore vanish. Every smooth compact face test can be lifted in a collar, so the sum of the outward fluxes is zero there as a distribution.

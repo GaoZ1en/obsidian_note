@@ -1,0 +1,74 @@
+% !TeX root = ../main.tex
+\chapter{Submanifolds, boundaries and gluing}\label{f:submanifolds}
+A subset may be specified by listing its points, giving a parametrization, or setting functions equal to zero. These descriptions need not display the same information: $y=0$ and $y^2=0$ give the same line, but differentiating the second equation along it gives no constraint at all. We first learn how to recognize a smooth subset from an equation. After that, an inequality will let us keep \emph{one side} of the subset, and a coordinate construction will let us attach another side again.
+
+\section{Parametrizations and regular level sets}
+A smooth map $i:N\to M$ is an \emph{immersion} if $di_p$ is injective at every point, a map $F:M\to Q$ is a \emph{submersion} if $dF_p$ is surjective everywhere, and a smooth embedding is an immersion that is a homeomorphism onto its image with the subspace topology. One can see the local meaning of these conditions with only the inverse function theorem.
+
+\begin{theorem}[Local rank theorem]\label{f:rank}
+If the rank of $F:M^n\to Q^m$ is constantly $r$ on a neighborhood of an interior point, then suitable coordinates near the point and its image put $F$ in the form $(s,t)\mapsto(s,0)$, with $s$ having $r$ entries.
+\end{theorem}
+\begin{proof}
+Reorder source and target coordinates so the minor $\partial(F^1,\ldots,F^r)/\partial(x^1,\ldots,x^r)$ at the point is invertible. Replace the first $r$ source coordinates by $(F^1,\ldots,F^r)$ and keep the others. The new coordinate map has invertible derivative, hence a smooth local inverse. Now $F(s,t)=(s,G(s,t))$. A column from differentiating in $t$ has zero top block. If its lower block were nonzero, that column would be independent of the first $r$ columns. Thus $\partial_tG=0$ throughout a smaller product neighborhood, and $G(s,t)=g(s)$ there. The target coordinate change $(y,z)\mapsto(y,z-g(y))$ with its evident inverse gives the required form. Translations may be used to center the charts. Maximal rank at a point persists on a neighborhood; rank smaller than the maximum at a single point need not.
+\end{proof}
+An \emph{embedded submanifold} of dimension $k$ has, at each point, an ambient chart in which the subset is exactly the slice $x^{k+1}=\cdots=x^n=0$. Such charts give it its own smooth structure and make its inclusion an embedding. Conversely the local rank theorem gives slice charts near each \emph{source} point of an immersion; for an embedding the subspace topology lets us shrink the ambient neighborhood so that no other part of the image enters this slice chart. An immersion alone need not have that property. For example, $t\mapsto(\sin t,\sin 2t)$ on the circle has derivative $(\cos t,2\cos 2t)$ never zero, but the parameters $0$ and $\pi$ give a crossing at the origin.
+
+\begin{corollary}[Regular level sets]\label{f:regular-value}
+For $F:M^n\to\mathbb R^r$, suppose $dF_p$ is onto at each $p\in F^{-1}(a)$. Then the nonempty level set $N=F^{-1}(a)$ is an embedded submanifold of codimension $r$, and under the inclusion $T_pN=\ker dF_p$.
+\end{corollary}
+\begin{proof}
+Use the rank theorem at each point of the level. In the new coordinates $F$ is projection onto $r$ coordinates (up to target coordinate change). Fixing their values leaves $n-r$ free coordinates; velocities in these and only these coordinates are annihilated by $dF_p$. Restriction of the ambient charts supplies the subspace topology. No condition on distant levels is required.
+\end{proof}
+For the sphere of radius $R>0$ the differential of $X\mapsto X\cdot X$ at a point of the sphere is $v\mapsto2X\cdot v$, which is nonzero. Thus its tangent vectors satisfy $X\cdot v=0$. At radius zero there is no such regular-value argument: the set is a point but the kernel is the entire ambient space. On the parabola $y=x^2$ the defining function $\rho=y-x^2$ has $d\rho=dy-2x\,dx\ne0$. The coordinates $(x,\rho)$ show both the curve and its two sides. The function $\rho^2$ has the same zero set and neither a useful sign nor a useful differential there.
+
+\section{Directions along and across a subset}\label{f:normal}
+The codimension of $N^k\subset M^n$ counts transverse linear directions, not a choice of $n-k$ distinguished arrows. Define the \emph{normal space} as $T_pM/T_pN$ and its dual, the \emph{conormal space}, as
+\[
+ N^*_pN=\{\xi\in T_p^*M:\xi(v)=0\text{ for every }v\in T_pN\} .
+\]
+A functional on the quotient is exactly a functional constant on addition of tangential vectors; this proves the identification without a metric. For the regular level of $(F^1,\ldots,F^r)$, the independent $dF^j_p$ span this annihilator by the corollary and dimension count. These spaces vary smoothly in slice charts and give normal and conormal bundles, examples of the construction in Chapter~\ref{f:bundles}. The pullback of each defining differential \emph{to} $N$ is zero, although it is useful as an ambient covector \emph{along} $N$.
+
+Two embedded submanifolds $A,B$ meet transversely when $T_pA+T_pB=T_pM$ at every common point. Near such a point make $B$ the regular level of a submersion $F$; transversality is precisely surjectivity of $d(F|_A)$. The regular-level theorem applied on $A$ makes $A\cap B$ an embedded submanifold of the expected codimension and gives $T_p(A\cap B)=T_pA\cap T_pB$. If one already has a submanifold intersection with this last equality, one calls the intersection \emph{clean}; the sum need not exhaust $T_pM$. A plane in three-space taken twice meets itself cleanly, not transversely. The $x$-axis and the parabola $y=x^2$ meet at a point with equal tangent lines, so they do not even meet cleanly. This is why the shapes of the sets, not just the number of constraints in a list, enter intersection arguments.
+
+\section{What changes at a boundary}
+A smooth manifold with boundary uses charts onto relatively open parts of $[0,\infty)\times\mathbb R^{n-1}$ as well as interior charts. More generally a manifold with corners has local models $[0,\infty)^k\times\mathbb R^{n-k}$. A function or coordinate change is smooth up to the walls if locally it is the restriction of a smooth map on an open Euclidean neighborhood; a change must have a smooth inverse in the same sense. Partial derivatives of extensions at a wall are unique: any two extensions agree on the nearby open interior, hence so do their derivatives by continuity up to the wall. The derivation argument of Chapter~\ref{f:smooth} therefore still gives $T_pM$ dimension $n$.
+
+Near a point where exactly $k$ nonnegative coordinates vanish, velocities of curves starting there for $t\geq0$ fill the cone $v^i\geq0$ for those $k$ coordinates. Any such velocity is realized by a ray in a small model chart. The maximal linear subspace inside that cone has dimension $n-k$; the differential of a change of charts, and that of its inverse, map the inward cones into one another. Thus $k$, the \emph{depth}, is intrinsic. The loci of fixed depth have smooth pieces called strata. We use regions with specified embedded faces: each local wall is part of an indicated closed boundary hypersurface, and different incident walls belong to different faces. This excludes identifications between local walls of the same face when counting corners. A stratum of codimension two belongs to two faces in a quadrant; it is not itself a third boundary hypersurface.
+
+A collar of an embedded boundary face $F$ identifies a neighborhood with $[0,\epsilon)\times F$ and sends $(0,p)$ to $p$. For the unit disk one explicit collar is $(r,p)\mapsto (1-r)p$, $p\in S^1$, $0\le r<1/2$; its inverse reads off radius and direction. Ordinary smooth manifolds with boundary admit collars (the collar theorem, see \cite{LeeSM}); the local mechanism is flow from the boundary along a smooth inward transverse vector field. Near one point the differential at time zero maps boundary tangent directions identically and the time direction to the chosen transverse vector. The inverse function theorem in an extended chart then gives a local product. Global control of width, and corners requiring simultaneous products for several walls, are additional matters. In the next construction the compatible product collars are \emph{data}; they are not inferred from the existence of a single face diffeomorphism.
+
+\section{A gluing theorem with checkable hypotheses}\label{f:glue-space}
+Suppose $F_-$ in $R_-$ is matched to $F_+$ in $R_+$ by a diffeomorphism $f$. Begin with the quotient of $R_-\sqcup R_+$ identifying only matched \emph{face points}. Let $c_\pm$ be the inward collars and $y$ a coordinate chart on $F_-$. On the two halves of a neighborhood use respectively
+\[
+ [c_-(r,p)]\longmapsto(-r,y(p)),\qquad
+ [c_+(r,f(p))]\longmapsto(r,y(p)).
+\]
+The formulas agree at zero. For a target pair $(s,z)$ the inverse uses $p=y^{-1}(z)$, choosing the first collar with parameter $-s$ when $s\le0$ and the second with parameter $s$ when $s\ge0$. Each half is a closed subset \emph{of the open coordinate box}; pasting continuous maps on these two closed sets makes the inverse continuous. Continuity of the forward map follows by the quotient test. This argument constructs a chart crossing the face and does not identify any positive-$r$ points on the two collars.
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[x=.8cm,y=.66cm,>=Stealth]
+\fill[lightpine] (-3,0) rectangle (0,2);\fill[brick!12] (0,0) rectangle (3,2);
+\draw[ink] (-3,0) rectangle (3,2);\draw[pine,very thick] (0,0)--(0,2);
+\draw[->,ink] (-2.6,1)--(-.5,1);\draw[->,ink] (.5,1)--(2.6,1);
+\node at (-1.5,1.5) {$s=-r_-$};\node at (1.5,1.5) {$s=r_+$};\node[below] at (0,0) {$s=0$};
+\begin{scope}[shift={(6.4,1)}]\fill[lightpine] (-1,-1) rectangle (0,0);\fill[lightpine] (0,0) rectangle (1,1);\fill[brick!12] (-1,0) rectangle (0,1);\fill[brick!12] (0,-1) rectangle (1,0);\draw[ink] (-1,-1) rectangle (1,1);\draw[pine,thick] (0,-1)--(0,1) (-1,0)--(1,0);\node[below] at (0,-1) {four sectors};\end{scope}
+\end{tikzpicture}\caption{Left: a single coordinate increases to the right on both sides. Right: a neighborhood where two internal cuts cross needs four regional sectors. Their interiors consist of different points; only the common subfaces are paired.}\label{f:chart-picture}\end{figure}
+
+To make this local construction global, one must still address the topology and the overlap maps. For a useful finite version assume finitely many regions and pairings of closed faces. At each equivalence class require a saturated neighborhood covered before gluing by one box for each sector of a product $(-\epsilon,\epsilon)^k\times[0,\epsilon)^l\times V$, where $V$ is open Euclidean. The nonnegative regional coordinates of the first $k$ factors receive all possible choices of signs; the next $l$ represent exterior walls never paired. Require the face pairings to be exactly the common subfaces with these coordinates, and the changes on overlapping assembled boxes, including inverses, to extend smoothly in the common coordinates. Distinct proposed signed changes which rescale only one side, for example $s$ on the left and $2s$ on the right, do not pass this test.
+
+\begin{proposition}\label{f:sector-theorem}
+Under these assumptions the quotient is a Hausdorff, second-countable manifold with corners. The point corresponding to the center of the displayed product has depth $l$.
+\end{proposition}
+\begin{proof}
+Each box gives a homeomorphism by the same finite closed pasting, and the overlap condition makes the charts smoothly compatible. Every class has a bounded finite number of representatives, at most $b=2^n$ in dimension $n$. To saturate a closed set before taking the quotient, apply all words of length at most $b-1$ in the face pairings and their inverses: remove loops from any longer chain of representatives. A word is a homeomorphism between closed subsets, by restricting at each composition to the preimage of the next closed domain. The resulting saturation of a closed set is closed as a finite union. Two distinct finite classes have disjoint open neighborhoods in the disjoint union, which is Hausdorff. In each such open $U$ keep only the points whose whole class lies in $U$, that is, remove the saturation of its closed complement. The resulting saturated open neighborhoods still contain the respective classes and separate their images downstairs. Finally any open cover of the quotient pulls back to an open cover of a second-countable space and hence has a countable subcover. Apply this to the cover by assembled charts, each of which has a countable basis. The union of the selected local bases is a basis. Only the $l$ exterior coordinates are nonnegative in the assembled product, proving the assertion about depth.
+\end{proof}
+
+\section*{Exercises}
+\begin{exercise}Intersect the unit sphere in $\mathbb R^3$ with $Z=a$. For which $a$ is the intersection transverse and nonempty? Compare the tangent space of the actual intersection with the intersection of tangent spaces when $a=1$.\end{exercise}
+\noindent\emph{Solution.} The normals $(X,Y,Z)$ and $(0,0,1)$ are independent when $|a|<1$. At $a=1$ the intersection is a point; both tangent planes there are horizontal, so their intersection is two-dimensional. For $|a|>1$ the sets do not meet.
+\begin{exercise}Give the graph of a smooth map $g:U\subset\mathbb R^p\to\mathbb R^q$ both as an embedding and as a regular level set. Find its conormals without using a metric.\end{exercise}
+\noindent\emph{Check.} The embedding is $x\mapsto(x,g(x))$, inverted by projection on its image. The submersion is $(x,y)\mapsto y-g(x)$ because its $y$-block is the identity. The conormals are linear combinations of $dy^a-\sum_i\partial_i g^a\,dx^i$.
+\begin{exercise}Join two quadrants along their entire vertical edges, leaving the horizontal edges exterior. Write down a chart at the image of the two origins. Repeat with three half-lines sharing their endpoint and explain why a manifold chart fails there.\end{exercise}
+\noindent\emph{Solution.} For the quadrants use $(\pm r,\rho)$ with $\rho\ge0$: the result is a half-plane at a depth-one point. Removing the origin of a small connected neighborhood of the three joined half-lines leaves three components, whereas deleting a point from an interval or half-interval leaves at most two.
+\begin{exercise}Let $F=\{\rho=0\}$ be a regular hypersurface. If $\tilde\rho$ is another defining function near a point, prove that $\tilde\rho=a\rho$ there with $a$ smooth and nonzero after shrinking. When do the two functions select the same side?\end{exercise}
+\noindent\emph{Hint.} In coordinates $(y,s=\rho)$, subtract $\tilde\rho(y,0)=0$ and integrate $\partial_s\tilde\rho(y,ts)$ for $0\le t\le1$. At $s=0$ its value is nonzero by regularity. The same retained inequality corresponds to $a>0$.

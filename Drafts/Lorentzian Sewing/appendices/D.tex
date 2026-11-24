@@ -1,0 +1,101 @@
+% !TeX root = ../main.tex
+\chapter{Geometry from the ground up: building a seam}\label{app:D}\markboth{Appendix D}{}
+Two strips of paper come with the instruction ``identify these edges.'' What does this instruction give us? At first, only a rule specifying which points are to count as one. It has not told us how to differentiate across the join, how to compare two vectors attached to the joined point, or how to transport the value of a field around the completed strip. We will construct each of these operations. At the end two flat strips will form a spatial circle. Different, locally indistinguishable ways of identifying their field values will give different allowed wave frequencies.
+
+This appendix can be read before Chapter~\ref{ch:01}. It assumes sets and functions, elementary calculus of several real variables, and linear algebra, but not a course in topology or bundles. A useful question to keep asking is: \emph{what is the domain and what is the codomain of the map I am using?} A map of point sets, its derivative, a map of fibers over it, and the pullback of a differential form go between different spaces.
+
+\section{Give the set of points a topology}\label{D-topology}
+
+A \emph{topology} on a set $X$ is a collection of subsets called \emph{open}: it contains $\varnothing$ and $X$, is closed under arbitrary unions, and is closed under finite intersections. A set is \emph{closed} if its complement is open. A neighborhood of $p$ contains an open set containing $p$. In $\mathbb R^d$, $U$ is open when each $p\in U$ is the center of some ball contained in $U$. What we retain in passing to a topological space is the possibility of testing a statement near each point, not the notion of distance that supplied these particular balls.
+
+A \emph{basis} is a collection of open sets such that every open set is a union of members. Euclidean balls with rational centers and positive rational radii suffice: inside any ball about $p$, one can find a smaller ball of this sort that still contains $p$. A space with a countable basis is called \emph{second-countable}. A different condition, \emph{Hausdorff separation}, says that any two distinct points admit disjoint open neighborhoods. Euclidean space has this property: take balls of radii less than half the distance between the points. These two conditions are part of the definition of a manifold in this book; looking Euclidean near each point does not by itself guarantee them globally.
+
+A map $f:X\to Y$ is \emph{continuous} if the inverse image $f^{-1}(V)=\{x:f(x)\in V\}$ of every open $V\subset Y$ is open in $X$. Here $f^{-1}(V)$ makes sense even if $f$ has no inverse function. It suffices to test a basis of $Y$, since inverse images preserve unions. A \emph{homeomorphism} is a bijection continuous in both directions. A \emph{cover} is a family of sets whose union is the space. A space is \emph{connected} when two nonempty disjoint open sets cannot cover it. In the discrete topology every subset is open. A continuous function from a connected strip to the discrete set $\{+1,-1\}$ is therefore constant: the two inverse images of the singletons would otherwise separate the strip.
+
+We need three elementary ways of making spaces. A subset $A\subset X$ has the \emph{subspace topology}: its open sets are $A\cap U$ with $U$ open in $X$. Thus $[0,a)$, for $0<a<L$, is open \emph{in} $[0,L]$. It is not open in $\mathbb R$. The \emph{product topology} on $X\times Y$ has basis $U\times V$ for $U,V$ open. The \emph{disjoint union} $X=R_-\sqcup R_+$ keeps a tag on each point, even if both pieces use the same numerical coordinates; a set in it is open precisely when its part on each piece is open. We use the product to thicken a face, and the disjoint union to start with two genuinely independent regions.
+
+\subsection{How can we tell what is open after identification?}
+An \emph{equivalence relation} is reflexive ($p\sim p$), symmetric ($p\sim r$ implies $r\sim p$), and transitive ($p\sim r$, $r\sim z$ imply $p\sim z$). For a list of face pairings, take the relation they \emph{generate}: a point is equivalent to every point reachable by finitely many pairings and their inverses. Its classes form the set $M=X/{\sim}$. Write $q:X\to M$ for the map $p\mapsto[p]$. To specify the \emph{quotient topology}, declare $U\subset M$ open if and only if $q^{-1}(U)$ is open in $X$. This is a topology: take inverse images in the axioms above. The \emph{saturation} of $A\subset X$ is $\operatorname{Sat}(A)=q^{-1}(q(A))$, the union of all classes it meets. The set $A$ is \emph{saturated} when $\operatorname{Sat}(A)=A$. Saturated open sets upstairs are exactly inverse images of open sets downstairs. The image of an arbitrary open set need not be open.
+
+\begin{proposition}[The test for descending a continuous map]\label{D-quotient-test}
+Suppose a map $f:X\to Y$ has the same value at equivalent points. There is a unique map $\bar f:M\to Y$ with $f=\bar f\circ q$. It is continuous exactly when $f$ is continuous.
+\end{proposition}
+\begin{proof}
+Define $\bar f([p])=f(p)$. Equality on a class is exactly what makes the formula single valued, and every class has a representative. For an open set $V\subset Y$,
+\[
+ q^{-1}\big(\bar f^{-1}(V)\big)=f^{-1}(V).
+\]
+By the quotient topology the set inside $q^{-1}$ is open exactly when the right side is. Applying this to all $V$ proves the test.
+\end{proof}
+
+For example, identify $0$ with $L$ in $[0,L]$. A small open arc around the new point has inverse image $[0,a)\cup(L-a,L]$ for $0<a<L/2$. Keeping only the first interval fails: its saturation must contain $L$ but then contains no relative neighborhood of $L$. Figure~\ref{D-arc-figure} shows the missing half of the neighborhood.
+
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[x=.94cm,y=.94cm,>=Stealth,font=\small]
+\draw[quiet] (0,0)--(3.9,0);\draw[line width=2pt,marine] (0,0)--(.80,0) (3.10,0)--(3.90,0);
+\fill[marine] (0,0) circle (2pt) (3.90,0) circle (2pt);
+\draw[marine,fill=white] (.80,0) circle (2pt) (3.10,0) circle (2pt);
+\node[below] at (0,-.07) {$0$};\node[below] at (.80,-.07) {$a$};\node[below] at (3.10,-.07) {$L-a$};\node[below] at (3.90,-.07) {$L$};
+\draw[->,ink] (4.5,0)--node[above] {$q$} (5.65,0);
+\begin{scope}[shift={(7.1,0)}]
+\draw[quiet] (0,0) circle (.83);\draw[marine,line width=2pt] (142:.83) arc (142:218:.83);
+\draw[marine,fill=white] (142:.83) circle (2pt) (218:.83) circle (2pt);
+\fill[marine] (180:.83) circle (2pt);\node[above left,inner sep=1pt] at (-.91,.60) {$[0]=[L]$};
+\draw[thin,quiet] (-1.03,.52)--(-.85,.10);
+\end{scope}
+\end{tikzpicture}
+\caption{One open arc downstairs has two relatively open end intervals upstairs. Filled points are included; the two filled points on the interval represent the single marked point on the circle.}\label{D-arc-figure}
+\end{figure}
+
+To identify the quotient with the unit circle, use the map
+\[
+ c:[0,L]\longrightarrow S^1\subset\mathbb R^2,\qquad
+ x\longmapsto\big(\cos(2\pi x/L),\sin(2\pi x/L)\big).
+\]
+Its values agree at the two ends, and no other distinct pair has the same image. It induces a continuous bijection onto the unit circle in $\mathbb R^2$. Why is its inverse continuous? A space is \emph{compact} if every cover by open sets has a finite subcover. The closed bounded interval is compact (the Heine--Borel theorem); its continuous image is compact since one can pull a cover back. A compact subset of a Hausdorff space is closed: separate an outside point from each point of the subset by disjoint neighborhoods, keep finitely many neighborhoods covering the compact subset, and intersect their partners around the outside point. A closed subset of a compact space is compact (add its open complement to a cover). Our continuous bijection thus sends closed sets to closed sets, which is the continuity test for its inverse. This proof uses the topology on the quotient, not how round a circle can be drawn.
+
+\begin{exercise}[Where separation can fail]
+Take two copies of the quadrant $(r,y)\in[0,\infty)^2$. On the faces $r=0$ pair equal $y$ only when $y>0$, leaving the two origins distinct. Can a neighborhood of one origin in the quotient be disjoint from a neighborhood of the other?
+\end{exercise}
+\noindent\emph{Solution.} Pull both neighborhoods back. Each contains points $(0,y)$ for all sufficiently small positive $y$ on its own copy. Such a pair represents the same point downstairs, so the two neighborhoods must meet. Closing the equivalence relation by also pairing the origins changes the space; it is not a choice of coordinates on the original quotient.
+
+\section{Turn two regional charts into one smooth chart}\label{D-collars}
+A \emph{chart} is a homeomorphism from an open neighborhood of a point onto an open subset of a coordinate model. Use $\mathbb R^d$ for an interior and $[0,\infty)^k\times\mathbb R^{d-k}$ at a corner with $k$ meeting walls. Here ``open'' means relatively open in the model. In Euclidean open sets, \emph{smooth} means having continuous partial derivatives of all orders. A function on the model is \emph{smooth up to its walls} if locally it is the restriction of such a function on an open set of $\mathbb R^d$. Smooth maps are defined componentwise this way. A change of charts is the map $\psi\circ\varphi^{-1}$ on the overlapping coordinate images. A collection of charts covering a Hausdorff, second-countable space, whose changes are smooth with smooth inverse, gives a \emph{smooth atlas}; adjoining all compatible charts does not change what is smooth. A bijection of such spaces smooth with smooth inverse is a \emph{diffeomorphism}. A homeomorphism only knows open sets: $x\mapsto x^3$ on the line, for instance, has continuous inverse, but its inverse is not differentiable at zero.
+
+At a point of \emph{depth} $k$ exactly $k$ independent nonnegative wall coordinates vanish. The connected pieces of a fixed depth and incidence type are its \emph{strata}; a face in our regions is a specified embedded closed boundary hypersurface. \emph{Embedded} means it has the subspace topology and locally is a coordinate slice, not a curve self-crossing in the picture. A wall ending on another wall does not thereby create a third hypersurface: in $[0,\infty)^2\times\mathbb R^{d-2}$ the intersection of the two independent walls has dimension $d-2$. The number of independent restrictions is its \emph{codimension}. These labels distinguish artificial walls that disappear from physical walls that remain.
+
+\subsection{Construct the map and its inverse}
+Let $F_\pm\subset R_\pm$ be paired faces, with a specified diffeomorphism $f:F_-\to F_+$. For the moment stay away from corners. A \emph{collar} is a diffeomorphism from $[0,\epsilon)\times F$ onto a neighborhood of $F$ taking $(0,p)$ to $p$. Local widths suffice here. The coordinate $r$ measures inward parameter, not proper distance. We supply collars as data; proving a collar-existence theorem for every choice of further structures is not needed. Make the quotient of $R_-\sqcup R_+$ identifying $p$ with $f(p)$ and \emph{no} points at positive collar parameter.
+
+An example with different coordinates on the two walls is a good test of the inverse map. Suppose the face coordinate on the minus side is $y$ and on the plus side is $z$, with $z(f(p))=2y(p)+1$ (dimensionless chart coordinates). Use collar coordinates $(r,y)$ and $(r,z)$, both with $r\geq0$. On the saturated union of corresponding collar boxes define
+\begin{equation}
+ \Psi([r,y]_-)=(-r,y),\qquad
+ \Psi([r,z]_+)=\big(r,(z-1)/2\big).
+ \label{D-signed-chart}
+\end{equation}
+The brackets mean the class of the indicated regional point. Both formulas give $(0,y)$ at the seam. They yield all $(s,y)$ in a small open rectangle about it, exactly once after identification. For the inverse take the class of $(-s,y)_-$ when $s\leq0$, or of $(s,2y+1)_+$ when $s\geq0$. The forward map is continuous by Proposition~\ref{D-quotient-test}. The inverse is continuous by \emph{finite closed pasting}: if continuous maps on finitely many closed subsets covering a space agree on overlaps, the inverse image of any closed set under their union is a finite union of closed sets. Here the two closed subsets are the half-rectangles \emph{relative to the open rectangle}. Thus we have a chart across the seam. Using only the coordinate $r$ on both sides would have lost which half a point came from.
+
+To use many such charts, explicitly compose their maps on overlaps. If, for example, the new tangential coordinate on the minus side is $Y=3y$ and on the plus side is $Y=3(z-1)/2$, then $Y=3y$ on the whole signed rectangle. If a second proposed chart instead uses $S=s$ for $s\leq0$ and $S=2s$ for $s\geq0$, the transition is a homeomorphism but fails the first derivative test. Each collar separately is perfectly smooth; the two proposed signed charts do not belong to a single smooth atlas. A stated map on the face alone would not have detected the failure.
+
+\subsection{Intersections and global checks}
+At $k$ transverse artificial walls meeting $l$ retained exterior walls, make one chart on each of the $2^k$ local sectors in the product model. If $r_i$ measures inward distance in coordinates (not metric length), put $s_i=\sigma_i r_i$ with $\sigma_i=\pm1$; keep the same nonnegative exterior coordinates $\rho_a$. The proposed charts must cover \emph{all} representatives of this neighborhood; identifications must join exactly the common subfaces and preserve all the indicated other coordinates there. Their images fill
+\[
+ (-\epsilon,\epsilon)^k\times[0,\epsilon)^l\times V,
+ \qquad V\subset\mathbb R^{d-k-l}\ \text{open}.
+\]
+The same inverse-by-sectors proof works. In a plane four quadrants can erase both axes; if the horizontal axis is a physical boundary, two quadrants erase the vertical cut and leave a half-plane. Three half-lines glued at their origins instead form a letter Y: deleting the central point of a small connected neighborhood leaves three components, not the one or two allowed in a one-dimensional manifold with boundary. Its product with tangential coordinates is the branched local model one would create by identifying three ordinary half-spaces along one open face. Counting incident sectors, not just assigning signs to boundary integrals, is essential.
+
+There are two more checks in calling the result a manifold. Here is a way of carrying them out for the finite product constructions of Chapter~\ref{ch:01}. Suppose each of finitely many pairings is a homeomorphism between \emph{closed} faces, with inverse included; suppose the sector test bounds the number of representatives of a class by $b$. To find all points equivalent to one point, follow chains of pairings, removing repeated points from each chain. No more than $b-1$ steps are needed. There are only finitely many such words. Each word is a homeomorphism on a closed domain to a closed range: when composing, restrict the first map to the inverse image of the second domain. Hence the saturation of a closed set $C$ upstairs is closed, being the finite union of the images of $C$ intersected with the word domains. Distinct finite classes have disjoint open neighborhoods upstairs by Hausdorff separation (separate each pair of points and take finite intersections). Within any such neighborhood $U$ of a class,
+\[
+ X\setminus\operatorname{Sat}(X\setminus U)
+\]
+is an open \emph{saturated} neighborhood of that class. These neighborhoods descend, proving Hausdorff separation downstairs. For countability, pull a cover by our assembled charts back to the disjoint union upstairs, which has a countable basis. For each basis member contained in one of these pullbacks, choose one such chart. This countable selection still covers: at each representative a basis member fits inside a pullback. Each selected chart itself has a countable Euclidean relative basis. Their union gives a basis on the quotient. Neither check assumed that there was already a whole smooth spacetime.
+
+\begin{exercise}[An external corner survives]
+Take two copies of $r\geq0$, $\rho\geq0$, with a common tangential coordinate $y\in\mathbb R$. Pair the entire $r=0$ faces with equal $(\rho,y)$; do not pair any open part of $\rho=0$. Write the chart of the class of $(0,0,0)$ and identify its depth before and after sewing.
+\end{exercise}
+\noindent\emph{Solution.} The signed variable is $s=-r$ or $s=r$ according to the copy. With $(s,\rho,y)$ the local image is open in $\mathbb R\times[0,\infty)\times\mathbb R$; at $(0,0,0)$ only $\rho$ is a boundary coordinate. A depth-two point on each piece has become a depth-one point. Extending both $r$ and $\rho$ to signed variables would introduce points that no piece supplied.
+
+\input{appendices/D-differential}
+\input{appendices/D-bundles}
+\input{appendices/D-fields}

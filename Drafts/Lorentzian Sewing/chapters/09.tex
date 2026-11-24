@@ -1,0 +1,132 @@
+\chapter{Presymplectic sewing and the observables a cut can recover}\label{ch:09}
+
+Draw a loop on a Cauchy surface so that half the loop lies in each of two regions. The integral of a local density over the surface can be split at the cut by ordinary additivity. The Wilson loop cannot: neither of the two pieces is a closed loop. What the cut must supply depends on what we want back. To add symplectic potentials we need compatible corner terms; to compare brackets we need the causal response; to \emph{build} the loop we need maps between endpoint fibres. These requirements can be tested separately.
+
+\section{What adds on a matched solution}
+
+Let $R_1,R_2$ meet along an artificial face $I$. Keep the physical wall actions and boundary conditions. Remove any action used only to close $I$, or cancel it explicitly against its counterpart. Work in a fixed gluing sector with a fixed comparison of the fields across the face. Write $\mathcal M$ for the pairs of opened regional solutions which satisfy the transmission equations and have the regularity required of the global field. There are three maps out of this space: the regional projections $r_1,r_2$ and the assembly map $\mathsf A:\mathcal M\to\widetilde{\mathcal P}_M$ to global solutions. We use a sector in which restriction and assembly are inverse at the level of fields in the identified bundles, as for the scalar in Theorem~\ref{thm:branch}. Gauge degeneracies have not been quotiented.
+
+Let $\Sigma_a=\Sigma\cap R_a$ and $K_a=\Sigma_a\cap I$, oriented as part of $\partial\Sigma_a$. Write $\Theta_a$ for the bulk potential current, $C_a$ for the corner potential on the relevant face, and
+\[
+ \theta_a=\int_{\Sigma_a}\Theta_a-\int_{\partial\Sigma_a} C_a,
+ \qquad \omega_a=\delta\theta_a .
+\]
+The minus sign is important: the final rim of a wall and the boundary of the final cap have opposite orientations (Appendix~\ref{app:A}; see also \cite{HW}). Suppose the bulk potentials are the restrictions of the same representative, the physical-wall corners agree with the global ones, and the two cut corners, transported to the same fibre and tangent variations, have the same $C$. The last condition holds, for example, if no integration by parts on the opened cut was needed and both $C$'s there are zero. With $d:K_1\to K_2$ the identifying map, the two internal contributions in the sum, evaluated on one matched variation, are
+\[
+ -\int_{K_1} C_1-\int_{K_2} C_2
+        =-\int_{K_1}(C_1-d^*C_2)=0 .
+\]
+The bulk integrals add, and the physical corner integrals reassemble the actual boundary of $\Sigma$. We have proved, with the indicated choices,
+\begin{equation}
+ \mathsf A^*\theta_M=r_1^*\theta_1+r_2^*\theta_2,
+ \qquad \mathsf A^*\omega_M=r_1^*\omega_1+r_2^*\omega_2 .
+ \label{eq:09-sewn-form}
+\end{equation}
+The second equality uses $\delta$ commuting with pullback. If the cap actions differ by an endpoint functional $B$, the potentials can instead differ by $\delta B$ and give the same two-form. An arbitrary mismatch of corner potentials need not be exact. If the gluing map is itself varied, variations of that map enter the pullbacks; keeping its contributions while varying the fields is then part of the sewing problem.
+
+There is a time-dependent check of this calculation. Write the opened boundary variation using a common positive face measure as $\langle\Pi_a,\delta q\rangle$, where $\Pi_a$ already includes its outward sign and the histories have been transported to one side. After the corner terms are included, the change of $\omega_a$ between two caps on regional solutions is minus the integral of $\langle\delta\Pi_a\wedge\delta q\rangle$ over the portion of cut between them. This follows by taking $\delta$ of the on-shell first variation; physical flux is assumed absent or accounted for by its wall terms. The sum vanishes since $\Pi_1+\Pi_2=0$ and a tangent variation satisfies $\delta(\Pi_1+\Pi_2)=0$. One open region can lose symplectic flux without there being any failure of conservation in the union.
+
+\section{Which symmetries have charges?}
+
+A symmetry is first checked off shell: its variation of the action is an endpoint difference $\alpha_X|_{f}-\alpha_X|_{i}$, possibly with a field-independent wall term. For a fixed generator $X$ preserving the data, in a representative with $\mathcal L_X\theta=\delta\alpha_X$ on the solution space, the Noether generator and its variation satisfy
+\[
+ H_X=\iota_X\theta-\alpha_X,\qquad
+ \delta H_X=-\iota_X\omega .
+\]
+The latter identity is Cartan's formula; it fixes the contraction sign for $\omega=\delta\theta$. More generally the candidate charge one-form $-\iota_X\omega$ must be exact for a globally defined Hamiltonian. Closedness gives only local integrability on a contractible chart; periods can obstruct a single-valued charge. A flux through an unclosed wall may even obstruct closedness. Suppose a vector on $\mathcal M$ projects to compatible symmetry vectors on the regions and on the union. Contracting \eqref{eq:09-sewn-form} shows that the \emph{variations} of the charges add when regional Hamiltonians exist; their values add after fixing an additive constant on each connected sector. The sum of two nonintegrable regional variations can also be integrable on $\mathcal M$. Neither statement requires inverting a presymplectic form.
+
+For example, apply the Maxwell charge of Chapter~\ref{ch:05} to a slice with a cut. Use a real potential $a_j$ and absorb the fixed spatial volume factor into the electric momentum density $\mathcal E^j$, so $\theta=\int\mathcal E^j\delta a_j\,\mathrm{d}^{n-1}x$. For a field-independent allowed transformation $X_\lambda a_j=\partial_j\lambda$, $X_\lambda\mathcal E^j=0$, one obtains on the Gauss constraint
+\begin{equation}
+ -\iota_{X_\lambda}\omega
+ =\int_{\Sigma}\partial_j\lambda\,\delta\mathcal E^j\,\mathrm{d}^{n-1}x
+ =\int_{\partial\Sigma}\lambda\,\delta E_{\rm out} .
+ \label{eq:09-max-charge}
+\end{equation}
+Here $E_{\rm out}$ is the signed electric flux density; the interior term $-\int\lambda\,\partial_j\delta\mathcal E^j$ vanishes. A proper gauge direction is a redundancy of the chosen problem; infinitesimally it annihilates the presymplectic form on all allowed variations. Vanishing $\lambda$ on the boundaries is sufficient here. A cut transformation can instead have the charge $\int\lambda E_{\rm out}$ and is then active if that charge varies. Nonzero boundary value alone is not a test. Indeed, write $e_K=E_{{\rm out},1}=-E_{{\rm out},2}$ on the matched cut, using the same positive density convention. For parameters $\lambda_1,\lambda_2$ the two cut terms add to $\int_{K_1}(\lambda_1-\lambda_2)\,\delta e_K$. They cancel for a diagonal transformation; a relative transformation need not even preserve the gluing map. A charge on a genuine exterior boundary does not disappear by this argument.
+
+\section{Comparing a bracket versus generating its arguments}
+
+Fix a background solution and a class of differentiable, proper-gauge-invariant functionals whose first derivatives are admissible sources. Take the same physical boundary conditions in the global and regional response problems. Suppose a regional construction has produced $F_\#=F\circ\mathsf A$, $G_\#=G\circ\mathsf A$ on matched fields, with compatible source representatives and pairings, including any interface source. Solve the coupled retarded and advanced problems for the functional derivative $G'$. Under the transmission, regularity, support and uniqueness conditions of Proposition~\ref{prop:causal}, the assembled responses are $G_R G'$ and $G_A G'$ (up to proper gauge where appropriate). If $v_\#$ is the difference of the coupled responses, applying the chain rule gives
+\begin{equation}
+ \{F_\#,G_\#\}_{\#}
+   =\delta F_\#(v_\#)
+   =\langle F',(G_R-G_A)G'\rangle\circ\mathsf A
+   =\{F,G\}_{\rm P}\circ\mathsf A .
+ \label{eq:09-peierls}
+\end{equation}
+Proper-gauge ambiguity in $v_\#$ pairs to zero. This is not the sum of the brackets computed with two independently reflecting cuts. It is an equality for arguments already known to correspond. It gives no way, by itself, to choose regional generators for a proposed global argument.
+
+\subsection{A source algebra for which generation can be proved}
+
+Consider a real free scalar on a globally hyperbolic spacetime without physical boundary. Take $P=\Box_g-m^2$ (or add a smooth real potential), with the sign of the action Hessian. It is formally self-adjoint and normally hyperbolic. Choose as global target the unital real algebra of finite polynomials in
+\[
+ F_f(\phi)=\int_M f\phi\,\mathrm{d}V,\qquad f\in C_c^\infty(M),\qquad P\phi=0 .
+\]
+It is a Poisson algebra: the bracket on linear generators is the constant $\langle f,(G_R-G_A)g\rangle$. No completion and no product of fields at a point is intended.
+
+Cut along a smooth separating timelike hypersurface. On each closed piece allow smooth tests compactly supported up to the face, not just tests supported in the interior. A regional linear observable pairs this test with the regional field, while the cut history is still allowed to vary. Form a real vector space $Q$ of pairs $(f_1,f_2)$ by requiring all jets to agree in a common signed collar coordinate, including the zeroth jet. Tests are scalar functions relative to the fixed smooth volume density. These conditions are imposed on the regional tests themselves. The piecewise function $f$ is smooth: matching the two one-sided values gives continuity and applying the same argument successively to derivatives gives smoothness to every order. Compact support follows from the finite union of the supports. Conversely restriction of any global test gives such a pair.
+
+\begin{proposition}[Polynomial source reconstruction]
+The homomorphism from the real symmetric algebra $\operatorname{Sym}(Q)$, sending a pair to the sum of its two regional smearings evaluated on matched solutions, has image the entire target just specified. Its kernel is the ideal generated by $P Q$, where $P$ acts piecewise with its smooth matched coefficients. In particular the linear kernel is precisely $P Q$.
+\end{proposition}
+\begin{proof}
+By additivity of integration the image of a pair is $F_f$ for its piecewise assembly $f$. Every global generator is obtained. If $f=Ph$ with $h$ compactly supported and smooth, formal self-adjointness gives $F_f=0$. Conversely, suppose $F_f$ vanishes on every smooth solution. Put $E=G_R-G_A$ and test on the solutions $E k$ for arbitrary compact smooth $k$. Adjointness of retarded and advanced solutions yields $0=\langle f,E k\rangle=-\langle E f,k\rangle$. Hence $h=G_R f=G_A f$ satisfies $Ph=f$ and has support in $J^+(\operatorname{supp} f)\cap J^-(\operatorname{supp} f)$, compact by global hyperbolicity. Its restrictions give a pair in $Q$. This proves the linear assertion.
+
+Any finite independent list of the resulting linear functionals on the vector space of solutions maps it onto $\mathbb R^m$, where $m$ is the length of the list. Otherwise a nonzero covector annihilating its image would give a linear relation. A polynomial vanishing on all solutions therefore vanishes as a polynomial in these independent coordinates. Choosing a basis in the finite span of the generators occurring in any proposed relation proves the ideal assertion. The source pairing descends through this ideal since $EP h=0$ for compact $h$.
+\end{proof}
+
+The source relation is \emph{joint}. On an open piece, integration by parts in $F_{P h_a}(\phi_a)$ leaves the outward flux of $\phi_a\nabla^\mu h_a-h_a\nabla^\mu\phi_a$ at the cut. The two such terms cancel for a matched $h$ and a smooth sewn field, not separately for arbitrary face jets. Declaring every $P h_a$ zero before sewing would impose relations not valid regionally. The proposition reconstructs an algebra from source pairs; computing its bracket by regional causal solves also needs the solvability and support in \eqref{eq:09-peierls}.
+
+\section{Making a Wilson loop out of two open paths}
+
+Let a based path cross the cut at $p,q$, travelling from $p$ to $q$ in $R_1$ along $\gamma_1$, then from $q$ back to $p$ in $R_2$ along $\gamma_2$. Take a finite-dimensional representation and let $V_{a,x}$ be its fibre on side $a$ at $x$. In a local frame write the connection as $\mathrm{d}+A_a$. The open transports are constructed \emph{in the two regions}: solve $\dot U=-A_a(\dot\gamma_a)U$, $U(0)=1$, along each path. At the endpoints this gives
+\begin{align*}
+ U_1&=\mathcal P\exp\!\left(-\int_{\gamma_1}A_1\right):V_{1,p}\to V_{1,q},\\
+ U_2&=\mathcal P\exp\!\left(-\int_{\gamma_2}A_2\right):V_{2,q}\to V_{2,p} .
+\end{align*}
+Path ordering places later matrices on the left. The product $U_2U_1$ has no meaning until the endpoint spaces are compared. If $D_x:V_{2,x}\to V_{1,x}$ is the bundle identification, the endomorphism and the unnormalized Wilson trace are
+\begin{equation}
+ T=D_p U_2 D_q^{-1} U_1:V_{1,p}\longrightarrow V_{1,p},
+ \qquad W=\operatorname{tr}_{V_{1,p}}T .
+ \label{eq:09-cross-loop}
+\end{equation}
+Each intermediate index is contracted against its own fibre. To check the order, transform a section by $s'_a=g_a s_a$, so $A'_a=g_a A_a g_a^{-1}-(\mathrm{d}g_a)g_a^{-1}$. The initial-value equation gives $U'_1=g_{1,q}U_1g_{1,p}^{-1}$ and $U'_2=g_{2,p}U_2g_{2,q}^{-1}$. With $D'_x=g_{1,x}D_xg_{2,x}^{-1}$ the middle factors cancel in sequence:
+\begin{align*}
+ T'&=(g_{1,p}D_pg_{2,p}^{-1})(g_{2,p}U_2g_{2,q}^{-1})\\[-1mm]
+   &\qquad\cdot(g_{2,q}D_q^{-1}g_{1,q}^{-1})(g_{1,q}U_1g_{1,p}^{-1})\\
+   &=g_{1,p}Tg_{1,p}^{-1} .
+\end{align*}
+The trace, not either open matrix or generally the based matrix $T$, is invariant. The four vector spaces in Figure~\ref{fig:transport-cycle} make it possible to read the product without memorizing a convention for matrix order.
+
+\begin{figure}[htb]\centering
+\begin{tikzpicture}[>=Stealth,thick,font=\small]
+\node (a) at (0,0) {$V_{1,p}$};\node (b) at (4,0) {$V_{1,q}$};
+\node (c) at (4,-1.45) {$V_{2,q}$};\node (d) at (0,-1.45) {$V_{2,p}$};
+\draw[->,ochre] (a)--node[above] {$U_1$} (b);
+\draw[->,marine] (b)--node[right] {$D_q^{-1}$} (c);
+\draw[->,ochre] (c)--node[below] {$U_2$} (d);
+\draw[->,marine] (d)--node[left] {$D_p$} (a);
+\end{tikzpicture}
+\caption{The horizontal arrows are parallel transports measured within each region. The vertical arrows are identifications at one and the same endpoint, not a further segment of the physical path. Following the arrows once gives an endomorphism of $V_{1,p}$.}\label{fig:transport-cycle}\end{figure}
+
+One may express $D_x=e_{1,x}e_{2,x}^{-1}$ using maps $e_{a,x}$ from a common reference fibre at $x$ into $V_{a,x}$. In these references the first arc is $e_{1,q}^{-1}U_1 e_{1,p}$, the second $e_{2,p}^{-1}U_2 e_{2,q}$; tracing their composition recovers \eqref{eq:09-cross-loop}. A simultaneous change of reference at an endpoint only changes coordinates on a contracted index. Such an edge reference records how to compare two experiments; supplying it has not given a new field an equation of motion. An extended regional phase space can assign a surface action or a flux pairing to edge variables \cite{DF}; what is dynamical then follows from that additional structure. Covariance under independent changes of local frame is not a declaration that all transformations at fixed boundary data are proper gauge. In fixed frames with fixed $D_x$, a symmetry preserving the identification must obey $g_{1,x}D_x=D_xg_{2,x}$.
+
+\subsection{What is lost by keeping only closed regional transports?}
+
+There is an exact answer in source-free Maxwell theory on a spatial circle. Normalize the charge of a probe to one, write the connection as $\mathrm{d}-i a$, and split the oriented circle into the two arcs above. In common endpoint frames put $z_i=\exp(i\int_{\gamma_i}a)$ and let $e_i$ be the constant electric momentum on arc $i$ (Gauss' law). Work over $\mathbb C$. Define the global target independently: finite Fourier sums in the circle holonomy $w$, with coefficients polynomial in the electric momentum $e$. Smooth initial data realize every $(w,e)\in U(1)\times\mathbb R$: take a constant connection with the desired integral modulo $2\pi$ and an arbitrary constant electric momentum.
+
+The enriched regional input is the algebra of finite Laurent polynomials in the open $z_i$ and ordinary polynomials in $e_i$. At the two shared vertices the frame phases are $g_p,g_q$. Any such pair extends smoothly along either interval: choose a path in $U(1)$ constant near the ends. The two phases act with weights $g_q/g_p$ on $z_1$ and $g_p/g_q$ on $z_2$. Thus $z_1^m z_2^n$ has weight $(g_q/g_p)^{m-n}$ and the invariant subalgebra is precisely
+\[
+ \mathbb C[e_1,e_2,(z_1z_2)^{\pm1}] .
+\]
+The signed flux equation is $e_1-e_2=0$. The map from this invariant algebra sends $z_1z_2$ to $w$ and both $e_i$ to $e$. It is onto and its kernel is $(e_1-e_2)$: after substituting $e_2=e_1$, any remaining relation would be a finite Fourier polynomial vanishing for all $w$ and all real $e$. Taking its Fourier coefficients and then using polynomial uniqueness in $e$ rules that out. In a presentation with two symbols for $w$ and its inverse, the sole additional defining relation is $w w^{-1}=1$. The Poisson test can be made before and after matching. Locally $z_i=e^{i\alpha_i}$ on each arc, with potential $e_i\,\delta\alpha_i$ there. Hence $\{z_1z_2,e_i\}=i z_1z_2$ for either $i$; $e_1-e_2$ commutes with every invariant generator, so its ideal is Poisson. On the union $w=e^{i\alpha}$ and $\theta=\int e\,\delta a=e\,\delta\alpha$ give $\{w,e\}=i w$, exactly the induced bracket. This calculation concerns the stated Cauchy-data model. It does not assert admissibility of arbitrary unsmeared line sources in a continuum Peierls domain.
+
+If, before sewing, one retains on each arc only transports invariant under \emph{independent} changes at its two ends, the only Laurent degree surviving there is zero. After flux matching the image is then only $\mathbb C[e]$. It cannot distinguish two smooth fields with the same $e$ and circle holonomies $+1$ and $-1$. The missing quantity was not a poor choice of bracket: its two open factors had already been discarded.
+
+\begin{exercise}[A field-dependent gauge parameter]
+On a two-dimensional chart of allowed boundary data $(b,e)$ suppose a proposed transformation gives the charge one-form $b\,\delta e$. Is $b e$ its Hamiltonian? \emph{Hint:} compute both $\delta(be)$ and $\delta(b\,\delta e)$ before restricting to the subspace $b=\text{constant}$.
+\end{exercise}
+
+\begin{exercise}[A third arc]
+Insert a new marked point in the second arc. Using three independent vertex phases, find the invariant monomials in the three open $U(1)$ transports. \emph{Answer:} the zero-weight condition sets the exponents of incoming and outgoing edges equal at each vertex. The surviving monomials are the integer powers of the product around the full circle.
+\end{exercise}

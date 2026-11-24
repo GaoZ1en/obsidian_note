@@ -1,0 +1,94 @@
+\chapter{Sewing spacetime regions}\label{ch:01}
+
+Cut a strip out of Minkowski space and identify its two spatial edges. A particle that leaves on the right can now return on the left. But \emph{when} does it return? An identification can include a time translation even when each edge carries the same induced metric. To decide whether the result is a spacetime, we first construct its points and smooth charts, then ask whether the metric and time orientation fit those charts. Only after these steps can we ask a global question about a particle's worldline.
+
+\section{Faces and their orientations}
+
+A smooth region $R$ of dimension $d\geq 2$ is a Hausdorff, second-countable manifold with corners. Near a point of \emph{depth} $k$ it has coordinates $(r_1,\ldots,r_k,y)$ in $[0,\epsilon)^k\times\mathbb R^{d-k}$, with all $r_i=0$ at the point. Smooth up to a corner means locally the restriction of a smooth function on an open Euclidean neighborhood. The connected pieces of the depth-$k$ locus are strata. We use regions with embedded faces: each local wall $r_i=0$ belongs to a specified closed boundary hypersurface, and distinct incident walls belong to distinct faces. Closed here means a closed subset of $R$, not necessarily compact or without boundary. For instance, the end of a timelike wall on a final spacelike cap belongs to both; it is not a third hypersurface. Labelling those incidences tells us which face is artificial and will disappear in a sewing, and which exterior face must survive.
+
+Two strata closures $A,B$ meet \emph{cleanly} if their intersection is a submanifold with corners and $T_p(A\cap B)=T_pA\cap T_pB$ there. In our product charts, distinct incident faces are coordinate walls with independent defining covectors $dr_i$. This is stronger than cleanness alone. It specifies the sectors on which fields are initially defined. We distinguish face \emph{occurrences}: a single region can contribute both members of a pair, as the strip does.
+
+Give $R$ an orientation. At the interior of a face $F$, an ordered basis $e_1,\dots,e_{d-1}$ is positive on $F$ if $(N_{\rm out},e_1,\dots,e_{d-1})$ is positive on $R$, where $dr(N_{\rm out})<0$ for an inward defining coordinate $r$. Changing this transverse vector without changing its outward sense does not change the orientation. Taking the boundary of one face and then of another interchanges the two outward directions if the order is reversed. This is the sign behind opposite incidences at a corner. It is not a criterion that the sectors there fill a neighborhood.
+
+A Lorentzian region carries a smooth nondegenerate metric $g$ of signature $(-,+,\ldots,+)$ up to its faces. A time orientation selects one of the two components of the timelike cone continuously as future. At a hypersurface with nonzero conormal $\nu$, the face is timelike, spacelike, or null according as $g^{-1}(\nu,\nu)$ is positive, negative, or zero \cite{ON}. In the null case $\nu^\sharp=g^{-1}(\nu,\cdot)$ is itself tangent: $\nu(\nu^\sharp)=0$. No rescaling makes it a unit normal, or even transverse. A defining coordinate and the outward-first orientation still work. Neither depends on the existence of Gaussian normal coordinates.
+
+\section{From paired collars to a quotient atlas}
+
+Let $f:F_-\to F_+$ be a diffeomorphism of closed face occurrences, preserving the labels and incidences that are to be retained. For oriented sewing it must reverse the induced boundary orientation. Choose paired collars $c_\pm:[0,\epsilon)\times F_\pm\to R_\pm$, each a diffeomorphism onto a neighborhood of its face, with $c_\pm(0,p)=p$. In these coordinates each incident wall is the product of its intersection with $F_\pm$ and $[0,\epsilon)$. Widths may be chosen locally. The collars specify how to approach a face; $f$ does not specify that by itself. Form the set $M$ by identifying $p$ with $f(p)$ in the disjoint union of the regions. Give it the quotient topology and write $q$ for the quotient map. We identify \emph{only} the faces, not points at positive collar distance. If $y$ is a chart on $F_-$, the map
+\[
+ q(c_-(r,p))\longmapsto(-r,y(p)),\qquad
+ q(c_+(r,f(p)))\longmapsto(r,y(p))
+\]
+has one value on the seam. Its inverse uses the minus collar for $s\leq 0$ and the plus collar for $s\geq 0$, where $s$ denotes the first target coordinate. The two outward directions are now $+\partial_s$ and $-\partial_s$, respectively. This explains the required reversal without comparing metric normals. Different choices of transverse parametrization need not give the same smooth coordinates by the piecewise identity.
+
+Here is a useful explicit regularity test for finite diagrams. At a class with $k$ crossing internal walls and $l$ surviving exterior walls, take a small box
+\[
+ B=(-\epsilon,\epsilon)^k\times[0,\epsilon)^l\times V,
+ \qquad V\subset\mathbb R^{d-k-l}\text{ open}.
+\]
+Require one disjoint regional chart for each sign vector $\sigma\in\{-1,1\}^k$, with possible occurrences in the same region. In each chart use $r_i,\rho_a\geq0$ and $y\in V$. The proposed map is
+\[
+ (r,\rho,y)_\sigma\longmapsto
+ (\sigma_1r_1,\ldots,\sigma_kr_k,\rho,y)\in B.
+\]
+The boxes must contain all representatives over this neighborhood: the prescribed pairings join exactly neighboring sectors on their common walls, fixing the displayed remaining coordinates, and no pairing leaves the collection. Thus $k=1,l=1$ at a cut ending on an exterior wall gives two quadrants filling a half-plane; $k=2,l=0$ requires four quadrants filling a plane, as in Figure~\ref{fig:01-sectors}.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=.85cm,y=.75cm,>=Stealth,font=\small]
+  \fill[ink!7] (-2.7,0) rectangle (0,2.15);
+  \fill[pale] (0,0) rectangle (2.7,2.15);
+  \draw[quiet!65] (-2.7,0) rectangle (2.7,2.15);
+  \draw[marine,very thick] (0,0)--(0,2.15);
+  \node at (-1.35,1.72) {$R_-$};
+  \node at (1.35,1.72) {$R_+$};
+  \draw[ochre,thick,->] (-.09,.6)--(-2.10,.6) node[midway,above] {$r_-$};
+  \draw[ochre,thick,->] (.09,.6)--(2.10,.6) node[midway,above] {$r_+$};
+  \draw[ink,->] (-2.7,-.35)--(2.85,-.35) node[right] {$s$};
+  \draw[ink] (0,-.43)--(0,-.27);
+  \node[below] at (0,-.43) {$0$};
+  \node[below] at (-1.50,-.43) {$s=-r_-$};
+  \node[below] at (1.50,-.43) {$s=r_+$};
+  \begin{scope}[shift={(6.25,.9)}]
+    \fill[pale] (-1.48,-1.16) rectangle (0,0);
+    \fill[pale] (0,0) rectangle (1.48,1.16);
+    \fill[ink!7] (-1.48,0) rectangle (0,1.16);
+    \fill[ink!7] (0,-1.16) rectangle (1.48,0);
+    \draw[quiet!65] (-1.48,-1.16) rectangle (1.48,1.16);
+    \draw[marine,thick,->] (-1.48,0)--(1.77,0) node[right] {$s_1$};
+    \draw[marine,thick,->] (0,-1.16)--(0,1.49) node[right] {$s_2$};
+    \fill[ink] (0,0) circle (1.5pt);
+    \node at (-.76,.59) {$(-,+)$}; \node at (.76,.59) {$(+,+)$};
+    \node at (-.76,-.59) {$(-,-)$}; \node at (.76,-.59) {$(+,-)$};
+  \end{scope}
+\end{tikzpicture}
+\caption{Left: the inward collar parameters point away from the seam, but $s$ increases in just one direction. Right: the four choices of $(\operatorname{sign}s_1,\operatorname{sign}s_2)$ fill a neighborhood of the central point. Along each open ray there are exactly two sides; attaching a third sheet there would produce a branch rather than a coordinate chart.}
+\label{fig:01-sectors}
+\end{figure}
+
+The collars in different boxes must also be compatible: the sectorwise coordinate changes, written with signed internal variables, must be restrictions of one smooth change with smooth inverse, up to the exterior walls. Product collars using the same normal variables and the same tangential reparametrization on both sides are a direct way to meet this test. For more general changes the condition has to be checked; smoothness on each closed sector alone does not imply it across their junction. These tests involve only the given charts and pairings, not an ambient spacetime in which the regions have already been embedded.
+
+\begin{proposition}\label{prop:sewn-atlas}
+For finitely many regions and finitely many closed-face pairings satisfying the sector and overlap tests, the quotient is a Hausdorff, second-countable smooth manifold with corners. Its local depth at the displayed point is $l$.
+\end{proposition}
+\begin{proof}
+Each collection of boxes is open and saturated (a union of entire equivalence classes). Its signed map is continuous by the quotient topology. The inverse is continuous by pasting the inverse coordinate maps on the finitely many closed sectors of $B$. These homeomorphisms, including the ordinary charts off the seams, give the stipulated smooth atlas.
+
+For separation let $X$ be the disjoint union before sewing. A class has at most $2^d$ representatives by the sector test. Any two of them are connected by a word in the pairings and their inverses of length at most $2^d-1$: erase repeated vertices from a path. There are finitely many such words. Each is a homeomorphism between closed subsets of $X$, since compositions of the partial homeomorphisms restrict to closed domains and ranges. For closed $C\subset X$, its saturation is therefore closed: it is the finite union of the images of $C$ intersected with these domains, including the identity word. Distinct finite classes in the Hausdorff space $X$ have disjoint open neighborhoods $U,V$. Replacing $U$ by $X\setminus\operatorname{Sat}(X\setminus U)$, and likewise for $V$, gives disjoint saturated open neighborhoods, which descend to $M$. Finally $X$ is second-countable and hence Lindel\"of (every open cover has a countable subcover). Its continuous image $M$ is Lindel\"of as well. Select countably many of the open chart images covering $M$; the union of their countable bases is a basis for $M$.
+\end{proof}
+
+Closedness matters. If two copies of a face segment are paired except at a common limiting endpoint, the two unpaired endpoints cannot be separated by disjoint open sets in the quotient. The atlas construction is in the smooth category of \cite{Lee}; it does not smooth discontinuous physical data. A fixed metric must have coefficients with matching derivatives of every order in the signed charts, not merely matching pullbacks to the face. For example, $dr^2-(1+r)^2dt^2$ in both inward collars gives the common induced metric $-dt^2$, but the assembled $g_{tt}=-(1+|s|)^2$ is not differentiable. Future cones must also agree under the identification if a time orientation is specified. For a dynamical metric the manifold is constructed first; it is each proposed metric history that must meet these requirements.
+
+The product-box test is sufficient, not necessary. For example three planar wedges of opening $2\pi/3$ can tile a normal disk around their common vertex. Each open ray still has just two sides, unlike the branched example in Figure~\ref{fig:01-sectors}. One useful extension is to specify charts from the incident pieces onto closed convex sectors of a regular fan in a ball (or an exterior corner model). The sectors must tile the model, be identified exactly on their common faces, and their changes of coordinates must extend to smooth changes on the assembled neighborhoods. Assume finitely many closed pairings and a uniform bound on the number of representatives in a class. The proof just given works with that bound in place of $2^d$. To test a smooth field in such a chart, express derivatives in the common Cartesian coordinates, not in polar coordinates singular at the vertex. Chapter~\ref{ch:03}'s pasting proof applies because each coordinate segment splits into finitely many sector segments. If the link of the junction does not bound the required local model, the proposed output is a different, singular space; the smooth-manifold conclusions do not apply.
+
+\section{Worked check: a time shift on a spatial seam}
+
+On $\mathbb R_t\times[0,L]_x$ take $L>0$, $g=-dt^2+dx^2$ and orientation $dt\wedge dx$. Identify $(t,0)$ with $(t+\tau,L)$. Contracting the orientation form with $-\partial_x$ at $0$ gives $dt$, while contracting it with $+\partial_x$ at $L$ gives $-dt$. Hence the shift has the correct boundary sign. It is a translation of the flat collar charts; the metric and future direction $\partial_t$ sew for \emph{every} real $\tau$.
+
+On the covering plane the translation vector is $(\tau,L)$, of squared length $L^2-\tau^2$. The straight segment joining translated points projects to a closed timelike curve if $|\tau|>L$, and to a closed null curve if $|\tau|=L$. If $|\tau|<L$, put $b=\tau/L$ and boost to $(T,X)=(t-bx,x-bt)/\sqrt{1-b^2}$. The identification is now $(T,X)\sim(T,X+\sqrt{L^2-\tau^2})$. The circles $T=\mathrm{constant}$ are Cauchy surfaces: every inextendible causal curve meets each exactly once. Indeed $T$ increases along a future causal curve and $|dX/dT|\leq1$, so a finite endpoint of its $T$ range would give a limit on the spatial circle and permit extension. Thus this last quotient is globally hyperbolic, whereas the first two are not even causal. Smooth local sewing has not decided between them.
+
+\begin{exercise}
+Let $R=\{u\geq0\}$ in two dimensions with $g=-du\otimes dv-dv\otimes du$ and orientation $du\wedge dv$. Find the metric dual of $du$ and the induced orientation at $u=0$. Why are the two answers obtained with different vectors?
+
+\emph{Answer.} The inverse metric gives $(du)^\sharp=-\partial_v$, a null tangent generator. An outward transverse vector is $-\partial_u$; its contraction with the orientation form is $-dv$. The first calculation uses metric orthogonality, the second uses only transversality and the side occupied by $R$.
+\end{exercise}

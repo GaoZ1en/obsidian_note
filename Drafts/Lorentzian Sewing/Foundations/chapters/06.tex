@@ -1,0 +1,109 @@
+% !TeX root = ../main.tex
+\chapter{Vector bundles and symmetry}\label{f:bundles}
+
+A tangent plane to the sphere can be drawn inside $\mathbb R^3$, but two components suffice to specify any vector in it. The difficulty is not the dimension count. It is choosing the two axes as the point moves. A vector bundle lets us use axes on small open sets without assuming that one choice works everywhere. The changes of axes will do more than convert components: we can start with the changes alone and construct the space to which the vectors belong.
+
+\section{Local linear coordinates}
+
+\begin{definition}
+A smooth vector bundle of rank $r$ over $M$ consists of a smooth projection $\pi:E\to M$, an $r$-dimensional vector space $E_x=\pi^{-1}(x)$ over each $x$, and local trivializations
+\[
+ \tau_i:E|_{U_i}:=\pi^{-1}(U_i)\longrightarrow U_i\times\mathbb K^r,
+ \qquad \pi=\operatorname{pr}_1\circ\tau_i .
+\]
+Here $\mathbb K=\mathbb R$ or $\mathbb C$, the $U_i$ cover $M$, and each $\tau_i$ is a diffeomorphism that is linear on fibers in its second coordinate. A smooth section on $U$ is a smooth map $s:U\to E$ with $\pi(s(x))=x$; write $\Gamma(E)$ for the sections on $M$.
+\end{definition}
+
+If one replaces $\mathbb K^r$ by a smooth manifold $W$ and drops fiberwise linearity, the same local product condition defines a smooth \emph{fiber bundle}. A section still makes sense, even though two of its values in one fiber cannot in general be added.
+
+For a vector bundle, a trivialization is equally a \emph{frame} $e_i(x):\mathbb K^r\to E_x$, the inverse fiber isomorphism. Its columns are sections, and every section has a unique expression $s=e_i z_i$ there, with $z_i$ a column of smooth functions. Sections can be added and multiplied by functions because the operations are in a single fiber at each point. In particular there is always a zero section. A global frame is a stronger assertion: it gives the isomorphism $(x,v)\mapsto e(x)v$ from the product bundle onto $E$.
+
+A morphism $B:E\to E'$ over $f:M\to N$ is smooth, satisfies $\pi'B=f\pi$, and restricts to a linear map $E_x\to E'_{f(x)}$. For instance $df:TM\to TN$ is such a morphism; it need not be invertible. It is often easier to do the comparison over just one base. Form the \emph{pullback}
+\[
+ f^*E'=\{(x,w)\in M\times E':\ f(x)=\pi'(w)\},\qquad (x,w)\longmapsto x .
+\]
+If $e'$ is a frame on $V\subset N$, then $(x,z)\mapsto(x,e'(f(x))z)$ gives a product over $f^{-1}(V)$, even when $f$ is not an immersion. Sending $B(v)$ to $(\pi(v),B(v))$ converts the morphism above into a morphism $E\to f^*E'$ over the identity; projection onto the second factor reverses this construction. Thus we can pull back a section $s'$ to $x\mapsto(x,s'(f(x)))$ without trying to identify tangent spaces at different points. In particular, the velocity of a parametrized curve $c$ is a section of $c^*TM$ over its parameter interval.
+
+\section{Constructing a bundle from changes of frame}
+
+Write $e_j=e_i g_{ij}$ on $U_i\cap U_j$. The same vector then has components $z_i=g_{ij}z_j$: the first index names the destination of a column. For $TM$ in coordinate frames, $g_{ij}$ is the Jacobian of the $i$ coordinates with respect to the $j$ coordinates. Rewriting one frame through two others gives
+\begin{equation}
+ g_{ii}=1,\qquad g_{ij}g_{jk}=g_{ik}\quad\text{on }U_i\cap U_j\cap U_k .
+ \label{f:bundle-cocycle}
+\end{equation}
+These identities, called the cocycle identities, imply $g_{ji}=g_{ij}^{-1}$.
+
+\begin{theorem}[Bundle gluing]\label{f:bundle-gluing}
+Let $M$ be a Hausdorff second-countable smooth manifold. Smooth maps $g_{ij}:U_i\cap U_j\to\mathrm{GL}(r,\mathbb K)$ satisfying \eqref{f:bundle-cocycle} determine a smooth vector bundle. With its stated frames it is unique up to a unique frame-preserving isomorphism. Its sections are exactly the families of smooth columns satisfying $z_i=g_{ij}z_j$.
+\end{theorem}
+\begin{proof}
+In the disjoint union of the products $U_i\times\mathbb K^r$ put $(x,w)_j\sim(x,g_{ij}(x)w)_i$. The cocycle identities give reflexivity, symmetry and transitivity, so no additional identifications arise from chains. Give the set of classes $E$ the quotient topology. Projection to $x$ is continuous. Over $U_i$ the formula
+\[
+ [x,w]_j\longmapsto (x,g_{ij}(x)w)
+\]
+is independent of the representative since $g_{ij}g_{jk}=g_{ik}$. Its composite with the quotient map is continuous on the open saturated set over $U_i$, and its inverse is $(x,z)\mapsto[x,z]_i$. Hence these are product homeomorphisms. Points over distinct base points separate downstairs; points over the same point separate in one open product chart. A countable subcover of $M$ gives countably many second-countable products, whose bases together form a basis for $E$. The chart changes are smooth and linear, so the same charts supply the smooth structure and the fiber operations.
+
+For any other realization with frames $\widetilde e_i$, the only possible map preserving them sends $[x,z]_i$ to $\widetilde e_i(x)z$. It is well-defined and a linear isomorphism in every product chart. Finally $x\mapsto[x,z_i(x)]_i$ gives a smooth section precisely when its values agree on overlaps, as claimed.
+\end{proof}
+
+The construction also tests whether local maps describe a single morphism. Choose source frames $e_i$ and target frames $e'_i$ on corresponding patches (refine the source cover so their pullbacks exist). Write $B(e_i z)=e'_i(f(x))B_i(x)z$. Computing $B(e_j z)$ in the two ways gives
+\begin{equation}
+ B_i g_{ij}=(g'_{ij}\circ f)B_j .\label{f:morphism-overlap}
+\end{equation}
+Conversely this equality lets the local maps descend. In particular two bundles over the same base are isomorphic if invertible $B_i$ obey this equation on a common refinement. A passive change $e_i\mapsto e_i k_i$ in just one bundle rewrites its transitions as $k_i^{-1}g_{ij}k_j$; it has moved no vector.
+
+\begin{exercise}[Dual coordinates]
+Determine the transitions on $E^*$ if covectors too are written as columns. Explain why the result is not in general $g_{ij}$, even for a real bundle.
+
+\emph{Solution.} The linear pairing in the $i$ frame is $\lambda_i^{\mathsf T}z_i$. Equality with $\lambda_j^{\mathsf T}z_j$ for all $z_j$ forces $\lambda_i=(g_{ij}^{-1})^{\mathsf T}\lambda_j$. The two transitions agree for real orthogonal matrices, not for an arbitrary change of basis. The complex linear dual also uses transpose, not conjugate transpose.
+\end{exercise}
+
+\section{Groups that move the frames}\label{f:group-action}
+
+A Lie group $G$ is a smooth manifold with smooth multiplication and inversion. A smooth left action on $Y$ is a smooth map $(g,y)\mapsto g y$ with $1y=y$ and $(gh)y=g(hy)$. An orbit $G y$ collects the points reachable from $y$; the stabilizer $G_y=\{g:g y=y\}$ collects the moves invisible at that point. Two elements $g,h$ reach the same point precisely when $h^{-1}g\in G_y$. This gives a bijection from the cosets $G/G_y$ onto the orbit; it does not by itself prove the orbit is an embedded submanifold. A right action instead satisfies $(y g)h=y(gh)$, as does composition of frames with matrices on their right.
+
+The infinitesimal motions form the Lie algebra $\mathfrak g=T_1G$. For $A\in T_1G$ take the vector field $A^L(g)=(dL_g)_1A$, where $L_g(h)=gh$. Its bracket with $B^L$ is again left invariant because brackets commute with pushforward by a diffeomorphism. Define $[A,B]=[A^L,B^L](1)$. For a matrix group $A^L(g)=gA$; differentiating $gB$ in direction $gA$ and subtracting the reversed derivative gives $g(AB-BA)$. The curve through $1$ with velocity field $A^L$ is denoted $t\mapsto\exp(tA)$: uniqueness and translation of the local flow give $\exp((t+s)A)=\exp(tA)\exp(sA)$, which extends it to all $t$ \cite{LeeSM}.
+
+A linear representation is a smooth homomorphism $\rho:G\to\mathrm{GL}(W)$ on a finite-dimensional vector space. The derivative $\rho_*=(d\rho)_1$ sends brackets to commutators: differentiating $\rho\circ L_g=L_{\rho(g)}\circ\rho$ makes the left-invariant fields $\rho$-related, and their brackets are then related as well. For example $\mathrm{SO}(2)$ acts on the oriented plane; rotation through $t$ differentiates at $0$ to the operator $(u,v)\mapsto(-v,u)$. For a discrete group the Lie algebra is zero, even though its group elements may act nontrivially. Conjugation by $g$ in $G$ also differentiates at $1$, giving the linear map $\operatorname{Ad}_g:\mathfrak g\to\mathfrak g$; for matrices this is $A\mapsto gAg^{-1}$.
+
+In general a representation of a Lie algebra is a linear map into $\operatorname{End}(W)$ carrying brackets to commutators. Differentiating a group representation gives one, but a Lie algebra representation need not come from the chosen group. For $G=S^1$, its Lie algebra $i\mathbb R$ is abelian. Multiplication by $i\lambda t$ on $\mathbb C$ defines a Lie algebra action of $it$ for every real $\lambda$. A corresponding group action would have to satisfy $\rho(e^{i\theta})=e^{i\lambda\theta}$: differentiating the one-parameter group law gives the scalar ODE with this initial-value solution. It is single-valued on $S^1$ exactly when $\lambda\in\mathbb Z$. The obstruction is a full turn, which no derivative at the identity detects.
+
+\section{Principal fibers and associated fields}
+
+A principal $G$-bundle $P\to M$ carries a smooth right action that is free and transitive on each fiber, with local products in which the action is ordinary right multiplication on $G$. Each fiber resembles $G$ but has no specified identity. A local section $e$ supplies one: every point over $x$ is uniquely $e(x)g$. For example the frames $p:\mathbb K^r\to E_x$ form a principal $\mathrm{GL}(r,\mathbb K)$-bundle, with $p g=p\circ g$. A gauge transformation is an equivariant automorphism $U:P\to P$ over the identity. Writing $U(e_i)=e_i u_i$, equivariance yields $e_j u_j=U(e_i g_{ij})=e_i u_i g_{ij}$, so $u_j=g_{ij}^{-1}u_i g_{ij}$. Conversely such local functions define $U(e_i a)=e_i u_i a$. Unlike a change of notation, $U$ acts on points of $P$.
+
+Given a smooth left action on $W$, form the associated bundle by the rule
+\begin{equation}
+ P\times_G W=(P\times W)/{\sim},\qquad [p g,w]=[p,g w] .\label{f:associated-bundle}
+\end{equation}
+In the $e_i$ frame the class of $(e_i a,w)$ has coordinate $a w$, independent of how the class was written. The chart changes are $w_i=g_{ij}w_j$, and are linear when the action is a representation. Taking the frame bundle and its defining representation recovers $E$ by $[p,w]\mapsto p(w)$. A gauge transformation acts by $[p,w]\mapsto[U(p),w]$; it therefore has component matrix $\rho(u_i)$, not its inverse. The conjugation action on $G$ itself gives a bundle of groups whose sections are exactly the families $u_i$ just described.
+
+A choice of extra structure often reduces the group of frames. For a real bundle, pull the Euclidean inner product back by each local frame coordinate map to obtain a positive form $b_i$ on $E|_{U_i}$. Theorem~\ref{f:partition} gives functions $\chi_i$ for which $b=\sum_i\chi_i b_i$ is globally smooth: each term extends by zero off its patch, and the sum is locally finite. For $v\ne0$ at least one positive-weight summand has $b_i(v,v)>0$, so $b$ is a fiber metric. Applying Gram--Schmidt to a smooth local frame now gives a smooth orthonormal frame. Between two of these the transition lies in $\mathrm O(r)$; the orthonormal frames thus make a principal $\mathrm O(r)$-bundle inside the full frame bundle. The construction gives a metric, not a preferred one.
+
+\begin{example}[Frames on the round sphere]
+The map $R\mapsto R e_3$ sends $\mathrm{SO}(3)$ onto $S^2$. The stabilizer of $e_3$ is $\mathrm{SO}(2)$ acting in the first two coordinates, so this subgroup acts freely and transitively on the right on each fiber. To see the local products, choose a fixed vector not parallel to $x$ and normalize its projection onto $x^\perp$, obtaining $u(x)$ on a neighborhood. The columns $(u(x),x\times u(x),x)$ make a smooth local section. The associated plane bundle is $TS^2$: the map $[R,(a,b)]\mapsto R(a,b,0)$ lands in $(R e_3)^\perp$ and is a linear isomorphism in the displayed frame. Here the same rotations act on two different spaces: on frames from the right and on plane coordinates from the left.
+\end{example}
+
+\begin{exercise}[Sections without a choice of frame]
+Show that sections of $P\times_G W$ are equivalent to smooth functions $\varphi:P\to W$ satisfying $\varphi(p g)=g^{-1}\varphi(p)$.
+
+\emph{Hint.} For fixed $p$ there is a unique $w$ with $s(\pi(p))=[p,w]$. Change $p$ to $p g$ in this equation. Conversely $[p,\varphi(p)]$ is independent of the point chosen in the principal fiber; test smoothness using a local section.
+\end{exercise}
+
+\section{A circle of unoriented lines}
+
+\begin{example}[The tautological real line]\label{f:circle-line}
+The space of unoriented lines through $0$ in $\mathbb R^2$ is a circle. Parametrize it by $\ell(\theta)=\mathbb R v(\theta)$ with $v(\theta)=(\cos(\theta/2),\sin(\theta/2))$ and $\theta$ taken modulo $2\pi$. Over a line put the line itself. On any arc with a lifted angle, $v(\theta)$ is a unit frame. Over the whole circle, $(\theta,z)\mapsto(\ell(\theta),z v(\theta))$ identifies the total space with the quotient by $(\theta,z)\sim(\theta+2\pi,-z)$. A section lifts to a function satisfying $z(\theta+2\pi)=-z(\theta)$. Such a real function must vanish somewhere, by the intermediate value theorem. For example the projection of $(1,0)$ onto each line gives the smooth section with coefficient $\cos(\theta/2)$. The obstruction is to a global frame, not to the existence of sections.
+\end{example}
+
+Cover the circle by two connected arcs whose intersection has two components, and on each arc choose a unit frame. Record a sign $a$ for crossing from the first arc to the second on one component and $b$ for returning on the other. Their product $ba$ compares a continuously followed unit vector with its starting value after a circuit. Now fix the patch frames and compare two possible sets of transition data. An isomorphism acts on the two patches by $z_i\mapsto u_i z_i$, with a single constant sign on each connected arc, not independent choices at its two ends. Commutation with the first crossing means $u_2a=a'u_1$, and likewise $u_1b=b'u_2$ at the return. Thus the allowed pair acts on the data by
+\begin{equation}
+ (a,b)\longmapsto (u_2 a u_1^{-1},\,u_1 b u_2^{-1}).\label{f:sign-groupoid}
+\end{equation}
+The product is invariant. Taking $u_1=1$, $u_2=a^{-1}$ gives the representative $(1,ba)$, so there are exactly two orbits. The positive product gives a global unit frame; the negative product gives Example~\ref{f:circle-line}. In both cases the stabilizer is the diagonal pair of signs. Keeping objects $(a,b)$ and arrows $(u_1,u_2)$ with their sources and targets gives the \emph{action groupoid}: arrows compose by multiplying the frame maps and every arrow has an inverse. One can retain just the two representatives $(1,+1)$ and $(1,-1)$ and all arrows between them. This smaller groupoid is equivalent to the original: every object is isomorphic to a representative and no arrows between representatives were discarded. It consists of two one-object groupoids, each with automorphism group $\{+1,-1\}$, not just two points with identity arrows. This calculation holds the base fixed and uses the discrete structure group of unit frames.
+
+\begin{exercise}[Unwinding a bundle]
+Pull the line of Example~\ref{f:circle-line} back by the degree-$m$ map $e^{i\theta}\mapsto e^{im\theta}$, $m\in\mathbb Z$. For which $m$ is the pullback trivial? What happens to the original line if its real fibers are complexified?
+
+\emph{Solution.} A lifted frame $v(m\theta)$ returns with sign $(-1)^m$. For even $m$ it closes to a global frame; for odd $m$ every real coefficient of a section is antiperiodic and has a zero. On complexification, $e^{i\theta/2}v(\theta)$ is a periodic nowhere-zero complex frame: both factors change sign. The original two-sheeted bundle of real unit frames has not thereby acquired a section.
+\end{exercise}

@@ -1,0 +1,442 @@
+% !TeX root = ../main.tex
+\chapter{Causal perturbations and extension of distributions}\label{f:extension}
+
+Send in two weak sources and ask for the part of a detector reading that
+vanishes when either source is switched off. For a classical nonlinear
+wave this question requires a retarded inverse. For a quantum wave it
+matters whether the reading is a change of the mean field or a correlation
+of two insertions. The same retarded tree will occur in the change of
+mean. A pair of quantum vertices, even when each vertex has already been
+defined, will require a different operation.
+
+\section{Differentiating a retarded solution}
+A formal series in $\lambda,s,r$ with coefficients in an algebra $A$ is
+a list of coefficients $a_{ijk}\in A$ for the monomials $\lambda^i s^j
+r^k$, with nonnegative indices. In a product the coefficient at $(i,j,k)$
+is the sum over decompositions of that triple between the factors, in the
+specified order if $A$ is noncommutative. This is a finite sum even when
+the series do not converge anywhere. Differentiation and setting the
+parameters to zero extract coefficients, with the usual factorials:
+$\partial_s\partial_r|_0$ extracts the $sr$ coefficient, whereas
+$\partial_s^2|_0$ gives twice the $s^2$ coefficient (leaving $\lambda$
+formal in both cases).
+
+For a differentiable functional $F$ of a smooth field its $k$th variation,
+when it exists, is
+\[
+ F^{(k)}[\phi](h_1,\ldots,h_k)=
+ \left.\partial_{s_1}\cdots\partial_{s_k}
+ F[\phi+s_1h_1+\cdots+s_kh_k]\right|_{s_1=\cdots=s_k=0} .
+\]
+The directions $h_i$ are smooth; compact supports or switching functions
+keep all displayed integrals finite. For the local polynomial
+$F[\phi]=\int\chi\phi^3\,\mathrm{d}V/3!$, the first variation is
+$\tfrac12\int\chi\phi^2 h_1\,\mathrm{d}V$ and the second is
+$\int\chi\phi h_1 h_2\,\mathrm{d}V$. The latter has kernel
+$\chi(x)\phi(x)\delta(x,y)$, where the delta is relative to spacetime
+volume. The two variations act at the same point because $F$ is local,
+not because the functions $h_1,h_2$ were chosen to be identical.
+
+Take $P=\Box_g-m^2-\xi R$ in a smooth globally hyperbolic spacetime
+without boundary.
+Use zero incoming data and smooth compactly supported $\chi,f,h$; an
+initial slice before the supports suffices. Add
+$-\lambda F-\int j\phi\,\mathrm{d}V$ to the free action with bulk
+quadratic form $\tfrac12\int\phi P\phi\,\mathrm{d}V$. The equation and its
+retarded form are
+\begin{equation}
+ P\phi=j+\tfrac\lambda2\chi\phi^2,\qquad
+ \phi=G_Rj+\tfrac\lambda2 G_R(\chi\phi^2),\qquad j=sf+rh .
+ \label{f:ext-retarded}
+\end{equation}
+Here $PG_R=1$ on tests. The background at $j=0$ is zero. For a nonzero
+background solution $\bar\phi$ at source $j_0$, subtract its equation:
+the linear operator on $\eta=\phi-\bar\phi$ is $P-\lambda\chi\bar\phi$,
+and the new source is $j-j_0$. Its retarded inverse must then be used,
+with fixed initial and exterior conditions. We keep the zero background
+so that powers of $\lambda$ count only cubic vertices.
+
+Write $u_f=G_R f$, $u_h=G_R h$. Substituting the leading solution on the
+right of \eqref{f:ext-retarded} gives
+\[
+ \phi=su_f+ru_h+\tfrac\lambda2 G_R\!\left(\chi(su_f+ru_h)^2\right)
+          +O(\lambda^2).
+\]
+The $\lambda sr$ coefficient is $G_R(\chi u_f u_h)$, not half this
+quantity: there are two assignments of source labels to the square. A
+smooth detector $k$ of compact support measures this coefficient as
+\begin{equation}
+ \int k\,G_R(\chi u_f u_h)\,\mathrm{d}V
+       =\int (G_A k)\chi u_f u_h\,\mathrm{d}V .
+ \label{f:ext-tree}
+\end{equation}
+This uses formal self-adjointness and retarded--advanced adjointness on
+the same domain. It locates the signal at an overlap of the futures of
+both pulses and the past of the detector. Drawing a line for each inverse
+gives a rooted tree: two inputs meet, and their product propagates to the
+output. Iterating substitutes a new branch at a field factor; it never
+pairs two previously existing factors. No state has entered.
+
+\begin{exercise}
+In a flat massless region take $\chi=f=h=1$ in the portion of the causal
+past of a detector between the initial slice and elapsed time $T$. Compute
+the $\lambda sr$ and $\lambda s^2$ field coefficients there. The data
+outside that domain may be cut off smoothly.
+\end{exercise}
+\noindent\emph{Hint.} In the spatially constant calculation $P=-\partial_t^2$
+and $u_f=u_h=-t^2/2$. Propagate $t^4/4$ once more with kernel $-(T-t)$;
+the mixed answer is $-T^6/120$, the unmixed one half as large.
+
+\section{Ordered insertions: the tree and the two-line loop}
+Choose a centered quasifree Hadamard state with two-point function $W$ for
+the free field $\Phi$, and set $\hbar=1$. First use Wick ordering in this
+reference state. The first subtraction is explicit:
+$:\!\Phi(x)\Phi(y)\!:=\Phi(x)\Phi(y)-W(x,y)\mathbf1$.
+In matrix elements between vectors generated from the quasifree cyclic
+vector by finitely many smeared fields, the ordered pairing rule derived on
+p.~\pageref{f:wick-pairings} now pairs each
+unsmeared field only with a smeared one. Such a contraction is smooth:
+a singular direction cannot have a zero covector in the smeared slot by
+\eqref{f:wf-spectrum}. These matrix elements can be restricted to $x=y$;
+the result is the Wick square as a distribution in the remaining point.
+For higher Wick powers the colons likewise exclude all internal pairings.
+Local covariant Wick powers subtract a geometric parametrix rather than
+the full $W$; the resulting finite local normalizations must be specified
+as well \cite{HWick}.
+For a nonderivative potential the Hamiltonian insertion has the opposite
+sign to the added Lagrangian term. Thus the finite-time Dyson convention
+is $U=\mathcal T\exp[-i\int (j\Phi+\lambda\chi:\!\Phi^3\!:/3!)\,\mathrm{d}V]$,
+with later times on the left. Here and below a field at a point is kernel
+notation for a spacetime-smeared insertion, not a point operator.
+
+For a change of the mean, the observable evolves as $U^*\Phi(x)U$ up to
+the observation time. To first order in an insertion its change is $i$
+times the ordered integral of its commutator with $\Phi(x)$. Since
+$i[\Phi(y),\Phi(x)]=E(x,y)\mathbf1$, a linear source alone shifts the
+field by $u=G_Rj$; further source commutators vanish. Write $U=U_j U_{\rm rel}$
+with $U_j$ generated by the source alone. The cubic insertion in the
+relative evolution is conjugated by $U_j$ up to its insertion time, so
+its field is $\Phi(y)+u(y)$. Its commutator is then
+\[
+ i[:\!(\Phi(y)+u(y))^3\!:,\Phi(x)]
+       =3E(x,y):\!(\Phi(y)+u(y))^2\!: .
+\]
+Retarded ordering supplies $G_R(x,y)$. Of the terms on the right only
+$u(y)^2$ is quadratic in the source. The $3/3!$ from the commutator and
+the $2$ from its $sr$ coefficient reproduce \eqref{f:ext-tree}. This
+calculation explains how a retarded line arises from quantum evolution;
+it is not a prescription to contract two fields with $G_R$.
+
+For a time-ordered correlation the single contraction is instead
+\begin{equation}
+ G_F=W+iG_A=W^T+iG_R,\qquad P_xG_F(x,y)=i\delta(x,y) .
+ \label{f:ext-feynman}
+\end{equation}
+Indeed $W-W^T=i(G_R-G_A)$, so the first expression equals $W$ to the
+future of $y$ and the second equals $W^T$ to its past, off coincidence.
+At spacelike separation they agree. This choice defines the free scalar
+contraction on the diagonal as well, without multiplying steps at zero;
+there is \emph{no} extra $i$ multiplying the time-ordered expectation.
+The delta follows by applying $P_x$ to the formula, not to $W$ alone.
+
+For bosonic local insertions the multilinear time-ordered kernels $T_n$
+obey \emph{causal factorization}. Split the labels into two nonempty sets
+$I,J$. On supports for which no point of group $I$ lies in the causal
+past of a point of group $J$,
+\begin{equation}
+ T_n(F_1,\ldots,F_n)=T_{|I|}(F_I)\,T_{|J|}(F_J) .
+ \label{f:ext-factor}
+\end{equation}
+The right side is the ordinary quantum product, not another ordering
+across the groups. To see the reach of this prescription, take a tuple
+not all at the same point. The finitely many distinct points have a
+maximal element in their causal order. Put \emph{all} labels at this
+element into $I$, the others into $J$. Closedness of the causal relation
+in a globally hyperbolic spacetime gives open neighborhoods with the
+same separation. Such neighborhoods cover the complement of the total
+diagonal. Lower products already include their partial coincidences;
+causal factorization at lower orders and commutativity at spacelike
+separation give agreement on overlaps. This is the off-diagonal step of
+the Epstein--Glaser induction \cite{BF,HWT,FR}. A spatial division does
+not order the two groups in time.
+
+In the product of two Wick cubes, contract $j$ fields at $x$ with $j$
+fields at $y$. The choices of fields and their bijections number
+$\binom3j^2j!$, respectively $1,9,18,6$ for $j=0,1,2,3$. Each cross
+contraction contributes $W(x,y)$ in the indicated operator order, hence
+$G_F(x,y)$ after time ordering away from coincidence. In particular the
+two-line term of the quadratic Dyson coefficient is
+\begin{equation}
+ -\frac{\lambda^2}{4}\int \chi(x)\chi(y)\,G_F(x,y)^2
+       :\!\Phi(x)\Phi(y)\!:\,\mathrm{d}V_x\,\mathrm{d}V_y ,
+ \qquad x\ne y\ \text{initially} .
+ \label{f:ext-fish}
+\end{equation}
+The factor is $18(-i\lambda)^2/[2!(3!)^2]$; the remaining fields have
+not been paired. Two lines between the same two vertices make a loop.
+It is not the power of $\lambda$ that identifies the loop: at order
+$\lambda^2$ the classical recursion gives the tree
+$\tfrac12 G_R(\chi u\,G_R(\chi u^2))$, with $u=G_Rj$.
+At a null pair off the diagonal $G_F$ locally selects one of $W,W^T$, so its square
+passes the product test of Chapter~\ref{f:microlocal}. At coincidence
+\eqref{f:ext-feynman} implies that $\operatorname{WF}(G_F)$ contains all
+conormals of the diagonal: differentiation cannot create directions and
+$\delta(x,y)$ has them all. The product test therefore fails there. The
+object to be constructed is an extension of the \emph{already defined}
+separated-vertex distribution, not a point value of $G_F^2$.
+
+\begin{exercise}
+Replace $\chi$ in the cubic interaction by $a\chi_1+b\chi_2$. Find the
+coefficient of $\lambda^2 ab$ in the two-line term. If an extension of
+$G_F^2$ is changed by $c\delta(x,y)$, what change does this coefficient
+undergo? Can its nonlocal part persist for disjoint supports?
+\end{exercise}
+\noindent\emph{Solution.} Exchange $x,y$ in one cross term. The two give
+$-\tfrac12$ times the integral in \eqref{f:ext-fish} with switchings
+$\chi_1(x)\chi_2(y)$ and no $\lambda^2$. The local change is
+$-\tfrac c2\int\chi_1\chi_2:\!\Phi^2\!:\,\mathrm{d}V$. Only this latter
+term must vanish for disjoint supports.
+
+\section{Normal scaling and the missing Taylor moments}
+At two coincident bulk points in dimension $D$, take coordinates
+$(X,z)=(y,x-y)$ in a chart. The diagonal is $z=0$; approaching it means
+scaling the $D$ relative coordinates, not scaling $X$. We first fix the
+model normal space $\mathbb R^k$. Let $t^\circ$ be a distribution on its
+punctured version. For a test $\psi$ supported off zero set
+$\psi_a(z)=a^{-k}\psi(z/a)$ and $t^\circ_a(\psi)=t^\circ(\psi_a)$.
+Pairing a regular function this way gives the function $t^\circ(az)$;
+the factor $a^{-k}$ removes the volume Jacobian.
+
+\begin{definition}
+The \emph{scaling degree} at zero is
+\[
+ \operatorname{sd}_0(t^\circ)=\inf\{d\in\mathbb R:
+      a^d t^\circ_a\longrightarrow0\ \text{in distributions as }a\downarrow0\}.
+\]
+For a distribution defined at zero as well the definition uses all tests,
+not just punctured-space tests. A nonzero homogeneous distribution of
+degree $-b$ has scaling degree $b$; logarithmic factors in its scaling
+law do not increase the infimum.
+\end{definition}
+
+\begin{theorem}[Point extension with finite scaling degree, Brunetti--Fredenhagen \cite{BF}]
+\label{f:ext-theorem}
+A distribution on a punctured neighborhood in $\mathbb R^k$ of finite
+scaling degree $\rho$ at zero has an extension of the same scaling degree.
+With this degree requirement it is unique for $\rho<k$. For $\rho\ge k$
+the freedom is exactly addition of
+\begin{equation}
+ \sum_{|\alpha|\le\lfloor\rho-k\rfloor}c_\alpha\,\partial^\alpha\delta_0 .
+ \label{f:ext-jets}
+\end{equation}
+No symmetries or field identities have yet been imposed on the constants.
+\end{theorem}
+
+Two extensions agree on all tests supported off zero. By the structure
+theorem for point-supported distributions \cite{Schwartz,HormI}, their
+difference is a finite sum of delta derivatives. On a scaled test a term
+$\partial^\alpha\delta_0$ gives
+$(-1)^{|\alpha|}a^{-k-|\alpha|}\partial^\alpha\psi(0)$. Prescribing a
+Taylor jet of $\psi$ can isolate any highest derivative. This proves the
+ambiguity bound and explains why merely requiring \emph{some} extension
+would not imply uniqueness even below threshold.
+
+Here is how to use the existence statement. If $m=\lfloor\rho-k\rfloor
+\ge0$, take a compactly supported smooth $w$ equal to one near zero and
+subtract the jet from the test:
+\[
+ \psi^\flat(z)=\psi(z)-w(z)\sum_{|\alpha|\le m}
+                   \frac{z^\alpha}{\alpha!}\partial^\alpha\psi(0) .
+\]
+On an annulus of radius $a$ this gains $m+1$ powers of $a$. To see why
+that suffices, localize the annulus with a fixed smooth annular cutoff
+$\beta(z/a)$. Its pairing with $t^\circ$ is
+$a^k t^\circ_a(\beta(\cdot)\psi^\flat(a\,\cdot))$. For any $d>\rho$,
+$a^d t^\circ_a$ is bounded on tests of bounded seminorms on that fixed
+annulus; Taylor's formula bounds each needed derivative of
+$\psi^\flat(a\,\cdot)$ there by $O(a^{m+1})$. The shell is therefore
+$O(a^{k+m+1-d})$. Choose $\rho<d<k+m+1$; the bound is summable on a
+smooth annular partition with radii $2^{-j}$. If $\rho<k$, no jet has to
+be subtracted and the same argument works with exponent $k-d>0$.
+Assigning values to the finitely many subtracted Taylor moments completes
+the extension; the theorem controls its scaling on all tests. It is the
+codimension $k$, not the dimension of the whole configuration space, that
+pays for the gain from the volume element.
+
+\section{A marginal subtraction and its scale residue}
+In the flat massless four-dimensional theory the time-ordered contraction
+is $(4\pi^2)^{-1}(z^2+i0)^{-1}$ with $z^2=|\mathbf z|^2-(z^0)^2$.
+Its square on punctured relative space has scaling degree four; it is
+still a boundary value \emph{on} the noncoincident light cone. To perform
+a subtraction by an ordinary radial integral, first take a different,
+Euclidean distribution with the same marginal degree:
+\[
+ t_E^\circ(z)=\frac{1}{16\pi^4|z|^4},\qquad z\in\mathbb R^4\setminus\{0\},
+\]
+where $|z|$ is Euclidean length. Its integral against a test constant near
+zero would contain $\int_0^1\mathrm{d}r/r$. The theorem calls for one
+Taylor moment. For a smooth radial cutoff profile $w$ equal to one near
+zero and zero at large radius, and a length $\ell>0$, put
+\begin{equation}
+ R_\ell(\psi)=\frac1{16\pi^4}\int_{\mathbb R^4}
+  \frac{\psi(z)-\psi(0)w(|z|/\ell)}{|z|^4}\,\mathrm{d}^4z .
+ \label{f:ext-subtraction}
+\end{equation}
+The numerator is $O(|z|)$ near zero by the mean value bound. Thus the
+radial integral is absolutely convergent, controlled by a first derivative
+seminorm of the test there and its supremum away from zero. This defines
+a distribution and leaves every punctured-space pairing unchanged. The
+subtraction is needed for existence; choosing which constant to assign
+to the removed moment is a separate finite choice.
+
+Only the cutoff changes when $\ell$ changes. Since the area of the unit
+three-sphere is $2\pi^2$, radial integration gives
+\begin{align}
+ (R_{\ell'}-R_\ell)(\psi)
+ &=-\frac{\psi(0)}{8\pi^2}\int_0^\infty
+       [w(r/\ell')-w(r/\ell)]\,\frac{\mathrm{d}r}{r}
+   =-\frac{\log(\ell'/\ell)}{8\pi^2}\psi(0) .
+ \label{f:ext-residue}
+\end{align}
+For the last equality differentiate the integral in $\log\ell'$: after
+$u=r/\ell'$ the derivative is $-\int_0^\infty w'(u)\,\mathrm{d}u=1$.
+The integral is zero at $\ell'=\ell$. Changing variables $z=a v$ in
+\eqref{f:ext-subtraction} now yields the full scaling law
+\[
+ a^4(R_\ell)_a=R_{\ell/a}=R_\ell+\frac{\log a}{8\pi^2}\delta_0 .
+\]
+Multiplication by any additional positive power of $a$ gives zero in the
+limit, and off zero the scaling degree was already four. Thus the
+extension preserves scaling degree but not exact homogeneity. Adding a
+finite multiple of $\delta_0$ cannot cancel the logarithm because the
+delta itself scales homogeneously. The residue just computed uses a
+Euclidean radial measure; it is not the complex scale change of the
+Lorentzian time-ordered contraction.
+
+\begin{exercise}
+Recover the Lorentzian scale change without using a Euclidean sphere on a
+light cone. Write $q=z^2$, $q_+=q+i0$, and extend the bracket below
+without increasing its scaling degree. Why does the result
+\[
+ L_\ell=-\frac1{64\pi^4}\Box\!\left[\frac{\log(q_+/\ell^2)}{q_+}\right]
+\]
+agree off zero with the scalar kernel in \eqref{f:ext-fish}? Determine
+$L_{\ell'}-L_\ell$.
+\end{exercise}
+\noindent\emph{Solution.} Off the cone use
+$\Box h(q)=4q h''(q)+8h'(q)$: for $h(q)=\log(q/\ell^2)/q$ the result
+is $-4/q^2$. At any nonzero point of the cone $\mathrm{d}q\ne0$, so the
+one-variable upper boundary value in $q$ gives the same identity there.
+The bracket has scaling degree two (with a logarithm); extend it uniquely
+at the tip before differentiating. Two derivatives raise scaling degree
+by at most two, and the punctured square already has degree four.
+Finally \eqref{f:ext-feynman} gives $\Box(1/q_+)=4\pi^2 i\delta_0$.
+The difference is $i\log(\ell'/\ell)\delta_0/(8\pi^2)$. The factor $i$
+and its sign depend on the Lorentzian source convention.
+
+\section{Where a contact can live, and which identities it must obey}
+For the total diagonal of $n$ bulk vertices in spacetime dimension $D$,
+there are $k=(n-1)D$ relative coordinates and $D$ coordinates along the
+diagonal. Near a smooth collision stratum use a product chart $(X,z)$ with
+$z=0$ on the stratum. Dilate only $z$, using tests
+$\psi_a(X,z)=a^{-k}\psi(X,z/a)$. With a finite normal scaling bound
+$\rho$ uniform on compact tangential test families, two extensions
+obeying that bound can differ locally only by terms of the form
+\eqref{f:ext-jets} in $z$, with distributional coefficients in $X$.
+This follows from the local structure of distributions supported on a
+submanifold and the same scaled-jet test. Smoothness or a prescribed
+wavefront set for the coefficients is an additional condition. If they are
+singular at the edge of a face, that smaller stratum needs separate
+analysis. Power counting classifies possible contacts once the distributions
+away from the stratum and their normal estimates are known.
+
+If all $n$ bulk vertices collide \emph{on} a face of codimension $q$,
+the common point must move to the face as well: $k=(n-1)D+q$. Vertices
+constrained from the start to that face instead have total diagonal of
+codimension $(n-1)(D-q)$ in their own configuration space. For example,
+draw a plane in the flat four-dimensional fish calculation. The uncut
+kernel has no dependence on the normal position $X_\perp$ of the common
+point. Under joint scaling of $(z,X_\perp)$ it still has degree four,
+whereas $\delta^{(4)}(z)\delta(X_\perp)$ has degree five. With that bound
+there is no extra sheet mass term. More generally an artificial division
+supplies no new physical coupling: split a switching function smoothly and
+sum its terms using the same whole-space extension. A true wall with its
+own action, boundary condition or fields supplies new local data. Its
+face and corner counterterms must be tested against those data, not
+inferred by declaring the wall transparent. A bulk existence theorem does
+not solve a theory on an arbitrary boundary.
+
+Symmetries test the \emph{extended} products. At zero interaction the
+massless flat scalar has the shift current $j^\mu=-\partial^\mu\Phi$,
+with $j^0=\partial_t\Phi$. It is conserved in the bulk field equation;
+its time-ordered insertion with a field is not divergence-free at
+coincidence. With the derivative normalization of the free contraction,
+\begin{equation}
+ \partial_\mu^x\langle\mathcal T j^\mu(x)\Phi(y)\rangle
+   =-\Box_x G_F(x,y)=-i\delta(x,y) .
+ \label{f:ext-ward}
+\end{equation}
+The first derivative of the ordering has no contact proportional to the
+equal-time field--field commutator, which vanishes. The divergence then
+detects $[j^0(t,\mathbf x),\Phi(t,\mathbf y)]=-i\delta^{(3)}(\mathbf
+x-\mathbf y)$. A test equal to one near $y$ reads the coefficient $-i$.
+Thus extending a classically conserved expression by setting its ordered
+divergence to zero would give the wrong generator on the inserted field.
+The cubic interaction explicitly breaks this shift; such breaking is not
+a quantum anomaly. More generally, locality, covariance, power counting,
+unitarity and Ward identities restrict the finite terms allowed in an
+extension \cite{HWick,HWT,FR}.
+
+In a gauge theory the obstruction has the cochain form of
+Chapter~\ref{f:gauge-complex}. Let $s$ be the nilpotent linearized
+symmetry differential on admissible local densities, raising ghost number
+by one. Suppose all Ward identities through order $n-1$ hold. The first
+possible breaking $\mathcal A_n$ is a local contact of ghost number one:
+applying the symmetry consistency identity a second time leaves
+$s\mathcal A_n=0$ at this order, modulo permitted total derivatives,
+since the terms containing lower-order breakings vanish. Adding a finite
+local counterterm $B$ of ghost number zero at order $n$ changes the
+breaking to $\mathcal A_n+sB$ in this sign convention. Thus the relevant
+cohomology is closed local breakings modulo such exact ones, not the
+space of arbitrary distributions on the diagonal.
+
+For example take an Abelian potential $A$ and odd ghost $c$ with
+$sA_\mu=\partial_\mu c$, $sc=0$. Suppose the dimension and other
+normalizations permit the counterterm $B=\tfrac\kappa2\int A_\mu A^\mu\,\mathrm{d}V$.
+Then
+\[
+ sB=\kappa\int A^\mu\partial_\mu c\,\mathrm{d}V
+   =-\kappa\int c\,\nabla_\mu A^\mu\,\mathrm{d}V
+      +\kappa\int_{\partial M} c A^\mu\,\mathrm{d}\Sigma_\mu ,
+\]
+with the directed surface element in the last integral. A candidate
+breaking $+\kappa\int c\,\nabla_\mu A^\mu\,\mathrm{d}V$ is removable in
+the compactly supported bulk problem. On a true wall the flux must vanish
+by the physical conditions or be canceled in the combined boundary
+identity before the same total derivative can be discarded. The example
+identifies a coboundary under stated assumptions; it neither produces an
+anomaly nor excludes other cohomology classes.
+
+Finally all these equations are statements in a specified theory and, if
+several global sectors exist, in a specified sector. Even if two sectors
+have indistinguishable local singularities, no step in the Taylor
+subtraction assigns a relative probability or phase to them. To combine
+sector answers one needs a common observable and an independently chosen
+measure: mixing normalized states needs nonnegative weights summing to
+one; adding amplitudes is a different prescription. Conservation and the
+extension theorem dictate neither. Equality after a weighted sum would
+also be weaker than equality in each sector, since two discrepancies can
+cancel.
+
+\begin{exercise}
+As a power-counting test consider $|z|^{-6}$ off zero in Euclidean four
+space. Which normal contacts can change a degree-preserving extension?
+If the result must also be a rotation-invariant scalar, which survive?
+Does rotation invariance determine their coefficients?
+\end{exercise}
+\noindent\emph{Solution.} The excess degree is $6-4=2$. Before symmetry,
+delta derivatives through order two are allowed. There is no invariant
+vector for the order-one coefficient and an invariant symmetric
+rank-two tensor is proportional to the Euclidean metric. Thus
+$c_0\delta_0+c_2\Delta\delta_0$ remains. Neither constant is fixed by
+this count, which imposed no scaling law beyond the degree bound.

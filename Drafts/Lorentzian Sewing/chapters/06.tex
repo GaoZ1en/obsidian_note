@@ -1,0 +1,231 @@
+\chapter{Causal response and the Peierls bracket}\label{ch:06}
+How can a force applied for a finite time define a tangent vector to the
+\emph{unforced} equations? Produce two responses to the same force: one with
+no incoming disturbance, the other with no outgoing disturbance. Their
+difference solves the homogeneous equations. The endpoint two-form of
+Chapter~\ref{ch:05} tells us which difference is the Hamiltonian vector of
+the source observable. This construction takes place near a specified
+solution, and its domain matters as much as the differential operator.
+
+\section{Fields, sources, and a causal boundary problem}
+Fix a smooth solution $\bar\phi$. A perturbation $u$ is a section of the
+linearized field bundle $V$. A smooth bulk source $f$ is a section of the
+different bundle $V^\vee=V^*\otimes |\Lambda^{\mathrm{top}}T^*M|$; its value
+on $u$ is a density, not another field. The pairing and the linearized Euler
+operator are
+\[
+ \langle f,u\rangle=\int_M f(u),\qquad
+ J=\left.D{\cal E}\right|_{\bar\phi}:
+           \Gamma(V)\longrightarrow\Gamma(V^\vee).
+\]
+Here $\Gamma(V)$ means smooth sections of $V$, and the oriented Euler form
+is read as a density using the spacetime orientation. $J$ is the Hessian
+with the sign of the Euler term in
+$\delta S$, not an arbitrarily signed wave operator. At this background the
+derivative of an observable $F$ is a source when $\delta F(u)=\langle F',u\rangle$.
+A choice of metric and measure may identify field components with source
+components; it does not exchange their roles in this formula.
+
+For a first source space take smooth dual densities compactly supported in
+the spacetime interior. For a nongauge, normally hyperbolic equation on a
+globally hyperbolic spacetime without a wall, the causal Green problem for
+such tests is well posed \cite{BGP}; reversing the overall sign of the
+operator reverses that of its inverses. With a timelike physical wall one
+must supply a well-posed initial--boundary problem instead. Use the
+homogeneous \emph{linearized} physical boundary condition for both responses
+when that condition is its own adjoint. At a cut still held at fixed $j$ the
+corresponding trace variation also vanishes. Vanishing past data for a
+retarded solution do not mean imposing zero Cauchy data at both ends of a
+slab. The advanced problem has the complementary future data.
+
+There are two distinct adjoint assertions here. For interior test sections,
+commuting two variations of the action gives formal symmetry $J^*=J$ by
+integration by parts. In a slab containing the physical wall the same
+calculation, before discarding endpoints, gives
+\begin{equation}
+ \langle Jv,u\rangle-\langle Ju,v\rangle
+ =\omega_{\Sigma_f}(u,v)-\omega_{\Sigma_i}(u,v)
+ \label{eq:06-green}
+\end{equation}
+for $u,v$ obeying the linearized wall condition, with the corner terms in
+$\omega$. Indeed the antisymmetrized second bulk variation is
+$\langle Ju,v\rangle-\langle Jv,u\rangle$; the complementary terms are the
+two endpoint variations. This identity is for trial perturbations, not just
+for solutions of $Ju=Jv=0$. Dropping the wall integral for arbitrary fields
+would be false. For a scalar, real Robin data $\partial_n u+ku=0$ with
+the same fixed $k$ for both variations give
+$u\partial_n v-v\partial_n u=0$ on the wall. This is the extra domain check.
+An absorbing wall may require a different adjoint boundary condition;
+formal symmetry alone does not prove reciprocity for the chosen propagators.
+
+\section{Inverting the endpoint form}
+Suppose the adjoint-domain check, existence, uniqueness, and causal support
+hold. Write $G^R f$ and $G^A f$ for the retarded and advanced solutions of
+$Jv=f$, supported in the causal future and past of $\operatorname{supp}f$,
+respectively. On interior source tests $JG^{R/A}=1$. To use an inverse on
+the other side, note that $w-G^R Jw$ is the homogeneous solution with the
+initial data of $w$. Thus on a finite slab $G^R Jw=w$ requires zero incoming
+Cauchy data, and $G^A Jw=w$ requires zero outgoing Cauchy data. Admissible
+test fields supported away from both caps meet both conditions; compactness
+on a \emph{closed} slab alone does not. Using \eqref{eq:06-green} with a retarded
+solution for $f$ and an advanced one for $g$ gives
+$\langle g,G^R f\rangle=\langle f,G^A g\rangle$: before the sources the
+retarded endpoint vanishes; after them the advanced endpoint vanishes.
+Define
+\[
+ E=G^R-G^A.
+\]
+Thus $JEf=0$, $EJw=0$ on the common test-field domain just described, and
+$E$ is skew with respect to the field--source pairing. For a compact source support
+$K$, the support of $Ef$ is in $J^+(K)\cup J^-(K)$, which meets every Cauchy
+surface in a compact set in the globally hyperbolic case without a wall.
+One-sided inverses can have larger domains: a source turned on after a fixed
+slice and left on forever can generate a retarded solution without admitting
+a response with zero data after the source is over. One must specify a common
+source space before subtracting the two inverses.
+
+For $Ju=0$, take $v=G^R f$ in \eqref{eq:06-green} and put the final slice
+after the source. There $G^A f$ vanishes, and at the initial slice $G^R f$
+vanishes. Hence $\omega_{\Sigma_f}(u,Ef)=\langle f,u\rangle$. Since $Ef$
+is homogeneous, the equality holds on every slice on which the pairing is
+finite. Comparing with $\delta H(u)=\omega(u,X_H)$ gives
+\begin{equation}
+ X_F=E F',\qquad \{F,G\}_{\mathrm P}=\delta F(X_G)
+                 =\langle F',E G'\rangle.
+ \label{eq:06-peierls}
+\end{equation}
+With a source added as $S-\varepsilon G$, the linearized equation reads
+$Jv=G'$, so its retarded response minus its advanced response is precisely
+$X_G$. With $S+\varepsilon G$ each response would carry a minus sign.
+Covectors differing by $Jh$ for $h$ in the common test-field domain give
+the same tangent pairing and causal vector. Larger classes of sources need their own tests:
+the Green operators must act on them, the dual pairings must exist, and
+boundary terms must still satisfy \eqref{eq:06-green}. A force applied to an
+opened trace pairs with that trace and drives an inhomogeneous boundary
+problem; it is not automatically an interior delta source in the fixed-$j$
+problem. Likewise singular functional derivatives may require wavefront
+conditions before the pairing of distributions in \eqref{eq:06-peierls}
+makes sense.
+
+An oscillator determines all of the signs without appealing to a commutator.
+For $S=\tfrac m2\int(\dot q^2-\nu^2q^2)dt$, $m,\nu>0$, one has
+$J=-m(\partial_t^2+\nu^2)$. With $s=t-t'$ its causal inverses are
+\[
+ G^R(s)=-\vartheta(s)\frac{\sin(\nu s)}{m\nu},\qquad
+ G^A(s)= \vartheta(-s)\frac{\sin(\nu s)}{m\nu}.
+\]
+Here $\vartheta$ is the step function. Both kernels are continuous and their
+first derivatives jump by $-1/m$ at $s=0$, as required by $JG=\delta(s)$.
+It follows that $\{q(t),q(t')\}=E(s)=-\sin(\nu s)/(m\nu)$. Differentiating
+in the \emph{second} time gives $\{q(t),p(t')\}=m\partial_{t'}E(t-t')
+=\cos(\nu(t-t'))$, hence $\{q,p\}=1$ at equal time. Evaluation at a time
+can equivalently be obtained from smooth time smearings in this example.
+
+\section{When the Hessian has gauge directions}
+An infinitesimal proper gauge transformation $K\varepsilon$ is tangent to the
+allowed fields and lies in the presymplectic kernel; a charged cut action
+need not be proper. Because gauge transformations take solutions to solutions,
+differentiating their action gives $JK=0$ at a solution. Hence $J$ cannot
+have an inverse on all fields. The Batalin--Vilkovisky (BV) formalism
+\cite{CMR} introduces ghosts for gauge parameters and dual variables
+(antifields) for fields and ghosts. A differential $Q$ on these graded
+variables encodes the equations, symmetries and their identities in
+$Q^2=0$. At its zero $\bar\Phi$ (the classical solution $\bar\phi$ with
+ghosts and antifields set to zero), $D=(DQ)_{\bar\Phi}$ squares to zero.
+For an irreducible theory, with no further local gauge redundancies among
+parameters in $U$, the relevant degrees of the deformation complex are
+\[
+ \underbrace{\Gamma(U)}_{-1}\xrightarrow{\ K\ }
+ \underbrace{\Gamma(V)}_{0}\xrightarrow{\ J\ }
+ \underbrace{\Gamma(V^\vee)}_{1}\xrightarrow{\ K^*\ }
+ \underbrace{\Gamma(U^\vee)}_{2}.
+\]
+Here and below the spaces carry compatible support and boundary conditions.
+The compositions vanish: the first says that a gauge variation of a solution
+solves the linearized equations, the second is the linearized Noether
+identity. Boundary tangency is a further requirement. If boundary conditions
+are written $b(\Phi)=0$, then $Q$ acts within this problem only if
+$b'_\Phi Q(\Phi)=0$ there. At $Q(\bar\Phi)=0$, differentiating in a tangent
+direction $w$ gives $b'_{\bar\Phi}Dw=0$. This is why one may restrict the
+complex to that boundary domain, rather than testing only its bulk equations.
+For Maxwell, $K\varepsilon=d\varepsilon$; fixing the tangential potential on $B$ requires
+$d_B(\varepsilon|_B)=0$, which the proper choice $\varepsilon|_B=0$ satisfies.
+On a sewn interface matching the two parameter traces similarly preserves
+matching of tangential potentials. For a full complex, each arrow must
+preserve its specified boundary or transmission domain, not just the field
+block in this example.
+
+A \emph{retarded or advanced Green homotopy} $h^{R/A}$ lowers degree by one
+and satisfies $Dh^{R/A}+h^{R/A}D=1$ on its corresponding causal support
+complex. It is an inverse up to the neighboring gauge and identity arrows.
+To construct one, let $Cu=0$ be a linear gauge condition, with $C$ mapping
+field perturbations to parameter sections (for Maxwell one can take the
+divergence). Choose a symmetric invertible bundle map $B:U\to U^\vee$;
+this algebraic weight pairs gauge-condition violations. The gauge-fixed
+field operator, the operator giving the change of the gauge condition along
+a gauge orbit, and its formal adjoint are respectively
+\[
+ P=J+C^*BC,\qquad R=CK,\qquad R^*=K^*C^*.
+\]
+For either causal sign, suppress its superscript and assume $P,R,R^*$
+have Green inverses $G_P,G_R,G_{R^*}$ on the corresponding one-sided
+domains. The compositions below must preserve support, the field and proper
+ghost boundary conditions, and any transmission and homogeneous cap data.
+These are hypotheses on the gauge fixing, not consequences of adding a
+quadratic term to the action \cite{Khavkine}.
+
+Since $JK=0$, one has $PK=C^*BR$. Therefore $KG_R$ and $G_PC^*B$ solve
+the same $P$ problem with the same causal data and are equal by uniqueness.
+Likewise $K^*P=R^*BC$ gives $BCG_P=G_{R^*}K^*$. Use the following blocks
+on inputs of degrees $0,1,2$, respectively:
+\[
+ h_0=G_R C,\qquad h_1=G_P,\qquad h_2=C^*G_{R^*}.
+\]
+For example, on a field perturbation the degree-zero homotopy equation is
+$Kh_0+h_1J=KG_R C+G_PJ=G_P(C^*BC+J)=1$. On a source the second
+intertwining relation gives $Jh_1+h_2K^*=(J+C^*BC)G_P=1$; the end blocks
+are $h_0K=G_RR=1$ and $K^*h_2=R^*G_{R^*}=1$ on their respective domains.
+
+For a concrete check, identify forms with their density duals using the metric on a boundaryless globally hyperbolic spacetime. Denote the formal adjoint of the spacetime exterior derivative by $d^*$, not by the field variation $\delta$. Maxwell gives $K=d$, $J=-d^*d$ on one-forms. Take $C=d^*$ and $B=-1$. With $W_k=dd^*+d^*d$ on $k$-forms, the field block is $P=-W_1$ and the scalar ghost block is $R=W_0$. If $S_k$ is the same-sign causal inverse of $W_k$, the three homotopy blocks are $S_0 d^*$, $-S_1$, and $d S_0$. For instance $d S_0d^*+S_1d^*d=S_1(dd^*+d^*d)=1$: the equality $d S_0=S_1 d$ follows from the differential-operator identity $W_1 d=d W_0$ and causal uniqueness. Adding a wall would oblige us to verify that $d$ really maps the allowed scalar boundary domain into the one-form domain. Commuting the formal differential expressions would not perform that test.
+
+Restoring the retarded and advanced signs and subtracting their identities gives
+$D(h^R-h^A)+(h^R-h^A)D=0$. For a closed source $f$ of degree one,
+$K^*f=0$, the identity says $Jh^{R/A}f=f$. Thus
+$(h^R-h^A)f$ is a homogeneous perturbation. Why should two such gauge choices
+give the same bracket? For either causal sign set $w=(h-\widehat h)f$.
+Then $Dw=0$. If both homotopies act on the same one-sided support complexes,
+with proper parameter domains, their identity on $w$ gives
+$w=D\widehat h w=K(\widehat h w)$. This is an allowed proper gauge change.
+Pairing it with another closed source $g$ gives zero:
+$\langle g,K\varepsilon\rangle=\langle K^*g,\varepsilon\rangle=0$, including
+the boundary-domain check. For instance, in Maxwell theory this is the
+familiar current conservation test: smearing $d\varepsilon$ against a
+compact interior current $j^\mu$ gives
+$-\int_M(\nabla_\mu j^\mu)\varepsilon\,|\epsilon|$ after integration by parts.
+Therefore the field-block pairing of the causal difference is gauge
+independent for the stated class. Skewness uses the adjoint relation of the
+two causal field blocks on these sources, as in \eqref{eq:06-green}. A source
+with an uncancelled surface term at the cut is not covered by this proof.
+If the homotopy identity has right-hand side $1-P_{\mathrm{res}}$ for a
+projection onto residual modes, those modes must be retained or treated
+separately before making the same inference.
+
+Finally, \eqref{eq:06-peierls} at one background gives a fixed bilinear
+bracket for linear observables on the tangent theory. In a nonlinear theory
+$J_\phi$, the Green operators, and possibly their domains change with the
+solution. Antisymmetry at each background is not the nonlinear Jacobi
+identity. One route to that identity requires a smooth (locally reduced)
+phase space, Hamiltonian vectors for the admissible observables, and closure
+of their algebra: the Jacobi identity then follows from $\delta\omega=0$.
+The existence of one causal inverse at $\bar\phi$ establishes none of those
+smooth-family assertions.
+
+\begin{exercise}
+On coordinates $(x,y,z)$ define a skew bracket by the Leibniz rule and
+$\{x,y\}=1$, $\{y,z\}=y$, $\{z,x\}=0$. Does freezing the coefficients at
+each point test Jacobi for the original bracket?
+\end{exercise}
+\noindent\emph{Answer.} Each frozen matrix gives a constant Poisson bracket.
+For the varying bracket the cyclic sum on $(x,y,z)$ is
+$\{x,\{y,z\}\}+\{y,\{z,x\}\}+\{z,\{x,y\}\}=1$. The missing operation in
+the frozen test is the derivative of the bracket itself.

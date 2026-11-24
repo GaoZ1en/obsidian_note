@@ -1,0 +1,171 @@
+% !TeX root = ../main.tex
+\chapter{Compactness, connectedness and identifications}\label{f:quotient}
+
+Example~\ref{f:top-turn} gave a continuous bijection onto the circle whose inverse was not continuous. There is a better way to parametrize a turn: keep \emph{both} endpoints of $[0,1]$ and regard them as one point. To prove that this gives the right topology, we shall need a way to recognize a homeomorphism without constructing its inverse. The relevant property of the closed interval is not its length but a consequence of completeness: whenever open sets cover it, finitely many of those very sets already suffice.
+
+\section{Finite subcovers}
+
+\begin{definition}\label{f:q-compact}
+An \emph{open cover} of $K\subseteq X$ is a family of open sets $U_i$ in $X$ with $K\subseteq\bigcup_{i\in I}U_i$. The subset $K$ is \emph{compact} if every open cover has a \emph{finite subcover}: there exist finitely many indices $i_1,\ldots,i_m$ from the given family with $K\subseteq U_{i_1}\cup\cdots\cup U_{i_m}$. For a space take $K=X$.
+\end{definition}
+
+This is a property of the subspace $K$: intersecting the cover members with $K$ gives a cover by subspace opens, and every such open is the intersection with an ambient open. The quantifier on covers is important. A single cover without a finite subcover disproves compactness. The intervals $[0,1-1/n)$, $n\geq2$, are open in $[0,1)$ and cover it; any finite selection stops short of $1$ and misses part of $[0,1)$.
+
+\begin{example}[Closed boxes]\label{f:q-box}
+A closed bounded box in $\mathbb R^d$ is compact. Suppose a particular open cover of it has no finite subcover. Bisect every side; some resulting box has no finite subcover from the same family, for otherwise we could combine finitely many finite covers. Repeat inside that box. In each coordinate the resulting nested closed intervals have lengths tending to zero and hence a common point by completeness of the real line. These coordinates give a point $x$ in every selected box. One cover member contains $x$, so it contains a ball about $x$. Eventually the diameter of a selected box is smaller than the radius of that ball. The entire box is then covered by that single member, a contradiction.
+\end{example}
+
+\begin{theorem}\label{f:q-compact-hausdorff}
+A closed subset of a compact space is compact. The continuous image of a compact space is compact. In a Hausdorff space every compact subset is closed. Consequently a continuous map from a compact space to a Hausdorff space sends closed sets to closed sets; if it is bijective, it is a homeomorphism.
+\end{theorem}
+\begin{proof}
+For a closed subset $F$ of a compact $K$, adjoin $K\setminus F$ to any cover of $F$ by opens in $K$. A finite subcover of $K$ supplies a finite cover of $F$ after the added set is discarded. For a continuous map $f:K\to Y$, pull back an open cover of $f(K)$. The inverse images cover $K$; the indices of a finite subcover give a finite subcover of the image.
+
+Now let $K\subseteq Y$ be nonempty and compact, $Y$ Hausdorff, and $y\notin K$. For each $z\in K$ choose disjoint open neighborhoods $U_z$ of $z$ and $V_z$ of $y$. Choose $U_{z_1},\ldots,U_{z_m}$ covering $K$. Then
+\[
+ U=\bigcup_{j=1}^m U_{z_j},\qquad V=\bigcap_{j=1}^m V_{z_j}
+\]
+are disjoint open neighborhoods of $K$ and $y$, respectively. Thus every point outside $K$ is interior to its complement. The empty set is already closed. Finally, if $f:X\to Y$ with $X$ compact, $Y$ Hausdorff and $f$ continuous, each closed $F\subseteq X$ is compact, so $f(F)$ is compact and hence closed. If $f$ is bijective this is the closed-set test for continuity of its inverse.
+\end{proof}
+
+In $\mathbb R^d$ it follows that compactness is equivalent to being closed and bounded (the Heine--Borel theorem). A closed bounded set is closed in a large compact box. Conversely, a compact set is closed by the Hausdorff property, and finitely many of the balls $B(0,n)$ must cover it, so it is bounded. The closedness conclusion is not intrinsic to compactness alone: in a two-point indiscrete space either singleton is compact but neither is closed. On the other hand the usual circle \emph{is} compact, since the continuous map $p(t)=(\cos(2\pi t),\sin(2\pi t))$ takes the compact interval $[0,1]$ onto it.
+
+\section{Connected sets, paths, and components}
+
+A continuous real function on an interval cannot pass from a negative value to a positive one without taking the value zero. To express the underlying obstruction without having to order the points of a space, consider a proposed division of its points into two parts. If membership in either part is an open condition, the division can be detected locally everywhere, without any point at which the two parts meet.
+
+\begin{definition}\label{f:q-connected}
+A \emph{separation} of a space $X$ is a pair of disjoint nonempty open sets $U,V$ whose union is $X$. A space admitting no separation is \emph{connected}. Equivalently, $X$ is connected if and only if its only subsets that are both open and closed are $\varnothing$ and $X$. A subset is connected if it is connected in its subspace topology.
+\end{definition}
+
+\begin{proposition}\label{f:q-connected-image}
+The connected subsets of the usual line are precisely the intervals, counting singletons and the empty set as intervals. The continuous image of a connected space is connected.
+\end{proposition}
+\begin{proof}
+If a subset contains $a<b$ but misses a number $c$ between them, the open rays on either side of $c$ separate it. Conversely, a separation of an interval would give a real function on it equal to $0$ on one part and $1$ on the other. The function is continuous by pasting its constant restrictions on the two open parts. This contradicts the intermediate value theorem on the closed segment between points in the two parts. For the image assertion, a separation of the image, using its subspace topology, pulls back to disjoint opens covering the domain. Both are nonempty because both parts contain image points.
+\end{proof}
+
+\begin{proposition}[Connected components]\label{f:q-components}
+Through each point $x$ passes a unique maximal connected subset, its \emph{connected component}. The components partition the space and are closed.
+\end{proposition}
+\begin{proof}
+Take the union $C_x$ of all connected subsets containing $x$, including $\{x\}$. In a proposed separation of the union, every one of those subsets meets the part containing $x$. If one also met the other part, its intersections with the two parts would separate it. Thus $C_x$ is connected and is the largest possible choice. If two such components meet, their union is connected by the same common-point argument, so maximality makes them equal. Finally the closure of a connected set $C$ is connected. Indeed every nonempty relatively open subset of $\overline C$ meets $C$ by the neighborhood test for closure. A separation of $\overline C$ would therefore restrict to a separation of $C$. Taking the closure cannot enlarge a maximal connected set.
+\end{proof}
+
+A component need not be open. For example, an irrational number between two distinct rationals separates those points by disjoint rays in $\mathbb Q$. Thus all components of $\mathbb Q$ are singletons, none open in its usual subspace topology.
+
+A \emph{path} from $x$ to $y$ in $X$ is a continuous map $\gamma:[0,1]\to X$ with $\gamma(0)=x$ and $\gamma(1)=y$. A space is \emph{path connected} if every pair can be joined by a path. Being joined by a path is an equivalence relation: use constant paths, reversal $t\mapsto\gamma(1-t)$, and concatenation. For paths $\gamma,\eta$ with $\gamma(1)=\eta(0)$, use $\gamma(2t)$ on $[0,1/2]$ and $\eta(2t-1)$ on $[1/2,1]$; continuity follows from finite closed pasting (Proposition~\ref{f:top-pasting}). The equivalence classes are the \emph{path components}. Each lies in a connected component since every path image is connected. In particular path connected implies connected, but the converse fails even for compact subsets of the plane (Exercise~\ref{f:q-ex-sine}). On $S^1$ an actual path between $p(a)$ and $p(b)$ is $t\mapsto p((1-t)a+tb)$.
+
+A space is \emph{locally path connected} if every neighborhood of each point contains a path connected open neighborhood of that point. This is a condition about paths inside arbitrarily small sets, not about reaching distant points.
+
+\begin{proposition}\label{f:q-local-path}
+In a locally path connected space, the path components are open and coincide with the connected components.
+\end{proposition}
+\begin{proof}
+Around each point of a path component take a path connected open neighborhood. All points of the neighborhood belong to the same path component, so the component is open. Its complement is also open as a union of other path components. A connected component therefore cannot meet two path components, while each path component already lies in a connected component.
+\end{proof}
+
+\section{Compact neighborhoods and countable covers}
+
+The line is not compact, but its open intervals can be chosen to have compact closures, as small as desired. The distinction between a compact \emph{space} and a compact \emph{neighborhood} makes it possible to use finite-cover arguments even in an unbounded space. We call a space \emph{locally compact} if each point has a compact neighborhood, that is, a compact subset containing an open neighborhood of the point. In a Hausdorff space this one-neighborhood condition provides arbitrarily small ones.
+
+\begin{proposition}[Shrinking a neighborhood]\label{f:q-shrinking}
+In a locally compact Hausdorff space, given an open $O$ and $x\in O$ there is an open $V$ such that $x\in V\subseteq\overline V\subseteq O$ and $\overline V$ is compact. Conversely this property implies local compactness.
+\end{proposition}
+\begin{proof}
+Choose a compact neighborhood $K$ and an open $N$ with $x\in N\subseteq K$. The set $F=K\setminus O$ is closed in $K$ and hence compact. By the separation argument in Theorem~\ref{f:q-compact-hausdorff}, there are disjoint open sets $P$ containing $x$ and $W$ containing $F$ (take $W=\varnothing$ if $F=\varnothing$). Let $V=N\cap P$. Since $K$ is closed and $W$ is open, $\overline V\subseteq K\setminus W\subseteq O$. The closure is closed in the compact $K$, hence compact. Conversely $\overline V$ itself is a compact neighborhood of $x$.
+\end{proof}
+
+A different restriction concerns the size of a cover. A space is \emph{Lindel\"of} if every open cover has a countable subcover, finite subcovers included. The existence of a compact neighborhood at each point does not imply this covering property. An uncountable discrete space is locally compact and Hausdorff, yet its cover by singletons has no countable subcover.
+
+\begin{proposition}\label{f:q-lindelof}
+Every second countable space is Lindel\"of. Every subspace of a second countable space is second countable and therefore also Lindel\"of.
+\end{proposition}
+\begin{proof}
+Let $\mathcal B$ be a countable basis and fix an open cover. For each nonempty $B\in\mathcal B$ lying in at least one cover member, select one such member. The selected family is at most countable. It covers: any point lies in an original cover member, hence in a basic neighborhood inside that member, and some selected member contains that entire neighborhood. For $A\subseteq X$, intersect the original basis elements with $A$ to obtain a countable subspace basis.
+\end{proof}
+
+\begin{corollary}\label{f:q-compact-basis}
+A second countable locally compact Hausdorff space has a countable basis of open sets with compact closure. Given $x\in O$ with $O$ open, a member can be chosen about $x$ whose closure is contained in $O$.
+\end{corollary}
+\begin{proof}
+From a countable basis retain only elements with compact closure. Use Proposition~\ref{f:q-shrinking} to take $x\in V\subseteq\overline V\subseteq O$ with compact closure, then take a basis element $x\in B\subseteq V$. Its closure is closed in $\overline V$ and contained in $O$, so $B$ was retained.
+\end{proof}
+
+\section{Identifying points}
+
+Let an equivalence relation $\sim$ on $X$ specify which points are to be regarded as the same. Each point $x$ belongs to the class $[x]=\{x'\in X:x'\sim x\}$; by reflexivity, symmetry and transitivity, these classes partition $X$. Write $X/{\sim}$ for the set of classes and $q(x)=[x]$ for the projection. A condition on the classes selects a set of original points: it selects every point of each class satisfying the condition. This suggests testing openness before the identification.
+
+\begin{definition}\label{f:q-quotient-map}
+A surjection $q:X\to Y$ is a \emph{quotient map} if $V\subseteq Y$ is open \emph{if and only if} $q^{-1}(V)$ is open in $X$. Given just a surjection from a topological space to a set, this rule defines the \emph{quotient topology} on that set, in particular on $X/{\sim}$.
+\end{definition}
+
+It defines a topology because inverse images commute with unions and finite intersections. It is the finest topology on $Y$ for which $q$ is continuous: continuity forbids declaring any other sets open. A continuous surjection need not be quotient, as the bijection in Example~\ref{f:top-turn} shows. A bijective quotient map has continuous inverse by the very definition.
+
+\begin{theorem}[Descent through a quotient]\label{f:q-descent}
+For a quotient map $q:X\to Y$, a map $f:X\to Z$ has the form $f=\bar f\circ q$ for a unique map $\bar f:Y\to Z$ exactly when $f$ is constant on each fiber $q^{-1}(\{y\})$. In that case $\bar f$ is continuous if and only if $f$ is continuous.
+\end{theorem}
+\begin{proof}
+A composite through $q$ takes the same value on points with the same $q$-value. Conversely set $\bar f(y)=f(x)$ for any $x$ with $q(x)=y$. Surjectivity supplies such an $x$, constancy makes the value independent of $x$, and the formula forces uniqueness. For open $W\subseteq Z$ one has
+\[
+ q^{-1}(\bar f^{-1}(W))=(\bar f\circ q)^{-1}(W)=f^{-1}(W).
+\]
+If $f$ is continuous, the right-hand side is open, so the quotient condition makes $\bar f^{-1}(W)$ open. The other implication follows by composition since $q$ is continuous.
+\end{proof}
+
+\begin{example}[The circle by identification]\label{f:q-circle}
+Identify just $0$ and $1$ in $[0,1]$ and give the class set $Y$ the quotient topology. The map $p:[0,1]\to S^1$ has exactly these fibers: two parameters in the interval give the same cosine and sine precisely when their difference is an integer. By descent the map
+\[
+ \bar p:Y\longrightarrow S^1,\qquad [t]\longmapsto(\cos(2\pi t),\sin(2\pi t)),
+\]
+is a continuous bijection. Its domain is compact as the continuous image of $[0,1]$ under $q$, and $S^1$ is Hausdorff as a subspace of the plane. Theorem~\ref{f:q-compact-hausdorff} makes $\bar p$ a homeomorphism. In particular, a continuous map on the closed interval prescribes a continuous map on the circle precisely when its two endpoint values agree.
+\end{example}
+
+The image of an open set under a quotient map need not be open. In the last example the full inverse image of $q([0,1/4))$ is $[0,1/4)\cup\{1\}$, not open at $1$. For any quotient map, $q^{-1}(q(A))$ is called the \emph{saturation} of $A$: it adds every point sharing a fiber with a point already in $A$. A set is \emph{saturated} when it is a union of entire fibers. The open sets downstairs correspond exactly to the saturated open sets upstairs, by taking inverse image in one direction and image in the other.
+
+Many identifications arise from reversible transformations, such as integer translations of the line. Suppose a group $G$ acts on $X$ by homeomorphisms: each $g$ gives a homeomorphism $x\mapsto gx$, with $1x=x$ and $g(hx)=(gh)x$. Declaring $x$ equivalent to $gx$ gives as classes the \emph{orbits} $Gx=\{gx:g\in G\}$, since a move can be undone by its inverse and two successive moves compose. The \emph{orbit space} $X/G$ is the set of orbits with the quotient topology. In this instance the projection is open: the saturation of an open $U$ is $\bigcup_{g\in G}gU$, a union of opens. Openness of the projection does not by itself separate the orbits. For that one must test neighborhoods containing whole fibers.
+
+\begin{proposition}\label{f:q-separated-fibers}
+For a quotient map $q:X\to Y$, the space $Y$ is Hausdorff exactly when any two distinct fibers have disjoint saturated open neighborhoods in $X$.
+\end{proposition}
+\begin{proof}
+Disjoint open neighborhoods of two points pull back to such neighborhoods of their fibers. In the other direction, images of saturated open sets are open by the quotient condition, and disjoint saturated sets have disjoint images.
+\end{proof}
+
+\begin{example}[The line with two origins]\label{f:q-double-origin}
+Start with two disjoint copies $\mathbb R_1,\mathbb R_2$ of the line and identify $(t,1)$ with $(t,2)$ for every $t\ne0$, leaving the two zeros distinct. The original disjoint union is Hausdorff. Even the individual fibers are closed there, being singletons or pairs of points, so each singleton in the quotient is closed. Nevertheless every open neighborhood of the first origin pulls back to a set containing an interval about zero in the first copy. A neighborhood of the second does the same in the second copy. Choose a small nonzero $t$ belonging to both coordinate intervals. It represents a single point of the quotient lying in both neighborhoods. The quotient is not Hausdorff.
+
+Each $q(\mathbb R_i)$ is open: its preimage is that entire copy together with the other copy minus its origin. Moreover $q$ maps the $i$th copy homeomorphically onto $q(\mathbb R_i)$. The inverse there is the ordinary coordinate $[t,j]\mapsto t$, which is continuous by descent since it is continuous on both original copies. Thus every point has an open neighborhood homeomorphic to a line, including each of the two points that cannot be separated.
+\end{example}
+
+An open neighborhood $U$ described by a homeomorphism $\varphi:U\to V$ onto an open set of $\mathbb R^d$ is a \emph{coordinate neighborhood}; $\varphi$ is a \emph{chart}. For the circle, projection $(u,v)\mapsto u$ on the upper semicircle $v>0$ has the continuous inverse $s\mapsto(s,\sqrt{1-s^2})$ on $(-1,1)$. Rotating this neighborhood gives charts about the remaining points. In any chart, inverse images of small open balls give path connected neighborhoods: join two points of a ball by the straight segment and carry it back by $\varphi^{-1}$. A closed ball centered at $\varphi(x)$ of positive radius and contained in $V$ likewise gives a compact neighborhood of $x$ by continuity of $\varphi^{-1}$.
+
+The doubled origin shows why one must still ask separately for the Hausdorff property. Countability is a global requirement too: an uncountable disjoint union of lines has charts everywhere but its cover by copies has no countable subcover. In a second countable space, by contrast, Proposition~\ref{f:q-lindelof} selects a countable subcover from any cover by charts.
+
+\section{Exercises}
+
+\begin{exercise}\label{f:q-ex-extrema}
+Let $K$ be nonempty and compact and let $f:K\to\mathbb R$ be continuous. Show that $f$ attains a maximum and a minimum. What goes wrong for $f(t)=t$ on $(0,1)$?
+\end{exercise}
+\begin{exercise}\label{f:q-ex-rationals}
+The rational line is Hausdorff and second countable. Show that in its usual topology it has no compact neighborhood of any point. Use the inclusion into the real line to test compactness.
+\end{exercise}
+\begin{exercise}\label{f:q-ex-orbits}
+Compare the actions on $\mathbb R$ by translation by integers and by rationals. Show that $\mathbb R/\mathbb Z$ is homeomorphic to the circle, whereas $\mathbb R/\mathbb Q$ has more than one point and the indiscrete topology.
+\end{exercise}
+\begin{exercise}\label{f:q-ex-sine}
+Let $C=\{(u,\sin(1/u)):0<u\leq1\}$ and take its closure $K$ in the plane. Describe $K$ and show it is compact and connected. Prove that no path in $K$ joins $(0,0)$ to a point of $C$.
+\end{exercise}
+
+\subsection*{Solutions and hints}
+\noindent\emph{Exercise~\ref{f:q-ex-extrema}.}
+The image is a nonempty compact subset of the line, so it is bounded and closed. Its supremum and infimum are finite and belong to its closure by the defining property of each bound. Thus they are in the image. For the open interval the bounds still exist but are not attained: the image is not closed.
+
+\smallskip\noindent\emph{Exercise~\ref{f:q-ex-rationals}.}
+A compact neighborhood $K$ of a rational $r$ would contain $(r-\varepsilon,r+\varepsilon)\cap\mathbb Q$ for some $\varepsilon>0$. Its image in $\mathbb R$ would be compact and hence closed. But every irrational in that interval is in the real closure of this image and none is in the image.
+
+\smallskip\noindent\emph{Exercise~\ref{f:q-ex-orbits}.}
+For integer translations the circle parametrization $p$ descends to a continuous bijection, and the orbit space is compact because it is already the image of $[0,1]$ under projection. Apply the compact-to-Hausdorff theorem. For rational translations each orbit is dense, so any nonempty open set meets every orbit and its saturation is all of $\mathbb R$. Only the empty set and the whole space are saturated open. The orbits of $0$ and $\sqrt2$ are distinct.
+
+\smallskip\noindent\emph{Exercise~\ref{f:q-ex-sine}.}
+The graph lies in the closed box $[0,1]\times[-1,1]$. The only points added are $\{0\}\times[-1,1]$: for $-1\leq v\leq1$ take $a$ with $\sin a=v$ and $u_n=1/(a+2\pi n)$ for sufficiently large $n$. Then $(u_n,\sin(1/u_n))\to(0,v)$. Away from $u=0$ the graph adds no points by continuity. Its closure is closed and bounded, and it is connected since $C$ is the continuous image of an interval. If a path from $(0,0)$ ends in $C$, write its coordinates as $(u(t),v(t))$ and let $b$ be the last time with $u(b)=0$; the zero set is closed in $[0,1]$ and $b<1$. For every $0<\delta\leq1-b$, the coordinate $u$ takes all values from $0$ to $u(b+\delta)>0$ on $[b,b+\delta]$. Among the positive ones there are values with $\sin(1/u)=1$ and values with $\sin(1/u)=-1$. Thus $v$ takes both values arbitrarily close to $b$, contradicting continuity there.

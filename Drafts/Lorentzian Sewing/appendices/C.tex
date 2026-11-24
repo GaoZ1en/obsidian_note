@@ -1,0 +1,235 @@
+\chapter{Hadamard singularities and distributional tests}\label{app:C}
+At separated spacelike points the free vacuum two-point function can look
+like an ordinary function of distance. At null separation its prescription
+matters, and at coincidence it cannot be evaluated at a point. These are
+different issues. The Hadamard form specifies a local singularity together
+with a frequency orientation. The wavefront set tests whether one can
+restrict or multiply the resulting distribution. Scaling degree answers a
+third question: if an expression is already defined off coincidence, what
+freedom remains in extending it? We give the tests for a real scalar in
+the smooth bulk, where all three questions already arise.
+
+\section{World function, frequency and normalization}
+Work first in a smooth geodesically convex bulk neighborhood in four
+spacetime dimensions with signature $(-,+,+,+)$. For the unique geodesic
+$\gamma$ from $x'$ to $x$, affinely parametrized on $[0,1]$, Synge's world
+function is
+\[
+ \sigma_g(x,x')=\tfrac12\int_0^1 g(\dot\gamma,\dot\gamma)\,ds .
+\]
+Thus it is \emph{half} the signed squared interval, negative for a timelike
+separation. It is distinct from the antisymmetric form on CCR labels. Let
+$T$ be a smooth time function increasing to the future, in units of length.
+Use the boundary value, for $\epsilon\downarrow0$,
+\[
+ \sigma_\epsilon=\sigma_g+i\epsilon(T(x)-T(x'))+\epsilon^2/2 .
+\]
+For $T=t$ in flat space this is exactly
+$\big(|\mathbf x-\mathbf x'|^2-(t-t'-i\epsilon)^2\big)/2$. Use the
+branch of the logarithm real on the positive real axis. With $\hbar=1$ and
+$\ell>0$ a length, the local singular part of the \emph{unordered}
+(Wightman) two-point function is written
+\begin{equation}
+ H_\ell(x,x')=\frac{1}{8\pi^2}\lim_{\epsilon\downarrow0}
+  \left[\frac{U(x,x')}{\sigma_\epsilon(x,x')}
+    +V(x,x')\log\!\frac{\sigma_\epsilon(x,x')}{\ell^2}\right].
+ \label{eq:C-hadamard}
+\end{equation}
+$U,V$ are geometric coefficients for the chosen Klein--Gordon operator,
+not functions to be fitted to a state. For example $U$ obeys
+\[
+ 2\nabla^a\sigma_g\nabla_a U+(\Box\sigma_g-4)U=0,\qquad U(x,x)=1 .
+\]
+To see the first equation, act with $\Box$ on $U/\sigma_g$ away from the
+cone and use $\nabla_a\sigma_g\nabla^a\sigma_g=2\sigma_g$. The
+coefficient of $\sigma_g^{-2}$ must vanish. The remaining inverse power
+determines the leading logarithmic coefficient by transport; higher
+coefficients can be constructed successively. On a smooth, not necessarily
+analytic, metric this notation denotes a local parametrix modulo smooth
+terms. It can be used to any specified differentiability order by
+truncating its asymptotic expansion sufficiently late; convergence of an
+infinite power series is not assumed \cite{WaldQFT,HWick}.
+
+The flat massless benchmark is $U=1,V=0$. It can also be calculated from
+positive-frequency modes: with $\tau=t-t'$, $r=|\mathbf x-\mathbf x'|$,
+\begin{align*}
+ W_0(x,x')&=\lim_{\epsilon\downarrow0}
+ \int\frac{d^3p}{(2\pi)^3 2|\mathbf p|}
+ e^{-i|\mathbf p|\tau+i\mathbf p\cdot(\mathbf x-\mathbf x')-\epsilon|\mathbf p|}\\
+ &=\lim_{\epsilon\downarrow0}\frac{1}{4\pi^2 r}
+       \int_0^\infty e^{-(\epsilon+i\tau)p}\sin(pr)\,dp
+ =\lim_{\epsilon\downarrow0}\frac{1}{4\pi^2[r^2-(\tau-i\epsilon)^2]} .
+\end{align*}
+This checks both the $1/(8\pi^2)$ in \eqref{eq:C-hadamard} and the sign of
+the prescription. Reversing the arguments reverses the frequency
+orientation. Time ordering instead selects $W_0(x,x')$ for $\tau>0$ and
+$W_0(x',x)$ for $\tau<0$; its flat contraction is
+$G_F=(4\pi^2)^{-1}(r^2-\tau^2+i0)^{-1}$, as used in
+Chapter~\ref{ch:13}. The Wightman function is a bisolution, whereas this
+$G_F$ has an $i\delta$ source. Other spacetime dimensions have different
+Hadamard powers or logarithms, not the four-dimensional prefactor printed
+here.
+
+A scalar Hadamard state has $W-H_\ell$ smooth locally (or the corresponding
+finite regularity after truncation). Changing $\ell$ shifts the smooth
+representative and finite local subtractions, not the leading singularity.
+The parametrix is not in general an exact positive bisolution.
+To specify an actual centered quasifree state the full $W$ must satisfy
+the equation and the true boundary condition in both entries,
+$W(x,x')-W(x',x)=iE(x,x')$, Hermiticity and positivity as in
+Chapter~\ref{ch:11}. Two Hadamard two-point functions for the same ordinary
+globally hyperbolic free problem differ by a smooth symmetric bisolution.
+Their fluctuation predictions can therefore differ even if every
+short-distance subtraction is the same.
+
+\section{Which directions are singular?}
+A distribution $u$ is smooth near a point if its localized Fourier
+transform decays faster than any inverse power in every momentum
+direction. The \emph{wavefront set} $\operatorname{WF}(u)$ records pairs
+$(x,k)$ with $k\ne0$ where this test fails in direction $k$: no cutoff
+nonzero at $x$ gives rapid decay in an open conical neighborhood of $k$.
+We take Fourier phases $e^{-ik\cdot x}$ for this test. A positive-frequency
+mode has oscillatory covector $k=(-|\mathbf p|,\mathbf p)$, so its
+metric dual $k^\sharp$ is future directed. For a state of the ordinary
+free scalar on a smooth globally hyperbolic spacetime the Hadamard
+condition is equivalently the microlocal spectrum condition \cite{Rad}:
+\begin{equation}
+ \operatorname{WF}(W)=\{(x,k;x',-k'):(x,k)\sim(x',k'),\quad
+                              k^\sharp\ \text{future null}\} .
+ \label{eq:C-wavefront}
+\end{equation}
+Here $\sim$ means that $k,k'$ are cotangents to the same null geodesic
+(with metric dual tangent to it) related by parallel transport. The
+coincident pairs $x=x',\ k=k'$ on a null direction are included. The minus
+on the second covector comes from the two arguments, not a past-directed
+first frequency. A mass does not move these singular directions off the
+light cone: the principal part of the operator is unchanged. At a genuine
+timelike boundary reflected singularities may need to be included in a
+global criterion; \eqref{eq:C-wavefront} is the standard smooth-bulk
+result, not an assertion about arbitrary characteristic or corner problems.
+
+In the ordinary bulk problem this gives a short proof of the smoothness of
+state differences. Let $D=W_1-W_2$ for two Hadamard states with the same
+commutator. The wavefront set of the difference is contained in the union
+of their wavefront sets, so its first covector must be future null. But
+$D(x,x')=D(x',x)$ by the commutator. Exchanging the arguments in
+\eqref{eq:C-wavefront} would make that same first covector past null.
+There are no such nonzero covectors; hence $D$ is smooth. The proof shows
+that smoothness fixes neither the size nor the sign of a difference in
+fluctuations.
+
+\section{Test before restricting or multiplying}
+Let $\iota:S\to M$ be a smooth embedding. Its conormal consists of the
+nonzero covectors at $\iota(s)$ which annihilate every tangent to the
+image. The standard pullback $\iota^*u$ is defined by the wavefront
+criterion if
+\[
+ \operatorname{WF}(u)\ \cap\ N^*\iota=\varnothing .
+\]
+For a kernel of two variables apply this criterion to the actual map, for
+example $\iota\times\iota:S^2\to M^2$. Both cotangents must annihilate
+their respective tangent spaces to give an obstruction. On a spacelike
+Cauchy surface the conormals are timelike, whereas both covectors in
+\eqref{eq:C-wavefront} are null. The restriction of $W$ to two Cauchy
+arguments is therefore a distribution on the product of the surface with
+itself. Spacetime derivatives of $W$ do not enlarge its wavefront set, so
+normal derivatives can be taken before this pullback. This is how
+field--momentum as well as field--field covariances can be given by Cauchy
+data. It does not define the value $W(x,x)$.
+
+Now take the null plane $u=t-x^1=0$ and two points on the same generator,
+with the same transverse coordinates. A future null covector at the first
+point is $-a\,du$, $a>0$; parallel transport gives the same covector at
+the second point. The pair $(-a\,du,+a\,du)$ lies both in the wavefront
+set of $W$ and in the conormal to the product of null planes. The usual
+pullback theorem no longer allows us to restrict both fields in this
+manner. It does not prove that no characteristic observable whatsoever
+exists. Smeared fluxes, specially differentiated data or other trace
+constructions require their own domains and checks. The classical
+existence of a smooth trace for a particular solution is not the quantum
+distributional check.
+
+Multiplication is pullback to the diagonal of a tensor product. A
+sufficient condition for $uv$ is that there be no $(x,k)\in
+\operatorname{WF}(u)$ with $(x,-k)\in\operatorname{WF}(v)$. Smooth
+switching functions always pass this test. For a sharp step across a smooth
+face $s=0$, $ds\ne0$, the wavefront set of $\Theta(s)$ contains both
+normal directions $a\,ds$, $a\ne0$. Hence, for example,
+$\Theta(s)\delta(s)$ fails this test: assigning a fraction of a surface
+contact to one side by writing $\Theta(0)=1/2$ is not a distributional
+proof. The problem can be seen by smoothing the step and shifting its
+transition by a distance of the order of its width. Its product with the
+delta depends on the value selected at zero even when all these smooth
+steps have the same limit. Conversely, a step in only the first argument
+of a bidistribution has zero cotangent in the other slot in this product
+test. One must check the actual distributions, not declare every time
+ordering or every step inadmissible.
+
+This criterion also explains the puncture in the fish calculation. Two
+factors of $W$ can multiply as distributions in the \emph{pair} of
+variables: their nonzero first covectors are both future directed. Away
+from the diagonal $G_F$ selects $W$ or its transpose locally near each
+singular pair, so its square there likewise passes the test. But on the
+diagonal $\Box_x G_F=i\delta(x,y)$ in the flat example. A differential
+operator cannot add directions to a wavefront set, and the delta has all
+diagonal conormals $(k,-k)$ there, with both signs of $k$. The square of
+$G_F$ at coincidence therefore fails the product test. Extending an
+already defined off-diagonal distribution, not assigning a value to a
+step at zero, is the operation that remains.
+
+\section{How much freedom does extension leave?}
+Suppose a scalar distribution $t^\circ$ is given for $z\ne0$ in
+$\mathbb R^k$. For $\psi$ a test function set
+$\psi_a(z)=a^{-k}\psi(z/a)$, $t_a(\psi)=t^\circ(\psi_a)$ on the
+punctured space. The scaling degree is
+\[
+ \operatorname{sd}(t^\circ)=
+ \inf\{d:a^d t_a\longrightarrow0\ \text{as }a\downarrow0
+                     \text{ in distributions}\} .
+\]
+A homogeneous singularity $|z|^{-b}$ has scaling degree $b$ off zero;
+logarithms do not change the infimum. The bulk extension theorem for finite
+scaling degree $\rho$ says that an extension of degree $\rho$ exists and
+is unique at that degree if $\rho<k$ \cite{BF}. If $\rho\ge k$, two such
+extensions may differ by
+\[
+ \sum_{|\alpha|\le\lfloor\rho-k\rfloor} c_\alpha\,
+                                \partial_z^\alpha\delta^{(k)}(z) .
+\]
+Indeed their difference is supported at zero; distributions so supported
+are finite sums of delta derivatives, and each derivative has degree
+$k+|\alpha|$. To see why the bound also suggests a construction, subtract
+from the test function its Taylor polynomial through degree
+$\lfloor\rho-k\rfloor$, multiplied by a smooth cutoff equal to one near
+zero. The remainder vanishes fast enough that removing a small neighborhood
+of zero has a limit. Assigning the finitely many missing Taylor moments
+amounts to choosing the constants $c_\alpha$. An extension is a new
+prescription; it need not preserve exact homogeneity, even when it
+preserves the scaling degree.
+
+At a smooth collision stratum use local coordinates $(X,z)$ with $z=0$
+on the stratum. Scale the $k$ normal coordinates $z$ only, keeping the
+tangential variables $X$ as test parameters. The analogous ambiguities
+are normal delta derivatives with coefficients on the stratum; in general
+those coefficients are distributions subject to further requirements.
+Local covariance, allowed field dimensions, unitarity, causal
+factorization and Ward identities reduce the freedom in an actual field
+theory. This counting works only once the distributions away from the
+stratum and the requisite normal estimates are known. A null pullback that
+failed the wavefront test is not automatically defined by quoting the
+codimension of a coincident-point stratum. Chapter~\ref{ch:13} instead
+starts with a defined product away from coincidence and extends it, which
+is precisely the situation addressed by the theorem.
+
+\begin{exercise}
+For the flat massless vacuum restrict the two arguments to $t=t'=0$.
+Starting from the momentum integral above, find the singularity as the
+spatial separation $r$ tends to zero. Does the distribution on the pair of
+Cauchy surfaces need an arbitrary spatial contact term at $r=0$ if its
+scaling degree is to be preserved? Does this give a finite value for the
+field squared at a point?
+\end{exercise}
+\noindent\emph{Hint.} The equal-time pullback passed the conormal test.
+Compare $1/r^2$ with the radial volume $r^2 dr\,d\Omega$ in three relative
+spatial dimensions; distinguish a locally integrable distribution from its
+pointwise value at the origin.

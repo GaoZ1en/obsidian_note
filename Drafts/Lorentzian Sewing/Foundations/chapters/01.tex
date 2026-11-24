@@ -1,0 +1,144 @@
+% !TeX root = ../main.tex
+\chapter{Topological spaces and continuous maps}\label{f:topology}
+
+A point moving steadily around a dial returns to its starting position without a jump. Its numerical reading, expressed as a fraction of a turn in $[0,1)$, does jump: readings close to $1$ are followed by $0$. The difference is already visible without a law of motion. Every small arc about the starting position contains readings from both ends of the interval, whereas a small interval about $0$ in $[0,1)$ need contain none near $1$. To decide whether a map is continuous, we must know what counts as a neighborhood on each side of the map.
+
+\section{Open sets and neighborhoods}
+
+In $\mathbb R^d$, a condition on a point is called open if, whenever it holds at $x$, it continues to hold throughout some ball $B(x,r)=\{y:\|y-x\|<r\}$ of positive radius. A strict inequality such as $x_1>0$ in the plane gives an open condition. If two open conditions hold, the smaller of the two radii works for both. There need not be a single positive radius that works for infinitely many conditions: on the line, the intersection of the intervals $(-1/n,1/n)$ over all positive integers $n$ is just $\{0\}$. On the other hand, to satisfy at least one of any collection of open conditions it suffices to stay inside the ball for one that holds. The following axioms retain these rules without making a choice of distance.
+
+\begin{definition}\label{f:top-open}
+A \emph{topology} on a set $X$ is a collection $\mathcal T$ of subsets of $X$ containing $\varnothing$ and $X$, closed under arbitrary unions and finite intersections. The pair $(X,\mathcal T)$ is a \emph{topological space}; members of $\mathcal T$ are \emph{open}, and their complements in $X$ are \emph{closed}. A \emph{neighborhood} of $x\in X$ is a set containing an open set that contains $x$. A neighborhood need not itself be open.
+\end{definition}
+
+The ball condition above defines the \emph{usual topology} of Euclidean space. It is not the only topology on the underlying set. In the \emph{discrete topology} every subset is open; specifying a single point is an open condition. At the opposite extreme, in the \emph{indiscrete topology} only the empty set and the whole space are open. Nor do ``open'' and ``closed'' divide subsets into two mutually exclusive kinds. In every topology the whole space is both. In the usual line $[0,1)$ is neither: neither it nor its complement contains an open interval about each of its points.
+
+Given $A\subseteq X$, its \emph{interior} $\operatorname{int}_X A$ is the union of all open sets in $X$ contained in $A$. Its \emph{closure} $\overline A$ in $X$ is the intersection of all closed sets in $X$ containing $A$. By taking complements in the topology axioms, arbitrary intersections of closed sets are closed. Thus these constructions really give the largest open set inside $A$ and the smallest closed set containing $A$.
+
+\begin{proposition}[Neighborhood tests]\label{f:top-closure}
+A point lies in $\operatorname{int}_X A$ precisely when it has a neighborhood contained in $A$. It lies in $\overline A$ precisely when every neighborhood of it meets $A$.
+\end{proposition}
+\begin{proof}
+The first assertion is the union defining the interior, together with the definition of neighborhood. For the second, a point fails to lie in $\overline A$ just when some closed set containing $A$ misses the point. The complement of that closed set is an open neighborhood disjoint from $A$. Conversely, the complement of any such open neighborhood is a closed set containing $A$.
+\end{proof}
+
+For instance, the rational numbers have empty interior in the usual line, since every interval of positive length contains an irrational number. Their closure is all of $\mathbb R$, since every such interval also contains a rational number. A subset whose closure is the whole space is called \emph{dense}; density does not require the subset to contain a single open interval.
+
+\section{Bases and limits}
+
+To specify the usual topology of the line it is unnecessary to list all open sets. It suffices to give the open intervals: each point of an open set lies in some interval contained in the set. Such intervals are called basic open sets. The test for a proposed collection of basic sets works even before a topology has been chosen.
+
+\begin{proposition}[Basis criterion]\label{f:top-basis}
+Suppose a collection $\mathcal B$ covers $X$, and whenever $x\in B\cap C$ with $B,C\in\mathcal B$, there is a $D\in\mathcal B$ with $x\in D\subseteq B\cap C$. Then the unions of members of $\mathcal B$ form a topology on $X$. A collection of open sets in a given topology is a \emph{basis} for it exactly when every point of every open set lies in a member contained in that open set.
+\end{proposition}
+\begin{proof}
+The empty union is empty, the union of the cover is $X$, and a union of unions is again a union of members. If $x$ belongs to two such unions, choose a member from each containing $x$. The hypothesis supplies a basic set about $x$ inside their intersection. Taking the union of these smaller sets proves that the intersection is open. This also explains the last criterion: the indicated basic sets recover each open set as their union.
+\end{proof}
+
+For a positive integer $d$, even the boxes in $\mathbb R^d$ of the form $\prod_{j=1}^d(a_j,b_j)$ with \emph{rational} endpoints form a basis. Each box is open: the minimum of the distances from a point in it to its faces is positive. Conversely, inside any ball about $x$ of radius $r$, one can put a rational box about $x$ by choosing
+\[
+ x_j-r/\sqrt d<a_j<x_j<b_j<x_j+r/\sqrt d
+\]
+in each coordinate. Then the squared distance to $x$ of any point in the box is less than $d(r/\sqrt d)^2=r^2$. There are only countably many such boxes, since each is described by a fixed finite number of rational endpoints. Here and below, countable collections include finite ones.
+
+A space with a countable basis is \emph{second countable}. There is also a pointwise notion. A \emph{local basis} at $x$ is a collection of open neighborhoods of $x$ such that every neighborhood of $x$ contains one of them. A space with a countable local basis at each point is \emph{first countable}. Second countability implies first countability: retain the basis elements containing the point. The converse fails on an uncountable discrete set. Each point has its singleton as a local basis element, but a basis for the whole space must include every singleton.
+
+A sequence $(x_n)$ \emph{converges} to $x$ if every neighborhood of $x$ contains $x_n$ for all sufficiently large $n$. In Euclidean space this says exactly that $\|x_n-x\|\to0$, by testing the balls about $x$. A space is \emph{Hausdorff} if every pair of distinct points has disjoint open neighborhoods. Euclidean space is Hausdorff: use balls of radius one third of the distance between the two points. A sequence in a Hausdorff space cannot have two different limits, because its tail cannot lie in two disjoint neighborhoods. At the opposite extreme, in an indiscrete space every sequence converges to every point.
+
+\begin{proposition}\label{f:top-sequence-closure}
+A limit of a sequence in $A$ lies in $\overline A$. Conversely, if $x\in\overline A$ has a countable local basis, there is a sequence in $A$ converging to $x$.
+\end{proposition}
+\begin{proof}
+Every neighborhood of a limit meets the sequence and hence meets $A$. For the converse, write the local basis as $U_1,U_2,\ldots$, allowing repetitions. Choose $a_n\in A\cap U_1\cap\cdots\cap U_n$, which is possible because the finite intersection of the $U_j$ is an open neighborhood of $x$. Any neighborhood of $x$ contains some $U_j$; then it contains $a_n$ for all $n\geq j$.
+\end{proof}
+
+The converse is genuinely conditional. Give an uncountable set $X$ the topology consisting of $\varnothing$ and the sets with countable complement. This is a topology: finite unions of countable complements are countable, and any union containing one nonempty open set already has countable complement. For $p\in X$, every neighborhood of $p$ meets $A=X\setminus\{p\}$. Yet the range of any sequence in $A$ is countable; its complement is an open neighborhood of $p$ missing \emph{every} term. Here closure cannot be recovered from sequences alone.
+
+\section{Continuity and homeomorphisms}
+
+Consider a function $f:X\to Y$ and an open set $V\subseteq Y$ of acceptable outputs. The inputs producing those outputs form the \emph{inverse image} $f^{-1}(V)=\{x\in X:f(x)\in V\}$. This notation does not require $f$ to have an inverse function. If each acceptable input has a neighborhood of acceptable inputs, their set is open. This gives a definition in which distances no longer appear.
+
+\begin{definition}\label{f:top-continuous-def}
+A map $f:X\to Y$ between topological spaces is \emph{continuous} if $f^{-1}(V)$ is open in $X$ for every open $V$ in $Y$.
+\end{definition}
+
+\begin{proposition}[Tests for continuity]\label{f:top-continuity}
+Continuity is equivalent to the following local condition: for every $x\in X$ and every open $V$ containing $f(x)$ there is an open $U$ containing $x$ with $f(U)\subseteq V$. In the inverse-image definition it is enough to test members of a basis for $Y$. One may instead test that the inverse image of each closed set is closed.
+\end{proposition}
+\begin{proof}
+For a continuous map take $U=f^{-1}(V)$. Conversely, the local condition writes $f^{-1}(V)$ as a union of open neighborhoods of its points. The basis test works because inverse images preserve arbitrary unions. The closed-set test follows from $f^{-1}(Y\setminus C)=X\setminus f^{-1}(C)$.
+\end{proof}
+
+In Euclidean spaces, take $V=B(f(x),\varepsilon)$. A suitable $U$ contains a ball $B(x,\delta)$, so $\|z-x\|<\delta$ implies $\|f(z)-f(x)\|<\varepsilon$: this is the calculus test. A map that sends open sets to open sets is called an \emph{open map}, a different condition. For instance, $t\mapsto t^2$ on the line is continuous but sends $(-1,1)$ to $[0,1)$, which is not open.
+
+Continuity preserves limits of sequences: if $x_n\to x$, the terms eventually lie in $f^{-1}(V)$ for each open neighborhood $V$ of $f(x)$. On a first countable domain this is also a test for continuity. Indeed, if the local condition fails at $x$ for some $V$, enumerate a local basis $U_1,U_2,\ldots$ there. No intersection $U_1\cap\cdots\cap U_n$ is contained in $f^{-1}(V)$; choose $x_n$ in that intersection but outside $f^{-1}(V)$. Then $x_n\to x$ while $f(x_n)$ never belongs to $V$.
+
+If $f:X\to Y$ and $g:Y\to Z$ are continuous, so is $g\circ f$, because $(g\circ f)^{-1}(W)=f^{-1}(g^{-1}(W))$. Identity maps are continuous. Thus two spaces can serve as interchangeable models if there is a bijection between them that is continuous \emph{in both directions}. Such a bijection is called a \emph{homeomorphism}. For a bijection $f$ this requires, in addition to continuity, that $f$ send open sets to open sets: those images are the inverse images under the inverse function. The dial will give an example where only one direction works.
+
+\section{Subspaces, products, and disjoint unions}
+
+A curve drawn in the plane inherits neighborhoods by cutting plane neighborhoods down to the curve. More generally, the \emph{subspace topology} on $A\subseteq X$ has as its open sets the intersections $A\cap U$ with $U$ open in $X$. The topology axioms follow by intersecting unions and finite intersections with $A$. In $A=[0,1)$, for instance, $[0,1/2)$ is open because it is $A\cap(-1,1/2)$, not because it is open in the line. A subspace of a Hausdorff space is Hausdorff: intersect separating neighborhoods with the subspace.
+
+A different construction records a pair of values. The \emph{product topology} on $X\times Y$ has basis the rectangles $U\times V$ with $U$ open in $X$ and $V$ open in $Y$. These cover the product and the intersection of two is another rectangle of this kind. For two copies of the usual line this gives the usual plane topology by the box criterion above.
+
+In contrast, when a value belongs to \emph{one} of a family of alternatives, we form the \emph{disjoint union} $D=\coprod_{i\in I}X_i$. Its elements are tagged pairs $(i,x)$ with $x\in X_i$, so even originally identical copies remain distinct. With $j_i(x)=(i,x)$, declare $O\subseteq D$ open if $j_i^{-1}(O)$ is open in $X_i$ for every $i$. This is a topology since inverse images preserve unions and intersections. Each single copy is open, and its complement, being the union of the other copies, is open too.
+
+\begin{proposition}[Mapping properties]\label{f:top-universal}
+If $k:Z\to X$ takes values in $A\subseteq X$, there is a unique $h:Z\to A$ with $k=i\circ h$, where $i:A\hookrightarrow X$ is inclusion. The map $h$ is continuous exactly when $k$ is. A pair of maps $u:Z\to X$, $v:Z\to Y$ defines a unique map into the product with those coordinates, and it is continuous exactly when both coordinates are continuous. Maps $g_i:X_i\to Z$ define a unique map $g:D\to Z$ with $g\circ j_i=g_i$, and it is continuous exactly when every $g_i$ is continuous.
+\end{proposition}
+\begin{proof}
+For the subspace, $h(z)$ must be $k(z)$ considered as a point of $A$. Then $h^{-1}(A\cap U)=k^{-1}(U)$, which tests all subspace opens.
+
+For the product the only possible map is $h(z)=(u(z),v(z))$. Its inverse image of a basic rectangle is
+\[
+ h^{-1}(U\times V)=u^{-1}(U)\cap v^{-1}(V),
+\]
+which is open if the coordinates are continuous. Conversely the projections are continuous, as seen by taking rectangles $U\times Y$ and $X\times V$; compose with them to recover the coordinates.
+
+On the disjoint union set $g(i,x)=g_i(x)$. For an open $W\subseteq Z$, the part of $g^{-1}(W)$ in copy $i$ pulls back to $g_i^{-1}(W)$, exactly the test in the definition of the topology of $D$.
+\end{proof}
+
+\begin{example}[One turn around the circle]\label{f:top-turn}
+Give $S^1=\{(u,v)\in\mathbb R^2:u^2+v^2=1\}$ the subspace topology. The map
+\[
+ p(t)=(\cos(2\pi t),\sin(2\pi t))
+\]
+from the line into $S^1$ is continuous: its two real coordinates are continuous and its image lies on the circle. Its restriction to $[0,1)$ is a continuous bijection. But for $t_n=1-1/n$, the points $p(t_n)$ converge to $p(0)$ while the $t_n$ do not converge to $0$ in $[0,1)$: eventually they lie outside $[0,1/2)$. The inverse of this bijection is not continuous.
+\end{example}
+
+The disjoint union allows completely independent choices of maps on its copies. For pieces of a \emph{single} space, choices must agree where they overlap, and the topology of the pieces matters as well.
+
+\begin{proposition}[Pasting maps]\label{f:top-pasting}
+Let $X$ be covered by subspaces $A_i$, and suppose continuous maps $f_i:A_i\to Y$ agree on pairwise intersections. They define a unique map $f:X\to Y$. It is continuous if all $A_i$ are open, or if the cover is finite and all $A_i$ are closed.
+\end{proposition}
+\begin{proof}
+Agreement gives a well-defined value $f(x)=f_i(x)$ in any piece containing $x$. In the open-cover case, for open $V\subseteq Y$ each $f_i^{-1}(V)$ is open in $A_i$ and hence in $X$, so their union $f^{-1}(V)$ is open. In the finite closed-cover case apply the same argument to a closed subset of $Y$: each inverse image in a piece is closed in $X$, and now their union is finite.
+\end{proof}
+
+\section{Exercises}
+
+\begin{exercise}\label{f:top-ex-relative}
+Take $Y=[0,2)$ and $A=[0,1)\cup(3/2,2)$. Find the interior and the closure of $A$ first in $\mathbb R$, then in $Y$. Which endpoint changes its status in each calculation?
+\end{exercise}
+\begin{exercise}\label{f:top-ex-indicator}
+Give $T=\{0,1\}$ the topology $\{\varnothing,\{1\},T\}$. For $A\subseteq X$, let $\chi_A:X\to T$ take value $1$ on $A$ and $0$ elsewhere. Characterize continuity of $\chi_A$. How does the answer change if $T$ is discrete?
+\end{exercise}
+\begin{exercise}\label{f:top-ex-basis}
+Use the intervals $[a,b)$, $a<b$, as a proposed basis on $\mathbb R$. Prove that they give a topology strictly finer than the usual one (that is, with strictly more open sets). In this topology which of the sequences $1/n$ and $-1/n$ converges to $0$?
+\end{exercise}
+\begin{exercise}\label{f:top-ex-diagonal}
+Show that $X$ is Hausdorff if and only if the diagonal $\Delta=\{(x,x):x\in X\}$ is closed in $X\times X$. Deduce that for continuous $f,g:Z\to X$ with $X$ Hausdorff, the set on which $f=g$ is closed in $Z$.
+\end{exercise}
+
+\subsection*{Solutions and hints}
+\noindent\emph{Exercise~\ref{f:top-ex-relative}.}
+In the line the answers are $(0,1)\cup(3/2,2)$ and $[0,1]\cup[3/2,2]$. In $Y$ the set $A$ is itself open, and its closure is $[0,1]\cup[3/2,2)$. Neighborhoods of $0$ have lost their negative side; $2$ is not a candidate point for closure in $Y$.
+
+\smallskip\noindent\emph{Exercise~\ref{f:top-ex-indicator}.}
+The only nontrivial open set to test is $\{1\}$, whose inverse image is $A$. Thus continuity says precisely that $A$ is open. With the discrete topology one must also test $\{0\}$, so $A$ must be both open and closed.
+
+\smallskip\noindent\emph{Exercise~\ref{f:top-ex-basis}.}
+Two proposed basic intervals meeting at $x$ contain $[x,c)$, where $c$ is the smaller right endpoint. Every usual open interval contains such a neighborhood of each of its points, but $[0,1)$ is not open in the usual topology. Every basic neighborhood of $0$ contains $[0,\varepsilon)$ for some $\varepsilon>0$, hence eventually contains $1/n$. The sequence $-1/n$ never enters the neighborhood $[0,1)$.
+
+\smallskip\noindent\emph{Exercise~\ref{f:top-ex-diagonal}.}
+A rectangle $U\times V$ misses $\Delta$ exactly when $U\cap V=\varnothing$. Apply the rectangle basis at each pair $(x,y)$ with $x\ne y$ to see that openness of the complement is precisely the Hausdorff condition. The set in the second assertion is the inverse image of $\Delta$ under $z\mapsto(f(z),g(z))$.

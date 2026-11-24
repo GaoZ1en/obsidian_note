@@ -1,0 +1,176 @@
+\chapter{Varying a region before and after opening a face}\label{ch:04}
+Cut a vibrating string at a point and hold the displacement there equal to a
+specified function of time. Each half now needs a force at the cut to follow
+that history. When the two halves are rejoined, it is the \emph{sum} of the
+required forces that must vanish. Setting each force to zero would describe
+two free ends instead. We will obtain the corresponding statement for a field
+from the first variation of its action. The calculation also tells us which
+variables play the role of the displacement and where the forces are measured.
+
+\section{The variation at prescribed data}
+Let $R$ be an oriented Lorentzian slab of signature $(-,+,\ldots,+)$.
+Use the same future slice orientation on the two spacelike ends, so that the
+oriented boundary is $\Sigma_f-\Sigma_i+B+\Gamma$. The timelike face $B$
+is a physical wall, possibly a regulator for a boundary at infinity; its
+boundary condition and action are part of the theory. The timelike face
+$\Gamma$ is an artificial cut. For simplicity the side faces meet the end
+slices but not one another. Write $\partial_F\Sigma=\Sigma\cap F$ with the
+orientation inherited as a boundary of $\Sigma$. We use $d$ for the spacetime
+differential and $\delta$ for variation of fields at fixed spacetime point;
+the latter commutes with spacetime differentiation in our formulas.
+
+\begin{definition}
+A regional problem at prescribed cut datum $j$ consists of a configuration
+space with the physical condition on $B$ and a specified trace condition
+$b_\Gamma(\phi)=j$ on $\Gamma$, together with a differentiable action on
+that space. A trace assigns to a bulk field its selected boundary values;
+these can include derivatives. A variation in this space satisfies
+$\delta b_\Gamma=0$, not necessarily $\delta\phi|_\Gamma=0$.
+\end{definition}
+
+Dirichlet data fix the boundary field itself. Fixing a normal momentum
+instead usually requires a different face term. To see why that term belongs
+in the variation, write
+\[
+ S_R[j]=\int_R L+\int_B\ell_B+\int_\Gamma\ell_\Gamma[j],
+ \qquad \delta L={\cal E}_a\,\delta\phi^a+d\Theta.
+\]
+Here $L$ is a spacetime top form, ${\cal E}_a$ are the Euler--Lagrange
+densities and $\Theta$ is a spacetime form of one lower degree, linear in a
+field variation. On each side face $F$ differentiability requires the
+remainder $\Theta|_F+\delta\ell_F$ to vanish or to be a tangential derivative
+$d_F C_F$ on the allowed variations. The corner potential $C_F$ has
+spacetime degree $\dim R-2$ and is linear in the variation. If the wall
+supports its own equation,
+its coefficient is kept in the variation until that equation is imposed.
+At fixed $j$, imposing the boundary conditions but not the bulk equations,
+Stokes' theorem gives
+\begin{align}
+ \delta S_R[j]&=\int_R {\cal E}_a\,\delta\phi^a
+              +\theta_{\Sigma_f}-\theta_{\Sigma_i},\nonumber\\
+ \theta_\Sigma&=\int_\Sigma\Theta
+         -\sum_{F=B,\Gamma}\int_{\partial_F\Sigma} C_F.
+ \label{eq:04-endpoint}
+\end{align}
+The minus sign can be found without a metric: at the final corner,
+$\partial F$ induces the opposite orientation to $\partial_F\Sigma_f$,
+since the boundary of the oriented boundary vanishes. A tangential derivative
+on a wall therefore contributes to the endpoint potential; it is not zero.
+
+For a concrete corner, take a flat strip with a real scalar and add a kinetic
+term $\tfrac12\kappa\int_{t_i}^{t_f}\dot q_B^2\,dt$ on one physical end of
+the string, where $q_B=\phi|_B$. Its variation is
+\[
+ -\kappa\int_{t_i}^{t_f}\ddot q_B\,\delta q_B\,dt
+      +[\kappa\dot q_B\,\delta q_B]_{t_i}^{t_f}.
+\]
+For the bulk kinetic term used below, the wall equation with free $q_B$ is
+$-\partial_n\phi-\kappa\ddot q_B=0$, where $n$ points out of the strip.
+Even on a solution of this equation, the endpoint term is still present: the
+wall carries momentum $\kappa\dot q_B$. It must not be discarded with the
+wall equation.
+
+\section{Releasing a common trace}
+To open $\Gamma$, allow $j$ to range over the admissible histories and keep
+the condition on $B$ fixed. If $\mathcal C_R[j]$ is the configuration space
+at prescribed $j$, this gives $\mathcal C_R^{\mathrm{open}}
+=\bigcup_{j\;\mathrm{admissible}}\mathcal C_R[j]$; a history must still
+respect any compatibility condition where the cut meets an end slice.
+Remove the face action used \emph{only} to impose
+the auxiliary closure, or explicitly undo its boundary Legendre transform.
+Do not remove a term that defines the physical wall. Opening is not a
+stationarity condition on one side of the cut. It makes the cut part of the
+first variation visible as a linear functional of varying trace data $q$:
+\[
+ \delta S_R^{\mathrm{open}}=\int_R {\cal E}_a\delta\phi^a
+ +\theta^{\mathrm{open}}_{\Sigma_f}-\theta^{\mathrm{open}}_{\Sigma_i}
+ +\langle\Pi,\delta q\rangle_\Gamma.
+\]
+Here tangential derivatives of $\delta q$ have been integrated by parts;
+the resulting corner contributions belong to $\theta^{\mathrm{open}}$.
+For example, subtracting $\langle\Pi,q\rangle_\Gamma$ would turn the
+face variation $\langle\Pi,\delta q\rangle_\Gamma$ into
+$-\langle\delta\Pi,q\rangle_\Gamma$, suitable for fixing $j=\Pi$. Undoing
+this subtraction restores the original face one-form; it does not set the
+momentum to zero.
+For a first-order scalar Lagrangian and Dirichlet closure, $q=j=\phi|_\Gamma$
+and no artificial face action is needed. With fixed metric and volume form
+$\epsilon$, the action density and its variation are
+\begin{align*}
+ L&=-\tfrac12(\nabla_\mu\phi\nabla^\mu\phi+m^2\phi^2)\epsilon,\\
+ \delta L&=(\nabla_\mu\nabla^\mu\phi-m^2\phi)\delta\phi\,\epsilon
+       -\nabla_\mu(\delta\phi\nabla^\mu\phi)\epsilon.
+\end{align*}
+On a timelike face the last term gives
+$\langle\Pi,v\rangle_\Gamma=-\int_\Gamma (n^\mu\nabla_\mu\phi)v\,d\mu_\Gamma$,
+where $v=\delta q$, $n$ is unit and outward, and $d\mu_\Gamma$ is the positive
+induced measure. Thus $\Pi$ is a dual trace \emph{density} with the outward
+sign already included. In arbitrary face coordinates $y$ it contains
+$\sqrt{|\det\gamma|}\,|d^{\dim\Gamma}y|$, not just a component of the
+normal derivative. Equivalently one can integrate the form
+$-(\partial_n\phi)v\,\iota_n\epsilon$ with the outward face orientation.
+Do not insert a second orientation sign when using the density formula.
+One can even avoid normalizing a metric normal. For an outward conormal
+$\nu$ and any transverse $N$ with $\nu(N)=1$, let
+$\epsilon_\nu=(\iota_N\epsilon)|_\Gamma$. The outward surface density is
+$\nu_\mu\,|\epsilon_\nu|$. Rescaling $\nu$ by a positive
+function rescales $N$ inversely, and adding a tangential vector to $N$ has
+zero effect on the pullback. This explains why the pairing, rather than a
+bare coordinate component, is the invariant object.
+
+Suppose a fixed smooth identification $D$ carries trace data on side 2 to
+side 1 with smooth inverse. Continuity $q_1=D(q_2)$ is a restriction on
+configurations, made before varying them. Differentiating $q_2=D^{-1}(q_1)$
+gives $\delta q_2=T_{q_1}D^{-1}\,\delta q_1$; only for a linear map may one
+use $D^{-1}$ itself on variations. At the matched data the dual transport is
+defined by $\langle D^\vee\Pi_2,v\rangle_{\Gamma_1}
+=\langle\Pi_2,T_{q_1}D^{-1}\,v\rangle_{\Gamma_2}$, including the change of
+measure. Consequently, the sum of the two opened actions has the cut variation
+\[
+ \langle\Pi_1,\delta q_1\rangle_{\Gamma_1}
+ +\langle\Pi_2,T_{q_1}D^{-1}\,\delta q_1\rangle_{\Gamma_2}
+ =\langle\Pi_1+D^\vee\Pi_2,\delta q_1\rangle_{\Gamma_1}.
+\]
+Stationarity gives $\Pi_1+D^\vee\Pi_2=0$ if all compactly supported common
+trace variations are available. With a restricted trace space it only says
+that the sum annihilates that space. At the flat cut $x=0$, with region 1 at
+$x<0$ and region 2 at $x>0$, the sum per unit measure is
+$-\partial_x\phi_1+\partial_x\phi_2$: opposite outward normals give
+continuity of the derivative in a \emph{single} signed coordinate.
+
+\section{Which traces and which corner representative?}
+The first variation, not a count of field components, decides how many
+response densities are present. Consider a term proportional to
+$\tfrac12(\partial_x^2\phi)^2$ in a flat collar, suppressing spectator
+coordinates. At fixed tangential coordinates, two integrations by parts give
+\[
+ \int_a^b \phi''\,\delta\phi''\,dx
+ =\int_a^b \phi''''\,\delta\phi\,dx
+    +[\phi''\,\delta\phi'-\phi'''\,\delta\phi]_a^b.
+\]
+Now $q=(\phi,\partial_x\phi)$, and both coefficients must be paired in the
+common signed $x$ coordinate. A smooth bulk field restricted to the two
+regions matches \emph{all} normal derivatives in that coordinate. Conversely,
+conditions from the displayed first variation alone guarantee neither
+infinite-order matching nor the regularity of a weak solution. Such a
+conclusion needs the equations and a regularity argument.
+
+There is also a genuine freedom of presentation \cite{HW}. For a local
+spacetime form $Y$ linear in the variation, $\Theta\mapsto\Theta+dY$ and
+$C_F\mapsto C_F+Y|_F$ leave \eqref{eq:04-endpoint} unchanged by Stokes'
+theorem. Moving a total derivative $d\mu$ into $L$ and subtracting $\mu|_F$
+from each side action shifts $\Theta$ by $\delta\mu$; it changes
+$\theta_\Sigma$ only by $\delta\int_\Sigma\mu$. Its field-space exterior
+derivative is unchanged. An unmatched wall interaction is not such an
+ambiguity: it changes what the common trace must do. The following test
+detects the difference.
+
+\begin{exercise}
+On the scalar cut at $x=0$ leave the single surface action
+$-\tfrac12\lambda\int j(t)^2\,dt$ in the joined system. Does stationarity
+still give continuity of the normal derivative in the common coordinate?
+\end{exercise}
+\noindent\emph{Answer.} Its variation is $-\lambda\int j\,\delta j\,dt$.
+Adding the two outward responses gives
+$\partial_x\phi_2-\partial_x\phi_1=\lambda j$. The result describes a
+physical defect in the string, not an invisible cut.
