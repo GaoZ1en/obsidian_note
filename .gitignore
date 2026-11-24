@@ -1,6 +1,9 @@
 # Ignore Obsidian configuration files
 /.obsidian/
 
+# Ignore dsh skills
+/.dsh/
+
 # Ignore attachments and media files
 /Attachments/
 /Literature Notes/articles/

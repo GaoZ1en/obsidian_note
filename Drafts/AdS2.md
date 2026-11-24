@@ -225,8 +225,7 @@ V_{\text{eff}}(\eta) = \frac{m^2}{\sinh^2\eta}
 首先写成
 
 $$\begin{align}
--\frac{1}{\sinh\eta}\frac{\mathrm{d}}{\mathrm{d}\eta}
-	\bigl(\sinh\eta\,R'\bigr) + \frac{m^2}{\sinh^2\eta}R = \lambda R.
+-\frac{1}{\sinh\eta}\frac{\mathrm{d}}{\mathrm{d}\eta} \bigl(\sinh\eta\,R'\bigr) + \frac{m^2}{\sinh^2\eta}R = \lambda R.
 \end{align}$$
 
 这等价于
@@ -338,8 +337,7 @@ R_{\rho m}(\eta) \propto P_{-\frac{1}{2}+i\rho}^{|m|}(\cosh\eta).
 因此 $H_2$ 上的本征函数可写成
 
 $$\begin{align}
-\boxed{\displaystyle
-\Psi_{\rho m}(\eta,\phi) = N_{\rho m}\,P_{-\frac{1}{2}+i\rho}^{|m|}(\cosh\eta)\,\frac{e^{i m \phi}}{\sqrt{2\pi}}, \quad \rho\ge 0,\; m\in\mathbb{Z},}
+\boxed{\displaystyle \Psi_{\rho m}(\eta,\phi) = N_{\rho m}\,P_{-\frac{1}{2}+i\rho}^{|m|}(\cosh\eta)\,\frac{e^{i m \phi}}{\sqrt{2\pi}}, \quad \rho\ge 0,\; m\in\mathbb{Z},}
 \end{align}$$
 
 其中 $N_{\rho m}$ 为归一化常数。
@@ -430,15 +428,13 @@ $$\begin{align}
 则有
 
 $$\begin{align}
-\int_1^{\infty}\!\mathrm{d}z\, P_{-\frac{1}{2}+i\rho}^{|m|}(z)
- P_{-\frac{1}{2}+i\rho'}^{|m|}(z)^* = \mathcal{N}_{|m|}(\rho)\,\delta(\rho-\rho').
+\int_1^{\infty}\!\mathrm{d}z\, P_{-\frac{1}{2}+i\rho}^{|m|}(z) P_{-\frac{1}{2}+i\rho'}^{|m|}(z)^* = \mathcal{N}_{|m|}(\rho)\,\delta(\rho-\rho').
 \end{align}$$
 
 回到 $\eta$ 变量，这正是
 
 $$\begin{align}
-\int_0^{\infty}\!\mathrm{d}\eta\,\sinh\eta\, P_{-\frac{1}{2}+i\rho}^{|m|}(\cosh\eta)
- P_{-\frac{1}{2}+i\rho'}^{|m|}(\cosh\eta)^* = \mathcal{N}_{|m|}(\rho)\,\delta(\rho-\rho').
+\int_0^{\infty}\!\mathrm{d}\eta\,\sinh\eta\, P_{-\frac{1}{2}+i\rho}^{|m|}(\cosh\eta) P_{-\frac{1}{2}+i\rho'}^{|m|}(\cosh\eta)^* = \mathcal{N}_{|m|}(\rho)\,\delta(\rho-\rho').
 \end{align}$$
 
 因此，只要取
@@ -450,8 +446,7 @@ N_{\rho m} = \left[\mathcal{N}_{|m|}(\rho)\right]^{-1/2} = \left[\frac{\pi}{2}\,
 就有
 
 $$\begin{align}
-\boxed{\displaystyle
-\langle \Psi_{\rho m},\Psi_{\rho' m'}\rangle = \delta_{mm'}\,\delta(\rho-\rho').}
+\boxed{\displaystyle \langle \Psi_{\rho m},\Psi_{\rho' m'}\rangle = \delta_{mm'}\,\delta(\rho-\rho').}
 \end{align}$$
 
 > 上述径向正交关系是 Sturm–Liouville 理论在连续谱情形下的具体体现：$\rho$ 作为连续“本征值参数”，不同 $\rho$ 对应的本征函数在权重 $w(\eta)=\sinh\eta$ 下以 Dirac $\delta$ 形式正交。显式的 $\mathcal{N}_{|m|}(\rho)$ 则通过已知的特殊函数积分公式给出。
@@ -722,8 +717,7 @@ $$\begin{align}
 得到所需的连乘形式
 
 $$\begin{align}
-\boxed{\displaystyle
-\bigl|\Gamma(\tfrac12+|m|+i\rho)\bigr|^2 = \frac{\pi}{\cosh(\pi\rho)}
+\boxed{\displaystyle \bigl|\Gamma(\tfrac12+|m|+i\rho)\bigr|^2 = \frac{\pi}{\cosh(\pi\rho)}
 	\prod_{k=0}^{|m|-1}\bigl((k+\tfrac12)^2+\rho^2\bigr).}
 \end{align}$$
 

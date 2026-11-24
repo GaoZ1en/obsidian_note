@@ -29,3 +29,4 @@ This vault is mainly organized as follows.
 
 >[!Misc]
 >The root directory also contains standalone notes when a topic has not yet been moved into a dedicated module.
+
