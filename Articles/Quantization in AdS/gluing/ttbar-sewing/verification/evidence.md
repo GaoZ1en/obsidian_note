@@ -59,3 +59,43 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
 5. generic nonintegrable Ising seed/Potts 的 stress-product matching、vacuum equation of state 与 continuum bridge。
 
 主阶段研究的完成指上述明确的一阶/有限系统结果及 UV 审查已落盘和复现，不是这些开放问题已经被解答。
+
+## 5. 二阶新增证据（2026-11-15）
+
+以上保留第一阶段的历史范围。下表更新二阶进展；完整空间反项与 Hilbert/source completion 仍未闭合。[二阶主笔记](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/second-order-local-flow.md>)先定义展开、处方和两个 frame，再解释证据强度。
+
+| 主张 | 实际证据 | 限定 |
+|---|---|---|
+| canonical $p_1=0$ 强制 $h_1=-4rl+4\kappa(r+l)''$、$q_1=-12rl+4\kappa(r+l)''$ | 局域 Virasoro 代数；[独立 stress-flow 推导](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/local-second-order-independent.md>)；fresh Wolfram exact zero | 平直 current frame；不是自动 Hilbert/source completion |
+| 指定 integrated determinant FP 推出量子 $V_2$，含导数项 | 明确 point-split spectator Taylor 与 normal-product identity；[局域 review](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/local-second-order-independent.md>) | literal pointwise determinant flow 已在一阶需要 improvement |
+| whole-composite det 与 inner-pair sym 差 $D_{\rm mix}/4$；顶点 $7/32$ vs $-1/32$ | 主／独立 Wick 和 Virasoro association-order 推导；[fermion review](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/fermion-second-order-independent.md>)；有限 CAR frame identity | 是不同 finite/frame 处方，不能都叫同一个 symmetric FP；须运输 operators/states |
+| 全 fixed-$(E_0,P)$ 块二阶恒等式 $\mathcal E_2=ab(a+b)/2$ | exact Virasoro commutator、Bernoulli finite parts；[counterterm 独立 audit](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/counterterm-second-order-independent.md>)；任意变量符号残差 0 | 含退化 descendants；不固定谱不可见的导数 frame |
+| mode power/log counterterms，log 必须配 operator/source rotation | 精确高态核；[mode 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_mode_checks.py>)及 [结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-mode-results.md>) | 不是原空间 regulator 的反项；有明确 finite-$\epsilon$ descendant remainder |
+| sharp cutoff 谱 CT 后 offdiag 仍约 $M/2$；平滑核 finite part $11/12$ | 解析 Löwdin 核，有限和反例，Wolfram limit | $85/96$、$109/96$ 是指定 retained-space/frame 的 effective vertices，不是普适 observable |
+| 三个 irreducible bosonic Ising sectors 的有限二阶检查 | $M=2,3,4$；左右 levels≤4、最大四重退化；最大 residual $1.44\times10^{-13}$；完整 ED 的 cubic remainder | Ramond 无额外 doubling；finite double precision，非无限域结论 |
+| 有限程 $V_{2,a}^{\rm loc}$、full-Wick bilinear/quartic 转换和四模顶点 | [空间 Wolfram script](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_spatial_checks.wl>)与 [结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-spatial-results.md>)；fermion 独立转换 | 只验证局域插入；plane→circle Wick 项不能丢；不含原 $V_a$ loop 的全部反项 |
+| 原 $V_a$ 的 exact NS vacuum loop 与 bulk $a^{-6}$ 反项 | [独立推导](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/spatial-loop-second-order-independent.md>)、Vandermonde＋真实 dispersion、spin ED $N=4,6,8$、convergent bulk integral | 一个同-regulator Wilson coefficient；decimal 非 certified interval；非全 $C_{2,a}$ |
+| 同-regulator 非真空差与精确非零 $N=8$ offdiag kernel | [空间 Wilson review](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/spatial-wilson-second-order.md>)；direct gamma／Fourier 两实现；Wolfram exact radical；另有 candidate-blind 同层复核 | 排除 identity-only subtraction；$N\le64$ 增长不升级为已证所有 UV power；不反推唯一系数 |
+| 两端点 FP 规则可解二阶平直 Ward，但迭代后 Jacobi 非零 | [Ward/source review](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/ward-source-second-order.md>)、[完整脚本](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/ward_source_checks.sage>)；[fresh 独立审核](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/reviews/ward-contact-audit.md>) | 否定指定二元 FP 规则作为完整算符代数；不否定 $T\bar T$ 存在，也不把 Ward 可解当成 Hilbert completion |
+
+### 5.1 复现与真实执行记录
+
+- [二阶符号程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_symbolic_checks.wl>) → [符号结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-symbolic-results.md>)。fresh Wolfram `Get`，消息为空；exact residuals 与所用 CAS output 路径均记录。
+- [mode NumPy 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_mode_checks.py>) → [mode 结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-mode-results.md>)。最终 frame 命名已澄清，主会话重跑 exit 0，code hash 对应最终版本。
+- [空间局域插入程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_spatial_checks.wl>) → [空间插入结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-spatial-results.md>)。两个 frame 独立列值，$N=16,32,64,128$，Wolfram 消息为空。
+- [原空间 vacuum-loop 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/spatial_loop_uv_checks.py>) → [空间-loop 结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/spatial-loop-uv-results.md>)。独立执行并由主会话复跑 finite ED／顶点与 bulk quadrature；另做 exact $N=4,6$ Wolfram 检验。结果文件防覆盖，不要为了重跑删除它，可导入函数检验。
+- [空间 Wilson 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/spatial_wilson_checks.py>) → [完整八维矩阵／数据](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/spatial-wilson-results.md>)。有限 $P$、相位、真实 gaps 和局域插入 frame 均明定。
+- [Ward/source 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/ward_source_checks.sage>) 是 Sage Python-compatible 脚本，依赖 Sage 所含 SymPy；不要用只有 NumPy 的宿主 Python 运行。主会话的 [fresh 重跑](</Users/koishi/.codex/mcp-results/sage_run-2ZVAFg/result.txt>)重现全部平直 Ward 和三个 nonlinear Jacobi **FAIL**；一条 `bitcount` deprecation warning 不改变 exact rational 结果。FAIL 是数学负结果，不能写成“所有检查通过”。
+- [独立 Ward generic-Wick 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/ward_contact_audit.py>)及 [独立 determinant/residue 程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/ward_contact_audit.wl>)再次给相同 Jacobi 系数。Wolfram 与 Sage/SymPy 是两种计算实现；重复调用同一库不冒充独立实现。
+
+- [二阶静态审计程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second_order_audit.py>) → [审计结果](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/second-order-audit-results.md>)，检查新增材料的链接、Python-compatible syntax、控制字符与 code/result hashes；不充当物理证明。主会话另以 [fresh Wolfram 重跑](</Users/koishi/.codex/mcp-results/evaluate_mathematica-gac4pZ/result.txt>)复现独立 determinant Jacobi，exact checks 为真、tail 为零、消息为空。
+
+额外 Wolfram bulk `NIntegrate` 曾在 30 秒超时，无可用结果；其失败已记录在符号结果，未拿来支持小数。无新增外部文献依赖，无新 JSON 数据，无 commit/push。
+
+### 5.2 独立性、保留缺口与下一条论证
+
+局域 stress-flow 与 counterterm reviewer 初始只取得题设／约定、未看候选；后续 smooth finite part 的交叉比较明确属于协作。fermion reviewer 独立完成 classical Darboux 与局域基分析，之后才取得具体量子系数作候选核查。两个 association/frame 代表的澄清发生在整合时，未将“都通过谱”伪称“同一个 FP”。
+
+原空间 vacuum-loop 与非真空 Wilson 核从真实 $V_a$ 出发，不使用 mode CT 或精确 $T\bar T$ 谱。其关键非对角核又交给未读新 review/脚本、未取得候选数值的另一代理独立算，direct-CAR 与 exact determinant 都吻合。Ward-contact reviewer 只取得全部未知的 $u,v,w$、接触项规则与约定，在未取得主审核解和 Jacobi 系数时独立推出 chiral 必要系数及同一非线性反例。
+
+当前明确缺口不是“还没有多算几个能级”，而是：**从保持结合性／CAR 的 regulator 推导兼容的 nested-contact／source prescription，及在同一空间 regulator 中完成非标量 Wilson matching 和 held-out vertices 检验。** 完整 Hilbert metric/source、physical $\sigma$ bridge、固定物理耦合连续域和 cutoff-uniform sewing／entropy 仍未证明；指定二元 FP 的反例不等于这些问题不可能解决。

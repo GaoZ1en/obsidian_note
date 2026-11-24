@@ -30,3 +30,15 @@
 已完成的是有限且可核查的第一阶段，不是对四个研究问题的无限开放结论。当前最关键的下一步是：**从局域 Hamiltonian/stress flow 推出并验证 $V_{2,a}$ 及相应 operator counterterms，不能只逐能级调谱。** 最小测试是同时匹配 vacuum、$\epsilon$、$\sigma$、chiral $T$ 及一个 off-diagonal four-mode vertex，再检验 separated smeared correlator 的二阶 cutoff 稳定性。若这一步失败，应定位 scheme/representation 或 local-flow 假设，而不是继续把未控制的 $H_0+\lambda V_a$ 当作 exact theory。
 
 非可积 seed 的 finite-history theorem 无需新假设；其 continuum stress-product matching 必须重做。Potts 的多 sectors、空间 replica endpoint renormalization 和完整 spin-structure 信息不能从 Ising 的可解性继承。
+
+## 第二阶段新增结果（2026-11-15）
+
+[二阶局域 flow、接触项与同-regulator 反项](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/second-order-local-flow.md>)给出了以下有限且可复核的推进：
+
+- 从局域 Virasoro 守恒推出必需的量子 stress improvement；在明确的 **integrated** determinant finite-part 处方下推出非零 $V_2$，并证明全部固定能量—动量块（含退化 descendants）的二阶谱恒等式。
+- whole-composite determinant midpoint 与 inner-pair symmetric 有限部是两个 frame，差为 $D_{\rm mix}/4$；真空到 $TT$ 的局域二阶顶点分别为 $+28\pi^3/L^5$、$-4\pi^3/L^5$。谱不能区分它们，operators/sources 必须同步变换。
+- 直接计算 mode power/log counterterms、off-diagonal Löwdin 核及 source rotation；三个 Ising sectors 的有限 CAR 检验通过。sharp transfer cutoff 留下谱看不见的非对角端点伪项。
+- 真实空间 regulator 的 NS 真空迭代给 $E^{\rm mix}_{2,a}/L\sim-0.00074138034437906/a^6$，固定 leading bulk identity 反项；另有独立验证的精确非零四模 Löwdin 核，证明 identity subtraction 不足。完整空间 $C_{2,a}$ 仍未匹配。
+- **找到了接触项处方的明确反例：** 一套 symmetric Euclidean-time 双端点、逐次取有限部的规则，虽可使二阶平直能量／动量 Ward 闭合，却违反非线性 Jacobi。两个独立 Wick／留数实现给相同非零系数。因此不能把 Ward 可解或谱正确当成 Hilbert-stress／算符代数已构造。
+
+复现程序、实际结果、独立性及失败检验集中于 [二阶证据索引](</Users/koishi/Documents/Note/Articles/Quantization in AdS/ttbar-sewing/verification/evidence.md#L63>)。原第一阶段正文没有改写；这里的二阶构造仍是指定处方的条件结果，不是固定非零物理耦合的连续极限定理。
