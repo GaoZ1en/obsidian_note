@@ -2,6 +2,8 @@
 
 Research notes on quantization and perturbative field theory in AdS, including AdS3 gauge and gravity systems, AdS4 linearized gravity, scalar thermodynamics, covariant phase space, pAQFT, and gravitational energy.
 
+For the [CPS conventions](<perturbation/formalism.md>), go straight to the formalism note. The Einstein–scalar spectrum project now lives under perturbation: [action and setup](<perturbation/Einstein scalar spectrum/perturbation.md>) · [two-particle spectrum](<perturbation/Einstein scalar spectrum/two particle spectrum.md>) · [Einstein audit and φ⁴ comparison](<perturbation/Einstein scalar spectrum/Einstein audits and phi4 comparison.md>) · [later contact-spectrum results](<perturbation/Einstein scalar spectrum/Contact spectrum referee results.md>).
+
 ## Subdirectories
 
 | Directory | Description |

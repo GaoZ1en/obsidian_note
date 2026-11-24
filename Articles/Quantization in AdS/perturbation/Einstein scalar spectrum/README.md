@@ -6,11 +6,13 @@
 
 ## Independent audit and fixed-background φ⁴ comparison
 
-The separate [independent audit and φ⁴ comparison](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/independent audit and phi4 comparison/README.md>) preserves the supplied research package, a complete pinned-environment rerun, fresh gravitational source and one-body audits, and an independently derived real-scalar φ⁴ comparison. It distinguishes first-order coefficient theorems from unresolved physical interfaces. New structural results include the exact three-particle balanced contact rank and fixed-particle-number kernel asymptotics. The existing research text has not been revised; see the separate audit for scope and qualifications.
+[Einstein audits and φ⁴ comparison](<Einstein audits and phi4 comparison.md>) collects the complete lowest scalar–boundary-graviton cancellation, the one-body subtraction conditions, and the fixed-background real φ⁴ finite spectrum, exact contact ranks, soft spectrum, and counterexamples. It separates first-order results from unresolved physical interfaces and gives Git snapshot references for the former audit directory's tracked sources.
+
+[Contact spectrum referee results](<Contact spectrum referee results.md>) records the later all-bidegree three-particle rank theorem, the arbitrary-particle first nonchiral kernel, infinitely many square-root resonances, and what the strong Racah limit does—and does not—establish about the finite spectral bottom.
 
 ## General polynomial scalar interactions on fixed AdS₃
 
-The separate [polynomial scalar research](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/README.md>) extends the fixed-background comparison to normal-ordered φⁿ. It contains a complete first-order finite-block constructor, number-changing resonance theorems, exact minimal k-particle contact spectra, chiral clustering kernels and explicit nonzero families. The φ⁶ example includes the full cross-particle-number mixing block; the φ³ second-order and general nonchiral many-body problems remain under investigation. Existing φ⁴ and gravitational source notes are unchanged.
+The separate [polynomial scalar research](<polynomial scalar interactions/README.md>) extends the fixed-background comparison to normal-ordered φⁿ. It contains a complete first-order finite-block constructor, number-changing resonance theorems, exact minimal k-particle contact spectra, chiral clustering kernels and explicit nonzero families. The φ⁶ example includes the full cross-particle-number mixing block; the φ³ second-order and general nonchiral many-body problems remain under investigation. Existing φ⁴ and gravitational source notes are unchanged.
 
 ## Current OFPT Result
 

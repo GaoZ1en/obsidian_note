@@ -251,6 +251,8 @@ The [gravitational response supplement](gravitational-response.md) derives the s
 
 ## 8. Verification and remaining gates
 
+[Verification results and limits](<Verification results and limits.md>) locates the original code in Git and the saved execution records in the local evidence archive.
+
 **Verified:** Mathematica returned zero for the radial Green identity, the Kerr frequency derivative, the inverse-metric pairing density, metric determinant, angular reduction, height-function mode factor, and exact endpoint identity. xAct returned zero for the covariant scalar-current divergence residual. A finite matrix example checks the residue-conjugation algebra only; it is not a Kerr domain test. The quadratic coordinate-change formula was also checked.
 
 **Assumptions:** nonextremal Kerr; massless scalar; simple nondegenerate angular and resonance branches where used; explicit complex-bilinear normalization; regular angular poles; analytic radial/height-function branches; convergent common contour and vanishing endpoint expressions for the regularized equality.

@@ -2,6 +2,8 @@
 
 ## 当前证据
 
+[独立接触谱结果](<Independent contact spectrum results.md>) 指明各条独立证明在 `bf8b92ac8e2dae32f4e96e17238f9524809d6b82` 的源码路径。以下旧 `independent/` 脚本及 tracked 报告须从该快照取回再复跑；原本未进 Git 的 JSON／日志见[本地证据包](<independent-evidence.tar.gz>)内同名成员。主目录 `code/` 和 `results/` 不受这次整理影响。下面是历史证据，不因归档而重新执行。
+
 本目录的 [首阶正文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Polynomial scalar spectrum.md>)、[φ³ 二阶正文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Cubic second-order spectrum.md>)、[非手征与大 N](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Clusters and large particle number.md>)、[奇次扩展](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/Odd interactions beyond cubic.md>) 分别保存定义、证明、谱例和适用范围。下面按构造与独立验证路线记录真实检查，不把有限算例当作全指标证明，也不把不同证书的检查数相加为一个“总证明数”。
 
 - 模式、作用量、正规序、边界条件及相位在正文 §1 定义。

@@ -29,9 +29,7 @@
 - [通用精确构造](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/contact_blocks.py>)：Sage 有理矩阵与数域本征空间。
 - [首个完整共振块的解析谱](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/code/even_threshold_spectrum.py>)：一般 k、所有有理共振质量的阈值、全部非零谱与零重数，可选完整矩阵核验。
 - [φ⁶ 完整 9 维例子](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/results/phi6_D2_E8_J0.json>)：全部矩阵、本征向量与特征多项式。
-- [实际 φ⁴ 来源与证据地图](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/phi4-audit/phi4-source-evidence-map.md>)：区分现行定理、旧阶段状态和可复用代码，记录提交与哈希。
-
-独立推导保留在 [共振报告](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/resonances/theorem_and_examples.md>)、[最小 k 粒子谱](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/minimal-sector/README.md>) 和 [手征结构](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/polynomial scalar interactions/independent/chiral/independent_derivation.md>)。它们首先独立得到结果，后续协作核对另行标明。
+- [独立接触谱结果](<Independent contact spectrum results.md>)：共振、最小粒子谱、手征与非手征聚簇、二阶与大粒子数的独立推导和反例；含 φ⁴ 来源、旧脚本的 Git 定位及本地证据归档。
 
 ## 结论边界与开放问题
 
