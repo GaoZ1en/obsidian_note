@@ -70,6 +70,8 @@ Use `Literature Notes/Charges of supergravity (2604.09928v1).md` as a behavioral
 
 These requirements concern the mathematical content. Use headings and tables only when they help the reader follow it; a separate source map or derivation table is optional. Write the note as an explanation of the paper, not an audit report.
 
+Prefer a somewhat more expansive explanatory style in deep notes: retain more intermediate derivation steps, explain the mathematical and physical meaning of important definitions and formulas, and make concrete connections to koishi’s current research. Add useful explanation rather than repeated summaries; this preference does not increase the daily paper-count targets or expand medium-priority sketches into deep notes.
+
 ### Monograph-Mode Additions
 
 For papers around 30 pages or longer, and shorter papers with dense arguments or substantial appendices, allow enough space to explain the full argument. Cover the major sections and the appendices used by the results, grouping related material when that improves readability. Keep definitions, assumptions, important equations, intermediate steps, and their connections explicit.
