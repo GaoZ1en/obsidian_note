@@ -1,4 +1,4 @@
-suppose the spacetime is foliated by a set of timelike hypersurfaces, which is given by
+Suppose the spacetime is foliated by a set of spacelike hypersurfaces, which is given by
 
 $$\begin{align}
 x^{\mu} & =X^{\mu}(x^{a},t)
@@ -31,7 +31,7 @@ g_{\mu \nu}e^{\mu}_{a}n^{\nu} & =0, & g_{\mu \nu}n^{\mu}n^{\nu} & =-1
 \end{align}
 $$
 
-thus we have $\displaystyle{\tau_{\mu}=-Nn_{\mu}+N_{a}e^{a}_{\mu}}$. then in the basis $\displaystyle{\left\{\tau^{\mu},e^{\mu}_{a}\right\}}$ we have
+thus we have $\displaystyle{\tau_{\mu}=-Nn_{\mu}+N_{a}e^{a}_{\mu}}$. Then in the basis $\displaystyle{\left\{\tau^{\mu},e^{\mu}_{a}\right\}}$ we have
 
 $$
 \tag{.}
@@ -118,7 +118,7 @@ K_{ab} & =\frac{1}{\sqrt{ \sigma }}\left( \pi _{ab}+\frac{1}{2-d}\sigma _{ab}\pi
 \end{align}
 $$
 
-we have two primary constraints $\displaystyle{\pi _{N}=\pi _{N^{a}}=0}$. the Hamiltonian is then
+we have two primary constraints $\displaystyle{\pi _{N}=\pi _{N^{a}}=0}$. The Hamiltonian is then
 
 $$
 \tag{.}\begin{align}
@@ -130,7 +130,7 @@ H & =\int _{\Sigma}\mathrm{d}^{d-1}x\mathcal{H} \\
 \end{align}
 $$
 
-where $\displaystyle{C=-\tilde{R}+\frac{1}{\sigma}\left(\pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2}\right)}$, $\displaystyle{C^{b}=-2D_{a}\left(  \frac{1}{\sqrt{ \sigma }}\pi ^{ab} \right)}$. secondary constraints are given by
+where $\displaystyle{C=-\tilde{R}+\frac{1}{\sigma}\left(\pi _{ab}\pi ^{ab}+\frac{1}{2-d}\pi ^{2}\right)}$, $\displaystyle{C^{b}=-2D_{a}\left(  \frac{1}{\sqrt{ \sigma }}\pi ^{ab} \right)}$. Secondary constraints are given by
 
 $$
 \tag{.}\begin{align}

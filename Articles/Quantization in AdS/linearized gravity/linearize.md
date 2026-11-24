@@ -71,6 +71,12 @@ $$\begin{align}
 R_{\mu \nu} & =\partial _{\rho}\Gamma ^{\rho}_{~\mu \nu}-\partial _{\nu}\Gamma ^{\rho}_{~\mu \rho}+\Gamma ^{\rho}_{~\rho \lambda}\Gamma ^{\lambda}_{~\mu \nu}-\Gamma ^{\rho}_{~\nu \lambda}\Gamma ^{\lambda}_{~\mu \rho}
 \end{align}$$
 
+$$\begin{align}
+R_{\mu \nu} & =\partial _{\rho}\Gamma ^{\rho}_{\mu \nu}-\partial _{\nu}\Gamma ^{\rho}_{\mu \rho}+\Gamma ^{\rho}_{~\rho\lambda}\Gamma ^{\lambda}_{~\mu \nu}-\Gamma ^{\rho}_{~\nu \lambda}\Gamma ^{\lambda}_{~\mu \rho} \\
+\implies R & =g^{\mu \nu}R_{\mu \nu} \\
+G_{\mu \nu} & =R_{\mu \nu}-\frac{1}{2}g_{\mu \nu}R
+\end{align}$$
+
 The perturbative expression before using the AdS$_3$ curvature identities is
 
 $$\begin{align}
