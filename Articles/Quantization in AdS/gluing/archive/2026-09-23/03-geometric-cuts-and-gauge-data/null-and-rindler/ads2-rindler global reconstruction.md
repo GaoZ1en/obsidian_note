@@ -868,9 +868,7 @@ $$\begin{align}
 \boxed{ \beta_{\omega n}=-(u_{R\omega},\Phi_n^*)_{KG,R} =\int_0^{\pi/2}d\rho\, \left(\omega_n-\frac\omega{\sin\rho}\right) \frac{\psi_\omega(x(\rho))}{\sqrt{2\omega}} N_{n,\Delta}(\cos\rho)^\Delta C_n^\Delta(\sin\rho).} \tag{8.11}
 \end{align}$$
 
-These integrals include both field and normal/characteristic information. They are defined by first inserting an endpoint cutoff $\rho\geq\epsilon$, pairing with $w(\omega)\in C_c^\infty(0,\infty)$, and then taking $\epsilon\downarrow0$ in the wave-packet topology. With this convention
-$b_R(\omega)=\sum_n[\alpha_{\omega n}a_n-\beta_{\omega n}a_n^\dagger]$.
-Completeness of the null-derived modes (5.24) and the half-line basis (8.7) then gives, distributionally,
+These integrals include both field and normal/characteristic information. They are defined by first inserting an endpoint cutoff $\rho\geq\epsilon$, pairing with $w(\omega)\in C_c^\infty(0,\infty)$, and then taking $\epsilon\downarrow0$ in the wave-packet topology. With this convention $b_R(\omega)=\sum_n[\alpha_{\omega n}a_n-\beta_{\omega n}a_n^\dagger]$. Completeness of the null-derived modes (5.24) and the half-line basis (8.7) then gives, distributionally,
 
 $$\begin{align}
 \sum_n(\alpha_{\omega n}\bar\alpha_{\omega'n} -\beta_{\omega n}\bar\beta_{\omega'n})=\delta(\omega-\omega'),
@@ -937,8 +935,7 @@ $$\begin{align}
 \boxed{\beta_{\rm boost}=2\pi.} \tag{8.19}
 \end{align}$$
 
-The two routes give the same $e^{-\pi\omega}$ and $\beta=2\pi$. The theorem is algebraic and smeared. Equations (8.13)--(8.17) are its phase-audited wave-packet spectral realization, not a sharp factorization theorem
-$\mathcal H_G\cong\mathcal H_L\otimes\mathcal H_R$.
+The two routes give the same $e^{-\pi\omega}$ and $\beta=2\pi$. The theorem is algebraic and smeared. Equations (8.13)--(8.17) are its phase-audited wave-packet spectral realization, not a sharp factorization theorem $\mathcal H_G\cong\mathcal H_L\otimes\mathcal H_R$.
 
 ## 10. Task K: Reproducible Checks
 

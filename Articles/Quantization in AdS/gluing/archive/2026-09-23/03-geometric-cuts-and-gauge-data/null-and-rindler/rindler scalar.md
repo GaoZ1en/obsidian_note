@@ -241,9 +241,7 @@ $$\begin{align}
 \boxed{ \{\Phi_N(F),\Phi_N(G)\}_{\mathrm P} =P_N(F,G) :=-\frac14\int_{\mathbb R^2}F(v)\operatorname{sgn}(v-s)G(s)\,dv\,ds .} \tag{2.15}
 \end{align}$$
 
-**Proof.** Compact support removes the endpoint term. Integration by parts gives
-$\Omega_N(E_NF,h)=-2\int(E_NF)'h=\int Fh$. Equation (2.15) is $\Omega_N(E_NF,E_NG)=\int F(E_NG)$. Nondegeneracy follows because
-$\Omega_N(f,h)=0$ for every $h\in C_c^\infty$ implies $f'=0$ distributionally, and the only compactly supported constant is zero. $\square$
+**Proof.** Compact support removes the endpoint term. Integration by parts gives $\Omega_N(E_NF,h)=-2\int(E_NF)'h=\int Fh$. Equation (2.15) is $\Omega_N(E_NF,E_NG)=\int F(E_NG)$. Nondegeneracy follows because $\Omega_N(f,h)=0$ for every $h\in C_c^\infty$ implies $f'=0$ distributionally, and the only compactly supported constant is zero. $\square$
 
 **Theorem 2.3 (characteristic/null CCR on the reduced test algebra).** Quantization of the real linear observables (2.14) is defined by
 
@@ -1073,9 +1071,7 @@ In particular, $c_A$ is not an independent canonical oscillator. A variation of 
 
 #### Level III: the Matched left/right Gluing Domain
 
-For $z_A=(q_A,p_A)$ let
-$\widehat z_A:=\iota_Az_A:=(c_A,\bar q_A,p_A;[\operatorname{Rad}_A^-z_A])$
-be its presentation in (6.14). Define the incoming gluing domain bottom-up by
+For $z_A=(q_A,p_A)$ let $\widehat z_A:=\iota_Az_A:=(c_A,\bar q_A,p_A;[\operatorname{Rad}_A^-z_A])$ be its presentation in (6.14). Define the incoming gluing domain bottom-up by
 
 $$\begin{align}
 \mathcal D_{\rm glue}^-:= \operatorname{im}\left[ \mathcal C_{\rm bif}^{\rm boost} \xrightarrow{\ (\iota_L,\iota_R)\ } \widehat{\mathcal Z}_L\times\widehat{\mathcal Z}_R \right]. \tag{6.16}
@@ -1136,8 +1132,7 @@ $$\begin{align}
 
 On $S_{\mathbb M}^{\rm rad}:=\mathsf A_{\rm bif}(\mathcal C_{\rm bif}^{\rm boost})$, the radiation presentation $(\iota_L,\iota_R)$ identifies the target with $\mathcal D_{\rm glue}^-$ and gives the corresponding restricted isomorphism.
 
-**Proof.** Symplecticity gives
-$\sigma_{\rm glue}(\operatorname{Res}_{\rm glue}f,
+**Proof.** Symplecticity gives $\sigma_{\rm glue}(\operatorname{Res}_{\rm glue}f,
 \operatorname{Res}_{\rm glue}g)=\sigma_{\mathbb M}(f,g)$, so the proposed images obey exactly the same Weyl relations. The universal property therefore gives a unital $*$-homomorphism $\alpha_{\rm glue}$. Applying the same construction to $\operatorname{Res}_{\rm glue}^{-1}$ gives a homomorphism in the opposite direction. Their compositions fix every Weyl generator and hence are the identity. The restricted statement follows from Proposition 6.4. $\square$
 
 No embedding into a tensor product of regional Fulling algebras is used in this proof. Such an embedding would require separately declared nondegenerate regional symplectic spaces and an injective symplectic inclusion into their product. The Level-II corner-extended radiation presentation is only weak symplectic while the full Cauchy profile is retained, and can become relational or presymplectic if that profile is forgotten; the note therefore does not assign it an ordinary Weyl factor and then impose operator constraints. The actual algebraic B1 object is the matched nondegenerate domain above.
@@ -1218,10 +1213,7 @@ $$\begin{align}
 
 It is a Cauchy matrix with second-node set $\{e_1^2,\ldots,e_N^2,0\}$ and is invertible. The common corner therefore has a conjugate inside the retained profile data; no external corner oscillator has been added.
 
-Let
-$U_{L,a}=G_{U,V}(0,e_a)$ for $a\leq2N$,
-$U_{R,a}=G_{U,V}(e_a,0)$ for $a\leq2N+1$, and
-$U_c=G_{U,V}(k,k)$, with $G_{U,V}$ given by the exact massive kernel (3.3). Collect these $4N+2$ solutions into the row vector $\mathbf U_N(X)$. For $z\in\mathbb R^{4N+2}$,
+Let $U_{L,a}=G_{U,V}(0,e_a)$ for $a\leq2N$, $U_{R,a}=G_{U,V}(e_a,0)$ for $a\leq2N+1$, and $U_c=G_{U,V}(k,k)$, with $G_{U,V}$ given by the exact massive kernel (3.3). Collect these $4N+2$ solutions into the row vector $\mathbf U_N(X)$. For $z\in\mathbb R^{4N+2}$,
 
 $$\begin{align}
 \phi_N(X)=\mathbf U_N(X)z. \tag{7.6}
@@ -1265,13 +1257,9 @@ $$\begin{align}
 
 is exactly the Pauli--Jordan kernel of this $(4N+2)$-dimensional characteristic Galerkin theory.
 
-**Proof.** Equation (7.8) implies
-$-\mathbb J_{\Sigma,N}^{-1}=\mathsf S_N[-(\mathbb J_{\partial,N}^{\rm full})^{-1}]\mathsf S_N^T$. Substitution into (7.9) gives (7.10)--(7.12). No continuum or Fock-space statement enters. $\square$
+**Proof.** Equation (7.8) implies $-\mathbb J_{\Sigma,N}^{-1}=\mathsf S_N[-(\mathbb J_{\partial,N}^{\rm full})^{-1}]\mathsf S_N^T$. Substitution into (7.9) gives (7.10)--(7.12). No continuum or Fock-space statement enters. $\square$
 
-**Check 7.2 (finite inverse and smeared convergence).** Mathematica verified (7.2)--(7.3) symbolically. It also found
-$\operatorname{rank}\mathbb J_{\partial,N}^{\rm full}=4N+2$ for
-$N=1,\ldots,6$ (matrix dimensions $6,10,14,18,22,26$); for $N=1$,
-$\det\mathbb J_{\partial,1}^{\rm full}=2^{26}/(18225\pi^2)$. On one unit ray take the zero-mean smearings
+**Check 7.2 (finite inverse and smeared convergence).** Mathematica verified (7.2)--(7.3) symbolically. It also found $\operatorname{rank}\mathbb J_{\partial,N}^{\rm full}=4N+2$ for $N=1,\ldots,6$ (matrix dimensions $6,10,14,18,22,26$); for $N=1$, $\det\mathbb J_{\partial,1}^{\rm full}=2^{26}/(18225\pi^2)$. On one unit ray take the zero-mean smearings
 
 $$
 \begin{aligned}
