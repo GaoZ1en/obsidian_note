@@ -1,15 +1,15 @@
 CFT...
 
-why consider $\mathrm{AdS}$?
+Why consider $\mathrm{AdS}$?
 - infrared regulator
 - boundary symmetry is conformal group (unlike a box)
 - ...
 
-ds? more realistic.
+Ds? More realistic.
 
-embedding formalism...
+Embedding formalism...
 
-scaling dimension of the boundary operator dual to a bulk field of mass $m$ is given by
+Scaling dimension of the boundary operator dual to a bulk field of mass $m$ is given by
 
 $$\begin{align}
 m^{2} & =\Delta(\Delta-d)-J
@@ -60,7 +60,7 @@ $$\begin{align}
 
 ---
 
-consider a $\displaystyle{\mathcal{O}(N)}$ model at large $\displaystyle{N}$
+Consider a $\displaystyle{\mathcal{O}(N)}$ model at large $\displaystyle{N}$
 
 $$\begin{align}
 \mathcal{L} & =\frac{1}{2}\partial _{\mu}\phi ^{a}\partial ^{\mu}\phi ^{a}+\frac{m^{2}}{2}\phi ^{a}\phi ^{a}+\frac{\lambda}{2N}(\phi ^{a}\phi ^{a})^{2}
@@ -80,8 +80,8 @@ g_{12|34} & =\dots
 
 in-in formalism in dS?
 
-rotate $\mathrm{AdS}$ to $\mathrm{dS}$...
+Rotate $\mathrm{AdS}$ to $\mathrm{dS}$...
 
-ds correlators...
+Ds correlators...
 
-I don't quite understand the content of this talk. but I know his main point is that we can use annalytic continuation to get dS correlators from AdS correlators, and the latter can be computed using Witten diagrams.
+I don't quite understand the content of this talk. But I know his main point is that we can use annalytic continuation to get dS correlators from AdS correlators, and the latter can be computed using Witten diagrams.

@@ -1,4 +1,4 @@
-for a general spacetime, we can find a set of complex tetrad $\displaystyle{(l,n,m,\bar{m})}$ that satifies
+For a general spacetime, we can find a set of complex tetrad $\displaystyle{(l,n,m,\bar{m})}$ that satifies
 
 $$\begin{align}
 l\cdot n & =-1 \\
@@ -16,7 +16,7 @@ D' & -\tau & -(\gamma+\bar{\gamma}) & \gamma-\bar{\gamma} & \nu \\
 \end{matrix}
 \end{align}$$
 
-we call these 12 complex connection coefficients as Newman-Penrose coefficients. their geometrical meaning... they satisfies the Newman-Penrose equations (Cartan structure equation)
+we call these 12 complex connection coefficients as Newman-Penrose coefficients. Their geometrical meaning... They satisfies the Newman-Penrose equations (Cartan structure equation)
 
 $$\begin{align}
 \dots
@@ -34,7 +34,7 @@ $$\begin{align}
 \dots
 \end{align}$$
 
-in total we have 33 equations. by introducing suitable gauge choice ...
+in total we have 33 equations. By introducing suitable gauge choice ...
 
 ---
 
@@ -46,17 +46,17 @@ Petrov characterization of Weyl curvature.
 - N:
 - O:
 
-Petrov type I is called algebraically trivial(?), and other types are called algebraically special(?). a
+Petrov type I is called algebraically trivial(?), And other types are called algebraically special(?). A
 
-theorem. (how to determine the Petrov type)
+Theorem. (How to determine the Petrov type)
 
 ---
 
-asymptotic flatness
+Asymptotic flatness
 
-definition...
+Definition...
 
-we will focus on the properties of null infinities. consider the Minkowski spacetime with metric
+We will focus on the properties of null infinities. Consider the Minkowski spacetime with metric
 
 $$\begin{align}
 \mathrm{d}s^{2} & =-\mathrm{d}t^{2}+\mathrm{d}r^{2}+r^{2}\mathrm{d}\Omega _{2}^{2} \\
@@ -72,13 +72,13 @@ $$\begin{align}
 \implies & =\dots
 \end{align}$$
 
-in general the conformal factor $\displaystyle{\Omega \sim r^{-1}}$, and $\displaystyle{R}$ is the affine parameter of outgoing null geodesics. questions we want to answer are
+in general the conformal factor $\displaystyle{\Omega \sim r^{-1}}$, and $\displaystyle{R}$ is the affine parameter of outgoing null geodesics. Questions we want to answer are
 - are there any asymptotic flat spacetimes
 - dofs in the asymptotic region
 - asymptotic symmetries and the connection with Poincare algebra
 - asymptotic symmetries and Noether theorem
 
-methods
+Methods
 - solve the conformal Einstein equation
 - Eddington like coordinate, in this lecture we will adopt this approach
 
@@ -88,7 +88,7 @@ $$\begin{align}
 
 ---
 
-Newman-Unti gauge. coordinate $\displaystyle{(\tilde{u},\tilde{r},\tilde{\theta},\tilde{\phi})}$ and null frame $\displaystyle{(\tilde{l},\tilde{n},\tilde{e}_{A})}$ satisfy
+Newman-Unti gauge. Coordinate $\displaystyle{(\tilde{u},\tilde{r},\tilde{\theta},\tilde{\phi})}$ and null frame $\displaystyle{(\tilde{l},\tilde{n},\tilde{e}_{A})}$ satisfy
 
 $$\begin{align}
 \tilde{g}(\tilde{l},\tilde{n}) & =-1, & \tilde{g}(\tilde{l},\tilde{l}) & =\tilde{g}(\tilde{n},\tilde{n})=0, & \tilde{g}(\tilde{l},\tilde{e}_{A}) & =\tilde{g}(\tilde{n},\tilde{e}_{A})=0, & \tilde{g}(\tilde{e}_{A},\tilde{e}_{B})=\delta _{AB}
@@ -129,7 +129,7 @@ $$\begin{align}
 \kappa=\epsilon=\pi & =0,  & \mathrm{Im}(\rho) & =0,  & \tau=\bar{\alpha}+\beta
 \end{align}$$
 
-the ...(torsion free?) condition are simplified to
+the ...(Torsion free?) Condition are simplified to
 
 $$\begin{align}
 DU & =\tau \bar{\omega}+\bar{\tau}\omega-\gamma-\bar{\gamma} \\
@@ -166,7 +166,7 @@ $$\begin{align}
 
 ---
 
-assume all the NP quantities are analytic around $\displaystyle{r=\infty}$, which means, they can be expanded as series of $\displaystyle{r^{-1}}$. we solve out
+Assume all the NP quantities are analytic around $\displaystyle{r=\infty}$, which means, they can be expanded as series of $\displaystyle{r^{-1}}$. We solve out
 
 $$\begin{align}
 U & =-\frac{1}{2}+\mathcal{O}(r^{-1}), &  X & \to 0, & \omega & \to 0,  & \xi ^{1} & \to \mathcal{O}(r^{-2}), & \xi ^{2} & =\frac{1+|z|^{2}}{\sqrt{ 2 }r}+\mathcal{O}(r^{-2}) \\
@@ -174,14 +174,14 @@ U & =-\frac{1}{2}+\mathcal{O}(r^{-1}), &  X & \to 0, & \omega & \to 0,  & \xi ^{
 z & =\cot \frac{\theta}{2}e^{i\varphi}, & \alpha_{0} & =-\frac{\cot \theta}{2\sqrt{ 2 }}
 \end{align}$$
 
-we will start from these asymptotic behaviors to determine the exact asymptotic behavior of NP quantities. start from $\displaystyle{\sigma}$,
+we will start from these asymptotic behaviors to determine the exact asymptotic behavior of NP quantities. Start from $\displaystyle{\sigma}$,
 
 $$\begin{align}
 \partial _{r}\rho & =\rho ^{2}+|\sigma|^{2} \\
 \partial _{r}\sigma & =2\rho \sigma+\Psi_{0}
 \end{align}$$
 
-(actually this is the Raychaudhuri equation for the $\displaystyle{l}$ direction). the solution is
+(actually this is the Raychaudhuri equation for the $\displaystyle{l}$ direction). The solution is
 
 $$\begin{align}
 \rho & =-\frac{1}{r}-\frac{|\sigma ^{0}|^{2}}{r^{3}}+\mathcal{O}(r^{-5}) \\
@@ -230,11 +230,11 @@ $$\begin{align}
 
 Bianchi identities give more precise restrictions...
 
-finally, all the tetrad components, connection coefficients, Weyl curvature can be determined by $\displaystyle{\sigma ^{0}(u,\theta,\varphi), \mathrm{Re}(\Psi^{0}_{2}(0,\theta,\varphi)), \Psi^{0}_{1}(0,\theta,\varphi),\Psi^{k}_{0}(0,\theta,\varphi)}$. this is called the Newman-Unti gauge.
+Finally, all the tetrad components, connection coefficients, Weyl curvature can be determined by $\displaystyle{\sigma ^{0}(u,\theta,\varphi), \mathrm{Re}(\Psi^{0}_{2}(0,\theta,\varphi)), \Psi^{0}_{1}(0,\theta,\varphi),\Psi^{k}_{0}(0,\theta,\varphi)}$. This is called the Newman-Unti gauge.
 
 ---
 
-asymptotic Killing vector
+Asymptotic Killing vector
 
 $$\begin{align}
 g_{00} & =1-\frac{2U_{1}}{r}+\dots \\
@@ -253,7 +253,7 @@ $$\begin{align}
 \xi ^{\varphi} & =\xi_{0}^{\varphi}+\dots
 \end{align}$$
 
-here $\displaystyle{\xi_{i}^{\mu}=\xi _{i,0}^{\mu}(u,\theta,\varphi)+\xi _{i,0}^{\mu}(u,\theta,\varphi)\ln r}$. diffeomorphism generated by the asymptotic Killing vector keeps the form of metric invariant, we have
+here $\displaystyle{\xi_{i}^{\mu}=\xi _{i,0}^{\mu}(u,\theta,\varphi)+\xi _{i,0}^{\mu}(u,\theta,\varphi)\ln r}$. Diffeomorphism generated by the asymptotic Killing vector keeps the form of metric invariant, we have
 
 $$\begin{align}
 \xi ^{u} & =f(\theta,\phi)+\frac{1}{2}D_{A}Y^{A}u+\dots \\
@@ -274,7 +274,7 @@ $$\begin{align}
 \mathcal{BMS} & =L^{2}(S^{0})\otimes _{S}\mathcal{L}_{p}
 \end{align}$$
 
-where $\displaystyle{\mathcal{L}_{p}}$ is the conformal algebra on $\displaystyle{S^{0}}$ which is isomorphic to the Lorentz algebra. the commutation ideal of $\displaystyle{\mathcal{BMS}}$, generated by $\displaystyle{f(\theta,\phi)}$, is called the super-translation subalgebra. expand
+where $\displaystyle{\mathcal{L}_{p}}$ is the conformal algebra on $\displaystyle{S^{0}}$ which is isomorphic to the Lorentz algebra. The commutation ideal of $\displaystyle{\mathcal{BMS}}$, generated by $\displaystyle{f(\theta,\phi)}$, is called the super-translation subalgebra. Expand
 
 $$\begin{align}
 f(\theta,\phi) & =\sum _{l,m}a_{lm}Y_{lm}
@@ -282,7 +282,7 @@ f(\theta,\phi) & =\sum _{l,m}a_{lm}Y_{lm}
 
 the 4d subalgebra $\displaystyle{\mathrm{span}\left\{Y_{00},Y_{1m}\right\}}$ is invariant under the Lorentz action, and is called the translation subalgebra.
 
-in principle we can use Wald formalism
+In principle we can use Wald formalism
 
 $$\begin{align}
 M_{\mathrm{B}} & =-\frac{1}{8\pi}\int _{S_{\infty}}\left(\Psi_{2}^{0}+\sigma ^{0}\dot{\bar{\sigma}}^{0}+\text{c.c.}\right) \\
@@ -290,11 +290,11 @@ M_{\mathrm{B}} & =-\frac{1}{8\pi}\int _{S_{\infty}}\left(\Psi_{2}^{0}+\sigma ^{0
 J(Y) & =\frac{1}{18\pi}\int _{S_{\infty}}\left(\Psi^{0}_{1}Y^{\bar{m}}+\bar{\Psi}^{0}_{1}Y^{m}\right)
 \end{align}$$
 
-the definition of the angular momentum $\displaystyle{J(Y)}$ is not unique due to .... see Yau's new definition 2102.03235.
+the definition of the angular momentum $\displaystyle{J(Y)}$ is not unique due to .... See Yau's new definition 2102.03235.
 
-*memory effect*.
+*Memory effect*.
 
-for mass. from the Bianchi identity
+For mass. From the Bianchi identity
 
 $$\begin{align}
 \frac{\mathrm{d}}{\mathrm{d}u}(\Psi_{2}^{0}+\sigma ^{0}\dot{\bar{\sigma}}^{0}) & =\dots \\
@@ -304,7 +304,7 @@ $$\begin{align}
 
 for angular momentum. ...
 
-*outlook*.
+*Outlook*.
 - non-analyticity
 - give out the Peeling properties.
 - ...
