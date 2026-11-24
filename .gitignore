@@ -77,6 +77,10 @@ tools/wechat-decrypt/
 # Keep gravitational sewing and relational-time research local
 /Drafts/Gravitational sewing and relational time/
 
+# Keep new test project artifacts and local working files out of Git
+/Drafts/test_1/
+/Drafts/test_2/
+
 # Keep OFPT calculation scripts and generated results local
 /Articles/Quantization in AdS/perturbation/Einstein scalar spectrum/scripts/
 
