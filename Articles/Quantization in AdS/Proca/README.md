@@ -11,6 +11,8 @@ Detailed calculations on Proca field quantization in AdS3, organized by topic.
 | `quantization of gauge systems.md` | First/second class constraints, constraint surface geometry |
 | `off-shell canonical quantization.md` | Off-shell quantization formalism |
 | `modes/finite system.md` | Finite-radius Proca wall conditions, helicity spectrum equation, and off-shell mode-expansion criterion |
+| [Independent constrained mode expansion](<modes/independent constrained mode expansion.md>) | Separate temporal/spatial truncations, second-class constraints, explicit AdS matrices, and a quartic interacting example |
+| [Scalar expansion with another mass](<Articles/Quantization in AdS/scalar/expand scalar in another mass.md>) | Different-dimension action matrices, form-domain convergence, and standard/alternative numerical spectra |
 | `modes/Killing base.md` | Killing-vector coefficient basis for first-order Proca branches and descendant mode solutions |
 | `symplectic form.md` | Symplectic structure derivation |
 | `symplectic structure on the reduced phase space.md` | Reduced phase space symplectic form |

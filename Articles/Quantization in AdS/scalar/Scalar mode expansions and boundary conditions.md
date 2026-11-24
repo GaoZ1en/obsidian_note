@@ -200,90 +200,116 @@ As a check of the angular shift, the same non-eigen seed at $N=16$ gives
 
 Thus the fixed low eigenvalues converge to the alternative-quantization spectrum even when the slow representative is not an eigenfunction.
 
-
 ## Alternative to Standard Quantization by a Boundary Legendre Transform
 
-Keep the Lorentzian action $S_R$ above, the outward normal, and $0<\Delta<1$. Set $\nu=1-\Delta$. The boundary measure is $\sqrt{-\gamma}$, and the metric is held fixed in the variation. At the regulator surface define
+We introduce
 
 $$\begin{align}
-\Pi_R&=(n^\mu\nabla_\mu+\Delta)\phi, &
-\delta S_R\big|_{\Gamma_R}&=-\int_{\Gamma_R}\mathrm d^2x\sqrt{-\gamma}\,\Pi_R\delta\phi.
+S_{\mathrm{Le},R} & =\int _{\Gamma _{R}}\mathrm{d}^{2}x\sqrt{ -\gamma }(n^{\mu}\nabla _{\mu}\phi+\Delta \phi)\phi
 \end{align}$$
 
-The Legendre term that exchanges these boundary variables has a **positive** sign in these conventions:
+we have
 
 $$\begin{align}
-S_{\mathrm L,R}^{(+)}&=+\int_{\Gamma_R}\mathrm d^2x\sqrt{-\gamma}\,\phi\Pi_R,\\
-\delta(S_R+S_{\mathrm L,R}^{(+)})\big|_{\Gamma_R}
-&=\int_{\Gamma_R}\mathrm d^2x\sqrt{-\gamma}\,\phi\delta\Pi_R.
+\delta(S_{R}+S_{\mathrm{Le},R})|_{\Gamma} & =\int _{\Gamma _{R}}\mathrm{d}^{2}x\sqrt{ -\gamma }\phi \delta(n^{\mu}\nabla _{\mu}\phi+\Delta \phi)
 \end{align}$$
 
-Indeed, for differentiated asymptotics $\phi=\alpha r^{-\Delta}+\beta r^{\Delta-2}+\cdots$,
+which gives the Dirichlet boundary condition. Expand
 
 $$\begin{align}
-S_{\mathrm L}^{(+)}&=-2\nu\int\mathrm dt\mathrm d\phi\,\alpha\beta,\\
-\delta S\big|_\Gamma&=2\nu\int\mathrm dt\mathrm d\phi\,\beta\delta\alpha,\\
-\delta(S+S_{\mathrm L}^{(+)})\big|_\Gamma
-&=-2\nu\int\mathrm dt\mathrm d\phi\,\alpha\delta\beta.
+\phi & =\sum ^{\infty}_{m=-\infty} \dfrac{e^{im\phi}}{\sqrt{ 2\pi }}\left(\sum ^{\infty}_{n=0}q_{nm}(t)\chi _{nm}(r)+q_{f,m}(t)\psi _{m}(r)\right)
 \end{align}$$
 
-Allowing $\delta\beta$ to vary freely therefore selects the standard zero-source condition $\alpha=0$, with frequencies $2-\Delta+|m|+2p$. Merely keeping $\beta=0$ fixed on every trial history does not perform this reversal: then $\delta\beta=0$, and the transformed variation cannot select $\alpha=0$.
-
-With the proposed negative sign instead, the boundary variation is
+here $\displaystyle{\psi _{m}}$ is regular at the center, has finite energy, and satisfies
 
 $$\begin{align}
-\delta(S_R-S_{\mathrm L,R}^{(+)})\big|_{\Gamma_R}
-&=-\int_{\Gamma_R}\sqrt{-\gamma}\,(2\Pi_R\delta\phi+\phi\delta\Pi_R),\\
-\delta(S-S_{\mathrm L}^{(+)})\big|_\Gamma
-&=2\nu\int\mathrm dt\mathrm d\phi\,(2\beta\delta\alpha+\alpha\delta\beta).
+\lim_{ r \to \infty } r^{\Delta}\psi _{m}(r) & =\mathrm{Const}.
 \end{align}$$
 
-Thus the negative sign does not exchange the polarization; independent boundary variations would impose both coefficients to vanish.
-
-### Direct Reverse Mode Expansion
-
-Fix a real angular harmonic of unit norm and put $\ell=|m|$. Normalize the alternative radial modes by the kinetic pairing:
+Again different $\displaystyle{m}$ modes decouple. For $\displaystyle{u_{m,i}\in\left\{\psi _{m},\chi _{0m},\dots\right\}}$, use the $\displaystyle{G_{m}}$ and $\displaystyle{K_{m}}$ defined above. Substituting into $\displaystyle{S_{R}+S_{\mathrm{Le},R}}$ and integrate over $\displaystyle{\phi}$ and $\displaystyle{r}$
 
 $$\begin{align}
-z&=(1+r^2)^{-1},&
-s_\ell&=r^\ell(1+r^2)^{-(\Delta+\ell)/2},\\
-e_n&=\frac{s_\ell P_n^{(\Delta-1,\ell)}(1-2z)}{\sqrt{g_n^-}},&
-g_n^-&=\frac{(n+1)_\ell}{2(2n+\Delta+\ell)(n+\Delta)_\ell},\\
-\lambda_n^-&=(\Delta+\ell+2n)^2,&
-a_n:=\alpha[e_n]&=\frac{(\Delta)_n}{n!\sqrt{g_n^-}},&\beta[e_n]&=0.
+S^{\mathrm{Le}} & =\int _{t_{i}}^{t_{f}}\mathrm{d}t \sum ^{\infty}_{m=-\infty}\left(\dfrac{1}{2}\dot{Q}_{m}^{\dagger}G_{m}\dot{Q}_{m}-\dfrac{1}{2}Q_{m}^{\dagger}K^{\mathrm{Le}}_{m}Q_{m}\right) \\
+Q_{m} & =(q_{f,m},q_{0m},\dots)^{T} \\
+G_{m,ij} & =\int _{0}^{\infty}\mathrm{d}rw(r)u_{m,i}(r)u_{m,j}(r) \\
+K^{\mathrm{Le}}_{m,ij} & =K_{m,ij}-\lim_{ R \to \infty } R\sqrt{ 1+R^{2} }(u_{m,i}(R)(\sqrt{ 1+R^{2} }u'_{m,j}(R)+\Delta u_{m,j}(R)) \\
+ & +u_{m,j}(R)(\sqrt{ 1+R^{2} }u'_{m,i}(R)+\Delta u_{m,i}(R)))
 \end{align}$$
 
-On a finite span of only the $e_n$, the Legendre term vanishes identically. To admit a varying response, add a fast representative. Use a non-eigen seed:
+For simplicity, first take
 
 $$\begin{align}
-h_\ell&=s_\ell z^\nu(1+\eta z),&\eta&=\tfrac12,&
-\alpha[h_\ell]&=0,&\beta[h_\ell]&=1,\\
-\Phi_N&=q_h(t)h_\ell+\sum_{n=0}^{N-1}q_n(t)e_n.
+\psi _{m}(r) & =\psi _{0m}(r) \\
+\lambda _{f,m} & =(2-\Delta+|m|)^{2}, & \lambda _{nm} & =(\Delta+|m|+2n)^{2} \\
+a_{nm} & :=\lim_{ r \to \infty } r^{\Delta}\chi _{nm}(r)=\dfrac{(\Delta)_{n}}{n!}
 \end{align}$$
 
-For real profiles with defined boundary coefficients, the transformed stiffness is
+direct evaluation gives
 
 $$\begin{align}
-K_{\mathrm L}[u,v]&=K[u,v]+2\nu\bigl(\alpha[u]\beta[v]+\beta[u]\alpha[v]\bigr),\\
-S_N^{\mathrm L}&=\frac12\int\mathrm dt\left(\dot Q^TG\dot Q-Q^TK_{\mathrm L}Q\right).
+G_{m,ff} & =\dfrac{1}{2}\mathrm{B}(2-\Delta,|m|+1) \\
+G_{m,fn} & =\dfrac{(\Delta-1)_{n}}{2n!}\mathrm{B}(1,|m|+n+1) \\
+G_{m,nk} & =\delta _{nk}g_{nm}, & g_{nm} & =\dfrac{(n+1)_{|m|}}{2(\Delta+2n+|m|)(\Delta+n)_{|m|}} \\
+K^{\mathrm{Le}}_{m,ff} & =\lambda _{f,m}G_{m,ff} \\
+K^{\mathrm{Le}}_{m,fn} & =\lambda _{f,m}G_{m,fn} \\
+K^{\mathrm{Le}}_{m,nk} & =\lambda _{nm}G_{m,nk}
 \end{align}$$
 
-The kinetic matrix is unchanged. Let $b_n=G[h_\ell,e_n]$, $g=G[h_\ell,h_\ell]$, and $k=K[h_\ell,h_\ell]$. Direct substitution gives
+Consider the generalized eigenvalue problem and its secular equation:
 
 $$\begin{align}
-G&=\begin{pmatrix}g&b^T\\b&I\end{pmatrix},&
-K_{\mathrm L}&=\begin{pmatrix}
-k&(\lambda^- b+2\nu a)^T\\
-\lambda^- b+2\nu a&\operatorname{diag}(\lambda_n^-)
-\end{pmatrix},\\
-b_n&=\frac{(\Delta-1)_n B(1,\ell+n+1)+\eta(\Delta-2)_n B(2,\ell+n+1)}{2n!\sqrt{g_n^-}},\\
-g&=\tfrac12\left[B(2-\Delta,\ell+1)+2\eta B(3-\Delta,\ell+1)+\eta^2B(4-\Delta,\ell+1)\right],\\
-k&=(2-\Delta+\ell)^2g+2\eta^2B(3-\Delta,\ell+2).
+K^{\mathrm{Le}}_{m}v_{m} & =\omega ^{2}G_{m}v_{m} \\
+\implies \det(K^{\mathrm{Le}}_{m}-\omega ^{2}G_{m}) & =0
 \end{align}$$
 
-Here $(\lambda^-b)_n=\lambda_n^-b_n$. The mixed entry before the Legendre term is $K[h_\ell,e_n]=\lambda_n^-b_n$ because $e_n$ is an alternative eigenmode. The added $2\nu a_n$ must be retained.
+Here the determinant is defined at finite $N$: retain $\displaystyle{\psi _{m},\chi _{0m},\dots,\chi _{N-1,m}}$. Write $\displaystyle{\nu=1-\Delta}$, we have
 
-The reverse construction recovers the fixed physical levels, but its entire finite spectrum is not positive. Write the ordered generalized eigenvalues as $\theta_{0,N}<\cdots<\theta_{N,N}$, where $\theta=\omega^2$. At $\Delta=3/5$, $\ell=0$:
+$$\begin{align}
+\det(K^{\mathrm{Le}}_{m,N}-\omega ^{2}G_{m,N}) & =\prod ^{N-1}_{n=0}g_{nm}(\lambda _{nm}-\omega ^{2})\times\left((\lambda _{f,m}-\omega ^{2})G_{m,ff}- ( \lambda _{f,m}-\omega ^{2} )^{2}  \sum ^{N-1}_{n=0} \dfrac{G_{m,fn}^{2}}{g_{nm}(\lambda _{nm}-\omega ^{2})}\right)
+\end{align}$$
+
+the bare producy has no limit since $\displaystyle{g_{nm}(\lambda _{nm}-\omega ^{2})\sim n}$. A definite normalization is
+
+$$\begin{align}
+F_{m,\infty} & =\lim_{ N \to \infty } F_{m,N} \\
+ & =\lim_{ N \to \infty } \dfrac{\det(K^{\mathrm{Le}}_{m,N}-\omega ^{2}G_{m,N})}{\prod ^{N-1}_{n=0}g_{nm}\lambda _{nm}} \\
+ & =-\dfrac{2\nu ^{2}\Gamma(1-\Delta)}{\Gamma(\Delta)} \dfrac{\Gamma\left( \dfrac{\Delta+|m|}{2} \right)^{2}}{\Gamma\left( \dfrac{2-\Delta+|m|-\omega}{2} \right)\Gamma\left( \dfrac{2-\Delta+|m|+\omega}{2} \right)}
+\end{align}$$
+
+its positive-frequency roots are
+
+$$\begin{align}
+\omega _{mp} & =2-\Delta+|m|+2p, & p \in \mathbb{N}
+\end{align}$$
+
+---
+
+To avoid the exact lowest standard mode being singled out, take the non-eigen fast representative
+
+$$\begin{align}
+\tilde\psi_m(r)&=\psi_m(r)\left(1+\dfrac{1}{2(1+r^2)}\right),\\
+\lim_{r\to\infty}r^\Delta\tilde\psi_m(r)&=0,&\lim_{r\to\infty}r^{2-\Delta}\tilde\psi_m(r)&=1.
+\end{align}$$
+
+Replace $\psi_m$ by $\tilde\psi_m$ in the expansion. The slow-mode diagonal blocks stay the same, and the remaining entries become
+
+$$\begin{align}
+G_{m,\tilde f n}&=\dfrac{(\Delta-1)_n\mathrm B(1,|m|+n+1) +\tfrac12(\Delta-2)_n\mathrm B(2,|m|+n+1)}{2n!},\\
+G_{m,\tilde f\tilde f}&=\dfrac12\left[\mathrm B(2-\Delta,|m|+1) +\mathrm B(3-\Delta,|m|+1)+\dfrac14\mathrm B(4-\Delta,|m|+1)\right],\\
+K_{m,\tilde f n}^{\mathrm{Le}}&=\lambda_{nm}G_{m,\tilde f n}+2\nu a_{nm},\\
+K_{m,\tilde f\tilde f}^{\mathrm{Le}}&=\lambda_{f,m}G_{m,\tilde f\tilde f} +\dfrac12\mathrm B(3-\Delta,|m|+2).
+\end{align}$$
+
+For this non-eigen representative, the finite determinant is instead
+
+$$\begin{align}
+\det\left(K_{m,N}^{\mathrm{Le}}-\omega^2G_{m,N}\right) &=\prod_{n=0}^{N-1}\left[g_{nm}(\lambda_{nm}-\omega^2)\right]\\
+&\quad\times\left[K_{m,\tilde f\tilde f}^{\mathrm{Le}}-\omega^2G_{m,\tilde f\tilde f} -\sum_{n=0}^{N-1}\dfrac{\left[(\lambda_{nm}-\omega^2)G_{m,\tilde f n}+2\nu a_{nm}\right]^2} {g_{nm}(\lambda_{nm}-\omega^2)}\right].
+\end{align}$$
+
+There is no longer an exact factor $\lambda_{f,m}-\omega^2$. With the same finite-product normalization its limit is the same Gamma-function expression above; the vanishing kinetic and form tails of the fixed representative give the same bracket limit $-4\nu^2T_m$.
+
+For $\Delta=3/5$ and $m=0$, diagonalizing this $(N+1)\times(N+1)$ pair gives the following results. Here $N$ counts alternative modes, and $\theta_{0,N}<\cdots<\theta_{N,N}$ denote the ordered squared frequencies in this angular sector.
 
 | $N$ | Extra eigenvalue $\theta_{0,N}$ | First four positive frequencies |
 |---:|---:|---|
@@ -294,98 +320,10 @@ The reverse construction recovers the fixed physical levels, but its entire fini
 | 128 | $-263417.382807$ | $1.4000000000,\ 3.4000000001,\ 5.4000000007,\ 7.4000000033$ |
 | field target | — | $1.4,\ 3.4,\ 5.4,\ 7.4$ |
 
-The proof in [Slow Representatives and Galerkin Convergence](<Slow representatives and Galerkin convergence.md>) establishes, for this construction and the broader class of fixed fast seeds specified there,
+For each fixed angular sector,
 
 $$\begin{align}
-\theta_{0,N}&\downarrow-\infty,&
-\theta_{p+1,N}&\downarrow(2-\Delta+\ell+2p)^2\quad\text{for each fixed }p.
+\theta_{0,N}&\downarrow-\infty,& \theta_{p+1,N}&\downarrow(2-\Delta+|m|+2p)^2\qquad\text{for each fixed }p.
 \end{align}$$
 
-Thus the extra mode is not a standard-quantization state. It is a negative potential direction of the finite action, with positive kinetic norm; the finite system has an exponentially growing solution. Removing it from a spectral comparison does not turn the unmodified finite action into a stable dynamical approximation. Unlike the forward construction, this is not a sequence of positive closed-form Ritz restrictions. The reason is that $\beta$ is not continuous in the original form norm.
-
-### A Positive Reverse Construction
-
-To obtain a positive finite system, impose the continuous slow-trace constraint on alternative modes. Take $e_0,\ldots,e_N$ and introduce an independent boundary multiplier $b(t)$:
-
-$$\begin{align}
-L_N^{\mathrm{mix}}&=\frac12\sum_{n=0}^N(\dot q_n^2-\lambda_n^-q_n^2)
- -2\nu b\sum_{n=0}^Na_nq_n,\\
-\sum_{n=0}^Na_nq_n&=0,\\
-(\lambda_n^--\omega^2)q_n+2\nu a_nb&=0.
-\end{align}$$
-
-This is a mixed boundary formulation: $b$ is independent off shell and becomes the response $\beta$ in the continuum weak equation. It is not the finite substitution $b=\beta[\Phi_N]$, which would be zero on this slow-mode span.
-
-Eliminate one coefficient by using $v_j=e_j-(a_j/a_0)e_0$, $j=1,\ldots,N$. Then
-
-$$\begin{align}
-G^{(0)}_{ij}&=\delta_{ij}+\frac{a_ia_j}{a_0^2},&
-K^{(0)}_{ij}&=\lambda_i^-\delta_{ij}+\lambda_0^-\frac{a_ia_j}{a_0^2},\\
-\sum_{n=0}^N\frac{a_n^2}{\lambda_n^--\omega^2}&=0.
-\end{align}$$
-
-There are $N$ positive frequencies. At $\Delta=3/5$, $\ell=0$:
-
-| $N$ | Lowest four frequencies of the positive constrained system |
-|---:|---|
-| 8 | $1.46762160,\ 3.53642201,\ 5.60266502,\ 7.66966956$ |
-| 32 | $1.42261283,\ 3.44473080,\ 5.46497823,\ 7.48417074$ |
-| 128 | $1.40745683,\ 3.41466072,\ 5.42117309,\ 7.42727117$ |
-| field target | $1.4,\ 3.4,\ 5.4,\ 7.4$ |
-
-These spaces are form-dense in $\alpha=0$, and their fixed eigenvalues decrease to the standard tower without an extra negative mode. Their convergence is slower in this example. Although every finite trial profile still has $\beta=0$, its form limit can have $\beta\ne0$; continuity is required of $\alpha$, not of $\beta$.
-
-**Verified:** The boundary variation and sign were checked with xAct/xTras; Mathematica checked the boundary limit, seed integrals, mixed entries, finite Schur determinant and derivative, numerical spectra through $N=128$, and an 80/100-digit comparison at $N=64$. Reproduce with [scalar_reverse_legendre.wl](scalar_reverse_legendre.wl); it writes `scalar_reverse_legendre_results.json`.
-
-**Assumptions:** Fixed metric and outward normal, $0<\Delta<1$, unit AdS radius, regular centre, the stated counterterm, differentiated asymptotics, and a freely variable response for the transformed variational problem. The proofs and the finite numerical checks are distinguished in the companion note.
-
-**Not verified:** Uniform endpoint/rate estimates or stable time evolution of the raw Legendre-truncated system; its negative squared frequency is an actual obstruction to such a stability claim.
-
-
-### Boundary Response and the Asymmetry of the Two Directions
-
-The extra negative mode carries a nonzero boundary response $\beta$ coupled to an opposite-sign slow trace $\alpha$. It has positive kinetic norm and negative potential energy, so it is not a negative-norm ghost. It is also not an additional physical boundary oscillator of standard quantization, whose fields obey $\alpha=0$.
-
-To exhibit the response coordinate explicitly, subtract the retained alternative modes from the fast seed:
-
-$$\begin{align}
-\rho_N&=h_\ell-\sum_{n=0}^{N-1}b_ne_n,&b_n&=G[h_\ell,e_n],\\
-G[\rho_N,\rho_N]&\longrightarrow0,&K[\rho_N,\rho_N]&\longrightarrow0,\\
-\alpha[\rho_N]&\longrightarrow0,&\beta[\rho_N]&=1.
-\end{align}$$
-
-The first two limits follow from alternative-mode completeness in the kinetic and form norms. Thus the residual has vanishing bulk norm and energy while retaining unit response. This is possible because $\beta$ is not a continuous functional of the form norm.
-
-Make an exact finite-dimensional change of coefficient variables:
-
-$$\begin{align}
-b(t)&=q_h(t),&x_n&=q_n+b_nb,\\
-\Phi_N&=\sum_{n=0}^{N-1}x_ne_n+b\rho_N,&\beta[\Phi_N]&=b,\\
-\alpha[\Phi_N]&=\sum_{n=0}^{N-1}a_nx_n+b\alpha[\rho_N].
-\end{align}$$
-
-The action then reads
-
-$$\begin{align}
-L_N^{\mathrm L}
-&=\frac12\sum_{n=0}^{N-1}(\dot x_n^2-\lambda_n^-x_n^2)
- +\frac{g_N^{\mathrm{tail}}}{2}\dot b^2-\frac{d_N}{2}b^2
- -2\nu b\sum_{n=0}^{N-1}a_nx_n,\\
-g_N^{\mathrm{tail}}&=G[\rho_N,\rho_N]>0,&
-d_N&=K[\rho_N,\rho_N]+4\nu\alpha[\rho_N],\\
-g_N^{\mathrm{tail}}&\longrightarrow0,&d_N&\longrightarrow0.
-\end{align}$$
-
-For bounded response histories with controlled time derivatives, the $b$ equation formally reduces to $\sum_n a_nx_n=0$, hence $\alpha=0$. The surviving term $-2\nu b\alpha$ gives $b$ the role of a boundary multiplier. At finite cutoff, however, $b$ retains a small positive kinetic coefficient and a finite coupling to the slow trace. This produces a negative potential direction. The negative eigenvector is a mixture of this response coordinate and slow-mode coefficients, not the response coordinate alone.
-
-The multiplier interpretation is a singular variational limit. It does not assert that the diverging negative-frequency eigenmode becomes a physical boundary state, or that the full finite-time dynamics converges. The independent multiplier in the preceding positive construction implements the constraint from the outset and has no such kinetic term.
-
-The forward construction has a different relation to the form domain. The fast-mode closure is $\ker\alpha$, and $\alpha$ is continuous in the positive form norm. A slow representative with $\alpha=1$ therefore stays a nonzero form-norm distance from every fast combination. Adding it supplies the missing trace direction, while every finite action remains a restriction of the same positive $K$.
-
-In the reverse construction, the alternative modes already form a core of the entire original form domain. The added fast seed can be approximated away in that norm, leaving the residual $\rho_N$ above. Nevertheless, the Legendre term still detects its nonzero $\beta$ through the indefinite coupling $4\nu\alpha\beta$. This difference in trace continuity, rather than a sign ambiguity remaining in the Legendre transform, explains why the forward enlargement is positive and the raw reverse enlargement is not.
-
-**Verified:** The finite change of variables, response equation and negative potential block were checked symbolically with Mathematica; their general derivation is given in the companion note's “Boundary Response Coordinate and Multiplier Limit” section.
-
-**Assumptions:** The same fixed fast representative, $0<\Delta<1$, boundary conventions and form domain as above. The multiplier limit additionally requires bounded response histories and the stated control of time derivatives.
-
-**Not verified:** Convergence of the full Hamiltonian flow or of normalized negative eigenvectors to a continuum boundary state. The response-variable interpretation does not supply either claim.
+Thus the positive tower converges to standard quantization, but the extra mode remains a negative potential direction of the finite action with positive kinetic norm. It is not a standard-quantization state, and it gives an exponentially growing solution. Removing it from a spectral comparison does not establish stable finite-time dynamics.
