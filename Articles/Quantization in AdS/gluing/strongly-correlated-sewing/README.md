@@ -17,11 +17,22 @@
    \chi\ge(1-\varepsilon)^{n/(n-1)}e^{S_n(\rho_A)},\qquad n>1.
    \]
    在额外成立的 critical \(S_2\) asymptotic 下，fixed-rank high-fidelity sewing 因而失败；有限 RCFT sector labels 不等于 finite Schmidt rank。
+6. **Ising 双区间 second replica 的严格空间极限。** even 真空、固定圆周与分离端点下，完整 JW 四项给
+   \[
+   R_{2,N}\longrightarrow\frac{1+x^{1/4}+(1-x)^{1/4}}{2(1-x)^{1/8}}.
+   \]
+   三个 even 项由 relative Fredholm determinant 与 scalar RH 求解；odd 项由有限网格 Hardy 近零模和方差界满足 \(|T_3/T_0|\le C N^{-0.171720\ldots}\)。不借用未核实的 finite-density FH theorem，也不提前删去 string。以半圆二点函数固定 endpoint counterterm 后，renormalized 四点振幅也收敛；一般 \(n>2\) 的全部 spin-structure sum 尚未证明。
+
+7. **任意固定区间数的可证部分。** Gaussian 参考振幅及 n=2 的全部 string-free parity terms 有显式 pairwise-chord 极限；完整 n=2 JW 和式中的任意非零 winding sector 满足 \(|W_{r,s}/W_{0,0}|\le C N^{-|w|/4}\)。剩余是 winding-zero、含全部四种 phase 的 sectors，而不是 odd terms 未受控制。
+8. **n=3 已确定7/16项。** 五轨道中的 a,b,c 已收敛到 genus-two CFT terms，其中 \(b/a\to\sqrt{[1+2\cos(\tfrac43\arcsin\sqrt x)]/3}\)，c 由补区对偶得到。finite Gaussian linearization、matrix RH、Hardy sewing 与 theta normalization 均明确；d 的3个 even terms 和 e 的6个 odd terms 仍未证明。纯态/Gaussian 自动消去它们的捷径有精确反例。
 
 ## 阅读
 
 - [有限 quantum sewing：定义、定理与反例](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/quantum-sewing.md>)：区域与 global 对象、Duhamel history sewing、有限组合、Ising/Potts transfer kernels、Markov 反例、replica identity。
 - [连续极限与 replica entropy](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/continuum-and-replica.md>)：positive/zero collar、Ising 热谱极限、Potts sectors、单／双区间 replicas、非均匀极限及 Schmidt-rank 障碍。
+- [Ising spatial replicas：JW strings 与连续 sewing](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>)：任意整数 n 的有限 Gaussian words；双区间 n=2 全部四项的无条件收敛；reference endpoint renormalization；一般 n 与绝对 UV 常数的剩余缺口。
+- [多区间 Fredholm 与 winding suppression](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-multi-interval-fredholm.md>)：一般 m 的 det₂ 极限、完整 finite n=2 JW/FCS 和式、uniform trace-class jump localization、全部非零 winding terms 的消失。
+- [Third replica：互补对偶与矩阵 RH](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-third-replica.md>)：真实 characteristic map、16项归并、7项 CFT 极限、解析反例及两个剩余轨道。
 - [本地基线与约定](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/local-baseline.md>)：实际读到的归档、后期 descent 的明确假设、与新构造的对应及不能继承的结论。
 - [证据与复现入口](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/evidence-index.md>)：解析主张、CAS、数值、来源、独立复核分别定位。
 
@@ -36,4 +47,4 @@
 
 Ising 的 free-fermion solvability 是严格控制例，不能代替一般强关联体系；Potts 的有限链是非 Gaussian 对照，但其 continuum identification 不由有限数值推出。正长度 collar 的 operator theorem 不是任意曲面、任意点场或全部 CFT crossing 的定理；sharp identity trace 失败也不否定 normalizable 态的 strong-limit 配对。
 
-最有价值的剩余论证是：**Ising spin spatial replicas 与 fermionic parity／spin-structure sum 的 uniform bridge；Potts 的谱与 replica endpoint renormalization 的 cutoff-uniform 控制。** 正文把它们列为具体缺口，而不是用“已完成 quantum sewing”一语覆盖。没有提交 Git commit，没有修改仓库其他既有研究内容。
+最有价值的剩余论证是：**Ising 的 n>2 Gaussian words 到高 genus spin structures 的逐项极限；绝对 branch-point UV 常数及端点碰撞控制；Potts 的谱与 replica endpoint renormalization 的 cutoff-uniform 控制。** 双区间 n=2 已有独立的完整证明，但不以这一特殊情形覆盖所有 quantum sewing。

@@ -66,3 +66,31 @@ Independent continuum reviewer 的早期两次文献 fetch 失败已在其报告
 ## 4. Bundle 完整性
 
 [静态检查程序](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/audit_bundle.py>) 核对报告可解析、所有 exact checks 为真、数值数据完整、程序 hash、只读 archive members、本文新写的 Markdown links 与控制字符；它**不证明数学定理**。输出为 [bundle_audit.json](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/bundle_audit.json>)。旧 source snapshots 内已有的失效相对链接不在新文本 link audit 中，保持历史原样。
+
+## 5. Spatial-replica 研究的新增证明与证据（2026-11-07）
+
+本节是后续新增研究，**不运行前阶段的 JSON 导出流程，不把旧 bundle audit 冒充本轮新文件的审计**。本轮结果直接写 Markdown；下列代码仅打印 stdout。当前数学状态以[空间 replica 主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>)为准。
+
+| 主张 | 实际证明与独立复核 | 边界 |
+|---|---|---|
+| 两区间 spin reduced operator 的四项 JW 分解；所有整数 n 的 4^(n−1) 有序 words | [主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>) §2–4；[独立 CAR/JW 推导](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-jw-replica-independent.md>) | 一般 n 的有限 parity labels 不能单独证明 canonical spin-structure transport |
+| 三个 even 项的相对 determinant 极限 | [主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>) §8；[独立 Fredholm/RH 证明](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-fredholm-independent.md>) | staggered NS 强收敛、cross Hilbert–Schmidt、Schur trace-class、mixed-sign RH inverse；不是仅有 covariance pointwise limit |
+| odd 项 \(\lvert T_3\rvert/T_0\le C N^{-0.171720\ldots}\) | [主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>) §10；[fresh 独立证明](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-odd-sector-independent.md>)；[协作乘积截断证明](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-replica-cft-and-odd-sector.md>) §5 | 真正的无 FH 解析界；不是最优 exponent，也不假设有限 odd 项为零 |
+| n=2 完整 spin sum 等于 Ising CFT 极限 | [主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>) §6、§8、§10；[独立 CFT 归一化](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-replica-cft-and-odd-sector.md>) §1–3 | 固定圆周 even 真空、两区间、分离端点；有限温度不在内 |
+| 所有固定整数 n 的 Gaussian reference word、single-interval ratios 与 reference endpoint normalization | [主文](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/ising-spatial-replica.md>) §11–12；[Fredholm 报告 Appendix A](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-fredholm-independent.md#L502>) | 这是后续协作复核；不证明全部 n>2 words，不求 absolute UV 常数，不声称 uniform n |
+| 既有 determinant／Ising 文献不能直接套用的条件 | [文献范围报告](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/reviews/ising-replica-literature.md>) | 这是实际核实来源的范围，不是穷尽文献或否定收敛 |
+
+### 5.1 实际运行的可复现程序
+
+- [ising_jw_replica_checks.py](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/ising_jw_replica_checks.py>)：spin ED、CAR、moments、Gaussian determinants 与独立 XX projector；报告包括 N4/6/8 dense 检验及 N1024 的慢收敛数据。
+- [ising_fredholm_checks.py](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/ising_fredholm_checks.py>)：exact symbol/Schur numerical checks、两种 circle 几何至 N640、独立 line midpoint 积分算子至每区间320点；包含任意实 s 的 mixed-sign case。
+- [ising_spatial_algebra_checks.wl](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/ising_spatial_algebra_checks.wl>)：有理非对易 words n2…5、Arf sums genus1…3、XX gauge exact、四 FCS、theta ratios、staggered NS symbol、RH beta derivative、一般 n 的 exponent sums。最新完整实际输出：[result.txt](</Users/koishi/.codex/mcp-results/evaluate_mathematica-jWxGX1/result.txt>)，messages={}。这里 numerical zero 不当 exact proof。
+- [ising_odd_sector_checks.wl](</Users/koishi/Documents/Note/Articles/Quantization in AdS/gluing/strongly-correlated-sewing/verification/ising_odd_sector_checks.wl>)：47 项断言全部 PASS，messages={}；CFT 60-digit，有限 N20/40/80 矩阵35-digit、奇异值25-digit；具体表在对应报告 §6。
+
+一般 n 的因式分解另有独立 CAS exact coefficient checks n2…12 全部 True，及 even/odd symbolic exponent sum 两项 exact zero；这些后续 stdout 检查记录在 Fredholm 报告 Appendix A，未伪称已包含在原 Python 脚本中。
+
+### 5.2 已遇到并修复的计算问题
+
+- 一次直接 FullSimplify 嵌套 radical CFT 形式的调用超时。该调用只保留超时前已输出的检查；改用 theta identities 后通过，不将超时当验证成功。
+- 后续主代理对精确为零的 trig 多项式差直接数值求值，触发 N::meprec。改为两边先各自50-digit数值化再取残差，完整重跑无 messages；最终相应结果仍明确标为数值检查。
+- 完整证明依赖解析 lemma 与 fresh 独立复核；任何 N640/1024 的拟合好坏均不代替 cutoff limit。
