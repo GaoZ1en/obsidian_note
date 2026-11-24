@@ -1,5 +1,15 @@
 # Einstein–Scalar Spectrum in Global AdS3
 
+## Saved OFPT results
+
+For the final checks, open the [spectrum comparison](<scripts/unreduced_ofpt_2026_09_29/final_spectrum_comparison_results.json>) or the [quantum completion checks](<scripts/unreduced_ofpt_2026_09_29/quantum_completion_checks_results.json>). The [OFPT detail archive](<OFPT-2026-09-29-records.zip>) contains the other 352 JSON files formerly beside those two reports: case-by-case expressions, intermediate inputs and check records. The [scripts and reproduction notes](<scripts/unreduced_ofpt_2026_09_29/README.md>) remain in place.
+
+Before running an older check that reads those records, run the following **from the directory containing this README**. It restores original paths without overwriting newer runs. This ZIP is local; it is not backed up by Git.
+
+```sh
+unzip -n OFPT-2026-09-29-records.zip
+```
+
 ## CPS Hamiltonian before solution-space substitution
 
 [CPS Hamiltonian and Virasoro charges.md](</Users/koishi/Documents/Note/Articles/Quantization in AdS/linearized gravity/Einstein scalar spectrum/CPS Hamiltonian and Virasoro charges.md>) derives the Einstein–scalar CPS Hamiltonian and Virasoro charges directly in global coordinates, entirely in tensor notation, before choosing a solution map. It imports the gravitational-energy bulk–boundary matching with an explicit normalization conversion, gives the global-time bulk energy, and distinguishes exact Killing generators from general asymptotic symmetries requiring a symplectic-current improvement. Boundary/corner terms and scalar backreaction are retained. The referenced source notes are unchanged.
